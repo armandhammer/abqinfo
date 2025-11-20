@@ -1,0 +1,14 @@
+baseURL = "https://abqinfo.com/"
+languageCode = "en-us"
+title = "ABQ Info"
+theme = "hugo-book"
+
+# Book theme settings
+[params]
+  BookRepo = 'https://github.com/armandhammer/abqinfo'
+  BookSection = '*'
+  BookMenuBundle = ''
+  BookShowToC = false
+  
+[markup.goldmark.renderer]
+  unsafe = true

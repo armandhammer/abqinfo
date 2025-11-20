@@ -1,0 +1,31 @@
+﻿{{ define "main" }}
+
+<main class="container mx-auto py-12">
+
+  <!-- Centered title -->
+  <div class="text-center mb-10">
+    <h1 class="text-3xl font-semibold mb-8">ABQ Info</h1>
+
+	<p class="mb-10 text-lg">
+ 	 Clear, organized information about Albuquerque’s transportation, housing, public works, 
+  	and city budgeting — so residents can better understand projects, funding, and decisions 
+  	affecting their neighborhoods.
+	</p>
+  </div>
+
+  <!-- Section links -->
+  <div class="max-w-3xl mx-auto">
+    <ul class="list-none grid gap-6 md:grid-cols-2 p-0 m-0 text-center">
+
+      <li><a class="text-blue-600 hover:underline text-xl font-medium" href="/transportation/">Transportation</a></li>
+      <li><a class="text-blue-600 hover:underline text-xl font-medium" href="/housing-land-use/">Housing &amp; Land Use</a></li>
+      <li><a class="text-blue-600 hover:underline text-xl font-medium" href="/public-works/">Public Works</a></li>
+      <li><a class="text-blue-600 hover:underline text-xl font-medium" href="/city-budget-data/">City Budget &amp; Data</a></li>
+      <li class="md:col-span-2"><a class="text-blue-600 hover:underline text-xl font-medium" href="/maps-dashboards/">Maps &amp; Dashboards</a></li>
+
+    </ul>
+  </div>
+
+</main>
+
+{{ end }}
