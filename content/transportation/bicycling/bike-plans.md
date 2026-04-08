@@ -1,4 +1,4 @@
-## Plans
+## Current Plan
 
 - [2024 Bikeway and Trail Facilities Plan](https://files.abqinfo.com/transportation/bicycling/bike-plans/2024-albuquerque-bike-plan.pdf)
   - [Bicycle and Trail Crossings Guide](https://files.abqinfo.com/transportation/bicycling/bike-plans/2024-albuquerque-bike-plan-coa-bicycle-and-trail-crossings-guide.pdf)
@@ -12,6 +12,7 @@
   - [Appendix H – Multiuse Trail Considerations (2015 Plan)](https://files.abqinfo.com/transportation/bicycling/bike-plans/2024-albuquerque-bike-plan-appendix-h-additional-considerations-for-multiuse-trails-from-2015-plan.pdf)
   - [Appendix I – Bollard Assessment (2013)](https://files.abqinfo.com/transportation/bicycling/bike-plans/2024-albuquerque-bike-plan-appendix-i-multiuse-trail-bollard-assessment-parks-and-recreation-2013.pdf)
 
+## Previous Plans
 - [2015 Bikeways and Trails Facilities Plan](https://files.abqinfo.com/transportation/bicycling/bike-plans/2015-bikeways-and-trails-facilities-plan.pdf)
 - [2011 Albuquerque Bikeways and Trails Master Plan Update](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-and-trails-master-plan-update.pdf)
 - [2000 Albuquerque Comprehensive On-Street Bicycle Plan](https://files.abqinfo.com/transportation/bicycling/bike-plans/2000-albuquerque-comprehensive-on-street-bicycle-plan.pdf)
