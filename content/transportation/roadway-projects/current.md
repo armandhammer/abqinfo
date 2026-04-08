@@ -2,4 +2,4 @@
 title: "Current Projects"
 ---
 
-Currently active roadway projects.
+Current roadway projects.
