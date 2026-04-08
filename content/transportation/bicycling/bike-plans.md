@@ -1,3 +1,9 @@
+---
+title: "Bike Plans"
+---
+
+City bicycle planning documents and master plans, including current and previous network plans and supporting materials.
+
 ## Current Bike Plan
 
 - [2024 Bikeway and Trail Facilities Plan](https://files.abqinfo.com/transportation/bicycling/bike-plans/2024-albuquerque-bike-plan.pdf)
