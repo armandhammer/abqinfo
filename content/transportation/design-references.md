@@ -21,8 +21,3 @@ High-profile concrete curb barriers used for physical separation and protection 
 * [Tall Curb Full Installation Procedures](https://files.abqinfo.com/transportation/design-references/tall-curb-full-installation-procedures.pdf)
 * [Tall Curb Anchor Pin Installation Guidelines](https://files.abqinfo.com/transportation/design-references/tall-curb-anchor-pin-installation-guidelines-2025-10-06.pdf)
 
-### Related Notes
-
-* Intended primarily for quick-build or retrofit protected bicycle lane applications.
-* Taller than standard curb elements and designed to discourage vehicle encroachment.
-* May also be used for pedestrian refuge protection, intersection hardening, and traffic calming applications.
