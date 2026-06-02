@@ -9,7 +9,7 @@ Currently active bicycle infrastructure projects.
 **Location:** Buena Vista Dr SE, from Central Ave SE to Gibson Blvd SE
 
 
-**Plan document:** [Buena Vista Bike Boulevard 60% Plans](https://files.abqinfo.com/transportation/bicycling/projects/moon-street-restriping-cycletrack-2026.pdf)
+**Plan document:** [Buena Vista Bike Boulevard 60% Plans](https://files.abqinfo.com/transportation/bicycling/projects/buena-vista-bike-boulevard-plans-60pct-2026.pdf)
 
 Questions or comments email Paul Olson at DMD polson@cabq.gov
 
@@ -17,6 +17,6 @@ Questions or comments email Paul Olson at DMD polson@cabq.gov
 
 **Location:** Moon Street NE, between Academy Rd NE and Spain Rd NE
 
-**Plan document:** [Moon St NE Cycletrack Plans](https://files.abqinfo.com/transportation/bicycling/projects/buena-vista-bike-boulevard-plans-60pct-2026.pdf)
+**Plan document:** [Moon St NE Cycletrack Plans](https://files.abqinfo.com/transportation/bicycling/projects/moon-street-restriping-cycletrack-2026.pdf)
 
 Questions or comments email Melissa Roseman at DMD melissaroseman@cabq.gov
