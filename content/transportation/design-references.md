@@ -9,7 +9,7 @@ Reference drawings, engineering details, and technical guidance related to trans
 
 High-profile concrete curb barriers used for physical separation and protection of bicycle lanes and other multimodal facilities.
 
-* [Toronto-style Tall Curb Engineering Drawings](https://files.abqinfo.com/transportation/design-references/toronto-tall-curb-design-specs.pdf.pdf)
+* [Toronto-style Tall Curb Engineering Drawings](https://files.abqinfo.com/transportation/design-references/toronto-tall-curb-design-specs.pdf)
 
 ### Related Notes
 
