@@ -15,9 +15,9 @@ Reference guidance for quick-build transportation and multimodal safety projects
 
 High-profile concrete curb barriers used for physical separation and protection of bicycle lanes and other multimodal facilities.
 
-* [Toronto-style Tall Curb Engineering Drawings](https://files.abqinfo.com/transportation/design-references/toronto-style-tall-curb-design-specs.pdf)
+* [Toronto-style Tall Curb Engineering Drawings](https://files.abqinfo.com/transportation/design-references/toronto-tall-curb-design-specs.pdf)
 * [Tall Curb Spec Sheet](https://files.abqinfo.com/transportation/design-references/tall-curb-spec-sheet-10-13-2025.pdf)
 * [Tall Curb End Spec Sheet](https://files.abqinfo.com/transportation/design-references/tall-curb-end-spec-sheet-10-13-2025.pdf)
 * [Tall Curb Full Installation Procedures](https://files.abqinfo.com/transportation/design-references/tall-curb-full-installation-procedures.pdf)
-* [[Tall Curb Anchor Pin Installation Guidelines](https://files.abqinfo.com/transportation/design-references/tall-curb-anchor-pin-installation-guidelines-10-6-25.pdf)
+* [Tall Curb Anchor Pin Installation Guidelines](https://files.abqinfo.com/transportation/design-references/tall-curb-anchor-pin-installation-guidelines-10-6-25.pdf)
 
