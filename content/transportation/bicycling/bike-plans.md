@@ -23,3 +23,8 @@ City bicycle planning documents and master plans, including current and previous
 - [2011 Albuquerque Bikeways and Trails Master Plan Update](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-and-trails-master-plan-update.pdf)
 - [2000 Albuquerque Comprehensive On-Street Bicycle Plan](https://files.abqinfo.com/transportation/bicycling/bike-plans/2000-albuquerque-comprehensive-on-street-bicycle-plan.pdf)
 - [1993 Trails and Bikeways Facility Plan](https://files.abqinfo.com/transportation/bicycling/bike-plans/1993-trails-and-bikeways-facility-plan.pdf)
+
+## Related Bicycle Policy
+
+- [City Council Resolution R-07-268: Bike Boulevards (2007)](https://files.abqinfo.com/transportation/transportation-plans/2007-city-council-bike-boulevards-resolution-r-07-268.pdf)
+  - Designates Mountain Road, Silver Avenue, and 14th Street bike-boulevard routes; appropriates up to $400,000 for design, engineering, and initial implementation; and directs amendments to the Comprehensive Bikeway Facilities Plan.
