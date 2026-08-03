@@ -22,7 +22,7 @@ City bicycle planning documents and master plans, including current and previous
 - [2015 Bikeways and Trails Facilities Plan](https://files.abqinfo.com/transportation/bicycling/bike-plans/2015-bikeways-and-trails-facilities-plan.pdf)
 - [2011 Albuquerque Bikeways and Trails Master Plan Update](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-and-trails-master-plan-update.pdf)
 - [2000 Albuquerque Comprehensive On-Street Bicycle Plan](https://files.abqinfo.com/transportation/bicycling/bike-plans/2000-albuquerque-comprehensive-on-street-bicycle-plan.pdf)
-- [1993 Trails and Bikeways Facility Plan](https://files.abqinfo.com/transportation/bicycling/bike-plans/1993-trails-and-bikeways-facilities-plan.pdf)
+- [1993 Trails and Bikeways Facility Plan](https://files.abqinfo.com/transportation/bicycling/bike-plans/1993-trails-and-bikeways-facility-plan.pdf)
 
 ## Related Bicycle Policy
 
