@@ -1,0 +1,90 @@
+name: Upload R2 document
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_url:
+        description: Public source URL for the original document
+        required: true
+        type: string
+      object_key:
+        description: R2 object key, such as documents/transportation/example.pdf
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  upload:
+    name: Download, verify, and upload document
+    runs-on: ubuntu-latest
+    env:
+      R2_BUCKET: abqinfo-bucket
+      R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: auto
+      AWS_EC2_METADATA_DISABLED: true
+      SOURCE_URL: ${{ inputs.source_url }}
+      OBJECT_KEY: ${{ inputs.object_key }}
+
+    steps:
+      - name: Validate destination key
+        shell: bash
+        run: |
+          case "$OBJECT_KEY" in
+            ""|/*|*..*)
+              echo "::error::Object key must be relative and must not contain '..'."
+              exit 1
+              ;;
+          esac
+
+      - name: Download source document
+        shell: bash
+        run: |
+          mkdir -p download
+          curl --fail --location --retry 3 --retry-delay 2 \
+            --output download/source-document "$SOURCE_URL"
+          test -s download/source-document
+
+      - name: Refuse to overwrite an existing object
+        shell: bash
+        run: |
+          if aws s3api head-object \
+            --bucket "$R2_BUCKET" \
+            --key "$OBJECT_KEY" \
+            --endpoint-url "$R2_ENDPOINT" >/dev/null 2>&1; then
+            echo "::error::R2 object already exists: $OBJECT_KEY"
+            exit 1
+          fi
+
+      - name: Upload document
+        shell: bash
+        run: |
+          aws s3 cp download/source-document "s3://$R2_BUCKET/$OBJECT_KEY" \
+            --endpoint-url "$R2_ENDPOINT" \
+            --no-progress
+
+      - name: Verify upload and record checksum
+        shell: bash
+        run: |
+          aws s3api head-object \
+            --bucket "$R2_BUCKET" \
+            --key "$OBJECT_KEY" \
+            --endpoint-url "$R2_ENDPOINT" > uploaded-object.json
+          sha256sum download/source-document > source-document.sha256
+          {
+            echo "## R2 document upload"
+            echo
+            echo "- Source: $SOURCE_URL"
+            echo "- Object: `$OBJECT_KEY`"
+            echo "- Public URL: https://files.abqinfo.com/$OBJECT_KEY"
+            echo "- SHA-256: `$(cut -d ' ' -f 1 source-document.sha256)`"
+            echo
+            echo "### R2 object metadata"
+            echo
+            echo "```json"
+            cat uploaded-object.json
+            echo "```"
+          } >> "$GITHUB_STEP_SUMMARY"
