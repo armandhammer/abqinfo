@@ -71,6 +71,16 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   Explains the continuing metropolitan process for monitoring multimodal performance, analyzing 31 priority corridors, and selecting strategies and projects to improve the safe, efficient movement of people and goods across the Albuquerque planning area.
 
+## City Plans and Studies
+
+- [Downtown Walkability Analysis (2014)](https://documents.cabq.gov/planning/development-process-manual/XSections/Downtown_Walkability_Analysis-2014.pdf)
+
+  Jeff Speck's 100-page study proposes targeted, low-cost street redesigns, signal changes, bicycle facilities, parking reforms, development strategies, railroad crossings, and public-realm improvements intended to increase walking, cycling, safety, and downtown Albuquerque's economic vitality.
+
+- [City transportation plans and studies](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections)
+
+  The Planning Department's maintained index links adopted area plans, transportation studies, and cross-section guidance used in public-right-of-way design, including the Downtown Walkability Analysis and Rio Grande Boulevard Study.
+
 ## Regional planning methods
 
 - [Project Selection Process](https://www.mrcog-nm.gov/291/Project-Selection-Process)

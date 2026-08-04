@@ -312,18 +312,27 @@ if (Test-Path -LiteralPath $OverridesPath) {
   }
 }
 
-foreach ($pending in @($records.Values | Where-Object { $_.status -in @('pending review','approved for addition','downloaded','parsed','description drafted','placement assigned') })) {
-    $pendingUrls = @(Get-RecordUrls $pending)
-    $canonical = $records.Values | Where-Object {
-        $canonicalUrls = @(Get-RecordUrls $_)
-        $_.id -ne $pending.id -and
-        $_.status -in @('implemented','validated') -and
-        ((@($canonicalUrls | Where-Object { $_ -in $pendingUrls }).Count -gt 0) -or
-         ($_.direct_file_url -and ($_.direct_file_url -eq $pending.direct_file_url -or $_.direct_file_url -eq $pending.source_url)) -or
-         ($_.checksum_sha256 -and $pending.checksum_sha256 -and $_.checksum_sha256 -eq $pending.checksum_sha256))
-    } | Select-Object -First 1
+$canonicalByUrl = @{}
+$canonicalByChecksum = @{}
+foreach ($canonicalRecord in @($records.Values | Where-Object { $_.status -in @('implemented','validated') })) {
+  foreach ($canonicalUrl in @(Get-RecordUrls $canonicalRecord)) {
+    if (-not $canonicalByUrl.ContainsKey($canonicalUrl)) { $canonicalByUrl[$canonicalUrl] = $canonicalRecord }
+  }
+  if ($canonicalRecord.checksum_sha256 -and -not $canonicalByChecksum.ContainsKey([string]$canonicalRecord.checksum_sha256)) {
+    $canonicalByChecksum[[string]$canonicalRecord.checksum_sha256] = $canonicalRecord
+  }
+}
 
-    if ($canonical) {
+foreach ($pending in @($records.Values | Where-Object { $_.status -in @('pending review','approved for addition','downloaded','parsed','description drafted','placement assigned') })) {
+    $canonical = $null
+    foreach ($pendingUrl in @(Get-RecordUrls $pending)) {
+      if ($canonicalByUrl.ContainsKey($pendingUrl)) { $canonical = $canonicalByUrl[$pendingUrl]; break }
+    }
+    if (-not $canonical -and $pending.checksum_sha256 -and $canonicalByChecksum.ContainsKey([string]$pending.checksum_sha256)) {
+      $canonical = $canonicalByChecksum[[string]$pending.checksum_sha256]
+    }
+
+    if ($canonical -and $canonical.id -ne $pending.id) {
         $pending.status = 'duplicate'
         $pending.exclusion_reason = "Duplicate discovery record for implemented candidate $($canonical.id)."
         $pending.validation_status = 'duplicate discovery confirmed'

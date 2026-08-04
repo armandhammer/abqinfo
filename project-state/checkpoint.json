@@ -1,27 +1,27 @@
 ﻿{
-    "recorded_at":  "2026-08-04T12:15:47.3842278Z",
-    "completed_item_range":  "Scoped review of 12 user-selected CABQ/Bernalillo County starting pages: 339 main-content links, 228 new inventory records, 226 locally resolved pages, 39 approved additions, and 20 current-site removal/consolidation recommendations",
-    "total_candidates":  485,
+    "recorded_at":  "2026-08-04T12:47:01.0931621Z",
+    "completed_item_range":  "Recovered and implemented Downtown Walkability Analysis; repaired extracted-reference discovery and bounded recursive Council crawl; normalized/imported 550 Council candidates; promoted 11 high-value Council discoveries; optimized inventory import.",
+    "total_candidates":  1050,
     "counts_by_status":  {
-                             "pending review":  195,
-                             "approved for addition":  39,
+                             "pending review":  744,
+                             "approved for addition":  50,
                              "downloading":  0,
                              "downloaded":  0,
                              "parsed":  0,
                              "description drafted":  0,
                              "placement assigned":  0,
                              "implemented":  0,
-                             "validated":  156,
+                             "validated":  158,
                              "excluded":  44,
-                             "duplicate":  47,
-                             "superseded":  4,
+                             "duplicate":  49,
+                             "superseded":  5,
                              "blocked":  0,
                              "requires human review":  0
                          },
-    "remaining_nonterminal":  234,
-    "next_pending_id":  "src-0234c5a50d77383f",
+    "remaining_nonterminal":  794,
+    "next_pending_id":  "src-00b089afefa2c9e6",
     "blockers":  [
-
+                     "Council crawl is intentionally bounded at 201 pages; 93 de-duplicated, filtered, resumable Council-section pages remain for the next scoped pass."
                  ],
-    "resume_command":  "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Get-CandidatesByStatus.ps1 -Status \u0027approved for addition\u0027"
+    "resume_command":  "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Invoke-ScopedSectionCrawl.ps1 -Agency cabq -StartUrl \u0027https://www.cabq.gov/council\u0027 -PathPrefix \u0027/council\u0027 -OutputPath \u0027research/discovery/cabq-council-section-links.json\u0027 -MaxDepth 4 -MaxPages 300 -Resume"
 }

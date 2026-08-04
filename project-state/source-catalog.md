@@ -1,25 +1,25 @@
 ﻿# ABQ Info authoritative source catalog
 
-Generated: 2026-08-04T12:15:47.1808301Z
+Generated: 2026-08-04T12:44:47.1781719Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 485 candidates and 61 R2 objects totaling 725638531 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 1050 candidates and 61 R2 objects totaling 725638531 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 195 |
-| approved for addition | 39 |
+| pending review | 744 |
+| approved for addition | 50 |
 | downloading | 0 |
 | downloaded | 0 |
 | parsed | 0 |
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 0 |
-| validated | 156 |
+| validated | 158 |
 | excluded | 44 |
-| duplicate | 47 |
-| superseded | 4 |
+| duplicate | 49 |
+| superseded | 5 |
 | blocked | 0 |
 | requires human review | 0 |
 
@@ -104,8 +104,10 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | City Open Space planning projects and resource-management plans | City of Albuquerque | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/parksandrecreation/open-space/about-open-space/open-space-resource-management-plans) |
 | City open-data catalog | City of Albuquerque | content/maps/maps.md | [source](https://data.cabq.gov/) |
 | City paratransit service | City of Albuquerque | content/transportation/transit/sun-van.md | [source](https://www.cabq.gov/transit/paratransit-service) |
+| City transportation plans and studies | City of Albuquerque | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) |
 | City zoning and land-use maps | City of Albuquerque | content/maps/maps.md | [source](https://www.cabq.gov/planning/agis-maps/maps-for-the-public) |
 | Construction moratoriums | City of Albuquerque | content/transportation/roadway-projects/current.md | [source](https://www.cabq.gov/municipaldevelopment/maps/construction-moratoriums) |
+| Downtown Walkability Analysis | City of Albuquerque | content/transportation/transportation-plans.md | [source](https://documents.cabq.gov/planning/development-process-manual/XSections/Downtown_Walkability_Analysis-2014.pdf) |
 | Emergency shelters, day shelters, and street outreach | City of Albuquerque | content/housing/homeless-services.md | [source](https://www.cabq.gov/health-housing-homelessness/homelessness/homeless-shelters-outreach) |
 | Municipal Development featured projects | City of Albuquerque | content/public-works/capital-projects.md | [source](https://www.cabq.gov/municipaldevelopment/featured-projects) |
 | Open Space maps | City of Albuquerque | content/maps/maps.md | [source](https://www.cabq.gov/parksandrecreation/open-space/facilities-map) |
@@ -203,6 +205,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-2f094c9ddbb50ce1 | duplicate | Fiscal Year 2027 Approved Budget | Duplicate discovery record for implemented candidate src-0c0bf6fdce0dfbea. |
 | src-2f15ef9451d99e32 | duplicate | src-a8552ef7c580c636 | Duplicate discovery record for implemented candidate src-2c94f1cc7996207a. |
 | src-302eeb9a704644f3 | duplicate | Transitions 2045 MTP Appendices | Duplicate discovery record for implemented candidate src-9f98b2dbdfc9d974. |
+| src-34f5e43d0fd0f2d0 | duplicate | ABC Comprehensive Plan | Duplicate discovery record for implemented candidate src-8832a87573fd5ed6. |
 | src-3d676705b6616cf4 | duplicate | src-7f51da342c00a840 | Duplicate discovery record for implemented candidate src-31c4d4eff2bc1b5a. |
 | src-42d0b92e1b1b1c18 | duplicate | Buena Vista Bike Boulevard 60% Plans (legacy R2 key) | Exact duplicate of the implemented Buena Vista plan: identical 47,823,090-byte size and R2 ETag 318576c3cafe8b5449d8c8f5fd2ae6a2. Retained in storage because deletion was not authorized. |
 | src-4f9925e4698c3223 | duplicate | ABC Comprehensive Plan, Chapter 9: Housing (2025 Update) | Duplicate discovery record for implemented candidate src-5833586f28079104. |
@@ -217,6 +220,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-9073c4c1acab4048 | duplicate | src-cc6a4ff2372bfa50 | Duplicate discovery record for implemented candidate src-1a0dfd37475ddc69. |
 | src-938b260dca443a97 | duplicate | src-1b7b18696dfbfcc8 | Duplicate discovery record for implemented candidate src-79de5bb4324d2dd4. |
 | src-93a5d61174cab3ea | duplicate | Complete Streets resolution in 2011 | Duplicate discovery record for implemented candidate src-f8614b43122b3de3. |
+| src-9fa25ee0833a0ce6 | duplicate | src-d8b68c090d8d9a44 | Duplicate discovery record for implemented candidate src-d8b68c090d8d9a44. |
 | src-a8552ef7c580c636 | duplicate | Albuquerque Metropolitan Planning Area (AMPA) (PDF) | Duplicate discovery record for implemented candidate src-2c94f1cc7996207a. |
 | src-aa39bf3d1fdab087 | duplicate | src-93a5d61174cab3ea | Duplicate discovery record for implemented candidate src-f8614b43122b3de3. |
 | src-b1bb29f8469c84b1 | duplicate | Download PPTS PDF map | Duplicate discovery record for implemented candidate src-3080803365506588. |
@@ -284,6 +288,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-f85703ccd682f75a | excluded | Export .ics file | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-fb71242d60bdc683 | excluded | Executive Staff | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-fd117d805710a1d4 | excluded | Back to Events | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
+| src-5edcfaeac63d3a4b | superseded | ABQReport | Legacy Council-hosted copy superseded by the maintained Planning Department copy at documents.cabq.gov. |
 | src-6da20b965df52490 | superseded | MRCOG bicycle and pedestrian planning maps | Broad bicycle-and-pedestrian landing page was replaced by the specific planning-maps, counts, analysis, and safety sources. |
 | src-7b6c76481a7f00c4 | superseded | Potential Road Diets in the Albuquerque Region | 2021 road-diet application has been superseded by MRMPO's maintained 2023 Road Diet Candidates Map source. |
 | src-cf6fa82eb6524971 | superseded | MRMPO Long Range Bikeway System | 2021 long-range bikeway application has been superseded by the adopted 2026 map and maintained active-transportation portfolio. |
