@@ -4,6 +4,38 @@ title: "Current Projects"
 
 Active roadway projects, near-term implementation work, and project documents.
 
+## City corridor and neighborhood projects
+
+- [District 7 Traffic & Street Improvements](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements)
+
+  Tracks current and completed District 7 work, including Girard streetscaping, Lomas green-stormwater and traffic calming, the Mile High Bike Boulevard, school-area safety measures, medians, crossings, and speed cushions.
+
+- [West Central Complete Streets Project](https://www.cabq.gov/municipaldevelopment/featured-projects/west-central-complete-streets-project)
+
+  Documents the active Central Avenue safety and accessibility project, its limits, schedule, public meetings, federal Safe Streets and Roads for All funding, design concepts, and frequently asked questions.
+
+- [Laurelwood Median Rehabilitation and Parkway Landscape Project](https://www.cabq.gov/council/find-your-councilor/district-1/district-1-projects/laurelwood-median-rehabilitation-project)
+
+  Covers the long-term Laurelwood median project, including grading, irrigation replacement, tree planting, public meetings, and the conceptual study guiding rehabilitation of the roadway median and parkway.
+
+- [118th Street SW Improvements](https://www.cabq.gov/council/find-your-councilor/district-3/118th-street-sw-improvements)
+
+  Presents the multimodal safety study for 118th Street between Dennis Chavez and Amole Mesa, including sidewalks, trails, bicycle facilities, medians, landscaping, school access, alternatives, and public-meeting material.
+
+- [2nd Street Rehabilitation, Sidewalk and Lighting Improvements](https://www.cabq.gov/municipaldevelopment/featured-projects/2nd-street-rehab-sidewalk-and-lighting-improvements-project-cn-a302300)
+
+  Describes the 2nd Street project near Hazeldine and 1st Street, combining pavement rehabilitation, traffic calming, ADA improvements, sidewalks, lighting, multimodal access, speed-study findings, and economic-development goals.
+
+## Bernalillo County project indexes
+
+- [Current Public Works Projects](https://www.bernco.gov/public-works/current-projects)
+
+  Collects Bernalillo County's active road, drainage, utility, facility, and community capital projects, with project locations, scope, status, schedules, contacts, and links to individual project information.
+
+- [Finished Public Works Projects](https://www.bernco.gov/public-works/finished-projects)
+
+  Preserves Bernalillo County's completed public-works project index, providing historical reference for finished roadway, drainage, facility, utility, and neighborhood improvements that are no longer listed as active.
+
 ## State project index
 
 - [NMDOT Active Projects](https://www.dot.nm.gov/projects/active-projects)
