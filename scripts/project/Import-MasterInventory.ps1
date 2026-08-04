@@ -156,6 +156,9 @@ function Merge-Record([System.Collections.IDictionary]$Incoming) {
   $id = $Incoming.id
   if (-not $records.ContainsKey($id)) { $records[$id] = $Incoming; return }
   $existing = $records[$id]
+  if ($existing.status -eq 'pending review' -and $existing.title -match '(?i)^(visit the project page|click here|here)(\b|\.)' -and $Incoming.title) {
+    $existing.title = $Incoming.title
+  }
   if ($Incoming.implementation_location) {
     $locations = @($existing.implementation_locations) + @($existing.implementation_location) + @($Incoming.implementation_location)
     $existing.implementation_locations = @($locations | Where-Object { $_ } | Sort-Object -Unique)
@@ -247,6 +250,12 @@ foreach ($discoveryFile in Get-ChildItem 'research/discovery' -Filter '*-links.j
   $discovery = Get-Content -Raw -LiteralPath $discoveryFile.FullName | ConvertFrom-Json
   $agencyName = [string](Get-PropertyValue $discovery 'agency')
   $crawlSource = [string](Get-PropertyValue $discovery 'source_url')
+  if ($crawlSource -and (Test-DiscoveryCandidate $agencyName $crawlSource)) {
+    $normalizedSource = Get-NormalizedDiscoveryUrl $crawlSource
+    $sourceRecord = New-Record $normalizedSource (Get-DiscoveryTitle $normalizedSource $null) 'pending review'
+    $sourceRecord.processing_notes = @('User-selected scoped crawl starting page.', 'Page and authored main-content links were captured by the deterministic crawler.')
+    Merge-Record $sourceRecord
+  }
   $candidateItems = @(Get-PropertyValue $discovery 'candidates')
   if (-not $candidateItems.Count) {
     $candidateItems = @((Get-PropertyValue $discovery 'links') | ForEach-Object { [pscustomobject]@{url=$_;anchor_text=$null} })
@@ -323,6 +332,16 @@ foreach ($pending in @($records.Values | Where-Object { $_.status -in @('pending
 }
 
 foreach ($record in $records.Values) {
+  if ($record.status -eq 'pending review' -and $record.title -match '(?i)^(visit the project page|click here|here)(\b|\.)' -and $record.source_url) {
+    try {
+      $segments = @(([uri]$record.source_url).Segments)
+      $slug = $segments[$segments.Count - 1].TrimEnd('/')
+      if (-not $slug -and $segments.Count -gt 1) { $slug = $segments[$segments.Count - 2].TrimEnd('/') }
+      if ($slug) {
+        $record.title = (Get-Culture).TextInfo.ToTitleCase((([uri]::UnescapeDataString($slug) -replace '[-_]',' ') -replace '\s+',' ').Trim())
+      }
+    } catch {}
+  }
   if ($record.status -notin $allowedStatuses) { throw "Invalid status '$($record.status)' for $($record.id)." }
   if ($record.status -eq 'validated' -and (-not $record.description -or $record.description_word_count -lt 20 -or $record.description_word_count -gt 50)) {
     $record.status = 'implemented'

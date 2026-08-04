@@ -1,5 +1,5 @@
 ---
-title: "Operations & Traffic Management"
+title: "Traffic Operations"
 ---
 
 Regional roadway operations, traffic analysis, incident management, and intelligent transportation systems.

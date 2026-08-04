@@ -1,15 +1,15 @@
 ﻿# ABQ Info authoritative source catalog
 
-Generated: 2026-08-04T11:18:14.9855992Z
+Generated: 2026-08-04T12:15:47.1808301Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 249 candidates and 61 R2 objects totaling 725638531 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 485 candidates and 61 R2 objects totaling 725638531 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 0 |
-| approved for addition | 0 |
+| pending review | 195 |
+| approved for addition | 39 |
 | downloading | 0 |
 | downloaded | 0 |
 | parsed | 0 |
@@ -17,7 +17,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | placement assigned | 0 |
 | implemented | 0 |
 | validated | 156 |
-| excluded | 42 |
+| excluded | 44 |
 | duplicate | 47 |
 | superseded | 4 |
 | blocked | 0 |
@@ -243,6 +243,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-0233e8758e566484 | excluded | About | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-02c9b80b1f2179c2 | excluded | Careers | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-02d85364ab654a13 | excluded | Manzano Mesa Multigenerational Center | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
+| src-06e4da66d77ea658 | excluded | Home | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-0c01fe2a256617f8 | excluded | How Do I... | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-0d4fce566c69c8ef | excluded | About the Department | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-0dcfada0e526c58c | excluded | Home | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
@@ -277,6 +278,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-d6b9ca4219ceaecc | excluded | Programs | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-d7b3d2df797bdef6 | excluded | Results | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-db2314b2accb18df | excluded | index.html | ArcGIS application does not load and cannot provide useful public information. |
+| src-e69c19f4f4a381b6 | excluded | Programs | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-e6be924ac074940d | excluded | Trucking Industry | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-e9861a984fbdb2a4 | excluded | Rest Areas | Current NMDOT rest-area list contains no Albuquerque-area facility and is not a statewide planning or policy source. |
 | src-f85703ccd682f75a | excluded | Export .ics file | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |

@@ -1,10 +1,10 @@
 ﻿{
-    "recorded_at":  "2026-08-04T11:18:15.0901279Z",
-    "completed_item_range":  "Human review resolutions: src-88f2a9180f45f3cc validated; src-33b0b49d37a08015, src-db2314b2accb18df, and src-9d02a9df4a2ad3da excluded",
-    "total_candidates":  249,
+    "recorded_at":  "2026-08-04T12:15:47.3842278Z",
+    "completed_item_range":  "Scoped review of 12 user-selected CABQ/Bernalillo County starting pages: 339 main-content links, 228 new inventory records, 226 locally resolved pages, 39 approved additions, and 20 current-site removal/consolidation recommendations",
+    "total_candidates":  485,
     "counts_by_status":  {
-                             "pending review":  0,
-                             "approved for addition":  0,
+                             "pending review":  195,
+                             "approved for addition":  39,
                              "downloading":  0,
                              "downloaded":  0,
                              "parsed":  0,
@@ -12,16 +12,16 @@
                              "placement assigned":  0,
                              "implemented":  0,
                              "validated":  156,
-                             "excluded":  42,
+                             "excluded":  44,
                              "duplicate":  47,
                              "superseded":  4,
                              "blocked":  0,
                              "requires human review":  0
                          },
-    "remaining_nonterminal":  0,
-    "next_pending_id":  null,
+    "remaining_nonterminal":  234,
+    "next_pending_id":  "src-0234c5a50d77383f",
     "blockers":  [
 
                  ],
-    "resume_command":  "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Test-Candidate.ps1 -UpdateInventory"
+    "resume_command":  "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Get-CandidatesByStatus.ps1 -Status \u0027approved for addition\u0027"
 }
