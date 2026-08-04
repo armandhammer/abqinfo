@@ -120,6 +120,14 @@ function New-Record([string]$Url, [string]$Title, [string]$Status) {
     file_type = Get-FileType $Url
     size_bytes = $null
     checksum_sha256 = $null
+    parent_url = $null
+    referring_urls = @()
+    discovery_path = @()
+    discovery_method = $null
+    crawl_depth = $null
+    cited_predecessors = @()
+    cited_successors = @()
+    provenance_status = if ($Url -match 'files\.abqinfo\.com') { 'unreconciled archived copy' } else { 'source URL recorded' }
     proposed_canonical_page = $null
     description = $null
     description_word_count = 0
@@ -167,6 +175,13 @@ function Merge-Record([System.Collections.IDictionary]$Incoming) {
   if ($Incoming.description) {
     $existing.description = $Incoming.description
     $existing.description_word_count = $Incoming.description_word_count
+  }
+  if ($Incoming.referring_urls) {
+    $existing.referring_urls = @(@(Get-PropertyValue $existing 'referring_urls') + @($Incoming.referring_urls) | Where-Object { $_ } | Sort-Object -Unique)
+  }
+  $existingPath = @(Get-PropertyValue $existing 'discovery_path')
+  if ($Incoming.discovery_path -and (-not $existingPath.Count -or @($Incoming.discovery_path).Count -lt $existingPath.Count)) {
+    $existing.discovery_path = @($Incoming.discovery_path)
   }
   if ($Incoming.status -eq 'implemented' -and $existing.status -in @('pending review','approved for addition','downloaded','parsed','description drafted','placement assigned')) {
     $existing.status = 'implemented'
@@ -247,7 +262,18 @@ foreach ($legacyPath in $legacyPaths) {
   }
 }
 
-foreach ($discoveryFile in Get-ChildItem 'research/discovery' -Filter '*-links.json' -File -ErrorAction SilentlyContinue) {
+$excludedDiscoveryFiles = @{}
+$discoveryImportExclusionsPath = 'project-state/discovery/import-exclusions.json'
+if (Test-Path -LiteralPath $discoveryImportExclusionsPath) {
+  foreach ($item in (Get-Content -Raw -LiteralPath $discoveryImportExclusionsPath | ConvertFrom-Json)) {
+    $excludedDiscoveryFiles[[string]$item.file] = [string]$item.reason
+  }
+}
+$discoveryFiles = @(
+  Get-ChildItem 'research/discovery' -Filter '*-links.json' -File -ErrorAction SilentlyContinue
+  Get-ChildItem 'project-state/discovery' -Filter '*-crawl.json' -File -ErrorAction SilentlyContinue
+) | Where-Object { -not $excludedDiscoveryFiles.ContainsKey($_.Name) }
+foreach ($discoveryFile in $discoveryFiles) {
   $discovery = Get-Content -Raw -LiteralPath $discoveryFile.FullName | ConvertFrom-Json
   $agencyName = [string](Get-PropertyValue $discovery 'agency')
   $crawlSource = [string](Get-PropertyValue $discovery 'source_url')
@@ -268,25 +294,78 @@ foreach ($discoveryFile in Get-ChildItem 'research/discovery' -Filter '*-links.j
     $anchorText = [string](Get-PropertyValue $candidateItem 'anchor_text')
     $record = New-Record $url (Get-DiscoveryTitle $url $anchorText) 'pending review'
     $record.processing_notes = @("Discovered by deterministic crawl of $crawlSource.", 'Exact metadata and relevance remain pending source review.')
+    $parentUrl = Get-PropertyValue $candidateItem 'parent_url'
+    $referringUrls = Get-PropertyValue $candidateItem 'referring_urls'
+    $discoveryPath = Get-PropertyValue $candidateItem 'discovery_path'
+    $discoveryMethod = Get-PropertyValue $candidateItem 'discovery_method'
+    $crawlDepth = Get-PropertyValue $candidateItem 'discovery_depth'
+    if ($parentUrl) { $record.parent_url = [string]$parentUrl }
+    if ($referringUrls) { $record.referring_urls = @($referringUrls) } elseif ($parentUrl) { $record.referring_urls = @([string]$parentUrl) }
+    if ($discoveryPath) { $record.discovery_path = @($discoveryPath) }
+    if ($discoveryMethod) { $record.discovery_method = [string]$discoveryMethod }
+    if ($null -ne $crawlDepth) { $record.crawl_depth = [int]$crawlDepth }
     Merge-Record $record
   }
 }
 
+$lineagePath = 'project-state/discovery/pdf-lineage-references.json'
+if (Test-Path -LiteralPath $lineagePath) {
+  $lineage = Get-Content -Raw -LiteralPath $lineagePath | ConvertFrom-Json
+  foreach ($reference in @($lineage.references)) {
+    $record = New-Record ("https://lineage.invalid/{0}" -f $reference.id) ([string]$reference.referenced_title) 'pending review'
+    $record.id = [string]$reference.id
+    $record.source_url = $null
+    $record.direct_file_url = $null
+    $record.agency = [string]$reference.agency
+    $record.date = $reference.referenced_date
+    $record.file_type = [string]$reference.file_type
+    $record.parent_url = [string]$reference.parent_url
+    $record.referring_urls = @($reference.referring_urls)
+    $record.discovery_path = @($reference.discovery_path)
+    $record.discovery_method = [string]$reference.discovery_method
+    $record.crawl_depth = $reference.crawl_depth
+    $record.processing_notes = @($reference.processing_notes) + @("Lineage relation: $($reference.relation).", "Evidence: $($reference.evidence)")
+    $record.provenance_status = 'named in an in-scope source; authoritative file not yet located'
+    Merge-Record $record
+
+    if ([string]$reference.relation -match '(?i)^(combined and updated|replaces|previous plan|maintained from)$' -and
+        [string]$reference.referenced_title -notmatch '(?i)^(the |previous |2024 plan$)') {
+      $sourceRecord = $records[[string]$reference.source_candidate_id]
+      if ($sourceRecord) {
+        $label = [string]$reference.referenced_title
+        if ($reference.referenced_date) { $label += " ($($reference.referenced_date))" }
+        $sourceRecord.cited_predecessors = @(@($sourceRecord.cited_predecessors) + $label | Where-Object { $_ } | Sort-Object -Unique)
+      }
+    }
+  }
+}
+
+$stagingCandidateByPath = @{}
+if (Test-Path -LiteralPath 'project-state/staging-manifest.json') {
+  foreach ($item in (Get-Content -Raw -LiteralPath 'project-state/staging-manifest.json' | ConvertFrom-Json)) {
+    $stagingCandidateByPath[([string]$item.local_path).Replace('\','/')] = [string]$item.candidate_id
+  }
+}
 foreach ($file in Get-ChildItem research/staging -Recurse -Filter *.pdf -ErrorAction SilentlyContinue) {
+  $relativeStagingPath = $file.FullName.Substring((Get-Location).Path.Length + 1).Replace('\','/')
+  $manifestCandidateId = if ($stagingCandidateByPath.ContainsKey($relativeStagingPath)) { $stagingCandidateByPath[$relativeStagingPath] } else { $null }
   $match = $records.Values | Where-Object {
+    ($manifestCandidateId -and $_.id -eq $manifestCandidateId) -or
+    $_.id -eq $file.BaseName -or
     ($_.r2_url -and ([uri]$_.r2_url).Segments[-1] -eq $file.Name) -or
     ($_.direct_file_url -and ([uri]$_.direct_file_url).Segments[-1] -eq $file.Name)
   } | Select-Object -First 1
   if ($match) {
-    $match.local_path = $file.FullName.Substring((Get-Location).Path.Length + 1).Replace('\','/')
+    $match.local_path = $relativeStagingPath
     $match.size_bytes = $file.Length
     $match.checksum_sha256 = (Get-FileHash -LiteralPath $file.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+    if ($match.status -in @('pending review','approved for addition','downloading')) { $match.status = 'downloaded' }
   } else {
     $record = New-Record ('local:' + $file.Name) $file.BaseName 'downloaded'
     $record.source_url = $null
     $record.direct_file_url = $null
     $record.file_type = 'PDF'
-    $record.local_path = $file.FullName.Substring((Get-Location).Path.Length + 1).Replace('\','/')
+    $record.local_path = $relativeStagingPath
     $record.size_bytes = $file.Length
     $record.checksum_sha256 = (Get-FileHash -LiteralPath $file.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
     $record.processing_notes = @('Staged file was not yet reconciled to a source URL.')
@@ -363,6 +442,24 @@ foreach ($pending in @($records.Values | Where-Object { $_.status -in @('pending
 }
 
 foreach ($record in $records.Values) {
+  foreach ($field in @('parent_url','discovery_method','crawl_depth')) {
+    if (-not $record.Contains($field)) { $record[$field] = $null }
+  }
+  foreach ($field in @('referring_urls','discovery_path','cited_predecessors','cited_successors')) {
+    if (-not $record.Contains($field)) { $record[$field] = @() }
+  }
+  if (-not $record.Contains('provenance_status')) { $record.provenance_status = 'not assessed' }
+  if ($record.r2_url -and -not $record.source_url) {
+    $record.provenance_status = 'unreconciled archived copy'
+    if ($record.status -eq 'validated') {
+      $record.status = 'requires human review'
+      $record.validation_status = 'R2 link passed; authoritative government provenance unreconciled'
+      $record.updated_at = (Get-Date).ToUniversalTime().ToString('o')
+    }
+  } elseif ($record.source_url -and $record.source_url -match '(?i)(cabq\.gov|bernco\.gov|mrcog-nm\.gov|dot\.nm\.gov|legistar\.com|amlegal\.com)' -and
+    $record.provenance_status -in @('not assessed','source URL recorded','unreconciled archived copy','authoritative government source recorded')) {
+    $record.provenance_status = 'authoritative government source recorded'
+  }
   if ($record.status -eq 'pending review' -and $record.title -match '(?i)^(visit the project page|click here|here)(\b|\.)' -and $record.source_url) {
     try {
       $segments = @(([uri]$record.source_url).Segments)

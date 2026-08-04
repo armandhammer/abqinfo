@@ -45,7 +45,7 @@ if ($directory) { New-Item -ItemType Directory -Force $directory | Out-Null }
   source_url = $null
   scope = 'official-document-urls-extracted-from-downloaded-source-text'
   retrieved_at = (Get-Date).ToUniversalTime().ToString('o')
-  links = @($candidates.url)
+  links = @($candidates | ForEach-Object { $_.url })
   candidates = $candidates
 } | ConvertTo-Json -Depth 6 | Set-Content -LiteralPath $OutputPath -Encoding utf8
 

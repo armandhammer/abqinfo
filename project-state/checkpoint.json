@@ -1,27 +1,30 @@
 ﻿{
-    "recorded_at":  "2026-08-04T12:47:01.0931621Z",
-    "completed_item_range":  "Recovered and implemented Downtown Walkability Analysis; repaired extracted-reference discovery and bounded recursive Council crawl; normalized/imported 550 Council candidates; promoted 11 high-value Council discoveries; optimized inventory import.",
-    "total_candidates":  1050,
+    "recorded_at":  "2026-08-04T15:05:18.3988426Z",
+    "completed_item_range":  "Unknown-document infrastructure, City bicycle-history pagination/collection/parent-path repairs, PDF lineage extraction, and provenance reconciliation through saved crawl pages 774 and 466",
+    "total_candidates":  3605,
     "counts_by_status":  {
-                             "pending review":  744,
+                             "pending review":  3290,
                              "approved for addition":  50,
                              "downloading":  0,
                              "downloaded":  0,
-                             "parsed":  0,
+                             "parsed":  1,
                              "description drafted":  0,
                              "placement assigned":  0,
                              "implemented":  0,
-                             "validated":  158,
-                             "excluded":  44,
-                             "duplicate":  49,
+                             "validated":  106,
+                             "excluded":  72,
+                             "duplicate":  54,
                              "superseded":  5,
                              "blocked":  0,
-                             "requires human review":  0
+                             "requires human review":  27
                          },
-    "remaining_nonterminal":  794,
-    "next_pending_id":  "src-00b089afefa2c9e6",
+    "remaining_nonterminal":  3341,
+    "next_pending_id":  "lin-01236d79d0623075",
     "blockers":  [
-                     "Council crawl is intentionally bounded at 201 pages; 93 de-duplicated, filtered, resumable Council-section pages remain for the next scoped pass."
+                     "Strict bicycle-history regression remains 1/4 blind-recovered; 2000 passes, 2011 is hash-reconciled via lineage expansion, and 1993/2015 authoritative files remain unreconciled.",
+                     "Bounded crawl has 565 queued URLs; review relevance before resuming because the next saved URL is an unrelated ABQ 66 media-kit PDF.",
+                     "Legacy-sitemap crawl has 261 queued URLs; next saved URL is the 2025 May Is Bike Month bilingual flyer.",
+                     "After the bounded queue, resume legacy with: powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/project/Invoke-UnknownDocumentDiscovery.ps1 -SeedUrls https://www.cabq.gov/bikes/biking-in-abq -Agency cabq -DiscoveryProfile bicycle-history -OutputPath project-state/discovery/cabq-bicycle-history-legacy-sitemap-crawl.json -MaxDepth 8 -MaxPages 3000 -RequestTimeoutSeconds 12 -MaxRetries 2 -IncludeSiteInfrastructure -Resume"
                  ],
-    "resume_command":  "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Invoke-ScopedSectionCrawl.ps1 -Agency cabq -StartUrl \u0027https://www.cabq.gov/council\u0027 -PathPrefix \u0027/council\u0027 -OutputPath \u0027research/discovery/cabq-council-section-links.json\u0027 -MaxDepth 4 -MaxPages 300 -Resume"
+    "resume_command":  "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/project/Invoke-UnknownDocumentDiscovery.ps1 -SeedUrls https://www.cabq.gov/bikes/biking-in-abq -Agency cabq -DiscoveryProfile bicycle-history -OutputPath project-state/discovery/cabq-bicycle-history-bounded-collection-crawl.json -MaxDepth 8 -MaxPages 3000 -RequestTimeoutSeconds 12 -MaxRetries 2 -Resume"
 }
