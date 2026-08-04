@@ -4,6 +4,16 @@ title: "Current Projects"
 
 Active roadway projects, near-term implementation work, and project documents.
 
+## State project index and participation
+
+- [NMDOT Active Projects](https://www.dot.nm.gov/projects/active-projects)
+
+  Maps state transportation projects in study, design, and construction, including major Albuquerque work, and provides project descriptions, development phases, public-meeting information, and links to dedicated project resources.
+
+- [NMDOT Public Involvement Portal and Toolbox](https://www.dot.nm.gov/projects/public-involvement-portal)
+
+  Provides the statewide public-involvement calendar plus guidance, templates, and engagement resources used for NMDOT transportation plans and projects, helping residents find participation opportunities and understand the agency's outreach process.
+
 ## Unser Boulevard and Paseo del Norte
 
 - [Unser and Paseo project website](https://upgradeunserpaseo.com/)

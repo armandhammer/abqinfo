@@ -8,6 +8,10 @@ Interactive maps of city data and infrastructure.
 
 ### Regional long-range transportation maps
 
+- [Albuquerque Metropolitan Planning Area boundary map (2020)](https://files.abqinfo.com/maps/mrmpo-albuquerque-metropolitan-planning-area-map-2020.pdf)
+
+  Maps the official Albuquerque Metropolitan Planning Area boundary and member jurisdictions used for federally required metropolitan transportation planning, programming, data analysis, and regional coordination.
+
 - [MRMPO Bikeway System Map (2026)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-long-range-bikeway-system-map-2026.pdf)
 - [MRMPO Pedestrian System Map (2026)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-long-range-pedestrian-system-map-2026.pdf)
 - [MRMPO Roadway System Map (2026)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-long-range-roadway-system-map-2026.pdf)
@@ -26,6 +30,36 @@ Interactive maps of city data and infrastructure.
 - [City open-data catalog](https://data.cabq.gov/)
 
   This is the maintained entry point for City datasets, including building permits, capital projects, transit data, parks, trails, public safety, and environmental information.
+
+## State transportation maps
+
+- [NMDOT map library](https://www.dot.nm.gov/travel-information/maps)
+
+  Links NMDOT's interactive public map gallery, downloadable highway and milepost maps, and NMRoads traveler information covering construction, road conditions, traffic cameras, message signs, weather, transit, and rest areas.
+
+- [NMRoads](https://nmroads.com)
+
+  Provides NMDOT's live statewide traveler map with current road conditions, closures, construction, traffic cameras, weather impacts, and alerts useful for trips on I-25, I-40, and other Albuquerque-area state highways.
+
+- [Request an NMDOT map](https://www.dot.nm.gov/travel-information/request-a-map)
+
+  Requests printed copies of the official New Mexico state highway road map or bicycle trail map directly from NMDOT, with delivery address and map selection submitted through the agency form.
+
+## Regional active-transportation maps
+
+- [Pedestrian Level of Traffic Stress map](https://mrmpo.maps.arcgis.com/apps/instant/sidebar/index.html?appid=577561bcf1534cf5bcf105686cb397df)
+
+  Maps relative pedestrian comfort along Albuquerque-area roads using factors such as traffic volume, speed, roadway configuration, and sidewalk conditions, helping identify corridors where walking improvements may be needed.
+
+- [MRMPO bicycle and pedestrian planning maps](https://www.mrcog-nm.gov/566/Bicycle-and-Pedestrian-Planning-Maps)
+
+  Collects regional pedestrian-priority, pedestrian traffic-stress, long-range bikeway, and bicycle traffic-stress maps used to identify needs and guide active-transportation planning across the Albuquerque metropolitan area.
+
+## Regional transit maps
+
+- [Planned and Potential Transit Service map](https://mrmpo.maps.arcgis.com/apps/instant/sidebar/index.html?appid=d637ede6b5c44129bbbd1393b27eff22)
+
+  Shows the Albuquerque metropolitan area's planned and potential regional transit service network adopted with Transitions 2045, replacing the former Long Range Transit Network as the current interactive planning reference.
 
 ## County Planning Map
 

@@ -29,7 +29,11 @@ if (-not $extension) {
     'ZIP' = '.zip'
   }
   $declaredType = ([string]$candidate.file_type).ToUpperInvariant()
-  $extension = if ($knownExtensions.ContainsKey($declaredType)) { $knownExtensions[$declaredType] } else { '.bin' }
+  if ($url -match '(?i)/DocumentCenter/View/' -or $candidate.title -match '(?i)\bPDF\b|\(PDF\)') {
+    $extension = '.pdf'
+  } else {
+    $extension = if ($knownExtensions.ContainsKey($declaredType)) { $knownExtensions[$declaredType] } else { '.bin' }
+  }
 }
 $path = Join-Path $DownloadDirectory ($Id + $extension.ToLowerInvariant())
 try {
@@ -39,6 +43,10 @@ try {
   $candidate.local_path = $file.FullName.Substring((Get-Location).Path.Length + 1).Replace('\','/')
   $candidate.size_bytes = $file.Length
   $candidate.checksum_sha256 = (Get-FileHash -LiteralPath $file.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+  if ($extension -eq '.pdf') { $candidate.file_type = 'PDF' }
+  $humanSize = if ($file.Length -ge 1MB) { '{0:N2} MiB' -f ($file.Length / 1MB) } elseif ($file.Length -ge 1KB) { '{0:N2} KiB' -f ($file.Length / 1KB) } else { "$($file.Length) bytes" }
+  $candidate.processing_notes += "Downloaded exact size: $($file.Length) bytes ($humanSize); SHA-256 recorded."
+  if ($file.Length -gt 100MB) { $candidate.processing_notes += 'File exceeds the 100 MB production-upload approval threshold; no R2 upload is authorized.' }
   $candidate.updated_at = (Get-Date).ToUniversalTime().ToString('o')
   $inventory | ConvertTo-Json -Depth 12 | Set-Content -LiteralPath $InventoryPath -Encoding utf8
   $candidate | ConvertTo-Json -Depth 8

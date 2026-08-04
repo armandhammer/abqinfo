@@ -54,6 +54,48 @@ function Get-WordCount([AllowNull()][string]$Value) {
   return @($Value -split '\s+' | Where-Object { $_ }).Count
 }
 
+function Get-NormalizedDiscoveryUrl([string]$Url) {
+  try {
+    $builder = [UriBuilder]$Url
+    $builder.Fragment = ''
+    if ([string]::IsNullOrWhiteSpace($builder.Query) -or $builder.Query -eq '?') { $builder.Query = '' }
+    if ($builder.Host -ieq 'nmroads.com' -and $builder.Path -match '(?i)^/mapIndex\.html$') { $builder.Path = '/' }
+    return $builder.Uri.AbsoluteUri.TrimEnd('/')
+  } catch { return $Url.Trim().TrimEnd('/') }
+}
+
+function Get-RecordUrls($Record) {
+  return @($Record.source_url, $Record.direct_file_url, $Record.r2_url) |
+    Where-Object { $_ -and $_ -match '^https?://' } |
+    ForEach-Object { Get-NormalizedDiscoveryUrl ([string]$_) } |
+    Sort-Object -Unique
+}
+
+function Test-DiscoveryCandidate([string]$Agency, [string]$Url) {
+  try { $uri = [uri]$Url } catch { return $false }
+  if ($uri.Scheme -notin @('http','https')) { return $false }
+  $uriHost = $uri.Host.ToLowerInvariant()
+  $path = $uri.AbsolutePath
+  if ($path -match '^/(accessibility|copyright|privacy|sitemap|search|quicklinks\.aspx|directory\.aspx|calendar\.aspx|bids\.aspx)/?$') { return $false }
+  if ($path -match '(?i)(\+\+resource\+\+|/image-repository/|/images?/|\.svg$|\.png$|\.jpe?g$|\.gif$|\.webp$)') { return $false }
+  switch ($Agency.ToLowerInvariant()) {
+    'cabq' { return $uriHost -match '(^|\.)(cabq\.gov|abq-zone\.com)$' }
+    'bernco' { return $uriHost -match '(^|\.)(bernco\.gov)$' }
+    'mrcog' { return $uriHost -match '(^|\.)(mrcog-nm\.gov|mrcogshare\.org|mrcogmaps\.org|riometro\.org|arcgis\.com)$' }
+    'nmdot' { return $uriHost -match '(^|\.)(dot\.nm\.gov|nmroads\.com|pmgpro\.com|rtsclients\.com)$' }
+    default { return $false }
+  }
+}
+
+function Get-DiscoveryTitle([string]$Url, [AllowNull()][string]$AnchorText) {
+  if (-not [string]::IsNullOrWhiteSpace($AnchorText)) { return Get-PlainText $AnchorText }
+  try {
+    $segment = [uri]::UnescapeDataString(([uri]$Url).Segments[-1].Trim('/'))
+    if ($segment) { return (($segment -replace '[-_]',' ') -replace '\s+',' ').Trim() }
+  } catch {}
+  return 'Title pending source review'
+}
+
 function Get-PropertyValue($Object, [string]$Name) {
   $property = $Object.PSObject.Properties[$Name]
   if ($null -eq $property) { return $null }
@@ -100,6 +142,14 @@ if (-not $Rebuild -and (Test-Path -LiteralPath $InventoryPath)) {
     foreach ($property in $record.PSObject.Properties) { $copy[$property.Name] = $property.Value }
     $records[$copy.id] = $copy
   }
+}
+
+# Placement is derived from the current Hugo tree on every import. Clearing the
+# cached values prevents moved or removed links from surviving as phantom
+# cross-listings in the durable inventory.
+foreach ($record in $records.Values) {
+  $record.implementation_location = $null
+  $record.implementation_locations = @()
 }
 
 function Merge-Record([System.Collections.IDictionary]$Incoming) {
@@ -194,6 +244,25 @@ foreach ($legacyPath in $legacyPaths) {
   }
 }
 
+foreach ($discoveryFile in Get-ChildItem 'research/discovery' -Filter '*-links.json' -File -ErrorAction SilentlyContinue) {
+  $discovery = Get-Content -Raw -LiteralPath $discoveryFile.FullName | ConvertFrom-Json
+  $agencyName = [string](Get-PropertyValue $discovery 'agency')
+  $crawlSource = [string](Get-PropertyValue $discovery 'source_url')
+  $candidateItems = @(Get-PropertyValue $discovery 'candidates')
+  if (-not $candidateItems.Count) {
+    $candidateItems = @((Get-PropertyValue $discovery 'links') | ForEach-Object { [pscustomobject]@{url=$_;anchor_text=$null} })
+  }
+  foreach ($candidateItem in $candidateItems) {
+    $rawUrl = [string](Get-PropertyValue $candidateItem 'url')
+    if (-not $rawUrl -or -not (Test-DiscoveryCandidate $agencyName $rawUrl)) { continue }
+    $url = Get-NormalizedDiscoveryUrl $rawUrl
+    $anchorText = [string](Get-PropertyValue $candidateItem 'anchor_text')
+    $record = New-Record $url (Get-DiscoveryTitle $url $anchorText) 'pending review'
+    $record.processing_notes = @("Discovered by deterministic crawl of $crawlSource.", 'Exact metadata and relevance remain pending source review.')
+    Merge-Record $record
+  }
+}
+
 foreach ($file in Get-ChildItem research/staging -Recurse -Filter *.pdf -ErrorAction SilentlyContinue) {
   $match = $records.Values | Where-Object {
     ($_.r2_url -and ([uri]$_.r2_url).Segments[-1] -eq $file.Name) -or
@@ -223,7 +292,8 @@ if (Test-Path -LiteralPath $OverridesPath) {
     $overrideId = Get-PropertyValue $override 'id'
     $matchUrl = Get-PropertyValue $override 'match_url'
     $match = $records.Values | Where-Object {
-      ($overrideId -and $_.id -eq $overrideId) -or $_.r2_url -eq $matchUrl -or $_.direct_file_url -eq $matchUrl -or $_.source_url -eq $matchUrl
+      ($overrideId -and $_.id -eq $overrideId) -or
+      ($matchUrl -and ($_.r2_url -eq $matchUrl -or $_.direct_file_url -eq $matchUrl -or $_.source_url -eq $matchUrl))
     } | Select-Object -First 1
     if (-not $match) { continue }
     foreach ($property in $override.PSObject.Properties) {
@@ -237,10 +307,13 @@ if (Test-Path -LiteralPath $OverridesPath) {
 }
 
 foreach ($pending in @($records.Values | Where-Object { $_.status -in @('pending review','approved for addition','downloaded','parsed','description drafted','placement assigned') })) {
+    $pendingUrls = @(Get-RecordUrls $pending)
     $canonical = $records.Values | Where-Object {
+        $canonicalUrls = @(Get-RecordUrls $_)
         $_.id -ne $pending.id -and
-        $_.status -eq 'implemented' -and
-        (($_.direct_file_url -and ($_.direct_file_url -eq $pending.direct_file_url -or $_.direct_file_url -eq $pending.source_url)) -or
+        $_.status -in @('implemented','validated') -and
+        ((@($canonicalUrls | Where-Object { $_ -in $pendingUrls }).Count -gt 0) -or
+         ($_.direct_file_url -and ($_.direct_file_url -eq $pending.direct_file_url -or $_.direct_file_url -eq $pending.source_url)) -or
          ($_.checksum_sha256 -and $pending.checksum_sha256 -and $_.checksum_sha256 -eq $pending.checksum_sha256))
     } | Select-Object -First 1
 
