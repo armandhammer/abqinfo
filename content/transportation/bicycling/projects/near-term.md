@@ -1,5 +1,5 @@
 ---
-title: "Near Term Projects"
+title: "Planned Projects"
 ---
 
-Upcoming bicycle infrastructure projects.
+Funded, programmed, or formally advancing bicycle projects that are not yet accompanied by active implementation materials.

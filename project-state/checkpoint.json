@@ -1,0 +1,27 @@
+﻿{
+    "recorded_at":  "2026-08-04T03:08:57.5200871Z",
+    "completed_item_range":  "MRCOG reference-material index review; one maintained regional source added and validated; no new authoritative PDFs discovered",
+    "total_candidates":  129,
+    "counts_by_status":  {
+                             "pending review":  0,
+                             "approved for addition":  0,
+                             "downloading":  0,
+                             "downloaded":  0,
+                             "parsed":  0,
+                             "description drafted":  0,
+                             "placement assigned":  0,
+                             "implemented":  0,
+                             "validated":  101,
+                             "excluded":  3,
+                             "duplicate":  24,
+                             "superseded":  0,
+                             "blocked":  1,
+                             "requires human review":  0
+                         },
+    "remaining_nonterminal":  0,
+    "next_pending_id":  null,
+    "blockers":  [
+                     "City DMD data endpoint src-9d02a9df4a2ad3da remains blocked after repeated network failures."
+                 ],
+    "resume_command":  "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Invoke-SourceCrawl.ps1 -Agency mrcog -StartUrl https://www.mrcog-nm.gov/581/Transportation-Planning -OutputPath research/discovery/mrcog-transportation-planning-links.json"
+}
