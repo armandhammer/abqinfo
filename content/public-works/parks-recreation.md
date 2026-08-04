@@ -6,6 +6,14 @@ Parks and recreation facilities and programs.
 
 ## Plans and Data
 
+- [Urban Forestry and Let's Plant ABQ](https://www.cabq.gov/parksandrecreation/urban-forest)
+
+  Describes Albuquerque's urban-forest benefits, the City's management of roughly 25,000 park trees, the 100,000-tree planting initiative, community engagement findings, planting resources, and current program work.
+
+- [Parks and Recreation Featured Projects](https://www.cabq.gov/parksandrecreation/featured-projects)
+
+  Maintains the City's detailed index of active park, trail, aquatics, recreation, and public-space improvements, linking project histories, design concepts, public engagement, schedules, and construction updates.
+
 - [ABC Comprehensive Plan, Chapter 10: Parks & Open Space (2025 Update)](https://files.abqinfo.com/public-works/parks-recreation/abc-comprehensive-plan-chapter-10-parks-open-space-2025.pdf)
 
   The parks and open space element of the adopted Albuquerque/Bernalillo County Comprehensive Plan provides policy direction for park access, recreation, trail connections, conservation, stewardship, and an integrated open-space network.

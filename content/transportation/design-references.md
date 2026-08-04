@@ -5,6 +5,12 @@ weight: 50
 
 Reference drawings, engineering details, and technical guidance related to transportation infrastructure and street design.
 
+## Bernalillo County standards
+
+- [Bernalillo County Technical Standards](https://www.bernco.gov/public-works/development-review/tech-standards)
+
+  Provides the County's maintained development and public-infrastructure standards, standard drawings, drainage and transportation requirements, and technical references used to review and construct improvements in unincorporated Bernalillo County.
+
 ## NMDOT Quick Build Guide
 
 Reference guidance for quick-build transportation and multimodal safety projects.

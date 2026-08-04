@@ -73,6 +73,10 @@ Regional plans, long-range plans, and other system-level transportation planning
 
 ## City Plans and Studies
 
+- [Albuquerque Complete Streets Ordinance](https://www.cabq.gov/council/projects/current-projects/complete-streets)
+
+  Documents Albuquerque's enacted Complete Streets requirements, the 2019 equity-focused update, implementation history, adopted legislation, and supporting material governing how City streets serve pedestrians, bicyclists, transit riders, and motorists.
+
 - [Downtown Walkability Analysis (2014)](https://documents.cabq.gov/planning/development-process-manual/XSections/Downtown_Walkability_Analysis-2014.pdf)
 
   Jeff Speck's 100-page study proposes targeted, low-cost street redesigns, signal changes, bicycle facilities, parking reforms, development strategies, railroad crossings, and public-realm improvements intended to increase walking, cycling, safety, and downtown Albuquerque's economic vitality.
@@ -80,6 +84,20 @@ Regional plans, long-range plans, and other system-level transportation planning
 - [City transportation plans and studies](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections)
 
   The Planning Department's maintained index links adopted area plans, transportation studies, and cross-section guidance used in public-right-of-way design, including the Downtown Walkability Analysis and Rio Grande Boulevard Study.
+
+## Bernalillo County planning
+
+- [Bernalillo County Transportation Plans](https://www.bernco.gov/public-works/transportation-planning/transportation-plans)
+
+  Collects County transportation plans and alignment studies, including the 2019 and 2023 studies for 118th Street, with project context connecting roadway alignment, future development, multimodal facilities, and regional access.
+
+- [Complete Streets Planning](https://www.bernco.gov/public-works/about-the-public-works-division/technical-services/transportation-planning/complete-streets-planning)
+
+  Explains Bernalillo County's Complete Streets policy and context-sensitive approach to planning, designing, maintaining, and operating roads for pedestrians, bicyclists, transit users, motorists, and differing urban and East Mountain settings.
+
+- [Transportation Project Planning](https://www.bernco.gov/public-works/about-the-public-works-division/technical-services/transportation-planning/transportation-project-planning)
+
+  Describes how Bernalillo County develops transportation projects, pursues federal, state, and local funding, applies adopted plans and policies, and evaluates potential projects before design and construction.
 
 ## Statewide Programming
 

@@ -7,6 +7,10 @@ Affordable housing programs and data.
 
 ## Plans and Data
 
+- [Vacant and Abandoned Houses Task Force Report (2018)](https://www.cabq.gov/council/projects/current-projects/the-vacant-and-abandoned-houses-task-force-releases-report)
+
+  Preserves the Council task force's findings and recommendations on vacant and abandoned housing, including code enforcement, rehabilitation, demolition, receivership, financing, neighborhood impacts, and the full historical report.
+
 - [ABC Comprehensive Plan, Chapter 9: Housing (2025 Update)](https://files.abqinfo.com/housing/affordable-housing/abc-comprehensive-plan-chapter-9-housing-2025.pdf)
 
   The housing element of the adopted Albuquerque/Bernalillo County Comprehensive Plan sets policies for housing choice, affordability, neighborhood stability, fair housing, infrastructure, and coordinated implementation across the city and unincorporated county.

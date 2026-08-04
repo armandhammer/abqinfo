@@ -4,6 +4,12 @@ title: "Bike Maps"
 
 Multi-use trails and paths in Albuquerque.
 
+## City bicycle maps
+
+- [Albuquerque Bike Maps](https://www.cabq.gov/bikes/bike-maps)
+
+  Provides the current Albuquerque Bicycle and Trail Map, the City's interactive bicycle map, facility-type guidance, trail-riding guides, and public-art bicycle tours, plus locations where printed maps are available.
+
 ## Regional long-range bikeway network
 
 - [MRMPO Active Transportation map portfolio](https://mrmpo.maps.arcgis.com/apps/instant/portfolio/index.html?appid=38915e0cc1414048b27f9335302203a5)

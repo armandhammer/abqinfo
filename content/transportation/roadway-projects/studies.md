@@ -4,6 +4,24 @@ title: "Studies"
 
 Transportation studies and reports.
 
+## City corridor and neighborhood studies
+
+- [Girard Boulevard Complete Streets Master Plan](https://www.cabq.gov/council/projects/neighborhood-projects/girard-boulevard-complete-streets-master-plan)
+
+  Preserves the corridor plan, design drawings, bicycle and intersection concepts, presentations, meeting notes, and implementation history for multimodal improvements on Girard Boulevard between Gibson and Indian School.
+
+- [Central Avenue Complete Street Plan: 1st Street to Girard](https://www.cabq.gov/council/projects/neighborhood-projects/central-avenue-complete-street-plan-1st-street-to-girard)
+
+  Collects the 2013–2014 Central Avenue plan and design toolkit, segment presentations, public input, project history, and recommendations for walking, bicycling, transit, and streetscape improvements between Downtown and Girard.
+
+- [South Yale Complete Street Master Plan](https://www.cabq.gov/council/projects/neighborhood-projects/south-yale-complete-street-master-plan)
+
+  Provides the South Yale corridor's existing-conditions material, study-area map, segment concept plans, public-meeting record, and development-oriented Complete Street concepts prepared for the area south of Central Avenue.
+
+- [Amole Mesa Avenue and Messina Drive Traffic Calming Study](https://www.cabq.gov/council/find-your-councilor/district-3/amole-mesa-ave-and-messina-dr-traffic-calming-study)
+
+  Documents the 2023 neighborhood traffic-calming study and links the public-meeting presentation covering traffic conditions, community concerns, potential treatments, and the study process for Amole Mesa Avenue and Messina Drive.
+
 ## Regional screening and analysis
 
 - [Road Diet Candidates Map](https://www.mrcog-nm.gov/569/Road-Diet-Candidates-Map)

@@ -4,6 +4,16 @@ title: "Traffic Operations"
 
 Regional roadway operations, traffic analysis, incident management, and intelligent transportation systems.
 
+## Bernalillo County street operations
+
+- [Street Maintenance](https://www.bernco.gov/public-works/public-works-services/road-safety-conditions/streets-traffic-signals/street-maintenance)
+
+  Explains Bernalillo County's roadway-maintenance responsibilities and service requests for pavement, potholes, grading, signs, striping, vegetation, snow response, and related conditions in unincorporated areas.
+
+- [Traffic Engineering](https://www.bernco.gov/public-works/public-works-services/road-safety-conditions/streets-traffic-signals/traffic-engineering)
+
+  Describes County traffic-engineering services for signals, signs, markings, speed studies, traffic counts, safety evaluations, school zones, and requests affecting streets outside Albuquerque's municipal maintenance jurisdiction.
+
 ## Traffic analysis
 
 - [MRCOG Traffic Counts Viewer](https://mrmpo.maps.arcgis.com/apps/webappviewer/index.html?id=5e779402decd4a9584d9cdddf1cbe56b)
