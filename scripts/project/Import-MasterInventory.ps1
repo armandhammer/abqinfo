@@ -2,6 +2,7 @@
 param(
   [string]$InventoryPath = 'project-state/master-inventory.json',
   [string]$OverridesPath = 'project-state/inventory-overrides.json',
+  [string]$QualityExclusionsPath = 'project-state/quality-exclusions.json',
   [switch]$Rebuild
 )
 
@@ -309,6 +310,27 @@ if (Test-Path -LiteralPath $OverridesPath) {
       $match[$property.Name] = $property.Value
     }
     $match.description_word_count = Get-WordCount $match.description
+  }
+}
+
+# User-approved quality exclusions are applied after ordinary metadata overrides so
+# broad recrawls cannot silently re-promote material deliberately removed from the site.
+if (Test-Path -LiteralPath $QualityExclusionsPath) {
+  $qualityExclusions = Get-Content -Raw $QualityExclusionsPath | ConvertFrom-Json
+  foreach ($exclusion in $qualityExclusions) {
+    $matchUrl = ([string](Get-PropertyValue $exclusion 'url')).TrimEnd('/')
+    if (-not $matchUrl) { continue }
+    foreach ($match in @($records.Values | Where-Object {
+      @($_.r2_url,$_.direct_file_url,$_.source_url) |
+        Where-Object { $_ -and ([string]$_).TrimEnd('/') -eq $matchUrl }
+    })) {
+      $match.status = 'excluded'
+      $match.validation_status = 'user-approved quality exclusion'
+      $match.exclusion_reason = [string](Get-PropertyValue $exclusion 'reason')
+      $match.implementation_location = $null
+      $match.implementation_locations = @()
+      $match.updated_at = (Get-Date).ToUniversalTime().ToString('o')
+    }
   }
 }
 

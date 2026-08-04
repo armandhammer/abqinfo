@@ -5,26 +5,6 @@ weight: 50
 
 Reference drawings, engineering details, and technical guidance related to transportation infrastructure and street design.
 
-## Regional reference index
-
-- [Metropolitan Transportation Board Complete Streets Resolution R-11-09 (2011)](https://files.abqinfo.com/transportation/design-references/mrmpo-complete-streets-resolution-r-11-09-2011.pdf)
-
-  Directs the regional transportation-system guide update to incorporate Complete Streets principles, multimodal accommodation, land-use context, connectivity, right-of-way guidance, Safe Routes to School, and related policies.
-
-- [MRMPO transportation reference material](https://www.mrcog-nm.gov/545/Reference-Material)
-
-  MRCOG's maintained reference index connects regional practitioners to current complete-streets and multimodal design resources from recognized national transportation organizations, complementing locally adopted standards without duplicating third-party publications.
-
-## NMDOT permits and local-agency resources
-
-- [NMDOT ePermitting](https://www.dot.nm.gov/epermitting)
-
-  Provides online applications, guidance, tutorials, checklists, district contacts, and status tracking for state-highway access, fencing, structure attachment, roadway work, special events, telecommunications, flow lines, and utility permits.
-
-- [NMDOT Tribal and Local Public Agency documents](https://www.dot.nm.gov/business-support/project-oversight-division/t-lpa-documents-and-information)
-
-  Collects certification training, the federal-project handbook, chapter materials, forms, funding resources, and guidance for local and tribal agencies developing transportation projects with state or federal funding.
-
 ## NMDOT Quick Build Guide
 
 Reference guidance for quick-build transportation and multimodal safety projects.

@@ -16,10 +16,6 @@ Use the service pages for current rider information and the Transportation Plans
 
   Collects statewide public-transit and rail plans, programs, grant resources, provider information, Rail Runner and Park and Ride links, and permitting guidance for access to or crossings of railroad right-of-way.
 
-- [NMDOT Transportation Regulation Bureau](https://www.dot.nm.gov/trb)
-
-  Provides operating-authority applications, regulations, carrier directories, complaints, hearings, legal notices, and compliance information for taxis, shuttles, rideshare companies, non-emergency medical transport, towing, movers, and other compensated carriers.
-
 ## Statewide planning context
 
 - [Planned and Potential Transit Service map](https://mrmpo.maps.arcgis.com/apps/instant/sidebar/index.html?appid=d637ede6b5c44129bbbd1393b27eff22)

@@ -1,6 +1,6 @@
 ﻿{
     "schema_version":  1,
-    "generated_at":  "2026-08-04T12:44:29.0261344Z",
+    "generated_at":  "2026-08-04T13:01:36.3688250Z",
     "allowed_statuses":  [
                              "pending review",
                              "approved for addition",
@@ -18,7 +18,7 @@
                              "requires human review"
                          ],
     "counts":  {
-                   "pending review":  744,
+                   "pending review":  749,
                    "approved for addition":  50,
                    "downloading":  0,
                    "downloaded":  0,
@@ -26,9 +26,9 @@
                    "description drafted":  0,
                    "placement assigned":  0,
                    "implemented":  0,
-                   "validated":  158,
-                   "excluded":  44,
-                   "duplicate":  49,
+                   "validated":  133,
+                   "excluded":  72,
+                   "duplicate":  51,
                    "superseded":  5,
                    "blocked":  0,
                    "requires human review":  0
@@ -535,7 +535,7 @@
                        },
                        {
                            "id":  "src-03aaa7714ed1a843",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.mrcog-nm.gov/638/Safety-Planning-Assistance",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -555,16 +555,16 @@
                                                     "Discovered by deterministic crawl of https://www.mrcog-nm.gov/581/Transportation-Planning.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/transportation/bicycling/safety-crash-data.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/transportation/bicycling/safety-crash-data.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved relevance cleanup: agency assistance description is less useful than the linked safety plans, maps, and crash data.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:54.0576736Z",
-                           "updated_at":  "2026-08-04T11:16:43.5470750Z"
+                           "updated_at":  "2026-08-04T13:01:31.9056452Z"
                        },
                        {
                            "id":  "src-040b769ab5ff8f2b",
@@ -899,7 +899,7 @@
                        },
                        {
                            "id":  "src-06c13746849168ae",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.mrcog-nm.gov/624/Peak-Hour-vs-Peak-Period",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -919,16 +919,16 @@
                                                     "Discovered by deterministic crawl of https://www.mrcog-nm.gov/581/Transportation-Planning.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/transportation/operations-data.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/transportation/operations-data.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved quality cleanup: narrow explanatory material overstates its importance on the public site.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:54.0556751Z",
-                           "updated_at":  "2026-08-04T11:16:43.5460749Z"
+                           "updated_at":  "2026-08-04T13:01:32.1169742Z"
                        },
                        {
                            "id":  "src-06d2fbff4e1c0e23",
@@ -3175,6 +3175,39 @@
                            "updated_at":  "2026-08-04T12:37:50.0236329Z"
                        },
                        {
+                           "id":  "src-160e1af1a9437b00",
+                           "status":  "pending review",
+                           "source_url":  "https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/data-management-bureau",
+                           "direct_file_url":  null,
+                           "r2_url":  null,
+                           "r2_key":  null,
+                           "r2_etag":  null,
+                           "r2_last_modified":  null,
+                           "agency":  "NMDOT",
+                           "title":  "Data Management Bureau",
+                           "date":  null,
+                           "file_type":  "Web page or live service",
+                           "size_bytes":  null,
+                           "checksum_sha256":  null,
+                           "proposed_canonical_page":  null,
+                           "description":  null,
+                           "description_word_count":  0,
+                           "processing_notes":  [
+                                                    "Discovered by deterministic crawl of https://www.dot.nm.gov/planning-research-multimodal-and-safety/.",
+                                                    "Exact metadata and relevance remain pending source review."
+                                                ],
+                           "implementation_location":  null,
+                           "implementation_locations":  [
+
+                                                        ],
+                           "cross_listing_approved":  false,
+                           "validation_status":  "not run",
+                           "exclusion_reason":  null,
+                           "local_path":  null,
+                           "discovered_at":  "2026-08-04T12:59:26.4267225Z",
+                           "updated_at":  "2026-08-04T12:59:26.4267225Z"
+                       },
+                       {
                            "id":  "src-161e9721e179bb26",
                            "status":  "pending review",
                            "source_url":  "https://www.bernco.gov/public-works/blog/2021/04/15/goff-boulevard-improvements",
@@ -3836,7 +3869,7 @@
                        },
                        {
                            "id":  "src-1a0dfd37475ddc69",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.mrcog-nm.gov/DocumentCenter/View/7033",
                            "direct_file_url":  "https://www.mrcog-nm.gov/DocumentCenter/View/7033",
                            "r2_url":  "https://files.abqinfo.com/transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf",
@@ -3857,16 +3890,16 @@
                                                     "Exact delivered size was established by full download after the public viewer blocked metadata-only requests.",
                                                     "Correct-key upload increased R2 storage from 677,175,500 to 679,137,824 bytes."
                                                 ],
-                           "implementation_location":  "content/transportation/transportation-plans.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/transportation/transportation-plans.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved relevance cleanup: administrative work program and budget are not useful enough for the public plan library.",
                            "local_path":  "research/staging/queue/src-cc6a4ff2372bfa50.pdf",
                            "discovered_at":  "2026-08-04T02:48:31.1252811Z",
-                           "updated_at":  "2026-08-04T11:16:44.2476820Z"
+                           "updated_at":  "2026-08-04T13:01:34.9350280Z"
                        },
                        {
                            "id":  "src-1a354b1f40327a71",
@@ -5088,7 +5121,7 @@
                        },
                        {
                            "id":  "src-25276d49ab03af2a",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.dot.nm.gov/travel-information/request-a-map",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -5108,16 +5141,16 @@
                                                     "Discovered by deterministic crawl of https://www.dot.nm.gov/event/tramway-event2/.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/maps/maps.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/maps/maps.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved relevance cleanup: printed-map request form rather than an online information resource.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:54.0836744Z",
-                           "updated_at":  "2026-08-04T11:16:43.6104593Z"
+                           "updated_at":  "2026-08-04T13:01:30.3783469Z"
                        },
                        {
                            "id":  "src-255c53cabfcc83d6",
@@ -6209,7 +6242,7 @@
                        },
                        {
                            "id":  "src-2cbb5eb26392de99",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.mrcog-nm.gov/545/Reference-Material",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -6229,16 +6262,16 @@
                                                     "Discovered by deterministic crawl of https://www.mrcog-nm.gov/544/Long-Range-System-Maps.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/transportation/design-references.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/transportation/design-references.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved quality cleanup: generic third-party reference index duplicates stronger direct technical sources.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T03:08:52.1518447Z",
-                           "updated_at":  "2026-08-04T11:16:43.5370759Z"
+                           "updated_at":  "2026-08-04T13:01:33.2449271Z"
                        },
                        {
                            "id":  "src-2cd0e5cfed7354f9",
@@ -6341,7 +6374,7 @@
                        },
                        {
                            "id":  "src-2e14e00a2099f309",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.dot.nm.gov/travel-information/courtesy-patrol",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -6361,16 +6394,16 @@
                                                     "Discovered by deterministic crawl of https://www.dot.nm.gov/event/tramway-event2/.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/transportation/operations-data.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/transportation/operations-data.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved relevance cleanup: traveler service information does not warrant inclusion in the curated reference library.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:54.0826746Z",
-                           "updated_at":  "2026-08-04T11:16:43.6084592Z"
+                           "updated_at":  "2026-08-04T13:01:32.5763652Z"
                        },
                        {
                            "id":  "src-2e234e9b6d4a2a8a",
@@ -7002,7 +7035,7 @@
                        },
                        {
                            "id":  "src-311cfdd90694010a",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.mrcog-nm.gov/633/COVID-19-and-Travel",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -7022,16 +7055,16 @@
                                                     "Discovered by deterministic crawl of https://www.mrcog-nm.gov/581/Transportation-Planning.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/transportation/operations-data.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/transportation/operations-data.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved timeliness cleanup: pandemic travel analysis is historical and no longer sufficiently useful for the main site.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:54.0576736Z",
-                           "updated_at":  "2026-08-04T11:16:43.5470750Z"
+                           "updated_at":  "2026-08-04T13:01:32.3581157Z"
                        },
                        {
                            "id":  "src-3123f4d42c1f5100",
@@ -8121,7 +8154,7 @@
                        },
                        {
                            "id":  "src-396dba15dd723b28",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.dot.nm.gov/contact-us/transportation-commission",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -8141,16 +8174,16 @@
                                                     "Discovered by deterministic crawl of https://www.dot.nm.gov/event/tramway-event2/.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/transportation/transportation-plans.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/transportation/transportation-plans.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved relevance cleanup: administrative commission page rather than substantive Albuquerque information.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:54.0756923Z",
-                           "updated_at":  "2026-08-04T11:16:43.5994606Z"
+                           "updated_at":  "2026-08-04T13:01:30.6011964Z"
                        },
                        {
                            "id":  "src-39b5ebaf93c616fb",
@@ -8484,7 +8517,7 @@
                        },
                        {
                            "id":  "src-3c80290d8188f61a",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://data.cabq.gov/",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -8503,16 +8536,16 @@
                            "processing_notes":  [
 
                                                 ],
-                           "implementation_location":  "content/maps/maps.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/maps/maps.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved quality cleanup: broad open-data root does not lead visitors directly to a useful dataset or map.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T01:30:19.4735407Z",
-                           "updated_at":  "2026-08-04T11:16:43.1553400Z"
+                           "updated_at":  "2026-08-04T13:01:31.6785154Z"
                        },
                        {
                            "id":  "src-3c9526d7aaf73b83",
@@ -10030,7 +10063,7 @@
                        },
                        {
                            "id":  "src-47158210c88ca369",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.dot.nm.gov/trb",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -10050,16 +10083,16 @@
                                                     "Discovered by deterministic crawl of https://www.dot.nm.gov/event/tramway-event2/.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/transportation/transit/_index.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/transportation/transit/_index.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved relevance cleanup: commercial-carrier regulation is outside ABQInfo\u0027s core public-information scope.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:54.0867017Z",
-                           "updated_at":  "2026-08-04T11:16:43.6134643Z"
+                           "updated_at":  "2026-08-04T13:01:31.0681665Z"
                        },
                        {
                            "id":  "src-478e0d959eb891c1",
@@ -12369,7 +12402,7 @@
                        },
                        {
                            "id":  "src-5674f3bca8e7b191",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.dot.nm.gov/projects/public-involvement-portal",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -12389,16 +12422,16 @@
                                                     "Discovered by deterministic crawl of https://www.dot.nm.gov/event/tramway-event2/.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/transportation/roadway-projects/current.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/transportation/roadway-projects/current.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved relevance cleanup: statewide participation toolbox adds little value beside specific project pages.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:54.0806745Z",
-                           "updated_at":  "2026-08-04T11:16:43.6044606Z"
+                           "updated_at":  "2026-08-04T13:01:30.8380466Z"
                        },
                        {
                            "id":  "src-56784d45754c69cf",
@@ -13420,6 +13453,39 @@
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T12:37:49.9430248Z",
                            "updated_at":  "2026-08-04T12:37:49.9430248Z"
+                       },
+                       {
+                           "id":  "src-5d8ce70d067413c4",
+                           "status":  "pending review",
+                           "source_url":  "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/traffic-safety/pedestrian-bicycle-safety",
+                           "direct_file_url":  null,
+                           "r2_url":  null,
+                           "r2_key":  null,
+                           "r2_etag":  null,
+                           "r2_last_modified":  null,
+                           "agency":  "NMDOT",
+                           "title":  "Pedestrian/Bicycle Safety",
+                           "date":  null,
+                           "file_type":  "Web page or live service",
+                           "size_bytes":  null,
+                           "checksum_sha256":  null,
+                           "proposed_canonical_page":  null,
+                           "description":  null,
+                           "description_word_count":  0,
+                           "processing_notes":  [
+                                                    "Discovered by deterministic crawl of https://www.dot.nm.gov/planning-research-multimodal-and-safety/.",
+                                                    "Exact metadata and relevance remain pending source review."
+                                                ],
+                           "implementation_location":  null,
+                           "implementation_locations":  [
+
+                                                        ],
+                           "cross_listing_approved":  false,
+                           "validation_status":  "not run",
+                           "exclusion_reason":  null,
+                           "local_path":  null,
+                           "discovered_at":  "2026-08-04T12:59:26.4287220Z",
+                           "updated_at":  "2026-08-04T12:59:26.4287220Z"
                        },
                        {
                            "id":  "src-5dd2daf604742ee7",
@@ -15138,6 +15204,39 @@
                            "updated_at":  "2026-08-04T12:37:50.1096215Z"
                        },
                        {
+                           "id":  "src-68ba8f735091955e",
+                           "status":  "duplicate",
+                           "source_url":  "https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/highway-safety-improvement-program",
+                           "direct_file_url":  null,
+                           "r2_url":  null,
+                           "r2_key":  null,
+                           "r2_etag":  null,
+                           "r2_last_modified":  null,
+                           "agency":  "NMDOT",
+                           "title":  "Highway Safety Improvement Program",
+                           "date":  null,
+                           "file_type":  "Web page or live service",
+                           "size_bytes":  null,
+                           "checksum_sha256":  null,
+                           "proposed_canonical_page":  null,
+                           "description":  null,
+                           "description_word_count":  0,
+                           "processing_notes":  [
+                                                    "Discovered by deterministic crawl of https://www.dot.nm.gov/planning-research-multimodal-and-safety/.",
+                                                    "Exact metadata and relevance remain pending source review."
+                                                ],
+                           "implementation_location":  null,
+                           "implementation_locations":  [
+
+                                                        ],
+                           "cross_listing_approved":  false,
+                           "validation_status":  "duplicate discovery confirmed",
+                           "exclusion_reason":  "Duplicate discovery record for implemented candidate src-b2c0ad0c4336e968.",
+                           "local_path":  null,
+                           "discovered_at":  "2026-08-04T12:59:26.4297221Z",
+                           "updated_at":  "2026-08-04T12:59:35.5292251Z"
+                       },
+                       {
                            "id":  "src-68bdc9a5222414bd",
                            "status":  "pending review",
                            "source_url":  "https://www.cabq.gov/council/projects/current-projects/small-business-resource-fair",
@@ -15238,7 +15337,7 @@
                        },
                        {
                            "id":  "src-69cabe17c6f03e61",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.mrcog-nm.gov/562/Environmental-Resiliency",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -15258,16 +15357,16 @@
                                                     "Discovered by deterministic crawl of https://www.mrcog-nm.gov/581/Transportation-Planning.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/transportation/transportation-plans.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/transportation/transportation-plans.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved quality cleanup: general summary adds little without a distinct Albuquerque plan, dataset, or current project.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:54.0456753Z",
-                           "updated_at":  "2026-08-04T11:16:43.5370759Z"
+                           "updated_at":  "2026-08-04T13:01:34.5058974Z"
                        },
                        {
                            "id":  "src-69dbada9bff9f6ee",
@@ -15968,7 +16067,7 @@
                        },
                        {
                            "id":  "src-6ffda986a5dde105",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.mrcog-nm.gov/355/Economic-Development",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -15988,16 +16087,16 @@
                                                     "Discovered by deterministic crawl of https://www.mrcog-nm.gov/544/Long-Range-System-Maps.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/city-data/economy-workforce.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/city-data/economy-workforce.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved scope cleanup: generic regional economic-development resources do not justify a dedicated ABQInfo category.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:53.9331358Z",
-                           "updated_at":  "2026-08-04T11:16:43.5300636Z"
+                           "updated_at":  "2026-08-04T13:01:35.1499161Z"
                        },
                        {
                            "id":  "src-702858b107e714ad",
@@ -17123,7 +17222,7 @@
                        },
                        {
                            "id":  "src-78e785810702136e",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.mrcog-nm.gov/260/Regional-Transportation-Management-Cente",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -17143,16 +17242,16 @@
                                                     "Discovered by deterministic crawl of https://www.mrcog-nm.gov/581/Transportation-Planning.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/transportation/operations-data.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/transportation/operations-data.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved relevance cleanup: general organizational description adds little actionable or analytical information.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:54.0336748Z",
-                           "updated_at":  "2026-08-04T11:16:43.5260636Z"
+                           "updated_at":  "2026-08-04T13:01:32.7889796Z"
                        },
                        {
                            "id":  "src-7907210efc3690e9",
@@ -17555,7 +17654,7 @@
                        },
                        {
                            "id":  "src-7b085a1763d7283f",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.mrcog-nm.gov/291/Project-Selection-Process",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -17575,16 +17674,16 @@
                                                     "Discovered by deterministic crawl of https://www.mrcog-nm.gov/581/Transportation-Planning.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/transportation/transportation-plans.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/transportation/transportation-plans.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved relevance cleanup: general funding-method description is not important enough for the curated plan library.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:54.0356749Z",
-                           "updated_at":  "2026-08-04T11:16:43.5290634Z"
+                           "updated_at":  "2026-08-04T13:01:33.4622047Z"
                        },
                        {
                            "id":  "src-7b668ee0294ff3cc",
@@ -19270,7 +19369,7 @@
                        },
                        {
                            "id":  "src-87eec66d784eda1b",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.mrcog-nm.gov/563/Climate-Change-the-Transportation-Sector",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -19290,16 +19389,16 @@
                                                     "Discovered by deterministic crawl of https://www.mrcog-nm.gov/581/Transportation-Planning.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/transportation/transportation-plans.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/transportation/transportation-plans.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved quality cleanup: general summary adds little beyond adopted transportation and resilience plans.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:54.0456753Z",
-                           "updated_at":  "2026-08-04T11:16:43.5380752Z"
+                           "updated_at":  "2026-08-04T13:01:34.7209605Z"
                        },
                        {
                            "id":  "src-8832a87573fd5ed6",
@@ -20384,6 +20483,39 @@
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T12:24:18.1576182Z",
                            "updated_at":  "2026-08-04T12:24:18.1576182Z"
+                       },
+                       {
+                           "id":  "src-8ec116c4b306603a",
+                           "status":  "pending review",
+                           "source_url":  "https://www.dot.nm.gov/planning-research-multimodal-and-safety",
+                           "direct_file_url":  null,
+                           "r2_url":  null,
+                           "r2_key":  null,
+                           "r2_etag":  null,
+                           "r2_last_modified":  null,
+                           "agency":  "NMDOT",
+                           "title":  "planning research multimodal and safety",
+                           "date":  null,
+                           "file_type":  "Web page or live service",
+                           "size_bytes":  null,
+                           "checksum_sha256":  null,
+                           "proposed_canonical_page":  null,
+                           "description":  null,
+                           "description_word_count":  0,
+                           "processing_notes":  [
+                                                    "User-selected scoped crawl starting page.",
+                                                    "Page and authored main-content links were captured by the deterministic crawler."
+                                                ],
+                           "implementation_location":  null,
+                           "implementation_locations":  [
+
+                                                        ],
+                           "cross_listing_approved":  false,
+                           "validation_status":  "not run",
+                           "exclusion_reason":  null,
+                           "local_path":  null,
+                           "discovered_at":  "2026-08-04T12:59:26.4267225Z",
+                           "updated_at":  "2026-08-04T12:59:26.4267225Z"
                        },
                        {
                            "id":  "src-8edb800004db8bc0",
@@ -22792,7 +22924,7 @@
                        },
                        {
                            "id":  "src-a235a122d8362645",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.dot.nm.gov/contact-us/inspection-of-public-records",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -22812,16 +22944,16 @@
                                                     "Discovered by deterministic crawl of https://www.dot.nm.gov/event/tramway-event2/.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/city-data/_index.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/city-data/_index.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved relevance cleanup: generic records-request procedure rather than substantive Albuquerque information.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:54.0736733Z",
-                           "updated_at":  "2026-08-04T11:16:43.5974608Z"
+                           "updated_at":  "2026-08-04T13:01:29.9881645Z"
                        },
                        {
                            "id":  "src-a28afdf3f4ae1a75",
@@ -23881,6 +24013,39 @@
                            "updated_at":  "2026-08-04T12:37:50.0716179Z"
                        },
                        {
+                           "id":  "src-aabc89c34a8095a6",
+                           "status":  "pending review",
+                           "source_url":  "https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/nmdots-long-range-statewide-transportation-plan",
+                           "direct_file_url":  null,
+                           "r2_url":  null,
+                           "r2_key":  null,
+                           "r2_etag":  null,
+                           "r2_last_modified":  null,
+                           "agency":  "NMDOT",
+                           "title":  "NMDOT Long-Range Statewide Transportation Plan",
+                           "date":  null,
+                           "file_type":  "Web page or live service",
+                           "size_bytes":  null,
+                           "checksum_sha256":  null,
+                           "proposed_canonical_page":  null,
+                           "description":  null,
+                           "description_word_count":  0,
+                           "processing_notes":  [
+                                                    "Discovered by deterministic crawl of https://www.dot.nm.gov/planning-research-multimodal-and-safety/.",
+                                                    "Exact metadata and relevance remain pending source review."
+                                                ],
+                           "implementation_location":  null,
+                           "implementation_locations":  [
+
+                                                        ],
+                           "cross_listing_approved":  false,
+                           "validation_status":  "not run",
+                           "exclusion_reason":  null,
+                           "local_path":  null,
+                           "discovered_at":  "2026-08-04T12:59:26.4277225Z",
+                           "updated_at":  "2026-08-04T12:59:26.4277225Z"
+                       },
+                       {
                            "id":  "src-aacbdd79b1a076d5",
                            "status":  "pending review",
                            "source_url":  "https://www.cabq.gov/office-of-neighborhood-coordination",
@@ -24113,7 +24278,7 @@
                        },
                        {
                            "id":  "src-abb5d364fe16cfd0",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.mrcog-nm.gov/598/Target-Scenario",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -24133,16 +24298,16 @@
                                                     "Discovered by deterministic crawl of https://www.mrcog-nm.gov/264/Metropolitan-Transportation-Plan.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/transportation/transportation-plans.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/transportation/transportation-plans.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved quality cleanup: summary page adds little beyond the adopted metropolitan transportation plan.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:54.0031362Z",
-                           "updated_at":  "2026-08-04T11:16:43.5440753Z"
+                           "updated_at":  "2026-08-04T13:01:33.6748042Z"
                        },
                        {
                            "id":  "src-ac5d57a7d09b4ac6",
@@ -25069,6 +25234,38 @@
                            "updated_at":  "2026-08-04T12:13:00.8570532Z"
                        },
                        {
+                           "id":  "src-b2c0ad0c4336e968",
+                           "status":  "validated",
+                           "source_url":  "https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/highway-safety-improvement-program/",
+                           "direct_file_url":  null,
+                           "r2_url":  null,
+                           "r2_key":  null,
+                           "r2_etag":  null,
+                           "r2_last_modified":  null,
+                           "agency":  "NMDOT",
+                           "title":  "NMDOT Highway Safety Improvement Program",
+                           "date":  null,
+                           "file_type":  "Web page or live service",
+                           "size_bytes":  null,
+                           "checksum_sha256":  null,
+                           "proposed_canonical_page":  "content/transportation/bicycling/safety-crash-data.md",
+                           "description":  "Brings together New Mexico\u0027s Strategic Highway Safety Plan, Vulnerable Road User Safety Assessment, annual safety targets, network-screening maps, road-safety-audit program, and crash-data request access for all public roads and travel modes.",
+                           "description_word_count":  31,
+                           "processing_notes":  [
+
+                                                ],
+                           "implementation_location":  "content/transportation/bicycling/safety-crash-data.md",
+                           "implementation_locations":  [
+                                                            "content/transportation/bicycling/safety-crash-data.md"
+                                                        ],
+                           "cross_listing_approved":  false,
+                           "validation_status":  "passed: HTTP 200",
+                           "exclusion_reason":  null,
+                           "local_path":  null,
+                           "discovered_at":  "2026-08-04T12:59:25.0738512Z",
+                           "updated_at":  "2026-08-04T13:01:14.9232059Z"
+                       },
+                       {
                            "id":  "src-b2c755f99cb6f97c",
                            "status":  "pending review",
                            "source_url":  "https://www.cabq.gov/municipaldevelopment/lighting-and-light-outages",
@@ -25665,7 +25862,7 @@
                        },
                        {
                            "id":  "src-b719335310cfd1b5",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.mrcog-nm.gov/579/Environmental-Justice",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -25685,16 +25882,16 @@
                                                     "Discovered by deterministic crawl of https://www.mrcog-nm.gov/581/Transportation-Planning.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/transportation/transportation-plans.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/transportation/transportation-plans.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved quality cleanup: generic federal-framework summary is redundant with adopted regional planning documents.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:54.0516749Z",
-                           "updated_at":  "2026-08-04T11:16:43.5430755Z"
+                           "updated_at":  "2026-08-04T13:01:34.0710927Z"
                        },
                        {
                            "id":  "src-b745230b7fbd1fdb",
@@ -26688,7 +26885,7 @@
                        },
                        {
                            "id":  "src-bf648174ccbbe7fc",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.cabq.gov/acs/services/overview",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -26707,16 +26904,16 @@
                            "processing_notes":  [
 
                                                 ],
-                           "implementation_location":  "content/city-data/public-safety-data.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/city-data/public-safety-data.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved relevance cleanup: general department overview with no distinctive data or planning resource.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T01:30:19.4330249Z",
-                           "updated_at":  "2026-08-04T11:16:43.1113379Z"
+                           "updated_at":  "2026-08-04T13:01:30.1618301Z"
                        },
                        {
                            "id":  "src-bffa6e61d4a77fd7",
@@ -27217,7 +27414,7 @@
                        },
                        {
                            "id":  "src-c5a377a5f3973160",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.mrcog-nm.gov/460/Title-VI-EEO",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -27237,16 +27434,16 @@
                                                     "Discovered by deterministic crawl of https://www.mrcog-nm.gov/544/Long-Range-System-Maps.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/transportation/transportation-plans.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/transportation/transportation-plans.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved relevance cleanup: administrative compliance material is outside the site\u0027s core curated information scope.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:53.9341362Z",
-                           "updated_at":  "2026-08-04T11:16:43.5310633Z"
+                           "updated_at":  "2026-08-04T13:01:34.2903258Z"
                        },
                        {
                            "id":  "src-c5aa1fa7865d2885",
@@ -27745,7 +27942,7 @@
                        },
                        {
                            "id":  "src-cae40a7a7d8648ac",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.mrcog-nm.gov/578/Planning-for-Equity",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -27765,16 +27962,16 @@
                                                     "Discovered by deterministic crawl of https://www.mrcog-nm.gov/581/Transportation-Planning.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/transportation/transportation-plans.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/transportation/transportation-plans.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved quality cleanup: summary material is redundant with adopted plan policies and analyses.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:54.0496750Z",
-                           "updated_at":  "2026-08-04T11:16:43.5420758Z"
+                           "updated_at":  "2026-08-04T13:01:33.8573610Z"
                        },
                        {
                            "id":  "src-cb09224cdecc2e37",
@@ -27811,7 +28008,7 @@
                        },
                        {
                            "id":  "src-cb3096ad5e70a43b",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.dot.nm.gov/epermitting",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -27831,16 +28028,16 @@
                                                     "Discovered by deterministic crawl of https://www.dot.nm.gov/event/tramway-event2/.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/transportation/design-references.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/transportation/design-references.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved relevance cleanup: permit administration is not useful enough for the curated public site.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:54.0756923Z",
-                           "updated_at":  "2026-08-04T11:16:43.6004607Z"
+                           "updated_at":  "2026-08-04T13:01:31.2709901Z"
                        },
                        {
                            "id":  "src-cb4d4dd5f473a23a",
@@ -28538,7 +28735,7 @@
                        },
                        {
                            "id":  "src-d0904f3155228be6",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.mrcog-nm.gov/354/Workforce",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -28558,16 +28755,16 @@
                                                     "Discovered by deterministic crawl of https://www.mrcog-nm.gov/544/Long-Range-System-Maps.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/city-data/economy-workforce.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/city-data/economy-workforce.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved scope cleanup: general workforce services do not justify a dedicated ABQInfo category.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:53.9331358Z",
-                           "updated_at":  "2026-08-04T11:16:43.5300636Z"
+                           "updated_at":  "2026-08-04T13:01:35.3968881Z"
                        },
                        {
                            "id":  "src-d0e1abce1f128dc0",
@@ -28900,6 +29097,39 @@
                            "local_path":  "research/staging/queue/src-d3f0cf9107a00c74.pdf",
                            "discovered_at":  "2026-08-04T03:04:06.8953934Z",
                            "updated_at":  "2026-08-04T11:16:44.2992477Z"
+                       },
+                       {
+                           "id":  "src-d3f4c9a1a3d5b324",
+                           "status":  "pending review",
+                           "source_url":  "https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/multimodal-planning-and-programs-bureau",
+                           "direct_file_url":  null,
+                           "r2_url":  null,
+                           "r2_key":  null,
+                           "r2_etag":  null,
+                           "r2_last_modified":  null,
+                           "agency":  "NMDOT",
+                           "title":  "Multimodal Planning and Programs Bureau",
+                           "date":  null,
+                           "file_type":  "Web page or live service",
+                           "size_bytes":  null,
+                           "checksum_sha256":  null,
+                           "proposed_canonical_page":  null,
+                           "description":  null,
+                           "description_word_count":  0,
+                           "processing_notes":  [
+                                                    "Discovered by deterministic crawl of https://www.dot.nm.gov/planning-research-multimodal-and-safety/.",
+                                                    "Exact metadata and relevance remain pending source review."
+                                                ],
+                           "implementation_location":  null,
+                           "implementation_locations":  [
+
+                                                        ],
+                           "cross_listing_approved":  false,
+                           "validation_status":  "not run",
+                           "exclusion_reason":  null,
+                           "local_path":  null,
+                           "discovered_at":  "2026-08-04T12:59:26.4277225Z",
+                           "updated_at":  "2026-08-04T12:59:26.4277225Z"
                        },
                        {
                            "id":  "src-d423a80f88e7f887",
@@ -29731,7 +29961,7 @@
                        },
                        {
                            "id":  "src-d819e25098119664",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.dot.nm.gov/business-support/project-oversight-division/t-lpa-documents-and-information",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -29751,16 +29981,16 @@
                                                     "Discovered by deterministic crawl of https://www.dot.nm.gov/event/tramway-event2/.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/transportation/design-references.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/transportation/design-references.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved relevance cleanup: local-agency project administration material is too specialized for the curated public site.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:54.0676749Z",
-                           "updated_at":  "2026-08-04T11:16:43.5914601Z"
+                           "updated_at":  "2026-08-04T13:01:31.4570612Z"
                        },
                        {
                            "id":  "src-d850e374f0547178",
@@ -30090,6 +30320,38 @@
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:54.0666748Z",
                            "updated_at":  "2026-08-04T11:16:44.3462753Z"
+                       },
+                       {
+                           "id":  "src-db5a082a44bc115e",
+                           "status":  "validated",
+                           "source_url":  "https://storymaps.arcgis.com/stories/05d03cff46b14768979410bb069a5116",
+                           "direct_file_url":  null,
+                           "r2_url":  null,
+                           "r2_key":  null,
+                           "r2_etag":  null,
+                           "r2_last_modified":  null,
+                           "agency":  "Other authoritative source",
+                           "title":  "Walk Safe New Mexico: Pedestrian Safety Action Plan",
+                           "date":  null,
+                           "file_type":  "ArcGIS service",
+                           "size_bytes":  null,
+                           "checksum_sha256":  null,
+                           "proposed_canonical_page":  "content/transportation/bicycling/safety-crash-data.md",
+                           "description":  "Presents NMDOT\u0027s adopted statewide pedestrian safety plan, five-year action framework, design and training resources, and implementation materials addressing infrastructure, agency processes, education, and proven pedestrian-safety countermeasures.",
+                           "description_word_count":  26,
+                           "processing_notes":  [
+
+                                                ],
+                           "implementation_location":  "content/transportation/bicycling/safety-crash-data.md",
+                           "implementation_locations":  [
+                                                            "content/transportation/bicycling/safety-crash-data.md"
+                                                        ],
+                           "cross_listing_approved":  false,
+                           "validation_status":  "passed: HTTP 200",
+                           "exclusion_reason":  null,
+                           "local_path":  null,
+                           "discovered_at":  "2026-08-04T12:59:25.0758539Z",
+                           "updated_at":  "2026-08-04T13:01:16.8143821Z"
                        },
                        {
                            "id":  "src-db77e299d6492139",
@@ -31017,7 +31279,7 @@
                        },
                        {
                            "id":  "src-e1381f56ecb77b3c",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.mrcog-nm.gov/538/Turning-Movement-Counts",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -31037,16 +31299,16 @@
                                                     "Discovered by deterministic crawl of https://www.mrcog-nm.gov/581/Transportation-Planning.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/transportation/operations-data.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/transportation/operations-data.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved timeliness cleanup: older turning counts and pandemic-era guidance are not reliably current.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:54.0436758Z",
-                           "updated_at":  "2026-08-04T11:16:43.5360631Z"
+                           "updated_at":  "2026-08-04T13:01:32.2370387Z"
                        },
                        {
                            "id":  "src-e13cf1e5cc7915a2",
@@ -31479,7 +31741,7 @@
                        },
                        {
                            "id":  "src-e42e518b92df6316",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.dot.nm.gov/adopt-a-highway",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -31499,16 +31761,16 @@
                                                     "Discovered by deterministic crawl of https://www.dot.nm.gov/event/tramway-event2/.",
                                                     "Exact metadata and relevance remain pending source review."
                                                 ],
-                           "implementation_location":  "content/transportation/_index.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/transportation/_index.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved relevance cleanup: participation program rather than a plan, project, dataset, map, or technical reference.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T04:03:54.0656752Z",
-                           "updated_at":  "2026-08-04T11:16:43.5884593Z"
+                           "updated_at":  "2026-08-04T13:01:29.7670428Z"
                        },
                        {
                            "id":  "src-e4c5198ea43128eb",
@@ -32399,6 +32661,39 @@
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T02:48:31.2047944Z",
                            "updated_at":  "2026-08-04T11:16:44.2496832Z"
+                       },
+                       {
+                           "id":  "src-ec6f2425c884d073",
+                           "status":  "duplicate",
+                           "source_url":  "https://www.dot.nm.gov/traffic-records-system",
+                           "direct_file_url":  null,
+                           "r2_url":  null,
+                           "r2_key":  null,
+                           "r2_etag":  null,
+                           "r2_last_modified":  null,
+                           "agency":  "NMDOT",
+                           "title":  "Statewide Traffic Records System",
+                           "date":  null,
+                           "file_type":  "Web page or live service",
+                           "size_bytes":  null,
+                           "checksum_sha256":  null,
+                           "proposed_canonical_page":  null,
+                           "description":  null,
+                           "description_word_count":  0,
+                           "processing_notes":  [
+                                                    "Discovered by deterministic crawl of https://www.dot.nm.gov/planning-research-multimodal-and-safety/.",
+                                                    "Exact metadata and relevance remain pending source review."
+                                                ],
+                           "implementation_location":  null,
+                           "implementation_locations":  [
+
+                                                        ],
+                           "cross_listing_approved":  false,
+                           "validation_status":  "duplicate discovery confirmed",
+                           "exclusion_reason":  "Duplicate discovery record for implemented candidate src-fda23e3b8e702b91.",
+                           "local_path":  null,
+                           "discovered_at":  "2026-08-04T12:59:26.4287220Z",
+                           "updated_at":  "2026-08-04T12:59:35.3044110Z"
                        },
                        {
                            "id":  "src-edd4eb43d1ed89a7",
@@ -33625,7 +33920,7 @@
                        },
                        {
                            "id":  "src-f8614b43122b3de3",
-                           "status":  "validated",
+                           "status":  "excluded",
                            "source_url":  "https://www.mrcog-nm.gov/512/Long-Range-Transportation-System-Guide",
                            "direct_file_url":  "https://www.mrcog-nm.gov/DocumentCenter/View/5800/R-11-09-MTB",
                            "r2_url":  "https://files.abqinfo.com/transportation/design-references/mrmpo-complete-streets-resolution-r-11-09-2011.pdf",
@@ -33645,16 +33940,16 @@
                                                     "Original authoritative three-page resolution preserved without modification.",
                                                     "Cumulative projected R2 storage after upload was 688,889,240 bytes."
                                                 ],
-                           "implementation_location":  "content/transportation/design-references.md",
+                           "implementation_location":  null,
                            "implementation_locations":  [
-                                                            "content/transportation/design-references.md"
+
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
-                           "exclusion_reason":  null,
+                           "validation_status":  "user-approved quality exclusion",
+                           "exclusion_reason":  "User-approved quality and timeliness cleanup: old resolution adds little value beside current adopted plans and design guidance.",
                            "local_path":  "research/staging/queue/src-93a5d61174cab3ea.pdf",
                            "discovered_at":  "2026-08-04T04:29:21.4827006Z",
-                           "updated_at":  "2026-08-04T11:16:44.3422468Z"
+                           "updated_at":  "2026-08-04T13:01:33.0229165Z"
                        },
                        {
                            "id":  "src-f868d4a916ebb17a",
@@ -34383,6 +34678,38 @@
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T11:50:35.7488795Z",
                            "updated_at":  "2026-08-04T11:50:35.7488795Z"
+                       },
+                       {
+                           "id":  "src-fda23e3b8e702b91",
+                           "status":  "validated",
+                           "source_url":  "https://www.dot.nm.gov/traffic-records-system/",
+                           "direct_file_url":  null,
+                           "r2_url":  null,
+                           "r2_key":  null,
+                           "r2_etag":  null,
+                           "r2_last_modified":  null,
+                           "agency":  "NMDOT",
+                           "title":  "Statewide Traffic Records System",
+                           "date":  null,
+                           "file_type":  "Web page or live service",
+                           "size_bytes":  null,
+                           "checksum_sha256":  null,
+                           "proposed_canonical_page":  "content/transportation/bicycling/safety-crash-data.md",
+                           "description":  "Connects users to New Mexico crash maps, annual and DWI reports, pedestrian and bicyclist dashboards, fatality reports, data dictionaries, and the request process for Albuquerque-specific crash records not already published by UNM.",
+                           "description_word_count":  32,
+                           "processing_notes":  [
+
+                                                ],
+                           "implementation_location":  "content/transportation/bicycling/safety-crash-data.md",
+                           "implementation_locations":  [
+                                                            "content/transportation/bicycling/safety-crash-data.md"
+                                                        ],
+                           "cross_listing_approved":  false,
+                           "validation_status":  "passed: HTTP 200",
+                           "exclusion_reason":  null,
+                           "local_path":  null,
+                           "discovered_at":  "2026-08-04T12:59:25.0748820Z",
+                           "updated_at":  "2026-08-04T13:01:19.2265874Z"
                        },
                        {
                            "id":  "src-fda3f712913ac0b0",

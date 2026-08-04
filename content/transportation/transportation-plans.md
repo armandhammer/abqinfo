@@ -81,49 +81,11 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   The Planning Department's maintained index links adopted area plans, transportation studies, and cross-section guidance used in public-right-of-way design, including the Downtown Walkability Analysis and Rio Grande Boulevard Study.
 
-## Regional planning methods
-
-- [Project Selection Process](https://www.mrcog-nm.gov/291/Project-Selection-Process)
-
-  Explains MRMPO's competitive, quantitative method for evaluating projects seeking limited federal transportation funding, including congestion, network gaps, bridge condition, safety, equity, multimodal access, cost, and community benefit.
-
-- [Target Scenario](https://www.mrcog-nm.gov/598/Target-Scenario)
-
-  Describes the region's aspirational land-use and transportation vision, focusing growth around centers and transit corridors to improve access, reduce congestion and cross-river trips, conserve land, and limit development in hazard-prone areas.
-
-- [Planning for Equity](https://www.mrcog-nm.gov/578/Planning-for-Equity)
-
-  Summarizes how MRMPO incorporates transportation equity, Environmental Justice, and Title VI into long-range planning, public outreach, and project scoring to address disproportionate burdens and prioritize traditionally underserved communities.
-
-- [Environmental Justice](https://www.mrcog-nm.gov/579/Environmental-Justice)
-
-  Explains the federal environmental-justice framework used to identify and address disproportionately high transportation burdens, evaluate benefits, support meaningful participation, and strengthen equitable decision-making across the Albuquerque metropolitan planning area.
-
-- [MRCOG Title VI and EEO](https://www.mrcog-nm.gov/460/Title-VI-EEO)
-
-  Provides MRCOG's current Title VI plan, nondiscrimination notices, complaint procedures, language-assistance materials, and related civil-rights information governing regional transportation planning, programs, services, and public participation.
-
-- [Environmental Resiliency](https://www.mrcog-nm.gov/562/Environmental-Resiliency)
-
-  Connects regional transportation and land-use decisions with climate, flooding, wildfire, water, habitat, and natural-resource risks, and links an interactive inventory supporting environmentally responsive infrastructure planning.
-
-- [Climate Change and the Transportation Sector](https://www.mrcog-nm.gov/563/Climate-Change-the-Transportation-Sector)
-
-  Examines how transportation emissions and climate hazards affect the region, connecting mitigation, adaptation, travel choices, land use, infrastructure vulnerability, and resilience planning for the Albuquerque metropolitan transportation system.
-
-- [MRMPO Unified Planning Work Program, FFY 2027-2028](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf)
-
-  Defines MRMPO's federally required transportation planning work and budget for FFY 2027-2028, covering administration, TIP management, data, metropolitan planning, safety, active transportation, ABQ RIDE, Rio Metro, and imagery.
-
 ## Statewide Programming
 
 - [NMDOT Statewide Transportation Improvement Program](https://www.dot.nm.gov/infrastructure/statewide-transportation-improvement-program-stip/)
 
   NMDOT's maintained STIP page provides the current statewide program and amendment materials for federally funded transportation projects, including projects and funding actions affecting Albuquerque.
-
-- [New Mexico Transportation Commission](https://www.dot.nm.gov/contact-us/transportation-commission)
-
-  Provides the commission's current meeting schedule, livestream information, agendas, meeting books, minutes, members, and contacts. The governor-appointed commission sets NMDOT policy and oversees use of the State Road Fund.
 
 ## Development Process
 

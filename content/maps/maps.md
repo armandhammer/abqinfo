@@ -31,10 +31,6 @@ Interactive maps of city data and infrastructure.
 
   Albuquerque Open Space maintains access and trail maps for its lands and trailheads. Individual trail maps are available from the same City source when a printable field reference is useful.
 
-- [City open-data catalog](https://data.cabq.gov/)
-
-  This is the maintained entry point for City datasets, including building permits, capital projects, transit data, parks, trails, public safety, and environmental information.
-
 ## State transportation maps
 
 - [NMDOT map library](https://www.dot.nm.gov/travel-information/maps)
@@ -44,10 +40,6 @@ Interactive maps of city data and infrastructure.
 - [NMRoads](https://nmroads.com)
 
   Provides NMDOT's live statewide traveler map with current road conditions, closures, construction, traffic cameras, weather impacts, and alerts useful for trips on I-25, I-40, and other Albuquerque-area state highways.
-
-- [Request an NMDOT map](https://www.dot.nm.gov/travel-information/request-a-map)
-
-  Requests printed copies of the official New Mexico state highway road map or bicycle trail map directly from NMDOT, with delivery address and map selection submitted through the agency form.
 
 ## Regional active-transportation maps
 

@@ -13,7 +13,3 @@ Police, fire, and emergency services data.
 - [Police incidents open data](https://data.cabq.gov/publicsafety/policeincidents/)
 
   The City publishes police-incident data and machine-readable formats through its open-data service. Definitions, update timing, and appropriate use are described with the dataset.
-
-- [Albuquerque Community Safety Department overview](https://www.cabq.gov/acs/services/overview)
-
-  The City describes the non-police response services, programs, performance role, and public contacts administered by the Albuquerque Community Safety Department throughout Albuquerque.
