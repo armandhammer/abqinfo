@@ -8,6 +8,9 @@ $errors = [Collections.Generic.List[string]]::new()
 $ids = @{}
 
 foreach ($candidate in $inventory.candidates) {
+  foreach ($field in @('parent_url','referring_urls','discovery_path','discovery_method','crawl_depth','cited_predecessors','cited_successors','provenance_status')) {
+    if (-not $candidate.PSObject.Properties[$field]) { $errors.Add("Missing discovery/provenance field: $($candidate.id) = $field") }
+  }
   if ($ids.ContainsKey($candidate.id)) { $errors.Add("Duplicate id: $($candidate.id)") } else { $ids[$candidate.id] = $true }
   if ($candidate.status -notin $inventory.allowed_statuses) { $errors.Add("Invalid status: $($candidate.id) = $($candidate.status)") }
   if (-not $candidate.title) { $errors.Add("Missing title: $($candidate.id)") }
@@ -19,6 +22,7 @@ foreach ($candidate in $inventory.candidates) {
   if ($candidate.status -in @('implemented','validated') -and -not $candidate.description) { $errors.Add("Implemented item missing description: $($candidate.id)") }
   if ($candidate.status -in @('excluded','duplicate','superseded') -and -not $candidate.exclusion_reason) { $errors.Add("Terminal exclusion missing reason: $($candidate.id)") }
   if ($candidate.status -in @('implemented','validated') -and -not $candidate.implementation_location) { $errors.Add("Implemented item missing location: $($candidate.id)") }
+  if ($candidate.status -eq 'validated' -and $candidate.r2_url -and -not $candidate.source_url) { $errors.Add("R2-only item incorrectly marked validated without authoritative provenance: $($candidate.id)") }
   $locations = @($candidate.implementation_locations | Where-Object { $_ } | Sort-Object -Unique)
   if ($locations.Count -gt 1 -and -not $candidate.cross_listing_approved) { $errors.Add("Unapproved multiple-page placement: $($candidate.id) = $($locations -join ', ')") }
 }

@@ -1,27 +1,27 @@
 ﻿{
-    "recorded_at":  "2026-08-04T12:47:01.0931621Z",
-    "completed_item_range":  "Recovered and implemented Downtown Walkability Analysis; repaired extracted-reference discovery and bounded recursive Council crawl; normalized/imported 550 Council candidates; promoted 11 high-value Council discoveries; optimized inventory import.",
-    "total_candidates":  1050,
+    "recorded_at":  "2026-08-04T15:19:18.3314685Z",
+    "completed_item_range":  "Recorded-broad-history-and-MRMPO-TIP-viewer",
+    "total_candidates":  3606,
     "counts_by_status":  {
-                             "pending review":  744,
+                             "pending review":  3291,
                              "approved for addition":  50,
                              "downloading":  0,
                              "downloaded":  0,
-                             "parsed":  0,
+                             "parsed":  1,
                              "description drafted":  0,
                              "placement assigned":  0,
                              "implemented":  0,
-                             "validated":  158,
-                             "excluded":  44,
-                             "duplicate":  49,
+                             "validated":  106,
+                             "excluded":  72,
+                             "duplicate":  54,
                              "superseded":  5,
                              "blocked":  0,
-                             "requires human review":  0
+                             "requires human review":  27
                          },
-    "remaining_nonterminal":  794,
-    "next_pending_id":  "src-00b089afefa2c9e6",
+    "remaining_nonterminal":  3342,
+    "next_pending_id":  "lin-01236d79d0623075",
     "blockers":  [
-                     "Council crawl is intentionally bounded at 201 pages; 93 de-duplicated, filtered, resumable Council-section pages remain for the next scoped pass."
+                     "Paused-until-2026-08-10T20:52:00-06:00"
                  ],
-    "resume_command":  "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Invoke-ScopedSectionCrawl.ps1 -Agency cabq -StartUrl \u0027https://www.cabq.gov/council\u0027 -PathPrefix \u0027/council\u0027 -OutputPath \u0027research/discovery/cabq-council-section-links.json\u0027 -MaxDepth 4 -MaxPages 300 -Resume"
+    "resume_command":  "project-state/resume-2026-08-10.md"
 }

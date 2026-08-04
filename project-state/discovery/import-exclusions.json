@@ -1,0 +1,18 @@
+[
+  {
+    "file": "cabq-bicycle-history-crawl.json",
+    "reason": "Initial broad run stopped at the page cap and was superseded by focused pagination-aware regression runs."
+  },
+  {
+    "file": "cabq-bicycle-history-focused-crawl.json",
+    "reason": "Pre-pagination regression run retained for diagnosis but superseded by the repaired pagination crawl."
+  },
+  {
+    "file": "cabq-bicycle-history-collection-repair-crawl.json",
+    "reason": "Interrupted diagnostic run used an overbroad collection matcher; retained only as crawler-development evidence."
+  },
+  {
+    "file": "cabq-bicycle-history-topical-probe-crawl.json",
+    "reason": "Interrupted diagnostic run admitted Planning navigation because the collection matcher lacked word boundaries."
+  }
+]
