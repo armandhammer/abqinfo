@@ -19,6 +19,10 @@ Interactive maps of city data and infrastructure.
 
   These adopted regional maps show the existing and proposed long-range networks used by MRMPO to coordinate bicycle, pedestrian, roadway, and transit planning across the Albuquerque metropolitan area.
 
+- [Interactive Long Range Roadway System map](https://mrmpo.maps.arcgis.com/apps/instant/basic/index.html?appid=7d7f5f6f58674d2a9011d5c60ecd5947)
+
+  Provides an interactive view of MRMPO's Long Range Roadway System using May 2026 data, complementing the adopted printable map with searchable geography and roadway details across the metropolitan planning area.
+
 - [City maps for the public](https://www.cabq.gov/planning/agis-maps/maps-for-the-public)
 
   The City’s map library includes the official Zone Atlas, address and parcel reference tools, council districts, land use, streets, neighborhoods, and printable maps.

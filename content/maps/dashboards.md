@@ -14,10 +14,6 @@ Data dashboards and visualizations.
 
   Maps current event and seasonal construction restrictions, affected street boundaries, and effective dates. It is cross-listed under Current Roadway Projects because the restrictions directly affect construction scheduling.
 
-- [City Municipal Development project data](https://data.cabq.gov/government/dmdprojects)
-
-  The City’s maintained project dataset provides a direct way to explore Municipal Development projects and their available attributes. It is preferable to a copied project list that can quickly become outdated.
-
 - [Pedestrian, bicyclist, and traffic-safety projects map](https://www.cabq.gov/municipaldevelopment/maps/pedestrian-bicyclist-and-traffic-safety-projects)
 
   This City map points to the current geographic view of safety projects. It is also linked from the bicycle-safety section because the same live source serves both purposes.

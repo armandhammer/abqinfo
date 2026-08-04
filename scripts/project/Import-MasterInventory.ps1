@@ -172,7 +172,6 @@ function Merge-Record([System.Collections.IDictionary]$Incoming) {
       $existing[$key] = $Incoming[$key]
     }
   }
-  $existing.updated_at = (Get-Date).ToUniversalTime().ToString('o')
 }
 
 foreach ($file in Get-ChildItem content -Recurse -Filter *.md) {
@@ -272,7 +271,6 @@ foreach ($file in Get-ChildItem research/staging -Recurse -Filter *.pdf -ErrorAc
     $match.local_path = $file.FullName.Substring((Get-Location).Path.Length + 1).Replace('\','/')
     $match.size_bytes = $file.Length
     $match.checksum_sha256 = (Get-FileHash -LiteralPath $file.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
-    $match.updated_at = (Get-Date).ToUniversalTime().ToString('o')
   } else {
     $record = New-Record ('local:' + $file.Name) $file.BaseName 'downloaded'
     $record.source_url = $null
@@ -302,7 +300,6 @@ if (Test-Path -LiteralPath $OverridesPath) {
       $match[$property.Name] = $property.Value
     }
     $match.description_word_count = Get-WordCount $match.description
-    $match.updated_at = (Get-Date).ToUniversalTime().ToString('o')
   }
 }
 
@@ -342,7 +339,7 @@ foreach ($record in $records.Values) {
 
 $directory = Split-Path -Parent $InventoryPath
 if ($directory) { New-Item -ItemType Directory -Force $directory | Out-Null }
-$sorted = @($records.Values | Sort-Object id)
+$sorted = @($records.Values | Sort-Object { [string]$_['id'] })
 $counts = [ordered]@{}
 foreach ($status in $allowedStatuses) { $counts[$status] = @($sorted | Where-Object status -eq $status).Count }
 $nextCandidates = @($sorted | Where-Object { $_.status -in @('pending review','approved for addition','downloaded','parsed','description drafted','placement assigned') -or ($_.status -eq 'implemented' -and $_.validation_status -ne 'passed') } | Select-Object -First 1)

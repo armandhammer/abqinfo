@@ -51,6 +51,10 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   Maps the adopted long-range roadway network for the Albuquerque metropolitan planning area, including existing and proposed major facilities used to coordinate growth, investment, project development, and regional connectivity.
 
+- [Interactive Long Range Roadway System map](https://mrmpo.maps.arcgis.com/apps/instant/basic/index.html?appid=7d7f5f6f58674d2a9011d5c60ecd5947)
+
+  Provides an interactive view of MRMPO's Long Range Roadway System using May 2026 data, complementing the adopted printable map with searchable geography and roadway details across the metropolitan planning area.
+
 - [Transit System Map](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-long-range-transit-system-map-2026.pdf)
 
   Maps the adopted long-range transit network for the Albuquerque metropolitan area, showing existing services and proposed high-capacity or expanded connections that guide coordinated transit planning beyond the 2045 horizon.

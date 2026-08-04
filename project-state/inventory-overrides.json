@@ -260,9 +260,12 @@
   },
   {
     "match_url": "https://data.cabq.gov/government/dmdprojects",
-    "cross_listing_approved": true,
+    "status": "excluded",
+    "cross_listing_approved": false,
     "proposed_canonical_page": "content/public-works/capital-projects.md",
-    "processing_notes": ["Approved live-data cross-listing: the capital-project dataset is discoverable both by subject and in the system dashboard index."]
+    "validation_status": "human review completed 2026-08-04",
+    "exclusion_reason": "User review found a forgotten 2014 directory containing only metadata files and no useful current project information.",
+    "processing_notes": ["Removed from Capital Projects and Dashboards after direct human review confirmed that the directory contains no useful project data."]
   },
   {
     "match_url": "https://www.cabq.gov/municipaldevelopment/maps/traffic-report",
@@ -476,21 +479,29 @@
   },
   {
     "id": "src-88f2a9180f45f3cc",
-    "status": "requires human review",
-    "validation_status": "publisher metadata reviewed",
-    "exclusion_reason": "Official 2026 ArcGIS application is tagged Draft; publication should wait for confirmation that it is intended as a public adopted reference."
+    "status": "validated",
+    "title": "Long Range Roadway System (LRRS) Public App",
+    "date": "2026-05",
+    "proposed_canonical_page": "content/transportation/transportation-plans.md",
+    "description": "Provides an interactive view of MRMPO's Long Range Roadway System using May 2026 data, complementing the adopted printable map with searchable geography and roadway details across the metropolitan planning area.",
+    "cross_listing_approved": true,
+    "validation_status": "passed: human review confirmed May 2026 data",
+    "exclusion_reason": null,
+    "processing_notes": ["User directly reviewed the application and confirmed it displays May 2026 data.", "Approved rare map cross-listing under Transportation Plans and Maps."]
   },
   {
     "id": "src-db2314b2accb18df",
-    "status": "requires human review",
-    "validation_status": "ArcGIS metadata unavailable",
-    "exclusion_reason": "Linked ArcGIS item does not exist or is inaccessible, so its identity and current authority cannot be verified automatically."
+    "status": "excluded",
+    "validation_status": "human review confirmed inaccessible 2026-08-04",
+    "exclusion_reason": "ArcGIS application does not load and cannot provide useful public information.",
+    "processing_notes": ["User directly tested the application and confirmed that it does not load."]
   },
   {
     "id": "src-33b0b49d37a08015",
-    "status": "requires human review",
-    "validation_status": "ArcGIS metadata unavailable",
-    "exclusion_reason": "Linked ArcGIS item does not exist or is inaccessible, so its identity and current authority cannot be verified automatically."
+    "status": "excluded",
+    "validation_status": "human review confirmed inaccessible 2026-08-04",
+    "exclusion_reason": "ArcGIS application does not load and cannot provide useful public information.",
+    "processing_notes": ["User directly tested the application and confirmed that it does not load."]
   },
   {
     "id": "src-907f4de342216f97",

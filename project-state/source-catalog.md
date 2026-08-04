@@ -1,6 +1,6 @@
 ﻿# ABQ Info authoritative source catalog
 
-Generated: 2026-08-04T04:32:00.9023167Z
+Generated: 2026-08-04T11:18:14.9855992Z
 
 This catalog is derived from master-inventory.json, the authoritative project queue. It records 249 candidates and 61 R2 objects totaling 725638531 bytes.
 
@@ -16,12 +16,12 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 0 |
-| validated | 155 |
-| excluded | 39 |
+| validated | 156 |
+| excluded | 42 |
 | duplicate | 47 |
 | superseded | 4 |
-| blocked | 1 |
-| requires human review | 3 |
+| blocked | 0 |
+| requires human review | 0 |
 
 ## Preserved documents
 
@@ -157,6 +157,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Turning Movement Counts | MRCOG | content/transportation/operations-data.md | [source](https://www.mrcog-nm.gov/538/Turning-Movement-Counts) |
 | Workforce | MRCOG | content/city-data/economy-workforce.md | [source](https://www.mrcog-nm.gov/354/Workforce) |
 | Active Transportation Committee Portfolio App | MRCOG ArcGIS | content/transportation/bicycling/bike-maps.md | [source](https://mrmpo.maps.arcgis.com/apps/instant/portfolio/index.html?appid=38915e0cc1414048b27f9335302203a5) |
+| Long Range Roadway System (LRRS) Public App | MRCOG ArcGIS | content/transportation/transportation-plans.md | [source](https://mrmpo.maps.arcgis.com/apps/instant/basic/index.html?appid=7d7f5f6f58674d2a9011d5c60ecd5947) |
 | MRCOG Traffic Counts Viewer | MRCOG ArcGIS | content/transportation/operations-data.md | [source](https://mrmpo.maps.arcgis.com/apps/webappviewer/index.html?id=5e779402decd4a9584d9cdddf1cbe56b) |
 | Pedestrian Level of Traffic Stress (LTS) App | MRCOG ArcGIS | content/transportation/bicycling/bike-maps.md | [source](https://mrmpo.maps.arcgis.com/apps/instant/sidebar/index.html?appid=577561bcf1534cf5bcf105686cb397df) |
 | Planned and Potential Transit Service (PPTS) Public App | MRCOG ArcGIS | content/transportation/transit/_index.md | [source](https://mrmpo.maps.arcgis.com/apps/instant/sidebar/index.html?appid=d637ede6b5c44129bbbd1393b27eff22) |
@@ -192,7 +193,6 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 
 | ID | Status | Title | Reason |
 | --- | --- | --- | --- |
-| src-9d02a9df4a2ad3da | blocked | City Municipal Development project data | Approved live-data cross-listing: the capital-project dataset is discoverable both by subject and in the system dashboard index. |
 | src-0ae10419de42f24d | duplicate | Calendar | NMDOT public-involvement calendar is already exposed through the implemented Public Involvement Portal and Toolbox. |
 | src-12031307a5ac64aa | duplicate | Albuquerque Region Housing Needs Assessment (2024) | Duplicate discovery record for implemented candidate src-8778e4e2844fdd47. |
 | src-144dce5e96686cd0 | duplicate | src-d0ed674dd8fe9559 | Duplicate discovery record for implemented candidate src-b9c1a8d5cb7902b6. |
@@ -248,6 +248,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-0dcfada0e526c58c | excluded | Home | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-132f390adc8b3325 | excluded | Local Planning Assistance | Technical-assistance service for MRCOG member governments rather than a public Albuquerque plan, dataset, map, project, or reference. |
 | src-21b4b5f83aa255cf | excluded | News and Announcements | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
+| src-33b0b49d37a08015 | excluded | index.html | ArcGIS application does not load and cannot provide useful public information. |
 | src-3557750526cfe442 | excluded | Transportation Planning | Broad MRCOG transportation navigation page; it adds no unique public information beyond the cataloged child resources. |
 | src-3c1cf52a253dfd53 | excluded | Travel Times | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-42e962313b6f79aa | excluded | Business Support | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
@@ -264,6 +265,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-786fad5a807952dc | excluded | Metropolitan Planning Organization | Broad organizational landing page; the MPO plan, program, data, safety, and participation resources are cataloged individually. |
 | src-7c510a83b4198226 | excluded | Home | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-865317a1373d911c | excluded | Manage options | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
+| src-9d02a9df4a2ad3da | excluded | City Municipal Development project data | User review found a forgotten 2014 directory containing only metadata files and no useful current project information. |
 | src-a18b382fdc9f44ba | excluded | Districts | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-a587e69ef3cc66d5 | excluded | Office of General Counsel | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-a69827116f5364af | excluded | R2 staging README | Administrative staging note; not public site content. |
@@ -274,14 +276,12 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-d4bc7b068c29d097 | excluded | Procurement and Contract Services | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-d6b9ca4219ceaecc | excluded | Programs | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-d7b3d2df797bdef6 | excluded | Results | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
+| src-db2314b2accb18df | excluded | index.html | ArcGIS application does not load and cannot provide useful public information. |
 | src-e6be924ac074940d | excluded | Trucking Industry | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-e9861a984fbdb2a4 | excluded | Rest Areas | Current NMDOT rest-area list contains no Albuquerque-area facility and is not a statewide planning or policy source. |
 | src-f85703ccd682f75a | excluded | Export .ics file | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-fb71242d60bdc683 | excluded | Executive Staff | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-fd117d805710a1d4 | excluded | Back to Events | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
-| src-33b0b49d37a08015 | requires human review | index.html | Linked ArcGIS item does not exist or is inaccessible, so its identity and current authority cannot be verified automatically. |
-| src-88f2a9180f45f3cc | requires human review | Long Range Roadway System (LRRS) Public App | Official 2026 ArcGIS application is tagged Draft; publication should wait for confirmation that it is intended as a public adopted reference. |
-| src-db2314b2accb18df | requires human review | index.html | Linked ArcGIS item does not exist or is inaccessible, so its identity and current authority cannot be verified automatically. |
 | src-6da20b965df52490 | superseded | MRCOG bicycle and pedestrian planning maps | Broad bicycle-and-pedestrian landing page was replaced by the specific planning-maps, counts, analysis, and safety sources. |
 | src-7b6c76481a7f00c4 | superseded | Potential Road Diets in the Albuquerque Region | 2021 road-diet application has been superseded by MRMPO's maintained 2023 Road Diet Candidates Map source. |
 | src-cf6fa82eb6524971 | superseded | MRMPO Long Range Bikeway System | 2021 long-range bikeway application has been superseded by the adopted 2026 map and maintained active-transportation portfolio. |

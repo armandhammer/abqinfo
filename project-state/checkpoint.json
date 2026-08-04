@@ -1,6 +1,6 @@
 ﻿{
-    "recorded_at":  "2026-08-04T04:33:45.6090753Z",
-    "completed_item_range":  "Reconciled and resolved all 79 initially pending discovery records; implemented and validated 46 new source records, archived 4 original PDFs, and terminally classified all remaining discoveries.",
+    "recorded_at":  "2026-08-04T11:18:15.0901279Z",
+    "completed_item_range":  "Human review resolutions: src-88f2a9180f45f3cc validated; src-33b0b49d37a08015, src-db2314b2accb18df, and src-9d02a9df4a2ad3da excluded",
     "total_candidates":  249,
     "counts_by_status":  {
                              "pending review":  0,
@@ -11,17 +11,17 @@
                              "description drafted":  0,
                              "placement assigned":  0,
                              "implemented":  0,
-                             "validated":  155,
-                             "excluded":  39,
+                             "validated":  156,
+                             "excluded":  42,
                              "duplicate":  47,
                              "superseded":  4,
-                             "blocked":  1,
-                             "requires human review":  3
+                             "blocked":  0,
+                             "requires human review":  0
                          },
     "remaining_nonterminal":  0,
     "next_pending_id":  null,
     "blockers":  [
-                     "src-9d02a9df4a2ad3da: City DMD dataset repeatedly fails network validation,src-88f2a9180f45f3cc: official LRRS ArcGIS app is tagged Draft,src-33b0b49d37a08015 and src-db2314b2accb18df: ArcGIS items inaccessible"
+
                  ],
-    "resume_command":  "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Invoke-SourceCrawl.ps1 -Agency CABQ -SourceUrl \u003cnext-verified-seed\u003e -OutputPath research/discovery/cabq-next-links.json"
+    "resume_command":  "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Test-Candidate.ps1 -UpdateInventory"
 }
