@@ -13,7 +13,35 @@ Regional plans, long-range plans, and other system-level transportation planning
 - [MRMPO 2045 Metropolitan Transportation Plan](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-2045-mtp-final-2025-04-29.pdf)
 - [MRMPO 2045 Metropolitan Transportation Plan - Full Appendix](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-2045-mtp-final-full-appendix-2025-05-01.pdf)
 
+- [Transitions 2045 Executive Summary](https://www.mrcog-nm.gov/DocumentCenter/View/6579/MRMPO-Transitions-2045-MTP---Executive-Summary-04-16-25)
+
+  Summarizes the adopted metropolitan plan's regional trends, goals, multimodal investment strategy, safety and equity approach, project priorities, environmental resilience, and implementation framework through the 2045 planning horizon.
+
+- [Resumen ejecutivo de Transiciones 2045 en español](https://www.mrcog-nm.gov/DocumentCenter/View/6633/MRMPO-Transitions-2045-MTP---Executive-Summary-Espanol-PDF)
+
+  Presenta en español el resumen oficial del plan metropolitano hasta 2045, incluyendo tendencias regionales, objetivos, seguridad, equidad, inversiones multimodales, resiliencia ambiental, prioridades de proyectos e implementación.
+
+- [MRMPO Metropolitan Transportation Plan hub](https://www.mrcog-nm.gov/264/Metropolitan-Transportation-Plan)
+
+  Provides the maintained regional entry point for the 20-year transportation blueprint, related public outreach, the Target Scenario, long-range system guidance, archived plans, and future plan-update information.
+
+- [Metropolitan Transportation Plan archive](https://www.mrcog-nm.gov/267/MTP-Archive)
+
+  Preserves earlier Albuquerque metropolitan transportation plans, chapters, appendices, project lists, financial analyses, performance measures, environmental-resilience work, public outreach, and long-range system guidance from the 2030 through 2040 cycles.
+
+- [Transitions 2045 public outreach](https://www.mrcog-nm.gov/503/Transitions-2045-MTP-Public-Outreach)
+
+  Documents public engagement conducted from 2023 through the plan's April 2025 adoption, links the participation plan, explains how feedback informed the MTP, and provides current presentation and engagement contacts.
+
 ### 2026 Long-Range Transportation System Maps
+
+- [Long-Range Transportation System Guide](https://www.mrcog-nm.gov/512/Long-Range-Transportation-System-Guide)
+
+  Explains how MRMPO coordinates future roadway, bikeway, pedestrian, and transit networks, applies Complete Streets principles, supports regional activity centers, and guides development review and long-term infrastructure investment.
+
+- [Long-Range Transportation System Guide (June 2026 PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-long-range-transportation-system-guide-2026.pdf)
+
+  Preserves the adopted 94-page guide covering multimodal networks, land-use context, street design matrices, right-of-way, national best practices, road diets, safety priorities, green streets, retrofit evaluation, and a Complete Streets checklist.
 
 - [Pedestrian System Map](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-long-range-pedestrian-system-map-2026.pdf)
 
@@ -22,6 +50,10 @@ Regional plans, long-range plans, and other system-level transportation planning
 - [Roadway System Map](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-long-range-roadway-system-map-2026.pdf)
 
   Maps the adopted long-range roadway network for the Albuquerque metropolitan planning area, including existing and proposed major facilities used to coordinate growth, investment, project development, and regional connectivity.
+
+- [Interactive Long Range Roadway System map](https://mrmpo.maps.arcgis.com/apps/instant/basic/index.html?appid=7d7f5f6f58674d2a9011d5c60ecd5947)
+
+  Provides an interactive view of MRMPO's Long Range Roadway System using May 2026 data, complementing the adopted printable map with searchable geography and roadway details across the metropolitan planning area.
 
 - [Transit System Map](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-long-range-transit-system-map-2026.pdf)
 
@@ -35,9 +67,19 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   MRCOG’s maintained performance hub gathers the regional measures and current reports used to set targets, track safety and system performance, and coordinate transit asset-management and public-transportation safety planning.
 
-- [MRMPO Unified Planning Work Program, FFY 2027-2028](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf)
+- [MRMPO Congestion Management Process](https://www.mrcog-nm.gov/244/Congestion-Management-Process)
 
-  Defines MRMPO's federally required transportation planning work and budget for FFY 2027-2028, covering administration, TIP management, data, metropolitan planning, safety, active transportation, ABQ RIDE, Rio Metro, and imagery.
+  Explains the continuing metropolitan process for monitoring multimodal performance, analyzing 31 priority corridors, and selecting strategies and projects to improve the safe, efficient movement of people and goods across the Albuquerque planning area.
+
+## City Plans and Studies
+
+- [Downtown Walkability Analysis (2014)](https://documents.cabq.gov/planning/development-process-manual/XSections/Downtown_Walkability_Analysis-2014.pdf)
+
+  Jeff Speck's 100-page study proposes targeted, low-cost street redesigns, signal changes, bicycle facilities, parking reforms, development strategies, railroad crossings, and public-realm improvements intended to increase walking, cycling, safety, and downtown Albuquerque's economic vitality.
+
+- [City transportation plans and studies](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections)
+
+  The Planning Department's maintained index links adopted area plans, transportation studies, and cross-section guidance used in public-right-of-way design, including the Downtown Walkability Analysis and Rio Grande Boulevard Study.
 
 ## Statewide Programming
 

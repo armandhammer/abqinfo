@@ -2,6 +2,7 @@
 param(
   [string]$InventoryPath = 'project-state/master-inventory.json',
   [string]$OverridesPath = 'project-state/inventory-overrides.json',
+  [string]$QualityExclusionsPath = 'project-state/quality-exclusions.json',
   [switch]$Rebuild
 )
 
@@ -54,6 +55,48 @@ function Get-WordCount([AllowNull()][string]$Value) {
   return @($Value -split '\s+' | Where-Object { $_ }).Count
 }
 
+function Get-NormalizedDiscoveryUrl([string]$Url) {
+  try {
+    $builder = [UriBuilder]$Url
+    $builder.Fragment = ''
+    if ([string]::IsNullOrWhiteSpace($builder.Query) -or $builder.Query -eq '?') { $builder.Query = '' }
+    if ($builder.Host -ieq 'nmroads.com' -and $builder.Path -match '(?i)^/mapIndex\.html$') { $builder.Path = '/' }
+    return $builder.Uri.AbsoluteUri.TrimEnd('/')
+  } catch { return $Url.Trim().TrimEnd('/') }
+}
+
+function Get-RecordUrls($Record) {
+  return @($Record.source_url, $Record.direct_file_url, $Record.r2_url) |
+    Where-Object { $_ -and $_ -match '^https?://' } |
+    ForEach-Object { Get-NormalizedDiscoveryUrl ([string]$_) } |
+    Sort-Object -Unique
+}
+
+function Test-DiscoveryCandidate([string]$Agency, [string]$Url) {
+  try { $uri = [uri]$Url } catch { return $false }
+  if ($uri.Scheme -notin @('http','https')) { return $false }
+  $uriHost = $uri.Host.ToLowerInvariant()
+  $path = $uri.AbsolutePath
+  if ($path -match '^/(accessibility|copyright|privacy|sitemap|search|quicklinks\.aspx|directory\.aspx|calendar\.aspx|bids\.aspx)/?$') { return $false }
+  if ($path -match '(?i)(\+\+resource\+\+|/image-repository/|/images?/|\.svg$|\.png$|\.jpe?g$|\.gif$|\.webp$)') { return $false }
+  switch ($Agency.ToLowerInvariant()) {
+    'cabq' { return $uriHost -match '(^|\.)(cabq\.gov|abq-zone\.com)$' }
+    'bernco' { return $uriHost -match '(^|\.)(bernco\.gov)$' }
+    'mrcog' { return $uriHost -match '(^|\.)(mrcog-nm\.gov|mrcogshare\.org|mrcogmaps\.org|riometro\.org|arcgis\.com)$' }
+    'nmdot' { return $uriHost -match '(^|\.)(dot\.nm\.gov|nmroads\.com|pmgpro\.com|rtsclients\.com)$' }
+    default { return $false }
+  }
+}
+
+function Get-DiscoveryTitle([string]$Url, [AllowNull()][string]$AnchorText) {
+  if (-not [string]::IsNullOrWhiteSpace($AnchorText)) { return Get-PlainText $AnchorText }
+  try {
+    $segment = [uri]::UnescapeDataString(([uri]$Url).Segments[-1].Trim('/'))
+    if ($segment) { return (($segment -replace '[-_]',' ') -replace '\s+',' ').Trim() }
+  } catch {}
+  return 'Title pending source review'
+}
+
 function Get-PropertyValue($Object, [string]$Name) {
   $property = $Object.PSObject.Properties[$Name]
   if ($null -eq $property) { return $null }
@@ -102,10 +145,21 @@ if (-not $Rebuild -and (Test-Path -LiteralPath $InventoryPath)) {
   }
 }
 
+# Placement is derived from the current Hugo tree on every import. Clearing the
+# cached values prevents moved or removed links from surviving as phantom
+# cross-listings in the durable inventory.
+foreach ($record in $records.Values) {
+  $record.implementation_location = $null
+  $record.implementation_locations = @()
+}
+
 function Merge-Record([System.Collections.IDictionary]$Incoming) {
   $id = $Incoming.id
   if (-not $records.ContainsKey($id)) { $records[$id] = $Incoming; return }
   $existing = $records[$id]
+  if ($existing.status -eq 'pending review' -and $existing.title -match '(?i)^(visit the project page|click here|here)(\b|\.)' -and $Incoming.title) {
+    $existing.title = $Incoming.title
+  }
   if ($Incoming.implementation_location) {
     $locations = @($existing.implementation_locations) + @($existing.implementation_location) + @($Incoming.implementation_location)
     $existing.implementation_locations = @($locations | Where-Object { $_ } | Sort-Object -Unique)
@@ -122,7 +176,6 @@ function Merge-Record([System.Collections.IDictionary]$Incoming) {
       $existing[$key] = $Incoming[$key]
     }
   }
-  $existing.updated_at = (Get-Date).ToUniversalTime().ToString('o')
 }
 
 foreach ($file in Get-ChildItem content -Recurse -Filter *.md) {
@@ -194,6 +247,31 @@ foreach ($legacyPath in $legacyPaths) {
   }
 }
 
+foreach ($discoveryFile in Get-ChildItem 'research/discovery' -Filter '*-links.json' -File -ErrorAction SilentlyContinue) {
+  $discovery = Get-Content -Raw -LiteralPath $discoveryFile.FullName | ConvertFrom-Json
+  $agencyName = [string](Get-PropertyValue $discovery 'agency')
+  $crawlSource = [string](Get-PropertyValue $discovery 'source_url')
+  if ($crawlSource -and (Test-DiscoveryCandidate $agencyName $crawlSource)) {
+    $normalizedSource = Get-NormalizedDiscoveryUrl $crawlSource
+    $sourceRecord = New-Record $normalizedSource (Get-DiscoveryTitle $normalizedSource $null) 'pending review'
+    $sourceRecord.processing_notes = @('User-selected scoped crawl starting page.', 'Page and authored main-content links were captured by the deterministic crawler.')
+    Merge-Record $sourceRecord
+  }
+  $candidateItems = @(Get-PropertyValue $discovery 'candidates')
+  if (-not $candidateItems.Count) {
+    $candidateItems = @((Get-PropertyValue $discovery 'links') | ForEach-Object { [pscustomobject]@{url=$_;anchor_text=$null} })
+  }
+  foreach ($candidateItem in $candidateItems) {
+    $rawUrl = [string](Get-PropertyValue $candidateItem 'url')
+    if (-not $rawUrl -or -not (Test-DiscoveryCandidate $agencyName $rawUrl)) { continue }
+    $url = Get-NormalizedDiscoveryUrl $rawUrl
+    $anchorText = [string](Get-PropertyValue $candidateItem 'anchor_text')
+    $record = New-Record $url (Get-DiscoveryTitle $url $anchorText) 'pending review'
+    $record.processing_notes = @("Discovered by deterministic crawl of $crawlSource.", 'Exact metadata and relevance remain pending source review.')
+    Merge-Record $record
+  }
+}
+
 foreach ($file in Get-ChildItem research/staging -Recurse -Filter *.pdf -ErrorAction SilentlyContinue) {
   $match = $records.Values | Where-Object {
     ($_.r2_url -and ([uri]$_.r2_url).Segments[-1] -eq $file.Name) -or
@@ -203,7 +281,6 @@ foreach ($file in Get-ChildItem research/staging -Recurse -Filter *.pdf -ErrorAc
     $match.local_path = $file.FullName.Substring((Get-Location).Path.Length + 1).Replace('\','/')
     $match.size_bytes = $file.Length
     $match.checksum_sha256 = (Get-FileHash -LiteralPath $file.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
-    $match.updated_at = (Get-Date).ToUniversalTime().ToString('o')
   } else {
     $record = New-Record ('local:' + $file.Name) $file.BaseName 'downloaded'
     $record.source_url = $null
@@ -223,7 +300,8 @@ if (Test-Path -LiteralPath $OverridesPath) {
     $overrideId = Get-PropertyValue $override 'id'
     $matchUrl = Get-PropertyValue $override 'match_url'
     $match = $records.Values | Where-Object {
-      ($overrideId -and $_.id -eq $overrideId) -or $_.r2_url -eq $matchUrl -or $_.direct_file_url -eq $matchUrl -or $_.source_url -eq $matchUrl
+      ($overrideId -and $_.id -eq $overrideId) -or
+      ($matchUrl -and ($_.r2_url -eq $matchUrl -or $_.direct_file_url -eq $matchUrl -or $_.source_url -eq $matchUrl))
     } | Select-Object -First 1
     if (-not $match) { continue }
     foreach ($property in $override.PSObject.Properties) {
@@ -232,19 +310,51 @@ if (Test-Path -LiteralPath $OverridesPath) {
       $match[$property.Name] = $property.Value
     }
     $match.description_word_count = Get-WordCount $match.description
-    $match.updated_at = (Get-Date).ToUniversalTime().ToString('o')
+  }
+}
+
+# User-approved quality exclusions are applied after ordinary metadata overrides so
+# broad recrawls cannot silently re-promote material deliberately removed from the site.
+if (Test-Path -LiteralPath $QualityExclusionsPath) {
+  $qualityExclusions = Get-Content -Raw $QualityExclusionsPath | ConvertFrom-Json
+  foreach ($exclusion in $qualityExclusions) {
+    $matchUrl = ([string](Get-PropertyValue $exclusion 'url')).TrimEnd('/')
+    if (-not $matchUrl) { continue }
+    foreach ($match in @($records.Values | Where-Object {
+      @($_.r2_url,$_.direct_file_url,$_.source_url) |
+        Where-Object { $_ -and ([string]$_).TrimEnd('/') -eq $matchUrl }
+    })) {
+      $match.status = 'excluded'
+      $match.validation_status = 'user-approved quality exclusion'
+      $match.exclusion_reason = [string](Get-PropertyValue $exclusion 'reason')
+      $match.implementation_location = $null
+      $match.implementation_locations = @()
+      $match.updated_at = (Get-Date).ToUniversalTime().ToString('o')
+    }
+  }
+}
+
+$canonicalByUrl = @{}
+$canonicalByChecksum = @{}
+foreach ($canonicalRecord in @($records.Values | Where-Object { $_.status -in @('implemented','validated') })) {
+  foreach ($canonicalUrl in @(Get-RecordUrls $canonicalRecord)) {
+    if (-not $canonicalByUrl.ContainsKey($canonicalUrl)) { $canonicalByUrl[$canonicalUrl] = $canonicalRecord }
+  }
+  if ($canonicalRecord.checksum_sha256 -and -not $canonicalByChecksum.ContainsKey([string]$canonicalRecord.checksum_sha256)) {
+    $canonicalByChecksum[[string]$canonicalRecord.checksum_sha256] = $canonicalRecord
   }
 }
 
 foreach ($pending in @($records.Values | Where-Object { $_.status -in @('pending review','approved for addition','downloaded','parsed','description drafted','placement assigned') })) {
-    $canonical = $records.Values | Where-Object {
-        $_.id -ne $pending.id -and
-        $_.status -eq 'implemented' -and
-        (($_.direct_file_url -and ($_.direct_file_url -eq $pending.direct_file_url -or $_.direct_file_url -eq $pending.source_url)) -or
-         ($_.checksum_sha256 -and $pending.checksum_sha256 -and $_.checksum_sha256 -eq $pending.checksum_sha256))
-    } | Select-Object -First 1
+    $canonical = $null
+    foreach ($pendingUrl in @(Get-RecordUrls $pending)) {
+      if ($canonicalByUrl.ContainsKey($pendingUrl)) { $canonical = $canonicalByUrl[$pendingUrl]; break }
+    }
+    if (-not $canonical -and $pending.checksum_sha256 -and $canonicalByChecksum.ContainsKey([string]$pending.checksum_sha256)) {
+      $canonical = $canonicalByChecksum[[string]$pending.checksum_sha256]
+    }
 
-    if ($canonical) {
+    if ($canonical -and $canonical.id -ne $pending.id) {
         $pending.status = 'duplicate'
         $pending.exclusion_reason = "Duplicate discovery record for implemented candidate $($canonical.id)."
         $pending.validation_status = 'duplicate discovery confirmed'
@@ -253,6 +363,16 @@ foreach ($pending in @($records.Values | Where-Object { $_.status -in @('pending
 }
 
 foreach ($record in $records.Values) {
+  if ($record.status -eq 'pending review' -and $record.title -match '(?i)^(visit the project page|click here|here)(\b|\.)' -and $record.source_url) {
+    try {
+      $segments = @(([uri]$record.source_url).Segments)
+      $slug = $segments[$segments.Count - 1].TrimEnd('/')
+      if (-not $slug -and $segments.Count -gt 1) { $slug = $segments[$segments.Count - 2].TrimEnd('/') }
+      if ($slug) {
+        $record.title = (Get-Culture).TextInfo.ToTitleCase((([uri]::UnescapeDataString($slug) -replace '[-_]',' ') -replace '\s+',' ').Trim())
+      }
+    } catch {}
+  }
   if ($record.status -notin $allowedStatuses) { throw "Invalid status '$($record.status)' for $($record.id)." }
   if ($record.status -eq 'validated' -and (-not $record.description -or $record.description_word_count -lt 20 -or $record.description_word_count -gt 50)) {
     $record.status = 'implemented'
@@ -269,7 +389,7 @@ foreach ($record in $records.Values) {
 
 $directory = Split-Path -Parent $InventoryPath
 if ($directory) { New-Item -ItemType Directory -Force $directory | Out-Null }
-$sorted = @($records.Values | Sort-Object id)
+$sorted = @($records.Values | Sort-Object { [string]$_['id'] })
 $counts = [ordered]@{}
 foreach ($status in $allowedStatuses) { $counts[$status] = @($sorted | Where-Object status -eq $status).Count }
 $nextCandidates = @($sorted | Where-Object { $_.status -in @('pending review','approved for addition','downloaded','parsed','description drafted','placement assigned') -or ($_.status -eq 'implemented' -and $_.validation_status -ne 'passed') } | Select-Object -First 1)

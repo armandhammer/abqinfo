@@ -7,7 +7,29 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
-$inventory = Get-Content -Raw $InventoryPath | ConvertFrom-Json
+
+function Read-InventoryWithRetry([string]$Path) {
+  for ($attempt = 1; $attempt -le 8; $attempt++) {
+    try { return Get-Content -Raw -LiteralPath $Path | ConvertFrom-Json }
+    catch [System.IO.IOException] {
+      if ($attempt -eq 8) { throw }
+      Start-Sleep -Milliseconds (50 * $attempt)
+    }
+  }
+}
+
+function Write-InventoryWithRetry($Value, [string]$Path) {
+  $json = $Value | ConvertTo-Json -Depth 12
+  for ($attempt = 1; $attempt -le 8; $attempt++) {
+    try { $json | Set-Content -LiteralPath $Path -Encoding utf8; return }
+    catch [System.IO.IOException] {
+      if ($attempt -eq 8) { throw }
+      Start-Sleep -Milliseconds (50 * $attempt)
+    }
+  }
+}
+
+$inventory = Read-InventoryWithRetry $InventoryPath
 $candidate = @($inventory.candidates | Where-Object id -eq $Id)
 if ($candidate.Count -ne 1) { throw "Expected one candidate for '$Id'; found $($candidate.Count)." }
 $candidate = $candidate[0]
@@ -25,5 +47,5 @@ $inventory.counts = [pscustomobject]$counts
 $inventory.generated_at = (Get-Date).ToUniversalTime().ToString('o')
 $nextCandidates = @($inventory.candidates | Where-Object { $_.status -in @('pending review','approved for addition','downloaded','parsed','description drafted','placement assigned') -or ($_.status -eq 'implemented' -and $_.validation_status -ne 'passed') } | Sort-Object id | Select-Object -First 1)
 $inventory.next_pending_id = if ($nextCandidates.Count) { $nextCandidates[0].id } else { $null }
-$inventory | ConvertTo-Json -Depth 12 | Set-Content -LiteralPath $InventoryPath -Encoding utf8
+Write-InventoryWithRetry $inventory $InventoryPath
 $candidate | ConvertTo-Json -Depth 8

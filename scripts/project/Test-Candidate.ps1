@@ -7,7 +7,13 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
-$inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+for ($attempt = 1; $attempt -le 8; $attempt++) {
+  try { $inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json; break }
+  catch [System.IO.IOException] {
+    if ($attempt -eq 8) { throw }
+    Start-Sleep -Milliseconds (50 * $attempt)
+  }
+}
 if (-not $Id) { $Id = $inventory.next_pending_id }
 $candidate = $inventory.candidates | Where-Object { $_.id -eq $Id } | Select-Object -First 1
 if (-not $candidate) { throw "Candidate not found: $Id" }
@@ -34,7 +40,7 @@ $result = [ordered]@{ id = $Id; title = $candidate.title; url = $url; http_statu
 $result.method = $method
 
 if ($UpdateInventory -and $response.StatusCode -ge 200 -and $response.StatusCode -lt 400) {
-  & "$PSScriptRoot/Update-Candidate.ps1" -Id $Id -Set @{
+  & "$PSScriptRoot/Update-Candidate.ps1" -Id $Id -InventoryPath $InventoryPath -Set @{
     status = 'validated'
     validation_status = "passed: HTTP $([int]$response.StatusCode)"
   } | Out-Null

@@ -4,6 +4,12 @@ title: "Studies"
 
 Transportation studies and reports.
 
+## Regional screening and analysis
+
+- [Road Diet Candidates Map](https://www.mrcog-nm.gov/569/Road-Diet-Candidates-Map)
+
+  Presents MRMPO's 2023 screening of roadways that may support safety-focused reconfiguration based on lanes, capacity, and traffic volume. Candidate status is preliminary and does not replace project-specific engineering analysis.
+
 ## State highway studies affecting Albuquerque
 
 - [I-40 West Corridor Study Executive Summary (2024)](https://files.abqinfo.com/transportation/roadway-projects/studies/nmdot-i40-west-executive-summary-2025.pdf)

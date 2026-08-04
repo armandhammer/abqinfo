@@ -1,8 +1,10 @@
 ---
 title: "Current Projects"
+aliases:
+  - "/transportation/bicycling/projects/near-term/"
 ---
 
-Currently active bicycle infrastructure projects.
+Active, funded, programmed, and formally advancing bicycle infrastructure projects.
 
 ## Buena Vista Bike Boulevard
 

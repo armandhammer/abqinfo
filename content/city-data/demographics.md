@@ -13,3 +13,7 @@ Albuquerque demographic and census data.
 - [Albuquerque neighborhood data](https://data.cabq.gov/community/neighborhoods/)
 
   The City’s open-data service provides neighborhood geography and associated data resources for map-based analysis, local reference, and comparisons among Albuquerque communities.
+
+- [MRCOG Community Profiles](https://www.mrcog-nm.gov/165/Community-Profiles)
+
+  Summarizes the central New Mexico region's population, geography, counties, municipalities, pueblos, transportation connections, and urban-rural context, providing a concise companion to detailed census and socioeconomic datasets.

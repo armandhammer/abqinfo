@@ -5,12 +5,6 @@ weight: 50
 
 Reference drawings, engineering details, and technical guidance related to transportation infrastructure and street design.
 
-## Regional reference index
-
-- [MRMPO transportation reference material](https://www.mrcog-nm.gov/545/Reference-Material)
-
-  MRCOG's maintained reference index connects regional practitioners to current complete-streets and multimodal design resources from recognized national transportation organizations, complementing locally adopted standards without duplicating third-party publications.
-
 ## NMDOT Quick Build Guide
 
 Reference guidance for quick-build transportation and multimodal safety projects.
