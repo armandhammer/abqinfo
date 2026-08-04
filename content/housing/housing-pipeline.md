@@ -3,7 +3,7 @@ title: "Housing Pipeline"
 ---
 
 ## Plans and Data
-[Vacant and Abandoned Houses Task Force Report (2018)](https://www.cabq.gov/council/projects/current-projects/the-vacant-and-abandoned-houses-task-force-releases-report)
+- [Vacant and Abandoned Houses Task Force Report (2018)](https://www.cabq.gov/council/projects/current-projects/the-vacant-and-abandoned-houses-task-force-releases-report)
 
 Preserves the Council task force's findings and recommendations on vacant and abandoned housing, including code enforcement, rehabilitation, demolition, receivership, financing, neighborhood impacts, and the full historical report.
 
