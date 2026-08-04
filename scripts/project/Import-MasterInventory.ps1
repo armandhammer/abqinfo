@@ -28,7 +28,7 @@ function Get-StableId([string]$Value) {
 function Get-Agency([string]$Url) {
   if ($Url -match 'cabq\.gov|abq-zone\.com') { return 'City of Albuquerque' }
   if ($Url -match 'bernco\.gov') { return 'Bernalillo County' }
-  if ($Url -match 'mrcog-nm\.gov|mrcogshare\.org|riometro\.org') { return 'MRCOG' }
+  if ($Url -match 'mrcog-nm\.gov|mrcogshare\.org|riometro\.org|mrmpo\.nm\.tipviewer\.pmgpro\.com') { return 'MRCOG' }
   if ($Url -match 'dot\.nm\.gov|nmroads\.com|stipviewer') { return 'NMDOT' }
   if ($Url -match 'files\.abqinfo\.com') { return 'Unreconciled archived source' }
   return 'Other authoritative source'
@@ -82,7 +82,7 @@ function Test-DiscoveryCandidate([string]$Agency, [string]$Url) {
   switch ($Agency.ToLowerInvariant()) {
     'cabq' { return $uriHost -match '(^|\.)(cabq\.gov|abq-zone\.com)$' }
     'bernco' { return $uriHost -match '(^|\.)(bernco\.gov)$' }
-    'mrcog' { return $uriHost -match '(^|\.)(mrcog-nm\.gov|mrcogshare\.org|mrcogmaps\.org|riometro\.org|arcgis\.com)$' }
+    'mrcog' { return $uriHost -match '(^|\.)(mrcog-nm\.gov|mrcogshare\.org|mrcogmaps\.org|riometro\.org|arcgis\.com|nm\.tipviewer\.pmgpro\.com)$' }
     'nmdot' { return $uriHost -match '(^|\.)(dot\.nm\.gov|nmroads\.com|pmgpro\.com|rtsclients\.com)$' }
     default { return $false }
   }

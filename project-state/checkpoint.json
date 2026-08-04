@@ -1,9 +1,9 @@
 ﻿{
-    "recorded_at":  "2026-08-04T15:05:18.3988426Z",
-    "completed_item_range":  "Unknown-document infrastructure, City bicycle-history pagination/collection/parent-path repairs, PDF lineage extraction, and provenance reconciliation through saved crawl pages 774 and 466",
-    "total_candidates":  3605,
+    "recorded_at":  "2026-08-04T15:19:18.3314685Z",
+    "completed_item_range":  "Recorded-broad-history-and-MRMPO-TIP-viewer",
+    "total_candidates":  3606,
     "counts_by_status":  {
-                             "pending review":  3290,
+                             "pending review":  3291,
                              "approved for addition":  50,
                              "downloading":  0,
                              "downloaded":  0,
@@ -18,13 +18,10 @@
                              "blocked":  0,
                              "requires human review":  27
                          },
-    "remaining_nonterminal":  3341,
+    "remaining_nonterminal":  3342,
     "next_pending_id":  "lin-01236d79d0623075",
     "blockers":  [
-                     "Strict bicycle-history regression remains 1/4 blind-recovered; 2000 passes, 2011 is hash-reconciled via lineage expansion, and 1993/2015 authoritative files remain unreconciled.",
-                     "Bounded crawl has 565 queued URLs; review relevance before resuming because the next saved URL is an unrelated ABQ 66 media-kit PDF.",
-                     "Legacy-sitemap crawl has 261 queued URLs; next saved URL is the 2025 May Is Bike Month bilingual flyer.",
-                     "After the bounded queue, resume legacy with: powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/project/Invoke-UnknownDocumentDiscovery.ps1 -SeedUrls https://www.cabq.gov/bikes/biking-in-abq -Agency cabq -DiscoveryProfile bicycle-history -OutputPath project-state/discovery/cabq-bicycle-history-legacy-sitemap-crawl.json -MaxDepth 8 -MaxPages 3000 -RequestTimeoutSeconds 12 -MaxRetries 2 -IncludeSiteInfrastructure -Resume"
+                     "Paused-until-2026-08-10T20:52:00-06:00"
                  ],
-    "resume_command":  "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/project/Invoke-UnknownDocumentDiscovery.ps1 -SeedUrls https://www.cabq.gov/bikes/biking-in-abq -Agency cabq -DiscoveryProfile bicycle-history -OutputPath project-state/discovery/cabq-bicycle-history-bounded-collection-crawl.json -MaxDepth 8 -MaxPages 3000 -RequestTimeoutSeconds 12 -MaxRetries 2 -Resume"
+    "resume_command":  "project-state/resume-2026-08-10.md"
 }
