@@ -48,6 +48,41 @@ jobs:
             --output download/source-document "$SOURCE_URL"
           test -s download/source-document
 
+      - name: Enforce file and R2 storage limits
+        shell: bash
+        run: |
+          MAX_OBJECT_BYTES=100000000
+          MAX_PROJECTED_STORAGE_BYTES=8000000000
+          SOURCE_BYTES="$(wc -c < download/source-document)"
+          if (( SOURCE_BYTES > MAX_OBJECT_BYTES )); then
+            echo "::error::Source is ${SOURCE_BYTES} bytes, exceeding the ${MAX_OBJECT_BYTES}-byte limit. Owner approval is required before changing this limit."
+            exit 1
+          fi
+
+          CURRENT_R2_BYTES="$(aws s3api list-objects-v2 \
+            --bucket "$R2_BUCKET" \
+            --endpoint-url "$R2_ENDPOINT" \
+            --query 'sum(Contents[].Size)' \
+            --output text)"
+          if [[ "$CURRENT_R2_BYTES" == "None" || -z "$CURRENT_R2_BYTES" ]]; then
+            CURRENT_R2_BYTES=0
+          fi
+          PROJECTED_R2_BYTES=$((CURRENT_R2_BYTES + SOURCE_BYTES))
+          if (( PROJECTED_R2_BYTES > MAX_PROJECTED_STORAGE_BYTES )); then
+            echo "::error::Projected R2 Standard storage is ${PROJECTED_R2_BYTES} bytes, exceeding the ${MAX_PROJECTED_STORAGE_BYTES}-byte safety limit."
+            exit 1
+          fi
+
+          {
+            echo "## R2 storage gate"
+            echo
+            echo "- Source size: ${SOURCE_BYTES} bytes"
+            echo "- Current R2 storage: ${CURRENT_R2_BYTES} bytes"
+            echo "- Projected R2 storage: ${PROJECTED_R2_BYTES} bytes"
+            echo "- Object limit: ${MAX_OBJECT_BYTES} bytes"
+            echo "- Storage safety limit: ${MAX_PROJECTED_STORAGE_BYTES} bytes"
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Refuse to overwrite an existing object
         shell: bash
         run: |
@@ -88,3 +123,4 @@ jobs:
             cat uploaded-object.json
             echo "```"
           } >> "$GITHUB_STEP_SUMMARY"
+

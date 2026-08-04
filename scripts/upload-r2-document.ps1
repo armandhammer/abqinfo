@@ -12,7 +12,13 @@ param(
 
   [string]$Endpoint = 'https://28e1ba1d2f40f5046283843b8a748256.r2.cloudflarestorage.com',
 
-  [string]$CredentialTarget = 'abqinfo-r2-upload'
+  [string]$CredentialTarget = 'abqinfo-r2-upload',
+
+  [ValidateRange(1, [Int64]::MaxValue)]
+  [Int64]$MaxObjectBytes = 100000000,
+
+  [ValidateRange(1, [Int64]::MaxValue)]
+  [Int64]$MaxProjectedStorageBytes = 8000000000
 )
 
 Set-StrictMode -Version Latest
@@ -90,6 +96,10 @@ if ([string]::IsNullOrWhiteSpace($credential[0]) -or [string]::IsNullOrWhiteSpac
 
 $aws = Get-Command aws -ErrorAction Stop
 $source = Get-Item -LiteralPath $SourcePath
+if ($source.Length -gt $MaxObjectBytes) {
+  throw "Refusing to upload '$($source.Name)': $($source.Length) bytes exceeds the $MaxObjectBytes-byte limit. Explicit owner approval is required before changing this limit."
+}
+
 $contentTypes = @{
   '.csv'  = 'text/csv'
   '.docx' = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
@@ -114,6 +124,16 @@ try {
   [Environment]::SetEnvironmentVariable('AWS_DEFAULT_REGION', 'auto', 'Process')
   [Environment]::SetEnvironmentVariable('AWS_EC2_METADATA_DISABLED', 'true', 'Process')
 
+  $currentStorageRaw = & $aws.Source s3api list-objects-v2 --bucket $Bucket --endpoint-url $Endpoint --query 'sum(Contents[].Size)' --output text
+  if ($LASTEXITCODE -ne 0) {
+    throw "Could not determine current R2 storage for '$Bucket'. Upload cancelled."
+  }
+  $currentStorageBytes = if ($currentStorageRaw -eq 'None' -or [string]::IsNullOrWhiteSpace($currentStorageRaw)) { [Int64]0 } else { [Int64]$currentStorageRaw }
+  $projectedStorageBytes = $currentStorageBytes + $source.Length
+  if ($projectedStorageBytes -gt $MaxProjectedStorageBytes) {
+    throw "Refusing to upload '$($source.Name)': projected R2 Standard storage ($projectedStorageBytes bytes) exceeds the $MaxProjectedStorageBytes-byte safety limit."
+  }
+
   $headOutput = & $aws.Source s3api head-object --bucket $Bucket --key $ObjectKey --endpoint-url $Endpoint 2>&1
   if ($LASTEXITCODE -eq 0) {
     throw "Refusing to overwrite existing R2 object: $ObjectKey"
@@ -122,11 +142,21 @@ try {
     throw "Could not confirm that R2 object '$ObjectKey' is absent. Upload cancelled. $($headOutput | Out-String)"
   }
 
-  if ($PSCmdlet.ShouldProcess("s3://$Bucket/$ObjectKey", "Upload $($source.Name)")) {
-    & $aws.Source s3 cp $source.FullName "s3://$Bucket/$ObjectKey" --endpoint-url $Endpoint --content-type $contentType --no-progress
-    if ($LASTEXITCODE -ne 0) {
-      throw "R2 upload failed for '$ObjectKey'."
+  if (-not $PSCmdlet.ShouldProcess("s3://$Bucket/$ObjectKey", "Upload $($source.Name)")) {
+    [PSCustomObject]@{
+      SourcePath = $source.FullName
+      ObjectKey = $ObjectKey
+      Bytes = $source.Length
+      CurrentR2Bytes = $currentStorageBytes
+      ProjectedR2Bytes = $projectedStorageBytes
+      Result = 'WhatIf: upload not performed'
     }
+    return
+  }
+
+  & $aws.Source s3 cp $source.FullName "s3://$Bucket/$ObjectKey" --endpoint-url $Endpoint --content-type $contentType --no-progress
+  if ($LASTEXITCODE -ne 0) {
+    throw "R2 upload failed for '$ObjectKey'."
   }
 
   $metadata = & $aws.Source s3api head-object --bucket $Bucket --key $ObjectKey --endpoint-url $Endpoint
@@ -139,6 +169,8 @@ try {
     ObjectKey = $ObjectKey
     PublicUrl = "https://files.abqinfo.com/$ObjectKey"
     Bytes = $source.Length
+    CurrentR2Bytes = $currentStorageBytes
+    ProjectedR2Bytes = $projectedStorageBytes
     ContentType = $contentType
     SHA256 = $hash
     R2Metadata = $metadata
