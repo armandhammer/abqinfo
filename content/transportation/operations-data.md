@@ -4,6 +4,20 @@ title: "Traffic Operations"
 
 Regional roadway operations, traffic analysis, incident management, and intelligent transportation systems.
 
+## City street operations
+
+- [Albuquerque Area Street Jurisdictions](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=c2614776e75344bab7755aa779539bcb)
+
+  Identifies whether Albuquerque-area public streets are maintained by the City, Bernalillo County, NMDOT, or another entity, with address search and jurisdiction boundaries.
+
+- [Street Maintenance Projects Viewer](https://experience.arcgis.com/experience/f57852d3820348099352cd74e5db72bf)
+
+  Maps City street-maintenance projects and their locations, providing a direct geographic view of active and recent resurfacing or maintenance work managed by Municipal Development.
+
+- [Streetlight Status Dashboard](https://www.arcgis.com/apps/dashboards/1facbd146a924224b1698c7d164662c3)
+
+  Displays weekly updated operational status for City streetlights using vendor data, helping users examine working and non-working assets while the City expands integration with PNM work-order information.
+
 ## Bernalillo County street operations
 
 - [Street Maintenance](https://www.bernco.gov/public-works/public-works-services/road-safety-conditions/streets-traffic-signals/street-maintenance)

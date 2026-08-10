@@ -48,3 +48,14 @@ The test verifies DMD parent traversal, `Project Maps` relevance, ArcGIS host
 classification, external document capture, and non-recursive handling of
 external candidates. `Invoke-ProjectValidation.ps1` runs this regression
 automatically before the Hugo build.
+
+`Get-ArcGisHubCatalog.ps1` resolves an official Hub site's content groups through
+the ArcGIS REST API, records no more than the requested catalog limit, and marks
+only the requested number of records for detailed metadata/dependency review.
+For the bounded DMD batch:
+
+```powershell
+.\scripts\project\Get-ArcGisHubCatalog.ps1 -MaxRecords 100 -ReviewLimit 25
+.\scripts\project\Import-MasterInventory.ps1
+.\scripts\project\Test-ArcGisHubBatch.ps1 -CheckLinks
+```

@@ -18,6 +18,8 @@ Traffic calming and speed management initiatives.
 
   Embeds the City's current traffic-calming request dashboard and links a mobile-friendly map for checking locations and status of pending neighborhood requests across Albuquerque.
 
+  [Open the live NTMP dashboard](https://www.arcgis.com/apps/dashboards/54e6059b27eb42d680f24e2eaae81c6e).
+
 - [Traffic-Calming Toolkit](https://www.cabq.gov/neighborhood-traffic-management-program/toolkit)
 
   Describes the City's full range of traffic-calming tools, with advantages, disadvantages, application guidance, illustrations, and individual references for markings, crossings, chokers, circles, humps, diverters, and other treatments.

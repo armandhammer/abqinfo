@@ -14,6 +14,8 @@ Bicycle safety statistics and crash data.
 
   Use this City map to see the geographic context of current safety projects. It is also listed in Maps & Dashboards so visitors looking by tool rather than topic can find the same maintained source.
 
+  [Open the live project viewer](https://experience.arcgis.com/experience/cbc6869f8677415c81a8bed6853b2b93).
+
 - [MRCOG Regional Transportation Safety Action Plan (2024)](https://files.abqinfo.com/transportation/safety-data/mrcog-regional-transportation-safety-action-plan-2024.pdf)
 
   MRCOG’s adopted plan uses regional crash analysis, a Safe System approach, safety strategies, area profiles, and project recommendations to address bicycle, pedestrian, roadway, and transit safety.

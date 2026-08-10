@@ -71,6 +71,8 @@ Active roadway projects, near-term implementation work, and project documents.
 
   The City's regularly updated map shows permitted right-of-way construction, locations, dates, descriptions, and responsible contractors, helping residents distinguish current City-jurisdiction work from state and emergency projects.
 
+  [Open the live Traffic Barricades Map](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=990365639da44a80a64b140726665a2b).
+
 - [Construction moratoriums](https://www.cabq.gov/municipaldevelopment/maps/construction-moratoriums)
 
   Lists current event and seasonal construction moratoriums, affected street boundaries, downloadable maps, dates, and the live map used to coordinate safe traffic operations during major Albuquerque events.

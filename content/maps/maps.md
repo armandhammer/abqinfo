@@ -31,6 +31,30 @@ Interactive maps of city data and infrastructure.
 
   Albuquerque Open Space maintains access and trail maps for its lands and trailheads. Individual trail maps are available from the same City source when a printable field reference is useful.
 
+## City infrastructure and maintenance maps
+
+- [Albuquerque Area Street Jurisdictions](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=c2614776e75344bab7755aa779539bcb)
+
+  Identifies whether Albuquerque-area public streets are maintained by the City, Bernalillo County, NMDOT, or another entity, with address search and jurisdiction boundaries.
+
+- [Arroyo Maintenance Responsibility Lookup](https://cabq.maps.arcgis.com/apps/instant/sidebar/index.html?appid=36a644927e8c4fcc8d277fa541ad584d)
+
+  Shows which agency maintains Albuquerque-area arroyos and storm-drainage channels, helping users identify responsibility across City, County, state, and other jurisdictions before reporting a problem.
+
+## City bicycle maps and data
+
+- [Bikeways and Trails Public Map Viewer](https://cabq.maps.arcgis.com/apps/instant/sidebar/index.html?appid=bfda88ddb89a40c08440b4abd4c182ba)
+
+  Maps Albuquerque's currently maintained bikeways and trails by facility type, providing a searchable public view of bike lanes, separated facilities, bicycle boulevards, sidepaths, and multi-use trails.
+
+- [Proposed Bike Network](https://cabq.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=036949b4007c4def8f3675afcda46069)
+
+  Maps Albuquerque's existing and proposed bicycle infrastructure together, allowing users to explore planned connections and compare the future network with facilities already in place.
+
+- [Current Bikeways and Trails Data](https://dmdmaps.cabq.gov/serverext/rest/services/Bikeways/Bikeways_Trails_Public/MapServer/23)
+
+  Publishes the City's actively maintained bikeway and trail data layer, distinguishing current infrastructure from the static network snapshot used to develop the 2024 facilities plan.
+
 ## State transportation maps
 
 - [NMDOT map library](https://www.dot.nm.gov/travel-information/maps)

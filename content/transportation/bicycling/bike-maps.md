@@ -10,6 +10,18 @@ Multi-use trails and paths in Albuquerque.
 
   Provides the current Albuquerque Bicycle and Trail Map, the City's interactive bicycle map, facility-type guidance, trail-riding guides, and public-art bicycle tours, plus locations where printed maps are available.
 
+- [Bikeways and Trails Public Map Viewer](https://cabq.maps.arcgis.com/apps/instant/sidebar/index.html?appid=bfda88ddb89a40c08440b4abd4c182ba)
+
+  Maps Albuquerque's currently maintained bikeways and trails by facility type, providing a searchable public view of bike lanes, separated facilities, bicycle boulevards, sidepaths, and multi-use trails.
+
+- [Proposed Bike Network](https://cabq.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=036949b4007c4def8f3675afcda46069)
+
+  Maps Albuquerque's existing and proposed bicycle infrastructure together, allowing users to explore planned connections and compare the future network with facilities already in place.
+
+- [Current Bikeways and Trails Data](https://dmdmaps.cabq.gov/serverext/rest/services/Bikeways/Bikeways_Trails_Public/MapServer/23)
+
+  Publishes the City's actively maintained bikeway and trail data layer, distinguishing current infrastructure from the static network snapshot used to develop the 2024 facilities plan.
+
 ## Regional long-range bikeway network
 
 - [MRMPO Active Transportation map portfolio](https://mrmpo.maps.arcgis.com/apps/instant/portfolio/index.html?appid=38915e0cc1414048b27f9335302203a5)

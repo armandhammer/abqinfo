@@ -80,7 +80,7 @@ function Test-DiscoveryCandidate([string]$Agency, [string]$Url) {
   if ($path -match '^/(accessibility|copyright|privacy|sitemap|search|quicklinks\.aspx|directory\.aspx|calendar\.aspx|bids\.aspx)/?$') { return $false }
   if ($path -match '(?i)(\+\+resource\+\+|/image-repository/|/images?/|\.svg$|\.png$|\.jpe?g$|\.gif$|\.webp$)') { return $false }
   switch ($Agency.ToLowerInvariant()) {
-    'cabq' { return $uriHost -match '(^|\.)(cabq\.gov|abq-zone\.com)$' }
+    'cabq' { return $uriHost -match '(^|\.)(cabq\.gov|abq-zone\.com|arcgis\.com)$' }
     'bernco' { return $uriHost -match '(^|\.)(bernco\.gov)$' }
     'mrcog' { return $uriHost -match '(^|\.)(mrcog-nm\.gov|mrcogshare\.org|mrcogmaps\.org|riometro\.org|arcgis\.com|nm\.tipviewer\.pmgpro\.com)$' }
     'nmdot' { return $uriHost -match '(^|\.)(dot\.nm\.gov|nmroads\.com|pmgpro\.com|rtsclients\.com)$' }
@@ -294,6 +294,18 @@ foreach ($discoveryFile in $discoveryFiles) {
     $anchorText = [string](Get-PropertyValue $candidateItem 'anchor_text')
     $record = New-Record $url (Get-DiscoveryTitle $url $anchorText) 'pending review'
     $record.processing_notes = @("Discovered by deterministic crawl of $crawlSource.", 'Exact metadata and relevance remain pending source review.')
+    $candidateAgency = [string](Get-PropertyValue $candidateItem 'agency')
+    $candidateFileType = [string](Get-PropertyValue $candidateItem 'file_type')
+    $candidateDirectFileUrl = [string](Get-PropertyValue $candidateItem 'direct_file_url')
+    $candidateSizeBytes = Get-PropertyValue $candidateItem 'size_bytes'
+    $candidateProvenance = [string](Get-PropertyValue $candidateItem 'provenance_status')
+    $candidateNotes = @(Get-PropertyValue $candidateItem 'processing_notes')
+    if ($candidateAgency) { $record.agency = $candidateAgency }
+    if ($candidateFileType) { $record.file_type = $candidateFileType }
+    if ($candidateDirectFileUrl) { $record.direct_file_url = $candidateDirectFileUrl }
+    if ($null -ne $candidateSizeBytes) { $record.size_bytes = [long]$candidateSizeBytes }
+    if ($candidateProvenance) { $record.provenance_status = $candidateProvenance }
+    if ($candidateNotes.Count) { $record.processing_notes = @($record.processing_notes) + $candidateNotes }
     $parentUrl = Get-PropertyValue $candidateItem 'parent_url'
     $referringUrls = Get-PropertyValue $candidateItem 'referring_urls'
     $discoveryPath = Get-PropertyValue $candidateItem 'discovery_path'
@@ -373,9 +385,11 @@ foreach ($file in Get-ChildItem research/staging -Recurse -Filter *.pdf -ErrorAc
   }
 }
 
-if (Test-Path -LiteralPath $OverridesPath) {
-  $overrides = Get-Content -Raw $OverridesPath | ConvertFrom-Json
-  foreach ($override in $overrides) {
+$overridePaths = @($OverridesPath)
+$overridePaths += @(Get-ChildItem 'project-state/discovery' -Filter '*-overrides.json' -File -ErrorAction SilentlyContinue | ForEach-Object FullName)
+foreach ($overridePath in @($overridePaths | Where-Object { Test-Path -LiteralPath $_ } | Sort-Object -Unique)) {
+  $overrides = Get-Content -Raw -LiteralPath $overridePath | ConvertFrom-Json
+  foreach ($override in @($overrides)) {
     $overrideId = Get-PropertyValue $override 'id'
     $matchUrl = Get-PropertyValue $override 'match_url'
     $match = $records.Values | Where-Object {
