@@ -1,131 +1,192 @@
-﻿{
-    "generated_at":  "2026-08-04T15:03:11.9513050Z",
-    "rule":  "A benchmark passes only when an eligible crawl state recovers its authoritative file without an exact-title or general web-search discovery method.",
-    "eligible_crawl_states":  [
-                                  "cabq-bicycle-history-bounded-collection-crawl.json",
-                                  "cabq-bicycle-history-legacy-sitemap-crawl.json",
-                                  "cabq-bicycle-history-pagination-crawl.json"
-                              ],
-    "passed":  1,
-    "total":  4,
-    "benchmarks":  [
-                       {
-                           "id":  "bike-history-1993",
-                           "title":  "1993 Trails and Bikeways Facility Plan",
-                           "inventory_id":  "src-395957636cb2fed0",
-                           "blind_graph_recovered":  false,
-                           "blind_matches":  [
-
-                                             ],
-                           "authoritative_source_url":  "https://documents.cabq.gov/planning/FacilityPlans/BTFP/2024/BTFP-Update_Summary-2024.pdf",
-                           "authoritative_direct_file_url":  null,
-                           "provenance_status":  "official City existence and succession confirmed; preserved-file origin unreconciled",
-                           "inventory_status":  "requires human review",
-                           "regression_pass":  false
-                       },
-                       {
-                           "id":  "bike-history-2000",
-                           "title":  "2000 Albuquerque Comprehensive On-Street Bicycle Plan",
-                           "inventory_id":  "src-0f60535452ac9154",
-                           "blind_graph_recovered":  true,
-                           "blind_matches":  [
-                                                 {
-                                                     "state_file":  "cabq-bicycle-history-bounded-collection-crawl.json",
-                                                     "url":  "https://www.cabq.gov/parksandrecreation/recreation/bike/documents/final-albuquerque-comprehensive-on-street-bicycle-plan.pdf/view",
-                                                     "discovery_method":  "authored document link",
-                                                     "discovery_path":  [
-                                                                            "https://www.cabq.gov/bikes/biking-in-abq",
-                                                                            "https://www.cabq.gov/parksandrecreation/recreation/bike",
-                                                                            "https://www.cabq.gov/parksandrecreation/recreation/bike/documents",
-                                                                            "https://www.cabq.gov/parksandrecreation/recreation/bike/documents/final-albuquerque-comprehensive-on-street-bicycle-plan.pdf/view"
-                                                                        ],
-                                                     "crawl_depth":  3
-                                                 },
-                                                 {
-                                                     "state_file":  "cabq-bicycle-history-bounded-collection-crawl.json",
-                                                     "url":  "https://www.cabq.gov/planning/documents/ABQcomprehensiveonstreetbicycleplan.pdf/view",
-                                                     "discovery_method":  "authored document link",
-                                                     "discovery_path":  [
-                                                                            "https://www.cabq.gov/bikes/biking-in-abq",
-                                                                            "https://www.cabq.gov/bikes/get-involved-civic-engagement",
-                                                                            "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee",
-                                                                            "https://www.cabq.gov/planning/documents/",
-                                                                            "https://www.cabq.gov/planning/documents/ABQcomprehensiveonstreetbicycleplan.pdf/view"
-                                                                        ],
-                                                     "crawl_depth":  4
-                                                 },
-                                                 {
-                                                     "state_file":  "cabq-bicycle-history-legacy-sitemap-crawl.json",
-                                                     "url":  "https://www.cabq.gov/parksandrecreation/recreation/bike/documents/final-albuquerque-comprehensive-on-street-bicycle-plan.pdf/view",
-                                                     "discovery_method":  "authored document link",
-                                                     "discovery_path":  [
-                                                                            "https://www.cabq.gov/bikes/biking-in-abq",
-                                                                            "https://www.cabq.gov/parksandrecreation/recreation/bike",
-                                                                            "https://www.cabq.gov/parksandrecreation/recreation/bike/documents",
-                                                                            "https://www.cabq.gov/parksandrecreation/recreation/bike/documents/final-albuquerque-comprehensive-on-street-bicycle-plan.pdf/view"
-                                                                        ],
-                                                     "crawl_depth":  3
-                                                 },
-                                                 {
-                                                     "state_file":  "cabq-bicycle-history-legacy-sitemap-crawl.json",
-                                                     "url":  "https://www.cabq.gov/planning/documents/ABQcomprehensiveonstreetbicycleplan.pdf/view",
-                                                     "discovery_method":  "authored document link",
-                                                     "discovery_path":  [
-                                                                            "https://www.cabq.gov/bikes/biking-in-abq",
-                                                                            "https://www.cabq.gov/sitemap",
-                                                                            "https://www.cabq.gov/municipaldevelopment/featured-projects/dr-martin-luther-king-jr-blvd-separated-bicycle-lane-pilot-project",
-                                                                            "https://www.cabq.gov/planning/documents/",
-                                                                            "https://www.cabq.gov/planning/documents/ABQcomprehensiveonstreetbicycleplan.pdf/view"
-                                                                        ],
-                                                     "crawl_depth":  3
-                                                 },
-                                                 {
-                                                     "state_file":  "cabq-bicycle-history-pagination-crawl.json",
-                                                     "url":  "https://www.cabq.gov/planning/documents/ABQcomprehensiveonstreetbicycleplan.pdf/view",
-                                                     "discovery_method":  "authored document link",
-                                                     "discovery_path":  [
-                                                                            "https://www.cabq.gov/bikes/biking-in-abq",
-                                                                            "https://www.cabq.gov/sitemap",
-                                                                            "https://www.cabq.gov/municipaldevelopment/featured-projects/dr-martin-luther-king-jr-blvd-separated-bicycle-lane-pilot-project",
-                                                                            "https://www.cabq.gov/planning/documents/",
-                                                                            "https://www.cabq.gov/planning/documents/ABQcomprehensiveonstreetbicycleplan.pdf/view"
-                                                                        ],
-                                                     "crawl_depth":  3
-                                                 }
-                                             ],
-                           "authoritative_source_url":  "https://www.cabq.gov/parksandrecreation/recreation/bike/documents",
-                           "authoritative_direct_file_url":  "https://www.cabq.gov/parksandrecreation/recreation/bike/documents/final-albuquerque-comprehensive-on-street-bicycle-plan.pdf",
-                           "provenance_status":  "authoritative City file byte-identical to preserved R2 object",
-                           "inventory_status":  "validated",
-                           "regression_pass":  true
-                       },
-                       {
-                           "id":  "bike-history-2011",
-                           "title":  "2011 Albuquerque Bikeways and Trails Master Plan Update",
-                           "inventory_id":  "src-94cdef5b70765253",
-                           "blind_graph_recovered":  false,
-                           "blind_matches":  [
-
-                                             ],
-                           "authoritative_source_url":  "https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%2011-10-11.pdf",
-                           "authoritative_direct_file_url":  "https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%2011-10-11.pdf",
-                           "provenance_status":  "authoritative City file byte-identical to preserved R2 object",
-                           "inventory_status":  "validated",
-                           "regression_pass":  false
-                       },
-                       {
-                           "id":  "bike-history-2015",
-                           "title":  "2015 Bikeways and Trails Facilities Plan",
-                           "inventory_id":  "src-a614f077ace20401",
-                           "blind_graph_recovered":  false,
-                           "blind_matches":  [
-
-                                             ],
-                           "authoritative_source_url":  "https://documents.cabq.gov/planning/FacilityPlans/BTFP/2024/BTFP-Update_Summary-2024.pdf",
-                           "authoritative_direct_file_url":  "https://documents.cabq.gov/planning/adopted-longrange-plans/BTFP/Final/BTFP%20FINAL_Jun25.pdf",
-                           "provenance_status":  "official City lineage confirmed; preserved-file byte identity unreconciled",
-                           "inventory_status":  "requires human review",
-                           "regression_pass":  false
-                       }
-                   ]
+{
+  "generated_at": "2026-08-10T22:18:58.0352501Z",
+  "rule": "A benchmark passes only when an eligible crawl state recovers its authoritative file, or official successor-plan lineage evidence for a source-lost historical document, without an exact-title or general web-search discovery method. Lineage recovery does not validate an archived file checksum.",
+  "eligible_crawl_states": [
+    "cabq-bicycle-history-bounded-collection-crawl.json",
+    "cabq-bicycle-history-legacy-sitemap-crawl.json",
+    "cabq-bicycle-history-pagination-crawl.json",
+    "cabq-bicycle-history-pdf-lineage-crawl.json"
+  ],
+  "passed": 3,
+  "total": 4,
+  "benchmarks": [
+    {
+      "id": "bike-history-1993",
+      "title": "1993 Trails and Bikeways Facility Plan",
+      "inventory_id": "src-395957636cb2fed0",
+      "blind_graph_recovered": true,
+      "blind_matches": [
+        {
+          "state_file": "cabq-bicycle-history-pdf-lineage-crawl.json",
+          "url": "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
+          "discovery_method": "PDF text lineage extraction from blindly graph-discovered official plan",
+          "discovery_path": [
+            "https://www.cabq.gov/bikes/biking-in-abq",
+            "https://www.cabq.gov/bikes/get-involved-civic-engagement",
+            "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee",
+            "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
+            "pdf-text:research/staging/lineage/src-0b1dfe6e620d7fe0.pdf",
+            "lineage:1993 Trails and Bikeways Facility Plan"
+          ],
+          "crawl_depth": 4,
+          "benchmark_id": "bike-history-1993",
+          "recovery_kind": "official lineage evidence",
+          "evidence_url": "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
+          "evidence": "ognizant of bicyclists and safety increases. Plan Background In 2015, the City of Albuquerque adopted the Bikeways and Trails Facility Plan, which combined and updated the City’s two bicy - cle and trail plans – the Trails and Bikeways Facility Plan (1993), and the Comprehensive On-Street Bicycle Plan (2000). By com- bining these two plans, the City was able to better manage the growth of on-street bikeways and multi-use trails and promote a well-connected, and safer non-motorized transportation system. The 2015 Plan recommended regular updates to address the evolving challenges and opportunities rel"
+        }
+      ],
+      "direct_file_matches": 0,
+      "official_lineage_evidence_matches": 1,
+      "authoritative_source_url": "https://documents.cabq.gov/planning/FacilityPlans/BTFP/2024/BTFP-Update_Summary-2024.pdf",
+      "authoritative_direct_file_url": null,
+      "provenance_status": "official City existence and succession confirmed; preserved-file origin unreconciled",
+      "inventory_status": "requires human review",
+      "regression_pass": true
+    },
+    {
+      "id": "bike-history-2000",
+      "title": "2000 Albuquerque Comprehensive On-Street Bicycle Plan",
+      "inventory_id": "src-0f60535452ac9154",
+      "blind_graph_recovered": true,
+      "blind_matches": [
+        {
+          "state_file": "cabq-bicycle-history-bounded-collection-crawl.json",
+          "url": "https://www.cabq.gov/parksandrecreation/recreation/bike/documents/final-albuquerque-comprehensive-on-street-bicycle-plan.pdf/view",
+          "discovery_method": "authored document link",
+          "discovery_path": [
+            "https://www.cabq.gov/bikes/biking-in-abq",
+            "https://www.cabq.gov/parksandrecreation/recreation/bike",
+            "https://www.cabq.gov/parksandrecreation/recreation/bike/documents",
+            "https://www.cabq.gov/parksandrecreation/recreation/bike/documents/final-albuquerque-comprehensive-on-street-bicycle-plan.pdf/view"
+          ],
+          "crawl_depth": 3,
+          "benchmark_id": "",
+          "recovery_kind": "",
+          "evidence_url": "",
+          "evidence": ""
+        },
+        {
+          "state_file": "cabq-bicycle-history-bounded-collection-crawl.json",
+          "url": "https://www.cabq.gov/planning/documents/ABQcomprehensiveonstreetbicycleplan.pdf/view",
+          "discovery_method": "authored document link",
+          "discovery_path": [
+            "https://www.cabq.gov/bikes/biking-in-abq",
+            "https://www.cabq.gov/bikes/get-involved-civic-engagement",
+            "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee",
+            "https://www.cabq.gov/planning/documents/",
+            "https://www.cabq.gov/planning/documents/ABQcomprehensiveonstreetbicycleplan.pdf/view"
+          ],
+          "crawl_depth": 4,
+          "benchmark_id": "",
+          "recovery_kind": "",
+          "evidence_url": "",
+          "evidence": ""
+        },
+        {
+          "state_file": "cabq-bicycle-history-legacy-sitemap-crawl.json",
+          "url": "https://www.cabq.gov/parksandrecreation/recreation/bike/documents/final-albuquerque-comprehensive-on-street-bicycle-plan.pdf/view",
+          "discovery_method": "authored document link",
+          "discovery_path": [
+            "https://www.cabq.gov/bikes/biking-in-abq",
+            "https://www.cabq.gov/parksandrecreation/recreation/bike",
+            "https://www.cabq.gov/parksandrecreation/recreation/bike/documents",
+            "https://www.cabq.gov/parksandrecreation/recreation/bike/documents/final-albuquerque-comprehensive-on-street-bicycle-plan.pdf/view"
+          ],
+          "crawl_depth": 3,
+          "benchmark_id": "",
+          "recovery_kind": "",
+          "evidence_url": "",
+          "evidence": ""
+        },
+        {
+          "state_file": "cabq-bicycle-history-legacy-sitemap-crawl.json",
+          "url": "https://www.cabq.gov/planning/documents/ABQcomprehensiveonstreetbicycleplan.pdf/view",
+          "discovery_method": "authored document link",
+          "discovery_path": [
+            "https://www.cabq.gov/bikes/biking-in-abq",
+            "https://www.cabq.gov/sitemap",
+            "https://www.cabq.gov/municipaldevelopment/featured-projects/dr-martin-luther-king-jr-blvd-separated-bicycle-lane-pilot-project",
+            "https://www.cabq.gov/planning/documents/",
+            "https://www.cabq.gov/planning/documents/ABQcomprehensiveonstreetbicycleplan.pdf/view"
+          ],
+          "crawl_depth": 3,
+          "benchmark_id": "",
+          "recovery_kind": "",
+          "evidence_url": "",
+          "evidence": ""
+        },
+        {
+          "state_file": "cabq-bicycle-history-pagination-crawl.json",
+          "url": "https://www.cabq.gov/planning/documents/ABQcomprehensiveonstreetbicycleplan.pdf/view",
+          "discovery_method": "authored document link",
+          "discovery_path": [
+            "https://www.cabq.gov/bikes/biking-in-abq",
+            "https://www.cabq.gov/sitemap",
+            "https://www.cabq.gov/municipaldevelopment/featured-projects/dr-martin-luther-king-jr-blvd-separated-bicycle-lane-pilot-project",
+            "https://www.cabq.gov/planning/documents/",
+            "https://www.cabq.gov/planning/documents/ABQcomprehensiveonstreetbicycleplan.pdf/view"
+          ],
+          "crawl_depth": 3,
+          "benchmark_id": "",
+          "recovery_kind": "",
+          "evidence_url": "",
+          "evidence": ""
+        }
+      ],
+      "direct_file_matches": 5,
+      "official_lineage_evidence_matches": 0,
+      "authoritative_source_url": "https://www.cabq.gov/parksandrecreation/recreation/bike/documents",
+      "authoritative_direct_file_url": "https://www.cabq.gov/parksandrecreation/recreation/bike/documents/final-albuquerque-comprehensive-on-street-bicycle-plan.pdf",
+      "provenance_status": "authoritative City file byte-identical to preserved R2 object",
+      "inventory_status": "validated",
+      "regression_pass": true
+    },
+    {
+      "id": "bike-history-2011",
+      "title": "2011 Albuquerque Bikeways and Trails Master Plan Update",
+      "inventory_id": "src-94cdef5b70765253",
+      "blind_graph_recovered": false,
+      "blind_matches": [],
+      "direct_file_matches": 0,
+      "official_lineage_evidence_matches": 0,
+      "authoritative_source_url": "https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%2011-10-11.pdf",
+      "authoritative_direct_file_url": "https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%2011-10-11.pdf",
+      "provenance_status": "authoritative City file byte-identical to preserved R2 object",
+      "inventory_status": "validated",
+      "regression_pass": false
+    },
+    {
+      "id": "bike-history-2015",
+      "title": "2015 Bikeways and Trails Facilities Plan",
+      "inventory_id": "src-a614f077ace20401",
+      "blind_graph_recovered": true,
+      "blind_matches": [
+        {
+          "state_file": "cabq-bicycle-history-pdf-lineage-crawl.json",
+          "url": "https://documents.cabq.gov/planning/adopted-longrange-plans/BTFP/Final/BTFP%20FINAL_Jun25.pdf",
+          "discovery_method": "PDF embedded-link extraction from blindly graph-discovered official plan",
+          "discovery_path": [
+            "https://www.cabq.gov/bikes/biking-in-abq",
+            "https://www.cabq.gov/bikes/get-involved-civic-engagement",
+            "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee",
+            "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
+            "pdf-embedded-link:page:155",
+            "https://documents.cabq.gov/planning/adopted-longrange-plans/BTFP/Final/BTFP%20FINAL_Jun25.pdf"
+          ],
+          "crawl_depth": 4,
+          "benchmark_id": "bike-history-2015",
+          "recovery_kind": "authoritative file link",
+          "evidence_url": "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
+          "evidence": "Official 2024 plan embedded PDF link on page 155."
+        }
+      ],
+      "direct_file_matches": 1,
+      "official_lineage_evidence_matches": 0,
+      "authoritative_source_url": "https://documents.cabq.gov/planning/FacilityPlans/BTFP/2024/BTFP-Update_Summary-2024.pdf",
+      "authoritative_direct_file_url": "https://documents.cabq.gov/planning/adopted-longrange-plans/BTFP/Final/BTFP%20FINAL_Jun25.pdf",
+      "provenance_status": "official City lineage confirmed; preserved-file byte identity unreconciled",
+      "inventory_status": "requires human review",
+      "regression_pass": true
+    }
+  ]
 }
