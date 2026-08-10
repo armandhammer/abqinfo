@@ -28,3 +28,23 @@ Example:
   -SourcePath 'C:\records\example.pdf' `
   -ObjectKey 'documents\transportation\example.pdf'
 ```
+
+# Discovery crawler validation
+
+The general and scoped crawlers share policy helpers in
+`scripts/project/Discovery.Common.ps1`. Relevant links from authoritative
+government pages are captured before recursive host restrictions are applied.
+Recognized publishing platforms such as ArcGIS Hub are recorded with their
+referring page and discovery path, but are not recursively crawled unless their
+host is explicitly allowed.
+
+Run the deterministic regression test with:
+
+```powershell
+.\scripts\project\Test-DiscoveryCrawlerRegression.ps1
+```
+
+The test verifies DMD parent traversal, `Project Maps` relevance, ArcGIS host
+classification, external document capture, and non-recursive handling of
+external candidates. `Invoke-ProjectValidation.ps1` runs this regression
+automatically before the Hugo build.

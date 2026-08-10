@@ -3,7 +3,9 @@ param(
   [Parameter(Mandatory)][string[]]$SeedUrls,
   [Parameter(Mandatory)][string]$Agency,
   [string[]]$AllowedHosts = @('www.cabq.gov','beta.cabq.gov','documents.cabq.gov','cabq.legistar.com','codelibrary.amlegal.com'),
-  [string]$RelevantPattern = '(?i)(bike|bicycl|trail|active.transport|pedestrian|complete.street|transport|traffic|road|street|corridor|mobility|facility.plan)',
+  [string[]]$RecognizedPublishingHosts = @(),
+  [string]$RelevantPattern = '',
+  [bool]$CaptureRelevantOutboundLinks = $true,
   [ValidateSet('custom','bicycle-history')][string]$DiscoveryProfile = 'custom',
   [string]$OutputPath = 'project-state/discovery/unknown-document-crawl.json',
   [ValidateRange(1,10)][int]$MaxDepth = 6,
@@ -16,9 +18,17 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+. "$PSScriptRoot/Discovery.Common.ps1"
+
+if (-not $RecognizedPublishingHosts.Count) {
+  $RecognizedPublishingHosts = @(Get-DefaultRecognizedPublishingHosts)
+}
+if ([string]::IsNullOrWhiteSpace($RelevantPattern)) {
+  $RelevantPattern = Get-DefaultDiscoveryRelevantPattern
+}
 
 if ($DiscoveryProfile -eq 'bicycle-history') {
-  $RelevantPattern = '(?i)(bike|bicycl|trail|active.transport|pedestrian|complete.street|facility.plan)'
+  $RelevantPattern = Get-BicycleHistoryRelevantPattern
 }
 
 $documentPattern = '(?i)\.(pdf|docx?|xlsx?|csv|zip|kml|kmz|shp)(?:/view)?(?:$|[?#])'
@@ -39,10 +49,7 @@ function Get-NormalizedUrl([string]$Url, [uri]$BaseUri = $null) {
 }
 
 function Test-AllowedHost([string]$DomainName) {
-  foreach ($allowed in $AllowedHosts) {
-    if ($DomainName -ieq $allowed -or $DomainName.EndsWith('.' + $allowed,[StringComparison]::OrdinalIgnoreCase)) { return $true }
-  }
-  return $false
+  return Test-DiscoveryHostMatch -HostName $DomainName -HostPatterns $AllowedHosts
 }
 
 function Get-PlainText([string]$Html) {
@@ -81,18 +88,11 @@ function Get-ParentFolderUrl([string]$Url) {
   } catch { return $null }
 }
 
-function Get-ParentPageUrl([string]$Url) {
-  try {
-    $uri = [uri]$Url
-    $path = $uri.AbsolutePath.TrimEnd('/')
-    $lastSlash = $path.LastIndexOf('/')
-    if ($lastSlash -le 0) { return $null }
-    return "{0}://{1}{2}/" -f $uri.Scheme,$uri.Authority,$path.Substring(0,$lastSlash)
-  } catch { return $null }
-}
-
 function Add-Candidate([hashtable]$Map, [string]$Url, [string]$Anchor, [object]$Item, [string]$Method) {
   $key = $Url.TrimEnd('/')
+  $candidateUri = [uri]$Url
+  $recursiveAllowed = Test-AllowedHost $candidateUri.Host
+  $hostClassification = Get-DiscoveryHostClassification -HostName $candidateUri.Host -AllowedHosts $AllowedHosts -RecognizedPublishingHosts $RecognizedPublishingHosts
   if (-not $Map.ContainsKey($key)) {
     $path = @($Item.path) + $Url
     $Map[$key] = [ordered]@{
@@ -107,10 +107,21 @@ function Add-Candidate([hashtable]$Map, [string]$Url, [string]$Anchor, [object]$
       size_bytes=$null
       http_status=$null
       content_type=$null
+      recursive_crawl_allowed=[bool]$recursiveAllowed
+      host_classification=$hostClassification
       processing_notes=@()
+    }
+    if (-not $recursiveAllowed) {
+      $Map[$key].processing_notes = @("Captured from authoritative page $($Item.url); external host was not recursively crawled.")
     }
   } else {
     $record = $Map[$key]
+    if (-not $record.PSObject.Properties['recursive_crawl_allowed']) {
+      $record | Add-Member -NotePropertyName recursive_crawl_allowed -NotePropertyValue ([bool]$recursiveAllowed)
+    }
+    if (-not $record.PSObject.Properties['host_classification']) {
+      $record | Add-Member -NotePropertyName host_classification -NotePropertyValue $hostClassification
+    }
     $record.referring_urls = @(@($record.referring_urls) + $Item.url | Sort-Object -Unique)
     $newPath = @($Item.path) + $Url
     if ($newPath.Count -lt @($record.discovery_path).Count) {
@@ -118,6 +129,26 @@ function Add-Candidate([hashtable]$Map, [string]$Url, [string]$Anchor, [object]$
       $record.parent_url = $Item.url
       $record.discovery_depth = [int]$Item.depth + 1
     }
+  }
+}
+
+function Add-SeedAncestorsToFrontier([string]$SeedUrl) {
+  $ancestorDepth = 1
+  foreach ($ancestorUrl in @(Get-DiscoverySeedAncestorUrls -Url $SeedUrl)) {
+    if ($ancestorDepth -gt $MaxDepth) { break }
+    $ancestorKey = $ancestorUrl.TrimEnd('/')
+    if (-not $visited.ContainsKey($ancestorKey) -and -not $queued.ContainsKey($ancestorKey)) {
+      $frontier.Enqueue([pscustomobject]@{
+        url=$ancestorUrl
+        depth=$ancestorDepth
+        parent_url=$SeedUrl
+        path=@($SeedUrl,$ancestorUrl)
+        method='user-seed ancestor traversal'
+        attempt=1
+      })
+      $queued[$ancestorKey] = $true
+    }
+    $ancestorDepth++
   }
 }
 
@@ -130,6 +161,8 @@ function Save-State([Collections.Generic.Queue[object]]$Frontier, [hashtable]$Vi
     source_url=$SeedUrls[0]
     seed_urls=@($SeedUrls)
     allowed_hosts=@($AllowedHosts)
+    recognized_publishing_hosts=@($RecognizedPublishingHosts)
+    capture_relevant_outbound_links=$CaptureRelevantOutboundLinks
     relevant_pattern=$RelevantPattern
     generated_at=(Get-Date).ToUniversalTime().ToString('o')
     max_depth=$MaxDepth
@@ -180,22 +213,28 @@ if ($Resume -and (Test-Path -LiteralPath $OutputPath)) {
     $queued[([string]$item.url).TrimEnd('/')] = $true
   }
   foreach ($page in @($prior.pages | Where-Object {
-    $_.status -eq 'retrieved' -and "$($_.url) $($_.title)" -match $RelevantPattern -and $_.url -match '(?i)/(projects?|plans?|documents?|archives?|boards-commissions)/'
+    $_.status -eq 'retrieved' -and "$($_.url) $($_.title)" -match $RelevantPattern
   })) {
-    $parentPage = Get-ParentPageUrl ([string]$page.url)
-    if (-not $parentPage) { continue }
-    $parentKey = $parentPage.TrimEnd('/')
-    if (-not $visited.ContainsKey($parentKey) -and -not $queued.ContainsKey($parentKey)) {
-      $frontier.Enqueue([pscustomobject]@{url=$parentPage;depth=([int]$page.depth + 1);parent_url=$page.url;path=@($page.discovery_path) + $parentPage;method='relevant page parent folder';attempt=1})
-      $queued[$parentKey] = $true
+    $ancestorOffset = 1
+    foreach ($parentPage in @(Get-DiscoverySeedAncestorUrls -Url ([string]$page.url))) {
+      $parentDepth = [int]$page.depth + $ancestorOffset
+      if ($parentDepth -gt $MaxDepth) { break }
+      $parentKey = $parentPage.TrimEnd('/')
+      if (-not $visited.ContainsKey($parentKey) -and -not $queued.ContainsKey($parentKey)) {
+        $frontier.Enqueue([pscustomobject]@{url=$parentPage;depth=$parentDepth;parent_url=$page.url;path=@($page.discovery_path) + $parentPage;method='relevant-page ancestor traversal';attempt=1})
+        $queued[$parentKey] = $true
+      }
+      $ancestorOffset++
     }
   }
+  foreach ($seedUrl in $SeedUrls) { Add-SeedAncestorsToFrontier $seedUrl }
 } else {
   foreach ($seedUrl in $SeedUrls) {
     $url = Get-NormalizedUrl $seedUrl
     if (-not $url) { continue }
     $frontier.Enqueue([pscustomobject]@{url=$url;depth=0;parent_url=$null;path=@($url);method='user seed'})
     $queued[$url.TrimEnd('/')] = $true
+    Add-SeedAncestorsToFrontier $url
   }
   if ($IncludeSiteInfrastructure) {
     foreach ($seedUrl in $SeedUrls) {
@@ -264,7 +303,9 @@ while ($frontier.Count -and $pages.Count -lt $MaxPages) {
       # current page is already in scope, include those collection edges from the
       # full page so generic labels do not sever the document graph.
       $currentPageRelevant = ("$($finalUri.AbsolutePath) $($pageRecord.title)" -match $RelevantPattern)
-      if ($currentPageRelevant) {
+      $isDiscoveryAncestor = ([string]$item.method) -match '(?i)ancestor traversal'
+      $pageInDiscoveryContext = $currentPageRelevant -or $isDiscoveryAncestor
+      if ($pageInDiscoveryContext) {
         $collectionLinks = @(Get-Links ([string]$response.Content) $finalUri | Where-Object {
           "$($_.anchor_text) $(([uri]$_.url).AbsolutePath)" -match $collectionPattern
         })
@@ -276,17 +317,27 @@ while ($frontier.Count -and $pages.Count -lt $MaxPages) {
 
       foreach ($link in $links) {
         $linkUri = [uri]$link.url
-        if (-not (Test-AllowedHost $linkUri.Host)) { continue }
         if ($link.url -match $excludedPattern) { continue }
         $isDocument = $link.url -match $documentPattern
         $isSpecial = $linkUri.AbsolutePath -match '(?i)(sitemap|@@search|/search)' -or $linkUri.Query -match '(?i)b_start'
-        $isCollectionEdge = $currentPageRelevant -and ("$($link.anchor_text) $($linkUri.AbsolutePath)" -match $collectionPattern)
-        $isRelevant = ("$($link.anchor_text) $($linkUri.AbsolutePath)" -match $RelevantPattern) -or $isCollectionEdge
-        if ($isInfrastructure -and -not $isRelevant -and -not $isSpecial) { continue }
-        if (-not $isDocument -and -not $isRelevant -and -not $isSpecial) { continue }
+        $isCollectionEdge = $pageInDiscoveryContext -and ("$($link.anchor_text) $($linkUri.AbsolutePath)" -match $collectionPattern)
+        $policy = Get-DiscoveryLinkPolicy `
+          -Url $link.url `
+          -AnchorText ([string]$link.anchor_text) `
+          -AllowedHosts $AllowedHosts `
+          -RecognizedPublishingHosts $RecognizedPublishingHosts `
+          -RelevantPattern $RelevantPattern `
+          -DocumentPattern $documentPattern `
+          -IsCollectionEdge $isCollectionEdge `
+          -IsSpecial $isSpecial `
+          -IsInfrastructure $isInfrastructure `
+          -CaptureRelevantOutboundLinks $CaptureRelevantOutboundLinks
+        if (-not $policy.capture) { continue }
 
-        $method = if ($isDocument) { 'authored document link' } elseif ($isCollectionEdge) { 'relevant-page collection navigation' } elseif ($isInfrastructure) { 'site index or catalog' } else { 'authored relevant link' }
+        $method = if (-not $policy.allowed_host) { 'authoritative outbound link' } elseif ($isDocument) { 'authored document link' } elseif ($isCollectionEdge) { 'relevant-page collection navigation' } elseif ($isInfrastructure) { 'site index or catalog' } else { 'authored relevant link' }
         Add-Candidate $candidateMap $link.url ([string]$link.anchor_text) $item $method
+
+        if (-not $policy.allowed_host) { continue }
 
         if ($isDocument) {
           $parentFolder = Get-ParentFolderUrl $link.url
@@ -309,7 +360,7 @@ while ($frontier.Count -and $pages.Count -lt $MaxPages) {
       # This recovers unlinked sibling archives such as /bike/documents without
       # relying on any known document title. Failed probes remain page failures
       # and are not promoted into the candidate inventory.
-      if ($currentPageRelevant -and [int]$item.depth -lt $MaxDepth) {
+      if ($pageInDiscoveryContext -and [int]$item.depth -lt $MaxDepth) {
         $leaf = $finalUri.AbsolutePath.TrimEnd('/').Split('/')[-1]
         if ($leaf -match '(?i)^(bike|bikes|bicycling|biking-in-abq|transportation|active-transportation)$') {
           $probeUrl = $finalUri.AbsoluteUri.TrimEnd('/') + '/documents'
@@ -319,14 +370,17 @@ while ($frontier.Count -and $pages.Count -lt $MaxPages) {
             $queued[$probeKey] = $true
           }
         }
-        if ($finalUri.AbsolutePath -match '(?i)/(projects?|plans?|documents?|archives?|boards-commissions)/') {
-          $parentPage = Get-ParentPageUrl $finalUri.AbsoluteUri
-          if ($parentPage) {
+        if ($currentPageRelevant) {
+          $ancestorOffset = 1
+          foreach ($parentPage in @(Get-DiscoverySeedAncestorUrls -Url $finalUri.AbsoluteUri)) {
+            $parentDepth = [int]$item.depth + $ancestorOffset
+            if ($parentDepth -gt $MaxDepth) { break }
             $parentKey = $parentPage.TrimEnd('/')
             if (-not $visited.ContainsKey($parentKey) -and -not $queued.ContainsKey($parentKey)) {
-              $frontier.Enqueue([pscustomobject]@{url=$parentPage;depth=([int]$item.depth + 1);parent_url=$item.url;path=@($item.path) + $parentPage;method='relevant page parent folder';attempt=1})
+              $frontier.Enqueue([pscustomobject]@{url=$parentPage;depth=$parentDepth;parent_url=$item.url;path=@($item.path) + $parentPage;method='relevant-page ancestor traversal';attempt=1})
               $queued[$parentKey] = $true
             }
+            $ancestorOffset++
           }
         }
       }
