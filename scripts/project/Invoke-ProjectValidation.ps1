@@ -9,6 +9,8 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 & "$PSScriptRoot/Test-MasterInventory.ps1" -InventoryPath $InventoryPath
 if (-not $?) { throw 'Master inventory validation failed.' }
+& "$PSScriptRoot/Test-DiscoveryCrawlerRegression.ps1" -OutputPath 'tmp/crawler-regression-report.json'
+if (-not $?) { throw 'Crawler discovery regression failed.' }
 & $HugoPath --gc --minify --destination tmp/site-build
 if ($LASTEXITCODE) { throw 'Hugo build failed.' }
 
