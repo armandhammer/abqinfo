@@ -6,9 +6,31 @@ Data dashboards and visualizations.
 
 ## Project, program, and safety dashboards
 
+- [DMD Active Projects Viewer](https://experience.arcgis.com/experience/0e6f49ae7959446784e397253fd81165)
+
+  Maps active and completed Municipal Development projects by phase, category, district, and location, with searchable descriptions covering transportation, traffic engineering, drainage, facilities, and other special projects.
+
+- [Street Maintenance Projects Viewer](https://experience.arcgis.com/experience/f57852d3820348099352cd74e5db72bf)
+
+  Maps City street-maintenance projects and their locations, providing a direct geographic view of active and recent resurfacing or maintenance work managed by Municipal Development.
+
+- [Streetlight Status Dashboard](https://www.arcgis.com/apps/dashboards/1facbd146a924224b1698c7d164662c3)
+
+  Displays weekly updated operational status for City streetlights using vendor data, helping users examine working and non-working assets while the City expands integration with PNM work-order information.
+
+- [School Crossings Dashboard](https://www.arcgis.com/apps/dashboards/4a52905fd707412085ce9811ad48dd25)
+
+  Maps and rates more than 350 Albuquerque school crossings, with filters for schools, areas, and crossing features; ratings were updated in 2024 and are maintained as conditions change.
+
+- [Neighborhood Traffic Management Program Dashboard](https://www.arcgis.com/apps/dashboards/54e6059b27eb42d680f24e2eaae81c6e)
+
+  Maps eligible Neighborhood Traffic Management Program streets and current requests, with searchable request IDs, dates, locations, project status, and filters for tracking neighborhood traffic-calming activity.
+
 - [Permitted construction in the public right of way](https://www.cabq.gov/municipaldevelopment/maps/traffic-report)
 
   The City's regularly updated map shows permitted right-of-way construction, locations, dates, descriptions, and responsible contractors. It is cross-listed under Current Roadway Projects for people tracking active work.
+
+  [Open the live Traffic Barricades Map](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=990365639da44a80a64b140726665a2b).
 
 - [Construction moratoriums](https://www.cabq.gov/municipaldevelopment/maps/construction-moratoriums)
 
@@ -17,6 +39,8 @@ Data dashboards and visualizations.
 - [Pedestrian, bicyclist, and traffic-safety projects map](https://www.cabq.gov/municipaldevelopment/maps/pedestrian-bicyclist-and-traffic-safety-projects)
 
   This City map points to the current geographic view of safety projects. It is also linked from the bicycle-safety section because the same live source serves both purposes.
+
+  [Open the live project viewer](https://experience.arcgis.com/experience/cbc6869f8677415c81a8bed6853b2b93).
 
 - [NMDOT Project Dashboard](https://www.dot.nm.gov/project-dashboard/)
 

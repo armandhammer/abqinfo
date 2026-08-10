@@ -29,6 +29,16 @@ City bicycle planning documents and master plans, including current and previous
   - [Appendix I – Bollard Assessment (2013)](https://files.abqinfo.com/transportation/bicycling/bike-plans/2024-albuquerque-bike-plan-appendix-i-multiuse-trail-bollard-assessment-parks-and-recreation-2013.pdf)
     - Documents the City's 2013 assessment of multiuse-trail bollards, including operational and safety considerations that inform decisions about access-control treatments on trails.
 
+### Interactive plan companions
+
+- [Bikeways & Trails 2024 Conditions](https://storymaps.arcgis.com/stories/4cd6fe3cb2d04a5c895b3791bc35ccd3)
+
+  Explains the existing-condition analysis behind Albuquerque's 2024 Bikeway and Trail Facilities Plan, including facility gaps, bicycle traffic stress, comfort, equity, Vision Zero, and underlying interactive data.
+
+- [Existing & Proposed Network](https://storymaps.arcgis.com/stories/cbf571a80aef4738a8dbe89036c57a48)
+
+  Presents the existing and proposed bikeway network supporting Albuquerque's adopted 2024 plan, linking interactive maps with project strategies, prioritization, and the plan's broader recommendations.
+
 ## Previous Bike Plans
 - [2015 Bikeways and Trails Facilities Plan](https://files.abqinfo.com/transportation/bicycling/bike-plans/2015-bikeways-and-trails-facilities-plan.pdf)
   - The previous adopted facilities plan established the bicycle and trail network, policies, design guidance, and project priorities that preceded the current 2024 plan.
