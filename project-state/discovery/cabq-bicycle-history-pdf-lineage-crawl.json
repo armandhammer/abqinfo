@@ -1,0 +1,90 @@
+{
+  "agency": "City of Albuquerque",
+  "source_url": "https://www.cabq.gov/bikes/biking-in-abq",
+  "scope": "bounded bicycle-history PDF lineage expansion",
+  "retrieved_at": "2026-08-10T22:13:23.7978077Z",
+  "source_pdf_url": "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
+  "source_pdf_path": "research/staging/lineage/src-0b1dfe6e620d7fe0.pdf",
+  "source_discovery_path": [
+    "https://www.cabq.gov/bikes/biking-in-abq",
+    "https://www.cabq.gov/bikes/get-involved-civic-engagement",
+    "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee",
+    "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf"
+  ],
+  "source_pdf_pages": 513,
+  "source_pdf_embedded_link_records": 86,
+  "candidates": [
+    {
+      "url": "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
+      "anchor_text": "1993 Trails and Bikeways Facility Plan",
+      "title": "1993 Trails and Bikeways Facility Plan",
+      "benchmark_id": "bike-history-1993",
+      "recovery_kind": "official lineage evidence",
+      "parent_url": "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
+      "referring_urls": [
+        "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/bikes/biking-in-abq",
+        "https://www.cabq.gov/bikes/get-involved-civic-engagement",
+        "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee",
+        "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
+        "pdf-text:research/staging/lineage/src-0b1dfe6e620d7fe0.pdf",
+        "lineage:1993 Trails and Bikeways Facility Plan"
+      ],
+      "discovery_method": "PDF text lineage extraction from blindly graph-discovered official plan",
+      "discovery_depth": 4,
+      "agency": "City of Albuquerque",
+      "file_type": "Historical plan named in official successor PDF",
+      "evidence_url": "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
+      "evidence": "ognizant of bicyclists and safety increases. Plan Background In 2015, the City of Albuquerque adopted the Bikeways and Trails Facility Plan, which combined and updated the City’s two bicy - cle and trail plans – the Trails and Bikeways Facility Plan (1993), and the Comprehensive On-Street Bicycle Plan (2000). By com- bining these two plans, the City was able to better manage the growth of on-street bikeways and multi-use trails and promote a well-connected, and safer non-motorized transportation system. The 2015 Plan recommended regular updates to address the evolving challenges and opportunities rel",
+      "provenance_status": "official City existence and succession confirmed; historical file origin not established",
+      "processing_notes": [
+        "The official successor plan names this historical plan; this confirms lineage but not the provenance of the preserved R2 file."
+      ]
+    },
+    {
+      "url": "https://documents.cabq.gov/planning/adopted-longrange-plans/BTFP/Final/BTFP%20FINAL_Jun25.pdf",
+      "anchor_text": "2015 Bikeways and Trails Facilities Plan",
+      "title": "2015 Bikeways and Trails Facilities Plan",
+      "benchmark_id": "bike-history-2015",
+      "recovery_kind": "authoritative file link",
+      "parent_url": "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
+      "referring_urls": [
+        "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/bikes/biking-in-abq",
+        "https://www.cabq.gov/bikes/get-involved-civic-engagement",
+        "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee",
+        "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
+        "pdf-embedded-link:page:155",
+        "https://documents.cabq.gov/planning/adopted-longrange-plans/BTFP/Final/BTFP%20FINAL_Jun25.pdf"
+      ],
+      "discovery_method": "PDF embedded-link extraction from blindly graph-discovered official plan",
+      "discovery_depth": 4,
+      "agency": "City of Albuquerque",
+      "file_type": "PDF",
+      "evidence_url": "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
+      "evidence": "Official 2024 plan embedded PDF link on page 155.",
+      "provenance_status": "official City lineage and historical file URL recovered; live-file identity not established",
+      "processing_notes": [
+        "Recovered from an embedded link in the authoritative 2024 plan without an exact-title or general web search."
+      ]
+    }
+  ],
+  "diagnostics": [
+    {
+      "benchmark_id": "bike-history-2000",
+      "title": "2000 Albuquerque Comprehensive On-Street Bicycle Plan",
+      "status": "not recovered from source PDF",
+      "notes": "No matching embedded authoritative-file link or configured lineage-evidence passage was found in the blindly discovered 2024 plan."
+    },
+    {
+      "benchmark_id": "bike-history-2011",
+      "title": "2011 Albuquerque Bikeways and Trails Master Plan Update",
+      "status": "not recovered from source PDF",
+      "notes": "No matching embedded authoritative-file link or configured lineage-evidence passage was found in the blindly discovered 2024 plan."
+    }
+  ]
+}

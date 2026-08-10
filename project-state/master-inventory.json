@@ -1,6 +1,6 @@
 ﻿{
     "schema_version":  1,
-    "generated_at":  "2026-08-10T21:44:09.8391179Z",
+    "generated_at":  "2026-08-10T22:14:25.5962831Z",
     "allowed_statuses":  [
                              "pending review",
                              "approved for addition",
@@ -53456,7 +53456,8 @@
                            "description_word_count":  20,
                            "processing_notes":  [
                                                     "The 2024 plan identifies this as a predecessor; the official Planning update summary confirms that the 2015 plan repealed it.",
-                                                    "The preserved R2 object is exactly 4,624,017 bytes (4.41 MiB), but an R2 HTTP 200 is not authoritative provenance."
+                                                    "The preserved R2 object is exactly 4,624,017 bytes (4.41 MiB), but an R2 HTTP 200 is not authoritative provenance.",
+                                                    "Blind graph recovery now passes through the official 2024 successor plan, which names the 1993 plan. This does not reconcile the preserved R2 file checksum."
                                                 ],
                            "implementation_location":  "content/transportation/bicycling/bike-plans.md",
                            "implementation_locations":  [
@@ -53467,16 +53468,21 @@
                            "exclusion_reason":  null,
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T01:30:19.5310546Z",
-                           "updated_at":  "2026-08-04T13:20:36.7981277Z",
-                           "parent_url":  null,
+                           "updated_at":  "2026-08-10T22:14:25.5962831Z",
+                           "parent_url":  "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
                            "referring_urls":  [
-
+                                                  "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf"
                                               ],
                            "discovery_path":  [
-
+                                                  "https://www.cabq.gov/bikes/biking-in-abq",
+                                                  "https://www.cabq.gov/bikes/get-involved-civic-engagement",
+                                                  "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee",
+                                                  "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
+                                                  "pdf-text:research/staging/lineage/src-0b1dfe6e620d7fe0.pdf",
+                                                  "lineage:1993 Trails and Bikeways Facility Plan"
                                               ],
-                           "discovery_method":  "PDF lineage extraction and official Planning succession record",
-                           "crawl_depth":  null,
+                           "discovery_method":  "PDF text lineage extraction from blindly graph-discovered official plan",
+                           "crawl_depth":  4,
                            "cited_predecessors":  [
 
                                                   ],
@@ -117551,7 +117557,8 @@
                            "description_word_count":  21,
                            "processing_notes":  [
                                                     "Discovered by expanding predecessor titles extracted from the current plan, not from a pre-known title seed.",
-                                                    "Authoritative City file is exactly 20,962,356 bytes (19.99 MiB); SHA-256 9f2fb2f301ebb3d32b157db3614345e1e41c3cfcc76f0055ee26bcc2466a54bb."
+                                                    "Authoritative City file is exactly 20,962,356 bytes (19.99 MiB); SHA-256 9f2fb2f301ebb3d32b157db3614345e1e41c3cfcc76f0055ee26bcc2466a54bb.",
+                                                    "Blind discovery regression remains unresolved: the direct official PDF returns HTTP 200 with Content-Length 20,962,356, but its parent City document folder redirects to employee sign-in. Two broad City site-search probes (bicycle plan; bikeways trails) did not surface it; an exact-title diagnostic does, which is intentionally ineligible for regression credit."
                                                 ],
                            "implementation_location":  "content/transportation/bicycling/bike-plans.md",
                            "implementation_locations":  [
@@ -117562,7 +117569,7 @@
                            "exclusion_reason":  null,
                            "local_path":  "research/staging/lineage/official-2011-bikeways-trails-master-plan-update.pdf",
                            "discovered_at":  "2026-08-04T01:30:19.5300548Z",
-                           "updated_at":  "2026-08-04T13:20:36.75689Z",
+                           "updated_at":  "2026-08-10T22:14:25.5962831Z",
                            "parent_url":  "https://www.cabq.gov/parksandrecreation/documents/",
                            "referring_urls":  [
 
@@ -129019,7 +129026,8 @@
                            "description_word_count":  23,
                            "processing_notes":  [
                                                     "The official Planning summary records R-14-142/R-2015-045, repeal of the 1993 and 2000 plans, and adoption of the 2015 plan.",
-                                                    "The preserved R2 object is exactly 4,402,773 bytes (4.20 MiB); no live authoritative file was available for checksum comparison."
+                                                    "The preserved R2 object is exactly 4,402,773 bytes (4.20 MiB); no live authoritative file was available for checksum comparison.",
+                                                    "Blind graph recovery now passes through an embedded historical-file link on page 155 of the official 2024 plan. The linked 2015 City URL currently returns HTTP 404, so the preserved R2 file checksum remains unreconciled."
                                                 ],
                            "implementation_location":  "content/transportation/bicycling/bike-plans.md",
                            "implementation_locations":  [
@@ -129030,16 +129038,21 @@
                            "exclusion_reason":  null,
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T01:30:19.5300548Z",
-                           "updated_at":  "2026-08-04T13:20:36.7732485Z",
-                           "parent_url":  null,
+                           "updated_at":  "2026-08-10T22:14:25.5962831Z",
+                           "parent_url":  "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
                            "referring_urls":  [
-
+                                                  "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf"
                                               ],
                            "discovery_path":  [
-
+                                                  "https://www.cabq.gov/bikes/biking-in-abq",
+                                                  "https://www.cabq.gov/bikes/get-involved-civic-engagement",
+                                                  "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee",
+                                                  "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
+                                                  "pdf-embedded-link:page:155",
+                                                  "https://documents.cabq.gov/planning/adopted-longrange-plans/BTFP/Final/BTFP%20FINAL_Jun25.pdf"
                                               ],
-                           "discovery_method":  "PDF lineage expansion through official Planning records",
-                           "crawl_depth":  null,
+                           "discovery_method":  "PDF embedded-link extraction from blindly graph-discovered official plan",
+                           "crawl_depth":  4,
                            "cited_predecessors":  [
                                                       "1993 Trails and Bikeways Facility Plan",
                                                       "2000 Albuquerque Comprehensive On-Street Bicycle Plan",

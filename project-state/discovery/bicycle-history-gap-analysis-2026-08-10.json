@@ -1,0 +1,84 @@
+{
+  "recorded_at": "2026-08-10T22:13:32.5786168Z",
+  "scope": "Bounded repair of the 1993, 2011, and 2015 bicycle-history regression benchmarks",
+  "limits": {
+    "benchmark_count": 3,
+    "maximum_newly_followed_references": 60,
+    "maximum_new_inventory_candidates": 10,
+    "maximum_implementations": 5,
+    "newly_followed_reference_targets": 9,
+    "new_inventory_candidates": 0,
+    "implementations": 0
+  },
+  "source_graph": {
+    "seed_url": "https://www.cabq.gov/bikes/biking-in-abq",
+    "blindly_recovered_successor_url": "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
+    "blind_discovery_path": [
+      "https://www.cabq.gov/bikes/biking-in-abq",
+      "https://www.cabq.gov/bikes/get-involved-civic-engagement",
+      "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee",
+      "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf"
+    ],
+    "source_pdf_pages": 513,
+    "source_pdf_size_bytes": 68233939,
+    "source_pdf_embedded_link_records": 86
+  },
+  "benchmarks": [
+    {
+      "id": "bike-history-1993",
+      "inventory_id": "src-395957636cb2fed0",
+      "regression_status": "passed",
+      "recovery_kind": "official lineage evidence",
+      "evidence_source": "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
+      "notes": "The blindly recovered official 2024 plan states that the 2015 plan combined and updated the 1993 Trails and Bikeways Facility Plan and the 2000 plan. This confirms historical lineage but does not validate the origin or checksum of the preserved 1993 R2 file.",
+      "inventory_status": "requires human review"
+    },
+    {
+      "id": "bike-history-2011",
+      "inventory_id": "src-94cdef5b70765253",
+      "regression_status": "failed",
+      "recovery_kind": null,
+      "official_file_url": "https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%2011-10-11.pdf",
+      "official_file_http_status": 200,
+      "official_file_size_bytes": 20962356,
+      "parent_url": "https://www.cabq.gov/parksandrecreation/documents/",
+      "parent_http_status": 302,
+      "parent_redirect_target": "https://www.cabq.gov/acl_users/trusted_proxy_auth/require_login?came_from=/parksandrecreation/documents/",
+      "broad_official_site_searches": [
+        {
+          "query": "bicycle plan",
+          "result_pages_inspected": 6,
+          "result_links_reviewed": 60,
+          "benchmark_found": false
+        },
+        {
+          "query": "bikeways trails",
+          "result_pages_inspected": 3,
+          "result_links_reviewed": 30,
+          "benchmark_found": false
+        }
+      ],
+      "diagnostic_exact_title_search_found_file": true,
+      "notes": "The direct official PDF remains live and byte-identical to the archived copy, but the live City graph no longer exposes a public parent collection and broad City search did not surface it. The exact-title result is diagnostic only and is intentionally ineligible for blind-recovery credit.",
+      "inventory_status": "validated"
+    },
+    {
+      "id": "bike-history-2015",
+      "inventory_id": "src-a614f077ace20401",
+      "regression_status": "passed",
+      "recovery_kind": "authoritative file link",
+      "evidence_source": "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
+      "embedded_link_page": 155,
+      "historical_file_url": "https://documents.cabq.gov/planning/adopted-longrange-plans/BTFP/Final/BTFP%20FINAL_Jun25.pdf",
+      "historical_file_http_status": 404,
+      "notes": "The blindly recovered official 2024 plan embeds the historical City file URL. The link proves the discovery pathway and City provenance but is now dead, so the preserved R2 file remains checksum-unreconciled.",
+      "inventory_status": "requires human review"
+    }
+  ],
+  "regression_summary": {
+    "passed": 3,
+    "total": 4,
+    "remaining_failed_benchmark": "bike-history-2011"
+  },
+  "next_pending_item": "Recover the 2011 draft through a non-title-seeded official graph or historical catalog pathway, or retain it as an explicitly documented orphaned official file without granting blind-regression credit."
+}
