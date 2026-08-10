@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-08-10T22:13:32.5786168Z",
+  "recorded_at": "2026-08-10T23:02:14.0255655Z",
   "scope": "Bounded repair of the 1993, 2011, and 2015 bicycle-history regression benchmarks",
   "limits": {
     "benchmark_count": 3,
@@ -23,6 +23,15 @@
     "source_pdf_size_bytes": 68233939,
     "source_pdf_embedded_link_records": 86
   },
+  "robots_sitemap_repair": {
+    "robots_url": "https://www.cabq.gov/robots.txt",
+    "advertised_sitemap": "https://www.cabq.gov/sitemap.xml.gz",
+    "sitemap_shards": 2,
+    "enumerated_urls": 57541,
+    "recovery_artifact": "project-state/discovery/cabq-robots-sitemap-bicycle-history-crawl.json",
+    "root_cause": "The prior workflow followed the human-facing /@@sitemap page and did not inspect the compressed XML sitemap advertised by robots.txt.",
+    "bounded_result": "Complete sitemap enumeration recovered the 2011 main plan plus its separately published appendices and design guidelines before a three-document family filter was applied."
+  },
   "benchmarks": [
     {
       "id": "bike-history-1993",
@@ -36,14 +45,20 @@
     {
       "id": "bike-history-2011",
       "inventory_id": "src-94cdef5b70765253",
-      "regression_status": "failed",
-      "recovery_kind": null,
+      "regression_status": "passed",
+      "recovery_kind": "authoritative file link",
       "official_file_url": "https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%2011-10-11.pdf",
       "official_file_http_status": 200,
       "official_file_size_bytes": 20962356,
-      "parent_url": "https://www.cabq.gov/parksandrecreation/documents/",
-      "parent_http_status": 302,
-      "parent_redirect_target": "https://www.cabq.gov/acl_users/trusted_proxy_auth/require_login?came_from=/parksandrecreation/documents/",
+      "parent_url": "https://www.cabq.gov/sitemap1.xml.gz",
+      "discovery_method": "robots-advertised XML sitemap enumeration",
+      "discovery_path": [
+        "https://www.cabq.gov/bikes/biking-in-abq",
+        "https://www.cabq.gov/robots.txt",
+        "https://www.cabq.gov/sitemap.xml.gz",
+        "https://www.cabq.gov/sitemap1.xml.gz",
+        "https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%2011-10-11.pdf"
+      ],
       "broad_official_site_searches": [
         {
           "query": "bicycle plan",
@@ -59,7 +74,7 @@
         }
       ],
       "diagnostic_exact_title_search_found_file": true,
-      "notes": "The direct official PDF remains live and byte-identical to the archived copy, but the live City graph no longer exposes a public parent collection and broad City search did not surface it. The exact-title result is diagnostic only and is intentionally ineligible for blind-recovery credit.",
+      "notes": "The robots-declared XML sitemap recovered the direct official PDF without a title seed. The file remains live and byte-identical to the archived copy. The sitemap also recovered the separately published 1,757,042-byte appendices and 31,152,896-byte design guidelines, both approved for later archival and implementation review.",
       "inventory_status": "validated"
     },
     {
@@ -76,9 +91,9 @@
     }
   ],
   "regression_summary": {
-    "passed": 3,
+    "passed": 4,
     "total": 4,
-    "remaining_failed_benchmark": "bike-history-2011"
+    "remaining_failed_benchmark": null
   },
-  "next_pending_item": "Recover the 2011 draft through a non-title-seeded official graph or historical catalog pathway, or retain it as an explicitly documented orphaned official file without granting blind-regression credit."
+  "next_pending_item": "In a separate bounded batch, review the nine remaining DMD Hub records and the five previously approved DMD additions; do not exceed 14 reviews or five implementations."
 }

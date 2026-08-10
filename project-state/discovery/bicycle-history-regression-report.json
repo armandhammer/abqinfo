@@ -1,13 +1,14 @@
 {
-  "generated_at": "2026-08-10T22:18:58.0352501Z",
+  "generated_at": "2026-08-10T23:05:58.5728161Z",
   "rule": "A benchmark passes only when an eligible crawl state recovers its authoritative file, or official successor-plan lineage evidence for a source-lost historical document, without an exact-title or general web-search discovery method. Lineage recovery does not validate an archived file checksum.",
   "eligible_crawl_states": [
     "cabq-bicycle-history-bounded-collection-crawl.json",
     "cabq-bicycle-history-legacy-sitemap-crawl.json",
     "cabq-bicycle-history-pagination-crawl.json",
-    "cabq-bicycle-history-pdf-lineage-crawl.json"
+    "cabq-bicycle-history-pdf-lineage-crawl.json",
+    "cabq-robots-sitemap-bicycle-history-crawl.json"
   ],
-  "passed": 3,
+  "passed": 4,
   "total": 4,
   "benchmarks": [
     {
@@ -145,15 +146,33 @@
       "id": "bike-history-2011",
       "title": "2011 Albuquerque Bikeways and Trails Master Plan Update",
       "inventory_id": "src-94cdef5b70765253",
-      "blind_graph_recovered": false,
-      "blind_matches": [],
-      "direct_file_matches": 0,
+      "blind_graph_recovered": true,
+      "blind_matches": [
+        {
+          "state_file": "cabq-robots-sitemap-bicycle-history-crawl.json",
+          "url": "https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%2011-10-11.pdf",
+          "discovery_method": "robots-advertised XML sitemap enumeration",
+          "discovery_path": [
+            "https://www.cabq.gov/bikes/biking-in-abq",
+            "https://www.cabq.gov/robots.txt",
+            "https://www.cabq.gov/sitemap.xml.gz",
+            "https://www.cabq.gov/sitemap1.xml.gz",
+            "https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%2011-10-11.pdf"
+          ],
+          "crawl_depth": 4,
+          "benchmark_id": "",
+          "recovery_kind": "",
+          "evidence_url": "",
+          "evidence": ""
+        }
+      ],
+      "direct_file_matches": 1,
       "official_lineage_evidence_matches": 0,
       "authoritative_source_url": "https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%2011-10-11.pdf",
       "authoritative_direct_file_url": "https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%2011-10-11.pdf",
       "provenance_status": "authoritative City file byte-identical to preserved R2 object",
       "inventory_status": "validated",
-      "regression_pass": false
+      "regression_pass": true
     },
     {
       "id": "bike-history-2015",
