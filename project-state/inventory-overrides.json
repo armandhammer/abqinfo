@@ -940,5 +940,41 @@
     "implementation_location": "content/transportation/roadway-projects/current.md",
     "implementation_locations": ["content/transportation/roadway-projects/current.md"],
     "validation_status": "passed: live endpoint HTTP 200; description and canonical placement validated 2026-08-10"
+  },
+  {
+    "id": "src-c253e8dd6d233d95",
+    "processing_notes": ["Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/featured-projects.", "Selected from the user-directed CABQ starting-page review and implemented on the current bicycle-projects page.", "Item-specific current-pilot contact supplied directly by the user on 2026-08-10: Valerie Hermanson, vhermanson@cabq.gov; no source lookup required."],
+    "validation_status": "passed: source HTTP 200; project-specific contact added from user-supplied current information"
+  },
+  {
+    "id": "src-c540ee6e20ebd64c",
+    "parent_url": "https://www.bernco.gov/public-works/finished-projects/",
+    "referring_urls": ["https://www.bernco.gov/public-works/finished-projects/"],
+    "discovery_path": ["https://www.bernco.gov/public-works/finished-projects/", "https://www.bernco.gov/public-works/development-review/tech-standards/"],
+    "discovery_method": "authored main-content link",
+    "crawl_depth": 1,
+    "processing_notes": ["Discovered by deterministic crawl of https://www.bernco.gov/public-works/finished-projects/.", "Reviewed 2026-08-10: the live County page returned HTTP 200 and still labels the March 28, 2023 Technical Standards as current.", "Retained as the source-of-truth link where users can check for later editions; the linked complete PDF is inventoried separately."],
+    "validation_status": "passed: current County landing page HTTP 200 and canonical placement validated 2026-08-10"
+  },
+  {
+    "id": "src-9ddd86a240b30500",
+    "status": "requires human review",
+    "source_url": "https://www.bernco.gov/public-works/development-review/tech-standards/",
+    "direct_file_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2023/05/Bernalillo-County-Technical-Standards-2023-03-28-FINAL.pdf",
+    "agency": "Bernalillo County",
+    "title": "Complete Bernalillo County Technical Standards",
+    "date": "2023-03-28",
+    "file_type": "PDF",
+    "size_bytes": 9161556,
+    "checksum_sha256": "87815e3438b0a392bf7019a27c1030c66f6f11ac902ab579a6c0b027feddabb1",
+    "proposed_canonical_page": "content/transportation/design-references.md",
+    "description": "Contains the County's 226-page March 2023 requirements for development review, transportation networks, road geometry, pedestrian and bicycle facilities, drainage, pavement design, traffic studies, construction, and green stormwater infrastructure.",
+    "description_word_count": 28,
+    "processing_notes": ["The current County landing page still labels the March 28, 2023 standards as current; no newer authoritative edition was found there on 2026-08-10.", "Original complete 226-page authoritative PDF downloaded to temporary storage without modification: exactly 9,161,556 bytes (8.74 MiB), SHA-256 87815e3438b0a392bf7019a27c1030c66f6f11ac902ab579a6c0b027feddabb1.", "The landing page's separate April-hosted copy is 8,831,995 bytes and 224 pages; it is not byte-identical and is not an equivalent substitute for the page's complete May-hosted edition.", "Representative pages rendered successfully and confirmed intact transportation-network, road-design, drainage, traffic-review, construction, and green-infrastructure content.", "Current R2 storage is 725,638,531 bytes; the original would add 9,161,556 bytes and project storage to 734,800,087 bytes (7.348% of the current 10 GB-month Standard free allowance).", "No optimization or derivative is proposed. No R2 upload was performed; explicit authorization is required before production storage changes."],
+    "implementation_location": "content/transportation/design-references.md",
+    "implementation_locations": ["content/transportation/design-references.md"],
+    "cross_listing_approved": false,
+    "validation_status": "passed: live PDF HTTP 200, exact metadata/content/placement reviewed; R2 archival upload requires explicit authorization",
+    "provenance_status": "authoritative County landing page and direct file recorded"
   }
 ]

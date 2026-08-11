@@ -1,8 +1,8 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-11T00:59:24.2046649Z
+Generated: 2026-08-11T01:34:33.7761136Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 3686 candidates and 61 R2 objects totaling 725638531 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 3687 candidates and 61 R2 objects totaling 725638531 bytes.
 
 ## Queue status
 
@@ -21,7 +21,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | duplicate | 64 |
 | superseded | 5 |
 | blocked | 0 |
-| requires human review | 27 |
+| requires human review | 28 |
 
 ## Preserved documents
 
@@ -376,6 +376,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-860035d463be9d48 | requires human review | Cost Estimate: MLK to Lomas | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-8ce615f21d3e5dd3 | requires human review | Appendix I Ã¢â‚¬â€œ Bollard Assessment (2013) | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-907f4de342216f97 | requires human review | 2024 Bikeway and Trail Facilities Plan | The authoritative City source was recovered from a featured bicycle-project page at crawl depth 2 without a title seed.; The preserved R2 object is exactly 19,715,991 bytes (18.80 MiB); its SHA-256 is 873a5ead78ba2881bf7fc7fb61445da8c8f68207635c2045cd4a10daa1bd7407.; An R2 HTTP 200 is not treated as authoritative-source validation. |
+| src-9ddd86a240b30500 | requires human review | Complete Bernalillo County Technical Standards | The current County landing page still labels the March 28, 2023 standards as current; no newer authoritative edition was found there on 2026-08-10.; Original complete 226-page authoritative PDF downloaded to temporary storage without modification: exactly 9,161,556 bytes (8.74 MiB), SHA-256 87815e3438b0a392bf7019a27c1030c66f6f11ac902ab579a6c0b027feddabb1.; The landing page's separate April-hosted copy is 8,831,995 bytes and 224 pages; it is not byte-identical and is not an equivalent substitute for the page's complete May-hosted edition.; Representative pages rendered successfully and confirmed intact transportation-network, road-design, drainage, traffic-review, construction, and green-infrastructure content.; Current R2 storage is 725,638,531 bytes; the original would add 9,161,556 bytes and project storage to 734,800,087 bytes (7.348% of the current 10 GB-month Standard free allowance).; No optimization or derivative is proposed. No R2 upload was performed; explicit authorization is required before production storage changes. |
 | src-a614f077ace20401 | requires human review | 2015 Bikeways and Trails Facilities Plan | The official Planning summary records R-14-142/R-2015-045, repeal of the 1993 and 2000 plans, and adoption of the 2015 plan.; The preserved R2 object is exactly 4,402,773 bytes (4.20 MiB); no live authoritative file was available for checksum comparison.; Blind graph recovery now passes through an embedded historical-file link on page 155 of the official 2024 plan. The linked 2015 City URL currently returns HTTP 404, so the preserved R2 file checksum remains unreconciled. |
 | src-b1565d5b0748d248 | requires human review | Tall Curb Spec Sheet | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-cc22fda2e9f7626e | requires human review | Moon St NE Cycletrack Plans | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |

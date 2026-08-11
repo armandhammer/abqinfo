@@ -12,6 +12,8 @@ Active, funded, programmed, and formally advancing bicycle infrastructure projec
 
   Tracks the separated-lane pilot on Dr. Martin Luther King Jr. Avenue, including project limits, safety purpose, installation approach, evaluation period, frequently asked questions, and relationship to the adopted Bikeway and Trail Facilities Plan.
 
+Questions or comments about this pilot: Valerie Hermanson at DMD, vhermanson@cabq.gov
+
 ## Buena Vista Bike Boulevard
 
 **Location:** Buena Vista Dr SE, from Central Ave SE to Gibson Blvd SE

@@ -7,9 +7,13 @@ Reference drawings, engineering details, and technical guidance related to trans
 
 ## Bernalillo County standards
 
-- [Bernalillo County Technical Standards](https://www.bernco.gov/public-works/development-review/tech-standards)
+- [Current Bernalillo County Technical Standards page](https://www.bernco.gov/public-works/development-review/tech-standards)
 
   Provides the County's maintained development and public-infrastructure standards, standard drawings, drainage and transportation requirements, and technical references used to review and construct improvements in unincorporated Bernalillo County.
+
+- [Complete Bernalillo County Technical Standards — March 28, 2023 (PDF)](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2023/05/Bernalillo-County-Technical-Standards-2023-03-28-FINAL.pdf)
+
+  Contains the County's 226-page March 2023 requirements for development review, transportation networks, road geometry, pedestrian and bicycle facilities, drainage, pavement design, traffic studies, construction, and green stormwater infrastructure.
 
 ## NMDOT Quick Build Guide
 
