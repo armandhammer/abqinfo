@@ -73,6 +73,10 @@ Active roadway projects, near-term implementation work, and project documents.
 
   [Open the live Traffic Barricades Map](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=990365639da44a80a64b140726665a2b).
 
+- [Fiber Installation Barricades Map](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=2c03c15b093a4b1ab7abadd36a123c5a)
+
+  Maps current and future fiber-installation barricade permits by company and status, helping users identify telecommunications work that may affect Albuquerque streets and travel.
+
 - [Construction moratoriums](https://www.cabq.gov/municipaldevelopment/maps/construction-moratoriums)
 
   Lists current event and seasonal construction moratoriums, affected street boundaries, downloadable maps, dates, and the live map used to coordinate safe traffic operations during major Albuquerque events.

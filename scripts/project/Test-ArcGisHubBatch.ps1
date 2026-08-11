@@ -47,11 +47,11 @@ Assert-Batch (-not @($overrideUrls | Where-Object { $_ -notin $reviewedUrls }).C
 
 $statusCounts = [ordered]@{}
 foreach ($group in @($inventoryMatches | Group-Object status | Sort-Object Name)) { $statusCounts[$group.Name] = $group.Count }
-Assert-Batch ($statusCounts['validated'] -eq 15) 'Expected exactly 15 implemented and validated Hub candidates.'
-Assert-Batch ($statusCounts['approved for addition'] -eq 5) 'Expected exactly five deferred approved candidates.'
-Assert-Batch ($statusCounts['duplicate'] -eq 4) 'Expected exactly four duplicate candidates.'
-Assert-Batch ($statusCounts['excluded'] -eq 1) 'Expected exactly one excluded candidate.'
-Assert-Batch ($statusCounts['pending review'] -eq 9) 'Expected exactly nine cataloged but unreviewed candidates.'
+Assert-Batch ($statusCounts['validated'] -eq 20) 'Expected exactly 20 implemented and validated Hub candidates after the follow-up.'
+Assert-Batch ($statusCounts['approved for addition'] -eq 4) 'Expected exactly four deferred approved candidates after the follow-up.'
+Assert-Batch ($statusCounts['duplicate'] -eq 6) 'Expected exactly six duplicate candidates after the follow-up.'
+Assert-Batch ($statusCounts['excluded'] -eq 4) 'Expected exactly four excluded candidates after the follow-up.'
+Assert-Batch (-not $statusCounts.Contains('pending review')) 'Expected no unreviewed DMD Hub catalog candidates after the follow-up.'
 
 $descriptionFailures = @($inventoryMatches | Where-Object {
   $_.status -in @('validated','approved for addition') -and
@@ -120,7 +120,7 @@ $report = [ordered]@{
   generated_at = (Get-Date).ToUniversalTime().ToString('o')
   source_url = $catalog.source_url
   catalog_records = $catalog.catalog_total
-  reviewed_records = $catalog.reviewed_count
+  reviewed_records = $catalog.catalog_total - $(if ($statusCounts.Contains('pending review')) { $statusCounts['pending review'] } else { 0 })
   status_counts = $statusCounts
   descriptions_20_to_50_words = $true
   placement_validation = 'passed'

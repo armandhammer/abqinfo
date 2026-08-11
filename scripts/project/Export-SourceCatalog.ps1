@@ -2,6 +2,7 @@
 param(
   [string]$InventoryPath = 'project-state/master-inventory.json',
   [string]$R2InventoryPath = 'project-state/r2-inventory.json',
+  [string]$SourcePrioritiesPath = 'project-state/source-priorities.json',
   [string]$OutputPath = 'project-state/source-catalog.md'
 )
 
@@ -9,6 +10,7 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
 $r2 = Get-Content -Raw -LiteralPath $R2InventoryPath | ConvertFrom-Json
+$prioritySources = if (Test-Path -LiteralPath $SourcePrioritiesPath) { @((Get-Content -Raw -LiteralPath $SourcePrioritiesPath | ConvertFrom-Json).sources) } else { @() }
 $lines = [Collections.Generic.List[string]]::new()
 $lines.Add('# ABQ Info authoritative source catalog')
 $lines.Add('')
@@ -39,6 +41,16 @@ $lines.Add('| --- | --- | --- | --- |')
 foreach ($candidate in $inventory.candidates | Where-Object { $_.status -eq 'validated' -and -not $_.r2_url -and $_.source_url } | Sort-Object agency,title) {
   $title = ([string]$candidate.title).Replace('|','\|')
   $lines.Add("| $title | $($candidate.agency) | $($candidate.proposed_canonical_page) | [source]($($candidate.source_url)) |")
+}
+$lines.Add('')
+$lines.Add('## Deferred and last-resort sources')
+$lines.Add('')
+$lines.Add('| Source | Agency | Priority | Automatic crawl | Use rule |')
+$lines.Add('| --- | --- | --- | --- | --- |')
+foreach ($source in $prioritySources | Sort-Object priority_tier,name) {
+  $name = ([string]$source.name).Replace('|','\|')
+  $rule = ([string]$source.use_after).Replace('|','\|')
+  $lines.Add("| [$name]($($source.url)) | $($source.agency) | $($source.priority_tier) | $($source.automatic_crawl) | $rule |")
 }
 $lines.Add('')
 $lines.Add('## Exceptions')

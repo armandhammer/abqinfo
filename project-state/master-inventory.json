@@ -1,6 +1,6 @@
 ﻿{
     "schema_version":  1,
-    "generated_at":  "2026-08-10T23:02:14.0255655Z",
+    "generated_at":  "2026-08-11T00:46:12.3597126Z",
     "allowed_statuses":  [
                              "pending review",
                              "approved for addition",
@@ -18,17 +18,17 @@
                              "requires human review"
                          ],
     "counts":  {
-                   "pending review":  3303,
-                   "approved for addition":  7,
+                   "pending review":  3294,
+                   "approved for addition":  6,
                    "downloading":  0,
                    "downloaded":  40,
                    "parsed":  1,
                    "description drafted":  0,
                    "placement assigned":  0,
                    "implemented":  0,
-                   "validated":  151,
-                   "excluded":  90,
-                   "duplicate":  61,
+                   "validated":  156,
+                   "excluded":  93,
+                   "duplicate":  64,
                    "superseded":  5,
                    "blocked":  0,
                    "requires human review":  27
@@ -14968,6 +14968,56 @@
                            "updated_at":  "2026-08-04T14:16:02.59328Z"
                        },
                        {
+                           "id":  "src-00579536b46d85b5",
+                           "status":  "pending review",
+                           "source_url":  "https://onbase.cabq.gov/publicaccess",
+                           "direct_file_url":  null,
+                           "r2_url":  null,
+                           "r2_key":  null,
+                           "r2_etag":  null,
+                           "r2_last_modified":  null,
+                           "agency":  "City of Albuquerque",
+                           "title":  "City of Albuquerque OnBase Public Records Search",
+                           "date":  null,
+                           "file_type":  "Search application",
+                           "size_bytes":  null,
+                           "checksum_sha256":  null,
+                           "proposed_canonical_page":  null,
+                           "description":  null,
+                           "description_word_count":  0,
+                           "processing_notes":  [
+                                                    "User-supplied official source recorded as a last-resort, low-priority search system.",
+                                                    "Use only after higher-priority official pages, document hosts, sitemaps, catalogs, linked sources, and PDF lineage paths are exhausted.",
+                                                    "Limit future searches to GAATC, GARTC, any other demonstrably relevant boards or commissions, and substantive APD reports or plans within ABQInfo scope; do not enumerate unrelated record classes."
+                                                ],
+                           "implementation_location":  null,
+                           "implementation_locations":  [
+
+                                                        ],
+                           "cross_listing_approved":  false,
+                           "validation_status":  "entry point verified 2026-08-10; deferred last-resort source not crawled",
+                           "exclusion_reason":  null,
+                           "local_path":  null,
+                           "discovered_at":  "2026-08-11T00:46:12.3597126Z",
+                           "updated_at":  "2026-08-11T00:46:12.3597126Z",
+                           "parent_url":  null,
+                           "referring_urls":  [
+
+                                               ],
+                           "discovery_path":  [
+                                                  "https://onbase.cabq.gov/publicaccess"
+                                              ],
+                           "discovery_method":  "user-supplied official source",
+                           "crawl_depth":  0,
+                           "cited_predecessors":  [
+
+                                                  ],
+                           "cited_successors":  [
+
+                                                ],
+                           "provenance_status":  "authoritative City public-records search entry point verified"
+                       },
+                       {
                            "id":  "src-005af4d0a7c9c760",
                            "status":  "pending review",
                            "source_url":  "https://www.cabq.gov/parksandrecreation/documents/copy_of_indianschool.pdf",
@@ -15334,7 +15384,7 @@
                        },
                        {
                            "id":  "src-00b4e4cf87f6ddb7",
-                           "status":  "approved for addition",
+                           "status":  "validated",
                            "source_url":  "https://www.arcgis.com/apps/dashboards/463b940adf4441aa85e4910a29d5164a",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -15376,16 +15426,16 @@
                                                     "ArcGIS item ID 463b940adf4441aa85e4910a29d5164a; owner hstettler_CABQ; organization CWv1abTnC3urn4bV.",
                                                     "Created 2024-08-22T19:29:32.0000000Z; modified 2026-06-18T21:54:52.0000000Z."
                                                 ],
-                           "implementation_location":  null,
+                           "implementation_location":  "content/maps/dashboards.md",
                            "implementation_locations":  [
-
+                                                            "content/maps/dashboards.md"
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "metadata reviewed 2026-08-10; deferred by 15-item implementation cap",
+                           "validation_status":  "passed: live endpoint HTTP 200; description and canonical placement validated 2026-08-10",
                            "exclusion_reason":  null,
                            "local_path":  null,
                            "discovered_at":  "2026-08-10T21:28:51.5411986Z",
-                           "updated_at":  "2026-08-10T21:28:51.5411986Z"
+                           "updated_at":  "2026-08-11T00:46:12.3597126Z"
                        },
                        {
                            "id":  "src-00cc051ac3b6d0c7",
@@ -37559,7 +37609,7 @@
                        },
                        {
                            "id":  "src-22218b70f20f0a1d",
-                           "status":  "pending review",
+                           "status":  "approved for addition",
                            "source_url":  "https://experience.arcgis.com/experience/8f3eae4dec3d4bea88aa65da32584e90",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -37592,26 +37642,27 @@
 
                                                 ],
                            "provenance_status":  "CABQ-owned ArcGIS item recovered through the official DMD Hub catalog",
-                           "proposed_canonical_page":  null,
-                           "description":  null,
-                           "description_word_count":  0,
+                           "proposed_canonical_page":  "content/maps/maps.md",
+                           "description":  "Locates City-maintained survey monuments across Albuquerque and provides monument details for survey, engineering, construction, mapping, public-infrastructure, and property research needs.",
+                           "description_word_count":  20,
                            "processing_notes":  [
                                                     "Discovered by deterministic crawl of https://dmd-public-cabq.hub.arcgis.com/.",
                                                     "Exact metadata and relevance remain pending source review.",
                                                     "ArcGIS item ID 8f3eae4dec3d4bea88aa65da32584e90; owner jfoty_CABQ; organization CWv1abTnC3urn4bV.",
                                                     "Created 2024-10-08T14:15:10.0000000Z; modified 2026-04-22T05:22:33.0000000Z.",
-                                                    "Cataloged but not substantively reviewed in this bounded 25-item batch."
+                                                    "Cataloged but not substantively reviewed in this bounded 25-item batch.",
+                                                    "Reviewed 2026-08-10 and approved for a later maps batch; the ArcGIS item size is application metadata, not an individual downloadable file."
                                                 ],
                            "implementation_location":  null,
                            "implementation_locations":  [
 
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "not run",
+                           "validation_status":  "metadata and relevance reviewed 2026-08-10; deferred by five-item implementation cap",
                            "exclusion_reason":  null,
                            "local_path":  null,
                            "discovered_at":  "2026-08-10T21:28:51.5469927Z",
-                           "updated_at":  "2026-08-10T21:28:51.5469927Z"
+                           "updated_at":  "2026-08-11T00:46:12.3597126Z"
                        },
                        {
                            "id":  "src-222f76b6ba5f337e",
@@ -38561,7 +38612,7 @@
                        },
                        {
                            "id":  "src-23e1664dc8fed269",
-                           "status":  "pending review",
+                           "status":  "excluded",
                            "source_url":  "https://cabq.maps.arcgis.com/apps/instant/nearby/index.html?appid=714c2ac2c61a40839d4fd81e347d779f",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -38609,11 +38660,11 @@
 
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "not run",
-                           "exclusion_reason":  null,
+                           "validation_status":  "editorial and current ArcGIS metadata review completed 2026-08-10",
+                           "exclusion_reason":  "Public restroom location is a useful municipal service but falls outside ABQInfo's planning, infrastructure-policy, project, map-archive, and document-discovery focus.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-10T21:28:51.546235Z",
-                           "updated_at":  "2026-08-10T21:28:51.546235Z"
+                           "updated_at":  "2026-08-11T00:46:12.3597126Z"
                        },
                        {
                            "id":  "src-23fa2f583ea11e2e",
@@ -54604,7 +54655,7 @@
                        },
                        {
                            "id":  "src-3b5cd74d1d923ca6",
-                           "status":  "pending review",
+                           "status":  "excluded",
                            "source_url":  "https://tiles.arcgis.com/tiles/P3ePLMYs2RVChkJx/arcgis/rest/services/World_Basemap_v2/VectorTileServer",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -54652,11 +54703,11 @@
 
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "not run",
-                           "exclusion_reason":  null,
+                           "validation_status":  "editorial and current ArcGIS metadata review completed 2026-08-10",
+                           "exclusion_reason":  "Generic Esri world-basemap service is not Albuquerque-specific and its publisher states that it is not intended for stand-alone use; the 58,246,140,678-byte value is hosted-service storage, not a candidate file.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-10T21:28:51.5495388Z",
-                           "updated_at":  "2026-08-10T21:28:51.5495388Z"
+                           "updated_at":  "2026-08-11T00:46:12.3597126Z"
                        },
                        {
                            "id":  "src-3b6e75b33033047f",
@@ -58972,35 +59023,37 @@
                        },
                        {
                            "id":  "src-40cfc5da0dbddcff",
-                           "status":  "pending review",
+                           "status":  "duplicate",
                            "source_url":  "https://dmd-public-cabq.hub.arcgis.com",
                            "direct_file_url":  null,
                            "r2_url":  null,
                            "r2_key":  null,
                            "r2_etag":  null,
                            "r2_last_modified":  null,
-                           "agency":  "Other authoritative source",
+                           "agency":  "City of Albuquerque",
                            "title":  "Visit Hub Site",
                            "date":  null,
                            "file_type":  "ArcGIS service",
                            "size_bytes":  null,
                            "checksum_sha256":  null,
-                           "parent_url":  null,
+                           "parent_url":  "https://www.cabq.gov/municipaldevelopment/",
                            "referring_urls":  [
-
+                                                   "https://www.cabq.gov/municipaldevelopment/"
                                               ],
                            "discovery_path":  [
-
+                                                  "https://www.cabq.gov/municipaldevelopment/maps",
+                                                  "https://www.cabq.gov/municipaldevelopment/",
+                                                  "https://dmd-public-cabq.hub.arcgis.com/"
                                               ],
-                           "discovery_method":  null,
-                           "crawl_depth":  null,
+                           "discovery_method":  "authoritative City outbound link",
+                           "crawl_depth":  2,
                            "cited_predecessors":  [
 
                                                   ],
                            "cited_successors":  [
 
                                                 ],
-                           "provenance_status":  "source URL recorded",
+                           "provenance_status":  "official DMD Hub recovered from the City Municipal Development landing page",
                            "proposed_canonical_page":  null,
                            "description":  null,
                            "description_word_count":  0,
@@ -59014,11 +59067,11 @@
 
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "not run",
-                           "exclusion_reason":  null,
+                           "validation_status":  "source provenance reconciled 2026-08-10",
+                           "exclusion_reason":  "Generic Hub landing-page record duplicates the 34 individually inventoried DMD catalog items and is retained as discovery provenance rather than public site content.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-10T21:28:51.1697795Z",
-                           "updated_at":  "2026-08-10T21:28:51.1697795Z"
+                           "updated_at":  "2026-08-11T00:46:12.3597126Z"
                        },
                        {
                            "id":  "src-40d4239b82ca0b0b",
@@ -62276,7 +62329,7 @@
                        },
                        {
                            "id":  "src-46cb08fc8e5a1ad4",
-                           "status":  "pending review",
+                           "status":  "approved for addition",
                            "source_url":  "https://www.arcgis.com/home/item.html?id=47889b7150894b1c92a45ea3c1ffe3bd",
                            "direct_file_url":  "https://www.arcgis.com/sharing/rest/content/items/47889b7150894b1c92a45ea3c1ffe3bd/data",
                            "r2_url":  null,
@@ -62285,7 +62338,7 @@
                            "r2_last_modified":  null,
                            "agency":  "City of Albuquerque",
                            "title":  "Council District Poster Map",
-                           "date":  null,
+                           "date":  "2026-01",
                            "file_type":  "PDF",
                            "size_bytes":  16586301,
                            "checksum_sha256":  null,
@@ -62309,26 +62362,27 @@
 
                                                 ],
                            "provenance_status":  "CABQ-owned ArcGIS item recovered through the official DMD Hub catalog",
-                           "proposed_canonical_page":  null,
-                           "description":  null,
-                           "description_word_count":  0,
+                           "proposed_canonical_page":  "content/maps/maps.md",
+                           "description":  "Provides the City's January 2026 printable council-district map with district boundaries and councilor photographs, offering a dated civic-reference snapshot for preservation alongside the live council map.",
+                           "description_word_count":  26,
                            "processing_notes":  [
                                                     "Discovered by deterministic crawl of https://dmd-public-cabq.hub.arcgis.com/.",
                                                     "Exact metadata and relevance remain pending source review.",
                                                     "ArcGIS item ID 47889b7150894b1c92a45ea3c1ffe3bd; owner dmdgis; organization CWv1abTnC3urn4bV.",
                                                     "Created 2026-01-09T20:32:47.0000000Z; modified 2026-02-04T00:40:20.0000000Z.",
-                                                    "Cataloged but not substantively reviewed in this bounded 25-item batch."
+                                                    "Cataloged but not substantively reviewed in this bounded 25-item batch.",
+                                                    "Authoritative PDF is exactly 16,586,301 bytes (15.82 MiB), below the 100 MB concern threshold; no download or R2 upload was performed."
                                                 ],
                            "implementation_location":  null,
                            "implementation_locations":  [
 
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "not run",
+                           "validation_status":  "metadata and relevance reviewed 2026-08-10; archival and implementation review pending",
                            "exclusion_reason":  null,
                            "local_path":  null,
                            "discovered_at":  "2026-08-10T21:28:51.5513092Z",
-                           "updated_at":  "2026-08-10T21:28:51.5513092Z"
+                           "updated_at":  "2026-08-11T00:46:12.3597126Z"
                        },
                        {
                            "id":  "src-46f3f636387ead8f",
@@ -75210,7 +75264,7 @@
                        },
                        {
                            "id":  "src-5964b940e185bd7a",
-                           "status":  "pending review",
+                           "status":  "duplicate",
                            "source_url":  "https://services.arcgis.com/CWv1abTnC3urn4bV/arcgis/rest/services/Public_Restroom_Locator/FeatureServer",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -75258,11 +75312,11 @@
 
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "not run",
-                           "exclusion_reason":  null,
+                           "validation_status":  "editorial and current ArcGIS metadata review completed 2026-08-10",
+                           "exclusion_reason":  "Underlying feature service duplicates the Public Restroom Finder application, which is outside ABQInfo's selected scope; retain only as catalog provenance.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-10T21:28:51.5453999Z",
-                           "updated_at":  "2026-08-10T21:28:51.5453999Z"
+                           "updated_at":  "2026-08-11T00:46:12.3597126Z"
                        },
                        {
                            "id":  "src-597f477de828a48b",
@@ -83045,7 +83099,7 @@
                        },
                        {
                            "id":  "src-64110fb866fec2ae",
-                           "status":  "approved for addition",
+                           "status":  "validated",
                            "source_url":  "https://cabq.maps.arcgis.com/apps/instant/sidebar/index.html?appid=59b8aa64659848a0a64e8cd37f73f31c",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -83087,16 +83141,16 @@
                                                     "ArcGIS item ID 59b8aa64659848a0a64e8cd37f73f31c; owner jfoty_CABQ; organization CWv1abTnC3urn4bV.",
                                                     "Created 2024-10-25T21:04:08.0000000Z; modified 2026-01-14T15:41:09.0000000Z."
                                                 ],
-                           "implementation_location":  null,
+                           "implementation_location":  "content/transportation/operations-data.md",
                            "implementation_locations":  [
-
+                                                            "content/transportation/operations-data.md"
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "metadata reviewed 2026-08-10; deferred by 15-item implementation cap",
+                           "validation_status":  "passed: live endpoint HTTP 200; description and canonical placement validated 2026-08-10",
                            "exclusion_reason":  null,
                            "local_path":  null,
                            "discovered_at":  "2026-08-10T21:28:51.5347101Z",
-                           "updated_at":  "2026-08-10T21:28:51.5347101Z"
+                           "updated_at":  "2026-08-11T00:46:12.3597126Z"
                        },
                        {
                            "id":  "src-6412513846888abf",
@@ -84401,7 +84455,7 @@
                        },
                        {
                            "id":  "src-658a1f0ede046651",
-                           "status":  "approved for addition",
+                           "status":  "validated",
                            "source_url":  "https://dmdmaps.cabq.gov/serverext/rest/services/traffic/CABQ_Roads_Data/MapServer/3",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -84443,16 +84497,16 @@
                                                     "ArcGIS item ID 5c2dff3bfdcc43078db1e6c464f5cbf5; owner jfoty_CABQ; organization CWv1abTnC3urn4bV.",
                                                     "Created 2024-09-06T00:57:37.0000000Z; modified 2025-07-31T21:12:30.0000000Z."
                                                 ],
-                           "implementation_location":  null,
+                           "implementation_location":  "content/transportation/operations-data.md",
                            "implementation_locations":  [
-
+                                                            "content/transportation/operations-data.md"
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "metadata reviewed 2026-08-10; deferred by 15-item implementation cap",
+                           "validation_status":  "passed: live endpoint HTTP 200; description and canonical placement validated 2026-08-10",
                            "exclusion_reason":  null,
                            "local_path":  null,
                            "discovered_at":  "2026-08-10T21:28:51.5368581Z",
-                           "updated_at":  "2026-08-10T21:28:51.5368581Z"
+                           "updated_at":  "2026-08-11T00:46:12.3597126Z"
                        },
                        {
                            "id":  "src-659b74971412713c",
@@ -88154,7 +88208,7 @@
                        },
                        {
                            "id":  "src-6a81c3bbae8aff0b",
-                           "status":  "pending review",
+                           "status":  "approved for addition",
                            "source_url":  "https://services.arcgis.com/CWv1abTnC3urn4bV/arcgis/rest/services/Survey_Monument_Maintenance_Public/FeatureServer",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -88187,26 +88241,27 @@
 
                                                 ],
                            "provenance_status":  "CABQ-owned ArcGIS item recovered through the official DMD Hub catalog",
-                           "proposed_canonical_page":  null,
-                           "description":  null,
-                           "description_word_count":  0,
+                           "proposed_canonical_page":  "content/maps/maps.md",
+                           "description":  "Publishes City-maintained survey-monument locations across Bernalillo County as a public feature service, supporting GIS access and technical analysis beyond the companion search application.",
+                           "description_word_count":  23,
                            "processing_notes":  [
                                                     "Discovered by deterministic crawl of https://dmd-public-cabq.hub.arcgis.com/.",
                                                     "Exact metadata and relevance remain pending source review.",
                                                     "ArcGIS item ID f635c4103d13426898c04ccc9f9e55dc; owner christopherstarcevich_cabq; organization CWv1abTnC3urn4bV.",
                                                     "Created 2025-06-03T16:29:33.0000000Z; modified 2025-06-03T16:30:07.0000000Z.",
-                                                    "Cataloged but not substantively reviewed in this bounded 25-item batch."
+                                                    "Cataloged but not substantively reviewed in this bounded 25-item batch.",
+                                                    "Reviewed 2026-08-10 and approved as the data-service companion to Survey Monument Search; ArcGIS reports zero item-storage bytes, not a downloadable-file size."
                                                 ],
                            "implementation_location":  null,
                            "implementation_locations":  [
 
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "not run",
+                           "validation_status":  "metadata and relevance reviewed 2026-08-10; deferred by five-item implementation cap",
                            "exclusion_reason":  null,
                            "local_path":  null,
                            "discovered_at":  "2026-08-10T21:28:51.5478251Z",
-                           "updated_at":  "2026-08-10T21:28:51.5478251Z"
+                           "updated_at":  "2026-08-11T00:46:12.3597126Z"
                        },
                        {
                            "id":  "src-6aac91ed022c6b4f",
@@ -103382,7 +103437,7 @@
                        },
                        {
                            "id":  "src-80ed3bf1a12ab292",
-                           "status":  "approved for addition",
+                           "status":  "validated",
                            "source_url":  "https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=69a932663bf84beaa81d6268c327f24b",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -103424,16 +103479,16 @@
                                                     "ArcGIS item ID 69a932663bf84beaa81d6268c327f24b; owner hstettler_CABQ; organization CWv1abTnC3urn4bV.",
                                                     "Created 2023-05-31T15:49:29.0000000Z; modified 2026-02-20T21:59:56.0000000Z."
                                                 ],
-                           "implementation_location":  null,
+                           "implementation_location":  "content/maps/maps.md",
                            "implementation_locations":  [
-
+                                                            "content/maps/maps.md"
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "metadata reviewed 2026-08-10; deferred by 15-item implementation cap",
+                           "validation_status":  "passed: live endpoint HTTP 200; description and canonical placement validated 2026-08-10",
                            "exclusion_reason":  null,
                            "local_path":  null,
                            "discovered_at":  "2026-08-10T21:28:51.5337248Z",
-                           "updated_at":  "2026-08-10T21:28:51.5337248Z"
+                           "updated_at":  "2026-08-11T00:46:12.3597126Z"
                        },
                        {
                            "id":  "src-80ee860e3cfa60bf",
@@ -147476,7 +147531,7 @@
                        },
                        {
                            "id":  "src-bf3eade8dd78723c",
-                           "status":  "pending review",
+                           "status":  "excluded",
                            "source_url":  "https://www.arcgis.com/home/item.html?id=e1acb0ee796d403997e6ec20770aad52",
                            "direct_file_url":  "https://www.arcgis.com/sharing/rest/content/items/e1acb0ee796d403997e6ec20770aad52/data",
                            "r2_url":  null,
@@ -147524,11 +147579,11 @@
 
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "not run",
-                           "exclusion_reason":  null,
+                           "validation_status":  "editorial and current ArcGIS metadata review completed 2026-08-10",
+                           "exclusion_reason":  "Internal-style map-request information sheet does not contain a substantive public map, plan, dataset, project record, or other durable ABQInfo content.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-10T21:28:51.5524189Z",
-                           "updated_at":  "2026-08-10T21:28:51.5524189Z"
+                           "updated_at":  "2026-08-11T00:46:12.3597126Z"
                        },
                        {
                            "id":  "src-bf42f1039654e6c4",
@@ -151935,7 +151990,7 @@
                        },
                        {
                            "id":  "src-c62f0544fc2c1877",
-                           "status":  "pending review",
+                           "status":  "approved for addition",
                            "source_url":  "https://www.arcgis.com/home/item.html?id=5d5dabf6aba949d9b55bf65547eb76c8",
                            "direct_file_url":  "https://www.arcgis.com/sharing/rest/content/items/5d5dabf6aba949d9b55bf65547eb76c8/data",
                            "r2_url":  null,
@@ -151968,26 +152023,27 @@
 
                                                 ],
                            "provenance_status":  "CABQ-owned ArcGIS item recovered through the official DMD Hub catalog",
-                           "proposed_canonical_page":  null,
-                           "description":  null,
-                           "description_word_count":  0,
+                           "proposed_canonical_page":  "content/transportation/roadway-projects/speed-management.md",
+                           "description":  "Illustrates the City's current Neighborhood Traffic Management Program request process from submission through screening, evaluation, prioritization, and project delivery, clarifying how neighborhood traffic-calming requests advance.",
+                           "description_word_count":  25,
                            "processing_notes":  [
                                                     "Discovered by deterministic crawl of https://dmd-public-cabq.hub.arcgis.com/.",
                                                     "Exact metadata and relevance remain pending source review.",
                                                     "ArcGIS item ID 5d5dabf6aba949d9b55bf65547eb76c8; owner hstettler_CABQ; organization CWv1abTnC3urn4bV.",
                                                     "Created 2025-09-12T15:37:14.0000000Z; modified 2026-02-04T16:24:59.0000000Z.",
-                                                    "Cataloged but not substantively reviewed in this bounded 25-item batch."
+                                                    "Cataloged but not substantively reviewed in this bounded 25-item batch.",
+                                                    "Authoritative image is exactly 1,448,898 bytes (1.38 MiB), below the 100 MB concern threshold; no download or R2 upload was performed."
                                                 ],
                            "implementation_location":  null,
                            "implementation_locations":  [
 
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "not run",
+                           "validation_status":  "metadata and relevance reviewed 2026-08-10; archival and implementation review pending",
                            "exclusion_reason":  null,
                            "local_path":  null,
                            "discovered_at":  "2026-08-10T21:28:51.5503616Z",
-                           "updated_at":  "2026-08-10T21:28:51.5503616Z"
+                           "updated_at":  "2026-08-11T00:46:12.3597126Z"
                        },
                        {
                            "id":  "src-c647c93bd8561491",
@@ -159817,7 +159873,7 @@
                        },
                        {
                            "id":  "src-d0e2cb6199c14ee2",
-                           "status":  "pending review",
+                           "status":  "duplicate",
                            "source_url":  "https://services.arcgis.com/CWv1abTnC3urn4bV/arcgis/rest/services/Current_City_Limits/FeatureServer",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -159865,11 +159921,11 @@
 
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "not run",
-                           "exclusion_reason":  null,
+                           "validation_status":  "editorial and current ArcGIS metadata review completed 2026-08-10",
+                           "exclusion_reason":  "Generic boundary service duplicates the broader City maps library already retained on ABQInfo and adds no distinct planning explanation or public-facing application.",
                            "local_path":  null,
                            "discovered_at":  "2026-08-10T21:28:51.5486982Z",
-                           "updated_at":  "2026-08-10T21:28:51.5486982Z"
+                           "updated_at":  "2026-08-11T00:46:12.3597126Z"
                        },
                        {
                            "id":  "src-d0ebda4d0aec5782",
@@ -160128,7 +160184,7 @@
                        },
                        {
                            "id":  "src-d12ba7a2f591f7c7",
-                           "status":  "approved for addition",
+                           "status":  "validated",
                            "source_url":  "https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=2c03c15b093a4b1ab7abadd36a123c5a",
                            "direct_file_url":  null,
                            "r2_url":  null,
@@ -160170,16 +160226,16 @@
                                                     "ArcGIS item ID 2c03c15b093a4b1ab7abadd36a123c5a; owner jfoty_CABQ; organization CWv1abTnC3urn4bV.",
                                                     "Created 2024-08-22T19:08:15.0000000Z; modified 2025-09-26T22:56:55.0000000Z."
                                                 ],
-                           "implementation_location":  null,
+                           "implementation_location":  "content/transportation/roadway-projects/current.md",
                            "implementation_locations":  [
-
+                                                            "content/transportation/roadway-projects/current.md"
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "metadata reviewed 2026-08-10; deferred by 15-item implementation cap",
+                           "validation_status":  "passed: live endpoint HTTP 200; description and canonical placement validated 2026-08-10",
                            "exclusion_reason":  null,
                            "local_path":  null,
                            "discovered_at":  "2026-08-10T21:28:51.5428084Z",
-                           "updated_at":  "2026-08-10T21:28:51.5428084Z"
+                           "updated_at":  "2026-08-11T00:46:12.3597126Z"
                        },
                        {
                            "id":  "src-d136988f67d3e648",

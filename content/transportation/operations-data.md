@@ -10,6 +10,14 @@ Regional roadway operations, traffic analysis, incident management, and intellig
 
   Identifies whether Albuquerque-area public streets are maintained by the City, Bernalillo County, NMDOT, or another entity, with address search and jurisdiction boundaries.
 
+- [Interstate Maintenance Responsibilities](https://cabq.maps.arcgis.com/apps/instant/sidebar/index.html?appid=59b8aa64659848a0a64e8cd37f73f31c)
+
+  Maps litter, debris, and landscape-maintenance responsibilities along Albuquerque interstates and freeways, helping users distinguish City, NMDOT, and other operational roles.
+
+- [City street speed-limit data](https://dmdmaps.cabq.gov/serverext/rest/services/traffic/CABQ_Roads_Data/MapServer/3)
+
+  Publishes Albuquerque street speed-limit data as a live GIS service derived from OpenStreetMap, supporting mapping and analysis while requiring users to consider the source's stated limitations.
+
 - [Street Maintenance Projects Viewer](https://experience.arcgis.com/experience/f57852d3820348099352cd74e5db72bf)
 
   Maps City street-maintenance projects and their locations, providing a direct geographic view of active and recent resurfacing or maintenance work managed by Municipal Development.

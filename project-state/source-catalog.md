@@ -1,24 +1,24 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-10T21:41:35.1104051Z
+Generated: 2026-08-11T00:59:24.2046649Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 3683 candidates and 61 R2 objects totaling 725638531 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 3686 candidates and 61 R2 objects totaling 725638531 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 3303 |
-| approved for addition | 5 |
+| pending review | 3294 |
+| approved for addition | 6 |
 | downloading | 0 |
 | downloaded | 40 |
 | parsed | 1 |
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 0 |
-| validated | 151 |
-| excluded | 90 |
-| duplicate | 61 |
+| validated | 156 |
+| excluded | 93 |
+| duplicate | 64 |
 | superseded | 5 |
 | blocked | 0 |
 | requires human review | 27 |
@@ -32,7 +32,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | 2025 General Obligation Bond Approved Program Book | City of Albuquerque | 2025 | 59340691 | content/city-data/capital-spending.md | [source](https://www.cabq.gov/municipaldevelopment/programs/2025-g-o-bond-program) | [R2](https://files.abqinfo.com/city-data/capital-spending/cabq-2025-go-bond-approved-program-book.pdf) |
 | City of Albuquerque 2023-2027 Consolidated Plan and 2023 Action Plan | City of Albuquerque | 2023-2027 | 20352710 | content/housing/affordable-housing.md | [source](https://www.cabq.gov/health-housing-homelessness/transparency/consolidated-plans-and-amendments) | [R2](https://files.abqinfo.com/housing/affordable-housing/cabq-2023-2027-consolidated-plan-and-2023-action-plan.pdf) |
 | City of Albuquerque Approved Budget, Fiscal Year 2027 | City of Albuquerque | FY 2027 | 22776293 | content/city-data/budget-spending.md | [source](https://www.cabq.gov/dfa/budget/annual-budget) | [R2](https://files.abqinfo.com/city-data/budget-spending/cabq-fy2027-approved-budget.pdf) |
-| Integrated Development Ordinance â€” effective May 6, 2026 | City of Albuquerque | 2026-05-06 | 23832206 | content/housing/zoning-ido.md | [source](https://www.cabq.gov/planning/codes-policies-regulations/integrated-development-ordinance-1/integrated-development-ordinance) | [R2](https://files.abqinfo.com/housing/zoning-ido/cabq-ido-effective-2026-05-06.pdf) |
+| Integrated Development Ordinance Ã¢â‚¬â€ effective May 6, 2026 | City of Albuquerque | 2026-05-06 | 23832206 | content/housing/zoning-ido.md | [source](https://www.cabq.gov/planning/codes-policies-regulations/integrated-development-ordinance-1/integrated-development-ordinance) | [R2](https://files.abqinfo.com/housing/zoning-ido/cabq-ido-effective-2026-05-06.pdf) |
 | ABC Comprehensive Plan, Chapter 10: Parks & Open Space (2025 Update) | City of Albuquerque / Bernalillo County | 2025 | 27179821 | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan) | [R2](https://files.abqinfo.com/public-works/parks-recreation/abc-comprehensive-plan-chapter-10-parks-open-space-2025.pdf) |
 | ABC Comprehensive Plan, Chapter 6: Transportation (2025 Update) | City of Albuquerque / Bernalillo County | 2025 | 20598377 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan) | [R2](https://files.abqinfo.com/transportation/transportation-plans/abc-comprehensive-plan-chapter-6-transportation-2025.pdf) |
 | ABC Comprehensive Plan, Chapter 9: Housing (2025 Update) | City of Albuquerque / Bernalillo County | 2025 | 10531432 | content/housing/affordable-housing.md | [source](https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan) | [R2](https://files.abqinfo.com/housing/affordable-housing/abc-comprehensive-plan-chapter-9-housing-2025.pdf) |
@@ -90,6 +90,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Bikeways and Trails Public Map Viewer | City of Albuquerque | content/transportation/bicycling/bike-maps.md | [source](https://cabq.maps.arcgis.com/apps/instant/sidebar/index.html?appid=bfda88ddb89a40c08440b4abd4c182ba) |
 | Building permits open data | City of Albuquerque | content/housing/housing-pipeline.md | [source](https://data.cabq.gov/business/buildingpermits/) |
 | Central Avenue Complete Street Plan: 1st Street to Girard | City of Albuquerque | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/neighborhood-projects/central-avenue-complete-street-plan-1st-street-to-girard) |
+| City Drainage Ponds | City of Albuquerque | content/maps/maps.md | [source](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=69a932663bf84beaa81d6268c327f24b) |
 | City IDO page | City of Albuquerque | content/housing/zoning-ido.md | [source](https://www.cabq.gov/planning/codes-policies-regulations/integrated-development-ordinance-1/integrated-development-ordinance) |
 | City of Albuquerque School Crossings Dashboard | City of Albuquerque | content/maps/dashboards.md | [source](https://www.arcgis.com/apps/dashboards/4a52905fd707412085ce9811ad48dd25) |
 | City Open Space planning projects and resource-management plans | City of Albuquerque | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/parksandrecreation/open-space/about-open-space/open-space-resource-management-plans) |
@@ -101,12 +102,16 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Current Bikeways and Trails Data | City of Albuquerque | content/transportation/bicycling/bike-maps.md | [source](https://dmdmaps.cabq.gov/serverext/rest/services/Bikeways/Bikeways_Trails_Public/MapServer/23) |
 | DMD 2025 Project Highlights | City of Albuquerque | content/public-works/capital-projects.md | [source](https://experience.arcgis.com/experience/4b0b1b38bb47411691652499bf2f25cf) |
 | DMD Active Projects Viewer | City of Albuquerque | content/public-works/capital-projects.md | [source](https://experience.arcgis.com/experience/0e6f49ae7959446784e397253fd81165) |
+| DMD by the Numbers | City of Albuquerque | content/maps/dashboards.md | [source](https://www.arcgis.com/apps/dashboards/463b940adf4441aa85e4910a29d5164a) |
+| DMD Roads Speed Limits Data | City of Albuquerque | content/transportation/operations-data.md | [source](https://dmdmaps.cabq.gov/serverext/rest/services/traffic/CABQ_Roads_Data/MapServer/3) |
 | Downtown Walkability Analysis | City of Albuquerque | content/transportation/transportation-plans.md | [source](https://documents.cabq.gov/planning/development-process-manual/XSections/Downtown_Walkability_Analysis-2014.pdf) |
 | Dr. Martin Luther King Jr. Ave Separated Bicycle Lane Pilot Project - Coming soon! | City of Albuquerque | content/transportation/bicycling/projects/current.md | [source](https://www.cabq.gov/municipaldevelopment/featured-projects/dr-martin-luther-king-jr-blvd-separated-bicycle-lane-pilot-project) |
 | Existing & Proposed Bikeway Network | City of Albuquerque | content/transportation/bicycling/bike-plans.md | [source](https://storymaps.arcgis.com/stories/cbf571a80aef4738a8dbe89036c57a48) |
 | Featured Projects & Improvements | City of Albuquerque | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/parksandrecreation/featured-projects) |
+| Fiber Installation Barricades Map | City of Albuquerque | content/transportation/roadway-projects/current.md | [source](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=2c03c15b093a4b1ab7abadd36a123c5a) |
 | Girard Boulevard Complete Streets Master Plan | City of Albuquerque | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/neighborhood-projects/girard-boulevard-complete-streets-master-plan) |
 | Information about Public Improvement Districts in Albuquerque. Public Improvement Districts Information about Public Improvement Districts in Albuquerque. | City of Albuquerque | content/housing/development-process.md | [source](https://www.cabq.gov/council/public-improvement-districts) |
+| Interstate Maintenance Responsibilities | City of Albuquerque | content/transportation/operations-data.md | [source](https://cabq.maps.arcgis.com/apps/instant/sidebar/index.html?appid=59b8aa64659848a0a64e8cd37f73f31c) |
 | Laurelwood Median Rehabilitation and Parkway Landscape Project | City of Albuquerque | content/transportation/roadway-projects/current.md | [source](https://www.cabq.gov/council/find-your-councilor/district-1/district-1-projects/laurelwood-median-rehabilitation-project) |
 | Municipal Development featured projects | City of Albuquerque | content/public-works/capital-projects.md | [source](https://www.cabq.gov/municipaldevelopment/featured-projects) |
 | neighborhood traffic management program | City of Albuquerque | content/transportation/roadway-projects/speed-management.md | [source](https://www.cabq.gov/neighborhood-traffic-management-program) |
@@ -153,7 +158,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Rail Runner schedules | MRCOG | content/transportation/transit/rail-runner.md | [source](https://www.riometro.org/170/Rail-Runner-Train-Schedules) |
 | Road Diet Candidates Map | MRCOG | content/transportation/roadway-projects/studies.md | [source](https://www.mrcog-nm.gov/569/Road-Diet-Candidates-Map) |
 | Traffic Monitoring | MRCOG | content/maps/dashboards.md | [source](https://www.mrcog-nm.gov/285/Traffic-Monitoring) |
-| Transiciones 2045 Plan Metropolitano de Transporte Resumen Ejecutivo (MTP Executive Summary – Spanish version) | MRCOG | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/DocumentCenter/View/6633/MRMPO-Transitions-2045-MTP---Executive-Summary-Espanol-PDF) |
+| Transiciones 2045 Plan Metropolitano de Transporte Resumen Ejecutivo (MTP Executive Summary â€“ Spanish version) | MRCOG | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/DocumentCenter/View/6633/MRMPO-Transitions-2045-MTP---Executive-Summary-Espanol-PDF) |
 | Transitions 2045 MTP Executive Summary | MRCOG | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/DocumentCenter/View/6579/MRMPO-Transitions-2045-MTP---Executive-Summary-04-16-25) |
 | Transitions 2045 MTP Public Outreach | MRCOG | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/503/Transitions-2045-MTP-Public-Outreach) |
 | Transportation Analysis and Querying Application | MRCOG | content/maps/dashboards.md | [source](https://www.mrcog-nm.gov/574/Transportation-Analysis-and-Querying-App) |
@@ -184,6 +189,12 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Unser and Paseo project website | Other authoritative source | content/transportation/roadway-projects/current.md | [source](https://upgradeunserpaseo.com/) |
 | Walk Safe New Mexico: Pedestrian Safety Action Plan | Other authoritative source | content/transportation/bicycling/safety-crash-data.md | [source](https://storymaps.arcgis.com/stories/05d03cff46b14768979410bb069a5116) |
 
+## Deferred and last-resort sources
+
+| Source | Agency | Priority | Automatic crawl | Use rule |
+| --- | --- | --- | --- | --- |
+| [City of Albuquerque OnBase Public Records Search](https://onbase.cabq.gov/publicaccess/) | City of Albuquerque | last resort | False | Exhaust relevant City, Bernalillo County, MRCOG/MRMPO, and NMDOT pages, document hosts, sitemaps, catalogs, linked sources, and PDF lineage paths. |
+
 ## Exceptions
 
 | ID | Status | Title | Reason |
@@ -202,12 +213,14 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-302eeb9a704644f3 | duplicate | Transitions 2045 MTP Appendices | Duplicate discovery record for implemented candidate src-9f98b2dbdfc9d974. |
 | src-34f5e43d0fd0f2d0 | duplicate | ABC Comprehensive Plan | Duplicate discovery record for implemented candidate src-8832a87573fd5ed6. |
 | src-3d676705b6616cf4 | duplicate | src-7f51da342c00a840 | Duplicate discovery record for implemented candidate src-31c4d4eff2bc1b5a. |
+| src-40cfc5da0dbddcff | duplicate | Visit Hub Site | Generic Hub landing-page record duplicates the 34 individually inventoried DMD catalog items and is retained as discovery provenance rather than public site content. |
 | src-42d0b92e1b1b1c18 | duplicate | Buena Vista Bike Boulevard 60% Plans (legacy R2 key) | Exact duplicate of the implemented Buena Vista plan: identical 47,823,090-byte size and R2 ETag 318576c3cafe8b5449d8c8f5fd2ae6a2. Retained in storage because deletion was not authorized. |
 | src-4338e5bbd0985b75 | duplicate | official-2000-comprehensive-on-street-bicycle-plan | Duplicate discovery record for implemented candidate src-0f60535452ac9154. |
 | src-4b6648bb12c8809a | duplicate | transportation planning | Broad County transportation-planning landing page duplicates the retained Transportation Plans, Complete Streets, Project Planning, and Traffic Impact Analysis sources. |
 | src-4dbb0390d53edf19 | duplicate | Open Space Trails - Public | Backing Open Space trail layer duplicates the retained City Open Space maps and broader public bikeways-and-trails viewer without adding a distinct public-facing tool. |
 | src-4f9925e4698c3223 | duplicate | ABC Comprehensive Plan, Chapter 9: Housing (2025 Update) | Duplicate discovery record for implemented candidate src-5833586f28079104. |
 | src-5493cb1d487d09db | duplicate | I-40 West Corridor Study: Operations Plan | Duplicate discovery record for implemented candidate src-a89c0c7e764e720f. |
+| src-5964b940e185bd7a | duplicate | Public Restrooms | Underlying feature service duplicates the Public Restroom Finder application, which is outside ABQInfo's selected scope; retain only as catalog provenance. |
 | src-5f1f41529f856410 | duplicate | src-3080803365506588 | Duplicate discovery record for implemented candidate src-3080803365506588. |
 | src-68ba8f735091955e | duplicate | Highway Safety Improvement Program | Duplicate discovery record for implemented candidate src-b2c0ad0c4336e968. |
 | src-6acaba8fc31a61e4 | duplicate | documents | Duplicate discovery record for implemented candidate src-0f60535452ac9154. |
@@ -235,6 +248,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-ca27dd67d514d371 | duplicate | ABC Comprehensive Plan, Chapter 6: Transportation (2025 Update) | Duplicate discovery record for implemented candidate src-8832a87573fd5ed6. |
 | src-cc6a4ff2372bfa50 | duplicate | Unified Planning Work Program, FFY 2027-2028 | Duplicate discovery record for implemented candidate src-1a0dfd37475ddc69. |
 | src-cc6bd28528a4f130 | duplicate | Travel Alerts | Duplicate discovery record for implemented candidate src-8a96e3fdb3ea48a0. |
+| src-d0e2cb6199c14ee2 | duplicate | Current City Limits | Generic boundary service duplicates the broader City maps library already retained on ABQInfo and adds no distinct planning explanation or public-facing application. |
 | src-d0ed674dd8fe9559 | duplicate | FY24-29 TIP ITS Project Review & Architecture Cert (7-16-23) | Duplicate discovery record for implemented candidate src-b9c1a8d5cb7902b6. |
 | src-d635f8001d7cbd39 | duplicate | Project Dashboard | Duplicate discovery record for implemented candidate src-dfe528e25b833667. |
 | src-d664190ecadc97a8 | duplicate | Projects | Broad NMDOT projects landing page duplicates the implemented Active Projects map and individual Albuquerque project pages. |
@@ -264,6 +278,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-14f13dbb6035583c | excluded | Albuquerque has outstanding recreation opportunities for people of all abilities. Check out tennis courts, pickleball courts, softball fields, basketball courts, and more! Recreation Albuquerque has outstanding recreation opportunities for people of all abilities. Check out tennis courts, pickleball courts, softball fields, basketball courts, and more! | Generic recreation navigation page contains program links but no independently useful plan, dataset, project record, or technical information. |
 | src-1a0dfd37475ddc69 | excluded | Unified Planning Work Program, FFY 2027-2028 | User-approved relevance cleanup: administrative work program and budget are not useful enough for the public plan library. |
 | src-21b4b5f83aa255cf | excluded | News and Announcements | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
+| src-23e1664dc8fed269 | excluded | Public Restroom Finder | Public restroom location is a useful municipal service but falls outside ABQInfo's planning, infrastructure-policy, project, map-archive, and document-discovery focus. |
 | src-25276d49ab03af2a | excluded | Request a Map | User-approved relevance cleanup: printed-map request form rather than an online information resource. |
 | src-255f70badf09c74b | excluded | E-Bike & E-Scooter Info E-Bike & E-Scooter Info E-Bike & E-Scooter Info | High-level e-bike and scooter link page adds little beyond the retained Bike Laws source and would recreate the intentionally removed micromobility topic. |
 | src-2cbb5eb26392de99 | excluded | MRMPO transportation reference material | User-approved quality cleanup: generic third-party reference index duplicates stronger direct technical sources. |
@@ -273,6 +288,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-3557750526cfe442 | excluded | Transportation Planning | Broad MRCOG transportation navigation page; it adds no unique public information beyond the cataloged child resources. |
 | src-396dba15dd723b28 | excluded | Transportation Commission | User-approved relevance cleanup: administrative commission page rather than substantive Albuquerque information. |
 | src-3aa68c8782c7b558 | excluded | The City Council is the legislative authority of the city. It has the power to adopt all ordinances, resolutions, or other legislation conducive to the welfare of the people of the city. Agendas, Minutes, & Legislation The City Council is the legislative authority of the city. It has the power to adopt all ordinances, resolutions, or other legislation conducive to the welfare of the people of the city. | The supplied agendas, minutes, and legislation URL currently resolves to the City calendar and does not provide the described document access. |
+| src-3b5cd74d1d923ca6 | excluded | WorldBasemapv2 | Generic Esri world-basemap service is not Albuquerque-specific and its publisher states that it is not intended for stand-alone use; the 58,246,140,678-byte value is hosted-service storage, not a candidate file. |
 | src-3c1cf52a253dfd53 | excluded | Travel Times | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-3c80290d8188f61a | excluded | City open-data catalog | User-approved quality cleanup: broad open-data root does not lead visitors directly to a useful dataset or map. |
 | src-3c9526d7aaf73b83 | excluded | Police incidents open data | User removed this dataset from the Public Safety Data page on 2026-08-04; preserve that editorial decision and do not reintroduce it without review. |
@@ -312,7 +328,8 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-b3c9d16f0120511e | excluded | Resources & Rules | Parks rules and resources page is broad visitor and administrative navigation rather than durable planning, capital-project, map, or system data. |
 | src-b719335310cfd1b5 | excluded | Environmental Justice | User-approved quality cleanup: generic federal-framework summary is redundant with adopted regional planning documents. |
 | src-b7e7b28b39c8eeb1 | excluded | NeighborWoods Project - District 3 | District-specific tree-program application page is localized program administration and does not add a substantial citywide plan, dataset, or lasting project record. |
-| src-bd2700c0390fa8c8 | excluded | Scenic Byways – Redirect to NM Tourism Department | Redirects to a tourism resource and does not provide Albuquerque transportation planning, project, operations, or public-data content. |
+| src-bd2700c0390fa8c8 | excluded | Scenic Byways â€“ Redirect to NM Tourism Department | Redirects to a tourism resource and does not provide Albuquerque transportation planning, project, operations, or public-data content. |
+| src-bf3eade8dd78723c | excluded | Map Menu | Internal-style map-request information sheet does not contain a substantive public map, plan, dataset, project record, or other durable ABQInfo content. |
 | src-bf648174ccbbe7fc | excluded | Albuquerque Community Safety Department overview | User-approved relevance cleanup: general department overview with no distinctive data or planning resource. |
 | src-c3838cad84fe8cd0 | excluded | Internship Listing | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-c5a377a5f3973160 | excluded | Title VI / EEO | User-approved relevance cleanup: administrative compliance material is outside the site's core curated information scope. |
@@ -339,35 +356,35 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-f8a30720ede66ac7 | excluded | Albuquerque maintains nearly 300 parks throughout the city, offering people a great way to connect with nature, relax, play, learn, and come together. Parks Albuquerque maintains nearly 300 parks throughout the city, offering people a great way to connect with nature, relax, play, learn, and come together. | Generic parks directory is broad facility navigation; the retained Parks Featured Projects and urban-forestry sources provide the substantive planning and capital content. |
 | src-fb71242d60bdc683 | excluded | Executive Staff | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-fd117d805710a1d4 | excluded | Back to Events | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
-| src-0d4e22d34e4d90cf | requires human review | Appendix D â€“ Bikeway Evaluation Process | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
+| src-0d4e22d34e4d90cf | requires human review | Appendix D Ã¢â‚¬â€œ Bikeway Evaluation Process | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-0d9c63d941a2f322 | requires human review | Tall Curb Anchor Pin Installation Guidelines | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
-| src-0eba478366385dfd | requires human review | Appendix B â€“ Community Survey Summary (Spring 2023) | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
+| src-0eba478366385dfd | requires human review | Appendix B Ã¢â‚¬â€œ Community Survey Summary (Spring 2023) | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-16cf913dd9c6f11c | requires human review | Engineering Drawings: Coal to MLK | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-22c9da532846be3c | requires human review | NMDOT Quick Build Guide | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
-| src-2ada4c27695e656e | requires human review | Appendix G â€“ Project Profiles | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
-| src-392154c019847a2c | requires human review | Appendix F â€“ Priority Projects Tables (Jan 2025) | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
-| src-395957636cb2fed0 | requires human review | 1993 Trails and Bikeways Facility Plan | The 2024 plan identifies this as a predecessor; the official Planning update summary confirms that the 2015 plan repealed it.; The preserved R2 object is exactly 4,624,017 bytes (4.41 MiB), but an R2 HTTP 200 is not authoritative provenance. |
+| src-2ada4c27695e656e | requires human review | Appendix G Ã¢â‚¬â€œ Project Profiles | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
+| src-392154c019847a2c | requires human review | Appendix F Ã¢â‚¬â€œ Priority Projects Tables (Jan 2025) | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
+| src-395957636cb2fed0 | requires human review | 1993 Trails and Bikeways Facility Plan | The 2024 plan identifies this as a predecessor; the official Planning update summary confirms that the 2015 plan repealed it.; The preserved R2 object is exactly 4,624,017 bytes (4.41 MiB), but an R2 HTTP 200 is not authoritative provenance.; Blind graph recovery now passes through the official 2024 successor plan, which names the 1993 plan. This does not reconcile the preserved R2 file checksum. |
 | src-48a2030163390b5b | requires human review | Traffic Evaluation (Signed July 2, 2025) | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-4ae7d33db461b5a2 | requires human review | Buena Vista Bike Boulevard 60% Plans | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-4cb190564a688d42 | requires human review | City Council Resolution R-07-268: Bike Boulevards (2007) | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-4cca8f32650581e1 | requires human review | Tall Curb Full Installation Procedures | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-51d5f0b8ea9585e1 | requires human review | Development Process Manual (June 2, 2020) | Approved rare cross-listing: the Development Process Manual is relevant to both development review and transportation-plan implementation. |
-| src-527cf73a46fa7bda | requires human review | Appendix C â€“ Project Priorities Survey Map Results (Fall 2023) | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
+| src-527cf73a46fa7bda | requires human review | Appendix C Ã¢â‚¬â€œ Project Priorities Survey Map Results (Fall 2023) | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-542d18ff9be8bfcf | requires human review | Tall Curb End Spec Sheet | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-64dcaac3f80477e6 | requires human review | Bicycle and Trail Crossings Guide | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-7d1f0aa7fd43ecd7 | requires human review | Draft Engineering Drawings: MLK to Lomas | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-860035d463be9d48 | requires human review | Cost Estimate: MLK to Lomas | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
-| src-8ce615f21d3e5dd3 | requires human review | Appendix I â€“ Bollard Assessment (2013) | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
+| src-8ce615f21d3e5dd3 | requires human review | Appendix I Ã¢â‚¬â€œ Bollard Assessment (2013) | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-907f4de342216f97 | requires human review | 2024 Bikeway and Trail Facilities Plan | The authoritative City source was recovered from a featured bicycle-project page at crawl depth 2 without a title seed.; The preserved R2 object is exactly 19,715,991 bytes (18.80 MiB); its SHA-256 is 873a5ead78ba2881bf7fc7fb61445da8c8f68207635c2045cd4a10daa1bd7407.; An R2 HTTP 200 is not treated as authoritative-source validation. |
-| src-a614f077ace20401 | requires human review | 2015 Bikeways and Trails Facilities Plan | The official Planning summary records R-14-142/R-2015-045, repeal of the 1993 and 2000 plans, and adoption of the 2015 plan.; The preserved R2 object is exactly 4,402,773 bytes (4.20 MiB); no live authoritative file was available for checksum comparison. |
+| src-a614f077ace20401 | requires human review | 2015 Bikeways and Trails Facilities Plan | The official Planning summary records R-14-142/R-2015-045, repeal of the 1993 and 2000 plans, and adoption of the 2015 plan.; The preserved R2 object is exactly 4,402,773 bytes (4.20 MiB); no live authoritative file was available for checksum comparison.; Blind graph recovery now passes through an embedded historical-file link on page 155 of the official 2024 plan. The linked 2015 City URL currently returns HTTP 404, so the preserved R2 file checksum remains unreconciled. |
 | src-b1565d5b0748d248 | requires human review | Tall Curb Spec Sheet | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-cc22fda2e9f7626e | requires human review | Moon St NE Cycletrack Plans | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
-| src-d6e142c608f6a2de | requires human review | Appendix E â€“ Bike Boulevard Toolkit | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
-| src-d850e374f0547178 | requires human review | Appendix H â€“ Multiuse Trail Considerations (2015 Plan) | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
+| src-d6e142c608f6a2de | requires human review | Appendix E Ã¢â‚¬â€œ Bike Boulevard Toolkit | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
+| src-d850e374f0547178 | requires human review | Appendix H Ã¢â‚¬â€œ Multiuse Trail Considerations (2015 Plan) | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-e13cf1e5cc7915a2 | requires human review | Toronto-style Tall Curb Engineering Drawings | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
-| src-fcfb46498207cafd | requires human review | Appendix A â€“ Planning and Policy Framework | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
+| src-fcfb46498207cafd | requires human review | Appendix A Ã¢â‚¬â€œ Planning and Policy Framework | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-5edcfaeac63d3a4b | superseded | ABQReport | Legacy Council-hosted copy superseded by the maintained Planning Department copy at documents.cabq.gov. |
 | src-6da20b965df52490 | superseded | MRCOG bicycle and pedestrian planning maps | Broad bicycle-and-pedestrian landing page was replaced by the specific planning-maps, counts, analysis, and safety sources. |
 | src-7b6c76481a7f00c4 | superseded | Potential Road Diets in the Albuquerque Region | 2021 road-diet application has been superseded by MRMPO's maintained 2023 Road Diet Candidates Map source. |
 | src-cf6fa82eb6524971 | superseded | MRMPO Long Range Bikeway System | 2021 long-range bikeway application has been superseded by the adopted 2026 map and maintained active-transportation portfolio. |
-| src-d76388765a077a16 | superseded | You’re Invited: Public Meeting for Tramway Blvd Operations & Safety Study \| A300342 | Expired single public-meeting notice; the maintained NM 556/Tramway Boulevard study page is already implemented. |
+| src-d76388765a077a16 | superseded | Youâ€™re Invited: Public Meeting for Tramway Blvd Operations & Safety Study \| A300342 | Expired single public-meeting notice; the maintained NM 556/Tramway Boulevard study page is already implemented. |

@@ -59,3 +59,9 @@ Crawler design must separate **candidate capture** from **recursive crawl permis
 6. Include map, GIS, data, dashboard, application, and project terminology in relevant discovery patterns when those resource types are within ABQInfo scope.
 
 Known-source regression tests must confirm that an official external resource can be recovered from the original government starting point without using the external URL or title as a seed.
+
+## Deferred and last-resort sources
+
+Some official systems are useful for targeted gap recovery but are too incomplete, noisy, or weakly scoped for routine crawling. Record them in `source-priorities.json` and query them only after the primary City, County, MRCOG/MRMPO, and NMDOT page, document, sitemap, catalog, and linked-source pathways have been exhausted for the subject being researched.
+
+The City OnBase Public Records Search is a last-resort source. Limit searches to record classes with a clear ABQInfo connection—principally GAATC, GARTC, any similarly relevant transportation or planning board identified later, and substantive APD annual reports, strategic plans, or other records that fit the site's scope. Do not enumerate unrelated boards, commissions, inspections, proclamations, or administrative record classes merely because the search system exposes them.
