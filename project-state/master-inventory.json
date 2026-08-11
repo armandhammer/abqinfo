@@ -1,6 +1,6 @@
 ﻿{
     "schema_version":  1,
-    "generated_at":  "2026-08-11T00:46:12.3597126Z",
+    "generated_at":  "2026-08-11T01:30:12.7991135Z",
     "allowed_statuses":  [
                              "pending review",
                              "approved for addition",
@@ -31,7 +31,7 @@
                    "duplicate":  64,
                    "superseded":  5,
                    "blocked":  0,
-                   "requires human review":  27
+                   "requires human review":  28
                },
     "next_pending_id":  "lin-01236d79d0623075",
     "candidates":  [
@@ -123578,6 +123578,61 @@
                            "updated_at":  "2026-08-04T14:15:57.9622403Z"
                        },
                        {
+                           "id":  "src-9ddd86a240b30500",
+                           "status":  "requires human review",
+                           "source_url":  "https://www.bernco.gov/public-works/development-review/tech-standards/",
+                           "direct_file_url":  "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2023/05/Bernalillo-County-Technical-Standards-2023-03-28-FINAL.pdf",
+                           "r2_url":  null,
+                           "r2_key":  null,
+                           "r2_etag":  null,
+                           "r2_last_modified":  null,
+                           "agency":  "Bernalillo County",
+                           "title":  "Complete Bernalillo County Technical Standards",
+                           "date":  "2023-03-28",
+                           "file_type":  "PDF",
+                           "size_bytes":  9161556,
+                           "checksum_sha256":  "87815e3438b0a392bf7019a27c1030c66f6f11ac902ab579a6c0b027feddabb1",
+                           "parent_url":  "https://www.bernco.gov/public-works/development-review/tech-standards/",
+                           "referring_urls":  [
+                                                  "https://www.bernco.gov/public-works/development-review/tech-standards/"
+                                              ],
+                           "discovery_path":  [
+                                                  "https://www.bernco.gov/public-works/finished-projects/",
+                                                  "https://www.bernco.gov/public-works/development-review/tech-standards/",
+                                                  "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2023/05/Bernalillo-County-Technical-Standards-2023-03-28-FINAL.pdf"
+                                              ],
+                           "discovery_method":  "authoritative landing-page document link",
+                           "crawl_depth":  2,
+                           "cited_predecessors":  [
+
+                                                  ],
+                           "cited_successors":  [
+
+                                                ],
+                           "provenance_status":  "authoritative County landing page and direct file recorded",
+                           "proposed_canonical_page":  "content/transportation/design-references.md",
+                           "description":  "Contains the County\u0027s 226-page March 2023 requirements for development review, transportation networks, road geometry, pedestrian and bicycle facilities, drainage, pavement design, traffic studies, construction, and green stormwater infrastructure.",
+                           "description_word_count":  28,
+                           "processing_notes":  [
+                                                    "The current County landing page still labels the March 28, 2023 standards as current; no newer authoritative edition was found there on 2026-08-10.",
+                                                    "Original complete 226-page authoritative PDF downloaded to temporary storage without modification: exactly 9,161,556 bytes (8.74 MiB), SHA-256 87815e3438b0a392bf7019a27c1030c66f6f11ac902ab579a6c0b027feddabb1.",
+                                                    "The landing page\u0027s separate April-hosted copy is 8,831,995 bytes and 224 pages; it is not byte-identical and is not an equivalent substitute for the page\u0027s complete May-hosted edition.",
+                                                    "Representative pages rendered successfully and confirmed intact transportation-network, road-design, drainage, traffic-review, construction, and green-infrastructure content.",
+                                                    "Current R2 storage is 725,638,531 bytes; the original would add 9,161,556 bytes and project storage to 734,800,087 bytes (7.348% of the current 10 GB-month Standard free allowance).",
+                                                    "No optimization or derivative is proposed. No R2 upload was performed; explicit authorization is required before production storage changes."
+                                                ],
+                           "implementation_location":  "content/transportation/design-references.md",
+                           "implementation_locations":  [
+                                                            "content/transportation/design-references.md"
+                                                        ],
+                           "cross_listing_approved":  false,
+                           "validation_status":  "passed: live PDF HTTP 200, exact metadata/content/placement reviewed; R2 archival upload requires explicit authorization",
+                           "exclusion_reason":  null,
+                           "local_path":  null,
+                           "discovered_at":  "2026-08-11T01:30:12.7991135Z",
+                           "updated_at":  "2026-08-11T01:30:12.7991135Z"
+                       },
+                       {
                            "id":  "src-9de129d7dbaadf19",
                            "status":  "pending review",
                            "source_url":  "https://www.cabq.gov/council/documents/amendments-for-posting-on-council-page/o-24-13-lupz-amd-may-15-2024.pdf",
@@ -149797,19 +149852,19 @@
                            "description_word_count":  33,
                            "processing_notes":  [
                                                     "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/featured-projects.",
-                                                    "Exact metadata and relevance remain pending source review.",
-                                                    "Selected from the user-directed CABQ and Bernalillo County starting-page review; implementation and final placement remain queued."
+                                                    "Selected from the user-directed CABQ starting-page review and implemented on the current bicycle-projects page.",
+                                                    "Item-specific current-pilot contact supplied directly by the user on 2026-08-10: Valerie Hermanson, vhermanson@cabq.gov; no source lookup required."
                                                 ],
                            "implementation_location":  "content/transportation/bicycling/projects/current.md",
                            "implementation_locations":  [
                                                             "content/transportation/bicycling/projects/current.md"
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
+                           "validation_status":  "passed: source HTTP 200; project-specific contact added from user-supplied current information",
                            "exclusion_reason":  null,
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T11:50:35.7478645Z",
-                           "updated_at":  "2026-08-04T15:55:41.386443Z",
+                           "updated_at":  "2026-08-11T01:30:12.7991135Z",
                            "parent_url":  "https://www.cabq.gov/sitemap",
                            "referring_urls":  [
                                                   "https://www.cabq.gov/municipaldevelopment/featured-projects/dr-martin-luther-king-jr-blvd-separated-bicycle-lane-pilot-project",
@@ -151379,28 +151434,29 @@
                            "description_word_count":  27,
                            "processing_notes":  [
                                                     "Discovered by deterministic crawl of https://www.bernco.gov/public-works/finished-projects/.",
-                                                    "Exact metadata and relevance remain pending source review.",
-                                                    "Selected from the user-directed CABQ and Bernalillo County starting-page review; implementation and final placement remain queued."
+                                                    "Reviewed 2026-08-10: the live County page returned HTTP 200 and still labels the March 28, 2023 Technical Standards as current.",
+                                                    "Retained as the source-of-truth link where users can check for later editions; the linked complete PDF is inventoried separately."
                                                 ],
                            "implementation_location":  "content/transportation/design-references.md",
                            "implementation_locations":  [
                                                             "content/transportation/design-references.md"
                                                         ],
                            "cross_listing_approved":  false,
-                           "validation_status":  "passed: HTTP 200",
+                           "validation_status":  "passed: current County landing page HTTP 200 and canonical placement validated 2026-08-10",
                            "exclusion_reason":  null,
                            "local_path":  null,
                            "discovered_at":  "2026-08-04T11:50:35.6896123Z",
-                           "updated_at":  "2026-08-04T15:55:42.9681959Z",
-                           "parent_url":  null,
+                           "updated_at":  "2026-08-11T01:30:12.7991135Z",
+                           "parent_url":  "https://www.bernco.gov/public-works/finished-projects/",
                            "referring_urls":  [
-
+                                                  "https://www.bernco.gov/public-works/finished-projects/"
                                               ],
                            "discovery_path":  [
-
+                                                  "https://www.bernco.gov/public-works/finished-projects/",
+                                                  "https://www.bernco.gov/public-works/development-review/tech-standards/"
                                               ],
-                           "discovery_method":  null,
-                           "crawl_depth":  null,
+                           "discovery_method":  "authored main-content link",
+                           "crawl_depth":  1,
                            "cited_predecessors":  [
 
                                                   ],
