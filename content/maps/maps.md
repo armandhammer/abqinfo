@@ -41,6 +41,10 @@ Interactive maps of city data and infrastructure.
 
   Shows which agency maintains Albuquerque-area arroyos and storm-drainage channels, helping users identify responsibility across City, County, state, and other jurisdictions before reporting a problem.
 
+- [City Drainage Ponds](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=69a932663bf84beaa81d6268c327f24b)
+
+  Maps stormwater drainage ponds maintained by the City of Albuquerque, providing a geographic reference for public drainage infrastructure and its relationship to surrounding neighborhoods.
+
 ## City bicycle maps and data
 
 - [Bikeways and Trails Public Map Viewer](https://cabq.maps.arcgis.com/apps/instant/sidebar/index.html?appid=bfda88ddb89a40c08440b4abd4c182ba)

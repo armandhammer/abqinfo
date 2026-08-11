@@ -10,6 +10,10 @@ Data dashboards and visualizations.
 
   Maps active and completed Municipal Development projects by phase, category, district, and location, with searchable descriptions covering transportation, traffic engineering, drainage, facilities, and other special projects.
 
+- [DMD by the Numbers](https://www.arcgis.com/apps/dashboards/463b940adf4441aa85e4910a29d5164a)
+
+  Summarizes the infrastructure assets maintained by Albuquerque's Department of Municipal Development, providing a high-level operational inventory across streets, signals, lighting, drainage, and related systems.
+
 - [Street Maintenance Projects Viewer](https://experience.arcgis.com/experience/f57852d3820348099352cd74e5db72bf)
 
   Maps City street-maintenance projects and their locations, providing a direct geographic view of active and recent resurfacing or maintenance work managed by Municipal Development.
