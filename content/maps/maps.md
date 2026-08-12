@@ -27,6 +27,12 @@ Interactive maps of city data and infrastructure.
 
   The City’s map library includes the official Zone Atlas, address and parcel reference tools, council districts, land use, streets, neighborhoods, and printable maps.
 
+- [Council District Poster Map — January 2026 (PDF)](https://www.arcgis.com/sharing/rest/content/items/47889b7150894b1c92a45ea3c1ffe3bd/data)
+
+  Provides the City's January 2026 printable council-district map with district boundaries and councilor photographs, offering a dated civic-reference snapshot for preservation alongside the live council map.
+
+  [View the official CABQ ArcGIS item and check for updates](https://www.arcgis.com/home/item.html?id=47889b7150894b1c92a45ea3c1ffe3bd).
+
 - [Open Space maps](https://www.cabq.gov/parksandrecreation/open-space/facilities-map)
 
   Albuquerque Open Space maintains access and trail maps for its lands and trailheads. Individual trail maps are available from the same City source when a printable field reference is useful.
