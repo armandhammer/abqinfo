@@ -1,8 +1,8 @@
 ﻿# ABQ Info authoritative source catalog
 
-Generated: 2026-08-12T18:25:01.1672799Z
+Generated: 2026-08-12T19:14:30.2646031Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 3705 candidates and 79 R2 objects totaling 1007838374 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 3722 candidates and 87 R2 objects totaling 1167318859 bytes.
 
 ## Queue status
 
@@ -11,14 +11,14 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | pending review | 3284 |
 | approved for addition | 0 |
 | downloading | 0 |
-| downloaded | 40 |
+| downloaded | 36 |
 | parsed | 0 |
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 0 |
-| validated | 173 |
+| validated | 182 |
 | excluded | 93 |
-| duplicate | 83 |
+| duplicate | 95 |
 | superseded | 5 |
 | blocked | 0 |
 | requires human review | 27 |
@@ -34,9 +34,16 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | 2011 Albuquerque Bikeways and Trails Master Plan Update - Design Guidelines | City of Albuquerque | 2011-11-10 | 31152896 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%20Design%20Guidelines%2011-10.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-trails-master-plan-design-guidelines.pdf) |
 | 2024 Bikeway and Trail Facilities Plan - Combined Authoritative Edition | City of Albuquerque | 2024-12 | 68233939 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf/view) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2024-albuquerque-bikeway-trail-facilities-plan-combined.pdf) |
 | 2025 General Obligation Bond Approved Program Book | City of Albuquerque | 2025 | 59340691 | content/city-data/capital-spending.md | [source](https://www.cabq.gov/municipaldevelopment/programs/2025-g-o-bond-program) | [R2](https://files.abqinfo.com/city-data/capital-spending/cabq-2025-go-bond-approved-program-book.pdf) |
+| ABQ RIDE Forward Phase I Engagement Summary | City of Albuquerque | 2023-02 | 1339224 | content/transportation/transit/abq-ride.md | [source](https://www.cabq.gov/transit/transit-programs-projects/abq-ride-forward) | [R2](https://files.abqinfo.com/transportation/transit/abq-ride-forward/phase-i-engagement-summary-2022.pdf) |
+| ABQ RIDE Forward Phase I Existing Conditions Report | City of Albuquerque | 2022-08 | 79569487 | content/transportation/transit/abq-ride.md | [source](https://www.cabq.gov/transit/transit-programs-projects/abq-ride-forward) | [R2](https://files.abqinfo.com/transportation/transit/abq-ride-forward/phase-i-existing-conditions-report-2022.pdf) |
+| ABQ RIDE Forward Phase II Concepts Report | City of Albuquerque | 2023-03-06 | 4661965 | content/transportation/transit/abq-ride.md | [source](https://www.cabq.gov/transit/transit-programs-projects/abq-ride-forward) | [R2](https://files.abqinfo.com/transportation/transit/abq-ride-forward/phase-ii-concepts-report-2023.pdf) |
+| ABQ RIDE Forward Phase II Engagement Summary | City of Albuquerque | 2023-08 | 1785313 | content/transportation/transit/abq-ride.md | [source](https://www.cabq.gov/transit/transit-programs-projects/abq-ride-forward) | [R2](https://files.abqinfo.com/transportation/transit/abq-ride-forward/phase-ii-engagement-summary-2023.pdf) |
+| ABQ RIDE Forward Phase III Engagement Summary | City of Albuquerque | 2024-11 | 2216133 | content/transportation/transit/abq-ride.md | [source](https://www.cabq.gov/transit/transit-programs-projects/abq-ride-forward) | [R2](https://files.abqinfo.com/transportation/transit/abq-ride-forward/phase-iii-engagement-summary-2024.pdf) |
+| ABQ RIDE Forward Phase III Recovery Network Report | City of Albuquerque | 2024-05-07 | 52499555 | content/transportation/transit/abq-ride.md | [source](https://www.cabq.gov/transit/transit-programs-projects/abq-ride-forward) | [R2](https://files.abqinfo.com/transportation/transit/abq-ride-forward/phase-iii-recovery-network-report-2024.pdf) |
 | City of Albuquerque 2023-2027 Consolidated Plan and 2023 Action Plan | City of Albuquerque | 2023-2027 | 20352710 | content/development-land-use/projects.md | [source](https://www.cabq.gov/health-housing-homelessness/transparency/consolidated-plans-and-amendments) | [R2](https://files.abqinfo.com/housing/affordable-housing/cabq-2023-2027-consolidated-plan-and-2023-action-plan.pdf) |
 | City of Albuquerque Approved Budget, Fiscal Year 2027 | City of Albuquerque | FY 2027 | 22776293 | content/city-data/budget-spending.md | [source](https://www.cabq.gov/dfa/budget/annual-budget) | [R2](https://files.abqinfo.com/city-data/budget-spending/cabq-fy2027-approved-budget.pdf) |
 | Council District Poster Map | City of Albuquerque | 2026-01 | 16586301 | content/maps/maps.md | [source](https://www.arcgis.com/home/item.html?id=47889b7150894b1c92a45ea3c1ffe3bd) | [R2](https://files.abqinfo.com/maps/cabq-council-district-poster-map-2026-01.pdf) |
+| Final ABQ RIDE Forward Recovery Network Plan | City of Albuquerque | 2025-06-04 | 13772906 | content/transportation/transit/abq-ride.md | [source](https://www.cabq.gov/transit/transit-programs-projects/abq-ride-forward) | [R2](https://files.abqinfo.com/transportation/transit/abq-ride-forward/final-recovery-network-plan-2025.pdf) |
 | Integrated Development Ordinance ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â effective May 6, 2026 | City of Albuquerque | 2026-05-06 | 23832206 | content/development-land-use/zoning-ido.md | [source](https://www.cabq.gov/planning/codes-policies-regulations/integrated-development-ordinance-1/integrated-development-ordinance) | [R2](https://files.abqinfo.com/housing/zoning-ido/cabq-ido-effective-2026-05-06.pdf) |
 | Nob Hill Highland Sector Development Plan â€” Transportation Section | City of Albuquerque | 2007-09; amended through 2014-08 | 8234679 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-nob-hill-highland-sector-plan-transportation-2007-2014.pdf) |
 | North Fourth Street Corridor Plan â€” Transportation and Street Design | City of Albuquerque | 2010 | 3175202 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-north-fourth-street-corridor-plan-2010.pdf) |
@@ -132,6 +139,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Municipal Development featured projects | City of Albuquerque | content/public-works/capital-projects.md | [source](https://www.cabq.gov/municipaldevelopment/featured-projects) |
 | neighborhood traffic management program | City of Albuquerque | content/transportation/roadway-projects/speed-management.md | [source](https://www.cabq.gov/neighborhood-traffic-management-program) |
 | Neighborhood Traffic Management Program Dashboard | City of Albuquerque | content/transportation/roadway-projects/speed-management.md | [source](https://www.arcgis.com/apps/dashboards/54e6059b27eb42d680f24e2eaae81c6e) |
+| Official ABQ RIDE Forward Project Page | City of Albuquerque | content/transportation/transit/abq-ride.md | [source](https://www.cabq.gov/transit/transit-programs-projects/abq-ride-forward) |
 | Open Space maps | City of Albuquerque | content/maps/maps.md | [source](https://www.cabq.gov/parksandrecreation/open-space/facilities-map) |
 | Pedestrian, bicyclist, and traffic-safety projects map | City of Albuquerque | content/maps/dashboards.md | [source](https://www.cabq.gov/municipaldevelopment/maps/pedestrian-bicyclist-and-traffic-safety-projects) |
 | Pedestrian, Bicyclist, and Vision Zero Projects Viewer | City of Albuquerque | content/transportation/bicycling/safety-crash-data.md | [source](https://experience.arcgis.com/experience/cbc6869f8677415c81a8bed6853b2b93) |
@@ -229,11 +237,14 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-22b21921507b9fa8 | duplicate | src-53495318782dae10 | Duplicate discovery record for implemented candidate src-53495318782dae10. |
 | src-247a3f301b23e673 | duplicate | Download LRBS PDF map | Duplicate discovery record for implemented candidate src-d3f0cf9107a00c74. |
 | src-247ceb733ed01c0d | duplicate | Volcano Cliffs Sector Development Plan | The preserved R2 candidate src-e1cde64af2f4a573 is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
+| src-2560eef4989bc4da | duplicate | forward-final-report-20250604-1 | Duplicate discovery record for implemented candidate src-b22d3474ffadb293. |
 | src-28b4b80e0074e081 | duplicate | Vision Zero in Albuquerque | The maintained City Vision Zero page already provides the program context and related current materials; this broad StoryMap adds no distinct dataset or project record. |
 | src-2f094c9ddbb50ce1 | duplicate | Fiscal Year 2027 Approved Budget | Duplicate discovery record for implemented candidate src-0c0bf6fdce0dfbea. |
 | src-2f15ef9451d99e32 | duplicate | src-a8552ef7c580c636 | Duplicate discovery record for implemented candidate src-2c94f1cc7996207a. |
 | src-302eeb9a704644f3 | duplicate | Transitions 2045 MTP Appendices | Duplicate discovery record for implemented candidate src-9f98b2dbdfc9d974. |
 | src-34f5e43d0fd0f2d0 | duplicate | ABC Comprehensive Plan | Duplicate discovery record for implemented candidate src-8832a87573fd5ed6. |
+| src-35eddb551a1c17ec | duplicate | Phase III Engagement Summary | Official City direct-file link is already recorded as provenance on the canonical archived Phase III engagement record. |
+| src-36f33a1a6c77f1e0 | duplicate | Phase III Recovery Network Report | Official City direct-file link is already recorded as provenance on the canonical archived Phase III report record. |
 | src-3d676705b6616cf4 | duplicate | src-7f51da342c00a840 | Duplicate discovery record for implemented candidate src-31c4d4eff2bc1b5a. |
 | src-40cfc5da0dbddcff | duplicate | Visit Hub Site | Generic Hub landing-page record duplicates the 34 individually inventoried DMD catalog items and is retained as discovery provenance rather than public site content. |
 | src-428c2b8d791a054f | duplicate | Volcano Heights Sector Development Plan | The preserved R2 candidate src-e83d30ce68171820 is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
@@ -244,18 +255,22 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-4dbb0390d53edf19 | duplicate | Open Space Trails - Public | Backing Open Space trail layer duplicates the retained City Open Space maps and broader public bikeways-and-trails viewer without adding a distinct public-facing tool. |
 | src-4f9925e4698c3223 | duplicate | ABC Comprehensive Plan, Chapter 9: Housing (2025 Update) | Duplicate discovery record for implemented candidate src-5833586f28079104. |
 | src-5493cb1d487d09db | duplicate | I-40 West Corridor Study: Operations Plan | Duplicate discovery record for implemented candidate src-a89c0c7e764e720f. |
+| src-595eb58320b4ff58 | duplicate | Phase I Existing Conditions Report | Official City direct-file link is already recorded as provenance on the canonical archived Phase I existing-conditions record. |
 | src-5964b940e185bd7a | duplicate | Public Restrooms | Underlying feature service duplicates the Public Restroom Finder application, which is outside ABQInfo's selected scope; retain only as catalog provenance. |
 | src-5f1f41529f856410 | duplicate | src-3080803365506588 | Duplicate discovery record for implemented candidate src-3080803365506588. |
 | src-68ba8f735091955e | duplicate | Highway Safety Improvement Program | Duplicate discovery record for implemented candidate src-b2c0ad0c4336e968. |
 | src-6acaba8fc31a61e4 | duplicate | documents | Duplicate discovery record for implemented candidate src-0f60535452ac9154. |
+| src-710e3cfd505f7729 | duplicate | ABQ-RIDE-Forward-Phase-II-Engagement-Summary-August-2023 | Duplicate discovery record for implemented candidate src-e579f837294379a3. |
 | src-718baaa375fdf25c | duplicate | Moratorium Dashboard | The existing Construction Moratoriums entry retains the City source page that embeds this same dashboard and provides more useful dates and context. |
 | src-72fb72405d08a5c1 | duplicate | I-40 West Corridor Study: Conceptual Alternatives | Duplicate discovery record for implemented candidate src-6ab062defb508468. |
 | src-731ef9cb0deff4d7 | duplicate | 2011 Albuquerque Bikeways and Trails Master Plan Update - Appendices | Duplicate discovery record for implemented candidate src-50fdeb4703e57b9f. |
 | src-76a977d4c1afe872 | duplicate | Long Range System Maps | Duplicate discovery record for implemented candidate src-6697ce61c4489b98. |
 | src-79251e803fb8210f | duplicate | Pedestrian Level of Traffic Stress (LTS) App | Alternate portal URL for ArcGIS item 577561bcf1534cf5bcf105686cb397df, already implemented and validated. |
 | src-79abf932fed04610 | duplicate | ABC Comprehensive Plan, Chapter 10: Parks & Open Space (2025 Update) | Duplicate discovery record for implemented candidate src-5cefbce02e362e4b. |
+| src-7ab41adfa0b3a575 | duplicate | ABQ-Choices-Report-20220908 | Duplicate discovery record for implemented candidate src-7e3ac56766921ae2. |
 | src-7f51da342c00a840 | duplicate | Long Range Transportation System Guide (LRTS Guide) | Duplicate discovery record for implemented candidate src-31c4d4eff2bc1b5a. |
 | src-823191c37ffca5f8 | duplicate | Transitions 2045 MTP Executive Summary | The preserved R2 candidate src-b5c323782239e519 is the canonical English-summary record; retain this duplicate for the official MRCOG direct-file URL. |
+| src-85f190542564176f | duplicate | Phase II Concept Report | Official City direct-file link is already recorded as provenance on the canonical archived Phase II concepts record. |
 | src-89ba195983f6d5e8 | duplicate | 2011 Albuquerque Bikeways and Trails Master Plan Update - Design Guidelines | Duplicate discovery record for implemented candidate src-5cd111deac4749c3. |
 | src-8cdddf853227c40a | duplicate | I-40 West Corridor Study: Phase A/B Corridor Study | Duplicate discovery record for implemented candidate src-d4957d9c6500b754. |
 | src-9073c4c1acab4048 | duplicate | src-cc6a4ff2372bfa50 | Duplicate discovery record for implemented candidate src-1a0dfd37475ddc69. |
@@ -270,6 +285,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-b659f7e87e249d55 | duplicate | Nob Hill Highland Sector Development Plan | The preserved R2 candidate src-6916bbd03258654b is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
 | src-b745230b7fbd1fdb | duplicate | src-72fb72405d08a5c1 | Duplicate discovery record for implemented candidate src-6ab062defb508468. |
 | src-bb5088b9f0c46dee | duplicate | official-2011-bikeways-trails-master-plan-update | Duplicate discovery record for implemented candidate src-94cdef5b70765253. |
+| src-bcbc02c4109a77f4 | duplicate | Official City image | Official City direct-image link is already recorded as provenance on the canonical archived map record. |
 | src-bcbfa4182489257d | duplicate | src-5493cb1d487d09db | Duplicate discovery record for implemented candidate src-a89c0c7e764e720f. |
 | src-c11c40ee87f3cf37 | duplicate | Ponds Public View | Backing feature service for the more usable City Drainage Ponds public map; retain the application as the eventual canonical public entry. |
 | src-c18a3633706516c5 | duplicate | src-6697ce61c4489b98 | Duplicate discovery record for implemented candidate src-6697ce61c4489b98. |
@@ -279,6 +295,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-ca27dd67d514d371 | duplicate | ABC Comprehensive Plan, Chapter 6: Transportation (2025 Update) | Duplicate discovery record for implemented candidate src-8832a87573fd5ed6. |
 | src-cc6a4ff2372bfa50 | duplicate | Unified Planning Work Program, FFY 2027-2028 | Duplicate discovery record for implemented candidate src-1a0dfd37475ddc69. |
 | src-cc6bd28528a4f130 | duplicate | Travel Alerts | Duplicate discovery record for implemented candidate src-8a96e3fdb3ea48a0. |
+| src-cee0e4d8e9bf5628 | duplicate | Phase II Engagement Summary | Official City direct-file link is already recorded as provenance on the canonical archived Phase II engagement record. |
 | src-d0e2cb6199c14ee2 | duplicate | Current City Limits | Generic boundary service duplicates the broader City maps library already retained on ABQInfo and adds no distinct planning explanation or public-facing application. |
 | src-d0ed674dd8fe9559 | duplicate | FY24-29 TIP ITS Project Review & Architecture Cert (7-16-23) | Duplicate discovery record for implemented candidate src-b9c1a8d5cb7902b6. |
 | src-d635f8001d7cbd39 | duplicate | Project Dashboard | Duplicate discovery record for implemented candidate src-dfe528e25b833667. |
@@ -287,6 +304,8 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-db4dfd5029f9e710 | duplicate | Permits | Broad permits landing page duplicates the implemented NMDOT ePermitting source, which contains the current applications, guidance, and contacts. |
 | src-dc91480e261ecffa | duplicate | Transitions 2045 MTP Full Document | Duplicate discovery record for implemented candidate src-7e1a8bec260f1b77. |
 | src-dff91a717447d7aa | duplicate | Transiciones 2045 Plan Metropolitano de Transporte Resumen Ejecutivo (MTP Executive Summary Ã¢â‚¬â€œ Spanish version) | The preserved R2 candidate src-0b89c7adb106d638 is the canonical Spanish-summary record; retain this duplicate for the official MRCOG direct-file URL. |
+| src-e1e494ebeb8fb78a | duplicate | Phase I Engagement Summary | Official City direct-file link is already recorded as provenance on the canonical archived Phase I engagement record. |
+| src-e88cf1da17aff086 | duplicate | ABQ-RIDE-Forward-Phase-I-Engagement-Summary | Duplicate discovery record for implemented candidate src-e1e494ebeb8fb78a. |
 | src-e9730a535acdeaa0 | duplicate | I-40 West Corridor Study: Executive Summary | Duplicate discovery record for implemented candidate src-e60615e24211cb36. |
 | src-eb47ea28d8ca58ad | duplicate | Los Duranes Sector Development Plan | The preserved R2 candidate src-278552b95a4c8916 is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
 | src-ebd2161a3e07f92a | duplicate | Unified Planning Work Program, FFY 2027-2028 (mistyped R2 key) | Mistyped R2 key created during upload; exact duplicate of the correctly named implemented object. Retained because deletion was not authorized. |
@@ -297,6 +316,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-f413465fab00efba | duplicate | The City boasts more than 29,000 acres of Open Space in and around Albuquerque to explore, recreate, and help preserve our city's natural heritage. Open Space The City boasts more than 29,000 acres of Open Space in and around Albuquerque to explore, recreate, and help preserve our city's natural heritage. | Generic Open Space landing page duplicates the more useful planning and resource-management library already implemented on ABQInfo. |
 | src-fa0a012c5479abdb | duplicate | src-d3f0cf9107a00c74 | Duplicate discovery record for implemented candidate src-d3f0cf9107a00c74. |
 | src-fb9c324c03d5e0cf | duplicate | 2025 General Obligation Bond Approved Program Book | Duplicate discovery record for implemented candidate src-982cc018b0b8fc01. |
+| src-ff6434a912c30b5e | duplicate | Final ABQ RIDE Forward Recovery Network Plan | Official City direct-file link is already recorded as provenance on the canonical archived plan record. |
 | src-ff7935d761e49431 | duplicate | Download PLTS PDF map | Duplicate discovery record for implemented candidate src-6697ce61c4489b98. |
 | src-00cc051ac3b6d0c7 | excluded | Shelter resources and encampment transparency | User removed the Homeless Services page from the site on 2026-08-04; preserve that editorial decision and do not reintroduce this link without review. |
 | src-0233e8758e566484 | excluded | About | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
