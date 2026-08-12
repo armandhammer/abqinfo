@@ -1,24 +1,24 @@
 ﻿# ABQ Info authoritative source catalog
 
-Generated: 2026-08-12T20:09:35.5822733Z
+Generated: 2026-08-12T22:08:40.8349225Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 3725 candidates and 89 R2 objects totaling 1292515310 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 3727 candidates and 90 R2 objects totaling 1296216321 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 3282 |
+| pending review | 3272 |
 | approved for addition | 0 |
 | downloading | 0 |
-| downloaded | 31 |
+| downloaded | 30 |
 | parsed | 0 |
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 0 |
-| validated | 184 |
+| validated | 186 |
 | excluded | 94 |
-| duplicate | 100 |
+| duplicate | 111 |
 | superseded | 7 |
 | blocked | 0 |
 | requires human review | 27 |
@@ -53,6 +53,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Uptown Sector Development Plan â€” Transportation and Connectivity | City of Albuquerque | 2009-01-15; amended through 2013-12 | 3293254 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-uptown-sector-plan-transportation-2009-2013.pdf) |
 | Volcano Cliffs Sector Development Plan â€” Transportation Standards | City of Albuquerque | 2011-05; amended through 2015-07-09 | 5205575 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-volcano-cliffs-sector-plan-transportation-2011-2015.pdf) |
 | Volcano Heights Sector Development Plan â€” Transportation Standards | City of Albuquerque | 2010-07; amended 2014-11-05 | 8772504 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-volcano-heights-sector-plan-transportation-2010-2014.pdf) |
+| 2022 ABQ RIDE On-Board Rider Survey | City of Albuquerque / ABQ RIDE | 2022-07-07 | 3701011 | content/transportation/transit/abq-ride.md | [source](https://www.cabq.gov/transit/transit-programs-projects/abq-ride-forward) | [R2](https://files.abqinfo.com/transportation/transit/abq-ride-forward/on-board-rider-survey-2022.pdf) |
 | ABC Comprehensive Plan, Chapter 10: Parks & Open Space (2025 Update) | City of Albuquerque / Bernalillo County | 2025 | 27179821 | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan) | [R2](https://files.abqinfo.com/public-works/parks-recreation/abc-comprehensive-plan-chapter-10-parks-open-space-2025.pdf) |
 | ABC Comprehensive Plan, Chapter 6: Transportation (2025 Update) | City of Albuquerque / Bernalillo County | 2025 | 20598377 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan) | [R2](https://files.abqinfo.com/transportation/transportation-plans/abc-comprehensive-plan-chapter-6-transportation-2025.pdf) |
 | ABC Comprehensive Plan, Chapter 9: Housing (2025 Update) | City of Albuquerque / Bernalillo County | 2025 | 10531432 | content/development-land-use/projects.md | [source](https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan) | [R2](https://files.abqinfo.com/housing/affordable-housing/abc-comprehensive-plan-chapter-9-housing-2025.pdf) |
@@ -166,6 +167,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Vision Zero implementation work | City of Albuquerque | content/transportation/roadway-projects/speed-management.md | [source](https://www.cabq.gov/vision-zero/what-are-we-doing) |
 | West Central Complete Streets Project | City of Albuquerque | content/transportation/roadway-projects/current.md | [source](https://www.cabq.gov/municipaldevelopment/featured-projects/west-central-complete-streets-project) |
 | x Urban Forestry x | City of Albuquerque | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/parksandrecreation/urban-forest) |
+| Zero Fares Resolution | City of Albuquerque Transit Advisory Board | content/transportation/transit/abq-ride.md | [source](https://www.cabq.gov/transit/documents/approved_zero-fares-resolution-8-8-2024.pdf/%40%40download/file/APPROVED_Zero%20Fares%20Resolution%20-%208.8.2024.pdf) |
 | 2023 AMPA ITS Architecture | MRCOG | content/transportation/operations-data.md | [source](https://www.mrcog-nm.gov/625/2023-AMPA-ITS-Architecture) |
 | Archived Crash Reports | MRCOG | content/transportation/bicycling/safety-crash-data.md | [source](https://www.mrcog-nm.gov/572/Archived-Crash-Reports) |
 | Bicycle and Pedestrian Analysis and Reports | MRCOG | content/transportation/bicycling/safety-crash-data.md | [source](https://www.mrcog-nm.gov/568/Bicycle-and-Pedestrian-Analysis-and-Repo) |
@@ -225,6 +227,16 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 
 | ID | Status | Title | Reason |
 | --- | --- | --- | --- |
+| lin-018e098614d64281 | duplicate | 2024 Plan | The extracted phrase '2024 Plan' refers to the parent 2024 Bikeway and Trail Facilities Plan, which is already archived and validated. |
+| lin-03aad5390cd97e4f | duplicate | 2024 Plan | The extracted phrase '2024 Plan' refers to the parent 2024 Bikeway and Trail Facilities Plan, which is already archived and validated. |
+| lin-0c7adcd6df3a5258 | duplicate | 2024 Plan | The extracted phrase '2024 Plan' refers to the parent 2024 Bikeway and Trail Facilities Plan, which is already archived and validated. |
+| lin-0d26288d126ad828 | duplicate | The 2024 Plan | The extracted phrase 'The 2024 Plan' refers to the parent 2024 Bikeway and Trail Facilities Plan, which is already archived and validated. |
+| lin-0e82c46c8e263b6f | duplicate | 2024 Plan | The extracted phrase '2024 Plan' refers to the parent 2024 Bikeway and Trail Facilities Plan, which is already archived and validated. |
+| lin-1006d95511526e9c | duplicate | 2024 Plan | The extracted phrase '2024 Plan' refers to the parent 2024 Bikeway and Trail Facilities Plan, which is already archived and validated. |
+| lin-102edd32ab600241 | duplicate | 2024 Plan | The extracted phrase '2024 Plan' refers to the parent 2024 Bikeway and Trail Facilities Plan, which is already archived and validated. |
+| lin-12ddd59a03241d0d | duplicate | 2024 Plan | The extracted phrase '2024 Plan' refers to the parent 2024 Bikeway and Trail Facilities Plan, which is already archived and validated. |
+| lin-12e75a12bce629c4 | duplicate | The 2024 Plan | The extracted phrase 'The 2024 Plan' refers to the parent 2024 Bikeway and Trail Facilities Plan, which is already archived and validated. |
+| lin-164a50b466fffac4 | duplicate | 2024 Plan | The extracted phrase '2024 Plan' refers to the parent 2024 Bikeway and Trail Facilities Plan, which is already archived and validated. |
 | src-023a7589e17df553 | duplicate | Modifying Access on Paseo del Norte & Unser Boulevard in the Volcano Heights Sector Plan Area - Metropolitan Transportation Board | The preserved R2 candidate src-ab74a46266ac1cff is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
 | src-0281f8d53810aa8c | duplicate | 2024 Bikeway and Trail Facilities Plan | Duplicate discovery record for implemented candidate src-545128f068ffb941. |
 | src-06d2fbff4e1c0e23 | duplicate | North 4th Corridor Sector Development Plan | The preserved R2 candidate src-3acbfa59246593bf is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
@@ -300,6 +312,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-c5aa1fa7865d2885 | duplicate | Rio Grande Boulevard Study | The preserved R2 candidate src-3226456d7e9bd345 is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
 | src-c62f0544fc2c1877 | duplicate | NTMP Request Process Flowchart | The preserved R2 candidate src-393cac968c0c2b62 is the canonical NTMP-flowchart record; retain this duplicate for the official ArcGIS item and discovery path. |
 | src-ca27dd67d514d371 | duplicate | ABC Comprehensive Plan, Chapter 6: Transportation (2025 Update) | Duplicate discovery record for implemented candidate src-8832a87573fd5ed6. |
+| src-cb5f42df9d1ab31c | duplicate | 2022 ABQ RIDE On-Board Rider Survey - Local Staging Copy | The same checksum, size, and document are recorded on the canonical R2 archive record. |
 | src-cc6a4ff2372bfa50 | duplicate | Unified Planning Work Program, FFY 2027-2028 | Duplicate discovery record for implemented candidate src-1a0dfd37475ddc69. |
 | src-cc6bd28528a4f130 | duplicate | Travel Alerts | Duplicate discovery record for implemented candidate src-8a96e3fdb3ea48a0. |
 | src-cee0e4d8e9bf5628 | duplicate | Phase II Engagement Summary | Official City direct-file link is already recorded as provenance on the canonical archived Phase II engagement record. |
