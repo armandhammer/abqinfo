@@ -18,6 +18,12 @@ Transportation studies and reports.
 
   Provides the South Yale corridor's existing-conditions material, study-area map, segment concept plans, public-meeting record, and development-oriented Complete Street concepts prepared for the area south of Central Avenue.
 
+- [Rio Grande Boulevard Complete Street Concept Plan (2017 unadopted archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-rio-grande-boulevard-complete-street-concept-plan-2017.pdf)
+
+  Presents the City's unadopted 2017 Rio Grande Boulevard Complete Street concept plan, documenting traffic, crashes, walking, bicycling, and transit conditions; evaluating corridor and intersection alternatives; recording public engagement; and identifying preferred improvements from south of Central Avenue through the I-40 area.
+
+  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/XSections/Rio_Grande_Blvd._Study-NotAdopted-2017.pdf) · [City plans and studies index](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections)
+
 - [Amole Mesa Avenue and Messina Drive Traffic Calming Study](https://www.cabq.gov/council/find-your-councilor/district-3/amole-mesa-ave-and-messina-dr-traffic-calming-study)
 
   Documents the 2023 neighborhood traffic-calming study and links the public-meeting presentation covering traffic conditions, community concerns, potential treatments, and the study process for Amole Mesa Avenue and Messina Drive.

@@ -91,6 +91,56 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   The Planning Department's maintained index links adopted area plans, transportation studies, and cross-section guidance used in public-right-of-way design, including the Downtown Walkability Analysis and Rio Grande Boulevard Study.
 
+### Historical area and corridor transportation records
+
+- [Los Duranes Sector Development Plan — transportation section (2012 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-los-duranes-sector-plan-transportation-2012.pdf)
+
+  Preserves Los Duranes' adopted transportation guidance and roadway inventory, emphasizing traffic calming, safe routes to school, transit, pedestrian and bicycle safety, acequia and bosque trail connections, intersection improvements, and street standards that maintain the neighborhood's historic rural character.
+
+  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/XSections/Los_Duranes_Transportation-2012.pdf)
+
+- [Nob Hill Highland Sector Development Plan — transportation section (2007; amended through 2014 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-nob-hill-highland-sector-plan-transportation-2007-2014.pdf)
+
+  Preserves the adopted Nob Hill Highland plan's movement-system guidance, including Central Avenue transit, pedestrian and bicycle networks, traffic calming, parking, streetscapes, neighborhood protection, and prototypical intersection and crossing designs developed for the corridor and surrounding neighborhoods.
+
+  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/XSections/Nob_Hill_Highland-2007.pdf)
+
+- [North Fourth Street Corridor Plan — transportation and street design (2010 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-north-fourth-street-corridor-plan-2010.pdf)
+
+  Preserves the North Fourth Street corridor plan's transportation and street-design guidance from Mountain Road to Los Ranchos, including transit-oriented redevelopment, pedestrian safety, roadway reconstruction, access, lighting, landscaping, and distinct cross sections for the corridor's southern and northern segments.
+
+  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/XSections/North_4th_Street-2010.pdf)
+
+- [Paseo del Norte and Unser Boulevard access-modification resolution (2013 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-paseo-unser-access-modification-resolution-2013.pdf)
+
+  Preserves MRMPO's 2013 access-modification resolution and roadway-access inventory for Paseo del Norte and Unser Boulevard, coordinating limited-access intersections with the planned Volcano Heights street network, transit boulevard, bicycle facilities, pedestrian connections, and mixed-use activity center.
+
+  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/XSections/Unser&Paseo_Intersection-2013.PDF)
+
+- [South Yale Sector Development Plan — transportation section (2009 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-south-yale-sector-plan-transportation-2009.pdf)
+
+  Preserves the South Yale plan's transportation chapter, mapping proposed bicycle routes, pedestrian crossings and trails, streetcar stops, medians, parking, streetscapes, gateways, and intersection improvements along Yale, Gibson, Cesar Chavez, and surrounding residential streets.
+
+  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/XSections/South_Yale_2009.pdf)
+
+- [Uptown Sector Development Plan — transportation and connectivity (2009; amended through 2013 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-uptown-sector-plan-transportation-2009-2013.pdf)
+
+  Preserves Uptown's adopted transportation and public-connectivity guidance, including transit use, a proposed district circulator, pedestrian and bicycle circulation systems, shared parking, wayfinding, shaded walkways, plazas, and connections among homes, businesses, parking structures, and transit stops.
+
+  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/XSections/Uptown-2009.pdf)
+
+- [Volcano Cliffs Sector Development Plan — transportation standards (2011; amended through 2015 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-volcano-cliffs-sector-plan-transportation-2011-2015.pdf)
+
+  Preserves the Volcano Cliffs plan's multimodal transportation standards, including the connected roadway network, access and safety policies, transit accommodation, pedestrian-supportive blocks, and detailed cross sections for neighborhood streets, collectors, boulevards, park edges, and the town center.
+
+  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/XSections/Volcano_Cliffs-2011.pdf)
+
+- [Volcano Heights Sector Development Plan — transportation standards (2010; amended 2014 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-volcano-heights-sector-plan-transportation-2010-2014.pdf)
+
+  Preserves Volcano Heights' amended street and streetscape standards, documenting limited-access intersections, the primary and secondary network, pedestrian-oriented block design, transit-supportive development, and detailed cross sections for neighborhood streets, connectors, Unser Boulevard, the transit boulevard, and town center.
+
+  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/XSections/Volcano_Heights-2013.pdf)
+
 ## Bernalillo County planning
 
 - [Bernalillo County Transportation Plans](https://www.bernco.gov/public-works/transportation-planning/transportation-plans)
