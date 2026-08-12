@@ -42,7 +42,7 @@ try {
   $response = $raw | ConvertFrom-Json
   $objects = @($response.Contents | ForEach-Object {
     [ordered]@{key=$_.Key;size_bytes=[int64]$_.Size;last_modified=$_.LastModified;etag=([string]$_.ETag).Trim('"');storage_class=$_.StorageClass;public_url='https://files.abqinfo.com/'+$_.Key}
-  } | Sort-Object key)
+  } | Sort-Object { [string]$_['key'] })
   [int64]$total = 0
   foreach ($object in $objects) { $total += [int64]$object['size_bytes'] }
   [ordered]@{generated_at=(Get-Date).ToUniversalTime().ToString('o');bucket=$Bucket;object_count=$objects.Count;total_bytes=[int64]$total;objects=$objects} | ConvertTo-Json -Depth 6 | Set-Content -LiteralPath $OutputPath -Encoding utf8

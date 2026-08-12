@@ -1,5 +1,6 @@
 {
   "reviewed_at": "2026-08-12T15:06:46.4386049Z",
+  "archived_at": "2026-08-12T15:32:55Z",
   "scope": "Bounded archival and implementation review of the CABQ Council District Poster Map and NTMP Request Process Flowchart",
   "source_catalog": "https://dmd-public-cabq.hub.arcgis.com/",
   "candidates": [
@@ -29,8 +30,12 @@
       "current_version_check": "A CABQ ArcGIS organization search returned this as the sole Council District Poster Map item; the dated January 2026 edition remains the publisher's current poster-map record.",
       "visual_review": "The complete one-page map rendered successfully at full resolution; district boundaries, street labels, legend portraits, scale, north arrow, inset map, and January 2026 production note were intact and legible.",
       "proposed_r2_key": "maps/cabq-council-district-poster-map-2026-01.pdf",
+      "r2_url": "https://files.abqinfo.com/maps/cabq-council-district-poster-map-2026-01.pdf",
+      "r2_etag": "c8aaebbe8b780cf156aab9cf8820a2f1-2",
+      "r2_last_modified": "2026-08-12T15:32:49+00:00",
+      "r2_content_type": "application/pdf",
       "implementation_location": "content/maps/maps.md",
-      "production_upload_status": "not uploaded; explicit authorization required"
+      "production_upload_status": "uploaded and byte-identity verified through the public R2 URL"
     },
     {
       "id": "src-c62f0544fc2c1877",
@@ -56,18 +61,24 @@
       "current_version_check": "CABQ ArcGIS organization searches found only this NTMP request-process flowchart; related current NTMP maps and dashboards are distinct resources rather than successors.",
       "visual_review": "The complete infographic was visually intact and legible, including request eligibility, review, 48-hour study, report, design, funding, scheduling, construction, and recommended treatment steps.",
       "proposed_r2_key": "transportation/roadway-projects/speed-management/cabq-ntmp-request-process-flowchart-2026.png",
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-ntmp-request-process-flowchart-2026.png",
+      "r2_etag": "c54eac8b99ebb4982e92bce77e6f06d8",
+      "r2_last_modified": "2026-08-12T15:32:55+00:00",
+      "r2_content_type": "image/png",
       "implementation_location": "content/transportation/roadway-projects/speed-management.md",
-      "production_upload_status": "not uploaded; explicit authorization required"
+      "production_upload_status": "uploaded and byte-identity verified through the public R2 URL"
     }
   ],
   "r2": {
     "bucket": "abqinfo-bucket",
     "storage_class": "Standard",
-    "current_object_count": 61,
-    "current_storage_bytes": 725638531,
+    "pre_upload_object_count": 61,
+    "pre_upload_storage_bytes": 725638531,
+    "current_object_count": 63,
+    "current_storage_bytes": 743673730,
     "candidate_storage_bytes": 18035199,
     "candidate_storage_mib": 17.2,
-    "storage_added_by_this_batch_bytes": 0,
+    "storage_added_by_this_batch_bytes": 18035199,
     "projected_storage_if_this_batch_is_approved_bytes": 743673730,
     "projected_percent_of_current_free_storage_allowance": 7.437,
     "projected_storage_if_this_batch_and_pending_bernco_standards_are_approved_bytes": 752835286,
@@ -76,5 +87,5 @@
     "pricing_source": "https://developers.cloudflare.com/r2/pricing/",
     "standard_free_storage_gb_month_per_month": 10
   },
-  "decision": "Implement both current official files with their CABQ ArcGIS source-item links; retain both candidates for explicit R2 archival authorization."
+  "decision": "Preserve both unmodified originals in R2, use the stable archive URLs on ABQInfo, and retain the official CABQ ArcGIS item links for provenance and future-version checks."
 }

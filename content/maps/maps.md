@@ -27,7 +27,7 @@ Interactive maps of city data and infrastructure.
 
   The City’s map library includes the official Zone Atlas, address and parcel reference tools, council districts, land use, streets, neighborhoods, and printable maps.
 
-- [Council District Poster Map — January 2026 (PDF)](https://www.arcgis.com/sharing/rest/content/items/47889b7150894b1c92a45ea3c1ffe3bd/data)
+- [Council District Poster Map — January 2026 (archived PDF)](https://files.abqinfo.com/maps/cabq-council-district-poster-map-2026-01.pdf)
 
   Provides the City's January 2026 printable council-district map with district boundaries and councilor photographs, offering a dated civic-reference snapshot for preservation alongside the live council map.
 
