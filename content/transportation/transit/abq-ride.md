@@ -56,6 +56,10 @@ ABQ Ride bus service information and data.
 
   Records early community priorities and transit tradeoffs gathered through surveys, focus groups, pop-up events, workshops, meetings, presentations, and outreach to riders and underserved populations. [Official City PDF](https://www.cabq.gov/transit/documents/abq-ride-forward-phase-i-engagement-summary.pdf)
 
+- [2022 ABQ RIDE On-Board Rider Survey](https://files.abqinfo.com/transportation/transit/abq-ride-forward/on-board-rider-survey-2022.pdf)
+
+  Profiles weekday and weekend riders, travel patterns, transfers, trip purposes, service use, demographics, automobile access, and priorities for improving Albuquerque bus service, providing the rider baseline used during ABQ RIDE Forward and later zero-fare policy analysis. [City resolution citing the original survey](https://www.cabq.gov/transit/documents/approved_zero-fares-resolution-8-8-2024.pdf/%40%40download/file/APPROVED_Zero%20Fares%20Resolution%20-%208.8.2024.pdf)
+
 Project contact: Andrew de Garmo, Principal Planner, ABQ RIDE — [adegarmo@cabq.gov](mailto:adegarmo@cabq.gov) — 505-724-3109.
 
 ## Open Data
