@@ -1,14 +1,14 @@
 ﻿# ABQ Info authoritative source catalog
 
-Generated: 2026-08-12T22:08:40.8349225Z
+Generated: 2026-08-12T22:59:53.8126445Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 3727 candidates and 90 R2 objects totaling 1296216321 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 3740 candidates and 103 R2 objects totaling 1437970715 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 3272 |
+| pending review | 3244 |
 | approved for addition | 0 |
 | downloading | 0 |
 | downloaded | 30 |
@@ -16,10 +16,10 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 0 |
-| validated | 186 |
-| excluded | 94 |
-| duplicate | 111 |
-| superseded | 7 |
+| validated | 197 |
+| excluded | 95 |
+| duplicate | 133 |
+| superseded | 14 |
 | blocked | 0 |
 | requires human review | 27 |
 
@@ -40,16 +40,29 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | ABQ RIDE Forward Phase II Engagement Summary | City of Albuquerque | 2023-08 | 1785313 | content/transportation/transit/abq-ride.md | [source](https://www.cabq.gov/transit/transit-programs-projects/abq-ride-forward) | [R2](https://files.abqinfo.com/transportation/transit/abq-ride-forward/phase-ii-engagement-summary-2023.pdf) |
 | ABQ RIDE Forward Phase III Engagement Summary | City of Albuquerque | 2024-11 | 2216133 | content/transportation/transit/abq-ride.md | [source](https://www.cabq.gov/transit/transit-programs-projects/abq-ride-forward) | [R2](https://files.abqinfo.com/transportation/transit/abq-ride-forward/phase-iii-engagement-summary-2024.pdf) |
 | ABQ RIDE Forward Phase III Recovery Network Report | City of Albuquerque | 2024-05-07 | 52499555 | content/transportation/transit/abq-ride.md | [source](https://www.cabq.gov/transit/transit-programs-projects/abq-ride-forward) | [R2](https://files.abqinfo.com/transportation/transit/abq-ride-forward/phase-iii-recovery-network-report-2024.pdf) |
+| Central Avenue Existing Conditions Presentation | City of Albuquerque | 2013 | 5698415 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/neighborhood-projects/central-avenue-complete-street-plan-1st-street-to-girard) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/central-avenue-complete-streets-existing-conditions-2013.pdf) |
 | City of Albuquerque 2023-2027 Consolidated Plan and 2023 Action Plan | City of Albuquerque | 2023-2027 | 20352710 | content/development-land-use/projects.md | [source](https://www.cabq.gov/health-housing-homelessness/transparency/consolidated-plans-and-amendments) | [R2](https://files.abqinfo.com/housing/affordable-housing/cabq-2023-2027-consolidated-plan-and-2023-action-plan.pdf) |
 | City of Albuquerque Approved Budget, Fiscal Year 2027 | City of Albuquerque | FY 2027 | 22776293 | content/city-data/budget-spending.md | [source](https://www.cabq.gov/dfa/budget/annual-budget) | [R2](https://files.abqinfo.com/city-data/budget-spending/cabq-fy2027-approved-budget.pdf) |
 | Council District Poster Map | City of Albuquerque | 2026-01 | 16586301 | content/maps/maps.md | [source](https://www.arcgis.com/home/item.html?id=47889b7150894b1c92a45ea3c1ffe3bd) | [R2](https://files.abqinfo.com/maps/cabq-council-district-poster-map-2026-01.pdf) |
+| Draft Girard Boulevard Complete Street Master Plan | City of Albuquerque | 2013-03 | 33167254 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/neighborhood-projects/girard-boulevard-complete-streets-master-plan) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/girard-boulevard-complete-street-master-plan-draft-2013.pdf) |
 | Final ABQ RIDE Forward Recovery Network Plan | City of Albuquerque | 2025-06-04 | 13772906 | content/transportation/transit/abq-ride.md | [source](https://www.cabq.gov/transit/transit-programs-projects/abq-ride-forward) | [R2](https://files.abqinfo.com/transportation/transit/abq-ride-forward/final-recovery-network-plan-2025.pdf) |
+| Girard Boulevard Phase I Construction Plans: Thaxton to Central | City of Albuquerque | 2016-04 | 16575014 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/neighborhood-projects/girard-boulevard-complete-streets-master-plan) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/girard-boulevard-phase-1-construction-plans-2016.pdf) |
+| Girard Boulevard Phase II Construction Plans: Central to Lomas | City of Albuquerque | 2016-07 | 33706495 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/neighborhood-projects/girard-boulevard-complete-streets-master-plan) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/girard-boulevard-phase-2-construction-plans-2016.pdf) |
+| Girard Boulevard Phase III Construction Plans: Lomas to Indian School | City of Albuquerque | 2016-06 | 16687939 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/neighborhood-projects/girard-boulevard-complete-streets-master-plan) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/girard-boulevard-phase-3-construction-plans-2016.pdf) |
 | Integrated Development Ordinance ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â effective May 6, 2026 | City of Albuquerque | 2026-05-06 | 23832206 | content/development-land-use/zoning-ido.md | [source](https://www.cabq.gov/planning/codes-policies-regulations/integrated-development-ordinance-1/integrated-development-ordinance) | [R2](https://files.abqinfo.com/housing/zoning-ido/cabq-ido-effective-2026-05-06.pdf) |
 | Lead and Coal Studies Final Report | City of Albuquerque | 2025-03 | 122503452 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/neighborhood-traffic-management-program/studies) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-lead-coal-studies-final-report-2025.pdf) |
+| March 2014 Draft Central Avenue Complete Street Plan and Design Toolkit | City of Albuquerque | 2014-03-26 | 11895405 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/neighborhood-projects/central-avenue-complete-street-plan-1st-street-to-girard) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/central-avenue-complete-streets-plan-march-2014.pdf) |
 | Nob Hill Highland Sector Development Plan â€” Transportation Section | City of Albuquerque | 2007-09; amended through 2014-08 | 8234679 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-nob-hill-highland-sector-plan-transportation-2007-2014.pdf) |
 | North Fourth Street Corridor Plan â€” Transportation and Street Design | City of Albuquerque | 2010 | 3175202 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-north-fourth-street-corridor-plan-2010.pdf) |
+| October 2013 Draft Central Avenue Complete Street Plan and Design Toolkit | City of Albuquerque | 2013-10 | 11759630 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/neighborhood-projects/central-avenue-complete-street-plan-1st-street-to-girard) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/central-avenue-complete-streets-plan-october-2013.pdf) |
+| October 2013 Draft Plan Presentation | City of Albuquerque | 2013-10-30 | 7577077 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/neighborhood-projects/central-avenue-complete-street-plan-1st-street-to-girard) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/central-avenue-complete-streets-draft-plan-presentation-october-2013.pdf) |
 | Rio Grande Boulevard Complete Street Concept Plan | City of Albuquerque | 2017-02 | 74289970 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-rio-grande-boulevard-complete-street-concept-plan-2017.pdf) |
+| South Yale Corridor Segments and Future Context | City of Albuquerque | 2013-04-22 | 53947 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/neighborhood-projects/south-yale-complete-street-master-plan) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/south-yale-corridor-segments-future-context-2013.pdf) |
 | South Yale Sector Development Plan â€” Transportation Section | City of Albuquerque | 2009 | 4475608 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-south-yale-sector-plan-transportation-2009.pdf) |
+| South Yale Segment 1 Concept Plan: Avenida Cesar Chavez to Kathryn | City of Albuquerque | 2013-04-12 | 1503476 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/neighborhood-projects/south-yale-complete-street-master-plan) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/south-yale-segment-1-concept-plan-2013.pdf) |
+| South Yale Segment 2 Concept Plan: Kathryn to Ross | City of Albuquerque | 2013-04-18 | 1470373 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/neighborhood-projects/south-yale-complete-street-master-plan) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/south-yale-segment-2-concept-plan-2013.pdf) |
+| South Yale Segment 3 Concept Plan: Ross to Gibson | City of Albuquerque | 2013-04-12 | 1132596 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/neighborhood-projects/south-yale-complete-street-master-plan) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/south-yale-segment-3-concept-plan-2013.pdf) |
+| South Yale Study Area and Context Zones | City of Albuquerque | 2013-04-07 | 526773 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/neighborhood-projects/south-yale-complete-street-master-plan) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/south-yale-study-area-context-zones-2013.pdf) |
 | Uptown Sector Development Plan â€” Transportation and Connectivity | City of Albuquerque | 2009-01-15; amended through 2013-12 | 3293254 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-uptown-sector-plan-transportation-2009-2013.pdf) |
 | Volcano Cliffs Sector Development Plan â€” Transportation Standards | City of Albuquerque | 2011-05; amended through 2015-07-09 | 5205575 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-volcano-cliffs-sector-plan-transportation-2011-2015.pdf) |
 | Volcano Heights Sector Development Plan â€” Transportation Standards | City of Albuquerque | 2010-07; amended 2014-11-05 | 8772504 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-volcano-heights-sector-plan-transportation-2010-2014.pdf) |
@@ -118,7 +131,6 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Building permits open data | City of Albuquerque | content/development-land-use/projects.md | [source](https://data.cabq.gov/business/buildingpermits/) |
 | Central Avenue Complete Street Plan: 1st Street to Girard | City of Albuquerque | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/neighborhood-projects/central-avenue-complete-street-plan-1st-street-to-girard) |
 | City Drainage Ponds | City of Albuquerque | content/maps/maps.md | [source](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=69a932663bf84beaa81d6268c327f24b) |
-| City IDO page | City of Albuquerque | content/development-land-use/zoning-ido.md | [source](https://www.cabq.gov/planning/codes-policies-regulations/integrated-development-ordinance-1/integrated-development-ordinance) |
 | City of Albuquerque School Crossings Dashboard | City of Albuquerque | content/maps/dashboards.md | [source](https://www.arcgis.com/apps/dashboards/4a52905fd707412085ce9811ad48dd25) |
 | City Open Space planning projects and resource-management plans | City of Albuquerque | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/parksandrecreation/open-space/about-open-space/open-space-resource-management-plans) |
 | City paratransit service | City of Albuquerque | content/transportation/transit/sun-van.md | [source](https://www.cabq.gov/transit/paratransit-service) |
@@ -204,7 +216,6 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | NMDOT NM 556/Tramway Boulevard Corridor Study | NMDOT | content/transportation/roadway-projects/studies.md | [source](https://www.dot.nm.gov/projects/tramway-study/) |
 | NMDOT Park & Ride | NMDOT | content/transportation/transit/_index.md | [source](https://www.dot.nm.gov/travel-information/park-and-ride-bus-shuttle-service) |
 | NMDOT Project Dashboard | NMDOT | content/maps/dashboards.md | [source](https://www.dot.nm.gov/project-dashboard/) |
-| NMDOT project page | NMDOT | content/transportation/roadway-projects/studies.md | [source](https://www.dot.nm.gov/projects/i40-west-new-mexico/) |
 | NMDOT Statewide Transportation Improvement Program | NMDOT | Transportation Plans | [source](https://www.dot.nm.gov/infrastructure/statewide-transportation-improvement-program-stip/) |
 | NMDOT STIP viewer | NMDOT | content/maps/dashboards.md | [source](https://nm.stipviewer.pmgpro.com/) |
 | Road Conditions | NMDOT | content/maps/maps.md | [source](https://nmroads.com) |
@@ -246,8 +257,11 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-11574e3ddc3abc1d | duplicate | City Programs & Plans that Support a Bike Friendly Community City Programs & Plans that Support a Bike Friendly Community City Programs & Plans that Support a Bike Friendly Community | Broad bicycle-program landing page duplicates the current plan, safety-project map, transit plan, and other sources already cataloged individually. |
 | src-12031307a5ac64aa | duplicate | Albuquerque Region Housing Needs Assessment (2024) | Duplicate discovery record for implemented candidate src-8778e4e2844fdd47. |
 | src-144dce5e96686cd0 | duplicate | src-d0ed674dd8fe9559 | Duplicate discovery record for implemented candidate src-b9c1a8d5cb7902b6. |
+| src-18e50a6ed6696c30 | duplicate | Street Segments and Characteristics | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
+| src-18ebb17e3018e182 | duplicate | Thaxton Ave to Central Ave | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
 | src-1b2d76be38e38565 | duplicate | Transportation Improvement Program, FFY 2024-2029 | Duplicate discovery record for implemented candidate src-d307ff22691b3f3b. |
 | src-1b7b18696dfbfcc8 | duplicate | Tramway Study Public Outreach Summary, CN A300342 | Duplicate discovery record for implemented candidate src-79de5bb4324d2dd4. |
+| src-1be4626dd57e9c54 | duplicate | Central Ave to Lomas Blvd | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
 | src-22b21921507b9fa8 | duplicate | src-53495318782dae10 | Duplicate discovery record for implemented candidate src-53495318782dae10. |
 | src-247a3f301b23e673 | duplicate | Download LRBS PDF map | Duplicate discovery record for implemented candidate src-d3f0cf9107a00c74. |
 | src-247ceb733ed01c0d | duplicate | Volcano Cliffs Sector Development Plan | The preserved R2 candidate src-e1cde64af2f4a573 is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
@@ -258,18 +272,26 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-2f094c9ddbb50ce1 | duplicate | Fiscal Year 2027 Approved Budget | Duplicate discovery record for implemented candidate src-0c0bf6fdce0dfbea. |
 | src-2f15ef9451d99e32 | duplicate | src-a8552ef7c580c636 | Duplicate discovery record for implemented candidate src-2c94f1cc7996207a. |
 | src-302eeb9a704644f3 | duplicate | Transitions 2045 MTP Appendices | Duplicate discovery record for implemented candidate src-9f98b2dbdfc9d974. |
+| src-32f57d7a07be502f | duplicate | Lomas Blvd to Indian School Rd | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
 | src-34f5e43d0fd0f2d0 | duplicate | ABC Comprehensive Plan | Duplicate discovery record for implemented candidate src-8832a87573fd5ed6. |
 | src-35eddb551a1c17ec | duplicate | Phase III Engagement Summary | Official City direct-file link is already recorded as provenance on the canonical archived Phase III engagement record. |
 | src-36f33a1a6c77f1e0 | duplicate | Phase III Recovery Network Report | Official City direct-file link is already recorded as provenance on the canonical archived Phase III report record. |
+| src-3787e54c6d9c4b69 | duplicate | Central 1st to Girard Complete Streets March 2014 Draft Part 2 | Metadata/view wrapper for the superseded split Part 2 edition; the complete March 2014 PDF is archived. |
+| src-393c17d6a932dcd1 | duplicate | Central 1st to Girard Complete Streets March 2014 Draft Part 1 | Metadata/view wrapper for the superseded split Part 1 edition; the complete March 2014 PDF is archived. |
+| src-3b7d01661d3dc000 | duplicate | Feb. 27 existing conditions presentation | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
 | src-3d676705b6616cf4 | duplicate | src-7f51da342c00a840 | Duplicate discovery record for implemented candidate src-31c4d4eff2bc1b5a. |
+| src-3d6ce6a780956cbd | duplicate | City IDO page | Companion source-of-truth link for the canonical archived Integrated Development Ordinance record. |
 | src-40cfc5da0dbddcff | duplicate | Visit Hub Site | Generic Hub landing-page record duplicates the 34 individually inventoried DMD catalog items and is retained as discovery provenance rather than public site content. |
 | src-428c2b8d791a054f | duplicate | Volcano Heights Sector Development Plan | The preserved R2 candidate src-e83d30ce68171820 is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
 | src-42d0b92e1b1b1c18 | duplicate | Buena Vista Bike Boulevard 60% Plans (legacy R2 key) | Exact duplicate of the implemented Buena Vista plan: identical 47,823,090-byte size and R2 ETag 318576c3cafe8b5449d8c8f5fd2ae6a2. Retained in storage because deletion was not authorized. |
 | src-4338e5bbd0985b75 | duplicate | official-2000-comprehensive-on-street-bicycle-plan | Duplicate discovery record for implemented candidate src-0f60535452ac9154. |
 | src-46cb08fc8e5a1ad4 | duplicate | Council District Poster Map | The preserved R2 candidate src-9a8de57080520216 is the canonical poster-map record; retain this duplicate for the official ArcGIS item and discovery path. |
 | src-4b6648bb12c8809a | duplicate | transportation planning | Broad County transportation-planning landing page duplicates the retained Transportation Plans, Complete Streets, Project Planning, and Traffic Impact Analysis sources. |
+| src-4c9e6a583778b007 | duplicate | October 2013 Draft Central Avenue Complete Street Plan and Design Toolkit | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
 | src-4dbb0390d53edf19 | duplicate | Open Space Trails - Public | Backing Open Space trail layer duplicates the retained City Open Space maps and broader public bikeways-and-trails viewer without adding a distinct public-facing tool. |
 | src-4f9925e4698c3223 | duplicate | ABC Comprehensive Plan, Chapter 9: Housing (2025 Update) | Duplicate discovery record for implemented candidate src-5833586f28079104. |
+| src-5146f58df803a143 | duplicate | Girard Blvd Aug 23 Meeting Notes | Metadata/view wrapper for the excluded brief Girard workshop-comment notes. |
+| src-54471be191e3b764 | duplicate | Girard Boulevard Intersection Concepts | Metadata/view wrapper for the superseded Girard intersection-concept sheets. |
 | src-5493cb1d487d09db | duplicate | I-40 West Corridor Study: Operations Plan | Duplicate discovery record for implemented candidate src-a89c0c7e764e720f. |
 | src-595eb58320b4ff58 | duplicate | Phase I Existing Conditions Report | Official City direct-file link is already recorded as provenance on the canonical archived Phase I existing-conditions record. |
 | src-5964b940e185bd7a | duplicate | Public Restrooms | Underlying feature service duplicates the Public Restroom Finder application, which is outside ABQInfo's selected scope; retain only as catalog provenance. |
@@ -277,6 +299,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-62ee5dd3da3bd076 | duplicate | Lead and Coal Studies Final Report | Official City direct-file link is already recorded as provenance on the canonical archived final-report record. |
 | src-68ba8f735091955e | duplicate | Highway Safety Improvement Program | Duplicate discovery record for implemented candidate src-b2c0ad0c4336e968. |
 | src-6acaba8fc31a61e4 | duplicate | documents | Duplicate discovery record for implemented candidate src-0f60535452ac9154. |
+| src-6ae151178bc3a7b7 | duplicate | Draft Girard Boulevard Complete Streets Master Plan | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
 | src-710e3cfd505f7729 | duplicate | ABQ-RIDE-Forward-Phase-II-Engagement-Summary-August-2023 | Duplicate discovery record for implemented candidate src-e579f837294379a3. |
 | src-718baaa375fdf25c | duplicate | Moratorium Dashboard | The existing Construction Moratoriums entry retains the City source page that embeds this same dashboard and provides more useful dates and context. |
 | src-72fb72405d08a5c1 | duplicate | I-40 West Corridor Study: Conceptual Alternatives | Duplicate discovery record for implemented candidate src-6ab062defb508468. |
@@ -285,19 +308,24 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-79251e803fb8210f | duplicate | Pedestrian Level of Traffic Stress (LTS) App | Alternate portal URL for ArcGIS item 577561bcf1534cf5bcf105686cb397df, already implemented and validated. |
 | src-79abf932fed04610 | duplicate | ABC Comprehensive Plan, Chapter 10: Parks & Open Space (2025 Update) | Duplicate discovery record for implemented candidate src-5cefbce02e362e4b. |
 | src-7ab41adfa0b3a575 | duplicate | ABQ-Choices-Report-20220908 | Duplicate discovery record for implemented candidate src-7e3ac56766921ae2. |
+| src-7c065aa0e6a86ad0 | duplicate | Girard Boulevard Bicycle Facility Options | Metadata/view wrapper for the superseded Girard bicycle-option sheets. |
 | src-7c2195422742513b | duplicate | Lead and Coal Studies Final Report - R2 Archive Approval | The complete original is now preserved and validated in the canonical R2 final-report record. |
 | src-7f51da342c00a840 | duplicate | Long Range Transportation System Guide (LRTS Guide) | Duplicate discovery record for implemented candidate src-31c4d4eff2bc1b5a. |
 | src-823191c37ffca5f8 | duplicate | Transitions 2045 MTP Executive Summary | The preserved R2 candidate src-b5c323782239e519 is the canonical English-summary record; retain this duplicate for the official MRCOG direct-file URL. |
 | src-85f190542564176f | duplicate | Phase II Concept Report | Official City direct-file link is already recorded as provenance on the canonical archived Phase II concepts record. |
+| src-869bc62faed3afbe | duplicate | NMDOT project page | Companion source-of-truth link shared by the canonical archived I-40 West study records. |
+| src-87076ab6324859f2 | duplicate | Concept Plan - Segment 2 | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
 | src-89ba195983f6d5e8 | duplicate | 2011 Albuquerque Bikeways and Trails Master Plan Update - Design Guidelines | Duplicate discovery record for implemented candidate src-5cd111deac4749c3. |
 | src-8cdddf853227c40a | duplicate | I-40 West Corridor Study: Phase A/B Corridor Study | Duplicate discovery record for implemented candidate src-d4957d9c6500b754. |
 | src-9073c4c1acab4048 | duplicate | src-cc6a4ff2372bfa50 | Duplicate discovery record for implemented candidate src-1a0dfd37475ddc69. |
 | src-938b260dca443a97 | duplicate | src-1b7b18696dfbfcc8 | Duplicate discovery record for implemented candidate src-79de5bb4324d2dd4. |
 | src-93a5d61174cab3ea | duplicate | Complete Streets resolution in 2011 | Duplicate discovery record for implemented candidate src-f8614b43122b3de3. |
+| src-9c5dee0334c1e249 | duplicate | Concept Plan - Segment 3 | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
 | src-9ddd86a240b30500 | duplicate | Complete Bernalillo County Technical Standards | The preserved R2 candidate src-42ff065feb86046d is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
 | src-9fa25ee0833a0ce6 | duplicate | src-d8b68c090d8d9a44 | Duplicate discovery record for implemented candidate src-d8b68c090d8d9a44. |
 | src-a8552ef7c580c636 | duplicate | Albuquerque Metropolitan Planning Area (AMPA) (PDF) | Duplicate discovery record for implemented candidate src-2c94f1cc7996207a. |
 | src-aa39bf3d1fdab087 | duplicate | src-93a5d61174cab3ea | Duplicate discovery record for implemented candidate src-f8614b43122b3de3. |
+| src-b002caeabcca6f7e | duplicate | Oct. 30 Draft Plan Presentation | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
 | src-b1bb29f8469c84b1 | duplicate | Download PPTS PDF map | Duplicate discovery record for implemented candidate src-3080803365506588. |
 | src-b42957559c1959c0 | duplicate | Travel Information | Broad travel-information landing page; its useful Albuquerque-relevant services are cataloged individually. |
 | src-b659f7e87e249d55 | duplicate | Nob Hill Highland Sector Development Plan | The preserved R2 candidate src-6916bbd03258654b is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
@@ -315,12 +343,16 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-cb5f42df9d1ab31c | duplicate | 2022 ABQ RIDE On-Board Rider Survey - Local Staging Copy | The same checksum, size, and document are recorded on the canonical R2 archive record. |
 | src-cc6a4ff2372bfa50 | duplicate | Unified Planning Work Program, FFY 2027-2028 | Duplicate discovery record for implemented candidate src-1a0dfd37475ddc69. |
 | src-cc6bd28528a4f130 | duplicate | Travel Alerts | Duplicate discovery record for implemented candidate src-8a96e3fdb3ea48a0. |
+| src-ce27aad8f857234a | duplicate | Study Area | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
+| src-ceadee92ccd8fa1e | duplicate | Girard Complete Streets Master Plan August 23 Presentation | Metadata/view wrapper for the superseded Girard workshop presentation. |
 | src-cee0e4d8e9bf5628 | duplicate | Phase II Engagement Summary | Official City direct-file link is already recorded as provenance on the canonical archived Phase II engagement record. |
 | src-d0e2cb6199c14ee2 | duplicate | Current City Limits | Generic boundary service duplicates the broader City maps library already retained on ABQInfo and adds no distinct planning explanation or public-facing application. |
 | src-d0ed674dd8fe9559 | duplicate | FY24-29 TIP ITS Project Review & Architecture Cert (7-16-23) | Duplicate discovery record for implemented candidate src-b9c1a8d5cb7902b6. |
+| src-d2e84afc15b63900 | duplicate | Concept Plan - Segment 1 | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
 | src-d635f8001d7cbd39 | duplicate | Project Dashboard | Duplicate discovery record for implemented candidate src-dfe528e25b833667. |
 | src-d664190ecadc97a8 | duplicate | Projects | Broad NMDOT projects landing page duplicates the implemented Active Projects map and individual Albuquerque project pages. |
 | src-d8b68c090d8d9a44 | duplicate | Downtown Walkability Analysis | The preserved R2 candidate src-a61754e9e493cd3c is the canonical document record; retain this duplicate for the official City direct-file URL and discovery path. |
+| src-d9e78a2486a926cd | duplicate | Central Avenue Complete Streets Design Toolkit (1st to Girard) Part 1 | Metadata/view wrapper for the superseded split October 2013 edition; the complete PDF is archived. |
 | src-db4dfd5029f9e710 | duplicate | Permits | Broad permits landing page duplicates the implemented NMDOT ePermitting source, which contains the current applications, guidance, and contacts. |
 | src-dc91480e261ecffa | duplicate | Transitions 2045 MTP Full Document | Duplicate discovery record for implemented candidate src-7e1a8bec260f1b77. |
 | src-dff91a717447d7aa | duplicate | Transiciones 2045 Plan Metropolitano de Transporte Resumen Ejecutivo (MTP Executive Summary ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Spanish version) | The preserved R2 candidate src-0b89c7adb106d638 is the canonical Spanish-summary record; retain this duplicate for the official MRCOG direct-file URL. |
@@ -335,6 +367,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-efdf74ef6b0a99a2 | duplicate | Download LRRS PDF map | Duplicate discovery record for implemented candidate src-53495318782dae10. |
 | src-f413465fab00efba | duplicate | The City boasts more than 29,000 acres of Open Space in and around Albuquerque to explore, recreate, and help preserve our city's natural heritage. Open Space The City boasts more than 29,000 acres of Open Space in and around Albuquerque to explore, recreate, and help preserve our city's natural heritage. | Generic Open Space landing page duplicates the more useful planning and resource-management library already implemented on ABQInfo. |
 | src-fa0a012c5479abdb | duplicate | src-d3f0cf9107a00c74 | Duplicate discovery record for implemented candidate src-d3f0cf9107a00c74. |
+| src-fb83e1ee4d276d04 | duplicate | March 2014 Draft Central Avenue Complete Street Plan and Design Toolkit | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
 | src-fb9c324c03d5e0cf | duplicate | 2025 General Obligation Bond Approved Program Book | Duplicate discovery record for implemented candidate src-982cc018b0b8fc01. |
 | src-ff6434a912c30b5e | duplicate | Final ABQ RIDE Forward Recovery Network Plan | Official City direct-file link is already recorded as provenance on the canonical archived plan record. |
 | src-ff7935d761e49431 | duplicate | Download PLTS PDF map | Duplicate discovery record for implemented candidate src-6697ce61c4489b98. |
@@ -368,6 +401,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-3c1cf52a253dfd53 | excluded | Travel Times | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-3c80290d8188f61a | excluded | City open-data catalog | User-approved quality cleanup: broad open-data root does not lead visitors directly to a useful dataset or map. |
 | src-3c9526d7aaf73b83 | excluded | Police incidents open data | User removed this dataset from the Public Safety Data page on 2026-08-04; preserve that editorial decision and do not reintroduce it without review. |
+| src-40050957db5dd4f7 | excluded | Public Comments | Brief workshop-comment notes add little durable context beyond the public-input findings preserved in the comprehensive draft master plan. |
 | src-42e962313b6f79aa | excluded | Business Support | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-47158210c88ca369 | excluded | Transportation Regulation Bureau | User-approved relevance cleanup: commercial-carrier regulation is outside ABQInfo's core public-information scope. |
 | src-4d580c544ced23b2 | excluded | Boards & Committees | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
@@ -459,10 +493,17 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-d850e374f0547178 | requires human review | Appendix H ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ Multiuse Trail Considerations (2015 Plan) | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-e13cf1e5cc7915a2 | requires human review | Toronto-style Tall Curb Engineering Drawings | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-fcfb46498207cafd | requires human review | Appendix A ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ Planning and Policy Framework | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
+| src-2ba50be86045099d | superseded | Part 2 | Split Part 2 edition is redundant with the complete 122-page March 2014 PDF archived in this batch. |
+| src-34e2f45ce716db9f | superseded | Presentation Slides | Workshop presentation substantially repeats the corridor conditions and concepts preserved in the more comprehensive 59-page draft master plan. |
+| src-352fd3c9bbc6b8f6 | superseded | Intersection Concepts for Central to Lomas Segment | Standalone intersection concepts substantially repeat alternatives preserved in the more comprehensive draft master plan and approved construction plans. |
 | src-5edcfaeac63d3a4b | superseded | ABQReport | Legacy Council-hosted copy superseded by the maintained Planning Department copy at documents.cabq.gov. |
 | src-6da20b965df52490 | superseded | MRCOG bicycle and pedestrian planning maps | Broad bicycle-and-pedestrian landing page was replaced by the specific planning-maps, counts, analysis, and safety sources. |
 | src-7b6c76481a7f00c4 | superseded | Potential Road Diets in the Albuquerque Region | 2021 road-diet application has been superseded by MRMPO's maintained 2023 Road Diet Candidates Map source. |
 | src-927546cc176a8954 | superseded | Lead and Coal Public Meeting Material (December 18, 2024) | Superseded project-stage meeting material; the final March 2025 study and 2022 road safety audit provide the durable planning record selected for ABQInfo. |
+| src-a24f043b4d31f1cf | superseded | Part 1 | Split Part 1 edition is redundant with the complete 122-page March 2014 PDF archived in this batch. |
+| src-aea8b55a48a3965c | superseded | Part 2 | Split Part 2 edition is redundant with the complete 120-page October 2013 PDF archived in this batch. |
 | src-bf3de1fd0efdb912 | superseded | Lead and Coal Draft Report (February 14, 2025) | Superseded by the complete March 2025 final report. |
 | src-cf6fa82eb6524971 | superseded | MRMPO Long Range Bikeway System | 2021 long-range bikeway application has been superseded by the adopted 2026 map and maintained active-transportation portfolio. |
+| src-d293be9f3e48051c | superseded | On-Street Bicycle Facility Concepts | Standalone bicycle-option sheets substantially repeat alternatives preserved in the more comprehensive draft master plan. |
 | src-d76388765a077a16 | superseded | YouÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢re Invited: Public Meeting for Tramway Blvd Operations & Safety Study \| A300342 | Expired single public-meeting notice; the maintained NM 556/Tramway Boulevard study page is already implemented. |
+| src-f1ed70e90becf3cc | superseded | Part 1 | Split Part 1 edition is redundant with the complete 120-page October 2013 PDF archived in this batch. |

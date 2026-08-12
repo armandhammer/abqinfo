@@ -1,25 +1,27 @@
-{
-  "recorded_at": "2026-08-12T22:06:39.7412831Z",
-  "completed_item_range": "Archived and validated the recovered 2022 ABQ RIDE On-Board Rider Survey; documented its disappeared original URL and official City provenance; added it to ABQ RIDE planning history; closed ten duplicate 2024 bike-plan self-references.",
-  "total_candidates": 3727,
-  "counts_by_status": {
-    "pending review": 3272,
-    "approved for addition": 0,
-    "downloading": 0,
-    "downloaded": 30,
-    "parsed": 0,
-    "description drafted": 0,
-    "placement assigned": 0,
-    "implemented": 0,
-    "validated": 186,
-    "excluded": 94,
-    "duplicate": 111,
-    "superseded": 7,
-    "blocked": 0,
-    "requires human review": 27
-  },
-  "remaining_nonterminal": 3302,
-  "next_pending_id": "lin-02aacc6738f9b174",
-  "blockers": [],
-  "resume_command": "Review master-inventory candidate lin-02aacc6738f9b174, then continue the next coherent high-value archive batch."
+﻿{
+    "recorded_at":  "2026-08-12T22:59:54.8646033Z",
+    "completed_item_range":  "Validated 13-document Central Avenue, Girard Boulevard, and South Yale Complete Streets archive batch; reconciled 16 redundant or lower-value related records.",
+    "total_candidates":  3740,
+    "counts_by_status":  {
+                             "pending review":  3244,
+                             "approved for addition":  0,
+                             "downloading":  0,
+                             "downloaded":  30,
+                             "parsed":  0,
+                             "description drafted":  0,
+                             "placement assigned":  0,
+                             "implemented":  0,
+                             "validated":  197,
+                             "excluded":  95,
+                             "duplicate":  133,
+                             "superseded":  14,
+                             "blocked":  0,
+                             "requires human review":  27
+                         },
+    "remaining_nonterminal":  3274,
+    "next_pending_id":  "lin-02aacc6738f9b174",
+    "blockers":  [
+
+                 ],
+    "resume_command":  "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Get-CandidatesByStatus.ps1 -Status \"pending review\""
 }

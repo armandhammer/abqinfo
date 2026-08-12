@@ -6,17 +6,101 @@ Transportation studies and reports.
 
 ## City Corridor and Neighborhood Studies
 
-- [Girard Boulevard Complete Streets Master Plan](https://www.cabq.gov/council/projects/neighborhood-projects/girard-boulevard-complete-streets-master-plan)
+### Central Avenue: 1st Street to Girard
+
+- [Official City Project Page](https://www.cabq.gov/council/projects/neighborhood-projects/central-avenue-complete-street-plan-1st-street-to-girard)
+
+  Collects the City's project history and current authoritative links for the Central Avenue Complete Street Plan and Design Toolkit between Downtown and Girard Boulevard.
+
+- [March 2014 Draft Plan and Design Toolkit (archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/central-avenue-complete-streets-plan-march-2014.pdf)
+
+  Documents existing conditions, public priorities, multimodal design concepts, catalytic redevelopment areas, implementation strategies, and block-by-block recommendations for Central Avenue between First Street and Girard Boulevard.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/complete-streets/CentralAveCompleteStreetsReport_DRAFT_03.26.14.pdf)
+
+- [October 2013 Draft Plan and Design Toolkit (archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/central-avenue-complete-streets-plan-october-2013.pdf)
+
+  Preserves the earlier draft, allowing comparison of evolving street designs, transit concepts, public priorities, catalytic redevelopment areas, and implementation recommendations before the March 2014 revision.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/CentralCompleteStreetPlan2013Draft.pdf)
+
+- [October 2013 Draft Plan Presentation (archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/central-avenue-complete-streets-draft-plan-presentation-october-2013.pdf)
+
+  Summarizes the public workshop, including existing conditions, proposed street sections, pedestrian and bicycle improvements, catalytic redevelopment areas, case studies, implementation strategies, and the project's next steps.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/ABQCentralAve_FinalWorkshop_10.30.13.pdf)
+
+- [Existing Conditions Presentation (2013 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/central-avenue-complete-streets-existing-conditions-2013.pdf)
+
+  Presents the project's early policy and existing-conditions analysis, including traffic, transit, pedestrian demand, bicycle crashes, street sections, parking, and prior planning guidance for the Central Avenue corridor.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/ABQ%20Central%20Ave%20Ex%20Con%20NN%20ppt_5.3.13.pdf)
+
+### Girard Boulevard
+
+- [Official City Project Page](https://www.cabq.gov/council/projects/neighborhood-projects/girard-boulevard-complete-streets-master-plan)
 
   Preserves the corridor plan, design drawings, bicycle and intersection concepts, presentations, meeting notes, and implementation history for multimodal improvements on Girard Boulevard between Gibson and Indian School.
 
-- [Central Avenue Complete Street Plan: 1st Street to Girard](https://www.cabq.gov/council/projects/neighborhood-projects/central-avenue-complete-street-plan-1st-street-to-girard)
+- [Draft Complete Street Master Plan (March 2013 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/girard-boulevard-complete-street-master-plan-draft-2013.pdf)
 
-  Collects the 2013–2014 Central Avenue plan and design toolkit, segment presentations, public input, project history, and recommendations for walking, bicycling, transit, and streetscape improvements between Downtown and Girard.
+  Evaluates Girard Boulevard from Gibson to Indian School, documenting traffic and safety conditions, school and neighborhood concerns, roadway alternatives, bicycle and pedestrian treatments, intersection concepts, implementation priorities, and public input.
 
-- [South Yale Complete Street Master Plan](https://www.cabq.gov/council/projects/neighborhood-projects/south-yale-complete-street-master-plan)
+  [Official City PDF](https://www.cabq.gov/council/documents/complete-streets/Girard%20Action%20Plan_draft_3-2013.pdf)
+
+- [Phase I Construction Plans: Thaxton to Central (2016 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/girard-boulevard-phase-1-construction-plans-2016.pdf)
+
+  Provides the approved construction drawings for Girard Boulevard from Thaxton Avenue to Central Avenue, including typical sections, quantities, signing, striping, and detailed roadway improvements implementing the corridor plan.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/girard-phase-1-coa-9042-03-approved-plans.pdf)
+
+- [Phase II Construction Plans: Central to Lomas (2016 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/girard-boulevard-phase-2-construction-plans-2016.pdf)
+
+  Provides the approved construction drawings for Girard Boulevard from Central Avenue to Lomas Boulevard, including typical sections, quantities, signing, striping, intersection details, and roadway improvements implementing the corridor plan.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/girard-phase-2-coa-9042-05-approved-plans.pdf)
+
+- [Phase III Construction Plans: Lomas to Indian School (2016 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/girard-boulevard-phase-3-construction-plans-2016.pdf)
+
+  Provides the approved construction drawings for Girard Boulevard from Lomas Boulevard to Indian School Road, including typical sections, quantities, signing, striping, and detailed roadway improvements implementing the corridor plan.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/girard-phase-3-coa-9042-04-approved-plans.pdf)
+
+### South Yale Boulevard
+
+- [Official City Project Page](https://www.cabq.gov/council/projects/neighborhood-projects/south-yale-complete-street-master-plan)
 
   Provides the South Yale corridor's existing-conditions material, study-area map, segment concept plans, public-meeting record, and development-oriented Complete Street concepts prepared for the area south of Central Avenue.
+
+- [Corridor Segments and Future Context (2013 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/south-yale-corridor-segments-future-context-2013.pdf)
+
+  Divides South Yale between Avenida Cesar Chavez and Gibson into commercial, community-serving, and hospitality districts, explaining the intended future land-use and streetscape character for each corridor segment.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/south-yale-blvd/Street%20Segments%20-%20Characteristics.pdf)
+
+- [Study Area and Context Zones (2013 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/south-yale-study-area-context-zones-2013.pdf)
+
+  Maps the South Yale study corridor, context zones, traffic-analysis intersections, ABQ RIDE stops, nearby neighborhoods, community facilities, UNM and CNM campuses, Isotopes Park, and the Sunport.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/south-yale-blvd/Study%20Area.pdf)
+
+- [Segment 1 Concept Plan: Avenida Cesar Chavez to Kathryn (2013 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/south-yale-segment-1-concept-plan-2013.pdf)
+
+  Maps preliminary improvements between Avenida Cesar Chavez and Kathryn Avenue, including wider sidewalks, crossings, curb extensions, lighting, trees, bus-stop amenities, medians, access changes, and alternative intersection configurations.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/south-yale-blvd/Concept%20Plan%20-%20Segment%201.pdf)
+
+- [Segment 2 Concept Plan: Kathryn to Ross (2013 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/south-yale-segment-2-concept-plan-2013.pdf)
+
+  Maps preliminary improvements between Kathryn and Ross avenues, including sidewalks, lighting, crossings, landscaping, transit amenities, access management, and alternatives for connecting Loma Linda Community Center to surrounding neighborhoods.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/south-yale-blvd/Concept%20Plan%20-%20Segment%202%20-w%20CC%20Driveway%20Option.pdf)
+
+- [Segment 3 Concept Plan: Ross to Gibson (2013 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/south-yale-segment-3-concept-plan-2013.pdf)
+
+  Maps preliminary improvements between Ross Avenue and Gibson Boulevard, including landscaped medians, lighting, enhanced bus stops, ADA curb ramps, intersection crossings, and the proposed roadway section for the hospitality district.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/south-yale-blvd/Concept%20Plan%20-%20Segment%203.pdf)
 
 - [Rio Grande Boulevard Complete Street Concept Plan (2017 unadopted archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-rio-grande-boulevard-complete-street-concept-plan-2017.pdf)
 
@@ -52,7 +136,9 @@ Transportation studies and reports.
 
 - [I-40 West Corridor Study Executive Summary (2024)](https://files.abqinfo.com/transportation/roadway-projects/studies/nmdot-i40-west-executive-summary-2025.pdf)
 
-  This NMDOT executive summary covers the I-40 Phase I-A/B corridor study from Arizona to Albuquerque, mileposts 0 through 150. The [NMDOT project page](https://www.dot.nm.gov/projects/i40-west-new-mexico/) remains the source for project updates and supporting materials.
+  Covers the I-40 Phase I-A/B corridor study from Arizona to Albuquerque, summarizing existing conditions, recommended improvements, estimated costs, implementation priorities, and operational strategies across mileposts 0 through 150.
+
+  [Official NMDOT Project Page](https://www.dot.nm.gov/projects/i40-west-new-mexico/)
 
 - [I-40 Phase I-A/B Corridor Study (2024)](https://files.abqinfo.com/transportation/roadway-projects/studies/nmdot-i40-west-phase-ab-corridor-study-2024.pdf)
 
