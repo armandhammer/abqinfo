@@ -1,24 +1,24 @@
 ﻿# ABQ Info authoritative source catalog
 
-Generated: 2026-08-12T17:39:26.9398983Z
+Generated: 2026-08-12T18:11:42.1562279Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 3702 candidates and 76 R2 objects totaling 906694497 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 3705 candidates and 79 R2 objects totaling 1007838374 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 3285 |
-| approved for addition | 4 |
+| pending review | 3284 |
+| approved for addition | 2 |
 | downloading | 0 |
 | downloaded | 40 |
-| parsed | 1 |
+| parsed | 0 |
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 0 |
-| validated | 168 |
+| validated | 171 |
 | excluded | 93 |
-| duplicate | 79 |
+| duplicate | 83 |
 | superseded | 5 |
 | blocked | 0 |
 | requires human review | 27 |
@@ -30,6 +30,9 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Complete Bernalillo County Technical Standards | Bernalillo County | 2023-03-28 | 9161556 | content/transportation/design-references.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards/) | [R2](https://files.abqinfo.com/transportation/design-references/bernco-technical-standards-2023-03-28.pdf) |
 | 2000 Albuquerque Comprehensive On-Street Bicycle Plan | City of Albuquerque | 2000 | 8054496 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/documents) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2000-albuquerque-comprehensive-on-street-bicycle-plan.pdf) |
 | 2011 Albuquerque Bikeways and Trails Master Plan Update | City of Albuquerque | 2011-11-10 | 20962356 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%2011-10-11.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-and-trails-master-plan-update.pdf) |
+| 2011 Albuquerque Bikeways and Trails Master Plan Update - Appendices | City of Albuquerque | 2011-11-10 | 1757042 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%20Appendices%2011-10-11.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-trails-master-plan-appendices.pdf) |
+| 2011 Albuquerque Bikeways and Trails Master Plan Update - Design Guidelines | City of Albuquerque | 2011-11-10 | 31152896 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%20Design%20Guidelines%2011-10.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-trails-master-plan-design-guidelines.pdf) |
+| 2024 Bikeway and Trail Facilities Plan - Combined Authoritative Edition | City of Albuquerque | 2024-12 | 68233939 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf/view) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2024-albuquerque-bikeway-trail-facilities-plan-combined.pdf) |
 | 2025 General Obligation Bond Approved Program Book | City of Albuquerque | 2025 | 59340691 | content/city-data/capital-spending.md | [source](https://www.cabq.gov/municipaldevelopment/programs/2025-g-o-bond-program) | [R2](https://files.abqinfo.com/city-data/capital-spending/cabq-2025-go-bond-approved-program-book.pdf) |
 | City of Albuquerque 2023-2027 Consolidated Plan and 2023 Action Plan | City of Albuquerque | 2023-2027 | 20352710 | content/development-land-use/projects.md | [source](https://www.cabq.gov/health-housing-homelessness/transparency/consolidated-plans-and-amendments) | [R2](https://files.abqinfo.com/housing/affordable-housing/cabq-2023-2027-consolidated-plan-and-2023-action-plan.pdf) |
 | City of Albuquerque Approved Budget, Fiscal Year 2027 | City of Albuquerque | FY 2027 | 22776293 | content/city-data/budget-spending.md | [source](https://www.cabq.gov/dfa/budget/annual-budget) | [R2](https://files.abqinfo.com/city-data/budget-spending/cabq-fy2027-approved-budget.pdf) |
@@ -211,9 +214,11 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | ID | Status | Title | Reason |
 | --- | --- | --- | --- |
 | src-023a7589e17df553 | duplicate | Modifying Access on Paseo del Norte & Unser Boulevard in the Volcano Heights Sector Plan Area - Metropolitan Transportation Board | The preserved R2 candidate src-ab74a46266ac1cff is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
+| src-0281f8d53810aa8c | duplicate | 2024 Bikeway and Trail Facilities Plan | Duplicate discovery record for implemented candidate src-545128f068ffb941. |
 | src-06d2fbff4e1c0e23 | duplicate | North 4th Corridor Sector Development Plan | The preserved R2 candidate src-3acbfa59246593bf is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
 | src-0a10cc303d6a0b80 | duplicate | Uptown Sector Development Plan | The preserved R2 candidate src-4ccef0c6ec25aac8 is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
 | src-0ae10419de42f24d | duplicate | Calendar | NMDOT public-involvement calendar is already exposed through the implemented Public Involvement Portal and Toolbox. |
+| src-0b1dfe6e620d7fe0 | duplicate | 2024 Bikeway and Trail Facilities Plan â€” Combined Authoritative Edition | Duplicate discovery record for implemented candidate src-545128f068ffb941. |
 | src-11574e3ddc3abc1d | duplicate | City Programs & Plans that Support a Bike Friendly Community City Programs & Plans that Support a Bike Friendly Community City Programs & Plans that Support a Bike Friendly Community | Broad bicycle-program landing page duplicates the current plan, safety-project map, transit plan, and other sources already cataloged individually. |
 | src-12031307a5ac64aa | duplicate | Albuquerque Region Housing Needs Assessment (2024) | Duplicate discovery record for implemented candidate src-8778e4e2844fdd47. |
 | src-144dce5e96686cd0 | duplicate | src-d0ed674dd8fe9559 | Duplicate discovery record for implemented candidate src-b9c1a8d5cb7902b6. |
@@ -243,11 +248,13 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-6acaba8fc31a61e4 | duplicate | documents | Duplicate discovery record for implemented candidate src-0f60535452ac9154. |
 | src-718baaa375fdf25c | duplicate | Moratorium Dashboard | The existing Construction Moratoriums entry retains the City source page that embeds this same dashboard and provides more useful dates and context. |
 | src-72fb72405d08a5c1 | duplicate | I-40 West Corridor Study: Conceptual Alternatives | Duplicate discovery record for implemented candidate src-6ab062defb508468. |
+| src-731ef9cb0deff4d7 | duplicate | 2011 Albuquerque Bikeways and Trails Master Plan Update - Appendices | Duplicate discovery record for implemented candidate src-50fdeb4703e57b9f. |
 | src-76a977d4c1afe872 | duplicate | Long Range System Maps | Duplicate discovery record for implemented candidate src-6697ce61c4489b98. |
 | src-79251e803fb8210f | duplicate | Pedestrian Level of Traffic Stress (LTS) App | Alternate portal URL for ArcGIS item 577561bcf1534cf5bcf105686cb397df, already implemented and validated. |
 | src-79abf932fed04610 | duplicate | ABC Comprehensive Plan, Chapter 10: Parks & Open Space (2025 Update) | Duplicate discovery record for implemented candidate src-5cefbce02e362e4b. |
 | src-7f51da342c00a840 | duplicate | Long Range Transportation System Guide (LRTS Guide) | Duplicate discovery record for implemented candidate src-31c4d4eff2bc1b5a. |
 | src-823191c37ffca5f8 | duplicate | Transitions 2045 MTP Executive Summary | The preserved R2 candidate src-b5c323782239e519 is the canonical English-summary record; retain this duplicate for the official MRCOG direct-file URL. |
+| src-89ba195983f6d5e8 | duplicate | 2011 Albuquerque Bikeways and Trails Master Plan Update - Design Guidelines | Duplicate discovery record for implemented candidate src-5cd111deac4749c3. |
 | src-8cdddf853227c40a | duplicate | I-40 West Corridor Study: Phase A/B Corridor Study | Duplicate discovery record for implemented candidate src-d4957d9c6500b754. |
 | src-9073c4c1acab4048 | duplicate | src-cc6a4ff2372bfa50 | Duplicate discovery record for implemented candidate src-1a0dfd37475ddc69. |
 | src-938b260dca443a97 | duplicate | src-1b7b18696dfbfcc8 | Duplicate discovery record for implemented candidate src-79de5bb4324d2dd4. |
