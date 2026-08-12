@@ -10,6 +10,10 @@ City bicycle planning documents and master plans, including current and previous
 
   Establishes Albuquerque's current bicycle and trail network vision, policies, facility recommendations, project priorities, and implementation framework for safer, better-connected active transportation.
 
+  - [Combined City Edition (Main Plan and Appendices)](https://files.abqinfo.com/transportation/bicycling/bike-plans/2024-albuquerque-bikeway-trail-facilities-plan-combined.pdf)
+
+    Preserves the City's complete 513-page publication in one file, combining the adopted plan with the crossings guide and appendices for convenient archival reference. [Official City PDF](https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf)
+
   - [Bicycle and Trail Crossings Guide](https://files.abqinfo.com/transportation/bicycling/bike-plans/2024-albuquerque-bike-plan-coa-bicycle-and-trail-crossings-guide.pdf)
 
     Provides design guidance for bicycle and trail crossings, helping practitioners select treatments that improve visibility, clarify priority, and reduce conflicts at roadway intersections.
@@ -69,6 +73,14 @@ City bicycle planning documents and master plans, including current and previous
 - [2011 Albuquerque Bikeways and Trails Master Plan Update](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-and-trails-master-plan-update.pdf)
 
   Updated Albuquerque's earlier bicycle and trail planning framework, documenting existing conditions, proposed networks, facility guidance, and implementation priorities at that time.
+
+  - [Appendices](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-trails-master-plan-appendices.pdf)
+
+    Preserves the plan's needs analysis, bicycle counts, survey findings, crash analysis, Safe Routes to School material, public-meeting records, and other supporting research. [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%20Appendices%2011-10-11.pdf)
+
+  - [Design Guidelines](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-trails-master-plan-design-guidelines.pdf)
+
+    Documents Albuquerque-specific guidance for bikeways, trails, intersections, crossings, wayfinding, site design, and innovative treatments developed alongside the 2011 plan update. [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%20Design%20Guidelines%2011-10.pdf)
 
 - [2000 Albuquerque Comprehensive On-Street Bicycle Plan](https://files.abqinfo.com/transportation/bicycling/bike-plans/2000-albuquerque-comprehensive-on-street-bicycle-plan.pdf)
 

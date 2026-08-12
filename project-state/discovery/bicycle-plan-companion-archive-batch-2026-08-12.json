@@ -1,0 +1,78 @@
+{
+  "recorded_at": "2026-08-12T18:03:00Z",
+  "scope": "Three authoritative City bicycle-planning files already present in the durable queue: the complete 2024 combined edition and two separately published 2011 plan companions.",
+  "pricing_checked_at": "2026-08-12",
+  "pricing_source": "https://developers.cloudflare.com/r2/pricing/",
+  "r2_standard_price_per_gb_month_usd": 0.015,
+  "r2_standard_free_storage_gb_month": 10,
+  "project_storage_stop_bytes": 8000000000,
+  "individual_approval_threshold_bytes": 100000000,
+  "bucket_before": {
+    "object_count": 76,
+    "total_bytes": 906694497
+  },
+  "batch": {
+    "object_count": 3,
+    "total_bytes": 101143877,
+    "files_over_25000000_bytes": 2,
+    "files_over_100000000_bytes": 0
+  },
+  "bucket_after": {
+    "object_count": 79,
+    "total_bytes": 1007838374,
+    "share_of_10gb_free_storage_allowance_percent": 10.07838374
+  },
+  "remaining_discovered_candidates_total_size": null,
+  "estimated_complete_project_storage": null,
+  "remaining_storage_note": "Project-wide totals cannot yet be estimated defensibly because most pending candidates have not been reviewed or sized. No candidates remain in this bounded three-document batch.",
+  "files": [
+    {
+      "inventory_id": "src-731ef9cb0deff4d7",
+      "title": "2011 Albuquerque Bikeways and Trails Master Plan Update — Appendices",
+      "file_type": "PDF",
+      "pages": 37,
+      "size_bytes": 1757042,
+      "human_size": "1.68 MiB",
+      "checksum_sha256": "bd6469328ed5fb8a878e6789cd94ed9eb09306f336672e5aa18bf610159d9cb8",
+      "over_25_mb": false,
+      "over_100_mb": false,
+      "projected_r2_storage_after_upload_bytes": 908451539,
+      "r2_url": "https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-trails-master-plan-appendices.pdf",
+      "public_byte_verification": "passed"
+    },
+    {
+      "inventory_id": "src-89ba195983f6d5e8",
+      "title": "2011 Albuquerque Bikeways and Trails Master Plan Update — Design Guidelines",
+      "file_type": "PDF",
+      "pages": 72,
+      "size_bytes": 31152896,
+      "human_size": "29.71 MiB",
+      "checksum_sha256": "e6a6b0d13a07dc8daa3990d5c08c1a35da0963366a10ac2bd09644f02d7d3c4d",
+      "over_25_mb": true,
+      "over_100_mb": false,
+      "large_file_reason": "The 72-page technical manual is illustration-heavy and contains facility diagrams, dimensions, photographs, intersection treatments, cross sections, and design examples.",
+      "smaller_authoritative_version": "none identified; later plans are successors rather than substitutes for this historical 2011 guidance",
+      "optimization": "possible only by recompressing or downsampling the authoritative visual source; not proposed because that would alter the preserved document and could reduce the usefulness of its diagrams",
+      "projected_r2_storage_after_upload_bytes": 939604435,
+      "r2_url": "https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-trails-master-plan-design-guidelines.pdf",
+      "public_byte_verification": "passed"
+    },
+    {
+      "inventory_id": "src-0b1dfe6e620d7fe0",
+      "title": "2024 Bikeway and Trail Facilities Plan — Combined Authoritative Edition",
+      "file_type": "PDF",
+      "pages": 513,
+      "size_bytes": 68233939,
+      "human_size": "65.07 MiB",
+      "checksum_sha256": "6c9db59edb778cc2115405d79540c692c775a3dc677424699cc38a0686fec1e1",
+      "over_25_mb": true,
+      "over_100_mb": false,
+      "large_file_reason": "The 513-page combined City edition contains the full plan, crossings guide, maps, project profiles, survey results, evaluation material, and all separately published appendices in one visual document.",
+      "smaller_authoritative_version": "the City also publishes the main plan and appendices as smaller authoritative components, but those are not a byte-identical or equivalent single-file combined edition",
+      "optimization": "possible only by altering the authoritative combined source; not proposed because the original is useful as a complete archival snapshot and fidelity matters",
+      "projected_r2_storage_after_upload_bytes": 1007838374,
+      "r2_url": "https://files.abqinfo.com/transportation/bicycling/bike-plans/2024-albuquerque-bikeway-trail-facilities-plan-combined.pdf",
+      "public_byte_verification": "passed"
+    }
+  ]
+}
