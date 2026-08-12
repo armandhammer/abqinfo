@@ -8,7 +8,9 @@ Zoning regulations and Integrated Development Ordinance information.
 
 - [Integrated Development Ordinance — effective May 6, 2026](https://files.abqinfo.com/housing/zoning-ido/cabq-ido-effective-2026-05-06.pdf)
 
-  The City's current Integrated Development Ordinance establishes zoning, development standards, and review procedures for Albuquerque. This preserved original is the effective May 2026 release; the [City IDO page](https://www.cabq.gov/planning/codes-policies-regulations/integrated-development-ordinance-1/integrated-development-ordinance) retains archived updates and legislative history.
+  The City's current Integrated Development Ordinance establishes zoning, development standards, and review procedures for Albuquerque. This preserved original is the effective May 2026 release.
+
+  [Official City IDO page](https://www.cabq.gov/planning/codes-policies-regulations/integrated-development-ordinance-1/integrated-development-ordinance)
 
 - [Interactive IDO zoning map](https://cabq.maps.arcgis.com/apps/webappviewer/index.html?id=53bf716981b14d25a31e7a2549c2d61b)
 

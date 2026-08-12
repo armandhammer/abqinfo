@@ -11,7 +11,12 @@ Regional plans, long-range plans, and other system-level transportation planning
   The transportation element of the adopted Albuquerque/Bernalillo County Comprehensive Plan guides land use and mobility decisions, covering a multimodal system, safe access, travel choices, coordination, and implementation policies for the city and unincorporated county.
 
 - [MRMPO 2045 Metropolitan Transportation Plan](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-2045-mtp-final-2025-04-29.pdf)
+
+  Establishes the Albuquerque metropolitan area's adopted long-range transportation vision through 2045, including regional growth assumptions, multimodal needs, safety and equity goals, funded projects, performance measures, and implementation priorities.
+
 - [MRMPO 2045 Metropolitan Transportation Plan - Full Appendix](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-2045-mtp-final-full-appendix-2025-05-01.pdf)
+
+  Preserves the plan's complete supporting appendix, including technical methods, demographic and travel forecasts, project evaluation, public and agency input, environmental analysis, financial assumptions, and federally required documentation.
 
 - [Transitions 2045 Executive Summary (archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-transitions-2045-executive-summary-2025.pdf)
 
