@@ -16,4 +16,4 @@ Zoning regulations and Integrated Development Ordinance information.
 
 - [City zoning and land-use maps](https://www.cabq.gov/planning/agis-maps/maps-for-the-public)
 
-  The City’s public map library includes the Zone Atlas, address atlas, council districts, land use, neighborhood associations, and printable reference maps.
+  The City's public map library includes the Zone Atlas, address atlas, council districts, land use, neighborhood associations, and printable reference maps.

@@ -1,14 +1,14 @@
 ﻿# ABQ Info authoritative source catalog
 
-Generated: 2026-08-12T16:39:15.0588489Z
+Generated: 2026-08-12T17:39:26.9398983Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 3693 candidates and 67 R2 objects totaling 793342062 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 3702 candidates and 76 R2 objects totaling 906694497 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 3294 |
+| pending review | 3285 |
 | approved for addition | 4 |
 | downloading | 0 |
 | downloaded | 40 |
@@ -16,9 +16,9 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 0 |
-| validated | 159 |
+| validated | 168 |
 | excluded | 93 |
-| duplicate | 70 |
+| duplicate | 79 |
 | superseded | 5 |
 | blocked | 0 |
 | requires human review | 27 |
@@ -31,14 +31,22 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | 2000 Albuquerque Comprehensive On-Street Bicycle Plan | City of Albuquerque | 2000 | 8054496 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/documents) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2000-albuquerque-comprehensive-on-street-bicycle-plan.pdf) |
 | 2011 Albuquerque Bikeways and Trails Master Plan Update | City of Albuquerque | 2011-11-10 | 20962356 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%2011-10-11.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-and-trails-master-plan-update.pdf) |
 | 2025 General Obligation Bond Approved Program Book | City of Albuquerque | 2025 | 59340691 | content/city-data/capital-spending.md | [source](https://www.cabq.gov/municipaldevelopment/programs/2025-g-o-bond-program) | [R2](https://files.abqinfo.com/city-data/capital-spending/cabq-2025-go-bond-approved-program-book.pdf) |
-| City of Albuquerque 2023-2027 Consolidated Plan and 2023 Action Plan | City of Albuquerque | 2023-2027 | 20352710 | content/housing/affordable-housing.md | [source](https://www.cabq.gov/health-housing-homelessness/transparency/consolidated-plans-and-amendments) | [R2](https://files.abqinfo.com/housing/affordable-housing/cabq-2023-2027-consolidated-plan-and-2023-action-plan.pdf) |
+| City of Albuquerque 2023-2027 Consolidated Plan and 2023 Action Plan | City of Albuquerque | 2023-2027 | 20352710 | content/development-land-use/projects.md | [source](https://www.cabq.gov/health-housing-homelessness/transparency/consolidated-plans-and-amendments) | [R2](https://files.abqinfo.com/housing/affordable-housing/cabq-2023-2027-consolidated-plan-and-2023-action-plan.pdf) |
 | City of Albuquerque Approved Budget, Fiscal Year 2027 | City of Albuquerque | FY 2027 | 22776293 | content/city-data/budget-spending.md | [source](https://www.cabq.gov/dfa/budget/annual-budget) | [R2](https://files.abqinfo.com/city-data/budget-spending/cabq-fy2027-approved-budget.pdf) |
 | Council District Poster Map | City of Albuquerque | 2026-01 | 16586301 | content/maps/maps.md | [source](https://www.arcgis.com/home/item.html?id=47889b7150894b1c92a45ea3c1ffe3bd) | [R2](https://files.abqinfo.com/maps/cabq-council-district-poster-map-2026-01.pdf) |
-| Integrated Development Ordinance ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â effective May 6, 2026 | City of Albuquerque | 2026-05-06 | 23832206 | content/housing/zoning-ido.md | [source](https://www.cabq.gov/planning/codes-policies-regulations/integrated-development-ordinance-1/integrated-development-ordinance) | [R2](https://files.abqinfo.com/housing/zoning-ido/cabq-ido-effective-2026-05-06.pdf) |
+| Integrated Development Ordinance ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â effective May 6, 2026 | City of Albuquerque | 2026-05-06 | 23832206 | content/development-land-use/zoning-ido.md | [source](https://www.cabq.gov/planning/codes-policies-regulations/integrated-development-ordinance-1/integrated-development-ordinance) | [R2](https://files.abqinfo.com/housing/zoning-ido/cabq-ido-effective-2026-05-06.pdf) |
+| Nob Hill Highland Sector Development Plan â€” Transportation Section | City of Albuquerque | 2007-09; amended through 2014-08 | 8234679 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-nob-hill-highland-sector-plan-transportation-2007-2014.pdf) |
+| North Fourth Street Corridor Plan â€” Transportation and Street Design | City of Albuquerque | 2010 | 3175202 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-north-fourth-street-corridor-plan-2010.pdf) |
+| Rio Grande Boulevard Complete Street Concept Plan | City of Albuquerque | 2017-02 | 74289970 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-rio-grande-boulevard-complete-street-concept-plan-2017.pdf) |
+| South Yale Sector Development Plan â€” Transportation Section | City of Albuquerque | 2009 | 4475608 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-south-yale-sector-plan-transportation-2009.pdf) |
+| Uptown Sector Development Plan â€” Transportation and Connectivity | City of Albuquerque | 2009-01-15; amended through 2013-12 | 3293254 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-uptown-sector-plan-transportation-2009-2013.pdf) |
+| Volcano Cliffs Sector Development Plan â€” Transportation Standards | City of Albuquerque | 2011-05; amended through 2015-07-09 | 5205575 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-volcano-cliffs-sector-plan-transportation-2011-2015.pdf) |
+| Volcano Heights Sector Development Plan â€” Transportation Standards | City of Albuquerque | 2010-07; amended 2014-11-05 | 8772504 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-volcano-heights-sector-plan-transportation-2010-2014.pdf) |
 | ABC Comprehensive Plan, Chapter 10: Parks & Open Space (2025 Update) | City of Albuquerque / Bernalillo County | 2025 | 27179821 | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan) | [R2](https://files.abqinfo.com/public-works/parks-recreation/abc-comprehensive-plan-chapter-10-parks-open-space-2025.pdf) |
 | ABC Comprehensive Plan, Chapter 6: Transportation (2025 Update) | City of Albuquerque / Bernalillo County | 2025 | 20598377 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan) | [R2](https://files.abqinfo.com/transportation/transportation-plans/abc-comprehensive-plan-chapter-6-transportation-2025.pdf) |
-| ABC Comprehensive Plan, Chapter 9: Housing (2025 Update) | City of Albuquerque / Bernalillo County | 2025 | 10531432 | content/housing/affordable-housing.md | [source](https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan) | [R2](https://files.abqinfo.com/housing/affordable-housing/abc-comprehensive-plan-chapter-9-housing-2025.pdf) |
-| Albuquerque Region Housing Needs Assessment (2024) | City of Albuquerque / MRCOG | 2024-07 | 4212464 | content/housing/affordable-housing.md | [source](https://www.cabq.gov/health-housing-homelessness/housing) | [R2](https://files.abqinfo.com/housing/affordable-housing/cabq-regional-housing-needs-assessment-2024.pdf) |
+| ABC Comprehensive Plan, Chapter 9: Housing (2025 Update) | City of Albuquerque / Bernalillo County | 2025 | 10531432 | content/development-land-use/projects.md | [source](https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan) | [R2](https://files.abqinfo.com/housing/affordable-housing/abc-comprehensive-plan-chapter-9-housing-2025.pdf) |
+| Los Duranes Sector Development Plan â€” Transportation Section | City of Albuquerque / Bernalillo County | 2012-04-16 | 5329520 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-los-duranes-sector-plan-transportation-2012.pdf) |
+| Albuquerque Region Housing Needs Assessment (2024) | City of Albuquerque / MRCOG | 2024-07 | 4212464 | content/development-land-use/projects.md | [source](https://www.cabq.gov/health-housing-homelessness/housing) | [R2](https://files.abqinfo.com/housing/affordable-housing/cabq-regional-housing-needs-assessment-2024.pdf) |
 | Albuquerque Metropolitan Planning Area Boundary Map | MRCOG | 2020-07-06 | 6665791 | content/maps/maps.md | [source](https://www.mrcog-nm.gov/581/Transportation-Planning) | [R2](https://files.abqinfo.com/maps/mrmpo-albuquerque-metropolitan-planning-area-map-2020.pdf) |
 | FFY 2024-2029 TIP ITS Project Review and Architecture Certification | MRCOG | 2023-07-16 | 696615 | content/transportation/operations-data.md | [source](https://www.mrcog-nm.gov/259/Intelligent-Transportation-Systems) | [R2](https://files.abqinfo.com/transportation/operations-data/mrmpo-ffy2024-2029-tip-its-review-certification-2023.pdf) |
 | Long-Range Transportation System Guide | MRCOG | 2026-06 | 36052676 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/512/Long-Range-Transportation-System-Guide) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-long-range-transportation-system-guide-2026.pdf) |
@@ -50,6 +58,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | MRMPO Long-Range Roadway System Map | MRCOG | 2026-07-02 | 613512 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/544/Long-Range-System-Maps) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-long-range-roadway-system-map-2026.pdf) |
 | MRMPO Long-Range Transit System Map | MRCOG | 2026-07-02 | 957104 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/544/Long-Range-System-Maps) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-long-range-transit-system-map-2026.pdf) |
 | MRMPO Transportation Improvement Program, FFY 2024-2029 | MRCOG | FFY 2024-2029 | 4659490 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/280/Current-TIP) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrcog-ffy-2024-2029-current-tip.pdf) |
+| Paseo del Norte and Unser Boulevard Access-Modification Resolution | MRCOG / MRMPO | 2013-07-12 | 576123 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-paseo-unser-access-modification-resolution-2013.pdf) |
 | Connect New Mexico: Statewide Public Transportation Plan (May 2025) | NMDOT | 2025-05 | 3021289 | content/transportation/transit/_index.md | [source](https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/) | [R2](https://files.abqinfo.com/transportation/transit/nmdot-statewide-public-transportation-plan-2025.pdf) |
 | I-40 Conceptual Alternatives Plan Sheets | NMDOT | 2024-10 | 46949940 | content/transportation/roadway-projects/studies.md | [source](https://www.dot.nm.gov/projects/i40-west-new-mexico/) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/nmdot-i40-west-conceptual-alternatives-2024.pdf) |
 | I-40 Highway Operations Improvement Plan, Milepost 0 to 150 | NMDOT | 2024-10 | 36683995 | content/transportation/roadway-projects/studies.md | [source](https://www.dot.nm.gov/projects/i40-west-new-mexico/) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/nmdot-i40-west-highway-operations-improvement-plan-2024.pdf) |
@@ -71,7 +80,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Bernalillo County Open Space Holdings | Bernalillo County | content/public-works/parks-recreation.md | [source](https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/Open_Space/MapServer) |
 | Bernalillo County Technical Standards | Bernalillo County | content/transportation/design-references.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards) |
 | Complete Streets Planning | Bernalillo County | content/transportation/transportation-plans.md | [source](https://www.bernco.gov/public-works/about-the-public-works-division/technical-services/transportation-planning/complete-streets-planning) |
-| Development Review Traffic Impacts | Bernalillo County | content/housing/development-process.md | [source](https://www.bernco.gov/public-works/about-the-public-works-division/technical-services/transportation-planning/traffic-impact-analysis) |
+| Development Review Traffic Impacts | Bernalillo County | content/development-land-use/development-process.md | [source](https://www.bernco.gov/public-works/about-the-public-works-division/technical-services/transportation-planning/traffic-impact-analysis) |
 | Finished Projects | Bernalillo County | content/transportation/roadway-projects/current.md | [source](https://www.bernco.gov/public-works/finished-projects) |
 | For a list of current projects, click here. | Bernalillo County | content/transportation/roadway-projects/current.md | [source](https://www.bernco.gov/public-works/current-projects) |
 | street maintenance | Bernalillo County | content/transportation/operations-data.md | [source](https://www.bernco.gov/public-works/public-works-services/road-safety-conditions/streets-traffic-signals/street-maintenance) |
@@ -93,10 +102,10 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Bike Maps & Trail Guides Bike Maps & Trail Guides Bike Maps & Trail Guides | City of Albuquerque | content/transportation/bicycling/bike-maps.md | [source](https://www.cabq.gov/bikes/bike-maps) |
 | Bikeways & Trails 2024 Conditions | City of Albuquerque | content/transportation/bicycling/bike-plans.md | [source](https://storymaps.arcgis.com/stories/4cd6fe3cb2d04a5c895b3791bc35ccd3) |
 | Bikeways and Trails Public Map Viewer | City of Albuquerque | content/transportation/bicycling/bike-maps.md | [source](https://cabq.maps.arcgis.com/apps/instant/sidebar/index.html?appid=bfda88ddb89a40c08440b4abd4c182ba) |
-| Building permits open data | City of Albuquerque | content/housing/housing-pipeline.md | [source](https://data.cabq.gov/business/buildingpermits/) |
+| Building permits open data | City of Albuquerque | content/development-land-use/projects.md | [source](https://data.cabq.gov/business/buildingpermits/) |
 | Central Avenue Complete Street Plan: 1st Street to Girard | City of Albuquerque | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/neighborhood-projects/central-avenue-complete-street-plan-1st-street-to-girard) |
 | City Drainage Ponds | City of Albuquerque | content/maps/maps.md | [source](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=69a932663bf84beaa81d6268c327f24b) |
-| City IDO page | City of Albuquerque | content/housing/zoning-ido.md | [source](https://www.cabq.gov/planning/codes-policies-regulations/integrated-development-ordinance-1/integrated-development-ordinance) |
+| City IDO page | City of Albuquerque | content/development-land-use/zoning-ido.md | [source](https://www.cabq.gov/planning/codes-policies-regulations/integrated-development-ordinance-1/integrated-development-ordinance) |
 | City of Albuquerque School Crossings Dashboard | City of Albuquerque | content/maps/dashboards.md | [source](https://www.arcgis.com/apps/dashboards/4a52905fd707412085ce9811ad48dd25) |
 | City Open Space planning projects and resource-management plans | City of Albuquerque | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/parksandrecreation/open-space/about-open-space/open-space-resource-management-plans) |
 | City paratransit service | City of Albuquerque | content/transportation/transit/sun-van.md | [source](https://www.cabq.gov/transit/paratransit-service) |
@@ -114,7 +123,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Featured Projects & Improvements | City of Albuquerque | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/parksandrecreation/featured-projects) |
 | Fiber Installation Barricades Map | City of Albuquerque | content/transportation/roadway-projects/current.md | [source](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=2c03c15b093a4b1ab7abadd36a123c5a) |
 | Girard Boulevard Complete Streets Master Plan | City of Albuquerque | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/neighborhood-projects/girard-boulevard-complete-streets-master-plan) |
-| Information about Public Improvement Districts in Albuquerque. Public Improvement Districts Information about Public Improvement Districts in Albuquerque. | City of Albuquerque | content/housing/development-process.md | [source](https://www.cabq.gov/council/public-improvement-districts) |
+| Information about Public Improvement Districts in Albuquerque. Public Improvement Districts Information about Public Improvement Districts in Albuquerque. | City of Albuquerque | content/development-land-use/development-process.md | [source](https://www.cabq.gov/council/public-improvement-districts) |
 | Interstate Maintenance Responsibilities | City of Albuquerque | content/transportation/operations-data.md | [source](https://cabq.maps.arcgis.com/apps/instant/sidebar/index.html?appid=59b8aa64659848a0a64e8cd37f73f31c) |
 | Laurelwood Median Rehabilitation and Parkway Landscape Project | City of Albuquerque | content/transportation/roadway-projects/current.md | [source](https://www.cabq.gov/council/find-your-councilor/district-1/district-1-projects/laurelwood-median-rehabilitation-project) |
 | Municipal Development featured projects | City of Albuquerque | content/public-works/capital-projects.md | [source](https://www.cabq.gov/municipaldevelopment/featured-projects) |
@@ -134,7 +143,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Streetlight Status Dashboard | City of Albuquerque | content/transportation/operations-data.md | [source](https://www.arcgis.com/apps/dashboards/1facbd146a924224b1698c7d164662c3) |
 | Studies | City of Albuquerque | content/transportation/roadway-projects/speed-management.md | [source](https://www.cabq.gov/neighborhood-traffic-management-program/studies) |
 | Submit a Traffic Calming Request | City of Albuquerque | content/transportation/roadway-projects/speed-management.md | [source](https://www.cabq.gov/neighborhood-traffic-management-program/submit-a-traffic-calming-request) |
-| The Vacant and Abandoned Houses Task Force Releases Report | City of Albuquerque | content/housing/affordable-housing.md | [source](https://www.cabq.gov/council/projects/current-projects/the-vacant-and-abandoned-houses-task-force-releases-report) |
+| The Vacant and Abandoned Houses Task Force Releases Report | City of Albuquerque | content/development-land-use/projects.md | [source](https://www.cabq.gov/council/projects/current-projects/the-vacant-and-abandoned-houses-task-force-releases-report) |
 | Toolkit | City of Albuquerque | content/transportation/roadway-projects/speed-management.md | [source](https://www.cabq.gov/neighborhood-traffic-management-program/toolkit) |
 | Traffic & Street Improvements | City of Albuquerque | content/transportation/roadway-projects/current.md | [source](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements) |
 | Traffic Barricades Map | City of Albuquerque | content/transportation/roadway-projects/current.md | [source](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=990365639da44a80a64b140726665a2b) |
@@ -187,7 +196,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | I-25 Gibson Interchange Reconstruction Project | Other authoritative source | content/transportation/roadway-projects/studies.md | [source](https://www.i25gibson.com/) |
 | I-25 Improved project website | Other authoritative source | content/transportation/roadway-projects/current.md | [source](https://i25improved.com/) |
 | I-25 S-Curve Area Study | Other authoritative source | content/transportation/roadway-projects/studies.md | [source](https://www.i25scurve.com/) |
-| Interactive IDO zoning map | Other authoritative source | content/housing/zoning-ido.md | [source](https://cabq.maps.arcgis.com/apps/webappviewer/index.html?id=53bf716981b14d25a31e7a2549c2d61b) |
+| Interactive IDO zoning map | Other authoritative source | content/development-land-use/zoning-ido.md | [source](https://cabq.maps.arcgis.com/apps/webappviewer/index.html?id=53bf716981b14d25a31e7a2549c2d61b) |
 | Unser and Paseo project website | Other authoritative source | content/transportation/roadway-projects/current.md | [source](https://upgradeunserpaseo.com/) |
 | Walk Safe New Mexico: Pedestrian Safety Action Plan | Other authoritative source | content/transportation/bicycling/safety-crash-data.md | [source](https://storymaps.arcgis.com/stories/05d03cff46b14768979410bb069a5116) |
 
@@ -201,6 +210,9 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 
 | ID | Status | Title | Reason |
 | --- | --- | --- | --- |
+| src-023a7589e17df553 | duplicate | Modifying Access on Paseo del Norte & Unser Boulevard in the Volcano Heights Sector Plan Area - Metropolitan Transportation Board | The preserved R2 candidate src-ab74a46266ac1cff is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
+| src-06d2fbff4e1c0e23 | duplicate | North 4th Corridor Sector Development Plan | The preserved R2 candidate src-3acbfa59246593bf is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
+| src-0a10cc303d6a0b80 | duplicate | Uptown Sector Development Plan | The preserved R2 candidate src-4ccef0c6ec25aac8 is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
 | src-0ae10419de42f24d | duplicate | Calendar | NMDOT public-involvement calendar is already exposed through the implemented Public Involvement Portal and Toolbox. |
 | src-11574e3ddc3abc1d | duplicate | City Programs & Plans that Support a Bike Friendly Community City Programs & Plans that Support a Bike Friendly Community City Programs & Plans that Support a Bike Friendly Community | Broad bicycle-program landing page duplicates the current plan, safety-project map, transit plan, and other sources already cataloged individually. |
 | src-12031307a5ac64aa | duplicate | Albuquerque Region Housing Needs Assessment (2024) | Duplicate discovery record for implemented candidate src-8778e4e2844fdd47. |
@@ -209,6 +221,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-1b7b18696dfbfcc8 | duplicate | Tramway Study Public Outreach Summary, CN A300342 | Duplicate discovery record for implemented candidate src-79de5bb4324d2dd4. |
 | src-22b21921507b9fa8 | duplicate | src-53495318782dae10 | Duplicate discovery record for implemented candidate src-53495318782dae10. |
 | src-247a3f301b23e673 | duplicate | Download LRBS PDF map | Duplicate discovery record for implemented candidate src-d3f0cf9107a00c74. |
+| src-247ceb733ed01c0d | duplicate | Volcano Cliffs Sector Development Plan | The preserved R2 candidate src-e1cde64af2f4a573 is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
 | src-28b4b80e0074e081 | duplicate | Vision Zero in Albuquerque | The maintained City Vision Zero page already provides the program context and related current materials; this broad StoryMap adds no distinct dataset or project record. |
 | src-2f094c9ddbb50ce1 | duplicate | Fiscal Year 2027 Approved Budget | Duplicate discovery record for implemented candidate src-0c0bf6fdce0dfbea. |
 | src-2f15ef9451d99e32 | duplicate | src-a8552ef7c580c636 | Duplicate discovery record for implemented candidate src-2c94f1cc7996207a. |
@@ -216,6 +229,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-34f5e43d0fd0f2d0 | duplicate | ABC Comprehensive Plan | Duplicate discovery record for implemented candidate src-8832a87573fd5ed6. |
 | src-3d676705b6616cf4 | duplicate | src-7f51da342c00a840 | Duplicate discovery record for implemented candidate src-31c4d4eff2bc1b5a. |
 | src-40cfc5da0dbddcff | duplicate | Visit Hub Site | Generic Hub landing-page record duplicates the 34 individually inventoried DMD catalog items and is retained as discovery provenance rather than public site content. |
+| src-428c2b8d791a054f | duplicate | Volcano Heights Sector Development Plan | The preserved R2 candidate src-e83d30ce68171820 is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
 | src-42d0b92e1b1b1c18 | duplicate | Buena Vista Bike Boulevard 60% Plans (legacy R2 key) | Exact duplicate of the implemented Buena Vista plan: identical 47,823,090-byte size and R2 ETag 318576c3cafe8b5449d8c8f5fd2ae6a2. Retained in storage because deletion was not authorized. |
 | src-4338e5bbd0985b75 | duplicate | official-2000-comprehensive-on-street-bicycle-plan | Duplicate discovery record for implemented candidate src-0f60535452ac9154. |
 | src-46cb08fc8e5a1ad4 | duplicate | Council District Poster Map | The preserved R2 candidate src-9a8de57080520216 is the canonical poster-map record; retain this duplicate for the official ArcGIS item and discovery path. |
@@ -244,12 +258,14 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-aa39bf3d1fdab087 | duplicate | src-93a5d61174cab3ea | Duplicate discovery record for implemented candidate src-f8614b43122b3de3. |
 | src-b1bb29f8469c84b1 | duplicate | Download PPTS PDF map | Duplicate discovery record for implemented candidate src-3080803365506588. |
 | src-b42957559c1959c0 | duplicate | Travel Information | Broad travel-information landing page; its useful Albuquerque-relevant services are cataloged individually. |
+| src-b659f7e87e249d55 | duplicate | Nob Hill Highland Sector Development Plan | The preserved R2 candidate src-6916bbd03258654b is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
 | src-b745230b7fbd1fdb | duplicate | src-72fb72405d08a5c1 | Duplicate discovery record for implemented candidate src-6ab062defb508468. |
 | src-bb5088b9f0c46dee | duplicate | official-2011-bikeways-trails-master-plan-update | Duplicate discovery record for implemented candidate src-94cdef5b70765253. |
 | src-bcbfa4182489257d | duplicate | src-5493cb1d487d09db | Duplicate discovery record for implemented candidate src-a89c0c7e764e720f. |
 | src-c11c40ee87f3cf37 | duplicate | Ponds Public View | Backing feature service for the more usable City Drainage Ponds public map; retain the application as the eventual canonical public entry. |
 | src-c18a3633706516c5 | duplicate | src-6697ce61c4489b98 | Duplicate discovery record for implemented candidate src-6697ce61c4489b98. |
 | src-c571bf6eb0d0c3ae | duplicate | Latest Road Conditions | Duplicate discovery record for implemented candidate src-8a96e3fdb3ea48a0. |
+| src-c5aa1fa7865d2885 | duplicate | Rio Grande Boulevard Study | The preserved R2 candidate src-3226456d7e9bd345 is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
 | src-c62f0544fc2c1877 | duplicate | NTMP Request Process Flowchart | The preserved R2 candidate src-393cac968c0c2b62 is the canonical NTMP-flowchart record; retain this duplicate for the official ArcGIS item and discovery path. |
 | src-ca27dd67d514d371 | duplicate | ABC Comprehensive Plan, Chapter 6: Transportation (2025 Update) | Duplicate discovery record for implemented candidate src-8832a87573fd5ed6. |
 | src-cc6a4ff2372bfa50 | duplicate | Unified Planning Work Program, FFY 2027-2028 | Duplicate discovery record for implemented candidate src-1a0dfd37475ddc69. |
@@ -263,9 +279,11 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-dc91480e261ecffa | duplicate | Transitions 2045 MTP Full Document | Duplicate discovery record for implemented candidate src-7e1a8bec260f1b77. |
 | src-dff91a717447d7aa | duplicate | Transiciones 2045 Plan Metropolitano de Transporte Resumen Ejecutivo (MTP Executive Summary Ã¢â‚¬â€œ Spanish version) | The preserved R2 candidate src-0b89c7adb106d638 is the canonical Spanish-summary record; retain this duplicate for the official MRCOG direct-file URL. |
 | src-e9730a535acdeaa0 | duplicate | I-40 West Corridor Study: Executive Summary | Duplicate discovery record for implemented candidate src-e60615e24211cb36. |
+| src-eb47ea28d8ca58ad | duplicate | Los Duranes Sector Development Plan | The preserved R2 candidate src-278552b95a4c8916 is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
 | src-ebd2161a3e07f92a | duplicate | Unified Planning Work Program, FFY 2027-2028 (mistyped R2 key) | Mistyped R2 key created during upload; exact duplicate of the correctly named implemented object. Retained because deletion was not authorized. |
 | src-ec6f2425c884d073 | duplicate | Statewide Traffic Records System | Duplicate discovery record for implemented candidate src-fda23e3b8e702b91. |
 | src-edd4eb43d1ed89a7 | duplicate | src-8cdddf853227c40a | Duplicate discovery record for implemented candidate src-d4957d9c6500b754. |
+| src-ee649b54758d8a94 | duplicate | South Yale Sector Development Plan | The preserved R2 candidate src-5d29a972bd5550ba is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
 | src-efdf74ef6b0a99a2 | duplicate | Download LRRS PDF map | Duplicate discovery record for implemented candidate src-53495318782dae10. |
 | src-f413465fab00efba | duplicate | The City boasts more than 29,000 acres of Open Space in and around Albuquerque to explore, recreate, and help preserve our city's natural heritage. Open Space The City boasts more than 29,000 acres of Open Space in and around Albuquerque to explore, recreate, and help preserve our city's natural heritage. | Generic Open Space landing page duplicates the more useful planning and resource-management library already implemented on ABQInfo. |
 | src-fa0a012c5479abdb | duplicate | src-d3f0cf9107a00c74 | Duplicate discovery record for implemented candidate src-d3f0cf9107a00c74. |

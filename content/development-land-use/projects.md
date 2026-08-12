@@ -1,8 +1,16 @@
 ---
-title: "Housing Pipeline"
+title: "Projects"
 ---
 
-## Plans and Data
+Selected major development activity and the plans and datasets needed to understand it. Individual projects belong here when their scale, public impact, planning significance, or unusually useful public record warrants inclusion—not merely because a permit was issued.
+
+## Development Activity Data
+
+- [Building permits open data](https://data.cabq.gov/business/buildingpermits/)
+
+  The City's maintained building-permit data is the most useful general-purpose source for recent residential and nonresidential development activity. A permit is not the same as a completed building, occupancy, affordability commitment, or project delivery date.
+
+## Housing Plans and Needs
 
 - [Vacant and Abandoned Houses Task Force Report (2018)](https://www.cabq.gov/council/projects/current-projects/the-vacant-and-abandoned-houses-task-force-releases-report)
 
@@ -18,10 +26,4 @@ title: "Housing Pipeline"
 
 - [City of Albuquerque 2023-2027 Consolidated Plan and 2023 Action Plan](https://files.abqinfo.com/housing/affordable-housing/cabq-2023-2027-consolidated-plan-and-2023-action-plan.pdf)
 
-  The City’s HUD Consolidated Plan identifies housing, homelessness, community-development, and fair-housing needs for 2023-2027. Its accompanying 2023 Action Plan describes the first year’s planned use of federal housing and community-development resources.
-
-## Development Activity Data
-
-- [Building permits open data](https://data.cabq.gov/business/buildingpermits/)
-
-  The City’s maintained building-permit data is the most useful general-purpose source for recent development activity. A permit is not the same as a completed home, occupancy, affordability commitment, or project delivery date.
+  The City's HUD Consolidated Plan identifies housing, homelessness, community-development, and fair-housing needs for 2023-2027. Its accompanying 2023 Action Plan describes the first year's planned use of federal housing and community-development resources.
