@@ -4,9 +4,9 @@ title: "Maps"
 
 Interactive maps of city data and infrastructure.
 
-## Citywide reference maps
+## Citywide Reference Maps
 
-### Regional long-range transportation maps
+### Regional Long-Range Transportation Maps
 
 - [Albuquerque Metropolitan Planning Area boundary map (2020)](https://files.abqinfo.com/maps/mrmpo-albuquerque-metropolitan-planning-area-map-2020.pdf)
 
@@ -37,7 +37,7 @@ Interactive maps of city data and infrastructure.
 
   Albuquerque Open Space maintains access and trail maps for its lands and trailheads. Individual trail maps are available from the same City source when a printable field reference is useful.
 
-## City infrastructure and maintenance maps
+## City Infrastructure and Maintenance Maps
 
 - [Albuquerque Area Street Jurisdictions](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=c2614776e75344bab7755aa779539bcb)
 
@@ -51,7 +51,7 @@ Interactive maps of city data and infrastructure.
 
   Maps stormwater drainage ponds maintained by the City of Albuquerque, providing a geographic reference for public drainage infrastructure and its relationship to surrounding neighborhoods.
 
-## City bicycle maps and data
+## City Bicycle Maps and Data
 
 - [Bikeways and Trails Public Map Viewer](https://cabq.maps.arcgis.com/apps/instant/sidebar/index.html?appid=bfda88ddb89a40c08440b4abd4c182ba)
 
@@ -65,7 +65,7 @@ Interactive maps of city data and infrastructure.
 
   Publishes the City's actively maintained bikeway and trail data layer, distinguishing current infrastructure from the static network snapshot used to develop the 2024 facilities plan.
 
-## State transportation maps
+## State Transportation Maps
 
 - [NMDOT map library](https://www.dot.nm.gov/travel-information/maps)
 
@@ -75,7 +75,7 @@ Interactive maps of city data and infrastructure.
 
   Provides NMDOT's live statewide traveler map with current road conditions, closures, construction, traffic cameras, weather impacts, and alerts useful for trips on I-25, I-40, and other Albuquerque-area state highways.
 
-## Regional active-transportation maps
+## Regional Active-Transportation Maps
 
 - [Pedestrian Level of Traffic Stress map](https://mrmpo.maps.arcgis.com/apps/instant/sidebar/index.html?appid=577561bcf1534cf5bcf105686cb397df)
 
@@ -85,7 +85,7 @@ Interactive maps of city data and infrastructure.
 
   Collects regional pedestrian-priority, pedestrian traffic-stress, long-range bikeway, and bicycle traffic-stress maps used to identify needs and guide active-transportation planning across the Albuquerque metropolitan area.
 
-## Regional transit maps
+## Regional Transit Maps
 
 - [Planned and Potential Transit Service map](https://mrmpo.maps.arcgis.com/apps/instant/sidebar/index.html?appid=d637ede6b5c44129bbbd1393b27eff22)
 

@@ -48,7 +48,7 @@ Traffic calming and speed management initiatives.
 
   The Vision Zero implementation page provides the City’s broader safety-program context, including traffic management, automated speed enforcement, and active safety work.
 
-## Bernalillo County automated enforcement
+## Bernalillo County Automated Enforcement
 
 - [Bernalillo County Automated Photo Speed Enforcement](https://www.bernco.gov/public-works/automated-photo-speed-enforcement)
 

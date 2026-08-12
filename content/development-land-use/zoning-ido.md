@@ -4,7 +4,7 @@ title: "Zoning & IDO"
 
 Zoning regulations and Integrated Development Ordinance information.
 
-## Current ordinance and zoning tools
+## Current Ordinance and Zoning Tools
 
 - [Integrated Development Ordinance — effective May 6, 2026](https://files.abqinfo.com/housing/zoning-ido/cabq-ido-effective-2026-05-06.pdf)
 
@@ -16,4 +16,4 @@ Zoning regulations and Integrated Development Ordinance information.
 
 - [City zoning and land-use maps](https://www.cabq.gov/planning/agis-maps/maps-for-the-public)
 
-  The City’s public map library includes the Zone Atlas, address atlas, council districts, land use, neighborhood associations, and printable reference maps.
+  The City's public map library includes the Zone Atlas, address atlas, council districts, land use, neighborhood associations, and printable reference maps.

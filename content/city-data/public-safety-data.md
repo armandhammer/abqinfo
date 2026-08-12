@@ -4,7 +4,7 @@ title: "Public Safety Data"
 
 Police, fire, and emergency services data.
 
-## Current dashboards and datasets
+## Current Dashboards and Datasets
 
 - [ABQ Safety Dashboard](https://www.cabq.gov/abq-view/abq-dashboard/safety)
 

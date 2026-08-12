@@ -4,7 +4,7 @@ title: "Dashboards"
 
 Data dashboards and visualizations.
 
-## Project, program, and safety dashboards
+## Project, Program, and Safety Dashboards
 
 - [DMD Active Projects Viewer](https://experience.arcgis.com/experience/0e6f49ae7959446784e397253fd81165)
 

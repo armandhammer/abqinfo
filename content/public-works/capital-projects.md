@@ -4,7 +4,7 @@ title: "Capital Projects"
 
 Public works capital improvement projects.
 
-## Current project data
+## Current Project Data
 
 - [City Council Current, Neighborhood, and Completed Projects](https://www.cabq.gov/council/projects)
 
@@ -18,7 +18,7 @@ Public works capital improvement projects.
 
   Maps active and completed Municipal Development projects by phase, category, district, and location, with searchable descriptions covering transportation, traffic engineering, drainage, facilities, and other special projects.
 
-## Historical project snapshots
+## Historical Project Snapshots
 
 - [DMD 2025 Project Highlights](https://experience.arcgis.com/experience/4b0b1b38bb47411691652499bf2f25cf)
 

@@ -8,7 +8,7 @@ The bicycle section distinguishes system plans and mapped facilities from indivi
 
 Start with [Bike Plans]({{< relref "bike-plans.md" >}}) for the network framework, [Bike Maps]({{< relref "bike-maps.md" >}}) for live geographic tools, and [Safety & Crash Data]({{< relref "safety-crash-data.md" >}}) for City and regional safety sources.
 
-## Laws and operating rules
+## Laws and Operating Rules
 
 - [Albuquerque Bike Laws](https://www.cabq.gov/bikes/bike-laws)
 

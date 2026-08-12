@@ -4,7 +4,7 @@ title: "Traffic Operations"
 
 Regional roadway operations, traffic analysis, incident management, and intelligent transportation systems.
 
-## City street operations
+## City Street Operations
 
 - [Albuquerque Area Street Jurisdictions](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=c2614776e75344bab7755aa779539bcb)
 
@@ -26,7 +26,7 @@ Regional roadway operations, traffic analysis, incident management, and intellig
 
   Displays weekly updated operational status for City streetlights using vendor data, helping users examine working and non-working assets while the City expands integration with PNM work-order information.
 
-## Bernalillo County street operations
+## Bernalillo County Street Operations
 
 - [Street Maintenance](https://www.bernco.gov/public-works/public-works-services/road-safety-conditions/streets-traffic-signals/street-maintenance)
 
@@ -36,7 +36,7 @@ Regional roadway operations, traffic analysis, incident management, and intellig
 
   Describes County traffic-engineering services for signals, signs, markings, speed studies, traffic counts, safety evaluations, school zones, and requests affecting streets outside Albuquerque's municipal maintenance jurisdiction.
 
-## Traffic analysis
+## Traffic Analysis
 
 - [MRCOG Traffic Counts Viewer](https://mrmpo.maps.arcgis.com/apps/webappviewer/index.html?id=5e779402decd4a9584d9cdddf1cbe56b)
 
@@ -50,7 +50,7 @@ Regional roadway operations, traffic analysis, incident management, and intellig
 
   Preserves regional corridor rankings, congestion profiles, strategy matrices, network maps, commuting studies, transit travel-time analysis, adaptive-signal findings, and related Albuquerque-area congestion-management work dating to 2008.
 
-## Intelligent transportation systems
+## Intelligent Transportation Systems
 
 - [MRMPO Intelligent Transportation Systems](https://www.mrcog-nm.gov/259/Intelligent-Transportation-Systems)
 

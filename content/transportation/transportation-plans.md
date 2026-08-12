@@ -91,7 +91,7 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   The Planning Department's maintained index links adopted area plans, transportation studies, and cross-section guidance used in public-right-of-way design, including the Downtown Walkability Analysis and Rio Grande Boulevard Study.
 
-### Historical area and corridor transportation records
+### Historical Area and Corridor Transportation Records
 
 - [Los Duranes Sector Development Plan — transportation section (2012 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-los-duranes-sector-plan-transportation-2012.pdf)
 
@@ -141,7 +141,7 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/XSections/Volcano_Heights-2013.pdf)
 
-## Bernalillo County planning
+## Bernalillo County Planning
 
 - [Bernalillo County Transportation Plans](https://www.bernco.gov/public-works/transportation-planning/transportation-plans)
 
@@ -164,4 +164,5 @@ Regional plans, long-range plans, and other system-level transportation planning
 ## Development Process
 
 - [Development Process Manual (June 2, 2020)](https://files.abqinfo.com/housing/development-process/development-process-manual-2020-06-02.pdf)
-  - Provides the City's technical requirements and procedures for planning, designing, reviewing, permitting, and constructing public infrastructure associated with development projects.
+
+  Provides the City's technical requirements and procedures for planning, designing, reviewing, permitting, and constructing public infrastructure associated with development projects.
