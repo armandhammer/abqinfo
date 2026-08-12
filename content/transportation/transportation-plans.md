@@ -13,13 +13,17 @@ Regional plans, long-range plans, and other system-level transportation planning
 - [MRMPO 2045 Metropolitan Transportation Plan](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-2045-mtp-final-2025-04-29.pdf)
 - [MRMPO 2045 Metropolitan Transportation Plan - Full Appendix](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-2045-mtp-final-full-appendix-2025-05-01.pdf)
 
-- [Transitions 2045 Executive Summary](https://www.mrcog-nm.gov/DocumentCenter/View/6579/MRMPO-Transitions-2045-MTP---Executive-Summary-04-16-25)
+- [Transitions 2045 Executive Summary (archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-transitions-2045-executive-summary-2025.pdf)
 
   Summarizes the adopted metropolitan plan's regional trends, goals, multimodal investment strategy, safety and equity approach, project priorities, environmental resilience, and implementation framework through the 2045 planning horizon.
 
-- [Resumen ejecutivo de Transiciones 2045 en español](https://www.mrcog-nm.gov/DocumentCenter/View/6633/MRMPO-Transitions-2045-MTP---Executive-Summary-Espanol-PDF)
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6579/MRMPO-Transitions-2045-MTP---Executive-Summary-04-16-25)
+
+- [Resumen ejecutivo de Transiciones 2045 en español (PDF archivado)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-transitions-2045-executive-summary-es-2025.pdf)
 
   Presenta en español el resumen oficial del plan metropolitano hasta 2045, incluyendo tendencias regionales, objetivos, seguridad, equidad, inversiones multimodales, resiliencia ambiental, prioridades de proyectos e implementación.
+
+  [PDF oficial de MRCOG](https://www.mrcog-nm.gov/DocumentCenter/View/6633/MRMPO-Transitions-2045-MTP---Executive-Summary-Espanol-PDF)
 
 - [MRMPO Metropolitan Transportation Plan hub](https://www.mrcog-nm.gov/264/Metropolitan-Transportation-Plan)
 
@@ -77,9 +81,11 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   Documents Albuquerque's enacted Complete Streets requirements, the 2019 equity-focused update, implementation history, adopted legislation, and supporting material governing how City streets serve pedestrians, bicyclists, transit riders, and motorists.
 
-- [Downtown Walkability Analysis (2014)](https://documents.cabq.gov/planning/development-process-manual/XSections/Downtown_Walkability_Analysis-2014.pdf)
+- [Downtown Walkability Analysis (2014 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-downtown-walkability-analysis-2014.pdf)
 
   Jeff Speck's 100-page study proposes targeted, low-cost street redesigns, signal changes, bicycle facilities, parking reforms, development strategies, railroad crossings, and public-realm improvements intended to increase walking, cycling, safety, and downtown Albuquerque's economic vitality.
+
+  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/XSections/Downtown_Walkability_Analysis-2014.pdf)
 
 - [City transportation plans and studies](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections)
 
