@@ -14,7 +14,7 @@ Traffic calming and speed management initiatives.
 
   Explains how residents request a City traffic-calming evaluation, what information the application requires, which streets qualify, and where to submit the online or written request.
 
-- [NTMP Traffic Calming Request Timeline (image)](https://www.arcgis.com/sharing/rest/content/items/5d5dabf6aba949d9b55bf65547eb76c8/data)
+- [NTMP Traffic Calming Request Timeline (archived image)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-ntmp-request-process-flowchart-2026.png)
 
   Illustrates the City's current Neighborhood Traffic Management Program request process from submission through screening, evaluation, prioritization, and project delivery, clarifying how neighborhood traffic-calming requests advance.
 

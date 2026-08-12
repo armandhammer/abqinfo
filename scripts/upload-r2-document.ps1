@@ -105,6 +105,7 @@ $contentTypes = @{
   '.docx' = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
   '.json' = 'application/json'
   '.pdf'  = 'application/pdf'
+  '.png'  = 'image/png'
   '.txt'  = 'text/plain'
   '.xlsx' = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
   '.zip'  = 'application/zip'
