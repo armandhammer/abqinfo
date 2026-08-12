@@ -30,11 +30,11 @@ Transportation studies and reports.
 
 ## Lead and Coal Avenues
 
-- [Lead and Coal Studies Final Report (March 2025)](https://www.cabq.gov/municipaldevelopment/documents/lead-and-coal_final_full-report.pdf)
+- [Lead and Coal Studies Final Report (March 2025 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-lead-coal-studies-final-report-2025.pdf)
 
   Evaluates existing traffic, safety, noise, and multimodal conditions along Lead and Coal avenues, compares lane and two-way conversion alternatives, and recommends safety improvements using operations analysis, public input, crash history, and implementation costs.
 
-  [Official City NTMP studies index](https://www.cabq.gov/neighborhood-traffic-management-program/studies)
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/lead-and-coal_final_full-report.pdf) · [Official City NTMP studies index](https://www.cabq.gov/neighborhood-traffic-management-program/studies)
 
 - [Road Safety Audit of Lead and Coal Avenues (2022 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/mrmpo-fhwa-lead-coal-road-safety-audit-2022.pdf)
 
