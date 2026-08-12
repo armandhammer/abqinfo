@@ -1,27 +1,28 @@
-﻿{
-    "recorded_at":  "2026-08-12T19:14:31.3567276Z",
-    "completed_item_range":  "Archived and validated the complete eight-file ABQ RIDE Forward report lineage; official project page validated and direct City source links retained as duplicate provenance companions.",
-    "total_candidates":  3722,
-    "counts_by_status":  {
-                             "pending review":  3284,
-                             "approved for addition":  0,
-                             "downloading":  0,
-                             "downloaded":  36,
-                             "parsed":  0,
-                             "description drafted":  0,
-                             "placement assigned":  0,
-                             "implemented":  0,
-                             "validated":  182,
-                             "excluded":  93,
-                             "duplicate":  95,
-                             "superseded":  5,
-                             "blocked":  0,
-                             "requires human review":  27
-                         },
-    "remaining_nonterminal":  3320,
-    "next_pending_id":  "lin-01236d79d0623075",
-    "blockers":  [
-
-                 ],
-    "resume_command":  "Review master-inventory candidate lin-01236d79d0623075, then continue the next coherent high-value batch from the durable queue after PR 20 is confirmed merged."
+{
+  "recorded_at": "2026-08-12T19:59:02.5840505Z",
+  "completed_item_range": "Validated and implemented the Lead and Coal planning-history batch: official 2025 final study live source, byte-identical archived 2022 MRMPO/FHWA road safety audit, superseded draft cleanup, and lineage-noise exclusion.",
+  "total_candidates": 3724,
+  "counts_by_status": {
+    "pending review": 3282,
+    "approved for addition": 0,
+    "downloading": 0,
+    "downloaded": 31,
+    "parsed": 0,
+    "description drafted": 0,
+    "placement assigned": 0,
+    "implemented": 0,
+    "validated": 184,
+    "excluded": 94,
+    "duplicate": 97,
+    "superseded": 7,
+    "blocked": 0,
+    "requires human review": 29
+  },
+  "remaining_nonterminal": 3313,
+  "next_pending_id": "lin-018e098614d64281",
+  "blockers": [
+    "Lead and Coal Studies Final Report is 122,503,452 bytes and requires explicit owner approval before R2 upload.",
+    "The 28,375,497-byte report-only edition matches the first 109 pages of the full report, but its authoritative government URL remains unreconciled."
+  ],
+  "resume_command": "Review master-inventory candidate lin-018e098614d64281, then continue the next coherent high-value archive batch without recrawling completed Lead and Coal sources."
 }
