@@ -4,7 +4,7 @@ title: "Zoning & IDO"
 
 Zoning regulations and Integrated Development Ordinance information.
 
-## Current ordinance and zoning tools
+## Current Ordinance and Zoning Tools
 
 - [Integrated Development Ordinance — effective May 6, 2026](https://files.abqinfo.com/housing/zoning-ido/cabq-ido-effective-2026-05-06.pdf)
 

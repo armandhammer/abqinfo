@@ -4,7 +4,7 @@ title: "City Facilities"
 
 City buildings and facilities.
 
-## Public-facility references
+## Public-Facility References
 
 - [Accessible City park and recreation facilities](https://www.cabq.gov/parksandrecreation/accessible-city-park-recreation-facilities)
 

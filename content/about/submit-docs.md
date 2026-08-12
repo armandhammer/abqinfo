@@ -2,7 +2,7 @@
 title: "Submit Documents"
 ---
 
-## Submit documents
+## Submit Documents
 
 Email info [at] abqinfo [dot] com to submit documentation to the site.
 

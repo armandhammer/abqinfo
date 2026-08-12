@@ -4,7 +4,7 @@ title: "Demographics"
 
 Albuquerque demographic and census data.
 
-## Regional data
+## Regional Data
 
 - [MRCOG socioeconomic data](https://www.mrcog-nm.gov/150/Socioeconomic-Data)
 

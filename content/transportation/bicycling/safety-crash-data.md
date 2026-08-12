@@ -4,7 +4,7 @@ title: "Safety & Crash Data"
 
 Bicycle safety statistics and crash data.
 
-## Safety program and project map
+## Safety Program and Project Map
 
 - [Albuquerque Vision Zero](https://www.cabq.gov/vision-zero/vision-zero)
 
@@ -40,7 +40,7 @@ Bicycle safety statistics and crash data.
 
   Collects historical Albuquerque metropolitan crash and safety reports, including Bernalillo County pedestrian and bicycle analysis covering crash severity, locations, timing, people involved, and reported contributing factors.
 
-## State safety plans and crash records
+## State Safety Plans and Crash Records
 
 - [NMDOT Highway Safety Improvement Program](https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/highway-safety-improvement-program/)
 

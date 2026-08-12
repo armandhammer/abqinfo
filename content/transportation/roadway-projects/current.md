@@ -4,7 +4,7 @@ title: "Current Projects"
 
 Active roadway projects, near-term implementation work, and project documents.
 
-## City corridor and neighborhood projects
+## City Corridor and Neighborhood Projects
 
 - [District 7 Traffic & Street Improvements](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements)
 
@@ -26,7 +26,7 @@ Active roadway projects, near-term implementation work, and project documents.
 
   Describes the 2nd Street project near Hazeldine and 1st Street, combining pavement rehabilitation, traffic calming, ADA improvements, sidewalks, lighting, multimodal access, speed-study findings, and economic-development goals.
 
-## Bernalillo County project indexes
+## Bernalillo County Project Indexes
 
 - [Current Public Works Projects](https://www.bernco.gov/public-works/current-projects)
 
@@ -36,7 +36,7 @@ Active roadway projects, near-term implementation work, and project documents.
 
   Preserves Bernalillo County's completed public-works project index, providing historical reference for finished roadway, drainage, facility, utility, and neighborhood improvements that are no longer listed as active.
 
-## State project index
+## State Project Index
 
 - [NMDOT Active Projects](https://www.dot.nm.gov/projects/active-projects)
 
@@ -57,15 +57,22 @@ Active roadway projects, near-term implementation work, and project documents.
 ## Broadway Boulevard Road Diet
 
 - [Engineering Drawings: Coal to MLK](https://files.abqinfo.com/transportation/roadway-projects/current/broadway-blvd-road-diet-coal-to-mlk-engineering-drawings.pdf)
-  - Provides engineering drawings for the Broadway Boulevard road-diet segment from Coal Avenue to Martin Luther King Jr. Avenue, including lane layout, striping, and related improvements.
-- [Draft Engineering Drawings: MLK to Lomas](https://files.abqinfo.com/transportation/roadway-projects/current/broadway-blvd-mlk-to-lomas-draft-engineering-drawings.pdf)
-  - Shows the draft road-diet design from Martin Luther King Jr. Avenue to Lomas Boulevard, documenting proposed lane configuration, striping, and intersection details.
-- [Cost Estimate: MLK to Lomas](https://files.abqinfo.com/transportation/roadway-projects/current/broadway-blvd-mlk-to-lomas-cost-estimate-60.pdf)
-  - Presents the 60-percent design cost estimate for the Broadway segment between Martin Luther King Jr. Avenue and Lomas Boulevard, organized by anticipated construction items.
-- [Traffic Evaluation (Signed July 2, 2025)](https://files.abqinfo.com/transportation/roadway-projects/current/broadway-blvd-road-diet-traffic-evaluation-signed-2025-07-02.pdf)
-  - Evaluates traffic operations and engineering considerations for the proposed Broadway Boulevard road diet, providing the signed technical basis for the project's lane changes.
 
-## Citywide construction maps
+  Provides engineering drawings for the Broadway Boulevard road-diet segment from Coal Avenue to Martin Luther King Jr. Avenue, including lane layout, striping, and related improvements.
+
+- [Draft Engineering Drawings: MLK to Lomas](https://files.abqinfo.com/transportation/roadway-projects/current/broadway-blvd-mlk-to-lomas-draft-engineering-drawings.pdf)
+
+  Shows the draft road-diet design from Martin Luther King Jr. Avenue to Lomas Boulevard, documenting proposed lane configuration, striping, and intersection details.
+
+- [Cost Estimate: MLK to Lomas](https://files.abqinfo.com/transportation/roadway-projects/current/broadway-blvd-mlk-to-lomas-cost-estimate-60.pdf)
+
+  Presents the 60-percent design cost estimate for the Broadway segment between Martin Luther King Jr. Avenue and Lomas Boulevard, organized by anticipated construction items.
+
+- [Traffic Evaluation (Signed July 2, 2025)](https://files.abqinfo.com/transportation/roadway-projects/current/broadway-blvd-road-diet-traffic-evaluation-signed-2025-07-02.pdf)
+
+  Evaluates traffic operations and engineering considerations for the proposed Broadway Boulevard road diet, providing the signed technical basis for the project's lane changes.
+
+## Citywide Construction Maps
 
 - [Permitted construction in the public right of way](https://www.cabq.gov/municipaldevelopment/maps/traffic-report)
 

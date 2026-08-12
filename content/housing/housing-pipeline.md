@@ -20,7 +20,7 @@ title: "Housing Pipeline"
 
   The City’s HUD Consolidated Plan identifies housing, homelessness, community-development, and fair-housing needs for 2023-2027. Its accompanying 2023 Action Plan describes the first year’s planned use of federal housing and community-development resources.
 
-## Development activity data
+## Development Activity Data
 
 - [Building permits open data](https://data.cabq.gov/business/buildingpermits/)
 
