@@ -1,6 +1,6 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-11T01:34:33.7761136Z
+Generated: 2026-08-12T15:14:07.7990838Z
 
 This catalog is derived from master-inventory.json, the authoritative project queue. It records 3687 candidates and 61 R2 objects totaling 725638531 bytes.
 
@@ -9,7 +9,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Status | Count |
 | --- | ---: |
 | pending review | 3294 |
-| approved for addition | 6 |
+| approved for addition | 4 |
 | downloading | 0 |
 | downloaded | 40 |
 | parsed | 1 |
@@ -21,7 +21,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | duplicate | 64 |
 | superseded | 5 |
 | blocked | 0 |
-| requires human review | 28 |
+| requires human review | 30 |
 
 ## Preserved documents
 
@@ -364,6 +364,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-2ada4c27695e656e | requires human review | Appendix G Ã¢â‚¬â€œ Project Profiles | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-392154c019847a2c | requires human review | Appendix F Ã¢â‚¬â€œ Priority Projects Tables (Jan 2025) | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-395957636cb2fed0 | requires human review | 1993 Trails and Bikeways Facility Plan | The 2024 plan identifies this as a predecessor; the official Planning update summary confirms that the 2015 plan repealed it.; The preserved R2 object is exactly 4,624,017 bytes (4.41 MiB), but an R2 HTTP 200 is not authoritative provenance.; Blind graph recovery now passes through the official 2024 successor plan, which names the 1993 plan. This does not reconcile the preserved R2 file checksum. |
+| src-46cb08fc8e5a1ad4 | requires human review | Council District Poster Map | CABQ ArcGIS item 47889b7150894b1c92a45ea3c1ffe3bd is owned by dmdgis in the City organization and was modified 2026-02-04T00:40:20Z.; Original authoritative one-page PDF downloaded to temporary review storage without modification: exactly 16,586,301 bytes (15.82 MiB), SHA-256 910349e5761559d3e066b5654772d7214319f060cd1604dac42616a051dfddbc.; A CABQ organization search found no newer or competing Council District Poster Map item; the PDF itself identifies January 2026.; The full poster rendered successfully and retained legible boundaries, streets, portraits, scale, north arrow, inset, and date note.; Current R2 storage is 725,638,531 bytes; this file and the NTMP flowchart would add 18,035,199 bytes and project storage to 743,673,730 bytes.; No optimization or derivative is proposed. No R2 upload was performed; explicit authorization is required before production storage changes. |
 | src-48a2030163390b5b | requires human review | Traffic Evaluation (Signed July 2, 2025) | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-4ae7d33db461b5a2 | requires human review | Buena Vista Bike Boulevard 60% Plans | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-4cb190564a688d42 | requires human review | City Council Resolution R-07-268: Bike Boulevards (2007) | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
@@ -379,6 +380,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-9ddd86a240b30500 | requires human review | Complete Bernalillo County Technical Standards | The current County landing page still labels the March 28, 2023 standards as current; no newer authoritative edition was found there on 2026-08-10.; Original complete 226-page authoritative PDF downloaded to temporary storage without modification: exactly 9,161,556 bytes (8.74 MiB), SHA-256 87815e3438b0a392bf7019a27c1030c66f6f11ac902ab579a6c0b027feddabb1.; The landing page's separate April-hosted copy is 8,831,995 bytes and 224 pages; it is not byte-identical and is not an equivalent substitute for the page's complete May-hosted edition.; Representative pages rendered successfully and confirmed intact transportation-network, road-design, drainage, traffic-review, construction, and green-infrastructure content.; Current R2 storage is 725,638,531 bytes; the original would add 9,161,556 bytes and project storage to 734,800,087 bytes (7.348% of the current 10 GB-month Standard free allowance).; No optimization or derivative is proposed. No R2 upload was performed; explicit authorization is required before production storage changes. |
 | src-a614f077ace20401 | requires human review | 2015 Bikeways and Trails Facilities Plan | The official Planning summary records R-14-142/R-2015-045, repeal of the 1993 and 2000 plans, and adoption of the 2015 plan.; The preserved R2 object is exactly 4,402,773 bytes (4.20 MiB); no live authoritative file was available for checksum comparison.; Blind graph recovery now passes through an embedded historical-file link on page 155 of the official 2024 plan. The linked 2015 City URL currently returns HTTP 404, so the preserved R2 file checksum remains unreconciled. |
 | src-b1565d5b0748d248 | requires human review | Tall Curb Spec Sheet | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
+| src-c62f0544fc2c1877 | requires human review | NTMP Request Process Flowchart | CABQ ArcGIS item 5d5dabf6aba949d9b55bf65547eb76c8 is owned by hstettler_CABQ in the City organization and was modified 2026-02-04T16:24:59Z.; Original authoritative 5,100-by-3,300-pixel PNG downloaded to temporary review storage without modification: exactly 1,448,898 bytes (1.38 MiB), SHA-256 d10b16378b96f54286bc781c165e8c6da6a6a73d2dd90bcc08296ca4e3021ad9.; CABQ organization searches found no newer NTMP request-process flowchart; related maps and dashboards are distinct resources.; The full infographic was visually intact and legible, including eligibility, review, study, report, design, funding, scheduling, construction, and treatment steps.; Current R2 storage is 725,638,531 bytes; this file and the Council District Poster Map would add 18,035,199 bytes and project storage to 743,673,730 bytes.; No optimization or derivative is proposed. No R2 upload was performed; explicit authorization is required before production storage changes. |
 | src-cc22fda2e9f7626e | requires human review | Moon St NE Cycletrack Plans | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-d6e142c608f6a2de | requires human review | Appendix E Ã¢â‚¬â€œ Bike Boulevard Toolkit | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-d850e374f0547178 | requires human review | Appendix H Ã¢â‚¬â€œ Multiuse Trail Considerations (2015 Plan) | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |

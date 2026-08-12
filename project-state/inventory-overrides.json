@@ -851,16 +851,6 @@
     "exclusion_reason": "Generic Hub landing-page record duplicates the 34 individually inventoried DMD catalog items and is retained as discovery provenance rather than public site content."
   },
   {
-    "id": "src-46cb08fc8e5a1ad4",
-    "status": "approved for addition",
-    "date": "2026-01",
-    "proposed_canonical_page": "content/maps/maps.md",
-    "description": "Provides the City's January 2026 printable council-district map with district boundaries and councilor photographs, offering a dated civic-reference snapshot for preservation alongside the live council map.",
-    "description_word_count": 26,
-    "validation_status": "metadata and relevance reviewed 2026-08-10; archival and implementation review pending",
-    "processing_notes": ["Discovered by deterministic crawl of https://dmd-public-cabq.hub.arcgis.com/.", "ArcGIS item ID 47889b7150894b1c92a45ea3c1ffe3bd; owner dmdgis; organization CWv1abTnC3urn4bV.", "Created 2026-01-09T20:32:47.0000000Z; modified 2026-02-04T00:40:20.0000000Z.", "Authoritative PDF is exactly 16,586,301 bytes (15.82 MiB), below the 100 MB concern threshold; no download or R2 upload was performed."]
-  },
-  {
     "id": "src-5964b940e185bd7a",
     "status": "duplicate",
     "validation_status": "editorial and current ArcGIS metadata review completed 2026-08-10",
@@ -920,15 +910,6 @@
     "exclusion_reason": "Internal-style map-request information sheet does not contain a substantive public map, plan, dataset, project record, or other durable ABQInfo content."
   },
   {
-    "id": "src-c62f0544fc2c1877",
-    "status": "approved for addition",
-    "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
-    "description": "Illustrates the City's current Neighborhood Traffic Management Program request process from submission through screening, evaluation, prioritization, and project delivery, clarifying how neighborhood traffic-calming requests advance.",
-    "description_word_count": 25,
-    "validation_status": "metadata and relevance reviewed 2026-08-10; archival and implementation review pending",
-    "processing_notes": ["Discovered by deterministic crawl of https://dmd-public-cabq.hub.arcgis.com/.", "ArcGIS item ID 5d5dabf6aba949d9b55bf65547eb76c8; owner hstettler_CABQ; organization CWv1abTnC3urn4bV.", "Created 2025-09-12T15:37:14.0000000Z; modified 2026-02-04T16:24:59.0000000Z.", "Authoritative image is exactly 1,448,898 bytes (1.38 MiB), below the 100 MB concern threshold; no download or R2 upload was performed."]
-  },
-  {
     "id": "src-d0e2cb6199c14ee2",
     "status": "duplicate",
     "validation_status": "editorial and current ArcGIS metadata review completed 2026-08-10",
@@ -976,5 +957,39 @@
     "cross_listing_approved": false,
     "validation_status": "passed: live PDF HTTP 200, exact metadata/content/placement reviewed; R2 archival upload requires explicit authorization",
     "provenance_status": "authoritative County landing page and direct file recorded"
+  },
+  {
+    "id": "src-46cb08fc8e5a1ad4",
+    "status": "requires human review",
+    "date": "2026-01",
+    "file_type": "PDF",
+    "size_bytes": 16586301,
+    "checksum_sha256": "910349e5761559d3e066b5654772d7214319f060cd1604dac42616a051dfddbc",
+    "proposed_canonical_page": "content/maps/maps.md",
+    "description": "Provides the City's January 2026 printable council-district map with district boundaries and councilor photographs, offering a dated civic-reference snapshot for preservation alongside the live council map.",
+    "description_word_count": 26,
+    "processing_notes": ["CABQ ArcGIS item 47889b7150894b1c92a45ea3c1ffe3bd is owned by dmdgis in the City organization and was modified 2026-02-04T00:40:20Z.", "Original authoritative one-page PDF downloaded to temporary review storage without modification: exactly 16,586,301 bytes (15.82 MiB), SHA-256 910349e5761559d3e066b5654772d7214319f060cd1604dac42616a051dfddbc.", "A CABQ organization search found no newer or competing Council District Poster Map item; the PDF itself identifies January 2026.", "The full poster rendered successfully and retained legible boundaries, streets, portraits, scale, north arrow, inset, and date note.", "Current R2 storage is 725,638,531 bytes; this file and the NTMP flowchart would add 18,035,199 bytes and project storage to 743,673,730 bytes.", "No optimization or derivative is proposed. No R2 upload was performed; explicit authorization is required before production storage changes."],
+    "implementation_location": "content/maps/maps.md",
+    "implementation_locations": ["content/maps/maps.md"],
+    "cross_listing_approved": false,
+    "validation_status": "passed: live PDF and ArcGIS item HTTP 200; exact metadata, visual content, and canonical placement reviewed; R2 archival upload requires explicit authorization",
+    "provenance_status": "CABQ-owned ArcGIS item recovered through the official DMD Hub catalog"
+  },
+  {
+    "id": "src-c62f0544fc2c1877",
+    "status": "requires human review",
+    "date": "2026-02",
+    "file_type": "PNG",
+    "size_bytes": 1448898,
+    "checksum_sha256": "d10b16378b96f54286bc781c165e8c6da6a6a73d2dd90bcc08296ca4e3021ad9",
+    "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+    "description": "Illustrates the City's current Neighborhood Traffic Management Program request process from submission through screening, evaluation, prioritization, and project delivery, clarifying how neighborhood traffic-calming requests advance.",
+    "description_word_count": 25,
+    "processing_notes": ["CABQ ArcGIS item 5d5dabf6aba949d9b55bf65547eb76c8 is owned by hstettler_CABQ in the City organization and was modified 2026-02-04T16:24:59Z.", "Original authoritative 5,100-by-3,300-pixel PNG downloaded to temporary review storage without modification: exactly 1,448,898 bytes (1.38 MiB), SHA-256 d10b16378b96f54286bc781c165e8c6da6a6a73d2dd90bcc08296ca4e3021ad9.", "CABQ organization searches found no newer NTMP request-process flowchart; related maps and dashboards are distinct resources.", "The full infographic was visually intact and legible, including eligibility, review, study, report, design, funding, scheduling, construction, and treatment steps.", "Current R2 storage is 725,638,531 bytes; this file and the Council District Poster Map would add 18,035,199 bytes and project storage to 743,673,730 bytes.", "No optimization or derivative is proposed. No R2 upload was performed; explicit authorization is required before production storage changes."],
+    "implementation_location": "content/transportation/roadway-projects/speed-management.md",
+    "implementation_locations": ["content/transportation/roadway-projects/speed-management.md"],
+    "cross_listing_approved": false,
+    "validation_status": "passed: live PNG and ArcGIS item HTTP 200; exact metadata, visual content, and canonical placement reviewed; R2 archival upload requires explicit authorization",
+    "provenance_status": "CABQ-owned ArcGIS item recovered through the official DMD Hub catalog"
   }
 ]
