@@ -1,0 +1,6 @@
+// Give top-level navigation labels enough room to remain readable on one line.
+// 17.25rem is 20px wider than Hugo Book's 16rem default at the site's 16px root size.
+$menu-width: 17.25rem;
+
+// Keep Hugo Book's responsive breakpoint synchronized with the wider menu.
+$mobile-breakpoint: $menu-width + $body-min-width * 1.2 + $toc-width;
