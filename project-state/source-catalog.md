@@ -1,6 +1,6 @@
 ﻿# ABQ Info authoritative source catalog
 
-Generated: 2026-08-12T18:11:42.1562279Z
+Generated: 2026-08-12T18:25:01.1672799Z
 
 This catalog is derived from master-inventory.json, the authoritative project queue. It records 3705 candidates and 79 R2 objects totaling 1007838374 bytes.
 
@@ -9,14 +9,14 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Status | Count |
 | --- | ---: |
 | pending review | 3284 |
-| approved for addition | 2 |
+| approved for addition | 0 |
 | downloading | 0 |
 | downloaded | 40 |
 | parsed | 0 |
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 0 |
-| validated | 171 |
+| validated | 173 |
 | excluded | 93 |
 | duplicate | 83 |
 | superseded | 5 |
@@ -146,6 +146,8 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Streetlight Status Dashboard | City of Albuquerque | content/transportation/operations-data.md | [source](https://www.arcgis.com/apps/dashboards/1facbd146a924224b1698c7d164662c3) |
 | Studies | City of Albuquerque | content/transportation/roadway-projects/speed-management.md | [source](https://www.cabq.gov/neighborhood-traffic-management-program/studies) |
 | Submit a Traffic Calming Request | City of Albuquerque | content/transportation/roadway-projects/speed-management.md | [source](https://www.cabq.gov/neighborhood-traffic-management-program/submit-a-traffic-calming-request) |
+| Survey Monument Maintenance Public | City of Albuquerque | content/maps/maps.md | [source](https://services.arcgis.com/CWv1abTnC3urn4bV/arcgis/rest/services/Survey_Monument_Maintenance_Public/FeatureServer) |
+| Survey Monument Search | City of Albuquerque | content/maps/maps.md | [source](https://experience.arcgis.com/experience/8f3eae4dec3d4bea88aa65da32584e90) |
 | The Vacant and Abandoned Houses Task Force Releases Report | City of Albuquerque | content/development-land-use/projects.md | [source](https://www.cabq.gov/council/projects/current-projects/the-vacant-and-abandoned-houses-task-force-releases-report) |
 | Toolkit | City of Albuquerque | content/transportation/roadway-projects/speed-management.md | [source](https://www.cabq.gov/neighborhood-traffic-management-program/toolkit) |
 | Traffic & Street Improvements | City of Albuquerque | content/transportation/roadway-projects/current.md | [source](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements) |

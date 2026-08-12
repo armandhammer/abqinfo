@@ -51,6 +51,10 @@ Interactive maps of city data and infrastructure.
 
   Maps stormwater drainage ponds maintained by the City of Albuquerque, providing a geographic reference for public drainage infrastructure and its relationship to surrounding neighborhoods.
 
+- [Survey Monument Search](https://experience.arcgis.com/experience/8f3eae4dec3d4bea88aa65da32584e90)
+
+  Locates City-maintained survey monuments across Albuquerque and provides monument details for survey, engineering, construction, mapping, public-infrastructure, and property research. [Public feature service](https://services.arcgis.com/CWv1abTnC3urn4bV/arcgis/rest/services/Survey_Monument_Maintenance_Public/FeatureServer)
+
 ## City Bicycle Maps and Data
 
 - [Bikeways and Trails Public Map Viewer](https://cabq.maps.arcgis.com/apps/instant/sidebar/index.html?appid=bfda88ddb89a40c08440b4abd4c182ba)
