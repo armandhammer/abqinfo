@@ -28,6 +28,20 @@ Transportation studies and reports.
 
   Documents the 2023 neighborhood traffic-calming study and links the public-meeting presentation covering traffic conditions, community concerns, potential treatments, and the study process for Amole Mesa Avenue and Messina Drive.
 
+## Lead and Coal Avenues
+
+- [Lead and Coal Studies Final Report (March 2025)](https://www.cabq.gov/municipaldevelopment/documents/lead-and-coal_final_full-report.pdf)
+
+  Evaluates existing traffic, safety, noise, and multimodal conditions along Lead and Coal avenues, compares lane and two-way conversion alternatives, and recommends safety improvements using operations analysis, public input, crash history, and implementation costs.
+
+  [Official City NTMP studies index](https://www.cabq.gov/neighborhood-traffic-management-program/studies)
+
+- [Road Safety Audit of Lead and Coal Avenues (2022 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/mrmpo-fhwa-lead-coal-road-safety-audit-2022.pdf)
+
+  Documents the independent safety audit of Lead and Coal avenues between Broadway and Washington, including crash patterns, field observations, community comments, and recommended countermeasures for intersections, crossings, speeds, visibility, and multimodal travel.
+
+  [Official MRMPO report](https://www.mrcog-nm.gov/DocumentCenter/View/5501/Road-Safety-Audit-of-Lead-and-Coal)
+
 ## Regional Screening and Analysis
 
 - [Road Diet Candidates Map](https://www.mrcog-nm.gov/569/Road-Diet-Candidates-Map)
