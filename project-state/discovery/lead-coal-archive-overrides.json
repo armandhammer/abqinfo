@@ -1,5 +1,41 @@
 [
   {
+    "match_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-lead-coal-studies-final-report-2025.pdf",
+    "status": "validated",
+    "source_url": "https://www.cabq.gov/neighborhood-traffic-management-program/studies",
+    "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/lead-and-coal_final_full-report.pdf",
+    "agency": "City of Albuquerque",
+    "title": "Lead and Coal Studies Final Report",
+    "date": "2025-03",
+    "file_type": "PDF",
+    "size_bytes": 122503452,
+    "checksum_sha256": "8dd80927c56385a5099ab512ecf8e17049221f58f3f92478480c7f4573c8f60b",
+    "parent_url": "https://www.cabq.gov/neighborhood-traffic-management-program/studies",
+    "referring_urls": [
+      "https://www.cabq.gov/neighborhood-traffic-management-program/studies"
+    ],
+    "discovery_path": [
+      "https://www.cabq.gov/neighborhood-traffic-management-program/studies",
+      "https://www.cabq.gov/municipaldevelopment/documents/lead-and-coal_final_full-report.pdf"
+    ],
+    "discovery_method": "authored document link on official City NTMP studies index",
+    "crawl_depth": 1,
+    "provenance_status": "official City studies index and byte-identical City-hosted file recorded",
+    "proposed_canonical_page": "content/transportation/roadway-projects/studies.md",
+    "description": "Evaluates existing traffic, safety, noise, and multimodal conditions along Lead and Coal avenues, compares lane and two-way conversion alternatives, and recommends safety improvements using operations analysis, public input, crash history, and implementation costs.",
+    "processing_notes": [
+      "Original authoritative 1,214-page City PDF preserved without modification: 122,503,452 bytes (116.83 MiB). Its 1,105 pages of appendices and technical analyses explain the unusually large size.",
+      "Owner explicitly approved the production R2 upload on 2026-08-12; no optimization, splitting, recompression, downsampling, conversion, or other source modification was performed.",
+      "Public R2 download matched exact size and SHA-256."
+    ],
+    "implementation_location": "content/transportation/roadway-projects/studies.md",
+    "implementation_locations": [
+      "content/transportation/roadway-projects/studies.md"
+    ],
+    "validation_status": "passed: explicit large-file approval, official City provenance, public byte hash, description, and canonical placement validated",
+    "exclusion_reason": null
+  },
+  {
     "match_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/mrmpo-fhwa-lead-coal-road-safety-audit-2022.pdf",
     "status": "validated",
     "source_url": "https://www.mrcog-nm.gov/DocumentCenter/View/5501/Road-Safety-Audit-of-Lead-and-Coal",
@@ -35,7 +71,7 @@
   },
   {
     "id": "src-62ee5dd3da3bd076",
-    "status": "validated",
+    "status": "duplicate",
     "source_url": "https://www.cabq.gov/neighborhood-traffic-management-program/studies",
     "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/lead-and-coal_final_full-report.pdf",
     "agency": "City of Albuquerque",
@@ -65,11 +101,12 @@
     "implementation_locations": [
       "content/transportation/roadway-projects/studies.md"
     ],
-    "validation_status": "passed as official live source and canonical placement; R2 archival requires explicit owner approval above 100 MB"
+    "validation_status": "duplicate official-source link intentionally retained beside canonical R2 archive",
+    "exclusion_reason": "Official City direct-file link is already recorded as provenance on the canonical archived final-report record."
   },
   {
     "id": "src-7c2195422742513b",
-    "status": "requires human review",
+    "status": "duplicate",
     "source_url": "https://www.cabq.gov/neighborhood-traffic-management-program/studies",
     "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/lead-and-coal_final_full-report.pdf",
     "agency": "City of Albuquerque",
@@ -85,11 +122,12 @@
       "The existing 28,375,497-byte report-only edition is an exact text match for the first 109 pages, but an official government URL for that edition has not been located.",
       "No optimization, recompression, conversion, or upload was performed."
     ],
-    "validation_status": "requires explicit owner approval before production R2 upload above 100,000,000 bytes"
+    "validation_status": "explicit owner approval fulfilled; duplicate local-file record reconciled to canonical R2 archive",
+    "exclusion_reason": "The complete original is now preserved and validated in the canonical R2 final-report record."
   },
   {
     "id": "src-297796269332f3a4",
-    "status": "requires human review",
+    "status": "duplicate",
     "agency": "City of Albuquerque source edition; direct provenance unreconciled",
     "title": "Lead and Coal Studies Final Report - Report-Only Edition",
     "date": "2025-03",
@@ -102,7 +140,8 @@
       "All 109 extracted-text page hashes match the first 109 pages of the complete 1,214-page City file.",
       "The file was not modified by ABQInfo, but no authoritative government URL for this smaller edition has been reconciled; do not publish it as an authoritative archive until provenance is confirmed."
     ],
-    "validation_status": "requires human review: smaller source edition verified as report subset, but authoritative URL remains unreconciled"
+    "validation_status": "redundant report-only subset; complete authoritative report is preserved",
+    "exclusion_reason": "All 109 pages are contained in the now-preserved complete 1,214-page authoritative report, so the provenance-unreconciled subset is unnecessary."
   },
   {
     "id": "src-927546cc176a8954",
