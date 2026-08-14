@@ -112,6 +112,72 @@ Transportation studies and reports.
 
   Documents the 2023 neighborhood traffic-calming study and links the public-meeting presentation covering traffic conditions, community concerns, potential treatments, and the study process for Amole Mesa Avenue and Messina Drive.
 
+### Lomas Boulevard
+
+- [Lomas Boulevard Safety Study (2025 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-lomas-boulevard-safety-study-2025.pdf)
+
+  Evaluates converting Lomas Boulevard between Girard and San Pedro to a road diet with business-access-and-transit lanes, using traffic operations, crash history, transit performance, multimodal access, public input, and extensive appendices to assess safety and implementation.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/lomas-blvd-safety-study.pdf) · [Official City project page](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/lomas-traffic-calming-green-stormwater-infrastructure-analysis)
+
+### Golf Course Road
+
+- [Golf Course Road Complete Streets Study (2022 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-golf-course-road-complete-streets-study-2022.pdf)
+
+  Evaluates Golf Course Road as a Complete Street, documenting traffic, safety, transit, walking, bicycling, land use, and public priorities before recommending corridor and intersection concepts, implementation phases, and planning-level costs.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/golf-course-rd-complete-streets-study-final-draft-february-2022-reduced.pdf) · [Official City project page](https://www.cabq.gov/council/find-your-councilor/district-5/district-5-projects/district-5-traffic-projects/golf-course-road-complete-streets-study)
+
+### Juan Tabo and Four Hills
+
+- [Juan Tabo Hills Traffic Study (2023 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-juan-tabo-hills-traffic-study-2023.pdf)
+
+  Analyzes existing and future traffic in Juan Tabo Hills and Willow Wood, including roadway conditions, speeds, crashes, intersection operations, pedestrian and bicycle needs, traffic-control warrants, development assumptions, and recommended improvements.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/final-juan-tabo-hills-traffic-study_09292023.pdf) · [Official City project page](https://www.cabq.gov/council/find-your-councilor/district-9/district-9-projects/district-9-street-improvement-projects/juan-tabo-hills-traffic-study)
+
+- [Juan Tabo Boulevard Connectivity Study (2021 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-juan-tabo-boulevard-connectivity-study-2021.pdf)
+
+  Evaluates extending Juan Tabo Boulevard between Central Avenue and Innovation Parkway/Eubank, documenting right-of-way, development, traffic, drainage, utilities, multimodal design, alternatives, costs, and implementation considerations for a missing north-south connection.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/coa-juan-tabo-connectivity-study-final.pdf) · [Official City project page](https://www.cabq.gov/council/find-your-councilor/district-9/district-9-projects/district-9-street-improvement-projects/juan-tabo-hills-connectivity-study)
+
+- [Four Hills Traffic Calming Study (2023 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-four-hills-traffic-calming-study-2023.pdf)
+
+  Documents traffic, speeds, crashes, street geometry, and community input across the Four Hills neighborhood, then evaluates and recommends traffic-calming treatments for Stagecoach Road, Four Hills Road, Via Posada, and connecting streets.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/four-hills-traffic-calming-public-involvement-5_24_2023-final.pdf) · [Official City project page](https://www.cabq.gov/council/find-your-councilor/district-9/district-9-projects/district-9-street-improvement-projects/four-hills-traffic-calming-study)
+
+### Montaño Road and North Fourth Street
+
+- [Montaño Road Transportation Alternatives Analysis (2005 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-montano-road-transportation-alternatives-analysis-2005.pdf)
+
+  Evaluates transportation and land-use alternatives for Montaño Road between Coors and Fourth Street and the Montaño/Fourth intersection, covering corridor access, traffic, safety, street design, redevelopment, public priorities, and recommended multimodal concepts.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/montano-corridor-studies/MontanoHallReport.pdf) · [Official City project page](https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies)
+
+### Zuni Road
+
+- [Zuni Road Study — Part I (2011 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-zuni-road-study-part-1-2011.pdf)
+
+  Documents existing conditions and community priorities along Zuni Road from Washington to Central, evaluates multimodal and traffic-safety alternatives, and recommends corridor, intersection, pedestrian, bicycle, transit, streetscape, and implementation improvements.
+
+  [Official City PDF](https://www.cabq.gov/planning/documents/ZuniRoadStudyPart11111.pdf) · [Official City project page](https://www.cabq.gov/council/projects/completed-projects/2012/zuni-road-study)
+
+- [Zuni Road Study — Part II: Collected Data (2011 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-zuni-road-study-part-2-2011.pdf)
+
+  Preserves the Zuni Road Study's collected-data appendices, including traffic counts, operations, crashes, transit, roadway measurements, public input, cost material, and technical evidence supporting the final corridor recommendations.
+
+  [Official City PDF](https://www.cabq.gov/planning/documents/ZuniRoadStudyPart21111.pdf)
+
+### Bridge Boulevard
+
+- [Bridge Boulevard Corridor Redevelopment Plan (2013 archived PDF)](https://files.abqinfo.com/development-land-use/plans/bernco-bridge-boulevard-corridor-redevelopment-plan-2013.pdf)
+
+  Guides redevelopment along Bridge Boulevard in the South Valley by coordinating land use, transportation, streetscape, drainage, economic development, public investment, and implementation strategies for the corridor between the river and Coors Boulevard.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/Redevelopment-plan.pdf) · [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/16/bridge-boulevard-corridor-redevelopment-plan)
+
 ## Lead and Coal Avenues
 
 - [Lead and Coal Studies Final Report (March 2025 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-lead-coal-studies-final-report-2025.pdf)

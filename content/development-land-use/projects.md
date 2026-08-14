@@ -4,6 +4,14 @@ title: "Projects"
 
 Selected major development activity and the plans and datasets needed to understand it. Individual projects belong here when their scale, public impact, planning significance, or unusually useful public record warrants inclusion—not merely because a permit was issued.
 
+## Corridor Redevelopment Plans
+
+- [Bridge Boulevard Corridor Redevelopment Plan (2013 archived PDF)](https://files.abqinfo.com/development-land-use/plans/bernco-bridge-boulevard-corridor-redevelopment-plan-2013.pdf)
+
+  Guides redevelopment along Bridge Boulevard in the South Valley by coordinating land use, transportation, streetscape, drainage, economic development, public investment, and implementation strategies for the corridor between the river and Coors Boulevard.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/Redevelopment-plan.pdf) · [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/16/bridge-boulevard-corridor-redevelopment-plan)
+
 ## Development Activity Data
 
 - [Building permits open data](https://data.cabq.gov/business/buildingpermits/)
