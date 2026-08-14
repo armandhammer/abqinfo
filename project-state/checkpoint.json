@@ -1,9 +1,9 @@
 ﻿{
-    "recorded_at":  "2026-08-12T22:59:54.8646033Z",
-    "completed_item_range":  "Validated 13-document Central Avenue, Girard Boulevard, and South Yale Complete Streets archive batch; reconciled 16 redundant or lower-value related records.",
-    "total_candidates":  3740,
+    "recorded_at":  "2026-08-14T15:50:39.1314543Z",
+    "completed_item_range":  "Validated the live MRMPO TIP Viewer and official current-TIP source; captured and reconciled 228 active projects; exhaustively confirmed the project attachment endpoint contains no files.",
+    "total_candidates":  3970,
     "counts_by_status":  {
-                             "pending review":  3244,
+                             "pending review":  3243,
                              "approved for addition":  0,
                              "downloading":  0,
                              "downloaded":  30,
@@ -11,17 +11,17 @@
                              "description drafted":  0,
                              "placement assigned":  0,
                              "implemented":  0,
-                             "validated":  197,
-                             "excluded":  95,
-                             "duplicate":  133,
+                             "validated":  199,
+                             "excluded":  323,
+                             "duplicate":  134,
                              "superseded":  14,
                              "blocked":  0,
                              "requires human review":  27
                          },
-    "remaining_nonterminal":  3274,
+    "remaining_nonterminal":  3273,
     "next_pending_id":  "lin-02aacc6738f9b174",
     "blockers":  [
 
                  ],
-    "resume_command":  "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Get-CandidatesByStatus.ps1 -Status \"pending review\""
+    "resume_command":  "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Get-Candidate.ps1 -Id lin-02aacc6738f9b174"
 }

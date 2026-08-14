@@ -293,6 +293,8 @@ foreach ($discoveryFile in $discoveryFiles) {
     $url = Get-NormalizedDiscoveryUrl $rawUrl
     $anchorText = [string](Get-PropertyValue $candidateItem 'anchor_text')
     $record = New-Record $url (Get-DiscoveryTitle $url $anchorText) 'pending review'
+    $candidateId = [string](Get-PropertyValue $candidateItem 'id')
+    if ($candidateId) { $record.id = $candidateId }
     $record.processing_notes = @("Discovered by deterministic crawl of $crawlSource.", 'Exact metadata and relevance remain pending source review.')
     $candidateAgency = [string](Get-PropertyValue $candidateItem 'agency')
     $candidateFileType = [string](Get-PropertyValue $candidateItem 'file_type')
@@ -300,12 +302,21 @@ foreach ($discoveryFile in $discoveryFiles) {
     $candidateSizeBytes = Get-PropertyValue $candidateItem 'size_bytes'
     $candidateProvenance = [string](Get-PropertyValue $candidateItem 'provenance_status')
     $candidateNotes = @(Get-PropertyValue $candidateItem 'processing_notes')
+    $candidateDate = [string](Get-PropertyValue $candidateItem 'date')
+    $candidateDescription = [string](Get-PropertyValue $candidateItem 'description')
+    $candidateCanonicalPage = [string](Get-PropertyValue $candidateItem 'proposed_canonical_page')
     if ($candidateAgency) { $record.agency = $candidateAgency }
     if ($candidateFileType) { $record.file_type = $candidateFileType }
     if ($candidateDirectFileUrl) { $record.direct_file_url = $candidateDirectFileUrl }
     if ($null -ne $candidateSizeBytes) { $record.size_bytes = [long]$candidateSizeBytes }
     if ($candidateProvenance) { $record.provenance_status = $candidateProvenance }
     if ($candidateNotes.Count) { $record.processing_notes = @($record.processing_notes) + $candidateNotes }
+    if ($candidateDate) { $record.date = $candidateDate }
+    if ($candidateDescription) {
+      $record.description = $candidateDescription
+      $record.description_word_count = Get-WordCount $candidateDescription
+    }
+    if ($candidateCanonicalPage) { $record.proposed_canonical_page = $candidateCanonicalPage }
     $parentUrl = Get-PropertyValue $candidateItem 'parent_url'
     $referringUrls = Get-PropertyValue $candidateItem 'referring_urls'
     $discoveryPath = Get-PropertyValue $candidateItem 'discovery_path'

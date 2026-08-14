@@ -47,8 +47,9 @@ function Test-HeadingCapitalization([string]$Heading) {
 }
 
 $files = @(Get-ChildItem -LiteralPath $ContentPath -Recurse -Filter '*.md' -File | Sort-Object FullName)
+$resolvedContentPath = (Resolve-Path -LiteralPath $ContentPath).Path.TrimEnd('\') + '\'
 foreach ($file in $files) {
-  $relativePath = [IO.Path]::GetRelativePath((Resolve-Path $ContentPath), $file.FullName).Replace('\', '/')
+  $relativePath = $file.FullName.Substring($resolvedContentPath.Length).Replace('\', '/')
   $body = @(Get-MarkdownBody (Get-Content -LiteralPath $file.FullName))
   for ($index = 0; $index -lt $body.Count; $index++) {
     $line = $body[$index]

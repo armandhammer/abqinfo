@@ -54,6 +54,10 @@ Data dashboards and visualizations.
 
   The Statewide Transportation Improvement Program viewer is the current source for programmed transportation projects. It complements, but does not replace, the regional MRCOG Transportation Improvement Program.
 
+- [MRMPO TIP Viewer](https://mrmpo.nm.tipviewer.pmgpro.com/)
+
+  Searches the active regional Transportation Improvement Program by project, agency, location, funding, and programmed year. Use it to inspect current Albuquerque-area roadway, transit, bicycle, pedestrian, and safety investments and revisions beyond the static archived TIP document.
+
 - [NMDOT Active Projects](https://www.dot.nm.gov/projects/active-projects)
 
   Maps state transportation projects in study, design, and construction, including major Albuquerque work, and provides project descriptions, development phases, public-meeting information, and links to dedicated project resources.

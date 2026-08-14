@@ -59,3 +59,13 @@ For the bounded DMD batch:
 .\scripts\project\Import-MasterInventory.ps1
 .\scripts\project\Test-ArcGisHubBatch.ps1 -CheckLinks
 ```
+
+The MRMPO TIP Viewer catalog script captures the active structured project
+database without copying transient map geometry into the project inventory. It
+records every project with a stable ID, preserves a compact deterministic
+snapshot, and distinguishes Albuquerque-scope records from other regional work:
+
+```powershell
+.\scripts\project\Get-MrmpoTipViewerCatalog.ps1
+.\scripts\project\Import-MasterInventory.ps1
+```
