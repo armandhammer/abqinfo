@@ -22,6 +22,6 @@ Parks and recreation facilities and programs.
 
   This live Bernalillo County GIS service maps county real-estate holdings, including open space, parks and recreation facilities, public-safety facilities, and other county properties. It is maintained as data rather than a static downloadable document.
 
-- [City Open Space planning projects and resource-management plans](https://www.cabq.gov/parksandrecreation/open-space/about-open-space/open-space-resource-management-plans)
+- [City Open Space Planning Projects and Resource-Management Plans](https://www.cabq.gov/parksandrecreation/open-space/about-open-space/open-space-resource-management-plans)
 
   Albuquerque maintains this library for project-specific Open Space plans, including trails, natural areas, visitor-use management, habitat, and facility planning. Individual records are added only when their scope is independently useful beyond this maintained library.

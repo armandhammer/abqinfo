@@ -7,7 +7,7 @@ Reference drawings, engineering details, and technical guidance related to trans
 
 ## Bernalillo County Standards
 
-- [Current Bernalillo County Technical Standards page](https://www.bernco.gov/public-works/development-review/tech-standards)
+- [Current Bernalillo County Technical Standards Page](https://www.bernco.gov/public-works/development-review/tech-standards)
 
   Provides the County's maintained development and public-infrastructure standards, standard drawings, drainage and transportation requirements, and technical references used to review and construct improvements in unincorporated Bernalillo County.
 
@@ -35,7 +35,7 @@ Reference guidance for quick-build transportation and multimodal safety projects
 
 High-profile concrete curb barriers used for physical separation and protection of bicycle lanes and other multimodal facilities.
 
-- [Toronto-style Tall Curb Engineering Drawings](https://files.abqinfo.com/transportation/design-references/toronto-tall-curb-design-specs.pdf)
+- [Toronto-Style Tall Curb Engineering Drawings](https://files.abqinfo.com/transportation/design-references/toronto-tall-curb-design-specs.pdf)
 
   Provides engineering drawings and dimensional details for the high-profile concrete curb units used to create physical separation between bicycle lanes and motor-vehicle traffic.
 

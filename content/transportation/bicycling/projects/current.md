@@ -8,7 +8,7 @@ Active, funded, programmed, and formally advancing bicycle infrastructure projec
 
 ## Dr. Martin Luther King Jr. Avenue Separated Bicycle Lane Pilot
 
-- [City project page](https://www.cabq.gov/municipaldevelopment/featured-projects/dr-martin-luther-king-jr-blvd-separated-bicycle-lane-pilot-project)
+- [City Project Page](https://www.cabq.gov/municipaldevelopment/featured-projects/dr-martin-luther-king-jr-blvd-separated-bicycle-lane-pilot-project)
 
   Tracks the separated-lane pilot on Dr. Martin Luther King Jr. Avenue, including project limits, safety purpose, installation approach, evaluation period, frequently asked questions, and relationship to the adopted Bikeway and Trail Facilities Plan.
 

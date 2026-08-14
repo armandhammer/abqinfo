@@ -62,11 +62,11 @@ Multi-use trails and paths in Albuquerque.
 
 ## Regional Long-Range Bikeway Network
 
-- [MRMPO Active Transportation map portfolio](https://mrmpo.maps.arcgis.com/apps/instant/portfolio/index.html?appid=38915e0cc1414048b27f9335302203a5)
+- [MRMPO Active Transportation Map Portfolio](https://mrmpo.maps.arcgis.com/apps/instant/portfolio/index.html?appid=38915e0cc1414048b27f9335302203a5)
 
   Opens MRMPO's maintained active-transportation portfolio, updated in 2026, with interactive long-range bikeway and bicycle traffic-stress resources for exploring regional network conditions and planned connections.
 
-- [Pedestrian Level of Traffic Stress map](https://mrmpo.maps.arcgis.com/apps/instant/sidebar/index.html?appid=577561bcf1534cf5bcf105686cb397df)
+- [Pedestrian Level of Traffic Stress Map](https://mrmpo.maps.arcgis.com/apps/instant/sidebar/index.html?appid=577561bcf1534cf5bcf105686cb397df)
 
   Maps relative pedestrian comfort along Albuquerque-area roads using factors such as traffic volume, speed, roadway configuration, and sidewalk conditions, helping identify corridors where walking improvements may be needed.
 
@@ -84,6 +84,6 @@ Multi-use trails and paths in Albuquerque.
 
   This live Bernalillo County GIS service maps county-maintained multi-use trails in unincorporated areas. Motorized traffic is excluded from these trails, making the service a useful companion to local bicycle and pedestrian network maps.
 
-- [MRMPO bicycle and pedestrian planning maps](https://www.mrcog-nm.gov/566/Bicycle-and-Pedestrian-Planning-Maps)
+- [MRMPO Bicycle and Pedestrian Planning Maps](https://www.mrcog-nm.gov/566/Bicycle-and-Pedestrian-Planning-Maps)
 
   Collects regional pedestrian-priority, pedestrian traffic-stress, long-range bikeway, and bicycle traffic-stress maps used to identify needs and guide active-transportation planning across the Albuquerque metropolitan area.

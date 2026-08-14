@@ -10,7 +10,7 @@ Public works capital improvement projects.
 
   Opens the Council's unusually useful project archive, which organizes current initiatives, district and neighborhood capital work, completed studies, reports, corridor plans, task-force records, and supporting documents.
 
-- [Municipal Development featured projects](https://www.cabq.gov/municipaldevelopment/featured-projects)
+- [Municipal Development Featured Projects](https://www.cabq.gov/municipaldevelopment/featured-projects)
 
   The City's maintained index highlights major transportation, facility, safety, parks, and public-space capital projects, providing an accessible project gateway while the machine-readable project-data endpoint is unavailable.
 

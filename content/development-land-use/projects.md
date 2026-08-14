@@ -14,7 +14,7 @@ Selected major development activity and the plans and datasets needed to underst
 
 ## Development Activity Data
 
-- [Building permits open data](https://data.cabq.gov/business/buildingpermits/)
+- [Building Permits Open Data](https://data.cabq.gov/business/buildingpermits/)
 
   The City's maintained building-permit data is the most useful general-purpose source for recent residential and nonresidential development activity. A permit is not the same as a completed building, occupancy, affordability commitment, or project delivery date.
 

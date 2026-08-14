@@ -18,7 +18,7 @@ Use the service pages for current rider information and the Transportation Plans
 
 ## Statewide Planning Context
 
-- [Planned and Potential Transit Service map](https://mrmpo.maps.arcgis.com/apps/instant/sidebar/index.html?appid=d637ede6b5c44129bbbd1393b27eff22)
+- [Planned and Potential Transit Service Map](https://mrmpo.maps.arcgis.com/apps/instant/sidebar/index.html?appid=d637ede6b5c44129bbbd1393b27eff22)
 
   Shows the Albuquerque metropolitan area's planned and potential regional transit service network adopted with Transitions 2045, replacing the former Long Range Transit Network as the current interactive planning reference.
 

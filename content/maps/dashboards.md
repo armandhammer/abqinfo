@@ -30,27 +30,27 @@ Data dashboards and visualizations.
 
   Maps eligible Neighborhood Traffic Management Program streets and current requests, with searchable request IDs, dates, locations, project status, and filters for tracking neighborhood traffic-calming activity.
 
-- [Permitted construction in the public right of way](https://www.cabq.gov/municipaldevelopment/maps/traffic-report)
+- [Permitted Construction in the Public Right of Way](https://www.cabq.gov/municipaldevelopment/maps/traffic-report)
 
   The City's regularly updated map shows permitted right-of-way construction, locations, dates, descriptions, and responsible contractors. It is cross-listed under Current Roadway Projects for people tracking active work.
 
-  [Open the live Traffic Barricades Map](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=990365639da44a80a64b140726665a2b).
+  [Open the Live Traffic Barricades Map](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=990365639da44a80a64b140726665a2b).
 
-- [Construction moratoriums](https://www.cabq.gov/municipaldevelopment/maps/construction-moratoriums)
+- [Construction Moratoriums](https://www.cabq.gov/municipaldevelopment/maps/construction-moratoriums)
 
   Maps current event and seasonal construction restrictions, affected street boundaries, and effective dates. It is cross-listed under Current Roadway Projects because the restrictions directly affect construction scheduling.
 
-- [Pedestrian, bicyclist, and traffic-safety projects map](https://www.cabq.gov/municipaldevelopment/maps/pedestrian-bicyclist-and-traffic-safety-projects)
+- [Pedestrian, Bicyclist, and Traffic-Safety Projects Map](https://www.cabq.gov/municipaldevelopment/maps/pedestrian-bicyclist-and-traffic-safety-projects)
 
   This City map points to the current geographic view of safety projects. It is also linked from the bicycle-safety section because the same live source serves both purposes.
 
-  [Open the live project viewer](https://experience.arcgis.com/experience/cbc6869f8677415c81a8bed6853b2b93).
+  [Open the Live Project Viewer](https://experience.arcgis.com/experience/cbc6869f8677415c81a8bed6853b2b93).
 
 - [NMDOT Project Dashboard](https://www.dot.nm.gov/project-dashboard/)
 
   NMDOT’s statewide dashboard is useful for tracking state highway work affecting Albuquerque. Use the accompanying project pages for the record of a particular study or corridor.
 
-- [NMDOT STIP viewer](https://nm.stipviewer.pmgpro.com/)
+- [NMDOT STIP Viewer](https://nm.stipviewer.pmgpro.com/)
 
   The Statewide Transportation Improvement Program viewer is the current source for programmed transportation projects. It complements, but does not replace, the regional MRCOG Transportation Improvement Program.
 
@@ -62,7 +62,7 @@ Data dashboards and visualizations.
 
   Maps state transportation projects in study, design, and construction, including major Albuquerque work, and provides project descriptions, development phases, public-meeting information, and links to dedicated project resources.
 
-- [MRCOG traffic flow maps and busiest intersections](https://www.mrcog-nm.gov/623/Traffic-Flow-Maps-and-Busiest-Intersecti)
+- [MRCOG Traffic Flow Maps and Busiest Intersections](https://www.mrcog-nm.gov/623/Traffic-Flow-Maps-and-Busiest-Intersecti)
 
   MRCOG provides current and historical regional traffic counts, annual weekday traffic maps, vehicle-miles-traveled information, and an interactive traffic-flow map for the Albuquerque metropolitan planning area.
 
