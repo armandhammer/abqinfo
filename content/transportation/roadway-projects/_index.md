@@ -22,7 +22,7 @@ Separate [Studies]({{< relref "studies.md" >}}) and [Speed Management]({{< relre
 
   The City submitted the application June 25, 2026. Its $6,099,328 package seeks $4,267,727 in federal funding and $1,831,601 in state or local match. As of August 14, 2026, it remains an application rather than an award and is scheduled for introduction at the August 17 Council meeting.
 
-  [Official City Legislation Record](https://cabq.legistar.com/LegislationDetail.aspx?ID=15014&GUID=D3B6078F-92DE-4697-B65B-DE42C6A0C900) · [Official City Attachment](https://legistar.granicus.com/cabq/attachments/5ad0198f-baa1-4b7f-b462-d6836b9c521f.pdf) · [Federal DCIP Program and FY 2026 Status](https://oldcc.gov/our-programs/defense-community-infrastructure-program)
+  [Official City Legislation Record](https://cabq.legistar.com/LegislationDetail.aspx?ID=8168119&GUID=381ADC52-173A-41AB-B22F-709354AFB678&Options=ID%7CText%7C&Search=EC-26-215) · [Official City Attachment](https://legistar.granicus.com/cabq/attachments/5ad0198f-baa1-4b7f-b462-d6836b9c521f.pdf) · [Federal DCIP Program and FY 2026 Status](https://oldcc.gov/our-programs/defense-community-infrastructure-program)
 
 - [District 7 Traffic & Street Improvements](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements)
 

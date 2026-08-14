@@ -33,7 +33,7 @@ The $6,099,328 application seeks $4,267,727 in federal funding and $1,831,601 in
 
 ## Validation
 
-- Official Legistar matter and attachment verified
+- Official Legistar matter, working public legislation page, and attachment verified
 - Public R2 download matched the official local source by exact byte size and SHA-256
 - Description word count: 29
 - Content-style validation passed
