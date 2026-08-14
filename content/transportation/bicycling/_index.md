@@ -4,9 +4,9 @@ title: "Bicycling"
 
 Bicycle infrastructure, planning, and safety data.
 
-The bicycle section distinguishes system plans and mapped facilities from individual projects. Current projects have active implementation material; planned projects have a formal funding or advancement signal but not yet the same implementation record; completed projects are reserved for final reference material.
+The bicycle section distinguishes system plans and mapped facilities from individual projects. The [Projects]({{< relref "projects/_index.md" >}}) page groups recent work from 2021 forward under Current Projects and older records under Past Projects.
 
-Start with [Bike Plans]({{< relref "bike-plans.md" >}}) for the network framework, [Bike Maps]({{< relref "bike-maps.md" >}}) for live geographic tools, and [Safety & Crash Data]({{< relref "safety-crash-data.md" >}}) for City and regional safety sources.
+Start with [Projects]({{< relref "projects/_index.md" >}}) for individual investments, [Bike Plans]({{< relref "bike-plans.md" >}}) for the network framework, [Bike Maps]({{< relref "bike-maps.md" >}}) for live geographic tools, and [Safety & Crash Data]({{< relref "safety-crash-data.md" >}}) for City and regional safety sources.
 
 ## Laws and Operating Rules
 

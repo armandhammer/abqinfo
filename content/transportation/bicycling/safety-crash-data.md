@@ -10,6 +10,12 @@ Bicycle safety statistics and crash data.
 
   The City’s Vision Zero program page is the maintained source for its traffic-safety approach, performance work, and related materials. It is broader than bicycling, but directly relevant to bicycle safety and street design.
 
+- [Albuquerque Vision Zero Year-In-Review (2023 archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/cabq-vision-zero-year-in-review-2023.pdf)
+
+  Reviews Albuquerque’s progress on Vision Zero actions and infrastructure, updates the High Fatal and Injury Network, identifies completed and ongoing work, and recommends programmatic and transformative next steps.
+
+  [Official City PDF](https://www.cabq.gov/vision-zero/documents/albuquerque-vision-zero-year-in-review-2023-_final-1.pdf) · [Official Vision Zero page](https://www.cabq.gov/vision-zero)
+
 - [Pedestrian, Bicyclist, and Traffic-Safety Projects Map](https://www.cabq.gov/municipaldevelopment/maps/pedestrian-bicyclist-and-traffic-safety-projects)
 
   Use this City map to see the geographic context of current safety projects. It is also listed in Maps & Dashboards so visitors looking by tool rather than topic can find the same maintained source.

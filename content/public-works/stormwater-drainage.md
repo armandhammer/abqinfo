@@ -25,3 +25,17 @@ Technical standards, studies, models, and public references for Albuquerque’s 
   Analyzes litter and gross pollutants entering Albuquerque’s municipal stormwater system, identifies sources and drainage conditions, evaluates reduction strategies and structural controls, and establishes a coordinated AMAFCA-City program framework.
 
   [Official City Street and Storm Maintenance page](https://www.cabq.gov/municipaldevelopment/our-department/street-and-storm-maintenance) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/storm-drainage-documents/storm-drainage-pdfs/amafca-albuquerquems4floatableandgrosspollutantstudy.pdf)
+
+## Historical Rainfall, Runoff, and Water-Quality Data
+
+- [Rainfall, Runoff, and Water-Quality Data for the Albuquerque Metropolitan Area, Water Year 2003 (2005 archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/usgs-albuquerque-rainfall-runoff-water-quality-data-2003.pdf)
+
+  Preserves USGS and City monitoring data for rainfall, runoff, channel flow, and stormwater quality across the Albuquerque metropolitan area, including methods, station records, hydrographs, and water-year 2003 results.
+
+  [Official City Street and Storm Maintenance page](https://www.cabq.gov/municipaldevelopment/our-department/street-and-storm-maintenance) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/storm-drainage-documents/storm-drainage-pdfs/USGSREPORT.pdf)
+
+- [Rainfall, Runoff, and Water-Quality Data for the Albuquerque Metropolitan Area, Water Year 2004 (2006 archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/usgs-albuquerque-rainfall-runoff-water-quality-data-2004.pdf)
+
+  Continues the metropolitan rainfall, runoff, channel-flow, and stormwater-quality record with monitoring methods, station data, hydrographs, precipitation, discharge, and water-quality results for water year 2004.
+
+  [Official City Street and Storm Maintenance page](https://www.cabq.gov/municipaldevelopment/our-department/street-and-storm-maintenance) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/storm-drainage-documents/storm-drainage-pdfs/RAINFALLRUNOFFANDWATERQUALITYDATA2004.pdf)

@@ -156,6 +156,14 @@ Transportation studies and reports.
 
   [Official City PDF](https://www.cabq.gov/council/documents/montano-corridor-studies/MontanoHallReport.pdf) · [Official City project page](https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies)
 
+### Uptown
+
+- [Uptown Pedestrian Study (2014 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/mrcog-uptown-pedestrian-study-2014.pdf)
+
+  Analyzes pedestrian counts, behavior, crashes, crossings, roadway conditions, and planned development in Uptown, then recommends location-specific safety, accessibility, wayfinding, signal, sidewalk, and streetscape improvements.
+
+  [Official City PDF](https://www.cabq.gov/transit/documents/2014-uptown-ped-study-final-report-oct-28-2014-small.pdf) · [Official City transit document collection](https://www.cabq.gov/transit/documents/)
+
 ### Zuni Road
 
 - [Zuni Road Study — Part I (2011 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-zuni-road-study-part-1-2011.pdf)

@@ -73,3 +73,15 @@ Parks and recreation facilities and programs.
   Maps birding locations across Albuquerque and pairs them with habitat and species guidance, connecting residents to the Bosque, wetlands, foothills, parks, Open Space lands, and accessible urban wildlife-viewing sites.
 
   [Official City Open Space map library](https://www.cabq.gov/parksandrecreation/open-space/facilities-map) · [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/2019-abq-birding-map_draft-2.pdf)
+
+- [Los Poblanos Fields Open Space Trail Map (2020 archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-los-poblanos-fields-open-space-trail-map-2020.pdf)
+
+  Maps Los Poblanos Fields Open Space trails, access points, parking, agricultural fields, drains, nearby streets, and route distances around the Rio Grande Community Farm and Agri-Nature Center.
+
+  [Official City Open Space map library](https://www.cabq.gov/parksandrecreation/open-space/facilities-map) · [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/lpf-trail-map.pdf)
+
+- [Open Space Visitor Center and Bosque Trail Access Map (archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-open-space-visitor-center-bosque-trail-map.pdf)
+
+  Maps the Open Space Visitor Center property, parking, river loop, Bosque canopy loop, agricultural fields, viewing area, nearby drains, and trail connections toward Montaño and Paseo del Norte.
+
+  [Official City Open Space map library](https://www.cabq.gov/parksandrecreation/open-space/facilities-map) · [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/OSVCBosqueTrails.pdf)

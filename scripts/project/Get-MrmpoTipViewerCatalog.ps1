@@ -33,9 +33,9 @@ function Get-CanonicalPage([string]$Title, [string]$Description, [string]$Agency
     return 'content/transportation/transit/_index.md'
   }
   if ($text -match '(?i)\b(bicycle|bike|bikeway|pedestrian|trail|walking)\b') {
-    return 'content/transportation/bicycling/projects/current.md'
+    return 'content/transportation/bicycling/projects/_index.md'
   }
-  return 'content/transportation/roadway-projects/current.md'
+  return 'content/transportation/roadway-projects/_index.md'
 }
 
 function Test-AlbuquerqueScope($Project, [string[]]$Counties) {
