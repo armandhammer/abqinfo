@@ -72,6 +72,8 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   The current Mid-Region MPO Transportation Improvement Program lists federally funded transportation projects scheduled across fiscal years 2024-2029, including budgets, phases, lead agencies, funding sources, and status for roadway, transit, bicycle, pedestrian, and other work.
 
+  [Check the official current TIP and revisions](https://www.mrcog-nm.gov/280/Current-TIP) or [search the live MRMPO TIP Viewer](https://mrmpo.nm.tipviewer.pmgpro.com/).
+
 - [MRMPO performance-based planning and programming](https://www.mrcog-nm.gov/676/Performance-Based-Planning)
 
   MRCOG’s maintained performance hub gathers the regional measures and current reports used to set targets, track safety and system performance, and coordinate transit asset-management and public-transportation safety planning.
