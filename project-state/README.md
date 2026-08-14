@@ -31,6 +31,18 @@ For qualifying plans, standards, studies, reports, maps, appendices, legislation
 
 This dual-link archival review applies across the site, not only to PDFs or transportation material. A candidate marked implemented or validated should still be flagged for archival follow-up when an important linked artifact has not yet been independently inventoried and evaluated.
 
+## Internet Archive recovery policy
+
+When an official City or other government page refers to a high-value document whose authoritative file URL is broken, do not silently discard the reference or treat the missing file as irrelevant.
+
+1. Add the item to `internet-archive-recovery-queue.json`, recording the exact broken official URL, referring page or document, title, agency, value assessment, date checked, and current recovery status.
+2. Give the user the exact broken URL so they can check the Internet Archive. This is a targeted recovery channel for valuable missing material, not a substitute for crawling current authoritative sources.
+3. If a copy is recovered, record the Internet Archive capture URL and capture date, download and hash the original file, retain the broken official URL as provenance, and process the document through the normal inventory, R2, placement, and validation controls.
+4. A recovered file may be archived in R2, but R2 availability alone does not resolve provenance. The inventory must distinguish the broken official URL, the Internet Archive recovery source, the preserved R2 copy, and any current live government landing page.
+5. Keep unsuccessful or uncertain recovery attempts in the queue with a reason and a retry or human-review status. Do not reintroduce user-approved exclusions.
+
+Surface pending high-value recovery candidates during checkpoints so the user can investigate them without interrupting ordinary deterministic crawling.
+
 ## Item-specific contact policy
 
 When an authoritative source provides a contact specifically for a current project, active study, open public process, or ongoing program, include that contact with the corresponding ABQInfo item when it would help users ask questions, submit comments, or participate.
