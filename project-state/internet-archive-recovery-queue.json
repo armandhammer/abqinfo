@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-14T22:10:00Z",
+  "updated_at": "2026-08-14T22:20:00Z",
   "purpose": "Track high-value government documents whose official file URLs are broken and may be recoverable through the Internet Archive.",
   "allowed_statuses": [
     "pending user lookup",
@@ -11,7 +11,7 @@
     "excluded",
     "requires human review"
   ],
-  "pending_user_lookup_count": 2,
+  "pending_user_lookup_count": 0,
   "items": [
     {
       "id": "ia-src-65592118671ee943",
@@ -24,13 +24,13 @@
       "referring_url": null,
       "reason_high_value": "Provides official planning context, project history, objectives, cost-estimate work, and funding status for the 2022 Girard Streetscape schematic design.",
       "last_checked": "2026-08-14",
-      "status": "pending user lookup",
-      "internet_archive_url": null,
-      "recovery_notes": "Useful corroborating planning-history record. It is not the same file as the contributed annotated Girard schematic design."
+      "status": "recovered and archived",
+      "internet_archive_url": "https://web.archive.org/web/20250321070350if_/https://documents.cabq.gov/planning/environmental-planning-commission/Nov10_2022/Agenda%202_NH%20CPA_Assessment_Report-FIN.pdf",
+      "recovery_notes": "Recovered 156-page City assessment was hashed, archived without modification in R2, and added to the Area & Sector Plans page with current City and Internet Archive provenance links."
     },
     {
-      "id": "ia-src-a614f077ace20401",
-      "inventory_id": "src-a614f077ace20401",
+      "id": "ia-src-27b939c34a1c59fc",
+      "inventory_id": "src-27b939c34a1c59fc",
       "title": "2015 Bikeways and Trails Facilities Plan",
       "agency": "City of Albuquerque",
       "broken_official_urls": [
@@ -39,9 +39,9 @@
       "referring_url": "https://documents.cabq.gov/planning/FacilityPlans/BTFP/2024/BTFP-Update_Summary-2024.pdf",
       "reason_high_value": "The adopted plan governed Albuquerque's bikeway and trail network before the 2024 update and documents an important stage in the City's transportation-planning history.",
       "last_checked": "2026-08-14",
-      "status": "pending user lookup",
-      "internet_archive_url": null,
-      "recovery_notes": "ABQInfo already preserves a 4,402,773-byte copy in R2, but the official City file now returns HTTP 404 and the preserved file's byte identity remains unreconciled. An Internet Archive capture could resolve provenance."
+      "status": "recovered and archived",
+      "internet_archive_url": "https://web.archive.org/web/20171206154910if_/http://documents.cabq.gov/planning/adopted-longrange-plans/BTFP/Final/BTFP%20FINAL_Jun25.pdf",
+      "recovery_notes": "Recovered 312-page May 2015 final plan was hashed and archived without modification. The preexisting 4,402,773-byte R2 file was identified as a distinct 131-page 2014 draft and retained for historical comparison."
     },
     {
       "id": "ia-src-1231cfe4a3029341",

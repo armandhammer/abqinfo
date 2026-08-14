@@ -8,6 +8,14 @@ Historical area, sector, and community plans that explain how Albuquerque neighb
 
   Maintains the City’s current reference index for adopted historical plans. ABQInfo preserves selected complete plans and adoption records whose context remains independently useful.
 
+## Near Heights
+
+- [Near Heights Community Planning Area Assessment (2022; Accepted 2023 Archived PDF)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-near-heights-community-planning-area-assessment-2022.pdf)
+
+  Documents Near Heights land use, transportation, housing, economic conditions, community facilities, public engagement, proposed projects, policy priorities, and performance metrics across the International District, Nob Hill, university area, and surrounding neighborhoods.
+
+  [Current City CPA Assessment Page](https://www.cabq.gov/planning/urban-design-development/community-planning-area-assessments/community-planning-areas) · [Internet Archive Capture of Former City PDF](https://web.archive.org/web/20250321070350if_/https://documents.cabq.gov/planning/environmental-planning-commission/Nov10_2022/Agenda%202_NH%20CPA_Assessment_Report-FIN.pdf)
+
 ## Southwest Mesa and Volcano Area
 
 - [Southwest Area Plan (Bernalillo County 2001; Albuquerque 2002)](https://files.abqinfo.com/development-land-use/area-sector-plans/abc-southwest-area-plan-2001-2002.pdf)
