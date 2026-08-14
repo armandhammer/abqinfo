@@ -70,6 +70,10 @@ City bicycle planning documents and master plans, including current and previous
 
   The previous adopted facilities plan established the bicycle and trail network, policies, design guidance, and project priorities that preceded the current 2024 plan.
 
+  - [Appendix A: Proposed Facilities](https://files.abqinfo.com/transportation/bicycling/bike-plans/cabq-2015-bikeways-trails-plan-appendix-a-proposed-facilities.pdf)
+
+    Preserves the 2015 plan’s detailed proposed-facilities tables, listing bikeways and trails by facility type, street or route, endpoints, priority category, length, and project status for historical network comparison. [Official City PDF](https://documents.cabq.gov/planning/UDD/UDD-BikewaysTrails-AppendixA.pdf)
+
 - [2011 Albuquerque Bikeways and Trails Master Plan Update](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-and-trails-master-plan-update.pdf)
 
   Updated Albuquerque's earlier bicycle and trail planning framework, documenting existing conditions, proposed networks, facility guidance, and implementation priorities at that time.

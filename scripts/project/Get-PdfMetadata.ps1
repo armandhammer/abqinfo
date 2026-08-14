@@ -6,7 +6,34 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
-$inventory = Get-Content -Raw $InventoryPath | ConvertFrom-Json
+
+function Read-InventoryWithRetry([string]$Path) {
+  for ($attempt = 1; $attempt -le 8; $attempt++) {
+    try { return Get-Content -Raw -LiteralPath $Path | ConvertFrom-Json }
+    catch [System.IO.IOException] {
+      if ($attempt -eq 8) { throw }
+      Start-Sleep -Milliseconds (50 * $attempt)
+    }
+  }
+}
+
+function Write-InventoryWithRetry($Value, [string]$Path) {
+  $json = $Value | ConvertTo-Json -Depth 12
+  for ($attempt = 1; $attempt -le 8; $attempt++) {
+    try { $json | Set-Content -LiteralPath $Path -Encoding utf8; return }
+    catch [System.IO.IOException] {
+      if ($attempt -eq 8) { throw }
+      Start-Sleep -Milliseconds (50 * $attempt)
+    }
+  }
+}
+
+function Add-ProcessingNote($Candidate, [string]$Note) {
+  $existing = @($Candidate.processing_notes) | ForEach-Object { ([string]$_).Trim() } | Where-Object { $_ }
+  $Candidate.processing_notes = (@($existing) + $Note) -join ' '
+}
+
+$inventory = Read-InventoryWithRetry $InventoryPath
 $candidate = @($inventory.candidates | Where-Object id -eq $Id)
 if ($candidate.Count -ne 1) { throw "Expected one candidate for '$Id'; found $($candidate.Count)." }
 $candidate = $candidate[0]
@@ -17,7 +44,7 @@ $textPath = [IO.Path]::ChangeExtension($candidate.local_path,'.txt')
 $parsed.text | Set-Content -LiteralPath $textPath -Encoding utf8
 $candidate.status = 'parsed'
 $candidate.file_type = 'PDF'
-$candidate.processing_notes += "PDF pages: $($parsed.pages); extracted text: $textPath"
+Add-ProcessingNote $candidate "PDF pages: $($parsed.pages); extracted text: $textPath"
 $candidate.updated_at = (Get-Date).ToUniversalTime().ToString('o')
-$inventory | ConvertTo-Json -Depth 12 | Set-Content -LiteralPath $InventoryPath -Encoding utf8
+Write-InventoryWithRetry $inventory $InventoryPath
 [pscustomobject]@{Id=$Id;Pages=$parsed.pages;TextPath=$textPath;Metadata=$parsed.metadata} | ConvertTo-Json -Depth 5
