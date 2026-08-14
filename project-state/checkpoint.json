@@ -1,27 +1,25 @@
 {
-  "recorded_at": "2026-08-14T19:31:02.4750569Z",
-  "completed_item_range": "Project-page consolidation plus 2026-08-14 eight-theme expansion: 21 official files archived, implemented, and validated; user review closed the unavailable City crossing report as blocked",
-  "total_candidates": 4065,
+  "recorded_at": "2026-08-14T20:59:34.1325286Z",
+  "completed_item_range": "Exhaustive DMD library catalog: 853 candidates/839 files; 40-file curated archive/site batch validated; Bicycle and Trail Crossings Guide provenance reconciled; four low-value or malformed DMD items excluded",
+  "total_candidates": 4947,
   "counts_by_status": {
-    "pending review": 3142,
+    "pending review": 3933,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 30,
     "parsed": 0,
     "description drafted": 0,
     "placement assigned": 0,
-    "implemented": 0,
-    "validated": 312,
-    "excluded": 323,
-    "duplicate": 215,
+    "implemented": 38,
+    "validated": 354,
+    "excluded": 327,
+    "duplicate": 223,
     "superseded": 15,
     "blocked": 1,
-    "requires human review": 27
+    "requires human review": 26
   },
-  "remaining_nonterminal": 3172,
+  "remaining_nonterminal": 4001,
   "next_pending_id": "lin-02aacc6738f9b174",
-  "blockers": [
-    "City school-crossing evaluation page and PDF are unavailable; automated checks and user browser review confirmed the failure on 2026-08-14. No unofficial substitute was used."
-  ],
-  "resume_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Get-Candidate.ps1 -Id lin-02aacc6738f9b174"
+  "blockers": [],
+  "resume_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Get-Candidate.ps1 -Id $((Get-Content project-state/master-inventory.json -Raw | ConvertFrom-Json).next_pending_id)"
 }

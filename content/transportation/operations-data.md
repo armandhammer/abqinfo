@@ -26,6 +26,20 @@ Regional roadway operations, traffic analysis, incident management, and intellig
 
   Displays weekly updated operational status for City streetlights using vendor data, helping users examine working and non-working assets while the City expands integration with PNM work-order information.
 
+## Signal Operations and Crossing Controls
+
+- [Yellow-Light and All-Red Clearance Timing Effectiveness Study (2012 archived PDF)](https://files.abqinfo.com/transportation/operations-data/cabq-yellow-all-red-clearance-timing-effectiveness-study-2012.pdf)
+
+  Evaluates crash frequency, type, and severity after yellow-light timing changes at 18 Albuquerque intersections and all-red clearance changes at two intersections formerly monitored by red-light cameras.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/city-of-albuquerque-yellow-light-timing-change-and-all-red-clearance-interval-timing-change-effectiveness-study-final-report.pdf)
+
+- [HAWK Signal Guide for Lomas Boulevard and Alvarado Drive (archived PDF)](https://files.abqinfo.com/transportation/operations-data/cabq-hawk-signal-lomas-alvarado-guide.pdf)
+
+  Explains how pedestrians, bicyclists, and drivers use the HAWK crossing signal at Lomas Boulevard and Alvarado Drive, including beacon phases, countdown indications, and the median restart button.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/hawk-trifold-1.pdf)
+
 ## Bernalillo County Street Operations
 
 - [Street Maintenance](https://www.bernco.gov/public-works/public-works-services/road-safety-conditions/streets-traffic-signals/street-maintenance)

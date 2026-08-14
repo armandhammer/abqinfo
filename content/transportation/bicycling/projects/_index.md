@@ -14,6 +14,12 @@ Projects dated from 2021 through 2026 are grouped as current. Projects from 2020
 
   Tracks the separated-lane pilot on Dr. Martin Luther King Jr. Avenue, including project limits, safety purpose, installation approach, evaluation period, frequently asked questions, and relationship to the adopted Bikeway and Trail Facilities Plan.
 
+- [Pilot Project FAQ (2026 archived PDF)](https://files.abqinfo.com/transportation/bicycling/projects/cabq-mlk-separated-bike-lane-pilot-faq-2026.pdf)
+
+  Explains the pilot limits, safety purpose, separation materials, intersection treatments, maintenance evaluation, ridership data collection, community feedback, and relationship to the adopted Albuquerque bicycle priorities.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cabq-mlk-sbl-faq-sheet_english_final.pdf)
+
 Questions or comments about this pilot: Valerie Hermanson at DMD, vhermanson@cabq.gov
 
 ### Buena Vista Bike Boulevard
@@ -53,3 +59,19 @@ Questions or comments email Melissa Roseman at DMD melissaroseman@cabq.gov
   Evaluates a San Pedro Drive road diet and bicycle facilities through traffic volumes, intersection operations, future growth, crash history, access, parking, transit, design alternatives, and public feedback.
 
   [Official City PDF](https://www.cabq.gov/council/documents/councilor-district-7-documents/SanPedroDriveBikeFacilityAssessment.pdf) · [Official City project page](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/mile-high-bike-blvd-traffic-calming-meeting)
+
+### Mountain Road Bike Boulevard at San Pedro Drive
+
+- [Crossing Alternatives Presentation (2015 archived PDF)](https://files.abqinfo.com/transportation/bicycling/projects/cabq-mountain-road-bike-boulevard-san-pedro-crossing-2015.pdf)
+
+  Preserves the GABAC presentation evaluating crossing concepts for the offset Mountain Road bike boulevard at San Pedro Drive, including access concerns, design precedents, alternatives, and recommendations.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/gabac-mountain-road-bike-blvd-crossing.pdf)
+
+### MLK Avenue and Broadway Boulevard Two-Stage Bike Box
+
+- [Two-Stage Bike Box Guide (archived PDF)](https://files.abqinfo.com/transportation/bicycling/projects/cabq-mlk-broadway-two-stage-bike-box-guide.pdf)
+
+  Illustrates the two-stage bicycle left-turn process at Dr. Martin Luther King Jr. Avenue and Broadway Boulevard, showing rider positioning, signal sequence, travel path, and driver stop location.
+
+  [View archived image](https://files.abqinfo.com/transportation/bicycling/projects/cabq-mlk-broadway-two-stage-bike-box-guide.png) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/2-steps-for.pdf) · [Official City image](https://www.cabq.gov/municipaldevelopment/documents/2-steps-for-4.png)

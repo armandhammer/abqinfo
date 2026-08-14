@@ -24,14 +24,14 @@ $lines.Add('| Status | Count |')
 $lines.Add('| --- | ---: |')
 foreach ($property in $inventory.counts.PSObject.Properties) { $lines.Add("| $($property.Name) | $($property.Value) |") }
 $lines.Add('')
-$lines.Add('## Preserved documents')
+$lines.Add('## Preserved files')
 $lines.Add('')
-$lines.Add('| Title | Agency | Date | Exact bytes | Canonical page | Source | Archived copy |')
-$lines.Add('| --- | --- | --- | ---: | --- | --- | --- |')
-foreach ($candidate in $inventory.candidates | Where-Object { $_.status -eq 'validated' -and $_.r2_url -and $_.file_type -eq 'PDF' } | Sort-Object agency,title) {
+$lines.Add('| Title | Agency | Date | File type | Exact bytes | Canonical page | Source | Archived copy |')
+$lines.Add('| --- | --- | --- | --- | ---: | --- | --- | --- |')
+foreach ($candidate in $inventory.candidates | Where-Object { $_.status -eq 'validated' -and $_.r2_url } | Sort-Object agency,title) {
   $title = ([string]$candidate.title).Replace('|','\|')
   $source = if ($candidate.source_url) { "[source]($($candidate.source_url))" } elseif ($candidate.direct_file_url) { "[source]($($candidate.direct_file_url))" } else { '' }
-  $lines.Add("| $title | $($candidate.agency) | $($candidate.date) | $($candidate.size_bytes) | $($candidate.proposed_canonical_page) | $source | [R2]($($candidate.r2_url)) |")
+  $lines.Add("| $title | $($candidate.agency) | $($candidate.date) | $($candidate.file_type) | $($candidate.size_bytes) | $($candidate.proposed_canonical_page) | $source | [R2]($($candidate.r2_url)) |")
 }
 $lines.Add('')
 $lines.Add('## Maintained live sources')
