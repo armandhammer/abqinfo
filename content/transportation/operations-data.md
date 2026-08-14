@@ -14,7 +14,7 @@ Regional roadway operations, traffic analysis, incident management, and intellig
 
   Maps litter, debris, and landscape-maintenance responsibilities along Albuquerque interstates and freeways, helping users distinguish City, NMDOT, and other operational roles.
 
-- [City street speed-limit data](https://dmdmaps.cabq.gov/serverext/rest/services/traffic/CABQ_Roads_Data/MapServer/3)
+- [City Street Speed-Limit Data](https://dmdmaps.cabq.gov/serverext/rest/services/traffic/CABQ_Roads_Data/MapServer/3)
 
   Publishes Albuquerque street speed-limit data as a live GIS service derived from OpenStreetMap, supporting mapping and analysis while requiring users to consider the source's stated limitations.
 
@@ -46,7 +46,7 @@ Regional roadway operations, traffic analysis, incident management, and intellig
 
   Explains MRMPO's regional traffic-count program and links roadway volumes, vehicle classifications, speeds, flow maps, and related tools used to understand Albuquerque-area travel patterns, congestion, and infrastructure needs.
 
-- [Congestion Management Process archives](https://www.mrcog-nm.gov/575/CMP-Archives)
+- [Congestion Management Process Archives](https://www.mrcog-nm.gov/575/CMP-Archives)
 
   Preserves regional corridor rankings, congestion profiles, strategy matrices, network maps, commuting studies, transit travel-time analysis, adaptive-signal findings, and related Albuquerque-area congestion-management work dating to 2008.
 
@@ -60,6 +60,6 @@ Regional roadway operations, traffic analysis, incident management, and intellig
 
   Defines the regional framework and consensus blueprint for coordinated intelligent transportation system deployment, data sharing, project phasing, federal compliance, and consistency with metropolitan plans and programmed projects.
 
-- [FFY 2024-2029 TIP ITS review and architecture certification (2023)](https://files.abqinfo.com/transportation/operations-data/mrmpo-ffy2024-2029-tip-its-review-certification-2023.pdf)
+- [FFY 2024-2029 TIP ITS Review and Architecture Certification (2023)](https://files.abqinfo.com/transportation/operations-data/mrmpo-ffy2024-2029-tip-its-review-certification-2023.pdf)
 
   Documents MRMPO's review of 56 proposed transportation projects, identifying 33 with intelligent-system elements and certifying their alignment with regional service packages, federal architecture rules, and systems-engineering requirements.

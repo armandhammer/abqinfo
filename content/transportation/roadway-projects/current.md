@@ -44,13 +44,13 @@ Active roadway projects, near-term implementation work, and project documents.
 
 ## Unser Boulevard and Paseo del Norte
 
-- [Unser and Paseo project website](https://upgradeunserpaseo.com/)
+- [Unser and Paseo Project Website](https://upgradeunserpaseo.com/)
 
   Tracks construction of Albuquerque's $62 million Unser Boulevard and Paseo del Norte widening project, including traffic control, schedules, lane expansion, bicycle and trail connections, lighting, and stormwater improvements.
 
 ## I-25 Improved: Comanche to Montgomery
 
-- [I-25 Improved project website](https://i25improved.com/)
+- [I-25 Improved Project Website](https://i25improved.com/)
 
   Provides current construction phasing, traffic shifts, closures, detour maps, alerts, and contact information for NMDOT's reconstruction of I-25, frontage roads, bridges, and interchanges between Comanche and Montgomery.
 
@@ -74,16 +74,16 @@ Active roadway projects, near-term implementation work, and project documents.
 
 ## Citywide Construction Maps
 
-- [Permitted construction in the public right of way](https://www.cabq.gov/municipaldevelopment/maps/traffic-report)
+- [Permitted Construction in the Public Right of Way](https://www.cabq.gov/municipaldevelopment/maps/traffic-report)
 
   The City's regularly updated map shows permitted right-of-way construction, locations, dates, descriptions, and responsible contractors, helping residents distinguish current City-jurisdiction work from state and emergency projects.
 
-  [Open the live Traffic Barricades Map](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=990365639da44a80a64b140726665a2b).
+  [Open the Live Traffic Barricades Map](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=990365639da44a80a64b140726665a2b).
 
 - [Fiber Installation Barricades Map](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=2c03c15b093a4b1ab7abadd36a123c5a)
 
   Maps current and future fiber-installation barricade permits by company and status, helping users identify telecommunications work that may affect Albuquerque streets and travel.
 
-- [Construction moratoriums](https://www.cabq.gov/municipaldevelopment/maps/construction-moratoriums)
+- [Construction Moratoriums](https://www.cabq.gov/municipaldevelopment/maps/construction-moratoriums)
 
   Lists current event and seasonal construction moratoriums, affected street boundaries, downloadable maps, dates, and the live map used to coordinate safe traffic operations during major Albuquerque events.

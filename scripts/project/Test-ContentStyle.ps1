@@ -27,7 +27,10 @@ function Get-MarkdownBody([string[]]$Lines) {
 }
 
 function Test-HeadingCapitalization([string]$Heading) {
-  $words = @($Heading -split '\s+')
+  # Parenthetical dates and archival-format notes are metadata rather than
+  # part of the displayed title, so Title Case is enforced on the title text.
+  $titleText = ($Heading -replace '\s*\([^\)]*\)', '').Trim()
+  $words = @($titleText -split '\s+')
   for ($index = 0; $index -lt $words.Count; $index++) {
     $word = $words[$index].Trim('"', "'", '(', ')', '[', ']', ':', ',', '.')
     if ([string]::IsNullOrWhiteSpace($word) -or $word -eq '&' -or $word -notmatch '[\p{L}\p{N}]') { continue }
@@ -36,7 +39,7 @@ function Test-HeadingCapitalization([string]$Heading) {
     for ($segmentIndex = 0; $segmentIndex -lt $segments.Count; $segmentIndex++) {
       $segment = $segments[$segmentIndex]
       if ([string]::IsNullOrWhiteSpace($segment)) { continue }
-      $isMinor = $index -gt 0 -and $segmentIndex -eq 0 -and $minorHeadingWords -contains $segment.ToLowerInvariant()
+      $isMinor = $segments.Count -eq 1 -and $index -gt 0 -and $segmentIndex -eq 0 -and $minorHeadingWords -contains $segment.ToLowerInvariant()
       if ($isMinor) {
         if ($segment -cne $segment.ToLowerInvariant()) { return $false }
       }
@@ -59,6 +62,13 @@ foreach ($file in $files) {
       $heading = $Matches[2] -replace '\s+#+$', ''
       if (-not (Test-HeadingCapitalization $heading)) {
         $errors.Add("Section heading is not in the approved title-style capitalization: $relativePath body-line $lineNumber = $heading")
+      }
+    }
+
+    if ($line -match '^\s*[-*+]\s+\[(?<label>[^\]]+)\]\(https?://') {
+      $label = $Matches['label']
+      if ($label -notmatch '(?i)\ben español\b|\bPDF archivado\b' -and -not (Test-HeadingCapitalization $label)) {
+        $errors.Add("Resource-link label is not in the approved Title Case: $relativePath body-line $lineNumber = $label")
       }
     }
 

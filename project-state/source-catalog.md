@@ -1,6 +1,6 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-14T16:55:35.9780526Z
+Generated: 2026-08-14T17:17:58.4334155Z
 
 This catalog is derived from master-inventory.json, the authoritative project queue. It records 3990 candidates and 123 R2 objects totaling 1664339624 bytes.
 
