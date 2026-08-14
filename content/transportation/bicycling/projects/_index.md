@@ -44,6 +44,28 @@ Questions or comments email Melissa Roseman at DMD melissaroseman@cabq.gov
 
 ## Past Projects (2020 and Earlier)
 
+### Silver Avenue Bike Boulevard Review
+
+- [Silver Avenue Bike Boulevard Review (2019 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/projects/cabq-silver-avenue-bike-boulevard-review-2019.pdf)
+
+  Evaluates the Silver Avenue and 14th Street bike boulevards from Yale to the Bosque, documenting traffic, crashes, public input, I-25 and railroad crossing alternatives, route treatments, costs, and recommended improvements, with a qualitative review of Mountain Road.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/silver-ave-blvd-blvd-review-final-dec-2019.pdf)
+
+- [City Council Resolution R-2020-079 (Archived PDF)](https://files.abqinfo.com/transportation/bicycling/projects/cabq-silver-avenue-bike-boulevard-review-resolution-r-2020-079.pdf)
+
+  Adopts the Silver Avenue Bike Boulevard Review as City policy priorities for the corridor between Yale Boulevard and the Paseo del Bosque Trail and directs implementation, funding, coordination, and incorporation into future bicycle planning.
+
+  [Official City Resolution Index](https://codelibrary.amlegal.com/codes/albuquerque/latest/albuquerque_nm_reslist/0-0-0-16727#R-2020-079)
+
+### I-25 Bicycle Accessibility Study
+
+- [I-25 Bicycle Accessibility Study Summary (2020; Updated 2021 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/projects/cabq-i25-bicycle-accessibility-study-summary-2021.pdf)
+
+  Summarizes the 2019–2020 study of bicycle access across northern Albuquerque’s I-25 crossings, recommending corridor, trail, lane, signage, and network improvements while identifying San Francisco Street and San Diego Avenue as potential future bicycle-pedestrian crossings.
+
+  [Former City PDF](https://www.cabq.gov/municipaldevelopment/documents/i-25-bike-study-summary-memo-september-2020.pdf) · [Official 2024 Bikeway and Trail Facilities Plan](https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf)
+
 ### Uptown Pedestrian, Bicycle, and Wayfinding Program
 
 - [Uptown Pedestrian and Bicycle Plan and Wayfinding Program (2008 archived PDF)](https://files.abqinfo.com/transportation/bicycling/projects/cabq-uptown-pedestrian-bicycle-wayfinding-plan-2008.pdf)

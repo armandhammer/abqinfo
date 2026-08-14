@@ -1,25 +1,27 @@
 {
-  "recorded_at": "2026-08-14T20:59:34.1325286Z",
-  "completed_item_range": "Exhaustive DMD library catalog: 853 candidates/839 files; 40-file curated archive/site batch validated; Bicycle and Trail Crossings Guide provenance reconciled; four low-value or malformed DMD items excluded",
-  "total_candidates": 4947,
+  "recorded_at": "2026-08-14T21:49:13.6197796Z",
+  "completed_item_range": "Contributed document review: 14 PDFs cataloged; 7 exact duplicates reconciled; 7 originals archived to R2 and added across Dashboards, Bicycle Projects, Safety & Crash Data, and Roadway Studies; all public objects byte-identical; Hugo and project validation passed",
+  "total_candidates": 4966,
   "counts_by_status": {
-    "pending review": 3933,
+    "pending review": 3930,
     "approved for addition": 0,
     "downloading": 0,
-    "downloaded": 30,
+    "downloaded": 32,
     "parsed": 0,
     "description drafted": 0,
     "placement assigned": 0,
-    "implemented": 38,
-    "validated": 354,
-    "excluded": 327,
-    "duplicate": 223,
+    "implemented": 43,
+    "validated": 363,
+    "excluded": 328,
+    "duplicate": 228,
     "superseded": 15,
-    "blocked": 1,
-    "requires human review": 26
+    "blocked": 0,
+    "requires human review": 27
   },
-  "remaining_nonterminal": 4001,
+  "remaining_nonterminal": 4005,
   "next_pending_id": "lin-02aacc6738f9b174",
-  "blockers": [],
+  "blockers": [
+    "Girard Streetscape annotated schematic is implemented and archived but remains requires human review because no authoritative direct URL for that exact annotated copy was recovered."
+  ],
   "resume_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Get-Candidate.ps1 -Id $((Get-Content project-state/master-inventory.json -Raw | ConvertFrom-Json).next_pending_id)"
 }
