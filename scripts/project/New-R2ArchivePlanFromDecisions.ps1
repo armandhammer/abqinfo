@@ -20,7 +20,12 @@ foreach ($decision in @($decisions.decisions)) {
   $matches = @($inventory.candidates | Where-Object id -eq $decision.id)
   if ($matches.Count -ne 1) { throw "Expected one inventory candidate for '$($decision.id)'; found $($matches.Count)." }
   $candidate = $matches[0]
-  if ($candidate.status -ne 'parsed') { throw "Candidate '$($decision.id)' must be parsed before planning; status is '$($candidate.status)'." }
+  $candidateType = ([string]$candidate.file_type).ToUpperInvariant()
+  $readyStatuses = @('placement assigned','implemented','validated')
+  $allowedStatuses = if ($candidateType -eq 'PDF') { @('parsed') + $readyStatuses } else { @('downloaded','parsed') + $readyStatuses }
+  if ($candidate.status -notin $allowedStatuses) {
+    throw "Candidate '$($decision.id)' must be locally inspected before planning; status is '$($candidate.status)'."
+  }
   if (-not $candidate.local_path -or -not (Test-Path -LiteralPath $candidate.local_path)) { throw "Candidate '$($decision.id)' has no local source file." }
 
   $file = Get-Item -LiteralPath $candidate.local_path
@@ -31,22 +36,30 @@ foreach ($decision in @($decisions.decisions)) {
   $wordCount = @([string]$decision.description -split '\s+' | Where-Object { $_ }).Count
   if ($wordCount -lt 20 -or $wordCount -gt 50) { throw "Candidate '$($decision.id)' description has $wordCount words; expected 20-50." }
 
+  $sourcePage = if ($decision.PSObject.Properties['source_page'] -and $decision.source_page) {
+    [string]$decision.source_page
+  } elseif ($candidate.source_url) {
+    [string]$candidate.source_url
+  } else {
+    [string]$candidate.parent_url
+  }
+
   $item = [ordered]@{
     id = [string]$decision.id
-    source_url = [string]$decision.source_page
+    source_url = $sourcePage
     direct_file_url = [string]$candidate.direct_file_url
-    parent_url = [string]$decision.source_page
+    parent_url = $sourcePage
     agency = if ($candidate.agency) { [string]$candidate.agency } else { 'City of Albuquerque' }
     title = [string]$decision.title
     date = [string]$decision.date
-    file_type = 'PDF'
+    file_type = $candidateType
     size_bytes = [int64]$file.Length
     checksum_sha256 = $checksum
     r2_key = [string]$decision.r2_key
     proposed_canonical_page = [string]$decision.canonical_page
     description = [string]$decision.description
     provenance_status = 'official government source page and byte-identical official file recorded'
-    processing_notes = @("Original authoritative PDF preserved without modification; $wordCount-word description reviewed from extracted text.")
+    processing_notes = @("Original authoritative $candidateType preserved without modification; $wordCount-word description reviewed from extracted content or visual inspection.")
     size_warning_over_25mb = [bool]($file.Length -gt 25MB)
   }
   if ($decision.PSObject.Properties['implementation_locations']) {
@@ -63,7 +76,18 @@ foreach ($decision in @($decisions.decisions)) {
 
 if (@($items.id | Group-Object | Where-Object Count -gt 1).Count) { throw 'Decision IDs are not unique.' }
 if (@($items.r2_key | Group-Object | Where-Object Count -gt 1).Count) { throw 'R2 keys are not unique.' }
-[int64]$addedBytes = ($items | Measure-Object size_bytes -Sum).Sum
+[int64]$batchBytes = ($items | Measure-Object size_bytes -Sum).Sum
+[int64]$addedBytes = 0
+foreach ($item in $items) {
+  $existing = @($r2.objects | Where-Object key -eq $item.r2_key)
+  if ($existing.Count -gt 1) { throw "R2 inventory contains duplicate key '$($item.r2_key)'." }
+  if ($existing.Count -eq 1 -and [int64]$existing[0].size_bytes -ne [int64]$item.size_bytes) {
+    throw "Existing R2 object '$($item.r2_key)' does not match the planned exact byte size."
+  }
+  $alreadyPresent = $existing.Count -eq 1
+  $item | Add-Member -NotePropertyName already_present -NotePropertyValue $alreadyPresent
+  if (-not $alreadyPresent) { $addedBytes += [int64]$item.size_bytes }
+}
 [int64]$projectedBytes = [int64]$r2.total_bytes + $addedBytes
 if (@($items | Where-Object size_bytes -gt $MaximumObjectBytes).Count) { throw 'At least one file exceeds the production-upload approval threshold.' }
 if ($projectedBytes -gt $MaximumProjectedR2Bytes) { throw 'The batch would exceed the project R2 storage stop point.' }
@@ -75,6 +99,7 @@ $plan = [ordered]@{
   current_r2_bytes = [int64]$r2.total_bytes
   maximum_object_bytes = $MaximumObjectBytes
   maximum_projected_r2_bytes = $MaximumProjectedR2Bytes
+  batch_bytes = $batchBytes
   added_bytes = $addedBytes
   projected_r2_bytes = $projectedBytes
   items = $items

@@ -13,7 +13,12 @@ $results = @()
 foreach ($item in @($plan.items)) {
   $publicUrl = "https://files.abqinfo.com/$($item.r2_key)"
   try {
-    $test = & "$PSScriptRoot/Test-R2PublicObject.ps1" -SourcePath "research/staging/queue/$($item.id).pdf" -PublicUrl $publicUrl
+    $inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+    $candidate = @($inventory.candidates | Where-Object id -eq $item.id)
+    if ($candidate.Count -ne 1 -or -not $candidate[0].local_path) {
+      throw "Could not resolve local source path for '$($item.id)'."
+    }
+    $test = & "$PSScriptRoot/Test-R2PublicObject.ps1" -SourcePath $candidate[0].local_path -PublicUrl $publicUrl
     $result = [ordered]@{
       id = [string]$item.id
       title = [string]$item.title

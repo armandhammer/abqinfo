@@ -10,7 +10,7 @@ $ErrorActionPreference = 'Stop'
 $plan = Get-Content -Raw -LiteralPath $PlanPath | ConvertFrom-Json
 $inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
 $currentR2Bytes = [int64]$plan.current_r2_bytes
-$plannedBytes = [int64](@($plan.items | Measure-Object -Property size_bytes -Sum).Sum)
+$plannedBytes = if ($plan.PSObject.Properties['added_bytes']) { [int64]$plan.added_bytes } else { [int64](@($plan.items | Measure-Object -Property size_bytes -Sum).Sum) }
 $projectedBytes = $currentR2Bytes + $plannedBytes
 
 if ($projectedBytes -gt [int64]$plan.maximum_projected_r2_bytes) {

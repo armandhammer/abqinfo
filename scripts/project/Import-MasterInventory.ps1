@@ -78,7 +78,8 @@ function Test-DiscoveryCandidate([string]$Agency, [string]$Url) {
   $uriHost = $uri.Host.ToLowerInvariant()
   $path = $uri.AbsolutePath
   if ($path -match '^/(accessibility|copyright|privacy|sitemap|search|quicklinks\.aspx|directory\.aspx|calendar\.aspx|bids\.aspx)/?$') { return $false }
-  if ($path -match '(?i)(\+\+resource\+\+|/image-repository/|/images?/|\.svg$|\.png$|\.jpe?g$|\.gif$|\.webp$)') { return $false }
+  $isDmdLibraryItem = $path -match '(?i)^/municipaldevelopment/documents/'
+  if ($path -match '(?i)(\+\+resource\+\+|/image-repository/|/images?/|\.svg$|\.png$|\.jpe?g$|\.gif$|\.webp$)' -and -not $isDmdLibraryItem) { return $false }
   switch ($Agency.ToLowerInvariant()) {
     'cabq' { return $uriHost -match '(^|\.)(cabq\.gov|abq-zone\.com|arcgis\.com)$' }
     'bernco' { return $uriHost -match '(^|\.)(bernco\.gov)$' }
@@ -299,6 +300,7 @@ foreach ($discoveryFile in $discoveryFiles) {
     $candidateAgency = [string](Get-PropertyValue $candidateItem 'agency')
     $candidateFileType = [string](Get-PropertyValue $candidateItem 'file_type')
     $candidateDirectFileUrl = [string](Get-PropertyValue $candidateItem 'direct_file_url')
+    $candidateSourceUrl = [string](Get-PropertyValue $candidateItem 'source_url')
     $candidateSizeBytes = Get-PropertyValue $candidateItem 'size_bytes'
     $candidateProvenance = [string](Get-PropertyValue $candidateItem 'provenance_status')
     $candidateNotes = @(Get-PropertyValue $candidateItem 'processing_notes')
@@ -307,6 +309,7 @@ foreach ($discoveryFile in $discoveryFiles) {
     $candidateCanonicalPage = [string](Get-PropertyValue $candidateItem 'proposed_canonical_page')
     if ($candidateAgency) { $record.agency = $candidateAgency }
     if ($candidateFileType) { $record.file_type = $candidateFileType }
+    if ($candidateSourceUrl) { $record.source_url = $candidateSourceUrl }
     if ($candidateDirectFileUrl) { $record.direct_file_url = $candidateDirectFileUrl }
     if ($null -ne $candidateSizeBytes) { $record.size_bytes = [long]$candidateSizeBytes }
     if ($candidateProvenance) { $record.provenance_status = $candidateProvenance }
