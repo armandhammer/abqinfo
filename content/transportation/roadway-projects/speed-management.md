@@ -42,6 +42,20 @@ Traffic calming and speed management initiatives.
 
   The City provides the program policy, toolkit, and individual traffic-calming reference documents. These are a better source for process and design choices than isolated project announcements.
 
+### Policy Archive
+
+- [Neighborhood Traffic Management Program Policy Manual (2015)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-ntmp-policy-manual-2015.pdf)
+
+  Defines Albuquerque’s Neighborhood Traffic Management Program goals, eligibility, request and evaluation process, prioritization, neighborhood participation, funding, implementation, and traffic-calming strategies for local and collector streets.
+
+  [Official City Council project archive](https://www.cabq.gov/council/projects/completed-projects/2015/neighborhood-traffic-management-program-policy-manual) · [Official City PDF](https://www.cabq.gov/council/documents/ntmp_policy_final_2015_lowres.pdf)
+
+- [Streets and Traffic Enhancement Program Draft Policy Manual and Resolution (2014)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-step-draft-policy-manual-resolution-2014.pdf)
+
+  Preserves the original STEP proposal and draft resolution that preceded the 2015 NTMP policy, documenting proposed administrative rules, traffic-calming tools, evaluation, neighborhood participation, funding, and legislative lineage.
+
+  [Official City Council project archive](https://www.cabq.gov/council/projects/completed-projects/2015/neighborhood-traffic-management-program-policy-manual) · [Official City PDF](https://www.cabq.gov/council/documents/neighborhood-traffic-management-plan/STEP_Draft_Policy_Manual_WithResolution.pdf)
+
 ## Citywide Safety Program
 
 - [Vision Zero Implementation Work](https://www.cabq.gov/vision-zero/what-are-we-doing)

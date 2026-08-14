@@ -7,7 +7,34 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
-$inventory = Get-Content -Raw $InventoryPath | ConvertFrom-Json
+
+function Read-InventoryWithRetry([string]$Path) {
+  for ($attempt = 1; $attempt -le 8; $attempt++) {
+    try { return Get-Content -Raw -LiteralPath $Path | ConvertFrom-Json }
+    catch [System.IO.IOException] {
+      if ($attempt -eq 8) { throw }
+      Start-Sleep -Milliseconds (50 * $attempt)
+    }
+  }
+}
+
+function Write-InventoryWithRetry($Value, [string]$Path) {
+  $json = $Value | ConvertTo-Json -Depth 12
+  for ($attempt = 1; $attempt -le 8; $attempt++) {
+    try { $json | Set-Content -LiteralPath $Path -Encoding utf8; return }
+    catch [System.IO.IOException] {
+      if ($attempt -eq 8) { throw }
+      Start-Sleep -Milliseconds (50 * $attempt)
+    }
+  }
+}
+
+function Add-ProcessingNote($Candidate, [string]$Note) {
+  $existing = @($Candidate.processing_notes) | ForEach-Object { ([string]$_).Trim() } | Where-Object { $_ }
+  $Candidate.processing_notes = (@($existing) + $Note) -join ' '
+}
+
+$inventory = Read-InventoryWithRetry $InventoryPath
 $candidate = @($inventory.candidates | Where-Object id -eq $Id)
 if ($candidate.Count -ne 1) { throw "Expected one candidate for '$Id'; found $($candidate.Count)." }
 $candidate = $candidate[0]
@@ -15,7 +42,7 @@ $url = if ($candidate.direct_file_url) { $candidate.direct_file_url } else { $ca
 if (-not $url) { throw "Candidate '$Id' has no downloadable URL." }
 $candidate.status = 'downloading'
 $candidate.updated_at = (Get-Date).ToUniversalTime().ToString('o')
-$inventory | ConvertTo-Json -Depth 12 | Set-Content -LiteralPath $InventoryPath -Encoding utf8
+Write-InventoryWithRetry $inventory $InventoryPath
 New-Item -ItemType Directory -Force $DownloadDirectory | Out-Null
 $extension = [IO.Path]::GetExtension(([uri]$url).AbsolutePath)
 if (-not $extension) {
@@ -45,15 +72,15 @@ try {
   $candidate.checksum_sha256 = (Get-FileHash -LiteralPath $file.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
   if ($extension -eq '.pdf') { $candidate.file_type = 'PDF' }
   $humanSize = if ($file.Length -ge 1MB) { '{0:N2} MiB' -f ($file.Length / 1MB) } elseif ($file.Length -ge 1KB) { '{0:N2} KiB' -f ($file.Length / 1KB) } else { "$($file.Length) bytes" }
-  $candidate.processing_notes += "Downloaded exact size: $($file.Length) bytes ($humanSize); SHA-256 recorded."
-  if ($file.Length -gt 100MB) { $candidate.processing_notes += 'File exceeds the 100 MB production-upload approval threshold; no R2 upload is authorized.' }
+  Add-ProcessingNote $candidate "Downloaded exact size: $($file.Length) bytes ($humanSize); SHA-256 recorded."
+  if ($file.Length -gt 100MB) { Add-ProcessingNote $candidate 'File exceeds the 100 MB production-upload approval threshold; no R2 upload is authorized.' }
   $candidate.updated_at = (Get-Date).ToUniversalTime().ToString('o')
-  $inventory | ConvertTo-Json -Depth 12 | Set-Content -LiteralPath $InventoryPath -Encoding utf8
+  Write-InventoryWithRetry $inventory $InventoryPath
   $candidate | ConvertTo-Json -Depth 8
 } catch {
   $candidate.status = 'pending review'
-  $candidate.processing_notes += "Download failed: $($_.Exception.Message)"
+  Add-ProcessingNote $candidate "Download failed: $($_.Exception.Message)"
   $candidate.updated_at = (Get-Date).ToUniversalTime().ToString('o')
-  $inventory | ConvertTo-Json -Depth 12 | Set-Content -LiteralPath $InventoryPath -Encoding utf8
+  Write-InventoryWithRetry $inventory $InventoryPath
   throw
 }

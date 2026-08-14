@@ -84,11 +84,33 @@ Regional plans, long-range plans, and other system-level transportation planning
 
 ## City Plans and Studies
 
+### 2008 Transportation Task Force Record
+
 - [21st Century Transportation Task Force Final Report (2008 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-21st-century-transportation-task-force-final-report-2008.pdf)
 
   Records the 2008 task force's citywide recommendations on transit, street maintenance, roadway capacity, bicycle and pedestrian investment, land use, regional coordination, funding, and implementation priorities that shaped Albuquerque transportation debate before ART.
 
   [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/10.1.08.transportation_tf.final_report.final.pdf) · [Official City project archive](https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force)
+
+- [Replanning the Modern City for Transit (2008)](https://files.abqinfo.com/transportation/transportation-plans/cabq-replanning-modern-city-for-transit-presentation-2008.pdf)
+
+  Records the Planning Department’s briefing to the 21st Century Transportation Task Force on comprehensive planning, growth, centers and corridors, land-use change, transit-supportive development, public investment, and coordinated implementation.
+
+  [Official City project archive](https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force) · [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.23.08.presentationa.replanning_the_modern_city_for_transit.planning_dept.pdf)
+
+- [Planned Growth Strategy Briefing (2008)](https://files.abqinfo.com/transportation/transportation-plans/cabq-planned-growth-strategy-task-force-briefing-2008.pdf)
+
+  Preserves the task force’s concise policy record on Albuquerque’s Planned Growth Strategy, linking the Comprehensive Plan with urban growth management, infrastructure, regulations, public input, and future implementing legislation.
+
+  [Official City project archive](https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force) · [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.23.08.presentationb1.the_planned_growth_strategy.pdf)
+
+- [ABQ RIDE Planning Briefing (2008)](https://files.abqinfo.com/transportation/transportation-plans/cabq-abq-ride-planning-task-force-briefing-2008.pdf)
+
+  Documents ABQ RIDE’s 2008 planning organization, inputs, route and schedule development, shelters, park-and-ride, transit-oriented development, active projects, department plans, national trends, and anticipated service priorities.
+
+  [Official City project archive](https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force) · [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.23.08.presentationc.abq_ride_planning.transit_dept.pdf)
+
+### Current and Other Citywide Records
 
 - [Albuquerque Complete Streets Ordinance](https://www.cabq.gov/council/projects/current-projects/complete-streets)
 
@@ -103,6 +125,14 @@ Regional plans, long-range plans, and other system-level transportation planning
 - [City Transportation Plans and Studies](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections)
 
   The Planning Department's maintained index links adopted area plans, transportation studies, and cross-section guidance used in public-right-of-way design, including the Downtown Walkability Analysis and Rio Grande Boulevard Study.
+
+### Historical Citywide System Map
+
+- [2040 Long-Range Roadway Map](https://files.abqinfo.com/transportation/transportation-plans/cabq-2040-long-range-roadway-map.pdf)
+
+  Preserves the City’s 2040 roadway planning map for Albuquerque and the broader metropolitan area, showing long-range functional classifications and planned network connections for historical comparison with current regional system maps.
+
+  [Official City Transportation Development Section](https://www.cabq.gov/planning/development-review-services/transportation-development-section) · [Official City PDF](https://documents.cabq.gov/planning/DesignReviewServices/DRS-long-range-road-2040-map.pdf)
 
 ### Historical Area and Corridor Transportation Records
 

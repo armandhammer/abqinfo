@@ -10,6 +10,8 @@ $ErrorActionPreference = 'Stop'
 $plan = Get-Content -Raw -LiteralPath $PlanPath | ConvertFrom-Json
 $r2 = Get-Content -Raw -LiteralPath $R2InventoryPath | ConvertFrom-Json
 $overrides = @()
+[object[]]$supersededItems = @()
+if ($plan.PSObject.Properties['superseded_items']) { $supersededItems = @($plan.superseded_items) }
 
 function Get-StableId([string]$Value) {
   $bytes = [Text.Encoding]::UTF8.GetBytes($Value.Trim().ToLowerInvariant())
@@ -66,6 +68,24 @@ foreach ($item in @($plan.items)) {
     implementation_location = $null
     implementation_locations = @()
   }
+
+  # Plone and other official document systems may expose both a view URL and a
+  # resolved direct-file URL. Reconcile a separately hashed direct-file alias
+  # without replacing the canonical discovery record and its full provenance.
+  $directAliasId = Get-StableId ([string]$item.direct_file_url)
+  if ($directAliasId -ne [string]$item.id) {
+    $overrides += [ordered]@{
+      id = $directAliasId
+      status = 'duplicate'
+      title = [string]$item.title
+      description = [string]$item.description
+      exclusion_reason = "Direct-file URL alias for canonical archive candidate $($item.id)."
+      validation_status = 'duplicate official direct-file record reconciled to authoritative source candidate'
+      provenance_status = 'authoritative provenance recorded on canonical source candidate'
+      implementation_location = $null
+      implementation_locations = @()
+    }
+  }
 }
 
 # Official project/update pages are intentionally retained beside archived
@@ -96,7 +116,7 @@ foreach ($group in $sourceGroups) {
   }
 }
 
-foreach ($item in @($plan.superseded_items)) {
+foreach ($item in $supersededItems) {
   $overrides += [ordered]@{
     id = [string]$item.id
     status = [string]$item.status
@@ -111,4 +131,4 @@ foreach ($item in @($plan.superseded_items)) {
 }
 
 $overrides | ConvertTo-Json -Depth 10 | Set-Content -LiteralPath $OutputPath -Encoding utf8
-[pscustomobject]@{ overrides=$overrides.Count; archived=@($plan.items).Count; superseded=@($plan.superseded_items).Count; output=$OutputPath }
+[pscustomobject]@{ overrides=$overrides.Count; archived=@($plan.items).Count; superseded=$supersededItems.Count; output=$OutputPath }

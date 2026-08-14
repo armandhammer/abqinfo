@@ -60,6 +60,24 @@ Multi-use trails and paths in Albuquerque.
 
   [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/tramway-trail-full-2020.pdf) · [Check for current City trail guides](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1)
 
+- [Unser Boulevard, Mariposa, and Riverview Trail Guide (archived PDF)](https://files.abqinfo.com/transportation/bicycling/bike-maps/cabq-unser-mariposa-riverview-trail-guide.pdf)
+
+  Provides a detailed West Side bicycle tour with route maps, trail connections, parking, transit access, mileage, neighborhood history, landscape, geology, public art, and points of interest.
+
+  [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/unser_mariposa_riverview-trails.pdf) · [Check for current City trail guides](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1)
+
+- [Northeast Heights Bike Trails Guide (2020 archived PDF)](https://files.abqinfo.com/transportation/bicycling/bike-maps/cabq-northeast-heights-bike-trails-guide-2020.pdf)
+
+  Connects six major Northeast Heights trail corridors with route narratives, maps, street links, distances, access guidance, landscape history, public spaces, and practical notes for cross-city bicycle trips.
+
+  [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/northeast-trails-full-version-2020.pdf) · [Check for current City trail guides](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1)
+
+- [Paseo de las Montañas Trail Guide (2020 archived PDF)](https://files.abqinfo.com/transportation/bicycling/bike-maps/cabq-paseo-de-las-montanas-trail-guide-2020.pdf)
+
+  Guides riders along the Piedra Lisa and Embudo arroyo trails with maps, parking, mileage, connections, neighborhood architecture, geology, hydrology, natural history, parks, and public art.
+
+  [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/paseo-de-las-montanas-full-2020.pdf) · [Check for current City trail guides](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1)
+
 ## Regional Long-Range Bikeway Network
 
 - [MRMPO Active Transportation Map Portfolio](https://mrmpo.maps.arcgis.com/apps/instant/portfolio/index.html?appid=38915e0cc1414048b27f9335302203a5)

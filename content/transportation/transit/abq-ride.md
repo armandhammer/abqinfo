@@ -62,6 +62,14 @@ ABQ Ride bus service information and data.
 
 Project contact: Andrew de Garmo, Principal Planner, ABQ RIDE — [adegarmo@cabq.gov](mailto:adegarmo@cabq.gov) — 505-724-3109.
 
+## Montaño Intermodal Center Planning History
+
+- [Montaño Intermodal Center Project Application (2010 archived PDF)](https://files.abqinfo.com/transportation/transit/cabq-montano-intermodal-center-project-application-2010.pdf)
+
+  Documents the City’s federal funding application for a Montaño intermodal center, connecting Rail Runner, local bus service, walking, bicycling, housing, employment, neighborhood access, and coordinated transportation investment.
+
+  [Official City PDF](https://www.cabq.gov/transit/documents/montano_intermodal_center_project_application.final.february_10_2010.pdf) · [Official City transit document collection](https://www.cabq.gov/transit/documents/)
+
 ## Earlier Transit Investment Studies
 
 - [Albuquerque Streetcar Evaluation Summary Report (2008 archived PDF)](https://files.abqinfo.com/transportation/transit/history/cabq-albuquerque-streetcar-evaluation-summary-2008.pdf)

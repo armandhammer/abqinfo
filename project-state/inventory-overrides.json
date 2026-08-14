@@ -270,13 +270,13 @@
   {
     "match_url": "https://www.cabq.gov/municipaldevelopment/maps/traffic-report",
     "cross_listing_approved": true,
-    "proposed_canonical_page": "content/transportation/roadway-projects/current.md",
+    "proposed_canonical_page": "content/transportation/roadway-projects/_index.md",
     "processing_notes": ["Approved map cross-listing: the live public-right-of-way construction map is discoverable both by subject and in the system dashboard index."]
   },
   {
     "match_url": "https://www.cabq.gov/municipaldevelopment/maps/construction-moratoriums",
     "cross_listing_approved": true,
-    "proposed_canonical_page": "content/transportation/roadway-projects/current.md",
+    "proposed_canonical_page": "content/transportation/roadway-projects/_index.md",
     "processing_notes": ["Approved map cross-listing: construction restrictions are discoverable both with current roadway work and in the system dashboard index."]
   },
   {
@@ -352,7 +352,7 @@
   {
     "match_url": "https://www.dot.nm.gov/projects/active-projects",
     "cross_listing_approved": true,
-    "proposed_canonical_page": "content/transportation/roadway-projects/current.md",
+    "proposed_canonical_page": "content/transportation/roadway-projects/_index.md",
     "processing_notes": ["Approved map cross-listing: NMDOT's live statewide project map is discoverable both by tool and with current roadway projects."]
   },
   {
@@ -922,8 +922,8 @@
   {
     "id": "src-d12ba7a2f591f7c7",
     "status": "validated",
-    "implementation_location": "content/transportation/roadway-projects/current.md",
-    "implementation_locations": ["content/transportation/roadway-projects/current.md"],
+    "implementation_location": "content/transportation/roadway-projects/_index.md",
+    "implementation_locations": ["content/transportation/roadway-projects/_index.md"],
     "validation_status": "passed: live endpoint HTTP 200; description and canonical placement validated 2026-08-10"
   },
   {
@@ -1177,5 +1177,21 @@
     "status": "duplicate",
     "validation_status": "duplicate official-file record reconciled to archived candidate src-0b89c7adb106d638",
     "exclusion_reason": "The preserved R2 candidate src-0b89c7adb106d638 is the canonical Spanish-summary record; retain this duplicate for the official MRCOG direct-file URL."
+  },
+  {
+    "id": "src-a38c0dcb7d64e22c",
+    "match_url": "https://www.cabq.gov/mra/documents/downtown-2050-final-web.pdf",
+    "source_url": "https://www.cabq.gov/mra/redevelopment-areas/downtown",
+    "direct_file_url": "https://www.cabq.gov/mra/documents/downtown-2050-final-web.pdf",
+    "agency": "City of Albuquerque",
+    "title": "Downtown 2050 Metropolitan Redevelopment Area Plan",
+    "date": "2025-05",
+    "file_type": "PDF",
+    "parent_url": "https://www.cabq.gov/mra/redevelopment-areas/downtown",
+    "referring_urls": ["https://www.cabq.gov/mra/redevelopment-areas/downtown"],
+    "discovery_path": ["project-state/eight-batch-2-selection-2026-08-14.json", "https://documents.cabq.gov/planning/UDD/Downtown2025MRA-Plan.pdf", "editorial lineage review: official current plan page", "https://www.cabq.gov/mra/documents/downtown-2050-final-web.pdf"],
+    "discovery_method": "successor-plan lineage review",
+    "crawl_depth": 1,
+    "provenance_status": "authoritative City source page and direct PDF recorded"
   }
 ]
