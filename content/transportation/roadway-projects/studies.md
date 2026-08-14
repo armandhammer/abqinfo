@@ -36,11 +36,25 @@ Transportation studies and reports.
 
   [Official City PDF](https://www.cabq.gov/council/documents/ABQ%20Central%20Ave%20Ex%20Con%20NN%20ppt_5.3.13.pdf)
 
+### East Central Avenue
+
+- [East Central Avenue Safety Study (2020 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-east-central-avenue-safety-study-2020.pdf)
+
+  Analyzes pedestrian and bicycle safety on Central Avenue from Louisiana to Eubank using crashes, speeds, crossings, lighting, sidewalks, demographics, and policy context, then recommends near-term treatments, a conditional temporary road diet, and a permanent long-term road diet.
+
+  [Former City PDF](https://www.cabq.gov/municipaldevelopment/our-department/engineering/greater-albuquerque-active-transportation-committee/documents/east-central-ave-safety-study-final-draft-10-2-2020.pdf) · [Current County Project Page](https://www.bernco.gov/public-works/blog/2025/02/12/east-central-pedestrian-safety-project)
+
 ### Girard Boulevard
 
 - [Official City Project Page](https://www.cabq.gov/council/projects/neighborhood-projects/girard-boulevard-complete-streets-master-plan)
 
   Preserves the corridor plan, design drawings, bicycle and intersection concepts, presentations, meeting notes, and implementation history for multimodal improvements on Girard Boulevard between Gibson and Indian School.
+
+- [Annotated Streetscape Schematic Design (2022 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-girard-streetscape-annotated-schematic-design-2022.pdf)
+
+  Preserves the City’s annotated 2022 schematic design for Girard between Indian School and Hannett, showing pedestrian, bicycle, sidewalk, streetscape, tree, parking, intersection, and cost concepts. Red review notes indicate this is a working design record, not an adopted final plan.
+
+  [Current City Project Page](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/girard_streetscape_2025)
 
 - [Draft Complete Street Master Plan (March 2013 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/girard-boulevard-complete-street-master-plan-draft-2013.pdf)
 

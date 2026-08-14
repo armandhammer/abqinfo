@@ -26,6 +26,12 @@ Data dashboards and visualizations.
 
   Maps and rates more than 350 Albuquerque school crossings, with filters for schools, areas, and crossing features; ratings were updated in 2024 and are maintained as conditions change.
 
+- [Elementary and Middle School Crossing Evaluation (2019 Archived PDF)](https://files.abqinfo.com/maps/dashboards/cabq-school-crossing-evaluation-2019.pdf)
+
+  Explains how DMD evaluated more than 350 elementary and middle school crossings, defines the six dashboard ratings, documents the two-step scoring method, and identifies locations prioritized or monitored for funding with recommended remedies and costs.
+
+  [Official City Document Collection](https://www.cabq.gov/municipaldevelopment/documents) · [Live School Crossings Dashboard](https://www.arcgis.com/apps/dashboards/4a52905fd707412085ce9811ad48dd25)
+
 - [Neighborhood Traffic Management Program Dashboard](https://www.arcgis.com/apps/dashboards/54e6059b27eb42d680f24e2eaae81c6e)
 
   Maps eligible Neighborhood Traffic Management Program streets and current requests, with searchable request IDs, dates, locations, project status, and filters for tracking neighborhood traffic-calming activity.
