@@ -62,6 +62,26 @@ ABQ Ride bus service information and data.
 
 Project contact: Andrew de Garmo, Principal Planner, ABQ RIDE — [adegarmo@cabq.gov](mailto:adegarmo@cabq.gov) — 505-724-3109.
 
+## Earlier Transit Investment Studies
+
+- [Albuquerque Streetcar Evaluation Summary Report (2008 archived PDF)](https://files.abqinfo.com/transportation/transit/history/cabq-albuquerque-streetcar-evaluation-summary-2008.pdf)
+
+  Evaluates a proposed modern streetcar through Albuquerque's historic and cultural core, examining ridership, operations, costs, land-use and economic-development benefits, funding, implementation, and comparisons with peer systems.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/albuquerque_streetcar_evaluation_-_report.final.pdf)
+
+- [Albuquerque Streetcar Evaluation Appendices (2008 archived PDF)](https://files.abqinfo.com/transportation/transit/history/cabq-albuquerque-streetcar-evaluation-appendices-2008.pdf)
+
+  Preserves the streetcar evaluation's supporting technical record, including peer systems, operating costs, ridership, preliminary cost analysis, land-use benefits, funding analysis, earlier HDR work, and the February 2008 introductory presentation.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1albuquerque_streetcar_evaluation_-_appendices.final.pdf)
+
+- [Albuquerque Streetcar Cost and Ridership Analysis (2008 archived PDF)](https://files.abqinfo.com/transportation/transit/history/cabq-albuquerque-streetcar-cost-ridership-analysis-2008.pdf)
+
+  Reviews the proposed Albuquerque modern streetcar's capital and operating costs, ridership assumptions, peer systems, service design, land-use forecasts, and potential development impacts as the baseline for the broader 2008 rail-investment evaluation.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/2.20.08.abq_streetcar.cost_benefit_baseline_analysis.leland_consulting.pdf) · [Official City project archive](https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force)
+
 ## Open Data
 
 - [ABQ RIDE open data](https://data.cabq.gov/transit/gtfs/)

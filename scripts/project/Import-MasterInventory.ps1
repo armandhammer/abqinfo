@@ -403,10 +403,17 @@ foreach ($overridePath in @($overridePaths | Where-Object { Test-Path -LiteralPa
   foreach ($override in @($overrides)) {
     $overrideId = Get-PropertyValue $override 'id'
     $matchUrl = Get-PropertyValue $override 'match_url'
-    $match = $records.Values | Where-Object {
-      ($overrideId -and $_.id -eq $overrideId) -or
-      ($matchUrl -and ($_.r2_url -eq $matchUrl -or $_.direct_file_url -eq $matchUrl -or $_.source_url -eq $matchUrl))
-    } | Select-Object -First 1
+    # A stable ID is authoritative when supplied. Falling through to a URL
+    # match only when that ID is absent prevents a content-derived R2 alias
+    # from receiving metadata intended for its source-discovery record.
+    $match = if ($overrideId) {
+      $records.Values | Where-Object { $_.id -eq $overrideId } | Select-Object -First 1
+    } else { $null }
+    if (-not $match -and $matchUrl) {
+      $match = $records.Values | Where-Object {
+        $_.r2_url -eq $matchUrl -or $_.direct_file_url -eq $matchUrl -or $_.source_url -eq $matchUrl
+      } | Select-Object -First 1
+    }
     if (-not $match) { continue }
     foreach ($property in $override.PSObject.Properties) {
       if ($property.Name -in @('match_url','id')) { continue }

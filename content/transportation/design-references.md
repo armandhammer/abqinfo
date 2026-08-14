@@ -17,6 +17,12 @@ Reference drawings, engineering details, and technical guidance related to trans
 
   [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2023/05/Bernalillo-County-Technical-Standards-2023-03-28-FINAL.pdf)
 
+- [Green Stormwater Infrastructure / Low Impact Development Standards (2023 archived PDF)](https://files.abqinfo.com/transportation/design-references/bernco-green-stormwater-infrastructure-low-impact-development-standards-2023.pdf)
+
+  Provides Bernalillo County's design standards for desert-adapted green stormwater infrastructure and low-impact development, covering site planning, soils, vegetation, runoff, treatment practices, calculations, construction, maintenance, standard details, and application within public projects and development review.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2023/05/BernCo-GSI-LID-Appendix-A.pdf) · [Check the current County standards page](https://www.bernco.gov/public-works/development-review/tech-standards)
+
 ## NMDOT Quick Build Guide
 
 Reference guidance for quick-build transportation and multimodal safety projects.

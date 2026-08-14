@@ -84,6 +84,12 @@ Regional plans, long-range plans, and other system-level transportation planning
 
 ## City Plans and Studies
 
+- [21st Century Transportation Task Force Final Report (2008 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-21st-century-transportation-task-force-final-report-2008.pdf)
+
+  Records the 2008 task force's citywide recommendations on transit, street maintenance, roadway capacity, bicycle and pedestrian investment, land use, regional coordination, funding, and implementation priorities that shaped Albuquerque transportation debate before ART.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/10.1.08.transportation_tf.final_report.final.pdf) · [Official City project archive](https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force)
+
 - [Albuquerque Complete Streets Ordinance](https://www.cabq.gov/council/projects/current-projects/complete-streets)
 
   Documents Albuquerque's enacted Complete Streets requirements, the 2019 equity-focused update, implementation history, adopted legislation, and supporting material governing how City streets serve pedestrians, bicyclists, transit riders, and motorists.
