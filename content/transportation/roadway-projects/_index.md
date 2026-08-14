@@ -16,6 +16,14 @@ Separate [Studies]({{< relref "studies.md" >}}) and [Speed Management]({{< relre
 
 ### City Corridor and Neighborhood Projects
 
+- [Kirtland Air Force Base Access-Corridor Safety Grant Application (2026)](https://files.abqinfo.com/transportation/roadway-projects/current/cabq-kafb-access-corridor-safety-grant-application-ec-26-215-2026.pdf)
+
+  Documents Albuquerque’s pending $6.1 million funding request for safety, speed management, traffic signals, fiber, intelligent transportation, and gate-security improvements on Gibson, Wyoming, and Eubank near Kirtland Air Force Base.
+
+  The City submitted the application June 25, 2026. Its $6,099,328 package seeks $4,267,727 in federal funding and $1,831,601 in state or local match. As of August 14, 2026, it remains an application rather than an award and is scheduled for introduction at the August 17 Council meeting.
+
+  [Official City Legislation Record](https://cabq.legistar.com/LegislationDetail.aspx?ID=15014&GUID=D3B6078F-92DE-4697-B65B-DE42C6A0C900) · [Official City Attachment](https://legistar.granicus.com/cabq/attachments/5ad0198f-baa1-4b7f-b462-d6836b9c521f.pdf) · [Federal DCIP Program and FY 2026 Status](https://oldcc.gov/our-programs/defense-community-infrastructure-program)
+
 - [District 7 Traffic & Street Improvements](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements)
 
   Tracks current and completed District 7 work, including Girard streetscaping, Lomas green-stormwater and traffic calming, the Mile High Bike Boulevard, school-area safety measures, medians, crossings, and speed cushions.

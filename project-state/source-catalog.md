@@ -1,8 +1,8 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-14T22:30:41.5260242Z
+Generated: 2026-08-14T22:54:01.0271023Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 4972 candidates and 227 R2 objects totaling 2697397205 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 4976 candidates and 228 R2 objects totaling 2698329220 bytes.
 
 ## Queue status
 
@@ -16,9 +16,9 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 44 |
-| validated | 365 |
+| validated | 367 |
 | excluded | 327 |
-| duplicate | 233 |
+| duplicate | 235 |
 | superseded | 15 |
 | blocked | 0 |
 | requires human review | 27 |
@@ -118,6 +118,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Juan Tabo Boulevard Connectivity Study | City of Albuquerque | 2021-02-09 | PDF | 6943148 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/find-your-councilor/district-9/district-9-projects/district-9-street-improvement-projects/juan-tabo-hills-connectivity-study) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-juan-tabo-boulevard-connectivity-study-2021.pdf) |
 | Juan Tabo Hills Traffic Study | City of Albuquerque | 2023-09-29 | PDF | 25183910 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/find-your-councilor/district-9/district-9-projects/district-9-street-improvement-projects/juan-tabo-hills-traffic-study) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-juan-tabo-hills-traffic-study-2023.pdf) |
 | Kimmick Drive Speed and Volume Study | City of Albuquerque | 2021-11-23 | PDF | 460515 | content/transportation/roadway-projects/speed-management.md | [source](https://www.cabq.gov/municipaldevelopment/documents/kimmick-speed-and-volume-final-11-23-2021.pdf/view) | [R2](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-kimmick-drive-speed-volume-study-2021.pdf) |
+| Kirtland Air Force Base Access-Corridor Safety Grant Application | City of Albuquerque | 2026-07-16 | PDF | 932015 | content/transportation/roadway-projects/_index.md | [source](https://cabq.legistar.com/LegislationDetail.aspx?ID=15014&GUID=D3B6078F-92DE-4697-B65B-DE42C6A0C900) | [R2](https://files.abqinfo.com/transportation/roadway-projects/current/cabq-kafb-access-corridor-safety-grant-application-ec-26-215-2026.pdf) |
 | Lead and Coal Studies Final Report | City of Albuquerque | 2025-03 | PDF | 122503452 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/neighborhood-traffic-management-program/studies) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-lead-coal-studies-final-report-2025.pdf) |
 | Lomas Boulevard Safety Study | City of Albuquerque | 2025-11-06 | PDF | 9047368 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/lomas-traffic-calming-green-stormwater-infrastructure-analysis) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-lomas-boulevard-safety-study-2025.pdf) |
 | Los Poblanos Fields Open Space Trail Map | City of Albuquerque | 2020-04 | PDF | 493227 | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/parksandrecreation/open-space/facilities-map) | [R2](https://files.abqinfo.com/public-works/parks-recreation/cabq-los-poblanos-fields-open-space-trail-map-2020.pdf) |
@@ -397,6 +398,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Interactive IDO zoning map | Other authoritative source | content/development-land-use/zoning-ido.md | [source](https://cabq.maps.arcgis.com/apps/webappviewer/index.html?id=53bf716981b14d25a31e7a2549c2d61b) |
 | Unser and Paseo project website | Other authoritative source | content/transportation/roadway-projects/current.md | [source](https://upgradeunserpaseo.com/) |
 | Walk Safe New Mexico: Pedestrian Safety Action Plan | Other authoritative source | content/transportation/bicycling/safety-crash-data.md | [source](https://storymaps.arcgis.com/stories/05d03cff46b14768979410bb069a5116) |
+| Defense Community Infrastructure Program | U.S. Department of War Office of Local Defense Community Cooperation | content/transportation/roadway-projects/_index.md | [source](https://oldcc.gov/our-programs/defense-community-infrastructure-program) |
 
 ## Deferred and last-resort sources
 
@@ -430,6 +432,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-0a63d67d8ea77bed | duplicate | Clayton Heights Metropolitan Redevelopment Area Plan | Content-link alias for canonical archive candidate src-54a0fdc70d3fe70c. |
 | src-0ae10419de42f24d | duplicate | Calendar | NMDOT public-involvement calendar is already exposed through the implemented Public Involvement Portal and Toolbox. |
 | src-0b1dfe6e620d7fe0 | duplicate | 2024 Bikeway and Trail Facilities Plan — Combined Authoritative Edition | Duplicate discovery record for implemented candidate src-545128f068ffb941. |
+| src-0ba4e536ef0605b9 | duplicate | Official City Legislation Record | Official legislation-page link is retained as the source page for canonical archived-document candidate src-a6a63111f9b4ba00. |
 | src-0be384cb80c9d539 | duplicate | 21st Century Transportation Task Force Final Report | Content-link alias for canonical archive candidate src-8ba9141e19a5a9ac. |
 | src-0c81420453b67e5f | duplicate | Tijeras Arroyo Biological Zone Open Space Resource Management Plan | Content-link alias for canonical archive candidate src-9696b9222ba27231. |
 | src-0fb08daac5160e2c | duplicate | Fourth Street and Montaño Community Visioning Report | Content-link alias for canonical archive candidate src-173ce250cdac7c01. |
@@ -496,6 +499,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-5493cb1d487d09db | duplicate | I-40 West Corridor Study: Operations Plan | Duplicate discovery record for implemented candidate src-a89c0c7e764e720f. |
 | src-54f1c38a3e680c1a | duplicate | Two-Stage Bike Box how to | Duplicate discovery record for implemented candidate src-0f5f4a570a7fe2b6. |
 | src-55dbe63a595fee53 | duplicate | Montaño Intermodal Center Project Application | Direct-file URL alias for canonical archive candidate src-8578ac9aeef57f31. |
+| src-56ac6e08d03f1a77 | duplicate | Kirtland Air Force Base Access-Corridor Safety Grant Application (2026) | R2 content-link alias reconciled to authoritative Legistar candidate src-a6a63111f9b4ba00. |
 | src-586828cc5e08f3d2 | duplicate | Volcano Trails Sector Development Plan Adoption Resolution R-11-211 | Content-link alias for canonical archive candidate src-8b120e71c3650349. |
 | src-595eb58320b4ff58 | duplicate | Phase I Existing Conditions Report | Official City direct-file link is already recorded as provenance on the canonical archived Phase I existing-conditions record. |
 | src-5964b940e185bd7a | duplicate | Public Restrooms | Underlying feature service duplicates the Public Restroom Finder application, which is outside ABQInfo's selected scope; retain only as catalog provenance. |
