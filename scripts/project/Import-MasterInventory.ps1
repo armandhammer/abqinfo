@@ -85,6 +85,7 @@ function Test-DiscoveryCandidate([string]$Agency, [string]$Url) {
     'bernco' { return $uriHost -match '(^|\.)(bernco\.gov)$' }
     'mrcog' { return $uriHost -match '(^|\.)(mrcog-nm\.gov|mrcogshare\.org|mrcogmaps\.org|riometro\.org|arcgis\.com|nm\.tipviewer\.pmgpro\.com)$' }
     'nmdot' { return $uriHost -match '(^|\.)(dot\.nm\.gov|nmroads\.com|pmgpro\.com|rtsclients\.com)$' }
+    'rio metro / nmrx / regional rail' { return $uriHost -match '(^|\.)(riometro\.org|mrcog-nm\.gov|dot\.nm\.gov|rtsclients\.com|arcgis\.com)$' }
     default { return $false }
   }
 }

@@ -47,7 +47,15 @@ foreach ($decision in @($decisions.decisions)) {
   $item = [ordered]@{
     id = [string]$decision.id
     source_url = $sourcePage
-    direct_file_url = [string]$candidate.direct_file_url
+    direct_file_url = if ($decision.PSObject.Properties['direct_file_url'] -and $decision.direct_file_url) {
+      [string]$decision.direct_file_url
+    } elseif ($candidate.direct_file_url) {
+      [string]$candidate.direct_file_url
+    } elseif ($candidate.source_url -and [string]$candidate.source_url -ne $sourcePage) {
+      [string]$candidate.source_url
+    } else {
+      ''
+    }
     parent_url = $sourcePage
     agency = if ($candidate.agency) { [string]$candidate.agency } else { 'City of Albuquerque' }
     title = [string]$decision.title

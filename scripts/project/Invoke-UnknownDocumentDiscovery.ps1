@@ -281,7 +281,17 @@ while ($frontier.Count -and $pages.Count -lt $MaxPages) {
       $pageRecord.content_type = [string]$response.Headers['Content-Type']
       $length = [string]$response.Headers['Content-Length']
       if ($length -match '^\d+$') { $pageRecord.content_length = [int64]$length }
-      $finalUri = $response.BaseResponse.ResponseUri
+      # Windows PowerShell exposes the final URI as ResponseUri, while
+      # PowerShell 7 wraps a HttpResponseMessage whose redirect target is on
+      # RequestMessage.RequestUri. Support both so the resumable crawl behaves
+      # deterministically in either runtime.
+      $finalUri = $null
+      if ($response.BaseResponse.PSObject.Properties['ResponseUri']) {
+        $finalUri = $response.BaseResponse.ResponseUri
+      } elseif ($response.BaseResponse.PSObject.Properties['RequestMessage'] -and $response.BaseResponse.RequestMessage) {
+        $finalUri = $response.BaseResponse.RequestMessage.RequestUri
+      }
+      if (-not $finalUri) { $finalUri = $uri }
       $deliveredDocument = $pageRecord.content_type -match '(?i)(application/pdf|application/msword|officedocument|application/zip)' -or $finalUri.AbsoluteUri -match $documentPattern
       if ($deliveredDocument) {
         $pageRecord.status = 'document metadata recorded'

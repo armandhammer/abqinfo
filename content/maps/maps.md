@@ -127,6 +127,10 @@ Interactive maps of city data and infrastructure.
 
 ## Regional Transit Maps
 
+- [Rail Runner System Map (2023)](https://files.abqinfo.com/transportation/transit/rail-runner/rio-metro-rail-runner-system-map-2023.pdf)
+
+  Shows the full Belen-to-Santa Fe corridor, all stations, major roads, pueblos, station parking, airport connections, and the portions of the route owned by NMDOT and BNSF. [Check the official system-map page for updates](https://www.riometro.org/265/Rail-Runner-System-Map).
+
 - [Planned and Potential Transit Service Map](https://mrmpo.maps.arcgis.com/apps/instant/sidebar/index.html?appid=d637ede6b5c44129bbbd1393b27eff22)
 
   Shows the Albuquerque metropolitan area's planned and potential regional transit service network adopted with Transitions 2045, replacing the former Long Range Transit Network as the current interactive planning reference.
