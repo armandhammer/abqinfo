@@ -21,8 +21,15 @@ function Read-InventoryWithRetry([string]$Path) {
 function Write-InventoryWithRetry($Value, [string]$Path) {
   $json = $Value | ConvertTo-Json -Depth 12
   for ($attempt = 1; $attempt -le 8; $attempt++) {
-    try { $json | Set-Content -LiteralPath $Path -Encoding utf8; return }
+    $fullPath = [IO.Path]::GetFullPath($Path)
+    $temporaryPath = "$fullPath.tmp-$PID-$attempt"
+    try {
+      [IO.File]::WriteAllText($temporaryPath, $json, [Text.UTF8Encoding]::new($false))
+      [IO.File]::Move($temporaryPath, $fullPath, $true)
+      return
+    }
     catch [System.IO.IOException] {
+      if (Test-Path -LiteralPath $temporaryPath) { Remove-Item -LiteralPath $temporaryPath -Force }
       if ($attempt -eq 8) { throw }
       Start-Sleep -Milliseconds (50 * $attempt)
     }

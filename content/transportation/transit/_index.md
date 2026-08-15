@@ -6,6 +6,20 @@ Public transit services and data.
 
 Use the service pages for current rider information and the Transportation Plans section for regional transit planning. Schedules, fares, alerts, and eligibility rules change frequently, so this site links to the agencies that maintain them rather than duplicating them.
 
+## Regional Transit Planning and History
+
+- [Rio Metro / ABQ RIDE Consolidation Study Final Report (2025)](https://files.abqinfo.com/transportation/transit/rio-metro-abq-ride-consolidation-study-final-2025.pdf)
+
+  Evaluates governance options for ABQ RIDE and Rio Metro, rejects full consolidation as unnecessarily disruptive, and recommends greater ABQ RIDE autonomy, improved Rio Metro regional planning, coordinated demand-response service, and a more integrated transit network. [Official Rio Metro publications](https://riometro.org/381/Rio-Metro-Publications)
+
+- [Paseo del Norte High-Capacity Transit Study: Alternatives Analysis Report (2014)](https://files.abqinfo.com/transportation/transit/paseo-del-norte-high-capacity-transit-study-2014.pdf)
+
+  Evaluates high-capacity transit across Albuquerque's Paseo del Norte corridor and recommends a phased bus rapid transit alternative, with alignment screening, ridership forecasts, conceptual design, costs, funding, land-use considerations, public input, and implementation steps. [Official Rio Metro publications](https://riometro.org/381/Rio-Metro-Publications)
+
+- [UNM/CNM/Sunport Transit Study: Alternative Alignments Identification and Assessment (2014)](https://files.abqinfo.com/transportation/transit/unm-cnm-sunport-transit-alternatives-study-2014.pdf)
+
+  Compares transit alignments linking UNM, CNM, major medical and employment destinations, and the Sunport, then recommends a University-Gibson bus rapid transit alternative using ridership, cost, traffic, right-of-way, and community-impact analysis. [Official Rio Metro publications](https://riometro.org/381/Rio-Metro-Publications)
+
 ## State Transit Connections
 
 - [NMDOT Park and Ride](https://www.dot.nm.gov/travel-information/park-and-ride-bus-shuttle-service)
