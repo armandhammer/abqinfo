@@ -26,7 +26,24 @@ if ($UpdateInventory -and $candidate.status -eq 'implemented') {
     throw "Candidate $Id has multiple placements without an approved cross-listing."
   }
 }
-$url = if ($candidate.direct_file_url) { $candidate.direct_file_url } elseif ($candidate.source_url) { $candidate.source_url } else { $candidate.r2_url }
+
+# A successful response from ABQInfo's R2 archive proves only that the archive
+# link works. It does not establish authoritative government provenance. When
+# updating inventory state, prefer a non-R2 source URL and keep R2-only records
+# out of the terminal "validated" state.
+$authoritativeUrl = @($candidate.source_url, $candidate.direct_file_url) |
+  Where-Object { $_ -and $_ -match '^https?://' -and $_ -notmatch '^https?://files\.abqinfo\.com(?:/|$)' } |
+  Select-Object -First 1
+
+$url = if ($UpdateInventory -and $authoritativeUrl) {
+  $authoritativeUrl
+} elseif ($candidate.direct_file_url) {
+  $candidate.direct_file_url
+} elseif ($candidate.source_url) {
+  $candidate.source_url
+} else {
+  $candidate.r2_url
+}
 if (-not $url) { throw "Candidate has no testable URL: $Id" }
 
 $method = 'HEAD'
@@ -40,11 +57,23 @@ $result = [ordered]@{ id = $Id; title = $candidate.title; url = $url; http_statu
 $result.method = $method
 
 if ($UpdateInventory -and $response.StatusCode -ge 200 -and $response.StatusCode -lt 400) {
-  & "$PSScriptRoot/Update-Candidate.ps1" -Id $Id -InventoryPath $InventoryPath -Set @{
-    status = 'validated'
-    validation_status = "passed: HTTP $([int]$response.StatusCode)"
-  } | Out-Null
-  $result.updated_status = 'validated'
+  if ($authoritativeUrl) {
+    & "$PSScriptRoot/Update-Candidate.ps1" -Id $Id -InventoryPath $InventoryPath -Set @{
+      status = 'validated'
+      validation_status = "passed: authoritative source HTTP $([int]$response.StatusCode)"
+    } | Out-Null
+    $result.updated_status = 'validated'
+  } else {
+    $note = 'HTTP-only archive validation did not establish authoritative-source provenance.'
+    $notes = @($candidate.processing_notes | Where-Object { $_ })
+    if ($notes -notcontains $note) { $notes += $note }
+    & "$PSScriptRoot/Update-Candidate.ps1" -Id $Id -InventoryPath $InventoryPath -Set @{
+      status = 'requires human review'
+      validation_status = "R2 archive link passed HTTP $([int]$response.StatusCode); authoritative government provenance remains unresolved"
+      processing_notes = $notes
+    } | Out-Null
+    $result.updated_status = 'requires human review'
+  }
 }
 
 $result | ConvertTo-Json -Compress
