@@ -80,6 +80,56 @@ Bicycle safety statistics and crash data.
 
 ## School Transportation Safety
 
-- [APS Vision Zero for Youth Initiative](https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative)
+- [APS Vision Zero for Youth Action Plan (2022–23 archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-for-youth-action-plan-2022-23.pdf)
 
-  Collects Albuquerque Public Schools' youth traffic-safety curriculum, walking-school-bus guidance, student mapping and walk-survey work, task-force records, engagement resources, and district efforts to eliminate transportation deaths.
+  Establishes APS's districtwide framework for eliminating student traffic deaths through safety curriculum, awareness campaigns, student mapping, interagency coordination, measurable actions, equity-focused pilot schools, and annual progress evaluation.
+
+  [Official APS PDF](https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/action-plan) · [APS Vision Zero for Youth Initiative](https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative) · [APS Links and Resources](https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources)
+
+- [APS Vision Zero Mapping Session Report](https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/mapping-session-report)
+
+  Documents student travel patterns and safety concerns gathered through mapping sessions. The complete report is also preserved within the archived action plan as its appendix.
+
+- [APS Vision Zero Board Policy Discussion Brief (2022 archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-board-policy-discussion-brief-2022.pdf)
+
+  Documents the Board of Education briefing on the federally funded initiative, its curriculum and awareness objectives, pilot-school selection, regional partnerships, expected products, funding, schedule, and evaluation framework.
+
+  [Official APS PDF](https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/board-policy-document)
+
+- [APS Vision Zero Superintendent Letter of Support (2022 archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-superintendent-letter-2022.pdf)
+
+  Records the superintendent's formal support for APS Vision Zero for Youth and its coordinated approach to safer walking, bicycling, school transportation, traffic-safety education, and community awareness.
+
+  [Official APS PDF](https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/superintendent-letter)
+
+### APS Vision Zero Task Force Records
+
+- [Task Force Meeting 1 Notes (2021 archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-1-2021.pdf)
+
+  Records the task force's September 2021 kickoff, including Safe Routes to School funding, pilot-school selection, student mapping, curriculum development, public awareness, interagency roles, equity considerations, and initial implementation questions.
+
+  [Official APS PDF](https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/task-force-meeting-notes/meeting-1-notes-task-force-kick-off-meeting)
+
+- [Task Force Meeting 2 Notes (2022 archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-2-2022.pdf)
+
+  Documents the May 2022 curriculum session, updated pilot schools, student-engagement methods, Safe Routes to School coordination, curriculum structure, teacher feedback, community partnerships, and action-plan development.
+
+  [Official APS PDF](https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/task-force-meeting-notes/meeting-2-notes-curriculum)
+
+- [Task Force Meeting 3 Notes (2022 archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-3-2022.pdf)
+
+  Records the August 2022 review of the draft action plan, including goals, implementation measures, municipal partnerships, student engagement, data integrity, equity, infrastructure responsibilities, evaluation, and task-force feedback.
+
+  [Official APS PDF](https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/task-force-meeting-notes/meeting-3-action-plan)
+
+- [Task Force Meeting 4 Notes (2023 archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-4-2023.pdf)
+
+  Documents the February 2023 awareness-campaign session, stakeholder responsibilities, student-created safety messaging, pilot-school participation, curriculum progress, campaign media, implementation needs, and coordination with Albuquerque-area partners.
+
+  [Official APS PDF](https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/task-force-meeting-notes/meeting-4-notes-awareness-campaign)
+
+- [Task Force Meeting 5 Notes (2023 archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-5-2023.pdf)
+
+  Documents the May 2023 curriculum-implementation session, including teacher feedback, revised lessons, classroom placement, community-school coordination, public outreach, future scaling, and integration with the APS initiative website.
+
+  [Official APS PDF](https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/task-force-meeting-notes/meeting-five-curriculum-implementation)

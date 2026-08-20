@@ -314,7 +314,12 @@ while ($frontier.Count -and $pages.Count -lt $MaxPages) {
       # full page so generic labels do not sever the document graph.
       $currentPageRelevant = ("$($finalUri.AbsolutePath) $($pageRecord.title)" -match $RelevantPattern)
       $isDiscoveryAncestor = ([string]$item.method) -match '(?i)ancestor traversal'
-      $pageInDiscoveryContext = $currentPageRelevant -or $isDiscoveryAncestor
+      # An explicitly supplied or inventory-derived source page is already in
+      # scope by editorial decision. Treat it as a discovery root even when a
+      # generic label such as "Links and Resources" contains no topical term.
+      # Otherwise a retained landing page can become an accidental crawl stop.
+      $isExplicitDiscoveryRoot = ([string]$item.method) -match '(?i)^(user seed|retained source audit)$'
+      $pageInDiscoveryContext = $currentPageRelevant -or $isDiscoveryAncestor -or $isExplicitDiscoveryRoot
       if ($pageInDiscoveryContext) {
         $collectionLinks = @(Get-Links ([string]$response.Content) $finalUri | Where-Object {
           "$($_.anchor_text) $(([uri]$_.url).AbsolutePath)" -match $collectionPattern
@@ -397,9 +402,13 @@ while ($frontier.Count -and $pages.Count -lt $MaxPages) {
       }
     }
   } catch {
-    $pageRecord.status = 'error'
     $pageRecord.error = $_.Exception.Message
-    $pageRecord.retryable = $pageRecord.error -match '(?i)(timed? out|unable to connect|connection.*(closed|reset)|HTTP.*429|HTTP.*5\d\d|\(429\)|\(5\d\d\))'
+    $requiresRenderedBrowser = $pageRecord.error -match '(?i)(403|forbidden|attention required|cloudflare|access denied|you have been blocked)'
+    $pageRecord.status = if ($requiresRenderedBrowser) { 'requires rendered-browser review' } else { 'error' }
+    $pageRecord.retryable = -not $requiresRenderedBrowser -and $pageRecord.error -match '(?i)(timed? out|unable to connect|connection.*(closed|reset)|HTTP.*429|HTTP.*5\d\d|\(429\)|\(5\d\d\))'
+    if ($requiresRenderedBrowser) {
+      $pageRecord.retry_rule = 'Open in a rendered browser, enumerate authored links, and preserve the complete discovery path; do not treat this page as exhausted.'
+    }
   }
   if ($pageRecord.status -eq 'error' -and $pageRecord.retryable -and $attempt -le $MaxRetries) {
     $pageRecord.status = 'retry scheduled'

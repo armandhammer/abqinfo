@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-20T18:06:41.5025405Z",
+  "generated_at": "2026-08-20T19:22:39.2278157Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,7 +18,7 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 4087,
+    "pending review": 4074,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 0,
@@ -26,10 +26,10 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 24,
-    "validated": 402,
-    "excluded": 723,
-    "duplicate": 449,
-    "superseded": 17,
+    "validated": 414,
+    "excluded": 735,
+    "duplicate": 450,
+    "superseded": 19,
     "blocked": 0,
     "requires human review": 67
   },
@@ -829,11 +829,11 @@
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "terminal lineage reconciliation to authoritative APS program hub",
-      "exclusion_reason": "The referenced action-plan work is represented by the maintained APS Vision Zero for Youth Initiative record src-1ef9b5996dd6c8ad; no separate final action-plan file was published on the reviewed APS graph.",
+      "validation_status": "document lineage reconciled to authoritative APS publication",
+      "exclusion_reason": "Recovered as the authoritative APS Vision Zero for Youth Action Plan; canonical archived record is src-72d91318a9fc0168.",
       "local_path": null,
       "discovered_at": "2026-08-04T15:02:46.5569372Z",
-      "updated_at": "2026-08-20T18:04:59.9466216Z"
+      "updated_at": "2026-08-20T19:14:46.8301333Z"
     },
     {
       "id": "lin-10c1598acf9db566",
@@ -25460,7 +25460,7 @@
       "exclusion_reason": null,
       "local_path": "research/staging/queue/src-0cb900601ce2b2c5.pdf",
       "discovered_at": "2026-08-20T17:58:21.4653733Z",
-      "updated_at": "2026-08-20T18:06:40.9615570Z"
+      "updated_at": "2026-08-20T18:06:40.961557Z"
     },
     {
       "id": "src-0ccd5b9d6632fe30",
@@ -69415,49 +69415,50 @@
     },
     {
       "id": "src-3b9f0fe8d0093769",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/o-64enacted-6.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/current-projects/complete-streets",
       "direct_file_url": "https://www.cabq.gov/council/documents/o-64enacted-6.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/transportation-plans/cabq-complete-streets-ordinance-o-19-64-2019.pdf",
+      "r2_key": "transportation/transportation-plans/cabq-complete-streets-ordinance-o-19-64-2019.pdf",
+      "r2_etag": "9722ebda196047881b651ec86dbbd482",
+      "r2_last_modified": "08/20/2026 13:18:47",
       "agency": "City of Albuquerque",
-      "title": "Read the final version of the ordinance here.",
-      "date": null,
+      "title": "Albuquerque Complete Streets Ordinance Update",
+      "date": "2019-09-11",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 889435,
+      "checksum_sha256": "dd3729d6991d23605a18ca10aed6ba64e4d52e5bdff795d8d9a22e8c6ae0f693",
       "parent_url": "https://www.cabq.gov/council/projects/current-projects/complete-streets",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/current-projects/complete-streets"
       ],
       "discovery_path": [
-        "https://www.cabq.gov/bikes/biking-in-abq",
-        "https://www.cabq.gov/sitemap",
         "https://www.cabq.gov/council/projects/current-projects/complete-streets",
         "https://www.cabq.gov/council/documents/o-64enacted-6.pdf"
       ],
-      "discovery_method": "authored document link",
+      "discovery_method": "retained source descendant crawl",
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/transportation/transportation-plans.md",
+      "description": "Enacts Albuquerque's 2019 Complete Streets update, strengthening equity, connectivity, multimodal safety, best-practice design, project evaluation, interdepartmental coordination, public reporting, and implementation requirements across City roadway projects.",
+      "description_word_count": 26,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 26-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transportation-plans.md",
+      "implementation_locations": [
+        "content/transportation/transportation-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "tmp/resource-descendant-archive/cabq-complete-streets-ordinance-o-64-2019.pdf",
       "discovered_at": "2026-08-04T14:15:58.0576047Z",
-      "updated_at": "2026-08-04T14:15:58.0576047Z"
+      "updated_at": "2026-08-20T19:22:38.7658541Z"
     },
     {
       "id": "src-3baada7c229ec6f7",
@@ -75747,6 +75748,49 @@
       "local_path": null,
       "discovered_at": "2026-08-14T20:11:39.9499474Z",
       "updated_at": "2026-08-14T20:11:39.9499474Z"
+    },
+    {
+      "id": "src-41db265a58175373",
+      "status": "excluded",
+      "source_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/walktoberflyer_trumanms",
+      "direct_file_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/walktoberflyer_trumanms",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "Albuquerque Public Schools",
+      "title": "Walktober Event Flyer — trumanms",
+      "date": "2023",
+      "file_type": "PDF",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/",
+      "referring_urls": [
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/"
+      ],
+      "discovery_path": [
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/",
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/walktoberflyer_trumanms"
+      ],
+      "discovery_method": "official document-folder lineage scan",
+      "crawl_depth": 3,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": null,
+      "description": null,
+      "description_word_count": 0,
+      "processing_notes": [
+        "Added through official document-folder lineage scan from the recorded authoritative source graph."
+      ],
+      "implementation_location": null,
+      "implementation_locations": [],
+      "cross_listing_approved": false,
+      "validation_status": "editorial and lineage review complete",
+      "exclusion_reason": "School-specific Walktober event flyer is short-lived promotional material with little durable planning or policy information; excluded after the official Vision Zero document-folder review.",
+      "local_path": null,
+      "discovered_at": "2026-08-20T19:10:25.053171Z",
+      "updated_at": "2026-08-20T19:16:32.0425685Z"
     },
     {
       "id": "src-41dc50cfe28f0da7",
@@ -100059,6 +100103,53 @@
       "updated_at": "2026-08-04T15:02:42.8464554Z"
     },
     {
+      "id": "src-5ba4ee83a4510f85",
+      "status": "validated",
+      "source_url": "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+      "direct_file_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/task-force-meeting-notes/meeting-4-notes-awareness-campaign",
+      "r2_url": "https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-4-2023.pdf",
+      "r2_key": "transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-4-2023.pdf",
+      "r2_etag": "f1a3c5d3d49c063d692fbb70c0656491",
+      "r2_last_modified": "08/20/2026 13:18:20",
+      "agency": "Albuquerque Public Schools",
+      "title": "APS Vision Zero Task Force Meeting 4 Notes",
+      "date": "2023-02-09",
+      "file_type": "PDF",
+      "size_bytes": 547777,
+      "checksum_sha256": "67544517f3365baf8c66f953e7fbb443c62e82802a61a285c7eb82043a09d565",
+      "parent_url": "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+      "referring_urls": [
+        "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources"
+      ],
+      "discovery_path": [
+        "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/task-force-meeting-notes/meeting-4-notes-awareness-campaign"
+      ],
+      "discovery_method": "retained source descendant crawl",
+      "crawl_depth": 2,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official APS source URL preserved through an exact Internet Archive replay",
+      "proposed_canonical_page": "content/transportation/bicycling/safety-crash-data.md",
+      "description": "Documents the February 2023 awareness-campaign session, stakeholder responsibilities, student-created safety messaging, pilot-school participation, curriculum progress, campaign media, implementation needs, and coordination with Albuquerque-area partners.",
+      "description_word_count": 24,
+      "processing_notes": [
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 24-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
+      ],
+      "implementation_location": "content/transportation/bicycling/safety-crash-data.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/safety-crash-data.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
+      "exclusion_reason": null,
+      "local_path": "tmp/resource-descendant-archive/aps-vision-zero-task-force-meeting-4-2023.pdf",
+      "discovered_at": "2026-08-20T19:10:13.4014599Z",
+      "updated_at": "2026-08-20T19:22:38.6732660Z"
+    },
+    {
       "id": "src-5ba63128a8d76916",
       "status": "pending review",
       "source_url": "https://www.bernco.gov/public-works/blog/2021/04/15/paseo-del-norte-access-fire-station-35",
@@ -111992,7 +112083,7 @@
     },
     {
       "id": "src-6705ec42d3bb6d2e",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/O1427_CommitteeSubNov7_DRAFT_2.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -112032,11 +112123,11 @@
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "legislative lineage reconciled",
+      "exclusion_reason": "Interim Complete Streets draft superseded by the retained final amended original ordinance and the enacted 2019 update.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:16:02.5246736Z",
-      "updated_at": "2026-08-04T14:16:02.5246736Z"
+      "updated_at": "2026-08-20T19:14:59.9221661Z"
     },
     {
       "id": "src-67062b09466cac70",
@@ -115883,6 +115974,53 @@
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.5958615Z",
       "updated_at": "2026-08-04T14:15:58.5958615Z"
+    },
+    {
+      "id": "src-6b8e63d6c94e036a",
+      "status": "validated",
+      "source_url": "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+      "direct_file_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/task-force-meeting-notes/meeting-five-curriculum-implementation",
+      "r2_url": "https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-5-2023.pdf",
+      "r2_key": "transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-5-2023.pdf",
+      "r2_etag": "3d02f049669c2e28d880ac41b22da4f9",
+      "r2_last_modified": "08/20/2026 13:18:29",
+      "agency": "Albuquerque Public Schools",
+      "title": "APS Vision Zero Task Force Meeting 5 Notes",
+      "date": "2023-05-18",
+      "file_type": "PDF",
+      "size_bytes": 203290,
+      "checksum_sha256": "2c3e35200b2bcb690a8042051ac9553be05fc5ba8bfde4e626c1db22198467f6",
+      "parent_url": "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+      "referring_urls": [
+        "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources"
+      ],
+      "discovery_path": [
+        "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/task-force-meeting-notes/meeting-five-curriculum-implementation"
+      ],
+      "discovery_method": "retained source descendant crawl",
+      "crawl_depth": 2,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official APS source URL preserved through an exact Internet Archive replay",
+      "proposed_canonical_page": "content/transportation/bicycling/safety-crash-data.md",
+      "description": "Documents the May 2023 curriculum-implementation session, including teacher feedback, revised lessons, classroom placement, community-school coordination, public outreach, future scaling, and integration with the APS initiative website.",
+      "description_word_count": 26,
+      "processing_notes": [
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 26-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
+      ],
+      "implementation_location": "content/transportation/bicycling/safety-crash-data.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/safety-crash-data.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
+      "exclusion_reason": null,
+      "local_path": "tmp/resource-descendant-archive/aps-vision-zero-task-force-meeting-5-2023.pdf",
+      "discovered_at": "2026-08-20T19:10:15.3749088Z",
+      "updated_at": "2026-08-20T19:22:38.7050329Z"
     },
     {
       "id": "src-6b9fccdac6a4fc63",
@@ -123050,6 +123188,53 @@
       "updated_at": "2026-08-14T20:11:40.2034127Z"
     },
     {
+      "id": "src-72d91318a9fc0168",
+      "status": "validated",
+      "source_url": "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+      "direct_file_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/action-plan",
+      "r2_url": "https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-for-youth-action-plan-2022-23.pdf",
+      "r2_key": "transportation/bicycling/safety-crash-data/aps-vision-zero-for-youth-action-plan-2022-23.pdf",
+      "r2_etag": "219fe4f63ab7d84047348b38a255d7c1-2",
+      "r2_last_modified": "08/20/2026 13:17:25",
+      "agency": "Albuquerque Public Schools",
+      "title": "APS Vision Zero for Youth Action Plan",
+      "date": "2022-23",
+      "file_type": "PDF",
+      "size_bytes": 10613098,
+      "checksum_sha256": "c9814490d30fa47c2ee2e5b05dcd94d8a832838b4a181c4c9acf6a5ff4f52721",
+      "parent_url": "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+      "referring_urls": [
+        "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources"
+      ],
+      "discovery_path": [
+        "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/action-plan"
+      ],
+      "discovery_method": "retained source descendant crawl",
+      "crawl_depth": 2,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official APS source URL preserved through an exact Internet Archive replay; current official PDF visually verified in the rendered browser",
+      "proposed_canonical_page": "content/transportation/bicycling/safety-crash-data.md",
+      "description": "Establishes APS's districtwide framework for eliminating student traffic deaths through safety curriculum, awareness campaigns, student mapping, interagency coordination, measurable actions, equity-focused pilot schools, and annual progress evaluation.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 27-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
+      ],
+      "implementation_location": "content/transportation/bicycling/safety-crash-data.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/safety-crash-data.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
+      "exclusion_reason": null,
+      "local_path": "tmp/resource-descendant-archive/aps-vision-zero-for-youth-action-plan-2022-23.pdf",
+      "discovered_at": "2026-08-20T19:09:57.8043125Z",
+      "updated_at": "2026-08-20T19:22:38.4467715Z"
+    },
+    {
       "id": "src-72de3fb581605feb",
       "status": "pending review",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/5.13.08.transp_tf.minutes.pdf",
@@ -125322,6 +125507,53 @@
       "local_path": null,
       "discovered_at": "2026-08-04T14:45:06.7758165Z",
       "updated_at": "2026-08-04T14:45:06.7758165Z"
+    },
+    {
+      "id": "src-75bf5eb398612f90",
+      "status": "validated",
+      "source_url": "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+      "direct_file_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/task-force-meeting-notes/meeting-1-notes-task-force-kick-off-meeting",
+      "r2_url": "https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-1-2021.pdf",
+      "r2_key": "transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-1-2021.pdf",
+      "r2_etag": "32d6837090e0372567b0b09ffa3fee21",
+      "r2_last_modified": "08/20/2026 13:17:52",
+      "agency": "Albuquerque Public Schools",
+      "title": "APS Vision Zero Task Force Meeting 1 Notes",
+      "date": "2021-09-21",
+      "file_type": "PDF",
+      "size_bytes": 222778,
+      "checksum_sha256": "de6f4757c48aa56cf415cb9d97e55800b8447e6606c49a9c564ccf39bdd631e4",
+      "parent_url": "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+      "referring_urls": [
+        "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources"
+      ],
+      "discovery_path": [
+        "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/task-force-meeting-notes/meeting-1-notes-task-force-kick-off-meeting"
+      ],
+      "discovery_method": "retained source descendant crawl",
+      "crawl_depth": 2,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official APS source URL preserved through an exact Internet Archive replay",
+      "proposed_canonical_page": "content/transportation/bicycling/safety-crash-data.md",
+      "description": "Records the task force's September 2021 kickoff, including Safe Routes to School funding, pilot-school selection, student mapping, curriculum development, public awareness, interagency roles, equity considerations, and initial implementation questions.",
+      "description_word_count": 29,
+      "processing_notes": [
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 29-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
+      ],
+      "implementation_location": "content/transportation/bicycling/safety-crash-data.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/safety-crash-data.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
+      "exclusion_reason": null,
+      "local_path": "tmp/resource-descendant-archive/aps-vision-zero-task-force-meeting-1-2021.pdf",
+      "discovered_at": "2026-08-20T19:10:55.5252689Z",
+      "updated_at": "2026-08-20T19:22:38.5709030Z"
     },
     {
       "id": "src-75c96c91e15a6b60",
@@ -137687,7 +137919,7 @@
     },
     {
       "id": "src-81fec81c380435d0",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreetsNMASLALetterofSupport.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -137727,11 +137959,11 @@
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "editorial relevance review complete",
+      "exclusion_reason": "Stakeholder letter supporting the Complete Streets ordinance is relevant legislative correspondence but adds little policy or technical information beyond the retained ordinance, legislation packet, and Council presentation.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:16:02.4683784Z",
-      "updated_at": "2026-08-04T14:16:02.4683784Z"
+      "updated_at": "2026-08-20T19:14:48.5006315Z"
     },
     {
       "id": "src-8209c4dd917e64da",
@@ -144187,6 +144419,53 @@
       "provenance_status": "authoritative government source recorded"
     },
     {
+      "id": "src-87f7f1efed09f4a2",
+      "status": "validated",
+      "source_url": "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+      "direct_file_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/board-policy-document",
+      "r2_url": "https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-board-policy-discussion-brief-2022.pdf",
+      "r2_key": "transportation/bicycling/safety-crash-data/aps-vision-zero-board-policy-discussion-brief-2022.pdf",
+      "r2_etag": "3c7f849b76b4be08e6f524b8d5c8059d",
+      "r2_last_modified": "08/20/2026 13:17:35",
+      "agency": "Albuquerque Public Schools",
+      "title": "APS Vision Zero Board Policy Discussion Brief",
+      "date": "2022-06-13",
+      "file_type": "PDF",
+      "size_bytes": 557710,
+      "checksum_sha256": "6cb0f808fb8603b6e6f988345a86b1f99ade91b8be8b52aa5085282e1b04f85f",
+      "parent_url": "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+      "referring_urls": [
+        "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources"
+      ],
+      "discovery_path": [
+        "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/board-policy-document"
+      ],
+      "discovery_method": "retained source descendant crawl",
+      "crawl_depth": 2,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official APS source URL preserved through an exact Internet Archive replay",
+      "proposed_canonical_page": "content/transportation/bicycling/safety-crash-data.md",
+      "description": "Documents the Board of Education briefing on the federally funded initiative, its curriculum and awareness objectives, pilot-school selection, regional partnerships, expected products, funding, schedule, and evaluation framework.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 27-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
+      ],
+      "implementation_location": "content/transportation/bicycling/safety-crash-data.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/safety-crash-data.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
+      "exclusion_reason": null,
+      "local_path": "tmp/resource-descendant-archive/aps-vision-zero-board-policy-2022.pdf",
+      "discovered_at": "2026-08-20T19:10:02.8325221Z",
+      "updated_at": "2026-08-20T19:22:38.4881307Z"
+    },
+    {
       "id": "src-87fd2a5755eea903",
       "status": "pending review",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/copy2_of_the-mcduffie-twin-parks-traffic-calming-study",
@@ -147557,51 +147836,50 @@
     },
     {
       "id": "src-8b18827057480dac",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreetsLegislationPacket.pdf/view",
-      "direct_file_url": null,
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/current-projects/complete-streets",
+      "direct_file_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreetsLegislationPacket.pdf",
+      "r2_url": "https://files.abqinfo.com/transportation/transportation-plans/cabq-complete-streets-legislation-packet-2014.pdf",
+      "r2_key": "transportation/transportation-plans/cabq-complete-streets-legislation-packet-2014.pdf",
+      "r2_etag": "af994aa0608e2c2eb7a3d7829ebf49ae",
+      "r2_last_modified": "08/20/2026 13:18:56",
       "agency": "City of Albuquerque",
-      "title": "Complete Streets Summary Packet",
-      "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/",
+      "title": "Albuquerque Complete Streets Legislation Packet",
+      "date": "2014",
+      "file_type": "PDF",
+      "size_bytes": 5086786,
+      "checksum_sha256": "b717123d792ed94aa2a3f7c10aee6a7b82a8caeba48969b453913091020c88ee",
+      "parent_url": "https://www.cabq.gov/council/projects/current-projects/complete-streets",
       "referring_urls": [
-        "https://www.cabq.gov/council/documents/councilor-district-2-documents/",
-        "https://www.cabq.gov/council/documents/councilor-district-2-documents/?b_start:int=0"
+        "https://www.cabq.gov/council/projects/current-projects/complete-streets"
       ],
       "discovery_path": [
-        "https://www.cabq.gov/bikes/biking-in-abq",
-        "https://www.cabq.gov/sitemap",
         "https://www.cabq.gov/council/projects/current-projects/complete-streets",
-        "https://www.cabq.gov/council/documents/councilor-district-2-documents/",
-        "https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreetsLegislationPacket.pdf/view"
+        "https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreetsLegislationPacket.pdf"
       ],
-      "discovery_method": "authored relevant link",
+      "discovery_method": "retained source descendant crawl",
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/transportation/transportation-plans.md",
+      "description": "Collects the original ordinance proposal, policy explanation, implementation examples, national design references, public-meeting information, and background used during Albuquerque's 2014 Complete Streets legislative process.",
+      "description_word_count": 24,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 24-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transportation-plans.md",
+      "implementation_locations": [
+        "content/transportation/transportation-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "tmp/resource-descendant-archive/cabq-complete-streets-legislation-packet-2014.pdf",
       "discovered_at": "2026-08-04T14:15:57.9985483Z",
-      "updated_at": "2026-08-04T14:15:57.9985483Z"
+      "updated_at": "2026-08-20T19:22:38.7936178Z"
     },
     {
       "id": "src-8b4321c048d0438d",
@@ -151579,7 +151857,7 @@
     },
     {
       "id": "src-8f7e044375532900",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreets_ABQCityCouncilLtr_12015.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -151619,11 +151897,11 @@
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "editorial relevance review complete",
+      "exclusion_reason": "Stakeholder letter supporting the Complete Streets ordinance is relevant legislative correspondence but adds little policy or technical information beyond the retained ordinance, legislation packet, and Council presentation.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:16:02.4482948Z",
-      "updated_at": "2026-08-04T14:16:02.4482948Z"
+      "updated_at": "2026-08-20T19:14:50.1479516Z"
     },
     {
       "id": "src-8f825309430db0ed",
@@ -153526,51 +153804,50 @@
     },
     {
       "id": "src-912bc14c869a79b0",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/O27_CompleteStreet_FloorSub_Final_as_amended.pdf/view",
-      "direct_file_url": null,
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/current-projects/complete-streets",
+      "direct_file_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/O27_CompleteStreet_FloorSub_Final_as_amended.pdf",
+      "r2_url": "https://files.abqinfo.com/transportation/transportation-plans/cabq-complete-streets-ordinance-o-14-27-2015.pdf",
+      "r2_key": "transportation/transportation-plans/cabq-complete-streets-ordinance-o-14-27-2015.pdf",
+      "r2_etag": "b7556391e66cd7bc7335241da1463612",
+      "r2_last_modified": "08/20/2026 13:18:38",
       "agency": "City of Albuquerque",
-      "title": "Final Complete Streets legislation",
-      "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/?b_start:int=40",
+      "title": "Original Albuquerque Complete Streets Ordinance",
+      "date": "2015",
+      "file_type": "PDF",
+      "size_bytes": 126155,
+      "checksum_sha256": "48ba20445951050b1fdeb19bc7e2e94a6e9086f5a57c96fdb0ed7d7178bedf8b",
+      "parent_url": "https://www.cabq.gov/council/projects/current-projects/complete-streets",
       "referring_urls": [
-        "https://www.cabq.gov/council/documents/councilor-district-2-documents/?b_start:int=40"
+        "https://www.cabq.gov/council/projects/current-projects/complete-streets"
       ],
       "discovery_path": [
-        "https://www.cabq.gov/bikes/biking-in-abq",
-        "https://www.cabq.gov/sitemap",
         "https://www.cabq.gov/council/projects/current-projects/complete-streets",
-        "https://www.cabq.gov/council/documents/councilor-district-2-documents/",
-        "https://www.cabq.gov/council/documents/councilor-district-2-documents/?b_start:int=40",
-        "https://www.cabq.gov/council/documents/councilor-district-2-documents/O27_CompleteStreet_FloorSub_Final_as_amended.pdf/view"
+        "https://www.cabq.gov/council/documents/councilor-district-2-documents/O27_CompleteStreet_FloorSub_Final_as_amended.pdf"
       ],
-      "discovery_method": "authored document link",
+      "discovery_method": "retained source descendant crawl",
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/transportation/transportation-plans.md",
+      "description": "Preserves the final amended Council text establishing Albuquerque's original Complete Streets requirements, multimodal design standards, project exceptions, implementation procedures, reporting duties, and connections to capital improvements and transportation funding.",
+      "description_word_count": 29,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 29-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transportation-plans.md",
+      "implementation_locations": [
+        "content/transportation/transportation-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "tmp/resource-descendant-archive/cabq-complete-streets-original-ordinance-o-14-27-2015.pdf",
       "discovered_at": "2026-08-04T14:16:02.5306547Z",
-      "updated_at": "2026-08-04T14:16:02.5306547Z"
+      "updated_at": "2026-08-20T19:22:38.7354480Z"
     },
     {
       "id": "src-912c7bc4e5bd5a67",
@@ -159737,6 +160014,49 @@
       "cited_predecessors": [],
       "cited_successors": [],
       "provenance_status": "authoritative government source recorded"
+    },
+    {
+      "id": "src-983158d1fc1bbd78",
+      "status": "excluded",
+      "source_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/walktoberflyer_kennedyms",
+      "direct_file_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/walktoberflyer_kennedyms",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "Albuquerque Public Schools",
+      "title": "Walktober Event Flyer — kennedyms",
+      "date": "2023",
+      "file_type": "PDF",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/",
+      "referring_urls": [
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/"
+      ],
+      "discovery_path": [
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/",
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/walktoberflyer_kennedyms"
+      ],
+      "discovery_method": "official document-folder lineage scan",
+      "crawl_depth": 3,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": null,
+      "description": null,
+      "description_word_count": 0,
+      "processing_notes": [
+        "Added through official document-folder lineage scan from the recorded authoritative source graph."
+      ],
+      "implementation_location": null,
+      "implementation_locations": [],
+      "cross_listing_approved": false,
+      "validation_status": "editorial relevance review complete",
+      "exclusion_reason": "School-specific Walktober event flyer is short-lived promotional material with little durable planning or policy information; excluded after the official Vision Zero document-folder review.",
+      "local_path": null,
+      "discovered_at": "2026-08-20T19:10:19.2378538Z",
+      "updated_at": "2026-08-20T19:14:40.3579378Z"
     },
     {
       "id": "src-98428407917044ff",
@@ -178971,6 +179291,49 @@
       "updated_at": "2026-08-04T14:15:57.8151808Z"
     },
     {
+      "id": "src-ad7d95dc211903b2",
+      "status": "excluded",
+      "source_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/walktoberflyer_sanantonitoes",
+      "direct_file_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/walktoberflyer_sanantonitoes",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "Albuquerque Public Schools",
+      "title": "Walktober Event Flyer — sanantonitoes",
+      "date": "2023",
+      "file_type": "PDF",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/",
+      "referring_urls": [
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/"
+      ],
+      "discovery_path": [
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/",
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/walktoberflyer_sanantonitoes"
+      ],
+      "discovery_method": "official document-folder lineage scan",
+      "crawl_depth": 3,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": null,
+      "description": null,
+      "description_word_count": 0,
+      "processing_notes": [
+        "Added through official document-folder lineage scan from the recorded authoritative source graph."
+      ],
+      "implementation_location": null,
+      "implementation_locations": [],
+      "cross_listing_approved": false,
+      "validation_status": "editorial relevance review complete",
+      "exclusion_reason": "School-specific Walktober event flyer is short-lived promotional material with little durable planning or policy information; excluded after the official Vision Zero document-folder review.",
+      "local_path": null,
+      "discovered_at": "2026-08-20T19:10:23.1151507Z",
+      "updated_at": "2026-08-20T19:14:41.9961919Z"
+    },
+    {
       "id": "src-ad8a200858a679d2",
       "status": "pending review",
       "source_url": "https://www.dot.nm.gov/multimodal-planning-and-programs/highway-operations-program/construction-civil-rights-bureau/disadvantaged-business-enterprise-program-dbe",
@@ -193707,7 +194070,7 @@
     },
     {
       "id": "src-bc780b95996af003",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/LetterofSupportforCABQCompleteStreets.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -193747,11 +194110,11 @@
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "editorial and lineage review complete",
+      "exclusion_reason": "Stakeholder support letter adds little policy or technical information beyond the retained ordinance, legislation packet, and Council presentation.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:16:02.5000445Z",
-      "updated_at": "2026-08-04T14:16:02.5000445Z"
+      "updated_at": "2026-08-20T19:16:37.4592788Z"
     },
     {
       "id": "src-bc82e56b683f43bb",
@@ -195536,6 +195899,53 @@
       "updated_at": "2026-08-14T21:37:05.3395838Z"
     },
     {
+      "id": "src-bdf172ce679fc7ad",
+      "status": "validated",
+      "source_url": "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+      "direct_file_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/task-force-meeting-notes/meeting-3-action-plan",
+      "r2_url": "https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-3-2022.pdf",
+      "r2_key": "transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-3-2022.pdf",
+      "r2_etag": "7acab53644ac769d97465c21f3e6b381",
+      "r2_last_modified": "08/20/2026 13:18:11",
+      "agency": "Albuquerque Public Schools",
+      "title": "APS Vision Zero Task Force Meeting 3 Notes",
+      "date": "2022-08-29",
+      "file_type": "PDF",
+      "size_bytes": 283326,
+      "checksum_sha256": "b632ac4042f6138f42b9cf6122575a68450d595992ce151ef6d9fd73b7cbf80f",
+      "parent_url": "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+      "referring_urls": [
+        "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources"
+      ],
+      "discovery_path": [
+        "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/task-force-meeting-notes/meeting-3-action-plan"
+      ],
+      "discovery_method": "retained source descendant crawl",
+      "crawl_depth": 2,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official APS source URL preserved through an exact Internet Archive replay",
+      "proposed_canonical_page": "content/transportation/bicycling/safety-crash-data.md",
+      "description": "Records the August 2022 review of the draft action plan, including goals, implementation measures, municipal partnerships, student engagement, data integrity, equity, infrastructure responsibilities, evaluation, and task-force feedback.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 27-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
+      ],
+      "implementation_location": "content/transportation/bicycling/safety-crash-data.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/safety-crash-data.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
+      "exclusion_reason": null,
+      "local_path": "tmp/resource-descendant-archive/aps-vision-zero-task-force-meeting-3-2022.pdf",
+      "discovered_at": "2026-08-20T19:10:11.3758474Z",
+      "updated_at": "2026-08-20T19:22:38.6447425Z"
+    },
+    {
       "id": "src-bdf2981b4899255b",
       "status": "pending review",
       "source_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/DOJFindingsandRecommendations.pdf/view",
@@ -196233,7 +196643,7 @@
     },
     {
       "id": "src-be8f4bed636a4047",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreetsLetterofSupportAPANM.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -196273,11 +196683,11 @@
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "editorial relevance review complete",
+      "exclusion_reason": "Stakeholder letter supporting the Complete Streets ordinance is relevant legislative correspondence but adds little policy or technical information beyond the retained ordinance, legislation packet, and Council presentation.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:16:02.4623585Z",
-      "updated_at": "2026-08-04T14:16:02.4623585Z"
+      "updated_at": "2026-08-20T19:14:53.4426488Z"
     },
     {
       "id": "src-be94b37839f82e41",
@@ -220946,7 +221356,7 @@
     },
     {
       "id": "src-d779aab19483f927",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/NMHWCLetterofSupportCompleteStreetsOrdinance01427.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -220986,11 +221396,11 @@
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "editorial and lineage review complete",
+      "exclusion_reason": "Stakeholder support letter adds little policy or technical information beyond the retained ordinance, legislation packet, and Council presentation.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:16:02.515661Z",
-      "updated_at": "2026-08-04T14:16:02.515661Z"
+      "updated_at": "2026-08-20T19:16:40.3360961Z"
     },
     {
       "id": "src-d78eadf4da1202b6",
@@ -222886,6 +223296,49 @@
       "local_path": null,
       "discovered_at": "2026-08-14T20:11:38.219511Z",
       "updated_at": "2026-08-14T20:11:38.219511Z"
+    },
+    {
+      "id": "src-d9131ef56edadd99",
+      "status": "excluded",
+      "source_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/walktoberflyer_polkms",
+      "direct_file_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/walktoberflyer_polkms",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "Albuquerque Public Schools",
+      "title": "Walktober Event Flyer — polkms",
+      "date": "2023",
+      "file_type": "PDF",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/",
+      "referring_urls": [
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/"
+      ],
+      "discovery_path": [
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/",
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/walktoberflyer_polkms"
+      ],
+      "discovery_method": "official document-folder lineage scan",
+      "crawl_depth": 3,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": null,
+      "description": null,
+      "description_word_count": 0,
+      "processing_notes": [
+        "Added through official document-folder lineage scan from the recorded authoritative source graph."
+      ],
+      "implementation_location": null,
+      "implementation_locations": [],
+      "cross_listing_approved": false,
+      "validation_status": "editorial relevance review complete",
+      "exclusion_reason": "School-specific Walktober event flyer is short-lived promotional material with little durable planning or policy information; excluded after the official Vision Zero document-folder review.",
+      "local_path": null,
+      "discovered_at": "2026-08-20T19:10:21.1670331Z",
+      "updated_at": "2026-08-20T19:14:43.5789207Z"
     },
     {
       "id": "src-d9239a8ed7e51e52",
@@ -225495,7 +225948,7 @@
     },
     {
       "id": "src-dbf42102a1f6ab24",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/O1427_CommitteeSub_CompleteStreets.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -225535,11 +225988,11 @@
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "editorial and lineage review complete",
+      "exclusion_reason": "Interim Complete Streets draft superseded by the retained final amended original ordinance and the enacted 2019 update.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:16:02.5186402Z",
-      "updated_at": "2026-08-04T14:16:02.5186402Z"
+      "updated_at": "2026-08-20T19:16:46.2451249Z"
     },
     {
       "id": "src-dbf519f143720361",
@@ -231076,7 +231529,7 @@
     },
     {
       "id": "src-e271c19776152b9e",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/2014PositionSupportingCompleteStreetsOrdinance.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -231116,11 +231569,11 @@
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "editorial and lineage review complete",
+      "exclusion_reason": "Stakeholder support letter adds little policy or technical information beyond the retained ordinance, legislation packet, and Council presentation.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:16:02.4217588Z",
-      "updated_at": "2026-08-04T14:16:02.4217588Z"
+      "updated_at": "2026-08-20T19:16:42.6136401Z"
     },
     {
       "id": "src-e27a856ac42ee322",
@@ -240626,6 +241079,53 @@
       "provenance_status": "authoritative government source recorded"
     },
     {
+      "id": "src-eb4b8c09b824edc9",
+      "status": "validated",
+      "source_url": "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+      "direct_file_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/superintendent-letter",
+      "r2_url": "https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-superintendent-letter-2022.pdf",
+      "r2_key": "transportation/bicycling/safety-crash-data/aps-vision-zero-superintendent-letter-2022.pdf",
+      "r2_etag": "b7c3e1c6e2b0f904480b7e505af1566d",
+      "r2_last_modified": "08/20/2026 13:17:43",
+      "agency": "Albuquerque Public Schools",
+      "title": "APS Vision Zero Superintendent Letter of Support",
+      "date": "2022",
+      "file_type": "PDF",
+      "size_bytes": 36021,
+      "checksum_sha256": "f6351e8c0ec35df9ffb2eaa2dee054fe954727d37c1020488e34d3bcf0344c30",
+      "parent_url": "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+      "referring_urls": [
+        "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources"
+      ],
+      "discovery_path": [
+        "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/superintendent-letter"
+      ],
+      "discovery_method": "retained source descendant crawl",
+      "crawl_depth": 2,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official APS source URL preserved through an exact Internet Archive replay",
+      "proposed_canonical_page": "content/transportation/bicycling/safety-crash-data.md",
+      "description": "Records the superintendent's formal support for APS Vision Zero for Youth and its coordinated approach to safer walking, bicycling, school transportation, traffic-safety education, and community awareness.",
+      "description_word_count": 26,
+      "processing_notes": [
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 26-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
+      ],
+      "implementation_location": "content/transportation/bicycling/safety-crash-data.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/safety-crash-data.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
+      "exclusion_reason": null,
+      "local_path": "tmp/resource-descendant-archive/aps-vision-zero-superintendent-letter-2022.pdf",
+      "discovered_at": "2026-08-20T19:10:04.7920879Z",
+      "updated_at": "2026-08-20T19:22:38.5275001Z"
+    },
+    {
       "id": "src-eb52f29134f13a96",
       "status": "pending review",
       "source_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/DRC-Figure8and21.pdf",
@@ -249469,51 +249969,50 @@
     },
     {
       "id": "src-f4de3930a6e04830",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreetsOrdinancePresentation.pdf/view",
-      "direct_file_url": null,
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/current-projects/complete-streets",
+      "direct_file_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreetsOrdinancePresentation.pdf",
+      "r2_url": "https://files.abqinfo.com/transportation/transportation-plans/cabq-complete-streets-ordinance-presentation-2014.pdf",
+      "r2_key": "transportation/transportation-plans/cabq-complete-streets-ordinance-presentation-2014.pdf",
+      "r2_etag": "49257a8da7dbaaab09ba6de2eed69696",
+      "r2_last_modified": "08/20/2026 13:19:05",
       "agency": "City of Albuquerque",
-      "title": "Complete Streets Presentation",
-      "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/?b_start:int=20",
+      "title": "Albuquerque Complete Streets Ordinance Presentation",
+      "date": "2014",
+      "file_type": "PDF",
+      "size_bytes": 5031873,
+      "checksum_sha256": "278c75aa308d5ef6ee9e11f6f4df05ce89e955dbf22e194383890daf549ef381",
+      "parent_url": "https://www.cabq.gov/council/projects/current-projects/complete-streets",
       "referring_urls": [
-        "https://www.cabq.gov/council/documents/councilor-district-2-documents/?b_start:int=20"
+        "https://www.cabq.gov/council/projects/current-projects/complete-streets"
       ],
       "discovery_path": [
-        "https://www.cabq.gov/bikes/biking-in-abq",
-        "https://www.cabq.gov/sitemap",
         "https://www.cabq.gov/council/projects/current-projects/complete-streets",
-        "https://www.cabq.gov/council/documents/councilor-district-2-documents/",
-        "https://www.cabq.gov/council/documents/councilor-district-2-documents/?b_start:int=20",
-        "https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreetsOrdinancePresentation.pdf/view"
+        "https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreetsOrdinancePresentation.pdf"
       ],
-      "discovery_method": "authored document link",
+      "discovery_method": "retained source descendant crawl",
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/transportation/transportation-plans.md",
+      "description": "Explains the original ordinance's multimodal level-of-service approach, street-design elements, Albuquerque project examples, national practices, project review, exceptions, performance measures, and anticipated benefits for safety and redevelopment.",
+      "description_word_count": 26,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 26-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transportation-plans.md",
+      "implementation_locations": [
+        "content/transportation/transportation-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "tmp/resource-descendant-archive/cabq-complete-streets-ordinance-presentation-2014.pdf",
       "discovered_at": "2026-08-04T14:16:02.474378Z",
-      "updated_at": "2026-08-04T14:16:02.474378Z"
+      "updated_at": "2026-08-20T19:22:38.8224136Z"
     },
     {
       "id": "src-f4f723a01c9ca6c3",
@@ -251140,6 +251639,49 @@
       "updated_at": "2026-08-14T18:12:31.645028Z"
     },
     {
+      "id": "src-f6d67da41bbf96a6",
+      "status": "duplicate",
+      "source_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/mapping-session-report",
+      "direct_file_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/mapping-session-report",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "Albuquerque Public Schools",
+      "title": "APS Vision Zero Mapping Session Report",
+      "date": "2022",
+      "file_type": "PDF",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+      "referring_urls": [
+        "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources"
+      ],
+      "discovery_path": [
+        "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/mapping-session-report"
+      ],
+      "discovery_method": "rendered-browser authored resource link",
+      "crawl_depth": 2,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": null,
+      "description": null,
+      "description_word_count": 0,
+      "processing_notes": [
+        "Added through rendered-browser authored resource link from the recorded authoritative source graph."
+      ],
+      "implementation_location": null,
+      "implementation_locations": [],
+      "cross_listing_approved": false,
+      "validation_status": "editorial and lineage review complete",
+      "exclusion_reason": "The standalone APS Mapping Session Report is reproduced in full as the appendix to the archived 64-page APS Vision Zero for Youth Action Plan; retained as an official direct link without storing a duplicate copy.",
+      "local_path": null,
+      "discovered_at": "2026-08-20T19:10:00.3207037Z",
+      "updated_at": "2026-08-20T19:16:29.2874261Z"
+    },
+    {
       "id": "src-f6eeb70f0d02621d",
       "status": "pending review",
       "source_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents/MileHighLittleLeagueSummary.pdf/view",
@@ -252160,7 +252702,7 @@
     },
     {
       "id": "src-f8188bd262397e5b",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/MiABQCompleteStreetsLetterofSupport.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -252200,11 +252742,11 @@
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "editorial relevance review complete",
+      "exclusion_reason": "Stakeholder letter supporting the Complete Streets ordinance is relevant legislative correspondence but adds little policy or technical information beyond the retained ordinance, legislation packet, and Council presentation.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:16:02.5085598Z",
-      "updated_at": "2026-08-04T14:16:02.5085598Z"
+      "updated_at": "2026-08-20T19:14:58.2378866Z"
     },
     {
       "id": "src-f81c048564bd8a31",
@@ -254795,6 +255337,49 @@
       "local_path": null,
       "discovered_at": "2026-08-14T23:33:00.1928878Z",
       "updated_at": "2026-08-14T23:33:00.1928878Z"
+    },
+    {
+      "id": "src-fa13a7c381c01978",
+      "status": "excluded",
+      "source_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/walktoberflyer_jamesmonroems",
+      "direct_file_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/walktoberflyer_jamesmonroems",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "Albuquerque Public Schools",
+      "title": "Walktober Event Flyer — jamesmonroems",
+      "date": "2023",
+      "file_type": "PDF",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/",
+      "referring_urls": [
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/"
+      ],
+      "discovery_path": [
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/",
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/walktober-event-fliers/walktoberflyer_jamesmonroems"
+      ],
+      "discovery_method": "official document-folder lineage scan",
+      "crawl_depth": 3,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": null,
+      "description": null,
+      "description_word_count": 0,
+      "processing_notes": [
+        "Added through official document-folder lineage scan from the recorded authoritative source graph."
+      ],
+      "implementation_location": null,
+      "implementation_locations": [],
+      "cross_listing_approved": false,
+      "validation_status": "editorial relevance review complete",
+      "exclusion_reason": "School-specific Walktober event flyer is short-lived promotional material with little durable planning or policy information; excluded after the official Vision Zero document-folder review.",
+      "local_path": null,
+      "discovered_at": "2026-08-20T19:10:17.3113777Z",
+      "updated_at": "2026-08-20T19:14:45.0880385Z"
     },
     {
       "id": "src-fa237b8555747999",
@@ -257942,6 +258527,53 @@
       "cited_predecessors": [],
       "cited_successors": [],
       "provenance_status": "authoritative government source recorded"
+    },
+    {
+      "id": "src-fda465463c32bcee",
+      "status": "validated",
+      "source_url": "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+      "direct_file_url": "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/task-force-meeting-notes/meeting-2-notes-curriculum",
+      "r2_url": "https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-2-2022.pdf",
+      "r2_key": "transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-2-2022.pdf",
+      "r2_etag": "2d2c4c8431410053e06118301418dc0f",
+      "r2_last_modified": "08/20/2026 13:18:02",
+      "agency": "Albuquerque Public Schools",
+      "title": "APS Vision Zero Task Force Meeting 2 Notes",
+      "date": "2022-05-20",
+      "file_type": "PDF",
+      "size_bytes": 232479,
+      "checksum_sha256": "92e15f1ccdc31e6811ea8784301c64206a2d8498f873e32d754516867489bc31",
+      "parent_url": "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+      "referring_urls": [
+        "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources"
+      ],
+      "discovery_path": [
+        "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+        "https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/task-force-meeting-notes/meeting-2-notes-curriculum"
+      ],
+      "discovery_method": "retained source descendant crawl",
+      "crawl_depth": 2,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official APS source URL preserved through an exact Internet Archive replay",
+      "proposed_canonical_page": "content/transportation/bicycling/safety-crash-data.md",
+      "description": "Documents the May 2022 curriculum session, updated pilot schools, student-engagement methods, Safe Routes to School coordination, curriculum structure, teacher feedback, community partnerships, and action-plan development.",
+      "description_word_count": 25,
+      "processing_notes": [
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 25-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
+      ],
+      "implementation_location": "content/transportation/bicycling/safety-crash-data.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/safety-crash-data.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
+      "exclusion_reason": null,
+      "local_path": "tmp/resource-descendant-archive/aps-vision-zero-task-force-meeting-2-2022.pdf",
+      "discovered_at": "2026-08-20T19:10:09.1971692Z",
+      "updated_at": "2026-08-20T19:22:38.6128506Z"
     },
     {
       "id": "src-fda500533dcdd678",

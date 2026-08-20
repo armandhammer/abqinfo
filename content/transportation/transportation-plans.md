@@ -112,9 +112,29 @@ Regional plans, long-range plans, and other system-level transportation planning
 
 ### Current and Other Citywide Records
 
-- [Albuquerque Complete Streets Ordinance](https://www.cabq.gov/council/projects/current-projects/complete-streets)
+- [Albuquerque Complete Streets Ordinance Update (2019 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-complete-streets-ordinance-o-19-64-2019.pdf)
 
-  Documents Albuquerque's enacted Complete Streets requirements, the 2019 equity-focused update, implementation history, adopted legislation, and supporting material governing how City streets serve pedestrians, bicyclists, transit riders, and motorists.
+  Enacts Albuquerque's 2019 Complete Streets update, strengthening equity, connectivity, multimodal safety, best-practice design, project evaluation, interdepartmental coordination, public reporting, and implementation requirements across City roadway projects.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/o-64enacted-6.pdf) · [Official City Project Page](https://www.cabq.gov/council/projects/current-projects/complete-streets)
+
+- [Original Albuquerque Complete Streets Ordinance (2015 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-complete-streets-ordinance-o-14-27-2015.pdf)
+
+  Preserves the final amended Council text establishing Albuquerque's original Complete Streets requirements, multimodal design standards, project exceptions, implementation procedures, reporting duties, and connections to capital improvements and transportation funding.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/councilor-district-2-documents/O27_CompleteStreet_FloorSub_Final_as_amended.pdf) · [Official City Project Page](https://www.cabq.gov/council/projects/current-projects/complete-streets)
+
+- [Albuquerque Complete Streets Legislation Packet (2014 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-complete-streets-legislation-packet-2014.pdf)
+
+  Collects the original ordinance proposal, policy explanation, implementation examples, national design references, public-meeting information, and background used during Albuquerque's 2014 Complete Streets legislative process.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreetsLegislationPacket.pdf)
+
+- [Albuquerque Complete Streets Ordinance Presentation (2014 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-complete-streets-ordinance-presentation-2014.pdf)
+
+  Explains the original ordinance's multimodal level-of-service approach, street-design elements, Albuquerque project examples, national practices, project review, exceptions, performance measures, and anticipated benefits for safety and redevelopment.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreetsOrdinancePresentation.pdf)
 
 - [Downtown Walkability Analysis (2014 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-downtown-walkability-analysis-2014.pdf)
 

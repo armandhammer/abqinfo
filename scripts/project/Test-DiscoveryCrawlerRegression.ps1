@@ -69,10 +69,13 @@ foreach ($crawler in @('Invoke-UnknownDocumentDiscovery.ps1','Invoke-ScopedSecti
 $unknownSource = Get-Content -Raw -LiteralPath (Join-Path $PSScriptRoot 'Invoke-UnknownDocumentDiscovery.ps1')
 Assert-Regression ($unknownSource -match 'relevant-page ancestor traversal') 'The general crawler does not ascend from relevant discovered child pages.'
 Assert-Regression ($unknownSource -match 'pageInDiscoveryContext') 'Generic ancestor pages cannot expose collection links in discovery context.'
+Assert-Regression ($unknownSource -match 'isExplicitDiscoveryRoot') 'Explicitly retained source pages are not treated as document-discovery roots.'
+Assert-Regression ($unknownSource -match 'requires rendered-browser review') 'Access-controlled pages can still be silently treated as exhausted.'
+Assert-Regression ($relevantPattern -match 'vision\.zero') 'Vision Zero and school-safety source pages are absent from the shared relevance policy.'
 
 $result = [ordered]@{
   generated_at = (Get-Date).ToUniversalTime().ToString('o')
-  regression = 'DMD Project Maps discovery and outbound-host capture'
+  regression = 'document-graph discovery, retained-source expansion, and outbound-host capture'
   passed = ($errors.Count -eq 0)
   checks = $checkCount
   errors = @($errors)
