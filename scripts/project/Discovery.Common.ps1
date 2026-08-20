@@ -1,7 +1,7 @@
 Set-StrictMode -Version Latest
 
 function Get-DefaultDiscoveryRelevantPattern {
-  return '(?i)(bike|bicycl|trail|active.transport|pedestrian|complete.street|transport|traffic|road|street|corridor|mobility|facility.plan|projects?|maps?|gis|geospatial|data(?:set)?|dashboards?|apps?|applications?)'
+  return '(?i)(bike|bicycl|trail|active.transport|pedestrian|complete.street|vision.zero|safe.routes|school.transport|student.travel|transport|traffic|road|street|corridor|mobility|facility.plan|projects?|maps?|gis|geospatial|data(?:set)?|dashboards?|apps?|applications?)'
 }
 
 function Get-BicycleHistoryRelevantPattern {

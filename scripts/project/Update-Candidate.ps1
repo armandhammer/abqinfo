@@ -11,9 +11,10 @@ $ErrorActionPreference = 'Stop'
 function Read-InventoryWithRetry([string]$Path) {
   for ($attempt = 1; $attempt -le 8; $attempt++) {
     try { return Get-Content -Raw -LiteralPath $Path | ConvertFrom-Json }
-    catch [System.IO.IOException] {
-      if ($attempt -eq 8) { throw }
-      Start-Sleep -Milliseconds (50 * $attempt)
+    catch {
+      $retryable = $_.Exception -is [System.IO.IOException] -or $_.Exception -is [System.UnauthorizedAccessException] -or $_.Exception.InnerException -is [System.IO.IOException] -or $_.Exception.InnerException -is [System.UnauthorizedAccessException]
+      if (-not $retryable -or $attempt -eq 8) { throw }
+      Start-Sleep -Milliseconds (100 * $attempt)
     }
   }
 }
@@ -28,10 +29,11 @@ function Write-InventoryWithRetry($Value, [string]$Path) {
       [IO.File]::Move($temporaryPath, $fullPath, $true)
       return
     }
-    catch [System.IO.IOException] {
+    catch {
+      $retryable = $_.Exception -is [System.IO.IOException] -or $_.Exception -is [System.UnauthorizedAccessException] -or $_.Exception.InnerException -is [System.IO.IOException] -or $_.Exception.InnerException -is [System.UnauthorizedAccessException]
       if (Test-Path -LiteralPath $temporaryPath) { Remove-Item -LiteralPath $temporaryPath -Force }
-      if ($attempt -eq 8) { throw }
-      Start-Sleep -Milliseconds (50 * $attempt)
+      if (-not $retryable -or $attempt -eq 8) { throw }
+      Start-Sleep -Milliseconds (100 * $attempt)
     }
   }
 }

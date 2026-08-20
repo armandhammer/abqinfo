@@ -1,14 +1,14 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-20T18:08:33.5229228Z
+Generated: 2026-08-20T19:22:57.4230627Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 5769 candidates and 279 R2 objects totaling 3308921339 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 5783 candidates and 291 R2 objects totaling 3332752067 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 4087 |
+| pending review | 4074 |
 | approved for addition | 0 |
 | downloading | 0 |
 | downloaded | 0 |
@@ -16,10 +16,10 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 24 |
-| validated | 402 |
-| excluded | 723 |
-| duplicate | 449 |
-| superseded | 17 |
+| validated | 414 |
+| excluded | 735 |
+| duplicate | 450 |
+| superseded | 19 |
 | blocked | 0 |
 | requires human review | 67 |
 
@@ -27,6 +27,14 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 
 | Title | Agency | Date | File type | Exact bytes | Canonical page | Source | Archived copy |
 | --- | --- | --- | --- | ---: | --- | --- | --- |
+| APS Vision Zero Board Policy Discussion Brief | Albuquerque Public Schools | 2022-06-13 | PDF | 557710 | content/transportation/bicycling/safety-crash-data.md | [source](https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources) | [R2](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-board-policy-discussion-brief-2022.pdf) |
+| APS Vision Zero for Youth Action Plan | Albuquerque Public Schools | 2022-23 | PDF | 10613098 | content/transportation/bicycling/safety-crash-data.md | [source](https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources) | [R2](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-for-youth-action-plan-2022-23.pdf) |
+| APS Vision Zero Superintendent Letter of Support | Albuquerque Public Schools | 2022 | PDF | 36021 | content/transportation/bicycling/safety-crash-data.md | [source](https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources) | [R2](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-superintendent-letter-2022.pdf) |
+| APS Vision Zero Task Force Meeting 1 Notes | Albuquerque Public Schools | 2021-09-21 | PDF | 222778 | content/transportation/bicycling/safety-crash-data.md | [source](https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources) | [R2](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-1-2021.pdf) |
+| APS Vision Zero Task Force Meeting 2 Notes | Albuquerque Public Schools | 2022-05-20 | PDF | 232479 | content/transportation/bicycling/safety-crash-data.md | [source](https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources) | [R2](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-2-2022.pdf) |
+| APS Vision Zero Task Force Meeting 3 Notes | Albuquerque Public Schools | 2022-08-29 | PDF | 283326 | content/transportation/bicycling/safety-crash-data.md | [source](https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources) | [R2](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-3-2022.pdf) |
+| APS Vision Zero Task Force Meeting 4 Notes | Albuquerque Public Schools | 2023-02-09 | PDF | 547777 | content/transportation/bicycling/safety-crash-data.md | [source](https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources) | [R2](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-4-2023.pdf) |
+| APS Vision Zero Task Force Meeting 5 Notes | Albuquerque Public Schools | 2023-05-18 | PDF | 203290 | content/transportation/bicycling/safety-crash-data.md | [source](https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources) | [R2](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-5-2023.pdf) |
 | Bridge Boulevard Corridor Redevelopment Plan | Bernalillo County | 2013-08 | PDF | 26623198 | content/development-land-use/projects.md | [source](https://www.bernco.gov/public-works/blog/2021/04/16/bridge-boulevard-corridor-redevelopment-plan) | [R2](https://files.abqinfo.com/development-land-use/plans/bernco-bridge-boulevard-corridor-redevelopment-plan-2013.pdf) |
 | Complete Bernalillo County Technical Standards | Bernalillo County | 2023-03-28 | PDF | 9161556 | content/transportation/design-references.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards/) | [R2](https://files.abqinfo.com/transportation/design-references/bernco-technical-standards-2023-03-28.pdf) |
 | Green Stormwater Infrastructure / Low Impact Development Standards | Bernalillo County | 2023 | PDF | 5981048 | content/transportation/design-references.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards) | [R2](https://files.abqinfo.com/transportation/design-references/bernco-green-stormwater-infrastructure-low-impact-development-standards-2023.pdf) |
@@ -64,6 +72,9 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Albuquerque Bikeways and Trails Map | City of Albuquerque | 2026 | PDF | 12779139 | content/transportation/bicycling/bike-maps.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/bike-map) | [R2](https://files.abqinfo.com/transportation/bicycling/maps-guides/cabq-albuquerque-bikeways-trails-map-2026.pdf) |
 | Albuquerque Bird Watching Guide and Map | City of Albuquerque | 2019 | PDF | 762618 | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/parksandrecreation/open-space/facilities-map) | [R2](https://files.abqinfo.com/public-works/parks-recreation/cabq-albuquerque-bird-watching-guide-map-2019.pdf) |
 | Albuquerque Climate Action Plan | City of Albuquerque | 2021 | PDF | 18213197 | content/city-data/climate-environment.md | [source](https://www.cabq.gov/sustainability/climate-action-plan) | [R2](https://files.abqinfo.com/city-data/climate-environment/cabq-climate-action-plan-2021.pdf) |
+| Albuquerque Complete Streets Legislation Packet | City of Albuquerque | 2014 | PDF | 5086786 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/council/projects/current-projects/complete-streets) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-complete-streets-legislation-packet-2014.pdf) |
+| Albuquerque Complete Streets Ordinance Presentation | City of Albuquerque | 2014 | PDF | 5031873 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/council/projects/current-projects/complete-streets) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-complete-streets-ordinance-presentation-2014.pdf) |
+| Albuquerque Complete Streets Ordinance Update | City of Albuquerque | 2019-09-11 | PDF | 889435 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/council/projects/current-projects/complete-streets) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-complete-streets-ordinance-o-19-64-2019.pdf) |
 | Albuquerque MS4 Bacterial TMDL Loading Report, Water Year 2015 | City of Albuquerque | 2016-03-06 | PDF | 470947 | content/public-works/stormwater-drainage.md | [source](https://www.cabq.gov/municipaldevelopment/documents/bacterial-tmdl-report-wy-2015-030616.pdf/view) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-bacterial-tmdl-loading-report-wy2015.pdf) |
 | Albuquerque Streetcar Cost and Ridership Analysis | City of Albuquerque | 2008-01-16 | PDF | 74197 | content/transportation/transit/abq-ride.md | [source](https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force) | [R2](https://files.abqinfo.com/transportation/transit/history/cabq-albuquerque-streetcar-cost-ridership-analysis-2008.pdf) |
 | Albuquerque Streetcar Evaluation Appendices | City of Albuquerque | 2008-07-17 | PDF | 2614446 | content/transportation/transit/abq-ride.md | [source](https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force) | [R2](https://files.abqinfo.com/transportation/transit/history/cabq-albuquerque-streetcar-evaluation-appendices-2008.pdf) |
@@ -146,6 +157,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Official source: 2015 Bikeways and Trails Facilities Plan Appendix A: Proposed Facilities | City of Albuquerque | 2015 | Web page or live service | 188887 | content/transportation/bicycling/bike-plans.md | [source](https://documents.cabq.gov/planning/UDD/UDD-BikewaysTrails-AppendixA.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/cabq-2015-bikeways-trails-plan-appendix-a-proposed-facilities.pdf) |
 | Old Albuquerque High School Metropolitan Redevelopment Plan | City of Albuquerque | 1984-11 | PDF | 1114034 | content/development-land-use/redevelopment-plans.md | [source](https://www.cabq.gov/mra/redevelopment-areas) | [R2](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-old-albuquerque-high-school-mra-plan-1984.pdf) |
 | Open Space Visitor Center and Bosque Trail Access Map | City of Albuquerque | undated | PDF | 15860848 | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/parksandrecreation/open-space/facilities-map) | [R2](https://files.abqinfo.com/public-works/parks-recreation/cabq-open-space-visitor-center-bosque-trail-map.pdf) |
+| Original Albuquerque Complete Streets Ordinance | City of Albuquerque | 2015 | PDF | 126155 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/council/projects/current-projects/complete-streets) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-complete-streets-ordinance-o-14-27-2015.pdf) |
 | Pajarito Arroyo Resource Management Plan | City of Albuquerque | 1990 | PDF | 5532372 | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/planning/plans-publications) | [R2](https://files.abqinfo.com/public-works/parks-recreation/arroyo-plans/cabq-pajarito-arroyo-resource-management-plan-1990.pdf) |
 | Paseo de la Mesa Recreation Trail Map | City of Albuquerque | 2018-02 | PDF | 338589 | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/parksandrecreation/open-space/lands/paseo-de-la-mesa-trail) | [R2](https://files.abqinfo.com/public-works/parks-recreation/cabq-paseo-de-la-mesa-recreation-trail-map-2018.pdf) |
 | Paseo de las Montañas Trail Guide | City of Albuquerque | 2020 | PDF | 6097596 | content/transportation/bicycling/bike-maps.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-maps/cabq-paseo-de-las-montanas-trail-guide-2020.pdf) |
@@ -456,7 +468,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | lin-0f021e7e96fbb11d | duplicate | Active Transportation Plan | Duplicate lineage reference for 'Active Transportation Plan'; canonical queue record is lin-e27e6016124e917f. |
 | lin-1006d95511526e9c | duplicate | 2024 Plan | The extracted phrase '2024 Plan' refers to the parent 2024 Bikeway and Trail Facilities Plan, which is already archived and validated. |
 | lin-102edd32ab600241 | duplicate | 2024 Plan | The extracted phrase '2024 Plan' refers to the parent 2024 Bikeway and Trail Facilities Plan, which is already archived and validated. |
-| lin-10657a569b1bc1fa | duplicate | Youth Action Plan | The referenced action-plan work is represented by the maintained APS Vision Zero for Youth Initiative record src-1ef9b5996dd6c8ad; no separate final action-plan file was published on the reviewed APS graph. |
+| lin-10657a569b1bc1fa | duplicate | Youth Action Plan | Recovered as the authoritative APS Vision Zero for Youth Action Plan; canonical archived record is src-72d91318a9fc0168. |
 | lin-10c1598acf9db566 | duplicate | Development Process Manual | Referenced document is already represented by canonical inventory record src-51d5f0b8ea9585e1. |
 | lin-12ddd59a03241d0d | duplicate | 2024 Plan | The extracted phrase '2024 Plan' refers to the parent 2024 Bikeway and Trail Facilities Plan, which is already archived and validated. |
 | lin-12e75a12bce629c4 | duplicate | The 2024 Plan | The extracted phrase 'The 2024 Plan' refers to the parent 2024 Bikeway and Trail Facilities Plan, which is already archived and validated. |
@@ -882,6 +894,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-f57d18c0f4a7b682 | duplicate | Zuni Road Study — Part I | Content-link alias for canonical archive candidate src-e7442b03ed708de4. |
 | src-f5c6598b3486e1b9 | duplicate | Albuquerque Bird Watching Guide and Map | Content-link alias for canonical archive candidate src-95cb84bc3ca2e1ea. |
 | src-f6cf256b0499a688 | duplicate | City of Albuquerque Construction Site Manual | Content-link alias for canonical archive candidate src-93e0f5fd370f5709. |
+| src-f6d67da41bbf96a6 | duplicate | APS Vision Zero Mapping Session Report | The standalone APS Mapping Session Report is reproduced in full as the appendix to the archived 64-page APS Vision Zero for Youth Action Plan; retained as an official direct link without storing a duplicate copy. |
 | src-f990a9e710910785 | duplicate | Montaño Intermodal Center Project Application | Content-link alias for canonical archive candidate src-8578ac9aeef57f31. |
 | src-f9d3721dab62fbc8 | duplicate | Open Space Visitor Center and Bosque Trail Access Map | Content-link alias for canonical archive candidate src-b5bd08f7dca5d8e5. |
 | src-f9e880263589da4b | duplicate | Planned Growth Strategy Briefing | Content-link alias for canonical archive candidate src-44e2abd1db14165c. |
@@ -1053,6 +1066,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-3f4c150758ccb540 | excluded | 4 records | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-40050957db5dd4f7 | excluded | Public Comments | Brief workshop-comment notes add little durable context beyond the public-input findings preserved in the comprehensive draft master plan. |
 | src-41b66759a505dd9a | excluded | A-Z | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
+| src-41db265a58175373 | excluded | Walktober Event Flyer — trumanms | School-specific Walktober event flyer is short-lived promotional material with little durable planning or policy information; excluded after the official Vision Zero document-folder review. |
 | src-41ea54a36cf5d4f8 | excluded | 5 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-42e962313b6f79aa | excluded | Business Support | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-43230c425fa1e18f | excluded | 5 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
@@ -1174,6 +1188,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-8083a1e1e6af0e39 | excluded | Send us an online request | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-81969a88a98e2c88 | excluded | 2 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-81cdbd30eac61a78 | excluded | View.ashx | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
+| src-81fec81c380435d0 | excluded | Complete Streets Letter of Support3 | Stakeholder letter supporting the Complete Streets ordinance is relevant legislative correspondence but adds little policy or technical information beyond the retained ordinance, legislation packet, and Council presentation. |
 | src-82ebb420b2138754 | excluded | 6 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-83ff85f3170333a3 | excluded | 13 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-840affac67fe2462 | excluded | Print this information out and take it with you! | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
@@ -1189,6 +1204,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-8c36008d05f4709d | excluded | Vision Zero for Youth Initiative | A 2023 conference-style StoryMap substantially overlaps the maintained APS Vision Zero for Youth hub and is not separately curated. |
 | src-8df1bd7f822ac15f | excluded | View.ashx | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-8e9e206cca213a48 | excluded | 2012 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
+| src-8f7e044375532900 | excluded | Complete Streets Letter of Support7 | Stakeholder letter supporting the Complete Streets ordinance is relevant legislative correspondence but adds little policy or technical information beyond the retained ordinance, legislation packet, and Council presentation. |
 | src-8fcb9689f797ac8d | excluded | 6 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-90e52bf902d7dcc7 | excluded | 16 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-9117b880c624ff3d | excluded | 2 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
@@ -1203,6 +1219,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-96a76b3a72b8e9ed | excluded | 2 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-96ab603c7fa62506 | excluded | Read More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-979374701a51c422 | excluded | 3 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
+| src-983158d1fc1bbd78 | excluded | Walktober Event Flyer — kennedyms | School-specific Walktober event flyer is short-lived promotional material with little durable planning or policy information; excluded after the official Vision Zero document-folder review. |
 | src-989f6890cd1a9c72 | excluded | Read More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-98d17489c0198419 | excluded | 10 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-98eaf9ac9461a6a4 | excluded | Send us an online request | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
@@ -1235,6 +1252,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-ac4f718f0e47a2ca | excluded | Read More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-ace6b6b785d07373 | excluded | 18 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-ad08a6d3d6cd4072 | excluded | 22 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
+| src-ad7d95dc211903b2 | excluded | Walktober Event Flyer — sanantonitoes | School-specific Walktober event flyer is short-lived promotional material with little durable planning or policy information; excluded after the official Vision Zero document-folder review. |
 | src-ae2972e63422de1c | excluded | 130 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-af4745f1d3f5e9ce | excluded | 25 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-afa3bb7390cc963a | excluded | Print this information out and take it with you! | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
@@ -1265,9 +1283,11 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-bb0c02ff576a1426 | excluded | 5 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-bb98584dd4b73d0e | excluded | Next 20 items | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-bbfeb6f3cbbff4c1 | excluded | 96 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
+| src-bc780b95996af003 | excluded | Complete Streets Letter of Support4 | Stakeholder support letter adds little policy or technical information beyond the retained ordinance, legislation packet, and Council presentation. |
 | src-bcad435a32aaecee | excluded | Read More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-bd2700c0390fa8c8 | excluded | Scenic Byways ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ Redirect to NM Tourism Department | Redirects to a tourism resource and does not provide Albuquerque transportation planning, project, operations, or public-data content. |
 | src-bdea68831b153d2a | excluded | Read More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
+| src-be8f4bed636a4047 | excluded | Complete Streets Letter of Support1 | Stakeholder letter supporting the Complete Streets ordinance is relevant legislative correspondence but adds little policy or technical information beyond the retained ordinance, legislation packet, and Council presentation. |
 | src-bf2deb7de42f4999 | excluded | 14 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-bf3eade8dd78723c | excluded | Map Menu | Internal-style map-request information sheet does not contain a substantive public map, plan, dataset, project record, or other durable ABQInfo content. |
 | src-bf648174ccbbe7fc | excluded | Albuquerque Community Safety Department overview | User-approved relevance cleanup: general department overview with no distinctive data or planning resource. |
@@ -1315,12 +1335,14 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-d4bc7b068c29d097 | excluded | Procurement and Contract Services | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-d5c8999efd9096a4 | excluded | Contact Information | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-d6b9ca4219ceaecc | excluded | Programs | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
+| src-d779aab19483f927 | excluded | Complete Streets Letter of Support5 | Stakeholder support letter adds little policy or technical information beyond the retained ordinance, legislation packet, and Council presentation. |
 | src-d7b3d2df797bdef6 | excluded | Results | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-d7d92a99173efa18 | excluded | Read More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-d819e25098119664 | excluded | T/LPA Documents and Information | User-approved relevance cleanup: local-agency project administration material is too specialized for the curated public site. |
 | src-d86ad3edea03eb21 | excluded | Learn More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-d89657a555e858f8 | excluded | 14 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-d8d6cd2669581c35 | excluded | Per Section 14-16-6-4(U) Appeals in the Integrated Development Ordinance and the City Charter, the City Council is the ultimate decision maker on appeals of land use decisions. Appeal of Land Use Decisions Per Section 14-16-6-4(U) Appeals in the Integrated Development Ordinance and the City Charter, the City Council is the ultimate decision maker on appeals of land use decisions. | The land-use appeals URL currently returns a sign-in page and provides no usable public information for ABQInfo visitors. |
+| src-d9131ef56edadd99 | excluded | Walktober Event Flyer — polkms | School-specific Walktober event flyer is short-lived promotional material with little durable planning or policy information; excluded after the official Vision Zero document-folder review. |
 | src-d986c5766ba7c6c5 | excluded | 6 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-dad3dbddaf3e3e7e | excluded | Next 20 items | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-dae6e50cae3e2105 | excluded | Read More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
@@ -1336,6 +1358,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-df60b9111b89d996 | excluded | Learn More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-e0fa297da5fff7b9 | excluded | 9 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-e1381f56ecb77b3c | excluded | Turning Movement Counts | User-approved timeliness cleanup: older turning counts and pandemic-era guidance are not reliably current. |
+| src-e271c19776152b9e | excluded | Complete Streets Letter of Support2 | Stakeholder support letter adds little policy or technical information beyond the retained ordinance, legislation packet, and Council presentation. |
 | src-e2a015eda45653f8 | excluded | 3 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-e2eac49c39bb1640 | excluded | Learn More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-e40670c08924f42b | excluded | View.ashx | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
@@ -1374,12 +1397,14 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-f62ebc68c725461d | excluded | Print this information out and take it with you! | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-f7da8a27fca1f65c | excluded | 9 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-f817bb29e32f3203 | excluded | Print this information out and take it with you! | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
+| src-f8188bd262397e5b | excluded | Complete Streets Letter of Support6 | Stakeholder letter supporting the Complete Streets ordinance is relevant legislative correspondence but adds little policy or technical information beyond the retained ordinance, legislation packet, and Council presentation. |
 | src-f85703ccd682f75a | excluded | Export .ics file | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-f8614b43122b3de3 | excluded | Metropolitan Transportation Board Complete Streets Resolution R-11-09 | User-approved quality and timeliness cleanup: old resolution adds little value beside current adopted plans and design guidance. |
 | src-f8a30720ede66ac7 | excluded | Albuquerque maintains nearly 300 parks throughout the city, offering people a great way to connect with nature, relax, play, learn, and come together. Parks Albuquerque maintains nearly 300 parks throughout the city, offering people a great way to connect with nature, relax, play, learn, and come together. | Generic parks directory is broad facility navigation; the retained Parks Featured Projects and urban-forestry sources provide the substantive planning and capital content. |
 | src-f8b73d7feeaa0f82 | excluded | case_13-_p.2_the_a.r.t._project__excerpt_from_participatory_gov._jan._2018_ | Short participatory-governance excerpt is secondary commentary and adds little unique project evidence. |
 | src-f9aaee82279f4a82 | excluded | 4 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-f9b6520cda5b78fe | excluded | 142 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
+| src-fa13a7c381c01978 | excluded | Walktober Event Flyer — jamesmonroems | School-specific Walktober event flyer is short-lived promotional material with little durable planning or policy information; excluded after the official Vision Zero document-folder review. |
 | src-fb0ab637d6fa13ab | excluded | Print this information out and take it with you! | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-fb6a0c5e8aa4bd72 | excluded | 3 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-fb71242d60bdc683 | excluded | Executive Staff | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
@@ -1690,6 +1715,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-352fd3c9bbc6b8f6 | superseded | Intersection Concepts for Central to Lomas Segment | Standalone intersection concepts substantially repeat alternatives preserved in the more comprehensive draft master plan and approved construction plans. |
 | src-48a9681a27727130 | superseded | Draft North Fourth Street Rank III Corridor Plan | The authoritative final 2010 North Fourth Street Corridor Plan is already archived and implemented; this larger draft is retained in local staging for research but is not duplicated in production R2 or site content. |
 | src-5edcfaeac63d3a4b | superseded | ABQReport | Legacy Council-hosted copy superseded by the maintained Planning Department copy at documents.cabq.gov. |
+| src-6705ec42d3bb6d2e | superseded | Complete Streets Draft Legislation2 | Interim Complete Streets draft superseded by the retained final amended original ordinance and the enacted 2019 update. |
 | src-6da20b965df52490 | superseded | MRCOG bicycle and pedestrian planning maps | Broad bicycle-and-pedestrian landing page was replaced by the specific planning-maps, counts, analysis, and safety sources. |
 | src-7b6c76481a7f00c4 | superseded | Potential Road Diets in the Albuquerque Region | 2021 road-diet application has been superseded by MRMPO's maintained 2023 Road Diet Candidates Map source. |
 | src-927546cc176a8954 | superseded | Lead and Coal Public Meeting Material (December 18, 2024) | Superseded project-stage meeting material; the final March 2025 study and 2022 road safety audit provide the durable planning record selected for ABQInfo. |
@@ -1700,4 +1726,5 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-cf6fa82eb6524971 | superseded | MRMPO Long Range Bikeway System | 2021 long-range bikeway application has been superseded by the adopted 2026 map and maintained active-transportation portfolio. |
 | src-d293be9f3e48051c | superseded | On-Street Bicycle Facility Concepts | Standalone bicycle-option sheets substantially repeat alternatives preserved in the more comprehensive draft master plan. |
 | src-d76388765a077a16 | superseded | YouÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢re Invited: Public Meeting for Tramway Blvd Operations & Safety Study \| A300342 | Expired single public-meeting notice; the maintained NM 556/Tramway Boulevard study page is already implemented. |
+| src-dbf42102a1f6ab24 | superseded | Updated Complete Streets Committee Sub1 | Interim Complete Streets draft superseded by the retained final amended original ordinance and the enacted 2019 update. |
 | src-f1ed70e90becf3cc | superseded | Part 1 | Split Part 1 edition is redundant with the complete 120-page October 2013 PDF archived in this batch. |
