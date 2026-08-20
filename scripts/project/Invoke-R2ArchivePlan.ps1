@@ -51,7 +51,11 @@ foreach ($item in @($plan.items)) {
   if ($PSCmdlet.ShouldProcess($publicUrl, "Upload and verify $($file.Name)")) {
     $currentInventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
     $currentCandidate = @($currentInventory.candidates | Where-Object id -eq $item.id)[0]
-    if ($currentCandidate.r2_etag) {
+    # A regenerated plan may reconcile an object that reached R2 immediately
+    # before a local inventory-write interruption. Verify that object publicly
+    # instead of attempting an unsafe overwrite merely because its ETag has not
+    # yet been copied back into the candidate record.
+    if ($currentCandidate.r2_etag -or ($item.PSObject.Properties['already_present'] -and [bool]$item.already_present)) {
       & "$PSScriptRoot/Test-R2PublicObject.ps1" -SourcePath $file.FullName -PublicUrl $publicUrl | Out-Null
       & "$PSScriptRoot/Update-Candidate.ps1" -Id $item.id -Set @{
         validation_status = 'local size and SHA-256 passed; existing R2 object verified by public byte-identical download'

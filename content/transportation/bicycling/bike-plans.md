@@ -64,6 +64,26 @@ City bicycle planning documents and master plans, including current and previous
 
   Presents the existing and proposed bikeway network supporting Albuquerque's adopted 2024 plan, linking interactive maps with project strategies, prioritization, and the plan's broader recommendations.
 
+## Bernalillo County Trail Planning
+
+- [Alameda Drain and Trail Master Plan (2016 archived PDF)](https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-alameda-drain-trail-master-plan-2016.pdf)
+
+  Guides improvements along the nine-mile Alameda Drain corridor from I-40 to north Second Street, including trail alignment, crossings, surfacing, accessibility, amenities, landscaping, water quality, operations, and phased implementation.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/07/Alameda-Drain-And-Trail-MP-Book_reduced-8_17_16.pdf) · [Current County Transportation Plans](https://www.bernco.gov/public-works/transportation-planning/transportation-plans)
+
+- [El Camino Real National Historic Trail Development Concept Plan Executive Summary (2022 archived PDF)](https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-el-camino-real-trail-development-concept-plan-2022.pdf)
+
+  Summarizes a proposed multiuse trail along the historic route and San Jose Drain, including alignment, priority projects, heritage sites, amenities, neighborhood loops, crossings, visual identity, and planning-level costs.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2022/07/El-Camino-Real-Trail-DCP_Exec-Summary-sm.pdf) · [Current County Transportation Plans](https://www.bernco.gov/public-works/transportation-planning/transportation-plans)
+
+- [Isleta Drain and Trail Master Plan (2022 archived PDF)](https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-isleta-drain-trail-master-plan-2022.pdf)
+
+  Preserves Bernalillo County's adopted plan for a South Valley community trail along the Isleta Drain, documenting public priorities, trail alignment, crossings, connections, amenities, environmental conditions, design concepts, and implementation.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2023/11/IDTP_FINAL_sm2.pdf) · [Current County Transportation Plans](https://www.bernco.gov/public-works/transportation-planning/transportation-plans)
+
 ## Statewide Bicycle Planning
 
 - [New Mexico Prioritized Statewide Bicycle Network Plan (2018 archived PDF)](https://files.abqinfo.com/transportation/bicycling/bike-plans/nmdot-prioritized-statewide-bicycle-network-plan-2018.pdf)

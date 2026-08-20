@@ -26,10 +26,21 @@ function Get-StableId([string]$Value) {
 
 function Write-AtomicJson($Value, [string]$Path) {
   $fullPath = [IO.Path]::GetFullPath($Path)
-  $temporaryPath = "$fullPath.tmp-$PID"
   $json = $Value | ConvertTo-Json -Depth 12
-  [IO.File]::WriteAllText($temporaryPath, $json, [Text.UTF8Encoding]::new($false))
-  [IO.File]::Move($temporaryPath, $fullPath, $true)
+  for ($attempt = 1; $attempt -le 8; $attempt++) {
+    $temporaryPath = "$fullPath.tmp-$PID-$attempt"
+    try {
+      [IO.File]::WriteAllText($temporaryPath, $json, [Text.UTF8Encoding]::new($false))
+      [IO.File]::Move($temporaryPath, $fullPath, $true)
+      return
+    }
+    catch {
+      $retryable = $_.Exception -is [System.IO.IOException] -or $_.Exception -is [System.UnauthorizedAccessException] -or $_.Exception.InnerException -is [System.IO.IOException] -or $_.Exception.InnerException -is [System.UnauthorizedAccessException]
+      if (Test-Path -LiteralPath $temporaryPath) { Remove-Item -LiteralPath $temporaryPath -Force }
+      if (-not $retryable -or $attempt -eq 8) { throw }
+      Start-Sleep -Milliseconds (100 * $attempt)
+    }
+  }
 }
 
 $inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json

@@ -71,6 +71,7 @@ Assert-Regression ($unknownSource -match 'relevant-page ancestor traversal') 'Th
 Assert-Regression ($unknownSource -match 'pageInDiscoveryContext') 'Generic ancestor pages cannot expose collection links in discovery context.'
 Assert-Regression ($unknownSource -match 'isExplicitDiscoveryRoot') 'Explicitly retained source pages are not treated as document-discovery roots.'
 Assert-Regression ($unknownSource -match 'requires rendered-browser review') 'Access-controlled pages can still be silently treated as exhausted.'
+Assert-Regression ($unknownSource -match '-not \$isDiscoveryAncestor -or \$linkContext -match \$RelevantPattern') 'Generic ancestor pages can enqueue unrelated global collection navigation.'
 Assert-Regression ($relevantPattern -match 'vision\.zero') 'Vision Zero and school-safety source pages are absent from the shared relevance policy.'
 
 $result = [ordered]@{

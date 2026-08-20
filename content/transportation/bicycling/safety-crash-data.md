@@ -52,6 +52,20 @@ Bicycle safety statistics and crash data.
 
   Collects historical Albuquerque metropolitan crash and safety reports, including Bernalillo County pedestrian and bicycle analysis covering crash severity, locations, timing, people involved, and reported contributing factors.
 
+## County Safety Planning
+
+- [Bernalillo County Pedestrian–Bicyclist Safety Action Plan (2025 archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/bernco-pedestrian-bicyclist-safety-action-plan-2025.pdf)
+
+  Updates the County's pedestrian and bicyclist safety strategy using public engagement, equity and transportation-insecurity measures, facility inventories, crash analysis, a high-fatal-and-injury network, policy recommendations, countermeasures, and ranked priority projects.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2026/02/PBSAP_Final_2026-No_Appendix.pdf) · [Current County Transportation Plans](https://www.bernco.gov/public-works/transportation-planning/transportation-plans)
+
+- [Bernalillo County Pedestrian–Bicyclist Safety Action Plan Appendix (2025 archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/bernco-pedestrian-bicyclist-safety-action-plan-appendix-2025.pdf)
+
+  Provides the safety plan's supporting inventories, engagement records, crash and equity analysis, evaluation methodology, community-area findings, detailed priority-project tables, maps, and technical documentation.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2026/02/PBSAP_Final_2026-AppendixOnly.pdf) · [Current County Transportation Plans](https://www.bernco.gov/public-works/transportation-planning/transportation-plans)
+
 ## State Safety Plans and Crash Records
 
 - [NMDOT Highway Safety Improvement Program](https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/highway-safety-improvement-program/)

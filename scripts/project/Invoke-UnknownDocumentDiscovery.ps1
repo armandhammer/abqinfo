@@ -322,7 +322,8 @@ while ($frontier.Count -and $pages.Count -lt $MaxPages) {
       $pageInDiscoveryContext = $currentPageRelevant -or $isDiscoveryAncestor -or $isExplicitDiscoveryRoot
       if ($pageInDiscoveryContext) {
         $collectionLinks = @(Get-Links ([string]$response.Content) $finalUri | Where-Object {
-          "$($_.anchor_text) $(([uri]$_.url).AbsolutePath)" -match $collectionPattern
+          $linkContext = "$($_.anchor_text) $(([uri]$_.url).AbsolutePath)"
+          $linkContext -match $collectionPattern -and (-not $isDiscoveryAncestor -or $linkContext -match $RelevantPattern)
         })
         $links = @($links + $collectionLinks | Sort-Object url -Unique)
       }
