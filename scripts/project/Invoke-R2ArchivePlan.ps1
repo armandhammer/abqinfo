@@ -55,7 +55,7 @@ foreach ($item in @($plan.items)) {
       & "$PSScriptRoot/Test-R2PublicObject.ps1" -SourcePath $file.FullName -PublicUrl $publicUrl | Out-Null
       & "$PSScriptRoot/Update-Candidate.ps1" -Id $item.id -Set @{
         validation_status = 'local size and SHA-256 passed; existing R2 object verified by public byte-identical download'
-        processing_notes = @($item.processing_notes) + @('Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.')
+        processing_notes = @($item.processing_notes) + @('Original source file uploaded without modification; public R2 download matched exact size and SHA-256.')
       } -InventoryPath $InventoryPath | Out-Null
     } else {
       $uploadOutput = @(& "$PSScriptRoot/../upload-r2-document.ps1" -SourcePath $file.FullName -ObjectKey $item.r2_key -MaxObjectBytes ([int64]$plan.maximum_object_bytes) -MaxProjectedStorageBytes ([int64]$plan.maximum_projected_r2_bytes))
@@ -66,7 +66,7 @@ foreach ($item in @($plan.items)) {
         r2_etag = ([string]$metadata.ETag).Trim('"')
         r2_last_modified = [string]$metadata.LastModified
         validation_status = 'local size and SHA-256 passed; R2 upload verified by HEAD'
-        processing_notes = @($item.processing_notes) + @('Original authoritative file uploaded without modification; R2 object verified by HEAD.')
+        processing_notes = @($item.processing_notes) + @('Original source file uploaded without modification; R2 object verified by HEAD.')
       } -InventoryPath $InventoryPath | Out-Null
     }
   }

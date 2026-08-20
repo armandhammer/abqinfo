@@ -18,7 +18,7 @@ Parks and recreation facilities and programs.
 
   The parks and open space element of the adopted Albuquerque/Bernalillo County Comprehensive Plan provides policy direction for park access, recreation, trail connections, conservation, stewardship, and an integrated open-space network.
 
-- [Bernalillo County Open Space Holdings](https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/Open_Space/MapServer)
+- [Bernalillo County Open Space Holdings](https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fpdsgismaps.bernco.gov%2Fserver%2Frest%2Fservices%2FBERNCO%2FOpen_Space%2FMapServer&source=sd) <small>[ArcGIS Data](https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/Open_Space/MapServer)</small>
 
   This live Bernalillo County GIS service maps county real-estate holdings, including open space, parks and recreation facilities, public-safety facilities, and other county properties. It is maintained as data rather than a static downloadable document.
 
@@ -33,6 +33,24 @@ Parks and recreation facilities and programs.
   Sets a comprehensive vision for the Zoo, Aquarium, Botanic Garden, and Tingley Beach, covering visitor experience, animals, circulation, parking, utilities, sustainability, operations, capacity, facilities, and phased capital improvements.
 
   [Official City BioPark page](https://www.cabq.gov/artsculture/biopark/about-the-biopark) · [Official City PDF](https://documents.cabq.gov/planning/UDD/BioParkMasterPlan.pdf)
+
+## Arroyo and Open Space Planning History
+
+- [Facility Plan for Arroyos (1986)](https://files.abqinfo.com/public-works/parks-recreation/arroyo-plans/cabq-facility-plan-for-arroyos-1986.pdf)
+
+  Establishes Albuquerque's citywide framework for multiple use of arroyos and floodplains, coordinating drainage, trails, recreation, open space, environmental protection, and compatible development. [Official City Plan Library](https://www.cabq.gov/planning/plans-publications) · [Official City PDF](https://onbase.cabq.gov/PublicAccess/api/Document/12246817/)
+
+- [Amole Arroyo Resource Management Plan (1991)](https://files.abqinfo.com/public-works/parks-recreation/arroyo-plans/cabq-amole-arroyo-resource-management-plan-1991.pdf)
+
+  Sets policies and design standards for the Amole Arroyo, including a conceptual recreation network, drainage management, open-space protection, trail development, and compatible adjacent development. [Official City Plan Library](https://www.cabq.gov/planning/plans-publications) · [Official City PDF](https://onbase.cabq.gov/PublicAccess/api/Document/12246762/)
+
+- [Bear Canyon Arroyo Resource Management Plan (1991)](https://files.abqinfo.com/public-works/parks-recreation/arroyo-plans/cabq-bear-canyon-arroyo-resource-management-plan-1991.pdf)
+
+  Guides trails, recreation, drainage, open-space conservation, and adjacent development along Bear Canyon Arroyo and nearby tributaries through policies, regulations, design standards, and proposed projects. [Official City Plan Library](https://www.cabq.gov/planning/plans-publications) · [Official City PDF](https://onbase.cabq.gov/PublicAccess/api/Document/12246766/)
+
+- [Pajarito Arroyo Resource Management Plan (1990)](https://files.abqinfo.com/public-works/parks-recreation/arroyo-plans/cabq-pajarito-arroyo-resource-management-plan-1990.pdf)
+
+  Plans Pajarito Arroyo as a major open-space linkage, establishing a trail corridor, drainage-management approach, design criteria, development controls, recreation, conservation, and implementation policies. [Official City Plan Library](https://www.cabq.gov/planning/plans-publications) · [Official City PDF](https://onbase.cabq.gov/PublicAccess/api/Document/12246771/)
 
 ## Tijeras Arroyo Bio-Zone
 

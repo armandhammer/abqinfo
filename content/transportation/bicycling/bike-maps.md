@@ -30,7 +30,7 @@ Multi-use trails and paths in Albuquerque.
 
   Maps Albuquerque's existing and proposed bicycle infrastructure together, allowing users to explore planned connections and compare the future network with facilities already in place.
 
-- [Current Bikeways and Trails Data](https://dmdmaps.cabq.gov/serverext/rest/services/Bikeways/Bikeways_Trails_Public/MapServer/23)
+- [Current Bikeways and Trails Data](https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdmdmaps.cabq.gov%2Fserverext%2Frest%2Fservices%2FBikeways%2FBikeways_Trails_Public%2FMapServer&source=sd) <small>[ArcGIS Data](https://dmdmaps.cabq.gov/serverext/rest/services/Bikeways/Bikeways_Trails_Public/MapServer/23)</small>
 
   Publishes the City's actively maintained bikeway and trail data layer, distinguishing current infrastructure from the static network snapshot used to develop the 2024 facilities plan.
 
@@ -94,11 +94,11 @@ Multi-use trails and paths in Albuquerque.
 
 ## County GIS Data
 
-- [Bernalillo County Bikeways](https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/Bikeways/MapServer)
+- [Bernalillo County Bikeways](https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fpdsgismaps.bernco.gov%2Fserver%2Frest%2Fservices%2FBERNCO%2FBikeways%2FMapServer&source=sd) <small>[ArcGIS Data](https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/Bikeways/MapServer)</small>
 
   This live Bernalillo County GIS service maps county-maintained bikeways in unincorporated Bernalillo County. Use it as a current reference for facilities beyond Albuquerque city limits; the county publishes it as data, not a static map.
 
-- [Bernalillo County Multi-Use Trails](https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/Multi_Use_Trails/MapServer)
+- [Bernalillo County Multi-Use Trails](https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fpdsgismaps.bernco.gov%2Fserver%2Frest%2Fservices%2FBERNCO%2FMulti_Use_Trails%2FMapServer&source=sd) <small>[ArcGIS Data](https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/Multi_Use_Trails/MapServer)</small>
 
   This live Bernalillo County GIS service maps county-maintained multi-use trails in unincorporated areas. Motorized traffic is excluded from these trails, making the service a useful companion to local bicycle and pedestrian network maps.
 

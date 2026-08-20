@@ -101,7 +101,7 @@ Interactive maps of city data and infrastructure.
 
   Maps Albuquerque's existing and proposed bicycle infrastructure together, allowing users to explore planned connections and compare the future network with facilities already in place.
 
-- [Current Bikeways and Trails Data](https://dmdmaps.cabq.gov/serverext/rest/services/Bikeways/Bikeways_Trails_Public/MapServer/23)
+- [Current Bikeways and Trails Data](https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdmdmaps.cabq.gov%2Fserverext%2Frest%2Fservices%2FBikeways%2FBikeways_Trails_Public%2FMapServer&source=sd) <small>[ArcGIS Data](https://dmdmaps.cabq.gov/serverext/rest/services/Bikeways/Bikeways_Trails_Public/MapServer/23)</small>
 
   Publishes the City's actively maintained bikeway and trail data layer, distinguishing current infrastructure from the static network snapshot used to develop the 2024 facilities plan.
 
@@ -137,6 +137,6 @@ Interactive maps of city data and infrastructure.
 
 ## County Planning Map
 
-- [Bernalillo County Comprehensive Plan Development Areas](https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/ComprehensivePlanDevelopmentAreas/MapServer)
+- [Bernalillo County Comprehensive Plan Development Areas](https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fpdsgismaps.bernco.gov%2Fserver%2Frest%2Fservices%2FBERNCO%2FComprehensivePlanDevelopmentAreas%2FMapServer&source=sd) <small>[ArcGIS Data](https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/ComprehensivePlanDevelopmentAreas/MapServer)</small>
 
   This live Bernalillo County GIS service maps development areas in the unincorporated county covered by the adopted Albuquerque/Bernalillo County Comprehensive Plan. It supports interactive viewing and structured geographic data access through the county's public map service.

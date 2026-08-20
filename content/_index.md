@@ -6,7 +6,7 @@ bookToc: false
 
 # ABQ Info
 
-A data repository for Albuquerque transportation, housing, public works, and city budget information.
+A repository for Albuquerque transportation, development and land use, parks and public works, maps, and city data.
 
 This site organizes and makes available information about city projects, planning documents, and data that may be difficult to find on official city websites. The goal is to help citizens stay informed about developments in their community.
 

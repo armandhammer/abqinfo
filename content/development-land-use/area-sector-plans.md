@@ -8,6 +8,20 @@ Historical area, sector, and community plans that explain how Albuquerque neighb
 
   Maintains the City’s current reference index for adopted historical plans. ABQInfo preserves selected complete plans and adoption records whose context remains independently useful.
 
+## Central Avenue Station-Area Planning
+
+- [Central Avenue Station-Area Planning Draft — Introduction and Action Plan (September 2017)](https://files.abqinfo.com/development-land-use/area-sector-plans/central-route-66-station-area-draft-2017-01-introduction.pdf)
+
+  Introduces a City-branded draft framework connecting ART investment with corridor development, public-realm improvements, implementation priorities, and a potential amendment to the Route 66 Action Plan. This was published for comment and should not be read as an adopted plan.
+
+  Archived chapters: [Station Types](https://files.abqinfo.com/development-land-use/area-sector-plans/central-route-66-station-area-draft-2017-02-station-types.pdf) · [West Central](https://files.abqinfo.com/development-land-use/area-sector-plans/central-route-66-station-area-draft-2017-03-west-central.pdf) · [Old Town](https://files.abqinfo.com/development-land-use/area-sector-plans/central-route-66-station-area-draft-2017-04-old-town.pdf) · [Downtown](https://files.abqinfo.com/development-land-use/area-sector-plans/central-route-66-station-area-draft-2017-05-downtown.pdf) · [East Downtown](https://files.abqinfo.com/development-land-use/area-sector-plans/central-route-66-station-area-draft-2017-06-edo.pdf) · [University Area](https://files.abqinfo.com/development-land-use/area-sector-plans/central-route-66-station-area-draft-2017-07-university.pdf) · [Nob Hill](https://files.abqinfo.com/development-land-use/area-sector-plans/central-route-66-station-area-draft-2017-08-nob-hill.pdf) · [International District](https://files.abqinfo.com/development-land-use/area-sector-plans/central-route-66-station-area-draft-2017-09-international-district.pdf) · [Equity and Inclusion](https://files.abqinfo.com/development-land-use/area-sector-plans/central-route-66-station-area-draft-2017-10-equity-inclusion.pdf) · [Finance](https://files.abqinfo.com/development-land-use/area-sector-plans/central-route-66-station-area-draft-2017-11-finance.pdf) · [Infrastructure](https://files.abqinfo.com/development-land-use/area-sector-plans/central-route-66-station-area-draft-2017-12-infrastructure.pdf)
+
+- [Impact of Transit: Forecasting Future Value Along Central Avenue (2017)](https://files.abqinfo.com/development-land-use/area-sector-plans/central-avenue-impact-of-transit-forecasting-future-value-2017.pdf)
+
+  Models the fiscal and development value of Central Avenue transit investment, illustrating how land-use intensity and station-area growth could affect Albuquerque's public-sector return on infrastructure.
+
+The exact former City download locations for this draft collection have not been recovered. ABQInfo preserves the original City-branded files as historical records while their government-hosted provenance remains under review.
+
 ## Near Heights
 
 - [Near Heights Community Planning Area Assessment (2022; Accepted 2023 Archived PDF)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-near-heights-community-planning-area-assessment-2022.pdf)

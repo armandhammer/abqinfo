@@ -21,8 +21,15 @@ function Read-InventoryWithRetry([string]$Path) {
 function Write-InventoryWithRetry($Value, [string]$Path) {
   $json = $Value | ConvertTo-Json -Depth 12
   for ($attempt = 1; $attempt -le 8; $attempt++) {
-    try { $json | Set-Content -LiteralPath $Path -Encoding utf8; return }
+    $fullPath = [IO.Path]::GetFullPath($Path)
+    $temporaryPath = "$fullPath.tmp-$PID-$attempt"
+    try {
+      [IO.File]::WriteAllText($temporaryPath, $json, [Text.UTF8Encoding]::new($false))
+      [IO.File]::Move($temporaryPath, $fullPath, $true)
+      return
+    }
     catch [System.IO.IOException] {
+      if (Test-Path -LiteralPath $temporaryPath) { Remove-Item -LiteralPath $temporaryPath -Force }
       if ($attempt -eq 8) { throw }
       Start-Sleep -Milliseconds (50 * $attempt)
     }
@@ -31,7 +38,7 @@ function Write-InventoryWithRetry($Value, [string]$Path) {
 
 function Add-ProcessingNote($Candidate, [string]$Note) {
   $existing = @($Candidate.processing_notes) | ForEach-Object { ([string]$_).Trim() } | Where-Object { $_ }
-  $Candidate.processing_notes = (@($existing) + $Note) -join ' '
+  $Candidate.processing_notes = @(@($existing) + $Note | Sort-Object -Unique)
 }
 
 $inventory = Read-InventoryWithRetry $InventoryPath
@@ -75,6 +82,10 @@ try {
   Add-ProcessingNote $candidate "Downloaded exact size: $($file.Length) bytes ($humanSize); SHA-256 recorded."
   if ($file.Length -gt 100MB) { Add-ProcessingNote $candidate 'File exceeds the 100 MB production-upload approval threshold; no R2 upload is authorized.' }
   $candidate.updated_at = (Get-Date).ToUniversalTime().ToString('o')
+  $counts = [ordered]@{}
+  foreach ($status in $inventory.allowed_statuses) { $counts[$status] = @($inventory.candidates | Where-Object status -eq $status).Count }
+  $inventory.counts = [pscustomobject]$counts
+  $inventory.generated_at = (Get-Date).ToUniversalTime().ToString('o')
   Write-InventoryWithRetry $inventory $InventoryPath
   $candidate | ConvertTo-Json -Depth 8
 } catch {
