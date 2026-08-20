@@ -1,37 +1,49 @@
-# ABQInfo checkpoint — 2026-08-20
+# ABQInfo Checkpoint — 2026-08-20
 
-## Completed locally
+## Completed Locally
 
-- Updated the homepage summary to match the current categories.
-- Replaced REST-directory primary links with public map viewers for City speed limits, City roadway/camera/signal data, current bikeways, and four Bernalillo County GIS services; retained smaller technical data links.
-- Resolved all 30 previously parsed research PDFs to terminal states.
-- Archived 18 Central Avenue/ART historical PDFs unchanged, adding 288,242,124 bytes. All public R2 copies passed exact size and SHA-256 comparison. Because exact government download provenance is unresolved for these research-archive files, their inventory status remains `requires human review`.
-- Added the 2017 Central Avenue station-area draft collection to Development & Land Use and a curated ART planning/development/public-comment history to ABQ RIDE.
-- Reconciled 270 bikeway-plan lineage candidates to six unresolved high-value references by resolving 200 duplicates, excluding 60 extraction fragments or out-of-scope records, and validating four recovered City plans.
-- Recovered, archived, and validated the authoritative 1986 Facility Plan for Arroyos and the Amole, Bear Canyon, and Pajarito resource-management plans. The four files add 40,300,282 bytes and their public R2 copies are byte-identical to the City originals.
-- Current R2 total: 3,120,691,770 bytes across 263 objects (2.91 GiB).
-- Complete validation passed: 5,759 inventory records with zero errors, 39 Markdown files with zero style errors, all 14 crawler regression checks, and a 56-page Hugo build.
+- Repaired the NMDOT discovery gap caused by its JavaScript-only RealFile document widget. Added a deterministic widget-query script that exposes the official direct files and their metadata.
+- Recovered, archived unchanged, described, placed, and validated ten current NMDOT system plans and references: the prioritized statewide bicycle network plan and appendix; Complete Streets Strategic Plan; New Mexico 2045 Plan; Carbon Reduction Strategy; Resilience Improvement Plan; Strategic Highway Safety Plan; Vulnerable Road User Safety Assessment; Albuquerque-area Incident Management Plan; and Functional Classification Guide.
+- Recovered the complete six-volume 2015 New Mexico 2040 Plan from the U.S. Library of Congress after finding that its former project website had lost the publication. Archived the main plan and all five appendices and added them as a coherent historical-plan collection.
+- Reconciled all six previously unfinished transportation-plan lineage records. Two unresolved but valuable references remain explicitly marked `requires human review`: the Bike Gap Closure Project Profiles and Feasibility Study, and the San Antonio Arroyo Corridor Plan.
+- Added the current APS Vision Zero for Youth resource and reconciled its older lineage records without inventing a separate final action-plan document.
+- Reviewed and terminally excluded 329 obvious navigation, pagination, contact, and interface-only discovery records through a conservative resumable script.
+- Added deterministic scripts for RealFile discovery, atomic candidate creation, and conservative discovery-noise resolution. Generalized archive validation language from City-only to all authoritative government sources.
 
-## Authoritative inventory state
+## R2 Storage
 
-- Pending review: 4,430
-- Downloaded/parsed/placement assigned: 0
-- Validated: 385
-- Requires human review: 65
-- Excluded: 392
-- Duplicate: 446
+- Storage before this batch: 3,120,691,770 bytes across 263 objects.
+- Storage added: 188,229,569 bytes across 16 original files.
+- Current storage: 3,308,921,339 bytes across 279 objects (3.08 GiB).
+- Two files exceed 25 MiB and are documented in the batch reports. No file exceeds 100 MB, and the total remains well below the 8 GB approval threshold.
+- Every new public object passed exact byte-size and SHA-256 comparison with its preserved source file.
+
+## Validation
+
+- Master inventory: 5,769 candidates, zero schema or state errors.
+- Content style: 39 Markdown files, zero errors; the 2040 appendices are recorded as an intentional nested-resource exception.
+- Discovery crawler regression: all 14 checks passed.
+- Hugo: successful 56-page production build.
+- `git diff --check`: passed.
+
+## Authoritative Inventory State
+
+- Pending review: 4,087
+- Intermediate states: 0
+- Implemented: 24
+- Validated: 402
+- Excluded: 723
+- Duplicate: 449
 - Superseded: 17
-- Exact next item: `lin-10657a569b1bc1fa` — Youth Action Plan
+- Requires human review: 67
+- Exact next pending item: `src-0004d9e0318a9df5` — Geodetic Control
 
-The six unresolved lineage references are Youth Action Plan; Statewide Prioritized Bicycle Network Plan; Bike Gap Closure Program; 2040 Statewide Long-Range Multimodal Transportation Plan; San Antonio Arroyo Corridor Plan; and Recreation Trails Plan.
+## Resume Instruction
 
-## Resume instruction
-
-Inspect the exact next record with:
+Run:
 
 ```powershell
-$inventory = Get-Content -Raw project-state\master-inventory.json | ConvertFrom-Json
-$inventory.candidates | Where-Object id -eq $inventory.next_pending_id | ConvertTo-Json -Depth 8
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Get-Candidate.ps1 -Id src-0004d9e0318a9df5
 ```
 
-Continue authoritative-source recovery for the six remaining lineage references before moving to the broader pending queue. Preserve user-owned `backups/`. No Git staging, commit, push, pull request, merge, or deployment has been authorized or performed for this working update.
+Continue with a relevance review of the pending GIS/map records, then the next coherent high-value document group. Preserve user-owned `backups/`. No Git staging, commit, push, pull request, merge, or deployment has been performed for this local batch.

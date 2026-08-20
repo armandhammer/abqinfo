@@ -23,13 +23,25 @@ Reference drawings, engineering details, and technical guidance related to trans
 
   [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2023/05/BernCo-GSI-LID-Appendix-A.pdf) · [Check the current County standards page](https://www.bernco.gov/public-works/development-review/tech-standards)
 
-## NMDOT Quick Build Guide
+## NMDOT Design and Planning Guidance
 
 Reference guidance for quick-build transportation and multimodal safety projects.
 
 - [NMDOT Quick Build Guide](https://files.abqinfo.com/transportation/design-references/nmdot-quick-build-guide.pdf)
 
   Introduces quick-build project planning, design, materials, public engagement, installation, and evaluation practices for delivering lower-cost multimodal safety improvements on New Mexico streets.
+
+- [NMDOT Complete Streets Strategic Plan (2025 archived PDF)](https://files.abqinfo.com/transportation/design-references/nmdot-complete-streets-strategic-plan-2025.pdf)
+
+  Sets NMDOT's statewide framework for routinely planning, designing, funding, constructing, operating, and maintaining transportation facilities that safely serve people walking, bicycling, using transit, driving, and moving freight.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/00d5917e-f1ce-444c-899a-630cc65fdc15/2025_07_NMDOT%20Complete%20Streets%20Strategic%20Plan%20-%20Final.pdf) · [Official NMDOT planning page](https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/multimodal-planning-and-programs-bureau/)
+
+- [NMDOT Functional Classification System Guide (2021 archived PDF)](https://files.abqinfo.com/transportation/design-references/nmdot-functional-classification-system-guide-2021.pdf)
+
+  Explains New Mexico roadway functional classifications, why classifications matter, how boundaries are determined, agency responsibilities, review cycles, and procedures for requesting classification changes.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/82ca0d17-f2da-4325-8a0c-b18e8611c584/Functional%20Classification%20Guide.pdf) · [Official NMDOT planning page](https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/multimodal-planning-and-programs-bureau/)
 
 ## Toronto-Style "Tall Curbs" for Bike Lane Protection
 

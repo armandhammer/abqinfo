@@ -1,27 +1,30 @@
 {
-  "recorded_at": "2026-08-14T21:49:13.6197796Z",
-  "completed_item_range": "Contributed document review: 14 PDFs cataloged; 7 exact duplicates reconciled; 7 originals archived to R2 and added across Dashboards, Bicycle Projects, Safety & Crash Data, and Roadway Studies; all public objects byte-identical; Hugo and project validation passed",
-  "total_candidates": 4966,
+  "recorded_at": "2026-08-20T18:10:00Z",
+  "completed_item_range": "NMDOT system-plan and New Mexico 2040 lineage expansion: 16 authoritative files archived and validated; six unfinished lineage records reconciled; APS Vision Zero for Youth added; 329 low-information discovery records resolved",
+  "total_candidates": 5769,
   "counts_by_status": {
-    "pending review": 3930,
+    "pending review": 4087,
     "approved for addition": 0,
     "downloading": 0,
-    "downloaded": 32,
+    "downloaded": 0,
     "parsed": 0,
     "description drafted": 0,
     "placement assigned": 0,
-    "implemented": 43,
-    "validated": 363,
-    "excluded": 328,
-    "duplicate": 228,
-    "superseded": 15,
+    "implemented": 24,
+    "validated": 402,
+    "excluded": 723,
+    "duplicate": 449,
+    "superseded": 17,
     "blocked": 0,
-    "requires human review": 27
+    "requires human review": 67
   },
-  "remaining_nonterminal": 4005,
-  "next_pending_id": "lin-02aacc6738f9b174",
+  "remaining_nonterminal": 4087,
+  "next_pending_id": "src-0004d9e0318a9df5",
+  "r2_objects": 279,
+  "r2_total_bytes": 3308921339,
   "blockers": [
-    "Girard Streetscape annotated schematic is implemented and archived but remains requires human review because no authoritative direct URL for that exact annotated copy was recovered."
+    "The 2022/2023 Bike Gap Closure Project Profiles and Feasibility Study is clearly referenced but no retrievable current City file or exact former file URL has been recovered.",
+    "Sources conflict on whether the San Antonio Arroyo Corridor Plan was adopted or remained a draft, and no plan file or adoption record has been recovered."
   ],
-  "resume_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Get-Candidate.ps1 -Id $((Get-Content project-state/master-inventory.json -Raw | ConvertFrom-Json).next_pending_id)"
+  "resume_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Get-Candidate.ps1 -Id src-0004d9e0318a9df5"
 }

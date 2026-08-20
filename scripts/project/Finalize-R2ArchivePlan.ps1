@@ -27,7 +27,7 @@ foreach ($item in @($plan.items)) {
   $candidate.status = 'validated'
   $candidate.implementation_location = [string]$item.proposed_canonical_page
   $candidate.implementation_locations = @([string]$item.proposed_canonical_page)
-  $candidate.validation_status = 'passed: authoritative City provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated'
+  $candidate.validation_status = 'passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated'
   $candidate.processing_notes = @($candidate.processing_notes) + @('Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.') | Sort-Object -Unique
   $candidate.updated_at = (Get-Date).ToUniversalTime().ToString('o')
 }

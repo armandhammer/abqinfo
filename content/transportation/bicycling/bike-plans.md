@@ -64,6 +64,20 @@ City bicycle planning documents and master plans, including current and previous
 
   Presents the existing and proposed bikeway network supporting Albuquerque's adopted 2024 plan, linking interactive maps with project strategies, prioritization, and the plan's broader recommendations.
 
+## Statewide Bicycle Planning
+
+- [New Mexico Prioritized Statewide Bicycle Network Plan (2018 archived PDF)](https://files.abqinfo.com/transportation/bicycling/bike-plans/nmdot-prioritized-statewide-bicycle-network-plan-2018.pdf)
+
+  Identifies a prioritized bicycle network on NMDOT highways, classifies routes by investment tier, and provides facility guidance for incorporating safer bikeways during reconstruction and rehabilitation projects.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/ef2a1c82-e7cc-4d00-8177-4ef66d230e40/NMDOT%20Bike%20Plan.pdf) · [Official NMDOT planning page](https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/multimodal-planning-and-programs-bureau/)
+
+  - [Plan Appendix (2018 archived PDF)](https://files.abqinfo.com/transportation/bicycling/bike-plans/nmdot-prioritized-statewide-bicycle-network-plan-appendix-2018.pdf)
+
+    Documents the plan's highway tables, demand and equity analyses, statewide maps, public survey findings, and agency responses supporting the prioritized bicycle network.
+
+    [Official NMDOT appendix PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/1ea41627-12e9-4c61-b961-1c1a30c230cc/NMDOT%20Bike%20Plan%20-%20Appendix.pdf)
+
 ## Previous Bike Plans
 
 - [2015 Bikeways and Trails Facilities Plan — Final](https://files.abqinfo.com/transportation/bicycling/bike-plans/2015-bikeways-and-trails-facilities-plan-final.pdf)

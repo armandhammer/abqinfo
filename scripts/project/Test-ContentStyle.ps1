@@ -6,7 +6,8 @@ $ErrorActionPreference = 'Stop'
 
 $errors = [Collections.Generic.List[string]]::new()
 $allowedNestedResourcePages = @(
-  'transportation/bicycling/bike-plans.md'
+  'transportation/bicycling/bike-plans.md',
+  'transportation/transportation-plans.md'
 )
 $minorHeadingWords = @(
   'a', 'an', 'and', 'as', 'at', 'but', 'by', 'for', 'from', 'in', 'into',

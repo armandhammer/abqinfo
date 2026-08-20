@@ -58,6 +58,18 @@ Bicycle safety statistics and crash data.
 
   Brings together New Mexico's Strategic Highway Safety Plan, Vulnerable Road User Safety Assessment, annual safety targets, network-screening maps, road-safety-audit program, and crash-data request access for all public roads and travel modes.
 
+- [New Mexico Strategic Highway Safety Plan (2021 archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/nmdot-strategic-highway-safety-plan-2021.pdf)
+
+  Sets New Mexico's statewide roadway-safety priorities and Safe System strategies, covering impaired driving, speeding, intersections, lane departures, pedestrians, bicyclists, motorcyclists, occupant protection, data, and emergency response.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/d58f4542-6226-4ed9-8a00-28898df7e753/2021%20Strategic%20Highway%20Safety%20Plan.pdf) · [Official NMDOT safety-planning page](https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/highway-safety-improvement-program/)
+
+- [NMDOT Vulnerable Road User Safety Assessment (2023 archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/nmdot-vulnerable-road-user-safety-assessment-2023.pdf)
+
+  Analyzes pedestrian and bicyclist fatalities and serious injuries statewide, identifies high-risk areas and contributing factors, and recommends infrastructure, policy, data, education, enforcement, and funding actions.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/60436c67-d194-4531-8002-a83e75793aa7/2023%20NMDOT%20Vulnerable%20Road%20User%20Safety%20Assessment%20and%20Appendices.pdf) · [Official NMDOT safety-planning page](https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/highway-safety-improvement-program/)
+
 - [Statewide Traffic Records System](https://www.dot.nm.gov/traffic-records-system/)
 
   Connects users to New Mexico crash maps, annual and DWI reports, pedestrian and bicyclist dashboards, fatality reports, data dictionaries, and the request process for Albuquerque-specific crash records not already published by UNM.
@@ -65,3 +77,9 @@ Bicycle safety statistics and crash data.
 - [Walk Safe New Mexico: Pedestrian Safety Action Plan](https://storymaps.arcgis.com/stories/05d03cff46b14768979410bb069a5116)
 
   Presents NMDOT's adopted statewide pedestrian safety plan, five-year action framework, design and training resources, and implementation materials addressing infrastructure, agency processes, education, and proven pedestrian-safety countermeasures.
+
+## School Transportation Safety
+
+- [APS Vision Zero for Youth Initiative](https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative)
+
+  Collects Albuquerque Public Schools' youth traffic-safety curriculum, walking-school-bus guidance, student mapping and walk-survey work, task-force records, engagement resources, and district efforts to eliminate transportation deaths.
