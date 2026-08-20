@@ -200,6 +200,56 @@ Regional plans, long-range plans, and other system-level transportation planning
 
 ## Statewide Programming
 
+### Current Statewide Plans
+
+- [New Mexico 2045 Plan (2021 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-new-mexico-2045-plan-2021.pdf)
+
+  Establishes New Mexico's statewide long-range transportation direction through 2045, connecting safety, asset management, mobility, multimodal access, economic vitality, environmental stewardship, performance measures, and investment strategies.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/d07b6d94-5128-4312-85fc-e3b4e0b70280/New%20Mexico%202045%20Plan%203%20mb.pdf) · [Official NMDOT Planning Division](https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/)
+
+- [NMDOT Carbon Reduction Strategy (2023 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-carbon-reduction-strategy-2023.pdf)
+
+  Defines statewide strategies and eligible investments for reducing transportation emissions through cleaner vehicles, traffic operations, transit, active transportation, travel-demand management, freight efficiency, and resilient infrastructure.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/caf0bccb-977d-4b08-b9c7-30968bebc599/NMDOT%20Carbon%20Reduction%20Strategy_Approved.pdf) · [Official NMDOT Research and Climate Bureau](https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/research-and-climate-bureau/)
+
+- [NMDOT Resilience Improvement Plan (2024 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-resilience-improvement-plan-2024.pdf)
+
+  Assesses climate and natural-hazard risks to New Mexico transportation infrastructure, identifies vulnerable corridors and assets, and establishes resilience strategies, project priorities, and federal PROTECT funding eligibility.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/d1fbc5ef-897b-4452-81f1-fd2bae8f77c6/2024_0324_NMDOT%20RIP_Final.pdf) · [Official NMDOT Research and Climate Bureau](https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/research-and-climate-bureau/)
+
+### Historical Statewide Plan
+
+- [The New Mexico 2040 Plan (2015 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-new-mexico-2040-plan-2015.pdf)
+
+  Preserves NMDOT's previous statewide long-range multimodal plan, establishing goals, performance measures, strategies, and investment direction for safety, asset condition, mobility, access, stewardship, and accountability through 2040.
+
+  [Library of Congress PDF](https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/19/71/65/99/v1/2019716599v1/2019716599v1.pdf) · [Library of Congress catalog record](https://www.loc.gov/item/2019716599/) · [Current NMDOT Planning Division](https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/)
+
+  - [Appendix A: Existing Conditions and Trends](https://files.abqinfo.com/transportation/transportation-plans/nmdot-new-mexico-2040-plan-appendix-a-existing-conditions-2015.pdf)
+
+    Documents the demographic, economic, travel, freight, aviation, rail, transit, bicycle, pedestrian, highway, safety, environmental, and funding conditions used to develop the 2040 plan. [Library of Congress PDF](https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/19/71/65/99/v2/2019716599v2/2019716599v2.pdf)
+
+  - [Appendix B: Technical Analysis Report](https://files.abqinfo.com/transportation/transportation-plans/nmdot-new-mexico-2040-plan-appendix-b-technical-analysis-2015.pdf)
+
+    Presents the technical analysis supporting the 2040 plan's goals, performance measures, investment strategies, alternatives, health impacts, multimodal needs, and implementation recommendations. [Library of Congress PDF](https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/19/71/65/99/v3/2019716599v3/2019716599v3.pdf)
+
+  - [Appendix C: Scenario Analysis Report](https://files.abqinfo.com/transportation/transportation-plans/nmdot-new-mexico-2040-plan-appendix-c-scenario-analysis-2015.pdf)
+
+    Evaluates alternative transportation-investment scenarios, revenue assumptions, system conditions, performance outcomes, and policy tradeoffs that informed NMDOT's selected statewide 2040 strategy. [Library of Congress PDF](https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/19/71/65/99/v4/2019716599v4/2019716599v4.pdf)
+
+  - [Appendix D: Stakeholder and Public Involvement](https://files.abqinfo.com/transportation/transportation-plans/nmdot-new-mexico-2040-plan-appendix-d-public-involvement-2015.pdf)
+
+    Records the statewide stakeholder, committee, tribal, agency, and public-engagement process used to shape the plan, including Albuquerque meetings, survey findings, comments, and responses. [Library of Congress PDF](https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/19/71/65/99/v5/2019716599v5/2019716599v5.pdf)
+
+  - [Appendix E: Action Tracking](https://files.abqinfo.com/transportation/transportation-plans/nmdot-new-mexico-2040-plan-appendix-e-action-tracking-2015.pdf)
+
+    Compiles the 2040 plan's goals, strategies, actions, responsible NMDOT divisions and partner agencies, implementation timeframes, performance measures, and annual tracking responsibilities. [Library of Congress PDF](https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/19/71/65/99/v6/2019716599v6/2019716599v6.pdf)
+
+### Project Programming
+
 - [NMDOT Statewide Transportation Improvement Program](https://www.dot.nm.gov/infrastructure/statewide-transportation-improvement-program-stip/)
 
   NMDOT's maintained STIP page provides the current statewide program and amendment materials for federally funded transportation projects, including projects and funding actions affecting Albuquerque.

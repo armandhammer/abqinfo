@@ -70,6 +70,12 @@ Regional roadway operations, traffic analysis, incident management, and intellig
 
 ## Intelligent Transportation Systems
 
+- [Incident Management Plan for the Albuquerque Metropolitan Planning Area (2022 archived PDF)](https://files.abqinfo.com/transportation/operations-data/mrmpo-incident-management-plan-ampa-2022.pdf)
+
+  Coordinates Albuquerque-area traffic-incident detection, emergency response, communications, traveler information, alternate routes, clearance practices, performance measures, training, and interagency roles through a shared regional framework.
+
+  [Official PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/1f8074c8-c7c1-446d-af13-699eeddbf1b5/Incident%20Management%20Plan%20for%20the%20Albuquerque%20Metropolitan%20Planning%20Area.pdf) · [Official NMDOT Intelligent Transportation Systems page](https://www.dot.nm.gov/highway-operations-program/operations-support-division-director/intelligent-transportation-systems/)
+
 - [MRMPO Intelligent Transportation Systems](https://www.mrcog-nm.gov/259/Intelligent-Transportation-Systems)
 
   Collects regional plans, maps, strategies, and incident-management resources for coordinated traffic signals, traveler information, dynamic message signs, roadway monitoring, emergency response, and other technology-based transportation operations.
