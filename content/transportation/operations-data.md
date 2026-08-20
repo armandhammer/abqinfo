@@ -14,9 +14,13 @@ Regional roadway operations, traffic analysis, incident management, and intellig
 
   Maps litter, debris, and landscape-maintenance responsibilities along Albuquerque interstates and freeways, helping users distinguish City, NMDOT, and other operational roles.
 
-- [City Street Speed-Limit Data](https://dmdmaps.cabq.gov/serverext/rest/services/traffic/CABQ_Roads_Data/MapServer/3)
+- [City Street Speed-Limit Data](https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdmdmaps.cabq.gov%2Fserverext%2Frest%2Fservices%2Ftraffic%2FCABQ_Roads_Data%2FMapServer%2F3&source=sd) <small>[ArcGIS Data](https://dmdmaps.cabq.gov/serverext/rest/services/traffic/CABQ_Roads_Data/MapServer/3)</small>
 
   Publishes Albuquerque street speed-limit data as a live GIS service derived from OpenStreetMap, supporting mapping and analysis while requiring users to consider the source's stated limitations.
+
+- [City Traffic Cameras, Signals, and Roadway Data Map](https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdmdmaps.cabq.gov%2Fserverext%2Frest%2Fservices%2Ftraffic%2FCABQ_Roads_Data%2FMapServer&source=sd) <small>[ArcGIS Data](https://dmdmaps.cabq.gov/serverext/rest/services/traffic/CABQ_Roads_Data/MapServer)</small>
+
+  Displays the City's combined roadway data service, including traffic cameras, signals, barricade lines, street attributes, council districts, and municipal boundaries in a single interactive map.
 
 - [Street Maintenance Projects Viewer](https://experience.arcgis.com/experience/f57852d3820348099352cd74e5db72bf)
 

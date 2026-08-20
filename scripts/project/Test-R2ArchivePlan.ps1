@@ -30,7 +30,7 @@ foreach ($item in @($plan.items)) {
       error = $null
     }
     & "$PSScriptRoot/Update-Candidate.ps1" -Id $item.id -Set @{
-      validation_status = 'passed: authoritative provenance, public byte-identical R2 download, description, and placement validated'
+      validation_status = 'passed: public R2 download is byte-identical to the reviewed local source; authoritative provenance is evaluated separately'
     } -InventoryPath $InventoryPath | Out-Null
   } catch {
     $result = [ordered]@{

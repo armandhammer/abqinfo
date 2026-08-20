@@ -62,6 +62,32 @@ ABQ Ride bus service information and data.
 
 Project contact: Andrew de Garmo, Principal Planner, ABQ RIDE — [adegarmo@cabq.gov](mailto:adegarmo@cabq.gov) — 505-724-3109.
 
+## ART Planning and Development History
+
+- [The Scale of the Prize: Community Benefits of Bus Rapid Transit (Final Report)](https://files.abqinfo.com/transportation/transit/art/the-scale-of-the-prize-community-benefits-of-brt-final.pdf)
+
+  Estimates the economic, household-cost, development, and community benefits of bus rapid transit along Central Avenue, providing an early City-commissioned case for the investment that became ART. [Official City project page and marked draft](https://www.cabq.gov/economicdevelopment/the-scale-of-the-prize-community-benefits-of-transit-oriented-development)
+
+- [ART Corridor Building Permits, October 2022–September 2023](https://files.abqinfo.com/transportation/transit/art/art-corridor-building-permits-2022-2023.pdf)
+
+  Maps building permits and reported construction value along the ART corridor, preserving a concise City GIS snapshot of post-project development activity. Its exact former City download location remains under review.
+
+### Selected Public Comment Record
+
+These documents preserve representative contemporary criticism of ART. They are identified by authorship and included as planning-history evidence, not as official City findings.
+
+- [ART Design Comments Submitted to the Transit Department (December 2015)](https://files.abqinfo.com/transportation/transit/art/history/art-design-comments-to-transit-department-2015.pdf)
+
+  Preserves detailed Coalition of Concerned Citizens comments and annotations about alignment, access, medians, intersections, business effects, and proposed design changes before construction.
+
+- [Summary of ART Meeting with the Transit Department (December 2015)](https://files.abqinfo.com/transportation/transit/art/history/art-transit-department-meeting-summary-2015.pdf)
+
+  Summarizes a meeting between the Coalition and Transit Department, documenting questions, agency responses, disputed assumptions, design concerns, and the contemporary public process.
+
+- [Coalition Response to City ART Mythbusters (August 2016)](https://files.abqinfo.com/transportation/transit/art/history/coalition-response-to-art-mythbusters-2016.pdf)
+
+  Records a detailed opposition response to City claims about ART, preserving debate over ridership, safety, design, construction, business effects, funding, and public process.
+
 ## Montaño Intermodal Center Planning History
 
 - [Montaño Intermodal Center Project Application (2010 archived PDF)](https://files.abqinfo.com/transportation/transit/cabq-montano-intermodal-center-project-application-2010.pdf)

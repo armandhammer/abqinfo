@@ -57,7 +57,13 @@ foreach ($decision in @($decisions.decisions)) {
       ''
     }
     parent_url = $sourcePage
-    agency = if ($candidate.agency) { [string]$candidate.agency } else { 'City of Albuquerque' }
+    agency = if ($decision.PSObject.Properties['agency'] -and $decision.agency) {
+      [string]$decision.agency
+    } elseif ($candidate.agency) {
+      [string]$candidate.agency
+    } else {
+      'City of Albuquerque'
+    }
     title = [string]$decision.title
     date = [string]$decision.date
     file_type = $candidateType
@@ -66,8 +72,16 @@ foreach ($decision in @($decisions.decisions)) {
     r2_key = [string]$decision.r2_key
     proposed_canonical_page = [string]$decision.canonical_page
     description = [string]$decision.description
-    provenance_status = 'official government source page and byte-identical official file recorded'
-    processing_notes = @("Original authoritative $candidateType preserved without modification; $wordCount-word description reviewed from extracted content or visual inspection.")
+    provenance_status = if ($decision.PSObject.Properties['provenance_status'] -and $decision.provenance_status) {
+      [string]$decision.provenance_status
+    } else {
+      'official government source page and byte-identical official file recorded'
+    }
+    processing_notes = if ($decision.PSObject.Properties['processing_notes'] -and @($decision.processing_notes).Count) {
+      @($decision.processing_notes)
+    } else {
+      @("Original authoritative $candidateType preserved without modification; $wordCount-word description reviewed from extracted content or visual inspection.")
+    }
     size_warning_over_25mb = [bool]($file.Length -gt 25MB)
   }
   if ($decision.PSObject.Properties['implementation_locations']) {
