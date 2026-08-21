@@ -30,6 +30,12 @@ Questions or comments about this pilot: Valerie Hermanson at DMD, vhermanson@cab
 
   Shows the 60-percent design for bicycle-boulevard improvements along Buena Vista Drive, including traffic-calming, crossing, signing, pavement-marking, and corridor layout details.
 
+- [Buena Vista Bike Boulevard Project Roll Plot (August 2026)](https://files.abqinfo.com/transportation/bicycling/projects/cabq-buena-vista-bike-boulevard-roll-plot-2026.pdf)
+
+  Provides an August 2026 aerial roll plot of the Buena Vista Bike Boulevard from Gibson Boulevard to Central Avenue, identifying proposed signs, pavement markings, speed cushions, crossings, signals, parking restrictions, and pavement work.
+
+  [Official City GAATC Project Update Record](https://onbase.cabq.gov/publicaccess/api/Document/12239706/)
+
 Questions or comments email Paul Olson at DMD polson@cabq.gov
 
 ### Moon Street Cycletrack / Bike Boulevard

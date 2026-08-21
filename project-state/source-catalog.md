@@ -1,8 +1,8 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-21T17:18:17.2561550Z
+Generated: 2026-08-21T19:06:11.8930594Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 5850 candidates and 339 R2 objects totaling 4143470863 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 5851 candidates and 340 R2 objects totaling 4146002109 bytes.
 
 ## Queue status
 
@@ -21,7 +21,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | duplicate | 451 |
 | superseded | 24 |
 | blocked | 0 |
-| requires human review | 67 |
+| requires human review | 68 |
 
 ## Preserved files
 
@@ -1760,6 +1760,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-8903198f1d3c22e1 | requires human review | Coalition Response to City ART Mythbusters | Authorship is identified explicitly; original file will be preserved without modification.; Original source file uploaded without modification; R2 object verified by HEAD.; Public R2 download is byte-identical to the reviewed local original by exact size and SHA-256; page placement verified.; Representative 17-page opposition record selected from a larger advocacy folder. |
 | src-8ce615f21d3e5dd3 | requires human review | Appendix I ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ Bollard Assessment (2013) | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-907f4de342216f97 | requires human review | 2024 Bikeway and Trail Facilities Plan | The authoritative City source was recovered from a featured bicycle-project page at crawl depth 2 without a title seed.; The preserved R2 object is exactly 19,715,991 bytes (18.80 MiB); its SHA-256 is 873a5ead78ba2881bf7fc7fb61445da8c8f68207635c2045cd4a10daa1bd7407.; An R2 HTTP 200 is not treated as authoritative-source validation. |
+| src-a59d0a45be606c45 | requires human review | Buena Vista Bike Boulevard Project Roll Plot (2026) | Exact-file provenance remains unresolved, so the terminal inventory status must remain requires human review after archival and site validation.; One-page aerial roll plot created August 18, 2026.; Original contributed file uploaded without modification; public R2 download matched exact size and SHA-256.; Original source file uploaded without modification; R2 object verified by HEAD.; PDF metadata identifies NMDOT Survey & Lands Engineering and Autodesk Civil 3D 2024.; Representative full-sheet rendering and extracted labels reviewed; exact size and SHA-256 recorded. |
 | src-a614f077ace20401 | requires human review | 2014 Bikeways and Trails Facilities Plan - Pre-Adoption Draft | The archived object is a 131-page 2014 pre-adoption draft, not the 312-page May 2015 final plan.; Public R2 object is exactly 4,402,773 bytes with SHA-256 cf557f83399bea7f5648f772bc49c6586c46918401bfd882c041047bc21ea6bc.; Retained for historical comparison rather than overwritten or relabeled as the adopted final. |
 | src-aab5517438784db7 | requires human review | Summary of ART Meeting with the Transit Department | Authorship is identified explicitly; original file will be preserved without modification.; Original source file uploaded without modification; R2 object verified by HEAD.; Public R2 download is byte-identical to the reviewed local original by exact size and SHA-256; page placement verified.; Representative six-page meeting record selected from a larger advocacy folder. |
 | src-b1565d5b0748d248 | requires human review | Tall Curb Spec Sheet | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
