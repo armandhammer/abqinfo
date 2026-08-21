@@ -25,6 +25,8 @@ foreach ($item in @($plan.items)) {
   if ($page -notlike "*$($candidate.r2_url)*" -or $page -notlike "*$($candidate.direct_file_url)*") { throw "Archive or official-source link is missing from the implementation page for '$($item.id)'." }
 
   $candidate.status = 'validated'
+  $candidate.description = [string]$item.description
+  $candidate.description_word_count = @([string]$item.description -split '\s+' | Where-Object { $_ }).Count
   $candidate.implementation_location = [string]$item.proposed_canonical_page
   $candidate.implementation_locations = @([string]$item.proposed_canonical_page)
   $candidate.validation_status = 'passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated'

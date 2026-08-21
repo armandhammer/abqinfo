@@ -30,3 +30,63 @@ Maintained public-safety dashboards, police statistics, geographic breakdowns, r
 
   [Official APD PDF](https://www.cabq.gov/police/documents/crime-stats-2017-2022-final-16mar2023.pdf) · [Current APD crime statistics](https://www.cabq.gov/police/crime-statistics)
 
+## Fire and Emergency Response
+
+- [Albuquerque Fire Rescue Reports](https://www.cabq.gov/fire/copy_of_reports)
+
+  The official report library provides monthly reports through 2024 and annual reports through 2022. Use it to check for later releases; the annual-report archive below preserves the City's historical operational record.
+
+- [Albuquerque Fire Rescue Annual Report, 2022](https://files.abqinfo.com/city-data/public-safety/afr-annual-report-2022.pdf)
+
+  Reports Albuquerque Fire Rescue calls, response performance, staffing, stations, emergency medical services, fire prevention, community risk reduction, and major initiatives during calendar year 2022.
+
+  [Official City PDF](https://www.cabq.gov/fire/documents/2022-annual-report.pdf)
+
+- [Albuquerque Fire Rescue Annual Report, 2021](https://files.abqinfo.com/city-data/public-safety/afr-annual-report-2021.pdf)
+
+  Reports Albuquerque Fire Rescue operations, incident demand, response performance, personnel, facilities, emergency medical work, prevention, and division accomplishments during calendar year 2021.
+
+  [Official City PDF](https://www.cabq.gov/fire/documents/2021-annual-report-interactive.pdf)
+
+- [Albuquerque Fire Rescue Annual Report, 2020](https://files.abqinfo.com/city-data/public-safety/afr-annual-report-2020.pdf)
+
+  Documents Albuquerque Fire Rescue's 2020 emergency response, call volumes, response times, staffing, stations, medical services, fire prevention, pandemic operations, and departmental accomplishments.
+
+  [Official City PDF](https://www.cabq.gov/fire/documents/2020-annual-report.pdf)
+
+- [Albuquerque Fire Rescue Annual Report, 2019](https://files.abqinfo.com/city-data/public-safety/afr-annual-report-2019.pdf)
+
+  Documents Albuquerque Fire Rescue's 2019 incident demand, response performance, personnel, stations, emergency medical services, prevention programs, fiscal information, and division accomplishments.
+
+  [Official City PDF](https://www.cabq.gov/fire/documents/annual-report-2019-final.pdf)
+
+- [Albuquerque Fire Rescue Annual Report, 2018](https://files.abqinfo.com/city-data/public-safety/afr-annual-report-2018.pdf)
+
+  Documents Albuquerque Fire Rescue's 2018 calls, response performance, personnel, facilities, medical services, prevention work, community programs, fiscal information, and organizational accomplishments.
+
+  [Official City PDF](https://www.cabq.gov/fire/documents/annual-report-2-corrected.pdf)
+
+- [Albuquerque Fire Department Annual Report, 2017](https://files.abqinfo.com/city-data/public-safety/afd-annual-report-2017.pdf)
+
+  Documents the Albuquerque Fire Department's 2017 emergency activity, response performance, personnel, stations, medical services, prevention, training, community programs, and departmental accomplishments.
+
+  [Official City PDF](https://www.cabq.gov/fire/documents/abq-fire-2017-annual-report.pdf)
+
+- [Albuquerque Fire Department Annual Report, 2016](https://files.abqinfo.com/city-data/public-safety/afd-annual-report-2016.pdf)
+
+  Documents the Albuquerque Fire Department's 2016 incident demand, response performance, staffing, stations, emergency medical services, prevention, training, community programs, and organizational accomplishments.
+
+  [Official City PDF](https://www.cabq.gov/fire/documents/abq-fire-department-annual-report-2016.pdf)
+
+- [Albuquerque Fire Department Annual Report, 2015](https://files.abqinfo.com/city-data/public-safety/afd-annual-report-2015.pdf)
+
+  Documents the Albuquerque Fire Department's 2015 calls, response performance, personnel, facilities, emergency medical work, prevention, training, community programs, and departmental accomplishments.
+
+  [Official City PDF](https://www.cabq.gov/fire/documents/2015-albuquerque-fire-department-annual-report.pdf)
+
+- [Albuquerque Fire Department Annual Report, 2014](https://files.abqinfo.com/city-data/public-safety/afd-annual-report-2014.pdf)
+
+  Documents the Albuquerque Fire Department's 2014 emergency activity, response performance, staffing, stations, medical services, prevention, training, public education, and organizational accomplishments.
+
+  [Official City PDF](https://www.cabq.gov/fire/documents/2014-albuquerque-fire-department-annual-report.pdf)
+
