@@ -7,8 +7,8 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
-$plan = Get-Content -Raw -LiteralPath $PlanPath | ConvertFrom-Json
-$inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+$plan = Get-Content -Raw -Encoding UTF8 -LiteralPath $PlanPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
 $currentR2Bytes = [int64]$plan.current_r2_bytes
 $plannedBytes = if ($plan.PSObject.Properties['added_bytes']) { [int64]$plan.added_bytes } else { [int64](@($plan.items | Measure-Object -Property size_bytes -Sum).Sum) }
 $projectedBytes = $currentR2Bytes + $plannedBytes
@@ -49,7 +49,7 @@ foreach ($item in @($plan.items)) {
   & "$PSScriptRoot/Update-Candidate.ps1" -Id $item.id -Set $set -InventoryPath $InventoryPath | Out-Null
 
   if ($PSCmdlet.ShouldProcess($publicUrl, "Upload and verify $($file.Name)")) {
-    $currentInventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+    $currentInventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
     $currentCandidate = @($currentInventory.candidates | Where-Object id -eq $item.id)[0]
     # A regenerated plan may reconcile an object that reached R2 immediately
     # before a local inventory-write interruption. Verify that object publicly
@@ -75,7 +75,7 @@ foreach ($item in @($plan.items)) {
     }
   }
 
-  $inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+  $inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
   [pscustomobject]@{
     id = $item.id
     title = $item.title

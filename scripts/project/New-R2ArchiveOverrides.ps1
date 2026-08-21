@@ -7,8 +7,8 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
-$plan = Get-Content -Raw -LiteralPath $PlanPath | ConvertFrom-Json
-$r2 = Get-Content -Raw -LiteralPath $R2InventoryPath | ConvertFrom-Json
+$plan = Get-Content -Raw -Encoding UTF8 -LiteralPath $PlanPath | ConvertFrom-Json
+$r2 = Get-Content -Raw -Encoding UTF8 -LiteralPath $R2InventoryPath | ConvertFrom-Json
 $overrides = @()
 [object[]]$supersededItems = @()
 if ($plan.PSObject.Properties['superseded_items']) { $supersededItems = @($plan.superseded_items) }

@@ -11,9 +11,9 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
-$decisions = Get-Content -Raw -LiteralPath $DecisionsPath | ConvertFrom-Json
-$inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
-$r2 = Get-Content -Raw -LiteralPath $R2InventoryPath | ConvertFrom-Json
+$decisions = Get-Content -Raw -Encoding UTF8 -LiteralPath $DecisionsPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
+$r2 = Get-Content -Raw -Encoding UTF8 -LiteralPath $R2InventoryPath | ConvertFrom-Json
 $items = @()
 
 foreach ($decision in @($decisions.decisions)) {

@@ -17,7 +17,7 @@ function Get-HumanSize([int64]$Bytes) {
 
 $python = 'C:\Users\ben\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
 $extractor = Join-Path $PSScriptRoot 'extract_pdf.py'
-$inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
 $knownByHash = @{}
 foreach ($candidate in $inventory.candidates) {
   if ($candidate.checksum_sha256) { $knownByHash[[string]$candidate.checksum_sha256.ToLowerInvariant()] = $candidate }

@@ -17,7 +17,7 @@ $hostPatterns = @{
 
 $found = [ordered]@{}
 foreach ($file in Get-ChildItem -LiteralPath $SearchRoot -Recurse -File -Filter '*.txt' -ErrorAction SilentlyContinue) {
-  $text = Get-Content -Raw -LiteralPath $file.FullName
+  $text = Get-Content -Raw -Encoding UTF8 -LiteralPath $file.FullName
   # PDF text extraction commonly wraps a URL immediately after a hyphen or slash.
   # Join those URL-safe boundaries before matching so a printed URL is not lost.
   $text = $text -replace '-\r?\n\s*', '-'

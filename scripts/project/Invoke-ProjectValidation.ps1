@@ -18,7 +18,7 @@ if ($LASTEXITCODE) { throw 'Hugo build failed.' }
 
 $broken = @()
 if ($CheckExternalLinks) {
-  $inventory = Get-Content -Raw $InventoryPath | ConvertFrom-Json
+  $inventory = Get-Content -Raw -Encoding UTF8 $InventoryPath | ConvertFrom-Json
   foreach ($candidate in $inventory.candidates | Where-Object status -in @('implemented','validated')) {
     $url = if ($candidate.r2_url) { $candidate.r2_url } elseif ($candidate.direct_file_url) { $candidate.direct_file_url } else { $candidate.source_url }
     if (-not $url) { continue }

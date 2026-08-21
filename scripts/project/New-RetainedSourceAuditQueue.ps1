@@ -8,10 +8,10 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
 $allowedStatuses = @('pending descendant crawl','crawled','requires rendered-browser review','excluded','superseded')
-$inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
 $existingMap = @{}
 if (Test-Path -LiteralPath $OutputPath) {
-  $prior = Get-Content -Raw -LiteralPath $OutputPath | ConvertFrom-Json
+  $prior = Get-Content -Raw -Encoding UTF8 -LiteralPath $OutputPath | ConvertFrom-Json
   foreach ($record in @($prior.records)) { $existingMap[[string]$record.source_url] = $record }
 }
 
@@ -64,5 +64,5 @@ if ($directory) { New-Item -ItemType Directory -Force $directory | Out-Null }
 $fullPath = [IO.Path]::GetFullPath($OutputPath)
 $temporaryPath = "$fullPath.tmp-$PID"
 [IO.File]::WriteAllText($temporaryPath, ($queue | ConvertTo-Json -Depth 10), [Text.UTF8Encoding]::new($false))
-[IO.File]::Move($temporaryPath, $fullPath, $true)
+Move-Item -LiteralPath $temporaryPath -Destination $fullPath -Force
 [pscustomobject]@{Records=$records.Count;Pending=$counts['pending descendant crawl'];OutputPath=$OutputPath}|ConvertTo-Json -Compress

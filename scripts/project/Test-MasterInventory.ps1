@@ -3,7 +3,7 @@ param([string]$InventoryPath = 'project-state/master-inventory.json')
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
-$inventory = Get-Content -Raw $InventoryPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 $InventoryPath | ConvertFrom-Json
 $errors = [Collections.Generic.List[string]]::new()
 $ids = @{}
 
@@ -29,7 +29,7 @@ foreach ($candidate in $inventory.candidates) {
 
 $linkedUrls = @()
 foreach ($file in Get-ChildItem content -Recurse -Filter *.md) {
-  $raw = Get-Content -Raw $file.FullName
+  $raw = Get-Content -Raw -Encoding UTF8 $file.FullName
   $linkedUrls += [regex]::Matches($raw,'https?://[^\s\)\]]+') | ForEach-Object { $_.Value }
 }
 foreach ($url in $linkedUrls | Sort-Object -Unique) {

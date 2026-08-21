@@ -4,7 +4,7 @@ param([string]$InventoryPath = 'project-state/master-inventory.json')
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
-$inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
 $lineage = @($inventory.candidates | Where-Object { $_.id -like 'lin-*' -and $_.status -eq 'pending review' })
 $duplicateCount = 0
 $excludedCount = 0
@@ -139,7 +139,7 @@ $json = $inventory | ConvertTo-Json -Depth 12
 $fullPath = [IO.Path]::GetFullPath($InventoryPath)
 $temporaryPath = "$fullPath.tmp-$PID"
 [IO.File]::WriteAllText($temporaryPath, $json, [Text.UTF8Encoding]::new($false))
-[IO.File]::Move($temporaryPath, $fullPath, $true)
+Move-Item -LiteralPath $temporaryPath -Destination $fullPath -Force
 
 [pscustomobject]@{
   InputPendingLineage = $lineage.Count

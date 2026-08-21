@@ -10,7 +10,7 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
-$inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
 $normalized = @($Urls | ForEach-Object { $_.Trim().TrimEnd('/') } | Sort-Object -Unique)
 $changed = @()
 foreach ($candidate in $inventory.candidates) {

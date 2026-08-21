@@ -12,7 +12,7 @@ $ErrorActionPreference = 'Stop'
 $set = @{ status = $Status }
 if ($ValidationStatus) { $set.validation_status = $ValidationStatus }
 if ($Note) {
-  $inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+  $inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
   $candidate = $inventory.candidates | Where-Object { $_.id -eq $Id } | Select-Object -First 1
   $set.processing_notes = @($candidate.processing_notes) + $Note
 }

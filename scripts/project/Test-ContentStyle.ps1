@@ -54,7 +54,7 @@ $files = @(Get-ChildItem -LiteralPath $ContentPath -Recurse -Filter '*.md' -File
 $resolvedContentPath = (Resolve-Path -LiteralPath $ContentPath).Path.TrimEnd('\') + '\'
 foreach ($file in $files) {
   $relativePath = $file.FullName.Substring($resolvedContentPath.Length).Replace('\', '/')
-  $body = @(Get-MarkdownBody (Get-Content -LiteralPath $file.FullName))
+  $body = @(Get-MarkdownBody (Get-Content -Encoding UTF8 -LiteralPath $file.FullName))
   for ($index = 0; $index -lt $body.Count; $index++) {
     $line = $body[$index]
     $lineNumber = $index + 1

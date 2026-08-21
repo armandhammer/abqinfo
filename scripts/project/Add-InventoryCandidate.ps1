@@ -31,7 +31,7 @@ function Write-AtomicJson($Value, [string]$Path) {
     $temporaryPath = "$fullPath.tmp-$PID-$attempt"
     try {
       [IO.File]::WriteAllText($temporaryPath, $json, [Text.UTF8Encoding]::new($false))
-      [IO.File]::Move($temporaryPath, $fullPath, $true)
+      Move-Item -LiteralPath $temporaryPath -Destination $fullPath -Force
       return
     }
     catch {
@@ -43,7 +43,7 @@ function Write-AtomicJson($Value, [string]$Path) {
   }
 }
 
-$inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
 $id = Get-StableId $SourceUrl
 $existing = @($inventory.candidates | Where-Object id -eq $id)
 if ($existing.Count) {

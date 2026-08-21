@@ -14,7 +14,7 @@ $pages = foreach ($file in Get-ChildItem -LiteralPath $root -Recurse -Filter '*.
   $parts = $relativePath.Split('/')
   $isSectionIndex = $file.Name -eq '_index.md'
   $depth = if ($isSectionIndex) { $parts.Count - 1 } else { $parts.Count }
-  $raw = Get-Content -Raw -LiteralPath $file.FullName
+  $raw = Get-Content -Raw -Encoding UTF8 -LiteralPath $file.FullName
   $body = $raw -replace '(?s)^---.*?---',''
   $wordCount = @($body -split '\s+' | Where-Object { $_ }).Count
   [pscustomobject]@{

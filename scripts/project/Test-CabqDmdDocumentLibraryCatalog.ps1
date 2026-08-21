@@ -7,7 +7,7 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
 if (-not (Test-Path -LiteralPath $CatalogPath)) { throw "Catalog not found: $CatalogPath" }
-$catalog = Get-Content -Raw -LiteralPath $CatalogPath | ConvertFrom-Json
+$catalog = Get-Content -Raw -Encoding UTF8 -LiteralPath $CatalogPath | ConvertFrom-Json
 $errors = [Collections.Generic.List[string]]::new()
 $candidates = @($catalog.candidates)
 $files = @($candidates | Where-Object { $_.direct_file_url })

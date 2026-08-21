@@ -51,7 +51,7 @@ function Add-ScopedSeedAncestors {
 Add-ScopedSeedAncestors
 
 if ($Resume -and (Test-Path -LiteralPath $OutputPath)) {
-  $prior = Get-Content -Raw -LiteralPath $OutputPath | ConvertFrom-Json
+  $prior = Get-Content -Raw -Encoding UTF8 -LiteralPath $OutputPath | ConvertFrom-Json
   $queue.Clear()
   foreach ($page in @($prior.pages)) {
     $pages.Add($page)
@@ -106,7 +106,7 @@ while ($queue.Count -and $pages.Count -lt $MaxPages) {
   $tempPath = Join-Path $tempRoot ("page-{0:d4}.json" -f $pages.Count)
   try {
     & "$PSScriptRoot/Invoke-SourceCrawl.ps1" -Agency $Agency -StartUrl $item.url -OutputPath $tempPath -MainOnly | Out-Null
-    $page = Get-Content -Raw -LiteralPath $tempPath | ConvertFrom-Json
+    $page = Get-Content -Raw -Encoding UTF8 -LiteralPath $tempPath | ConvertFrom-Json
     $itemPath = if ($item.PSObject.Properties['path']) { @($item.path) } else { @($item.url) }
     $itemMethod = if ($item.PSObject.Properties['method']) { [string]$item.method } else { 'legacy queued page' }
     $pages.Add([pscustomobject]@{url=$item.url;depth=$item.depth;parent_url=$item.parent_url;discovery_path=$itemPath;discovery_method=$itemMethod;status='retrieved';link_count=@($page.candidates).Count;error=$null})

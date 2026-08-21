@@ -9,7 +9,7 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
-$inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
 $terminal = @('validated','excluded','duplicate','superseded','blocked','requires human review')
 $remaining = @($inventory.candidates | Where-Object { $_.status -notin $terminal })
 $checkpoint = [ordered]@{

@@ -6,7 +6,7 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Continue'
-$inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
 $candidates = @($inventory.candidates | Where-Object {
   $_.status -eq 'implemented' -and
   $_.description_word_count -ge 20 -and $_.description_word_count -le 50

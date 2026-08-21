@@ -30,7 +30,7 @@ $items = @(
   }
 )
 
-$inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
 foreach ($item in $items) {
   $candidate = @($inventory.candidates | Where-Object id -eq $item.id)
   if ($candidate.Count -ne 1) { throw "Expected one candidate for '$($item.id)'." }
@@ -58,7 +58,7 @@ $json = $inventory | ConvertTo-Json -Depth 12
 $fullPath = [IO.Path]::GetFullPath($InventoryPath)
 $temporaryPath = "$fullPath.tmp-$PID"
 [IO.File]::WriteAllText($temporaryPath, $json, [Text.UTF8Encoding]::new($false))
-[IO.File]::Move($temporaryPath, $fullPath, $true)
+Move-Item -LiteralPath $temporaryPath -Destination $fullPath -Force
 
 $output = [ordered]@{
   batch_id = '2026-08-20-arroyo-planning-history'

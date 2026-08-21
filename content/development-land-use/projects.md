@@ -4,6 +4,36 @@ title: "Projects"
 
 Selected major development activity and the plans and datasets needed to understand it. Individual projects belong here when their scale, public impact, planning significance, or unusually useful public record warrants inclusion—not merely because a permit was issued.
 
+## Current Major Projects
+
+- [Albuquerque Rail Yards Redevelopment](https://www.cabq.gov/council/council/projects/current-projects/albuquerque-rail-yards-redevelopment)
+
+  Brings together the adopted and updated master plans, redevelopment history, supporting studies, environmental records, maps, legislation, and current City activity for one of Albuquerque’s most consequential historic redevelopment sites.
+
+  [Updated Rail Yards Master Plan (2023 archived PDF, 217.11 MiB)](https://files.abqinfo.com/development-land-use/projects/cabq-rail-yards-master-plan-2023.pdf)
+
+  [Official City PDF](https://documents.cabq.gov/planning/MasterPlans/Rail%20Yards%20Master%20Plan/Albuquerque_Rail_Yards_Master_Plan-2023-06-07.pdf)
+
+- [Highlands Central Market and Residence Inn](https://www.cabq.gov/mra/news/new-hotel-and-food-hall-break-ground-on-central-avenue)
+
+  Tracks a 126-room hotel and food hall across from Presbyterian Hospital, including the project’s mixed-use role, pedestrian improvements, public redevelopment incentive, expected opening, and connection to the larger Highlands development.
+
+- [Serenade at Park Central](https://www.cabq.gov/mra/news/major-redevelopment-launches-at-300-san-mateo-blvd-ne)
+
+  Documents the conversion of a long-vacant ten-story office tower at 300 San Mateo Boulevard into 110 mixed-income homes, including 41 affordable units, through a City-supported adaptive-reuse project.
+
+- [Uptown Connect](https://www.cabq.gov/transit/transit-programs-projects/uptown-connect)
+
+  Combines replacement of the Uptown Transit Center with 239 mixed-rate homes, commercial space, a transit plaza, and pedestrian connections. The maintained City page reports design and construction milestones for the anticipated 2028 opening.
+
+## Redevelopment Portfolio
+
+- [Metropolitan Redevelopment Agency Annual Report 2023 (archived PDF)](https://files.abqinfo.com/development-land-use/projects/cabq-mra-annual-report-2023.pdf)
+
+  Documents Albuquerque’s 2023 redevelopment pipeline, including housing, hotel and commercial investment, the Rail Trail, Downtown Forward, the Menaul planning effort, public financing tools, and completed or active MRA-supported projects.
+
+  [Official City PDF](https://www.cabq.gov/mra/documents/mra-annual-report-2023-final.pdf) · [Metropolitan Redevelopment Agency](https://www.cabq.gov/mra)
+
 ## Corridor Redevelopment Plans
 
 - [Bridge Boulevard Corridor Redevelopment Plan (2013 archived PDF)](https://files.abqinfo.com/development-land-use/plans/bernco-bridge-boulevard-corridor-redevelopment-plan-2013.pdf)

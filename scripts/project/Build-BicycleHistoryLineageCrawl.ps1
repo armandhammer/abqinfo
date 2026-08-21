@@ -23,8 +23,8 @@ function Get-CompactEvidence([string]$Text, [string]$Pattern) {
   return ([regex]::Replace($match.Value, '\s+', ' ')).Trim()
 }
 
-$benchmarks = Get-Content -Raw -LiteralPath $BenchmarkPath | ConvertFrom-Json
-$sourceState = Get-Content -Raw -LiteralPath $SourceCrawlPath | ConvertFrom-Json
+$benchmarks = Get-Content -Raw -Encoding UTF8 -LiteralPath $BenchmarkPath | ConvertFrom-Json
+$sourceState = Get-Content -Raw -Encoding UTF8 -LiteralPath $SourceCrawlPath | ConvertFrom-Json
 $sourceCandidates = @($sourceState.candidates | Where-Object { ([string]$_.url).TrimEnd('/') -eq $SourcePdfUrl.TrimEnd('/') })
 if (-not $sourceCandidates.Count) { throw "Source crawl does not contain the official 2024 plan: $SourcePdfUrl" }
 $sourceCandidate = $sourceCandidates | Sort-Object { @($_.discovery_path).Count } | Select-Object -First 1

@@ -34,11 +34,11 @@ function Get-Links([string]$Html, [uri]$BaseUri) {
   return @($values | Sort-Object url -Unique)
 }
 
-$inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
 $queue = @($inventory.candidates | Where-Object status -eq 'pending review' | Sort-Object id)
 $records = [Collections.Generic.List[object]]::new()
 if (-not $Force -and (Test-Path -LiteralPath $OutputPath)) {
-  $prior = Get-Content -Raw -LiteralPath $OutputPath | ConvertFrom-Json
+  $prior = Get-Content -Raw -Encoding UTF8 -LiteralPath $OutputPath | ConvertFrom-Json
   foreach ($record in @($prior.records)) { $records.Add($record) }
 }
 $done = @{}

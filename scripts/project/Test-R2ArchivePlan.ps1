@@ -7,13 +7,13 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
-$plan = Get-Content -Raw -LiteralPath $PlanPath | ConvertFrom-Json
+$plan = Get-Content -Raw -Encoding UTF8 -LiteralPath $PlanPath | ConvertFrom-Json
 $results = @()
 
 foreach ($item in @($plan.items)) {
   $publicUrl = "https://files.abqinfo.com/$($item.r2_key)"
   try {
-    $inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+    $inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
     $candidate = @($inventory.candidates | Where-Object id -eq $item.id)
     if ($candidate.Count -ne 1 -or -not $candidate[0].local_path) {
       throw "Could not resolve local source path for '$($item.id)'."

@@ -204,7 +204,7 @@ $candidateMap = @{}
 $pages = [Collections.Generic.List[object]]::new()
 
 if ($Resume -and (Test-Path -LiteralPath $OutputPath)) {
-  $prior = Get-Content -Raw -LiteralPath $OutputPath | ConvertFrom-Json
+  $prior = Get-Content -Raw -Encoding UTF8 -LiteralPath $OutputPath | ConvertFrom-Json
   foreach ($url in @($prior.visited_urls)) { $visited[[string]$url] = $true }
   foreach ($candidate in @($prior.candidates)) { $candidateMap[([string]$candidate.url).TrimEnd('/')] = $candidate }
   foreach ($page in @($prior.pages)) { $pages.Add($page) }

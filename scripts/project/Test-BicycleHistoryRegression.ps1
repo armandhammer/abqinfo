@@ -14,18 +14,18 @@ function Get-OptionalProperty($Object, [string]$Name) {
   return $null
 }
 
-$benchmarks = Get-Content -Raw -LiteralPath $BenchmarkPath | ConvertFrom-Json
-$inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+$benchmarks = Get-Content -Raw -Encoding UTF8 -LiteralPath $BenchmarkPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
 $excluded = @{}
 $exclusionsPath = 'project-state/discovery/import-exclusions.json'
 if (Test-Path -LiteralPath $exclusionsPath) {
-  foreach ($item in (Get-Content -Raw -LiteralPath $exclusionsPath | ConvertFrom-Json)) { $excluded[[string]$item.file] = $true }
+  foreach ($item in (Get-Content -Raw -Encoding UTF8 -LiteralPath $exclusionsPath | ConvertFrom-Json)) { $excluded[[string]$item.file] = $true }
 }
 
 $crawlCandidates = @()
 foreach ($file in Get-ChildItem -LiteralPath 'project-state/discovery' -Filter '*-crawl.json' -File) {
   if ($excluded.ContainsKey($file.Name)) { continue }
-  $state = Get-Content -Raw -LiteralPath $file.FullName | ConvertFrom-Json
+  $state = Get-Content -Raw -Encoding UTF8 -LiteralPath $file.FullName | ConvertFrom-Json
   foreach ($candidate in @($state.candidates)) {
     $crawlCandidates += [pscustomobject]@{
       state_file = $file.Name

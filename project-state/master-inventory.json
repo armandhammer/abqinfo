@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-20T20:47:07.8092611Z",
+  "generated_at": "2026-08-21T15:14:04.6977312Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,7 +18,7 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 4082,
+    "pending review": 4071,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 0,
@@ -26,10 +26,10 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 24,
-    "validated": 424,
-    "excluded": 735,
-    "duplicate": 450,
-    "superseded": 19,
+    "validated": 447,
+    "excluded": 737,
+    "duplicate": 451,
+    "superseded": 24,
     "blocked": 0,
     "requires human review": 67
   },
@@ -20348,20 +20348,20 @@
     },
     {
       "id": "src-0752fa3cfed34f87",
-      "status": "pending review",
-      "source_url": "https://documents.cabq.gov/planning/online-forms/Planning-General-FEE%20Schedule.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/planning/development-review-services/",
       "direct_file_url": "https://documents.cabq.gov/planning/online-forms/Planning-General-FEE%20Schedule.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
-      "agency": "City of Albuquerque",
-      "title": "Planning-General-FEE Schedule.pdf",
-      "date": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-general-planning-fee-schedule-2025.pdf",
+      "r2_key": "development-land-use/development-process/cabq-general-planning-fee-schedule-2025.pdf",
+      "r2_etag": "31f38bc5a8c72d2951e596be10158f08",
+      "r2_last_modified": "08/21/2026 08:57:43",
+      "agency": "City of Albuquerque Planning Department",
+      "title": "City of Albuquerque General Planning Fee Schedule",
+      "date": "2025-01-17",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://documents.cabq.gov/planning/online-forms/",
+      "size_bytes": 404509,
+      "checksum_sha256": "df8eb3d73bd45a02368c072dc04b16b2575104804f72b4111bae1d568714211a",
+      "parent_url": "https://www.cabq.gov/planning/development-review-services/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/online-forms/"
       ],
@@ -20376,22 +20376,26 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City Development Review Services page and Planning document-host PDF recorded",
+      "proposed_canonical_page": "content/development-land-use/development-process.md",
+      "description": "Lists application, notice, meeting, review, resubmittal, appeal, permit, plat, site-plan, historic-preservation, impact-fee, zoning, subdivision, hydrology, and transportation charges used in the City development-review process as of January 17, 2025.",
+      "description_word_count": 29,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF will be preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "The maintained official source must be checked for later fee changes."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/development-process.md",
+      "implementation_locations": [
+        "content/development-land-use/development-process.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-0752fa3cfed34f87.pdf",
       "discovered_at": "2026-08-04T14:16:00.1147523Z",
-      "updated_at": "2026-08-04T14:16:00.1147523Z"
+      "updated_at": "2026-08-21T15:02:33.3210122Z"
     },
     {
       "id": "src-0763fdd4070f01f0",
@@ -26464,7 +26468,7 @@
     },
     {
       "id": "src-0d9ba218e1cd9df8",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-building-design-standards-2022-rev-14.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-building-design-standards-2022-rev-14.pdf",
       "r2_url": null,
@@ -26499,16 +26503,17 @@
         "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
         "Exact metadata and relevance remain pending source review.",
         "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 2023486 bytes."
+        "Exact authoritative-source size: 2023486 bytes.",
+        "Retained in the inventory for lineage; not implemented because the City published Revision 17."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal: superseded by Revision 17 dated 2025-10-29",
+      "exclusion_reason": "Superseded by City of Albuquerque CIP Building Design Standards and Guidelines, Revision 17 (2025-10-29).",
       "local_path": null,
       "discovered_at": "2026-08-14T20:11:37.95202Z",
-      "updated_at": "2026-08-14T20:11:37.95202Z"
+      "updated_at": "2026-08-21T14:41:00.8419514Z"
     },
     {
       "id": "src-0d9c63d941a2f322",
@@ -79979,7 +79984,7 @@
     },
     {
       "id": "src-46068d1079dd321e",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/planning/development-review-services",
       "direct_file_url": null,
       "r2_url": null,
@@ -79992,21 +79997,23 @@
       "file_type": "Web page or live service",
       "size_bytes": null,
       "checksum_sha256": null,
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "proposed_canonical_page": "content/development-land-use/development-process.md",
+      "description": "Organizes Albuquerque’s current review sections, ABQ-PLAN electronic submittals, hydrology and transportation resources, impact fees, construction coordination, interactive plan map, and Planning Department navigator assistance.",
+      "description_word_count": 24,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections.",
         "Exact metadata and relevance remain pending source review."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/development-process.md",
+      "implementation_locations": [
+        "content/development-land-use/development-process.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative source HTTP 200",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-08-04T12:24:18.1516134Z",
-      "updated_at": "2026-08-04T12:24:18.1516134Z",
+      "updated_at": "2026-08-21T15:04:54.9056487Z",
       "parent_url": "https://www.cabq.gov/planning/shared-active-transportation",
       "referring_urls": [
         "https://www.cabq.gov/planning/shared-active-transportation",
@@ -80022,7 +80029,7 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "official City Development Review Services page recorded"
     },
     {
       "id": "src-46082a8b75026ca4",
@@ -81071,7 +81078,7 @@
     },
     {
       "id": "src-4729a7695d235e85",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-building-design-standards-may-2024-rev-16.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-building-design-standards-may-2024-rev-16.pdf",
       "r2_url": null,
@@ -81106,16 +81113,17 @@
         "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
         "Exact metadata and relevance remain pending source review.",
         "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 4867623 bytes."
+        "Exact authoritative-source size: 4867623 bytes.",
+        "Retained in the inventory for lineage; not implemented because the City published Revision 17."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal: superseded by Revision 17 dated 2025-10-29",
+      "exclusion_reason": "Superseded by City of Albuquerque CIP Building Design Standards and Guidelines, Revision 17 (2025-10-29).",
       "local_path": null,
       "discovered_at": "2026-08-14T20:11:37.9586101Z",
-      "updated_at": "2026-08-14T20:11:37.9586101Z"
+      "updated_at": "2026-08-21T14:41:01.0277119Z"
     },
     {
       "id": "src-473a0cb1cefea8f9",
@@ -106354,8 +106362,8 @@
     },
     {
       "id": "src-613418827a749d36",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/projects/current-projects/albuquerque-rail-yards-redevelopment",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/council/projects/current-projects/albuquerque-rail-yards-redevelopment",
       "direct_file_url": null,
       "r2_url": null,
       "r2_key": null,
@@ -106367,21 +106375,23 @@
       "file_type": "Web page or live service",
       "size_bytes": null,
       "checksum_sha256": null,
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "proposed_canonical_page": "content/development-land-use/projects.md",
+      "description": "Brings together the adopted and updated master plans, redevelopment history, supporting studies, environmental records, maps, legislation, and current City activity for one of Albuquerque’s most consequential historic redevelopment sites.",
+      "description_word_count": 29,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
         "Exact metadata and relevance remain pending source review."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/projects.md",
+      "implementation_locations": [
+        "content/development-land-use/projects.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative source HTTP 200",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.1621327Z",
-      "updated_at": "2026-08-04T12:37:50.1621327Z",
+      "updated_at": "2026-08-21T14:42:44.2106058Z",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/current-projects"
       ],
@@ -106391,7 +106401,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "official City Council project page recorded"
     },
     {
       "id": "src-614949fd6f51f356",
@@ -129677,7 +129687,7 @@
     },
     {
       "id": "src-79b0dba0d60207eb",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-building-design-standards-2023-rev-15.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-building-design-standards-2023-rev-15.pdf",
       "r2_url": null,
@@ -129712,16 +129722,17 @@
         "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
         "Exact metadata and relevance remain pending source review.",
         "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 4782834 bytes."
+        "Exact authoritative-source size: 4782834 bytes.",
+        "Retained in the inventory for lineage; not implemented because the City published Revision 17."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal: superseded by Revision 17 dated 2025-10-29",
+      "exclusion_reason": "Superseded by City of Albuquerque CIP Building Design Standards and Guidelines, Revision 17 (2025-10-29).",
       "local_path": null,
       "discovered_at": "2026-08-14T20:11:37.9554836Z",
-      "updated_at": "2026-08-14T20:11:37.9554836Z"
+      "updated_at": "2026-08-21T14:41:01.1780463Z"
     },
     {
       "id": "src-79b9a5f39741af03",
@@ -158280,7 +158291,7 @@
     },
     {
       "id": "src-95a2896908c0f38d",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-building-design-standards-2019-rev-12.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-building-design-standards-2019-rev-12.pdf",
       "r2_url": null,
@@ -158314,16 +158325,17 @@
         "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
         "Exact metadata and relevance remain pending source review.",
         "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 1697181 bytes."
+        "Exact authoritative-source size: 1697181 bytes.",
+        "Retained in the inventory for lineage; not implemented because the City published Revision 17."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal: superseded by Revision 17 dated 2025-10-29",
+      "exclusion_reason": "Superseded by City of Albuquerque CIP Building Design Standards and Guidelines, Revision 17 (2025-10-29).",
       "local_path": null,
       "discovered_at": "2026-08-14T20:11:37.9433958Z",
-      "updated_at": "2026-08-14T20:11:37.9433958Z"
+      "updated_at": "2026-08-21T14:41:01.2532012Z"
     },
     {
       "id": "src-95c1274c2acfc0f4",
@@ -171278,7 +171290,7 @@
     },
     {
       "id": "src-a49ce7f75973154c",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-building-design-standards-2022-rev-13.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-building-design-standards-2022-rev-13.pdf",
       "r2_url": null,
@@ -171313,16 +171325,17 @@
         "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
         "Exact metadata and relevance remain pending source review.",
         "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 1762098 bytes."
+        "Exact authoritative-source size: 1762098 bytes.",
+        "Retained in the inventory for lineage; not implemented because the City published Revision 17."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal: superseded by Revision 17 dated 2025-10-29",
+      "exclusion_reason": "Superseded by City of Albuquerque CIP Building Design Standards and Guidelines, Revision 17 (2025-10-29).",
       "local_path": null,
       "discovered_at": "2026-08-14T20:11:37.9479087Z",
-      "updated_at": "2026-08-14T20:11:37.9479087Z"
+      "updated_at": "2026-08-21T14:41:01.2841554Z"
     },
     {
       "id": "src-a4ad6c820c11ab0c",
@@ -240083,20 +240096,20 @@
     },
     {
       "id": "src-e9eb53c6a03fbaba",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-building-design-standards-oct-2025-rev-17.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-building-design-standards-oct-2025-rev-17.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/public-works/city-facilities/cabq-cip-building-design-standards-rev-17-2025.pdf",
+      "r2_key": "public-works/city-facilities/cabq-cip-building-design-standards-rev-17-2025.pdf",
+      "r2_etag": "36cafb8cbd741e0643c383a4ec9476f2",
+      "r2_last_modified": "08/21/2026 08:35:47",
       "agency": "City of Albuquerque",
-      "title": "cip building design standards oct 2025 rev 17.pdf",
-      "date": null,
+      "title": "City of Albuquerque CIP Building Design Standards and Guidelines, Revision 17",
+      "date": "2025-10-29",
       "file_type": "PDF",
       "size_bytes": 4839146,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=460",
+      "checksum_sha256": "5d1543b3d84eaf369c18c1df30b88071de173ffbf6756360b71a2dd9afb550d8",
+      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-building-design-standards-oct-2025-rev-17.pdf/view",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=460"
       ],
@@ -240110,24 +240123,26 @@
       "crawl_depth": 1,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "official City Plone document-library listing and direct item URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City document-library listing and direct PDF recorded",
+      "proposed_canonical_page": "content/public-works/city-facilities.md",
+      "description": "Sets the City’s current requirements for architects and engineers designing capital-program buildings, covering civil, landscape, structural, architectural, mechanical, electrical, security, sustainability, commissioning, accessibility, and facility-maintenance considerations.",
+      "description_word_count": 26,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
-        "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 4839146 bytes."
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF will be preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "Revision 17 is dated October 29, 2025 and supersedes the older revisions retained in the discovery inventory."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/public-works/city-facilities.md",
+      "implementation_locations": [
+        "content/public-works/city-facilities.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-e9eb53c6a03fbaba.pdf",
       "discovered_at": "2026-08-14T20:11:37.9615219Z",
-      "updated_at": "2026-08-14T20:11:37.9615219Z"
+      "updated_at": "2026-08-21T14:41:13.1797768Z"
     },
     {
       "id": "src-ea1e46d50c2e92f1",
@@ -249339,7 +249354,7 @@
     },
     {
       "id": "src-f38aa346fc280f71",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/main-navigation/bus-and-bike/sun-van-paratransit-service",
       "direct_file_url": null,
       "r2_url": null,
@@ -249371,17 +249386,16 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Retained for URL lineage; current service page is implemented and validated separately."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal: superseded path for the current Sun Van service page",
+      "exclusion_reason": "Older navigation path duplicates the maintained Sun Van service page now implemented at /transit/services/paratransit-service.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.213794Z",
-      "updated_at": "2026-08-04T14:15:58.213794Z"
+      "updated_at": "2026-08-21T15:00:45.9513525Z"
     },
     {
       "id": "src-f395bf6738b82aa7",
@@ -250595,20 +250609,20 @@
     },
     {
       "id": "src-f4d22d7907cf46df",
-      "status": "pending review",
-      "source_url": "https://documents.cabq.gov/planning/MasterPlans/Rail%20Yards%20Master%20Plan/Albuquerque_Rail_Yards_Master_Plan-2023-06-07.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/council/projects/current-projects/albuquerque-rail-yards-redevelopment",
       "direct_file_url": "https://documents.cabq.gov/planning/MasterPlans/Rail%20Yards%20Master%20Plan/Albuquerque_Rail_Yards_Master_Plan-2023-06-07.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/projects/cabq-rail-yards-master-plan-2023.pdf",
+      "r2_key": "development-land-use/projects/cabq-rail-yards-master-plan-2023.pdf",
+      "r2_etag": "1a2560f6e9909e4b8e1a41a5a58aa034-28",
+      "r2_last_modified": "08/21/2026 08:49:22",
       "agency": "City of Albuquerque",
-      "title": "Large file size PDF",
-      "date": null,
+      "title": "Updated Rail Yards Master Plan",
+      "date": "2023-06-07",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/planning/plans-publications",
+      "size_bytes": 227660262,
+      "checksum_sha256": "a6ea6a73066e240d8e585cefc2bf21b06e9c3c42080fe75e68a38d6268d13f83",
+      "parent_url": "https://www.cabq.gov/council/council/projects/current-projects/albuquerque-rail-yards-redevelopment",
       "referring_urls": [
         "https://www.cabq.gov/planning/plans-publications"
       ],
@@ -250623,22 +250637,26 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City Council project page and City Planning PDF recorded",
+      "proposed_canonical_page": "content/development-land-use/projects.md",
+      "description": "Updates the adopted Rail Yards redevelopment framework, development regulations, design guidance, transportation recommendations, site concepts, phasing, and supporting appendices for Albuquerque’s historic rail-industrial complex.",
+      "description_word_count": 24,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF will be preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "User explicitly approved production R2 upload on 2026-08-21 despite the project threshold for files over 100 MB."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/projects.md",
+      "implementation_locations": [
+        "content/development-land-use/projects.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-f4d22d7907cf46df.pdf",
       "discovered_at": "2026-08-04T14:45:04.0759562Z",
-      "updated_at": "2026-08-04T14:45:04.0759562Z"
+      "updated_at": "2026-08-21T14:49:55.466107Z"
     },
     {
       "id": "src-f4d22da33bf52e2f",
@@ -272571,6 +272589,911 @@
       "local_path": null,
       "discovered_at": "2026-08-14T15:36:09.9680452Z",
       "updated_at": "2026-08-14T15:36:09.9680452Z"
+    },
+    {
+      "id": "src-44fbf6a5812ad64b",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/mra",
+      "direct_file_url": "https://www.cabq.gov/mra/documents/mra-annual-report-2023-final.pdf",
+      "r2_url": "https://files.abqinfo.com/development-land-use/projects/cabq-mra-annual-report-2023.pdf",
+      "r2_key": "development-land-use/projects/cabq-mra-annual-report-2023.pdf",
+      "r2_etag": "ace08a044fa3b0be60d737c434b08c32",
+      "r2_last_modified": "08/21/2026 08:36:02",
+      "agency": "City of Albuquerque Metropolitan Redevelopment Agency",
+      "title": "Metropolitan Redevelopment Agency Annual Report 2023",
+      "date": "2023",
+      "file_type": "PDF",
+      "size_bytes": 1601764,
+      "checksum_sha256": "e6864cff4befee793321e8bb8dd85944aa09aa596e300568846cad348a9342d6",
+      "parent_url": "https://www.cabq.gov/mra",
+      "referring_urls": [
+        "https://www.cabq.gov/mra"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/mra",
+        "https://www.cabq.gov/mra/documents/mra-annual-report-2023-final.pdf"
+      ],
+      "discovery_method": "official MRA document link",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official City MRA PDF and agency source page recorded",
+      "proposed_canonical_page": "content/development-land-use/projects.md",
+      "description": "Documents Albuquerque’s 2023 redevelopment pipeline, including housing, hotel and commercial investment, the Rail Trail, Downtown Forward, the Menaul planning effort, public financing tools, and completed or active MRA-supported projects.",
+      "description_word_count": 29,
+      "processing_notes": [
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF will be preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "Selected as a concise portfolio-level record rather than indexing every routine development announcement."
+      ],
+      "implementation_location": "content/development-land-use/projects.md",
+      "implementation_locations": [
+        "content/development-land-use/projects.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-44fbf6a5812ad64b.pdf",
+      "discovered_at": "2026-08-21T14:30:38.7697338Z",
+      "updated_at": "2026-08-21T14:41:13.2257144Z"
+    },
+    {
+      "id": "src-279f2f0cfa2a9c68",
+      "status": "excluded",
+      "source_url": "https://www.cabq.gov/economicdevelopment/news/city-of-albuquerque-continues-to-support-revitalization-of-historic-downtown-hotel",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "ARRIVE Albuquerque Hotel Rehabilitation",
+      "date": "2025",
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.cabq.gov/economicdevelopment",
+      "referring_urls": [
+        "https://www.cabq.gov/economicdevelopment"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/economicdevelopment",
+        "https://www.cabq.gov/economicdevelopment/news/city-of-albuquerque-continues-to-support-revitalization-of-historic-downtown-hotel"
+      ],
+      "discovery_method": "official City project update",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": null,
+      "description": null,
+      "description_word_count": 0,
+      "processing_notes": [
+        "Added through official City project update from the recorded authoritative source graph.",
+        "Reviewed during the facilities and development gap pass."
+      ],
+      "implementation_location": null,
+      "implementation_locations": [],
+      "cross_listing_approved": false,
+      "validation_status": "terminal: not selected for the focused current-project index",
+      "exclusion_reason": "Not selected for the focused current-project index; official article is largely promotional and less useful than the portfolio report and active project pages.",
+      "local_path": null,
+      "discovered_at": "2026-08-21T14:30:50.0340446Z",
+      "updated_at": "2026-08-21T14:41:43.8618823Z"
+    },
+    {
+      "id": "src-7866aab2f7338c18",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/health-housing-homelessness/gateway-system-of-care/gateway-center/gateway-center-1",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Gateway Center",
+      "date": "2026",
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.cabq.gov/health-housing-homelessness/gateway-system-of-care",
+      "referring_urls": [
+        "https://www.cabq.gov/health-housing-homelessness/gateway-system-of-care"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/health-housing-homelessness/gateway-system-of-care",
+        "https://www.cabq.gov/health-housing-homelessness/gateway-system-of-care/gateway-center/gateway-center-1"
+      ],
+      "discovery_method": "official City facility page",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official City facility page recorded",
+      "proposed_canonical_page": "content/public-works/city-facilities.md",
+      "description": "Tracks the City’s conversion of the former 572,000-square-foot hospital campus into shelter, housing-navigation, first-responder receiving, medical-respite, sobering, behavioral-health, and related community services.",
+      "description_word_count": 22,
+      "processing_notes": [
+        "Added through official City facility page from the recorded authoritative source graph."
+      ],
+      "implementation_location": "content/public-works/city-facilities.md",
+      "implementation_locations": [
+        "content/public-works/city-facilities.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": null,
+      "discovered_at": "2026-08-21T14:37:31.2091468Z",
+      "updated_at": "2026-08-21T14:42:00.7142672Z"
+    },
+    {
+      "id": "src-7016f4a70ccf6480",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/news/city-opens-southwest-safety-center-to-better-serve-west-side-families",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Southwest Safety Center",
+      "date": "2025",
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.cabq.gov/municipaldevelopment",
+      "referring_urls": [
+        "https://www.cabq.gov/municipaldevelopment"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/municipaldevelopment",
+        "https://www.cabq.gov/municipaldevelopment/news/city-opens-southwest-safety-center-to-better-serve-west-side-families"
+      ],
+      "discovery_method": "official City facility project update",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official City facility project update recorded",
+      "proposed_canonical_page": "content/public-works/city-facilities.md",
+      "description": "Documents the 21,000-square-foot West Side campus combining Albuquerque Fire Rescue Station 23, Albuquerque Police Department space, and Albuquerque Community Safety operations—the City’s first new fire station in two decades.",
+      "description_word_count": 29,
+      "processing_notes": [
+        "Added through official City facility project update from the recorded authoritative source graph."
+      ],
+      "implementation_location": "content/public-works/city-facilities.md",
+      "implementation_locations": [
+        "content/public-works/city-facilities.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": null,
+      "discovered_at": "2026-08-21T14:37:34.0135439Z",
+      "updated_at": "2026-08-21T14:42:07.3778706Z"
+    },
+    {
+      "id": "src-90e54dce49f86710",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/fire/news/charging-forward-breaking-ground-on-station-4-at-coronado-park",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Fire Station 4 at Coronado Park",
+      "date": "2025",
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.cabq.gov/fire",
+      "referring_urls": [
+        "https://www.cabq.gov/fire"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/fire",
+        "https://www.cabq.gov/fire/news/charging-forward-breaking-ground-on-station-4-at-coronado-park"
+      ],
+      "discovery_method": "official City facility project update",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official City facility project update recorded",
+      "proposed_canonical_page": "content/public-works/city-facilities.md",
+      "description": "Describes the $13.2 million replacement of the 1961 firehouse with a modern three-bay station, including the project location, public-safety purpose, construction schedule, and relationship to the larger Coronado Park safety facility.",
+      "description_word_count": 31,
+      "processing_notes": [
+        "Added through official City facility project update from the recorded authoritative source graph."
+      ],
+      "implementation_location": "content/public-works/city-facilities.md",
+      "implementation_locations": [
+        "content/public-works/city-facilities.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": null,
+      "discovered_at": "2026-08-21T14:37:36.8693472Z",
+      "updated_at": "2026-08-21T14:42:12.7131581Z"
+    },
+    {
+      "id": "src-64e6b5953bddaf8c",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/parksandrecreation/featured-projects/international-district-library-park-project",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "International District Library Park Project",
+      "date": "2025",
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.cabq.gov/parksandrecreation/featured-projects",
+      "referring_urls": [
+        "https://www.cabq.gov/parksandrecreation/featured-projects"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/parksandrecreation/featured-projects",
+        "https://www.cabq.gov/parksandrecreation/featured-projects/international-district-library-park-project"
+      ],
+      "discovery_method": "official City facility project page",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official City facility project page recorded",
+      "proposed_canonical_page": "content/public-works/city-facilities.md",
+      "description": "Provides the master-planning history, current design, concept maps, amenities, and public updates for the park completing the International District Library campus along Central Avenue.",
+      "description_word_count": 24,
+      "processing_notes": [
+        "Added through official City facility project page from the recorded authoritative source graph."
+      ],
+      "implementation_location": "content/public-works/city-facilities.md",
+      "implementation_locations": [
+        "content/public-works/city-facilities.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": null,
+      "discovered_at": "2026-08-21T14:37:39.7415144Z",
+      "updated_at": "2026-08-21T14:42:17.8408478Z"
+    },
+    {
+      "id": "src-f0a83bd9e920650b",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/mra/news/new-hotel-and-food-hall-break-ground-on-central-avenue",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Highlands Central Market and Residence Inn",
+      "date": "2025",
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.cabq.gov/mra",
+      "referring_urls": [
+        "https://www.cabq.gov/mra"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/mra",
+        "https://www.cabq.gov/mra/news/new-hotel-and-food-hall-break-ground-on-central-avenue"
+      ],
+      "discovery_method": "official MRA project update",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official City MRA project update recorded",
+      "proposed_canonical_page": "content/development-land-use/projects.md",
+      "description": "Tracks a 126-room hotel and food hall across from Presbyterian Hospital, including the project’s mixed-use role, pedestrian improvements, public redevelopment incentive, expected opening, and connection to the larger Highlands development.",
+      "description_word_count": 30,
+      "processing_notes": [
+        "Added through official MRA project update from the recorded authoritative source graph."
+      ],
+      "implementation_location": "content/development-land-use/projects.md",
+      "implementation_locations": [
+        "content/development-land-use/projects.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": null,
+      "discovered_at": "2026-08-21T14:30:42.5215463Z",
+      "updated_at": "2026-08-21T14:42:23.5160926Z"
+    },
+    {
+      "id": "src-08590a95e933fe6d",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/mra/news/major-redevelopment-launches-at-300-san-mateo-blvd-ne",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Serenade at Park Central",
+      "date": "2026",
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.cabq.gov/mra",
+      "referring_urls": [
+        "https://www.cabq.gov/mra"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/mra",
+        "https://www.cabq.gov/mra/news/major-redevelopment-launches-at-300-san-mateo-blvd-ne"
+      ],
+      "discovery_method": "official MRA project update",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official City MRA project update recorded",
+      "proposed_canonical_page": "content/development-land-use/projects.md",
+      "description": "Documents the conversion of a long-vacant ten-story office tower at 300 San Mateo Boulevard into 110 mixed-income homes, including 41 affordable units, through a City-supported adaptive-reuse project.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through official MRA project update from the recorded authoritative source graph."
+      ],
+      "implementation_location": "content/development-land-use/projects.md",
+      "implementation_locations": [
+        "content/development-land-use/projects.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": null,
+      "discovered_at": "2026-08-21T14:30:46.0990786Z",
+      "updated_at": "2026-08-21T14:42:28.8612187Z"
+    },
+    {
+      "id": "src-a7142e5881e12e74",
+      "status": "validated",
+      "source_url": "https://www.census.gov/quickfacts/fact/table/albuquerquecitynewmexico/BZA010223",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "U.S. Census Bureau",
+      "title": "QuickFacts: Albuquerque City, New Mexico",
+      "date": "2026",
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.census.gov/quickfacts/",
+      "referring_urls": [
+        "https://www.census.gov/quickfacts/"
+      ],
+      "discovery_path": [
+        "https://www.census.gov/quickfacts/",
+        "https://www.census.gov/quickfacts/fact/table/albuquerquecitynewmexico/BZA010223"
+      ],
+      "discovery_method": "official Census data product",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official U.S. Census Bureau data product recorded",
+      "proposed_canonical_page": "content/city-data/demographics.md",
+      "description": "Provides the Census Bureau’s maintained city-level estimates and statistics for population, age, race and ethnicity, housing, households, language, education, disability, employment, income, poverty, commuting, and business activity.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through official Census data product from the recorded authoritative source graph.",
+        "Authoritative Census QuickFacts page retrieved successfully through browser validation on 2026-08-21; the Census site returned HTTP 403 only to the scripted validator."
+      ],
+      "implementation_location": "content/city-data/demographics.md",
+      "implementation_locations": [
+        "content/city-data/demographics.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative Census QuickFacts page retrieved through browser validation; scripted validator receives site-controlled HTTP 403",
+      "exclusion_reason": null,
+      "local_path": null,
+      "discovered_at": "2026-08-21T14:54:15.0985949Z",
+      "updated_at": "2026-08-21T15:14:04.1632839Z"
+    },
+    {
+      "id": "src-3448fc9bceee12b7",
+      "status": "excluded",
+      "source_url": "https://www.cabq.gov/abq-data",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "ABQ Data Open Data Portal",
+      "date": null,
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.cabq.gov",
+      "referring_urls": [
+        "https://www.cabq.gov"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov",
+        "https://www.cabq.gov/abq-data"
+      ],
+      "discovery_method": "official City open-data portal",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": null,
+      "description": null,
+      "description_word_count": 0,
+      "processing_notes": [
+        "Reviewed during the sparse-page expansion; not implemented as a public-safety link."
+      ],
+      "implementation_location": null,
+      "implementation_locations": [],
+      "cross_listing_approved": false,
+      "validation_status": "terminal: broad portal not selected for the focused public-safety page",
+      "exclusion_reason": "The general ABQ Data portal is less useful here than the direct APD statistics and NIBRS sources.",
+      "local_path": null,
+      "discovered_at": "2026-08-21T14:54:54.6772927Z",
+      "updated_at": "2026-08-21T15:00:42.2103223Z"
+    },
+    {
+      "id": "src-084ea6d74523fb92",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports",
+      "direct_file_url": "https://www.cabq.gov/dfa/documents/agency-6004-city-of-albuquerque-fy25-acfr-final-web.pdf",
+      "r2_url": "https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2025.pdf",
+      "r2_key": "city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2025.pdf",
+      "r2_etag": "01e5000283eef86ad96dd2b5477dc443-3",
+      "r2_last_modified": "08/21/2026 08:57:14",
+      "agency": "City of Albuquerque",
+      "title": "City of Albuquerque Annual Comprehensive Financial Report 2025",
+      "date": "2025-06-30",
+      "file_type": "PDF",
+      "size_bytes": 19873341,
+      "checksum_sha256": "5c73033e6fa1a2d534548608e1f2a9d04743f9e461e2d40cf19f931286194177",
+      "parent_url": "https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports",
+      "referring_urls": [
+        "https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports"
+      ],
+      "discovery_method": "official City financial-report listing",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official City financial-report archive and direct PDF recorded",
+      "proposed_canonical_page": "content/city-data/budget-spending.md",
+      "description": "Presents Albuquerque’s independently audited financial statements for the year ended June 30, 2025, including fund balances, revenues, expenditures, debt, pensions, capital assets, enterprise operations, statistical trends, and budget-to-actual schedules.",
+      "description_word_count": 29,
+      "processing_notes": [
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF will be preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
+      ],
+      "implementation_location": "content/city-data/budget-spending.md",
+      "implementation_locations": [
+        "content/city-data/budget-spending.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-084ea6d74523fb92.pdf",
+      "discovered_at": "2026-08-21T14:54:08.0404741Z",
+      "updated_at": "2026-08-21T15:02:33.2799976Z"
+    },
+    {
+      "id": "src-2ddfe4b7c2a75264",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/transit/services/paratransit-service",
+      "direct_file_url": "https://www.cabq.gov/transit/services/paratransit-service/paratransit-service/resolveuid/585c81b1004f48dfa5ea3ed8583f86a0",
+      "r2_url": "https://files.abqinfo.com/transportation/transit/sun-van/cabq-sun-van-passenger-guide-2025.pdf",
+      "r2_key": "transportation/transit/sun-van/cabq-sun-van-passenger-guide-2025.pdf",
+      "r2_etag": "b059379d81d0aedad59777a1ca962c3f",
+      "r2_last_modified": "08/21/2026 08:57:28",
+      "agency": "City of Albuquerque Transit Department",
+      "title": "Sun Van and You Passenger Guide",
+      "date": "2025-06",
+      "file_type": "PDF",
+      "size_bytes": 211305,
+      "checksum_sha256": "217ead4e353b615f7fcd3f87a6842d75429e15139c35ce4a723cfcc5df0f80b3",
+      "parent_url": "https://www.cabq.gov/transit/services/paratransit-service",
+      "referring_urls": [
+        "https://www.cabq.gov/transit/services/paratransit-service"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/transit/services/paratransit-service"
+      ],
+      "discovery_method": "official Sun Van resource link",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official Sun Van service page and linked June 2025 PDF recorded",
+      "proposed_canonical_page": "content/transportation/transit/sun-van.md",
+      "description": "Explains current Sun Van eligibility, applications, reservations, service areas and hours, trip procedures, personal-care attendants, mobility devices, visitor access, no-show rules, rider responsibilities, and the eligibility-appeal process.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF will be preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
+      ],
+      "implementation_location": "content/transportation/transit/sun-van.md",
+      "implementation_locations": [
+        "content/transportation/transit/sun-van.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-2ddfe4b7c2a75264.pdf",
+      "discovered_at": "2026-08-21T14:54:11.553561Z",
+      "updated_at": "2026-08-21T15:02:33.3028603Z"
+    },
+    {
+      "id": "src-4f0be0584ea4fb17",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/police/crime-statistics",
+      "direct_file_url": "https://www.cabq.gov/police/documents/crime-stats-2017-2022-final-16mar2023.pdf",
+      "r2_url": "https://files.abqinfo.com/city-data/public-safety/cabq-crime-statistics-2017-2022.pdf",
+      "r2_key": "city-data/public-safety/cabq-crime-statistics-2017-2022.pdf",
+      "r2_etag": "1a5b970f0cc73c2ede6fa6d399d3160e",
+      "r2_last_modified": "08/21/2026 08:57:58",
+      "agency": "Albuquerque Police Department",
+      "title": "Crime in Albuquerque 2017–2022",
+      "date": "2023-03-16",
+      "file_type": "PDF",
+      "size_bytes": 624641,
+      "checksum_sha256": "aa6aa2cbb47c0597fcb4644432aca2210ab551de93ba7914186320e0c92644b5",
+      "parent_url": "https://www.cabq.gov/police/crime-statistics",
+      "referring_urls": [
+        "https://www.cabq.gov/police/crime-statistics"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/police/crime-statistics",
+        "https://www.cabq.gov/police/documents/crime-stats-2017-2022-final-16mar2023.pdf"
+      ],
+      "discovery_method": "official APD historical crime report",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official APD crime-statistics hub and direct historical-report PDF recorded",
+      "proposed_canonical_page": "content/city-data/public-safety-data.md",
+      "description": "Preserves APD’s six-year comparison of violent and property crime from 2017 through 2022, with category-level trends, reporting-method explanations, fixed-point-in-time limitations, and FBI-derived historical data.",
+      "description_word_count": 24,
+      "processing_notes": [
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF will be preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
+      ],
+      "implementation_location": "content/city-data/public-safety-data.md",
+      "implementation_locations": [
+        "content/city-data/public-safety-data.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-4f0be0584ea4fb17.pdf",
+      "discovered_at": "2026-08-21T14:54:59.168586Z",
+      "updated_at": "2026-08-21T15:02:33.3419753Z"
+    },
+    {
+      "id": "src-1ef3e26eafa2689e",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/dfa/budget/annual-budget",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "City of Albuquerque Annual Budget Archive",
+      "date": null,
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.cabq.gov/dfa/budget",
+      "referring_urls": [
+        "https://www.cabq.gov/dfa/budget"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/dfa/budget",
+        "https://www.cabq.gov/dfa/budget/annual-budget"
+      ],
+      "discovery_method": "official City budget archive",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official City budget archive recorded",
+      "proposed_canonical_page": "content/city-data/budget-spending.md",
+      "description": "Maintains the City’s approved and proposed operating budgets by fiscal year, allowing comparison of current appropriations with earlier financial plans and departmental priorities.",
+      "description_word_count": 23,
+      "processing_notes": [
+        "Added through official City budget archive from the recorded authoritative source graph."
+      ],
+      "implementation_location": "content/city-data/budget-spending.md",
+      "implementation_locations": [
+        "content/city-data/budget-spending.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": null,
+      "discovered_at": "2026-08-21T14:54:23.9029325Z",
+      "updated_at": "2026-08-21T15:04:41.7562687Z"
+    },
+    {
+      "id": "src-739a9bba8cf8de4c",
+      "status": "validated",
+      "source_url": "https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "MRCOG",
+      "title": "MRMPO Socioeconomic Forecasts",
+      "date": "2045",
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.mrcog-nm.gov/150/Socioeconomic-Data",
+      "referring_urls": [
+        "https://www.mrcog-nm.gov/150/Socioeconomic-Data"
+      ],
+      "discovery_path": [
+        "https://www.mrcog-nm.gov/150/Socioeconomic-Data",
+        "https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts"
+      ],
+      "discovery_method": "official regional data product",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official MRCOG socioeconomic forecast page recorded",
+      "proposed_canonical_page": "content/city-data/demographics.md",
+      "description": "Provides downloadable population, housing, and employment estimates and forecasts through 2045 for counties and small-area Data Analysis Subzones used in regional transportation and land-use planning.",
+      "description_word_count": 25,
+      "processing_notes": [
+        "Added through official regional data product from the recorded authoritative source graph."
+      ],
+      "implementation_location": "content/city-data/demographics.md",
+      "implementation_locations": [
+        "content/city-data/demographics.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": null,
+      "discovered_at": "2026-08-21T14:54:18.5267832Z",
+      "updated_at": "2026-08-21T15:04:49.2433259Z"
+    },
+    {
+      "id": "src-6f6268207f99a8c4",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/planning/boards-commissions/development-process-manual-executive-committee/amendments-to-the-dpm",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Development Process Manual Amendments",
+      "date": null,
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.cabq.gov/planning/development-review-services",
+      "referring_urls": [
+        "https://www.cabq.gov/planning/development-review-services"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/planning/development-review-services",
+        "https://www.cabq.gov/planning/boards-commissions/development-process-manual-executive-committee/amendments-to-the-dpm"
+      ],
+      "discovery_method": "official DPM amendment register",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official City DPM amendment register recorded",
+      "proposed_canonical_page": "content/development-land-use/development-process.md",
+      "description": "Maintains proposed and approved changes to the DPM. Check this register with the archived signed manual because later committee actions may change individual chapters or technical requirements.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through official DPM amendment register from the recorded authoritative source graph."
+      ],
+      "implementation_location": "content/development-land-use/development-process.md",
+      "implementation_locations": [
+        "content/development-land-use/development-process.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": null,
+      "discovered_at": "2026-08-21T14:54:33.9422645Z",
+      "updated_at": "2026-08-21T15:05:00.1856823Z"
+    },
+    {
+      "id": "src-cec3ae3ad800ae86",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/police/crime-statistics",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Albuquerque Police Crime Statistics",
+      "date": "2026",
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.cabq.gov/police",
+      "referring_urls": [
+        "https://www.cabq.gov/police"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/police",
+        "https://www.cabq.gov/police/crime-statistics"
+      ],
+      "discovery_method": "official APD statistics hub",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official APD statistics hub recorded",
+      "proposed_canonical_page": "content/city-data/public-safety-data.md",
+      "description": "Provides APD’s current monthly snapshot, crime trends, homicides, calls for service, arrests, traffic reporting, officer-involved-shooting records, and links to crime mapping and detailed statistical series.",
+      "description_word_count": 25,
+      "processing_notes": [
+        "Added through official APD statistics hub from the recorded authoritative source graph."
+      ],
+      "implementation_location": "content/city-data/public-safety-data.md",
+      "implementation_locations": [
+        "content/city-data/public-safety-data.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": null,
+      "discovered_at": "2026-08-21T14:54:40.2449717Z",
+      "updated_at": "2026-08-21T15:05:05.2610077Z"
+    },
+    {
+      "id": "src-5062a3631414b26e",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/police/crime-statistics/nibrs",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Albuquerque NIBRS Crime Statistics",
+      "date": "2026",
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.cabq.gov/police/crime-statistics",
+      "referring_urls": [
+        "https://www.cabq.gov/police/crime-statistics"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/police/crime-statistics",
+        "https://www.cabq.gov/police/crime-statistics/nibrs"
+      ],
+      "discovery_method": "official APD NIBRS reporting hub",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official APD NIBRS reporting hub recorded",
+      "proposed_canonical_page": "content/city-data/public-safety-data.md",
+      "description": "Explains APD’s National Incident-Based Reporting System methodology and maintains current violent, property, and society crime reports, including citywide and quarterly comparisons.",
+      "description_word_count": 21,
+      "processing_notes": [
+        "Added through official APD NIBRS reporting hub from the recorded authoritative source graph."
+      ],
+      "implementation_location": "content/city-data/public-safety-data.md",
+      "implementation_locations": [
+        "content/city-data/public-safety-data.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": null,
+      "discovered_at": "2026-08-21T14:54:45.3637062Z",
+      "updated_at": "2026-08-21T15:05:10.3902699Z"
+    },
+    {
+      "id": "src-cd3a6c790cb30a46",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/police/crime-statistics/crime-stats-by-area-command",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "APD Crime Statistics by Area Command",
+      "date": "2026",
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.cabq.gov/police/crime-statistics",
+      "referring_urls": [
+        "https://www.cabq.gov/police/crime-statistics"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/police/crime-statistics",
+        "https://www.cabq.gov/police/crime-statistics/crime-stats-by-area-command"
+      ],
+      "discovery_method": "official APD area-command data",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official APD area-command statistics page recorded",
+      "proposed_canonical_page": "content/city-data/public-safety-data.md",
+      "description": "Organizes recent crime statistics geographically by APD area command, making neighborhood-scale patterns easier to locate than in citywide totals alone.",
+      "description_word_count": 20,
+      "processing_notes": [
+        "Added through official APD area-command data from the recorded authoritative source graph."
+      ],
+      "implementation_location": "content/city-data/public-safety-data.md",
+      "implementation_locations": [
+        "content/city-data/public-safety-data.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": null,
+      "discovered_at": "2026-08-21T14:54:50.2110041Z",
+      "updated_at": "2026-08-21T15:05:30.3236712Z"
+    },
+    {
+      "id": "src-5fd74920802643e4",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/transit/services/paratransit-service/trial-new-sun-van-application",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Sun Van Eligibility Process",
+      "date": "2026",
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.cabq.gov/transit/services/paratransit-service",
+      "referring_urls": [
+        "https://www.cabq.gov/transit/services/paratransit-service"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/transit/services/paratransit-service",
+        "https://www.cabq.gov/transit/services/paratransit-service/trial-new-sun-van-application"
+      ],
+      "discovery_method": "official Sun Van child page",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official Sun Van eligibility page recorded",
+      "proposed_canonical_page": "content/transportation/transit/sun-van.md",
+      "description": "Explains functional eligibility, interviews, the 21-day decision timeline, conditional eligibility, personal-care attendants, visitor access, appeals, and how to begin the online application process.",
+      "description_word_count": 23,
+      "processing_notes": [
+        "Added through official Sun Van child page from the recorded authoritative source graph."
+      ],
+      "implementation_location": "content/transportation/transit/sun-van.md",
+      "implementation_locations": [
+        "content/transportation/transit/sun-van.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": null,
+      "discovered_at": "2026-08-21T14:59:35.9155854Z",
+      "updated_at": "2026-08-21T15:05:42.308539Z"
     }
   ]
 }

@@ -7,13 +7,13 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
-$plan = Get-Content -Raw -LiteralPath $PlanPath | ConvertFrom-Json
+$plan = Get-Content -Raw -Encoding UTF8 -LiteralPath $PlanPath | ConvertFrom-Json
 $items = @($plan.items)
 $added = [int64](($items | Measure-Object -Property size_bytes -Sum).Sum)
 $projected = [int64]$plan.current_r2_bytes + $added
 $large = @($items | Where-Object { $_.size_bytes -gt 25MB })
 $overLimit = @($items | Where-Object { $_.size_bytes -gt [int64]$plan.maximum_object_bytes })
-$inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
 $terminal = @('validated','excluded','duplicate','superseded','blocked','requires human review')
 $remaining = @($inventory.candidates | Where-Object { $_.status -notin $terminal -and $_.id -notin $items.id })
 $remainingKnown = @($remaining | Where-Object { $null -ne $_.size_bytes -and [int64]$_.size_bytes -gt 0 } |

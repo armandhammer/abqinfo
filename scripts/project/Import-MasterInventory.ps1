@@ -147,7 +147,7 @@ function New-Record([string]$Url, [string]$Title, [string]$Status) {
 
 $records = @{}
 if (-not $Rebuild -and (Test-Path -LiteralPath $InventoryPath)) {
-  $prior = Get-Content -Raw $InventoryPath | ConvertFrom-Json
+  $prior = Get-Content -Raw -Encoding UTF8 $InventoryPath | ConvertFrom-Json
   foreach ($record in $prior.candidates) {
     $copy = [ordered]@{}
     foreach ($property in $record.PSObject.Properties) { $copy[$property.Name] = $property.Value }
@@ -196,7 +196,7 @@ function Merge-Record([System.Collections.IDictionary]$Incoming) {
 }
 
 foreach ($file in Get-ChildItem content -Recurse -Filter *.md) {
-  $lines = Get-Content $file.FullName
+  $lines = Get-Content -Encoding UTF8 $file.FullName
   for ($index = 0; $index -lt $lines.Count; $index++) {
     $matches = [regex]::Matches($lines[$index], '\[(?<title>[^\]]+)\]\((?<url>https?://[^\)\s]+)\)')
     foreach ($match in $matches) {
@@ -224,7 +224,7 @@ foreach ($file in Get-ChildItem content -Recurse -Filter *.md) {
 }
 
 if (Test-Path -LiteralPath 'project-state/r2-inventory.json') {
-  $r2Inventory = Get-Content -Raw 'project-state/r2-inventory.json' | ConvertFrom-Json
+  $r2Inventory = Get-Content -Raw -Encoding UTF8 'project-state/r2-inventory.json' | ConvertFrom-Json
   foreach ($object in $r2Inventory.objects) {
     $record = New-Record ([string]$object.public_url) ([IO.Path]::GetFileNameWithoutExtension([string]$object.key) -replace '[-_]',' ') 'requires human review'
     $record.r2_key = [string]$object.key
@@ -239,7 +239,7 @@ if (Test-Path -LiteralPath 'project-state/r2-inventory.json') {
 $legacyPaths = @('research/audit/discovery-candidates.json','research/audit/nmdot-discovery.json')
 foreach ($legacyPath in $legacyPaths) {
   if (-not (Test-Path -LiteralPath $legacyPath)) { continue }
-  $legacy = Get-Content -Raw $legacyPath | ConvertFrom-Json
+  $legacy = Get-Content -Raw -Encoding UTF8 $legacyPath | ConvertFrom-Json
   $items = @()
   foreach ($collectionName in @('candidates','deferred_candidates','candidate_documents','authoritative_live_sources')) {
     $collection = Get-PropertyValue $legacy $collectionName
@@ -267,7 +267,7 @@ foreach ($legacyPath in $legacyPaths) {
 $excludedDiscoveryFiles = @{}
 $discoveryImportExclusionsPath = 'project-state/discovery/import-exclusions.json'
 if (Test-Path -LiteralPath $discoveryImportExclusionsPath) {
-  foreach ($item in (Get-Content -Raw -LiteralPath $discoveryImportExclusionsPath | ConvertFrom-Json)) {
+  foreach ($item in (Get-Content -Raw -Encoding UTF8 -LiteralPath $discoveryImportExclusionsPath | ConvertFrom-Json)) {
     $excludedDiscoveryFiles[[string]$item.file] = [string]$item.reason
   }
 }
@@ -276,7 +276,7 @@ $discoveryFiles = @(
   Get-ChildItem 'project-state/discovery' -Filter '*-crawl.json' -File -ErrorAction SilentlyContinue
 ) | Where-Object { -not $excludedDiscoveryFiles.ContainsKey($_.Name) }
 foreach ($discoveryFile in $discoveryFiles) {
-  $discovery = Get-Content -Raw -LiteralPath $discoveryFile.FullName | ConvertFrom-Json
+  $discovery = Get-Content -Raw -Encoding UTF8 -LiteralPath $discoveryFile.FullName | ConvertFrom-Json
   $agencyName = [string](Get-PropertyValue $discovery 'agency')
   $crawlSource = [string](Get-PropertyValue $discovery 'source_url')
   if ($crawlSource -and (Test-DiscoveryCandidate $agencyName $crawlSource)) {
@@ -337,7 +337,7 @@ foreach ($discoveryFile in $discoveryFiles) {
 
 $lineagePath = 'project-state/discovery/pdf-lineage-references.json'
 if (Test-Path -LiteralPath $lineagePath) {
-  $lineage = Get-Content -Raw -LiteralPath $lineagePath | ConvertFrom-Json
+  $lineage = Get-Content -Raw -Encoding UTF8 -LiteralPath $lineagePath | ConvertFrom-Json
   foreach ($reference in @($lineage.references)) {
     $record = New-Record ("https://lineage.invalid/{0}" -f $reference.id) ([string]$reference.referenced_title) 'pending review'
     $record.id = [string]$reference.id
@@ -369,7 +369,7 @@ if (Test-Path -LiteralPath $lineagePath) {
 
 $stagingCandidateByPath = @{}
 if (Test-Path -LiteralPath 'project-state/staging-manifest.json') {
-  foreach ($item in (Get-Content -Raw -LiteralPath 'project-state/staging-manifest.json' | ConvertFrom-Json)) {
+  foreach ($item in (Get-Content -Raw -Encoding UTF8 -LiteralPath 'project-state/staging-manifest.json' | ConvertFrom-Json)) {
     $stagingCandidateByPath[([string]$item.local_path).Replace('\','/')] = [string]$item.candidate_id
   }
 }
@@ -403,7 +403,7 @@ foreach ($file in Get-ChildItem research/staging -Recurse -Filter *.pdf -ErrorAc
 $overridePaths = @($OverridesPath)
 $overridePaths += @(Get-ChildItem 'project-state/discovery' -Filter '*-overrides.json' -File -ErrorAction SilentlyContinue | ForEach-Object FullName)
 foreach ($overridePath in @($overridePaths | Where-Object { Test-Path -LiteralPath $_ } | Sort-Object -Unique)) {
-  $overrides = Get-Content -Raw -LiteralPath $overridePath | ConvertFrom-Json
+  $overrides = Get-Content -Raw -Encoding UTF8 -LiteralPath $overridePath | ConvertFrom-Json
   foreach ($override in @($overrides)) {
     $overrideId = Get-PropertyValue $override 'id'
     $matchUrl = Get-PropertyValue $override 'match_url'
@@ -431,7 +431,7 @@ foreach ($overridePath in @($overridePaths | Where-Object { Test-Path -LiteralPa
 # User-approved quality exclusions are applied after ordinary metadata overrides so
 # broad recrawls cannot silently re-promote material deliberately removed from the site.
 if (Test-Path -LiteralPath $QualityExclusionsPath) {
-  $qualityExclusions = Get-Content -Raw $QualityExclusionsPath | ConvertFrom-Json
+  $qualityExclusions = Get-Content -Raw -Encoding UTF8 $QualityExclusionsPath | ConvertFrom-Json
   foreach ($exclusion in $qualityExclusions) {
     $matchUrl = ([string](Get-PropertyValue $exclusion 'url')).TrimEnd('/')
     if (-not $matchUrl) { continue }

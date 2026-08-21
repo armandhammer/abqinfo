@@ -8,9 +8,9 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
-$plan = Get-Content -Raw -LiteralPath $PlanPath | ConvertFrom-Json
-$publicValidation = Get-Content -Raw -LiteralPath $PublicValidationPath | ConvertFrom-Json
-$inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+$plan = Get-Content -Raw -Encoding UTF8 -LiteralPath $PlanPath | ConvertFrom-Json
+$publicValidation = Get-Content -Raw -Encoding UTF8 -LiteralPath $PublicValidationPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
 
 foreach ($item in @($plan.items)) {
   $matches = @($inventory.candidates | Where-Object id -eq $item.id)
@@ -23,7 +23,7 @@ foreach ($item in @($plan.items)) {
   $publicResult = @($publicValidation.results | Where-Object id -eq $item.id)
   if ($publicResult.Count -ne 1 -or -not $publicResult[0].byte_identical) { throw "Missing byte-identical public R2 validation for '$($item.id)'." }
   if ([string]$publicResult[0].checksum_sha256 -ne $sha) { throw "Public R2 SHA-256 mismatch for '$($item.id)'." }
-  $page = Get-Content -Raw -LiteralPath $item.proposed_canonical_page
+  $page = Get-Content -Raw -Encoding UTF8 -LiteralPath $item.proposed_canonical_page
   if ($page -notlike "*$($candidate.r2_url)*") { throw "R2 URL is missing from '$($item.proposed_canonical_page)' for '$($item.id)'." }
 
   $candidate.status = 'requires human review'
@@ -45,6 +45,6 @@ $json = $inventory | ConvertTo-Json -Depth 12
 $fullPath = [IO.Path]::GetFullPath($InventoryPath)
 $temporaryPath = "$fullPath.tmp-$PID"
 [IO.File]::WriteAllText($temporaryPath, $json, [Text.UTF8Encoding]::new($false))
-[IO.File]::Move($temporaryPath, $fullPath, $true)
+Move-Item -LiteralPath $temporaryPath -Destination $fullPath -Force
 
 [pscustomobject]@{ Finalized=$plan.items.Count; Status='requires human review'; NextPending=$inventory.next_pending_id } | ConvertTo-Json -Compress
