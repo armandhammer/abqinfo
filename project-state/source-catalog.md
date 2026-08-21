@@ -1,14 +1,14 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-20T19:22:57.4230627Z
+Generated: 2026-08-20T20:50:06.1707382Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 5783 candidates and 291 R2 objects totaling 3332752067 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 5801 candidates and 301 R2 objects totaling 3459622981 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 4074 |
+| pending review | 4082 |
 | approved for addition | 0 |
 | downloading | 0 |
 | downloaded | 0 |
@@ -16,7 +16,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 24 |
-| validated | 414 |
+| validated | 424 |
 | excluded | 735 |
 | duplicate | 450 |
 | superseded | 19 |
@@ -35,9 +35,18 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | APS Vision Zero Task Force Meeting 3 Notes | Albuquerque Public Schools | 2022-08-29 | PDF | 283326 | content/transportation/bicycling/safety-crash-data.md | [source](https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources) | [R2](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-3-2022.pdf) |
 | APS Vision Zero Task Force Meeting 4 Notes | Albuquerque Public Schools | 2023-02-09 | PDF | 547777 | content/transportation/bicycling/safety-crash-data.md | [source](https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources) | [R2](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-4-2023.pdf) |
 | APS Vision Zero Task Force Meeting 5 Notes | Albuquerque Public Schools | 2023-05-18 | PDF | 203290 | content/transportation/bicycling/safety-crash-data.md | [source](https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources) | [R2](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-task-force-meeting-5-2023.pdf) |
+| 118th Street Alignment Study | Bernalillo County | 2019 | PDF | 10361388 | content/transportation/transportation-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/transportation-plans/bernco-118th-street-alignment-study-2019.pdf) |
+| 118th Street Amole Mesa to Eucariz Alignment Study | Bernalillo County | 2023 | PDF | 19767136 | content/transportation/transportation-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/transportation-plans/bernco-118th-street-amole-mesa-eucariz-alignment-study-2023.pdf) |
+| Alameda Drain and Trail Master Plan | Bernalillo County | 2016 | PDF | 36161172 | content/transportation/bicycling/bike-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-alameda-drain-trail-master-plan-2016.pdf) |
+| Atrisco Vista Boulevard Alignment Study | Bernalillo County | 2024 | PDF | 8507386 | content/transportation/transportation-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/transportation-plans/bernco-atrisco-vista-boulevard-alignment-study-2024.pdf) |
+| Bernalillo County Pedestrian–Bicyclist Safety Action Plan | Bernalillo County | 2025 | PDF | 13379911 | content/transportation/bicycling/safety-crash-data.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/bernco-pedestrian-bicyclist-safety-action-plan-2025.pdf) |
+| Bernalillo County Pedestrian–Bicyclist Safety Action Plan Appendix | Bernalillo County | 2025 | PDF | 5729719 | content/transportation/bicycling/safety-crash-data.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/bernco-pedestrian-bicyclist-safety-action-plan-appendix-2025.pdf) |
 | Bridge Boulevard Corridor Redevelopment Plan | Bernalillo County | 2013-08 | PDF | 26623198 | content/development-land-use/projects.md | [source](https://www.bernco.gov/public-works/blog/2021/04/16/bridge-boulevard-corridor-redevelopment-plan) | [R2](https://files.abqinfo.com/development-land-use/plans/bernco-bridge-boulevard-corridor-redevelopment-plan-2013.pdf) |
 | Complete Bernalillo County Technical Standards | Bernalillo County | 2023-03-28 | PDF | 9161556 | content/transportation/design-references.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards/) | [R2](https://files.abqinfo.com/transportation/design-references/bernco-technical-standards-2023-03-28.pdf) |
+| El Camino Real National Historic Trail Development Concept Plan Executive Summary | Bernalillo County | 2022 | PDF | 6393748 | content/transportation/bicycling/bike-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-el-camino-real-trail-development-concept-plan-2022.pdf) |
 | Green Stormwater Infrastructure / Low Impact Development Standards | Bernalillo County | 2023 | PDF | 5981048 | content/transportation/design-references.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards) | [R2](https://files.abqinfo.com/transportation/design-references/bernco-green-stormwater-infrastructure-low-impact-development-standards-2023.pdf) |
+| Isleta Drain and Trail Master Plan | Bernalillo County | 2022 | PDF | 11323656 | content/transportation/bicycling/bike-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-isleta-drain-trail-master-plan-2022.pdf) |
+| Sunport Commerce Center Transportation Plan | Bernalillo County | 2019 | PDF | 3985885 | content/transportation/transportation-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/transportation-plans/bernco-sunport-commerce-center-transportation-plan-2019.pdf) |
 | 17th Street Speed Study | City of Albuquerque | 2021-03 | PDF | 9121550 | content/transportation/roadway-projects/speed-management.md | [source](https://www.cabq.gov/municipaldevelopment/documents/17th-street-speed-study-report.pdf/view) | [R2](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-17th-street-speed-study-2021.pdf) |
 | 2000 Albuquerque Comprehensive On-Street Bicycle Plan | City of Albuquerque | 2000 | PDF | 8054496 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/documents) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2000-albuquerque-comprehensive-on-street-bicycle-plan.pdf) |
 | 2011 Albuquerque Bikeways and Trails Master Plan Update | City of Albuquerque | 2011-11-10 | PDF | 20962356 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%2011-10-11.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-and-trails-master-plan-update.pdf) |
@@ -227,6 +236,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | MRMPO Long-Range Roadway System Map | MRCOG | 2026-07-02 | PDF | 613512 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/544/Long-Range-System-Maps) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-long-range-roadway-system-map-2026.pdf) |
 | MRMPO Long-Range Transit System Map | MRCOG | 2026-07-02 | PDF | 957104 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/544/Long-Range-System-Maps) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-long-range-transit-system-map-2026.pdf) |
 | MRMPO Transportation Improvement Program, FFY 2024-2029 | MRCOG | FFY 2024-2029 | PDF | 4659490 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/280/Current-TIP) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrcog-ffy-2024-2029-current-tip.pdf) |
+| Near South Valley Multimodal Study | MRCOG | 2017 | PDF | 11260913 | content/transportation/transportation-plans.md | [source](https://www.bernco.gov/public-works/about-the-public-works-division/technical-services/transportation-planning/complete-streets-planning) | [R2](https://files.abqinfo.com/transportation/transportation-plans/bernco-near-south-valley-multimodal-study-2017.pdf) |
 | New Mexico Rail Runner Express Project Development History | MRCOG | 2009-10 | PDF | 6260206 | content/transportation/transit/rail-runner.md | [source](https://riometro.org/381/Rio-Metro-Publications) | [R2](https://files.abqinfo.com/transportation/transit/rail-runner/rio-metro-rail-runner-project-development-history-2009.pdf) |
 | NMRX Grade Crossing Pedestrian and Bicyclist Safety Study | MRCOG | 2016-04-04 | PDF | 2729774 | content/transportation/transit/rail-runner.md | [source](https://riometro.org/381/Rio-Metro-Publications) | [R2](https://files.abqinfo.com/transportation/transit/rail-runner/rio-metro-nmrx-grade-crossing-pedestrian-bicyclist-safety-study-2016.pdf) |
 | Paseo del Norte High-Capacity Transit Study: Alternatives Analysis Report | MRCOG | 2014-10 | PDF | 7560370 | content/transportation/transit/_index.md | [source](https://riometro.org/381/Rio-Metro-Publications) | [R2](https://files.abqinfo.com/transportation/transit/paseo-del-norte-high-capacity-transit-study-2014.pdf) |

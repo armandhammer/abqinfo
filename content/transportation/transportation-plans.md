@@ -208,7 +208,37 @@ Regional plans, long-range plans, and other system-level transportation planning
 
 - [Bernalillo County Transportation Plans](https://www.bernco.gov/public-works/transportation-planning/transportation-plans)
 
-  Collects County transportation plans and alignment studies, including the 2019 and 2023 studies for 118th Street, with project context connecting roadway alignment, future development, multimodal facilities, and regional access.
+  Maintains the County's current collection of transportation plans and alignment studies. The substantive documents are also preserved below so their planning history remains available if the County reorganizes or removes the originals.
+
+- [118th Street Alignment Study (2019 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/bernco-118th-street-alignment-study-2019.pdf)
+
+  Establishes a preferred centerline for 118th Street to support future development, right-of-way preservation, roadway connections, drainage, utilities, and coordinated planning among Bernalillo County, Albuquerque, and NMDOT.
+
+  [Official County PDF](https://www.bernco.gov/planning/wp-content/uploads/sites/58/2023/06/118th-Street-Alignment-Study-FINAL-Tech-Memo_sm.pdf)
+
+- [118th Street Amole Mesa to Eucariz Alignment Study (2023 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/bernco-118th-street-amole-mesa-eucariz-alignment-study-2023.pdf)
+
+  Extends 118th Street planning from Amole Mesa to Eucariz, documenting the recommended alignment, typical roadway section, right-of-way, drainage, utilities, environmental conditions, access, and planning-level costs.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2024/03/Final-Bern-Co-118th-Study-Amole-Mesa-to-Eucariz-Alignment-Study.pdf)
+
+- [Atrisco Vista Boulevard Alignment Study (2024 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/bernco-atrisco-vista-boulevard-alignment-study-2024.pdf)
+
+  Evaluates the future Atrisco Vista Boulevard corridor north of Double Eagle Road, addressing alignment, roadway sections, traffic, access, drainage, utilities, environmental resources, trails, right-of-way, project impacts, and preliminary costs.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2024/03/AtriscoVistaBlvd_PhaseABStudy_11x17_R2_Without-Appendices.pdf)
+
+- [Sunport Commerce Center Transportation Plan (2019 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/bernco-sunport-commerce-center-transportation-plan-2019.pdf)
+
+  Establishes the adopted roadway, freight, transit, bicycle, pedestrian, access, right-of-way, and capital-improvement framework for the 800-acre industrial district between Second Street, I-25, Woodward Road, and Rio Bravo Boulevard.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/07/Sunport-Commerce-Center-Transportation-Plan-Final.pdf)
+
+- [Near South Valley Multimodal Study (2017 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/bernco-near-south-valley-multimodal-study-2017.pdf)
+
+  Identifies gaps and priorities across the Near South Valley street, sidewalk, bicycle, trail, transit, passenger-rail, and freight networks, emphasizing accessible sidewalks, bikeway connections, safer crossings, and coordinated multimodal projects.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/07/South-Valley-Multimodal-Study-Dec-2017.pdf)
 
 - [Complete Streets Planning](https://www.bernco.gov/public-works/about-the-public-works-division/technical-services/transportation-planning/complete-streets-planning)
 
