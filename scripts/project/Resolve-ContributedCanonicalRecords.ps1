@@ -9,7 +9,7 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
-$inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
 
 function Get-One([string]$Id) {
   $record = @($inventory.candidates | Where-Object id -eq $Id)
@@ -69,7 +69,7 @@ $inventory.generated_at = (Get-Date).ToUniversalTime().ToString('o')
 $inventory | ConvertTo-Json -Depth 12 | Set-Content -LiteralPath $InventoryPath -Encoding utf8
 
 if (Test-Path -LiteralPath $DecisionPath) {
-  $decisions = Get-Content -Raw -LiteralPath $DecisionPath | ConvertFrom-Json
+  $decisions = Get-Content -Raw -Encoding UTF8 -LiteralPath $DecisionPath | ConvertFrom-Json
   $canonicalByDecisionId = @{
     'src-1231cfe4a3029341' = 'src-6349e5f02f95ba83'
     'src-6b6788fdbc69b3ca' = 'src-1ab4b8188d3eeda8'
@@ -82,7 +82,7 @@ if (Test-Path -LiteralPath $DecisionPath) {
     $addition | Add-Member -NotePropertyName public_validation -NotePropertyValue 'byte-identical to original by exact size and SHA-256' -Force
   }
   if (Test-Path -LiteralPath $R2InventoryPath) {
-    $r2 = Get-Content -Raw -LiteralPath $R2InventoryPath | ConvertFrom-Json
+    $r2 = Get-Content -Raw -Encoding UTF8 -LiteralPath $R2InventoryPath | ConvertFrom-Json
     $decisions | Add-Member -NotePropertyName post_upload_r2_objects -NotePropertyValue ([int]$r2.object_count) -Force
     $decisions | Add-Member -NotePropertyName post_upload_r2_bytes -NotePropertyValue ([int64]$r2.total_bytes) -Force
   }
@@ -90,7 +90,7 @@ if (Test-Path -LiteralPath $DecisionPath) {
   $decisions | ConvertTo-Json -Depth 12 | Set-Content -LiteralPath $DecisionPath -Encoding utf8
 
   if (Test-Path -LiteralPath $CatalogPath) {
-    $catalog = Get-Content -Raw -LiteralPath $CatalogPath | ConvertFrom-Json
+    $catalog = Get-Content -Raw -Encoding UTF8 -LiteralPath $CatalogPath | ConvertFrom-Json
     foreach ($item in $catalog.items) {
       $addition = @($decisions.additions | Where-Object filename -eq $item.filename)
       $duplicate = @($decisions.duplicates | Where-Object filename -eq $item.filename)

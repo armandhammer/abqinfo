@@ -6,7 +6,7 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
-$inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
 $ids = @($inventory.candidates | Where-Object {
   $_.status -eq 'implemented' -and
   $_.implementation_locations -contains $Location -and

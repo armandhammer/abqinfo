@@ -10,7 +10,7 @@ $ErrorActionPreference = 'Stop'
 
 function Read-InventoryWithRetry([string]$Path) {
   for ($attempt = 1; $attempt -le 8; $attempt++) {
-    try { return Get-Content -Raw -LiteralPath $Path | ConvertFrom-Json }
+    try { return Get-Content -Raw -Encoding UTF8 -LiteralPath $Path | ConvertFrom-Json }
     catch [System.IO.IOException] {
       if ($attempt -eq 8) { throw }
       Start-Sleep -Milliseconds (50 * $attempt)
@@ -25,7 +25,7 @@ function Write-InventoryWithRetry($Value, [string]$Path) {
     $temporaryPath = "$fullPath.tmp-$PID-$attempt"
     try {
       [IO.File]::WriteAllText($temporaryPath, $json, [Text.UTF8Encoding]::new($false))
-      [IO.File]::Move($temporaryPath, $fullPath, $true)
+      Move-Item -LiteralPath $temporaryPath -Destination $fullPath -Force
       return
     }
     catch [System.IO.IOException] {

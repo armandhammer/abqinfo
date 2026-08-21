@@ -8,7 +8,7 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 for ($attempt = 1; $attempt -le 8; $attempt++) {
-  try { $inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json; break }
+  try { $inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json; break }
   catch [System.IO.IOException] {
     if ($attempt -eq 8) { throw }
     Start-Sleep -Milliseconds (50 * $attempt)
@@ -47,11 +47,12 @@ $url = if ($UpdateInventory -and $authoritativeUrl) {
 if (-not $url) { throw "Candidate has no testable URL: $Id" }
 
 $method = 'HEAD'
+$userAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0 Safari/537.36 ABQInfo-Link-Validator/1.0'
 try {
-  $response = Invoke-WebRequest -Uri $url -Method Head -MaximumRedirection 10 -UseBasicParsing
+  $response = Invoke-WebRequest -Uri $url -Method Head -MaximumRedirection 10 -UseBasicParsing -UserAgent $userAgent
 } catch {
   $method = 'GET fallback'
-  $response = Invoke-WebRequest -Uri $url -Method Get -MaximumRedirection 10 -UseBasicParsing
+  $response = Invoke-WebRequest -Uri $url -Method Get -MaximumRedirection 10 -UseBasicParsing -UserAgent $userAgent
 }
 $result = [ordered]@{ id = $Id; title = $candidate.title; url = $url; http_status = [int]$response.StatusCode }
 $result.method = $method

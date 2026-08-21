@@ -8,9 +8,9 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
-$inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
-$r2 = Get-Content -Raw -LiteralPath $R2InventoryPath | ConvertFrom-Json
-$prioritySources = if (Test-Path -LiteralPath $SourcePrioritiesPath) { @((Get-Content -Raw -LiteralPath $SourcePrioritiesPath | ConvertFrom-Json).sources) } else { @() }
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
+$r2 = Get-Content -Raw -Encoding UTF8 -LiteralPath $R2InventoryPath | ConvertFrom-Json
+$prioritySources = if (Test-Path -LiteralPath $SourcePrioritiesPath) { @((Get-Content -Raw -Encoding UTF8 -LiteralPath $SourcePrioritiesPath | ConvertFrom-Json).sources) } else { @() }
 $lines = [Collections.Generic.List[string]]::new()
 $lines.Add('# ABQ Info authoritative source catalog')
 $lines.Add('')

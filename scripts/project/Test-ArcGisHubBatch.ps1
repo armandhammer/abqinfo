@@ -21,9 +21,9 @@ function Assert-Batch([bool]$Condition, [string]$Message) {
   if (-not $Condition) { throw $Message }
 }
 
-$catalog = Get-Content -Raw -LiteralPath $CatalogPath | ConvertFrom-Json
-$review = @(Get-Content -Raw -LiteralPath $ReviewPath | ConvertFrom-Json)
-$inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+$catalog = Get-Content -Raw -Encoding UTF8 -LiteralPath $CatalogPath | ConvertFrom-Json
+$review = @(Get-Content -Raw -Encoding UTF8 -LiteralPath $ReviewPath | ConvertFrom-Json)
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
 
 Assert-Batch ($catalog.catalog_total -le $catalog.limits.max_records) 'Catalog record cap was exceeded.'
 Assert-Batch ($catalog.reviewed_count -le $catalog.limits.review_limit) 'Review cap was exceeded.'
@@ -66,7 +66,7 @@ foreach ($candidate in @($inventoryMatches | Where-Object status -eq 'validated'
       $placementFailures += [pscustomobject]@{ id=$candidate.id; location=$location; reason='file missing' }
       continue
     }
-    $content = Get-Content -Raw -LiteralPath $location
+    $content = Get-Content -Raw -Encoding UTF8 -LiteralPath $location
     if (-not $content.Contains([string]$candidate.source_url)) {
       $placementFailures += [pscustomobject]@{ id=$candidate.id; location=$location; reason='source URL not present' }
     }

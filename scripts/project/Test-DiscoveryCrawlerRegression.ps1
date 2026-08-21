@@ -62,11 +62,11 @@ $irrelevantPolicy = Get-DiscoveryLinkPolicy `
 Assert-Regression (-not $irrelevantPolicy.capture) 'An irrelevant external navigation link was captured.'
 
 foreach ($crawler in @('Invoke-UnknownDocumentDiscovery.ps1','Invoke-ScopedSectionCrawl.ps1')) {
-  $source = Get-Content -Raw -LiteralPath (Join-Path $PSScriptRoot $crawler)
+  $source = Get-Content -Raw -Encoding UTF8 -LiteralPath (Join-Path $PSScriptRoot $crawler)
   Assert-Regression ($source -match 'Get-DiscoverySeedAncestorUrls') "$crawler does not use shared seed-ancestor traversal."
   Assert-Regression ($source -match 'Get-DiscoveryLinkPolicy') "$crawler does not use shared outbound-link policy."
 }
-$unknownSource = Get-Content -Raw -LiteralPath (Join-Path $PSScriptRoot 'Invoke-UnknownDocumentDiscovery.ps1')
+$unknownSource = Get-Content -Raw -Encoding UTF8 -LiteralPath (Join-Path $PSScriptRoot 'Invoke-UnknownDocumentDiscovery.ps1')
 Assert-Regression ($unknownSource -match 'relevant-page ancestor traversal') 'The general crawler does not ascend from relevant discovered child pages.'
 Assert-Regression ($unknownSource -match 'pageInDiscoveryContext') 'Generic ancestor pages cannot expose collection links in discovery context.'
 Assert-Regression ($unknownSource -match 'isExplicitDiscoveryRoot') 'Explicitly retained source pages are not treated as document-discovery roots.'

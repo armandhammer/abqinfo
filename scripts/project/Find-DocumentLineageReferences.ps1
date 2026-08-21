@@ -21,7 +21,7 @@ function Get-StableId([string]$Value) {
 
 $relationPattern = '(?i)\b(update[sd]?|amend(?:s|ed)?|replace[sd]?|supersed(?:e[sd]?|ing)|consolidat(?:e[sd]?|ing)|implement(?:s|ed|ing)?|adopt(?:s|ed|ing)?\s+by|appendix|supporting\s+stud(?:y|ies)|previous\s+plan|combined\s+and\s+updated|maintained\s+from)\b'
 $documentPattern = '\b(?<title>(?:[A-Z0-9][A-Za-z0-9&/\-’'']*\s+){1,11}(?:Plan|Study|Report|Manual|Guide|Toolkit|Ordinance|Resolution|Appendix|System|Program))(?:\s*\((?<year>(?:19|20)\d{2})\))?'
-$lines = @(Get-Content -LiteralPath $TextPath)
+$lines = @(Get-Content -Encoding UTF8 -LiteralPath $TextPath)
 $references = [ordered]@{}
 
 for ($i = 0; $i -lt $lines.Count; $i++) {
@@ -75,7 +75,7 @@ for ($i = 0; $i -lt $lines.Count; $i++) {
 
 $existing = @()
 if (Test-Path -LiteralPath $OutputPath) {
-  $parsed = Get-Content -Raw -LiteralPath $OutputPath | ConvertFrom-Json
+  $parsed = Get-Content -Raw -Encoding UTF8 -LiteralPath $OutputPath | ConvertFrom-Json
   $existing = @($parsed.references | Where-Object { $_.source_candidate_id -ne $SourceCandidateId })
 }
 $combined = [ordered]@{}

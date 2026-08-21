@@ -6,7 +6,7 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
-$inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
 $python = 'C:\Users\ben\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
 
 $results = foreach ($id in $Ids) {
@@ -34,7 +34,7 @@ for ($attempt = 1; $attempt -le 60; $attempt++) {
   $temporaryPath = "$fullPath.tmp-$PID-$attempt-$([guid]::NewGuid().ToString('n'))"
   try {
     [IO.File]::WriteAllText($temporaryPath, $json, [Text.UTF8Encoding]::new($false))
-    [IO.File]::Move($temporaryPath, $fullPath, $true)
+    Move-Item -LiteralPath $temporaryPath -Destination $fullPath -Force
     $results | ConvertTo-Json -Depth 5
     return
   }

@@ -11,7 +11,7 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
-$queue = Get-Content -Raw -LiteralPath $QueuePath | ConvertFrom-Json
+$queue = Get-Content -Raw -Encoding UTF8 -LiteralPath $QueuePath | ConvertFrom-Json
 $record = @($queue.records | Where-Object source_url -eq $SourceUrl)
 if ($record.Count -ne 1) { throw "Expected one retained-source record for '$SourceUrl'; found $($record.Count)." }
 $record = $record[0]
@@ -32,5 +32,5 @@ $queue.generated_at = (Get-Date).ToUniversalTime().ToString('o')
 $fullPath = [IO.Path]::GetFullPath($QueuePath)
 $temporaryPath = "$fullPath.tmp-$PID"
 [IO.File]::WriteAllText($temporaryPath, ($queue | ConvertTo-Json -Depth 10), [Text.UTF8Encoding]::new($false))
-[IO.File]::Move($temporaryPath, $fullPath, $true)
+Move-Item -LiteralPath $temporaryPath -Destination $fullPath -Force
 $record | ConvertTo-Json -Depth 8

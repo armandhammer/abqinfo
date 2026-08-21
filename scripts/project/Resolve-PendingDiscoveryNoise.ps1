@@ -9,10 +9,10 @@ function Write-AtomicJson($Value, [string]$Path) {
   $temporaryPath = "$fullPath.tmp-$PID"
   $json = $Value | ConvertTo-Json -Depth 12
   [IO.File]::WriteAllText($temporaryPath, $json, [Text.UTF8Encoding]::new($false))
-  [IO.File]::Move($temporaryPath, $fullPath, $true)
+  Move-Item -LiteralPath $temporaryPath -Destination $fullPath -Force
 }
 
-$inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
 $exactNoiseTitles = @(
   'A-Z',
   'Contact Information',

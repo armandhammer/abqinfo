@@ -67,9 +67,9 @@ function New-InventoryRecord([string]$Id) {
   }
 }
 
-$catalog = Get-Content -Raw -LiteralPath $CatalogPath | ConvertFrom-Json
-$inventory = Get-Content -Raw -LiteralPath $InventoryPath | ConvertFrom-Json
-$r2 = Get-Content -Raw -LiteralPath $R2InventoryPath | ConvertFrom-Json
+$catalog = Get-Content -Raw -Encoding UTF8 -LiteralPath $CatalogPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
+$r2 = Get-Content -Raw -Encoding UTF8 -LiteralPath $R2InventoryPath | ConvertFrom-Json
 
 $definitions = @(
   [ordered]@{

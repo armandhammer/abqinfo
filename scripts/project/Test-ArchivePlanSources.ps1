@@ -7,7 +7,7 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Continue'
-$plan = Get-Content -Raw -LiteralPath $PlanPath | ConvertFrom-Json
+$plan = Get-Content -Raw -Encoding UTF8 -LiteralPath $PlanPath | ConvertFrom-Json
 $results = foreach ($item in @($plan.items)) {
   try {
     & "$PSScriptRoot/Test-Candidate.ps1" -Id $item.id -InventoryPath $InventoryPath | ConvertFrom-Json
