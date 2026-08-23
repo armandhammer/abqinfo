@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-21T19:05:57.0631204Z",
+  "generated_at": "2026-08-23T17:39:09.8640382Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,7 +18,7 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 4069,
+    "pending review": 4067,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 0,
@@ -26,8 +26,8 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 24,
-    "validated": 478,
-    "excluded": 737,
+    "validated": 487,
+    "excluded": 738,
     "duplicate": 451,
     "superseded": 24,
     "blocked": 0,
@@ -39867,6 +39867,52 @@
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0385791Z",
       "updated_at": "2026-08-20T17:48:08.0224089Z"
+    },
+    {
+      "id": "src-1bad32082e26fb6a",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/transit/rider-resources/abq-ride-go",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque Transit Department",
+      "title": "ABQ RIDE GO!",
+      "date": "2025",
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.cabq.gov/transit/services/paratransit-service",
+      "referring_urls": [
+        "https://www.cabq.gov/transit/services/paratransit-service"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/transit/services/paratransit-service",
+        "https://www.cabq.gov/transit/rider-resources/abq-ride-go"
+      ],
+      "discovery_method": "official Sun Van service resource link",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/transit/sun-van.md",
+      "description": "Explains how eligible Sun Van riders can book trips and track vehicles in real time through the ABQ RIDE GO! app or web portal, with setup instructions, scheduling alternatives, and customer-service support.",
+      "description_word_count": 32,
+      "processing_notes": [
+        "Current maintained City resource checked on 2026-08-23.",
+        "Added under Booking and Trip Tracking."
+      ],
+      "implementation_location": "content/transportation/transit/sun-van.md",
+      "implementation_locations": [
+        "content/transportation/transit/sun-van.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed",
+      "exclusion_reason": null,
+      "local_path": null,
+      "discovered_at": "2026-08-23T17:29:18.8927664Z",
+      "updated_at": "2026-08-23T17:30:45.9820299Z"
     },
     {
       "id": "src-1bc13fe93ff7a0a6",
@@ -89191,6 +89237,54 @@
       "updated_at": "2026-08-04T14:15:57.7843945Z"
     },
     {
+      "id": "src-4ee4d7493e2495ec",
+      "status": "validated",
+      "source_url": "https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts",
+      "direct_file_url": "https://www.mrcog-nm.gov/DocumentCenter/View/6662",
+      "r2_url": "https://files.abqinfo.com/city-data/demographics/mrmpo-regional-forecast-by-dasz-2025.xlsx",
+      "r2_key": "city-data/demographics/mrmpo-regional-forecast-by-dasz-2025.xlsx",
+      "r2_etag": "aa1c5a772942aa5617cf49387596a8b3",
+      "r2_last_modified": "08/23/2026 11:37:37",
+      "agency": "Mid-Region Metropolitan Planning Organization",
+      "title": "MRMPO Regional Forecast by Data Analysis Subzone",
+      "date": "2025",
+      "file_type": "XLSX",
+      "size_bytes": 121164,
+      "checksum_sha256": "e17c886935293c04f6e111dbc5cb2dccda087a528f251c77e57df0ce10e68e53",
+      "parent_url": "https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts",
+      "referring_urls": [
+        "https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts"
+      ],
+      "discovery_path": [
+        "https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts",
+        "https://www.mrcog-nm.gov/DocumentCenter/View/6662"
+      ],
+      "discovery_method": "official socioeconomic forecast page child link",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/city-data/demographics.md",
+      "description": "Provides 2020 estimates and 2045 forecasts for population, households, housing units, group quarters, and employment by sector across 926 small-area Data Analysis Subzones in the five-county MRCOG model region.",
+      "description_word_count": 29,
+      "processing_notes": [
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative workbook preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "Workbook structure, 24 fields, 927 rows including headers, and representative records reviewed before inclusion."
+      ],
+      "implementation_location": "content/city-data/demographics.md",
+      "implementation_locations": [
+        "content/city-data/demographics.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
+      "exclusion_reason": null,
+      "local_path": "research/staging/socioeconomic-forecast-2025/mrmpo-regional-forecast-by-dasz-2025.xlsx",
+      "discovered_at": "2026-08-23T17:34:40.8828807Z",
+      "updated_at": "2026-08-23T17:38:18.3923443Z"
+    },
+    {
       "id": "src-4f03b2e57d8b3737",
       "status": "pending review",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/98th-street-and-benavides-road-presubmittal-presentation.pdf/view",
@@ -132360,7 +132454,7 @@
     },
     {
       "id": "src-7b469401205a34c0",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/transit/documents/reasonable-modification-notice-2.pdf",
       "direct_file_url": "https://www.cabq.gov/transit/documents/reasonable-modification-notice-2.pdf",
       "r2_url": null,
@@ -132393,17 +132487,17 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Reviewed the complete one-page official notice.",
+        "Not added because the maintained Sun Van page is more current and already covers the same rider need."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "excluded after content review",
+      "exclusion_reason": "The current Sun Van service page already supplies the reasonable-modification route, while this standalone notice lists an older customer-service number and adds no durable historical planning value.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:59.9713183Z",
-      "updated_at": "2026-08-04T14:15:59.9713183Z"
+      "updated_at": "2026-08-23T17:30:47.6104896Z"
     },
     {
       "id": "src-7b4a4dd778f222c2",
@@ -142695,6 +142789,54 @@
       "local_path": null,
       "discovered_at": "2026-08-04T14:45:06.7497556Z",
       "updated_at": "2026-08-04T14:45:06.7497556Z"
+    },
+    {
+      "id": "src-8493274afa12331f",
+      "status": "validated",
+      "source_url": "https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts",
+      "direct_file_url": "https://www.mrcog-nm.gov/DocumentCenter/View/6680",
+      "r2_url": "https://files.abqinfo.com/city-data/demographics/mrmpo-2045-socioeconomic-forecast-presentation-2025.pdf",
+      "r2_key": "city-data/demographics/mrmpo-2045-socioeconomic-forecast-presentation-2025.pdf",
+      "r2_etag": "2eafb3fa4cb11f6590a9444687c427b5",
+      "r2_last_modified": "08/23/2026 11:37:27",
+      "agency": "Mid-Region Metropolitan Planning Organization",
+      "title": "MRMPO 2045 Socioeconomic Forecast Presentation",
+      "date": "2025-04",
+      "file_type": "PDF",
+      "size_bytes": 1060729,
+      "checksum_sha256": "75430f135748ff65d1a38c065e438420ef0c9f533f22c73ef50f921729acc0a2",
+      "parent_url": "https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts",
+      "referring_urls": [
+        "https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts"
+      ],
+      "discovery_path": [
+        "https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts",
+        "https://www.mrcog-nm.gov/DocumentCenter/View/6680"
+      ],
+      "discovery_method": "official socioeconomic forecast page child link",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/city-data/demographics.md",
+      "description": "Summarizes the region’s approved 2020–2045 population, housing, and employment forecast, including county and small-area growth patterns, declining household size, forecast methodology, land-use inputs, and the forecast’s role in metropolitan transportation planning.",
+      "description_word_count": 31,
+      "processing_notes": [
+        "Complete extracted text and map-heavy presentation content reviewed before inclusion.",
+        "Original authoritative 18-page PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
+      ],
+      "implementation_location": "content/city-data/demographics.md",
+      "implementation_locations": [
+        "content/city-data/demographics.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
+      "exclusion_reason": null,
+      "local_path": "research/staging/socioeconomic-forecast-2025/mrmpo-2025-forecast-presentation.pdf",
+      "discovered_at": "2026-08-23T17:34:38.793236Z",
+      "updated_at": "2026-08-23T17:38:18.3731492Z"
     },
     {
       "id": "src-849903e09a7a3629",
@@ -158223,6 +158365,54 @@
       "updated_at": "2026-08-14T23:32:59.3852113Z"
     },
     {
+      "id": "src-93b85b580ff2b069",
+      "status": "validated",
+      "source_url": "https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts",
+      "direct_file_url": "https://www.mrcog-nm.gov/DocumentCenter/View/6663",
+      "r2_url": "https://files.abqinfo.com/city-data/demographics/mrmpo-bernalillo-county-forecast-by-dasz-2025.xlsx",
+      "r2_key": "city-data/demographics/mrmpo-bernalillo-county-forecast-by-dasz-2025.xlsx",
+      "r2_etag": "ffb7dc636f6b5978d7b23fb95487cba9",
+      "r2_last_modified": "08/23/2026 11:37:47",
+      "agency": "Mid-Region Metropolitan Planning Organization",
+      "title": "MRMPO Bernalillo County Forecast by Data Analysis Subzone",
+      "date": "2025",
+      "file_type": "XLSX",
+      "size_bytes": 88703,
+      "checksum_sha256": "745fc35c080436f1234cefb4b335fe433f2956f884077aa317508e582bfad608",
+      "parent_url": "https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts",
+      "referring_urls": [
+        "https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts"
+      ],
+      "discovery_path": [
+        "https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts",
+        "https://www.mrcog-nm.gov/DocumentCenter/View/6663"
+      ],
+      "discovery_method": "official socioeconomic forecast page child link",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/city-data/demographics.md",
+      "description": "Extracts the 2020 estimates and 2045 population, housing, and employment forecasts for 671 Bernalillo County Data Analysis Subzones, providing the most focused downloadable small-area dataset for Albuquerque and nearby county communities.",
+      "description_word_count": 31,
+      "processing_notes": [
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative workbook preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "Workbook structure, 24 fields, 672 rows including headers, and representative records reviewed before inclusion."
+      ],
+      "implementation_location": "content/city-data/demographics.md",
+      "implementation_locations": [
+        "content/city-data/demographics.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
+      "exclusion_reason": null,
+      "local_path": "research/staging/socioeconomic-forecast-2025/mrmpo-bernalillo-county-forecast-by-dasz-2025.xlsx",
+      "discovered_at": "2026-08-23T17:34:43.1295394Z",
+      "updated_at": "2026-08-23T17:38:18.408084Z"
+    },
+    {
       "id": "src-93b87673aa626c87",
       "status": "pending review",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/dmd-street-maintenance-street-satellite-2-2021-msgp-swppp.pdf/view",
@@ -162593,6 +162783,53 @@
       "local_path": null,
       "discovered_at": "2026-08-04T14:45:06.6484536Z",
       "updated_at": "2026-08-04T14:45:06.6484536Z"
+    },
+    {
+      "id": "src-98959984b4d407e3",
+      "status": "validated",
+      "source_url": "https://mrcogmaps.org/Forecast2045",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "Mid-Region Metropolitan Planning Organization",
+      "title": "MRMPO 2045 Socioeconomic Forecast Interactive Map",
+      "date": "2025",
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts",
+      "referring_urls": [
+        "https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts"
+      ],
+      "discovery_path": [
+        "https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts",
+        "https://mrcogmaps.org/Forecast2045"
+      ],
+      "discovery_method": "official socioeconomic forecast page child link",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/city-data/demographics.md",
+      "description": "Maps projected population, housing, and employment change from 2020 to 2045 by county and Data Analysis Subzone, making the small-area forecast easier to explore across Albuquerque and the wider MRCOG region.",
+      "description_word_count": 31,
+      "processing_notes": [
+        "Current official interactive map reached from the maintained MRMPO forecast page on 2026-08-23.",
+        "Cross-listed on Demographics and Maps because it is both the forecast interface and a system-wide map."
+      ],
+      "implementation_location": "content/city-data/demographics.md",
+      "implementation_locations": [
+        "content/city-data/demographics.md",
+        "content/maps/dashboards.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed",
+      "exclusion_reason": null,
+      "local_path": null,
+      "discovered_at": "2026-08-23T17:34:46.430364Z",
+      "updated_at": "2026-08-23T17:36:39.9108053Z"
     },
     {
       "id": "src-989f6890cd1a9c72",
@@ -200102,6 +200339,51 @@
       "updated_at": "2026-08-14T20:54:44.3469627Z"
     },
     {
+      "id": "src-bf6b7ac64ed443d8",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/transit/documents",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque Transit Department",
+      "title": "ABQ RIDE Document Collection",
+      "date": null,
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.cabq.gov/transit",
+      "referring_urls": [
+        "https://www.cabq.gov/transit"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/transit",
+        "https://www.cabq.gov/transit/documents"
+      ],
+      "discovery_method": "official Transit navigation child page",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/transit/sun-van.md",
+      "description": "Provides the official City collection containing current and historical ABQ RIDE files, including paratransit reviews, performance materials, route documents, board records, project applications, plans, and rider resources.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Implemented as the authoritative collection context for two archived Sun Van historical records."
+      ],
+      "implementation_location": "content/transportation/transit/sun-van.md",
+      "implementation_locations": [
+        "content/transportation/transit/sun-van.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed",
+      "exclusion_reason": null,
+      "local_path": null,
+      "discovered_at": "2026-08-23T17:39:07.1170071Z",
+      "updated_at": "2026-08-23T17:39:09.3414233Z"
+    },
+    {
       "id": "src-bf7598bed4055750",
       "status": "pending review",
       "source_url": "https://www.cabq.gov/progress/documents/albuquerque-yearly-survey-2023.pdf",
@@ -219796,20 +220078,20 @@
     },
     {
       "id": "src-d3121fe1438282dc",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/transit/documents/sun_van_performance_metrics_draft_05_10_11.pdf/view",
-      "direct_file_url": null,
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
-      "agency": "City of Albuquerque",
-      "title": "Sun Van Performance Metrics Draft 05 10 11.pdf",
-      "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/transit/documents/",
+      "direct_file_url": "https://www.cabq.gov/transit/documents/sun_van_performance_metrics_draft_05_10_11.pdf",
+      "r2_url": "https://files.abqinfo.com/transportation/transit/sun-van/cabq-sun-van-performance-metrics-draft-2010.pdf",
+      "r2_key": "transportation/transit/sun-van/cabq-sun-van-performance-metrics-draft-2010.pdf",
+      "r2_etag": "a9b27020ed344649fa5e8fdef88babc8",
+      "r2_last_modified": "08/23/2026 11:31:36",
+      "agency": "City of Albuquerque Transit Department",
+      "title": "Draft Sun Van Performance Metrics",
+      "date": "2010-05",
+      "file_type": "PDF",
+      "size_bytes": 145132,
+      "checksum_sha256": "9fbe8df15214dfe670d5b90468b18c3956e5d87f1e770faffedc43ebe9e5a464",
+      "parent_url": "https://www.cabq.gov/transit/documents/sun_van_performance_metrics_draft_05_10_11.pdf/view",
       "referring_urls": [
         "https://www.cabq.gov/transit/documents/"
       ],
@@ -219825,22 +220107,27 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source collection and exact official file URL recorded",
+      "proposed_canonical_page": "content/transportation/transit/sun-van.md",
+      "description": "Defines draft Sun Van performance measures covering ridership, cost, productivity, cancellations, no-shows, subsidy, on-time pickups, missed trips, scheduling flexibility, and complaint categories, preserving how the City proposed to monitor paratransit service in 2010.",
+      "description_word_count": 33,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Extracted text and document metadata identify the document as a May 2010 draft despite the legacy source filename.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative two-page PDF preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "The source collection and exact official file URL are retained for provenance and update checking."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transit/sun-van.md",
+      "implementation_locations": [
+        "content/transportation/transit/sun-van.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/sun-van-review/sun-van-performance-metrics-draft-2011.pdf",
       "discovered_at": "2026-08-04T14:16:04.7681207Z",
-      "updated_at": "2026-08-04T14:16:04.7681207Z"
+      "updated_at": "2026-08-23T17:32:17.6629885Z"
     },
     {
       "id": "src-d3176451f1bc5245",
@@ -228321,6 +228608,54 @@
       "cited_predecessors": [],
       "cited_successors": [],
       "provenance_status": "authoritative government source recorded"
+    },
+    {
+      "id": "src-db8b649daf20497b",
+      "status": "validated",
+      "source_url": "https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts",
+      "direct_file_url": "https://www.mrcog-nm.gov/DocumentCenter/View/6657",
+      "r2_url": "https://files.abqinfo.com/city-data/demographics/mrmpo-dasz-data-dictionary-2025.pdf",
+      "r2_key": "city-data/demographics/mrmpo-dasz-data-dictionary-2025.pdf",
+      "r2_etag": "920e2d75419724bff5a88186c28a24f4",
+      "r2_last_modified": "08/23/2026 11:37:58",
+      "agency": "Mid-Region Metropolitan Planning Organization",
+      "title": "MRMPO Data Analysis Subzone Data Dictionary",
+      "date": "2025-08",
+      "file_type": "PDF",
+      "size_bytes": 92424,
+      "checksum_sha256": "9bac8c8128ca593108e2e76ca4ebbb5a30a2c0c6aded8040a8e89ca8ee0f53ca",
+      "parent_url": "https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts",
+      "referring_urls": [
+        "https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts"
+      ],
+      "discovery_path": [
+        "https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts",
+        "https://www.mrcog-nm.gov/DocumentCenter/View/6657"
+      ],
+      "discovery_method": "official socioeconomic forecast page child link",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/city-data/demographics.md",
+      "description": "Defines the geography, population, household, housing-unit, group-quarters, and employment fields used in MRMPO’s 2025 regional and county forecast workbooks, including the industries assigned to basic, retail, and service employment.",
+      "description_word_count": 29,
+      "processing_notes": [
+        "Complete extracted text reviewed before inclusion.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative two-page PDF preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
+      ],
+      "implementation_location": "content/city-data/demographics.md",
+      "implementation_locations": [
+        "content/city-data/demographics.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
+      "exclusion_reason": null,
+      "local_path": "research/staging/socioeconomic-forecast-2025/mrmpo-dasz-data-dictionary-2025.pdf",
+      "discovered_at": "2026-08-23T17:34:44.8335157Z",
+      "updated_at": "2026-08-23T17:38:18.427659Z"
     },
     {
       "id": "src-db9d6c1a5a30718c",
@@ -260101,6 +260436,55 @@
       "local_path": null,
       "discovered_at": "2026-08-14T20:11:39.204723Z",
       "updated_at": "2026-08-14T20:11:39.204723Z"
+    },
+    {
+      "id": "src-fbef44f233c29736",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/transit/documents/abq_paratransit_outbrief-110111.pptx/view",
+      "direct_file_url": "https://www.cabq.gov/transit/documents/abq_paratransit_outbrief-110111.pptx",
+      "r2_url": "https://files.abqinfo.com/transportation/transit/sun-van/cabq-sun-van-ada-compliance-review-briefing-2011.pptx",
+      "r2_key": "transportation/transit/sun-van/cabq-sun-van-ada-compliance-review-briefing-2011.pptx",
+      "r2_etag": "60e02aaacffe77b38eba4b5d72bf385c",
+      "r2_last_modified": "08/23/2026 11:31:25",
+      "agency": "City of Albuquerque Transit Department",
+      "title": "ABQ RIDE Sun Van Compliance Review Briefing",
+      "date": "2011",
+      "file_type": "PPTX",
+      "size_bytes": 446462,
+      "checksum_sha256": "4ddacdf334bb8744aaf8944fb4f59684a9e625c85141e942d059b1469d274026",
+      "parent_url": "https://www.cabq.gov/transit/documents/abq_paratransit_outbrief-110111.pptx/view",
+      "referring_urls": [
+        "https://www.cabq.gov/transit/documents"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/transit/documents",
+        "https://www.cabq.gov/transit/documents/abq_paratransit_outbrief-110111.pptx/view"
+      ],
+      "discovery_method": "official Transit document collection child link",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official government source collection and exact official file URL recorded",
+      "proposed_canonical_page": "content/transportation/transit/sun-van.md",
+      "description": "Summarizes a 2010 consultant review of Sun Van’s ADA paratransit service, documenting eligibility, service area, reservations, fares, trip times, capacity constraints, driver practices, and recommended eligibility-process improvements while finding no ADA compliance violations.",
+      "description_word_count": 33,
+      "processing_notes": [
+        "All slides were rendered and visually reviewed before inclusion.",
+        "Original authoritative 16-slide PowerPoint preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "The source collection and exact official file URL are retained for provenance and update checking."
+      ],
+      "implementation_location": "content/transportation/transit/sun-van.md",
+      "implementation_locations": [
+        "content/transportation/transit/sun-van.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
+      "exclusion_reason": null,
+      "local_path": "research/staging/sun-van-review/abq-paratransit-outbrief-2011.pptx",
+      "discovered_at": "2026-08-23T17:29:16.8363784Z",
+      "updated_at": "2026-08-23T17:32:17.6418936Z"
     },
     {
       "id": "src-fbf2928dc2388b68",

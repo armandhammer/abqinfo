@@ -1,14 +1,14 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-21T19:06:11.8930594Z
+Generated: 2026-08-23T17:39:11.8186936Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 5851 candidates and 340 R2 objects totaling 4146002109 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 5859 candidates and 346 R2 objects totaling 4147956723 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 4069 |
+| pending review | 4067 |
 | approved for addition | 0 |
 | downloading | 0 |
 | downloaded | 0 |
@@ -16,8 +16,8 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 24 |
-| validated | 478 |
-| excluded | 737 |
+| validated | 487 |
+| excluded | 738 |
 | duplicate | 451 |
 | superseded | 24 |
 | blocked | 0 |
@@ -260,7 +260,13 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Albuquerque Region Housing Needs Assessment (2024) | City of Albuquerque / MRCOG | 2024-07 | PDF | 4212464 | content/development-land-use/projects.md | [source](https://www.cabq.gov/health-housing-homelessness/housing) | [R2](https://files.abqinfo.com/housing/affordable-housing/cabq-regional-housing-needs-assessment-2024.pdf) |
 | Metropolitan Redevelopment Agency Annual Report 2023 | City of Albuquerque Metropolitan Redevelopment Agency | 2023 | PDF | 1601764 | content/development-land-use/projects.md | [source](https://www.cabq.gov/mra) | [R2](https://files.abqinfo.com/development-land-use/projects/cabq-mra-annual-report-2023.pdf) |
 | City of Albuquerque General Planning Fee Schedule | City of Albuquerque Planning Department | 2025-01-17 | PDF | 404509 | content/development-land-use/development-process.md | [source](https://www.cabq.gov/planning/development-review-services/) | [R2](https://files.abqinfo.com/development-land-use/development-process/cabq-general-planning-fee-schedule-2025.pdf) |
+| ABQ RIDE Sun Van Compliance Review Briefing | City of Albuquerque Transit Department | 2011 | PPTX | 446462 | content/transportation/transit/sun-van.md | [source](https://www.cabq.gov/transit/documents/abq_paratransit_outbrief-110111.pptx/view) | [R2](https://files.abqinfo.com/transportation/transit/sun-van/cabq-sun-van-ada-compliance-review-briefing-2011.pptx) |
+| Draft Sun Van Performance Metrics | City of Albuquerque Transit Department | 2010-05 | PDF | 145132 | content/transportation/transit/sun-van.md | [source](https://www.cabq.gov/transit/documents/sun_van_performance_metrics_draft_05_10_11.pdf/view) | [R2](https://files.abqinfo.com/transportation/transit/sun-van/cabq-sun-van-performance-metrics-draft-2010.pdf) |
 | Sun Van and You Passenger Guide | City of Albuquerque Transit Department | 2025-06 | PDF | 211305 | content/transportation/transit/sun-van.md | [source](https://www.cabq.gov/transit/services/paratransit-service) | [R2](https://files.abqinfo.com/transportation/transit/sun-van/cabq-sun-van-passenger-guide-2025.pdf) |
+| MRMPO 2045 Socioeconomic Forecast Presentation | Mid-Region Metropolitan Planning Organization | 2025-04 | PDF | 1060729 | content/city-data/demographics.md | [source](https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts) | [R2](https://files.abqinfo.com/city-data/demographics/mrmpo-2045-socioeconomic-forecast-presentation-2025.pdf) |
+| MRMPO Bernalillo County Forecast by Data Analysis Subzone | Mid-Region Metropolitan Planning Organization | 2025 | XLSX | 88703 | content/city-data/demographics.md | [source](https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts) | [R2](https://files.abqinfo.com/city-data/demographics/mrmpo-bernalillo-county-forecast-by-dasz-2025.xlsx) |
+| MRMPO Data Analysis Subzone Data Dictionary | Mid-Region Metropolitan Planning Organization | 2025-08 | PDF | 92424 | content/city-data/demographics.md | [source](https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts) | [R2](https://files.abqinfo.com/city-data/demographics/mrmpo-dasz-data-dictionary-2025.pdf) |
+| MRMPO Regional Forecast by Data Analysis Subzone | Mid-Region Metropolitan Planning Organization | 2025 | XLSX | 121164 | content/city-data/demographics.md | [source](https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts) | [R2](https://files.abqinfo.com/city-data/demographics/mrmpo-regional-forecast-by-dasz-2025.xlsx) |
 | Albuquerque Metropolitan Planning Area Boundary Map | MRCOG | 2020-07-06 | PDF | 6665791 | content/maps/maps.md | [source](https://www.mrcog-nm.gov/581/Transportation-Planning) | [R2](https://files.abqinfo.com/maps/mrmpo-albuquerque-metropolitan-planning-area-map-2020.pdf) |
 | Bernalillo County / International Sunport Station Area Sector Development Plan | MRCOG | 2009-11-24 | PDF | 7904254 | content/transportation/transit/rail-runner.md | [source](https://www.mrcog-nm.gov/327/Bernalillo-County-Sunport-Plan) | [R2](https://files.abqinfo.com/transportation/transit/rail-runner/mrcog-bernalillo-county-sunport-station-area-plan-2009.pdf) |
 | FFY 2024-2029 TIP ITS Project Review and Architecture Certification | MRCOG | 2023-07-16 | PDF | 696615 | content/transportation/operations-data.md | [source](https://www.mrcog-nm.gov/259/Intelligent-Transportation-Systems) | [R2](https://files.abqinfo.com/transportation/operations-data/mrmpo-ffy2024-2029-tip-its-review-certification-2023.pdf) |
@@ -458,6 +464,9 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | West Central Complete Streets Project | City of Albuquerque | content/transportation/roadway-projects/current.md | [source](https://www.cabq.gov/municipaldevelopment/featured-projects/west-central-complete-streets-project) |
 | x Urban Forestry x | City of Albuquerque | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/parksandrecreation/urban-forest) |
 | Zero Fares Resolution | City of Albuquerque Transit Advisory Board | content/transportation/transit/abq-ride.md | [source](https://www.cabq.gov/transit/documents/approved_zero-fares-resolution-8-8-2024.pdf/%40%40download/file/APPROVED_Zero%20Fares%20Resolution%20-%208.8.2024.pdf) |
+| ABQ RIDE Document Collection | City of Albuquerque Transit Department | content/transportation/transit/sun-van.md | [source](https://www.cabq.gov/transit/documents) |
+| ABQ RIDE GO! | City of Albuquerque Transit Department | content/transportation/transit/sun-van.md | [source](https://www.cabq.gov/transit/rider-resources/abq-ride-go) |
+| MRMPO 2045 Socioeconomic Forecast Interactive Map | Mid-Region Metropolitan Planning Organization | content/city-data/demographics.md | [source](https://mrcogmaps.org/Forecast2045) |
 | 2023 AMPA ITS Architecture | MRCOG | content/transportation/operations-data.md | [source](https://www.mrcog-nm.gov/625/2023-AMPA-ITS-Architecture) |
 | Archived Crash Reports | MRCOG | content/transportation/bicycling/safety-crash-data.md | [source](https://www.mrcog-nm.gov/572/Archived-Crash-Reports) |
 | Bicycle and Pedestrian Analysis and Reports | MRCOG | content/transportation/bicycling/safety-crash-data.md | [source](https://www.mrcog-nm.gov/568/Bicycle-and-Pedestrian-Analysis-and-Repo) |
@@ -1237,6 +1246,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-7a409f39d2efa5c9 | excluded | 1 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-7a790e3c461b0781 | excluded | Legislative Process | Generic legislative-process navigation is outside the site's current curated categories and does not itself expose a distinctive Albuquerque document collection. |
 | src-7b085a1763d7283f | excluded | Project Selection Process | User-approved relevance cleanup: general funding-method description is not important enough for the curated plan library. |
+| src-7b469401205a34c0 | excluded | Reasonable accommodation | The current Sun Van service page already supplies the reasonable-modification route, while this standalone notice lists an older customer-service number and adds no durable historical planning value. |
 | src-7b4a4dd778f222c2 | excluded | 2 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-7b58a46b22dcbcb0 | excluded | 9 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-7b8eef7bce3a9513 | excluded | View upcoming events for the command. | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
