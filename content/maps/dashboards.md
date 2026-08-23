@@ -87,3 +87,9 @@ Data dashboards and visualizations.
 - [Road Diet Candidates Map](https://www.mrcog-nm.gov/569/Road-Diet-Candidates-Map)
 
   Presents MRMPO's 2023 screening of roadways that may support safety-focused reconfiguration based on lanes, capacity, and traffic volume. Candidate status is preliminary and does not replace project-specific engineering analysis.
+
+## Demographic and Land-Use Forecasts
+
+- [MRMPO 2045 Socioeconomic Forecast Interactive Map](https://mrcogmaps.org/Forecast2045)
+
+  Maps projected population, housing, and employment change from 2020 to 2045 by county and Data Analysis Subzone. The underlying archived workbooks and methodology are cataloged on the [Demographics page]({{< relref "../city-data/demographics.md" >}}).
