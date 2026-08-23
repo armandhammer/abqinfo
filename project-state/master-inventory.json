@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-23T17:39:09.8640382Z",
+  "generated_at": "2026-08-23T22:07:42.6809381Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,7 +18,7 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 4067,
+    "pending review": 4063,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 0,
@@ -26,7 +26,7 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 24,
-    "validated": 487,
+    "validated": 498,
     "excluded": 738,
     "duplicate": 451,
     "superseded": 24,
@@ -68873,19 +68873,19 @@
     },
     {
       "id": "src-3a2032075a8a2880",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/sustainability/documents/abq_only_bau_08072025.xlsx",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/sustainability/climate-action-plan",
       "direct_file_url": "https://www.cabq.gov/sustainability/documents/abq_only_bau_08072025.xlsx",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
-      "agency": "City of Albuquerque",
-      "title": "Business-as-Usual forecast",
-      "date": null,
+      "r2_url": "https://files.abqinfo.com/city-data/climate-environment/cabq-business-as-usual-emissions-forecast-2025.xlsx",
+      "r2_key": "city-data/climate-environment/cabq-business-as-usual-emissions-forecast-2025.xlsx",
+      "r2_etag": "753944511f4f7356ea53c48758580d10",
+      "r2_last_modified": "08/23/2026 16:04:42",
+      "agency": "City of Albuquerque Sustainability Office",
+      "title": "Albuquerque Business-as-Usual Emissions Forecast",
+      "date": "2025",
       "file_type": "XLSX",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 386301,
+      "checksum_sha256": "aaf19399399d0971319532ff7f151b11eb09a5f35067c9551d0b8964a8bc69d1",
       "parent_url": "https://www.cabq.gov/sustainability/climate-action-plan",
       "referring_urls": [
         "https://www.cabq.gov/sustainability/climate-action-plan"
@@ -68900,22 +68900,25 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/city-data/climate-environment.md",
+      "description": "Models Albuquerque-area community greenhouse-gas emissions through 2050 under a business-as-usual scenario, with transparent assumptions and calculations for transportation, building energy, waste, industrial processes, land use, population, employment, emission factors, and policy baselines.",
+      "description_word_count": 32,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative XLSX preserved without modification; 32-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/city-data/climate-environment.md",
+      "implementation_locations": [
+        "content/city-data/climate-environment.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/climate-action-implementation/cabq-business-as-usual-emissions-forecast-2025.xlsx",
       "discovered_at": "2026-08-04T14:45:04.7100668Z",
-      "updated_at": "2026-08-04T14:45:04.7100668Z"
+      "updated_at": "2026-08-23T22:07:42.1881153Z"
     },
     {
       "id": "src-3a24f16ccd16c5e9",
@@ -105870,6 +105873,52 @@
       "updated_at": "2026-08-14T23:32:59.4525041Z"
     },
     {
+      "id": "src-5f849b41555c3f69",
+      "status": "validated",
+      "source_url": "https://www.mrcog-nm.gov/204/Employment",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "Mid-Region Council of Governments",
+      "title": "MRCOG Employment Data",
+      "date": "2025",
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.mrcog-nm.gov/150/Socioeconomic-Data",
+      "referring_urls": [
+        "https://www.mrcog-nm.gov/150/Socioeconomic-Data"
+      ],
+      "discovery_path": [
+        "https://www.mrcog-nm.gov/150/Socioeconomic-Data",
+        "https://www.mrcog-nm.gov/204/Employment"
+      ],
+      "discovery_method": "official socioeconomic data child page",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/city-data/demographics.md",
+      "description": "Compiles current county and regional labor-force, employment, unemployment, industry, wage, establishment, growth-rate, and location-quotient data from federal statistical programs, including detailed 2024 employment measures for the Albuquerque metropolitan economy.",
+      "description_word_count": 29,
+      "processing_notes": [
+        "Reviewed the complete official page and its accessible data tables.",
+        "Chart images were not separately archived because they reproduce maintained tabular data and are expected to change with updates."
+      ],
+      "implementation_location": "content/city-data/demographics.md",
+      "implementation_locations": [
+        "content/city-data/demographics.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: official maintained data page reviewed and implemented with 20–50-word description",
+      "exclusion_reason": null,
+      "local_path": null,
+      "discovered_at": "2026-08-23T21:57:26.7604731Z",
+      "updated_at": "2026-08-23T21:57:58.8303885Z"
+    },
+    {
       "id": "src-5f9bf5a35bdb196e",
       "status": "pending review",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/city-of-albuquerque-fy18-ms4-annual-report-nmr04a014.pdf/view",
@@ -107968,6 +108017,52 @@
       "local_path": null,
       "discovered_at": "2026-08-14T23:32:59.5166699Z",
       "updated_at": "2026-08-14T23:32:59.5166699Z"
+    },
+    {
+      "id": "src-619ff9bbf9f6572a",
+      "status": "validated",
+      "source_url": "https://www.mrcog-nm.gov/206/Population-Housing",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "Mid-Region Council of Governments",
+      "title": "MRCOG Population and Housing Data",
+      "date": "2024",
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.mrcog-nm.gov/150/Socioeconomic-Data",
+      "referring_urls": [
+        "https://www.mrcog-nm.gov/150/Socioeconomic-Data"
+      ],
+      "discovery_path": [
+        "https://www.mrcog-nm.gov/150/Socioeconomic-Data",
+        "https://www.mrcog-nm.gov/206/Population-Housing"
+      ],
+      "discovery_method": "official socioeconomic data child page",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/city-data/demographics.md",
+      "description": "Compares 2020 Census population with 2024 estimates for Albuquerque, Bernalillo County, other regional communities, and the four-county region, with historical charts tracking housing permits, housing growth, and housing type through 2024.",
+      "description_word_count": 31,
+      "processing_notes": [
+        "Reviewed the complete official page and its accessible data table.",
+        "Chart images were not separately archived because they reproduce maintained tabular data and are expected to change with updates."
+      ],
+      "implementation_location": "content/city-data/demographics.md",
+      "implementation_locations": [
+        "content/city-data/demographics.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: official maintained data page reviewed and implemented with 20–50-word description",
+      "exclusion_reason": null,
+      "local_path": null,
+      "discovered_at": "2026-08-23T21:57:21.9753152Z",
+      "updated_at": "2026-08-23T21:57:55.7830138Z"
     },
     {
       "id": "src-61a14597afff95cf",
@@ -121958,6 +122053,53 @@
       "local_path": null,
       "discovered_at": "2026-08-14T20:11:37.5957314Z",
       "updated_at": "2026-08-14T20:11:37.5957314Z"
+    },
+    {
+      "id": "src-7085b119749f17d6",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/sustainability/climate-action-plan",
+      "direct_file_url": "https://www.cabq.gov/sustainability/climate-action-plan/climate-action-plan/resolveuid/744e590117d34a268b7a05a6d3833620",
+      "r2_url": "https://files.abqinfo.com/city-data/climate-environment/cabq-climate-action-plan-implementation-report-2023.pdf",
+      "r2_key": "city-data/climate-environment/cabq-climate-action-plan-implementation-report-2023.pdf",
+      "r2_etag": "4921e6bf861a539e74c01d5ad5a47664",
+      "r2_last_modified": "08/23/2026 16:04:05",
+      "agency": "City of Albuquerque Sustainability Office",
+      "title": "Albuquerque Climate Action Plan Implementation Report 2023",
+      "date": "2023",
+      "file_type": "PDF",
+      "size_bytes": 5252552,
+      "checksum_sha256": "0fd6546d56ed4280e869622a1ddebbce23222eef73fe7c2c7e0f7968bb301fb1",
+      "parent_url": "https://www.cabq.gov/sustainability/climate-action-plan",
+      "referring_urls": [
+        "https://www.cabq.gov/sustainability/climate-action-plan"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/sustainability/climate-action-plan",
+        "https://www.cabq.gov/sustainability/climate-action-plan/climate-action-plan/resolveuid/744e590117d34a268b7a05a6d3833620"
+      ],
+      "discovery_method": "official Climate Action Plan hub child document",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/city-data/climate-environment.md",
+      "description": "Preserves 2023 implementation work across buildings, renewable energy, transportation, waste, workforce, climate-conscious neighborhoods, grants, regional partnerships, and continued planning, including project metrics and next steps tied to the 2021 plan.",
+      "description_word_count": 30,
+      "processing_notes": [
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 30-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
+      ],
+      "implementation_location": "content/city-data/climate-environment.md",
+      "implementation_locations": [
+        "content/city-data/climate-environment.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
+      "exclusion_reason": null,
+      "local_path": "research/staging/climate-action-implementation/cabq-cap-implementation-report-2023.pdf",
+      "discovered_at": "2026-08-23T22:00:25.457217Z",
+      "updated_at": "2026-08-23T22:07:42.1061419Z"
     },
     {
       "id": "src-708a570d8fd6f98f",
@@ -153993,6 +154135,52 @@
       "updated_at": "2026-08-14T23:32:59.8877375Z"
     },
     {
+      "id": "src-8f8a0c52a2c709c7",
+      "status": "validated",
+      "source_url": "https://www.mrcog-nm.gov/205/Income",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "Mid-Region Council of Governments",
+      "title": "MRCOG Income Data",
+      "date": "2024",
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.mrcog-nm.gov/150/Socioeconomic-Data",
+      "referring_urls": [
+        "https://www.mrcog-nm.gov/150/Socioeconomic-Data"
+      ],
+      "discovery_path": [
+        "https://www.mrcog-nm.gov/150/Socioeconomic-Data",
+        "https://www.mrcog-nm.gov/205/Income"
+      ],
+      "discovery_method": "official socioeconomic data child page",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/city-data/demographics.md",
+      "description": "Tracks annual per-capita personal income from 2004 through 2024 for Bernalillo and neighboring counties, New Mexico, and the United States, with long-run comparisons and source references to federal economic data.",
+      "description_word_count": 30,
+      "processing_notes": [
+        "Reviewed the complete official page and its accessible historical table.",
+        "Chart images were not separately archived because they reproduce maintained tabular data and are expected to change with updates."
+      ],
+      "implementation_location": "content/city-data/demographics.md",
+      "implementation_locations": [
+        "content/city-data/demographics.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: official maintained data page reviewed and implemented with 20–50-word description",
+      "exclusion_reason": null,
+      "local_path": null,
+      "discovered_at": "2026-08-23T21:57:31.4767771Z",
+      "updated_at": "2026-08-23T21:58:03.8485024Z"
+    },
+    {
       "id": "src-8f8c9eca72dfefc5",
       "status": "pending review",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/public_transportation_bonds.pdf/view",
@@ -171165,6 +171353,53 @@
       "local_path": null,
       "discovered_at": "2026-08-04T15:02:43.0240696Z",
       "updated_at": "2026-08-04T15:02:43.0240696Z"
+    },
+    {
+      "id": "src-a29d3a7b778cfca8",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/sustainability/climate-action-plan",
+      "direct_file_url": "https://www.cabq.gov/sustainability/climate-action-plan/climate-action-plan/resolveuid/41c30f19c9d14d0887173d95947d5a44",
+      "r2_url": "https://files.abqinfo.com/city-data/climate-environment/cabq-climate-action-plan-implementation-report-2024.pdf",
+      "r2_key": "city-data/climate-environment/cabq-climate-action-plan-implementation-report-2024.pdf",
+      "r2_etag": "788e415f601e17b80831e56c1a4f6a3e",
+      "r2_last_modified": "08/23/2026 16:03:46",
+      "agency": "City of Albuquerque Sustainability Office",
+      "title": "Albuquerque Climate Action Plan Implementation Report 2024",
+      "date": "2024",
+      "file_type": "PDF",
+      "size_bytes": 1238031,
+      "checksum_sha256": "47278f2a6c4a113c230483e47911ba284f008d2f62a744c7f4f86a8f3b0857d4",
+      "parent_url": "https://www.cabq.gov/sustainability/climate-action-plan",
+      "referring_urls": [
+        "https://www.cabq.gov/sustainability/climate-action-plan"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/sustainability/climate-action-plan",
+        "https://www.cabq.gov/sustainability/climate-action-plan/climate-action-plan/resolveuid/41c30f19c9d14d0887173d95947d5a44"
+      ],
+      "discovery_method": "official Climate Action Plan hub child document",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/city-data/climate-environment.md",
+      "description": "Records 2024 actions involving energy-efficient City buildings, renewable-energy development, electric transit and fleet planning, food-waste diversion, climate workforce programs, public education, tree planting, heat mitigation, and neighborhood-scale resilience.",
+      "description_word_count": 28,
+      "processing_notes": [
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 28-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
+      ],
+      "implementation_location": "content/city-data/climate-environment.md",
+      "implementation_locations": [
+        "content/city-data/climate-environment.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
+      "exclusion_reason": null,
+      "local_path": "research/staging/climate-action-implementation/cabq-cap-implementation-report-2024.pdf",
+      "discovered_at": "2026-08-23T22:00:22.8928958Z",
+      "updated_at": "2026-08-23T22:07:42.0718022Z"
     },
     {
       "id": "src-a2a9772bf6c8b3e0",
@@ -191411,19 +191646,19 @@
     },
     {
       "id": "src-b6907ea6557674ae",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/sustainability/documents/ccap_funding-finance-overview_accessible.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/sustainability/climate-action-plan",
       "direct_file_url": "https://www.cabq.gov/sustainability/documents/ccap_funding-finance-overview_accessible.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
-      "agency": "City of Albuquerque",
-      "title": "Funding & Finance Overview",
-      "date": null,
+      "r2_url": "https://files.abqinfo.com/city-data/climate-environment/central-nm-climate-funding-finance-overview-2025.pdf",
+      "r2_key": "city-data/climate-environment/central-nm-climate-funding-finance-overview-2025.pdf",
+      "r2_etag": "c2a45c93afdabaee3a3d7e63fc97888b",
+      "r2_last_modified": "08/23/2026 16:05:09",
+      "agency": "City of Albuquerque Sustainability Office",
+      "title": "Central New Mexico Climate Funding and Finance Overview",
+      "date": "2025",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 395754,
+      "checksum_sha256": "4ac06334137a64e6ae4c5b57499eca6a35372fafa5b8cd80778bc646a8805e38",
       "parent_url": "https://www.cabq.gov/sustainability/climate-action-plan",
       "referring_urls": [
         "https://www.cabq.gov/sustainability/climate-action-plan"
@@ -191438,22 +191673,25 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/city-data/climate-environment.md",
+      "description": "Consolidates scattered federal, state, local, utility, banking, bond, grant, philanthropic, public-private, and technical-assistance resources for climate projects, with Albuquerque-area examples and practical guidance for turning regional climate strategies into funded implementation.",
+      "description_word_count": 31,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 31-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/city-data/climate-environment.md",
+      "implementation_locations": [
+        "content/city-data/climate-environment.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/climate-action-implementation/central-nm-climate-funding-finance-overview-2025.pdf",
       "discovered_at": "2026-08-04T14:45:03.8130342Z",
-      "updated_at": "2026-08-04T14:45:03.8130342Z"
+      "updated_at": "2026-08-23T22:07:42.2515193Z"
     },
     {
       "id": "src-b6933b287a6b8183",
@@ -198043,19 +198281,19 @@
     },
     {
       "id": "src-bdab724a0eea51b3",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/sustainability/documents/cap-ir-2025.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/sustainability/climate-action-plan",
       "direct_file_url": "https://www.cabq.gov/sustainability/documents/cap-ir-2025.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
-      "agency": "City of Albuquerque",
-      "title": "Review the 2025 Climate Action Plan (CAP) Implementation Report",
-      "date": null,
+      "r2_url": "https://files.abqinfo.com/city-data/climate-environment/cabq-climate-action-plan-implementation-report-2025.pdf",
+      "r2_key": "city-data/climate-environment/cabq-climate-action-plan-implementation-report-2025.pdf",
+      "r2_etag": "2ff3e64e36072a9b673782439432ffec",
+      "r2_last_modified": "08/23/2026 16:03:28",
+      "agency": "City of Albuquerque Sustainability Office",
+      "title": "Albuquerque Climate Action Plan Implementation Report 2025",
+      "date": "2025",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 2007496,
+      "checksum_sha256": "0778095f5597e132d41c6be5ad9ba16be7e19d2c7eb0901b4d1d99dcd1e7a02f",
       "parent_url": "https://www.cabq.gov/sustainability/climate-action-plan",
       "referring_urls": [
         "https://www.cabq.gov/sustainability/climate-action-plan"
@@ -198070,22 +198308,25 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/city-data/climate-environment.md",
+      "description": "Documents Albuquerque’s 2025 progress on building efficiency, renewable electricity, fleet and transit electrification, active transportation, waste diversion, climate workforce development, education, green stormwater infrastructure, tree planting, greenhouse-gas tracking, and preparation of the 2026 plan update.",
+      "description_word_count": 35,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 35-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/city-data/climate-environment.md",
+      "implementation_locations": [
+        "content/city-data/climate-environment.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/climate-action-implementation/cabq-cap-implementation-report-2025.pdf",
       "discovered_at": "2026-08-04T14:45:04.5859406Z",
-      "updated_at": "2026-08-04T14:45:04.5859406Z"
+      "updated_at": "2026-08-23T22:07:42.0251011Z"
     },
     {
       "id": "src-bdab998bb7bdb238",
@@ -222904,6 +223145,52 @@
       "provenance_status": "authoritative government source recorded"
     },
     {
+      "id": "src-d61668456fb71bf8",
+      "status": "validated",
+      "source_url": "https://www.mrcog-nm.gov/203/Commuting",
+      "direct_file_url": null,
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "Mid-Region Council of Governments",
+      "title": "MRCOG Commuting Data",
+      "date": "2024",
+      "file_type": "HTML",
+      "size_bytes": null,
+      "checksum_sha256": null,
+      "parent_url": "https://www.mrcog-nm.gov/150/Socioeconomic-Data",
+      "referring_urls": [
+        "https://www.mrcog-nm.gov/150/Socioeconomic-Data"
+      ],
+      "discovery_path": [
+        "https://www.mrcog-nm.gov/150/Socioeconomic-Data",
+        "https://www.mrcog-nm.gov/203/Commuting"
+      ],
+      "discovery_method": "official socioeconomic data child page",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/city-data/demographics.md",
+      "description": "Summarizes regional county-to-county worker flows, commute mode shares, travel times, and work-from-home changes using 2023 and 2024 Census sources, including the relationship between Bernalillo County and surrounding commuter counties.",
+      "description_word_count": 29,
+      "processing_notes": [
+        "Reviewed the complete official page and its accessible data tables.",
+        "Chart images were not separately archived because they reproduce maintained tabular data and are expected to change with updates."
+      ],
+      "implementation_location": "content/city-data/demographics.md",
+      "implementation_locations": [
+        "content/city-data/demographics.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: official maintained data page reviewed and implemented with 20–50-word description",
+      "exclusion_reason": null,
+      "local_path": null,
+      "discovered_at": "2026-08-23T21:57:35.3952913Z",
+      "updated_at": "2026-08-23T21:58:07.5718505Z"
+    },
+    {
       "id": "src-d617f438901ade14",
       "status": "pending review",
       "source_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/91ba920f-42d7-48a2-89e0-39f46e0ce84c/Application%20Guide%202026%205310.pdf",
@@ -234881,6 +235168,53 @@
       "local_path": null,
       "discovered_at": "2026-08-04T14:45:03.7407068Z",
       "updated_at": "2026-08-04T14:45:03.7407068Z"
+    },
+    {
+      "id": "src-e21e6f424ad30447",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/sustainability/climate-action-plan",
+      "direct_file_url": "https://www.cabq.gov/sustainability/climate-action-plan/climate-action-plan/resolveuid/a3af94616398409c85aaee03d60639a5",
+      "r2_url": "https://files.abqinfo.com/city-data/climate-environment/cabq-climate-action-plan-implementation-report-2022.pdf",
+      "r2_key": "city-data/climate-environment/cabq-climate-action-plan-implementation-report-2022.pdf",
+      "r2_etag": "1afb05bdabfca2cbd3fbc993c7e23129",
+      "r2_last_modified": "08/23/2026 16:04:27",
+      "agency": "City of Albuquerque Sustainability Office",
+      "title": "Albuquerque Climate Action Plan Implementation Report 2022",
+      "date": "2022",
+      "file_type": "PDF",
+      "size_bytes": 7346440,
+      "checksum_sha256": "893fa95b64ec0e0358d95b2d2cf9043499e3bd0e1485065878637614cf1f1b31",
+      "parent_url": "https://www.cabq.gov/sustainability/climate-action-plan",
+      "referring_urls": [
+        "https://www.cabq.gov/sustainability/climate-action-plan"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/sustainability/climate-action-plan",
+        "https://www.cabq.gov/sustainability/climate-action-plan/climate-action-plan/resolveuid/a3af94616398409c85aaee03d60639a5"
+      ],
+      "discovery_method": "official Climate Action Plan hub child document",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/city-data/climate-environment.md",
+      "description": "Provides the first annual implementation record after the 2021 plan, covering municipal renewable energy, building performance, clean transportation, waste reduction, climate education and workforce, neighborhood resilience, community engagement, and planned follow-up actions.",
+      "description_word_count": 32,
+      "processing_notes": [
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 32-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
+      ],
+      "implementation_location": "content/city-data/climate-environment.md",
+      "implementation_locations": [
+        "content/city-data/climate-environment.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
+      "exclusion_reason": null,
+      "local_path": "research/staging/climate-action-implementation/cabq-cap-implementation-report-2022.pdf",
+      "discovered_at": "2026-08-23T22:00:30.4500625Z",
+      "updated_at": "2026-08-23T22:07:42.1392160Z"
     },
     {
       "id": "src-e271c19776152b9e",
@@ -264486,19 +264820,19 @@
     },
     {
       "id": "src-ff823647e5c83f56",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/sustainability/documents/ccap_workforce-analysis_accessible.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/sustainability/climate-action-plan",
       "direct_file_url": "https://www.cabq.gov/sustainability/documents/ccap_workforce-analysis_accessible.pdf",
-      "r2_url": null,
-      "r2_key": null,
+      "r2_url": "https://files.abqinfo.com/city-data/climate-environment/central-nm-climate-workforce-analysis-2025.pdf",
+      "r2_key": "city-data/climate-environment/central-nm-climate-workforce-analysis-2025.pdf",
       "r2_etag": null,
       "r2_last_modified": null,
-      "agency": "City of Albuquerque",
-      "title": "Central New Mexico Workforce Analysis",
-      "date": null,
+      "agency": "City of Albuquerque Sustainability Office",
+      "title": "Central New Mexico Climate Workforce Analysis",
+      "date": "2025",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 242665,
+      "checksum_sha256": "c6956062d8de42cdee068c84d3d6e9b028cc6047b044ec5de8546442bf73ac88",
       "parent_url": "https://www.cabq.gov/sustainability/climate-action-plan",
       "referring_urls": [
         "https://www.cabq.gov/sustainability/climate-action-plan"
@@ -264513,22 +264847,24 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/city-data/climate-environment.md",
+      "description": "Assesses priority clean-energy and transportation occupations, projected growth, workforce gaps, training providers, state and regional programs, and access for disadvantaged communities while recommending stronger coordination across Central New Mexico’s workforce-development system.",
+      "description_word_count": 31,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 31-word description reviewed from extracted content or visual inspection."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/city-data/climate-environment.md",
+      "implementation_locations": [
+        "content/city-data/climate-environment.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/climate-action-implementation/central-nm-climate-workforce-analysis-2025.pdf",
       "discovered_at": "2026-08-04T14:45:04.3588955Z",
-      "updated_at": "2026-08-04T14:45:04.3588955Z"
+      "updated_at": "2026-08-23T22:07:42.2206072Z"
     },
     {
       "id": "src-ff86be5b1d17ebd7",

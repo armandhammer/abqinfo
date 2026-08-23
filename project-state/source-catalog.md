@@ -1,14 +1,14 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-23T17:39:11.8186936Z
+Generated: 2026-08-23T22:09:46.2221670Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 5859 candidates and 346 R2 objects totaling 4147956723 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 5866 candidates and 353 R2 objects totaling 4164825962 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 4067 |
+| pending review | 4063 |
 | approved for addition | 0 |
 | downloading | 0 |
 | downloaded | 0 |
@@ -16,7 +16,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 24 |
-| validated | 487 |
+| validated | 498 |
 | excluded | 738 |
 | duplicate | 451 |
 | superseded | 24 |
@@ -260,6 +260,13 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Albuquerque Region Housing Needs Assessment (2024) | City of Albuquerque / MRCOG | 2024-07 | PDF | 4212464 | content/development-land-use/projects.md | [source](https://www.cabq.gov/health-housing-homelessness/housing) | [R2](https://files.abqinfo.com/housing/affordable-housing/cabq-regional-housing-needs-assessment-2024.pdf) |
 | Metropolitan Redevelopment Agency Annual Report 2023 | City of Albuquerque Metropolitan Redevelopment Agency | 2023 | PDF | 1601764 | content/development-land-use/projects.md | [source](https://www.cabq.gov/mra) | [R2](https://files.abqinfo.com/development-land-use/projects/cabq-mra-annual-report-2023.pdf) |
 | City of Albuquerque General Planning Fee Schedule | City of Albuquerque Planning Department | 2025-01-17 | PDF | 404509 | content/development-land-use/development-process.md | [source](https://www.cabq.gov/planning/development-review-services/) | [R2](https://files.abqinfo.com/development-land-use/development-process/cabq-general-planning-fee-schedule-2025.pdf) |
+| Albuquerque Business-as-Usual Emissions Forecast | City of Albuquerque Sustainability Office | 2025 | XLSX | 386301 | content/city-data/climate-environment.md | [source](https://www.cabq.gov/sustainability/climate-action-plan) | [R2](https://files.abqinfo.com/city-data/climate-environment/cabq-business-as-usual-emissions-forecast-2025.xlsx) |
+| Albuquerque Climate Action Plan Implementation Report 2022 | City of Albuquerque Sustainability Office | 2022 | PDF | 7346440 | content/city-data/climate-environment.md | [source](https://www.cabq.gov/sustainability/climate-action-plan) | [R2](https://files.abqinfo.com/city-data/climate-environment/cabq-climate-action-plan-implementation-report-2022.pdf) |
+| Albuquerque Climate Action Plan Implementation Report 2023 | City of Albuquerque Sustainability Office | 2023 | PDF | 5252552 | content/city-data/climate-environment.md | [source](https://www.cabq.gov/sustainability/climate-action-plan) | [R2](https://files.abqinfo.com/city-data/climate-environment/cabq-climate-action-plan-implementation-report-2023.pdf) |
+| Albuquerque Climate Action Plan Implementation Report 2024 | City of Albuquerque Sustainability Office | 2024 | PDF | 1238031 | content/city-data/climate-environment.md | [source](https://www.cabq.gov/sustainability/climate-action-plan) | [R2](https://files.abqinfo.com/city-data/climate-environment/cabq-climate-action-plan-implementation-report-2024.pdf) |
+| Albuquerque Climate Action Plan Implementation Report 2025 | City of Albuquerque Sustainability Office | 2025 | PDF | 2007496 | content/city-data/climate-environment.md | [source](https://www.cabq.gov/sustainability/climate-action-plan) | [R2](https://files.abqinfo.com/city-data/climate-environment/cabq-climate-action-plan-implementation-report-2025.pdf) |
+| Central New Mexico Climate Funding and Finance Overview | City of Albuquerque Sustainability Office | 2025 | PDF | 395754 | content/city-data/climate-environment.md | [source](https://www.cabq.gov/sustainability/climate-action-plan) | [R2](https://files.abqinfo.com/city-data/climate-environment/central-nm-climate-funding-finance-overview-2025.pdf) |
+| Central New Mexico Climate Workforce Analysis | City of Albuquerque Sustainability Office | 2025 | PDF | 242665 | content/city-data/climate-environment.md | [source](https://www.cabq.gov/sustainability/climate-action-plan) | [R2](https://files.abqinfo.com/city-data/climate-environment/central-nm-climate-workforce-analysis-2025.pdf) |
 | ABQ RIDE Sun Van Compliance Review Briefing | City of Albuquerque Transit Department | 2011 | PPTX | 446462 | content/transportation/transit/sun-van.md | [source](https://www.cabq.gov/transit/documents/abq_paratransit_outbrief-110111.pptx/view) | [R2](https://files.abqinfo.com/transportation/transit/sun-van/cabq-sun-van-ada-compliance-review-briefing-2011.pptx) |
 | Draft Sun Van Performance Metrics | City of Albuquerque Transit Department | 2010-05 | PDF | 145132 | content/transportation/transit/sun-van.md | [source](https://www.cabq.gov/transit/documents/sun_van_performance_metrics_draft_05_10_11.pdf/view) | [R2](https://files.abqinfo.com/transportation/transit/sun-van/cabq-sun-van-performance-metrics-draft-2010.pdf) |
 | Sun Van and You Passenger Guide | City of Albuquerque Transit Department | 2025-06 | PDF | 211305 | content/transportation/transit/sun-van.md | [source](https://www.cabq.gov/transit/services/paratransit-service) | [R2](https://files.abqinfo.com/transportation/transit/sun-van/cabq-sun-van-passenger-guide-2025.pdf) |
@@ -466,6 +473,10 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Zero Fares Resolution | City of Albuquerque Transit Advisory Board | content/transportation/transit/abq-ride.md | [source](https://www.cabq.gov/transit/documents/approved_zero-fares-resolution-8-8-2024.pdf/%40%40download/file/APPROVED_Zero%20Fares%20Resolution%20-%208.8.2024.pdf) |
 | ABQ RIDE Document Collection | City of Albuquerque Transit Department | content/transportation/transit/sun-van.md | [source](https://www.cabq.gov/transit/documents) |
 | ABQ RIDE GO! | City of Albuquerque Transit Department | content/transportation/transit/sun-van.md | [source](https://www.cabq.gov/transit/rider-resources/abq-ride-go) |
+| MRCOG Commuting Data | Mid-Region Council of Governments | content/city-data/demographics.md | [source](https://www.mrcog-nm.gov/203/Commuting) |
+| MRCOG Employment Data | Mid-Region Council of Governments | content/city-data/demographics.md | [source](https://www.mrcog-nm.gov/204/Employment) |
+| MRCOG Income Data | Mid-Region Council of Governments | content/city-data/demographics.md | [source](https://www.mrcog-nm.gov/205/Income) |
+| MRCOG Population and Housing Data | Mid-Region Council of Governments | content/city-data/demographics.md | [source](https://www.mrcog-nm.gov/206/Population-Housing) |
 | MRMPO 2045 Socioeconomic Forecast Interactive Map | Mid-Region Metropolitan Planning Organization | content/city-data/demographics.md | [source](https://mrcogmaps.org/Forecast2045) |
 | 2023 AMPA ITS Architecture | MRCOG | content/transportation/operations-data.md | [source](https://www.mrcog-nm.gov/625/2023-AMPA-ITS-Architecture) |
 | Archived Crash Reports | MRCOG | content/transportation/bicycling/safety-crash-data.md | [source](https://www.mrcog-nm.gov/572/Archived-Crash-Reports) |
