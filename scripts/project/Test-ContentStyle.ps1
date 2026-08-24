@@ -9,6 +9,13 @@ $allowedNestedResourcePages = @(
   'transportation/bicycling/bike-plans.md',
   'transportation/transportation-plans.md'
 )
+$allowedSecondLevelHeadings = @{
+  'transportation/roadway-projects/studies.md' = @(
+    'City Corridor and Neighborhood Studies',
+    'Regional Screening and Analysis',
+    'State Highway Studies Affecting Albuquerque'
+  )
+}
 $minorHeadingWords = @(
   'a', 'an', 'and', 'as', 'at', 'but', 'by', 'for', 'from', 'in', 'into',
   'de', 'del', 'la', 'las', 'los', 'nor', 'of', 'on', 'or', 'over', 'per', 'the',
@@ -60,9 +67,13 @@ foreach ($file in $files) {
     $lineNumber = $index + 1
 
     if ($line -match '^(#{2,6})\s+(.+?)\s*$') {
+      $headingLevel = $Matches[1].Length
       $heading = $Matches[2] -replace '\s+#+$', ''
       if (-not (Test-HeadingCapitalization $heading)) {
         $errors.Add("Section heading is not in the approved title-style capitalization: $relativePath body-line $lineNumber = $heading")
+      }
+      if ($headingLevel -eq 2 -and $allowedSecondLevelHeadings.ContainsKey($relativePath) -and $heading -notin $allowedSecondLevelHeadings[$relativePath]) {
+        $errors.Add("Unexpected second-level heading changes sibling font size: $relativePath body-line $lineNumber = $heading")
       }
     }
 

@@ -200,7 +200,7 @@ Transportation studies and reports.
 
   [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/Redevelopment-plan.pdf) · [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/16/bridge-boulevard-corridor-redevelopment-plan)
 
-## Lead and Coal Avenues
+### Lead and Coal Avenues
 
 - [Lead and Coal Studies Final Report (March 2025 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-lead-coal-studies-final-report-2025.pdf)
 
