@@ -1,6 +1,7 @@
 [CmdletBinding(SupportsShouldProcess)]
 param(
   [Parameter(Mandatory)][string]$PlanPath,
+  [string[]]$Ids,
   [string]$InventoryPath = 'project-state/master-inventory.json'
 )
 
@@ -17,7 +18,14 @@ if ($projectedBytes -gt [int64]$plan.maximum_projected_r2_bytes) {
   throw "Archive plan would project R2 storage to $projectedBytes bytes, above the plan limit of $($plan.maximum_projected_r2_bytes) bytes."
 }
 
-foreach ($item in @($plan.items)) {
+$selectedItems = @($plan.items)
+if ($Ids) {
+  $unknownIds = @($Ids | Where-Object { $_ -notin @($plan.items.id) })
+  if ($unknownIds.Count) { throw "Requested IDs are not present in the archive plan: $($unknownIds -join ', ')." }
+  $selectedItems = @($plan.items | Where-Object id -in $Ids)
+}
+
+foreach ($item in $selectedItems) {
   $candidate = @($inventory.candidates | Where-Object id -eq $item.id)
   if ($candidate.Count -ne 1) { throw "Expected one inventory candidate for $($item.id); found $($candidate.Count)." }
   $file = Get-Item -LiteralPath $candidate[0].local_path

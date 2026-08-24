@@ -32,6 +32,26 @@ Separate [Studies]({{< relref "studies.md" >}}) and [Speed Management]({{< relre
 
   Documents the active Central Avenue safety and accessibility project, its limits, schedule, public meetings, federal Safe Streets and Roads for All funding, design concepts, and frequently asked questions.
 
+- [West Central Complete Streets Frequently Asked Questions (2026 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/cabq-west-central-complete-streets-faq-2026.pdf)
+
+  Explains the project scope, anticipated 2027 construction, funding, walking and bicycling facilities, drainage and intersection work, property and business access, possible speed-limit changes, transit coordination, and the 2026 public-feedback process.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/abq-west-central-meeting-faqs-07-09-26.pdf) · [Official City project page](https://www.cabq.gov/municipaldevelopment/featured-projects/west-central-complete-streets-project)
+
+- [West Central Complete Streets 60% Design Roll Plot (2026 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/cabq-west-central-complete-streets-roll-plot-60-percent-2026.pdf)
+
+  Maps the draft 60-percent corridor design from Sarracino Place to 98th Street, documenting frontage-road reconstruction, walking and bicycling facilities, drainage, lighting, intersection geometry, access changes, and other proposed improvements.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/632194-west-central-roll-plot_7-9-26.pdf) · [Official City project page](https://www.cabq.gov/municipaldevelopment/featured-projects/west-central-complete-streets-project)
+
+- [West Central Complete Streets Open House Boards (2026 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/cabq-west-central-complete-streets-open-house-boards-2026.pdf)
+
+  Presents the project area, purpose, proposed cross-sections, protected-intersection design at 98th Street, Bridge Boulevard changes, drainage, lighting, access, multimodal improvements, funding, schedule, and public-input material shown in 2026.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/abq-west-meeting-boards_3final-print_.pdf) · [Official City project page](https://www.cabq.gov/municipaldevelopment/featured-projects/west-central-complete-streets-project)
+
+Project contact: Bridgette Garrett at DMD, bgarrett@cabq.gov
+
 - [Laurelwood Median Rehabilitation and Parkway Landscape Project](https://www.cabq.gov/council/find-your-councilor/district-1/district-1-projects/laurelwood-median-rehabilitation-project)
 
   Covers the long-term Laurelwood median project, including grading, irrigation replacement, tree planting, public meetings, and the conceptual study guiding rehabilitation of the roadway median and parkway.

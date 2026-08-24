@@ -24,6 +24,24 @@ Current population, household, economic, neighborhood, and regional-growth data 
 
   Summarizes the central New Mexico region's population, geography, counties, municipalities, pueblos, transportation connections, and urban-rural context, providing a concise companion to detailed census and socioeconomic datasets.
 
+## Current Regional Indicators
+
+- [Population and Housing](https://www.mrcog-nm.gov/206/Population-Housing)
+
+  Compares 2020 Census population with 2024 estimates for Albuquerque, Bernalillo County, other regional communities, and the four-county region, with historical charts tracking housing permits, housing growth, and housing type through 2024.
+
+- [Employment](https://www.mrcog-nm.gov/204/Employment)
+
+  Compiles current county and regional labor-force, employment, unemployment, industry, wage, establishment, growth-rate, and location-quotient data from federal statistical programs, including detailed 2024 employment measures for the Albuquerque metropolitan economy.
+
+- [Income](https://www.mrcog-nm.gov/205/Income)
+
+  Tracks annual per-capita personal income from 2004 through 2024 for Bernalillo and neighboring counties, New Mexico, and the United States, with long-run comparisons and source references to federal economic data.
+
+- [Commuting](https://www.mrcog-nm.gov/203/Commuting)
+
+  Summarizes regional county-to-county worker flows, commute mode shares, travel times, and work-from-home changes using 2023 and 2024 Census sources, including the relationship between Bernalillo County and surrounding commuter counties.
+
 ## 2020–2045 Socioeconomic Forecast
 
 - [MRMPO Socioeconomic Forecast Hub](https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts)

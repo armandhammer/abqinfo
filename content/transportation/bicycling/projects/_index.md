@@ -14,11 +14,17 @@ Projects dated from 2021 through 2026 are grouped as current. Projects from 2020
 
   Tracks the separated-lane pilot on Dr. Martin Luther King Jr. Avenue, including project limits, safety purpose, installation approach, evaluation period, frequently asked questions, and relationship to the adopted Bikeway and Trail Facilities Plan.
 
-- [Pilot Project FAQ (2026 archived PDF)](https://files.abqinfo.com/transportation/bicycling/projects/cabq-mlk-separated-bike-lane-pilot-faq-2026.pdf)
+- [Pilot Project FAQ (2026 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/projects/cabq-mlk-separated-bike-lane-pilot-faq-2026.pdf)
 
   Explains the pilot limits, safety purpose, separation materials, intersection treatments, maintenance evaluation, ridership data collection, community feedback, and relationship to the adopted Albuquerque bicycle priorities.
 
   [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cabq-mlk-sbl-faq-sheet_english_final.pdf)
+
+- [Pilot Project FAQ in Spanish (2026 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/projects/cabq-mlk-separated-bike-lane-pilot-faq-spanish-2026.pdf)
+
+  Provides the City’s Spanish-language explanation of the pilot limits, safety basis, separation materials, intersection treatments, maintenance evaluation, ridership data, community feedback, and relationship to Vision Zero and adopted bicycle priorities.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cabq-mlk-sbl-faq-sheet_spanish_final.pdf)
 
 Questions or comments about this pilot: Valerie Hermanson at DMD, vhermanson@cabq.gov
 

@@ -1,14 +1,14 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-23T17:39:11.8186936Z
+Generated: 2026-08-23T22:22:52.6797149Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 5859 candidates and 346 R2 objects totaling 4147956723 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 5866 candidates and 357 R2 objects totaling 4196823355 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 4067 |
+| pending review | 4058 |
 | approved for addition | 0 |
 | downloading | 0 |
 | downloaded | 0 |
@@ -16,9 +16,9 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 24 |
-| validated | 487 |
+| validated | 502 |
 | excluded | 738 |
-| duplicate | 451 |
+| duplicate | 452 |
 | superseded | 24 |
 | blocked | 0 |
 | requires human review | 68 |
@@ -145,6 +145,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Downtown 2025 Metropolitan Redevelopment Plan | City of Albuquerque | 2004; retained 2017; superseded 2025 | PDF | 53175240 | content/development-land-use/redevelopment-plans.md | [source](https://www.cabq.gov/mra/redevelopment-areas/downtown) | [R2](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-downtown-2025-mra-plan-2004-2017.pdf) |
 | Downtown 2050 Metropolitan Redevelopment Area Plan | City of Albuquerque | 2025-05 | PDF | 83426506 | content/development-land-use/redevelopment-plans.md | [source](https://www.cabq.gov/mra/redevelopment-areas/downtown) | [R2](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-downtown-2050-mra-plan-2025.pdf) |
 | Dr. Martin Luther King Jr. Avenue Separated Bike Lane Pilot FAQ | City of Albuquerque | 2026 | PDF | 683278 | content/transportation/bicycling/projects/_index.md | [source](https://www.cabq.gov/municipaldevelopment/documents/cabq-mlk-sbl-faq-sheet_english_final.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/projects/cabq-mlk-separated-bike-lane-pilot-faq-2026.pdf) |
+| Dr. MLK Separated Bike Lane Pilot Project FAQ in Spanish | City of Albuquerque | 2026 | PDF | 955616 | content/transportation/bicycling/projects/_index.md | [source](https://www.cabq.gov/municipaldevelopment/featured-projects/dr-martin-luther-king-jr-blvd-separated-bicycle-lane-pilot-project) | [R2](https://files.abqinfo.com/transportation/bicycling/projects/cabq-mlk-separated-bike-lane-pilot-faq-spanish-2026.pdf) |
 | Draft Girard Boulevard Complete Street Master Plan | City of Albuquerque | 2013-03 | PDF | 33167254 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/neighborhood-projects/girard-boulevard-complete-streets-master-plan) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/girard-boulevard-complete-street-master-plan-draft-2013.pdf) |
 | East Central Avenue Safety Study (2020) | City of Albuquerque | 2020-10-02 | PDF | 8866217 | content/transportation/roadway-projects/studies.md | [source](https://www.bernco.gov/public-works/blog/2025/02/12/east-central-pedestrian-safety-project) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-east-central-avenue-safety-study-2020.pdf) |
 | East Gateway Metropolitan Redevelopment Area Plan | City of Albuquerque | 2014 | PDF | 2788694 | content/development-land-use/redevelopment-plans.md | [source](https://www.cabq.gov/mra/redevelopment-areas/east-gateway) | [R2](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-east-gateway-mra-plan-2014.pdf) |
@@ -248,6 +249,9 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Volcano Heights Sector Development Plan — Transportation Standards | City of Albuquerque | 2010-07; amended 2014-11-05 | PDF | 8772504 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-volcano-heights-sector-plan-transportation-2010-2014.pdf) |
 | Volcano Trails Sector Development Plan | City of Albuquerque | 2011-08 | PDF | 8903701 | content/development-land-use/area-sector-plans.md | [source](https://www.cabq.gov/planning/plans-publications/area-sector-development-plans) | [R2](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-volcano-trails-sector-development-plan-2011.pdf) |
 | Volcano Trails Sector Development Plan Adoption Resolution R-11-211 | City of Albuquerque | 2011 | PDF | 90762 | content/development-land-use/area-sector-plans.md | [source](https://www.cabq.gov/council/projects/completed-projects/2011/volcano-trails-sector-development-plan) | [R2](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-volcano-trails-adoption-resolution-r-11-211-2011.pdf) |
+| West Central Complete Streets 60% Design Roll Plot | City of Albuquerque | 2026 | PDF | 9410834 | content/transportation/roadway-projects/_index.md | [source](https://www.cabq.gov/municipaldevelopment/featured-projects/west-central-complete-streets-project) | [R2](https://files.abqinfo.com/transportation/roadway-projects/current/cabq-west-central-complete-streets-roll-plot-60-percent-2026.pdf) |
+| West Central Complete Streets Frequently Asked Questions | City of Albuquerque | 2026 | PDF | 840958 | content/transportation/roadway-projects/_index.md | [source](https://www.cabq.gov/municipaldevelopment/featured-projects/west-central-complete-streets-project) | [R2](https://files.abqinfo.com/transportation/roadway-projects/current/cabq-west-central-complete-streets-faq-2026.pdf) |
+| West Central Complete Streets Open House Boards | City of Albuquerque | 2026 | PDF | 20789985 | content/transportation/roadway-projects/_index.md | [source](https://www.cabq.gov/municipaldevelopment/featured-projects/west-central-complete-streets-project) | [R2](https://files.abqinfo.com/transportation/roadway-projects/current/cabq-west-central-complete-streets-open-house-boards-2026.pdf) |
 | West Central Metropolitan Redevelopment Area Plan | City of Albuquerque | 2004-06 | PDF | 15035247 | content/development-land-use/redevelopment-plans.md | [source](https://www.cabq.gov/mra/redevelopment-areas/west-central) | [R2](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-west-central-mra-plan-2004.pdf) |
 | Yellow-Light and All-Red Clearance Timing Effectiveness Study | City of Albuquerque | 2012-09 | PDF | 1148215 | content/transportation/operations-data.md | [source](https://www.cabq.gov/municipaldevelopment/documents/city-of-albuquerque-yellow-light-timing-change-and-all-red-clearance-interval-timing-change-effectiveness-study-final-report.pdf/view) | [R2](https://files.abqinfo.com/transportation/operations-data/cabq-yellow-all-red-clearance-timing-effectiveness-study-2012.pdf) |
 | Zuni Road Study — Part I | City of Albuquerque | 2011-08 | PDF | 8459851 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/completed-projects/2012/zuni-road-study) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-zuni-road-study-part-1-2011.pdf) |
@@ -260,6 +264,13 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Albuquerque Region Housing Needs Assessment (2024) | City of Albuquerque / MRCOG | 2024-07 | PDF | 4212464 | content/development-land-use/projects.md | [source](https://www.cabq.gov/health-housing-homelessness/housing) | [R2](https://files.abqinfo.com/housing/affordable-housing/cabq-regional-housing-needs-assessment-2024.pdf) |
 | Metropolitan Redevelopment Agency Annual Report 2023 | City of Albuquerque Metropolitan Redevelopment Agency | 2023 | PDF | 1601764 | content/development-land-use/projects.md | [source](https://www.cabq.gov/mra) | [R2](https://files.abqinfo.com/development-land-use/projects/cabq-mra-annual-report-2023.pdf) |
 | City of Albuquerque General Planning Fee Schedule | City of Albuquerque Planning Department | 2025-01-17 | PDF | 404509 | content/development-land-use/development-process.md | [source](https://www.cabq.gov/planning/development-review-services/) | [R2](https://files.abqinfo.com/development-land-use/development-process/cabq-general-planning-fee-schedule-2025.pdf) |
+| Albuquerque Business-as-Usual Emissions Forecast | City of Albuquerque Sustainability Office | 2025 | XLSX | 386301 | content/city-data/climate-environment.md | [source](https://www.cabq.gov/sustainability/climate-action-plan) | [R2](https://files.abqinfo.com/city-data/climate-environment/cabq-business-as-usual-emissions-forecast-2025.xlsx) |
+| Albuquerque Climate Action Plan Implementation Report 2022 | City of Albuquerque Sustainability Office | 2022 | PDF | 7346440 | content/city-data/climate-environment.md | [source](https://www.cabq.gov/sustainability/climate-action-plan) | [R2](https://files.abqinfo.com/city-data/climate-environment/cabq-climate-action-plan-implementation-report-2022.pdf) |
+| Albuquerque Climate Action Plan Implementation Report 2023 | City of Albuquerque Sustainability Office | 2023 | PDF | 5252552 | content/city-data/climate-environment.md | [source](https://www.cabq.gov/sustainability/climate-action-plan) | [R2](https://files.abqinfo.com/city-data/climate-environment/cabq-climate-action-plan-implementation-report-2023.pdf) |
+| Albuquerque Climate Action Plan Implementation Report 2024 | City of Albuquerque Sustainability Office | 2024 | PDF | 1238031 | content/city-data/climate-environment.md | [source](https://www.cabq.gov/sustainability/climate-action-plan) | [R2](https://files.abqinfo.com/city-data/climate-environment/cabq-climate-action-plan-implementation-report-2024.pdf) |
+| Albuquerque Climate Action Plan Implementation Report 2025 | City of Albuquerque Sustainability Office | 2025 | PDF | 2007496 | content/city-data/climate-environment.md | [source](https://www.cabq.gov/sustainability/climate-action-plan) | [R2](https://files.abqinfo.com/city-data/climate-environment/cabq-climate-action-plan-implementation-report-2025.pdf) |
+| Central New Mexico Climate Funding and Finance Overview | City of Albuquerque Sustainability Office | 2025 | PDF | 395754 | content/city-data/climate-environment.md | [source](https://www.cabq.gov/sustainability/climate-action-plan) | [R2](https://files.abqinfo.com/city-data/climate-environment/central-nm-climate-funding-finance-overview-2025.pdf) |
+| Central New Mexico Climate Workforce Analysis | City of Albuquerque Sustainability Office | 2025 | PDF | 242665 | content/city-data/climate-environment.md | [source](https://www.cabq.gov/sustainability/climate-action-plan) | [R2](https://files.abqinfo.com/city-data/climate-environment/central-nm-climate-workforce-analysis-2025.pdf) |
 | ABQ RIDE Sun Van Compliance Review Briefing | City of Albuquerque Transit Department | 2011 | PPTX | 446462 | content/transportation/transit/sun-van.md | [source](https://www.cabq.gov/transit/documents/abq_paratransit_outbrief-110111.pptx/view) | [R2](https://files.abqinfo.com/transportation/transit/sun-van/cabq-sun-van-ada-compliance-review-briefing-2011.pptx) |
 | Draft Sun Van Performance Metrics | City of Albuquerque Transit Department | 2010-05 | PDF | 145132 | content/transportation/transit/sun-van.md | [source](https://www.cabq.gov/transit/documents/sun_van_performance_metrics_draft_05_10_11.pdf/view) | [R2](https://files.abqinfo.com/transportation/transit/sun-van/cabq-sun-van-performance-metrics-draft-2010.pdf) |
 | Sun Van and You Passenger Guide | City of Albuquerque Transit Department | 2025-06 | PDF | 211305 | content/transportation/transit/sun-van.md | [source](https://www.cabq.gov/transit/services/paratransit-service) | [R2](https://files.abqinfo.com/transportation/transit/sun-van/cabq-sun-van-passenger-guide-2025.pdf) |
@@ -466,6 +477,10 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Zero Fares Resolution | City of Albuquerque Transit Advisory Board | content/transportation/transit/abq-ride.md | [source](https://www.cabq.gov/transit/documents/approved_zero-fares-resolution-8-8-2024.pdf/%40%40download/file/APPROVED_Zero%20Fares%20Resolution%20-%208.8.2024.pdf) |
 | ABQ RIDE Document Collection | City of Albuquerque Transit Department | content/transportation/transit/sun-van.md | [source](https://www.cabq.gov/transit/documents) |
 | ABQ RIDE GO! | City of Albuquerque Transit Department | content/transportation/transit/sun-van.md | [source](https://www.cabq.gov/transit/rider-resources/abq-ride-go) |
+| MRCOG Commuting Data | Mid-Region Council of Governments | content/city-data/demographics.md | [source](https://www.mrcog-nm.gov/203/Commuting) |
+| MRCOG Employment Data | Mid-Region Council of Governments | content/city-data/demographics.md | [source](https://www.mrcog-nm.gov/204/Employment) |
+| MRCOG Income Data | Mid-Region Council of Governments | content/city-data/demographics.md | [source](https://www.mrcog-nm.gov/205/Income) |
+| MRCOG Population and Housing Data | Mid-Region Council of Governments | content/city-data/demographics.md | [source](https://www.mrcog-nm.gov/206/Population-Housing) |
 | MRMPO 2045 Socioeconomic Forecast Interactive Map | Mid-Region Metropolitan Planning Organization | content/city-data/demographics.md | [source](https://mrcogmaps.org/Forecast2045) |
 | 2023 AMPA ITS Architecture | MRCOG | content/transportation/operations-data.md | [source](https://www.mrcog-nm.gov/625/2023-AMPA-ITS-Architecture) |
 | Archived Crash Reports | MRCOG | content/transportation/bicycling/safety-crash-data.md | [source](https://www.mrcog-nm.gov/572/Archived-Crash-Reports) |
@@ -929,6 +944,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-cee0e4d8e9bf5628 | duplicate | Phase II Engagement Summary | Official City direct-file link is already recorded as provenance on the canonical archived Phase II engagement record. |
 | src-d0e2cb6199c14ee2 | duplicate | Current City Limits | Generic boundary service duplicates the broader City maps library already retained on ABQInfo and adds no distinct planning explanation or public-facing application. |
 | src-d0ed674dd8fe9559 | duplicate | FY24-29 TIP ITS Project Review & Architecture Cert (7-16-23) | Duplicate discovery record for implemented candidate src-b9c1a8d5cb7902b6. |
+| src-d26471dab8dfbb3b | duplicate | Dr. MLK Separated Bike Lane Pilot Project FAQ | Exact byte-for-byte duplicate of validated candidate src-869bb49fc86733b and the existing archived English FAQ. |
 | src-d2e84afc15b63900 | duplicate | Concept Plan - Segment 1 | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
 | src-d3a3ff83929aba61 | duplicate | Neighborhood Traffic Management Program Policy Manual | Content-link alias for canonical archive candidate src-ad45c8e945713880. |
 | src-d635f8001d7cbd39 | duplicate | Project Dashboard | Duplicate discovery record for implemented candidate src-dfe528e25b833667. |
