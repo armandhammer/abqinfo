@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-25T00:12:48.3655205Z",
+  "generated_at": "2026-08-25T01:45:49.6307602Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,7 +18,7 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 4058,
+    "pending review": 4049,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 0,
@@ -26,8 +26,8 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 24,
-    "validated": 547,
-    "excluded": 738,
+    "validated": 552,
+    "excluded": 743,
     "duplicate": 453,
     "superseded": 24,
     "blocked": 0,
@@ -23082,7 +23082,7 @@
     },
     {
       "id": "src-0a06dd15bec2fd12",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/Changes%20to%20Stormwater%20Quality%20Program.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/Changes%20to%20Stormwater%20Quality%20Program.pdf",
       "r2_url": null,
@@ -23093,8 +23093,8 @@
       "title": "Changes to Stormwater Quality Program.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 10701,
+      "checksum_sha256": "0a2f3570086bd0d0bd2e939dc61537acfbc45567e8c6269fbcdbf74a6734b07e",
       "parent_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/DevelopmentReviewServices/"
@@ -23114,17 +23114,16 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "One-page document reviewed; effective dates are in October-December 2018."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "excluded after relevance and timeliness review",
+      "exclusion_reason": "One-page 2018 transition notice for then-new stormwater permitting and inspection rules; current stormwater program and permit documents provide more timely, complete guidance.",
+      "local_path": "research/staging/retained-source-expansion-2/src-0a06dd15bec2fd12.pdf",
       "discovered_at": "2026-08-04T14:45:05.6384675Z",
-      "updated_at": "2026-08-04T14:45:05.6384675Z"
+      "updated_at": "2026-08-25T01:44:25.7978813Z"
     },
     {
       "id": "src-0a10cc303d6a0b80",
@@ -38360,6 +38359,53 @@
       "updated_at": "2026-08-04T15:02:43.0150402Z"
     },
     {
+      "id": "src-198c245ad504211f",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/health-housing-homelessness/gateway-system-of-care/gateway-center/gateway-center-1",
+      "direct_file_url": "https://www.cabq.gov/health-housing-homelessness/gateway-system-of-care/gateway-center/abq_referral_program_impact_report_2026.pdf",
+      "r2_url": "https://files.abqinfo.com/public-works/city-facilities/cabq-gateway-referral-program-impact-report-2026.pdf",
+      "r2_key": "public-works/city-facilities/cabq-gateway-referral-program-impact-report-2026.pdf",
+      "r2_etag": "feb427e1c91ce27b30463e70a26f9f29",
+      "r2_last_modified": "08/24/2026 19:34:20",
+      "agency": "City of Albuquerque",
+      "title": "ABQ Referral Program Community Impact Report",
+      "date": "2026-06",
+      "file_type": "PDF",
+      "size_bytes": 293449,
+      "checksum_sha256": "bdabc912415e0eb24f8c185027b68ce8542fc3c643cebc5ce348a285fb880488",
+      "parent_url": "https://www.cabq.gov/health-housing-homelessness/gateway-system-of-care/gateway-center/gateway-center-1",
+      "referring_urls": [
+        "https://www.cabq.gov/health-housing-homelessness/gateway-system-of-care/gateway-center/gateway-center-1"
+      ],
+      "discovery_path": [
+        "https://www.cabq.gov/health-housing-homelessness/gateway-system-of-care/gateway-center/gateway-center-1",
+        "https://www.cabq.gov/health-housing-homelessness/gateway-system-of-care/gateway-center/abq_referral_program_impact_report_2026.pdf"
+      ],
+      "discovery_method": "retained authoritative source descendant audit",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "official City Gateway Center page and byte-identical City-hosted report recorded",
+      "proposed_canonical_page": "content/public-works/city-facilities.md",
+      "description": "Reports 1,756 referrals from October 2025 through May 2026 to community services through the Gateway system, with agency participation, estimated emergency-department diversion, projected cost savings, limitations, and recommendations for program expansion.",
+      "description_word_count": 31,
+      "processing_notes": [
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 31-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
+      ],
+      "implementation_location": "content/public-works/city-facilities.md",
+      "implementation_locations": [
+        "content/public-works/city-facilities.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
+      "exclusion_reason": null,
+      "local_path": "research/staging/retained-source-expansion-2/src-198c245ad504211f.pdf",
+      "discovered_at": "2026-08-25T01:24:16.1721603Z",
+      "updated_at": "2026-08-25T01:35:56.7550095Z"
+    },
+    {
       "id": "src-1994f0f547bea407",
       "status": "pending review",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/environmental-planning-commission-2011-go-bond-program/storm_drainage_summary.pdf/view",
@@ -49478,20 +49524,20 @@
     },
     {
       "id": "src-247c9733c752f20d",
-      "status": "pending review",
-      "source_url": "https://documents.cabq.gov/planning/development-process-manual/DPM-202-06-02_DMD_redline%2012.11.2025.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/planning/boards-commissions/development-process-manual-executive-committee/amendments-to-the-dpm",
       "direct_file_url": "https://documents.cabq.gov/planning/development-process-manual/DPM-202-06-02_DMD_redline%2012.11.2025.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-approved-dmd-changes-2025-12-11.pdf",
+      "r2_key": "development-land-use/development-process/cabq-dpm-approved-dmd-changes-2025-12-11.pdf",
+      "r2_etag": "32652816cb5be00eba1be4cd100d997f-2",
+      "r2_last_modified": "08/24/2026 19:33:49",
       "agency": "City of Albuquerque",
-      "title": "DPM-202-06-02DMDredline 12.11.2025.pdf",
-      "date": null,
+      "title": "Development Process Manual Approved DMD Changes",
+      "date": "2025-12-11",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://documents.cabq.gov/planning/development-process-manual/",
+      "size_bytes": 13926998,
+      "checksum_sha256": "2ac029bbf64c41df3a500e8d3bd6407cde04872562da7313d362d44e08923be8",
+      "parent_url": "https://www.cabq.gov/planning/boards-commissions/development-process-manual-executive-committee/amendments-to-the-dpm",
       "referring_urls": [
         "https://documents.cabq.gov/planning/development-process-manual/"
       ],
@@ -49505,22 +49551,25 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City amendment register and byte-identical City document-host file recorded",
+      "proposed_canonical_page": "content/development-land-use/development-process.md",
+      "description": "Preserves the full marked Development Process Manual showing Municipal Development changes approved December 11, 2025, so users can identify post-2020 revisions affecting public-infrastructure design, review, construction, and related technical standards.",
+      "description_word_count": 30,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 30-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/development-process.md",
+      "implementation_locations": [
+        "content/development-land-use/development-process.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/retained-source-expansion-2/src-247c9733c752f20d.pdf",
       "discovered_at": "2026-08-04T14:45:06.3023991Z",
-      "updated_at": "2026-08-04T14:45:06.3023991Z"
+      "updated_at": "2026-08-25T01:35:56.6868609Z"
     },
     {
       "id": "src-247ceb733ed01c0d",
@@ -84797,7 +84846,7 @@
     },
     {
       "id": "src-49368ff93c9f7370",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/transportation-submittal-process.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/transportation-submittal-process.pdf",
       "r2_url": null,
@@ -84808,8 +84857,8 @@
       "title": "transportation-submittal-process.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 214499,
+      "checksum_sha256": "972201979b4a51fce4943feb21889dba6505220a6b45e367fdba5a7cdcf154cf",
       "parent_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/DevelopmentReviewServices/"
@@ -84829,17 +84878,16 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Two-page document reviewed; revision date March 21, 2018."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "excluded after relevance and timeliness review",
+      "exclusion_reason": "The March 2018 paper-and-email transportation and hydrology submittal workflow predates the City ABQ-PLAN electronic process and would be misleading as current guidance.",
+      "local_path": "research/staging/retained-source-expansion-2/src-49368ff93c9f7370.pdf",
       "discovered_at": "2026-08-04T14:45:06.7136399Z",
-      "updated_at": "2026-08-04T14:45:06.7136399Z"
+      "updated_at": "2026-08-25T01:44:36.0526444Z"
     },
     {
       "id": "src-4947ff6d7d8d78f7",
@@ -168976,20 +169024,20 @@
     },
     {
       "id": "src-9d95103fffb6e499",
-      "status": "pending review",
-      "source_url": "https://documents.cabq.gov/planning/development-process-manual/DPM-PLANNING-DMD%20CHANGES_9-25-25.docx",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/planning/boards-commissions/development-process-manual-executive-committee/amendments-to-the-dpm",
       "direct_file_url": "https://documents.cabq.gov/planning/development-process-manual/DPM-PLANNING-DMD%20CHANGES_9-25-25.docx",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-approved-planning-dmd-changes-2025-09-25.docx",
+      "r2_key": "development-land-use/development-process/cabq-dpm-approved-planning-dmd-changes-2025-09-25.docx",
+      "r2_etag": "84a2a7f7580a59d0e46f6847a99c1db4-3",
+      "r2_last_modified": "08/24/2026 19:34:05",
       "agency": "City of Albuquerque",
-      "title": "DPM-PLANNING-DMD CHANGES9-25-25.docx",
-      "date": null,
+      "title": "Development Process Manual Approved Planning and DMD Changes",
+      "date": "2025-09-25",
       "file_type": "DOCX",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://documents.cabq.gov/planning/development-process-manual/",
+      "size_bytes": 23074047,
+      "checksum_sha256": "30c5500cc59dfda3ca754f77b7888f8ec1417330e3847c6444c86dd0b80e492a",
+      "parent_url": "https://www.cabq.gov/planning/boards-commissions/development-process-manual-executive-committee/amendments-to-the-dpm",
       "referring_urls": [
         "https://documents.cabq.gov/planning/development-process-manual/"
       ],
@@ -169003,22 +169051,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City amendment register and byte-identical City document-host file recorded",
+      "proposed_canonical_page": "content/development-land-use/development-process.md",
+      "description": "Preserves the full tracked-change Development Process Manual approved September 25, 2025, including updates to City review bodies, ABQ-PLAN procedures, site and infrastructure review, and green stormwater requirements.",
+      "description_word_count": 27,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "LibreOffice was unavailable for rendered visual review; structural OOXML text and tracked-change review completed.",
+        "Original authoritative DOCX preserved without modification; OOXML review found 341 tracked insertions and 289 tracked deletions.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/development-process.md",
+      "implementation_locations": [
+        "content/development-land-use/development-process.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/retained-source-expansion-2/src-9d95103fffb6e499.docx",
       "discovered_at": "2026-08-04T14:45:06.3285098Z",
-      "updated_at": "2026-08-04T14:45:06.3285098Z"
+      "updated_at": "2026-08-25T01:35:56.7254252Z"
     },
     {
       "id": "src-9dbe491dce873f71",
@@ -179776,7 +179828,7 @@
     },
     {
       "id": "src-a941257f1d6eef9d",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/ImpactFees-ImpactFeeOrdinanceandLegislation.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/ImpactFees-ImpactFeeOrdinanceandLegislation.pdf",
       "r2_url": null,
@@ -179787,8 +179839,8 @@
       "title": "ImpactFees-ImpactFeeOrdinanceandLegislation.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 1488856,
+      "checksum_sha256": "1f680f6bb2833824cd3afa8b37980d0b6ebedc820664dd4e7fc0924194a5ce75",
       "parent_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/DevelopmentReviewServices/"
@@ -179808,17 +179860,16 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "39-page image-only PDF reviewed structurally; zero extractable characters."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "excluded after relevance and timeliness review",
+      "exclusion_reason": "Scanned impact-fee legislation packet contains no extractable text, lacks a visible current-edition date in machine review, and file metadata dates to 2012-2013; current City process sources are preferable.",
+      "local_path": "research/staging/retained-source-expansion-2/src-a941257f1d6eef9d.pdf",
       "discovered_at": "2026-08-04T14:45:05.7781312Z",
-      "updated_at": "2026-08-04T14:45:05.7781312Z"
+      "updated_at": "2026-08-25T01:44:31.0819106Z"
     },
     {
       "id": "src-a94cafc5788e06e6",
@@ -181263,7 +181314,7 @@
     },
     {
       "id": "src-aaaeba7e7db98d96",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/DRS-PublicWorksConstructionStandards.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/DRS-PublicWorksConstructionStandards.pdf",
       "r2_url": null,
@@ -181274,8 +181325,8 @@
       "title": "DRS-PublicWorksConstructionStandards.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 4440003,
+      "checksum_sha256": "b0871345cdc0dd96faa04cf279ff9ac4c1ea03d65a14159d17910f3c5a65ffd8",
       "parent_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/DevelopmentReviewServices/"
@@ -181295,17 +181346,16 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "115-page document reviewed; dated April 5, 2011."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "excluded after relevance and timeliness review",
+      "exclusion_reason": "This is Update No. 8 from 2011, not a current consolidated City public-works construction standard. Publishing it as a primary reference would overstate a partial historical update and risk confusion.",
+      "local_path": "research/staging/retained-source-expansion-2/src-aaaeba7e7db98d96.pdf",
       "discovered_at": "2026-08-04T14:45:06.0143524Z",
-      "updated_at": "2026-08-04T14:45:06.0143524Z"
+      "updated_at": "2026-08-25T01:44:19.4778275Z"
     },
     {
       "id": "src-aab5517438784db7",
@@ -226170,20 +226220,20 @@
     },
     {
       "id": "src-d6f0d94a12b31a2d",
-      "status": "pending review",
-      "source_url": "https://documents.cabq.gov/planning/development-process-manual/Article%204-3%20ABCWUA%20change-combined.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/planning/boards-commissions/development-process-manual-executive-committee/amendments-to-the-dpm",
       "direct_file_url": "https://documents.cabq.gov/planning/development-process-manual/Article%204-3%20ABCWUA%20change-combined.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-approved-amendment-article-4-3-abcwua-2026-05-04.pdf",
+      "r2_key": "development-land-use/development-process/cabq-dpm-approved-amendment-article-4-3-abcwua-2026-05-04.pdf",
+      "r2_etag": "48805e5b7ef4a6b830383cf0952e9591",
+      "r2_last_modified": "08/24/2026 19:33:27",
       "agency": "City of Albuquerque",
-      "title": "Article 4-3 ABCWUA change-combined.pdf",
-      "date": null,
+      "title": "Development Process Manual Approved Amendment: Article 4-3 ABCWUA Changes",
+      "date": "2026-05-04",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://documents.cabq.gov/planning/development-process-manual/",
+      "size_bytes": 1751421,
+      "checksum_sha256": "780ff79b1c360e7504d8347985d957cc66b63dc854a7d52ea38ee3463137ada1",
+      "parent_url": "https://www.cabq.gov/planning/boards-commissions/development-process-manual-executive-committee/amendments-to-the-dpm",
       "referring_urls": [
         "https://documents.cabq.gov/planning/development-process-manual/"
       ],
@@ -226197,22 +226247,25 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City amendment register and byte-identical City document-host file recorded",
+      "proposed_canonical_page": "content/development-land-use/development-process.md",
+      "description": "Preserves the DPM amendment approved May 4, 2026, revising Article 4-3 graphic standards and related plan-scale, line-weight, AutoCAD, and Albuquerque Bernalillo County Water Utility Authority requirements.",
+      "description_word_count": 26,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 26-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/development-process.md",
+      "implementation_locations": [
+        "content/development-land-use/development-process.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/retained-source-expansion-2/src-d6f0d94a12b31a2d.pdf",
       "discovered_at": "2026-08-04T14:45:06.1543791Z",
-      "updated_at": "2026-08-04T14:45:06.1543791Z"
+      "updated_at": "2026-08-25T01:35:56.6458485Z"
     },
     {
       "id": "src-d7007a453ae04a79",
@@ -226614,7 +226667,7 @@
     },
     {
       "id": "src-d76eb0091584dab4",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://documents.cabq.gov/planning/IDO/Amendments-Deviations-Variances.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/IDO/Amendments-Deviations-Variances.pdf",
       "r2_url": null,
@@ -226622,11 +226675,11 @@
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Revising a Site Plan (Replacement, Amendments, Variances, Deviations, and Waivers)",
-      "date": null,
+      "title": "Revising a Site Plan: Replacements, Amendments, Variances, Deviations, and Waivers",
+      "date": "2020-12-01",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 188523,
+      "checksum_sha256": "fd8f889466ca98fbe315e92a632936bf537fa03506a5d0fe1b91e4c7a54d2aa2",
       "parent_url": "https://www.cabq.gov/planning/code-enforcement/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/IDO/",
@@ -226646,17 +226699,17 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Two-page source text extracted and reviewed.",
+        "Retained in inventory but not added to ABQInfo or R2 because the procedural guidance is materially outdated."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "excluded after content and timeliness review",
+      "exclusion_reason": "Current City page still links this 2020 guide, but its DRB-era process terminology predates later DHO and DFT procedural changes and could mislead users if presented as current guidance.",
+      "local_path": "research/staging/retained-source-expansion-2/src-d76eb0091584dab4.pdf",
       "discovered_at": "2026-08-04T14:45:06.4112601Z",
-      "updated_at": "2026-08-04T14:45:06.4112601Z"
+      "updated_at": "2026-08-25T01:32:54.7241614Z"
     },
     {
       "id": "src-d779aab19483f927",
@@ -249489,19 +249542,19 @@
     },
     {
       "id": "src-ee6119ec7c188a77",
-      "status": "pending review",
-      "source_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/2026%20City%20Engineers%20Unit%20Price.pdf",
+      "status": "validated",
+      "source_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/",
       "direct_file_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/2026%20City%20Engineers%20Unit%20Price.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-city-engineer-estimated-unit-prices-2026.pdf",
+      "r2_key": "development-land-use/development-process/cabq-city-engineer-estimated-unit-prices-2026.pdf",
+      "r2_etag": "93cbede38c0f9330895c9583a74fc710",
+      "r2_last_modified": "08/24/2026 19:45:09",
       "agency": "City of Albuquerque",
-      "title": "2026 City Engineers Unit Price.pdf",
-      "date": null,
+      "title": "City Engineer's Estimated Unit Prices for Contract Items, 2026",
+      "date": "2026-06-30",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 595691,
+      "checksum_sha256": "7926e09b33f6e8c8b869f8615d103658c51101d15cb638c5a143ecbb7014cd03",
       "parent_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/DevelopmentReviewServices/"
@@ -249516,22 +249569,25 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City Development Review Services directory and byte-identical City document-host file recorded",
+      "proposed_canonical_page": "content/development-land-use/development-process.md",
+      "description": "Sets the City's 2026 estimated construction costs for public-infrastructure contract items, including paving, traffic control, structures, drainage, utilities, landscaping, and the financial-guarantee calculations required for development projects.",
+      "description_word_count": 27,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 27-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/development-process.md",
+      "implementation_locations": [
+        "content/development-land-use/development-process.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/retained-source-expansion-2/src-ee6119ec7c188a77.pdf",
       "discovered_at": "2026-08-04T14:45:06.3957246Z",
-      "updated_at": "2026-08-04T14:45:06.3957246Z"
+      "updated_at": "2026-08-25T01:45:48.9867682Z"
     },
     {
       "id": "src-ee6144b66038fee0",

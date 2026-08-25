@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-25T01:12:41.9200961Z",
+  "generated_at": "2026-08-25T01:48:07.9105997Z",
   "policy": "Every retained active government webpage is a document-discovery root. Recursively review relevant child pages and archive qualifying attached documents; access-controlled pages require rendered-browser review rather than silent completion.",
   "allowed_statuses": [
     "pending descendant crawl",
@@ -10,13 +10,13 @@
     "superseded"
   ],
   "counts": {
-    "pending descendant crawl": 246,
-    "crawled": 6,
+    "pending descendant crawl": 229,
+    "crawled": 23,
     "requires rendered-browser review": 0,
     "excluded": 0,
     "superseded": 0
   },
-  "next_pending_source_url": "https://cabq.legistar.com/LegislationDetail.aspx?ID=8168119&GUID=381ADC52-173A-41AB-B22F-709354AFB678&Options=ID%7CText%7C&Search=EC-26-215",
+  "next_pending_source_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/",
   "records": [
     {
       "candidate_id": "src-a6a63111f9b4ba00",
@@ -24,15 +24,16 @@
       "title": "Kirtland Air Force Base Access-Corridor Safety Grant Application",
       "agency": "City of Albuquerque",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-kafb-legistar-2026-08-24.json",
+      "discovered_documents": 1,
+      "archived_documents": 1,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Legistar attachment pathway reconciled to the already archived and validated KAFB access-corridor grant application."
       ],
       "created_at": "2026-08-25T01:12:22.4497089Z",
-      "updated_at": "2026-08-25T01:12:22.4497089Z"
+      "updated_at": "2026-08-25T01:48:06.9490595Z"
     },
     {
       "candidate_id": "src-9fa20b87264a7a5c",
@@ -40,15 +41,16 @@
       "title": "Building permits open data",
       "agency": "City of Albuquerque",
       "canonical_page": "content/development-land-use/projects.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-building-permits-2026-08-24.json",
+      "discovered_documents": 5,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Current and historical CSV endpoints recorded. Mutable permit datasets remain linked live rather than being presented as durable document editions."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
+      "updated_at": "2026-08-25T01:48:07.0370772Z"
     },
     {
       "candidate_id": "src-612f7ca2e738b3fc",
@@ -56,15 +58,16 @@
       "title": "Albuquerque neighborhood data",
       "agency": "City of Albuquerque",
       "canonical_page": "content/city-data/demographics.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-neighborhood-data-2026-08-24.json",
+      "discovered_documents": 168,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Metadata, KMZ geography, and 167 neighborhood association map PDFs inventoried. The maintained dataset remains the canonical resource; individual association sheets were not duplicated onto ABQInfo."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
+      "updated_at": "2026-08-25T01:48:07.0934492Z"
     },
     {
       "candidate_id": "src-4064681b7affed0c",
@@ -72,15 +75,16 @@
       "title": "ABQ RIDE open data",
       "agency": "City of Albuquerque",
       "canonical_page": "content/transportation/transit/abq-ride.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-gtfs-2026-08-24.json",
+      "discovered_documents": 5,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "GTFS feed, metadata, readme, and fixed-route logic artifacts recorded. Operational feed files remain linked live because they are mutable service data rather than stable plan editions."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
+      "updated_at": "2026-08-25T01:48:07.1298368Z"
     },
     {
       "candidate_id": "src-ea40079f0398e386",
@@ -88,15 +92,16 @@
       "title": "Current Bikeways and Trails Data",
       "agency": "City of Albuquerque",
       "canonical_page": "content/transportation/bicycling/bike-maps.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-bikeways-layer-2026-08-24.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "ArcGIS layer operations and parent service inspected; no separately downloadable authoritative documents were exposed."
       ],
       "created_at": "2026-08-25T01:12:22.4497089Z",
-      "updated_at": "2026-08-25T01:12:22.4497089Z"
+      "updated_at": "2026-08-25T01:48:07.193508Z"
     },
     {
       "candidate_id": "src-41420efb69f7fb19",
@@ -104,15 +109,16 @@
       "title": "City Traffic Cameras, Signals, and Roadway Data Map",
       "agency": "City of Albuquerque",
       "canonical_page": "content/transportation/operations-data.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-traffic-mapserver-2026-08-24.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "All service layers and map-viewer endpoints inspected; no separately downloadable authoritative documents were exposed."
       ],
       "created_at": "2026-08-25T01:12:22.4497089Z",
-      "updated_at": "2026-08-25T01:12:22.4497089Z"
+      "updated_at": "2026-08-25T01:48:07.2267746Z"
     },
     {
       "candidate_id": "src-658a1f0ede046651",
@@ -120,15 +126,16 @@
       "title": "DMD Roads Speed Limits Data",
       "agency": "City of Albuquerque",
       "canonical_page": "content/transportation/operations-data.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-speed-limit-layer-2026-08-24.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Speed-limit layer operations and parent map service inspected; no separately downloadable authoritative documents were exposed."
       ],
       "created_at": "2026-08-25T01:12:22.4497089Z",
-      "updated_at": "2026-08-25T01:12:22.4497089Z"
+      "updated_at": "2026-08-25T01:48:07.2630356Z"
     },
     {
       "candidate_id": "src-46237fe417ee1bb1",
@@ -1183,15 +1190,16 @@
       "title": "Information about Public Improvement Districts in Albuquerque. Public Improvement Districts Information about Public Improvement Districts in Albuquerque.",
       "agency": "City of Albuquerque",
       "canonical_page": "content/development-land-use/development-process.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-public-improvement-districts-2026-08-24.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Authored page reviewed; it provides process guidance and contacts but no item-specific durable attachments."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
+      "updated_at": "2026-08-25T01:48:07.3066162Z"
     },
     {
       "candidate_id": "src-1ef3e26eafa2689e",
@@ -1265,15 +1273,16 @@
       "title": "Fire Station 4 at Coronado Park",
       "agency": "City of Albuquerque",
       "canonical_page": "content/public-works/city-facilities.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-fire-station-4-2026-08-24.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Project news page reviewed; no plans, reports, maps, or other durable project attachments were exposed."
       ],
       "created_at": "2026-08-25T01:11:32.9869801Z",
-      "updated_at": "2026-08-25T01:11:32.9869801Z"
+      "updated_at": "2026-08-25T01:48:07.5328367Z"
     },
     {
       "candidate_id": "src-7866aab2f7338c18",
@@ -1281,15 +1290,16 @@
       "title": "Gateway Center",
       "agency": "City of Albuquerque",
       "canonical_page": "content/public-works/city-facilities.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-gateway-center-2026-08-24.json",
+      "discovered_documents": 1,
+      "archived_documents": 1,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The 2026 referral-program impact report was reviewed, archived byte-identically, and implemented; a one-page promotional image was not treated as a substantive document."
       ],
       "created_at": "2026-08-25T01:11:32.9869801Z",
-      "updated_at": "2026-08-25T01:11:32.9869801Z"
+      "updated_at": "2026-08-25T01:48:07.5913766Z"
     },
     {
       "candidate_id": "src-8778e4e2844fdd47",
@@ -2225,15 +2235,16 @@
       "title": "Municipal Development featured projects",
       "agency": "City of Albuquerque",
       "canonical_page": "content/public-works/capital-projects.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-dmd-featured-projects-root-2026-08-24.json",
+      "discovered_documents": 1,
+      "archived_documents": 1,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The school-crossing evaluation report pathway reconciles to the already archived report; project child pages remain independently represented in the retained-source queue."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
+      "updated_at": "2026-08-25T01:48:07.6344304Z"
     },
     {
       "candidate_id": "src-ef0b1e81c86b0e2d",
@@ -2337,15 +2348,16 @@
       "title": "Southwest Safety Center",
       "agency": "City of Albuquerque",
       "canonical_page": "content/public-works/city-facilities.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-southwest-safety-center-2026-08-24.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Facility announcement reviewed; no plans, reports, maps, or other durable project attachments were exposed."
       ],
       "created_at": "2026-08-25T01:11:32.9869801Z",
-      "updated_at": "2026-08-25T01:11:32.9869801Z"
+      "updated_at": "2026-08-25T01:48:07.6841352Z"
     },
     {
       "candidate_id": "src-6514a288a010bb56",
@@ -2513,15 +2525,16 @@
       "title": "Accessible City park and recreation facilities",
       "agency": "City of Albuquerque",
       "canonical_page": "content/public-works/city-facilities.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-accessible-parks-2026-08-24.json",
+      "discovered_documents": 1,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The only PDF is a program registration form unrelated to the facilities reference; it was not archived or added."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
+      "updated_at": "2026-08-25T01:48:07.7271703Z"
     },
     {
       "candidate_id": "src-1959dee3f761b3ab",
@@ -2545,15 +2558,16 @@
       "title": "International District Library Park Project",
       "agency": "City of Albuquerque",
       "canonical_page": "content/public-works/city-facilities.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-international-district-library-park-2026-08-24.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Current project page and related navigation inspected; no durable project attachments were exposed in the authored page."
       ],
       "created_at": "2026-08-25T01:11:32.9869801Z",
-      "updated_at": "2026-08-25T01:11:32.9869801Z"
+      "updated_at": "2026-08-25T01:48:07.7658125Z"
     },
     {
       "candidate_id": "src-5beed526e0966f75",
@@ -2705,15 +2719,16 @@
       "title": "Development Process Manual Amendments",
       "agency": "City of Albuquerque",
       "canonical_page": "content/development-land-use/development-process.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-dpm-amendments-2026-08-24.json",
+      "discovered_documents": 7,
+      "archived_documents": 3,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "All seven linked amendment files reviewed. Three approved 2025-2026 records were archived and implemented; proposed and requested markups remain available through the live register without being presented as adopted rules."
       ],
       "created_at": "2026-08-25T01:11:32.9869801Z",
-      "updated_at": "2026-08-25T01:11:32.9869801Z"
+      "updated_at": "2026-08-25T01:48:07.8084885Z"
     },
     {
       "candidate_id": "src-131e6aac3a3051b9",
@@ -2737,15 +2752,16 @@
       "title": "Development Review Services",
       "agency": "City of Albuquerque",
       "canonical_page": "content/development-land-use/development-process.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-development-review-services-page-2026-08-24.json",
+      "discovered_documents": 3,
+      "archived_documents": 2,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The signed DPM and fee schedule were already archived. The remaining 2020 site-plan guide was excluded after review because superseded DRB-era terminology could mislead users."
       ],
       "created_at": "2026-08-25T01:11:32.9869801Z",
-      "updated_at": "2026-08-25T01:11:32.9869801Z"
+      "updated_at": "2026-08-25T01:48:07.857763Z"
     },
     {
       "candidate_id": "src-0752fa3cfed34f87",
@@ -2753,15 +2769,16 @@
       "title": "City of Albuquerque General Planning Fee Schedule",
       "agency": "City of Albuquerque Planning Department",
       "canonical_page": "content/development-land-use/development-process.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-development-review-services-page-2026-08-24.json",
+      "discovered_documents": 3,
+      "archived_documents": 2,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Trailing-slash provenance variant reconciled to the same completed Development Review Services descendant audit."
       ],
       "created_at": "2026-08-25T01:12:22.4497089Z",
-      "updated_at": "2026-08-25T01:12:22.4497089Z"
+      "updated_at": "2026-08-25T01:48:07.8982296Z"
     },
     {
       "candidate_id": "src-3b06f2c87c6eed7a",

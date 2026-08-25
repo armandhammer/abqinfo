@@ -18,6 +18,12 @@ Planning, design standards, and selected major projects for City-owned buildings
 
   Tracks the City’s conversion of the former 572,000-square-foot hospital campus into shelter, housing-navigation, first-responder receiving, medical-respite, sobering, behavioral-health, and related community services.
 
+- [ABQ Referral Program Community Impact Report (June 2026 archived PDF)](https://files.abqinfo.com/public-works/city-facilities/cabq-gateway-referral-program-impact-report-2026.pdf)
+
+  Reports 1,756 referrals from October 2025 through May 2026 to community services through the Gateway system, with agency participation, estimated emergency-department diversion, projected cost savings, limitations, and recommendations for program expansion.
+
+  [Official City PDF](https://www.cabq.gov/health-housing-homelessness/gateway-system-of-care/gateway-center/abq_referral_program_impact_report_2026.pdf) · [Gateway Center](https://www.cabq.gov/health-housing-homelessness/gateway-system-of-care/gateway-center/gateway-center-1)
+
 - [Southwest Safety Center](https://www.cabq.gov/municipaldevelopment/news/city-opens-southwest-safety-center-to-better-serve-west-side-families)
 
   Documents the 21,000-square-foot West Side campus combining Albuquerque Fire Rescue Station 23, Albuquerque Police Department space, and Albuquerque Community Safety operations—the City’s first new fire station in two decades.
