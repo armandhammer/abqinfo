@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-25T02:42:20.1348525Z",
+  "generated_at": "2026-08-25T03:44:25.2260685Z",
   "policy": "Every retained active government webpage is a document-discovery root. Recursively review relevant child pages and archive qualifying attached documents; access-controlled pages require rendered-browser review rather than silent completion.",
   "allowed_statuses": [
     "pending descendant crawl",
@@ -10,13 +10,13 @@
     "superseded"
   ],
   "counts": {
-    "pending descendant crawl": 229,
-    "crawled": 24,
+    "pending descendant crawl": 225,
+    "crawled": 31,
     "requires rendered-browser review": 0,
     "excluded": 0,
     "superseded": 0
   },
-  "next_pending_source_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/",
+  "next_pending_source_url": "https://mrcogmaps.org/Forecast2045",
   "records": [
     {
       "candidate_id": "src-a6a63111f9b4ba00",
@@ -143,15 +143,17 @@
       "title": "Official source: City of Albuquerque Construction Site Manual",
       "agency": "City of Albuquerque",
       "canonical_page": "content/public-works/stormwater-drainage.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-development-review-services-2026-08-24.json",
+      "discovered_documents": 26,
+      "archived_documents": 26,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The retained DevelopmentReviewServices descendant frontier represented in the captured directory graph is exhausted as of August 24, 2026.",
+        "The root directory and all seven listed child directories were captured and reviewed, including the DRC standards directory and its IIA descendant. Relevant consolidated standards, current unit prices, and agreement forms were archived; duplicates and outdated items were reconciled in the master inventory."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
+      "updated_at": "2026-08-25T03:37:08.1230357Z"
     },
     {
       "candidate_id": "src-d2a773fa04e3a040",
@@ -172,36 +174,21 @@
       "updated_at": "2026-08-25T02:42:20.1006735Z"
     },
     {
-      "candidate_id": "src-27b939c34a1c59fc",
-      "source_url": "https://documents.cabq.gov/planning/FacilityPlans/BTFP/2024/BTFP-Update_Summary-2024.pdf",
-      "title": "2015 Bikeways and Trails Facilities Plan - Final",
+      "candidate_id": "src-f9076752a7601d0f",
+      "source_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/DRC/IIA/",
+      "title": "Infrastructure Improvements Agreement Forms Directory",
       "agency": "City of Albuquerque",
-      "canonical_page": "content/transportation/bicycling/bike-plans.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "canonical_page": "content/development-land-use/development-process.md",
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-drs-drc-iia-2026-08-24.json",
+      "discovered_documents": 8,
+      "archived_documents": 6,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The complete directory listing was captured and reviewed. Six March 2021 agreement forms were archived and validated; two standard-drawing PDFs were exact duplicates of existing validated records and were not uploaded again."
       ],
-      "created_at": "2026-08-25T01:12:22.4497089Z",
-      "updated_at": "2026-08-25T01:12:22.4497089Z"
-    },
-    {
-      "candidate_id": "src-138b3f8088e22373",
-      "source_url": "https://documents.cabq.gov/planning/UDD/UDD-BikewaysTrails-AppendixA.pdf",
-      "title": "Official source: 2015 Bikeways and Trails Facilities Plan Appendix A: Proposed Facilities",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/transportation/bicycling/bike-plans.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
+      "created_at": "2026-08-25T03:37:07.8221104Z",
+      "updated_at": "2026-08-25T03:37:08.0560733Z"
     },
     {
       "candidate_id": "src-57b7552826150d27",
@@ -209,15 +196,17 @@
       "title": "I-25 Improved project website",
       "agency": "Other authoritative source",
       "canonical_page": "content/transportation/roadway-projects/current.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-i25-improved-2026-08-24.json",
+      "discovered_documents": 3,
+      "archived_documents": 2,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The main project page and six relevant descendants were captured. Two high-value project maps were archived, one ephemeral text-alert flyer was excluded, and the live traffic and interactive-map resources were retained.",
+        "The relevant project-site document frontier is exhausted as of August 24, 2026."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
+      "updated_at": "2026-08-25T03:44:25.0220004Z"
     },
     {
       "candidate_id": "src-98959984b4d407e3",
@@ -362,6 +351,23 @@
       ],
       "created_at": "2026-08-25T01:12:22.4497089Z",
       "updated_at": "2026-08-25T01:12:22.4497089Z"
+    },
+    {
+      "candidate_id": "src-e45ef8b986f98b89",
+      "source_url": "https://portal.horrocks.com/arcgis/apps/experiencebuilder/experience/?id=9f1fce0267fc40b3af00a0bf0c39214d",
+      "title": "I-25 Improved Interactive Planned Improvements Map",
+      "agency": "NMDOT",
+      "canonical_page": "content/transportation/roadway-projects/_index.md",
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-i25-improved-interactive-map-metadata-2026-08-24.json",
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Official ArcGIS Enterprise metadata confirms the linked item is the I-25 Comanche and Montgomery Public Map Web Experience."
+      ],
+      "created_at": "2026-08-25T03:43:33.4279071Z",
+      "updated_at": "2026-08-25T03:44:25.2163234Z"
     },
     {
       "candidate_id": "src-448f241082060f7a",
@@ -3549,6 +3555,57 @@
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
       "updated_at": "2026-08-20T19:09:19.7812179Z"
+    },
+    {
+      "candidate_id": "src-1e715cd1badffb21",
+      "source_url": "https://www.i25improved.com/improvements",
+      "title": "I-25 Improved Planned Improvements Map (retrieved August 2026)",
+      "agency": "NMDOT",
+      "canonical_page": "content/transportation/roadway-projects/_index.md",
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-i25-improved-improvements-2026-08-24.json",
+      "discovered_documents": 1,
+      "archived_documents": 1,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The planned-improvements PDF and companion interactive viewer were reviewed; the original PDF was archived and the Web Experience metadata was recorded."
+      ],
+      "created_at": "2026-08-25T03:43:33.4279071Z",
+      "updated_at": "2026-08-25T03:44:25.0901678Z"
+    },
+    {
+      "candidate_id": "src-0a0d14f59fad8efb",
+      "source_url": "https://www.i25improved.com/pedestrians-cyclists",
+      "title": "I-25 Improved Pedestrian and Bicycle Construction Detour Map (retrieved August 2026)",
+      "agency": "NMDOT",
+      "canonical_page": "content/transportation/roadway-projects/_index.md",
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-i25-improved-pedestrians-cyclists-2026-08-24.json",
+      "discovered_documents": 1,
+      "archived_documents": 1,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The current pedestrian and bicycle construction-detour image was reviewed, archived, and linked with its live source page."
+      ],
+      "created_at": "2026-08-25T03:43:33.4279071Z",
+      "updated_at": "2026-08-25T03:44:25.1387427Z"
+    },
+    {
+      "candidate_id": "src-6019029e9f3785c8",
+      "source_url": "https://www.i25improved.com/real-time-traffic-impacts",
+      "title": "I-25 Improved Live Traffic Impacts",
+      "agency": "NMDOT",
+      "canonical_page": "content/transportation/roadway-projects/_index.md",
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-i25-improved-real-time-2026-08-24.json",
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The live traffic page was crawled; it exposes live project conditions rather than durable attached documents."
+      ],
+      "created_at": "2026-08-25T03:43:33.4279071Z",
+      "updated_at": "2026-08-25T03:44:25.1793109Z"
     },
     {
       "candidate_id": "src-25da1aeef04264f6",

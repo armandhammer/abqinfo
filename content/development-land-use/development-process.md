@@ -48,6 +48,48 @@ Cross-cutting development process documents, manuals, and reference materials.
 
   Effective August 1, 2026. [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/2026%20City%20Engineers%20Unit%20Price.pdf) · [Official Development Review Services document library](https://documents.cabq.gov/planning/DevelopmentReviewServices/)
 
+## Infrastructure Improvements Agreements
+
+- [Current City Infrastructure Improvements Agreement Forms Directory](https://documents.cabq.gov/planning/DevelopmentReviewServices/DRC/IIA/)
+
+  Provides the City's maintained source directory for Procedure A and Procedure B agreements, financial-guaranty variants, and extension forms. Check this directory for revisions newer than the March 2021 editions preserved below.
+
+- [Procedure A Agreement — March 2021 (archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-infrastructure-improvements-agreement-procedure-a-2021.pdf)
+
+  Provides the City's March 2021 Procedure A agreement for developer-funded public improvements constructed on City property or within utility easements through the work-order process.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/DRC/IIA/IIA%20A.pdf)
+
+- [Procedure A Amendment and Extension Agreement — March 2021 (archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-infrastructure-improvements-agreement-procedure-a-amendment-extension-2021.pdf)
+
+  Supplies the March 2021 amendment form for extending Procedure A construction deadlines and updating contractor bonding, work-order, inspection, acceptance, and maintenance obligations.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/DRC/IIA/IIA%20A%20Amend%20and%20Extend.pdf)
+
+- [Procedure A Agreement with Financial Guaranty — March 2021 (archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-infrastructure-improvements-agreement-procedure-a-financial-guaranty-2021.pdf)
+
+  Provides the March 2021 Procedure A agreement variant documenting financial security for developer-funded public improvements, construction deadlines, work orders, bonding, inspections, and acceptance.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/DRC/IIA/IIA%20A%20with%20financial_Guaranty.pdf)
+
+- [Procedure A with Financial Guaranty Amendment and Extension — March 2021 (archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-infrastructure-improvements-agreement-procedure-a-financial-guaranty-amendment-extension-2021.pdf)
+
+  Supplies the March 2021 form for extending a financially guaranteed Procedure A agreement while updating completion deadlines, guaranty details, contractor bonds, and construction obligations.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/DRC/IIA/IIA%20A%20with%20FG%20Amend%20and%20Extend.pdf)
+
+- [Procedure B Agreement — March 2021 (archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-infrastructure-improvements-agreement-procedure-b-2021.pdf)
+
+  Provides the City's March 2021 Procedure B agreement for required public or private improvements tied to plats, building permits, site plans, deadlines, and financial guarantees.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/DRC/IIA/IIA%20B.pdf)
+
+- [Procedure B Amendment and Extension Agreement — March 2021 (archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-infrastructure-improvements-agreement-procedure-b-amendment-extension-2021.pdf)
+
+  Supplies the March 2021 form for extending Procedure B improvement deadlines and recording updated financial guarantees, contractor bonding, work-order requirements, and amended construction commitments.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/DRC/IIA/IIA%20B%20Amend%20and%20extend.pdf)
+
 ## Fees
 
 - [City of Albuquerque General Planning Fee Schedule (January 2025 archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-general-planning-fee-schedule-2025.pdf)

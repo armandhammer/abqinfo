@@ -98,6 +98,28 @@ Project contact: Bridgette Garrett at DMD, bgarrett@cabq.gov
 
   Provides current construction phasing, traffic shifts, closures, detour maps, alerts, and contact information for NMDOT's reconstruction of I-25, frontage roads, bridges, and interchanges between Comanche and Montgomery.
 
+- [Interactive Planned Improvements Map](https://portal.horrocks.com/arcgis/apps/experiencebuilder/experience/?id=9f1fce0267fc40b3af00a0bf0c39214d)
+
+  Explores the planned freeway, frontage-road, shared-use-path, ramp, bridge, and interchange changes throughout the project corridor using an interactive project viewer.
+
+- [Planned Improvements Overview Map — Retrieved August 2026 (Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/i25-improved-planned-improvements-map-2026.pdf)
+
+  Maps the planned I-25, frontage-road, and interchange reconstruction from Comanche Road through Montgomery Boulevard, including lane configurations, ramps, connections, and the rebuilt Montgomery interchange.
+
+  [Official Project PDF](https://www.i25improved.com/_files/ugd/4242bb_d03c59ceb23c41e2b95ab20b45687681.pdf) · [Current Improvements Page](https://www.i25improved.com/improvements)
+
+- [Pedestrian and Bicycle Construction Detour Map — Retrieved August 2026 (Archived Image)](https://files.abqinfo.com/transportation/roadway-projects/current/i25-improved-pedestrian-bicycle-detour-map-2026.png)
+
+  Shows the project-area bicycle detour around the Comanche Road closure, connecting Edith Boulevard, Candelaria Road, the North Diversion Channel Trail, and routes near I-40.
+
+  [Official Project Image](https://static.wixstatic.com/media/94874d_53a9b8436d86490c80c05bc888be3cbf~mv2.png) · [Current Pedestrian and Cyclist Information](https://www.i25improved.com/pedestrians-cyclists)
+
+- [Live Traffic Impacts](https://www.i25improved.com/real-time-traffic-impacts)
+
+  Provides current lane closures, traffic shifts, delays, detours, and links to live NMRoads conditions during construction.
+
+Questions, construction concerns, or text-alert assistance: email [info@i25improved.com](mailto:info@i25improved.com) or call 505-785-ROAD (7623).
+
 ### Broadway Boulevard Road Diet
 
 - [Engineering Drawings: Coal to MLK](https://files.abqinfo.com/transportation/roadway-projects/current/broadway-blvd-road-diet-coal-to-mlk-engineering-drawings.pdf)

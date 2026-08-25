@@ -12,6 +12,7 @@ $eligible = @($inventory.candidates | Where-Object {
   $_.status -in @('implemented','validated') -and
   $_.source_url -match '^https?://' -and
   $_.source_url -notmatch '^https://files\.abqinfo\.com/' -and
+  $_.source_url -notmatch '(?i)\.(pdf|docx?|xlsx?|csv|zip)(?:[?#]|$)' -and
   ($_.file_type -match '(?i)HTML|web page|live service' -or
     ($_.direct_file_url -match '^https?://' -and $_.source_url -ne $_.direct_file_url))
 })
