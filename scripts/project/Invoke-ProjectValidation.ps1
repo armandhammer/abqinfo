@@ -13,6 +13,8 @@ if (-not $?) { throw 'Master inventory validation failed.' }
 if (-not $?) { throw 'Content style validation failed.' }
 & "$PSScriptRoot/Test-DiscoveryCrawlerRegression.ps1" -OutputPath 'tmp/crawler-regression-report.json'
 if (-not $?) { throw 'Crawler discovery regression failed.' }
+& "$PSScriptRoot/Test-RetainedSourceAuditCoverage.ps1" -InventoryPath $InventoryPath
+if (-not $?) { throw 'Retained-source descendant-audit coverage failed.' }
 & $HugoPath --gc --minify --cleanDestinationDir --destination tmp/site-build
 if ($LASTEXITCODE) { throw 'Hugo build failed.' }
 

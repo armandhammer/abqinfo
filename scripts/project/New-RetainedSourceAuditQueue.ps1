@@ -20,7 +20,8 @@ $records = foreach ($candidate in @($inventory.candidates | Where-Object {
   $_.status -in @('implemented','validated') -and
   $_.source_url -match '^https?://' -and
   $_.source_url -notmatch '^https://files\.abqinfo\.com/' -and
-  $_.file_type -match '(?i)web page|live service'
+  ($_.file_type -match '(?i)HTML|web page|live service' -or
+    ($_.direct_file_url -match '^https?://' -and $_.source_url -ne $_.direct_file_url))
 })) {
   $sourceUrl = [string]$candidate.source_url
   if ($existingMap.ContainsKey($sourceUrl)) {
