@@ -12,6 +12,150 @@ Adopted budgets show what Albuquerque plans to collect and spend; audited financ
 
   [Official City budget archive](https://www.cabq.gov/dfa/budget/annual-budget)
 
+## Approved Budget History
+
+These adopted budgets preserve changing City priorities, revenues, appropriations, staffing, services, and performance commitments. [The official City budget archive](https://www.cabq.gov/dfa/budget/annual-budget) remains the source of truth for later releases.
+
+- [City of Albuquerque Approved Budget, Fiscal Year 2026 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-approved-budget-fy2026.pdf)
+
+  Preserves Albuquerque’s adopted Fiscal Year 2026 operating budget, including revenues, appropriations, department and program funding, staffing, performance measures, capital support, fund summaries, and financial assumptions for that budget cycle.
+
+  [Official City PDF](https://www.cabq.gov/dfa/documents/fy26-approved-final.pdf)
+
+- [City of Albuquerque Approved Budget, Fiscal Year 2025 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-approved-budget-fy2025.pdf)
+
+  Preserves Albuquerque’s adopted Fiscal Year 2025 operating budget, including revenues, appropriations, department and program funding, staffing, performance measures, capital support, fund summaries, and financial assumptions for that budget cycle.
+
+  [Official City PDF](https://www.cabq.gov/dfa/budget/annual-budget/resolveuid/15b39cbc3d25497c8145306aa0ba9272)
+
+- [City of Albuquerque Approved Budget, Fiscal Year 2024 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-approved-budget-fy2024.pdf)
+
+  Preserves Albuquerque’s adopted Fiscal Year 2024 operating budget, including revenues, appropriations, department and program funding, staffing, performance measures, capital support, fund summaries, and financial assumptions for that budget cycle.
+
+  [Official City PDF](https://www.cabq.gov/dfa/budget/annual-budget/resolveuid/2c35455aa7fa46488284d26032433f75)
+
+- [City of Albuquerque Approved Budget, Fiscal Year 2023 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-approved-budget-fy2023.pdf)
+
+  Preserves Albuquerque’s adopted Fiscal Year 2023 operating budget, including revenues, appropriations, department and program funding, staffing, performance measures, capital support, fund summaries, and financial assumptions for that budget cycle.
+
+  [Official City PDF](https://www.cabq.gov/dfa/budget/annual-budget/resolveuid/c1f0299bcc34484695a4c29dc7ad4958)
+
+- [City of Albuquerque Approved Budget, Fiscal Year 2022 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-approved-budget-fy2022.pdf)
+
+  Preserves Albuquerque’s adopted Fiscal Year 2022 operating budget, including revenues, appropriations, department and program funding, staffing, performance measures, capital support, fund summaries, and financial assumptions for that budget cycle.
+
+  [Official City PDF](https://www.cabq.gov/dfa/budget/annual-budget/resolveuid/116fafa452804d519cb06cf1f27ccaac)
+
+- [City of Albuquerque Approved Budget, Fiscal Year 2021 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-approved-budget-fy2021.pdf)
+
+  Preserves Albuquerque’s adopted Fiscal Year 2021 operating budget, including revenues, appropriations, department and program funding, staffing, performance measures, capital support, fund summaries, and financial assumptions for that budget cycle.
+
+  [Official City PDF](https://www.cabq.gov/dfa/budget/annual-budget/resolveuid/d2d40fe9e72646b18b8b347ecda7620f)
+
+- [City of Albuquerque Approved Budget, Fiscal Year 2020 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-approved-budget-fy2020.pdf)
+
+  Preserves Albuquerque’s adopted Fiscal Year 2020 operating budget, including revenues, appropriations, department and program funding, staffing, performance measures, capital support, fund summaries, and financial assumptions for that budget cycle.
+
+  [Official City PDF](https://documents.cabq.gov/budget/fy-20-approved-budget.pdf)
+
+- [City of Albuquerque Approved Budget, Fiscal Year 2019 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-approved-budget-fy2019.pdf)
+
+  Preserves Albuquerque’s adopted Fiscal Year 2019 operating budget, including revenues, appropriations, department and program funding, staffing, performance measures, capital support, fund summaries, and financial assumptions for that budget cycle.
+
+  [Official City PDF](https://documents.cabq.gov/budget/fy-19-approved-budget.pdf)
+
+- [City of Albuquerque Approved Budget, Fiscal Year 2018 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-approved-budget-fy2018.pdf)
+
+  Preserves Albuquerque’s adopted Fiscal Year 2018 operating budget, including revenues, appropriations, department and program funding, staffing, performance measures, capital support, fund summaries, and financial assumptions for that budget cycle.
+
+  [Official City PDF](https://documents.cabq.gov/budget/fy-18-approved-budget.pdf)
+
+- [City of Albuquerque Approved Budget, Fiscal Year 2017 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-approved-budget-fy2017.pdf)
+
+  Preserves Albuquerque’s adopted Fiscal Year 2017 operating budget, including revenues, appropriations, department and program funding, staffing, performance measures, capital support, fund summaries, and financial assumptions for that budget cycle.
+
+  [Official City PDF](https://documents.cabq.gov/budget/fy-17-approved-budget.pdf)
+
+- [City of Albuquerque Approved Budget, Fiscal Year 2016 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-approved-budget-fy2016.pdf)
+
+  Preserves Albuquerque’s adopted Fiscal Year 2016 operating budget, including revenues, appropriations, department and program funding, staffing, performance measures, capital support, fund summaries, and financial assumptions for that budget cycle.
+
+  [Official City PDF](https://documents.cabq.gov/budget/fy-16-approved-budget.pdf)
+
+- [City of Albuquerque Approved Budget, Fiscal Year 2015 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-approved-budget-fy2015.pdf)
+
+  Preserves Albuquerque’s adopted Fiscal Year 2015 operating budget, including revenues, appropriations, department and program funding, staffing, performance measures, capital support, fund summaries, and financial assumptions for that budget cycle.
+
+  [Official City PDF](https://documents.cabq.gov/budget/fy-15-approved-budget.pdf)
+
+- [City of Albuquerque Approved Budget, Fiscal Year 2014 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-approved-budget-fy2014.pdf)
+
+  Preserves Albuquerque’s adopted Fiscal Year 2014 operating budget, including revenues, appropriations, department and program funding, staffing, performance measures, capital support, fund summaries, and financial assumptions for that budget cycle.
+
+  [Official City PDF](https://documents.cabq.gov/budget/fy-14-approved-budget.pdf)
+
+- [City of Albuquerque Approved Budget, Fiscal Year 2013 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-approved-budget-fy2013.pdf)
+
+  Preserves Albuquerque’s adopted Fiscal Year 2013 operating budget, including revenues, appropriations, department and program funding, staffing, performance measures, capital support, fund summaries, and financial assumptions for that budget cycle.
+
+  [Official City PDF](https://documents.cabq.gov/budget/fy-13-approved-budget.pdf)
+
+- [City of Albuquerque Approved Budget, Fiscal Year 2012 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-approved-budget-fy2012.pdf)
+
+  Preserves Albuquerque’s adopted Fiscal Year 2012 operating budget, including revenues, appropriations, department and program funding, staffing, performance measures, capital support, fund summaries, and financial assumptions for that budget cycle.
+
+  [Official City PDF](https://documents.cabq.gov/budget/fy-12-approved-budget.pdf)
+
+- [City of Albuquerque Approved Budget, Fiscal Year 2011 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-approved-budget-fy2011.pdf)
+
+  Preserves Albuquerque’s adopted Fiscal Year 2011 operating budget, including revenues, appropriations, department and program funding, staffing, performance measures, capital support, fund summaries, and financial assumptions for that budget cycle.
+
+  [Official City PDF](https://documents.cabq.gov/budget/fy-11-approved-budget.pdf)
+
+- [City of Albuquerque Approved Budget, Fiscal Year 2010 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-approved-budget-fy2010.pdf)
+
+  Preserves Albuquerque’s adopted Fiscal Year 2010 operating budget, including revenues, appropriations, department and program funding, staffing, performance measures, capital support, fund summaries, and financial assumptions for that budget cycle.
+
+  [Official City PDF](https://documents.cabq.gov/budget/fy-10-approved-budget.pdf)
+
+- [City of Albuquerque Approved Budget, Fiscal Year 2009 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-approved-budget-fy2009.pdf)
+
+  Preserves Albuquerque’s adopted Fiscal Year 2009 operating budget, including revenues, appropriations, department and program funding, staffing, performance measures, capital support, fund summaries, and financial assumptions for that budget cycle.
+
+  [Official City PDF](https://documents.cabq.gov/budget/fy-09-approved-budget.pdf)
+
+- [City of Albuquerque Approved Budget, Fiscal Year 2008 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-approved-budget-fy2008.pdf)
+
+  Preserves Albuquerque’s adopted Fiscal Year 2008 operating budget, including revenues, appropriations, department and program funding, staffing, performance measures, capital support, fund summaries, and financial assumptions for that budget cycle.
+
+  [Official City PDF](https://documents.cabq.gov/budget/fy-08-approved-budget.pdf)
+
+- [City of Albuquerque Approved Budget, Fiscal Year 2007 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-approved-budget-fy2007.pdf)
+
+  Preserves Albuquerque’s adopted Fiscal Year 2007 operating budget, including revenues, appropriations, department and program funding, staffing, performance measures, capital support, fund summaries, and financial assumptions for that budget cycle.
+
+  [Official City PDF](https://documents.cabq.gov/budget/fy-07-approved-budget.pdf)
+
+## Historical Performance Plans
+
+- [City of Albuquerque Performance Plan, Fiscal Year 2011 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-performance-plan-fy2011.pdf)
+
+  Preserves Albuquerque’s Fiscal Year 2011 performance plan, documenting department missions, goals, services, workload measures, desired community conditions, and the performance framework used alongside that year’s approved budget.
+
+  [Official City PDF](https://documents.cabq.gov/budget/fy-11-performance-plan.pdf)
+
+- [City of Albuquerque Performance Plan, Fiscal Year 2010 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-performance-plan-fy2010.pdf)
+
+  Preserves Albuquerque’s Fiscal Year 2010 performance plan, documenting department missions, goals, services, workload measures, desired community conditions, and the performance framework used alongside that year’s approved budget.
+
+  [Official City PDF](https://documents.cabq.gov/budget/fy-10-performance-plan.pdf)
+
+- [City of Albuquerque Performance Plan, Fiscal Year 2008 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-performance-plan-fy2008.pdf)
+
+  Preserves Albuquerque’s Fiscal Year 2008 performance plan, documenting department missions, goals, services, workload measures, desired community conditions, and the performance framework used alongside that year’s approved budget.
+
+  [Official City PDF](https://documents.cabq.gov/budget/fy-08-performance-plan.pdf)
+
 ## Audited Financial Results
 
 - [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2025 (archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2025.pdf)

@@ -1,12 +1,22 @@
 import json
 import sys
 
+import pdfplumber
 from pypdf import PdfReader
 
 
 path = sys.argv[1]
 reader = PdfReader(path)
-text = "\n".join((page.extract_text() or "") for page in reader.pages)
+text_pages = []
+fallback_pages = []
+with pdfplumber.open(path) as plumber:
+    for page_number, page in enumerate(reader.pages, start=1):
+        try:
+            text_pages.append(page.extract_text() or "")
+        except Exception:
+            fallback_pages.append(page_number)
+            text_pages.append(plumber.pages[page_number - 1].extract_text() or "")
+text = "\n".join(text_pages)
 links = []
 seen_links = set()
 for page_number, page in enumerate(reader.pages, start=1):
@@ -29,6 +39,7 @@ print(
             "metadata": {str(key): str(value) for key, value in (reader.metadata or {}).items()},
             "text": text,
             "links": links,
+            "pdfplumber_fallback_pages": fallback_pages,
         },
         ensure_ascii=True,
     )
