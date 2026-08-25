@@ -164,6 +164,138 @@ These adopted budgets preserve changing City priorities, revenues, appropriation
 
   [Official City PDF](https://www.cabq.gov/dfa/documents/agency-6004-city-of-albuquerque-fy25-acfr-final-web.pdf) · [Official City financial-report archive](https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports)
 
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2024 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2024.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2024, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports/annual-comprehensive-financial-reports/resolveuid/9a859f01a9a842b3a5a15d090e856550)
+
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2023 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2023.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2023, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports/annual-comprehensive-financial-reports/resolveuid/285a7e6f268b4007a7b4eab4e5b92b5a)
+
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2022 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2022.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2022, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports/annual-comprehensive-financial-reports/resolveuid/0b075ae820c44d4f98f2418277d6406a)
+
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2021 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2021.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2021, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports/annual-comprehensive-financial-reports/resolveuid/41b080aa190b4d3281073adfdb2bd2dc)
+
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2020 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2020.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2020, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://documents.cabq.gov/budget/comprehensive-annual-financial-reports/comprehensive-annual-financial-report-2020.pdf)
+
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2019 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2019.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2019, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://documents.cabq.gov/budget/comprehensive-annual-financial-reports/comprehensive-annual-financial-report-2019.pdf)
+
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2018 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2018.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2018, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://documents.cabq.gov/budget/comprehensive-annual-financial-reports/comprehensive-annual-financial-report-2018.pdf)
+
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2017 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2017.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2017, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://documents.cabq.gov/budget/comprehensive-annual-financial-reports/comprehensive-annual-financial-report-2017.pdf)
+
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2016 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2016.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2016, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://documents.cabq.gov/budget/comprehensive-annual-financial-reports/comprehensive-annual-financial-report-a-2016.pdf)
+
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2015 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2015.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2015, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://documents.cabq.gov/budget/comprehensive-annual-financial-reports/comprehensive-annual-financial-report-2015.pdf)
+
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2014 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2014.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2014, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://documents.cabq.gov/budget/comprehensive-annual-financial-reports/comprehensive-annual-financial-report-2014.pdf)
+
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2013 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2013.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2013, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://documents.cabq.gov/budget/comprehensive-annual-financial-reports/comprehensive-annual-financial-report-2013.pdf)
+
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2012 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2012.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2012, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports/annual-comprehensive-financial-reports/resolveuid/e2271029aa4de06e2fa24e30c9335425)
+
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2011 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2011.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2011, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://documents.cabq.gov/budget/comprehensive-annual-financial-reports/comprehensive-annual-financial-report-2011.pdf)
+
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2010 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2010.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2010, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports/annual-comprehensive-financial-reports/resolveuid/6f3b56c3f3aa857ff8b7f91effee55da)
+
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2009 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2009.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2009, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports/annual-comprehensive-financial-reports/resolveuid/253c23e646be994c3c6a1b5f7e24c35b)
+
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2008 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2008.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2008, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports/annual-comprehensive-financial-reports/resolveuid/a139a1b70f221af370719074aa248378)
+
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2007 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2007.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2007, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports/annual-comprehensive-financial-reports/resolveuid/a7b5cb3629cbd1d7e11d7809886d8888)
+
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2006 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2006.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2006, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports/annual-comprehensive-financial-reports/resolveuid/c76d32c16b14627029fa0f7363ccf4e0)
+
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2005 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2005.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2005, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports/annual-comprehensive-financial-reports/resolveuid/89dc14043261af23f84d6618339cae8d)
+
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2004 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2004.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2004, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports/annual-comprehensive-financial-reports/resolveuid/7ade573ce07cc3c56afe1b160472d154)
+
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2003 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2003.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2003, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports/annual-comprehensive-financial-reports/resolveuid/4dc4658b94a87c060680f639e1e2bf7e)
+
 ## Five-Year Financial Forecasts
 
 The City publishes this forecast before developing each annual budget. Together, the editions preserve changing expectations for revenue, spending, economic conditions, and future budget pressure. [The official forecast archive](https://www.cabq.gov/dfa/budget/five-year-forecast) remains the source of truth for later releases.
