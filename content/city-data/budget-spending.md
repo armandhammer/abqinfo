@@ -224,6 +224,12 @@ These adopted budgets preserve changing City priorities, revenues, appropriation
 
   [Official City PDF](https://documents.cabq.gov/budget/comprehensive-annual-financial-reports/comprehensive-annual-financial-report-2015.pdf)
 
+- [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2014 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2014.pdf)
+
+  Presents Albuquerque’s independently audited financial statements for Fiscal Year 2014, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.
+
+  [Official City PDF](https://documents.cabq.gov/budget/comprehensive-annual-financial-reports/comprehensive-annual-financial-report-2014.pdf)
+
 - [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2013 (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2013.pdf)
 
   Presents Albuquerque’s independently audited financial statements for Fiscal Year 2013, including government-wide and fund finances, revenues, expenditures, debt, pensions, capital assets, budget comparisons, notes, and long-term statistical trends.

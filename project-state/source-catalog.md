@@ -1,8 +1,8 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-24T19:33:33.7947556Z
+Generated: 2026-08-25T00:12:52.8085851Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 5912 candidates and 401 R2 objects totaling 5182356998 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 5912 candidates and 402 R2 objects totaling 5439740295 bytes.
 
 ## Queue status
 
@@ -16,12 +16,12 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 24 |
-| validated | 546 |
+| validated | 547 |
 | excluded | 738 |
 | duplicate | 453 |
 | superseded | 24 |
 | blocked | 0 |
-| requires human review | 69 |
+| requires human review | 68 |
 
 ## Preserved files
 
@@ -122,6 +122,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2011 | City of Albuquerque | FY 2011 | PDF | 27760718 | content/city-data/budget-spending.md | [source](https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports) | [R2](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2011.pdf) |
 | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2012 | City of Albuquerque | FY 2012 | PDF | 7673759 | content/city-data/budget-spending.md | [source](https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports) | [R2](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2012.pdf) |
 | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2013 | City of Albuquerque | FY 2013 | PDF | 45165030 | content/city-data/budget-spending.md | [source](https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports) | [R2](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2013.pdf) |
+| City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2014 | City of Albuquerque | FY 2014 | PDF | 257383297 | content/city-data/budget-spending.md | [source](https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports) | [R2](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2014.pdf) |
 | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2015 | City of Albuquerque | FY 2015 | PDF | 52967478 | content/city-data/budget-spending.md | [source](https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports) | [R2](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2015.pdf) |
 | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2016 | City of Albuquerque | FY 2016 | PDF | 13307540 | content/city-data/budget-spending.md | [source](https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports) | [R2](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2016.pdf) |
 | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2017 | City of Albuquerque | FY 2017 | PDF | 3202313 | content/city-data/budget-spending.md | [source](https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports) | [R2](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2017.pdf) |
@@ -1806,7 +1807,6 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-395957636cb2fed0 | requires human review | 1993 Trails and Bikeways Facility Plan | The 2024 plan identifies this as a predecessor; the official Planning update summary confirms that the 2015 plan repealed it.; The preserved R2 object is exactly 4,624,017 bytes (4.41 MiB), but an R2 HTTP 200 is not authoritative provenance. |
 | src-471d0f932fd289ab | requires human review | Ruidoso Road Speed Study (2021 archived PDF) | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL.; Previous HTTP-only validation was reverted because an R2 200 response does not establish authoritative-source provenance. |
 | src-48a2030163390b5b | requires human review | Traffic Evaluation (Signed July 2, 2025) | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
-| src-48ba9d6c50b4be01 | requires human review | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2014 | The authoritative FY2014 ACFR is 257,383,297 bytes and requires explicit user approval before production R2 upload. |
 | src-4ae7d33db461b5a2 | requires human review | Buena Vista Bike Boulevard 60% Plans | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
 | src-4cb190564a688d42 | requires human review | City Council Resolution R-07-268: Bike Boulevards (2007) | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL.; User-contributed source file is byte-identical to the existing R2 object (86,484 bytes; SHA-256 8ab53b1618bb0dcda93f43d7ae9d79dd6822d1f6fcc1b9868dd03d37aca9d83a). |
 | src-4cca8f32650581e1 | requires human review | Tall Curb Full Installation Procedures | Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL. |
