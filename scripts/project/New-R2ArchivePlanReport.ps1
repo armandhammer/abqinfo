@@ -9,8 +9,9 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $plan = Get-Content -Raw -Encoding UTF8 -LiteralPath $PlanPath | ConvertFrom-Json
 $items = @($plan.items)
-$added = [int64](($items | Measure-Object -Property size_bytes -Sum).Sum)
-$projected = [int64]$plan.current_r2_bytes + $added
+$batchBytes = [int64](($items | Measure-Object -Property size_bytes -Sum).Sum)
+$added = if ($plan.PSObject.Properties['added_bytes']) { [int64]$plan.added_bytes } else { $batchBytes }
+$projected = if ($plan.PSObject.Properties['projected_r2_bytes']) { [int64]$plan.projected_r2_bytes } else { [int64]$plan.current_r2_bytes + $added }
 $large = @($items | Where-Object { $_.size_bytes -gt 25MB })
 $overLimit = @($items | Where-Object { $_.size_bytes -gt [int64]$plan.maximum_object_bytes })
 $inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
@@ -30,6 +31,7 @@ $lines = @(
   ''
   "- Current bucket storage: $($plan.current_r2_bytes) bytes"
   "- Files proposed: $($items.Count)"
+  "- Total size of files in batch: $batchBytes bytes ($([math]::Round($batchBytes / 1MB, 2)) MiB)"
   "- Storage added: $added bytes ($([math]::Round($added / 1MB, 2)) MiB)"
   "- Projected bucket storage: $projected bytes ($([math]::Round($projected / 1GB, 2)) GiB)"
   "- Files larger than 25 MiB: $($large.Count)"
