@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-25T01:48:07.9105997Z",
+  "generated_at": "2026-08-25T02:42:20.1348525Z",
   "policy": "Every retained active government webpage is a document-discovery root. Recursively review relevant child pages and archive qualifying attached documents; access-controlled pages require rendered-browser review rather than silent completion.",
   "allowed_statuses": [
     "pending descendant crawl",
@@ -11,7 +11,7 @@
   ],
   "counts": {
     "pending descendant crawl": 229,
-    "crawled": 23,
+    "crawled": 24,
     "requires rendered-browser review": 0,
     "excluded": 0,
     "superseded": 0
@@ -152,6 +152,24 @@
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
       "updated_at": "2026-08-20T19:09:19.7812179Z"
+    },
+    {
+      "candidate_id": "src-d2a773fa04e3a040",
+      "source_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/DRC/",
+      "title": "City Development Review and Construction Standards Directory",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/transportation/design-references.md",
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-drs-drc-2026-08-24.json",
+      "discovered_documents": 19,
+      "archived_documents": 19,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The direct directory listing was captured deterministically and reviewed. Nineteen consolidated specifications, drawing sets, and supplemental standards were selected, archived, implemented, and byte-identically validated.",
+        "The IIA child directory remains a separate discovery frontier for later review."
+      ],
+      "created_at": "2026-08-25T02:42:19.9346305Z",
+      "updated_at": "2026-08-25T02:42:20.1006735Z"
     },
     {
       "candidate_id": "src-27b939c34a1c59fc",
