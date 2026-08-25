@@ -68,11 +68,17 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   Maps the adopted long-range transit network for the Albuquerque metropolitan area, showing existing services and proposed high-capacity or expanded connections that guide coordinated transit planning beyond the 2045 horizon.
 
-- [MRMPO Transportation Improvement Program, FFY 2024-2029](https://files.abqinfo.com/transportation/transportation-plans/mrcog-ffy-2024-2029-current-tip.pdf)
+- [New Mexico Statewide Transportation Improvement Program, FFY 2024-2029 - Approved Snapshot (August 2026)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-ffy-2024-2029-approved-stip-2026-08-25.pdf)
 
-  The current Mid-Region MPO Transportation Improvement Program lists federally funded transportation projects scheduled across fiscal years 2024-2029, including budgets, phases, lead agencies, funding sources, and status for roadway, transit, bicycle, pedestrian, and other work.
+  Preserves the August 2026 approved statewide STIP snapshot with scope, agency, status, locations, maps, and phase-by-phase funding for 1,130 programmed projects, including Albuquerque-area investments and their statewide funding context.
 
-  [Check the official current TIP and revisions](https://www.mrcog-nm.gov/280/Current-TIP) or [search the live MRMPO TIP Viewer](https://mrmpo.nm.tipviewer.pmgpro.com/).
+  [Open the current official report](https://nm.stipviewer.pmgpro.com/api/reports/ComprehensiveSTIP?stipid=7&RevisionName=Approved) · [Search the live NMDOT STIP Viewer](https://nm.stipviewer.pmgpro.com/)
+
+- [MRMPO Transportation Improvement Program, FFY 2024-2029 - Approved Snapshot (August 2026)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-ffy-2024-2029-approved-tip-2026-08-25.pdf)
+
+  Preserves the August 2026 approved regional TIP snapshot with project-by-project scope, agency, status, location, maps, and funding by phase, fiscal year, and source for 231 programmed transportation investments.
+
+  [Open the current official report](https://mrmpo.nm.tipviewer.pmgpro.com/api/reports/ComprehensiveSTIP?stipid=7&RevisionName=Approved) · [Check the official TIP and revisions](https://www.mrcog-nm.gov/280/Current-TIP) · [Search the live MRMPO TIP Viewer](https://mrmpo.nm.tipviewer.pmgpro.com/)
 
 - [MRMPO Performance-Based Planning and Programming](https://www.mrcog-nm.gov/676/Performance-Based-Planning)
 

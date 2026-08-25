@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "source_url": "https://mrcogmaps.org/Forecast2045",
+  "resolved_url": "https://mrcogmaps.org/portal/apps/instant/portfolio/index.html?appid=3c27472922ef4a8ca8fbf4600c5101a9",
+  "title": "Transitions 2045: Socioeconomic Forecast Interactive Map",
+  "agency": "Mid-Region Metropolitan Planning Organization",
+  "retrieved_at": "2026-08-25T00:00:00Z",
+  "discovery_method": "Rendered-browser inspection followed by recursive ArcGIS item-data and service dependency traversal",
+  "crawl_status": "relevant dependency frontier exhausted",
+  "root_item": {
+    "item_id": "3c27472922ef4a8ca8fbf4600c5101a9",
+    "type": "Web Mapping Application",
+    "created": "2025-10-02T14:44:45.753Z",
+    "modified": "2026-05-12T20:21:18.152Z",
+    "configuration_size_bytes": 6375
+  },
+  "views": [
+    {
+      "item_id": "71f76312d8ce4b83bca87a475170a3a0",
+      "title": "Forecast_2045_County",
+      "type": "Web Experience",
+      "configuration_size_bytes": 37146,
+      "web_map_item_id": "1c61d0fcc2fe4c29a2cd35c853be7f1d",
+      "feature_service_item_id": "88e1aafba6be4482bdc50b3ae1bf2cb3",
+      "feature_service_url": "https://mrcogmaps.org/server/rest/services/Forecast_2045_County_20251103/FeatureServer",
+      "embedded_dashboard_item_ids": [
+        "8a4de08351604edc93a8c02bb8cb59a7",
+        "0d663e70f2a1405f866397ce1da45eb2",
+        "43414a87a3b7423d87b6c872d4e0755d",
+        "d50ef2518482498182db5a2902e04373",
+        "cd6f38d45daa4956af2158d3842f022b"
+      ],
+      "subjects": [
+        "population",
+        "household population",
+        "households",
+        "housing units",
+        "employment"
+      ],
+      "user_guide": "Embedded application-resource PNG named UserGuideCounty_3.png",
+      "notes": "The rendered app exposes county tables and charts for 2020 estimates, 2045 forecasts, and numeric and percentage change. Its Full Table control opens an embedded dashboard rather than a separate authoritative download."
+    },
+    {
+      "item_id": "eeee7544fd0c4951895aef450a797493",
+      "title": "Forecast_2045_DASZ",
+      "type": "Web Experience",
+      "configuration_size_bytes": 151338,
+      "web_map_item_id": "7288d0c0b99a407ebb48cea74557e8d3",
+      "feature_service_item_ids": [
+        "cd21651a18c94ba8999fdf6d51c5506a",
+        "d3412f8f3df642279054c964409bebf6"
+      ],
+      "feature_service_url": "https://mrcogmaps.org/server/rest/services/2045_Socioeconomic_Forecast_for_the_Mid_Region_of_New_Mexico_MIL1/FeatureServer",
+      "layers_reviewed": [
+        "key centers",
+        "municipalities",
+        "counties",
+        "2020 and 2045 population",
+        "population change",
+        "2020 and 2045 housing units",
+        "housing-unit change",
+        "2020 and 2045 households",
+        "household change",
+        "2020 and 2045 employment",
+        "employment change"
+      ],
+      "user_guide": "Embedded application-resource PNG named UserGuideDASZ_8.png",
+      "notes": "The small-area view maps the approved forecast by Data Analysis Subzone. The service is the interactive representation of the same forecast already preserved in MRMPO's authoritative regional and Bernalillo County workbooks."
+    }
+  ],
+  "archival_reconciliation": {
+    "new_uploads_required": 0,
+    "reason": "The authoritative forecast presentation, regional workbook, Bernalillo County workbook, and DASZ data dictionary are already archived in R2 and linked from content/city-data/demographics.md. ArcGIS app configurations and embedded guide screenshots are interface components, not superior archival substitutes for those downloads.",
+    "existing_archived_candidate_ids": [
+      "src-8493274afa12331f",
+      "src-4ee4d7493e2495ec",
+      "src-93b85b580ff2b069",
+      "src-db8b649daf20497b"
+    ]
+  },
+  "site_action": "No content change required; the existing Demographics and Dashboards links accurately describe and link the live app, while the Demographics page provides the preserved source files.",
+  "processing_notes": [
+    "The short URL and final portfolio URL were both tested in the rendered browser.",
+    "ArcGIS item metadata and application JSON were reviewed recursively rather than treating the portfolio shell as a terminal page.",
+    "No undiscovered authoritative PDF, workbook, CSV, or other downloadable source document was referenced by the app configuration."
+  ]
+}

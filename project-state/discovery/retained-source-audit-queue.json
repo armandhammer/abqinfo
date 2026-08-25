@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-25T03:44:25.2260685Z",
+  "generated_at": "2026-08-25T14:25:45.5201437Z",
   "policy": "Every retained active government webpage is a document-discovery root. Recursively review relevant child pages and archive qualifying attached documents; access-controlled pages require rendered-browser review rather than silent completion.",
   "allowed_statuses": [
     "pending descendant crawl",
@@ -10,13 +10,13 @@
     "superseded"
   ],
   "counts": {
-    "pending descendant crawl": 225,
-    "crawled": 31,
+    "pending descendant crawl": 222,
+    "crawled": 34,
     "requires rendered-browser review": 0,
     "excluded": 0,
     "superseded": 0
   },
-  "next_pending_source_url": "https://mrcogmaps.org/Forecast2045",
+  "next_pending_source_url": "https://nmroads.com",
   "records": [
     {
       "candidate_id": "src-a6a63111f9b4ba00",
@@ -214,15 +214,17 @@
       "title": "MRMPO 2045 Socioeconomic Forecast Interactive Map",
       "agency": "Mid-Region Metropolitan Planning Organization",
       "canonical_page": "content/city-data/demographics.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-mrmpo-forecast-2045-2026-08-25.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Existing R2 archives already preserve the authoritative presentation, regional and Bernalillo County workbooks, and data dictionary; no duplicate upload was warranted.",
+        "Rendered-browser inspection and recursive ArcGIS dependency traversal exhausted the relevant county and DASZ pathways."
       ],
       "created_at": "2026-08-25T01:11:32.9869801Z",
-      "updated_at": "2026-08-25T01:11:32.9869801Z"
+      "updated_at": "2026-08-25T14:11:11.0687029Z"
     },
     {
       "candidate_id": "src-149ea9e6395a41ca",
@@ -230,15 +232,19 @@
       "title": "MRMPO TIP Viewer",
       "agency": "MRCOG",
       "canonical_page": "content/transportation/transportation-plans.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/mrmpo-tip-viewer-batch-report.json",
+      "discovered_documents": 1,
+      "archived_documents": 1,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Rendered-browser review and public API traversal verified the active FFY 2024-2029 TIP, 229 project records, report/export, attachment, configuration, and map-service pathways.",
+        "The catalog checked all 229 active project control numbers in six attachment requests and found no project attachment records.",
+        "The newly generated 231-page August 25, 2026 approved report was archived byte-identically in R2; the older 229-page July 2026 snapshot remains preserved.",
+        "The public revision endpoint exposes 308 total revision records, including 79 for the active TIP; individual revision records remain represented by the official viewer rather than separately published."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
+      "updated_at": "2026-08-25T14:21:50.4389384Z"
     },
     {
       "candidate_id": "src-8cb092f67a03b619",
@@ -246,15 +252,18 @@
       "title": "NMDOT STIP viewer",
       "agency": "NMDOT",
       "canonical_page": "content/maps/dashboards.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/retained-source-expansion-5b-public-validation-2026-08-25.json",
+      "discovered_documents": 1,
+      "archived_documents": 1,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Rendered-browser and public API traversal verified the active FFY 2024-2029 STIP, 1,130 unique projects across 1,480 location rows, report/export, configuration, help, and map-service pathways.",
+        "The August 25, 2026 approved 1,132-page statewide report was archived byte-identically in R2.",
+        "The live viewer remains the source of truth for project filtering and later revisions; ABQInfo preserves the approved snapshot and provides the statewide funding context for Albuquerque-area projects."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
+      "updated_at": "2026-08-25T14:25:45.5011353Z"
     },
     {
       "candidate_id": "src-8a96e3fdb3ea48a0",
