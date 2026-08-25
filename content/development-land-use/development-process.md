@@ -16,9 +16,37 @@ Cross-cutting development process documents, manuals, and reference materials.
 
   Provides the City's technical requirements and procedures for planning, designing, reviewing, permitting, and constructing public infrastructure associated with development projects.
 
-- [Development Process Manual Amendments](https://www.cabq.gov/planning/boards-commissions/development-process-manual-executive-committee/amendments-to-the-dpm)
+- [Current Development Process Manual Amendments Register](https://www.cabq.gov/planning/boards-commissions/development-process-manual-executive-committee/amendments-to-the-dpm)
 
-  Maintains proposed and approved changes to the DPM. Check this register with the archived signed manual because later committee actions may change individual chapters or technical requirements.
+  Maintains proposed and approved changes to the DPM. Check this live register with the archived signed manual and amendments below because later committee actions may change individual chapters or technical requirements.
+
+### Archived Approved Amendments
+
+- [Article 4-3 ABCWUA Changes (May 4, 2026 archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-approved-amendment-article-4-3-abcwua-2026-05-04.pdf)
+
+  Preserves the DPM amendment approved May 4, 2026, revising Article 4-3 graphic standards and related plan-scale, line-weight, AutoCAD, and Albuquerque Bernalillo County Water Utility Authority requirements.
+
+  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/Article%204-3%20ABCWUA%20change-combined.pdf) · [Current amendments register](https://www.cabq.gov/planning/boards-commissions/development-process-manual-executive-committee/amendments-to-the-dpm)
+
+- [Approved Municipal Development Changes (December 11, 2025 archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-approved-dmd-changes-2025-12-11.pdf)
+
+  Preserves the full marked Development Process Manual showing Municipal Development changes approved December 11, 2025, so users can identify post-2020 revisions affecting public-infrastructure design, review, construction, and related technical standards.
+
+  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/DPM-202-06-02_DMD_redline%2012.11.2025.pdf) · [Current amendments register](https://www.cabq.gov/planning/boards-commissions/development-process-manual-executive-committee/amendments-to-the-dpm)
+
+- [Approved Planning and Municipal Development Changes (September 25, 2025 archived Word document)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-approved-planning-dmd-changes-2025-09-25.docx)
+
+  Preserves the full tracked-change Development Process Manual approved September 25, 2025, including updates to City review bodies, ABQ-PLAN procedures, site and infrastructure review, and green stormwater requirements.
+
+  [Official City Word document](https://documents.cabq.gov/planning/development-process-manual/DPM-PLANNING-DMD%20CHANGES_9-25-25.docx) · [Current amendments register](https://www.cabq.gov/planning/boards-commissions/development-process-manual-executive-committee/amendments-to-the-dpm)
+
+## Public Infrastructure Cost Estimating
+
+- [City Engineer's Estimated Unit Prices for Contract Items, 2026 (archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-city-engineer-estimated-unit-prices-2026.pdf)
+
+  Sets the City's 2026 estimated construction costs for public-infrastructure contract items, including paving, traffic control, structures, drainage, utilities, landscaping, and the financial-guarantee calculations required for development projects.
+
+  Effective August 1, 2026. [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/2026%20City%20Engineers%20Unit%20Price.pdf) · [Official Development Review Services document library](https://documents.cabq.gov/planning/DevelopmentReviewServices/)
 
 ## Fees
 
