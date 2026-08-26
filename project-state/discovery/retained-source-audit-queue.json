@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-26T22:36:30.3393948Z",
+  "generated_at": "2026-08-26T22:57:51.2368556Z",
   "policy": "Every retained active government webpage is a document-discovery root. Recursively review relevant child pages and archive qualifying attached documents; access-controlled pages require rendered-browser review rather than silent completion.",
   "allowed_statuses": [
     "pending descendant crawl",
@@ -10,13 +10,13 @@
     "superseded"
   ],
   "counts": {
-    "pending descendant crawl": 222,
-    "crawled": 51,
+    "pending descendant crawl": 216,
+    "crawled": 58,
     "requires rendered-browser review": 0,
     "excluded": 0,
     "superseded": 0
   },
-  "next_pending_source_url": "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
+  "next_pending_source_url": "https://www.bernco.gov/public-works/blog/2025/02/12/east-central-pedestrian-safety-project",
   "records": [
     {
       "candidate_id": "src-a6a63111f9b4ba00",
@@ -494,15 +494,16 @@
       "title": "APS Vision Zero Task Force Meeting 4 Notes",
       "agency": "Albuquerque Public Schools",
       "canonical_page": "content/transportation/bicycling/safety-crash-data.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-aps-vision-zero-links-resources-2026-08-26.json",
+      "discovered_documents": 9,
+      "archived_documents": 8,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Rendered-browser review confirmed all nine linked APS documents are already archived or intentionally deduplicated; no new upload required."
       ],
       "created_at": "2026-08-25T01:12:22.4497089Z",
-      "updated_at": "2026-08-25T01:12:22.4497089Z"
+      "updated_at": "2026-08-26T16:50:41.3510997Z"
     },
     {
       "candidate_id": "src-9a8de57080520216",
@@ -510,15 +511,16 @@
       "title": "Council District Poster Map",
       "agency": "City of Albuquerque",
       "canonical_page": "content/maps/maps.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-cabq-council-district-poster-arcgis-2026-08-26.json",
+      "discovered_documents": 1,
+      "archived_documents": 1,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "ArcGIS item metadata, data endpoint, DMD Hub provenance, and organization alternatives reconciled to the validated January 2026 poster archive."
       ],
       "created_at": "2026-08-25T01:12:22.4497089Z",
-      "updated_at": "2026-08-25T01:12:22.4497089Z"
+      "updated_at": "2026-08-26T16:51:18.2616475Z"
     },
     {
       "candidate_id": "src-393cac968c0c2b62",
@@ -526,15 +528,16 @@
       "title": "NTMP Request Process Flowchart",
       "agency": "City of Albuquerque",
       "canonical_page": "content/transportation/roadway-projects/speed-management.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-cabq-ntmp-flowchart-arcgis-2026-08-26.json",
+      "discovered_documents": 1,
+      "archived_documents": 1,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "ArcGIS item metadata, data endpoint, DMD Hub provenance, and organization alternatives reconciled to the validated February 2026 flowchart archive."
       ],
       "created_at": "2026-08-25T01:12:22.4497089Z",
-      "updated_at": "2026-08-25T01:12:22.4497089Z"
+      "updated_at": "2026-08-26T16:51:47.8947305Z"
     },
     {
       "candidate_id": "src-05ee0c53f77c67fd",
@@ -576,16 +579,17 @@
       "title": "Transportation Project Planning",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/transportation-plans.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": "project-state/discovery/bernco-retained-transportation-2026-08-20.json",
-      "discovered_documents": 1,
-      "archived_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-bernco-transportation-project-planning-2026-08-26.json",
+      "discovered_documents": 2,
+      "archived_documents": 1,
       "processing_notes": [
         "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Legacy URL redirects to the current County page. Archived the authoritative March 2024 planning-process PDF; deduplicated its separately linked PNG derivative.",
         "The authored Transportation Planning Process diagram was cataloged for archive review."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T20:47:10.3539189Z"
+      "updated_at": "2026-08-26T16:57:08.9672296Z"
     },
     {
       "candidate_id": "src-fd0b7e26b82595c2",
@@ -593,15 +597,16 @@
       "title": "automated photo speed enforcement",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/speed-management.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-bernco-automated-photo-speed-enforcement-2026-08-26.json",
+      "discovered_documents": 2,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Reviewed the full rendered program page, its current codified ordinance, and two attached citation-process PDFs. The existing ABQInfo live link remains the useful canonical entry; the transactional forms were excluded from R2 archival."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
+      "updated_at": "2026-08-26T17:31:00Z"
     },
     {
       "candidate_id": "src-65011a235ea2c10e",
@@ -617,15 +622,15 @@
         "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
         "The 2016 master plan was already archived and remains canonical under Bike Plans; 2026 meeting-flyer and promotional images were reviewed and excluded as transient."
       ],
-      "created_at": "2026-08-26T22:36:28.6357693Z",
-      "updated_at": "2026-08-26T22:36:30.2825481Z"
+      "created_at": "2026-08-26T22:57:50.7059502Z",
+      "updated_at": "2026-08-26T22:57:51.2254611Z"
     },
     {
       "candidate_id": "src-53a1082347813b21",
       "source_url": "https://www.bernco.gov/public-works/blog/2021/04/16/blake-rd-improvements/",
       "title": "Blake Roadway and Storm Drain Improvements Public Meeting Presentation",
       "agency": "Bernalillo County",
-      "canonical_page": "content/city-data/budget-spending.md",
+      "canonical_page": "content/transportation/roadway-projects/_index.md",
       "audit_status": "crawled",
       "crawl_output": "project-state/discovery/bernco-retained-transportation-2026-08-20.json",
       "discovered_documents": 6,
@@ -634,8 +639,8 @@
         "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
         "All attachments reviewed. The substantive design presentation was archived; the dated meeting notice and temporary 2026 construction-closure graphics were excluded as transient, and the project-limits image was redundant with the presentation."
       ],
-      "created_at": "2026-08-26T22:36:28.6357693Z",
-      "updated_at": "2026-08-26T22:36:29.9028588Z"
+      "created_at": "2026-08-26T22:57:50.7059502Z",
+      "updated_at": "2026-08-26T22:57:51.129835Z"
     },
     {
       "candidate_id": "src-14e4cd864d467daa",
@@ -643,22 +648,23 @@
       "title": "Official source: Bridge Boulevard Corridor Redevelopment Plan",
       "agency": "Bernalillo County",
       "canonical_page": "content/development-land-use/projects.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-bernco-bridge-boulevard-lineage-2026-08-26.json",
+      "discovered_documents": 10,
+      "archived_documents": 10,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Recovered and validated the 1997 and 2010 predecessor plans plus seven substantive 2012-2013 technical appendices; the already archived 2013 redevelopment plan completes the ten-document lineage."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
+      "updated_at": "2026-08-26T17:19:00Z"
     },
     {
       "candidate_id": "src-14bf071bcc9dbde3",
       "source_url": "https://www.bernco.gov/public-works/blog/2024/08/05/upper-la-cueva-improvements/",
       "title": "Upper La Cueva Improvements Primrose Pointe HOA Presentation",
       "agency": "Bernalillo County",
-      "canonical_page": "content/city-data/budget-spending.md",
+      "canonical_page": "content/public-works/stormwater-drainage.md",
       "audit_status": "crawled",
       "crawl_output": "project-state/discovery/bernco-retained-transportation-2026-08-20.json",
       "discovered_documents": 3,
@@ -667,8 +673,8 @@
         "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
         "Both materially distinct presentations were archived. The separate project map was redundant with the mapped and rendered design content in the presentations."
       ],
-      "created_at": "2026-08-26T22:36:28.6357693Z",
-      "updated_at": "2026-08-26T22:36:30.0843878Z"
+      "created_at": "2026-08-26T22:57:50.7059502Z",
+      "updated_at": "2026-08-26T22:57:51.1742696Z"
     },
     {
       "candidate_id": "src-2aa795138321bebe",
@@ -691,7 +697,7 @@
       "source_url": "https://www.bernco.gov/public-works/blog/2025/02/12/east-central-pedestrian-safety-project/",
       "title": "East Central Pedestrian Safety Project Map",
       "agency": "Bernalillo County",
-      "canonical_page": "content/city-data/budget-spending.md",
+      "canonical_page": "content/transportation/roadway-projects/_index.md",
       "audit_status": "crawled",
       "crawl_output": "project-state/discovery/bernco-retained-transportation-2026-08-20.json",
       "discovered_documents": 1,
@@ -700,8 +706,8 @@
         "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
         "Rendered page and attached corridor map reviewed; the map was archived in this batch."
       ],
-      "created_at": "2026-08-26T22:36:28.6357693Z",
-      "updated_at": "2026-08-26T22:36:29.2631989Z"
+      "created_at": "2026-08-26T22:57:50.7059502Z",
+      "updated_at": "2026-08-26T22:57:50.9564641Z"
     },
     {
       "candidate_id": "src-fb966b8b33693f12",
@@ -717,15 +723,15 @@
         "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
         "Rendered page reviewed; no downloadable project document was present."
       ],
-      "created_at": "2026-08-26T22:36:28.6357693Z",
-      "updated_at": "2026-08-26T22:36:29.7030319Z"
+      "created_at": "2026-08-26T22:57:50.7059502Z",
+      "updated_at": "2026-08-26T22:57:51.0765739Z"
     },
     {
       "candidate_id": "src-16f8ae9c0bf6e508",
       "source_url": "https://www.bernco.gov/public-works/blog/2026/05/18/bridge-boulevard-phase-3/",
       "title": "Bridge Boulevard Phase 3 Selected Alternative",
       "agency": "Bernalillo County",
-      "canonical_page": "content/city-data/budget-spending.md",
+      "canonical_page": "content/transportation/roadway-projects/_index.md",
       "audit_status": "crawled",
       "crawl_output": "project-state/discovery/bernco-retained-transportation-2026-08-20.json",
       "discovered_documents": 1,
@@ -734,8 +740,8 @@
         "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
         "Rendered page and selected-alternative attachment reviewed; the substantive alternative was archived."
       ],
-      "created_at": "2026-08-26T22:36:28.6357693Z",
-      "updated_at": "2026-08-26T22:36:29.4817952Z"
+      "created_at": "2026-08-26T22:57:50.7059502Z",
+      "updated_at": "2026-08-26T22:57:51.0263088Z"
     },
     {
       "candidate_id": "src-6bb5c9d96d6a080d",
@@ -850,6 +856,22 @@
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
       "updated_at": "2026-08-20T20:47:10.2984572Z"
+    },
+    {
+      "candidate_id": "src-f913be8e40092d8a",
+      "source_url": "https://www.bernco.gov/public-works/transportation-planning/transportation-project-planning/",
+      "title": "Transportation Project Planning — canonical redirected source",
+      "agency": "Bernalillo County",
+      "canonical_page": "content/transportation/transportation-plans.md",
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-bernco-transportation-project-planning-2026-08-26.json",
+      "discovered_documents": 2,
+      "archived_documents": 1,
+      "processing_notes": [
+        "Canonical County URL produced by the legacy-page redirect is separately retained by the inventory; it shares the completed planning-process descendant audit."
+      ],
+      "created_at": "2026-08-26T21:57:00Z",
+      "updated_at": "2026-08-26T21:57:00Z"
     },
     {
       "candidate_id": "src-dfd6e4b5cdd3831e",
