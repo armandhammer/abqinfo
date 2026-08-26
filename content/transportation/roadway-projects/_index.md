@@ -70,6 +70,38 @@ Project contact: Bridgette Garrett at DMD, bgarrett@cabq.gov
 
   Describes the 2nd Street project near Hazeldine and 1st Street, combining pavement rehabilitation, traffic calming, ADA improvements, sidewalks, lighting, multimodal access, speed-study findings, and economic-development goals.
 
+### Bernalillo County Corridor Projects
+
+- [East Central Pedestrian Safety Project](https://www.bernco.gov/public-works/blog/2025/02/12/east-central-pedestrian-safety-project/)
+
+  Covers sidewalk and accessibility design along Central Avenue from Eubank Boulevard to Tramway Boulevard, including right-of-way mapping, utility coordination, project funding, design status, and the relationship to the earlier East Central safety study.
+
+  [Archived Project Map (2025)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-east-central-pedestrian-safety-project-map-2025.png) · [Official County Map](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/02/East-Central-Pedestrian-Safety-Project-Map.png) · [Archived Safety Study]({{< relref "studies.md#east-central-avenue" >}})
+
+  Project contact: Richard Meadows, 505-850-4496, [rmeadows@bernco.gov](mailto:rmeadows@bernco.gov)
+
+- [Bridge Boulevard Phase 3](https://www.bernco.gov/public-works/blog/2026/05/18/bridge-boulevard-phase-3/)
+
+  Tracks study and design from Lura Place to Young Avenue, including roadway reconstruction, bicycle lanes, sidewalks, drainage, access, and pedestrian and signal improvements around Goff Boulevard and Five Points.
+
+  [Selected Alternative (2026 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-bridge-boulevard-phase-3-selected-alternative-2026.pdf) · [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2026/05/Bridge-Phase-3-Selected-Alternative.pdf)
+
+  Project contact: Jennifer Flor, 505-350-7833, [jflor@bernco.gov](mailto:jflor@bernco.gov)
+
+- [4th Street Road Diet](https://www.bernco.gov/public-works/blog/2025/02/13/4th-street-road-diet/)
+
+  Describes the Ortega Road-to-Alameda Boulevard redesign, combining pavement rehabilitation, bicycle lanes, ADA and pedestrian improvements, drainage, curb and gutter work, and the County’s construction schedule and funding.
+
+  Project contact: Leila Momenzadeh, 505-527-2837
+
+- [Blake Road Improvements](https://www.bernco.gov/public-works/blog/2021/04/16/blake-rd-improvements/)
+
+  Tracks reconstruction from the Isleta Drain to Isleta Boulevard, including ADA sidewalks, buffered bicycle lanes, traffic calming, storm drainage, access management, phased design, construction timing, cost, and current County updates.
+
+  [Public Meeting Presentation (2023 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-blake-roadway-storm-drain-improvements-presentation-2023.pdf) · [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2023/10/Blake-Road-Presentation_Optimized.pdf)
+
+  Project contact: Dominic Ortiz, 505-301-6934, [dortiz@bernco.gov](mailto:dortiz@bernco.gov)
+
 ### Bernalillo County Project Indexes
 
 - [Current Public Works Projects](https://www.bernco.gov/public-works/current-projects)
