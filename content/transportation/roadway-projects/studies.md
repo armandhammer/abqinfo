@@ -200,6 +200,64 @@ Transportation studies and reports.
 
   [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/Redevelopment-plan.pdf) · [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/16/bridge-boulevard-corridor-redevelopment-plan)
 
+#### Technical Appendices
+
+- [Bridge Boulevard Transportation Assessment (2012 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/bernco-bridge-boulevard-transportation-assessment-2012.pdf)
+
+  Evaluates crashes, pedestrian and bicycle conditions, transit, traffic operations, intersection capacity, roadway alternatives, complete-streets strategies, and supporting inventories for the Bridge Boulevard corridor.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/AppendixC.pdf)
+
+- [Bridge Boulevard Corridor Design Charrette Report (2012 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/bernco-bridge-boulevard-design-charrette-report-2012.pdf)
+
+  Records the May 2012 collaborative design process, land-use and mobility concepts, market findings, community feedback, redevelopment-site alternatives, streetscape ideas, and implementation priorities.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/Charette.pdf)
+
+- [Bridge Boulevard Historic and Cultural Analysis (2012 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/bernco-bridge-boulevard-historic-cultural-analysis-2012.pdf)
+
+  Documents Bridge Boulevard’s evolution from El Camino Real and an agricultural route into an automobile corridor, with historic-property inventories, maps, archaeological records, and preservation context.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/appendixA.pdf)
+
+- [Bridge Boulevard Economic, Demographic, and Market Analysis (2012 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/bernco-bridge-boulevard-market-analysis-2012.pdf)
+
+  Analyzes corridor demographics, employment, retail leakage, housing conditions, redevelopment demand, financing tools, and development potential using 2010-era data and forecasts through 2035.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/AppendixB.pdf)
+
+- [Bridge Boulevard Zoning Report (2012 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/bernco-bridge-boulevard-zoning-report-2012.pdf)
+
+  Maps existing land use and zoning, identifies redevelopment barriers, compares County and City regulations, and develops mixed-use, village-center, employment-district, parking, height, and design strategies.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/AppendixD.pdf)
+
+- [Bridge Boulevard Existing Environmental Conditions Report (2013 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/bernco-bridge-boulevard-environmental-conditions-report-2013.pdf)
+
+  Documents the corridor’s project purpose, alternatives, traffic, land use, environmental justice, cultural resources, noise, air quality, hazardous materials, waterways, biological resources, preliminary impacts, and outreach.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/AppendixF.pdf)
+
+- [Bridge Boulevard Public Involvement and Community Outreach Report (2012 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/bernco-bridge-boulevard-community-outreach-2012.pdf)
+
+  Preserves the complete public-involvement record behind the corridor plan, including steering committees, meetings, notices, presentations, comments, surveys, business interviews, focus groups, neighborhood outreach, and press coverage.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/AppendixE.pdf)
+
+#### Predecessor Plans
+
+- [Bridge Boulevard Village Center and Corridor Plan (2010 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/bernco-bridge-boulevard-village-center-corridor-plan-2010.pdf)
+
+  Adopted as an addendum to the Isleta Boulevard and Village Centers Sector Development Plan, it establishes corridor land-use, roadway, access, streetscape, building, parking, and implementation standards.
+
+  [Recovered official County Planning PDF](https://www.bernco.gov/planning/wp-content/uploads/sites/58/2021/04/sector-plan.pdf) · [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/16/bridge-boulevard-corridor-redevelopment-plan)
+
+- [Bridge/Isleta Revitalization Plan (1997 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/bernco-bridge-isleta-revitalization-plan-1997.pdf)
+
+  Preserves the jointly adopted Bridge/Isleta revitalization framework, documenting neighborhood conditions, community priorities, business development, public improvements, transportation access, land use, implementation actions, and adoption records.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/isleta-bridge-mra-plan.pdf) · [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/16/bridge-boulevard-corridor-redevelopment-plan)
+
 ### Lead and Coal Avenues
 
 - [Lead and Coal Studies Final Report (March 2025 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-lead-coal-studies-final-report-2025.pdf)

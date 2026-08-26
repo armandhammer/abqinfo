@@ -212,6 +212,10 @@ Regional plans, long-range plans, and other system-level transportation planning
 
 ## Bernalillo County Planning
 
+- [Bernalillo County Transportation Project Planning Process (2024 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/bernco-transportation-project-planning-process-2024.pdf)
+
+  Diagrams how Bernalillo County identifies, prioritizes, funds, and approves transportation projects through inventories, adopted plans, public input, County Commission decisions, bonds, capital outlay, impact fees, NMDOT programs, and the regional TIP. [Official County page](https://www.bernco.gov/public-works/transportation-planning/transportation-project-planning/)
+
 - [Bernalillo County Transportation Plans](https://www.bernco.gov/public-works/transportation-planning/transportation-plans)
 
   Maintains the County's current collection of transportation plans and alignment studies. The substantive documents are also preserved below so their planning history remains available if the County reorganizes or removes the originals.
