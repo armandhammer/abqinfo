@@ -34,6 +34,26 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
   Models developed watershed conditions and compares drainage alternatives, hydraulic capacity, costs, low-impact development and water-quality measures, funding options, basin maps, design plates, calculations, and recommended improvements for Upper Piedras Marcadas. [Official project resources](https://www.upgradeunserpaseo.com/resources/)
 
+### Deferred Watershed Project Record
+
+- [Official County Project Page](https://www.bernco.gov/public-works/blog/2024/08/05/upper-la-cueva-improvements/)
+
+  Preserves the County’s current status notice and project history for proposed sediment-capture ponds, drainage infrastructure, and water-quality improvements. Bernalillo County says the project was deferred indefinitely following resident concerns and a funding deadline.
+
+- [Public Meeting Presentation (August 2024 Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/bernco-upper-la-cueva-improvements-public-meeting-presentation-2024.pdf)
+
+  Presents the proposed Upper La Cueva watershed improvements, hydrologic and hydraulic analysis, sediment-capture ponds, Signal storm drain, design process, construction impacts, water-quality benefits, resilience objectives, schedule, and project contacts.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2024/08/Upper-La-Cueva-Improvements-Project-Public-meeting-presentation-August-14-2024.pdf)
+
+- [Primrose Pointe HOA Presentation (September 2024 Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/bernco-upper-la-cueva-improvements-primrose-pointe-presentation-2024.pdf)
+
+  Expands the Upper La Cueva proposal with Primrose Pointe pond plans and visual renderings, arroyo views, drainage analysis, construction-impact measures, sediment and water-quality benefits, schedule, and project contacts.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2024/09/Upper-La-Cueva-Improvements-Project-Primrose-Pointe-HOA-meeting-presentation-Sept-11-2024.pdf)
+
+  County project contact: Jennifer Flor, 505-350-7833, [jflor@bernco.gov](mailto:jflor@bernco.gov)
+
 ## Municipal Stormwater Research
 
 ### Municipal Stormwater Program and Annual Reports

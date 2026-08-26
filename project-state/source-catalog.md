@@ -1,24 +1,24 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-26T16:43:13.3271170Z
+Generated: 2026-08-26T22:47:45.1762378Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 6224 candidates and 449 R2 objects totaling 5894733912 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 6269 candidates and 464 R2 objects totaling 6018505927 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 4025 |
+| pending review | 4020 |
 | approved for addition | 0 |
 | downloading | 0 |
-| downloaded | 2 |
+| downloaded | 13 |
 | parsed | 0 |
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 56 |
-| validated | 595 |
-| excluded | 745 |
-| duplicate | 750 |
+| validated | 606 |
+| excluded | 753 |
+| duplicate | 770 |
 | superseded | 25 |
 | blocked | 0 |
 | requires human review | 26 |
@@ -45,12 +45,17 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Atrisco Vista Boulevard Alignment Study | Bernalillo County | 2024 | PDF | 8507386 | content/city-data/budget-spending.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/transportation-plans/bernco-atrisco-vista-boulevard-alignment-study-2024.pdf) |
 | Bernalillo County Pedestrian–Bicyclist Safety Action Plan | Bernalillo County | 2025 | PDF | 13379911 | content/city-data/budget-spending.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/bernco-pedestrian-bicyclist-safety-action-plan-2025.pdf) |
 | Bernalillo County Pedestrian–Bicyclist Safety Action Plan Appendix | Bernalillo County | 2025 | PDF | 5729719 | content/city-data/budget-spending.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/bernco-pedestrian-bicyclist-safety-action-plan-appendix-2025.pdf) |
+| Blake Roadway and Storm Drain Improvements Public Meeting Presentation | Bernalillo County | 2023-10-11 | PDF | 5555810 | content/city-data/budget-spending.md | [source](https://www.bernco.gov/public-works/blog/2021/04/16/blake-rd-improvements/) | [R2](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-blake-roadway-storm-drain-improvements-presentation-2023.pdf) |
 | Bridge Boulevard Corridor Redevelopment Plan | Bernalillo County | 2013-08 | PDF | 26623198 | content/city-data/budget-spending.md | [source](https://www.bernco.gov/public-works/blog/2021/04/16/bridge-boulevard-corridor-redevelopment-plan) | [R2](https://files.abqinfo.com/development-land-use/plans/bernco-bridge-boulevard-corridor-redevelopment-plan-2013.pdf) |
+| Bridge Boulevard Phase 3 Selected Alternative | Bernalillo County | 2026-05 | PDF | 2012822 | content/city-data/budget-spending.md | [source](https://www.bernco.gov/public-works/blog/2026/05/18/bridge-boulevard-phase-3/) | [R2](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-bridge-boulevard-phase-3-selected-alternative-2026.pdf) |
 | Complete Bernalillo County Technical Standards | Bernalillo County | 2023-03-28 | PDF | 9161556 | content/city-data/budget-spending.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards/) | [R2](https://files.abqinfo.com/transportation/design-references/bernco-technical-standards-2023-03-28.pdf) |
+| East Central Pedestrian Safety Project Map | Bernalillo County | 2025-02 | PNG | 635660 | content/city-data/budget-spending.md | [source](https://www.bernco.gov/public-works/blog/2025/02/12/east-central-pedestrian-safety-project/) | [R2](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-east-central-pedestrian-safety-project-map-2025.png) |
 | El Camino Real National Historic Trail Development Concept Plan Executive Summary | Bernalillo County | 2022 | PDF | 6393748 | content/city-data/budget-spending.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-el-camino-real-trail-development-concept-plan-2022.pdf) |
 | Green Stormwater Infrastructure / Low Impact Development Standards | Bernalillo County | 2023 | PDF | 5981048 | content/city-data/budget-spending.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards) | [R2](https://files.abqinfo.com/transportation/design-references/bernco-green-stormwater-infrastructure-low-impact-development-standards-2023.pdf) |
 | Isleta Drain and Trail Master Plan | Bernalillo County | 2022 | PDF | 11323656 | content/city-data/budget-spending.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-isleta-drain-trail-master-plan-2022.pdf) |
 | Sunport Commerce Center Transportation Plan | Bernalillo County | 2019 | PDF | 3985885 | content/city-data/budget-spending.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/transportation-plans/bernco-sunport-commerce-center-transportation-plan-2019.pdf) |
+| Upper La Cueva Improvements Primrose Pointe HOA Presentation | Bernalillo County | 2024-09-11 | PDF | 8208301 | content/city-data/budget-spending.md | [source](https://www.bernco.gov/public-works/blog/2024/08/05/upper-la-cueva-improvements/) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/bernco-upper-la-cueva-improvements-primrose-pointe-presentation-2024.pdf) |
+| Upper La Cueva Improvements Public Meeting Presentation | Bernalillo County | 2024-08-14 | PDF | 4853702 | content/city-data/budget-spending.md | [source](https://www.bernco.gov/public-works/blog/2024/08/05/upper-la-cueva-improvements/) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/bernco-upper-la-cueva-improvements-public-meeting-presentation-2024.pdf) |
 | 17th Street Speed Study | City of Albuquerque | 2021-03 | PDF | 9121550 | content/city-data/budget-spending.md | [source](https://www.cabq.gov/municipaldevelopment/documents/17th-street-speed-study-report.pdf/view) | [R2](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-17th-street-speed-study-2021.pdf) |
 | 2000 Albuquerque Comprehensive On-Street Bicycle Plan | City of Albuquerque | 2000 | PDF | 8054496 | content/city-data/budget-spending.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/documents) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2000-albuquerque-comprehensive-on-street-bicycle-plan.pdf) |
 | 2011 Albuquerque Bikeways and Trails Master Plan Update | City of Albuquerque | 2011-11-10 | PDF | 20962356 | content/city-data/budget-spending.md | [source](https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%2011-10-11.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-and-trails-master-plan-update.pdf) |
@@ -428,13 +433,18 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Title | Agency | Canonical page | URL |
 | --- | --- | --- | --- |
 | APS Vision Zero for Youth Initiative | Albuquerque Public Schools | content/transportation/bicycling/safety-crash-data.md | [source](https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative) |
+| 4th Street Road Diet | Bernalillo County | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2025/02/13/4th-street-road-diet/) |
 | automated photo speed enforcement | Bernalillo County | content/transportation/roadway-projects/speed-management.md | [source](https://www.bernco.gov/public-works/automated-photo-speed-enforcement) |
 | Bernalillo County Bikeways | Bernalillo County | content/transportation/bicycling/bike-maps.md | [source](https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/Bikeways/MapServer) |
 | Bernalillo County Comprehensive Plan Development Areas | Bernalillo County | content/maps/maps.md | [source](https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/ComprehensivePlanDevelopmentAreas/MapServer) |
 | Bernalillo County Multi-Use Trails | Bernalillo County | content/transportation/bicycling/bike-maps.md | [source](https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/Multi_Use_Trails/MapServer) |
 | Bernalillo County Open Space Holdings | Bernalillo County | content/public-works/parks-recreation.md | [source](https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/Open_Space/MapServer) |
+| Bernalillo County Project Page | Bernalillo County | content/transportation/bicycling/projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2021/04/16/alameda-drain-trail-phase-6/) |
+| Blake Road Improvements | Bernalillo County | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2021/04/16/blake-rd-improvements/) |
+| Bridge Boulevard Phase 3 | Bernalillo County | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2026/05/18/bridge-boulevard-phase-3/) |
 | Complete Streets Planning | Bernalillo County | content/transportation/transportation-plans.md | [source](https://www.bernco.gov/public-works/about-the-public-works-division/technical-services/transportation-planning/complete-streets-planning) |
 | Development Review Traffic Impacts | Bernalillo County | content/development-land-use/development-process.md | [source](https://www.bernco.gov/public-works/about-the-public-works-division/technical-services/transportation-planning/traffic-impact-analysis) |
+| East Central Pedestrian Safety Project | Bernalillo County | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2025/02/12/east-central-pedestrian-safety-project/) |
 | East Central Pedestrian Safety Project | Bernalillo County | content/transportation/roadway-projects/studies.md | [source](https://www.bernco.gov/public-works/blog/2025/02/12/east-central-pedestrian-safety-project) |
 | Finished Projects | Bernalillo County | content/transportation/roadway-projects/current.md | [source](https://www.bernco.gov/public-works/finished-projects) |
 | For a list of current projects, click here. | Bernalillo County | content/transportation/roadway-projects/current.md | [source](https://www.bernco.gov/public-works/current-projects) |
@@ -444,6 +454,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | traffic engineering | Bernalillo County | content/transportation/operations-data.md | [source](https://www.bernco.gov/public-works/public-works-services/road-safety-conditions/streets-traffic-signals/traffic-engineering) |
 | Transportation Plans | Bernalillo County | content/transportation/transportation-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) |
 | Transportation Project Planning | Bernalillo County | content/transportation/transportation-plans.md | [source](https://www.bernco.gov/public-works/about-the-public-works-division/technical-services/transportation-planning/transportation-project-planning) |
+| Upper La Cueva Improvements Project Page | Bernalillo County | content/public-works/stormwater-drainage.md | [source](https://www.bernco.gov/public-works/blog/2024/08/05/upper-la-cueva-improvements/) |
 | 118th Street SW Improvements | City of Albuquerque | content/transportation/roadway-projects/current.md | [source](https://www.cabq.gov/council/find-your-councilor/district-3/118th-street-sw-improvements) |
 | 2nd Street Rehab/Sidewalk and Lighting Improvements Project (CN A302300) | City of Albuquerque | content/transportation/roadway-projects/current.md | [source](https://www.cabq.gov/municipaldevelopment/featured-projects/2nd-street-rehab-sidewalk-and-lighting-improvements-project-cn-a302300) |
 | ABQ RIDE open data | City of Albuquerque | content/transportation/transit/abq-ride.md | [source](https://data.cabq.gov/transit/gtfs/) |
@@ -851,540 +862,560 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | lin-fe49f89b01c16b64 | duplicate | 2024 Plan | Duplicate lineage reference for '2024 Plan'; canonical queue record is lin-36462fe2989872bb. |
 | lin-fea7a074b488ed0d | duplicate | Trails Facility Plan | Duplicate lineage reference for 'Trails Facility Plan'; canonical queue record is lin-19984336c73900fa. |
 | lin-ff81a5bfcd0dfff2 | duplicate | The 2024 Plan | Duplicate lineage reference for 'The 2024 Plan'; canonical queue record is lin-6c6bd750cf0ef374. |
-| src-000279d5c044342f | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2018 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-018aeda22016892d | duplicate | Atrisco Vista Boulevard Alignment Study (2024 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-000279d5c044342f | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2018 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-018aeda22016892d | duplicate | Atrisco Vista Boulevard Alignment Study (2024 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-01f0d6e72fbd6e92 | duplicate | 2040 Long-Range Roadway Map | Content-link alias for canonical archive candidate src-7957f9b308c70f11. |
 | src-023a7589e17df553 | duplicate | Modifying Access on Paseo del Norte & Unser Boulevard in the Volcano Heights Sector Plan Area - Metropolitan Transportation Board | The preserved R2 candidate src-ab74a46266ac1cff is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
-| src-023ca0d396927e2b | duplicate | Sun Van and You Passenger Guide (June 2025 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-0245b9bfed1fe16c | duplicate | City of Albuquerque General Planning Fee Schedule (January 2025 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-023ca0d396927e2b | duplicate | Sun Van and You Passenger Guide (June 2025 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-0245b9bfed1fe16c | duplicate | City of Albuquerque General Planning Fee Schedule (January 2025 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-0281f8d53810aa8c | duplicate | 2024 Bikeway and Trail Facilities Plan | Duplicate discovery record for implemented candidate src-545128f068ffb941. |
-| src-02bfa134e3ac7b06 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2010 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-02fe2f29d406adf7 | duplicate | Metropolitan Redevelopment Agency Annual Report 2023 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-02bfa134e3ac7b06 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2010 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-02fe2f29d406adf7 | duplicate | Metropolitan Redevelopment Agency Annual Report 2023 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-040a0ce5291220ac | duplicate | Los Poblanos Fields Open Space Trail Map | Content-link alias for canonical archive candidate src-ad103b60136441e2. |
 | src-04f86045907a4757 | duplicate | Albuquerque Streetcar Evaluation Summary Report | Content-link alias for canonical archive candidate src-7db056cdbc0cbb43. |
-| src-05e84aa9fb7b0584 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2018 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-05e84aa9fb7b0584 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2018 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-06d2fbff4e1c0e23 | duplicate | North 4th Corridor Sector Development Plan | The preserved R2 candidate src-3acbfa59246593bf is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
-| src-07109425828bbdc7 | duplicate | Constitution Avenue Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-0772ae907aca20fe | duplicate | Original Albuquerque Complete Streets Ordinance (2015 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-07109425828bbdc7 | duplicate | Constitution Avenue Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-0772ae907aca20fe | duplicate | Original Albuquerque Complete Streets Ordinance (2015 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-07f4906b49197129 | duplicate | City of Albuquerque Climate Action Plan | Direct-file URL alias for canonical archive candidate src-dd879e78b53b3f86. |
 | src-0838cebb3f404fae | duplicate | 2015 Bikeways and Trails Facilities Plan Appendix A: Proposed Facilities | Content-link alias for canonical archive candidate src-138b3f8088e22373. |
-| src-08f9f8bff516f2f3 | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2019 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-0856eb7a4cc5e3fd | duplicate | Selected Alternative (2026 Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-08f9f8bff516f2f3 | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2019 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-09f5a299fc442e74 | duplicate | Broadway Blvd. - MLK to Lomas Cost Estimate_60_ | Duplicate of src-860035d463be9d48. |
-| src-09ff170c8e8ee7ae | duplicate | Amole Arroyo Resource Management Plan (1991) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-09ff170c8e8ee7ae | duplicate | Amole Arroyo Resource Management Plan (1991) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-0a10cc303d6a0b80 | duplicate | Uptown Sector Development Plan | The preserved R2 candidate src-4ccef0c6ec25aac8 is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
 | src-0a63d67d8ea77bed | duplicate | Clayton Heights Metropolitan Redevelopment Area Plan | Content-link alias for canonical archive candidate src-54a0fdc70d3fe70c. |
-| src-0aa6b9f5a0399913 | duplicate | Albuquerque Fire Rescue Annual Report, 2019 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-0aa6b9f5a0399913 | duplicate | Albuquerque Fire Rescue Annual Report, 2019 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-0ae10419de42f24d | duplicate | Calendar | NMDOT public-involvement calendar is already exposed through the implemented Public Involvement Portal and Toolbox. |
-| src-0b1c6e77979aa8aa | duplicate | Rail Runner Operations and Maintenance Facility Conceptual Design Report (2022) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-0b93330e46289ce9 | duplicate | Approved Planning and Municipal Development Changes (September 25, 2025 archived Word document) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-0b1c6e77979aa8aa | duplicate | Rail Runner Operations and Maintenance Facility Conceptual Design Report (2022) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-0b93330e46289ce9 | duplicate | Approved Planning and Municipal Development Changes (September 25, 2025 archived Word document) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-0ba4e536ef0605b9 | duplicate | Official City Legislation Record | Obsolete invalid public URL derived from the Legistar API internal MatterId; replaced by the verified public EC-26-215 record on canonical candidate src-a6a63111f9b4ba00. |
 | src-0be384cb80c9d539 | duplicate | 21st Century Transportation Task Force Final Report | Content-link alias for canonical archive candidate src-8ba9141e19a5a9ac. |
-| src-0c67f6088cd9c4dc | duplicate | 2023 General Obligation Bond Program Book (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-0c67f6088cd9c4dc | duplicate | 2023 General Obligation Bond Program Book (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-0c81420453b67e5f | duplicate | Tijeras Arroyo Biological Zone Open Space Resource Management Plan | Content-link alias for canonical archive candidate src-9696b9222ba27231. |
-| src-0d4e22d34e4d90cf | duplicate | Appendix D ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ Bikeway Evaluation Process | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-0d4e22d34e4d90cf | duplicate | Appendix D ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ Bikeway Evaluation Process | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-0d5a549bf8dc46e6 | duplicate | Transit Bureau | Duplicate discovery record for implemented candidate src-6825d0105cc90290. |
-| src-0d9c63d941a2f322 | duplicate | Tall Curb Anchor Pin Installation Guidelines | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-0eba478366385dfd | duplicate | Appendix B ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ Community Survey Summary (Spring 2023) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-0ef8c749f7a4f05e | duplicate | Baja Drive Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-0d9c63d941a2f322 | duplicate | Tall Curb Anchor Pin Installation Guidelines | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-0eba478366385dfd | duplicate | Appendix B ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ Community Survey Summary (Spring 2023) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-0ef8c749f7a4f05e | duplicate | Baja Drive Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-0fb08daac5160e2c | duplicate | Fourth Street and Montaño Community Visioning Report | Content-link alias for canonical archive candidate src-173ce250cdac7c01. |
-| src-101bf987fd8dca0d | duplicate | Rail Runner Operations and Maintenance Facility Assessment (2016) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-101bf987fd8dca0d | duplicate | Rail Runner Operations and Maintenance Facility Assessment (2016) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-11574e3ddc3abc1d | duplicate | City Programs & Plans that Support a Bike Friendly Community City Programs & Plans that Support a Bike Friendly Community City Programs & Plans that Support a Bike Friendly Community | Broad bicycle-program landing page duplicates the current plan, safety-project map, transit plan, and other sources already cataloged individually. |
 | src-12031307a5ac64aa | duplicate | Albuquerque Region Housing Needs Assessment (2024) | Duplicate discovery record for implemented candidate src-8778e4e2844fdd47. |
-| src-1223e87dc3d058a9 | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2016 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-1223e87dc3d058a9 | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2016 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-1231cfe4a3029341 | duplicate | City of Albuquerque Elementary & Middle School Crossing Evaluation (2019) | Duplicate discovery record for implemented candidate src-6349e5f02f95ba83. |
-| src-1421682ca2c9bb61 | duplicate | New Mexico Statewide Transportation Improvement Program, FFY 2024-2029 - Approved Snapshot (August 2026) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-1421682ca2c9bb61 | duplicate | New Mexico Statewide Transportation Improvement Program, FFY 2024-2029 - Approved Snapshot (August 2026) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-144dce5e96686cd0 | duplicate | src-d0ed674dd8fe9559 | Duplicate discovery record for implemented candidate src-b9c1a8d5cb7902b6. |
-| src-150b7821d0a9f4e9 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2019 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-151935d95eb58683 | duplicate | Regional Forecast by Data Analysis Subzone (2025 archived workbook) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-150b7821d0a9f4e9 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2019 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-151935d95eb58683 | duplicate | Regional Forecast by Data Analysis Subzone (2025 archived workbook) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-1641eca481331984 | duplicate | Near Heights Metropolitan Redevelopment Area Plan | Content-link alias for canonical archive candidate src-90f05d58ca733862. |
-| src-1669b274b800174d | duplicate | Rio Metro Zero Emission Transition Plan (2023) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-16cf913dd9c6f11c | duplicate | Engineering Drawings: Coal to MLK | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-17d3ced9297e8b3f | duplicate | City of Albuquerque Performance Plan, Fiscal Year 2010 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-17f8a9d74db7c7ff | duplicate | Pedestrian and Bicycle Construction Detour Map — Retrieved August 2026 (Archived Image) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-1669b274b800174d | duplicate | Rio Metro Zero Emission Transition Plan (2023) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-16cf913dd9c6f11c | duplicate | Engineering Drawings: Coal to MLK | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-17d3ced9297e8b3f | duplicate | City of Albuquerque Performance Plan, Fiscal Year 2010 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-17f8a9d74db7c7ff | duplicate | Pedestrian and Bicycle Construction Detour Map — Retrieved August 2026 (Archived Image) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-188fd33d89bd1e4e | duplicate | Zuni Road Study — Part II: Collected Data | Content-link alias for canonical archive candidate src-257a9d7a9cd2784a. |
-| src-1894afba40c36db4 | duplicate | City of Albuquerque Performance Plan, Fiscal Year 2011 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-18d76a4ba1b49693 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2013 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-1894afba40c36db4 | duplicate | City of Albuquerque Performance Plan, Fiscal Year 2011 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-18d76a4ba1b49693 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2013 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-18e50a6ed6696c30 | duplicate | Street Segments and Characteristics | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
 | src-18ebb17e3018e182 | duplicate | Thaxton Ave to Central Ave | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
 | src-19caa5f73b597317 | duplicate | ABQ BioPark Master Plan | Content-link alias for canonical archive candidate src-6938309d94c27be9. |
-| src-19d44f10151c53a3 | duplicate | Near Heights Community Planning Area Assessment (2022; Accepted 2023 Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-19d44f10151c53a3 | duplicate | Near Heights Community Planning Area Assessment (2022; Accepted 2023 Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-1afac09e7e1653a8 | duplicate | ABQ-RIDE-Forward-Concepts-Report-High-Res-20230306 | Duplicate of src-6ba7c575abb1ac19. |
 | src-1b2d76be38e38565 | duplicate | Transportation Improvement Program, FFY 2024-2029 | Duplicate discovery record for implemented candidate src-d307ff22691b3f3b. |
 | src-1b7b18696dfbfcc8 | duplicate | Tramway Study Public Outreach Summary, CN A300342 | Duplicate discovery record for implemented candidate src-79de5bb4324d2dd4. |
 | src-1bc8bc63b968896f | duplicate | West Central Metropolitan Redevelopment Area Plan | Content-link alias for canonical archive candidate src-56485de565b52365. |
 | src-1be4626dd57e9c54 | duplicate | Central Ave to Lomas Blvd | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
-| src-1dd4738c9a85a998 | duplicate | NMDOT Carbon Reduction Strategy (2023 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-1dded928b6b06bd7 | duplicate | Albuquerque Fire Department Annual Report, 2016 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-1e582740a47388e4 | duplicate | Kimmick Drive Speed and Volume Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-1ef285ba610c04b9 | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2026 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-1dd4738c9a85a998 | duplicate | NMDOT Carbon Reduction Strategy (2023 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-1dded928b6b06bd7 | duplicate | Albuquerque Fire Department Annual Report, 2016 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-1e582740a47388e4 | duplicate | Kimmick Drive Speed and Volume Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-1ef285ba610c04b9 | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2026 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-1f43154faff0ca28 | duplicate | CABQ Vision Zero Action Plan 2021 | Duplicate discovery record for implemented candidate src-1ab4b8188d3eeda8. |
-| src-1fb687bdc2056207 | duplicate | Albuquerque Fire Department Annual Report, 2015 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-1ffe3564306fe761 | duplicate | Pajarito Arroyo Resource Management Plan (1990) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-20eaa65bdc777d8f | duplicate | Rail Runner Rail and Bus Connections Guide (2025–2026) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-210f6b763b72b906 | duplicate | 2021 General Obligation Bond Approved Program (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-21adabb4fd5a3760 | duplicate | Vivian Drive Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-1fb687bdc2056207 | duplicate | Albuquerque Fire Department Annual Report, 2015 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-1ffe3564306fe761 | duplicate | Pajarito Arroyo Resource Management Plan (1990) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-20eaa65bdc777d8f | duplicate | Rail Runner Rail and Bus Connections Guide (2025–2026) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-210f6b763b72b906 | duplicate | 2021 General Obligation Bond Approved Program (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-21adabb4fd5a3760 | duplicate | Vivian Drive Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-2200f0a93338d0b1 | duplicate | Bike Boulevard Silver R-28Enacted | Duplicate discovery record for implemented candidate src-bf834f9e01200726. |
 | src-22b21921507b9fa8 | duplicate | src-53495318782dae10 | Duplicate discovery record for implemented candidate src-53495318782dae10. |
-| src-22c9da532846be3c | duplicate | NMDOT Quick Build Guide | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-22c9da532846be3c | duplicate | NMDOT Quick Build Guide | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-23faf099e88e7fdb | duplicate | bernco bridge boulevard historic cultural analysis 2012 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-247a3f301b23e673 | duplicate | Download LRBS PDF map | Duplicate discovery record for implemented candidate src-d3f0cf9107a00c74. |
 | src-247ceb733ed01c0d | duplicate | Volcano Cliffs Sector Development Plan | The preserved R2 candidate src-e1cde64af2f4a573 is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
 | src-2528a912694b4b2e | duplicate | 2022-road-safety-audit-of-lead-and-coal-final | Duplicate discovery record for implemented candidate src-932529cd9a5ef6c8. |
-| src-25521fd8e9a1d86b | duplicate | ABQ RIDE Sun Van Compliance Review Briefing (2011 archived PowerPoint) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-25521fd8e9a1d86b | duplicate | ABQ RIDE Sun Van Compliance Review Briefing (2011 archived PowerPoint) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-2560eef4989bc4da | duplicate | forward-final-report-20250604-1 | Duplicate discovery record for implemented candidate src-b22d3474ffadb293. |
-| src-25ce4f7daee9aa6c | duplicate | Albuquerque Fire Rescue Annual Report, 2021 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-26828bfb7fabca36 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2024 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-273c2a0d9fc84934 | duplicate | Summary of ART Meeting with the Transit Department (December 2015) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-25ce4f7daee9aa6c | duplicate | Albuquerque Fire Rescue Annual Report, 2021 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-26828bfb7fabca36 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2024 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-273c2a0d9fc84934 | duplicate | Summary of ART Meeting with the Transit Department (December 2015) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-2784d7c969363b72 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2025 | Exact byte-for-byte duplicate of the already validated FY2025 ACFR archive object. |
-| src-2799298d44521dc1 | duplicate | West Central Complete Streets Open House Boards (2026 Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-2799298d44521dc1 | duplicate | West Central Complete Streets Open House Boards (2026 Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-279b04a78739f265 | duplicate | Current City Lineage Summary | Current City lineage-summary link is retained on the page but represented by canonical final-plan candidate src-27b939c34a1c59fc. |
-| src-27a94e2af5b72885 | duplicate | 7th Street Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-283c0fb828875ac0 | duplicate | Bear Canyon Arroyo Resource Management Plan (1991) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-27a94e2af5b72885 | duplicate | 7th Street Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-283c0fb828875ac0 | duplicate | Bear Canyon Arroyo Resource Management Plan (1991) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-28b4b80e0074e081 | duplicate | Vision Zero in Albuquerque | The maintained City Vision Zero page already provides the program context and related current materials; this broad StoryMap adds no distinct dataset or project record. |
-| src-28f50446c48e0cd0 | duplicate | APS Vision Zero Superintendent Letter of Support (2022 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-28f50446c48e0cd0 | duplicate | APS Vision Zero Superintendent Letter of Support (2022 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-29562ad0e8581c2f | duplicate | bernco bridge boulevard community outreach 2012 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-2967e851516892e0 | duplicate | Blake Rd Improvements | Duplicate discovery record for implemented candidate src-53a1082347813b21. |
 | src-297796269332f3a4 | duplicate | Lead and Coal Studies Final Report - Report-Only Edition | All 109 pages are contained in the now-preserved complete 1,214-page authoritative report, so the provenance-unreconciled subset is unnecessary. |
-| src-29cf4114b270969c | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2022 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-29cf4114b270969c | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2022 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-2ac7726fbe132696 | duplicate | Volcano Trails Sector Development Plan | Content-link alias for canonical archive candidate src-81c75a7d7a217a68. |
-| src-2ada4c27695e656e | duplicate | Appendix G ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ Project Profiles | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-2aef1459868b711e | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2017 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-2b2b11c6909d66b3 | duplicate | Task Force Meeting 1 Notes (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-2ada4c27695e656e | duplicate | Appendix G ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ Project Profiles | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-2aef1459868b711e | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2017 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-2b2b11c6909d66b3 | duplicate | Task Force Meeting 1 Notes (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-2b64a9961f1b33b8 | duplicate | Southwest Area Plan | Content-link alias for canonical archive candidate src-5a04b1c6a4d3ea3e. |
-| src-2b9c0032d32336c7 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2013 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-2be52ed5de6e8040 | duplicate | 61st Street Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-2b9c0032d32336c7 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2013 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-2be52ed5de6e8040 | duplicate | 61st Street Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-2c400b77acfc68bf | duplicate | Replanning the Modern City for Transit | Content-link alias for canonical archive candidate src-b98248cdd9f46e86. |
-| src-2c6b20c3578d5927 | duplicate | The Scale of the Prize: Community Benefits of Bus Rapid Transit (Final Report) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-2d98332d97638c7f | duplicate | Procedure A Agreement with Financial Guaranty — March 2021 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-2da80a728a4afce6 | duplicate | Bernalillo County Forecast by Data Analysis Subzone (2025 archived workbook) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-2db726f7fe8f965c | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2014 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-2e9ea451fd9c56f4 | duplicate | Sunridge Avenue Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-2ee83b06caf85a74 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2004 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-2c6b20c3578d5927 | duplicate | The Scale of the Prize: Community Benefits of Bus Rapid Transit (Final Report) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-2d98332d97638c7f | duplicate | Procedure A Agreement with Financial Guaranty — March 2021 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-2da80a728a4afce6 | duplicate | Bernalillo County Forecast by Data Analysis Subzone (2025 archived workbook) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-2db726f7fe8f965c | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2014 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-2e9ea451fd9c56f4 | duplicate | Sunridge Avenue Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-2ee83b06caf85a74 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2004 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-2f094c9ddbb50ce1 | duplicate | Fiscal Year 2027 Approved Budget | Duplicate discovery record for implemented candidate src-0c0bf6fdce0dfbea. |
 | src-2f15ef9451d99e32 | duplicate | src-a8552ef7c580c636 | Duplicate discovery record for implemented candidate src-2c94f1cc7996207a. |
 | src-302eeb9a704644f3 | duplicate | Transitions 2045 MTP Appendices | Duplicate discovery record for implemented candidate src-9f98b2dbdfc9d974. |
-| src-31147bac17994152 | duplicate | Procedure A Amendment and Extension Agreement — March 2021 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-31a530669c7b045d | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2020 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-324da920f0387fae | duplicate | Yellow-Light and All-Red Clearance Timing Effectiveness Study (2012 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-327142f6e7387b8b | duplicate | Downtown | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-31147bac17994152 | duplicate | Procedure A Amendment and Extension Agreement — March 2021 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-31a530669c7b045d | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2020 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-324da920f0387fae | duplicate | Yellow-Light and All-Red Clearance Timing Effectiveness Study (2012 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-327142f6e7387b8b | duplicate | Downtown | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-32c49baa8731f266 | duplicate | Downtown 2025 Metropolitan Redevelopment Plan | Content-link alias for canonical archive candidate src-9c1c7a23d2d20baf. |
 | src-32f57d7a07be502f | duplicate | Lomas Blvd to Indian School Rd | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
 | src-3354b75196e782c4 | duplicate | South Broadway Neighborhoods Metropolitan Redevelopment Plan | Content-link alias for canonical archive candidate src-eb1b4600559aa8da. |
-| src-336d37c4508cf4a5 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2011 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-336d37c4508cf4a5 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2011 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-33c83a0fb0fd8d2b | duplicate | Bike Boulevard General R-268fsfinal | Exact SHA-256 duplicate of the existing archived and implemented Bike Boulevard resolution record src-4cb190564a688d42. |
-| src-33fad2753a9b365c | duplicate | West Central Complete Streets 60% Design Roll Plot (2026 Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-3491047ba514ca9b | duplicate | Procedure A Agreement — March 2021 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-33fad2753a9b365c | duplicate | West Central Complete Streets 60% Design Roll Plot (2026 Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-3491047ba514ca9b | duplicate | Procedure A Agreement — March 2021 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-34f5e43d0fd0f2d0 | duplicate | ABC Comprehensive Plan | Duplicate discovery record for implemented candidate src-8832a87573fd5ed6. |
-| src-35bb0b01fe3f0508 | duplicate | Appendix A: Existing Conditions and Trends | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-35da4dc959d9a0e7 | duplicate | Impact of Transit: Forecasting Future Value Along Central Avenue (2017) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-35bb0b01fe3f0508 | duplicate | Appendix A: Existing Conditions and Trends | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-35da4dc959d9a0e7 | duplicate | Impact of Transit: Forecasting Future Value Along Central Avenue (2017) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-35eddb551a1c17ec | duplicate | Phase III Engagement Summary | Official City direct-file link is already recorded as provenance on the canonical archived Phase III engagement record. |
-| src-35f436943a4b6553 | duplicate | Biological Evaluation for the Paseo del Norte Widening Project (2022) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-36c2a8c23a4f26de | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2016 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-35f436943a4b6553 | duplicate | Biological Evaluation for the Paseo del Norte Widening Project (2022) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-36c2a8c23a4f26de | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2016 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-36f33a1a6c77f1e0 | duplicate | Phase III Recovery Network Report | Official City direct-file link is already recorded as provenance on the canonical archived Phase III report record. |
 | src-3787e54c6d9c4b69 | duplicate | Central 1st to Girard Complete Streets March 2014 Draft Part 2 | Metadata/view wrapper for the superseded split Part 2 edition; the complete March 2014 PDF is archived. |
 | src-379622b8fe8273c5 | duplicate | Paseo de la Mesa Recreation Trail Map | Content-link alias for canonical archive candidate src-72433a545bdd2a24. |
-| src-37a9b2b0c45386f3 | duplicate | Integrated Development Ordinance, Effective August 3, 2024 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-37fe73f80c1f0da3 | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2018 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-37feebc0f93a327b | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2005 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-392154c019847a2c | duplicate | Appendix F ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ Priority Projects Tables (Jan 2025) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-37a9b2b0c45386f3 | duplicate | Integrated Development Ordinance, Effective August 3, 2024 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-37fe73f80c1f0da3 | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2018 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-37feebc0f93a327b | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2005 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-392154c019847a2c | duplicate | Appendix F ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ Priority Projects Tables (Jan 2025) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-393c17d6a932dcd1 | duplicate | Central 1st to Girard Complete Streets March 2014 Draft Part 1 | Metadata/view wrapper for the superseded split Part 1 edition; the complete March 2014 PDF is archived. |
 | src-3945ed9251d4ffde | duplicate | 2400_complete_section.pdf | Byte-identical duplicate of validated City Standard Drawings Section 2400 record src-c422781c9fd3a0d3; no second archive or page placement needed. |
+| src-39762640544421b6 | duplicate | bernco bridge boulevard design charrette report 2012 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-39e5d543ab0facc6 | duplicate | Primrose Pointe HOA Presentation (September 2024 Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-3b7d01661d3dc000 | duplicate | Feb. 27 existing conditions presentation | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
-| src-3b8be42de3f38f2b | duplicate | Section 2600: Signing and Striping — March 2020 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-3bace8e1b42ef043 | duplicate | Volume 3 - Developed Conditions (2017) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-3cc4350023d195f2 | duplicate | Integrated Development Ordinance, Effective November 2, 2020 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-3d17ba403acd49a8 | duplicate | City Turn-Bay Standards — 2024 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-3b8be42de3f38f2b | duplicate | Section 2600: Signing and Striping — March 2020 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-3bace8e1b42ef043 | duplicate | Volume 3 - Developed Conditions (2017) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-3cc4350023d195f2 | duplicate | Integrated Development Ordinance, Effective November 2, 2020 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-3d17ba403acd49a8 | duplicate | City Turn-Bay Standards — 2024 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-3d676705b6616cf4 | duplicate | src-7f51da342c00a840 | Duplicate discovery record for implemented candidate src-31c4d4eff2bc1b5a. |
 | src-3d6ce6a780956cbd | duplicate | City IDO page | Companion source-of-truth link for the canonical archived Integrated Development Ordinance record. |
-| src-3de0e3a59b7ea170 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2015 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-3ed53cc4c9870508 | duplicate | New Mexico Strategic Highway Safety Plan (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-3de0e3a59b7ea170 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2015 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-3ed53cc4c9870508 | duplicate | New Mexico Strategic Highway Safety Plan (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-3ee9c5aa4885e559 | duplicate | Tramway Trail Guide — Full Version | Content-link alias for canonical archive candidate src-77a2ef88e4fe4233. |
-| src-401cffb2648bacfb | duplicate | Albuquerque Complete Streets Ordinance Presentation (2014 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-401cffb2648bacfb | duplicate | Albuquerque Complete Streets Ordinance Presentation (2014 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-40cfc5da0dbddcff | duplicate | Visit Hub Site | Generic Hub landing-page record duplicates the 34 individually inventoried DMD catalog items and is retained as discovery provenance rather than public site content. |
 | src-418d718d5216a04e | duplicate | Near Heights Metropolitan Redevelopment Area Expansion Plan | Content-link alias for canonical archive candidate src-be0f7de953f05caf. |
-| src-422a850a687dae12 | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2024 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-422a850a687dae12 | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2024 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-428c2b8d791a054f | duplicate | Volcano Heights Sector Development Plan | The preserved R2 candidate src-e83d30ce68171820 is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
-| src-42d0b92e1b1b1c18 | duplicate | Buena Vista Bike Boulevard 60% Plans (legacy R2 key) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-42ff837e32fcbe63 | duplicate | Coalition Response to City ART Mythbusters (August 2016) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-42d0b92e1b1b1c18 | duplicate | Buena Vista Bike Boulevard 60% Plans (legacy R2 key) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-42ff837e32fcbe63 | duplicate | Coalition Response to City ART Mythbusters (August 2016) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-4338e5bbd0985b75 | duplicate | official-2000-comprehensive-on-street-bicycle-plan | Duplicate discovery record for implemented candidate src-0f60535452ac9154. |
-| src-441a42e25a253058 | duplicate | MRMPO Transportation Improvement Program, FFY 2024-2029 - Approved Snapshot (August 2026) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-446410594c273475 | duplicate | Integrated Development Ordinance, Effective August 1, 2021 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-441a42e25a253058 | duplicate | MRMPO Transportation Improvement Program, FFY 2024-2029 - Approved Snapshot (August 2026) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-446410594c273475 | duplicate | Integrated Development Ordinance, Effective August 1, 2021 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-44b31b70de5c5fb3 | duplicate | Current City CPA Assessment Page | Current City CPA page is retained beside the archived report but represented by canonical document candidate src-65592118671ee943. |
-| src-459336e11b6fc703 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2024 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-458c9158f1dcadf1 | duplicate | bernco transportation project planning process 2024 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-459336e11b6fc703 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2024 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-467fcb56b460d29f | duplicate | cabq-cap-implementation-report-2024 | Duplicate discovery record for implemented candidate src-a29d3a7b778cfca8. |
 | src-468a382736e4056e | duplicate | Uptown Pedestrian Study | Content-link alias for canonical archive candidate src-967112fbf63ba98f. |
-| src-46a05bfac143c37b | duplicate | Albuquerque Fire Rescue Annual Report, 2020 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-46a5592a10b73971 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2009 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-46a05bfac143c37b | duplicate | Albuquerque Fire Rescue Annual Report, 2020 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-46a5592a10b73971 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2009 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-46cb08fc8e5a1ad4 | duplicate | Council District Poster Map | The preserved R2 candidate src-9a8de57080520216 is the canonical poster-map record; retain this duplicate for the official ArcGIS item and discovery path. |
-| src-471d0f932fd289ab | duplicate | Ruidoso Road Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-471d0f932fd289ab | duplicate | Ruidoso Road Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-4820828794c85346 | duplicate | Montaño Road Transportation Alternatives Analysis | Content-link alias for canonical archive candidate src-16b14ec7c5b486aa. |
 | src-486b492b861848fb | duplicate | Universe Boulevard Traffic and Pedestrian Study Public Meeting Presentation | Content-link alias for canonical archive candidate src-e32146e8459b95f8. |
-| src-48a2030163390b5b | duplicate | Traffic Evaluation (Signed July 2, 2025) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-48f18b7acb12fe9a | duplicate | Albuquerque Fire Department Annual Report, 2017 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-49095f54e7e2c795 | duplicate | Nob Hill | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-49d9ffbe7884ffd2 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2022 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-4ae7d33db461b5a2 | duplicate | Buena Vista Bike Boulevard 60% Plans | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-4aed909fa7cba080 | duplicate | Procedure B Agreement — March 2021 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-48a2030163390b5b | duplicate | Traffic Evaluation (Signed July 2, 2025) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-48f18b7acb12fe9a | duplicate | Albuquerque Fire Department Annual Report, 2017 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-49095f54e7e2c795 | duplicate | Nob Hill | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-49d9ffbe7884ffd2 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2022 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-4ae7d33db461b5a2 | duplicate | Buena Vista Bike Boulevard 60% Plans | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-4aed909fa7cba080 | duplicate | Procedure B Agreement — March 2021 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-4af6fb72bc6de455 | duplicate | Albuquerque Bikeways and Trails Map | Content-link alias for canonical archive candidate src-56cf52742d7d943b. |
-| src-4b58ceb28b4fc864 | duplicate | City Engineer's Estimated Unit Prices for Contract Items, 2026 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-4b58ceb28b4fc864 | duplicate | City Engineer's Estimated Unit Prices for Contract Items, 2026 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-4b6648bb12c8809a | duplicate | transportation planning | Broad County transportation-planning landing page duplicates the retained Transportation Plans, Complete Streets, Project Planning, and Traffic Impact Analysis sources. |
+| src-4be2f4e7836361cd | duplicate | Archived Project Map (2025) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-4c9e6a583778b007 | duplicate | October 2013 Draft Central Avenue Complete Street Plan and Design Toolkit | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
-| src-4cca8f32650581e1 | duplicate | Tall Curb Full Installation Procedures | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-4cca8f32650581e1 | duplicate | Tall Curb Full Installation Procedures | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-4cf18d290a71b93a | duplicate | cabq-cap-implementation-report-2023 | Duplicate discovery record for implemented candidate src-7085b119749f17d6. |
-| src-4d204816d6d028e2 | duplicate | Crime in Albuquerque 2017–2022 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-4d204816d6d028e2 | duplicate | Crime in Albuquerque 2017–2022 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-4dbb0390d53edf19 | duplicate | Open Space Trails - Public | Backing Open Space trail layer duplicates the retained City Open Space maps and broader public bikeways-and-trails viewer without adding a distinct public-facing tool. |
+| src-4e875ead88aae83c | duplicate | bernco bridge isleta revitalization plan 1997 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-4f9925e4698c3223 | duplicate | ABC Comprehensive Plan, Chapter 9: Housing (2025 Update) | Duplicate discovery record for implemented candidate src-5833586f28079104. |
 | src-5062443b09866b08 | duplicate | Broadway Blvd - Road Diet Traffic Evaluation_Signed 7.2.2025 | Duplicate of src-48a2030163390b5b. |
-| src-50ebad6521dd408f | duplicate | Guidance for Public Street-Light Infrastructure — December 2020 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-50ebad6521dd408f | duplicate | Guidance for Public Street-Light Infrastructure — December 2020 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-5146f58df803a143 | duplicate | Girard Blvd Aug 23 Meeting Notes | Metadata/view wrapper for the excluded brief Girard workshop-comment notes. |
-| src-515d194f9604522d | duplicate | Integrated Development Ordinance, Effective July 27, 2023 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-51d5f0b8ea9585e1 | duplicate | Development Process Manual (June 2, 2020) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-527cf73a46fa7bda | duplicate | Appendix C ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ Project Priorities Survey Map Results (Fall 2023) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-515d194f9604522d | duplicate | Integrated Development Ordinance, Effective July 27, 2023 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-51d5f0b8ea9585e1 | duplicate | Development Process Manual (June 2, 2020) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-527cf73a46fa7bda | duplicate | Appendix C ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ Project Priorities Survey Map Results (Fall 2023) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-5294c4a1b8d28e8f | duplicate | San Pedro Drive Bike Facility Assessment | Content-link alias for canonical archive candidate src-a42856962290497a. |
-| src-542d18ff9be8bfcf | duplicate | Tall Curb End Spec Sheet | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-542d18ff9be8bfcf | duplicate | Tall Curb End Spec Sheet | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-54471be191e3b764 | duplicate | Girard Boulevard Intersection Concepts | Metadata/view wrapper for the superseded Girard intersection-concept sheets. |
 | src-5493cb1d487d09db | duplicate | I-40 West Corridor Study: Operations Plan | Duplicate discovery record for implemented candidate src-a89c0c7e764e720f. |
 | src-54f1c38a3e680c1a | duplicate | Two-Stage Bike Box how to | Duplicate discovery record for implemented candidate src-0f5f4a570a7fe2b6. |
-| src-551f37012ddadd75 | duplicate | HAWK Signal Guide for Lomas Boulevard and Alvarado Drive (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-55b2ef95e7e1bed6 | duplicate | Rio Metro Budget and Capital Plan, FY2027–FY2031 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-55cbe062dc276a59 | duplicate | City of Albuquerque MS4 Annual Report, FY 2022 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-551f37012ddadd75 | duplicate | HAWK Signal Guide for Lomas Boulevard and Alvarado Drive (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-55b2ef95e7e1bed6 | duplicate | Rio Metro Budget and Capital Plan, FY2027–FY2031 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-55cbe062dc276a59 | duplicate | City of Albuquerque MS4 Annual Report, FY 2022 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-55dbe63a595fee53 | duplicate | Montaño Intermodal Center Project Application | Direct-file URL alias for canonical archive candidate src-8578ac9aeef57f31. |
-| src-56ac6e08d03f1a77 | duplicate | Kirtland Air Force Base Access-Corridor Safety Grant Application (2026) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-577dfbc23caf57c8 | duplicate | Appendix B: Technical Analysis Report | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-5787545388af74e1 | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2013 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-56ac6e08d03f1a77 | duplicate | Kirtland Air Force Base Access-Corridor Safety Grant Application (2026) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-57274609b38d7024 | duplicate | Alameda Drain Trail Phase 6 | Duplicate discovery record for implemented candidate src-65011a235ea2c10e. |
+| src-577dfbc23caf57c8 | duplicate | Appendix B: Technical Analysis Report | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-5787545388af74e1 | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2013 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-5812b61cb8705c08 | duplicate | cabq-cap-implementation-report-2025 | Duplicate discovery record for implemented candidate src-bdab724a0eea51b3. |
 | src-586828cc5e08f3d2 | duplicate | Volcano Trails Sector Development Plan Adoption Resolution R-11-211 | Content-link alias for canonical archive candidate src-8b120e71c3650349. |
-| src-58b29d5692896792 | duplicate | Unser and Paseo Phase 1 Construction Fact Sheet - English (2025) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-58b29d5692896792 | duplicate | Unser and Paseo Phase 1 Construction Fact Sheet - English (2025) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-595eb58320b4ff58 | duplicate | Phase I Existing Conditions Report | Official City direct-file link is already recorded as provenance on the canonical archived Phase I existing-conditions record. |
 | src-5964b940e185bd7a | duplicate | Public Restrooms | Underlying feature service duplicates the Public Restroom Finder application, which is outside ABQInfo's selected scope; retain only as catalog provenance. |
 | src-5a01164405dab091 | duplicate | Statewide Transportation Improvement Program (STIP) | Duplicate discovery record for implemented candidate src-a6773cf4ea024587. |
-| src-5d3425b099576f4f | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2003 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-5da78daea24c1a4f | duplicate | San Francisco Road Speed Study (2020 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-5e248cfee14e4c89 | duplicate | Section 800: Water — January 2018 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-5eac81d731c9de77 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2014 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-5eb268de82ef2b0b | duplicate | Pilot Project FAQ (2026 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-5d3425b099576f4f | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2003 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-5da78daea24c1a4f | duplicate | San Francisco Road Speed Study (2020 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-5e248cfee14e4c89 | duplicate | Section 800: Water — January 2018 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-5eac81d731c9de77 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2014 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-5eb268de82ef2b0b | duplicate | Pilot Project FAQ (2026 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-5f1f41529f856410 | duplicate | src-3080803365506588 | Duplicate discovery record for implemented candidate src-3080803365506588. |
-| src-5f486fbaf9a96eb1 | duplicate | East Downtown | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-5f486fbaf9a96eb1 | duplicate | East Downtown | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-60b79b512d23c9ed | duplicate | Planning Division | Duplicate discovery record for implemented candidate src-c521717f4e9314bc. |
-| src-616990b5aeb8d3cf | duplicate | Unser and Paseo Public Meeting Presentation (2022) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-61abf95f00c3fc9c | duplicate | Truman Street Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-616990b5aeb8d3cf | duplicate | Unser and Paseo Public Meeting Presentation (2022) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-61abf95f00c3fc9c | duplicate | Truman Street Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-6276e31a6c1743e8 | duplicate | Official City Legislation Record | Public legislation-page content-link alias reconciled to authoritative archived-document candidate src-a6a63111f9b4ba00. |
 | src-62ee5dd3da3bd076 | duplicate | Lead and Coal Studies Final Report | Official City direct-file link is already recorded as provenance on the canonical archived final-report record. |
 | src-63949cf714c2887a | duplicate | Two Stage Bike Box how to | Duplicate discovery record for implemented candidate src-380ba25628c0ee5c. |
-| src-63e193fcf602ee38 | duplicate | City of Albuquerque Stormwater Management Program (2019 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-63e193fcf602ee38 | duplicate | City of Albuquerque Stormwater Management Program (2019 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-63e322fb5fc6612f | duplicate | Central New Mexico Community-Scale Greenhouse Gas Inventory | Content-link alias for canonical archive candidate src-393d5c55d9ccdc0e. |
-| src-642035558ef0ff70 | duplicate | University Area | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-64dcaac3f80477e6 | duplicate | Bicycle and Trail Crossings Guide | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-657c03f596cb37b3 | duplicate | Rail Runner System Map (2023) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-661b6ae63e7ff781 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2014 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-665d53bf27d05210 | duplicate | Two-Stage Bike Box at MLK Avenue and Broadway Boulevard — Image | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-642035558ef0ff70 | duplicate | University Area | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-64dcaac3f80477e6 | duplicate | Bicycle and Trail Crossings Guide | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-657c03f596cb37b3 | duplicate | Rail Runner System Map (2023) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-661b6ae63e7ff781 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2014 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-665d53bf27d05210 | duplicate | Two-Stage Bike Box at MLK Avenue and Broadway Boulevard — Image | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-6662d9f3db20f26f | duplicate | Rainfall, Runoff, and Water-Quality Data for the Albuquerque Metropolitan Area, Water Year 2003 | Content-link alias for canonical archive candidate src-154c5b6063d97abb. |
-| src-66a6d2c75bf9359c | duplicate | Bernalillo County Pedestrian–Bicyclist Safety Action Plan Appendix (2025 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-66a6d2c75bf9359c | duplicate | Bernalillo County Pedestrian–Bicyclist Safety Action Plan Appendix (2025 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-6747d5a10047c3bc | duplicate | 50-Mile Activity Loop Map | Content-link alias for canonical archive candidate src-2edf86588af244d8. |
-| src-686b414d62aec0c2 | duplicate | 7 Bar Loop Speed and Volume Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-686b414d62aec0c2 | duplicate | 7 Bar Loop Speed and Volume Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-68ba8f735091955e | duplicate | Highway Safety Improvement Program | Duplicate discovery record for implemented candidate src-b2c0ad0c4336e968. |
-| src-69552f1983b0b3a5 | duplicate | Pilot Project FAQ in Spanish (2026 Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-69552f1983b0b3a5 | duplicate | Pilot Project FAQ in Spanish (2026 Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-6a1d4a1169c3d628 | duplicate | Uptown Pedestrian and Bicycle Plan and Wayfinding Program | Direct-file URL alias for canonical archive candidate src-4ddc850e99380009. |
 | src-6acaba8fc31a61e4 | duplicate | documents | Duplicate discovery record for implemented candidate src-0f60535452ac9154. |
 | src-6ae151178bc3a7b7 | duplicate | Draft Girard Boulevard Complete Streets Master Plan | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
-| src-6b250ddf920f4a62 | duplicate | Sunport Commerce Center Transportation Plan (2019 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-6b638cffbe0c41a7 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2009 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-6b250ddf920f4a62 | duplicate | Sunport Commerce Center Transportation Plan (2019 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-6b638cffbe0c41a7 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2009 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-6b6788fdbc69b3ca | duplicate | Albuquerque Vision Zero Action Plan (2021) | Duplicate discovery record for implemented candidate src-1ab4b8188d3eeda8. |
-| src-6c04ec040eb89b94 | duplicate | NMRoads Public User Guide (September 2024) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-6c04ec040eb89b94 | duplicate | NMRoads Public User Guide (September 2024) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-6de638fdddc543ac | duplicate | RMRTD Zero Emission Feasibility Study (PDF) | Duplicate discovery record for implemented candidate src-3fb85f9bf9c30a51. |
 | src-6e06f6351f4c4bf2 | duplicate | City of Albuquerque Bicycle and Trail Crossings Guide | Duplicate discovery record for implemented candidate src-14839f6b5ae5f9f1. |
-| src-6ec47ade34ed60b9 | duplicate | Climate Action Plan Implementation Report 2022 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-6ff38f5ec8a91212 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2012 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-709eaf4328f50152 | duplicate | Rio Metro Zero Emission Feasibility Study (2023) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-6ec47ade34ed60b9 | duplicate | Climate Action Plan Implementation Report 2022 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-6ff38f5ec8a91212 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2012 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-709eaf4328f50152 | duplicate | Rio Metro Zero Emission Feasibility Study (2023) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-710e3cfd505f7729 | duplicate | ABQ-RIDE-Forward-Phase-II-Engagement-Summary-August-2023 | Duplicate discovery record for implemented candidate src-e579f837294379a3. |
 | src-718baaa375fdf25c | duplicate | Moratorium Dashboard | The existing Construction Moratoriums entry retains the City source page that embeds this same dashboard and provides more useful dates and context. |
-| src-7239f741bd4ddfb0 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2008 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-72ad04e53badb2c8 | duplicate | Task Force Meeting 5 Notes (2023 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-7239f741bd4ddfb0 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2008 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-72ad04e53badb2c8 | duplicate | Task Force Meeting 5 Notes (2023 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-72fb72405d08a5c1 | duplicate | I-40 West Corridor Study: Conceptual Alternatives | Duplicate discovery record for implemented candidate src-6ab062defb508468. |
-| src-732fe4c4415c7804 | duplicate | Section 2700: Irrigation — 2019 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-7335c39f32d3b3a0 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2023 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-73568d278b59c05d | duplicate | Section 000: General Conditions (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-73e13eb86069e065 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2006 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-74233bb0d1f40407 | duplicate | International District | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-732fe4c4415c7804 | duplicate | Section 2700: Irrigation — 2019 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-7335c39f32d3b3a0 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2023 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-73568d278b59c05d | duplicate | Section 000: General Conditions (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-73e13eb86069e065 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2006 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-74233bb0d1f40407 | duplicate | International District | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-75a1268c19579e50 | duplicate | Public Meeting Presentation (2023 Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-76a977d4c1afe872 | duplicate | Long Range System Maps | Duplicate discovery record for implemented candidate src-6697ce61c4489b98. |
-| src-78453f1ea256f2e0 | duplicate | East Central Avenue Safety Study (2020 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-78b0ea22e58316f6 | duplicate | Article 4-3 ABCWUA Changes (May 4, 2026 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-78453f1ea256f2e0 | duplicate | East Central Avenue Safety Study (2020 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-78b0ea22e58316f6 | duplicate | Article 4-3 ABCWUA Changes (May 4, 2026 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-79251e803fb8210f | duplicate | Pedestrian Level of Traffic Stress (LTS) App | Alternate portal URL for ArcGIS item 577561bcf1534cf5bcf105686cb397df, already implemented and validated. |
 | src-79abf932fed04610 | duplicate | ABC Comprehensive Plan, Chapter 10: Parks & Open Space (2025 Update) | Duplicate discovery record for implemented candidate src-5cefbce02e362e4b. |
-| src-7a918ffb94881e38 | duplicate | Climate Action Plan Implementation Report 2023 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-7a918ffb94881e38 | duplicate | Climate Action Plan Implementation Report 2023 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-7ab41adfa0b3a575 | duplicate | ABQ-Choices-Report-20220908 | Duplicate discovery record for implemented candidate src-7e3ac56766921ae2. |
-| src-7b38a3b47b3b787b | duplicate | Incident Management Plan for the Albuquerque Metropolitan Planning Area (2022 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-7b38a3b47b3b787b | duplicate | Incident Management Plan for the Albuquerque Metropolitan Planning Area (2022 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-7b424d105230d6f8 | duplicate | Rail Bureau | Duplicate discovery record for implemented candidate src-41dc6c7ca84c9bfe. |
 | src-7b95fc0e457e7080 | duplicate | East Gateway Metropolitan Redevelopment Area Plan | Content-link alias for canonical archive candidate src-42700a168ad3eb38. |
 | src-7c065aa0e6a86ad0 | duplicate | Girard Boulevard Bicycle Facility Options | Metadata/view wrapper for the superseded Girard bicycle-option sheets. |
 | src-7c2195422742513b | duplicate | Lead and Coal Studies Final Report - R2 Archive Approval | The complete original is now preserved and validated in the canonical R2 final-report record. |
-| src-7d1f0aa7fd43ecd7 | duplicate | Draft Engineering Drawings: MLK to Lomas | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-7d1f0aa7fd43ecd7 | duplicate | Draft Engineering Drawings: MLK to Lomas | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-7d216a434939d6c7 | duplicate | cabq-cap-implementation-report-2022 | Duplicate discovery record for implemented candidate src-e21e6f424ad30447. |
-| src-7d367e9edc912e29 | duplicate | 2013–2022 Decade Plan and 2013 General Obligation Bond Program (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-7e6c1de9b8aa4be8 | duplicate | Field Drive Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-7d367e9edc912e29 | duplicate | 2013–2022 Decade Plan and 2013 General Obligation Bond Program (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-7e6c1de9b8aa4be8 | duplicate | Field Drive Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-7f51da342c00a840 | duplicate | Long Range Transportation System Guide (LRTS Guide) | Duplicate discovery record for implemented candidate src-31c4d4eff2bc1b5a. |
+| src-7fdb8ebbdc605b56 | duplicate | bernco bridge boulevard environmental conditions report 2013 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-8029a3f07ba52030 | duplicate | Tingley Beach Metropolitan Redevelopment Area Project I Plan | Content-link alias for canonical archive candidate src-e338135e23a78c39. |
-| src-803b39905d2bc6ac | duplicate | Section 200: Earthwork (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-8070ef0a7eaa3978 | duplicate | Two-Stage Bike Box Guide (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-80f513d0e76de4f8 | duplicate | Rio Metro Double Track Study (2022) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-8165bffac21704e6 | duplicate | City of Albuquerque MS4 Annual Report, FY 2024 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-81755dced4d6cc04 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2021 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-819a8704328de519 | duplicate | Albuquerque Business-As-Usual Emissions Forecast (2025 Archived Workbook) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-803b39905d2bc6ac | duplicate | Section 200: Earthwork (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-8070ef0a7eaa3978 | duplicate | Two-Stage Bike Box Guide (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-80f513d0e76de4f8 | duplicate | Rio Metro Double Track Study (2022) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-8165bffac21704e6 | duplicate | City of Albuquerque MS4 Annual Report, FY 2024 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-81755dced4d6cc04 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2021 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-819a8704328de519 | duplicate | Albuquerque Business-As-Usual Emissions Forecast (2025 Archived Workbook) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-823191c37ffca5f8 | duplicate | Transitions 2045 MTP Executive Summary | The preserved R2 candidate src-b5c323782239e519 is the canonical English-summary record; retain this duplicate for the official MRCOG direct-file URL. |
-| src-82779f83f5833e2e | duplicate | City of Albuquerque CIP Building Design Standards and Guidelines, Revision 17 (2025 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-83174e6f55757ac7 | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2015 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-82779f83f5833e2e | duplicate | City of Albuquerque CIP Building Design Standards and Guidelines, Revision 17 (2025 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-83174e6f55757ac7 | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2015 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-842f1c8cdfa8fc1f | duplicate | San Pedro Drive Bike Facility Assessment | Direct-file URL alias for canonical archive candidate src-a42856962290497a. |
 | src-84c6f9bd77dd56b2 | duplicate | Title pending source review | Duplicate discovery record for implemented candidate src-fe3273f1de13882d. |
-| src-85112ddca43b8b1b | duplicate | Unser and Paseo Phase 1 Construction Fact Sheet - Spanish (2025) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-8516b3f71fcb5541 | duplicate | Integrated Development Ordinance, Effective April 20, 2026 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-8520180feb7df8c6 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2007 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-853821bb83192a41 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2008 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-85112ddca43b8b1b | duplicate | Unser and Paseo Phase 1 Construction Fact Sheet - Spanish (2025) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-8516b3f71fcb5541 | duplicate | Integrated Development Ordinance, Effective April 20, 2026 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-8520180feb7df8c6 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2007 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-853821bb83192a41 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2008 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-85f190542564176f | duplicate | Phase II Concept Report | Official City direct-file link is already recorded as provenance on the canonical archived Phase II concepts record. |
-| src-860035d463be9d48 | duplicate | Cost Estimate: MLK to Lomas | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-860035d463be9d48 | duplicate | Cost Estimate: MLK to Lomas | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-869bc62faed3afbe | duplicate | NMDOT project page | Companion source-of-truth link shared by the canonical archived I-40 West study records. |
 | src-87076ab6324859f2 | duplicate | Concept Plan - Segment 2 | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
-| src-871cec6b1883c4bc | duplicate | New Mexico Prioritized Statewide Bicycle Network Plan (2018 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-8792096f62e3c270 | duplicate | ABQ Referral Program Community Impact Report (June 2026 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-87dbc759a50e5714 | duplicate | Buena Vista Bike Boulevard Project Roll Plot (August 2026) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-871cec6b1883c4bc | duplicate | New Mexico Prioritized Statewide Bicycle Network Plan (2018 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-8792096f62e3c270 | duplicate | ABQ Referral Program Community Impact Report (June 2026 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-87dbc759a50e5714 | duplicate | Buena Vista Bike Boulevard Project Roll Plot (August 2026) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-8a9e071044ebd339 | duplicate | North Fourth Street Metropolitan Redevelopment Plan | Content-link alias for canonical archive candidate src-01cfdb2a2c85130a. |
 | src-8aed44d5a88e0ffd | duplicate | Tijeras Bio-Zone Education Center Proposed Site Plan Presentation | Content-link alias for canonical archive candidate src-ba1b0bed574d6cec. |
-| src-8af033c58b11991f | duplicate | Iliff Road Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-8b9fda7ec6e9817f | duplicate | Section 500: Structures (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-8af033c58b11991f | duplicate | Iliff Road Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-8b9fda7ec6e9817f | duplicate | Section 500: Structures (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-8be8438291aab0b8 | duplicate | Sawmill/Wells Park Community Metropolitan Redevelopment Area Plan | Content-link alias for canonical archive candidate src-6d2bd024ade8862e. |
-| src-8c2d84fd31cf9446 | duplicate | Section 700: Trenching (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-8c2d84fd31cf9446 | duplicate | Section 700: Trenching (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-8c9fe8bdf965ee17 | duplicate | Juan Tabo Hills Traffic Study | Content-link alias for canonical archive candidate src-a2f388bda144848c. |
 | src-8cdddf853227c40a | duplicate | I-40 West Corridor Study: Phase A/B Corridor Study | Duplicate discovery record for implemented candidate src-d4957d9c6500b754. |
-| src-8ce615f21d3e5dd3 | duplicate | Appendix I ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ Bollard Assessment (2013) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-8ce7e2af540e8001 | duplicate | NMDOT Complete Streets Strategic Plan (2025 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-8d1cba5746589600 | duplicate | Appendix C: Scenario Analysis Report | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-8d1f93e648e58585 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2021 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-8ce615f21d3e5dd3 | duplicate | Appendix I ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ Bollard Assessment (2013) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-8ce7e2af540e8001 | duplicate | NMDOT Complete Streets Strategic Plan (2025 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-8d1cba5746589600 | duplicate | Appendix C: Scenario Analysis Report | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-8d1f93e648e58585 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2021 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-8d41f2b6bf587881 | duplicate | Golf Course Road Complete Streets Study | Content-link alias for canonical archive candidate src-dc5a3e9da1aaa41d. |
 | src-8f00b3d4d32cf21d | duplicate | McClellan Park Metropolitan Redevelopment Plan | Content-link alias for canonical archive candidate src-4db7ffe52592f683. |
-| src-8fe5fd267ac050f4 | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2025 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-8fedb780848cb653 | duplicate | Appendix E: Action Tracking | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-90099599faf2e527 | duplicate | Alameda Drain and Trail Master Plan (2016 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-8fe5fd267ac050f4 | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2025 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-8fedb780848cb653 | duplicate | Appendix E: Action Tracking | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-8fee4d582ed87ec0 | duplicate | 4Th Street Road Diet | Duplicate discovery record for implemented candidate src-fb966b8b33693f12. |
+| src-90099599faf2e527 | duplicate | Alameda Drain and Trail Master Plan (2016 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-901a34f2e690948f | duplicate | Broadway Blvd - MLK to Lomas_DRAFT 60_ Plans | Duplicate of src-7d1f0aa7fd43ecd7. |
 | src-9073c4c1acab4048 | duplicate | src-cc6a4ff2372bfa50 | Duplicate discovery record for implemented candidate src-1a0dfd37475ddc69. |
-| src-908b9e288f6b75f7 | duplicate | NMDOT Functional Classification System Guide (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-918c8ce42d4c04e6 | duplicate | Albuquerque Fire Department Annual Report, 2014 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-91dbdbd830550f1d | duplicate | West Central Complete Streets Frequently Asked Questions (2026 Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-91ee5c83b9b179c9 | duplicate | Paseo del Norte High-Capacity Transit Study: Alternatives Analysis Report (2014) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-9322f50d90351f78 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2011 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-9326b0a112539d69 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2023 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-908b9e288f6b75f7 | duplicate | NMDOT Functional Classification System Guide (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-918c8ce42d4c04e6 | duplicate | Albuquerque Fire Department Annual Report, 2014 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-91dbdbd830550f1d | duplicate | West Central Complete Streets Frequently Asked Questions (2026 Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-91ee5c83b9b179c9 | duplicate | Paseo del Norte High-Capacity Transit Study: Alternatives Analysis Report (2014) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-9322f50d90351f78 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2011 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-9326b0a112539d69 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2023 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-93568daa28742afe | duplicate | Four Hills Traffic Calming Study | Content-link alias for canonical archive candidate src-88febb22b86ec472. |
 | src-938b260dca443a97 | duplicate | src-1b7b18696dfbfcc8 | Duplicate discovery record for implemented candidate src-79de5bb4324d2dd4. |
 | src-93a5d61174cab3ea | duplicate | Complete Streets resolution in 2011 | Duplicate discovery record for implemented candidate src-f8614b43122b3de3. |
-| src-945eb7d19f1f2628 | duplicate | UNM/CNM/Sunport Transit Study: Alternative Alignments Identification and Assessment (2014) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-945eb7d19f1f2628 | duplicate | UNM/CNM/Sunport Transit Study: Alternative Alignments Identification and Assessment (2014) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-95248b93a2fef0e5 | duplicate | RMRTD Zero Emission Transition Plan (PDF) | Duplicate discovery record for implemented candidate src-68be032e2a1c3cd6. |
 | src-953b282b4b099efc | duplicate | Streets and Traffic Enhancement Program Draft Policy Manual and Resolution | Content-link alias for canonical archive candidate src-d2c2143636e12e52. |
-| src-967b7f3a47d22607 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2010 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-967b7f3a47d22607 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2010 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-970dd55000ab7143 | duplicate | CPN635092_Broadway Blvd. Road Diet_Coal to MLK_90_ Plans_rev | Duplicate of src-16cf913dd9c6f11c. |
-| src-9783fab748e3804b | duplicate | Bernalillo County Pedestrian–Bicyclist Safety Action Plan (2025 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-979921994d83defc | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2025 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-9783fab748e3804b | duplicate | Bernalillo County Pedestrian–Bicyclist Safety Action Plan (2025 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-979921994d83defc | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2025 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-99ce226129b4b59e | duplicate | Albuquerque Vision Zero Year-in-Review | Content-link alias for canonical archive candidate src-a81d8f2eb8de8c03. |
 | src-99ee10edef4bc69c | duplicate | ITS webpage | Duplicate discovery record for implemented candidate src-41e001deba07ec49. |
-| src-9a34fe8c340352f1 | duplicate | Procedure A with Financial Guaranty Amendment and Extension — March 2021 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-9a34fe8c340352f1 | duplicate | Procedure A with Financial Guaranty Amendment and Extension — March 2021 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-9a47975c218dc13b | duplicate | Mountain Road Bike Blvd Crossing | Duplicate discovery record for implemented candidate src-438b3ebcc3f671e2. |
 | src-9a4ec10a0164dc82 | duplicate | Title pending source review | Duplicate discovery record for implemented candidate src-149ea9e6395a41ca. |
 | src-9c5dee0334c1e249 | duplicate | Concept Plan - Segment 3 | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
 | src-9ddd86a240b30500 | duplicate | Complete Bernalillo County Technical Standards | The preserved R2 candidate src-42ff065feb86046d is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
-| src-9f961aed071df03c | duplicate | New Mexico 2045 Plan (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-9f961aed071df03c | duplicate | New Mexico 2045 Plan (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-9fa25ee0833a0ce6 | duplicate | src-d8b68c090d8d9a44 | Duplicate discovery record for implemented candidate src-d8b68c090d8d9a44. |
-| src-a30457e55665a0e9 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2017 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-a306c78cf39db94b | duplicate | Draft Sun Van Performance Metrics (2010 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-a33658278a30fe67 | duplicate | Integrated Development Ordinance, Effective December 25, 2022 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-a3fbd9d7ad517a19 | duplicate | Task Force Meeting 2 Notes (2022 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-a273a6d74dc03361 | duplicate | bernco bridge boulevard zoning report 2012 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-a30457e55665a0e9 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2017 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-a306c78cf39db94b | duplicate | Draft Sun Van Performance Metrics (2010 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-a33658278a30fe67 | duplicate | Integrated Development Ordinance, Effective December 25, 2022 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-a3fbd9d7ad517a19 | duplicate | Task Force Meeting 2 Notes (2022 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-a40605906003f148 | duplicate | 2200 Complete Set.pdf | Byte-identical duplicate of validated City Standard Drawings Section 2200 record src-5d22b20234849181; no second archive or page placement needed. |
-| src-a447a7ead6b72b66 | duplicate | APS Vision Zero for Youth Action Plan (2022–23 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-a543de72dc991b73 | duplicate | City of Albuquerque Performance Plan, Fiscal Year 2008 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-a447a7ead6b72b66 | duplicate | APS Vision Zero for Youth Action Plan (2022–23 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-a543de72dc991b73 | duplicate | City of Albuquerque Performance Plan, Fiscal Year 2008 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-a5572e77d57d377a | duplicate | AMAFCA/Albuquerque MS4 Floatable and Gross Pollutant Study | Content-link alias for canonical archive candidate src-422be8ae2e295542. |
-| src-a65711d96ccbe3a9 | duplicate | City of Albuquerque MS4 Annual Report, FY 2025 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-a6656a669b891cff | duplicate | Climate Action Plan Implementation Report 2024 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-a696a75010d0a5e5 | duplicate | Volume 1 - Literature Review (2017) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-a6b782798cbd3628 | duplicate | Section 600: Open Channels, Dikes, and Dams (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-a6bb1ac262c9a8eb | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2023 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-a65711d96ccbe3a9 | duplicate | City of Albuquerque MS4 Annual Report, FY 2025 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-a6656a669b891cff | duplicate | Climate Action Plan Implementation Report 2024 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-a696a75010d0a5e5 | duplicate | Volume 1 - Literature Review (2017) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-a6b782798cbd3628 | duplicate | Section 600: Open Channels, Dikes, and Dams (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-a6bb1ac262c9a8eb | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2023 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-a6ebfac5ceb22355 | duplicate | Read more about RTSAP performance measures | Duplicate discovery record for implemented candidate src-9b3a3aad50ad0c65. |
 | src-a7e2a3bc1c09e1cd | duplicate | Albuquerque Climate Action Plan | Content-link alias for canonical archive candidate src-bcc67eae99ad39ef. |
 | src-a8552ef7c580c636 | duplicate | Albuquerque Metropolitan Planning Area (AMPA) (PDF) | Duplicate discovery record for implemented candidate src-2c94f1cc7996207a. |
 | src-a88e82e42d5d67b5 | duplicate | Unser Boulevard, Mariposa, and Riverview Trail Guide | Content-link alias for canonical archive candidate src-01582dd7631ed92c. |
 | src-a8f6c92a43dc6dc1 | duplicate | Juan Tabo Boulevard Connectivity Study | Content-link alias for canonical archive candidate src-c10e75d5af00809d. |
 | src-a8fcc36fe9f61d99 | duplicate | sun-van-performance-metrics-draft-2011 | Duplicate discovery record for implemented candidate src-d3121fe1438282dc. |
-| src-a97d57aa9b6b69e1 | duplicate | City Council Resolution R-2020-079 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-a97d57aa9b6b69e1 | duplicate | City Council Resolution R-2020-079 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-aa39bf3d1fdab087 | duplicate | src-93a5d61174cab3ea | Duplicate discovery record for implemented candidate src-f8614b43122b3de3. |
 | src-aa5191408a1832a9 | duplicate | I-40 Trail Guide — Full Version | Content-link alias for canonical archive candidate src-5bef4eb4ac2b0481. |
 | src-aac8c2575ee97d57 | duplicate | Internet Archive Capture of Former City PDF | Internet Archive capture link is retained on the page but represented by canonical final-plan candidate src-27b939c34a1c59fc. |
 | src-b002caeabcca6f7e | duplicate | Oct. 30 Draft Plan Presentation | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
-| src-b08554b4b714635f | duplicate | Annotated Streetscape Schematic Design (2022 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-b08554b4b714635f | duplicate | Annotated Streetscape Schematic Design (2022 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-b0d0d4410287a3e9 | duplicate | South Barelas Industrial Park Metropolitan Redevelopment Plan | Content-link alias for canonical archive candidate src-aadebaccdf26e105. |
-| src-b14b9cf522724969 | duplicate | Infrastructure | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-b1565d5b0748d248 | duplicate | Tall Curb Spec Sheet | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-b14b9cf522724969 | duplicate | Infrastructure | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-b1565d5b0748d248 | duplicate | Tall Curb Spec Sheet | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-b1bb29f8469c84b1 | duplicate | Download PPTS PDF map | Duplicate discovery record for implemented candidate src-3080803365506588. |
-| src-b26bc3486e594f21 | duplicate | Section 2400: Paving — March 2020 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-b393617aaa37d6df | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2007 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-b26bc3486e594f21 | duplicate | Section 2400: Paving — March 2020 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-b393617aaa37d6df | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2007 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-b42957559c1959c0 | duplicate | Travel Information | Broad travel-information landing page; its useful Albuquerque-relevant services are cataloged individually. |
 | src-b4561a0df63a4ced | duplicate | Albuquerque Streetcar Cost and Ridership Analysis | Content-link alias for canonical archive candidate src-be7a3aa7f00c2f76. |
+| src-b45c0a3875a6a1b1 | duplicate | bernco bridge boulevard village center corridor plan 2010 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-b659f7e87e249d55 | duplicate | Nob Hill Highland Sector Development Plan | The preserved R2 candidate src-6916bbd03258654b is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
-| src-b6a080265b482e06 | duplicate | El Camino Real National Historic Trail Development Concept Plan Executive Summary (2022 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-b6a080265b482e06 | duplicate | El Camino Real National Historic Trail Development Concept Plan Executive Summary (2022 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-b6d017091ba1d69f | duplicate | Uptown Pedestrian and Bicycle Plan and Wayfinding Program | Content-link alias for canonical archive candidate src-4ddc850e99380009. |
 | src-b745230b7fbd1fdb | duplicate | src-72fb72405d08a5c1 | Duplicate discovery record for implemented candidate src-6ab062defb508468. |
-| src-b74df3ef46599ef4 | duplicate | ART Corridor Building Permits, October 2022–September 2023 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-b74df3ef46599ef4 | duplicate | ART Corridor Building Permits, October 2022–September 2023 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-b78157787e71828f | duplicate | Official MRMPO report | Official MRMPO direct-file link is already recorded as provenance on the canonical archived audit record. |
-| src-b7ec0b83b2f79785 | duplicate | Integrated Development Ordinance, Effective May 17, 2018 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-bb1812846dc4cea9 | duplicate | Section 2800: Temporary Traffic Control — January 2003 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-b7ec0b83b2f79785 | duplicate | Integrated Development Ordinance, Effective May 17, 2018 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-bb1812846dc4cea9 | duplicate | Section 2800: Temporary Traffic Control — January 2003 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-bb5088b9f0c46dee | duplicate | official-2011-bikeways-trails-master-plan-update | Duplicate discovery record for implemented candidate src-94cdef5b70765253. |
-| src-bc48165910d9ed6c | duplicate | Central Avenue Station-Area Planning Draft — Introduction and Action Plan (September 2017) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-bc48165910d9ed6c | duplicate | Central Avenue Station-Area Planning Draft — Introduction and Action Plan (September 2017) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-bcbc02c4109a77f4 | duplicate | Official City image | Official City direct-image link is already recorded as provenance on the canonical archived map record. |
 | src-bcbfa4182489257d | duplicate | src-5493cb1d487d09db | Duplicate discovery record for implemented candidate src-a89c0c7e764e720f. |
-| src-bcdade4272742d59 | duplicate | Albuquerque MS4 Bacterial TMDL Loading Report, Water Year 2015 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-bcdade4272742d59 | duplicate | Albuquerque MS4 Bacterial TMDL Loading Report, Water Year 2015 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-bd0f067203f469f4 | duplicate | Green Stormwater Infrastructure / Low Impact Development Standards | Content-link alias for canonical archive candidate src-92406a39eaba47ce. |
-| src-bdb2d88b3ec7cd68 | duplicate | 2045 Socioeconomic Forecast Presentation (2025 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-bdb2d88b3ec7cd68 | duplicate | 2045 Socioeconomic Forecast Presentation (2025 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-bdf14eb36db5dd63 | duplicate | Girard Streetscape FINAL - Annotated | Duplicate discovery record for implemented candidate src-0a69860a80fbe98a. |
-| src-bf6a8fd645806324 | duplicate | Crossing Alternatives Presentation (2015 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-c000b99b79ce9294 | duplicate | Rail Runner Operations and Maintenance Facility Fact Sheet (2026) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-bf6a8fd645806324 | duplicate | Crossing Alternatives Presentation (2015 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-c000b99b79ce9294 | duplicate | Rail Runner Operations and Maintenance Facility Fact Sheet (2026) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-c0687dda7e66b638 | duplicate | Paseo de las Montañas Trail Guide | Content-link alias for canonical archive candidate src-1325560782280672. |
 | src-c11c40ee87f3cf37 | duplicate | Ponds Public View | Backing feature service for the more usable City Drainage Ponds public map; retain the application as the eventual canonical public entry. |
 | src-c18a3633706516c5 | duplicate | src-6697ce61c4489b98 | Duplicate discovery record for implemented candidate src-6697ce61c4489b98. |
-| src-c1ba3d6c5e3afebd | duplicate | Section 2500: Traffic — March 2020 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-c2de2c7cb9c13ea2 | duplicate | Task Force Meeting 4 Notes (2023 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-c3bb958764b88321 | duplicate | Planned Improvements Overview Map — Retrieved August 2026 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-c1ba3d6c5e3afebd | duplicate | Section 2500: Traffic — March 2020 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-c2de2c7cb9c13ea2 | duplicate | Task Force Meeting 4 Notes (2023 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-c3bb958764b88321 | duplicate | Planned Improvements Overview Map — Retrieved August 2026 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-c3c61355933f942f | duplicate | Downtown 2050 Metropolitan Redevelopment Area Plan | Direct-file URL alias for canonical archive candidate src-a38c0dcb7d64e22c. |
-| src-c4bfb3a8d3268172 | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2020 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-c528ad68e5956ba9 | duplicate | Section 1000: Landscaping (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-c537863aaf8e12c7 | duplicate | The New Mexico 2040 Plan (2015 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-c4bfb3a8d3268172 | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2020 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-c528ad68e5956ba9 | duplicate | Section 1000: Landscaping (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-c537863aaf8e12c7 | duplicate | The New Mexico 2040 Plan (2015 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-c571bf6eb0d0c3ae | duplicate | Latest Road Conditions | Duplicate discovery record for implemented candidate src-8a96e3fdb3ea48a0. |
 | src-c5aa1fa7865d2885 | duplicate | Rio Grande Boulevard Study | The preserved R2 candidate src-3226456d7e9bd345 is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
 | src-c62f0544fc2c1877 | duplicate | NTMP Request Process Flowchart | The preserved R2 candidate src-393cac968c0c2b62 is the canonical NTMP-flowchart record; retain this duplicate for the official ArcGIS item and discovery path. |
-| src-c635dca452620c17 | duplicate | NMDOT Vulnerable Road User Safety Assessment (2023 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-c63d15dab1cfe4d5 | duplicate | Milky Way Street Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-c635dca452620c17 | duplicate | NMDOT Vulnerable Road User Safety Assessment (2023 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-c63d15dab1cfe4d5 | duplicate | Milky Way Street Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-c7060dac983e575f | duplicate | Lomas Boulevard Safety Study | Content-link alias for canonical archive candidate src-eab3c8be5578f1d5. |
 | src-c715edc21a0dfbb6 | duplicate | Statewide Public Transportation Plan | Duplicate discovery record for implemented candidate src-6825d0105cc90290. |
-| src-c7ad61fc84e0fd26 | duplicate | Rio Metro / ABQ RIDE Consolidation Study Final Report (2025) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-c7ad61fc84e0fd26 | duplicate | Rio Metro / ABQ RIDE Consolidation Study Final Report (2025) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-c7e9619fdfc5b9a1 | duplicate | Sandia Foothills Open Space Trail Map | Content-link alias for canonical archive candidate src-f959feb16b7d43c7. |
-| src-c85a57950c2794e3 | duplicate | Albuquerque Fire Rescue Annual Report, 2018 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-c864445085843234 | duplicate | Volume 2 - Existing Conditions (2017) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-c8889b436081c9b1 | duplicate | City of Albuquerque NPDES Permit Transitional Update (2015 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-c85a57950c2794e3 | duplicate | Albuquerque Fire Rescue Annual Report, 2018 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-c864445085843234 | duplicate | Volume 2 - Existing Conditions (2017) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-c8889b436081c9b1 | duplicate | City of Albuquerque NPDES Permit Transitional Update (2015 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-ca27dd67d514d371 | duplicate | ABC Comprehensive Plan, Chapter 6: Transportation (2025 Update) | Duplicate discovery record for implemented candidate src-8832a87573fd5ed6. |
 | src-cb5a9eafff4150b7 | duplicate | St. Joseph Hospital Metropolitan Redevelopment Plan | Content-link alias for canonical archive candidate src-ba702c5f055d8e38. |
 | src-cb5f42df9d1ab31c | duplicate | 2022 ABQ RIDE On-Board Rider Survey - Local Staging Copy | The same checksum, size, and document are recorded on the canonical R2 archive record. |
-| src-cbb6b25754b45a94 | duplicate | Section 400: Traffic Control (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-cc22fda2e9f7626e | duplicate | Moon St NE Cycletrack Plans | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-cbb6b25754b45a94 | duplicate | Section 400: Traffic Control (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-cc22fda2e9f7626e | duplicate | Moon St NE Cycletrack Plans | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-cc6a4ff2372bfa50 | duplicate | Unified Planning Work Program, FFY 2027-2028 | Duplicate discovery record for implemented candidate src-1a0dfd37475ddc69. |
 | src-cc6bd28528a4f130 | duplicate | Travel Alerts | Duplicate discovery record for implemented candidate src-8a96e3fdb3ea48a0. |
-| src-cdf2cad75c454730 | duplicate | Albuquerque Fire Rescue Annual Report, 2022 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-cdf2cad75c454730 | duplicate | Albuquerque Fire Rescue Annual Report, 2022 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-ce27aad8f857234a | duplicate | Study Area | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
 | src-ceadee92ccd8fa1e | duplicate | Girard Complete Streets Master Plan August 23 Presentation | Metadata/view wrapper for the superseded Girard workshop presentation. |
 | src-cee0e4d8e9bf5628 | duplicate | Phase II Engagement Summary | Official City direct-file link is already recorded as provenance on the canonical archived Phase II engagement record. |
-| src-cfd22ac4ded79b77 | duplicate | Task Force Meeting 3 Notes (2022 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-cfd22ac4ded79b77 | duplicate | Task Force Meeting 3 Notes (2022 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-d0e2cb6199c14ee2 | duplicate | Current City Limits | Generic boundary service duplicates the broader City maps library already retained on ABQInfo and adds no distinct planning explanation or public-facing application. |
 | src-d0ed674dd8fe9559 | duplicate | FY24-29 TIP ITS Project Review & Architecture Cert (7-16-23) | Duplicate discovery record for implemented candidate src-b9c1a8d5cb7902b6. |
-| src-d1d0dcc071caad45 | duplicate | Storrie Place Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-d25255a38d28be29 | duplicate | Procedure B Amendment and Extension Agreement — March 2021 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-d1d0dcc071caad45 | duplicate | Storrie Place Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-d25255a38d28be29 | duplicate | Procedure B Amendment and Extension Agreement — March 2021 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-d26471dab8dfbb3b | duplicate | Dr. MLK Separated Bike Lane Pilot Project FAQ | Exact byte-for-byte duplicate of validated candidate src-869bb49fc86733b and the existing archived English FAQ. |
 | src-d2e84afc15b63900 | duplicate | Concept Plan - Segment 1 | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
 | src-d3a3ff83929aba61 | duplicate | Neighborhood Traffic Management Program Policy Manual | Content-link alias for canonical archive candidate src-ad45c8e945713880. |
 | src-d3f4c9a1a3d5b324 | duplicate | Multimodal Planning and Programs Bureau | Duplicate discovery record for implemented candidate src-35f4be7a97b9f89e. |
-| src-d576b91a1f8c190c | duplicate | NMDOT Resilience Improvement Plan (2024 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-d5a171a276984978 | duplicate | Plan Appendix (2018 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-d5d32ad6ef40b58d | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2016 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-d60ce4e9ffd04628 | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2021 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-d423a80f88e7f887 | duplicate | Upper La Cueva Improvements | Duplicate discovery record for implemented candidate src-14bf071bcc9dbde3. |
+| src-d576b91a1f8c190c | duplicate | NMDOT Resilience Improvement Plan (2024 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-d5a171a276984978 | duplicate | Plan Appendix (2018 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-d5d32ad6ef40b58d | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2016 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-d60ce4e9ffd04628 | duplicate | City of Albuquerque Five-Year Forecast, Fiscal Year 2021 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-d635f8001d7cbd39 | duplicate | Project Dashboard | Duplicate discovery record for implemented candidate src-dfe528e25b833667. |
-| src-d65c4a6d20298de6 | duplicate | Section 2200: Drainage — May 2020 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-d65c4a6d20298de6 | duplicate | Section 2200: Drainage — May 2020 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-d664190ecadc97a8 | duplicate | Projects | Broad NMDOT projects landing page duplicates the implemented Active Projects map and individual Albuquerque project pages. |
-| src-d6e142c608f6a2de | duplicate | Appendix E ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ Bike Boulevard Toolkit | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-d6e142c608f6a2de | duplicate | Appendix E ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ Bike Boulevard Toolkit | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-d7dce4b56bed7018 | duplicate | Northeast Heights Bike Trails Guide | Content-link alias for canonical archive candidate src-064b45b390088918. |
 | src-d7fb80e15958454c | duplicate | Paseo del Bosque Trail Guide — Full Version | Content-link alias for canonical archive candidate src-0ce924c2d9dcc556. |
-| src-d850e374f0547178 | duplicate | Appendix H ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ Multiuse Trail Considerations (2015 Plan) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-d8489c192d2d7edb | duplicate | bernco bridge boulevard market analysis 2012 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-d850e374f0547178 | duplicate | Appendix H ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ Multiuse Trail Considerations (2015 Plan) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-d8b68c090d8d9a44 | duplicate | Downtown Walkability Analysis | The preserved R2 candidate src-a61754e9e493cd3c is the canonical document record; retain this duplicate for the official City direct-file URL and discovery path. |
-| src-d9d948296f77bd3c | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2012 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-d9d948296f77bd3c | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2012 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-d9e78a2486a926cd | duplicate | Central Avenue Complete Streets Design Toolkit (1st to Girard) Part 1 | Metadata/view wrapper for the superseded split October 2013 edition; the complete PDF is archived. |
-| src-da5e1983716179b9 | duplicate | 2025–2034 Decade Plan Funding Allocation Workbook | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-da80c657e66a07f2 | duplicate | Facility Plan for Arroyos (1986) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-da5e1983716179b9 | duplicate | 2025–2034 Decade Plan Funding Allocation Workbook | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-da80c657e66a07f2 | duplicate | Facility Plan for Arroyos (1986) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-db4dfd5029f9e710 | duplicate | Permits | Broad permits landing page duplicates the implemented NMDOT ePermitting source, which contains the current applications, guidance, and contacts. |
 | src-dbf744844cb6494b | duplicate | City of Albuquerque Open Space Overview Map | Content-link alias for canonical archive candidate src-3617488d3e23ed73. |
-| src-dbf78cc431848c28 | duplicate | Freedom Way Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-dbf78cc431848c28 | duplicate | Freedom Way Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-dc91480e261ecffa | duplicate | Transitions 2045 MTP Full Document | Duplicate discovery record for implemented candidate src-7e1a8bec260f1b77. |
 | src-dd123d7b56ccad69 | duplicate | Research and Climate Bureau | Duplicate discovery record for implemented candidate src-ffe2da6f8a6daa6c. |
-| src-dde36aa7a405d479 | duplicate | Integrated Development Ordinance, Effective April 21, 2025 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-dde36aa7a405d479 | duplicate | Integrated Development Ordinance, Effective April 21, 2025 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-ddf5a782573940b6 | duplicate | Uptown Pedestrian Study | Direct-file URL alias for canonical archive candidate src-967112fbf63ba98f. |
-| src-de3192d3055b9aa6 | duplicate | 2025–2034 Approved Decade Plan Summary (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-de3192d3055b9aa6 | duplicate | 2025–2034 Approved Decade Plan Summary (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-de7cf2d3c522c091 | duplicate | Central/Highland/Upper Nob Hill Metropolitan Redevelopment Plan | Content-link alias for canonical archive candidate src-07360716bb99118c. |
 | src-de959aa0a0eb29b5 | duplicate | City of Albuquerque Climate Action Plan | Content-link alias for canonical archive candidate src-dd879e78b53b3f86. |
-| src-df61935336f63cfd | duplicate | Rio Metro Regional Transit District Short Range Plan, FY2012–FY2017 | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-df6379939ee937eb | duplicate | Updated Rail Yards Master Plan (2023 archived PDF, 217.11 MiB) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-df61935336f63cfd | duplicate | Rio Metro Regional Transit District Short Range Plan, FY2012–FY2017 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-df6379939ee937eb | duplicate | Updated Rail Yards Master Plan (2023 archived PDF, 217.11 MiB) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-dff91a717447d7aa | duplicate | Transiciones 2045 Plan Metropolitano de Transporte Resumen Ejecutivo (MTP Executive Summary ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ Spanish version) | The preserved R2 candidate src-0b89c7adb106d638 is the canonical Spanish-summary record; retain this duplicate for the official MRCOG direct-file URL. |
-| src-e06d0b75478e5a05 | duplicate | 118th Street Alignment Study (2019 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-e1124cf1653d414d | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2017 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-e13cf1e5cc7915a2 | duplicate | Toronto-style Tall Curb Engineering Drawings | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-e1d8cfc8be8f6c35 | duplicate | Morningside Drive Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-e06d0b75478e5a05 | duplicate | 118th Street Alignment Study (2019 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-e1124cf1653d414d | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2017 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-e13cf1e5cc7915a2 | duplicate | Toronto-style Tall Curb Engineering Drawings | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-e1d8cfc8be8f6c35 | duplicate | Morningside Drive Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-e1e494ebeb8fb78a | duplicate | Phase I Engagement Summary | Official City direct-file link is already recorded as provenance on the canonical archived Phase I engagement record. |
-| src-e298a8e1643150f9 | duplicate | Section 300: Streets and Related Work (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-e2a1525369830b5e | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2015 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-e21e59b584af8b4e | duplicate | Public Meeting Presentation (August 2024 Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-e298a8e1643150f9 | duplicate | Section 300: Streets and Related Work (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-e2a1525369830b5e | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2015 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-e37d669d49d75d13 | duplicate | Coronado Metropolitan Redevelopment Area Plan | Content-link alias for canonical archive candidate src-c0f6bd74e17b5c97. |
-| src-e3d6c8ab7ba8872b | duplicate | Albuquerque Complete Streets Legislation Packet (2014 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-e3e537075333474c | duplicate | Old Town | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-e416d4c5d4651da5 | duplicate | I-25 Bicycle Accessibility Study Summary (2020; updated 2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-e4f82bfb1122d1ca | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2019 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-e620d1334a793f62 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2025 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-e3d6c8ab7ba8872b | duplicate | Albuquerque Complete Streets Legislation Packet (2014 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-e3e537075333474c | duplicate | Old Town | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-e416d4c5d4651da5 | duplicate | I-25 Bicycle Accessibility Study Summary (2020; updated 2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-e4f82bfb1122d1ca | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2019 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-e620d1334a793f62 | duplicate | City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2025 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-e682a6c0c3a2a9ff | duplicate | mrmpo-2025-forecast-presentation | Duplicate discovery record for implemented candidate src-8493274afa12331f. |
-| src-e6bdd86563f2b8fa | duplicate | Finance | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-e6bdd86563f2b8fa | duplicate | Finance | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-e70052f03c491509 | duplicate | City of Albuquerque - Yellow Light Timing Change & All-Red Clearance Interval Timing Change Effectiveness Study - Final Report | Duplicate discovery record for implemented candidate src-0c338b7492be1b45. |
 | src-e7c241a6f30a8431 | duplicate | ABQ RIDE Planning Briefing | Content-link alias for canonical archive candidate src-4b22c8888d5276e7. |
-| src-e7d633d366daee61 | duplicate | Climate Action Plan Implementation Report 2025 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-e7da4fac39da74fe | duplicate | Approved Municipal Development Changes (December 11, 2025 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-e7d633d366daee61 | duplicate | Climate Action Plan Implementation Report 2025 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-e7da4fac39da74fe | duplicate | Approved Municipal Development Changes (December 11, 2025 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-e866d0e3f9bd3dee | duplicate | Old Albuquerque High School Metropolitan Redevelopment Plan | Content-link alias for canonical archive candidate src-48b3697bb9474b06. |
-| src-e878af355c0b4884 | duplicate | Bernalillo County / International Sunport Station Area Sector Development Plan (2009) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-e878af355c0b4884 | duplicate | Bernalillo County / International Sunport Station Area Sector Development Plan (2009) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-e88cf1da17aff086 | duplicate | ABQ-RIDE-Forward-Phase-I-Engagement-Summary | Duplicate discovery record for implemented candidate src-e1e494ebeb8fb78a. |
-| src-e8993bdaa15264fa | duplicate | Section 900: Sewer — January 2018 (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-e8b18e68f6210fb1 | duplicate | Silver Avenue Bike Boulevard Review (2019 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-e91088dfec144f92 | duplicate | Biological Evaluation for the Unser Widening Project (2022) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-e8993bdaa15264fa | duplicate | Section 900: Sewer — January 2018 (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-e8b18e68f6210fb1 | duplicate | Silver Avenue Bike Boulevard Review (2019 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-e91088dfec144f92 | duplicate | Biological Evaluation for the Unser Widening Project (2022) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-e9730a535acdeaa0 | duplicate | I-40 West Corridor Study: Executive Summary | Duplicate discovery record for implemented candidate src-e60615e24211cb36. |
-| src-ea7c1d5e1328eb69 | duplicate | Sierra Grande Avenue Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-eab22e644d498a37 | duplicate | West Central | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-ea7c1d5e1328eb69 | duplicate | Sierra Grande Avenue Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-eab22e644d498a37 | duplicate | West Central | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-eab5bda48420bce9 | duplicate | Bridge Boulevard Corridor Redevelopment Plan | Content-link alias for canonical archive candidate src-f24ddd95ac2229d0. |
 | src-eb47ea28d8ca58ad | duplicate | Los Duranes Sector Development Plan | The preserved R2 candidate src-278552b95a4c8916 is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
 | src-ebb9d5880b7ad6a6 | duplicate | Rainfall, Runoff, and Water-Quality Data for the Albuquerque Metropolitan Area, Water Year 2004 | Content-link alias for canonical archive candidate src-33a926d35f72fdc0. |
 | src-ebd2161a3e07f92a | duplicate | Unified Planning Work Program, FFY 2027-2028 (mistyped R2 key) | Mistyped R2 key created during upload; exact duplicate of the correctly named implemented object. Retained because deletion was not authorized. |
 | src-ec6f2425c884d073 | duplicate | Statewide Traffic Records System | Duplicate discovery record for implemented candidate src-fda23e3b8e702b91. |
-| src-ecb898bb9d676d12 | duplicate | New Mexico Rail Runner Express Project Development History (2009) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-ecec215e9ca738dd | duplicate | Appendix D: Stakeholder and Public Involvement | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-ed434fcdec31cb16 | duplicate | Albuquerque Automated Speed Enforcement Regulation (2022 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-ecb898bb9d676d12 | duplicate | New Mexico Rail Runner Express Project Development History (2009) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-ecec215e9ca738dd | duplicate | Appendix D: Stakeholder and Public Involvement | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-ed434fcdec31cb16 | duplicate | Albuquerque Automated Speed Enforcement Regulation (2022 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-edd4eb43d1ed89a7 | duplicate | src-8cdddf853227c40a | Duplicate discovery record for implemented candidate src-d4957d9c6500b754. |
 | src-ee649b54758d8a94 | duplicate | South Yale Sector Development Plan | The preserved R2 candidate src-5d29a972bd5550ba is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |
-| src-eecdeed702e55d30 | duplicate | Isleta Drain and Trail Master Plan (2022 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-eecdeed702e55d30 | duplicate | Isleta Drain and Trail Master Plan (2022 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-efdf74ef6b0a99a2 | duplicate | Download LRRS PDF map | Duplicate discovery record for implemented candidate src-53495318782dae10. |
-| src-eff43f5357f59f68 | duplicate | Equity and Inclusion | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-eff3f591b7af7831 | duplicate | bernco bridge boulevard transportation assessment 2012 | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-eff43f5357f59f68 | duplicate | Equity and Inclusion | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-f12f292706b029f7 | duplicate | AHYMO-S4-R2 Hydrologic Model User’s Manual | Content-link alias for canonical archive candidate src-9cfc976496d924bf. |
-| src-f251d834c38e3553 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2022 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-f262e9be0f2e6995 | duplicate | NMRX Grade Crossing Pedestrian and Bicyclist Safety Study (2016) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-f2a7e6c3930e5a2c | duplicate | 17th Street Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-f251d834c38e3553 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2022 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-f262e9be0f2e6995 | duplicate | NMRX Grade Crossing Pedestrian and Bicyclist Safety Study (2016) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-f2a7e6c3930e5a2c | duplicate | 17th Street Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-f2fab7785fddb027 | duplicate | Internet Archive Capture of Former City PDF | Internet Archive capture link is retained beside the archived report but represented by canonical document candidate src-65592118671ee943. |
 | src-f38aa346fc280f71 | duplicate | Sun Van Paratransit Service | Older navigation path duplicates the maintained Sun Van service page now implemented at /transit/services/paratransit-service. |
 | src-f413465fab00efba | duplicate | The City boasts more than 29,000 acres of Open Space in and around Albuquerque to explore, recreate, and help preserve our city's natural heritage. Open Space The City boasts more than 29,000 acres of Open Space in and around Albuquerque to explore, recreate, and help preserve our city's natural heritage. | Generic Open Space landing page duplicates the more useful planning and resource-management library already implemented on ABQInfo. |
-| src-f48a133e872ac428 | duplicate | New Mexico State Rail Plan (2026) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-f4ab67c8f3de748f | duplicate | 2019 General Obligation Bond Program Book (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-f48a133e872ac428 | duplicate | New Mexico State Rail Plan (2026) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-f4ab67c8f3de748f | duplicate | 2019 General Obligation Bond Program Book (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-f53560bf887296ae | duplicate | Silver Ave Blvd Blvd Review - Final - Dec 2019 | Duplicate discovery record for implemented candidate src-7bbe0a9dbd29fb97. |
-| src-f54b69082e21c370 | duplicate | Section 100: Materials (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-f54b69082e21c370 | duplicate | Section 100: Materials (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-f57d18c0f4a7b682 | duplicate | Zuni Road Study — Part I | Content-link alias for canonical archive candidate src-e7442b03ed708de4. |
 | src-f5c6598b3486e1b9 | duplicate | Albuquerque Bird Watching Guide and Map | Content-link alias for canonical archive candidate src-95cb84bc3ca2e1ea. |
-| src-f5e1ec943e4fe4c6 | duplicate | Station Types | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-f5e1ec943e4fe4c6 | duplicate | Station Types | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-f6cf256b0499a688 | duplicate | City of Albuquerque Construction Site Manual | Content-link alias for canonical archive candidate src-93e0f5fd370f5709. |
 | src-f6d67da41bbf96a6 | duplicate | APS Vision Zero Mapping Session Report | The standalone APS Mapping Session Report is reproduced in full as the appendix to the archived 64-page APS Vision Zero for Youth Action Plan; retained as an official direct link without storing a duplicate copy. |
-| src-f98e60d9df73a9fb | duplicate | APS Vision Zero Board Policy Discussion Brief (2022 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-f72c1bb0c3c9d570 | duplicate | Bridge Boulevard Phase 3 | Duplicate discovery record for implemented candidate src-16f8ae9c0bf6e508. |
+| src-f98e60d9df73a9fb | duplicate | APS Vision Zero Board Policy Discussion Brief (2022 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-f990a9e710910785 | duplicate | Montaño Intermodal Center Project Application | Content-link alias for canonical archive candidate src-8578ac9aeef57f31. |
-| src-f9c9904424f6aa2e | duplicate | 2027–2036 Decade Plan Funding Allocation Chart (archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-f9c9904424f6aa2e | duplicate | 2027–2036 Decade Plan Funding Allocation Chart (archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-f9d3721dab62fbc8 | duplicate | Open Space Visitor Center and Bosque Trail Access Map | Content-link alias for canonical archive candidate src-b5bd08f7dca5d8e5. |
-| src-f9d4753e8f93f38f | duplicate | Desert Springs Drive Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-f9d4753e8f93f38f | duplicate | Desert Springs Drive Speed Study (2021 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-f9e880263589da4b | duplicate | Planned Growth Strategy Briefing | Content-link alias for canonical archive candidate src-44e2abd1db14165c. |
 | src-fa0a012c5479abdb | duplicate | src-d3f0cf9107a00c74 | Duplicate discovery record for implemented candidate src-d3f0cf9107a00c74. |
 | src-fa3729d2bf51852b | duplicate | Bicycle Boulevard Guide — Full Version | Content-link alias for canonical archive candidate src-53fb7c8f80678e6d. |
-| src-faae6bb4e21c85dc | duplicate | Near South Valley Multimodal Study (2017 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-fb1e9fa6f788e1ce | duplicate | 118th Street Amole Mesa to Eucariz Alignment Study (2023 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-faae6bb4e21c85dc | duplicate | Near South Valley Multimodal Study (2017 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-fb1e9fa6f788e1ce | duplicate | 118th Street Amole Mesa to Eucariz Alignment Study (2023 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-fb83e1ee4d276d04 | duplicate | March 2014 Draft Central Avenue Complete Street Plan and Design Toolkit | The R2 record is canonical; retain this duplicate to preserve the official City direct-file URL and discovery path. |
 | src-fb9c324c03d5e0cf | duplicate | 2025 General Obligation Bond Approved Program Book | Duplicate discovery record for implemented candidate src-982cc018b0b8fc01. |
-| src-fbb67eba7a246f4c | duplicate | Albuquerque Complete Streets Ordinance Update (2019 archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-fbb67eba7a246f4c | duplicate | Albuquerque Complete Streets Ordinance Update (2019 archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-fbc55a96f60b18b6 | duplicate | Albuquerque Streetcar Evaluation Appendices | Content-link alias for canonical archive candidate src-56fef63212b7c5c8. |
-| src-fc3aa4c1663f271a | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2026 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-fc96ecf88834eec8 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2020 (Archived PDF) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
-| src-fcfb46498207cafd | duplicate | Appendix A ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ Planning and Policy Framework | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-fc3aa4c1663f271a | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2026 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-fc96ecf88834eec8 | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2020 (Archived PDF) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
+| src-fcfb46498207cafd | duplicate | Appendix A ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ Planning and Policy Framework | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-fe03d5ecc326683f | duplicate | Downtown 2050 Metropolitan Redevelopment Area Plan | Content-link alias for canonical archive candidate src-a38c0dcb7d64e22c. |
-| src-ff45290793754363 | duplicate | ART Design Comments Submitted to the Transit Department (December 2015) | Duplicate R2 representation of canonical candidate src-396710193b8b20b5. |
+| src-ff45290793754363 | duplicate | ART Design Comments Submitted to the Transit Department (December 2015) | Duplicate R2 representation of canonical candidate src-79de5bb4324d2dd4. |
 | src-ff6434a912c30b5e | duplicate | Final ABQ RIDE Forward Recovery Network Plan | Official City direct-file link is already recorded as provenance on the canonical archived plan record. |
 | src-ff7935d761e49431 | duplicate | Download PLTS PDF map | Duplicate discovery record for implemented candidate src-6697ce61c4489b98. |
 | src-ffc92f7d1b362c40 | duplicate | Del Rey Metropolitan Redevelopment Project Plan | Content-link alias for canonical archive candidate src-5d543243da9daf6d. |
@@ -1490,6 +1521,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-1a0dfd37475ddc69 | excluded | Unified Planning Work Program, FFY 2027-2028 | User-approved relevance cleanup: administrative work program and budget are not useful enough for the public plan library. |
 | src-1ac9fd5060282938 | excluded | Contact Information | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-1b9d5b54ebc90a85 | excluded | Next 6 items | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
+| src-1c24a2ad21e80fff | excluded | Blake Road Construction Graphic 3 | Excluded as a temporary construction-phase traffic graphic; the live County project page is retained for current conditions. |
 | src-1cd3c6f794c2cec5 | excluded | 8 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-1d081cb136fb9bfb | excluded | Contact Information | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-1d0f187fe4d3850a | excluded | Read More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
@@ -1498,6 +1530,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-1e926b0d981532d9 | excluded | Read More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-1f6e403f98742441 | excluded | Contact Information | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-1fc25bc6bbe6c075 | excluded | Contact Information | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
+| src-1fec3e0249d74943 | excluded | Alameda Drain Trail Phase 6 May 2026 Meeting Flyer | Excluded as an expired public-meeting flyer; the current project page and archived master plan retain substantive information. |
 | src-207db20c490b781a | excluded | 24 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-20b30e6bd9863d35 | excluded | 7 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-21aa338215eea99f | excluded | Read More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
@@ -1571,6 +1604,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-4b1070da8a9669c0 | excluded | Print this information out and take it with you! | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-4bed681d7edd638f | excluded | 12 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-4c77d1cc887b693a | excluded | Print this information out and take it with you! | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
+| src-4d080cd3ef1f22d2 | excluded | Blake Road September 2023 Public Meeting Notice | Excluded as a transient, expired public-meeting notice; the substantive October 2023 presentation is archived. |
 | src-4d580c544ced23b2 | excluded | Boards & Committees | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-4ebad1715959c125 | excluded | 5 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-50d4bd4731d54233 | excluded | Social Media | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
@@ -1635,6 +1669,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-704ec76d7db84d40 | excluded | Office of Inspector General | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-70f1f038a7d86859 | excluded | 87131 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-711dd27395da2bd9 | excluded | 417 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
+| src-71580e2a268c202b | excluded | Blake Road Construction Graphic 1 | Excluded as a temporary construction-phase traffic graphic; the live County project page is retained for current conditions. |
 | src-71ce99b3eeb75aac | excluded | 11 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-7204018f4c47235c | excluded | Full contact information | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-7247ce4ce1495fa7 | excluded | Transportation Planning | Broad MRMPO transportation-planning index; all substantive linked subject areas are tracked as individual candidates. |
@@ -1725,6 +1760,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-a235a122d8362645 | excluded | IPRA Requests | User-approved relevance cleanup: generic records-request procedure rather than substantive Albuquerque information. |
 | src-a237f09a6f5d3a20 | excluded | Contact Information | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-a27dc956eeb8297e | excluded | Read More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
+| src-a343d66af1e4c445 | excluded | Blake Road Project Limits Image | Excluded because the archived project presentation contains the project limits and more complete design context. |
 | src-a3846ca2c64e45f4 | excluded | Read More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-a3e3d800a23f8009 | excluded | The City Council members serve constituents in a variety of committees. Committees The City Council members serve constituents in a variety of committees. | Council committee directory is routine government navigation without a focused planning archive, dataset, project record, or document collection for ABQInfo. |
 | src-a587e69ef3cc66d5 | excluded | Office of General Counsel | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
@@ -1844,10 +1880,12 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-de2feca1b6836d55 | excluded | Print this information out and take it with you! | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-de382f24feff8f21 | excluded | 2 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-dea6cf058a636fd5 | excluded | Contact Information | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
+| src-df0db7688040143d | excluded | Alameda Drain Trail Phase 6 Promotional Image | Excluded as a promotional social-media image without unique planning or design information. |
 | src-df17004a628ec820 | excluded | Find another City Council district. | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-df60b9111b89d996 | excluded | Learn More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-e0fa297da5fff7b9 | excluded | 9 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-e1381f56ecb77b3c | excluded | Turning Movement Counts | User-approved timeliness cleanup: older turning counts and pandemic-era guidance are not reliably current. |
+| src-e2342f42cfd5c237 | excluded | Blake Road Construction Graphic 2 | Excluded as a temporary construction-phase traffic graphic; the live County project page is retained for current conditions. |
 | src-e271c19776152b9e | excluded | Complete Streets Letter of Support2 | Stakeholder support letter adds little policy or technical information beyond the retained ordinance, legislation packet, and Council presentation. |
 | src-e2a015eda45653f8 | excluded | 3 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-e2eac49c39bb1640 | excluded | Learn More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
@@ -1867,6 +1905,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-e96131c0b3cc77fa | excluded | 8 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-e961dd73d1cbf859 | excluded | 2004 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-e9861a984fbdb2a4 | excluded | Rest Areas | Current NMDOT rest-area list contains no Albuquerque-area facility and is not a statewide planning or policy source. |
+| src-e9b3f0cc1627db16 | excluded | Upper La Cueva Improvements Map | Excluded as redundant with the more informative archived public and HOA presentations, which contain project mapping and design detail. |
 | src-e9ca524932e045b1 | excluded | 15 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-ead5b0dacc40ab4f | excluded | 87122 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-eaf00069b3bd2bcf | excluded | A-Z | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |

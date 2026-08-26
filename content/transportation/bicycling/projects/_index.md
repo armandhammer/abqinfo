@@ -54,6 +54,16 @@ Questions or comments email Paul Olson at DMD polson@cabq.gov
 
 Questions or comments email Melissa Roseman at DMD melissaroseman@cabq.gov
 
+### Alameda Drain Trail Phase 6
+
+- [Bernalillo County Project Page](https://www.bernco.gov/public-works/blog/2021/04/16/alameda-drain-trail-phase-6/)
+
+  Tracks design and permitting for a shared-use trail beside the Alameda Drain west of 2nd Street, from Alameda Boulevard to Vista Azul Lane, with landscaping, trail amenities, and stormwater-quality improvements.
+
+  The foundational [Alameda Drain and Trail Master Plan is archived under Bike Plans]({{< relref "../bike-plans.md#bernalillo-county-trail-planning" >}}).
+
+  Project contact: Leila Momenzadeh, 505-252-2837, [lmomenzadeh@bernco.gov](mailto:lmomenzadeh@bernco.gov)
+
 ## Past Projects (2020 and Earlier)
 
 ### Silver Avenue Bike Boulevard Review
