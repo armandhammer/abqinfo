@@ -18,6 +18,22 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
   [Official City development-review document library](https://documents.cabq.gov/planning/DevelopmentReviewServices/) · [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/Construction%20Site%20Inspection%20Standards_12-3-18.pdf)
 
+## Watershed Plans
+
+### Upper Piedras Marcadas Watershed Drainage and Water Quality Management Plan
+
+- [Volume 1 - Literature Review (2017)](https://files.abqinfo.com/public-works/stormwater-drainage/amafca-upper-piedras-marcadas-watershed-plan-volume-1-literature-review-2017.pdf)
+
+  Reconstructs the Upper Piedras Marcadas watershed's drainage-planning history through 32 prior plans, as-builts, subdivision reports, sector plans, storm-drain projects, basin studies, maps, agreements, and design records dating from 1983 through 2014. [Official project resources](https://www.upgradeunserpaseo.com/resources/)
+
+- [Volume 2 - Existing Conditions (2017)](https://files.abqinfo.com/public-works/stormwater-drainage/amafca-upper-piedras-marcadas-watershed-plan-volume-2-existing-conditions-2017.pdf)
+
+  Documents existing hydrology, drainage infrastructure, land use, rainfall-runoff modeling, discharge paths, detention constraints, water quality, field conditions, and downstream capacity across the Upper Piedras Marcadas watershed, updated in 2017. [Official project resources](https://www.upgradeunserpaseo.com/resources/)
+
+- [Volume 3 - Developed Conditions (2017)](https://files.abqinfo.com/public-works/stormwater-drainage/amafca-upper-piedras-marcadas-watershed-plan-volume-3-developed-conditions-2017.pdf)
+
+  Models developed watershed conditions and compares drainage alternatives, hydraulic capacity, costs, low-impact development and water-quality measures, funding options, basin maps, design plates, calculations, and recommended improvements for Upper Piedras Marcadas. [Official project resources](https://www.upgradeunserpaseo.com/resources/)
+
 ## Municipal Stormwater Research
 
 ### Municipal Stormwater Program and Annual Reports

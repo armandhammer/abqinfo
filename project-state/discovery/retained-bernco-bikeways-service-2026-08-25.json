@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "source_url": "https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/Bikeways/MapServer",
+  "title": "Bernalillo County Bikeways",
+  "agency": "Bernalillo County",
+  "retrieved_at": "2026-08-25T00:00:00Z",
+  "discovery_method": "Deterministic ArcGIS REST service, layer-metadata, and feature-count review",
+  "crawl_status": "relevant ArcGIS dependency frontier exhausted",
+  "service": {
+    "arcgis_version": 11.5,
+    "capabilities": [
+      "Map",
+      "Query",
+      "Data"
+    ],
+    "supported_query_formats": [
+      "JSON",
+      "GeoJSON",
+      "PBF"
+    ],
+    "description": "This line feature class is Bernalillo County-maintained bikeways in the unincorporated area of Bernalillo County, NM.",
+    "copyright": "Jill Williams, GIS Program/Bernalillo County Planning & Development Services; Richard Meadows, Transportation Planning Program/Bernalillo County Public Works Division"
+  },
+  "layers": [
+    {
+      "id": 191,
+      "name": "Bikeways",
+      "type": "Feature Layer",
+      "geometry_type": "esriGeometryPolyline",
+      "feature_count_at_review": 205,
+      "fields": [
+        "Corridor",
+        "CorridorSide",
+        "FromTermini",
+        "ToTermini",
+        "BikewayType",
+        "LaneWidth",
+        "LaneBufferWidth",
+        "ShoulderWidth",
+        "ShyWidth",
+        "ParkingLaneWidth",
+        "PercentGrade",
+        "MaintenanceCondition",
+        "MaintainedBy",
+        "InspectionDate",
+        "Sharrows",
+        "Signs"
+      ]
+    }
+  ],
+  "site_action": "No content change required; ABQInfo already links the direct ArcGIS Map Viewer and retains the REST service separately as ArcGIS Data on the Bicycling Maps page.",
+  "archival_reconciliation": {
+    "new_uploads_required": 0,
+    "reason": "This is a maintained live feature layer rather than a static authoritative document. Its queryable government service and direct map should remain live links."
+  },
+  "processing_notes": [
+    "The root service and its only feature layer were reviewed.",
+    "No related PDF, spreadsheet, attachment, sibling table, or static map was exposed by the service.",
+    "The live feature count is an audit observation, not a fixed site claim."
+  ]
+}

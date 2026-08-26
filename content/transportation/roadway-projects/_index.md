@@ -92,6 +92,30 @@ Project contact: Bridgette Garrett at DMD, bgarrett@cabq.gov
 
   Tracks construction of Albuquerque's $62 million Unser Boulevard and Paseo del Norte widening project, including traffic control, schedules, lane expansion, bicycle and trail connections, lighting, and stormwater improvements.
 
+#### Project Documents
+
+- [Unser and Paseo Phase 1 Construction Fact Sheet - English (2025)](https://files.abqinfo.com/transportation/roadway-projects/current/cabq-unser-paseo-phase-1-construction-fact-sheet-english-2025.pdf)
+
+  Explains Phase 1 limits, widening, bicycle lanes, multi-use trails, drainage, construction staging, the schedule through 2028 or 2029, access and traffic impacts, and the current project contact. [Official project resources](https://www.upgradeunserpaseo.com/resources/)
+
+- [Unser and Paseo Phase 1 Construction Fact Sheet - Spanish (2025)](https://files.abqinfo.com/transportation/roadway-projects/current/cabq-unser-paseo-phase-1-construction-fact-sheet-spanish-2025.pdf)
+
+  Provides the same Phase 1 construction limits, multimodal improvements, sequencing, schedule, access guidance, traffic-impact information, frequently asked questions, and current project contact in Spanish. [Official project resources](https://www.upgradeunserpaseo.com/resources/)
+
+- [Unser and Paseo Public Meeting Presentation (2022)](https://files.abqinfo.com/transportation/roadway-projects/current/cabq-unser-paseo-public-meeting-presentation-2022.pdf)
+
+  Presents the combined widening project's need, roadway concepts, multimodal design standards, bicycle and trail connections, drainage context, traffic and environmental effects, schedule, cost, funding, and public-engagement process. [Official project resources](https://www.upgradeunserpaseo.com/resources/)
+
+- [Biological Evaluation for the Unser Widening Project (2022)](https://files.abqinfo.com/transportation/roadway-projects/current/cabq-unser-widening-biological-evaluation-2022.pdf)
+
+  Evaluates biological resources and potential effects of widening Unser Boulevard, documenting the project area, vegetation, wildlife, protected species, wetlands and waterways, avoidance measures, agency coordination, field observations, and environmental-clearance findings. [Official project resources](https://www.upgradeunserpaseo.com/resources/)
+
+- [Biological Evaluation for the Paseo del Norte Widening Project (2022)](https://files.abqinfo.com/transportation/roadway-projects/current/cabq-paseo-del-norte-widening-biological-evaluation-2022.pdf)
+
+  Evaluates biological resources and environmental effects of widening Paseo del Norte, including habitat, vegetation, wildlife, protected species, waterways, field surveys, avoidance and mitigation commitments, agency coordination, and National Environmental Policy Act documentation. [Official project resources](https://www.upgradeunserpaseo.com/resources/)
+
+Questions or comments: email project contact [Patti Watson](mailto:pattiw@cwastrategic.com) or call 505-245-3134 (direct office) or 505-269-9691 (mobile).
+
 ### I-25 Improved: Comanche to Montgomery
 
 - [I-25 Improved Project Website](https://i25improved.com/)
@@ -116,7 +140,7 @@ Project contact: Bridgette Garrett at DMD, bgarrett@cabq.gov
 
 - [Live Traffic Impacts](https://www.i25improved.com/real-time-traffic-impacts)
 
-  Provides current lane closures, traffic shifts, delays, detours, and links to live NMRoads conditions during construction.
+  Provides current lane closures, traffic shifts, delays, detours, construction phasing, travel advisories, and links to live NMRoads conditions throughout the I-25 reconstruction project.
 
 Questions, construction concerns, or text-alert assistance: email [info@i25improved.com](mailto:info@i25improved.com) or call 505-785-ROAD (7623).
 

@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "source_url": "https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/Open_Space/MapServer",
+  "title": "Bernalillo County Open Space Holdings",
+  "agency": "Bernalillo County",
+  "retrieved_at": "2026-08-25T19:57:13.1383911Z",
+  "discovery_method": "Deterministic ArcGIS REST service, layer-metadata, and feature-count review",
+  "crawl_status": "relevant ArcGIS dependency frontier exhausted",
+  "proposed_canonical_page": "content/public-works/parks-recreation.md",
+  "service": {
+    "arcgis_version": 11.5,
+    "description": "This polygon feature class is Bernalillo County real estate holdings in Bernalillo County, NM. It is a combination of the \"Bernalillo County Properties\", \"Fire & Rescue Facilities\", \"Sheriff's Office Facilities\", \"Open Space Properties\", and \"Parks & Recreation Facilities\" feature classes.",
+    "service_description": "This polygon feature class is Bernalillo County real estate holdings in Bernalillo County, NM. It is a combination of the \"Bernalillo County Properties\", \"Fire & Rescue Facilities\", \"Sheriff's Office Facilities\", \"Open Space Properties\", and \"Parks & Recreation Facilities\" feature classes.",
+    "copyright": "Lainey Greiner, GIS Technology Section/Bernalillo County Planning & Development Services; \nDeanna Miglio, Real Estate/Right-of-Way Section/Bernalillo County General Services Division",
+    "capabilities": [
+      "Map",
+      "Query",
+      "Data"
+    ],
+    "supported_query_formats": [
+      "JSON",
+      "geoJSON",
+      "PBF"
+    ]
+  },
+  "layers": [
+    {
+      "id": 336,
+      "name": "Open Space",
+      "type": "Feature Layer",
+      "geometry_type": "esriGeometryPolygon",
+      "description": "This polygon feature class is Bernalillo County real estate holdings in Bernalillo County, NM. It is a combination of the \"Bernalillo County Properties\", \"Fire & Rescue Facilities\", \"Sheriff's Office Facilities\", \"Open Space Properties\", and \"Parks & Recreation Facilities\" feature classes.",
+      "feature_count_at_review": 16,
+      "capabilities": [
+        "Map",
+        "Query",
+        "Data"
+      ],
+      "supported_query_formats": [
+        "JSON",
+        "geoJSON",
+        "PBF"
+      ],
+      "fields": [
+        {
+          "name": "OBJECTID",
+          "alias": "OBJECTID",
+          "type": "esriFieldTypeOID"
+        },
+        {
+          "name": "Shape",
+          "alias": "SHAPE",
+          "type": "esriFieldTypeGeometry"
+        },
+        {
+          "name": "Name",
+          "alias": "Name",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "Address",
+          "alias": "Address",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "GISType",
+          "alias": "GISType",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "RealEstateType",
+          "alias": "RealEstateType",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "LandManagementCrew",
+          "alias": "LandManagementCrew",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "Department",
+          "alias": "Department",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "Division",
+          "alias": "Division",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "Agency",
+          "alias": "Agency",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "Owner",
+          "alias": "Owner",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "District",
+          "alias": "District",
+          "type": "esriFieldTypeSmallInteger"
+        },
+        {
+          "name": "GISAcres",
+          "alias": "GISAcres",
+          "type": "esriFieldTypeSingle"
+        },
+        {
+          "name": "Shape_Length",
+          "alias": "Shape_Length",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "name": "Shape_Area",
+          "alias": "Shape_Area",
+          "type": "esriFieldTypeDouble"
+        }
+      ]
+    }
+  ],
+  "archival_reconciliation": {
+    "new_uploads_required": 0,
+    "reason": "This is a maintained live ArcGIS service rather than a static authoritative document. Preserve direct map and data-service links; archive a separate source document only if the service exposes one."
+  },
+  "site_action": "No content change required; ABQInfo already pairs a direct ArcGIS Map Viewer with the REST service as ArcGIS Data.",
+  "processing_notes": [
+    "The root service and every published sublayer were reviewed through official REST metadata.",
+    "Feature counts are audit observations and are not fixed claims for ABQInfo content.",
+    "No PDF, spreadsheet, document attachment, or static map is implied by an ArcGIS service unless separately recorded."
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "source_url": "https://nmroads.com",
+  "resolved_url": "https://nmroads.com/default.html?v=2025012001&",
+  "title": "NMRoads - The Official Road Advisory System for the State of New Mexico",
+  "agency": "NMDOT",
+  "retrieved_at": "2026-08-25T00:00:00Z",
+  "discovery_method": "Rendered-browser inspection followed by deterministic review of the application's public JavaScript routes and official descendants",
+  "crawl_status": "relevant public descendant frontier exhausted",
+  "candidates": [
+    {
+      "id": "src-4d0ab611f5d62e1a",
+      "url": "https://nmroads.com/NMRoadsPublicUserGuide.pdf",
+      "source_url": "https://nmroads.com",
+      "direct_file_url": "https://nmroads.com/NMRoadsPublicUserGuide.pdf",
+      "parent_url": "https://nmroads.com",
+      "referring_urls": [
+        "https://nmroads.com/default.html?v=2025012001&"
+      ],
+      "discovery_path": [
+        "https://nmroads.com",
+        "https://nmroads.com/default.html?v=2025012001&",
+        "General Help",
+        "https://nmroads.com/NMRoadsPublicUserGuide.pdf"
+      ],
+      "discovery_method": "Rendered-browser interface inspection and public application-route reconciliation",
+      "discovery_depth": 1,
+      "anchor_text": "NMRoads Public User Guide",
+      "agency": "New Mexico Department of Transportation",
+      "title": "NMRoads Public User Guide",
+      "date": "2024-09",
+      "file_type": "PDF",
+      "size_bytes": 1752154,
+      "checksum_sha256": "6496f77cdfbdd04e9f84050405c52500298b7178a3c402195a54b0437a128482",
+      "proposed_canonical_page": "content/maps/maps.md",
+      "description": "Explains how to use NMDOT's traveler map for road conditions, closures, construction, cameras, message signs, traffic, rest areas, weather, saved views, road-issue reporting, and hands-free alerts.",
+      "provenance_status": "official public NMRoads PDF and byte-identical downloaded file recorded",
+      "processing_notes": [
+        "Original 15-page source PDF preserved without modification.",
+        "The guide states Last Revision: September-2024 and identifies NMRoads as New Mexico's official road advisory system.",
+        "Exact size and SHA-256 recorded; complete text extraction reviewed."
+      ]
+    },
+    {
+      "url": "https://nmroads.com/nmroads.json",
+      "source_url": "https://nmroads.com/nmroads.json",
+      "parent_url": "https://nmroads.com",
+      "referring_urls": [
+        "https://nmroads.com/default.html?v=2025012001&"
+      ],
+      "discovery_path": [
+        "https://nmroads.com",
+        "https://nmroads.com/default.html?v=2025012001&",
+        "GeoJSON Feed",
+        "https://nmroads.com/nmroads.json"
+      ],
+      "discovery_method": "Rendered-browser interface inspection and public application-route reconciliation",
+      "discovery_depth": 1,
+      "anchor_text": "NMRoads Live GeoJSON Feed",
+      "agency": "New Mexico Department of Transportation",
+      "title": "NMRoads Live GeoJSON Feed",
+      "file_type": "GeoJSON live data feed",
+      "proposed_canonical_page": "content/maps/maps.md",
+      "description": "Provides NMRoads' current machine-readable road events for reuse in maps and analysis, including closures, crashes, construction, lane restrictions, weather-related conditions, alerts, and special events.",
+      "provenance_status": "official live NMRoads data-feed URL recorded",
+      "processing_notes": [
+        "The feed is live operational data and should remain linked to its official endpoint rather than archived as a static document.",
+        "The public application explicitly exposes this URL through its GeoJSON Feed control."
+      ]
+    }
+  ],
+  "reviewed_live_layers": [
+    "road closures and driving conditions",
+    "crashes, alerts, and special events",
+    "roadwork and lane or construction closures",
+    "traffic cameras and roadway weather-information-system cameras",
+    "dynamic message signs",
+    "traffic conditions and travel times",
+    "traffic, pedestrian, and bicycle counts",
+    "rest areas and truck-parking availability",
+    "current weather, advisories, and radar"
+  ],
+  "reviewed_external_resources": [
+    "New Mexico Rail Runner",
+    "NMDOT Park & Ride",
+    "NMDOT aviation",
+    "NMDOT bicycle routes",
+    "NMDOT trucking restrictions",
+    "National Weather Service"
+  ],
+  "processing_notes": [
+    "The visible page, public feed control, help control, and data-service routes were inspected; the interactive shell was not treated as a terminal landing page.",
+    "External mode and weather links are existing or separate retained-source roots and were not duplicated as NM Roads archival candidates.",
+    "No additional public PDF, spreadsheet, document, or downloadable plan was exposed by the relevant public interface."
+  ]
+}

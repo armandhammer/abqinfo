@@ -47,7 +47,9 @@ $records = foreach ($candidate in @($inventory.candidates | Where-Object {
   }
 }
 
-$records = @($records | Group-Object source_url | ForEach-Object { $_.Group | Select-Object -First 1 } | Sort-Object source_url)
+$records = @($records | Group-Object source_url | ForEach-Object { $_.Group | Select-Object -First 1 } | Sort-Object `
+  @{Expression={ if ($_.source_url -match 'onbase\.cabq\.gov') { 2 } elseif ($_.source_url -match '(?i)\.(png|jpe?g|gif|webp)(?:[?#]|$)') { 1 } else { 0 } }}, `
+  source_url)
 $counts = [ordered]@{}
 foreach ($status in $allowedStatuses) { $counts[$status] = @($records | Where-Object audit_status -eq $status).Count }
 $next = @($records | Where-Object audit_status -eq 'pending descendant crawl' | Select-Object -First 1)

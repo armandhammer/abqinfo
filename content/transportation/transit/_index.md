@@ -20,6 +20,16 @@ Use the service pages for current rider information and the Transportation Plans
 
   Compares transit alignments linking UNM, CNM, major medical and employment destinations, and the Sunport, then recommends a University-Gibson bus rapid transit alternative using ridership, cost, traffic, right-of-way, and community-impact analysis. [Official Rio Metro publications](https://riometro.org/381/Rio-Metro-Publications)
 
+## Zero-Emission Fleet Transition
+
+- [Rio Metro Zero Emission Feasibility Study (2023)](https://files.abqinfo.com/transportation/transit/rio-metro-zero-emission-feasibility-study-2023.pdf)
+
+  Evaluates battery-electric, hydrogen fuel-cell, and compressed-natural-gas options for Rio Metro's revenue and support fleets, including vehicle availability, charging and fueling needs, facility constraints, energy modeling, capital schedules, operating costs, and lifecycle comparisons through 2040. [Official Rio Metro publications](https://riometro.org/381/Rio-Metro-Publications)
+
+- [Rio Metro Zero Emission Transition Plan (2023)](https://files.abqinfo.com/transportation/transit/rio-metro-zero-emission-transition-plan-2023.pdf)
+
+  Sets Rio Metro's path toward battery-electric and hydrogen vehicles through 2040, with fleet purchases, charging and fueling concepts at the Albuquerque rail yard and county facilities, utility coordination, funding, workforce training, and implementation priorities. [Official Rio Metro publications](https://riometro.org/381/Rio-Metro-Publications)
+
 ## State Transit Connections
 
 - [NMDOT Park and Ride](https://www.dot.nm.gov/travel-information/park-and-ride-bus-shuttle-service)

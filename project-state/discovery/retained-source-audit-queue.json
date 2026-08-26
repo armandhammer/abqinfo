@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-25T14:25:45.5201437Z",
+  "generated_at": "2026-08-26T16:44:05.3432621Z",
   "policy": "Every retained active government webpage is a document-discovery root. Recursively review relevant child pages and archive qualifying attached documents; access-controlled pages require rendered-browser review rather than silent completion.",
   "allowed_statuses": [
     "pending descendant crawl",
@@ -11,12 +11,12 @@
   ],
   "counts": {
     "pending descendant crawl": 222,
-    "crawled": 34,
+    "crawled": 45,
     "requires rendered-browser review": 0,
     "excluded": 0,
     "superseded": 0
   },
-  "next_pending_source_url": "https://nmroads.com",
+  "next_pending_source_url": "https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources",
   "records": [
     {
       "candidate_id": "src-a6a63111f9b4ba00",
@@ -271,15 +271,18 @@
       "title": "Road Conditions",
       "agency": "NMDOT",
       "canonical_page": "content/maps/maps.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-nmroads-2026-08-25-crawl.json",
+      "discovered_documents": 1,
+      "archived_documents": 1,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "No additional public PDF, spreadsheet, plan, or downloadable report was exposed by the relevant public interface.",
+        "Rendered map controls and public application routes reviewed; live operational layers, GeoJSON feed, and public user guide reconciled.",
+        "The September 2024 public user guide was preserved byte-for-byte in R2; the live GeoJSON feed remains linked at its authoritative endpoint."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
+      "updated_at": "2026-08-25T19:53:25.0066321Z"
     },
     {
       "candidate_id": "src-283a646fce537c4d",
@@ -287,15 +290,18 @@
       "title": "Defense Community Infrastructure Program",
       "agency": "U.S. Department of War Office of Local Defense Community Cooperation",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-oldcc-dcip-2026-08-25.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Existing Kirtland project entry already preserves the City application and links the federal program status.",
+        "Recheck after FY 2026 grant awards are announced.",
+        "Rendered FY 2026 program page and relevant descendants reviewed; no public FY 2026 attachment or additional Albuquerque-specific document is currently exposed."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
+      "updated_at": "2026-08-25T19:54:25.8014734Z"
     },
     {
       "candidate_id": "src-f81c048564bd8a31",
@@ -303,15 +309,18 @@
       "title": "Bernalillo County Bikeways",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/bicycling/bike-maps.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-bernco-bikeways-service-2026-08-25.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "ArcGIS root and layer 191 reviewed through official REST metadata and query endpoints.",
+        "Existing direct-map and ArcGIS Data links are correctly paired; no static attachment was exposed.",
+        "The live feature layer supports JSON, GeoJSON, and PBF and contains facility attributes useful for analysis."
       ],
       "created_at": "2026-08-25T01:12:22.4497089Z",
-      "updated_at": "2026-08-25T01:12:22.4497089Z"
+      "updated_at": "2026-08-25T19:55:23.499694Z"
     },
     {
       "candidate_id": "src-855247cc6565ec23",
@@ -319,15 +328,18 @@
       "title": "Bernalillo County Comprehensive Plan Development Areas",
       "agency": "Bernalillo County",
       "canonical_page": "content/maps/maps.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-bernco-comprehensive-plan-development-areas-service-2026-08-25.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Existing direct-map and separate ArcGIS Data links are correctly paired.",
+        "No static document or attachment was exposed by the service.",
+        "Official ArcGIS root and every published layer reviewed with the deterministic service-audit script."
       ],
       "created_at": "2026-08-25T01:12:22.4497089Z",
-      "updated_at": "2026-08-25T01:12:22.4497089Z"
+      "updated_at": "2026-08-25T19:57:23.8943396Z"
     },
     {
       "candidate_id": "src-7753d0c7a7ed7f15",
@@ -335,15 +347,18 @@
       "title": "Bernalillo County Multi-Use Trails",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/bicycling/bike-maps.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-bernco-multi-use-trails-service-2026-08-25.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Existing direct-map and separate ArcGIS Data links are correctly paired.",
+        "No static document or attachment was exposed by the service.",
+        "Official ArcGIS root and every published layer reviewed with the deterministic service-audit script."
       ],
       "created_at": "2026-08-25T01:12:22.4497089Z",
-      "updated_at": "2026-08-25T01:12:22.4497089Z"
+      "updated_at": "2026-08-25T19:57:23.9673707Z"
     },
     {
       "candidate_id": "src-8e7eec0616dee3f7",
@@ -351,15 +366,18 @@
       "title": "Bernalillo County Open Space Holdings",
       "agency": "Bernalillo County",
       "canonical_page": "content/public-works/parks-recreation.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-bernco-open-space-service-2026-08-25.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Existing direct-map and separate ArcGIS Data links are correctly paired.",
+        "No static document or attachment was exposed by the service.",
+        "Official ArcGIS root and every published layer reviewed with the deterministic service-audit script."
       ],
       "created_at": "2026-08-25T01:12:22.4497089Z",
-      "updated_at": "2026-08-25T01:12:22.4497089Z"
+      "updated_at": "2026-08-25T19:57:24.0098417Z"
     },
     {
       "candidate_id": "src-e45ef8b986f98b89",
@@ -384,15 +402,18 @@
       "title": "Rail Runner Rail and Bus Connections Guide",
       "agency": "MRCOG",
       "canonical_page": "content/transportation/transit/rail-runner.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-rio-metro-stations-connections-2026-08-25.json",
+      "discovered_documents": 2,
+      "archived_documents": 2,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "No additional high-value static document requires upload.",
+        "Station pages, connections guide, system map, schedules, trip planner, and service links reconciled against the existing graph crawl.",
+        "The current 2025-2026 connections guide and 2023 system map are already archived and linked with source-of-truth pages."
       ],
       "created_at": "2026-08-25T01:12:22.4497089Z",
-      "updated_at": "2026-08-25T01:12:22.4497089Z"
+      "updated_at": "2026-08-25T19:58:14.8554264Z"
     },
     {
       "candidate_id": "src-10285a23d1622d9c",
@@ -400,15 +421,18 @@
       "title": "Paseo del Norte High-Capacity Transit Study: Alternatives Analysis Report",
       "agency": "MRCOG",
       "canonical_page": "content/transportation/transit/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-rio-metro-publications-2026-08-25.json",
+      "discovered_documents": 15,
+      "archived_documents": 10,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Current publication links were compared with the graph crawl, inventory, Hugo content, and R2 objects.",
+        "Intermediate consolidation presentations and draft materials remain excluded because the archived final report supersedes them.",
+        "Two previously cataloged but unimplemented 2023 zero-emission documents were reviewed, archived, and added as a paired site section."
       ],
       "created_at": "2026-08-25T01:12:22.4497089Z",
-      "updated_at": "2026-08-25T01:12:22.4497089Z"
+      "updated_at": "2026-08-25T20:02:44.211575Z"
     },
     {
       "candidate_id": "src-faed9c62872a8ef2",
@@ -416,15 +440,18 @@
       "title": "Rail Runner Operations and Maintenance Facility Fact Sheet",
       "agency": "MRCOG",
       "canonical_page": "content/transportation/transit/rail-runner.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-rio-metro-operations-maintenance-facility-2026-08-25.json",
+      "discovered_documents": 3,
+      "archived_documents": 3,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "No other project attachment remains unresolved on the retained page.",
+        "The complete project-document lineage was reconciled: 2016 assessment, 2022 conceptual design, and 2026 fact sheet.",
+        "The two older technical reports were promoted from pending review, archived byte-for-byte, and added beneath the current fact sheet."
       ],
       "created_at": "2026-08-25T01:12:22.4497089Z",
-      "updated_at": "2026-08-25T01:12:22.4497089Z"
+      "updated_at": "2026-08-25T20:06:08.4705298Z"
     },
     {
       "candidate_id": "src-fe3273f1de13882d",
@@ -432,15 +459,17 @@
       "title": "Unser and Paseo project website",
       "agency": "Other authoritative source",
       "canonical_page": "content/transportation/roadway-projects/current.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-unser-paseo-2026-08-25-crawl.json",
+      "discovered_documents": 8,
+      "archived_documents": 8,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Archived five project documents and three watershed-plan volumes; added the current project-specific contact and canonicalized the watershed volumes under stormwater drainage.",
+        "Rendered-browser review exhausted the public project, resources, design, schedule, construction, FAQ, news, and contact pathways."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
+      "updated_at": "2026-08-25T20:21:02.6185452Z"
     },
     {
       "candidate_id": "src-1ef9b5996dd6c8ad",
@@ -1285,6 +1314,22 @@
       "updated_at": "2026-08-25T01:12:41.9017369Z"
     },
     {
+      "candidate_id": "src-b369bd65c787365b",
+      "source_url": "https://www.cabq.gov/economicdevelopment/the-scale-of-the-prize-community-benefits-of-transit-oriented-development",
+      "title": "Official City project page and marked draft",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/transportation/transit/abq-ride.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-08-26T16:35:48.5793175Z",
+      "updated_at": "2026-08-26T16:35:48.5793175Z"
+    },
+    {
       "candidate_id": "src-3ade5bdf7fdad5f2",
       "source_url": "https://www.cabq.gov/fire/copy_of_reports",
       "title": "Albuquerque Fire Rescue Annual Report, 2018",
@@ -1735,6 +1780,22 @@
       "updated_at": "2026-08-25T01:12:22.4497089Z"
     },
     {
+      "candidate_id": "src-b2930455212d0763",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/632194-west-central-roll-plot_7-9-26.pdf/view",
+      "title": "632194 west central roll plot 7 9 26.pdf",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/transportation/roadway-projects/_index.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-08-26T16:35:48.5793175Z",
+      "updated_at": "2026-08-26T16:35:48.5793175Z"
+    },
+    {
       "candidate_id": "src-26eec5c4fc575e19",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/7-bar-loop-speed-and-volume-final-11-23-2021.pdf/view",
       "title": "7 Bar Loop Speed and Volume Study",
@@ -1765,6 +1826,22 @@
       ],
       "created_at": "2026-08-25T01:12:22.4497089Z",
       "updated_at": "2026-08-25T01:12:22.4497089Z"
+    },
+    {
+      "candidate_id": "src-ee845d073ea89d81",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/abq-west-meeting-boards_3final-print_.pdf/view",
+      "title": "abq west meeting boards 3final print .pdf",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/transportation/roadway-projects/_index.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-08-26T16:35:48.5793175Z",
+      "updated_at": "2026-08-26T16:35:48.5793175Z"
     },
     {
       "candidate_id": "src-5244dc0ca1c18e95",
@@ -3038,6 +3115,22 @@
       "updated_at": "2026-08-20T19:09:19.7812179Z"
     },
     {
+      "candidate_id": "src-0ab89b3f6a6914ec",
+      "source_url": "https://www.cabq.gov/transit/documents/abq_paratransit_outbrief-110111.pptx",
+      "title": "Official City PowerPoint",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/transportation/transit/sun-van.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-08-26T16:35:48.5793175Z",
+      "updated_at": "2026-08-26T16:35:48.5793175Z"
+    },
+    {
       "candidate_id": "src-fbef44f233c29736",
       "source_url": "https://www.cabq.gov/transit/documents/abq_paratransit_outbrief-110111.pptx/view",
       "title": "ABQ RIDE Sun Van Compliance Review Briefing",
@@ -3068,22 +3161,6 @@
       ],
       "created_at": "2026-08-25T01:12:22.4497089Z",
       "updated_at": "2026-08-25T01:12:22.4497089Z"
-    },
-    {
-      "candidate_id": "src-18d9a974c5137e0b",
-      "source_url": "https://www.cabq.gov/transit/paratransit-service",
-      "title": "City paratransit service",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/transportation/transit/sun-van.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
     },
     {
       "candidate_id": "src-1bad32082e26fb6a",
@@ -3132,6 +3209,22 @@
       ],
       "created_at": "2026-08-25T01:12:22.4497089Z",
       "updated_at": "2026-08-25T01:12:22.4497089Z"
+    },
+    {
+      "candidate_id": "src-7ceade7af32fa28b",
+      "source_url": "https://www.cabq.gov/transit/services/paratransit-service/paratransit-service/resolveuid/585c81b1004f48dfa5ea3ed8583f86a0",
+      "title": "Official City PDF",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/transportation/transit/sun-van.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-08-26T16:35:48.5793175Z",
+      "updated_at": "2026-08-26T16:35:48.5793175Z"
     },
     {
       "candidate_id": "src-5fd74920802643e4",
@@ -4159,6 +4252,119 @@
       ],
       "created_at": "2026-08-25T01:12:22.4497089Z",
       "updated_at": "2026-08-25T01:12:22.4497089Z"
+    },
+    {
+      "candidate_id": "src-3ff7d0de5c42b98d",
+      "source_url": "https://www.upgradeunserpaseo.com/resources/",
+      "title": "Unser and Paseo Phase 1 Construction Fact Sheet - Spanish",
+      "agency": "City of Albuquerque / New Mexico Department of Transportation",
+      "canonical_page": "content/city-data/budget-spending.md",
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/retained-unser-paseo-2026-08-25-crawl.json",
+      "discovered_documents": 8,
+      "archived_documents": 8,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Reviewed as part of the exhaustive rendered-browser crawl of the Unser-Paseo project website and its Resources pathway."
+      ],
+      "created_at": "2026-08-26T16:35:48.5793175Z",
+      "updated_at": "2026-08-26T16:35:48.8722335Z"
+    },
+    {
+      "candidate_id": "src-69823eb213e3d218",
+      "source_url": "https://static.wixstatic.com/media/94874d_53a9b8436d86490c80c05bc888be3cbf~mv2.png",
+      "title": "Official Project Image",
+      "agency": "Other authoritative source",
+      "canonical_page": "content/transportation/roadway-projects/_index.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-08-26T16:35:48.5793175Z",
+      "updated_at": "2026-08-26T16:35:48.5793175Z"
+    },
+    {
+      "candidate_id": "src-6a9b9f0ca2394a9f",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12239706/",
+      "title": "Official City GAATC Project Update Record",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/transportation/bicycling/projects/_index.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-08-26T16:35:48.5793175Z",
+      "updated_at": "2026-08-26T16:35:48.5793175Z"
+    },
+    {
+      "candidate_id": "src-85a073b969906b0e",
+      "source_url": "https://onbase.cabq.gov/PublicAccess/api/Document/12246762/",
+      "title": "Official City PDF",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/public-works/parks-recreation.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-08-26T16:35:48.5793175Z",
+      "updated_at": "2026-08-26T16:35:48.5793175Z"
+    },
+    {
+      "candidate_id": "src-86e1580c015c4502",
+      "source_url": "https://onbase.cabq.gov/PublicAccess/api/Document/12246766/",
+      "title": "Official City PDF",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/public-works/parks-recreation.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-08-26T16:35:48.5793175Z",
+      "updated_at": "2026-08-26T16:35:48.5793175Z"
+    },
+    {
+      "candidate_id": "src-5b61308fa4fd2e2e",
+      "source_url": "https://onbase.cabq.gov/PublicAccess/api/Document/12246771/",
+      "title": "Official City PDF",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/public-works/parks-recreation.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-08-26T16:35:48.5793175Z",
+      "updated_at": "2026-08-26T16:35:48.5793175Z"
+    },
+    {
+      "candidate_id": "src-40c93f162b4d763a",
+      "source_url": "https://onbase.cabq.gov/PublicAccess/api/Document/12246817/",
+      "title": "Official City PDF",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/public-works/parks-recreation.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-08-26T16:35:48.5793175Z",
+      "updated_at": "2026-08-26T16:35:48.5793175Z"
     }
   ]
 }

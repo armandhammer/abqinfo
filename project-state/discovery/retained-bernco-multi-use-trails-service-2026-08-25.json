@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "source_url": "https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/Multi_Use_Trails/MapServer",
+  "title": "Bernalillo County Multi-Use Trails",
+  "agency": "Bernalillo County",
+  "retrieved_at": "2026-08-25T19:57:11.5127758Z",
+  "discovery_method": "Deterministic ArcGIS REST service, layer-metadata, and feature-count review",
+  "crawl_status": "relevant ArcGIS dependency frontier exhausted",
+  "proposed_canonical_page": "content/transportation/bicycling/bike-maps.md",
+  "service": {
+    "arcgis_version": 11.5,
+    "description": "This line feature class is Bernalillo County-maintained multi-use trails in the unincorporated area of Bernalillo County, NM. Motorized traffic is excluded from these trails.",
+    "service_description": "This line feature class is Bernalillo County-maintained multi-use trails in the unincorporated area of Bernalillo County, NM. Motorized traffic is excluded from these trails.",
+    "copyright": "Jill Williams, GIS Program/Bernalillo County Planning & Development Services; \nRichard Meadows, Transportation Planning Program/Bernalillo County Public Works Division",
+    "capabilities": [
+      "Map",
+      "Query",
+      "Data"
+    ],
+    "supported_query_formats": [
+      "JSON",
+      "geoJSON",
+      "PBF"
+    ]
+  },
+  "layers": [
+    {
+      "id": 190,
+      "name": "Multi-Use Trails",
+      "type": "Feature Layer",
+      "geometry_type": "esriGeometryPolyline",
+      "description": "This line feature class is Bernalillo County-maintained multi-use trails in the unincorporated area of Bernalillo County, NM. Motorized traffic is excluded from these trails.",
+      "feature_count_at_review": 175,
+      "capabilities": [
+        "Map",
+        "Query",
+        "Data"
+      ],
+      "supported_query_formats": [
+        "JSON",
+        "geoJSON",
+        "PBF"
+      ],
+      "fields": [
+        {
+          "name": "OBJECTID",
+          "alias": "OBJECTID",
+          "type": "esriFieldTypeOID"
+        },
+        {
+          "name": "SHAPE",
+          "alias": "SHAPE",
+          "type": "esriFieldTypeGeometry"
+        },
+        {
+          "name": "Trail",
+          "alias": "Trail",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "FromTermini",
+          "alias": "FromTermini",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "ToTermini",
+          "alias": "ToTermini",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "Corridor",
+          "alias": "Corridor",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "CorridorSide",
+          "alias": "CorridorSide",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "TrailWidth",
+          "alias": "TrailWidth",
+          "type": "esriFieldTypeSingle"
+        },
+        {
+          "name": "ShyWidth",
+          "alias": "ShyWidth",
+          "type": "esriFieldTypeSingle"
+        },
+        {
+          "name": "PercentGrade",
+          "alias": "PercentGrade",
+          "type": "esriFieldTypeSingle"
+        },
+        {
+          "name": "PavementType",
+          "alias": "PavementType",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "PavementCondition",
+          "alias": "PavementCondition",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "MaintainedBy",
+          "alias": "MaintainedBy",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "InspectionDate",
+          "alias": "InspectionDate",
+          "type": "esriFieldTypeDate"
+        },
+        {
+          "name": "GISComments",
+          "alias": "GISComments",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "InternalMaintenance",
+          "alias": "InternalMaintenance",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "Landscaping",
+          "alias": "Landscaping",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "SHAPE_Length",
+          "alias": "SHAPE_Length",
+          "type": "esriFieldTypeDouble"
+        }
+      ]
+    }
+  ],
+  "archival_reconciliation": {
+    "new_uploads_required": 0,
+    "reason": "This is a maintained live ArcGIS service rather than a static authoritative document. Preserve direct map and data-service links; archive a separate source document only if the service exposes one."
+  },
+  "site_action": "No content change required; ABQInfo already pairs a direct ArcGIS Map Viewer with the REST service as ArcGIS Data.",
+  "processing_notes": [
+    "The root service and every published sublayer were reviewed through official REST metadata.",
+    "Feature counts are audit observations and are not fixed claims for ABQInfo content.",
+    "No PDF, spreadsheet, document attachment, or static map is implied by an ArcGIS service unless separately recorded."
+  ]
+}

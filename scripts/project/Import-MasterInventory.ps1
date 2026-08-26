@@ -30,6 +30,7 @@ function Get-Agency([string]$Url) {
   if ($Url -match 'bernco\.gov') { return 'Bernalillo County' }
   if ($Url -match 'mrcog-nm\.gov|mrcogshare\.org|riometro\.org|mrmpo\.nm\.tipviewer\.pmgpro\.com') { return 'MRCOG' }
   if ($Url -match 'dot\.nm\.gov|nmroads\.com|stipviewer') { return 'NMDOT' }
+  if ($Url -match 'upgradeunserpaseo\.com') { return 'City of Albuquerque / New Mexico Department of Transportation' }
   if ($Url -match 'files\.abqinfo\.com') { return 'Unreconciled archived source' }
   return 'Other authoritative source'
 }
@@ -84,7 +85,7 @@ function Test-DiscoveryCandidate([string]$Agency, [string]$Url) {
     'cabq' { return $uriHost -match '(^|\.)(cabq\.gov|abq-zone\.com|arcgis\.com)$' }
     'bernco' { return $uriHost -match '(^|\.)(bernco\.gov)$' }
     'mrcog' { return $uriHost -match '(^|\.)(mrcog-nm\.gov|mrcogshare\.org|mrcogmaps\.org|riometro\.org|arcgis\.com|nm\.tipviewer\.pmgpro\.com)$' }
-    'nmdot' { return $uriHost -match '(^|\.)(dot\.nm\.gov|nmroads\.com|pmgpro\.com|rtsclients\.com)$' }
+    'nmdot' { return $uriHost -match '(^|\.)(dot\.nm\.gov|nmroads\.com|pmgpro\.com|rtsclients\.com|upgradeunserpaseo\.com)$' }
     'rio metro / nmrx / regional rail' { return $uriHost -match '(^|\.)(riometro\.org|mrcog-nm\.gov|dot\.nm\.gov|rtsclients\.com|arcgis\.com)$' }
     default { return $false }
   }
@@ -175,8 +176,12 @@ function Merge-Record([System.Collections.IDictionary]$Incoming) {
     $existing.implementation_locations = @($locations | Where-Object { $_ } | Sort-Object -Unique)
   }
   if ($Incoming.description) {
-    $existing.description = $Incoming.description
-    $existing.description_word_count = $Incoming.description_word_count
+    $incomingDescriptionValid = $Incoming.description_word_count -ge 20 -and $Incoming.description_word_count -le 50
+    $existingDescriptionValid = $existing.description_word_count -ge 20 -and $existing.description_word_count -le 50
+    if ($incomingDescriptionValid -or -not $existingDescriptionValid) {
+      $existing.description = $Incoming.description
+      $existing.description_word_count = $Incoming.description_word_count
+    }
   }
   if ($Incoming.referring_urls) {
     $existing.referring_urls = @(@(Get-PropertyValue $existing 'referring_urls') + @($Incoming.referring_urls) | Where-Object { $_ } | Sort-Object -Unique)
@@ -206,16 +211,39 @@ foreach ($file in Get-ChildItem content -Recurse -Filter *.md) {
       $record.implementation_locations = @($record.implementation_location)
       $record.proposed_canonical_page = $record.implementation_location
       $baseIndent = ([regex]::Match($lines[$index], '^\s*')).Value.Length
+
+      # A source-of-truth link embedded at the end of an item's prose inherits
+      # that item's description. Keep only the prose before the first link so
+      # labels such as "Official City PDF" are not counted as description text.
+      $inlineProse = Get-PlainText (($lines[$index] -split '\[[^\]]+\]\(https?://', 2)[0] -replace '^\s*[-*+]\s+', '')
+      if ((Get-WordCount $inlineProse) -ge 20 -and (Get-WordCount $inlineProse) -le 50) {
+        $record.description = $inlineProse
+        $record.description_word_count = Get-WordCount $inlineProse
+      }
       for ($next = $index + 1; $next -lt [Math]::Min($lines.Count, $index + 6); $next++) {
         if ([string]::IsNullOrWhiteSpace($lines[$next])) { continue }
         $nextIndent = ([regex]::Match($lines[$next], '^\s*')).Value.Length
-        if ($lines[$next] -match '\]\(https?://') { break }
         if ($nextIndent -le $baseIndent -and $lines[$next] -match '^\s*[-*+#]') { break }
-        $candidateDescription = Get-PlainText ($lines[$next] -replace '^\s*[-*+]\s+', '')
-        if ($candidateDescription -and $candidateDescription -notmatch '^#') {
+        $candidateDescription = Get-PlainText ((($lines[$next] -split '\[[^\]]+\]\(https?://', 2)[0]) -replace '^\s*[-*+]\s+', '')
+        $candidateWords = Get-WordCount $candidateDescription
+        if ($candidateDescription -and $candidateDescription -notmatch '^#' -and $candidateWords -ge 20 -and $candidateWords -le 50) {
           $record.description = $candidateDescription
-          $record.description_word_count = Get-WordCount $candidateDescription
+          $record.description_word_count = $candidateWords
           break
+        }
+      }
+      if (-not $record.description) {
+        for ($previous = $index - 1; $previous -ge [Math]::Max(0, $index - 6); $previous--) {
+          if ([string]::IsNullOrWhiteSpace($lines[$previous])) { continue }
+          if ($lines[$previous] -match '^\s*#') { break }
+          $candidateDescription = Get-PlainText ((($lines[$previous] -split '\[[^\]]+\]\(https?://', 2)[0]) -replace '^\s*[-*+]\s+', '')
+          $candidateWords = Get-WordCount $candidateDescription
+          if ($candidateWords -ge 20 -and $candidateWords -le 50) {
+            $record.description = $candidateDescription
+            $record.description_word_count = $candidateWords
+            break
+          }
+          if ($lines[$previous] -match '^\s*[-*+]\s+\[') { break }
         }
       }
       Merge-Record $record
@@ -445,6 +473,44 @@ if (Test-Path -LiteralPath $QualityExclusionsPath) {
       $match.implementation_location = $null
       $match.implementation_locations = @()
       $match.updated_at = (Get-Date).ToUniversalTime().ToString('o')
+    }
+  }
+}
+
+# A content link to an R2 URL and its provenance-rich discovery record may have
+# different stable IDs. Consolidate their placement onto the best documented
+# record so the archive is represented once without losing authoritative-source
+# metadata, checksums, or validated state.
+$r2Groups = @($records.Values | Where-Object r2_url | Group-Object r2_url | Where-Object Count -gt 1)
+foreach ($group in $r2Groups) {
+  $members = @($group.Group)
+  $aliases = @($members | Where-Object {
+    -not $_.source_url -and -not $_.checksum_sha256 -and -not $_.local_path -and
+    $_.provenance_status -eq 'unreconciled archived copy'
+  })
+  $documented = @($members | Where-Object { $_.id -notin @($aliases.id) })
+  if (-not $aliases.Count -or -not $documented.Count) { continue }
+  $locations = @($members | ForEach-Object { @($_.implementation_locations) + @($_.implementation_location) } | Where-Object { $_ } | Sort-Object -Unique)
+  foreach ($canonical in $documented) {
+    if ($locations.Count) {
+      $canonical.implementation_locations = $locations
+      $canonical.implementation_location = $locations[0]
+      $canonical.proposed_canonical_page = $locations[0]
+      if ($canonical.status -in @('pending review','approved for addition','downloaded','parsed','description drafted','placement assigned')) {
+        $canonical.status = 'implemented'
+      }
+    }
+    if ($members | Where-Object cross_listing_approved) { $canonical.cross_listing_approved = $true }
+  }
+  $preferredCanonical = @($documented | Sort-Object @{Expression={ if ($_.status -eq 'validated') { 0 } else { 1 } }}, id | Select-Object -First 1)[0]
+  foreach ($alias in $aliases) {
+    if ($alias.status -notin @('excluded','superseded','blocked')) {
+      $alias.status = 'duplicate'
+      $alias.exclusion_reason = "Duplicate R2 representation of canonical candidate $($preferredCanonical.id)."
+      $alias.validation_status = 'duplicate archive representation consolidated'
+      $alias.implementation_location = $null
+      $alias.implementation_locations = @()
+      $alias.updated_at = (Get-Date).ToUniversalTime().ToString('o')
     }
   }
 }
