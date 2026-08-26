@@ -22,7 +22,8 @@ foreach ($item in @($plan.items)) {
   if (-not $candidate.source_url -or -not $candidate.direct_file_url) { throw "Authoritative source provenance is incomplete for '$($item.id)'." }
   if ([string]$candidate.provenance_status -notlike 'official*') { throw "Candidate '$($item.id)' is not eligible for authoritative validation." }
   $page = Get-Content -Raw -Encoding UTF8 -LiteralPath $item.proposed_canonical_page
-  if ($page -notlike "*$($candidate.r2_url)*" -or $page -notlike "*$($candidate.direct_file_url)*") { throw "Archive or official-source link is missing from the implementation page for '$($item.id)'." }
+  $officialLinkPresent = $page -like "*$($candidate.direct_file_url)*" -or $page -like "*$($candidate.source_url)*"
+  if ($page -notlike "*$($candidate.r2_url)*" -or -not $officialLinkPresent) { throw "Archive or official-source link is missing from the implementation page for '$($item.id)'." }
 
   $candidate.status = 'validated'
   $candidate.description = [string]$item.description

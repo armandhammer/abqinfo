@@ -32,6 +32,14 @@ The New Mexico Rail Runner Express connects Belen, Albuquerque, and Santa Fe. Th
 
   Summarizes the planned Downtown Albuquerque facility replacing Rail Runner's aging outdoor maintenance site, with an indoor repair shop, inspection and storage tracks, offices, environmental controls, improved working conditions, and capacity for more reliable service. [Official project page](https://riometro.org/510/Rail-Runner-Operation-Maintenance-Facili)
 
+- [Rail Runner Operations and Maintenance Facility Conceptual Design Report (2022)](https://files.abqinfo.com/transportation/transit/rail-runner/rio-metro-operations-maintenance-facility-conceptual-design-2022.pdf)
+
+  Develops the phased design for a modern Downtown Albuquerque Rail Runner maintenance campus, documenting existing deficiencies, operational needs, fleet projections, space requirements, site alternatives, repair and inspection functions, offices, storage, and conceptual drawings. [Official project page](https://riometro.org/510/Rail-Runner-Operation-Maintenance-Facili)
+
+- [Rail Runner Operations and Maintenance Facility Assessment (2016)](https://files.abqinfo.com/transportation/transit/rail-runner/rio-metro-operations-maintenance-facility-assessment-2016.pdf)
+
+  Documents the original Downtown Albuquerque Rail Runner yard's undersized outdoor maintenance canopy, aging leased warehouse and offices, servicing inefficiencies, safety constraints, fleet needs, and recommendations that established the case for a modern operations facility. [Official project page](https://riometro.org/510/Rail-Runner-Operation-Maintenance-Facili)
+
 - [Rio Metro Double Track Study (2022)](https://files.abqinfo.com/transportation/transit/rail-runner/rio-metro-double-track-study-2022.pdf)
 
   Identifies passing sidings, double-track segments, station platforms, phasing, and coordination needed to support more frequent and reliable all-day Rail Runner service, including regular schedules and greater resilience when trains are delayed. [Official Rio Metro publications](https://riometro.org/381/Rio-Metro-Publications)

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "source_url": "https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/ComprehensivePlanDevelopmentAreas/MapServer",
+  "title": "Bernalillo County Comprehensive Plan Development Areas",
+  "agency": "Bernalillo County",
+  "retrieved_at": "2026-08-25T19:57:09.9553135Z",
+  "discovery_method": "Deterministic ArcGIS REST service, layer-metadata, and feature-count review",
+  "crawl_status": "relevant ArcGIS dependency frontier exhausted",
+  "proposed_canonical_page": "content/maps/maps.md",
+  "service": {
+    "arcgis_version": 11.5,
+    "description": "This polygon feature class is county development areas within the adopted Albuquerque/Bernalillo County Comprehensive Plan in unincorporated Bernalillo County, NM.",
+    "service_description": "<div style='text-align:Left;'><div><div><p><span>This polygon feature class is county development areas within the adopted Albuquerque/Bernalillo County Comprehensive Plan in unincorporated Bernalillo County, NM.</span></p></div></div></div>",
+    "copyright": "GIS Technology Section/Bernalillo County Planning & Development Services",
+    "capabilities": [
+      "Map",
+      "Query",
+      "Data"
+    ],
+    "supported_query_formats": [
+      "JSON",
+      "geoJSON",
+      "PBF"
+    ]
+  },
+  "layers": [
+    {
+      "id": 317,
+      "name": "ComprehensivePlanDevelopmentAreas",
+      "type": "Feature Layer",
+      "geometry_type": "esriGeometryPolygon",
+      "description": "This polygon feature class is county development areas within the adopted Albuquerque/Bernalillo County Comprehensive Plan in unincorporated Bernalillo County, NM.",
+      "feature_count_at_review": 413,
+      "capabilities": [
+        "Map",
+        "Query",
+        "Data"
+      ],
+      "supported_query_formats": [
+        "JSON",
+        "geoJSON",
+        "PBF"
+      ],
+      "fields": [
+        {
+          "name": "OBJECTID",
+          "alias": "OBJECTID",
+          "type": "esriFieldTypeOID"
+        },
+        {
+          "name": "SHAPE",
+          "alias": "SHAPE",
+          "type": "esriFieldTypeGeometry"
+        },
+        {
+          "name": "FID_ComprehensivePlanDevelopmentAreasSP_1",
+          "alias": "FID_ComprehensivePlanDevelopmentAreasSP_1",
+          "type": "esriFieldTypeInteger"
+        },
+        {
+          "name": "Plan",
+          "alias": "Plan",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "DevelopmentArea",
+          "alias": "DevelopmentArea",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "ORIG_FID",
+          "alias": "ORIG_FID",
+          "type": "esriFieldTypeInteger"
+        },
+        {
+          "name": "FID_CitesCommunitiesCentersCorridors",
+          "alias": "FID_CitesCommunitiesCentersCorridors",
+          "type": "esriFieldTypeInteger"
+        },
+        {
+          "name": "Name",
+          "alias": "Name",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "SHAPE_Length",
+          "alias": "SHAPE_Length",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "name": "SHAPE_Area",
+          "alias": "SHAPE_Area",
+          "type": "esriFieldTypeDouble"
+        }
+      ]
+    }
+  ],
+  "archival_reconciliation": {
+    "new_uploads_required": 0,
+    "reason": "This is a maintained live ArcGIS service rather than a static authoritative document. Preserve direct map and data-service links; archive a separate source document only if the service exposes one."
+  },
+  "site_action": "No content change required; ABQInfo already pairs a direct ArcGIS Map Viewer with the REST service as ArcGIS Data.",
+  "processing_notes": [
+    "The root service and every published sublayer were reviewed through official REST metadata.",
+    "Feature counts are audit observations and are not fixed claims for ABQInfo content.",
+    "No PDF, spreadsheet, document attachment, or static map is implied by an ArcGIS service unless separately recorded."
+  ]
+}

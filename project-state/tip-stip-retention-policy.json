@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-08-25T00:00:00-06:00",
+  "scope": [
+    "MRMPO Transportation Improvement Program (TIP)",
+    "NMDOT Statewide Transportation Improvement Program (STIP)"
+  ],
+  "policy": "Preserve every formally approved amendment or administrative modification document. Check live TIP and STIP data monthly, but archive a complete generated snapshot only when the underlying data has changed. Retain quarterly snapshots and additional snapshots for major changes; do not retain redundant monthly exports whose data is unchanged or whose changes are trivial and already documented by a formal revision record.",
+  "requirements": {
+    "keep_official_source_of_truth_link": true,
+    "preserve_formal_revision_documents": true,
+    "monthly_change_detection": true,
+    "archive_unchanged_monthly_snapshot": false,
+    "retain_quarterly_snapshots": true,
+    "retain_major_change_snapshots": true,
+    "record_snapshot_diffs": true,
+    "generated_date_is_not_revision_date": true,
+    "require_revision_evidence_for_revision_label": true
+  },
+  "change_detection": {
+    "compare": [
+      "file checksum",
+      "project identifiers",
+      "project additions and removals",
+      "funding and schedule fields",
+      "revision or approval metadata"
+    ],
+    "notes": "An on-demand PDF export may have a new generated date without representing a newly approved revision. Describe it as a dated database snapshot unless the official source identifies a revision or approval action."
+  },
+  "baseline_observation": {
+    "date": "2026-08-25",
+    "program": "MRMPO FFY 2024-2029 TIP",
+    "result": "The August 25 generated snapshot differed from the July snapshot by one added project, A302525, NM 304 Replacement of Bridge 3303, with $3,653,287 programmed in Valencia County; no projects were removed.",
+    "revision_context": "MRMPO Revision 79 was Approved with Exceptions and Revision 80 was Pending Public Comment, but the generated snapshot was not explicitly identified as Revision 79."
+  }
+}

@@ -25,7 +25,9 @@ $record.updated_at = (Get-Date).ToUniversalTime().ToString('o')
 $counts = [ordered]@{}
 foreach ($status in @($queue.allowed_statuses)) { $counts[[string]$status] = @($queue.records | Where-Object audit_status -eq $status).Count }
 $queue.counts = [pscustomobject]$counts
-$next = @($queue.records | Where-Object audit_status -eq 'pending descendant crawl' | Sort-Object source_url | Select-Object -First 1)
+$next = @($queue.records | Where-Object audit_status -eq 'pending descendant crawl' | Sort-Object `
+  @{Expression={ if ($_.source_url -match 'onbase\.cabq\.gov') { 2 } elseif ($_.source_url -match '(?i)\.(png|jpe?g|gif|webp)(?:[?#]|$)') { 1 } else { 0 } }}, `
+  source_url | Select-Object -First 1)
 $queue.next_pending_source_url = if ($next.Count) { [string]$next[0].source_url } else { $null }
 $queue.generated_at = (Get-Date).ToUniversalTime().ToString('o')
 

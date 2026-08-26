@@ -115,6 +115,14 @@ Interactive maps of city data and infrastructure.
 
   Provides NMDOT's live statewide traveler map with current road conditions, closures, construction, traffic cameras, weather impacts, and alerts useful for trips on I-25, I-40, and other Albuquerque-area state highways.
 
+- [NMRoads Public User Guide (September 2024)](https://files.abqinfo.com/maps/nmdot-nmroads-public-user-guide-2024.pdf) <small>[Official Source](https://nmroads.com/NMRoadsPublicUserGuide.pdf)</small>
+
+  Explains how to use NMDOT's traveler map for road conditions, closures, construction, cameras, message signs, traffic, rest areas, weather, saved views, road-issue reporting, and hands-free alerts.
+
+- [NMRoads Live GeoJSON Feed](https://nmroads.com/nmroads.json)
+
+  Provides NMRoads' current machine-readable road events for reuse in maps and analysis, including closures, crashes, construction, lane restrictions, weather-related conditions, alerts, and special events.
+
 ## Regional Active-Transportation Maps
 
 - [Pedestrian Level of Traffic Stress Map](https://mrmpo.maps.arcgis.com/apps/instant/sidebar/index.html?appid=577561bcf1534cf5bcf105686cb397df)
