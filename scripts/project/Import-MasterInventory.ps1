@@ -67,7 +67,8 @@ function Get-NormalizedDiscoveryUrl([string]$Url) {
 }
 
 function Get-RecordUrls($Record) {
-  return @($Record.source_url, $Record.direct_file_url, $Record.r2_url) |
+  $derivedR2Url = if (-not $Record.r2_url -and $Record.r2_key) { 'https://files.abqinfo.com/' + ([string]$Record.r2_key).TrimStart('/') } else { $null }
+  return @($Record.source_url, $Record.direct_file_url, $Record.r2_url, $derivedR2Url) |
     Where-Object { $_ -and $_ -match '^https?://' } |
     ForEach-Object { Get-NormalizedDiscoveryUrl ([string]$_) } |
     Sort-Object -Unique
@@ -541,6 +542,44 @@ foreach ($pending in @($records.Values | Where-Object { $_.status -in @('pending
         $pending.validation_status = 'duplicate discovery confirmed'
         $pending.updated_at = (Get-Date).ToUniversalTime().ToString('o')
     }
+}
+
+# Re-derive placement from exact links in the current Hugo tree after all
+# overrides and duplicate reconciliation. This prevents cached or broadly
+# merged R2 aliases from manufacturing phantom cross-listings.
+$contentPlacementsByUrl = @{}
+foreach ($file in Get-ChildItem content -Recurse -Filter *.md) {
+  $relativePath = $file.FullName.Substring((Get-Location).Path.Length + 1).Replace('\','/')
+  foreach ($line in Get-Content -Encoding UTF8 $file.FullName) {
+    foreach ($match in [regex]::Matches($line, '\[[^\]]+\]\((?<url>https?://[^\)\s]+)\)')) {
+      $normalizedUrl = Get-NormalizedDiscoveryUrl $match.Groups['url'].Value
+      if (-not $contentPlacementsByUrl.ContainsKey($normalizedUrl)) {
+        $contentPlacementsByUrl[$normalizedUrl] = [Collections.Generic.HashSet[string]]::new([StringComparer]::OrdinalIgnoreCase)
+      }
+      [void]$contentPlacementsByUrl[$normalizedUrl].Add($relativePath)
+    }
+  }
+}
+foreach ($record in $records.Values) {
+  $placementUrls = if ($record.r2_url) {
+    @(Get-NormalizedDiscoveryUrl ([string]$record.r2_url))
+  } elseif ($record.r2_key) {
+    @(Get-NormalizedDiscoveryUrl ('https://files.abqinfo.com/' + ([string]$record.r2_key).TrimStart('/')))
+  } elseif ($record.direct_file_url) {
+    @(Get-NormalizedDiscoveryUrl ([string]$record.direct_file_url))
+  } elseif ($record.source_url) {
+    @(Get-NormalizedDiscoveryUrl ([string]$record.source_url))
+  } else { @() }
+  $actualLocations = @(@(
+    foreach ($recordUrl in $placementUrls) {
+      if ($contentPlacementsByUrl.ContainsKey($recordUrl)) { @($contentPlacementsByUrl[$recordUrl]) }
+    }
+  ) | Where-Object { $_ } | Sort-Object -Unique)
+  if ($record.status -in @('duplicate','excluded','superseded','blocked')) { $actualLocations = @() }
+  $record.implementation_locations = @($actualLocations)
+  $record.implementation_location = if ($actualLocations.Count) { $actualLocations[0] } else { $null }
+  if ($actualLocations.Count) { $record.proposed_canonical_page = $actualLocations[0] }
+  $record.cross_listing_approved = [bool]($actualLocations.Count -gt 1)
 }
 
 foreach ($record in $records.Values) {
