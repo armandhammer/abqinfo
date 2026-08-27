@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-27T17:43:03.5116628Z",
+  "generated_at": "2026-08-27T18:01:50.0624211Z",
   "policy": "Every retained active government webpage is a document-discovery root. Recursively review relevant child pages and archive qualifying attached documents; access-controlled pages require rendered-browser review rather than silent completion.",
   "allowed_statuses": [
     "pending descendant crawl",
@@ -10,8 +10,8 @@
     "superseded"
   ],
   "counts": {
-    "pending descendant crawl": 215,
-    "crawled": 60,
+    "pending descendant crawl": 214,
+    "crawled": 61,
     "requires rendered-browser review": 0,
     "excluded": 0,
     "superseded": 0
@@ -2893,15 +2893,18 @@
       "title": "Official source: Unser Boulevard, Mariposa, and Riverview Trail Guide",
       "agency": "City of Albuquerque",
       "canonical_page": "content/transportation/bicycling/bike-maps.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/retained-source-expansion-11-decisions-2026-08-27.json",
+      "discovered_documents": 24,
+      "archived_documents": 14,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Current official page rechecked on 2026-08-27; all 24 relevant City PDF attachments reached terminal inventory states.",
+        "Fourteen unique/full/map documents are archived; abridged or alternate copies were reconciled as superseded/duplicate, and the author-biography PDF was excluded as out of scope.",
+        "No full editions are currently published for the Arroyo del Oso/Bear Canyon, Paseo del Norte/South Domingo Baca, or Del Rey/North Pino/Pino Arroyo guides, so their brief editions are canonical archives."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
+      "updated_at": "2026-08-27T18:00:50.9939667Z"
     },
     {
       "candidate_id": "src-ddbf1a1c7f09590b",
