@@ -78,6 +78,30 @@ Multi-use trails and paths in Albuquerque.
 
   [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/paseo-de-las-montanas-full-2020.pdf) · [Check for current City trail guides](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1)
 
+- [Hahn Arroyo and Paseo del Nordeste Trail Guide (2020 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/maps-guides/cabq-hahn-arroyo-paseo-del-nordeste-trail-guide-2020.pdf)
+
+  Guides riders along the three-mile Hahn Arroyo segment of Paseo del Nordeste, combining access and crossing guidance with flood-control engineering, public art, neighborhood history, parks, library connections, route mileage, photographs, and the trail’s North Diversion Channel junction.
+
+  [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/hahn-arroyo-complete-2020.pdf) · [Check for current City trail guides](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1)
+
+- [Paseo de la Mesa Trail Guide (2020 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/maps-guides/cabq-paseo-de-la-mesa-trail-guide-2020.pdf)
+
+  Guides an eight-mile ride across Albuquerque’s Northwest Mesa from the volcanoes to the Bosque, combining route directions, parking, trail connections, geology, cultural and natural history, public art, neighborhoods, and views of Petroglyph National Monument.
+
+  [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/paseo-de-la-mesa-trail-2020.pdf) · [Check for current City trail guides](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1)
+
+- [North Diversion Channel and Paseo del Nordeste Trail Guide (2020 Archived PDF, 59.96 MiB)](https://files.abqinfo.com/transportation/bicycling/maps-guides/cabq-north-diversion-channel-paseo-del-nordeste-trail-guide-2020.pdf)
+
+  Guides riders along the North Diversion Channel and Paseo del Nordeste trails from Balloon Fiesta Park to UNM, combining access and crossing directions with flood-control history, public art, parks, railroads, neighborhoods, arroyos, maps, mileage, and photographs.
+
+  [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/ndc-trail-complete-2020-1.pdf) · [Check for current City trail guides](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1)
+
+- [North Diversion Channel and Paseo del Nordeste Trail Map (2020 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/maps-guides/cabq-north-diversion-channel-paseo-del-nordeste-trail-map-2020.pdf)
+
+  Maps the North Diversion Channel Trail from UNM to Balloon Fiesta Park, showing Paseo del Nordeste, Bear Canyon, Paseo del Norte, Bosque, I-40, crossings, underpasses, streets, arroyos, and connecting multi-use trails.
+
+  [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/North%20Diversion%20Channel%20Trail%20Map.pdf) · [Check for current City trail guides](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1)
+
 ## Regional Long-Range Bikeway Network
 
 - [MRMPO Active Transportation Map Portfolio](https://mrmpo.maps.arcgis.com/apps/instant/portfolio/index.html?appid=38915e0cc1414048b27f9335302203a5)

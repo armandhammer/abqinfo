@@ -74,6 +74,18 @@ Parks and recreation facilities and programs.
 
   [Official City trail page](https://www.cabq.gov/parksandrecreation/open-space/lands/paseo-de-la-mesa-trail) · [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/paseo-de-la-mesa-trail.pdf)
 
+- [Ruth Eisenberg Trailhead and West Mesa Trail Map (2025 Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-ruth-eisenberg-west-mesa-trail-map-2025.pdf)
+
+  Maps the West Mesa Natural Trail from Ruth Eisenberg Trailhead through West Mesa Open Space, with mileage, trail surfaces, access points, nearby Petroglyph National Monument lands, geographic windows, parking, restrooms, and connections to other trailheads.
+
+  [Official City trailhead page](https://www.cabq.gov/parksandrecreation/open-space/lands/ruth-eisenberg-trailhead) · [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/2025-10-20-map-panel-west-mesa-trail-ruth-eisenberg-trailhead-1-compressed.pdf)
+
+- [Volcano View Trailhead and West Mesa Trails Map (2025; Official City PDF, 133.78 MiB)](https://www.cabq.gov/parksandrecreation/documents/2025-10-21-map-panel-west-mesa-trail-volcano-view-trailhead.pdf)
+
+  Maps the Volcano View Trail from its trailhead across West Mesa Open Space, with mileage, trail surfaces, access points, connections to Petroglyph National Monument, nearby volcanoes, parking, facilities, and links to the broader West Mesa trail network.
+
+  This unusually large original remains on the [official City trailhead page](https://www.cabq.gov/parksandrecreation/open-space/lands/volcano-view-trailhead) and is not yet archived by ABQInfo pending approval under the 100 MB storage safeguard.
+
 - [Sandia Foothills Open Space Trail Map (Revised 2006)](https://files.abqinfo.com/public-works/parks-recreation/cabq-sandia-foothills-open-space-trail-map-2006.pdf)
 
   Maps the Sandia Foothills trail network, trailheads, numbered routes, Elena Gallegos, Embudito, Bear Canyon, access streets, and the Wilderness boundary, preserving a dated field reference for historical comparison.
