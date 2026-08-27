@@ -1,14 +1,14 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-26T22:57:51.9668001Z
+Generated: 2026-08-27T15:12:21.1904622Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 6279 candidates and 464 R2 objects totaling 6018505927 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 6279 candidates and 466 R2 objects totaling 6035824576 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 4020 |
+| pending review | 4018 |
 | approved for addition | 0 |
 | downloading | 0 |
 | downloaded | 5 |
@@ -16,7 +16,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 66 |
-| validated | 605 |
+| validated | 607 |
 | excluded | 753 |
 | duplicate | 778 |
 | superseded | 26 |
@@ -56,6 +56,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Sunport Commerce Center Transportation Plan | Bernalillo County | 2019 | PDF | 3985885 | content/transportation/transportation-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/transportation-plans/bernco-sunport-commerce-center-transportation-plan-2019.pdf) |
 | Upper La Cueva Improvements Primrose Pointe HOA Presentation | Bernalillo County | 2024-09-11 | PDF | 8208301 | content/public-works/stormwater-drainage.md | [source](https://www.bernco.gov/public-works/blog/2024/08/05/upper-la-cueva-improvements/) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/bernco-upper-la-cueva-improvements-primrose-pointe-presentation-2024.pdf) |
 | Upper La Cueva Improvements Public Meeting Presentation | Bernalillo County | 2024-08-14 | PDF | 4853702 | content/public-works/stormwater-drainage.md | [source](https://www.bernco.gov/public-works/blog/2024/08/05/upper-la-cueva-improvements/) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/bernco-upper-la-cueva-improvements-public-meeting-presentation-2024.pdf) |
+| 118th Street Study Public Meeting Presentation | City of Albuquerque | 2021-04-27 | PDF | 8619573 | content/transportation/roadway-projects/_index.md | [source](https://www.cabq.gov/council/find-your-councilor/district-3/118th-street-sw-improvements) | [R2](https://files.abqinfo.com/transportation/roadway-projects/current/cabq-118th-street-study-public-meeting-presentation-2021.pdf) |
 | 17th Street Speed Study | City of Albuquerque | 2021-03 | PDF | 9121550 | content/transportation/roadway-projects/speed-management.md | [source](https://www.cabq.gov/municipaldevelopment/documents/17th-street-speed-study-report.pdf/view) | [R2](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-17th-street-speed-study-2021.pdf) |
 | 2000 Albuquerque Comprehensive On-Street Bicycle Plan | City of Albuquerque | 2000 | PDF | 8054496 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/documents) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2000-albuquerque-comprehensive-on-street-bicycle-plan.pdf) |
 | 2011 Albuquerque Bikeways and Trails Master Plan Update | City of Albuquerque | 2011-11-10 | PDF | 20962356 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%2011-10-11.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-and-trails-master-plan-update.pdf) |
@@ -111,6 +112,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Albuquerque Vision Zero Year-in-Review | City of Albuquerque | 2023 | PDF | 12032702 | content/transportation/bicycling/safety-crash-data.md | [source](https://www.cabq.gov/vision-zero) | [R2](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/cabq-vision-zero-year-in-review-2023.pdf) |
 | AMAFCA/Albuquerque MS4 Floatable and Gross Pollutant Study | City of Albuquerque | 2005-10 | PDF | 10654376 | content/public-works/stormwater-drainage.md | [source](https://www.cabq.gov/municipaldevelopment/our-department/street-and-storm-maintenance) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/amafca-cabq-ms4-floatable-gross-pollutant-study-2005.pdf) |
 | Amole Arroyo Resource Management Plan | City of Albuquerque | 1991 | PDF | 9063343 | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/planning/plans-publications) | [R2](https://files.abqinfo.com/public-works/parks-recreation/arroyo-plans/cabq-amole-arroyo-resource-management-plan-1991.pdf) |
+| Amole Mesa Avenue and Messina Drive Traffic Calming Study Public Meeting Presentation | City of Albuquerque | 2023-02-15 | PDF | 8699076 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/find-your-councilor/district-3/amole-mesa-ave-and-messina-dr-traffic-calming-study) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-amole-mesa-messina-traffic-calming-study-presentation-2023.pdf) |
 | Baja Drive Speed Study | City of Albuquerque | 2021-03 | PDF | 6872443 | content/transportation/roadway-projects/speed-management.md | [source](https://www.cabq.gov/municipaldevelopment/documents/baja-drive-speed-study.pdf/view) | [R2](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-baja-drive-speed-study-2021.pdf) |
 | Bear Canyon Arroyo Resource Management Plan | City of Albuquerque | 1991 | PDF | 13206517 | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/planning/plans-publications) | [R2](https://files.abqinfo.com/public-works/parks-recreation/arroyo-plans/cabq-bear-canyon-arroyo-resource-management-plan-1991.pdf) |
 | Bicycle Boulevard Guide — Full Version | City of Albuquerque | 2020 | PDF | 56975974 | content/transportation/bicycling/bike-maps.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1) | [R2](https://files.abqinfo.com/transportation/bicycling/maps-guides/cabq-bicycle-boulevard-guide-2020.pdf) |

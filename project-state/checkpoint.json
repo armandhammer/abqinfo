@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-08-26T22:57:53.8794383Z",
-  "completed_item_range": "retained-source-expansion-8 merged with PR 56 state: East Central, Bridge Boulevard Phase 3, 4th Street Road Diet, Blake Road, Upper La Cueva, and Alameda Drain Trail Phase 6",
+  "recorded_at": "2026-08-27T15:12:08.1948194Z",
+  "completed_item_range": "PR58: City Council corridor studies — 118th Street (2021) and Amole Mesa/Messina (2023)",
   "total_candidates": 6279,
   "counts_by_status": {
-    "pending review": 4020,
+    "pending review": 4018,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 5,
@@ -11,15 +11,17 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 66,
-    "validated": 605,
+    "validated": 607,
     "excluded": 753,
     "duplicate": 778,
     "superseded": 26,
     "blocked": 0,
     "requires human review": 26
   },
-  "remaining_nonterminal": 4091,
+  "remaining_nonterminal": 4089,
   "next_pending_id": "src-0004d9e0318a9df5",
-  "blockers": [],
-  "resume_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/New-RetainedSourceAuditQueue.ps1"
+  "blockers": [
+    "Laurelwood Median and Parkway Conceptual Study remains pending because the official City managed-file-transfer page did not expose a downloadable file in the rendered session; resolve the authoritative file endpoint before archival."
+  ],
+  "resume_command": "& .\\scripts\\project\\Get-ProjectResumePoint.ps1"
 }

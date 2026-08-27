@@ -124,7 +124,9 @@ Transportation studies and reports.
 
 - [Amole Mesa Avenue and Messina Drive Traffic Calming Study](https://www.cabq.gov/council/find-your-councilor/district-3/amole-mesa-ave-and-messina-dr-traffic-calming-study)
 
-  Documents the 2023 neighborhood traffic-calming study and links the public-meeting presentation covering traffic conditions, community concerns, potential treatments, and the study process for Amole Mesa Avenue and Messina Drive.
+  Documents the 2023 neighborhood traffic-calming study covering traffic conditions, community concerns, potential treatments, and the study process for Amole Mesa Avenue and Messina Drive.
+
+  [Public Meeting Presentation (2023 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-amole-mesa-messina-traffic-calming-study-presentation-2023.pdf) · [Official City PDF](https://www.cabq.gov/council/documents/amole-mesa-study-public-meeting-1.pdf)
 
 ### Lomas Boulevard
 

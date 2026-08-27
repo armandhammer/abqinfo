@@ -60,6 +60,8 @@ Project contact: Bridgette Garrett at DMD, bgarrett@cabq.gov
 
   Presents the multimodal safety study for 118th Street between Dennis Chavez and Amole Mesa, including sidewalks, trails, bicycle facilities, medians, landscaping, school access, alternatives, and public-meeting material.
 
+  [Public Meeting Presentation (2021 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/cabq-118th-street-study-public-meeting-presentation-2021.pdf) · [Official City PDF](https://www.cabq.gov/council/documents/118th-street-study-public-meeting.pdf)
+
 - [Universe Boulevard Traffic and Pedestrian Study Public Meeting Presentation (2021 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/cabq-universe-boulevard-traffic-pedestrian-study-presentation-2021.pdf)
 
   Documents the study’s three-mile project limits, traffic volumes, missing sidewalks, speeding and safety concerns, and potential roundabout, lane, median, crossing, bicycle, lighting, and landscaping improvements.
