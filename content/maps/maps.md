@@ -51,6 +51,18 @@ Interactive maps of city data and infrastructure.
 
   Maps the recreation trail, parking, adjoining Major Public Open Space and Petroglyph National Monument lands, nearby volcanic features, streets, and Northwest Mesa connections.
 
+- [Ruth Eisenberg Trailhead and West Mesa Trail Map (2025)](https://files.abqinfo.com/public-works/parks-recreation/cabq-ruth-eisenberg-west-mesa-trail-map-2025.pdf)
+
+  Maps the West Mesa Natural Trail, mile markers, access points, Petroglyph National Monument lands, geographic windows, trailheads, parking, restrooms, and connections across West Mesa Open Space.
+
+- [Volcano View Trailhead and West Mesa Trails Map (2025; Official City PDF, 133.78 MiB)](https://www.cabq.gov/parksandrecreation/documents/2025-10-21-map-panel-west-mesa-trail-volcano-view-trailhead.pdf)
+
+  Maps the Volcano View Trail, connecting routes, Petroglyph National Monument lands, nearby volcanoes, trailheads, parking, facilities, and the broader West Mesa trail network. The original exceeds ABQInfo’s 100 MB upload safeguard and remains linked from the City.
+
+- [North Diversion Channel and Paseo del Nordeste Trail Map (2020)](https://files.abqinfo.com/transportation/bicycling/maps-guides/cabq-north-diversion-channel-paseo-del-nordeste-trail-map-2020.pdf)
+
+  Maps the cross-city trail from UNM to Balloon Fiesta Park, including connecting multi-use trails, crossings, underpasses, major streets, arroyos, the Bosque, and key regional destinations.
+
 - [Sandia Foothills Open Space Trail Map (Revised 2006)](https://files.abqinfo.com/public-works/parks-recreation/cabq-sandia-foothills-open-space-trail-map-2006.pdf)
 
   Preserves a dated field map of the foothills trail network, trailheads, numbered routes, Elena Gallegos, Embudito, Bear Canyon, access streets, and Wilderness boundary.

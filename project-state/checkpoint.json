@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-08-27T15:12:08.1948194Z",
-  "completed_item_range": "PR58: City Council corridor studies — 118th Street (2021) and Amole Mesa/Messina (2023)",
+  "recorded_at": "2026-08-27T17:43:06.3998525Z",
+  "completed_item_range": "PR59: City trail guides and West Mesa trail maps — five authoritative PDFs archived; one >100 MB official map linked pending approval",
   "total_candidates": 6279,
   "counts_by_status": {
-    "pending review": 4018,
+    "pending review": 4009,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 5,
@@ -11,17 +11,18 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 66,
-    "validated": 607,
+    "validated": 612,
     "excluded": 753,
-    "duplicate": 778,
-    "superseded": 26,
+    "duplicate": 779,
+    "superseded": 28,
     "blocked": 0,
-    "requires human review": 26
+    "requires human review": 27
   },
-  "remaining_nonterminal": 4089,
+  "remaining_nonterminal": 4080,
   "next_pending_id": "src-0004d9e0318a9df5",
   "blockers": [
-    "Laurelwood Median and Parkway Conceptual Study remains pending because the official City managed-file-transfer page did not expose a downloadable file in the rendered session; resolve the authoritative file endpoint before archival."
+    "Volcano View Trailhead and West Mesa Trails Map is 140275508 bytes (133.78 MiB) and requires explicit approval before R2 upload.",
+    "Laurelwood Median and Parkway Conceptual Study remains pending because the official City managed-file-transfer page did not expose a downloadable file; resolve its authoritative endpoint before archival."
   ],
-  "resume_command": "& .\\scripts\\project\\Get-ProjectResumePoint.ps1"
+  "resume_command": "& .\\scripts\\project\\Get-CandidatesByStatus.ps1 -Status 'pending review'"
 }
