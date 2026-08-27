@@ -102,6 +102,24 @@ Multi-use trails and paths in Albuquerque.
 
   [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/North%20Diversion%20Channel%20Trail%20Map.pdf) · [Check for current City trail guides](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1)
 
+- [Arroyo del Oso and Bear Canyon Trail Guide (2020 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/maps-guides/cabq-arroyo-del-oso-bear-canyon-trail-guide-2020.pdf)
+
+  Provides mile-by-mile directions for the 7.9-mile Arroyo del Oso and Bear Canyon Trail from Embudito Trailhead to North Diversion Channel, documenting parking, arterial crossings, parks, CNM Montoya, Osuna connections, and the I-25 bicycle bridge.
+
+  [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/arroyo-del-oso-brief-version-2020.pdf) · [Check for current City trail guides](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1)
+
+- [Paseo del Norte and South Domingo Baca Trail Guide (2020 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/maps-guides/cabq-paseo-del-norte-south-domingo-baca-trail-guide-2020.pdf)
+
+  Provides mile-by-mile directions for a 17.6-mile cross-city route from Tramway and Paseo del Norte to Ventana Ranch, documenting parks, Rail Runner access, trail gaps, safer I-25 routing, Bosque connections, and West Side street links.
+
+  [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/paseo-del-norte-trail-brief-version-2020.pdf) · [Check for current City trail guides](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1)
+
+- [Del Rey, North Pino, and Pino Arroyo Trail Guide (2020 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/maps-guides/cabq-del-rey-north-pino-pino-arroyo-trail-guide-2020.pdf)
+
+  Provides mile-by-mile directions for the 7.2-mile Del Rey, North Pino, and Pino Arroyo route from Tramway to North Diversion Channel, documenting parks, difficult crossings, neighborhood trail connections, I-25 underpass routing, and on-street gaps.
+
+  [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/pino-arroyo-trail-in-brief-2020.pdf) · [Check for current City trail guides](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1)
+
 ## Regional Long-Range Bikeway Network
 
 - [MRMPO Active Transportation Map Portfolio](https://mrmpo.maps.arcgis.com/apps/instant/portfolio/index.html?appid=38915e0cc1414048b27f9335302203a5)

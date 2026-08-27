@@ -1,14 +1,14 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-27T17:43:04.4893658Z
+Generated: 2026-08-27T18:03:22.6319023Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 6279 candidates and 471 R2 objects totaling 6109719538 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 6279 candidates and 474 R2 objects totaling 6115262810 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 4009 |
+| pending review | 3999 |
 | approved for addition | 0 |
 | downloading | 0 |
 | downloaded | 5 |
@@ -16,10 +16,10 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 66 |
-| validated | 612 |
-| excluded | 753 |
+| validated | 615 |
+| excluded | 754 |
 | duplicate | 779 |
-| superseded | 28 |
+| superseded | 34 |
 | blocked | 0 |
 | requires human review | 27 |
 
@@ -113,6 +113,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | AMAFCA/Albuquerque MS4 Floatable and Gross Pollutant Study | City of Albuquerque | 2005-10 | PDF | 10654376 | content/public-works/stormwater-drainage.md | [source](https://www.cabq.gov/municipaldevelopment/our-department/street-and-storm-maintenance) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/amafca-cabq-ms4-floatable-gross-pollutant-study-2005.pdf) |
 | Amole Arroyo Resource Management Plan | City of Albuquerque | 1991 | PDF | 9063343 | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/planning/plans-publications) | [R2](https://files.abqinfo.com/public-works/parks-recreation/arroyo-plans/cabq-amole-arroyo-resource-management-plan-1991.pdf) |
 | Amole Mesa Avenue and Messina Drive Traffic Calming Study Public Meeting Presentation | City of Albuquerque | 2023-02-15 | PDF | 8699076 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/find-your-councilor/district-3/amole-mesa-ave-and-messina-dr-traffic-calming-study) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-amole-mesa-messina-traffic-calming-study-presentation-2023.pdf) |
+| Arroyo del Oso and Bear Canyon Trail Guide | City of Albuquerque | 2020-07-02 | PDF | 2688333 | content/transportation/bicycling/bike-maps.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1) | [R2](https://files.abqinfo.com/transportation/bicycling/maps-guides/cabq-arroyo-del-oso-bear-canyon-trail-guide-2020.pdf) |
 | Baja Drive Speed Study | City of Albuquerque | 2021-03 | PDF | 6872443 | content/transportation/roadway-projects/speed-management.md | [source](https://www.cabq.gov/municipaldevelopment/documents/baja-drive-speed-study.pdf/view) | [R2](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-baja-drive-speed-study-2021.pdf) |
 | Bear Canyon Arroyo Resource Management Plan | City of Albuquerque | 1991 | PDF | 13206517 | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/planning/plans-publications) | [R2](https://files.abqinfo.com/public-works/parks-recreation/arroyo-plans/cabq-bear-canyon-arroyo-resource-management-plan-1991.pdf) |
 | Bicycle Boulevard Guide — Full Version | City of Albuquerque | 2020 | PDF | 56975974 | content/transportation/bicycling/bike-maps.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1) | [R2](https://files.abqinfo.com/transportation/bicycling/maps-guides/cabq-bicycle-boulevard-guide-2020.pdf) |
@@ -216,6 +217,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Coronado Metropolitan Redevelopment Area Plan | City of Albuquerque | 2016 | PDF | 2330277 | content/development-land-use/redevelopment-plans.md | [source](https://www.cabq.gov/mra/redevelopment-areas/coronado) | [R2](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-coronado-mra-plan-2016.pdf) |
 | Council District Poster Map | City of Albuquerque | 2026-01 | PDF | 16586301 | content/maps/maps.md | [source](https://www.arcgis.com/home/item.html?id=47889b7150894b1c92a45ea3c1ffe3bd) | [R2](https://files.abqinfo.com/maps/cabq-council-district-poster-map-2026-01.pdf) |
 | Del Rey Metropolitan Redevelopment Project Plan | City of Albuquerque | 2006-05 | PDF | 568635 | content/development-land-use/redevelopment-plans.md | [source](https://www.cabq.gov/mra/redevelopment-areas) | [R2](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-del-rey-mra-project-plan-2006.pdf) |
+| Del Rey, North Pino, and Pino Arroyo Trail Guide | City of Albuquerque | 2020-05-10 | PDF | 1074338 | content/transportation/bicycling/bike-maps.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1) | [R2](https://files.abqinfo.com/transportation/bicycling/maps-guides/cabq-del-rey-north-pino-pino-arroyo-trail-guide-2020.pdf) |
 | Desert Springs Drive Speed Study | City of Albuquerque | 2021-03 | PDF | 5642520 | content/transportation/roadway-projects/speed-management.md | [source](https://www.cabq.gov/municipaldevelopment/documents/desert-springs-speed-study.pdf/view) | [R2](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-desert-springs-drive-speed-study-2021.pdf) |
 | Development Process Manual Approved Amendment: Article 4-3 ABCWUA Changes | City of Albuquerque | 2026-05-04 | PDF | 1751421 | content/development-land-use/development-process.md | [source](https://www.cabq.gov/planning/boards-commissions/development-process-manual-executive-committee/amendments-to-the-dpm) | [R2](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-approved-amendment-article-4-3-abcwua-2026-05-04.pdf) |
 | Development Process Manual Approved DMD Changes | City of Albuquerque | 2025-12-11 | PDF | 13926998 | content/development-land-use/development-process.md | [source](https://www.cabq.gov/planning/boards-commissions/development-process-manual-executive-committee/amendments-to-the-dpm) | [R2](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-approved-dmd-changes-2025-12-11.pdf) |
@@ -292,6 +294,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Paseo de la Mesa Trail Guide | City of Albuquerque | 2020-04-26 | PDF | 1821216 | content/transportation/bicycling/bike-maps.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1) | [R2](https://files.abqinfo.com/transportation/bicycling/maps-guides/cabq-paseo-de-la-mesa-trail-guide-2020.pdf) |
 | Paseo de las Montañas Trail Guide | City of Albuquerque | 2020 | PDF | 6097596 | content/transportation/bicycling/bike-maps.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-maps/cabq-paseo-de-las-montanas-trail-guide-2020.pdf) |
 | Paseo del Bosque Trail Guide — Full Version | City of Albuquerque | 2020 | PDF | 14578249 | content/transportation/bicycling/bike-maps.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1) | [R2](https://files.abqinfo.com/transportation/bicycling/maps-guides/cabq-paseo-del-bosque-trail-guide-2020.pdf) |
+| Paseo del Norte and South Domingo Baca Trail Guide | City of Albuquerque | 2020-07-02 | PDF | 1780601 | content/transportation/bicycling/bike-maps.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1) | [R2](https://files.abqinfo.com/transportation/bicycling/maps-guides/cabq-paseo-del-norte-south-domingo-baca-trail-guide-2020.pdf) |
 | Planned Growth Strategy Briefing | City of Albuquerque | 2008-01-23 | PDF | 23297 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-planned-growth-strategy-task-force-briefing-2008.pdf) |
 | Procedure A Amendment and Extension Agreement (March 2021) | City of Albuquerque | 2021-03 | PDF | 311595 | content/development-land-use/development-process.md | [source](https://documents.cabq.gov/planning/DevelopmentReviewServices/DRC/IIA/IIA%20A%20Amend%20and%20Extend.pdf) | [R2](https://files.abqinfo.com/development-land-use/development-process/cabq-infrastructure-improvements-agreement-procedure-a-amendment-extension-2021.pdf) |
 | Procedure A with Financial Guaranty Amendment and Extension Agreement (March 2021) | City of Albuquerque | 2021-03 | PDF | 317799 | content/development-land-use/development-process.md | [source](https://documents.cabq.gov/planning/DevelopmentReviewServices/DRC/IIA/IIA%20A%20with%20FG%20Amend%20and%20Extend.pdf) | [R2](https://files.abqinfo.com/development-land-use/development-process/cabq-infrastructure-improvements-agreement-procedure-a-financial-guaranty-amendment-extension-2021.pdf) |
@@ -528,6 +531,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Official source: Albuquerque Vision Zero Year-in-Review | City of Albuquerque | content/transportation/bicycling/safety-crash-data.md | [source](https://www.cabq.gov/vision-zero) |
 | Official source: AMAFCA/Albuquerque MS4 Floatable and Gross Pollutant Study | City of Albuquerque | content/public-works/stormwater-drainage.md | [source](https://www.cabq.gov/municipaldevelopment/our-department/street-and-storm-maintenance) |
 | Official source: Central/Highland/Upper Nob Hill Metropolitan Redevelopment Plan | City of Albuquerque | content/development-land-use/redevelopment-plans.md | [source](https://www.cabq.gov/mra/redevelopment-areas/central-highland-upper-nob-hill) |
+| Official Source: City Bicycle Trail Guides | City of Albuquerque | content/transportation/bicycling/bike-maps.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1) |
 | Official source: City of Albuquerque Climate Action Plan | City of Albuquerque | content/city-data/climate-environment.md | [source](https://www.cabq.gov/sustainability/climate-action-plan) |
 | Official source: City of Albuquerque Construction Site Manual | City of Albuquerque | content/development-land-use/development-process.md | [source](https://documents.cabq.gov/planning/DevelopmentReviewServices/) |
 | Official source: Coronado Metropolitan Redevelopment Area Plan | City of Albuquerque | content/development-land-use/redevelopment-plans.md | [source](https://www.cabq.gov/mra/redevelopment-areas/coronado) |
@@ -553,7 +557,6 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Official source: Southwest Area Plan | City of Albuquerque | content/development-land-use/area-sector-plans.md | [source](https://www.cabq.gov/planning/plans-publications/area-sector-development-plans) |
 | Official source: Tijeras Arroyo Biological Zone Open Space Resource Management Plan | City of Albuquerque | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/parksandrecreation/open-space/lands/tijeras-cultural-corridor) |
 | Official source: Universe Boulevard Traffic and Pedestrian Study Public Meeting Presentation | City of Albuquerque | content/transportation/roadway-projects/_index.md | [source](https://www.cabq.gov/council/find-your-councilor/district-5/district-5-projects/district-5-traffic-projects/universe-blvd-traffic-study-1) |
-| Official source: Unser Boulevard, Mariposa, and Riverview Trail Guide | City of Albuquerque | content/transportation/bicycling/bike-maps.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1) |
 | Official source: Uptown Pedestrian and Bicycle Plan and Wayfinding Program | City of Albuquerque | content/transportation/bicycling/projects/_index.md | [source](https://www.cabq.gov/transit/documents/) |
 | Official source: Volcano Trails Sector Development Plan Adoption Resolution R-11-211 | City of Albuquerque | content/development-land-use/area-sector-plans.md | [source](https://www.cabq.gov/council/projects/completed-projects/2011/volcano-trails-sector-development-plan) |
 | Official source: West Central Metropolitan Redevelopment Area Plan | City of Albuquerque | content/development-land-use/redevelopment-plans.md | [source](https://www.cabq.gov/mra/redevelopment-areas/west-central) |
@@ -1617,6 +1620,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-4a6937d8acab5936 | excluded | Find another City Council district. | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-4a7f8ce1106c65d1 | excluded | Full contact information | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-4b1070da8a9669c0 | excluded | Print this information out and take it with you! | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
+| src-4b303681bd0f7cde | excluded | City Bicycle Trail Guide Author Biographies | Author biographies describe the trail-guide writers but contain no route, planning, infrastructure, map, project, or policy information for ABQInfo. |
 | src-4bed681d7edd638f | excluded | 12 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-4c77d1cc887b693a | excluded | Print this information out and take it with you! | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-4d080cd3ef1f22d2 | excluded | Blake Road September 2023 Public Meeting Notice | Excluded as a transient, expired public-meeting notice; the substantive October 2023 presentation is archived. |
@@ -2217,15 +2221,20 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-0d9ba218e1cd9df8 | superseded | cip building design standards 2022 rev 14.pdf | Superseded by City of Albuquerque CIP Building Design Standards and Guidelines, Revision 17 (2025-10-29). |
 | src-0f1805a179efdc22 | superseded | Hahn Arroyo and Paseo del Nordeste Trail Guide — In Brief | Abridged derivative superseded by the complete ten-page official guide archived in this batch. |
 | src-0fb71091e519f961 | superseded | Full Draft Appendix_2-14-2025 | The February 2025 draft appendix is superseded by the complete March 2025 final Lead and Coal report and appendices already archived. |
+| src-155d876affd12ab7 | superseded | I-40 Trail Guide — In Brief | Abridged derivative superseded by the complete official guide already archived as src-5bef4eb4ac2b0481. |
 | src-18d9a974c5137e0b | superseded | City paratransit service | The prior City paratransit URL was replaced by https://www.cabq.gov/transit/services/paratransit-service, which is the current ABQInfo link. |
+| src-1c2a0b0005b422cd | superseded | Paseo del Bosque Trail Guide — In Brief | Abridged derivative superseded by the complete official guide already archived as src-0ce924c2d9dcc556. |
 | src-2ba50be86045099d | superseded | Part 2 | Split Part 2 edition is redundant with the complete 122-page March 2014 PDF archived in this batch. |
 | src-34e2f45ce716db9f | superseded | Presentation Slides | Workshop presentation substantially repeats the corridor conditions and concepts preserved in the more comprehensive 59-page draft master plan. |
 | src-352fd3c9bbc6b8f6 | superseded | Intersection Concepts for Central to Lomas Segment | Standalone intersection concepts substantially repeat alternatives preserved in the more comprehensive draft master plan and approved construction plans. |
 | src-4729a7695d235e85 | superseded | cip building design standards may 2024 rev 16.pdf | Superseded by City of Albuquerque CIP Building Design Standards and Guidelines, Revision 17 (2025-10-29). |
 | src-48a9681a27727130 | superseded | Draft North Fourth Street Rank III Corridor Plan | The authoritative final 2010 North Fourth Street Corridor Plan is already archived and implemented; this larger draft is retained in local staging for research but is not duplicated in production R2 or site content. |
+| src-48cf3bc1beb7988f | superseded | Unser Boulevard, Mariposa, and Riverview Trail Guide — In Brief | Abridged derivative superseded by the complete official guide already archived as src-01582dd7631ed92c. |
+| src-5b52d46774902d5e | superseded | Bicycle Boulevard Guide — In Brief | Abridged derivative superseded by the complete official guide already archived as src-53fb7c8f80678e6d. |
 | src-5edcfaeac63d3a4b | superseded | ABQReport | Legacy Council-hosted copy superseded by the maintained Planning Department copy at documents.cabq.gov. |
 | src-6705ec42d3bb6d2e | superseded | Complete Streets Draft Legislation2 | Interim Complete Streets draft superseded by the retained final amended original ordinance and the enacted 2019 update. |
 | src-6da20b965df52490 | superseded | MRCOG bicycle and pedestrian planning maps | Broad bicycle-and-pedestrian landing page was replaced by the specific planning-maps, counts, analysis, and safety sources. |
+| src-71f177dc52b5ca31 | superseded | Paseo de las Montañas Trail Guide — In Brief | Abridged derivative superseded by the complete official guide already archived as src-1325560782280672. |
 | src-79b0dba0d60207eb | superseded | cip building design standards 2023 rev 15.pdf | Superseded by City of Albuquerque CIP Building Design Standards and Guidelines, Revision 17 (2025-10-29). |
 | src-7b6c76481a7f00c4 | superseded | Potential Road Diets in the Albuquerque Region | 2021 road-diet application has been superseded by MRMPO's maintained 2023 Road Diet Candidates Map source. |
 | src-927546cc176a8954 | superseded | Lead and Coal Public Meeting Material (December 18, 2024) | Superseded project-stage meeting material; the final March 2025 study and 2022 road safety audit provide the durable planning record selected for ABQInfo. |
@@ -2235,6 +2244,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-aea8b55a48a3965c | superseded | Part 2 | Split Part 2 edition is redundant with the complete 120-page October 2013 PDF archived in this batch. |
 | src-b3e13fdc634d23d0 | superseded | Broadway Blvd Road Diet_Draft 5.23.2025 | The May 23, 2025 draft is superseded by the signed July 2, 2025 Broadway Road Diet traffic evaluation already archived. |
 | src-bf3de1fd0efdb912 | superseded | Lead and Coal Draft Report (February 14, 2025) | Superseded by the complete March 2025 final report. |
+| src-c3494db32d053a0e | superseded | Tramway Trail Guide — In Brief | Abridged derivative superseded by the complete official guide already archived as src-77a2ef88e4fe4233. |
 | src-cf6fa82eb6524971 | superseded | MRMPO Long Range Bikeway System | 2021 long-range bikeway application has been superseded by the adopted 2026 map and maintained active-transportation portfolio. |
 | src-d293be9f3e48051c | superseded | On-Street Bicycle Facility Concepts | Standalone bicycle-option sheets substantially repeat alternatives preserved in the more comprehensive draft master plan. |
 | src-d307ff22691b3f3b | superseded | MRMPO Transportation Improvement Program, FFY 2024-2029 | The undated mutable current-TIP archive was replaced on ABQInfo by the dated August 25, 2026 approved snapshot; routine additive monthly copies are not retained. |

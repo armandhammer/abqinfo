@@ -68,6 +68,12 @@ Parks and recreation facilities and programs.
 
 ## Open Space Maps and Field Guides
 
+- [City Bicycle Trail Guides](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1)
+
+  Collects the City’s detailed Albuquerque bicycle trail guides, including route narratives, standalone maps, access directions, distances, trail connections, neighborhood history, public art, natural features, and source updates.
+
+  [Browse the archived guides on ABQInfo](/transportation/bicycling/bike-maps/#city-trail-guides)
+
 - [Paseo de la Mesa Recreation Trail Map (2018)](https://files.abqinfo.com/public-works/parks-recreation/cabq-paseo-de-la-mesa-recreation-trail-map-2018.pdf)
 
   Maps the Paseo de la Mesa Recreation Trail, parking, adjoining Major Public Open Space and Petroglyph National Monument lands, nearby volcanic features, streets, and connections across Albuquerque’s Northwest Mesa.
