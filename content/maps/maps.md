@@ -160,3 +160,17 @@ Interactive maps of city data and infrastructure.
 - [Bernalillo County Comprehensive Plan Development Areas](https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fpdsgismaps.bernco.gov%2Fserver%2Frest%2Fservices%2FBERNCO%2FComprehensivePlanDevelopmentAreas%2FMapServer&source=sd) <small>[ArcGIS Data](https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/ComprehensivePlanDevelopmentAreas/MapServer)</small>
 
   This live Bernalillo County GIS service maps development areas in the unincorporated county covered by the adopted Albuquerque/Bernalillo County Comprehensive Plan. It supports interactive viewing and structured geographic data access through the county's public map service.
+
+## County Roadway Project Maps
+
+- [Goff Boulevard Roadway Improvement Project Map (2013 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-goff-boulevard-project-map-2013.pdf)
+
+  Maps the corridor between Arenal Road and Bridge Boulevard, including proposed roadway and drainage work, storm-drain connections, detention ponds, nearby acequias, neighborhoods, and the broader South Valley context.
+
+- [Second Street SW Corridor Improvement Project Map (2016 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-second-street-sw-project-map-2016.pdf)
+
+  Maps the corridor from Valle de Oro National Wildlife Refuge to the South Diversion Channel, locating the project limits, Desert Road, Mountain View Elementary School, neighborhood streets, and drainage channels.
+
+- [Dennis Chavez Boulevard and Condershire Drive Conceptual Design (2025 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-dennis-chavez-condershire-conceptual-design-2025.pdf)
+
+  Shows the intersection location, eastbound and westbound turn-lane configurations, signalized movements, bridge approach, roadway widening, and surrounding aerial context.

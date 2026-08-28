@@ -1,14 +1,14 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-28T17:27:23.6752562Z
+Generated: 2026-08-28T22:08:45.6188868Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 6279 candidates and 481 R2 objects totaling 6142832916 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 6366 candidates and 489 R2 objects totaling 6170709072 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 3987 |
+| pending review | 4061 |
 | approved for addition | 0 |
 | downloading | 0 |
 | downloaded | 5 |
@@ -16,7 +16,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 66 |
-| validated | 622 |
+| validated | 635 |
 | excluded | 759 |
 | duplicate | 779 |
 | superseded | 34 |
@@ -51,10 +51,18 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Bridge Boulevard Corridor Redevelopment Plan | Bernalillo County | 2013-08 | PDF | 26623198 | content/development-land-use/projects.md | [source](https://www.bernco.gov/public-works/blog/2021/04/16/bridge-boulevard-corridor-redevelopment-plan) | [R2](https://files.abqinfo.com/development-land-use/plans/bernco-bridge-boulevard-corridor-redevelopment-plan-2013.pdf) |
 | Bridge Boulevard Phase 3 Selected Alternative | Bernalillo County | 2026-05 | PDF | 2012822 | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2026/05/18/bridge-boulevard-phase-3/) | [R2](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-bridge-boulevard-phase-3-selected-alternative-2026.pdf) |
 | Complete Bernalillo County Technical Standards | Bernalillo County | 2023-03-28 | PDF | 9161556 | content/transportation/design-references.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards) | [R2](https://files.abqinfo.com/transportation/design-references/bernco-technical-standards-2023-03-28.pdf) |
+| Dennis Chavez Boulevard and Condershire Drive Intersection Improvements — Conceptual Design Board | Bernalillo County | 2025-12 | PDF | 1757209 | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2025/11/25/condershire-dr-nm500-dennis-chavez-blvd-intersection-improvements) | [R2](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-dennis-chavez-condershire-conceptual-design-2025.pdf) |
+| Dennis Chavez Boulevard and Condershire Drive Intersection Safety Improvements — Public Meeting Presentation | Bernalillo County | 2025-12-11 | PDF | 2161971 | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2025/11/25/condershire-dr-nm500-dennis-chavez-blvd-intersection-improvements) | [R2](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-dennis-chavez-condershire-public-meeting-2025.pdf) |
 | East Central Pedestrian Safety Project Map | Bernalillo County | 2025-02 | PNG | 635660 | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2025/02/12/east-central-pedestrian-safety-project/) | [R2](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-east-central-pedestrian-safety-project-map-2025.png) |
 | El Camino Real National Historic Trail Development Concept Plan Executive Summary | Bernalillo County | 2022 | PDF | 6393748 | content/transportation/bicycling/bike-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-el-camino-real-trail-development-concept-plan-2022.pdf) |
+| Goff Boulevard Roadway Improvement Project Map | Bernalillo County | 2013-08-28 | PDF | 305574 | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2021/04/15/goff-boulevard-improvements) | [R2](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-goff-boulevard-project-map-2013.pdf) |
+| Goff Boulevard Roadway Improvements — Community Meeting Presentation | Bernalillo County | 2013-08-26 | PDF | 6492835 | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2021/04/15/goff-boulevard-improvements) | [R2](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-goff-boulevard-community-meeting-2013.pdf) |
 | Green Stormwater Infrastructure / Low Impact Development Standards | Bernalillo County | 2023 | PDF | 5981048 | content/transportation/design-references.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards) | [R2](https://files.abqinfo.com/transportation/design-references/bernco-green-stormwater-infrastructure-low-impact-development-standards-2023.pdf) |
 | Isleta Drain and Trail Master Plan | Bernalillo County | 2022 | PDF | 11323656 | content/transportation/bicycling/bike-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-isleta-drain-trail-master-plan-2022.pdf) |
+| Mountain View Environmental Inventory Project — Community Workshop 2 | Bernalillo County | 2026-05-30 | PDF | 5914634 | content/city-data/climate-environment.md | [source](https://www.bernco.gov/public-works/blog/2026/03/12/mountain-view-environmental-inventory-and-gap-mapping-analysis) | [R2](https://files.abqinfo.com/public-works/environment/bernco-mountain-view-environmental-inventory-workshop-2026.pdf) |
+| San Ygnacio Road and Tapia Boulevard Phase IA — Public Information Meeting | Bernalillo County | 2025-05-14 | PDF | 9696267 | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2025/04/24/san-ygnacio-rd-and-tapia-blvd-phase-1a-improvements) | [R2](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-san-ygnacio-tapia-public-information-2025.pdf) |
+| Second Street SW Corridor Improvement Project Map | Bernalillo County | 2016 | PDF | 819694 | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2021/04/15/second-street-sw-corridor-improvement-project) | [R2](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-second-street-sw-project-map-2016.pdf) |
+| Second Street SW Corridor Improvements — Open House Boards | Bernalillo County | 2016-02-23 | PDF | 727972 | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2021/04/15/second-street-sw-corridor-improvement-project) | [R2](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-second-street-sw-open-house-2016.pdf) |
 | Stormwater Management Guidance for Large-Scale Ground-Mounted Solar Arrays | Bernalillo County | 2025-03-14 | PDF | 518778 | content/development-land-use/development-process.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards) | [R2](https://files.abqinfo.com/development-land-use/development-process/bernco-solar-array-stormwater-guidance-2025.pdf) |
 | Sunport Commerce Center Design Overlay Zone | Bernalillo County | 2019-06-27 | PDF | 10125728 | content/development-land-use/area-sector-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/development-land-use/area-sector-plans/bernco-sunport-commerce-center-design-overlay-zone-2019.pdf) |
 | Sunport Commerce Center Transportation Plan | Bernalillo County | 2019 | PDF | 3985885 | content/transportation/transportation-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/transportation-plans/bernco-sunport-commerce-center-transportation-plan-2019.pdf) |
@@ -459,13 +467,18 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Blake Road Improvements | Bernalillo County | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2021/04/16/blake-rd-improvements/) |
 | Bridge Boulevard Phase 3 | Bernalillo County | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2026/05/18/bridge-boulevard-phase-3/) |
 | Complete Streets Planning | Bernalillo County | content/transportation/transportation-plans.md | [source](https://www.bernco.gov/public-works/about-the-public-works-division/technical-services/transportation-planning/complete-streets-planning) |
+| Dennis Chavez Boulevard and Condershire Drive Intersection Safety Improvements | Bernalillo County | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2025/11/25/condershire-dr-nm500-dennis-chavez-blvd-intersection-improvements) |
 | Development Review Traffic Impacts | Bernalillo County | content/development-land-use/development-process.md | [source](https://www.bernco.gov/public-works/about-the-public-works-division/technical-services/transportation-planning/traffic-impact-analysis) |
-| East Central Pedestrian Safety Project | Bernalillo County | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2025/02/12/east-central-pedestrian-safety-project/) |
 | East Central Pedestrian Safety Project | Bernalillo County | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2025/02/12/east-central-pedestrian-safety-project) |
+| East Central Pedestrian Safety Project | Bernalillo County | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2025/02/12/east-central-pedestrian-safety-project/) |
 | Finished Projects | Bernalillo County | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/finished-projects) |
 | For a list of current projects, click here. | Bernalillo County | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/current-projects) |
+| Goff Boulevard Improvements | Bernalillo County | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2021/04/15/goff-boulevard-improvements) |
+| Mountain View Environmental Inventory and Gap Mapping Analysis | Bernalillo County | content/city-data/climate-environment.md | [source](https://www.bernco.gov/public-works/blog/2026/03/12/mountain-view-environmental-inventory-and-gap-mapping-analysis) |
 | Official Source: Bernalillo County Public Works Technical Standards | Bernalillo County | content/transportation/design-references.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards) |
 | Official source: Bridge Boulevard Corridor Redevelopment Plan | Bernalillo County | content/development-land-use/projects.md | [source](https://www.bernco.gov/public-works/blog/2021/04/16/bridge-boulevard-corridor-redevelopment-plan) |
+| San Ygnacio Road and Tapia Boulevard Phase IA Improvements | Bernalillo County | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2025/04/24/san-ygnacio-rd-and-tapia-blvd-phase-1a-improvements) |
+| Second Street SW Corridor Improvement Project | Bernalillo County | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2021/04/15/second-street-sw-corridor-improvement-project) |
 | street maintenance | Bernalillo County | content/transportation/operations-data.md | [source](https://www.bernco.gov/public-works/public-works-services/road-safety-conditions/streets-traffic-signals/street-maintenance) |
 | traffic engineering | Bernalillo County | content/transportation/operations-data.md | [source](https://www.bernco.gov/public-works/public-works-services/road-safety-conditions/streets-traffic-signals/traffic-engineering) |
 | Transportation Plans | Bernalillo County | content/transportation/bicycling/bike-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) |

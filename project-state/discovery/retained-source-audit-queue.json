@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-28T17:27:22.8526653Z",
+  "generated_at": "2026-08-28T22:02:04.3207515Z",
   "policy": "Every retained active government webpage is a document-discovery root. Recursively review relevant child pages and archive qualifying attached documents; access-controlled pages require rendered-browser review rather than silent completion.",
   "allowed_statuses": [
     "pending descendant crawl",
@@ -10,13 +10,13 @@
     "superseded"
   ],
   "counts": {
-    "pending descendant crawl": 202,
-    "crawled": 72,
+    "pending descendant crawl": 199,
+    "crawled": 80,
     "requires rendered-browser review": 0,
     "excluded": 0,
     "superseded": 0
   },
-  "next_pending_source_url": "https://www.bernco.gov/public-works/blog/2025/02/12/east-central-pedestrian-safety-project",
+  "next_pending_source_url": "https://www.bernco.gov/public-works/current-projects",
   "records": [
     {
       "candidate_id": "src-a6a63111f9b4ba00",
@@ -609,6 +609,40 @@
       "updated_at": "2026-08-26T17:31:00Z"
     },
     {
+      "candidate_id": "src-161e9721e179bb26",
+      "source_url": "https://www.bernco.gov/public-works/blog/2021/04/15/goff-boulevard-improvements",
+      "title": "Goff Boulevard Improvements",
+      "agency": "Bernalillo County",
+      "canonical_page": "content/transportation/roadway-projects/_index.md",
+      "audit_status": "crawled",
+      "crawl_output": "research/discovery/pr63-bernco-finished-project-descendants.json",
+      "discovered_documents": 4,
+      "archived_documents": 2,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Official historical project page checked 2026-08-28; its substantive presentation and project map are archived. A temporary traffic-control plan and obsolete Gantt chart were not selected."
+      ],
+      "created_at": "2026-08-28T21:53:46.1766516Z",
+      "updated_at": "2026-08-28T21:53:46.7626637Z"
+    },
+    {
+      "candidate_id": "src-408aea6002f1f2f7",
+      "source_url": "https://www.bernco.gov/public-works/blog/2021/04/15/second-street-sw-corridor-improvement-project",
+      "title": "Second Street SW Corridor Improvement Project Map",
+      "agency": "Bernalillo County",
+      "canonical_page": "content/transportation/roadway-projects/_index.md",
+      "audit_status": "crawled",
+      "crawl_output": "research/discovery/pr63-bernco-finished-project-descendants.json",
+      "discovered_documents": 2,
+      "archived_documents": 2,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Official historical project page checked 2026-08-28; its open-house boards and project map are archived."
+      ],
+      "created_at": "2026-08-28T21:53:46.1766516Z",
+      "updated_at": "2026-08-28T21:53:46.8467183Z"
+    },
+    {
       "candidate_id": "src-65011a235ea2c10e",
       "source_url": "https://www.bernco.gov/public-works/blog/2021/04/16/alameda-drain-trail-phase-6/",
       "title": "Bernalillo County Project Page",
@@ -682,15 +716,16 @@
       "title": "East Central Pedestrian Safety Project",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/studies.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "research/discovery/pr63-east-central-pedestrian-safety.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Current official page checked 2026-08-28; the main project body exposes no document or child-page links. The project map is already archived separately."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
+      "updated_at": "2026-08-28T21:24:54.8592965Z"
     },
     {
       "candidate_id": "src-660fe6c60622c71e",
@@ -727,6 +762,57 @@
       "updated_at": "2026-08-26T22:57:51.0765739Z"
     },
     {
+      "candidate_id": "src-888e72a3531b11f9",
+      "source_url": "https://www.bernco.gov/public-works/blog/2025/04/24/san-ygnacio-rd-and-tapia-blvd-phase-1a-improvements",
+      "title": "San Ygnacio Road and Tapia Boulevard Phase IA — Public Information Meeting",
+      "agency": "Bernalillo County",
+      "canonical_page": "content/transportation/roadway-projects/_index.md",
+      "audit_status": "crawled",
+      "crawl_output": "research/discovery/pr63-bernco-current-project-descendants.json",
+      "discovered_documents": 1,
+      "archived_documents": 1,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Official active project page checked 2026-08-28; its public-information presentation is archived."
+      ],
+      "created_at": "2026-08-28T21:53:46.1766516Z",
+      "updated_at": "2026-08-28T21:53:46.9869299Z"
+    },
+    {
+      "candidate_id": "src-1ed20b8190a6304d",
+      "source_url": "https://www.bernco.gov/public-works/blog/2025/11/25/condershire-dr-nm500-dennis-chavez-blvd-intersection-improvements",
+      "title": "Dennis Chavez Boulevard and Condershire Drive Intersection Safety Improvements — Public Meeting Presentation",
+      "agency": "Bernalillo County",
+      "canonical_page": "content/transportation/roadway-projects/_index.md",
+      "audit_status": "crawled",
+      "crawl_output": "research/discovery/pr63-bernco-current-project-descendants.json",
+      "discovered_documents": 2,
+      "archived_documents": 2,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Official active project page checked 2026-08-28; its public-meeting presentation and conceptual design board are archived."
+      ],
+      "created_at": "2026-08-28T21:53:46.1766516Z",
+      "updated_at": "2026-08-28T21:53:46.9155095Z"
+    },
+    {
+      "candidate_id": "src-432312bc5e6951b9",
+      "source_url": "https://www.bernco.gov/public-works/blog/2026/03/12/mountain-view-environmental-inventory-and-gap-mapping-analysis",
+      "title": "Mountain View Environmental Inventory and Gap Mapping Analysis",
+      "agency": "Bernalillo County",
+      "canonical_page": "content/city-data/climate-environment.md",
+      "audit_status": "crawled",
+      "crawl_output": "research/discovery/pr63-bernco-current-project-descendants.json",
+      "discovered_documents": 1,
+      "archived_documents": 1,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Official active project page checked 2026-08-28; its workshop presentation is archived and the ArcGIS database cited in the PDF is linked directly."
+      ],
+      "created_at": "2026-08-28T21:53:46.1766516Z",
+      "updated_at": "2026-08-28T21:53:47.0652646Z"
+    },
+    {
       "candidate_id": "src-16f8ae9c0bf6e508",
       "source_url": "https://www.bernco.gov/public-works/blog/2026/05/18/bridge-boulevard-phase-3/",
       "title": "Bridge Boulevard Phase 3 Selected Alternative",
@@ -750,14 +836,15 @@
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/current.md",
       "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "crawl_output": "project-state/discovery/bernco-current-projects-crawl.json",
+      "discovered_documents": 32,
+      "archived_documents": 6,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Corrected crawler completed the full current-project page frontier on 2026-08-28: 40 pages retrieved with zero errors and 82 candidates captured. Remaining newly inventoried attachments require relevance review and terminal disposition before this audit closes."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
+      "updated_at": "2026-08-28T22:01:37.112815Z"
     },
     {
       "candidate_id": "src-c540ee6e20ebd64c",
@@ -786,14 +873,15 @@
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/current.md",
       "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
+      "crawl_output": "project-state/discovery/bernco-finished-projects-crawl.json",
+      "discovered_documents": 52,
+      "archived_documents": 5,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Corrected crawler completed the full historical project-page frontier on 2026-08-28: 75 pages retrieved with zero errors and 133 candidates captured. Remaining newly inventoried attachments require relevance review and terminal disposition before this audit closes."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
+      "updated_at": "2026-08-28T22:01:37.2102273Z"
     },
     {
       "candidate_id": "src-405deb003c0ea0fb",
@@ -801,15 +889,16 @@
       "title": "street maintenance",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/operations-data.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "research/discovery/pr63-bernco-street-maintenance.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Current official service page checked 2026-08-28; it exposes no relevant document attachments or child sources."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
+      "updated_at": "2026-08-28T21:53:46.6235323Z"
     },
     {
       "candidate_id": "src-ae32eb87bc457560",
@@ -817,15 +906,16 @@
       "title": "traffic engineering",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/operations-data.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "research/discovery/pr63-bernco-traffic-engineering.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Current official service page checked 2026-08-28; its only authored outbound link is the live traffic-barricading permit search."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T19:09:19.7812179Z"
+      "updated_at": "2026-08-28T21:53:46.6917533Z"
     },
     {
       "candidate_id": "src-f5be150be68a94dd",

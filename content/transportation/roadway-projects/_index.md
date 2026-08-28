@@ -74,6 +74,22 @@ Project contact: Bridgette Garrett at DMD, bgarrett@cabq.gov
 
 ### Bernalillo County Corridor Projects
 
+- [Dennis Chavez Boulevard and Condershire Drive Intersection Safety Improvements](https://www.bernco.gov/public-works/blog/2025/11/25/condershire-dr-nm500-dennis-chavez-blvd-intersection-improvements)
+
+  Tracks the County safety project to add signalization, turn lanes, intersection lighting, and roadway widening at Dennis Chavez Boulevard and Condershire Drive, with design scheduled for early 2026 and construction dependent on funding.
+
+  [Public Meeting Presentation (2025 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-dennis-chavez-condershire-public-meeting-2025.pdf) · [Conceptual Design Board (2025 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-dennis-chavez-condershire-conceptual-design-2025.pdf)
+
+  Project contact: Jennifer Flor, [jflor@bernco.gov](mailto:jflor@bernco.gov)
+
+- [San Ygnacio Road and Tapia Boulevard Phase IA Improvements](https://www.bernco.gov/public-works/blog/2025/04/24/san-ygnacio-rd-and-tapia-blvd-phase-1a-improvements)
+
+  Tracks phased roadway and drainage improvements beginning on Tapia Boulevard between Robertson Avenue and San Ygnacio Road, including sidewalks, curb and gutter, right-of-way needs, 60-percent design, and currently unfunded construction.
+
+  [Public Information Meeting Presentation (2025 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-san-ygnacio-tapia-public-information-2025.pdf)
+
+  Project contact: Jennifer Flor, 505-350-7833, [jflor@bernco.gov](mailto:jflor@bernco.gov)
+
 - [East Central Pedestrian Safety Project](https://www.bernco.gov/public-works/blog/2025/02/12/east-central-pedestrian-safety-project/)
 
   Covers sidewalk and accessibility design along Central Avenue from Eubank Boulevard to Tramway Boulevard, including right-of-way mapping, utility coordination, project funding, design status, and the relationship to the earlier East Central safety study.
@@ -214,4 +230,14 @@ Questions, construction concerns, or text-alert assistance: email [info@i25impro
 
 ## Past Projects (2020 and Earlier)
 
-Historical roadway-project records will be added here as substantive plans, designs, construction documents, or completion records are verified.
+- [Goff Boulevard Improvements](https://www.bernco.gov/public-works/blog/2021/04/15/goff-boulevard-improvements)
+
+  Preserves the County project record for rebuilding Goff Boulevard between Bridge and Arenal roads, including roadway and drainage design, detention ponds, storm-drain connections, project limits, and the 2013 community presentation and map.
+
+  [Community Meeting Presentation (2013 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-goff-boulevard-community-meeting-2013.pdf) · [Project Map (2013 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-goff-boulevard-project-map-2013.pdf)
+
+- [Second Street SW Corridor Improvement Project](https://www.bernco.gov/public-works/blog/2021/04/15/second-street-sw-corridor-improvement-project)
+
+  Preserves the County project record for 1.5 miles of Second Street SW reconstruction serving Valle de Oro, including roadway, railroad-crossing, drainage, sidewalk, multi-use-trail, bridge, landscaping, environmental, and public-involvement material.
+
+  [Open House Boards (2016 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-second-street-sw-open-house-2016.pdf) · [Project Map (2016 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-second-street-sw-project-map-2016.pdf)
