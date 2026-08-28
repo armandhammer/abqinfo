@@ -1,14 +1,14 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-27T18:03:22.6319023Z
+Generated: 2026-08-28T16:45:22.0571930Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 6279 candidates and 474 R2 objects totaling 6115262810 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 6279 candidates and 477 R2 objects totaling 6116250713 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 3999 |
+| pending review | 3991 |
 | approved for addition | 0 |
 | downloading | 0 |
 | downloaded | 5 |
@@ -16,8 +16,8 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 66 |
-| validated | 615 |
-| excluded | 754 |
+| validated | 618 |
+| excluded | 759 |
 | duplicate | 779 |
 | superseded | 34 |
 | blocked | 0 |
@@ -45,14 +45,17 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Atrisco Vista Boulevard Alignment Study | Bernalillo County | 2024 | PDF | 8507386 | content/transportation/transportation-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/transportation-plans/bernco-atrisco-vista-boulevard-alignment-study-2024.pdf) |
 | Bernalillo County Pedestrian–Bicyclist Safety Action Plan | Bernalillo County | 2025 | PDF | 13379911 | content/transportation/bicycling/safety-crash-data.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/bernco-pedestrian-bicyclist-safety-action-plan-2025.pdf) |
 | Bernalillo County Pedestrian–Bicyclist Safety Action Plan Appendix | Bernalillo County | 2025 | PDF | 5729719 | content/transportation/bicycling/safety-crash-data.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/bernco-pedestrian-bicyclist-safety-action-plan-appendix-2025.pdf) |
+| Bernalillo County Public Works Division Fee Schedule | Bernalillo County | 2024-07-24 | PDF | 135091 | content/development-land-use/development-process.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards) | [R2](https://files.abqinfo.com/development-land-use/development-process/bernco-public-works-fee-schedule-2024.pdf) |
+| Bernalillo County Public Works Submittal and Development Standards for Large-Scale Solar Development | Bernalillo County | 2026-08-04 | PDF | 334034 | content/development-land-use/development-process.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards) | [R2](https://files.abqinfo.com/development-land-use/development-process/bernco-solar-development-submittal-standards-2026.pdf) |
 | Blake Roadway and Storm Drain Improvements Public Meeting Presentation | Bernalillo County | 2023-10-11 | PDF | 5555810 | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2021/04/16/blake-rd-improvements/) | [R2](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-blake-roadway-storm-drain-improvements-presentation-2023.pdf) |
 | Bridge Boulevard Corridor Redevelopment Plan | Bernalillo County | 2013-08 | PDF | 26623198 | content/development-land-use/projects.md | [source](https://www.bernco.gov/public-works/blog/2021/04/16/bridge-boulevard-corridor-redevelopment-plan) | [R2](https://files.abqinfo.com/development-land-use/plans/bernco-bridge-boulevard-corridor-redevelopment-plan-2013.pdf) |
 | Bridge Boulevard Phase 3 Selected Alternative | Bernalillo County | 2026-05 | PDF | 2012822 | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2026/05/18/bridge-boulevard-phase-3/) | [R2](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-bridge-boulevard-phase-3-selected-alternative-2026.pdf) |
-| Complete Bernalillo County Technical Standards | Bernalillo County | 2023-03-28 | PDF | 9161556 | content/transportation/design-references.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards/) | [R2](https://files.abqinfo.com/transportation/design-references/bernco-technical-standards-2023-03-28.pdf) |
+| Complete Bernalillo County Technical Standards | Bernalillo County | 2023-03-28 | PDF | 9161556 | content/transportation/design-references.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards) | [R2](https://files.abqinfo.com/transportation/design-references/bernco-technical-standards-2023-03-28.pdf) |
 | East Central Pedestrian Safety Project Map | Bernalillo County | 2025-02 | PNG | 635660 | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2025/02/12/east-central-pedestrian-safety-project/) | [R2](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-east-central-pedestrian-safety-project-map-2025.png) |
 | El Camino Real National Historic Trail Development Concept Plan Executive Summary | Bernalillo County | 2022 | PDF | 6393748 | content/transportation/bicycling/bike-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-el-camino-real-trail-development-concept-plan-2022.pdf) |
 | Green Stormwater Infrastructure / Low Impact Development Standards | Bernalillo County | 2023 | PDF | 5981048 | content/transportation/design-references.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards) | [R2](https://files.abqinfo.com/transportation/design-references/bernco-green-stormwater-infrastructure-low-impact-development-standards-2023.pdf) |
 | Isleta Drain and Trail Master Plan | Bernalillo County | 2022 | PDF | 11323656 | content/transportation/bicycling/bike-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-isleta-drain-trail-master-plan-2022.pdf) |
+| Stormwater Management Guidance for Large-Scale Ground-Mounted Solar Arrays | Bernalillo County | 2025-03-14 | PDF | 518778 | content/development-land-use/development-process.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards) | [R2](https://files.abqinfo.com/development-land-use/development-process/bernco-solar-array-stormwater-guidance-2025.pdf) |
 | Sunport Commerce Center Transportation Plan | Bernalillo County | 2019 | PDF | 3985885 | content/transportation/transportation-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/transportation-plans/bernco-sunport-commerce-center-transportation-plan-2019.pdf) |
 | Upper La Cueva Improvements Primrose Pointe HOA Presentation | Bernalillo County | 2024-09-11 | PDF | 8208301 | content/public-works/stormwater-drainage.md | [source](https://www.bernco.gov/public-works/blog/2024/08/05/upper-la-cueva-improvements/) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/bernco-upper-la-cueva-improvements-primrose-pointe-presentation-2024.pdf) |
 | Upper La Cueva Improvements Public Meeting Presentation | Bernalillo County | 2024-08-14 | PDF | 4853702 | content/public-works/stormwater-drainage.md | [source](https://www.bernco.gov/public-works/blog/2024/08/05/upper-la-cueva-improvements/) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/bernco-upper-la-cueva-improvements-public-meeting-presentation-2024.pdf) |
@@ -457,8 +460,8 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | East Central Pedestrian Safety Project | Bernalillo County | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2025/02/12/east-central-pedestrian-safety-project) |
 | Finished Projects | Bernalillo County | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/finished-projects) |
 | For a list of current projects, click here. | Bernalillo County | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/current-projects) |
+| Official Source: Bernalillo County Public Works Technical Standards | Bernalillo County | content/transportation/design-references.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards) |
 | Official source: Bridge Boulevard Corridor Redevelopment Plan | Bernalillo County | content/development-land-use/projects.md | [source](https://www.bernco.gov/public-works/blog/2021/04/16/bridge-boulevard-corridor-redevelopment-plan) |
-| Official source: Green Stormwater Infrastructure / Low Impact Development Standards | Bernalillo County | content/transportation/design-references.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards) |
 | street maintenance | Bernalillo County | content/transportation/operations-data.md | [source](https://www.bernco.gov/public-works/public-works-services/road-safety-conditions/streets-traffic-signals/street-maintenance) |
 | traffic engineering | Bernalillo County | content/transportation/operations-data.md | [source](https://www.bernco.gov/public-works/public-works-services/road-safety-conditions/streets-traffic-signals/traffic-engineering) |
 | Transportation Plans | Bernalillo County | content/transportation/bicycling/bike-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) |
@@ -1509,6 +1512,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-02d85364ab654a13 | excluded | Manzano Mesa Multigenerational Center | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-035cc667e832d8a5 | excluded | 3 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-03aaa7714ed1a843 | excluded | Safety Planning Assistance | User-approved relevance cleanup: agency assistance description is less useful than the linked safety plans, maps, and crash data. |
+| src-04679ee3fbc4525c | excluded | Bernalillo County Public Works Exemption Reconsideration Form | Mutable operational application form with no independent planning or technical content; users should obtain the current version from the retained County Technical Standards page. |
 | src-04ae736f6710fd14 | excluded | 6 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-057f03b8595d9386 | excluded | 3 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-06461afa334d6e01 | excluded | Read More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
@@ -1625,6 +1629,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-4c77d1cc887b693a | excluded | Print this information out and take it with you! | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-4d080cd3ef1f22d2 | excluded | Blake Road September 2023 Public Meeting Notice | Excluded as a transient, expired public-meeting notice; the substantive October 2023 presentation is archived. |
 | src-4d580c544ced23b2 | excluded | Boards & Committees | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
+| src-4e09370d831fc339 | excluded | Bernalillo County Public Works Deviation Request Form | Mutable operational application form with no independent planning or technical content; users should obtain the current version from the retained County Technical Standards page. |
 | src-4ebad1715959c125 | excluded | 5 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-50d4bd4731d54233 | excluded | Social Media | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-50d694d38b918e5c | excluded | Contact Information | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
@@ -1741,6 +1746,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-87ff6c400c4a80ac | excluded | Read More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-8875605274496dba | excluded | Emergency shelters, day shelters, and street outreach | User removed the Homeless Services page from the site on 2026-08-04; preserve that editorial decision and do not reintroduce this link without review. |
 | src-8b0fcc9a09437219 | excluded | Read More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
+| src-8c065c693d3458e3 | excluded | Bernalillo County Administrative Resolution 26-96 | Historical infrastructure-design review fee authority adds little independent user value beyond the current consolidated Public Works fee schedule retained on ABQInfo. |
 | src-8c36008d05f4709d | excluded | Vision Zero for Youth Initiative | A 2023 conference-style StoryMap substantially overlaps the maintained APS Vision Zero for Youth hub and is not separately curated. |
 | src-8df1bd7f822ac15f | excluded | View.ashx | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-8e9e206cca213a48 | excluded | 2012 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
@@ -1904,6 +1910,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-df60b9111b89d996 | excluded | Learn More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-e0fa297da5fff7b9 | excluded | 9 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-e1381f56ecb77b3c | excluded | Turning Movement Counts | User-approved timeliness cleanup: older turning counts and pandemic-era guidance are not reliably current. |
+| src-e1ad4337a9e778cd | excluded | Bernalillo County Administrative Resolutions 2015-68 through 2015-70 | Historical drainage, permit, excavation, driveway, and barricading fee resolutions are consolidated into the current Public Works fee schedule retained on ABQInfo. |
 | src-e2342f42cfd5c237 | excluded | Blake Road Construction Graphic 2 | Excluded as a temporary construction-phase traffic graphic; the live County project page is retained for current conditions. |
 | src-e271c19776152b9e | excluded | Complete Streets Letter of Support2 | Stakeholder support letter adds little policy or technical information beyond the retained ordinance, legislation packet, and Council presentation. |
 | src-e2a015eda45653f8 | excluded | 3 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
@@ -1938,6 +1945,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-f13e6134be91bdbb | excluded | 4 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-f1cd004f1e1d0231 | excluded | 3 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-f367a89c9677cb3d | excluded | 146 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
+| src-f40cbae1447bc2be | excluded | Bernalillo County Administrative Resolution 2013-52 | Historical utility-design review fee authority adds little independent user value beyond the current consolidated Public Works fee schedule retained on ABQInfo. |
 | src-f40fde12cc8691b6 | excluded | Read More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-f45880f8adc8c95d | excluded | 145 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-f471b9ffeee13ce4 | excluded | 87106 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |

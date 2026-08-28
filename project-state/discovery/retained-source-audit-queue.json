@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-27T18:01:50.0624211Z",
+  "generated_at": "2026-08-28T16:45:21.2928396Z",
   "policy": "Every retained active government webpage is a document-discovery root. Recursively review relevant child pages and archive qualifying attached documents; access-controlled pages require rendered-browser review rather than silent completion.",
   "allowed_statuses": [
     "pending descendant crawl",
@@ -10,8 +10,8 @@
     "superseded"
   ],
   "counts": {
-    "pending descendant crawl": 214,
-    "crawled": 61,
+    "pending descendant crawl": 212,
+    "crawled": 62,
     "requires rendered-browser review": 0,
     "excluded": 0,
     "superseded": 0
@@ -765,32 +765,19 @@
       "title": "Official source: Green Stormwater Infrastructure / Low Impact Development Standards",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/design-references.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": "project-state/discovery/bernco-retained-transportation-2026-08-20.json",
-      "discovered_documents": 10,
-      "archived_documents": 2,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/retained-source-expansion-12-decisions-2026-08-27.json",
+      "discovered_documents": 11,
+      "archived_documents": 5,
       "processing_notes": [
         "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Current official page rechecked on 2026-08-27; all eleven linked document URLs reached terminal inventory states.",
+        "Five canonical documents are archived: complete Technical Standards, GSI/LID Standards, solar-development standards, solar-array stormwater guidance, and the current Public Works fee schedule.",
+        "The alternate Technical Standards copy is a duplicate; mutable operational forms and old fee-authority resolutions were reviewed and excluded with reasons.",
         "The two primary standards were already archived. Eight resolutions, forms, fee, and solar-development records were added to the durable relevance-review queue."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-20T20:47:10.402148Z"
-    },
-    {
-      "candidate_id": "src-42ff065feb86046d",
-      "source_url": "https://www.bernco.gov/public-works/development-review/tech-standards/",
-      "title": "Complete Bernalillo County Technical Standards",
-      "agency": "Bernalillo County",
-      "canonical_page": "content/transportation/design-references.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-08-25T01:12:22.4497089Z",
-      "updated_at": "2026-08-25T01:12:22.4497089Z"
+      "updated_at": "2026-08-27T18:53:42.2105129Z"
     },
     {
       "candidate_id": "src-99848da5508629e1",
