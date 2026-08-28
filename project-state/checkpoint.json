@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-08-28T16:45:23.1087428Z",
-  "completed_item_range": "PR61: completed Bernalillo County Public Works Technical Standards descendant audit — solar standards, solar-array stormwater guidance, and fee schedule archived; five low-value forms/resolutions excluded; all eleven linked documents reconciled",
+  "recorded_at": "2026-08-28T17:27:24.8164853Z",
+  "completed_item_range": "PR62: archived the Sunport Commerce Center Design Overlay Zone and three Juan Tabo planning-process presentations; cross-listed the Sunport overlay; reconciled and closed ten retained official source-page audits",
   "total_candidates": 6279,
   "counts_by_status": {
-    "pending review": 3991,
+    "pending review": 3987,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 5,
@@ -11,18 +11,18 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 66,
-    "validated": 618,
+    "validated": 622,
     "excluded": 759,
     "duplicate": 779,
     "superseded": 34,
     "blocked": 0,
     "requires human review": 27
   },
-  "remaining_nonterminal": 4062,
+  "remaining_nonterminal": 4058,
   "next_pending_id": "src-0004d9e0318a9df5",
   "blockers": [
     "Volcano View Trailhead and West Mesa Trails Map is 140275508 bytes (133.78 MiB) and requires explicit approval before R2 upload.",
     "Laurelwood Median and Parkway Conceptual Study remains pending because the official City managed-file-transfer page did not expose a downloadable file; resolve its authoritative endpoint before archival."
   ],
-  "resume_command": "& .\\scripts\\project\\Get-CandidatesByStatus.ps1 -Status 'pending review'"
+  "resume_command": "& .\\scripts\\project\\Update-RetainedSourceAudit.ps1 -SourceUrl 'https://www.bernco.gov/public-works/blog/2025/02/12/east-central-pedestrian-safety-project' -AuditStatus crawled"
 }

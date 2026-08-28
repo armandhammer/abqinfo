@@ -244,6 +244,12 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/07/Sunport-Commerce-Center-Transportation-Plan-Final.pdf)
 
+- [Sunport Commerce Center Design Overlay Zone (2019 Archived PDF)](https://files.abqinfo.com/development-land-use/area-sector-plans/bernco-sunport-commerce-center-design-overlay-zone-2019.pdf)
+
+  Coordinates the transportation plan with adopted land-use, block, street, access, parking, landscaping, signage, architecture, drainage, utility, and development-review standards for the Sunport Commerce Center employment district.
+
+  [Official County PDF](https://www.bernco.gov/planning/wp-content/uploads/sites/58/2021/03/Sunport-Commerce-Center-DOZ_Final-June-27-2019.pdf) · [Area & Sector Plans placement](/development-land-use/area-sector-plans/#sunport-commerce-center)
+
 - [Near South Valley Multimodal Study (2017 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/bernco-near-south-valley-multimodal-study-2017.pdf)
 
   Identifies gaps and priorities across the Near South Valley street, sidewalk, bicycle, trail, transit, passenger-rail, and freight networks, emphasizing accessible sidewalks, bikeway connections, safer crossings, and coordinated multimodal projects.
