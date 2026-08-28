@@ -54,6 +54,16 @@ if ($Resume -and (Test-Path -LiteralPath $OutputPath)) {
   $prior = Get-Content -Raw -Encoding UTF8 -LiteralPath $OutputPath | ConvertFrom-Json
   $queue.Clear()
   foreach ($page in @($prior.pages)) {
+    if ($page.status -eq 'error') {
+      $pagePath = if ($page.PSObject.Properties['discovery_path']) { @($page.discovery_path) } else { @($page.url) }
+      $pageMethod = if ($page.PSObject.Properties['discovery_method']) { [string]$page.discovery_method } else { 'resumed failed page' }
+      $pageKey = ([uri]$page.url).AbsoluteUri.TrimEnd('/')
+      if (-not $queued.ContainsKey($pageKey)) {
+        $queue.Enqueue([pscustomobject]@{url=$page.url;depth=$page.depth;parent_url=$page.parent_url;path=$pagePath;method=$pageMethod})
+        $queued[$pageKey] = $true
+      }
+      continue
+    }
     $pages.Add($page)
     $visited[([uri]$page.url).GetLeftPart([UriPartial]::Path).TrimEnd('/')] = $true
   }
@@ -116,6 +126,7 @@ while ($queue.Count -and $pages.Count -lt $MaxPages) {
         $builder.Fragment = ''
         $uri = $builder.Uri
       } catch { continue }
+      if ($uri.Scheme -notin @('http','https') -or [string]::IsNullOrWhiteSpace($uri.Host)) { continue }
       if ($ExcludePathPattern -and $uri.AbsolutePath -match $ExcludePathPattern) { continue }
       $sameSection = $uri.Host -ieq $start.Host -and $uri.AbsolutePath.StartsWith($PathPrefix,[StringComparison]::OrdinalIgnoreCase)
       $policy = Get-DiscoveryLinkPolicy `

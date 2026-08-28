@@ -6,6 +6,12 @@ Public works capital improvement projects.
 
 ## Current Project Data
 
+- [Mountain View Environmental Inventory and Gap Mapping Analysis](https://www.bernco.gov/public-works/blog/2026/03/12/mountain-view-environmental-inventory-and-gap-mapping-analysis)
+
+  Tracks the County project creating a community-facing environmental database for Mountain View, with parcel, business, permit, contaminant, air, soil, water, remediation, and agency-jurisdiction information planned for interactive maps.
+
+  [Community Workshop 2 (2026 Archived PDF)](https://files.abqinfo.com/public-works/environment/bernco-mountain-view-environmental-inventory-workshop-2026.pdf)
+
 - [City Council Current, Neighborhood, and Completed Projects](https://www.cabq.gov/council/projects)
 
   Opens the Council's unusually useful project archive, which organizes current initiatives, district and neighborhood capital work, completed studies, reports, corridor plans, task-force records, and supporting documents.

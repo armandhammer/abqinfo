@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-08-28T17:27:24.8164853Z",
-  "completed_item_range": "PR62: archived the Sunport Commerce Center Design Overlay Zone and three Juan Tabo planning-process presentations; cross-listed the Sunport overlay; reconciled and closed ten retained official source-page audits",
-  "total_candidates": 6279,
+  "recorded_at": "2026-08-28T22:08:46.6880139Z",
+  "completed_item_range": "PR63: repaired resumable scoped crawling; exhausted 115 Bernalillo County current and finished project pages with zero crawl errors; imported 79 newly discovered candidates; archived eight Goff, Second Street, Condershire, San Ygnacio, and Mountain View records; implemented five source projects and useful map/environment cross-listings",
+  "total_candidates": 6366,
   "counts_by_status": {
-    "pending review": 3987,
+    "pending review": 4061,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 5,
@@ -11,18 +11,19 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 66,
-    "validated": 622,
+    "validated": 635,
     "excluded": 759,
     "duplicate": 779,
     "superseded": 34,
     "blocked": 0,
     "requires human review": 27
   },
-  "remaining_nonterminal": 4058,
+  "remaining_nonterminal": 4132,
   "next_pending_id": "src-0004d9e0318a9df5",
   "blockers": [
     "Volcano View Trailhead and West Mesa Trails Map is 140275508 bytes (133.78 MiB) and requires explicit approval before R2 upload.",
-    "Laurelwood Median and Parkway Conceptual Study remains pending because the official City managed-file-transfer page did not expose a downloadable file; resolve its authoritative endpoint before archival."
+    "Laurelwood Median and Parkway Conceptual Study remains pending because the official City managed-file-transfer page did not expose a downloadable file; resolve its authoritative endpoint before archival.",
+    "The Mountain View Environmental Inventory ArcGIS preview resolves from the official workshop PDF but its item metadata and data return permission error 403; monitor the County project page for public release."
   ],
-  "resume_command": "& .\\scripts\\project\\Update-RetainedSourceAudit.ps1 -SourceUrl 'https://www.bernco.gov/public-works/blog/2025/02/12/east-central-pedestrian-safety-project' -AuditStatus crawled"
+  "resume_command": "& .\\scripts\\project\\Get-Candidate.ps1 -Id 'src-003b8da3ca653ca2'"
 }

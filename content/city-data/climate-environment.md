@@ -8,6 +8,20 @@ City and regional climate plans, greenhouse-gas inventories, and durable perform
 
   Maintains Albuquerque’s current climate-plan overview, implementation reports, inventories, updates, and related Sustainability Office work. Archived records below preserve the planning lineage and measured baseline.
 
+## Environmental Justice and Local Conditions
+
+- [Mountain View Environmental Inventory and Gap Mapping Analysis](https://www.bernco.gov/public-works/blog/2026/03/12/mountain-view-environmental-inventory-and-gap-mapping-analysis)
+
+  Tracks Bernalillo County's community-focused environmental inventory for Mountain View, consolidating business, permit, contaminant, air, soil, water, property, and regulatory-agency data into a planned public ArcGIS database with a final report expected in 2026.
+
+- [Mountain View Environmental Inventory Project — Community Workshop 2 (2026 Archived PDF)](https://files.abqinfo.com/public-works/environment/bernco-mountain-view-environmental-inventory-workshop-2026.pdf)
+
+  Documents the County public workshop, explaining data sources, permits, agency jurisdictions, three live maps, database navigation, community feedback, final deliverables, and the schedule for completing the environmental inventory.
+
+  The workshop's ArcGIS preview currently requires permission and is not linked as a public dashboard. [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2026/06/Mountain-View-Workshop-Presentation_May-2026-004.pdf) · [Check the County project page for public release](https://www.bernco.gov/public-works/blog/2026/03/12/mountain-view-environmental-inventory-and-gap-mapping-analysis)
+
+Project contact: Dan McGregor, [dmcgregor@bernco.gov](mailto:dmcgregor@bernco.gov)
+
 ## Climate Action Plans
 
 - [City of Albuquerque Climate Action Plan (2009)](https://files.abqinfo.com/city-data/climate-environment/cabq-climate-action-plan-2009.pdf)
