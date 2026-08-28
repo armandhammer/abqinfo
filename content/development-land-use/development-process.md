@@ -98,11 +98,29 @@ Cross-cutting development process documents, manuals, and reference materials.
 
   [Official City PDF](https://documents.cabq.gov/planning/online-forms/Planning-General-FEE%20Schedule.pdf) · [Development Review Services](https://www.cabq.gov/planning/development-review-services/)
 
+- [Bernalillo County Public Works Division Fee Schedule (July 2024 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/bernco-public-works-fee-schedule-2024.pdf)
+
+  Lists Bernalillo County Public Works fees for drainage review, grading and paving permits, infrastructure design review, utilities, driveways, excavation, traffic barricading, review extensions, moratorium work, and non-County-sponsored projects as of July 24, 2024.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2024/07/BCPWD_Fee_Schedule_2024_07_24.pdf) · [Check the current County standards page](https://www.bernco.gov/public-works/development-review/tech-standards)
+
 ## County Development Review
 
 - [Bernalillo County Traffic Impact Analysis](https://www.bernco.gov/public-works/about-the-public-works-division/technical-services/transportation-planning/traffic-impact-analysis)
 
   Explains when development in unincorporated Bernalillo County requires transportation-impact analysis and connects applicants to the County's review process, technical expectations, transportation planning, and development standards.
+
+- [Bernalillo County Public Works Submittal and Development Standards for Large-Scale Solar Development (August 2026 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/bernco-solar-development-submittal-standards-2026.pdf)
+
+  Establishes Bernalillo County Public Works submittal and development requirements for utility-scale solar, community solar, and battery storage in unincorporated areas, covering site plans, drainage, traffic, environmental review, decommissioning, construction, operations, and financial assurance.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2026/08/BernCo-PW-Submittals-and-Standards-for-Solar-Development-signed.pdf) · [Check the current County standards page](https://www.bernco.gov/public-works/development-review/tech-standards)
+
+- [Stormwater Management Guidance for Large-Scale Ground-Mounted Solar Arrays (March 2025 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/bernco-solar-array-stormwater-guidance-2025.pdf)
+
+  Sets Bernalillo County criteria for grading and drainage review of ground-mounted photovoltaic arrays, including slopes, soils, setbacks, runoff calculations, vegetation, erosion controls, green stormwater infrastructure, maintenance, inspections, and post-construction monitoring.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/05/Bernco_Solar_PV_Array_Guidance_V2_03172025-signed.pdf) · [Check the current County standards page](https://www.bernco.gov/public-works/development-review/tech-standards)
 
 ## Infrastructure Financing
 

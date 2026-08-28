@@ -149,6 +149,18 @@ Reference drawings, engineering details, and technical guidance related to trans
 
   [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2023/05/BernCo-GSI-LID-Appendix-A.pdf) · [Check the current County standards page](https://www.bernco.gov/public-works/development-review/tech-standards)
 
+- [Bernalillo County Public Works Submittal and Development Standards for Large-Scale Solar Development (August 2026 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/bernco-solar-development-submittal-standards-2026.pdf)
+
+  Establishes Public Works engineering requirements for utility-scale solar, community solar, and battery storage, including site plans, grading and drainage, construction traffic, environmental review, decommissioning, operations, and financial assurance.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2026/08/BernCo-PW-Submittals-and-Standards-for-Solar-Development-signed.pdf) · [Development Process placement](/development-land-use/development-process/#county-development-review)
+
+- [Stormwater Management Guidance for Large-Scale Ground-Mounted Solar Arrays (March 2025 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/bernco-solar-array-stormwater-guidance-2025.pdf)
+
+  Sets grading and drainage criteria for photovoltaic arrays, addressing slopes, soils, flood and watercourse setbacks, runoff calculations, vegetation, erosion controls, green stormwater infrastructure, maintenance, inspections, and post-construction monitoring.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/05/Bernco_Solar_PV_Array_Guidance_V2_03172025-signed.pdf) · [Development Process placement](/development-land-use/development-process/#county-development-review)
+
 ## NMDOT Design and Planning Guidance
 
 Reference guidance for quick-build transportation and multimodal safety projects.
