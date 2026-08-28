@@ -152,11 +152,29 @@ Transportation studies and reports.
 
   [Official City PDF](https://www.cabq.gov/council/documents/final-juan-tabo-hills-traffic-study_09292023.pdf) · [Official City project page](https://www.cabq.gov/council/find-your-councilor/district-9/district-9-projects/district-9-street-improvement-projects/juan-tabo-hills-traffic-study)
 
+- [Juan Tabo Hills Traffic Study — Public Meeting Presentation (September 2022 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-juan-tabo-hills-traffic-study-public-meeting-2022.pdf)
+
+  Presents the study’s crash, speed, traffic-volume, pedestrian, bicycle, transit, and intersection findings, then evaluates turn lanes, roundabouts, continuous-flow intersections, access management, multimodal connections, crossing treatments, and traffic-calming options.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/juan-tabo-public-meeting-presentation.pdf) · [Official City project page](https://www.cabq.gov/council/find-your-councilor/district-9/district-9-projects/district-9-street-improvement-projects/juan-tabo-hills-traffic-study)
+
 - [Juan Tabo Boulevard Connectivity Study (2021 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-juan-tabo-boulevard-connectivity-study-2021.pdf)
 
   Evaluates extending Juan Tabo Boulevard between Central Avenue and Innovation Parkway/Eubank, documenting right-of-way, development, traffic, drainage, utilities, multimodal design, alternatives, costs, and implementation considerations for a missing north-south connection.
 
   [Official City PDF](https://www.cabq.gov/council/documents/coa-juan-tabo-connectivity-study-final.pdf) · [Official City project page](https://www.cabq.gov/council/find-your-councilor/district-9/district-9-projects/district-9-street-improvement-projects/juan-tabo-hills-connectivity-study)
+
+- [Juan Tabo Boulevard Connectivity Study — Virtual Public Meeting 1 (December 2020 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-juan-tabo-connectivity-public-meeting-1-2020.pdf)
+
+  Documents study limits, property and environmental constraints, traffic and crash conditions, cut-through data, and five roadway alternatives presented before the City gathered initial community feedback.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/juan-tabo-public-meeting-1.pdf) · [Official City project page](https://www.cabq.gov/council/find-your-councilor/district-9/district-9-projects/district-9-street-improvement-projects/juan-tabo-hills-connectivity-study)
+
+- [Juan Tabo Boulevard Connectivity Study — Virtual Public Meeting 2 (2021 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-juan-tabo-connectivity-public-meeting-2-2021.pdf)
+
+  Documents public and stakeholder feedback, compares alternatives across traffic, safety, right-of-way, cost, development, bio-zone, and landfill impacts, and explains why no-build ranked highest while a bridge option was estimated near $36 million.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/juan-tabo-public-meeting-2.pdf) · [Official City project page](https://www.cabq.gov/council/find-your-councilor/district-9/district-9-projects/district-9-street-improvement-projects/juan-tabo-hills-connectivity-study)
 
 - [Four Hills Traffic Calming Study (2023 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-four-hills-traffic-calming-study-2023.pdf)
 

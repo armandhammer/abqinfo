@@ -1,14 +1,14 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-28T16:45:22.0571930Z
+Generated: 2026-08-28T17:27:23.6752562Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 6279 candidates and 477 R2 objects totaling 6116250713 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 6279 candidates and 481 R2 objects totaling 6142832916 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 3991 |
+| pending review | 3987 |
 | approved for addition | 0 |
 | downloading | 0 |
 | downloaded | 5 |
@@ -16,7 +16,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 66 |
-| validated | 618 |
+| validated | 622 |
 | excluded | 759 |
 | duplicate | 779 |
 | superseded | 34 |
@@ -56,6 +56,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Green Stormwater Infrastructure / Low Impact Development Standards | Bernalillo County | 2023 | PDF | 5981048 | content/transportation/design-references.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards) | [R2](https://files.abqinfo.com/transportation/design-references/bernco-green-stormwater-infrastructure-low-impact-development-standards-2023.pdf) |
 | Isleta Drain and Trail Master Plan | Bernalillo County | 2022 | PDF | 11323656 | content/transportation/bicycling/bike-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-isleta-drain-trail-master-plan-2022.pdf) |
 | Stormwater Management Guidance for Large-Scale Ground-Mounted Solar Arrays | Bernalillo County | 2025-03-14 | PDF | 518778 | content/development-land-use/development-process.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards) | [R2](https://files.abqinfo.com/development-land-use/development-process/bernco-solar-array-stormwater-guidance-2025.pdf) |
+| Sunport Commerce Center Design Overlay Zone | Bernalillo County | 2019-06-27 | PDF | 10125728 | content/development-land-use/area-sector-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/development-land-use/area-sector-plans/bernco-sunport-commerce-center-design-overlay-zone-2019.pdf) |
 | Sunport Commerce Center Transportation Plan | Bernalillo County | 2019 | PDF | 3985885 | content/transportation/transportation-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-plans) | [R2](https://files.abqinfo.com/transportation/transportation-plans/bernco-sunport-commerce-center-transportation-plan-2019.pdf) |
 | Upper La Cueva Improvements Primrose Pointe HOA Presentation | Bernalillo County | 2024-09-11 | PDF | 8208301 | content/public-works/stormwater-drainage.md | [source](https://www.bernco.gov/public-works/blog/2024/08/05/upper-la-cueva-improvements/) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/bernco-upper-la-cueva-improvements-primrose-pointe-presentation-2024.pdf) |
 | Upper La Cueva Improvements Public Meeting Presentation | Bernalillo County | 2024-08-14 | PDF | 4853702 | content/public-works/stormwater-drainage.md | [source](https://www.bernco.gov/public-works/blog/2024/08/05/upper-la-cueva-improvements/) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/bernco-upper-la-cueva-improvements-public-meeting-presentation-2024.pdf) |
@@ -262,7 +263,10 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Integrated Development Ordinance, Effective May 17, 2018 | City of Albuquerque | 2018-05-17 | PDF | 20189353 | content/development-land-use/zoning-ido.md | [source](https://www.cabq.gov/planning/codes-policies-regulations/integrated-development-ordinance-1/integrated-development-ordinance) | [R2](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-ido-effective-2018-05-17.pdf) |
 | Integrated Development Ordinance, Effective November 2, 2020 | City of Albuquerque | 2020-11-02 | PDF | 21907095 | content/development-land-use/zoning-ido.md | [source](https://www.cabq.gov/planning/codes-policies-regulations/integrated-development-ordinance-1/integrated-development-ordinance) | [R2](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-ido-effective-2020-11-02.pdf) |
 | Juan Tabo Boulevard Connectivity Study | City of Albuquerque | 2021-02-09 | PDF | 6943148 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/find-your-councilor/district-9/district-9-projects/district-9-street-improvement-projects/juan-tabo-hills-connectivity-study) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-juan-tabo-boulevard-connectivity-study-2021.pdf) |
+| Juan Tabo Boulevard Connectivity Study — Virtual Public Meeting 1 | City of Albuquerque | 2020-12-01 | PDF | 8933665 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/find-your-councilor/district-9/district-9-projects/district-9-street-improvement-projects/juan-tabo-hills-connectivity-study) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-juan-tabo-connectivity-public-meeting-1-2020.pdf) |
+| Juan Tabo Boulevard Connectivity Study — Virtual Public Meeting 2 | City of Albuquerque | 2021 | PDF | 3989125 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/find-your-councilor/district-9/district-9-projects/district-9-street-improvement-projects/juan-tabo-hills-connectivity-study) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-juan-tabo-connectivity-public-meeting-2-2021.pdf) |
 | Juan Tabo Hills Traffic Study | City of Albuquerque | 2023-09-29 | PDF | 25183910 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/find-your-councilor/district-9/district-9-projects/district-9-street-improvement-projects/juan-tabo-hills-traffic-study) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-juan-tabo-hills-traffic-study-2023.pdf) |
+| Juan Tabo Hills Traffic Study — Public Meeting Presentation | City of Albuquerque | 2022-09-20 | PDF | 3533685 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/find-your-councilor/district-9/district-9-projects/district-9-street-improvement-projects/juan-tabo-hills-traffic-study) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-juan-tabo-hills-traffic-study-public-meeting-2022.pdf) |
 | Kimmick Drive Speed and Volume Study | City of Albuquerque | 2021-11-23 | PDF | 460515 | content/transportation/roadway-projects/speed-management.md | [source](https://www.cabq.gov/municipaldevelopment/documents/kimmick-speed-and-volume-final-11-23-2021.pdf/view) | [R2](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-kimmick-drive-speed-volume-study-2021.pdf) |
 | Kirtland Air Force Base Access-Corridor Safety Grant Application | City of Albuquerque | 2026-07-16 | PDF | 932015 | content/transportation/roadway-projects/_index.md | [source](https://cabq.legistar.com/LegislationDetail.aspx?ID=8168119&GUID=381ADC52-173A-41AB-B22F-709354AFB678&Options=ID%7CText%7C&Search=EC-26-215) | [R2](https://files.abqinfo.com/transportation/roadway-projects/current/cabq-kafb-access-corridor-safety-grant-application-ec-26-215-2026.pdf) |
 | Lead and Coal Studies Final Report | City of Albuquerque | 2025-03 | PDF | 122503452 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/neighborhood-traffic-management-program/studies) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-lead-coal-studies-final-report-2025.pdf) |

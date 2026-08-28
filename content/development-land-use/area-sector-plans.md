@@ -30,6 +30,14 @@ The exact former City download locations for this draft collection have not been
 
   [Current City CPA Assessment Page](https://www.cabq.gov/planning/urban-design-development/community-planning-area-assessments/community-planning-areas) · [Internet Archive Capture of Former City PDF](https://web.archive.org/web/20250321070350if_/https://documents.cabq.gov/planning/environmental-planning-commission/Nov10_2022/Agenda%202_NH%20CPA_Assessment_Report-FIN.pdf)
 
+## Sunport Commerce Center
+
+- [Sunport Commerce Center Design Overlay Zone (2019 Archived PDF)](https://files.abqinfo.com/development-land-use/area-sector-plans/bernco-sunport-commerce-center-design-overlay-zone-2019.pdf)
+
+  Establishes the adopted design overlay for Sunport Commerce Center, coordinating land use, multimodal circulation, street and block design, access, parking, landscaping, signage, architecture, drainage, utilities, and development review around the airport employment district.
+
+  [Official County PDF](https://www.bernco.gov/planning/wp-content/uploads/sites/58/2021/03/Sunport-Commerce-Center-DOZ_Final-June-27-2019.pdf) · [Check the current County transportation-plan library](https://www.bernco.gov/public-works/transportation-planning/transportation-plans)
+
 ## Southwest Mesa and Volcano Area
 
 - [Southwest Area Plan (Bernalillo County 2001; Albuquerque 2002)](https://files.abqinfo.com/development-land-use/area-sector-plans/abc-southwest-area-plan-2001-2002.pdf)
