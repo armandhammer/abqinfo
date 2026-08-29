@@ -1,6 +1,6 @@
 {
-  "recorded_at": "2026-08-29T16:12:08.3953201Z",
-  "completed_item_range": "PR68: archived and validated 4 City-hosted records totaling 4030366 bytes; added a 2015 dynamic-XFA MS4 transitional annual report with viewer warning, the 2015 Water Year monitoring overview, the 2015 Alameda Drain Trail planning notice, and NMDOT 2040 plan Albuquerque advisory-committee briefing; completed retained-source audits for all 4 official City metadata pages",
+  "recorded_at": "2026-08-29T18:46:38.5698261Z",
+  "completed_item_range": "Retained-source expansion 19 corrected: three usable records validated; unusable XFA placeholder excluded and removed from R2",
   "total_candidates": 6366,
   "counts_by_status": {
     "pending review": 3982,
@@ -11,8 +11,8 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 65,
-    "validated": 691,
-    "excluded": 775,
+    "validated": 690,
+    "excluded": 776,
     "duplicate": 787,
     "superseded": 35,
     "blocked": 0,
@@ -20,10 +20,6 @@
   },
   "remaining_nonterminal": 4051,
   "next_pending_id": "src-0004d9e0318a9df5",
-  "blockers": [
-    "Volcano View Trailhead and West Mesa Trails Map is 140275508 bytes (133.78 MiB) and requires explicit approval before R2 upload.",
-    "Laurelwood Median and Parkway Conceptual Study remains pending because the official City managed-file-transfer page did not expose a downloadable file; resolve its authoritative endpoint before archival.",
-    "The Mountain View Environmental Inventory ArcGIS preview resolves from the official workshop PDF but its item metadata and data return permission error 403; monitor the County project page for public release."
-  ],
-  "resume_command": "& .\\scripts\\project\\Get-Candidate.ps1 -Id 'src-0004d9e0318a9df5'"
+  "blockers": [],
+  "resume_command": ".\\scripts\\project\\Invoke-ProjectValidation.ps1"
 }

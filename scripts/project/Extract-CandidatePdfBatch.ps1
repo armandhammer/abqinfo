@@ -17,11 +17,21 @@ $results = foreach ($id in $Ids) {
   $parsed = (& $python "$PSScriptRoot/extract_pdf.py" $candidate.local_path) | ConvertFrom-Json
   $textPath = [IO.Path]::ChangeExtension($candidate.local_path,'.txt')
   [IO.File]::WriteAllText([IO.Path]::GetFullPath($textPath), [string]$parsed.text, [Text.UTF8Encoding]::new($false))
-  $candidate.status = 'parsed'
-  $note = "PDF pages: $($parsed.pages); extracted text: $textPath"
+  if ($parsed.xfa_placeholder) {
+    $candidate.status = 'excluded'
+    $candidate.exclusion_reason = "Dynamic Adobe XFA PDF exposes only the standard 'Please wait...' placeholder; do not archive or publish unless a usable authoritative non-XFA version is found."
+    $candidate.validation_status = 'excluded by unusable-XFA policy'
+  } else {
+    $candidate.status = 'parsed'
+  }
+  $note = if ($parsed.xfa_placeholder) {
+    "Excluded automatically: dynamic Adobe XFA PDF exposes only the standard 'Please wait...' placeholder in ordinary PDF viewers."
+  } else {
+    "PDF pages: $($parsed.pages); extracted text: $textPath"
+  }
   $candidate.processing_notes = @(@($candidate.processing_notes) + $note | Sort-Object -Unique)
   $candidate.updated_at = (Get-Date).ToUniversalTime().ToString('o')
-  [pscustomobject]@{ id=$id; pages=[int]$parsed.pages; text_path=$textPath; embedded_links=@($parsed.links).Count }
+  [pscustomobject]@{ id=$id; pages=[int]$parsed.pages; text_path=$textPath; embedded_links=@($parsed.links).Count; xfa_placeholder=[bool]$parsed.xfa_placeholder; status=[string]$candidate.status }
 }
 
 $counts = [ordered]@{}

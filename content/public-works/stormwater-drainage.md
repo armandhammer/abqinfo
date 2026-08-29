@@ -146,12 +146,6 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
   [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/bacterial-tmdl-report-wy-2015-030616.pdf)
 
-- [City of Albuquerque MS4 Transitional Annual Report, January-June 2015 (Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-transitional-annual-report-january-june-2015.pdf)
-
-  Records January-June 2015 municipal stormwater program metrics, including impaired waters, construction inspections, enforcement, illicit-discharge response, post-construction review, municipal operations, spending, staffing, monitoring, and interagency responsibilities.
-
-  This is a dynamic Adobe XFA form. Most browser viewers show only a placeholder page; desktop Adobe Acrobat Reader may be required to display its populated data. [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/annual_report_ver-6-102815.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/annual_report_ver-6-102815.pdf)
-
 - [City of Albuquerque NPDES Permit Transitional Update (2015 archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-npdes-ms4-permit-transitional-update-2015.pdf)
 
   Documents the 2015 Albuquerque transition from its former Phase I municipal stormwater permit to the watershed-based MS4 permit, reconciling reporting periods, monitoring, program responsibilities, and compliance activities.

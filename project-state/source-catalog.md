@@ -1,8 +1,8 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-29T16:12:05.3497353Z
+Generated: 2026-08-29T18:46:36.3825244Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 6366 candidates and 544 R2 objects totaling 6406742612 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 6366 candidates and 543 R2 objects totaling 6404642633 bytes.
 
 ## Queue status
 
@@ -16,8 +16,8 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 65 |
-| validated | 691 |
-| excluded | 775 |
+| validated | 690 |
+| excluded | 776 |
 | duplicate | 787 |
 | superseded | 35 |
 | blocked | 0 |
@@ -245,7 +245,6 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | City of Albuquerque MS4 Annual Report, FY 2024 | City of Albuquerque | 2024 | PDF | 17945612 | content/public-works/stormwater-drainage.md | [source](https://www.cabq.gov/municipaldevelopment/documents/nmr04a014-fy24-signed-compiled.pdf/view) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-annual-report-fy2024.pdf) |
 | City of Albuquerque MS4 Annual Report, FY 2025 | City of Albuquerque | 2025-12 | PDF | 45666232 | content/public-works/stormwater-drainage.md | [source](https://www.cabq.gov/municipaldevelopment/documents/fy25-city-of-albuquerque-ms4-report-december-2025.pdf/view) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-annual-report-fy2025.pdf) |
 | City of Albuquerque MS4 Monitoring Data for Water Year 2015 | City of Albuquerque | 2016-03-25 | PDF | 127553 | content/public-works/stormwater-drainage.md | [source](https://www.cabq.gov/municipaldevelopment/documents/water-year-2015-report-032516.pdf/view) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-monitoring-data-water-year-2015.pdf) |
-| City of Albuquerque MS4 Transitional Annual Report, January-June 2015 | City of Albuquerque | 2015-10-28 | PDF | 2099979 | content/public-works/stormwater-drainage.md | [source](https://www.cabq.gov/municipaldevelopment/documents/annual_report_ver-6-102815.pdf/view) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-transitional-annual-report-january-june-2015.pdf) |
 | City of Albuquerque NPDES Permit Transitional Update | City of Albuquerque | 2015 | PDF | 73507 | content/public-works/stormwater-drainage.md | [source](https://www.cabq.gov/municipaldevelopment/documents/transitional-update-for-city-of-albuquerque-npdes-permit-2015.pdf/view) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-npdes-ms4-permit-transitional-update-2015.pdf) |
 | City of Albuquerque Open Space Overview Map | City of Albuquerque | undated | PDF | 3880614 | content/maps/maps.md | [source](https://www.cabq.gov/parksandrecreation/open-space/facilities-map) | [R2](https://files.abqinfo.com/public-works/parks-recreation/cabq-open-space-overview-map.pdf) |
 | City of Albuquerque Performance Plan, Fiscal Year 2008 | City of Albuquerque | FY 2008 | PDF | 5529512 | content/city-data/budget-spending.md | [source](https://www.cabq.gov/dfa/budget/annual-budget) | [R2](https://files.abqinfo.com/city-data/budget-spending/cabq-performance-plan-fy2008.pdf) |
@@ -1728,6 +1727,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-53a7c1264d43663c | excluded | 7 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-53b993d84a9f33c7 | excluded | 3 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-53e59986c87117d8 | excluded | Next 20 items | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
+| src-562a82df31fbf277 | excluded | City of Albuquerque MS4 Transitional Annual Report, January-June 2015 | Dynamic Adobe XFA PDF displays only the standard 'Please wait...' placeholder and did not load in a browser or Adobe Acrobat Reader; excluded from publication and archival. Reconsider only if a usable authoritative non-XFA version is found. |
 | src-565c91aa1b709ed0 | excluded | 12 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-5674f3bca8e7b191 | excluded | Public Involvement Portal and Toolbox | User-approved relevance cleanup: statewide participation toolbox adds little value beside specific project pages. |
 | src-571b677f3f5439cb | excluded | 18 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
