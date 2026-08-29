@@ -1,6 +1,6 @@
 {
-  "recorded_at": "2026-08-29T19:48:51.5062790Z",
-  "completed_item_range": "Expansion 21: 121 deterministic noise/duplicate records resolved and five Connections 2040 appendices archived, implemented, and validated",
+  "recorded_at": "2026-08-29T20:00:54.4187677Z",
+  "completed_item_range": "Low-token reconciliation: 65 published records audited; 60 validated, 3 moved to provenance review, and all 3,850 pending records scored with the top 500 saved as the review shortlist",
   "total_candidates": 6366,
   "counts_by_status": {
     "pending review": 3850,
@@ -10,16 +10,16 @@
     "parsed": 0,
     "description drafted": 0,
     "placement assigned": 0,
-    "implemented": 65,
-    "validated": 701,
+    "implemented": 2,
+    "validated": 761,
     "excluded": 779,
     "duplicate": 905,
     "superseded": 35,
     "blocked": 0,
-    "requires human review": 27
+    "requires human review": 30
   },
-  "remaining_nonterminal": 3919,
+  "remaining_nonterminal": 3856,
   "next_pending_id": "src-0004d9e0318a9df5",
   "blockers": [],
-  "resume_command": ".\\scripts\\project\\Invoke-ProjectValidation.ps1"
+  "resume_command": ".\\scripts\\project\\Get-CandidatesByStatus.ps1 -Status 'pending review'; review project-state/discovery/pending-review-priority.json from rank 1"
 }
