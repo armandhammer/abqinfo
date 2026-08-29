@@ -161,6 +161,14 @@ Reference drawings, engineering details, and technical guidance related to trans
 
   [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/05/Bernco_Solar_PV_Array_Guidance_V2_03172025-signed.pdf) · [Development Process placement](/development-land-use/development-process/#county-development-review)
 
+## Regional Planning and Design Guidance
+
+- [MRMPO Long-Range Transportation System Guidelines - 2020 Update (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-connections-2040-mtp-appendix-e-long-range-transportation-system-guide-2020.pdf)
+
+  Preserves the 2020 regional guidance for land-use context, multimodal networks, roadway design, right-of-way, intersections, traffic calming, bicycle and pedestrian infrastructure, road diets, and performance measures.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/4209/Appendix-E---Long-Range-Transportation-Systems-Guide-2020-PDF) · [Current 2026 Guide and System Maps]({{< relref "transportation-plans.md#2026-long-range-transportation-system-maps" >}})
+
 ## NMDOT Design and Planning Guidance
 
 Reference guidance for quick-build transportation and multimodal safety projects.

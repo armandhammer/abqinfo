@@ -1,14 +1,14 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-29T18:46:36.3825244Z
+Generated: 2026-08-29T19:14:21.8308100Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 6366 candidates and 543 R2 objects totaling 6404642633 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 6366 candidates and 549 R2 objects totaling 6534792074 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 3982 |
+| pending review | 3976 |
 | approved for addition | 0 |
 | downloading | 0 |
 | downloaded | 4 |
@@ -16,7 +16,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 65 |
-| validated | 690 |
+| validated | 696 |
 | excluded | 776 |
 | duplicate | 787 |
 | superseded | 35 |
@@ -449,12 +449,18 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | MRMPO Transportation Improvement Program, FFY 2024-2029 - Approved Snapshot (August 2026) | Mid-Region Metropolitan Planning Organization | 2026-08-25 | PDF | 4747100 | content/transportation/transportation-plans.md | [source](https://mrmpo.nm.tipviewer.pmgpro.com/) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-ffy-2024-2029-approved-tip-2026-08-25.pdf) |
 | Albuquerque Metropolitan Planning Area Boundary Map | MRCOG | 2020-07-06 | PDF | 6665791 | content/maps/maps.md | [source](https://www.mrcog-nm.gov/581/Transportation-Planning) | [R2](https://files.abqinfo.com/maps/mrmpo-albuquerque-metropolitan-planning-area-map-2020.pdf) |
 | Bernalillo County / International Sunport Station Area Sector Development Plan | MRCOG | 2009-11-24 | PDF | 7904254 | content/transportation/transit/rail-runner.md | [source](https://www.mrcog-nm.gov/327/Bernalillo-County-Sunport-Plan) | [R2](https://files.abqinfo.com/transportation/transit/rail-runner/mrcog-bernalillo-county-sunport-station-area-plan-2009.pdf) |
+| Connections 2040 Appendix A: Metropolitan Transportation Plan Project List | MRCOG | 2020-04-17 | PDF | 452230 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/267/MTP-Archive) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-connections-2040-mtp-appendix-a-project-list-2020.pdf) |
+| Connections 2040 Appendix E: Long-Range Transportation System Guidelines - 2020 Update | MRCOG | 2020 | PDF | 15695954 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/267/MTP-Archive) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-connections-2040-mtp-appendix-e-long-range-transportation-system-guide-2020.pdf) |
 | FFY 2024-2029 TIP ITS Project Review and Architecture Certification | MRCOG | 2023-07-16 | PDF | 696615 | content/transportation/operations-data.md | [source](https://www.mrcog-nm.gov/259/Intelligent-Transportation-Systems) | [R2](https://files.abqinfo.com/transportation/operations-data/mrmpo-ffy2024-2029-tip-its-review-certification-2023.pdf) |
 | Incident Management Plan for the Albuquerque Metropolitan Planning Area | MRCOG | 2022-06-13 | PDF | 5444698 | content/transportation/operations-data.md | [source](https://www.dot.nm.gov/highway-operations-program/operations-support-division-director/intelligent-transportation-systems/) | [R2](https://files.abqinfo.com/transportation/operations-data/mrmpo-incident-management-plan-ampa-2022.pdf) |
 | Long-Range Transportation System Guide | MRCOG | 2026-06 | PDF | 36052676 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/512/Long-Range-Transportation-System-Guide) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-long-range-transportation-system-guide-2026.pdf) |
 | MRCOG Regional Transportation Safety Action Plan (2024) | MRCOG | 2024 | PDF | 26047323 | content/transportation/bicycling/safety-crash-data.md | [source](https://www.mrcog-nm.gov/255/Safety-for-All-Modes) | [R2](https://files.abqinfo.com/transportation/safety-data/mrcog-regional-transportation-safety-action-plan-2024.pdf) |
+| MRMPO 2035 Metropolitan Transportation Plan - Complete Plan and Appendices | MRCOG | 2011-04-15 | PDF | 22718486 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/267/MTP-Archive) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-2035-mtp-complete-appendices-2011-2014.pdf) |
 | MRMPO 2045 Metropolitan Transportation Plan | MRCOG |  | PDF | 52421513 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/264/Metropolitan-Transportation-Plan) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-2045-mtp-final-2025-04-29.pdf) |
 | MRMPO 2045 Metropolitan Transportation Plan - Full Appendix | MRCOG |  | PDF | 3819571 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/264/Metropolitan-Transportation-Plan) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-2045-mtp-final-full-appendix-2025-05-01.pdf) |
+| MRMPO Connections 2040 Metropolitan Transportation Plan | MRCOG | 2020-04-17 | PDF | 59514796 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/267/MTP-Archive) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-connections-2040-mtp-2020.pdf) |
+| MRMPO Futures 2040 Metropolitan Transportation Plan | MRCOG | 2015-04-17 | PDF | 20618666 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/267/MTP-Archive) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-futures-2040-mtp-2015-2017.pdf) |
+| MRMPO Futures 2040 Metropolitan Transportation Plan - Appendices | MRCOG | 2015-04-17 | PDF | 11149309 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/267/MTP-Archive) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-futures-2040-mtp-appendices-2015-2017.pdf) |
 | MRMPO Long-Range Bikeway System Map | MRCOG | 2026-07-02 | PDF | 821672 | content/maps/maps.md | [source](https://www.mrcog-nm.gov/544/Long-Range-System-Maps) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-long-range-bikeway-system-map-2026.pdf) |
 | MRMPO Long-Range Pedestrian System Map | MRCOG | 2026-07-02 | PDF | 592082 | content/maps/maps.md | [source](https://www.mrcog-nm.gov/544/Long-Range-System-Maps) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-long-range-pedestrian-system-map-2026.pdf) |
 | MRMPO Long-Range Roadway System Map | MRCOG | 2026-07-02 | PDF | 613512 | content/maps/maps.md | [source](https://www.mrcog-nm.gov/544/Long-Range-System-Maps) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-long-range-roadway-system-map-2026.pdf) |
