@@ -74,6 +74,32 @@ Project contact: Bridgette Garrett at DMD, bgarrett@cabq.gov
 
 ### Bernalillo County Corridor Projects
 
+- [Atrisco Vista Boulevard Reconstruction](https://www.bernco.gov/public-works/blog/2021/04/16/atrisco-vista-boulevard-improvement-project/)
+
+  Tracks reconstruction and realignment from Double Eagle II Road to Paseo del Norte, including bicycle lanes, future trail grading, drainage, right-of-way acquisition, environmental review, and phased design and construction.
+
+  [Project Flyer (2021 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-atrisco-vista-reconstruction-flyer-2021.pdf) · [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/09/Atrisco-Vista-Blvd_ReconstructionPrj_Flyer_R2.pdf)
+
+- [Gatewood Avenue Improvements](https://www.bernco.gov/public-works/blog/2021/04/16/gatewood-avenue-improvements/)
+
+  Documents the planned corridor improvements between Bridge Boulevard and Five Points Road, preserving the project geography and its relationship to Goff Boulevard, neighborhood streets, homes, and businesses.
+
+  [Project Map (2025 Archived Image)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-gatewood-avenue-project-map-2025.png) · [Official County Image](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/06/Gatewood-Map-for-projects-page.png)
+
+- [Hardy Court Improvements](https://www.bernco.gov/public-works/blog/2025/02/20/hardy-ct-improvements/)
+
+  Tracks roadway and drainage improvements near Riverside Drive, including residential access, a storm-drain outfall, and the project's relationship to the West Riverside Drain and Rio Grande bosque.
+
+  [Project Map (2025 Archived Image)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-hardy-court-project-map-2025.jpg) · [Official County Image](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/02/Hardy-Ct-Map.jpg)
+
+- [Rio Bravo Boulevard and Second Street Intersection](https://www.bernco.gov/public-works/blog/2021/04/16/rio-bravo-2nd-st-intersection/)
+
+  Connects the County intersection record with the natural-gas pipeline relocation needed before NMDOT replaces the Rio Bravo bridge, including safety, service, schedule, traffic, air-quality, and construction information.
+
+  [Gas-Pipeline Relocation Resident FAQ (2025 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-rio-bravo-bridge-pipeline-relocation-faq-2025.pdf) · [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/07/Final-Rio-Bravo-Full-FAQs.pdf)
+
+  Pipeline-relocation questions: [Neighbors@nmgco.com](mailto:Neighbors@nmgco.com)
+
 - [Dennis Chavez Boulevard and Condershire Drive Intersection Safety Improvements](https://www.bernco.gov/public-works/blog/2025/11/25/condershire-dr-nm500-dennis-chavez-blvd-intersection-improvements)
 
   Tracks the County safety project to add signalization, turn lanes, intersection lighting, and roadway widening at Dennis Chavez Boulevard and Condershire Drive, with design scheduled for early 2026 and construction dependent on funding.
@@ -87,6 +113,8 @@ Project contact: Bridgette Garrett at DMD, bgarrett@cabq.gov
   Tracks phased roadway and drainage improvements beginning on Tapia Boulevard between Robertson Avenue and San Ygnacio Road, including sidewalks, curb and gutter, right-of-way needs, 60-percent design, and currently unfunded construction.
 
   [Public Information Meeting Presentation (2025 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-san-ygnacio-tapia-public-information-2025.pdf)
+
+  [Tapia Boulevard Phase IA Proposed Roadway Section (2025 Archived Image)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-tapia-boulevard-phase-1a-section-2025.png) · [Official County Image](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/04/Tapia-Blvd-Phase-1A-Project.png)
 
   Project contact: Jennifer Flor, 505-350-7833, [jflor@bernco.gov](mailto:jflor@bernco.gov)
 
@@ -229,6 +257,12 @@ Questions, construction concerns, or text-alert assistance: email [info@i25impro
   Lists current event and seasonal construction moratoriums, affected street boundaries, downloadable maps, dates, and the live map used to coordinate safe traffic operations during major Albuquerque events.
 
 ## Past Projects (2020 and Earlier)
+
+- [Paseo del Norte Access to Fire Station 35](https://www.bernco.gov/public-works/blog/2021/04/15/paseo-del-norte-access-fire-station-35/)
+
+  Preserves the completed frontage-road access project serving Fire Station 35, including the station, access road, Eubank and Tramway boulevards, neighborhood streets, drainage corridors, and surrounding North Albuquerque Acres area.
+
+  [Project Map (Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-fire-station-35-access-map.pdf) · [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/Map-Fire-Station-35.pdf)
 
 - [Bernalillo County Transportation Projects Update (2015 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-transportation-projects-update-2015.pdf)
 

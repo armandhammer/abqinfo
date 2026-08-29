@@ -56,6 +56,10 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
 ## Historical County Drainage Projects
 
+- [Hardy Court Improvements — Project Map (2025 Archived Image)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-hardy-court-project-map-2025.jpg)
+
+  Maps the roadway and drainage project near Riverside Drive, including residential access, the proposed storm-drain outfall, West Riverside Drain, Rio Grande bosque, and surrounding neighborhood context. [Official County project page](https://www.bernco.gov/public-works/blog/2025/02/20/hardy-ct-improvements/)
+
 - [Arenal Storm Drain Project — Site Map (2021 Archived PDF)](https://files.abqinfo.com/public-works/stormwater/bernco-arenal-storm-drain-project-map-2021.pdf)
 
   Maps the Arenal storm-drain project mailing area and its relationship to Coors Boulevard, Arenal Road, neighborhood streets, canals, ditches, laterals, and the Isleta Drain in the South Valley.

@@ -163,6 +163,38 @@ Interactive maps of city data and infrastructure.
 
 ## County Project Maps
 
+- [South Valley Drinking Water Project Phase 7 Map (2015 Archived PDF)](https://files.abqinfo.com/public-works/capital-projects/bernco-south-valley-water-phase-7-map-2015.pdf)
+
+  Maps Phase 7 pipeline routes, service areas, project limits, roads, waterways, railroad infrastructure, and connections within the County's larger phased utility program. [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/15/south-valley-drinking-water-project/)
+
+- [South Valley Drinking Water Project Overall Phasing Map (2014 Archived PDF)](https://files.abqinfo.com/public-works/capital-projects/bernco-south-valley-water-overall-phasing-map-2014.pdf)
+
+  Maps completed, construction, and identified phases, including transmission pipelines, reservoirs, booster facilities, service areas, major roads, waterways, and the program's geographic progression. [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/15/south-valley-drinking-water-project/)
+
+- [Atrisco Vista Boulevard Reconstruction Map (2021 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-atrisco-vista-reconstruction-flyer-2021.pdf)
+
+  Maps the first reconstruction phase from Double Eagle II Road to Paseo del Norte, including realignment, bicycle lanes, future trail grading, drainage, right-of-way, and environmental context. [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/16/atrisco-vista-boulevard-improvement-project/)
+
+- [Gatewood Avenue Improvements Map (2025 Archived Image)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-gatewood-avenue-project-map-2025.png)
+
+  Maps the corridor between Bridge Boulevard and Five Points Road over aerial imagery, showing the project alignment, Goff Boulevard, homes, businesses, and neighborhood context. [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/16/gatewood-avenue-improvements/)
+
+- [South Coors Boulevard Sector Plan Boundary Map (2025 Archived Image)](https://files.abqinfo.com/development-land-use/area-sector-plans/bernco-south-coors-sector-plan-boundary-map-2025.png)
+
+  Maps the corridor planning boundary from Bridge Boulevard to Gun Club Road, identifying community activity areas, neighborhood associations, County properties, major streets, and the Bridge Boulevard plan area. [Official County project page](https://www.bernco.gov/public-works/blog/2025/02/12/south-coors-boulevard-sector-development-plan/)
+
+- [Hardy Court Improvements Map (2025 Archived Image)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-hardy-court-project-map-2025.jpg)
+
+  Maps the roadway and drainage project near Riverside Drive, showing the improvement limits, residential access, storm-drain outfall, West Riverside Drain, and Rio Grande bosque. [Official County project page](https://www.bernco.gov/public-works/blog/2025/02/20/hardy-ct-improvements/)
+
+- [Tapia Boulevard Phase IA Proposed Roadway Section (2025 Archived Image)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-tapia-boulevard-phase-1a-section-2025.png)
+
+  Illustrates the proposed roadway section between San Ygnacio Road and Robertson Avenue, including travel lanes, curb and gutter, sidewalk, roadway crown, and right-of-way limits. [Official County project page](https://www.bernco.gov/public-works/blog/2025/04/24/san-ygnacio-rd-and-tapia-blvd-phase-1a-improvements)
+
+- [Paseo del Norte Access to Fire Station 35 Map (Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-fire-station-35-access-map.pdf)
+
+  Locates Fire Station 35, its frontage-road access, Eubank and Tramway boulevards, neighborhood streets, drainage corridors, and the surrounding North Albuquerque Acres area. [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/15/paseo-del-norte-access-fire-station-35/)
+
 - [El Camino Real National Historic Trail Route Map (2016 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-el-camino-real-trail-route-map-2016.pdf)
 
   Maps the proposed historic-trail route, trail segments, heritage sites, parks, schools, transit, waterways, neighborhoods, and connections from the Pueblo of Isleta to Alameda. [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/16/el-camino-real-national-historic-trail-development-concept-plan/)
