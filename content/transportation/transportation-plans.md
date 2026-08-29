@@ -54,9 +54,29 @@ Regional plans, long-range plans, and other system-level transportation planning
 
     Lists funded, near-term, and long-term regional bicycle, pedestrian, roadway, preservation, safety, operations, and transit projects, with locations, descriptions, lead agencies, planning costs, and anticipated timeframes. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/4228/Appendix-A---List-of-Projects-PDF)
 
+  - [Appendix B: Illustrative Project List (2020 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-connections-2040-mtp-appendix-b-illustrative-projects-2020.pdf)
+
+    Documents unfunded regional projects that could enter the metropolitan plan if resources become available, including Albuquerque-area roadway extensions, interchange reconstruction, transit, trails, and supporting implementation requirements. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/4229/Appendix-B---Illustrative-Listing-of-Projects-PDF)
+
+  - [Appendix C: Projects of Regional Interest (2020 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-connections-2040-mtp-appendix-c-regional-projects-interest-2020.pdf)
+
+    Records the 2020 status of major regional proposals, including the Gibson extension, I-25 projects, Mesa del Sol interchanges, Atrisco Vista, Paseo del Volcan, and cross-river connections. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/4207/Appendix-C---Regional-Projects-of-Special-Interest-PDF)
+
+  - [Appendix D: Financial Plan Detail (2020 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-connections-2040-mtp-appendix-d-financial-plan-2020.pdf)
+
+    Details the revenue forecasts, maintenance and operations costs, capital funding, project expenditures, local sources, federal programs, transit assumptions, and fiscal-constraint calculation supporting Connections 2040. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/4208/Appendix-D---Financial-Plan-Detail-PDF)
+
   - [Appendix E: Long-Range Transportation System Guidelines - 2020 Update (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-connections-2040-mtp-appendix-e-long-range-transportation-system-guide-2020.pdf)
 
     Preserves the 2020 regional guidance for land-use context, multimodal networks, roadway design, right-of-way, intersections, traffic calming, bicycle and pedestrian infrastructure, road diets, and performance measures. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/4209/Appendix-E---Long-Range-Transportation-Systems-Guide-2020-PDF)
+
+  - [Appendix G: Recommended Pathways (2020 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-connections-2040-mtp-appendix-g-recommended-pathways-2020.pdf)
+
+    Compiles regional implementation strategies for mobility, active transportation, economic connections, and resilience, including Complete Streets, road diets, safety audits, transit, connectivity, land use, freight, and climate adaptation. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/4211/Appendix-G---Recommended-Pathways-PDF)
+
+  - [Appendix I: Federal Performance Measures and FAST Act Report (Updated 2022 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-connections-2040-mtp-appendix-i-performance-measures-2022.pdf)
+
+    Preserves MRMPO's updated federal targets and supporting resolutions for roadway safety, infrastructure condition, system performance, transit asset management, and public-transportation agency safety planning through March 2022. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/5663/Appendix-I---Federal-Performance-Measures-and-FAST-Act-Report_31622)
 
 - [MRMPO Futures 2040 Metropolitan Transportation Plan (2015; Modified 2017 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-futures-2040-mtp-2015-2017.pdf)
 
