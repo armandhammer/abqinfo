@@ -122,6 +122,12 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
 ### Historical Permit and Water-Quality Records
 
+- [City of Albuquerque MS4 Monitoring Data for Water Year 2015 (Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-monitoring-data-water-year-2015.pdf)
+
+  Explains Albuquerque's 2015 stormwater monitoring submission, permit transition, reporting cycles, bacterial and chemical loading, wet-weather sampling, dry-weather screening, discharge reports, and related AMAFCA water-quality attachments.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/water-year-2015-report-032516.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/water-year-2015-report-032516.pdf)
+
 - [Albuquerque MS4 Water-Quality Monitoring Status, July 2014-January 2015 (Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-water-quality-monitoring-status-2014-2015.pdf)
 
   Preserves wet-weather sampling dates, storm duration, rainfall, discharge estimates, collection methods, and monitoring-station status for Albuquerque arroyo and stormwater outfalls during FY 2015.
@@ -139,6 +145,12 @@ Technical standards, studies, models, and public references for Albuquerque’s 
   Calculates estimated E. coli loads from major Albuquerque stormwater outfalls during water year 2015 and compares daily results with Middle Rio Grande bacterial TMDL wasteload allocations.
 
   [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/bacterial-tmdl-report-wy-2015-030616.pdf)
+
+- [City of Albuquerque MS4 Transitional Annual Report, January-June 2015 (Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-transitional-annual-report-january-june-2015.pdf)
+
+  Records January-June 2015 municipal stormwater program metrics, including impaired waters, construction inspections, enforcement, illicit-discharge response, post-construction review, municipal operations, spending, staffing, monitoring, and interagency responsibilities.
+
+  This is a dynamic Adobe XFA form. Most browser viewers show only a placeholder page; desktop Adobe Acrobat Reader may be required to display its populated data. [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/annual_report_ver-6-102815.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/annual_report_ver-6-102815.pdf)
 
 - [City of Albuquerque NPDES Permit Transitional Update (2015 archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-npdes-ms4-permit-transitional-update-2015.pdf)
 

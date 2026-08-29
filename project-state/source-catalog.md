@@ -1,14 +1,14 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-29T14:48:45.5042682Z
+Generated: 2026-08-29T16:12:05.3497353Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 6366 candidates and 540 R2 objects totaling 6402712246 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 6366 candidates and 544 R2 objects totaling 6406742612 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 3986 |
+| pending review | 3982 |
 | approved for addition | 0 |
 | downloading | 0 |
 | downloaded | 4 |
@@ -16,7 +16,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 65 |
-| validated | 687 |
+| validated | 691 |
 | excluded | 775 |
 | duplicate | 787 |
 | superseded | 35 |
@@ -139,6 +139,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | ABQ RIDE Forward Phase III Recovery Network Report | City of Albuquerque | 2024-05-07 | PDF | 52499555 | content/transportation/transit/abq-ride.md | [source](https://www.cabq.gov/transit/transit-programs-projects/abq-ride-forward) | [R2](https://files.abqinfo.com/transportation/transit/abq-ride-forward/phase-iii-recovery-network-report-2024.pdf) |
 | ABQ RIDE Planning Briefing | City of Albuquerque | 2008-01-23 | PDF | 134960 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-abq-ride-planning-task-force-briefing-2008.pdf) |
 | AHYMO-S4-R2 Hydrologic Model User’s Manual | City of Albuquerque | 2018-09 | PDF | 2131495 | content/public-works/stormwater-drainage.md | [source](https://www.cabq.gov/planning/development-review-services/hydrology-section) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ahymo-s4-r2-hydrologic-model-users-manual-2018.pdf) |
+| Alameda Drain Trail Master Plan and Design Notice | City of Albuquerque | 2015 | PDF | 761311 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/municipaldevelopment/documents/publicflyeralamedadrain2015.pdf/view) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-alameda-drain-trail-master-plan-design-notice-2015.pdf) |
 | Albuquerque Automated Speed Enforcement Regulation | City of Albuquerque | 2022 | PDF | 426248 | content/transportation/roadway-projects/speed-management.md | [source](https://www.cabq.gov/municipaldevelopment/documents/signed-regulations-automated-speed-enforcement.pdf/view) | [R2](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-automated-speed-enforcement-regulation-2022.pdf) |
 | Albuquerque Bikeways and Trails Map | City of Albuquerque | 2026 | PDF | 12779139 | content/transportation/bicycling/bike-maps.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/bike-map) | [R2](https://files.abqinfo.com/transportation/bicycling/maps-guides/cabq-albuquerque-bikeways-trails-map-2026.pdf) |
 | Albuquerque Bird Watching Guide and Map | City of Albuquerque | 2019 | PDF | 762618 | content/maps/maps.md | [source](https://www.cabq.gov/parksandrecreation/open-space/facilities-map) | [R2](https://files.abqinfo.com/public-works/parks-recreation/cabq-albuquerque-bird-watching-guide-map-2019.pdf) |
@@ -243,6 +244,8 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | City of Albuquerque MS4 Annual Report, FY 2023 | City of Albuquerque | 2023 | PDF | 19797543 | content/public-works/stormwater-drainage.md | [source](https://www.cabq.gov/municipaldevelopment/documents/annual-report-fy23-signed-attachments.pdf/view) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-annual-report-fy2023.pdf) |
 | City of Albuquerque MS4 Annual Report, FY 2024 | City of Albuquerque | 2024 | PDF | 17945612 | content/public-works/stormwater-drainage.md | [source](https://www.cabq.gov/municipaldevelopment/documents/nmr04a014-fy24-signed-compiled.pdf/view) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-annual-report-fy2024.pdf) |
 | City of Albuquerque MS4 Annual Report, FY 2025 | City of Albuquerque | 2025-12 | PDF | 45666232 | content/public-works/stormwater-drainage.md | [source](https://www.cabq.gov/municipaldevelopment/documents/fy25-city-of-albuquerque-ms4-report-december-2025.pdf/view) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-annual-report-fy2025.pdf) |
+| City of Albuquerque MS4 Monitoring Data for Water Year 2015 | City of Albuquerque | 2016-03-25 | PDF | 127553 | content/public-works/stormwater-drainage.md | [source](https://www.cabq.gov/municipaldevelopment/documents/water-year-2015-report-032516.pdf/view) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-monitoring-data-water-year-2015.pdf) |
+| City of Albuquerque MS4 Transitional Annual Report, January-June 2015 | City of Albuquerque | 2015-10-28 | PDF | 2099979 | content/public-works/stormwater-drainage.md | [source](https://www.cabq.gov/municipaldevelopment/documents/annual_report_ver-6-102815.pdf/view) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-transitional-annual-report-january-june-2015.pdf) |
 | City of Albuquerque NPDES Permit Transitional Update | City of Albuquerque | 2015 | PDF | 73507 | content/public-works/stormwater-drainage.md | [source](https://www.cabq.gov/municipaldevelopment/documents/transitional-update-for-city-of-albuquerque-npdes-permit-2015.pdf/view) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-npdes-ms4-permit-transitional-update-2015.pdf) |
 | City of Albuquerque Open Space Overview Map | City of Albuquerque | undated | PDF | 3880614 | content/maps/maps.md | [source](https://www.cabq.gov/parksandrecreation/open-space/facilities-map) | [R2](https://files.abqinfo.com/public-works/parks-recreation/cabq-open-space-overview-map.pdf) |
 | City of Albuquerque Performance Plan, Fiscal Year 2008 | City of Albuquerque | FY 2008 | PDF | 5529512 | content/city-data/budget-spending.md | [source](https://www.cabq.gov/dfa/budget/annual-budget) | [R2](https://files.abqinfo.com/city-data/budget-spending/cabq-performance-plan-fy2008.pdf) |
@@ -336,6 +339,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Near Heights Metropolitan Redevelopment Area Plan | City of Albuquerque | 2000 | PDF | 4564881 | content/development-land-use/redevelopment-plans.md | [source](https://www.cabq.gov/mra/redevelopment-areas/near-heights) | [R2](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-near-heights-mra-plan-2000.pdf) |
 | Neighborhood Traffic Management Program Policy Manual | City of Albuquerque | 2015-02 | PDF | 4806199 | content/transportation/roadway-projects/speed-management.md | [source](https://www.cabq.gov/council/projects/completed-projects/2015/neighborhood-traffic-management-program-policy-manual) | [R2](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-ntmp-policy-manual-2015.pdf) |
 | Neighborhood Traffic Management Program Study Group Draft | City of Albuquerque | 2010-09-07 | PDF | 11386572 | content/transportation/roadway-projects/speed-management.md | [source](https://www.cabq.gov/municipaldevelopment/documents/ntmp_study_group_draft_9-7-10.pdf/view) | [R2](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-ntmp-study-group-draft-2010.pdf) |
+| New Mexico 2040 Statewide Long-Range Multimodal Transportation Plan Briefing | City of Albuquerque | 2014-07-14 | PDF | 1041523 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/municipaldevelopment/documents/NMDOTstatewidelongrangeplan_overview_2014_714_GABAC.pdf/view) | [R2](https://files.abqinfo.com/transportation/transportation-plans/nmdot-new-mexico-2040-plan-gabac-briefing-2014.pdf) |
 | Nob Hill Highland Sector Development Plan — Transportation Section | City of Albuquerque | 2007-09; amended through 2014-08 | PDF | 8234679 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-nob-hill-highland-sector-plan-transportation-2007-2014.pdf) |
 | North Diversion Channel and Paseo del Nordeste Trail Guide | City of Albuquerque | 2020-05-04 | PDF | 62877513 | content/transportation/bicycling/bike-maps.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1) | [R2](https://files.abqinfo.com/transportation/bicycling/maps-guides/cabq-north-diversion-channel-paseo-del-nordeste-trail-guide-2020.pdf) |
 | North Diversion Channel and Paseo del Nordeste Trail Map | City of Albuquerque | 2020 | PDF | 974617 | content/transportation/bicycling/bike-maps.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1) | [R2](https://files.abqinfo.com/transportation/bicycling/maps-guides/cabq-north-diversion-channel-paseo-del-nordeste-trail-map-2020.pdf) |
