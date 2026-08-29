@@ -46,6 +46,12 @@ Regional roadway operations, traffic analysis, incident management, and intellig
 
 ## Bernalillo County Street Operations
 
+- [Alameda Adaptive Signal Project Phase 2 — Location Map (2021 Archived PDF)](https://files.abqinfo.com/transportation/operations-data/bernco-alameda-adaptive-signal-phase-2-map-2021.pdf)
+
+  Maps Phase 2 of the Alameda adaptive-signal corridor from Coors Boulevard through the NM 528 and Cottonwood area, with an inset locating the project in Albuquerque's regional roadway network.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/AlamedaAdaptiveSignalProj2-map.pdf) · [Official County Project Page](https://www.bernco.gov/public-works/blog/2021/04/16/alameda-adaptive-signal-project-phase-2/)
+
 - [Street Maintenance](https://www.bernco.gov/public-works/public-works-services/road-safety-conditions/streets-traffic-signals/street-maintenance)
 
   Explains Bernalillo County's roadway-maintenance responsibilities and service requests for pavement, potholes, grading, signs, striping, vegetation, snow response, and related conditions in unincorporated areas.

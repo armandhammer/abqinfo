@@ -161,7 +161,67 @@ Interactive maps of city data and infrastructure.
 
   This live Bernalillo County GIS service maps development areas in the unincorporated county covered by the adopted Albuquerque/Bernalillo County Comprehensive Plan. It supports interactive viewing and structured geographic data access through the county's public map service.
 
-## County Roadway Project Maps
+## County Project Maps
+
+- [El Camino Real National Historic Trail Route Map (2016 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-el-camino-real-trail-route-map-2016.pdf)
+
+  Maps the proposed historic-trail route, trail segments, heritage sites, parks, schools, transit, waterways, neighborhoods, and connections from the Pueblo of Isleta to Alameda. [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/16/el-camino-real-national-historic-trail-development-concept-plan/)
+
+- [Isleta Drain Trail Reference Map (2021 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-isleta-drain-trail-reference-map-2021.pdf)
+
+  Maps the South Valley drain and trail network alongside parks, schools, open spaces, community facilities, drainage ponds, neighborhoods, and other public destinations. [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/16/isleta-drain-master-plan/)
+
+- [Isleta Drain Trail Aerial Network Map (2021 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-isleta-drain-trail-aerial-map-2021.pdf)
+
+  Places the trail network, drains, canals, acequias, schools, parks, community facilities, and neighborhoods over aerial imagery showing the South Valley's built and agricultural context. [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/16/isleta-drain-master-plan/)
+
+- [Edith Boulevard and Vineyard Road Improvements Map (2021 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-edith-vineyard-project-map-2021.pdf)
+
+  Distinguishes the Edith Boulevard mill-and-overlay, Vineyard Road reconstruction, and sidewalk-repair areas near Osuna Road, Second Street, and North Valley neighborhoods. [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/16/county-wide-road-improvements-project-phase-5-edith-boulevard-and-vineyard-road/)
+
+- [Alameda Adaptive Signal Project Phase 2 Map (2021 Archived PDF)](https://files.abqinfo.com/transportation/operations-data/bernco-alameda-adaptive-signal-phase-2-map-2021.pdf)
+
+  Maps the adaptive-signal corridor from Coors Boulevard through the NM 528 and Cottonwood area, with an inset showing its regional location. [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/16/alameda-adaptive-signal-project-phase-2/)
+
+- [Alameda Boulevard Median Landscape Plans (2021 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-alameda-median-landscape-plans-2021.pdf)
+
+  Shows the Phase II median planting layout, irrigation and landscape elements, roadway context, and completed project limits. [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/16/alameda-boulevard-medians-landscape-renovation-phase-ii/)
+
+- [Arenal Storm Drain Project Site Map (2021 Archived PDF)](https://files.abqinfo.com/public-works/stormwater/bernco-arenal-storm-drain-project-map-2021.pdf)
+
+  Maps the project mailing area, neighborhood streets, canals, ditches, laterals, and the Isleta Drain around Arenal Road and Coors Boulevard. [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/16/arenal-storm-drain/)
+
+- [Paradise Hills Trail Conceptual Improvements Map (2013 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/projects/past/bernco-paradise-hills-trail-concept-map-2013.pdf)
+
+  Distinguishes proposed new asphalt trail from existing trail upgrades along Paradise Boulevard and Unser Boulevard. [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/15/paradise-hills-project/)
+
+- [Sunset Gardens Road Phase 2 Map (2021 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-sunset-gardens-road-phase-2-map-2021.pdf)
+
+  Distinguishes completed Phase 1 from Phase 2 and locates the roadway, detention pond, waterways, and surrounding South Valley streets. [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/15/sunset-gardens-road-phase-2/)
+
+- [Sunset Road Proposed Storm Drain Map (2021 Archived PDF)](https://files.abqinfo.com/public-works/stormwater/bernco-sunset-road-proposed-storm-drain-map-2021.pdf)
+
+  Maps the proposed storm drain between Arenal Road and Bridge Boulevard and its connection to the Sanchez Farm detention pond. [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/15/sunset-road-improvements-project/)
+
+- [Tower Road SW Roadway and Utility Improvements Map (2021 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-tower-road-sw-project-map-2021.pdf)
+
+  Locates the improvement segment east of Unser Boulevard, surrounding parcels and streets, and its position in Albuquerque's west-side network. [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/15/tower-road-sw-roadway-and-utility-improvement/)
+
+- [Vista del Rio Storm Drainage Phase Map (2016 Archived PDF)](https://files.abqinfo.com/public-works/stormwater/bernco-vista-del-rio-drainage-phase-map-2016.pdf)
+
+  Maps completed and construction phases, storm-drain lines, detention ponds, pumped outfalls, flood-hazard areas, and neighborhood streets. [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/15/vista-del-rio-drainage-improvements-phase-4/)
+
+- [Woodward Road Improvements Map (2021 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-woodward-road-project-map-2021.pdf)
+
+  Maps the corridor between Second Street and Broadway Boulevard with the railroad, drains, canals, parcels, industrial streets, and Rio Grande. [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/15/woodward-road-improvements-project/)
+
+- [Blake Road and Coors Boulevard Phases 1–5 Map (2021 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-blake-coors-phases-1-5-map-2021.pdf)
+
+  Maps the first five construction phases around Blake Road and Coors Boulevard and nearby South Valley streets and properties. [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/16/blake-road-and-coors-boulevard-improvements/)
+
+- [Blake Road and Coors Boulevard Phase 6 Map (2021 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-blake-coors-phase-6-map-2021.pdf)
+
+  Maps the final construction segment east of Coors Boulevard and its relationship to Blake Road, nearby streets, and development. [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/16/blake-road-and-coors-boulevard-improvements/)
 
 - [Goff Boulevard Roadway Improvement Project Map (2013 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-goff-boulevard-project-map-2013.pdf)
 

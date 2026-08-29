@@ -66,6 +66,14 @@ Questions or comments email Melissa Roseman at DMD melissaroseman@cabq.gov
 
 ## Past Projects (2020 and Earlier)
 
+### Paradise Hills Trail
+
+- [Conceptual Improvements Map (2013 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/projects/past/bernco-paradise-hills-trail-concept-map-2013.pdf)
+
+  Maps the 2013 Paradise Hills Trail concept along Paradise Boulevard and Unser Boulevard, distinguishing proposed new asphalt trail from existing trail upgrades and locating the project within the surrounding street network.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/PH_Map_6-13.pdf) · [Official County Project Page](https://www.bernco.gov/public-works/blog/2021/04/15/paradise-hills-project/)
+
 ### Silver Avenue Bike Boulevard Review
 
 - [Silver Avenue Bike Boulevard Review (2019 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/projects/cabq-silver-avenue-bike-boulevard-review-2019.pdf)

@@ -238,6 +238,12 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2024/03/AtriscoVistaBlvd_PhaseABStudy_11x17_R2_Without-Appendices.pdf)
 
+- [Atrisco Vista Boulevard Phase A/B Study (2019 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/bernco-atrisco-vista-boulevard-phase-ab-study-2019.pdf)
+
+  Evaluates Atrisco Vista Boulevard alignment, roadway and trail design, traffic, safety, drainage, access, right-of-way, environmental and cultural effects, costs, and implementation, with plan sheets, cross-sections, estimates, and drainage appendices.
+
+  This 132-page predecessor preserves the engineering appendices omitted from the smaller 2024 file. [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/AtriscoVistaBlvd_PhaseABStudy_11x17_R2_WithAppendices.pdf) · [Official County Project Page](https://www.bernco.gov/public-works/blog/2021/04/16/atrisco-vista-boulevard-corridor-study/)
+
 - [Sunport Commerce Center Transportation Plan (2019 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/bernco-sunport-commerce-center-transportation-plan-2019.pdf)
 
   Establishes the adopted roadway, freight, transit, bicycle, pedestrian, access, right-of-way, and capital-improvement framework for the 800-acre industrial district between Second Street, I-25, Woodward Road, and Rio Bravo Boulevard.

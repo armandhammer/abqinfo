@@ -230,6 +230,48 @@ Questions, construction concerns, or text-alert assistance: email [info@i25impro
 
 ## Past Projects (2020 and Earlier)
 
+- [Bernalillo County Transportation Projects Update (2015 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-transportation-projects-update-2015.pdf)
+
+  Summarizes the County's April 2015 transportation portfolio, documenting scope, cost, and schedules for Bridge, Tower, Second Street, Rio Bravo, Sunport, Woodward, Sunset, Old Coors, and other roadway and trail projects.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/MRCOG_BernCo_Pres2015_Handout.pdf) · [Official County Finished-Projects Index](https://www.bernco.gov/public-works/finished-projects)
+
+- [Edith Boulevard and Vineyard Road Improvements](https://www.bernco.gov/public-works/blog/2021/04/16/county-wide-road-improvements-project-phase-5-edith-boulevard-and-vineyard-road/)
+
+  Preserves the completed Edith Boulevard mill-and-overlay and Vineyard Road reconstruction record, including sidewalk repairs and the relationship of the work to Osuna Road, Second Street, and North Valley neighborhoods.
+
+  [Project Map (2021 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-edith-vineyard-project-map-2021.pdf) · [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/Edith-Vineyard-map.pdf)
+
+- [Alameda Boulevard Median Landscape Renovation Phase II](https://www.bernco.gov/public-works/blog/2021/04/16/alameda-boulevard-medians-landscape-renovation-phase-ii/)
+
+  Preserves the County's Phase II median-landscape project record, including planting layouts, irrigation and landscape elements, roadway context, and the limits of the completed Alameda Boulevard renovation.
+
+  [Landscape Plans (2021 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-alameda-median-landscape-plans-2021.pdf) · [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/AlamedaPlanLayout.pdf)
+
+- [Sunset Gardens Road Phase 2](https://www.bernco.gov/public-works/blog/2021/04/15/sunset-gardens-road-phase-2/)
+
+  Preserves the second phase of Sunset Gardens Road drainage improvements, distinguishing it from completed Phase 1 and locating the corridor, detention pond, waterways, and surrounding South Valley streets.
+
+  [Project Map (2021 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-sunset-gardens-road-phase-2-map-2021.pdf) · [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/SunsetGardensPhase2.pdf)
+
+- [Tower Road SW Roadway and Utility Improvements](https://www.bernco.gov/public-works/blog/2021/04/15/tower-road-sw-roadway-and-utility-improvement/)
+
+  Preserves the completed roadway and utility project east of Unser Boulevard, including its short improvement segment, adjacent parcels and streets, and relationship to Albuquerque's west-side roadway network.
+
+  [Project Map (2021 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-tower-road-sw-project-map-2021.pdf) · [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/TowerRdSW.pdf)
+
+- [Woodward Road Improvements](https://www.bernco.gov/public-works/blog/2021/04/15/woodward-road-improvements-project/)
+
+  Preserves the Woodward Road improvement corridor between Second Street and Broadway Boulevard, with geographic context for the railroad, drains, canals, parcels, industrial streets, and Rio Grande.
+
+  [Project Map (2021 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-woodward-road-project-map-2021.pdf) · [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/Woodward_2ndSt2Broadway.pdf)
+
+- [Blake Road and Coors Boulevard Improvements](https://www.bernco.gov/public-works/blog/2021/04/16/blake-road-and-coors-boulevard-improvements/)
+
+  Preserves the County's phased Blake Road and Coors Boulevard construction record, showing work limits around the intersection and nearby South Valley streets, properties, development, and the final segment east of Coors.
+
+  [Phases 1–5 Map (2021 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-blake-coors-phases-1-5-map-2021.pdf) · [Phase 6 Map (2021 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/past/bernco-blake-coors-phase-6-map-2021.pdf) · [Official Phases 1–5 PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/Blake_Coors_Exhibit-1.pdf) · [Official Phase 6 PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/Blake_Coors_Exhibit-2.pdf)
+
 - [Goff Boulevard Improvements](https://www.bernco.gov/public-works/blog/2021/04/15/goff-boulevard-improvements)
 
   Preserves the County project record for rebuilding Goff Boulevard between Bridge and Arenal roads, including roadway and drainage design, detention ponds, storm-drain connections, project limits, and the 2013 community presentation and map.
