@@ -38,6 +38,14 @@ The exact former City download locations for this draft collection have not been
 
   [Official County PDF](https://www.bernco.gov/planning/wp-content/uploads/sites/58/2021/03/Sunport-Commerce-Center-DOZ_Final-June-27-2019.pdf) · [Check the current County transportation-plan library](https://www.bernco.gov/public-works/transportation-planning/transportation-plans)
 
+## South Coors Boulevard
+
+- [South Coors Boulevard Sector Development Plan](https://www.bernco.gov/public-works/blog/2025/02/12/south-coors-boulevard-sector-development-plan/)
+
+  Tracks the County planning effort for the South Coors corridor from Bridge Boulevard to Gun Club Road, including community activity areas, neighborhoods, County properties, major streets, and its relationship to the Bridge Boulevard plan area.
+
+  [Planning Boundary Map (2025 Archived Image)](https://files.abqinfo.com/development-land-use/area-sector-plans/bernco-south-coors-sector-plan-boundary-map-2025.png) · [Official County Image](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/02/South-Coors-Corridor-Sector-Development-Plan-Map.png)
+
 ## Southwest Mesa and Volcano Area
 
 - [Southwest Area Plan (Bernalillo County 2001; Albuquerque 2002)](https://files.abqinfo.com/development-land-use/area-sector-plans/abc-southwest-area-plan-2001-2002.pdf)

@@ -28,6 +28,12 @@ Parks and recreation facilities and programs.
 
 ## System and Facility Plans
 
+- [Rio Grande Indoor Pool Renovation](https://www.bernco.gov/public-works/blog/2021/04/15/rio-grande-indoor-pool/)
+
+  Preserves the County's renovation record and 2014 schematic leisure-pool floor plan, documenting the pool shape, entry features, surrounding deck, building relationship, and accessible circulation concept.
+
+  [Schematic Floor Plan (2014 Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/bernco-rio-grande-indoor-pool-floor-plan-2014.pdf) · [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/RGPoolFloorplanUpdate7-10-14.pdf)
+
 - [ABQ BioPark Master Plan (2014)](https://files.abqinfo.com/public-works/parks-recreation/cabq-biopark-master-plan-2014.pdf)
 
   Sets a comprehensive vision for the Zoo, Aquarium, Botanic Garden, and Tingley Beach, covering visitor experience, animals, circulation, parking, utilities, sustainability, operations, capacity, facilities, and phased capital improvements.

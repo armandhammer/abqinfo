@@ -12,6 +12,12 @@ Public works capital improvement projects.
 
   [Community Workshop 2 (2026 Archived PDF)](https://files.abqinfo.com/public-works/environment/bernco-mountain-view-environmental-inventory-workshop-2026.pdf)
 
+  [Information Pamphlet (2026 Archived PDF)](https://files.abqinfo.com/public-works/environment/bernco-mountain-view-environmental-inventory-pamphlet-2026.pdf) · [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2026/03/MV-EIP-Pamphlet-2.pdf)
+
+  Explains the database contents, agency links, pollution-source information, limitations, community role, project timeline, outreach process, and current project contacts.
+
+  County contact: Dan McGregor, [dmcgregor@bernco.gov](mailto:dmcgregor@bernco.gov) · Consultant contact: Francine Pacheco, [Francine.pacheco@wilsonco.com](mailto:Francine.pacheco@wilsonco.com)
+
 - [City Council Current, Neighborhood, and Completed Projects](https://www.cabq.gov/council/projects)
 
   Opens the Council's unusually useful project archive, which organizes current initiatives, district and neighborhood capital work, completed studies, reports, corridor plans, task-force records, and supporting documents.
@@ -25,6 +31,12 @@ Public works capital improvement projects.
   Maps active and completed Municipal Development projects by phase, category, district, and location, with searchable descriptions covering transportation, traffic engineering, drainage, facilities, and other special projects.
 
 ## Historical Project Snapshots
+
+- [South Valley Drinking Water Project](https://www.bernco.gov/public-works/blog/2021/04/15/south-valley-drinking-water-project/)
+
+  Preserves two maps documenting the phased South Valley water-system expansion, including transmission pipelines, reservoirs, booster facilities, service areas, major roads, waterways, railroad infrastructure, and the program's geographic progression.
+
+  [Phase 7 Map (2015 Archived PDF)](https://files.abqinfo.com/public-works/capital-projects/bernco-south-valley-water-phase-7-map-2015.pdf) · [Overall Phasing Map (2014 Archived PDF)](https://files.abqinfo.com/public-works/capital-projects/bernco-south-valley-water-overall-phasing-map-2014.pdf) · [Official Phase 7 PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/SVDWP_Phase7_overall_4-1-15.pdf) · [Official Overall Map](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/SVWater-Proj-Phases-General-Feb-2014.pdf)
 
 - [DMD 2025 Project Highlights](https://experience.arcgis.com/experience/4b0b1b38bb47411691652499bf2f25cf)
 

@@ -20,7 +20,11 @@ City and regional climate plans, greenhouse-gas inventories, and durable perform
 
   The workshop's ArcGIS preview currently requires permission and is not linked as a public dashboard. [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2026/06/Mountain-View-Workshop-Presentation_May-2026-004.pdf) · [Check the County project page for public release](https://www.bernco.gov/public-works/blog/2026/03/12/mountain-view-environmental-inventory-and-gap-mapping-analysis)
 
-Project contact: Dan McGregor, [dmcgregor@bernco.gov](mailto:dmcgregor@bernco.gov)
+- [Mountain View Environmental Inventory Project — Information Pamphlet (2026 Archived PDF)](https://files.abqinfo.com/public-works/environment/bernco-mountain-view-environmental-inventory-pamphlet-2026.pdf)
+
+  Explains the database contents, agency links, pollution-source information, limitations, community role, project timeline, outreach process, and current County and consultant contacts. [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2026/03/MV-EIP-Pamphlet-2.pdf)
+
+Project contacts: Dan McGregor, [dmcgregor@bernco.gov](mailto:dmcgregor@bernco.gov) · Francine Pacheco, [Francine.pacheco@wilsonco.com](mailto:Francine.pacheco@wilsonco.com)
 
 ## Climate Action Plans
 

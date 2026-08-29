@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-29T00:12:53.7870336Z",
+  "generated_at": "2026-08-29T03:35:48.6964693Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,7 +18,7 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 4030,
+    "pending review": 4014,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 4,
@@ -26,9 +26,9 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 65,
-    "validated": 653,
-    "excluded": 771,
-    "duplicate": 782,
+    "validated": 664,
+    "excluded": 774,
+    "duplicate": 784,
     "superseded": 34,
     "blocked": 0,
     "requires human review": 27
@@ -15068,7 +15068,7 @@
     },
     {
       "id": "src-01468b7cdf2f47be",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/08/4th-St.-Pavement-Preservation-Project-Schedule.pdf",
       "direct_file_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/08/4th-St.-Pavement-Preservation-Project-Schedule.pdf",
       "r2_url": null,
@@ -15099,17 +15099,17 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Imported from deterministic scoped crawl research/discovery/pr63-bernco-finished-project-descendants.json.",
-        "Exact metadata, relevance, and terminal disposition remain pending review."
+        "Reviewed as the previous checkpoint resume item.",
+        "Excluded as an obsolete construction schedule rather than a durable planning or design record."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal timeliness review passed",
+      "exclusion_reason": "Temporary 2025 construction schedule for the Fourth Street road diet; current project scope remains linked on ABQInfo and transient schedules are not archived as durable records.",
       "local_path": null,
       "discovered_at": "2026-08-28T22:00:29.2390943Z",
-      "updated_at": "2026-08-28T22:00:29.2390943Z"
+      "updated_at": "2026-08-29T03:35:39.2831102Z"
     },
     {
       "id": "src-01582dd7631ed92c",
@@ -33062,19 +33062,19 @@
     },
     {
       "id": "src-12887e34b7770ec1",
-      "status": "pending review",
-      "source_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/RGPoolFloorplanUpdate7-10-14.pdf",
+      "status": "validated",
+      "source_url": "https://www.bernco.gov/public-works/blog/2021/04/15/rio-grande-indoor-pool/",
       "direct_file_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/RGPoolFloorplanUpdate7-10-14.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/public-works/parks-recreation/bernco-rio-grande-indoor-pool-floor-plan-2014.pdf",
+      "r2_key": "public-works/parks-recreation/bernco-rio-grande-indoor-pool-floor-plan-2014.pdf",
+      "r2_etag": "60009d380891bdc7fc07ac7b79ad89c7",
+      "r2_last_modified": "08/28/2026 21:25:36",
       "agency": "Bernalillo County",
-      "title": "Proposed Floor Plan",
-      "date": null,
+      "title": "Rio Grande Indoor Pool Renovation — Schematic Floor Plan",
+      "date": "2014-01-09",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 623866,
+      "checksum_sha256": "d98e10f7d521be3a3c29bb165acb956f1353da6a07992d02b838b6801841b965",
       "parent_url": "https://www.bernco.gov/public-works/blog/2021/04/15/rio-grande-indoor-pool/",
       "referring_urls": [
         "https://www.bernco.gov/public-works/blog/2021/04/15/rio-grande-indoor-pool/"
@@ -33088,22 +33088,27 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "source URL recorded from authoritative project graph",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official County project page and byte-identical County-hosted file recorded",
+      "proposed_canonical_page": "content/public-works/parks-recreation.md",
+      "description": "Preserves the 2014 schematic leisure-pool floor plan for the Rio Grande Indoor Pool renovation, documenting the pool shape, entry features, surrounding deck, building relationship, and accessible circulation concept.",
+      "description_word_count": 28,
       "processing_notes": [
-        "Imported from deterministic scoped crawl research/discovery/pr63-bernco-finished-project-descendants.json.",
-        "Exact metadata, relevance, and terminal disposition remain pending review."
+        "Exact size and SHA-256 recorded and the complete floor-plan sheet was rendered and visually reviewed.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative one-page PDF preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "Retained as a historical public recreation-facility design record."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/public-works/parks-recreation.md",
+      "implementation_locations": [
+        null
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-12887e34b7770ec1.pdf",
       "discovered_at": "2026-08-28T22:00:29.2390943Z",
-      "updated_at": "2026-08-28T22:00:29.2390943Z"
+      "updated_at": "2026-08-29T03:34:30.5039676Z"
     },
     {
       "id": "src-1288d4b8b7490606",
@@ -47476,19 +47481,19 @@
     },
     {
       "id": "src-1fd64a58c83c5ba0",
-      "status": "pending review",
-      "source_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/07/Final-Rio-Bravo-Full-FAQs.pdf",
+      "status": "validated",
+      "source_url": "https://www.bernco.gov/public-works/blog/2021/04/16/rio-bravo-2nd-st-intersection/",
       "direct_file_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/07/Final-Rio-Bravo-Full-FAQs.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/current/bernco-rio-bravo-bridge-pipeline-relocation-faq-2025.pdf",
+      "r2_key": "transportation/roadway-projects/current/bernco-rio-bravo-bridge-pipeline-relocation-faq-2025.pdf",
+      "r2_etag": "4f75bb0da5179a6b4a6bd6b36772b4d6",
+      "r2_last_modified": "08/28/2026 21:28:26",
       "agency": "Bernalillo County",
-      "title": "FAQs for Residents From the New Mexico Gas Company",
-      "date": null,
+      "title": "Rio Bravo Bridge Gas-Pipeline Relocation — Resident FAQ",
+      "date": "2025-07",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 51656,
+      "checksum_sha256": "9776cec0badf2a2de334636d6ba70af485a0fe7aebaef38a7b959881650c3dcf",
       "parent_url": "https://www.bernco.gov/public-works/blog/2021/04/16/rio-bravo-2nd-st-intersection/",
       "referring_urls": [
         "https://www.bernco.gov/public-works/blog/2021/04/16/rio-bravo-2nd-st-intersection/"
@@ -47502,22 +47507,27 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "source URL recorded from authoritative project graph",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official County project page and byte-identical County-hosted file recorded",
+      "proposed_canonical_page": "content/transportation/roadway-projects/_index.md",
+      "description": "Explains relocation of the natural-gas pipeline from the Rio Bravo bridge to a bored river crossing before NMDOT bridge replacement, addressing safety, service, schedule, traffic, air quality, and resident contact information.",
+      "description_word_count": 31,
       "processing_notes": [
-        "Imported from deterministic scoped crawl research/discovery/pr63-bernco-current-project-descendants.json.",
-        "Exact metadata, relevance, and terminal disposition remain pending review."
+        "Exact size and SHA-256 recorded and both FAQ pages were rendered and visually reviewed.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative two-page PDF preserved without modification.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Retained because it documents enabling work and public impacts for the future Rio Bravo bridge replacement."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/roadway-projects/_index.md",
+      "implementation_locations": [
+        null
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-1fd64a58c83c5ba0.pdf",
       "discovered_at": "2026-08-28T22:00:29.2390943Z",
-      "updated_at": "2026-08-28T22:00:29.2390943Z"
+      "updated_at": "2026-08-29T03:35:10.3359061Z"
     },
     {
       "id": "src-1fe340b308393e51",
@@ -63607,7 +63617,7 @@
     },
     {
       "id": "src-2f03378f1cf7277a",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2026/05/Phase-1A-Notification.pdf",
       "direct_file_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2026/05/Phase-1A-Notification.pdf",
       "r2_url": null,
@@ -63618,8 +63628,8 @@
       "title": "For more information, please see the SpearD Phase 1A Notification here.",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 186264,
+      "checksum_sha256": "991f5a77114452b5eb10efe480e38d008b2cb68ef7774d368679e6a514fe0b6f",
       "parent_url": "https://www.bernco.gov/public-works/blog/2021/04/16/isleta-boulevard-reconstruction-phase-1/",
       "referring_urls": [
         "https://www.bernco.gov/public-works/blog/2021/04/16/isleta-boulevard-reconstruction-phase-1/"
@@ -63638,17 +63648,17 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Imported from deterministic scoped crawl research/discovery/pr63-bernco-current-project-descendants.json.",
-        "Exact metadata, relevance, and terminal disposition remain pending review."
+        "Reviewed the complete one-page notice.",
+        "Temporary traffic-control notice excluded after the durable project page and design records were preserved."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal timeliness and relevance review passed",
+      "exclusion_reason": "Temporary June 2026 construction flagging and shoulder-closure notice; the durable San Ygnacio/Tapia project record and design materials are retained instead.",
+      "local_path": "research/staging/queue/src-2f03378f1cf7277a.pdf",
       "discovered_at": "2026-08-28T22:00:29.2390943Z",
-      "updated_at": "2026-08-28T22:00:29.2390943Z"
+      "updated_at": "2026-08-29T03:35:33.6407421Z"
     },
     {
       "id": "src-2f094c9ddbb50ce1",
@@ -73775,19 +73785,19 @@
     },
     {
       "id": "src-396f5cf13b358a77",
-      "status": "pending review",
-      "source_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/09/Atrisco-Vista-Blvd_ReconstructionPrj_Flyer_R2.pdf",
+      "status": "validated",
+      "source_url": "https://www.bernco.gov/public-works/blog/2021/04/16/atrisco-vista-boulevard-improvement-project/",
       "direct_file_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/09/Atrisco-Vista-Blvd_ReconstructionPrj_Flyer_R2.pdf",
-      "r2_url": null,
-      "r2_key": null,
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/current/bernco-atrisco-vista-reconstruction-flyer-2021.pdf",
+      "r2_key": "transportation/roadway-projects/current/bernco-atrisco-vista-reconstruction-flyer-2021.pdf",
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "Bernalillo County",
-      "title": "See flyer for detail information.",
-      "date": null,
+      "title": "Atrisco Vista Boulevard Reconstruction Project Flyer",
+      "date": "2021-09",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 5166864,
+      "checksum_sha256": "b4c4c8b694f6dd67359c57b2695db046ba5395c421cf3256a45d240f4d4c41d0",
       "parent_url": "https://www.bernco.gov/public-works/blog/2021/04/16/atrisco-vista-boulevard-improvement-project/",
       "referring_urls": [
         "https://www.bernco.gov/public-works/blog/2021/04/16/atrisco-vista-boulevard-improvement-project/"
@@ -73801,22 +73811,27 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "source URL recorded from authoritative project graph",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official County project page and byte-identical County-hosted file recorded",
+      "proposed_canonical_page": "content/transportation/roadway-projects/_index.md",
+      "description": "Summarizes the first Atrisco Vista reconstruction phase from Double Eagle II Road to Paseo del Norte, including realignment, bicycle lanes, future trail grading, drainage, right-of-way, environmental review, cost, and schedule.",
+      "description_word_count": 30,
       "processing_notes": [
-        "Imported from deterministic scoped crawl research/discovery/pr63-bernco-current-project-descendants.json.",
-        "Exact metadata, relevance, and terminal disposition remain pending review."
+        "Cross-listed on Maps because the flyer clearly illustrates project limits and design geometry.",
+        "Exact size and SHA-256 recorded and all three flyer pages were rendered and visually reviewed.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative three-page PDF preserved without modification."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/transportation/roadway-projects/_index.md",
+      "implementation_locations": [
+        "content/transportation/roadway-projects/_index.md",
+        "content/maps/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-396f5cf13b358a77.pdf",
       "discovered_at": "2026-08-28T22:00:29.2390943Z",
-      "updated_at": "2026-08-28T22:00:29.2390943Z"
+      "updated_at": "2026-08-29T03:34:43.7686155Z"
     },
     {
       "id": "src-39762640544421b6",
@@ -100574,19 +100589,19 @@
     },
     {
       "id": "src-52c0eef8b18c4006",
-      "status": "pending review",
-      "source_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/06/Gatewood-Map-for-projects-page.png",
-      "direct_file_url": null,
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "status": "validated",
+      "source_url": "https://www.bernco.gov/public-works/blog/2021/04/16/gatewood-avenue-improvements/",
+      "direct_file_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/06/Gatewood-Map-for-projects-page.png",
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/current/bernco-gatewood-avenue-project-map-2025.png",
+      "r2_key": "transportation/roadway-projects/current/bernco-gatewood-avenue-project-map-2025.png",
+      "r2_etag": "88f5084546c94b64f1d1b93f2fd4a2ba",
+      "r2_last_modified": "08/28/2026 21:27:06",
       "agency": "Bernalillo County",
-      "title": "Gatewood Map for projects page",
-      "date": null,
-      "file_type": "Image",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "title": "Gatewood Avenue Improvements — Project Map",
+      "date": "2025-06",
+      "file_type": "IMAGE",
+      "size_bytes": 1900863,
+      "checksum_sha256": "b49954652c11b846f1232ad5e30be4d373eca3485ffa34ad2627ac06fece4247",
       "parent_url": "https://www.bernco.gov/public-works/blog/2021/04/16/gatewood-avenue-improvements/",
       "referring_urls": [
         "https://www.bernco.gov/public-works/blog/2021/04/16/gatewood-avenue-improvements/"
@@ -100600,22 +100615,27 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "source URL recorded from authoritative project graph",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official County project page and byte-identical County-hosted file recorded",
+      "proposed_canonical_page": "content/transportation/roadway-projects/_index.md",
+      "description": "Maps the Gatewood Avenue improvement corridor between Bridge Boulevard and Five Points Road, using aerial imagery to show the project alignment, nearby Goff Boulevard, homes, businesses, and neighborhood context.",
+      "description_word_count": 29,
       "processing_notes": [
-        "Imported from deterministic scoped crawl research/discovery/pr63-bernco-current-project-descendants.json.",
-        "Exact metadata, relevance, and terminal disposition remain pending review."
+        "Cross-listed on Maps as the direct geographic summary of the current project.",
+        "Exact size and SHA-256 recorded and the full-resolution project image was visually reviewed.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PNG preserved without modification."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/transportation/roadway-projects/_index.md",
+      "implementation_locations": [
+        "content/transportation/roadway-projects/_index.md",
+        "content/maps/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-52c0eef8b18c4006.png",
       "discovered_at": "2026-08-28T22:00:29.2390943Z",
-      "updated_at": "2026-08-28T22:00:29.2390943Z"
+      "updated_at": "2026-08-29T03:34:48.1420715Z"
     },
     {
       "id": "src-52cb1da1e4e5217d",
@@ -122470,19 +122490,19 @@
     },
     {
       "id": "src-66bde071ea18823a",
-      "status": "pending review",
-      "source_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/04/Tapia-Blvd-Phase-1A-Project.png",
-      "direct_file_url": null,
-      "r2_url": null,
-      "r2_key": null,
+      "status": "validated",
+      "source_url": "https://www.bernco.gov/public-works/blog/2025/04/24/san-ygnacio-rd-and-tapia-blvd-phase-1a-improvements/",
+      "direct_file_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/04/Tapia-Blvd-Phase-1A-Project.png",
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/current/bernco-tapia-boulevard-phase-1a-section-2025.png",
+      "r2_key": "transportation/roadway-projects/current/bernco-tapia-boulevard-phase-1a-section-2025.png",
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "Bernalillo County",
-      "title": "Tapia Blvd Phase 1A Project",
-      "date": null,
-      "file_type": "Image",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "title": "Tapia Boulevard Phase IA — Proposed Roadway Section",
+      "date": "2025-04",
+      "file_type": "IMAGE",
+      "size_bytes": 72148,
+      "checksum_sha256": "922ea8c3aaade734ef2aac0c17ef7216c0c453d1622fc9adfc9abf01c2e0f60e",
       "parent_url": "https://www.bernco.gov/public-works/blog/2025/04/24/san-ygnacio-rd-and-tapia-blvd-phase-1a-improvements/",
       "referring_urls": [
         "https://www.bernco.gov/public-works/blog/2025/04/24/san-ygnacio-rd-and-tapia-blvd-phase-1a-improvements/"
@@ -122496,22 +122516,27 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "source URL recorded from authoritative project graph",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official County project page and byte-identical County-hosted file recorded",
+      "proposed_canonical_page": "content/transportation/roadway-projects/_index.md",
+      "description": "Illustrates the proposed Tapia Boulevard Phase IA roadway section between San Ygnacio Road and Robertson Avenue, including travel lanes, curb and gutter, sidewalk, roadway crown, and right-of-way limits.",
+      "description_word_count": 28,
       "processing_notes": [
-        "Imported from deterministic scoped crawl research/discovery/pr63-bernco-current-project-descendants.json.",
-        "Exact metadata, relevance, and terminal disposition remain pending review."
+        "Cross-listed on Maps as the clearest visual companion to the archived public presentation.",
+        "Exact size and SHA-256 recorded and the full proposed-section graphic was visually reviewed.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PNG preserved without modification."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/transportation/roadway-projects/_index.md",
+      "implementation_locations": [
+        "content/transportation/roadway-projects/_index.md",
+        "content/maps/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-66bde071ea18823a.png",
       "discovered_at": "2026-08-28T22:00:29.2390943Z",
-      "updated_at": "2026-08-28T22:00:29.2390943Z"
+      "updated_at": "2026-08-29T03:35:01.0642076Z"
     },
     {
       "id": "src-66c2cc3480370cc5",
@@ -153782,19 +153807,19 @@
     },
     {
       "id": "src-84331f3cfb0f2318",
-      "status": "pending review",
-      "source_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/02/Hardy-Ct-Map.jpg",
-      "direct_file_url": null,
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "status": "validated",
+      "source_url": "https://www.bernco.gov/public-works/blog/2025/02/20/hardy-ct-improvements/",
+      "direct_file_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/02/Hardy-Ct-Map.jpg",
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/current/bernco-hardy-court-project-map-2025.jpg",
+      "r2_key": "transportation/roadway-projects/current/bernco-hardy-court-project-map-2025.jpg",
+      "r2_etag": "f0ce164ff7b2a48bda7a22d30622b005",
+      "r2_last_modified": "08/28/2026 21:27:37",
       "agency": "Bernalillo County",
-      "title": "Hardy Ct Map",
-      "date": null,
-      "file_type": "Image",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "title": "Hardy Court Improvements — Project Map",
+      "date": "2025-02",
+      "file_type": "IMAGE",
+      "size_bytes": 77651,
+      "checksum_sha256": "972b73e835d2b2e63d6a6ad053fc16629e07f6af29cd4c202903f763fc3b00d2",
       "parent_url": "https://www.bernco.gov/public-works/blog/2025/02/20/hardy-ct-improvements/",
       "referring_urls": [
         "https://www.bernco.gov/public-works/blog/2025/02/20/hardy-ct-improvements/"
@@ -153808,22 +153833,29 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "source URL recorded from authoritative project graph",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official County project page and byte-identical County-hosted file recorded",
+      "proposed_canonical_page": "content/transportation/roadway-projects/_index.md",
+      "description": "Maps the Hardy Court roadway and drainage project near Riverside Drive, showing the improvement limits, residential access, storm-drain outfall, and relationship to the West Riverside Drain and Rio Grande bosque.",
+      "description_word_count": 30,
       "processing_notes": [
-        "Imported from deterministic scoped crawl research/discovery/pr63-bernco-current-project-descendants.json.",
-        "Exact metadata, relevance, and terminal disposition remain pending review."
+        "Cross-listed on Stormwater and Maps because the project combines street and drainage infrastructure.",
+        "Exact size and SHA-256 recorded and the full project image was visually reviewed.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative JPEG preserved without modification.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/transportation/roadway-projects/_index.md",
+      "implementation_locations": [
+        "content/transportation/roadway-projects/_index.md",
+        "content/public-works/stormwater-drainage.md",
+        "content/maps/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-84331f3cfb0f2318.jpg",
       "discovered_at": "2026-08-28T22:00:29.2390943Z",
-      "updated_at": "2026-08-28T22:00:29.2390943Z"
+      "updated_at": "2026-08-29T03:34:56.7021498Z"
     },
     {
       "id": "src-843b133d907781df",
@@ -179612,19 +179644,19 @@
     },
     {
       "id": "src-9bfc5f6b20b1d942",
-      "status": "pending review",
-      "source_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/SVDWP_Phase7_overall_4-1-15.pdf",
+      "status": "validated",
+      "source_url": "https://www.bernco.gov/public-works/blog/2021/04/15/south-valley-drinking-water-project/",
       "direct_file_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/SVDWP_Phase7_overall_4-1-15.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/public-works/capital-projects/bernco-south-valley-water-phase-7-map-2015.pdf",
+      "r2_key": "public-works/capital-projects/bernco-south-valley-water-phase-7-map-2015.pdf",
+      "r2_etag": "0f8fd644f594286eb3160fcd3cfb3edd",
+      "r2_last_modified": "08/28/2026 21:25:53",
       "agency": "Bernalillo County",
-      "title": "Phase 7 Map",
-      "date": null,
+      "title": "South Valley Drinking Water Project — Phase 7 Map",
+      "date": "2015",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 357261,
+      "checksum_sha256": "fff0824eda1ccb06af05fbac51019fdef9e8c69711dcc7d143de343ac2f48f82",
       "parent_url": "https://www.bernco.gov/public-works/blog/2021/04/15/south-valley-drinking-water-project/",
       "referring_urls": [
         "https://www.bernco.gov/public-works/blog/2021/04/15/south-valley-drinking-water-project/"
@@ -179638,22 +179670,28 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "source URL recorded from authoritative project graph",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official County project page and byte-identical County-hosted file recorded",
+      "proposed_canonical_page": "content/public-works/capital-projects.md",
+      "description": "Maps Phase 7 of the South Valley drinking-water expansion, showing pipeline routes, service areas, project limits, roads, waterways, railroad infrastructure, and connections within the County's larger phased utility program.",
+      "description_word_count": 29,
       "processing_notes": [
-        "Imported from deterministic scoped crawl research/discovery/pr63-bernco-finished-project-descendants.json.",
-        "Exact metadata, relevance, and terminal disposition remain pending review."
+        "Cross-listed on Maps as a historical public-infrastructure record.",
+        "Exact size and SHA-256 recorded and the complete utility map was rendered and visually reviewed.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative one-page PDF preserved without modification.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/public-works/capital-projects.md",
+      "implementation_locations": [
+        "content/public-works/capital-projects.md",
+        "content/maps/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-9bfc5f6b20b1d942.pdf",
       "discovered_at": "2026-08-28T22:00:29.2390943Z",
-      "updated_at": "2026-08-28T22:00:29.2390943Z"
+      "updated_at": "2026-08-29T03:34:35.5477152Z"
     },
     {
       "id": "src-9bff1b265f9d2c62",
@@ -209908,19 +209946,19 @@
     },
     {
       "id": "src-b9af942860e2cb94",
-      "status": "pending review",
-      "source_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/02/South-Coors-Corridor-Sector-Development-Plan-Map.png",
-      "direct_file_url": null,
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "status": "validated",
+      "source_url": "https://www.bernco.gov/public-works/blog/2025/02/12/south-coors-boulevard-sector-development-plan/",
+      "direct_file_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/02/South-Coors-Corridor-Sector-Development-Plan-Map.png",
+      "r2_url": "https://files.abqinfo.com/development-land-use/area-sector-plans/bernco-south-coors-sector-plan-boundary-map-2025.png",
+      "r2_key": "development-land-use/area-sector-plans/bernco-south-coors-sector-plan-boundary-map-2025.png",
+      "r2_etag": "b2aa055881a0f0ac90d4e7f2c715ee2c",
+      "r2_last_modified": "08/28/2026 21:27:21",
       "agency": "Bernalillo County",
-      "title": "South Coors Corridor Sector Development Plan Map",
-      "date": null,
-      "file_type": "Image",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "title": "South Coors Boulevard Sector Development Plan — Boundary Map",
+      "date": "2025-02",
+      "file_type": "IMAGE",
+      "size_bytes": 1061600,
+      "checksum_sha256": "c7e00a6a5fe12a31a1555ebbb885b25fd859de79e2bcf2b45dfe859f17d2dcd3",
       "parent_url": "https://www.bernco.gov/public-works/blog/2025/02/12/south-coors-boulevard-sector-development-plan/",
       "referring_urls": [
         "https://www.bernco.gov/public-works/blog/2025/02/12/south-coors-boulevard-sector-development-plan/"
@@ -209934,22 +209972,28 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "source URL recorded from authoritative project graph",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official County project page and byte-identical County-hosted file recorded",
+      "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+      "description": "Maps the South Coors corridor planning boundary from Bridge Boulevard to Gun Club Road, identifying community activity areas, neighborhood associations, County properties, major streets, and the Bridge Boulevard plan area.",
+      "description_word_count": 30,
       "processing_notes": [
-        "Imported from deterministic scoped crawl research/discovery/pr63-bernco-current-project-descendants.json.",
-        "Exact metadata, relevance, and terminal disposition remain pending review."
+        "Cross-listed on Maps as the geographic definition of the current sector-planning effort.",
+        "Exact size and SHA-256 recorded and the full-resolution planning-area map was visually reviewed.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PNG preserved without modification.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/development-land-use/area-sector-plans.md",
+      "implementation_locations": [
+        "content/development-land-use/area-sector-plans.md",
+        "content/maps/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-b9af942860e2cb94.png",
       "discovered_at": "2026-08-28T22:00:29.2390943Z",
-      "updated_at": "2026-08-28T22:00:29.2390943Z"
+      "updated_at": "2026-08-29T03:34:52.3811775Z"
     },
     {
       "id": "src-b9c0ba637495011c",
@@ -230317,7 +230361,7 @@
     },
     {
       "id": "src-cc618c5eaf5a30ba",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/Sunport-Commerce-Center-Transportation-Plan-Final.pdf",
       "direct_file_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/Sunport-Commerce-Center-Transportation-Plan-Final.pdf",
       "r2_url": null,
@@ -230328,8 +230372,8 @@
       "title": "Sunport Commerce Center Transportation Plan Final",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 3774698,
+      "checksum_sha256": "b81c38e9eddf37f86e0bc2424e31a343ef660b3c084e7ebe35ebf7850adab95e",
       "parent_url": "https://www.bernco.gov/public-works/blog/2021/04/15/sunport-commerce-center-transportation-plan/",
       "referring_urls": [
         "https://www.bernco.gov/public-works/blog/2021/04/15/sunport-commerce-center-transportation-plan/"
@@ -230348,17 +230392,17 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Imported from deterministic scoped crawl research/discovery/pr63-bernco-finished-project-descendants.json.",
-        "Exact metadata, relevance, and terminal disposition remain pending review."
+        "Compared title, page count, extracted content, and plan structure with validated candidate src-0a39e768262a9380.",
+        "Different file bytes reflect an alternate publication or optimization, not a substantively distinct plan edition."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "duplicate publication reconciled",
+      "exclusion_reason": "Alternate official-host copy of the same 30-page 2019 Sunport Boulevard Transportation Plan already archived and validated as src-0a39e768262a9380; no second R2 object is needed.",
+      "local_path": "research/staging/queue/src-cc618c5eaf5a30ba.pdf",
       "discovered_at": "2026-08-28T22:00:29.2390943Z",
-      "updated_at": "2026-08-28T22:00:29.2390943Z"
+      "updated_at": "2026-08-29T03:35:43.6971215Z"
     },
     {
       "id": "src-cc6a4ff2372bfa50",
@@ -233562,19 +233606,19 @@
     },
     {
       "id": "src-cf972c5c99624ed3",
-      "status": "pending review",
-      "source_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/Map-Fire-Station-35.pdf",
+      "status": "validated",
+      "source_url": "https://www.bernco.gov/public-works/blog/2021/04/15/paseo-del-norte-access-fire-station-35/",
       "direct_file_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/Map-Fire-Station-35.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/past/bernco-fire-station-35-access-map.pdf",
+      "r2_key": "transportation/roadway-projects/past/bernco-fire-station-35-access-map.pdf",
+      "r2_etag": "4a888ffd3e178be0077b142559b4459b",
+      "r2_last_modified": "08/28/2026 21:25:20",
       "agency": "Bernalillo County",
-      "title": "Project Site Map",
-      "date": null,
+      "title": "Paseo del Norte Access to Fire Station 35 — Project Map",
+      "date": "undated",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 2108931,
+      "checksum_sha256": "6b1d859586bc458e52de50e6d5c0c8f87389d529c7c7bba26a29b4896ad32637",
       "parent_url": "https://www.bernco.gov/public-works/blog/2021/04/15/paseo-del-norte-access-fire-station-35/",
       "referring_urls": [
         "https://www.bernco.gov/public-works/blog/2021/04/15/paseo-del-norte-access-fire-station-35/"
@@ -233588,22 +233632,28 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "source URL recorded from authoritative project graph",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official County project page and byte-identical County-hosted file recorded",
+      "proposed_canonical_page": "content/transportation/roadway-projects/_index.md",
+      "description": "Maps the Paseo del Norte frontage-road access project serving Fire Station 35, locating the station, access road, Eubank and Tramway boulevards, neighborhood streets, drainage corridors, and surrounding North Albuquerque Acres area.",
+      "description_word_count": 31,
       "processing_notes": [
-        "Imported from deterministic scoped crawl research/discovery/pr63-bernco-finished-project-descendants.json.",
-        "Exact metadata, relevance, and terminal disposition remain pending review."
+        "Cross-listed on Maps as a durable record of emergency-access infrastructure.",
+        "Exact size and SHA-256 recorded and the complete project map was rendered and visually reviewed.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative one-page PDF preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/transportation/roadway-projects/_index.md",
+      "implementation_locations": [
+        "content/transportation/roadway-projects/_index.md",
+        "content/maps/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-cf972c5c99624ed3.pdf",
       "discovered_at": "2026-08-28T22:00:29.2390943Z",
-      "updated_at": "2026-08-28T22:00:29.2390943Z"
+      "updated_at": "2026-08-29T03:34:26.8761576Z"
     },
     {
       "id": "src-cfb194e705ba8b9e",
@@ -241715,19 +241765,19 @@
     },
     {
       "id": "src-d6d9241cd63ba002",
-      "status": "pending review",
-      "source_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2026/03/MV-EIP-Pamphlet-2.pdf",
+      "status": "validated",
+      "source_url": "https://www.bernco.gov/public-works/blog/2026/03/12/mountain-view-environmental-inventory-and-gap-mapping-analysis/",
       "direct_file_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2026/03/MV-EIP-Pamphlet-2.pdf",
-      "r2_url": null,
-      "r2_key": null,
+      "r2_url": "https://files.abqinfo.com/public-works/environment/bernco-mountain-view-environmental-inventory-pamphlet-2026.pdf",
+      "r2_key": "public-works/environment/bernco-mountain-view-environmental-inventory-pamphlet-2026.pdf",
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "Bernalillo County",
-      "title": "The project information flyer can be found here.",
-      "date": null,
+      "title": "Mountain View Environmental Inventory Project — Information Pamphlet",
+      "date": "2026-03",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 13648528,
+      "checksum_sha256": "10c125841dcb043db619fa6215d8d913bde83b4b95da22ea10f035208c9b1b6b",
       "parent_url": "https://www.bernco.gov/public-works/blog/2026/03/12/mountain-view-environmental-inventory-and-gap-mapping-analysis/",
       "referring_urls": [
         "https://www.bernco.gov/public-works/blog/2026/03/12/mountain-view-environmental-inventory-and-gap-mapping-analysis/"
@@ -241741,22 +241791,27 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "source URL recorded from authoritative project graph",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official County project page and byte-identical County-hosted file recorded",
+      "proposed_canonical_page": "content/city-data/climate-environment.md",
+      "description": "Explains the Mountain View environmental inventory's purpose, database contents, agency links, pollution-source information, limitations, community role, project timeline, outreach process, and current County and consultant contacts.",
+      "description_word_count": 26,
       "processing_notes": [
-        "Imported from deterministic scoped crawl research/discovery/pr63-bernco-current-project-descendants.json.",
-        "Exact metadata, relevance, and terminal disposition remain pending review."
+        "Cross-listed with the current capital-project record as the concise public introduction to the database effort.",
+        "Exact size and SHA-256 recorded and both pamphlet pages were rendered and visually reviewed.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative two-page PDF preserved without modification."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/city-data/climate-environment.md",
+      "implementation_locations": [
+        "content/city-data/climate-environment.md",
+        "content/public-works/capital-projects.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-d6d9241cd63ba002.pdf",
       "discovered_at": "2026-08-28T22:00:29.2390943Z",
-      "updated_at": "2026-08-28T22:00:29.2390943Z"
+      "updated_at": "2026-08-29T03:35:05.5093049Z"
     },
     {
       "id": "src-d6e142c608f6a2de",
@@ -251906,7 +251961,7 @@
     },
     {
       "id": "src-e083446643dfda8f",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/TramwayLnSiteMap.jpg",
       "direct_file_url": null,
       "r2_url": null,
@@ -251917,8 +251972,8 @@
       "title": "Project Map",
       "date": null,
       "file_type": "Image",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 70185,
+      "checksum_sha256": "94c285b567cc67231c47b0ea43cd148ef3242ba4ad7d744957aa25c1adb30620",
       "parent_url": "https://www.bernco.gov/public-works/blog/2021/04/15/county-wide-road-improvements-project-phase-6-tramway-lane/",
       "referring_urls": [
         "https://www.bernco.gov/public-works/blog/2021/04/15/county-wide-road-improvements-project-phase-6-tramway-lane/"
@@ -251937,17 +251992,17 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Imported from deterministic scoped crawl research/discovery/pr63-bernco-finished-project-descendants.json.",
-        "Exact metadata, relevance, and terminal disposition remain pending review."
+        "Reviewed exact image, geographic scope, and County parent project page.",
+        "Excluded under the established Albuquerque/regional relevance policy."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal relevance review passed",
+      "exclusion_reason": "The Tramway Lane maintenance map documents a neighborhood-scale East Mountain road outside Albuquerque and does not materially affect Albuquerque or the regional transportation system.",
+      "local_path": "research/staging/queue/src-e083446643dfda8f.jpg",
       "discovered_at": "2026-08-28T22:00:29.2390943Z",
-      "updated_at": "2026-08-28T22:00:29.2390943Z"
+      "updated_at": "2026-08-29T03:35:28.5755499Z"
     },
     {
       "id": "src-e0944409dcca0904",
@@ -257948,19 +258003,19 @@
     },
     {
       "id": "src-e65d0b612a672dbb",
-      "status": "pending review",
-      "source_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/SVWater-Proj-Phases-General-Feb-2014.pdf",
+      "status": "validated",
+      "source_url": "https://www.bernco.gov/public-works/blog/2021/04/15/south-valley-drinking-water-project/",
       "direct_file_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/SVWater-Proj-Phases-General-Feb-2014.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/public-works/capital-projects/bernco-south-valley-water-overall-phasing-map-2014.pdf",
+      "r2_key": "public-works/capital-projects/bernco-south-valley-water-overall-phasing-map-2014.pdf",
+      "r2_etag": "dac9e89a2f2d7314b4871592491d82b7",
+      "r2_last_modified": "08/28/2026 21:26:10",
       "agency": "Bernalillo County",
-      "title": "Overall Project Site Map",
-      "date": null,
+      "title": "South Valley Drinking Water Project — Overall Phasing Map",
+      "date": "2014-02",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 1014967,
+      "checksum_sha256": "84fd20e8637d3657f676e3debee337a96edec8910a0fe66b3c6ad421e8db4bc5",
       "parent_url": "https://www.bernco.gov/public-works/blog/2021/04/15/south-valley-drinking-water-project/",
       "referring_urls": [
         "https://www.bernco.gov/public-works/blog/2021/04/15/south-valley-drinking-water-project/"
@@ -257974,22 +258029,27 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "source URL recorded from authoritative project graph",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official County project page and byte-identical County-hosted file recorded",
+      "proposed_canonical_page": "content/public-works/capital-projects.md",
+      "description": "Maps completed, construction, and identified phases of the South Valley water expansion, including transmission pipelines, reservoirs, booster facilities, service areas, major roads, waterways, and the program's geographic progression.",
+      "description_word_count": 28,
       "processing_notes": [
-        "Imported from deterministic scoped crawl research/discovery/pr63-bernco-finished-project-descendants.json.",
-        "Exact metadata, relevance, and terminal disposition remain pending review."
+        "Cross-listed on Maps as the clearest system-level history of the utility program.",
+        "Exact size and SHA-256 recorded and the complete phasing map was rendered and visually reviewed.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative one-page PDF preserved without modification."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/public-works/capital-projects.md",
+      "implementation_locations": [
+        "content/public-works/capital-projects.md",
+        "content/maps/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-e65d0b612a672dbb.pdf",
       "discovered_at": "2026-08-28T22:00:29.2390943Z",
-      "updated_at": "2026-08-28T22:00:29.2390943Z"
+      "updated_at": "2026-08-29T03:34:39.6758227Z"
     },
     {
       "id": "src-e665566329c4a04d",
@@ -279128,7 +279188,7 @@
     },
     {
       "id": "src-f9d59a81856c95cb",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/Alameda-Drain-And-Trail-MP-Book_reduced-8_17_16.pdf",
       "direct_file_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/Alameda-Drain-And-Trail-MP-Book_reduced-8_17_16.pdf",
       "r2_url": null,
@@ -279139,8 +279199,8 @@
       "title": "Alameda Drain & Trail Master Plan",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 36161172,
+      "checksum_sha256": "71b82a22d76c66bea02b44fb23ec061c22cf7b8b22abf8e0c97956276eaf58b3",
       "parent_url": "https://www.bernco.gov/public-works/blog/2021/04/16/alameda-drain-trail-phase-6/",
       "referring_urls": [
         "https://www.bernco.gov/public-works/blog/2021/04/16/alameda-drain-trail-phase-6/"
@@ -279159,17 +279219,17 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Imported from deterministic scoped crawl research/discovery/pr63-bernco-current-project-descendants.json.",
-        "Exact metadata, relevance, and terminal disposition remain pending review."
+        "SHA-256 exactly matches validated candidate src-1d90eba4d193069b.",
+        "The 36161172-byte duplicate was not uploaded again."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "byte-identical duplicate reconciled",
+      "exclusion_reason": "Byte-identical County-hosted copy of the Alameda Drain and Trail Master Plan already archived and validated as src-1d90eba4d193069b.",
+      "local_path": "research/staging/queue/src-f9d59a81856c95cb.pdf",
       "discovered_at": "2026-08-28T22:00:29.2390943Z",
-      "updated_at": "2026-08-28T22:00:29.2390943Z"
+      "updated_at": "2026-08-29T03:35:47.9542891Z"
     },
     {
       "id": "src-f9e880263589da4b",
