@@ -42,6 +42,38 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   Documents public engagement conducted from 2023 through the plan's April 2025 adoption, links the participation plan, explains how feedback informed the MTP, and provides current presentation and engagement contacts.
 
+### Historical Metropolitan Transportation Plans
+
+- [MRMPO Connections 2040 Metropolitan Transportation Plan (2020 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-connections-2040-mtp-2020.pdf)
+
+  Preserves the complete 2020 regional plan covering demographic and travel trends, land-use scenarios, roadway, transit, bicycle and pedestrian networks, safety, freight, resilience, finance, and implementation.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/4226/Connections-2040-MTP---Full-Document-PDF) · [MRCOG MTP Archive](https://www.mrcog-nm.gov/267/MTP-Archive)
+
+  - [Appendix A: Metropolitan Transportation Plan Project List (2020 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-connections-2040-mtp-appendix-a-project-list-2020.pdf)
+
+    Lists funded, near-term, and long-term regional bicycle, pedestrian, roadway, preservation, safety, operations, and transit projects, with locations, descriptions, lead agencies, planning costs, and anticipated timeframes. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/4228/Appendix-A---List-of-Projects-PDF)
+
+  - [Appendix E: Long-Range Transportation System Guidelines - 2020 Update (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-connections-2040-mtp-appendix-e-long-range-transportation-system-guide-2020.pdf)
+
+    Preserves the 2020 regional guidance for land-use context, multimodal networks, roadway design, right-of-way, intersections, traffic calming, bicycle and pedestrian infrastructure, road diets, and performance measures. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/4209/Appendix-E---Long-Range-Transportation-Systems-Guide-2020-PDF)
+
+- [MRMPO Futures 2040 Metropolitan Transportation Plan (2015; Modified 2017 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-futures-2040-mtp-2015-2017.pdf)
+
+  Establishes the region's 2040 transportation direction through growth scenarios, multimodal system needs, project and funding strategies, safety, environmental considerations, performance measures, and a September 2017 administrative modification.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/2201/Futures-2040-MTP-All-Chapters-no-Appendices-PDF) · [MRCOG MTP Archive](https://www.mrcog-nm.gov/267/MTP-Archive)
+
+  - [Futures 2040 Appendices A-P (2015; Modified 2017 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-futures-2040-mtp-appendices-2015-2017.pdf)
+
+    Preserves project lists, scenario and safety methods, emissions analysis, long-range system guidance, outreach, funding projections, maintenance assumptions, performance monitoring, and the September 2017 Appendix A modification. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/2182/Appendices-A-to-P-PDF)
+
+- [MRMPO 2035 Metropolitan Transportation Plan - Complete Plan and Appendices (2011; Amended Through 2014 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-2035-mtp-complete-appendices-2011-2014.pdf)
+
+  Preserves the complete 2035 regional plan and appendices, documenting growth forecasts, multimodal needs, project priorities, financial constraints, environmental analysis, public involvement, and amendments adopted through May 2014.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/2286/Complete-Final-MTP-PDF) · [MRCOG MTP Archive](https://www.mrcog-nm.gov/267/MTP-Archive)
+
 ### 2026 Long-Range Transportation System Maps
 
 - [Long-Range Transportation System Guide](https://www.mrcog-nm.gov/512/Long-Range-Transportation-System-Guide)
