@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-29T14:47:50.6075994Z",
+  "generated_at": "2026-08-29T18:46:30.0569896Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,7 +18,7 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 3986,
+    "pending review": 3982,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 4,
@@ -26,8 +26,8 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 65,
-    "validated": 687,
-    "excluded": 775,
+    "validated": 690,
+    "excluded": 776,
     "duplicate": 787,
     "superseded": 35,
     "blocked": 0,
@@ -104190,7 +104190,7 @@
     },
     {
       "id": "src-562a82df31fbf277",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/annual_report_ver-6-102815.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/annual_report_ver-6-102815.pdf",
       "r2_url": null,
@@ -104198,12 +104198,12 @@
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "annual report ver 6 102815.pdf",
-      "date": null,
+      "title": "City of Albuquerque MS4 Transitional Annual Report, January-June 2015",
+      "date": "2015-10-28",
       "file_type": "PDF",
       "size_bytes": 2099979,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=120",
+      "checksum_sha256": "1945d30068d8c09d6582f17363d32033450d9746f985f55740d5f20e5a71c7a0",
+      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents/annual_report_ver-6-102815.pdf/view",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=120"
       ],
@@ -104216,24 +104216,23 @@
       "crawl_depth": 1,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "official City Plone document-library listing and direct item URL recorded",
+      "provenance_status": "official City metadata page and byte-identical City-hosted file recorded",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
-        "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 2099979 bytes."
+        "Dynamic Adobe XFA PDF displays only the standard placeholder and did not load in a browser or Adobe Acrobat Reader.",
+        "Excluded by user-approved unusable-XFA policy on 2026-08-29.",
+        "Reconsider only if a usable authoritative non-XFA version is found."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "excluded by unusable-XFA policy",
+      "exclusion_reason": "Dynamic Adobe XFA PDF displays only the standard 'Please wait...' placeholder and did not load in a browser or Adobe Acrobat Reader; excluded from publication and archival. Reconsider only if a usable authoritative non-XFA version is found.",
+      "local_path": "research/staging/queue/src-562a82df31fbf277.pdf",
       "discovered_at": "2026-08-14T20:11:37.7597223Z",
-      "updated_at": "2026-08-14T20:11:37.7597223Z"
+      "updated_at": "2026-08-29T18:44:42.2354233Z"
     },
     {
       "id": "src-56302a72a506fb36",
@@ -199347,20 +199346,20 @@
     },
     {
       "id": "src-af07fc621a7d39ff",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/publicflyeralamedadrain2015.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/publicflyeralamedadrain2015.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-alameda-drain-trail-master-plan-design-notice-2015.pdf",
+      "r2_key": "transportation/bicycling/bike-plans/bernco-alameda-drain-trail-master-plan-design-notice-2015.pdf",
+      "r2_etag": "04a321405cd38c49d8208ca54f3bbf85",
+      "r2_last_modified": "08/29/2026 10:09:08",
       "agency": "City of Albuquerque",
-      "title": "publicflyeralamedadrain2015.pdf",
-      "date": null,
+      "title": "Alameda Drain Trail Master Plan and Design Notice",
+      "date": "2015",
       "file_type": "PDF",
       "size_bytes": 761311,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=120",
+      "checksum_sha256": "10857b59772c485dca6d6352371e811dff22ab34e0035285734218769640df63",
+      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents/publicflyeralamedadrain2015.pdf/view",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=120"
       ],
@@ -199373,24 +199372,27 @@
       "crawl_depth": 1,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "official City Plone document-library listing and direct item URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City metadata page and byte-identical City-hosted file recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/bike-plans.md",
+      "description": "Announces the Alameda Drain Trail master-planning and design effort from I-40 to Sandia Pueblo, outlining intended trail, landscaping, water-harvesting, rest-area, maintenance, public-input, design, and construction work.",
+      "description_word_count": 26,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
-        "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 761311 bytes."
+        "Exact size and SHA-256 recorded; both duplicate-format notice pages, scope, planning limits, schedule, and stakeholder process were reviewed.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative two-page PDF preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "The 2015 project contact is not republished because it is historical and may no longer be current."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/bicycling/bike-plans.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/bike-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-af07fc621a7d39ff.pdf",
       "discovered_at": "2026-08-14T20:11:39.9859346Z",
-      "updated_at": "2026-08-14T20:11:39.9859346Z"
+      "updated_at": "2026-08-29T18:46:29.4679418Z"
     },
     {
       "id": "src-af0959a8c4862eef",
@@ -202032,7 +202034,7 @@
       "exclusion_reason": null,
       "local_path": "research/staging/queue/src-b196c741237acbf2.pdf",
       "discovered_at": "2026-08-14T20:11:38.052563Z",
-      "updated_at": "2026-08-29T14:47:50.1274720Z"
+      "updated_at": "2026-08-29T14:47:50.127472Z"
     },
     {
       "id": "src-b1a9fa0d47f90574",
@@ -220470,20 +220472,20 @@
     },
     {
       "id": "src-c312994aa69f9bd5",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/water-year-2015-report-032516.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/water-year-2015-report-032516.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-monitoring-data-water-year-2015.pdf",
+      "r2_key": "public-works/stormwater-drainage/cabq-ms4-monitoring-data-water-year-2015.pdf",
+      "r2_etag": "0caacfb73f09fd6cd58c5148c0b17034",
+      "r2_last_modified": "08/29/2026 10:09:29",
       "agency": "City of Albuquerque",
-      "title": "water year 2015 report 032516.pdf",
-      "date": null,
+      "title": "City of Albuquerque MS4 Monitoring Data for Water Year 2015",
+      "date": "2016-03-25",
       "file_type": "PDF",
       "size_bytes": 127553,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=140",
+      "checksum_sha256": "ad4f2bc38767568af763761075fb8525d8e1ba27b521668e0ab772e12b0418a9",
+      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents/water-year-2015-report-032516.pdf/view",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=140"
       ],
@@ -220497,24 +220499,27 @@
       "crawl_depth": 1,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "official City Plone document-library listing and direct item URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City metadata page and byte-identical City-hosted file recorded",
+      "proposed_canonical_page": "content/public-works/stormwater-drainage.md",
+      "description": "Explains Albuquerque's 2015 stormwater monitoring submission, permit transition, reporting cycles, bacterial and chemical loading, wet-weather sampling, dry-weather screening, discharge reports, and related AMAFCA water-quality attachments.",
+      "description_word_count": 25,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
-        "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 127553 bytes."
+        "Exact size and SHA-256 recorded; the complete reporting-cycle explanation, attachment index, permit chronology, and partner submissions were reviewed.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative four-page PDF preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "Retained as the overview connecting the separately archived 2015 bacterial-loading and monitoring-status records."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/public-works/stormwater-drainage.md",
+      "implementation_locations": [
+        "content/public-works/stormwater-drainage.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-c312994aa69f9bd5.pdf",
       "discovered_at": "2026-08-14T20:11:40.4035032Z",
-      "updated_at": "2026-08-14T20:11:40.4035032Z"
+      "updated_at": "2026-08-29T18:46:29.5163642Z"
     },
     {
       "id": "src-c3150668e8c8698f",
@@ -227074,20 +227079,20 @@
     },
     {
       "id": "src-c9a788fdd19a3223",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/NMDOTstatewidelongrangeplan_overview_2014_714_GABAC.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/NMDOTstatewidelongrangeplan_overview_2014_714_GABAC.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/transportation-plans/nmdot-new-mexico-2040-plan-gabac-briefing-2014.pdf",
+      "r2_key": "transportation/transportation-plans/nmdot-new-mexico-2040-plan-gabac-briefing-2014.pdf",
+      "r2_etag": "ff58ac2ced861910b60dccce9ec7bb52",
+      "r2_last_modified": "08/29/2026 10:09:49",
       "agency": "City of Albuquerque",
-      "title": "NMDOTstatewidelongrangeplan overview 2014 714 GABAC.pdf",
-      "date": null,
+      "title": "New Mexico 2040 Statewide Long-Range Multimodal Transportation Plan Briefing",
+      "date": "2014-07-14",
       "file_type": "PDF",
       "size_bytes": 1041523,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=80",
+      "checksum_sha256": "22c85cf730911b9e8a25d333ef07dabe79e1fa1367be0d600729ae57b795932e",
+      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents/NMDOTstatewidelongrangeplan_overview_2014_714_GABAC.pdf/view",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=80"
       ],
@@ -227100,24 +227105,27 @@
       "crawl_depth": 1,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "official City Plone document-library listing and direct item URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City metadata page and byte-identical City-hosted file recorded",
+      "proposed_canonical_page": "content/transportation/transportation-plans.md",
+      "description": "Documents NMDOT's 2014 briefing to Albuquerque's bicycle advisory committee on the developing 2040 statewide plan, including federal requirements, performance goals, project phases, stakeholder structure, surveys, and public priorities.",
+      "description_word_count": 28,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
-        "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 1041523 bytes."
+        "Exact size and SHA-256 recorded; all slides, planning requirements, performance goals, stakeholder structure, survey results, and public priorities were reviewed.",
+        "Original authoritative 20-page NMDOT presentation preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "Retained as Albuquerque-specific public-engagement history supporting the final statewide 2040 plan."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transportation-plans.md",
+      "implementation_locations": [
+        "content/transportation/transportation-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-c9a788fdd19a3223.pdf",
       "discovered_at": "2026-08-14T20:11:39.8617451Z",
-      "updated_at": "2026-08-14T20:11:39.8617451Z"
+      "updated_at": "2026-08-29T18:46:29.5573544Z"
     },
     {
       "id": "src-c9af414f77032660",

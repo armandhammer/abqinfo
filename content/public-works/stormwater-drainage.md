@@ -122,6 +122,12 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
 ### Historical Permit and Water-Quality Records
 
+- [City of Albuquerque MS4 Monitoring Data for Water Year 2015 (Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-monitoring-data-water-year-2015.pdf)
+
+  Explains Albuquerque's 2015 stormwater monitoring submission, permit transition, reporting cycles, bacterial and chemical loading, wet-weather sampling, dry-weather screening, discharge reports, and related AMAFCA water-quality attachments.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/water-year-2015-report-032516.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/water-year-2015-report-032516.pdf)
+
 - [Albuquerque MS4 Water-Quality Monitoring Status, July 2014-January 2015 (Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-water-quality-monitoring-status-2014-2015.pdf)
 
   Preserves wet-weather sampling dates, storm duration, rainfall, discharge estimates, collection methods, and monitoring-station status for Albuquerque arroyo and stormwater outfalls during FY 2015.

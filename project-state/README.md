@@ -31,6 +31,10 @@ For qualifying plans, standards, studies, reports, maps, appendices, legislation
 
 This dual-link archival review applies across the site, not only to PDFs or transportation material. A candidate marked implemented or validated should still be flagged for archival follow-up when an important linked artifact has not yet been independently inventoried and evaluated.
 
+### Unusable Adobe XFA forms
+
+Do not archive or publish a dynamic Adobe XFA PDF when its extractable or rendered content consists only of the standard `Please wait...` message stating that the viewer may not be able to display the document. Mark it `excluded` with that reason. Reconsider it only when a usable authoritative non-XFA version is found. PDF extraction detects this condition, and R2 plan generation rejects a placeholder-only file as a second safeguard.
+
 ## Internet Archive recovery policy
 
 When an official City or other government page refers to a high-value document whose authoritative file URL is broken, do not silently discard the reference or treat the missing file as irrelevant.

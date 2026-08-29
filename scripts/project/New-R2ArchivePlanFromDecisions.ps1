@@ -28,6 +28,16 @@ foreach ($decision in @($decisions.decisions)) {
   }
   if (-not $candidate.local_path -or -not (Test-Path -LiteralPath $candidate.local_path)) { throw "Candidate '$($decision.id)' has no local source file." }
 
+  if ($candidateType -eq 'PDF') {
+    $textPath = [IO.Path]::ChangeExtension([string]$candidate.local_path, '.txt')
+    if (Test-Path -LiteralPath $textPath) {
+      $normalizedText = ((Get-Content -Raw -Encoding UTF8 -LiteralPath $textPath).ToLowerInvariant() -replace '\s+', ' ').Trim()
+      if ($normalizedText -match 'please wait' -and $normalizedText -match 'viewer may not be able to display this type of document') {
+        throw "Candidate '$($decision.id)' is an unusable Adobe XFA placeholder PDF and cannot be planned for R2 archival. Find a usable authoritative non-XFA version instead."
+      }
+    }
+  }
+
   $file = Get-Item -LiteralPath $candidate.local_path
   $checksum = (Get-FileHash -LiteralPath $file.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
   if ([int64]$candidate.size_bytes -ne [int64]$file.Length) { throw "Candidate '$($decision.id)' size does not match its local source." }

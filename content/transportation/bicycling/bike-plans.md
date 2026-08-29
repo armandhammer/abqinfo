@@ -72,6 +72,12 @@ City bicycle planning documents and master plans, including current and previous
 
   [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/07/Alameda-Drain-And-Trail-MP-Book_reduced-8_17_16.pdf) · [Current County Transportation Plans](https://www.bernco.gov/public-works/transportation-planning/transportation-plans)
 
+- [Alameda Drain Trail Master Plan and Design Notice (2015 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-alameda-drain-trail-master-plan-design-notice-2015.pdf)
+
+  Announces the Alameda Drain Trail master-planning and design effort from I-40 to Sandia Pueblo, outlining intended trail, landscaping, water-harvesting, rest-area, maintenance, public-input, design, and construction work.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/publicflyeralamedadrain2015.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/publicflyeralamedadrain2015.pdf)
+
 - [El Camino Real National Historic Trail Development Concept Plan Executive Summary (2022 archived PDF)](https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-el-camino-real-trail-development-concept-plan-2022.pdf)
 
   Summarizes a proposed multiuse trail along the historic route and San Jose Drain, including alignment, priority projects, heritage sites, amenities, neighborhood loops, crossings, visual identity, and planning-level costs.

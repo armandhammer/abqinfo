@@ -7,6 +7,10 @@ from pypdf import PdfReader
 
 path = sys.argv[1]
 reader = PdfReader(path)
+acroform = reader.trailer["/Root"].get("/AcroForm")
+if acroform:
+    acroform = acroform.get_object()
+xfa_present = bool(acroform and acroform.get("/XFA"))
 text_pages = []
 fallback_pages = []
 with pdfplumber.open(path) as plumber:
@@ -17,6 +21,11 @@ with pdfplumber.open(path) as plumber:
             fallback_pages.append(page_number)
             text_pages.append(plumber.pages[page_number - 1].extract_text() or "")
 text = "\n".join(text_pages)
+normalized_text = " ".join(text.lower().split())
+xfa_placeholder = xfa_present and (
+    "please wait" in normalized_text
+    and "viewer may not be able to display this type of document" in normalized_text
+)
 links = []
 seen_links = set()
 for page_number, page in enumerate(reader.pages, start=1):
@@ -40,6 +49,8 @@ print(
             "text": text,
             "links": links,
             "pdfplumber_fallback_pages": fallback_pages,
+            "xfa_present": xfa_present,
+            "xfa_placeholder": xfa_placeholder,
         },
         ensure_ascii=True,
     )

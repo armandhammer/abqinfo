@@ -298,6 +298,12 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   Preserves NMDOT's previous statewide long-range multimodal plan, establishing goals, performance measures, strategies, and investment direction for safety, asset condition, mobility, access, stewardship, and accountability through 2040.
 
+- [New Mexico 2040 Statewide Long-Range Multimodal Transportation Plan Briefing (2014 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-new-mexico-2040-plan-gabac-briefing-2014.pdf)
+
+  Documents NMDOT's 2014 briefing to Albuquerque's bicycle advisory committee on the developing 2040 statewide plan, including federal requirements, performance goals, project phases, stakeholder structure, surveys, and public priorities.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/NMDOTstatewidelongrangeplan_overview_2014_714_GABAC.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/NMDOTstatewidelongrangeplan_overview_2014_714_GABAC.pdf)
+
   [Library of Congress PDF](https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/19/71/65/99/v1/2019716599v1/2019716599v1.pdf) · [Library of Congress catalog record](https://www.loc.gov/item/2019716599/) · [Current NMDOT Planning Division](https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/)
 
   - [Appendix A: Existing Conditions and Trends](https://files.abqinfo.com/transportation/transportation-plans/nmdot-new-mexico-2040-plan-appendix-a-existing-conditions-2015.pdf)
