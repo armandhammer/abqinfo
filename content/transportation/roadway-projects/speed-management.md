@@ -56,6 +56,12 @@ Traffic calming and speed management initiatives.
 
   [Official City Council project archive](https://www.cabq.gov/council/projects/completed-projects/2015/neighborhood-traffic-management-program-policy-manual) · [Official City PDF](https://www.cabq.gov/council/documents/neighborhood-traffic-management-plan/STEP_Draft_Policy_Manual_WithResolution.pdf)
 
+- [Neighborhood Traffic Management Program Study Group Draft (2010 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-ntmp-study-group-draft-2010.pdf)
+
+  Records the City study group's review of neighborhood traffic-calming policy, installed devices, emergency routes, effectiveness, funding, public participation, education, application procedures, and recommendations that informed later STEP and NTMP manuals.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/ntmp_study_group_draft_9-7-10.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/ntmp_study_group_draft_9-7-10.pdf)
+
 ### Historical Neighborhood Speed Studies
 
 These City reports preserve the street-level evidence behind traffic-calming decisions. Most are March 2021 NTMP studies; the two shorter November 2021 records document focused speed-and-volume collection.

@@ -16,6 +16,20 @@ ABQ Ride bus service information and data.
 
   Tracks the City's transit-centered redevelopment of the Uptown Transit Center, including design and construction progress, the transit plaza, affordable and market-rate housing, commercial space, sustainability features, and the anticipated 2026–2028 delivery schedule.
 
+## Facilities and Fleet Planning History
+
+- [Yale Maintenance Facility Assessment — Draft Final Report, Volume 1 (2015 Archived PDF)](https://files.abqinfo.com/transportation/transit/abq-ride/cabq-yale-maintenance-facility-assessment-volume-1-2015.pdf)
+
+  Assesses ABQ RIDE's Yale maintenance complex, documenting facility condition, bus circulation, maintenance and fueling operations, historic resources, space needs, design criteria, phased concepts, fleet projections, sustainability, and probable construction costs.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/abq-final-report_volume-1.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/abq-final-report_volume-1.pdf)
+
+- [Yale Maintenance Facility Assessment — Draft Final Report, Volume 2: Appendices (2015 Archived PDF)](https://files.abqinfo.com/transportation/transit/abq-ride/cabq-yale-maintenance-facility-assessment-volume-2-appendices-2015.pdf)
+
+  Preserves technical appendices supporting the Yale facility assessment, including planning maps, environmental and geotechnical records, hazardous-material surveys, building evaluations, fleet data, workshop material, cost estimates, and concept drawings.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/abq-final-report_volume-2.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/abq-final-report_volume-2.pdf)
+
 ## ABQ RIDE Forward Network Plan
 
 - [Official ABQ RIDE Forward Project Page](https://www.cabq.gov/transit/transit-programs-projects/abq-ride-forward)

@@ -6,6 +6,20 @@ Transportation studies and reports.
 
 ## City Corridor and Neighborhood Studies
 
+### 98th Street and Benavides Road
+
+- [Intersection Assessment — Part 1 (2019 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-98th-benavides-intersection-assessment-part-1-2019.pdf)
+
+  Evaluates 98th Street and Benavides Road geometry, access, sight distance, multimodal facilities, lighting, utilities, pavement, traffic operations, signal warrants, queues, crashes, and recommended intersection configurations and pedestrian improvements.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/98th-benavides-assessment-part-1.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/98th-benavides-assessment-part-1.pdf)
+
+- [Intersection Assessment — Part 2: Appendices (2019 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-98th-benavides-intersection-assessment-part-2-appendices-2019.pdf)
+
+  Provides the assessment's supporting planning maps, field photographs, traffic counts, signal-warrant worksheets, Synchro operations results, crash records, utility documentation, turning templates, and concept alternatives.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/98th-benavides-assessment-part-2.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/98th-benavides-assessment-part-2.pdf)
+
 ### Central Avenue: 1st Street to Girard
 
 - [Official City Project Page](https://www.cabq.gov/council/projects/neighborhood-projects/central-avenue-complete-street-plan-1st-street-to-girard)

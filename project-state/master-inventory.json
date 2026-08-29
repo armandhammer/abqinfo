@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-29T03:35:48.6964693Z",
+  "generated_at": "2026-08-29T13:50:58.7904059Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,7 +18,7 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 4014,
+    "pending review": 3999,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 4,
@@ -26,10 +26,10 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 65,
-    "validated": 664,
-    "excluded": 774,
-    "duplicate": 784,
-    "superseded": 34,
+    "validated": 674,
+    "excluded": 775,
+    "duplicate": 787,
+    "superseded": 35,
     "blocked": 0,
     "requires human review": 27
   },
@@ -32391,19 +32391,19 @@
     },
     {
       "id": "src-11da795efc34f4f3",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/storm-drainage-documents/storm-drainage-pdfs/report-text.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/our-department/street-and-storm-maintenance",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/storm-drainage-documents/storm-drainage-pdfs/report-text.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/public-works/stormwater-drainage/cabq-stormwater-antibiotic-resistance-analysis-2002.pdf",
+      "r2_key": "public-works/stormwater-drainage/cabq-stormwater-antibiotic-resistance-analysis-2002.pdf",
+      "r2_etag": "bce9e572f1b4862b5452a82f4e66e2a8",
+      "r2_last_modified": "08/29/2026 07:46:44",
       "agency": "City of Albuquerque",
-      "title": "See Text of the Analysis",
-      "date": null,
+      "title": "Antibiotic Resistance Analysis of Contamination in Stormwater — Final Report",
+      "date": "2002-06",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 3583446,
+      "checksum_sha256": "5b7daa608e366787f6ac3a98396e93472df4a94417563bb5646f201015749e5a",
       "parent_url": "https://www.cabq.gov/municipaldevelopment/our-department/street-and-storm-maintenance",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/our-department/street-and-storm-maintenance"
@@ -32418,22 +32418,27 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City source page and byte-identical City-hosted file recorded",
+      "proposed_canonical_page": "content/public-works/stormwater-drainage.md",
+      "description": "Investigates fecal-contamination sources in Albuquerque stormwater using antibiotic-resistance analysis, sampling arroyos, channels, dams, and pump stations; it documents methods, source libraries, results, site maps, photographs, and recommended technology transfer.",
+      "description_word_count": 29,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact size and SHA-256 recorded; the complete text, cover, site maps, photographs, results, and recommendations were reviewed.",
+        "Original authoritative 26-page final report preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "Retained as unusually detailed local stormwater-quality research and historical monitoring evidence."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/public-works/stormwater-drainage.md",
+      "implementation_locations": [
+        "content/public-works/stormwater-drainage.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-11da795efc34f4f3.pdf",
       "discovered_at": "2026-08-04T14:15:58.2747911Z",
-      "updated_at": "2026-08-04T14:15:58.2747911Z"
+      "updated_at": "2026-08-29T13:49:44.5905739Z"
     },
     {
       "id": "src-120125d544532b6c",
@@ -34466,7 +34471,7 @@
     },
     {
       "id": "src-13e8d3ff3f564124",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/DraftTrafficCalmingManualJune2013.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/DraftTrafficCalmingManualJune2013.pdf",
       "r2_url": null,
@@ -34478,7 +34483,7 @@
       "date": null,
       "file_type": "PDF",
       "size_bytes": 13531279,
-      "checksum_sha256": null,
+      "checksum_sha256": "b7f9edb0ab0450e5cad9fb114475927fe64c181054194ec0b6602404468774f5",
       "parent_url": "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=20",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=20"
@@ -34497,19 +34502,17 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
-        "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 13531279 bytes."
+        "Reviewed the complete 66-page June 2013 draft.",
+        "Preserved the more complete later policy lineage rather than adding an obsolete working draft."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal lineage review passed",
+      "exclusion_reason": "The June 2013 draft STEP manual was superseded by the July 2014 STEP edition and the adopted 2015 NTMP policy already preserved on ABQInfo.",
+      "local_path": "research/staging/queue/src-13e8d3ff3f564124.pdf",
       "discovered_at": "2026-08-14T20:11:39.6049359Z",
-      "updated_at": "2026-08-14T20:11:39.6049359Z"
+      "updated_at": "2026-08-29T13:50:40.62313Z"
     },
     {
       "id": "src-13f6e1487f178196",
@@ -42259,20 +42262,20 @@
     },
     {
       "id": "src-1b854e9d043388bc",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/RailYardsBlacksmithShopFeasibilityStudy.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/RailYardsBlacksmithShopFeasibilityStudy.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/projects/cabq-rail-yards-blacksmith-shop-feasibility-study-2012.pdf",
+      "r2_key": "development-land-use/projects/cabq-rail-yards-blacksmith-shop-feasibility-study-2012.pdf",
+      "r2_etag": "0ee95aa7eac496a2656bf07a5fa1a4e2",
+      "r2_last_modified": "08/29/2026 07:43:35",
       "agency": "City of Albuquerque",
-      "title": "RailYardsBlacksmithShopFeasibilityStudy.pdf",
-      "date": null,
+      "title": "Rail Yards Blacksmith Shop Feasibility Study",
+      "date": "2012-09-12",
       "file_type": "PDF",
       "size_bytes": 3919189,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=440",
+      "checksum_sha256": "b67757dc533373ea66b157ab3953613283216eee660c60ea583e8a1ddba1066b",
+      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents/RailYardsBlacksmithShopFeasibilityStudy.pdf/view",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=440"
       ],
@@ -42286,24 +42289,27 @@
       "crawl_depth": 1,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "official City Plone document-library listing and direct item URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City metadata page and byte-identical City-hosted file recorded",
+      "proposed_canonical_page": "content/development-land-use/projects.md",
+      "description": "Evaluates adaptive reuse of the historic Rail Yards Blacksmith Shop, documenting building history and condition, code requirements, rehabilitation constraints, programming, public-event concepts, accessibility, preservation standards, cost considerations, and conceptual drawings.",
+      "description_word_count": 30,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
-        "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 3919189 bytes."
+        "Exact size and SHA-256 recorded; the cover, contents, findings, historic-resource discussion, recommendations, and concept drawings were visually reviewed.",
+        "Original authoritative 61-page PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "Retained as a rare detailed record connecting preservation analysis with proposed public reuse of the Rail Yards."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/projects.md",
+      "implementation_locations": [
+        "content/development-land-use/projects.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-1b854e9d043388bc.pdf",
       "discovered_at": "2026-08-14T20:11:40.0538252Z",
-      "updated_at": "2026-08-14T20:11:40.0538252Z"
+      "updated_at": "2026-08-29T13:49:44.1387459Z"
     },
     {
       "id": "src-1b90ccd44428b6ab",
@@ -46067,20 +46073,20 @@
     },
     {
       "id": "src-1ec6e26a1059cc8c",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/abq-final-report_volume-2.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/abq-final-report_volume-2.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/transit/abq-ride/cabq-yale-maintenance-facility-assessment-volume-2-appendices-2015.pdf",
+      "r2_key": "transportation/transit/abq-ride/cabq-yale-maintenance-facility-assessment-volume-2-appendices-2015.pdf",
+      "r2_etag": "1fbbb0e5460edcd6e024b285fdab9730-4",
+      "r2_last_modified": "08/29/2026 07:44:22",
       "agency": "City of Albuquerque",
-      "title": "abq final report volume 2.pdf",
-      "date": null,
+      "title": "Yale Maintenance Facility Assessment — Volume 2: Appendices",
+      "date": "2015-06",
       "file_type": "PDF",
       "size_bytes": 25668004,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=340",
+      "checksum_sha256": "bbfb57227af2d3c5f88828675db873674d342aeeed70d61883e6f879f804ae47",
+      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents/abq-final-report_volume-2.pdf/view",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=340"
       ],
@@ -46096,24 +46102,27 @@
       "crawl_depth": 1,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "official City Plone document-library listing and direct item URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City metadata page and byte-identical City-hosted file recorded",
+      "proposed_canonical_page": "content/transportation/transit/abq-ride.md",
+      "description": "Preserves technical appendices supporting the Yale facility assessment, including planning maps, environmental and geotechnical records, hazardous-material surveys, building evaluations, fleet data, workshop material, cost estimates, and concept drawings.",
+      "description_word_count": 28,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
-        "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 25668004 bytes."
+        "Exact size and SHA-256 recorded; complete extracted text and representative maps, reports, tables, and drawings were reviewed.",
+        "Original authoritative 167-page PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "The 25668004-byte file is below the project's 25 MiB reporting threshold and the 100 MB approval threshold."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transit/abq-ride.md",
+      "implementation_locations": [
+        "content/transportation/transit/abq-ride.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-1ec6e26a1059cc8c.pdf",
       "discovered_at": "2026-08-14T20:11:37.6197474Z",
-      "updated_at": "2026-08-14T20:11:37.6197474Z"
+      "updated_at": "2026-08-29T13:49:44.2512738Z"
     },
     {
       "id": "src-1ec7c31e90234391",
@@ -117038,20 +117047,20 @@
     },
     {
       "id": "src-61ffb5299052d2f6",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/98th-benavides-assessment-part-2.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/98th-benavides-assessment-part-2.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-98th-benavides-intersection-assessment-part-2-appendices-2019.pdf",
+      "r2_key": "transportation/roadway-projects/studies/cabq-98th-benavides-intersection-assessment-part-2-appendices-2019.pdf",
+      "r2_etag": "9950eb7823eb623a8ff61c13182267a6-2",
+      "r2_last_modified": "08/29/2026 07:44:56",
       "agency": "City of Albuquerque",
-      "title": "98th benavides assessment part 2.pdf",
-      "date": null,
+      "title": "98th Street and Benavides Road Intersection Assessment — Part 2: Appendices",
+      "date": "2019-04-15",
       "file_type": "PDF",
       "size_bytes": 12280121,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=200",
+      "checksum_sha256": "83ab628c1b3f345e904c39c879bc5157d536dec90fa2e97c8c2a1a6354edf0b6",
+      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents/98th-benavides-assessment-part-2.pdf/view",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=200"
       ],
@@ -117066,24 +117075,27 @@
       "crawl_depth": 1,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "official City Plone document-library listing and direct item URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City metadata page and byte-identical City-hosted file recorded",
+      "proposed_canonical_page": "content/transportation/roadway-projects/studies.md",
+      "description": "Provides the assessment's supporting planning maps, field photographs, traffic counts, signal-warrant worksheets, Synchro operations results, crash records, utility documentation, turning templates, and concept alternatives.",
+      "description_word_count": 24,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
-        "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 12280121 bytes."
+        "Exact size and SHA-256 recorded; the full appendix text and representative maps, photographs, worksheets, and concept sheets were reviewed.",
+        "Original authoritative 47-page PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "Two alternate City metadata records for the same appendix are reconciled separately as duplicate publications."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/roadway-projects/studies.md",
+      "implementation_locations": [
+        "content/transportation/roadway-projects/studies.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-61ffb5299052d2f6.pdf",
       "discovered_at": "2026-08-14T20:11:37.5908536Z",
-      "updated_at": "2026-08-14T20:11:37.5908536Z"
+      "updated_at": "2026-08-29T13:49:44.3529472Z"
     },
     {
       "id": "src-6213e6bd0ba3dc9b",
@@ -131775,7 +131787,7 @@
     },
     {
       "id": "src-70798c7ad726cd0e",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/98th-benavides-assessment-part-2-1.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/98th-benavides-assessment-part-2-1.pdf",
       "r2_url": null,
@@ -131787,7 +131799,7 @@
       "date": null,
       "file_type": "PDF",
       "size_bytes": 12280121,
-      "checksum_sha256": null,
+      "checksum_sha256": "83ab628c1b3f345e904c39c879bc5157d536dec90fa2e97c8c2a1a6354edf0b6",
       "parent_url": "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=200",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=200"
@@ -131808,19 +131820,17 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
-        "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 12280121 bytes."
+        "Downloaded and hashed the alternate official file.",
+        "Exact 12280121-byte size and SHA-256 match the canonical archived appendix."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "byte-identical duplicate reconciled",
+      "exclusion_reason": "Byte-identical alternate City metadata copy of the validated 98th Street and Benavides Road assessment appendix, src-61ffb5299052d2f6.",
+      "local_path": "research/staging/queue/src-70798c7ad726cd0e.pdf",
       "discovered_at": "2026-08-14T20:11:37.5957314Z",
-      "updated_at": "2026-08-14T20:11:37.5957314Z"
+      "updated_at": "2026-08-29T13:50:54.0623349Z"
     },
     {
       "id": "src-7085b119749f17d6",
@@ -149674,7 +149684,7 @@
     },
     {
       "id": "src-80ae74aad201d86a",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/98th-benavides-assessment-part-2-2.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/98th-benavides-assessment-part-2-2.pdf",
       "r2_url": null,
@@ -149686,7 +149696,7 @@
       "date": null,
       "file_type": "PDF",
       "size_bytes": 12280121,
-      "checksum_sha256": null,
+      "checksum_sha256": "83ab628c1b3f345e904c39c879bc5157d536dec90fa2e97c8c2a1a6354edf0b6",
       "parent_url": "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=220",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=220"
@@ -149707,19 +149717,17 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
-        "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 12280121 bytes."
+        "Downloaded and hashed the alternate official file.",
+        "Exact 12280121-byte size and SHA-256 match the canonical archived appendix."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "byte-identical duplicate reconciled",
+      "exclusion_reason": "Byte-identical alternate City metadata copy of the validated 98th Street and Benavides Road assessment appendix, src-61ffb5299052d2f6.",
+      "local_path": "research/staging/queue/src-80ae74aad201d86a.pdf",
       "discovered_at": "2026-08-14T20:11:37.5993725Z",
-      "updated_at": "2026-08-14T20:11:37.5993725Z"
+      "updated_at": "2026-08-29T13:50:58.1691576Z"
     },
     {
       "id": "src-80bc378158f833b6",
@@ -161062,20 +161070,20 @@
     },
     {
       "id": "src-8a33ed9c2b493ba3",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/98th-benavides-assessment-part-1.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/98th-benavides-assessment-part-1.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-98th-benavides-intersection-assessment-part-1-2019.pdf",
+      "r2_key": "transportation/roadway-projects/studies/cabq-98th-benavides-intersection-assessment-part-1-2019.pdf",
+      "r2_etag": "d247609ef74cebb1f8687181666cac66",
+      "r2_last_modified": "08/29/2026 07:44:37",
       "agency": "City of Albuquerque",
-      "title": "98th benavides assessment part 1.pdf",
-      "date": null,
+      "title": "98th Street and Benavides Road Intersection Assessment — Part 1",
+      "date": "2019-04-15",
       "file_type": "PDF",
       "size_bytes": 3368615,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=200",
+      "checksum_sha256": "9fd13caeb24d7f2ac28bb19d0f4bed27e68d4a4eb97a1a5a5358d60f1673f20b",
+      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents/98th-benavides-assessment-part-1.pdf/view",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=200"
       ],
@@ -161090,24 +161098,27 @@
       "crawl_depth": 1,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "official City Plone document-library listing and direct item URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City metadata page and byte-identical City-hosted file recorded",
+      "proposed_canonical_page": "content/transportation/roadway-projects/studies.md",
+      "description": "Evaluates 98th Street and Benavides Road geometry, access, sight distance, multimodal facilities, lighting, utilities, pavement, traffic operations, signal warrants, queues, crashes, and recommended intersection configurations and pedestrian improvements.",
+      "description_word_count": 28,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
-        "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 3368615 bytes."
+        "Exact size and SHA-256 recorded; the complete report text, figures, alternatives, findings, and recommendations were reviewed.",
+        "Original authoritative 42-page PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "Retained as detailed West Side intersection-planning history."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/roadway-projects/studies.md",
+      "implementation_locations": [
+        "content/transportation/roadway-projects/studies.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-8a33ed9c2b493ba3.pdf",
       "discovered_at": "2026-08-14T20:11:37.5870912Z",
-      "updated_at": "2026-08-14T20:11:37.5870912Z"
+      "updated_at": "2026-08-29T13:49:44.2967409Z"
     },
     {
       "id": "src-8a4313642159cfbd",
@@ -179095,20 +179106,20 @@
     },
     {
       "id": "src-9b9a27d57063af29",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/030619-steam-learning-campus-master-plan-1.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/030619-steam-learning-campus-master-plan-1.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/public-works/capital-projects/cabq-explora-steam-campus-master-plan-draft-2019.pdf",
+      "r2_key": "public-works/capital-projects/cabq-explora-steam-campus-master-plan-draft-2019.pdf",
+      "r2_etag": "7f3a4208e764dc21c16b2e628f5bc8dd",
+      "r2_last_modified": "08/29/2026 07:45:17",
       "agency": "City of Albuquerque",
-      "title": "030619 steam learning campus master plan 1.pdf",
-      "date": null,
+      "title": "Explora STEAM Campus Master Plan — Draft",
+      "date": "2019-03-04",
       "file_type": "PDF",
       "size_bytes": 1900560,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=320",
+      "checksum_sha256": "fe113b35c025c18a3fd4878a29f5bb6b6706fcfe218e5062f2c26a08611a3a0f",
+      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents/030619-steam-learning-campus-master-plan-1.pdf/view",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=320"
       ],
@@ -179124,24 +179135,27 @@
       "crawl_depth": 1,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "official City Plone document-library listing and direct item URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City metadata page and byte-identical City-hosted file recorded",
+      "proposed_canonical_page": "content/public-works/capital-projects.md",
+      "description": "Sets a phased campus framework for Explora, including community and partner engagement, existing conditions, workforce-development and early-learning facilities, parking, circulation, outdoor learning, program needs, site design, and final buildout.",
+      "description_word_count": 29,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
-        "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 1900560 bytes."
+        "Exact size and SHA-256 recorded; the complete text, cover, site plans, phasing diagrams, and program pages were reviewed.",
+        "Original authoritative 44-page draft PDF preserved without modification and clearly labeled as a draft on ABQInfo.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "Retained as a significant public-facility planning record rather than evidence of completed construction."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/public-works/capital-projects.md",
+      "implementation_locations": [
+        "content/public-works/capital-projects.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-9b9a27d57063af29.pdf",
       "discovered_at": "2026-08-14T20:11:37.1856947Z",
-      "updated_at": "2026-08-14T20:11:37.1856947Z"
+      "updated_at": "2026-08-29T13:49:44.3997973Z"
     },
     {
       "id": "src-9ba097d4937df816",
@@ -182515,20 +182529,20 @@
     },
     {
       "id": "src-9f3d4a5aba4ab98c",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/ntmp_study_group_draft_9-7-10.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/ntmp_study_group_draft_9-7-10.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-ntmp-study-group-draft-2010.pdf",
+      "r2_key": "transportation/roadway-projects/speed-management/cabq-ntmp-study-group-draft-2010.pdf",
+      "r2_etag": "0898d93a7d838597e622e4b4078a247c-2",
+      "r2_last_modified": "08/29/2026 07:45:40",
       "agency": "City of Albuquerque",
-      "title": "ntmp study group draft 9 7 10.pdf",
-      "date": null,
+      "title": "Neighborhood Traffic Management Program Study Group Draft",
+      "date": "2010-09-07",
       "file_type": "PDF",
       "size_bytes": 11386572,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=440",
+      "checksum_sha256": "e242c11edc6fb333d8c33ea58363db30ebfcf52462ffcabb6fddfef61afaf464",
+      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents/ntmp_study_group_draft_9-7-10.pdf/view",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=440"
       ],
@@ -182542,24 +182556,27 @@
       "crawl_depth": 1,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "official City Plone document-library listing and direct item URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City metadata page and byte-identical City-hosted file recorded",
+      "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+      "description": "Records the City study group's review of neighborhood traffic-calming policy, installed devices, emergency routes, effectiveness, funding, public participation, education, application procedures, and recommendations that informed later STEP and NTMP manuals.",
+      "description_word_count": 30,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
-        "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 11386572 bytes."
+        "Exact size and SHA-256 recorded; the complete text, implemented-device examples, emergency-route maps, findings, appendices, and recommendations were reviewed.",
+        "Original authoritative 59-page draft PDF preserved without modification and clearly labeled as a historical draft.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "Retained as the earliest detailed record in the current policy lineage."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/roadway-projects/speed-management.md",
+      "implementation_locations": [
+        "content/transportation/roadway-projects/speed-management.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-9f3d4a5aba4ab98c.pdf",
       "discovered_at": "2026-08-14T20:11:39.8877509Z",
-      "updated_at": "2026-08-14T20:11:39.8877509Z"
+      "updated_at": "2026-08-29T13:49:44.4590529Z"
     },
     {
       "id": "src-9f4896d16e30c694",
@@ -194110,20 +194127,20 @@
     },
     {
       "id": "src-aa5b24a4e9116d98",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/abq-final-report_volume-1.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/abq-final-report_volume-1.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/transit/abq-ride/cabq-yale-maintenance-facility-assessment-volume-1-2015.pdf",
+      "r2_key": "transportation/transit/abq-ride/cabq-yale-maintenance-facility-assessment-volume-1-2015.pdf",
+      "r2_etag": "fcc7b139c216d2c600a259742a3ba878-2",
+      "r2_last_modified": "08/29/2026 07:43:59",
       "agency": "City of Albuquerque",
-      "title": "abq final report volume 1.pdf",
-      "date": null,
+      "title": "Yale Maintenance Facility Assessment — Volume 1",
+      "date": "2015-06",
       "file_type": "PDF",
       "size_bytes": 13798156,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=340",
+      "checksum_sha256": "d0ecae3c2a396758b9e18bf2343ba7d5e73b690723cd38217c0911f357ea228f",
+      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents/abq-final-report_volume-1.pdf/view",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=340"
       ],
@@ -194139,24 +194156,27 @@
       "crawl_depth": 1,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "official City Plone document-library listing and direct item URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City metadata page and byte-identical City-hosted file recorded",
+      "proposed_canonical_page": "content/transportation/transit/abq-ride.md",
+      "description": "Assesses ABQ RIDE's Yale maintenance complex, documenting facility condition, bus circulation, maintenance and fueling operations, historic resources, space needs, design criteria, phased concepts, fleet projections, sustainability, and probable construction costs.",
+      "description_word_count": 30,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
-        "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 13798156 bytes."
+        "Exact size and SHA-256 recorded; complete extracted text and representative facility, design, and cost pages were reviewed.",
+        "Original authoritative 265-page PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "The PDF was re-exported in 2022, but the document itself is dated June 2015."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transit/abq-ride.md",
+      "implementation_locations": [
+        "content/transportation/transit/abq-ride.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-aa5b24a4e9116d98.pdf",
       "discovered_at": "2026-08-14T20:11:37.6161236Z",
-      "updated_at": "2026-08-14T20:11:37.6161236Z"
+      "updated_at": "2026-08-29T13:49:44.1930676Z"
     },
     {
       "id": "src-aa6d7b0bd671e50b",
@@ -218414,7 +218434,7 @@
     },
     {
       "id": "src-c0f9a572ccb8b9bf",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/aug-2023_guidelines-for-consultant-and-contractor-re-prep-of-contract-docs-1.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/aug-2023_guidelines-for-consultant-and-contractor-re-prep-of-contract-docs-1.pdf",
       "r2_url": null,
@@ -218426,7 +218446,7 @@
       "date": null,
       "file_type": "PDF",
       "size_bytes": 225130,
-      "checksum_sha256": null,
+      "checksum_sha256": "1241ffe335e5a068a5701454e9133fa2f5eb60e4cfc3a45a24d798b500c4f7b6",
       "parent_url": "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=360",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=360"
@@ -218447,19 +218467,17 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
-        "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 225130 bytes."
+        "Reviewed the complete August 2023 document.",
+        "Excluded under the established high-information and public-usefulness criteria."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal relevance review passed",
+      "exclusion_reason": "Five-page internal contract-document assembly checklist and transmittal instructions; administrative workflow material does not provide durable planning, design, project, or public-information value for ABQInfo.",
+      "local_path": "research/staging/queue/src-c0f9a572ccb8b9bf.pdf",
       "discovered_at": "2026-08-14T20:11:37.7759302Z",
-      "updated_at": "2026-08-14T20:11:37.7759302Z"
+      "updated_at": "2026-08-29T13:50:50.1145805Z"
     },
     {
       "id": "src-c101b389fc23eb9e",
@@ -226131,7 +226149,7 @@
     },
     {
       "id": "src-c8c9c31ea5a878f0",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/2014_July_STEP_Policy_Manual_FINAL.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/2014_July_STEP_Policy_Manual_FINAL.pdf",
       "r2_url": null,
@@ -226143,7 +226161,7 @@
       "date": null,
       "file_type": "PDF",
       "size_bytes": 21104159,
-      "checksum_sha256": null,
+      "checksum_sha256": "b79c0416c59966b7dd237ef314b3a30d9ba593a30bc05705a1563bcf67c2a602",
       "parent_url": "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=80",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=80"
@@ -226162,19 +226180,17 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
-        "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 21104159 bytes."
+        "Compared all 61 manual pages with the validated 67-page combined archive; normalized extracted text similarity was 96.39 percent.",
+        "The retained City Council edition includes the companion resolution and is the more complete archival record."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "substantive duplicate reconciled",
+      "exclusion_reason": "Substantially duplicates the July 2014 STEP manual already preserved in the more complete official combined manual-and-resolution archive as src-d2c2143636e12e52.",
+      "local_path": "research/staging/queue/src-c8c9c31ea5a878f0.pdf",
       "discovered_at": "2026-08-14T20:11:37.2388806Z",
-      "updated_at": "2026-08-14T20:11:37.2388806Z"
+      "updated_at": "2026-08-29T13:50:46.1593722Z"
     },
     {
       "id": "src-c8cc309988ac876e",
@@ -267887,20 +267903,20 @@
     },
     {
       "id": "src-ef328e9ebf57aaab",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/VolcanoPlansAmendments20140714.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/VolcanoPlansAmendments20140714.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-volcano-mesa-transportation-amendments-presentation-2014.pdf",
+      "r2_key": "development-land-use/area-sector-plans/cabq-volcano-mesa-transportation-amendments-presentation-2014.pdf",
+      "r2_etag": "fcf7452158533debeb82ab8daec58e6e",
+      "r2_last_modified": "08/29/2026 07:46:02",
       "agency": "City of Albuquerque",
-      "title": "VolcanoPlansAmendments20140714.pdf",
-      "date": null,
+      "title": "Volcano Mesa Plans — Proposed Transportation Text Amendments",
+      "date": "2014-07-14",
       "file_type": "PDF",
       "size_bytes": 2927589,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=80",
+      "checksum_sha256": "88d7885973980484c6c182ccfed60938214fa143339a3b0d293730f064741112",
+      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents/VolcanoPlansAmendments20140714.pdf/view",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=80"
       ],
@@ -267913,24 +267929,28 @@
       "crawl_depth": 1,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "official City Plone document-library listing and direct item URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City metadata page and byte-identical City-hosted file recorded",
+      "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+      "description": "Explains proposed 2014 transportation amendments across the Volcano Cliffs, Volcano Heights, Volcano Trails, and West Side plans, comparing roadway-network maps, Paseo del Norte and Unser cross-sections, frontage roads, and multimodal design.",
+      "description_word_count": 31,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
-        "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 2927589 bytes."
+        "Cross-listed on Maps because the presentation preserves otherwise scattered roadway-network and cross-section history.",
+        "Exact size and SHA-256 recorded; all presentation pages, network maps, cross-sections, comparisons, and amendment summary were reviewed.",
+        "Original authoritative 18-page presentation preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/development-land-use/area-sector-plans.md",
+      "implementation_locations": [
+        "content/development-land-use/area-sector-plans.md",
+        "content/maps/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-ef328e9ebf57aaab.pdf",
       "discovered_at": "2026-08-14T20:11:40.3898322Z",
-      "updated_at": "2026-08-14T20:11:40.3898322Z"
+      "updated_at": "2026-08-29T13:50:37.2687576Z"
     },
     {
       "id": "src-ef40025fc4a31d03",
@@ -280409,20 +280429,20 @@
     },
     {
       "id": "src-fafd89492c71ec90",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/RailYardsEnvironmentalLeadBasedPaintReport.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/RailYardsEnvironmentalLeadBasedPaintReport.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/projects/cabq-rail-yards-blacksmith-shop-environmental-sampling-2012.pdf",
+      "r2_key": "development-land-use/projects/cabq-rail-yards-blacksmith-shop-environmental-sampling-2012.pdf",
+      "r2_etag": "e4f3130305a9b1c22e109015b1779297",
+      "r2_last_modified": "08/29/2026 07:46:24",
       "agency": "City of Albuquerque",
-      "title": "RailYardsEnvironmentalLeadBasedPaintReport.pdf",
-      "date": null,
+      "title": "Rail Yards Blacksmith Shop Environmental Sampling Report",
+      "date": "2012-03-27",
       "file_type": "PDF",
       "size_bytes": 2154946,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=440",
+      "checksum_sha256": "7cabe7d5aff810b68b03ace91db93656d135b0690c1b8865e5fdc4897741c6ed",
+      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents/RailYardsEnvironmentalLeadBasedPaintReport.pdf/view",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=440"
       ],
@@ -280436,24 +280456,27 @@
       "crawl_depth": 1,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "official City Plone document-library listing and direct item URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City metadata page and byte-identical City-hosted file recorded",
+      "proposed_canonical_page": "content/development-land-use/projects.md",
+      "description": "Documents 2012 Blacksmith Shop air and settled-dust testing for lead and volatile organic compounds, laboratory results, identified hazards, cleanup recommendations, worker-occupancy concerns, and implications for adaptive reuse.",
+      "description_word_count": 27,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
-        "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 2154946 bytes."
+        "Exact size and SHA-256 recorded; the complete report, conclusions, recommendations, and laboratory attachments were reviewed.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative seven-page PDF preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "Retained as a companion environmental record to the Blacksmith Shop feasibility study."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/projects.md",
+      "implementation_locations": [
+        "content/development-land-use/projects.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-fafd89492c71ec90.pdf",
       "discovered_at": "2026-08-14T20:11:40.0579311Z",
-      "updated_at": "2026-08-14T20:11:40.0579311Z"
+      "updated_at": "2026-08-29T13:49:44.5488695Z"
     },
     {
       "id": "src-fb0ab637d6fa13ab",

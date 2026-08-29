@@ -32,6 +32,12 @@ Public works capital improvement projects.
 
 ## Historical Project Snapshots
 
+- [Explora STEAM Campus Master Plan — Draft (2019 Archived PDF)](https://files.abqinfo.com/public-works/capital-projects/cabq-explora-steam-campus-master-plan-draft-2019.pdf)
+
+  Sets a phased campus framework for Explora, including community and partner engagement, existing conditions, workforce-development and early-learning facilities, parking, circulation, outdoor learning, program needs, site design, and final buildout.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/030619-steam-learning-campus-master-plan-1.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/030619-steam-learning-campus-master-plan-1.pdf)
+
 - [South Valley Drinking Water Project](https://www.bernco.gov/public-works/blog/2021/04/15/south-valley-drinking-water-project/)
 
   Preserves two maps documenting the phased South Valley water-system expansion, including transmission pipelines, reservoirs, booster facilities, service areas, major roads, waterways, railroad infrastructure, and the program's geographic progression.

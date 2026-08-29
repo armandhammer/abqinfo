@@ -26,6 +26,20 @@ Selected major development activity and the plans and datasets needed to underst
 
   Combines replacement of the Uptown Transit Center with 239 mixed-rate homes, commercial space, a transit plaza, and pedestrian connections. The maintained City page reports design and construction milestones for the anticipated 2028 opening.
 
+### Rail Yards Planning and Environmental Records
+
+- [Rail Yards Blacksmith Shop Feasibility Study (2012 Archived PDF)](https://files.abqinfo.com/development-land-use/projects/cabq-rail-yards-blacksmith-shop-feasibility-study-2012.pdf)
+
+  Evaluates adaptive reuse of the historic Rail Yards Blacksmith Shop, documenting building history and condition, code requirements, rehabilitation constraints, programming, public-event concepts, accessibility, preservation standards, cost considerations, and conceptual drawings.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/RailYardsBlacksmithShopFeasibilityStudy.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/RailYardsBlacksmithShopFeasibilityStudy.pdf)
+
+- [Rail Yards Blacksmith Shop Environmental Sampling Report (2012 Archived PDF)](https://files.abqinfo.com/development-land-use/projects/cabq-rail-yards-blacksmith-shop-environmental-sampling-2012.pdf)
+
+  Documents 2012 Blacksmith Shop air and settled-dust testing for lead and volatile organic compounds, laboratory results, identified hazards, cleanup recommendations, worker-occupancy concerns, and implications for adaptive reuse.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/RailYardsEnvironmentalLeadBasedPaintReport.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/RailYardsEnvironmentalLeadBasedPaintReport.pdf)
+
 ## Redevelopment Portfolio
 
 - [Metropolitan Redevelopment Agency Annual Report 2023 (archived PDF)](https://files.abqinfo.com/development-land-use/projects/cabq-mra-annual-report-2023.pdf)
