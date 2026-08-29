@@ -306,6 +306,38 @@ Transportation studies and reports.
 
   [Official MRMPO report](https://www.mrcog-nm.gov/DocumentCenter/View/5501/Road-Safety-Audit-of-Lead-and-Coal)
 
+### Historical Street Capital Programs
+
+- [Repaving Expenditures by Council District, 1999-2003 (Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-repaving-expenditures-by-council-district-1999-2003.pdf)
+
+  Reports annual Albuquerque repaving expenditures and completed lane miles by council district from 1999 through 2003, enabling comparison of historical street-maintenance investment and geographic distribution.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2004-bond-documents/RepavingExpenditures.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2004-bond-documents/RepavingExpenditures.pdf)
+
+- [2003-2004 Street Bond Projects (Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-street-bond-projects-2003-2004.pdf)
+
+  Compares proposed 2003 and approved 2004 street-bond funding for major roads, bikeways, traffic systems, intersections, paving, sidewalks, landscaping, council set-asides, and related capital projects.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2004-bond-documents/20032004StrProjs.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2004-bond-documents/20032004StrProjs.pdf)
+
+- [2004 Planned Quarter-Cent Street Projects (Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-planned-quarter-cent-street-projects-2004.pdf)
+
+  Lists planned Albuquerque street work associated with quarter-cent transportation funding, organized by map quadrant and street limits, preserving a detailed snapshot of neighborhood-scale paving priorities.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2004-bond-documents/PlannedQuarterCentProjects.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2004-bond-documents/PlannedQuarterCentProjects.pdf)
+
+- [2004 Priority General Obligation Bond Street Projects (Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-priority-go-bond-street-projects-2004.pdf)
+
+  Identifies planned major paving rehabilitation and General Obligation Bond street projects by map quadrant, street, and limits, preserving neighborhood-level transportation investment priorities from 2004.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2004-bond-documents/PriorityProjects.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2004-bond-documents/PriorityProjects.pdf)
+
+- [Roadway Component Capital Implementation Plan, 2005-2013 (Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-roadway-component-capital-implementation-plan-2005-2013.pdf)
+
+  Schedules proposed roadway capital funding by service area for 2005-2013, including Coors, Paseo del Norte, Unser, 98th Street, Wyoming, major intersections, and other growth-area improvements.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/ccip-roadway.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/ccip-roadway.pdf)
+
 ## Regional Screening and Analysis
 
 - [Road Diet Candidates Map](https://www.mrcog-nm.gov/569/Road-Diet-Candidates-Map)
