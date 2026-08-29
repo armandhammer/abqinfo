@@ -71,7 +71,13 @@ if (-not $extension) {
 }
 $path = Join-Path $DownloadDirectory ($Id + $extension.ToLowerInvariant())
 try {
-  Invoke-WebRequest -Uri $url -OutFile $path -UseBasicParsing
+  $headers = @{
+    'User-Agent' = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0 Safari/537.36'
+  }
+  if ($candidate.parent_url -and [uri]::IsWellFormedUriString([string]$candidate.parent_url, [UriKind]::Absolute)) {
+    $headers['Referer'] = [string]$candidate.parent_url
+  }
+  Invoke-WebRequest -Uri $url -OutFile $path -UseBasicParsing -Headers $headers
   $file = Get-Item -LiteralPath $path
   $candidate.status = 'downloaded'
   $candidate.local_path = $file.FullName.Substring((Get-Location).Path.Length + 1).Replace('\','/')

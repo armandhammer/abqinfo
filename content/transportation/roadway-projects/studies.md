@@ -270,7 +270,7 @@ Transportation studies and reports.
 
   Adopted as an addendum to the Isleta Boulevard and Village Centers Sector Development Plan, it establishes corridor land-use, roadway, access, streetscape, building, parking, and implementation standards.
 
-  [Recovered official County Planning PDF](https://www.bernco.gov/planning/wp-content/uploads/sites/58/2021/04/sector-plan.pdf) · [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/16/bridge-boulevard-corridor-redevelopment-plan)
+  [Recovered official County Planning PDF](https://www.bernco.gov/planning/wp-content/uploads/sites/58/2021/04/sector-plan.pdf) · [Alternate County Public Works PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/sector-plan.pdf) · [Official County Project Page](https://www.bernco.gov/public-works/blog/2021/04/16/bridge-boulevard-corridor-redevelopment-plan)
 
 - [Bridge/Isleta Revitalization Plan (1997 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/bernco-bridge-isleta-revitalization-plan-1997.pdf)
 

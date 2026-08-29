@@ -54,6 +54,26 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
   County project contact: Jennifer Flor, 505-350-7833, [jflor@bernco.gov](mailto:jflor@bernco.gov)
 
+## Historical County Drainage Projects
+
+- [Arenal Storm Drain Project — Site Map (2021 Archived PDF)](https://files.abqinfo.com/public-works/stormwater/bernco-arenal-storm-drain-project-map-2021.pdf)
+
+  Maps the Arenal storm-drain project mailing area and its relationship to Coors Boulevard, Arenal Road, neighborhood streets, canals, ditches, laterals, and the Isleta Drain in the South Valley.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/ArenalDrainProjectMap.pdf) · [Official County Project Page](https://www.bernco.gov/public-works/blog/2021/04/16/arenal-storm-drain/)
+
+- [Sunset Road Improvements — Proposed Storm Drain Map (2021 Archived PDF)](https://files.abqinfo.com/public-works/stormwater/bernco-sunset-road-proposed-storm-drain-map-2021.pdf)
+
+  Maps the proposed Sunset Road storm drain between Arenal Road and Bridge Boulevard, showing its connection to the Sanchez Farm detention pond and its relationship to neighborhood streets and drainage features.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/SunsetDrainage.pdf) · [Official County Project Page](https://www.bernco.gov/public-works/blog/2021/04/15/sunset-road-improvements-project/)
+
+- [Vista del Rio Area Storm Drainage Project — Phase Map (2016 Archived PDF)](https://files.abqinfo.com/public-works/stormwater/bernco-vista-del-rio-drainage-phase-map-2016.pdf)
+
+  Maps four phases of Vista del Rio drainage improvements, including storm-drain lines, detention ponds, pumped river and riverside-drain outfalls, flood-hazard areas, neighborhood streets, and the Phase 4 construction area.
+
+  [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/VistaDelRio2016.pdf) · [Official County Project Page](https://www.bernco.gov/public-works/blog/2021/04/15/vista-del-rio-drainage-improvements-phase-4/)
+
 ## Municipal Stormwater Research
 
 ### Municipal Stormwater Program and Annual Reports
