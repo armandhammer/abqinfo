@@ -80,6 +80,14 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
 ## Municipal Stormwater Research
 
+### Contamination-Source Studies
+
+- [Antibiotic Resistance Analysis of Contamination in Stormwater — Final Report (2002 Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-stormwater-antibiotic-resistance-analysis-2002.pdf)
+
+  Investigates fecal-contamination sources in Albuquerque stormwater using antibiotic-resistance analysis, sampling arroyos, channels, dams, and pump stations; it documents methods, source libraries, results, site maps, photographs, and recommended technology transfer.
+
+  [Official City Street and Storm Maintenance Page](https://www.cabq.gov/municipaldevelopment/our-department/street-and-storm-maintenance) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/storm-drainage-documents/storm-drainage-pdfs/report-text.pdf)
+
 ### Municipal Stormwater Program and Annual Reports
 
 - [City of Albuquerque MS4 Annual Report, FY 2025 (archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-annual-report-fy2025.pdf)

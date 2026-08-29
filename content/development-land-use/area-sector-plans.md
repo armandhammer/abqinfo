@@ -54,6 +54,12 @@ The exact former City download locations for this draft collection have not been
 
   [Official City plan library](https://www.cabq.gov/planning/plans-publications/area-sector-development-plans) · [Official City PDF](https://documents.cabq.gov/planning/UDD/UDD-SouthwestAreaPlan-ABQ2002-Bernco2001.pdf)
 
+- [Volcano Mesa Plans — Proposed Transportation Text Amendments (2014 Archived PDF)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-volcano-mesa-transportation-amendments-presentation-2014.pdf)
+
+  Explains proposed 2014 transportation amendments across the Volcano Cliffs, Volcano Heights, Volcano Trails, and West Side plans, comparing roadway-network maps, Paseo del Norte and Unser cross-sections, frontage roads, and multimodal design.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/VolcanoPlansAmendments20140714.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/VolcanoPlansAmendments20140714.pdf)
+
 - [Volcano Trails Sector Development Plan (2011)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-volcano-trails-sector-development-plan-2011.pdf)
 
   Preserves the adopted Volcano Trails framework for village-center and residential development, open space, transportation, trails, infrastructure, urban design, zoning, implementation, and protection of the volcanic landscape.

@@ -25,6 +25,10 @@ Interactive maps of city data and infrastructure.
 
 ### Historical Transportation Maps
 
+- [Volcano Mesa Roadway Networks and Cross-Sections (2014 Archived Presentation)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-volcano-mesa-transportation-amendments-presentation-2014.pdf)
+
+  Compares roadway-network maps and Paseo del Norte and Unser Boulevard cross-sections across the Volcano Cliffs, Volcano Heights, Volcano Trails, and West Side plans. [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/VolcanoPlansAmendments20140714.pdf/view)
+
 - [2040 Long-Range Roadway Map](https://files.abqinfo.com/transportation/transportation-plans/cabq-2040-long-range-roadway-map.pdf)
 
   Preserves the City’s earlier 2040 roadway planning map, showing long-range functional classifications and network connections for comparison with current regional roadway-system guidance.
