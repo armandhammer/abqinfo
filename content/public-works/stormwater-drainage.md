@@ -102,6 +102,12 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
   [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/nmr04a014-fy24-signed-compiled.pdf)
 
+- [City of Albuquerque MS4 Annual Report, FY 2023 (Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-annual-report-fy2023.pdf)
+
+  Documents FY 2023 municipal stormwater permit compliance, including monitoring, illicit-discharge controls, construction oversight, municipal operations, public education, water-quality results, interagency coordination, and supporting attachments.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/annual-report-fy23-signed-attachments.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/annual-report-fy23-signed-attachments.pdf)
+
 - [City of Albuquerque MS4 Annual Report, FY 2022 (archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-annual-report-fy2022.pdf)
 
   Preserves the FY 2022 municipal stormwater compliance record for Albuquerque, including monitoring, impaired-water responses, illicit-discharge work, construction oversight, municipal operations, public education, and program attachments.
@@ -115,6 +121,18 @@ Technical standards, studies, models, and public references for Albuquerque’s 
   [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/swmp-11-24-2019-submitted.pdf)
 
 ### Historical Permit and Water-Quality Records
+
+- [Albuquerque MS4 Water-Quality Monitoring Status, July 2014-January 2015 (Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-water-quality-monitoring-status-2014-2015.pdf)
+
+  Preserves wet-weather sampling dates, storm duration, rainfall, discharge estimates, collection methods, and monitoring-station status for Albuquerque arroyo and stormwater outfalls during FY 2015.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/water-quality-monitoring-status-july-2014-to-december-2014.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/water-quality-monitoring-status-july-2014-to-december-2014.pdf)
+
+- [Albuquerque MS4 Water-Quality Monitoring Status, June-September 2015 (Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-water-quality-monitoring-status-june-september-2015.pdf)
+
+  Records 2015 wet-weather monitoring events at Albuquerque arroyos and stormwater outfalls, including rainfall, storm duration, discharge estimates, sampling methods, inactive stations, and collection notes.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/water-quality-monitoring-status-june-september-2015.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/water-quality-monitoring-status-june-september-2015.pdf)
 
 - [Albuquerque MS4 Bacterial TMDL Loading Report, Water Year 2015 (archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-bacterial-tmdl-loading-report-wy2015.pdf)
 

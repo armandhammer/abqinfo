@@ -26,11 +26,41 @@ Capital improvement spending and projects.
 
 ## Historical Capital Programs
 
+- [2003 Decade Plan Project Evaluation Criteria (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-decade-plan-project-evaluation-criteria-2003.pdf)
+
+  Documents weighted criteria used to evaluate Albuquerque capital proposals, including asset rehabilitation, operating-budget impact, adopted-plan consistency, service delivery, geographic distribution, partnerships, equity, and implementation readiness.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/DecadePlanCriteria.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/DecadePlanCriteria.pdf)
+
+- [2003 Staff Committee General Obligation Bond Project Rankings (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-go-bond-project-rankings-2003.pdf)
+
+  Ranks proposed Albuquerque capital projects from high to low across public works, transit, parks, public safety, community facilities, drainage, libraries, streets, and cultural services.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/bondprojectrankings.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/bondprojectrankings.pdf)
+
+- [2003-2007 Consolidated Plan Capital Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2003-2007-consolidated-plan-capital-summary.pdf)
+
+  Summarizes Albuquerque's 2003-2007 federal community-development and housing capital expenditures, identifying public facilities, streetscapes, redevelopment, housing programs, shelters, neighborhood projects, and annual funding levels.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/consolidated-plan.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/consolidated-plan.pdf)
+
+- [2011-2020 General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2011-2020-go-bond-summary.pdf)
+
+  Summarizes planned bond allocations for 2011 through 2019 across streets, drainage, parks, public safety, transit, affordable housing, cultural services, planning, and community facilities.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/summary_2011-2020.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/summary_2011-2020.pdf)
+
 - [2013–2022 Decade Plan and 2013 General Obligation Bond Program (archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2013-2022-decade-plan-go-bond-program.pdf)
 
   Presents the Environmental Planning Commission version of the 2013–2022 Albuquerque capital-improvement decade plan and 2013 bond program, with department projects, funding schedules, maps, justifications, and program criteria.
 
   [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2013GOBondProgramEPC.pdf)
+
+- [2017-2026 Decade Plan and 2017 General Obligation Bond Program - Mayor's Recommendation (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-2026-decade-plan-mayors-recommendation-2017.pdf)
+
+  Presents the mayor's recommended 2017-2026 capital decade plan and 2017 bond program, with project scopes, locations, costs, schedules, funding sources, departmental priorities, maps, and photographs.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/2017-mayors-recommendation-to-city-council.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/2017-mayors-recommendation-to-city-council.pdf)
 
 - [2019 General Obligation Bond Program Book (archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2019-go-bond-program-book.pdf)
 
