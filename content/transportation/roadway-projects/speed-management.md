@@ -288,11 +288,71 @@ These City reports preserve the street-level speed, volume, crash, and roadway e
 
   [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/field-drive-speed-study-report.pdf)
 
+- [Flora Vista Avenue Cut-Through Traffic Study (2019 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-flora-vista-avenue-cut-through-traffic-study-2019.pdf)
+
+  Supplements the 2018 Flora Vista speed study with peak-period observations between Condershire Drive and Coors Boulevard, finding cut-through traffic well below the NTMP threshold.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/flora-vista-ave-study.pdf)
+
 - [Freedom Way Speed Study (2021 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-freedom-way-speed-study-2021.pdf)
 
   Documents measured speeds and traffic volumes along Freedom Way from Ventura Street to Don Diego Street, providing neighborhood-scale evidence for traffic-calming evaluation and future street-safety decisions.
 
   [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/freedom-way-speed-study-report.pdf)
+
+- [Gallant Fox Road Speed Study (2021 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-gallant-fox-road-speed-study-2021.pdf)
+
+  Evaluates Gallant Fox Road between Juan Tabo Boulevard and Count Fleet Street and finds two NTMP threshold sets were met, qualifying the segment for traffic-calming measures.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/gallant-fox-rd-speed-study.pdf)
+
+- [General Stilwell Street Speed Study (2018 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-general-stilwell-street-speed-study-2018.pdf)
+
+  Documents speed, traffic-volume, and crash conditions on General Stilwell Street and concludes that the corridor did not meet the NTMP threshold for traffic-calming improvements.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/general-stilwell-study.pdf)
+
+- [Gonzales Road Speed Study (2020 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-gonzales-road-speed-study-2020.pdf)
+
+  Analyzes crash, volume, and speed data on Gonzales Road and finds two of four NTMP criteria were met, satisfying the minimum traffic-calming threshold.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/gonzales-road-speed-study.pdf)
+
+- [Grande Drive Speed Study (2017 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-grande-drive-speed-study-2017.pdf)
+
+  Reviews traffic volumes, crashes, and speeds on Grande Drive and finds that none of the applicable NTMP criteria were met to warrant traffic calming.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/grande-dr.pdf)
+
+- [Gun Club Road Speed Study (2019 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-gun-club-road-speed-study-2019.pdf)
+
+  Studies Gun Club Road from Coors Boulevard to Southfield Drive and finds two of four NTMP criteria were met, satisfying the minimum traffic-calming threshold.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/gun-club-speed-study.pdf)
+
+- [Gwin Road Speed Study (2019 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-gwin-road-speed-study-2019.pdf)
+
+  Analyzes Gwin Road from Unser Boulevard to 75th Street using crash, volume, and speed data and finds none of the four NTMP criteria were met.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/gwin-rd-speed-study.pdf)
+
+- [Harper Drive Speed Study (2018 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-harper-drive-speed-study-2018.pdf)
+
+  Finds Harper Drive met the minimum NTMP threshold and recommends permanent radar-feedback signs in each direction as a traffic-calming response.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/harper-dr-study.pdf)
+
+- [Hidalgo Circle Speed Study (2017 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-hidalgo-circle-speed-study-2017.pdf)
+
+  Reviews speed, volume, and crash conditions on Hidalgo Circle and finds the street did not meet the two-warrant minimum required for NTMP traffic calming.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/hidalgo-cir.pdf)
+
+- [Hilton Avenue Speed Study (2021 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-hilton-avenue-speed-study-2021.pdf)
+
+  Evaluates Hilton Avenue between Wyoming Boulevard and General Chennault Street and finds none of nine NTMP threshold sets, so the segment did not qualify for traffic calming.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/hilton-ave-speed-study.pdf)
 
 - [Iliff Road Speed Study (2021 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-iliff-road-speed-study-2021.pdf)
 
@@ -300,11 +360,71 @@ These City reports preserve the street-level speed, volume, crash, and roadway e
 
   [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/iliff-road-speed-study.pdf)
 
+- [Innovation Parkway Traffic and Safety Study (2018 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-innovation-parkway-traffic-safety-study-2018.pdf)
+
+  Combines speed, crash, operational, cut-through, stop-control, and pedestrian-beacon analyses for Innovation Parkway, recommending four radar-feedback signs while finding stop control and a HAWK beacon unwarranted.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/innovation-pky-study.pdf)
+
+- [Jane Street Speed Study (2018 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-jane-street-speed-study-2018.pdf)
+
+  Documents speed, traffic-volume, and crash conditions on Jane Street and concludes that none of the NTMP criteria were met to warrant traffic calming.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/jane-st-study.pdf)
+
 - [Kimmick Drive Speed and Volume Study (2021 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-kimmick-drive-speed-volume-study-2021.pdf)
 
   Documents measured speeds and traffic volumes along Kimmick Drive from Paseo del Norte Boulevard to Urraca Street, providing neighborhood-scale evidence for traffic-calming evaluation and future street-safety decisions.
 
   [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/kimmick-speed-and-volume-final-11-23-2021.pdf)
+
+- [Lafayette Drive Speed Study (2015 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-lafayette-drive-speed-study-2015.pdf)
+
+  Evaluates Lafayette Drive between Comanche Road and Delamar Avenue and finds that none of the City criteria were met to warrant speed humps.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/lafayette-dr.pdf)
+
+- [Landau Street Speed Study (2017 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-landau-street-speed-study-2017.pdf)
+
+  Finds Landau Street met two of four NTMP warrants and identifies signage, striping, and speed humps or tables for more detailed traffic-calming evaluation.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/landau-st.pdf)
+
+- [Los Lomas Road Speed Study (2017 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-los-lomas-road-speed-study-2017.pdf)
+
+  Evaluates traffic, crashes, and speeds on Los Lomas Road and concludes that the roadway did not meet the minimum NTMP traffic-calming threshold.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/los-lomas-road.pdf)
+
+- [Los Tretos Street Speed Study (2017 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-los-tretos-street-speed-study-2017.pdf)
+
+  Reviews traffic volumes, crashes, and speeds on Los Tretos Street and finds the street did not meet the minimum NTMP traffic-calming threshold.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/los-tretos-st.pdf)
+
+- [Lucretia Street Speed Study (2018 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-lucretia-street-speed-study-2018.pdf)
+
+  Studies Lucretia Street from Brian Avenue to Sapphire Street and finds one of four NTMP criteria, below the minimum threshold for traffic calming.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/lucretia-st-study.pdf)
+
+- [Luna Boulevard Speed Study (2017 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-luna-boulevard-speed-study-2017.pdf)
+
+  Reviews traffic volumes, crashes, and speeds on Luna Boulevard and finds that none of the NTMP criteria were met to warrant traffic calming.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/luna-blvd-study.pdf)
+
+- [Marble Avenue Speed Study (2021 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-marble-avenue-speed-study-2021.pdf)
+
+  Evaluates Marble Avenue between Stanford Drive and Girard Boulevard and finds none of nine NTMP threshold sets, so the street did not qualify for traffic calming.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/marble-ave-speed-study.pdf)
+
+- [Mary Ellen Street Speed Study (2018 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-mary-ellen-street-speed-study-2018.pdf)
+
+  Documents speed and traffic conditions on Mary Ellen Street and concludes that none of the NTMP criteria were met to warrant traffic calming.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/mary-ellen-st-study.pdf)
 
 - [Milky Way Street Speed Study (2021 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-milky-way-street-speed-study-2021.pdf)
 
@@ -312,11 +432,47 @@ These City reports preserve the street-level speed, volume, crash, and roadway e
 
   [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/milky-way-speed-study.pdf)
 
+- [Milne Road Speed Study (2018 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-milne-road-speed-study-2018.pdf)
+
+  Studies Milne Road from Atrisco Drive to 64th Street and finds one of four NTMP criteria, below the minimum threshold for traffic calming.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/milne-rd-study.pdf)
+
 - [Morningside Drive Speed Study (2021 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-morningside-drive-speed-study-2021.pdf)
 
   Documents measured speeds and traffic volumes along Morningside Drive from Coal Avenue to Pershing Avenue, providing neighborhood-scale evidence for traffic-calming evaluation and future street-safety decisions.
 
   [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/morningside-drive-speed-study.pdf)
+
+- [Morris Street Speed Study (2019 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-morris-street-speed-study-2019.pdf)
+
+  Studies Morris Street from Prospect and Norman avenues to Indian School Road and finds one of four NTMP criteria, below the minimum traffic-calming threshold.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/morris-st-study.pdf)
+
+- [Ortiz Drive Speed Study (2018 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-ortiz-drive-speed-study-2018.pdf)
+
+  Documents speed, traffic-volume, and crash conditions on Ortiz Drive and concludes that none of the NTMP criteria were met to warrant traffic calming.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/ortiz-dr-study.pdf)
+
+- [Parsifal Street Speed Study (2021 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-parsifal-street-speed-study-2021.pdf)
+
+  Evaluates Parsifal Street between Easterday Drive and Constitution Avenue and finds none of nine NTMP threshold sets, so the street did not qualify for traffic calming.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/parsifal-st-speed-study.pdf)
+
+- [Paso Fino Place Speed Study (2018 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-paso-fino-place-speed-study-2018.pdf)
+
+  Documents speed and traffic conditions on Paso Fino Place and concludes that none of the NTMP criteria were met to warrant traffic calming.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/paso-fino-pl-study.pdf)
+
+- [Quincy Street Speed Study (2018 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-quincy-street-speed-study-2018.pdf)
+
+  Studies Quincy Street from Claremont Avenue to Phoenix Avenue and finds one of four NTMP criteria, below the minimum threshold for traffic calming.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/quincy-st-study.pdf)
 
 - [Ruidoso Road Speed Study (2021 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-ruidoso-road-speed-study-2021.pdf)
 
@@ -329,6 +485,30 @@ These City reports preserve the street-level speed, volume, crash, and roadway e
   Documents measured speeds and traffic volumes along San Francisco Road from San Pedro Drive to Louisiana Boulevard, providing neighborhood-scale evidence for traffic-calming evaluation and future street-safety decisions.
 
   [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/san-francisco-road-speed-study.pdf)
+
+- [San Pablo Street Speed Study (2018 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-san-pablo-street-speed-study-2018.pdf)
+
+  Studies San Pablo Street from Spring Avenue to Marble Avenue and finds one of four NTMP criteria, below the minimum threshold for traffic calming.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/san-pablo-st-study.pdf)
+
+- [San Pasquale Avenue Speed Study (2018 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-san-pasquale-avenue-speed-study-2018.pdf)
+
+  Studies San Pasquale Avenue from Laguna Boulevard to Alhambra Avenue and finds one of four NTMP criteria, below the minimum threshold for traffic calming.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/san-pasquale-ave-study.pdf)
+
+- [San Rafael Avenue Speed Study (2018 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-san-rafael-avenue-speed-study-2018.pdf)
+
+  Studies San Rafael Avenue from Princeton Drive to Carlisle Boulevard and finds one of four NTMP criteria, below the minimum threshold for traffic calming.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/san-rafael-ave-study.pdf)
+
+- [Santa Clara Avenue Speed Study (2018 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-santa-clara-avenue-speed-study-2018.pdf)
+
+  Studies Santa Clara Avenue from Linda Vista Avenue to Amherst Drive and finds none of the four NTMP criteria, below the minimum traffic-calming threshold.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/santa-clara-ave-study.pdf)
 
 - [Sierra Grande Avenue Speed Study (2021 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-sierra-grande-avenue-speed-study-2021.pdf)
 
