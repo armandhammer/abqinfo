@@ -79,3 +79,27 @@ The exact former City download locations for this draft collection have not been
   Documents community priorities for the Fourth Street and Montaño area, including traffic, pedestrian safety, drainage, neighborhood character, commercial development, public space, land use, and coordinated improvement strategies.
 
   [Official City project archive](https://www.cabq.gov/council/projects/completed-projects/2004/4th-street-montano-area-improvement-coalition) · [Official City PDF](https://www.cabq.gov/council/documents/4th-street-montano-area-improvement-coalition/4thstcommunityvisioningreport11.06.04.pdf)
+
+- [North Fourth Street Rank III Corridor Plan — City Council Draft (2010 Archived PDF)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-north-fourth-street-rank-iii-corridor-plan-city-council-draft-2010.pdf)
+
+  Preserves the 133-page City Council draft combining corridor history, form-based zoning, building and frontage standards, transportation and street design, and redevelopment strategies for North Fourth Street from Mountain Road to the Los Ranchos boundary.
+
+  [Official City project archive](https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan) · [Official City PDF](https://www.cabq.gov/council/documents/north-fourth-street-plan/n4thrankiii-082010.pdf)
+
+- [North Fourth Street Background and Resources Materials (2009 Archived PDF)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-north-fourth-street-background-resources-2009.pdf)
+
+  Preserves the plan's companion research volume, including negotiated community recommendations, demographics, land use, real-estate and business conditions, traffic and transit analysis, urban-design studies, streetscape cost estimates, and historic-preservation material.
+
+  [Official City project archive](https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan) · [Official City PDF](https://www.cabq.gov/council/documents/north-fourth-street-plan/4th_st_city_cuncil_draft_vol_2_.08.02.09sbi.pdf)
+
+- [North Fourth Street Existing Zoning Map (December 2009 Archived PDF)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-north-fourth-street-existing-zoning-map-2009.pdf)
+
+  Maps the zoning districts in effect along the North Fourth Street study corridor in December 2009, providing a historical baseline for interpreting the plan's proposed form-based overlay and redevelopment recommendations.
+
+  [Official City project archive](https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan) · [Official City PDF](https://www.cabq.gov/council/documents/currentzoning8x11.pdf)
+
+- [North Fourth Street Form-Based Overlay Zone Map (December 2009 Archived PDF)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-north-fourth-street-form-based-overlay-zone-map-2009.pdf)
+
+  Maps the North Fourth Street plan's proposed transit-oriented, mixed-use, and infill-development overlay districts in December 2009, showing the corridor and study boundaries used during the City Council draft process.
+
+  [Official City project archive](https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan) · [Official City PDF](https://www.cabq.gov/council/documents/northzonesoverlay8x11.pdf)
