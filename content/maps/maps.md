@@ -25,6 +25,14 @@ Interactive maps of city data and infrastructure.
 
 ### Historical Transportation Maps
 
+- [North Fourth Street Existing Zoning Map (December 2009 Archived PDF)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-north-fourth-street-existing-zoning-map-2009.pdf)
+
+  Maps the zoning districts in effect along the North Fourth Street study corridor when the Rank III plan was prepared, providing a historical baseline for its land-use, transportation, and redevelopment recommendations. [Official City project archive](https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan)
+
+- [North Fourth Street Form-Based Overlay Zone Map (December 2009 Archived PDF)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-north-fourth-street-form-based-overlay-zone-map-2009.pdf)
+
+  Maps the plan's proposed transit-oriented, mixed-use, and infill-development districts along North Fourth Street, preserving the geography used during the City Council draft process. [Official City project archive](https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan)
+
 - [Volcano Mesa Roadway Networks and Cross-Sections (2014 Archived Presentation)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-volcano-mesa-transportation-amendments-presentation-2014.pdf)
 
   Compares roadway-network maps and Paseo del Norte and Unser Boulevard cross-sections across the Volcano Cliffs, Volcano Heights, Volcano Trails, and West Side plans. [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/VolcanoPlansAmendments20140714.pdf/view)

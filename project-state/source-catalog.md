@@ -1,14 +1,14 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-30T14:32:04.9043594Z
+Generated: 2026-08-30T18:04:38.6379673Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 6366 candidates and 628 R2 objects totaling 6918841423 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 6366 candidates and 632 R2 objects totaling 6947490439 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 3755 |
+| pending review | 3750 |
 | approved for addition | 0 |
 | downloading | 0 |
 | downloaded | 4 |
@@ -16,9 +16,9 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 2 |
-| validated | 835 |
+| validated | 839 |
 | excluded | 779 |
-| duplicate | 926 |
+| duplicate | 927 |
 | superseded | 35 |
 | blocked | 0 |
 | requires human review | 30 |
@@ -109,8 +109,8 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | 2011 Albuquerque Bikeways and Trails Master Plan Update | City of Albuquerque | 2011-11-10 | PDF | 20962356 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%2011-10-11.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-and-trails-master-plan-update.pdf) |
 | 2011 Albuquerque Bikeways and Trails Master Plan Update - Appendices | City of Albuquerque | 2011-11-10 | PDF | 1757042 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%20Appendices%2011-10-11.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-trails-master-plan-appendices.pdf) |
 | 2011 Albuquerque Bikeways and Trails Master Plan Update - Appendices | City of Albuquerque | 2011-11-10 | PDF | 1757042 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%20Appendices%2011-10-11.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-trails-master-plan-appendices.pdf) |
-| 2011 Albuquerque Bikeways and Trails Master Plan Update - Design Guidelines | City of Albuquerque | 2011-11 | PDF | 31152896 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%20Design%20Guidelines%2011-10.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-trails-master-plan-design-guidelines.pdf) |
 | 2011 Albuquerque Bikeways and Trails Master Plan Update - Design Guidelines | City of Albuquerque | 2011-11-10 | PDF | 31152896 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%20Design%20Guidelines%2011-10.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-trails-master-plan-design-guidelines.pdf) |
+| 2011 Albuquerque Bikeways and Trails Master Plan Update - Design Guidelines | City of Albuquerque | 2011-11 | PDF | 31152896 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%20Design%20Guidelines%2011-10.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-trails-master-plan-design-guidelines.pdf) |
 | 2011-2020 General Obligation Bond Summary | City of Albuquerque | 2011 | PDF | 113108 | content/city-data/capital-spending.md | [source](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/summary_2011-2020.pdf/view) | [R2](https://files.abqinfo.com/city-data/capital-spending/cabq-2011-2020-go-bond-summary.pdf) |
 | 2013–2022 Decade Plan and 2013 General Obligation Bond Program | City of Albuquerque | 2012-11 | PDF | 3104041 | content/city-data/capital-spending.md | [source](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2013GOBondProgramEPC.pdf/view) | [R2](https://files.abqinfo.com/city-data/capital-spending/cabq-2013-2022-decade-plan-go-bond-program.pdf) |
 | 2015 Bikeways and Trails Facilities Plan - Final | City of Albuquerque | 2015-05 | PDF | 32223817 | content/transportation/bicycling/bike-plans.md | [source](https://documents.cabq.gov/planning/FacilityPlans/BTFP/2024/BTFP-Update_Summary-2024.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2015-bikeways-and-trails-facilities-plan-final.pdf) |
@@ -402,8 +402,12 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Nob Hill Highland Sector Development Plan — Transportation Section | City of Albuquerque | 2007-09; amended through 2014-08 | PDF | 8234679 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-nob-hill-highland-sector-plan-transportation-2007-2014.pdf) |
 | North Diversion Channel and Paseo del Nordeste Trail Guide | City of Albuquerque | 2020-05-04 | PDF | 62877513 | content/transportation/bicycling/bike-maps.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1) | [R2](https://files.abqinfo.com/transportation/bicycling/maps-guides/cabq-north-diversion-channel-paseo-del-nordeste-trail-guide-2020.pdf) |
 | North Diversion Channel and Paseo del Nordeste Trail Map | City of Albuquerque | 2020 | PDF | 974617 | content/transportation/bicycling/bike-maps.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1) | [R2](https://files.abqinfo.com/transportation/bicycling/maps-guides/cabq-north-diversion-channel-paseo-del-nordeste-trail-map-2020.pdf) |
+| North Fourth Street Background and Resources Materials | City of Albuquerque | 2009 | PDF | 12912123 | content/development-land-use/area-sector-plans.md | [source](https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan) | [R2](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-north-fourth-street-background-resources-2009.pdf) |
 | North Fourth Street Corridor Plan — Transportation and Street Design | City of Albuquerque | 2010 | PDF | 3175202 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-north-fourth-street-corridor-plan-2010.pdf) |
+| North Fourth Street Existing Zoning Map | City of Albuquerque | 2009-12-15 | PDF | 878148 | content/development-land-use/area-sector-plans.md | [source](https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan) | [R2](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-north-fourth-street-existing-zoning-map-2009.pdf) |
+| North Fourth Street Form-Based Overlay Zone Map | City of Albuquerque | 2009-12-15 | PDF | 897985 | content/development-land-use/area-sector-plans.md | [source](https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan) | [R2](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-north-fourth-street-form-based-overlay-zone-map-2009.pdf) |
 | North Fourth Street Metropolitan Redevelopment Plan | City of Albuquerque | 2010; retained 2017 | PDF | 28299760 | content/development-land-use/redevelopment-plans.md | [source](https://www.cabq.gov/mra/redevelopment-areas) | [R2](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-north-fourth-street-mra-plan-2010-2017.pdf) |
+| North Fourth Street Rank III Corridor Plan - City Council Draft | City of Albuquerque | 2010 | PDF | 13960760 | content/development-land-use/area-sector-plans.md | [source](https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan) | [R2](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-north-fourth-street-rank-iii-corridor-plan-city-council-draft-2010.pdf) |
 | Northeast Heights Bike Trails Guide | City of Albuquerque | 2020 | PDF | 28740095 | content/transportation/bicycling/bike-maps.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-maps/cabq-northeast-heights-bike-trails-guide-2020.pdf) |
 | NTMP Request Process Flowchart | City of Albuquerque | 2026-02 | PNG | 1448898 | content/transportation/roadway-projects/speed-management.md | [source](https://www.arcgis.com/home/item.html?id=5d5dabf6aba949d9b55bf65547eb76c8) | [R2](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-ntmp-request-process-flowchart-2026.png) |
 | October 2013 Draft Central Avenue Complete Street Plan and Design Toolkit | City of Albuquerque | 2013-10 | PDF | 11759630 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/neighborhood-projects/central-avenue-complete-street-plan-1st-street-to-girard) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/central-avenue-complete-streets-plan-october-2013.pdf) |
@@ -1093,6 +1097,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | lin-ff81a5bfcd0dfff2 | duplicate | The 2024 Plan | Duplicate lineage reference for 'The 2024 Plan'; canonical queue record is lin-6c6bd750cf0ef374. |
 | src-000279d5c044342f | duplicate | City of Albuquerque Approved Budget, Fiscal Year 2018 (Archived PDF) | Duplicate R2 representation of canonical candidate src-48b3697bb9474b06. |
 | src-003b8da3ca653ca2 | duplicate | 2010 Design Overlay Plan | Byte-identical alternate County Public Works host copy of canonical inventory record src-13275237185605e6, the already implemented Bridge Boulevard Village Center and Corridor Plan. |
+| src-0043470c0b07bceb | duplicate | 4thForm-basedoverlayzonemap.pdf | Plone /view alias for canonical archived candidate src-5cdd997502c0d388; the canonical record preserves the direct City PDF, R2 object, and page placements. |
 | src-018aeda22016892d | duplicate | Atrisco Vista Boulevard Alignment Study (2024 archived PDF) | Duplicate R2 representation of canonical candidate src-48b3697bb9474b06. |
 | src-01f0d6e72fbd6e92 | duplicate | 2040 Long-Range Roadway Map | Content-link alias for canonical archive candidate src-7957f9b308c70f11. |
 | src-023a7589e17df553 | duplicate | Modifying Access on Paseo del Norte & Unser Boulevard in the Volcano Heights Sector Plan Area - Metropolitan Transportation Board | The preserved R2 candidate src-ab74a46266ac1cff is the canonical document record; retain this duplicate for the official direct-file URL and discovery path. |

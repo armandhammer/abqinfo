@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-30T14:31:33.0703314Z",
+  "generated_at": "2026-08-30T18:04:24.1725460Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,7 +18,7 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 3755,
+    "pending review": 3750,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 4,
@@ -26,9 +26,9 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 2,
-    "validated": 835,
+    "validated": 839,
     "excluded": 779,
-    "duplicate": 926,
+    "duplicate": 927,
     "superseded": 35,
     "blocked": 0,
     "requires human review": 30
@@ -13765,7 +13765,7 @@
     },
     {
       "id": "src-0043470c0b07bceb",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/northzonesoverlay8x11.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -13799,16 +13799,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Reconciled after direct PDF review in North Fourth historical batch 26."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "duplicate: normalized source alias reconciled to src-5cdd997502c0d388",
+      "exclusion_reason": "Plone /view alias for canonical archived candidate src-5cdd997502c0d388; the canonical record preserves the direct City PDF, R2 object, and page placements.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:16:02.59328Z",
-      "updated_at": "2026-08-04T14:16:02.59328Z"
+      "updated_at": "2026-08-30T18:04:24.1725460Z"
     },
     {
       "id": "src-004cb81828e3bd35",
@@ -111287,19 +111288,19 @@
     },
     {
       "id": "src-5cdd997502c0d388",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/northzonesoverlay8x11.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan",
       "direct_file_url": "https://www.cabq.gov/council/documents/northzonesoverlay8x11.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-north-fourth-street-form-based-overlay-zone-map-2009.pdf",
+      "r2_key": "development-land-use/area-sector-plans/cabq-north-fourth-street-form-based-overlay-zone-map-2009.pdf",
+      "r2_etag": "e6cc11d0f9fe88497c9ca080598230a2",
+      "r2_last_modified": "08/30/2026 12:02:23",
       "agency": "City of Albuquerque",
-      "title": "form-based overlay zone map",
-      "date": null,
+      "title": "North Fourth Street Form-Based Overlay Zone Map",
+      "date": "2009-12-15",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 897985,
+      "checksum_sha256": "a36b175a8eac80224cb1d645d182fb8376f7683722ab521fceef477ed7b22bc2",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan"
@@ -111314,22 +111315,29 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+      "description": "Maps the North Fourth Street plan's proposed transit-oriented, mixed-use, and infill-development overlay districts in December 2009, showing the corridor and study boundaries used during the City Council draft process.",
+      "description_word_count": 29,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Cross-listed on Maps because it is both a planning-history record and a standalone geographic reference.",
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Official City page identifies the plan files as City Council drafts; ABQInfo labels them accordingly.",
+        "Original authoritative City PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/development-land-use/area-sector-plans.md",
+      "implementation_locations": [
+        "content/development-land-use/area-sector-plans.md",
+        "content/maps/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-5cdd997502c0d388.pdf",
       "discovered_at": "2026-08-04T14:15:58.0546004Z",
-      "updated_at": "2026-08-04T14:15:58.0546004Z"
+      "updated_at": "2026-08-30T18:04:24.1725460Z"
     },
     {
       "id": "src-5cdf0511f8cc1c98",
@@ -120315,19 +120323,19 @@
     },
     {
       "id": "src-6479e8efc5bcc2b6",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/n4thrankiii-082010.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan",
       "direct_file_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/n4thrankiii-082010.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-north-fourth-street-rank-iii-corridor-plan-city-council-draft-2010.pdf",
+      "r2_key": "development-land-use/area-sector-plans/cabq-north-fourth-street-rank-iii-corridor-plan-city-council-draft-2010.pdf",
+      "r2_etag": "1a59b6b61492870194421cad511c320b-2",
+      "r2_last_modified": "08/30/2026 12:01:33",
       "agency": "City of Albuquerque",
-      "title": "North Fourth Street Rank III Corridor Plan",
-      "date": null,
+      "title": "North Fourth Street Rank III Corridor Plan - City Council Draft",
+      "date": "2010",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 13960760,
+      "checksum_sha256": "0ccfb85d24b020cb03ec0e10c6196d504038d6b24516ab1380b7fa635d1c7e35",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan"
@@ -120342,22 +120350,27 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+      "description": "Preserves the 133-page City Council draft combining corridor history, form-based zoning, building and frontage standards, transportation and street design, and redevelopment strategies for North Fourth Street from Mountain Road to the Los Ranchos boundary.",
+      "description_word_count": 34,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Official City page identifies the plan files as City Council drafts; ABQInfo labels them accordingly.",
+        "Original authoritative City PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/area-sector-plans.md",
+      "implementation_locations": [
+        "content/development-land-use/area-sector-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-6479e8efc5bcc2b6.pdf",
       "discovered_at": "2026-08-04T14:15:58.0520887Z",
-      "updated_at": "2026-08-04T14:15:58.0520887Z"
+      "updated_at": "2026-08-30T18:03:39.6768759Z"
     },
     {
       "id": "src-647b7a48db5ca0ce",
@@ -148816,19 +148829,19 @@
     },
     {
       "id": "src-7ef6d021d2326e49",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/currentzoning8x11.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan",
       "direct_file_url": "https://www.cabq.gov/council/documents/currentzoning8x11.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-north-fourth-street-existing-zoning-map-2009.pdf",
+      "r2_key": "development-land-use/area-sector-plans/cabq-north-fourth-street-existing-zoning-map-2009.pdf",
+      "r2_etag": "8f566d6a55f5b8eb616fd2cf230b70ea",
+      "r2_last_modified": "08/30/2026 12:02:06",
       "agency": "City of Albuquerque",
-      "title": "current zoning map",
-      "date": null,
+      "title": "North Fourth Street Existing Zoning Map",
+      "date": "2009-12-15",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 878148,
+      "checksum_sha256": "53d3004f88e6a9ead18802a8643734fec4105f80ac1064e225e5596a97f2edd4",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan"
@@ -148843,22 +148856,29 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+      "description": "Maps the zoning districts in effect along the North Fourth Street study corridor in December 2009, providing a historical baseline for interpreting the plan's proposed form-based overlay and redevelopment recommendations.",
+      "description_word_count": 30,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Cross-listed on Maps because it is both a planning-history record and a standalone geographic reference.",
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Official City page identifies the plan files as City Council drafts; ABQInfo labels them accordingly.",
+        "Original authoritative City PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/development-land-use/area-sector-plans.md",
+      "implementation_locations": [
+        "content/development-land-use/area-sector-plans.md",
+        "content/maps/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-7ef6d021d2326e49.pdf",
       "discovered_at": "2026-08-04T14:15:58.00706Z",
-      "updated_at": "2026-08-04T14:15:58.00706Z"
+      "updated_at": "2026-08-30T18:04:24.1725460Z"
     },
     {
       "id": "src-7f09cd6bd5b04f15",
@@ -171200,19 +171220,19 @@
     },
     {
       "id": "src-925265ba30c142c1",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/4th_st_city_cuncil_draft_vol_2_.08.02.09sbi.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan",
       "direct_file_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/4th_st_city_cuncil_draft_vol_2_.08.02.09sbi.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-north-fourth-street-background-resources-2009.pdf",
+      "r2_key": "development-land-use/area-sector-plans/cabq-north-fourth-street-background-resources-2009.pdf",
+      "r2_etag": "edb44a272dabdb90398f99295a4f1be9-2",
+      "r2_last_modified": "08/30/2026 12:01:50",
       "agency": "City of Albuquerque",
       "title": "North Fourth Street Background and Resources Materials",
-      "date": null,
+      "date": "2009",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 12912123,
+      "checksum_sha256": "2da2205057e2df824924faf5c0a30a8cfb03a639e190523f48edc344a3b1aef7",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan"
@@ -171227,22 +171247,27 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+      "description": "Preserves the plan's companion research volume, including negotiated community recommendations, demographics, land use, real-estate and business conditions, traffic and transit analysis, urban-design studies, streetscape cost estimates, and historic-preservation material.",
+      "description_word_count": 29,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Official City page identifies the plan files as City Council drafts; ABQInfo labels them accordingly.",
+        "Original authoritative City PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/area-sector-plans.md",
+      "implementation_locations": [
+        "content/development-land-use/area-sector-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-925265ba30c142c1.pdf",
       "discovered_at": "2026-08-04T14:15:58.0490894Z",
-      "updated_at": "2026-08-04T14:15:58.0490894Z"
+      "updated_at": "2026-08-30T18:03:39.7302153Z"
     },
     {
       "id": "src-927546cc176a8954",

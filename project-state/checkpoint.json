@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-08-30T14:32:05.8023197Z",
-  "completed_item_range": "PR 74 batch: completed the City NTMP studies pathway; 15 new reports implemented and 20 checksum duplicates reconciled",
+  "recorded_at": "2026-08-30T18:04:40.6777762Z",
+  "completed_item_range": "North Fourth Street historical review 26: four official City PDFs validated; two maps cross-listed; one Plone alias reconciled",
   "total_candidates": 6366,
   "counts_by_status": {
-    "pending review": 3755,
+    "pending review": 3750,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 4,
@@ -11,15 +11,15 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 2,
-    "validated": 835,
+    "validated": 839,
     "excluded": 779,
-    "duplicate": 926,
+    "duplicate": 927,
     "superseded": 35,
     "blocked": 0,
     "requires human review": 30
   },
-  "remaining_nonterminal": 3761,
+  "remaining_nonterminal": 3756,
   "next_pending_id": "src-0004d9e0318a9df5",
   "blockers": [],
-  "resume_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Test-Candidate.ps1 -Id src-0004d9e0318a9df5 -UpdateInventory"
+  "resume_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/New-PendingReviewPriorityQueue.ps1"
 }
