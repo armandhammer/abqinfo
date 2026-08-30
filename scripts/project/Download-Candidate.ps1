@@ -77,7 +77,19 @@ try {
   if ($candidate.parent_url -and [uri]::IsWellFormedUriString([string]$candidate.parent_url, [UriKind]::Absolute)) {
     $headers['Referer'] = [string]$candidate.parent_url
   }
-  Invoke-WebRequest -Uri $url -OutFile $path -UseBasicParsing -Headers $headers
+  $response = Invoke-WebRequest -Uri $url -OutFile $path -PassThru -UseBasicParsing -Headers $headers
+  $contentType = [string]$response.Headers['Content-Type']
+  $finalUrl = [string]$response.BaseResponse.RequestMessage.RequestUri.AbsoluteUri
+  if ($contentType -match '(?i)application/pdf' -and $extension -ne '.pdf') {
+    $pdfPath = [IO.Path]::ChangeExtension($path, '.pdf')
+    Move-Item -LiteralPath $path -Destination $pdfPath -Force
+    $path = $pdfPath
+    $extension = '.pdf'
+  }
+  if ($finalUrl -and $finalUrl -ne $url) {
+    $candidate.direct_file_url = $finalUrl
+    Add-ProcessingNote $candidate "Resolved opaque source link to authoritative file URL: $finalUrl"
+  }
   $file = Get-Item -LiteralPath $path
   $candidate.status = 'downloaded'
   $candidate.local_path = $file.FullName.Substring((Get-Location).Path.Length + 1).Replace('\','/')
