@@ -26,6 +26,12 @@ Regional roadway operations, traffic analysis, incident management, and intellig
 
   Maps City street-maintenance projects and their locations, providing a direct geographic view of active and recent resurfacing or maintenance work managed by Municipal Development.
 
+- [Street Maintenance and Rehabilitation in the Twenty-First Century (2008 Archived PDF)](https://files.abqinfo.com/transportation/operations-data/cabq-street-maintenance-rehabilitation-task-force-briefing-2008.pdf)
+
+  Documents Albuquerque's quarter-cent-tax street program, lane miles maintained, pavement-condition changes, bicycle-trail and sidewalk work, historic funding, projected needs, and the consequences of continuing or ending dedicated transportation revenue.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/6.11.08.street_maintenance_and_rehab.dmd.pdf) · [2008 Transportation Task Force record](/transportation/transportation-plans/#2008-transportation-task-force-record)
+
 - [Streetlight Status Dashboard](https://www.arcgis.com/apps/dashboards/1facbd146a924224b1698c7d164662c3)
 
   Displays weekly updated operational status for City streetlights using vendor data, helping users examine working and non-working assets while the City expands integration with PNM work-order information.
@@ -75,6 +81,12 @@ Regional roadway operations, traffic analysis, incident management, and intellig
   Preserves regional corridor rankings, congestion profiles, strategy matrices, network maps, commuting studies, transit travel-time analysis, adaptive-signal findings, and related Albuquerque-area congestion-management work dating to 2008.
 
 ## Intelligent Transportation Systems
+
+- [Albuquerque Metropolitan Area Intelligent Transportation Systems Briefing (2008 Archived PDF)](https://files.abqinfo.com/transportation/operations-data/mrcog-albuquerque-its-task-force-briefing-2008.pdf)
+
+  Preserves the regional ITS framework presented in 2008, covering traffic management, transit security, dispatch, freeway systems, traveler information, communications, incident response, project programming, agency coordination, and the planned Regional Transportation Management Center.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/4.1.08.intelligent_transportation_systems.mrcog.pdf) · [2008 Transportation Task Force record](/transportation/transportation-plans/#2008-transportation-task-force-record)
 
 - [Incident Management Plan for the Albuquerque Metropolitan Planning Area (2022 archived PDF)](https://files.abqinfo.com/transportation/operations-data/mrmpo-incident-management-plan-ampa-2022.pdf)
 

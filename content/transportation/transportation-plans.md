@@ -168,6 +168,54 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   [Official City project archive](https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force) · [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.23.08.presentationc.abq_ride_planning.transit_dept.pdf)
 
+- [Planned Growth Strategy Transportation-System Cost Findings (2008 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-planned-growth-strategy-transportation-costs-excerpt-2008.pdf)
+
+  Compares road, transit, public, private, and societal transportation costs under trend, balanced-growth, and downtown-focused land-use scenarios, preserving the fiscal evidence presented to Albuquerque's 2008 transportation task force.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.23.08.presentationb2.pgs_excerpt.infrastructure_costs.pdf)
+
+- [Planned Growth Strategy Policy, Regulatory, and Plan Review (2008 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-planned-growth-strategy-policy-regulatory-excerpt-2008.pdf)
+
+  Reviews the Albuquerque and Bernalillo County policies shaping compact growth, centers and corridors, infrastructure timing, annexation, impact fees, transit-supportive development, and coordination between land-use and transportation investment.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.23.08.presentationb3.pgs_excerpt.policies_and_regs.pdf)
+
+- [City Capital Improvements Ordinance — 2008 Task Force Reference (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-capital-improvements-ordinance-task-force-reference-2008.pdf)
+
+  Preserves the capital-program rules reviewed by the task force, including maintenance priorities, ten-year programming, project evaluation, trails and bikeways funding, public reporting, and metropolitan transportation-plan coordination.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.23.08.presentationb4.cip_ordinance.pdf)
+
+- [2009 Capital Improvements Plan Priorities and Scoring Resolution (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-2009-capital-plan-priorities-resolution-r-07-12.pdf)
+
+  Documents proposed criteria, weights, policy priorities, and funding allocations for Albuquerque's 2009 general-obligation bond program, connecting capital-project selection with infrastructure condition, adopted plans, public safety, growth, and neighborhood needs.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.23.08.presentationb5.2009_cip_priorities.pdf)
+
+- [MRCOG Regional Transportation Planning Briefing (2008 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrcog-regional-transportation-task-force-briefing-2008.pdf)
+
+  Explains MRCOG's metropolitan planning role, the 2030 MTP and TIP, Rail Runner and Rio Metro responsibilities, forecast growth, congestion, river crossings, multimodal needs, regional projects, and limited transportation funding.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/2.5.08.mrcog_overview.pdf)
+
+- [Albuquerque Metropolitan Area Intelligent Transportation Systems Briefing (2008 Archived PDF)](https://files.abqinfo.com/transportation/operations-data/mrcog-albuquerque-its-task-force-briefing-2008.pdf)
+
+  Preserves the regional framework for traffic management, transit security, dispatch, traveler information, incident response, agency coordination, and the planned Regional Transportation Management Center. [Traffic Operations placement](/transportation/operations-data/#intelligent-transportation-systems)
+
+  [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/4.1.08.intelligent_transportation_systems.mrcog.pdf)
+
+- [Street Maintenance and Rehabilitation in the Twenty-First Century (2008 Archived PDF)](https://files.abqinfo.com/transportation/operations-data/cabq-street-maintenance-rehabilitation-task-force-briefing-2008.pdf)
+
+  Documents Albuquerque's quarter-cent-tax street program, lane miles maintained, pavement-condition changes, bicycle-trail and sidewalk work, historic funding, projected needs, and dedicated-revenue choices. [Traffic Operations placement](/transportation/operations-data/#city-street-operations)
+
+  [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/6.11.08.street_maintenance_and_rehab.dmd.pdf)
+
+- [21st Century Transportation Task Force Enabling Ordinance O-07-71 (2007 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-transportation-task-force-enabling-ordinance-o-07-71-2007.pdf)
+
+  Creates the transportation task force and commissions the streetcar cost-benefit analysis, defining a citywide multimodal scope spanning roadway, transit, bicycle, pedestrian, paratransit, land-use, economic-development, funding, and tax-policy questions.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/o_07_71.pdf)
+
 ### Current and Other Citywide Records
 
 - [Albuquerque Complete Streets Ordinance Update (2019 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-complete-streets-ordinance-o-19-64-2019.pdf)

@@ -204,6 +204,44 @@ Transportation studies and reports.
 
   [Official City PDF](https://www.cabq.gov/council/documents/montano-corridor-studies/MontanoHallReport.pdf) · [Official City project page](https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies)
 
+- [Montaño Road Corridor Study — Wilson & Company (2005 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-montano-road-corridor-wilson-study-2005.pdf)
+
+  Evaluates Montaño Road from Coors Boulevard to Second Street using traffic modeling, public input, safety, noise, vibration, biology, lane alternatives, costs, and intersection operations, recommending four general-purpose lanes.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/montano-corridor-studies/WilsonReport.PDF)
+
+- [Montaño Citizens Advisory Committee Recommendations (2005 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-montano-citizens-advisory-committee-recommendations-2005.pdf)
+
+  Recommends general-purpose and HOV lanes, lower speeds, enforcement, redesigned intersections, roundabouts, protected walking and bicycling crossings, retained bike lanes, rapid bus service, commuter rail access, and intelligent transportation systems.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/montano-corridor-studies/citizenscommitteeletterforWebSite.pdf)
+
+#### Council Policy and Study Authorization
+
+- [Montaño and Fourth Street Study Authorization — Resolution R-05-216 (2005 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-montano-study-authorization-resolution-r-05-216-2005.pdf)
+
+  Authorizes and funds the Montaño and Fourth Street feasibility study, requiring public involvement, alternatives and financial analysis, HOV and bus-lane evaluation, agency collaboration, and coordination with surrounding corridor plans.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/montano-corridor-studies/R-216.pdf)
+
+- [Montaño Four-Lane Policy — Resolution R-04-204 (2005 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-montano-four-lane-policy-resolution-r-04-204-2005.pdf)
+
+  Requests use of the bridge and corridor's four-lane capacity while requiring North Fourth Street planning, Near North Valley planning, Montaño/Fourth intersection analysis, multimodal consideration, financial analysis, and recurring progress reports.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/montano-corridor-studies/R-204fin.pdf)
+
+- [Montaño HOV and River-Crossing Policy — Resolution R-05-382 (2005 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-montano-hov-river-crossing-policy-resolution-r-05-382-2005.pdf)
+
+  Records the proposed City policy favoring two unrestricted lanes and a reversible HOV/transit lane, interim HOV striping, and compliance with regional planning, federal permits, historic-preservation requirements, and court decisions.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/montano-corridor-studies/R-382.pdf)
+
+- [Montaño Four General-Purpose Lanes Proposal — Resolution R-05-390 (2005 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-montano-four-general-purpose-lanes-resolution-r-05-390-2005.pdf)
+
+  Records the competing proposal to operate Montaño between Coors and Fourth Street with four general-purpose lanes, citing the Wilson study, corridor capacity, safety analysis, environmental findings, and prior Council policy.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/montano-corridor-studies/R-390.pdf)
+
 ### Uptown
 
 - [Uptown Pedestrian Study (2014 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/mrcog-uptown-pedestrian-study-2014.pdf)
