@@ -16,6 +16,16 @@ Plans and historical records for designated Metropolitan Redevelopment Areas, wh
 
   [Official City redevelopment-area page](https://www.cabq.gov/mra/redevelopment-areas/downtown) · [Official City PDF](https://www.cabq.gov/mra/documents/downtown-2050-final-web.pdf)
 
+## Historical Capital Programming
+
+- [Metropolitan Redevelopment Fund Capital Plan, 2006–2010 (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-metropolitan-redevelopment-fund-capital-plan-2006-2010.pdf)
+
+  Allocates projected redevelopment spending among East Downtown, Near Heights, Highland Central, West Central, Old Albuquerque High, Sunport West, Fourth Street, new projects, property management, and general-fund activities. [Full 2007–2016 capital-program record](/city-data/capital-spending/#20072016-decade-plan)
+
+- [2007–2016 Planning Department Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-planning-department-capital-program-summary.pdf)
+
+  Schedules the Bicycle Park, metropolitan redevelopment areas, Fourth Street, geographic information systems, KIVA, sector-plan improvements, village-center work, and other Planning Department capital investments. [Full 2007–2016 capital-program record](/city-data/capital-spending/#20072016-decade-plan)
+
 ## Historical and Retained Area Plans
 
 - [Downtown 2025 Metropolitan Redevelopment Plan (2004; retained 2017; superseded 2025 archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-downtown-2025-mra-plan-2004-2017.pdf)

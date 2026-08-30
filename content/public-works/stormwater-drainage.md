@@ -54,6 +54,16 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
   County project contact: Jennifer Flor, 505-350-7833, [jflor@bernco.gov](mailto:jflor@bernco.gov)
 
+## Historical City Capital Plans
+
+- [2007–2016 Storm Drainage Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-storm-drainage-capital-program-summary.pdf)
+
+  Schedules storm-drain, arroyo, channel, pump-station, water-quality, rehabilitation, right-of-way, and engineering investments across Albuquerque, identifying named projects and funding by bond cycle through 2016.
+
+- [2005–2013 Drainage Component Capital Implementation Plan (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2005-2013-drainage-component-capital-implementation-plan.pdf)
+
+  Programs impact-fee-supported drainage rights-of-way, trunk lines, channels, diversions, ponds, and basins across Far Northeast, Northwest, Southwest, and Tijeras service areas. [Full 2007–2016 capital-program record](/city-data/capital-spending/#20072016-decade-plan)
+
 ## Historical County Drainage Projects
 
 - [Hardy Court Improvements — Project Map (2025 Archived Image)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-hardy-court-project-map-2025.jpg)

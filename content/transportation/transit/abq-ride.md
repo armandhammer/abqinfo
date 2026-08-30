@@ -30,6 +30,10 @@ ABQ Ride bus service information and data.
 
   [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/abq-final-report_volume-2.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/abq-final-report_volume-2.pdf)
 
+- [2007–2016 Transit Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-transit-capital-program-summary.pdf)
+
+  Schedules $43.93 million for transit vehicles, West Side park-and-ride and operating facilities, shelters, facility rehabilitation, maintenance and security equipment, technology upgrades, and Central-and-Unser improvements. [Full 2007–2016 capital-program record](/city-data/capital-spending/#20072016-decade-plan)
+
 ## ABQ RIDE Forward Network Plan
 
 - [Official ABQ RIDE Forward Project Page](https://www.cabq.gov/transit/transit-programs-projects/abq-ride-forward)

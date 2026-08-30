@@ -40,6 +40,24 @@ Parks and recreation facilities and programs.
 
   [Official City BioPark page](https://www.cabq.gov/artsculture/biopark/about-the-biopark) · [Official City PDF](https://documents.cabq.gov/planning/UDD/BioParkMasterPlan.pdf)
 
+## Historical Capital Programming
+
+- [2007–2016 Parks and Recreation Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-parks-recreation-capital-program-summary.pdf)
+
+  Schedules investments in pools, parks, recreation facilities, medians, open-space acquisition and restoration, trails, Balloon Fiesta Park, visitor facilities, sports parks, equipment, and water conservation.
+
+- [2007–2016 Park Design and Construction Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-park-design-construction-capital-program-summary.pdf)
+
+  Schedules community and neighborhood park development, named park projects, equipment, district improvements, and major investments at Ventana Ranch Regional Park and North Domingo Baca Park.
+
+- [2005–2013 Open Space, Trails, and Recreation Component Capital Plan (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2005-2013-open-space-trails-recreation-component-capital-plan.pdf)
+
+  Programs impact-fee-supported open-space land, visitor facilities, access control, trails, parking, restoration, and protection projects across the Bosque, foothills, arroyos, volcanic landscape, and West Mesa.
+
+- [2005–2013 Park Development Component Capital Plan (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2005-2013-park-development-component-capital-plan.pdf)
+
+  Programs impact-fee-supported park construction and land acquisition across Academy, Southeast Foothills, North Albuquerque, North Valley, Southwest Mesa, and Northwest Volcano service areas. [Full 2007–2016 capital-program record](/city-data/capital-spending/#20072016-decade-plan)
+
 ## Arroyo and Open Space Planning History
 
 - [Facility Plan for Arroyos (1986)](https://files.abqinfo.com/public-works/parks-recreation/arroyo-plans/cabq-facility-plan-for-arroyos-1986.pdf)
