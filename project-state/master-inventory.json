@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-30T18:04:24.1725460Z",
+  "generated_at": "2026-08-30T19:45:34.8735452Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,7 +18,7 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 3750,
+    "pending review": 3663,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 4,
@@ -26,10 +26,10 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 2,
-    "validated": 839,
-    "excluded": 779,
-    "duplicate": 927,
-    "superseded": 35,
+    "validated": 853,
+    "excluded": 812,
+    "duplicate": 937,
+    "superseded": 65,
     "blocked": 0,
     "requires human review": 30
   },
@@ -13809,7 +13809,7 @@
       "exclusion_reason": "Plone /view alias for canonical archived candidate src-5cdd997502c0d388; the canonical record preserves the direct City PDF, R2 object, and page placements.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:16:02.59328Z",
-      "updated_at": "2026-08-30T18:04:24.1725460Z"
+      "updated_at": "2026-08-30T18:04:24.172546Z"
     },
     {
       "id": "src-004cb81828e3bd35",
@@ -18803,19 +18803,19 @@
     },
     {
       "id": "src-04c1343bcd698b63",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.23.08.presentationb2.pgs_excerpt.infrastructure_costs.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.23.08.presentationb2.pgs_excerpt.infrastructure_costs.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/transportation-plans/cabq-planned-growth-strategy-transportation-costs-excerpt-2008.pdf",
+      "r2_key": "transportation/transportation-plans/cabq-planned-growth-strategy-transportation-costs-excerpt-2008.pdf",
+      "r2_etag": "942a0b539d8e70becb72eb92adc26ea0",
+      "r2_last_modified": "08/30/2026 13:34:31",
       "agency": "City of Albuquerque",
-      "title": "1.23.08.PresentationB2.PGS Excerpt.Infrastructure Costs",
-      "date": null,
+      "title": "Planned Growth Strategy Transportation-System Cost Findings",
+      "date": "2008-01-23",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 2363103,
+      "checksum_sha256": "e74476cb8676f8b163f6cfb3c6cfaa5f0705c447529c0ce8cef3612e15650769",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -18830,22 +18830,26 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/transportation/transportation-plans.md",
+      "description": "Compares road, transit, public, private, and societal transportation costs under trend, balanced-growth, and downtown-focused land-use scenarios, preserving the fiscal evidence presented to Albuquerque's 2008 transportation task force.",
+      "description_word_count": 27,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Original authoritative City or regional-government PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transportation-plans.md",
+      "implementation_locations": [
+        "content/transportation/transportation-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-04c1343bcd698b63.pdf",
       "discovered_at": "2026-08-04T14:15:57.9137119Z",
-      "updated_at": "2026-08-04T14:15:57.9137119Z"
+      "updated_at": "2026-08-30T19:41:55.2340439Z"
     },
     {
       "id": "src-04d00f59a71da90a",
@@ -22776,7 +22780,7 @@
     },
     {
       "id": "src-08957b9de48d51cc",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/HPEReportPresentation3.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/HPEReportPresentation3.pdf",
       "r2_url": null,
@@ -22787,8 +22791,8 @@
       "title": "Mr. HallÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢s powerpoint presentation of his study also can be viewed",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 1283434,
+      "checksum_sha256": "bf956171301eaf930097ebefe6b2d1a4a7d7c18688fe0bf6f4a9c5aa39766c79",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies"
@@ -22809,16 +22813,20 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 1283434 bytes (1.22 MiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "PDF pages: 27; extracted text: research/staging/queue/src-08957b9de48d51cc.txt",
+        "The presentation summarizes material preserved in the complete archived Hall transportation alternatives analysis."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "The presentation summarizes material preserved in the complete archived Hall transportation alternatives analysis.",
+      "local_path": "research/staging/queue/src-08957b9de48d51cc.pdf",
       "discovered_at": "2026-08-04T14:15:58.019061Z",
-      "updated_at": "2026-08-04T14:15:58.019061Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-16b14a4f0b57f61e"
     },
     {
       "id": "src-08b6b68b53336462",
@@ -23176,7 +23184,7 @@
     },
     {
       "id": "src-0921b56e0454f39d",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.8.08.transp_tf.minutes.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.8.08.transp_tf.minutes.pdf",
       "r2_url": null,
@@ -23187,8 +23195,8 @@
       "title": "1.8.08.Transp TF.MINUTES",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 55472,
+      "checksum_sha256": "35b2e283b859e7b9de96b43f67f50e273552bb05c5d5da9ee142ebe96ef95823",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -23209,16 +23217,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 55472 bytes (54.17 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 3; extracted text: research/staging/queue/src-0921b56e0454f39d.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-0921b56e0454f39d.pdf",
       "discovered_at": "2026-08-04T14:15:57.9197121Z",
-      "updated_at": "2026-08-04T14:15:57.9197121Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-092548fef85b887b",
@@ -28200,7 +28211,7 @@
     },
     {
       "id": "src-0dca8d20d8314459",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/R-390.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -28234,16 +28245,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Folder-catalog link duplicates the authoritative project-page record; the substantive document is archived and validated."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: duplicate",
+      "exclusion_reason": "Folder-catalog link duplicates the authoritative project-page record; the substantive document is archived and validated.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0270662Z",
-      "updated_at": "2026-08-04T14:15:58.0270662Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-1a82c77452c85991"
     },
     {
       "id": "src-0dcdb17c9c93c94c",
@@ -38201,7 +38214,7 @@
     },
     {
       "id": "src-17116f71e169e785",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/8.19.08.transp_tf.agenda.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/8.19.08.transp_tf.agenda.pdf",
       "r2_url": null,
@@ -38212,8 +38225,8 @@
       "title": "8.19.08.Transp TF.Agenda",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 177341,
+      "checksum_sha256": "21587fcabf8869ef9f4a7a048aa474c4d51be64cd015a98a4ae85aee9a26bc76",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -38234,16 +38247,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 177341 bytes (173.18 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 1; extracted text: research/staging/queue/src-17116f71e169e785.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-17116f71e169e785.pdf",
       "discovered_at": "2026-08-04T14:15:57.9660311Z",
-      "updated_at": "2026-08-04T14:15:57.9660311Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-172795dd78e6c4eb",
@@ -39173,19 +39189,19 @@
     },
     {
       "id": "src-17d49e3ef030ed1a",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/R-216.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies",
       "direct_file_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/R-216.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-montano-study-authorization-resolution-r-05-216-2005.pdf",
+      "r2_key": "transportation/roadway-projects/studies/cabq-montano-study-authorization-resolution-r-05-216-2005.pdf",
+      "r2_etag": "a9939686f14d259fa1bed779f956cce1",
+      "r2_last_modified": "08/30/2026 13:37:13",
       "agency": "City of Albuquerque",
-      "title": "Bill No. R-05-216 (Enactment No. R-2005-010)",
-      "date": null,
+      "title": "Montaño and Fourth Street Study Authorization — Resolution R-05-216",
+      "date": "2005-02",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 56537,
+      "checksum_sha256": "dd2894a87d61e1c27b8653b9b8f4f98d1dc878fc536d20f159ee5779b69de844",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies"
@@ -39200,22 +39216,26 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/transportation/roadway-projects/studies.md",
+      "description": "Authorizes and funds the Montaño and Fourth Street feasibility study, requiring public involvement, alternatives and financial analysis, HOV and bus-lane evaluation, agency collaboration, and coordination with surrounding corridor plans.",
+      "description_word_count": 29,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Original authoritative City or regional-government PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/roadway-projects/studies.md",
+      "implementation_locations": [
+        "content/transportation/roadway-projects/studies.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-17d49e3ef030ed1a.pdf",
       "discovered_at": "2026-08-04T14:15:58.0230655Z",
-      "updated_at": "2026-08-04T14:15:58.0230655Z"
+      "updated_at": "2026-08-30T19:41:55.7661686Z"
     },
     {
       "id": "src-17d883eaf1205ea6",
@@ -41659,19 +41679,19 @@
     },
     {
       "id": "src-1a82c77452c85991",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/R-390.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies",
       "direct_file_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/R-390.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-montano-four-general-purpose-lanes-resolution-r-05-390-2005.pdf",
+      "r2_key": "transportation/roadway-projects/studies/cabq-montano-four-general-purpose-lanes-resolution-r-05-390-2005.pdf",
+      "r2_etag": "beacfaf63a03b9ec1d72b7acf1f93dbb",
+      "r2_last_modified": "08/30/2026 13:38:01",
       "agency": "City of Albuquerque",
-      "title": "Bill No. R-05-390",
-      "date": null,
+      "title": "Montaño Four General-Purpose Lanes Proposal — Resolution R-05-390",
+      "date": "2005",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 54545,
+      "checksum_sha256": "c5adb4c9190c2f88ddb30882b5c3ef41cc17af6fea0a93029223a47f300b501b",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies"
@@ -41686,22 +41706,26 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/transportation/roadway-projects/studies.md",
+      "description": "Records the competing proposal to operate Montaño between Coors and Fourth Street with four general-purpose lanes, citing the Wilson study, corridor capacity, safety analysis, environmental findings, and prior Council policy.",
+      "description_word_count": 30,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Original authoritative City or regional-government PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/roadway-projects/studies.md",
+      "implementation_locations": [
+        "content/transportation/roadway-projects/studies.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-1a82c77452c85991.pdf",
       "discovered_at": "2026-08-04T14:15:58.0260653Z",
-      "updated_at": "2026-08-04T14:15:58.0260653Z"
+      "updated_at": "2026-08-30T19:41:55.9163191Z"
     },
     {
       "id": "src-1a85d4214674e3a4",
@@ -42866,7 +42890,7 @@
     },
     {
       "id": "src-1bd2a87a7ceda1a4",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/2.20.08.abq_streetcar_presentation1.leland_consulting.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/2.20.08.abq_streetcar_presentation1.leland_consulting.pdf",
       "r2_url": null,
@@ -42877,8 +42901,8 @@
       "title": "2.20.08.ABQ Streetcar Presentation1.Leland Consulting",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 3403176,
+      "checksum_sha256": "71fceb22ae58475b761fff0370d92f8fa9911a7b381b0b0dea69efdcbb434ad5",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -42899,16 +42923,20 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 3403176 bytes (3.25 MiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Interim streetcar presentation is superseded by the archived comprehensive Streetcar Evaluation Summary, cost/ridership report, and appendices.",
+        "PDF pages: 39; extracted text: research/staging/queue/src-1bd2a87a7ceda1a4.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Interim streetcar presentation is superseded by the archived comprehensive Streetcar Evaluation Summary, cost/ridership report, and appendices.",
+      "local_path": "research/staging/queue/src-1bd2a87a7ceda1a4.pdf",
       "discovered_at": "2026-08-04T14:15:57.9237115Z",
-      "updated_at": "2026-08-04T14:15:57.9237115Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-e5a9cf3e3195107d"
     },
     {
       "id": "src-1bd6e0aa7b78c29c",
@@ -43669,7 +43697,7 @@
     },
     {
       "id": "src-1c5f2675f2cbabf0",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/4e.UrbanDesign.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -43703,16 +43731,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0470898Z",
-      "updated_at": "2026-08-04T14:15:58.0470898Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-6479e8efc5bcc2b6"
     },
     {
       "id": "src-1c5fd2f23ddfc6c2",
@@ -45444,7 +45474,7 @@
     },
     {
       "id": "src-1de1233bdab299c4",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/5.17.08.transp_tf.agenda.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/5.17.08.transp_tf.agenda.pdf",
       "r2_url": null,
@@ -45455,8 +45485,8 @@
       "title": "5.17.08.Transp TF.Agenda",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 176902,
+      "checksum_sha256": "f1955c49b863994f8e7390ed516c6dc30e4c657af039badca3b5d8040d9f336e",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -45477,16 +45507,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 176902 bytes (172.76 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 1; extracted text: research/staging/queue/src-1de1233bdab299c4.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-1de1233bdab299c4.pdf",
       "discovered_at": "2026-08-04T14:15:57.9577199Z",
-      "updated_at": "2026-08-04T14:15:57.9577199Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-1de48e890d72b668",
@@ -47257,7 +47290,7 @@
     },
     {
       "id": "src-1f782353578e6496",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/4.1.08.transp_tf.agenda.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/4.1.08.transp_tf.agenda.pdf",
       "r2_url": null,
@@ -47268,8 +47301,8 @@
       "title": "4.1.08.Transp TF.Agenda",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 187832,
+      "checksum_sha256": "ce409fc7d0bbb4b30496514176827a15538ef36924c58a2d9d685156ea182549",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -47290,16 +47323,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 187832 bytes (183.43 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 1; extracted text: research/staging/queue/src-1f782353578e6496.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-1f782353578e6496.pdf",
       "discovered_at": "2026-08-04T14:15:57.9337124Z",
-      "updated_at": "2026-08-04T14:15:57.9337124Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-1f787b166bcf7f0c",
@@ -48269,19 +48305,19 @@
     },
     {
       "id": "src-203fb37e4964e658",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/R-204fin.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies",
       "direct_file_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/R-204fin.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-montano-four-lane-policy-resolution-r-04-204-2005.pdf",
+      "r2_key": "transportation/roadway-projects/studies/cabq-montano-four-lane-policy-resolution-r-04-204-2005.pdf",
+      "r2_etag": "85b9c5eb66a79e5c0d00331f57c042f7",
+      "r2_last_modified": "08/30/2026 13:37:28",
       "agency": "City of Albuquerque",
-      "title": "Bill No. R-04-204 (Enactment No. R-2005-067)",
-      "date": null,
+      "title": "Montaño Four-Lane Policy — Resolution R-04-204",
+      "date": "2005-05",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 55655,
+      "checksum_sha256": "c1c5100c7e8e6e2e5a32ec3fb99408f95340d6c5b4a0c572d9d005ac9a3a2429",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies"
@@ -48296,22 +48332,26 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/transportation/roadway-projects/studies.md",
+      "description": "Requests use of the bridge and corridor's four-lane capacity while requiring North Fourth Street planning, Near North Valley planning, Montaño/Fourth intersection analysis, multimodal consideration, financial analysis, and recurring progress reports.",
+      "description_word_count": 30,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Original authoritative City or regional-government PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/roadway-projects/studies.md",
+      "implementation_locations": [
+        "content/transportation/roadway-projects/studies.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-203fb37e4964e658.pdf",
       "discovered_at": "2026-08-04T14:15:58.0220662Z",
-      "updated_at": "2026-08-04T14:15:58.0220662Z"
+      "updated_at": "2026-08-30T19:41:55.8088889Z"
     },
     {
       "id": "src-207db20c490b781a",
@@ -49448,7 +49488,7 @@
     },
     {
       "id": "src-218eeed4ce307c7f",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan",
       "direct_file_url": null,
       "r2_url": null,
@@ -49482,16 +49522,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Folder-catalog page duplicates the authoritative North Fourth Street plan records already archived and validated."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: duplicate",
+      "exclusion_reason": "Folder-catalog page duplicates the authoritative North Fourth Street plan records already archived and validated.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0375791Z",
-      "updated_at": "2026-08-04T14:15:58.0375791Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-6479e8efc5bcc2b6"
     },
     {
       "id": "src-218f2a4c59340de7",
@@ -52201,7 +52243,7 @@
     },
     {
       "id": "src-24203acf54cf03e6",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/3.RealEstate-Business.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -52235,16 +52277,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0405786Z",
-      "updated_at": "2026-08-04T14:15:58.0405786Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-6479e8efc5bcc2b6"
     },
     {
       "id": "src-2427bb1684280df7",
@@ -53773,7 +53817,7 @@
     },
     {
       "id": "src-257ef0145dd47631",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/4.15.08.transp_tf.agenda.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/4.15.08.transp_tf.agenda.pdf",
       "r2_url": null,
@@ -53784,8 +53828,8 @@
       "title": "4.15.08.Transp TF.Agenda",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 187311,
+      "checksum_sha256": "5e5cb589ad26aedd6e0a79b30629ce1f9cea7ae70efd7d3bc65093e4689ae550",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -53806,16 +53850,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 187311 bytes (182.92 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 1; extracted text: research/staging/queue/src-257ef0145dd47631.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-257ef0145dd47631.pdf",
       "discovered_at": "2026-08-04T14:15:57.9367124Z",
-      "updated_at": "2026-08-04T14:15:57.9367124Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-258d0666cbbe5a58",
@@ -53919,19 +53966,19 @@
     },
     {
       "id": "src-25c15ede0314ba7a",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/6.11.08.street_maintenance_and_rehab.dmd.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/6.11.08.street_maintenance_and_rehab.dmd.pdf",
-      "r2_url": null,
-      "r2_key": null,
+      "r2_url": "https://files.abqinfo.com/transportation/operations-data/cabq-street-maintenance-rehabilitation-task-force-briefing-2008.pdf",
+      "r2_key": "transportation/operations-data/cabq-street-maintenance-rehabilitation-task-force-briefing-2008.pdf",
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "6.11.08.Street Maintenance and Rehab.DMD",
-      "date": null,
+      "title": "Street Maintenance and Rehabilitation in the Twenty-First Century",
+      "date": "2008-06-11",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 508946,
+      "checksum_sha256": "96129b5102d42b6b1cf13d6b44d4ed12a50ba752321341d0d5d68af3156cad35",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -53946,22 +53993,28 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/transportation/operations-data.md",
+      "description": "Documents Albuquerque's quarter-cent-tax street program, lane miles maintained, pavement-condition changes, bicycle-trail and sidewalk work, historic funding, projected needs, and the consequences of continuing or ending dedicated transportation revenue.",
+      "description_word_count": 28,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Cross-listed in the 2008 task-force record because it supplies historical planning context.",
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Interrupted upload reconciled through public byte-identical R2 validation.",
+        "Original authoritative City or regional-government PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/transportation/operations-data.md",
+      "implementation_locations": [
+        "content/transportation/operations-data.md",
+        "content/transportation/transportation-plans.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-25c15ede0314ba7a.pdf",
       "discovered_at": "2026-08-04T14:15:57.9602291Z",
-      "updated_at": "2026-08-04T14:15:57.9602291Z"
+      "updated_at": "2026-08-30T19:45:33.7581801Z"
     },
     {
       "id": "src-25c9a6569a223e48",
@@ -54609,19 +54662,19 @@
     },
     {
       "id": "src-26532dcb33a27b7d",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/WilsonReport.PDF",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies",
       "direct_file_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/WilsonReport.PDF",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-montano-road-corridor-wilson-study-2005.pdf",
+      "r2_key": "transportation/roadway-projects/studies/cabq-montano-road-corridor-wilson-study-2005.pdf",
+      "r2_etag": "83c638977770e77dfe8a98466b4d3478-2",
+      "r2_last_modified": "08/30/2026 13:36:41",
       "agency": "City of Albuquerque",
-      "title": "Report",
-      "date": null,
+      "title": "Montaño Road Corridor Study — Wilson & Company",
+      "date": "2005-10-14",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 9826312,
+      "checksum_sha256": "748aacd76936746e977ea463e141392303d81b31da368e707f98d7f25fe63779",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies"
@@ -54636,22 +54689,26 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/transportation/roadway-projects/studies.md",
+      "description": "Evaluates Montaño Road from Coors Boulevard to Second Street using traffic modeling, public input, safety, noise, vibration, biology, lane alternatives, costs, and intersection operations, recommending four general-purpose lanes.",
+      "description_word_count": 28,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Original authoritative City or regional-government PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/roadway-projects/studies.md",
+      "implementation_locations": [
+        "content/transportation/roadway-projects/studies.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-26532dcb33a27b7d.pdf",
       "discovered_at": "2026-08-04T14:15:58.0270662Z",
-      "updated_at": "2026-08-04T14:15:58.0270662Z"
+      "updated_at": "2026-08-30T19:41:55.6655503Z"
     },
     {
       "id": "src-2663fc607177e07d",
@@ -56425,7 +56482,7 @@
     },
     {
       "id": "src-2797d20cd99b4b09",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/7.9.08.abq_streetcar_presentation4.leland_consulting.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/7.9.08.abq_streetcar_presentation4.leland_consulting.pdf",
       "r2_url": null,
@@ -56436,8 +56493,8 @@
       "title": "7.8.08.ABQ Streetcar Presentation4.Leland Consulting",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 1126210,
+      "checksum_sha256": "e6ddf58e53e5e0e7493a517191b56d237176b35b8916f3ef33304e7c36f8cf06",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -56458,16 +56515,20 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 1126210 bytes (1.07 MiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Interim streetcar presentation is superseded by the archived comprehensive Streetcar Evaluation Summary, cost/ridership report, and appendices.",
+        "PDF pages: 43; extracted text: research/staging/queue/src-2797d20cd99b4b09.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Interim streetcar presentation is superseded by the archived comprehensive Streetcar Evaluation Summary, cost/ridership report, and appendices.",
+      "local_path": "research/staging/queue/src-2797d20cd99b4b09.pdf",
       "discovered_at": "2026-08-04T14:15:57.9650239Z",
-      "updated_at": "2026-08-04T14:15:57.9650239Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-e5a9cf3e3195107d"
     },
     {
       "id": "src-2799298d44521dc1",
@@ -57540,7 +57601,7 @@
     },
     {
       "id": "src-285faabe74599255",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/WilsonReportTableofContents.PDF",
       "direct_file_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/WilsonReportTableofContents.PDF",
       "r2_url": null,
@@ -57551,8 +57612,8 @@
       "title": "Table Of Contents",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 402718,
+      "checksum_sha256": "c165819365263f866625565dcba94eb9dd134b39e99e113bf761bc02ec825d9f",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies"
@@ -57573,16 +57634,20 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 402718 bytes (393.28 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "PDF pages: 2; extracted text: research/staging/queue/src-285faabe74599255.txt",
+        "The separately published table of contents is preserved within the complete archived Wilson corridor study."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "The separately published table of contents is preserved within the complete archived Wilson corridor study.",
+      "local_path": "research/staging/queue/src-285faabe74599255.pdf",
       "discovered_at": "2026-08-04T14:15:58.0300653Z",
-      "updated_at": "2026-08-04T14:15:58.0300653Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-26532dcb33a27b7d"
     },
     {
       "id": "src-286d26bef936968d",
@@ -58847,7 +58912,7 @@
     },
     {
       "id": "src-29c362dafd135092",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.8.08.transp_tf.agenda.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.8.08.transp_tf.agenda.pdf",
       "r2_url": null,
@@ -58858,8 +58923,8 @@
       "title": "1.8.08.Transp TF.Agenda",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 188402,
+      "checksum_sha256": "f366ad64783e22a8cf793d9f9fb06d0ac95175d380dd85192beba78e1d3de1ac",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -58880,16 +58945,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 188402 bytes (183.99 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 1; extracted text: research/staging/queue/src-29c362dafd135092.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-29c362dafd135092.pdf",
       "discovered_at": "2026-08-04T14:15:57.9187128Z",
-      "updated_at": "2026-08-04T14:15:57.9187128Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-29ca2d0e5829d8ea",
@@ -59925,7 +59993,7 @@
     },
     {
       "id": "src-2acfcc03f45250f4",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/8.5.08.transp_tf.agenda.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/8.5.08.transp_tf.agenda.pdf",
       "r2_url": null,
@@ -59936,8 +60004,8 @@
       "title": "8.5.08.Transp TF.Agenda",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 176925,
+      "checksum_sha256": "c11b30473835f1ed5e17536ab6592f47967c91cf0041213e43ceed544e3bf71e",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -59958,16 +60026,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 176925 bytes (172.78 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 1; extracted text: research/staging/queue/src-2acfcc03f45250f4.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-2acfcc03f45250f4.pdf",
       "discovered_at": "2026-08-04T14:15:57.9670318Z",
-      "updated_at": "2026-08-04T14:15:57.9670318Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-2ada4c27695e656e",
@@ -63455,19 +63526,19 @@
     },
     {
       "id": "src-2e670a3b5593ee35",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/2.5.08.mrcog_overview.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/2.5.08.mrcog_overview.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/transportation-plans/mrcog-regional-transportation-task-force-briefing-2008.pdf",
+      "r2_key": "transportation/transportation-plans/mrcog-regional-transportation-task-force-briefing-2008.pdf",
+      "r2_etag": "82124e110a7471957638651147388c8b",
+      "r2_last_modified": "08/30/2026 13:35:34",
       "agency": "City of Albuquerque",
-      "title": "2.5.08.MRCOG Overview",
-      "date": null,
+      "title": "MRCOG Regional Transportation Planning Briefing",
+      "date": "2008-02-05",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 6880854,
+      "checksum_sha256": "bafc420037e5c0f6c0bc8cdaa32edffa696c0f4e3e187d19d492b7c3b48175d5",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -63482,22 +63553,26 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/transportation/transportation-plans.md",
+      "description": "Explains MRCOG's metropolitan planning role, the 2030 MTP and TIP, Rail Runner and Rio Metro responsibilities, forecast growth, congestion, river crossings, multimodal needs, regional projects, and limited transportation funding.",
+      "description_word_count": 29,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Original authoritative City or regional-government PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transportation-plans.md",
+      "implementation_locations": [
+        "content/transportation/transportation-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-2e670a3b5593ee35.pdf",
       "discovered_at": "2026-08-04T14:15:57.9267129Z",
-      "updated_at": "2026-08-04T14:15:57.9267129Z"
+      "updated_at": "2026-08-30T19:41:55.4456346Z"
     },
     {
       "id": "src-2e6b47bcf85ff53d",
@@ -98808,7 +98883,7 @@
     },
     {
       "id": "src-50a5f1745c002dc3",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/2.20.08.transp_tf.agenda.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/2.20.08.transp_tf.agenda.pdf",
       "r2_url": null,
@@ -98819,8 +98894,8 @@
       "title": "2.20.08.Transp TF.Agenda",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 187487,
+      "checksum_sha256": "11e72f23ae7420da9b0ab6357ac15a6961f5e060522c7eaca2504731458a8ac9",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -98841,16 +98916,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 187487 bytes (183.09 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 1; extracted text: research/staging/queue/src-50a5f1745c002dc3.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-50a5f1745c002dc3.pdf",
       "discovered_at": "2026-08-04T14:15:57.9237115Z",
-      "updated_at": "2026-08-04T14:15:57.9237115Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-50ae58d39d230e0c",
@@ -102330,7 +102408,7 @@
     },
     {
       "id": "src-53a33163e6fc47e9",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/HPEReportPresentation3.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -102364,16 +102442,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Folder-catalog link duplicates the authoritative project-page record; the substantive document is archived and validated."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: duplicate",
+      "exclusion_reason": "Folder-catalog link duplicates the authoritative project-page record; the substantive document is archived and validated.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0200608Z",
-      "updated_at": "2026-08-04T14:15:58.0200608Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-16b14a4f0b57f61e"
     },
     {
       "id": "src-53a7c1264d43663c",
@@ -110851,19 +110931,19 @@
     },
     {
       "id": "src-5c59cfb9745f1508",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.23.08.presentationb3.pgs_excerpt.policies_and_regs.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.23.08.presentationb3.pgs_excerpt.policies_and_regs.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/transportation-plans/cabq-planned-growth-strategy-policy-regulatory-excerpt-2008.pdf",
+      "r2_key": "transportation/transportation-plans/cabq-planned-growth-strategy-policy-regulatory-excerpt-2008.pdf",
+      "r2_etag": "63bfcf8970a177383d2c636adb69bd56",
+      "r2_last_modified": "08/30/2026 13:34:46",
       "agency": "City of Albuquerque",
-      "title": "1.23.08.PresentationB3.PGS Excerpt.Policies and Regs",
-      "date": null,
+      "title": "Planned Growth Strategy Policy, Regulatory, and Plan Review",
+      "date": "2008-01-23",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 81044,
+      "checksum_sha256": "f4882a705350a4a3d14f07b4630f74faa78c1bdb40eed892234c0a21b631e188",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -110878,22 +110958,26 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/transportation/transportation-plans.md",
+      "description": "Reviews the Albuquerque and Bernalillo County policies shaping compact growth, centers and corridors, infrastructure timing, annexation, impact fees, transit-supportive development, and coordination between land-use and transportation investment.",
+      "description_word_count": 27,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Original authoritative City or regional-government PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transportation-plans.md",
+      "implementation_locations": [
+        "content/transportation/transportation-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-5c59cfb9745f1508.pdf",
       "discovered_at": "2026-08-04T14:15:57.9137119Z",
-      "updated_at": "2026-08-04T14:15:57.9137119Z"
+      "updated_at": "2026-08-30T19:41:55.2889497Z"
     },
     {
       "id": "src-5c6ace61fca6ad8e",
@@ -111092,19 +111176,19 @@
     },
     {
       "id": "src-5c9ad39184c0e9c3",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/o_07_71.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/o_07_71.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/transportation-plans/cabq-transportation-task-force-enabling-ordinance-o-07-71-2007.pdf",
+      "r2_key": "transportation/transportation-plans/cabq-transportation-task-force-enabling-ordinance-o-07-71-2007.pdf",
+      "r2_etag": "272a89a5f60e8f8952b394cb21bcdfc3",
+      "r2_last_modified": "08/30/2026 13:36:22",
       "agency": "City of Albuquerque",
-      "title": "Bill O-07-71",
-      "date": null,
+      "title": "21st Century Transportation Task Force Enabling Ordinance O-07-71",
+      "date": "2007",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 86832,
+      "checksum_sha256": "471f3895041e9da298d32555aaa331e72fc55d670c4929d3d3e4e0cd7685a423",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -111119,22 +111203,26 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/transportation/transportation-plans.md",
+      "description": "Creates the transportation task force and commissions the streetcar cost-benefit analysis, defining a citywide multimodal scope spanning roadway, transit, bicycle, pedestrian, paratransit, land-use, economic-development, funding, and tax-policy questions.",
+      "description_word_count": 28,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Interrupted upload reconciled through public byte-identical R2 validation.",
+        "Original authoritative City or regional-government PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transportation-plans.md",
+      "implementation_locations": [
+        "content/transportation/transportation-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-5c9ad39184c0e9c3.pdf",
       "discovered_at": "2026-08-04T14:15:57.9690316Z",
-      "updated_at": "2026-08-04T14:15:57.9690316Z"
+      "updated_at": "2026-08-30T19:41:55.6197634Z"
     },
     {
       "id": "src-5cb612ddbcbe92db",
@@ -111337,7 +111425,7 @@
       "exclusion_reason": null,
       "local_path": "research/staging/queue/src-5cdd997502c0d388.pdf",
       "discovered_at": "2026-08-04T14:15:58.0546004Z",
-      "updated_at": "2026-08-30T18:04:24.1725460Z"
+      "updated_at": "2026-08-30T18:04:24.172546Z"
     },
     {
       "id": "src-5cdf0511f8cc1c98",
@@ -115115,7 +115203,7 @@
     },
     {
       "id": "src-5fa7d59da91fecc7",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/5.RedevelopmentTools.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -115149,16 +115237,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0490894Z",
-      "updated_at": "2026-08-04T14:15:58.0490894Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-6479e8efc5bcc2b6"
     },
     {
       "id": "src-5fd74920802643e4",
@@ -116165,7 +116255,7 @@
     },
     {
       "id": "src-60d01a653b43dcfb",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/4.15.08.abq_streetcar_presentation2.leland_consulting.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/4.15.08.abq_streetcar_presentation2.leland_consulting.pdf",
       "r2_url": null,
@@ -116176,8 +116266,8 @@
       "title": "4.15.08.ABQ Streetcar Presentation2.Leland Consulting",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 5076863,
+      "checksum_sha256": "66d7276c023728ee6045b97ae9ae5d5bde6371de0c272e861bc49e8a6085ebca",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -116198,16 +116288,20 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 5076863 bytes (4.84 MiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Interim streetcar presentation is superseded by the archived comprehensive Streetcar Evaluation Summary, cost/ridership report, and appendices.",
+        "PDF pages: 48; extracted text: research/staging/queue/src-60d01a653b43dcfb.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Interim streetcar presentation is superseded by the archived comprehensive Streetcar Evaluation Summary, cost/ridership report, and appendices.",
+      "local_path": "research/staging/queue/src-60d01a653b43dcfb.pdf",
       "discovered_at": "2026-08-04T14:15:57.9357124Z",
-      "updated_at": "2026-08-04T14:15:57.9357124Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-e5a9cf3e3195107d"
     },
     {
       "id": "src-60d1b9b393052763",
@@ -120620,7 +120714,7 @@
     },
     {
       "id": "src-64984794d0aec1ab",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/WilsonReportTableofContents.PDF/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -120654,16 +120748,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "The separately published table of contents is preserved within the complete archived Wilson corridor study."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "The separately published table of contents is preserved within the complete archived Wilson corridor study.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0310652Z",
-      "updated_at": "2026-08-04T14:15:58.0310652Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-26532dcb33a27b7d"
     },
     {
       "id": "src-649d55831458b724",
@@ -121201,7 +121297,7 @@
     },
     {
       "id": "src-651064b391ce6c0c",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/2.Demographics-Context.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -121235,16 +121331,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0395795Z",
-      "updated_at": "2026-08-04T14:15:58.0395795Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-6479e8efc5bcc2b6"
     },
     {
       "id": "src-6514a288a010bb56",
@@ -122624,7 +122722,7 @@
     },
     {
       "id": "src-665bb9551023437d",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/4.1.08.transp_tf.minutes.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/4.1.08.transp_tf.minutes.pdf",
       "r2_url": null,
@@ -122635,8 +122733,8 @@
       "title": "4.1.08.Transp TF.MINUTES",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 80390,
+      "checksum_sha256": "3b07ed960b4a53f287d38693e9b19c8e57d06dd11fc022d75c56379ed40927be",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -122657,16 +122755,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 80390 bytes (78.51 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 7; extracted text: research/staging/queue/src-665bb9551023437d.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-665bb9551023437d.pdf",
       "discovered_at": "2026-08-04T14:15:57.9347125Z",
-      "updated_at": "2026-08-04T14:15:57.9347125Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-665d53bf27d05210",
@@ -128798,7 +128899,7 @@
     },
     {
       "id": "src-6c4f7a6d3f8edc7d",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/MontanoHallReport.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -128832,16 +128933,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Folder-catalog link duplicates the authoritative project-page record; the substantive document is archived and validated."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: duplicate",
+      "exclusion_reason": "Folder-catalog link duplicates the authoritative project-page record; the substantive document is archived and validated.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0210598Z",
-      "updated_at": "2026-08-04T14:15:58.0210598Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-16b14a4f0b57f61e"
     },
     {
       "id": "src-6c6f2aed1a9d4d1f",
@@ -132898,7 +133001,7 @@
     },
     {
       "id": "src-70abffd5dd217a13",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/1.Introduction-Background.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -132932,16 +133035,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0385791Z",
-      "updated_at": "2026-08-04T14:15:58.0385791Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-6479e8efc5bcc2b6"
     },
     {
       "id": "src-70ad58e6e7d46a7f",
@@ -134250,7 +134355,7 @@
     },
     {
       "id": "src-71948c99acf16da4",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/7.22.08.transp_tf.minutes.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/7.22.08.transp_tf.minutes.pdf",
       "r2_url": null,
@@ -134261,8 +134366,8 @@
       "title": "7.22.08.Transp TF.MINUTES",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 62098,
+      "checksum_sha256": "826e13e5f0bb7484cbadcda55b1740c44c4f4795349f2014f30d38c444de40e3",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -134283,16 +134388,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 62098 bytes (60.64 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 8; extracted text: research/staging/queue/src-71948c99acf16da4.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-71948c99acf16da4.pdf",
       "discovered_at": "2026-08-04T14:15:57.9632385Z",
-      "updated_at": "2026-08-04T14:15:57.9632385Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-719d61a1047aeb31",
@@ -136213,7 +136321,7 @@
     },
     {
       "id": "src-72de3fb581605feb",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/5.13.08.transp_tf.minutes.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/5.13.08.transp_tf.minutes.pdf",
       "r2_url": null,
@@ -136224,8 +136332,8 @@
       "title": "5.13.08.Transp TF.MINUTES",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 61459,
+      "checksum_sha256": "44e5c08d57e6741a660761377b68a0b843cc108af26b6c7d053c9293da6ebdbf",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -136246,16 +136354,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 61459 bytes (60.02 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 5; extracted text: research/staging/queue/src-72de3fb581605feb.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-72de3fb581605feb.pdf",
       "discovered_at": "2026-08-04T14:15:57.9567169Z",
-      "updated_at": "2026-08-04T14:15:57.9567169Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-72def9da3ba1d799",
@@ -138050,19 +138161,19 @@
     },
     {
       "id": "src-74c6250763ee3c21",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.23.08.presentationb4.cip_ordinance.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.23.08.presentationb4.cip_ordinance.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/transportation-plans/cabq-capital-improvements-ordinance-task-force-reference-2008.pdf",
+      "r2_key": "transportation/transportation-plans/cabq-capital-improvements-ordinance-task-force-reference-2008.pdf",
+      "r2_etag": "030eff00c127d7ab639d97ac7b374a51",
+      "r2_last_modified": "08/30/2026 13:35:01",
       "agency": "City of Albuquerque",
-      "title": "1.23.08.PresentationB4.CIP Ordinance",
-      "date": null,
+      "title": "City Capital Improvements Ordinance — 2008 Task Force Reference",
+      "date": "2008-01-23",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 42645,
+      "checksum_sha256": "e6455e2def084ef6dc9c43df0be4850246e71d808cd0fed548da95d99a6631a9",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -138077,22 +138188,26 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/transportation/transportation-plans.md",
+      "description": "Preserves the capital-program rules reviewed by the task force, including maintenance priorities, ten-year programming, project evaluation, trails and bikeways funding, public reporting, and metropolitan transportation-plan coordination.",
+      "description_word_count": 26,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Original authoritative City or regional-government PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transportation-plans.md",
+      "implementation_locations": [
+        "content/transportation/transportation-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-74c6250763ee3c21.pdf",
       "discovered_at": "2026-08-04T14:15:57.9147127Z",
-      "updated_at": "2026-08-04T14:15:57.9147127Z"
+      "updated_at": "2026-08-30T19:41:55.3442629Z"
     },
     {
       "id": "src-74c9ef9734483c29",
@@ -140670,7 +140785,7 @@
     },
     {
       "id": "src-77bf1ffccd97cc48",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/7.8.08.transp_tf.minutes.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/7.8.08.transp_tf.minutes.pdf",
       "r2_url": null,
@@ -140681,8 +140796,8 @@
       "title": "7.8.08.Transp TF.MINUTES",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 64297,
+      "checksum_sha256": "4dd9c0cf273e9b8dc776fc17798f183aaf6a7f0c965919b8b0dd67f687d020af",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -140703,16 +140818,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 64297 bytes (62.79 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 11; extracted text: research/staging/queue/src-77bf1ffccd97cc48.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-77bf1ffccd97cc48.pdf",
       "discovered_at": "2026-08-04T14:15:57.9650239Z",
-      "updated_at": "2026-08-04T14:15:57.9650239Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-77d70bbc48bff79e",
@@ -145091,7 +145209,7 @@
     },
     {
       "id": "src-7bb0a290300f16af",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/5.13.08.abq_streetcar_presentation3.leland_consulting.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/5.13.08.abq_streetcar_presentation3.leland_consulting.pdf",
       "r2_url": null,
@@ -145102,8 +145220,8 @@
       "title": "5.13.08.ABQ Streetcar Presentation3.Leland Consulting",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 1395874,
+      "checksum_sha256": "01fa4a1aa1e9a7b81da8b0e3494b7bb37368367c4da832e0737a13f49a763497",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -145124,16 +145242,20 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 1395874 bytes (1.33 MiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Interim streetcar presentation is superseded by the archived comprehensive Streetcar Evaluation Summary, cost/ridership report, and appendices.",
+        "PDF pages: 34; extracted text: research/staging/queue/src-7bb0a290300f16af.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Interim streetcar presentation is superseded by the archived comprehensive Streetcar Evaluation Summary, cost/ridership report, and appendices.",
+      "local_path": "research/staging/queue/src-7bb0a290300f16af.pdf",
       "discovered_at": "2026-08-04T14:15:57.9397127Z",
-      "updated_at": "2026-08-04T14:15:57.9397127Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-e5a9cf3e3195107d"
     },
     {
       "id": "src-7bbbb37dbcbc5e3c",
@@ -145972,7 +146094,7 @@
     },
     {
       "id": "src-7c55a5f79642f8e4",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/4a.ManagingtheCorridor.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -146006,16 +146128,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0425786Z",
-      "updated_at": "2026-08-04T14:15:58.0425786Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-6479e8efc5bcc2b6"
     },
     {
       "id": "src-7c6240f55fadae7a",
@@ -148878,7 +149002,7 @@
       "exclusion_reason": null,
       "local_path": "research/staging/queue/src-7ef6d021d2326e49.pdf",
       "discovered_at": "2026-08-04T14:15:58.00706Z",
-      "updated_at": "2026-08-30T18:04:24.1725460Z"
+      "updated_at": "2026-08-30T18:04:24.172546Z"
     },
     {
       "id": "src-7f09cd6bd5b04f15",
@@ -155445,7 +155569,7 @@
     },
     {
       "id": "src-8499ecc3ab0b971f",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/4b1.FutureLandUse.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -155479,16 +155603,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.043579Z",
-      "updated_at": "2026-08-04T14:15:58.043579Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-6479e8efc5bcc2b6"
     },
     {
       "id": "src-849f1acc0cf7fcd3",
@@ -158626,7 +158752,7 @@
     },
     {
       "id": "src-873c5283c054d2eb",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/3.4.08.transp_tf.minutes.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/3.4.08.transp_tf.minutes.pdf",
       "r2_url": null,
@@ -158637,8 +158763,8 @@
       "title": "3.4.08.Transp TF.MINUTES",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 61410,
+      "checksum_sha256": "88d3524e61aca2a71f25ee781c3b796a10186331dd7e8572bf929a1effc6db42",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -158659,16 +158785,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 61410 bytes (59.97 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 5; extracted text: research/staging/queue/src-873c5283c054d2eb.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-873c5283c054d2eb.pdf",
       "discovered_at": "2026-08-04T14:15:57.9327134Z",
-      "updated_at": "2026-08-04T14:15:57.9327134Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-8740362a1b751e26",
@@ -160942,7 +161071,7 @@
     },
     {
       "id": "src-8918b219058e2f67",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/2.5.08.transp_tf.agenda.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/2.5.08.transp_tf.agenda.pdf",
       "r2_url": null,
@@ -160953,8 +161082,8 @@
       "title": "2.5.08.Transp TF.Agenda",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 187654,
+      "checksum_sha256": "2a0752c94804f7467752fb1bb1584777f871ecc9a76ac0f793273a9c5288a3ab",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -160975,16 +161104,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 187654 bytes (183.26 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 1; extracted text: research/staging/queue/src-8918b219058e2f67.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-8918b219058e2f67.pdf",
       "discovered_at": "2026-08-04T14:15:57.9287101Z",
-      "updated_at": "2026-08-04T14:15:57.9287101Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-8919f64d734bdb83",
@@ -164943,7 +165075,7 @@
     },
     {
       "id": "src-8ce28ee1a58c8a73",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/6.11.08.transp_tf.agenda.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/6.11.08.transp_tf.agenda.pdf",
       "r2_url": null,
@@ -164954,8 +165086,8 @@
       "title": "6.11.08.Transp TF.Agenda",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 177099,
+      "checksum_sha256": "46c43051ef433a6e84d07e87d26d9e21b9758bbca5207d3ccadf7f47cc5f6d4e",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -164976,16 +165108,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 177099 bytes (172.95 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 1; extracted text: research/staging/queue/src-8ce28ee1a58c8a73.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-8ce28ee1a58c8a73.pdf",
       "discovered_at": "2026-08-04T14:15:57.9602291Z",
-      "updated_at": "2026-08-04T14:15:57.9602291Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-8ce615f21d3e5dd3",
@@ -165656,7 +165791,7 @@
     },
     {
       "id": "src-8d795c989e603789",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/N.4thCoverandContents_000.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -165690,16 +165825,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0510899Z",
-      "updated_at": "2026-08-04T14:15:58.0510899Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-6479e8efc5bcc2b6"
     },
     {
       "id": "src-8d8336fa08217661",
@@ -166483,7 +166620,7 @@
     },
     {
       "id": "src-8e58c147f5fecc0b",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/6.24.08.transp_tf.minutes.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/6.24.08.transp_tf.minutes.pdf",
       "r2_url": null,
@@ -166494,8 +166631,8 @@
       "title": "6.24.08.Transp TF.MINUTES",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 78961,
+      "checksum_sha256": "059d7be2c91c57c728c8100e0145b0611879a49445f470667f60984eec3c335b",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -166516,16 +166653,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 78961 bytes (77.11 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 7; extracted text: research/staging/queue/src-8e58c147f5fecc0b.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-8e58c147f5fecc0b.pdf",
       "discovered_at": "2026-08-04T14:15:57.9622403Z",
-      "updated_at": "2026-08-04T14:15:57.9622403Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-8e77de0139392161",
@@ -166711,7 +166851,7 @@
     },
     {
       "id": "src-8e8f0fe6bb5b0c7a",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/R-216.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -166745,16 +166885,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Folder-catalog link duplicates the authoritative project-page record; the substantive document is archived and validated."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: duplicate",
+      "exclusion_reason": "Folder-catalog link duplicates the authoritative project-page record; the substantive document is archived and validated.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0240654Z",
-      "updated_at": "2026-08-04T14:15:58.0240654Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-17d49e3ef030ed1a"
     },
     {
       "id": "src-8e9e206cca213a48",
@@ -168383,7 +168525,7 @@
     },
     {
       "id": "src-8fe8c4af11842003",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/transportation_and_street_design.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -168417,16 +168559,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0535934Z",
-      "updated_at": "2026-08-04T14:15:58.0535934Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-6479e8efc5bcc2b6"
     },
     {
       "id": "src-8fedb780848cb653",
@@ -170906,7 +171050,7 @@
     },
     {
       "id": "src-91f618ee0a7fa151",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/regulatory_plan_building_forms.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -170940,16 +171084,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0520887Z",
-      "updated_at": "2026-08-04T14:15:58.0520887Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-6479e8efc5bcc2b6"
     },
     {
       "id": "src-922772f1241f3027",
@@ -170991,19 +171137,19 @@
     },
     {
       "id": "src-922fcd8ff3e7ab91",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/R-382.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies",
       "direct_file_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/R-382.pdf",
-      "r2_url": null,
-      "r2_key": null,
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-montano-hov-river-crossing-policy-resolution-r-05-382-2005.pdf",
+      "r2_key": "transportation/roadway-projects/studies/cabq-montano-hov-river-crossing-policy-resolution-r-05-382-2005.pdf",
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Bill No. R-05-382 (as amended)",
-      "date": null,
+      "title": "Montaño HOV and River-Crossing Policy — Resolution R-05-382",
+      "date": "2005",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 60645,
+      "checksum_sha256": "2f4c429102f94854db8316d6def8e09f73fdf14fddb115ecd0c4830763b638ad",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies"
@@ -171018,22 +171164,25 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/transportation/roadway-projects/studies.md",
+      "description": "Records the proposed City policy favoring two unrestricted lanes and a reversible HOV/transit lane, interim HOV striping, and compliance with regional planning, federal permits, historic-preservation requirements, and court decisions.",
+      "description_word_count": 29,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Original authoritative City or regional-government PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/roadway-projects/studies.md",
+      "implementation_locations": [
+        "content/transportation/roadway-projects/studies.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-922fcd8ff3e7ab91.pdf",
       "discovered_at": "2026-08-04T14:15:58.0240654Z",
-      "updated_at": "2026-08-04T14:15:58.0240654Z"
+      "updated_at": "2026-08-30T19:41:55.8591628Z"
     },
     {
       "id": "src-92406a39eaba47ce",
@@ -179769,7 +179918,7 @@
     },
     {
       "id": "src-9b11ec353e6dfd38",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/montano-corridor-studies",
       "direct_file_url": null,
       "r2_url": null,
@@ -179803,16 +179952,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Folder-catalog link duplicates the authoritative project-page record; the substantive document is archived and validated."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: duplicate",
+      "exclusion_reason": "Folder-catalog link duplicates the authoritative project-page record; the substantive document is archived and validated.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.017061Z",
-      "updated_at": "2026-08-04T14:15:58.017061Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-26532dcb33a27b7d"
     },
     {
       "id": "src-9b222f3cfa10cdc1",
@@ -182114,7 +182265,7 @@
     },
     {
       "id": "src-9d33fe15a313fb8c",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/o-08-27.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/o-08-27.pdf",
       "r2_url": null,
@@ -182125,8 +182276,8 @@
       "title": "Bill O-08-27",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 55114,
+      "checksum_sha256": "035ff67efdc0c7056aef93f85770b11e1e238154d7473f2e878d4a19f0ff25d9",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -182146,17 +182297,21 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
+        "Deadline-extension ordinance is procedural; the enabling ordinance and completed final report preserve the substantive task-force record.",
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 55114 bytes (53.82 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "PDF pages: 2; extracted text: research/staging/queue/src-9d33fe15a313fb8c.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Deadline-extension ordinance is procedural; the enabling ordinance and completed final report preserve the substantive task-force record.",
+      "local_path": "research/staging/queue/src-9d33fe15a313fb8c.pdf",
       "discovered_at": "2026-08-04T14:15:57.9700311Z",
-      "updated_at": "2026-08-04T14:15:57.9700311Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-5c9ad39184c0e9c3"
     },
     {
       "id": "src-9d612c0b224dfb37",
@@ -182445,7 +182600,7 @@
     },
     {
       "id": "src-9dc5feaac4262e02",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/7.22.08.transp_tf.agenda.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/7.22.08.transp_tf.agenda.pdf",
       "r2_url": null,
@@ -182456,8 +182611,8 @@
       "title": "7.22.08.Transp TF.Agenda",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 177197,
+      "checksum_sha256": "996658fbcb1ae02ced098932791638ac970706745f05dda362331f729f18ed73",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -182478,16 +182633,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 177197 bytes (173.04 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 1; extracted text: research/staging/queue/src-9dc5feaac4262e02.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-9dc5feaac4262e02.pdf",
       "discovered_at": "2026-08-04T14:15:57.9622403Z",
-      "updated_at": "2026-08-04T14:15:57.9622403Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-9ddd86a240b30500",
@@ -185064,7 +185222,7 @@
     },
     {
       "id": "src-a1488be5236c981b",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/6.11.08.transp_tf.minutes.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/6.11.08.transp_tf.minutes.pdf",
       "r2_url": null,
@@ -185075,8 +185233,8 @@
       "title": "6.11.08.Transp TF.MINUTES",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 63300,
+      "checksum_sha256": "28f78b068ead87a7480de316aefc9644f3ae4a52ecf0f72dd9f9427a995792a2",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -185097,16 +185255,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 63300 bytes (61.82 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 5; extracted text: research/staging/queue/src-a1488be5236c981b.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-a1488be5236c981b.pdf",
       "discovered_at": "2026-08-04T14:15:57.9612388Z",
-      "updated_at": "2026-08-04T14:15:57.9612388Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-a150919a7ebda0d6",
@@ -185200,7 +185361,7 @@
     },
     {
       "id": "src-a17e3af010ef20ff",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/4d.Transportation.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -185234,16 +185395,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0460833Z",
-      "updated_at": "2026-08-04T14:15:58.0460833Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-6479e8efc5bcc2b6"
     },
     {
       "id": "src-a1823b506c80a5e1",
@@ -185906,7 +186069,7 @@
     },
     {
       "id": "src-a215d08d4beaeba1",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/4.15.08.transp_tf.minutes.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/4.15.08.transp_tf.minutes.pdf",
       "r2_url": null,
@@ -185917,8 +186080,8 @@
       "title": "4.15.08.Transp TF.MINUTES",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 44221,
+      "checksum_sha256": "53d221a9b665dbefec711321027bd49b7e785713a1b05809315100e6b0026083",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -185939,16 +186102,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 44221 bytes (43.18 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 3; extracted text: research/staging/queue/src-a215d08d4beaeba1.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-a215d08d4beaeba1.pdf",
       "discovered_at": "2026-08-04T14:15:57.937712Z",
-      "updated_at": "2026-08-04T14:15:57.937712Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-a21922f80a2d3421",
@@ -186784,7 +186950,7 @@
     },
     {
       "id": "src-a2a9772bf6c8b3e0",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/4.29.08.transp_tf.agenda.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/4.29.08.transp_tf.agenda.pdf",
       "r2_url": null,
@@ -186795,8 +186961,8 @@
       "title": "4.29.08.Transp TF.Agenda",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 186779,
+      "checksum_sha256": "0358af34d04c16da08d0eac0c101f8b2c2d6d4e39df9ce5739c81061a0b477f4",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -186817,16 +186983,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 186779 bytes (182.40 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 1; extracted text: research/staging/queue/src-a2a9772bf6c8b3e0.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-a2a9772bf6c8b3e0.pdf",
       "discovered_at": "2026-08-04T14:15:57.937712Z",
-      "updated_at": "2026-08-04T14:15:57.937712Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-a2aca9ec415a08bb",
@@ -194146,7 +194315,7 @@
     },
     {
       "id": "src-a95c5818140394e0",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/5.13.08.transp_tf.agenda.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/5.13.08.transp_tf.agenda.pdf",
       "r2_url": null,
@@ -194157,8 +194326,8 @@
       "title": "5.13.08.Transp TF.Agenda",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 187339,
+      "checksum_sha256": "6cea5c50d84bc4a096094a9cb2688cfe9f8462bce00bed1f2ce049f2f42e2393",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -194179,16 +194348,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 187339 bytes (182.95 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 1; extracted text: research/staging/queue/src-a95c5818140394e0.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-a95c5818140394e0.pdf",
       "discovered_at": "2026-08-04T14:15:57.9407133Z",
-      "updated_at": "2026-08-04T14:15:57.9407133Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-a9651bc7525bbb7e",
@@ -194900,7 +195072,7 @@
     },
     {
       "id": "src-a9d8bfed1990f5b6",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/4d1.Transportation-ParkingStrategy.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -194934,16 +195106,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0460833Z",
-      "updated_at": "2026-08-04T14:15:58.0460833Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-6479e8efc5bcc2b6"
     },
     {
       "id": "src-a9ddff947a4282c9",
@@ -203960,7 +204134,7 @@
     },
     {
       "id": "src-b241a8bc662f76d9",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/WilsonReportCover.PDF",
       "direct_file_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/WilsonReportCover.PDF",
       "r2_url": null,
@@ -203971,8 +204145,8 @@
       "title": "Cover Page",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 2438842,
+      "checksum_sha256": "0d6376614d24e422f8254f92054c37bec3f08bd792cf16e08337e1f492af6db0",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies"
@@ -203993,16 +204167,20 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 2438842 bytes (2.33 MiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "PDF pages: 1; extracted text: research/staging/queue/src-b241a8bc662f76d9.txt",
+        "The separately published cover is preserved within the complete archived Wilson corridor study."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "The separately published cover is preserved within the complete archived Wilson corridor study.",
+      "local_path": "research/staging/queue/src-b241a8bc662f76d9.pdf",
       "discovered_at": "2026-08-04T14:15:58.0290653Z",
-      "updated_at": "2026-08-04T14:15:58.0290653Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-26532dcb33a27b7d"
     },
     {
       "id": "src-b24719a4bbe4350f",
@@ -204695,7 +204873,7 @@
     },
     {
       "id": "src-b3076df9ed673df9",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/cover_page_and_contents.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -204729,16 +204907,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.05009Z",
-      "updated_at": "2026-08-04T14:15:58.05009Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-6479e8efc5bcc2b6"
     },
     {
       "id": "src-b31080e3fd75ac84",
@@ -210718,7 +210898,7 @@
     },
     {
       "id": "src-b9129498bd3de28e",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/WilsonReport.PDF/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -210752,16 +210932,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Folder-catalog link duplicates the authoritative project-page record; the substantive document is archived and validated."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: duplicate",
+      "exclusion_reason": "Folder-catalog link duplicates the authoritative project-page record; the substantive document is archived and validated.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0280668Z",
-      "updated_at": "2026-08-04T14:15:58.0280668Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-26532dcb33a27b7d"
     },
     {
       "id": "src-b938b808d7d5b4c6",
@@ -215125,7 +215307,7 @@
     },
     {
       "id": "src-bd137d3312489887",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/R-204fin.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -215159,16 +215341,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Folder-catalog link duplicates the authoritative project-page record; the substantive document is archived and validated."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: duplicate",
+      "exclusion_reason": "Folder-catalog link duplicates the authoritative project-page record; the substantive document is archived and validated.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0220662Z",
-      "updated_at": "2026-08-04T14:15:58.0220662Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-203fb37e4964e658"
     },
     {
       "id": "src-bd2700c0390fa8c8",
@@ -215724,7 +215908,7 @@
     },
     {
       "id": "src-bdbbdd2bbf87c5b1",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/8.5.08.transp_tf.minutes.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/8.5.08.transp_tf.minutes.pdf",
       "r2_url": null,
@@ -215735,8 +215919,8 @@
       "title": "8.5.08.Transp TF.MINUTES",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 38128,
+      "checksum_sha256": "26142c50ceebc9f1ce8822155917099de9084df769e9f4515a8b2ea780b81df4",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -215757,16 +215941,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 38128 bytes (37.23 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 3; extracted text: research/staging/queue/src-bdbbdd2bbf87c5b1.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-bdbbdd2bbf87c5b1.pdf",
       "discovered_at": "2026-08-04T14:15:57.9680312Z",
-      "updated_at": "2026-08-04T14:15:57.9680312Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-bdc0cb56143d69a0",
@@ -215863,19 +216050,19 @@
     },
     {
       "id": "src-bdc584620c51dfa1",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/4.1.08.intelligent_transportation_systems.mrcog.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/4.1.08.intelligent_transportation_systems.mrcog.pdf",
-      "r2_url": null,
-      "r2_key": null,
+      "r2_url": "https://files.abqinfo.com/transportation/operations-data/mrcog-albuquerque-its-task-force-briefing-2008.pdf",
+      "r2_key": "transportation/operations-data/mrcog-albuquerque-its-task-force-briefing-2008.pdf",
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "4.1.08.Intelligent Transportation Systems.MRCOG",
-      "date": null,
+      "title": "Albuquerque Metropolitan Area Intelligent Transportation Systems Briefing",
+      "date": "2008-04-01",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 370725,
+      "checksum_sha256": "4181835cde63ce3bf99bde7da430c88d5e952bf2ffbfc60f6973503314e32b32",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -215890,22 +216077,28 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/transportation/operations-data.md",
+      "description": "Preserves the regional ITS framework presented in 2008, covering traffic-management, transit-security, dispatch, freeway systems, traveler information, communications, incident response, project programming, agency coordination, and the planned Regional Transportation Management Center.",
+      "description_word_count": 30,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Cross-listed in the 2008 task-force record because it supplies historical planning context.",
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Interrupted upload reconciled through public byte-identical R2 validation.",
+        "Original authoritative City or regional-government PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/transportation/operations-data.md",
+      "implementation_locations": [
+        "content/transportation/operations-data.md",
+        "content/transportation/transportation-plans.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-bdc584620c51dfa1.pdf",
       "discovered_at": "2026-08-04T14:15:57.9327134Z",
-      "updated_at": "2026-08-04T14:15:57.9327134Z"
+      "updated_at": "2026-08-30T19:45:29.9007865Z"
     },
     {
       "id": "src-bdce230a1af9a137",
@@ -223248,7 +223441,7 @@
     },
     {
       "id": "src-c46a7a3ee7d140bf",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/4.PhysicalPlanning.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -223282,16 +223475,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0415788Z",
-      "updated_at": "2026-08-04T14:15:58.0415788Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-6479e8efc5bcc2b6"
     },
     {
       "id": "src-c4a6a2e9b5aed14c",
@@ -227030,7 +227225,7 @@
     },
     {
       "id": "src-c8655a3066b63b84",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/6.24.08.transp_tf.agenda.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/6.24.08.transp_tf.agenda.pdf",
       "r2_url": null,
@@ -227041,8 +227236,8 @@
       "title": "6.24.08.Transp TF.Agenda",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 176917,
+      "checksum_sha256": "a67095883be925b9c8ff800913fef888f959b27906d089342f883856587e5c0f",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -227063,16 +227258,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 176917 bytes (172.77 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 1; extracted text: research/staging/queue/src-c8655a3066b63b84.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-c8655a3066b63b84.pdf",
       "discovered_at": "2026-08-04T14:15:57.9612388Z",
-      "updated_at": "2026-08-04T14:15:57.9612388Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-c872587dd95dbef1",
@@ -227988,7 +228186,7 @@
     },
     {
       "id": "src-c90e43db7dec0e0d",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/introduction_and_history.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -228022,16 +228220,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0510899Z",
-      "updated_at": "2026-08-04T14:15:58.0510899Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-6479e8efc5bcc2b6"
     },
     {
       "id": "src-c930adbb53e2d77e",
@@ -228307,7 +228507,7 @@
     },
     {
       "id": "src-c990adbd4ef350b1",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/4.29.08.transp_tf.minutes.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/4.29.08.transp_tf.minutes.pdf",
       "r2_url": null,
@@ -228318,8 +228518,8 @@
       "title": "4.29.08.Transp TF.MINUTES",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 46976,
+      "checksum_sha256": "1257fe4c498be0e7030ea270954ab817e42f3e456b553a8dad125ba522432af5",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -228340,16 +228540,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 46976 bytes (45.88 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+        "PDF pages: 4; extracted text: research/staging/queue/src-c990adbd4ef350b1.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
+      "local_path": "research/staging/queue/src-c990adbd4ef350b1.pdf",
       "discovered_at": "2026-08-04T14:15:57.9387119Z",
-      "updated_at": "2026-08-04T14:15:57.9387119Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-c991890258b6f214",
@@ -235633,7 +235836,7 @@
     },
     {
       "id": "src-d0241152d91ff633",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/WilsonReportCover.PDF/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -235667,16 +235870,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "The separately published cover is preserved within the complete archived Wilson corridor study."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "The separately published cover is preserved within the complete archived Wilson corridor study.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0290653Z",
-      "updated_at": "2026-08-04T14:15:58.0290653Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-26532dcb33a27b7d"
     },
     {
       "id": "src-d039a67a62889b20",
@@ -239587,7 +239792,7 @@
     },
     {
       "id": "src-d3589b7211bf8d9f",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/regulatory_plan_frontage_types.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -239621,16 +239826,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0535934Z",
-      "updated_at": "2026-08-04T14:15:58.0535934Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-6479e8efc5bcc2b6"
     },
     {
       "id": "src-d361615fe43b91c4",
@@ -240450,19 +240657,19 @@
     },
     {
       "id": "src-d45aecabefa6c217",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.23.08.presentationb5.2009_cip_priorities.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.23.08.presentationb5.2009_cip_priorities.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/transportation-plans/cabq-2009-capital-plan-priorities-resolution-r-07-12.pdf",
+      "r2_key": "transportation/transportation-plans/cabq-2009-capital-plan-priorities-resolution-r-07-12.pdf",
+      "r2_etag": "65c532e5882baf3dd6a350bb96662376",
+      "r2_last_modified": "08/30/2026 13:35:17",
       "agency": "City of Albuquerque",
-      "title": "1.23.08.PresentationB5.2009 CIP Priorities",
-      "date": null,
+      "title": "2009 Capital Improvements Plan Priorities and Scoring Resolution",
+      "date": "2007",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 35751,
+      "checksum_sha256": "675f4d3ef4f14d4e15f21046516e544fc3212fefb7d14d42e02793beedfd574d",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force"
@@ -240477,22 +240684,25 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/transportation/transportation-plans.md",
+      "description": "Documents proposed criteria, weights, policy priorities, and funding allocations for Albuquerque's 2009 general-obligation bond program, connecting capital-project selection with infrastructure condition, adopted plans, public safety, growth, and neighborhood needs.",
+      "description_word_count": 29,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Original authoritative City or regional-government PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transportation-plans.md",
+      "implementation_locations": [
+        "content/transportation/transportation-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-d45aecabefa6c217.pdf",
       "discovered_at": "2026-08-04T14:15:57.9157129Z",
-      "updated_at": "2026-08-04T14:15:57.9157129Z"
+      "updated_at": "2026-08-30T19:41:55.3896074Z"
     },
     {
       "id": "src-d4671b0db660def8",
@@ -241787,7 +241997,7 @@
     },
     {
       "id": "src-d5cf230fbb2cc04d",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/7.8.08.transp_tf.agenda.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/7.8.08.transp_tf.agenda.pdf",
       "r2_url": null,
@@ -241820,16 +242030,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.9642397Z",
-      "updated_at": "2026-08-04T14:15:57.9642397Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-d5cfa0fec162e3c1",
@@ -242421,7 +242632,7 @@
     },
     {
       "id": "src-d6487d4e9ec551f9",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/2.5.08.transp_tf.minutes.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/2.5.08.transp_tf.minutes.pdf",
       "r2_url": null,
@@ -242454,16 +242665,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.9297102Z",
-      "updated_at": "2026-08-04T14:15:57.9297102Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-d64c25f610dc4db0",
@@ -244298,7 +244510,7 @@
     },
     {
       "id": "src-d7dbbd749a2535a6",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/8.19.08.transp_tf.minutes.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/8.19.08.transp_tf.minutes.pdf",
       "r2_url": null,
@@ -244331,16 +244543,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.9670318Z",
-      "updated_at": "2026-08-04T14:15:57.9670318Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-d7dce4b56bed7018",
@@ -253387,7 +253600,7 @@
     },
     {
       "id": "src-e0774b58dd40bd66",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/4c.Zoning.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -253421,16 +253634,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0445794Z",
-      "updated_at": "2026-08-04T14:15:58.0445794Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-6479e8efc5bcc2b6"
     },
     {
       "id": "src-e07f2e69a24aa103",
@@ -254599,7 +254814,7 @@
     },
     {
       "id": "src-e1db5e1e74d71b44",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/4b.LandUse.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -254633,16 +254848,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0425786Z",
-      "updated_at": "2026-08-04T14:15:58.0425786Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-6479e8efc5bcc2b6"
     },
     {
       "id": "src-e1e494ebeb8fb78a",
@@ -259493,7 +259710,7 @@
     },
     {
       "id": "src-e65a22ef5aedb939",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.23.08.transp_tf.minutes.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.23.08.transp_tf.minutes.pdf",
       "r2_url": null,
@@ -259526,16 +259743,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.9187128Z",
-      "updated_at": "2026-08-04T14:15:57.9187128Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-e65d0b612a672dbb",
@@ -267789,7 +268007,7 @@
     },
     {
       "id": "src-ed8aff10c8d03211",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/citizenscommitteeletterforWebSite.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -267823,16 +268041,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Folder-catalog link duplicates the authoritative project-page record; the substantive document is archived and validated."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: duplicate",
+      "exclusion_reason": "Folder-catalog link duplicates the authoritative project-page record; the substantive document is archived and validated.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0180607Z",
-      "updated_at": "2026-08-04T14:15:58.0180607Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-f93f8f11481c3c74"
     },
     {
       "id": "src-ed8d4bdbcdab756e",
@@ -267978,7 +268198,7 @@
     },
     {
       "id": "src-edc03fd7f850a051",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/5.27.08.transp_tf.agenda.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/5.27.08.transp_tf.agenda.pdf",
       "r2_url": null,
@@ -268011,16 +268231,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.9587196Z",
-      "updated_at": "2026-08-04T14:15:57.9587196Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-edd2380f46aacc71",
@@ -273484,7 +273705,7 @@
     },
     {
       "id": "src-f358d653713bec2d",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.23.08.transp_tf.agenda.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.23.08.transp_tf.agenda.pdf",
       "r2_url": null,
@@ -273517,16 +273738,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.9177122Z",
-      "updated_at": "2026-08-04T14:15:57.9177122Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-f35b64e5db6b3dd9",
@@ -273905,7 +274127,7 @@
     },
     {
       "id": "src-f395bf6738b82aa7",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/4c1.Zoningmap.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -273939,16 +274161,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0455784Z",
-      "updated_at": "2026-08-04T14:15:58.0455784Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-6479e8efc5bcc2b6"
     },
     {
       "id": "src-f3a50793266c24e8",
@@ -275254,7 +275478,7 @@
     },
     {
       "id": "src-f4d22da33bf52e2f",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/north-fourth-street-plan/4e1.UrbanDesignZones.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -275288,16 +275512,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: superseded",
+      "exclusion_reason": "Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0480899Z",
-      "updated_at": "2026-08-04T14:15:58.0480899Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-6479e8efc5bcc2b6"
     },
     {
       "id": "src-f4d3bc242320a9a3",
@@ -276350,7 +276576,7 @@
     },
     {
       "id": "src-f5f3be9f77a5ba36",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/5.27.08.transp_tf.minutes.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/5.27.08.transp_tf.minutes.pdf",
       "r2_url": null,
@@ -276383,16 +276609,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.9587196Z",
-      "updated_at": "2026-08-04T14:15:57.9587196Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-f62ebc68c725461d",
@@ -279112,7 +279339,7 @@
     },
     {
       "id": "src-f8bc729b113fa5ab",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/R-382.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -279146,16 +279373,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Folder-catalog link duplicates the authoritative project-page record; the substantive document is archived and validated."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: duplicate",
+      "exclusion_reason": "Folder-catalog link duplicates the authoritative project-page record; the substantive document is archived and validated.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0250656Z",
-      "updated_at": "2026-08-04T14:15:58.0250656Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z",
+      "superseded_by": "src-922fcd8ff3e7ab91"
     },
     {
       "id": "src-f8be7d570b5854a0",
@@ -279799,19 +280028,19 @@
     },
     {
       "id": "src-f93f8f11481c3c74",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/citizenscommitteeletterforWebSite.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies",
       "direct_file_url": "https://www.cabq.gov/council/documents/montano-corridor-studies/citizenscommitteeletterforWebSite.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-montano-citizens-advisory-committee-recommendations-2005.pdf",
+      "r2_key": "transportation/roadway-projects/studies/cabq-montano-citizens-advisory-committee-recommendations-2005.pdf",
+      "r2_etag": "0436f73d1a80531a4a86385da30a44fc",
+      "r2_last_modified": "08/30/2026 13:36:57",
       "agency": "City of Albuquerque",
-      "title": "MontaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o Citizens Committee Recommendation.",
-      "date": null,
+      "title": "Montaño Citizens Advisory Committee Recommendations",
+      "date": "2005-11-10",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 163906,
+      "checksum_sha256": "44561b138a4726fe6ae342bc5bfdabef1d0c97b4fe02729b239e9710a746c1c1",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2005/montano-corridor-studies"
@@ -279826,22 +280055,26 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/transportation/roadway-projects/studies.md",
+      "description": "Recommends general-purpose and HOV lanes, lower speeds, enforcement, redesigned intersections, roundabouts, protected walking and bicycling crossings, retained bike lanes, rapid bus service, commuter rail access, and intelligent transportation systems.",
+      "description_word_count": 29,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Original authoritative City or regional-government PDF preserved without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/roadway-projects/studies.md",
+      "implementation_locations": [
+        "content/transportation/roadway-projects/studies.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-f93f8f11481c3c74.pdf",
       "discovered_at": "2026-08-04T14:15:58.0180607Z",
-      "updated_at": "2026-08-04T14:15:58.0180607Z"
+      "updated_at": "2026-08-30T19:41:55.7153577Z"
     },
     {
       "id": "src-f951df12596d8a80",
@@ -284502,7 +284735,7 @@
     },
     {
       "id": "src-fd5fb9f2221b9787",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/3.4.08.transp_tf.agenda.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/3.4.08.transp_tf.agenda.pdf",
       "r2_url": null,
@@ -284535,16 +284768,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.93171Z",
-      "updated_at": "2026-08-04T14:15:57.93171Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-fd7fb9dd8737ab5d",
@@ -287089,7 +287323,7 @@
     },
     {
       "id": "src-ff66faaff7d876a0",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/2.20.08.transp_tf.minutes.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/21st-century-transportation-task-force/2.20.08.transp_tf.minutes.pdf",
       "r2_url": null,
@@ -287122,16 +287356,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal review decision: excluded",
+      "exclusion_reason": "Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.9247123Z",
-      "updated_at": "2026-08-04T14:15:57.9247123Z"
+      "updated_at": "2026-08-30T19:43:02.6745931Z"
     },
     {
       "id": "src-ff72267432817a38",
