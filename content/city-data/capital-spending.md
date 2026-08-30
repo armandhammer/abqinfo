@@ -44,6 +44,170 @@ Capital improvement spending and projects.
 
   [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/consolidated-plan.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/consolidated-plan.pdf)
 
+### 2007–2016 Decade Plan
+
+The City published this capital program as separate tables rather than one downloadable book. ABQInfo preserves the policy framework and the most useful citywide, departmental, district, enterprise-fund, and impact-fee components together. [Browse the official City collection](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan).
+
+- [2007 Capital Program Policies and Project-Selection Criteria (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-capital-program-policies-project-selection-criteria.pdf)
+
+  Documents the adopted funding allocations, project-scoring rules, growth and rehabilitation categories, impact-fee policies, and operating-budget safeguards used to assemble Albuquerque's 2007 General Obligation Bond Program and decade plan.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/policies-criteria.pdf)
+
+- [2007–2016 General Obligation Bond Decade Plan Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-go-bond-decade-plan-summary.pdf)
+
+  Summarizes more than $1.04 billion in planned 2007–2016 bond funding across streets, drainage, parks, transit, housing, public safety, community facilities, neighborhood projects, and public art.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/go-bond-summary.pdf)
+
+- [2007 Council-Neighborhood Set-Aside Projects (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-council-neighborhood-set-aside-projects.pdf)
+
+  Lists each Council district's $1 million neighborhood allocation for streets, traffic calming, sidewalks, landscaping, parks, community and senior centers, libraries, police facilities, and other district-specific improvements.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/council-neighborhood.pdf)
+
+- [2007–2016 Enterprise Fund Capital Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-enterprise-fund-capital-summary.pdf)
+
+  Preserves ten-year capital schedules for Albuquerque aviation and solid-waste enterprise funds, including Sunport and Double Eagle II facilities, runways, cargo, terminal concepts, landfill cells, equipment, remediation, and waste systems.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/enterprise-funds.pdf)
+
+- [2007–2016 Streets Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-streets-capital-program-summary.pdf)
+
+  Lists planned funding for major streets, intersections, bridges, signals, sidewalks, bikeways, traffic management, river-crossing studies, rehabilitation, landscaping, and named Albuquerque roadway projects across five bond cycles.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/streets-summary.pdf) · [Transportation Plans placement](/transportation/transportation-plans/#historical-capital-programming)
+
+- [2007–2016 Transit Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-transit-capital-program-summary.pdf)
+
+  Schedules $43.93 million for transit vehicles, West Side park-and-ride and operating facilities, shelters, facility rehabilitation, maintenance and security equipment, technology upgrades, and Central-and-Unser improvements.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/transit-summary.pdf) · [ABQ RIDE placement](/transportation/transit/abq-ride/#facilities-and-fleet-planning-history)
+
+- [2007–2016 Storm Drainage Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-storm-drainage-capital-program-summary.pdf)
+
+  Schedules storm-drain, arroyo, channel, pump-station, water-quality, rehabilitation, right-of-way, and engineering investments across Albuquerque, identifying named projects and funding by bond cycle through 2016.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/storm-drainage-summary.pdf) · [Stormwater & Drainage placement](/public-works/stormwater-drainage/#historical-city-capital-plans)
+
+- [2007–2016 Parks and Recreation Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-parks-recreation-capital-program-summary.pdf)
+
+  Schedules investments in pools, parks, recreation facilities, medians, open-space acquisition and restoration, trails, Balloon Fiesta Park, visitor facilities, sports parks, equipment, and water conservation.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/parks-recreation-summary.pdf) · [Parks & Recreation placement](/public-works/parks-recreation/#historical-capital-programming)
+
+- [2007–2016 Affordable Housing Capital Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-affordable-housing-capital-summary.pdf)
+
+  Records Albuquerque's planned commitment of $10 million per bond cycle, totaling $50 million, for affordable-housing land banking throughout the 2007–2016 decade plan.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/affordable-housing-summary.pdf)
+
+- [Metropolitan Redevelopment Fund Capital Plan, 2006–2010 (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-metropolitan-redevelopment-fund-capital-plan-2006-2010.pdf)
+
+  Allocates projected redevelopment spending among East Downtown, Near Heights, Highland Central, West Central, Old Albuquerque High, Sunport West, Fourth Street, new projects, property management, and general-fund activities.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/metropolitan-redev-fund.pdf) · [Metropolitan Redevelopment Plans placement](/development-land-use/redevelopment-plans/#historical-capital-programming)
+
+- [2007–2016 Community Facilities Capital Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-community-facilities-capital-summary.pdf)
+
+  Summarizes $295.24 million in decade-plan allocations for housing, cultural services, municipal facilities and energy, environmental health, family and community services, finance, planning, and senior affairs.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/community-facilities-summary.pdf)
+
+#### Department Capital Details
+
+- [2007–2016 Cultural Services Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-cultural-services-capital-program-summary.pdf)
+
+  Schedules capital investments for the BioPark, libraries, Albuquerque Museum, Balloon Museum, Explora, South Broadway Cultural Center, KiMo Theatre, public art, historic buildings, and other cultural facilities.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/cultural-services-summary.pdf)
+
+- [2007–2016 Municipal Facilities, Energy, Security, and Parking Capital Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-municipal-facilities-energy-security-parking-capital-summary.pdf)
+
+  Schedules City building rehabilitation, roofs, security, parking-facility upgrades, replacement vehicles, and lighting, HVAC, renewable-energy, and conservation improvements through five bond cycles.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/facilities-energy-summary.pdf) · [City Facilities placement](/public-works/city-facilities/#historical-capital-programming)
+
+- [2007–2016 Environmental Health Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-environmental-health-capital-program-summary.pdf)
+
+  Schedules landfill remediation, animal-care facilities, bio-disease laboratory work, sustainability programs, equipment, data systems, and air-quality facility improvements through the 2007–2016 capital program.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/environmental-health-summary.pdf)
+
+- [2007–2016 Family and Community Services Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-family-community-services-capital-program-summary.pdf)
+
+  Schedules community-center construction and renovation, multigenerational centers, gyms, teen and cultural facilities, an incubator, security improvements, vehicles, and other Family and Community Services capital projects.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/family-community-summary.pdf)
+
+- [2007–2016 Finance and Administrative Services Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-finance-administrative-services-capital-program-summary.pdf)
+
+  Schedules enterprise-resource-planning systems, wireless-network infrastructure, computer and communications equipment, and the City's three-percent energy-conservation set-aside across Albuquerque's 2007–2016 capital program.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/finance-administrative-summary.pdf)
+
+- [2007–2016 Fire Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-fire-capital-program-summary.pdf)
+
+  Schedules $27.61 million for fire-station rehabilitation, Fire Station 2 work, and recurring apparatus replacement across Albuquerque's five capital-program bond cycles.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/fire-summary.pdf)
+
+- [2007–2016 Park Design and Construction Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-park-design-construction-capital-program-summary.pdf)
+
+  Schedules community and neighborhood park development, named park projects, equipment, district improvements, and major investments at Ventana Ranch Regional Park and North Domingo Baca Park.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/park-design-summary.pdf) · [Parks & Recreation placement](/public-works/parks-recreation/#historical-capital-programming)
+
+- [2007–2016 Planning Department Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-planning-department-capital-program-summary.pdf)
+
+  Schedules the Bicycle Park, metropolitan redevelopment areas, Fourth Street, geographic information systems, KIVA, sector-plan improvements, village-center work, and other Planning Department capital investments.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/planning-department-summary.pdf) · [Metropolitan Redevelopment Plans placement](/development-land-use/redevelopment-plans/#historical-capital-programming)
+
+- [2007–2016 Police Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-police-capital-program-summary.pdf)
+
+  Schedules $42.85 million for police radio infrastructure, marked vehicles, the Sixth Area Command headquarters, and renovation of Albuquerque's former main police building.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/police-summary.pdf)
+
+- [2007–2016 Senior Affairs Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-senior-affairs-capital-program-summary.pdf)
+
+  Schedules senior-center rehabilitation and a Central Kitchen and Social Services Facility, preserving the planned $15.16 million Senior Affairs capital program across five bond cycles.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/senior-affairs-summary.pdf)
+
+#### Impact-Fee Component Plans
+
+- [2007 Component Capital Improvement Plan Overview (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-component-capital-improvement-plan-overview.pdf)
+
+  Explains Albuquerque's impact-fee-funded capital program, service-area structure, fee phase-in, development exemptions, and eligible roadway, drainage, park, trail, open-space, fire, and police infrastructure.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/ccip-introduction.pdf)
+
+- [2005–2013 Drainage Component Capital Implementation Plan (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2005-2013-drainage-component-capital-implementation-plan.pdf)
+
+  Programs impact-fee-supported drainage rights-of-way, trunk lines, channels, diversions, ponds, and basins across Far Northeast, Northwest, Southwest, and Tijeras service areas.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/ccip-drainage.pdf) · [Stormwater & Drainage placement](/public-works/stormwater-drainage/#historical-city-capital-plans)
+
+- [2005–2013 Public Safety Component Capital Implementation Plan (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2005-2013-public-safety-component-capital-implementation-plan.pdf)
+
+  Programs impact-fee-supported fire stations and police facilities, vehicles, forensic equipment, radios, mobile command resources, and other public-safety capacity serving Albuquerque growth areas.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/ccip-public-safety.pdf)
+
+- [2005–2013 Open Space, Trails, and Recreation Component Capital Plan (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2005-2013-open-space-trails-recreation-component-capital-plan.pdf)
+
+  Programs impact-fee-supported open-space land, visitor facilities, access control, trails, parking, restoration, and protection projects across the Bosque, foothills, arroyos, volcanic landscape, and West Mesa.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/ccip-parks.pdf) · [Parks & Recreation placement](/public-works/parks-recreation/#historical-capital-programming)
+
+- [2005–2013 Park Development Component Capital Plan (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2005-2013-park-development-component-capital-plan.pdf)
+
+  Programs impact-fee-supported park construction and land acquisition across Academy, Southeast Foothills, North Albuquerque, North Valley, Southwest Mesa, and Northwest Volcano service areas.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/ccip-park.pdf) · [Parks & Recreation placement](/public-works/parks-recreation/#historical-capital-programming)
+
 - [2011-2020 General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2011-2020-go-bond-summary.pdf)
 
   Summarizes planned bond allocations for 2011 through 2019 across streets, drainage, parks, public safety, transit, affordable housing, cultural services, planning, and community facilities.

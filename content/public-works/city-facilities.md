@@ -4,6 +4,12 @@ title: "City Facilities"
 
 Planning, design standards, and selected major projects for City-owned buildings and public-service campuses. This page emphasizes facilities with substantial public investment, unusual community importance, or records useful for understanding how Albuquerque’s civic infrastructure is changing.
 
+## Historical Capital Programming
+
+- [2007–2016 Municipal Facilities, Energy, Security, and Parking Capital Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-municipal-facilities-energy-security-parking-capital-summary.pdf)
+
+  Schedules City building rehabilitation, roofs, security, parking-facility upgrades, replacement vehicles, and lighting, HVAC, renewable-energy, and conservation improvements through five bond cycles. [Full 2007–2016 capital-program record](/city-data/capital-spending/#20072016-decade-plan)
+
 ## Design Standards
 
 - [City of Albuquerque CIP Building Design Standards and Guidelines, Revision 17 (2025 archived PDF)](https://files.abqinfo.com/public-works/city-facilities/cabq-cip-building-design-standards-rev-17-2025.pdf)

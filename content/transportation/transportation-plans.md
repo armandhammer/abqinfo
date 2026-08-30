@@ -216,6 +216,12 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/o_07_71.pdf)
 
+### Historical Capital Programming
+
+- [2007–2016 Streets Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-streets-capital-program-summary.pdf)
+
+  Lists planned funding for major streets, intersections, bridges, signals, sidewalks, bikeways, traffic management, river-crossing studies, rehabilitation, landscaping, and named Albuquerque roadway projects across five bond cycles. [Full 2007–2016 capital-program record](/city-data/capital-spending/#20072016-decade-plan)
+
 ### Current and Other Citywide Records
 
 - [Albuquerque Complete Streets Ordinance Update (2019 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-complete-streets-ordinance-o-19-64-2019.pdf)
