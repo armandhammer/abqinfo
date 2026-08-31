@@ -40,6 +40,14 @@ ABQ Ride bus service information and data.
 
   [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/1abq_ride_transit-scopes.pdf) · [Official 2009 Bond Document Collection](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents)
 
+## Workforce and Operations
+
+- [NMDOT Transit Compensation Study (2026 Archived PDF)](https://files.abqinfo.com/transportation/transit/abq-ride/nmdot-transit-compensation-study-2026.pdf)
+
+  Compares NMDOT transit salaries with peer agencies and positions, preserving ABQ RIDE and Rio Metro pay-range benchmarks used to evaluate market competitiveness, recruitment, retention, and potential compensation adjustments.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/501791ba-8bbc-470f-af3d-a1db3b03e50c/2026%20Transit%20Compensation%20Study.pdf) · [Current NMDOT Transit Bureau](https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/)
+
 ## ABQ RIDE Forward Network Plan
 
 - [Official ABQ RIDE Forward Project Page](https://www.cabq.gov/transit/transit-programs-projects/abq-ride-forward)

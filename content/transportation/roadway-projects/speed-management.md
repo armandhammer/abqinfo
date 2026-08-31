@@ -94,6 +94,12 @@ Traffic calming and speed management initiatives.
 
   [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/ntmp_study_group_draft_9-7-10.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/ntmp_study_group_draft_9-7-10.pdf)
 
+- [Neighborhood Traffic Management Program Public Meeting Comments (2010 Archived Word Document)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-ntmp-public-meeting-comments-2010.doc)
+
+  Preserves questions, concerns, and City responses from four quadrant meetings about speed humps, emergency access, enforcement, neighborhood voting, funding, eligibility, public notice, and development of Albuquerque traffic-calming policy.
+
+  [Official City Word Document](https://www.cabq.gov/council/documents/neighborhood-traffic-management-plan/2014.07.17%20-%20NTMP%20Public%20Concerns-Comments.doc) · [Official City Council Project Archive](https://www.cabq.gov/council/projects/completed-projects/2015/neighborhood-traffic-management-program-policy-manual)
+
 ### Historical Neighborhood Speed Studies
 
 These City reports preserve the street-level speed, volume, crash, and roadway evidence behind Albuquerque traffic-calming decisions. The archive spans 2015–2021 and includes both streets that qualified for NTMP treatment and streets that did not, preserving the basis for each decision.

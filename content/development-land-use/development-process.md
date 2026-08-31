@@ -20,6 +20,14 @@ Cross-cutting development process documents, manuals, and reference materials.
 
   Maintains proposed and approved changes to the DPM. Check this live register with the archived signed manual and amendments below because later committee actions may change individual chapters or technical requirements.
 
+### Historic Manual Chapters
+
+- [Development Process Manual Chapter 28: Improvements Within the Public Right of Way (2015 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-chapter-28-right-of-way-2015.pdf)
+
+  Preserves the adopted predecessor standards for landscaping, irrigation, street trees, sight-distance triangles, medians, buffers, and maintenance within Albuquerque public rights-of-way before the consolidated 2020 Development Process Manual.
+
+  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/DPM-Chapter28-Adopted.pdf) · [Official City DPM Document Directory](https://documents.cabq.gov/planning/development-process-manual/)
+
 ### Archived Approved Amendments
 
 - [Article 4-3 ABCWUA Changes (May 4, 2026 archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-approved-amendment-article-4-3-abcwua-2026-05-04.pdf)
