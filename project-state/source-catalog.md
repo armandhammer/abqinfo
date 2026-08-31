@@ -1,6 +1,6 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-08-31T01:52:07.5092900Z
+Generated: 2026-08-31T03:13:50.0343027Z
 
 This catalog is derived from master-inventory.json, the authoritative project queue. It records 6367 candidates and 693 R2 objects totaling 7052619427 bytes.
 
@@ -16,8 +16,8 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 2 |
-| validated | 901 |
-| excluded | 815 |
+| validated | 899 |
+| excluded | 817 |
 | duplicate | 944 |
 | superseded | 81 |
 | blocked | 0 |
@@ -673,8 +673,8 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Bernalillo County Comprehensive Plan Development Areas | Bernalillo County | content/maps/maps.md | [source](https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fpdsgismaps.bernco.gov%2Fserver%2Frest%2Fservices%2FBERNCO%2FComprehensivePlanDevelopmentAreas%2FMapServer&source=sd) |
 | Bernalillo County Multi-Use Trails | Bernalillo County | content/transportation/bicycling/bike-maps.md | [source](https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/Multi_Use_Trails/MapServer) |
 | Bernalillo County Multi-Use Trails | Bernalillo County | content/transportation/bicycling/bike-maps.md | [source](https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fpdsgismaps.bernco.gov%2Fserver%2Frest%2Fservices%2FBERNCO%2FMulti_Use_Trails%2FMapServer&source=sd) |
-| Bernalillo County Open Space Holdings | Bernalillo County | content/public-works/parks-recreation.md | [source](https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/Open_Space/MapServer) |
 | Bernalillo County Open Space Holdings | Bernalillo County | content/public-works/parks-recreation.md | [source](https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fpdsgismaps.bernco.gov%2Fserver%2Frest%2Fservices%2FBERNCO%2FOpen_Space%2FMapServer&source=sd) |
+| Bernalillo County Open Space Holdings | Bernalillo County | content/public-works/parks-recreation.md | [source](https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/Open_Space/MapServer) |
 | Bernalillo County Project Page | Bernalillo County | content/transportation/bicycling/projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2021/04/16/alameda-drain-trail-phase-6/) |
 | Blake Road Improvements | Bernalillo County | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2021/04/16/blake-rd-improvements/) |
 | Bridge Boulevard Phase 3 | Bernalillo County | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2026/05/18/bridge-boulevard-phase-3/) |
@@ -688,16 +688,16 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Goff Boulevard Improvements | Bernalillo County | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2021/04/15/goff-boulevard-improvements) |
 | Mountain View Environmental Inventory and Gap Mapping Analysis | Bernalillo County | content/city-data/climate-environment.md | [source](https://www.bernco.gov/public-works/blog/2026/03/12/mountain-view-environmental-inventory-and-gap-mapping-analysis) |
 | Official County page | Bernalillo County | content/transportation/transportation-plans.md | [source](https://www.bernco.gov/public-works/transportation-planning/transportation-project-planning/) |
-| Official County PDF | Bernalillo County | content/transportation/roadway-projects/studies.md | [source](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/AppendixC.pdf) |
-| Official County PDF | Bernalillo County | content/transportation/roadway-projects/studies.md | [source](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/AppendixD.pdf) |
-| Official County PDF | Bernalillo County | content/transportation/transportation-plans.md | [source](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/07/South-Valley-Multimodal-Study-Dec-2017.pdf) |
 | Official County PDF | Bernalillo County | content/transportation/roadway-projects/studies.md | [source](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/appendixA.pdf) |
+| Official County PDF | Bernalillo County | content/transportation/transportation-plans.md | [source](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/07/South-Valley-Multimodal-Study-Dec-2017.pdf) |
+| Official County PDF | Bernalillo County | content/transportation/roadway-projects/studies.md | [source](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/AppendixF.pdf) |
+| Official County PDF | Bernalillo County | content/transportation/roadway-projects/studies.md | [source](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/AppendixC.pdf) |
 | Official County PDF | Bernalillo County | content/transportation/roadway-projects/studies.md | [source](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/Charette.pdf) |
+| Official County PDF | Bernalillo County | content/transportation/roadway-projects/studies.md | [source](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/AppendixD.pdf) |
 | Official County PDF | Bernalillo County | content/transportation/transportation-plans.md | [source](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/07/Sunport-Commerce-Center-Transportation-Plan-Final.pdf) |
 | Official County PDF | Bernalillo County | content/transportation/roadway-projects/studies.md | [source](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/AppendixB.pdf) |
 | Official County PDF | Bernalillo County | content/transportation/roadway-projects/studies.md | [source](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/AppendixE.pdf) |
 | Official County PDF | Bernalillo County | content/transportation/roadway-projects/studies.md | [source](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/isleta-bridge-mra-plan.pdf) |
-| Official County PDF | Bernalillo County | content/transportation/roadway-projects/studies.md | [source](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/AppendixF.pdf) |
 | Official Source: Bernalillo County Public Works Technical Standards | Bernalillo County | content/transportation/design-references.md | [source](https://www.bernco.gov/public-works/development-review/tech-standards) |
 | Official source: Bridge Boulevard Corridor Redevelopment Plan | Bernalillo County | content/development-land-use/projects.md | [source](https://www.bernco.gov/public-works/blog/2021/04/16/bridge-boulevard-corridor-redevelopment-plan) |
 | San Ygnacio Road and Tapia Boulevard Phase IA Improvements | Bernalillo County | content/transportation/roadway-projects/_index.md | [source](https://www.bernco.gov/public-works/blog/2025/04/24/san-ygnacio-rd-and-tapia-blvd-phase-1a-improvements) |
@@ -731,7 +731,6 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Bike Laws Bike Laws Bike Laws | City of Albuquerque | content/transportation/bicycling/_index.md | [source](https://www.cabq.gov/bikes/bike-laws) |
 | Bike Maps & Trail Guides Bike Maps & Trail Guides Bike Maps & Trail Guides | City of Albuquerque | content/transportation/bicycling/bike-maps.md | [source](https://www.cabq.gov/bikes/bike-maps) |
 | Bikeways & Trails 2024 Conditions | City of Albuquerque | content/transportation/bicycling/bike-plans.md | [source](https://storymaps.arcgis.com/stories/4cd6fe3cb2d04a5c895b3791bc35ccd3) |
-| Bikeways and Trails Public Map Viewer | City of Albuquerque | content/maps/maps.md | [source](https://cabq.maps.arcgis.com/apps/instant/sidebar/index.html?appid=bfda88ddb89a40c08440b4abd4c182ba) |
 | Building permits open data | City of Albuquerque | content/development-land-use/projects.md | [source](https://data.cabq.gov/business/buildingpermits/) |
 | Central Avenue Complete Street Plan: 1st Street to Girard | City of Albuquerque | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/neighborhood-projects/central-avenue-complete-street-plan-1st-street-to-girard) |
 | City Automated Speed Enforcement Program | City of Albuquerque | content/transportation/roadway-projects/speed-management.md | [source](https://www.cabq.gov/automated-speed-enforcement) |
@@ -741,14 +740,14 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | City of Albuquerque School Crossings Dashboard | City of Albuquerque | content/maps/dashboards.md | [source](https://www.arcgis.com/apps/dashboards/4a52905fd707412085ce9811ad48dd25) |
 | City Open Space planning projects and resource-management plans | City of Albuquerque | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/parksandrecreation/open-space/about-open-space/open-space-resource-management-plans) |
 | City Street Speed-Limit Data | City of Albuquerque | content/transportation/operations-data.md | [source](https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdmdmaps.cabq.gov%2Fserverext%2Frest%2Fservices%2Ftraffic%2FCABQ_Roads_Data%2FMapServer%2F3&source=sd) |
-| City Traffic Cameras, Signals, and Roadway Data Map | City of Albuquerque | content/transportation/operations-data.md | [source](https://dmdmaps.cabq.gov/serverext/rest/services/traffic/CABQ_Roads_Data/MapServer) |
 | City Traffic Cameras, Signals, and Roadway Data Map | City of Albuquerque | content/transportation/operations-data.md | [source](https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdmdmaps.cabq.gov%2Fserverext%2Frest%2Fservices%2Ftraffic%2FCABQ_Roads_Data%2FMapServer&source=sd) |
+| City Traffic Cameras, Signals, and Roadway Data Map | City of Albuquerque | content/transportation/operations-data.md | [source](https://dmdmaps.cabq.gov/serverext/rest/services/traffic/CABQ_Roads_Data/MapServer) |
 | City transportation plans and studies | City of Albuquerque | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections) |
 | City zoning and land-use maps | City of Albuquerque | content/development-land-use/zoning-ido.md | [source](https://www.cabq.gov/planning/agis-maps/maps-for-the-public) |
 | Complete Streets | City of Albuquerque | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/council/projects/current-projects/complete-streets) |
 | Construction moratoriums | City of Albuquerque | content/maps/dashboards.md | [source](https://www.cabq.gov/municipaldevelopment/maps/construction-moratoriums) |
-| Current Bikeways and Trails Data | City of Albuquerque | content/maps/maps.md | [source](https://dmdmaps.cabq.gov/serverext/rest/services/Bikeways/Bikeways_Trails_Public/MapServer/23) |
 | Current Bikeways and Trails Data | City of Albuquerque | content/maps/maps.md | [source](https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdmdmaps.cabq.gov%2Fserverext%2Frest%2Fservices%2FBikeways%2FBikeways_Trails_Public%2FMapServer&source=sd) |
+| Current Bikeways and Trails Data | City of Albuquerque | content/maps/maps.md | [source](https://dmdmaps.cabq.gov/serverext/rest/services/Bikeways/Bikeways_Trails_Public/MapServer/23) |
 | Development Process Manual Amendments | City of Albuquerque | content/development-land-use/development-process.md | [source](https://www.cabq.gov/planning/boards-commissions/development-process-manual-executive-committee/amendments-to-the-dpm) |
 | Development Review Services | City of Albuquerque | content/development-land-use/development-process.md | [source](https://www.cabq.gov/planning/development-review-services) |
 | Development Review Services | City of Albuquerque | content/development-land-use/development-process.md | [source](https://www.cabq.gov/planning/development-review-services/) |
@@ -779,12 +778,12 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Official City 2021 release | City of Albuquerque | content/transportation/bicycling/safety-crash-data.md | [source](https://www.cabq.gov/municipaldevelopment/news/mayor-tim-keller-city-leaders-unveil-vision-zero-abq-2040-action-plan-at-bike-to-wherever-event) |
 | Official City document page | City of Albuquerque | content/public-works/city-facilities.md | [source](https://www.cabq.gov/municipaldevelopment/documents/cip-building-design-standards-oct-2025-rev-17.pdf/view) |
 | Official City GAATC Project Update Record | City of Albuquerque | content/transportation/bicycling/projects/_index.md | [source](https://onbase.cabq.gov/publicaccess/api/Document/12239706/) |
-| Official City PDF | City of Albuquerque | content/transportation/transit/sun-van.md | [source](https://www.cabq.gov/transit/documents/sun_van_performance_metrics_draft_05_10_11.pdf) |
-| Official City PDF | City of Albuquerque | content/public-works/parks-recreation.md | [source](https://onbase.cabq.gov/PublicAccess/api/Document/12246817/) |
-| Official City PDF | City of Albuquerque | content/public-works/parks-recreation.md | [source](https://onbase.cabq.gov/PublicAccess/api/Document/12246762/) |
-| Official City PDF | City of Albuquerque | content/public-works/parks-recreation.md | [source](https://onbase.cabq.gov/PublicAccess/api/Document/12246766/) |
 | Official City PDF | City of Albuquerque | content/public-works/parks-recreation.md | [source](https://onbase.cabq.gov/PublicAccess/api/Document/12246771/) |
 | Official City PDF | City of Albuquerque | content/transportation/transit/sun-van.md | [source](https://www.cabq.gov/transit/services/paratransit-service/paratransit-service/resolveuid/585c81b1004f48dfa5ea3ed8583f86a0) |
+| Official City PDF | City of Albuquerque | content/public-works/parks-recreation.md | [source](https://onbase.cabq.gov/PublicAccess/api/Document/12246762/) |
+| Official City PDF | City of Albuquerque | content/public-works/parks-recreation.md | [source](https://onbase.cabq.gov/PublicAccess/api/Document/12246817/) |
+| Official City PDF | City of Albuquerque | content/public-works/parks-recreation.md | [source](https://onbase.cabq.gov/PublicAccess/api/Document/12246766/) |
+| Official City PDF | City of Albuquerque | content/transportation/transit/sun-van.md | [source](https://www.cabq.gov/transit/documents/sun_van_performance_metrics_draft_05_10_11.pdf) |
 | Official City PowerPoint | City of Albuquerque | content/transportation/transit/sun-van.md | [source](https://www.cabq.gov/transit/documents/abq_paratransit_outbrief-110111.pptx) |
 | Official City project page and marked draft | City of Albuquerque | content/transportation/transit/abq-ride.md | [source](https://www.cabq.gov/economicdevelopment/the-scale-of-the-prize-community-benefits-of-transit-oriented-development) |
 | Official source: 2040 Long-Range Roadway Map | City of Albuquerque | content/maps/maps.md | [source](https://www.cabq.gov/planning/development-review-services/transportation-development-section) |
@@ -1853,7 +1852,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-f5c6598b3486e1b9 | duplicate | Albuquerque Bird Watching Guide and Map | Content-link alias for canonical archive candidate src-95cb84bc3ca2e1ea. |
 | src-f5e1ec943e4fe4c6 | duplicate | Station Types | Duplicate R2 representation of canonical candidate src-48b3697bb9474b06. |
 | src-f6cf256b0499a688 | duplicate | City of Albuquerque Construction Site Manual | Content-link alias for canonical archive candidate src-93e0f5fd370f5709. |
-| src-f6d67da41bbf96a6 | duplicate | APS Vision Zero Mapping Session Report | The standalone APS Mapping Session Report is reproduced in full as the appendix to the archived 64-page APS Vision Zero for Youth Action Plan; retained as an official direct link without storing a duplicate copy. |
+| src-f6d67da41bbf96a6 | duplicate | APS Vision Zero Mapping Session Report | Broken standalone duplicate; retained content is preserved within the archived APS Vision Zero for Youth Action Plan. |
 | src-f70f9e2027603c7b | duplicate | Freedom Way Speed Study | Byte-identical duplicate of src-70d6d253b034c1aa; alternate City source retained in provenance, but only one archive object and page entry are required. |
 | src-f72c1bb0c3c9d570 | duplicate | Bridge Boulevard Phase 3 | Duplicate discovery record for implemented candidate src-16f8ae9c0bf6e508. |
 | src-f7bb443a53552549 | duplicate | Rail Runner Google Map | Normalized source URL is identical to canonical inventory record src-8acc0fbad064444a; www, trailing-slash, or empty bidId variations do not identify different content. |
@@ -2154,6 +2153,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-6d221846ca5245f9 | excluded | 2013 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-6d32facc0bc837f5 | excluded | 8 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-6da69c2e23cff2fa | excluded | 7 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
+| src-6fbc2807b4cbf713 | excluded | Bikeways and Trails Public Map Viewer | Unusable public link; removed in favor of the working Current Bikeways and Trails Data Map Viewer already implemented on both affected pages. |
 | src-6ffda986a5dde105 | excluded | Economic Development | User-approved scope cleanup: generic regional economic-development resources do not justify a dedicated ABQInfo category. |
 | src-704ec76d7db84d40 | excluded | Office of Inspector General | Navigation, administrative, employment, promotional, temporary-event, or generic agency material without lasting Albuquerque public-information value. |
 | src-70f1f038a7d86859 | excluded | 87131 | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
@@ -2216,6 +2216,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-87ff6c400c4a80ac | excluded | Read More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-8875605274496dba | excluded | Emergency shelters, day shelters, and street outreach | User removed the Homeless Services page from the site on 2026-08-04; preserve that editorial decision and do not reintroduce this link without review. |
 | src-8918b219058e2f67 | excluded | 2.5.08.Transp TF.Agenda | Meeting agenda or minutes are lower-information administrative records; the final report and substantive technical evidence are retained. |
+| src-89bcf717950c6b15 | excluded | 2015–2019 Albuquerque Metropolitan Online Crash Report | Retired ArcGIS application; the visible user interface states “Replacement not available,” so HTTP 200 and public item metadata do not constitute a working map. |
 | src-8b0fcc9a09437219 | excluded | Read More | Navigation, pagination, contact, or generic interface text captured as a candidate; it is not a substantive plan, study, map, dataset, project record, or source page. |
 | src-8c065c693d3458e3 | excluded | Bernalillo County Administrative Resolution 26-96 | Historical infrastructure-design review fee authority adds little independent user value beyond the current consolidated Public Works fee schedule retained on ABQInfo. |
 | src-8c36008d05f4709d | excluded | Vision Zero for Youth Initiative | A 2023 conference-style StoryMap substantially overlaps the maintained APS Vision Zero for Youth hub and is not separately curated. |

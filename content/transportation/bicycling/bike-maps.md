@@ -22,10 +22,6 @@ Multi-use trails and paths in Albuquerque.
 
   [Official City PDF](https://www.cabq.gov/50-mile-activity-loop/documents/50-mile-activity-loop-map-may-2020.pdf) · [Official City project page](https://www.cabq.gov/50-mile-activity-loop)
 
-- [Bikeways and Trails Public Map Viewer](https://cabq.maps.arcgis.com/apps/instant/sidebar/index.html?appid=bfda88ddb89a40c08440b4abd4c182ba)
-
-  Maps Albuquerque's currently maintained bikeways and trails by facility type, providing a searchable public view of bike lanes, separated facilities, bicycle boulevards, sidepaths, and multi-use trails.
-
 - [Proposed Bike Network](https://cabq.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=036949b4007c4def8f3675afcda46069)
 
   Maps Albuquerque's existing and proposed bicycle infrastructure together, allowing users to explore planned connections and compare the future network with facilities already in place.

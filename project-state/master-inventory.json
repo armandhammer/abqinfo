@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-31T02:08:28.9910104Z",
+  "generated_at": "2026-08-31T03:12:55.6609930Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -26,8 +26,8 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 2,
-    "validated": 900,
-    "excluded": 816,
+    "validated": 899,
+    "excluded": 817,
     "duplicate": 944,
     "superseded": 81,
     "blocked": 0,
@@ -132187,7 +132187,7 @@
     },
     {
       "id": "src-6fbc2807b4cbf713",
-      "status": "validated",
+      "status": "excluded",
       "source_url": "https://cabq.maps.arcgis.com/apps/instant/sidebar/index.html?appid=bfda88ddb89a40c08440b4abd4c182ba",
       "direct_file_url": null,
       "r2_url": null,
@@ -132220,22 +132220,20 @@
       "description": "Maps Albuquerque's currently maintained bikeways and trails by facility type, providing a searchable public view of bike lanes, separated facilities, bicycle boulevards, sidepaths, and multi-use trails.",
       "description_word_count": 26,
       "processing_notes": [
+        "ArcGIS item ID bfda88ddb89a40c08440b4abd4c182ba; owner jfoty_CABQ; organization CWv1abTnC3urn4bV.",
+        "Created 2024-02-26T19:16:58.0000000Z; modified 2025-06-18T16:48:01.0000000Z.",
         "Discovered by deterministic crawl of https://dmd-public-cabq.hub.arcgis.com/.",
         "Exact metadata and relevance remain pending source review.",
-        "ArcGIS item ID bfda88ddb89a40c08440b4abd4c182ba; owner jfoty_CABQ; organization CWv1abTnC3urn4bV.",
-        "Created 2024-02-26T19:16:58.0000000Z; modified 2025-06-18T16:48:01.0000000Z."
+        "HTTP 200 and public ArcGIS metadata were a false positive; rendered public-session behavior controls usability validation."
       ],
-      "implementation_location": "content/maps/maps.md",
-      "implementation_locations": [
-        "content/maps/maps.md",
-        "content/transportation/bicycling/bike-maps.md"
-      ],
+      "implementation_location": null,
+      "implementation_locations": [],
       "cross_listing_approved": true,
-      "validation_status": "passed: official CABQ ArcGIS metadata and live endpoint verified 2026-08-10",
-      "exclusion_reason": null,
+      "validation_status": "failed rendered-browser validation: application redirects public visitors to City of Albuquerque ArcGIS sign-in",
+      "exclusion_reason": "Unusable public link; removed in favor of the working Current Bikeways and Trails Data Map Viewer already implemented on both affected pages.",
       "local_path": null,
       "discovered_at": "2026-08-10T21:28:51.5290656Z",
-      "updated_at": "2026-08-10T21:28:51.5290656Z"
+      "updated_at": "2026-08-31T03:12:55.5180435Z"
     },
     {
       "id": "src-6fc42dafe71b89b1",
@@ -277648,16 +277646,17 @@
       "description": "Documents student travel patterns and safety concerns gathered through mapping sessions. The complete report is also preserved within the archived action plan as its appendix.",
       "description_word_count": 25,
       "processing_notes": [
-        "Added through rendered-browser authored resource link from the recorded authoritative source graph."
+        "Added through rendered-browser authored resource link from the recorded authoritative source graph.",
+        "Removed the broken standalone implementation and folded its appendix context into the archived action-plan entry."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "editorial and lineage review complete",
-      "exclusion_reason": "The standalone APS Mapping Session Report is reproduced in full as the appendix to the archived 64-page APS Vision Zero for Youth Action Plan; retained as an official direct link without storing a duplicate copy.",
+      "validation_status": "duplicate confirmed; standalone APS URL returns HTTP 403/blank content, while the complete mapping-session report is preserved in the archived action plan appendix",
+      "exclusion_reason": "Broken standalone duplicate; retained content is preserved within the archived APS Vision Zero for Youth Action Plan.",
       "local_path": null,
       "discovered_at": "2026-08-20T19:10:00.3207037Z",
-      "updated_at": "2026-08-20T19:16:29.2874261Z"
+      "updated_at": "2026-08-31T03:12:55.5653396Z"
     },
     {
       "id": "src-f6eeb70f0d02621d",
