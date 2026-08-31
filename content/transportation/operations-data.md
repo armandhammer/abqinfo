@@ -82,6 +82,12 @@ Regional roadway operations, traffic analysis, incident management, and intellig
 
 ## Intelligent Transportation Systems
 
+- [NMDOT Transportation Systems Management and Operations Strategic and Program Plan (2025 Archived PDF)](https://files.abqinfo.com/transportation/operations-data/nmdot-tsmo-strategic-program-plan-2025.pdf)
+
+  Establishes NMDOT's statewide operations strategy, with Albuquerque-specific actions for the Regional Transportation Management Center, traffic signals, incident response, Courtesy Patrol, traveler information, communications infrastructure, performance management, and interagency coordination.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/d2efea98-90d2-4cf1-9132-2df7f65b23a8/NMDOT%20TSMO%20Plan%20Preliminary%20Version.pdf) · [Official NMDOT Intelligent Transportation Systems Page](https://www.dot.nm.gov/highway-operations-program/operations-support-division-director/intelligent-transportation-systems/)
+
 - [Albuquerque Metropolitan Area Intelligent Transportation Systems Briefing (2008 Archived PDF)](https://files.abqinfo.com/transportation/operations-data/mrcog-albuquerque-its-task-force-briefing-2008.pdf)
 
   Preserves the regional ITS framework presented in 2008, covering traffic management, transit security, dispatch, freeway systems, traveler information, communications, incident response, project programming, agency coordination, and the planned Regional Transportation Management Center.

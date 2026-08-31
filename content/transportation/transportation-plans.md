@@ -380,6 +380,22 @@ Regional plans, long-range plans, and other system-level transportation planning
 
 ### Current Statewide Plans
 
+- [New Mexico 2045 Freight Plan Update with Freight Investment Plan Amendment 3 (2023–2025 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-new-mexico-2045-freight-plan-update-amendment-3-2023-2025.pdf)
+
+  Documents statewide freight conditions and investments through 2045, including Albuquerque's I-40 bottlenecks, Sunport air cargo, rail facilities, economic role, safety needs, truck corridors, performance measures, and federally approved project priorities.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/3e34db15-dd1c-45e2-8c67-dd351bf1c79b/2025_0506_NM%202045%20FP_FHWA%20Approved_FIP_A3.pdf) · [Official NMDOT Multimodal Planning and Programs Bureau](https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/multimodal-planning-and-programs-bureau/)
+
+- [NMDOT Public Involvement Plan (2018 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-public-involvement-plan-2018.pdf)
+
+  Defines NMDOT's statewide framework for involving communities in transportation decisions, including engagement goals, planning and project-development procedures, underserved populations, tribal consultation, communication tools, evaluation, and federal requirements.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/a698b953-f3f1-4eea-80a8-6358dbe38853/Public%20Involvement%20Plan%20%28PIP%29%20%288.8%20mb%29.pdf) · [Official NMDOT Planning Division](https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/)
+
+  - [Stakeholder and Public Outreach Appendix (2018 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-public-involvement-plan-appendix-2018.pdf)
+
+    Preserves the survey results, stakeholder interviews, and public-comment notice used to update NMDOT's involvement plan, including feedback from metropolitan and regional planning organizations and transportation partners. [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/5dd69a52-cd81-4f2b-a8d1-2658582f45a2/NMDOT%20Public%20Involvement%20Plan%20Appendix.pdf)
+
 - [New Mexico 2045 Plan (2021 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-new-mexico-2045-plan-2021.pdf)
 
   Establishes New Mexico's statewide long-range transportation direction through 2045, connecting safety, asset management, mobility, multimodal access, economic vitality, environmental stewardship, performance measures, and investment strategies.

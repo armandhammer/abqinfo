@@ -60,7 +60,7 @@ Transportation studies and reports.
 
     Preserves the Downtown study's supporting speed and traffic counts, turning movements, cost estimates, public meeting records, resident comments, analysis worksheets, and other technical documentation.
 
-  [Official City Report](https://www.cabq.gov/council/documents/councilor-district-2-documents/TrafficReportFINALJuly2014.pdf) · [Official City Appendices](https://www.cabq.gov/council/documents/councilor-district-2-documents/Appendix.pdf) · [Council District 2 Document Collection](https://www.cabq.gov/council/documents/councilor-district-2-documents/)
+  [Official City Report](https://www.cabq.gov/council/documents/councilor-district-2-documents/TrafficReportFINALJuly2014.pdf) · [Official City Appendices](https://www.cabq.gov/council/documents/councilor-district-2-documents/Appendix.pdf)
 
 ### East Central Avenue
 
