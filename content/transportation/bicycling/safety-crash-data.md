@@ -52,6 +52,50 @@ Bicycle safety statistics and crash data.
 
   Collects historical Albuquerque metropolitan crash and safety reports, including Bernalillo County pedestrian and bicycle analysis covering crash severity, locations, timing, people involved, and reported contributing factors.
 
+## Historical Regional Crash Analysis
+
+- [2015–2019 Albuquerque Metropolitan Online Crash Report](https://mrmpo.maps.arcgis.com/apps/MapSeries/index.html?appid=ec395f5587744d778832207af7d86f93)
+
+  Opens MRMPO’s interactive historical crash report for the Albuquerque Metropolitan Planning Area, with mapped and summarized crash patterns covering the 2015–2019 period. [Official MRCOG archive page](https://www.mrcog-nm.gov/572/Archived-Crash-Reports)
+
+- [Bernalillo County Pedestrian and Bicycle Crash Data Analysis, 2010–2014](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/mrmpo-bernalillo-county-pedestrian-bicycle-crash-analysis-2010-2014.pdf)
+
+  Examines pedestrian and bicycle crash severity, locations, timing, people involved, and reported contributing factors across Bernalillo County, identifying East Central Avenue as the region’s highest-crash corridor. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/2108/Bernalillo-County-Pedestrian-and-Bicycle-Crash-Data-Analysis-2010-to-2014-PDF?bidId=)
+
+- [Albuquerque Metropolitan Crash and Safety Report, 2002–2011](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/mrmpo-albuquerque-metropolitan-crash-safety-report-2002-2011.pdf)
+
+  Updates the metropolitan crash baseline through 2011, documenting trends, severity, locations, roadway and driver factors, pedestrian and bicyclist crashes, and comparisons used in regional safety planning. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/1906/2002-to-2011-Crash-and-Safety-Report-for-the-Albuquerque-Metropolitan-Planning-PDF)
+
+- [Albuquerque Metropolitan Crash and Safety Report, 2001–2010](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/mrmpo-albuquerque-metropolitan-crash-safety-report-2001-2010.pdf)
+
+  Analyzes a decade of metropolitan crash trends, severity, roadway characteristics, contributing factors, intersections, pedestrians, bicyclists, and geographic patterns to support Albuquerque-area transportation planning and safety investment. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/1905/2001-to-2010-Crash-and-Safety-Report-for-the-Albuquerque-Metropolitan-Planning-Area-PDF)
+
+## Bicycle Travel and Rider Surveys
+
+- [2025 Bike to Work Day Survey Results](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/mrcog-bike-to-work-day-survey-results-2025.pdf)
+
+  Reports 191 English and Spanish survey responses on bicycling frequency, rider experience, electric-bike use, commute patterns, perceived conditions, barriers, infrastructure priorities, driver behavior, and outreach for Albuquerque’s annual event. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6654/Bike-to-Work-Day-2025-Report-and-Survey-Results_82625)
+
+- [2022 Bike to Wherever Day Survey Report](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/mrmpo-bike-to-wherever-day-survey-report-2022.pdf)
+
+  Documents Albuquerque-area rider characteristics, trip purposes, safety perceptions, barriers, facility preferences, event participation, and changing sentiment, with respondents emphasizing protected lanes, connected routes, and safer driver behavior. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/5656/Bike-to-Wherever-2022-Survey-PDF)
+
+- [2020 Bike to Work Day Survey Report](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/mrmpo-bike-to-work-day-survey-report-2020.pdf)
+
+  Summarizes 895 online responses about Albuquerque bicycling during the COVID-19 pandemic, including trip purposes, perceived conditions, barriers, protected-lane and network priorities, driver behavior, destinations, and desired improvements. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/4603/2020-Bike-to-Work-Day-Survey-Report-PDF)
+
+- [2019 Bike to Work Day Survey Report](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/mrmpo-bike-to-work-day-survey-report-2019.pdf)
+
+  Analyzes 1,002 Albuquerque Bike to Work Day responses about rider demographics, trip purposes, bicycling frequency, perceived conditions, barriers, route and facility needs, event participation, and priorities for improvement. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/4598/2019-Bike-to-Work-Day-Report-PDF)
+
+- [Paseo del Bosque and North Diversion Channel Bicycle Trends (2018)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/mrmpo-paseo-del-bosque-north-diversion-channel-bicycle-trends-2018.pdf)
+
+  Uses permanent trail-counter data to compare recreational and commute-oriented bicycling patterns on the Paseo del Bosque and North Diversion Channel trails, including hourly, weekday, and weekend trends. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/3815/Recreation-and-Commuter-Bicycle-Trends-on-the-Paseo-del-Bosque-and-North-Diversion-Channel-Trails)
+
+- [Pedestrian and Bicycle Travel Monitoring Report (2016)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/mrmpo-pedestrian-bicycle-travel-monitoring-report-2016.pdf)
+
+  Analyzes pedestrian and bicycle counts, observed behavior, land use, transit access, and built-environment conditions at International District and South Valley locations to inform active-transportation planning and public-health investment. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/1940/Pedestrian-and-Bicycle-Travel-Monitoring-Report-September-2016-PDF?bidId=)
+
 ## County Safety Planning
 
 - [Bernalillo County Pedestrian–Bicyclist Safety Action Plan (2025 archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/bernco-pedestrian-bicyclist-safety-action-plan-2025.pdf)
