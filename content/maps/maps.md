@@ -57,6 +57,10 @@ Interactive maps of city data and infrastructure.
 
   Albuquerque Open Space maintains access and trail maps for its lands and trailheads. Individual trail maps are available from the same City source when a printable field reference is useful.
 
+- [Manzano/Four Hills Open Space Trail Map (2021 Archived PDF)](https://files.abqinfo.com/maps/cabq-manzano-four-hills-open-space-trail-map-2021.pdf)
+
+  Maps official trails, Open Space boundaries, access points, surrounding streets, and aerial context for the Manzano/Four Hills property beside Tijeras Arroyo in southeast Albuquerque. [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/manzano-four-hills-trail-map.pdf)
+
 ### Archived Open Space Maps and Guides
 
 - [Paseo de la Mesa Recreation Trail Map (2018)](https://files.abqinfo.com/public-works/parks-recreation/cabq-paseo-de-la-mesa-recreation-trail-map-2018.pdf)

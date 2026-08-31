@@ -140,6 +140,12 @@ Parks and recreation facilities and programs.
 
   [Official City Open Space map library](https://www.cabq.gov/parksandrecreation/open-space/facilities-map) · [Official City PDF](https://www.cabq.gov/parksandrecreation/recreation/documents/foothillsmap.pdf)
 
+- [Manzano/Four Hills Open Space Trail Map (2021 Archived PDF)](https://files.abqinfo.com/maps/cabq-manzano-four-hills-open-space-trail-map-2021.pdf)
+
+  Maps official trails, Open Space boundaries, access points, surrounding streets, and aerial context for the Manzano/Four Hills property beside Tijeras Arroyo in southeast Albuquerque.
+
+  [Official City Open Space map library](https://www.cabq.gov/parksandrecreation/open-space/facilities-map) · [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/manzano-four-hills-trail-map.pdf)
+
 - [City of Albuquerque Open Space Overview Map](https://files.abqinfo.com/public-works/parks-recreation/cabq-open-space-overview-map.pdf)
 
   Provides a systemwide reference to City Open Space properties and nearby tribal, federal, county, and municipal lands, with numbered sites spanning the Bosque, foothills, volcanic mesa, and East Mountain areas.
