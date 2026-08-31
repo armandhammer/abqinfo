@@ -90,6 +90,24 @@ Parks and recreation facilities and programs.
 
   [Official City Tijeras Cultural Corridor page](https://www.cabq.gov/parksandrecreation/open-space/lands/tijeras-cultural-corridor) · [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/2024_12_10-tijeras-biozone-osab-presentation_slides_updated-5-5-25_sm.pdf)
 
+- [Tijeras Bio-Zone Education Center Proposed Site Plan (2024 Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-tijeras-bio-zone-education-center-proposed-site-plan-2024.pdf)
+
+  Provides a readable one-sheet design concept for the education center, locating accessible paths, parking, campsites, restrooms, shelters, outdoor learning areas, sensory-trail features, landscape restoration, event space, and caretaker facilities.
+
+  [Official City Tijeras Cultural Corridor page](https://www.cabq.gov/parksandrecreation/open-space/lands/tijeras-cultural-corridor) · [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/2024_12_10-tijeras-biozone-osab-presentation_site-plan_sm.pdf)
+
+- [Tijeras Bio-Zone Education Center Existing Conditions and Site Analysis (2023 Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-tijeras-bio-zone-education-center-existing-conditions-site-analysis-2023.pdf)
+
+  Documents the site's cultural timeline, creek and aquifer context, vegetation, historic uses, disturbed areas, access, drainage, existing facilities, photographs, and cross-sections used to inform the education-center design.
+
+  [Official City Tijeras Cultural Corridor page](https://www.cabq.gov/parksandrecreation/open-space/lands/tijeras-cultural-corridor) · [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/site-analysis-boards-sm.pdf)
+
+- [Route 66 Open Space Trailhead Draft Construction Drawings (2023 Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-route-66-open-space-trailhead-construction-drawings-2023.pdf)
+
+  Preserves the seven-sheet draft construction set for the Route 66 Open Space trailhead, including parking, equestrian access, accessible paths, trail connections, signage, shade, restroom facilities, grading, dimensions, and site details.
+
+  [Official City Tijeras Cultural Corridor page](https://www.cabq.gov/parksandrecreation/open-space/lands/tijeras-cultural-corridor) · [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/route_66_open_space_trailhead_60cds_01_12_2023.pdf)
+
 ## Open Space Maps and Field Guides
 
 - [City Bicycle Trail Guides](https://www.cabq.gov/parksandrecreation/recreation/bike/bicycle-trail-guides-1)

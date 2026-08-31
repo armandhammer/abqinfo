@@ -14,6 +14,10 @@ Selected major development activity and the plans and datasets needed to underst
 
   [Official City PDF](https://documents.cabq.gov/planning/MasterPlans/Rail%20Yards%20Master%20Plan/Albuquerque_Rail_Yards_Master_Plan-2023-06-07.pdf)
 
+  [Rail Yards Master Plan—Retained City Copy With Adoption and Amendments (2018 archived PDF, 102.14 MiB)](https://files.abqinfo.com/development-land-use/projects/cabq-rail-yards-master-plan-retained-2018.pdf)
+
+  Combines the adopted 2014 master plan with the City's formal adoption history and appended resolutions recording the original approval and subsequent zoning and plan-type amendments. [Official City PDF](https://documents.cabq.gov/planning/UDD/Rail%20Yards%20Master%20Plan.pdf)
+
   [Original Rail Yards Master Plan (2014 archived PDF, 71.06 MiB)](https://files.abqinfo.com/development-land-use/projects/cabq-rail-yards-master-plan-2014.pdf)
 
   Preserves the original redevelopment framework, including site history, building conditions, community goals, land use, transportation, preservation, public spaces, infrastructure, environmental constraints, development concepts, and implementation. [Official City PDF](https://documents.cabq.gov/planning/UDD/RailYardsMasterPlan.pdf)
