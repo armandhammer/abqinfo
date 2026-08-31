@@ -136,13 +136,9 @@ Bicycle safety statistics and crash data.
 
 - [APS Vision Zero for Youth Action Plan (2022–23 archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-for-youth-action-plan-2022-23.pdf)
 
-  Establishes APS's districtwide framework for eliminating student traffic deaths through safety curriculum, awareness campaigns, student mapping, interagency coordination, measurable actions, equity-focused pilot schools, and annual progress evaluation.
+  Establishes APS's districtwide framework for eliminating student traffic deaths through safety curriculum, awareness campaigns, student mapping, interagency coordination, measurable actions, equity-focused pilot schools, and annual progress evaluation. Its appendix preserves the student mapping-session report and documented travel-safety concerns.
 
   [Official APS PDF](https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/action-plan) · [APS Vision Zero for Youth Initiative](https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative) · [APS Links and Resources](https://www.aps.edu/capital-master-plan/vision-zero-for-youth-initiative/links-and-resources)
-
-- [APS Vision Zero Mapping Session Report](https://www.aps.edu/capital-master-plan/documents/website-updates/vision-zero/mapping-session-report)
-
-  Documents student travel patterns and safety concerns gathered through mapping sessions. The complete report is also preserved within the archived action plan as its appendix.
 
 - [APS Vision Zero Board Policy Discussion Brief (2022 archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-board-policy-discussion-brief-2022.pdf)
 
