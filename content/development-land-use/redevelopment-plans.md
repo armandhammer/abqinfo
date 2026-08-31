@@ -136,6 +136,12 @@ Plans and historical records for designated Metropolitan Redevelopment Areas, wh
 
   [Official City redevelopment-area index](https://www.cabq.gov/mra/redevelopment-areas) · [Official City PDF](https://documents.cabq.gov/planning/UDD/StJosephHospitalMRA-Plan.pdf)
 
+- [Tingley Beach Metropolitan Redevelopment Area Designation Resolution R-305 (1983 Archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-tingley-beach-mra-designation-resolution-r-305-1983.pdf)
+
+  Designates the Tingley Beach Metropolitan Redevelopment Area, records findings concerning the former Beach Motel property along Central Avenue, maps the area, and directs preparation of the redevelopment plan adopted later in 1983.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-TingleyBeachMRA-Plan-R-305.pdf) · [Official City MRA Document Directory](https://documents.cabq.gov/planning/UDD/MRA/)
+
 - [Tingley Beach Metropolitan Redevelopment Area Project I Plan (1983)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-tingley-beach-mra-project-plan-1983.pdf)
 
   Preserves the 1983 Project I redevelopment plan for the beach property at West Central Avenue and the Rio Grande, documenting the statutory framework, site conditions, public actions, and proposed reuse.

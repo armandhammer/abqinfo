@@ -88,6 +88,14 @@ Data dashboards and visualizations.
 
   Presents MRMPO's 2023 screening of roadways that may support safety-focused reconfiguration based on lanes, capacity, and traffic volume. Candidate status is preliminary and does not replace project-specific engineering analysis.
 
+## City Services and Property Tools
+
+- [Albuquerque Address Report](https://geocortexweb.cabq.gov/vertigisstudio/web/?app=eeffb6977e0c467f8439b0c97d34eaaa)
+
+  Creates printable reports for Albuquerque addresses combining Bernalillo County property ownership, City services, political boundaries, and trash-collection schedules in one searchable location.
+
+  [Official City Tool Page](https://www.cabq.gov/gis/address-report)
+
 ## Demographic and Land-Use Forecasts
 
 - [MRMPO 2045 Socioeconomic Forecast Interactive Map](https://mrcogmaps.org/Forecast2045)

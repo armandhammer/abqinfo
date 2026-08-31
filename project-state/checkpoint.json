@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-08-31T19:58:19.5394795Z",
-  "completed_item_range": "Safety, capital-program, transit-workforce, DPM-history, and NTMP-public-record batch: eight authoritative files validated; one duplicate and one superseded pathway reconciled; five low-value records excluded",
+  "recorded_at": "2026-08-31T20:45:43.7255626Z",
+  "completed_item_range": "GIS, DMD, airport, forestry, redevelopment, and stormwater batch: seven authoritative files plus one live City tool validated; two duplicates and four superseded records reconciled; eighteen low-value or out-of-scope records excluded; one over-100 MB report held for approval",
   "total_candidates": 6367,
   "counts_by_status": {
-    "pending review": 3535,
+    "pending review": 3503,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 4,
@@ -11,15 +11,17 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 2,
-    "validated": 932,
-    "excluded": 831,
-    "duplicate": 950,
-    "superseded": 82,
+    "validated": 940,
+    "excluded": 849,
+    "duplicate": 951,
+    "superseded": 86,
     "blocked": 0,
-    "requires human review": 31
+    "requires human review": 32
   },
-  "remaining_nonterminal": 3541,
+  "remaining_nonterminal": 3509,
   "next_pending_id": "src-0004d9e0318a9df5",
-  "blockers": [],
-  "resume_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Download-Candidate.ps1 -Id src-d311dfa1ad0a2915"
+  "blockers": [
+    "FY2018 Albuquerque MS4 annual report is 106,231,387 bytes and requires explicit approval before unchanged R2 upload."
+  ],
+  "resume_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Download-Candidate.ps1 -Id src-132a8105973da62a"
 }

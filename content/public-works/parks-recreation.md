@@ -10,6 +10,12 @@ Parks and recreation facilities and programs.
 
   Describes Albuquerque's urban-forest benefits, the City's management of roughly 25,000 park trees, the 100,000-tree planting initiative, community engagement findings, planting resources, and current program work.
 
+- [Wells Park NeighborWoods Final Report (2020 Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-wells-park-neighborwoods-final-report-2020.pdf)
+
+  Evaluates Albuquerque's first NeighborWoods planting in Wells Park, documenting 109 street trees, three-year survivability, canopy and environmental benefits, species performance, watering challenges, volunteer practices, and lessons used to improve later neighborhood plantings.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/abq-nw-final-report-wp.pdf) · [Official City Project Page](https://www.cabq.gov/council/albuquerque-neighborwoods/district-2-neighborwoods)
+
 - [Parks and Recreation Featured Projects](https://www.cabq.gov/parksandrecreation/featured-projects)
 
   Maintains the City's detailed index of active park, trail, aquatics, recreation, and public-space improvements, linking project histories, design concepts, public engagement, schedules, and construction updates.
