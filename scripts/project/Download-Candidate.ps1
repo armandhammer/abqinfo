@@ -79,7 +79,17 @@ try {
   }
   $response = Invoke-WebRequest -Uri $url -OutFile $path -PassThru -UseBasicParsing -Headers $headers
   $contentType = [string]$response.Headers['Content-Type']
-  $finalUrl = [string]$response.BaseResponse.RequestMessage.RequestUri.AbsoluteUri
+  $finalUrl = ''
+  if ($response.BaseResponse.PSObject.Properties['RequestMessage'] -and
+      $response.BaseResponse.RequestMessage -and
+      $response.BaseResponse.RequestMessage.RequestUri) {
+    $finalUrl = [string]$response.BaseResponse.RequestMessage.RequestUri.AbsoluteUri
+  } elseif ($response.BaseResponse.PSObject.Properties['ResponseUri'] -and
+            $response.BaseResponse.ResponseUri) {
+    # Windows PowerShell exposes HttpWebResponse.ResponseUri rather than the
+    # HttpResponseMessage.RequestMessage property returned by PowerShell 7.
+    $finalUrl = [string]$response.BaseResponse.ResponseUri.AbsoluteUri
+  }
   if ($contentType -match '(?i)application/pdf' -and $extension -ne '.pdf') {
     $pdfPath = [IO.Path]::ChangeExtension($path, '.pdf')
     Move-Item -LiteralPath $path -Destination $pdfPath -Force
