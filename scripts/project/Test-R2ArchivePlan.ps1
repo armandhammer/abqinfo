@@ -2,15 +2,29 @@
 param(
   [Parameter(Mandatory)][string]$PlanPath,
   [Parameter(Mandatory)][string]$OutputPath,
-  [string]$InventoryPath = 'project-state/master-inventory.json'
+  [string]$InventoryPath = 'project-state/master-inventory.json',
+  [string[]]$Ids
 )
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $plan = Get-Content -Raw -Encoding UTF8 -LiteralPath $PlanPath | ConvertFrom-Json
 $results = @()
+$selectedItems = @($plan.items)
+if ($Ids) {
+  $unknownIds = @($Ids | Where-Object { $_ -notin @($plan.items.id) })
+  if ($unknownIds.Count) { throw "Requested IDs are not present in the archive plan: $($unknownIds -join ', ')." }
+  $selectedItems = @($plan.items | Where-Object id -in $Ids)
+}
+if (Test-Path -LiteralPath $OutputPath) {
+  $existing = Get-Content -Raw -Encoding UTF8 -LiteralPath $OutputPath | ConvertFrom-Json
+  if ([string]$existing.plan_path -eq $PlanPath) {
+    $results = @($existing.results | Where-Object { $_.id -in @($plan.items.id) -and $_.byte_identical })
+  }
+}
+$selectedItems = @($selectedItems | Where-Object id -notin @($results.id))
 
-foreach ($item in @($plan.items)) {
+foreach ($item in $selectedItems) {
   $publicUrl = "https://files.abqinfo.com/$($item.r2_key)"
   try {
     $inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
