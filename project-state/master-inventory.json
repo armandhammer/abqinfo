@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-31T13:26:39.4623620Z",
+  "generated_at": "2026-08-31T15:21:30.6950867Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,7 +18,7 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 3575,
+    "pending review": 3566,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 4,
@@ -26,8 +26,8 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 2,
-    "validated": 913,
-    "excluded": 817,
+    "validated": 917,
+    "excluded": 822,
     "duplicate": 944,
     "superseded": 81,
     "blocked": 0,
@@ -25436,19 +25436,19 @@
     },
     {
       "id": "src-0b0fce00fb5f421e",
-      "status": "pending review",
-      "source_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/3e34db15-dd1c-45e2-8c67-dd351bf1c79b/2025_0506_NM%202045%20FP_FHWA%20Approved_FIP_A3.pdf",
+      "status": "validated",
+      "source_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/multimodal-planning-and-programs-bureau/",
       "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/3e34db15-dd1c-45e2-8c67-dd351bf1c79b/2025_0506_NM%202045%20FP_FHWA%20Approved_FIP_A3.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/transportation-plans/nmdot-new-mexico-2045-freight-plan-update-amendment-3-2023-2025.pdf",
+      "r2_key": "transportation/transportation-plans/nmdot-new-mexico-2045-freight-plan-update-amendment-3-2023-2025.pdf",
+      "r2_etag": "8f473a19f276c799bcf1ce4d36a91770",
+      "r2_last_modified": "08/31/2026 09:07:44",
       "agency": "Other authoritative source",
-      "title": "2045 New Mexico Freight Plan FHWA Approved with FIP Amendment 3",
-      "date": null,
+      "title": "New Mexico 2045 Freight Plan Update with Freight Investment Plan Amendment 3",
+      "date": "2023-2025",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 7995195,
+      "checksum_sha256": "c590ed8414415ac910c08d6b504f43ba2974e3f92afae82397a39838af5d2d00",
       "parent_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/multimodal-planning-and-programs-bureau/",
       "referring_urls": [
         "https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/multimodal-planning-and-programs-bureau/"
@@ -25462,23 +25462,26 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "source URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official NMDOT source page and authoritative file URL recorded",
+      "proposed_canonical_page": "content/transportation/transportation-plans.md",
+      "description": "Documents statewide freight conditions and investments through 2045, including Albuquerque's I-40 bottlenecks, Sunport air cargo, rail facilities, economic role, safety needs, truck corridors, performance measures, and federally approved project priorities.",
+      "description_word_count": 30,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review.",
-        "Captured from authoritative page https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/multimodal-planning-and-programs-bureau/; external host was not recursively crawled."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative NMDOT PDF preserved without modification.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transportation-plans.md",
+      "implementation_locations": [
+        "content/transportation/transportation-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-0b0fce00fb5f421e.pdf",
       "discovered_at": "2026-08-14T23:33:00.5239573Z",
-      "updated_at": "2026-08-14T23:33:00.5239573Z"
+      "updated_at": "2026-08-31T15:19:17.6590171Z"
     },
     {
       "id": "src-0b1642254494f22e",
@@ -45549,7 +45552,7 @@
     },
     {
       "id": "src-1de48e890d72b668",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.mrcog-nm.gov/DocumentCenter/View/2867",
       "direct_file_url": null,
       "r2_url": null,
@@ -45581,18 +45584,19 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
+        "Delivered as application/pdf; not parsed as HTML.",
         "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
         "Exact metadata and relevance remain pending source review.",
-        "Delivered as application/pdf; not parsed as HTML."
+        "Reviewed in the NMDOT operations and policy batch; excluded under ABQInfo relevance criteria."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "excluded after relevance review",
+      "exclusion_reason": "Los Lunas station-area plan is outside Albuquerque and does not materially affect Albuquerque transportation policy, projects, or Rail Runner system planning.",
       "local_path": null,
       "discovered_at": "2026-08-14T23:33:00.1763606Z",
-      "updated_at": "2026-08-14T23:33:00.1763606Z"
+      "updated_at": "2026-08-31T15:06:03.356286Z"
     },
     {
       "id": "src-1df4ccb006e5a79f",
@@ -70265,7 +70269,7 @@
     },
     {
       "id": "src-3517e84cb9d5ee92",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/eb78f931-d755-450a-aa2a-3885269feaa6/Final%20NMDOT%20Transit%20Bureau%20FTA%20Title%20VI%20Plan%202025.pdf",
       "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/eb78f931-d755-450a-aa2a-3885269feaa6/Final%20NMDOT%20Transit%20Bureau%20FTA%20Title%20VI%20Plan%202025.pdf",
       "r2_url": null,
@@ -70276,8 +70280,8 @@
       "title": "Title VI Plan for FTA",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 676496,
+      "checksum_sha256": "c0bfaa2cd7531a19bb4c8095d58b470a9ebb66a1a74c3c04c17798ec649586df",
       "parent_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/",
       "referring_urls": [
         "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/",
@@ -70297,18 +70301,21 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
+        "Captured from authoritative page https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/; external host was not recursively crawled.",
         "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
+        "Downloaded exact size: 676496 bytes (660.64 KiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review.",
-        "Captured from authoritative page https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/; external host was not recursively crawled."
+        "PDF pages: 36; extracted text: research/staging/queue/src-3517e84cb9d5ee92.txt",
+        "Reviewed in the NMDOT operations and policy batch; excluded under ABQInfo relevance criteria."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "excluded after relevance review",
+      "exclusion_reason": "Statewide FTA Title VI administration is primarily generic compliance material and does not add substantive Albuquerque transportation planning content beyond existing regional civil-rights resources.",
+      "local_path": "research/staging/queue/src-3517e84cb9d5ee92.pdf",
       "discovered_at": "2026-08-14T23:33:00.1560675Z",
-      "updated_at": "2026-08-14T23:33:00.1560675Z"
+      "updated_at": "2026-08-31T15:06:03.2102652Z"
     },
     {
       "id": "src-35186fe26ee9a987",
@@ -96436,7 +96443,7 @@
       "status": "validated",
       "source_url": "https://www.cabq.gov/parksandrecreation/recreation/bike/documents/technical-appendices-of-the-albuquerque-comprehensive-on-street-bicycle-plan.pdf/view",
       "direct_file_url": "https://www.cabq.gov/parksandrecreation/recreation/bike/documents/technical-appendices-of-the-albuquerque-comprehensive-on-street-bicycle-plan.pdf",
-      "r2_url": null,
+      "r2_url": "https://files.abqinfo.com/transportation/bicycling/bike-plans/cabq-comprehensive-on-street-bicycle-plan-technical-appendices-2000.pdf",
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
@@ -96482,7 +96489,7 @@
       "exclusion_reason": null,
       "local_path": "research/staging/queue/src-4dd0d7313497ab4e.pdf",
       "discovered_at": "2026-08-04T14:45:04.9098149Z",
-      "updated_at": "2026-08-31T04:14:35.711141Z"
+      "updated_at": "2026-08-31T15:21:30.1203070Z"
     },
     {
       "id": "src-4ddc850e99380009",
@@ -96588,7 +96595,7 @@
     },
     {
       "id": "src-4decb7030ddd1f66",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.mrcog-nm.gov/DocumentCenter/View/2871/Bernalillo-TOD-Plan---A-Community-Vision-for-Transit-Oriented-Development-PDF",
       "direct_file_url": null,
       "r2_url": null,
@@ -96620,18 +96627,19 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
+        "Delivered as application/pdf; not parsed as HTML.",
         "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
         "Exact metadata and relevance remain pending source review.",
-        "Delivered as application/pdf; not parsed as HTML."
+        "Reviewed in the NMDOT operations and policy batch; excluded under ABQInfo relevance criteria."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "excluded after relevance review",
+      "exclusion_reason": "Town of Bernalillo station-area development plan is outside Albuquerque and does not establish policy or projects materially affecting the city.",
       "local_path": null,
       "discovered_at": "2026-08-14T23:32:59.3545034Z",
-      "updated_at": "2026-08-14T23:32:59.3545034Z"
+      "updated_at": "2026-08-31T15:06:03.2836963Z"
     },
     {
       "id": "src-4e09370d831fc339",
@@ -123665,7 +123673,7 @@
       "status": "validated",
       "source_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/Appendix.pdf/view",
       "direct_file_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/Appendix.pdf",
-      "r2_url": null,
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-downtown-neighborhood-area-traffic-study-appendices-2014.pdf",
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
@@ -123712,7 +123720,7 @@
       "exclusion_reason": null,
       "local_path": "research/staging/queue/src-66d6dd3f2f7408bb.pdf",
       "discovered_at": "2026-08-04T14:15:57.9965487Z",
-      "updated_at": "2026-08-31T04:14:35.8132199Z"
+      "updated_at": "2026-08-31T15:21:22.1750855Z"
     },
     {
       "id": "src-67031c4eaf82c3e9",
@@ -127851,7 +127859,7 @@
     },
     {
       "id": "src-6b548f9d3975e5a8",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.mrcog-nm.gov/DocumentCenter/View/2872/Town-of-Bernalillo---Sandoval-County-Rail-Runner-Stations-Brochure-PDF",
       "direct_file_url": null,
       "r2_url": null,
@@ -127883,18 +127891,19 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
+        "Delivered as application/pdf; not parsed as HTML.",
         "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
         "Exact metadata and relevance remain pending source review.",
-        "Delivered as application/pdf; not parsed as HTML."
+        "Reviewed in the NMDOT operations and policy batch; excluded under ABQInfo relevance criteria."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "excluded after relevance review",
+      "exclusion_reason": "Town of Bernalillo and Sandoval County station brochure is outside Albuquerque and adds no material city or systemwide Rail Runner planning information.",
       "local_path": null,
       "discovered_at": "2026-08-14T23:32:59.4471477Z",
-      "updated_at": "2026-08-14T23:32:59.4471477Z"
+      "updated_at": "2026-08-31T15:06:03.3257999Z"
     },
     {
       "id": "src-6b54b933b6974ddf",
@@ -170619,7 +170628,7 @@
       "status": "validated",
       "source_url": "https://www.cabq.gov/mra/redevelopment-areas/north-corridor/resolveuid/a8b27c5c81f44e95bc45d9bdc607b8d9",
       "direct_file_url": "https://www.cabq.gov/mra/documents/north-corridor-mra-plan-final-6-29-2020.pdf",
-      "r2_url": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-north-corridor-mra-plan-2020.pdf",
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
@@ -170665,7 +170674,7 @@
       "exclusion_reason": null,
       "local_path": "research/staging/queue/src-917173b06523dda9.pdf",
       "discovered_at": "2026-08-04T14:15:58.2248078Z",
-      "updated_at": "2026-08-31T04:14:35.9061437Z"
+      "updated_at": "2026-08-31T15:21:05.6903952Z"
     },
     {
       "id": "src-917d29bdf349bf66",
@@ -179171,19 +179180,19 @@
     },
     {
       "id": "src-9a20086460b5de27",
-      "status": "pending review",
-      "source_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/5dd69a52-cd81-4f2b-a8d1-2658582f45a2/NMDOT%20Public%20Involvement%20Plan%20Appendix.pdf",
+      "status": "validated",
+      "source_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/",
       "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/5dd69a52-cd81-4f2b-a8d1-2658582f45a2/NMDOT%20Public%20Involvement%20Plan%20Appendix.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/transportation-plans/nmdot-public-involvement-plan-appendix-2018.pdf",
+      "r2_key": "transportation/transportation-plans/nmdot-public-involvement-plan-appendix-2018.pdf",
+      "r2_etag": "38b6e01abee2a98d58e149b0c7cbaf0d",
+      "r2_last_modified": "08/31/2026 09:07:12",
       "agency": "Other authoritative source",
-      "title": "NMDOT Public Involvement Plan Appendix (2018)",
-      "date": null,
+      "title": "NMDOT Public Involvement Plan Appendix: Stakeholder and Public Outreach",
+      "date": "2018",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 873505,
+      "checksum_sha256": "b1a3e3befb2a0b93a287e110654b98fea1ae65a7f0b845c00481cea84653c91b",
       "parent_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/",
       "referring_urls": [
         "https://www.dot.nm.gov/multimodal-planning-and-programs/planning-division/",
@@ -179198,23 +179207,26 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "source URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official NMDOT source page and authoritative file URL recorded",
+      "proposed_canonical_page": "content/transportation/transportation-plans.md",
+      "description": "Preserves the survey results, stakeholder interviews, and public-comment notice used to update NMDOT's involvement plan, including feedback from metropolitan and regional planning organizations and transportation partners.",
+      "description_word_count": 26,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review.",
-        "Captured from authoritative page https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/; external host was not recursively crawled."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative NMDOT PDF preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transportation-plans.md",
+      "implementation_locations": [
+        "content/transportation/transportation-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-9a20086460b5de27.pdf",
       "discovered_at": "2026-08-14T23:32:59.8148542Z",
-      "updated_at": "2026-08-14T23:32:59.8148542Z"
+      "updated_at": "2026-08-31T15:19:08.6656071Z"
     },
     {
       "id": "src-9a2d7938040450e4",
@@ -228123,19 +228135,19 @@
     },
     {
       "id": "src-c8d7be8df90dce69",
-      "status": "pending review",
-      "source_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/a698b953-f3f1-4eea-80a8-6358dbe38853/Public%20Involvement%20Plan%20(PIP)%20(8.8%20mb).pdf",
-      "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/a698b953-f3f1-4eea-80a8-6358dbe38853/Public%20Involvement%20Plan%20(PIP)%20(8.8%20mb).pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "status": "validated",
+      "source_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/",
+      "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/a698b953-f3f1-4eea-80a8-6358dbe38853/Public%20Involvement%20Plan%20%28PIP%29%20%288.8%20mb%29.pdf",
+      "r2_url": "https://files.abqinfo.com/transportation/transportation-plans/nmdot-public-involvement-plan-2018.pdf",
+      "r2_key": "transportation/transportation-plans/nmdot-public-involvement-plan-2018.pdf",
+      "r2_etag": "8729388c347c8891ce84b08297b373b3-2",
+      "r2_last_modified": "08/31/2026 09:06:57",
       "agency": "Other authoritative source",
-      "title": "NMDOT Public Involvement Plan (2018)",
-      "date": null,
+      "title": "NMDOT Public Involvement Plan",
+      "date": "2018",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 9273494,
+      "checksum_sha256": "010a05df708550cff3dd7101b62a86b6b17b3b7bd62f83dcf9c11159ecacb371",
       "parent_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/",
       "referring_urls": [
         "https://www.dot.nm.gov/multimodal-planning-and-programs/planning-division/",
@@ -228150,23 +228162,26 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "source URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official NMDOT source page and authoritative file URL recorded",
+      "proposed_canonical_page": "content/transportation/transportation-plans.md",
+      "description": "Defines NMDOT's statewide framework for involving communities in transportation decisions, including engagement goals, planning and project-development procedures, underserved populations, tribal consultation, communication tools, evaluation, and federal requirements.",
+      "description_word_count": 27,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review.",
-        "Captured from authoritative page https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/; external host was not recursively crawled."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative NMDOT PDF preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transportation-plans.md",
+      "implementation_locations": [
+        "content/transportation/transportation-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-c8d7be8df90dce69.pdf",
       "discovered_at": "2026-08-14T23:33:00.3387483Z",
-      "updated_at": "2026-08-14T23:33:00.3387483Z"
+      "updated_at": "2026-08-31T15:19:05.2187421Z"
     },
     {
       "id": "src-c8d81396837107cf",
@@ -233934,7 +233949,7 @@
       "status": "validated",
       "source_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/TrafficReportFINALJuly2014.pdf/view",
       "direct_file_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/TrafficReportFINALJuly2014.pdf",
-      "r2_url": null,
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-downtown-neighborhood-area-traffic-study-2014.pdf",
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
@@ -233981,7 +233996,7 @@
       "exclusion_reason": null,
       "local_path": "research/staging/queue/src-ce3c9f54fa83aba9.pdf",
       "discovered_at": "2026-08-04T14:15:58.0060609Z",
-      "updated_at": "2026-08-31T04:14:35.7588858Z"
+      "updated_at": "2026-08-31T15:21:08.8573718Z"
     },
     {
       "id": "src-ce4862f0ac271f4a",
@@ -237619,7 +237634,7 @@
     },
     {
       "id": "src-d18f199788a7ebc3",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/d1113132-b10e-4599-95d0-112188f18eb3/2023-2026%20Group%20Tier%20II%20Transit%20Asset%20Management%20Plan.pdf",
       "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/d1113132-b10e-4599-95d0-112188f18eb3/2023-2026%20Group%20Tier%20II%20Transit%20Asset%20Management%20Plan.pdf",
       "r2_url": null,
@@ -237630,8 +237645,8 @@
       "title": "2023-2026 Group Tier II Transit Asset Management Plan",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 2556877,
+      "checksum_sha256": "4fb5b5f3661e3c1cb5760aef2f41276424cea1199ac3a38903c2354e7b6160a3",
       "parent_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/",
       "referring_urls": [
         "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/",
@@ -237651,18 +237666,21 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
+        "Captured from authoritative page https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/; external host was not recursively crawled.",
         "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
+        "Downloaded exact size: 2556877 bytes (2.44 MiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review.",
-        "Captured from authoritative page https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/; external host was not recursively crawled."
+        "PDF pages: 27; extracted text: research/staging/queue/src-d18f199788a7ebc3.txt",
+        "Reviewed in the NMDOT operations and policy batch; excluded under ABQInfo relevance criteria."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "excluded after relevance review",
+      "exclusion_reason": "The group Tier II asset plan covers rural Section 5311 providers and explicitly excludes Rio Metro rail service; it has no material Albuquerque transit-asset content.",
+      "local_path": "research/staging/queue/src-d18f199788a7ebc3.pdf",
       "discovered_at": "2026-08-14T23:33:00.169499Z",
-      "updated_at": "2026-08-14T23:33:00.169499Z"
+      "updated_at": "2026-08-31T15:06:03.2437508Z"
     },
     {
       "id": "src-d19827d1fca91d3f",
@@ -243682,7 +243700,7 @@
       "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-LosCandelariasVillageCenterMRAplan.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-LosCandelariasVillageCenterMRAplan.pdf",
-      "r2_url": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-los-candelarias-village-center-mra-plan-2001.pdf",
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
@@ -243728,7 +243746,7 @@
       "exclusion_reason": null,
       "local_path": "research/staging/queue/src-d6d3b671040d9c5c.pdf",
       "discovered_at": "2026-08-04T14:15:57.8281811Z",
-      "updated_at": "2026-08-31T04:14:35.9551127Z"
+      "updated_at": "2026-08-31T15:21:14.0742447Z"
     },
     {
       "id": "src-d6d9241cd63ba002",
@@ -245369,7 +245387,7 @@
       "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/UDD/RailYardsMasterPlan.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/RailYardsMasterPlan.pdf",
-      "r2_url": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/projects/cabq-rail-yards-master-plan-2014.pdf",
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
@@ -245415,7 +245433,7 @@
       "exclusion_reason": null,
       "local_path": "research/staging/queue/src-d83c6c8206910d55.pdf",
       "discovered_at": "2026-08-04T14:15:57.8471823Z",
-      "updated_at": "2026-08-31T04:14:35.8621769Z"
+      "updated_at": "2026-08-31T15:21:18.1649036Z"
     },
     {
       "id": "src-d8489c192d2d7edb",
@@ -255200,19 +255218,19 @@
     },
     {
       "id": "src-e1efccbd14cc5b06",
-      "status": "pending review",
-      "source_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/d2efea98-90d2-4cf1-9132-2df7f65b23a8/NMDOT%20TSMO%20Plan%20Preliminary%20Version.pdf",
+      "status": "validated",
+      "source_url": "https://www.dot.nm.gov/highway-operations-program/operations-support-division-director/intelligent-transportation-systems/",
       "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/d2efea98-90d2-4cf1-9132-2df7f65b23a8/NMDOT%20TSMO%20Plan%20Preliminary%20Version.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/operations-data/nmdot-tsmo-strategic-program-plan-2025.pdf",
+      "r2_key": "transportation/operations-data/nmdot-tsmo-strategic-program-plan-2025.pdf",
+      "r2_etag": "0c7c26066a35751621161f9f5b0297f6",
+      "r2_last_modified": "08/31/2026 09:07:28",
       "agency": "Other authoritative source",
-      "title": "NMDOT TSMO Plan Preliminary Version",
-      "date": null,
+      "title": "NMDOT Transportation Systems Management and Operations Strategic and Program Plan",
+      "date": "2025",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 5545714,
+      "checksum_sha256": "6f1ef7268a045963cbf548df9a4d1e348abfb59f5b3bed78069b00b8500e523e",
       "parent_url": "https://www.dot.nm.gov/highway-operations-program/operations-support-division-director/intelligent-transportation-systems/",
       "referring_urls": [
         "https://www.dot.nm.gov/highway-operations-program/operations-support-division-director/intelligent-transportation-systems/"
@@ -255227,23 +255245,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "source URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official NMDOT source page and authoritative file URL recorded",
+      "proposed_canonical_page": "content/transportation/operations-data.md",
+      "description": "Establishes NMDOT's statewide operations strategy, with Albuquerque-specific actions for the Regional Transportation Management Center, traffic signals, incident response, Courtesy Patrol, traveler information, communications infrastructure, performance management, and interagency coordination.",
+      "description_word_count": 29,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review.",
-        "Captured from authoritative page https://www.dot.nm.gov/highway-operations-program/operations-support-division-director/intelligent-transportation-systems/; external host was not recursively crawled."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative NMDOT PDF preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/operations-data.md",
+      "implementation_locations": [
+        "content/transportation/operations-data.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-e1efccbd14cc5b06.pdf",
       "discovered_at": "2026-08-14T23:32:59.3991818Z",
-      "updated_at": "2026-08-14T23:32:59.3991818Z"
+      "updated_at": "2026-08-31T15:19:13.5802575Z"
     },
     {
       "id": "src-e1f474f05c570b54",
@@ -275838,7 +275859,7 @@
       "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-RailroadMRA.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-RailroadMRA.pdf",
-      "r2_url": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-railroad-mra-plan-1986.pdf",
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
@@ -275884,7 +275905,7 @@
       "exclusion_reason": null,
       "local_path": "research/staging/queue/src-f4d3bc242320a9a3.pdf",
       "discovered_at": "2026-08-04T14:15:57.8341959Z",
-      "updated_at": "2026-08-31T04:14:35.996732Z"
+      "updated_at": "2026-08-31T15:21:26.1264159Z"
     },
     {
       "id": "src-f4d73106bafbe0b5",
