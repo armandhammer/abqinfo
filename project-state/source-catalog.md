@@ -865,7 +865,6 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | MRCOG Income Data | Mid-Region Council of Governments | content/city-data/demographics.md | [source](https://www.mrcog-nm.gov/205/Income) |
 | MRCOG Population and Housing Data | Mid-Region Council of Governments | content/city-data/demographics.md | [source](https://www.mrcog-nm.gov/206/Population-Housing) |
 | MRMPO 2045 Socioeconomic Forecast Interactive Map | Mid-Region Metropolitan Planning Organization | content/city-data/demographics.md | [source](https://mrcogmaps.org/Forecast2045) |
-| 2015–2019 Albuquerque Metropolitan Online Crash Report | MRCOG | content/transportation/bicycling/safety-crash-data.md | [source](https://mrmpo.maps.arcgis.com/apps/MapSeries/index.html?appid=ec395f5587744d778832207af7d86f93) |
 | 2023 AMPA ITS Architecture | MRCOG | content/transportation/operations-data.md | [source](https://www.mrcog-nm.gov/625/2023-AMPA-ITS-Architecture) |
 | Archived Crash Reports | MRCOG | content/transportation/bicycling/safety-crash-data.md | [source](https://www.mrcog-nm.gov/572/Archived-Crash-Reports) |
 | Bernalillo County Sunport Plan | MRCOG | content/transportation/transit/rail-runner.md | [source](https://www.mrcog-nm.gov/327/Bernalillo-County-Sunport-Plan) |

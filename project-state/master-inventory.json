@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-31T01:51:40.0289030Z",
+  "generated_at": "2026-08-31T02:08:28.9910104Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -26,8 +26,8 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 2,
-    "validated": 901,
-    "excluded": 815,
+    "validated": 900,
+    "excluded": 816,
     "duplicate": 944,
     "superseded": 81,
     "blocked": 0,
@@ -161926,7 +161926,7 @@
     },
     {
       "id": "src-89bcf717950c6b15",
-      "status": "validated",
+      "status": "excluded",
       "source_url": "https://mrmpo.maps.arcgis.com/apps/MapSeries/index.html?appid=ec395f5587744d778832207af7d86f93",
       "direct_file_url": null,
       "r2_url": null,
@@ -161953,26 +161953,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "official MRCOG archive page and public MRMPO ArcGIS item metadata recorded",
+      "provenance_status": "official MRCOG archive page and public MRMPO ArcGIS item metadata recorded; application retirement confirmed in a rendered browser",
       "proposed_canonical_page": "content/transportation/bicycling/safety-crash-data.md",
-      "description": "Opens MRMPO’s interactive historical crash report for the Albuquerque Metropolitan Planning Area, with mapped and summarized crash patterns covering the 2015–2019 period.",
-      "description_word_count": 22,
+      "description": null,
+      "description_word_count": 0,
       "processing_notes": [
         "Captured from authoritative page https://www.mrcog-nm.gov/572/Archived-Crash-Reports; external host was not recursively crawled.",
         "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
+        "Do not reintroduce unless a functioning authoritative replacement is found and interactively validated.",
         "Exact metadata and relevance remain pending source review.",
+        "The prior HTTP-and-metadata-only validation was a false positive and was corrected after rendered-browser review.",
         "Validated direct map application rather than substituting its ArcGIS REST or metadata page."
       ],
-      "implementation_location": "content/transportation/bicycling/safety-crash-data.md",
-      "implementation_locations": [
-        "content/transportation/bicycling/safety-crash-data.md"
-      ],
+      "implementation_location": null,
+      "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "passed: official MRCOG referral, public MRMPO ArcGIS ownership and item metadata, HTTP 200 application response, and page placement validated",
-      "exclusion_reason": null,
+      "validation_status": "failed interactive validation: ArcGIS renders an Item Replacement dialog stating the application has been retired and no replacement is available",
+      "exclusion_reason": "Retired ArcGIS application; the visible user interface states “Replacement not available,” so HTTP 200 and public item metadata do not constitute a working map.",
       "local_path": null,
       "discovered_at": "2026-08-14T23:33:00.170843Z",
-      "updated_at": "2026-08-31T01:51:39.4873154Z"
+      "updated_at": "2026-08-31T02:08:28.4780056Z"
     },
     {
       "id": "src-89bd535e1bf28f76",

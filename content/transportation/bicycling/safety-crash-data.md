@@ -54,10 +54,6 @@ Bicycle safety statistics and crash data.
 
 ## Historical Regional Crash Analysis
 
-- [2015–2019 Albuquerque Metropolitan Online Crash Report](https://mrmpo.maps.arcgis.com/apps/MapSeries/index.html?appid=ec395f5587744d778832207af7d86f93)
-
-  Opens MRMPO’s interactive historical crash report for the Albuquerque Metropolitan Planning Area, with mapped and summarized crash patterns covering the 2015–2019 period. [Official MRCOG archive page](https://www.mrcog-nm.gov/572/Archived-Crash-Reports)
-
 - [Bernalillo County Pedestrian and Bicycle Crash Data Analysis, 2010–2014](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/mrmpo-bernalillo-county-pedestrian-bicycle-crash-analysis-2010-2014.pdf)
 
   Examines pedestrian and bicycle crash severity, locations, timing, people involved, and reported contributing factors across Bernalillo County, identifying East Central Avenue as the region’s highest-crash corridor. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/2108/Bernalillo-County-Pedestrian-and-Bicycle-Crash-Data-Analysis-2010-to-2014-PDF?bidId=)
