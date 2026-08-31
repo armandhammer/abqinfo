@@ -154,6 +154,10 @@ City bicycle planning documents and master plans, including current and previous
 
   Established a citywide framework for Albuquerque's on-street bicycle facilities, identifying network needs, recommended routes, design approaches, policies, and implementation priorities.
 
+  - [Technical Appendices](https://files.abqinfo.com/transportation/bicycling/bike-plans/cabq-comprehensive-on-street-bicycle-plan-technical-appendices-2000.pdf)
+
+    Preserves the plan's supporting bicycle counts, crash analysis, public survey, route evaluations, facility costs, implementation priorities, and technical data used to develop Albuquerque's 2000 on-street bicycle network. [Official City PDF](https://www.cabq.gov/parksandrecreation/recreation/bike/documents/technical-appendices-of-the-albuquerque-comprehensive-on-street-bicycle-plan.pdf)
+
 - [1993 Trails and Bikeways Facility Plan](https://files.abqinfo.com/transportation/bicycling/bike-plans/1993-trails-and-bikeways-facility-plan.pdf)
 
   Documents Albuquerque's early citywide approach to developing connected trail and bikeway facilities, preserving the historical basis for subsequent network planning.

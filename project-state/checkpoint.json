@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-08-31T03:15:00.0000000Z",
-  "completed_item_range": "Interactive map and dashboard audit 31: all 66 queued links reviewed in a rendered browser; 54 usable applications validated, 10 supporting data/report endpoints classified, and 2 broken public links removed with working or archived replacements retained",
+  "recorded_at": "2026-08-31T04:15:35.5994292Z",
+  "completed_item_range": "Historical local planning review 31: archived and implemented seven City documents covering the 2000 on-street bicycle plan appendices, 2014 Downtown Neighborhood Area traffic study and appendices, 2014 Rail Yards master plan, and North Corridor, Los Candelarias, and Railroad redevelopment plans; withheld the separate 102.14 MiB Rail Yards variant for human review",
   "total_candidates": 6367,
   "counts_by_status": {
-    "pending review": 3589,
+    "pending review": 3581,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 4,
@@ -11,15 +11,17 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 2,
-    "validated": 899,
+    "validated": 906,
     "excluded": 817,
     "duplicate": 944,
     "superseded": 81,
     "blocked": 0,
-    "requires human review": 31
+    "requires human review": 32
   },
-  "remaining_nonterminal": 3595,
+  "remaining_nonterminal": 3587,
   "next_pending_id": "src-0004d9e0318a9df5",
-  "blockers": [],
+  "blockers": [
+    "src-16d851caed2d2c01: 107101361-byte Rail Yards Master Plan variant exceeds the 100 MB production-upload threshold; withheld pending explicit approval and unique-page comparison."
+  ],
   "resume_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/New-PendingReviewPriorityQueue.ps1"
 }

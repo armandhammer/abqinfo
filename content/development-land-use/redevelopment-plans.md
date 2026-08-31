@@ -70,6 +70,12 @@ Plans and historical records for designated Metropolitan Redevelopment Areas, wh
 
   [Official City redevelopment-area index](https://www.cabq.gov/mra/redevelopment-areas) · [Official City PDF](https://documents.cabq.gov/planning/UDD/DelReyMRA-Plan.pdf)
 
+- [Los Candelarias Village Center and Metropolitan Redevelopment Plan (2001)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-los-candelarias-village-center-mra-plan-2001.pdf)
+
+  Coordinates land use, transportation, pedestrian improvements, building design, drainage, cultural identity, economic revitalization, and implementation for a village center around Twelfth Street and Candelaria Road in the North Valley.
+
+  [Official City redevelopment-area index](https://www.cabq.gov/mra/redevelopment-areas) · [Official City PDF](https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-LosCandelariasVillageCenterMRAplan.pdf)
+
 - [McClellan Park Metropolitan Redevelopment Plan (1984; amended through 2002; retained 2017 archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-mcclellan-park-mra-plan-1984-2017.pdf)
 
   Preserves the former McClellan Park redevelopment framework, its downtown employment and residential-transition goals, boundary and project amendments, adoption record, and later consolidation into the Downtown redevelopment area.
@@ -88,11 +94,23 @@ Plans and historical records for designated Metropolitan Redevelopment Areas, wh
 
   [Official City redevelopment-area page](https://www.cabq.gov/mra/redevelopment-areas/near-heights) · [Official City PDF](https://documents.cabq.gov/planning/UDD/NearHeightsExpansionMRA-Plan.pdf)
 
+- [North Corridor Metropolitan Redevelopment Plan (2020)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-north-corridor-mra-plan-2020.pdf)
+
+  Sets revitalization strategies for Albuquerque's North Corridor along Second and Fourth Streets, addressing catalytic sites, infrastructure, trails, transportation, housing, business support, public safety, cultural identity, and redevelopment tools.
+
+  [Official City redevelopment-area page](https://www.cabq.gov/mra/redevelopment-areas/north-corridor) · [Official City PDF](https://www.cabq.gov/mra/documents/north-corridor-mra-plan-final-6-29-2020.pdf)
+
 - [North Fourth Street Metropolitan Redevelopment Plan (2010; retained 2017 archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-north-fourth-street-mra-plan-2010-2017.pdf)
 
   Preserves the retained redevelopment framework for North Fourth Street, covering corridor identity, land use, transportation, business development, neighborhoods, public investment, implementation, and the plan’s transition from sector-plan regulations.
 
   [Official City redevelopment-area index](https://www.cabq.gov/mra/redevelopment-areas) · [Official City PDF](https://documents.cabq.gov/planning/UDD/North4thStreetMRA-Plan.pdf)
+
+- [Railroad Metropolitan Redevelopment Plan (1986)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-railroad-mra-plan-1986.pdf)
+
+  Preserves Albuquerque's 1986 redevelopment framework for the Railroad area, documenting blight findings, property boundaries, acquisition and disposition authority, public improvements, financing, relocation obligations, and implementation provisions.
+
+  [Official City redevelopment-area index](https://www.cabq.gov/mra/redevelopment-areas) · [Official City PDF](https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-RailroadMRA.pdf)
 
 - [Sawmill/Wells Park Community Metropolitan Redevelopment Area Plan (2005 archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-sawmill-wells-park-mra-plan-2005.pdf)
 

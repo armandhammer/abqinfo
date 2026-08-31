@@ -14,6 +14,10 @@ Selected major development activity and the plans and datasets needed to underst
 
   [Official City PDF](https://documents.cabq.gov/planning/MasterPlans/Rail%20Yards%20Master%20Plan/Albuquerque_Rail_Yards_Master_Plan-2023-06-07.pdf)
 
+  [Original Rail Yards Master Plan (2014 archived PDF, 71.06 MiB)](https://files.abqinfo.com/development-land-use/projects/cabq-rail-yards-master-plan-2014.pdf)
+
+  Preserves the original redevelopment framework, including site history, building conditions, community goals, land use, transportation, preservation, public spaces, infrastructure, environmental constraints, development concepts, and implementation. [Official City PDF](https://documents.cabq.gov/planning/UDD/RailYardsMasterPlan.pdf)
+
 - [Highlands Central Market and Residence Inn](https://www.cabq.gov/mra/news/new-hotel-and-food-hall-break-ground-on-central-avenue)
 
   Tracks a 126-room hotel and food hall across from Presbyterian Hospital, including the project’s mixed-use role, pedestrian improvements, public redevelopment incentive, expected opening, and connection to the larger Highlands development.
