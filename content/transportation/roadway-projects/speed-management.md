@@ -42,6 +42,24 @@ Traffic calming and speed management initiatives.
 
   The City provides the program policy, toolkit, and individual traffic-calming reference documents. These are a better source for process and design choices than isolated project announcements.
 
+### Neighborhood Traffic-Calming Project Records
+
+- [Rancho Sereno/Las Terrezas Traffic-Calming Study](https://www.cabq.gov/council/find-your-councilor/district-5/district-5-projects/district-5-traffic-projects/rancho-sereno-las-terrezas-traffic-calming-study)
+
+  Documents the District 5 study of speeding on Rancho Sereno, Butterfield Trail, Las Terrezas, Calle Norteña, and Rancho Milagro, which followed the NTMP process despite the streets not meeting the program's residential-frontage eligibility rule.
+
+- [Public Meeting 1 Presentation (2021 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-rancho-sereno-las-terrezas-public-meeting-1-2021.pdf)
+
+  Documents the study area, emergency routes, crash history, speed and volume data, NTMP process, and traffic-calming options presented for Rancho Sereno, Butterfield Trail, Las Terrezas, Calle Norteña, and Rancho Milagro.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/ntmp-rancho-sereno-public-meeting-1.pdf)
+
+- [Public Meeting 2 Presentation (2022 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-rancho-sereno-las-terrezas-public-meeting-2-2022.pdf)
+
+  Records the refined traffic-calming concepts and recommendations following the first meeting, including speed cushions, lane narrowing, median treatments, intersection changes, pedestrian improvements, public feedback, and preferred options.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/ntmp-rancho-sereno-public-meeting-2-slides.pdf)
+
 ### Policy Archive
 
 - [Neighborhood Traffic Management Program Policy Manual (2015)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-ntmp-policy-manual-2015.pdf)
