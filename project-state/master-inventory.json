@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-31T03:12:55.6609930Z",
+  "generated_at": "2026-08-31T04:14:36.6064865Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,7 +18,7 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 3589,
+    "pending review": 3581,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 4,
@@ -26,12 +26,12 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 2,
-    "validated": 899,
+    "validated": 906,
     "excluded": 817,
     "duplicate": 944,
     "superseded": 81,
     "blocked": 0,
-    "requires human review": 31
+    "requires human review": 32
   },
   "next_pending_id": "src-0004d9e0318a9df5",
   "candidates": [
@@ -38085,7 +38085,7 @@
     },
     {
       "id": "src-16d851caed2d2c01",
-      "status": "pending review",
+      "status": "requires human review",
       "source_url": "https://documents.cabq.gov/planning/UDD/Rail%20Yards%20Master%20Plan.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/Rail%20Yards%20Master%20Plan.pdf",
       "r2_url": null,
@@ -38096,8 +38096,8 @@
       "title": "Rail Yards Master Plan.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 107101361,
+      "checksum_sha256": "7f73040955cc31e45f1d0f18b3a4048ab214da30cc8ea8dac357ca8a0575bd04",
       "parent_url": "https://documents.cabq.gov/planning/UDD/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/"
@@ -38118,17 +38118,23 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
+        "A smaller authoritative 74515734-byte City copy of the 2014 Rail Yards Master Plan is included in this batch; the larger copy may contain unique pages and remains available locally for later comparison.",
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 107101361 bytes (102.14 MiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Exact size: 107101361 bytes (102.14 MiB); PDF; SHA-256 7f73040955cc31e45f1d0f18b3a4048ab214da30cc8ea8dac357ca8a0575bd04.",
+        "File exceeds the 100 MB production-upload approval threshold; no R2 upload is authorized.",
+        "Not uploaded: exceeds the 100 MB production threshold and lacks explicit approval for this specific file.",
+        "PDF pages: 265; extracted text: research/staging/queue/src-16d851caed2d2c01.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "withheld: exceeds 100 MB production threshold",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-16d851caed2d2c01.pdf",
       "discovered_at": "2026-08-04T14:15:57.8461811Z",
-      "updated_at": "2026-08-04T14:15:57.8461811Z"
+      "updated_at": "2026-08-31T04:14:29.979845Z"
     },
     {
       "id": "src-16da4791a0edb197",
@@ -96427,9 +96433,9 @@
     },
     {
       "id": "src-4dd0d7313497ab4e",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/parksandrecreation/recreation/bike/documents/technical-appendices-of-the-albuquerque-comprehensive-on-street-bicycle-plan.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/parksandrecreation/recreation/bike/documents/technical-appendices-of-the-albuquerque-comprehensive-on-street-bicycle-plan.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -96437,9 +96443,9 @@
       "agency": "City of Albuquerque",
       "title": "Technical Appendices of the Albuquerque Comprehensive On-Street Bicycle Plan",
       "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "file_type": "PDF",
+      "size_bytes": 15789262,
+      "checksum_sha256": "7c2d8e369cd73039b6f2ffd188550ddb332abac393d0c4d406185dac5236f368",
       "parent_url": "https://www.cabq.gov/parksandrecreation/recreation/bike/documents",
       "referring_urls": [
         "https://www.cabq.gov/parksandrecreation/recreation/bike/documents"
@@ -96454,22 +96460,29 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "official City source page and byte-identical official file recorded",
       "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "description": "Preserves the plan's supporting bicycle counts, crash analysis, public survey, route evaluations, facility costs, implementation priorities, and technical data used to develop Albuquerque's 2000 on-street bicycle network.",
+      "description_word_count": 27,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 15789262 bytes (15.06 MiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "PDF pages: 141; extracted text: research/staging/queue/src-4dd0d7313497ab4e.txt",
+        "Representative first, midpoint, and final pages visually inspected; PDF rendered successfully.",
+        "Resolved the Plone /view wrapper to its authoritative direct PDF URL."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/bicycling/bike-plans.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/bike-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-4dd0d7313497ab4e.pdf",
       "discovered_at": "2026-08-04T14:45:04.9098149Z",
-      "updated_at": "2026-08-04T14:45:04.9098149Z"
+      "updated_at": "2026-08-31T04:14:35.7111410Z"
     },
     {
       "id": "src-4ddc850e99380009",
@@ -123649,9 +123662,9 @@
     },
     {
       "id": "src-66d6dd3f2f7408bb",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/Appendix.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/Appendix.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -123659,9 +123672,9 @@
       "agency": "City of Albuquerque",
       "title": "DNA Traffic Report Appendix",
       "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "file_type": "PDF",
+      "size_bytes": 1298813,
+      "checksum_sha256": "a4a8b68743d825ed8f52fd9738b55ae6df900597ad10dafff77183d00c2467f0",
       "parent_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/councilor-district-2-documents/"
@@ -123677,22 +123690,29 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "official City source page and byte-identical official file recorded",
       "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "description": "Preserves the Downtown study's supporting speed and traffic counts, turning movements, cost estimates, public meeting records, resident comments, analysis worksheets, and other technical documentation.",
+      "description_word_count": 24,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 1298813 bytes (1.24 MiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "PDF pages: 228; extracted text: research/staging/queue/src-66d6dd3f2f7408bb.txt",
+        "Representative first, midpoint, and final pages visually inspected; PDF rendered successfully.",
+        "Resolved the Plone /view wrapper to its authoritative direct PDF URL."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/roadway-projects/studies.md",
+      "implementation_locations": [
+        "content/transportation/roadway-projects/studies.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-66d6dd3f2f7408bb.pdf",
       "discovered_at": "2026-08-04T14:15:57.9965487Z",
-      "updated_at": "2026-08-04T14:15:57.9965487Z"
+      "updated_at": "2026-08-31T04:14:35.8132199Z"
     },
     {
       "id": "src-67031c4eaf82c3e9",
@@ -170592,9 +170612,9 @@
     },
     {
       "id": "src-917173b06523dda9",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/mra/redevelopment-areas/north-corridor/resolveuid/a8b27c5c81f44e95bc45d9bdc607b8d9",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/mra/documents/north-corridor-mra-plan-final-6-29-2020.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -170602,9 +170622,9 @@
       "agency": "City of Albuquerque",
       "title": "North Corridor Metropolitan Redevelopment Area Plan (2020)",
       "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "file_type": "PDF",
+      "size_bytes": 4098627,
+      "checksum_sha256": "91e1f29bca8a742ca5e1205e71cb5709d3589412059331c35f74339bca0ad667",
       "parent_url": "https://www.cabq.gov/mra/redevelopment-areas/north-corridor",
       "referring_urls": [
         "https://www.cabq.gov/mra/redevelopment-areas/north-corridor"
@@ -170619,22 +170639,29 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "official City source page and byte-identical official file recorded",
       "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "description": "Sets revitalization strategies for Albuquerque's North Corridor along Second and Fourth Streets, addressing catalytic sites, infrastructure, trails, transportation, housing, business support, public safety, cultural identity, and redevelopment tools.",
+      "description_word_count": 28,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 4098627 bytes (3.91 MiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "PDF pages: 56; extracted text: research/staging/queue/src-917173b06523dda9.txt",
+        "Representative first, midpoint, and final pages visually inspected; PDF rendered successfully.",
+        "Resolved opaque source link to authoritative file URL: https://www.cabq.gov/mra/documents/north-corridor-mra-plan-final-6-29-2020.pdf"
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/redevelopment-plans.md",
+      "implementation_locations": [
+        "content/development-land-use/redevelopment-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-917173b06523dda9.pdf",
       "discovered_at": "2026-08-04T14:15:58.2248078Z",
-      "updated_at": "2026-08-04T14:15:58.2248078Z"
+      "updated_at": "2026-08-31T04:14:35.9061437Z"
     },
     {
       "id": "src-917d29bdf349bf66",
@@ -233888,9 +233915,9 @@
     },
     {
       "id": "src-ce3c9f54fa83aba9",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/TrafficReportFINALJuly2014.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/TrafficReportFINALJuly2014.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -233898,9 +233925,9 @@
       "agency": "City of Albuquerque",
       "title": "DNA Traffic Report Final August 2014",
       "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "file_type": "PDF",
+      "size_bytes": 2026687,
+      "checksum_sha256": "35280e61c883281a4e0b477a79efc79d43e3bc0b82206a7c90438b5d31135a48",
       "parent_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/councilor-district-2-documents/"
@@ -233916,22 +233943,29 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "official City source page and byte-identical official file recorded",
       "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "description": "Evaluates Downtown neighborhood traffic, crashes, speeds, intersections, midblock crossings, Mountain Road safety, and public concerns, then recommends short- and long-term circulation, parking, crossing, and traffic-calming improvements.",
+      "description_word_count": 26,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 2026687 bytes (1.93 MiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "PDF pages: 27; extracted text: research/staging/queue/src-ce3c9f54fa83aba9.txt",
+        "Representative first, midpoint, and final pages visually inspected; PDF rendered successfully.",
+        "Resolved the Plone /view wrapper to its authoritative direct PDF URL."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/roadway-projects/studies.md",
+      "implementation_locations": [
+        "content/transportation/roadway-projects/studies.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-ce3c9f54fa83aba9.pdf",
       "discovered_at": "2026-08-04T14:15:58.0060609Z",
-      "updated_at": "2026-08-04T14:15:58.0060609Z"
+      "updated_at": "2026-08-31T04:14:35.7588858Z"
     },
     {
       "id": "src-ce4862f0ac271f4a",
@@ -243629,7 +243663,7 @@
     },
     {
       "id": "src-d6d3b671040d9c5c",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-LosCandelariasVillageCenterMRAplan.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-LosCandelariasVillageCenterMRAplan.pdf",
       "r2_url": null,
@@ -243640,8 +243674,8 @@
       "title": "MRA-RedevPlan-LosCandelariasVillageCenterMRAplan.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 3461766,
+      "checksum_sha256": "bd1130b9445837b351b79c20baf994de6b9ca163ee3ea220991cc8abce77b6c5",
       "parent_url": "https://documents.cabq.gov/planning/UDD/MRA/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/MRA/"
@@ -243657,22 +243691,28 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "official City source page and byte-identical official file recorded",
       "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "description": "Coordinates land use, transportation, pedestrian improvements, building design, drainage, cultural identity, economic revitalization, and implementation for a village center around Twelfth Street and Candelaria Road in the North Valley.",
+      "description_word_count": 29,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 3461766 bytes (3.30 MiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "PDF pages: 96; extracted text: research/staging/queue/src-d6d3b671040d9c5c.txt",
+        "Representative first, midpoint, and final pages visually inspected; PDF rendered successfully."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/redevelopment-plans.md",
+      "implementation_locations": [
+        "content/development-land-use/redevelopment-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-d6d3b671040d9c5c.pdf",
       "discovered_at": "2026-08-04T14:15:57.8281811Z",
-      "updated_at": "2026-08-04T14:15:57.8281811Z"
+      "updated_at": "2026-08-31T04:14:35.9551127Z"
     },
     {
       "id": "src-d6d9241cd63ba002",
@@ -245310,7 +245350,7 @@
     },
     {
       "id": "src-d83c6c8206910d55",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/UDD/RailYardsMasterPlan.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/RailYardsMasterPlan.pdf",
       "r2_url": null,
@@ -245321,8 +245361,8 @@
       "title": "RailYardsMasterPlan.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 74515734,
+      "checksum_sha256": "d761a75a08a7ece44a38dce8db7cec25540c21aa85f45b367f807b38486618d9",
       "parent_url": "https://documents.cabq.gov/planning/UDD/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/"
@@ -245338,22 +245378,28 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "official City source page and byte-identical official file recorded",
       "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "description": "Preserves the original Rail Yards redevelopment framework, including site history, building conditions, community goals, land use, transportation, preservation, public spaces, infrastructure, environmental constraints, development concepts, and implementation.",
+      "description_word_count": 27,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 74515734 bytes (71.06 MiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "PDF pages: 238; extracted text: research/staging/queue/src-d83c6c8206910d55.txt",
+        "Representative first, midpoint, and final pages visually inspected; PDF rendered successfully."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/projects.md",
+      "implementation_locations": [
+        "content/development-land-use/projects.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-d83c6c8206910d55.pdf",
       "discovered_at": "2026-08-04T14:15:57.8471823Z",
-      "updated_at": "2026-08-04T14:15:57.8471823Z"
+      "updated_at": "2026-08-31T04:14:35.8621769Z"
     },
     {
       "id": "src-d8489c192d2d7edb",
@@ -275769,7 +275815,7 @@
     },
     {
       "id": "src-f4d3bc242320a9a3",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-RailroadMRA.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-RailroadMRA.pdf",
       "r2_url": null,
@@ -275780,8 +275826,8 @@
       "title": "MRA-RedevPlan-RailroadMRA.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 1001448,
+      "checksum_sha256": "5532aaab8ab56536998e98a49a9da5499ef2dfe1c13d50d05eb390a5a42e42f5",
       "parent_url": "https://documents.cabq.gov/planning/UDD/MRA/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/MRA/"
@@ -275797,22 +275843,28 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "official City source page and byte-identical official file recorded",
       "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "description": "Preserves Albuquerque's 1986 redevelopment framework for the Railroad area, documenting blight findings, property boundaries, acquisition and disposition authority, public improvements, financing, relocation obligations, and implementation provisions.",
+      "description_word_count": 26,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 1001448 bytes (977.98 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "PDF pages: 23; extracted text: research/staging/queue/src-f4d3bc242320a9a3.txt",
+        "Representative first, midpoint, and final pages visually inspected; PDF rendered successfully."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/redevelopment-plans.md",
+      "implementation_locations": [
+        "content/development-land-use/redevelopment-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-f4d3bc242320a9a3.pdf",
       "discovered_at": "2026-08-04T14:15:57.8341959Z",
-      "updated_at": "2026-08-04T14:15:57.8341959Z"
+      "updated_at": "2026-08-31T04:14:35.9967320Z"
     },
     {
       "id": "src-f4d73106bafbe0b5",

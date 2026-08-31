@@ -50,6 +50,18 @@ Transportation studies and reports.
 
   [Official City PDF](https://www.cabq.gov/council/documents/ABQ%20Central%20Ave%20Ex%20Con%20NN%20ppt_5.3.13.pdf)
 
+### Downtown Neighborhood Area
+
+- [Downtown Neighborhood Area Traffic Study (2014 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-downtown-neighborhood-area-traffic-study-2014.pdf)
+
+  Evaluates Downtown neighborhood traffic, crashes, speeds, intersections, midblock crossings, Mountain Road safety, and public concerns, then recommends short- and long-term circulation, parking, crossing, and traffic-calming improvements.
+
+  - [Technical Appendices (2014 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-downtown-neighborhood-area-traffic-study-appendices-2014.pdf)
+
+    Preserves the Downtown study's supporting speed and traffic counts, turning movements, cost estimates, public meeting records, resident comments, analysis worksheets, and other technical documentation.
+
+  [Official City Report](https://www.cabq.gov/council/documents/councilor-district-2-documents/TrafficReportFINALJuly2014.pdf) · [Official City Appendices](https://www.cabq.gov/council/documents/councilor-district-2-documents/Appendix.pdf) · [Council District 2 Document Collection](https://www.cabq.gov/council/documents/councilor-district-2-documents/)
+
 ### East Central Avenue
 
 - [East Central Avenue Safety Study (2020 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-east-central-avenue-safety-study-2020.pdf)

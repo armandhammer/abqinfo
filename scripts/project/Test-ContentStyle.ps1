@@ -7,6 +7,7 @@ $ErrorActionPreference = 'Stop'
 $errors = [Collections.Generic.List[string]]::new()
 $allowedNestedResourcePages = @(
   'transportation/bicycling/bike-plans.md',
+  'transportation/roadway-projects/studies.md',
   'transportation/transportation-plans.md'
 )
 $allowedSecondLevelHeadings = @{
