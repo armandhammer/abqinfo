@@ -22,7 +22,8 @@ if (Test-Path -LiteralPath $OutputPath) {
     $results = @($existing.results | Where-Object { $_.id -in @($plan.items.id) -and $_.byte_identical })
   }
 }
-$selectedItems = @($selectedItems | Where-Object id -notin @($results.id))
+$completedIds = @($results | ForEach-Object { [string]$_.id })
+$selectedItems = @($selectedItems | Where-Object id -notin $completedIds)
 
 foreach ($item in $selectedItems) {
   $publicUrl = "https://files.abqinfo.com/$($item.r2_key)"
