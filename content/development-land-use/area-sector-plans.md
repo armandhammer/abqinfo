@@ -66,6 +66,12 @@ The exact former City download locations for this draft collection have not been
 
   [Official City plan library](https://www.cabq.gov/planning/plans-publications/area-sector-development-plans) · [Official City PDF](https://www.cabq.gov/council/documents/VolcanoTrailsSDPFINAL.PDF)
 
+- [Volcano Trails Environmental Planning Commission Official Notice of Decision (2011 Archived PDF)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-volcano-trails-epc-notice-of-decision-2011.pdf)
+
+  Records the Environmental Planning Commission's recommendation to approve the Volcano Trails plan, including findings, zoning analysis, agency comments, public testimony, and detailed conditions forwarded to City Council.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/EPCNODVolcanoTrails030311.pdf) · [Official City Project Archive](https://www.cabq.gov/council/projects/completed-projects/2011/volcano-trails-sector-development-plan)
+
 - [Volcano Trails Sector Development Plan Adoption Resolution R-11-211 (2011)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-volcano-trails-adoption-resolution-r-11-211-2011.pdf)
 
   Records City Council’s adoption and zoning actions for the 446-acre Volcano Trails plan area, including village center, residential districts, open space, boundaries, findings, and implementation conditions.

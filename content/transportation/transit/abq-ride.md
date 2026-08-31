@@ -34,6 +34,12 @@ ABQ Ride bus service information and data.
 
   Schedules $43.93 million for transit vehicles, West Side park-and-ride and operating facilities, shelters, facility rehabilitation, maintenance and security equipment, technology upgrades, and Central-and-Unser improvements. [Full 2007–2016 capital-program record](/city-data/capital-spending/#20072016-decade-plan)
 
+- [ABQ RIDE 2009 General Obligation Bond Capital Scope (Archived PDF)](https://files.abqinfo.com/transportation/transit/abq-ride/cabq-abq-ride-general-obligation-bond-capital-scope-2009.pdf)
+
+  Allocates 7.75 million dollars in 2009 City bond funding for buses, park-and-ride facilities, shelters, transit technology, facility rehabilitation, maintenance equipment, and security improvements.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/1abq_ride_transit-scopes.pdf) · [Official 2009 Bond Document Collection](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents)
+
 ## ABQ RIDE Forward Network Plan
 
 - [Official ABQ RIDE Forward Project Page](https://www.cabq.gov/transit/transit-programs-projects/abq-ride-forward)

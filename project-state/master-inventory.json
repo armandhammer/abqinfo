@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-31T15:21:30.6950867Z",
+  "generated_at": "2026-08-31T15:55:20.0187280Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,7 +18,7 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 3566,
+    "pending review": 3550,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 4,
@@ -26,9 +26,9 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 2,
-    "validated": 917,
-    "excluded": 822,
-    "duplicate": 944,
+    "validated": 924,
+    "excluded": 826,
+    "duplicate": 949,
     "superseded": 81,
     "blocked": 0,
     "requires human review": 31
@@ -15482,20 +15482,20 @@
     },
     {
       "id": "src-01a8eebf280d76a6",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/1abq_ride_transit-scopes.pdf/view",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/1abq_ride_transit-scopes.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/transit/abq-ride/cabq-abq-ride-general-obligation-bond-capital-scope-2009.pdf",
+      "r2_key": "transportation/transit/abq-ride/cabq-abq-ride-general-obligation-bond-capital-scope-2009.pdf",
+      "r2_etag": "9c8d2a542ea7e235b9d0903024ee1087",
+      "r2_last_modified": "08/31/2026 09:50:55",
       "agency": "City of Albuquerque",
-      "title": "1abq ride transit scopes.pdf",
-      "date": null,
+      "title": "ABQ RIDE 2009 General Obligation Bond Capital Scope",
+      "date": "2009",
       "file_type": "PDF",
       "size_bytes": 42998,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents?b_start:int=40",
+      "checksum_sha256": "4142d4f318e816e1c72c1bd00c5a0ffb019dc8e9441bee38ebcda35c838a499b",
+      "parent_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents?b_start:int=40"
       ],
@@ -15512,24 +15512,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "official City Plone document-library listing and direct item URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and authoritative file URL recorded",
+      "proposed_canonical_page": "content/transportation/transit/abq-ride.md",
+      "description": "Allocates 7.75 million dollars in 2009 City bond funding for buses, park-and-ride facilities, shelters, transit technology, facility rehabilitation, maintenance equipment, and security improvements.",
+      "description_word_count": 23,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
-        "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 42998 bytes."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative government PDF preserved without modification.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transit/abq-ride.md",
+      "implementation_locations": [
+        "content/transportation/transit/abq-ride.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-01a8eebf280d76a6.pdf",
       "discovered_at": "2026-08-14T20:11:38.3469244Z",
-      "updated_at": "2026-08-14T20:11:38.3469244Z"
+      "updated_at": "2026-08-31T15:54:41.6077385Z"
     },
     {
       "id": "src-01cfdb2a2c85130a",
@@ -20265,7 +20267,7 @@
     },
     {
       "id": "src-067da2bf9c878174",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.riometro.org/DocumentCenter/View/265/Rail-Runner-System-Map-PDF?bidId=",
       "direct_file_url": null,
       "r2_url": null,
@@ -20275,9 +20277,9 @@
       "agency": "MRCOG",
       "title": "Rail Runner System Map PDF",
       "date": null,
-      "file_type": "PDF or document (extensionless URL)",
+      "file_type": "PDF",
       "size_bytes": 3199012,
-      "checksum_sha256": null,
+      "checksum_sha256": "49b376a9c2832790ddaefaafbdc1f47eb5677d0e7566fa3c1e70ccb089c33539",
       "parent_url": "https://www.riometro.org/101/Stations-Connections",
       "referring_urls": [
         "https://riometro.org/101/",
@@ -20298,18 +20300,21 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
+        "Delivered as application/pdf; not parsed as HTML.",
         "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
+        "Downloaded exact size: 3199012 bytes (3.05 MiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review.",
-        "Delivered as application/pdf; not parsed as HTML."
+        "PDF pages: 1; extracted text: research/staging/queue/src-067da2bf9c878174.txt",
+        "Reviewed in the local planning and transit-history batch; duplicate content will not be uploaded again."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "duplicate reconciled by checksum or rendered-content comparison",
+      "exclusion_reason": "Byte-identical duplicate of the validated 2023 Rail Runner system map already archived and cross-listed on the Rail Runner and Maps pages. Canonical inventory record: src-d50cd2863da4f4be.",
+      "local_path": "research/staging/queue/src-067da2bf9c878174.pdf",
       "discovered_at": "2026-08-14T23:32:59.3466029Z",
-      "updated_at": "2026-08-14T23:32:59.3466029Z"
+      "updated_at": "2026-08-31T15:48:28.6307873Z"
     },
     {
       "id": "src-068bc196de66b50b",
@@ -71803,20 +71808,20 @@
     },
     {
       "id": "src-36aeae26d4bb7572",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/council/projects/completed-projects/2012/summit-park-north-campus-neighborhood-traffic-management-plan",
-      "direct_file_url": null,
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "direct_file_url": "https://www.cabq.gov/council/documents/north-campus-summit-park/june_2009.final_summit_park-north_campus_ntmp.pdf",
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-summit-park-north-campus-neighborhood-transportation-management-plan-2009.pdf",
+      "r2_key": "transportation/roadway-projects/speed-management/cabq-summit-park-north-campus-neighborhood-transportation-management-plan-2009.pdf",
+      "r2_etag": "2c175c83de37195fe334f703066cd70f-2",
+      "r2_last_modified": "08/31/2026 09:50:38",
       "agency": "City of Albuquerque",
-      "title": "Summit Park / North Campus Neighborhood Traffic Management Plan",
-      "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/sitemap",
+      "title": "Summit Park and North Campus Neighborhood Transportation Management Plan",
+      "date": "2009",
+      "file_type": "PDF",
+      "size_bytes": 9103723,
+      "checksum_sha256": "583b701ef4ba068051e97f3d3f08f62d1c5692e106f82aaa7fe1db5d698fb2bd",
+      "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2012/summit-park-north-campus-neighborhood-traffic-management-plan",
       "referring_urls": [
         "https://www.cabq.gov/@@sitemap",
         "https://www.cabq.gov/sitemap"
@@ -71830,22 +71835,25 @@
       "crawl_depth": 1,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and authoritative file URL recorded",
+      "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+      "description": "Documents neighborhood traffic, speed, parking, walking, bicycling, school-access, and cut-through concerns, then maps short- and long-term traffic-calming, crossing, sidewalk, bicycle, enforcement, and circulation recommendations.",
+      "description_word_count": 24,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative government PDF preserved without modification."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/roadway-projects/speed-management.md",
+      "implementation_locations": [
+        "content/transportation/roadway-projects/speed-management.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-36aeae26d4bb7572.pdf",
       "discovered_at": "2026-08-04T14:15:58.1082107Z",
-      "updated_at": "2026-08-04T14:15:58.1082107Z"
+      "updated_at": "2026-08-31T15:54:41.5776097Z"
     },
     {
       "id": "src-36c2a8c23a4f26de",
@@ -88529,7 +88537,7 @@
     },
     {
       "id": "src-465eff5cac222168",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/Goff-TCP20141002-1.pdf",
       "direct_file_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/04/Goff-TCP20141002-1.pdf",
       "r2_url": null,
@@ -88560,17 +88568,18 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
+        "Exact metadata, relevance, and terminal disposition remain pending review.",
         "Imported from deterministic scoped crawl research/discovery/pr63-bernco-finished-project-descendants.json.",
-        "Exact metadata, relevance, and terminal disposition remain pending review."
+        "Reviewed in the local planning and transit-history batch; excluded under ABQInfo relevance and durability criteria."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "excluded after relevance and durability review",
+      "exclusion_reason": "Temporary construction traffic-control sheet for the Goff Boulevard project; the substantive project plan and public information are more useful than this staging diagram.",
       "local_path": null,
       "discovered_at": "2026-08-28T22:00:29.2390943Z",
-      "updated_at": "2026-08-28T22:00:29.2390943Z"
+      "updated_at": "2026-08-31T15:48:28.8642559Z"
     },
     {
       "id": "src-466781e4dbd14835",
@@ -96489,7 +96498,7 @@
       "exclusion_reason": null,
       "local_path": "research/staging/queue/src-4dd0d7313497ab4e.pdf",
       "discovered_at": "2026-08-04T14:45:04.9098149Z",
-      "updated_at": "2026-08-31T15:21:30.1203070Z"
+      "updated_at": "2026-08-31T15:21:30.120307Z"
     },
     {
       "id": "src-4ddc850e99380009",
@@ -97854,20 +97863,20 @@
     },
     {
       "id": "src-4f52cc9a9cc25828",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/parksandrecreation/documents/manzano-four-hills-trail-map.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/parksandrecreation/open-space/facilities-map",
       "direct_file_url": "https://www.cabq.gov/parksandrecreation/documents/manzano-four-hills-trail-map.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/maps/cabq-manzano-four-hills-open-space-trail-map-2021.pdf",
+      "r2_key": "maps/cabq-manzano-four-hills-open-space-trail-map-2021.pdf",
+      "r2_etag": "dd58fe593ca7114f856c2624d5b09d1c",
+      "r2_last_modified": "08/31/2026 09:49:44",
       "agency": "City of Albuquerque",
-      "title": "Manzano/Four Hills",
-      "date": null,
+      "title": "Manzano/Four Hills Open Space Trail Map",
+      "date": "2021",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee/resolveuid/791feeb2f53374bd63675ac2f65a39cc",
+      "size_bytes": 658035,
+      "checksum_sha256": "a18f46c56430361b3ae9d214a96b20f0ca2999648fe40f1c904f0de4a0ca7044",
+      "parent_url": "https://www.cabq.gov/parksandrecreation/open-space/facilities-map",
       "referring_urls": [
         "https://www.cabq.gov/parksandrecreation/open-space/facilities-map",
         "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee/resolveuid/791feeb2f53374bd63675ac2f65a39cc"
@@ -97883,22 +97892,30 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and authoritative file URL recorded",
+      "proposed_canonical_page": "content/maps/maps.md",
+      "description": "Maps official trails, Open Space boundaries, access points, surrounding streets, and aerial context for the Manzano/Four Hills property beside Tijeras Arroyo in southeast Albuquerque.",
+      "description_word_count": 24,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 658035 bytes (642.61 KiB); SHA-256 recorded.",
+        "Representative first, midpoint, and final pages visually inspected; PDF rendered successfully.",
+        "Original authoritative government PDF preserved without modification.",
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Cross-listed on Maps and Parks & Recreation because it is both a system map and an Open Space field reference."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/maps/maps.md",
+      "implementation_locations": [
+        "content/maps/maps.md",
+        "content/public-works/parks-recreation.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-4f52cc9a9cc25828.pdf",
       "discovered_at": "2026-08-04T14:16:00.4593146Z",
-      "updated_at": "2026-08-04T14:16:00.4593146Z"
+      "updated_at": "2026-08-31T15:55:19.5242345Z"
     },
     {
       "id": "src-4f55acacff0c407f",
@@ -114833,9 +114850,9 @@
     },
     {
       "id": "src-5f452be402579a19",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.riometro.org/DocumentCenter/View/1449",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.riometro.org/DocumentCenter/View/1449/RMRTD-Budget-and-Capital-Plan-FINAL-PDF?bidId=",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -114843,9 +114860,9 @@
       "agency": "MRCOG",
       "title": "RMRTD Budget and Capital Plan FINAL (PDF)",
       "date": null,
-      "file_type": "PDF or document (extensionless URL)",
+      "file_type": "PDF",
       "size_bytes": 1130495,
-      "checksum_sha256": null,
+      "checksum_sha256": "45ba8f5ac91e8888bfe87f813b4955d3e22b518102b884a099b9aded715b7f2e",
       "parent_url": "https://www.riometro.org/Search/Results",
       "referring_urls": [
         "https://www.riometro.org/381/Rio-Metro-Publications",
@@ -114865,18 +114882,22 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
+        "Delivered as application/pdf; not parsed as HTML.",
         "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
+        "Downloaded exact size: 1130495 bytes (1.08 MiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review.",
-        "Delivered as application/pdf; not parsed as HTML."
+        "PDF pages: 32; extracted text: research/staging/queue/src-5f452be402579a19.txt",
+        "Resolved opaque source link to authoritative file URL: https://www.riometro.org/DocumentCenter/View/1449/RMRTD-Budget-and-Capital-Plan-FINAL-PDF?bidId=",
+        "Reviewed in the local planning and transit-history batch; duplicate content will not be uploaded again."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "duplicate reconciled by checksum or rendered-content comparison",
+      "exclusion_reason": "Byte-identical duplicate of the validated Rio Metro Budget and Capital Plan, FY2027-FY2031 already archived and implemented on the Rail Runner page. Canonical inventory record: src-cb3254288f19ff4a.",
+      "local_path": "research/staging/queue/src-5f452be402579a19.pdf",
       "discovered_at": "2026-08-14T23:32:59.7058365Z",
-      "updated_at": "2026-08-14T23:32:59.7058365Z"
+      "updated_at": "2026-08-31T15:48:28.5883688Z"
     },
     {
       "id": "src-5f486fbaf9a96eb1",
@@ -116582,19 +116603,19 @@
     },
     {
       "id": "src-6104954a4bb9d83f",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/neighborhood-traffic-management-plan/R1499Amendment1.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/completed-projects/2015/neighborhood-traffic-management-program-policy-manual",
       "direct_file_url": "https://www.cabq.gov/council/documents/neighborhood-traffic-management-plan/R1499Amendment1.pdf",
-      "r2_url": null,
-      "r2_key": null,
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-ntmp-r-14-99-floor-amendment-1-2015.pdf",
+      "r2_key": "transportation/roadway-projects/speed-management/cabq-ntmp-r-14-99-floor-amendment-1-2015.pdf",
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Amendment 1",
-      "date": null,
+      "title": "NTMP Adoption Resolution R-14-99 Floor Amendment 1",
+      "date": "2015",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 10229,
+      "checksum_sha256": "c20d0366dc7a7ac62c683c367f44c2b3769c13fd26251ed971ed08b2474c4659",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2015/neighborhood-traffic-management-program-policy-manual",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2015/neighborhood-traffic-management-program-policy-manual"
@@ -116609,22 +116630,24 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and authoritative file URL recorded",
+      "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+      "description": "Requires Municipal Development to report to City Council on NTMP effectiveness, applications, qualifying requests, funding availability, and anticipated implementation schedules two years after adoption.",
+      "description_word_count": 24,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/roadway-projects/speed-management.md",
+      "implementation_locations": [
+        "content/transportation/roadway-projects/speed-management.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-6104954a4bb9d83f.pdf",
       "discovered_at": "2026-08-04T14:15:58.0350649Z",
-      "updated_at": "2026-08-04T14:15:58.0350649Z"
+      "updated_at": "2026-08-31T15:54:41.4950118Z"
     },
     {
       "id": "src-61107c696c0e35b5",
@@ -128277,7 +128300,7 @@
     },
     {
       "id": "src-6b9fccdac6a4fc63",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/abq_ride_transit-scopes.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/abq_ride_transit-scopes.pdf",
       "r2_url": null,
@@ -128289,7 +128312,7 @@
       "date": null,
       "file_type": "PDF",
       "size_bytes": 42995,
-      "checksum_sha256": null,
+      "checksum_sha256": "92a31394b26eb298f7104e22756dad7f416104e97930c9fa94b23974cba80671",
       "parent_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents",
@@ -128313,18 +128336,21 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
+        "Downloaded exact size: 42995 bytes (41.99 KiB); SHA-256 recorded.",
         "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 42995 bytes."
+        "Exact authoritative-source size: 42995 bytes.",
+        "Exact metadata and relevance remain pending source review.",
+        "PDF pages: 1; extracted text: research/staging/queue/src-6b9fccdac6a4fc63.txt",
+        "Reviewed in the local planning and transit-history batch; duplicate content will not be uploaded again."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "duplicate reconciled by checksum or rendered-content comparison",
+      "exclusion_reason": "Near-identical duplicate of the 2009 ABQ RIDE bond scope: extracted text and rendered content match; the three-byte difference is non-substantive PDF metadata. Canonical inventory record: src-01a8eebf280d76a6.",
+      "local_path": "research/staging/queue/src-6b9fccdac6a4fc63.pdf",
       "discovered_at": "2026-08-14T20:11:38.4200988Z",
-      "updated_at": "2026-08-14T20:11:38.4200988Z"
+      "updated_at": "2026-08-31T15:48:28.7457681Z"
     },
     {
       "id": "src-6ba7c575abb1ac19",
@@ -155964,7 +155990,7 @@
     },
     {
       "id": "src-84a4ef1b023a9002",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2023/09/SS7397-Av.-Dolores-Huerta-La-Vega-Dr-SW-South-Valley-NM.pdf",
       "direct_file_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2023/09/SS7397-Av.-Dolores-Huerta-La-Vega-Dr-SW-South-Valley-NM.pdf",
       "r2_url": null,
@@ -155995,17 +156021,18 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
+        "Exact metadata, relevance, and terminal disposition remain pending review.",
         "Imported from deterministic scoped crawl research/discovery/pr63-bernco-current-project-descendants.json.",
-        "Exact metadata, relevance, and terminal disposition remain pending review."
+        "Reviewed in the local planning and transit-history batch; excluded under ABQInfo relevance and durability criteria."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "excluded after relevance and durability review",
+      "exclusion_reason": "Temporary detour and traffic-control sheet associated with construction; it does not add durable planning, design, or project-history information.",
       "local_path": null,
       "discovered_at": "2026-08-28T22:00:29.2390943Z",
-      "updated_at": "2026-08-28T22:00:29.2390943Z"
+      "updated_at": "2026-08-31T15:48:28.9137061Z"
     },
     {
       "id": "src-84b75fcf365f3e7e",
@@ -175347,19 +175374,19 @@
     },
     {
       "id": "src-9608715e6616b5ca",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/neighborhood-traffic-management-plan/R1499Amendment2.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/completed-projects/2015/neighborhood-traffic-management-program-policy-manual",
       "direct_file_url": "https://www.cabq.gov/council/documents/neighborhood-traffic-management-plan/R1499Amendment2.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-ntmp-r-14-99-floor-amendment-2-2015.pdf",
+      "r2_key": "transportation/roadway-projects/speed-management/cabq-ntmp-r-14-99-floor-amendment-2-2015.pdf",
+      "r2_etag": "f2976e686ca9db09f7eb8d35dcb795f5",
+      "r2_last_modified": "08/31/2026 09:50:19",
       "agency": "City of Albuquerque",
-      "title": "Amendment 2",
-      "date": null,
+      "title": "NTMP Adoption Resolution R-14-99 Floor Amendment 2",
+      "date": "2015",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 10462,
+      "checksum_sha256": "dfb6d04d8f6208d456f0add3188e2bf76cee23a106a6834d329c99e9bf190a98",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2015/neighborhood-traffic-management-program-policy-manual",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2015/neighborhood-traffic-management-program-policy-manual"
@@ -175374,22 +175401,25 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and authoritative file URL recorded",
+      "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+      "description": "Clarifies the NTMP definition of cut-through traffic as travel through a residential neighborhood without an origin or destination on the street and specifies license-plate sampling for volume analysis.",
+      "description_word_count": 28,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative government PDF preserved without modification."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/roadway-projects/speed-management.md",
+      "implementation_locations": [
+        "content/transportation/roadway-projects/speed-management.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-9608715e6616b5ca.pdf",
       "discovered_at": "2026-08-04T14:15:58.0350649Z",
-      "updated_at": "2026-08-04T14:15:58.0350649Z"
+      "updated_at": "2026-08-31T15:54:41.535052Z"
     },
     {
       "id": "src-961f64c241cee159",
@@ -180851,7 +180881,7 @@
     },
     {
       "id": "src-9bb008484007e933",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/traffic-report-8-22-25-thru-8-29-25.pdf",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/traffic-report-8-22-25-thru-8-29-25.pdf",
       "r2_url": null,
@@ -180884,16 +180914,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Reviewed in the local planning and transit-history batch; excluded under ABQInfo relevance and durability criteria."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "excluded after relevance and durability review",
+      "exclusion_reason": "Expired one-week construction traffic report from August 2025; the maintained live traffic map provides current information and this snapshot has no durable planning value.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.2938433Z",
-      "updated_at": "2026-08-04T14:15:58.2938433Z"
+      "updated_at": "2026-08-31T15:48:28.787022Z"
     },
     {
       "id": "src-9bbb867f1b8e1338",
@@ -200809,7 +200840,7 @@
     },
     {
       "id": "src-aef0ad3451266b39",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/construction-documents/example-traffic-control-plans/typicalrightlanestripedbikelaneclosure.pdf",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/construction-documents/example-traffic-control-plans/typicalrightlanestripedbikelaneclosure.pdf",
       "r2_url": null,
@@ -200842,16 +200873,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Reviewed in the local planning and transit-history batch; excluded under ABQInfo relevance and durability criteria."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "excluded after relevance and durability review",
+      "exclusion_reason": "Generic example lane-closure sheet for contractor traffic-control submissions; it is an administrative template rather than an Albuquerque plan, project record, or adopted standard.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.2478928Z",
-      "updated_at": "2026-08-04T14:15:58.2478928Z"
+      "updated_at": "2026-08-31T15:48:28.8255926Z"
     },
     {
       "id": "src-aef70c56894c5122",
@@ -207287,7 +207319,7 @@
     },
     {
       "id": "src-b4b080417eadd7ed",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.riometro.org/DocumentCenter/View/253/Rio-Metro-Regional-Transit-District-Short-Range-Plan-Fiscal-Year-2012-to-Fiscal-Year-2017-PDF",
       "direct_file_url": null,
       "r2_url": null,
@@ -207297,9 +207329,9 @@
       "agency": "MRCOG",
       "title": "Rio Metro Regional Transit District Short Range Plan FY2012-FY2017 (PDF)",
       "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "file_type": "PDF",
+      "size_bytes": 8174819,
+      "checksum_sha256": "ef85e521a253cf8ae4148da2a200c4cba898b28a7f4895626394a0b2b0842b60",
       "parent_url": "https://www.riometro.org/381/Rio-Metro-Publications",
       "referring_urls": [
         "https://www.riometro.org/381/Rio-Metro-Publications"
@@ -207320,16 +207352,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 8174819 bytes (7.80 MiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "PDF pages: 93; extracted text: research/staging/queue/src-b4b080417eadd7ed.txt",
+        "Reviewed in the local planning and transit-history batch; duplicate content will not be uploaded again."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "duplicate reconciled by checksum or rendered-content comparison",
+      "exclusion_reason": "Byte-identical duplicate of the validated Rio Metro FY2012-FY2017 short-range plan already archived and implemented on the Rail Runner page. Canonical inventory record: src-81cd99e1578af090.",
+      "local_path": "research/staging/queue/src-b4b080417eadd7ed.pdf",
       "discovered_at": "2026-08-14T23:33:00.4491193Z",
-      "updated_at": "2026-08-14T23:33:00.4491193Z"
+      "updated_at": "2026-08-31T15:48:28.6693017Z"
     },
     {
       "id": "src-b4b2a26ac036021a",
@@ -238638,19 +238673,19 @@
     },
     {
       "id": "src-d25ae9b6c27b4b2c",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/rio-grande-corridor-documents/rio_grande_corridor_plan_1989.pdf/view",
-      "direct_file_url": null,
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/documents/rio-grande-corridor-documents",
+      "direct_file_url": "https://www.cabq.gov/council/documents/rio-grande-corridor-documents/rio_grande_corridor_plan_1989.pdf",
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-rio-grande-boulevard-corridor-plan-1989.pdf",
+      "r2_key": "transportation/roadway-projects/studies/cabq-rio-grande-boulevard-corridor-plan-1989.pdf",
+      "r2_etag": "d4d7d96526487c0692df32bfd47db434-2",
+      "r2_last_modified": "08/31/2026 09:49:27",
       "agency": "City of Albuquerque",
-      "title": "Rio Grande Corridor Plan 1989",
-      "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "title": "Rio Grande Boulevard Corridor Plan",
+      "date": "1989",
+      "file_type": "PDF",
+      "size_bytes": 11209504,
+      "checksum_sha256": "01648d5f774f3150e8faac8aa231e92e077d779ef6530589ce2baeb9020d2728",
       "parent_url": "https://www.cabq.gov/council/documents/rio-grande-corridor-documents",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/rio-grande-corridor-documents"
@@ -238668,22 +238703,26 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and authoritative file URL recorded",
+      "proposed_canonical_page": "content/transportation/roadway-projects/studies.md",
+      "description": "Preserves the 1989 framework for Rio Grande Boulevard, covering land use, traffic, bicycle and pedestrian conditions, landscaping, drainage, intersections, neighborhood concerns, design alternatives, implementation priorities, and estimated costs.",
+      "description_word_count": 28,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative government PDF preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/roadway-projects/studies.md",
+      "implementation_locations": [
+        "content/transportation/roadway-projects/studies.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-d25ae9b6c27b4b2c.pdf",
       "discovered_at": "2026-08-04T15:02:43.1620099Z",
-      "updated_at": "2026-08-04T15:02:43.1620099Z"
+      "updated_at": "2026-08-31T15:54:41.4185001Z"
     },
     {
       "id": "src-d26471dab8dfbb3b",
@@ -263179,19 +263218,19 @@
     },
     {
       "id": "src-e8d18ebb99858984",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/EPCNODVolcanoTrails030311.pdf",
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/completed-projects/2011/volcano-trails-sector-development-plan",
       "direct_file_url": "https://www.cabq.gov/council/documents/EPCNODVolcanoTrails030311.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-volcano-trails-epc-notice-of-decision-2011.pdf",
+      "r2_key": "development-land-use/area-sector-plans/cabq-volcano-trails-epc-notice-of-decision-2011.pdf",
+      "r2_etag": "ff24fa8868b5f9b8453a1dea22ec2966",
+      "r2_last_modified": "08/31/2026 09:49:09",
       "agency": "City of Albuquerque",
-      "title": "Volcano Trails Official Notice of Decision",
-      "date": null,
+      "title": "Volcano Trails Environmental Planning Commission Official Notice of Decision",
+      "date": "2011",
       "file_type": "PDF",
       "size_bytes": 96283,
-      "checksum_sha256": null,
+      "checksum_sha256": "b44015e36515f3bf86e3dafdcde44313005f2812aa03722c926a1cecb162014d",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2011/volcano-trails-sector-development-plan",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2011/volcano-trails-sector-development-plan"
@@ -263206,22 +263245,26 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and authoritative file URL recorded",
+      "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+      "description": "Records the Environmental Planning Commission's recommendation to approve the Volcano Trails plan, including findings, zoning analysis, agency comments, public testimony, and detailed conditions forwarded to City Council.",
+      "description_word_count": 27,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Description reviewed against extracted text and representative visual inspection.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative government PDF preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/area-sector-plans.md",
+      "implementation_locations": [
+        "content/development-land-use/area-sector-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-e8d18ebb99858984.pdf",
       "discovered_at": "2026-08-04T14:15:58.00806Z",
-      "updated_at": "2026-08-04T14:15:58.00806Z"
+      "updated_at": "2026-08-31T15:54:41.3651528Z"
     },
     {
       "id": "src-e8df08f8bb47b981",
@@ -281557,9 +281600,9 @@
     },
     {
       "id": "src-f9fcc0f8b0cba13e",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/complete-streets/Girard%20Action%20Plan_draft_3-2013.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/documents/complete-streets/Girard%20Action%20Plan_draft_3-2013.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -281567,9 +281610,9 @@
       "agency": "City of Albuquerque",
       "title": "Girard Boulevard Complete Streets Master Plan 3.2013 Draft",
       "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "file_type": "PDF",
+      "size_bytes": 33167254,
+      "checksum_sha256": "ed2faa94c5baf53380545fc068831041c1bb3085202ec5f5b6de4334a7e8e13c",
       "parent_url": "https://www.cabq.gov/council/documents/complete-streets/",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/complete-streets/"
@@ -281591,16 +281634,20 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 33167254 bytes (31.63 MiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "File-size review: 33167254 bytes (31.63 MiB), PDF, unusually large because its 59 illustrated pages contain corridor maps, photographs, cross-sections, and design concepts. No smaller authoritative version was identified. Optimization could reduce image fidelity and is unnecessary because the unchanged authoritative file is already archived; projected R2 storage added for this duplicate is zero bytes.",
+        "PDF pages: 59; extracted text: research/staging/queue/src-f9fcc0f8b0cba13e.txt",
+        "Reviewed in the local planning and transit-history batch; duplicate content will not be uploaded again."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "duplicate reconciled by checksum or rendered-content comparison",
+      "exclusion_reason": "Byte-identical duplicate of the validated 2013 draft Girard Boulevard Complete Street Master Plan already archived on the roadway studies page. Canonical inventory record: src-175afc4f0e4b8e24.",
+      "local_path": "research/staging/queue/src-f9fcc0f8b0cba13e.pdf",
       "discovered_at": "2026-08-04T14:15:57.9885417Z",
-      "updated_at": "2026-08-04T14:15:57.9885417Z"
+      "updated_at": "2026-08-31T15:48:28.7061484Z"
     },
     {
       "id": "src-fa08a79f65ad0933",

@@ -44,6 +44,12 @@ Traffic calming and speed management initiatives.
 
 ### Neighborhood Traffic-Calming Project Records
 
+- [Summit Park and North Campus Neighborhood Transportation Management Plan (2009 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-summit-park-north-campus-neighborhood-transportation-management-plan-2009.pdf)
+
+  Documents neighborhood traffic, speed, parking, walking, bicycling, school-access, and cut-through concerns, then maps short- and long-term traffic-calming, crossing, sidewalk, bicycle, enforcement, and circulation recommendations.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/north-campus-summit-park/june_2009.final_summit_park-north_campus_ntmp.pdf) · [Official City Project Archive](https://www.cabq.gov/council/projects/completed-projects/2012/summit-park-north-campus-neighborhood-traffic-management-plan)
+
 - [Rancho Sereno/Las Terrezas Traffic-Calming Study](https://www.cabq.gov/council/find-your-councilor/district-5/district-5-projects/district-5-traffic-projects/rancho-sereno-las-terrezas-traffic-calming-study)
 
   Documents the District 5 study of speeding on Rancho Sereno, Butterfield Trail, Las Terrezas, Calle Norteña, and Rancho Milagro, which followed the NTMP process despite the streets not meeting the program's residential-frontage eligibility rule.
@@ -67,6 +73,14 @@ Traffic calming and speed management initiatives.
   Defines Albuquerque’s Neighborhood Traffic Management Program goals, eligibility, request and evaluation process, prioritization, neighborhood participation, funding, implementation, and traffic-calming strategies for local and collector streets.
 
   [Official City Council project archive](https://www.cabq.gov/council/projects/completed-projects/2015/neighborhood-traffic-management-program-policy-manual) · [Official City PDF](https://www.cabq.gov/council/documents/ntmp_policy_final_2015_lowres.pdf)
+
+- [NTMP Adoption Resolution R-14-99 Floor Amendment 1 (2015 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-ntmp-r-14-99-floor-amendment-1-2015.pdf)
+
+  Requires Municipal Development to report to City Council on NTMP effectiveness, applications, qualifying requests, funding availability, and anticipated implementation schedules two years after adoption. [Official City PDF](https://www.cabq.gov/council/documents/neighborhood-traffic-management-plan/R1499Amendment1.pdf)
+
+- [NTMP Adoption Resolution R-14-99 Floor Amendment 2 (2015 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-ntmp-r-14-99-floor-amendment-2-2015.pdf)
+
+  Clarifies the NTMP definition of cut-through traffic as travel through a residential neighborhood without an origin or destination on the street and specifies license-plate sampling for volume analysis. [Official City PDF](https://www.cabq.gov/council/documents/neighborhood-traffic-management-plan/R1499Amendment2.pdf)
 
 - [Streets and Traffic Enhancement Program Draft Policy Manual and Resolution (2014)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-step-draft-policy-manual-resolution-2014.pdf)
 

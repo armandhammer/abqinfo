@@ -142,7 +142,15 @@ Transportation studies and reports.
 
   [Official City PDF](https://www.cabq.gov/council/documents/south-yale-blvd/Concept%20Plan%20-%20Segment%203.pdf)
 
-- [Rio Grande Boulevard Complete Street Concept Plan (2017 unadopted archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-rio-grande-boulevard-complete-street-concept-plan-2017.pdf)
+### Rio Grande Boulevard
+
+- [Rio Grande Boulevard Corridor Plan (1989 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-rio-grande-boulevard-corridor-plan-1989.pdf)
+
+  Preserves the 1989 framework for Rio Grande Boulevard, covering land use, traffic, bicycle and pedestrian conditions, landscaping, drainage, intersections, neighborhood concerns, design alternatives, implementation priorities, and estimated costs.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/rio-grande-corridor-documents/rio_grande_corridor_plan_1989.pdf) · [Official City Document Collection](https://www.cabq.gov/council/documents/rio-grande-corridor-documents)
+
+- [Rio Grande Boulevard Complete Street Concept Plan (2017 Unadopted Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-rio-grande-boulevard-complete-street-concept-plan-2017.pdf)
 
   Presents the City's unadopted 2017 Rio Grande Boulevard Complete Street concept plan, documenting traffic, crashes, walking, bicycling, and transit conditions; evaluating corridor and intersection alternatives; recording public engagement; and identifying preferred improvements from south of Central Avenue through the I-40 area.
 
