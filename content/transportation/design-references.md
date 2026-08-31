@@ -119,6 +119,10 @@ Reference drawings, engineering details, and technical guidance related to trans
 
 ### Supplemental City Guidance
 
+- [Development Process Manual Chapter 28: Improvements Within the Public Right of Way (2015 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-chapter-28-right-of-way-2015.pdf)
+
+  Preserves the pre-2020 City standards for right-of-way landscaping, irrigation, street trees, sight-distance triangles, medians, buffers, and maintenance. [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/DPM-Chapter28-Adopted.pdf) · [Development Process placement](/development-land-use/development-process/#historic-manual-chapters)
+
 - [City Turn-Bay Standards — 2024 (archived PDF)](https://files.abqinfo.com/transportation/design-references/cabq-turn-bay-standards-2024.pdf)
 
   Provides the City's 2024 standard drawings for left- and right-turn-bay geometry, tapers, storage lengths, pavement markings, medians, bicycle-lane interactions, and intersection applications.

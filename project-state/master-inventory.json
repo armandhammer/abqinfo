@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-31T15:55:20.0187280Z",
+  "generated_at": "2026-08-31T19:58:05.2380213Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,7 +18,7 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 3550,
+    "pending review": 3535,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 4,
@@ -26,10 +26,10 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 2,
-    "validated": 924,
-    "excluded": 826,
-    "duplicate": 949,
-    "superseded": 81,
+    "validated": 932,
+    "excluded": 831,
+    "duplicate": 950,
+    "superseded": 82,
     "blocked": 0,
     "requires human review": 31
   },
@@ -30225,20 +30225,20 @@
     },
     {
       "id": "src-0fc0e6c184ce2b77",
-      "status": "pending review",
-      "source_url": "https://www.dot.nm.gov/wp-content/uploads/2024/03/NMDOT-Annual-Report-to-NHTSA.12.29.22.pdf",
+      "status": "validated",
+      "source_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/traffic-safety/",
       "direct_file_url": "https://www.dot.nm.gov/wp-content/uploads/2024/03/NMDOT-Annual-Report-to-NHTSA.12.29.22.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/bicycling/safety-crash-data/nmdot-traffic-safety-annual-report-2022.pdf",
+      "r2_key": "transportation/bicycling/safety-crash-data/nmdot-traffic-safety-annual-report-2022.pdf",
+      "r2_etag": "3280a3c7ebbefd53ba3cd39062ebd538",
+      "r2_last_modified": "08/31/2026 13:40:22",
       "agency": "NMDOT",
-      "title": "NMDOT Motorcycle Annual Report",
-      "date": null,
+      "title": "NMDOT Traffic Safety Division Annual Report",
+      "date": "2022",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/traffic-safety/motorcycle-safety/?programInfo=education",
+      "size_bytes": 3382593,
+      "checksum_sha256": "e33a3452c3d0816bdc024d45c67561a17624b0bb26f4bcab1488f3de4c429cee",
+      "parent_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/traffic-safety/",
       "referring_urls": [
         "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/traffic-safety/motorcycle-safety/?programInfo=education"
       ],
@@ -30252,22 +30252,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and authoritative file URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/safety-crash-data.md",
+      "description": "Documents statewide traffic-safety grants, enforcement, education, DWI courts, crash records, motorcycle and occupant-protection programs, including Albuquerque Police Department cases and Bernalillo County court initiatives during federal fiscal year 2022.",
+      "description_word_count": 29,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review."
+        "Description reviewed against extracted text and representative visual inspection where applicable.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative government file preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/bicycling/safety-crash-data.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/safety-crash-data.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-0fc0e6c184ce2b77.pdf",
       "discovered_at": "2026-08-14T23:33:00.0165991Z",
-      "updated_at": "2026-08-14T23:33:00.0165991Z"
+      "updated_at": "2026-08-31T19:47:33.8454189Z"
     },
     {
       "id": "src-0fc49a04d2900975",
@@ -45701,7 +45705,7 @@
     },
     {
       "id": "src-1e24148e3ff0c970",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.bernco.gov/community-services/south-valley-mainstreet",
       "direct_file_url": null,
       "r2_url": null,
@@ -45732,17 +45736,18 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
+        "Exact metadata, relevance, and terminal disposition remain pending review.",
         "Imported from deterministic scoped crawl research/discovery/pr63-bernco-current-project-descendants.json.",
-        "Exact metadata, relevance, and terminal disposition remain pending review."
+        "Reviewed in the safety, capital, and historical-records batch; excluded under ABQInfo relevance and durability criteria."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "excluded after relevance, durability, and informational-value review",
+      "exclusion_reason": "Brief South Valley MainStreet program landing page with generic program background; it provides no substantive Albuquerque plan, project analysis, map, dataset, or archival document.",
       "local_path": null,
       "discovered_at": "2026-08-28T22:00:29.2390943Z",
-      "updated_at": "2026-08-28T22:00:29.2390943Z"
+      "updated_at": "2026-08-31T19:39:41.9017184Z"
     },
     {
       "id": "src-1e415e4c06cfba06",
@@ -72037,19 +72042,19 @@
     },
     {
       "id": "src-370fed4be1f1effa",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/r-07-12_criteria_resolution.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/r-07-12_criteria_resolution.pdf",
-      "r2_url": null,
-      "r2_key": null,
+      "r2_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-capital-improvements-priorities-resolution-r-2008-017.pdf",
+      "r2_key": "city-data/capital-spending/cabq-capital-improvements-priorities-resolution-r-2008-017.pdf",
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "r 07 12 criteria resolution.pdf",
-      "date": null,
+      "title": "Capital Improvements Plan Priorities and Scoring Resolution R-2008-017",
+      "date": "2008",
       "file_type": "PDF",
       "size_bytes": 1163575,
-      "checksum_sha256": null,
+      "checksum_sha256": "17c75c9df5676a0292d824b63f38093b2142d78a0551dd3d0af23798629ebd5e",
       "parent_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents",
@@ -72067,24 +72072,25 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "official City Plone document-library listing and direct item URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and authoritative file URL recorded",
+      "proposed_canonical_page": "content/city-data/capital-spending.md",
+      "description": "Preserves the enacted resolution establishing Albuquerque capital-project priorities, evaluation criteria, scoring weights, set-asides, and proposed allocations for the 2009 General Obligation Bond Program and related decade-plan decisions.",
+      "description_word_count": 27,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
-        "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 1163575 bytes."
+        "Description reviewed against extracted text and representative visual inspection where applicable.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative government file preserved without modification."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/city-data/capital-spending.md",
+      "implementation_locations": [
+        "content/city-data/capital-spending.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-370fed4be1f1effa.pdf",
       "discovered_at": "2026-08-14T20:11:38.6031911Z",
-      "updated_at": "2026-08-14T20:11:38.6031911Z"
+      "updated_at": "2026-08-31T19:58:04.5586872Z"
     },
     {
       "id": "src-37142634567f125a",
@@ -76025,19 +76031,19 @@
     },
     {
       "id": "src-3b2b9707e1ba4f66",
-      "status": "pending review",
-      "source_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/ea5a2963-e297-4087-8710-6e745bdb5ddd/NM%20Uniform%20Crash%20Report%20Manual.pdf",
+      "status": "validated",
+      "source_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/traffic-safety/traffic-records/",
       "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/ea5a2963-e297-4087-8710-6e745bdb5ddd/NM%20Uniform%20Crash%20Report%20Manual.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/bicycling/safety-crash-data/nmdot-uniform-crash-report-instruction-manual-2019.pdf",
+      "r2_key": "transportation/bicycling/safety-crash-data/nmdot-uniform-crash-report-instruction-manual-2019.pdf",
+      "r2_etag": "f9344db16ea542a96cd8e5525eab5bf2-3",
+      "r2_last_modified": "08/31/2026 13:40:40",
       "agency": "Other authoritative source",
-      "title": "NM Uniform Crash Report Manual for Law Enforcement",
-      "date": null,
+      "title": "New Mexico Uniform Crash Report Instruction Manual",
+      "date": "2019",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 20991215,
+      "checksum_sha256": "d58597f2e9f7e0befc45b39077d65b98310472aeb0ca72d6d771f4f93e672f62",
       "parent_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/traffic-safety/traffic-records/",
       "referring_urls": [
         "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/traffic-safety/traffic-records/",
@@ -76052,23 +76058,26 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "source URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and authoritative file URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/safety-crash-data.md",
+      "description": "Defines New Mexico crash-reporting thresholds, terminology, roadway and vehicle fields, pedestrian and bicyclist actions, contributing factors, diagrams, and submission rules underlying Albuquerque-area crash datasets and safety analysis.",
+      "description_word_count": 27,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review.",
-        "Captured from authoritative page https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/traffic-safety/traffic-records/; external host was not recursively crawled."
+        "Description reviewed against extracted text and representative visual inspection where applicable.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative government file preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/bicycling/safety-crash-data.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/safety-crash-data.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-3b2b9707e1ba4f66.pdf",
       "discovered_at": "2026-08-14T23:33:00.4018298Z",
-      "updated_at": "2026-08-14T23:33:00.4018298Z"
+      "updated_at": "2026-08-31T19:57:48.8271763Z"
     },
     {
       "id": "src-3b45c3557a8dfd40",
@@ -127477,7 +127486,7 @@
     },
     {
       "id": "src-6abec66e07430172",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2023/09/Bridge-Construction-Notice-8.1-MAP.pdf",
       "direct_file_url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2023/09/Bridge-Construction-Notice-8.1-MAP.pdf",
       "r2_url": null,
@@ -127488,8 +127497,8 @@
       "title": "Please see the attached access map.",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 2808526,
+      "checksum_sha256": "aaf87983e54c9f1b23928bb97da82682fb1ed8362d3117b94a4be7b259b42762",
       "parent_url": "https://www.bernco.gov/public-works/blog/2021/04/16/bridge-boulevard-phase-2/",
       "referring_urls": [
         "https://www.bernco.gov/public-works/blog/2021/04/16/bridge-boulevard-phase-2/"
@@ -127508,17 +127517,20 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
+        "Downloaded exact size: 2808526 bytes (2.68 MiB); SHA-256 recorded.",
+        "Exact metadata, relevance, and terminal disposition remain pending review.",
         "Imported from deterministic scoped crawl research/discovery/pr63-bernco-current-project-descendants.json.",
-        "Exact metadata, relevance, and terminal disposition remain pending review."
+        "PDF pages: 1; extracted text: research/staging/queue/src-6abec66e07430172.txt",
+        "Reviewed in the safety, capital, and historical-records batch; excluded under ABQInfo relevance and durability criteria."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "excluded after relevance, durability, and informational-value review",
+      "exclusion_reason": "Temporary 2023 one-page bridge-construction detour map; it has no durable planning analysis and is obsolete after construction access changed.",
+      "local_path": "research/staging/queue/src-6abec66e07430172.pdf",
       "discovered_at": "2026-08-28T22:00:29.2390943Z",
-      "updated_at": "2026-08-28T22:00:29.2390943Z"
+      "updated_at": "2026-08-31T19:39:41.8649638Z"
     },
     {
       "id": "src-6ac840c695ebd756",
@@ -127836,19 +127848,19 @@
     },
     {
       "id": "src-6b44e57d517969e1",
-      "status": "pending review",
-      "source_url": "https://www.cabq.gov/council/documents/neighborhood-traffic-management-plan/2014.07.17%20-%20NTMP%20Public%20Concerns-Comments.doc",
-      "direct_file_url": null,
-      "r2_url": null,
-      "r2_key": null,
+      "status": "validated",
+      "source_url": "https://www.cabq.gov/council/projects/completed-projects/2015/neighborhood-traffic-management-program-policy-manual",
+      "direct_file_url": "https://www.cabq.gov/council/documents/neighborhood-traffic-management-plan/2014.07.17%20-%20NTMP%20Public%20Concerns-Comments.doc",
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-ntmp-public-meeting-comments-2010.doc",
+      "r2_key": "transportation/roadway-projects/speed-management/cabq-ntmp-public-meeting-comments-2010.doc",
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Comments made at public meetings",
-      "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "title": "Neighborhood Traffic Management Program Public Meeting Comments",
+      "date": "2010",
+      "file_type": "DOC",
+      "size_bytes": 49152,
+      "checksum_sha256": "11f47f5659927897fe34567b9d2e14e322fe02e551180cb5b7999ca655fd4949",
       "parent_url": "https://www.cabq.gov/council/projects/completed-projects/2015/neighborhood-traffic-management-program-policy-manual",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/completed-projects/2015/neighborhood-traffic-management-program-policy-manual"
@@ -127863,22 +127875,25 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and authoritative file URL recorded",
+      "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+      "description": "Preserves questions, concerns, and City responses from four quadrant meetings about speed humps, emergency access, enforcement, neighborhood voting, funding, eligibility, public notice, and development of Albuquerque traffic-calming policy.",
+      "description_word_count": 28,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Description reviewed against extracted text and representative visual inspection where applicable.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative government file preserved without modification."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/roadway-projects/speed-management.md",
+      "implementation_locations": [
+        "content/transportation/roadway-projects/speed-management.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-6b44e57d517969e1.doc",
       "discovered_at": "2026-08-04T14:15:58.0330666Z",
-      "updated_at": "2026-08-04T14:15:58.0330666Z"
+      "updated_at": "2026-08-31T19:47:34.1523164Z"
     },
     {
       "id": "src-6b548f9d3975e5a8",
@@ -157566,19 +157581,19 @@
     },
     {
       "id": "src-85b380f017be32be",
-      "status": "pending review",
-      "source_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/ce246b86-4e7f-45c1-89bd-b90c33be27b3/2025%20New%20Mexico%20Occupant%20Seat%20Belt%20Observation%20Study.pdf",
+      "status": "validated",
+      "source_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/traffic-safety/",
       "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/ce246b86-4e7f-45c1-89bd-b90c33be27b3/2025%20New%20Mexico%20Occupant%20Seat%20Belt%20Observation%20Study.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/bicycling/safety-crash-data/nmdot-occupant-seat-belt-observation-study-2025.pdf",
+      "r2_key": "transportation/bicycling/safety-crash-data/nmdot-occupant-seat-belt-observation-study-2025.pdf",
+      "r2_etag": "3eb65d435d823a1700188cdc6aed4676-3",
+      "r2_last_modified": "08/31/2026 13:40:58",
       "agency": "Other authoritative source",
-      "title": "2025 New Mexico Occupant Seatbelt Observation Study compressed.pdf",
-      "date": null,
+      "title": "New Mexico Occupant Seat Belt Observation Study",
+      "date": "2025",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 22878457,
+      "checksum_sha256": "d16bfb5b33a6502196856bfc97e2e44058a0691eb723ffe4be68266d0dc2f47b",
       "parent_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/traffic-safety/",
       "referring_urls": [
         "https://www.dot.nm.gov/multimodal-planning-and-programs/traffic-safety/",
@@ -157593,23 +157608,26 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "source URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and authoritative file URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/safety-crash-data.md",
+      "description": "Reports statistically designed daytime and nighttime seat-belt observations, statewide trends, vehicle and occupant comparisons, and nighttime sampling that includes Bernalillo County among seven selected New Mexico counties.",
+      "description_word_count": 27,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review.",
-        "Captured from authoritative page https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/traffic-safety/; external host was not recursively crawled."
+        "Description reviewed against extracted text and representative visual inspection where applicable.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative government file preserved without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/bicycling/safety-crash-data.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/safety-crash-data.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-85b380f017be32be.pdf",
       "discovered_at": "2026-08-14T23:32:59.9044381Z",
-      "updated_at": "2026-08-14T23:32:59.9044381Z"
+      "updated_at": "2026-08-31T19:57:53.1501773Z"
     },
     {
       "id": "src-85c6a14af1cfa182",
@@ -167011,19 +167029,19 @@
     },
     {
       "id": "src-8e8e799fe1441d72",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-bond-documents/criteria-resolution.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-bond-documents/criteria-resolution.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-capital-improvements-priorities-resolution-r-2006-089.pdf",
+      "r2_key": "city-data/capital-spending/cabq-capital-improvements-priorities-resolution-r-2006-089.pdf",
+      "r2_etag": "9697e2c9f32ce9baddbec867ad41d82f",
+      "r2_last_modified": "08/31/2026 13:41:30",
       "agency": "City of Albuquerque",
-      "title": "criteria resolution.pdf",
-      "date": null,
+      "title": "Capital Improvements Plan Priorities and Scoring Resolution R-2006-089",
+      "date": "2006",
       "file_type": "PDF",
       "size_bytes": 1608508,
-      "checksum_sha256": null,
+      "checksum_sha256": "7bf52a4be28fd288152bb837dbc84befa70031a982d009744efbdcbead7f452d",
       "parent_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-bond-documents",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-bond-documents"
@@ -167040,24 +167058,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "official City Plone document-library listing and direct item URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and authoritative file URL recorded",
+      "proposed_canonical_page": "content/city-data/capital-spending.md",
+      "description": "Adopts Albuquerque priorities, criteria, weights, and funding allocations for evaluating the 2007 capital program, including infrastructure rehabilitation, adopted plans, public safety, growth, neighborhood needs, and operating-budget effects.",
+      "description_word_count": 27,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
-        "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 1608508 bytes."
+        "Description reviewed against extracted text and representative visual inspection where applicable.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative government file preserved without modification.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/city-data/capital-spending.md",
+      "implementation_locations": [
+        "content/city-data/capital-spending.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-8e8e799fe1441d72.pdf",
       "discovered_at": "2026-08-14T20:11:38.0992367Z",
-      "updated_at": "2026-08-14T20:11:38.0992367Z"
+      "updated_at": "2026-08-31T19:57:59.5745217Z"
     },
     {
       "id": "src-8e8f0fe6bb5b0c7a",
@@ -171495,7 +171515,7 @@
     },
     {
       "id": "src-9241cf6ad86e0d8b",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/ad63750e-abcd-407b-8033-c53d12074316/PTASP-National-Safety-Plan-Webinar-08-13-2024.pdf",
       "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/ad63750e-abcd-407b-8033-c53d12074316/PTASP-National-Safety-Plan-Webinar-08-13-2024.pdf",
       "r2_url": null,
@@ -171506,8 +171526,8 @@
       "title": "FTA Presentation on Public Transportation Agency Safety Plans (August 2024) (pdf)",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 946471,
+      "checksum_sha256": "8410f9cff07d4fdfc163c9ed21efdb738d17da26a9751ba1b37fa9dc42bfb022",
       "parent_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/",
       "referring_urls": [
         "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/",
@@ -171527,18 +171547,21 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
+        "Captured from authoritative page https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/; external host was not recursively crawled.",
         "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
+        "Downloaded exact size: 946471 bytes (924.29 KiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review.",
-        "Captured from authoritative page https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/; external host was not recursively crawled."
+        "PDF pages: 45; extracted text: research/staging/queue/src-9241cf6ad86e0d8b.txt",
+        "Reviewed in the safety, capital, and historical-records batch; excluded under ABQInfo relevance and durability criteria."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "excluded after relevance, durability, and informational-value review",
+      "exclusion_reason": "Generic federal webinar slides explaining nationwide transit-agency safety-plan rules; the material contains no Albuquerque, Rio Metro, or New Mexico analysis or project record.",
+      "local_path": "research/staging/queue/src-9241cf6ad86e0d8b.pdf",
       "discovered_at": "2026-08-14T23:32:59.4681577Z",
-      "updated_at": "2026-08-14T23:32:59.4681577Z"
+      "updated_at": "2026-08-31T19:39:41.7984324Z"
     },
     {
       "id": "src-9251b4bcd4d1b33b",
@@ -174850,7 +174873,7 @@
     },
     {
       "id": "src-959643609168b387",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/DNATrafficReportFinalDRAFTFeb2014.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -174861,8 +174884,8 @@
       "title": "DNA Traffic Report Draft Feb 2014",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 171421,
+      "checksum_sha256": "a03e133c3f4b3da7407af382dce62d0acb91ca3d7b50d37e68a2765559ccbf51",
       "parent_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/councilor-district-2-documents/"
@@ -174884,16 +174907,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 171421 bytes (167.40 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Reviewed in the safety, capital, and historical-records batch; superseded draft will not be uploaded."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "superseded by later final authoritative report",
+      "exclusion_reason": "February 2014 draft of the Downtown Neighborhood Area Traffic Study; the completed August 2014 report and appendix are already archived and implemented. Canonical final record: src-ce3c9f54fa83aba9.",
+      "local_path": "research/staging/queue/src-959643609168b387.bin",
       "discovered_at": "2026-08-04T14:15:58.0020603Z",
-      "updated_at": "2026-08-04T14:15:58.0020603Z"
+      "updated_at": "2026-08-31T19:39:41.6870443Z"
     },
     {
       "id": "src-959e56eb2708523a",
@@ -200610,19 +200635,19 @@
     },
     {
       "id": "src-aec47259ed0c7711",
-      "status": "pending review",
-      "source_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/501791ba-8bbc-470f-af3d-a1db3b03e50c/2026%20Transit%20Compensation%20Study.pdf",
+      "status": "validated",
+      "source_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/",
       "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/501791ba-8bbc-470f-af3d-a1db3b03e50c/2026%20Transit%20Compensation%20Study.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/transit/abq-ride/nmdot-transit-compensation-study-2026.pdf",
+      "r2_key": "transportation/transit/abq-ride/nmdot-transit-compensation-study-2026.pdf",
+      "r2_etag": "923dc5e5ef7a2a4de4a6d694b6bec3c4",
+      "r2_last_modified": "08/31/2026 13:41:14",
       "agency": "Other authoritative source",
-      "title": "2026 Transit Compensation Study",
-      "date": null,
+      "title": "NMDOT Transit Compensation Study",
+      "date": "2026",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 2243870,
+      "checksum_sha256": "c5be2164a3ef69f69cb25f81ca12660b431e1954867d5505bd5783cc35dcc03b",
       "parent_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/",
       "referring_urls": [
         "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/",
@@ -200637,23 +200662,26 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "source URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and authoritative file URL recorded",
+      "proposed_canonical_page": "content/transportation/transit/abq-ride.md",
+      "description": "Compares NMDOT transit salaries with peer agencies and positions, preserving ABQ RIDE and Rio Metro pay-range benchmarks used to evaluate market competitiveness, recruitment, retention, and potential compensation adjustments.",
+      "description_word_count": 28,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review.",
-        "Captured from authoritative page https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/; external host was not recursively crawled."
+        "Description reviewed against extracted text and representative visual inspection where applicable.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative government file preserved without modification.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transit/abq-ride.md",
+      "implementation_locations": [
+        "content/transportation/transit/abq-ride.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-aec47259ed0c7711.pdf",
       "discovered_at": "2026-08-14T23:32:59.8173648Z",
-      "updated_at": "2026-08-14T23:32:59.8173648Z"
+      "updated_at": "2026-08-31T19:47:33.985252Z"
     },
     {
       "id": "src-aece84c62701c551",
@@ -206539,9 +206567,9 @@
     },
     {
       "id": "src-b40aa4022680f9a6",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/daefacec-f816-4f53-80d7-092bb77945ca/Uniform-Crash-Report-Fillable_11.19.18-Protected-2.pdf",
-      "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/daefacec-f816-4f53-80d7-092bb77945ca/Uniform-Crash-Report-Fillable_11.19.18-Protected-2.pdf",
+      "direct_file_url": "https://realfilef260a66b364d453e91ff9b3fedd494dc.s3.amazonaws.com/daefacec-f816-4f53-80d7-092bb77945ca?AWSAccessKeyId=AKIAJBKPT2UF7EZ6B7YA&Expires=1788206494&Signature=%2BJ1DXWZiPB21JYIRmGIO4KFRyUI%3D&response-content-disposition=inline%3B%20filename%3D%22Uniform-Crash-Report-Fillable_11.19.18-Protected-2.pdf%22&response-content-type=application%2Fpdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -206550,8 +206578,8 @@
       "title": "New Mexico UCR form",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 4726980,
+      "checksum_sha256": "9fe88a6edfa9448015186d1c1f5c1a43085fb6cd0e55fce217d2a119bad72228",
       "parent_url": "https://www.dot.nm.gov/traffic-records-system/",
       "referring_urls": [
         "https://www.dot.nm.gov/traffic-records-system/"
@@ -206571,18 +206599,22 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
+        "Captured from authoritative page https://www.dot.nm.gov/traffic-records-system/; external host was not recursively crawled.",
         "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
+        "Downloaded exact size: 4726980 bytes (4.51 MiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review.",
-        "Captured from authoritative page https://www.dot.nm.gov/traffic-records-system/; external host was not recursively crawled."
+        "PDF pages: 5; extracted text: research/staging/queue/src-b40aa4022680f9a6.txt",
+        "Resolved opaque source link to authoritative file URL: https://realfilef260a66b364d453e91ff9b3fedd494dc.s3.amazonaws.com/daefacec-f816-4f53-80d7-092bb77945ca?AWSAccessKeyId=AKIAJBKPT2UF7EZ6B7YA&Expires=1788206494&Signature=%2BJ1DXWZiPB21JYIRmGIO4KFRyUI%3D&response-content-disposition=inline%3B%20filename%3D%22Uniform-Crash-Report-Fillable_11.19.18-Protected-2.pdf%22&response-content-type=application%2Fpdf",
+        "Reviewed in the safety, capital, and historical-records batch; excluded under ABQInfo relevance and durability criteria."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "excluded after relevance, durability, and informational-value review",
+      "exclusion_reason": "Blank operational Uniform Crash Report form; the field-by-field instruction manual is the durable explanatory source useful to ABQInfo readers.",
+      "local_path": "research/staging/queue/src-b40aa4022680f9a6.pdf",
       "discovered_at": "2026-08-14T23:32:59.9241213Z",
-      "updated_at": "2026-08-14T23:32:59.9241213Z"
+      "updated_at": "2026-08-31T19:39:41.8335135Z"
     },
     {
       "id": "src-b4107f69f82d97be",
@@ -215386,7 +215418,7 @@
     },
     {
       "id": "src-bce677e29552aeab",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan",
       "direct_file_url": null,
       "r2_url": null,
@@ -215419,16 +215451,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Reviewed in the safety, capital, and historical-records batch; duplicate pathway will not be implemented again."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "duplicate source pathway reconciled",
+      "exclusion_reason": "Duplicate project landing page for the validated North Fourth Street Rank III Corridor Plan City Council draft already archived and implemented. Canonical inventory record: src-6479e8efc5bcc2b6.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.1072108Z",
-      "updated_at": "2026-08-04T14:15:58.1072108Z"
+      "updated_at": "2026-08-31T19:39:41.7305403Z"
     },
     {
       "id": "src-bd084d192e7b78ce",
@@ -236955,7 +236988,7 @@
     },
     {
       "id": "src-d0ebda4d0aec5782",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/8-25-exhibit-1-360-degree-feedback-development-plan-city-attorney-evaluation.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/8-25-exhibit-1-360-degree-feedback-development-plan-city-attorney-evaluation.pdf",
       "r2_url": null,
@@ -236966,8 +236999,8 @@
       "title": "Exhibit 1 - Report",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 715128,
+      "checksum_sha256": "4be9c34783f8986e2589afedf8e35323cd0c35bc144c89fd2df55d530800b210",
       "parent_url": "https://www.cabq.gov/council/projects/current-projects/city-attorney-evaluation-report",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/current-projects/city-attorney-evaluation-report"
@@ -236990,16 +237023,19 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 715128 bytes (698.37 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "PDF pages: 16; extracted text: research/staging/queue/src-d0ebda4d0aec5782.txt",
+        "Reviewed in the safety, capital, and historical-records batch; excluded under ABQInfo relevance and durability criteria."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "excluded after relevance, durability, and informational-value review",
+      "exclusion_reason": "City Attorney employee-evaluation exhibit; unrelated to ABQInfo transportation, development, public works, budget, mapping, or durable civic-data scope.",
+      "local_path": "research/staging/queue/src-d0ebda4d0aec5782.pdf",
       "discovered_at": "2026-08-04T14:45:03.8672514Z",
-      "updated_at": "2026-08-04T14:45:03.8672514Z"
+      "updated_at": "2026-08-31T19:39:41.7629347Z"
     },
     {
       "id": "src-d0ed674dd8fe9559",
@@ -260617,19 +260653,19 @@
     },
     {
       "id": "src-e6c9a8cffdca81f1",
-      "status": "pending review",
-      "source_url": "https://documents.cabq.gov/planning/development-process-manual/DPM-Chapter28-Adopted.pdf",
+      "status": "validated",
+      "source_url": "https://documents.cabq.gov/planning/development-process-manual/",
       "direct_file_url": "https://documents.cabq.gov/planning/development-process-manual/DPM-Chapter28-Adopted.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-chapter-28-right-of-way-2015.pdf",
+      "r2_key": "development-land-use/development-process/cabq-dpm-chapter-28-right-of-way-2015.pdf",
+      "r2_etag": "eccb23047008ddcf6c570b48375a672e",
+      "r2_last_modified": "08/31/2026 13:42:04",
       "agency": "City of Albuquerque",
-      "title": "DPM-Chapter28-Adopted.pdf",
-      "date": null,
+      "title": "Development Process Manual Chapter 28: Improvements Within the Public Right of Way",
+      "date": "2015",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 2106713,
+      "checksum_sha256": "af26bfb07daa541ad5e6ff1bcd91ab942cc2d30244e00dc009925716ce309187",
       "parent_url": "https://documents.cabq.gov/planning/development-process-manual/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/development-process-manual/"
@@ -260644,22 +260680,28 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and authoritative file URL recorded",
+      "proposed_canonical_page": "content/development-land-use/development-process.md",
+      "description": "Preserves the adopted predecessor standards for landscaping, irrigation, street trees, sight-distance triangles, medians, buffers, and maintenance within Albuquerque public rights-of-way before the consolidated 2020 Development Process Manual.",
+      "description_word_count": 27,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Cross-listed on Development Process and Design References because the historic right-of-way chapter belongs in both the DPM lineage and transportation design archive.",
+        "Description reviewed against extracted text and representative visual inspection where applicable.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative government file preserved without modification.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/development-land-use/development-process.md",
+      "implementation_locations": [
+        "content/development-land-use/development-process.md",
+        "content/transportation/design-references.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-e6c9a8cffdca81f1.pdf",
       "discovered_at": "2026-08-04T14:45:05.7230877Z",
-      "updated_at": "2026-08-04T14:45:05.7230877Z"
+      "updated_at": "2026-08-31T19:51:57.9946856Z"
     },
     {
       "id": "src-e6ca25d4cfa80752",

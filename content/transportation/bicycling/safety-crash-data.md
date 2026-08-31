@@ -124,6 +124,24 @@ Bicycle safety statistics and crash data.
 
   [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/60436c67-d194-4531-8002-a83e75793aa7/2023%20NMDOT%20Vulnerable%20Road%20User%20Safety%20Assessment%20and%20Appendices.pdf) · [Official NMDOT safety-planning page](https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/highway-safety-improvement-program/)
 
+- [NMDOT Traffic Safety Division Annual Report (2022 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/nmdot-traffic-safety-annual-report-2022.pdf)
+
+  Documents statewide traffic-safety grants, enforcement, education, DWI courts, crash records, motorcycle and occupant-protection programs, including Albuquerque Police Department cases and Bernalillo County court initiatives during federal fiscal year 2022.
+
+  [Official NMDOT PDF](https://www.dot.nm.gov/wp-content/uploads/2024/03/NMDOT-Annual-Report-to-NHTSA.12.29.22.pdf) · [Current NMDOT Traffic Safety Division](https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/traffic-safety/)
+
+- [New Mexico Uniform Crash Report Instruction Manual (2019 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/nmdot-uniform-crash-report-instruction-manual-2019.pdf)
+
+  Defines New Mexico crash-reporting thresholds, terminology, roadway and vehicle fields, pedestrian and bicyclist actions, contributing factors, diagrams, and submission rules underlying Albuquerque-area crash datasets and safety analysis.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/ea5a2963-e297-4087-8710-6e745bdb5ddd/NM%20Uniform%20Crash%20Report%20Manual.pdf) · [Current NMDOT Traffic Records Bureau](https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/traffic-safety/traffic-records/)
+
+- [New Mexico Occupant Seat Belt Observation Study (2025 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/nmdot-occupant-seat-belt-observation-study-2025.pdf)
+
+  Reports statistically designed daytime and nighttime seat-belt observations, statewide trends, vehicle and occupant comparisons, and nighttime sampling that includes Bernalillo County among seven selected New Mexico counties.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/ce246b86-4e7f-45c1-89bd-b90c33be27b3/2025%20New%20Mexico%20Occupant%20Seat%20Belt%20Observation%20Study.pdf) · [Current NMDOT Traffic Safety Division](https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/traffic-safety/)
+
 - [Statewide Traffic Records System](https://www.dot.nm.gov/traffic-records-system/)
 
   Connects users to New Mexico crash maps, annual and DWI reports, pedestrian and bicyclist dashboards, fatality reports, data dictionaries, and the request process for Albuquerque-specific crash records not already published by UNM.

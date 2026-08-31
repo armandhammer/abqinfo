@@ -48,6 +48,18 @@ Capital improvement spending and projects.
 
 The City published this capital program as separate tables rather than one downloadable book. ABQInfo preserves the policy framework and the most useful citywide, departmental, district, enterprise-fund, and impact-fee components together. [Browse the official City collection](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan).
 
+- [Capital Improvements Plan Priorities and Scoring Resolution R-2006-089 (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-capital-improvements-priorities-resolution-r-2006-089.pdf)
+
+  Adopts Albuquerque priorities, criteria, weights, and funding allocations for evaluating the 2007 capital program, including infrastructure rehabilitation, adopted plans, public safety, growth, neighborhood needs, and operating-budget effects.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-bond-documents/criteria-resolution.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-bond-documents/criteria-resolution.pdf)
+
+- [Capital Improvements Plan Priorities and Scoring Resolution R-2008-017 (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-capital-improvements-priorities-resolution-r-2008-017.pdf)
+
+  Preserves the enacted resolution establishing Albuquerque capital-project priorities, evaluation criteria, scoring weights, set-asides, and proposed allocations for the 2009 General Obligation Bond Program and related decade-plan decisions.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/r-07-12_criteria_resolution.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/r-07-12_criteria_resolution.pdf)
+
 - [2007 Capital Program Policies and Project-Selection Criteria (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-capital-program-policies-project-selection-criteria.pdf)
 
   Documents the adopted funding allocations, project-scoring rules, growth and rehabilitation categories, impact-fee policies, and operating-budget safeguards used to assemble Albuquerque's 2007 General Obligation Bond Program and decade plan.
