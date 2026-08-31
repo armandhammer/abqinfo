@@ -119,6 +119,18 @@ Reference drawings, engineering details, and technical guidance related to trans
 
 ### Supplemental City Guidance
 
+- [Development Process Manual Intersection Design Final-Review Draft (2017 Archived PDF)](https://files.abqinfo.com/transportation/design-references/cabq-dpm-intersection-design-final-review-draft-2017.pdf)
+
+  Preserves a 2017 draft predecessor to current City intersection standards, addressing signals, stop and yield control, roundabouts, channelized turns, spacing, sight distance, accessibility, pedestrian crossings, bicycle lanes, and development responsibilities.
+
+  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/section-3-9-6-intersection-design-final-review-draft.pdf) · [Development Process Placement](/development-land-use/development-process/#historic-manual-chapters)
+
+- [Erosion and Sediment Control Plan Standard Notes (2026 Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-erosion-sediment-control-plan-standard-notes-2026.pdf)
+
+  Sets the City's 2026 standard erosion and sediment control plan notes for construction BMPs, inspections, stabilization, ownership transfers, off-site support areas, right-of-way work, professional certification, and stormwater controls near major drainage facilities.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/ESC%20Plan%20Standard%20Notes.pdf) · [Stormwater and Drainage Placement](/public-works/stormwater-drainage/#hydrology-and-development-review)
+
 - [Development Process Manual Chapter 28: Improvements Within the Public Right of Way (2015 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-chapter-28-right-of-way-2015.pdf)
 
   Preserves the pre-2020 City standards for right-of-way landscaping, irrigation, street trees, sight-distance triangles, medians, buffers, and maintenance. [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/DPM-Chapter28-Adopted.pdf) · [Development Process placement](/development-land-use/development-process/#historic-manual-chapters)

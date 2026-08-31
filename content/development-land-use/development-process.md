@@ -16,11 +16,25 @@ Cross-cutting development process documents, manuals, and reference materials.
 
   Provides the City's technical requirements and procedures for planning, designing, reviewing, permitting, and constructing public infrastructure associated with development projects.
 
+  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/DPM-2020-06-02_signed.pdf) · [Official City DPM Document Directory](https://documents.cabq.gov/planning/development-process-manual/)
+
 - [Current Development Process Manual Amendments Register](https://www.cabq.gov/planning/boards-commissions/development-process-manual-executive-committee/amendments-to-the-dpm)
 
   Maintains proposed and approved changes to the DPM. Check this live register with the archived signed manual and amendments below because later committee actions may change individual chapters or technical requirements.
 
 ### Historic Manual Chapters
+
+- [Development Process Manual Chapter 17: Drainage and Transportation Procedures (2018 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-drainage-traffic-layout-procedures-2018.pdf)
+
+  Preserves pre-2020 City procedures for drainage and Traffic Circulation Layout submittals, engineering review, approvals, expiration, construction certification, private storm drains in rights-of-way, and the forms used to coordinate development with public infrastructure.
+
+  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/chapter-17-drainage-and-transportation-procedures-3.13.18.pdf) · [Official City DPM Document Directory](https://documents.cabq.gov/planning/development-process-manual/)
+
+- [Development Process Manual Intersection Design Final-Review Draft (2017 Archived PDF)](https://files.abqinfo.com/transportation/design-references/cabq-dpm-intersection-design-final-review-draft-2017.pdf)
+
+  Preserves a 2017 draft predecessor to current City intersection standards, addressing signals, stop and yield control, roundabouts, channelized turns, spacing, sight distance, accessibility, pedestrian crossings, bicycle lanes, and development responsibilities.
+
+  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/section-3-9-6-intersection-design-final-review-draft.pdf) · [Design References Placement](/transportation/design-references/#supplemental-city-guidance)
 
 - [Development Process Manual Chapter 28: Improvements Within the Public Right of Way (2015 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-chapter-28-right-of-way-2015.pdf)
 

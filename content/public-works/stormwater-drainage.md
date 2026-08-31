@@ -18,6 +18,12 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
   [Official City development-review document library](https://documents.cabq.gov/planning/DevelopmentReviewServices/) · [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/Construction%20Site%20Inspection%20Standards_12-3-18.pdf)
 
+- [Erosion and Sediment Control Plan Standard Notes (2026 Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-erosion-sediment-control-plan-standard-notes-2026.pdf)
+
+  Sets the City's 2026 standard erosion and sediment control plan notes for construction BMPs, inspections, stabilization, ownership transfers, off-site support areas, right-of-way work, professional certification, and stormwater controls near major drainage facilities.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/ESC%20Plan%20Standard%20Notes.pdf) · [Official City Development Review Services Directory](https://documents.cabq.gov/planning/DevelopmentReviewServices/)
+
 ## Watershed Plans
 
 ### Upper Piedras Marcadas Watershed Drainage and Water Quality Management Plan

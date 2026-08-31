@@ -258,6 +258,14 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   The Planning Department's maintained index links adopted area plans, transportation studies, and cross-section guidance used in public-right-of-way design, including the Downtown Walkability Analysis and Rio Grande Boulevard Study.
 
+### Aviation Planning
+
+- [Double Eagle II Airport Master Plan (2019; Amended 2024 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-double-eagle-ii-airport-master-plan-2019-amended-2024.pdf)
+
+  Guides long-term development of Double Eagle II Airport through aviation forecasts, runway and taxiway requirements, compatible land use, airside and landside alternatives, environmental review, recommended facilities, funding strategies, and a phased capital improvement program.
+
+  [Official City PDF](https://documents.cabq.gov/planning/MasterPlans/DEII/Double-Eagle-Master-Plan-FullSize.pdf) · [City Facilities Placement](/public-works/city-facilities/#aviation-facilities)
+
 ### Historical Citywide System Map
 
 - [2040 Long-Range Roadway Map](https://files.abqinfo.com/transportation/transportation-plans/cabq-2040-long-range-roadway-map.pdf)
@@ -459,3 +467,5 @@ Regional plans, long-range plans, and other system-level transportation planning
 - [Development Process Manual (June 2, 2020)](https://files.abqinfo.com/housing/development-process/development-process-manual-2020-06-02.pdf)
 
   Provides the City's technical requirements and procedures for planning, designing, reviewing, permitting, and constructing public infrastructure associated with development projects.
+
+  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/DPM-2020-06-02_signed.pdf) · [Official City DPM Document Directory](https://documents.cabq.gov/planning/development-process-manual/) · [Development Process Placement](/development-land-use/development-process/#development-process-manual)

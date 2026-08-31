@@ -18,6 +18,14 @@ Planning, design standards, and selected major projects for City-owned buildings
 
   [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-building-design-standards-oct-2025-rev-17.pdf) · [Official City document page](https://www.cabq.gov/municipaldevelopment/documents/cip-building-design-standards-oct-2025-rev-17.pdf/view)
 
+## Aviation Facilities
+
+- [Double Eagle II Airport Master Plan (2019; Amended 2024 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-double-eagle-ii-airport-master-plan-2019-amended-2024.pdf)
+
+  Guides long-term development of Double Eagle II Airport through aviation forecasts, runway and taxiway requirements, compatible land use, airside and landside alternatives, environmental review, recommended facilities, funding strategies, and a phased capital improvement program.
+
+  [Official City PDF](https://documents.cabq.gov/planning/MasterPlans/DEII/Double-Eagle-Master-Plan-FullSize.pdf) · [Transportation Plans Placement](/transportation/transportation-plans/#aviation-planning)
+
 ## Major Facility Projects
 
 - [Gateway Center](https://www.cabq.gov/health-housing-homelessness/gateway-system-of-care/gateway-center/gateway-center-1)
