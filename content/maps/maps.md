@@ -129,6 +129,20 @@ Interactive maps of city data and infrastructure.
 
   Publishes the City's actively maintained bikeway and trail data layer, distinguishing current infrastructure from the static network snapshot used to develop the 2024 facilities plan.
 
+## Albuquerque Campus Maps
+
+- [CNM Main Campus Map (May 2026 Archived PDF)](https://files.abqinfo.com/maps/cnm-main-campus-map-2026.pdf)
+
+  Maps CNM's Main Campus buildings, parking areas, visitor and accessible parking, accessible entrances, crosswalks, bicycle racks, electric-vehicle charging, the Wellness Path, and planned FUSE Makerspace and STEMulus facilities.
+
+  [Current CNM Main Campus Page and Map](https://www.cnm.edu/locations/main-campus) · [Interactive CNM Campus Map](https://maps.cnm.edu/?id=1934)
+
+- [UNM Safe Mobility Action Plan Maps (2025 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/unm-safe-mobility-action-plan-2025.pdf)
+
+  Compiles existing transportation amenities, pedestrian and bicyclist crashes, reported conflict areas, accessibility conditions, high-priority projects, proposed paths, crossings, storage and charging, access controls, and other improvements across UNM's Albuquerque Main Campus.
+
+  [Official UNM Campus Planning Page](https://css.unm.edu/campus-planning/) · [Official UNM PDF](https://css.unm.edu/campus-planning/safe-mobility-action-plan.pdf)
+
 ## State Transportation Maps
 
 - [NMDOT Map Library](https://www.dot.nm.gov/travel-information/maps)

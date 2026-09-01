@@ -34,6 +34,14 @@ Selected major development activity and the plans and datasets needed to underst
 
   Combines replacement of the Uptown Transit Center with 239 mixed-rate homes, commercial space, a transit plaza, and pedestrian connections. The maintained City page reports design and construction milestones for the anticipated 2028 opening.
 
+### CNM Main Campus Capital Program
+
+- [CNM Fiscal Year 2025 Master Plan Projects (Archived PDF)](https://files.abqinfo.com/development-land-use/projects/cnm-master-plan-projects-fy2025.pdf)
+
+  Identifies major CNM Main Campus investments, including the North Main Campus reconstruction, new student-services and trades facilities, public-safety renovation, 961 Buena Vista remediation and demolition, utility metering, outdoor spaces, and associated building removals.
+
+  [Current CNM Master Plan Projects Page](https://www.cnm.edu/depts/finance-operations/business-office/purchasing/master-plan-projects-list) · [Official CNM PDF](https://www.cnm.edu/depts/finance-operations/business-office/purchasing/documents/master-plan-project-list.pdf) · [CNM Main Campus Map](https://files.abqinfo.com/maps/cnm-main-campus-map-2026.pdf)
+
 ### Rail Yards Planning and Environmental Records
 
 - [Rail Yards Blacksmith Shop Feasibility Study (2012 Archived PDF)](https://files.abqinfo.com/development-land-use/projects/cabq-rail-yards-blacksmith-shop-feasibility-study-2012.pdf)

@@ -342,6 +342,14 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/XSections/Volcano_Heights-2013.pdf)
 
+## Institutional Transportation Planning
+
+- [UNM Safe Mobility Action Plan (2025 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/unm-safe-mobility-action-plan-2025.pdf)
+
+  Establishes a safety and active-transportation program for UNM's Albuquerque Main Campus, combining crash and conflict analysis, campus and City network maps, community input, 49 implementation projects, design guidance, and near-, mid-, and long-term priorities.
+
+  [Official UNM Campus Planning Page](https://css.unm.edu/campus-planning/) · [Official UNM PDF](https://css.unm.edu/campus-planning/safe-mobility-action-plan.pdf)
+
 ## Bernalillo County Planning
 
 - [Bernalillo County Transportation Project Planning Process (2024 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/bernco-transportation-project-planning-process-2024.pdf)
