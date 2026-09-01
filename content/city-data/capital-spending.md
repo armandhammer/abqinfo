@@ -10,6 +10,12 @@ Capital improvement spending and projects.
 
   Albuquerque's approved 2025 General Obligation Bond program describes proposed capital investments across the 2025-2034 decade plan, including project scopes, funding categories, public facilities, infrastructure, and implementation priorities.
 
+- [2025 General Obligation Bond Program by Purpose (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2025-go-bond-program-by-purpose.pdf)
+
+  Compiles Albuquerque's voter-approved 2025 General Obligation Bond program by purpose, listing election questions, project scopes, and funding for streets, transit, drainage, parks, housing, redevelopment, public facilities, and other capital priorities.
+
+  This concise 50-page edition complements the detailed 407-page approved program book above. [Official City record](https://www.cabq.gov/municipaldevelopment/documents/2025-bond-program-by-purpose.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/2025-bond-program-by-purpose.pdf)
+
 - [2025–2034 Approved Decade Plan Summary (archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2025-2034-approved-decade-plan-summary.pdf)
 
   Summarizes approved capital allocations across the 2025–2034 decade plan by department and biennial bond cycle, showing long-range funding for streets, drainage, parks, transit, housing, facilities, and public safety.
