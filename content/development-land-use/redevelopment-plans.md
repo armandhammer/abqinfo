@@ -64,6 +64,12 @@ Plans and historical records for designated Metropolitan Redevelopment Areas, wh
 
   [Official City redevelopment-area page](https://www.cabq.gov/mra/redevelopment-areas/coronado) · [Official City PDF](https://documents.cabq.gov/planning/UDD/MRA/coronado-metropolitan-redevelopment-area-plan.pdf)
 
+- [Coronado Metropolitan Redevelopment Area Enacted Plan Packet (2016 Archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-coronado-mra-enacted-plan-packet-2016.pdf)
+
+  Preserves the complete enacted Coronado MRA packet, combining the redevelopment plan with designation and adoption resolutions R-16-93 and R-16-94, findings of blight, boundaries, public actions, remediation needs, infrastructure recommendations, and financing tools.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/CoronadoMRA-Plan.pdf) · [Official City Redevelopment-Area Page](https://www.cabq.gov/mra/redevelopment-areas/coronado)
+
 - [Del Rey Metropolitan Redevelopment Project Plan (2006)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-del-rey-mra-project-plan-2006.pdf)
 
   Records the negotiated redevelopment plan for the Del Rey area, including project boundaries, housing and land-development conditions, resident coordination, public actions, statutory findings, and implementation responsibilities.
@@ -141,6 +147,12 @@ Plans and historical records for designated Metropolitan Redevelopment Areas, wh
   Designates the Tingley Beach Metropolitan Redevelopment Area, records findings concerning the former Beach Motel property along Central Avenue, maps the area, and directs preparation of the redevelopment plan adopted later in 1983.
 
   [Official City PDF](https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-TingleyBeachMRA-Plan-R-305.pdf) · [Official City MRA Document Directory](https://documents.cabq.gov/planning/UDD/MRA/)
+
+- [Tingley Beach Metropolitan Redevelopment Area Project I Plan Adoption Resolution R-306 (1983 Archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-tingley-beach-project-i-plan-adoption-resolution-r-306-1983.pdf)
+
+  Preserves the amended City Council adoption resolution, Metropolitan Redevelopment Commission approval, and attached Project I plan for Tingley Beach, documenting public findings, private redevelopment, displacement, financing, public actions, and statutory approval history.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-TingleyBeachMRA-Plan-R-306.pdf) · [Official City MRA Document Directory](https://documents.cabq.gov/planning/UDD/MRA/)
 
 - [Tingley Beach Metropolitan Redevelopment Area Project I Plan (1983)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-tingley-beach-mra-project-plan-1983.pdf)
 

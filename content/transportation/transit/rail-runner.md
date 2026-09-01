@@ -54,6 +54,18 @@ The New Mexico Rail Runner Express connects Belen, Albuquerque, and Santa Fe. Th
 
   Documents how the Belen-to-Santa Fe commuter rail system was planned and delivered, including route selection, station development, rolling-stock acquisition, BNSF negotiations, service design, environmental review, public involvement, construction, and capital and operating costs. [Official Rio Metro publications](https://riometro.org/381/Rio-Metro-Publications)
 
+- [Belen Station Area Planning Study (2009 Archived PDF)](https://files.abqinfo.com/transportation/transit/rail-runner/mrcog-belen-station-area-planning-study-2009.pdf)
+
+  Establishes a transit-oriented development framework around Belen's Rail Runner station, evaluating land use, circulation, market conditions, infrastructure, urban design, public space, redevelopment opportunities, and an illustrative plan for connecting the station with downtown.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/2864/Belen-Station-Area-Planning-Study-PDF?bidId=) · [Official MRCOG Project Page](https://www.mrcog-nm.gov/326/Belen-Plan)
+
+- [Belen Rail Runner Station Infrastructure and Development Workshop (2009 Archived PDF)](https://files.abqinfo.com/transportation/transit/rail-runner/mrcog-belen-station-infrastructure-development-workshop-2009.pdf)
+
+  Records the 2009 public workshop that translated the Belen Station Area Planning Study into six priority projects, including Becker Avenue, pedestrian connections, wayfinding, Harvey House access, public spaces, and redevelopment east of the station.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/2863/Belen-Workshop-Report-PDF?bidId=) · [Official MRCOG Project Page](https://www.mrcog-nm.gov/326/Belen-Plan)
+
 - [Rio Metro Regional Transit District Short Range Plan, FY2012–FY2017](https://files.abqinfo.com/transportation/transit/rail-runner/rio-metro-short-range-plan-fy2012-2017.pdf)
 
   Preserves an early systemwide plan covering Rio Metro's institutional history, Rail Runner and bus operations, ridership and service performance, stations and capital assets, financial projections, expansion priorities, and relationships to regional transportation plans. [Official Rio Metro publications](https://riometro.org/381/Rio-Metro-Publications)
