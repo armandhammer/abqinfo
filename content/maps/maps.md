@@ -135,7 +135,7 @@ Interactive maps of city data and infrastructure.
 
   Maps CNM's Main Campus buildings, parking areas, visitor and accessible parking, accessible entrances, crosswalks, bicycle racks, electric-vehicle charging, the Wellness Path, and planned FUSE Makerspace and STEMulus facilities.
 
-  [Current CNM Main Campus Page and Map](https://www.cnm.edu/locations/main-campus) · [Interactive CNM Campus Map](https://maps.cnm.edu/?id=1934)
+  [Current CNM Main Campus Page and Map](https://www.cnm.edu/locations/main-campus) · [Interactive CNM Campus Map](https://map.concept3d.com/?id=1934)
 
 - [UNM Safe Mobility Action Plan Maps (2025 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/unm-safe-mobility-action-plan-2025.pdf)
 

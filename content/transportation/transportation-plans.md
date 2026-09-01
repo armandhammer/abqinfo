@@ -350,6 +350,12 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   [Official UNM Campus Planning Page](https://css.unm.edu/campus-planning/) · [Official UNM PDF](https://css.unm.edu/campus-planning/safe-mobility-action-plan.pdf)
 
+- [UNM Sustainability Strategic Plan 2025-2030 (Archived PDF)](https://files.abqinfo.com/city-data/climate-environment/unm-sustainability-strategic-plan-2025-2030.pdf)
+
+  Commits UNM to reduce solo commuting, improve transportation data, implement the Safe Mobility Action Plan, expand bicycle and micromobility infrastructure, improve transit access, electrify its fleet, strengthen charging infrastructure, and coordinate with the City of Albuquerque.
+
+  [Current UNM Strategic Plan Page](https://sustainability.unm.edu/engagement/sustainability-strategic-plan.html) · [Official UNM PDF](https://sustainability.unm.edu/assets/unm-sustainability_strategic-plan_2025-30.pdf)
+
 ## Bernalillo County Planning
 
 - [Bernalillo County Transportation Project Planning Process (2024 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/bernco-transportation-project-planning-process-2024.pdf)
