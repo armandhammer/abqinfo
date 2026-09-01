@@ -136,6 +136,18 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   MRCOG’s maintained performance hub gathers the regional measures and current reports used to set targets, track safety and system performance, and coordinate transit asset-management and public-transportation safety planning.
 
+- [MRMPO Performance Measures Target Assessment (2026 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-performance-measures-target-assessment-2026.pdf)
+
+  Compares the Albuquerque metropolitan area's latest federal transportation results with adopted targets for safety, pavement and bridge condition, travel reliability, freight, transit asset management, and public-transportation agency safety.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/7028/MPO-Performance-Measures-Appendix-Table_2026) · [Current performance hub](https://www.mrcog-nm.gov/676/Performance-Based-Planning)
+
+- [MRCOG 2025 Annual Report (Archived PDF)](https://files.abqinfo.com/city-data/regional-programs/mrcog-annual-report-2025.pdf)
+
+  Summarizes MRCOG's 2025 work on regional growth, the Transitions 2045 plan, transportation safety, data management, bicycle and pedestrian counts, traffic management, Rio Metro service, Rail Runner facilities, and economic development.
+
+  [Official MRCOG report page](https://www.mrcog-nm.gov/626/2025-Annual-Report) · [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6879/2025-Annual-Report-PDF)
+
 - [MRMPO Congestion Management Process](https://www.mrcog-nm.gov/244/Congestion-Management-Process)
 
   Explains the continuing metropolitan process for monitoring multimodal performance, analyzing 31 priority corridors, and selecting strategies and projects to improve the safe, efficient movement of people and goods across the Albuquerque planning area.
