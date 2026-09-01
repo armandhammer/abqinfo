@@ -64,6 +64,14 @@ City bicycle planning documents and master plans, including current and previous
 
   Presents the existing and proposed bikeway network supporting Albuquerque's adopted 2024 plan, linking interactive maps with project strategies, prioritization, and the plan's broader recommendations.
 
+### UNM Main Campus
+
+- [UNM Safe Mobility Action Plan (2025 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/unm-safe-mobility-action-plan-2025.pdf)
+
+  Plans safer bicycling and micromobility connections across UNM's Albuquerque Main Campus, including separated lanes, shared streets, secure storage and charging, improved crossings, City-network connections, conflict analysis, and a phased implementation matrix.
+
+  [Official UNM Campus Planning Page](https://css.unm.edu/campus-planning/) · [Official UNM PDF](https://css.unm.edu/campus-planning/safe-mobility-action-plan.pdf)
+
 ## Bernalillo County Trail Planning
 
 - [Alameda Drain and Trail Master Plan (2016 archived PDF)](https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-alameda-drain-trail-master-plan-2016.pdf)

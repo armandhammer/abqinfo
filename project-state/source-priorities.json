@@ -1,7 +1,70 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-11T00:46:12.3597126Z",
+  "updated_at": "2026-09-01T00:00:00Z",
   "sources": [
+    {
+      "id": "source-unm-albuquerque-campus-planning",
+      "name": "University of New Mexico Albuquerque Campus Planning",
+      "url": "https://css.unm.edu/campus-planning/",
+      "agency": "University of New Mexico",
+      "priority_tier": "focused secondary",
+      "automatic_crawl": true,
+      "use_after": "Review the principal City, County, MRCOG/MRMPO, and NMDOT pathways, while promptly processing newly published UNM plans with direct Albuquerque transportation, development, mapping, or capital-project value.",
+      "included_record_classes": [
+        "Albuquerque Safe Mobility Action Plan and implementation records",
+        "Integrated Campus Plan chapters and maps governing the Albuquerque campuses",
+        "Albuquerque campus transportation, bicycle, pedestrian, transit, parking, accessibility, and sustainability plans",
+        "Albuquerque campus maps, capital plans, facility plans, and major development projects",
+        "official project updates that materially connect UNM facilities with Albuquerque streets, transit, bikeways, or neighborhoods"
+      ],
+      "excluded_by_default": [
+        "academic program and course material",
+        "routine events and news without durable planning value",
+        "branch-campus-only documents outside Albuquerque",
+        "generic university administration",
+        "student forms, parking notices, and temporary service advisories"
+      ],
+      "limitations": [
+        "Large design publications may have separate single-page and spread editions; prefer the smaller authoritative edition when content and fidelity are equivalent.",
+        "The Integrated Campus Plan includes branch campuses; only Albuquerque-relevant chapters and systemwide policies materially governing Albuquerque are in scope."
+      ],
+      "verified_at": "2026-09-01T00:00:00Z",
+      "verification_result": "Official long-term planning page exposes the 2025 Safe Mobility Action Plan and adopted Integrated Campus Plan, with direct relevance to Albuquerque streets, bikeways, transit, campus development, and safety."
+    },
+    {
+      "id": "source-cnm-main-campus-planning",
+      "name": "Central New Mexico Community College Main Campus Planning",
+      "url": "https://www.cnm.edu/locations/main-campus",
+      "agency": "Central New Mexico Community College",
+      "priority_tier": "focused secondary",
+      "automatic_crawl": true,
+      "use_after": "Review the principal City, County, MRCOG/MRMPO, NMDOT, and high-value UNM pathways; process current CNM Main Campus plans and maps when they directly affect Albuquerque transportation, development, facilities, or public investment.",
+      "additional_seed_urls": [
+        "https://www.cnm.edu/depts/finance-operations/business-office/purchasing/master-plan-projects-list",
+        "https://www.cnm.edu/depts/parking-and-fleet-services/parking-and-fleet-services",
+        "https://maps.cnm.edu/?id=1934"
+      ],
+      "included_record_classes": [
+        "Main Campus master plans and capital-project publications",
+        "Main Campus maps, transportation, parking, bicycle, pedestrian, transit, accessibility, and sustainability resources",
+        "major Main Campus construction, demolition, redevelopment, public-realm, and facility projects",
+        "systemwide CNM documents only when they identify material Main Campus projects or policies"
+      ],
+      "excluded_by_default": [
+        "Rio Rancho Campus and RioTECH",
+        "Montoya, South Valley, Westside, and other non-Main-Campus projects unless the user expands scope",
+        "academic catalogs, curricula, and course material",
+        "routine board agendas and minutes unless they contain a unique adopted Main Campus plan or project record",
+        "procurement notices without durable planning or project information",
+        "student services, forms, events, employment, and temporary parking or construction notices"
+      ],
+      "limitations": [
+        "CNM uses systemwide publications that mix campuses; retain or extract only records with clear Main Campus relevance.",
+        "The interactive map requires rendered-browser validation."
+      ],
+      "verified_at": "2026-09-01T00:00:00Z",
+      "verification_result": "Official CNM pages expose a current Main Campus map, interactive map, parking and transportation resources, and an FY2025 Master Plan Projects publication containing substantial Main Campus capital projects."
+    },
     {
       "id": "src-00579536b46d85b5",
       "name": "City of Albuquerque OnBase Public Records Search",
