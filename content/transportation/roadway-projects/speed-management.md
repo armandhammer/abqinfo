@@ -30,6 +30,12 @@ Traffic calming and speed management initiatives.
 
   Describes the City's full range of traffic-calming tools, with advantages, disadvantages, application guidance, illustrations, and individual references for markings, crossings, chokers, circles, humps, diverters, and other treatments.
 
+- [Neighborhood Traffic Management Program Traffic-Calming Toolkit (2015 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-ntmp-traffic-calming-toolkit-2015.pdf)
+
+  Preserves the City traffic-calming toolkit's illustrated comparisons of enforcement, education, markings, crossings, lane narrowing, speed humps, chokers, circles, diverters, closures, one-way conversions, and other measures, including applications, tradeoffs, effectiveness, and costs.
+
+  [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/ntmp-toolkit-only-2015-lowres.pdf) · [Current City Toolkit Page](https://www.cabq.gov/neighborhood-traffic-management-program/toolkit)
+
 - [Completed Neighborhood Traffic Studies](https://www.cabq.gov/neighborhood-traffic-management-program/studies)
 
   Indexes more than one hundred current and archived Albuquerque speed, volume, traffic-calming, and neighborhood studies by street, including recent reports and a substantial historical record of local traffic analysis.

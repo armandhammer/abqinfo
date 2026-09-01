@@ -168,6 +168,12 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   [Official City project archive](https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force) · [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/1.23.08.presentationc.abq_ride_planning.transit_dept.pdf)
 
+- [Albuquerque Modern Streetcar Technical Presentation (2008 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-modern-streetcar-technical-presentation-2008.pdf)
+
+  Explains the proposed Albuquerque modern streetcar system through vehicle, power, track, stop, maintenance, utility, construction, operating, safety, accessibility, cost, schedule, and corridor-design considerations presented to the transportation task force in 2008.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/2.5.08.hdr_streetcar_presentation.dmd.pdf) · [Official City Project Archive](https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force)
+
 - [Planned Growth Strategy Transportation-System Cost Findings (2008 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-planned-growth-strategy-transportation-costs-excerpt-2008.pdf)
 
   Compares road, transit, public, private, and societal transportation costs under trend, balanced-growth, and downtown-focused land-use scenarios, preserving the fiscal evidence presented to Albuquerque's 2008 transportation task force.
