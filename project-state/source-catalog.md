@@ -1,14 +1,14 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-09-01T00:56:20.3708260Z
+Generated: 2026-09-01T01:54:12.5998640Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 6367 candidates and 738 R2 objects totaling 7553920077 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 6367 candidates and 741 R2 objects totaling 7565417148 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 3495 |
+| pending review | 3487 |
 | approved for addition | 0 |
 | downloading | 0 |
 | downloaded | 4 |
@@ -16,10 +16,10 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 2 |
-| validated | 947 |
+| validated | 950 |
 | excluded | 850 |
 | duplicate | 952 |
-| superseded | 86 |
+| superseded | 91 |
 | blocked | 0 |
 | requires human review | 31 |
 
@@ -136,8 +136,8 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | 2011 Albuquerque Bikeways and Trails Master Plan Update | City of Albuquerque | 2011-11-10 | PDF | 20962356 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%2011-10-11.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-and-trails-master-plan-update.pdf) |
 | 2011 Albuquerque Bikeways and Trails Master Plan Update - Appendices | City of Albuquerque | 2011-11-10 | PDF | 1757042 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%20Appendices%2011-10-11.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-trails-master-plan-appendices.pdf) |
 | 2011 Albuquerque Bikeways and Trails Master Plan Update - Appendices | City of Albuquerque | 2011-11-10 | PDF | 1757042 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%20Appendices%2011-10-11.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-trails-master-plan-appendices.pdf) |
-| 2011 Albuquerque Bikeways and Trails Master Plan Update - Design Guidelines | City of Albuquerque | 2011-11 | PDF | 31152896 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%20Design%20Guidelines%2011-10.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-trails-master-plan-design-guidelines.pdf) |
 | 2011 Albuquerque Bikeways and Trails Master Plan Update - Design Guidelines | City of Albuquerque | 2011-11-10 | PDF | 31152896 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%20Design%20Guidelines%2011-10.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-trails-master-plan-design-guidelines.pdf) |
+| 2011 Albuquerque Bikeways and Trails Master Plan Update - Design Guidelines | City of Albuquerque | 2011-11 | PDF | 31152896 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%20Design%20Guidelines%2011-10.pdf) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/2011-albuquerque-bikeways-trails-master-plan-design-guidelines.pdf) |
 | 2011-2020 General Obligation Bond Summary | City of Albuquerque | 2011 | PDF | 113108 | content/city-data/capital-spending.md | [source](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/summary_2011-2020.pdf/view) | [R2](https://files.abqinfo.com/city-data/capital-spending/cabq-2011-2020-go-bond-summary.pdf) |
 | 2012 Albuquerque Progress Report Snapshot | City of Albuquerque | 2012 | PDF | 4945585 | content/city-data/city-progress-surveys.md | [source](https://www.cabq.gov/progress/albuquerque-progress-report) | [R2](https://files.abqinfo.com/city-data/city-progress/cabq-albuquerque-progress-report-snapshot-2012.pdf) |
 | 2013–2022 Decade Plan and 2013 General Obligation Bond Program | City of Albuquerque | 2012-11 | PDF | 3104041 | content/city-data/capital-spending.md | [source](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2013GOBondProgramEPC.pdf/view) | [R2](https://files.abqinfo.com/city-data/capital-spending/cabq-2013-2022-decade-plan-go-bond-program.pdf) |
@@ -185,6 +185,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | ABQ RIDE Planning Briefing | City of Albuquerque | 2008-01-23 | PDF | 134960 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/council/projects/completed-projects/2008/21st-century-transportation-task-force) | [R2](https://files.abqinfo.com/transportation/transportation-plans/cabq-abq-ride-planning-task-force-briefing-2008.pdf) |
 | AHYMO-S4-R2 Hydrologic Model User’s Manual | City of Albuquerque | 2018-09 | PDF | 2131495 | content/public-works/stormwater-drainage.md | [source](https://www.cabq.gov/planning/development-review-services/hydrology-section) | [R2](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ahymo-s4-r2-hydrologic-model-users-manual-2018.pdf) |
 | Alameda Drain Trail Master Plan and Design Notice | City of Albuquerque | 2015 | PDF | 761311 | content/transportation/bicycling/bike-plans.md | [source](https://www.cabq.gov/municipaldevelopment/documents/publicflyeralamedadrain2015.pdf/view) | [R2](https://files.abqinfo.com/transportation/bicycling/bike-plans/bernco-alameda-drain-trail-master-plan-design-notice-2015.pdf) |
+| Albuquerque 2025 General Obligation Bond Program by Purpose | City of Albuquerque | 2025 | PDF | 2769595 | content/city-data/capital-spending.md | [source](https://www.cabq.gov/municipaldevelopment/documents/2025-bond-program-by-purpose.pdf/view) | [R2](https://files.abqinfo.com/city-data/capital-spending/cabq-2025-go-bond-program-by-purpose.pdf) |
 | Albuquerque Automated Speed Enforcement Regulation | City of Albuquerque | 2022 | PDF | 426248 | content/transportation/roadway-projects/speed-management.md | [source](https://www.cabq.gov/municipaldevelopment/documents/signed-regulations-automated-speed-enforcement.pdf/view) | [R2](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-automated-speed-enforcement-regulation-2022.pdf) |
 | Albuquerque Bikeways and Trails Map | City of Albuquerque | 2026 | PDF | 12779139 | content/transportation/bicycling/bike-maps.md | [source](https://www.cabq.gov/parksandrecreation/recreation/bike/bike-map) | [R2](https://files.abqinfo.com/transportation/bicycling/maps-guides/cabq-albuquerque-bikeways-trails-map-2026.pdf) |
 | Albuquerque Bird Watching Guide and Map | City of Albuquerque | 2019 | PDF | 762618 | content/maps/maps.md | [source](https://www.cabq.gov/parksandrecreation/open-space/facilities-map) | [R2](https://files.abqinfo.com/public-works/parks-recreation/cabq-albuquerque-bird-watching-guide-map-2019.pdf) |
@@ -637,6 +638,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | FFY 2024-2029 TIP ITS Project Review and Architecture Certification | MRCOG | 2023-07-16 | PDF | 696615 | content/transportation/operations-data.md | [source](https://www.mrcog-nm.gov/259/Intelligent-Transportation-Systems) | [R2](https://files.abqinfo.com/transportation/operations-data/mrmpo-ffy2024-2029-tip-its-review-certification-2023.pdf) |
 | Incident Management Plan for the Albuquerque Metropolitan Planning Area | MRCOG | 2022-06-13 | PDF | 5444698 | content/transportation/operations-data.md | [source](https://www.dot.nm.gov/highway-operations-program/operations-support-division-director/intelligent-transportation-systems/) | [R2](https://files.abqinfo.com/transportation/operations-data/mrmpo-incident-management-plan-ampa-2022.pdf) |
 | Long-Range Transportation System Guide | MRCOG | 2026-06 | PDF | 36052676 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/512/Long-Range-Transportation-System-Guide) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-long-range-transportation-system-guide-2026.pdf) |
+| MRCOG 2025 Annual Report | MRCOG | 2025 | PDF | 8650467 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/626/2025-Annual-Report) | [R2](https://files.abqinfo.com/city-data/regional-programs/mrcog-annual-report-2025.pdf) |
 | MRCOG Regional Transportation Safety Action Plan (2024) | MRCOG | 2024 | PDF | 26047323 | content/transportation/bicycling/safety-crash-data.md | [source](https://www.mrcog-nm.gov/255/Safety-for-All-Modes) | [R2](https://files.abqinfo.com/transportation/safety-data/mrcog-regional-transportation-safety-action-plan-2024.pdf) |
 | MRMPO 2035 Metropolitan Transportation Plan - Complete Plan and Appendices | MRCOG | 2011-04-15 | PDF | 22718486 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/267/MTP-Archive) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-2035-mtp-complete-appendices-2011-2014.pdf) |
 | MRMPO 2045 Metropolitan Transportation Plan | MRCOG |  | PDF | 52421513 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/264/Metropolitan-Transportation-Plan) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-2045-mtp-final-2025-04-29.pdf) |
@@ -648,6 +650,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | MRMPO Long-Range Pedestrian System Map | MRCOG | 2026-07-02 | PDF | 592082 | content/maps/maps.md | [source](https://www.mrcog-nm.gov/544/Long-Range-System-Maps) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-long-range-pedestrian-system-map-2026.pdf) |
 | MRMPO Long-Range Roadway System Map | MRCOG | 2026-07-02 | PDF | 613512 | content/maps/maps.md | [source](https://www.mrcog-nm.gov/544/Long-Range-System-Maps) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-long-range-roadway-system-map-2026.pdf) |
 | MRMPO Long-Range Transit System Map | MRCOG | 2026-07-02 | PDF | 957104 | content/maps/maps.md | [source](https://www.mrcog-nm.gov/544/Long-Range-System-Maps) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-long-range-transit-system-map-2026.pdf) |
+| MRMPO Performance Measures Target Assessment (2026) | MRCOG | 2026 | PDF | 77009 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/676/Performance-Based-Planning) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-performance-measures-target-assessment-2026.pdf) |
 | Near South Valley Multimodal Study | MRCOG | 2017 | PDF | 11260913 | content/transportation/transportation-plans.md | [source](https://www.bernco.gov/public-works/about-the-public-works-division/technical-services/transportation-planning/complete-streets-planning) | [R2](https://files.abqinfo.com/transportation/transportation-plans/bernco-near-south-valley-multimodal-study-2017.pdf) |
 | New Mexico Rail Runner Express Project Development History | MRCOG | 2009-10 | PDF | 6260206 | content/transportation/transit/rail-runner.md | [source](https://riometro.org/381/Rio-Metro-Publications) | [R2](https://files.abqinfo.com/transportation/transit/rail-runner/rio-metro-rail-runner-project-development-history-2009.pdf) |
 | NMRX Grade Crossing Pedestrian and Bicyclist Safety Study | MRCOG | 2016-04-04 | PDF | 2729774 | content/transportation/transit/rail-runner.md | [source](https://riometro.org/381/Rio-Metro-Publications) | [R2](https://files.abqinfo.com/transportation/transit/rail-runner/rio-metro-nmrx-grade-crossing-pedestrian-bicyclist-safety-study-2016.pdf) |
@@ -2828,6 +2831,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-0f1805a179efdc22 | superseded | Hahn Arroyo and Paseo del Nordeste Trail Guide — In Brief | Abridged derivative superseded by the complete ten-page official guide archived in this batch. |
 | src-0fb71091e519f961 | superseded | Full Draft Appendix_2-14-2025 | The February 2025 draft appendix is superseded by the complete March 2025 final Lead and Coal report and appendices already archived. |
 | src-108108642115e35e | superseded | family community scope.pdf | Department scope sheet is superseded for ABQInfo by the retained decade-wide project and funding summary. |
+| src-1081ee78bd665f71 | superseded | 2025 metropolitan redevelopment bonds.pdf | Separate purpose excerpt is contained in the archived 2025 General Obligation Bond Program by Purpose and the more detailed approved program book; publishing it separately would duplicate the same project list. |
 | src-13e8d3ff3f564124 | superseded | DraftTrafficCalmingManualJune2013.pdf | The June 2013 draft STEP manual was superseded by the July 2014 STEP edition and the adopted 2015 NTMP policy already preserved on ABQInfo. |
 | src-155d876affd12ab7 | superseded | I-40 Trail Guide — In Brief | Abridged derivative superseded by the complete official guide already archived as src-5bef4eb4ac2b0481. |
 | src-18d9a974c5137e0b | superseded | City paratransit service | The prior City paratransit URL was replaced by https://www.cabq.gov/transit/services/paratransit-service, which is the current ABQInfo link. |
@@ -2842,6 +2846,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-285faabe74599255 | superseded | Table Of Contents | The separately published table of contents is preserved within the complete archived Wilson corridor study. |
 | src-2ba50be86045099d | superseded | Part 2 | Split Part 2 edition is redundant with the complete 122-page March 2014 PDF archived in this batch. |
 | src-2cdb21bc19db1fb9 | superseded | draft fy25 city of albuquerque ms4 report.pdf | Draft FY2025 Albuquerque MS4 annual report; the authoritative final December 2025 report is already archived and validated. Canonical final record: src-7b6cb9849a434271. |
+| src-315132875ee931d5 | superseded | 2025 public transportation bonds.pdf | Separate purpose excerpt is contained in the archived 2025 General Obligation Bond Program by Purpose and the more detailed approved program book; publishing it separately would duplicate the same project list. |
 | src-31567db89d1226ff | superseded | env health scope.pdf | Department scope sheet is superseded for ABQInfo by the retained decade-wide project and funding summary. |
 | src-32a77d3856e9a056 | superseded | fire scope.pdf | Department scope sheet is superseded for ABQInfo by the retained decade-wide project and funding summary. |
 | src-34e2f45ce716db9f | superseded | Presentation Slides | Workshop presentation substantially repeats the corridor conditions and concepts preserved in the more comprehensive 59-page draft master plan. |
@@ -2851,6 +2856,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-4729a7695d235e85 | superseded | cip building design standards may 2024 rev 16.pdf | Superseded by City of Albuquerque CIP Building Design Standards and Guidelines, Revision 17 (2025-10-29). |
 | src-48a9681a27727130 | superseded | Draft North Fourth Street Rank III Corridor Plan | The authoritative final 2010 North Fourth Street Corridor Plan is already archived and implemented; this larger draft is retained in local staging for research but is not duplicated in production R2 or site content. |
 | src-48cf3bc1beb7988f | superseded | Unser Boulevard, Mariposa, and Riverview Trail Guide — In Brief | Abridged derivative superseded by the complete official guide already archived as src-01582dd7631ed92c. |
+| src-4d2ff11d056e0122 | superseded | 2025 storm sewer system bonds.pdf | Separate purpose excerpt is contained in the archived 2025 General Obligation Bond Program by Purpose and the more detailed approved program book; publishing it separately would duplicate the same project list. |
 | src-4eacfa2b453b394b | superseded | parks recreation scope.pdf | Department scope sheet is superseded for ABQInfo by the retained decade-wide project and funding summary. |
 | src-5b52d46774902d5e | superseded | Bicycle Boulevard Guide — In Brief | Abridged derivative superseded by the complete official guide already archived as src-53fb7c8f80678e6d. |
 | src-5edcfaeac63d3a4b | superseded | ABQReport | Legacy Council-hosted copy superseded by the maintained Planning Department copy at documents.cabq.gov. |
@@ -2859,7 +2865,9 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | src-62b8404d07720179 | superseded | Uptown Sector Plan July 30 2008 rev | Revised July 2008 working version of the Uptown Sector Development Plan; the later adopted and amended plan is already archived and validated. Canonical final record: src-4ccef0c6ec25aac8. |
 | src-64984794d0aec1ab | superseded | WilsonReportTableofContents.PDF | The separately published table of contents is preserved within the complete archived Wilson corridor study. |
 | src-651064b391ce6c0c | superseded | 2.Demographics-Context.pdf | Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes. |
+| src-659fe7f2a2cb758d | superseded | 2025 parks and recreation bonds.pdf | Separate purpose excerpt is contained in the archived 2025 General Obligation Bond Program by Purpose and the more detailed approved program book; publishing it separately would duplicate the same project list. |
 | src-6705ec42d3bb6d2e | superseded | Complete Streets Draft Legislation2 | Interim Complete Streets draft superseded by the retained final amended original ordinance and the enacted 2019 update. |
+| src-679c1e001f4016c4 | superseded | 2025 street bonds.pdf | Separate purpose excerpt is contained in the archived 2025 General Obligation Bond Program by Purpose and the more detailed approved program book; publishing it separately would duplicate the same project list. |
 | src-6d5ab056ef1d28d4 | superseded | senior affairs scope.pdf | Department scope sheet is superseded for ABQInfo by the retained decade-wide project and funding summary. |
 | src-6da20b965df52490 | superseded | MRCOG bicycle and pedestrian planning maps | Broad bicycle-and-pedestrian landing page was replaced by the specific planning-maps, counts, analysis, and safety sources. |
 | src-70abffd5dd217a13 | superseded | 1.Introduction-Background.pdf | Separately published chapter, map, or cover is preserved in context within the complete archived North Fourth Street plan volumes. |

@@ -2,17 +2,17 @@
 
 Generated from `project-state/discovery/recent-high-value-r2-plan.json`.
 
-- Current bucket storage: 7414221160 bytes
+- Current bucket storage: 7553920077 bytes
 - Files proposed: 3
 - Total size of files in batch: 11497071 bytes (10.96 MiB)
 - Storage added: 11497071 bytes (10.96 MiB)
-- Projected bucket storage: 7425718231 bytes (6.92 GiB)
+- Projected bucket storage: 7565417148 bytes (7.05 GiB)
 - Files larger than 25 MiB: 0
 - Files larger than 100000000 bytes: 0
-- Remaining nonterminal candidates: 3501
-- Exact size of remaining candidates with known size, deduplicated: 1008724375 bytes (961.99 MiB)
-- Remaining candidates without reliable size metadata: 2566
-- Complete-project storage lower bound from currently known sizes: 8434442606 bytes (7.86 GiB)
+- Remaining nonterminal candidates: 3493
+- Exact size of remaining candidates with known size, deduplicated: 997126527 bytes (950.93 MiB)
+- Remaining candidates without reliable size metadata: 2560
+- Complete-project storage lower bound from currently known sizes: 8562543675 bytes (7.97 GiB)
 - Complete-project estimate limitation: unknown-size and not-yet-discovered files prevent a defensible final total; the lower bound is not a storage commitment.
 
 | Stable ID | Title | Type | Exact bytes | Human size | Over 25 MiB | R2 key |
