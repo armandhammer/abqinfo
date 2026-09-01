@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-01T23:04:21.7324797Z",
+  "generated_at": "2026-09-01T23:17:11.1682128Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,7 +18,7 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 3487,
+    "pending review": 3486,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 4,
@@ -26,7 +26,7 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 2,
-    "validated": 966,
+    "validated": 967,
     "excluded": 850,
     "duplicate": 952,
     "superseded": 93,
@@ -55893,19 +55893,19 @@
     },
     {
       "id": "src-2703735321fae696",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.mrcog-nm.gov/DocumentCenter/View/6817/FFY-2025-Annual-Listing-of-Obligations-PDF",
-      "direct_file_url": null,
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "direct_file_url": "https://www.mrcog-nm.gov/DocumentCenter/View/6817/FFY-2025-Annual-Listing-of-Obligations-PDF",
+      "r2_url": "https://files.abqinfo.com/transportation/funding/mrmpo-ffy2025-annual-listing-obligations.pdf",
+      "r2_key": "transportation/funding/mrmpo-ffy2025-annual-listing-obligations.pdf",
+      "r2_etag": "163213cf01464f186d85f191b1a5019d",
+      "r2_last_modified": "2026-09-01T23:16:02Z",
       "agency": "MRCOG",
-      "title": "FFY 2025 Annual Listing of Obligations (PDF)",
-      "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "title": "MRMPO FFY 2025 Annual Listing of Obligations",
+      "date": "2025-10",
+      "file_type": "PDF",
+      "size_bytes": 83317,
+      "checksum_sha256": "af09192d9fc8411ac4319347081a856cef6dfe977a23ac6972d5c8c33a2969be",
       "parent_url": "https://www.mrcog-nm.gov/278/Annual-Project-Listing-Obligation-Report",
       "referring_urls": [
         "https://www.mrcog-nm.gov/278/Annual-Project-Listing-Obligation-Report"
@@ -55920,22 +55920,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "authoritative MRCOG source and byte-identical ABQInfo archive verified",
+      "proposed_canonical_page": "content/transportation/transportation-plans.md",
+      "description": "Records the federal funds actually obligated during FFY 2025 for Albuquerque-area transportation projects, contrasting programmed, obligated, and remaining amounts for transit, roadway, trail, safety, bridge, operations, and Rail Runner investments.",
+      "description_word_count": 30,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review."
+        "Official two-page FFY 2025 TIP obligation report created October 14, 2025.",
+        "Downloaded exact size: 83,317 bytes (81.36 KiB); SHA-256 af09192d9fc8411ac4319347081a856cef6dfe977a23ac6972d5c8c33a2969be.",
+        "Visual review confirmed a readable two-page project table covering programmed, obligated, and remaining federal funds.",
+        "Public R2 copy verified byte-identical on 2026-09-01."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transportation-plans.md",
+      "implementation_locations": [
+        "content/transportation/transportation-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative source HTTP 200",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-2703735321fae696.pdf",
       "discovered_at": "2026-08-14T23:33:00.5457057Z",
-      "updated_at": "2026-08-14T23:33:00.5457057Z"
+      "updated_at": "2026-09-01T23:17:10.1421985Z"
     },
     {
       "id": "src-2709cc8e5055ccb4",

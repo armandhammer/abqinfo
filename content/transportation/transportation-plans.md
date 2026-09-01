@@ -132,6 +132,12 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   [Open the current official report](https://mrmpo.nm.tipviewer.pmgpro.com/api/reports/ComprehensiveSTIP?stipid=7&RevisionName=Approved) · [Check the official TIP and revisions](https://www.mrcog-nm.gov/280/Current-TIP) · [Search the live MRMPO TIP Viewer](https://mrmpo.nm.tipviewer.pmgpro.com/)
 
+- [MRMPO FFY 2025 Annual Listing of Obligations (Archived PDF)](https://files.abqinfo.com/transportation/funding/mrmpo-ffy2025-annual-listing-obligations.pdf)
+
+  Records the federal funds actually obligated during FFY 2025 for Albuquerque-area transportation projects, contrasting programmed, obligated, and remaining amounts for transit, roadway, trail, safety, bridge, operations, and Rail Runner investments.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6817/FFY-2025-Annual-Listing-of-Obligations-PDF) · [Current Annual Project Listing and Obligation Reports](https://www.mrcog-nm.gov/278/Annual-Project-Listing-Obligation-Report)
+
 - [MRMPO Performance-Based Planning and Programming](https://www.mrcog-nm.gov/676/Performance-Based-Planning)
 
   MRCOG’s maintained performance hub gathers the regional measures and current reports used to set targets, track safety and system performance, and coordinate transit asset-management and public-transportation safety planning.

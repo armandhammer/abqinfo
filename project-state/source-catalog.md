@@ -1,14 +1,14 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-09-01T23:04:38.7431150Z
+Generated: 2026-09-01T23:17:39.4517420Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 6386 candidates and 747 R2 objects totaling 7603662007 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 6386 candidates and 748 R2 objects totaling 7603745324 bytes.
 
 ## Queue status
 
 | Status | Count |
 | --- | ---: |
-| pending review | 3487 |
+| pending review | 3486 |
 | approved for addition | 0 |
 | downloading | 0 |
 | downloaded | 4 |
@@ -16,7 +16,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 2 |
-| validated | 966 |
+| validated | 967 |
 | excluded | 850 |
 | duplicate | 952 |
 | superseded | 93 |
@@ -646,6 +646,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | MRMPO 2045 Metropolitan Transportation Plan | MRCOG |  | PDF | 52421513 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/264/Metropolitan-Transportation-Plan) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-2045-mtp-final-2025-04-29.pdf) |
 | MRMPO 2045 Metropolitan Transportation Plan - Full Appendix | MRCOG |  | PDF | 3819571 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/264/Metropolitan-Transportation-Plan) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-2045-mtp-final-full-appendix-2025-05-01.pdf) |
 | MRMPO Connections 2040 Metropolitan Transportation Plan | MRCOG | 2020-04-17 | PDF | 59514796 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/267/MTP-Archive) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-connections-2040-mtp-2020.pdf) |
+| MRMPO FFY 2025 Annual Listing of Obligations | MRCOG | 2025-10 | PDF | 83317 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/DocumentCenter/View/6817/FFY-2025-Annual-Listing-of-Obligations-PDF) | [R2](https://files.abqinfo.com/transportation/funding/mrmpo-ffy2025-annual-listing-obligations.pdf) |
 | MRMPO Futures 2040 Metropolitan Transportation Plan | MRCOG | 2015-04-17 | PDF | 20618666 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/267/MTP-Archive) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-futures-2040-mtp-2015-2017.pdf) |
 | MRMPO Futures 2040 Metropolitan Transportation Plan - Appendices | MRCOG | 2015-04-17 | PDF | 11149309 | content/transportation/transportation-plans.md | [source](https://www.mrcog-nm.gov/267/MTP-Archive) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-futures-2040-mtp-appendices-2015-2017.pdf) |
 | MRMPO Long-Range Bikeway System Map | MRCOG | 2026-07-02 | PDF | 821672 | content/maps/maps.md | [source](https://www.mrcog-nm.gov/544/Long-Range-System-Maps) | [R2](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-long-range-bikeway-system-map-2026.pdf) |
