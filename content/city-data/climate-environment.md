@@ -93,3 +93,23 @@ Project contacts: Dan McGregor, [dmcgregor@bernco.gov](mailto:dmcgregor@bernco.g
   Quantifies 2023 community greenhouse-gas emissions across Central New Mexico, documenting methods, energy, transportation, waste, industrial sources, agriculture, land use, and the baseline used for regional climate planning and progress measurement.
 
   [Official City climate-plan hub](https://www.cabq.gov/sustainability/climate-action-plan) · [Official City PDF](https://www.cabq.gov/sustainability/documents/ccap_-2023-community-scale-greenhouse-gas-inventory_accessible.pdf)
+
+## UNM Albuquerque Campus Sustainability
+
+- [UNM Sustainability Strategic Plan 2025-2030 (Archived PDF)](https://files.abqinfo.com/city-data/climate-environment/unm-sustainability-strategic-plan-2025-2030.pdf)
+
+  Sets a five-year program for UNM's Albuquerque campus covering energy and greenhouse-gas reductions, water and land use, waste, transportation, food, applied learning, engagement, communications, governance, measurable actions, responsible departments, and implementation metrics.
+
+  [Current UNM Strategic Plan Page](https://sustainability.unm.edu/engagement/sustainability-strategic-plan.html) · [Official UNM PDF](https://sustainability.unm.edu/assets/unm-sustainability_strategic-plan_2025-30.pdf)
+
+- [UNM Greenhouse Gas Inventory FY2025 Update (Archived PDF)](https://files.abqinfo.com/city-data/climate-environment/unm-greenhouse-gas-inventory-fy2025-update.pdf)
+
+  Updates Albuquerque Main Campus Scope 1 and 2 emissions through FY2025, documenting a 15% annual decline, progress from the FY2006 baseline, campus-energy trends, calculation methods, reduction targets, and the effect of cogeneration-equipment problems on the reported result.
+
+  [Current UNM Greenhouse-Gas Page](https://sustainability.unm.edu/campus/emissions.html) · [Official UNM PDF](https://sustainability.unm.edu/campus/fy-2025-ghg-report.pdf)
+
+- [UNM Greenhouse Gas Inventory FY2024 (Archived PDF)](https://files.abqinfo.com/city-data/climate-environment/unm-greenhouse-gas-inventory-fy2024.pdf)
+
+  Establishes the detailed Albuquerque Main Campus emissions baseline, defining inventory boundaries and methods, quantifying natural gas, fleet fuel, and purchased electricity, comparing FY2006-FY2024 results, and explaining the buildings, utilities, and state targets shaping future decarbonization.
+
+  [Current UNM Greenhouse-Gas Page](https://sustainability.unm.edu/campus/emissions.html) · [Official UNM PDF](https://sustainability.unm.edu/assets/unm-sustainability_greenhouse-gas-inventory_2024.pdf)
