@@ -30,6 +30,32 @@ Use the service pages for current rider information and the Transportation Plans
 
   Sets Rio Metro's path toward battery-electric and hydrogen vehicles through 2040, with fleet purchases, charging and fueling concepts at the Albuquerque rail yard and county facilities, utility coordination, funding, workforce training, and implementation priorities. [Official Rio Metro publications](https://riometro.org/381/Rio-Metro-Publications)
 
+## Current State Transit Programs and Funding
+
+- [NMDOT Transit and Rail Division Fact Sheet (February 2026 Archived PDF)](https://files.abqinfo.com/transportation/transit/nmdot-transit-rail-division-fact-sheet-2026.pdf)
+
+  Summarizes current NMDOT transit and rail programs with FY 2025 ridership, service, fleet, funding, Rail Runner, Park and Ride, Albuquerque paratransit-provider, regional-district, grade-crossing, and freight-rail statistics.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/2f37aa9b-612c-4804-a7c9-fcd2db19d5d0/2026_Program_Fact_Sheet_FINAL.pdf) · [Current Transit and Rail Division Page](https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail)
+
+- [NMDOT State Management Plan for Federal Transit Grants (2025 Revision Archived PDF)](https://files.abqinfo.com/transportation/transit/nmdot-state-management-plan-transit-grants-2025.pdf)
+
+  Defines how NMDOT administers federal transit funding, including program eligibility, project selection, coordination, procurement, financial controls, vehicles, property, oversight, civil rights, safety, drug-and-alcohol compliance, and grant closeout.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/c6aa7f25-8cba-4825-9665-95ce898b2b9b/NMDOT%202026%20SMP.pdf) · [Current Transit Bureau Page](https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/)
+
+- [FY 2026 Section 5310, 5311, and 5339 Transit Budget Awards (Archived PDF)](https://files.abqinfo.com/transportation/transit/nmdot-fy2026-fta-5310-5311-5339-budget-awards.pdf)
+
+  Documents current federal transit award recommendations, including Albuquerque Section 5310 vehicles for disability and senior-service providers, Rio Metro capital awards, statewide rural-transit operating support, requests, rankings, matching funds, and program deadlines.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/3cd73f95-1e66-4aff-9364-4138e2228783/FY%202026%20FTA%20Section%205310%205311%205339%20Budget%20Awards.pdf) · [Current Transit Bureau Page](https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/)
+
+- [FY 2025 Section 5310, 5311, and 5339 Transit Budget Awards (Archived PDF)](https://files.abqinfo.com/transportation/transit/nmdot-fy2025-fta-5310-5311-5339-budget-awards.pdf)
+
+  Preserves the preceding award cycle for Albuquerque mobility providers and Rio Metro, documenting requested and recommended vehicles, federal and local shares, applicant rankings, statewide rural-transit awards, capital history, and administrative requirements.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/1f9405bd-5db4-4e8c-acf7-efc95d0052f5/FY%202025%20FTA%20Section%205310%205311%205339%20Budget%20Awards.pdf) · [Current Transit Bureau Page](https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/)
+
 ## State Transit Connections
 
 - [NMDOT Park and Ride](https://www.dot.nm.gov/travel-information/park-and-ride-bus-shuttle-service)

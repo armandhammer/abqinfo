@@ -138,6 +138,24 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6817/FFY-2025-Annual-Listing-of-Obligations-PDF) · [Current Annual Project Listing and Obligation Reports](https://www.mrcog-nm.gov/278/Annual-Project-Listing-Obligation-Report)
 
+- [MRMPO Unified Planning Work Program Progress Report, FFY 2026 Quarter 1 (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-upwp-progress-report-ffy2026-q1.pdf)
+
+  Tracks MRMPO work completed through December 2025 across TIP administration, data collection, safety, active transportation, regional planning, corridor studies, public engagement, ABQ RIDE planning, Rio Metro coordination, and the UNM/CNM transit study.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6927) · [Current Unified Planning Work Program](https://www.mrcog-nm.gov/310/Unified-Planning-Work-Program)
+
+- [NMDOT CMAQ and Carbon Reduction Program Guide, FFY 2026-2028 (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-cmaq-crp-program-guide-ffy2026-2028.pdf)
+
+  Explains eligible emissions-reduction and carbon-reduction projects, available funding, local matches, federal requirements, application scoring, schedules, project delivery, and reimbursement for local and tribal agencies seeking FFY 2026-2028 awards.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/8de0374b-dccd-4189-ac9d-3ba152a899fd/2024_1104_CMAQ%20%20CRP%20Program%20Guide%20FINAL.pdf) · [Current NMDOT Research and Climate Bureau](https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/research-and-climate-bureau/)
+
+- [NMDOT Transportation Alternatives and Recreational Trails Program Guide, FFY 2026+ (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-tap-rtp-program-guide-ffy2026.pdf)
+
+  Guides local agencies through funding for walking, bicycling, Safe Routes to School, trails, historic transportation facilities, streetscapes, and related projects, including eligibility, applications, scoring, matching funds, federal requirements, and project delivery.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6500/TAP_RTP-NMDOT-Guide-FFY2026-PDF) · [MRMPO Project Development Resources](https://www.mrcog-nm.gov/303/Project-Development)
+
 - [MRMPO Performance-Based Planning and Programming](https://www.mrcog-nm.gov/676/Performance-Based-Planning)
 
   MRCOG’s maintained performance hub gathers the regional measures and current reports used to set targets, track safety and system performance, and coordinate transit asset-management and public-transportation safety planning.

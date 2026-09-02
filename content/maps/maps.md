@@ -119,6 +119,26 @@ Interactive maps of city data and infrastructure.
 
   Locates City-maintained survey monuments across Albuquerque and provides monument details for survey, engineering, construction, mapping, public-infrastructure, and property research. [Public feature service](https://services.arcgis.com/CWv1abTnC3urn4bV/arcgis/rest/services/Survey_Monument_Maintenance_Public/FeatureServer)
 
+## Regional Traffic-Volume Maps
+
+- [Greater Albuquerque Area Traffic Flows (2024 Archived PDF)](https://files.abqinfo.com/maps/mrmpo-greater-albuquerque-traffic-flows-2024.pdf)
+
+  Maps 2024 average annual weekday traffic across Albuquerque and adjoining communities, with roadway-segment counts, volume categories, Uptown and Downtown insets, and a 2019-2024 metropolitan vehicle-miles-traveled trend.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6723/2024-Traffic-Flow-Map-for-Greater-Albuquerque-Area-PDF) · [Current Traffic-Flow Map Library](https://www.mrcog-nm.gov/623/Traffic-Flow-Maps-and-Busiest-Intersecti)
+
+- [East Mountains Traffic Flows (2024 Archived PDF)](https://files.abqinfo.com/maps/mrmpo-east-mountains-traffic-flows-2024.pdf)
+
+  Maps 2024 average annual weekday traffic on I-40, NM 14, NM 333, NM 337, NM 344, Frost Road, and local routes across eastern Bernalillo County, with a six-year vehicle-miles-traveled trend.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6724/2024-Traffic-Flow-Map-for-Rural-Bernalillo-County-PDF) · [Current Traffic-Flow Map Library](https://www.mrcog-nm.gov/623/Traffic-Flow-Maps-and-Busiest-Intersecti)
+
+- [Albuquerque Metropolitan Area's 25 Busiest Intersections (2024 Archived PDF)](https://files.abqinfo.com/maps/mrmpo-busiest-intersections-2024.pdf)
+
+  Maps and ranks the region's 25 highest approach-volume intersections, reports 2024 counts, and compares each location's rank and volume with 2019-2023 data to show changing traffic patterns.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6386/2023-Top-25-Busiest-Intersections-PDF) · [Current Traffic-Flow Map Library](https://www.mrcog-nm.gov/623/Traffic-Flow-Maps-and-Busiest-Intersecti)
+
 ## City Bicycle Maps and Data
 
 - [Proposed Bike Network](https://cabq.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=036949b4007c4def8f3675afcda46069)

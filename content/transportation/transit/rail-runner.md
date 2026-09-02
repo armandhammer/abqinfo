@@ -48,6 +48,12 @@ The New Mexico Rail Runner Express connects Belen, Albuquerque, and Santa Fe. Th
 
   Provides the current statewide passenger and freight rail inventory, including Rail Runner service, stations, connections, ownership, safety, funding, trends, needs, goals, and the prioritized Rail Service and Investment Program. [Official NMDOT Rail Bureau](https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/rail-bureau/)
 
+- [NMDOT Transit and Rail Division Fact Sheet (February 2026 Archived PDF)](https://files.abqinfo.com/transportation/transit/nmdot-transit-rail-division-fact-sheet-2026.pdf)
+
+  Reports FY 2025 Rail Runner ridership, vehicle-miles-traveled reductions, fuel and emissions savings, operating roles, statewide transit connections, grade-crossing work, and the Albuquerque-to-Santa Fe commuter cost comparison.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/2f37aa9b-612c-4804-a7c9-fcd2db19d5d0/2026_Program_Fact_Sheet_FINAL.pdf)
+
 ## Historical Planning and Development
 
 - [New Mexico Rail Runner Express Project Development History (2009)](https://files.abqinfo.com/transportation/transit/rail-runner/rio-metro-rail-runner-project-development-history-2009.pdf)
@@ -75,6 +81,12 @@ The New Mexico Rail Runner Express connects Belen, Albuquerque, and Santa Fe. Th
   Establishes a transit-oriented development framework around the Rail Runner station near the Sunport, covering land use, street connections, walking and bicycling, public spaces, development standards, implementation, and coordination with surrounding Albuquerque destinations. [Official MRCOG plan page](https://www.mrcog-nm.gov/327/Bernalillo-County-Sunport-Plan)
 
 ## Safety and Access
+
+- [NMDOT Section 130 Highway-Rail Grade Crossing Safety Manual (2025 Archived PDF)](https://files.abqinfo.com/transportation/transit/rail-runner/nmdot-section-130-grade-crossing-safety-manual-2025.pdf)
+
+  Defines the current statewide process for identifying, ranking, funding, designing, inspecting, and closing public highway-rail crossings, including crash history, train and roadway exposure, corridor projects, diagnostic reviews, agreements, and reporting.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/92d83f7b-bd35-4d62-a3b3-2dfb250b7676/Section%20130%20Program%20Procedures%20and%20Guidelines%20%20Manual%2002_03_2026.pdf) · [Current Rail Bureau Page](https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/rail-bureau/)
 
 - [NMRX Grade Crossing Pedestrian and Bicyclist Safety Study (2016)](https://files.abqinfo.com/transportation/transit/rail-runner/rio-metro-nmrx-grade-crossing-pedestrian-bicyclist-safety-study-2016.pdf)
 
