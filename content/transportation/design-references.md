@@ -189,6 +189,12 @@ Reference drawings, engineering details, and technical guidance related to trans
 
 Reference guidance for quick-build transportation and multimodal safety projects.
 
+- [NMDOT Green Stormwater Infrastructure Maintenance Manual (2024 Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/nmdot-green-stormwater-infrastructure-maintenance-manual-2024.pdf)
+
+  Applies practical inspection, routine-maintenance, and remediation standards to roadway bioswales and stormwater-harvesting basins, including erosion, sediment, vegetation, irrigation, clear zones, sight distance, worker safety, seasonal tasks, and field checklists.
+
+  [Official NMDOT PDF](https://www.dot.nm.gov/wp-content/uploads/2024/07/NMDOT-GSI-Maintenance-Manual_Final.pdf) · [Stormwater and Drainage Placement](/public-works/stormwater-drainage/#hydrology-and-development-review)
+
 - [NMDOT Quick Build Guide](https://files.abqinfo.com/transportation/design-references/nmdot-quick-build-guide.pdf)
 
   Introduces quick-build project planning, design, materials, public engagement, installation, and evaluation practices for delivering lower-cost multimodal safety improvements on New Mexico streets.

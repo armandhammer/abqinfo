@@ -24,6 +24,12 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
   [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/ESC%20Plan%20Standard%20Notes.pdf) · [Official City Development Review Services Directory](https://documents.cabq.gov/planning/DevelopmentReviewServices/)
 
+- [NMDOT Green Stormwater Infrastructure Maintenance Manual (2024 Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/nmdot-green-stormwater-infrastructure-maintenance-manual-2024.pdf)
+
+  Provides field-ready inspection and maintenance guidance for stormwater-harvesting basins and bioswales, addressing infiltration, sediment, erosion, vegetation, mulch, irrigation, roadway sight lines, worker safety, seasonal scheduling, remediation, and standardized checklists.
+
+  [Official NMDOT PDF](https://www.dot.nm.gov/wp-content/uploads/2024/07/NMDOT-GSI-Maintenance-Manual_Final.pdf) · [Current NMDOT Research and Climate Bureau](https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/research-and-climate-bureau/)
+
 ## Watershed Plans
 
 ### Upper Piedras Marcadas Watershed Drainage and Water Quality Management Plan
