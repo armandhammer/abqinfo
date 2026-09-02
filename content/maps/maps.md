@@ -139,6 +139,18 @@ Interactive maps of city data and infrastructure.
 
   [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6386/2023-Top-25-Busiest-Intersections-PDF) · [Current Traffic-Flow Map Library](https://www.mrcog-nm.gov/623/Traffic-Flow-Maps-and-Busiest-Intersecti)
 
+- [Big I Approach Volumes, 1980-2024 (Archived PDF)](https://files.abqinfo.com/maps/mrmpo-big-i-approach-volumes-1980-2024.pdf)
+
+  Charts observed average weekday traffic approaching Albuquerque's Big I from 1980 through 2024, showing long-term growth, year-to-year variation, pandemic-era decline, recent recovery, and the fitted historical trend.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6378/Big-I-Approach-Volumes-Historic-to-Current-2023-PDF) · [Current Traffic-Flow Map Library](https://www.mrcog-nm.gov/623/Traffic-Flow-Maps-and-Busiest-Intersecti)
+
+- [Potential Road Diet Candidates Map (2025 Archived PDF)](https://files.abqinfo.com/maps/mrmpo-potential-road-diet-candidates-2025.pdf)
+
+  Maps potential Albuquerque-area road-diet corridors using 2023 lane and traffic-volume data, grouping six-, eight-, and four-lane streets by preliminary priority while emphasizing that every candidate requires project-level engineering analysis.
+
+  [Current Interactive Context and Official Source](https://www.mrcog-nm.gov/569/Road-Diet-Candidates-Map) · [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6639/MRMPO_RoadDiets2023_Web20250523)
+
 ## City Bicycle Maps and Data
 
 - [Proposed Bike Network](https://cabq.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=036949b4007c4def8f3675afcda46069)

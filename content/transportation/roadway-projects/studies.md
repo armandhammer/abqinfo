@@ -398,9 +398,11 @@ Transportation studies and reports.
 
 ## Regional Screening and Analysis
 
-- [Road Diet Candidates Map](https://www.mrcog-nm.gov/569/Road-Diet-Candidates-Map)
+- [Potential Road Diet Candidates Map (2025 Archived PDF)](https://files.abqinfo.com/maps/mrmpo-potential-road-diet-candidates-2025.pdf)
 
-  Presents MRMPO's 2023 screening of roadways that may support safety-focused reconfiguration based on lanes, capacity, and traffic volume. Candidate status is preliminary and does not replace project-specific engineering analysis.
+  Maps potential Albuquerque-area road-diet corridors using 2023 lane and traffic-volume data, grouping six-, eight-, and four-lane streets by preliminary priority while emphasizing that every candidate requires project-level engineering analysis.
+
+  [Current Interactive Context and Official Source](https://www.mrcog-nm.gov/569/Road-Diet-Candidates-Map) · [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6639/MRMPO_RoadDiets2023_Web20250523)
 
 ## State Highway Studies Affecting Albuquerque
 
@@ -425,6 +427,12 @@ Transportation studies and reports.
 - [Big I Operations Study](https://www.dot.nm.gov/projects/big-i-operations-study/)
 
   NMDOT’s Big I study page describes work at the I-25/I-40 interchange and links to the project’s interactive material. It belongs under studies until a defined implementation project and status are established.
+
+- [Big I Approach Volumes, 1980-2024 (Archived PDF)](https://files.abqinfo.com/maps/mrmpo-big-i-approach-volumes-1980-2024.pdf)
+
+  Charts observed average weekday traffic approaching Albuquerque's Big I from 1980 through 2024, providing a long-term traffic baseline for interpreting the current operations study and future interchange alternatives.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6378/Big-I-Approach-Volumes-Historic-to-Current-2023-PDF) · [Current Traffic-Flow Map Library](https://www.mrcog-nm.gov/623/Traffic-Flow-Maps-and-Busiest-Intersecti)
 
 - [I-25 S-Curve Area Study](https://www.i25scurve.com/)
 
