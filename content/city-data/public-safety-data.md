@@ -32,11 +32,47 @@ Maintained public-safety dashboards, police statistics, geographic breakdowns, r
 
 ## Community Safety Response
 
+### Annual Operational Snapshots
+
 - [Albuquerque Community Safety FY2026 Fourth-Quarter Report (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-acs-fy2026-fourth-quarter-report.pdf)
 
   Reports FY2026 ACS call volume, response times, 311 and service outcomes, violence-prevention activity, program updates, and mapped calls by City Council district, documenting 51,217 non-police responses focused primarily on mental health, homelessness, and addiction.
 
   [Official City PDF](https://www.cabq.gov/acs/documents/quarterly-report-q4-2026fy-final.pdf) · [Current ACS report library](https://www.cabq.gov/acs/transparency)
+
+- [Albuquerque Community Safety FY2025 Fourth-Quarter Report (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-acs-fy2025-fourth-quarter-report.pdf)
+
+  Reports ACS call volume, response times, 311 outcomes, violence-prevention activity, program updates, and mapped calls by City Council district during FY2025, documenting the department's growth and 45,235 non-police responses focused on behavioral health, homelessness, and addiction.
+
+  [Official City PDF](https://www.cabq.gov/acs/documents/quarterly-report-q4-2025fy-final.pdf) · [Current ACS report library](https://www.cabq.gov/acs/transparency)
+
+- [Albuquerque Community Safety FY2024 Fourth-Quarter Report (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-acs-fy2024-fourth-quarter-report.pdf)
+
+  Documents ACS operations and outcomes during FY2024, including calls for service, response times, program activity, violence-intervention metrics, and maps by City Council district, providing a comparable year-end record of Albuquerque's alternative public-safety response system.
+
+  [Official City PDF](https://www.cabq.gov/acs/documents/quarterly-report-q4-2024fy.pdf) · [Current ACS report library](https://www.cabq.gov/acs/transparency)
+
+### Foundational Planning and Engagement
+
+- [Albuquerque Community Safety Organizational Plan (2021) (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-acs-organizational-plan-2021.pdf)
+
+  Establishes ACS's original mission, service model, organization, staffing, training, dispatch protocols, community partnerships, accountability measures, and phased implementation, preserving the foundational plan for Albuquerque's civilian response to behavioral-health, homelessness, and substance-use calls.
+
+  [Official City PDF](https://www.cabq.gov/acs/documents/acs-organizational-plan-20211207.pdf) · [Current ACS report library](https://www.cabq.gov/acs/transparency)
+
+- [Albuquerque Community Safety Community Engagement Report (2021) (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-acs-community-engagement-report-2021.pdf)
+
+  Summarizes more than 65 early community-engagement sessions that shaped ACS, documenting residents' priorities for dispatch, responder qualifications, cultural competence, service coordination, accountability, and implementation of a non-police response department.
+
+  [Official City PDF](https://documents.cabq.gov/acs/acs-community-engagement-report-v9.pdf) · [Current ACS report library](https://www.cabq.gov/acs/transparency)
+
+### Violence Intervention Program
+
+- [Violence Intervention Program Annual Report with September 2022 Data Update (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-violence-intervention-program-annual-report-2022.pdf)
+
+  Reviews Albuquerque's Violence Intervention Program development, staffing, referrals, service connections, shooting reviews, community partnerships, and early outcomes, with data updated through September 2022 on intensive case management for people at highest risk of gun violence.
+
+  [Official City PDF](https://www.cabq.gov/acs/documents/vip-mayors-report-to-date.pdf) · [Current ACS report library](https://www.cabq.gov/acs/transparency)
 
 ## Historical Crime Trends
 

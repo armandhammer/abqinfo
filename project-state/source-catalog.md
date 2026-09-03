@@ -1,8 +1,8 @@
 # ABQ Info authoritative source catalog
 
-Generated: 2026-09-03T18:37:48.3684007Z
+Generated: 2026-09-03T19:32:06.0572769Z
 
-This catalog is derived from master-inventory.json, the authoritative project queue. It records 6397 candidates and 801 R2 objects totaling 7771354837 bytes.
+This catalog is derived from master-inventory.json, the authoritative project queue. It records 6402 candidates and 806 R2 objects totaling 7805955281 bytes.
 
 ## Queue status
 
@@ -16,7 +16,7 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | description drafted | 0 |
 | placement assigned | 0 |
 | implemented | 3 |
-| validated | 1041 |
+| validated | 1046 |
 | excluded | 883 |
 | duplicate | 953 |
 | superseded | 114 |
@@ -609,7 +609,12 @@ This catalog is derived from master-inventory.json, the authoritative project qu
 | Yucca Drive Speed Study | City of Albuquerque | 2019-05 | PDF | 4247367 | content/transportation/roadway-projects/speed-management.md | [source](https://www.cabq.gov/neighborhood-traffic-management-program/studies) | [R2](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-yucca-drive-speed-study-2019.pdf) |
 | Zuni Road Study — Part I | City of Albuquerque | 2011-08 | PDF | 8459851 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/completed-projects/2012/zuni-road-study) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-zuni-road-study-part-1-2011.pdf) |
 | Zuni Road Study — Part II: Collected Data | City of Albuquerque | 2011-08 | PDF | 4959198 | content/transportation/roadway-projects/studies.md | [source](https://www.cabq.gov/council/projects/completed-projects/2012/zuni-road-study) | [R2](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-zuni-road-study-part-2-2011.pdf) |
+| Albuquerque Community Safety Community Engagement Report | City of Albuquerque - Albuquerque Community Safety | 2021-01 | PDF | 5592314 | content/city-data/public-safety-data.md | [source](https://documents.cabq.gov/acs/acs-community-engagement-report-v9.pdf) | [R2](https://files.abqinfo.com/city-data/public-safety/cabq-acs-community-engagement-report-2021.pdf) |
+| Albuquerque Community Safety FY2024 Fourth-Quarter Report | City of Albuquerque - Albuquerque Community Safety | 2024 | PDF | 5879258 | content/city-data/public-safety-data.md | [source](https://www.cabq.gov/acs/transparency/reports/resolveuid/8435117a02c148719bf924035e2b13b4) | [R2](https://files.abqinfo.com/city-data/public-safety/cabq-acs-fy2024-fourth-quarter-report.pdf) |
+| Albuquerque Community Safety FY2025 Fourth-Quarter Report | City of Albuquerque - Albuquerque Community Safety | 2025-07 | PDF | 1810433 | content/city-data/public-safety-data.md | [source](https://www.cabq.gov/acs/documents/quarterly-report-q4-2025fy-final.pdf) | [R2](https://files.abqinfo.com/city-data/public-safety/cabq-acs-fy2025-fourth-quarter-report.pdf) |
 | Albuquerque Community Safety FY2026 Fourth-Quarter Report | City of Albuquerque - Albuquerque Community Safety | 2026 | PDF | 2360153 | content/city-data/public-safety-data.md | [source](https://www.cabq.gov/acs/documents/quarterly-report-q4-2026fy-final.pdf) | [R2](https://files.abqinfo.com/city-data/public-safety/cabq-acs-fy2026-fourth-quarter-report.pdf) |
+| Albuquerque Community Safety Organizational Plan | City of Albuquerque - Albuquerque Community Safety | 2021-12 | PDF | 12941632 | content/city-data/public-safety-data.md | [source](https://www.cabq.gov/acs/transparency/reports/resolveuid/2ff00f68fea84f1f8ab55e579fd3b089) | [R2](https://files.abqinfo.com/city-data/public-safety/cabq-acs-organizational-plan-2021.pdf) |
+| Violence Intervention Program Annual Report with September 2022 Data Update | City of Albuquerque - Albuquerque Community Safety | 2022-09 | PDF | 8376807 | content/city-data/public-safety-data.md | [source](https://www.cabq.gov/acs/transparency/reports/resolveuid/c71ba4d5186d48cb985e1c3448dec89a) | [R2](https://files.abqinfo.com/city-data/public-safety/cabq-violence-intervention-program-annual-report-2022.pdf) |
 | 2022 ABQ RIDE On-Board Rider Survey | City of Albuquerque / ABQ RIDE | 2022-07-07 | PDF | 3701011 | content/transportation/transit/abq-ride.md | [source](https://www.cabq.gov/transit/transit-programs-projects/abq-ride-forward) | [R2](https://files.abqinfo.com/transportation/transit/abq-ride-forward/on-board-rider-survey-2022.pdf) |
 | ABC Comprehensive Plan, Chapter 10: Parks & Open Space (2025 Update) | City of Albuquerque / Bernalillo County | 2025 | PDF | 27179821 | content/public-works/parks-recreation.md | [source](https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan) | [R2](https://files.abqinfo.com/public-works/parks-recreation/abc-comprehensive-plan-chapter-10-parks-open-space-2025.pdf) |
 | ABC Comprehensive Plan, Chapter 6: Transportation (2025 Update) | City of Albuquerque / Bernalillo County | 2025 | PDF | 20598377 | content/transportation/transportation-plans.md | [source](https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan) | [R2](https://files.abqinfo.com/transportation/transportation-plans/abc-comprehensive-plan-chapter-6-transportation-2025.pdf) |
