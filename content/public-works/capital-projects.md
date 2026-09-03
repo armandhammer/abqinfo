@@ -6,6 +6,10 @@ Public works capital improvement projects.
 
 ## Current Project Data
 
+- [Central Atrisco Fiberoptic Expansion Project](https://www.bernco.gov/public-works/blog/2024/07/15/central-atrisco-fiberoptic-expansion-project)
+
+  Preserves the County’s recent fiber installation along Atrisco Vista Boulevard, Comfort Way, and Central Avenue, funded through federal Economic Development Administration and American Rescue Plan sources and completed in July 2025.
+
 - [Mountain View Environmental Inventory and Gap Mapping Analysis](https://www.bernco.gov/public-works/blog/2026/03/12/mountain-view-environmental-inventory-and-gap-mapping-analysis)
 
   Tracks the County project creating a community-facing environmental database for Mountain View, with parcel, business, permit, contaminant, air, soil, water, remediation, and agency-jurisdiction information planned for interactive maps.

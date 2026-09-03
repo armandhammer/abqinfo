@@ -45,6 +45,8 @@ jobs:
         run: |
           mkdir -p download
           curl --fail --location --retry 3 --retry-delay 2 \
+            --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0 Safari/537.36" \
+            --referer "$SOURCE_URL" \
             --output download/source-document "$SOURCE_URL"
           test -s download/source-document
 

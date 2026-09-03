@@ -249,6 +249,18 @@ Interactive maps of city data and infrastructure.
 
 ## County Project Maps
 
+- [Sunset Road Reconstruction Phase 2 Project Map (2025 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-sunset-road-phase-2-project-map-2025.pdf)
+
+  Maps Sunset Road reconstruction from Bridge Boulevard to Trujillo Road, distinguishing roadway construction and storm-drain improvements and showing neighborhood streets, irrigation facilities, project endpoints, and the Rio Grande. [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/04/SunsetPh2_Project_Map_CountyWeb.pdf) · [Official County project page](https://www.bernco.gov/public-works/blog/2024/07/15/sunset-road-reconstruction-phase-2)
+
+- [Foothill Drive Project Map (2025 Archived Image)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-foothill-drive-project-map-2025.png)
+
+  Maps the Foothill Drive improvement segment in the Atrisco community, showing the project alignment between the railroad corridor and Atrisco Drive, nearby homes, agricultural land, streets, and drainage features. [Official County Image](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/03/Foothill-Dr.png) · [Official County project page](https://www.bernco.gov/public-works/blog/2025/03/25/foothill-drive)
+
+- [Tijeras Creek Watershed Restoration Overall Site Plan (2024 Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/bernco-tijeras-creek-watershed-restoration-site-plan-2024.pdf)
+
+  Maps the restoration design for Tijeras Creek between NM 333, Public School Road, Los Vecinos Community Center, and A. Montoya Elementary School, including floodplain grading, stream alignment, structures, access, vegetation, construction limits, and utility context. [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2024/12/Tijeras-Watershed-Overall-Site-Plan.pdf) · [Official County project page](https://www.bernco.gov/public-works/blog/2024/12/18/tijeras-creek-watershed-restoration-project)
+
 - [South Valley Drinking Water Project Phase 7 Map (2015 Archived PDF)](https://files.abqinfo.com/public-works/capital-projects/bernco-south-valley-water-phase-7-map-2015.pdf)
 
   Maps Phase 7 pipeline routes, service areas, project limits, roads, waterways, railroad infrastructure, and connections within the County's larger phased utility program. [Official County project page](https://www.bernco.gov/public-works/blog/2021/04/15/south-valley-drinking-water-project/)

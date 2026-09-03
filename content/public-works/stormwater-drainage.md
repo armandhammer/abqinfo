@@ -46,6 +46,14 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
   Models developed watershed conditions and compares drainage alternatives, hydraulic capacity, costs, low-impact development and water-quality measures, funding options, basin maps, design plates, calculations, and recommended improvements for Upper Piedras Marcadas. [Official project resources](https://www.upgradeunserpaseo.com/resources/)
 
+### Tijeras Creek Watershed Restoration
+
+- [Tijeras Creek Watershed Restoration Project](https://www.bernco.gov/public-works/blog/2024/12/18/tijeras-creek-watershed-restoration-project)
+
+  Documents the County’s restoration of Tijeras Creek and its floodplain near Los Vecinos Community Center and A. Montoya Elementary School, using nature-based solutions to reduce flood risk, restore native habitat, and improve downstream water quality.
+
+  [Overall Site Plan (2024 Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/bernco-tijeras-creek-watershed-restoration-site-plan-2024.pdf) · [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2024/12/Tijeras-Watershed-Overall-Site-Plan.pdf)
+
 ### Deferred Watershed Project Record
 
 - [Official County Project Page](https://www.bernco.gov/public-works/blog/2024/08/05/upper-la-cueva-improvements/)

@@ -28,6 +28,14 @@ Separate [Studies]({{< relref "studies.md" >}}) and [Speed Management]({{< relre
 
   Tracks current and completed District 7 work, including Girard streetscaping, Lomas green-stormwater and traffic calming, the Mile High Bike Boulevard, school-area safety measures, medians, crossings, and speed cushions.
 
+- [Cutler Avenue Street Improvements](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/cutler-avenue-report-1)
+
+  Connects the completed pedestrian project with the earlier commercial-district plan, documenting improvements between the Cutler cul-de-sac and Washington Street alongside longer-term land-use, transportation, infrastructure, safety, and economic-development recommendations.
+
+  [Cutler Avenue Report (2018 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/cabq-cutler-avenue-report-2018.pdf) · [Official City PDF](https://www.cabq.gov/council/documents/cutler-avenue-report-final-august.pdf)
+
+  [Pedestrian Improvements Presentation (2021 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/cabq-cutler-avenue-pedestrian-improvements-presentation-2021.pdf) · [Official City PDF](https://www.cabq.gov/council/documents/8-16-21-cutler_pre-final_power-point_pi.pdf)
+
 - [West Central Complete Streets Project](https://www.cabq.gov/municipaldevelopment/featured-projects/west-central-complete-streets-project)
 
   Documents the active Central Avenue safety and accessibility project, its limits, schedule, public meetings, federal Safe Streets and Roads for All funding, design concepts, and frequently asked questions.
@@ -101,6 +109,22 @@ Project contact: Bridgette Garrett at DMD, bgarrett@cabq.gov
   [Project Map (2025 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-sunset-road-gonzales-neetsie-project-map-2025.pdf) · [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/01/Sunset-Map.pdf)
 
   Project contact: Gary Moreno-Ulibarri, 505-527-2657, [gmulibarri@bernco.gov](mailto:gmulibarri@bernco.gov)
+
+- [Sunset Road Reconstruction Phase 2](https://www.bernco.gov/public-works/blog/2024/07/15/sunset-road-reconstruction-phase-2)
+
+  Tracks design from Bridge Boulevard to Trujillo Road for a two-lane roadway, storm drainage, curb and gutter, sidewalks, and related improvements. The County page still reports 30% design and a fall 2025 completion target.
+
+  [Project Map (2025 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-sunset-road-phase-2-project-map-2025.pdf) · [Typical Section (2025 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-sunset-road-phase-2-typical-section-2025.pdf) · [Official Project Map](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/04/SunsetPh2_Project_Map_CountyWeb.pdf) · [Official Typical Section](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/04/SunsetPh2_Typical_CountyWeb.pdf)
+
+  Project contact: Jennifer Flor, 505-350-7833, [jflor@bernco.gov](mailto:jflor@bernco.gov)
+
+- [Foothill Drive](https://www.bernco.gov/public-works/blog/2025/03/25/foothill-drive)
+
+  Tracks right-of-way acquisition and design for roadway and storm-drainage improvements along Foothill Drive in the Atrisco community. The County page still reports design at 30% and a February 2026 completion target.
+
+  [Project Map (2025 Archived Image)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-foothill-drive-project-map-2025.png) · [Official County Image](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/03/Foothill-Dr.png)
+
+  Project contact: Vincent Bartholdi, 505-221-4030, [vbartholdi@bernco.gov](mailto:vbartholdi@bernco.gov)
 
 - [Isleta Boulevard Reconstruction Phase 1](https://www.bernco.gov/public-works/blog/2021/04/16/isleta-boulevard-reconstruction-phase-1/)
 
