@@ -284,6 +284,12 @@ Transportation studies and reports.
 
   [Official City PDF](https://www.cabq.gov/planning/documents/ZuniRoadStudyPart21111.pdf)
 
+- [Central Avenue and Zuni Road Cross-Section Modification Analysis (2013 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-central-zuni-cross-section-modification-analysis-2013.pdf)
+
+  Tests proposed lane reductions, bicycle lanes, medians, pedestrian refuges, turn-lane changes, signal timing, and 2035 traffic conditions on Zuni Road and Central Avenue, finding the Zuni configuration operationally feasible with targeted intersection mitigations while deferring Central changes pending BRT analysis.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/councilor-district-6-documents/ZuniGeometricAnalysis.pdf) · [Official City document record](https://www.cabq.gov/council/documents/councilor-district-6-documents/ZuniGeometricAnalysis.pdf/view)
+
 ### Bridge Boulevard
 
 - [Bridge Boulevard Corridor Redevelopment Plan (2013 archived PDF)](https://files.abqinfo.com/development-land-use/plans/bernco-bridge-boulevard-corridor-redevelopment-plan-2013.pdf)

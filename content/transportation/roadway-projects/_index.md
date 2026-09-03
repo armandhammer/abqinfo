@@ -74,6 +74,12 @@ Project contact: Bridgette Garrett at DMD, bgarrett@cabq.gov
 
 ### Bernalillo County Corridor Projects
 
+- [Isleta Boulevard Corridor Lighting](https://www.bernco.gov/public-works/blog/2025/11/03/isleta-blvd-corridor-lighting)
+
+  Designs LED lighting upgrades along Isleta Boulevard from Durand Road to Bridge Boulevard, ten intersections, and the I-25 Exit 213 ramps. Bernalillo County reports design at 30% with construction anticipated in 2026–2027.
+
+  Project contact: Gary Moreno-Ulibarri, 505-527-2657
+
 - [Bridge Boulevard at Cortez Intersection](https://www.bernco.gov/public-works/blog/2025/08/27/bridge-boulevard-at-cortez-intersection)
 
   Tracks removal of the westbound slip lane, conversion of the Tower Road connector to two-way travel, new bicycle lanes and drainage, a Tower Road deceleration lane, and a median restricting truck traffic on Cortez Drive.
