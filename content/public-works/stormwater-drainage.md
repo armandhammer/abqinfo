@@ -78,6 +78,10 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
 ## Historical County Drainage Projects
 
+- [Foothill Pond Feasibility Study](https://www.bernco.gov/public-works/blog/2021/04/15/foothill-pond-feasibility-study)
+
+  Evaluates Foothill Bridge Pond and a possible connection to the Isleta Drain, including site survey, hydraulic capacity, a 30% conceptual design, and construction-cost estimate for improving the stormwater outfall system.
+
 - [Barcelona Road Storm Drain Project Phase 2A](https://www.bernco.gov/public-works/blog/2025/07/15/barcelona-road-strom-drain-project-phase-2a)
 
   Preserves the completed South Valley flood-reduction project between Joe Sanchez and La Junta Roads, including runoff collection and connection to the Armijo Drain alongside bicycle lanes, curb and gutter, and sidewalk improvements.
