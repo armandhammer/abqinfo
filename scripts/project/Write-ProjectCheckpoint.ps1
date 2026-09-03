@@ -3,6 +3,7 @@ param(
   [string]$InventoryPath = 'project-state/master-inventory.json',
   [string]$OutputPath = 'project-state/checkpoint.json',
   [string]$CompletedRange = '',
+  [string]$NextPendingId = '',
   [string[]]$Blockers = @(),
   [string]$ResumeCommand = 'powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Test-Candidate.ps1 -UpdateInventory'
 )
@@ -18,7 +19,7 @@ $checkpoint = [ordered]@{
   total_candidates = @($inventory.candidates).Count
   counts_by_status = $inventory.counts
   remaining_nonterminal = $remaining.Count
-  next_pending_id = $inventory.next_pending_id
+  next_pending_id = if ($NextPendingId) { $NextPendingId } else { $inventory.next_pending_id }
   blockers = $Blockers
   resume_command = $ResumeCommand
 }

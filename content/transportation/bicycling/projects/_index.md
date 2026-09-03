@@ -8,6 +8,12 @@ Projects dated from 2021 through 2026 are grouped as current. Projects from 2020
 
 ## Current Projects (2021–2026)
 
+### Tom Bolack Urban Forest Trail Improvements
+
+- [City Project Page](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/park-improvements/tom-bolack-urban-forest-trail-extension)
+
+  Documents the completed trail paving and solar-lighting project south of I-40 between Louisiana and San Pedro, including PNM utility coordination, the concrete connection near the dog park, construction sequencing, and before-and-after photographs.
+
 ### Dr. Martin Luther King Jr. Avenue Separated Bicycle Lane Pilot
 
 - [City Project Page](https://www.cabq.gov/municipaldevelopment/featured-projects/dr-martin-luther-king-jr-blvd-separated-bicycle-lane-pilot-project)

@@ -150,6 +150,12 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6116/FFY-2023-Annual-Listing-of-Obligations-PDF) · [Current Annual Project Listing and Obligation Reports](https://www.mrcog-nm.gov/278/Annual-Project-Listing-Obligation-Report)
 
+- [MRMPO Unified Planning Work Program, FFY 2025-2026 (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy2025-2026.pdf)
+
+  Defines MRMPO's transportation-planning work, staffing, budgets, schedules, and deliverables for FFY 2025-2026, including the TIP, traffic data, safety, active transportation, metropolitan planning, corridor studies, public engagement, ABQ RIDE, and Rio Metro coordination.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6326/2025-and-2026-Unified-Planning-Work-Program-UPWP) · [Current Unified Planning Work Program](https://www.mrcog-nm.gov/310/Unified-Planning-Work-Program)
+
 - [MRMPO Unified Planning Work Program Progress Report, FFY 2026 Quarter 1 (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-upwp-progress-report-ffy2026-q1.pdf)
 
   Tracks MRMPO work completed through December 2025 across TIP administration, data collection, safety, active transportation, regional planning, corridor studies, public engagement, ABQ RIDE planning, Rio Metro coordination, and the UNM/CNM transit study.
@@ -410,9 +416,9 @@ Regional plans, long-range plans, and other system-level transportation planning
 
 ## Bernalillo County Planning
 
-- [Bernalillo County Transportation Project Planning Process (2024 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/bernco-transportation-project-planning-process-2024.pdf)
+- [Bernalillo County Transportation Project Planning Process (2024 Archived Image)](https://files.abqinfo.com/transportation/transportation-plans/bernco-transportation-project-planning-process-2024.png)
 
-  Diagrams how Bernalillo County identifies, prioritizes, funds, and approves transportation projects through inventories, adopted plans, public input, County Commission decisions, bonds, capital outlay, impact fees, NMDOT programs, and the regional TIP. [Official County page](https://www.bernco.gov/public-works/transportation-planning/transportation-project-planning/)
+  Diagrams how Bernalillo County identifies, prioritizes, funds, and approves transportation projects through inventories, adopted plans, public input, County Commission decisions, bonds, capital outlay, impact fees, NMDOT programs, and the regional TIP. [Official County image](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2024/03/Transportation-Planning-Process-March-2024.png) · [Official County page](https://www.bernco.gov/public-works/transportation-planning/transportation-project-planning/)
 
 - [Bernalillo County Transportation Plans](https://www.bernco.gov/public-works/transportation-planning/transportation-plans)
 

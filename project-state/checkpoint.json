@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-09-02T20:51:30.4180334Z",
-  "completed_item_range": "",
-  "total_candidates": 6386,
+  "recorded_at": "2026-09-03T01:26:07.6630697Z",
+  "completed_item_range": "PR94 batch: 6 authoritative archives validated; 6 live project records validated; 2 cross-listings; 4 redundant or low-value records resolved; 1 descendant StoryMap explicitly deferred",
+  "total_candidates": 6389,
   "counts_by_status": {
-    "pending review": 3459,
+    "pending review": 3447,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 4,
@@ -11,15 +11,15 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 3,
-    "validated": 990,
-    "excluded": 851,
-    "duplicate": 952,
-    "superseded": 94,
+    "validated": 1002,
+    "excluded": 852,
+    "duplicate": 951,
+    "superseded": 97,
     "blocked": 0,
     "requires human review": 33
   },
-  "remaining_nonterminal": 3466,
-  "next_pending_id": "src-0004d9e0318a9df5",
+  "remaining_nonterminal": 3454,
+  "next_pending_id": "src-292bb3809c0b3fdf",
   "blockers": [],
-  "resume_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Test-Candidate.ps1 -UpdateInventory"
+  "resume_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Get-Candidate.ps1 -Id src-292bb3809c0b3fdf"
 }

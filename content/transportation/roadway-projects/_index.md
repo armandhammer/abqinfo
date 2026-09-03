@@ -74,6 +74,38 @@ Project contact: Bridgette Garrett at DMD, bgarrett@cabq.gov
 
 ### Bernalillo County Corridor Projects
 
+- [Bridge Boulevard at Cortez Intersection](https://www.bernco.gov/public-works/blog/2025/08/27/bridge-boulevard-at-cortez-intersection)
+
+  Tracks removal of the westbound slip lane, conversion of the Tower Road connector to two-way travel, new bicycle lanes and drainage, a Tower Road deceleration lane, and a median restricting truck traffic on Cortez Drive.
+
+  Project contact: Damian Luna, 505-640-6375, [dluna@bernco.gov](mailto:dluna@bernco.gov)
+
+- [2nd Street ADA Improvements](https://www.bernco.gov/public-works/blog/2025/06/16/2nd-street-americans-with-disabilities-act-improvements/)
+
+  Tracks accessibility upgrades to sidewalks, transitions, and driveways on the east side of 2nd Street. Phase 1 was completed in June 2025; Phase 2 design is complete and awaits construction funding.
+
+  [Phase 2 Project Map (2025 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-second-street-ada-improvements-phase-2-map-2025.pdf) · [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/07/2nd-ADA-Ph2-Map.pdf)
+
+  Project contact: Gary Moreno-Ulibarri, 505-527-2657, [gmulibarri@bernco.gov](mailto:gmulibarri@bernco.gov)
+
+- [Sunset Road Improvements: Gonzales to Neetsie](https://www.bernco.gov/public-works/blog/2025/01/23/sunset-road-improvements-gonzales-to-neetsie/)
+
+  Tracks planned roadway reconstruction, bicycle lanes, sidewalk, curb and gutter, infiltration chambers, storm-drain inlets, and a pedestrian safety wall along Sunset Road. Design is complete and the project is in bidding.
+
+  [Project Map (2025 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-sunset-road-gonzales-neetsie-project-map-2025.pdf) · [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/01/Sunset-Map.pdf)
+
+  Project contact: Gary Moreno-Ulibarri, 505-527-2657, [gmulibarri@bernco.gov](mailto:gmulibarri@bernco.gov)
+
+- [Isleta Boulevard Reconstruction Phase 1](https://www.bernco.gov/public-works/blog/2021/04/16/isleta-boulevard-reconstruction-phase-1/)
+
+  Tracks design and construction preparation between Malpais and Luchetti Roads, including environmental review, right-of-way acquisition, utilities, roadway plans, drainage, bicycle and pedestrian facilities, and final procurement milestones.
+
+  [Phase I Design Schedule, 2021-2026 (Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-isleta-boulevard-phase-1-design-schedule-2021-2026.pdf) · [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/01/Isleta-Blvd-FINAL-DESIGN-PHASE-I-Schedule-JAN2025R.pdf)
+
+- [4th Street Pavement Preservation](https://www.bernco.gov/public-works/blog/2025/02/17/4th-street-pavement-preservation)
+
+  Preserves the completed 2025 milling and repaving project on 4th Street, documenting its roadway-preservation purpose, roughly $3 million construction cost, County bond funding, contractor, schedule, and project contact.
+
 - [Atrisco Vista Boulevard Reconstruction](https://www.bernco.gov/public-works/blog/2021/04/16/atrisco-vista-boulevard-improvement-project/)
 
   Tracks reconstruction and realignment from Double Eagle II Road to Paseo del Norte, including bicycle lanes, future trail grading, drainage, right-of-way acquisition, environmental review, and phased design and construction.
@@ -271,6 +303,10 @@ Questions, construction concerns, or text-alert assistance: email [info@i25impro
   Lists current event and seasonal construction moratoriums, affected street boundaries, downloadable maps, dates, and the live map used to coordinate safe traffic operations during major Albuquerque events.
 
 ## Past Projects (2020 and Earlier)
+
+- [Barcelona Road Storm Drain Project Phase 2A](https://www.bernco.gov/public-works/blog/2025/07/15/barcelona-road-strom-drain-project-phase-2a)
+
+  Preserves the completed 2019-2020 roadway and drainage project between Joe Sanchez and La Junta Roads, which connected runoff to the Armijo Drain and added bicycle lanes, curb and gutter, and sidewalk.
 
 - [Paseo del Norte Access to Fire Station 35](https://www.bernco.gov/public-works/blog/2021/04/15/paseo-del-norte-access-fire-station-35/)
 

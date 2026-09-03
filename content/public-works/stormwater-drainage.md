@@ -78,6 +78,10 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
 ## Historical County Drainage Projects
 
+- [Barcelona Road Storm Drain Project Phase 2A](https://www.bernco.gov/public-works/blog/2025/07/15/barcelona-road-strom-drain-project-phase-2a)
+
+  Preserves the completed South Valley flood-reduction project between Joe Sanchez and La Junta Roads, including runoff collection and connection to the Armijo Drain alongside bicycle lanes, curb and gutter, and sidewalk improvements.
+
 - [Hardy Court Improvements — Project Map (2025 Archived Image)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-hardy-court-project-map-2025.jpg)
 
   Maps the roadway and drainage project near Riverside Drive, including residential access, the proposed storm-drain outfall, West Riverside Drain, Rio Grande bosque, and surrounding neighborhood context. [Official County project page](https://www.bernco.gov/public-works/blog/2025/02/20/hardy-ct-improvements/)
