@@ -68,6 +68,24 @@ Regional roadway operations, traffic analysis, incident management, and intellig
 
 ## Traffic Analysis
 
+- [Albuquerque Metropolitan Planning Area Daily Vehicle-Miles Traveled per Capita, 1970–2024 (Archived PDF)](https://files.abqinfo.com/transportation/traffic-operations/mrmpo-ampa-vmt-per-capita-1970-2024.pdf)
+
+  Charts daily vehicle-miles traveled per person across the Albuquerque metropolitan planning area from 1970 through 2024, preserving the long-run rise, post-2007 decline, pandemic disruption, and recent recovery in regional driving.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6380/Historic-to-Current-AMPA-Daily-per-Capita-VMT-chart-2024-PDF?bidId=) · [Current Traffic-Flow Map Library](https://www.mrcog-nm.gov/623/Traffic-Flow-Maps-and-Busiest-Intersecti)
+
+- [Albuquerque Metropolitan Planning Area Daily and Per-Capita Vehicle-Miles Traveled, 1970–2024 (Archived PDF)](https://files.abqinfo.com/transportation/traffic-operations/mrmpo-ampa-vmt-history-1970-2024.pdf)
+
+  Tabulates Albuquerque metropolitan population, total daily vehicle-miles traveled, and per-capita travel from 1970 through 2024, providing the numerical record behind regional traffic trends and long-range comparisons.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6376/AMPA-VMT-Historic-to-Current--Daily-and-Per-Capita-Information-2024-PDF?bidId=) · [Maps Cross-Listing](/maps/maps/#regional-traffic-volume-maps)
+
+- [Albuquerque River-Crossing Traffic Volumes, 1970–2024 (Archived PDF)](https://files.abqinfo.com/transportation/traffic-operations/mrmpo-river-crossing-volumes-1970-2024.pdf)
+
+  Tracks average weekday traffic across Albuquerque-area Rio Grande bridges from 1970 through 2024, showing individual crossing volumes, combined totals, network changes, and the long-term distribution of cross-river travel.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6377/River-Crossing-Volumes-Historic-to-Current-2024-PDF?bidId=) · [Maps Cross-Listing](/maps/maps/#regional-traffic-volume-maps)
+
 - [Albuquerque Metropolitan Planning Area Summary Statistics (2024 Archived PDF)](https://files.abqinfo.com/transportation/traffic-operations/mrmpo-ampa-summary-statistics-2024.pdf)
 
   Summarizes 2024 roadway mileage, vehicle-miles traveled, and vehicle-hours traveled across the Albuquerque metropolitan planning area, organized by functional classification and urban or rural location.
@@ -91,6 +109,16 @@ Regional roadway operations, traffic analysis, incident management, and intellig
 - [Congestion Management Process Archives](https://www.mrcog-nm.gov/575/CMP-Archives)
 
   Preserves regional corridor rankings, congestion profiles, strategy matrices, network maps, commuting studies, transit travel-time analysis, adaptive-signal findings, and related Albuquerque-area congestion-management work dating to 2008.
+
+### Historical Traffic-Flow Map Archives
+
+- [Greater Albuquerque Area and Rio Rancho Traffic-Flow Maps, 1968–2023](https://www.mrcog-nm.gov/DocumentCenter/Index/166)
+
+  Collects more than five decades of MRCOG traffic-flow maps for Albuquerque and Rio Rancho, preserving historical roadway volumes and network changes alongside the current regional traffic-monitoring publications.
+
+- [Rural Bernalillo County Traffic-Flow Maps, 1993–2023](https://www.mrcog-nm.gov/DocumentCenter/Index/167)
+
+  Collects MRCOG's historical traffic-flow maps for rural Bernalillo County, supporting comparisons of long-term roadway volumes and development patterns outside Albuquerque's municipal boundary but within the regional transportation system.
 
 ## Intelligent Transportation Systems
 
