@@ -74,6 +74,12 @@ Use the service pages for current rider information and the Transportation Plans
 
   [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/91972cdd-0698-46c6-b201-a41dd629c5db/FY%202023%20FTA%20Section%205310%205311%205339%20Budget%20Awards.pdf) · [Current Transit Bureau Page](https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/)
 
+- [FY 2022 Section 5310, 5311, and 5339 Transit Budget Awards (Archived PDF)](https://files.abqinfo.com/transportation/transit/nmdot-fy2022-fta-5310-5311-5339-budget-awards.pdf)
+
+  Preserves FY 2022 federal transit award recommendations for Albuquerque mobility providers, Rio Metro, and statewide systems, including pandemic-relief operating support, vehicle and equipment requests, applicant rankings, matching shares, and program balances.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/f46e1ed8-7bfa-49bd-88b8-44fc38f868e0/FY%202022%20FTA%20Section%205310%205311%205339%20CARES%20Act%20and%20ARP%20Act%20Budget%20Awards.pdf) · [Current Transit Bureau Page](https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/)
+
 ## Safety and Asset Management
 
 - [City of Albuquerque Public Transportation Agency Safety Plan (2025 Archived PDF)](https://files.abqinfo.com/transportation/transit/cabq-public-transportation-agency-safety-plan-2025.pdf)

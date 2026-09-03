@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-09-03T01:52:53.2478183Z",
-  "completed_item_range": "PR 95 batch: 8 current transit, traffic-analysis, and capital-program records validated; 3 low-value administrative records excluded",
+  "recorded_at": "2026-09-03T02:42:26.4109737Z",
+  "completed_item_range": "PR 96 batch: 4 archived traffic/transit records and 2 historical map collections validated; 42 queue-noise records terminally classified",
   "total_candidates": 6389,
   "counts_by_status": {
-    "pending review": 3436,
+    "pending review": 3388,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 4,
@@ -11,18 +11,18 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 3,
-    "validated": 1010,
-    "excluded": 855,
-    "duplicate": 951,
-    "superseded": 97,
+    "validated": 1016,
+    "excluded": 883,
+    "duplicate": 952,
+    "superseded": 110,
     "blocked": 0,
     "requires human review": 33
   },
-  "remaining_nonterminal": 3443,
+  "remaining_nonterminal": 3395,
   "next_pending_id": "src-0004d9e0318a9df5",
   "blockers": [
-    "Local abqinfo-r2-upload Windows credential is missing; one-time GitHub Actions upload completed and public byte-identical validation passed.",
-    "GitHub CLI token is invalid; Git HTTPS credential remains functional, so branch push works but PR creation may require web or reauthentication."
+    "Local abqinfo-r2-upload Windows credential remains missing; protected GitHub workflow uploads and public byte-identical validation succeeded.",
+    "GitHub CLI token remains invalid; Git Credential Manager supports pushes and GitHub API PR creation."
   ],
-  "resume_command": "pwsh -File scripts/project/New-PendingReviewPriorityQueue.ps1; pwsh -File scripts/project/Invoke-ProjectValidation.ps1"
+  "resume_command": "pwsh -File scripts/project/New-PendingReviewPriorityQueue.ps1; review the refreshed high-priority queue without reintroducing terminal exclusions"
 }
