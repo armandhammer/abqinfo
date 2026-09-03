@@ -96,9 +96,23 @@ Project contact: Bridgette Garrett at DMD, bgarrett@cabq.gov
 
   Connects the County intersection record with the natural-gas pipeline relocation needed before NMDOT replaces the Rio Bravo bridge, including safety, service, schedule, traffic, air-quality, and construction information.
 
+  [Second Street and Rio Bravo Construction Schedule - February 18, 2026 (Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-second-street-rio-bravo-construction-schedule-2026-02-18.pdf) · [Official County Schedule](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2026/02/A300942-2nd-and-Rio-Bravo-CPM-Pay-App-14-Schedule-Update.pdf)
+
+  The contractor schedule tracks utility work, traffic control, paving, lighting, signals, drainage, bridge activities, milestones, completion percentages, and schedule constraints for the active intersection project.
+
   [Gas-Pipeline Relocation Resident FAQ (2025 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-rio-bravo-bridge-pipeline-relocation-faq-2025.pdf) · [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/07/Final-Rio-Bravo-Full-FAQs.pdf)
 
   Pipeline-relocation questions: [Neighbors@nmgco.com](mailto:Neighbors@nmgco.com)
+
+  County project contact: Vincent Bartholdi, 505-848-1572 or 505-221-4030, [vbartholdi@bernco.gov](mailto:vbartholdi@bernco.gov)
+
+- [Isleta Boulevard Reconstruction Phases 2 and 3](https://www.bernco.gov/public-works/blog/2025/07/16/isleta-boulevard-reconstruction-phase-2-3/)
+
+  Tracks full roadway reconstruction from Luchetti Road through Don Felipe Road to Durand Road, including bicycle lanes, sidewalks, landscape buffers, drainage, intersection lighting, right-of-way work, and phased design and construction.
+
+  [Phase II Design Schedule, 2024-2027 (Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-isleta-boulevard-phase-2-design-schedule-2024-2027.pdf) · [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/07/Isleta-Blvd-FINAL-DESIGN-PHASE-II-Schedule-MAR2024.pdf)
+
+  Project contact: Gary Moreno-Ulibarri, 505-527-2657, [gmulibarri@bernco.gov](mailto:gmulibarri@bernco.gov)
 
 - [Dennis Chavez Boulevard and Condershire Drive Intersection Safety Improvements](https://www.bernco.gov/public-works/blog/2025/11/25/condershire-dr-nm500-dennis-chavez-blvd-intersection-improvements)
 

@@ -56,6 +56,18 @@ Use the service pages for current rider information and the Transportation Plans
 
   [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/1f9405bd-5db4-4e8c-acf7-efc95d0052f5/FY%202025%20FTA%20Section%205310%205311%205339%20Budget%20Awards.pdf) · [Current Transit Bureau Page](https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/)
 
+- [FY 2024 Section 5310, 5311, and 5339 Transit Budget Awards (Archived PDF)](https://files.abqinfo.com/transportation/transit/nmdot-fy2024-fta-5310-5311-5339-budget-awards.pdf)
+
+  Preserves FY 2024 federal transit award recommendations for Albuquerque mobility providers, Rio Metro, and statewide rural systems, including vehicle and equipment requests, operating support, applicant rankings, matching funds, and available balances.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/d3144877-9751-4ea0-8497-94c2fe4a60ab/FY%202024%20FTA%20Section%205310%205311%205339%20Budget%20Awards.pdf) · [Current Transit Bureau Page](https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/)
+
+- [FY 2023 Section 5310, 5311, and 5339 Transit Budget Awards (Archived PDF)](https://files.abqinfo.com/transportation/transit/nmdot-fy2023-fta-5310-5311-5339-budget-awards.pdf)
+
+  Preserves FY 2023 federal transit award recommendations for Albuquerque mobility providers and statewide systems, documenting vehicles, equipment, operating assistance, regional priorities, matching shares, procurement requirements, and program administration.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/91972cdd-0698-46c6-b201-a41dd629c5db/FY%202023%20FTA%20Section%205310%205311%205339%20Budget%20Awards.pdf) · [Current Transit Bureau Page](https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/)
+
 ## State Transit Connections
 
 - [NMDOT Park and Ride](https://www.dot.nm.gov/travel-information/park-and-ride-bus-shuttle-service)
@@ -67,6 +79,12 @@ Use the service pages for current rider information and the Transportation Plans
   Collects statewide public-transit and rail plans, programs, grant resources, provider information, Rail Runner and Park and Ride links, and permitting guidance for access to or crossings of railroad right-of-way.
 
 ## Statewide Planning Context
+
+- [New Mexico Transit Guide (2023 Archived PDF)](https://files.abqinfo.com/transportation/transit/nmdot-new-mexico-transit-guide-2023.pdf)
+
+  Catalogs New Mexico transit providers, services, funding programs, regional districts, and connections, with dedicated Albuquerque, Rio Metro, Rail Runner, paratransit, university, veteran, and intercity information plus a statewide system map.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/35cf3c08-e0c8-42f3-8c65-412397ba8ab9/2023%20Transit%20Guide.pdf) · [Current NMDOT Transit and Rail Division](https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/)
 
 - [Planned and Potential Transit Service Map](https://mrmpo.maps.arcgis.com/apps/instant/sidebar/index.html?appid=d637ede6b5c44129bbbd1393b27eff22)
 

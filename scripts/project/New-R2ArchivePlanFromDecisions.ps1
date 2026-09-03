@@ -31,7 +31,9 @@ foreach ($decision in @($decisions.decisions)) {
   if ($candidateType -eq 'PDF') {
     $textPath = [IO.Path]::ChangeExtension([string]$candidate.local_path, '.txt')
     if (Test-Path -LiteralPath $textPath) {
-      $normalizedText = ((Get-Content -Raw -Encoding UTF8 -LiteralPath $textPath).ToLowerInvariant() -replace '\s+', ' ').Trim()
+      $rawText = Get-Content -Raw -Encoding UTF8 -LiteralPath $textPath
+      if ($null -eq $rawText) { $rawText = '' }
+      $normalizedText = (($rawText.ToLowerInvariant() -replace '\s+', ' ')).Trim()
       if ($normalizedText -match 'please wait' -and $normalizedText -match 'viewer may not be able to display this type of document') {
         throw "Candidate '$($decision.id)' is an unusable Adobe XFA placeholder PDF and cannot be planned for R2 archival. Find a usable authoritative non-XFA version instead."
       }

@@ -138,11 +138,39 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6817/FFY-2025-Annual-Listing-of-Obligations-PDF) · [Current Annual Project Listing and Obligation Reports](https://www.mrcog-nm.gov/278/Annual-Project-Listing-Obligation-Report)
 
+- [MRMPO FFY 2024 Annual Listing of Obligations (Archived PDF)](https://files.abqinfo.com/transportation/funding/mrmpo-ffy2024-annual-listing-obligations.pdf)
+
+  Records federal transportation funds obligated in FFY 2024 for Albuquerque-area roadway, transit, bicycle, pedestrian, safety, and planning projects, distinguishing programmed amounts from actual obligations and identifying projects that advanced or remained unobligated.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6454/FFY-2024-Annual-Listing-of-Obligations-PDF) · [Current Annual Project Listing and Obligation Reports](https://www.mrcog-nm.gov/278/Annual-Project-Listing-Obligation-Report)
+
+- [MRMPO FFY 2023 Annual Listing of Obligations (Archived PDF)](https://files.abqinfo.com/transportation/funding/mrmpo-ffy2023-annual-listing-obligations.pdf)
+
+  Records federal transportation funds obligated in FFY 2023 for Albuquerque-area roadway, transit, bicycle, pedestrian, safety, and school projects, preserving programmed amounts, actual obligations, project phases, funding categories, and explanatory notes.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6116/FFY-2023-Annual-Listing-of-Obligations-PDF) · [Current Annual Project Listing and Obligation Reports](https://www.mrcog-nm.gov/278/Annual-Project-Listing-Obligation-Report)
+
 - [MRMPO Unified Planning Work Program Progress Report, FFY 2026 Quarter 1 (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-upwp-progress-report-ffy2026-q1.pdf)
 
   Tracks MRMPO work completed through December 2025 across TIP administration, data collection, safety, active transportation, regional planning, corridor studies, public engagement, ABQ RIDE planning, Rio Metro coordination, and the UNM/CNM transit study.
 
   [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6927) · [Current Unified Planning Work Program](https://www.mrcog-nm.gov/310/Unified-Planning-Work-Program)
+
+- [MRMPO Annual Performance and Expenditure Report, FFY 2025 (Official PDF, 129.65 MiB)](https://www.mrcog-nm.gov/DocumentCenter/View/6997)
+
+  Documents MRMPO work, deliverables, staffing, and expenditures during FFY 2025, including safety, traffic monitoring, metropolitan planning, development review, incident management, transit studies, ABQ RIDE activities, consultant work, and Title VI compliance. The original exceeds ABQInfo's 100 MB upload safeguard and remains linked from MRCOG pending archival approval.
+
+- [MRMPO Annual Performance and Expenditure Report, FFY 2024 (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-annual-performance-expenditure-report-ffy2024.pdf)
+
+  Documents MRMPO work and spending during FFY 2024, including the regional safety plan, traffic monitoring, development review, incident management, metropolitan planning, transit studies, ABQ RIDE planning, consultant work, staffing, and Title VI compliance.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6594/2024-Annual-Performance-and-Expenditue-Report-PDF) · [Current Unified Planning Work Program](https://www.mrcog-nm.gov/310/Unified-Planning-Work-Program)
+
+- [NMDOT FFY 2025-2026 Planning Work Program, as Amended (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-planning-work-program-ffy2025-2026-amended.pdf)
+
+  Defines NMDOT's current statewide planning and research work, budgets, staffing, schedules, and deliverables, including Albuquerque-region coordination, Complete Streets implementation, bicycle-plan updates, safety programming, traffic data, freight, climate, and metropolitan planning support.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/0eb13fa7-89c2-49cc-99f0-f0df1a5a1d17/Current%20FFY%202025-2026%20Planning%20Work%20Program%20As%20Amended.pdf) · [Current NMDOT Planning Division](https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/)
 
 - [NMDOT CMAQ and Carbon Reduction Program Guide, FFY 2026-2028 (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-cmaq-crp-program-guide-ffy2026-2028.pdf)
 

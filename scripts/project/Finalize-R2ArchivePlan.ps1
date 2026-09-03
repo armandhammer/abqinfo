@@ -21,15 +21,23 @@ foreach ($item in @($plan.items)) {
   if ([string]$result[0].checksum_sha256 -ne [string]$candidate.checksum_sha256) { throw "Public checksum mismatch for '$($item.id)'." }
   if (-not $candidate.source_url -or -not $candidate.direct_file_url) { throw "Authoritative source provenance is incomplete for '$($item.id)'." }
   if ([string]$candidate.provenance_status -notlike 'official*') { throw "Candidate '$($item.id)' is not eligible for authoritative validation." }
-  $page = Get-Content -Raw -Encoding UTF8 -LiteralPath $item.proposed_canonical_page
-  $officialLinkPresent = $page -like "*$($candidate.direct_file_url)*" -or $page -like "*$($candidate.source_url)*"
-  if ($page -notlike "*$($candidate.r2_url)*" -or -not $officialLinkPresent) { throw "Archive or official-source link is missing from the implementation page for '$($item.id)'." }
+  $locations = @(if ($item.PSObject.Properties['implementation_locations'] -and @($item.implementation_locations).Count) {
+    @($item.implementation_locations)
+  } else {
+    @([string]$item.proposed_canonical_page)
+  })
+  foreach ($location in $locations) {
+    $page = Get-Content -Raw -Encoding UTF8 -LiteralPath $location
+    $officialLinkPresent = $page -like "*$($candidate.direct_file_url)*" -or $page -like "*$($candidate.source_url)*"
+    if ($page -notlike "*$($candidate.r2_url)*" -or -not $officialLinkPresent) { throw "Archive or official-source link is missing from implementation page '$location' for '$($item.id)'." }
+  }
 
   $candidate.status = 'validated'
   $candidate.description = [string]$item.description
   $candidate.description_word_count = @([string]$item.description -split '\s+' | Where-Object { $_ }).Count
   $candidate.implementation_location = [string]$item.proposed_canonical_page
-  $candidate.implementation_locations = @([string]$item.proposed_canonical_page)
+  $candidate.implementation_locations = $locations
+  if ($locations.Count -gt 1) { $candidate.cross_listing_approved = $true }
   $candidate.validation_status = 'passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated'
   $candidate.processing_notes = @($candidate.processing_notes) + @('Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.') | Sort-Object -Unique
   $candidate.updated_at = (Get-Date).ToUniversalTime().ToString('o')

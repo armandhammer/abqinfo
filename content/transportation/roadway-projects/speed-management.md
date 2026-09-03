@@ -4,6 +4,14 @@ title: "Speed Management"
 
 Traffic calming and speed management initiatives.
 
+## Regional Safety Analysis
+
+- [Regional Transportation Safety Action Plan Area Safety Profiles (2024 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/safety/mrmpo-rtsap-area-safety-profiles-2024.pdf)
+
+  Provides localized crash analyses for eleven communities, including Albuquerque's International District, with fatal and serious-injury patterns, vulnerable-road-user findings, mapped concentrations, contributing factors, site observations, and recommended safety focus areas.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6465/Appendix-C-RTSAP-2024-Area-Safety-Profiles) · [Current Safety Planning Assistance](https://www.mrcog-nm.gov/638/Safety-Planning-Assistance)
+
 ## Neighborhood Traffic Management Program
 
 - [Neighborhood Traffic Management Program](https://www.cabq.gov/neighborhood-traffic-management-program)
