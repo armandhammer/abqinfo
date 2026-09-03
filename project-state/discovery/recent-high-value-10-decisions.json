@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "batch_id": "recent-high-value-10",
+  "reviewed_at": "2026-09-03",
+  "decisions": [
+    {
+      "id": "src-0004d9e0318a9df5",
+      "outcome": "validated",
+      "basis": "The authoritative City of Albuquerque Geodetic Control page returned HTTP 200."
+    },
+    {
+      "id": "src-e01a76624585786b",
+      "outcome": "duplicate",
+      "canonical_id": "src-0c2d8157b7ae743b",
+      "basis": "Reviewed 29-page MRRTPO FFY 2024 APER duplicates the already archived canonical MRMPO APER."
+    },
+    {
+      "id": "src-fc7310be1ec7694c",
+      "outcome": "excluded",
+      "basis": "The source is an XLSX workbook, not a PDF; reviewed county and location fields contain no Albuquerque or Bernalillo County projects."
+    }
+  ]
+}

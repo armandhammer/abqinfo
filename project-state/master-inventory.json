@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-03T19:31:24.1422440Z",
+  "generated_at": "2026-09-03T21:06:29.0560939Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,7 +18,7 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 3366,
+    "pending review": 3363,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 4,
@@ -26,14 +26,14 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 3,
-    "validated": 1046,
-    "excluded": 883,
-    "duplicate": 953,
+    "validated": 1047,
+    "excluded": 884,
+    "duplicate": 954,
     "superseded": 114,
     "blocked": 0,
     "requires human review": 33
   },
-  "next_pending_id": "src-0004d9e0318a9df5",
+  "next_pending_id": "src-000dc3f31153bfe5",
   "candidates": [
     {
       "id": "lin-01236d79d0623075",
@@ -13383,7 +13383,7 @@
     },
     {
       "id": "src-0004d9e0318a9df5",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/gis/map-views/geodetic-control",
       "direct_file_url": null,
       "r2_url": null,
@@ -13422,11 +13422,11 @@
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative source HTTP 200",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-08-04T14:45:04.0714372Z",
-      "updated_at": "2026-08-04T14:45:04.0714372Z"
+      "updated_at": "2026-09-03T21:02:05.096914Z"
     },
     {
       "id": "src-000dc3f31153bfe5",
@@ -255506,19 +255506,19 @@
     },
     {
       "id": "src-e01a76624585786b",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.mrcog-nm.gov/DocumentCenter/View/6575/2024_1121_MRRTPO_FFY24APER_Final",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.mrcog-nm.gov/DocumentCenter/View/6575/2024_1121_MRRTPO_FFY24APER_Final",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "MRCOG",
-      "title": "Annual Performance and Expenditure Report (APER )",
-      "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "title": "MRRTPO Annual Performance and Expenditure Report, FFY 2024",
+      "date": "2024",
+      "file_type": "PDF",
+      "size_bytes": 769651,
+      "checksum_sha256": "a68acdd99142d8d7141cd9d88974f072dd09e3fc2358bbc12025efa5e84215e1",
       "parent_url": "https://www.mrcog-nm.gov/307/RTPO-Planning-Documents",
       "referring_urls": [
         "https://www.mrcog-nm.gov/307/RTPO-Planning-Documents"
@@ -255538,17 +255538,18 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review."
+        "Authoritative MRCOG PDF reviewed: 29 pages; substantive FFY 2024 MRRTPO planning and expenditure record.",
+        "Reconciled to canonical archived record src-0c2d8157b7ae743b after content and placement review.",
+        "Downloaded exact size: 769651 bytes; SHA-256 a68acdd99142d8d7141cd9d88974f072dd09e3fc2358bbc12025efa5e84215e1."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "reviewed: duplicate of archived FFY 2024 MRMPO APER record src-0c2d8157b7ae743b",
+      "exclusion_reason": "This MRRTPO FFY 2024 APER is already represented by canonical archived record src-0c2d8157b7ae743b; its content and program scope duplicate the existing publication.",
+      "local_path": "research/staging/queue/src-e01a76624585786b.pdf",
       "discovered_at": "2026-08-14T23:32:59.8428632Z",
-      "updated_at": "2026-08-14T23:32:59.8428632Z"
+      "updated_at": "2026-09-03T21:06:24.0877519Z"
     },
     {
       "id": "src-e01b2c62963c90e9",
@@ -285956,19 +285957,19 @@
     },
     {
       "id": "src-fc7310be1ec7694c",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.mrcog-nm.gov/DocumentCenter/View/6928/RTIPR_Amended_41626",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.mrcog-nm.gov/DocumentCenter/View/6928/RTIPR_Amended_41626",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "MRCOG",
-      "title": "Regional Transportation Improvement Projects Recommendations (RTIPR)",
-      "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "title": "MRRTPO Regional Transportation Improvement Projects Recommendations, amended April 2026",
+      "date": "2026-04-16",
+      "file_type": "Excel workbook (XLSX)",
+      "size_bytes": 22848,
+      "checksum_sha256": "d2d72df2f71af5dff001c657bbaeeb2ad063f549a3eb32ce274aa71d618faaab",
       "parent_url": "https://www.mrcog-nm.gov/307/RTPO-Planning-Documents",
       "referring_urls": [
         "https://www.mrcog-nm.gov/307/RTPO-Planning-Documents"
@@ -285988,17 +285989,18 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review."
+        "Authoritative DocumentCenter download identified by ZIP signature and reviewed as an XLSX workbook, not a PDF.",
+        "Workbook contains a structured 22-column project table; reviewed county and location fields found no Albuquerque or Bernalillo County rows.",
+        "Downloaded exact size: 22848 bytes; SHA-256 d2d72df2f71af5dff001c657bbaeeb2ad063f549a3eb32ce274aa71d618faaab."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "reviewed: authoritative workbook is outside Albuquerque/Bernalillo County scope",
+      "exclusion_reason": "The amended MRRTPO recommendations workbook covers rural-region projects; a complete review found no Albuquerque or Bernalillo County project rows, so it is not separately published in ABQInfo.",
+      "local_path": "research/staging/queue/src-fc7310be1ec7694c.xlsx",
       "discovered_at": "2026-08-14T23:32:59.6141109Z",
-      "updated_at": "2026-08-14T23:32:59.6141109Z"
+      "updated_at": "2026-09-03T21:06:27.5922974Z"
     },
     {
       "id": "src-fc73859882038329",
