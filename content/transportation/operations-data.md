@@ -68,6 +68,18 @@ Regional roadway operations, traffic analysis, incident management, and intellig
 
 ## Traffic Analysis
 
+- [Albuquerque Metropolitan Planning Area Summary Statistics (2024 Archived PDF)](https://files.abqinfo.com/transportation/traffic-operations/mrmpo-ampa-summary-statistics-2024.pdf)
+
+  Summarizes 2024 roadway mileage, vehicle-miles traveled, and vehicle-hours traveled across the Albuquerque metropolitan planning area, organized by functional classification and urban or rural location.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6384/2024-AMPA-Summary-Statistics-Mileage-VMT-and-VHT-PDF?bidId=) · [Current Traffic-Flow Map Library](https://www.mrcog-nm.gov/623/Traffic-Flow-Maps-and-Busiest-Intersecti)
+
+- [Albuquerque Metropolitan Area Top 75 Busiest Intersections (2024 Archived PDF)](https://files.abqinfo.com/transportation/traffic-operations/mrmpo-top-75-busiest-intersections-2024.pdf)
+
+  Ranks the Albuquerque metropolitan area's 75 busiest intersections using 2024 approach volumes and preserves each location's earlier rankings and counts for comparison with traffic patterns from 2017 through 2023.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6385/2024-Top-75-Busiest-Intersections-With-Past-Rankings-PDF?bidId=) · [Maps Cross-Listing](/maps/maps/#regional-traffic-volume-maps)
+
 - [MRCOG Traffic Counts Viewer](https://mrmpo.maps.arcgis.com/apps/webappviewer/index.html?id=5e779402decd4a9584d9cdddf1cbe56b)
 
   Maps regional traffic counts by roadway section and approximate count location, with tabular-data and map exports supporting analysis across Albuquerque, Bernalillo County, and the wider MRCOG planning area.

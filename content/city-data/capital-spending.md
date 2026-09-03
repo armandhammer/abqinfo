@@ -6,6 +6,12 @@ Capital improvement spending and projects.
 
 ## Current Capital Program
 
+- [2026 Infrastructure Capital Improvement Plan Project List (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-infrastructure-capital-improvement-plan-project-list-2026.pdf)
+
+  Lists Albuquerque's 2026 Infrastructure Capital Improvement Plan projects and identifying numbers by department, covering transit, streets, drainage, parks, housing, public safety, facilities, technology, redevelopment, and other capital needs.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/icip-2026-session.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/icip-2026-session.pdf)
+
 - [2025-2033 General Obligation Bond Initial Request Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-go-bond-initial-request-summary-2025-2033.pdf)
 
   Records Albuquerque departments' initial capital requests for the 2025-2033 bond cycles, including allocations, project scopes, locations, justifications, schedules, costs, funding sources, operating impacts, and requested amounts before final program approval.
