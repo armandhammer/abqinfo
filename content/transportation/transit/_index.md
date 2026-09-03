@@ -32,6 +32,12 @@ Use the service pages for current rider information and the Transportation Plans
 
 ## Current State Transit Programs and Funding
 
+- [FY 2027 Section 5310, 5311, and 5339 Transit Budget Awards (Archived PDF)](https://files.abqinfo.com/transportation/transit/nmdot-fy2027-fta-5310-5311-5339-budget-awards.pdf)
+
+  Documents FY 2027 federal transit award recommendations for Albuquerque mobility providers, Rio Metro, and statewide systems, including vehicle requests, operating support, applicant rankings, matching funds, regional prioritization, and recommended awards.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/e0ba7827-c51f-4aa8-96ff-b809bff6faf2/FY%202027%20FTA%20Section%205310%205311%205339%20Budget%20Awards.pdf) · [Current Transit Bureau Page](https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/)
+
 - [NMDOT Transit and Rail Division Fact Sheet (February 2026 Archived PDF)](https://files.abqinfo.com/transportation/transit/nmdot-transit-rail-division-fact-sheet-2026.pdf)
 
   Summarizes current NMDOT transit and rail programs with FY 2025 ridership, service, fleet, funding, Rail Runner, Park and Ride, Albuquerque paratransit-provider, regional-district, grade-crossing, and freight-rail statistics.
@@ -67,6 +73,32 @@ Use the service pages for current rider information and the Transportation Plans
   Preserves FY 2023 federal transit award recommendations for Albuquerque mobility providers and statewide systems, documenting vehicles, equipment, operating assistance, regional priorities, matching shares, procurement requirements, and program administration.
 
   [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/91972cdd-0698-46c6-b201-a41dd629c5db/FY%202023%20FTA%20Section%205310%205311%205339%20Budget%20Awards.pdf) · [Current Transit Bureau Page](https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/)
+
+## Safety and Asset Management
+
+- [City of Albuquerque Public Transportation Agency Safety Plan (2025 Archived PDF)](https://files.abqinfo.com/transportation/transit/cabq-public-transportation-agency-safety-plan-2025.pdf)
+
+  Defines ABQ RIDE's current safety-management framework for fixed-route, rapid-transit, and paratransit service, including performance targets, risk reduction, employee reporting, responsibilities, training, emergency preparedness, and City approval documentation.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/7012/City-of-Albuquerque-Public-Transportation-Agency-Safety-Plan-2025?bidId=) · [Current Regional Performance-Based Planning Page](https://www.mrcog-nm.gov/676/Performance-Based-Planning)
+
+- [City of Albuquerque Transit Asset Management Plan (2022 Archived PDF)](https://files.abqinfo.com/transportation/transit/cabq-transit-asset-management-plan-2022.pdf)
+
+  Documents ABQ RIDE's rolling stock, equipment, facilities, asset condition, state-of-good-repair policy, investment priorities, decision-support methods, performance targets, and four-year implementation strategy for managing Albuquerque's transit capital assets.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/7008/City-of-Albuquerque-Transit-Asset-Management-Plan-2022?bidId=) · [Current Regional Performance-Based Planning Page](https://www.mrcog-nm.gov/676/Performance-Based-Planning)
+
+- [Rio Metro Public Transportation Agency Safety Plan (2025 Archived PDF)](https://files.abqinfo.com/transportation/transit/rio-metro-public-transportation-agency-safety-plan-2025.pdf)
+
+  Sets Rio Metro's current bus-safety policy, performance targets, risk-reduction program, safety-management responsibilities, employee reporting, training, emergency coordination, infectious-disease measures, board approvals, and annual review requirements.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/7013/Rio-Metro-Public-Transportation-Agency-Safety-Plan-2025?bidId=) · [Current Regional Performance-Based Planning Page](https://www.mrcog-nm.gov/676/Performance-Based-Planning)
+
+- [Rio Metro Transit Asset Management Plan, FY 2023–2026 (Archived PDF)](https://files.abqinfo.com/transportation/transit/rail-runner/rio-metro-transit-asset-management-plan-fy2023-2026.pdf)
+
+  Inventories Rio Metro and Rail Runner vehicles, track, equipment, and facilities; evaluates their condition and risks; and establishes performance targets, replacement priorities, lifecycle planning, capital strategies, and continuous-improvement procedures.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/7009/Rio-Metro-Transit-Asset-Management-Plan-2022?bidId=) · [Rail Runner Placement](/transportation/transit/rail-runner/#current-planning-and-investment)
 
 ## State Transit Connections
 

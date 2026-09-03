@@ -20,7 +20,8 @@ foreach ($item in @($plan.items)) {
   if ($result.Count -ne 1 -or -not $result[0].byte_identical) { throw "Public R2 validation failed or is missing for '$($item.id)'." }
   if ([string]$result[0].checksum_sha256 -ne [string]$candidate.checksum_sha256) { throw "Public checksum mismatch for '$($item.id)'." }
   if (-not $candidate.source_url -or -not $candidate.direct_file_url) { throw "Authoritative source provenance is incomplete for '$($item.id)'." }
-  if ([string]$candidate.provenance_status -notlike 'official*') { throw "Candidate '$($item.id)' is not eligible for authoritative validation." }
+  $authoritativeProvenance = [string]$candidate.provenance_status -match '^(official|authoritative government)'
+  if (-not $authoritativeProvenance) { throw "Candidate '$($item.id)' is not eligible for authoritative validation." }
   $locations = @(if ($item.PSObject.Properties['implementation_locations'] -and @($item.implementation_locations).Count) {
     @($item.implementation_locations)
   } else {

@@ -24,6 +24,12 @@ The New Mexico Rail Runner Express connects Belen, Albuquerque, and Santa Fe. Th
 
 ## Current Planning and Investment
 
+- [Rio Metro Transit Asset Management Plan, FY 2023–2026 (Archived PDF)](https://files.abqinfo.com/transportation/transit/rail-runner/rio-metro-transit-asset-management-plan-fy2023-2026.pdf)
+
+  Inventories Rio Metro and Rail Runner vehicles, track, equipment, and facilities; evaluates their condition and risks; and establishes performance targets, replacement priorities, lifecycle planning, capital strategies, and continuous-improvement procedures.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/7009/Rio-Metro-Transit-Asset-Management-Plan-2022?bidId=) · [Current Regional Performance-Based Planning Page](https://www.mrcog-nm.gov/676/Performance-Based-Planning)
+
 - [Rio Metro Budget and Capital Plan, FY2027–FY2031](https://files.abqinfo.com/transportation/transit/rail-runner/rio-metro-budget-capital-plan-fy2027-2031-2026.pdf)
 
   Details current Rail Runner operating budgets, five-year maintenance and capital priorities, transit vehicle needs, funding sources, unfunded projects, and FY2027 goals, led by construction of the Albuquerque operations and maintenance facility. [Official Rio Metro publications](https://riometro.org/381/Rio-Metro-Publications)

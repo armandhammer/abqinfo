@@ -121,6 +121,14 @@ Interactive maps of city data and infrastructure.
 
 ## Regional Traffic-Volume Maps
 
+- [Albuquerque Metropolitan Planning Area Summary Statistics (2024 Archived PDF)](https://files.abqinfo.com/transportation/traffic-operations/mrmpo-ampa-summary-statistics-2024.pdf)
+
+  Summarizes 2024 roadway mileage, vehicle-miles traveled, and vehicle-hours traveled across the Albuquerque metropolitan planning area, organized by functional classification and urban or rural location. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6384/2024-AMPA-Summary-Statistics-Mileage-VMT-and-VHT-PDF?bidId=)
+
+- [Albuquerque Metropolitan Area Top 75 Busiest Intersections (2024 Archived PDF)](https://files.abqinfo.com/transportation/traffic-operations/mrmpo-top-75-busiest-intersections-2024.pdf)
+
+  Ranks the Albuquerque metropolitan area's 75 busiest intersections using 2024 approach volumes and preserves each location's earlier rankings and counts for comparison with traffic patterns from 2017 through 2023. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6385/2024-Top-75-Busiest-Intersections-With-Past-Rankings-PDF?bidId=)
+
 - [Greater Albuquerque Area Traffic Flows (2024 Archived PDF)](https://files.abqinfo.com/maps/mrmpo-greater-albuquerque-traffic-flows-2024.pdf)
 
   Maps 2024 average annual weekday traffic across Albuquerque and adjoining communities, with roadway-segment counts, volume categories, Uptown and Downtown insets, and a 2019-2024 metropolitan vehicle-miles-traveled trend.

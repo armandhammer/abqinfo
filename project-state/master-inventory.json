@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-03T01:17:51.5618016Z",
+  "generated_at": "2026-09-03T01:52:29.9506160Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,7 +18,7 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 3447,
+    "pending review": 3436,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 4,
@@ -26,8 +26,8 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 3,
-    "validated": 1002,
-    "excluded": 852,
+    "validated": 1010,
+    "excluded": 855,
     "duplicate": 951,
     "superseded": 97,
     "blocked": 0,
@@ -43950,19 +43950,19 @@
     },
     {
       "id": "src-1c5fd2f23ddfc6c2",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.mrcog-nm.gov/DocumentCenter/View/6384/2023-AMPA-Summary-Statistics-Mileage-VMT-and-VHT-PDF",
-      "direct_file_url": null,
-      "r2_url": null,
-      "r2_key": null,
+      "direct_file_url": "https://www.mrcog-nm.gov/DocumentCenter/View/6384/2024-AMPA-Summary-Statistics-Mileage-VMT-and-VHT-PDF?bidId=",
+      "r2_url": "https://files.abqinfo.com/transportation/traffic-operations/mrmpo-ampa-summary-statistics-2024.pdf",
+      "r2_key": "transportation/traffic-operations/mrmpo-ampa-summary-statistics-2024.pdf",
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "MRCOG",
       "title": "2024 AMPA Summary Statistics, Mileage, VMT, and VHT (PDF)",
       "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "file_type": "PDF",
+      "size_bytes": 287944,
+      "checksum_sha256": "3030a3b91edc9b7c9beabfcc6c865de338bef4bd6fd15695023bfe899c843af7",
       "parent_url": "https://www.mrcog-nm.gov/623/Traffic-Flow-Maps-and-Busiest-Intersecti",
       "referring_urls": [
         "https://www.mrcog-nm.gov/623/Traffic-Flow-Maps-and-Busiest-Intersecti"
@@ -43978,21 +43978,28 @@
       "cited_predecessors": [],
       "cited_successors": [],
       "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "proposed_canonical_page": "content/transportation/traffic-operations.md",
+      "description": "Summarizes 2024 roadway mileage, vehicle-miles traveled, and vehicle-hours traveled across the Albuquerque metropolitan planning area, organized by functional classification and urban or rural location.",
+      "description_word_count": 24,
       "processing_notes": [
         "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 287944 bytes (281.20 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "PDF pages: 1; extracted text: research/staging/queue/src-1c5fd2f23ddfc6c2.txt",
+        "Resolved opaque source link to authoritative file URL: https://www.mrcog-nm.gov/DocumentCenter/View/6384/2024-AMPA-Summary-Statistics-Mileage-VMT-and-VHT-PDF?bidId="
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/transportation/operations-data.md",
+      "implementation_locations": [
+        "content/transportation/operations-data.md",
+        "content/maps/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-1c5fd2f23ddfc6c2.pdf",
       "discovered_at": "2026-08-14T23:33:00.2247691Z",
-      "updated_at": "2026-08-14T23:33:00.2247691Z"
+      "updated_at": "2026-09-03T01:50:48.7223059Z"
     },
     {
       "id": "src-1c71a4326a470435",
@@ -49242,19 +49249,19 @@
     },
     {
       "id": "src-2102f32c414369f0",
-      "status": "pending review",
-      "source_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/e0ba7827-c51f-4aa8-96ff-b809bff6faf2/FY%202027%20FTA%20Section%205310%205311%205339%20Budget%20Awards.pdf",
+      "status": "validated",
+      "source_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/",
       "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/e0ba7827-c51f-4aa8-96ff-b809bff6faf2/FY%202027%20FTA%20Section%205310%205311%205339%20Budget%20Awards.pdf",
-      "r2_url": null,
-      "r2_key": null,
+      "r2_url": "https://files.abqinfo.com/transportation/transit/nmdot-fy2027-fta-5310-5311-5339-budget-awards.pdf",
+      "r2_key": "transportation/transit/nmdot-fy2027-fta-5310-5311-5339-budget-awards.pdf",
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "Other authoritative source",
-      "title": "FY 2027 FTA Section 5310 5311 5339 Budget Awards",
-      "date": null,
+      "title": "NMDOT FY 2027 Section 5310, 5311, and 5339 Transit Budget Awards",
+      "date": "2026-06",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 421674,
+      "checksum_sha256": "14b5af402872d750d6e277801b04a5c6c9d53fceb8211a614d1f8bd05282b244",
       "parent_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/",
       "referring_urls": [
         "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/",
@@ -49269,23 +49276,25 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "source URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official government source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/transportation/transit/_index.md",
+      "description": "Documents FY 2027 federal transit award recommendations for Albuquerque mobility providers, Rio Metro, and statewide systems, including vehicle requests, operating support, applicant rankings, matching funds, regional prioritization, and recommended awards.",
+      "description_word_count": 30,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review.",
-        "Captured from authoritative page https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/; external host was not recursively crawled."
+        "Complete text reviewed; representative first, middle, and final pages selected for visual inspection.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transit/_index.md",
+      "implementation_locations": [
+        "content/transportation/transit/_index.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-2102f32c414369f0.pdf",
       "discovered_at": "2026-08-14T23:32:59.707629Z",
-      "updated_at": "2026-08-14T23:32:59.707629Z"
+      "updated_at": "2026-09-03T01:50:48.5606794Z"
     },
     {
       "id": "src-210f6b763b72b906",
@@ -56101,11 +56110,11 @@
     },
     {
       "id": "src-2735a3a027a4ebff",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/icip-2026-session.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/icip-2026-session.pdf",
-      "r2_url": null,
-      "r2_key": null,
+      "r2_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-infrastructure-capital-improvement-plan-project-list-2026.pdf",
+      "r2_key": "city-data/capital-spending/cabq-infrastructure-capital-improvement-plan-project-list-2026.pdf",
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
@@ -56113,7 +56122,7 @@
       "date": null,
       "file_type": "PDF",
       "size_bytes": 114334,
-      "checksum_sha256": null,
+      "checksum_sha256": "2f4d3e2f7b4ceab6427063f5e571a142e0f9deaf8cf2aee54a9380cc4cd71fb1",
       "parent_url": "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=460",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=460"
@@ -56129,23 +56138,28 @@
       "cited_predecessors": [],
       "cited_successors": [],
       "provenance_status": "official City Plone document-library listing and direct item URL recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "proposed_canonical_page": "content/city-data/capital-spending.md",
+      "description": "Lists Albuquerque's 2026 Infrastructure Capital Improvement Plan projects and identifying numbers by department, covering transit, streets, drainage, parks, housing, public safety, facilities, technology, redevelopment, and other capital needs.",
+      "description_word_count": 28,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
+        "Downloaded exact size: 114334 bytes (111.65 KiB); SHA-256 recorded.",
         "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 114334 bytes."
+        "Exact authoritative-source size: 114334 bytes.",
+        "Exact metadata and relevance remain pending source review.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "PDF pages: 5; extracted text: research/staging/queue/src-2735a3a027a4ebff.txt"
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/city-data/capital-spending.md",
+      "implementation_locations": [
+        "content/city-data/capital-spending.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-2735a3a027a4ebff.pdf",
       "discovered_at": "2026-08-14T20:11:39.7548693Z",
-      "updated_at": "2026-08-14T20:11:39.7548693Z"
+      "updated_at": "2026-09-03T01:50:49.5375804Z"
     },
     {
       "id": "src-2738f3e723d3a69a",
@@ -58710,7 +58724,7 @@
     },
     {
       "id": "src-292bb3809c0b3fdf",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/d6a92631-ed8c-4ae6-8733-e07ae562bcb7/NMDOT%20DBE%20Goal%20Setting%20Methodology%20for%20FTA%20projects%20FFY26-28Final.pdf",
       "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/d6a92631-ed8c-4ae6-8733-e07ae562bcb7/NMDOT%20DBE%20Goal%20Setting%20Methodology%20for%20FTA%20projects%20FFY26-28Final.pdf",
       "r2_url": null,
@@ -58721,8 +58735,8 @@
       "title": "NMDOT DBE Goal-setting Methodology for FTA Projects (2026 – 2028)",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 987800,
+      "checksum_sha256": "989f3c56d815e5f0a9b334fe709f30873196ba315efd8dd1c42beec7395af833",
       "parent_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/",
       "referring_urls": [
         "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/",
@@ -58742,18 +58756,20 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
+        "Captured from authoritative page https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/; external host was not recursively crawled.",
         "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
+        "Downloaded exact size: 987800 bytes (964.65 KiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review.",
-        "Captured from authoritative page https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/transit-rail/transit-bureau/; external host was not recursively crawled."
+        "PDF pages: 20; extracted text: research/staging/queue/src-292bb3809c0b3fdf.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal exclusion reviewed after full-text and representative-page inspection",
+      "exclusion_reason": "Statewide procurement methodology for calculating federal transit disadvantaged-business-enterprise goals; too specialized and administratively focused to add durable Albuquerque public-information value.",
+      "local_path": "research/staging/queue/src-292bb3809c0b3fdf.pdf",
       "discovered_at": "2026-08-14T23:32:59.8415938Z",
-      "updated_at": "2026-08-14T23:32:59.8415938Z"
+      "updated_at": "2026-09-03T01:52:21.4351428Z"
     },
     {
       "id": "src-2938db47584ebb1c",
@@ -82692,19 +82708,19 @@
     },
     {
       "id": "src-405a9389e84cc5a2",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.mrcog-nm.gov/DocumentCenter/View/7013",
-      "direct_file_url": null,
-      "r2_url": null,
-      "r2_key": null,
+      "direct_file_url": "https://www.mrcog-nm.gov/DocumentCenter/View/7013/Rio-Metro-Public-Transportation-Agency-Safety-Plan-2025?bidId=",
+      "r2_url": "https://files.abqinfo.com/transportation/transit/rio-metro-public-transportation-agency-safety-plan-2025.pdf",
+      "r2_key": "transportation/transit/rio-metro-public-transportation-agency-safety-plan-2025.pdf",
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "MRCOG",
       "title": "Rio Metro Public Transportation Agency Safety Plan (PDF)",
       "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "file_type": "PDF",
+      "size_bytes": 1928169,
+      "checksum_sha256": "878205cd40fd3e4f43ce6338b507dc9523f5fc65dd98c856d8ba6138d477e17f",
       "parent_url": "https://www.mrcog-nm.gov/676/Performance-Based-Planning",
       "referring_urls": [
         "https://www.mrcog-nm.gov/676/Performance-Based-Planning"
@@ -82720,21 +82736,27 @@
       "cited_predecessors": [],
       "cited_successors": [],
       "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "proposed_canonical_page": "content/transportation/transit/_index.md",
+      "description": "Sets Rio Metro's current bus-safety policy, performance targets, risk-reduction program, safety-management responsibilities, employee reporting, training, emergency coordination, infectious-disease measures, board approvals, and annual review requirements.",
+      "description_word_count": 25,
       "processing_notes": [
         "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 1928169 bytes (1.84 MiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "PDF pages: 61; extracted text: research/staging/queue/src-405a9389e84cc5a2.txt",
+        "Resolved opaque source link to authoritative file URL: https://www.mrcog-nm.gov/DocumentCenter/View/7013/Rio-Metro-Public-Transportation-Agency-Safety-Plan-2025?bidId="
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transit/_index.md",
+      "implementation_locations": [
+        "content/transportation/transit/_index.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-405a9389e84cc5a2.pdf",
       "discovered_at": "2026-08-14T23:33:00.48667Z",
-      "updated_at": "2026-08-14T23:33:00.48667Z"
+      "updated_at": "2026-09-03T01:50:49.0116481Z"
     },
     {
       "id": "src-405deb003c0ea0fb",
@@ -128588,7 +128610,7 @@
     },
     {
       "id": "src-6b5fd47a8fa04610",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/request-for-sealed-proposals-ap-2117-osuna-1-7-2026.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/request-for-sealed-proposals-ap-2117-osuna-1-7-2026.pdf",
       "r2_url": null,
@@ -128600,7 +128622,7 @@
       "date": null,
       "file_type": "PDF",
       "size_bytes": 107589,
-      "checksum_sha256": null,
+      "checksum_sha256": "8f65b0e999bf121c25241f7266bf6020eb784b1321f138b34a5d5f80af41befa",
       "parent_url": "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=440",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=440"
@@ -128621,18 +128643,20 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
+        "Downloaded exact size: 107589 bytes (105.07 KiB); SHA-256 recorded.",
         "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 107589 bytes."
+        "Exact authoritative-source size: 107589 bytes.",
+        "Exact metadata and relevance remain pending source review.",
+        "PDF pages: 2; extracted text: research/staging/queue/src-6b5fd47a8fa04610.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal exclusion reviewed after full-text and representative-page inspection",
+      "exclusion_reason": "Time-limited sealed-proposal notice for possible Osuna Road land acquisition; the bidding deadline and administrative terms do not provide durable project or planning information.",
+      "local_path": "research/staging/queue/src-6b5fd47a8fa04610.pdf",
       "discovered_at": "2026-08-14T20:11:40.0820701Z",
-      "updated_at": "2026-08-14T20:11:40.0820701Z"
+      "updated_at": "2026-09-03T01:52:29.3725729Z"
     },
     {
       "id": "src-6b638cffbe0c41a7",
@@ -173865,19 +173889,19 @@
     },
     {
       "id": "src-93a3a19a94426b04",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.mrcog-nm.gov/DocumentCenter/View/7009",
-      "direct_file_url": null,
-      "r2_url": null,
-      "r2_key": null,
+      "direct_file_url": "https://www.mrcog-nm.gov/DocumentCenter/View/7009/Rio-Metro-Transit-Asset-Management-Plan-2022?bidId=",
+      "r2_url": "https://files.abqinfo.com/transportation/transit/rail-runner/rio-metro-transit-asset-management-plan-fy2023-2026.pdf",
+      "r2_key": "transportation/transit/rail-runner/rio-metro-transit-asset-management-plan-fy2023-2026.pdf",
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "MRCOG",
       "title": "Rio Metro Transit Asset Management Plan (PDF)",
       "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "file_type": "PDF",
+      "size_bytes": 4449401,
+      "checksum_sha256": "5a5cbd276da5eae6eaaa013386d1729d1b168e6e1698305d220e0f004d841960",
       "parent_url": "https://www.mrcog-nm.gov/676/Performance-Based-Planning",
       "referring_urls": [
         "https://www.mrcog-nm.gov/676/Performance-Based-Planning"
@@ -173893,21 +173917,28 @@
       "cited_predecessors": [],
       "cited_successors": [],
       "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "proposed_canonical_page": "content/transportation/transit/rail-runner.md",
+      "description": "Inventories Rio Metro and Rail Runner vehicles, track, equipment, and facilities; evaluates their condition and risks; and establishes performance targets, replacement priorities, lifecycle planning, capital strategies, and continuous-improvement procedures.",
+      "description_word_count": 29,
       "processing_notes": [
         "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 4449401 bytes (4.24 MiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "PDF pages: 56; extracted text: research/staging/queue/src-93a3a19a94426b04.txt",
+        "Resolved opaque source link to authoritative file URL: https://www.mrcog-nm.gov/DocumentCenter/View/7009/Rio-Metro-Transit-Asset-Management-Plan-2022?bidId="
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/transportation/transit/rail-runner.md",
+      "implementation_locations": [
+        "content/transportation/transit/rail-runner.md",
+        "content/transportation/transit/_index.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-93a3a19a94426b04.pdf",
       "discovered_at": "2026-08-14T23:32:59.3812137Z",
-      "updated_at": "2026-08-14T23:32:59.3812137Z"
+      "updated_at": "2026-09-03T01:50:49.1446122Z"
     },
     {
       "id": "src-93a5d61174cab3ea",
@@ -218340,19 +218371,19 @@
     },
     {
       "id": "src-be7fb993336ee3cb",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.mrcog-nm.gov/DocumentCenter/View/6385/2023-Top-100-Busiest-Intersections-With-Past-Rankings-PDF",
-      "direct_file_url": null,
-      "r2_url": null,
-      "r2_key": null,
+      "direct_file_url": "https://www.mrcog-nm.gov/DocumentCenter/View/6385/2024-Top-75-Busiest-Intersections-With-Past-Rankings-PDF?bidId=",
+      "r2_url": "https://files.abqinfo.com/transportation/traffic-operations/mrmpo-top-75-busiest-intersections-2024.pdf",
+      "r2_key": "transportation/traffic-operations/mrmpo-top-75-busiest-intersections-2024.pdf",
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "MRCOG",
       "title": "2024 Top 75 Busiest Intersections with Past Rankings (PDF)",
       "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "file_type": "PDF",
+      "size_bytes": 400009,
+      "checksum_sha256": "0f707f22a742fa4bafee01e9cdd30f3f762b25ddcf3cc132306ce12b067b7d29",
       "parent_url": "https://www.mrcog-nm.gov/623/Traffic-Flow-Maps-and-Busiest-Intersecti",
       "referring_urls": [
         "https://www.mrcog-nm.gov/623/Traffic-Flow-Maps-and-Busiest-Intersecti"
@@ -218368,21 +218399,28 @@
       "cited_predecessors": [],
       "cited_successors": [],
       "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "proposed_canonical_page": "content/transportation/traffic-operations.md",
+      "description": "Ranks the Albuquerque metropolitan area's 75 busiest intersections using 2024 approach volumes and preserves each location's earlier rankings and counts for comparison with traffic patterns from 2017 through 2023.",
+      "description_word_count": 29,
       "processing_notes": [
         "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 400009 bytes (390.63 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "PDF pages: 2; extracted text: research/staging/queue/src-be7fb993336ee3cb.txt",
+        "Resolved opaque source link to authoritative file URL: https://www.mrcog-nm.gov/DocumentCenter/View/6385/2024-Top-75-Busiest-Intersections-With-Past-Rankings-PDF?bidId="
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/transportation/operations-data.md",
+      "implementation_locations": [
+        "content/transportation/operations-data.md",
+        "content/maps/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-be7fb993336ee3cb.pdf",
       "discovered_at": "2026-08-14T23:33:00.0070164Z",
-      "updated_at": "2026-08-14T23:33:00.0070164Z"
+      "updated_at": "2026-09-03T01:50:48.8701893Z"
     },
     {
       "id": "src-be8f4bed636a4047",
@@ -224439,19 +224477,19 @@
     },
     {
       "id": "src-c3f76d888e9f0420",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.mrcog-nm.gov/DocumentCenter/View/7012",
-      "direct_file_url": null,
-      "r2_url": null,
-      "r2_key": null,
+      "direct_file_url": "https://www.mrcog-nm.gov/DocumentCenter/View/7012/City-of-Albuquerque-Public-Transportation-Agency-Safety-Plan-2025?bidId=",
+      "r2_url": "https://files.abqinfo.com/transportation/transit/cabq-public-transportation-agency-safety-plan-2025.pdf",
+      "r2_key": "transportation/transit/cabq-public-transportation-agency-safety-plan-2025.pdf",
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "MRCOG",
       "title": "City of Albuquerque Public Transportation Agency Safety Plan (PDF)",
       "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "file_type": "PDF",
+      "size_bytes": 379615,
+      "checksum_sha256": "60f82cd94f10b475e44038806fff8ffb2cc6cc5a077235462afd932f8ecd377c",
       "parent_url": "https://www.mrcog-nm.gov/676/Performance-Based-Planning",
       "referring_urls": [
         "https://www.mrcog-nm.gov/676/Performance-Based-Planning"
@@ -224467,21 +224505,27 @@
       "cited_predecessors": [],
       "cited_successors": [],
       "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "proposed_canonical_page": "content/transportation/transit/_index.md",
+      "description": "Defines ABQ RIDE's current safety-management framework for fixed-route, rapid-transit, and paratransit service, including performance targets, risk reduction, employee reporting, responsibilities, training, emergency preparedness, and City approval documentation.",
+      "description_word_count": 27,
       "processing_notes": [
         "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 379615 bytes (370.72 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "PDF pages: 16; extracted text: research/staging/queue/src-c3f76d888e9f0420.txt",
+        "Resolved opaque source link to authoritative file URL: https://www.mrcog-nm.gov/DocumentCenter/View/7012/City-of-Albuquerque-Public-Transportation-Agency-Safety-Plan-2025?bidId="
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transit/_index.md",
+      "implementation_locations": [
+        "content/transportation/transit/_index.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-c3f76d888e9f0420.pdf",
       "discovered_at": "2026-08-14T23:33:00.4186368Z",
-      "updated_at": "2026-08-14T23:33:00.4186368Z"
+      "updated_at": "2026-09-03T01:50:49.2840063Z"
     },
     {
       "id": "src-c40120beb93660b5",
@@ -244509,19 +244553,19 @@
     },
     {
       "id": "src-d662cfa92401be3b",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.mrcog-nm.gov/DocumentCenter/View/7008",
-      "direct_file_url": null,
-      "r2_url": null,
-      "r2_key": null,
+      "direct_file_url": "https://www.mrcog-nm.gov/DocumentCenter/View/7008/City-of-Albuquerque-Transit-Asset-Management-Plan-2022?bidId=",
+      "r2_url": "https://files.abqinfo.com/transportation/transit/cabq-transit-asset-management-plan-2022.pdf",
+      "r2_key": "transportation/transit/cabq-transit-asset-management-plan-2022.pdf",
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "MRCOG",
       "title": "City of Albuquerque Transit Asset Management Plan (PDF)",
       "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "file_type": "PDF",
+      "size_bytes": 563632,
+      "checksum_sha256": "afdf184b91c402110fb0154a69d203c853f52a8427a6324a93870fdb941193fe",
       "parent_url": "https://www.mrcog-nm.gov/676/Performance-Based-Planning",
       "referring_urls": [
         "https://www.mrcog-nm.gov/676/Performance-Based-Planning"
@@ -244537,21 +244581,27 @@
       "cited_predecessors": [],
       "cited_successors": [],
       "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "proposed_canonical_page": "content/transportation/transit/_index.md",
+      "description": "Documents ABQ RIDE's rolling stock, equipment, facilities, asset condition, state-of-good-repair policy, investment priorities, decision-support methods, performance targets, and four-year implementation strategy for managing Albuquerque's transit capital assets.",
+      "description_word_count": 27,
       "processing_notes": [
         "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 563632 bytes (550.42 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "PDF pages: 33; extracted text: research/staging/queue/src-d662cfa92401be3b.txt",
+        "Resolved opaque source link to authoritative file URL: https://www.mrcog-nm.gov/DocumentCenter/View/7008/City-of-Albuquerque-Transit-Asset-Management-Plan-2022?bidId="
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/transit/_index.md",
+      "implementation_locations": [
+        "content/transportation/transit/_index.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-d662cfa92401be3b.pdf",
       "discovered_at": "2026-08-14T23:33:00.1795374Z",
-      "updated_at": "2026-08-14T23:33:00.1795374Z"
+      "updated_at": "2026-09-03T01:50:49.4035389Z"
     },
     {
       "id": "src-d664190ecadc97a8",
@@ -277815,7 +277865,7 @@
     },
     {
       "id": "src-f5656a768892443d",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/2026-state-capital-for-npos-11-17-25.pdf/view",
       "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/2026-state-capital-for-npos-11-17-25.pdf",
       "r2_url": null,
@@ -277827,7 +277877,7 @@
       "date": null,
       "file_type": "PDF",
       "size_bytes": 2441144,
-      "checksum_sha256": null,
+      "checksum_sha256": "eab707428cf0311a122f95bcc2b748b94bfe19a28c2585a61b9254c4acba0e3f",
       "parent_url": "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=440",
       "referring_urls": [
         "https://www.cabq.gov/municipaldevelopment/documents?b_start:int=440"
@@ -277848,18 +277898,20 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/municipaldevelopment/documents.",
-        "Exact metadata and relevance remain pending source review.",
+        "Downloaded exact size: 2441144 bytes (2.33 MiB); SHA-256 recorded.",
         "Enumerated without a relevance-name filter from the Municipal Development document library.",
-        "Exact authoritative-source size: 2441144 bytes."
+        "Exact authoritative-source size: 2441144 bytes.",
+        "Exact metadata and relevance remain pending source review.",
+        "PDF pages: 33; extracted text: research/staging/queue/src-f5656a768892443d.txt"
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "terminal exclusion reviewed after full-text and representative-page inspection",
+      "exclusion_reason": "City training presentation for nonprofit capital-outlay applicants; procedural application guidance is temporary administrative material rather than a durable plan, project record, dataset, or adopted funding document.",
+      "local_path": "research/staging/queue/src-f5656a768892443d.pdf",
       "discovered_at": "2026-08-14T20:11:37.3962807Z",
-      "updated_at": "2026-08-14T20:11:37.3962807Z"
+      "updated_at": "2026-09-03T01:52:24.2030597Z"
     },
     {
       "id": "src-f57d18c0f4a7b682",
