@@ -150,6 +150,28 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6116/FFY-2023-Annual-Listing-of-Obligations-PDF) · [Current Annual Project Listing and Obligation Reports](https://www.mrcog-nm.gov/278/Annual-Project-Listing-Obligation-Report)
 
+### Historical Annual Listings of Obligations
+
+These reports record the federal transportation funds obligated for Albuquerque-area projects before the current annual-report series.
+
+- [FFY 2022 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/5707/FFY-2022-Annual-Listing-of-Obligations-PDF)
+- [FFY 2021 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/5310/FFY-2021-Annual-Listing-of-Obligations-PDF)
+- [FFY 2020 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/4499/FFY-2020-Annual-Listing-of-Obligations-PDF)
+- [FFY 2019 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/4041/FFY-2019-Annual-Listing-of-Obligations-PDF)
+- [FFY 2018 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/3609/FFY-2018-Annual-Listing-of-Obligations-PDF)
+- [FFY 2017 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/3427/FFY-2017-Annual-Listing-of-Obligations-PDF)
+- [FFY 2016 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/3426/FFY-2016-Annual-Listing-of-Obligations-PDF)
+- [FFY 2015 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/3431/FFY-2015-Annual-Listing-of-Obligations-PDF)
+- [FFY 2014 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/3430/FFY-2014-Annual-Listing-of-Obligations-PDF)
+- [FFY 2013 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/3429/FFY-2013-Annual-Listing-of-Obligations-PDF)
+- [FFY 2012 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/3425/FFY-2012-Annual-Listing-of-Obligations-PDF)
+- [FFY 2011 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/3424/FFY-2011-Annual-Listing-of-Obligations-PDF)
+- [FFY 2010 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/3423/FFY-2010-Annual-Listing-of-Obligations-PDF)
+- [FFY 2009 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/3422/FFY-2009-Annual-Listing-of-Obligations-PDF)
+- [FFY 2008 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/3421/FFY-2008-Annual-Listing-of-Obligations-PDF)
+- [FFY 2007 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/3432/FFY-2007-Annual-Listing-of-Obligations-PDF)
+- [FFY 2006 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/3428/FFY-2006-Annual-Listing-of-Obligations-PDF)
+
 - [MRMPO Unified Planning Work Program, FFY 2025-2026 (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy2025-2026.pdf)
 
   Defines MRMPO's transportation-planning work, staffing, budgets, schedules, and deliverables for FFY 2025-2026, including the TIP, traffic data, safety, active transportation, metropolitan planning, corridor studies, public engagement, ABQ RIDE, and Rio Metro coordination.
