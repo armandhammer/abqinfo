@@ -178,6 +178,32 @@ Transportation studies and reports.
 
   [Official City PDF](https://www.cabq.gov/council/documents/golf-course-rd-complete-streets-study-final-draft-february-2022-reduced.pdf) · [Official City project page](https://www.cabq.gov/council/find-your-councilor/district-5/district-5-projects/district-5-traffic-projects/golf-course-road-complete-streets-study)
 
+### Irving Boulevard
+
+- [Irving Boulevard Traffic Calming Study (2022 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-irving-boulevard-traffic-calming-study-2022.pdf)
+
+  Evaluates traffic, crashes, walking, bicycling, and transit conditions along Irving Boulevard around Unser, compares corridor alternatives, and recommends sidewalks, buffered bicycle lanes, a multi-use trail, intersection changes, traffic calming, and phased cost estimates.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/irving-blvd-traffic-calming-study-final-february-2022.pdf) · [Official City project page](https://www.cabq.gov/council/find-your-councilor/district-5/district-5-projects/district-5-traffic-projects/irving-boulevard-traffic-calming-pedestrian-safety-study)
+
+### McDuffie-Twin Parks
+
+- [McDuffie-Twin Parks Traffic Calming Study Public Meeting 2 (2023 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-mcduffie-twin-parks-traffic-calming-public-meeting-2-2023.pdf)
+
+  Documents measured speeds, traffic volumes, crashes, and resident feedback across the McDuffie-Twin Parks neighborhood, then presents proposed crosswalks, striping, neckdowns, traffic circles, and speed cushions considered during the September 2023 public meeting.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/mcduffie-twin-parks-study-public-meeting-2.pdf) · [Current City project page and final-study link](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/copy2_of_the-mcduffie-twin-parks-traffic-calming-study)
+
+  The current City page reports that construction began in 2026. Its separately hosted May 2024 final study remains available through the official project page and is queued for archival after its transfer-service download can be captured deterministically.
+
+### Rainbow Boulevard
+
+- [Rainbow Boulevard Traffic Calming and Pedestrian Safety Recommendations (2022 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-rainbow-boulevard-traffic-calming-recommendations-2022.pdf)
+
+  Presents 2022 recommendations for Rainbow Boulevard between Paseo del Norte and Volcano Vista High School, including narrower lanes, a road diet, pedestrian crossings, accessibility upgrades, sight-distance treatments, and school-area safety improvements.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/rainbowpublicmeeting2.pdf) · [Official City project page](https://www.cabq.gov/council/find-your-councilor/district-5/district-5-projects/district-5-traffic-projects/rainbow-blvd-traffic-calming-and-pedestrian-safety-study)
+
 ### Juan Tabo and Four Hills
 
 - [Juan Tabo Hills Traffic Study (2023 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-juan-tabo-hills-traffic-study-2023.pdf)

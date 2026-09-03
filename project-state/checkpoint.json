@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-09-03T13:46:19.0985860Z",
-  "completed_item_range": "PR 98 batch: 5 local capital-project pages validated; 6 attached official maps, reports, presentations, and design sheets archived and byte-validated; protected uploader hardened for County hosts",
-  "total_candidates": 6393,
+  "recorded_at": "2026-09-03T18:40:47.7365778Z",
+  "completed_item_range": "District traffic-calming implementations and studies; ACS transparency, APD CAD dashboard, and ACS FY2026 Q4 report",
+  "total_candidates": 6397,
   "counts_by_status": {
-    "pending review": 3377,
+    "pending review": 3366,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 4,
@@ -11,18 +11,17 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 3,
-    "validated": 1030,
+    "validated": 1041,
     "excluded": 883,
     "duplicate": 953,
-    "superseded": 110,
+    "superseded": 114,
     "blocked": 0,
     "requires human review": 33
   },
-  "remaining_nonterminal": 3384,
+  "remaining_nonterminal": 3373,
   "next_pending_id": "src-0004d9e0318a9df5",
   "blockers": [
-    "Local abqinfo-r2-upload Windows credential remains missing; protected GitHub workflow uploads and public byte-identical validation succeeded.",
-    "GitHub CLI token remains invalid; Git Credential Manager supports pushes and GitHub API PR creation."
+    "Final McDuffie-Twin Parks Traffic Calming Study (May 2024) is visible in the official City Files.com share, but its stable direct-download URL still needs deterministic capture before R2 archival."
   ],
-  "resume_command": "pwsh -File scripts/project/New-PendingReviewPriorityQueue.ps1; continue reviewing recent substantive Albuquerque-area plans, datasets, and capital projects before administrative queue noise"
+  "resume_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Test-Candidate.ps1 -UpdateInventory"
 }
