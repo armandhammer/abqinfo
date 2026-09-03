@@ -22,6 +22,22 @@ Maintained public-safety dashboards, police statistics, geographic breakdowns, r
 
   Organizes recent crime statistics geographically by APD area command, making neighborhood-scale patterns easier to locate than in citywide totals alone.
 
+- [Albuquerque Police Department CAD Incident Dashboard](https://www.arcgis.com/apps/dashboards/c1f11078950240daba6002f4a4eadb1e)
+
+  Maps recent calls for service received by APD's 911 Emergency Communications Center. The dashboard cautions that calls do not represent all investigated crimes, final outcomes, or necessarily the location where an incident occurred.
+
+- [Albuquerque Community Safety Transparency and Reports](https://www.cabq.gov/acs/transparency)
+
+  Collects current ACS quarterly and monthly operational reports, Violence Intervention Program reports, the department's organizational plan, and earlier engagement and anniversary material in one maintained official archive.
+
+## Community Safety Response
+
+- [Albuquerque Community Safety FY2026 Fourth-Quarter Report (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-acs-fy2026-fourth-quarter-report.pdf)
+
+  Reports FY2026 ACS call volume, response times, 311 and service outcomes, violence-prevention activity, program updates, and mapped calls by City Council district, documenting 51,217 non-police responses focused primarily on mental health, homelessness, and addiction.
+
+  [Official City PDF](https://www.cabq.gov/acs/documents/quarterly-report-q4-2026fy-final.pdf) · [Current ACS report library](https://www.cabq.gov/acs/transparency)
+
 ## Historical Crime Trends
 
 - [Crime in Albuquerque 2017–2022 (archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-crime-statistics-2017-2022.pdf)

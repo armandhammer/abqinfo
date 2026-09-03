@@ -32,6 +32,10 @@ Data dashboards and visualizations.
 
   [Official City Document Collection](https://www.cabq.gov/municipaldevelopment/documents) · [Live School Crossings Dashboard](https://www.arcgis.com/apps/dashboards/4a52905fd707412085ce9811ad48dd25)
 
+- [Albuquerque Police Department CAD Incident Dashboard](https://www.arcgis.com/apps/dashboards/c1f11078950240daba6002f4a4eadb1e)
+
+  Maps recent 911 calls for service by date range and category. APD cautions that calls do not represent all investigated crimes, final outcomes, or necessarily the location where an incident occurred.
+
 - [Neighborhood Traffic Management Program Dashboard](https://www.arcgis.com/apps/dashboards/54e6059b27eb42d680f24e2eaae81c6e)
 
   Maps eligible Neighborhood Traffic Management Program streets and current requests, with searchable request IDs, dates, locations, project status, and filters for tracking neighborhood traffic-calming activity.

@@ -36,6 +36,20 @@ Separate [Studies]({{< relref "studies.md" >}}) and [Speed Management]({{< relre
 
   [Pedestrian Improvements Presentation (2021 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/current/cabq-cutler-avenue-pedestrian-improvements-presentation-2021.pdf) · [Official City PDF](https://www.cabq.gov/council/documents/8-16-21-cutler_pre-final_power-point_pi.pdf)
 
+- [McDuffie-Twin Parks Traffic Calming Measures](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/copy2_of_the-mcduffie-twin-parks-traffic-calming-study)
+
+  Tracks neighborhood traffic-calming construction between Carlisle, Washington, Constitution, and Lomas. Work at Washington's Sunningdale and Constitution intersections finished in June 2026, with additional fully funded safety measures expected later in 2026.
+
+- [La Corrida Speed Cushions](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/la-corrida-traffic-calming-study)
+
+  Records the completed traffic-calming project on La Corrida between Comanche and San Pedro. Speed cushions were installed in 2024 after an NTMP study documented speeding and cut-through traffic; final painting and striping followed in 2025.
+
+  [La Corrida Road Speed Study (2016 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/speed-management/cabq-la-corrida-road-speed-study-2016.pdf) · [Official City PDF](https://www.cabq.gov/neighborhood-traffic-management-program/documents/la-corrida-dr.pdf)
+
+- [Mackland and Carlisle Crosswalk](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/copy2_of_cutler-avenue-report)
+
+  Documents the completed 2024 school-route crossing at Carlisle Boulevard and Mackland Avenue, including new striping, signs, and rectangular rapid-flashing beacons installed to improve pedestrian visibility and safety.
+
 - [West Central Complete Streets Project](https://www.cabq.gov/municipaldevelopment/featured-projects/west-central-complete-streets-project)
 
   Documents the active Central Avenue safety and accessibility project, its limits, schedule, public meetings, federal Safe Streets and Roads for All funding, design concepts, and frequently asked questions.
