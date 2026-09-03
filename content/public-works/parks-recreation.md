@@ -20,6 +20,10 @@ Parks and recreation facilities and programs.
 
   Maintains the City's detailed index of active park, trail, aquatics, recreation, and public-space improvements, linking project histories, design concepts, public engagement, schedules, and construction updates.
 
+- [Tom Bolack Urban Forest Trail Improvements](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/park-improvements/tom-bolack-urban-forest-trail-extension)
+
+  Documents the completed 2026 paving and solar-lighting improvements south of I-40 between Louisiana and San Pedro, including the concrete trail connection near the dog park, utility coordination, construction history, and before-and-after photographs.
+
 - [ABC Comprehensive Plan, Chapter 10: Parks & Open Space (2025 Update)](https://files.abqinfo.com/public-works/parks-recreation/abc-comprehensive-plan-chapter-10-parks-open-space-2025.pdf)
 
   The parks and open space element of the adopted Albuquerque/Bernalillo County Comprehensive Plan provides policy direction for park access, recreation, trail connections, conservation, stewardship, and an integrated open-space network.

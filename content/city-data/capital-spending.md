@@ -6,6 +6,12 @@ Capital improvement spending and projects.
 
 ## Current Capital Program
 
+- [2025-2033 General Obligation Bond Initial Request Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-go-bond-initial-request-summary-2025-2033.pdf)
+
+  Records Albuquerque departments' initial capital requests for the 2025-2033 bond cycles, including allocations, project scopes, locations, justifications, schedules, costs, funding sources, operating impacts, and requested amounts before final program approval.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/2025-initial-request-summary-post-src.pdf) · [City Municipal Development Document Library](https://www.cabq.gov/municipaldevelopment/documents)
+
 - [2025 General Obligation Bond Approved Program Book](https://files.abqinfo.com/city-data/capital-spending/cabq-2025-go-bond-approved-program-book.pdf)
 
   Albuquerque's approved 2025 General Obligation Bond program describes proposed capital investments across the 2025-2034 decade plan, including project scopes, funding categories, public facilities, infrastructure, and implementation priorities.
