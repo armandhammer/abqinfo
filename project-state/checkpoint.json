@@ -1,27 +1,25 @@
-﻿{
-    "recorded_at":  "2026-09-04T14:20:37.6813541Z",
-    "completed_item_range":  "Added and verified NMDOT traffic monitoring, roadway inventory, and planning GIS resources; reconciled incomplete PR #106 inventory finalization",
-    "total_candidates":  6405,
-    "counts_by_status":  {
-                             "pending review":  3328,
-                             "approved for addition":  0,
-                             "downloading":  0,
-                             "downloaded":  4,
-                             "parsed":  0,
-                             "description drafted":  0,
-                             "placement assigned":  0,
-                             "implemented":  2,
-                             "validated":  1079,
-                             "excluded":  888,
-                             "duplicate":  954,
-                             "superseded":  115,
-                             "blocked":  0,
-                             "requires human review":  35
-                         },
-    "remaining_nonterminal":  3334,
-    "next_pending_id":  "src-0004d9e0318a9df5",
-    "blockers":  [
-
-                 ],
-    "resume_command":  "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Test-Candidate.ps1 -Id src-0004d9e0318a9df5 -UpdateInventory"
+{
+  "recorded_at": "2026-09-04T16:07:11.9557534Z",
+  "completed_item_range": "Removed redundant individual NTMP measure-sheet listings and reconciled 22 source records as duplicates of the canonical toolkit; Geodetic Control remains an implemented-search duplicate.",
+  "total_candidates": 6932,
+  "counts_by_status": {
+    "pending review": 3299,
+    "approved for addition": 0,
+    "downloading": 0,
+    "downloaded": 4,
+    "parsed": 0,
+    "description drafted": 0,
+    "placement assigned": 0,
+    "implemented": 181,
+    "validated": 1076,
+    "excluded": 889,
+    "duplicate": 1333,
+    "superseded": 115,
+    "blocked": 0,
+    "requires human review": 35
+  },
+  "remaining_nonterminal": 3484,
+  "next_pending_id": "src-000dc3f31153bfe5",
+  "blockers": [],
+  "resume_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Test-Candidate.ps1 -UpdateInventory"
 }
