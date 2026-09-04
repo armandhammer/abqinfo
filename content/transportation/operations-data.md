@@ -68,6 +68,44 @@ Regional roadway operations, traffic analysis, incident management, and intellig
 
 ## Traffic Analysis
 
+### NMDOT Traffic and Roadway Data
+
+- [NMDOT Data Management Bureau](https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/data-management-bureau/)
+
+  Explains NMDOT's Traffic Monitoring and Roadway Inventory programs and links statewide traffic counts, permanent-counter maps, the Planning Division GIS hub, roadway metadata, and federal roadway-data standards.
+
+- [NMDOT Traffic Data Management System](https://nmdot.public.ms2soft.com/tcds/tsearch.asp?loc=Nmdot)
+
+  Searches and maps NMDOT traffic-count locations and historical observations, including volume, vehicle classification, speed, weight, and annual average daily traffic; its interface also supports detailed reports and data downloads.
+
+- [NMDOT Traffic Data Management System Info Sheet (May 2021 Archived PDF)](https://files.abqinfo.com/transportation/operations-data/nmdot-traffic-data-management-system-info-sheet-2021.pdf)
+
+  Explains how to search the NMDOT Traffic Data Management System by location or map, review AADT histories and volume, classification, speed, and weigh-in-motion counts, and access hourly, weekly, and monthly reports.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/ef481ba7-b515-44f2-a5da-af4770d88e44/User%20Info%20Sheet.pdf) · [Maps Cross-Listing](/maps/maps/#state-transportation-maps)
+
+- [NMDOT Permanent Traffic Counters](https://experience.arcgis.com/experience/66694d1804924256b564dfa747f497b2/page/Page/)
+
+  Maps NMDOT permanent traffic-counter locations across New Mexico, with site and milepost context for identifying continuous count stations serving Albuquerque-area and statewide traffic analysis.
+
+- [NMDOT Planning Division GIS Hub](https://planningdivisiongis-nmdot.hub.arcgis.com)
+
+  Collects NMDOT Planning Division maps, applications, and downloadable GIS resources for statewide transportation planning and analysis, providing broader geographic context for Albuquerque-area roads and state facilities.
+
+- [NMDOT Roadway Inventory System Data Dictionary and Metadata (April 2024 Archived PDF)](https://files.abqinfo.com/transportation/operations-data/nmdot-roadway-inventory-system-data-dictionary-2024.pdf)
+
+  Documents NMDOT's Roadway Inventory System database structure and metadata for linear-reference, route, traffic, pavement, bridge, safety, ownership, functional-class, and other roadway feature classes used in planning and reporting.
+
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/69234701-fbe3-446b-874e-ad9c79fc3462/DataDictionaryMetadata18April2024.pdf)
+
+- [FHWA Model Inventory of Roadway Elements 2.1 (August 2024 Archived PDF)](https://files.abqinfo.com/transportation/operations-data/fhwa-model-inventory-roadway-elements-2-1-2024.pdf)
+
+  Defines FHWA's national roadway and traffic data model, including 202 recommended elements, fundamental data requirements, collection methods, database relationships, maintenance guidance, and case studies supporting data-driven safety decisions.
+
+  [Official NMDOT-Hosted PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/b46b273e-caa0-46b7-9dec-ae5fd6aed2de/MIRE_2.1_FINAL_508v3.pdf)
+
+### Regional Traffic Counts and Trends
+
 - [Albuquerque Metropolitan Planning Area Daily Vehicle-Miles Traveled per Capita, 1970–2024 (Archived PDF)](https://files.abqinfo.com/transportation/traffic-operations/mrmpo-ampa-vmt-per-capita-1970-2024.pdf)
 
   Charts daily vehicle-miles traveled per person across the Albuquerque metropolitan planning area from 1970 through 2024, preserving the long-run rise, post-2007 decline, pandemic disruption, and recent recovery in regional driving.

@@ -205,6 +205,18 @@ Interactive maps of city data and infrastructure.
 
 ## State Transportation Maps
 
+- [NMDOT Planning Division GIS Hub](https://planningdivisiongis-nmdot.hub.arcgis.com)
+
+  Collects NMDOT Planning Division maps, applications, and downloadable GIS resources for statewide transportation planning and analysis, providing broader geographic context for Albuquerque-area roads and state facilities.
+
+- [NMDOT Permanent Traffic Counters](https://experience.arcgis.com/experience/66694d1804924256b564dfa747f497b2/page/Page/)
+
+  Maps NMDOT permanent traffic-counter locations across New Mexico, with site and milepost context for identifying continuous count stations serving Albuquerque-area and statewide traffic analysis.
+
+- [NMDOT Traffic Data Management System](https://nmdot.public.ms2soft.com/tcds/tsearch.asp?loc=Nmdot)
+
+  Searches and maps NMDOT traffic-count locations and historical observations, including volume, vehicle classification, speed, weight, and annual average daily traffic; its interface also supports detailed reports and data downloads.
+
 - [NMDOT Map Library](https://www.dot.nm.gov/travel-information/maps)
 
   Links NMDOT's interactive public map gallery, downloadable highway and milepost maps, and NMRoads traveler information covering construction, road conditions, traffic cameras, message signs, weather, transit, and rest areas.
