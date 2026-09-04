@@ -1,25 +1,25 @@
 {
-  "recorded_at": "2026-09-04T23:06:18.2728501Z",
-  "completed_item_range": "Reviewed EC-26-175, added the verified official Legistar Downtown Albuquerque Parking Study to the Downtown redevelopment-plan page, and recorded source-provenance review; canonical R2 archival intake remains queued.",
-  "total_candidates": 6932,
+  "recorded_at": "2026-09-04T23:23:24.6566625Z",
+  "completed_item_range": "Designed and executed bounded CABQ Legistar agenda-and-attachment discovery for 2020-01-01 through 2026-09-04: 324 meetings, 500 topical matters, 973 attachments, 963 new-to-inventory URLs, and an 80-item ranked review queue; reconciled PR #113 Legistar source records and four stale inventory audit states.",
+  "total_candidates": 6945,
   "counts_by_status": {
-    "pending review": 3047,
+    "pending review": 3048,
     "approved for addition": 0,
     "downloading": 0,
-    "downloaded": 6,
+    "downloaded": 7,
     "parsed": 0,
     "description drafted": 0,
     "placement assigned": 0,
-    "implemented": 181,
-    "validated": 1085,
-    "excluded": 1115,
-    "duplicate": 1348,
+    "implemented": 182,
+    "validated": 1087,
+    "excluded": 1116,
+    "duplicate": 1355,
     "superseded": 115,
     "blocked": 0,
     "requires human review": 35
   },
-  "remaining_nonterminal": 3234,
+  "remaining_nonterminal": 3237,
   "next_pending_id": "src-001ba8b96bdb553d",
   "blockers": [],
-  "resume_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Test-Candidate.ps1 -UpdateInventory"
+  "resume_command": "python scripts/project/Build-LegistarPriorityQueue.py --input project-state/discovery/cabq-legistar-historical-2020-2026.json --output project-state/discovery/cabq-legistar-priority-80.json --limit 80"
 }

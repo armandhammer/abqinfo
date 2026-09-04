@@ -26,7 +26,7 @@ function Get-StableId([string]$Value) {
 }
 
 function Get-Agency([string]$Url) {
-  if ($Url -match 'cabq\.gov|abq-zone\.com') { return 'City of Albuquerque' }
+  if ($Url -match 'cabq\.gov|abq-zone\.com|cabq\.legistar\.com|legistar\.granicus\.com/cabq') { return 'City of Albuquerque' }
   if ($Url -match 'bernco\.gov') { return 'Bernalillo County' }
   if ($Url -match 'mrcog-nm\.gov|mrcogshare\.org|riometro\.org|mrmpo\.nm\.tipviewer\.pmgpro\.com') { return 'MRCOG' }
   if ($Url -match 'dot\.nm\.gov|nmroads\.com|stipviewer') { return 'NMDOT' }
@@ -83,7 +83,7 @@ function Test-DiscoveryCandidate([string]$Agency, [string]$Url) {
   $isDmdLibraryItem = $path -match '(?i)^/municipaldevelopment/documents/'
   if ($path -match '(?i)(\+\+resource\+\+|/image-repository/|/images?/|\.svg$|\.png$|\.jpe?g$|\.gif$|\.webp$)' -and -not $isDmdLibraryItem) { return $false }
   switch ($Agency.ToLowerInvariant()) {
-    'cabq' { return $uriHost -match '(^|\.)(cabq\.gov|abq-zone\.com|arcgis\.com)$' }
+    'cabq' { return $uriHost -match '(^|\.)(cabq\.gov|abq-zone\.com|arcgis\.com|cabq\.legistar\.com)$|^legistar\.granicus\.com$' }
     'bernco' { return $uriHost -match '(^|\.)(bernco\.gov)$' }
     'mrcog' { return $uriHost -match '(^|\.)(mrcog-nm\.gov|mrcogshare\.org|mrcogmaps\.org|riometro\.org|arcgis\.com|nm\.tipviewer\.pmgpro\.com)$' }
     'nmdot' { return $uriHost -match '(^|\.)(dot\.nm\.gov|nmroads\.com|pmgpro\.com|rtsclients\.com|upgradeunserpaseo\.com)$' }
