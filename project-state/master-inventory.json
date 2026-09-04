@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-04T16:07:08.2562450Z",
+  "generated_at": "2026-09-04T18:59:15.5531282Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,22 +18,22 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 3299,
+    "pending review": 3275,
     "approved for addition": 0,
-    "downloading": 0,
-    "downloaded": 4,
+    "downloading": 1,
+    "downloaded": 11,
     "parsed": 0,
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 181,
     "validated": 1076,
-    "excluded": 889,
-    "duplicate": 1333,
+    "excluded": 891,
+    "duplicate": 1347,
     "superseded": 115,
     "blocked": 0,
     "requires human review": 35
   },
-  "next_pending_id": "src-000dc3f31153bfe5",
+  "next_pending_id": "src-00114240eea57df7",
   "candidates": [
     {
       "id": "lin-01236d79d0623075",
@@ -13430,7 +13430,7 @@
     },
     {
       "id": "src-000dc3f31153bfe5",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/downtown_arena/alb.arena9.16.04draft.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -13440,9 +13440,9 @@
       "agency": "City of Albuquerque",
       "title": "Alb.Arena9.16.04Draft.pdf",
       "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "file_type": "PDF",
+      "size_bytes": 167567,
+      "checksum_sha256": "ab2c51e9300215d9b31f35905f625bc03d63ac2aa6be4b7160ded942dc483f01",
       "parent_url": "https://www.cabq.gov/council/documents/downtown_arena",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/downtown_arena"
@@ -13465,16 +13465,18 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "HTTP-only validation did not establish content implementation. Returned to pending review during post-PR #106 reconciliation."
+        "Downloaded exact size: 167567 bytes (163.64 KiB); SHA-256 recorded.",
+        "HTTP-only validation did not establish content implementation. Returned to pending review during post-PR #106 reconciliation.",
+        "Direct retrieval returned an HTML document despite a PDF path; no archive or content placement created."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "authoritative source HTTP check passed; relevance, document inspection, and placement review remain pending",
+      "validation_status": "excluded: downloaded .pdf/view endpoint is an HTML payload, not a valid PDF; extraction failed before archival review",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-000dc3f31153bfe5.pdf",
       "discovered_at": "2026-08-04T15:02:42.8645136Z",
-      "updated_at": "2026-09-04T14:16:05.6450253Z"
+      "updated_at": "2026-09-04T18:52:10.7215935Z"
     },
     {
       "id": "src-00114240eea57df7",
@@ -19430,7 +19432,7 @@
     },
     {
       "id": "src-053506e040040781",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-ClaytonHtsMRA.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-ClaytonHtsMRA.pdf",
       "r2_url": null,
@@ -19441,8 +19443,8 @@
       "title": "MRA-RedevPlan-ClaytonHtsMRA.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 4952377,
+      "checksum_sha256": "8aed57fd4fb1fb41401153d9dd8d7f39aa61cf812b0f5fe1f1aaa3f36e828f34",
       "parent_url": "https://documents.cabq.gov/planning/UDD/MRA/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/MRA/"
@@ -19464,16 +19466,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
+        "Downloaded exact size: 4952377 bytes (4.72 MiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "duplicate reconciled to published canonical redevelopment plan",
+      "exclusion_reason": "Alternate packet, fragment, or source path for a complete Metropolitan Redevelopment Plan already archived and published on content/development-land-use/redevelopment-plans.md.",
+      "local_path": "research/staging/queue/src-053506e040040781.pdf",
       "discovered_at": "2026-08-04T14:15:57.8261992Z",
-      "updated_at": "2026-08-04T14:15:57.8261992Z"
+      "updated_at": "2026-09-04T18:58:42.9808698Z"
     },
     {
       "id": "src-053b77f24a962cd0",
@@ -42826,7 +42829,7 @@
     },
     {
       "id": "src-195c1e14e3a5485a",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-OldAlbuquerqueHighSchoolPartI.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-OldAlbuquerqueHighSchoolPartI.pdf",
       "r2_url": null,
@@ -42837,8 +42840,8 @@
       "title": "MRA-RedevPlan-OldAlbuquerqueHighSchoolPartI.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 41305,
+      "checksum_sha256": "1a5803dd9130b5d7511e454988524de5bd151fd76f49ec24a82a25c48e676790",
       "parent_url": "https://documents.cabq.gov/planning/UDD/MRA/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/MRA/"
@@ -42860,16 +42863,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
+        "Downloaded exact size: 41305 bytes (40.34 KiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "duplicate reconciled to published canonical redevelopment plan",
+      "exclusion_reason": "Alternate packet, fragment, or source path for a complete Metropolitan Redevelopment Plan already archived and published on content/development-land-use/redevelopment-plans.md.",
+      "local_path": "research/staging/queue/src-195c1e14e3a5485a.pdf",
       "discovered_at": "2026-08-04T14:15:57.8321963Z",
-      "updated_at": "2026-08-04T14:15:57.8321963Z"
+      "updated_at": "2026-09-04T18:58:46.7609256Z"
     },
     {
       "id": "src-1985ddd518ff1475",
@@ -48603,7 +48607,7 @@
     },
     {
       "id": "src-1e5fa889159b6c3f",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-NearheightsExpansionPart2.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-NearheightsExpansionPart2.pdf",
       "r2_url": null,
@@ -48614,8 +48618,8 @@
       "title": "MRA-RedevPlan-NearheightsExpansionPart2.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 18663414,
+      "checksum_sha256": "145a24fe8d6fa3faec8ea217c3b56395ae20e35348a65de413458b75d8d09f56",
       "parent_url": "https://documents.cabq.gov/planning/UDD/MRA/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/MRA/"
@@ -48637,16 +48641,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
+        "Downloaded exact size: 18663414 bytes (17.80 MiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "duplicate reconciled to published canonical redevelopment plan",
+      "exclusion_reason": "Alternate packet, fragment, or source path for a complete Metropolitan Redevelopment Plan already archived and published on content/development-land-use/redevelopment-plans.md.",
+      "local_path": "research/staging/queue/src-1e5fa889159b6c3f.pdf",
       "discovered_at": "2026-08-04T14:15:57.8301805Z",
-      "updated_at": "2026-08-04T14:15:57.8301805Z"
+      "updated_at": "2026-09-04T18:58:49.5197201Z"
     },
     {
       "id": "src-1e6778601cac2fec",
@@ -65316,7 +65321,7 @@
     },
     {
       "id": "src-2c7717c59cac7477",
-      "status": "pending review",
+      "status": "downloaded",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/Map%20of%20MR%20Areas.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/Map%20of%20MR%20Areas.pdf",
       "r2_url": null,
@@ -65327,8 +65332,8 @@
       "title": "Map of MR Areas.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 124103,
+      "checksum_sha256": "6b82858c1e9a52af11568fdb537a96cce9b620221f937c9def4dcccaaa66960b",
       "parent_url": "https://documents.cabq.gov/planning/UDD/MRA/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/MRA/"
@@ -65350,6 +65355,7 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
+        "Downloaded exact size: 124103 bytes (121.19 KiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review."
       ],
       "implementation_location": null,
@@ -65357,9 +65363,9 @@
       "cross_listing_approved": false,
       "validation_status": "not run",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-2c7717c59cac7477.pdf",
       "discovered_at": "2026-08-04T14:15:57.8211805Z",
-      "updated_at": "2026-08-04T14:15:57.8211805Z"
+      "updated_at": "2026-09-04T18:54:45.3432193Z"
     },
     {
       "id": "src-2c8b3ea4aeeeb749",
@@ -78252,7 +78258,7 @@
     },
     {
       "id": "src-3872c10e4e5bf4ef",
-      "status": "pending review",
+      "status": "downloaded",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-MetroRedevelopmentAreaMap.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-MetroRedevelopmentAreaMap.pdf",
       "r2_url": null,
@@ -78263,8 +78269,8 @@
       "title": "MRA-MetroRedevelopmentAreaMap.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 764489,
+      "checksum_sha256": "0a24e6331757301d3b2765570cf3df026b53f5f110b10476361e4b0b8fd39700",
       "parent_url": "https://documents.cabq.gov/planning/UDD/MRA/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/MRA/"
@@ -78286,6 +78292,7 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
+        "Downloaded exact size: 764489 bytes (746.57 KiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review."
       ],
       "implementation_location": null,
@@ -78293,9 +78300,9 @@
       "cross_listing_approved": false,
       "validation_status": "not run",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-3872c10e4e5bf4ef.pdf",
       "discovered_at": "2026-08-04T14:15:57.8231804Z",
-      "updated_at": "2026-08-04T14:15:57.8231804Z"
+      "updated_at": "2026-09-04T18:54:51.0763791Z"
     },
     {
       "id": "src-3878d42af1890e08",
@@ -103412,7 +103419,7 @@
     },
     {
       "id": "src-4e66ca1ceaedf368",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-NearheightsExpansionPart1.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-NearheightsExpansionPart1.pdf",
       "r2_url": null,
@@ -103423,8 +103430,8 @@
       "title": "MRA-RedevPlan-NearheightsExpansionPart1.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 14069080,
+      "checksum_sha256": "d2e80aa16e40374dfa30685a0091c755c51186eaabeee1f90d8dbba703275225",
       "parent_url": "https://documents.cabq.gov/planning/UDD/MRA/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/MRA/"
@@ -103446,16 +103453,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
+        "Downloaded exact size: 14069080 bytes (13.42 MiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "duplicate reconciled to published canonical redevelopment plan",
+      "exclusion_reason": "Alternate packet, fragment, or source path for a complete Metropolitan Redevelopment Plan already archived and published on content/development-land-use/redevelopment-plans.md.",
+      "local_path": "research/staging/queue/src-4e66ca1ceaedf368.pdf",
       "discovered_at": "2026-08-04T14:15:57.8292029Z",
-      "updated_at": "2026-08-04T14:15:57.8292029Z"
+      "updated_at": "2026-09-04T18:58:52.2341524Z"
     },
     {
       "id": "src-4e714d712aa9adc8",
@@ -103774,7 +103782,7 @@
     },
     {
       "id": "src-4ea8ad2ee702f786",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-SouthBarelasMRA.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-SouthBarelasMRA.pdf",
       "r2_url": null,
@@ -103785,8 +103793,8 @@
       "title": "MRA-RedevPlan-SouthBarelasMRA.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 611249,
+      "checksum_sha256": "be152ca76e76b2155fb0a6ef29deb69321d3bcc4fe4d30c19753f48ad5154904",
       "parent_url": "https://documents.cabq.gov/planning/UDD/MRA/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/MRA/"
@@ -103808,16 +103816,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
+        "Downloaded exact size: 611249 bytes (596.92 KiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "duplicate reconciled to published canonical redevelopment plan",
+      "exclusion_reason": "Alternate packet, fragment, or source path for a complete Metropolitan Redevelopment Plan already archived and published on content/development-land-use/redevelopment-plans.md.",
+      "local_path": "research/staging/queue/src-4ea8ad2ee702f786.pdf",
       "discovered_at": "2026-08-04T14:15:57.8361952Z",
-      "updated_at": "2026-08-04T14:15:57.8361952Z"
+      "updated_at": "2026-09-04T18:58:54.9451716Z"
     },
     {
       "id": "src-4eacfa2b453b394b",
@@ -107431,7 +107440,7 @@
     },
     {
       "id": "src-51d3a1f2cdad86fb",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/documents/downtown_arena/cityofalbuquerquepresentation.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -107441,9 +107450,9 @@
       "agency": "City of Albuquerque",
       "title": "CityofAlbuquerquePresentation.pdf",
       "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "file_type": "PDF",
+      "size_bytes": 168623,
+      "checksum_sha256": "b0c158a6558f10c46dee03129eca1a07e3c33dca6f8a6988f29b7219e2d7c5d4",
       "parent_url": "https://www.cabq.gov/council/documents/downtown_arena",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/downtown_arena"
@@ -107467,16 +107476,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 168623 bytes (164.67 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Sibling Downtown Arena endpoint returned the same non-PDF HTML payload; no archive or content placement created."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "excluded: downloaded .pdf/view endpoint is an HTML payload, not a valid PDF; extraction failed before archival review",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-51d3a1f2cdad86fb.pdf",
       "discovered_at": "2026-08-04T15:02:42.8655148Z",
-      "updated_at": "2026-08-04T15:02:42.8655148Z"
+      "updated_at": "2026-09-04T18:52:18.0498184Z"
     },
     {
       "id": "src-51d5f0b8ea9585e1",
@@ -109473,7 +109484,7 @@
     },
     {
       "id": "src-53783397543af7ae",
-      "status": "pending review",
+      "status": "downloaded",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-HistoricCentralMRA.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-HistoricCentralMRA.pdf",
       "r2_url": null,
@@ -109484,8 +109495,8 @@
       "title": "MRA-RedevPlan-HistoricCentralMRA.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 10480823,
+      "checksum_sha256": "26c90fca8b564eeac436a2366da026d37436d556a020898a0822e604bb9f0389",
       "parent_url": "https://documents.cabq.gov/planning/UDD/MRA/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/MRA/"
@@ -109507,6 +109518,7 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
+        "Downloaded exact size: 10480823 bytes (10.00 MiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review."
       ],
       "implementation_location": null,
@@ -109514,9 +109526,9 @@
       "cross_listing_approved": false,
       "validation_status": "not run",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-53783397543af7ae.pdf",
       "discovered_at": "2026-08-04T14:15:57.8271969Z",
-      "updated_at": "2026-08-04T14:15:57.8271969Z"
+      "updated_at": "2026-09-04T18:55:33.1485704Z"
     },
     {
       "id": "src-537a4500e296e2c4",
@@ -131608,7 +131620,7 @@
     },
     {
       "id": "src-66119aea26bc26d0",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-SouthBroadwayMRA.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-SouthBroadwayMRA.pdf",
       "r2_url": null,
@@ -131647,11 +131659,11 @@
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "duplicate reconciled to published canonical redevelopment plan",
+      "exclusion_reason": "Alternate packet, fragment, or source path for a complete Metropolitan Redevelopment Plan already archived and published on content/development-land-use/redevelopment-plans.md.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.8361952Z",
-      "updated_at": "2026-08-04T14:15:57.8361952Z"
+      "updated_at": "2026-09-04T18:58:57.3809289Z"
     },
     {
       "id": "src-66174144ce60e7a3",
@@ -140736,7 +140748,7 @@
     },
     {
       "id": "src-6eb66fb5c8f5c437",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-CentralHighlandUpperNobHillMRA.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-CentralHighlandUpperNobHillMRA.pdf",
       "r2_url": null,
@@ -140775,11 +140787,11 @@
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "duplicate reconciled to published canonical redevelopment plan",
+      "exclusion_reason": "Alternate packet, fragment, or source path for a complete Metropolitan Redevelopment Plan already archived and published on content/development-land-use/redevelopment-plans.md.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.8252034Z",
-      "updated_at": "2026-08-04T14:15:57.8252034Z"
+      "updated_at": "2026-09-04T18:58:59.7277534Z"
     },
     {
       "id": "src-6eb804d9c328c6ca",
@@ -145367,7 +145379,7 @@
     },
     {
       "id": "src-7226da5a5339ffa7",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-AlvaradoRailroadMRA.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-AlvaradoRailroadMRA.pdf",
       "r2_url": null,
@@ -145378,8 +145390,8 @@
       "title": "MRA-RedevPlan-AlvaradoRailroadMRA.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 649720,
+      "checksum_sha256": "6a6b21d914c4e20eaa6c72ea8f398b9e28912f1dfa2c46c3e5159247da45fc3d",
       "parent_url": "https://documents.cabq.gov/planning/UDD/MRA/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/MRA/"
@@ -145401,16 +145413,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
+        "Downloaded exact size: 649720 bytes (634.49 KiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "duplicate reconciled to published canonical redevelopment plan",
+      "exclusion_reason": "Alternate packet, fragment, or source path for a complete Metropolitan Redevelopment Plan already archived and published on content/development-land-use/redevelopment-plans.md.",
+      "local_path": "research/staging/queue/src-7226da5a5339ffa7.pdf",
       "discovered_at": "2026-08-04T14:15:57.8231804Z",
-      "updated_at": "2026-08-04T14:15:57.8231804Z"
+      "updated_at": "2026-09-04T18:59:01.8918834Z"
     },
     {
       "id": "src-722f21f26f70eaf7",
@@ -189162,7 +189175,7 @@
     },
     {
       "id": "src-96b8123d41e36223",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-SawmillWPMRA.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-SawmillWPMRA.pdf",
       "r2_url": null,
@@ -189173,8 +189186,8 @@
       "title": "MRA-RedevPlan-SawmillWPMRA.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 23447740,
+      "checksum_sha256": "b60cc227fd5f4a17a62e36fab5d1ad42920c744fa9bcbe00089c209db8e90bfc",
       "parent_url": "https://documents.cabq.gov/planning/UDD/MRA/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/MRA/"
@@ -189196,16 +189209,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
+        "Downloaded exact size: 23447740 bytes (22.36 MiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "duplicate reconciled to published canonical redevelopment plan",
+      "exclusion_reason": "Alternate packet, fragment, or source path for a complete Metropolitan Redevelopment Plan already archived and published on content/development-land-use/redevelopment-plans.md.",
+      "local_path": "research/staging/queue/src-96b8123d41e36223.pdf",
       "discovered_at": "2026-08-04T14:15:57.8341959Z",
-      "updated_at": "2026-08-04T14:15:57.8341959Z"
+      "updated_at": "2026-09-04T18:59:04.1602416Z"
     },
     {
       "id": "src-96be465bd70c5d14",
@@ -222087,7 +222101,7 @@
     },
     {
       "id": "src-b4350ab53979fbbc",
-      "status": "pending review",
+      "status": "downloaded",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-SycamoreMRA.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-SycamoreMRA.pdf",
       "r2_url": null,
@@ -222098,8 +222112,8 @@
       "title": "MRA-RedevPlan-SycamoreMRA.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 4437825,
+      "checksum_sha256": "5d79b31c99cd47a56123bcc551c4b759ce7670839dd862c9aeaa1ec92f13f9d5",
       "parent_url": "https://documents.cabq.gov/planning/UDD/MRA/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/MRA/"
@@ -222121,6 +222135,7 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
+        "Downloaded exact size: 4437825 bytes (4.23 MiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review."
       ],
       "implementation_location": null,
@@ -222128,9 +222143,9 @@
       "cross_listing_approved": false,
       "validation_status": "not run",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-b4350ab53979fbbc.pdf",
       "discovered_at": "2026-08-04T14:15:57.8381831Z",
-      "updated_at": "2026-08-04T14:15:57.8381831Z"
+      "updated_at": "2026-09-04T18:57:19.7406101Z"
     },
     {
       "id": "src-b443cbb28db8106b",
@@ -225428,7 +225443,7 @@
     },
     {
       "id": "src-b75567964455f1ea",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-OldAlbuquerqueHighSchoolPart-II.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-OldAlbuquerqueHighSchoolPart-II.pdf",
       "r2_url": null,
@@ -225439,8 +225454,8 @@
       "title": "MRA-RedevPlan-OldAlbuquerqueHighSchoolPart-II.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 20709,
+      "checksum_sha256": "7a815b004fa1f8925107fa4e586ccb7462851d259cd9efb24d69f27f27b9ee88",
       "parent_url": "https://documents.cabq.gov/planning/UDD/MRA/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/MRA/"
@@ -225462,16 +225477,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
+        "Downloaded exact size: 20709 bytes (20.22 KiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "duplicate reconciled to published canonical redevelopment plan",
+      "exclusion_reason": "Alternate packet, fragment, or source path for a complete Metropolitan Redevelopment Plan already archived and published on content/development-land-use/redevelopment-plans.md.",
+      "local_path": "research/staging/queue/src-b75567964455f1ea.pdf",
       "discovered_at": "2026-08-04T14:15:57.8331968Z",
-      "updated_at": "2026-08-04T14:15:57.8331968Z"
+      "updated_at": "2026-09-04T18:59:06.3746613Z"
     },
     {
       "id": "src-b78157787e71828f",
@@ -230536,7 +230552,7 @@
     },
     {
       "id": "src-bc4ffc00a5e4c058",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-NearheightsExpansionPart3.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-NearheightsExpansionPart3.pdf",
       "r2_url": null,
@@ -230547,8 +230563,8 @@
       "title": "MRA-RedevPlan-NearheightsExpansionPart3.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 10381955,
+      "checksum_sha256": "b868b20907629f77920fb36f83e26f5d0ecc9b80c81989ced562da461b8ec890",
       "parent_url": "https://documents.cabq.gov/planning/UDD/MRA/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/MRA/"
@@ -230570,16 +230586,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
+        "Downloaded exact size: 10381955 bytes (9.90 MiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "duplicate reconciled to published canonical redevelopment plan",
+      "exclusion_reason": "Alternate packet, fragment, or source path for a complete Metropolitan Redevelopment Plan already archived and published on content/development-land-use/redevelopment-plans.md.",
+      "local_path": "research/staging/queue/src-bc4ffc00a5e4c058.pdf",
       "discovered_at": "2026-08-04T14:15:57.8311946Z",
-      "updated_at": "2026-08-04T14:15:57.8311946Z"
+      "updated_at": "2026-09-04T18:59:08.7560308Z"
     },
     {
       "id": "src-bc5179cfd42ac2a6",
@@ -236921,7 +236938,7 @@
     },
     {
       "id": "src-c110d53dfa042854",
-      "status": "pending review",
+      "status": "downloaded",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-StJosephHospitalCivicAuditoriumArea.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-StJosephHospitalCivicAuditoriumArea.pdf",
       "r2_url": null,
@@ -236932,8 +236949,8 @@
       "title": "MRA-RedevPlan-StJosephHospitalCivicAuditoriumArea.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 1725234,
+      "checksum_sha256": "7e2a3b518cd23fe43d519b2658f8f66fc50694c15156ef6f11d066cdaea20d92",
       "parent_url": "https://documents.cabq.gov/planning/UDD/MRA/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/MRA/"
@@ -236955,6 +236972,7 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
+        "Downloaded exact size: 1725234 bytes (1.65 MiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review."
       ],
       "implementation_location": null,
@@ -236962,9 +236980,9 @@
       "cross_listing_approved": false,
       "validation_status": "not run",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-c110d53dfa042854.pdf",
       "discovered_at": "2026-08-04T14:15:57.837196Z",
-      "updated_at": "2026-08-04T14:15:57.837196Z"
+      "updated_at": "2026-09-04T18:57:48.2024907Z"
     },
     {
       "id": "src-c11c3eb4314d4138",
@@ -240828,7 +240846,7 @@
     },
     {
       "id": "src-c4b04604b2d64746",
-      "status": "pending review",
+      "status": "downloaded",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-Soldiers-SailorsPark.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-Soldiers-SailorsPark.pdf",
       "r2_url": null,
@@ -240839,8 +240857,8 @@
       "title": "MRA-RedevPlan-Soldiers-SailorsPark.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 1495222,
+      "checksum_sha256": "e0abbcc8abfdd4d1d15d496f4a96305e4cfa3e562c90aa2ce61ca5a793066659",
       "parent_url": "https://documents.cabq.gov/planning/UDD/MRA/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/MRA/"
@@ -240862,6 +240880,7 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
+        "Downloaded exact size: 1495222 bytes (1.43 MiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review."
       ],
       "implementation_location": null,
@@ -240869,9 +240888,9 @@
       "cross_listing_approved": false,
       "validation_status": "not run",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-c4b04604b2d64746.pdf",
       "discovered_at": "2026-08-04T14:15:57.8351975Z",
-      "updated_at": "2026-08-04T14:15:57.8351975Z"
+      "updated_at": "2026-09-04T18:57:54.557009Z"
     },
     {
       "id": "src-c4bc0920de6e9e4b",
@@ -247397,7 +247416,7 @@
     },
     {
       "id": "src-ca58e35a06580908",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-WestCentralMRA.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-WestCentralMRA.pdf",
       "r2_url": null,
@@ -247408,8 +247427,8 @@
       "title": "MRA-RedevPlan-WestCentralMRA.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 15029669,
+      "checksum_sha256": "4fa26fd730ab1fc3b98d844c0d4214bbae64065a95713c17ed42d385d50b7fc1",
       "parent_url": "https://documents.cabq.gov/planning/UDD/MRA/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/MRA/"
@@ -247431,16 +247450,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
+        "Downloaded exact size: 15029669 bytes (14.33 MiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "duplicate reconciled to published canonical redevelopment plan",
+      "exclusion_reason": "Alternate packet, fragment, or source path for a complete Metropolitan Redevelopment Plan already archived and published on content/development-land-use/redevelopment-plans.md.",
+      "local_path": "research/staging/queue/src-ca58e35a06580908.pdf",
       "discovered_at": "2026-08-04T14:15:57.8411822Z",
-      "updated_at": "2026-08-04T14:15:57.8411822Z"
+      "updated_at": "2026-09-04T18:59:10.9076208Z"
     },
     {
       "id": "src-ca5e8536ac3a59f7",
@@ -248985,7 +249005,7 @@
     },
     {
       "id": "src-cb776cdbd1f3ec08",
-      "status": "pending review",
+      "status": "downloaded",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-Appeal-Form.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-Appeal-Form.pdf",
       "r2_url": null,
@@ -248996,8 +249016,8 @@
       "title": "MRA-Appeal-Form.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 42712,
+      "checksum_sha256": "f87a15739db517f2dbeb4f2c1ee85d2e973f5566af1a9178420ade6cf219bee2",
       "parent_url": "https://documents.cabq.gov/planning/UDD/MRA/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/MRA/"
@@ -249019,6 +249039,7 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
+        "Downloaded exact size: 42712 bytes (41.71 KiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review."
       ],
       "implementation_location": null,
@@ -249026,9 +249047,9 @@
       "cross_listing_approved": false,
       "validation_status": "not run",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-cb776cdbd1f3ec08.pdf",
       "discovered_at": "2026-08-04T14:15:57.8221811Z",
-      "updated_at": "2026-08-04T14:15:57.8221811Z"
+      "updated_at": "2026-09-04T18:58:21.9748964Z"
     },
     {
       "id": "src-cb7dda40e52ce7cb",
@@ -251079,7 +251100,7 @@
     },
     {
       "id": "src-cd4fe69449ac10b9",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-McClellanParkMRA.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-McClellanParkMRA.pdf",
       "r2_url": null,
@@ -251090,8 +251111,8 @@
       "title": "MRA-RedevPlan-McClellanParkMRA.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 7255622,
+      "checksum_sha256": "008f1470c10bcf57b5e1353270acdba3d9198e77e8db420d9160eb22468906d2",
       "parent_url": "https://documents.cabq.gov/planning/UDD/MRA/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/MRA/"
@@ -251113,16 +251134,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
+        "Downloaded exact size: 7255622 bytes (6.92 MiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "duplicate reconciled to published canonical redevelopment plan",
+      "exclusion_reason": "Alternate packet, fragment, or source path for a complete Metropolitan Redevelopment Plan already archived and published on content/development-land-use/redevelopment-plans.md.",
+      "local_path": "research/staging/queue/src-cd4fe69449ac10b9.pdf",
       "discovered_at": "2026-08-04T14:15:57.8292029Z",
-      "updated_at": "2026-08-04T14:15:57.8292029Z"
+      "updated_at": "2026-09-04T18:59:12.9632933Z"
     },
     {
       "id": "src-cd538ab91b9dcb63",
@@ -254597,7 +254619,7 @@
     },
     {
       "id": "src-d04c986967667400",
-      "status": "pending review",
+      "status": "downloading",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RFPs-DeAnzaOfficialNOD.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RFPs-DeAnzaOfficialNOD.pdf",
       "r2_url": null,
@@ -254640,7 +254662,7 @@
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.8411822Z",
-      "updated_at": "2026-08-04T14:15:57.8411822Z"
+      "updated_at": "2026-09-04T18:58:39.1231239Z"
     },
     {
       "id": "src-d07ab9806a6fd78b",
@@ -281388,7 +281410,7 @@
     },
     {
       "id": "src-e74200262e481088",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-NearHeightsMRA.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-NearHeightsMRA.pdf",
       "r2_url": null,
@@ -281427,11 +281449,11 @@
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "duplicate reconciled to published canonical redevelopment plan",
+      "exclusion_reason": "Alternate packet, fragment, or source path for a complete Metropolitan Redevelopment Plan already archived and published on content/development-land-use/redevelopment-plans.md.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.8321963Z",
-      "updated_at": "2026-08-04T14:15:57.8321963Z"
+      "updated_at": "2026-09-04T18:59:15.3035177Z"
     },
     {
       "id": "src-e7442b03ed708de4",
