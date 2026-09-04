@@ -200,6 +200,21 @@ These reports record the federal transportation funds obligated for Albuquerque-
 
   [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/0eb13fa7-89c2-49cc-99f0-f0df1a5a1d17/Current%20FFY%202025-2026%20Planning%20Work%20Program%20As%20Amended.pdf) · [Current NMDOT Planning Division](https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/)
 
+### FFY 2023-2024 NMDOT Planning Work Program History
+
+These records preserve the adopted two-year program and each FHWA/FTA-approved revision that governed statewide planning, research, data, and metropolitan-planning support during FFY 2023 and 2024.
+
+- [NMDOT FFY 2023-2024 Planning Work Program (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-ffy2023-2024-planning-work-program.pdf) — Establishes the two-year program for multimodal planning, data management, research, MPO and RTPO work programs, budgets, schedules, and federal reimbursement.
+- [Amendment 1 (December 2022 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-ffy2023-2024-pwp-amendment-1.pdf) — Removes obsolete LTAP references and adds PROTECT planning work.
+- [Amendment 2 (April 2023 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-ffy2023-2024-pwp-amendment-2.pdf) — Updates climate planning, travel-demand modeling, research funding, and project schedules.
+- [Amendment 3 (July 2023 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-ffy2023-2024-pwp-amendment-3.pdf) — Revises research budgets, ends a work-zone crash-data study, and adds an unmanned-aircraft bridge-inspection pilot.
+- [Out-of-Cycle Amendment 1 (August 2023 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-ffy2023-2024-pwp-out-of-cycle-amendment-1.pdf) — Funds development, implementation, testing, and training for NMDOT's replacement eSTIP system.
+- [Amendment 4 (September 2023 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-ffy2023-2024-pwp-amendment-4.pdf) — Adds and updates university research, ArcPro migration, travel-demand modeling, pedestrian facilities, pavement research, and hydraulic testing work.
+- [Amendment 5 (December 2023 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-ffy2023-2024-pwp-amendment-5.pdf) — Updates data governance, AASHTO Census Transportation Solutions participation, and MPO budgets.
+- [Amendment 6 (March 2024 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-ffy2023-2024-pwp-amendment-6.pdf) — Funds ArcPro, highway-performance-monitoring, bridge, and roadway-data migration work while ending a pooled-fund study.
+
+  [Official NMDOT Planning Division](https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/)
+
 - [NMDOT CMAQ and Carbon Reduction Program Guide, FFY 2026-2028 (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/nmdot-cmaq-crp-program-guide-ffy2026-2028.pdf)
 
   Explains eligible emissions-reduction and carbon-reduction projects, available funding, local matches, federal requirements, application scoring, schedules, project delivery, and reimbursement for local and tribal agencies seeking FFY 2026-2028 awards.
