@@ -2,8 +2,6 @@
 title: "Safety & Crash Data"
 ---
 
-Bicycle safety statistics and crash data.
-
 ## Safety Program and Project Map
 
 - [Albuquerque Vision Zero](https://www.cabq.gov/vision-zero/vision-zero)
