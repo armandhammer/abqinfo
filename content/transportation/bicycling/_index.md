@@ -8,6 +8,16 @@ The bicycle section distinguishes system plans and mapped facilities from indivi
 
 Start with [Projects]({{< relref "projects/_index.md" >}}) for individual investments, [Bike Plans]({{< relref "bike-plans.md" >}}) for the network framework, [Bike Maps]({{< relref "bike-maps.md" >}}) for live geographic tools, and [Safety & Crash Data]({{< relref "../safety-crash-data.md" >}}) for City and regional safety sources.
 
+## Trail Advisory and Accessibility
+
+- [Greater Albuquerque Recreational Trails Committee](https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee)
+
+  Connects off-road trail users with the City's advisory committee, its current role and membership information, and the maintained [meeting agendas and minutes](https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee-agendas-minutes).
+
+- [Trails Are for Everyone: Americans with Disabilities Act (2016 Archived Presentation)](https://files.abqinfo.com/transportation/bicycling/bike-plans/cabq-trails-ada-presentation-2016.pdf)
+
+  Explains the ADA framework for Albuquerque trails, distinguishing recreation trails, outdoor-recreation access routes, shared-use paths, and sidewalks; summarizes access audits, geometry, surfaces, maintenance, documented departures, and accessible mobility-device policies. [Official City source](https://www.cabq.gov/parksandrecreation/documents/city-of-albuquerque-trails-americans-with-disabilities-act-may-17-2016-compressed.pdf).
+
 ## Campus Bicycling
 
 - [UNM Bike Valet Program](https://pats.unm.edu/alternative-transport/bike-valet-program.html)
