@@ -58,6 +58,12 @@ Selected major development activity and the plans and datasets needed to underst
 
 ## Redevelopment Portfolio
 
+- [De Anza Motor Lodge Redevelopment Official Notice of Decision (2015 Archived PDF)](https://files.abqinfo.com/development-land-use/projects/cabq-de-anza-motor-lodge-official-notice-decision-2015.pdf)
+
+  Records the Albuquerque Development Commission’s selection of Anthea at Nob Hill to redevelop the De Anza Motor Lodge, with rehabilitation findings, preservation requirements, estimated basic-rehabilitation cost, landmark review, and the appeal deadline.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/MRA/MRA-RFPs-DeAnzaOfficialNOD.pdf) · [Central/Highland/Upper Nob Hill Plan](https://www.cabq.gov/mra/redevelopment-areas/central-highland-upper-nob-hill)
+
 - [Metropolitan Redevelopment Agency Annual Report 2023 (archived PDF)](https://files.abqinfo.com/development-land-use/projects/cabq-mra-annual-report-2023.pdf)
 
   Documents Albuquerque’s 2023 redevelopment pipeline, including housing, hotel and commercial investment, the Rail Trail, Downtown Forward, the Menaul planning effort, public financing tools, and completed or active MRA-supported projects.

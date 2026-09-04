@@ -6,6 +6,18 @@ Interactive maps of city data and infrastructure.
 
 ## Citywide Reference Maps
 
+- [City of Albuquerque Metropolitan Redevelopment Areas Map (2023 Archived PDF)](https://files.abqinfo.com/maps/cabq-metropolitan-redevelopment-areas-map-2023.pdf)
+
+  Maps the City’s 2023 redevelopment-area portfolio, including the newer North Corridor, Menaul, Coronado, and Historic Central areas alongside downtown and legacy corridor, neighborhood, and institutional redevelopment geographies.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/MRA/Map%20of%20MR%20Areas.pdf) · [City Metropolitan Redevelopment Areas](https://www.cabq.gov/mra/redevelopment-areas)
+
+- [City of Albuquerque Metropolitan Redevelopment Areas Map (2008 Archived PDF)](https://files.abqinfo.com/maps/cabq-metropolitan-redevelopment-areas-map-2008.pdf)
+
+  Preserves the 2008 geographic baseline for designated redevelopment areas, showing the pre-North-Corridor and pre-Coronado portfolio, area boundaries, major streets, river, rail, freeways, and Central Avenue corridor relationships.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/MRA/MRA-MetroRedevelopmentAreaMap.pdf) · [City Metropolitan Redevelopment Areas](https://www.cabq.gov/mra/redevelopment-areas)
+
 ### Regional Long-Range Transportation Maps
 
 - [Albuquerque Metropolitan Planning Area Boundary Map (2020)](https://files.abqinfo.com/maps/mrmpo-albuquerque-metropolitan-planning-area-map-2020.pdf)

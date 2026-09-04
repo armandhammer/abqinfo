@@ -28,6 +28,24 @@ Plans and historical records for designated Metropolitan Redevelopment Areas, wh
 
 ## Historical and Retained Area Plans
 
+- [Historic Central Metropolitan Redevelopment Area Plan (2013 Archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-historic-central-mra-plan-2013.pdf)
+
+  Guides reinvestment along Central Avenue between Laguna Drive and Sunset Road, pairing catalyst-site redevelopment with streetscape, pedestrian, bicycle, transit, wayfinding, facade-improvement, financing, and Route 66 identity strategies around El Vado and Old Town.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-HistoricCentralMRA.pdf) · [City Metropolitan Redevelopment Areas](https://www.cabq.gov/mra/redevelopment-areas)
+
+- [Sycamore Metropolitan Redevelopment Plan (1985 Final Draft Archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-sycamore-mra-plan-final-draft-1985.pdf)
+
+  Preserves the Sycamore final-draft framework for mixed-use, hospital-campus, Central Avenue, Roosevelt-Parkside, transition-area, circulation, and redevelopment activities, including objectives for stronger pedestrian, transit, and bicycle connections and compatible infill.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-SycamoreMRA.pdf) · [City Metropolitan Redevelopment Areas](https://www.cabq.gov/mra/redevelopment-areas)
+
+- [Soldiers & Sailors Park Metropolitan Redevelopment Area Plan (1985 Draft Archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-soldiers-sailors-park-mra-plan-draft-1985.pdf)
+
+  Preserves the 1985 draft for West Central between Tenth Street and Laguna Boulevard, addressing historic resources, mixed-use and housing redevelopment, parking, circulation, public improvements, financing tools, and the planned Fourteenth-and-Central gateway.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-Soldiers-SailorsPark.pdf) · [City Metropolitan Redevelopment Areas](https://www.cabq.gov/mra/redevelopment-areas)
+
 - [Downtown 2025 Metropolitan Redevelopment Plan (2004; retained 2017; superseded 2025 archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-downtown-2025-mra-plan-2004-2017.pdf)
 
   Preserves the predecessor to Downtown 2050, documenting two decades of downtown land-use, transportation, urban-design, housing, economic-development, public-space, implementation, boundary, and adoption policy for historical comparison.
