@@ -92,6 +92,12 @@ Selected major development activity and the plans and datasets needed to underst
 
   Preserves the Council task force's findings and recommendations on vacant and abandoned housing, including code enforcement, rehabilitation, demolition, receivership, financing, neighborhood impacts, and the full historical report.
 
+- [Community Residential Program and Emergency Shelter Regulations (2013 Archived PDF)](https://files.abqinfo.com/development-land-use/projects/cabq-community-residential-emergency-shelter-regulations-2013.pdf)
+
+  This historical City code-enforcement packet explains the 2013 application and annual-review procedures for community residential programs and emergency shelters, including zoning-code definitions, spacing and density limits, licensing relationships, and review requirements.
+
+  This is a historical reference, not current application guidance. [Official City PDF](https://documents.cabq.gov/planning/code-enforcement/CodeEnf-CRPEmergShelterRegs-2017.PDF)
+
 - [ABC Comprehensive Plan, Chapter 9: Housing (2025 Update)](https://files.abqinfo.com/housing/affordable-housing/abc-comprehensive-plan-chapter-9-housing-2025.pdf)
 
   The housing element of the adopted Albuquerque/Bernalillo County Comprehensive Plan sets policies for housing choice, affordability, neighborhood stability, fair housing, infrastructure, and coordinated implementation across the city and unincorporated county.
