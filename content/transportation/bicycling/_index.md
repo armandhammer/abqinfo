@@ -58,6 +58,16 @@ GAATC was previously known as the Greater Albuquerque Bicycling Advisory Committ
 
 GARTC’s maintained City page has an [approved-minutes archive](https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee-agendas-minutes) through 2018. Its OnBase `MINUTES` query returned no 2024–2026 records as of September 5, 2026, so no agendas or substitutions are listed here.
 
+### Publicly Sourced GABAC Records
+
+- [Albuquerque Rapid Transit Project: GABAC Bicycle Integration Presentation (2016 Archived City Presentation)](https://files.abqinfo.com/transportation/bicycling/advisory-records/cabq-art-gabac-bicycle-integration-presentation-2016.pdf)
+
+  Preserves the City’s 2016 GABAC briefing on Albuquerque Rapid Transit, including the proposed station network’s relationship to existing and proposed bicycle facilities, bicycle racks and eLockers, and wayfinding. [Archived official City source](https://web.archive.org/web/20170130223747id_/http://www.cabq.gov/municipaldevelopment/documents/artpresentation-gabac-2016-06.pdf).
+
+- [GABAC Annual Report 2018 (Archived City Report)](https://files.abqinfo.com/transportation/bicycling/advisory-records/cabq-gabac-annual-report-2018.pdf)
+
+  Records GABAC’s 2018 advisory work on long-range bicycle planning, the City bike map, a bicycle coordinator, El Pueblo rail-crossing safety, downtown speed policy, bike-lane parking, and North Diversion Channel trail separation. [Archived official City source](https://web.archive.org/web/20191021132143id_/https://www.cabq.gov/municipaldevelopment/documents/gabac-annual-report-2018.pdf).
+
 - [Trails Are for Everyone: Americans with Disabilities Act (2016 Archived Presentation)](https://files.abqinfo.com/transportation/bicycling/bike-plans/cabq-trails-ada-presentation-2016.pdf)
 
   Explains the ADA framework for Albuquerque trails, distinguishing recreation trails, outdoor-recreation access routes, shared-use paths, and sidewalks; summarizes access audits, geometry, surfaces, maintenance, documented departures, and accessible mobility-device policies. [Official City source](https://www.cabq.gov/parksandrecreation/documents/city-of-albuquerque-trails-americans-with-disabilities-act-may-17-2016-compressed.pdf).
