@@ -32,7 +32,7 @@ The City’s [OnBase public records search](https://onbase.cabq.gov/publicaccess
 
 #### 2013–2023 (GABAC and GAATC)
 
-GAATC was previously known as the Greater Albuquerque Bicycling Advisory Committee (GABAC). The locally archived GABAC/GAATC files were compared with the City catalog; the links below retain the matching official OnBase minutes, rather than local-only attachments, presentations, summaries, drafts, or mixed GARTC material.
+GAATC was previously known as the Greater Albuquerque Bicycling Advisory Committee (GABAC). The locally archived GABAC/GAATC files were compared with the City catalog; the links below retain the matching official OnBase minutes only. Substantive, publicly sourced presentations and attachments are evaluated separately for standalone inclusion; routine agendas, cancellation notices, drafts, summaries, and local-only files without verified provenance are not represented as minutes.
 
 - 2023: [January 9](https://onbase.cabq.gov/publicaccess/api/Document/12053983/), [February 13](https://onbase.cabq.gov/publicaccess/api/Document/12053985/), [March 13](https://onbase.cabq.gov/publicaccess/api/Document/12053986/), [April 10](https://onbase.cabq.gov/publicaccess/api/Document/12053989/), [May 8](https://onbase.cabq.gov/publicaccess/api/Document/12053990/), [June 12](https://onbase.cabq.gov/publicaccess/api/Document/12053993/), [July 10](https://onbase.cabq.gov/publicaccess/api/Document/12053994/), [September 11](https://onbase.cabq.gov/publicaccess/api/Document/12054008/), [October 16](https://onbase.cabq.gov/publicaccess/api/Document/12054011/), and [November 13](https://onbase.cabq.gov/publicaccess/api/Document/12054013/).
 
