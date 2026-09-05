@@ -10,6 +10,14 @@ Public works capital improvement projects.
 
   The enacted City Council resolution establishes the 2026 policy priorities that guide capital investment across public works, transportation, housing, public safety, facilities, technology, redevelopment, and resilient infrastructure. [Official R-26-9 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=7948483&GUID=F53FB555-BF07-4310-8ADA-E596658B312D&Options=ID%7CText%7C&Search=R-26-9) · [Capital Spending placement](/city-data/capital-spending/#current-capital-program)
 
+- [2025 Infrastructure Capital Improvements Plan Priorities (R-25-126 enacted PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-icip-priorities-resolution-r-2025-037.pdf)
+
+  The enacted 2025 resolution establishes City Council priorities for the infrastructure capital improvements plan, guiding investment across streets, drainage, transit, parks, public safety, housing, facilities, technology, redevelopment, resilience, and other public infrastructure. [Official R-25-126 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=7261447&GUID=946224E0-A04F-4BDB-BCD8-14F4AA9A89B8&Options=ID%7CText%7C&Search=R-25-126) · [Official enacted attachment](https://cabq.legistar.com/View.ashx?M=F&ID=14303507&GUID=9768FDD1-4003-4241-AEA3-13A5CB45DEFA) · [Capital Spending placement](/city-data/capital-spending/#current-capital-program)
+
+- [2025-2034 Decade Plan for Capital Improvements (R-25-117 enacted PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2025-2034-decade-plan-resolution-r-2025-014.pdf)
+
+  The enacted resolution approves Albuquerque's 2025-2034 decade plan and 2025 two-year capital budget, programming general-obligation investments for streets, drainage, parks, transit, housing, public safety, community facilities, technology, redevelopment, and neighborhood priorities. [Official R-25-117 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=7093415&GUID=A1EE5760-2879-4F52-92D3-468EA72E356D&Options=ID%7CText%7C&Search=R-25-117) · [Official enacted attachment](https://cabq.legistar.com/View.ashx?M=F&ID=14128475&GUID=6F1EEC5B-42DA-47B0-B139-F63C4670D81A) · [Capital Spending placement](/city-data/capital-spending/#current-capital-program)
+
 - [Central Atrisco Fiberoptic Expansion Project](https://www.bernco.gov/public-works/blog/2024/07/15/central-atrisco-fiberoptic-expansion-project)
 
   Preserves the County’s recent fiber installation along Atrisco Vista Boulevard, Comfort Way, and Central Avenue, funded through federal Economic Development Administration and American Rescue Plan sources and completed in July 2025.

@@ -10,6 +10,14 @@ Capital improvement spending and projects.
 
   The enacted City Council resolution frames 2026 ICIP priorities across housing, public safety, transportation, facilities, technology, redevelopment, resilience, and other public infrastructure. [Official R-26-9 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=7948483&GUID=F53FB555-BF07-4310-8ADA-E596658B312D&Options=ID%7CText%7C&Search=R-26-9) · [Capital Projects placement](/public-works/capital-projects/#current-project-data)
 
+- [2025 Infrastructure Capital Improvements Plan Priorities (R-25-126 enacted PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-icip-priorities-resolution-r-2025-037.pdf)
+
+  The enacted 2025 resolution establishes City Council priorities for the infrastructure capital improvements plan, guiding investment across streets, drainage, transit, parks, public safety, housing, facilities, technology, redevelopment, resilience, and other public infrastructure. [Official R-25-126 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=7261447&GUID=946224E0-A04F-4BDB-BCD8-14F4AA9A89B8&Options=ID%7CText%7C&Search=R-25-126) · [Official enacted attachment](https://cabq.legistar.com/View.ashx?M=F&ID=14303507&GUID=9768FDD1-4003-4241-AEA3-13A5CB45DEFA) · [Capital Projects placement](/public-works/capital-projects/#current-project-data)
+
+- [2025-2034 Decade Plan for Capital Improvements (R-25-117 enacted PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2025-2034-decade-plan-resolution-r-2025-014.pdf)
+
+  The enacted resolution approves Albuquerque's 2025-2034 decade plan and 2025 two-year capital budget, programming general-obligation investments for streets, drainage, parks, transit, housing, public safety, community facilities, technology, redevelopment, and neighborhood priorities. [Official R-25-117 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=7093415&GUID=A1EE5760-2879-4F52-92D3-468EA72E356D&Options=ID%7CText%7C&Search=R-25-117) · [Official enacted attachment](https://cabq.legistar.com/View.ashx?M=F&ID=14128475&GUID=6F1EEC5B-42DA-47B0-B139-F63C4670D81A) · [Capital Projects placement](/public-works/capital-projects/#current-project-data)
+
 - [2026 Infrastructure Capital Improvement Plan Project List (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-infrastructure-capital-improvement-plan-project-list-2026.pdf)
 
   Lists Albuquerque's 2026 Infrastructure Capital Improvement Plan projects and identifying numbers by department, covering transit, streets, drainage, parks, housing, public safety, facilities, technology, redevelopment, and other capital needs.
@@ -47,6 +55,20 @@ Capital improvement spending and projects.
   The City URL is named as an Excel workbook but currently serves this one-page PDF. [Open the official City file](https://www.cabq.gov/municipaldevelopment/documents/2027-2036-fndg-alloc-chart-decade-plan.xlsx).
 
 ## Historical Capital Programs
+
+### 2021-2023 Decade Plan Resolutions
+
+- [2023-2032 Decade Plan for Capital Improvements (R-23-100 enacted PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2023-2032-decade-plan-resolution-r-2023-032.pdf)
+
+  The enacted 2023 resolution programs the City's 2023-2032 decade plan and two-year capital budget, allocating projects across infrastructure, transit, parks, public safety, housing, community facilities, and the City's general-obligation bond purposes. [Official R-23-100 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=6006022&GUID=3C58B50D-0842-4499-B60F-43811FFD0965&Options=ID%7CText%7C&Search=R-23-100) · [Official enacted attachment](https://cabq.legistar.com/View.ashx?M=F&ID=11953807&GUID=7AA39471-1C21-43D7-A3DE-3009A197DF54)
+
+- [2021-2030 Decade Plan for Capital Improvements (R-21-128 enacted PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2021-2030-decade-plan-resolution-r-2021-012.pdf)
+
+  The enacted 2021 resolution approves the 2021-2030 decade plan and two-year capital budget, programming general-obligation investments in streets, drainage, parks, transit, public safety, housing, community facilities, and neighborhood infrastructure. [Official R-21-128 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=4759053&GUID=179C318B-6108-4C7E-A983-5E9A8761C919&Options=ID%7CText%7C&Search=R-21-128) · [Official enacted attachment](https://cabq.legistar.com/View.ashx?M=F&ID=9291241&GUID=25D0FEEC-DAE6-4775-B628-2A682F7C3D40)
+
+- [Capital Improvements Plan Community Equity Criterion (R-20-85 enacted PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-capital-improvements-community-equity-criterion-r-2021-007.pdf)
+
+  The enacted resolution adds a community-equity criterion to Albuquerque's capital-improvements planning, directing the City to prioritize investment in socially vulnerable and geographically inequitable areas when developing capital programs. [Official R-20-85 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=4605081&GUID=EF54F862-7A9D-4A17-A83F-78371AABE688&Options=ID%7CText%7C&Search=R-20-85) · [Official enacted attachment](https://cabq.legistar.com/View.ashx?M=F&ID=9243019&GUID=63BD4956-FC75-48C5-BD5A-EEC4EFF64CB1)
 
 - [2003 Decade Plan Project Evaluation Criteria (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-decade-plan-project-evaluation-criteria-2003.pdf)
 
