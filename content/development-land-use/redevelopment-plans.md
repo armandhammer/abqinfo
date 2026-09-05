@@ -16,11 +16,11 @@ Plans and historical records for designated Metropolitan Redevelopment Areas, wh
 
   [Official City redevelopment-area page](https://www.cabq.gov/mra/redevelopment-areas/downtown) · [Official City PDF](https://www.cabq.gov/mra/documents/downtown-2050-final-web.pdf)
 
-- [Downtown Albuquerque Parking Study (2026)](https://legistar.granicus.com/cabq/attachments/d8a8f393-614a-4359-a5c3-4621232db387.pdf)
+- [2025 Downtown Albuquerque Parking Study (EC-26-175 archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-2025-downtown-albuquerque-parking-study.pdf)
 
   Establishes Downtown 2050's parking implementation strategy, inventorying 21,000-plus spaces, analyzing occupancy and future demand, and recommending demand-based pricing, shared and underused parking, parking benefit districts, multimodal travel, safer walking, wayfinding, and redevelopment of surface lots.
 
-  [City parking-study page](https://www.cabq.gov/mra/downtown-forward-1/parking) · [Legistar EC-26-175 record](https://cabq.legistar.com/Legislation.aspx)
+  [City parking-study page](https://www.cabq.gov/mra/downtown-forward-1/parking) · [Official EC-26-175 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=14931&GUID=2B6F2480-B818-43D7-AF1C-AEBDCBCF6410&Options=&Search=)
 
 ## Historical Capital Programming
 
