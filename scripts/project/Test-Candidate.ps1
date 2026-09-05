@@ -54,6 +54,16 @@ try {
   $method = 'GET fallback'
   $response = Invoke-WebRequest -Uri $url -Method Get -MaximumRedirection 10 -UseBasicParsing -UserAgent $userAgent
 }
+
+# Legistar can return HTTP 200 for a page that visibly reports an invalid
+# matter-detail parameter set.  Inspect that rendered response for this known
+# semantic error rather than treating the status code alone as validation.
+if ($url -match '(?i)^https?://[^/]*legistar\.com/LegislationDetail\.aspx(?:[?#]|$)') {
+  $detailResponse = Invoke-WebRequest -Uri $url -Method Get -MaximumRedirection 10 -UseBasicParsing -UserAgent $userAgent
+  if ([string]$detailResponse.Content -match '(?i)invalid parameters!') {
+    throw "Legistar matter-detail page reports 'Invalid parameters!' despite HTTP $([int]$detailResponse.StatusCode): $url"
+  }
+}
 $result = [ordered]@{ id = $Id; title = $candidate.title; url = $url; http_status = [int]$response.StatusCode }
 $result.method = $method
 

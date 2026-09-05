@@ -8,7 +8,7 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Continue'
 $plan = Get-Content -Raw -Encoding UTF8 -LiteralPath $PlanPath | ConvertFrom-Json
-$results = foreach ($item in @($plan.items)) {
+$results = @(foreach ($item in @($plan.items)) {
   try {
     & "$PSScriptRoot/Test-Candidate.ps1" -Id $item.id -InventoryPath $InventoryPath | ConvertFrom-Json
   } catch {
@@ -20,7 +20,7 @@ $results = foreach ($item in @($plan.items)) {
       error = $_.Exception.Message
     }
   }
-}
+})
 $passed = @($results | Where-Object { $_.http_status -ge 200 -and $_.http_status -lt 400 }).Count
 $failed = $results.Count - $passed
 [ordered]@{

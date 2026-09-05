@@ -1,27 +1,25 @@
-﻿{
-    "recorded_at":  "2026-09-04T23:59:41.9548090Z",
-    "completed_item_range":  "Archived the verified official EC-26-175 2025 Downtown Albuquerque Parking Study to R2, replaced the public direct attachment link with the byte-identical archive, retained the verified exact matter-detail record, and reconciled its inventory and R2 metadata.",
-    "total_candidates":  6945,
-    "counts_by_status":  {
-                             "pending review":  3048,
-                             "approved for addition":  0,
-                             "downloading":  0,
-                             "downloaded":  7,
-                             "parsed":  0,
-                             "description drafted":  0,
-                             "placement assigned":  0,
-                             "implemented":  182,
-                             "validated":  1087,
-                             "excluded":  1116,
-                             "duplicate":  1355,
-                             "superseded":  115,
-                             "blocked":  0,
-                             "requires human review":  35
-                         },
-    "remaining_nonterminal":  3237,
-    "next_pending_id":  "src-001ba8b96bdb553d",
-    "blockers":  [
-
-                 ],
-    "resume_command":  "python scripts/project/Build-LegistarPriorityQueue.py --input project-state/discovery/cabq-legistar-historical-2020-2026.json --output project-state/discovery/cabq-legistar-priority-80.json --limit 80"
+{
+  "recorded_at": "2026-09-05T00:14:52.0312201Z",
+  "completed_item_range": "Corrected PR #115 EC-26-175 provenance after rendered Legistar validation: archived the current official 15,819,626-byte View.ashx attachment to R2, replaced the invalid detail URL with the rendered official matter record, and added semantic Legistar error-page plus one-item archive-source validation.",
+  "total_candidates": 6945,
+  "counts_by_status": {
+    "pending review": 3048,
+    "approved for addition": 0,
+    "downloading": 0,
+    "downloaded": 7,
+    "parsed": 0,
+    "description drafted": 0,
+    "placement assigned": 0,
+    "implemented": 182,
+    "validated": 1087,
+    "excluded": 1116,
+    "duplicate": 1355,
+    "superseded": 115,
+    "blocked": 0,
+    "requires human review": 35
+  },
+  "remaining_nonterminal": 3237,
+  "next_pending_id": "src-001ba8b96bdb553d",
+  "blockers": [],
+  "resume_command": "python scripts/project/Build-LegistarPriorityQueue.py --input project-state/discovery/cabq-legistar-historical-2020-2026.json --output project-state/discovery/cabq-legistar-priority-80.json --limit 80"
 }
