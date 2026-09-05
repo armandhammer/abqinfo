@@ -18,7 +18,12 @@ foreach ($item in @($plan.items)) {
     throw "Public byte-identical validation is missing for '$($item.id)'."
   }
   $url = "https://files.abqinfo.com/$($item.r2_key)"
-  $response = Invoke-WebRequest -Method Head -Uri $url
+  # Use the same compatibility mode as the public-object validator.  Without
+  # it, PowerShell 7 can throw a null-reference error while parsing a valid
+  # header-only response from the public R2 endpoint.
+  $response = Invoke-WebRequest -Method Head -Uri $url -UseBasicParsing -Headers @{
+    'User-Agent' = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) ABQInfo-R2-Inventory/1.0'
+  }
   $remoteLength = [int64](@($response.Headers.'Content-Length')[0])
   if ($remoteLength -ne [int64]$item.size_bytes) {
     throw "Public Content-Length mismatch for '$($item.id)'."
