@@ -80,6 +80,10 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
   Schedules storm-drain, arroyo, channel, pump-station, water-quality, rehabilitation, right-of-way, and engineering investments across Albuquerque, identifying named projects and funding by bond cycle through 2016.
 
+- [2011–2019 Storm Drainage General Obligation Bond Schedule (Archived PDF)](https://files.abqinfo.com/public-works/stormwater/cabq-2011-2019-storm-drainage-go-bond-schedule.pdf)
+
+  Schedules $68.85 million for stormwater quality, pump stations, arroyo crossings, channels, basins, rehabilitation, and named drainage projects. [Full 2011–2019 capital-program record](/city-data/capital-spending/#20112019-department-schedules)
+
 - [2005–2013 Drainage Component Capital Implementation Plan (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2005-2013-drainage-component-capital-implementation-plan.pdf)
 
   Programs impact-fee-supported drainage rights-of-way, trunk lines, channels, diversions, ponds, and basins across Far Northeast, Northwest, Southwest, and Tijeras service areas. [Full 2007–2016 capital-program record](/city-data/capital-spending/#20072016-decade-plan)

@@ -50,6 +50,10 @@ Plans and historical records for designated Metropolitan Redevelopment Areas, wh
 
   Schedules the Bicycle Park, metropolitan redevelopment areas, Fourth Street, geographic information systems, KIVA, sector-plan improvements, village-center work, and other Planning Department capital investments. [Full 2007–2016 capital-program record](/city-data/capital-spending/#20072016-decade-plan)
 
+- [2011–2019 Planning General Obligation Bond Schedule (Archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment/cabq-2011-2019-planning-go-bond-schedule.pdf)
+
+  Schedules $33.01 million for planning, electronic review, geographic information systems, KIVA, metropolitan redevelopment areas, and neighborhood revitalization. [Full 2011–2019 capital-program record](/city-data/capital-spending/#20112019-department-schedules)
+
 ## Historical and Retained Area Plans
 
 - [Historic Central Metropolitan Redevelopment Area Plan (2013 Archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-historic-central-mra-plan-2013.pdf)

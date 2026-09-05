@@ -10,6 +10,10 @@ Planning, design standards, and selected major projects for City-owned buildings
 
   Schedules City building rehabilitation, roofs, security, parking-facility upgrades, replacement vehicles, and lighting, HVAC, renewable-energy, and conservation improvements through five bond cycles. [Full 2007–2016 capital-program record](/city-data/capital-spending/#20072016-decade-plan)
 
+- [2011–2019 City Facilities and Parking General Obligation Bond Schedule (Archived PDF)](https://files.abqinfo.com/public-works/city-facilities/cabq-2011-2019-city-facilities-parking-go-bond-schedule.pdf)
+
+  Schedules $14.6 million for City building rehabilitation, energy, security, parking, replacement vehicles, roofs, and water efficiency. [Full 2011–2019 capital-program record](/city-data/capital-spending/#20112019-department-schedules)
+
 ## Design Standards
 
 - [City of Albuquerque CIP Building Design Standards and Guidelines, Revision 17 (2025 archived PDF)](https://files.abqinfo.com/public-works/city-facilities/cabq-cip-building-design-standards-rev-17-2025.pdf)
