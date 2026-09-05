@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-05T19:49:57.4052392Z",
+  "generated_at": "2026-09-05T21:29:46.6732428Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,22 +18,22 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 3023,
+    "pending review": 2999,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 7,
     "parsed": 2,
     "description drafted": 0,
     "placement assigned": 0,
-    "implemented": 182,
-    "validated": 1116,
-    "excluded": 1118,
-    "duplicate": 1358,
+    "implemented": 181,
+    "validated": 1158,
+    "excluded": 1119,
+    "duplicate": 1365,
     "superseded": 119,
     "blocked": 0,
     "requires human review": 35
   },
-  "next_pending_id": "src-004cb81828e3bd35",
+  "next_pending_id": "src-0062e37bac5c9635",
   "candidates": [
     {
       "id": "lin-01236d79d0623075",
@@ -13819,7 +13819,7 @@
     },
     {
       "id": "src-004cb81828e3bd35",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/0d7d9f38-35a7-47ef-aff0-4bd04bb4fe87/FHWA%20Adaptation%20Decision-Making%20Assessment%20Process.pdf",
       "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/0d7d9f38-35a7-47ef-aff0-4bd04bb4fe87/FHWA%20Adaptation%20Decision-Making%20Assessment%20Process.pdf",
       "r2_url": null,
@@ -13830,8 +13830,8 @@
       "title": "FHWA Adaptation Decision-Making Assessment Process",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 518190,
+      "checksum_sha256": "b7a99bea003054112e78b9153bbefda621d81ebae5a33e286d58271251a6480b",
       "parent_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/research-and-climate-bureau/",
       "referring_urls": [
         "https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/research-and-climate-bureau/"
@@ -13850,22 +13850,25 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
+        "Captured from authoritative page https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/research-and-climate-bureau/; external host was not recursively crawled.",
         "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
+        "Downloaded exact size: 518190 bytes (506.04 KiB); SHA-256 recorded.",
         "Exact metadata and relevance remain pending source review.",
-        "Captured from authoritative page https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/research-and-climate-bureau/; external host was not recursively crawled."
+        "PDF pages: 10; extracted text: research/staging/queue/src-004cb81828e3bd35.txt",
+        "Reviewed September 2016 FHWA-HEP-17-004. It is a generic national asset-level climate-adaptation methodology with no New Mexico, Albuquerque, NMDOT project, or local implementation analysis. NMDOT's applicable 2024 Resilience Improvement Plan is already published on Transportation Plans; retaining this standalone framework would not add locally actionable content."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "passed: public NMDOT-linked PDF HTTP 200; scope reviewed from extracted 10-page text",
+      "exclusion_reason": "National FHWA reference methodology with no Albuquerque or New Mexico application; the locally relevant NMDOT Resilience Improvement Plan is already published.",
+      "local_path": "research/staging/queue/src-004cb81828e3bd35.pdf",
       "discovered_at": "2026-08-14T23:32:59.9616471Z",
-      "updated_at": "2026-08-14T23:32:59.9616471Z"
+      "updated_at": "2026-09-05T19:58:01.1042504Z"
     },
     {
       "id": "src-0056485f3f753936",
-      "status": "implemented",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/abq-final-report_volume-2.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -13895,15 +13898,15 @@
         "content/transportation/transit/abq-ride.md"
       ],
       "cross_listing_approved": false,
-      "validation_status": "pending full validation",
+      "validation_status": "passed: authoritative source HTTP 200",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-09-04T15:12:50.0805327Z",
-      "updated_at": "2026-09-04T15:12:50.0805327Z"
+      "updated_at": "2026-09-05T20:00:04.9786821Z"
     },
     {
       "id": "src-00579536b46d85b5",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://onbase.cabq.gov/publicaccess",
       "direct_file_url": null,
       "r2_url": null,
@@ -13916,22 +13919,25 @@
       "file_type": "Search application",
       "size_bytes": null,
       "checksum_sha256": null,
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City index for Greater Albuquerque Active Transportation Committee minutes, including the earlier Greater Albuquerque Bicycling Advisory Committee record series retained on the Bicycling page.",
+      "description_word_count": 25,
       "processing_notes": [
         "User-supplied official source recorded as a last-resort, low-priority search system.",
         "Use only after higher-priority official pages, document hosts, sitemaps, catalogs, linked sources, and PDF lineage paths are exhausted.",
-        "Limit future searches to GAATC, GARTC, any other demonstrably relevant boards or commissions, and substantive APD reports or plans within ABQInfo scope; do not enumerate unrelated record classes."
+        "Limit future searches to GAATC, GARTC, any other demonstrably relevant boards or commissions, and substantive APD reports or plans within ABQInfo scope; do not enumerate unrelated record classes.",
+        "Scoped to GAATC and GARTC minutes only. The official OnBase query returned 25 GAATC records for 2024-2026 and no GARTC records in that period; agendas and canceled-meeting notices were excluded."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "entry point verified 2026-08-10; deferred last-resort source not crawled",
+      "validation_status": "passed: official OnBase public query returned GAATC and GARTC MINUTES records",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-08-11T00:46:12.3597126Z",
-      "updated_at": "2026-08-11T00:46:12.3597126Z",
+      "updated_at": "2026-09-05T21:02:49.3785201Z",
       "parent_url": null,
       "referring_urls": [],
       "discovery_path": [
@@ -13945,19 +13951,19 @@
     },
     {
       "id": "src-005af4d0a7c9c760",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/parksandrecreation/documents/copy_of_indianschool.pdf",
       "direct_file_url": "https://www.cabq.gov/parksandrecreation/documents/copy_of_indianschool.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-foothills-trail-map-indian-school-2005.pdf",
+      "r2_key": "public-works/parks-recreation/cabq-foothills-trail-map-indian-school-2005.pdf",
+      "r2_etag": "52321b83449e636025ef4cf3565c6f4c",
+      "r2_last_modified": "2026-09-05T15:17:19-06:00",
       "agency": "City of Albuquerque",
-      "title": "Indian School",
-      "date": null,
+      "title": "Foothills Trail Map: Indian School",
+      "date": "revised 2005-11-09",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 333014,
+      "checksum_sha256": "6f077e077c15905134bf9122a5c7cd3e4fe873ebc001330bd899483136aa3366",
       "parent_url": "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee/resolveuid/791feeb2f53374bd63675ac2f65a39cc",
       "referring_urls": [
         "https://www.cabq.gov/parksandrecreation/open-space/facilities-map",
@@ -13974,22 +13980,25 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/public-works/parks-recreation.md",
+      "description": "Maps the Indian School Road foothills access area, including numbered trails, trail mileage, parking, picnic and restroom facilities, nearby streets, City Open Space, Forest Service lands, and Wilderness bicycle restrictions.",
+      "description_word_count": 30,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "GARTC-linked City map-library record; retained as a distinct Indian School trailhead field map rather than a replacement for the systemwide foothills overview.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/public-works/parks-recreation.md",
+      "implementation_locations": [
+        "content/public-works/parks-recreation.md",
+        "content/maps-data/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: public R2 download is byte-identical to the reviewed local source; authoritative provenance is evaluated separately",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-005af4d0a7c9c760.pdf",
       "discovered_at": "2026-08-04T14:16:00.3839792Z",
-      "updated_at": "2026-08-04T14:16:00.3839792Z"
+      "updated_at": "2026-09-05T21:28:03.1174118Z"
     },
     {
       "id": "src-0062e37bac5c9635",
@@ -15928,6 +15937,53 @@
       "local_path": null,
       "discovered_at": "2026-08-14T20:11:38.5385699Z",
       "updated_at": "2026-08-14T20:11:38.5385699Z"
+    },
+    {
+      "id": "src-021943721750b362",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12203729/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12203729/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — November 10, 2025",
+      "date": "2025-11-10",
+      "file_type": "PDF",
+      "size_bytes": 2418338,
+      "checksum_sha256": "d811704bfb49a88d8b4eb895e455b86e8bd0cd493a591d9df1744d6bc1dced58",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12203729/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on November 10, 2025, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 2418338 bytes (2.31 MiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-021943721750b362.pdf",
+      "discovered_at": "2026-09-05T20:40:15.3005263Z",
+      "updated_at": "2026-09-05T20:50:59.5324317Z"
     },
     {
       "id": "src-022f87a64034d62a",
@@ -38293,6 +38349,54 @@
       "updated_at": "2026-08-04T14:45:06.7362098Z"
     },
     {
+      "id": "src-14fdf8f8e43e85ae",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12080079/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12080079/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — January 13, 2025",
+      "date": "2025-01-13",
+      "file_type": "PDF",
+      "size_bytes": 200387,
+      "checksum_sha256": "86f36f683d3722411965b6544248018889b868aee09200205edb9c542bbcfc01",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12080079/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on January 13, 2025, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 200387 bytes (195.69 KiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-14fdf8f8e43e85ae.pdf",
+      "discovered_at": "2026-09-05T20:40:47.0775326Z",
+      "updated_at": "2026-09-05T20:50:02.666304Z"
+    },
+    {
       "id": "src-15080d936785b6d8",
       "status": "pending review",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/selection-advisory-committee-documents",
@@ -40992,6 +41096,53 @@
       "local_path": null,
       "discovered_at": "2026-08-12T22:58:13.3216288Z",
       "updated_at": "2026-08-26T16:24:48.1999222Z"
+    },
+    {
+      "id": "src-175f425b4b89b61d",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12162997/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12162997/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — February 10, 2025",
+      "date": "2025-02-10",
+      "file_type": "PDF",
+      "size_bytes": 226473,
+      "checksum_sha256": "16b5edd901ce8b59cc9648b1ec4f3e8776bf6f187e5788403b7c786ed2a5d354",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12162997/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on February 10, 2025, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 226473 bytes (221.17 KiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-175f425b4b89b61d.pdf",
+      "discovered_at": "2026-09-05T20:40:42.2211229Z",
+      "updated_at": "2026-09-05T20:50:06.820908Z"
     },
     {
       "id": "src-1761fdf497b30f4d",
@@ -47475,19 +47626,19 @@
     },
     {
       "id": "src-1cff86b46343d908",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/parksandrecreation/documents/piedralisa.pdf",
       "direct_file_url": "https://www.cabq.gov/parksandrecreation/documents/piedralisa.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-foothills-trail-map-piedra-lisa-2005.pdf",
+      "r2_key": "public-works/parks-recreation/cabq-foothills-trail-map-piedra-lisa-2005.pdf",
+      "r2_etag": "437bec8b15367c4f416743fe020cb4ff",
+      "r2_last_modified": "2026-09-05T15:17:30-06:00",
       "agency": "City of Albuquerque",
-      "title": "Piedra Lisa",
-      "date": null,
+      "title": "Foothills Trail Map: Piedra Lisa",
+      "date": "revised 2005-11-09",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 284780,
+      "checksum_sha256": "f9dd1592955778df8ad196a16bded136c7651d0327b1e76d22ddbea2ad53ce9a",
       "parent_url": "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee/resolveuid/791feeb2f53374bd63675ac2f65a39cc",
       "referring_urls": [
         "https://www.cabq.gov/parksandrecreation/open-space/facilities-map",
@@ -47504,22 +47655,25 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/public-works/parks-recreation.md",
+      "description": "Maps the Piedra Lisa foothills access area with the loop trail, numbered routes, trail distances, parking, picnic and restroom facilities, nearby streets, City Open Space, Forest Service lands, and Wilderness bicycle restrictions.",
+      "description_word_count": 32,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "GARTC-linked City map-library record; retained separately from the 2011 Piedra Lisa loop-and-canyon detail map.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/public-works/parks-recreation.md",
+      "implementation_locations": [
+        "content/public-works/parks-recreation.md",
+        "content/maps-data/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: public R2 download is byte-identical to the reviewed local source; authoritative provenance is evaluated separately",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-1cff86b46343d908.pdf",
       "discovered_at": "2026-08-04T14:16:00.5302739Z",
-      "updated_at": "2026-08-04T14:16:00.5302739Z"
+      "updated_at": "2026-09-05T21:28:08.3857229Z"
     },
     {
       "id": "src-1d0624c3e233da05",
@@ -54710,19 +54864,19 @@
     },
     {
       "id": "src-234b4b2f020e9455",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/parksandrecreation/documents/milne-gutierrez_2018-update.pdf",
       "direct_file_url": "https://www.cabq.gov/parksandrecreation/documents/milne-gutierrez_2018-update.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-john-a-milne-gutierrez-canyon-open-space-trail-map-2021.pdf",
+      "r2_key": "public-works/parks-recreation/cabq-john-a-milne-gutierrez-canyon-open-space-trail-map-2021.pdf",
+      "r2_etag": "d894da4fce776f81b60ac0544c9d5ff3",
+      "r2_last_modified": "2026-09-05T15:17:42-06:00",
       "agency": "City of Albuquerque",
-      "title": "Gutierrez Canyon/John A. Milne Open Space",
-      "date": null,
+      "title": "John A. Milne/Gutierrez Canyon Open Space Trail Map",
+      "date": "revised 2021-07",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 808041,
+      "checksum_sha256": "2ef65cfa242286ca120cdb7d6314ccda0dd9c2d602a814d4de7b1f158dc9fa60",
       "parent_url": "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee/resolveuid/791feeb2f53374bd63675ac2f65a39cc",
       "referring_urls": [
         "https://www.cabq.gov/parksandrecreation/open-space/facilities-map",
@@ -54739,22 +54893,25 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/public-works/parks-recreation.md",
+      "description": "Maps official trails and mileage through John A. Milne and Gutierrez Canyon Open Space near Cedar Crest, identifying parking, roads, contour intervals, Open Space boundaries, private property, and access from NM 14.",
+      "description_word_count": 32,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "GARTC-linked City map-library record; the map describes East Mountain Open Space access from Albuquerque.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/public-works/parks-recreation.md",
+      "implementation_locations": [
+        "content/public-works/parks-recreation.md",
+        "content/maps-data/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: public R2 download is byte-identical to the reviewed local source; authoritative provenance is evaluated separately",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-234b4b2f020e9455.pdf",
       "discovered_at": "2026-08-04T14:16:00.4623146Z",
-      "updated_at": "2026-08-04T14:16:00.4623146Z"
+      "updated_at": "2026-09-05T21:28:15.2224989Z"
     },
     {
       "id": "src-2377ac28d387ef9f",
@@ -68302,6 +68459,53 @@
       "updated_at": "2026-08-29T19:42:38.2366864Z"
     },
     {
+      "id": "src-2ecf2ec6038f8018",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12264414/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12264414/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — May 11, 2026",
+      "date": "2026-05-11",
+      "file_type": "PDF",
+      "size_bytes": 290986,
+      "checksum_sha256": "4466877c4c47925a790a0abda4dc8f6ad17bb2e2a0e0c28d853212b8369be162",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12264414/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on May 11, 2026, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 290986 bytes (284.17 KiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-2ecf2ec6038f8018.pdf",
+      "discovered_at": "2026-09-05T20:39:50.8604563Z",
+      "updated_at": "2026-09-05T20:51:32.3371654Z"
+    },
+    {
       "id": "src-2ed981e6df5e99d2",
       "status": "pending review",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/facilities_scope.pdf/view",
@@ -69419,19 +69623,19 @@
     },
     {
       "id": "src-2fec9403a904115d",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/parksandrecreation/documents/embudito.pdf",
       "direct_file_url": "https://www.cabq.gov/parksandrecreation/documents/embudito.pdf",
-      "r2_url": null,
-      "r2_key": null,
+      "r2_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-foothills-trail-map-embudito-2005.pdf",
+      "r2_key": "public-works/parks-recreation/cabq-foothills-trail-map-embudito-2005.pdf",
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Embudito",
-      "date": null,
+      "title": "Foothills Trail Map: Embudito",
+      "date": "revised 2005-11-09",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 297702,
+      "checksum_sha256": "ee720636832f84e9549388b15ea0738684e7e1c0ca1a4030d4c899f9e66a1305",
       "parent_url": "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee/resolveuid/791feeb2f53374bd63675ac2f65a39cc",
       "referring_urls": [
         "https://www.cabq.gov/parksandrecreation/open-space/facilities-map",
@@ -69448,22 +69652,25 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/public-works/parks-recreation.md",
+      "description": "Maps the Embudito trailhead and foothills network, including numbered trails and mileage, nearby streets, parking, picnic and restroom facilities, City Open Space, Forest Service lands, and the Wilderness boundary.",
+      "description_word_count": 29,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "GARTC-linked City map-library record; retained as a specific Embudito field map.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/public-works/parks-recreation.md",
+      "implementation_locations": [
+        "content/public-works/parks-recreation.md",
+        "content/maps-data/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: public R2 download is byte-identical to the reviewed local source; authoritative provenance is evaluated separately",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-2fec9403a904115d.pdf",
       "discovered_at": "2026-08-04T14:16:00.3890242Z",
-      "updated_at": "2026-08-04T14:16:00.3890242Z"
+      "updated_at": "2026-09-05T21:28:21.5242716Z"
     },
     {
       "id": "src-300ea20c582169a1",
@@ -80778,6 +80985,53 @@
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:59.4863827Z",
       "updated_at": "2026-09-04T22:47:32.399285Z"
+    },
+    {
+      "id": "src-3a28862d112bfaf8",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12254976/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12254976/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — April 13, 2026",
+      "date": "2026-04-13",
+      "file_type": "PDF",
+      "size_bytes": 312416,
+      "checksum_sha256": "d9bfa95eb0616f21e684346ac2a79253b7533d334149dde49fc2882d9ba8064e",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12254976/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on April 13, 2026, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 312416 bytes (305.09 KiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-3a28862d112bfaf8.pdf",
+      "discovered_at": "2026-09-05T20:39:55.6945683Z",
+      "updated_at": "2026-09-05T20:51:27.6000925Z"
     },
     {
       "id": "src-3a4c39611a00e0a3",
@@ -93843,7 +94097,7 @@
     },
     {
       "id": "src-454bc0a462647a7f",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/south-yale-blvd/Study%20Area.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -93854,8 +94108,8 @@
       "title": "South Yale Complete Street Plan Study Area",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 167088,
+      "checksum_sha256": "9dc48e5037e7c33f8183022dcf0895c2eb088af075816e088e00a8e0edfb67f5",
       "parent_url": "https://www.cabq.gov/council/documents/south-yale-blvd/",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/south-yale-blvd/"
@@ -93877,16 +94131,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 167088 bytes (163.17 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Same South Yale Study Area PDF as canonical record src-baff718ee06b25a3, already archived and published on Roadway Projects Studies."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "duplicate official-file record reconciled to archived candidate src-baff718ee06b25a3",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-454bc0a462647a7f.bin",
       "discovered_at": "2026-08-04T14:15:58.0706063Z",
-      "updated_at": "2026-08-04T14:15:58.0706063Z"
+      "updated_at": "2026-09-05T20:02:35.7175517Z"
     },
     {
       "id": "src-454e7b6319a9b1bd",
@@ -96025,19 +96281,19 @@
     },
     {
       "id": "src-4752ea3b8c1ef183",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/parksandrecreation/documents/placitas-update-2019.pdf",
       "direct_file_url": "https://www.cabq.gov/parksandrecreation/documents/placitas-update-2019.pdf",
-      "r2_url": null,
-      "r2_key": null,
+      "r2_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-placitas-open-space-trail-map-2019.pdf",
+      "r2_key": "public-works/parks-recreation/cabq-placitas-open-space-trail-map-2019.pdf",
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Placitas",
-      "date": null,
+      "title": "Placitas Open Space Trail Map",
+      "date": "revised 2019-09",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 3020934,
+      "checksum_sha256": "5e87a108d0b09f98f250f9c6a2f3c7f6dbaf323ab84a2275b1c432935926e423",
       "parent_url": "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee/resolveuid/791feeb2f53374bd63675ac2f65a39cc",
       "referring_urls": [
         "https://www.cabq.gov/parksandrecreation/open-space/facilities-map",
@@ -96054,22 +96310,25 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/public-works/parks-recreation.md",
+      "description": "Maps Placitas Open Space trails, route distances, parking, gate access, roads, Las Huertas Creek, private property, Bureau of Land Management land, contours, and directions from Albuquerque to the trail access.",
+      "description_word_count": 30,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "GARTC-linked City map-library record; the map is retained for a City Open Space property outside the Albuquerque city core.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/public-works/parks-recreation.md",
+      "implementation_locations": [
+        "content/public-works/parks-recreation.md",
+        "content/maps-data/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: public R2 download is byte-identical to the reviewed local source; authoritative provenance is evaluated separately",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-4752ea3b8c1ef183.pdf",
       "discovered_at": "2026-08-04T14:16:00.5367851Z",
-      "updated_at": "2026-08-04T14:16:00.5367851Z"
+      "updated_at": "2026-09-05T21:28:27.8676623Z"
     },
     {
       "id": "src-476fd4d37ef988e0",
@@ -104912,6 +105171,53 @@
       "updated_at": "2026-08-04T15:02:42.7830254Z"
     },
     {
+      "id": "src-4f129e8274197c79",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12288166/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12288166/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — July 13, 2026",
+      "date": "2026-07-13",
+      "file_type": "PDF",
+      "size_bytes": 304694,
+      "checksum_sha256": "84f3275d4ac7522531405c568e7951fee1c5333cec7ba0c96ec82401e5ebc4a5",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12288166/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on July 13, 2026, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 304694 bytes (297.55 KiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-4f129e8274197c79.pdf",
+      "discovered_at": "2026-09-05T20:39:40.9325405Z",
+      "updated_at": "2026-09-05T20:51:40.8312302Z"
+    },
+    {
       "id": "src-4f28a655d98c8ae3",
       "status": "pending review",
       "source_url": "https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-1-colo.pdf",
@@ -108406,6 +108712,53 @@
       "local_path": null,
       "discovered_at": "2026-08-14T20:11:38.8643821Z",
       "updated_at": "2026-08-14T20:11:38.8643821Z"
+    },
+    {
+      "id": "src-5213edfc685ad50e",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12243533/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12243533/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — March 9, 2026",
+      "date": "2026-03-09",
+      "file_type": "PDF",
+      "size_bytes": 1877903,
+      "checksum_sha256": "66d02ac4e7569030badc9295bb1f5538f8a5c1aaf73e131a25bebfee6a3bb511",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12243533/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on March 9, 2026, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 1877903 bytes (1.79 MiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-5213edfc685ad50e.pdf",
+      "discovered_at": "2026-09-05T20:40:00.5398291Z",
+      "updated_at": "2026-09-05T20:51:13.4046541Z"
     },
     {
       "id": "src-5214ec3ccc315c44",
@@ -115151,6 +115504,53 @@
       "local_path": "research/staging/queue/src-57cdf934b4db34ff.pdf",
       "discovered_at": "2026-09-05T00:52:24.8446509Z",
       "updated_at": "2026-09-05T04:42:26.7136296Z"
+    },
+    {
+      "id": "src-57e24377f8a36943",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054024/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054024/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — February 12, 2024",
+      "date": "2024-02-12",
+      "file_type": "PDF",
+      "size_bytes": 11951694,
+      "checksum_sha256": "82077dcebd95f9202fcf7d1691776fcead940f72bc7a3cd1c9d048c80bb9bb10",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12054024/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on February 12, 2024, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 11951694 bytes (11.40 MiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-57e24377f8a36943.pdf",
+      "discovered_at": "2026-09-05T20:41:29.184126Z",
+      "updated_at": "2026-09-05T20:48:58.1071218Z"
     },
     {
       "id": "src-57ed0875d4d61c7e",
@@ -122036,7 +122436,7 @@
     },
     {
       "id": "src-5dcdb9d4883e2b69",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/south-yale-blvd",
       "direct_file_url": null,
       "r2_url": null,
@@ -122047,8 +122447,8 @@
       "title": "South Yale Blvd.",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 162527,
+      "checksum_sha256": "fee846f11d4a77b1a2f8533a6d47834c3cf5c1cf3b19b0037cf53aa7fe336b15",
       "parent_url": "https://www.cabq.gov/council/documents/complete-streets/",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/complete-streets/"
@@ -122071,16 +122471,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 162527 bytes (158.72 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "City document-collection page is supporting navigation for the canonical South Yale Complete Street Master Plan record src-63af4f443dc4a4b3 and its published component PDFs."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "duplicate City source-collection page reconciled to canonical project record src-63af4f443dc4a4b3",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-5dcdb9d4883e2b69.bin",
       "discovered_at": "2026-08-04T14:45:04.0177025Z",
-      "updated_at": "2026-08-04T14:45:04.0177025Z"
+      "updated_at": "2026-09-05T20:02:43.0776699Z"
     },
     {
       "id": "src-5dd2daf604742ee7",
@@ -140276,6 +140678,53 @@
       "updated_at": "2026-08-14T23:32:59.9782492Z"
     },
     {
+      "id": "src-6d3dca57bcc7aff3",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12155508/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12155508/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — June 9, 2025",
+      "date": "2025-06-09",
+      "file_type": "PDF",
+      "size_bytes": 310654,
+      "checksum_sha256": "f603d39843c71485bb0398429340894abe4214e7395a7ce117083102a6ae9f81",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12155508/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on June 9, 2025, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 310654 bytes (303.37 KiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-6d3dca57bcc7aff3.pdf",
+      "discovered_at": "2026-09-05T20:40:28.8717829Z",
+      "updated_at": "2026-09-05T20:50:33.9699458Z"
+    },
+    {
       "id": "src-6d4fff3b8a319a9c",
       "status": "pending review",
       "source_url": "https://www.cabq.gov/council/projects/current-projects/albuquerque-regional-sports-complex",
@@ -143817,19 +144266,19 @@
     },
     {
       "id": "src-708a570d8fd6f98f",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/parksandrecreation/documents/foothills-working-copper.pdf",
       "direct_file_url": "https://www.cabq.gov/parksandrecreation/documents/foothills-working-copper.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-foothills-trail-map-copper-2010.pdf",
+      "r2_key": "public-works/parks-recreation/cabq-foothills-trail-map-copper-2010.pdf",
+      "r2_etag": "0303f723d227456b8c62c5df0f0a04e8",
+      "r2_last_modified": "2026-09-05T15:18:21-06:00",
       "agency": "City of Albuquerque",
-      "title": "Copper",
-      "date": null,
+      "title": "Foothills Trail Map: Copper",
+      "date": "revised 2010-04",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 1374994,
+      "checksum_sha256": "bbea7b5110da42af56a10baa08205b7718bc77e21838a1d93c378c5888ee22e1",
       "parent_url": "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee/resolveuid/791feeb2f53374bd63675ac2f65a39cc",
       "referring_urls": [
         "https://www.cabq.gov/parksandrecreation/open-space/facilities-map",
@@ -143846,22 +144295,25 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/public-works/parks-recreation.md",
+      "description": "Maps the Copper Avenue foothills access area with numbered trails and mileage, bike-path connections, parking, picnic and restroom facilities, nearby streets, City Open Space, Forest Service lands, and Wilderness bicycle restrictions.",
+      "description_word_count": 31,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "GARTC-linked City map-library record; retained as a specific Copper foothills access map.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/public-works/parks-recreation.md",
+      "implementation_locations": [
+        "content/public-works/parks-recreation.md",
+        "content/maps-data/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: public R2 download is byte-identical to the reviewed local source; authoritative provenance is evaluated separately",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-708a570d8fd6f98f.pdf",
       "discovered_at": "2026-08-04T14:16:00.4066372Z",
-      "updated_at": "2026-08-04T14:16:00.4066372Z"
+      "updated_at": "2026-09-05T21:28:34.4176793Z"
     },
     {
       "id": "src-709eaf4328f50152",
@@ -153317,6 +153769,53 @@
       "local_path": null,
       "discovered_at": "2026-09-04T15:12:48.5821012Z",
       "updated_at": "2026-09-04T15:12:48.5821012Z"
+    },
+    {
+      "id": "src-7872bc7475c6b504",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054029/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054029/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — May 13, 2024",
+      "date": "2024-05-13",
+      "file_type": "PDF",
+      "size_bytes": 903800,
+      "checksum_sha256": "10f3a7ab12ff1598c541e3ec79e600080cd0af96289d50c84befdf2728a5c2e1",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12054029/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on May 13, 2024, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 903800 bytes (882.62 KiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-7872bc7475c6b504.pdf",
+      "discovered_at": "2026-09-05T20:41:14.4439225Z",
+      "updated_at": "2026-09-05T20:49:27.2558208Z"
     },
     {
       "id": "src-787e833d60d98ea5",
@@ -163357,19 +163856,19 @@
     },
     {
       "id": "src-80c4be7e2e3a1f7e",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/parksandrecreation/documents/rgvsp-map-split-11x17_2017-update.pdf",
       "direct_file_url": "https://www.cabq.gov/parksandrecreation/documents/rgvsp-map-split-11x17_2017-update.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-rio-grande-valley-state-park-map-2017.pdf",
+      "r2_key": "public-works/parks-recreation/cabq-rio-grande-valley-state-park-map-2017.pdf",
+      "r2_etag": "1e376b25e443cc86ae9a2323ed6536a4",
+      "r2_last_modified": "2026-09-05T15:18:34-06:00",
       "agency": "City of Albuquerque",
-      "title": "Rio Grande Valley State Park map",
-      "date": null,
+      "title": "Rio Grande Valley State Park Map",
+      "date": "revised 2017-08",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 2660050,
+      "checksum_sha256": "457df4f271838d9953b50fa137796cf606d3ef4449d1273f8852f0d4186d1d42",
       "parent_url": "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee/resolveuid/791feeb2f53374bd63675ac2f65a39cc",
       "referring_urls": [
         "https://www.cabq.gov/parksandrecreation/open-space/facilities-map",
@@ -163386,22 +163885,25 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/public-works/parks-recreation.md",
+      "description": "Maps the northern and southern reaches of Rio Grande Valley State Park, including the Paseo del Bosque and Rio del Norte trails, access points, parking, picnic areas, ADA features, and restricted-access areas.",
+      "description_word_count": 32,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "GARTC-linked City map-library record; retained as a distinct Bosque trail and access reference.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/public-works/parks-recreation.md",
+      "implementation_locations": [
+        "content/public-works/parks-recreation.md",
+        "content/maps-data/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: public R2 download is byte-identical to the reviewed local source; authoritative provenance is evaluated separately",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-80c4be7e2e3a1f7e.pdf",
       "discovered_at": "2026-08-04T14:16:00.5394519Z",
-      "updated_at": "2026-08-04T14:16:00.5394519Z"
+      "updated_at": "2026-09-05T21:28:40.8080332Z"
     },
     {
       "id": "src-80dbe24f7abe63d6",
@@ -165403,7 +165905,7 @@
     },
     {
       "id": "src-8288811b070a17f5",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/south-yale-sector-plan",
       "direct_file_url": null,
       "r2_url": null,
@@ -165414,8 +165916,8 @@
       "title": "South Yale Sector Plan",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 165875,
+      "checksum_sha256": "0d03a92840b299475a378c54563f7f41a7e7b16bf0ddcfeaa7a39a2ad4c27d66",
       "parent_url": "https://www.cabq.gov/council/documents/complete-streets/",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/complete-streets/"
@@ -165438,16 +165940,18 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 165875 bytes (161.99 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "City collection page points to the South Yale Sector Development Plan already represented by canonical archived transportation-section record src-5d29a972bd5550ba."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "duplicate City source-collection page reconciled to archived candidate src-5d29a972bd5550ba",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-8288811b070a17f5.bin",
       "discovered_at": "2026-08-04T14:45:03.9098658Z",
-      "updated_at": "2026-08-04T14:45:03.9098658Z"
+      "updated_at": "2026-09-05T20:02:49.3905559Z"
     },
     {
       "id": "src-82897f6ecaf820d7",
@@ -168567,6 +169071,53 @@
       "local_path": null,
       "discovered_at": "2026-08-14T23:33:00.1523052Z",
       "updated_at": "2026-08-14T23:33:00.1523052Z"
+    },
+    {
+      "id": "src-84c6c27068d476c2",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12233408/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12233408/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — February 9, 2026",
+      "date": "2026-02-09",
+      "file_type": "PDF",
+      "size_bytes": 331866,
+      "checksum_sha256": "8e1eae6057e4379d33bcf1797ca5a04b267195e69010357fc17a8a1c994ae8ec",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12233408/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on February 9, 2026, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 331866 bytes (324.09 KiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-84c6c27068d476c2.pdf",
+      "discovered_at": "2026-09-05T20:40:05.6799761Z",
+      "updated_at": "2026-09-05T20:51:08.1862814Z"
     },
     {
       "id": "src-84c6f9bd77dd56b2",
@@ -179376,6 +179927,54 @@
       "updated_at": "2026-09-05T19:49:20.8102267Z"
     },
     {
+      "id": "src-8d8812220580bcd4",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12065919/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12065919/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — December 9, 2024",
+      "date": "2024-12-09",
+      "file_type": "PDF",
+      "size_bytes": 1085115,
+      "checksum_sha256": "6eab81bf3940fa1abce36e2a77040e6144c8c1225a8fbdfb54abf621cc96d423",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12065919/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on December 9, 2024, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 1085115 bytes (1.03 MiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-8d8812220580bcd4.pdf",
+      "discovered_at": "2026-09-05T20:40:54.426123Z",
+      "updated_at": "2026-09-05T20:49:57.958767Z"
+    },
+    {
       "id": "src-8daf5837ea8b9b04",
       "status": "pending review",
       "source_url": "https://documents.cabq.gov/planning/development-process-manual/DPM-Chapter7-Proposed.pdf",
@@ -186417,19 +187016,19 @@
     },
     {
       "id": "src-934fc0a8a71b499f",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/parksandrecreation/documents/San%20Antonito%20-%20hillshade.pdf",
       "direct_file_url": "https://www.cabq.gov/parksandrecreation/documents/San%20Antonito%20-%20hillshade.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-san-antonito-open-space-trail-map-2023.pdf",
+      "r2_key": "public-works/parks-recreation/cabq-san-antonito-open-space-trail-map-2023.pdf",
+      "r2_etag": "0a2f90841575f80a9637b208b08a3764",
+      "r2_last_modified": "2026-09-05T15:18:46-06:00",
       "agency": "City of Albuquerque",
-      "title": "San Antonito",
-      "date": null,
+      "title": "San Antonito Open Space Trail Map",
+      "date": "2023",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 567394,
+      "checksum_sha256": "f3458845ac40dd80fa724673dc6e36934ff46d182373dd1e24d2516a7ae1b345",
       "parent_url": "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee/resolveuid/791feeb2f53374bd63675ac2f65a39cc",
       "referring_urls": [
         "https://www.cabq.gov/parksandrecreation/open-space/facilities-map",
@@ -186446,22 +187045,25 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/public-works/parks-recreation.md",
+      "description": "Maps official trails, access points, roads, private property, and contour detail in San Antonito Open Space, identifying the short named trail network around the City’s East Mountain foothills holding.",
+      "description_word_count": 29,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "GARTC-linked City map-library record; publication date uses the file metadata because no revision date is printed.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/public-works/parks-recreation.md",
+      "implementation_locations": [
+        "content/public-works/parks-recreation.md",
+        "content/maps-data/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: public R2 download is byte-identical to the reviewed local source; authoritative provenance is evaluated separately",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-934fc0a8a71b499f.pdf",
       "discovered_at": "2026-08-04T14:16:00.5425595Z",
-      "updated_at": "2026-08-04T14:16:00.5425595Z"
+      "updated_at": "2026-09-05T21:28:49.3004415Z"
     },
     {
       "id": "src-934ffdff8130d7d4",
@@ -192787,6 +193389,53 @@
       "updated_at": "2026-08-14T23:32:59.9879191Z"
     },
     {
+      "id": "src-99529b2a4c8db5aa",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12288706/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12288706/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — August 10, 2026",
+      "date": "2026-08-10",
+      "file_type": "PDF",
+      "size_bytes": 1668895,
+      "checksum_sha256": "3537b4243870a40a416bc867037a414ab57d4051c44291e2e6c95defba098539",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12288706/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on August 10, 2026, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 1668895 bytes (1.59 MiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-99529b2a4c8db5aa.pdf",
+      "discovered_at": "2026-09-05T20:39:36.5358958Z",
+      "updated_at": "2026-09-05T20:51:45.9127397Z"
+    },
+    {
       "id": "src-995b7fdf05d5fb91",
       "status": "implemented",
       "source_url": "https://www.bernco.gov/public-works/blog/2021/04/15/rio-grande-indoor-pool/",
@@ -193379,6 +194028,53 @@
       "local_path": null,
       "discovered_at": "2026-08-14T23:32:59.5043661Z",
       "updated_at": "2026-08-14T23:32:59.5043661Z"
+    },
+    {
+      "id": "src-99d9d144d198ba12",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12162993/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12162993/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — May 12, 2025",
+      "date": "2025-05-12",
+      "file_type": "PDF",
+      "size_bytes": 187731,
+      "checksum_sha256": "7982449c6863486eee1372655736c9d01ac11af6933e263668597fb129639f2c",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12162993/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on May 12, 2025, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 187731 bytes (183.33 KiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-99d9d144d198ba12.pdf",
+      "discovered_at": "2026-09-05T20:40:33.2421673Z",
+      "updated_at": "2026-09-05T20:50:29.103861Z"
     },
     {
       "id": "src-99ee10edef4bc69c",
@@ -194265,19 +194961,19 @@
     },
     {
       "id": "src-9a8ab38bdba859ee",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/parksandrecreation/documents/elena-for-nature-trail-guide.pdf",
       "direct_file_url": "https://www.cabq.gov/parksandrecreation/documents/elena-for-nature-trail-guide.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-elena-gallegos-open-space-trail-map-2020.pdf",
+      "r2_key": "public-works/parks-recreation/cabq-elena-gallegos-open-space-trail-map-2020.pdf",
+      "r2_etag": "2e10a3c9f22be419daef7f3c85c1db55",
+      "r2_last_modified": "2026-09-05T15:18:59-06:00",
       "agency": "City of Albuquerque",
-      "title": "Elena Gallegos",
-      "date": null,
+      "title": "Elena Gallegos Open Space Trail Map",
+      "date": "revised 2020-10",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 621987,
+      "checksum_sha256": "01c4b98b443bc6ac6ad8effc0d6fbf6bd23daf633f3c897c17847a5015b7fd03",
       "parent_url": "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee/resolveuid/791feeb2f53374bd63675ac2f65a39cc",
       "referring_urls": [
         "https://www.cabq.gov/parksandrecreation/open-space/facilities-map",
@@ -194294,22 +194990,25 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/public-works/parks-recreation.md",
+      "description": "Maps Elena Gallegos trails, route distances, hiker-only and multi-use segments, parking, restrooms, picnic facilities, amphitheater, fee area, City Open Space, Forest Service lands, and the Wilderness bicycle restriction.",
+      "description_word_count": 28,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "GARTC-linked City map-library record; retained as the newer Elena Gallegos field map rather than the systemwide foothills overview.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/public-works/parks-recreation.md",
+      "implementation_locations": [
+        "content/public-works/parks-recreation.md",
+        "content/maps-data/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: public R2 download is byte-identical to the reviewed local source; authoritative provenance is evaluated separately",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-9a8ab38bdba859ee.pdf",
       "discovered_at": "2026-08-04T14:16:00.3859959Z",
-      "updated_at": "2026-08-04T14:16:00.3859959Z"
+      "updated_at": "2026-09-05T21:28:54.5280151Z"
     },
     {
       "id": "src-9a8de57080520216",
@@ -198031,19 +198730,19 @@
     },
     {
       "id": "src-9e44aadc0096eada",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/parksandrecreation/documents/Piedra_lisa_standalone.pdf",
       "direct_file_url": "https://www.cabq.gov/parksandrecreation/documents/Piedra_lisa_standalone.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-piedra-lisa-open-space-loop-canyon-trails-map-2011.pdf",
+      "r2_key": "public-works/parks-recreation/cabq-piedra-lisa-open-space-loop-canyon-trails-map-2011.pdf",
+      "r2_etag": "1144f51f2e74030e84616e5024e5905d",
+      "r2_last_modified": "2026-09-05T15:19:11-06:00",
       "agency": "City of Albuquerque",
-      "title": "Piedra Lisa Detail Map",
-      "date": null,
+      "title": "Piedra Lisa Open Space Loop and Canyon Trails Map",
+      "date": "revised 2011-09",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 221803,
+      "checksum_sha256": "73e56084b1cb1df1a17b1f2425eed4b23a9a83a658415a663819e759aa2215ac",
       "parent_url": "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee/resolveuid/791feeb2f53374bd63675ac2f65a39cc",
       "referring_urls": [
         "https://www.cabq.gov/parksandrecreation/open-space/facilities-map",
@@ -198060,22 +198759,25 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/public-works/parks-recreation.md",
+      "description": "Maps Piedra Lisa’s loop and canyon trails over aerial imagery, marking the official routes and trailhead. It warns that the steep, rocky canyon route is unsuitable for bicycles and horseback riders and ends at waterfall rock.",
+      "description_word_count": 36,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "GARTC-linked City map-library record; visual review confirms it is a distinct 2011 safety-oriented detail map, not a duplicate of the 2005 network map.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/public-works/parks-recreation.md",
+      "implementation_locations": [
+        "content/public-works/parks-recreation.md",
+        "content/maps-data/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: public R2 download is byte-identical to the reviewed local source; authoritative provenance is evaluated separately",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-9e44aadc0096eada.pdf",
       "discovered_at": "2026-08-04T14:16:00.5272877Z",
-      "updated_at": "2026-08-04T14:16:00.5272877Z"
+      "updated_at": "2026-09-05T21:29:01.3776523Z"
     },
     {
       "id": "src-9e44e9bc1ed7b70a",
@@ -200299,6 +201001,53 @@
       "updated_at": "2026-08-14T20:11:38.578898Z"
     },
     {
+      "id": "src-a127a114e536629e",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054028/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054028/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — April 8, 2024",
+      "date": "2024-04-08",
+      "file_type": "PDF",
+      "size_bytes": 356387,
+      "checksum_sha256": "d663277be769b89d6ba94a8c509a4e7db3313facd6f931189876a23e419e8a44",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12054028/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on April 8, 2024, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 356387 bytes (348.03 KiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-a127a114e536629e.pdf",
+      "discovered_at": "2026-09-05T20:41:19.1564441Z",
+      "updated_at": "2026-09-05T20:49:07.4713981Z"
+    },
+    {
       "id": "src-a1327d48ad5c993a",
       "status": "validated",
       "source_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fpdsgismaps.bernco.gov%2Fserver%2Frest%2Fservices%2FBERNCO%2FMulti_Use_Trails%2FMapServer&source=sd",
@@ -201030,6 +201779,53 @@
       "local_path": null,
       "discovered_at": "2026-08-14T20:11:39.4410962Z",
       "updated_at": "2026-08-14T20:11:39.4410962Z"
+    },
+    {
+      "id": "src-a1ed1a72312f7ff5",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12176618/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12176618/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — July 14, 2025",
+      "date": "2025-07-14",
+      "file_type": "PDF",
+      "size_bytes": 176793,
+      "checksum_sha256": "dbef4ea0b679e6c7aa93e32bbd0b653c95e273f7533d286a276871fcfe388f70",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12176618/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on July 14, 2025, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 176793 bytes (172.65 KiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-a1ed1a72312f7ff5.pdf",
+      "discovered_at": "2026-09-05T20:40:24.3870608Z",
+      "updated_at": "2026-09-05T20:50:38.1812549Z"
     },
     {
       "id": "src-a1f621d5eb91c420",
@@ -207048,7 +207844,7 @@
     },
     {
       "id": "src-a68433a143520e5a",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/south-yale-blvd/Concept%20Plan%20-%20Segment%203.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -207082,16 +207878,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Same South Yale Segment 3 Concept Plan as canonical record src-e684be015735bf1f, already archived and published on Roadway Projects Studies."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "duplicate official-file record reconciled to archived candidate src-e684be015735bf1f",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-08-04T14:16:02.6294946Z",
-      "updated_at": "2026-08-04T14:16:02.6294946Z"
+      "updated_at": "2026-09-05T20:03:02.5322262Z"
     },
     {
       "id": "src-a696a75010d0a5e5",
@@ -211874,6 +212671,53 @@
       "updated_at": "2026-08-25T01:44:19.4778275Z"
     },
     {
+      "id": "src-aaaf150b8e3f5c5c",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054036/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054036/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — September 9, 2024",
+      "date": "2024-09-09",
+      "file_type": "PDF",
+      "size_bytes": 1469980,
+      "checksum_sha256": "98b511cafda65d9e09bfff4d9fb9893f08acc62482aa9439af8f0aa8b55cdf7b",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12054036/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on September 9, 2024, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 1469980 bytes (1.40 MiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-aaaf150b8e3f5c5c.pdf",
+      "discovered_at": "2026-09-05T20:41:05.073984Z",
+      "updated_at": "2026-09-05T20:49:38.321568Z"
+    },
+    {
       "id": "src-aab5517438784db7",
       "status": "requires human review",
       "source_url": null,
@@ -213638,9 +214482,9 @@
     },
     {
       "id": "src-ac71aa30f083f241",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/projects/neighborhood-projects/neighborhood-projects/resolveuid/0fe0465ad3449630da1fb98b3f8f225c",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/projects/neighborhood-projects/south-yale-complete-street-master-plan",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -213649,23 +214493,26 @@
       "title": "South Yale Complete Streets Master Plan",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 129918,
+      "checksum_sha256": "f5d737fa50095611ecced2389f24807ba4f542624cb5242e967e17700f6072be",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Downloaded exact size: 129918 bytes (126.87 KiB); SHA-256 recorded.",
+        "Exact metadata and relevance remain pending source review.",
+        "Resolved opaque source link to authoritative file URL: https://www.cabq.gov/council/projects/neighborhood-projects/south-yale-complete-street-master-plan",
+        "Resolved City project page is already represented by canonical record src-63af4f443dc4a4b3 on Roadway Projects Studies."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "duplicate official project-page record reconciled to canonical candidate src-63af4f443dc4a4b3",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-ac71aa30f083f241.bin",
       "discovered_at": "2026-08-04T12:37:50.1701314Z",
-      "updated_at": "2026-08-04T12:37:50.1701314Z",
+      "updated_at": "2026-09-05T20:02:56.3457163Z",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/neighborhood-projects"
       ],
@@ -217949,6 +218796,53 @@
       "local_path": null,
       "discovered_at": "2026-08-04T14:45:05.5745579Z",
       "updated_at": "2026-08-04T14:45:05.5745579Z"
+    },
+    {
+      "id": "src-af73b939f90e5f60",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12197826/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12197826/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — September 8, 2025",
+      "date": "2025-09-08",
+      "file_type": "PDF",
+      "size_bytes": 233591,
+      "checksum_sha256": "81e643ecb0b62a193cb334822858de5564e2a813ab4ec935677f9742d3ec7c5d",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12197826/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on September 8, 2025, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 233591 bytes (228.12 KiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-af73b939f90e5f60.pdf",
+      "discovered_at": "2026-09-05T20:40:19.7602753Z",
+      "updated_at": "2026-09-05T20:50:42.4085261Z"
     },
     {
       "id": "src-af925f159e470295",
@@ -228385,6 +229279,53 @@
       "updated_at": "2026-08-14T20:11:38.631853Z"
     },
     {
+      "id": "src-b941791e08f877d3",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12281559/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12281559/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — June 8, 2026",
+      "date": "2026-06-08",
+      "file_type": "PDF",
+      "size_bytes": 298808,
+      "checksum_sha256": "eb120d9e8e5c4ee0ff18ae2579137b36da1e91cab3f7fc4df05d01d4fcc7ddb4",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12281559/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on June 8, 2026, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 298808 bytes (291.80 KiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-b941791e08f877d3.pdf",
+      "discovered_at": "2026-09-05T20:39:46.5046402Z",
+      "updated_at": "2026-09-05T20:51:36.595009Z"
+    },
+    {
       "id": "src-b94bb22557b167e3",
       "status": "pending review",
       "source_url": "https://www.mrcog-nm.gov/DocumentCenter/View/6164/R-23-01-MRRTPO-Title-VI-Resolution_Signed",
@@ -231815,6 +232756,53 @@
       "cited_predecessors": [],
       "cited_successors": [],
       "provenance_status": "authoritative government source recorded"
+    },
+    {
+      "id": "src-bc5e37c59677ecd4",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054025/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054025/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — March 11, 2024",
+      "date": "2024-03-11",
+      "file_type": "PDF",
+      "size_bytes": 1980424,
+      "checksum_sha256": "0a798e64aded29821368391ee02d4653dd34e2d9d625fcfa597ee9148f7b66c3",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12054025/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on March 11, 2024, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 1980424 bytes (1.89 MiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-bc5e37c59677ecd4.pdf",
+      "discovered_at": "2026-09-05T20:41:24.0959415Z",
+      "updated_at": "2026-09-05T20:49:03.4508812Z"
     },
     {
       "id": "src-bc66b8e82ed23dbb",
@@ -240295,7 +241283,7 @@
     },
     {
       "id": "src-c3150668e8c8698f",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/south-yale-blvd/Concept%20Plan%20-%20Segment%202%20-w%20CC%20Driveway%20Option.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -240329,16 +241317,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Same South Yale Segment 2 Concept Plan as canonical record src-40b50e7c6063ba63, already archived and published on Roadway Projects Studies."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "duplicate official-file record reconciled to archived candidate src-40b50e7c6063ba63",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-08-04T14:16:02.6234945Z",
-      "updated_at": "2026-08-04T14:16:02.6234945Z"
+      "updated_at": "2026-09-05T20:03:08.6229251Z"
     },
     {
       "id": "src-c31ac8274a898d24",
@@ -267356,7 +268345,7 @@
     },
     {
       "id": "src-d9a1ce62198ada38",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/south-yale-blvd/Design%20Strategies.pdf/view",
       "direct_file_url": null,
       "r2_url": null,
@@ -267390,16 +268379,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "The design-strategies poster is supporting meeting material already covered by canonical South Yale Complete Street Master Plan record src-63af4f443dc4a4b3; it does not warrant a separate searchable entry."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "supporting poster reconciled to canonical project record src-63af4f443dc4a4b3",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-08-04T14:16:02.6325004Z",
-      "updated_at": "2026-08-04T14:16:02.6325004Z"
+      "updated_at": "2026-09-05T20:03:15.1829828Z"
     },
     {
       "id": "src-d9a21f26465c95f9",
@@ -267722,6 +268712,53 @@
       "updated_at": "2026-08-04T14:16:04.888901Z"
     },
     {
+      "id": "src-da0493dea81dabb6",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12162996/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12162996/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — March 10, 2025",
+      "date": "2025-03-10",
+      "file_type": "PDF",
+      "size_bytes": 5967996,
+      "checksum_sha256": "0a5fa5b44afc8c47c4bf1197edc7f3460bbbd50094d04eb9cc5ef8fa73c4f526",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12162996/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on March 10, 2025, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 5967996 bytes (5.69 MiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-da0493dea81dabb6.pdf",
+      "discovered_at": "2026-09-05T20:40:37.6471901Z",
+      "updated_at": "2026-09-05T20:50:15.0947658Z"
+    },
+    {
       "id": "src-da0c47c7c8e88a54",
       "status": "excluded",
       "source_url": "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee-agendas-minutes/resolveuid/a85833d67e839fe8ac6dc36f990dcdf8",
@@ -267814,6 +268851,53 @@
       "local_path": null,
       "discovered_at": "2026-08-14T23:33:00.4815426Z",
       "updated_at": "2026-08-14T23:33:00.4815426Z"
+    },
+    {
+      "id": "src-da125a4481a61b45",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054032/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054032/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — June 10, 2024",
+      "date": "2024-06-10",
+      "file_type": "PDF",
+      "size_bytes": 1682204,
+      "checksum_sha256": "06ab9847a88f819e792740fcf4cbb26a9ea4c688140ee42c97a8c8bbaf4a245a",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12054032/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on June 10, 2024, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 1682204 bytes (1.60 MiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-da125a4481a61b45.pdf",
+      "discovered_at": "2026-09-05T20:41:09.8694261Z",
+      "updated_at": "2026-09-05T20:49:32.8242304Z"
     },
     {
       "id": "src-da1bcd4a91ed7921",
@@ -275271,19 +276355,19 @@
     },
     {
       "id": "src-e09a96c519c110ed",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/parksandrecreation/documents/montessa-park-open-space-locations.pdf",
       "direct_file_url": "https://www.cabq.gov/parksandrecreation/documents/montessa-park-open-space-locations.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-montessa-park-open-space-locations-map-2018.pdf",
+      "r2_key": "public-works/parks-recreation/cabq-montessa-park-open-space-locations-map-2018.pdf",
+      "r2_etag": "9e50142ea41551be0f7505866b8239bd",
+      "r2_last_modified": "2026-09-05T15:19:24-06:00",
       "agency": "City of Albuquerque",
-      "title": "Montessa Park",
-      "date": null,
+      "title": "Montessa Park Open Space Locations Map",
+      "date": "2018",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 416655,
+      "checksum_sha256": "854bd5b87128230b65b15f1989827e04f1b2408977ec77e5add25ea1b14324fc",
       "parent_url": "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee/resolveuid/791feeb2f53374bd63675ac2f65a39cc",
       "referring_urls": [
         "https://www.cabq.gov/parksandrecreation/open-space/facilities-map",
@@ -275300,22 +276384,24 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/public-works/parks-recreation.md",
+      "description": "Maps Montessa Park Open Space and nearby facilities, including the dog park, shooting range, off-road vehicle area, disc-golf course, speedway, administrative office, access roads, Tijeras Arroyo, and major public Open Space.",
+      "description_word_count": 31,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "GARTC-linked City map-library record; retained for facility orientation, including the map’s explicit off-road-vehicle designation."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/public-works/parks-recreation.md",
+      "implementation_locations": [
+        "content/public-works/parks-recreation.md",
+        "content/maps-data/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: public R2 download is byte-identical to the reviewed local source; authoritative provenance is evaluated separately",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-e09a96c519c110ed.pdf",
       "discovered_at": "2026-08-04T14:16:00.4643134Z",
-      "updated_at": "2026-08-04T14:16:00.4643134Z"
+      "updated_at": "2026-09-05T21:29:08.1356043Z"
     },
     {
       "id": "src-e0b34792776c8a91",
@@ -278518,6 +279604,53 @@
       "local_path": "research/staging/queue/src-e39307b93c5db8b6.pdf",
       "discovered_at": "2026-08-04T14:15:58.8216375Z",
       "updated_at": "2026-08-30T04:09:26.6280841Z"
+    },
+    {
+      "id": "src-e39a28d013f802ac",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054041/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054041/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — November 18, 2024",
+      "date": "2024-11-18",
+      "file_type": "PDF",
+      "size_bytes": 622417,
+      "checksum_sha256": "66a37a968e9a0655c64062db8486741b38b084a5f86ba5d0c07a5e1f22857d5b",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12054041/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on November 18, 2024, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 622417 bytes (607.83 KiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-e39a28d013f802ac.pdf",
+      "discovered_at": "2026-09-05T20:40:59.6002193Z",
+      "updated_at": "2026-09-05T20:49:43.2996194Z"
     },
     {
       "id": "src-e39b856b35c2c848",
@@ -285338,19 +286471,19 @@
     },
     {
       "id": "src-e93a6fe1808a9257",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/parksandrecreation/documents/osd-foothills-brochure-2018-foothills-side.pdf",
       "direct_file_url": "https://www.cabq.gov/parksandrecreation/documents/osd-foothills-brochure-2018-foothills-side.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-foothills-open-space-trail-map-2018.pdf",
+      "r2_key": "public-works/parks-recreation/cabq-foothills-open-space-trail-map-2018.pdf",
+      "r2_etag": "e2d2cc44886099624340fa9f9157875a",
+      "r2_last_modified": "2026-09-05T15:19:37-06:00",
       "agency": "City of Albuquerque",
-      "title": "Foothills",
-      "date": null,
+      "title": "Foothills Open Space Trail Map",
+      "date": "2018",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 3988755,
+      "checksum_sha256": "3fe80a76dc38e892059429c4acda9017b288b08ddb53904ff8fc54010e3b2ea8",
       "parent_url": "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee/resolveuid/791feeb2f53374bd63675ac2f65a39cc",
       "referring_urls": [
         "https://www.cabq.gov/parksandrecreation/open-space/facilities-map",
@@ -285367,22 +286500,25 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/public-works/parks-recreation.md",
+      "description": "Provides a 2018 systemwide Foothills Open Space trail reference, locating official trails, paved multi-use connections, trailheads, parking, facilities, surrounding streets, City lands, Forest Service lands, and Wilderness areas where bicycles are prohibited.",
+      "description_word_count": 32,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "GARTC-linked City map-library record; retained as the newer systemwide overview, distinct from the 2006 overview already published.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/public-works/parks-recreation.md",
+      "implementation_locations": [
+        "content/public-works/parks-recreation.md",
+        "content/maps-data/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: public R2 download is byte-identical to the reviewed local source; authoritative provenance is evaluated separately",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-e93a6fe1808a9257.pdf",
       "discovered_at": "2026-08-04T14:16:00.4843233Z",
-      "updated_at": "2026-08-04T14:16:00.4843233Z"
+      "updated_at": "2026-09-05T21:29:15.3364842Z"
     },
     {
       "id": "src-e93f7c4800314c46",
@@ -288679,19 +289815,19 @@
     },
     {
       "id": "src-eb7faaebd60cf26b",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/parksandrecreation/documents/foothills-working-menaul.pdf",
       "direct_file_url": "https://www.cabq.gov/parksandrecreation/documents/foothills-working-menaul.pdf",
-      "r2_url": null,
-      "r2_key": null,
+      "r2_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-foothills-trail-map-menaul-2010.pdf",
+      "r2_key": "public-works/parks-recreation/cabq-foothills-trail-map-menaul-2010.pdf",
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Menaul",
-      "date": null,
+      "title": "Foothills Trail Map: Menaul",
+      "date": "revised 2010-04",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 1332102,
+      "checksum_sha256": "9ab5ea41ace6589f5631d943d77cc3ddabe18510c4dccf38c567889ebc3d4e46",
       "parent_url": "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee/resolveuid/791feeb2f53374bd63675ac2f65a39cc",
       "referring_urls": [
         "https://www.cabq.gov/parksandrecreation/open-space/facilities-map",
@@ -288708,22 +289844,25 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/public-works/parks-recreation.md",
+      "description": "Maps the Menaul Boulevard foothills access area, including numbered trails and mileage, paths, parking, picnic and restroom facilities, nearby streets, City Open Space, Forest Service lands, and Wilderness bicycle restrictions.",
+      "description_word_count": 30,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "GARTC-linked City map-library record; retained as a specific Menaul foothills access map.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/public-works/parks-recreation.md",
+      "implementation_locations": [
+        "content/public-works/parks-recreation.md",
+        "content/maps-data/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: public R2 download is byte-identical to the reviewed local source; authoritative provenance is evaluated separately",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-eb7faaebd60cf26b.pdf",
       "discovered_at": "2026-08-04T14:16:00.408639Z",
-      "updated_at": "2026-08-04T14:16:00.408639Z"
+      "updated_at": "2026-09-05T21:29:22.5260136Z"
     },
     {
       "id": "src-eb95d9154e109a52",
@@ -290588,6 +291727,53 @@
       "local_path": null,
       "discovered_at": "2026-08-14T20:11:40.3198599Z",
       "updated_at": "2026-08-14T20:11:40.3198599Z"
+    },
+    {
+      "id": "src-ed7ea4c9f3e76369",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12220940/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12220940/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — December 8, 2025",
+      "date": "2025-12-08",
+      "file_type": "PDF",
+      "size_bytes": 241743,
+      "checksum_sha256": "fa576bfcfa004068ee49fe65b5b2157a3621b22edb35d220b223c2d0b3f9b119",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12220940/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on December 8, 2025, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 241743 bytes (236.08 KiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-ed7ea4c9f3e76369.pdf",
+      "discovered_at": "2026-09-05T20:40:10.3382361Z",
+      "updated_at": "2026-09-05T20:51:04.1532674Z"
     },
     {
       "id": "src-ed8aff10c8d03211",
@@ -303331,19 +304517,19 @@
     },
     {
       "id": "src-f9051c697fcfef66",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/parksandrecreation/documents/golden-update_2018.pdf",
       "direct_file_url": "https://www.cabq.gov/parksandrecreation/documents/golden-update_2018.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-golden-open-space-trail-map-2018.pdf",
+      "r2_key": "public-works/parks-recreation/cabq-golden-open-space-trail-map-2018.pdf",
+      "r2_etag": "d71a665b396954740c3a7343962f0a54",
+      "r2_last_modified": "2026-09-05T15:20:06-06:00",
       "agency": "City of Albuquerque",
-      "title": "Golden Open Space",
-      "date": null,
+      "title": "Golden Open Space Trail Map",
+      "date": "revised 2018-08",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 1922844,
+      "checksum_sha256": "5347a92f64c90514b895ef2091b712813ecc870a33df7efc709b406886ec2543",
       "parent_url": "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee/resolveuid/791feeb2f53374bd63675ac2f65a39cc",
       "referring_urls": [
         "https://www.cabq.gov/parksandrecreation/open-space/facilities-map",
@@ -303360,22 +304546,25 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/public-works/parks-recreation.md",
+      "description": "Maps Golden Open Space trails and route distances, the scenic overlook, parking, road access, contours, City Open Space boundaries, Bureau of Land Management land, private property, and nearby state land without public access.",
+      "description_word_count": 33,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "GARTC-linked City map-library record; retained as a distinct East Mountain trail map.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/public-works/parks-recreation.md",
+      "implementation_locations": [
+        "content/public-works/parks-recreation.md",
+        "content/maps-data/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: public R2 download is byte-identical to the reviewed local source; authoritative provenance is evaluated separately",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-f9051c697fcfef66.pdf",
       "discovered_at": "2026-08-04T14:16:00.43567Z",
-      "updated_at": "2026-08-04T14:16:00.43567Z"
+      "updated_at": "2026-09-05T21:29:31.4955917Z"
     },
     {
       "id": "src-f9076752a7601d0f",
@@ -306991,6 +308180,53 @@
       "updated_at": "2026-08-26T16:24:48.2000983Z"
     },
     {
+      "id": "src-fbc771c45af4ff3d",
+      "status": "validated",
+      "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054020/",
+      "direct_file_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054020/",
+      "r2_url": null,
+      "r2_key": null,
+      "r2_etag": null,
+      "r2_last_modified": null,
+      "agency": "City of Albuquerque",
+      "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — January 8, 2024",
+      "date": "2024-01-08",
+      "file_type": "PDF",
+      "size_bytes": 2980311,
+      "checksum_sha256": "127a6bdbee9df0d96195c34d968222c955ae368a3264219b9baa376093a351f8",
+      "parent_url": "https://onbase.cabq.gov/publicaccess/",
+      "referring_urls": [
+        "https://onbase.cabq.gov/publicaccess/"
+      ],
+      "discovery_path": [
+        "https://onbase.cabq.gov/publicaccess/",
+        "https://onbase.cabq.gov/publicaccess/api/Document/12054020/"
+      ],
+      "discovery_method": "OnBase public Boards and Commissions MINUTES query",
+      "crawl_depth": 1,
+      "cited_predecessors": [],
+      "cited_successors": [],
+      "provenance_status": "source URL recorded",
+      "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+      "description": "Official City record of the Greater Albuquerque Active Transportation Committee meeting held on January 8, 2024, retained in the minutes-only history under Bicycling Trail Advisory and Accessibility.",
+      "description_word_count": 27,
+      "processing_notes": [
+        "Added through OnBase public Boards and Commissions MINUTES query from the recorded authoritative source graph.",
+        "Downloaded exact size: 2980311 bytes (2.84 MiB); SHA-256 recorded.",
+        "Added to the compact 2024-2026 GAATC minutes history; agendas and cancellation notices deliberately excluded."
+      ],
+      "implementation_location": "content/transportation/bicycling/_index.md",
+      "implementation_locations": [
+        "content/transportation/bicycling/_index.md"
+      ],
+      "cross_listing_approved": false,
+      "validation_status": "passed: authoritative source HTTP 200",
+      "exclusion_reason": null,
+      "local_path": "research/staging/queue/src-fbc771c45af4ff3d.pdf",
+      "discovered_at": "2026-09-05T20:41:34.0562344Z",
+      "updated_at": "2026-09-05T20:48:45.0989598Z"
+    },
+    {
       "id": "src-fbc789262f6461d6",
       "status": "duplicate",
       "source_url": null,
@@ -310097,19 +311333,19 @@
     },
     {
       "id": "src-fe85bd5f4525e206",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://www.cabq.gov/parksandrecreation/documents/bocanegracanyonmap.pdf",
       "direct_file_url": "https://www.cabq.gov/parksandrecreation/documents/bocanegracanyonmap.pdf",
-      "r2_url": null,
-      "r2_key": null,
+      "r2_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-boca-negra-canyon-trail-map-2003.pdf",
+      "r2_key": "public-works/parks-recreation/cabq-boca-negra-canyon-trail-map-2003.pdf",
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Boca Negra Canyon",
-      "date": null,
+      "title": "Boca Negra Canyon Trail Map",
+      "date": "2003",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 42911,
+      "checksum_sha256": "a2080f6b01b08c0445363e59451f6d2a3c762aa3092c01566143abfffb180e8e",
       "parent_url": "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee/resolveuid/791feeb2f53374bd63675ac2f65a39cc",
       "referring_urls": [
         "https://www.cabq.gov/parksandrecreation/open-space/facilities-map",
@@ -310126,22 +311362,25 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City source page and byte-identical official file recorded",
+      "proposed_canonical_page": "content/public-works/parks-recreation.md",
+      "description": "Provides a simple historic Boca Negra Canyon orientation map, locating the entrance, parking and overflow parking, restrooms, picnic area, pedestrian loop, Mesa Point, Macaw, Cliff Base, and Upper Canyon trails near Unser Boulevard.",
+      "description_word_count": 33,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "GARTC-linked City map-library record; visually reviewed as a distinct 2003 historic orientation map.",
+        "Original source file uploaded without modification; public R2 download matched exact size and SHA-256."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "implementation_location": "content/public-works/parks-recreation.md",
+      "implementation_locations": [
+        "content/public-works/parks-recreation.md",
+        "content/maps-data/maps.md"
+      ],
+      "cross_listing_approved": true,
+      "validation_status": "passed: public R2 download is byte-identical to the reviewed local source; authoritative provenance is evaluated separately",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-fe85bd5f4525e206.pdf",
       "discovered_at": "2026-08-04T14:16:00.3809965Z",
-      "updated_at": "2026-08-04T14:16:00.3809965Z"
+      "updated_at": "2026-09-05T21:29:45.9689323Z"
     },
     {
       "id": "src-fe8b7c499dc7e364",

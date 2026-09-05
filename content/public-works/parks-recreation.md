@@ -183,3 +183,37 @@ Parks and recreation facilities and programs.
   Maps the Open Space Visitor Center property, parking, river loop, Bosque canopy loop, agricultural fields, viewing area, nearby drains, and trail connections toward Montaño and Paseo del Norte.
 
   [Official City Open Space map library](https://www.cabq.gov/parksandrecreation/open-space/facilities-map) · [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/OSVCBosqueTrails.pdf)
+
+### GARTC-Linked Open Space Trailhead Maps
+
+These City field maps were linked from the Greater Albuquerque Recreational Trails Committee (GARTC) resource page. They complement, rather than replace, the systemwide and current [Open Space map library](https://www.cabq.gov/parksandrecreation/open-space/facilities-map).
+
+- [Foothills Trail Map: Indian School (Revised 2005)](https://files.abqinfo.com/public-works/parks-recreation/cabq-foothills-trail-map-indian-school-2005.pdf) — Indian School Road access, trails, mileage, facilities, City and Forest Service lands, and bicycle restrictions. [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/copy_of_indianschool.pdf)
+
+- [Foothills Trail Map: Piedra Lisa (Revised 2005)](https://files.abqinfo.com/public-works/parks-recreation/cabq-foothills-trail-map-piedra-lisa-2005.pdf) — Piedra Lisa access, loop trail, mileage, facilities, and Wilderness bicycle restrictions. [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/piedralisa.pdf)
+
+- [John A. Milne/Gutierrez Canyon Open Space Trail Map (Revised 2021)](https://files.abqinfo.com/public-works/parks-recreation/cabq-john-a-milne-gutierrez-canyon-open-space-trail-map-2021.pdf) — Trails, mileage, parking, contours, boundaries, and NM 14 access near Cedar Crest. [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/milne-gutierrez_2018-update.pdf)
+
+- [Foothills Trail Map: Embudito (Revised 2005)](https://files.abqinfo.com/public-works/parks-recreation/cabq-foothills-trail-map-embudito-2005.pdf) — Embudito trailhead, numbered trails, facilities, nearby streets, and the Wilderness boundary. [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/embudito.pdf)
+
+- [Placitas Open Space Trail Map (Revised 2019)](https://files.abqinfo.com/public-works/parks-recreation/cabq-placitas-open-space-trail-map-2019.pdf) — Trails, route distances, gate access, roads, Las Huertas Creek, contours, and Albuquerque-area access directions. [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/placitas-update-2019.pdf)
+
+- [Foothills Trail Map: Copper (Revised 2010)](https://files.abqinfo.com/public-works/parks-recreation/cabq-foothills-trail-map-copper-2010.pdf) — Copper Avenue access, bike-path connections, trails, facilities, and bicycle restrictions. [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/foothills-working-copper.pdf)
+
+- [Rio Grande Valley State Park Map (Revised 2017)](https://files.abqinfo.com/public-works/parks-recreation/cabq-rio-grande-valley-state-park-map-2017.pdf) — Bosque trails, access points, parking, picnic areas, ADA features, and restricted areas. [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/rgvsp-map-split-11x17_2017-update.pdf)
+
+- [San Antonito Open Space Trail Map (2023)](https://files.abqinfo.com/public-works/parks-recreation/cabq-san-antonito-open-space-trail-map-2023.pdf) — Official trails, access points, roads, private property, and contour detail. [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/San%20Antonito%20-%20hillshade.pdf)
+
+- [Elena Gallegos Open Space Trail Map (Revised 2020)](https://files.abqinfo.com/public-works/parks-recreation/cabq-elena-gallegos-open-space-trail-map-2020.pdf) — Trails, hiker-only and multi-use segments, facilities, land ownership, and bicycle restrictions. [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/elena-for-nature-trail-guide.pdf)
+
+- [Piedra Lisa Open Space Loop and Canyon Trails Map (Revised 2011)](https://files.abqinfo.com/public-works/parks-recreation/cabq-piedra-lisa-open-space-loop-canyon-trails-map-2011.pdf) — Detailed aerial trail map with a warning that the steep canyon route is unsuitable for bicycles or horses. [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/Piedra_lisa_standalone.pdf)
+
+- [Montessa Park Open Space Locations Map (2018)](https://files.abqinfo.com/public-works/parks-recreation/cabq-montessa-park-open-space-locations-map-2018.pdf) — Recreation, shooting, off-road, disc-golf, speedway, office, road, and arroyo facilities. [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/montessa-park-open-space-locations.pdf)
+
+- [Foothills Open Space Trail Map (2018)](https://files.abqinfo.com/public-works/parks-recreation/cabq-foothills-open-space-trail-map-2018.pdf) — Systemwide trails, connections, trailheads, facilities, land ownership, and bicycle restrictions. [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/osd-foothills-brochure-2018-foothills-side.pdf)
+
+- [Foothills Trail Map: Menaul (Revised 2010)](https://files.abqinfo.com/public-works/parks-recreation/cabq-foothills-trail-map-menaul-2010.pdf) — Menaul Boulevard access, numbered trails, facilities, nearby streets, and bicycle restrictions. [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/foothills-working-menaul.pdf)
+
+- [Golden Open Space Trail Map (Revised 2018)](https://files.abqinfo.com/public-works/parks-recreation/cabq-golden-open-space-trail-map-2018.pdf) — Trails, scenic overlook, parking, road access, contours, and land ownership. [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/golden-update_2018.pdf)
+
+- [Boca Negra Canyon Trail Map (2003)](https://files.abqinfo.com/public-works/parks-recreation/cabq-boca-negra-canyon-trail-map-2003.pdf) — Historic orientation map for parking, facilities, and the Boca Negra Canyon trail network. [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/bocanegracanyonmap.pdf)
