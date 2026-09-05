@@ -20,6 +20,12 @@ Current zoning tools and a preserved history of Albuquerque's Integrated Develop
 
   The City's public map library includes the Zone Atlas, address atlas, council districts, land use, neighborhood associations, and printable reference maps.
 
+## Site-Specific Zoning Enactments
+
+- [Menaul MRA Zoning Map Amendment (O-2025-033 archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-menaul-mra-zoning-map-amendment-o-2025-033.pdf)
+
+  Enacts MX-M zoning for three NR-LM sites totaling about 19 acres and 13 NR-C sites totaling about 10.17 acres within the Menaul Metropolitan Redevelopment Area. [Official O-25-100 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=7733454&GUID=142361E4-4618-4419-B62F-1B4061437040&Options=ID%7CText%7C&Search=O-25-100) · [MRA plan placement](/development-land-use/redevelopment-plans/#current-menaul-and-university-records)
+
 ## Historical Effective IDO Editions
 
 - [Integrated Development Ordinance, Effective April 20, 2026](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-ido-effective-2026-04-20.pdf)

@@ -1,7 +1,7 @@
 {
-  "recorded_at": "2026-09-05T00:27:50.7228757Z",
-  "completed_item_range": "Verified the merged EC-26-175 production correction and removed only the unreferenced 9,388,020-byte R2 object development-land-use/redevelopment-plans/cabq-2025-downtown-albuquerque-parking-study.pdf after confirming the replacement archive was live.",
-  "total_candidates": 6945,
+  "recorded_at": "2026-09-05T04:45:00.5621254Z",
+  "completed_item_range": "Legistar priority queue top 10: five R2 archives, two verified oversized official attachments, and three superseded drafts/final copies.",
+  "total_candidates": 6955,
   "counts_by_status": {
     "pending review": 3048,
     "approved for addition": 0,
@@ -11,15 +11,15 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 182,
-    "validated": 1087,
+    "validated": 1094,
     "excluded": 1116,
     "duplicate": 1355,
-    "superseded": 115,
+    "superseded": 118,
     "blocked": 0,
     "requires human review": 35
   },
   "remaining_nonterminal": 3237,
   "next_pending_id": "src-001ba8b96bdb553d",
   "blockers": [],
-  "resume_command": "python scripts/project/Build-LegistarPriorityQueue.py --input project-state/discovery/cabq-legistar-historical-2020-2026.json --output project-state/discovery/cabq-legistar-priority-80.json --limit 80"
+  "resume_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/project/Test-Candidate.ps1 -UpdateInventory"
 }
