@@ -6,6 +6,10 @@ Public works capital improvement projects.
 
 ## Current Project Data
 
+- [2026 Infrastructure Capital Improvements Plan Priorities (R-2026-024 archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-icip-priorities-resolution-r-2026-024.pdf)
+
+  The enacted City Council resolution establishes the 2026 policy priorities that guide capital investment across public works, transportation, housing, public safety, facilities, technology, redevelopment, and resilient infrastructure. [Official R-26-9 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=7948483&GUID=F53FB555-BF07-4310-8ADA-E596658B312D&Options=ID%7CText%7C&Search=R-26-9) · [Capital Spending placement](/city-data/capital-spending/#current-capital-program)
+
 - [Central Atrisco Fiberoptic Expansion Project](https://www.bernco.gov/public-works/blog/2024/07/15/central-atrisco-fiberoptic-expansion-project)
 
   Preserves the County’s recent fiber installation along Atrisco Vista Boulevard, Comfort Way, and Central Avenue, funded through federal Economic Development Administration and American Rescue Plan sources and completed in July 2025.

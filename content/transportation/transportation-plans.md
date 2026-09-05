@@ -373,6 +373,10 @@ These records preserve the adopted two-year program and each FHWA/FTA-approved r
 
 ### Aviation Planning
 
+- [Albuquerque International Sunport Sustainable Airport Master Plan (2020 official PDF)](https://cabq.legistar.com/View.ashx?M=F&ID=8032966&GUID=7FA83BFE-7EB3-408C-980D-2A0ED46A6001)
+
+  The adopted airport master plan addresses aviation forecasts, airfield and terminal development, landside access, facilities, environmental review, land-use compatibility, funding, and phased capital improvements. The 267.05 MiB official file exceeds ABQInfo's archival threshold and is linked to the City source. [Official R-19-168 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=3980533&GUID=B64634BD-18CC-4443-A8D2-6F1A62CBE438&Options=ID%7CText%7C&Search=R-19-168)
+
 - [Double Eagle II Airport Master Plan (2019; Amended 2024 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-double-eagle-ii-airport-master-plan-2019-amended-2024.pdf)
 
   Guides long-term development of Double Eagle II Airport through aviation forecasts, runway and taxiway requirements, compatible land use, airside and landside alternatives, environmental review, recommended facilities, funding strategies, and a phased capital improvement program.

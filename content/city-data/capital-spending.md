@@ -6,6 +6,10 @@ Capital improvement spending and projects.
 
 ## Current Capital Program
 
+- [2026 Infrastructure Capital Improvements Plan Priorities (R-2026-024 archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-icip-priorities-resolution-r-2026-024.pdf)
+
+  The enacted City Council resolution frames 2026 ICIP priorities across housing, public safety, transportation, facilities, technology, redevelopment, resilience, and other public infrastructure. [Official R-26-9 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=7948483&GUID=F53FB555-BF07-4310-8ADA-E596658B312D&Options=ID%7CText%7C&Search=R-26-9) · [Capital Projects placement](/public-works/capital-projects/#current-project-data)
+
 - [2026 Infrastructure Capital Improvement Plan Project List (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-infrastructure-capital-improvement-plan-project-list-2026.pdf)
 
   Lists Albuquerque's 2026 Infrastructure Capital Improvement Plan projects and identifying numbers by department, covering transit, streets, drainage, parks, housing, public safety, facilities, technology, redevelopment, and other capital needs.

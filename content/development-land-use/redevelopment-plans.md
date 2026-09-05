@@ -22,6 +22,24 @@ Plans and historical records for designated Metropolitan Redevelopment Areas, wh
 
   [City parking-study page](https://www.cabq.gov/mra/downtown-forward-1/parking) · [Official EC-26-175 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=8065491&GUID=CE2C1126-1C00-4453-B7DB-8F8500BC86A2&Options=ID%7CText%7C&Search=EC-26-175)
 
+## Current Menaul and University Records
+
+- [Menaul Metropolitan Redevelopment Area Plan (2023 archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-menaul-metropolitan-redevelopment-area-plan-2023-legistar.pdf)
+
+  The adopted plan sets redevelopment goals, opportunity-area strategies, land-use and circulation actions, business and housing priorities, public investments, and implementation steps for the Menaul area north of I-40. [Official R-22-92 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=5979371&GUID=E3FEB725-66B6-460B-B7EE-F9D274BF128F&Options=ID%7CText%7C&Search=R-22-92)
+
+- [Menaul Redevelopment Study and Recommendations (2021 archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-menaul-redevelopment-study-2021-legistar.pdf)
+
+  Preserves the City Council draft adopted as policy in 2021, covering Menaul land use, zoning, property conditions, market analysis, community input, and redevelopment recommendations. It is the precursor to the adopted 2023 MRA plan. [Official R-21-207 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=5156934&GUID=357010E1-2F78-441A-9B2B-4CE02BEA6A31&Options=ID%7CText%7C&Search=R-21-207)
+
+- [University MRA Designation Report (2022 archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-university-mra-designation-report-2022-legistar.pdf)
+
+  Documents the existing conditions, boundary and eligibility findings, market conditions, community context, and redevelopment needs used to establish the University Metropolitan Redevelopment Area before its later plan. [Official R-22-38 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=5651360&GUID=F59AB30C-A5A2-4D90-A7CB-DF0988A8E35A&Options=ID%7CText%7C&Search=R-22-38)
+
+- [Menaul MRA Zoning Map Amendment (O-2025-033 archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-menaul-mra-zoning-map-amendment-o-2025-033.pdf)
+
+  Enacts MX-M zoning for approximately 29 acres in the Menaul MRA, implementing the plan's mixed-use and multifamily-development recommendation. [Official O-25-100 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=7733454&GUID=142361E4-4618-4419-B62F-1B4061437040&Options=ID%7CText%7C&Search=O-25-100) · [Zoning & IDO placement](/development-land-use/zoning-ido/#site-specific-zoning-enactments)
+
 ## Historical Capital Programming
 
 - [Metropolitan Redevelopment Fund Capital Plan, 2006–2010 (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-metropolitan-redevelopment-fund-capital-plan-2006-2010.pdf)
