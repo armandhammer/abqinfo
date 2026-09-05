@@ -82,7 +82,7 @@ Regional roadway operations, traffic analysis, incident management, and intellig
 
   Explains how to search the NMDOT Traffic Data Management System by location or map, review AADT histories and volume, classification, speed, and weigh-in-motion counts, and access hourly, weekly, and monthly reports.
 
-  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/ef481ba7-b515-44f2-a5da-af4770d88e44/User%20Info%20Sheet.pdf) · [Maps Cross-Listing](/maps/maps/#state-transportation-maps)
+  [Official NMDOT PDF](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/ef481ba7-b515-44f2-a5da-af4770d88e44/User%20Info%20Sheet.pdf) · [Maps Cross-Listing](/maps-data/#state-transportation-maps)
 
 - [NMDOT Permanent Traffic Counters](https://experience.arcgis.com/experience/66694d1804924256b564dfa747f497b2/page/Page/)
 
@@ -116,13 +116,13 @@ Regional roadway operations, traffic analysis, incident management, and intellig
 
   Tabulates Albuquerque metropolitan population, total daily vehicle-miles traveled, and per-capita travel from 1970 through 2024, providing the numerical record behind regional traffic trends and long-range comparisons.
 
-  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6376/AMPA-VMT-Historic-to-Current--Daily-and-Per-Capita-Information-2024-PDF?bidId=) · [Maps Cross-Listing](/maps/maps/#regional-traffic-volume-maps)
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6376/AMPA-VMT-Historic-to-Current--Daily-and-Per-Capita-Information-2024-PDF?bidId=) · [Maps Cross-Listing](/maps-data/#regional-traffic-volume-maps)
 
 - [Albuquerque River-Crossing Traffic Volumes, 1970–2024 (Archived PDF)](https://files.abqinfo.com/transportation/traffic-operations/mrmpo-river-crossing-volumes-1970-2024.pdf)
 
   Tracks average weekday traffic across Albuquerque-area Rio Grande bridges from 1970 through 2024, showing individual crossing volumes, combined totals, network changes, and the long-term distribution of cross-river travel.
 
-  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6377/River-Crossing-Volumes-Historic-to-Current-2024-PDF?bidId=) · [Maps Cross-Listing](/maps/maps/#regional-traffic-volume-maps)
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6377/River-Crossing-Volumes-Historic-to-Current--Daily-and-Per-Capita-Information-2024-PDF?bidId=) · [Maps Cross-Listing](/maps-data/#regional-traffic-volume-maps)
 
 - [Albuquerque Metropolitan Planning Area Summary Statistics (2024 Archived PDF)](https://files.abqinfo.com/transportation/traffic-operations/mrmpo-ampa-summary-statistics-2024.pdf)
 
@@ -134,7 +134,7 @@ Regional roadway operations, traffic analysis, incident management, and intellig
 
   Ranks the Albuquerque metropolitan area's 75 busiest intersections using 2024 approach volumes and preserves each location's earlier rankings and counts for comparison with traffic patterns from 2017 through 2023.
 
-  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6385/2024-Top-75-Busiest-Intersections-With-Past-Rankings-PDF?bidId=) · [Maps Cross-Listing](/maps/maps/#regional-traffic-volume-maps)
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6385/2024-Top-75-Busiest-Intersections-With-Past-Rankings-PDF?bidId=) · [Maps Cross-Listing](/maps-data/#regional-traffic-volume-maps)
 
 - [MRCOG Traffic Counts Viewer](https://mrmpo.maps.arcgis.com/apps/webappviewer/index.html?id=5e779402decd4a9584d9cdddf1cbe56b)
 

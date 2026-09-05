@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-05T15:32:29.7398776Z",
+  "generated_at": "2026-09-05T18:29:46.5386729Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,7 +18,7 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 3048,
+    "pending review": 3040,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 7,
@@ -26,14 +26,14 @@
     "description drafted": 0,
     "placement assigned": 0,
     "implemented": 182,
-    "validated": 1099,
-    "excluded": 1116,
-    "duplicate": 1355,
-    "superseded": 118,
+    "validated": 1101,
+    "excluded": 1118,
+    "duplicate": 1358,
+    "superseded": 119,
     "blocked": 0,
     "requires human review": 35
   },
-  "next_pending_id": "src-001ba8b96bdb553d",
+  "next_pending_id": "src-003fea9b67977cc0",
   "candidates": [
     {
       "id": "lin-01236d79d0623075",
@@ -13581,7 +13581,7 @@
     },
     {
       "id": "src-001ba8b96bdb553d",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/204c87d2-77e3-444c-a67b-480aaf9c69ea/NM-Motorcycle-Training-Program.pdf",
       "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/204c87d2-77e3-444c-a67b-480aaf9c69ea/NM-Motorcycle-Training-Program.pdf",
       "r2_url": null,
@@ -13592,8 +13592,8 @@
       "title": "NM Motorcycle Training Program Rules",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 11281,
+      "checksum_sha256": "3ef2da3209a43081be4558073a18859c134d6fbf88f0e740b4f34d935fbe1230",
       "parent_url": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/traffic-safety/motorcycle-safety/?programInfo=education",
       "referring_urls": [
         "https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/traffic-safety/motorcycle-safety/?programInfo=education"
@@ -13614,17 +13614,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review.",
-        "Captured from authoritative page https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/traffic-safety/motorcycle-safety/?programInfo=education; external host was not recursively crawled."
+        "Captured from authoritative page https://www.dot.nm.gov/planning-research-multimodal-and-safety/modal/traffic-safety/motorcycle-safety/?programInfo=education; external host was not recursively crawled.",
+        "Downloaded and parsed 2026-09-05: 18.20.10 NMAC applies statewide to motorcycle training courses and instructor requirements; excluded as out of scope."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "reviewed official NMDOT rule; excluded as statewide motorcycle-training administration unrelated to Albuquerque/Bernalillo County planning or projects",
+      "exclusion_reason": "Statewide 1999 motorcycle-training rule establishes course and instructor standards but contains no Albuquerque/Bernalillo County-specific project, policy, location, or material local impact.",
+      "local_path": "research/staging/queue/src-001ba8b96bdb553d.pdf",
       "discovered_at": "2026-08-14T23:32:59.9643794Z",
-      "updated_at": "2026-08-14T23:32:59.9643794Z"
+      "updated_at": "2026-09-05T15:39:57.483827Z"
     },
     {
       "id": "src-003742b401e0e19d",
@@ -14751,7 +14751,7 @@
     },
     {
       "id": "src-00f23ad71776ad61",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.riometro.org/DocumentCenter/View/251/NMRX-Grade-Crossing-Pedestrian-and-Bicyclist-Safety-Study-PDF",
       "direct_file_url": null,
       "r2_url": null,
@@ -14761,9 +14761,9 @@
       "agency": "MRCOG",
       "title": "NMRX Grade Crossing Pedestrian & Bicyclist Safety Study (PDF)",
       "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "file_type": "PDF",
+      "size_bytes": 2729774,
+      "checksum_sha256": "7c7ba91d6771cb121b1102a292d4ecff4138938221139451f416b2d6925e31ae",
       "parent_url": "https://www.riometro.org/381/Rio-Metro-Publications",
       "referring_urls": [
         "https://www.riometro.org/381/Rio-Metro-Publications"
@@ -14783,17 +14783,16 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review."
+        "Reviewed and reconciled 2026-09-05 to canonical validated record src-e342833d5b161931."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "reviewed official source; duplicate of canonical validated record src-e342833d5b161931",
+      "exclusion_reason": "The reviewed document is already preserved and published through canonical validated inventory record src-e342833d5b161931; duplicate discovery record retained for source-lineage coverage.",
+      "local_path": "research/staging/queue/src-00f23ad71776ad61.pdf",
       "discovered_at": "2026-08-14T23:32:59.6464118Z",
-      "updated_at": "2026-08-14T23:32:59.6464118Z"
+      "updated_at": "2026-09-05T15:43:58.803502Z"
     },
     {
       "id": "src-00f3d3a4cc811fca",
@@ -14973,7 +14972,7 @@
     },
     {
       "id": "src-0106f61e927ccf95",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.riometro.org/DocumentCenter/View/255/UNM-CNM-Sunport-Study-Alternative-Alignments-Identification-and-Assessment-PDF",
       "direct_file_url": null,
       "r2_url": null,
@@ -14983,9 +14982,9 @@
       "agency": "MRCOG",
       "title": "UNM/CNM/Sunport Study: Alternative Alignments Identification and Assessment (PDF)",
       "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "file_type": "PDF",
+      "size_bytes": 3199892,
+      "checksum_sha256": "d8ec6c65619ffaed8c18ad97c02a387a3a66b20a234042b2dca7285116f6755d",
       "parent_url": "https://www.riometro.org/381/Rio-Metro-Publications",
       "referring_urls": [
         "https://www.riometro.org/381/Rio-Metro-Publications"
@@ -15005,17 +15004,16 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review."
+        "Reviewed and reconciled 2026-09-05 to canonical validated record src-b1a9fa0d47f90574."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "reviewed official source; duplicate of canonical validated record src-b1a9fa0d47f90574",
+      "exclusion_reason": "The reviewed document is already preserved and published through canonical validated inventory record src-b1a9fa0d47f90574; duplicate discovery record retained for source-lineage coverage.",
+      "local_path": "research/staging/queue/src-0106f61e927ccf95.pdf",
       "discovered_at": "2026-08-14T23:32:59.4808029Z",
-      "updated_at": "2026-08-14T23:32:59.4808029Z"
+      "updated_at": "2026-09-05T15:44:02.097674Z"
     },
     {
       "id": "src-0114a0bd71baeb97",
@@ -28330,9 +28328,9 @@
     },
     {
       "id": "src-0c777e199a36d155",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://riometro.org/DocumentCenter/View/2470",
-      "direct_file_url": null,
+      "direct_file_url": "https://riometro.org/DocumentCenter/View/2470/RMRTD-Bus-Agency-Safety-Plan---Version-2---December-2021-PDF?bidId=",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -28340,9 +28338,9 @@
       "agency": "MRCOG",
       "title": "RMRTD Agency Safety Plan (PDF)",
       "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "file_type": "PDF",
+      "size_bytes": 720072,
+      "checksum_sha256": "d6b8f0064c03b590d7481d7ba481aece447e6abab413e5898f44e0c31ca5372e",
       "parent_url": "https://riometro.org/432/Safety-Resources",
       "referring_urls": [
         "https://riometro.org/432/Safety-Resources"
@@ -28366,18 +28364,16 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review.",
-        "Merged discovery provenance from normalized-URL duplicate src-70b6256a82d901be."
+        "Reviewed and reconciled 2026-09-05 to canonical validated record src-405a9389e84cc5a2."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "reviewed official source; duplicate of canonical validated record src-405a9389e84cc5a2",
+      "exclusion_reason": "The reviewed document is already preserved and published through canonical validated inventory record src-405a9389e84cc5a2; duplicate discovery record retained for source-lineage coverage.",
+      "local_path": "research/staging/queue/src-0c777e199a36d155.pdf",
       "discovered_at": "2026-08-14T23:33:00.0376628Z",
-      "updated_at": "2026-08-29T19:42:38.2366864Z"
+      "updated_at": "2026-09-05T15:44:07.5854582Z"
     },
     {
       "id": "src-0c7b921697a65f23",
@@ -46937,7 +46933,7 @@
     },
     {
       "id": "src-1c9c7fbbc9ccc8a8",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://documents.cabq.gov/planning/code-enforcement/CodeEnf-VacantBuildingReg-Aug2015.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/code-enforcement/CodeEnf-VacantBuildingReg-Aug2015.pdf",
       "r2_url": null,
@@ -46948,8 +46944,8 @@
       "title": "CodeEnf-VacantBuildingReg-Aug2015.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 60864,
+      "checksum_sha256": "60dbd7ec6709b0619f844daa98f40cf15e08b19e06a593522546c964c6c4f123",
       "parent_url": "https://documents.cabq.gov/planning/code-enforcement/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/code-enforcement/"
@@ -46969,17 +46965,16 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Reviewed 2026-09-05: one-year vacant-building registration application, revised August 2015; excluded as administrative form."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "reviewed City form; excluded as renewable administrative application",
+      "exclusion_reason": "A one-page vacant-building registration application with an annual renewal and fee; users should use the City’s current code-enforcement process rather than an archived 2015 form.",
+      "local_path": "research/staging/queue/src-1c9c7fbbc9ccc8a8.pdf",
       "discovered_at": "2026-08-04T14:45:05.8524945Z",
-      "updated_at": "2026-08-04T14:45:05.8524945Z"
+      "updated_at": "2026-09-05T18:25:25.3369349Z"
     },
     {
       "id": "src-1ca72137a5210168",
@@ -66376,20 +66371,20 @@
     },
     {
       "id": "src-2d17d01d04c78c38",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/code-enforcement/CodeEnf-CRPEmergShelterRegs-2017.PDF",
       "direct_file_url": "https://documents.cabq.gov/planning/code-enforcement/CodeEnf-CRPEmergShelterRegs-2017.PDF",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/projects/cabq-community-residential-emergency-shelter-regulations-2013.pdf",
+      "r2_key": "development-land-use/projects/cabq-community-residential-emergency-shelter-regulations-2013.pdf",
+      "r2_etag": "41e50e849e140320b283b5be817772fd",
+      "r2_last_modified": "2026-09-05T18:27:39Z",
       "agency": "City of Albuquerque",
-      "title": "CodeEnf-CRPEmergShelterRegs-2017.PDF",
-      "date": null,
+      "title": "Community Residential Program and Emergency Shelter Regulations",
+      "date": "2013-10-15",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://documents.cabq.gov/planning/code-enforcement/",
+      "size_bytes": 3406782,
+      "checksum_sha256": "2c92b69e963a28598b402f0efaef667c92b113949237fd52878d88ea090e5979",
+      "parent_url": "https://documents.cabq.gov/planning/code-enforcement/CodeEnf-CRPEmergShelterRegs-2017.PDF",
       "referring_urls": [
         "https://documents.cabq.gov/planning/code-enforcement/"
       ],
@@ -66403,22 +66398,25 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City code-enforcement document recorded",
+      "proposed_canonical_page": "content/development-land-use/projects.md",
+      "description": "This historical City code-enforcement packet explains the 2013 application and annual-review procedures for community residential programs and emergency shelters, including zoning-code definitions, spacing and density limits, licensing relationships, and review requirements.",
+      "description_word_count": 31,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Existing R2 object reconciled without overwrite: public download matched exact size and SHA-256.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Visually reviewed 2026-09-05: scanned 46-page packet; title and opening page identify Ordinance 41-1987 community residential-program and emergency-shelter application, annual-review procedures, and regulations, revised October 15, 2013."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/projects.md",
+      "implementation_locations": [
+        "content/development-land-use/projects.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-2d17d01d04c78c38.pdf",
       "discovered_at": "2026-08-04T14:45:06.3033996Z",
-      "updated_at": "2026-08-04T14:45:06.3033996Z"
+      "updated_at": "2026-09-05T18:29:45.7455541Z"
     },
     {
       "id": "src-2d249a691f695cc7",
@@ -94324,7 +94322,7 @@
       "exclusion_reason": null,
       "local_path": "research/staging/queue/src-459cce60ad4eee7a.pdf",
       "discovered_at": "2026-09-05T05:27:17.9058469Z",
-      "updated_at": "2026-09-05T15:32:29.0418410Z"
+      "updated_at": "2026-09-05T15:32:29.041841Z"
     },
     {
       "id": "src-45b2bd5570996347",
@@ -101215,7 +101213,7 @@
     },
     {
       "id": "src-4c0d4f6dbc0c78a1",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://documents.cabq.gov/planning/code-enforcement/M-15%2012-23%20Update%2012-2023.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/code-enforcement/M-15%2012-23%20Update%2012-2023.pdf",
       "r2_url": null,
@@ -101226,8 +101224,8 @@
       "title": "M-15 12-23 Update 12-2023.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 153134,
+      "checksum_sha256": "c0c977836706ac2f7c316ff7c5e3f3d8b1b26ab226045a2c271a1287d34e66bf",
       "parent_url": "https://documents.cabq.gov/planning/code-enforcement/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/code-enforcement/"
@@ -101247,17 +101245,16 @@
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Reviewed 2026-09-05: 2019–2023 completed-properties snapshot superseded for publication by src-6e1166ed8ae8f0e5, which extends the cumulative series through March 2024."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "reviewed against cumulative March 2024 City snapshot; superseded for publication",
+      "exclusion_reason": "The later March 2024 completed-problem-properties snapshot retains the 2019–2023 completed-enforcement series and extends it through March 2024, so this December 2023 version is not separately published.",
+      "local_path": "research/staging/queue/src-4c0d4f6dbc0c78a1.pdf",
       "discovered_at": "2026-08-04T14:45:06.5116019Z",
-      "updated_at": "2026-08-04T14:45:06.5116019Z"
+      "updated_at": "2026-09-05T18:23:11.0104677Z"
     },
     {
       "id": "src-4c1b7ae34207fd2f",
@@ -141012,20 +141009,20 @@
     },
     {
       "id": "src-6e1166ed8ae8f0e5",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/code-enforcement/March%20%20%202024%20Compleated%20%20Problem%20Properties.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/code-enforcement/March%20%20%202024%20Compleated%20%20Problem%20Properties.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/city-data/public-safety/cabq-completed-problem-properties-snapshot-march-2024.pdf",
+      "r2_key": "city-data/public-safety/cabq-completed-problem-properties-snapshot-march-2024.pdf",
+      "r2_etag": "08e64fcd18bb2dbcd71abf740d5eefd7",
+      "r2_last_modified": "09/05/2026 12:27:07",
       "agency": "City of Albuquerque",
-      "title": "March 2024 Compleated Problem Properties.pdf",
-      "date": null,
+      "title": "Completed Problem Properties Snapshot, March 2024",
+      "date": "2024-03",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://documents.cabq.gov/planning/code-enforcement/",
+      "size_bytes": 74937,
+      "checksum_sha256": "e87d7c5aeb24923be425501cf29126af689c9193b8b1c2f61e6a7feafacb576c",
+      "parent_url": "https://documents.cabq.gov/planning/code-enforcement/March%20%20%202024%20Compleated%20%20Problem%20Properties.pdf",
       "referring_urls": [
         "https://documents.cabq.gov/planning/code-enforcement/"
       ],
@@ -141039,22 +141036,25 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City code-enforcement document recorded",
+      "proposed_canonical_page": "content/city-data/public-safety-data.md",
+      "description": "The City’s cumulative March 2024 snapshot lists completed code-enforcement cases from 2019 through March 2024, identifying addresses, enforcement actions, compliance outcomes, and completion dates for condemned, substandard, and unsafe properties across Albuquerque.",
+      "description_word_count": 32,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original authoritative PDF preserved without modification; 32-word description reviewed from extracted content or visual inspection.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/city-data/public-safety-data.md",
+      "implementation_locations": [
+        "content/city-data/public-safety-data.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-6e1166ed8ae8f0e5.pdf",
       "discovered_at": "2026-08-04T14:45:05.4894417Z",
-      "updated_at": "2026-08-04T14:45:05.4894417Z"
+      "updated_at": "2026-09-05T18:29:45.6872975Z"
     },
     {
       "id": "src-6e153eedde3570a6",

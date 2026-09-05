@@ -74,6 +74,14 @@ Maintained public-safety dashboards, police statistics, geographic breakdowns, r
 
   [Official City PDF](https://www.cabq.gov/acs/documents/vip-mayors-report-to-date.pdf) · [Current ACS report library](https://www.cabq.gov/acs/transparency)
 
+## Code Enforcement Outcomes
+
+- [Completed Problem Properties Snapshot, March 2024 (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-completed-problem-properties-snapshot-march-2024.pdf)
+
+  The City's cumulative March 2024 snapshot lists completed code-enforcement cases from 2019 through March 2024, identifying addresses, enforcement actions, compliance outcomes, and completion dates for condemned, substandard, and unsafe properties across Albuquerque.
+
+  [Official City PDF](https://documents.cabq.gov/planning/code-enforcement/March%20%20%202024%20Compleated%20%20Problem%20Properties.pdf)
+
 ## Historical Crime Trends
 
 - [Crime in Albuquerque 2017–2022 (archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-crime-statistics-2017-2022.pdf)
