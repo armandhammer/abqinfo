@@ -92,6 +92,14 @@ Maintained public-safety dashboards, police statistics, geographic breakdowns, r
 
 ## Fire and Emergency Response
 
+- [2011–2019 Fire General Obligation Bond Schedule (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2011-2019-fire-go-bond-schedule.pdf)
+
+  Schedules $26.23 million for fire apparatus replacement and fire-station rehabilitation. [Full 2011–2019 capital-program record](/city-data/capital-spending/#20112019-department-schedules)
+
+- [2011–2019 Police General Obligation Bond Schedule (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2011-2019-police-go-bond-schedule.pdf)
+
+  Schedules $23.23 million for Police vehicles, facilities, information systems, and Old Main Police Building renovation. [Full 2011–2019 capital-program record](/city-data/capital-spending/#20112019-department-schedules)
+
 - [Albuquerque Fire Rescue Reports](https://www.cabq.gov/fire/copy_of_reports)
 
   The official report library provides monthly reports through 2024 and annual reports through 2022. Use it to check for later releases; the annual-report archive below preserves the City's historical operational record.

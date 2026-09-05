@@ -335,6 +335,10 @@ These records preserve the adopted two-year program and each FHWA/FTA-approved r
 
   Lists planned funding for major streets, intersections, bridges, signals, sidewalks, bikeways, traffic management, river-crossing studies, rehabilitation, landscaping, and named Albuquerque roadway projects across five bond cycles. [Full 2007–2016 capital-program record](/city-data/capital-spending/#20072016-decade-plan)
 
+- [2011–2019 Streets General Obligation Bond Schedule (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-2011-2019-streets-go-bond-schedule.pdf)
+
+  Schedules $235.85 million for streets, intersections, bridges, sidewalks, traffic management, right-of-way, and named corridor projects. [Full 2011–2019 capital-program record](/city-data/capital-spending/#20112019-department-schedules)
+
 ### Current and Other Citywide Records
 
 - [Albuquerque Complete Streets Ordinance Update (2019 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-complete-streets-ordinance-o-19-64-2019.pdf)

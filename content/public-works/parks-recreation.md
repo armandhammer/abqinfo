@@ -56,6 +56,10 @@ Parks and recreation facilities and programs.
 
   Schedules investments in pools, parks, recreation facilities, medians, open-space acquisition and restoration, trails, Balloon Fiesta Park, visitor facilities, sports parks, equipment, and water conservation.
 
+- [2011–2019 Parks and Recreation General Obligation Bond Schedule (Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-2011-2019-parks-recreation-go-bond-schedule.pdf)
+
+  Schedules $98.96 million for parks, pools, recreation facilities, trails, open space, and named park projects. [Full 2011–2019 capital-program record](/city-data/capital-spending/#20112019-department-schedules)
+
 - [2007–2016 Park Design and Construction Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-park-design-construction-capital-program-summary.pdf)
 
   Schedules community and neighborhood park development, named park projects, equipment, district improvements, and major investments at Ventana Ranch Regional Park and North Domingo Baca Park.
