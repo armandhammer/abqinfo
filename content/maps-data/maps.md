@@ -1,6 +1,5 @@
 ---
-title: "Maps & Data"
-url: "/maps-data/"
+title: "Maps"
 ---
 
 Interactive maps of city data and infrastructure.
