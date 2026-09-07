@@ -92,6 +92,10 @@ Regional plans, long-range plans, and other system-level transportation planning
 
   Preserves the complete 2035 regional plan and appendices, documenting growth forecasts, multimodal needs, project priorities, financial constraints, environmental analysis, public involvement, and amendments adopted through May 2014.
 
+- [MRCOG 2030 Metropolitan Transportation Plan: Pedestrian Element (2008 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrcog-2030-mtp-pedestrian-element-2008.pdf)
+
+  Establishes the Pedestrian Composite Index, maps walking priorities and missing sidewalks, and frames regional policy, accessibility, project, grant, and multimodal implementation needs. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/2262/8-Pedestrian-PDF) · [MRCOG MTP Archive](https://www.mrcog-nm.gov/267/MTP-Archive)
+
   [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/2286/Complete-Final-MTP-PDF) · [MRCOG MTP Archive](https://www.mrcog-nm.gov/267/MTP-Archive)
 
 ### 2026 Long-Range Transportation System Maps

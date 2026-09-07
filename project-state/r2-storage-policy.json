@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-09-06T15:00:00Z",
+  "maximum_projected_r2_bytes": 10000000000,
+  "maximum_projected_r2_gb_decimal": 10,
+  "policy": "Do not create or execute an archive plan that projects total R2 storage above 10,000,000,000 bytes without explicit user approval. Historical archive plans retain the limits in effect when they were created; new plans use this limit by default.",
+  "authority": "User-directed project storage stop point update."
+}

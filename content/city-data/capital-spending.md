@@ -104,6 +104,10 @@ The City published this capital program as separate tables rather than one downl
 
   [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/r-07-12_criteria_resolution.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/r-07-12_criteria_resolution.pdf)
 
+- [2009 Community Facilities General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-community-facilities-go-bond-project-scopes.pdf)
+
+  Lists $52.35 million in project scopes for affordable housing, cultural facilities, City buildings, environmental health, community centers, technology, planning, redevelopment, libraries, animal welfare, and senior facilities. [Official City record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/community_facilities_-_scopes.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/community_facilities_-_scopes.pdf)
+
 - [2007 Capital Program Policies and Project-Selection Criteria (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-capital-program-policies-project-selection-criteria.pdf)
 
   Documents the adopted funding allocations, project-scoring rules, growth and rehabilitation categories, impact-fee policies, and operating-budget safeguards used to assemble Albuquerque's 2007 General Obligation Bond Program and decade plan.
@@ -270,6 +274,12 @@ The City published this capital program as separate tables rather than one downl
 
   [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/summary_2011-2020.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/summary_2011-2020.pdf)
 
+- [2013-2021 General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2013-2021-go-bond-summary.pdf)
+
+  Summarizes planned 2013-2021 general-obligation bond totals by City department, including streets, drainage, parks, public safety, transit, community facilities, neighborhood set-asides, and public art.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/2013G.O.Summary.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/2013G.O.Summary.pdf)
+
 ### 2011–2019 Department Schedules
 
 These department schedules provide the project-level detail behind the 2011 General Obligation Bond summary.
@@ -313,6 +323,12 @@ These department schedules provide the project-level detail behind the 2011 Gene
   Preserves the approved 2021 Albuquerque bond program, including department allocations, detailed capital-project requests, project purposes, locations, schedules, costs, funding sources, and implementation information.
 
   [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/2021-g-o-approved-program.pdf)
+
+- [2021 General Obligation Bond Program by Purpose (archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2021-go-bond-program-by-purpose.pdf)
+
+  The voter-facing 47-page companion preserves the 2021 ballot questions and project-level funding by bond purpose, including public safety, community facilities, parks, streets, transit, drainage, housing, and redevelopment.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/2021-g-o-bond-program-by-purpose.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/2021-g-o-bond-program-by-purpose.pdf)
 
 - [2023 General Obligation Bond Program Book (archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2023-go-bond-program-book.pdf)
 

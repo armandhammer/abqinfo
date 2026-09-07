@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "audit_root": "https://cabq.legistar.com/LegislationDetail.aspx?ID=5651360&GUID=F59AB30C-A5A2-4D90-A7CB-DF0988A8E35A&Options=ID%7CText%7C&Search=R-22-38",
+  "audited_at": "2026-09-06T15:49:00Z",
+  "method": "Reviewed the official City Legistar matter record and every official attachment. Downloaded and extracted originals, compared SHA-256 values and normalized extracted text, and rendered the signed enactment because it has no usable text layer.",
+  "matter": {
+    "file": "R-22-38",
+    "title": "University Metropolitan Redevelopment Area designation",
+    "agenda_dates": ["2022-05-16", "2022-06-15", "2022-06-22", "2022-08-01"]
+  },
+  "attachments": [
+    {
+      "candidate_id": "src-427b30fffa390723",
+      "title": "R-22-38 original resolution packet",
+      "url": "https://legistar.granicus.com/cabq/attachments/05ca2439-42c1-497e-b8e4-74189dfb2043.pdf",
+      "size_bytes": 3967257,
+      "checksum_sha256": "d7094c1780683e1d65881e6a326d9c661ef7b449a77eb8ba066d4c97de0ec8bf",
+      "pages": 28,
+      "decision": "superseded wrapper packet",
+      "canonical_candidate_ids": ["src-89107d80d63d016c", "src-44de10e288a1f3b4"],
+      "reason": "The proposal packet combines an unenacted resolution, Mayor's memorandum, fiscal-impact analysis, and a March draft of the designation report. It is superseded by the separate final June report and signed enactment."
+    },
+    {
+      "candidate_id": "src-63c7fd229c3447fc",
+      "title": "R-22-38 Exhibit B final designation report",
+      "url": "https://legistar.granicus.com/cabq/attachments/71494112-e9f1-4371-8d31-6e95bb1af1a8.pdf",
+      "size_bytes": 3175155,
+      "checksum_sha256": "1fe072ef466542db2ad74a027b1e4f8725a62442c074c6dd2171f9622b9aba75",
+      "pages": 21,
+      "decision": "duplicate substantive content",
+      "canonical_candidate_id": "src-89107d80d63d016c",
+      "reason": "Different PDF bytes from the existing archive, but exact normalized extracted-text match across all 32,033 characters. It is the same final June 2022 report and is retained once as canonical."
+    },
+    {
+      "candidate_id": "src-44de10e288a1f3b4",
+      "title": "R-22-38 enacted resolution",
+      "url": "https://legistar.granicus.com/cabq/attachments/f8d01ed1-a1fc-4eab-8f98-46b4338b5c66.pdf",
+      "size_bytes": 222055,
+      "checksum_sha256": "fe007689013ebd44a8e7868791255e148038e538aaaa98d74bf41638b1289f60",
+      "pages": 5,
+      "decision": "archive and cross-link",
+      "reason": "Visually verified signed R-2022-060: Council adopted it 9-0 on August 1, 2022, and the Mayor approved it August 12. This statutory designation is distinct from the supporting report."
+    }
+  ],
+  "result": "Retain the existing final designation report once and add the signed designation resolution as the distinct governing action. Do not retain the original mixed legislative packet."
+}
