@@ -4,6 +4,7 @@
 
 - At the start of every task, reconcile Git state with `origin/main` and read `project-state/checkpoint.json`, `project-state/master-inventory.json`, and `project-state/active-run.json` when present.
 - Use the repository's deterministic PowerShell and Python scripts for crawling, downloading, hashing, extraction, deduplication, inventory updates, link checks, and Hugo validation whenever possible.
+- Treat Legistar attachments as versioned delivery wrappers, not automatically distinct documents: compare hashes and extracted/rendered substantive content with existing City-source copies. A Legistar copy may prepend only Council bill, enactment, routing, signature, or agenda pages to an otherwise identical underlying document; retain one canonical original and document the wrapper relationship rather than archiving both.
 - Save inventory status changes immediately and checkpoint meaningful progress throughout a batch so an interrupted task can resume without reconstructing prior work.
 - Preserve unrelated user files and changes, including the untracked `backups/` directory.
 

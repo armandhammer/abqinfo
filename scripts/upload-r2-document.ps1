@@ -18,7 +18,7 @@ param(
   [Int64]$MaxObjectBytes = 100000000,
 
   [ValidateRange(1, [Int64]::MaxValue)]
-  [Int64]$MaxProjectedStorageBytes = 8000000000
+  [Int64]$MaxProjectedStorageBytes = 10000000000
 )
 
 Set-StrictMode -Version Latest

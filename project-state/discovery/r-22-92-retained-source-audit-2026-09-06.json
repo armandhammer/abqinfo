@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "audit_root": "https://cabq.legistar.com/LegislationDetail.aspx?ID=5979371&GUID=E3FEB725-66B6-460B-B7EE-F9D274BF128F&Options=ID%7CText%7C&Search=R-22-92",
+  "audited_at": "2026-09-06T19:03:00Z",
+  "method": "Reviewed the official City Legistar matter record and every official attachment. Downloaded and extracted originals, compared SHA-256 values and normalized extracted text, and rendered the signed enactment because it has no usable text layer.",
+  "matter": {
+    "file": "R-22-92",
+    "title": "Approving the Menaul Metropolitan Redevelopment Area Plan",
+    "agenda_dates": ["2023-01-04", "2023-04-12", "2023-04-17", "2023-05-01"]
+  },
+  "attachments": [
+    {
+      "candidate_id": "src-d0b720dc31308066",
+      "title": "R-22-92 original resolution packet",
+      "url": "https://legistar.granicus.com/cabq/attachments/cd3bd49e-0da2-4074-a5ff-ed7d0aaa9259.pdf",
+      "size_bytes": 7562075,
+      "checksum_sha256": "5203100d555c557771b22a66418e3f83e94d461b18e7149d9373a4ab87c7c6cc",
+      "pages": 68,
+      "decision": "superseded wrapper packet",
+      "canonical_candidate_ids": ["src-3f2dca78dd97e88d", "src-5f2bb1c1296c574f"],
+      "reason": "The proposed resolution packet includes an unenacted resolution and an earlier attached plan version. The independently attached final plan and signed enactment are the canonical substantive and governing records."
+    },
+    {
+      "candidate_id": "src-f025786bada9f13c",
+      "title": "R-22-92 adopted Menaul MRA Plan final",
+      "url": "https://legistar.granicus.com/cabq/attachments/88e9409b-c9b5-475d-a9a1-f41d6d4c4a7c.pdf",
+      "size_bytes": 7496233,
+      "checksum_sha256": "6f2a9d376166156ab33c37c8b07af6555c2663d197d6744e6aea190598c9cce2",
+      "pages": 67,
+      "decision": "duplicate substantive content",
+      "canonical_candidate_id": "src-3f2dca78dd97e88d",
+      "reason": "Different PDF bytes from the existing archive, but exact normalized extracted-text match across all 156,047 characters. It is the same adopted May 2023 plan and is retained once as canonical."
+    },
+    {
+      "candidate_id": "src-5f2bb1c1296c574f",
+      "title": "R-22-92 enacted resolution",
+      "url": "https://legistar.granicus.com/cabq/attachments/d3baefad-e706-4563-b23f-e642df4c40e9.pdf",
+      "size_bytes": 204941,
+      "checksum_sha256": "81816066540ed9c16c911bd1c09ed2629ff50f60dc53d1614ba69dda5211a146",
+      "pages": 4,
+      "decision": "archive and cross-link",
+      "reason": "Visually verified signed R-2023-037: Council adopted it 9-0 on May 1, 2023, and the Mayor approved it May 18. It separately approves and incorporates the Menaul MRA Plan into the City Code of Resolutions."
+    }
+  ],
+  "result": "Retain the existing adopted plan once and add the signed approval resolution as the distinct governing action. Do not retain the original mixed proposal packet."
+}

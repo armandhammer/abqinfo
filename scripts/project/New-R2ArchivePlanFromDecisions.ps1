@@ -5,7 +5,7 @@ param(
   [string]$InventoryPath = 'project-state/master-inventory.json',
   [string]$R2InventoryPath = 'project-state/r2-inventory.json',
   [int64]$MaximumObjectBytes = 100000000,
-  [int64]$MaximumProjectedR2Bytes = 8000000000
+  [int64]$MaximumProjectedR2Bytes = 10000000000
 )
 
 Set-StrictMode -Version Latest

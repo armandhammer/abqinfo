@@ -28,13 +28,25 @@ Plans and historical records for designated Metropolitan Redevelopment Areas, wh
 
   The adopted plan sets redevelopment goals, opportunity-area strategies, land-use and circulation actions, business and housing priorities, public investments, and implementation steps for the Menaul area north of I-40. [Official R-22-92 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=5979371&GUID=E3FEB725-66B6-460B-B7EE-F9D274BF128F&Options=ID%7CText%7C&Search=R-22-92)
 
+- [R-22-92: Menaul Metropolitan Redevelopment Area Plan Approval Resolution (2023 archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-r-22-92-menaul-mra-plan-approval-resolution.pdf)
+
+  The signed resolution approves the Menaul MRA Plan and incorporates it into the City Code of Resolutions after public meetings, commission recommendation, and a public hearing. [Official R-22-92 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=5979371&GUID=E3FEB725-66B6-460B-B7EE-F9D274BF128F&Options=ID%7CText%7C&Search=R-22-92) · [Official enacted attachment](https://legistar.granicus.com/cabq/attachments/d3baefad-e706-4563-b23f-e642df4c40e9.pdf)
+
 - [Menaul Redevelopment Study and Recommendations (2021 archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-menaul-redevelopment-study-2021-legistar.pdf)
 
   Preserves the City Council draft adopted as policy in 2021, covering Menaul land use, zoning, property conditions, market analysis, community input, and redevelopment recommendations. It is the precursor to the adopted 2023 MRA plan. [Official R-21-207 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=5156934&GUID=357010E1-2F78-441A-9B2B-4CE02BEA6A31&Options=ID%7CText%7C&Search=R-21-207)
 
+- [R-21-207: Menaul Redevelopment Study Adoption Resolution (2021 archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-r-21-207-menaul-redevelopment-study-adoption-resolution.pdf)
+
+  The signed resolution makes the study current City policy and identifies Council set-asides, the capital-improvement program, and State capital outlay as implementation funding. [Official R-21-207 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=5156934&GUID=357010E1-2F78-441A-9B2B-4CE02BEA6A31&Options=ID%7CText%7C&Search=R-21-207) · [Official enacted attachment](https://legistar.granicus.com/cabq/attachments/343fd450-0bfa-42ca-96f6-4dd41499447d.pdf)
+
 - [University MRA Designation Report (2022 archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-university-mra-designation-report-2022-legistar.pdf)
 
   Documents the existing conditions, boundary and eligibility findings, market conditions, community context, and redevelopment needs used to establish the University Metropolitan Redevelopment Area before its later plan. [Official R-22-38 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=5651360&GUID=F59AB30C-A5A2-4D90-A7CB-DF0988A8E35A&Options=ID%7CText%7C&Search=R-22-38)
+
+- [R-22-38: University Metropolitan Redevelopment Area Designation Resolution (2022 archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-r-22-38-university-mra-designation-resolution.pdf)
+
+  The signed resolution designates the University MRA and authorizes preparation of its redevelopment plan after finding statutory blight conditions along Central and Yale. [Official R-22-38 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=5651360&GUID=F59AB30C-A5A2-4D90-A7CB-DF0988A8E35A&Options=ID%7CText%7C&Search=R-22-38) · [Official enacted attachment](https://legistar.granicus.com/cabq/attachments/f8d01ed1-a1fc-4eab-8f98-46b4338b5c66.pdf)
 
 - [Menaul MRA Zoning Map Amendment (O-2025-033 archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-menaul-mra-zoning-map-amendment-o-2025-033.pdf)
 

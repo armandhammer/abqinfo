@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-06",
+  "scope": "Month-by-month 2016 audit of GABAC/GAATC and GARTC minutes. This is an audit only: it does not reverse the pre-existing GARTC routine-minutes exclusions or publish/archival decisions.",
+  "source_checks": {
+    "onbase": "Used the City of Albuquerque Public Access Boards and Commissions custom query (ID 136), with committee-name keyword 412 and record-type keyword 413 set to MINUTES. GAATC returned eight 2016 records; GARTC returned the December 20 record only.",
+    "maintained_city_gartc_page": "The City's maintained GARTC Agendas & Minutes page independently lists approved minutes for January through July, October, and December 2016; it has no approved-minutes entries for August, September, or November.",
+    "inventory": "The nine City-linked 2016 GARTC minutes were already retained as source records and excluded as routine minutes in the prior trails-committee review. Eight verified City OnBase GAATC source records were added as pending-review inventory candidates for any future archival decision. Each of the eight GAATC URLs returned HTTP 200 application/pdf in a read-only GET verification."
+  },
+  "gabac_gaatc": [
+    {"month": "2016-01", "onbase": "MINUTES document 12053740 dated January 11", "disposition": "official original available", "candidate_id": "src-aa4b44789f28cc08"},
+    {"month": "2016-02", "onbase": "MINUTES document 12053741 dated February 8", "disposition": "official original available", "candidate_id": "src-ecb5eb5ca00e599c"},
+    {"month": "2016-03", "onbase": "MINUTES document 12053742 dated March 14", "disposition": "official original available", "candidate_id": "src-02f7f9913481627f"},
+    {"month": "2016-04", "onbase": "No MINUTES record returned", "disposition": "no official minutes original located"},
+    {"month": "2016-05", "onbase": "MINUTES document 12053743 dated May 9", "disposition": "official original available", "candidate_id": "src-6a52da44a8c5f38b"},
+    {"month": "2016-06", "onbase": "No MINUTES record returned", "disposition": "no official minutes original located"},
+    {"month": "2016-07", "onbase": "MINUTES document 12053746 dated July 11", "disposition": "official original available", "candidate_id": "src-4e3536b0006daf9f"},
+    {"month": "2016-08", "onbase": "MINUTES document 12053747 dated August 8", "disposition": "official original available", "candidate_id": "src-8fd24610fd814fb9"},
+    {"month": "2016-09", "onbase": "MINUTES document 12053748 dated September 12", "disposition": "official original available", "candidate_id": "src-dbeb582a5c9fc001"},
+    {"month": "2016-10", "onbase": "No MINUTES record returned", "disposition": "no official minutes original located"},
+    {"month": "2016-11", "onbase": "No MINUTES record returned", "disposition": "no official minutes original located"},
+    {"month": "2016-12", "onbase": "MINUTES document 12053749 dated December 12", "disposition": "official original available", "candidate_id": "src-5f98ad4aae4f92bf"}
+  ],
+  "gartc": [
+    {"month": "2016-01", "city_or_onbase": "Maintained City approved-minutes register links an official January minutes file", "disposition": "official original available; prior routine-minutes exclusion retained", "candidate_id": "src-1c1fa2a809950a1a"},
+    {"month": "2016-02", "city_or_onbase": "Maintained City approved-minutes register links an official February minutes file", "disposition": "official original available; prior routine-minutes exclusion retained", "candidate_id": "src-312883040962fcd4"},
+    {"month": "2016-03", "city_or_onbase": "Maintained City approved-minutes register links an official March minutes file", "disposition": "official original available; prior routine-minutes exclusion retained", "candidate_id": "src-0ccd5b9d6632fe30"},
+    {"month": "2016-04", "city_or_onbase": "Maintained City approved-minutes register links an official April minutes file", "disposition": "official original available; prior routine-minutes exclusion retained", "candidate_id": "src-553c5f4e79157ae9"},
+    {"month": "2016-05", "city_or_onbase": "Maintained City approved-minutes register links an official May minutes file", "disposition": "official original available; prior routine-minutes exclusion retained", "candidate_id": "src-d72803a6ed7bab8e"},
+    {"month": "2016-06", "city_or_onbase": "Maintained City approved-minutes register links an official June minutes file", "disposition": "official original available; prior routine-minutes exclusion retained", "candidate_id": "src-b36efa97679dd2be"},
+    {"month": "2016-07", "city_or_onbase": "Maintained City approved-minutes register links an official July minutes file", "disposition": "official original available; prior routine-minutes exclusion retained", "candidate_id": "src-4f97a424b9f3067b"},
+    {"month": "2016-08", "city_or_onbase": "No approved-minutes entry on the maintained City register; no OnBase MINUTES record", "disposition": "no official minutes original located"},
+    {"month": "2016-09", "city_or_onbase": "No approved-minutes entry on the maintained City register; no OnBase MINUTES record", "disposition": "no official minutes original located"},
+    {"month": "2016-10", "city_or_onbase": "Maintained City approved-minutes register links an official October minutes file", "disposition": "official original available; prior routine-minutes exclusion retained", "candidate_id": "src-c9fcf53027ab9391"},
+    {"month": "2016-11", "city_or_onbase": "No approved-minutes entry on the maintained City register; no OnBase MINUTES record", "disposition": "no official minutes original located"},
+    {"month": "2016-12", "city_or_onbase": "Maintained City approved-minutes register links an official December file; OnBase MINUTES document 12232651 is dated December 20", "disposition": "official original available; prior routine-minutes exclusion retained", "candidate_id": "src-8dc6468c1d4421ee"}
+  ]
+}
