@@ -76,6 +76,14 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
 ## Historical City Capital Plans
 
+- [2009–2017 Storm Drainage General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-2017-storm-drainage-go-bond-summary.pdf)
+
+  Schedules $85.175 million for water quality, pump stations, storm drains, arroyo crossings, hydrology, rehabilitation, master planning, and named flood-control projects. [Full 2009 capital-program record](/city-data/capital-spending/#2009-general-obligation-bond-program) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/dmd_storm_drainage_-_summary.pdf)
+
+- [2009 Storm Sewer System General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-storm-sewer-system-go-bond-project-scopes.pdf)
+
+  Details $13.837 million for water quality, pump stations, storm drains, arroyo crossings, hydrologic planning, flood control, drainage rehabilitation, and public art. [Full 2009 capital-program record](/city-data/capital-spending/#2009-general-obligation-bond-program) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/storm_sewer_system_bonds.pdf)
+
 - [2007–2016 Storm Drainage Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-storm-drainage-capital-program-summary.pdf)
 
   Schedules storm-drain, arroyo, channel, pump-station, water-quality, rehabilitation, right-of-way, and engineering investments across Albuquerque, identifying named projects and funding by bond cycle through 2016.

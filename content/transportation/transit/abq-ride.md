@@ -18,6 +18,10 @@ ABQ Ride bus service information and data.
 
 ## Facilities and Fleet Planning History
 
+- [2009–2017 ABQ RIDE General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-2017-abq-ride-go-bond-summary.pdf)
+
+  Schedules $63.25 million for revenue vehicles, park-and-ride facilities, shelters, technology, facility rehabilitation, maintenance equipment, and transit security. [Full 2009 capital-program record](/city-data/capital-spending/#2009-general-obligation-bond-program) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/abq_ride_transit-summary.pdf)
+
 - [Yale Maintenance Facility Assessment — Draft Final Report, Volume 1 (2015 Archived PDF)](https://files.abqinfo.com/transportation/transit/abq-ride/cabq-yale-maintenance-facility-assessment-volume-1-2015.pdf)
 
   Assesses ABQ RIDE's Yale maintenance complex, documenting facility condition, bus circulation, maintenance and fueling operations, historic resources, space needs, design criteria, phased concepts, fleet projections, sustainability, and probable construction costs.

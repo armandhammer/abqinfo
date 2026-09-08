@@ -335,6 +335,14 @@ These records preserve the adopted two-year program and each FHWA/FTA-approved r
 
 ### Historical Capital Programming
 
+- [2009–2017 Streets General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-2017-streets-go-bond-summary.pdf)
+
+  Schedules $312.915 million for reconstruction, paving, intersections, bridges, signals, sidewalks, lighting, trails, traffic management, landscaping, and named corridor projects. [Full 2009 capital-program record](/city-data/capital-spending/#2009-general-obligation-bond-program) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/dmd_streets_-_summary.pdf)
+
+- [2009 Streets General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-streets-go-bond-project-scopes.pdf)
+
+  Details $44.165 million for Lead and Coal, paving, signals, bridges, arterial roads, sidewalks, lighting, traffic management, traffic calming, trails, landscape improvements, and public art. [Full 2009 capital-program record](/city-data/capital-spending/#2009-general-obligation-bond-program) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/street_bonds.pdf)
+
 - [2007–2016 Streets Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-streets-capital-program-summary.pdf)
 
   Lists planned funding for major streets, intersections, bridges, signals, sidewalks, bikeways, traffic management, river-crossing studies, rehabilitation, landscaping, and named Albuquerque roadway projects across five bond cycles. [Full 2007–2016 capital-program record](/city-data/capital-spending/#20072016-decade-plan)
