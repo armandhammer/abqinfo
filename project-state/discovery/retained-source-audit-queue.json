@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-06T23:29:10.2707974Z",
+  "generated_at": "2026-09-07T04:32:08.1818112Z",
   "policy": "Every retained active government webpage is a document-discovery root. Recursively review relevant child pages and archive qualifying attached documents; access-controlled pages require rendered-browser review rather than silent completion.",
   "allowed_statuses": [
     "pending descendant crawl",
@@ -11,7 +11,7 @@
   ],
   "counts": {
     "pending descendant crawl": 324,
-    "crawled": 137,
+    "crawled": 140,
     "requires rendered-browser review": 0,
     "excluded": 0,
     "superseded": 0
@@ -3400,6 +3400,22 @@
       "updated_at": "2026-08-25T01:12:22.4497089Z"
     },
     {
+      "candidate_id": "src-00f4701d290c58d2",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/2013G.O.Summary.pdf/view",
+      "title": "2013-2021 General Obligation Bond Summary",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-07T04:32:07.7348568Z",
+      "updated_at": "2026-09-07T04:32:07.7348568Z"
+    },
+    {
       "candidate_id": "src-4ce8e84444dd90a8",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/2019-bond-book.pdf/view",
       "title": "2019 General Obligation Bond Program Book",
@@ -5152,15 +5168,52 @@
       "title": "Greater Albuquerque Recreational Trails Committee Minutes, December 15, 2015",
       "agency": "City of Albuquerque Parks and Recreation Department",
       "canonical_page": "content/transportation/bicycling/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/gartc-former-city-collection-crawl-2026-09-07.json",
+      "discovered_documents": 165,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Confirmed August 2015 minutes link is a City-label mismatch to a 2014 PDF, and September 2015 has an agenda but no minutes original.",
+        "Exhaustively crawled collection root and pagination offsets b_start:int=0 through 160; no pagination remains.",
+        "Retrieved 14 HTML pages. Four legacy RTF download endpoints were non-HTML files; their item pages were retrieved."
       ],
       "created_at": "2026-09-06T14:59:18.5583165Z",
-      "updated_at": "2026-09-06T14:59:18.5583165Z"
+      "updated_at": "2026-09-07T03:57:00.9901765Z"
+    },
+    {
+      "candidate_id": "src-c0814ef6e88da88e",
+      "source_url": "https://www.cabq.gov/parksandrecreation/documents/gart-minutes-agendas/august-2015-gartc-agenda.pdf/view",
+      "title": "Greater Albuquerque Recreational Trails Committee Agenda, August 18, 2015",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/transportation/bicycling/_index.md",
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/gartc-former-city-collection-crawl-2026-09-07.json",
+      "discovered_documents": 1,
+      "archived_documents": 1,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Official City item page and direct PDF were retrieved; the former collection audit establishes the surrounding collection was exhausted."
+      ],
+      "created_at": "2026-09-07T04:32:07.7348568Z",
+      "updated_at": "2026-09-07T04:32:08.0568463Z"
+    },
+    {
+      "candidate_id": "src-fac96940f2079948",
+      "source_url": "https://www.cabq.gov/parksandrecreation/documents/gart-minutes-agendas/september-15-2015-gartc-agenda.docx/view",
+      "title": "Greater Albuquerque Recreational Trails Committee Agenda, September 15, 2015",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/transportation/bicycling/_index.md",
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/gartc-former-city-collection-crawl-2026-09-07.json",
+      "discovered_documents": 1,
+      "archived_documents": 1,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Official City item page and direct DOCX were retrieved; the former collection audit establishes the surrounding collection was exhausted."
+      ],
+      "created_at": "2026-09-07T04:32:07.7348568Z",
+      "updated_at": "2026-09-07T04:32:08.1474922Z"
     },
     {
       "candidate_id": "src-1959dee3f761b3ab",

@@ -92,6 +92,10 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
   Schedules $68.85 million for stormwater quality, pump stations, arroyo crossings, channels, basins, rehabilitation, and named drainage projects. [Full 2011–2019 capital-program record](/city-data/capital-spending/#20112019-department-schedules)
 
+- [2011 Storm Drainage General Obligation Bond Project Scope (Archived PDF)](https://files.abqinfo.com/public-works/stormwater/cabq-2011-storm-drainage-go-bond-project-scope.pdf)
+
+  Defines $12.95 million in 2011 storm-drainage bond projects for water quality, pump stations, arroyo crossings, Alameda Riverside Drains, Volcano Cliffs, San Pedro, hydrology, and neighborhood flood-control improvements. [Full October 2010 capital-program record](/city-data/capital-spending/#october-2010-program-scope-and-schedule-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/environmental-planning-commission-2011-go-bond-program/storm_drainage_scope.pdf)
+
 - [2005–2013 Drainage Component Capital Implementation Plan (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2005-2013-drainage-component-capital-implementation-plan.pdf)
 
   Programs impact-fee-supported drainage rights-of-way, trunk lines, channels, diversions, ponds, and basins across Far Northeast, Northwest, Southwest, and Tijeras service areas. [Full 2007–2016 capital-program record](/city-data/capital-spending/#20072016-decade-plan)

@@ -18,6 +18,12 @@ Interactive maps of city data and infrastructure.
 
   [Official City PDF](https://documents.cabq.gov/planning/UDD/MRA/MRA-MetroRedevelopmentAreaMap.pdf) · [City Metropolitan Redevelopment Areas](https://www.cabq.gov/mra/redevelopment-areas)
 
+- [Huning Highland Historic Overlay Zone and EDo Urban Conservation Overlay Zone Map (2017 Archived PDF)](https://files.abqinfo.com/maps/cabq-huning-highland-edo-historic-overlay-zone-map-2017.pdf)
+
+  Maps the January 2017 parcel-level boundaries of the Huning Highland Historic Overlay Zone and EDo Urban Conservation Overlay Zone, identifying their relationship to Central Avenue, the rail corridor, and surrounding streets.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/UDD-HuningHighlandHOZMap-Jan2017.pdf)
+
 ### Regional Long-Range Transportation Maps
 
 - [Albuquerque Metropolitan Planning Area Boundary Map (2020)](https://files.abqinfo.com/maps/mrmpo-albuquerque-metropolitan-planning-area-map-2020.pdf)

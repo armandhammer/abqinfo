@@ -51,7 +51,7 @@ foreach ($item in $items) {
 if ($large.Count) {
   $lines += @('', '## Files larger than 25 MiB', '')
   foreach ($item in $large) {
-    $lines += "- **$($item.title)** — $($item.size_bytes) bytes ($([math]::Round($item.size_bytes / 1MB, 2)) MiB), $($item.file_type). $($item.large_file_assessment)"
+    $lines += "- **$($item.title)** - $($item.size_bytes) bytes ($([math]::Round($item.size_bytes / 1MB, 2)) MiB), $($item.file_type). $($item.large_file_assessment)"
   }
 }
 $lines | Set-Content -LiteralPath $OutputPath -Encoding utf8

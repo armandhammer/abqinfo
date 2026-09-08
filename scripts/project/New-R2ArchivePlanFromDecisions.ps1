@@ -15,14 +15,21 @@ $decisions = Get-Content -Raw -Encoding UTF8 -LiteralPath $DecisionsPath | Conve
 $inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
 $r2 = Get-Content -Raw -Encoding UTF8 -LiteralPath $R2InventoryPath | ConvertFrom-Json
 $items = @()
+$decisionItems = if ($decisions.PSObject.Properties['decisions']) {
+  @($decisions.decisions)
+} elseif ($decisions.PSObject.Properties['approved_for_addition']) {
+  @($decisions.approved_for_addition)
+} else {
+  throw "Decision file must contain either a 'decisions' or 'approved_for_addition' array."
+}
 
-foreach ($decision in @($decisions.decisions)) {
+foreach ($decision in $decisionItems) {
   $matches = @($inventory.candidates | Where-Object id -eq $decision.id)
   if ($matches.Count -ne 1) { throw "Expected one inventory candidate for '$($decision.id)'; found $($matches.Count)." }
   $candidate = $matches[0]
   $candidateType = ([string]$candidate.file_type).ToUpperInvariant()
   $readyStatuses = @('placement assigned','implemented','validated')
-  $allowedStatuses = if ($candidateType -eq 'PDF') { @('parsed') + $readyStatuses } else { @('downloaded','parsed') + $readyStatuses }
+  $allowedStatuses = if ($candidateType -eq 'PDF') { @('approved for addition','parsed') + $readyStatuses } else { @('approved for addition','downloaded','parsed') + $readyStatuses }
   if ($candidate.status -notin $allowedStatuses) {
     throw "Candidate '$($decision.id)' must be locally inspected before planning; status is '$($candidate.status)'."
   }

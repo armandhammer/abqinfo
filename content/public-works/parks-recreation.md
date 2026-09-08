@@ -68,6 +68,14 @@ Parks and recreation facilities and programs.
 
   Schedules $98.96 million for parks, pools, recreation facilities, trails, open space, and named park projects. [Full 2011–2019 capital-program record](/city-data/capital-spending/#20112019-department-schedules)
 
+- [2011 Parks and Recreation General Obligation Bond Project Scope (Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-2011-parks-recreation-go-bond-project-scope.pdf)
+
+  Defines $14.65 million in 2011 Parks and Recreation bond projects for parks, pools, trails, open space, Bosque restoration, Balloon Fiesta Park, forestry, neighborhood and community parks, and vehicle equipment. [Full October 2010 capital-program record](/city-data/capital-spending/#october-2010-program-scope-and-schedule-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/environmental-planning-commission-2011-go-bond-program/parks_rec_scope.pdf)
+
+- [2011–2019 Parks and Recreation General Obligation Bond Schedule (October 2010 Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-2011-2019-parks-recreation-go-bond-schedule-october-2010.pdf)
+
+  Records the October 2010 Parks and Recreation schedule, totaling $79.43 million through 2019 for parks, pools, trails, open space, Bosque restoration, Balloon Fiesta Park, forestry, and recreation equipment. [Full October 2010 capital-program record](/city-data/capital-spending/#october-2010-program-scope-and-schedule-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/environmental-planning-commission-2011-go-bond-program/parks_rec_summary.pdf)
+
 - [2007–2016 Park Design and Construction Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-park-design-construction-capital-program-summary.pdf)
 
   Schedules community and neighborhood park development, named park projects, equipment, district improvements, and major investments at Ventana Ranch Regional Park and North Domingo Baca Park.
