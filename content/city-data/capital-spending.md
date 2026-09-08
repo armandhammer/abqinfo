@@ -108,6 +108,54 @@ The City published this capital program as separate tables rather than one downl
 
   Lists $52.35 million in project scopes for affordable housing, cultural facilities, City buildings, environmental health, community centers, technology, planning, redevelopment, libraries, animal welfare, and senior facilities. [Official City record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/community_facilities_-_scopes.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/community_facilities_-_scopes.pdf)
 
+### 2009 General Obligation Bond Program
+
+These official City tables preserve the 2009 project scopes and the accompanying 2009–2017 funding schedules. The overview and cross-department records remain here; subject-specific tables are also linked from the relevant transportation, parks, and drainage pages.
+
+- [2009 General Obligation Bond Funding Allocation Chart (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-go-bond-funding-allocation-chart.pdf)
+
+  Compares the policy allocation, departmental requests, and proposed funding for the $160 million 2009 program across infrastructure, transit, public safety, community facilities, neighborhood set-asides, and public art. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/funding_allocation_chart.pdf)
+
+- [2009 Energy, Water Conservation, Public Facilities, and System Modernization Bond Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-energy-water-public-facilities-system-modernization-bond-scopes.pdf)
+
+  Details $16.257 million in scopes for City facilities, energy and water conservation, animal shelters, landfill remediation, environmental monitoring, information systems, fleet fueling, plan review, GIS, and public art. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/energy_water_conservation_public_fac_system_modernization_bonds.pdf)
+
+- [2009–2017 Parks and Recreation General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-2017-parks-recreation-go-bond-summary.pdf)
+
+  Schedules $133.335 million for forestry, park amenities, trails, pools, recreation facilities, open-space restoration and acquisition, and equipment. [Parks & Recreation placement](/public-works/parks-recreation/#historical-capital-programming) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/parks_rec_-_summary.pdf)
+
+- [2009–2017 ABQ RIDE General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-2017-abq-ride-go-bond-summary.pdf)
+
+  Schedules $63.25 million for revenue vehicles, park-and-ride facilities, shelters, technology, facility rehabilitation, maintenance equipment, and transit security. [ABQ RIDE placement](/transportation/transit/abq-ride/#facilities-and-fleet-planning-history) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/abq_ride_transit-summary.pdf)
+
+- [2009–2017 Streets General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-2017-streets-go-bond-summary.pdf)
+
+  Schedules $312.915 million for reconstruction, paving, intersections, bridges, signals, sidewalks, lighting, trails, traffic management, landscaping, and named corridor projects. [Transportation Plans placement](/transportation/transportation-plans/#historical-capital-programming) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/dmd_streets_-_summary.pdf)
+
+- [2009–2017 Storm Drainage General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-2017-storm-drainage-go-bond-summary.pdf)
+
+  Schedules $85.175 million for water quality, pump stations, storm drains, arroyo crossings, hydrology, rehabilitation, master planning, and named flood-control projects. [Stormwater & Drainage placement](/public-works/stormwater-drainage/#historical-city-capital-plans) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/dmd_storm_drainage_-_summary.pdf)
+
+- [2009 Parks and Recreation General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-parks-recreation-go-bond-project-scopes.pdf)
+
+  Details 2009 scopes for Vista del Norte fields, community and neighborhood parks, pool and recreation-center work, open space, trailheads, forestry, medians, trails, vehicles, and public art. [Parks & Recreation placement](/public-works/parks-recreation/#historical-capital-programming) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/parks_recreation_bonds.pdf)
+
+- [2009–2017 Community Facilities General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-2017-community-facilities-go-bond-summary.pdf)
+
+  Schedules $296.996 million for housing, cultural services, municipal facilities, environmental health, community services, technology, planning, redevelopment, and senior facilities. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/community_facilities_-_summary.pdf)
+
+- [2009 Streets General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-streets-go-bond-project-scopes.pdf)
+
+  Details $44.165 million for Lead and Coal, paving, signals, bridges, arterial roads, sidewalks, lighting, traffic management, traffic calming, trails, landscape improvements, and public art. [Transportation Plans placement](/transportation/transportation-plans/#historical-capital-programming) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/street_bonds.pdf)
+
+- [2009 Storm Sewer System General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-storm-sewer-system-go-bond-project-scopes.pdf)
+
+  Details $13.837 million for water quality, pump stations, storm drains, arroyo crossings, hydrologic planning, flood control, drainage rehabilitation, and public art. [Stormwater & Drainage placement](/public-works/stormwater-drainage/#historical-city-capital-plans) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/storm_sewer_system_bonds.pdf)
+
+- [2009–2017 General Obligation Bond Summary Totals (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-2017-go-bond-summary-totals.pdf)
+
+  Consolidates $1.08094 billion in planned funding by department and purpose, covering streets, drainage, parks, public safety, transit, community facilities, neighborhood set-asides, and public art. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/go_bond_totals.pdf)
+
 - [2007 Capital Program Policies and Project-Selection Criteria (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-capital-program-policies-project-selection-criteria.pdf)
 
   Documents the adopted funding allocations, project-scoring rules, growth and rehabilitation categories, impact-fee policies, and operating-budget safeguards used to assemble Albuquerque's 2007 General Obligation Bond Program and decade plan.

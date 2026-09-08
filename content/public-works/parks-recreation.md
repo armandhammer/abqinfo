@@ -52,6 +52,14 @@ Parks and recreation facilities and programs.
 
 ## Historical Capital Programming
 
+- [2009–2017 Parks and Recreation General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-2017-parks-recreation-go-bond-summary.pdf)
+
+  Schedules $133.335 million for forestry, park amenities, trails, pools, recreation facilities, open-space restoration and acquisition, and equipment. [Full 2009 capital-program record](/city-data/capital-spending/#2009-general-obligation-bond-program) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/parks_rec_-_summary.pdf)
+
+- [2009 Parks and Recreation General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-parks-recreation-go-bond-project-scopes.pdf)
+
+  Details 2009 scopes for Vista del Norte fields, community and neighborhood parks, pool and recreation-center work, open space, trailheads, forestry, medians, trails, vehicles, and public art. [Full 2009 capital-program record](/city-data/capital-spending/#2009-general-obligation-bond-program) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/parks_recreation_bonds.pdf)
+
 - [2007–2016 Parks and Recreation Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-parks-recreation-capital-program-summary.pdf)
 
   Schedules investments in pools, parks, recreation facilities, medians, open-space acquisition and restoration, trails, Balloon Fiesta Park, visitor facilities, sports parks, equipment, and water conservation.
