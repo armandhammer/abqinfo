@@ -14,6 +14,10 @@ Planning, design standards, and selected major projects for City-owned buildings
 
   Schedules $14.6 million for City building rehabilitation, energy, security, parking, replacement vehicles, roofs, and water efficiency. [Full 2011–2019 capital-program record](/city-data/capital-spending/#20112019-department-schedules)
 
+- [2011 City Facilities and Parking General Obligation Bond Project Scope (Archived PDF)](https://files.abqinfo.com/public-works/city-facilities/cabq-2011-city-facilities-parking-go-bond-project-scope.pdf)
+
+  Defines $2.5 million in 2011 bond scopes for Municipal Development vehicles, City-building rehabilitation, Plaza del Sol stucco, security systems, roof and plumbing repairs, and parking-facility upgrades. [Full October 2010 capital-program record](/city-data/capital-spending/#october-2010-program-scope-and-schedule-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/environmental-planning-commission-2011-go-bond-program/cip_facilities_parking_scope.pdf)
+
 ## Design Standards
 
 - [City of Albuquerque CIP Building Design Standards and Guidelines, Revision 17 (2025 archived PDF)](https://files.abqinfo.com/public-works/city-facilities/cabq-cip-building-design-standards-rev-17-2025.pdf)

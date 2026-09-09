@@ -66,6 +66,10 @@ Plans and historical records for designated Metropolitan Redevelopment Areas, wh
 
   Schedules $33.01 million for planning, electronic review, geographic information systems, KIVA, metropolitan redevelopment areas, and neighborhood revitalization. [Full 2011–2019 capital-program record](/city-data/capital-spending/#20112019-department-schedules)
 
+- [2011 Planning General Obligation Bond Project Scope (Archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment/cabq-2011-planning-go-bond-project-scope.pdf)
+
+  Defines $3 million in 2011 Planning bond projects for community planning, electronic plan review, GIS and KIVA systems, North Fourth Street, DeAnza, Clayton Heights, East Gateway, and New York redevelopment areas. [Full October 2010 capital-program record](/city-data/capital-spending/#october-2010-program-scope-and-schedule-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/environmental-planning-commission-2011-go-bond-program/planning_scope.pdf)
+
 ## Historical and Retained Area Plans
 
 - [Historic Central Metropolitan Redevelopment Area Plan (2013 Archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-historic-central-mra-plan-2013.pdf)

@@ -348,6 +348,40 @@ Questions, construction concerns, or text-alert assistance: email [info@i25impro
 
 ## Past Projects (2020 and Earlier)
 
+### Bernalillo County Capital Cooperative and School Bus Route Projects (2015–2022)
+
+- [Capital Cooperative and School Bus Route Road Improvements (2015)](https://www.bernco.gov/public-works/blog/2021/04/16/cap-coop-and-school-bus-route-projects-2015)
+
+  Records two phases of road construction: Meadows Drive in the East Mountains and six Paradise Hills streets, with capital cooperative and school-bus funding.
+
+- [Capital Cooperative and School Bus Route Road Improvements (2016)](https://www.bernco.gov/public-works/blog/2021/04/16/cap-coop-school-bus-2016)
+
+  Lists East Mountain, Industrial Road, and Eubank Road paving work, funding, design status, and a $621,360.73 construction cost under the County capital cooperative and school-bus programs.
+
+- [Capital Cooperative and School Bus Route Road Improvements (2017)](https://www.bernco.gov/public-works/blog/2021/04/16/cap-coop-and-school-bus-2017)
+
+  Records pavement, drainage, and culvert work on Ranchitos Road, Calle de lo Sur, Calle de Oriente, Quail Run, and La Vuelta Drive under the County program.
+
+- [Capital Cooperative and School Bus Route Road Improvements (2018)](https://www.bernco.gov/public-works/blog/2021/04/16/cap-coop-and-school-bus-2018)
+
+  Documents Foothill Road asphalt overlay, speed-hump reconstruction, culvert work, funding sources, schedule, and $559,169 construction cost for the 2018 County roadway project.
+
+- [Capital Cooperative and School Bus Route Road Improvements (2019)](https://www.bernco.gov/public-works/blog/2021/04/16/cap-coop-school-bus-2019)
+
+  Documents resurfacing of various roads in County districts 4 and 5, including the state-County funding split, project team, construction season, and completion status.
+
+- [Capital Cooperative and School Bus Route Road Improvements (2020)](https://www.bernco.gov/public-works/blog/2021/04/16/cap-coop-school-bus-2020)
+
+  Documents repaving of Timan Avenue in Paradise Hills and Kennedy Lane and Longview Drive in the East Mountains, including funding, schedule, and project status.
+
+- [Capital Cooperative and School Bus Route Road Improvements (2021)](https://www.bernco.gov/public-works/blog/2021/04/16/cap-coop-sb-2021)
+
+  Records resurfacing of William and La Vega roads in District 2 and Holli Loop in the East Mountains, with 75 percent state and 25 percent County funding.
+
+- [Capital Cooperative and School Bus Route Road Improvements (2022)](https://www.bernco.gov/public-works/blog/2021/04/16/cap-coop-school-bus-2022)
+
+  Records completion of Pino Avenue and Holli Loop resurfacing in County districts 4 and 5, funded 75 percent by the state and 25 percent by Bernalillo County.
+
 - [Barcelona Road Storm Drain Project Phase 2A](https://www.bernco.gov/public-works/blog/2025/07/15/barcelona-road-strom-drain-project-phase-2a)
 
   Preserves the completed 2019-2020 roadway and drainage project between Joe Sanchez and La Junta Roads, which connected runoff to the Armijo Drain and added bicycle lanes, curb and gutter, and sidewalk.

@@ -63,7 +63,17 @@ foreach ($item in $selectedItems) {
     # before a local inventory-write interruption. Verify that object publicly
     # instead of attempting an unsafe overwrite merely because its ETag has not
     # yet been copied back into the candidate record.
-    if ($currentCandidate.r2_etag -or ($item.PSObject.Properties['already_present'] -and [bool]$item.already_present)) {
+    $existingObjectVerified = $false
+    if (-not $currentCandidate.r2_etag -and -not ($item.PSObject.Properties['already_present'] -and [bool]$item.already_present)) {
+      try {
+        & "$PSScriptRoot/Test-R2PublicObject.ps1" -SourcePath $file.FullName -PublicUrl $publicUrl | Out-Null
+        $existingObjectVerified = $true
+      } catch {
+        # The object was not publicly verifiable.  The guarded uploader below
+        # remains responsible for creating it and will refuse an overwrite.
+      }
+    }
+    if ($currentCandidate.r2_etag -or ($item.PSObject.Properties['already_present'] -and [bool]$item.already_present) -or $existingObjectVerified) {
       & "$PSScriptRoot/Test-R2PublicObject.ps1" -SourcePath $file.FullName -PublicUrl $publicUrl | Out-Null
       & "$PSScriptRoot/Update-Candidate.ps1" -Id $item.id -Set @{
         validation_status = 'local size and SHA-256 passed; existing R2 object verified by public byte-identical download'

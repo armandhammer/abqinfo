@@ -42,6 +42,10 @@ ABQ Ride bus service information and data.
 
   Schedules $42.46 million for ABQ RIDE vehicles, park-and-ride facilities, technology, rehabilitation, maintenance equipment, and bus stops. [Full 2011–2019 capital-program record](/city-data/capital-spending/#20112019-department-schedules)
 
+- [2011 Transit General Obligation Bond Project Scope (Archived PDF)](https://files.abqinfo.com/transportation/transit/cabq-2011-transit-go-bond-project-scope.pdf)
+
+  Defines the 2011 $6.2 million transit bond projects for revenue and support vehicles, park-and-ride facilities, transit technology, facility rehabilitation, maintenance equipment, and bus-stop improvements. [Full October 2010 capital-program record](/city-data/capital-spending/#october-2010-program-scope-and-schedule-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/environmental-planning-commission-2011-go-bond-program/transit_scope.pdf)
+
 - [ABQ RIDE 2009 General Obligation Bond Capital Scope (Archived PDF)](https://files.abqinfo.com/transportation/transit/abq-ride/cabq-abq-ride-general-obligation-bond-capital-scope-2009.pdf)
 
   Allocates 7.75 million dollars in 2009 City bond funding for buses, park-and-ride facilities, shelters, transit technology, facility rehabilitation, maintenance equipment, and security improvements.

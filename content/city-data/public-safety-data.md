@@ -100,6 +100,14 @@ Maintained public-safety dashboards, police statistics, geographic breakdowns, r
 
   Schedules $23.23 million for Police vehicles, facilities, information systems, and Old Main Police Building renovation. [Full 2011–2019 capital-program record](/city-data/capital-spending/#20112019-department-schedules)
 
+- [2011 Fire General Obligation Bond Project Scope (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2011-fire-go-bond-project-scope.pdf)
+
+  Defines the 2011 $4.625 million Fire bond program for replacing emergency-response apparatus, including engines, ladder trucks, Hazmat rescue vehicles, brush trucks, and rehabilitating fire stations. [Full October 2010 capital-program record](/city-data/capital-spending/#october-2010-program-scope-and-schedule-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/environmental-planning-commission-2011-go-bond-program/fire_scope.pdf)
+
+- [2011 Police General Obligation Bond Project Scope (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2011-police-go-bond-project-scope.pdf)
+
+  Defines the 2011 $5.475 million Police bond projects for marked and unmarked vehicle replacement, APD facility repair, and the Comprehensive Information Systems Project. [Full October 2010 capital-program record](/city-data/capital-spending/#october-2010-program-scope-and-schedule-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/environmental-planning-commission-2011-go-bond-program/police_scope.pdf)
+
 - [Albuquerque Fire Rescue Reports](https://www.cabq.gov/fire/copy_of_reports)
 
   The official report library provides monthly reports through 2024 and annual reports through 2022. Use it to check for later releases; the annual-report archive below preserves the City's historical operational record.

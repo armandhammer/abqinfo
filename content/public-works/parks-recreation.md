@@ -20,6 +20,16 @@ Parks and recreation facilities and programs.
 
   Maintains the City's detailed index of active park, trail, aquatics, recreation, and public-space improvements, linking project histories, design concepts, public engagement, schedules, and construction updates.
 
+## Geneiva's Arroyo Greenway
+
+- [Geneiva's Arroyo Greenway Phase 1 Construction Documents (2026 Contributed Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-geneivas-arroyo-greenway-phase-1-construction-documents-2026.pdf)
+
+  Preserves a user-supplied 22-sheet City Parks and Recreation Phase 1 construction set covering demolition, grading, drainage, fencing, electrical work, and the paved multiuse trail. [City project announcement](https://www.cabq.gov/parksandrecreation/news/work-begins-on-geneivas-arroyo-greenway) · [Project StoryMap](https://storymaps.arcgis.com/stories/2c46bc459dd0427cbe60afc090999981)
+
+- [Geneiva's Arroyo Greenway Phase 2 Construction Documents (99% Review; 2026 Contributed Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-geneivas-arroyo-greenway-phase-2-99-percent-review-2026.pdf)
+
+  Preserves a user-supplied 13-sheet 99%-for-review Phase 2 set for irrigation, planting, native seed, trees, shrubs, mulch, and landscape details. It is a review set, not final issued construction documents. [City project announcement](https://www.cabq.gov/parksandrecreation/news/work-begins-on-geneivas-arroyo-greenway) · [January 2022 public-meeting video](https://www.youtube.com/watch?v=mEd-DiOKheI)
+
 - [Tom Bolack Urban Forest Trail Improvements](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/park-improvements/tom-bolack-urban-forest-trail-extension)
 
   Documents the completed 2026 paving and solar-lighting improvements south of I-40 between Louisiana and San Pedro, including the concrete trail connection near the dog park, utility coordination, construction history, and before-and-after photographs.
@@ -67,6 +77,14 @@ Parks and recreation facilities and programs.
 - [2011–2019 Parks and Recreation General Obligation Bond Schedule (Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-2011-2019-parks-recreation-go-bond-schedule.pdf)
 
   Schedules $98.96 million for parks, pools, recreation facilities, trails, open space, and named park projects. [Full 2011–2019 capital-program record](/city-data/capital-spending/#20112019-department-schedules)
+
+- [2011 Parks and Recreation General Obligation Bond Project Scope (Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-2011-parks-recreation-go-bond-project-scope.pdf)
+
+  Defines $14.65 million in 2011 Parks and Recreation bond projects for parks, pools, trails, open space, Bosque restoration, Balloon Fiesta Park, forestry, neighborhood and community parks, and vehicle equipment. [Full October 2010 capital-program record](/city-data/capital-spending/#october-2010-program-scope-and-schedule-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/environmental-planning-commission-2011-go-bond-program/parks_rec_scope.pdf)
+
+- [2011–2019 Parks and Recreation General Obligation Bond Schedule (October 2010 Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-2011-2019-parks-recreation-go-bond-schedule-october-2010.pdf)
+
+  Records the October 2010 Parks and Recreation schedule, totaling $79.43 million through 2019 for parks, pools, trails, open space, Bosque restoration, Balloon Fiesta Park, forestry, and recreation equipment. [Full October 2010 capital-program record](/city-data/capital-spending/#october-2010-program-scope-and-schedule-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/environmental-planning-commission-2011-go-bond-program/parks_rec_summary.pdf)
 
 - [2007–2016 Park Design and Construction Capital Program Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-park-design-construction-capital-program-summary.pdf)
 
