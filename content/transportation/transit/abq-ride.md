@@ -52,6 +52,38 @@ ABQ Ride bus service information and data.
 
   [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/1abq_ride_transit-scopes.pdf) · [Official 2009 Bond Document Collection](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents)
 
+## Historical System Planning and Capital Needs
+
+- [Transit to the Future: Short Range Transit Plan for 2006–2011 (Archived DOC)](https://files.abqinfo.com/transportation/transit/history/cabq-short-range-transit-plan-2006-2011.doc)
+
+  Presents ABQ RIDE's five-year plan for service and capital investment, documenting agency history, routes, ridership, finances, goals, demographic and travel data, system alternatives, public involvement, recommended improvements, implementation, marketing, and evaluation.
+
+  [Official Legistar attachment](https://legistar.granicus.com/cabq/attachments/4221.doc) · [Official EC-06-157 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=EC-06-157&Search=EC-06-157) · [Transportation Plans placement](/transportation/transportation-plans/#historical-city-plans-recovered-from-legistar)
+
+- [Short Range Transit Planning Status and WebHoshin Transition (2008 Archived DOC)](https://files.abqinfo.com/transportation/transit/history/cabq-short-range-transit-planning-status-2008.doc)
+
+  Explains ABQ RIDE's 2008 decision to replace separately printed annual short- and long-range plans with continuous WebHoshin performance planning, while recording the department's federal planning obligations and relationship to the 2006–2011 plan.
+
+  [Official Legistar attachment](https://legistar.granicus.com/cabq/attachments/8145.doc) · [Official EC-08-320 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=EC-08-320&Search=EC-08-320)
+
+- [Transit 10-Year Capital Needs Assessment Status (2008 Archived DOC)](https://files.abqinfo.com/transportation/transit/history/cabq-transit-capital-needs-assessment-status-2008.doc)
+
+  Summarizes ABQ RIDE's ten-year capital-needs work for fleet replacement, maintenance and operating facilities, passenger amenities, and transit technology through 2030, and describes its integration into the department's WebHoshin planning process.
+
+  [Official Legistar attachment](https://legistar.granicus.com/cabq/attachments/8122.doc) · [Official EC-08-317 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=EC-08-317&Search=EC-08-317)
+
+- [Park-And-Ride Transit Center Strategic Planning Status (2008 Archived DOC)](https://files.abqinfo.com/transportation/transit/history/cabq-park-ride-strategic-planning-status-2008.doc)
+
+  Documents ABQ RIDE's park-and-ride planning process and the regional studies, transit plans, development patterns, commuter demand, funding, and candidate locations that were to inform a coordinated strategic plan for future transit centers.
+
+  [Official Legistar attachment](https://legistar.granicus.com/cabq/attachments/8165.doc) · [Official EC-08-324 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=EC-08-324&Search=EC-08-324)
+
+- [Coors and Montaño Park-And-Ride Progress Report (2008 Archived DOC)](https://files.abqinfo.com/transportation/transit/history/cabq-coors-montano-park-ride-progress-2008.doc)
+
+  Records the temporary Cottonwood-area park-and-ride, planned Northwest Transit Center opening, 790 Blue Line service, 2007 bond funding, and the City's search for a permanent Coors-and-Montaño-area transit facility site.
+
+  [Official Legistar attachment](https://legistar.granicus.com/cabq/attachments/8166.doc) · [Official EC-08-324 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=EC-08-324&Search=EC-08-324)
+
 ## Workforce and Operations
 
 - [NMDOT Transit Compensation Study (2026 Archived PDF)](https://files.abqinfo.com/transportation/transit/abq-ride/nmdot-transit-compensation-study-2026.pdf)
@@ -107,6 +139,18 @@ ABQ Ride bus service information and data.
 Project contact: Andrew de Garmo, Principal Planner, ABQ RIDE — [adegarmo@cabq.gov](mailto:adegarmo@cabq.gov) — 505-724-3109.
 
 ## ART Planning and Development History
+
+- [Albuquerque Rapid Transit Amended Design and Finance Plan Response (2016 Archived PDF)](https://files.abqinfo.com/transportation/transit/art/cabq-art-amended-design-finance-plan-response-2016.pdf)
+
+  Records the City's response to Council questions about the amended ART design and finance plan, including lane configurations, property and business access, pedestrian and bicycle accommodations, parking, funding, construction, and project oversight.
+
+  [Maps and Figures (Archived PDF)](https://files.abqinfo.com/transportation/transit/art/cabq-art-amended-design-finance-maps-2016.pdf) · [Official response attachment](https://legistar.granicus.com/cabq/attachments/8d6914d5-f4aa-4941-90e4-1ea71bbb21b6.pdf) · [Official maps attachment](https://legistar.granicus.com/cabq/attachments/e416cd78-331e-4f3e-8c76-0b372a35cd8d.pdf) · [Official EC-16-226 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=EC-16-226&Search=EC-16-226)
+
+- [Albuquerque Rapid Transit Design Reconfiguration Conditions (2016 Archived PDF)](https://files.abqinfo.com/transportation/transit/art/cabq-art-design-reconfiguration-conditions-2016.pdf)
+
+  Preserves Attachment A to Council Resolution R-16-24, specifying required ART design changes for corridor segments, lane widths and speeds, pedestrian and bicycle accommodations, business and property access, parking, and coordination with NMDOT.
+
+  [Official Legistar attachment](https://legistar.granicus.com/cabq/attachments/4625fb48-aa7a-43e3-a7eb-fb815612dd12.pdf) · [Official R-16-24 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=R-16-24&Search=R-16-24)
 
 - [The Scale of the Prize: Community Benefits of Bus Rapid Transit (Final Report)](https://files.abqinfo.com/transportation/transit/art/the-scale-of-the-prize-community-benefits-of-brt-final.pdf)
 
