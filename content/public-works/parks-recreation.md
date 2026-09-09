@@ -20,7 +20,17 @@ Parks and recreation facilities and programs.
 
   Maintains the City's detailed index of active park, trail, aquatics, recreation, and public-space improvements, linking project histories, design concepts, public engagement, schedules, and construction updates.
 
-## Geneiva's Arroyo Greenway
+- [Bernalillo County Open Space Holdings](https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fpdsgismaps.bernco.gov%2Fserver%2Frest%2Fservices%2FBERNCO%2FOpen_Space%2FMapServer&source=sd) <small>[ArcGIS Data](https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/Open_Space/MapServer)</small>
+
+  This live Bernalillo County GIS service maps county real-estate holdings, including open space, parks and recreation facilities, public-safety facilities, and other county properties. It is maintained as data rather than a static downloadable document.
+
+- [City Open Space Planning Projects and Resource-Management Plans](https://www.cabq.gov/parksandrecreation/open-space/about-open-space/open-space-resource-management-plans)
+
+  Albuquerque maintains this library for project-specific Open Space plans, including trails, natural areas, visitor-use management, habitat, and facility planning. Individual records are added only when their scope is independently useful beyond this maintained library.
+
+## Current Parks and Open Space Projects
+
+### Geneiva's Arroyo Greenway
 
 - [Geneiva's Arroyo Greenway Phase 1 Construction Documents (2026 Contributed Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-geneivas-arroyo-greenway-phase-1-construction-documents-2026.pdf)
 
@@ -30,23 +40,17 @@ Parks and recreation facilities and programs.
 
   Preserves a user-supplied 13-sheet 99%-for-review Phase 2 set for irrigation, planting, native seed, trees, shrubs, mulch, and landscape details. It is a review set, not final issued construction documents. [City project announcement](https://www.cabq.gov/parksandrecreation/news/work-begins-on-geneivas-arroyo-greenway) · [January 2022 public-meeting video](https://www.youtube.com/watch?v=mEd-DiOKheI)
 
+### Tom Bolack Urban Forest Trail Improvements
+
 - [Tom Bolack Urban Forest Trail Improvements](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/park-improvements/tom-bolack-urban-forest-trail-extension)
 
   Documents the completed 2026 paving and solar-lighting improvements south of I-40 between Louisiana and San Pedro, including the concrete trail connection near the dog park, utility coordination, construction history, and before-and-after photographs.
 
+## System and Facility Plans
+
 - [ABC Comprehensive Plan, Chapter 10: Parks & Open Space (2025 Update)](https://files.abqinfo.com/public-works/parks-recreation/abc-comprehensive-plan-chapter-10-parks-open-space-2025.pdf)
 
   The parks and open space element of the adopted Albuquerque/Bernalillo County Comprehensive Plan provides policy direction for park access, recreation, trail connections, conservation, stewardship, and an integrated open-space network.
-
-- [Bernalillo County Open Space Holdings](https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fpdsgismaps.bernco.gov%2Fserver%2Frest%2Fservices%2FBERNCO%2FOpen_Space%2FMapServer&source=sd) <small>[ArcGIS Data](https://pdsgismaps.bernco.gov/server/rest/services/BERNCO/Open_Space/MapServer)</small>
-
-  This live Bernalillo County GIS service maps county real-estate holdings, including open space, parks and recreation facilities, public-safety facilities, and other county properties. It is maintained as data rather than a static downloadable document.
-
-- [City Open Space Planning Projects and Resource-Management Plans](https://www.cabq.gov/parksandrecreation/open-space/about-open-space/open-space-resource-management-plans)
-
-  Albuquerque maintains this library for project-specific Open Space plans, including trails, natural areas, visitor-use management, habitat, and facility planning. Individual records are added only when their scope is independently useful beyond this maintained library.
-
-## System and Facility Plans
 
 - [Rio Grande Indoor Pool Renovation](https://www.bernco.gov/public-works/blog/2021/04/15/rio-grande-indoor-pool/)
 
