@@ -129,7 +129,14 @@ try {
   if ($LASTEXITCODE -ne 0) {
     throw "Could not determine current R2 storage for '$Bucket'. Upload cancelled."
   }
-  $currentStorageBytes = if ($currentStorageRaw -eq 'None' -or [string]::IsNullOrWhiteSpace($currentStorageRaw)) { [Int64]0 } else { [Int64]$currentStorageRaw }
+  # Past 1000 objects the CLI paginates and emits one sum per page, so the
+  # result must be totalled rather than cast directly to a single integer.
+  $currentStorageBytes = [Int64]0
+  foreach ($pageSum in @($currentStorageRaw)) {
+    $value = ([string]$pageSum).Trim()
+    if ([string]::IsNullOrWhiteSpace($value) -or $value -eq 'None') { continue }
+    $currentStorageBytes += [Int64]$value
+  }
   $projectedStorageBytes = $currentStorageBytes + $source.Length
   if ($projectedStorageBytes -gt $MaxProjectedStorageBytes) {
     throw "Refusing to upload '$($source.Name)': projected R2 Standard storage ($projectedStorageBytes bytes) exceeds the $MaxProjectedStorageBytes-byte safety limit."

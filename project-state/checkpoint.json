@@ -1,6 +1,6 @@
 {
-  "recorded_at": "2026-09-09T19:29:35.0885811Z",
-  "completed_item_range": "Completed the 2017 General Obligation Bond Program batch on branch claude/2017-go-bond-program. Resolved src-5b871c8f94c619b8 (dmd-cip-fac-parking-summary-1.pdf) as a byte-identical duplicate of src-e43d7a5f1c1d6bfe (dmd-storm-drainage-summary.pdf): identical SHA-256 7785b222b77c5c386e85ff7a689496b36fa950644d36426e523c34819e2c1ae8, extracted text is the DMD/Storm Drainage table, and the City index labels both entries as the storm drainage summary. Downloaded, hashed, and extracted 29 remaining source files (30 archive candidates, 3,930,688 bytes), validated all 30 live official sources (30/30 passed), and added 23 visible placements across 7 pages. R2 upload not yet authorized; no upload or deployment performed.",
+  "recorded_at": "2026-09-09T20:16:48.7857171Z",
+  "completed_item_range": "Completed the 2017 General Obligation Bond Program batch on branch claude/2017-go-bond-program. Resolved src-5b871c8f94c619b8 (dmd-cip-fac-parking-summary-1.pdf) as a byte-identical duplicate of src-e43d7a5f1c1d6bfe (dmd-storm-drainage-summary.pdf): identical SHA-256 7785b222b77c5c386e85ff7a689496b36fa950644d36426e523c34819e2c1ae8 and 149182 bytes, extracted text is the DMD/Storm Drainage table, and the City index labels both entries as the storm drainage summary. Published 30 original City files to R2 (3,930,688 bytes; R2 now 1005 objects), verified every public download byte-identical by SHA-256 (30/30), validated all 30 live official sources (30/30), and marked 31 records validated including the official collection landing page. Added 23 visible placements across 7 pages. Also fixed a blocking pagination defect in scripts/upload-r2-document.ps1 that broke every upload once the bucket passed 1000 objects. No deployment was performed.",
   "total_candidates": 7074,
   "counts_by_status": {
     "pending review": 2824,
@@ -9,20 +9,17 @@
     "downloaded": 6,
     "parsed": 0,
     "description drafted": 0,
-    "placement assigned": 33,
+    "placement assigned": 2,
     "implemented": 178,
-    "validated": 1275,
+    "validated": 1306,
     "excluded": 1170,
     "duplicate": 1412,
     "superseded": 141,
     "blocked": 0,
     "requires human review": 35
   },
-  "remaining_nonterminal": 3041,
+  "remaining_nonterminal": 3010,
   "next_pending_id": "src-02f4041671fc34d7",
-  "blockers": [
-    "R2 upload of the 30-file 2017 GO bond plan awaits user authorization.",
-    "PR not yet opened; awaiting user decision on open PR #132."
-  ],
-  "resume_command": "Resume the 2017 GO bond batch on claude/2017-go-bond-program: upload project-state/discovery/2017-go-bond-program-r2-archive-plan-2026-09-09.json after approval, then run Test-R2ArchivePlan.ps1 and mark the 30 candidates validated."
+  "blockers": [],
+  "resume_command": "Resume deterministic review at src-02f4041671fc34d7, preserving the merged work and the completed 2017 GO bond program batch."
 }
