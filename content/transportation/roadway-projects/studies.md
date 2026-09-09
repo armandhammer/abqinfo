@@ -50,6 +50,14 @@ Transportation studies and reports.
 
   [Official City PDF](https://www.cabq.gov/council/documents/ABQ%20Central%20Ave%20Ex%20Con%20NN%20ppt_5.3.13.pdf)
 
+### Central Avenue / Route 66
+
+- [Route 66 Action Plan (2014 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-route-66-action-plan-2014.pdf)
+
+  Sets a corridor-wide revitalization strategy for Albuquerque's 15 miles of historic Route 66, documenting existing conditions, public priorities, land use, transportation, streetscape, branding, development opportunities, design recommendations, implementation actions, responsible agencies, and funding options.
+
+  [Official Legistar attachment](https://legistar.granicus.com/cabq/attachments/7721c342-134b-428f-b6a5-1fec9471340b.pdf) · [Official R-14-115 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=R-14-115&Search=R-14-115) · [Transportation Plans placement](/transportation/transportation-plans/#historical-city-plans-recovered-from-legistar)
+
 ### Downtown Neighborhood Area
 
 - [Downtown Neighborhood Area Traffic Study (2014 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-downtown-neighborhood-area-traffic-study-2014.pdf)
@@ -155,6 +163,22 @@ Transportation studies and reports.
   Presents the City's unadopted 2017 Rio Grande Boulevard Complete Street concept plan, documenting traffic, crashes, walking, bicycling, and transit conditions; evaluating corridor and intersection alternatives; recording public engagement; and identifying preferred improvements from south of Central Avenue through the I-40 area.
 
   [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/XSections/Rio_Grande_Blvd._Study-NotAdopted-2017.pdf) · [City plans and studies index](https://www.cabq.gov/planning/plans-publications/plans-studies-transportation-cross-sections)
+
+- [Rio Grande Boulevard Complete Street Concept Plan — Adopted Edition (2018 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-rio-grande-boulevard-complete-street-concept-plan-adopted-2018.pdf)
+
+  Preserves the adopted Rio Grande Boulevard concept plan, combining corridor and intersection analysis, multimodal design alternatives, public involvement, preferred improvements, implementation priorities, and appendices for the segment from Central Avenue through the I-40 area.
+
+  [Official Legistar attachment](https://legistar.granicus.com/cabq/attachments/1df427b1-4fd4-48db-b387-690542765915.pdf) · [Official R-18-52 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=R-18-52&Search=R-18-52) · [Transportation Plans placement](/transportation/transportation-plans/#historical-city-plans-recovered-from-legistar)
+
+- [Rio Grande Boulevard and Candelaria Road Crash Rate Report (2013 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/cabq-rio-grande-candelaria-crash-rate-2013.pdf)
+
+  Compares reported crash rates at Rio Grande Boulevard and Candelaria Road with other Albuquerque intersections using NMDOT data, traffic volumes, statewide average rates, and collision-type tables assembled for Council's intersection-safety review.
+
+- [Rio Grande Boulevard and Candelaria Road Severity Index Report (2013 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/cabq-rio-grande-candelaria-severity-index-2013.pdf)
+
+  Compares crash severity at Rio Grande Boulevard and Candelaria Road with selected Albuquerque intersections, contrasting 2004–2006 and 2007–2011 injury and severity-index data to support Council's intersection-safety review.
+
+  [Official crash-rate attachment](https://legistar.granicus.com/cabq/attachments/c7830e07-afd0-44e1-bc9a-c57951f3b699.pdf) · [Official severity-index attachment](https://legistar.granicus.com/cabq/attachments/cea43a7a-714f-40d2-a1f4-3413e541d0dc.pdf) · [Official R-13-163 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=R-13-163&Search=R-13-163) · [Safety & Crash Data placement](/transportation/safety-crash-data/#historical-city-intersection-analysis)
 
 - [Amole Mesa Avenue and Messina Drive Traffic Calming Study](https://www.cabq.gov/council/find-your-councilor/district-3/amole-mesa-ave-and-messina-dr-traffic-calming-study)
 
