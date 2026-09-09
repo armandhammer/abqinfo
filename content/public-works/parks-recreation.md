@@ -20,6 +20,16 @@ Parks and recreation facilities and programs.
 
   Maintains the City's detailed index of active park, trail, aquatics, recreation, and public-space improvements, linking project histories, design concepts, public engagement, schedules, and construction updates.
 
+## Geneiva's Arroyo Greenway
+
+- [Geneiva's Arroyo Greenway Phase 1 Construction Documents (2026 Contributed Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-geneivas-arroyo-greenway-phase-1-construction-documents-2026.pdf)
+
+  Preserves a user-supplied 22-sheet City Parks and Recreation Phase 1 construction set covering demolition, grading, drainage, fencing, electrical work, and the paved multiuse trail. [City project announcement](https://www.cabq.gov/parksandrecreation/news/work-begins-on-geneivas-arroyo-greenway) · [Project StoryMap](https://storymaps.arcgis.com/stories/2c46bc459dd0427cbe60afc090999981)
+
+- [Geneiva's Arroyo Greenway Phase 2 Construction Documents (99% Review; 2026 Contributed Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-geneivas-arroyo-greenway-phase-2-99-percent-review-2026.pdf)
+
+  Preserves a user-supplied 13-sheet 99%-for-review Phase 2 set for irrigation, planting, native seed, trees, shrubs, mulch, and landscape details. It is a review set, not final issued construction documents. [City project announcement](https://www.cabq.gov/parksandrecreation/news/work-begins-on-geneivas-arroyo-greenway) · [January 2022 public-meeting video](https://www.youtube.com/watch?v=mEd-DiOKheI)
+
 - [Tom Bolack Urban Forest Trail Improvements](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/park-improvements/tom-bolack-urban-forest-trail-extension)
 
   Documents the completed 2026 paving and solar-lighting improvements south of I-40 between Louisiana and San Pedro, including the concrete trail connection near the dog park, utility coordination, construction history, and before-and-after photographs.
