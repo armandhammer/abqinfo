@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-09T21:35:00Z",
+  "branch": "codex/inventory-validation-repair",
+  "baseline": {
+    "git_commit": "36d0b41",
+    "worktree": "clean detached origin/main",
+    "master_inventory_validator": {
+      "candidates": 7074,
+      "errors": 124,
+      "groups": {
+        "implemented_or_validated_missing_implementation_location": 12,
+        "terminal_exclusions_missing_exclusion_reason": 16,
+        "content_url_missing_from_inventory": 96
+      }
+    },
+    "retained_source_audit_validator": {
+      "eligible_sources": 537,
+      "queue_records": 464,
+      "missing": 73
+    }
+  },
+  "decisions": {
+    "implementation_locations": {
+      "count": 12,
+      "decision": "Populate the legacy singular implementation_location from each record's existing first implementation_locations value.",
+      "method": "scripts/project/Update-Candidate.ps1"
+    },
+    "terminal_exclusion_reasons": {
+      "count": 16,
+      "decision": "Use the existing substantive duplicate or containment finding from each record's processing notes as its explicit exclusion_reason.",
+      "method": "scripts/project/Update-Candidate.ps1"
+    },
+    "content_urls": {
+      "count": 96,
+      "groups": [
+        {
+          "count": 5,
+          "classification": "archived document URLs",
+          "decision": "Record the already uploaded and byte-validated files.abqinfo.com objects in the matching candidates' r2_key and r2_url fields.",
+          "evidence": "Existing R2 plans, public byte-identical validation records, and project-state/r2-inventory.json entries.",
+          "method": "scripts/project/Update-Candidate.ps1"
+        },
+        {
+          "count": 1,
+          "classification": "canonical direct document URL",
+          "decision": "Update src-b5a87ce12f1a37d5 direct_file_url to the exact 2024 MRCOG URL published in content.",
+          "method": "scripts/project/Update-Candidate.ps1"
+        },
+        {
+          "count": 16,
+          "classification": "recorded candidate provenance",
+          "decision": "Treat URLs already recorded in parent_url, referring_urls, or discovery_path as inventoried provenance, not missing candidate identities.",
+          "composition": {
+            "legistar_matter_records": 14,
+            "city_document_view_or_project_announcement": 2
+          }
+        },
+        {
+          "count": 74,
+          "classification": "compact official meeting-record index",
+          "decision": "Do not manufacture standalone candidates for older OnBase minutes that appear only in content/transportation/bicycling/_index.md's compact date index. The validator exception is restricted to that content path and the numeric OnBase Document URL shape, so other untracked OnBase or content URLs still fail validation."
+        }
+      ]
+    },
+    "retained_source_audit": {
+      "count": 73,
+      "decision": "Add every eligible retained source to the audit queue as pending descendant crawl while preserving all 464 prior queue records and their audit states.",
+      "method": "scripts/project/New-RetainedSourceAuditQueue.ps1",
+      "note": "The previously reported 42-gap figure preceded PR #133. The merged 2017 GO batch added 31 eligible retained source wrappers, producing the clean-origin/main baseline of 73."
+    }
+  },
+  "after": {
+    "master_inventory_validator": {
+      "candidates": 7074,
+      "content_urls": 2431,
+      "supporting_index_urls": 74,
+      "errors": 0
+    },
+    "retained_source_audit_validator": {
+      "eligible_sources": 537,
+      "queue_records": 537,
+      "missing": 0
+    },
+    "retained_source_queue_counts": {
+      "pending_descendant_crawl": 397,
+      "crawled": 140,
+      "requires_rendered_browser_review": 0,
+      "excluded": 0,
+      "superseded": 0
+    }
+  },
+  "external_actions": {
+    "r2_uploads": 0,
+    "merges": 0,
+    "deployments": 0
+  }
+}

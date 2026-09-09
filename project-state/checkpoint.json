@@ -1,6 +1,6 @@
 {
-  "recorded_at": "2026-09-09T20:16:48.7857171Z",
-  "completed_item_range": "Completed the 2017 General Obligation Bond Program batch on branch claude/2017-go-bond-program. Resolved src-5b871c8f94c619b8 (dmd-cip-fac-parking-summary-1.pdf) as a byte-identical duplicate of src-e43d7a5f1c1d6bfe (dmd-storm-drainage-summary.pdf): identical SHA-256 7785b222b77c5c386e85ff7a689496b36fa950644d36426e523c34819e2c1ae8 and 149182 bytes, extracted text is the DMD/Storm Drainage table, and the City index labels both entries as the storm drainage summary. Published 30 original City files to R2 (3,930,688 bytes; R2 now 1005 objects), verified every public download byte-identical by SHA-256 (30/30), validated all 30 live official sources (30/30), and marked 31 records validated including the official collection landing page. Added 23 visible placements across 7 pages. Also fixed a blocking pagination defect in scripts/upload-r2-document.ps1 that broke every upload once the bucket passed 1000 objects. No deployment was performed.",
+  "recorded_at": "2026-09-09T20:58:00Z",
+  "completed_item_range": "Completed the pre-existing inventory-validation repair on branch codex/inventory-validation-repair. Against clean origin/main at 36d0b41, Test-MasterInventory.ps1 improved from 124 errors to 0: 12 missing implementation locations and 16 missing terminal exclusion reasons were repaired through Update-Candidate.ps1, six published-document URLs were restored to candidate fields, 16 supporting citations were recognized through recorded candidate provenance, and 74 OnBase meeting-record index links received a path- and URL-shape-scoped validator classification. Test-RetainedSourceAuditCoverage.ps1 improved from 73 missing of 537 eligible sources to 0 after New-RetainedSourceAuditQueue.ps1 preserved all 464 prior records and added 73 pending roots. Invoke-ProjectValidation.ps1, Hugo, crawler regression, content style, and git diff --check pass. No R2 uploads, merge, or deployment were performed.",
   "total_candidates": 7074,
   "counts_by_status": {
     "pending review": 2824,
@@ -21,5 +21,5 @@
   "remaining_nonterminal": 3010,
   "next_pending_id": "src-02f4041671fc34d7",
   "blockers": [],
-  "resume_command": "Resume deterministic review at src-02f4041671fc34d7, preserving the merged work and the completed 2017 GO bond program batch."
+  "resume_command": "Review and merge the inventory-validation repair PR only with explicit approval; after merge, resume deterministic candidate review at src-02f4041671fc34d7 from a fresh origin/main branch."
 }
