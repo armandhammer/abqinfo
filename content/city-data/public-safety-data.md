@@ -92,6 +92,14 @@ Maintained public-safety dashboards, police statistics, geographic breakdowns, r
 
 ## Fire and Emergency Response
 
+- [2017 Fire General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2017-fire-go-bond-project-scopes.pdf)
+
+  Details $7.15 million in 2017 Fire scopes for replacing emergency response apparatus including engines, ladder trucks, ambulances and light rescues, HazMat and heavy technical rescue vehicles and wildland brush trucks, repairing and renovating department facilities, and phase two reconstruction of Fire Station 9. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2017-2025-fire-go-bond-summary.pdf) schedules $28.35 million through 2025. [Full 2017 capital-program record](/city-data/capital-spending/#2017-general-obligation-bond-program) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/public-safety-fire-scope.pdf) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/public-safety-fire-summary.pdf)
+
+- [2017 Police General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2017-police-go-bond-project-scopes.pdf)
+
+  Details $7.15 million in 2017 Police scopes for planning, designing and constructing the Southeast Area Command, purchasing marked and unmarked replacement vehicles, and renovating, equipping and repairing existing Albuquerque Police Department facilities. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2017-2025-police-go-bond-summary.pdf) schedules $31.55 million through 2025, with $8.4 million of that for the Southeast Area Command. [Full 2017 capital-program record](/city-data/capital-spending/#2017-general-obligation-bond-program) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/public-safety-police-scope.pdf) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/public-safety-police-summary.pdf)
+
 - [2011–2019 Fire General Obligation Bond Schedule (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2011-2019-fire-go-bond-schedule.pdf)
 
   Schedules $26.23 million for fire apparatus replacement and fire-station rehabilitation. [Full 2011–2019 capital-program record](/city-data/capital-spending/#20112019-department-schedules)

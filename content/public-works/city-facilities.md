@@ -6,6 +6,10 @@ Planning, design standards, and selected major projects for City-owned buildings
 
 ## Historical Capital Programming
 
+- [2017 City Facilities, CIP, and Parking General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/city-facilities/cabq-2017-city-facilities-parking-go-bond-project-scopes.pdf)
+
+  Details $3.55 million in 2017 Municipal Development scopes for replacement vehicles, parks construction equipment, City building and roof rehabilitation, Civic underground fire suppression and emergency power, ABC Government Center systems, parking facilities, and security improvements. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/public-works/city-facilities/cabq-2017-2025-city-facilities-parking-go-bond-summary.pdf) schedules $19.15 million through 2025. [Full 2017 capital-program record](/city-data/capital-spending/#2017-general-obligation-bond-program) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-cip-fac-parking-scope.pdf) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-cip-fac-parking-summary.pdf)
+
 - [2007–2016 Municipal Facilities, Energy, Security, and Parking Capital Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-municipal-facilities-energy-security-parking-capital-summary.pdf)
 
   Schedules City building rehabilitation, roofs, security, parking-facility upgrades, replacement vehicles, and lighting, HVAC, renewable-energy, and conservation improvements through five bond cycles. [Full 2007–2016 capital-program record](/city-data/capital-spending/#20072016-decade-plan)

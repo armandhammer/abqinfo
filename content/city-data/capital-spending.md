@@ -466,7 +466,7 @@ The City’s October 2010 Environmental Planning Commission folder preserves a d
 
   Presents the mayor's recommended 2017-2026 capital decade plan and 2017 bond program, with project scopes, locations, costs, schedules, funding sources, departmental priorities, maps, and photographs.
 
-  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/2017-mayors-recommendation-to-city-council.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/2017-mayors-recommendation-to-city-council.pdf)
+  [Department scopes and funding summaries](#2017-general-obligation-bond-program) · [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/2017-mayors-recommendation-to-city-council.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/2017-mayors-recommendation-to-city-council.pdf)
 
 - [2019 General Obligation Bond Program Book (archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2019-go-bond-program-book.pdf)
 
@@ -491,3 +491,103 @@ The City’s October 2010 Environmental Planning Commission folder preserves a d
   Compiles the 2023 Albuquerque General Obligation Bond program by purpose and department, with project descriptions, locations, justifications, requested funding, schedules, and capital-planning context.
 
   [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/2023-bond-program-entire-book.pdf)
+
+### 2017 General Obligation Bond Program
+
+The City published the 2017 program as separate department tables rather than one downloadable book. Each department has a scope table describing what the 2017 bond money buys and a summary table scheduling that department's funding across the 2017–2025 bond cycles. The department tables total $102.78 million in 2017 funding. [Browse the official City collection](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program).
+
+- [2017 General Obligation Bond Program and 2017–2026 Decade Plan Introduction (Archived Word Document)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-go-bond-program-introduction.docx)
+
+  Introduces the 2017 program and decade plan, explaining the mayor's recommendation to City Council, the capital ordinance's ten-year planning requirement, the R-2016-002 funding-capacity resolution, and the 2016 review and hearing sequence. Because the mayor's recommendation book is a scanned image PDF, this is the only text-searchable copy of the introduction.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/introduction.docx/view) · [Official City Word document](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/introduction.docx)
+
+- [2017 General Obligation Bond Project Planning, Selection, and Approval Process (Archived Word Document)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-go-bond-program-process.docx)
+
+  Explains how 2017 bond projects were selected, describing the roughly $142 million in departmental requests, staff committee rating and ranking, senior management review, the Environmental Planning Commission hearing, City Council adoption, and the October 3, 2017 voter approval.
+
+  [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/process.docx/view) · [Official City Word document](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/process.docx)
+
+- [2017 ABQ RIDE Transit General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/transportation/transit/cabq-2017-abq-ride-transit-go-bond-project-scopes.pdf)
+
+  Details $5.9 million in 2017 transit scopes for revenue and support vehicle replacement, transit facility rehabilitation, bus stop improvements, transit technology, maintenance equipment, and a high-capacity corridor study leveraging federal matching funds. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/transportation/transit/cabq-2017-2025-abq-ride-transit-go-bond-summary.pdf) schedules $28.341 million through 2025.
+
+  [ABQ RIDE placement](/transportation/transit/abq-ride/#facilities-and-fleet-planning-history) · [Official City Record — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/abq-ride-transit-scope.pdf/view) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/abq-ride-transit-scope.pdf) · [Official City Record — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/abq-ride-transit-summary.pdf/view) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/abq-ride-transit-summary.pdf)
+
+- [2017 Animal Welfare General Obligation Bond Project Scope (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-animal-welfare-go-bond-project-scopes.pdf)
+
+  Defines the $1.05 million 2017 Animal Welfare scope covering planning, design, construction, renovation, equipment, and vehicles for the City animal shelters and related operations, including mobile and off-site programs. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-2025-animal-welfare-go-bond-summary.pdf) schedules $5.25 million through 2025.
+
+  [Official City Record — scope](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/animal-welfare-scope.pdf/view) · [Official City PDF — scope](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/animal-welfare-scope.pdf) · [Official City Record — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/animal-welfare-summary.pdf/view) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/animal-welfare-summary.pdf)
+
+- [2017 Cultural Services General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-cultural-services-go-bond-project-scopes.pdf)
+
+  Details $3.5 million in 2017 Cultural Services scopes for Balloon Museum exhibits and facilities, KiMo Theatre and South Broadway Cultural Center renovation, library materials, automation and building work, and Albuquerque Museum repairs and collections. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-2025-cultural-services-go-bond-summary.pdf) schedules $23.06 million through 2025 and adds Ernie Pyle Library, Albuquerque Museum phase three, and Casa San Ysidro work.
+
+  [Official City Record — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/cultural-services-scope.pdf/view) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/cultural-services-scope.pdf) · [Official City Record — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/cultural-services-summary.pdf/view) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/cultural-services-summary.pdf)
+
+- [2017 City Facilities, CIP, and Parking General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/city-facilities/cabq-2017-city-facilities-parking-go-bond-project-scopes.pdf)
+
+  Details $3.55 million in 2017 Municipal Development scopes for replacement vehicles, parks construction equipment, City building and roof rehabilitation, Civic underground fire suppression and emergency power, ABC Government Center systems, parking facilities, and security improvements. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/public-works/city-facilities/cabq-2017-2025-city-facilities-parking-go-bond-summary.pdf) schedules $19.15 million through 2025.
+
+  [City Facilities placement](/public-works/city-facilities/#historical-capital-programming) · [Official City Record — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-cip-fac-parking-scope.pdf/view) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-cip-fac-parking-scope.pdf) · [Official City Record — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-cip-fac-parking-summary.pdf/view) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-cip-fac-parking-summary.pdf)
+
+- [2017 Storm Drainage General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/stormwater/cabq-2017-storm-drainage-go-bond-project-scopes.pdf)
+
+  Details $15 million in 2017 storm-drainage scopes for EPA MS4 permit compliance, Martineztown and Mid-Valley storm drains, Loma Hermosa and South Broadway flooding relief, Kirtland detention, arroyo flash-flood warning, water-quality retrofits, dam emergency plans, and channel stabilization. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/public-works/stormwater/cabq-2017-2025-storm-drainage-go-bond-summary.pdf) schedules $99.78 million through 2025.
+
+  [Stormwater & Drainage placement](/public-works/stormwater-drainage/#historical-city-capital-plans) · [Official City Record — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-storm-drainage-scope.pdf/view) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-storm-drainage-scope.pdf) · [Official City Record — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-storm-drainage-summary.pdf/view) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-storm-drainage-summary.pdf)
+
+- [2017 Streets General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/capital-projects/cabq-2017-streets-go-bond-project-scopes.pdf)
+
+  Details $33.8 million in 2017 street scopes for Unser, Chappell Road, Alameda widening, major street and intersection reconstruction, paving rehabilitation, signalization, traffic management, bridge repair, sign replacement, Ladera Road, Zuni Road, ADA sidewalks, trails, and bikeways. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/public-works/capital-projects/cabq-2017-2025-streets-go-bond-summary.pdf) schedules $219.598 million through 2025, the largest department total in the program.
+
+  [Capital Projects placement](/public-works/capital-projects/#historical-project-snapshots) · [Official City Record — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-streets-scope.pdf/view) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-streets-scope.pdf) · [Official City Record — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-streets-summary.pdf/view) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-streets-summary.pdf)
+
+- [2017 Environmental Health General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-environmental-health-go-bond-project-scopes.pdf)
+
+  Details $600,000 in 2017 Environmental Health scopes for health and safety equipment, vehicles, software and training, Los Angeles Landfill remediation including gas extraction and groundwater systems, and satellite facility rehabilitation. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-2025-environmental-health-go-bond-summary.pdf) schedules $9.16 million through 2025.
+
+  [Official City Record — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/env-health-scope.pdf/view) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/env-health-scope.pdf) · [Official City Record — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/env-health-summary.pdf/view) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/env-health-summary.pdf)
+
+- [2017 Family and Community Services General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-family-community-services-go-bond-project-scopes.pdf)
+
+  Details $7.3 million in 2017 Family and Community Services scopes for renovation, security and technology improvements at existing facilities, Loma Linda Community Center, John Marshall Health and Social Service Center, Dennis Chavez Community Center, vehicles, and $2 million for affordable housing. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-2025-family-community-services-go-bond-summary.pdf) schedules $29.5 million through 2025, including $15 million for affordable housing.
+
+  [Official City Record — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/family-comm-services-scope.pdf/view) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/family-comm-services-scope.pdf) · [Official City Record — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/family-comm-services-summary.pdf/view) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/family-comm-services-summary.pdf)
+
+- [2017 Parks and Recreation General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-2017-parks-recreation-go-bond-project-scopes.pdf)
+
+  Details $12.6 million in 2017 Parks and Recreation scopes for park irrigation renovation, Bosque restoration, golf, open space and park management equipment, Los Altos Pool, recreation facilities, Balloon Fiesta Park, new parks, pool renovation, and forestry rehabilitation. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-2017-2025-parks-recreation-go-bond-summary.pdf) schedules $59.55 million through 2025.
+
+  [Parks & Recreation placement](/public-works/parks-recreation/#historical-capital-programming) · [Official City Record — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/parks-recreation-scope.pdf/view) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/parks-recreation-scope.pdf) · [Official City Record — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/parks-recreation-summary.pdf/view) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/parks-recreation-summary.pdf)
+
+- [2017 Planning General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-planning-go-bond-project-scopes.pdf)
+
+  Details $1.65 million in 2017 Planning scopes for electronic plan review, department hardware, software and vehicles, Plaza del Sol rehabilitation, and Metropolitan Redevelopment work in the Innovation District, Downtown, and the Albuquerque Rail Yards. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-2025-planning-go-bond-summary.pdf) schedules $10.89 million through 2025 and adds the Albuquerque Geographic Information System, North Corridor, and Near Heights redevelopment areas.
+
+  [Official City Record — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/planning-scope.pdf/view) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/planning-scope.pdf) · [Official City Record — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/planning-summary.pdf/view) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/planning-summary.pdf)
+
+- [2017 Fire General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2017-fire-go-bond-project-scopes.pdf)
+
+  Details $7.15 million in 2017 Fire scopes for replacing emergency response apparatus including engines, ladder trucks, rescues, HazMat and wildland vehicles, repairing and renovating Albuquerque Fire Department facilities, and phase two reconstruction of Fire Station 9. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2017-2025-fire-go-bond-summary.pdf) schedules $28.35 million through 2025.
+
+  [Public Safety placement](/city-data/public-safety-data/#fire-and-emergency-response) · [Official City Record — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/public-safety-fire-scope.pdf/view) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/public-safety-fire-scope.pdf) · [Official City Record — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/public-safety-fire-summary.pdf/view) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/public-safety-fire-summary.pdf)
+
+- [2017 Police General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2017-police-go-bond-project-scopes.pdf)
+
+  Details $7.15 million in 2017 Police scopes for planning, designing and constructing the Southeast Area Command, purchasing marked and unmarked replacement vehicles, and renovating, equipping and repairing existing Albuquerque Police Department facilities. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2017-2025-police-go-bond-summary.pdf) schedules $31.55 million through 2025.
+
+  [Public Safety placement](/city-data/public-safety-data/#fire-and-emergency-response) · [Official City Record — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/public-safety-police-scope.pdf/view) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/public-safety-police-scope.pdf) · [Official City Record — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/public-safety-police-summary.pdf/view) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/public-safety-police-summary.pdf)
+
+- [2017 Senior Affairs General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-senior-affairs-go-bond-project-scopes.pdf)
+
+  Defines $600,000 in 2017 Senior Affairs scopes for planning, design, construction, rehabilitation, equipment, land, furniture and vehicles for department facilities, plus land acquisition and design for the Northwest Multigenerational Center. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-2025-senior-affairs-go-bond-summary.pdf) schedules $23.9 million through 2025 and adds the North Domingo Baca Multigenerational Center gymnasium.
+
+  [Official City Record — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/senior-affairs-scope.pdf/view) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/senior-affairs-scope.pdf) · [Official City Record — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/senior-affairs-summary.pdf/view) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/senior-affairs-summary.pdf)
+
+- [2017 Technology and Innovation Services General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-technology-innovation-services-go-bond-project-scopes.pdf)
+
+  Details $2.93 million in 2017 Technology and Innovation Services scopes for information-technology infrastructure upgrades, disaster recovery and virtual desktop components, network equipment replacement, the citywide cyber security program, and business application technology. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-2025-technology-innovation-services-go-bond-summary.pdf) schedules $18.705 million through 2025.
+
+  [Official City Record — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/technology-innovation-services-scope.pdf/view) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/technology-innovation-services-scope.pdf) · [Official City Record — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/technology-innovation-services-summary.pdf/view) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/technology-innovation-services-summary.pdf)
