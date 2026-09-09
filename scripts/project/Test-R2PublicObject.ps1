@@ -16,7 +16,9 @@ $sourceHash = (Get-FileHash -LiteralPath $source.FullName -Algorithm SHA256).Has
 $temporaryPath = Join-Path ([IO.Path]::GetTempPath()) ("abqinfo-r2-" + [guid]::NewGuid().ToString('n') + [IO.Path]::GetExtension($source.Name))
 
 try {
-  Invoke-WebRequest -Uri $PublicUrl -OutFile $temporaryPath -UseBasicParsing -MaximumRedirection 10 -TimeoutSec 180
+  # Revalidate rather than accepting a transient cached 404 immediately after
+  # an object is published to the public custom domain.
+  Invoke-WebRequest -Uri $PublicUrl -OutFile $temporaryPath -UseBasicParsing -MaximumRedirection 10 -TimeoutSec 180 -Headers @{ 'Cache-Control' = 'no-cache' }
   $download = Get-Item -LiteralPath $temporaryPath
   $downloadHash = (Get-FileHash -LiteralPath $download.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
   if ($download.Length -ne $source.Length) {

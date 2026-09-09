@@ -109,3 +109,17 @@ The exact former City download locations for this draft collection have not been
   Maps the North Fourth Street plan's proposed transit-oriented, mixed-use, and infill-development overlay districts in December 2009, showing the corridor and study boundaries used during the City Council draft process.
 
   [Official City project archive](https://www.cabq.gov/council/projects/completed-projects/2010/north-4th-street-rank-iii-corridor-plan) · [Official City PDF](https://www.cabq.gov/council/documents/northzonesoverlay8x11.pdf)
+
+## Los Duranes
+
+- [Los Duranes Sector Development Plan — Draft Vision and Goals (September 2009 Archived PDF)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-los-duranes-sector-development-plan-draft-vision-goals-2009.pdf)
+
+  Sets out the community draft vision and goals for family heritage, land and water, agriculture, housing, mobility, and neighborhood character during preparation of the Los Duranes Sector Development Plan.
+
+  [Official City Council document collection](https://www.cabq.gov/council/documents/los-duranes-documents) · [Official City PDF](https://www.cabq.gov/council/documents/los-duranes-documents/ld_vision_and_goals_9.15_ver8.pdf)
+
+- [Los Duranes Sector Development Plan — Neighborhood Review Draft (May 2010 Archived PDF)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-los-duranes-sector-development-plan-neighborhood-review-draft-2010.pdf)
+
+  Presents the complete neighborhood-review draft of the Los Duranes Sector Development Plan, including conditions, vision, land use, transportation, acequias, design standards, implementation, and proposed zoning before 2012 adoption.
+
+  [Official City Council document collection](https://www.cabq.gov/council/documents/los-duranes-documents) · [Official City PDF](https://www.cabq.gov/council/documents/los-duranes-documents/ldsdp_review_draft.pdf)
