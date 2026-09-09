@@ -90,6 +90,14 @@ Capital improvement spending and projects.
 
 ### 2007–2016 Decade Plan
 
+- [2003 Storm Sewer System General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2003-storm-sewer-system-go-bond-project-scopes.pdf)
+
+  Details $11.576 million in 2003 storm-sewer bond scopes for drainage rehabilitation, monitoring, pumps, channels, collectors, crossings, planning, rights-of-way, and public art. [Stormwater & Drainage placement](/public-works/stormwater-drainage/#historical-city-capital-plans) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/StormSewerBonds.pdf)
+
+- [2007 Storm Sewer System General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-storm-sewer-system-go-bond-project-scopes.pdf)
+
+  Details $10.403 million in 2007 storm-sewer bond scopes for District 3, water-quality monitoring, hydrologic planning, collectors, rehabilitation, pump stations, and public art. [Stormwater & Drainage placement](/public-works/stormwater-drainage/#historical-city-capital-plans) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-election-documents/storm-sewer-system.pdf)
+
 The City published this capital program as separate tables rather than one downloadable book. ABQInfo preserves the policy framework and the most useful citywide, departmental, district, enterprise-fund, and impact-fee components together. [Browse the official City collection](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan).
 
 - [Capital Improvements Plan Priorities and Scoring Resolution R-2006-089 (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-capital-improvements-priorities-resolution-r-2006-089.pdf)

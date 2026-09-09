@@ -24,6 +24,12 @@ Cross-cutting development process documents, manuals, and reference materials.
 
 ### Historic Manual Chapters
 
+- [Development Process Manual Chapter 22: Drainage, Flood Control, and Erosion Control (2015 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-development-process-manual-chapter-22-drainage-flood-control-erosion-control-2015.pdf)
+
+  Preserves the 2015 City drainage chapter governing grading, floodplains, erosion control, stormwater pollution prevention, detention, drainage reports, facilities, and development-review obligations before the later manual revision.
+
+  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/DPM-Chapter%2022%20Drainage-Final-Feb2015.pdf) · [Stormwater & Drainage placement](/public-works/stormwater-drainage/#hydrology-and-development-review)
+
 - [Development Process Manual Chapter 17: Drainage and Transportation Procedures (2018 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-drainage-traffic-layout-procedures-2018.pdf)
 
   Preserves pre-2020 City procedures for drainage and Traffic Circulation Layout submittals, engineering review, approvals, expiration, construction certification, private storm drains in rights-of-way, and the forms used to coordinate development with public infrastructure.

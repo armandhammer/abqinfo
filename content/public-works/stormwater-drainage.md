@@ -12,6 +12,18 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
   [Official City Hydrology Section](https://www.cabq.gov/planning/development-review-services/hydrology-section) · [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/Hydro-AHYMO-S4%20R2%20User%20Manual-10-24-18.pdf)
 
+- [AHYMO Application Note: NOAA Atlas 14 Rainfall Distributions (2011 Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/ahymo-noaa-atlas-14-rainfall-distributions-2011.pdf)
+
+  Explains how Albuquerque's AHYMO hydrologic model applies NOAA Atlas 14 rainfall distributions and adjusts older software inputs for accurate urban-stormwater peak-flow calculations. [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/use-of-noaa-atlas-14-with-ahymo-type1-2-rainfall-distributions.pdf)
+
+- [Drainage Pond Slope Stabilization and Seeding Requirements (2022 Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-drainage-pond-slope-stabilization-seeding-requirements-2022.pdf)
+
+  Establishes City interim requirements for stabilizing and seeding subdivision drainage ponds, controlling erosion, reducing maintenance, using native plants and aggregate, and documenting erosion-control plan compliance. [Official City PDF](https://documents.cabq.gov/planning/online-forms/Drainage%20Ponds%20Slope%20Stabilization%20and%20Seeding%20Requirements.pdf)
+
+- [Development Process Manual Chapter 22: Drainage, Flood Control, and Erosion Control (2015 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-development-process-manual-chapter-22-drainage-flood-control-erosion-control-2015.pdf)
+
+  Preserves the 2015 City drainage chapter governing grading, floodplains, erosion control, stormwater pollution prevention, detention, drainage reports, facilities, and development-review obligations before the later manual revision. [Development Process placement](/development-land-use/development-process/#historic-manual-chapters) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/DPM-Chapter%2022%20Drainage-Final-Feb2015.pdf)
+
 - [City of Albuquerque Construction Site Manual (2018)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-construction-site-manual-2018.pdf)
 
   Sets illustrated inspection standards for construction-site sediment and erosion controls, vehicle tracking, inlet protection, channels, housekeeping, washout, debris, street cuts, curb work, stabilization, and maintenance of required best practices.
@@ -75,6 +87,14 @@ Technical standards, studies, models, and public references for Albuquerque’s 
   County project contact: Jennifer Flor, 505-350-7833, [jflor@bernco.gov](mailto:jflor@bernco.gov)
 
 ## Historical City Capital Plans
+
+- [2003 Storm Sewer System General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2003-storm-sewer-system-go-bond-project-scopes.pdf)
+
+  Details $11.576 million in 2003 storm-sewer bond scopes for drainage rehabilitation, monitoring, pumps, channels, collectors, crossings, planning, rights-of-way, and public art. [Capital Spending placement](/city-data/capital-spending/#20072016-decade-plan) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/StormSewerBonds.pdf)
+
+- [2007 Storm Sewer System General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-storm-sewer-system-go-bond-project-scopes.pdf)
+
+  Details $10.403 million in 2007 storm-sewer bond scopes for District 3, water-quality monitoring, hydrologic planning, collectors, rehabilitation, pump stations, and public art. [Capital Spending placement](/city-data/capital-spending/#20072016-decade-plan) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-election-documents/storm-sewer-system.pdf)
 
 - [2009–2017 Storm Drainage General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-2017-storm-drainage-go-bond-summary.pdf)
 
@@ -142,6 +162,18 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
   [Official City Street and Storm Maintenance Page](https://www.cabq.gov/municipaldevelopment/our-department/street-and-storm-maintenance) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/storm-drainage-documents/storm-drainage-pdfs/report-text.pdf)
 
+- [Antibiotic Resistance Analysis of Contamination in Stormwater — Figures (2002 Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-stormwater-antibiotic-resistance-analysis-figures-2002.pdf)
+
+  Supplies the ten mapped sampling-area figures referenced by the final report, locating monitored arroyos, channels, rain gauges, land uses, and contamination-source results across Albuquerque.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/storm-drainage-documents/storm-drainage-pdfs/FIGURESOFREPORT.pdf) · [Companion final report](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-stormwater-antibiotic-resistance-analysis-2002.pdf)
+
+- [Antibiotic Resistance Analysis of Contamination in Stormwater — Appendices (2002 Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-stormwater-antibiotic-resistance-analysis-appendices-2002.pdf)
+
+  Preserves the final report’s supporting classification tables, sample and isolate summaries, study-area map, and site photographs, completing the City’s separately published technical record.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/storm-drainage-documents/storm-drainage-pdfs/APPENDICESOFREPORT.pdf) · [Companion final report](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-stormwater-antibiotic-resistance-analysis-2002.pdf)
+
 ### Municipal Stormwater Program and Annual Reports
 
 - [City of Albuquerque MS4 Annual Report, FY 2025 (archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-annual-report-fy2025.pdf)
@@ -180,7 +212,37 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
   [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/swmp-11-24-2019-submitted.pdf)
 
+- [Arroyo Maintenance Facility Stormwater Pollution Prevention Plan (2021 Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-arroyo-maintenance-facility-stormwater-pollution-prevention-plan-2021.pdf)
+
+  Documents pollution-prevention controls for the City’s Arroyo Maintenance Facility, including operations, potential pollutants, spill response, inspections, training, monitoring, site maps, and environmental compliance.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/dmd-street-maintenance-division-arroyo-maintenance-facility-2021-msgp-swppp.pdf)
+
 ### Historical Permit and Water-Quality Records
+
+- [MS4 Stormwater-Quality Sampling Fact Sheet (2003 Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/usgs-cabq-ms4-stormwater-quality-sampling-fact-sheet-2003.pdf)
+
+  Summarizes the City and USGS cooperative stormwater-quality program, describing sampling locations, land uses, channel conditions, runoff loads, and regulatory monitoring across Albuquerque.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/storm-drainage-documents/storm-drainage-pdfs/Stormwater_factsheet.pdf)
+
+- [Albuquerque Municipal Separate Storm Sewer System Permit (2005 Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-municipal-separate-storm-sewer-system-permit-2005.pdf)
+
+  Sets the 2005 federal municipal-storm-sewer permit requirements for Albuquerque, covering authorized discharges, pollution prevention, monitoring, reporting, implementation schedules, enforcement, and interagency responsibilities.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/storm-drainage-documents/storm-drainage-pdfs/COAMunicipalSeparateStormSewerSystemMS4Permit.pdf)
+
+- [City Storm Drainage Library Index (2010 Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-storm-drainage-library-index-2010.pdf)
+
+  Indexes the City’s historical hydrology and drainage library, identifying capital-program, arroyo, channel, pond, study, design, construction, and close-out records available as of May 2010.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/storm-drainage-documents/storm-drainage-pdfs/StormLibrary_5_19_2010.pdf)
+
+- [Albuquerque MS4 Notice of Intent (2015 Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-notice-of-intent-2015.pdf)
+
+  Records Albuquerque’s 2015 notice of intent for municipal stormwater permit coverage, documenting the transition to the watershed-based MS4 program and related compliance commitments.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/national-pollutant-discharge-elimination-system-stormwater-program-ms4-notice-of-intent-format-may-19-2015-nmr0ra000.pdf)
 
 - [City of Albuquerque MS4 Monitoring Data for Water Year 2015 (Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-monitoring-data-water-year-2015.pdf)
 
