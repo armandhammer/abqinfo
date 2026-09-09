@@ -34,6 +34,18 @@ Planning, design standards, and selected major projects for City-owned buildings
 
   [Official City PDF](https://documents.cabq.gov/planning/MasterPlans/DEII/Double-Eagle-Master-Plan-FullSize.pdf) · [Transportation Plans Placement](/transportation/transportation-plans/#aviation-planning)
 
+- [Double Eagle II Airport Master Plan — Original Adopted Edition (2019 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-double-eagle-ii-airport-master-plan-original-2019.pdf)
+
+  Preserves the original adopted 2019 airport master plan before the 2024 amendment, covering aviation forecasts, facility requirements, development alternatives, environmental considerations, land-use compatibility, recommended improvements, funding, and phased implementation.
+
+  [Official Legistar attachment](https://legistar.granicus.com/cabq/attachments/ab7f1a8b-2258-496c-ad4e-c6343ace4691.pdf) · [Official R-19-169 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=R-19-169&Search=R-19-169) · [Transportation Plans placement](/transportation/transportation-plans/#aviation-planning)
+
+- [Double Eagle II Aerospace Technology Park Transportation Distribution Status (2008 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-double-eagle-technology-park-transportation-status-2008.pdf)
+
+  Maps and summarizes the transportation and utility infrastructure serving the Double Eagle II Aerospace Technology Park, including roadway distribution, pedestrian and bicycle trail connections, transit facilities, and related development status.
+
+  [Official Legistar attachment](https://legistar.granicus.com/cabq/attachments/6595.pdf) · [Official EC-07-1 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=EC-07-1&Search=EC-07-1) · [Transportation Plans placement](/transportation/transportation-plans/#historical-city-plans-recovered-from-legistar)
+
 ## Major Facility Projects
 
 - [Gateway Center](https://www.cabq.gov/health-housing-homelessness/gateway-system-of-care/gateway-center/gateway-center-1)

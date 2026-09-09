@@ -333,6 +333,32 @@ These records preserve the adopted two-year program and each FHWA/FTA-approved r
 
   [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/o_07_71.pdf)
 
+### Historical City Plans Recovered from Legistar
+
+- [Transit to the Future: Short Range Transit Plan for 2006–2011 (Archived DOC)](https://files.abqinfo.com/transportation/transit/history/cabq-short-range-transit-plan-2006-2011.doc)
+
+  Presents ABQ RIDE's five-year plan for service and capital investment, documenting agency history, routes, ridership, finances, goals, demographic and travel data, system alternatives, public involvement, recommended improvements, implementation, marketing, and evaluation. [ABQ RIDE placement](/transportation/transit/abq-ride/#historical-system-planning-and-capital-needs)
+
+  [Official Legistar attachment](https://legistar.granicus.com/cabq/attachments/4221.doc) · [Official EC-06-157 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=EC-06-157&Search=EC-06-157)
+
+- [Route 66 Action Plan (2014 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-route-66-action-plan-2014.pdf)
+
+  Sets a corridor-wide revitalization strategy for Albuquerque's 15 miles of historic Route 66, documenting existing conditions, public priorities, land use, transportation, streetscape, branding, development opportunities, design recommendations, implementation actions, responsible agencies, and funding options. [Roadway Studies placement](/transportation/roadway-projects/studies/#central-avenue-route-66)
+
+  [Official Legistar attachment](https://legistar.granicus.com/cabq/attachments/7721c342-134b-428f-b6a5-1fec9471340b.pdf) · [Official R-14-115 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=R-14-115&Search=R-14-115)
+
+- [Rio Grande Boulevard Complete Street Concept Plan — Adopted Edition (2018 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-rio-grande-boulevard-complete-street-concept-plan-adopted-2018.pdf)
+
+  Preserves the adopted Rio Grande Boulevard concept plan, combining corridor and intersection analysis, multimodal design alternatives, public involvement, preferred improvements, implementation priorities, and appendices for the segment from Central Avenue through the I-40 area. [Roadway Studies placement](/transportation/roadway-projects/studies/#rio-grande-boulevard)
+
+  [Official Legistar attachment](https://legistar.granicus.com/cabq/attachments/1df427b1-4fd4-48db-b387-690542765915.pdf) · [Official R-18-52 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=R-18-52&Search=R-18-52)
+
+- [Double Eagle II Aerospace Technology Park Transportation Distribution Status (2008 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-double-eagle-technology-park-transportation-status-2008.pdf)
+
+  Maps and summarizes the transportation and utility infrastructure serving the Double Eagle II Aerospace Technology Park, including roadway distribution, pedestrian and bicycle trail connections, transit facilities, and related development status. [City Facilities placement](/public-works/city-facilities/#aviation-facilities)
+
+  [Official Legistar attachment](https://legistar.granicus.com/cabq/attachments/6595.pdf) · [Official EC-07-1 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=EC-07-1&Search=EC-07-1)
+
 ### Historical Capital Programming
 
 - [2009–2017 Streets General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-2017-streets-go-bond-summary.pdf)
@@ -406,6 +432,12 @@ These records preserve the adopted two-year program and each FHWA/FTA-approved r
   Guides long-term development of Double Eagle II Airport through aviation forecasts, runway and taxiway requirements, compatible land use, airside and landside alternatives, environmental review, recommended facilities, funding strategies, and a phased capital improvement program.
 
   [Official City PDF](https://documents.cabq.gov/planning/MasterPlans/DEII/Double-Eagle-Master-Plan-FullSize.pdf) · [City Facilities Placement](/public-works/city-facilities/#aviation-facilities)
+
+- [Double Eagle II Airport Master Plan — Original Adopted Edition (2019 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-double-eagle-ii-airport-master-plan-original-2019.pdf)
+
+  Preserves the original adopted 2019 airport master plan before the 2024 amendment, covering aviation forecasts, facility requirements, development alternatives, environmental considerations, land-use compatibility, recommended improvements, funding, and phased implementation.
+
+  [Official Legistar attachment](https://legistar.granicus.com/cabq/attachments/ab7f1a8b-2258-496c-ad4e-c6343ace4691.pdf) · [Official R-19-169 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=R-19-169&Search=R-19-169) · [City Facilities placement](/public-works/city-facilities/#aviation-facilities)
 
 ### Historical Citywide System Map
 

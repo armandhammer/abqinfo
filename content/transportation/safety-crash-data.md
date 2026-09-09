@@ -64,6 +64,18 @@ title: "Safety & Crash Data"
 
   Analyzes a decade of metropolitan crash trends, severity, roadway characteristics, contributing factors, intersections, pedestrians, bicyclists, and geographic patterns to support Albuquerque-area transportation planning and safety investment. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/1905/2001-to-2010-Crash-and-Safety-Report-for-the-Albuquerque-Metropolitan-Planning-Area-PDF)
 
+## Historical City Intersection Analysis
+
+- [Rio Grande Boulevard and Candelaria Road Crash Rate Report (2013 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/cabq-rio-grande-candelaria-crash-rate-2013.pdf)
+
+  Compares reported crash rates at Rio Grande Boulevard and Candelaria Road with other Albuquerque intersections using NMDOT data, traffic volumes, statewide average rates, and collision-type tables assembled for Council's intersection-safety review.
+
+- [Rio Grande Boulevard and Candelaria Road Severity Index Report (2013 Archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/cabq-rio-grande-candelaria-severity-index-2013.pdf)
+
+  Compares crash severity at Rio Grande Boulevard and Candelaria Road with selected Albuquerque intersections, contrasting 2004–2006 and 2007–2011 injury and severity-index data to support Council's intersection-safety review.
+
+  [Official crash-rate attachment](https://legistar.granicus.com/cabq/attachments/c7830e07-afd0-44e1-bc9a-c57951f3b699.pdf) · [Official severity-index attachment](https://legistar.granicus.com/cabq/attachments/cea43a7a-714f-40d2-a1f4-3413e541d0dc.pdf) · [Official R-13-163 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=R-13-163&Search=R-13-163) · [Roadway Studies placement](/transportation/roadway-projects/studies/#rio-grande-boulevard)
+
 ## Bicycle Travel and Rider Surveys
 
 - [2025 Bike to Work Day Survey Results](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/mrcog-bike-to-work-day-survey-results-2025.pdf)

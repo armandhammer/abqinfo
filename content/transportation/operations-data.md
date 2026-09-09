@@ -32,6 +32,12 @@ Regional roadway operations, traffic analysis, incident management, and intellig
 
   [Official City PDF](https://www.cabq.gov/council/documents/21st-century-transportation-task-force/6.11.08.street_maintenance_and_rehab.dmd.pdf) · [2008 Transportation Task Force record](/transportation/transportation-plans/#2008-transportation-task-force-record)
 
+- [Street-Maintenance Pavement-Rating Program Status Packet (2012 Archived PDF)](https://files.abqinfo.com/transportation/operations-data/cabq-pavement-rating-program-status-2012.pdf)
+
+  Documents Council's receipt of a City update on developing a pavement-rating program for street maintenance, including the planned condition-assessment approach, program purpose, cover analysis, and administrative routing record.
+
+  [Official Legistar attachment](https://legistar.granicus.com/cabq/attachments/13218.pdf) · [Official EC-12-169 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=EC-12-169&Search=EC-12-169)
+
 - [Streetlight Status Dashboard](https://www.arcgis.com/apps/dashboards/1facbd146a924224b1698c7d164662c3)
 
   Displays weekly updated operational status for City streetlights using vendor data, helping users examine working and non-working assets while the City expands integration with PNM work-order information.
