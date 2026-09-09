@@ -18,6 +18,10 @@ ABQ Ride bus service information and data.
 
 ## Facilities and Fleet Planning History
 
+- [2017 ABQ RIDE Transit General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/transportation/transit/cabq-2017-abq-ride-transit-go-bond-project-scopes.pdf)
+
+  Details $5.9 million in 2017 transit scopes for revenue and support vehicle replacement, transit facility rehabilitation including the Yale facility stormwater permit, bus stop improvements, transit technology, maintenance equipment, and a high-capacity corridor study leveraging federal matching funds. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/transportation/transit/cabq-2017-2025-abq-ride-transit-go-bond-summary.pdf) schedules $28.341 million through 2025. [Full 2017 capital-program record](/city-data/capital-spending/#2017-general-obligation-bond-program) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/abq-ride-transit-scope.pdf) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/abq-ride-transit-summary.pdf)
+
 - [2009–2017 ABQ RIDE General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-2017-abq-ride-go-bond-summary.pdf)
 
   Schedules $63.25 million for revenue vehicles, park-and-ride facilities, shelters, technology, facility rehabilitation, maintenance equipment, and transit security. [Full 2009 capital-program record](/city-data/capital-spending/#2009-general-obligation-bond-program) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/abq_ride_transit-summary.pdf)

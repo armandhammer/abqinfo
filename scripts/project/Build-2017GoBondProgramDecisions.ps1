@@ -1,0 +1,142 @@
+[CmdletBinding()]
+param(
+  [string]$InventoryPath = 'project-state/master-inventory.json',
+  [string]$DecisionPath = 'project-state/discovery/2017-go-bond-program-decisions-2026-09-09.json',
+  [string]$PlanPath = 'project-state/discovery/2017-go-bond-program-r2-archive-plan-2026-09-09.json'
+)
+
+Set-StrictMode -Version Latest
+$ErrorActionPreference = 'Stop'
+
+$capital = 'content/city-data/capital-spending.md'
+$stormwater = 'content/public-works/stormwater-drainage.md'
+$facilities = 'content/public-works/city-facilities.md'
+$parks = 'content/public-works/parks-recreation.md'
+$transit = 'content/transportation/transit/abq-ride.md'
+$safety = 'content/city-data/public-safety-data.md'
+$projects = 'content/public-works/capital-projects.md'
+
+$sourceNote = 'Official City 2017 General Obligation Bond Program table from the cabq.gov 2017-go-program document library; exact size, SHA-256, and full extracted text reviewed.'
+
+$items = @(
+  [ordered]@{id='src-4481a036f1386231';title='2017 ABQ RIDE Transit General Obligation Bond Project Scopes';date='2017';key='transportation/transit/cabq-2017-abq-ride-transit-go-bond-project-scopes.pdf';page=$capital;locations=@($capital,$transit);description='Details $5.9 million in 2017 transit bond scopes for revenue and support vehicle replacement, transit facility rehabilitation, bus stop improvements, transit technology, maintenance equipment upgrades, and a high-capacity corridor study leveraging federal matching funds.';note=$sourceNote}
+  [ordered]@{id='src-0aebef9e2df3a7c4';title='2017-2025 ABQ RIDE Transit General Obligation Bond Summary';date='2017';key='transportation/transit/cabq-2017-2025-abq-ride-transit-go-bond-summary.pdf';page=$capital;locations=@($capital,$transit);description='Schedules $28.341 million of ABQ RIDE bond funding across 2017 through 2025 for revenue and support vehicles, facility rehabilitation, bus stop improvements, transit technology, maintenance equipment, and high-capacity corridor studies, with each project ranked by priority.';note=$sourceNote}
+  [ordered]@{id='src-12ebd2ca96b15422';title='2017 Animal Welfare General Obligation Bond Project Scope';date='2017';key='city-data/capital-spending/cabq-2017-animal-welfare-go-bond-project-scopes.pdf';page=$capital;locations=@($capital);description='Defines the $1.05 million 2017 Animal Welfare bond scope covering planning, design, construction, renovation, equipment, and vehicles for the City animal shelters and related operations, including mobile and off-site adoption and care programs.';note=$sourceNote}
+  [ordered]@{id='src-313a529220b95ddf';title='2017-2025 Animal Welfare General Obligation Bond Summary';date='2017';key='city-data/capital-spending/cabq-2017-2025-animal-welfare-go-bond-summary.pdf';page=$capital;locations=@($capital);description='Schedules $5.25 million from 2017 through 2025 for Albuquerque animal shelter rehabilitation and equipment, showing the single Animal Welfare bond project and its biennial funding within the Community Facilities portion of the decade plan.';note=$sourceNote}
+  [ordered]@{id='src-797e0116c0f7b0a2';title='2017 Cultural Services General Obligation Bond Project Scopes';date='2017';key='city-data/capital-spending/cabq-2017-cultural-services-go-bond-project-scopes.pdf';page=$capital;locations=@($capital);description='Details $3.5 million in 2017 Cultural Services bond scopes for Balloon Museum exhibits and facilities, KiMo Theatre and South Broadway Cultural Center renovation, library materials, automation and building work, and Albuquerque Museum repairs and collections.';note=$sourceNote}
+  [ordered]@{id='src-522b52d5a15c0181';title='2017-2025 Cultural Services General Obligation Bond Summary';date='2017';key='city-data/capital-spending/cabq-2017-2025-cultural-services-go-bond-summary.pdf';page=$capital;locations=@($capital);description='Schedules $23.06 million from 2017 through 2025 for the Balloon Museum, KiMo Theatre, South Broadway Cultural Center, library materials, automation and renovations, Ernie Pyle Library, Albuquerque Museum phase three construction, collections, and Casa San Ysidro.';note=$sourceNote}
+  [ordered]@{id='src-336e74527d9d663e';title='2017 City Facilities, CIP, and Parking General Obligation Bond Project Scopes';date='2017';key='public-works/city-facilities/cabq-2017-city-facilities-parking-go-bond-project-scopes.pdf';page=$capital;locations=@($capital,$facilities);description='Details $3.55 million in 2017 Municipal Development scopes for replacement vehicles, parks construction equipment, City building and roof rehabilitation, Civic underground fire suppression and emergency power, ABC Government Center systems, parking facilities, and security improvements.';note=$sourceNote}
+  [ordered]@{id='src-b474f3df7b9187a7';title='2017-2025 City Facilities, CIP, and Parking General Obligation Bond Summary';date='2017';key='public-works/city-facilities/cabq-2017-2025-city-facilities-parking-go-bond-summary.pdf';page=$capital;locations=@($capital,$facilities);description='Schedules $19.15 million from 2017 through 2025 across the Municipal Development CIP division, facilities and energy management, and parking and security, covering City building improvement, roofs, Civic underground systems, parking rehabilitation, and security upgrades.';note=$sourceNote}
+  [ordered]@{id='src-72e8d54278492d06';title='2017 Storm Drainage General Obligation Bond Project Scopes';date='2017';key='public-works/stormwater/cabq-2017-storm-drainage-go-bond-project-scopes.pdf';page=$capital;locations=@($capital,$stormwater);description='Details $15 million in 2017 storm-drainage bond scopes for EPA MS4 permit compliance, Martineztown and Mid-Valley storm drains, Loma Hermosa and South Broadway flooding relief, Kirtland detention, arroyo flash-flood warning, water-quality retrofits, dam emergency plans, and channel stabilization.';note=$sourceNote}
+  [ordered]@{id='src-e43d7a5f1c1d6bfe';title='2017-2025 Storm Drainage General Obligation Bond Summary';date='2017';key='public-works/stormwater/cabq-2017-2025-storm-drainage-go-bond-summary.pdf';page=$capital;locations=@($capital,$stormwater);description='Schedules $99.78 million from 2017 through 2025 for stormwater-quality permit compliance, storm drain and pump station rehabilitation, Mid-Valley and South Broadway improvements, Marble Arno detention, Chelwood Park and Morris storm drains, and Gibson-San Mateo floodplain mitigation.';note=$sourceNote}
+  [ordered]@{id='src-249fd1fc3b6de51a';title='2017 Streets General Obligation Bond Project Scopes';date='2017';key='public-works/capital-projects/cabq-2017-streets-go-bond-project-scopes.pdf';page=$capital;locations=@($capital,$projects);description='Details $33.8 million in 2017 street bond scopes for Unser, Chappell Road, Alameda widening, major street and intersection reconstruction, paving rehabilitation, signalization, traffic management, bridge repair, sign replacement, Ladera Road, Zuni Road, ADA sidewalks, trails, and bikeways.';note=$sourceNote}
+  [ordered]@{id='src-83d02810b171f365';title='2017-2025 Streets General Obligation Bond Summary';date='2017';key='public-works/capital-projects/cabq-2017-2025-streets-go-bond-summary.pdf';page=$capital;locations=@($capital,$projects);description='Schedules $219.598 million from 2017 through 2025 for paving rehabilitation, major street and intersection reconstruction, signalization, traffic management, bridges, sidewalks, lighting, landscaping, trails and bikeways, and named corridor projects including Alameda, Irving, Westside, and Tijeras Bridge.';note=$sourceNote}
+  [ordered]@{id='src-61ad2dbdc6d9a82f';title='2017 Environmental Health General Obligation Bond Project Scopes';date='2017';key='city-data/capital-spending/cabq-2017-environmental-health-go-bond-project-scopes.pdf';page=$capital;locations=@($capital);description='Details $600,000 in 2017 Environmental Health bond scopes for health and safety equipment, vehicles, software and training, Los Angeles Landfill remediation including gas extraction and groundwater systems, and satellite facility rehabilitation for energy efficiency.';note=$sourceNote}
+  [ordered]@{id='src-0ab1f927f3729215';title='2017-2025 Environmental Health General Obligation Bond Summary';date='2017';key='city-data/capital-spending/cabq-2017-2025-environmental-health-go-bond-summary.pdf';page=$capital;locations=@($capital);description='Schedules $9.16 million from 2017 through 2025 for Environmental Health equipment, vehicles, software and training materials, Los Angeles Landfill remediation, and satellite facility rehabilitation, ranking the department three bond projects within the Community Facilities program.';note=$sourceNote}
+  [ordered]@{id='src-0fa26c668eff7260';title='2017 Family and Community Services General Obligation Bond Project Scopes';date='2017';key='city-data/capital-spending/cabq-2017-family-community-services-go-bond-project-scopes.pdf';page=$capital;locations=@($capital);description='Details $7.3 million in 2017 Family and Community Services bond scopes for renovation, security and technology improvements at existing facilities, Loma Linda Community Center, John Marshall Health and Social Service Center, Dennis Chavez Community Center, vehicles, and affordable housing.';note=$sourceNote}
+  [ordered]@{id='src-b1c6bfb2ba73681d';title='2017-2025 Family and Community Services General Obligation Bond Summary';date='2017';key='city-data/capital-spending/cabq-2017-2025-family-community-services-go-bond-summary.pdf';page=$capital;locations=@($capital);description='Schedules $29.5 million from 2017 through 2025 for community center, child development, and health and social service facility renovation, the Loma Linda, John Marshall and Dennis Chavez centers, vehicle replacement, and $15 million in affordable housing.';note=$sourceNote}
+  [ordered]@{id='src-845ddacac48d818e';title='2017 Parks and Recreation General Obligation Bond Project Scopes';date='2017';key='public-works/parks-recreation/cabq-2017-parks-recreation-go-bond-project-scopes.pdf';page=$capital;locations=@($capital,$parks);description='Details $12.6 million in 2017 Parks and Recreation bond scopes for park irrigation renovation, Bosque restoration, golf, open space and park management equipment, Los Altos Pool, recreation facilities, Balloon Fiesta Park, new parks, pool renovation, and forestry rehabilitation.';note=$sourceNote}
+  [ordered]@{id='src-463cc9e5e708ca82';title='2017-2025 Parks and Recreation General Obligation Bond Summary';date='2017';key='public-works/parks-recreation/cabq-2017-2025-parks-recreation-go-bond-summary.pdf';page=$capital;locations=@($capital,$parks);description='Schedules $59.55 million from 2017 through 2025 for irrigation renovation, Bosque restoration, equipment and vehicles, pool and recreation facility work, Balloon Fiesta Park, new park development, Cibola Loop, citywide forestry, a regional baseball complex, and Westgate Community Center Park.';note=$sourceNote}
+  [ordered]@{id='src-216a7703a7f21006';title='2017 Planning General Obligation Bond Project Scopes';date='2017';key='city-data/capital-spending/cabq-2017-planning-go-bond-project-scopes.pdf';page=$capital;locations=@($capital);description='Details $1.65 million in 2017 Planning bond scopes for electronic plan review, department hardware, software and vehicles, Plaza del Sol rehabilitation, and Metropolitan Redevelopment work in the Innovation District, Downtown, and the Albuquerque Rail Yards.';note=$sourceNote}
+  [ordered]@{id='src-0e7f98215f3fbb7d';title='2017-2025 Planning General Obligation Bond Summary';date='2017';key='city-data/capital-spending/cabq-2017-2025-planning-go-bond-summary.pdf';page=$capital;locations=@($capital);description='Schedules $10.89 million from 2017 through 2025 for electronic plan review, planning hardware, software and vehicles, Plaza del Sol, the Albuquerque Geographic Information System, and Innovation District, Rail Yards, North Corridor, and Near Heights redevelopment areas.';note=$sourceNote}
+  [ordered]@{id='src-2e9204f14cd8f46d';title='2017 Fire General Obligation Bond Project Scopes';date='2017';key='city-data/public-safety/cabq-2017-fire-go-bond-project-scopes.pdf';page=$capital;locations=@($capital,$safety);description='Details $7.15 million in 2017 Fire bond scopes for replacing emergency response apparatus including engines, ladder trucks, rescues, HazMat and wildland vehicles, repairing and renovating Albuquerque Fire Department facilities, and phase two reconstruction of Fire Station 9.';note=$sourceNote}
+  [ordered]@{id='src-1b90ccd44428b6ab';title='2017-2025 Fire General Obligation Bond Summary';date='2017';key='city-data/public-safety/cabq-2017-2025-fire-go-bond-summary.pdf';page=$capital;locations=@($capital,$safety);description='Schedules $28.35 million from 2017 through 2025 for Albuquerque Fire Department apparatus replacement, facility repair, renovation and rehabilitation, and the phase two reconstruction of Fire Station 9, ranking each project within the Public Safety bond purpose.';note=$sourceNote}
+  [ordered]@{id='src-111d265ec8a4592f';title='2017 Police General Obligation Bond Project Scopes';date='2017';key='city-data/public-safety/cabq-2017-police-go-bond-project-scopes.pdf';page=$capital;locations=@($capital,$safety);description='Details $7.15 million in 2017 Police bond scopes for planning, designing and constructing the Southeast Area Command, purchasing marked and unmarked replacement vehicles, and renovating, equipping and repairing existing Albuquerque Police Department facilities.';note=$sourceNote}
+  [ordered]@{id='src-b6933b287a6b8183';title='2017-2025 Police General Obligation Bond Summary';date='2017';key='city-data/public-safety/cabq-2017-2025-police-go-bond-summary.pdf';page=$capital;locations=@($capital,$safety);description='Schedules $31.55 million from 2017 through 2025 for the Southeast Area Command, Albuquerque Police Department vehicle purchases, and renovation and repair of APD facilities, ranking each project within the Public Safety portion of the decade plan.';note=$sourceNote}
+  [ordered]@{id='src-bc0e9217d013a65e';title='2017 Senior Affairs General Obligation Bond Project Scopes';date='2017';key='city-data/capital-spending/cabq-2017-senior-affairs-go-bond-project-scopes.pdf';page=$capital;locations=@($capital);description='Defines $600,000 in 2017 Senior Affairs bond scopes for planning, design, construction, rehabilitation, equipment, land, furniture and vehicles for department facilities, plus land acquisition and design for the Northwest Multigenerational Center.';note=$sourceNote}
+  [ordered]@{id='src-130191bd25715b96';title='2017-2025 Senior Affairs General Obligation Bond Summary';date='2017';key='city-data/capital-spending/cabq-2017-2025-senior-affairs-go-bond-summary.pdf';page=$capital;locations=@($capital);description='Schedules $23.9 million from 2017 through 2025 for Senior Affairs facility renovation and rehabilitation, the Northwest Multigenerational Center, and the North Domingo Baca Multigenerational Center gymnasium within the Community Facilities bond purpose.';note=$sourceNote}
+  [ordered]@{id='src-5fde9efeb5f56c2b';title='2017 Technology and Innovation Services General Obligation Bond Project Scopes';date='2017';key='city-data/capital-spending/cabq-2017-technology-innovation-services-go-bond-project-scopes.pdf';page=$capital;locations=@($capital);description='Details $2.93 million in 2017 Technology and Innovation Services bond scopes for information-technology infrastructure upgrades, disaster recovery and virtual desktop components, network equipment replacement, the citywide cyber security program, and business application technology.';note=$sourceNote}
+  [ordered]@{id='src-e89fa88be97ca7b0';title='2017-2025 Technology and Innovation Services General Obligation Bond Summary';date='2017';key='city-data/capital-spending/cabq-2017-2025-technology-innovation-services-go-bond-summary.pdf';page=$capital;locations=@($capital);description='Schedules $18.705 million from 2017 through 2025 for information-technology infrastructure upgrades, network equipment replacement, the citywide cyber security program including penetration testing, and business application technology supporting City business systems.';note=$sourceNote}
+  [ordered]@{id='src-cab3e5143a63a282';title='2017 General Obligation Bond Program and 2017-2026 Decade Plan Introduction';date='2017-01';key='city-data/capital-spending/cabq-2017-go-bond-program-introduction.docx';page=$capital;locations=@($capital);description='Introduces the 2017 General Obligation Bond Program and 2017-2026 Decade Plan, explaining the mayor recommendation to City Council, the capital ordinance ten-year planning requirement, the R-2016-002 funding capacity resolution, and the 2016 review and hearing sequence.';note='Official City Word document published in the 2017-go-program library; the only text-searchable copy of the program introduction, because the scanned mayor recommendation PDF yields no extractable text.'}
+  [ordered]@{id='src-659e9742c87de3e4';title='2017 General Obligation Bond Project Planning, Selection, and Approval Process';date='2017-01';key='city-data/capital-spending/cabq-2017-go-bond-program-process.docx';page=$capital;locations=@($capital);description='Explains how 2017 bond projects were selected, describing the $142 million in departmental requests, staff committee rating and ranking, senior management review, Environmental Planning Commission hearing, City Council adoption, and the October 3, 2017 voter approval.';note='Official City Word document published in the 2017-go-program library; the only text-searchable copy of the program selection process, because the scanned mayor recommendation PDF yields no extractable text.'}
+)
+
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
+foreach ($item in $items) {
+  $candidate = @($inventory.candidates | Where-Object id -eq $item.id)
+  if ($candidate.Count -ne 1) { throw "Expected one candidate for '$($item.id)'." }
+  $candidate = $candidate[0]
+  if ($candidate.status -notin @('downloaded','parsed')) { throw "Candidate '$($item.id)' is not ready: $($candidate.status)." }
+  $candidate.status = 'placement assigned'
+  $candidate.title = $item.title
+  $candidate.date = $item.date
+  $candidate.r2_key = $item.key
+  $candidate.r2_url = "https://files.abqinfo.com/$($item.key)"
+  $candidate.proposed_canonical_page = $item.page
+  $candidate.description = $item.description
+  $candidate.description_word_count = @($item.description -split '\s+' | Where-Object { $_ }).Count
+  $candidate.implementation_locations = @($item.locations)
+  $candidate.cross_listing_approved = $item.locations.Count -gt 1
+  $candidate.provenance_status = 'official City-hosted source and direct government file reviewed'
+  $candidate.validation_status = 'source, exact size, SHA-256, extracted content, and description reviewed; R2 upload pending'
+  $candidate.processing_notes = @(@($candidate.processing_notes | Where-Object { $_ }) + $item.note | Sort-Object -Unique)
+  $candidate.updated_at = (Get-Date).ToUniversalTime().ToString('o')
+}
+
+# Reverse duplicate pointer on the retained canonical storm-drainage summary.
+$canonical = @($inventory.candidates | Where-Object id -eq 'src-e43d7a5f1c1d6bfe')[0]
+$canonical.cited_predecessors = @('src-5b871c8f94c619b8')
+$canonical.processing_notes = @(@($canonical.processing_notes | Where-Object { $_ }) + 'Canonical copy retained over the byte-identical duplicate src-5b871c8f94c619b8 (dmd-cip-fac-parking-summary-1.pdf), whose City-assigned filename does not describe its storm-drainage content.' | Sort-Object -Unique)
+
+# Official City collection landing page for the 2017 program.
+$landing = @($inventory.candidates | Where-Object id -eq 'src-afd33bcd74a06555')[0]
+$landing.status = 'placement assigned'
+$landing.title = '2017 General Obligation Bond Program Document Library'
+$landing.date = '2017'
+$landing.proposed_canonical_page = $capital
+$landing.description = 'Collects the City official 2017 General Obligation Bond Program document library, holding the mayor recommendation, the program introduction and process narratives, and every department project-scope and 2017-2025 funding-summary table.'
+$landing.description_word_count = @($landing.description -split '\s+' | Where-Object { $_ }).Count
+$landing.implementation_locations = @($capital)
+$landing.provenance_status = 'official City Plone document-library collection URL verified'
+$landing.validation_status = 'live official collection URL verified and linked as the browsable City source; no file to archive'
+$landing.processing_notes = @(@($landing.processing_notes | Where-Object { $_ }) + 'Linked as the browsable official City collection for the 2017 program; a collection listing is not archived as a file.' | Sort-Object -Unique)
+$landing.updated_at = (Get-Date).ToUniversalTime().ToString('o')
+
+$counts = [ordered]@{}
+foreach ($status in $inventory.allowed_statuses) { $counts[$status] = @($inventory.candidates | Where-Object status -eq $status).Count }
+$inventory.counts = [pscustomobject]$counts
+$inventory.generated_at = (Get-Date).ToUniversalTime().ToString('o')
+$json = $inventory | ConvertTo-Json -Depth 12
+$fullPath = [IO.Path]::GetFullPath($InventoryPath)
+$tempPath = "$fullPath.tmp-$PID"
+[IO.File]::WriteAllText($tempPath, $json, [Text.UTF8Encoding]::new($false))
+Move-Item -LiteralPath $tempPath -Destination $fullPath -Force
+
+$r2 = Get-Content -Raw -Encoding UTF8 -LiteralPath 'project-state/r2-inventory.json' | ConvertFrom-Json
+$existingKeys = @{}
+foreach ($object in @($r2.objects)) { $existingKeys[[string]$object.key] = $true }
+$bytes = [int64](@($items | ForEach-Object { (@($inventory.candidates | Where-Object id -eq $_.id)[0].size_bytes) } | Measure-Object -Sum).Sum)
+$planItems = @($items | ForEach-Object {
+  $candidate = @($inventory.candidates | Where-Object id -eq $_.id)[0]
+  [ordered]@{id=$_.id;source_url=$candidate.source_url;direct_file_url=$candidate.direct_file_url;parent_url=$candidate.parent_url;agency=$candidate.agency;title=$_.title;date=$_.date;file_type=$candidate.file_type;size_bytes=[int64]$candidate.size_bytes;checksum_sha256=$candidate.checksum_sha256;r2_key=$_.key;proposed_canonical_page=$_.page;implementation_locations=@($_.locations);description=$_.description;provenance_status=$candidate.provenance_status;processing_notes=$_.note;size_warning_over_25mb=([int64]$candidate.size_bytes -gt 25MB);already_present=[bool]$existingKeys.ContainsKey($_.key)}
+})
+[ordered]@{schema_version=1;created_at=(Get-Date).ToUniversalTime().ToString('o');batch_id='2017-go-bond-program-2026-09-09';current_r2_bytes=[int64]$r2.total_bytes;maximum_object_bytes=100000000;maximum_projected_r2_bytes=10000000000;batch_bytes=$bytes;added_bytes=$bytes;projected_r2_bytes=([int64]$r2.total_bytes+$bytes);items=$planItems} | ConvertTo-Json -Depth 12 | Set-Content -LiteralPath $PlanPath -Encoding utf8
+
+$duplicateDecision = [ordered]@{
+  id='src-5b871c8f94c619b8'
+  decision='duplicate'
+  canonical_id='src-e43d7a5f1c1d6bfe'
+  question='The City index labels dmd-cip-fac-parking-summary-1.pdf as "DMD 2017 Storm Drainage Summary" while the inventory carried the filename-derived title "dmd cip fac parking summary 1.pdf". Duplicate, supersession, or two distinct documents?'
+  finding='Duplicate. The two files are byte-identical and the City published the same document twice under different filenames.'
+  evidence=@(
+    'src-5b871c8f94c619b8 (dmd-cip-fac-parking-summary-1.pdf): 149182 bytes, SHA-256 7785b222b77c5c386e85ff7a689496b36fa950644d36426e523c34819e2c1ae8.'
+    'src-e43d7a5f1c1d6bfe (dmd-storm-drainage-summary.pdf): 149182 bytes, SHA-256 7785b222b77c5c386e85ff7a689496b36fa950644d36426e523c34819e2c1ae8.'
+    'Identical SHA-256 and identical byte size prove the files are the same object, so neither can supersede the other.'
+    'Extracted text of both files is the DMD/Storm Drainage G.O. Bond Summary: NPDES MS4 permit compliance, Martineztown, Mid-Valley, Loma Hermosa, South Broadway, Kirtland, Bear Canyon, Marble Arno; $15,000,000 in 2017 and $99,780,000 through 2025.'
+    'The official City index at https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program labels dmd-cip-fac-parking-summary-1.pdf "DMD 2017 Storm Drainage Summary" and dmd-storm-drainage-summary.pdf "DMD 2017 Storm Drainage Summary 2", confirming the City intended both entries as the storm-drainage summary.'
+    'The genuine DMD CIP, Facilities and Parking summary is a different file: src-b474f3df7b9187a7 (dmd-cip-fac-parking-summary.pdf), 150473 bytes, SHA-256 b32719ef476e30059883ffd4ac64af61297018e9d289ba0235fbc58679221de9, whose extracted text totals $3,550,000 in 2017 and $19,150,000 through 2025 across the CIP division, facilities and energy management, and parking and security.'
+    'The dmd-cip-fac-parking-summary-1.pdf filename is a Plone naming artifact from re-uploading into a slot whose name was already taken; it does not describe the content.'
+  )
+  resolution='Retain src-e43d7a5f1c1d6bfe as canonical because its filename matches its content and its sibling dmd-storm-drainage-scope.pdf. Mark src-5b871c8f94c619b8 duplicate, do not archive it to R2, and give it no separate placement.'
+  verified_at='2026-09-09'
+}
+
+[ordered]@{
+  batch_id='2017-go-bond-program-2026-09-09'
+  visible_additions=23
+  duplicate_resolution=$duplicateDecision
+  landing_page=[ordered]@{id=$landing.id;title=$landing.title;source_url=$landing.source_url;canonical_page=$capital;decision='linked as official City collection; no file archived'}
+  decisions=@($planItems | ForEach-Object { [ordered]@{id=$_.id;title=$_.title;date=$_.date;r2_key=$_.r2_key;canonical_page=$_.proposed_canonical_page;implementation_locations=$_.implementation_locations;description=$_.description;decision='approved for addition';provenance_status=$_.provenance_status;processing_notes=$_.processing_notes} })
+} | ConvertTo-Json -Depth 12 | Set-Content -LiteralPath $DecisionPath -Encoding utf8
+
+[pscustomobject]@{Items=$items.Count;VisibleAdditions=23;BatchBytes=$bytes;AlreadyPresent=@($planItems | Where-Object already_present).Count;PlanPath=$PlanPath;DecisionPath=$DecisionPath}|ConvertTo-Json -Compress

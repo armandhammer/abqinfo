@@ -48,6 +48,10 @@ Public works capital improvement projects.
 
 ## Historical Project Snapshots
 
+- [2017 Streets General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/capital-projects/cabq-2017-streets-go-bond-project-scopes.pdf)
+
+  Details $33.8 million in 2017 street scopes for Unser between Central and I-40, Chappell Road, Alameda widening, major street and intersection reconstruction, paving rehabilitation, signalization, traffic management, bridge repair, sign replacement, Ladera Road, Zuni Road, ADA sidewalks, trails, and bikeways. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/public-works/capital-projects/cabq-2017-2025-streets-go-bond-summary.pdf) schedules $219.598 million through 2025, the largest department total in the program. [Full 2017 capital-program record](/city-data/capital-spending/#2017-general-obligation-bond-program) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-streets-scope.pdf) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-streets-summary.pdf)
+
 - [Explora STEAM Campus Master Plan — Draft (2019 Archived PDF)](https://files.abqinfo.com/public-works/capital-projects/cabq-explora-steam-campus-master-plan-draft-2019.pdf)
 
   Sets a phased campus framework for Explora, including community and partner engagement, existing conditions, workforce-development and early-learning facilities, parking, circulation, outdoor learning, program needs, site design, and final buildout.
