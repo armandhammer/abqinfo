@@ -2,6 +2,8 @@
 
 For a durable handoff between Codex, Claude, or another approved coding agent, read [AGENT-HANDOFF.md](AGENT-HANDOFF.md) and use [agent-handoff-template.md](agent-handoff-template.md). The protocol includes safe GitHub access setup and requires an open-PR check before any new PR is created.
 
+For simultaneous file/source/link verification by Codex and Claude, follow [PARALLEL-VERIFICATION.md](PARALLEL-VERIFICATION.md). It uses immutable disjoint shards in detached worktrees and reserves all durable state changes for one integrator.
+
 `master-inventory.json` is the authoritative resumable state for the full-site expansion. Do not process a discovered source outside this inventory.
 
 Run from the repository root:
