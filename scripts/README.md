@@ -69,3 +69,15 @@ snapshot, and distinguishes Albuquerque-scope records from other regional work:
 .\scripts\project\Get-MrmpoTipViewerCatalog.ps1
 .\scripts\project\Import-MasterInventory.ps1
 ```
+
+# Parallel file/source/link verification
+
+Codex and Claude can verify disjoint inventory shards concurrently without sharing a writable checkout. The coordinator creates an immutable manifest and detached worktrees; workers create only their uniquely assigned result; the single integrator applies an explicit acceptance list through `Update-Candidate.ps1`.
+
+```powershell
+.\scripts\project\New-ParallelVerificationRun.ps1 -RunId '2026-09-10-links-01' -StartId 'src-1234567890abcdef' -Count 40
+.\scripts\project\Initialize-ParallelVerificationWorktrees.ps1 -ManifestPath '<absolute manifest path>' -WorktreeRoot 'C:\ABQinfo-worker-worktrees'
+.\scripts\project\Test-ParallelVerificationWorkflow.ps1
+```
+
+See [`project-state/PARALLEL-VERIFICATION.md`](../project-state/PARALLEL-VERIFICATION.md) for worker prohibitions, result validation, dry-run integration, apply mode, and recovery.

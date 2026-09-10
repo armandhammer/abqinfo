@@ -92,6 +92,12 @@ Use a provider-prefixed branch name such as `codex/...` or `claude/...`. Never c
 - Save meaningful progress immediately. If nearing a provider limit, stop after a completed, durable state transition rather than beginning an uncheckpointed download, upload, bulk edit, or conflict resolution.
 - Keep a normal content PR to a coherent 15–30 visible-addition batch across 3–8 appropriate pages unless a documented boundary prevents it.
 
+## Parallel verification exception
+
+The one-writer rule does not prevent multiple agents from performing read-only verification concurrently. When Codex and Claude verify files, official sources, or links in parallel, they must follow [PARALLEL-VERIFICATION.md](PARALLEL-VERIFICATION.md): separate detached worktrees, one immutable run manifest, deterministic non-overlapping shards, one unique create-once result per worker, and one coordinator/integrator.
+
+Workers may not change the inventory, checkpoint, active-run state, content, discovery queues, Git state, or R2. Worker proposals are evidence only. The integrator must reject stale or overlapping input, explicitly name every accepted candidate, and apply accepted inventory changes through `Update-Candidate.ps1` under the single-writer lease.
+
 ## Handoff procedure
 
 Before ending work, the departing agent must:
