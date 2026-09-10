@@ -24,6 +24,10 @@ The New Mexico Rail Runner Express connects Belen, Albuquerque, and Santa Fe. Th
 
 ## Current Planning and Investment
 
+- [Rio Metro Performance Targets (2025 official PDF)](https://www.mrcog-nm.gov/DocumentCenter/View/7011/Rio-Metro-RTD-Performance-Targets-2025?bidId=)
+
+  Sets 2025 Rio Metro Rail Runner performance targets for ridership, on-time performance, customer satisfaction, safety, security, asset condition, and fare recovery.
+
 - [Rio Metro Transit Asset Management Plan, FY 2023–2026 (Archived PDF)](https://files.abqinfo.com/transportation/transit/rail-runner/rio-metro-transit-asset-management-plan-fy2023-2026.pdf)
 
   Inventories Rio Metro and Rail Runner vehicles, track, equipment, and facilities; evaluates their condition and risks; and establishes performance targets, replacement priorities, lifecycle planning, capital strategies, and continuous-improvement procedures.

@@ -56,6 +56,36 @@ Capital improvement spending and projects.
 
 ## Historical Capital Programs
 
+### Selected Program and Project Records
+
+- [City of Albuquerque Selection Advisory Committee Rules and Regulations (2023 official PDF)](https://www.cabq.gov/municipaldevelopment/documents/sac-regulations-revised-for-point-deductions_12-12-22.pdf)
+
+  Sets City procedures for selecting architectural, engineering, landscape-architecture, design-build, and related professional-service firms, including solicitation, evaluation, public-meeting, scoring, interview, award, and appeal requirements.
+
+- [Chico Project Phase 1: Comfort Way and Ladera Road Improvements](https://www.bernco.gov/public-works/blog/2021/04/16/chico-project-phase-1-comfort-way-and-ladera-rd-improvements)
+
+  Documents a completed Bernalillo County District 1 bond project extending Comfort Way and grading proposed Ladera Road between Comfort Way and Atrisco Vista Boulevard, including scope, costs, dates, contractor, and June 2021 completion.
+
+- [APD Forensics Solar Carport Design Overview (2017 official PDF)](https://www.cabq.gov/municipaldevelopment/documents/apd-forensic-lab.pdf)
+
+  Documents a 579.4-kilowatt solar-carport design for the Albuquerque Police Department Forensics site, identifying modules, inverters, arrays, wiring, and the 5350 Second Street Northwest location.
+
+- [2013 General Obligation Bond Summary (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/2013GOSummary.pdf)
+
+  Summarizes the 2013 Albuquerque general-obligation bond program by department and purpose, providing a concise historical overview of planned capital investment.
+
+- [2013 Municipal Development Facilities and Parking Capital Scopes (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/DMDCIPFacParkingScope.pdf)
+
+  Details $1.3 million in 2013 municipal-development capital scopes for facilities, energy and security upgrades, parking rehabilitation, Plaza del Sol improvements, roofs, plumbing, and vehicles.
+
+- [2009 Family and Community Services General Obligation Bond Project Scopes (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/family_and_community_services_-_scope.pdf)
+
+  Details 2009 bond-funded improvements for community centers, homeless services, affordable housing, early-childhood facilities, social-service facilities, and related Family and Community Services capital projects.
+
+- [2003 General Obligation Bond Operating and Maintenance Cost Impacts (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/operations.pdf)
+
+  Projects the operating and maintenance costs of the 2003 Albuquerque general-obligation bond projects across cultural services, technology, parks, public safety, planning, and transit through fiscal year 2008.
+
 ### 2021-2023 Decade Plan Resolutions
 
 - [2023-2032 Decade Plan for Capital Improvements (R-23-100 enacted PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2023-2032-decade-plan-resolution-r-2023-032.pdf)

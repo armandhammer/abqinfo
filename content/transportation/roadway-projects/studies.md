@@ -80,6 +80,10 @@ Transportation studies and reports.
 
 ### Girard Boulevard
 
+- [Girard Boulevard Existing Conditions Assessment (2012 official PDF)](https://www.cabq.gov/council/documents/complete-streets/Girard_ExistingConditions_Aug23.pdf)
+
+  Maps and illustrates corridor conditions between Indian School Road and Constitution Avenue, including roadway width, medians, parking demand, sidewalks, pedestrian safety, and accessibility constraints that informed later complete-street planning.
+
 - [Official City Project Page](https://www.cabq.gov/council/projects/neighborhood-projects/girard-boulevard-complete-streets-master-plan)
 
   Preserves the corridor plan, design drawings, bicycle and intersection concepts, presentations, meeting notes, and implementation history for multimodal improvements on Girard Boulevard between Gibson and Indian School.
@@ -461,6 +465,10 @@ Transportation studies and reports.
   [Current Interactive Context and Official Source](https://www.mrcog-nm.gov/569/Road-Diet-Candidates-Map) · [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6639/MRMPO_RoadDiets2023_Web20250523)
 
 ## State Highway Studies Affecting Albuquerque
+
+- [Conduct Friction Testing Program, Data Analysis, and Effectiveness of Open-Graded Friction Course (2026 official PDF)](https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/6c610c05-2a42-4514-b97f-5d54090a92ba/922050%20UNM%20Conduct%20Friction%20Testing%20Final%20Report.pdf)
+
+  Evaluates New Mexico pavement-friction data and recommends skid-number thresholds, risk analysis, and monitoring methods for maintenance decisions, with elevated-risk findings for several Interstate 40 segments.
 
 - [I-40 West Corridor Study Executive Summary (2024)](https://files.abqinfo.com/transportation/roadway-projects/studies/nmdot-i40-west-executive-summary-2025.pdf)
 

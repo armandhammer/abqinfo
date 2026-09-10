@@ -8,6 +8,14 @@ Historical area, sector, and community plans that explain how Albuquerque neighb
 
   Maintains the City’s current reference index for adopted historical plans. ABQInfo preserves selected complete plans and adoption records whose context remains independently useful.
 
+## Downtown Neighborhood Area
+
+- [Downtown Neighborhood Area Sector Development Plan Update (Draft, September 17, 2010; multipart)](https://www.cabq.gov/council/documents/dnasdp-documents/dna_sector_plan_-_part_1.pdf)
+
+  City draft plan for the Downtown Neighborhood Area, covering history, assets, goals, implementation, zoning regulations, a proposed-zoning map, and an action agenda. This four-file draft was published for review and should not be read as an adopted plan.
+
+  Official City files: [Part 2](https://www.cabq.gov/council/documents/dnasdp-documents/dna_sector_plan_-_part_2.pdf) · [Part 3](https://www.cabq.gov/council/documents/dnasdp-documents/dna_sector_plan_-_part_3.pdf) · [Part 4](https://www.cabq.gov/council/documents/dnasdp-documents/dna_sector_plan_-_part_4.pdf/@@download/file/DNA%20Sector%20Plan%20-%20Part%204.pdf)
+
 ## Central Avenue Station-Area Planning
 
 - [Central Avenue Station-Area Planning Draft — Introduction and Action Plan (September 2017)](https://files.abqinfo.com/development-land-use/area-sector-plans/central-route-66-station-area-draft-2017-01-introduction.pdf)
