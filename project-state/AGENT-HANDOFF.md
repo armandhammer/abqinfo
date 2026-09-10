@@ -98,6 +98,8 @@ The one-writer rule does not prevent multiple agents from performing read-only v
 
 Workers may not change the inventory, checkpoint, active-run state, content, discovery queues, Git state, or R2. Worker proposals are evidence only. The integrator must reject stale or overlapping input, explicitly name every accepted candidate, and apply accepted inventory changes through `Update-Candidate.ps1` under the single-writer lease.
 
+For a long-running campaign, also follow [AUTONOMOUS-VERIFICATION-CAMPAIGNS.md](AUTONOMOUS-VERIFICATION-CAMPAIGNS.md). A usage pause is not a handoff failure: on `Continue`, derive progress from the active pointer and immutable candidate artifacts, resume the assigned provider-neutral lane at its first missing result, and reconcile intent-only integrations through their deterministic operation markers.
+
 ## Handoff procedure
 
 Before ending work, the departing agent must:

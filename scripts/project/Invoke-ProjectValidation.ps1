@@ -15,6 +15,8 @@ if (-not $?) { throw 'Content style validation failed.' }
 if (-not $?) { throw 'Crawler discovery regression failed.' }
 & "$PSScriptRoot/Test-ParallelVerificationWorkflow.ps1"
 if (-not $?) { throw 'Parallel verification workflow regression failed.' }
+& "$PSScriptRoot/Test-ParallelVerificationCampaignWorkflow.ps1"
+if (-not $?) { throw 'Autonomous parallel verification campaign regression failed.' }
 & "$PSScriptRoot/Test-RetainedSourceAuditCoverage.ps1" -InventoryPath $InventoryPath
 if (-not $?) { throw 'Retained-source descendant-audit coverage failed.' }
 & $HugoPath --gc --minify --cleanDestinationDir --destination tmp/site-build

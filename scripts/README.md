@@ -81,3 +81,14 @@ Codex and Claude can verify disjoint inventory shards concurrently without shari
 ```
 
 See [`project-state/PARALLEL-VERIFICATION.md`](../project-state/PARALLEL-VERIFICATION.md) for worker prohibitions, result validation, dry-run integration, apply mode, and recovery.
+
+For usage-paused-proof campaigns with many microbatches:
+
+```powershell
+.\scripts\project\New-ParallelVerificationCampaign.ps1 -CampaignId '2026-09-10-pending-01' -StartId 'src-10d16d79d48b3ed3' -Count 240 -MicrobatchSize 10
+.\scripts\project\Initialize-ParallelVerificationCampaignWorktrees.ps1 -ManifestPath '<absolute campaign path>' -WorktreeRoot 'C:\ABQinfo-campaign-worktrees'
+.\scripts\project\Get-ParallelVerificationCampaignStatus.ps1 -ManifestPath '<absolute campaign path>'
+.\scripts\project\Test-ParallelVerificationCampaignWorkflow.ps1
+```
+
+See [`project-state/AUTONOMOUS-VERIFICATION-CAMPAIGNS.md`](../project-state/AUTONOMOUS-VERIFICATION-CAMPAIGNS.md) for the one-prompt Claude worker, Codex coordinator loop, `Continue` behavior, leases, and crash-safe integration.

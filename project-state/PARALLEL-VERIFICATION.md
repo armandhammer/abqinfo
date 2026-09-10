@@ -147,3 +147,5 @@ Run the isolated regression suite with:
 ```powershell
 ./scripts/project/Test-ParallelVerificationWorkflow.ps1
 ```
+
+For long-running, candidate-checkpointed work that survives provider usage pauses, use [AUTONOMOUS-VERIFICATION-CAMPAIGNS.md](AUTONOMOUS-VERIFICATION-CAMPAIGNS.md). Campaigns build on this safety model while adding immutable per-candidate results, provider-neutral resumable lanes, expiring exclusive leases, derived status, and write-ahead idempotent integration.

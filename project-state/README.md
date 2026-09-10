@@ -4,6 +4,8 @@ For a durable handoff between Codex, Claude, or another approved coding agent, r
 
 For simultaneous file/source/link verification by Codex and Claude, follow [PARALLEL-VERIFICATION.md](PARALLEL-VERIFICATION.md). It uses immutable disjoint shards in detached worktrees and reserves all durable state changes for one integrator.
 
+For autonomous multi-batch verification that can resume after five-hour or weekly usage pauses, follow [AUTONOMOUS-VERIFICATION-CAMPAIGNS.md](AUTONOMOUS-VERIFICATION-CAMPAIGNS.md). Completed candidates and integration operations are recovered from immutable artifacts rather than chat history or mutable cursors.
+
 `master-inventory.json` is the authoritative resumable state for the full-site expansion. Do not process a discovered source outside this inventory.
 
 Run from the repository root:

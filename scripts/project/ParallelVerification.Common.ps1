@@ -75,14 +75,21 @@ function Write-ParallelVerificationJsonCreateNew {
   }
   $json = $Value | ConvertTo-Json -Depth 30
   $bytes = [Text.UTF8Encoding]::new($false).GetBytes($json)
-  $stream = [IO.File]::Open($fullPath, [IO.FileMode]::CreateNew, [IO.FileAccess]::Write, [IO.FileShare]::None)
+  $temporaryPath = Join-Path $parent ('.' + [IO.Path]::GetFileName($fullPath) + ".tmp-$PID-$([guid]::NewGuid().ToString('N'))")
+  $stream = [IO.File]::Open($temporaryPath, [IO.FileMode]::CreateNew, [IO.FileAccess]::Write, [IO.FileShare]::None)
   try {
     $stream.Write($bytes, 0, $bytes.Length)
+    $stream.Flush($true)
   } finally {
     $stream.Dispose()
   }
-  if ($ReadOnly) {
-    [IO.File]::SetAttributes($fullPath, [IO.FileAttributes]::ReadOnly)
+  try {
+    [IO.File]::Move($temporaryPath, $fullPath, $false)
+    if ($ReadOnly) {
+      [IO.File]::SetAttributes($fullPath, [IO.FileAttributes]::ReadOnly)
+    }
+  } finally {
+    if (Test-Path -LiteralPath $temporaryPath) { Remove-Item -LiteralPath $temporaryPath -Force }
   }
   return $fullPath
 }
