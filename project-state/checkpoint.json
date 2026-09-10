@@ -1,25 +1,34 @@
 {
-  "recorded_at": "2026-09-09T20:58:00Z",
-  "completed_item_range": "Completed the pre-existing inventory-validation repair on branch codex/inventory-validation-repair. Against clean origin/main at 36d0b41, Test-MasterInventory.ps1 improved from 124 errors to 0: 12 missing implementation locations and 16 missing terminal exclusion reasons were repaired through Update-Candidate.ps1, six published-document URLs were restored to candidate fields, 16 supporting citations were recognized through recorded candidate provenance, and 74 OnBase meeting-record index links received a path- and URL-shape-scoped validator classification. Test-RetainedSourceAuditCoverage.ps1 improved from 73 missing of 537 eligible sources to 0 after New-RetainedSourceAuditQueue.ps1 preserved all 464 prior records and added 73 pending roots. Invoke-ProjectValidation.ps1, Hugo, crawler regression, content style, and git diff --check pass. No R2 uploads, merge, or deployment were performed.",
+  "recorded_at": "2026-09-10T15:59:51.1566498Z",
+  "completed_item_range": "Implemented and validated the frozen batch as 16 visible additions across eight pages in PR #135 (https://github.com/armandhammer/abqinfo/pull/135). All 19 authoritative links (16 records plus three multipart plan components) returned HTTP 200. Master inventory, content style, crawler regression, retained-source audit coverage, Hugo, and git diff checks pass. No R2 upload, merge, or deployment was performed.",
   "total_candidates": 7074,
   "counts_by_status": {
-    "pending review": 2824,
+    "pending review": 2674,
     "approved for addition": 0,
     "downloading": 0,
-    "downloaded": 6,
+    "downloaded": 9,
     "parsed": 0,
     "description drafted": 0,
     "placement assigned": 2,
     "implemented": 178,
-    "validated": 1306,
-    "excluded": 1170,
-    "duplicate": 1412,
-    "superseded": 141,
+    "validated": 1322,
+    "excluded": 1244,
+    "duplicate": 1443,
+    "superseded": 142,
     "blocked": 0,
-    "requires human review": 35
+    "requires human review": 60
   },
-  "remaining_nonterminal": 3010,
-  "next_pending_id": "src-02f4041671fc34d7",
-  "blockers": [],
-  "resume_command": "Review and merge the inventory-validation repair PR only with explicit approval; after merge, resume deterministic candidate review at src-02f4041671fc34d7 from a fresh origin/main branch."
+  "remaining_nonterminal": 2863,
+  "next_pending_id": "src-10d16d79d48b3ed3",
+  "blockers": [
+    "The 16-record/eight-page content batch is implemented and validated with authoritative government links; 17 original PDFs totaling 67,526,043 bytes remain pending separate explicit R2 upload approval, including three supporting components of the multipart Downtown Neighborhood plan.",
+    "src-0a39e768262a9380d69d County source returned HTTP 504 twice; no authoritative replacement identified.",
+    "src-0b1642254494f22e must not be archived or visibly used as enacted; canonical source is src-5b9de5b2cda39393.",
+    "src-0e133db868401e77 is PGS Part 2 Chapter 10; reconcile the complete split PGS package before any archival or visible use.",
+    "src-0ee0b959ce0e2a95 is a scanned Trumbull plan compilation; confirm canonical-package and later IDO-replacement relationships before archival or visible use.",
+    "src-0f4496e4073a5e06 and src-0feec7ebf6650e27 are isolated legislative amendment/substitute files; resolve authoritative enacted packages before archival or visible use.",
+    "src-0f5140179b1f087f is only an announcement for the International District Choice Neighborhood final plan; locate the authoritative final plan before visible use.",
+    "src-10209c5fcdce2906 is explicitly a 2026-02-02 draft stormwater BMP package; locate or verify an adopted final version before archival or visible use."
+  ],
+  "resume_command": "Review PR #135 at https://github.com/armandhammer/abqinfo/pull/135. If explicitly authorized, prepare and execute the 17-object R2 archive plan totaling 67,526,043 bytes, replace the official-file primary links with archived links while retaining official sources, revalidate, and update the PR. Do not merge or deploy without explicit approval. Otherwise resume deterministic review at src-10d16d79d48b3ed3 after the PR is resolved."
 }

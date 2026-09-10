@@ -28,7 +28,17 @@ Parks and recreation facilities and programs.
 
   Albuquerque maintains this library for project-specific Open Space plans, including trails, natural areas, visitor-use management, habitat, and facility planning. Individual records are added only when their scope is independently useful beyond this maintained library.
 
+- [Manzano Mesa Park Prescription Trail Guide (official PDF)](https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/ManzanoMesaMulti-CulturalCtr.pdf/@@download/file/ManzanoMesaMulti-CulturalCtr.pdf)
+
+  Maps a 0.6-mile accessible concrete walking route at Manzano Mesa Park, with route directions, accessibility grade, nearby transit, parking, facilities, and neighborhood connections.
+
 ## Current Parks and Open Space Projects
+
+### East Atrisco Kimbar Park
+
+- [East Atrisco Kimbar Park Renovation](https://www.cabq.gov/council/find-your-councilor/district-1/district-1-projects/east-atrisco-kimbar-park-improvements)
+
+  Documents the completed 2026 renovation, including community-designed playground equipment, lighting, picnic tables, benches, durable receptacles, District 1 and state capital funding, and the park's April 2026 public reopening.
 
 ### Geneiva's Arroyo Greenway
 

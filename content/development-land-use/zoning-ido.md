@@ -26,6 +26,12 @@ Current zoning tools and a preserved history of Albuquerque's Integrated Develop
 
   Enacts MX-M zoning for three NR-LM sites totaling about 19 acres and 13 NR-C sites totaling about 10.17 acres within the Menaul Metropolitan Redevelopment Area. [Official O-25-100 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=7733454&GUID=142361E4-4618-4419-B62F-1B4061437040&Options=ID%7CText%7C&Search=O-25-100) · [MRA plan placement](/development-land-use/redevelopment-plans/#current-menaul-and-university-records)
 
+## Planning and Regulatory Context
+
+- [Legalization of Cannabis in New Mexico: Planning Commissioner Workshop (2021 official PDF)](https://www.mrcog-nm.gov/DocumentCenter/View/5452/2021-Legalization-of-Cannabis-Planning-Commissioner-Workshop-PDF)
+
+  Explains the 2021 Cannabis Regulation Act for local planners, covering licenses, local time-place-manner authority, limits on municipal restrictions, taxation, employment, and implementation deadlines.
+
 ## Historical Effective IDO Editions
 
 - [Integrated Development Ordinance, Effective April 20, 2026](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-ido-effective-2026-04-20.pdf)

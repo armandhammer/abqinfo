@@ -42,6 +42,10 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
   [Official NMDOT PDF](https://www.dot.nm.gov/wp-content/uploads/2024/07/NMDOT-GSI-Maintenance-Manual_Final.pdf) · [Current NMDOT Research and Climate Bureau](https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/research-and-climate-bureau/)
 
+- [Fleet Storage Yard Candelaria Storm Water Pollution Prevention Plan (May 2021 official PDF)](https://www.cabq.gov/municipaldevelopment/documents/swmd-fleet-storage-yards-candelaria-2021-msgp-swppp.pdf)
+
+  Sets City controls for stormwater from the Candelaria fleet storage yard, documenting industrial activities, pollutants, drainage to the Rio Grande, impaired-water monitoring, inspections, spill response, and corrective actions.
+
 ## Watershed Plans
 
 ### Upper Piedras Marcadas Watershed Drainage and Water Quality Management Plan
