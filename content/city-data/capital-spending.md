@@ -118,6 +118,78 @@ Capital improvement spending and projects.
 
   [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/consolidated-plan.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/consolidated-plan.pdf)
 
+### 2003–2004 General Obligation Bond Program
+
+These official City records document the adopted 2003 capital program and the 2004 streets program. Department-specific scope tables are cross-listed on the subject pages below.
+
+- [2003 Capital Improvements Plan Priorities and Criteria Resolution R-02-30 (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/R-02-30.pdf)
+
+  Establishes Albuquerque priorities for the 2003 capital improvements plan, defines the criteria used to rate project proposals, assigns weights to those criteria, and allocates amounts among purposes within the 2003 general obligation bond program.
+
+- [2003–2012 Decade Plan and 2003 Two-Year Capital Budget Resolution R-03-215 (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/R-03-215.pdf)
+
+  Approves the programming of funds and projects for the 2003–2012 decade plan for capital improvements, including the 2003 two-year capital budget, with category, project-title, and amount tables adopted by the City Council. [Related amendment R-03-265](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/R-03-265.pdf).
+
+- [2003 General Obligation Bond Funding Allocation Chart (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/FundingAllocationChart.pdf)
+
+  Compares the percentage allocated under resolution R-02-30, the approved amount, and the share of the approved program for each department and division, totaling $155,478,730 across streets, hydrology, transit, parks, public safety, community facilities, and neighborhood set-asides.
+
+- [2003 General Obligation Bond Rehabilitation, Maintenance, and Deficiency Remediation Summary (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/RehabMaintSumm.pdf)
+
+  Breaks the $155,478,730 approved 2003 bond program into rehabilitation and deficiency-remediation shares by funding category, reporting that 88.98 percent of the program addressed existing rehabilitation and deficiency needs.
+
+- [2003 Street General Obligation Bond Project Scopes (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/StreetBonds.pdf)
+
+  Details the 2003 street bond scopes, including Fourth Street corridor improvements, public infrastructure rebuilding, paving rehabilitation, intersection and signal work, bridges, sidewalks, trails, and named corridor projects across the City. [Transportation Plans placement](/transportation/transportation-plans/#historical-capital-programming).
+
+- [2003 Parks and Recreation General Obligation Bond Project Scopes (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/ParksRecreationBonds.pdf)
+
+  Details 2003 parks and recreation bond scopes, including a velodrome developed with the Southwest Velodrome Association, park and open-space improvements, recreation facilities, trails, and related equipment purchases. [Parks & Recreation placement](/public-works/parks-recreation/#historical-capital-programming).
+
+- [2003 Senior, Family, and Community Center General Obligation Bond Project Scopes (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/SeniorFamilyComm.pdf)
+
+  Details 2003 bond scopes for senior, family, and community centers, including Bear Canyon Senior Center, Wells Park and McKinley community centers, and related facility improvements and equipment purchases.
+
+- [2003 Zoo, Biological Park, and Museum General Obligation Bond Project Scopes (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/ZooBioParkMuseum.pdf)
+
+  Details 2003 bond scopes for the Albuquerque Museum, Biological Park, and Zoo, covering facility improvements, exhibit and collection work, heavy equipment and vehicle replacement, and related equipment purchases.
+
+- [2003 Public Facilities, Equipment, and System Modernization General Obligation Bond Project Scopes (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/PublicFacEquipment.pdf)
+
+  Details 2003 bond scopes for computerized mapping and geographic records, hardware, software and consulting, City facility improvements, equipment replacement, and other system-modernization investments across departments.
+
+- [2003 Public Transportation General Obligation Bond Project Scopes (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/PublicTransportation.pdf)
+
+  Details 2003 transit bond scopes, including the Alvarado Transportation Center depot joint-use facility, bus storage and maintenance equipment, and related transit vehicle and facility investments. [ABQ RIDE placement](/transportation/transit/abq-ride/#facilities-and-fleet-planning-history).
+
+- [2003 Police General Obligation Bond Project Scopes (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/PoliceBonds.pdf)
+
+  Details 2003 police bond scopes, including improvements and equipment at the John Carrillo Memorial Substation, replacement of marked police vehicles at the end of their useful life, and related equipment purchases. [Public Safety Data placement](/city-data/public-safety-data/#fire-and-emergency-response).
+
+- [2003 Fire Protection General Obligation Bond Project Scopes (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/FireProtectionBonds.pdf)
+
+  Details $6,039,565 in 2003 fire protection bond scopes, covering emergency response apparatus replacement, renovation of Fire Stations 1, 10, 12, 16, 2, and 4, a heavy technical rescue vehicle, new Fire Station 21, and public art. [Public Safety Data placement](/city-data/public-safety-data/#fire-and-emergency-response).
+
+- [2003 Library General Obligation Bond Project Scopes (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/LibraryBonds.pdf)
+
+  Details 2003 library bond scopes for purchasing books, periodicals, audiovisual materials, and electronic resources to meet customer demand, replace outdated materials, and provide educational and informational materials across all City libraries.
+
+- [2004 Street General Obligation Bond Project Titles, Amounts, and Scopes (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2004-bond-documents/ProjectTitles.pdf)
+
+  Lists each 2004 street bond project with its title, amount, and scope, covering advance right-of-way acquisition, paving rehabilitation, intersections, bridges, sidewalks, trails, traffic management, and named corridor improvements. [Transportation Plans placement](/transportation/transportation-plans/#historical-capital-programming).
+
+- [2004 Capital Programming Amendment Resolution R-04-109 (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2004-bond-documents/R-109final.pdf)
+
+  Amends the approval of programming of funds and projects for the capital improvements decade plan, adjusting adopted project allocations through enacted City Council action with bracketed additions and deletions shown.
+
+- [2004 Street Bond Program Summary of Planning Process (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2004-bond-documents/Process.pdf)
+
+  Summarizes how the 2004 street project program was created during the 2002–2003 planning period and reviewed under the Capital Improvement Program ordinance, describing the capital implementation program and the required review steps.
+
+- [2004 Street Bond Ballot Question (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2004-bond-documents/StreetBondQuestion.pdf)
+
+  Preserves the exact street bond question placed before Albuquerque voters on November 2, 2004, authorizing $52,514,950 in general obligation bonds to study, design, construct, rehabilitate, landscape, and otherwise improve streets and acquire land and equipment. [Transportation Plans placement](/transportation/transportation-plans/#historical-capital-programming).
+
 ### 2007–2016 Decade Plan
 
 - [2003 Storm Sewer System General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2003-storm-sewer-system-go-bond-project-scopes.pdf)

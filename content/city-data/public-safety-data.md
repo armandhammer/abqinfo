@@ -92,6 +92,14 @@ Maintained public-safety dashboards, police statistics, geographic breakdowns, r
 
 ## Fire and Emergency Response
 
+- [2003 Police General Obligation Bond Project Scopes (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/PoliceBonds.pdf)
+
+  Details 2003 police bond scopes, including improvements and equipment at the John Carrillo Memorial Substation, replacement of marked police vehicles at the end of their useful life, and related equipment purchases. [Full 2003–2004 capital-program record](/city-data/capital-spending/#20032004-general-obligation-bond-program).
+
+- [2003 Fire Protection General Obligation Bond Project Scopes (official PDF)](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/FireProtectionBonds.pdf)
+
+  Details $6,039,565 in 2003 fire protection bond scopes, covering emergency response apparatus replacement, renovation of Fire Stations 1, 10, 12, 16, 2, and 4, a heavy technical rescue vehicle, new Fire Station 21, and public art. [Full 2003–2004 capital-program record](/city-data/capital-spending/#20032004-general-obligation-bond-program).
+
 - [2017 Fire General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2017-fire-go-bond-project-scopes.pdf)
 
   Details $7.15 million in 2017 Fire scopes for replacing emergency response apparatus including engines, ladder trucks, ambulances and light rescues, HazMat and heavy technical rescue vehicles and wildland brush trucks, repairing and renovating department facilities, and phase two reconstruction of Fire Station 9. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2017-2025-fire-go-bond-summary.pdf) schedules $28.35 million through 2025. [Full 2017 capital-program record](/city-data/capital-spending/#2017-general-obligation-bond-program) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/public-safety-fire-scope.pdf) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/public-safety-fire-summary.pdf)
