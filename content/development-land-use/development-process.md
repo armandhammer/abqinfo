@@ -74,6 +74,10 @@ Cross-cutting development process documents, manuals, and reference materials.
 
 ## Public Infrastructure Cost Estimating
 
+- [Rules and Regulations Governing Compensation for Consulting Engineers, Architects, and Landscape Architects (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-consultant-compensation-rules-2003.pdf)
+
+  Sets City rules adopted under Revised Ordinances Section 7-20-5 for negotiating consultant compensation as a percentage of estimated construction cost, covering negotiation limits, scope definition, special studies, alternative methods, and biennial percentage review. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/CIPcompRulesRegs.pdf)
+
 - [City Engineer's Estimated Unit Prices for Contract Items, 2026 (archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-city-engineer-estimated-unit-prices-2026.pdf)
 
   Sets the City's 2026 estimated construction costs for public-infrastructure contract items, including paving, traffic control, structures, drainage, utilities, landscaping, and the financial-guarantee calculations required for development projects.

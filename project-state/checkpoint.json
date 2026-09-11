@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-09-10T17:54:19.0797234Z",
-  "completed_item_range": "Implemented and validated the usage-paused-proof autonomous Codex/Claude campaign workflow in PR #137 (https://github.com/armandhammer/abqinfo/pull/137). Immutable campaigns assign globally disjoint microbatches to provider-neutral lanes; workers publish one atomic immutable result per candidate and derive resumption from artifacts. Exclusive expiring leases, active-campaign discovery, derived status, write-ahead integration intents, deterministic inventory markers, and immutable receipts make worker and Update-Candidate.ps1 interruption windows recoverable and idempotent. The 11-scenario campaign regression and full project validation pass. No live campaign, candidate status, content, R2, merge, or deployment change was performed.",
+  "recorded_at": "2026-09-11T21:10:30.9040373Z",
+  "completed_item_range": "Archived and publicly verified 19 original City of Albuquerque 2003-2004 General Obligation Bond documents totaling 3,643,508 bytes; added their archive-first entries and official-source links across six ABQInfo pages; full project validation passed. Evidence: project-state/discovery/early-go-bond-archive-decisions-2026-09-11.json, project-state/discovery/early-go-bond-r2-archive-plan-2026-09-11.json, project-state/discovery/early-go-bond-r2-public-validation-2026-09-11.json.",
   "total_candidates": 7074,
   "counts_by_status": {
-    "pending review": 2674,
+    "pending review": 2655,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 9,
@@ -11,24 +11,15 @@
     "description drafted": 0,
     "placement assigned": 2,
     "implemented": 178,
-    "validated": 1322,
+    "validated": 1341,
     "excluded": 1244,
     "duplicate": 1443,
     "superseded": 142,
     "blocked": 0,
     "requires human review": 60
   },
-  "remaining_nonterminal": 2863,
-  "next_pending_id": "src-10d16d79d48b3ed3",
-  "blockers": [
-    "The 16-record/eight-page content batch is implemented and validated with authoritative government links; 17 original PDFs totaling 67,526,043 bytes remain pending separate explicit R2 upload approval, including three supporting components of the multipart Downtown Neighborhood plan.",
-    "src-0a39e768262a9380d69d County source returned HTTP 504 twice; no authoritative replacement identified.",
-    "src-0b1642254494f22e must not be archived or visibly used as enacted; canonical source is src-5b9de5b2cda39393.",
-    "src-0e133db868401e77 is PGS Part 2 Chapter 10; reconcile the complete split PGS package before any archival or visible use.",
-    "src-0ee0b959ce0e2a95 is a scanned Trumbull plan compilation; confirm canonical-package and later IDO-replacement relationships before archival or visible use.",
-    "src-0f4496e4073a5e06 and src-0feec7ebf6650e27 are isolated legislative amendment/substitute files; resolve authoritative enacted packages before archival or visible use.",
-    "src-0f5140179b1f087f is only an announcement for the International District Choice Neighborhood final plan; locate the authoritative final plan before visible use.",
-    "src-10209c5fcdce2906 is explicitly a 2026-02-02 draft stormwater BMP package; locate or verify an adopted final version before archival or visible use."
-  ],
-  "resume_command": "Review PR #137 at https://github.com/armandhammer/abqinfo/pull/137. After it is resolved, create the first usage-paused-proof campaign from src-10d16d79d48b3ed3 with a substantial sequential pending-review range, 10-candidate microbatches, and provider-neutral codex/claude lanes; set the coordinator-owned active pointer, create detached lane worktrees, and return fully populated one-prompt worker instructions without starting the live campaign. Do not upload to R2, merge, or deploy without explicit approval."
+  "remaining_nonterminal": 2844,
+  "next_pending_id": "src-049f7958bcc2f6da",
+  "blockers": [],
+  "resume_command": "After PR #139 is merged and its production deployment is verified, integrate and archive the next coherent qualified batch from completed Claude research artifacts under project-state/discovery/, preserving archive-first publication and the 15-30-document batch standard."
 }
