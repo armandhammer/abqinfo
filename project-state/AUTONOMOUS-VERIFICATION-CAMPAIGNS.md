@@ -217,3 +217,32 @@ Run:
 ```
 
 The suite covers immutable deterministic assignment, overlap across campaigns and batches, active-pointer recovery, detached worktree planning, interruption before and during verification, post-result restart, batch-transition restart, stale input, result tampering, lease contention and expiry, provider-neutral takeover, integration dry-run, write-ahead interruption, post-inventory/pre-receipt recovery, post-receipt restart, and duplicate-application prevention.
+
+## Unattended supervisor and persistent lane watchers
+
+The unattended supervisor continuously validates the active pointer, processes only its explicitly managed lanes in small resumable slices, and waits for other lanes. When all lane results are valid and leases are safely released, it invokes the crash-safe coordinator. The coordinator escalates only non-passing results to `requires human review`, commits only that inventory transition, provisions a predecessor-bound successor with no more than 120 candidates per lane, and atomically advances the pointer. The supervisor stops normally at its deadline or when no pending-review candidates remain; malformed, stale, oversized, or structurally invalid state is a systemic fault.
+
+Start the nine-hour coordinator supervisor in a hidden process from the attached coordinator branch:
+
+```powershell
+./scripts/project/Start-ParallelVerificationCampaignSupervisor.ps1 `
+  -DurationHours 9 `
+  -ManagedLaneIds codex `
+  -SuccessorCandidateCount 240 `
+  -MaxCandidatesPerLane 120 `
+  -TakeOverExpiredLease
+```
+
+By default, process output and persistent state are written under the sibling `ABQinfo-verification-supervisor` directory. `latest.json` points to the active run's atomic `status.json` and append-only `events.ndjson`. The hidden process also has separate stdout and stderr logs. A supervisor-wide exclusive file lease prevents concurrent coordinators.
+
+A provider can watch one assigned lane across every pointer rollover with:
+
+```powershell
+./scripts/project/Invoke-ParallelVerificationCampaignLaneWatcher.ps1 `
+  -LaneId claude `
+  -WorkerProvider claude `
+  -DurationHours 9 `
+  -TakeOverExpiredLease
+```
+
+The watcher never coordinates, integrates, changes Git, or writes repository state. It derives the current campaign from `active-run.json`, enters that campaign's detached lane worktree, writes only assigned immutable candidate results and its external watcher status/log, waits after lane completion, and automatically follows the next active campaign. An exclusive per-lane watcher lease prevents duplicate persistent watchers.
