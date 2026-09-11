@@ -453,6 +453,114 @@ This six-record sequence preserves the official City scope tables for successive
 
 These department schedules provide the project-level detail behind the 2011 General Obligation Bond summary.
 
+### 2011 Published Scope and Version Records
+
+The City’s 2011 bond directory preserves the published department scope sheets, a citywide totals table, and several materially different files explicitly identified here as initial versions. The four abbreviated-name variants whose version order remains unresolved are not included.
+
+- [2011-2019 General Obligation Bond Summary Totals (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2011-2019-go-bond-summary-totals.pdf)
+
+  Consolidates $727.29 million of planned 2011 through 2019 bond funding by department and division, covering streets, storm drainage, parks, public safety, transit, and every community facilities purpose with biennial and total columns. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/2011_g.o._summary.pdf)
+
+- [2011 Council Neighborhood Set-Aside Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2011-council-neighborhood-set-aside-project-scopes.pdf)
+
+  Details nine pages of 2011 Council neighborhood set-aside project scopes by district, describing study, design, and construction work for parks, streets, lighting, community facilities, and other district-specific neighborhood improvements. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/council_neigh-set_aside_scope.pdf)
+
+- [2011 Streets General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-2011-streets-go-bond-project-scopes-published.pdf)
+
+  Details 2011 street bond scopes covering planning, design, right-of-way acquisition, and construction for major roadways, intersections, paving rehabilitation, bridges, signals, and named corridor projects across the City. [Transportation Plans placement](/transportation/transportation-plans/#historical-capital-programming) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/streets_scope.pdf)
+
+- [2011 Streets General Obligation Bond Project Scopes (Initial Version) (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-2011-streets-go-bond-project-scopes-initial.pdf)
+
+  Details the initial 2011 street bond scope list, covering roadway planning, design, right-of-way acquisition, construction, paving rehabilitation, intersections, bridges, and named corridor projects before later revision. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1streets_scope.pdf)
+
+- [2011 Storm Drainage General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/stormwater/cabq-2011-storm-drainage-go-bond-project-scopes-published.pdf)
+
+  Details 2011 storm drainage bond scopes for regulatory compliance work, storm drain and pump station rehabilitation, channel and arroyo improvements, water quality facilities, and drainage master planning. [Stormwater and Drainage placement](/public-works/stormwater-drainage/#historical-city-capital-plans) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/storm_drainage_scope.pdf)
+
+- [2011 Finance and Administrative Services General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2011-finance-administrative-services-go-bond-project-scopes-published.pdf)
+
+  Details 2011 Finance and Administrative Services bond scopes for enterprise business systems, servers and networks, radio and communications management, continuity planning, and related technology investments. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/finance_scope.pdf)
+
+- [2011 Planning General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment/cabq-2011-planning-go-bond-project-scopes-published.pdf)
+
+  Details 2011 Planning Department bond scopes for studying, designing, and constructing improvements, including electronic plan review, geographic information systems, permitting technology, and redevelopment support. [Metropolitan Redevelopment Plans placement](/development-land-use/redevelopment-plans/#historical-capital-programming) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/planning_scope.pdf)
+
+- [2011 Planning General Obligation Bond Project Scopes (Initial Version) (Archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment/cabq-2011-planning-go-bond-project-scopes-initial.pdf)
+
+  Details the initial 2011 Planning Department bond scope list for studying, designing, and constructing improvements, including plan review technology, geographic information systems, and redevelopment support. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1planning_scope.pdf)
+
+- [2011 Family and Community Services General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2011-family-community-services-go-bond-project-scopes-published.pdf)
+
+  Details 2011 Family and Community Services bond scopes for designing, renovating, and improving community centers, child development centers, health and social service centers, and related facilities and equipment. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/family_scope.pdf)
+
+- [2011 Family and Community Services General Obligation Bond Project Scopes (Initial Version) (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2011-family-community-services-go-bond-project-scopes-initial.pdf)
+
+  Details the initial 2011 Family and Community Services bond scope list for renovating and improving community centers, child development centers, health and social service centers, and related equipment. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1family_scope.pdf)
+
+- [2011 City Facilities, CIP, and Parking General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/city-facilities/cabq-2011-city-facilities-cip-parking-go-bond-project-scopes-published.pdf)
+
+  Details 2011 Municipal Development bond scopes for replacing aging vehicles, City building improvement and rehabilitation, energy and security systems, roofs, and parking facility upgrades. [City Facilities placement](/public-works/city-facilities/#historical-capital-programming) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/facilities_scope.pdf)
+
+- [2011 Environmental Health General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2011-environmental-health-go-bond-project-scopes-published.pdf)
+
+  Details 2011 Environmental Health bond scopes for designing and constructing improvements including landfill remediation, environmental monitoring, health and safety equipment, and facility rehabilitation. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/env_health_scope.pdf)
+
+- [2011 Cultural Services General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2011-cultural-services-go-bond-project-scopes-published.pdf)
+
+  Details 2011 Cultural Services bond scopes across the Biological Park, museums, libraries, and cultural facilities, covering design, renovation, exhibits, collections, and related equipment purchases. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/cultural_services_scope.pdf)
+
+- [2011 Parks and Recreation General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-2011-parks-recreation-go-bond-project-scopes-published.pdf)
+
+  Details 2011 Parks and Recreation bond scopes for planning, designing, renovating, equipping, and constructing parks, recreation facilities, trails, open space, and related park improvements. [Parks and Recreation placement](/public-works/parks-recreation/#historical-capital-programming) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/parks_and_recreation_scope.pdf)
+
+- [2011 ABQ RIDE Transit General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/transportation/transit/cabq-2011-abq-ride-go-bond-project-scopes-published.pdf)
+
+  Details 2011 transit bond scopes for purchasing revenue and support vehicles, acquiring associated equipment, and related ABQ RIDE facility and technology investments. [ABQ RIDE placement](/transportation/transit/abq-ride/#facilities-and-fleet-planning-history) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/transit_scope.pdf)
+
+- [2011 Police General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2011-police-go-bond-project-scopes-published.pdf)
+
+  Details 2011 Police bond scopes for purchasing marked and unmarked police vehicles and related Albuquerque Police Department facility and equipment investments. [Public Safety Data placement](/city-data/public-safety-data/#fire-and-emergency-response) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/police_scope.pdf)
+
+- [2011 Fire General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2011-fire-go-bond-project-scopes-published.pdf)
+
+  Details 2011 Fire bond scopes for purchasing and replacing emergency response apparatus and related Albuquerque Fire Department equipment and facility investments. [Public Safety Data placement](/city-data/public-safety-data/#fire-and-emergency-response) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/fire_scope.pdf)
+
+- [2011 Fire General Obligation Bond Project Scopes (Initial Version) (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2011-fire-go-bond-project-scopes-initial.pdf)
+
+  Details the initial 2011 Fire bond scope list for purchasing and replacing emergency response apparatus and related department equipment before later revision. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1fire_scope.pdf)
+
+- [2011 Senior Affairs General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2011-senior-affairs-go-bond-project-scopes-published.pdf)
+
+  Details 2011 Senior Affairs bond scopes for planning, designing, constructing, and rehabilitating senior centers and related department facilities, equipment, and vehicles. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/senior_affairs_scope.pdf)
+
+- [2011 Affordable Housing General Obligation Bond Project Scope (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2011-affordable-housing-go-bond-project-scope-published.pdf)
+
+  Records the 2011 affordable housing bond scope covering land acquisition for affordable housing development under the City affordable housing program. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/affordable_housing_scope.pdf)
+
+- [2011 Affordable Housing General Obligation Bond Project Scope (Initial Version) (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2011-affordable-housing-go-bond-project-scope-initial.pdf)
+
+  Records the initial 2011 affordable housing bond scope covering land acquisition for affordable housing development before later revision of the scope text. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1affordable_housing_scope.pdf)
+
+- [2011-2019 Senior Affairs General Obligation Bond Schedule (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2011-2019-senior-affairs-go-bond-schedule.pdf)
+
+  Schedules Senior Affairs bond funding from 2011 through 2019 for senior center renovation, rehabilitation, equipment, and related department facility investments across the decade plan. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/senior_affairs_summary.pdf)
+
+- [2011-2019 Finance and Administrative Services General Obligation Bond Schedule (Initial Version) (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2011-2019-finance-administrative-services-go-bond-schedule-initial.pdf)
+
+  Schedules the initial Finance and Administrative Services bond allocations from 2011 through 2019 for enterprise systems, servers, networks, radio management, and continuity planning before later revision. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1finance_summary.pdf)
+
+- [2011-2019 Fire General Obligation Bond Schedule (Initial Version) (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2011-2019-fire-go-bond-schedule-initial.pdf)
+
+  Schedules the initial Fire bond allocations from 2011 through 2019 for apparatus replacement and fire station rehabilitation before later revision of the department schedule. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1fire_summary.pdf)
+
+- [2011-2019 Planning General Obligation Bond Schedule (Initial Version) (Archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment/cabq-2011-2019-planning-go-bond-schedule-initial.pdf)
+
+  Schedules the initial Planning Department bond allocations from 2011 through 2019 for plan review technology, geographic information systems, permitting, and redevelopment support before later revision. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1planning_summary.pdf)
+
+- [2011-2019 Streets General Obligation Bond Schedule (Initial Version) (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-2011-2019-streets-go-bond-schedule-initial.pdf)
+
+  Schedules the initial Streets bond allocations from 2011 through 2019 for roadway and intersection reconstruction, paving rehabilitation, bridges, sidewalks, and named corridor projects before later revision. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1streets_summary.pdf)
+
 ### October 2010 Program Scope and Schedule Records
 
 The City’s October 2010 Environmental Planning Commission folder preserves a distinct preliminary 2011 program: one citywide allocation summary, 13 department project-scope sheets, and seven schedules whose totals differ from the later 2011–2019 deliveries above. Identical later deliveries are consolidated to their canonical records.
