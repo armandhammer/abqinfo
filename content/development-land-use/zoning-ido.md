@@ -32,6 +32,20 @@ Current zoning tools and a preserved history of Albuquerque's Integrated Develop
 
   Explains the 2021 Cannabis Regulation Act for local planners, covering licenses, local time-place-manner authority, limits on municipal restrictions, taxation, employment, and implementation deadlines.
 
+## Historical Wireless Telecommunications Regulations
+
+- [Enacted Ordinance O-2014-024: Amending the Wireless Telecommunication Regulations and Related Definitions in the Zoning Code (Council Bill F/S O-14-7) (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning/cabq-enacted-ordinance-o-2014-024-wireless-telecommunications.pdf)
+
+  The enacted ordinance rewrites the former Zoning Code's wireless telecommunications rules, replacing readily visible facility definitions with concealment, collocation, public utility collocation, and free-standing facility definitions and standards.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/WirelessTelecom-WTRegulations2014.pdf)
+
+- [Zoning Code Section 14-16-3-17: Wireless Telecommunications Regulations (pre-Integrated Development Ordinance text) (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning/cabq-zoning-code-14-16-3-17-wireless-telecommunications.pdf)
+
+  The codified former zoning regulations set wireless-facility concealment requirements, height and setback standards, collocation rules, public utility provisions, application and approval procedures, and abandonment obligations.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/WirelessTelecom-Zoning14-6-3-17.pdf)
+
 ## Historical Effective IDO Editions
 
 - [Integrated Development Ordinance, Effective April 20, 2026](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-ido-effective-2026-04-20.pdf)

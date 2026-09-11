@@ -801,3 +801,23 @@ The City published the 2017 program as separate department tables rather than on
   Details $2.93 million in 2017 Technology and Innovation Services scopes for information-technology infrastructure upgrades, disaster recovery and virtual desktop components, network equipment replacement, the citywide cyber security program, and business application technology. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-2025-technology-innovation-services-go-bond-summary.pdf) schedules $18.705 million through 2025.
 
   [Official City Record — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/technology-innovation-services-scope.pdf/view) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/technology-innovation-services-scope.pdf) · [Official City Record — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/technology-innovation-services-summary.pdf/view) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/technology-innovation-services-summary.pdf)
+
+## Impact Fee Capital Improvement Plan Records
+
+- [Enacted Resolution R-2012-100: Amending the Adopted Component Capital Improvements Plan for Impact Fees, 2012 to 2022 (Council Bill R-12-98) (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-enacted-resolution-r-2012-100-impact-fee-ccip-2012-2022.pdf)
+
+  The enacted resolution adopts the updated Component Capital Improvements Plan governing how Albuquerque impact fees may be spent for 2012 through 2022 after the program update.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/DRS-ImpactFees-CCIPLegislation-2016.pdf)
+
+- [Enacted Resolution R-2013-115: Amending the Adopted Component Capital Improvements Plan to Restore Unser Boulevard and Escarpment Trail Impact Fee Credits (Council Bill R-13-248) (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-enacted-resolution-r-2013-115-impact-fee-credits.pdf)
+
+  The enacted resolution restores the omitted Unser Boulevard widening and Petroglyph Escarpment Trail projects to the Component Capital Improvements Plan, making both eligible for impact fee credits.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/DRS-ImpactFees-CCIPLegislationAmended-2016.pdf)
+
+- [Impact Fee Credit Holder Summary, February 18, 2020 (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-impact-fee-credit-holder-summary-2020-02-18.pdf)
+
+  The City summary lists holders of Albuquerque impact fee credits by service area code, naming each developer or company, the outstanding credit balance, and closed accounts.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/DRS-ImpactFees-CreditHolders-2-18-2020.pdf)

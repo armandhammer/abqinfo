@@ -84,6 +84,44 @@ Cross-cutting development process documents, manuals, and reference materials.
 
   Effective August 1, 2026. [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/2026%20City%20Engineers%20Unit%20Price.pdf) · [Official Development Review Services document library](https://documents.cabq.gov/planning/DevelopmentReviewServices/)
 
+## Development Review Requirements and Agreements
+
+- [Design Review and Construction (DRC) Jurisdiction Memorandum, August 25, 2026 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-drc-jurisdiction-memorandum-2026-08-25.pdf)
+
+  The Planning Department memorandum identifies projects requiring Design Review and Construction plan approval and a City work order, listing twelve triggers covering paving, sidewalks, curb and gutter, signals, markings, and related improvements.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/DRC_Jurisdiction.pdf)
+
+- [Infrastructure Improvements Agreement, Procedure C: Agreement to Construct Public Improvements by City Contract (Figure 13) (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-infrastructure-improvements-agreement-procedure-c.pdf)
+
+  The agreement binds a developer to fund public infrastructure that Albuquerque constructs under a City contract, setting deposit, bid, construction, and reimbursement terms for Procedure C.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/IIA%20Proc%20C%20Standard.pdf)
+
+- [Revocable Permit Submittal Requirements, April 2020 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-revocable-permit-submittal-requirements-2020.pdf)
+
+  The City sheet states what a right-of-way encroachment permit costs and requires, including ten-year renewal, a $500 administrative fee, annual square-foot fees, and exhibit requirements.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/Revocalbe_Permit_Requirments_April_2020.pdf)
+
+- [Hydrology Review Fees, 2024 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-hydrology-review-fees-2024.pdf)
+
+  The Planning Department schedule sets 2024 hydrology review charges for conceptual grading and drainage plans, drainage reports, preliminary and final plats, and resubmittals, scaled by lot count.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/Hydro-Trans%20Review%20Fees.pdf)
+
+- [Enacted Ordinance O-2014-024: Amending the Wireless Telecommunication Regulations and Related Definitions in the Zoning Code (Council Bill F/S O-14-7) (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning/cabq-enacted-ordinance-o-2014-024-wireless-telecommunications.pdf)
+
+  The enacted ordinance rewrites the former Zoning Code's wireless telecommunications regulations, including concealment, collocation, public utility collocation, and free-standing facility definitions and standards.
+
+  [Zoning and IDO placement](/development-land-use/zoning-ido/#historical-wireless-telecommunications-regulations) · [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/WirelessTelecom-WTRegulations2014.pdf)
+
+- [Zoning Code Section 14-16-3-17: Wireless Telecommunications Regulations (pre-Integrated Development Ordinance text) (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning/cabq-zoning-code-14-16-3-17-wireless-telecommunications.pdf)
+
+  The codified former zoning regulations set wireless-facility concealment requirements, height and setback standards, collocation rules, application procedures, approval criteria, and abandonment obligations.
+
+  [Zoning and IDO placement](/development-land-use/zoning-ido/#historical-wireless-telecommunications-regulations) · [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/WirelessTelecom-Zoning14-6-3-17.pdf)
+
 ## Infrastructure Improvements Agreements
 
 - [Current City Infrastructure Improvements Agreement Forms Directory](https://documents.cabq.gov/planning/DevelopmentReviewServices/DRC/IIA/)
