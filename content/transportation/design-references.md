@@ -177,6 +177,32 @@ Reference drawings, engineering details, and technical guidance related to trans
 
   [Official County PDF](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/05/Bernco_Solar_PV_Array_Guidance_V2_03172025-signed.pdf) · [Development Process placement](/development-land-use/development-process/#county-development-review)
 
+## Development Review Design References
+
+- [Special Order 19 Notice to Contractor: Private Drainage Facilities Within City Right-Of-Way, Revision December 2022 (Archived PDF)](https://files.abqinfo.com/transportation/design-references/cabq-special-order-19-private-drainage-facilities-2022.pdf)
+
+  The standard plan notes require a sidewalk culvert built to City Standard Drawing 2236, a Storm Maintenance pre-forming meeting, an excavation permit, utility notice, and compliance with construction safety law.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/SO%2019%20NOTES%20Rev%2012-2022.pdf)
+
+- [Standard Easement Language for Subdivision Plats: Drainage Facilities and Detention Areas (Archived PDF)](https://files.abqinfo.com/transportation/design-references/cabq-subdivision-plat-drainage-easement-language-2018.pdf)
+
+  The standard dedicatory language defines drainage easements and detention areas, assigns maintenance responsibility, and preserves the perpetual right of storm water conveyance for subdivision lots.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/Hydro-Plat%20Drainage%20Easements-10-24-18.pdf)
+
+- [Design Review and Construction (DRC) Jurisdiction Memorandum, August 25, 2026 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-drc-jurisdiction-memorandum-2026-08-25.pdf)
+
+  The memorandum identifies projects requiring construction-plan approval and a City work order, listing triggers for paving, sidewalks, curb and gutter, traffic signals, pavement markings, and related improvements.
+
+  [Development Process placement](/development-land-use/development-process/#development-review-requirements-and-agreements) · [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/DRC_Jurisdiction.pdf)
+
+- [Infrastructure Improvements Agreement, Procedure C: Agreement to Construct Public Improvements by City Contract (Figure 13) (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-infrastructure-improvements-agreement-procedure-c.pdf)
+
+  The agreement binds a developer to fund public infrastructure Albuquerque constructs under a City contract, setting deposit, bid, construction, and reimbursement terms for Procedure C.
+
+  [Development Process placement](/development-land-use/development-process/#development-review-requirements-and-agreements) · [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/IIA%20Proc%20C%20Standard.pdf)
+
 ## Regional Planning and Design Guidance
 
 - [MRMPO Long-Range Transportation System Guidelines - 2020 Update (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-connections-2040-mtp-appendix-e-long-range-transportation-system-guide-2020.pdf)
