@@ -92,6 +92,10 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
 ## Historical City Capital Plans
 
+- [2011 Storm Drainage General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/stormwater/cabq-2011-storm-drainage-go-bond-project-scopes-published.pdf)
+
+  Details 2011 storm drainage bond scopes for regulatory compliance work, storm drain and pump station rehabilitation, channel and arroyo improvements, water quality facilities, and drainage master planning. [Full 2011 published-scope record](/city-data/capital-spending/#2011-published-scope-and-version-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/storm_drainage_scope.pdf)
+
 - [2017 Storm Drainage General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/stormwater/cabq-2017-storm-drainage-go-bond-project-scopes.pdf)
 
   Details $15 million in 2017 storm-drainage scopes for EPA MS4 permit compliance, Martineztown and Mid-Valley storm drains, Loma Hermosa and South Broadway flooding relief, Kirtland detention, arroyo flash-flood warning, water-quality retrofits, dam emergency plans, and channel stabilization. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/public-works/stormwater/cabq-2017-2025-storm-drainage-go-bond-summary.pdf) schedules $99.78 million through 2025, adding Marble Arno detention, Chelwood Park and Morris storm drains, and Gibson-San Mateo floodplain mitigation. [Full 2017 capital-program record](/city-data/capital-spending/#2017-general-obligation-bond-program) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-storm-drainage-scope.pdf) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-storm-drainage-summary.pdf)
