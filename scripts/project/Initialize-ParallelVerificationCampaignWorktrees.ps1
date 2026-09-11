@@ -27,7 +27,7 @@ if(-not$PlanOnly){
       $plan.state='reused'
       continue
     }
-    & git worktree add --detach $plan.path $commit;if($LASTEXITCODE){throw "Unable to create worktree for lane $($plan.lane_id)"};$plan.state='created'
+    & git worktree add --detach $plan.path $commit | Out-Null;if($LASTEXITCODE){throw "Unable to create worktree for lane $($plan.lane_id)"};$plan.state='created'
   }
 }
 [pscustomobject][ordered]@{campaign_id=$campaign.campaign_id;manifest_path=$manifestFull;plan_only=[bool]$PlanOnly;worktrees=@($plans)}|ConvertTo-Json -Depth 6

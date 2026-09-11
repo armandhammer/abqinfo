@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-09-11T02:23:42.9717366Z",
-  "completed_item_range": "Implemented, regression-tested, and live-validated the autonomous campaign rollover coordinator on codex/autonomous-campaign-coordinator. Completed campaign 2026-09-10-pending-01 replayed 14 immutable failed-result decisions to requires human review and committed only project-state/master-inventory.json in 45decb1. Successor 2026-09-10-pending-02 is active with a predecessor-hash-bound immutable manifest and clean detached codex and claude worktrees at commit 45decb18be082b08ca77c3bf92e290c29ca85612. Its Claude lane has already completed 120/120 results (110 passed, 10 failed); its Codex lane has 120/120 remaining. The coordinator also prevents successor-publication races, wraps selection to earlier unassigned pending gaps, safely replays receipt-bearing candidates restored exactly to their immutable input fingerprint, and passes the expanded 16-scenario campaign regression and full project validation, including Hugo. No R2 upload, merge, deployment, or content change was performed.",
+  "recorded_at": "2026-09-11T03:00:22.1079115Z",
+  "completed_item_range": "Continued and completed both 120-candidate lanes of 2026-09-10-pending-02: 222 passed and 18 failed. The autonomous coordinator recorded all 18 non-passing results as requires human review through its crash-safe inventory writer, committed only project-state/master-inventory.json in 8fd0fac, and created the predecessor-hash-bound successor 2026-09-10-pending-03. A Git worktree progress message exposed a JSON-stream parsing defect during the first rollover attempt; the transition remained recoverable, the planner now suppresses that incidental output, and a disposable real-worktree regression covers it. The active pointer now names pending-03 with clean detached Codex and Claude lanes at 8fd0facc0dce3f5bcb4e1cb73c2328332f8241c7, both 120 candidates remaining. The 17-scenario campaign regression passes. No R2 upload, merge, deployment, or content change was performed.",
   "total_candidates": 7074,
   "counts_by_status": {
-    "pending review": 2660,
+    "pending review": 2642,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 9,
@@ -16,9 +16,9 @@
     "duplicate": 1443,
     "superseded": 142,
     "blocked": 0,
-    "requires human review": 74
+    "requires human review": 92
   },
-  "remaining_nonterminal": 2849,
+  "remaining_nonterminal": 2831,
   "next_pending_id": "src-049f7958bcc2f6da",
   "blockers": [
     "The 16-record/eight-page content batch is implemented and validated with authoritative government links; 17 original PDFs totaling 67,526,043 bytes remain pending separate explicit R2 upload approval, including three supporting components of the multipart Downtown Neighborhood plan.",
@@ -30,5 +30,5 @@
     "src-0f5140179b1f087f is only an announcement for the International District Choice Neighborhood final plan; locate the authoritative final plan before visible use.",
     "src-10209c5fcdce2906 is explicitly a 2026-02-02 draft stormwater BMP package; locate or verify an adopted final version before archival or visible use."
   ],
-  "resume_command": "Continue the active 2026-09-10-pending-02 verification campaign from the immutable active-run pointer by processing the remaining Codex lane only in C:\\Users\\ben\\Documents\\ABQinfo-campaign-workers\\2026-09-10-pending-02\\codex. Claude is already complete. After Codex finishes, rerun the autonomous coordinator to escalate non-passing results and publish the next globally non-overlapping successor. Preserve unrelated local changes. Do not upload to R2, merge, or deploy without explicit approval."
+  "resume_command": "Continue active 2026-09-10-pending-03 from the immutable active-run pointer in its detached C:\\Users\\ben\\Documents\\ABQinfo-campaign-workers\\2026-09-10-pending-03\\codex and claude lanes. After both complete, rerun the autonomous coordinator to escalate non-passing results and publish the next globally non-overlapping successor. Preserve unrelated local changes. Do not upload to R2, merge, or deploy without explicit approval."
 }
