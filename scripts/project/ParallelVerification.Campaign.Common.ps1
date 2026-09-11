@@ -193,6 +193,8 @@ function Test-ParallelVerificationIntegrationIntentObject {
   if([string]$Intent.campaign_id-ne[string]$Campaign.campaign_id -or [string]$Intent.campaign_sha256-ne[string]$Campaign.campaign_sha256){$errors.Add('Integration intent campaign binding is invalid.')}
   if([string]$Intent.candidate_id-ne[string]$Entry.candidate_id -or [string]$Intent.result_sha256-ne[string]$Result.result_sha256){$errors.Add('Integration intent candidate/result binding is invalid.')}
   if([string]$Intent.before_fingerprint_sha256-ne[string]$Entry.input_fingerprint_sha256){$errors.Add('Integration intent input fingerprint is invalid.')}
+  $expectedOperationId=Get-ParallelVerificationObjectHash ([ordered]@{campaign_sha256=[string]$Campaign.campaign_sha256;candidate_id=[string]$Entry.candidate_id;result_sha256=[string]$Result.result_sha256;updates=$Intent.set})
+  if([string]$Intent.operation_id-ne$expectedOperationId){$errors.Add('Integration intent operation ID is invalid.')}
   if(((Get-Item -LiteralPath $Path).Attributes -band [IO.FileAttributes]::ReadOnly)-eq0){$errors.Add('Integration intent is not read-only.')}
   if([string]$Intent.intent_sha256-ne(Get-ParallelVerificationObjectHash (Get-ParallelVerificationIntegrationIntentPayload $Intent))){$errors.Add('Integration intent SHA-256 is invalid.')}
   @($errors)

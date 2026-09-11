@@ -9,7 +9,9 @@ param(
   [string]$InventoryPath = 'project-state/master-inventory.json',
   [string]$CampaignRoot,
   [string]$BaseCommit,
-  [string]$PredecessorManifestPath
+  [string]$PredecessorManifestPath,
+  [string]$CoordinatorLeasePath,
+  [string]$CoordinatorOwnerToken
 )
 
 Set-StrictMode -Version Latest
@@ -23,6 +25,11 @@ foreach($lane in $LaneIds){if($lane -notmatch '^[a-z0-9][a-z0-9._-]{1,31}$'){thr
 
 $repo=(& git rev-parse --show-toplevel).Trim(); if($LASTEXITCODE){throw 'Unable to resolve repository root.'}
 $repo=[IO.Path]::GetFullPath($repo).TrimEnd('\','/')
+if($PredecessorManifestPath){
+  if(-not$CoordinatorOwnerToken){throw 'Successor campaign creation requires the active coordinator lease owner token.'}
+  if(-not$CoordinatorLeasePath){$gitCommon=(& git rev-parse --git-common-dir).Trim();if(-not[IO.Path]::IsPathRooted($gitCommon)){$gitCommon=Join-Path $repo $gitCommon};$CoordinatorLeasePath=Join-Path $gitCommon 'abqinfo-verification-locks/campaign-coordinator.lock'}
+  Assert-ParallelVerificationCoordinatorLeaseAccess -LeasePath ([IO.Path]::GetFullPath($CoordinatorLeasePath)) -OwnerToken $CoordinatorOwnerToken
+}
 if(-not $CampaignRoot){$CampaignRoot=Join-Path (Split-Path -Parent $repo) 'ABQinfo-verification-campaigns'}
 $inventoryFull=[IO.Path]::GetFullPath($InventoryPath)
 $inventory=Read-ParallelVerificationJson $inventoryFull

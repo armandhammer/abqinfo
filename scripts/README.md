@@ -88,6 +88,7 @@ For usage-paused-proof campaigns with many microbatches:
 .\scripts\project\New-ParallelVerificationCampaign.ps1 -CampaignId '2026-09-10-pending-01' -StartId 'src-10d16d79d48b3ed3' -Count 240 -MicrobatchSize 10
 .\scripts\project\Initialize-ParallelVerificationCampaignWorktrees.ps1 -ManifestPath '<absolute campaign path>' -WorktreeRoot 'C:\ABQinfo-campaign-worktrees'
 .\scripts\project\Get-ParallelVerificationCampaignStatus.ps1 -ManifestPath '<absolute campaign path>'
+.\scripts\project\Invoke-ParallelVerificationCampaignCoordinator.ps1 -ManifestPath '<absolute campaign path>' -WorktreeRoot 'C:\ABQinfo-campaign-worktrees'
 .\scripts\project\Test-ParallelVerificationCampaignWorkflow.ps1
 ```
 

@@ -77,10 +77,14 @@ function Get-AssignedCandidateSet([string]$Root,[string]$IgnoreManifestPath) {
 function Get-NextCandidates($Inventory,$Predecessor,[string]$Root,[int]$RequestedCount,[string]$IgnoreManifestPath) {
   $assigned = Get-AssignedCandidateSet -Root $Root -IgnoreManifestPath $IgnoreManifestPath
   $lastId = @(Get-ParallelVerificationCampaignEntries $Predecessor | Sort-Object candidate_id | Select-Object -Last 1 -ExpandProperty candidate_id)[0]
-  @($Inventory.candidates |
-    Where-Object { [string]$_.status -eq 'pending review' -and [string]$_.id -gt $lastId -and -not $assigned.ContainsKey([string]$_.id) } |
-    Sort-Object id |
-    Select-Object -First $RequestedCount -ExpandProperty id)
+  $available = @($Inventory.candidates |
+    Where-Object { [string]$_.status -eq 'pending review' -and -not $assigned.ContainsKey([string]$_.id) } |
+    Sort-Object id)
+  $ordered = @(
+    @($available | Where-Object { [string]$_.id -gt $lastId })
+    @($available | Where-Object { [string]$_.id -le $lastId })
+  )
+  @($ordered | Select-Object -First $RequestedCount -ExpandProperty id)
 }
 
 $manifestFull = Resolve-ParallelVerificationCampaignManifest -ManifestPath $ManifestPath -ActiveRunPath $ActiveRunPath
@@ -131,6 +135,13 @@ foreach ($entry in @(Get-ParallelVerificationCampaignEntries $campaign)) {
     status = 'requires human review'
     validation_status = "requires human review: autonomous campaign $($campaign.campaign_id) ($summary)"
     processing_notes_append = "Autonomous campaign $($campaign.campaign_id) did not pass verification ($summary); human review is required. Result SHA-256: $($result.result_sha256)."
+  }
+  $existingIntentPath = Join-Path $manifestDirectory "integration/intents/$($entry.candidate_id).json"
+  if (Test-Path -LiteralPath $existingIntentPath) {
+    $existingIntent = Read-ParallelVerificationJson $existingIntentPath
+    $existingIntentErrors = @(Test-ParallelVerificationIntegrationIntentObject -Intent $existingIntent -Campaign $campaign -Entry $entry -Result $result -Path $existingIntentPath)
+    if ($existingIntentErrors.Count) { throw "Existing failed-result integration intent is invalid for $($entry.candidate_id): $($existingIntentErrors -join '; ')" }
+    $updates = [pscustomobject]$existingIntent.set
   }
   $operationPayload = [ordered]@{campaign_sha256=[string]$campaign.campaign_sha256;candidate_id=[string]$entry.candidate_id;result_sha256=[string]$result.result_sha256;updates=$updates}
   $operationId = Get-ParallelVerificationObjectHash $operationPayload
@@ -261,7 +272,7 @@ try {
       [pscustomobject][ordered]@{mode='applied';predecessor_campaign_id=[string]$campaign.campaign_id;review_required=$reviewOperations.Count;successor_created=$false;reason='No later non-overlapping pending-review candidates remain.';safeguards=@('no R2','no merge','no deploy')} | ConvertTo-Json -Depth 8
       exit 0
     }
-    $created = & "$PSScriptRoot/New-ParallelVerificationCampaign.ps1" -CampaignId $SuccessorCampaignId -LaneIds $LaneIds -CandidateIds $nextIds -MicrobatchSize $MicrobatchSize -InventoryPath $inventoryFull -CampaignRoot $campaignRootFull -BaseCommit $baseCommit -PredecessorManifestPath $manifestFull | ConvertFrom-Json -DateKind String
+    $created = & "$PSScriptRoot/New-ParallelVerificationCampaign.ps1" -CampaignId $SuccessorCampaignId -LaneIds $LaneIds -CandidateIds $nextIds -MicrobatchSize $MicrobatchSize -InventoryPath $inventoryFull -CampaignRoot $campaignRootFull -BaseCommit $baseCommit -PredecessorManifestPath $manifestFull -CoordinatorLeasePath $coordinatorLeaseFull -CoordinatorOwnerToken $coordinatorOwnerToken | ConvertFrom-Json -DateKind String
     $successorPath = [string]$created.manifest_path;$successor = Read-ParallelVerificationJson $successorPath
   }
   if ($TestInterruptAt -eq 'after-successor') { throw 'Test interruption after successor creation.' }
