@@ -2,7 +2,9 @@
 param(
   [Parameter(Mandatory)][string]$ManifestPath,
   [string]$ActiveRunPath='project-state/active-run.json',
-  [switch]$Replace
+  [switch]$Replace,
+  [string]$CoordinatorLeasePath,
+  [string]$CoordinatorOwnerToken
 )
 
 Set-StrictMode -Version Latest
@@ -11,6 +13,8 @@ $ErrorActionPreference='Stop'
 
 & git symbolic-ref --quiet HEAD|Out-Null
 if($LASTEXITCODE){throw 'Only the coordinator on an attached branch may set the active campaign.'}
+if(-not$CoordinatorLeasePath){$gitCommon=(& git rev-parse --git-common-dir).Trim();if(-not[IO.Path]::IsPathRooted($gitCommon)){$gitCommon=Join-Path (Get-Location).Path $gitCommon};$CoordinatorLeasePath=Join-Path $gitCommon 'abqinfo-verification-locks/campaign-coordinator.lock'}
+Assert-ParallelVerificationCoordinatorLeaseAccess -LeasePath ([IO.Path]::GetFullPath($CoordinatorLeasePath)) -OwnerToken $CoordinatorOwnerToken
 $manifestFull=[IO.Path]::GetFullPath($ManifestPath)
 $campaign=Read-ParallelVerificationJson $manifestFull
 $errors=@(Test-ParallelVerificationCampaignObject $campaign);if($errors.Count){throw "Campaign validation failed: $($errors -join '; ')"}

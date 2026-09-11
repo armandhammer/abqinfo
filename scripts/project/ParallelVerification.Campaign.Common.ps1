@@ -3,7 +3,7 @@ Set-StrictMode -Version Latest
 
 function Get-ParallelVerificationCampaignPayload {
   param([Parameter(Mandatory)]$Campaign)
-  [ordered]@{
+  $payload = [ordered]@{
     schema_version = [int]$Campaign.schema_version
     campaign_id = [string]$Campaign.campaign_id
     created_at = [string]$Campaign.created_at
@@ -19,6 +19,11 @@ function Get-ParallelVerificationCampaignPayload {
     lanes = @($Campaign.lanes)
     batches = @($Campaign.batches)
   }
+  if ([int]$Campaign.schema_version -ge 2) {
+    $payload.predecessor_campaign_id = [string]$Campaign.predecessor_campaign_id
+    $payload.predecessor_campaign_sha256 = [string]$Campaign.predecessor_campaign_sha256
+  }
+  $payload
 }
 
 function Get-ParallelVerificationCandidateResultPayload {
@@ -96,11 +101,15 @@ function Get-ParallelVerificationCampaignEntries {
 function Test-ParallelVerificationCampaignObject {
   param([Parameter(Mandatory)]$Campaign)
   $errors = [Collections.Generic.List[string]]::new()
-  if ([int]$Campaign.schema_version -ne 1) { $errors.Add('Campaign schema_version must be 1.') }
+  if ([int]$Campaign.schema_version -notin @(1,2)) { $errors.Add('Campaign schema_version must be 1 or 2.') }
   if ([string]$Campaign.campaign_id -notmatch '^[a-z0-9][a-z0-9._-]{2,63}$') { $errors.Add('Campaign ID is invalid.') }
   if ([int]$Campaign.candidate_count -lt 1) { $errors.Add('Campaign must contain candidates.') }
   if ([int]$Campaign.microbatch_size -lt 1) { $errors.Add('Campaign microbatch_size must be positive.') }
   if ([string]$Campaign.sharding -ne 'sorted candidate IDs chunked into microbatches and batches assigned round-robin to lanes') { $errors.Add('Campaign sharding algorithm is not recognized.') }
+  if ([int]$Campaign.schema_version -eq 2) {
+    if ([string]$Campaign.predecessor_campaign_id -notmatch '^[a-z0-9][a-z0-9._-]{2,63}$') { $errors.Add('Successor campaign predecessor ID is invalid.') }
+    if ([string]$Campaign.predecessor_campaign_sha256 -notmatch '^[a-f0-9]{64}$') { $errors.Add('Successor campaign predecessor SHA-256 is invalid.') }
+  }
   $lanes = @($Campaign.lanes | ForEach-Object { [string]$_ })
   if (-not $lanes.Count) { $errors.Add('Campaign must contain lanes.') }
   if (@($lanes | Group-Object | Where-Object Count -gt 1).Count) { $errors.Add('Campaign lanes are not unique.') }
@@ -206,6 +215,17 @@ function Resolve-ParallelVerificationWorkerPath([string]$Path, [string]$Root) {
   [IO.Path]::GetFullPath((Join-Path $Root $Path))
 }
 
+function Assert-ParallelVerificationCoordinatorLeaseAccess([string]$LeasePath,[string]$OwnerToken) {
+  if (-not $LeasePath -or -not (Test-Path -LiteralPath $LeasePath)) { return }
+  try { $stream=[IO.File]::Open($LeasePath,[IO.FileMode]::Open,[IO.FileAccess]::Read,[IO.FileShare]::ReadWrite) } catch { throw "Campaign coordinator lease is active and unreadable: $LeasePath" }
+  try { $reader=[IO.StreamReader]::new($stream);try{$text=$reader.ReadToEnd()}finally{$reader.Dispose()} } finally { $stream.Dispose() }
+  try { $lease=$text|ConvertFrom-Json -DateKind String } catch { throw "Campaign coordinator lease is corrupt: $LeasePath" }
+  $releasedProperty=$lease.PSObject.Properties['released_at']
+  if($releasedProperty -and -not[string]::IsNullOrWhiteSpace([string]$releasedProperty.Value)){return}
+  $tokenProperty=$lease.PSObject.Properties['owner_token']
+  if(-not$tokenProperty -or [string]::IsNullOrWhiteSpace($OwnerToken) -or [string]$tokenProperty.Value-ne$OwnerToken){throw 'A campaign rollover coordinator owns shared-state transitions.'}
+}
+
 function Test-ParallelVerificationWorkerLink([string]$Url, [int]$TimeoutSeconds) {
   if ([string]::IsNullOrWhiteSpace($Url)) { return [pscustomobject][ordered]@{ status='not_applicable'; url=$null; http_status=$null; reason='No authoritative URL is recorded.' } }
   $parsed = $null
@@ -216,7 +236,12 @@ function Test-ParallelVerificationWorkerLink([string]$Url, [int]$TimeoutSeconds)
     $code = [int]$response.StatusCode
     [pscustomobject][ordered]@{ status=if($code -ge 200 -and $code -lt 400){'passed'}else{'failed'}; url=$Url; http_status=$code; reason="HTTP $code" }
   } catch {
-    $code = if ($_.Exception.Response -and $_.Exception.Response.StatusCode) { [int]$_.Exception.Response.StatusCode } else { $null }
+    $code = $null
+    $responseProperty = $_.Exception.PSObject.Properties['Response']
+    if ($responseProperty -and $null -ne $responseProperty.Value) {
+      $statusProperty = $responseProperty.Value.PSObject.Properties['StatusCode']
+      if ($statusProperty -and $null -ne $statusProperty.Value) { $code = [int]$statusProperty.Value }
+    }
     [pscustomobject][ordered]@{ status='failed'; url=$Url; http_status=$code; reason=$_.Exception.Message }
   }
 }

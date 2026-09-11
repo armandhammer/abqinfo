@@ -8,7 +8,8 @@ param(
   [ValidateRange(1,100)][int]$MicrobatchSize = 10,
   [string]$InventoryPath = 'project-state/master-inventory.json',
   [string]$CampaignRoot,
-  [string]$BaseCommit
+  [string]$BaseCommit,
+  [string]$PredecessorManifestPath
 )
 
 Set-StrictMode -Version Latest
@@ -64,6 +65,15 @@ if(Test-Path -LiteralPath $rootFull){
   }
 }
 
+$schemaVersion=1;$predecessor=$null
+if($PredecessorManifestPath){
+  $predecessorPath=[IO.Path]::GetFullPath($PredecessorManifestPath);$predecessor=Read-ParallelVerificationJson $predecessorPath
+  $predecessorErrors=@(Test-ParallelVerificationCampaignObject $predecessor);if($predecessorErrors.Count){throw "Predecessor campaign validation failed: $($predecessorErrors -join '; ')"}
+  if(((Get-Item -LiteralPath $predecessorPath).Attributes -band [IO.FileAttributes]::ReadOnly)-eq0){throw 'Predecessor campaign manifest is not read-only.'}
+  if([string]$predecessor.campaign_id-eq$CampaignId){throw 'A successor campaign must have a distinct campaign ID.'}
+  $schemaVersion=2
+}
+
 $batches=[Collections.Generic.List[object]]::new()
 $batchCount=[int][Math]::Ceiling([double]$CandidateIds.Count/$MicrobatchSize)
 for($batchIndex=0;$batchIndex -lt $batchCount;$batchIndex++){
@@ -77,7 +87,7 @@ for($batchIndex=0;$batchIndex -lt $batchCount;$batchIndex++){
   $batches.Add([pscustomobject][ordered]@{ordinal=$ordinal;batch_id=$batchId;lane_id=$lane;candidates=@($items)})
 }
 $payload=[ordered]@{
-  schema_version=1;campaign_id=$CampaignId;created_at=(Get-Date).ToUniversalTime().ToString('o');base_commit=$BaseCommit
+  schema_version=$schemaVersion;campaign_id=$CampaignId;created_at=(Get-Date).ToUniversalTime().ToString('o');base_commit=$BaseCommit
   inventory_path=$manifestInventoryPath;inventory_sha256=Get-ParallelVerificationFileHash $inventoryFull;start_id=$CandidateIds[0]
   candidate_count=$CandidateIds.Count;microbatch_size=$MicrobatchSize
   sharding='sorted candidate IDs chunked into microbatches and batches assigned round-robin to lanes'
@@ -85,6 +95,7 @@ $payload=[ordered]@{
   update_field_allowlist=@('status','title','date','description','proposed_canonical_page','exclusion_reason','validation_status','provenance_status','processing_notes_append')
   lanes=$LaneIds;batches=@($batches)
 }
+if($predecessor){$payload.predecessor_campaign_id=[string]$predecessor.campaign_id;$payload.predecessor_campaign_sha256=[string]$predecessor.campaign_sha256}
 $campaign=[ordered]@{};foreach($key in $payload.Keys){$campaign[$key]=$payload[$key]};$campaign.campaign_sha256=Get-ParallelVerificationObjectHash $payload
 Write-ParallelVerificationJsonCreateNew -Value $campaign -Path $campaignPath -ReadOnly|Out-Null
 [pscustomobject][ordered]@{campaign_id=$CampaignId;manifest_path=$campaignPath;campaign_sha256=$campaign.campaign_sha256;base_commit=$BaseCommit;candidates=$CandidateIds.Count;microbatches=$batchCount;lanes=@($LaneIds|ForEach-Object{$lane=$_;[pscustomobject]@{lane_id=$lane;batches=@($batches|Where-Object lane_id -eq $lane).Count;candidates=@($batches|Where-Object lane_id -eq $lane|ForEach-Object{$_.candidates}).Count}})}|ConvertTo-Json -Depth 6

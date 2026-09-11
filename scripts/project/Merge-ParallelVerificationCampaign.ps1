@@ -9,6 +9,8 @@ param(
   [switch]$TakeOverExpiredLease,
   [ValidateRange(1,60)][int]$LeaseMinutes=5,
   [string]$LeasePath,
+  [string]$CoordinatorLeasePath,
+  [string]$CoordinatorOwnerToken,
   [string]$UpdateCandidateScript=(Join-Path $PSScriptRoot 'Update-Candidate.ps1'),
   [Parameter(DontShow)][ValidateSet('','after-intent','after-update-before-receipt','after-receipt')][string]$TestInterruptAt=''
 )
@@ -55,7 +57,10 @@ foreach($id in $AcceptedCandidateIds){
 }
 if(-not$Apply){[pscustomobject][ordered]@{campaign_id=$campaign.campaign_id;mode='dry-run';candidates=$operations.Count;operations=@($operations|ForEach-Object{[pscustomobject]@{candidate_id=$_.candidate_id;operation_id=$_.operation_id;updates=$_.updates}})}|ConvertTo-Json -Depth 12;exit 0}
 & git symbolic-ref --quiet HEAD|Out-Null;if($LASTEXITCODE){throw 'Apply mode must run from the coordinator branch.'}
-if(-not$LeasePath){$gitCommon=(& git rev-parse --git-common-dir).Trim();if(-not[IO.Path]::IsPathRooted($gitCommon)){$gitCommon=Join-Path (Get-Location).Path $gitCommon};$LeasePath=Join-Path $gitCommon 'abqinfo-verification-locks/inventory-writer.lock'}
+if(-not$LeasePath -or -not$CoordinatorLeasePath){$gitCommon=(& git rev-parse --git-common-dir).Trim();if(-not[IO.Path]::IsPathRooted($gitCommon)){$gitCommon=Join-Path (Get-Location).Path $gitCommon}}
+if(-not$LeasePath){$LeasePath=Join-Path $gitCommon 'abqinfo-verification-locks/inventory-writer.lock'}
+if(-not$CoordinatorLeasePath){$CoordinatorLeasePath=Join-Path $gitCommon 'abqinfo-verification-locks/campaign-coordinator.lock'}
+Assert-ParallelVerificationCoordinatorLeaseAccess -LeasePath ([IO.Path]::GetFullPath($CoordinatorLeasePath)) -OwnerToken $CoordinatorOwnerToken
 $leaseFull=[IO.Path]::GetFullPath($LeasePath);$leaseParent=Split-Path -Parent $leaseFull;if(-not(Test-Path -LiteralPath $leaseParent)){New-Item -ItemType Directory -Path $leaseParent -Force|Out-Null}
 $leaseStream=$null;$leaseOwned=$false
 try{
