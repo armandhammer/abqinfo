@@ -264,7 +264,8 @@ try {
   if (Test-Path -LiteralPath $successorPath) {
     $successor = Read-ParallelVerificationJson $successorPath;$successorErrors=@(Test-ParallelVerificationCampaignObject $successor)
     if ($successorErrors.Count -or [int]$successor.schema_version -ne 2 -or [string]$successor.predecessor_campaign_id -ne [string]$campaign.campaign_id -or [string]$successor.predecessor_campaign_sha256 -ne [string]$campaign.campaign_sha256) { throw 'Existing successor manifest is invalid or belongs to a different transition.' }
-    if ([string]$successor.base_commit -ne $baseCommit -or [string]$successor.inventory_sha256 -ne (Get-ParallelVerificationFileHash $inventoryFull)) { throw 'Existing successor manifest does not match the committed inventory transition.' }
+    $currentInventoryHash=Get-ParallelVerificationFileHash $inventoryFull
+    if ([string]$successor.base_commit -ne $baseCommit -or [string]$successor.inventory_sha256 -ne $currentInventoryHash) { throw "Existing successor manifest does not match the committed inventory transition (base $($successor.base_commit) vs $baseCommit; inventory $($successor.inventory_sha256) vs $currentInventoryHash)." }
     $nextIds = @(Get-ParallelVerificationCampaignEntries $successor | Sort-Object batch_ordinal,candidate_ordinal | ForEach-Object { [string]$_.candidate_id })
   } else {
     $nextIds = Get-NextCandidates -Inventory $inventory -Predecessor $campaign -Root $campaignRootFull -RequestedCount $Count -IgnoreManifestPath $null
