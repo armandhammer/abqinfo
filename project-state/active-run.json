@@ -5,8 +5,8 @@
   "branch": "codex/archive-batch-2026-09-12-b",
   "worktree": "C:\\Users\\ben\\Documents\\ABQinfo\\tmp\\archive-batch-b",
   "base_commit": "bd6d7d84bd8ca4659eb4ce524a0fd2d96a56799f",
-  "state": "r2_public_verification_pending",
-  "updated_at": "2026-09-12T15:37:00Z",
+  "state": "validated_pr_pending",
+  "updated_at": "2026-09-12T18:36:00Z",
   "source_research_artifacts": [
     "C:\\Users\\ben\\Documents\\ABQinfo\\project-state\\discovery\\council-documents-cluster-research-2026-09-11.json",
     "C:\\Users\\ben\\Documents\\ABQinfo\\project-state\\discovery\\councilor-district-5-cluster-research-2026-09-11.json"
@@ -54,6 +54,16 @@
   "archive_bytes": 14418380,
   "archive_objects_created": 15,
   "archive_head_verified": 15,
-  "archive_public_byte_verified": 0,
-  "next_action": "Retry public byte verification after files.abqinfo.com edge propagation. Do not edit site content until all 15 downloads match exact size and SHA-256; then refresh the R2 inventory and add the 15 canonical entries plus six approved cross-listings."
+  "archive_public_byte_verified": 15,
+  "visible_additions_completed": 21,
+  "validation": {
+    "master_inventory": "passed",
+    "content_style": "passed",
+    "crawler_regression": "18/18 passed",
+    "parallel_workflow": "10/10 passed",
+    "autonomous_campaign": "17/17 passed",
+    "retained_source_audit": "601/601 covered",
+    "hugo": "passed"
+  },
+  "next_action": "Commit and push the validated batch, open a focused pull request, verify its temporary deployment and checks, then merge and confirm production deployment."
 }

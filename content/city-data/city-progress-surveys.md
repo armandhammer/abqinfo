@@ -8,6 +8,44 @@ Citywide indicator reports and resident surveys preserve how Albuquerque measure
 
   The City’s maintained source page provides the report series and resident surveys. Archived copies below preserve the editions available from that page while keeping the official archive visible for updates.
 
+## Council Reports and Advisory Board Records
+
+- [Small Business Resource Fair Report: Supporting Albuquerque's Growing Small Business Community (2019 Archived PDF)](https://files.abqinfo.com/city-data/city-progress-surveys/cabq-small-business-resource-fair-report-2019.pdf)
+
+  The City Council staff report reviews the Small Business Resource Fair, setting out the local small business context, what the fair delivered, participant and partner feedback, and recommendations for future City support of small businesses.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/small-business-resource-fair-report-final-draft.pdf) · [Development Process placement](/development-land-use/development-process/#community-and-small-business-process-reviews)
+
+- [Appendices to the Small Business Resource Fair Report, Including Enacted Resolution R-2018-081 (Archived PDF)](https://files.abqinfo.com/city-data/city-progress-surveys/cabq-small-business-resource-fair-report-appendices-2019.pdf)
+
+  The appendix volume to the Council small business report opens with enacted Resolution R-2018-081, which directs the Economic Development Department to convene a micro-enterprise development fair with local and state partners, and carries the supporting materials.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/appendices.pdf) · [Development Process placement](/development-land-use/development-process/#community-and-small-business-process-reviews)
+
+- [African American Advisory Board Minutes, July 7, 2026 (Archived PDF)](https://files.abqinfo.com/city-data/city-progress-surveys/cabq-african-american-advisory-board-minutes-2026-07-07.pdf)
+
+  The approved minutes of the City African American Advisory Board record attendance, the business transacted, member reports, and actions taken at the board's July 7, 2026 meeting in the City Council Committee Room.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/aaab-minutes-july-7-final-version-7-16-2026.pdf)
+
+- [African American Advisory Board Minutes, June 2, 2026 (Archived PDF)](https://files.abqinfo.com/city-data/city-progress-surveys/cabq-african-american-advisory-board-minutes-2026-06-02.pdf)
+
+  The approved minutes of the City African American Advisory Board record attendance, business transacted, and actions taken at the board's June 2, 2026 meeting, held at the Black Chambers of Commerce New Mexico on Fourth Street SW.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/aaab-minutes-june-2-2026.pdf)
+
+- [African American Advisory Board Minutes, May 5, 2026 (Archived PDF)](https://files.abqinfo.com/city-data/city-progress-surveys/cabq-african-american-advisory-board-minutes-2026-05-05.pdf)
+
+  The approved minutes of the City African American Advisory Board record attendance, business transacted, and actions taken at the board's May 5, 2026 meeting in the Department of Municipal Development conference room at One Civic Plaza.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/aaab-minutes-may-2026-accessible.pdf)
+
+- [Albuquerque City Council Services Organizational Chart, April 6, 2026 (Archived PDF)](https://files.abqinfo.com/city-data/city-progress-surveys/cabq-city-council-services-organizational-chart-2026.pdf)
+
+  The chart shows how City Council Services is organized, naming the Director, the deputy directors for policy and operations, general counsel, the Clerk of the Council, and the program evaluation and district associate director roles beneath them.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/council-services-org-chart-4-6-26.pdf)
+
 ## Albuquerque Progress Reports
 
 - [2022 Albuquerque Progress Report](https://files.abqinfo.com/city-data/city-progress/cabq-albuquerque-progress-report-2022.pdf) ([Official City PDF](https://www.cabq.gov/progress/documents/2022-albuquerque-progress-report.pdf))

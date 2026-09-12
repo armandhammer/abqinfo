@@ -1,6 +1,6 @@
 {
-  "recorded_at": "2026-09-12T15:37:00Z",
-  "completed_item_range": "For the Council records batch, integrated 127 research decisions, downloaded and parsed all 15 approved originals, and created 15 new guarded R2 objects totaling 14,418,380 bytes with exact local size/SHA-256 and upload HEAD verification. The immediate files.abqinfo.com retry returned 404 while edge propagation is pending, so no site content has been changed.",
+  "recorded_at": "2026-09-12T18:36:00Z",
+  "completed_item_range": "For the Council records batch, integrated 127 research decisions, verified and publicly archived all 15 approved originals as exact size/SHA-256 matches, refreshed the R2 inventory to 1,102 objects and 8,580,473,723 bytes, added 15 canonical records plus six approved cross-listings across eight pages, and passed inventory, content-style, crawler, workflow, campaign, retained-source, and Hugo validation.",
   "total_candidates": 7077,
   "counts_by_status": {
     "pending review": 2338,
@@ -9,19 +9,19 @@
     "downloaded": 9,
     "parsed": 0,
     "description drafted": 0,
-    "placement assigned": 17,
+    "placement assigned": 2,
     "implemented": 178,
-    "validated": 1404,
+    "validated": 1419,
     "excluded": 1380,
     "duplicate": 1477,
     "superseded": 159,
     "blocked": 0,
     "requires human review": 115
   },
-  "remaining_nonterminal": 2542,
-  "next_pending_id": "src-049f7958bcc2f6da",
+  "remaining_nonterminal": 2349,
+  "next_pending_id": "src-04dfcbe1dcde70f8",
   "blockers": [
     "Four abbreviated-name 2011 GO-bond variants remain requires human review because their version order cannot be established: src-ca2ae8cb1ef13fdf, src-832bc2144296aa51, src-20cca95ec6dcbe4f, and src-9e6cb716ac7c28d9. They were not archived or published."
   ],
-  "resume_command": "In C:\\Users\\ben\\Documents\\ABQinfo\\tmp\\archive-batch-b on codex/archive-batch-2026-09-12-b, retry public byte verification for project-state/discovery/council-records-r2-archive-plan-2026-09-12.json. Do not add site content until all 15 public R2 downloads match exact size and SHA-256."
+  "resume_command": "In C:\\Users\\ben\\Documents\\ABQinfo\\tmp\\archive-batch-b on codex/archive-batch-2026-09-12-b, commit and push the fully validated Council records batch, open a focused pull request, verify its temporary deployment and checks, then merge and confirm production deployment."
 }

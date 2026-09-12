@@ -32,6 +32,26 @@ Current zoning tools and a preserved history of Albuquerque's Integrated Develop
 
   Explains the 2021 Cannabis Regulation Act for local planners, covering licenses, local time-place-manner authority, limits on municipal restrictions, taxation, employment, and implementation deadlines.
 
+## Old Town Regulatory Review
+
+- [Old Town Virtual Task Force Summary of Ranking Results, Topic 1: Outdoor Displays (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-old-town-task-force-ranking-outdoor-displays.pdf)
+
+  The City task force summary charts how thirty-three participants ranked proposed options for regulating outdoor merchandise displays in Old Town, giving the vote distribution behind the recommendations that fed the Old Town historic protection overlay standards.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-1-colo.pdf) · [Projects placement](/development-land-use/projects/#old-town-virtual-task-force-records)
+
+- [Old Town Virtual Task Force Summary of Ranking Results, Topic 2: Signs (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-old-town-task-force-ranking-signs.pdf)
+
+  The City task force summary charts how twelve participants ranked proposed sign rules for Old Town, covering off-premises signs among other categories, and records the vote distribution behind each option the task force considered.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-2-colo.pdf) · [Projects placement](/development-land-use/projects/#old-town-virtual-task-force-records)
+
+- [Old Town Virtual Task Force Summary of Ranking Results, Topic 3: Outdoor Demonstrations (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-old-town-task-force-ranking-outdoor-demonstrations.pdf)
+
+  The City task force summary charts how seven participants ranked options for regulating outdoor craft demonstrations in Old Town, testing whether the former zoning code definition at Section 14-16-2-25(o)(1) adequately defined an outdoor demonstration.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-3-colo.pdf) · [Projects placement](/development-land-use/projects/#old-town-virtual-task-force-records)
+
 ## Historical Wireless Telecommunications Regulations
 
 - [Enacted Ordinance O-2014-024: Amending the Wireless Telecommunication Regulations and Related Definitions in the Zoning Code (Council Bill F/S O-14-7) (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning/cabq-enacted-ordinance-o-2014-024-wireless-telecommunications.pdf)
