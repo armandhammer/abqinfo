@@ -1,6 +1,6 @@
 {
-  "recorded_at": "2026-09-12T19:20:30Z",
-  "completed_item_range": "The legacy direct-source remediation batch freshly verified and archived 15 static documents across seven pages. All 15 public R2 downloads match exact size and SHA-256; the R2 inventory now records 1,117 objects and 8,598,804,453 bytes. All 15 existing direct-source-only site records now use the verified archive as the primary link and retain the official source link. Inventory, content-style, regression, retained-source-audit, and Hugo validation passed with zero errors; preview review remains pending.",
+  "recorded_at": "2026-09-12T19:25:00Z",
+  "completed_item_range": "PR 145 merged as commit 74f1bf4555612fac18e43c90e8789a8a4e902b66 and deployed successfully. The legacy direct-source remediation archived 15 static documents totaling 18,330,730 bytes across seven pages; all public R2 downloads matched exact size and SHA-256, the full validation suite passed with zero errors, and all seven production pages returned HTTP 200 with the expected archive links. The next retained-source descendant-audit batch has claimed 20 source records on codex/archive-batch-2026-09-12-d.",
   "total_candidates": 7077,
   "counts_by_status": {
     "pending review": 2338,
@@ -23,5 +23,5 @@
   "blockers": [
     "Four abbreviated-name 2011 GO-bond variants remain requires human review because their version order cannot be established: src-ca2ae8cb1ef13fdf, src-832bc2144296aa51, src-20cca95ec6dcbe4f, and src-9e6cb716ac7c28d9. They were not archived or published."
   ],
-  "resume_command": "In C:\\Users\\ben\\Documents\\ABQinfo\\tmp\\archive-batch-b on codex/archive-batch-2026-09-12-c, commit and push the completed remediation, then open and verify the focused preview PR."
+  "resume_command": "In C:\\Users\\ben\\Documents\\ABQinfo\\tmp\\archive-batch-b on codex/archive-batch-2026-09-12-d, read project-state/active-run.json and audit the 20 claimed retained source pages and their descendants. Save exact authoritative-source and version evidence before selecting the next coherent archive batch."
 }
