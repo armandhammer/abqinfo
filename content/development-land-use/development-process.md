@@ -30,6 +30,26 @@ Cross-cutting development process documents, manuals, and reference materials.
 
   [Official City PDF](https://documents.cabq.gov/planning/UDD/FacilitatedMeetingsCriteria-IDO-16July2018.PDF)
 
+## Community and Small-Business Process Reviews
+
+- [Neighborhood Task Force Final Report to the City Council (2007 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-neighborhood-task-force-final-report-2007.pdf)
+
+  The Council-appointed task force reports on five assigned topics covering the function and role of the Office of Neighborhood Coordination, neighborhood association recognition, notification requirements, and the relationship between neighborhood organizations and the City development review process.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/natffinalrpt2.pdf)
+
+- [Small Business Resource Fair Report: Supporting Albuquerque's Growing Small Business Community (2019 Archived PDF)](https://files.abqinfo.com/city-data/city-progress-surveys/cabq-small-business-resource-fair-report-2019.pdf)
+
+  The City Council staff report reviews the Small Business Resource Fair, setting out the local small business context, what the fair delivered, participant and partner feedback, and recommendations for future City support of small businesses.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/small-business-resource-fair-report-final-draft.pdf) · [City Progress & Surveys placement](/city-data/city-progress-surveys/#council-reports-and-advisory-board-records)
+
+- [Appendices to the Small Business Resource Fair Report, Including Enacted Resolution R-2018-081 (Archived PDF)](https://files.abqinfo.com/city-data/city-progress-surveys/cabq-small-business-resource-fair-report-appendices-2019.pdf)
+
+  The appendix volume to the Council small business report opens with enacted Resolution R-2018-081, which directs the Economic Development Department to convene a micro-enterprise development fair with local and state partners, and carries the supporting materials.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/appendices.pdf) · [City Progress & Surveys placement](/city-data/city-progress-surveys/#council-reports-and-advisory-board-records)
+
 ## Development Process Manual
 
 - [Development Process Manual (June 2, 2020)](https://files.abqinfo.com/housing/development-process/development-process-manual-2020-06-02.pdf)

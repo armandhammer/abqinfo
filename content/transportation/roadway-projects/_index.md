@@ -348,6 +348,14 @@ Questions, construction concerns, or text-alert assistance: email [info@i25impro
 
 ## Past Projects (2020 and Earlier)
 
+### Rainbow Boulevard and Universe Boulevard School Safety Project
+
+- [Enacted Resolution R-2010-056: Creating a Traffic and Pedestrian Safety Project on Rainbow Boulevard and Universe Boulevard (Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/cabq-rainbow-universe-safety-project-resolution-r-2010-056.pdf)
+
+  The enacted City resolution creates a traffic and pedestrian safety project on Rainbow and Universe Boulevards, directing lighting, safety, and street improvements and appropriating funds from the Transportation Infrastructure Tax Fund 340 for the school corridor.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/councilor-district-5-documents/r-10-44.pdf) · [School Transportation Safety placement](/transportation/safety-crash-data/#school-transportation-safety)
+
 ### Bernalillo County Capital Cooperative and School Bus Route Projects (2015–2022)
 
 - [Capital Cooperative and School Bus Route Road Improvements (2015)](https://www.bernco.gov/public-works/blog/2021/04/16/cap-coop-and-school-bus-route-projects-2015)
