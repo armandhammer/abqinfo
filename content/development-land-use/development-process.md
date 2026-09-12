@@ -108,9 +108,11 @@ Cross-cutting development process documents, manuals, and reference materials.
 
   [Official City Word document](https://documents.cabq.gov/planning/development-process-manual/DPM-PLANNING-DMD%20CHANGES_9-25-25.docx) · [Current amendments register](https://www.cabq.gov/planning/boards-commissions/development-process-manual-executive-committee/amendments-to-the-dpm)
 
-- [Development Process Manual Executive Committee Minutes, September 24, 2014 (official PDF)](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-sept-24-2014.pdf)
+- [Development Process Executive Committee Minutes, September 24, 2014 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2014-09-24.pdf)
 
   Records committee approval of Development Process Manual changes to fire-flow requirements, on-street parking, and grading and erosion-control standards, while documenting the update-procedure discussion.
+
+  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-sept-24-2014.pdf)
 
 ## Historic Preservation and Overlay-Zone Guidance
 
