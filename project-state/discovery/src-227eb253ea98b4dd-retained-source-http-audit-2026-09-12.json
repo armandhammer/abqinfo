@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "candidate_id": "src-227eb253ea98b4dd",
+  "source_url": "https://nmdot.public.ms2soft.com/tcds/tsearch.asp?loc=Nmdot",
+  "audited_at": "2026-09-12T19:45:00Z",
+  "method": "Invoke-SourceCrawl.ps1 followed by direct Invoke-WebRequest inspection",
+  "result": {
+    "crawler_attempts": 5,
+    "http_status": 202,
+    "response_bytes": 0,
+    "content_type": "text/html; charset=UTF-8",
+    "classification": "requires rendered-browser review"
+  },
+  "notes": [
+    "The official traffic-data service returned an accepted but empty application response to non-rendered HTTP requests.",
+    "No static document descendant can be established without rendered-browser review; the existing live-service record remains unchanged."
+  ]
+}
