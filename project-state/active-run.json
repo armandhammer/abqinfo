@@ -5,8 +5,8 @@
   "branch": "codex/archive-batch-2026-09-12-a",
   "worktree": "C:\\Users\\ben\\Documents\\ABQinfo\\tmp\\development-review-pr",
   "base_commit": "19d600057ccd2223edef6a078a37523c8b9bce09",
-  "state": "r2_public_verification_pending",
-  "updated_at": "2026-09-12T14:24:00Z",
+  "state": "validated_pr_pending",
+  "updated_at": "2026-09-12T14:39:30Z",
   "source_research_artifact": "C:\\Users\\ben\\Documents\\ABQinfo\\project-state\\discovery\\planning-udd-cluster-research-2026-09-11.json",
   "decision_artifact": "project-state/discovery/planning-udd-archive-decisions-2026-09-12.json",
   "archive_plan": "project-state/discovery/planning-udd-r2-archive-plan-2026-09-12.json",
@@ -37,6 +37,16 @@
   "archive_bytes": 72742787,
   "archive_objects_created": 15,
   "archive_head_verified": 15,
-  "archive_public_byte_verified": 0,
-  "next_action": "Retry scripts/project/Test-R2ArchivePlan.ps1 after public-edge propagation. Do not edit site content until all 15 public downloads match exact size and SHA-256. Then refresh r2-inventory.json, add the 15 entries across the three planned pages, validate, open and preview a focused PR, merge routine content, confirm production, and continue."
+  "archive_public_byte_verified": 15,
+  "validation": {
+    "inventory": "passed",
+    "content_style": "passed",
+    "crawler_regression": "18/18 passed",
+    "parallel_verification_workflow": "10/10 passed",
+    "autonomous_campaign_workflow": "17/17 passed",
+    "retained_source_audit": "595/595 passed",
+    "hugo": "passed",
+    "git_diff_check": "passed"
+  },
+  "next_action": "Commit the finalized content and archive state, push the branch, open a focused PR, verify its Cloudflare temporary deployment and checks, merge if healthy, confirm production, then claim the next archive-first batch."
 }

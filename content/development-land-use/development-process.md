@@ -10,6 +10,26 @@ Cross-cutting development process documents, manuals, and reference materials.
 
   Organizes Albuquerque’s current review sections, ABQ-PLAN electronic submittals, hydrology and transportation resources, impact fees, construction coordination, interactive plan map, and Planning Department navigator assistance.
 
+## Development Policy References
+
+- [Official Albuquerque Plant Palette and Sizing List (2018 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-official-plant-palette-sizing-list-2018.pdf)
+
+  Establishes the City official plant palette and sizing list, rating trees and plants as generally or conditionally recommended, noting vitality issues, and setting the planting sizes accepted in City landscape review.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/Official%20Albuquerque%20Plant%20Palette%20and%20Sizing%20List-2018-07-03.pdf)
+
+- [City Annexation Policies Resolution R-54-1990 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-annexation-policies-resolution-r-54-1990.pdf)
+
+  Adopts City of Albuquerque policies on annexation and repeals previous annexation policies, setting out the comprehensive-plan area designations, urban-service considerations, and statutory annexation methods the City applies.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/UDD-R-54-1990AnnexationPolicies.pdf)
+
+- [Facilitated Meetings Criteria Under Integrated Development Ordinance Section 14-16-6-4(D) (2018 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-facilitated-meetings-criteria-ido-2018.pdf)
+
+  Establishes the three criteria the City applies before requiring a City-sponsored facilitated meeting with neighborhood associations under the Integrated Development Ordinance, covering project complexity, decision-making authority, and likelihood of productive negotiation.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/FacilitatedMeetingsCriteria-IDO-16July2018.PDF)
+
 ## Development Process Manual
 
 - [Development Process Manual (June 2, 2020)](https://files.abqinfo.com/housing/development-process/development-process-manual-2020-06-02.pdf)
@@ -72,6 +92,56 @@ Cross-cutting development process documents, manuals, and reference materials.
 
   Records committee approval of Development Process Manual changes to fire-flow requirements, on-street parking, and grading and erosion-control standards, while documenting the update-procedure discussion.
 
+## Historic Preservation and Overlay-Zone Guidance
+
+- [Silver Hill Historic Overlay Zone Design Guidelines: Early Automobile Suburbs (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-silver-hill-historic-overlay-zone-design-guidelines.pdf)
+
+  A ninety-six-page City Planning handbook of development guidelines for the Silver Hill historic zone, covering the early automobile suburb context, building types, materials, additions, landscaping, and review expectations for property owners.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/UDD-SilverHillHOZGuidelines2017.pdf)
+
+- [Historic Old Town Development Standards and Guidelines (HPO-5) (2018 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-old-town-development-standards-guidelines-hpo-5-2018.pdf)
+
+  Sets the Old Town development standards and guidelines effective May 17, 2018, covering the applicability area, Spanish Colonial, Territorial and Western Victorian architectural style standards, building setbacks, and Landmarks Commission review.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/UDD-OldTownDevelopmentGuidelines-May2018.pdf)
+
+- [Historic Protection Overlay Zones Citywide Map (2018 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-historic-protection-overlay-zones-citywide-map-2018.pdf)
+
+  Maps all six Albuquerque historic protection overlay zones citywide as of May 2018, showing Old Town, 8th and Forrester, Fourth Ward, Huning Highland, EDo, and Silver Hill boundaries against the street and parcel network.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/HistoricProtectionOverlayZones.pdf)
+
+- [Eighth and Forrester Historic Protection Overlay Zone Map (2018 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-eighth-forrester-historic-protection-overlay-zone-map-2018.pdf)
+
+  Maps parcel-level boundaries of the Eighth and Forrester historic protection overlay zone as of May 2018, identifying each address within the zone between Mountain Road, Lomas Boulevard, 7th Street, and 11th Street.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/EighthandForesterHPO.pdf)
+
+- [Fourth Ward Historic Protection Overlay Zone Map (2018 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-fourth-ward-historic-protection-overlay-zone-map-2018.pdf)
+
+  Maps parcel-level boundaries of the Fourth Ward historic protection overlay zone as of May 2018, identifying each address within the zone for Landmarks Commission review of building projects.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/FourthWardHPO.pdf)
+
+- [Huning Highland and EDo Historic Protection Overlay Zone Map (2018 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-huning-highland-edo-historic-protection-overlay-zone-map-2018.pdf)
+
+  Maps parcel-level boundaries of the Huning Highland and EDo historic protection overlay zones as of May 2018, identifying each address subject to Landmarks Commission review within the zones.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/HuningHighlandandEdoHPO.pdf)
+
+- [Old Town Historic Protection Overlay Zone Map (2018 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-old-town-historic-protection-overlay-zone-map-2018.pdf)
+
+  Maps parcel-level boundaries of the Old Town historic protection overlay zone as of May 2018, replacing the former H-1 zone and buffer designation with the HPO-5 overlay boundary.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/OldTownHPO.pdf)
+
+- [Silver Hill Historic Protection Overlay Zone Map (2018 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-silver-hill-historic-protection-overlay-zone-map-2018.pdf)
+
+  Maps parcel-level boundaries of the Silver Hill historic protection overlay zone as of May 2018, identifying each address subject to Landmarks Commission review within the zone.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/SilverHillHPO.pdf)
+
 ## Public Infrastructure Cost Estimating
 
 - [Rules and Regulations Governing Compensation for Consulting Engineers, Architects, and Landscape Architects (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-consultant-compensation-rules-2003.pdf)
@@ -127,6 +197,12 @@ Cross-cutting development process documents, manuals, and reference materials.
 - [Current City Infrastructure Improvements Agreement Forms Directory](https://documents.cabq.gov/planning/DevelopmentReviewServices/DRC/IIA/)
 
   Provides the City's maintained source directory for Procedure A and Procedure B agreements, financial-guaranty variants, and extension forms. Check this directory for revisions newer than the March 2021 editions preserved below.
+
+- [Assignment and Amendment to Agreement to Construct Infrastructure Improvements (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-infrastructure-improvements-agreement-assignment-amendment.pdf)
+
+  Provides the City form for assigning and amending an agreement to construct infrastructure improvements, including the county clerk recording label, assignment terms, and amendment provisions used in development infrastructure agreements.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/Assign%20Amend%20to%20Agreement%20IIA.pdf)
 
 - [Procedure A Agreement — March 2021 (archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-infrastructure-improvements-agreement-procedure-a-2021.pdf)
 
