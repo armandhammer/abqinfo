@@ -36,6 +36,12 @@ Planning, design standards, and selected major projects for City-owned buildings
 
 ## Aviation Facilities
 
+- [Albuquerque International Sunport Airport Master Plan Executive Summary (Archived PDF)](https://files.abqinfo.com/public-works/city-facilities/cabq-sunport-airport-master-plan-executive-summary.pdf)
+
+  Summarizes the Albuquerque International Sunport master plan across forty-four pages, covering aviation demand forecasts, airfield and terminal requirements, land use, and the recommended development program for the airport.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/AirportMasterPlan-ExSum.pdf)
+
 - [Double Eagle II Airport Master Plan (2019; Amended 2024 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-double-eagle-ii-airport-master-plan-2019-amended-2024.pdf)
 
   Guides long-term development of Double Eagle II Airport through aviation forecasts, runway and taxiway requirements, compatible land use, airside and landside alternatives, environmental review, recommended facilities, funding strategies, and a phased capital improvement program.

@@ -76,6 +76,18 @@ Plans and historical records for designated Metropolitan Redevelopment Areas, wh
 
 ## Historical and Retained Area Plans
 
+- [Barelas Neighborhood Commercial Area Revitalization Plan (Archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-barelas-neighborhood-commercial-area-revitalization-plan.pdf)
+
+  Preserves the one-hundred-fifty-page Barelas neighborhood commercial area revitalization plan, documenting existing conditions, redevelopment strategy, land use, design direction, and implementation actions for the metropolitan redevelopment area.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-BarelasNeighborhoodCommercialArea.pdf)
+
+- [South Broadway Sector Development Plan (Archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-south-broadway-sector-development-plan.pdf)
+
+  Preserves the one-hundred-fourteen-page South Broadway sector development plan as adopted and amended, covering land use, zoning, urban design, transportation, housing, and redevelopment policy for the South Broadway area.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/UDD-SBroadwaySDP-MRA.pdf)
+
 - [Historic Central Metropolitan Redevelopment Area Plan (2013 Archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-historic-central-mra-plan-2013.pdf)
 
   Guides reinvestment along Central Avenue between Laguna Drive and Sunset Road, pairing catalyst-site redevelopment with streetscape, pedestrian, bicycle, transit, wayfinding, facade-improvement, financing, and Route 66 identity strategies around El Vado and Old Town.

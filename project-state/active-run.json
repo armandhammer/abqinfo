@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "type": "archive-and-publish-batch",
+  "batch_id": "planning-udd-archive-2026-09-12",
+  "branch": "codex/archive-batch-2026-09-12-a",
+  "worktree": "C:\\Users\\ben\\Documents\\ABQinfo\\tmp\\development-review-pr",
+  "base_commit": "19d600057ccd2223edef6a078a37523c8b9bce09",
+  "state": "validated_pr_pending",
+  "updated_at": "2026-09-12T14:39:30Z",
+  "source_research_artifact": "C:\\Users\\ben\\Documents\\ABQinfo\\project-state\\discovery\\planning-udd-cluster-research-2026-09-11.json",
+  "decision_artifact": "project-state/discovery/planning-udd-archive-decisions-2026-09-12.json",
+  "archive_plan": "project-state/discovery/planning-udd-r2-archive-plan-2026-09-12.json",
+  "public_validation_artifact": "project-state/discovery/planning-udd-r2-public-validation-2026-09-12.json",
+  "candidate_ids": [
+    "src-6d243844fe259b86",
+    "src-28418cab91a745a6",
+    "src-33f990150811e7bb",
+    "src-7a08bd24a1a9dcae",
+    "src-bdf76c84223f82be",
+    "src-87b92910cd99400d",
+    "src-6d08320245cacfbd",
+    "src-6370c534dac0c540",
+    "src-ad7c091a07a0fb3f",
+    "src-ec6e7fdafdab0706",
+    "src-75755583aa85c00c",
+    "src-c74168a5ee95e044",
+    "src-7f1e53975e461d43",
+    "src-1ee4a0c5133aceda",
+    "src-d42df0916d0d8a2b"
+  ],
+  "visible_additions": 15,
+  "pages": [
+    "content/public-works/city-facilities.md",
+    "content/development-land-use/redevelopment-plans.md",
+    "content/development-land-use/development-process.md"
+  ],
+  "archive_bytes": 72742787,
+  "archive_objects_created": 15,
+  "archive_head_verified": 15,
+  "archive_public_byte_verified": 15,
+  "validation": {
+    "inventory": "passed",
+    "content_style": "passed",
+    "crawler_regression": "18/18 passed",
+    "parallel_verification_workflow": "10/10 passed",
+    "autonomous_campaign_workflow": "17/17 passed",
+    "retained_source_audit": "595/595 passed",
+    "hugo": "passed",
+    "git_diff_check": "passed"
+  },
+  "next_action": "Commit the finalized content and archive state, push the branch, open a focused PR, verify its Cloudflare temporary deployment and checks, merge if healthy, confirm production, then claim the next archive-first batch."
+}

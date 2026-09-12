@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-09-12T13:57:08.0163333Z",
-  "completed_item_range": "Reconciled PR 138 with current main after PR 142. Preserved the current 7,077-candidate inventory and all later content/archive history, then semantically integrated all 32 completed autonomous campaign failure results from PR 138 as requires-human-review records with their original operation hashes, verification notes, and failure reasons. Retained the autonomous coordinator implementation and regression documentation. No R2 upload, content change, deployment, or destructive storage action was performed.",
+  "recorded_at": "2026-09-12T14:39:30Z",
+  "completed_item_range": "Completed the archive-first implementation of the 15-document Planning UDD batch from the Claude research artifact. Integrated all 30 reviewed UDD decisions (15 approved, 6 superseded, 9 excluded), archived 15 authoritative originals totaling 72,742,787 bytes, verified every public R2 download by exact size and SHA-256, refreshed the R2 inventory, and added the 15 documents with official-source links and reviewed descriptions across City Facilities, Metropolitan Redevelopment Plans, and Development Process. Full repository validation passed; PR creation and preview review are next.",
   "total_candidates": 7077,
   "counts_by_status": {
-    "pending review": 2495,
+    "pending review": 2465,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 9,
@@ -11,17 +11,17 @@
     "description drafted": 0,
     "placement assigned": 2,
     "implemented": 178,
-    "validated": 1389,
-    "excluded": 1286,
+    "validated": 1404,
+    "excluded": 1295,
     "duplicate": 1469,
-    "superseded": 153,
+    "superseded": 159,
     "blocked": 0,
     "requires human review": 96
   },
-  "remaining_nonterminal": 2684,
+  "remaining_nonterminal": 2654,
   "next_pending_id": "src-049f7958bcc2f6da",
   "blockers": [
     "Four abbreviated-name 2011 GO-bond variants remain requires human review because their version order cannot be established: src-ca2ae8cb1ef13fdf, src-832bc2144296aa51, src-20cca95ec6dcbe4f, and src-9e6cb716ac7c28d9. They were not archived or published."
   ],
-  "resume_command": "Continue the autonomous ABQInfo archive-and-publish lane from project-state/active-run.json when present; otherwise select the next coherent archive-first batch from the current inventory. Preserve all completed campaign results and unrelated local changes."
+  "resume_command": "In C:\\Users\\ben\\Documents\\ABQinfo\\tmp\\development-review-pr on codex/archive-batch-2026-09-12-a, read project-state/active-run.json, commit and push the completed Planning UDD batch, open a focused PR, verify its temporary deployment and checks, merge if healthy, confirm production, then claim the next archive-first batch."
 }

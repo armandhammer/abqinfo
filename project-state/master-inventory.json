@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-12T13:56:42.3734172Z",
+  "generated_at": "2026-09-12T14:38:08.1186765Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,7 +18,7 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 2495,
+    "pending review": 2465,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 9,
@@ -26,10 +26,10 @@
     "description drafted": 0,
     "placement assigned": 2,
     "implemented": 178,
-    "validated": 1389,
-    "excluded": 1286,
+    "validated": 1404,
+    "excluded": 1295,
     "duplicate": 1469,
-    "superseded": 153,
+    "superseded": 159,
     "blocked": 0,
     "requires human review": 96
   },
@@ -37652,7 +37652,7 @@
     },
     {
       "id": "src-14031a31fb090a9f",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://documents.cabq.gov/planning/UDD/BLANK%20PRT%20Notes%20Form%20Jan2023%20SPANISH.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/BLANK%20PRT%20Notes%20Form%20Jan2023%20SPANISH.pdf",
       "r2_url": null,
@@ -37667,7 +37667,8 @@
       "checksum_sha256": null,
       "parent_url": "https://documents.cabq.gov/planning/UDD/",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/BLANK%20PRT%20Notes%20Form%20Jan2023%20SPANISH.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -37686,16 +37687,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Planning UDD integration 2026-09-11: Blank Spanish-language pre-application review notes form with empty fields for project number, date, and site address. A routine application form carrying no plan, policy, or project record."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal research decision: excluded",
+      "exclusion_reason": "Blank Spanish-language pre-application review notes form with empty fields for project number, date, and site address. A routine application form carrying no plan, policy, or project record.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.8071809Z",
-      "updated_at": "2026-08-04T14:15:57.8071809Z"
+      "updated_at": "2026-09-12T14:15:37.3245234Z"
     },
     {
       "id": "src-1406b13347a41e49",
@@ -42374,7 +42376,7 @@
     },
     {
       "id": "src-17cc5e45837a40bd",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://documents.cabq.gov/planning/UDD/UDD-EighthForresterHOZMap-Jan2017.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/UDD-EighthForresterHOZMap-Jan2017.pdf",
       "r2_url": null,
@@ -42389,7 +42391,8 @@
       "checksum_sha256": null,
       "parent_url": "https://documents.cabq.gov/planning/UDD/",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/UDD-EighthForresterHOZMap-Jan2017.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -42401,23 +42404,24 @@
       "discovery_method": "authored document link",
       "crawl_depth": 3,
       "cited_predecessors": [],
-      "cited_successors": [],
+      "cited_successors": "https://documents.cabq.gov/planning/UDD/EighthandForesterHPO.pdf",
       "provenance_status": "authoritative government source recorded",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Planning UDD integration 2026-09-11: Rendered comparison: \"8TH/FORRESTER HISTORIC OVERLAY ZONE\" dated 1/17/2017 versus \"Eighth & Forrester Historic Protection Overlay Zone\" dated 5/25/2018, covering the same parcels."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal research decision: superseded by documented post-IDO City successor",
+      "exclusion_reason": "Superseded by canonical inventory record src-ad7c091a07a0fb3f. Rendered comparison: \"8TH/FORRESTER HISTORIC OVERLAY ZONE\" dated 1/17/2017 versus \"Eighth & Forrester Historic Protection Overlay Zone\" dated 5/25/2018, covering the same parcels.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.8541817Z",
-      "updated_at": "2026-08-04T14:15:57.8541817Z"
+      "updated_at": "2026-09-12T14:15:37.3220049Z"
     },
     {
       "id": "src-17ccbc0691fe6638",
@@ -50491,22 +50495,23 @@
     },
     {
       "id": "src-1ee4a0c5133aceda",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/UDD/UDD-OldTownDevelopmentGuidelines-May2018.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/UDD-OldTownDevelopmentGuidelines-May2018.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-old-town-development-standards-guidelines-hpo-5-2018.pdf",
+      "r2_key": "development-land-use/development-process/cabq-old-town-development-standards-guidelines-hpo-5-2018.pdf",
+      "r2_etag": "863b0d54dfa9a246edadcaaa8920ec97",
+      "r2_last_modified": "09/12/2026 08:22:27",
       "agency": "City of Albuquerque",
-      "title": "UDD-OldTownDevelopmentGuidelines-May2018.pdf",
-      "date": null,
+      "title": "Historic Old Town Development Standards and Guidelines (HPO-5)",
+      "date": "",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://documents.cabq.gov/planning/UDD/",
+      "size_bytes": 611537,
+      "checksum_sha256": "d94d5c51c5719b98632f8b091ff85f8d9619ddb5dca95f29d4e36ea45fa57c3c",
+      "parent_url": "https://documents.cabq.gov/planning/UDD/UDD-OldTownDevelopmentGuidelines-May2018.pdf",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/UDD-OldTownDevelopmentGuidelines-May2018.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -50519,22 +50524,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City of Albuquerque PDF fetched directly; exact byte size and SHA-256 matched the reviewed Planning UDD research artifact",
+      "proposed_canonical_page": "content/development-land-use/development-process.md",
+      "description": "Sets the Old Town development standards and guidelines effective May 17, 2018, covering the applicability area, Spanish Colonial, Territorial and Western Victorian architectural style standards, building setbacks, and Landmarks Commission review.",
+      "description_word_count": 31,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative City PDF selected for byte-identical archival without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "States it is \"effective as of May 17, 2018\" and applies to the HPO-5 overlay \"formerly designated H-1\", incorporating the design standard amended with the Integrated Development Ordinance on November 13, 2017."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/development-process.md",
+      "implementation_locations": [
+        "content/development-land-use/development-process.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-1ee4a0c5133aceda.pdf",
       "discovered_at": "2026-08-04T14:15:57.8581812Z",
-      "updated_at": "2026-08-04T14:15:57.8581812Z"
+      "updated_at": "2026-09-12T14:38:07.3857679Z"
     },
     {
       "id": "src-1ef2800dbb24d0f4",
@@ -62765,23 +62774,24 @@
     },
     {
       "id": "src-28418cab91a745a6",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-BarelasNeighborhoodCommercialArea.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-BarelasNeighborhoodCommercialArea.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-barelas-neighborhood-commercial-area-revitalization-plan.pdf",
+      "r2_key": "development-land-use/redevelopment-plans/cabq-barelas-neighborhood-commercial-area-revitalization-plan.pdf",
+      "r2_etag": "c9d93b2446153370073c45fabd93729e-2",
+      "r2_last_modified": "09/12/2026 08:20:23",
       "agency": "City of Albuquerque",
-      "title": "(1986, last amended 2002)",
-      "date": null,
+      "title": "Barelas Neighborhood Commercial Area Revitalization Plan",
+      "date": "",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://www.cabq.gov/mra/redevelopment-areas/south-broadway-neighborhoods",
+      "size_bytes": 8719030,
+      "checksum_sha256": "c2081c6cbc60b029c2b558a73ad975b429b03e89cc1837c393f8b5c30191ae19",
+      "parent_url": "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-BarelasNeighborhoodCommercialArea.pdf",
       "referring_urls": [
         "https://documents.cabq.gov/planning/UDD/MRA/",
-        "https://www.cabq.gov/mra/redevelopment-areas/south-broadway-neighborhoods"
+        "https://www.cabq.gov/mra/redevelopment-areas/south-broadway-neighborhoods",
+        "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-BarelasNeighborhoodCommercialArea.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -62793,22 +62803,26 @@
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City of Albuquerque PDF fetched directly; exact byte size and SHA-256 matched the reviewed Planning UDD research artifact",
+      "proposed_canonical_page": "content/development-land-use/redevelopment-plans.md",
+      "description": "Preserves the one-hundred-fifty-page Barelas neighborhood commercial area revitalization plan, documenting existing conditions, redevelopment strategy, land use, design direction, and implementation actions for the metropolitan redevelopment area.",
+      "description_word_count": 26,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Image-only PDF; cover rendered and visually confirmed. ABQInfo already publishes many sibling metropolitan redevelopment plans from this same planning/UDD/MRA library, so the document class is established.",
+        "Original authoritative City PDF selected for byte-identical archival without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/redevelopment-plans.md",
+      "implementation_locations": [
+        "content/development-land-use/redevelopment-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-28418cab91a745a6.pdf",
       "discovered_at": "2026-08-04T14:15:57.8241825Z",
-      "updated_at": "2026-08-04T14:15:57.8241825Z"
+      "updated_at": "2026-09-12T14:38:06.7113653Z"
     },
     {
       "id": "src-2849bc4c056e1a87",
@@ -71233,7 +71247,7 @@
     },
     {
       "id": "src-3021f7eb31b05b17",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://documents.cabq.gov/planning/UDD/FormP3.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/FormP3.pdf",
       "r2_url": null,
@@ -71248,7 +71262,8 @@
       "checksum_sha256": null,
       "parent_url": "https://documents.cabq.gov/planning/UDD/",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/FormP3.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -71267,16 +71282,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Planning UDD integration 2026-09-11: Form P3 application checklist for administrative decisions and minor amendments, listing required submittal materials. A routine application form."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal research decision: excluded",
+      "exclusion_reason": "Form P3 application checklist for administrative decisions and minor amendments, listing required submittal materials. A routine application form.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.8171811Z",
-      "updated_at": "2026-08-04T14:15:57.8171811Z"
+      "updated_at": "2026-09-12T14:15:37.3259836Z"
     },
     {
       "id": "src-30234d8dd299913a",
@@ -75995,22 +76011,23 @@
     },
     {
       "id": "src-33f990150811e7bb",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/UDD/UDD-SBroadwaySDP-MRA.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/UDD-SBroadwaySDP-MRA.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-south-broadway-sector-development-plan.pdf",
+      "r2_key": "development-land-use/redevelopment-plans/cabq-south-broadway-sector-development-plan.pdf",
+      "r2_etag": "8f742a54fc8e34406cc5722ac0217dd3-2",
+      "r2_last_modified": "09/12/2026 08:20:35",
       "agency": "City of Albuquerque",
-      "title": "UDD-SBroadwaySDP-MRA.pdf",
-      "date": null,
+      "title": "South Broadway Sector Development Plan",
+      "date": "",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://documents.cabq.gov/planning/UDD/",
+      "size_bytes": 14300424,
+      "checksum_sha256": "afe13cace092e3c2ba620e96f7f65442cf1bc12a22e3e276ef43c3f15e979e83",
+      "parent_url": "https://documents.cabq.gov/planning/UDD/UDD-SBroadwaySDP-MRA.pdf",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/UDD-SBroadwaySDP-MRA.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -76023,22 +76040,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City of Albuquerque PDF fetched directly; exact byte size and SHA-256 matched the reviewed Planning UDD research artifact",
+      "proposed_canonical_page": "content/development-land-use/redevelopment-plans.md",
+      "description": "Preserves the one-hundred-fourteen-page South Broadway sector development plan as adopted and amended, covering land use, zoning, urban design, transportation, housing, and redevelopment policy for the South Broadway area.",
+      "description_word_count": 28,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Cover text records \"Adopted / Amended\" with a 1/17/2018 City Planning stamp. A substantive adopted sector plan.",
+        "Original authoritative City PDF selected for byte-identical archival without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/redevelopment-plans.md",
+      "implementation_locations": [
+        "content/development-land-use/redevelopment-plans.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-33f990150811e7bb.pdf",
       "discovered_at": "2026-08-04T14:15:57.8621811Z",
-      "updated_at": "2026-08-04T14:15:57.8621811Z"
+      "updated_at": "2026-09-12T14:38:06.7652658Z"
     },
     {
       "id": "src-33fad2753a9b365c",
@@ -103541,7 +103562,7 @@
     },
     {
       "id": "src-4c2561ce7ebb4217",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://documents.cabq.gov/planning/UDD/UDD-OldTownDevelopmentGuidelines-Nov2017.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/UDD-OldTownDevelopmentGuidelines-Nov2017.pdf",
       "r2_url": null,
@@ -103556,7 +103577,8 @@
       "checksum_sha256": null,
       "parent_url": "https://documents.cabq.gov/planning/UDD/",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/UDD-OldTownDevelopmentGuidelines-Nov2017.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -103568,23 +103590,24 @@
       "discovery_method": "authored document link",
       "crawl_depth": 3,
       "cited_predecessors": [],
-      "cited_successors": [],
+      "cited_successors": "https://documents.cabq.gov/planning/UDD/UDD-OldTownDevelopmentGuidelines-May2018.pdf",
       "provenance_status": "authoritative government source recorded",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Planning UDD integration 2026-09-11: This version states the guidelines apply \"in the H-1 Historic Old Town Zone and in the 300 foot buffer zone\", the pre-Integrated Development Ordinance designation. The May 2018 version is expressly \"effective as of May 17, 2018\" and restates the same guidelines for the HPO-5 zone \"formerly designated H-1\", so it is the current adopted text."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal research decision: superseded by documented post-IDO City successor",
+      "exclusion_reason": "Superseded by canonical inventory record src-1ee4a0c5133aceda. This version states the guidelines apply \"in the H-1 Historic Old Town Zone and in the 300 foot buffer zone\", the pre-Integrated Development Ordinance designation. The May 2018 version is expressly \"effective as of May 17, 2018\" and restates the same guidelines for the HPO-5 zone \"formerly designated H-1\", so it is the current adopted text.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.859182Z",
-      "updated_at": "2026-08-04T14:15:57.859182Z"
+      "updated_at": "2026-09-12T14:15:37.3229031Z"
     },
     {
       "id": "src-4c2b3614256aaf20",
@@ -131809,22 +131832,23 @@
     },
     {
       "id": "src-6370c534dac0c540",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/UDD/HistoricProtectionOverlayZones.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/HistoricProtectionOverlayZones.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-historic-protection-overlay-zones-citywide-map-2018.pdf",
+      "r2_key": "development-land-use/development-process/cabq-historic-protection-overlay-zones-citywide-map-2018.pdf",
+      "r2_etag": "d1919c9ebd28f0083cbe4f456c271ca3",
+      "r2_last_modified": "09/12/2026 08:21:27",
       "agency": "City of Albuquerque",
-      "title": "HistoricProtectionOverlayZones.pdf",
-      "date": null,
+      "title": "Historic Protection Overlay Zones Citywide Map",
+      "date": "",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://documents.cabq.gov/planning/UDD/",
+      "size_bytes": 818779,
+      "checksum_sha256": "0330272c960fdf666889b5552014ba21cea36d070307878150c87a86613e948c",
+      "parent_url": "https://documents.cabq.gov/planning/UDD/HistoricProtectionOverlayZones.pdf",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/HistoricProtectionOverlayZones.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -131837,22 +131861,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City of Albuquerque PDF fetched directly; exact byte size and SHA-256 matched the reviewed Planning UDD research artifact",
+      "proposed_canonical_page": "content/development-land-use/development-process.md",
+      "description": "Maps all six Albuquerque historic protection overlay zones citywide as of May 2018, showing Old Town, 8th and Forrester, Fourth Ward, Huning Highland, EDo, and Silver Hill boundaries against the street and parcel network.",
+      "description_word_count": 34,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative City PDF selected for byte-identical archival without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "Rendered: titled \"HISTORIC PROTECTION OVERLAY ZONES\", date printed 5/25/2018. The current post-Integrated Development Ordinance citywide map."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/development-process.md",
+      "implementation_locations": [
+        "content/development-land-use/development-process.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-6370c534dac0c540.pdf",
       "discovered_at": "2026-08-04T14:15:57.8181802Z",
-      "updated_at": "2026-08-04T14:15:57.8181802Z"
+      "updated_at": "2026-09-12T14:38:07.0683701Z"
     },
     {
       "id": "src-63898eb1611d6938",
@@ -143112,22 +143140,23 @@
     },
     {
       "id": "src-6d08320245cacfbd",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/UDD/FacilitatedMeetingsCriteria-IDO-16July2018.PDF",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/FacilitatedMeetingsCriteria-IDO-16July2018.PDF",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-facilitated-meetings-criteria-ido-2018.pdf",
+      "r2_key": "development-land-use/development-process/cabq-facilitated-meetings-criteria-ido-2018.pdf",
+      "r2_etag": "c04ac773a4cca6ede45d90c9ca7763fb",
+      "r2_last_modified": "09/12/2026 08:21:18",
       "agency": "City of Albuquerque",
-      "title": "FacilitatedMeetingsCriteria-IDO-16July2018.PDF",
-      "date": null,
+      "title": "Facilitated Meetings Criteria Under Integrated Development Ordinance Section 14-16-6-4(D)",
+      "date": "",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://documents.cabq.gov/planning/UDD/",
+      "size_bytes": 114027,
+      "checksum_sha256": "1c04a84151bd8550224be03bcd639a89832eee01528cebc3966e3bbcd0fb0a07",
+      "parent_url": "https://documents.cabq.gov/planning/UDD/FacilitatedMeetingsCriteria-IDO-16July2018.PDF",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/FacilitatedMeetingsCriteria-IDO-16July2018.PDF"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -143140,22 +143169,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City of Albuquerque PDF fetched directly; exact byte size and SHA-256 matched the reviewed Planning UDD research artifact",
+      "proposed_canonical_page": "content/development-land-use/development-process.md",
+      "description": "Establishes the three criteria the City applies before requiring a City-sponsored facilitated meeting with neighborhood associations under the Integrated Development Ordinance, covering project complexity, decision-making authority, and likelihood of productive negotiation.",
+      "description_word_count": 31,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Image-only PDF; rendered and visually confirmed as a signed 16 July 2018 interoffice memorandum from Planning Director David Campbell establishing binding administrative criteria.",
+        "Original authoritative City PDF selected for byte-identical archival without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/development-process.md",
+      "implementation_locations": [
+        "content/development-land-use/development-process.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-6d08320245cacfbd.pdf",
       "discovered_at": "2026-08-04T14:15:57.8161814Z",
-      "updated_at": "2026-08-04T14:15:57.8161814Z"
+      "updated_at": "2026-09-12T14:38:07.0037863Z"
     },
     {
       "id": "src-6d221846ca5245f9",
@@ -143201,22 +143234,23 @@
     },
     {
       "id": "src-6d243844fe259b86",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/UDD/AirportMasterPlan-ExSum.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/AirportMasterPlan-ExSum.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/public-works/city-facilities/cabq-sunport-airport-master-plan-executive-summary.pdf",
+      "r2_key": "public-works/city-facilities/cabq-sunport-airport-master-plan-executive-summary.pdf",
+      "r2_etag": "a7631796730adb22ac0dac4d78d47bef",
+      "r2_last_modified": "09/12/2026 08:20:12",
       "agency": "City of Albuquerque",
-      "title": "AirportMasterPlan-ExSum.pdf",
-      "date": null,
+      "title": "Albuquerque International Sunport Airport Master Plan Executive Summary",
+      "date": "",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://documents.cabq.gov/planning/UDD/",
+      "size_bytes": 7848944,
+      "checksum_sha256": "96ae084a4ac88acf3399a62e5d7340bdbeb62c2489bf03f840086bbdd1327332",
+      "parent_url": "https://documents.cabq.gov/planning/UDD/AirportMasterPlan-ExSum.pdf",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/AirportMasterPlan-ExSum.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -143229,22 +143263,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City of Albuquerque PDF fetched directly; exact byte size and SHA-256 matched the reviewed Planning UDD research artifact",
+      "proposed_canonical_page": "content/public-works/city-facilities.md",
+      "description": "Summarizes the Albuquerque International Sunport master plan across forty-four pages, covering aviation demand forecasts, airfield and terminal requirements, land use, and the recommended development program for the airport.",
+      "description_word_count": 28,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Image-only PDF; first page rendered and visually confirmed as the official Sunport Airport Master Plan Executive Summary. Fits the existing Aviation Facilities section.",
+        "Original authoritative City PDF selected for byte-identical archival without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/public-works/city-facilities.md",
+      "implementation_locations": [
+        "content/public-works/city-facilities.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-6d243844fe259b86.pdf",
       "discovered_at": "2026-08-04T14:15:57.8032264Z",
-      "updated_at": "2026-08-04T14:15:57.8032264Z"
+      "updated_at": "2026-09-12T14:38:06.6649132Z"
     },
     {
       "id": "src-6d2bd024ade8862e",
@@ -153691,22 +153729,23 @@
     },
     {
       "id": "src-75755583aa85c00c",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/UDD/HuningHighlandandEdoHPO.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/HuningHighlandandEdoHPO.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-huning-highland-edo-historic-protection-overlay-zone-map-2018.pdf",
+      "r2_key": "development-land-use/development-process/cabq-huning-highland-edo-historic-protection-overlay-zone-map-2018.pdf",
+      "r2_etag": "c12331f8b918b3664b646568c6d04e9a",
+      "r2_last_modified": "09/12/2026 08:21:57",
       "agency": "City of Albuquerque",
-      "title": "HuningHighlandandEdoHPO.pdf",
-      "date": null,
+      "title": "Huning Highland and EDo Historic Protection Overlay Zone Map",
+      "date": "",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://documents.cabq.gov/planning/UDD/",
+      "size_bytes": 205325,
+      "checksum_sha256": "23d352455655941209dc2d8a96d6705548afcac65776a1ead1bff4cff1b29ac5",
+      "parent_url": "https://documents.cabq.gov/planning/UDD/HuningHighlandandEdoHPO.pdf",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/HuningHighlandandEdoHPO.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -153719,22 +153758,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City of Albuquerque PDF fetched directly; exact byte size and SHA-256 matched the reviewed Planning UDD research artifact",
+      "proposed_canonical_page": "content/development-land-use/development-process.md",
+      "description": "Maps parcel-level boundaries of the Huning Highland and EDo historic protection overlay zones as of May 2018, identifying each address subject to Landmarks Commission review within the zones.",
+      "description_word_count": 28,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative City PDF selected for byte-identical archival without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "Post-IDO 5/25/2018 successor to the January 2017 map. See integration_flags: the January 2017 version is already validated and archived to R2 as src-011ccfd869be15b6."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/development-process.md",
+      "implementation_locations": [
+        "content/development-land-use/development-process.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-75755583aa85c00c.pdf",
       "discovered_at": "2026-08-04T14:15:57.8191805Z",
-      "updated_at": "2026-08-04T14:15:57.8191805Z"
+      "updated_at": "2026-09-12T14:38:07.2313063Z"
     },
     {
       "id": "src-7578f4905e641aa7",
@@ -158728,22 +158771,23 @@
     },
     {
       "id": "src-7a08bd24a1a9dcae",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/UDD/UDD-SilverHillHOZGuidelines2017.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/UDD-SilverHillHOZGuidelines2017.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-silver-hill-historic-overlay-zone-design-guidelines.pdf",
+      "r2_key": "development-land-use/development-process/cabq-silver-hill-historic-overlay-zone-design-guidelines.pdf",
+      "r2_etag": "fc18f4be1a41bbb04815aefdd5a9f372-5",
+      "r2_last_modified": "09/12/2026 08:20:48",
       "agency": "City of Albuquerque",
-      "title": "UDD-SilverHillHOZGuidelines2017.pdf",
-      "date": null,
+      "title": "Silver Hill Historic Overlay Zone Design Guidelines: Early Automobile Suburbs",
+      "date": "",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://documents.cabq.gov/planning/UDD/",
+      "size_bytes": 37722544,
+      "checksum_sha256": "00985b9c45d51d321359530a6503e65346d4198c4675b93efa4fc577c26ce554",
+      "parent_url": "https://documents.cabq.gov/planning/UDD/UDD-SilverHillHOZGuidelines2017.pdf",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/UDD-SilverHillHOZGuidelines2017.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -158756,22 +158800,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City of Albuquerque PDF fetched directly; exact byte size and SHA-256 matched the reviewed Planning UDD research artifact",
+      "proposed_canonical_page": "content/development-land-use/development-process.md",
+      "description": "A ninety-six-page City Planning handbook of development guidelines for the Silver Hill historic zone, covering the early automobile suburb context, building types, materials, additions, landscaping, and review expectations for property owners.",
+      "description_word_count": 31,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Largest document in the cluster at 37.7 MB with 169,791 extracted characters. A substantive published design handbook, not a form.",
+        "Original authoritative City PDF selected for byte-identical archival without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/development-process.md",
+      "implementation_locations": [
+        "content/development-land-use/development-process.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-7a08bd24a1a9dcae.pdf",
       "discovered_at": "2026-08-04T14:15:57.8631818Z",
-      "updated_at": "2026-08-04T14:15:57.8631818Z"
+      "updated_at": "2026-09-12T14:38:06.8178847Z"
     },
     {
       "id": "src-7a0927957c7eacfd",
@@ -163619,7 +163667,7 @@
     },
     {
       "id": "src-7df872bf2933c807",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://documents.cabq.gov/planning/UDD/Development_Application.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/Development_Application.pdf",
       "r2_url": null,
@@ -163634,7 +163682,8 @@
       "checksum_sha256": null,
       "parent_url": "https://documents.cabq.gov/planning/UDD/",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/Development_Application.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -163653,16 +163702,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Planning UDD integration 2026-09-11: The City development review application form effective 4/17/19, consisting of checkboxes and submittal instructions. A routine application form."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal research decision: excluded",
+      "exclusion_reason": "The City development review application form effective 4/17/19, consisting of checkboxes and submittal instructions. A routine application form.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.8111818Z",
-      "updated_at": "2026-08-04T14:15:57.8111818Z"
+      "updated_at": "2026-09-12T14:15:37.3252568Z"
     },
     {
       "id": "src-7e013c397a0c8334",
@@ -164974,22 +165024,23 @@
     },
     {
       "id": "src-7f1e53975e461d43",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/UDD/SilverHillHPO.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/SilverHillHPO.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-silver-hill-historic-protection-overlay-zone-map-2018.pdf",
+      "r2_key": "development-land-use/development-process/cabq-silver-hill-historic-protection-overlay-zone-map-2018.pdf",
+      "r2_etag": "282ca42e73dd7c4fcd7d385a8c448834",
+      "r2_last_modified": "09/12/2026 08:22:16",
       "agency": "City of Albuquerque",
-      "title": "SilverHillHPO.pdf",
-      "date": null,
+      "title": "Silver Hill Historic Protection Overlay Zone Map",
+      "date": "",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://documents.cabq.gov/planning/UDD/",
+      "size_bytes": 155907,
+      "checksum_sha256": "8158184ecd34758f96df82f7e94c64c39d24a4efa78f32785817bf18b3246b40",
+      "parent_url": "https://documents.cabq.gov/planning/UDD/SilverHillHPO.pdf",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/SilverHillHPO.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -165002,22 +165053,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City of Albuquerque PDF fetched directly; exact byte size and SHA-256 matched the reviewed Planning UDD research artifact",
+      "proposed_canonical_page": "content/development-land-use/development-process.md",
+      "description": "Maps parcel-level boundaries of the Silver Hill historic protection overlay zone as of May 2018, identifying each address subject to Landmarks Commission review within the zone.",
+      "description_word_count": 26,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative City PDF selected for byte-identical archival without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "Post-IDO 5/25/2018 successor to the January 2017 Silver Hill historic overlay zone map."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/development-process.md",
+      "implementation_locations": [
+        "content/development-land-use/development-process.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-7f1e53975e461d43.pdf",
       "discovered_at": "2026-08-04T14:15:57.8491822Z",
-      "updated_at": "2026-08-04T14:15:57.8491822Z"
+      "updated_at": "2026-09-12T14:38:07.3314585Z"
     },
     {
       "id": "src-7f210bd06a319b51",
@@ -175872,22 +175927,23 @@
     },
     {
       "id": "src-87b92910cd99400d",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/UDD/UDD-R-54-1990AnnexationPolicies.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/UDD-R-54-1990AnnexationPolicies.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-annexation-policies-resolution-r-54-1990.pdf",
+      "r2_key": "development-land-use/development-process/cabq-annexation-policies-resolution-r-54-1990.pdf",
+      "r2_etag": "c398a82b9d20d4296be4b9eaa6357520",
+      "r2_last_modified": "09/12/2026 08:21:08",
       "agency": "City of Albuquerque",
-      "title": "UDD-R-54-1990AnnexationPolicies.pdf",
-      "date": null,
+      "title": "City Annexation Policies Resolution R-54-1990",
+      "date": "",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://documents.cabq.gov/planning/UDD/",
+      "size_bytes": 1550690,
+      "checksum_sha256": "cc2bc820270be1e2c7f3075940dc954707702385a3cad78b458ed29a396a837d",
+      "parent_url": "https://documents.cabq.gov/planning/UDD/UDD-R-54-1990AnnexationPolicies.pdf",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/UDD-R-54-1990AnnexationPolicies.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -175900,22 +175956,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City of Albuquerque PDF fetched directly; exact byte size and SHA-256 matched the reviewed Planning UDD research artifact",
+      "proposed_canonical_page": "content/development-land-use/development-process.md",
+      "description": "Adopts City of Albuquerque policies on annexation and repeals previous annexation policies, setting out the comprehensive-plan area designations, urban-service considerations, and statutory annexation methods the City applies.",
+      "description_word_count": 27,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Image-only PDF; first page rendered and visually confirmed as Council Bill R-68, Enactment 54-1990, an enacted policy resolution.",
+        "Original authoritative City PDF selected for byte-identical archival without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/development-process.md",
+      "implementation_locations": [
+        "content/development-land-use/development-process.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-87b92910cd99400d.pdf",
       "discovered_at": "2026-08-04T14:15:57.8611823Z",
-      "updated_at": "2026-08-04T14:15:57.8611823Z"
+      "updated_at": "2026-09-12T14:38:06.9261725Z"
     },
     {
       "id": "src-87ba808103fb4732",
@@ -209067,7 +209127,7 @@
     },
     {
       "id": "src-a49aa4a2480d19fa",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://documents.cabq.gov/planning/UDD/UDD-FourthWardHOZMap-Jan2017.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/UDD-FourthWardHOZMap-Jan2017.pdf",
       "r2_url": null,
@@ -209082,7 +209142,8 @@
       "checksum_sha256": null,
       "parent_url": "https://documents.cabq.gov/planning/UDD/",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/UDD-FourthWardHOZMap-Jan2017.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -209094,23 +209155,24 @@
       "discovery_method": "authored document link",
       "crawl_depth": 3,
       "cited_predecessors": [],
-      "cited_successors": [],
+      "cited_successors": "https://documents.cabq.gov/planning/UDD/FourthWardHPO.pdf",
       "provenance_status": "authoritative government source recorded",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Planning UDD integration 2026-09-11: January 2017 historic overlay zone sheet superseded by the May 2018 historic protection overlay zone sheet for the same area."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal research decision: superseded by documented post-IDO City successor",
+      "exclusion_reason": "Superseded by canonical inventory record src-ec6e7fdafdab0706. January 2017 historic overlay zone sheet superseded by the May 2018 historic protection overlay zone sheet for the same area.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.8561809Z",
-      "updated_at": "2026-08-04T14:15:57.8561809Z"
+      "updated_at": "2026-09-12T14:15:37.3222821Z"
     },
     {
       "id": "src-a49ce7f75973154c",
@@ -209750,7 +209812,7 @@
     },
     {
       "id": "src-a536b6a674de21dd",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://documents.cabq.gov/planning/UDD/UDD-OldTownHOZMap-Jan2017.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/UDD-OldTownHOZMap-Jan2017.pdf",
       "r2_url": null,
@@ -209765,7 +209827,8 @@
       "checksum_sha256": null,
       "parent_url": "https://documents.cabq.gov/planning/UDD/",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/UDD-OldTownHOZMap-Jan2017.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -209777,23 +209840,24 @@
       "discovery_method": "authored document link",
       "crawl_depth": 3,
       "cited_predecessors": [],
-      "cited_successors": [],
+      "cited_successors": "https://documents.cabq.gov/planning/UDD/OldTownHPO.pdf",
       "provenance_status": "authoritative government source recorded",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Planning UDD integration 2026-09-11: Rendered comparison: \"OLD TOWN H-1 ZONE AND BUFFER\" dated 1/17/2017 versus \"Old Town Historic Protection Overlay Zone\" dated 5/25/2018. The H-1 designation and its 300-foot buffer were replaced by the HPO-5 overlay."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal research decision: superseded by documented post-IDO City successor",
+      "exclusion_reason": "Superseded by canonical inventory record src-c74168a5ee95e044. Rendered comparison: \"OLD TOWN H-1 ZONE AND BUFFER\" dated 1/17/2017 versus \"Old Town Historic Protection Overlay Zone\" dated 5/25/2018. The H-1 designation and its 300-foot buffer were replaced by the HPO-5 overlay.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.859182Z",
-      "updated_at": "2026-08-04T14:15:57.859182Z"
+      "updated_at": "2026-09-12T14:15:37.3225227Z"
     },
     {
       "id": "src-a543de72dc991b73",
@@ -217951,7 +218015,7 @@
     },
     {
       "id": "src-abd5f8981b599450",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://documents.cabq.gov/planning/UDD/DRT-Application-07-5-16.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/DRT-Application-07-5-16.pdf",
       "r2_url": null,
@@ -217966,7 +218030,8 @@
       "checksum_sha256": null,
       "parent_url": "https://documents.cabq.gov/planning/UDD/",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/DRT-Application-07-5-16.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -217985,16 +218050,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Planning UDD integration 2026-09-11: Design Review Team application form from July 2016. A routine application form."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal research decision: excluded",
+      "exclusion_reason": "Design Review Team application form from July 2016. A routine application form.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.8121813Z",
-      "updated_at": "2026-08-04T14:15:57.8121813Z"
+      "updated_at": "2026-09-12T14:15:37.3255316Z"
     },
     {
       "id": "src-ac079a5257dc7c8c",
@@ -219521,22 +219587,23 @@
     },
     {
       "id": "src-ad7c091a07a0fb3f",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/UDD/EighthandForesterHPO.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/EighthandForesterHPO.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-eighth-forrester-historic-protection-overlay-zone-map-2018.pdf",
+      "r2_key": "development-land-use/development-process/cabq-eighth-forrester-historic-protection-overlay-zone-map-2018.pdf",
+      "r2_etag": "7431f4e39d265d63cc29d54eb3328ea1",
+      "r2_last_modified": "09/12/2026 08:21:37",
       "agency": "City of Albuquerque",
-      "title": "EighthandForesterHPO.pdf",
-      "date": null,
+      "title": "Eighth and Forrester Historic Protection Overlay Zone Map",
+      "date": "",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://documents.cabq.gov/planning/UDD/",
+      "size_bytes": 133165,
+      "checksum_sha256": "b2ea77cbf9b1c5ee40c30d9cbb7c6dbd4590aa9ce8b5c3e45bd2aae95cc5173c",
+      "parent_url": "https://documents.cabq.gov/planning/UDD/EighthandForesterHPO.pdf",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/EighthandForesterHPO.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -219549,22 +219616,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City of Albuquerque PDF fetched directly; exact byte size and SHA-256 matched the reviewed Planning UDD research artifact",
+      "proposed_canonical_page": "content/development-land-use/development-process.md",
+      "description": "Maps parcel-level boundaries of the Eighth and Forrester historic protection overlay zone as of May 2018, identifying each address within the zone between Mountain Road, Lomas Boulevard, 7th Street, and 11th Street.",
+      "description_word_count": 32,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative City PDF selected for byte-identical archival without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "Rendered: titled \"Eighth & Forrester Historic Protection Overlay Zone\", date 5/25/2018. Post-IDO successor to the January 2017 historic overlay zone map."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/development-process.md",
+      "implementation_locations": [
+        "content/development-land-use/development-process.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-ad7c091a07a0fb3f.pdf",
       "discovered_at": "2026-08-04T14:15:57.8151808Z",
-      "updated_at": "2026-08-04T14:15:57.8151808Z"
+      "updated_at": "2026-09-12T14:38:07.1216700Z"
     },
     {
       "id": "src-ad7d95dc211903b2",
@@ -234866,7 +234937,7 @@
     },
     {
       "id": "src-bac4020394541501",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://documents.cabq.gov/planning/UDD/UDD-CityWideHOZMap-Jan2017.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/UDD-CityWideHOZMap-Jan2017.pdf",
       "r2_url": null,
@@ -234881,7 +234952,8 @@
       "checksum_sha256": null,
       "parent_url": "https://documents.cabq.gov/planning/UDD/",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/UDD-CityWideHOZMap-Jan2017.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -234893,23 +234965,24 @@
       "discovery_method": "authored document link",
       "crawl_depth": 3,
       "cited_predecessors": [],
-      "cited_successors": [],
+      "cited_successors": "https://documents.cabq.gov/planning/UDD/HistoricProtectionOverlayZones.pdf",
       "provenance_status": "authoritative government source recorded",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Planning UDD integration 2026-09-11: Rendered comparison: this sheet is titled \"HISTORIC OVERLAY ZONES AND URBAN CONSERVATION OVERLAY ZONE\", date printed 1/17/2017, while its successor is titled \"HISTORIC PROTECTION OVERLAY ZONES\", date printed 5/25/2018. The Integrated Development Ordinance adopted November 13, 2017 renamed these zones, and the City reissued the citywide map."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal research decision: superseded by documented post-IDO City successor",
+      "exclusion_reason": "Superseded by canonical inventory record src-6370c534dac0c540. Rendered comparison: this sheet is titled \"HISTORIC OVERLAY ZONES AND URBAN CONSERVATION OVERLAY ZONE\", date printed 1/17/2017, while its successor is titled \"HISTORIC PROTECTION OVERLAY ZONES\", date printed 5/25/2018. The Integrated Development Ordinance adopted November 13, 2017 renamed these zones, and the City reissued the citywide map.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.8541817Z",
-      "updated_at": "2026-08-04T14:15:57.8541817Z"
+      "updated_at": "2026-09-12T14:15:37.3213466Z"
     },
     {
       "id": "src-bac9ca833a6257a6",
@@ -239257,22 +239330,23 @@
     },
     {
       "id": "src-bdf76c84223f82be",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/UDD/Official%20Albuquerque%20Plant%20Palette%20and%20Sizing%20List-2018-07-03.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/Official%20Albuquerque%20Plant%20Palette%20and%20Sizing%20List-2018-07-03.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-official-plant-palette-sizing-list-2018.pdf",
+      "r2_key": "development-land-use/development-process/cabq-official-plant-palette-sizing-list-2018.pdf",
+      "r2_etag": "745923a81f9b9897cb66e1f270fadb82",
+      "r2_last_modified": "09/12/2026 08:20:58",
       "agency": "City of Albuquerque",
-      "title": "Official Albuquerque Plant Palette and Sizing List-2018-07-03.pdf",
-      "date": null,
+      "title": "Official Albuquerque Plant Palette and Sizing List",
+      "date": "",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://documents.cabq.gov/planning/UDD/",
+      "size_bytes": 190730,
+      "checksum_sha256": "31b46cfe66dd8a2ae7941a7a49db4a668cd26da5c2c398f8422c4057e8bc1b1b",
+      "parent_url": "https://documents.cabq.gov/planning/UDD/Official%20Albuquerque%20Plant%20Palette%20and%20Sizing%20List-2018-07-03.pdf",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/Official%20Albuquerque%20Plant%20Palette%20and%20Sizing%20List-2018-07-03.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -239285,22 +239359,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City of Albuquerque PDF fetched directly; exact byte size and SHA-256 matched the reviewed Planning UDD research artifact",
+      "proposed_canonical_page": "content/development-land-use/development-process.md",
+      "description": "Establishes the City official plant palette and sizing list, rating trees and plants as generally or conditionally recommended, noting vitality issues, and setting the planting sizes accepted in City landscape review.",
+      "description_word_count": 31,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative City PDF selected for byte-identical archival without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "Thirteen pages with 33,884 extracted characters including the tree ratings legend. An official technical standard used in development review."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/development-process.md",
+      "implementation_locations": [
+        "content/development-land-use/development-process.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-bdf76c84223f82be.pdf",
       "discovered_at": "2026-08-04T14:15:57.8441822Z",
-      "updated_at": "2026-08-04T14:15:57.8441822Z"
+      "updated_at": "2026-09-12T14:38:06.8715225Z"
     },
     {
       "id": "src-be0aad8c7d71a541",
@@ -244074,7 +244152,7 @@
     },
     {
       "id": "src-c18e640752df0720",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://documents.cabq.gov/planning/UDD/DRT-InfoSheet-07-5-16.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/DRT-InfoSheet-07-5-16.pdf",
       "r2_url": null,
@@ -244089,7 +244167,8 @@
       "checksum_sha256": null,
       "parent_url": "https://documents.cabq.gov/planning/UDD/",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/DRT-InfoSheet-07-5-16.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -244108,16 +244187,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Planning UDD integration 2026-09-11: Design Review Team informational handout explaining how to obtain feedback on drawings before building permit submittal. Customer-service guidance rather than a durable policy record."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal research decision: excluded",
+      "exclusion_reason": "Design Review Team informational handout explaining how to obtain feedback on drawings before building permit submittal. Customer-service guidance rather than a durable policy record.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.814181Z",
-      "updated_at": "2026-08-04T14:15:57.814181Z"
+      "updated_at": "2026-09-12T14:15:37.3258376Z"
     },
     {
       "id": "src-c1907ae0fa973eb2",
@@ -250348,22 +250428,23 @@
     },
     {
       "id": "src-c74168a5ee95e044",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/UDD/OldTownHPO.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/OldTownHPO.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-old-town-historic-protection-overlay-zone-map-2018.pdf",
+      "r2_key": "development-land-use/development-process/cabq-old-town-historic-protection-overlay-zone-map-2018.pdf",
+      "r2_etag": "32d00ac4b13358ccba254c09999dc4ac",
+      "r2_last_modified": "09/12/2026 08:22:07",
       "agency": "City of Albuquerque",
-      "title": "OldTownHPO.pdf",
-      "date": null,
+      "title": "Old Town Historic Protection Overlay Zone Map",
+      "date": "",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://documents.cabq.gov/planning/UDD/",
+      "size_bytes": 144218,
+      "checksum_sha256": "a5f2e58fac098335959ad311facfe8c869912fb21fc1d0aafdf860e25b619a27",
+      "parent_url": "https://documents.cabq.gov/planning/UDD/OldTownHPO.pdf",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/OldTownHPO.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -250376,22 +250457,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City of Albuquerque PDF fetched directly; exact byte size and SHA-256 matched the reviewed Planning UDD research artifact",
+      "proposed_canonical_page": "content/development-land-use/development-process.md",
+      "description": "Maps parcel-level boundaries of the Old Town historic protection overlay zone as of May 2018, replacing the former H-1 zone and buffer designation with the HPO-5 overlay boundary.",
+      "description_word_count": 28,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative City PDF selected for byte-identical archival without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "Rendered: titled \"Old Town Historic Protection Overlay Zone\", date 5/25/2018, versus the 2017 sheet titled \"OLD TOWN H-1 ZONE AND BUFFER\"."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/development-process.md",
+      "implementation_locations": [
+        "content/development-land-use/development-process.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-c74168a5ee95e044.pdf",
       "discovered_at": "2026-08-04T14:15:57.8451813Z",
-      "updated_at": "2026-08-04T14:15:57.8451813Z"
+      "updated_at": "2026-09-12T14:38:07.2766725Z"
     },
     {
       "id": "src-c74b39a83a00a244",
@@ -265690,7 +265775,7 @@
     },
     {
       "id": "src-d361615fe43b91c4",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://documents.cabq.gov/planning/UDD/DRT-ApprovalForm-7-6-16.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/DRT-ApprovalForm-7-6-16.pdf",
       "r2_url": null,
@@ -265705,7 +265790,8 @@
       "checksum_sha256": null,
       "parent_url": "https://documents.cabq.gov/planning/UDD/",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/DRT-ApprovalForm-7-6-16.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -265724,16 +265810,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Planning UDD integration 2026-09-11: Design Review Team approval action form from July 2016, a blank decision sheet with fields for case number, date, and time. A routine administrative form."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal research decision: excluded",
+      "exclusion_reason": "Design Review Team approval action form from July 2016, a blank decision sheet with fields for case number, date, and time. A routine administrative form.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.8131811Z",
-      "updated_at": "2026-08-04T14:15:57.8131811Z"
+      "updated_at": "2026-09-12T14:15:37.3256897Z"
     },
     {
       "id": "src-d369cedf04247d2a",
@@ -266223,22 +266310,23 @@
     },
     {
       "id": "src-d42df0916d0d8a2b",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/UDD/Assign%20Amend%20to%20Agreement%20IIA.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/Assign%20Amend%20to%20Agreement%20IIA.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-infrastructure-improvements-agreement-assignment-amendment.pdf",
+      "r2_key": "development-land-use/development-process/cabq-infrastructure-improvements-agreement-assignment-amendment.pdf",
+      "r2_etag": "3dcc6309ff0e0f70610e59f3c57b1f9a",
+      "r2_last_modified": "09/12/2026 08:22:37",
       "agency": "City of Albuquerque",
-      "title": "Assign Amend to Agreement IIA.pdf",
-      "date": null,
+      "title": "Assignment and Amendment to Agreement to Construct Infrastructure Improvements",
+      "date": "",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://documents.cabq.gov/planning/UDD/",
+      "size_bytes": 26982,
+      "checksum_sha256": "8dae822cb4df218877a331b91d3a6686751a797b98409bd7db35a2ee91f32665",
+      "parent_url": "https://documents.cabq.gov/planning/UDD/Assign%20Amend%20to%20Agreement%20IIA.pdf",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/Assign%20Amend%20to%20Agreement%20IIA.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -266251,22 +266339,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City of Albuquerque PDF fetched directly; exact byte size and SHA-256 matched the reviewed Planning UDD research artifact",
+      "proposed_canonical_page": "content/development-land-use/development-process.md",
+      "description": "Provides the City form for assigning and amending an agreement to construct infrastructure improvements, including the county clerk recording label, assignment terms, and amendment provisions used in development infrastructure agreements.",
+      "description_word_count": 30,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "ABQInfo already publishes six sibling Infrastructure Improvements Agreement forms plus the forms directory, and this assignment-and-amendment variant is not among them, so it completes an established published set rather than being a routine application form.",
+        "Original authoritative City PDF selected for byte-identical archival without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/development-process.md",
+      "implementation_locations": [
+        "content/development-land-use/development-process.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-d42df0916d0d8a2b.pdf",
       "discovered_at": "2026-08-04T14:15:57.8052881Z",
-      "updated_at": "2026-08-04T14:15:57.8052881Z"
+      "updated_at": "2026-09-12T14:38:07.4398822Z"
     },
     {
       "id": "src-d42f7ab6d8a7de25",
@@ -277739,7 +277831,7 @@
     },
     {
       "id": "src-ddd2b59a795fd6dd",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://documents.cabq.gov/planning/UDD/UDD-SilverhillHOZMap-Jan2017.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/UDD-SilverhillHOZMap-Jan2017.pdf",
       "r2_url": null,
@@ -277754,7 +277846,8 @@
       "checksum_sha256": null,
       "parent_url": "https://documents.cabq.gov/planning/UDD/",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/UDD-SilverhillHOZMap-Jan2017.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -277766,23 +277859,24 @@
       "discovery_method": "authored document link",
       "crawl_depth": 3,
       "cited_predecessors": [],
-      "cited_successors": [],
+      "cited_successors": "https://documents.cabq.gov/planning/UDD/SilverHillHPO.pdf",
       "provenance_status": "authoritative government source recorded",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Planning UDD integration 2026-09-11: January 2017 historic overlay zone sheet superseded by the May 2018 historic protection overlay zone sheet for the same area."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal research decision: superseded by documented post-IDO City successor",
+      "exclusion_reason": "Superseded by canonical inventory record src-7f1e53975e461d43. January 2017 historic overlay zone sheet superseded by the May 2018 historic protection overlay zone sheet for the same area.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.8631818Z",
-      "updated_at": "2026-08-04T14:15:57.8631818Z"
+      "updated_at": "2026-09-12T14:15:37.3227189Z"
     },
     {
       "id": "src-ddd74e0e87ab6559",
@@ -284467,7 +284561,7 @@
     },
     {
       "id": "src-e3a57019d0552ccb",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://documents.cabq.gov/planning/UDD/UDD-FormP1-Rev8-2017.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/UDD-FormP1-Rev8-2017.pdf",
       "r2_url": null,
@@ -284482,7 +284576,8 @@
       "checksum_sha256": null,
       "parent_url": "https://documents.cabq.gov/planning/UDD/",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/UDD-FormP1-Rev8-2017.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -284501,16 +284596,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Planning UDD integration 2026-09-11: Form P1 application checklist for site development plan review at Environmental Planning Commission public hearing, listing maximum sizes and required submittals. A routine application form."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal research decision: excluded",
+      "exclusion_reason": "Form P1 application checklist for site development plan review at Environmental Planning Commission public hearing, listing maximum sizes and required submittals. A routine application form.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.8551816Z",
-      "updated_at": "2026-08-04T14:15:57.8551816Z"
+      "updated_at": "2026-09-12T14:15:37.3261313Z"
     },
     {
       "id": "src-e3bb4120719554ae",
@@ -293125,7 +293221,7 @@
     },
     {
       "id": "src-eaa340591eafd28a",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://documents.cabq.gov/planning/UDD/Zone%20Change%20PRT%20handout_3-23%20SPANISH.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/Zone%20Change%20PRT%20handout_3-23%20SPANISH.pdf",
       "r2_url": null,
@@ -293140,7 +293236,8 @@
       "checksum_sha256": null,
       "parent_url": "https://documents.cabq.gov/planning/UDD/",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/Zone%20Change%20PRT%20handout_3-23%20SPANISH.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -293159,16 +293256,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Planning UDD integration 2026-09-11: Spanish-language public handout explaining how to request a zone change and what zoning designations mean. Public-information material rather than an adopted plan or policy."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal research decision: excluded",
+      "exclusion_reason": "Spanish-language public handout explaining how to request a zone change and what zoning designations mean. Public-information material rather than an adopted plan or policy.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.866181Z",
-      "updated_at": "2026-08-04T14:15:57.866181Z"
+      "updated_at": "2026-09-12T14:15:37.3262808Z"
     },
     {
       "id": "src-eaaf848105f8ebe6",
@@ -295528,22 +295626,23 @@
     },
     {
       "id": "src-ec6e7fdafdab0706",
-      "status": "pending review",
+      "status": "validated",
       "source_url": "https://documents.cabq.gov/planning/UDD/FourthWardHPO.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/FourthWardHPO.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-fourth-ward-historic-protection-overlay-zone-map-2018.pdf",
+      "r2_key": "development-land-use/development-process/cabq-fourth-ward-historic-protection-overlay-zone-map-2018.pdf",
+      "r2_etag": "2268dfd2dc0f9c3b661bc9cb0e4fb0e7",
+      "r2_last_modified": "09/12/2026 08:21:47",
       "agency": "City of Albuquerque",
-      "title": "FourthWardHPO.pdf",
-      "date": null,
+      "title": "Fourth Ward Historic Protection Overlay Zone Map",
+      "date": "",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
-      "parent_url": "https://documents.cabq.gov/planning/UDD/",
+      "size_bytes": 200485,
+      "checksum_sha256": "0ba7cf21eb78f7f5ff014bc225f8890f19b8e9e03135487782aa69c6a4eeb6f0",
+      "parent_url": "https://documents.cabq.gov/planning/UDD/FourthWardHPO.pdf",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/FourthWardHPO.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -295556,22 +295655,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "official City of Albuquerque PDF fetched directly; exact byte size and SHA-256 matched the reviewed Planning UDD research artifact",
+      "proposed_canonical_page": "content/development-land-use/development-process.md",
+      "description": "Maps parcel-level boundaries of the Fourth Ward historic protection overlay zone as of May 2018, identifying each address within the zone for Landmarks Commission review of building projects.",
+      "description_word_count": 28,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Original authoritative City PDF selected for byte-identical archival without modification.",
+        "Original authoritative file uploaded without modification; public R2 download matched exact size and SHA-256.",
+        "Original source file uploaded without modification; R2 object verified by HEAD.",
+        "Post-IDO 5/25/2018 successor to the January 2017 Fourth Ward historic overlay zone map."
       ],
-      "implementation_location": null,
-      "implementation_locations": [],
+      "implementation_location": "content/development-land-use/development-process.md",
+      "implementation_locations": [
+        "content/development-land-use/development-process.md"
+      ],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "passed: authoritative government provenance, exact local size and SHA-256, public byte-identical R2 download, 20–50-word description, and page placement validated",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-ec6e7fdafdab0706.pdf",
       "discovered_at": "2026-08-04T14:15:57.8171811Z",
-      "updated_at": "2026-08-04T14:15:57.8171811Z"
+      "updated_at": "2026-09-12T14:38:07.1796542Z"
     },
     {
       "id": "src-ec6f2425c884d073",
@@ -316434,7 +316537,7 @@
     },
     {
       "id": "src-fe7cf8a2c849e2a5",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://documents.cabq.gov/planning/UDD/BLANK%20PRT%20Notes%20Form%20Sept%202022%20fin.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/UDD/BLANK%20PRT%20Notes%20Form%20Sept%202022%20fin.pdf",
       "r2_url": null,
@@ -316449,7 +316552,8 @@
       "checksum_sha256": null,
       "parent_url": "https://documents.cabq.gov/planning/UDD/",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/UDD/"
+        "https://documents.cabq.gov/planning/UDD/",
+        "https://documents.cabq.gov/planning/UDD/BLANK%20PRT%20Notes%20Form%20Sept%202022%20fin.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -316468,16 +316572,17 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Planning UDD integration 2026-09-11: Blank English-language pre-application review notes form with empty fields. A routine application form."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal research decision: excluded",
+      "exclusion_reason": "Blank English-language pre-application review notes form with empty fields. A routine application form.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:57.8071809Z",
-      "updated_at": "2026-08-04T14:15:57.8071809Z"
+      "updated_at": "2026-09-12T14:15:37.324864Z"
     },
     {
       "id": "src-fe85bd5f4525e206",
