@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-12T15:19:16.4462543Z",
+  "generated_at": "2026-09-12T15:36:00.0440917Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -19,12 +19,12 @@
   ],
   "counts": {
     "pending review": 2338,
-    "approved for addition": 15,
+    "approved for addition": 0,
     "downloading": 0,
     "downloaded": 9,
     "parsed": 0,
     "description drafted": 0,
-    "placement assigned": 2,
+    "placement assigned": 17,
     "implemented": 178,
     "validated": 1404,
     "excluded": 1380,
@@ -89450,16 +89450,16 @@
     },
     {
       "id": "src-3f866d2089b33926",
-      "status": "approved for addition",
+      "status": "placement assigned",
       "source_url": "https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-2-colo.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-2-colo.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/zoning-ido/cabq-old-town-task-force-ranking-signs.pdf",
+      "r2_key": "development-land-use/zoning-ido/cabq-old-town-task-force-ranking-signs.pdf",
+      "r2_etag": "fa21fbf4ffab6ae89d8d64f07208a021",
+      "r2_last_modified": "09/12/2026 09:35:17",
       "agency": "City of Albuquerque",
       "title": "Old Town Virtual Task Force Summary of Ranking Results, Topic 2: Signs",
-      "date": null,
+      "date": "",
       "file_type": "PDF",
       "size_bytes": 1626369,
       "checksum_sha256": "c7c6d33f1262c4f436370fd0ffb78e915b0016a116e12a676cfdead8f4ae4576",
@@ -89467,9 +89467,10 @@
       "description": "The City task force summary charts how twelve participants ranked proposed sign rules for Old Town, covering off-premises signs among other categories, and records the vote distribution behind each option the task force considered.",
       "description_word_count": 34,
       "processing_notes": [
-        "council-documents-cluster-research-2026-09-11 integration 2026-09-12",
-        "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Same ground as Topic 1. The participant count of twelve is small and should be stated in any published description so the weight of the result is not overstated.",
+        "Fifteen pages, all headed \"Topic 2: Signs, Total Number of Participants: 12\", including an Off-Premises Signs block at item 11a. The black and white edition src-388cbd495a6eb4f4 is its greyscale twin.",
+        "Original authoritative City record selected for byte-identical archival without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
       "implementation_location": null,
       "implementation_locations": [
@@ -89477,21 +89478,21 @@
         "content/development-land-use/zoning-ido.md"
       ],
       "cross_listing_approved": true,
-      "validation_status": "passed: authoritative City record reviewed and exact source bytes measured; awaiting archive-first implementation",
+      "validation_status": "local size and SHA-256 passed; R2 upload verified by HEAD",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-3f866d2089b33926.pdf",
       "discovered_at": "2026-08-04T12:37:49.9210215Z",
-      "updated_at": "2026-09-12T15:08:53.481165Z",
+      "updated_at": "2026-09-12T15:35:19.2703093Z",
       "referring_urls": [
         "https://www.cabq.gov/council/old-town-virtual-task-force"
       ],
-      "parent_url": "https://www.cabq.gov/council/old-town-virtual-task-force",
+      "parent_url": "https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-2-colo.pdf",
       "discovery_path": [],
       "discovery_method": null,
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "official City of Albuquerque record fetched directly; exact byte size and SHA-256 matched the reviewed Council research artifact"
     },
     {
       "id": "src-3f90073d1c52b069",
@@ -92107,20 +92108,20 @@
     },
     {
       "id": "src-42032f0eef57807c",
-      "status": "approved for addition",
+      "status": "placement assigned",
       "source_url": "https://www.cabq.gov/council/documents/small-business-resource-fair-report-final-draft.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/small-business-resource-fair-report-final-draft.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/city-data/city-progress-surveys/cabq-small-business-resource-fair-report-2019.pdf",
+      "r2_key": "city-data/city-progress-surveys/cabq-small-business-resource-fair-report-2019.pdf",
+      "r2_etag": "25473b2245d3ec25311011c33b568463",
+      "r2_last_modified": "09/12/2026 09:33:53",
       "agency": "City of Albuquerque",
       "title": "Small Business Resource Fair Report: Supporting Albuquerque's Growing Small Business Community (April 2019)",
-      "date": null,
+      "date": "2019-04",
       "file_type": "PDF",
       "size_bytes": 2561993,
       "checksum_sha256": "9faf7d162033d1968728d64885416a4258c9dd1e920fd91d483eae2af0ebcad4",
-      "parent_url": "https://www.cabq.gov/council/projects/current-projects/small-business-resource-fair",
+      "parent_url": "https://www.cabq.gov/council/documents/small-business-resource-fair-report-final-draft.pdf",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/current-projects/small-business-resource-fair"
       ],
@@ -92136,14 +92137,15 @@
       "crawl_depth": 5,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "official City of Albuquerque record fetched directly; exact byte size and SHA-256 matched the reviewed Council research artifact",
       "proposed_canonical_page": "content/city-data/city-progress-surveys.md",
       "description": "The City Council staff report reviews the Small Business Resource Fair, setting out the local small business context, what the fair delivered, participant and partner feedback, and recommendations for future City support of small businesses.",
       "description_word_count": 35,
       "processing_notes": [
-        "council-documents-cluster-research-2026-09-11 integration 2026-09-12",
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "A Council staff evaluation report with findings and recommendations. It is the substantive half of a two-file package whose other half is the appendices retained below.",
+        "15 pages with a table of contents running executive summary, context, and recommendations.",
+        "Original authoritative City record selected for byte-identical archival without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
       "implementation_location": null,
       "implementation_locations": [
@@ -92151,11 +92153,11 @@
         "content/development-land-use/development-process.md"
       ],
       "cross_listing_approved": true,
-      "validation_status": "passed: authoritative City record reviewed and exact source bytes measured; awaiting archive-first implementation",
+      "validation_status": "local size and SHA-256 passed; R2 upload verified by HEAD",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-42032f0eef57807c.pdf",
       "discovered_at": "2026-08-04T14:45:04.1949909Z",
-      "updated_at": "2026-09-12T15:08:07.2772387Z"
+      "updated_at": "2026-09-12T15:33:52.1154Z"
     },
     {
       "id": "src-4204206743b66c6c",
@@ -93388,20 +93390,20 @@
     },
     {
       "id": "src-4347bb9af15c89ba",
-      "status": "approved for addition",
+      "status": "placement assigned",
       "source_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/Investigation%20Request%20of%20Redflex%20Letter.pdf/view",
       "direct_file_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/Investigation%20Request%20of%20Redflex%20Letter.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/safety-crash-data/cabq-redflex-contract-investigation-request-2014.pdf",
+      "r2_key": "transportation/safety-crash-data/cabq-redflex-contract-investigation-request-2014.pdf",
+      "r2_etag": "db8a436136acf435402e453693291495",
+      "r2_last_modified": "09/12/2026 09:36:01",
       "agency": "City of Albuquerque",
       "title": "Councilor Dan Lewis Request for Investigation into the Redflex Traffic Systems Contract With the City of Albuquerque, January 24, 2014",
-      "date": null,
-      "file_type": "Web page or live service",
+      "date": "2014-01-24",
+      "file_type": "PDF",
       "size_bytes": 175223,
       "checksum_sha256": "8f21914ebf1520d13e71807c31468986d630ee55ff088ea44608c5c744e2fc31",
-      "parent_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents",
+      "parent_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/Investigation%20Request%20of%20Redflex%20Letter.pdf/view",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/councilor-district-5-documents"
       ],
@@ -93418,25 +93420,26 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "official City of Albuquerque record fetched directly; exact byte size and SHA-256 matched the reviewed Council research artifact",
       "proposed_canonical_page": "content/transportation/safety-crash-data.md",
       "description": "The District 5 councilor formally asks the City Inspector General and the Director of Internal Audit to investigate the procurement process behind Albuquerque's original Redflex red-light camera contract, following press reports of alleged misconduct in the company's municipal contracting.",
       "description_word_count": 39,
       "processing_notes": [
-        "councilor-district-5-cluster-research-2026-09-11 integration 2026-09-12",
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "A formal oversight request to two named City accountability offices, not constituent correspondence or an announcement. It is a dated primary record of how Albuquerque's red-light camera programme came under scrutiny, and the inventory holds nothing else on the Redflex procurement.",
+        "Image-only PDF with no text layer; rendered and read. Addressed to Peter Pacheco, Office of Inspector General, and Deborah Yoshimura, Director of Internal Audit, copied to City Councilors. It cites a Chicago Tribune report of January 23, 2014 and dates the City's Redflex contract to approximately 2005.",
+        "Original authoritative City record selected for byte-identical archival without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
       "implementation_location": null,
       "implementation_locations": [
         "content/transportation/safety-crash-data.md"
       ],
       "cross_listing_approved": false,
-      "validation_status": "passed: authoritative City record reviewed and exact source bytes measured; awaiting archive-first implementation",
+      "validation_status": "local size and SHA-256 passed; R2 upload verified by HEAD",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-4347bb9af15c89ba.pdf",
       "discovered_at": "2026-08-04T15:02:42.7516416Z",
-      "updated_at": "2026-09-12T15:18:29.5416663Z"
+      "updated_at": "2026-09-12T15:35:59.7561917Z"
     },
     {
       "id": "src-434fa2c7e338cee3",
@@ -107260,16 +107263,16 @@
     },
     {
       "id": "src-4f28a655d98c8ae3",
-      "status": "approved for addition",
+      "status": "placement assigned",
       "source_url": "https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-1-colo.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-1-colo.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/zoning-ido/cabq-old-town-task-force-ranking-outdoor-displays.pdf",
+      "r2_key": "development-land-use/zoning-ido/cabq-old-town-task-force-ranking-outdoor-displays.pdf",
+      "r2_etag": "864c663181c2d4afb822e3f417db3407",
+      "r2_last_modified": "09/12/2026 09:35:07",
       "agency": "City of Albuquerque",
       "title": "Old Town Virtual Task Force Summary of Ranking Results, Topic 1: Outdoor Displays",
-      "date": null,
+      "date": "",
       "file_type": "PDF",
       "size_bytes": 649338,
       "checksum_sha256": "54f5947e02ce30c7a375d0fa5edcb1c177510ab9d65245543f8cc2219d0e31de",
@@ -107277,9 +107280,10 @@
       "description": "The City task force summary charts how thirty-three participants ranked proposed options for regulating outdoor merchandise displays in Old Town, giving the vote distribution behind the recommendations that fed the Old Town historic protection overlay standards.",
       "description_word_count": 36,
       "processing_notes": [
-        "council-documents-cluster-research-2026-09-11 integration 2026-09-12",
-        "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Recorded public-input results with participant counts and per-option vote distributions, which is data rather than a meeting handout. It is the evidence base behind the Old Town sign and display rules that Council later amended by O-19-52, itself in this directory.",
+        "Five pages, all headed \"Topic 1: Outdoor Displays, Total Number of Participants: 33\". No black and white counterpart is published for this topic.",
+        "Original authoritative City record selected for byte-identical archival without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
       "implementation_location": null,
       "implementation_locations": [
@@ -107287,21 +107291,21 @@
         "content/development-land-use/zoning-ido.md"
       ],
       "cross_listing_approved": true,
-      "validation_status": "passed: authoritative City record reviewed and exact source bytes measured; awaiting archive-first implementation",
+      "validation_status": "local size and SHA-256 passed; R2 upload verified by HEAD",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-4f28a655d98c8ae3.pdf",
       "discovered_at": "2026-08-04T12:37:49.9200216Z",
-      "updated_at": "2026-09-12T15:08:47.7054017Z",
+      "updated_at": "2026-09-12T15:35:05.4396594Z",
       "referring_urls": [
         "https://www.cabq.gov/council/old-town-virtual-task-force"
       ],
-      "parent_url": "https://www.cabq.gov/council/old-town-virtual-task-force",
+      "parent_url": "https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-1-colo.pdf",
       "discovery_path": [],
       "discovery_method": null,
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "official City of Albuquerque record fetched directly; exact byte size and SHA-256 matched the reviewed Council research artifact"
     },
     {
       "id": "src-4f3ba9d0a06d0e56",
@@ -156104,20 +156108,20 @@
     },
     {
       "id": "src-77ded92dfd05478c",
-      "status": "approved for addition",
+      "status": "placement assigned",
       "source_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/r-10-44.pdf/view",
       "direct_file_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/r-10-44.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/roadway-projects/cabq-rainbow-universe-safety-project-resolution-r-2010-056.pdf",
+      "r2_key": "transportation/roadway-projects/cabq-rainbow-universe-safety-project-resolution-r-2010-056.pdf",
+      "r2_etag": "0415da55e24e8d33737447e0f09815c5",
+      "r2_last_modified": "09/12/2026 09:35:51",
       "agency": "City of Albuquerque",
       "title": "Enacted Resolution R-2010-056: Creating a Traffic and Pedestrian Safety Project on Rainbow Boulevard and Universe Boulevard (Council Bill C/S R-10-44)",
-      "date": null,
-      "file_type": "Web page or live service",
+      "date": "2010",
+      "file_type": "PDF",
       "size_bytes": 81074,
       "checksum_sha256": "2da3445c515cc5be3d319e86774790c11a53123ed8f86904e6e0184183995690",
-      "parent_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents",
+      "parent_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/r-10-44.pdf/view",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/councilor-district-5-documents"
       ],
@@ -156134,14 +156138,15 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "official City of Albuquerque record fetched directly; exact byte size and SHA-256 matched the reviewed Council research artifact",
       "proposed_canonical_page": "content/transportation/roadway-projects/_index.md",
       "description": "The enacted City resolution creates a traffic and pedestrian safety project on Rainbow and Universe Boulevards, directing lighting, safety, and street improvements and appropriating funds from the Transportation Infrastructure Tax Fund 340 for the school corridor.",
       "description_word_count": 36,
       "processing_notes": [
-        "councilor-district-5-cluster-research-2026-09-11 integration 2026-09-12",
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Enacted law creating a named, funded City project. It also closes a loop opened by the council-documents artifact of the same date, which flagged that a public meeting flyer announced a Rainbow Boulevard Traffic Calming and Pedestrian Safety Study the archive did not hold. This resolution is that project's legislative origin.",
+        "Image-only PDF with no text layer; page 1 was rendered and read. Council Bill No. C/S R-10-44, handwritten Enactment No. R-2010-056, Nineteenth Council, sponsored by Dan Lewis. The recitals name Tierra Antigua Elementary, Tony Hillerman Middle School, Volcano Vista High School and the APS sports complex as the traffic generators, and cite unsignalized crossings and a lack of roadway lighting.",
+        "Original authoritative City record selected for byte-identical archival without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
       "implementation_location": null,
       "implementation_locations": [
@@ -156149,11 +156154,11 @@
         "content/transportation/safety-crash-data.md"
       ],
       "cross_listing_approved": true,
-      "validation_status": "passed: authoritative City record reviewed and exact source bytes measured; awaiting archive-first implementation",
+      "validation_status": "local size and SHA-256 passed; R2 upload verified by HEAD",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-77ded92dfd05478c.pdf",
       "discovered_at": "2026-08-04T15:02:42.761669Z",
-      "updated_at": "2026-09-12T15:18:23.7295037Z"
+      "updated_at": "2026-09-12T15:35:49.7978136Z"
     },
     {
       "id": "src-77fc6b8921fe85bb",
@@ -193917,20 +193922,20 @@
     },
     {
       "id": "src-9642139286c8f411",
-      "status": "approved for addition",
+      "status": "placement assigned",
       "source_url": "https://www.cabq.gov/council/documents/dec_2008.dmd_proposal_for_stop_sign_reconfiguration.raynolds_and_barelas.pdf/view",
       "direct_file_url": "https://www.cabq.gov/council/documents/dec_2008.dmd_proposal_for_stop_sign_reconfiguration.raynolds_and_barelas.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/transportation/operations-data/cabq-raynolds-barelas-stop-sign-reconfiguration-proposal-2008.pdf",
+      "r2_key": "transportation/operations-data/cabq-raynolds-barelas-stop-sign-reconfiguration-proposal-2008.pdf",
+      "r2_etag": "15d4fb357bb83311d791871bb1c470ef",
+      "r2_last_modified": "09/12/2026 09:34:56",
       "agency": "City of Albuquerque",
       "title": "Stop Sign Reconfiguration Proposal for Raynolds and Barelas, December 2008",
-      "date": null,
-      "file_type": "Web page or live service",
+      "date": "2008-12",
+      "file_type": "PDF",
       "size_bytes": 279795,
       "checksum_sha256": "2242e12384639a6d01d2408e5d3b0fa0146cff9eeeb1bbcef9ec262747c38a5c",
-      "parent_url": "https://www.cabq.gov/council/documents/",
+      "parent_url": "https://www.cabq.gov/council/documents/dec_2008.dmd_proposal_for_stop_sign_reconfiguration.raynolds_and_barelas.pdf/view",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/"
       ],
@@ -193945,25 +193950,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "official City of Albuquerque record fetched directly; exact byte size and SHA-256 matched the reviewed Council research artifact",
       "proposed_canonical_page": "content/transportation/operations-data.md",
       "description": "The City Municipal Development traffic engineering proposal maps the one-way street grid in the Raynolds and Barelas neighborhoods, marking which existing stop signs would remain, which would be removed, and where new stop signs would be installed.",
       "description_word_count": 37,
       "processing_notes": [
-        "council-documents-cluster-research-2026-09-11 integration 2026-09-12",
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "A dated, named traffic-engineering project record for two specific Albuquerque neighborhoods, with a legend that makes it readable on its own. It is the class of neighborhood traffic record the transportation operations page already carries.",
+        "One page. The legend distinguishes one-way westbound and eastbound segments, existing stops to remain, existing stops to be removed, and new stops to be installed.",
+        "Original authoritative City record selected for byte-identical archival without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
       "implementation_location": null,
       "implementation_locations": [
         "content/transportation/operations-data.md"
       ],
       "cross_listing_approved": false,
-      "validation_status": "passed: authoritative City record reviewed and exact source bytes measured; awaiting archive-first implementation",
+      "validation_status": "local size and SHA-256 passed; R2 upload verified by HEAD",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-9642139286c8f411.pdf",
       "discovered_at": "2026-08-04T14:16:02.5536852Z",
-      "updated_at": "2026-09-12T15:08:42.0337843Z"
+      "updated_at": "2026-09-12T15:34:54.6736518Z"
     },
     {
       "id": "src-9659ced718688329",
@@ -203526,20 +203532,20 @@
     },
     {
       "id": "src-9f5ac56df8c6cbb8",
-      "status": "approved for addition",
+      "status": "placement assigned",
       "source_url": "https://www.cabq.gov/council/documents/1uli_final_report.abq_rail_yards_advisory_services_panel.pdf/view",
       "direct_file_url": "https://www.cabq.gov/council/documents/1uli_final_report.abq_rail_yards_advisory_services_panel.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/projects/cabq-rail-yards-uli-advisory-panel-report-2008.pdf",
+      "r2_key": "development-land-use/projects/cabq-rail-yards-uli-advisory-panel-report-2008.pdf",
+      "r2_etag": "c2bfecd615724003114a116a2e4d3d42",
+      "r2_last_modified": "09/12/2026 09:33:32",
       "agency": "City of Albuquerque",
-      "title": "Albuquerque Rail Yards: Redeveloping the City's Historic Rail Yards, a Urban Land Institute Advisory Services Panel Report (February 2008)",
-      "date": null,
-      "file_type": "Web page or live service",
+      "title": "Albuquerque Rail Yards: Redeveloping the City's Historic Rail Yards, an Urban Land Institute Advisory Services Panel Report (February 2008)",
+      "date": "2008-02",
+      "file_type": "PDF",
       "size_bytes": 2459168,
       "checksum_sha256": "985833b24a0b3e6ee14dbd354ba376b52ac3f6fcd07b5961b88c122f03ec944e",
-      "parent_url": "https://www.cabq.gov/council/documents/",
+      "parent_url": "https://www.cabq.gov/council/documents/1uli_final_report.abq_rail_yards_advisory_services_panel.pdf/view",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/"
       ],
@@ -203554,25 +203560,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "official City of Albuquerque record fetched directly; exact byte size and SHA-256 matched the reviewed Council research artifact",
       "proposed_canonical_page": "content/development-land-use/projects.md",
       "description": "The Urban Land Institute panel report on the Albuquerque Rail Yards sets out market findings, planning and design recommendations, development strategy, and implementation advice for redeveloping the historic Santa Fe Railway shops site south of Downtown.",
       "description_word_count": 36,
       "processing_notes": [
-        "council-documents-cluster-research-2026-09-11 integration 2026-09-12",
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "The earliest substantive planning study for the Rail Yards and the only copy of it in the inventory. The site already publishes three editions of the Rail Yards Master Plan and two Blacksmith Shop studies under \"Rail Yards Planning and Environmental Records\"; this 2008 panel report is the precursor to all of them and completes that record.",
+        "46 pages, produced by ULI, 1025 Thomas Jefferson Street NW, Washington. Its SHA-256 does not match any of the 1,612 checksummed inventory records, so it is not a copy of anything already held.",
+        "Original authoritative City record selected for byte-identical archival without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
       "implementation_location": null,
       "implementation_locations": [
         "content/development-land-use/projects.md"
       ],
       "cross_listing_approved": false,
-      "validation_status": "passed: authoritative City record reviewed and exact source bytes measured; awaiting archive-first implementation",
+      "validation_status": "local size and SHA-256 passed; R2 upload verified by HEAD",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-9f5ac56df8c6cbb8.pdf",
       "discovered_at": "2026-08-04T14:16:02.2755999Z",
-      "updated_at": "2026-09-12T15:07:54.997039Z"
+      "updated_at": "2026-09-12T15:33:30.5201183Z"
     },
     {
       "id": "src-9f642d03877e87eb",
@@ -208394,20 +208401,20 @@
     },
     {
       "id": "src-a3afa3078e7351a7",
-      "status": "approved for addition",
+      "status": "placement assigned",
       "source_url": "https://www.cabq.gov/council/documents/natffinalrpt2.pdf/view",
       "direct_file_url": "https://www.cabq.gov/council/documents/natffinalrpt2.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-neighborhood-task-force-final-report-2007.pdf",
+      "r2_key": "development-land-use/development-process/cabq-neighborhood-task-force-final-report-2007.pdf",
+      "r2_etag": "d3e45978f8ea44a7afc348073d1a2c01",
+      "r2_last_modified": "09/12/2026 09:33:42",
       "agency": "City of Albuquerque",
       "title": "Neighborhood Task Force Final Report to the City Council (September 2007)",
-      "date": null,
-      "file_type": "Web page or live service",
+      "date": "2007-09",
+      "file_type": "PDF",
       "size_bytes": 147090,
       "checksum_sha256": "c7e79c15e9d6e73d355ed1364ecb282ef4cdc6b437e6a954074c8b0afd12aa1f",
-      "parent_url": "https://www.cabq.gov/council/documents/",
+      "parent_url": "https://www.cabq.gov/council/documents/natffinalrpt2.pdf/view",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/"
       ],
@@ -208422,25 +208429,26 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "official City of Albuquerque record fetched directly; exact byte size and SHA-256 matched the reviewed Council research artifact",
       "proposed_canonical_page": "content/development-land-use/development-process.md",
       "description": "The Council-appointed task force reports on five assigned topics covering the function and role of the Office of Neighborhood Coordination, neighborhood association recognition, notification requirements, and the relationship between neighborhood organisations and the City development review process.",
       "description_word_count": 37,
       "processing_notes": [
-        "council-documents-cluster-research-2026-09-11 integration 2026-09-12",
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "A Council task force report with findings and recommendations, not a meeting record. It documents how Albuquerque's neighborhood notification and recognition rules came to be, which is background the development-process page carries for no other era.",
+        "13 pages. Its executive summary cites the Don Harris District 9 Council memorandum of April 25, 2007 that created the task force and lists the five topics it was asked to address.",
+        "Original authoritative City record selected for byte-identical archival without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
       "implementation_location": null,
       "implementation_locations": [
         "content/development-land-use/development-process.md"
       ],
       "cross_listing_approved": false,
-      "validation_status": "passed: authoritative City record reviewed and exact source bytes measured; awaiting archive-first implementation",
+      "validation_status": "local size and SHA-256 passed; R2 upload verified by HEAD",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-a3afa3078e7351a7.pdf",
       "discovered_at": "2026-08-04T14:16:02.5912812Z",
-      "updated_at": "2026-09-12T15:08:01.0793662Z"
+      "updated_at": "2026-09-12T15:33:40.8974693Z"
     },
     {
       "id": "src-a3d3af52e6832110",
@@ -235281,16 +235289,16 @@
     },
     {
       "id": "src-baf2db7aea5be0d2",
-      "status": "approved for addition",
+      "status": "placement assigned",
       "source_url": "https://www.cabq.gov/council/documents/aaab-minutes-july-7-final-version-7-16-2026.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/aaab-minutes-july-7-final-version-7-16-2026.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/city-data/city-progress-surveys/cabq-african-american-advisory-board-minutes-2026-07-07.pdf",
+      "r2_key": "city-data/city-progress-surveys/cabq-african-american-advisory-board-minutes-2026-07-07.pdf",
+      "r2_etag": "a4b3ac2cb666e073acb0cb0f8cf77359",
+      "r2_last_modified": "09/12/2026 09:34:14",
       "agency": "City of Albuquerque",
       "title": "African American Advisory Board Minutes, July 7, 2026",
-      "date": null,
+      "date": "2026-07-07",
       "file_type": "PDF",
       "size_bytes": 207416,
       "checksum_sha256": "5aba22bdda5bf7697b25e0ca60559265d32716e08640fbe908bbb07f7ad7fd28",
@@ -235298,30 +235306,31 @@
       "description": "The approved minutes of the City African American Advisory Board record attendance, the business transacted, member reports, and actions taken at the board's July 7, 2026 meeting in the City Council Committee Room.",
       "description_word_count": 33,
       "processing_notes": [
-        "council-documents-cluster-research-2026-09-11 integration 2026-09-12",
-        "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Approved minutes of a standing City advisory board. Minutes are retained wherever the repository has triaged a board, and the sibling agenda for this same meeting is excluded because these minutes exist.",
+        "Six pages opening with the voting members present. See integration_flags: ABQInfo has no existing page for advisory-board minutes, so placement is an open architecture question.",
+        "Original authoritative City record selected for byte-identical archival without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
       "implementation_location": null,
       "implementation_locations": [
         "content/city-data/city-progress-surveys.md"
       ],
       "cross_listing_approved": false,
-      "validation_status": "passed: authoritative City record reviewed and exact source bytes measured; awaiting archive-first implementation",
+      "validation_status": "local size and SHA-256 passed; R2 upload verified by HEAD",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-baf2db7aea5be0d2.pdf",
       "discovered_at": "2026-08-04T12:37:49.8814629Z",
-      "updated_at": "2026-09-12T15:08:18.9379322Z",
+      "updated_at": "2026-09-12T15:34:12.7322579Z",
       "referring_urls": [
         "https://www.cabq.gov/council/african-american-advisory-board-aaab"
       ],
-      "parent_url": "https://www.cabq.gov/council/african-american-advisory-board-aaab",
+      "parent_url": "https://www.cabq.gov/council/documents/aaab-minutes-july-7-final-version-7-16-2026.pdf",
       "discovery_path": [],
       "discovery_method": null,
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "official City of Albuquerque record fetched directly; exact byte size and SHA-256 matched the reviewed Council research artifact"
     },
     {
       "id": "src-bafbc17c9bf37553",
@@ -251648,16 +251657,16 @@
     },
     {
       "id": "src-c8618de9cd7384e7",
-      "status": "approved for addition",
+      "status": "placement assigned",
       "source_url": "https://www.cabq.gov/council/documents/aaab-minutes-june-2-2026.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/aaab-minutes-june-2-2026.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/city-data/city-progress-surveys/cabq-african-american-advisory-board-minutes-2026-06-02.pdf",
+      "r2_key": "city-data/city-progress-surveys/cabq-african-american-advisory-board-minutes-2026-06-02.pdf",
+      "r2_etag": "96fe0a5d1f5a9abc119a1b15e58a48c2",
+      "r2_last_modified": "09/12/2026 09:34:24",
       "agency": "City of Albuquerque",
       "title": "African American Advisory Board Minutes, June 2, 2026",
-      "date": null,
+      "date": "2026-06-02",
       "file_type": "PDF",
       "size_bytes": 202555,
       "checksum_sha256": "cd81768ea32c1ce5514dd74b36ec7dec428efcdc3a3fc5333d207e8dca849183",
@@ -251665,30 +251674,31 @@
       "description": "The approved minutes of the City African American Advisory Board record attendance, business transacted, and actions taken at the board's June 2, 2026 meeting, held at the Black Chambers of Commerce New Mexico on Fourth Street SW.",
       "description_word_count": 37,
       "processing_notes": [
-        "council-documents-cluster-research-2026-09-11 integration 2026-09-12",
-        "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Approved minutes of a standing City advisory board. Decisive precedent: the agenda for this same meeting, src-0a6bdb5c898342da, is already terminal-excluded in the inventory, which is exactly the treatment the repository missing-minutes policy prescribes when approved minutes exist.",
+        "Five pages opening with the voting members present.",
+        "Original authoritative City record selected for byte-identical archival without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
       "implementation_location": null,
       "implementation_locations": [
         "content/city-data/city-progress-surveys.md"
       ],
       "cross_listing_approved": false,
-      "validation_status": "passed: authoritative City record reviewed and exact source bytes measured; awaiting archive-first implementation",
+      "validation_status": "local size and SHA-256 passed; R2 upload verified by HEAD",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-c8618de9cd7384e7.pdf",
       "discovered_at": "2026-08-04T12:37:49.882464Z",
-      "updated_at": "2026-09-12T15:08:24.765922Z",
+      "updated_at": "2026-09-12T15:34:23.0935922Z",
       "referring_urls": [
         "https://www.cabq.gov/council/african-american-advisory-board-aaab"
       ],
-      "parent_url": "https://www.cabq.gov/council/african-american-advisory-board-aaab",
+      "parent_url": "https://www.cabq.gov/council/documents/aaab-minutes-june-2-2026.pdf",
       "discovery_path": [],
       "discovery_method": null,
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "official City of Albuquerque record fetched directly; exact byte size and SHA-256 matched the reviewed Council research artifact"
     },
     {
       "id": "src-c862e9705c4818eb",
@@ -271798,16 +271808,16 @@
     },
     {
       "id": "src-d866542fe3372c5e",
-      "status": "approved for addition",
+      "status": "placement assigned",
       "source_url": "https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-3-colo.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-3-colo.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/development-land-use/zoning-ido/cabq-old-town-task-force-ranking-outdoor-demonstrations.pdf",
+      "r2_key": "development-land-use/zoning-ido/cabq-old-town-task-force-ranking-outdoor-demonstrations.pdf",
+      "r2_etag": "f5c74966a8cb5a6bf512cc52821c69f3",
+      "r2_last_modified": "09/12/2026 09:35:31",
       "agency": "City of Albuquerque",
       "title": "Old Town Virtual Task Force Summary of Ranking Results, Topic 3: Outdoor Demonstrations",
-      "date": null,
+      "date": "",
       "file_type": "PDF",
       "size_bytes": 509482,
       "checksum_sha256": "35fd115b767f87644d79f1567019cbf9e3ccb65b122cc831318f4937620a2202",
@@ -271815,9 +271825,10 @@
       "description": "The City task force summary charts how seven participants ranked options for regulating outdoor craft demonstrations in Old Town, testing whether the former zoning code definition at Section 14-16-2-25(o)(1) adequately defined an outdoor demonstration.",
       "description_word_count": 34,
       "processing_notes": [
-        "council-documents-cluster-research-2026-09-11 integration 2026-09-12",
-        "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Same ground as the other two topics, and it is the only record in the directory that quotes the superseded zoning code definition of an outdoor demonstration. The seven-participant count must be stated in any description.",
+        "Four pages headed \"Topic 3: Outdoor Demonstrations, Total Number of Participants: 7\", quoting the old zoning code language at 14-16-2-25 (o) 1. The black and white edition src-78ba9058dfb576e0 is its greyscale twin.",
+        "Original authoritative City record selected for byte-identical archival without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
       "implementation_location": null,
       "implementation_locations": [
@@ -271825,21 +271836,21 @@
         "content/development-land-use/zoning-ido.md"
       ],
       "cross_listing_approved": true,
-      "validation_status": "passed: authoritative City record reviewed and exact source bytes measured; awaiting archive-first implementation",
+      "validation_status": "local size and SHA-256 passed; R2 upload verified by HEAD",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-d866542fe3372c5e.pdf",
       "discovered_at": "2026-08-04T12:37:49.922021Z",
-      "updated_at": "2026-09-12T15:08:59.5580406Z",
+      "updated_at": "2026-09-12T15:35:29.291428Z",
       "referring_urls": [
         "https://www.cabq.gov/council/old-town-virtual-task-force"
       ],
-      "parent_url": "https://www.cabq.gov/council/old-town-virtual-task-force",
+      "parent_url": "https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-3-colo.pdf",
       "discovery_path": [],
       "discovery_method": null,
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "official City of Albuquerque record fetched directly; exact byte size and SHA-256 matched the reviewed Council research artifact"
     },
     {
       "id": "src-d86965da6d5d26f2",
@@ -300488,16 +300499,16 @@
     },
     {
       "id": "src-f0c76005377afd83",
-      "status": "approved for addition",
+      "status": "placement assigned",
       "source_url": "https://www.cabq.gov/council/documents/council-services-org-chart-4-6-26.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/council-services-org-chart-4-6-26.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/city-data/city-progress-surveys/cabq-city-council-services-organizational-chart-2026.pdf",
+      "r2_key": "city-data/city-progress-surveys/cabq-city-council-services-organizational-chart-2026.pdf",
+      "r2_etag": "7bc03702d32bc71dd4cf3ce3e4c46537",
+      "r2_last_modified": "09/12/2026 09:34:45",
       "agency": "City of Albuquerque",
       "title": "Albuquerque City Council Services Organizational Chart, April 6, 2026",
-      "date": null,
+      "date": "2026-04-06",
       "file_type": "PDF",
       "size_bytes": 89166,
       "checksum_sha256": "11a05a8cac66fe241bc42f3f59066f54a2163b319b300a71f697ca96d3696de8",
@@ -300505,30 +300516,31 @@
       "description": "The chart shows how City Council Services is organised, naming the Director, the deputy directors for policy and operations, general counsel, the Clerk of the Council, and the program evaluation and district associate director roles beneath them.",
       "description_word_count": 37,
       "processing_notes": [
-        "council-documents-cluster-research-2026-09-11 integration 2026-09-12",
-        "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "A current, dated statement of how the legislative branch staff is structured and who holds each post. It is a reference record rather than a form, and the inventory holds no other organisational chart for Council Services.",
+        "One page naming the Director of Council Services and the deputy director, general counsel, operations, and clerk positions.",
+        "Original authoritative City record selected for byte-identical archival without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
       "implementation_location": null,
       "implementation_locations": [
         "content/city-data/city-progress-surveys.md"
       ],
       "cross_listing_approved": false,
-      "validation_status": "passed: authoritative City record reviewed and exact source bytes measured; awaiting archive-first implementation",
+      "validation_status": "local size and SHA-256 passed; R2 upload verified by HEAD",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-f0c76005377afd83.pdf",
       "discovered_at": "2026-08-04T12:37:49.9124816Z",
-      "updated_at": "2026-09-12T15:08:36.2522568Z",
+      "updated_at": "2026-09-12T15:34:44.2486056Z",
       "referring_urls": [
         "https://www.cabq.gov/council/frequently-asked-questions-faq"
       ],
-      "parent_url": "https://www.cabq.gov/council/frequently-asked-questions-faq",
+      "parent_url": "https://www.cabq.gov/council/documents/council-services-org-chart-4-6-26.pdf",
       "discovery_path": [],
       "discovery_method": null,
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "official City of Albuquerque record fetched directly; exact byte size and SHA-256 matched the reviewed Council research artifact"
     },
     {
       "id": "src-f0d6744711099a88",
@@ -301047,20 +301059,20 @@
     },
     {
       "id": "src-f164513208041ca0",
-      "status": "approved for addition",
+      "status": "placement assigned",
       "source_url": "https://www.cabq.gov/council/documents/appendices.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/appendices.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/city-data/city-progress-surveys/cabq-small-business-resource-fair-report-appendices-2019.pdf",
+      "r2_key": "city-data/city-progress-surveys/cabq-small-business-resource-fair-report-appendices-2019.pdf",
+      "r2_etag": "0510c50c29c9af5c07843ddb2fce15ed",
+      "r2_last_modified": "09/12/2026 09:34:03",
       "agency": "City of Albuquerque",
       "title": "Appendices to the Small Business Resource Fair Report, Including Enacted Resolution R-2018-081",
-      "date": null,
+      "date": "2019-04",
       "file_type": "PDF",
       "size_bytes": 4987608,
       "checksum_sha256": "91dbfeadedb185fa13588fb41bc32b150ce62e2d5d84a35d7392725995e8ba00",
-      "parent_url": "https://www.cabq.gov/council/projects/current-projects/small-business-resource-fair",
+      "parent_url": "https://www.cabq.gov/council/documents/appendices.pdf",
       "referring_urls": [
         "https://www.cabq.gov/council/projects/current-projects/small-business-resource-fair"
       ],
@@ -301076,14 +301088,15 @@
       "crawl_depth": 5,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "official City of Albuquerque record fetched directly; exact byte size and SHA-256 matched the reviewed Council research artifact",
       "proposed_canonical_page": "content/city-data/city-progress-surveys.md",
       "description": "The appendix volume to the Council small business report opens with enacted Resolution R-2018-081, which directs the Economic Development Department to convene a micro-enterprise development fair with local and state partners, and carries the supporting materials.",
       "description_word_count": 36,
       "processing_notes": [
-        "council-documents-cluster-research-2026-09-11 integration 2026-09-12",
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Not a separate document but the second half of the retained report, and it carries the enacting legislation the report implements. Under the repository canonical-package rule the two belong together.",
+        "Image-only PDF with no text layer; page 1 was rendered and read. It is hand-labelled \"APPENDIX 1\" over Enactment No. R-2018-081, a Council Services transmittal to Mayor Timothy M. Keller for Bill No. R-18-82, \"Directing The Economic Development Department To Collaborate With The City Council Office And Other Local And State Government Agencies To Convene A Micro-Enterprise Development Fair (Pena)\", passed at the Special Council meeting of November 5, 2018 by a vote of 9 for and 0 against.",
+        "Original authoritative City record selected for byte-identical archival without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
       "implementation_location": null,
       "implementation_locations": [
@@ -301091,11 +301104,11 @@
         "content/development-land-use/development-process.md"
       ],
       "cross_listing_approved": true,
-      "validation_status": "passed: authoritative City record reviewed and exact source bytes measured; awaiting archive-first implementation",
+      "validation_status": "local size and SHA-256 passed; R2 upload verified by HEAD",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-f164513208041ca0.pdf",
       "discovered_at": "2026-08-04T14:45:04.9903225Z",
-      "updated_at": "2026-09-12T15:08:13.3728156Z"
+      "updated_at": "2026-09-12T15:34:02.4890418Z"
     },
     {
       "id": "src-f166cc39d1779bed",
@@ -307440,16 +307453,16 @@
     },
     {
       "id": "src-f6f982e95a648dd7",
-      "status": "approved for addition",
+      "status": "placement assigned",
       "source_url": "https://www.cabq.gov/council/documents/aaab-minutes-may-2026-accessible.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/aaab-minutes-may-2026-accessible.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/city-data/city-progress-surveys/cabq-african-american-advisory-board-minutes-2026-05-05.pdf",
+      "r2_key": "city-data/city-progress-surveys/cabq-african-american-advisory-board-minutes-2026-05-05.pdf",
+      "r2_etag": "3aa51fe939b36da449f75356a8c4251a",
+      "r2_last_modified": "09/12/2026 09:34:35",
       "agency": "City of Albuquerque",
       "title": "African American Advisory Board Minutes, May 5, 2026",
-      "date": null,
+      "date": "2026-05-05",
       "file_type": "PDF",
       "size_bytes": 176286,
       "checksum_sha256": "32c916e2298c1dd5044594fdfbb2e32d0c135bb5017109109e56f7746f41eada",
@@ -307457,30 +307470,31 @@
       "description": "The approved minutes of the City African American Advisory Board record attendance, business transacted, and actions taken at the board's May 5, 2026 meeting in the Department of Municipal Development conference room at One Civic Plaza.",
       "description_word_count": 36,
       "processing_notes": [
-        "council-documents-cluster-research-2026-09-11 integration 2026-09-12",
-        "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Approved minutes of a standing City advisory board; the agenda for the same meeting is recommended excluded below on the same ground the June agenda was already excluded.",
+        "Four pages listing members present by organisation, including the Black Chambers of Commerce, the New Mexico Black Leadership Council, the African American Museum and Cultural Center, and UNM African American Student Services.",
+        "Original authoritative City record selected for byte-identical archival without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
       "implementation_location": null,
       "implementation_locations": [
         "content/city-data/city-progress-surveys.md"
       ],
       "cross_listing_approved": false,
-      "validation_status": "passed: authoritative City record reviewed and exact source bytes measured; awaiting archive-first implementation",
+      "validation_status": "local size and SHA-256 passed; R2 upload verified by HEAD",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-f6f982e95a648dd7.pdf",
       "discovered_at": "2026-08-04T12:37:49.8834631Z",
-      "updated_at": "2026-09-12T15:08:30.5947523Z",
+      "updated_at": "2026-09-12T15:34:33.973808Z",
       "referring_urls": [
         "https://www.cabq.gov/council/african-american-advisory-board-aaab"
       ],
-      "parent_url": "https://www.cabq.gov/council/african-american-advisory-board-aaab",
+      "parent_url": "https://www.cabq.gov/council/documents/aaab-minutes-may-2026-accessible.pdf",
       "discovery_path": [],
       "discovery_method": null,
       "crawl_depth": 2,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "official City of Albuquerque record fetched directly; exact byte size and SHA-256 matched the reviewed Council research artifact"
     },
     {
       "id": "src-f6feb3549d055097",
@@ -313880,20 +313894,20 @@
     },
     {
       "id": "src-fc250f15df2ab028",
-      "status": "approved for addition",
+      "status": "placement assigned",
       "source_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/O4Enacted.pdf/view",
       "direct_file_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/O4Enacted.pdf",
-      "r2_url": null,
-      "r2_key": null,
-      "r2_etag": null,
-      "r2_last_modified": null,
+      "r2_url": "https://files.abqinfo.com/city-data/budget-spending/cabq-eclipse-aerospace-leda-ordinance-o-2014-005.pdf",
+      "r2_key": "city-data/budget-spending/cabq-eclipse-aerospace-leda-ordinance-o-2014-005.pdf",
+      "r2_etag": "7353ffcd183d39fd8d74b7534667f173",
+      "r2_last_modified": "09/12/2026 09:35:41",
       "agency": "City of Albuquerque",
       "title": "Enacted Ordinance O-2014-005: Approving a Project Involving Eclipse Aerospace, Inc. Under the Local Economic Development Act (Council Bill O-14-4)",
-      "date": null,
-      "file_type": "Web page or live service",
+      "date": "2014",
+      "file_type": "PDF",
       "size_bytes": 265817,
       "checksum_sha256": "c09ea45e7f6bb09e8deb3daf9d9f77203ce2d9d08438ba9b16873ccf9b980a6c",
-      "parent_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents",
+      "parent_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/O4Enacted.pdf/view",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/councilor-district-5-documents"
       ],
@@ -313910,25 +313924,26 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "official City of Albuquerque record fetched directly; exact byte size and SHA-256 matched the reviewed Council research artifact",
       "proposed_canonical_page": "content/city-data/budget-spending.md",
       "description": "The enacted City ordinance approves a Local Economic Development Act project with Eclipse Aerospace to support continued aircraft assembly and administrative operations in Albuquerque, authorising a project participation agreement and making the findings the Act requires.",
       "description_word_count": 36,
       "processing_notes": [
-        "councilor-district-5-cluster-research-2026-09-11 integration 2026-09-12",
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Enacted law, and the only copy in the inventory. It is a rare find in this tree. Across the Council library triaged in this run, thirty-five legislative files carry a blank enactment number, and only three carry a real one: this ordinance, R-2010-056 below, and R-2018-081, which survives only because it was bound as Appendix 1 inside a Council staff report rather than published on its own.",
+        "Image-only PDF with no text layer; page 1 was rendered and read. It carries Council Bill No. O-14-4 and the handwritten Enactment No. O-2014-005, Twenty-First Council, sponsored by Rey Garduno and Dan Lewis, and recites Sections 5-10-1 through 5-10-13 NMSA 1978 and the City's implementing LEDA ordinance F/S O-04-10.",
+        "Original authoritative City record selected for byte-identical archival without modification.",
+        "Original source file uploaded without modification; R2 object verified by HEAD."
       ],
       "implementation_location": null,
       "implementation_locations": [
         "content/city-data/budget-spending.md"
       ],
       "cross_listing_approved": false,
-      "validation_status": "passed: authoritative City record reviewed and exact source bytes measured; awaiting archive-first implementation",
+      "validation_status": "local size and SHA-256 passed; R2 upload verified by HEAD",
       "exclusion_reason": null,
-      "local_path": null,
+      "local_path": "research/staging/queue/src-fc250f15df2ab028.pdf",
       "discovered_at": "2026-08-04T15:02:42.7571538Z",
-      "updated_at": "2026-09-12T15:18:18.0342434Z"
+      "updated_at": "2026-09-12T15:35:39.6504406Z"
     },
     {
       "id": "src-fc31e3142fc4bcc6",

@@ -5,8 +5,8 @@
   "branch": "codex/archive-batch-2026-09-12-b",
   "worktree": "C:\\Users\\ben\\Documents\\ABQinfo\\tmp\\archive-batch-b",
   "base_commit": "bd6d7d84bd8ca4659eb4ce524a0fd2d96a56799f",
-  "state": "download_pending",
-  "updated_at": "2026-09-12T15:18:30Z",
+  "state": "r2_public_verification_pending",
+  "updated_at": "2026-09-12T15:37:00Z",
   "source_research_artifacts": [
     "C:\\Users\\ben\\Documents\\ABQinfo\\project-state\\discovery\\council-documents-cluster-research-2026-09-11.json",
     "C:\\Users\\ben\\Documents\\ABQinfo\\project-state\\discovery\\councilor-district-5-cluster-research-2026-09-11.json"
@@ -48,5 +48,12 @@
     "excluded": 85,
     "inventory_validation": "passed"
   },
-  "next_action": "Download and parse the 15 approved originals, generate the guarded R2 archive plan, archive and publicly verify exact size and SHA-256, then add the 15 canonical entries and six approved cross-listings across the eight planned pages."
+  "decision_artifact": "project-state/discovery/council-records-archive-decisions-2026-09-12.json",
+  "archive_plan": "project-state/discovery/council-records-r2-archive-plan-2026-09-12.json",
+  "public_validation_artifact": "project-state/discovery/council-records-r2-public-validation-2026-09-12.json",
+  "archive_bytes": 14418380,
+  "archive_objects_created": 15,
+  "archive_head_verified": 15,
+  "archive_public_byte_verified": 0,
+  "next_action": "Retry public byte verification after files.abqinfo.com edge propagation. Do not edit site content until all 15 downloads match exact size and SHA-256; then refresh the R2 inventory and add the 15 canonical entries plus six approved cross-listings."
 }
