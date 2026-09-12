@@ -9,6 +9,8 @@ param(
   [switch]$TakeOverExpiredLease,
   [ValidateRange(1,60)][int]$LeaseMinutes=5,
   [string]$LeasePath,
+  [string]$CoordinatorLeasePath,
+  [string]$CoordinatorOwnerToken,
   [string]$UpdateCandidateScript=(Join-Path $PSScriptRoot 'Update-Candidate.ps1'),
   [Parameter(DontShow)][ValidateSet('','after-intent','after-update-before-receipt','after-receipt')][string]$TestInterruptAt=''
 )
@@ -55,7 +57,10 @@ foreach($id in $AcceptedCandidateIds){
 }
 if(-not$Apply){[pscustomobject][ordered]@{campaign_id=$campaign.campaign_id;mode='dry-run';candidates=$operations.Count;operations=@($operations|ForEach-Object{[pscustomobject]@{candidate_id=$_.candidate_id;operation_id=$_.operation_id;updates=$_.updates}})}|ConvertTo-Json -Depth 12;exit 0}
 & git symbolic-ref --quiet HEAD|Out-Null;if($LASTEXITCODE){throw 'Apply mode must run from the coordinator branch.'}
-if(-not$LeasePath){$gitCommon=(& git rev-parse --git-common-dir).Trim();if(-not[IO.Path]::IsPathRooted($gitCommon)){$gitCommon=Join-Path (Get-Location).Path $gitCommon};$LeasePath=Join-Path $gitCommon 'abqinfo-verification-locks/inventory-writer.lock'}
+if(-not$LeasePath -or -not$CoordinatorLeasePath){$gitCommon=(& git rev-parse --git-common-dir).Trim();if(-not[IO.Path]::IsPathRooted($gitCommon)){$gitCommon=Join-Path (Get-Location).Path $gitCommon}}
+if(-not$LeasePath){$LeasePath=Join-Path $gitCommon 'abqinfo-verification-locks/inventory-writer.lock'}
+if(-not$CoordinatorLeasePath){$CoordinatorLeasePath=Join-Path $gitCommon 'abqinfo-verification-locks/campaign-coordinator.lock'}
+Assert-ParallelVerificationCoordinatorLeaseAccess -LeasePath ([IO.Path]::GetFullPath($CoordinatorLeasePath)) -OwnerToken $CoordinatorOwnerToken
 $leaseFull=[IO.Path]::GetFullPath($LeasePath);$leaseParent=Split-Path -Parent $leaseFull;if(-not(Test-Path -LiteralPath $leaseParent)){New-Item -ItemType Directory -Path $leaseParent -Force|Out-Null}
 $leaseStream=$null;$leaseOwned=$false
 try{
@@ -70,8 +75,9 @@ try{
   foreach($operation in $operations){
     $id=[string]$operation.candidate_id;$intentPath=Join-Path $manifestDirectory "integration/intents/$id.json";$receiptPath=Join-Path $manifestDirectory "integration/receipts/$id.json"
     $inventory=Read-ParallelVerificationJson $inventoryFull;$candidate=@($inventory.candidates|Where-Object id -eq $id);if($candidate.Count-ne1){throw "Expected one inventory candidate for $id"};$candidate=$candidate[0]
+    $receiptRecovery=$false;$receipt=$null
     if(Test-Path -LiteralPath $receiptPath){
-      if(-not(Test-Path -LiteralPath $intentPath)){throw "Integration receipt exists without intent: $id"};$intent=Read-ParallelVerificationJson $intentPath;$intentErrors=@(Test-ParallelVerificationIntegrationIntentObject -Intent $intent -Campaign $campaign -Entry $operation.entry -Result $operation.result -Path $intentPath);if($intentErrors.Count){throw "Invalid integration intent for ${id}: $($intentErrors -join '; ')"};$receipt=Read-ParallelVerificationJson $receiptPath;$receiptErrors=@(Test-ParallelVerificationIntegrationReceiptObject -Receipt $receipt -Campaign $campaign -Entry $operation.entry -Result $operation.result -Intent $intent -Path $receiptPath);if($receiptErrors.Count){throw "Invalid integration receipt for ${id}: $($receiptErrors -join '; ')"};if($operation.marker -notin @($candidate.processing_notes)){throw "Receipt exists but operation marker is missing from inventory: $id"};$completed.Add([pscustomobject]@{candidate_id=$id;operation_id=$operation.operation_id;state='already-integrated'});continue
+      if(-not(Test-Path -LiteralPath $intentPath)){throw "Integration receipt exists without intent: $id"};$intent=Read-ParallelVerificationJson $intentPath;$intentErrors=@(Test-ParallelVerificationIntegrationIntentObject -Intent $intent -Campaign $campaign -Entry $operation.entry -Result $operation.result -Path $intentPath);if($intentErrors.Count -or [string]$intent.operation_id-ne[string]$operation.operation_id){throw "Invalid integration intent for ${id}: $($intentErrors -join '; ')"};$receipt=Read-ParallelVerificationJson $receiptPath;$receiptErrors=@(Test-ParallelVerificationIntegrationReceiptObject -Receipt $receipt -Campaign $campaign -Entry $operation.entry -Result $operation.result -Intent $intent -Path $receiptPath);if($receiptErrors.Count){throw "Invalid integration receipt for ${id}: $($receiptErrors -join '; ')"};if($operation.marker -in @($candidate.processing_notes)){$completed.Add([pscustomobject]@{candidate_id=$id;operation_id=$operation.operation_id;state='already-integrated'});continue};if((Get-ParallelVerificationCandidateFingerprint $candidate)-ne[string]$receipt.before_fingerprint_sha256){throw "Receipt exists but inventory is neither the recorded input nor the completed operation: $id"};$receiptRecovery=$true
     }
     $inputFingerprint=Get-ParallelVerificationCandidateFingerprint $candidate;$markerPresent=$operation.marker -in @($candidate.processing_notes)
     if($markerPresent){if(-not(Test-ObjectValues $candidate $operation.updates)){throw "Operation marker exists but intended fields do not match: $id"};$recovery=$true}
@@ -90,6 +96,7 @@ try{
     }
     if($TestInterruptAt-eq'after-update-before-receipt'){throw "Test interruption after update: $id"}
     $updated=Read-ParallelVerificationJson $inventoryFull;$updatedCandidate=@($updated.candidates|Where-Object id -eq $id)[0]
+    if($receiptRecovery){if(-not(Test-ObjectValues $updatedCandidate $operation.updates) -or $operation.marker -notin @($updatedCandidate.processing_notes)){throw "Replayed inventory operation does not match its immutable intent: $id"};$completed.Add([pscustomobject]@{candidate_id=$id;operation_id=$operation.operation_id;state='receipt-replayed'});continue}
     $receiptPayload=[ordered]@{schema_version=1;campaign_id=[string]$campaign.campaign_id;campaign_sha256=[string]$campaign.campaign_sha256;candidate_id=$id;result_sha256=[string]$operation.result.result_sha256;operation_id=[string]$operation.operation_id;completed_at=(Get-Date).ToUniversalTime().ToString('o');before_fingerprint_sha256=[string]$operation.entry.input_fingerprint_sha256;after_fingerprint_sha256=Get-ParallelVerificationCandidateFingerprint $updatedCandidate;recovery=[bool]$recovery}
     $receipt=[ordered]@{};foreach($key in $receiptPayload.Keys){$receipt[$key]=$receiptPayload[$key]};$receipt.receipt_sha256=Get-ParallelVerificationObjectHash $receiptPayload;Write-ParallelVerificationJsonCreateNew $receipt $receiptPath -ReadOnly|Out-Null
     $completed.Add([pscustomobject]@{candidate_id=$id;operation_id=$operation.operation_id;state=if($recovery){'receipt-recovered'}else{'integrated'}})

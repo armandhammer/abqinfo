@@ -166,6 +166,34 @@ Pass it with `-DecisionPath`. The command-line acceptance list remains mandatory
 
 After inventory decisions, the master coordinator performs ordinary ABQInfo editorial work in coherent 15–30-visible-addition PRs. Candidate verification does not itself authorize publication.
 
+## Autonomous campaign rollover
+
+When every assigned candidate has a valid immutable result and all lane leases are released or expired, preview the coordinator transition:
+
+```powershell
+./scripts/project/Invoke-ParallelVerificationCampaignCoordinator.ps1 `
+  -ManifestPath $manifest `
+  -WorktreeRoot 'C:\ABQinfo-campaign-worktrees'
+```
+
+The preview identifies non-passing results that must be escalated and selects the next sorted pending-review range, excluding every candidate reserved by any valid manifest in the campaign root. Selection continues after the completed campaign's highest candidate ID and wraps to the earliest still-unassigned pending record, so earlier gaps cannot be stranded. By default the successor inherits the predecessor's candidate count, microbatch size, and lanes. `-Count`, `-MicrobatchSize`, `-LaneIds`, and `-SuccessorCampaignId` may override those values.
+
+Apply the reviewed transition with:
+
+```powershell
+./scripts/project/Invoke-ParallelVerificationCampaignCoordinator.ps1 `
+  -ManifestPath $manifest `
+  -WorktreeRoot 'C:\ABQinfo-campaign-worktrees' `
+  -Apply `
+  -TakeOverExpiredLease
+```
+
+Apply mode holds a coordinator-wide exclusive lease. It converts only valid failed or incomplete results to `requires human review` through `Merge-ParallelVerificationCampaign.ps1` and its separate inventory-writer lease. On a clean exit, it durably marks that lease released before closing it, so a later coordinator can safely reacquire the same path without a delete/recreate race. Invalid or stale results, unfinished verification, and active or orphaned-unexpired lane leases stop the transition. For a repository-local inventory, the coordinator refuses pre-existing unrelated inventory changes and commits only the coordinator-owned inventory path so the successor has an exact immutable Git snapshot.
+
+The successor uses schema version 2 to hash-bind its predecessor ID and SHA-256. Creating a successor requires the live coordinator lease owner token, closing the race between global non-overlap selection and manifest publication. Its manifest remains create-new and read-only. Exact clean detached worktrees may be reused after an interrupted provisioning pass; conflicting, attached, dirty, or wrong-commit directories are rejected. The active pointer changes atomically only after all lanes are provisioned. The final JSON includes one complete prompt per lane, with the no-integration, no-R2, no-merge, and no-deploy restrictions.
+
+Rerunning the same coordinator command after interruption is idempotent. Existing integration intents and receipts are reconciled, including a safe replay only when a receipt-bearing candidate is exactly back at that receipt's immutable input fingerprint, a matching immutable successor is reused, exact worktrees are resumed, and an already-advanced pointer is accepted only when it names that predecessor-bound successor.
+
 ## Continue and takeover protocol
 
 When the user says **Continue**, either provider must:

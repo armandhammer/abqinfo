@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-09-12T04:07:10.3307403Z",
-  "completed_item_range": "Reviewed, visually verified, archived, publicly byte-verified, and added three City of Albuquerque Complete Streets records totaling 115,852,444 bytes under Transportation > Roadway Projects > Studies. Removed the Campus Transportation block from the Transportation landing page and relocated its UNM/CNM campus mobility links to Transportation > Transit; the existing UNM bicycling-specific listing remains under Transportation > Bicycling. Evidence: project-state/contributed-complete-streets-review-2026-09-11.json and project-state/discovery/contributed-complete-streets-decisions-2026-09-11.json, contributed-complete-streets-r2-archive-plan-2026-09-11.json, and contributed-complete-streets-r2-public-validation-2026-09-11.json.",
+  "recorded_at": "2026-09-12T13:57:08.0163333Z",
+  "completed_item_range": "Reconciled PR 138 with current main after PR 142. Preserved the current 7,077-candidate inventory and all later content/archive history, then semantically integrated all 32 completed autonomous campaign failure results from PR 138 as requires-human-review records with their original operation hashes, verification notes, and failure reasons. Retained the autonomous coordinator implementation and regression documentation. No R2 upload, content change, deployment, or destructive storage action was performed.",
   "total_candidates": 7077,
   "counts_by_status": {
-    "pending review": 2527,
+    "pending review": 2495,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 9,
@@ -16,12 +16,12 @@
     "duplicate": 1469,
     "superseded": 153,
     "blocked": 0,
-    "requires human review": 64
+    "requires human review": 96
   },
-  "remaining_nonterminal": 2716,
+  "remaining_nonterminal": 2684,
   "next_pending_id": "src-049f7958bcc2f6da",
   "blockers": [
     "Four abbreviated-name 2011 GO-bond variants remain requires human review because their version order cannot be established: src-ca2ae8cb1ef13fdf, src-832bc2144296aa51, src-20cca95ec6dcbe4f, and src-9e6cb716ac7c28d9. They were not archived or published."
   ],
-  "resume_command": "After this Campus/Complete Streets PR is merged and production is verified, resume the paused autonomous integration lane with the next routine completed Claude artifact or coherent 15–30-document archive-first batch."
+  "resume_command": "Continue the autonomous ABQInfo archive-and-publish lane from project-state/active-run.json when present; otherwise select the next coherent archive-first batch from the current inventory. Preserve all completed campaign results and unrelated local changes."
 }
