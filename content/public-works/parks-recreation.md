@@ -76,6 +76,14 @@ Parks and recreation facilities and programs.
 
 ## Historical Capital Programming
 
+- [2011 Parks and Recreation General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-2011-parks-recreation-go-bond-project-scopes-published.pdf)
+
+  Details 2011 Parks and Recreation bond scopes for planning, designing, renovating, equipping, and constructing parks, recreation facilities, trails, open space, and related park improvements. [Full 2011 published-scope record](/city-data/capital-spending/#2011-published-scope-and-version-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/parks_and_recreation_scope.pdf)
+
+- [2003 Parks and Recreation General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2003-parks-recreation-go-bond-project-scopes.pdf)
+
+  Details 2003 parks and recreation bond scopes, including a velodrome developed with the Southwest Velodrome Association, park and open-space improvements, recreation facilities, trails, and related equipment purchases. [Full 2003–2004 capital-program record](/city-data/capital-spending/#20032004-general-obligation-bond-program) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/ParksRecreationBonds.pdf)
+
 - [2017 Parks and Recreation General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-2017-parks-recreation-go-bond-project-scopes.pdf)
 
   Details $12.6 million in 2017 scopes for park irrigation renovation, Bosque restoration, golf, open space and park management equipment, Los Altos Pool, recreation facilities, Balloon Fiesta Park, new parks, pool renovation, and forestry rehabilitation. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-2017-2025-parks-recreation-go-bond-summary.pdf) schedules $59.55 million through 2025, adding Cibola Loop, citywide forestry, a regional baseball complex, and Westgate Community Center Park. [Full 2017 capital-program record](/city-data/capital-spending/#2017-general-obligation-bond-program) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/parks-recreation-scope.pdf) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/parks-recreation-summary.pdf)

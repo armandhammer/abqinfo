@@ -18,6 +18,14 @@ ABQ Ride bus service information and data.
 
 ## Facilities and Fleet Planning History
 
+- [2011 ABQ RIDE Transit General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/transportation/transit/cabq-2011-abq-ride-go-bond-project-scopes-published.pdf)
+
+  Details 2011 transit bond scopes for purchasing revenue and support vehicles, acquiring associated equipment, and related ABQ RIDE facility and technology investments. [Full 2011 published-scope record](/city-data/capital-spending/#2011-published-scope-and-version-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/transit_scope.pdf)
+
+- [2003 Public Transportation General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2003-public-transportation-go-bond-project-scopes.pdf)
+
+  Details 2003 transit bond scopes, including the Alvarado Transportation Center depot joint-use facility, bus storage and maintenance equipment, and related transit vehicle and facility investments. [Full 2003–2004 capital-program record](/city-data/capital-spending/#20032004-general-obligation-bond-program) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/PublicTransportation.pdf)
+
 - [2017 ABQ RIDE Transit General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/transportation/transit/cabq-2017-abq-ride-transit-go-bond-project-scopes.pdf)
 
   Details $5.9 million in 2017 transit scopes for revenue and support vehicle replacement, transit facility rehabilitation including the Yale facility stormwater permit, bus stop improvements, transit technology, maintenance equipment, and a high-capacity corridor study leveraging federal matching funds. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/transportation/transit/cabq-2017-2025-abq-ride-transit-go-bond-summary.pdf) schedules $28.341 million through 2025. [Full 2017 capital-program record](/city-data/capital-spending/#2017-general-obligation-bond-program) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/abq-ride-transit-scope.pdf) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/abq-ride-transit-summary.pdf)

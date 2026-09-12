@@ -92,6 +92,10 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
 ## Historical City Capital Plans
 
+- [2011 Storm Drainage General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/stormwater/cabq-2011-storm-drainage-go-bond-project-scopes-published.pdf)
+
+  Details 2011 storm drainage bond scopes for regulatory compliance work, storm drain and pump station rehabilitation, channel and arroyo improvements, water quality facilities, and drainage master planning. [Full 2011 published-scope record](/city-data/capital-spending/#2011-published-scope-and-version-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/storm_drainage_scope.pdf)
+
 - [2017 Storm Drainage General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/stormwater/cabq-2017-storm-drainage-go-bond-project-scopes.pdf)
 
   Details $15 million in 2017 storm-drainage scopes for EPA MS4 permit compliance, Martineztown and Mid-Valley storm drains, Loma Hermosa and South Broadway flooding relief, Kirtland detention, arroyo flash-flood warning, water-quality retrofits, dam emergency plans, and channel stabilization. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/public-works/stormwater/cabq-2017-2025-storm-drainage-go-bond-summary.pdf) schedules $99.78 million through 2025, adding Marble Arno detention, Chelwood Park and Morris storm drains, and Gibson-San Mateo floodplain mitigation. [Full 2017 capital-program record](/city-data/capital-spending/#2017-general-obligation-bond-program) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-storm-drainage-scope.pdf) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-storm-drainage-summary.pdf)
@@ -301,3 +305,71 @@ Technical standards, studies, models, and public references for Albuquerque’s 
   Continues the metropolitan rainfall, runoff, channel-flow, and stormwater-quality record with monitoring methods, station data, hydrographs, precipitation, discharge, and water-quality results for water year 2004.
 
   [Official City Street and Storm Maintenance page](https://www.cabq.gov/municipaldevelopment/our-department/street-and-storm-maintenance) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/storm-drainage-documents/storm-drainage-pdfs/RAINFALLRUNOFFANDWATERQUALITYDATA2004.pdf)
+
+## Development Review Hydrology, Drainage, and Stormwater Standards
+
+- [National Pollutant Discharge Elimination System Manual: Storm Water Management Guidelines for Construction and Industrial Activities, Revision 2 (August 2012) (Archived PDF)](https://files.abqinfo.com/public-works/stormwater/cabq-npdes-storm-water-management-manual-revision-2-2012.pdf)
+
+  The joint manual of the City, NMDOT, and AMAFCA sets storm water management guidelines for construction and industrial activities in the Albuquerque area, covering permit coverage, pollution prevention plans, best management practices, inspection, and reporting.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/Hydrology-NPDESManual.pdf)
+
+- [Enacted Ordinance O-2018-020: Amending the Drainage Ordinance to Implement Best Practices for Management of New Runoff Associated with Land Development (Council Bill C/S O-18-2) (Archived PDF)](https://files.abqinfo.com/public-works/stormwater/cabq-enacted-ordinance-o-2018-020-drainage-runoff-best-practices.pdf)
+
+  The enacted City ordinance adds stormwater quality purposes; defines best management practices, green infrastructure, and the eightieth percentile storm event; and requires on-site management of new runoff.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/Hydro-Bill%20C_S%20O-18-2-Oct-24-18.pdf)
+
+- [Drainage, Flood Control and Erosion Control Governing Regulations Summary (Archived PDF)](https://files.abqinfo.com/public-works/stormwater/cabq-drainage-flood-erosion-governing-regulations-summary.pdf)
+
+  The City summary lists the ordinances, policies, and agency regulations governing drainage, flood control, stormwater quality, and erosion control, including the Drainage Ordinance, Flood Damage Prevention Ordinance, and AMAFCA requirements.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/Drainage_FloodControl_ErosionControl_GoverningRegsSummary.pdf)
+
+- [Requirement for an Erosion and Sediment Control Plan and Permit in the DRC Process, Revision July 2018 (Archived PDF)](https://files.abqinfo.com/public-works/stormwater/cabq-erosion-sediment-control-plan-permit-drc-process-2018.pdf)
+
+  The City sheet sets when construction plans need an approved erosion and sediment control plan or permit, keyed to disturbed acreage, connection to the Rio Grande, site significance, and MS4 permittee status.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/ESC%20plans%20and%20Permit%20in%20DRC%20process%20July2018.pdf)
+
+- [Construction Stormwater Quality Submittal Process, Revision February 7, 2025 (Archived PDF)](https://files.abqinfo.com/public-works/stormwater/cabq-construction-stormwater-quality-submittal-process-2025.pdf)
+
+  The City process sheet sets how construction erosion and sediment control plans and notices of intent are approved before permits issue, and what a request for a determination of site stabilization must contain.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/Construction%20Stormwater%20Quality%20submital%20process.pdf)
+
+- [Stormwater Quality Plan Information Sheet and Inspection Fee Schedule (Archived PDF)](https://files.abqinfo.com/public-works/stormwater/cabq-stormwater-quality-plan-fee-schedule.pdf)
+
+  The City sheet publishes stormwater quality plan review and inspection fees by project type and disturbed acreage for commercial permits, work orders, multi-family projects, and land or infrastructure development.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/SWQ%20Info%20and%20fees.pdf)
+
+- [Three FEMA Processes for Removing a Home or Structure from a Special Flood Hazard Area (Archived PDF)](https://files.abqinfo.com/public-works/stormwater/cabq-fema-three-processes-remove-structure-flood-hazard-area.pdf)
+
+  The City explainer describes Letters of Map Amendment, Letters of Map Revision Based on Fill, and Letters of Map Revision, including their evidence requirements and relative costs.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/FEMAInfo-3WaysToRemoveFromSFHA.pdf)
+
+- [What Are Special Flood Hazard Areas, Also Known as Flood Zones (Archived PDF)](https://files.abqinfo.com/public-works/stormwater/cabq-special-flood-hazard-areas-explainer.pdf)
+
+  The City explainer defines federal flood-zone designations used on Albuquerque maps, from Zone X and levee-protected areas through Zones A, AH, AO, and AE, and identifies when mortgage-related flood insurance is mandatory.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/FEMAInfo-LearnAboutSFHAs.pdf)
+
+- [Special Order 19 Notice to Contractor: Private Drainage Facilities Within City Right-Of-Way, Revision December 2022 (Archived PDF)](https://files.abqinfo.com/transportation/design-references/cabq-special-order-19-private-drainage-facilities-2022.pdf)
+
+  The standard notes require a sidewalk culvert built to City Standard Drawing 2236, a pre-forming meeting, an excavation permit, utility notice, and compliance with construction safety law.
+
+  [Design References placement](/transportation/design-references/#development-review-design-references) · [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/SO%2019%20NOTES%20Rev%2012-2022.pdf)
+
+- [Hydrology Review Fees, 2024 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-hydrology-review-fees-2024.pdf)
+
+  The Planning Department schedule sets 2024 hydrology review charges for grading and drainage plans, drainage reports, plats, and resubmittals, scaled by lot count and including the information-technology surcharge.
+
+  [Development Process placement](/development-land-use/development-process/#development-review-requirements-and-agreements) · [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/Hydro-Trans%20Review%20Fees.pdf)
+
+- [Standard Easement Language for Subdivision Plats: Drainage Facilities and Detention Areas (Archived PDF)](https://files.abqinfo.com/transportation/design-references/cabq-subdivision-plat-drainage-easement-language-2018.pdf)
+
+  The standard plat language defines drainage easements and detention areas, assigns maintenance responsibility, and preserves the perpetual right of storm water conveyance for subdivision lots.
+
+  [Design References placement](/transportation/design-references/#development-review-design-references) · [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/Hydro-Plat%20Drainage%20Easements-10-24-18.pdf)

@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-09-11T03:00:22.1079115Z",
-  "completed_item_range": "Continued and completed both 120-candidate lanes of 2026-09-10-pending-02: 222 passed and 18 failed. The autonomous coordinator recorded all 18 non-passing results as requires human review through its crash-safe inventory writer, committed only project-state/master-inventory.json in 8fd0fac, and created the predecessor-hash-bound successor 2026-09-10-pending-03. A Git worktree progress message exposed a JSON-stream parsing defect during the first rollover attempt; the transition remained recoverable, the planner now suppresses that incidental output, and a disposable real-worktree regression covers it. The active pointer now names pending-03 with clean detached Codex and Claude lanes at 8fd0facc0dce3f5bcb4e1cb73c2328332f8241c7, both 120 candidates remaining. The 17-scenario campaign regression passes. No R2 upload, merge, deployment, or content change was performed.",
-  "total_candidates": 7074,
+  "recorded_at": "2026-09-12T13:57:08.0163333Z",
+  "completed_item_range": "Reconciled PR 138 with current main after PR 142. Preserved the current 7,077-candidate inventory and all later content/archive history, then semantically integrated all 32 completed autonomous campaign failure results from PR 138 as requires-human-review records with their original operation hashes, verification notes, and failure reasons. Retained the autonomous coordinator implementation and regression documentation. No R2 upload, content change, deployment, or destructive storage action was performed.",
+  "total_candidates": 7077,
   "counts_by_status": {
-    "pending review": 2642,
+    "pending review": 2495,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 9,
@@ -11,24 +11,17 @@
     "description drafted": 0,
     "placement assigned": 2,
     "implemented": 178,
-    "validated": 1322,
-    "excluded": 1244,
-    "duplicate": 1443,
-    "superseded": 142,
+    "validated": 1389,
+    "excluded": 1286,
+    "duplicate": 1469,
+    "superseded": 153,
     "blocked": 0,
-    "requires human review": 92
+    "requires human review": 96
   },
-  "remaining_nonterminal": 2831,
+  "remaining_nonterminal": 2684,
   "next_pending_id": "src-049f7958bcc2f6da",
   "blockers": [
-    "The 16-record/eight-page content batch is implemented and validated with authoritative government links; 17 original PDFs totaling 67,526,043 bytes remain pending separate explicit R2 upload approval, including three supporting components of the multipart Downtown Neighborhood plan.",
-    "src-0a39e768262a9380d69d County source returned HTTP 504 twice; no authoritative replacement identified.",
-    "src-0b1642254494f22e must not be archived or visibly used as enacted; canonical source is src-5b9de5b2cda39393.",
-    "src-0e133db868401e77 is PGS Part 2 Chapter 10; reconcile the complete split PGS package before any archival or visible use.",
-    "src-0ee0b959ce0e2a95 is a scanned Trumbull plan compilation; confirm canonical-package and later IDO-replacement relationships before archival or visible use.",
-    "src-0f4496e4073a5e06 and src-0feec7ebf6650e27 are isolated legislative amendment/substitute files; resolve authoritative enacted packages before archival or visible use.",
-    "src-0f5140179b1f087f is only an announcement for the International District Choice Neighborhood final plan; locate the authoritative final plan before visible use.",
-    "src-10209c5fcdce2906 is explicitly a 2026-02-02 draft stormwater BMP package; locate or verify an adopted final version before archival or visible use."
+    "Four abbreviated-name 2011 GO-bond variants remain requires human review because their version order cannot be established: src-ca2ae8cb1ef13fdf, src-832bc2144296aa51, src-20cca95ec6dcbe4f, and src-9e6cb716ac7c28d9. They were not archived or published."
   ],
-  "resume_command": "Continue active 2026-09-10-pending-03 from the immutable active-run pointer in its detached C:\\Users\\ben\\Documents\\ABQinfo-campaign-workers\\2026-09-10-pending-03\\codex and claude lanes. After both complete, rerun the autonomous coordinator to escalate non-passing results and publish the next globally non-overlapping successor. Preserve unrelated local changes. Do not upload to R2, merge, or deploy without explicit approval."
+  "resume_command": "Continue the autonomous ABQInfo archive-and-publish lane from project-state/active-run.json when present; otherwise select the next coherent archive-first batch from the current inventory. Preserve all completed campaign results and unrelated local changes."
 }
