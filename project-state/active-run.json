@@ -5,8 +5,8 @@
   "branch": "codex/archive-batch-2026-09-12-c",
   "worktree": "C:\\Users\\ben\\Documents\\ABQinfo\\tmp\\archive-batch-b",
   "base_commit": "d1d16799fe1c0da73bae6270aaf10e2420a78ca8",
-  "state": "r2_public_verification_pending",
-  "updated_at": "2026-09-12T19:15:00Z",
+  "state": "pr_preview_pending",
+  "updated_at": "2026-09-12T19:20:30Z",
   "candidate_ids": [
     "src-0782d8521e42a068", "src-040d6e306c1c448c", "src-089361e5a66d4fea",
     "src-044a641dbf7991dc", "src-047e8956baad212d", "src-0352ae60169eac10",
@@ -34,7 +34,11 @@
   "source_validation": "15/15 passed",
   "archive_objects_created": 15,
   "archive_head_verified": 15,
-  "archive_public_byte_verified": 8,
+  "archive_public_byte_verified": 15,
   "public_validation_artifact": "project-state/discovery/legacy-direct-source-remediation-r2-public-validation-2026-09-12.json",
-  "next_action": "Retry public byte verification for the seven objects still returning edge-propagation 404 responses. Do not change site links until all 15 public downloads match exact size and SHA-256; then refresh R2 inventory and remediate the legacy links."
+  "r2_inventory_objects": 1117,
+  "r2_inventory_bytes": 8598804453,
+  "site_link_remediations_completed": 15,
+  "validation": "passed: inventory, content style, document-graph regression, parallel-review regression, coordinator regression, retained-source audit, Hugo; 0 errors",
+  "next_action": "Commit and push the completed remediation, then open and verify the focused preview PR."
 }

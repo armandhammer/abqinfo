@@ -1,6 +1,6 @@
 {
-  "recorded_at": "2026-09-12T19:15:00Z",
-  "completed_item_range": "The legacy direct-source remediation batch selected and freshly verified 15 static documents across seven pages, then created 15 new guarded R2 objects totaling 18,330,730 bytes with upload HEAD verification. Eight public archive downloads already match exact size and SHA-256; seven returned temporary edge-propagation 404 responses. No site links have been changed.",
+  "recorded_at": "2026-09-12T19:20:30Z",
+  "completed_item_range": "The legacy direct-source remediation batch freshly verified and archived 15 static documents across seven pages. All 15 public R2 downloads match exact size and SHA-256; the R2 inventory now records 1,117 objects and 8,598,804,453 bytes. All 15 existing direct-source-only site records now use the verified archive as the primary link and retain the official source link. Inventory, content-style, regression, retained-source-audit, and Hugo validation passed with zero errors; preview review remains pending.",
   "total_candidates": 7077,
   "counts_by_status": {
     "pending review": 2338,
@@ -23,5 +23,5 @@
   "blockers": [
     "Four abbreviated-name 2011 GO-bond variants remain requires human review because their version order cannot be established: src-ca2ae8cb1ef13fdf, src-832bc2144296aa51, src-20cca95ec6dcbe4f, and src-9e6cb716ac7c28d9. They were not archived or published."
   ],
-  "resume_command": "In C:\\Users\\ben\\Documents\\ABQinfo\\tmp\\archive-batch-b on codex/archive-batch-2026-09-12-c, rerun scripts/project/Test-R2ArchivePlan.ps1 for project-state/discovery/legacy-direct-source-remediation-r2-plan-2026-09-12.json using the existing public-validation artifact. Do not change site links until all 15 public downloads match exact size and SHA-256."
+  "resume_command": "In C:\\Users\\ben\\Documents\\ABQinfo\\tmp\\archive-batch-b on codex/archive-batch-2026-09-12-c, commit and push the completed remediation, then open and verify the focused preview PR."
 }

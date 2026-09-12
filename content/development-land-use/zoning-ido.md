@@ -28,9 +28,11 @@ Current zoning tools and a preserved history of Albuquerque's Integrated Develop
 
 ## Planning and Regulatory Context
 
-- [Legalization of Cannabis in New Mexico: Planning Commissioner Workshop (2021 official PDF)](https://www.mrcog-nm.gov/DocumentCenter/View/5452/2021-Legalization-of-Cannabis-Planning-Commissioner-Workshop-PDF)
+- [Legalization of Cannabis in New Mexico: Planning Commissioner Workshop (2021 Archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/mrcog-cannabis-planning-commissioner-workshop-2021.pdf)
 
   Explains the 2021 Cannabis Regulation Act for local planners, covering licenses, local time-place-manner authority, limits on municipal restrictions, taxation, employment, and implementation deadlines.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/5452/2021-Legalization-of-Cannabis-Planning-Commissioner-Workshop-PDF) · [Current Regional Planning Workshops and Training](https://www.mrcog-nm.gov/637/Regional-Planning-Workshops-and-Training)
 
 ## Old Town Regulatory Review
 

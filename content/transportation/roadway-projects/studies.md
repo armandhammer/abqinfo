@@ -100,9 +100,11 @@ Transportation studies and reports.
 
 ### Girard Boulevard
 
-- [Girard Boulevard Existing Conditions Assessment (2012 official PDF)](https://www.cabq.gov/council/documents/complete-streets/Girard_ExistingConditions_Aug23.pdf)
+- [Girard Boulevard Existing Conditions Assessment (2012 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-girard-existing-conditions-assessment-2012.pdf)
 
   Maps and illustrates corridor conditions between Indian School Road and Constitution Avenue, including roadway width, medians, parking demand, sidewalks, pedestrian safety, and accessibility constraints that informed later complete-street planning.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/complete-streets/Girard_ExistingConditions_Aug23.pdf)
 
 - [Official City Project Page](https://www.cabq.gov/council/projects/neighborhood-projects/girard-boulevard-complete-streets-master-plan)
 
