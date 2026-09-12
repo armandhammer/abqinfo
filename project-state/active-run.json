@@ -5,8 +5,8 @@
   "branch": "codex/archive-batch-2026-09-12-d",
   "worktree": "C:\\Users\\ben\\Documents\\ABQinfo\\tmp\\archive-batch-b",
   "base_commit": "74f1bf4555612fac18e43c90e8789a8a4e902b66",
-  "state": "claimed",
-  "updated_at": "2026-09-13T00:05:00Z",
+  "state": "r2_archive_ready",
+  "updated_at": "2026-09-13T00:15:00Z",
   "source_artifacts": [
     "project-state/discovery/go2009-bond-cluster-research-2026-09-11.json",
     "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json"
@@ -36,5 +36,13 @@
     "content/development-land-use/development-process.md"
   ],
   "policy": "Integrate completed classification evidence first, then freshly verify authoritative sources, download originals, compare versions and hashes, and archive only the 15 selected qualified static documents.",
-  "next_action": "Integrate the completed 2009 bond and DPM minutes research artifacts, confirm all 15 selected records remain qualified and distinct, then build the guarded R2 archive plan."
+  "research_integration": "75 candidate decisions integrated: 35 from the 2009 bond cluster and 40 from the DPM minutes/chapter review",
+  "source_validation": "15/15 passed",
+  "archive_bytes": 737040,
+  "projected_r2_bytes": 8599541493,
+  "size_warnings_over_25mb": 0,
+  "archive_decisions": "project-state/discovery/go2009-dpm-minutes-15-archive-decisions-2026-09-12.json",
+  "archive_plan": "project-state/discovery/go2009-dpm-minutes-15-r2-plan-2026-09-12.json",
+  "source_validation_artifact": "project-state/discovery/go2009-dpm-minutes-15-source-validation-2026-09-12.json",
+  "next_action": "Run the guarded R2 archive plan, verify every public download against exact size and SHA-256, refresh R2 inventory, then implement the 15 records across the three planned pages."
 }
