@@ -6,6 +6,26 @@ Transportation studies and reports.
 
 ## City Corridor and Neighborhood Studies
 
+### Annual Complete Streets Maintenance Program
+
+- [4th Street Complete Streets Review: Menaul Boulevard to Candelaria Road (August 2025 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-4th-street-complete-streets-review-2025.pdf)
+
+  Evaluates 4th Street from Menaul to Candelaria for maintenance-era restriping, comparing existing dimensions and bikeway alternatives, explaining policy and design constraints, and identifying planning priorities without presenting a final engineered design.
+
+  [Current City Complete Streets Program](https://www.cabq.gov/vision-zero/what-are-we-doing)
+
+- [FY 2025 Complete Streets Package 1 Updates (Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-fy2025-complete-streets-package-1-updates.pdf)
+
+  Preserves City restriping concept sheets for Chappell Drive, Hanover Road, and Indian School Road, showing proposed lane, parking, bicycle, bus-stop, curb-paint, and intersection changes over aerial basemaps and surveyed roadway dimensions.
+
+  [Current City Complete Streets Program](https://www.cabq.gov/vision-zero/what-are-we-doing)
+
+- [FY 2026–2027 City of Albuquerque Complete Streets Package (Final Signed, May 29, 2026 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-fy2026-2027-complete-streets-package-final-signed.pdf)
+
+  Combines signed City restriping plans for eight Albuquerque corridors with WSP existing-conditions memoranda for Five Points/Goff, Gonzales, San Mateo, and Wyoming, documenting proposed multimodal layouts, field conditions, traffic, crashes, transit, and implementation constraints.
+
+  [Current City Complete Streets Program](https://www.cabq.gov/vision-zero/what-are-we-doing)
+
 ### 98th Street and Benavides Road
 
 - [Intersection Assessment — Part 1 (2019 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-98th-benavides-intersection-assessment-part-1-2019.pdf)

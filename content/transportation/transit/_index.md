@@ -6,6 +6,20 @@ Public transit services and data.
 
 Use the service pages for current rider information and the Transportation Plans section for regional transit planning. Schedules, fares, alerts, and eligibility rules change frequently, so this site links to the agencies that maintain them rather than duplicating them.
 
+## Campus Transportation Connections
+
+- [UNM Sustainable Transportation](https://sustainability.unm.edu/campus/transportation.html)
+
+  Brings together current Albuquerque-campus bicycling resources, bike racks and lockers, the 2025-26 bike-valet pilot, ABQ RIDE and Rail Runner connections, campus shuttles, electric-vehicle charging, and nearby electric car sharing.
+
+  [UNM Bike Valet Program](https://pats.unm.edu/alternative-transport/bike-valet-program.html) · [UNM Electric-Vehicle Charging Locations](https://pats.unm.edu/parking/electric-vehicle-charging.html)
+
+- [CNM Main Campus Transportation and Parking](https://www.cnm.edu/depts/parking-and-fleet-services)
+
+  Provides current CNM Main Campus parking, visitor access, ParkMobile, public-transportation, ride-hailing, bicycle-rack, electric-vehicle charging, accessibility, traffic-rule, and interactive-map information for students, employees, and visitors.
+
+  [CNM Main Campus Map](https://files.abqinfo.com/maps/cnm-main-campus-map-2026.pdf) · [Interactive CNM Campus Map](https://map.concept3d.com/?id=1934)
+
 ## Regional Transit Planning and History
 
 - [Rio Metro / ABQ RIDE Consolidation Study Final Report (2025)](https://files.abqinfo.com/transportation/transit/rio-metro-abq-ride-consolidation-study-final-2025.pdf)
