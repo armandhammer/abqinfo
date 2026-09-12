@@ -1,6 +1,6 @@
 {
-  "recorded_at": "2026-09-12T14:39:30Z",
-  "completed_item_range": "Completed the archive-first implementation of the 15-document Planning UDD batch from the Claude research artifact. Integrated all 30 reviewed UDD decisions (15 approved, 6 superseded, 9 excluded), archived 15 authoritative originals totaling 72,742,787 bytes, verified every public R2 download by exact size and SHA-256, refreshed the R2 inventory, and added the 15 documents with official-source links and reviewed descriptions across City Facilities, Metropolitan Redevelopment Plans, and Development Process. Full repository validation passed; PR creation and preview review are next.",
+  "recorded_at": "2026-09-12T14:54:30Z",
+  "completed_item_range": "PR 143 completed the 15-document Planning UDD batch: 15 authoritative originals totaling 72,742,787 bytes were archived and publicly verified byte-for-byte; all 15 records were deployed across City Facilities, Metropolitan Redevelopment Plans, and Development Process after full validation and preview review. Production deployment f3dc4bd7 succeeded and all exact headings and titles were confirmed on abqinfo.com. The next 15-document Council records batch is claimed on codex/archive-batch-2026-09-12-b.",
   "total_candidates": 7077,
   "counts_by_status": {
     "pending review": 2465,
@@ -23,5 +23,5 @@
   "blockers": [
     "Four abbreviated-name 2011 GO-bond variants remain requires human review because their version order cannot be established: src-ca2ae8cb1ef13fdf, src-832bc2144296aa51, src-20cca95ec6dcbe4f, and src-9e6cb716ac7c28d9. They were not archived or published."
   ],
-  "resume_command": "In C:\\Users\\ben\\Documents\\ABQinfo\\tmp\\development-review-pr on codex/archive-batch-2026-09-12-a, read project-state/active-run.json, commit and push the completed Planning UDD batch, open a focused PR, verify its temporary deployment and checks, merge if healthy, confirm production, then claim the next archive-first batch."
+  "resume_command": "In C:\\Users\\ben\\Documents\\ABQinfo\\tmp\\archive-batch-b on codex/archive-batch-2026-09-12-b, read project-state/active-run.json and integrate the two completed Council research artifacts before downloading and archiving the 15 approved originals. Preserve the root workspace and its untracked Claude artifacts."
 }
