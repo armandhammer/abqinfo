@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-12T19:42:30.8655456Z",
+  "generated_at": "2026-09-12T23:48:02.9641002Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,7 +18,7 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 2339,
+    "pending review": 2324,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 9,
@@ -27,9 +27,9 @@
     "placement assigned": 2,
     "implemented": 178,
     "validated": 1419,
-    "excluded": 1380,
+    "excluded": 1381,
     "duplicate": 1477,
-    "superseded": 160,
+    "superseded": 174,
     "blocked": 0,
     "requires human review": 115
   },
@@ -99413,7 +99413,7 @@
     },
     {
       "id": "src-48a50c9d60ec65d2",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-9/district-9/resolveuid/f5c3abcf22f44c0f868f1f51a12cb5cb",
       "direct_file_url": null,
       "r2_url": null,
@@ -99431,18 +99431,20 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "City HTTP-404 targeted source-replacement resolution, integrated 2026-09-12: authoritative retirement without replacement: Current District 9 Councilor Page. Fresh review found the proposed expense-page successor returning HTTP 404. The current official District 9 page returned HTTP 200 but contains no expense link, and the official City search returned no District 9 expense record. The retired page therefore has no current authoritative replacement."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "passed: authoritative retirement documented after fresh official-page and City-search review; historical failed URL preserved",
+      "exclusion_reason": "Retired authoritative page; no current District 9 expense record is exposed by the official District 9 page or official City search.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.1086221Z",
-      "updated_at": "2026-08-04T12:37:50.1086221Z",
+      "updated_at": "2026-09-12T23:47:17.1851806Z",
       "referring_urls": [
-        "https://www.cabq.gov/council/find-your-councilor/albuquerque-city-councilors/resolveuid/8e93ca8214ac434993ec947c6d75e4c7"
+        "https://www.cabq.gov/council/find-your-councilor/albuquerque-city-councilors/resolveuid/8e93ca8214ac434993ec947c6d75e4c7",
+        "https://www.cabq.gov/council/find-your-councilor/district-9"
       ],
       "parent_url": "https://www.cabq.gov/council/find-your-councilor/albuquerque-city-councilors/resolveuid/8e93ca8214ac434993ec947c6d75e4c7",
       "discovery_path": [],
@@ -115243,9 +115245,9 @@
     },
     {
       "id": "src-55c375edefc1bcce",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/resolveuid/1a48582592a14f438388bf43e3eee600",
-      "direct_file_url": null,
+      "direct_file_url": "https://codelibrary.amlegal.com/codes/albuquerque/latest/albuqcharter/0-0-0-1",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -115261,25 +115263,29 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "City HTTP-404 targeted source-replacement resolution, integrated 2026-09-12: current City-published codified text: Charter of the City of Albuquerque. The City routes current codified law to the American Legal library; the library's Albuquerque Charter is the current full text."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "passed: exact authoritative successor or authoritative supersession recorded; completed failed verification result preserved in processing notes",
+      "exclusion_reason": "Superseded by authoritative successor or authoritative supersession: Charter of the City of Albuquerque. The City routes current codified law to the American Legal library; the library's Albuquerque Charter is the current full text.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.1801321Z",
-      "updated_at": "2026-08-04T12:37:50.1801321Z",
+      "updated_at": "2026-09-12T23:47:11.3770333Z",
       "referring_urls": [
-        "https://www.cabq.gov/council/council-old"
+        "https://www.cabq.gov/council/council-old",
+        "https://codelibrary.amlegal.com/codes/albuquerque/latest/albuqcharter/0-0-0-1"
       ],
       "parent_url": "https://www.cabq.gov/council/council-old",
       "discovery_path": [],
       "discovery_method": null,
       "crawl_depth": 2,
       "cited_predecessors": [],
-      "cited_successors": [],
+      "cited_successors": [
+        "https://codelibrary.amlegal.com/codes/albuquerque/latest/albuqcharter/0-0-0-1"
+      ],
       "provenance_status": "authoritative government source recorded"
     },
     {
@@ -128137,9 +128143,9 @@
     },
     {
       "id": "src-604a1a0a869074c5",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://documents.cabq.gov/planning/IDO/FORM%20DRWS.pdf",
-      "direct_file_url": "https://documents.cabq.gov/planning/IDO/FORM%20DRWS.pdf",
+      "direct_file_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/DRAINAGE%20AND%20TRANSPORTATION%20APPLICATION.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -128152,7 +128158,8 @@
       "checksum_sha256": null,
       "parent_url": "https://documents.cabq.gov/planning/IDO/",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/IDO/"
+        "https://documents.cabq.gov/planning/IDO/",
+        "https://documents.cabq.gov/planning/DevelopmentReviewServices/DRAINAGE%20AND%20TRANSPORTATION%20APPLICATION.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -128163,23 +128170,26 @@
       "discovery_method": "authored document link",
       "crawl_depth": 3,
       "cited_predecessors": [],
-      "cited_successors": [],
+      "cited_successors": [
+        "https://documents.cabq.gov/planning/DevelopmentReviewServices/DRAINAGE%20AND%20TRANSPORTATION%20APPLICATION.pdf"
+      ],
       "provenance_status": "authoritative government source recorded",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "City HTTP-404 targeted source-replacement resolution, integrated 2026-09-12: current functional form successor: Drainage and Transportation Information Sheet (DTIS), rev. 04/03/2024. The current City DTIS replaces the retired drainage-review worksheet delivery file."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "passed: exact authoritative successor or authoritative supersession recorded; completed failed verification result preserved in processing notes",
+      "exclusion_reason": "Superseded by authoritative successor or authoritative supersession: Drainage and Transportation Information Sheet (DTIS), rev. 04/03/2024. The current City DTIS replaces the retired drainage-review worksheet delivery file.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:45:05.9602777Z",
-      "updated_at": "2026-08-04T14:45:05.9602777Z"
+      "updated_at": "2026-09-12T23:46:46.5068503Z"
     },
     {
       "id": "src-604af568fd253bbc",
@@ -137820,9 +137830,9 @@
     },
     {
       "id": "src-679dee4385066639",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/frequently-asked-questions-faq/frequently-asked-questions-faq/resolveuid/View.ashx?M=M&ID=1423924&GUID=80E30194-1336-4A28-B223-7570CC810900",
-      "direct_file_url": null,
+      "direct_file_url": "https://abq.legistar.com/View.ashx?M=M&ID=1423924&GUID=80E30194-1336-4A28-B223-7570CC810900",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -137838,25 +137848,29 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "City HTTP-404 targeted source-replacement resolution, integrated 2026-09-12: exact City-linked Legistar artifact: Minutes — President — August 3, 2026. The original meeting identifier and GUID resolve at the City-linked Legistar endpoint."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "passed: exact authoritative successor or authoritative supersession recorded; completed failed verification result preserved in processing notes",
+      "exclusion_reason": "Superseded by authoritative successor or authoritative supersession: Minutes — President — August 3, 2026. The original meeting identifier and GUID resolve at the City-linked Legistar endpoint.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.1381333Z",
-      "updated_at": "2026-08-04T12:37:50.1381333Z",
+      "updated_at": "2026-09-12T23:47:56.7154188Z",
       "referring_urls": [
-        "https://www.cabq.gov/council/frequently-asked-questions-faq/frequently-asked-questions-faq/resolveuid/0f79af7b5c4f40036f5f6fe3facb8090"
+        "https://www.cabq.gov/council/frequently-asked-questions-faq/frequently-asked-questions-faq/resolveuid/0f79af7b5c4f40036f5f6fe3facb8090",
+        "https://abq.legistar.com/View.ashx?M=M&ID=1423924&GUID=80E30194-1336-4A28-B223-7570CC810900"
       ],
       "parent_url": "https://www.cabq.gov/council/frequently-asked-questions-faq/frequently-asked-questions-faq/resolveuid/0f79af7b5c4f40036f5f6fe3facb8090",
       "discovery_path": [],
       "discovery_method": null,
       "crawl_depth": 3,
       "cited_predecessors": [],
-      "cited_successors": [],
+      "cited_successors": [
+        "https://abq.legistar.com/View.ashx?M=M&ID=1423924&GUID=80E30194-1336-4A28-B223-7570CC810900"
+      ],
       "provenance_status": "authoritative government source recorded"
     },
     {
@@ -155091,9 +155105,9 @@
     },
     {
       "id": "src-76d394e1753791e7",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/frequently-asked-questions-faq/frequently-asked-questions-faq/resolveuid/View.ashx?M=A&ID=1430999&GUID=9AB0CF1B-BE2A-439E-8983-E91E10728DD6",
-      "direct_file_url": null,
+      "direct_file_url": "https://abq.legistar.com/View.ashx?M=A&ID=1430999&GUID=9AB0CF1B-BE2A-439E-8983-E91E10728DD6",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -155109,25 +155123,29 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "City HTTP-404 targeted source-replacement resolution, integrated 2026-09-12: exact City-linked Legistar artifact: Agenda — City Council — meeting ID 1430999. The original agenda identifier and GUID are preserved in the City-linked Legistar delivery URL."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "passed: exact authoritative successor or authoritative supersession recorded; completed failed verification result preserved in processing notes",
+      "exclusion_reason": "Superseded by authoritative successor or authoritative supersession: Agenda — City Council — meeting ID 1430999. The original agenda identifier and GUID are preserved in the City-linked Legistar delivery URL.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.1331325Z",
-      "updated_at": "2026-08-04T12:37:50.1331325Z",
+      "updated_at": "2026-09-12T23:47:34.253431Z",
       "referring_urls": [
-        "https://www.cabq.gov/council/frequently-asked-questions-faq/frequently-asked-questions-faq/resolveuid/0f79af7b5c4f40036f5f6fe3facb8090"
+        "https://www.cabq.gov/council/frequently-asked-questions-faq/frequently-asked-questions-faq/resolveuid/0f79af7b5c4f40036f5f6fe3facb8090",
+        "https://abq.legistar.com/View.ashx?M=A&ID=1430999&GUID=9AB0CF1B-BE2A-439E-8983-E91E10728DD6"
       ],
       "parent_url": "https://www.cabq.gov/council/frequently-asked-questions-faq/frequently-asked-questions-faq/resolveuid/0f79af7b5c4f40036f5f6fe3facb8090",
       "discovery_path": [],
       "discovery_method": null,
       "crawl_depth": 3,
       "cited_predecessors": [],
-      "cited_successors": [],
+      "cited_successors": [
+        "https://abq.legistar.com/View.ashx?M=A&ID=1430999&GUID=9AB0CF1B-BE2A-439E-8983-E91E10728DD6"
+      ],
       "provenance_status": "authoritative government source recorded"
     },
     {
@@ -196276,9 +196294,9 @@
     },
     {
       "id": "src-986b4f8a29648df8",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/View.ashx?M=A&ID=1423923&GUID=F6C64B05-743B-42B8-9A92-8E97899947F7",
-      "direct_file_url": null,
+      "direct_file_url": "https://abq.legistar.com/View.ashx?M=A&ID=1423923&GUID=F6C64B05-743B-42B8-9A92-8E97899947F7",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -196294,25 +196312,29 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "City HTTP-404 targeted source-replacement resolution, integrated 2026-09-12: exact City-linked Legistar artifact: Agenda — City Council — August 3, 2026. The original meeting identifier and GUID resolve at the City-linked Legistar endpoint."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "passed: exact authoritative successor or authoritative supersession recorded; completed failed verification result preserved in processing notes",
+      "exclusion_reason": "Superseded by authoritative successor or authoritative supersession: Agenda — City Council — August 3, 2026. The original meeting identifier and GUID resolve at the City-linked Legistar endpoint.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.1811324Z",
-      "updated_at": "2026-08-04T12:37:50.1811324Z",
+      "updated_at": "2026-09-12T23:47:39.7465726Z",
       "referring_urls": [
-        "https://www.cabq.gov/council/agendas-minutes-legislation"
+        "https://www.cabq.gov/council/agendas-minutes-legislation",
+        "https://abq.legistar.com/View.ashx?M=A&ID=1423923&GUID=F6C64B05-743B-42B8-9A92-8E97899947F7"
       ],
       "parent_url": "https://www.cabq.gov/council/agendas-minutes-legislation",
       "discovery_path": [],
       "discovery_method": null,
       "crawl_depth": 2,
       "cited_predecessors": [],
-      "cited_successors": [],
+      "cited_successors": [
+        "https://abq.legistar.com/View.ashx?M=A&ID=1423923&GUID=F6C64B05-743B-42B8-9A92-8E97899947F7"
+      ],
       "provenance_status": "authoritative government source recorded"
     },
     {
@@ -200500,9 +200522,9 @@
     },
     {
       "id": "src-9bf85f625461a3e7",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://documents.cabq.gov/planning/IDO/FormA.pdf",
-      "direct_file_url": "https://documents.cabq.gov/planning/IDO/FormA.pdf",
+      "direct_file_url": "https://documents.cabq.gov/planning/online-forms/SITE%20PLAN_ADMINISTRATIVE_DFT_CHECKLIST.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -200515,7 +200537,8 @@
       "checksum_sha256": null,
       "parent_url": "https://documents.cabq.gov/planning/IDO/",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/IDO/"
+        "https://documents.cabq.gov/planning/IDO/",
+        "https://documents.cabq.gov/planning/online-forms/SITE%20PLAN_ADMINISTRATIVE_DFT_CHECKLIST.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -200526,23 +200549,26 @@
       "discovery_method": "authored document link",
       "crawl_depth": 3,
       "cited_predecessors": [],
-      "cited_successors": [],
+      "cited_successors": [
+        "https://documents.cabq.gov/planning/online-forms/SITE%20PLAN_ADMINISTRATIVE_DFT_CHECKLIST.pdf"
+      ],
       "provenance_status": "authoritative government source recorded",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "City HTTP-404 targeted source-replacement resolution, integrated 2026-09-12: current functional form successor: Checklist for Site Plan – Administrative (DFT) Application. The current City administrative site-plan checklist succeeds the retired Form A application path."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "passed: exact authoritative successor or authoritative supersession recorded; completed failed verification result preserved in processing notes",
+      "exclusion_reason": "Superseded by authoritative successor or authoritative supersession: Checklist for Site Plan – Administrative (DFT) Application. The current City administrative site-plan checklist succeeds the retired Form A application path.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:45:05.7098001Z",
-      "updated_at": "2026-08-04T14:45:05.7098001Z"
+      "updated_at": "2026-09-12T23:46:53.1958672Z"
     },
     {
       "id": "src-9bfc5f6b20b1d942",
@@ -215953,9 +215979,9 @@
     },
     {
       "id": "src-a9d35011d01f9bcc",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/frequently-asked-questions-faq/frequently-asked-questions-faq/resolveuid/View.ashx?M=AADA&ID=1423923&GUID=F6C64B05-743B-42B8-9A92-8E97899947F7",
-      "direct_file_url": null,
+      "direct_file_url": "https://abq.legistar.com/View.ashx?M=AADA&ID=1423923&GUID=F6C64B05-743B-42B8-9A92-8E97899947F7",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -215971,25 +215997,29 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "City HTTP-404 targeted source-replacement resolution, integrated 2026-09-12: exact City-linked Legistar artifact: Accessible Agenda — City Council — August 3, 2026. The original meeting identifier and GUID resolve at the City-linked Legistar endpoint."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "passed: exact authoritative successor or authoritative supersession recorded; completed failed verification result preserved in processing notes",
+      "exclusion_reason": "Superseded by authoritative successor or authoritative supersession: Accessible Agenda — City Council — August 3, 2026. The original meeting identifier and GUID resolve at the City-linked Legistar endpoint.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.1331325Z",
-      "updated_at": "2026-08-04T12:37:50.1331325Z",
+      "updated_at": "2026-09-12T23:47:28.6731062Z",
       "referring_urls": [
-        "https://www.cabq.gov/council/frequently-asked-questions-faq/frequently-asked-questions-faq/resolveuid/0f79af7b5c4f40036f5f6fe3facb8090"
+        "https://www.cabq.gov/council/frequently-asked-questions-faq/frequently-asked-questions-faq/resolveuid/0f79af7b5c4f40036f5f6fe3facb8090",
+        "https://abq.legistar.com/View.ashx?M=AADA&ID=1423923&GUID=F6C64B05-743B-42B8-9A92-8E97899947F7"
       ],
       "parent_url": "https://www.cabq.gov/council/frequently-asked-questions-faq/frequently-asked-questions-faq/resolveuid/0f79af7b5c4f40036f5f6fe3facb8090",
       "discovery_path": [],
       "discovery_method": null,
       "crawl_depth": 3,
       "cited_predecessors": [],
-      "cited_successors": [],
+      "cited_successors": [
+        "https://abq.legistar.com/View.ashx?M=AADA&ID=1423923&GUID=F6C64B05-743B-42B8-9A92-8E97899947F7"
+      ],
       "provenance_status": "authoritative government source recorded"
     },
     {
@@ -240497,9 +240527,9 @@
     },
     {
       "id": "src-beb7c181e83a4581",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/View.ashx?M=MADA&ID=1423924&GUID=80E30194-1336-4A28-B223-7570CC810900",
-      "direct_file_url": null,
+      "direct_file_url": "https://abq.legistar.com/View.ashx?M=MADA&ID=1423924&GUID=80E30194-1336-4A28-B223-7570CC810900",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -240515,25 +240545,29 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "City HTTP-404 targeted source-replacement resolution, integrated 2026-09-12: exact City-linked Legistar artifact: Accessible Minutes — President — August 3, 2026. The original meeting identifier and GUID resolve at the City-linked Legistar endpoint."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "passed: exact authoritative successor or authoritative supersession recorded; completed failed verification result preserved in processing notes",
+      "exclusion_reason": "Superseded by authoritative successor or authoritative supersession: Accessible Minutes — President — August 3, 2026. The original meeting identifier and GUID resolve at the City-linked Legistar endpoint.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.1861315Z",
-      "updated_at": "2026-08-04T12:37:50.1861315Z",
+      "updated_at": "2026-09-12T23:47:45.6113378Z",
       "referring_urls": [
-        "https://www.cabq.gov/council/agendas-minutes-legislation"
+        "https://www.cabq.gov/council/agendas-minutes-legislation",
+        "https://abq.legistar.com/View.ashx?M=MADA&ID=1423924&GUID=80E30194-1336-4A28-B223-7570CC810900"
       ],
       "parent_url": "https://www.cabq.gov/council/agendas-minutes-legislation",
       "discovery_path": [],
       "discovery_method": null,
       "crawl_depth": 2,
       "cited_predecessors": [],
-      "cited_successors": [],
+      "cited_successors": [
+        "https://abq.legistar.com/View.ashx?M=MADA&ID=1423924&GUID=80E30194-1336-4A28-B223-7570CC810900"
+      ],
       "provenance_status": "authoritative government source recorded"
     },
     {
@@ -250486,9 +250520,9 @@
     },
     {
       "id": "src-c72de192669a59ff",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/frequently-asked-questions-faq/frequently-asked-questions-faq/resolveuid/View.ashx?M=MADA&ID=1423924&GUID=80E30194-1336-4A28-B223-7570CC810900",
-      "direct_file_url": null,
+      "direct_file_url": "https://abq.legistar.com/View.ashx?M=MADA&ID=1423924&GUID=80E30194-1336-4A28-B223-7570CC810900",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -250504,25 +250538,29 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "City HTTP-404 targeted source-replacement resolution, integrated 2026-09-12: exact City-linked Legistar artifact: Accessible Minutes — President — August 3, 2026. The original meeting identifier and GUID resolve at the City-linked Legistar endpoint."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "passed: exact authoritative successor or authoritative supersession recorded; completed failed verification result preserved in processing notes",
+      "exclusion_reason": "Superseded by authoritative successor or authoritative supersession: Accessible Minutes — President — August 3, 2026. The original meeting identifier and GUID resolve at the City-linked Legistar endpoint.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.1391329Z",
-      "updated_at": "2026-08-04T12:37:50.1391329Z",
+      "updated_at": "2026-09-12T23:47:50.9906318Z",
       "referring_urls": [
-        "https://www.cabq.gov/council/frequently-asked-questions-faq/frequently-asked-questions-faq/resolveuid/0f79af7b5c4f40036f5f6fe3facb8090"
+        "https://www.cabq.gov/council/frequently-asked-questions-faq/frequently-asked-questions-faq/resolveuid/0f79af7b5c4f40036f5f6fe3facb8090",
+        "https://abq.legistar.com/View.ashx?M=MADA&ID=1423924&GUID=80E30194-1336-4A28-B223-7570CC810900"
       ],
       "parent_url": "https://www.cabq.gov/council/frequently-asked-questions-faq/frequently-asked-questions-faq/resolveuid/0f79af7b5c4f40036f5f6fe3facb8090",
       "discovery_path": [],
       "discovery_method": null,
       "crawl_depth": 3,
       "cited_predecessors": [],
-      "cited_successors": [],
+      "cited_successors": [
+        "https://abq.legistar.com/View.ashx?M=MADA&ID=1423924&GUID=80E30194-1336-4A28-B223-7570CC810900"
+      ],
       "provenance_status": "authoritative government source recorded"
     },
     {
@@ -274243,9 +274281,9 @@
     },
     {
       "id": "src-da58675bd758153b",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/ntmp-policy-final-2015-lowres.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/2020-ntmp-manual.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -274258,7 +274296,8 @@
       "checksum_sha256": null,
       "parent_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/",
       "referring_urls": [
-        "https://www.cabq.gov/neighborhood-traffic-management-program/documents/"
+        "https://www.cabq.gov/neighborhood-traffic-management-program/documents/",
+        "https://www.cabq.gov/neighborhood-traffic-management-program/documents/2020-ntmp-manual.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -274270,23 +274309,26 @@
       "discovery_method": "authored relevant link",
       "crawl_depth": 3,
       "cited_predecessors": [],
-      "cited_successors": [],
+      "cited_successors": [
+        "https://www.cabq.gov/neighborhood-traffic-management-program/documents/2020-ntmp-manual.pdf"
+      ],
       "provenance_status": "authoritative government source recorded",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "City HTTP-404 targeted source-replacement resolution, integrated 2026-09-12: authoritative adopted supersession: Neighborhood Traffic Management Program Manual (2020). The City's 2020 manual expressly states it updates the 2015 NTMP manual; the official program page identifies it as adopted by Council in October 2020."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "passed: exact authoritative successor or authoritative supersession recorded; completed failed verification result preserved in processing notes",
+      "exclusion_reason": "Superseded by authoritative successor or authoritative supersession: Neighborhood Traffic Management Program Manual (2020). The City's 2020 manual expressly states it updates the 2015 NTMP manual; the official program page identifies it as adopted by Council in October 2020.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.457314Z",
-      "updated_at": "2026-08-04T14:15:58.457314Z"
+      "updated_at": "2026-09-12T23:48:02.4705195Z"
     },
     {
       "id": "src-da5e1983716179b9",
@@ -277146,9 +277188,9 @@
     },
     {
       "id": "src-dcd9efab9f61c678",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://www.cabq.gov/council/View.ashx?M=AADA&ID=1423923&GUID=F6C64B05-743B-42B8-9A92-8E97899947F7",
-      "direct_file_url": null,
+      "direct_file_url": "https://abq.legistar.com/View.ashx?M=AADA&ID=1423923&GUID=F6C64B05-743B-42B8-9A92-8E97899947F7",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -277164,25 +277206,29 @@
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "City HTTP-404 targeted source-replacement resolution, integrated 2026-09-12: exact City-linked Legistar artifact: Accessible Agenda — City Council — August 3, 2026. The original meeting identifier and GUID resolve at the City-linked Legistar endpoint."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "passed: exact authoritative successor or authoritative supersession recorded; completed failed verification result preserved in processing notes",
+      "exclusion_reason": "Superseded by authoritative successor or authoritative supersession: Accessible Agenda — City Council — August 3, 2026. The original meeting identifier and GUID resolve at the City-linked Legistar endpoint.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.1821322Z",
-      "updated_at": "2026-08-04T12:37:50.1821322Z",
+      "updated_at": "2026-09-12T23:47:23.0597721Z",
       "referring_urls": [
-        "https://www.cabq.gov/council/agendas-minutes-legislation"
+        "https://www.cabq.gov/council/agendas-minutes-legislation",
+        "https://abq.legistar.com/View.ashx?M=AADA&ID=1423923&GUID=F6C64B05-743B-42B8-9A92-8E97899947F7"
       ],
       "parent_url": "https://www.cabq.gov/council/agendas-minutes-legislation",
       "discovery_path": [],
       "discovery_method": null,
       "crawl_depth": 2,
       "cited_predecessors": [],
-      "cited_successors": [],
+      "cited_successors": [
+        "https://abq.legistar.com/View.ashx?M=AADA&ID=1423923&GUID=F6C64B05-743B-42B8-9A92-8E97899947F7"
+      ],
       "provenance_status": "authoritative government source recorded"
     },
     {
@@ -287818,9 +287864,9 @@
     },
     {
       "id": "src-e61acca0cb8e6c9f",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://documents.cabq.gov/planning/IDO/FormP2.pdf",
-      "direct_file_url": "https://documents.cabq.gov/planning/IDO/FormP2.pdf",
+      "direct_file_url": "https://documents.cabq.gov/planning/development-facilitation-team/Form%20SP.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -287833,7 +287879,8 @@
       "checksum_sha256": null,
       "parent_url": "https://documents.cabq.gov/planning/IDO/",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/IDO/"
+        "https://documents.cabq.gov/planning/IDO/",
+        "https://documents.cabq.gov/planning/development-facilitation-team/Form%20SP.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -287844,23 +287891,26 @@
       "discovery_method": "authored document link",
       "crawl_depth": 3,
       "cited_predecessors": [],
-      "cited_successors": [],
+      "cited_successors": [
+        "https://documents.cabq.gov/planning/development-facilitation-team/Form%20SP.pdf"
+      ],
       "provenance_status": "authoritative government source recorded",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "City HTTP-404 targeted source-replacement resolution, integrated 2026-09-12: current functional form successor: Form SP: Pre-Approvals/Signatures, revised 12/2025. The current City site-plan pre-approvals form supersedes retired Form P2; the 2020 DPM identifies Form P2 as Site Plan application material."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "passed: exact authoritative successor or authoritative supersession recorded; completed failed verification result preserved in processing notes",
+      "exclusion_reason": "Superseded by authoritative successor or authoritative supersession: Form SP: Pre-Approvals/Signatures, revised 12/2025. The current City site-plan pre-approvals form supersedes retired Form P2; the 2020 DPM identifies Form P2 as Site Plan application material.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:45:05.5375776Z",
-      "updated_at": "2026-08-04T14:45:05.5375776Z"
+      "updated_at": "2026-09-12T23:47:05.4641465Z"
     },
     {
       "id": "src-e61dd483047d37b8",
@@ -294486,9 +294536,9 @@
     },
     {
       "id": "src-eb2f81701f018eda",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://documents.cabq.gov/planning/IDO/FormP1.pdf",
-      "direct_file_url": "https://documents.cabq.gov/planning/IDO/FormP1.pdf",
+      "direct_file_url": "https://documents.cabq.gov/planning/development-facilitation-team/Form%20SP.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -294501,7 +294551,8 @@
       "checksum_sha256": null,
       "parent_url": "https://documents.cabq.gov/planning/IDO/",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/IDO/"
+        "https://documents.cabq.gov/planning/IDO/",
+        "https://documents.cabq.gov/planning/development-facilitation-team/Form%20SP.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -294512,23 +294563,26 @@
       "discovery_method": "authored document link",
       "crawl_depth": 3,
       "cited_predecessors": [],
-      "cited_successors": [],
+      "cited_successors": [
+        "https://documents.cabq.gov/planning/development-facilitation-team/Form%20SP.pdf"
+      ],
       "provenance_status": "authoritative government source recorded",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "City HTTP-404 targeted source-replacement resolution, integrated 2026-09-12: current functional form successor: Form SP: Pre-Approvals/Signatures, revised 12/2025. The current City site-plan pre-approvals form supersedes retired Form P1; the 2020 DPM identifies Form P1 as Site Plan application material."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "passed: exact authoritative successor or authoritative supersession recorded; completed failed verification result preserved in processing notes",
+      "exclusion_reason": "Superseded by authoritative successor or authoritative supersession: Form SP: Pre-Approvals/Signatures, revised 12/2025. The current City site-plan pre-approvals form supersedes retired Form P1; the 2020 DPM identifies Form P1 as Site Plan application material.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:45:06.1117625Z",
-      "updated_at": "2026-08-04T14:45:06.1117625Z"
+      "updated_at": "2026-09-12T23:46:59.6312691Z"
     },
     {
       "id": "src-eb39149f50c9fa29",
@@ -294801,9 +294855,9 @@
     },
     {
       "id": "src-eb603aee4ee75c80",
-      "status": "pending review",
+      "status": "superseded",
       "source_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/City%20Engineers%20Unit%20Price.pdf",
-      "direct_file_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/City%20Engineers%20Unit%20Price.pdf",
+      "direct_file_url": "https://documents.cabq.gov/planning/DesignReviewServices/DRC2018/City%20Engineers%20Unit%20Price%20Update%202023%20FINAL.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -294816,7 +294870,8 @@
       "checksum_sha256": null,
       "parent_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/",
       "referring_urls": [
-        "https://documents.cabq.gov/planning/DevelopmentReviewServices/"
+        "https://documents.cabq.gov/planning/DevelopmentReviewServices/",
+        "https://documents.cabq.gov/planning/DesignReviewServices/DRC2018/City%20Engineers%20Unit%20Price%20Update%202023%20FINAL.pdf"
       ],
       "discovery_path": [
         "https://www.cabq.gov/bikes/biking-in-abq",
@@ -294827,23 +294882,26 @@
       "discovery_method": "authored document link",
       "crawl_depth": 3,
       "cited_predecessors": [],
-      "cited_successors": [],
+      "cited_successors": [
+        "https://documents.cabq.gov/planning/DesignReviewServices/DRC2018/City%20Engineers%20Unit%20Price%20Update%202023%20FINAL.pdf"
+      ],
       "provenance_status": "authoritative government source recorded",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "City HTTP-404 targeted source-replacement resolution, integrated 2026-09-12: City-hosted document successor: City Engineers Unit Price Update 2023 FINAL. The 2023 City-hosted update is the authoritative successor to the retired unit-price PDF."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "passed: exact authoritative successor or authoritative supersession recorded; completed failed verification result preserved in processing notes",
+      "exclusion_reason": "Superseded by authoritative successor or authoritative supersession: City Engineers Unit Price Update 2023 FINAL. The 2023 City-hosted update is the authoritative successor to the retired unit-price PDF.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:45:06.6710258Z",
-      "updated_at": "2026-08-04T14:45:06.6710258Z"
+      "updated_at": "2026-09-12T23:46:40.5230791Z"
     },
     {
       "id": "src-eb67d0897e1b7829",
