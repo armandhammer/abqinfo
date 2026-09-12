@@ -1,10 +1,10 @@
 {
-  "recorded_at": "2026-09-12T14:54:30Z",
-  "completed_item_range": "PR 143 completed the 15-document Planning UDD batch: 15 authoritative originals totaling 72,742,787 bytes were archived and publicly verified byte-for-byte; all 15 records were deployed across City Facilities, Metropolitan Redevelopment Plans, and Development Process after full validation and preview review. Production deployment f3dc4bd7 succeeded and all exact headings and titles were confirmed on abqinfo.com. The next 15-document Council records batch is claimed on codex/archive-batch-2026-09-12-b.",
+  "recorded_at": "2026-09-12T15:18:30Z",
+  "completed_item_range": "PR 143 remains production-verified. For the next Council records batch, deterministically integrated 127 decisions from the completed Council flat-level and District 5 research artifacts: 15 approved for addition, 8 duplicate, 19 requires human review, and 85 excluded. Inventory validation passes. The 15 approved originals are claimed for archive-first implementation across eight pages.",
   "total_candidates": 7077,
   "counts_by_status": {
-    "pending review": 2465,
-    "approved for addition": 0,
+    "pending review": 2338,
+    "approved for addition": 15,
     "downloading": 0,
     "downloaded": 9,
     "parsed": 0,
@@ -12,16 +12,16 @@
     "placement assigned": 2,
     "implemented": 178,
     "validated": 1404,
-    "excluded": 1295,
-    "duplicate": 1469,
+    "excluded": 1380,
+    "duplicate": 1477,
     "superseded": 159,
     "blocked": 0,
-    "requires human review": 96
+    "requires human review": 115
   },
-  "remaining_nonterminal": 2654,
+  "remaining_nonterminal": 2542,
   "next_pending_id": "src-049f7958bcc2f6da",
   "blockers": [
     "Four abbreviated-name 2011 GO-bond variants remain requires human review because their version order cannot be established: src-ca2ae8cb1ef13fdf, src-832bc2144296aa51, src-20cca95ec6dcbe4f, and src-9e6cb716ac7c28d9. They were not archived or published."
   ],
-  "resume_command": "In C:\\Users\\ben\\Documents\\ABQinfo\\tmp\\archive-batch-b on codex/archive-batch-2026-09-12-b, read project-state/active-run.json and integrate the two completed Council research artifacts before downloading and archiving the 15 approved originals. Preserve the root workspace and its untracked Claude artifacts."
+  "resume_command": "In C:\\Users\\ben\\Documents\\ABQinfo\\tmp\\archive-batch-b on codex/archive-batch-2026-09-12-b, read project-state/active-run.json, download and parse its 15 candidate IDs, then build and execute a guarded R2 archive plan. Do not add site content until all public R2 downloads match exact size and SHA-256."
 }

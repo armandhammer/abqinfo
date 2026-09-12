@@ -5,8 +5,8 @@
   "branch": "codex/archive-batch-2026-09-12-b",
   "worktree": "C:\\Users\\ben\\Documents\\ABQinfo\\tmp\\archive-batch-b",
   "base_commit": "bd6d7d84bd8ca4659eb4ce524a0fd2d96a56799f",
-  "state": "research_integration_pending",
-  "updated_at": "2026-09-12T14:54:30Z",
+  "state": "download_pending",
+  "updated_at": "2026-09-12T15:18:30Z",
   "source_research_artifacts": [
     "C:\\Users\\ben\\Documents\\ABQinfo\\project-state\\discovery\\council-documents-cluster-research-2026-09-11.json",
     "C:\\Users\\ben\\Documents\\ABQinfo\\project-state\\discovery\\councilor-district-5-cluster-research-2026-09-11.json"
@@ -40,5 +40,13 @@
     "content/transportation/roadway-projects/_index.md",
     "content/transportation/safety-crash-data.md"
   ],
-  "next_action": "Integrate both completed Claude research artifacts through deterministic inventory updates, preserving every terminal and version decision. Download, parse, and archive the 15 approved originals; verify public R2 size and SHA-256 before adding the 15 canonical entries and six approved cross-listings across the eight planned pages."
+  "research_integration": {
+    "reviewed": 127,
+    "approved_for_addition": 15,
+    "duplicate": 8,
+    "requires_human_review": 19,
+    "excluded": 85,
+    "inventory_validation": "passed"
+  },
+  "next_action": "Download and parse the 15 approved originals, generate the guarded R2 archive plan, archive and publicly verify exact size and SHA-256, then add the 15 canonical entries and six approved cross-listings across the eight planned pages."
 }
