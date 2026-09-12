@@ -1,22 +1,40 @@
 {
   "schema_version": 1,
-  "type": "retained-source-descendant-audit",
-  "batch_id": "council-project-source-audit-2026-09-12",
+  "type": "archive-remediation-batch",
+  "batch_id": "legacy-direct-source-remediation-2026-09-12",
   "branch": "codex/archive-batch-2026-09-12-c",
   "worktree": "C:\\Users\\ben\\Documents\\ABQinfo\\tmp\\archive-batch-b",
   "base_commit": "d1d16799fe1c0da73bae6270aaf10e2420a78ca8",
-  "state": "claimed_selection_pending",
-  "updated_at": "2026-09-12T18:43:00Z",
-  "source_queue": "project-state/discovery/retained-source-audit-queue.json",
-  "batch_manifest": "project-state/discovery/council-project-source-audit-batch-2026-09-12.json",
-  "source_count": 15,
-  "target_pages": [
-    "content/public-works/parks-recreation.md",
-    "content/development-land-use/projects.md",
-    "content/development-land-use/area-sector-plans.md",
-    "content/transportation/roadway-projects/studies.md",
-    "content/transportation/roadway-projects/_index.md",
-    "content/transportation/roadway-projects/speed-management.md"
+  "state": "r2_public_verification_pending",
+  "updated_at": "2026-09-12T19:15:00Z",
+  "candidate_ids": [
+    "src-0782d8521e42a068", "src-040d6e306c1c448c", "src-089361e5a66d4fea",
+    "src-044a641dbf7991dc", "src-047e8956baad212d", "src-0352ae60169eac10",
+    "src-087842cdf31bbd1c", "src-06dce4ce29536831", "src-08682b53cc068b7b",
+    "src-09dd52f2c537c57d", "src-097f7d99750de64c", "src-55c6440c25460701",
+    "src-58313c79df87ded3", "src-4d3fcb3be20cebb0", "src-bafbc17c9bf37553"
   ],
-  "next_action": "Run deterministic descendant discovery for the 15 claimed City Council project sources, reconcile discovered static documents against the master inventory, and select a coherent 15–30-document archive-and-publish batch without changing site content before public R2 verification."
+  "archive_documents": 15,
+  "planned_visible_link_remediations": 15,
+  "pages": [
+    "content/city-data/capital-spending.md",
+    "content/development-land-use/development-process.md",
+    "content/development-land-use/zoning-ido.md",
+    "content/public-works/parks-recreation.md",
+    "content/public-works/stormwater-drainage.md",
+    "content/transportation/roadway-projects/studies.md",
+    "content/transportation/transportation-plans.md"
+  ],
+  "decision_artifact": "project-state/discovery/legacy-direct-source-remediation-decisions-2026-09-12.json",
+  "archive_plan": "project-state/discovery/legacy-direct-source-remediation-r2-plan-2026-09-12.json",
+  "source_validation_artifact": "project-state/discovery/legacy-direct-source-remediation-source-validation-2026-09-12.json",
+  "archive_bytes": 18330730,
+  "projected_r2_bytes": 8598804453,
+  "size_warnings_over_25mb": 0,
+  "source_validation": "15/15 passed",
+  "archive_objects_created": 15,
+  "archive_head_verified": 15,
+  "archive_public_byte_verified": 8,
+  "public_validation_artifact": "project-state/discovery/legacy-direct-source-remediation-r2-public-validation-2026-09-12.json",
+  "next_action": "Retry public byte verification for the seven objects still returning edge-propagation 404 responses. Do not change site links until all 15 public downloads match exact size and SHA-256; then refresh R2 inventory and remediate the legacy links."
 }
