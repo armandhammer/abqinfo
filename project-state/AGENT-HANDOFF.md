@@ -1,5 +1,13 @@
 # ABQInfo multi-provider agent handoff protocol
 
+## Claude checkpointed consolidation-research lane — active September 13, 2026
+
+Claude's next work is the queue in `project-state/discovery/claude-consolidation-research-queue-2026-09-13.json`. This is a research-only lane supporting Codex's approved site cleanup. Work slices in ascending `priority` order and continue automatically until the queue is complete or a systemic blocker occurs.
+
+Checkpoint after **every document or official-source meeting check**, not merely at the end of a slice. Write only within the queue's unique `research/staging/claude-consolidation-checkpoints/<slice>/items/` directories and the named self-contained slice-result artifacts. Complete each JSON through a temporary sibling and rename it atomically. Before doing work, scan existing checkpoints; a valid result is immutable and must never be repeated. If usage stops, the next Claude session resumes at the first missing document in the lowest-priority unfinished slice.
+
+For every annual committee-minutes slice, exhaustively check the official calendar/archive for missing approved minutes, cancellations, no-quorum meetings, and agendas eligible under the missing-minutes policy. For every program slice, review the complete source family, version relationships, governing records, page order, proposed contents, and whether a compilation would exceed 100-150 pages. Do not edit shared inventory, project checkpoint, site content, R2 state, Git state, or deployment state. Codex alone integrates accepted research.
+
 This protocol lets Codex, Claude, or another approved coding agent continue ABQInfo work without losing provenance, validation evidence, or Git history. It is intentionally provider-neutral: the repository and GitHub are the shared source of truth, not a chat transcript.
 
 ## Non-negotiable rules

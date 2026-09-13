@@ -1,0 +1,1276 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-13T16:15:20.3713067Z",
+  "source_commit": "121a517e38e6a2447e98ef81aa5e515d900cfce5",
+  "purpose": "Checkpointed research supporting sparse historical-document consolidation; research only, with no inventory, R2, site, Git, PR, merge, or deployment writes.",
+  "resume_rule": "Always scan the immutable per-document checkpoint paths and completed slice-result paths. Resume at the first missing assigned document in the lowest-priority unfinished slice. Never repeat a valid completed checkpoint.",
+  "checkpoint_rule": "Write one complete JSON result immediately after each document or official-source meeting check. Use a temporary sibling file and rename only after valid JSON is complete. After every slice, write its self-contained slice result before starting another slice.",
+  "required_document_result_fields": [
+    "slice_id",
+    "candidate_id",
+    "reviewed_at",
+    "title_on_document",
+    "date_on_document",
+    "page_count",
+    "size_bytes",
+    "checksum_sha256",
+    "official_source_checked",
+    "official_source_url",
+    "archive_url",
+    "visual_inspection_completed",
+    "substantive_summary",
+    "series_relationship",
+    "version_relationship",
+    "recommended_compilation_section",
+    "quality_recommendation",
+    "evidence",
+    "unresolved_questions"
+  ],
+  "required_slice_result_fields": [
+    "slice_id",
+    "completed_at",
+    "assigned_ids",
+    "completed_checkpoint_paths",
+    "official_source_family_reviewed",
+    "missing_records_checked",
+    "missing_records_results",
+    "ordered_members",
+    "total_pages",
+    "total_bytes",
+    "proposed_compilation_title",
+    "proposed_table_of_contents",
+    "recommended_publication_form",
+    "provenance_notes",
+    "unresolved_questions"
+  ],
+  "safeguards": [
+    "Claude research lane only",
+    "preserve every original and inventory history",
+    "no static document approved merely because it is authoritative",
+    "no inventory edits",
+    "no checkpoint edits outside assigned checkpoint tree",
+    "no R2 writes",
+    "no content edits",
+    "no Git operations",
+    "no PR, merge, or deployment"
+  ],
+  "slice_count": 22,
+  "assigned_document_count": 139,
+  "slices": [
+    {
+      "slice_id": "dpm-2014",
+      "priority": 10,
+      "title": "DPM Executive Committee Minutes 2014",
+      "kind": "annual committee minutes compilation research",
+      "assigned_documents": [
+        {
+          "candidate_id": "src-c8a6a02c203d0cd2",
+          "date": "2014-07-16",
+          "title": "Development Process Manual Executive Committee Minutes, July 16, 2014",
+          "source_url": "https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-july-16-2014.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2014-07-16.pdf"
+        },
+        {
+          "candidate_id": "src-087842cdf31bbd1c",
+          "date": "2014-09-24",
+          "title": "Development Process Executive Committee Minutes, September 24, 2014",
+          "source_url": "https://documents.cabq.gov/planning/development-process-manual/",
+          "archive_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2014-09-24.pdf"
+        },
+        {
+          "candidate_id": "src-ea48e98a01589ffb",
+          "date": "2014-12-17",
+          "title": "Development Process Manual Executive Committee Minutes, December 17, 2014",
+          "source_url": "https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-dec-17-2014.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2014-12-17.pdf"
+        }
+      ],
+      "completeness_scope": "Exhaustively review the official DPM source for every scheduled 2014 meeting; identify missing approved minutes, cancellations, no-quorum meetings, agendas eligible under the missing-minutes policy, exact chronological order, and total compilation pages.",
+      "per_document_checkpoint_directory": "research/staging/claude-consolidation-checkpoints/dpm-2014/items",
+      "slice_result_path": "project-state/discovery/claude-consolidation-dpm-2014-2026-09-13.json"
+    },
+    {
+      "slice_id": "dpm-2015",
+      "priority": 11,
+      "title": "DPM Executive Committee Minutes 2015",
+      "kind": "annual committee minutes compilation research",
+      "assigned_documents": [
+        {
+          "candidate_id": "src-73f9afbcaae5d8d2",
+          "date": "2015-12-16",
+          "title": "Development Process Manual Executive Committee Minutes, December 16, 2015",
+          "source_url": "https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-dec-16-2015.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2015-12-16.pdf"
+        }
+      ],
+      "completeness_scope": "Exhaustively review the official DPM source for every scheduled 2015 meeting; identify missing approved minutes, cancellations, no-quorum meetings, agendas eligible under the missing-minutes policy, exact chronological order, and total compilation pages.",
+      "per_document_checkpoint_directory": "research/staging/claude-consolidation-checkpoints/dpm-2015/items",
+      "slice_result_path": "project-state/discovery/claude-consolidation-dpm-2015-2026-09-13.json"
+    },
+    {
+      "slice_id": "dpm-2016",
+      "priority": 12,
+      "title": "DPM Executive Committee Minutes 2016",
+      "kind": "annual committee minutes compilation research",
+      "assigned_documents": [
+        {
+          "candidate_id": "src-ca86eefe82a821c3",
+          "date": "2016-09-07",
+          "title": "Development Process Manual Executive Committee Minutes, September 7, 2016",
+          "source_url": "https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-sept-7-2016.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-09-07.pdf"
+        },
+        {
+          "candidate_id": "src-21dc013c982971a3",
+          "date": "2016-10-19",
+          "title": "Development Process Manual Executive Committee Minutes, October 19, 2016",
+          "source_url": "https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-oct-19-2016.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-10-19.pdf"
+        }
+      ],
+      "completeness_scope": "Exhaustively review the official DPM source for every scheduled 2016 meeting; identify missing approved minutes, cancellations, no-quorum meetings, agendas eligible under the missing-minutes policy, exact chronological order, and total compilation pages.",
+      "per_document_checkpoint_directory": "research/staging/claude-consolidation-checkpoints/dpm-2016/items",
+      "slice_result_path": "project-state/discovery/claude-consolidation-dpm-2016-2026-09-13.json"
+    },
+    {
+      "slice_id": "dpm-2017",
+      "priority": 13,
+      "title": "DPM Executive Committee Minutes 2017",
+      "kind": "annual committee minutes compilation research",
+      "assigned_documents": [
+        {
+          "candidate_id": "src-ea47d347422e2570",
+          "date": "2017-01-18",
+          "title": "Development Process Manual Executive Committee Minutes, January 18, 2017",
+          "source_url": "https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-jan-18-2017.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-01-18.pdf"
+        },
+        {
+          "candidate_id": "src-bbaad13a047c342c",
+          "date": "2017-02-01",
+          "title": "Development Process Manual Executive Committee Minutes, February 1, 2017",
+          "source_url": "https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-feb-1-2017.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-02-01.pdf"
+        },
+        {
+          "candidate_id": "src-573093423a1bbd50",
+          "date": "2017-03-01",
+          "title": "Development Process Manual Executive Committee Minutes, March 1, 2017",
+          "source_url": "https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-march-1-2017.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-03-01.pdf"
+        },
+        {
+          "candidate_id": "src-14ba4769fc9b04aa",
+          "date": "2017-04-19",
+          "title": "Development Process Manual Executive Committee Minutes, April 19, 2017",
+          "source_url": "https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-april-19-2017.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-04-19.pdf"
+        },
+        {
+          "candidate_id": "src-c134c414b9f229c1",
+          "date": "2017-05-03",
+          "title": "Development Process Manual Executive Committee Minutes, May 3, 2017",
+          "source_url": "https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-may-3-2017.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-05-03.pdf"
+        },
+        {
+          "candidate_id": "src-79f0672eaab3eca0",
+          "date": "2017-05-17",
+          "title": "Development Process Manual Executive Committee Minutes, May 17, 2017",
+          "source_url": "https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-may-17-2017.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-05-17.pdf"
+        },
+        {
+          "candidate_id": "src-5340531bfdbbe7fb",
+          "date": "2017-06-21",
+          "title": "Development Process Manual Executive Committee Minutes, June 21, 2017",
+          "source_url": "https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-june-21-2017.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-06-21.pdf"
+        },
+        {
+          "candidate_id": "src-fd0a98e661a8db31",
+          "date": "2017-09-06",
+          "title": "Development Process Manual Executive Committee Minutes, September 6, 2017",
+          "source_url": "https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-sept-6-2017.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-09-06.pdf"
+        },
+        {
+          "candidate_id": "src-adfd6742a595ccf6",
+          "date": "2017-10-04",
+          "title": "Development Process Manual Executive Committee Minutes, October 4, 2017",
+          "source_url": "https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-oct-4-2017.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-10-04.pdf"
+        },
+        {
+          "candidate_id": "src-808550f86ef1cf0e",
+          "date": "2017-11-15",
+          "title": "Development Process Manual Executive Committee Minutes, November 15, 2017",
+          "source_url": "https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-nov-15-2017.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-11-15.pdf"
+        }
+      ],
+      "completeness_scope": "Exhaustively review the official DPM source for every scheduled 2017 meeting; identify missing approved minutes, cancellations, no-quorum meetings, agendas eligible under the missing-minutes policy, exact chronological order, and total compilation pages.",
+      "per_document_checkpoint_directory": "research/staging/claude-consolidation-checkpoints/dpm-2017/items",
+      "slice_result_path": "project-state/discovery/claude-consolidation-dpm-2017-2026-09-13.json"
+    },
+    {
+      "slice_id": "dpm-2018",
+      "priority": 14,
+      "title": "DPM Executive Committee Minutes 2018",
+      "kind": "annual committee minutes compilation research",
+      "assigned_documents": [
+        {
+          "candidate_id": "src-c2f91d09003c2cbe",
+          "date": "2018-02-07",
+          "title": "Development Process Manual Executive Committee Minutes, February 7, 2018",
+          "source_url": "https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-feb-7-2018.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2018-02-07.pdf"
+        },
+        {
+          "candidate_id": "src-74c9ef9734483c29",
+          "date": "2018-02-21",
+          "title": "Development Process Manual Executive Committee Minutes, February 21, 2018",
+          "source_url": "https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-feb-21-2018.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2018-02-21.pdf"
+        },
+        {
+          "candidate_id": "src-58104015e9620a4d",
+          "date": "2018-03-07",
+          "title": "Development Process Manual Executive Committee Minutes, March 7, 2018",
+          "source_url": "https://documents.cabq.gov/planning/development-process-manual/development-process-manual-march-7-2018-executive-committee-minutes.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2018-03-07.pdf"
+        }
+      ],
+      "completeness_scope": "Exhaustively review the official DPM source for every scheduled 2018 meeting; identify missing approved minutes, cancellations, no-quorum meetings, agendas eligible under the missing-minutes policy, exact chronological order, and total compilation pages.",
+      "per_document_checkpoint_directory": "research/staging/claude-consolidation-checkpoints/dpm-2018/items",
+      "slice_result_path": "project-state/discovery/claude-consolidation-dpm-2018-2026-09-13.json"
+    },
+    {
+      "slice_id": "2003-general-obligation-bond-program-master-record",
+      "priority": 20,
+      "title": "2003 General Obligation Bond Program Master Record",
+      "kind": "historical program compilation research",
+      "assigned_documents": [
+        {
+          "candidate_id": "src-57a1e412247c863d",
+          "date": "2003",
+          "title": "2003 General Obligation Bond Funding Allocation Chart",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/FundingAllocationChart.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2003-go-bond-funding-allocation-chart.pdf"
+        },
+        {
+          "candidate_id": "src-3dfd629f27870dc1",
+          "date": "2003",
+          "title": "2003 General Obligation Bond Rehabilitation, Maintenance, and Deficiency Remediation Summary",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/RehabMaintSumm.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2003-go-bond-rehabilitation-maintenance-deficiency-summary.pdf"
+        },
+        {
+          "candidate_id": "src-888427a6abc5edf0",
+          "date": "2003",
+          "title": "2003 Library General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/LibraryBonds.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2003-library-go-bond-project-scopes.pdf"
+        },
+        {
+          "candidate_id": "src-ea516f826e5da86a",
+          "date": "2003",
+          "title": "2003 Police General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/PoliceBonds.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2003-police-go-bond-project-scopes.pdf"
+        },
+        {
+          "candidate_id": "src-e7cd892adf805950",
+          "date": "2003",
+          "title": "2003 Public Transportation General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/PublicTransportation.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2003-public-transportation-go-bond-project-scopes.pdf"
+        }
+      ],
+      "completeness_scope": "Review the complete official source family, not only assigned members. Identify omitted components, final/initial version relationships, duplicates, governing resolutions, chronological or topical order, section titles, and whether the compilation should be split before 100-150 pages.",
+      "per_document_checkpoint_directory": "research/staging/claude-consolidation-checkpoints/2003-general-obligation-bond-program-master-record/items",
+      "slice_result_path": "project-state/discovery/claude-consolidation-2003-general-obligation-bond-program-master-record-2026-09-13.json"
+    },
+    {
+      "slice_id": "2004-street-bond-program-history",
+      "priority": 21,
+      "title": "2004 Street Bond Program History",
+      "kind": "historical program compilation research",
+      "assigned_documents": [
+        {
+          "candidate_id": "src-a58b458f5d0f5284",
+          "date": "2004-11-02",
+          "title": "2004 Street Bond Ballot Question",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2004-bond-documents/StreetBondQuestion.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2004-street-bond-ballot-question.pdf"
+        }
+      ],
+      "completeness_scope": "Review the complete official source family, not only assigned members. Identify omitted components, final/initial version relationships, duplicates, governing resolutions, chronological or topical order, section titles, and whether the compilation should be split before 100-150 pages.",
+      "per_document_checkpoint_directory": "research/staging/claude-consolidation-checkpoints/2004-street-bond-program-history/items",
+      "slice_result_path": "project-state/discovery/claude-consolidation-2004-street-bond-program-history-2026-09-13.json"
+    },
+    {
+      "slice_id": "2009-general-obligation-bond-program-master-record",
+      "priority": 22,
+      "title": "2009 General Obligation Bond Program Master Record",
+      "kind": "historical program compilation research",
+      "assigned_documents": [
+        {
+          "candidate_id": "src-e69e9150b150bc1a",
+          "date": "2009",
+          "title": "2009 Fire General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/fire_-_scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/public-safety/cabq-2009-fire-go-bond-project-scopes.pdf"
+        },
+        {
+          "candidate_id": "src-768a6855fcfaf443",
+          "date": "2009",
+          "title": "2009 Library General Obligation Bond Authorization",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/library_bonds.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2009-library-go-bond-authorization.pdf"
+        },
+        {
+          "candidate_id": "src-5603714dac7351ba",
+          "date": "2009",
+          "title": "2009 Police General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/police_-_scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/public-safety/cabq-2009-police-go-bond-project-scopes.pdf"
+        },
+        {
+          "candidate_id": "src-b049c4df2812749b",
+          "date": "2009",
+          "title": "2009 Public Safety General Obligation Bond Authorization",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/public_safety_bonds.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/public-safety/cabq-2009-public-safety-go-bond-authorization.pdf"
+        },
+        {
+          "candidate_id": "src-7567c5f27fceba0a",
+          "date": "2009",
+          "title": "2009 Senior, Family, Community Center, and Community Enhancement Project Bond Authorization",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/senior_family_community_center_community_enhancement_project_bonds.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2009-senior-family-community-center-community-enhancement-bond-authorization.pdf"
+        },
+        {
+          "candidate_id": "src-0352ae60169eac10",
+          "date": "2009",
+          "title": "Family and Community Services 2009 General Obligation Bond Scope",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/family_and_community_services_-_scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-family-community-services-bond-scope-2009.pdf"
+        },
+        {
+          "candidate_id": "src-cb27c408e8c26a66",
+          "date": "2009–2017",
+          "title": "2009–2017 Council Neighborhood Set-Aside General Obligation Bond Summary",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/council_sas_-_summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2009-2017-council-neighborhood-set-aside-go-bond-summary.pdf"
+        },
+        {
+          "candidate_id": "src-b7ef66c741b8a886",
+          "date": "2009–2017",
+          "title": "2009–2017 Fire General Obligation Bond Summary",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/fire_-_summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/public-safety/cabq-2009-2017-fire-go-bond-summary.pdf"
+        },
+        {
+          "candidate_id": "src-535234f371b3922c",
+          "date": "2009–2017",
+          "title": "2009–2017 Police General Obligation Bond Summary",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/police_-_summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/public-safety/cabq-2009-2017-police-go-bond-summary.pdf"
+        }
+      ],
+      "completeness_scope": "Review the complete official source family, not only assigned members. Identify omitted components, final/initial version relationships, duplicates, governing resolutions, chronological or topical order, section titles, and whether the compilation should be split before 100-150 pages.",
+      "per_document_checkpoint_directory": "research/staging/claude-consolidation-checkpoints/2009-general-obligation-bond-program-master-record/items",
+      "slice_result_path": "project-state/discovery/claude-consolidation-2009-general-obligation-bond-program-master-record-2026-09-13.json"
+    },
+    {
+      "slice_id": "2011-general-obligation-bond-program-master-record",
+      "priority": 23,
+      "title": "2011 General Obligation Bond Program Master Record",
+      "kind": "historical program compilation research",
+      "assigned_documents": [
+        {
+          "candidate_id": "src-b37593a011f57fae",
+          "date": "2011",
+          "title": "2011 ABQ RIDE Transit General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/transit_scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/transportation/transit/cabq-2011-abq-ride-go-bond-project-scopes-published.pdf"
+        },
+        {
+          "candidate_id": "src-54665bf864159096",
+          "date": "2011",
+          "title": "2011 Affordable Housing General Obligation Bond Project Scope",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/affordable_housing_scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2011-affordable-housing-go-bond-project-scope-published.pdf"
+        },
+        {
+          "candidate_id": "src-25501032bfbfa682",
+          "date": "2011",
+          "title": "2011 Affordable Housing General Obligation Bond Project Scope (Initial Version)",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1affordable_housing_scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2011-affordable-housing-go-bond-project-scope-initial.pdf"
+        },
+        {
+          "candidate_id": "src-2ed981e6df5e99d2",
+          "date": "2011",
+          "title": "2011 City Facilities, CIP, and Parking General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/facilities_scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/public-works/city-facilities/cabq-2011-city-facilities-cip-parking-go-bond-project-scopes-published.pdf"
+        },
+        {
+          "candidate_id": "src-4bafa6f452f2f586",
+          "date": "2011",
+          "title": "2011 Environmental Health General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/env_health_scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2011-environmental-health-go-bond-project-scopes-published.pdf"
+        },
+        {
+          "candidate_id": "src-352694313c3e5710",
+          "date": "2011",
+          "title": "2011 Family and Community Services General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/family_scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2011-family-community-services-go-bond-project-scopes-published.pdf"
+        },
+        {
+          "candidate_id": "src-b08cdbd2624ad1a0",
+          "date": "2011",
+          "title": "2011 Family and Community Services General Obligation Bond Project Scopes (Initial Version)",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1family_scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2011-family-community-services-go-bond-project-scopes-initial.pdf"
+        },
+        {
+          "candidate_id": "src-db9fefd23083da69",
+          "date": "2011",
+          "title": "2011 Fire General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/fire_scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/public-safety/cabq-2011-fire-go-bond-project-scopes-published.pdf"
+        },
+        {
+          "candidate_id": "src-e6ca25d4cfa80752",
+          "date": "2011",
+          "title": "2011 Fire General Obligation Bond Project Scopes (Initial Version)",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1fire_scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/public-safety/cabq-2011-fire-go-bond-project-scopes-initial.pdf"
+        },
+        {
+          "candidate_id": "src-b7f0628556085641",
+          "date": "2011",
+          "title": "2011 Planning General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/planning_scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/development-land-use/redevelopment/cabq-2011-planning-go-bond-project-scopes-published.pdf"
+        },
+        {
+          "candidate_id": "src-89b36d5577443f99",
+          "date": "2011",
+          "title": "2011 Planning General Obligation Bond Project Scopes (Initial Version)",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1planning_scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/development-land-use/redevelopment/cabq-2011-planning-go-bond-project-scopes-initial.pdf"
+        },
+        {
+          "candidate_id": "src-f74d655ffb05fd08",
+          "date": "2011",
+          "title": "2011 Police General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/police_scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/public-safety/cabq-2011-police-go-bond-project-scopes-published.pdf"
+        },
+        {
+          "candidate_id": "src-b90b07ac62c4f7fd",
+          "date": "2011",
+          "title": "2011 Senior Affairs General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/senior_affairs_scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2011-senior-affairs-go-bond-project-scopes-published.pdf"
+        },
+        {
+          "candidate_id": "src-be70a79a59ae0915",
+          "date": "2011",
+          "title": "2011 Streets General Obligation Bond Project Scopes (Initial Version)",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1streets_scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/transportation/transportation-plans/cabq-2011-streets-go-bond-project-scopes-initial.pdf"
+        },
+        {
+          "candidate_id": "src-542056c326cf2578",
+          "date": "2011",
+          "title": "2011-2019 Finance and Administrative Services General Obligation Bond Schedule (Initial Version)",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1finance_summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2011-2019-finance-administrative-services-go-bond-schedule-initial.pdf"
+        },
+        {
+          "candidate_id": "src-a547a0278fb86fb9",
+          "date": "2011",
+          "title": "2011-2019 Fire General Obligation Bond Schedule (Initial Version)",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1fire_summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/public-safety/cabq-2011-2019-fire-go-bond-schedule-initial.pdf"
+        },
+        {
+          "candidate_id": "src-2746069f062780cf",
+          "date": "2011",
+          "title": "2011-2019 General Obligation Bond Summary Totals",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/2011_g.o._summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2011-2019-go-bond-summary-totals.pdf"
+        },
+        {
+          "candidate_id": "src-c9af414f77032660",
+          "date": "2011",
+          "title": "2011-2019 Planning General Obligation Bond Schedule (Initial Version)",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1planning_summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/development-land-use/redevelopment/cabq-2011-2019-planning-go-bond-schedule-initial.pdf"
+        },
+        {
+          "candidate_id": "src-4cd84ecef3756fb0",
+          "date": "2011",
+          "title": "2011-2019 Senior Affairs General Obligation Bond Schedule",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/senior_affairs_summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2011-2019-senior-affairs-go-bond-schedule.pdf"
+        },
+        {
+          "candidate_id": "src-a31943aca401c7f0",
+          "date": "2011",
+          "title": "2011-2019 Streets General Obligation Bond Schedule (Initial Version)",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1streets_summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/transportation/transportation-plans/cabq-2011-2019-streets-go-bond-schedule-initial.pdf"
+        }
+      ],
+      "completeness_scope": "Review the complete official source family, not only assigned members. Identify omitted components, final/initial version relationships, duplicates, governing resolutions, chronological or topical order, section titles, and whether the compilation should be split before 100-150 pages.",
+      "per_document_checkpoint_directory": "research/staging/claude-consolidation-checkpoints/2011-general-obligation-bond-program-master-record/items",
+      "slice_result_path": "project-state/discovery/claude-consolidation-2011-general-obligation-bond-program-master-record-2026-09-13.json"
+    },
+    {
+      "slice_id": "2013-general-obligation-bond-program-master-record",
+      "priority": 24,
+      "title": "2013 General Obligation Bond Program Master Record",
+      "kind": "historical program compilation research",
+      "assigned_documents": [
+        {
+          "candidate_id": "src-040d6e306c1c448c",
+          "date": "2013",
+          "title": "2013 General Obligation Bond Program Summary",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/2013GOSummary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-go-bond-program-summary-2013.pdf"
+        }
+      ],
+      "completeness_scope": "Review the complete official source family, not only assigned members. Identify omitted components, final/initial version relationships, duplicates, governing resolutions, chronological or topical order, section titles, and whether the compilation should be split before 100-150 pages.",
+      "per_document_checkpoint_directory": "research/staging/claude-consolidation-checkpoints/2013-general-obligation-bond-program-master-record/items",
+      "slice_result_path": "project-state/discovery/claude-consolidation-2013-general-obligation-bond-program-master-record-2026-09-13.json"
+    },
+    {
+      "slice_id": "2017-general-obligation-bond-program-master-record",
+      "priority": 25,
+      "title": "2017 General Obligation Bond Program Master Record",
+      "kind": "historical program compilation research",
+      "assigned_documents": [
+        {
+          "candidate_id": "src-4481a036f1386231",
+          "date": "2017",
+          "title": "2017 ABQ RIDE Transit General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/abq-ride-transit-scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/transportation/transit/cabq-2017-abq-ride-transit-go-bond-project-scopes.pdf"
+        },
+        {
+          "candidate_id": "src-12ebd2ca96b15422",
+          "date": "2017",
+          "title": "2017 Animal Welfare General Obligation Bond Project Scope",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/animal-welfare-scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2017-animal-welfare-go-bond-project-scopes.pdf"
+        },
+        {
+          "candidate_id": "src-61ad2dbdc6d9a82f",
+          "date": "2017",
+          "title": "2017 Environmental Health General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/env-health-scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2017-environmental-health-go-bond-project-scopes.pdf"
+        },
+        {
+          "candidate_id": "src-0fa26c668eff7260",
+          "date": "2017",
+          "title": "2017 Family and Community Services General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/family-comm-services-scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2017-family-community-services-go-bond-project-scopes.pdf"
+        },
+        {
+          "candidate_id": "src-2e9204f14cd8f46d",
+          "date": "2017",
+          "title": "2017 Fire General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/public-safety-fire-scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/public-safety/cabq-2017-fire-go-bond-project-scopes.pdf"
+        },
+        {
+          "candidate_id": "src-111d265ec8a4592f",
+          "date": "2017",
+          "title": "2017 Police General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/public-safety-police-scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/public-safety/cabq-2017-police-go-bond-project-scopes.pdf"
+        },
+        {
+          "candidate_id": "src-bc0e9217d013a65e",
+          "date": "2017",
+          "title": "2017 Senior Affairs General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/senior-affairs-scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2017-senior-affairs-go-bond-project-scopes.pdf"
+        },
+        {
+          "candidate_id": "src-5fde9efeb5f56c2b",
+          "date": "2017",
+          "title": "2017 Technology and Innovation Services General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/technology-innovation-services-scope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2017-technology-innovation-services-go-bond-project-scopes.pdf"
+        },
+        {
+          "candidate_id": "src-0aebef9e2df3a7c4",
+          "date": "2017",
+          "title": "2017-2025 ABQ RIDE Transit General Obligation Bond Summary",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/abq-ride-transit-summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/transportation/transit/cabq-2017-2025-abq-ride-transit-go-bond-summary.pdf"
+        },
+        {
+          "candidate_id": "src-313a529220b95ddf",
+          "date": "2017",
+          "title": "2017-2025 Animal Welfare General Obligation Bond Summary",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/animal-welfare-summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2017-2025-animal-welfare-go-bond-summary.pdf"
+        },
+        {
+          "candidate_id": "src-b474f3df7b9187a7",
+          "date": "2017",
+          "title": "2017-2025 City Facilities, CIP, and Parking General Obligation Bond Summary",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-cip-fac-parking-summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/public-works/city-facilities/cabq-2017-2025-city-facilities-parking-go-bond-summary.pdf"
+        },
+        {
+          "candidate_id": "src-522b52d5a15c0181",
+          "date": "2017",
+          "title": "2017-2025 Cultural Services General Obligation Bond Summary",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/cultural-services-summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2017-2025-cultural-services-go-bond-summary.pdf"
+        },
+        {
+          "candidate_id": "src-0ab1f927f3729215",
+          "date": "2017",
+          "title": "2017-2025 Environmental Health General Obligation Bond Summary",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/env-health-summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2017-2025-environmental-health-go-bond-summary.pdf"
+        },
+        {
+          "candidate_id": "src-b1c6bfb2ba73681d",
+          "date": "2017",
+          "title": "2017-2025 Family and Community Services General Obligation Bond Summary",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/family-comm-services-summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2017-2025-family-community-services-go-bond-summary.pdf"
+        },
+        {
+          "candidate_id": "src-1b90ccd44428b6ab",
+          "date": "2017",
+          "title": "2017-2025 Fire General Obligation Bond Summary",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/public-safety-fire-summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/public-safety/cabq-2017-2025-fire-go-bond-summary.pdf"
+        },
+        {
+          "candidate_id": "src-463cc9e5e708ca82",
+          "date": "2017",
+          "title": "2017-2025 Parks and Recreation General Obligation Bond Summary",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/parks-recreation-summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-2017-2025-parks-recreation-go-bond-summary.pdf"
+        },
+        {
+          "candidate_id": "src-0e7f98215f3fbb7d",
+          "date": "2017",
+          "title": "2017-2025 Planning General Obligation Bond Summary",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/planning-summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2017-2025-planning-go-bond-summary.pdf"
+        },
+        {
+          "candidate_id": "src-b6933b287a6b8183",
+          "date": "2017",
+          "title": "2017-2025 Police General Obligation Bond Summary",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/public-safety-police-summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/public-safety/cabq-2017-2025-police-go-bond-summary.pdf"
+        },
+        {
+          "candidate_id": "src-130191bd25715b96",
+          "date": "2017",
+          "title": "2017-2025 Senior Affairs General Obligation Bond Summary",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/senior-affairs-summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2017-2025-senior-affairs-go-bond-summary.pdf"
+        },
+        {
+          "candidate_id": "src-e43d7a5f1c1d6bfe",
+          "date": "2017",
+          "title": "2017-2025 Storm Drainage General Obligation Bond Summary",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-storm-drainage-summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/public-works/stormwater/cabq-2017-2025-storm-drainage-go-bond-summary.pdf"
+        },
+        {
+          "candidate_id": "src-83d02810b171f365",
+          "date": "2017",
+          "title": "2017-2025 Streets General Obligation Bond Summary",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-streets-summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/public-works/capital-projects/cabq-2017-2025-streets-go-bond-summary.pdf"
+        },
+        {
+          "candidate_id": "src-e89fa88be97ca7b0",
+          "date": "2017",
+          "title": "2017-2025 Technology and Innovation Services General Obligation Bond Summary",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/technology-innovation-services-summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2017-2025-technology-innovation-services-go-bond-summary.pdf"
+        },
+        {
+          "candidate_id": "src-cab3e5143a63a282",
+          "date": "2017-01",
+          "title": "2017 General Obligation Bond Program and 2017-2026 Decade Plan Introduction",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/introduction.docx/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2017-go-bond-program-introduction.docx"
+        },
+        {
+          "candidate_id": "src-659e9742c87de3e4",
+          "date": "2017-01",
+          "title": "2017 General Obligation Bond Project Planning, Selection, and Approval Process",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/process.docx/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-2017-go-bond-program-process.docx"
+        }
+      ],
+      "completeness_scope": "Review the complete official source family, not only assigned members. Identify omitted components, final/initial version relationships, duplicates, governing resolutions, chronological or topical order, section titles, and whether the compilation should be split before 100-150 pages.",
+      "per_document_checkpoint_directory": "research/staging/claude-consolidation-checkpoints/2017-general-obligation-bond-program-master-record/items",
+      "slice_result_path": "project-state/discovery/claude-consolidation-2017-general-obligation-bond-program-master-record-2026-09-13.json"
+    },
+    {
+      "slice_id": "applicable-capital-program-master-record",
+      "priority": 26,
+      "title": "Applicable capital-program master record",
+      "kind": "historical program compilation research",
+      "assigned_documents": [
+        {
+          "candidate_id": "src-047e8956baad212d",
+          "date": "2013",
+          "title": "Department of Municipal Development Capital Facilities and Parking Scope",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/DMDCIPFacParkingScope.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-dmd-capital-facilities-parking-scope-2013.pdf"
+        }
+      ],
+      "completeness_scope": "Review the complete official source family, not only assigned members. Identify omitted components, final/initial version relationships, duplicates, governing resolutions, chronological or topical order, section titles, and whether the compilation should be split before 100-150 pages.",
+      "per_document_checkpoint_directory": "research/staging/claude-consolidation-checkpoints/applicable-capital-program-master-record/items",
+      "slice_result_path": "project-state/discovery/claude-consolidation-applicable-capital-program-master-record-2026-09-13.json"
+    },
+    {
+      "slice_id": "mrmpo-annual-listings-of-obligations-ffy-2006-2009",
+      "priority": 40,
+      "title": "MRMPO Annual Listings of Obligations, FFY 2006-2009",
+      "kind": "historical program compilation research",
+      "assigned_documents": [
+        {
+          "candidate_id": "src-55c6440c25460701",
+          "date": "2006",
+          "title": "MRMPO FFY 2006 Annual Listing of Obligations",
+          "source_url": "https://www.mrcog-nm.gov/278/Annual-Project-Listing-Obligation-Report",
+          "archive_url": "https://files.abqinfo.com/transportation/transportation-plans/mrmpo-ffy-2006-annual-listing-obligations.pdf"
+        },
+        {
+          "candidate_id": "src-58313c79df87ded3",
+          "date": "2007",
+          "title": "MRMPO FFY 2007 Annual Listing of Obligations",
+          "source_url": "https://www.mrcog-nm.gov/278/Annual-Project-Listing-Obligation-Report",
+          "archive_url": "https://files.abqinfo.com/transportation/transportation-plans/mrmpo-ffy-2007-annual-listing-obligations.pdf"
+        },
+        {
+          "candidate_id": "src-4d3fcb3be20cebb0",
+          "date": "2008",
+          "title": "MRMPO FFY 2008 Annual Listing of Obligations",
+          "source_url": "https://www.mrcog-nm.gov/278/Annual-Project-Listing-Obligation-Report",
+          "archive_url": "https://files.abqinfo.com/transportation/transportation-plans/mrmpo-ffy-2008-annual-listing-obligations.pdf"
+        },
+        {
+          "candidate_id": "src-bafbc17c9bf37553",
+          "date": "2009",
+          "title": "MRMPO FFY 2009 Annual Listing of Obligations",
+          "source_url": "https://www.mrcog-nm.gov/278/Annual-Project-Listing-Obligation-Report",
+          "archive_url": "https://files.abqinfo.com/transportation/transportation-plans/mrmpo-ffy-2009-annual-listing-obligations.pdf"
+        }
+      ],
+      "completeness_scope": "Review the complete official source family, not only assigned members. Identify omitted components, final/initial version relationships, duplicates, governing resolutions, chronological or topical order, section titles, and whether the compilation should be split before 100-150 pages.",
+      "per_document_checkpoint_directory": "research/staging/claude-consolidation-checkpoints/mrmpo-annual-listings-of-obligations-ffy-2006-2009/items",
+      "slice_result_path": "project-state/discovery/claude-consolidation-mrmpo-annual-listings-of-obligations-ffy-2006-2009-2026-09-13.json"
+    },
+    {
+      "slice_id": "old-town-virtual-task-force-ranking-results-topics-1-3",
+      "priority": 41,
+      "title": "Old Town Virtual Task Force Ranking Results, Topics 1-3",
+      "kind": "historical program compilation research",
+      "assigned_documents": [
+        {
+          "candidate_id": "src-4f28a655d98c8ae3",
+          "date": "",
+          "title": "Old Town Virtual Task Force Summary of Ranking Results, Topic 1: Outdoor Displays",
+          "source_url": "https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-1-colo.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/zoning-ido/cabq-old-town-task-force-ranking-outdoor-displays.pdf"
+        },
+        {
+          "candidate_id": "src-3f866d2089b33926",
+          "date": "",
+          "title": "Old Town Virtual Task Force Summary of Ranking Results, Topic 2: Signs",
+          "source_url": "https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-2-colo.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/zoning-ido/cabq-old-town-task-force-ranking-signs.pdf"
+        },
+        {
+          "candidate_id": "src-d866542fe3372c5e",
+          "date": "",
+          "title": "Old Town Virtual Task Force Summary of Ranking Results, Topic 3: Outdoor Demonstrations",
+          "source_url": "https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-3-colo.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/zoning-ido/cabq-old-town-task-force-ranking-outdoor-demonstrations.pdf"
+        }
+      ],
+      "completeness_scope": "Review the complete official source family, not only assigned members. Identify omitted components, final/initial version relationships, duplicates, governing resolutions, chronological or topical order, section titles, and whether the compilation should be split before 100-150 pages.",
+      "per_document_checkpoint_directory": "research/staging/claude-consolidation-checkpoints/old-town-virtual-task-force-ranking-results-topics-1-3/items",
+      "slice_result_path": "project-state/discovery/claude-consolidation-old-town-virtual-task-force-ranking-results-topics-1-3-2026-09-13.json"
+    },
+    {
+      "slice_id": "urban-enhancement-trust-fund-2010-2011-program-and-funded-projects",
+      "priority": 42,
+      "title": "Urban Enhancement Trust Fund 2010-2011 Program and Funded Projects",
+      "kind": "historical program compilation research",
+      "assigned_documents": [
+        {
+          "candidate_id": "src-10edc718610865b0",
+          "date": "2010–2011",
+          "title": "Urban Enhancement Trust Fund 2010–2011 Funded Projects",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/uetf_2010-2011projects.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-urban-enhancement-trust-fund-funded-projects-2010-2011.pdf"
+        },
+        {
+          "candidate_id": "src-b9402ce7e2e6c22f",
+          "date": "2010–2011",
+          "title": "Urban Enhancement Trust Fund 2010–2011 Funding Summary",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/uetf_2010-2011_summary.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-urban-enhancement-trust-fund-funding-summary-2010-2011.pdf"
+        },
+        {
+          "candidate_id": "src-f70c337140899545",
+          "date": "2010–2011",
+          "title": "Urban Enhancement Trust Fund 2010–2011 Program Overview",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/uetf_2010-2011.pdf/view",
+          "archive_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-urban-enhancement-trust-fund-program-overview-2010-2011.pdf"
+        }
+      ],
+      "completeness_scope": "Review the complete official source family, not only assigned members. Identify omitted components, final/initial version relationships, duplicates, governing resolutions, chronological or topical order, section titles, and whether the compilation should be split before 100-150 pages.",
+      "per_document_checkpoint_directory": "research/staging/claude-consolidation-checkpoints/urban-enhancement-trust-fund-2010-2011-program-and-funded-projects/items",
+      "slice_result_path": "project-state/discovery/claude-consolidation-urban-enhancement-trust-fund-2010-2011-program-and-funded-projects-2026-09-13.json"
+    },
+    {
+      "slice_id": "gaatc-2024",
+      "priority": 60,
+      "title": "GAATC Minutes 2024",
+      "kind": "annual committee minutes compilation research",
+      "assigned_documents": [
+        {
+          "candidate_id": "src-fbc771c45af4ff3d",
+          "date": "2024-01-08",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — January 8, 2024",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054020/",
+          "archive_url": ""
+        },
+        {
+          "candidate_id": "src-57e24377f8a36943",
+          "date": "2024-02-12",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — February 12, 2024",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054024/",
+          "archive_url": ""
+        },
+        {
+          "candidate_id": "src-bc5e37c59677ecd4",
+          "date": "2024-03-11",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — March 11, 2024",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054025/",
+          "archive_url": ""
+        },
+        {
+          "candidate_id": "src-a127a114e536629e",
+          "date": "2024-04-08",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — April 8, 2024",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054028/",
+          "archive_url": ""
+        },
+        {
+          "candidate_id": "src-7872bc7475c6b504",
+          "date": "2024-05-13",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — May 13, 2024",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054029/",
+          "archive_url": ""
+        },
+        {
+          "candidate_id": "src-da125a4481a61b45",
+          "date": "2024-06-10",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — June 10, 2024",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054032/",
+          "archive_url": ""
+        },
+        {
+          "candidate_id": "src-aaaf150b8e3f5c5c",
+          "date": "2024-09-09",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — September 9, 2024",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054036/",
+          "archive_url": ""
+        },
+        {
+          "candidate_id": "src-e39a28d013f802ac",
+          "date": "2024-11-18",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — November 18, 2024",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12054041/",
+          "archive_url": ""
+        },
+        {
+          "candidate_id": "src-8d8812220580bcd4",
+          "date": "2024-12-09",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — December 9, 2024",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12065919/",
+          "archive_url": ""
+        }
+      ],
+      "completeness_scope": "Exhaustively review the committee's official calendar, archive, and OnBase records for every scheduled 2024 meeting; distinguish approved minutes from agendas, cancellations, and no-quorum meetings and calculate the complete annual compilation.",
+      "per_document_checkpoint_directory": "research/staging/claude-consolidation-checkpoints/gaatc-2024/items",
+      "slice_result_path": "project-state/discovery/claude-consolidation-gaatc-2024-2026-09-13.json"
+    },
+    {
+      "slice_id": "gaatc-2025",
+      "priority": 61,
+      "title": "GAATC Minutes 2025",
+      "kind": "annual committee minutes compilation research",
+      "assigned_documents": [
+        {
+          "candidate_id": "src-14fdf8f8e43e85ae",
+          "date": "2025-01-13",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — January 13, 2025",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12080079/",
+          "archive_url": ""
+        },
+        {
+          "candidate_id": "src-175f425b4b89b61d",
+          "date": "2025-02-10",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — February 10, 2025",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12162997/",
+          "archive_url": ""
+        },
+        {
+          "candidate_id": "src-da0493dea81dabb6",
+          "date": "2025-03-10",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — March 10, 2025",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12162996/",
+          "archive_url": ""
+        },
+        {
+          "candidate_id": "src-99d9d144d198ba12",
+          "date": "2025-05-12",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — May 12, 2025",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12162993/",
+          "archive_url": ""
+        },
+        {
+          "candidate_id": "src-6d3dca57bcc7aff3",
+          "date": "2025-06-09",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — June 9, 2025",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12155508/",
+          "archive_url": ""
+        },
+        {
+          "candidate_id": "src-a1ed1a72312f7ff5",
+          "date": "2025-07-14",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — July 14, 2025",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12176618/",
+          "archive_url": ""
+        },
+        {
+          "candidate_id": "src-af73b939f90e5f60",
+          "date": "2025-09-08",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — September 8, 2025",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12197826/",
+          "archive_url": ""
+        },
+        {
+          "candidate_id": "src-021943721750b362",
+          "date": "2025-11-10",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — November 10, 2025",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12203729/",
+          "archive_url": ""
+        },
+        {
+          "candidate_id": "src-ed7ea4c9f3e76369",
+          "date": "2025-12-08",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — December 8, 2025",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12220940/",
+          "archive_url": ""
+        }
+      ],
+      "completeness_scope": "Exhaustively review the committee's official calendar, archive, and OnBase records for every scheduled 2025 meeting; distinguish approved minutes from agendas, cancellations, and no-quorum meetings and calculate the complete annual compilation.",
+      "per_document_checkpoint_directory": "research/staging/claude-consolidation-checkpoints/gaatc-2025/items",
+      "slice_result_path": "project-state/discovery/claude-consolidation-gaatc-2025-2026-09-13.json"
+    },
+    {
+      "slice_id": "gaatc-2026",
+      "priority": 62,
+      "title": "GAATC Minutes 2026",
+      "kind": "annual committee minutes compilation research",
+      "assigned_documents": [
+        {
+          "candidate_id": "src-84c6c27068d476c2",
+          "date": "2026-02-09",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — February 9, 2026",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12233408/",
+          "archive_url": ""
+        },
+        {
+          "candidate_id": "src-5213edfc685ad50e",
+          "date": "2026-03-09",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — March 9, 2026",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12243533/",
+          "archive_url": ""
+        },
+        {
+          "candidate_id": "src-3a28862d112bfaf8",
+          "date": "2026-04-13",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — April 13, 2026",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12254976/",
+          "archive_url": ""
+        },
+        {
+          "candidate_id": "src-2ecf2ec6038f8018",
+          "date": "2026-05-11",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — May 11, 2026",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12264414/",
+          "archive_url": ""
+        },
+        {
+          "candidate_id": "src-b941791e08f877d3",
+          "date": "2026-06-08",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — June 8, 2026",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12281559/",
+          "archive_url": ""
+        },
+        {
+          "candidate_id": "src-4f129e8274197c79",
+          "date": "2026-07-13",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — July 13, 2026",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12288166/",
+          "archive_url": ""
+        },
+        {
+          "candidate_id": "src-99529b2a4c8db5aa",
+          "date": "2026-08-10",
+          "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes — August 10, 2026",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12288706/",
+          "archive_url": ""
+        }
+      ],
+      "completeness_scope": "Exhaustively review the committee's official calendar, archive, and OnBase records for every scheduled 2026 meeting; distinguish approved minutes from agendas, cancellations, and no-quorum meetings and calculate the complete annual compilation.",
+      "per_document_checkpoint_directory": "research/staging/claude-consolidation-checkpoints/gaatc-2026/items",
+      "slice_result_path": "project-state/discovery/claude-consolidation-gaatc-2026-2026-09-13.json"
+    },
+    {
+      "slice_id": "gabac-2015",
+      "priority": 63,
+      "title": "GABAC Minutes 2015",
+      "kind": "annual committee minutes compilation research",
+      "assigned_documents": [
+        {
+          "candidate_id": "src-25047e742c8384b4",
+          "date": "2015-01-12",
+          "title": "Greater Albuquerque Bicycling Advisory Committee Meeting Minutes — January 12, 2015",
+          "source_url": "https://onbase.cabq.gov/publicaccess/",
+          "archive_url": "https://files.abqinfo.com/transportation/bicycling/advisory-records/cabq-gabac-minutes-2015-01-12.pdf"
+        },
+        {
+          "candidate_id": "src-81c65ec58772a24f",
+          "date": "2015-12-14",
+          "title": "Greater Albuquerque Bicycling Advisory Committee Meeting Minutes — December 14, 2015",
+          "source_url": "https://onbase.cabq.gov/publicaccess/",
+          "archive_url": "https://files.abqinfo.com/transportation/bicycling/advisory-records/cabq-gabac-minutes-2015-12-14.pdf"
+        }
+      ],
+      "completeness_scope": "Exhaustively review the committee's official calendar, archive, and OnBase records for every scheduled 2015 meeting; distinguish approved minutes from agendas, cancellations, and no-quorum meetings and calculate the complete annual compilation.",
+      "per_document_checkpoint_directory": "research/staging/claude-consolidation-checkpoints/gabac-2015/items",
+      "slice_result_path": "project-state/discovery/claude-consolidation-gabac-2015-2026-09-13.json"
+    },
+    {
+      "slice_id": "gabac-2016",
+      "priority": 64,
+      "title": "GABAC Minutes 2016",
+      "kind": "annual committee minutes compilation research",
+      "assigned_documents": [
+        {
+          "candidate_id": "src-aa4b44789f28cc08",
+          "date": "2016-01-11",
+          "title": "Greater Albuquerque Bicycling Advisory Committee Meeting Minutes — January 11, 2016",
+          "source_url": "https://onbase.cabq.gov/publicaccess/",
+          "archive_url": "https://files.abqinfo.com/transportation/bicycling/advisory-records/cabq-gabac-minutes-2016-01-11.pdf"
+        },
+        {
+          "candidate_id": "src-ecb5eb5ca00e599c",
+          "date": "2016-02-08",
+          "title": "Greater Albuquerque Bicycling Advisory Committee Meeting Minutes — February 8, 2016",
+          "source_url": "https://onbase.cabq.gov/publicaccess/",
+          "archive_url": "https://files.abqinfo.com/transportation/bicycling/advisory-records/cabq-gabac-minutes-2016-02-08.pdf"
+        },
+        {
+          "candidate_id": "src-02f7f9913481627f",
+          "date": "2016-03-14",
+          "title": "Greater Albuquerque Bicycling Advisory Committee Meeting Minutes — March 14, 2016",
+          "source_url": "https://onbase.cabq.gov/publicaccess/",
+          "archive_url": "https://files.abqinfo.com/transportation/bicycling/advisory-records/cabq-gabac-minutes-2016-03-14.pdf"
+        },
+        {
+          "candidate_id": "src-6a52da44a8c5f38b",
+          "date": "2016-05-09",
+          "title": "Greater Albuquerque Bicycling Advisory Committee Meeting Minutes — May 9, 2016",
+          "source_url": "https://onbase.cabq.gov/publicaccess/",
+          "archive_url": "https://files.abqinfo.com/transportation/bicycling/advisory-records/cabq-gabac-minutes-2016-05-09.pdf"
+        },
+        {
+          "candidate_id": "src-4e3536b0006daf9f",
+          "date": "2016-07-11",
+          "title": "Greater Albuquerque Bicycling Advisory Committee Meeting Minutes — July 11, 2016",
+          "source_url": "https://onbase.cabq.gov/publicaccess/",
+          "archive_url": "https://files.abqinfo.com/transportation/bicycling/advisory-records/cabq-gabac-minutes-2016-07-11.pdf"
+        },
+        {
+          "candidate_id": "src-8fd24610fd814fb9",
+          "date": "2016-08-08",
+          "title": "Greater Albuquerque Bicycling Advisory Committee Meeting Minutes — August 8, 2016",
+          "source_url": "https://onbase.cabq.gov/publicaccess/",
+          "archive_url": "https://files.abqinfo.com/transportation/bicycling/advisory-records/cabq-gabac-minutes-2016-08-08.pdf"
+        },
+        {
+          "candidate_id": "src-dbeb582a5c9fc001",
+          "date": "2016-09-12",
+          "title": "Greater Albuquerque Bicycling Advisory Committee Meeting Minutes — September 12, 2016",
+          "source_url": "https://onbase.cabq.gov/publicaccess/",
+          "archive_url": "https://files.abqinfo.com/transportation/bicycling/advisory-records/cabq-gabac-minutes-2016-09-12.pdf"
+        },
+        {
+          "candidate_id": "src-5f98ad4aae4f92bf",
+          "date": "2016-12-12",
+          "title": "Greater Albuquerque Bicycling Advisory Committee Meeting Minutes — December 12, 2016",
+          "source_url": "https://onbase.cabq.gov/publicaccess/",
+          "archive_url": "https://files.abqinfo.com/transportation/bicycling/advisory-records/cabq-gabac-minutes-2016-12-12.pdf"
+        }
+      ],
+      "completeness_scope": "Exhaustively review the committee's official calendar, archive, and OnBase records for every scheduled 2016 meeting; distinguish approved minutes from agendas, cancellations, and no-quorum meetings and calculate the complete annual compilation.",
+      "per_document_checkpoint_directory": "research/staging/claude-consolidation-checkpoints/gabac-2016/items",
+      "slice_result_path": "project-state/discovery/claude-consolidation-gabac-2016-2026-09-13.json"
+    },
+    {
+      "slice_id": "gartc-2015",
+      "priority": 65,
+      "title": "GARTC Minutes 2015",
+      "kind": "annual committee minutes compilation research",
+      "assigned_documents": [
+        {
+          "candidate_id": "src-27540294ad847cd0",
+          "date": "2015-01-20",
+          "title": "Greater Albuquerque Recreational Trails Committee Minutes, January 20, 2015",
+          "source_url": "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee-agendas-minutes",
+          "archive_url": "https://files.abqinfo.com/transportation/bicycling/advisory-records/cabq-gartc-minutes-2015-01-20.pdf"
+        },
+        {
+          "candidate_id": "src-2bb0562301252913",
+          "date": "2015-02-17",
+          "title": "Greater Albuquerque Recreational Trails Committee Minutes, February 17, 2015",
+          "source_url": "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee-agendas-minutes",
+          "archive_url": "https://files.abqinfo.com/transportation/bicycling/advisory-records/cabq-gartc-minutes-2015-02-17.pdf"
+        },
+        {
+          "candidate_id": "src-b29f7167365e501f",
+          "date": "2015-03-17",
+          "title": "Greater Albuquerque Recreational Trails Committee Minutes, March 17, 2015",
+          "source_url": "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee-agendas-minutes",
+          "archive_url": "https://files.abqinfo.com/transportation/bicycling/advisory-records/cabq-gartc-minutes-2015-03-17.pdf"
+        },
+        {
+          "candidate_id": "src-0700df74becac220",
+          "date": "2015-04-21",
+          "title": "Greater Albuquerque Recreational Trails Committee Minutes, April 21, 2015",
+          "source_url": "https://onbase.cabq.gov/publicaccess/api/Document/12232642/",
+          "archive_url": "https://files.abqinfo.com/transportation/bicycling/advisory-records/cabq-gartc-minutes-2015-04-21.pdf"
+        },
+        {
+          "candidate_id": "src-7578f4905e641aa7",
+          "date": "2015-05-19",
+          "title": "Greater Albuquerque Recreational Trails Committee Minutes, May 19, 2015",
+          "source_url": "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee-agendas-minutes",
+          "archive_url": "https://files.abqinfo.com/transportation/bicycling/advisory-records/cabq-gartc-minutes-2015-05-19.pdf"
+        },
+        {
+          "candidate_id": "src-cb1fc0160a092a42",
+          "date": "2015-06-16",
+          "title": "Greater Albuquerque Recreational Trails Committee Minutes, June 16, 2015",
+          "source_url": "https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee/greater-albuquerque-recreational-trails-committee-agendas-minutes",
+          "archive_url": "https://files.abqinfo.com/transportation/bicycling/advisory-records/cabq-gartc-minutes-2015-06-16.pdf"
+        },
+        {
+          "candidate_id": "src-7e06bcfc4334bd56",
+          "date": "2015-12-15",
+          "title": "Greater Albuquerque Recreational Trails Committee Minutes, December 15, 2015",
+          "source_url": "https://www.cabq.gov/parksandrecreation/documents/gart-minutes-agendas?b_start:int=60",
+          "archive_url": "https://files.abqinfo.com/transportation/bicycling/advisory-records/cabq-gartc-minutes-2015-12-15.pdf"
+        }
+      ],
+      "completeness_scope": "Exhaustively review the committee's official calendar, archive, and OnBase records for every scheduled 2015 meeting; distinguish approved minutes from agendas, cancellations, and no-quorum meetings and calculate the complete annual compilation.",
+      "per_document_checkpoint_directory": "research/staging/claude-consolidation-checkpoints/gartc-2015/items",
+      "slice_result_path": "project-state/discovery/claude-consolidation-gartc-2015-2026-09-13.json"
+    },
+    {
+      "slice_id": "borderline-current-records",
+      "priority": 80,
+      "title": "Borderline current and procedural records",
+      "kind": "successor and public-value research",
+      "assigned_documents": [
+        {
+          "candidate_id": "src-53f3375a9829dc10",
+          "date": "",
+          "title": "Drainage, Flood Control and Erosion Control Governing Regulations Summary",
+          "source_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/Drainage_FloodControl_ErosionControl_GoverningRegsSummary.pdf",
+          "archive_url": "https://files.abqinfo.com/public-works/stormwater/cabq-drainage-flood-erosion-governing-regulations-summary.pdf"
+        },
+        {
+          "candidate_id": "src-6d08320245cacfbd",
+          "date": "",
+          "title": "Facilitated Meetings Criteria Under Integrated Development Ordinance Section 14-16-6-4(D)",
+          "source_url": "https://documents.cabq.gov/planning/UDD/FacilitatedMeetingsCriteria-IDO-16July2018.PDF",
+          "archive_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-facilitated-meetings-criteria-ido-2018.pdf"
+        },
+        {
+          "candidate_id": "src-98563dab32c38b5c",
+          "date": "",
+          "title": "Stormwater Quality Plan Information Sheet and Inspection Fee Schedule",
+          "source_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/SWQ%20Info%20and%20fees.pdf",
+          "archive_url": "https://files.abqinfo.com/public-works/stormwater/cabq-stormwater-quality-plan-fee-schedule.pdf"
+        },
+        {
+          "candidate_id": "src-fa4cf248a6dd7221",
+          "date": "2020-04",
+          "title": "Revocable Permit Submittal Requirements, April 2020",
+          "source_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/Revocalbe_Permit_Requirments_April_2020.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-revocable-permit-submittal-requirements-2020.pdf"
+        },
+        {
+          "candidate_id": "src-7c27417fbd191fdf",
+          "date": "2022-12",
+          "title": "Special Order 19 Notice to Contractor: Private Drainage Facilities Within City Right-of-Way, Revision December 2022",
+          "source_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/SO%2019%20NOTES%20Rev%2012-2022.pdf",
+          "archive_url": "https://files.abqinfo.com/transportation/design-references/cabq-special-order-19-private-drainage-facilities-2022.pdf"
+        },
+        {
+          "candidate_id": "src-5e74a3b59f6ef58f",
+          "date": "2024",
+          "title": "Hydrology Review Fees, 2024",
+          "source_url": "https://documents.cabq.gov/planning/DevelopmentReviewServices/Hydro-Trans%20Review%20Fees.pdf",
+          "archive_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-hydrology-review-fees-2024.pdf"
+        },
+        {
+          "candidate_id": "src-f0c76005377afd83",
+          "date": "2026-04-06",
+          "title": "Albuquerque City Council Services Organizational Chart, April 6, 2026",
+          "source_url": "https://www.cabq.gov/council/documents/council-services-org-chart-4-6-26.pdf",
+          "archive_url": "https://files.abqinfo.com/city-data/city-progress-surveys/cabq-city-council-services-organizational-chart-2026.pdf"
+        }
+      ],
+      "completeness_scope": "For each item, locate any newer official version, controlling full document, parent procedure, or natural consolidation family; recommend retain, consolidate, supersede, or archive-only with concrete evidence.",
+      "per_document_checkpoint_directory": "research/staging/claude-consolidation-checkpoints/borderline-current-records/items",
+      "slice_result_path": "project-state/discovery/claude-consolidation-borderline-current-records-2026-09-13.json"
+    }
+  ]
+}
