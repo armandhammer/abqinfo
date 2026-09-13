@@ -87,6 +87,7 @@ Use a provider-prefixed branch name such as `codex/...` or `claude/...`. Never c
 - Begin from `master-inventory.json`'s `next_pending_id` unless the user scopes a different record or batch.
 - Prefer existing deterministic scripts for crawling, download, hashing, extraction, deduplication, R2 plans/uploads, inventory updates, link checks, and Hugo validation.
 - Record source URLs, dates, byte sizes, SHA-256 hashes, provenance, duplicate/supersession decisions, placements, and validation evidence in the inventory and batch artifacts.
+- Treat provenance and archival correctness as separate from publication quality. Every proposed visible document needs the structured quality assessment required by `scripts/project/Test-ContentPublicationQuality.ps1`, including visual inspection, standalone value, information density, series/component review, publication form, and rationale. Prefer a consolidated master historical record when short serial or component files are meaningful mainly together; preserve each authoritative original and its provenance even when it is not separately listed on the site.
 - Treat Legistar attachments as wrappers until their substantive content is compared with City-source copies.
 - Do not claim an agenda is minutes. Apply the repository's missing-minutes policy.
 - Save meaningful progress immediately. If nearing a provider limit, stop after a completed, durable state transition rather than beginning an uncheckpointed download, upload, bulk edit, or conflict resolution.

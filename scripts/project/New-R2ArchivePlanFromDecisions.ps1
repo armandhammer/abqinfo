@@ -24,6 +24,7 @@ $decisionItems = if ($decisions.PSObject.Properties['decisions']) {
 }
 
 foreach ($decision in $decisionItems) {
+  & "$PSScriptRoot/Test-ContentPublicationQuality.ps1" -Decision $decision -Context "Candidate '$($decision.id)'" | Out-Null
   $matches = @($inventory.candidates | Where-Object id -eq $decision.id)
   if ($matches.Count -ne 1) { throw "Expected one inventory candidate for '$($decision.id)'; found $($matches.Count)." }
   $candidate = $matches[0]
