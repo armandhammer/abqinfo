@@ -114,6 +114,18 @@ Cross-cutting development process documents, manuals, and reference materials.
 
   [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-sept-24-2014.pdf)
 
+- [Development Process Manual Executive Committee Minutes, July 16, 2014 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2014-07-16.pdf)
+
+  Establishes the committee's internal rules of procedure, adopting a six-member quorum, majority and unanimous voting thresholds, Open Meetings compliance, and a requirement that the Development Process Manual be amended to reflect recorded voting results.
+
+  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-july-16-2014.pdf)
+
+- [Development Process Manual Executive Committee Minutes, December 17, 2014 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2014-12-17.pdf)
+
+  Records adoption of the Development Process Manual preface and update procedure, removing references to two dissolved subcommittees, consolidating that authority in the Executive Committee, and approving related language changes by motion.
+
+  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-dec-17-2014.pdf)
+
 ## Historic Preservation and Overlay-Zone Guidance
 
 - [Silver Hill Historic Overlay Zone Design Guidelines: Early Automobile Suburbs (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-silver-hill-historic-overlay-zone-design-guidelines.pdf)
