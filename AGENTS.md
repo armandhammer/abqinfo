@@ -10,6 +10,10 @@
 
 ## Batch and Pull Request Expectations
 
+- Provenance, authenticity, successful parsing, archival verification, and a well-written description are necessary but do not establish that a document deserves a separate public-facing entry. Before any static document is approved for visible publication, record and validate a `quality_assessment` covering visual inspection, measured page/text content, standalone public value, information density, series/component relationships, intended publication form, and a substantive rationale.
+- Do not publish administrative scraps, context-free requests, skeletal summaries, or serial fragments as standalone entries merely because they are authoritative. A one- or two-page text document with fewer than 250 extractable words requires an explicit limited-content exception; maps, forms, legal instruments, and dense visual or tabular records may qualify when their distinct use is documented.
+- Review every component or serial document against its complete family before publication. Prefer one curated, chronological or program-level master historical record when several short official files are meaningful mainly together. Preserve the byte-identical originals and their individual provenance in R2 and inventory history even when the public site presents a consolidated master record.
+
 - A normal content PR should be a substantial coherent batch, generally 15-30 visible additions across 3-8 appropriate pages. Do not stop after one small source cluster unless a genuine technical, authorization, storage, or usage boundary requires it.
 - Every PR description must list each modified ABQInfo page with its direct `https://abqinfo.com/` URL and enumerate the exact visible additions, removals, moves, and cross-listings on that page.
 - Distinguish inventory-only work from visible site changes. Report R2 uploads, exact added storage, size warnings, validation results, and unresolved items.
