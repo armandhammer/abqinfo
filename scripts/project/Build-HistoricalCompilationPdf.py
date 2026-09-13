@@ -73,7 +73,10 @@ def build_intro(manifest: dict, entries: list[dict], path: Path) -> int:
         ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
         ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, colors.HexColor("#f7f9fb")]),
     ]))
-    story.extend([table, Spacer(1, 0.18 * inch), Paragraph(f"Coverage: {manifest['coverage_note']}", styles["Normal"]), PageBreak(), Paragraph("Compilation provenance", styles["Heading2"]), Paragraph(manifest["provenance_note"], styles["Normal"]), Spacer(1, 0.14 * inch), Paragraph("How to cite a section", styles["Heading3"]), Paragraph("Cite the original City document title and date shown on its provenance sheet. Use the original archive URL when a stable file citation is required; use this compilation only as a convenient collected edition.", styles["Normal"])])
+    story.extend([table, Spacer(1, 0.18 * inch), Paragraph(f"<b>Coverage:</b> {manifest['coverage_note']}", styles["Normal"])])
+    if manifest.get("editorial_note"):
+        story.extend([Spacer(1, 0.12 * inch), Paragraph("Record note", styles["Heading3"]), Paragraph(manifest["editorial_note"], styles["Normal"])])
+    story.extend([PageBreak(), Paragraph("Compilation provenance", styles["Heading2"]), Paragraph(manifest["provenance_note"], styles["Normal"]), Spacer(1, 0.14 * inch), Paragraph("How to cite a section", styles["Heading3"]), Paragraph("Cite the original City document title and date shown on its provenance sheet. Use the original archive URL when a stable file citation is required; use this compilation only as a convenient collected edition.", styles["Normal"])])
     doc.build(story, onFirstPage=footer, onLaterPages=footer)
     return len(PdfReader(str(path)).pages)
 
