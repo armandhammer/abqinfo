@@ -24,6 +24,26 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
   Preserves the 2015 City drainage chapter governing grading, floodplains, erosion control, stormwater pollution prevention, detention, drainage reports, facilities, and development-review obligations before the later manual revision. [Development Process placement](/development-land-use/development-process/#historic-manual-chapters) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/DPM-Chapter%2022%20Drainage-Final-Feb2015.pdf)
 
+- [DPM Executive Committee Minutes, September 7, 2016 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-09-07.pdf)
+
+  Records approval of Chapter 22 sections one through seven governing drainage and erosion control, together with the new Chapter 28 median-landscaping standards. [Full DPM committee record](/development-land-use/development-process/#development-process-manual) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-sept-7-2016.pdf)
+
+- [DPM Executive Committee Minutes, October 19, 2016 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-10-19.pdf)
+
+  Records approval of Chapter 22 sections eight and nine on drainage and erosion control and the committee's deferral of sections ten and eleven. [Full DPM committee record](/development-land-use/development-process/#development-process-manual) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-oct-19-2016.pdf)
+
+- [DPM Executive Committee Minutes, January 18, 2017 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-01-18.pdf)
+
+  Records approval of Chapter 22 section twelve and the continued review of sections eleven and thirteen and Chapter 18. [Full DPM committee record](/development-land-use/development-process/#development-process-manual) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-jan-18-2017.pdf)
+
+- [DPM Executive Committee Minutes, February 1, 2017 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-02-01.pdf)
+
+  Records approval of Chapter 22 section eleven and continued review of section thirteen and Chapter 18 before the next committee meeting. [Full DPM committee record](/development-land-use/development-process/#development-process-manual) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-feb-1-2017.pdf)
+
+- [DPM Executive Committee Minutes, March 1, 2017 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-03-01.pdf)
+
+  Records approval of Chapter 22 sections thirteen through seventeen and Chapter 18, completing a substantial block of City drainage and erosion-control standards. [Full DPM committee record](/development-land-use/development-process/#development-process-manual) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-march-1-2017.pdf)
+
 - [City of Albuquerque Construction Site Manual (2018)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-construction-site-manual-2018.pdf)
 
   Sets illustrated inspection standards for construction-site sediment and erosion controls, vehicle tracking, inlet protection, channels, housekeeping, washout, debris, street cuts, curb work, stabilization, and maintenance of required best practices.

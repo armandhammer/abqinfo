@@ -179,6 +179,42 @@ Reference drawings, engineering details, and technical guidance related to trans
 
 ## Development Review Design References
 
+- [DPM Executive Committee Minutes, May 3, 2017 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-05-03.pdf)
+
+  Records approval of Chapter 23 sections 3.9.5 and 3.12 as amended and the continued review of other transportation and drafting standards. [Full DPM committee record](/development-land-use/development-process/#development-process-manual) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-may-3-2017.pdf)
+
+- [DPM Executive Committee Minutes, May 17, 2017 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-05-17.pdf)
+
+  Records approval of Chapter 23 section 3.4 and the continued review of survey, drafting, and transportation-design provisions. [Full DPM committee record](/development-land-use/development-process/#development-process-manual) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-may-17-2017.pdf)
+
+- [DPM Executive Committee Minutes, June 21, 2017 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-06-21.pdf)
+
+  Records approval of survey and monumentation standards and Chapter 23 transportation sections 3.6 and 3.9, subject to illustration changes. [Full DPM committee record](/development-land-use/development-process/#development-process-manual) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-june-21-2017.pdf)
+
+- [DPM Executive Committee Minutes, September 6, 2017 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-09-06.pdf)
+
+  Records approval of Chapter 23 section 3.7 on public transit and the related building-permit process amendment. [Full DPM committee record](/development-land-use/development-process/#development-process-manual) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-sept-6-2017.pdf)
+
+- [DPM Executive Committee Minutes, October 4, 2017 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-10-04.pdf)
+
+  Records approval of Chapter 23 standards for on-street parking and pedestrian facilities and continued review of network connectivity. [Full DPM committee record](/development-land-use/development-process/#development-process-manual) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-oct-4-2017.pdf)
+
+- [DPM Executive Committee Minutes, November 15, 2017 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-11-15.pdf)
+
+  Records approval of Chapter 23 pavement standards and continued review of drafting standards and network connectivity. [Full DPM committee record](/development-land-use/development-process/#development-process-manual) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-nov-15-2017.pdf)
+
+- [DPM Executive Committee Minutes, February 7, 2018 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2018-02-07.pdf)
+
+  Records approval of Chapter 23 network-connectivity standards with amended graphics and continued review of intersection, turn-lane, median, and drafting provisions. [Full DPM committee record](/development-land-use/development-process/#development-process-manual) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-feb-7-2018.pdf)
+
+- [DPM Executive Committee Minutes, February 21, 2018 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2018-02-21.pdf)
+
+  Records approval of Chapter 23 intersection-design standards and continued review of turn-lane and median design. [Full DPM committee record](/development-land-use/development-process/#development-process-manual) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-feb-21-2018.pdf)
+
+- [DPM Executive Committee Minutes, March 7, 2018 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2018-03-07.pdf)
+
+  Records approval of construction-plan drafting standards and subdivision-compliance provisions, with further field-change and change-order language directed for preparation. [Full DPM committee record](/development-land-use/development-process/#development-process-manual) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-march-7-2018-executive-committee-minutes.pdf)
+
 - [Special Order 19 Notice to Contractor: Private Drainage Facilities Within City Right-Of-Way, Revision December 2022 (Archived PDF)](https://files.abqinfo.com/transportation/design-references/cabq-special-order-19-private-drainage-facilities-2022.pdf)
 
   The standard plan notes require a sidewalk culvert built to City Standard Drawing 2236, a Storm Maintenance pre-forming meeting, an excavation permit, utility notice, and compliance with construction safety law.
