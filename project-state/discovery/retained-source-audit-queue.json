@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-12T19:20:09.1465456Z",
+  "generated_at": "2026-09-13T00:08:17.7240320Z",
   "policy": "Every retained active government webpage is a document-discovery root. Recursively review relevant child pages and archive qualifying attached documents; access-controlled pages require rendered-browser review rather than silent completion.",
   "allowed_statuses": [
     "pending descendant crawl",
@@ -10,13 +10,13 @@
     "superseded"
   ],
   "counts": {
-    "pending descendant crawl": 462,
-    "crawled": 140,
-    "requires rendered-browser review": 0,
+    "pending descendant crawl": 435,
+    "crawled": 179,
+    "requires rendered-browser review": 1,
     "excluded": 0,
     "superseded": 0
   },
-  "next_pending_source_url": "https://cabq.legistar.com/LegislationDetail.aspx?ID=7733454&GUID=142361E4-4618-4419-B62F-1B4061437040&Options=ID%7CText%7C&Search=O-25-100",
+  "next_pending_source_url": "https://www.bernco.gov/public-works/development-review/tech-standards/",
   "records": [
     {
       "candidate_id": "src-68d721c82e0d347d",
@@ -163,15 +163,16 @@
       "title": "Menaul MRA Zoning Map Amendment - Enacted",
       "agency": "City of Albuquerque / CABQ Legistar",
       "canonical_page": "content/development-land-use/zoning-ido.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-09fdd8da28f09ff5-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 3,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "All three official attachments were reconciled: introduced src-c21e9ab0d771479f and final src-3f628ea52a79829e are superseded by the signed enacted O-2025-033 record src-09fdd8da28f09ff5, which is already archived and validated."
       ],
       "created_at": "2026-09-06T14:59:18.5583165Z",
-      "updated_at": "2026-09-06T14:59:18.5583165Z"
+      "updated_at": "2026-09-12T19:42:47.498346Z"
     },
     {
       "candidate_id": "src-241c664f388493fc",
@@ -179,15 +180,16 @@
       "title": "2026 Infrastructure Capital Improvements Plan Priorities - Enacted",
       "agency": "City of Albuquerque / CABQ Legistar",
       "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-241c664f388493fc-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 3,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "All three official attachments were reconciled: introduced src-af4dce5dc2c0d75e and final src-4b429f5077e7e49a are superseded by the signed enacted R-2026-024 record src-241c664f388493fc, which is already archived and validated."
       ],
       "created_at": "2026-09-06T14:59:18.5583165Z",
-      "updated_at": "2026-09-06T14:59:18.5583165Z"
+      "updated_at": "2026-09-12T19:42:47.6350822Z"
     },
     {
       "candidate_id": "src-4e595175bd75b740",
@@ -195,15 +197,16 @@
       "title": "2025 Downtown Albuquerque Parking Study (EC-26-175)",
       "agency": "City of Albuquerque",
       "canonical_page": "content/development-land-use/redevelopment-plans.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-4e595175bd75b740-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 1,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The sole official attachment is the already archived and validated 2025 Downtown Albuquerque Parking Study, candidate src-4e595175bd75b740; no additional version or attachment was found."
       ],
       "created_at": "2026-09-05T00:13:12.468734Z",
-      "updated_at": "2026-09-05T00:13:12.468734Z"
+      "updated_at": "2026-09-12T19:42:47.7360457Z"
     },
     {
       "candidate_id": "src-a6a63111f9b4ba00",
@@ -228,15 +231,16 @@
       "title": "UNM Campus Planning",
       "agency": "University of New Mexico",
       "canonical_page": "content/transportation/transportation-plans.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-87fa3827b36c8915-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 3,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The source exposes three substantive PDFs: the oversized Integrated Campus Plan remains requires-human-review; the two-page-spread Safe Mobility Action Plan is a noncanonical presentation of archived validated src-a98e0f22c3231266; and UNM 2040 was added as pending-review candidate src-e0624ecba79f3f17."
       ],
       "created_at": "2026-09-01T21:57:23.4864727Z",
-      "updated_at": "2026-09-01T21:57:23.4864727Z"
+      "updated_at": "2026-09-12T19:41:12.5253604Z"
     },
     {
       "candidate_id": "src-9fa20b87264a7a5c",
@@ -346,15 +350,16 @@
       "title": "Development Process Manual Chapter 28: Improvements Within the Public Right-of-Way",
       "agency": "City of Albuquerque",
       "canonical_page": "content/development-land-use/development-process.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-e6c9a8cffdca81f1-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 112,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The official directory currently exposes 112 static documents; every URL is already represented in the master inventory. The retained Chapter 28 record is already archived and validated; other records keep their existing individual review states."
       ],
       "created_at": "2026-08-31T19:48:40.0854408Z",
-      "updated_at": "2026-08-31T19:48:40.0854408Z"
+      "updated_at": "2026-09-12T19:43:36.0163832Z"
     },
     {
       "candidate_id": "src-46237fe417ee1bb1",
@@ -415,15 +420,16 @@
       "title": "Coronado Metropolitan Redevelopment Area Enacted Plan Packet",
       "agency": "City of Albuquerque",
       "canonical_page": "content/development-land-use/redevelopment-plans.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-c4cf54190d8fe881-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 53,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The official directory currently exposes 53 static documents; every URL is already represented in the master inventory. The retained Coronado MRA packet is already archived and validated; other records keep their existing individual review states."
       ],
       "created_at": "2026-09-01T00:56:18.9378653Z",
-      "updated_at": "2026-09-01T00:56:18.9378653Z"
+      "updated_at": "2026-09-12T19:43:36.1318557Z"
     },
     {
       "candidate_id": "src-82eb4064df12e83a",
@@ -431,15 +437,16 @@
       "title": "Tingley Beach Metropolitan Redevelopment Area Designation Resolution R-305",
       "agency": "City of Albuquerque",
       "canonical_page": "content/development-land-use/redevelopment-plans.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-82eb4064df12e83a-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 29,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The official directory currently exposes 29 static documents; every URL is already represented in the master inventory. The retained Tingley Beach designation resolution is already archived and validated; other records keep their existing individual review states."
       ],
       "created_at": "2026-08-31T20:41:00.1441823Z",
-      "updated_at": "2026-08-31T20:41:00.1441823Z"
+      "updated_at": "2026-09-12T19:43:36.2197803Z"
     },
     {
       "candidate_id": "src-f42f72507c457eda",
@@ -447,15 +454,16 @@
       "title": "Albuquerque Address Report",
       "agency": "City of Albuquerque",
       "canonical_page": "content/maps/dashboards.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-f42f72507c457eda-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The live VertiGIS address-report application returned no authored descendant links or static documents; it remains correctly classified as a live official service."
       ],
       "created_at": "2026-09-04T23:24:57.8641644Z",
-      "updated_at": "2026-09-04T23:24:57.8641644Z"
+      "updated_at": "2026-09-12T19:44:58.523353Z"
     },
     {
       "candidate_id": "src-57b7552826150d27",
@@ -538,15 +546,16 @@
       "title": "NMDOT Traffic Data Management System",
       "agency": "New Mexico Department of Transportation",
       "canonical_page": "content/transportation/operations-data.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "requires rendered-browser review",
+      "crawl_output": "project-state/discovery/src-227eb253ea98b4dd-retained-source-http-audit-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Five crawler attempts and a direct HTTP inspection returned status 202 with an empty body; rendered-browser review is required to establish whether the live traffic-data application exposes any static descendants."
       ],
       "created_at": "2026-09-04T14:33:15.6681742Z",
-      "updated_at": "2026-09-04T14:33:15.6681742Z"
+      "updated_at": "2026-09-12T19:44:58.7786799Z"
     },
     {
       "candidate_id": "src-8a96e3fdb3ea48a0",
@@ -592,15 +601,16 @@
       "title": "UNM Bike Valet Program",
       "agency": "University of New Mexico",
       "canonical_page": "content/transportation/bicycling/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-c3477a0d3a776c58-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The current program page links operational information, feedback, related transportation pages, and live campus maps; it exposes no static document descendant."
       ],
       "created_at": "2026-09-01T23:04:40.8952426Z",
-      "updated_at": "2026-09-01T23:04:40.8952426Z"
+      "updated_at": "2026-09-12T19:41:12.6529625Z"
     },
     {
       "candidate_id": "src-10f34252a9036d7e",
@@ -608,15 +618,16 @@
       "title": "UNM Electric Vehicle Charging",
       "agency": "University of New Mexico",
       "canonical_page": "content/transportation/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-10f34252a9036d7e-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The current charging page links operational information and live campus-map locations; it exposes no static document descendant."
       ],
       "created_at": "2026-09-01T23:04:40.8952426Z",
-      "updated_at": "2026-09-01T23:04:40.8952426Z"
+      "updated_at": "2026-09-12T19:41:12.7588323Z"
     },
     {
       "candidate_id": "src-f81c048564bd8a31",
@@ -700,15 +711,16 @@
       "title": "NMDOT Planning Division GIS Hub",
       "agency": "New Mexico Department of Transportation",
       "canonical_page": "content/maps/maps.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-583e0e4b02efb676-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The live ArcGIS Hub application returned no static document links in the server response; it remains correctly classified as a live official GIS service."
       ],
       "created_at": "2026-09-04T14:33:15.6681742Z",
-      "updated_at": "2026-09-04T14:33:15.6681742Z"
+      "updated_at": "2026-09-12T19:44:58.6717249Z"
     },
     {
       "candidate_id": "src-e45ef8b986f98b89",
@@ -790,15 +802,16 @@
       "title": "UNM Greenhouse Gas Emissions",
       "agency": "University of New Mexico",
       "canonical_page": "content/city-data/climate-environment.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-71f908f1d56d7adc-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 3,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The page links the FY2024 greenhouse-gas inventory, FY2025 update, and 2025-2030 sustainability plan; all three are already archived and validated as src-ac079a5257dc7c8c, src-e968f9c2d99755fa, and src-a7182f27b9c79459."
       ],
       "created_at": "2026-09-01T23:04:40.8952426Z",
-      "updated_at": "2026-09-01T23:04:40.8952426Z"
+      "updated_at": "2026-09-12T19:41:12.8585617Z"
     },
     {
       "candidate_id": "src-64b93a7e3b77b3c8",
@@ -806,15 +819,16 @@
       "title": "UNM Sustainable Transportation",
       "agency": "University of New Mexico",
       "canonical_page": "content/transportation/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-64b93a7e3b77b3c8-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The page links live campus maps and current UNM transportation programs but exposes no static document descendant."
       ],
       "created_at": "2026-09-01T23:04:40.8952426Z",
-      "updated_at": "2026-09-01T23:04:40.8952426Z"
+      "updated_at": "2026-09-12T19:41:12.9707713Z"
     },
     {
       "candidate_id": "src-1df2696d46cb977a",
@@ -822,15 +836,16 @@
       "title": "UNM Sustainability Strategic Plan",
       "agency": "University of New Mexico",
       "canonical_page": "content/city-data/climate-environment.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-1df2696d46cb977a-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 1,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The page links the already archived and validated UNM Sustainability Strategic Plan 2025-2030, candidate src-a7182f27b9c79459; no additional static document descendant was found."
       ],
       "created_at": "2026-09-01T23:04:40.8952426Z",
-      "updated_at": "2026-09-01T23:04:40.8952426Z"
+      "updated_at": "2026-09-12T19:41:13.0745034Z"
     },
     {
       "candidate_id": "src-fe3273f1de13882d",
@@ -993,15 +1008,16 @@
       "title": "Foothill Pond Feasibility Study",
       "agency": "Bernalillo County",
       "canonical_page": "content/public-works/stormwater-drainage.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-3531b330bc1f738f-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page contains no linked static documents or descendant project pages; its only main-content link is a telephone contact."
       ],
       "created_at": "2026-09-03T13:05:59.067889Z",
-      "updated_at": "2026-09-03T13:05:59.067889Z"
+      "updated_at": "2026-09-12T19:38:41.3151492Z"
     },
     {
       "candidate_id": "src-161e9721e179bb26",
@@ -1364,15 +1380,16 @@
       "title": "Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2017)",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-e982ea5e5e064616-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 1,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page links one official 2017 Gantt chart PDF, already inventoried as pending-review candidate src-8598b5c498e08c1b; no other document descendant was found."
       ],
       "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
+      "updated_at": "2026-09-12T19:38:41.4392542Z"
     },
     {
       "candidate_id": "src-202ad91d5808008d",
@@ -1380,15 +1397,16 @@
       "title": "Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2018)",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-202ad91d5808008d-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page contains no linked static documents or descendant project pages; its only main-content link is a telephone contact."
       ],
       "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
+      "updated_at": "2026-09-12T19:38:41.534637Z"
     },
     {
       "candidate_id": "src-b70b511cb25dfe10",
@@ -1396,15 +1414,16 @@
       "title": "Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2015)",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-b70b511cb25dfe10-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 1,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page links one official 2015 project schedule PDF, already inventoried as pending-review candidate src-ca8b9b57d396508c; no other document descendant was found."
       ],
       "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
+      "updated_at": "2026-09-12T19:38:41.6361227Z"
     },
     {
       "candidate_id": "src-60c67771fb47956a",
@@ -1412,15 +1431,16 @@
       "title": "Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2021)",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-60c67771fb47956a-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page contains no linked static documents or descendant project pages; its only main-content links are telephone contacts."
       ],
       "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
+      "updated_at": "2026-09-12T19:38:41.7301642Z"
     },
     {
       "candidate_id": "src-64710f1309ac2574",
@@ -1428,15 +1448,16 @@
       "title": "Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2016)",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-64710f1309ac2574-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 1,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes 1 official static document descendant(s); every document URL is already represented in the master inventory and retains its existing individual review state."
       ],
       "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
+      "updated_at": "2026-09-12T23:39:37.3661457Z"
     },
     {
       "candidate_id": "src-8919f64d734bdb83",
@@ -1444,15 +1465,16 @@
       "title": "Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2019)",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-8919f64d734bdb83-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
+      "updated_at": "2026-09-12T23:39:37.4766421Z"
     },
     {
       "candidate_id": "src-d7007a453ae04a79",
@@ -1460,15 +1482,16 @@
       "title": "Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2020)",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-d7007a453ae04a79-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
+      "updated_at": "2026-09-12T23:39:37.5647029Z"
     },
     {
       "candidate_id": "src-0234c5a50d77383f",
@@ -1476,15 +1499,16 @@
       "title": "Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2022)",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-0234c5a50d77383f-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
+      "updated_at": "2026-09-12T23:39:37.6430283Z"
     },
     {
       "candidate_id": "src-0763fdd4070f01f0",
@@ -1492,15 +1516,16 @@
       "title": "Chico Project Phase 1 Comfort Way And Ladera Rd Improvements",
       "agency": "Bernalillo County",
       "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-0763fdd4070f01f0-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-10T15:52:28.3151869Z",
-      "updated_at": "2026-09-10T15:52:28.3151869Z"
+      "updated_at": "2026-09-12T23:39:37.727111Z"
     },
     {
       "candidate_id": "src-b2680de9b7aa9d6b",
@@ -1562,15 +1587,16 @@
       "title": "Isleta Boulevard Corridor Phase I Design Schedule",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-c2d601aabba1d8b3-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 2,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes 2 official static document descendant(s); every document URL is already represented in the master inventory and retains its existing individual review state."
       ],
       "created_at": "2026-09-03T01:18:16.7547158Z",
-      "updated_at": "2026-09-03T01:18:16.7547158Z"
+      "updated_at": "2026-09-12T23:39:37.8297539Z"
     },
     {
       "candidate_id": "src-054c70be093fec44",
@@ -1614,15 +1640,16 @@
       "title": "Central Atrisco Fiberoptic Expansion Project",
       "agency": "Bernalillo County",
       "canonical_page": "content/public-works/capital-projects.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-62d3b321644b2b1a-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-03T13:43:06.8237073Z",
-      "updated_at": "2026-09-03T13:43:06.8237073Z"
+      "updated_at": "2026-09-12T23:39:37.927515Z"
     },
     {
       "candidate_id": "src-4fa70bed8f8460f7",
@@ -1630,15 +1657,16 @@
       "title": "Sunset Road Reconstruction Phase 2",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-4fa70bed8f8460f7-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-03T13:43:06.8237073Z",
-      "updated_at": "2026-09-03T13:43:06.8237073Z"
+      "updated_at": "2026-09-12T23:39:38.0493713Z"
     },
     {
       "candidate_id": "src-14bf071bcc9dbde3",
@@ -1663,15 +1691,16 @@
       "title": "Tijeras Creek Watershed Restoration Project",
       "agency": "Bernalillo County",
       "canonical_page": "content/public-works/stormwater-drainage.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-ebce549c834584d9-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-03T13:43:06.8237073Z",
-      "updated_at": "2026-09-03T13:43:06.8237073Z"
+      "updated_at": "2026-09-12T23:39:38.152612Z"
     },
     {
       "candidate_id": "src-cff5c8af175867bc",
@@ -1679,15 +1708,16 @@
       "title": "Sunset Road Improvements: Gonzales to Neetsie",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-cff5c8af175867bc-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-03T01:18:16.7547158Z",
-      "updated_at": "2026-09-03T01:18:16.7547158Z"
+      "updated_at": "2026-09-12T23:39:38.2676067Z"
     },
     {
       "candidate_id": "src-86c8e33bbd9ad791",
@@ -1695,15 +1725,16 @@
       "title": "Sunset Road Improvements Project Map",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-86c8e33bbd9ad791-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-03T01:18:16.7547158Z",
-      "updated_at": "2026-09-03T01:18:16.7547158Z"
+      "updated_at": "2026-09-12T23:39:38.3874974Z"
     },
     {
       "candidate_id": "src-2aa795138321bebe",
@@ -1780,15 +1811,16 @@
       "title": "4th Street Pavement Preservation",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-e7837973289f5918-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 1,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes 1 official static document descendant(s); every document URL is already represented in the master inventory and retains its existing individual review state."
       ],
       "created_at": "2026-09-03T01:18:16.7547158Z",
-      "updated_at": "2026-09-03T01:18:16.7547158Z"
+      "updated_at": "2026-09-12T23:39:38.4766469Z"
     },
     {
       "candidate_id": "src-84331f3cfb0f2318",
@@ -1814,15 +1846,16 @@
       "title": "Foothill Drive",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-99204ec44bdcdca0-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-03T13:43:06.8237073Z",
-      "updated_at": "2026-09-03T13:43:06.8237073Z"
+      "updated_at": "2026-09-12T23:39:38.5877038Z"
     },
     {
       "candidate_id": "src-888e72a3531b11f9",
@@ -1865,15 +1898,16 @@
       "title": "2nd Street ADA Improvements",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-dd3b3cd24c247697-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-03T01:18:16.7547158Z",
-      "updated_at": "2026-09-03T01:18:16.7547158Z"
+      "updated_at": "2026-09-12T23:39:38.6879987Z"
     },
     {
       "candidate_id": "src-06efbb4ef116cd14",
@@ -1881,15 +1915,16 @@
       "title": "2nd Street ADA Improvements Phase 2 Map",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-06efbb4ef116cd14-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-03T01:18:16.7547158Z",
-      "updated_at": "2026-09-03T01:18:16.7547158Z"
+      "updated_at": "2026-09-12T23:39:38.7941917Z"
     },
     {
       "candidate_id": "src-219c8ac7cde52685",
@@ -1897,15 +1932,16 @@
       "title": "Barcelona Road Storm Drain Project Phase 2A",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-219c8ac7cde52685-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-03T01:18:16.7547158Z",
-      "updated_at": "2026-09-03T01:18:16.7547158Z"
+      "updated_at": "2026-09-12T23:39:38.9046038Z"
     },
     {
       "candidate_id": "src-639a0614f2314c1a",
@@ -1913,15 +1949,16 @@
       "title": "Isleta Boulevard Corridor Phase II Design Schedule",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-639a0614f2314c1a-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 1,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes 1 official static document descendant(s); every document URL is already represented in the master inventory and retains its existing individual review state."
       ],
       "created_at": "2026-09-02T20:51:26.6242952Z",
-      "updated_at": "2026-09-02T20:51:26.6242952Z"
+      "updated_at": "2026-09-12T23:39:39.006881Z"
     },
     {
       "candidate_id": "src-9e44e9bc1ed7b70a",
@@ -1929,15 +1966,16 @@
       "title": "Bridge Boulevard at Cortez Intersection",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-9e44e9bc1ed7b70a-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-03T01:18:16.7547158Z",
-      "updated_at": "2026-09-03T01:18:16.7547158Z"
+      "updated_at": "2026-09-12T23:39:39.1343577Z"
     },
     {
       "candidate_id": "src-cc2a2198a662141c",
@@ -1945,15 +1983,16 @@
       "title": "Isleta Blvd Corridor Lighting",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-cc2a2198a662141c-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-03T13:05:59.067889Z",
-      "updated_at": "2026-09-03T13:05:59.067889Z"
+      "updated_at": "2026-09-12T23:39:39.2470906Z"
     },
     {
       "candidate_id": "src-1ed20b8190a6304d",
@@ -2030,16 +2069,17 @@
       "title": "For a list of current projects, click here.",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/current.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": "project-state/discovery/bernco-current-projects-crawl.json",
-      "discovered_documents": 32,
-      "archived_documents": 6,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-6bb5c9d96d6a080d-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 1,
+      "archived_documents": 0,
       "processing_notes": [
         "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
-        "Corrected crawler completed the full current-project page frontier on 2026-08-28: 40 pages retrieved with zero errors and 82 candidates captured. Remaining newly inventoried attachments require relevance review and terminal disposition before this audit closes."
+        "Corrected crawler completed the full current-project page frontier on 2026-08-28: 40 pages retrieved with zero errors and 82 candidates captured. Remaining newly inventoried attachments require relevance review and terminal disposition before this audit closes.",
+        "The current-projects index exposes 41 authored links. Every child page and the linked Bridge Boulevard Corridor Redevelopment Plan is already represented in the retained-source queue or master inventory; no missing descendant was found."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-28T22:01:37.112815Z"
+      "updated_at": "2026-09-12T23:39:39.3574331Z"
     },
     {
       "candidate_id": "src-c540ee6e20ebd64c",
@@ -4649,6 +4689,54 @@
       "updated_at": "2026-08-31T15:55:51.6069717Z"
     },
     {
+      "candidate_id": "src-e12c77bb460b9c8f",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/council_sas_-_scopes.pdf/view",
+      "title": "2009 Council Neighborhood Set-Aside Project Scopes",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.7240320Z",
+      "updated_at": "2026-09-13T00:08:17.7240320Z"
+    },
+    {
+      "candidate_id": "src-cb27c408e8c26a66",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/council_sas_-_summary.pdf/view",
+      "title": "2009–2017 Council Neighborhood Set-Aside General Obligation Bond Summary",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.7240320Z",
+      "updated_at": "2026-09-13T00:08:17.7240320Z"
+    },
+    {
+      "candidate_id": "src-999d681b4e75a4c1",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/cultural_services_-_scope.pdf/view",
+      "title": "2009 Cultural Services General Obligation Bond Project Scopes",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.7240320Z",
+      "updated_at": "2026-09-13T00:08:17.7240320Z"
+    },
+    {
       "candidate_id": "src-0352ae60169eac10",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/family_and_community_services_-_scope.pdf/view",
       "title": "family and community services scope.pdf",
@@ -4663,6 +4751,102 @@
       ],
       "created_at": "2026-09-10T15:52:28.3151869Z",
       "updated_at": "2026-09-10T15:52:28.3151869Z"
+    },
+    {
+      "candidate_id": "src-e69e9150b150bc1a",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/fire_-_scope.pdf/view",
+      "title": "2009 Fire General Obligation Bond Project Scopes",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.7240320Z",
+      "updated_at": "2026-09-13T00:08:17.7240320Z"
+    },
+    {
+      "candidate_id": "src-b7ef66c741b8a886",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/fire_-_summary.pdf/view",
+      "title": "2009–2017 Fire General Obligation Bond Summary",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.7240320Z",
+      "updated_at": "2026-09-13T00:08:17.7240320Z"
+    },
+    {
+      "candidate_id": "src-768a6855fcfaf443",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/library_bonds.pdf/view",
+      "title": "2009 Library General Obligation Bond Authorization",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.7240320Z",
+      "updated_at": "2026-09-13T00:08:17.7240320Z"
+    },
+    {
+      "candidate_id": "src-5603714dac7351ba",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/police_-_scope.pdf/view",
+      "title": "2009 Police General Obligation Bond Project Scopes",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.7240320Z",
+      "updated_at": "2026-09-13T00:08:17.7240320Z"
+    },
+    {
+      "candidate_id": "src-535234f371b3922c",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/police_-_summary.pdf/view",
+      "title": "2009–2017 Police General Obligation Bond Summary",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.7240320Z",
+      "updated_at": "2026-09-13T00:08:17.7240320Z"
+    },
+    {
+      "candidate_id": "src-b049c4df2812749b",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/public_safety_bonds.pdf/view",
+      "title": "2009 Public Safety General Obligation Bond Authorization",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.7240320Z",
+      "updated_at": "2026-09-13T00:08:17.7240320Z"
     },
     {
       "candidate_id": "src-370fed4be1f1effa",
@@ -4681,6 +4865,22 @@
       "updated_at": "2026-08-31T19:58:16.661498Z"
     },
     {
+      "candidate_id": "src-7567c5f27fceba0a",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/senior_family_community_center_community_enhancement_project_bonds.pdf/view",
+      "title": "2009 Senior, Family, Community Center, and Community Enhancement Project Bond Authorization",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.7240320Z",
+      "updated_at": "2026-09-13T00:08:17.7240320Z"
+    },
+    {
       "candidate_id": "src-e8df08f8bb47b981",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/street_bonds.pdf/view",
       "title": "2009 Streets General Obligation Bond Project Scopes",
@@ -4695,6 +4895,54 @@
       ],
       "created_at": "2026-09-09T20:48:04.9375036Z",
       "updated_at": "2026-09-09T20:48:04.9375036Z"
+    },
+    {
+      "candidate_id": "src-b9402ce7e2e6c22f",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/uetf_2010-2011_summary.pdf/view",
+      "title": "Urban Enhancement Trust Fund 2010–2011 Funding Summary",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.7240320Z",
+      "updated_at": "2026-09-13T00:08:17.7240320Z"
+    },
+    {
+      "candidate_id": "src-f70c337140899545",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/uetf_2010-2011.pdf/view",
+      "title": "Urban Enhancement Trust Fund 2010–2011 Program Overview",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.7240320Z",
+      "updated_at": "2026-09-13T00:08:17.7240320Z"
+    },
+    {
+      "candidate_id": "src-10edc718610865b0",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/uetf_2010-2011projects.pdf/view",
+      "title": "Urban Enhancement Trust Fund 2010–2011 Funded Projects",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.7240320Z",
+      "updated_at": "2026-09-13T00:08:17.7240320Z"
     },
     {
       "candidate_id": "src-25501032bfbfa682",

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-09-12T23:48:00Z",
+  "scope": "Fresh integration-time verification of the unique successor URLs proposed for the 15-record City HTTP-404 targeted replacement queue.",
+  "results": [
+    {"url":"https://documents.cabq.gov/planning/DesignReviewServices/DRC2018/City%20Engineers%20Unit%20Price%20Update%202023%20FINAL.pdf","http_status":200,"bytes":483850,"content_type":"application/pdf","result":"passed"},
+    {"url":"https://documents.cabq.gov/planning/DevelopmentReviewServices/DRAINAGE%20AND%20TRANSPORTATION%20APPLICATION.pdf","http_status":200,"bytes":256937,"content_type":"application/pdf","result":"passed"},
+    {"url":"https://documents.cabq.gov/planning/online-forms/SITE%20PLAN_ADMINISTRATIVE_DFT_CHECKLIST.pdf","http_status":200,"bytes":227845,"content_type":"application/pdf","result":"passed"},
+    {"url":"https://documents.cabq.gov/planning/development-facilitation-team/Form%20SP.pdf","http_status":200,"bytes":162366,"content_type":"application/pdf","result":"passed"},
+    {"url":"https://codelibrary.amlegal.com/codes/albuquerque/latest/albuqcharter/0-0-0-1","http_status":403,"result":"scripted retrieval blocked by publisher; authoritative City code-library route independently preserved","note":"The current City Council history page links the American Legal Albuquerque code library; the specific library path identifies the Albuquerque Charter."},
+    {"url":"https://www.cabq.gov/council/find-your-councilor/district-9/district-9-councilor-expenses","http_status":404,"result":"failed; rejected as successor"},
+    {"url":"https://www.cabq.gov/council/find-your-councilor/district-9","http_status":200,"result":"passed current authoritative page; no expense-record link present"},
+    {"url":"https://abq.legistar.com/View.ashx?M=AADA&ID=1423923&GUID=F6C64B05-743B-42B8-9A92-8E97899947F7","http_status":200,"bytes":618792,"content_type":"text/html","result":"passed accessible agenda"},
+    {"url":"https://abq.legistar.com/View.ashx?M=A&ID=1430999&GUID=9AB0CF1B-BE2A-439E-8983-E91E10728DD6","http_status":200,"bytes":173660,"content_type":"application/pdf","result":"passed"},
+    {"url":"https://abq.legistar.com/View.ashx?M=A&ID=1423923&GUID=F6C64B05-743B-42B8-9A92-8E97899947F7","http_status":200,"bytes":224033,"content_type":"application/pdf","result":"passed"},
+    {"url":"https://abq.legistar.com/View.ashx?M=MADA&ID=1423924&GUID=80E30194-1336-4A28-B223-7570CC810900","http_status":200,"bytes":662320,"content_type":"text/html","result":"passed accessible minutes"},
+    {"url":"https://abq.legistar.com/View.ashx?M=M&ID=1423924&GUID=80E30194-1336-4A28-B223-7570CC810900","http_status":200,"bytes":242136,"content_type":"application/pdf","result":"passed"},
+    {"url":"https://www.cabq.gov/neighborhood-traffic-management-program/documents/2020-ntmp-manual.pdf","http_status":200,"bytes":4101479,"content_type":"application/pdf","result":"passed"}
+  ],
+  "district_9_correction": "The Claude-supplied expense-page successor was rejected after a fresh 404, a full authored-link crawl of the current District 9 page, and an official City-site search found no replacement. The inventory resolution records authoritative retirement rather than a false successor."
+}

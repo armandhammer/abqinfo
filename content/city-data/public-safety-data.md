@@ -92,6 +92,26 @@ Maintained public-safety dashboards, police statistics, geographic breakdowns, r
 
 ## Fire and Emergency Response
 
+- [2009 Fire General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2009-fire-go-bond-project-scopes.pdf)
+
+  Details the 2009 Fire bond scopes for replacing outdated emergency response apparatus, rehabilitating fire stations, acquiring land for Station 9 expansion, and renovating Fire Station 2. [Full 2009 capital-program record](/city-data/capital-spending/#2009-general-obligation-bond-program) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/fire_-_scope.pdf)
+
+- [2009–2017 Fire General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2009-2017-fire-go-bond-summary.pdf)
+
+  Schedules $22.9 million of Fire bond funding through 2017 for apparatus replacement, fire station rehabilitation, land acquisition for the Station 9 expansion, and renovation of Fire Station 2. [Full 2009 capital-program record](/city-data/capital-spending/#2009-general-obligation-bond-program) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/fire_-_summary.pdf)
+
+- [2009 Police General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2009-police-go-bond-project-scopes.pdf)
+
+  Details the 2009 Police bond scopes, including the Sixth Area Command Phase II, marked police vehicle replacement, Cibola and Ellison facility work, and headquarters improvements. [Full 2009 capital-program record](/city-data/capital-spending/#2009-general-obligation-bond-program) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/police_-_scope.pdf)
+
+- [2009–2017 Police General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2009-2017-police-go-bond-summary.pdf)
+
+  Schedules Police bond funding through 2017 for the Sixth Area Command Phase II, marked police vehicles, facility renovation, and related public safety capital investments. [Full 2009 capital-program record](/city-data/capital-spending/#2009-general-obligation-bond-program) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/police_-_summary.pdf)
+
+- [2009 Public Safety General Obligation Bond Authorization (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2009-public-safety-go-bond-authorization.pdf)
+
+  Preserves the 2009 Public Safety bond authorization sheet, covering fire apparatus, the Sixth Area Command, Cibola facilities, and related police and fire capital purposes. [Full 2009 capital-program record](/city-data/capital-spending/#2009-general-obligation-bond-program) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/public_safety_bonds.pdf)
+
 - [2011 Police General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2011-police-go-bond-project-scopes-published.pdf)
 
   Details 2011 Police bond scopes for purchasing marked and unmarked police vehicles and related Albuquerque Police Department facility and equipment investments. [Full 2011 published-scope record](/city-data/capital-spending/#2011-published-scope-and-version-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/police_scope.pdf)

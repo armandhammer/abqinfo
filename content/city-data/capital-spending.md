@@ -242,6 +242,58 @@ These official City tables preserve the 2009 project scopes and the accompanying
 
   Details $16.257 million in scopes for City facilities, energy and water conservation, animal shelters, landfill remediation, environmental monitoring, information systems, fleet fueling, plan review, GIS, and public art. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/energy_water_conservation_public_fac_system_modernization_bonds.pdf)
 
+- [2009 Fire General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2009-fire-go-bond-project-scopes.pdf)
+
+  Details the 2009 Fire bond scopes for replacing outdated emergency response apparatus, rehabilitating fire stations, acquiring land for Station 9 expansion, and renovating Fire Station 2. [Public Safety Data placement](/city-data/public-safety-data/#fire-and-emergency-response) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/fire_-_scope.pdf)
+
+- [2009–2017 Fire General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2009-2017-fire-go-bond-summary.pdf)
+
+  Schedules $22.9 million of Fire bond funding through 2017 for apparatus replacement, fire station rehabilitation, land acquisition for the Station 9 expansion, and renovation of Fire Station 2. [Public Safety Data placement](/city-data/public-safety-data/#fire-and-emergency-response) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/fire_-_summary.pdf)
+
+- [2009 Police General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2009-police-go-bond-project-scopes.pdf)
+
+  Details the 2009 Police bond scopes, including the Sixth Area Command Phase II, marked police vehicle replacement, Cibola and Ellison facility work, and headquarters improvements. [Public Safety Data placement](/city-data/public-safety-data/#fire-and-emergency-response) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/police_-_scope.pdf)
+
+- [2009–2017 Police General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2009-2017-police-go-bond-summary.pdf)
+
+  Schedules Police bond funding through 2017 for the Sixth Area Command Phase II, marked police vehicles, facility renovation, and related public safety capital investments. [Public Safety Data placement](/city-data/public-safety-data/#fire-and-emergency-response) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/police_-_summary.pdf)
+
+- [2009 Cultural Services General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-cultural-services-go-bond-project-scopes.pdf)
+
+  Details 2009 Cultural Services bond scopes across the Biological Park, museums, libraries, and cultural facilities, including paving, exhibits, a bonsai facility, International District work, and feasibility studies. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/cultural_services_-_scope.pdf)
+
+- [2009 Council Neighborhood Set-Aside Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-council-neighborhood-set-aside-project-scopes.pdf)
+
+  Details nine pages of 2009 Council neighborhood set-aside project scopes by district, covering parks, alleys, beautification, amenities, economic development, and other district-specific neighborhood improvements. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/council_sas_-_scopes.pdf)
+
+- [2009–2017 Council Neighborhood Set-Aside General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-2017-council-neighborhood-set-aside-go-bond-summary.pdf)
+
+  Schedules Council neighborhood set-aside bond funding through 2017 by district, covering park, alley, beautification, amenity, and neighborhood enhancement allocations across all Council districts. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/council_sas_-_summary.pdf)
+
+- [2009 Library General Obligation Bond Authorization (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-library-go-bond-authorization.pdf)
+
+  Preserves the 2009 library bond authorization sheet, covering design, equipping, and construction of library facilities, feasibility work, and the purchase of library materials and collections. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/library_bonds.pdf)
+
+- [2009 Senior, Family, Community Center, and Community Enhancement Project Bond Authorization (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-senior-family-community-center-community-enhancement-bond-authorization.pdf)
+
+  Preserves the 2009 authorization sheet for senior, family, and community center bonds and community enhancement projects, covering acquisition, design, construction, and equipping of community facilities. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/senior_family_community_center_community_enhancement_project_bonds.pdf)
+
+- [2009 Public Safety General Obligation Bond Authorization (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2009-public-safety-go-bond-authorization.pdf)
+
+  Preserves the 2009 Public Safety bond authorization sheet, covering fire apparatus, the Sixth Area Command, Cibola facilities, and related police and fire capital purposes. [Public Safety Data placement](/city-data/public-safety-data/#fire-and-emergency-response) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/public_safety_bonds.pdf)
+
+- [Urban Enhancement Trust Fund 2010–2011 Program Overview (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-urban-enhancement-trust-fund-program-overview-2010-2011.pdf)
+
+  Describes the Urban Enhancement Trust Fund program for 2010 and 2011, including the committee, selection criteria, decade-plan relationship, and the process for awarding community enhancement funding. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/uetf_2010-2011.pdf)
+
+- [Urban Enhancement Trust Fund 2010–2011 Funding Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-urban-enhancement-trust-fund-funding-summary-2010-2011.pdf)
+
+  Summarizes Urban Enhancement Trust Fund allocations for the 2010 and 2011 cycle, recording the total program amount available for community enhancement awards. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/uetf_2010-2011_summary.pdf)
+
+- [Urban Enhancement Trust Fund 2010–2011 Funded Projects (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-urban-enhancement-trust-fund-funded-projects-2010-2011.pdf)
+
+  Lists the Urban Enhancement Trust Fund projects funded for 2010 and 2011 across fourteen pages, naming each organization, project, and award amount for community, cultural, and educational enhancement work. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/uetf_2010-2011projects.pdf)
+
 ### Energy, Water, Public Facilities, and System Modernization Bond Scopes
 
 This six-record sequence preserves the official City scope tables for successive bond elections, showing the changing allocations across public facilities, environmental health, information systems, energy conservation, and public art.

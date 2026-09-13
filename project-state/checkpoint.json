@@ -1,27 +1,27 @@
 {
-  "recorded_at": "2026-09-12T19:20:30Z",
-  "completed_item_range": "The legacy direct-source remediation batch freshly verified and archived 15 static documents across seven pages. All 15 public R2 downloads match exact size and SHA-256; the R2 inventory now records 1,117 objects and 8,598,804,453 bytes. All 15 existing direct-source-only site records now use the verified archive as the primary link and retain the official source link. Inventory, content-style, regression, retained-source-audit, and Hugo validation passed with zero errors; preview review remains pending.",
-  "total_candidates": 7077,
+  "recorded_at": "2026-09-13T00:08:18.9454970Z",
+  "completed_item_range": "Integrated 75 completed Claude research decisions, resolved the 15-record CABQ 404 replacement queue, audited 40 retained official source pages, and archived 15 qualified static documents (737,040 bytes) to R2. All 15 public downloads passed exact size and SHA-256 verification; 13 records were added under the 2009 General Obligation Bond Program, five were cross-listed under Fire and Emergency Response, and two DPM Executive Committee minutes were added under Development Process Manual.",
+  "total_candidates": 7079,
   "counts_by_status": {
-    "pending review": 2338,
-    "approved for addition": 0,
+    "pending review": 2249,
+    "approved for addition": 16,
     "downloading": 0,
     "downloaded": 9,
     "parsed": 0,
     "description drafted": 0,
     "placement assigned": 2,
     "implemented": 178,
-    "validated": 1419,
-    "excluded": 1380,
-    "duplicate": 1477,
-    "superseded": 159,
+    "validated": 1434,
+    "excluded": 1402,
+    "duplicate": 1494,
+    "superseded": 176,
     "blocked": 0,
-    "requires human review": 115
+    "requires human review": 119
   },
-  "remaining_nonterminal": 2349,
-  "next_pending_id": "src-04dfcbe1dcde70f8",
+  "remaining_nonterminal": 2276,
+  "next_pending_id": "src-049f7958bcc2f6da",
   "blockers": [
     "Four abbreviated-name 2011 GO-bond variants remain requires human review because their version order cannot be established: src-ca2ae8cb1ef13fdf, src-832bc2144296aa51, src-20cca95ec6dcbe4f, and src-9e6cb716ac7c28d9. They were not archived or published."
   ],
-  "resume_command": "In C:\\Users\\ben\\Documents\\ABQinfo\\tmp\\archive-batch-b on codex/archive-batch-2026-09-12-c, commit and push the completed remediation, then open and verify the focused preview PR."
+  "resume_command": "On codex/archive-batch-2026-09-12-d, commit and push the validated 15-document batch, create a PR, verify its temporary deployment and checks, then merge and confirm production."
 }
