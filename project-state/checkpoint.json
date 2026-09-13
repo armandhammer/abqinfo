@@ -1,27 +1,27 @@
 {
-  "recorded_at": "2026-09-13T00:08:18.9454970Z",
-  "completed_item_range": "Integrated 75 completed Claude research decisions, resolved the 15-record CABQ 404 replacement queue, audited 40 retained official source pages, and archived 15 qualified static documents (737,040 bytes) to R2. All 15 public downloads passed exact size and SHA-256 verification; 13 records were added under the 2009 General Obligation Bond Program, five were cross-listed under Fire and Emergency Response, and two DPM Executive Committee minutes were added under Development Process Manual.",
+  "recorded_at": "2026-09-13T00:41:38.0556371Z",
+  "completed_item_range": "Archived and publicly verified 16 DPM Executive Committee minutes from 2015 through 2018 (827,283 bytes; 16/16 exact size and SHA-256). Added all 16 under Development Process Manual, cross-listed five Chapter 22 drainage decisions under Hydrology and Development Review, and cross-listed nine transportation-design decisions under Development Review Design References. Full validation and PR are next.",
   "total_candidates": 7079,
   "counts_by_status": {
     "pending review": 2249,
-    "approved for addition": 16,
+    "approved for addition": 0,
     "downloading": 0,
     "downloaded": 9,
     "parsed": 0,
     "description drafted": 0,
     "placement assigned": 2,
     "implemented": 178,
-    "validated": 1434,
+    "validated": 1450,
     "excluded": 1402,
     "duplicate": 1494,
     "superseded": 176,
     "blocked": 0,
     "requires human review": 119
   },
-  "remaining_nonterminal": 2276,
+  "remaining_nonterminal": 2260,
   "next_pending_id": "src-049f7958bcc2f6da",
   "blockers": [
     "Four abbreviated-name 2011 GO-bond variants remain requires human review because their version order cannot be established: src-ca2ae8cb1ef13fdf, src-832bc2144296aa51, src-20cca95ec6dcbe4f, and src-9e6cb716ac7c28d9. They were not archived or published."
   ],
-  "resume_command": "On codex/archive-batch-2026-09-12-d, commit and push the validated 15-document batch, create a PR, verify its temporary deployment and checks, then merge and confirm production."
+  "resume_command": "On codex/archive-batch-2026-09-13-e, run full validation, commit and push the completed 16-document batch, create a PR, verify its temporary deployment and checks, then merge and confirm production."
 }
