@@ -108,87 +108,35 @@ Cross-cutting development process documents, manuals, and reference materials.
 
   [Official City Word document](https://documents.cabq.gov/planning/development-process-manual/DPM-PLANNING-DMD%20CHANGES_9-25-25.docx) · [Current amendments register](https://www.cabq.gov/planning/boards-commissions/development-process-manual-executive-committee/amendments-to-the-dpm)
 
-- [Development Process Executive Committee Minutes, September 24, 2014 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2014-09-24.pdf)
+- [Development Process Manual Executive Committee Minutes, 2014 (ABQInfo Historical Compilation, Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2014-abqinfo-compilation.pdf)
 
-  Records committee approval of Development Process Manual changes to fire-flow requirements, on-street parking, and grading and erosion-control standards, while documenting the update-procedure discussion.
+  Collects five official committee records tracing the committee's launch, the voiding and re-adoption of its first chapter changes, and approval of the Development Process Manual preface and update procedure.
 
-  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-sept-24-2014.pdf)
+  [Official City source library](https://documents.cabq.gov/planning/development-process-manual/)
 
-- [Development Process Manual Executive Committee Minutes, July 16, 2014 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2014-07-16.pdf)
+- [Development Process Manual Executive Committee Minutes, 2015 (ABQInfo Historical Compilation, Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2015-abqinfo-compilation.pdf)
 
-  Establishes the committee's internal rules of procedure, adopting a six-member quorum, majority and unanimous voting thresholds, Open Meetings compliance, and a requirement that the Development Process Manual be amended to reflect recorded voting results.
+  Collects seven official committee records documenting the planned division of the manual between the Integrated Development Ordinance and a technical standards manual, Chapter 23 subcommittee work, and Chapter 25 revisions.
 
-  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-july-16-2014.pdf)
+  [Official City source library](https://documents.cabq.gov/planning/development-process-manual/)
 
-- [Development Process Manual Executive Committee Minutes, December 17, 2014 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2014-12-17.pdf)
+- [Development Process Manual Executive Committee Minutes, 2016 (ABQInfo Historical Compilation, Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-abqinfo-compilation.pdf)
 
-  Records adoption of the Development Process Manual preface and update procedure, removing references to two dissolved subcommittees, consolidating that authority in the Executive Committee, and approving related language changes by motion.
+  Collects nine official committee records tracing Chapter 28's adoption, section-by-section approval of Chapter 22, stormwater modeling discussions, and the appointment of subcommittees for Chapters 24, 25, and 26.
 
-  [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-dec-17-2014.pdf)
+  [Official City source library](https://documents.cabq.gov/planning/development-process-manual/)
 
-- [Development Process Manual Executive Committee Minutes, December 16, 2015 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2015-12-16.pdf)
+- [Development Process Manual Executive Committee Minutes, 2017 (ABQInfo Historical Compilation, Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-abqinfo-compilation.pdf)
 
-  Records unanimous approval of revisions to Chapter 25, Water System Design, and defers the proposed new Chapter 28 on landscape and irrigation improvements to the January 2016 committee meeting. [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-dec-16-2015.pdf)
+  Collects fifteen official committee records documenting completion of drainage standards, approval of survey, public-transit, parking, pedestrian, pavement, and building-permit provisions, and continuing review of network-connectivity and drafting standards.
 
-- [Development Process Manual Executive Committee Minutes, September 7, 2016 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-09-07.pdf)
+  [Official City source library](https://documents.cabq.gov/planning/development-process-manual/)
 
-  Records approval of the new Chapter 28, amended so the green-space initiative applies to medians only, together with approval of Chapter 22 sections one through seven governing drainage and erosion control. [Stormwater and Drainage placement](/public-works/stormwater-drainage/#hydrology-and-development-review) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-sept-7-2016.pdf)
+- [Development Process Manual Executive Committee Meeting Records, 2018 (ABQInfo Historical Compilation, Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-records-2018-abqinfo-compilation.pdf)
 
-- [Development Process Manual Executive Committee Minutes, October 19, 2016 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-10-19.pdf)
+  Collects three official committee minutes plus the April 4 agenda preserved under the missing-minutes policy, documenting network-connectivity, intersection-design, construction-plan, and subdivision-compliance decisions and the final unfinished agenda items.
 
-  Records approval of Chapter 22 sections eight and nine on drainage and erosion control, and defers sections ten and eleven to the November 2016 Executive Committee meeting. [Stormwater and Drainage placement](/public-works/stormwater-drainage/#hydrology-and-development-review) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-oct-19-2016.pdf)
-
-- [Development Process Manual Executive Committee Minutes, January 18, 2017 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-01-18.pdf)
-
-  Records approval of Chapter 22 section twelve, continues section eleven, and defers section thirteen and Chapter 18 to the February 2017 Executive Committee meeting for further review. [Stormwater and Drainage placement](/public-works/stormwater-drainage/#hydrology-and-development-review) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-jan-18-2017.pdf)
-
-- [Development Process Manual Executive Committee Minutes, February 1, 2017 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-02-01.pdf)
-
-  Records approval of Chapter 22 section eleven and continues Chapter 22 section thirteen and Chapter 18 to the March 2017 Executive Committee meeting for additional discussion. [Stormwater and Drainage placement](/public-works/stormwater-drainage/#hydrology-and-development-review) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-feb-1-2017.pdf)
-
-- [Development Process Manual Executive Committee Minutes, March 1, 2017 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-03-01.pdf)
-
-  Records approval of Chapter 22 section thirteen as amended, Chapter 22 sections fourteen through seventeen, and Chapter 18, completing a substantial block of City drainage and erosion-control standards. [Stormwater and Drainage placement](/public-works/stormwater-drainage/#hydrology-and-development-review) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-march-1-2017.pdf)
-
-- [Development Process Manual Executive Committee Minutes, April 19, 2017 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-04-19.pdf)
-
-  Records unanimous approval of Chapter 2 as amended and continues Chapter 23 sections 3.4, 3.9.5, and 3.1 to the May 2017 Executive Committee meeting for further consideration. [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-april-19-2017.pdf)
-
-- [Development Process Manual Executive Committee Minutes, May 3, 2017 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-05-03.pdf)
-
-  Records approval of Chapter 23 sections 3.9.5 and 3.12 as amended, while continuing or deferring Chapter 26, Chapter 27, and Chapter 23 sections 3.4 and 3.6 to later meetings. [Design References placement](/transportation/design-references/#development-review-design-references) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-may-3-2017.pdf)
-
-- [Development Process Manual Executive Committee Minutes, May 17, 2017 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-05-17.pdf)
-
-  Records approval of Chapter 23 section 3.4 as presented and continues Chapter 26, Chapter 27, and Chapter 23 section 3.6 to June and July 2017 Executive Committee meetings. [Design References placement](/transportation/design-references/#development-review-design-references) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-may-17-2017.pdf)
-
-- [Development Process Manual Executive Committee Minutes, June 21, 2017 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-06-21.pdf)
-
-  Records approval of Chapter 26 on surveys and monumentation and of Chapter 23 sections 3.6 and 3.9, subject to illustration changes, while continuing section 3.7 and the Chapter 7 building-permit process. [Design References placement](/transportation/design-references/#development-review-design-references) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-june-21-2017.pdf)
-
-- [Development Process Manual Executive Committee Minutes, September 6, 2017 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-09-06.pdf)
-
-  Records approval of Chapter 23 section 3.7 on public transit and of the Chapter 7 building-permit process as a new section 2.5, while continuing Chapter 27 drafting standards to a later meeting. [Design References placement](/transportation/design-references/#development-review-design-references) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-sept-6-2017.pdf)
-
-- [Development Process Manual Executive Committee Minutes, October 4, 2017 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-10-04.pdf)
-
-  Records approval as amended of Chapter 23 section 3.8 on on-street parking and section 3.5 on pedestrian facilities, while continuing Chapter 27 drafting standards and network-connectivity provisions. [Design References placement](/transportation/design-references/#development-review-design-references) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-oct-4-2017.pdf)
-
-- [Development Process Manual Executive Committee Minutes, November 15, 2017 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-11-15.pdf)
-
-  Records approval of Chapter 23 section 3.3, Pavement Standards, and defers Chapter 27 drafting standards and Chapter 23 section 3.1 network connectivity to December 2017 Executive Committee meetings. [Design References placement](/transportation/design-references/#development-review-design-references) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-nov-15-2017.pdf)
-
-- [Development Process Manual Executive Committee Minutes, February 7, 2018 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2018-02-07.pdf)
-
-  Records approval of Chapter 23 section 3.1, Network Connectivity, as published with amended graphics, and defers intersection design, turn-lane and median design, and Chapter 27 drafting standards. [Design References placement](/transportation/design-references/#development-review-design-references) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-feb-7-2018.pdf)
-
-- [Development Process Manual Executive Committee Minutes, February 21, 2018 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2018-02-21.pdf)
-
-  Records approval of Chapter 23 section 3.9.6, Intersection Design, as discussed, and defers section 3.9.7 on turn-lane and median design to the March 2018 Executive Committee meeting. [Design References placement](/transportation/design-references/#development-review-design-references) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-meeting-minutes-feb-21-2018.pdf)
-
-- [Development Process Manual Executive Committee Minutes, March 7, 2018 (Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-minutes-2018-03-07.pdf)
-
-  Records approval of Chapter 27 drafting standards as proposed Chapter 4 construction plan standards and of subdivision-compliance provisions, with staff directed to draft new field-change and change-order language. [Design References placement](/transportation/design-references/#development-review-design-references) · [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/development-process-manual-march-7-2018-executive-committee-minutes.pdf)
+  [Official City source library](https://documents.cabq.gov/planning/development-process-manual/)
 
 ## Historic Preservation and Overlay-Zone Guidance
 
