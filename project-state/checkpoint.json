@@ -1,7 +1,7 @@
 {
-  "recorded_at": "2026-09-14T02:23:17.7905936Z",
-  "completed_item_range": "Built, archived, publicly byte-verified, and consolidated the 2003 General Obligation Bond Program: 21 original City records (92 source pages) now have one 117-page ABQInfo master record; 22 sparse component records remain preserved in R2 and inventory but have no standalone listing. Six site pages were updated; no PR or deployment has been created yet.",
-  "total_candidates": 7085,
+  "recorded_at": "2026-09-14T03:18:28.9890413Z",
+  "completed_item_range": "Reviewed, archived, and publicly byte-verified the 2024 Albuquerque Metropolitan Statistical Area Priority Climate Action Plan: a substantive 308-page City-led regional EPA CPRG plan, byte-identical to the official EPA PDF (4,632,373 bytes; SHA-256 230e94dad7e3ad51001febf18a041640fe8a6f5b04ce99aca93e51896cd39634). Added it under Climate Action Plans with both EPA provenance links.",
+  "total_candidates": 7086,
   "counts_by_status": {
     "pending review": 2245,
     "approved for addition": 0,
@@ -11,7 +11,7 @@
     "description drafted": 0,
     "placement assigned": 2,
     "implemented": 178,
-    "validated": 1438,
+    "validated": 1439,
     "excluded": 1424,
     "duplicate": 1494,
     "superseded": 176,
@@ -19,9 +19,9 @@
     "requires human review": 119
   },
   "remaining_nonterminal": 2434,
-  "next_pending_id": "src-04e406c4dde231a8",
+  "next_pending_id": "src-049f7958bcc2f6da",
   "blockers": [],
-  "resume_command": "Review the 2003 GO-bond consolidation diff, create the focused PR, verify its temporary deployment, then merge and confirm production if all checks pass.",
+  "resume_command": "Validate the climate-plan addition, create a focused PR with its temporary deployment, and merge after preview and checks pass.",
   "verification_campaign_totals": null,
   "history": [
     {
@@ -107,6 +107,84 @@
         "Four abbreviated-name 2011 GO-bond variants remain requires human review because their version order cannot be established: src-ca2ae8cb1ef13fdf, src-832bc2144296aa51, src-20cca95ec6dcbe4f, and src-9e6cb716ac7c28d9. They were not archived or published."
       ],
       "resume_command": "Continue codex/go-bond-annual-compilations by integrating project-state/discovery/claude-consolidation-2003-general-obligation-bond-program-master-record-2026-09-13.json. Archive and publicly verify any missing authoritative originals before building the 92-page provenance-preserving master record; do not make visible changes until all checks pass.",
+      "verification_campaign_totals": null
+    },
+    {
+      "recorded_at": "2026-09-14T02:23:17.7905936Z",
+      "completed_item_range": "Built, archived, publicly byte-verified, and consolidated the 2003 General Obligation Bond Program: 21 original City records (92 source pages) now have one 117-page ABQInfo master record; 22 sparse component records remain preserved in R2 and inventory but have no standalone listing. Six site pages were updated; no PR or deployment has been created yet.",
+      "total_candidates": 7085,
+      "counts_by_status": {
+        "pending review": 2245,
+        "approved for addition": 0,
+        "downloading": 0,
+        "downloaded": 9,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 2,
+        "implemented": 178,
+        "validated": 1438,
+        "excluded": 1424,
+        "duplicate": 1494,
+        "superseded": 176,
+        "blocked": 0,
+        "requires human review": 119
+      },
+      "remaining_nonterminal": 2434,
+      "next_pending_id": "src-04e406c4dde231a8",
+      "blockers": [],
+      "resume_command": "Review the 2003 GO-bond consolidation diff, create the focused PR, verify its temporary deployment, then merge and confirm production if all checks pass.",
+      "verification_campaign_totals": null
+    },
+    {
+      "recorded_at": "2026-09-14T02:39:08.7118252Z",
+      "completed_item_range": "PR 151 merged at 2026-09-14T02:27:11Z and production deployment passed: the 2003 General Obligation Bond Program master record is live on six pages. All 21 City originals, 22 retained component records, source URLs, hashes, R2 objects, and verification results remain preserved.",
+      "total_candidates": 7085,
+      "counts_by_status": {
+        "pending review": 2245,
+        "approved for addition": 0,
+        "downloading": 0,
+        "downloaded": 9,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 2,
+        "implemented": 178,
+        "validated": 1438,
+        "excluded": 1424,
+        "duplicate": 1494,
+        "superseded": 176,
+        "blocked": 0,
+        "requires human review": 119
+      },
+      "remaining_nonterminal": 2434,
+      "next_pending_id": "src-04e406c4dde231a8",
+      "blockers": [],
+      "resume_command": "Review research/staging/document-review/cprg-pcap-albuquerque-msa-city-of-albuquerque.pdf for provenance, relationship to existing City climate plans, standalone value, and archive readiness; make no visible or R2 change until the review is complete.",
+      "verification_campaign_totals": null
+    },
+    {
+      "recorded_at": "2026-09-14T02:53:44.7150158Z",
+      "completed_item_range": "Reviewed and verified the staged 2024 Albuquerque Metropolitan Statistical Area Priority Climate Action Plan: it is a substantive 308-page City-led regional EPA CPRG plan, byte-identical to the official EPA PDF (4,632,373 bytes; SHA-256 230e94dad7e3ad51001febf18a041640fe8a6f5b04ce99aca93e51896cd39634). It is distinct from the 2021 City plan and annual implementation reports and is approved for standalone publication after guarded R2 archival.",
+      "total_candidates": 7086,
+      "counts_by_status": {
+        "pending review": 2245,
+        "approved for addition": 1,
+        "downloading": 0,
+        "downloaded": 9,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 2,
+        "implemented": 178,
+        "validated": 1438,
+        "excluded": 1424,
+        "duplicate": 1494,
+        "superseded": 176,
+        "blocked": 0,
+        "requires human review": 119
+      },
+      "remaining_nonterminal": 2435,
+      "next_pending_id": "src-67baafb695734bcd",
+      "blockers": [],
+      "resume_command": "Archive and publicly verify src-67baafb695734bcd, then add it under Climate Action Plans with EPA source links as part of the next coherent archive-ready batch.",
       "verification_campaign_totals": null
     }
   ]
