@@ -16,7 +16,7 @@ from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import inch
 from reportlab.pdfgen import canvas
-from reportlab.platypus import PageBreak, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
+from reportlab.platypus import LongTable, PageBreak, Paragraph, SimpleDocTemplate, Spacer, TableStyle
 
 
 def sha256(path: Path) -> str:
@@ -57,23 +57,43 @@ def build_intro(manifest: dict, entries: list[dict], path: Path) -> int:
         Paragraph("Contents", styles["Heading2"]),
         Spacer(1, 0.08 * inch),
     ]
-    rows = [[Paragraph("Meeting record", styles["TOCHeader"]), Paragraph("Section", styles["TOCHeader"])]]
+    header = [Paragraph(manifest.get("record_label", "Record"), styles["TOCHeader"]), Paragraph("Section", styles["TOCHeader"])]
+    rows = []
     for entry in entries:
         rows.append([Paragraph(f"<b>{entry['date']}</b><br/>{entry['title']}", styles["TOC"]), Paragraph(f"page {entry['section_page']}", styles["TOC"])])
-    table = Table(rows, colWidths=[6.15 * inch, 0.7 * inch], repeatRows=1)
-    table.setStyle(TableStyle([
-        ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#123b5d")),
-        ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
-        ("GRID", (0, 0), (-1, -1), 0.35, colors.HexColor("#b7c4ce")),
-        ("VALIGN", (0, 0), (-1, -1), "TOP"),
-        ("ALIGN", (1, 1), (1, -1), "RIGHT"),
-        ("LEFTPADDING", (0, 0), (-1, -1), 6),
-        ("RIGHTPADDING", (0, 0), (-1, -1), 6),
-        ("TOPPADDING", (0, 0), (-1, -1), 5),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
-        ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, colors.HexColor("#f7f9fb")]),
-    ]))
-    story.extend([table, Spacer(1, 0.18 * inch), Paragraph(f"<b>Coverage:</b> {manifest['coverage_note']}", styles["Normal"])])
+
+    def contents_table(data_rows: list[list[Paragraph]]) -> LongTable:
+        table = LongTable([header] + data_rows, colWidths=[6.15 * inch, 0.7 * inch], repeatRows=1, splitByRow=1)
+        table.setStyle(TableStyle([
+            ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#123b5d")),
+            ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
+            ("GRID", (0, 0), (-1, -1), 0.35, colors.HexColor("#b7c4ce")),
+            ("VALIGN", (0, 0), (-1, -1), "TOP"),
+            ("ALIGN", (1, 1), (1, -1), "RIGHT"),
+            ("LEFTPADDING", (0, 0), (-1, -1), 6),
+            ("RIGHTPADDING", (0, 0), (-1, -1), 6),
+            ("TOPPADDING", (0, 0), (-1, -1), 5),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
+            ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, colors.HexColor("#f7f9fb")]),
+        ]))
+        return table
+
+    # Fixed contents-page groups prevent ReportLab from producing a narrow
+    # table fragment when a long source family nearly fills a page.
+    row_counts = manifest.get("contents_page_row_counts")
+    if row_counts:
+        if sum(int(count) for count in row_counts) != len(rows):
+            raise ValueError("contents_page_row_counts must account for every contents row")
+        cursor = 0
+        for index, count in enumerate(row_counts):
+            if index:
+                story.append(PageBreak())
+            next_cursor = cursor + int(count)
+            story.append(contents_table(rows[cursor:next_cursor]))
+            cursor = next_cursor
+    else:
+        story.append(contents_table(rows))
+    story.extend([Spacer(1, 0.18 * inch), Paragraph(f"<b>Coverage:</b> {manifest['coverage_note']}", styles["Normal"])])
     if manifest.get("editorial_note"):
         story.extend([Spacer(1, 0.12 * inch), Paragraph("Record note", styles["Heading3"]), Paragraph(manifest["editorial_note"], styles["Normal"])])
     story.extend([PageBreak(), Paragraph("Compilation provenance", styles["Heading2"]), Paragraph(manifest["provenance_note"], styles["Normal"]), Spacer(1, 0.14 * inch), Paragraph("How to cite a section", styles["Heading3"]), Paragraph("Cite the original City document title and date shown on its provenance sheet. Use the original archive URL when a stable file citation is required; use this compilation only as a convenient collected edition.", styles["Normal"])])
@@ -92,9 +112,9 @@ def build_separator(manifest: dict, entry: dict, path: Path, compilation_page: i
     body_style = ParagraphStyle("Body", parent=styles["Normal"], fontSize=10, leading=14, textColor=colors.HexColor("#263746"), spaceAfter=8)
     small_style = ParagraphStyle("Small", parent=styles["Normal"], fontSize=8.2, leading=11, textColor=colors.HexColor("#52606d"), wordWrap="CJK")
     story = [
-        Paragraph("Original City record", styles["Heading3"]),
+        Paragraph(manifest.get("source_record_label", "Original City record"), styles["Heading3"]),
         Paragraph(entry["title"], title_style),
-        Paragraph(f"<b>Meeting date:</b> {entry['date']}<br/><b>Original pages:</b> {entry['source_pages']}<br/><b>Inventory ID:</b> {entry['candidate_id']}", body_style),
+        Paragraph(f"<b>{manifest.get('date_label', 'Date')}:</b> {entry['date']}<br/><b>Original pages:</b> {entry['source_pages']}<br/><b>Inventory ID:</b> {entry['candidate_id']}", body_style),
         Paragraph(f"<b>Official City source:</b> <link href=\"{entry['source_url']}\" color=\"#075985\">{entry['source_url']}</link>", small_style),
         Spacer(1, 0.08 * inch),
         Paragraph(f"<b>Byte-identical archived original:</b> <link href=\"{entry['archive_url']}\" color=\"#075985\">{entry['archive_url']}</link>", small_style),
@@ -152,7 +172,7 @@ def build(manifest_path: Path, output_path: Path, validation_path: Path) -> None
             "/Title": manifest["title"],
             "/Author": "ABQInfo; original records by the City of Albuquerque",
             "/Subject": "Historical browsing compilation with provenance links to separately preserved originals",
-            "/Keywords": "Albuquerque, Development Process Manual, Executive Committee, minutes, historical compilation",
+            "/Keywords": manifest.get("keywords", "Albuquerque, historical records, ABQInfo compilation"),
         })
         with output_path.open("wb") as stream:
             writer.write(stream)

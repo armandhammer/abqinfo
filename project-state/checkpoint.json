@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-09-13T21:36:00.6796274Z",
-  "completed_item_range": "PR 150 merged at 2026-09-13T21:32:47Z and production deployment passed. Five DPM Executive Committee annual compilations for 2014-2018 are live on Development Process, with consolidated annual cross-listings on Stormwater and Drainage and Transportation Design References. All 40 City originals, provenance URLs, hashes, and verification results remain preserved; 26 new R2 objects totaling 3,339,036 bytes were exact-size/SHA-256 verified.",
-  "total_candidates": 7084,
+  "recorded_at": "2026-09-14T02:23:17.7905936Z",
+  "completed_item_range": "Built, archived, publicly byte-verified, and consolidated the 2003 General Obligation Bond Program: 21 original City records (92 source pages) now have one 117-page ABQInfo master record; 22 sparse component records remain preserved in R2 and inventory but have no standalone listing. Six site pages were updated; no PR or deployment has been created yet.",
+  "total_candidates": 7085,
   "counts_by_status": {
-    "pending review": 2248,
+    "pending review": 2245,
     "approved for addition": 0,
     "downloading": 0,
     "downloaded": 9,
@@ -11,19 +11,17 @@
     "description drafted": 0,
     "placement assigned": 2,
     "implemented": 178,
-    "validated": 1455,
-    "excluded": 1403,
+    "validated": 1438,
+    "excluded": 1424,
     "duplicate": 1494,
     "superseded": 176,
     "blocked": 0,
     "requires human review": 119
   },
-  "remaining_nonterminal": 2437,
-  "next_pending_id": "src-049f7958bcc2f6da",
-  "blockers": [
-    "Four abbreviated-name 2011 GO-bond variants remain requires human review because their version order cannot be established: src-ca2ae8cb1ef13fdf, src-832bc2144296aa51, src-20cca95ec6dcbe4f, and src-9e6cb716ac7c28d9. They were not archived or published."
-  ],
-  "resume_command": "Continue codex/go-bond-annual-compilations by integrating project-state/discovery/claude-consolidation-2003-general-obligation-bond-program-master-record-2026-09-13.json. Archive and publicly verify any missing authoritative originals before building the 92-page provenance-preserving master record; do not make visible changes until all checks pass.",
+  "remaining_nonterminal": 2434,
+  "next_pending_id": "src-04e406c4dde231a8",
+  "blockers": [],
+  "resume_command": "Review the 2003 GO-bond consolidation diff, create the focused PR, verify its temporary deployment, then merge and confirm production if all checks pass.",
   "verification_campaign_totals": null,
   "history": [
     {
@@ -81,6 +79,34 @@
         "DPM annual-compilation PR temporary deployment and GitHub checks remain to be verified before autonomous merge."
       ],
       "resume_command": "In the codex/dpm-annual-compilations worktree, review and commit the focused DPM changes, push, open a PR, verify the temporary deployment and GitHub checks, merge when safeguards pass, and confirm production.",
+      "verification_campaign_totals": null
+    },
+    {
+      "recorded_at": "2026-09-13T21:36:00.6796274Z",
+      "completed_item_range": "PR 150 merged at 2026-09-13T21:32:47Z and production deployment passed. Five DPM Executive Committee annual compilations for 2014-2018 are live on Development Process, with consolidated annual cross-listings on Stormwater and Drainage and Transportation Design References. All 40 City originals, provenance URLs, hashes, and verification results remain preserved; 26 new R2 objects totaling 3,339,036 bytes were exact-size/SHA-256 verified.",
+      "total_candidates": 7084,
+      "counts_by_status": {
+        "pending review": 2248,
+        "approved for addition": 0,
+        "downloading": 0,
+        "downloaded": 9,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 2,
+        "implemented": 178,
+        "validated": 1455,
+        "excluded": 1403,
+        "duplicate": 1494,
+        "superseded": 176,
+        "blocked": 0,
+        "requires human review": 119
+      },
+      "remaining_nonterminal": 2437,
+      "next_pending_id": "src-049f7958bcc2f6da",
+      "blockers": [
+        "Four abbreviated-name 2011 GO-bond variants remain requires human review because their version order cannot be established: src-ca2ae8cb1ef13fdf, src-832bc2144296aa51, src-20cca95ec6dcbe4f, and src-9e6cb716ac7c28d9. They were not archived or published."
+      ],
+      "resume_command": "Continue codex/go-bond-annual-compilations by integrating project-state/discovery/claude-consolidation-2003-general-obligation-bond-program-master-record-2026-09-13.json. Archive and publicly verify any missing authoritative originals before building the 92-page provenance-preserving master record; do not make visible changes until all checks pass.",
       "verification_campaign_totals": null
     }
   ]

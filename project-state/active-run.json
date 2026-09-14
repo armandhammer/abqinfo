@@ -5,8 +5,8 @@
   "branch": "codex/go-bond-annual-compilations",
   "worktree": "C:\\Users\\ben\\Documents\\ABQinfo\\tmp\\dpm-annual-compilations",
   "base_commit": "90e84dfc6e1e78b04bc56301b1d9e4eaa8343d96",
-  "state": "research_integration",
-  "updated_at": "2026-09-13T21:34:00Z",
+  "state": "ready_for_pull_request",
+  "updated_at": "2026-09-14T02:23:17Z",
   "completed_previous_batch": {
     "pull_request": 150,
     "merge_commit": "90e84dfc6e1e78b04bc56301b1d9e4eaa8343d96",
@@ -20,5 +20,26 @@
   "planned_compilation_title": "2003 General Obligation Bond Program: Master Record",
   "planned_source_records": 21,
   "planned_original_pages": 92,
-  "next_action": "Resolve archival readiness for all 21 authoritative source components, build and verify the provenance-preserving master record, then apply the annual consolidation quality gate before any visible site change."
+  "archive_result": {
+    "original_component_records": 21,
+    "additional_original_objects": 4,
+    "additional_original_bytes": 1667961,
+    "master_pdf_pages": 117,
+    "master_pdf_bytes": 4068378,
+    "master_pdf_sha256": "d9eb509927af6356aba248685b63d757f6d7bda5a53b5aa1ccedb1b0d393742d",
+    "public_r2_verification": "passed"
+  },
+  "site_result": {
+    "individual_entries_removed": 23,
+    "annual_master_links": 6,
+    "modified_pages": [
+      "content/city-data/capital-spending.md",
+      "content/city-data/public-safety-data.md",
+      "content/public-works/parks-recreation.md",
+      "content/transportation/transit/abq-ride.md",
+      "content/public-works/stormwater-drainage.md",
+      "content/transportation/transportation-plans.md"
+    ]
+  },
+  "next_action": "Review the focused 2003 GO-bond consolidation diff, create the pull request, verify its temporary deployment and checks, then merge and confirm production if safeguards pass."
 }
