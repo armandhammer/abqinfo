@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-13T22:09:33.155314Z",
+  "batch_id": "go2003-master-compilation-2026-09-13",
+  "purpose": "Register the user-approved annual master only after all 21 component originals are separately archived and the final PDF passes integrity, provenance, source-equivalence, and visual QA.",
+  "decisions": [
+    {
+      "id": "src-dc0625283b21dd13",
+      "title": "2003 General Obligation Bond Program: Master Record - ABQInfo Historical Compilation",
+      "date": "2003",
+      "source_page": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc",
+      "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc",
+      "agency": "ABQInfo compilation of City of Albuquerque originals",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "description": "Combines 21 City records covering the governing resolutions, allocation and maintenance tables, Environmental Planning Commission recommendation, purpose-by-purpose project scopes, operating impacts, public FAQ, and Water Master Plan zone map for the 2003 bond program.",
+      "r2_key": "city-data/capital-spending/cabq-2003-general-obligation-bond-program-master-record-abqinfo-compilation.pdf",
+      "provenance_status": "ABQInfo compilation derived from separately archived and verified authoritative City originals; exact component provenance embedded in the PDF",
+      "processing_notes": [
+        "ABQInfo-created browsing compilation; not a single publication issued by the City of Albuquerque.",
+        "Contains 21 complete City originals in the research-approved order, each preceded by a provenance sheet; component inventory IDs: src-cae140d675779242, src-93085b1bc76f4709, src-d86965da6d5d26f2, src-7405cfc41e5500c4, src-57a1e412247c863d, src-3dfd629f27870dc1, src-0782d8521e42a068, src-dc6e3fd3425cb32a, src-6735737588d294e0, src-724dd13839ecb166, src-888427a6abc5edf0, src-96e217080e84c14e, src-ea516f826e5da86a, src-a24b9d451e022e8f, src-e7cd892adf805950, src-321df68eff322421, src-e28f489ec0fba72f, src-6fc996f849849028, src-3c7653f64815b4ad, src-bd084d192e7b78ce, src-3c9907796a0cfaf3.",
+        "All components remain separately preserved with original source URLs, byte sizes, SHA-256 checksums, and inventory history.",
+        "Final PDF source-equivalence and visual QA: project-state/discovery/go2003-master-compilation-visual-qa-2026-09-13.json."
+      ],
+      "implementation_locations": [
+        "content/city-data/capital-spending.md",
+        "content/city-data/public-safety-data.md",
+        "content/public-works/parks-recreation.md",
+        "content/transportation/transit/abq-ride.md",
+        "content/public-works/stormwater-drainage.md",
+        "content/transportation/transportation-plans.md"
+      ],
+      "cross_listing_approved": true,
+      "quality_assessment": {
+        "reviewed_document_content": true,
+        "visual_inspection_completed": true,
+        "standalone_public_value": "high",
+        "information_density": "substantial",
+        "series_relationship": "serial",
+        "publication_form": "consolidated_master",
+        "rationale": "The master record unifies the governing resolutions, project-selection evidence, allocations, public explanation, and purpose scopes needed to understand the complete 2003 bond program and its election outcome.",
+        "aggregation_rationale": "The 21 short and interdependent records form one annual program history. Consolidating them eliminates sparse standalone listings while retaining direct provenance and byte-identical archive access for every original City file.",
+        "page_count": 117,
+        "extracted_word_count": 17825
+      }
+    }
+  ],
+  "updated_at": "2026-09-13T22:28:33.8677849Z"
+}

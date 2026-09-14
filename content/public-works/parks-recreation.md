@@ -82,9 +82,11 @@ Parks and recreation facilities and programs.
 
   Details 2011 Parks and Recreation bond scopes for planning, designing, renovating, equipping, and constructing parks, recreation facilities, trails, open space, and related park improvements. [Full 2011 published-scope record](/city-data/capital-spending/#2011-published-scope-and-version-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/parks_and_recreation_scope.pdf)
 
-- [2003 Parks and Recreation General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2003-parks-recreation-go-bond-project-scopes.pdf)
+- [2003 General Obligation Bond Program: Master Record (ABQInfo Historical Compilation, Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2003-general-obligation-bond-program-master-record-abqinfo-compilation.pdf)
 
-  Details 2003 parks and recreation bond scopes, including a velodrome developed with the Southwest Velodrome Association, park and open-space improvements, recreation facilities, trails, and related equipment purchases. [Full 2003–2004 capital-program record](/city-data/capital-spending/#20032004-general-obligation-bond-program) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/ParksRecreationBonds.pdf)
+  Preserves the parks and recreation purpose sheet within the complete annual record, including the governing resolutions, funding tables, project rankings, operating impacts, and related citywide capital scopes.
+
+  [Full 2003 program record](/city-data/capital-spending/#20032004-general-obligation-bond-program) · [Official City source library](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc)
 
 - [2017 Parks and Recreation General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-2017-parks-recreation-go-bond-project-scopes.pdf)
 
