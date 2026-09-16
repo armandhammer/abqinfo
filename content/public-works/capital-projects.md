@@ -48,9 +48,11 @@ Public works capital improvement projects.
 
 ## Historical Project Snapshots
 
-- [2017 Streets General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/capital-projects/cabq-2017-streets-go-bond-project-scopes.pdf)
+- [2017-2026 Decade Plan and 2017 General Obligation Bond Program: Mayor's Recommendation (Official Program Book, Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-2026-decade-plan-mayors-recommendation-2017.pdf)
 
-  Details $33.8 million in 2017 street scopes for Unser between Central and I-40, Chappell Road, Alameda widening, major street and intersection reconstruction, paving rehabilitation, signalization, traffic management, bridge repair, sign replacement, Ladera Road, Zuni Road, ADA sidewalks, trails, and bikeways. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/public-works/capital-projects/cabq-2017-2025-streets-go-bond-summary.pdf) schedules $219.598 million through 2025, the largest department total in the program. [Full 2017 capital-program record](/city-data/capital-spending/#2017-general-obligation-bond-program) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-streets-scope.pdf) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-streets-summary.pdf)
+  The City's complete 2017 program book includes the Streets project scopes and 2017-2025 funding schedule, plus selection criteria, operating impacts, maps, appendices, and legislation for the citywide capital program.
+
+  [Full 2017 program context](/city-data/capital-spending/#historical-capital-programs) · [Official City record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/2017-mayors-recommendation-to-city-council.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/2017-mayors-recommendation-to-city-council.pdf)
 
 - [Explora STEAM Campus Master Plan — Draft (2019 Archived PDF)](https://files.abqinfo.com/public-works/capital-projects/cabq-explora-steam-campus-master-plan-draft-2019.pdf)
 
