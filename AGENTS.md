@@ -25,6 +25,18 @@
 
 Every substantive task-ending response must state the saved artifact paths, the concrete result, validation performed, and any remaining blocker. It must be self-contained: do not require the user to relay a prompt, create a new conversation, or manually coordinate a follow-up merely to receive or use the completed work.
 
+## Interruption and Usage-Limit Resilience
+
+Assume any Codex session may terminate without warning because of usage limits, terminal interruption, or account switching.
+
+- Do not accumulate substantial completed work only in conversational context.
+- During substantive multi-step work, persist completed decisions, findings, progress, and remaining work to the appropriate repository artifact at natural checkpoints.
+- Before beginning a long or high-reasoning stage, ensure the preceding stage is durably saved.
+- Save authoritative inventory changes promptly rather than deferring a large set of completed decisions until the end of the session.
+- When a coherent stage is complete and the repository state is suitable for a commit, prefer a small logical checkpoint commit rather than waiting until the entire multi-stage task is finished.
+- Do not create noisy commits for trivial intermediate edits; checkpoint at meaningful, internally consistent boundaries.
+- Repository state must be sufficient for a resumed session to determine what is complete, what remains, and what should not be repeated without relying on prior conversational context.
+- Treat conversational context as disposable and repository artifacts as durable project memory.
 ## Model and Stage Handoffs
 
 For work that naturally divides into stages with materially different reasoning needs, use the least expensive appropriate model and reasoning level for each stage rather than carrying one model through the entire workflow.
