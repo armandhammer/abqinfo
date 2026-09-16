@@ -25,13 +25,27 @@
 
 Every substantive task-ending response must state the saved artifact paths, the concrete result, validation performed, and any remaining blocker. It must be self-contained: do not require the user to relay a prompt, create a new conversation, or manually coordinate a follow-up merely to receive or use the completed work.
 
-Recommend a next task and model only when it would materially help the user decide what to do next. Do not include a copy-and-paste prompt unless the user explicitly asks for one.
+## Model and Stage Handoffs
 
-Use this model-selection baseline:
+For work that naturally divides into stages with materially different reasoning needs, use the least expensive appropriate model and reasoning level for each stage rather than carrying one model through the entire workflow.
 
-- `GPT-5.6 Terra, Medium`: default for normal ABQInfo research, document review, editorial placement, archiving, validation, and PR preparation.
-- `GPT-5.6 Terra, High`: large or unusually ambiguous batches involving conflicting versions, uncertain relevance, or complicated cross-listing.
-- `GPT-5.6 Sol, High`: crawler or methodology redesign, diagnosis of missed benchmark documents, difficult state recovery or merge conflicts, major information-architecture changes, and unusually complex planning or engineering interpretation.
-- `GPT-5.6 Luna, Medium`: deterministic formatting, metadata cleanup, inventory regeneration, and scripted link or build checks requiring little editorial judgment.
+At the end of such a stage, stop before beginning work that would materially benefit from a different model or reasoning level. Report:
 
-Do not recommend a higher model merely because a batch contains many files when local scripts handle the volume and the editorial decisions are straightforward.
+1. the stage just completed and its concrete result;
+2. the next stage;
+3. the recommended model and reasoning level;
+4. a brief reason for that recommendation;
+5. a self-contained copy-and-paste prompt for continuing the next stage from saved project state.
+
+The continuation prompt must preserve completed work and instruct the next session not to repeat completed discovery, research, or deterministic processing unless validation identifies a problem.
+
+Do not create artificial stage boundaries merely to switch models. Continue in the current session when the next work is appropriately handled by the current model and reasoning level.
+
+Use this baseline:
+
+- `GPT-5.6 Luna, Medium`: deterministic queries, formatting, metadata cleanup, inventory regeneration, scripted checks, and other low-judgment mechanical work.
+- `GPT-5.6 Terra, Medium`: normal ABQInfo research, document review, editorial placement, archiving decisions, validation, and PR preparation.
+- `GPT-5.6 Terra, High`: large or unusually ambiguous research or editorial batches involving conflicting versions, uncertain relevance, or complicated cross-listing.
+- `GPT-5.6 Sol, High`: methodology or crawler redesign, diagnosis of missed benchmark documents, difficult state recovery or merge conflicts, major information-architecture changes, conflicting provenance, and unusually complex planning or engineering interpretation.
+
+Escalate model or reasoning level only when the next stage actually requires it. Do not recommend a higher setting merely because a batch is large when deterministic tooling handles the volume.
