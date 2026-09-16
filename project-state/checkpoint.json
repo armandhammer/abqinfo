@@ -69,6 +69,16 @@
                                                                "unreferenced":  101,
                                                                "published_missing_repository_r2":  116,
                                                                "expected_not_live":  67
-                                                           }
+                                                           },
+                                "classification_validation":  {
+                                                                  "script":  "Classify-ArchiveReconciliation.ps1",
+                                                                  "passed":  true,
+                                                                  "discrepancy_counts":  "101 unreferenced + 116 published-missing-r2-inventory + 67 expected-not-live = 284",
+                                                                  "mechanical":  65,
+                                                                  "human_review":  219,
+                                                                  "project_validation":  "partial",
+                                                                  "project_validation_errors":  0,
+                                                                  "project_validation_blocker":  "Invoke-ProjectValidation.ps1 reached parallel verification checks but could not create .git/worktrees/codex12 (permission denied); no repository content or state inconsistency reported."
+                                                              }
                             }
 }
