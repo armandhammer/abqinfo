@@ -1,6 +1,6 @@
 {
-  "recorded_at": "2026-09-16T22:41:15Z",
-  "completed_item_range": "Completed the 18-record Development Process Manual Executive Committee minutes batch (2014-2018). All 18 original City PDFs were archived to R2, every public archive download matched the reviewed local file by exact size and SHA-256, and the records were added under Archived Approved Amendments on content/development-land-use/development-process.md with both archive and official City links. Evidence: project-state/discovery/dpm-executive-committee-minutes-r2-archive-plan-2026-09-16.json and project-state/discovery/dpm-executive-committee-minutes-r2-public-validation-2026-09-16.json. Master inventory, Hugo build, document-graph validation, and verification workflow tests passed; no commit, PR, merge, or deployment was performed.",
+  "recorded_at": "2026-09-16T22:51:51Z",
+  "completed_item_range": "Reconciled the retained-source descendant-audit queue after the aggregate validator found 19 missing 2003-2004 bond-source entries. The omission was genuine stale queue state, not a validator defect: all 19 validated City PDF records use retained Plone /view source wrappers, matching 166 existing comparable queue records. Regenerating project-state/discovery/retained-source-audit-queue.json preserved all 550 existing records and states, added exactly 19 pending descendant crawls, and changed coverage from 569 eligible/550 queued/19 missing to 569/569/0. Full project validation and Hugo build passed. The completed DPM minutes batch remains preserved and was not reprocessed.",
   "verification_campaign_totals": {
     "verified": 2194,
     "passed": 2070,
@@ -33,8 +33,7 @@
     "src-0ee0b959ce0e2a95 is a scanned Trumbull plan compilation; confirm canonical-package and later IDO-replacement relationships before archival or visible use.",
     "src-0f4496e4073a5e06 and src-0feec7ebf6650e27 are isolated legislative amendment/substitute files; resolve authoritative enacted packages before archival or visible use.",
     "src-0f5140179b1f087f is only an announcement for the International District Choice Neighborhood final plan; locate the authoritative final plan before visible use.",
-    "src-10209c5fcdce2906 is explicitly a 2026-02-02 draft stormwater BMP package; locate or verify an adopted final version before archival or visible use.",
-    "Repository-wide retained-source descendant-audit coverage currently fails on 19 unrelated 2003-2004 bond-source URLs. The completed DPM minutes batch must not be committed, opened as site-ready, merged, or deployed until that validation gate is resolved or an authorized exception is recorded."
+    "src-10209c5fcdce2906 is explicitly a 2026-02-02 draft stormwater BMP package; locate or verify an adopted final version before archival or visible use."
   ],
-  "resume_command": "Preserve the completed DPM Executive Committee minutes batch and resolve the unrelated retained-source descendant-audit coverage failure before creating a site-ready PR, merge, or deployment. Do not redo DPM discovery, upload, or public-byte verification unless validation identifies a defect."
+  "resume_command": "Resume ordinary ABQInfo work from the next requested task. Preserve the completed DPM Executive Committee minutes batch and retained-source audit reconciliation; do not redo their discovery, uploads, inventory reconciliation, content edits, or validation unless repository state identifies a concrete defect."
 }
