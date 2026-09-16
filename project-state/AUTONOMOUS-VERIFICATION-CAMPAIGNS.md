@@ -227,11 +227,12 @@ Start the nine-hour coordinator supervisor in a hidden process from the attached
 ```powershell
 ./scripts/project/Start-ParallelVerificationCampaignSupervisor.ps1 `
   -DurationHours 9 `
-  -ManagedLaneIds codex `
   -SuccessorCandidateCount 240 `
   -MaxCandidatesPerLane 120 `
   -TakeOverExpiredLease
 ```
+
+By default, the supervisor manages both legacy campaign lane IDs, `codex` and `claude`, sequentially with the deterministic PowerShell worker. The lane names are identifiers retained for campaign compatibility; they do not require separate AI agents or accounts. Use `-ManagedLaneIds` only when deliberately limiting supervision to a subset of lanes.
 
 By default, process output and persistent state are written under the sibling `ABQinfo-verification-supervisor` directory. `latest.json` points to the active run's atomic `status.json` and append-only `events.ndjson`. The hidden process also has separate stdout and stderr logs. A supervisor-wide exclusive file lease prevents concurrent coordinators.
 

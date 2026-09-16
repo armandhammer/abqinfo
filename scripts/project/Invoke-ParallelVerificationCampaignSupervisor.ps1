@@ -4,7 +4,7 @@ param(
   [string]$CampaignRoot,
   [string]$WorktreeRoot,
   [string]$SupervisorRoot,
-  [string[]]$ManagedLaneIds = @('codex'),
+  [string[]]$ManagedLaneIds = @('codex','claude'),
   [ValidateRange(1,24)][double]$DurationHours = 9,
   [ValidateRange(5,300)][int]$PollSeconds = 20,
   [ValidateRange(1,20)][int]$WorkerSliceSize = 5,
