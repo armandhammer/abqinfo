@@ -1,6 +1,6 @@
 {
-  "recorded_at": "2026-09-16T16:50:38.4386505Z",
-  "completed_item_range": "Consolidated the 2017 General Obligation Bond pipeline around the authoritative City 144-page program book: removed 30 sparse component listings while preserving all 30 original R2 objects, official-source URLs, exact sizes, SHA-256 hashes, completed verification results, and retired retained-source audit history. Cross-listed the official master on seven pages. Fresh public R2 size/SHA-256 and all three official City links passed; full inventory, content-style, quality, discovery, parallel-workflow, retained-source, and Hugo validation passed. No R2 upload was needed.",
+  "recorded_at": "2026-09-16T17:05:11.6041395Z",
+  "completed_item_range": "Quality-reviewed the next pipeline slice without changing inventory statuses, R2, or site content. Six substantial historical City-commissioned reports passed for standalone treatment. Eight 2004-2005 impact-fee originals passed as source material but are approved only as one provenance-preserving historical master, not eight separate site entries. Planned Growth Strategy and Volcano Heights fragment packages remain deferred until master-document reconciliation.",
   "total_candidates": 7086,
   "counts_by_status": {
     "pending review": 2245,
@@ -21,9 +21,35 @@
   "remaining_nonterminal": 2434,
   "next_pending_id": "src-049f7958bcc2f6da",
   "blockers": [],
-  "resume_command": "Review and commit the focused 2017 official-master consolidation, push codex/pipeline-integration-01, open a PR, verify its temporary deployment and GitHub checks, then merge and confirm production if all routine safeguards pass.",
+  "resume_command": "Read project-state/discovery/next-pipeline-quality-review-2026-09-16.json. Verify current official bytes for the six standalone reports and eight impact-fee originals, archive and publicly verify each original, build one provenance-preserving 2004-2005 impact-fee master, then update inventory and site content. Do not publish the sparse impact-fee components separately.",
   "verification_campaign_totals": null,
   "history": [
+    {
+      "recorded_at": "2026-09-16T16:50:38.4386505Z",
+      "completed_item_range": "Consolidated the 2017 General Obligation Bond pipeline around the authoritative City 144-page program book: removed 30 sparse component listings while preserving all 30 original R2 objects, official-source URLs, exact sizes, SHA-256 hashes, completed verification results, and retired retained-source audit history. Cross-listed the official master on seven pages. Fresh public R2 size/SHA-256 and all three official City links passed; full inventory, content-style, quality, discovery, parallel-workflow, retained-source, and Hugo validation passed. No R2 upload was needed. PR 153 was subsequently merged and production verified.",
+      "total_candidates": 7086,
+      "counts_by_status": {
+        "pending review": 2245,
+        "approved for addition": 0,
+        "downloading": 0,
+        "downloaded": 9,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 2,
+        "implemented": 178,
+        "validated": 1409,
+        "excluded": 1454,
+        "duplicate": 1494,
+        "superseded": 176,
+        "blocked": 0,
+        "requires human review": 119
+      },
+      "remaining_nonterminal": 2434,
+      "next_pending_id": "src-049f7958bcc2f6da",
+      "blockers": [],
+      "resume_command": "PR 153 merged at 2026-09-16T16:59:03Z as 12162c637cc098fa68611be3718b5c3db72c25ce; production verification passed. Continue with the next quality-gated pipeline family.",
+      "verification_campaign_totals": null
+    },
     {
       "recorded_at": "2026-09-13T00:41:38.0556371Z",
       "completed_item_range": "Archived and publicly verified 16 DPM Executive Committee minutes from 2015 through 2018 (827,283 bytes; 16/16 exact size and SHA-256). Added all 16 under Development Process Manual, cross-listed five Chapter 22 drainage decisions under Hydrology and Development Review, and cross-listed nine transportation-design decisions under Development Review Design References. Full validation and PR are next.",

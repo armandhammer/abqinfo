@@ -1,50 +1,26 @@
 {
   "schema_version": 1,
-  "type": "historical-series-consolidation",
-  "batch_id": "go2017-official-master-consolidation-2026-09-16",
-  "branch": "codex/pipeline-integration-01",
+  "type": "pipeline-quality-review",
+  "batch_id": "next-pipeline-quality-review-2026-09-16",
+  "branch": "codex/pipeline-integration-02",
   "worktree": "C:\\Users\\ben\\Documents\\ABQinfo\\tmp\\dpm-annual-compilations",
-  "base_commit": "23f98de2184589c3054710bec9727642954e938d",
-  "state": "ready_for_pull_request",
-  "updated_at": "2026-09-16T16:50:38.4386505Z",
+  "base_commit": "12162c637cc098fa68611be3718b5c3db72c25ce",
+  "state": "quality_review_checkpointed",
+  "updated_at": "2026-09-16T17:05:11.6041395Z",
   "completed_previous_batch": {
-    "pull_request": 152,
-    "merge_commit": "23f98de2184589c3054710bec9727642954e938d",
+    "pull_request": 153,
+    "merge_commit": "12162c637cc098fa68611be3718b5c3db72c25ce",
     "production_deployment": "verified",
-    "title": "2024 Albuquerque MSA Priority Climate Action Plan"
+    "title": "2017 General Obligation Bond official-master consolidation"
   },
-  "active_slice": "2017-general-obligation-bond-official-master-consolidation",
-  "archive_result": {
-    "master_r2_object": "https://files.abqinfo.com/city-data/capital-spending/cabq-2017-2026-decade-plan-mayors-recommendation-2017.pdf",
-    "master_size_bytes": 4165440,
-    "master_checksum_sha256": "5fd7c9351d9c1817032d7092496330edfc414be523fb5fcd41e9c07610b555fe",
-    "fresh_public_r2_verification": "passed",
-    "original_component_records_preserved": 30,
-    "new_r2_objects": 0,
-    "new_r2_bytes": 0
+  "active_slice": "historical-city-studies-and-impact-fee-records",
+  "quality_review_result": {
+    "standalone_reports_passed": 6,
+    "impact_fee_originals_passed_as_source_material": 8,
+    "impact_fee_visible_records_planned": 1,
+    "site_changes_made": 0,
+    "r2_changes_made": 0,
+    "artifact": "project-state/discovery/next-pipeline-quality-review-2026-09-16.json"
   },
-  "site_result": {
-    "individual_entries_removed": 30,
-    "official_master_links": 7,
-    "modified_pages": [
-      "content/city-data/capital-spending.md",
-      "content/city-data/public-safety-data.md",
-      "content/public-works/capital-projects.md",
-      "content/public-works/city-facilities.md",
-      "content/public-works/parks-recreation.md",
-      "content/public-works/stormwater-drainage.md",
-      "content/transportation/transit/abq-ride.md"
-    ]
-  },
-  "validation_result": {
-    "official_city_links": "3 of 3 HTTP 200",
-    "inventory": "passed",
-    "content_style": "passed",
-    "publication_quality_regression": "passed",
-    "discovery_regression": "passed",
-    "parallel_workflow_regressions": "passed",
-    "retained_source_audit_coverage": "passed",
-    "hugo": "passed"
-  },
-  "next_action": "Commit and push the focused consolidation, open a PR, verify the temporary deployment and GitHub checks, then merge and confirm production."
+  "next_action": "Verify current official bytes for the six standalone reports and eight impact-fee originals, archive and publicly verify every original, build one provenance-preserving 2004-2005 impact-fee master, then update inventory and site content. Do not publish the sparse impact-fee components separately."
 }
