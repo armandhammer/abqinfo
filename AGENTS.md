@@ -2,7 +2,9 @@
 
 ## Durable Project State
 
-- At the start of every task, reconcile Git state with `origin/main` and read `project-state/checkpoint.json`, `project-state/master-inventory.json`, and `project-state/active-run.json` when present.
+- At the start of a task, inspect the current Git branch and working-tree state. Read `project-state/checkpoint.json` and `project-state/active-run.json` when they are relevant to the task.
+- `project-state/master-inventory.json` is authoritative project state, but do not read it wholesale by default. Use the repository's deterministic scripts or targeted parsing to retrieve only the candidate records or fields needed for the task. Load the full inventory only when a task explicitly requires full-inventory validation, regeneration, or another operation that inherently needs the complete file.
+- Do not pull, rebase, merge, or otherwise reconcile with `origin/main` merely as startup housekeeping. Compare with `origin/main` when needed for the task and preserve the current worktree and branch state.
 - Use the repository's deterministic PowerShell and Python scripts for crawling, downloading, hashing, extraction, deduplication, inventory updates, link checks, and Hugo validation whenever possible.
 - Treat Legistar attachments as versioned delivery wrappers, not automatically distinct documents: compare hashes and extracted/rendered substantive content with existing City-source copies. A Legistar copy may prepend only Council bill, enactment, routing, signature, or agenda pages to an otherwise identical underlying document; retain one canonical original and document the wrapper relationship rather than archiving both.
 - Missing-minutes agenda policy: after a recorded exhaustive official-source review finds no approved minutes for a meeting, ABQInfo may preserve a verified original official agenda. Label it “Agenda (approved minutes not located)” or equivalent, link the official source, preserve the meeting date, and never present it as minutes or a substitute. Do not archive agendas for officially cancelled or no-quorum meetings, or when an approved-minutes original is available.
