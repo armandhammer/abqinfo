@@ -1,25 +1,30 @@
 {
-  "recorded_at": "2026-09-11T03:26:27.5358400Z",
-  "completed_item_range": "Implemented and started a nine-hour unattended verification supervisor for bounded, resumable campaigns of at most 120 candidates per lane. Hidden process 47876 owns only the codex lane plus coordinator rollover, persists atomic status and append-only events under C:\\Users\\ben\\Documents\\ABQinfo-verification-supervisor, escalates valid non-passing results only to requires human review, provisions 240-candidate successors, and stops only for the deadline, queue exhaustion, or systemic faults. A separate persistent Claude lane watcher and one-time copy-ready prompt follow active-run pointer rollovers without writing shared repository state. The live 2026-09-10-pending-03 heartbeat showed 15 verified/passed Codex results, 105 Codex remaining, and 120 Claude remaining. PowerShell parsing, git diff checks, and the 17-scenario campaign regression passed. No R2 upload, merge, deployment, or content/editorial change was performed.",
+  "recorded_at": "2026-09-11T19:15:00Z",
+  "completed_item_range": "Resolved the verified City code-enforcement snapshot succession: the March 2024 completed-problem-properties snapshot is superseded as the current cumulative record by the approved June 2026 successor. The predecessor's R2 object, checksum, provenance, and completed verification results remain preserved. Evidence: project-state/discovery/code-enforcement-snapshot-supersession-2026-09-11.json. No site-content change, R2 upload or deletion, commit, merge, or deployment was performed.",
+  "verification_campaign_totals": {
+    "verified": 2194,
+    "passed": 2070,
+    "requires_human_review": 124
+  },
   "total_candidates": 7074,
   "counts_by_status": {
-    "pending review": 2642,
-    "approved for addition": 0,
+    "pending review": 2255,
+    "approved for addition": 96,
     "downloading": 0,
-    "downloaded": 9,
+    "downloaded": 0,
     "parsed": 0,
     "description drafted": 0,
     "placement assigned": 2,
     "implemented": 178,
-    "validated": 1322,
-    "excluded": 1244,
-    "duplicate": 1443,
-    "superseded": 142,
+    "validated": 1321,
+    "excluded": 1335,
+    "duplicate": 1481,
+    "superseded": 212,
     "blocked": 0,
-    "requires human review": 92
+    "requires human review": 194
   },
-  "remaining_nonterminal": 2831,
-  "next_pending_id": "src-049f7958bcc2f6da",
+  "remaining_nonterminal": 2531,
+  "next_pending_id": "src-04e406c4dde231a8",
   "blockers": [
     "The 16-record/eight-page content batch is implemented and validated with authoritative government links; 17 original PDFs totaling 67,526,043 bytes remain pending separate explicit R2 upload approval, including three supporting components of the multipart Downtown Neighborhood plan.",
     "src-0a39e768262a9380d69d County source returned HTTP 504 twice; no authoritative replacement identified.",
@@ -28,7 +33,8 @@
     "src-0ee0b959ce0e2a95 is a scanned Trumbull plan compilation; confirm canonical-package and later IDO-replacement relationships before archival or visible use.",
     "src-0f4496e4073a5e06 and src-0feec7ebf6650e27 are isolated legislative amendment/substitute files; resolve authoritative enacted packages before archival or visible use.",
     "src-0f5140179b1f087f is only an announcement for the International District Choice Neighborhood final plan; locate the authoritative final plan before visible use.",
-    "src-10209c5fcdce2906 is explicitly a 2026-02-02 draft stormwater BMP package; locate or verify an adopted final version before archival or visible use."
+    "src-10209c5fcdce2906 is explicitly a 2026-02-02 draft stormwater BMP package; locate or verify an adopted final version before archival or visible use.",
+    "The 18 approved-for-addition DPM Executive Committee minutes (2014-2018) are inventory-approved only; they need a later editorial pass to add visible entries under Archived Approved Amendments on content/development-land-use/development-process.md, and no R2 archival is authorized."
   ],
-  "resume_command": "Leave supervisor PID 47876 running through 2026-09-11T12:25:07.5623852Z and start the one-time Claude prompt in project-state/CLAUDE-CAMPAIGN-WATCHER-PROMPT.md. Monitor C:\\Users\\ben\\Documents\\ABQinfo-verification-supervisor\\latest.json and its referenced status/event log; intervene only if state is faulted-systemic. Preserve unrelated local changes. Do not upload to R2, merge, deploy, or make content/editorial changes."
+  "resume_command": "Add the 18 approved Development Process Manual Executive Committee minutes to content/development-land-use/development-process.md under Archived Approved Amendments, using the official documents.cabq.gov URLs recorded in project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json. Do not upload to R2, merge, or deploy without explicit approval."
 }

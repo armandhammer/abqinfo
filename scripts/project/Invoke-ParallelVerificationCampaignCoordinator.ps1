@@ -158,7 +158,7 @@ foreach ($entry in @(Get-ParallelVerificationCampaignEntries $campaign)) {
 if (-not $LaneIds -or -not $LaneIds.Count) { $LaneIds = @($campaign.lanes | ForEach-Object { [string]$_ }) }
 if ($MicrobatchSize -eq 0) { $MicrobatchSize = [int]$campaign.microbatch_size }
 if ($Count -eq 0) { $Count = [int]$campaign.candidate_count }
-$nextIds = Get-NextCandidates -Inventory $inventory -Predecessor $campaign -Root $campaignRootFull -RequestedCount $Count -IgnoreManifestPath $successorPath
+$nextIds = @(Get-NextCandidates -Inventory $inventory -Predecessor $campaign -Root $campaignRootFull -RequestedCount $Count -IgnoreManifestPath $successorPath)
 
 if (-not $WorktreeRoot) {
   $repoForDefault = (& git rev-parse --show-toplevel).Trim();if ($LASTEXITCODE) { throw 'Unable to resolve repository root.' }
@@ -268,7 +268,7 @@ try {
     if ([string]$successor.base_commit -ne $baseCommit -or [string]$successor.inventory_sha256 -ne $currentInventoryHash) { throw "Existing successor manifest does not match the committed inventory transition (base $($successor.base_commit) vs $baseCommit; inventory $($successor.inventory_sha256) vs $currentInventoryHash)." }
     $nextIds = @(Get-ParallelVerificationCampaignEntries $successor | Sort-Object batch_ordinal,candidate_ordinal | ForEach-Object { [string]$_.candidate_id })
   } else {
-    $nextIds = Get-NextCandidates -Inventory $inventory -Predecessor $campaign -Root $campaignRootFull -RequestedCount $Count -IgnoreManifestPath $null
+    $nextIds = @(Get-NextCandidates -Inventory $inventory -Predecessor $campaign -Root $campaignRootFull -RequestedCount $Count -IgnoreManifestPath $null)
     if (-not $nextIds.Count) {
       [pscustomobject][ordered]@{mode='applied';predecessor_campaign_id=[string]$campaign.campaign_id;review_required=$reviewOperations.Count;successor_created=$false;reason='No later non-overlapping pending-review candidates remain.';safeguards=@('no R2','no merge','no deploy')} | ConvertTo-Json -Depth 8
       exit 0

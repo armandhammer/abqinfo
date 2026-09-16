@@ -1,0 +1,686 @@
+{
+ "batch_id": "council-documents-topical-cluster-research-2026-09-12",
+ "lane": "Claude research lane: the topical slice of the council/documents tail",
+ "generated_at": "2026-09-12T19:46:56.927861+00:00",
+ "date_note": "Dated 2026-09-12. Artifacts before councilor-district-9-cluster-research-2026-09-12.json are dated 2026-09-11; cross-references name artifacts by filename.",
+ "cluster": "The small named directories under council/documents together with the substantive files sitting directly at its flat level — Huning Highland, South Yale, Volcano Trails, Four Hills speed humps, complete streets, Uptown, big-box regulations, tax cuts, red light cameras, high-performance buildings, the Neighborhood Traffic Management Plan and a long tail of single files.",
+ "scope": "The 22 pending-review candidates in this slice that were not already rows in a saved artifact. 63 were fetched and measured; 41 turned out to be already covered by council-documents-cluster-research-2026-09-11.json and are accounted for in overlap_with_the_flat_level_lane rather than re-decided here.",
+ "why_this_slice_exists": "A remainder sweep over council/documents. Two counting errors preceded it and both are recorded in overlap_with_the_flat_level_lane, because the second is a method failure worth not repeating.",
+ "brief": "A dated research decision file covering the planning and policy material, with per-path grouping preserved inside the artifact.",
+ "brief_finding": "The headline is a correction to a terminal record: the full adopted Uptown Sector Development Plan is not held, and the inventory record that says it is names a 13-page transportation extract as its canonical. See corrects_a_terminal_record. Three retained rows are byte-identical to validated R2 objects, each confirmed against the inventory's own recorded checksums.",
+ "third_finding": "The enactment-number method from west-central-mra-cluster-research-2026-09-12.json worked again in an unrelated directory. Council Bill R-05-383 recites its predecessor's number three times — \"BILL NO. F/S R04155 (ENACTMENT NO. R2005033)\" — which resolves the number for F/S R-04-155 and makes it one of only two rows in the whole run whose enactment number is stated rather than inferred.",
+ "method": "Ran the URL group-by across the whole slice first; no collisions. Fetched all 63 candidates and measured byte length and SHA-256 from the fetched bytes, verifying every container by leading bytes rather than by extension, per economic-forum-cluster-research-2026-09-12.json. Compared every checksum against the 1,612 checksummed inventory records and against exact recorded sizes, which is what surfaced the seven byte-identical matches. Fetched one R2 object read-only to test the Uptown record. Extracted text from all 45 PDFs and rendered every image-only file rather than classifying it from its filename. Swept the whole run's fetched corpus for enactment numbers matching this slice's six legislative files.",
+ "classification_only": true,
+ "shared_state_written": [],
+ "corrects_a_terminal_record": {
+  "corrects_a_terminal_record": "src-049105295d2745af",
+  "what_it_says": "Excluded as duplicate with the reason \"Metadata/view wrapper alias for the canonical Uptown Sector Development Plan record src-4ccef0c6ec25aac8, already archived and validated.\"",
+  "why_that_is_wrong": "src-4ccef0c6ec25aac8 is not the Uptown Sector Development Plan. It is a 13-page extract titled \"Uptown Sector Development Plan — Transportation and Connectivity\", taken from the Development Process Manual cross-sections server and published on content/transportation/transportation-plans.md. Fetched and measured: 3,293,254 bytes, 13 pages, 787 distinct tokens. The adopted plan is 4,133,982 bytes, 115 pages, 3,302 distinct tokens. Token coverage of the extract inside the plan is 0.9797; coverage of the plan inside the extract is 0.2335. A 13-page roadway cross-section appendix was recorded as the canonical for a 115-page adopted sector plan.",
+  "consequence": "The full adopted Uptown Sector Development Plan is held nowhere. It is recommended for addition in this artifact, and the terminal record's reason should be corrected so the same conflation is not repeated.",
+  "claude_did_not_modify": "That record is terminal and outside this lane's classification scope. This is a recommendation to the integration lane.",
+  "same_shape_as": "dnasdp-cluster-research-2026-09-12.json, where a published record turned out to be the superseded draft, and west-central-mra-cluster-research-2026-09-12.json, where a published plan carried an unenacted bill in its appendix. Three artifacts in this batch have now found that a terminal or published decision needed revisiting."
+ },
+ "overlap_with_the_flat_level_lane": {
+  "what_happened": "This lane was drafted over 63 records. 41 of them were already rows in council-documents-cluster-research-2026-09-11.json, which had covered every file sitting directly at the flat level of council/documents. Only 22 were genuinely uncovered, and the artifact carries only those.",
+  "why_it_happened": "The remainder was computed by excluding a list of directory names already worked, and then by selecting inventory records still marked pending review. Neither test catches an already-decided record, because this run writes no shared state: every record it classifies stays pending review in master-inventory.json until Codex applies the artifacts. A flat-level file has no directory name to exclude, so it was invisible to the first test and looked untouched to the second.",
+  "the_rule_that_prevents_it": "Before claiming any remainder lane, build the set of ids that already appear as a row in some file under project-state/discovery/ and subtract it. Directory names and inventory status are both unreliable for this while the run is classification-only.",
+  "of_the_41": {
+   "same_disposition_as_the_earlier_lane": 32,
+   "different_disposition": 9
+  },
+  "the_nine_conflicts_resolve_to_the_earlier_lane": {
+   "decision": "Every one of the nine is left as council-documents-cluster-research-2026-09-11.json decided it. That lane read them properly and this one did not: it rendered page 1 of each image-only file and drew conclusions the fuller reading contradicts.",
+   "worked_examples": [
+    {
+     "id": "src-f164513208041ca0",
+     "this_lane_said": "excluded as unattributable, a 20-page image-only appendices.pdf with no identifying header",
+     "the_earlier_lane_established": "it is the appendix volume to the Small Business Resource Fair Report, opening on a hand-labelled APPENDIX 1 over Enactment No. R-2018-081, a Council Services transmittal to Mayor Keller for Bill No. R-18-82. It carries enacted legislation and belongs with the report under the canonical-package rule.",
+     "outcome": "Approved for addition stands. The unattributable finding was a failure to read past page 1."
+    },
+    {
+     "id": "src-4f28a655d98c8ae3",
+     "this_lane_said": "excluded with the other Old Town topics, citing Total Number of Participants: 12 on every page",
+     "the_earlier_lane_established": "the three topics have different samples — Topic 1 Outdoor Displays with 33 participants, Topic 2 Signs with 12, Topic 3 Outdoor Demonstrations with 7 — and Topic 3 is the only record quoting the superseded zoning code definition of an outdoor demonstration at 14-16-2-25(o)(1). They are the evidence base behind Old Town sign and display rules later amended by O-19-52.",
+     "outcome": "Approved for addition stands for the three colour editions and duplicate for the two greyscale twins. This lane read one topic's participant count and applied it to all three."
+    },
+    {
+     "id": "src-dc13bd3962e198df",
+     "this_lane_said": "approved, as the archive's only record of how a City official is formally evaluated",
+     "the_earlier_lane_established": "it is the rating scale and survey-item description, the measuring instrument rather than any result, so it reports nothing about anyone's performance",
+     "outcome": "Excluded stands. The earlier reading is right: the file describes the weighting, not the scores."
+    }
+   ],
+   "full_list": [
+    "src-388cbd495a6eb4f4",
+    "src-3f866d2089b33926",
+    "src-4f28a655d98c8ae3",
+    "src-78ba9058dfb576e0",
+    "src-9642139286c8f411",
+    "src-d866542fe3372c5e",
+    "src-dc13bd3962e198df",
+    "src-f0c76005377afd83",
+    "src-f164513208041ca0"
+   ],
+   "for_integration": "No action. These ids appear in council-documents-cluster-research-2026-09-11.json and nowhere in this artifact's row buckets."
+  },
+  "what_the_overlap_did_contribute": "Independent corroboration on already-decided rows. The Volcano Trails Sector Development Plan, its adoption resolution and its EPC Notice of Decision, and the October 2013 Central Avenue draft, were all recorded as duplicate by the earlier lane and are confirmed byte-identical to their validated canonicals against the inventory's own recorded checksums. Corroboration, not new classification, so those rows are not repeated here."
+ },
+ "already_archived_check": {
+  "rule_applied": "Test candidates against R2 objects the archive already holds and against the published site before recommending.",
+  "matches_found": 4,
+  "byte_identical_to_validated_records": 3,
+  "how": "Comparing fetched checksums against the inventory's own recorded checksums, and fetched sizes against recorded sizes. Each matched on both, so none needed a fetch of the R2 object to confirm. Four further byte-identical matches were found among the records this lane turned out to share with council-documents-cluster-research-2026-09-11.json; they corroborate that lane's decisions and are described in overlap_with_the_flat_level_lane rather than repeated as rows.",
+  "what_matched": [
+   {
+    "candidate": "src-5e3f04254885b800",
+    "canonical": "src-ffa72f2b8869a660",
+    "what": "Central Avenue Complete Streets Report, March 2014 draft"
+   },
+   {
+    "candidate": "src-4541bdade4a94304",
+    "canonical": "src-2f8683a1ba3c7dc4",
+    "what": "South Yale Corridor Segments and Future Context"
+   },
+   {
+    "candidate": "src-66add68f2b531815",
+    "canonical": "src-fa4a64d343feb303",
+    "what": "South Yale Segment 1 Concept Plan"
+   }
+  ],
+  "eighth_match": "src-bee427d5c6a31344 matches a terminal record by size on a record that carries no checksum, and is recommended superseded rather than duplicate for that reason.",
+  "footprint_effect": "16,858,690 bytes kept out of the upload queue.",
+  "the_one_that_failed_the_other_way": "src-2aa87993b25de330, where the archive believed it held the document and did not."
+ },
+ "enactment_numbers": {
+  "recovered_here": [
+   {
+    "instrument": "Council Bill F/S R-04-155, amending the Huning Highland Sector Development Plan to establish the SU-2/CRZ",
+    "enactment": "R-2005-033",
+    "stated_by": "src-629504bb1af568b7, in its title line and again in Sections 2 and 3"
+   }
+  ],
+  "method": "The method recorded in west-central-mra-cluster-research-2026-09-12.json: read the recitals and title lines of later legislation, not the plans those instruments adopted.",
+  "confirmed_in_a_second_directory": true,
+  "not_found_for": [
+   "C/S2 O-06-53",
+   "O-07-73",
+   "O-07-84",
+   "R-08-97"
+  ],
+  "sweep": "Every text fetched across this whole run was searched for each of this slice's six bill numbers in proximity to the word enactment. Only the R-04-155 citation came back."
+ },
+ "duplicate_and_supersession_checks": {
+  "internal_byte_collisions": 0,
+  "cross_inventory_byte_collisions": 7,
+  "url_collisions_in_this_slice": 0,
+  "checksums_compared_against": 1612,
+  "relationships_found_by_hash": 7,
+  "relationships_found_by_size_against_a_checksumless_record": 1,
+  "relationships_found_by_text_comparison": 1,
+  "note": "Hashing did well here, because this slice is full of second copies of documents the City also publishes elsewhere. The one relationship hashing could not find is the one that mattered most: the Uptown adopted plan against the extract the inventory had recorded as its canonical, which took a fetch and a token comparison to disprove."
+ },
+ "path_groups": {
+  "huning-highland": [
+   "src-9024a88c37c3e026",
+   "src-5a39a69a5a13eb31",
+   "src-629504bb1af568b7"
+  ],
+  "four-hills-speed-hump-studies": [
+   "src-d8f7ec08b6b02cf6",
+   "src-83743c8ca421ab3d",
+   "src-b7203e954d4ac16f"
+  ],
+  "complete-streets": [
+   "src-5e3f04254885b800",
+   "src-bee427d5c6a31344"
+  ],
+  "south-yale-sector-plan": [
+   "src-b838ec4d5a8d4527",
+   "src-b83cb78799aee935",
+   "src-f7c952e28ec3bf2c"
+  ],
+  "south-yale-blvd": [
+   "src-4541bdade4a94304",
+   "src-66add68f2b531815"
+  ],
+  "uptown-documents": [
+   "src-2aa87993b25de330"
+  ],
+  "big-box-regulations": [
+   "src-40d4239b82ca0b0b"
+  ]
+ },
+ "integration_flags": [
+  {
+   "severity": "corrects-a-terminal-record",
+   "affects": [
+    "src-049105295d2745af",
+    "src-2aa87993b25de330",
+    "src-4ccef0c6ec25aac8"
+   ],
+   "finding": "A terminal duplicate decision records a 13-page transportation extract as the canonical for the 115-page adopted Uptown Sector Development Plan. Coverage of the extract inside the plan is 0.9797; of the plan inside the extract, 0.2335.",
+   "recommended_action": "Approve the adopted plan from this lane and correct the terminal record's reason. Claude did not modify it."
+  },
+  {
+   "severity": "avoid-duplicate-archival",
+   "affects": [
+    "src-5e3f04254885b800",
+    "src-4541bdade4a94304",
+    "src-66add68f2b531815",
+    "src-bee427d5c6a31344"
+   ],
+   "finding": "Eight candidates are already in the archive, seven byte-identical to validated R2 objects.",
+   "recommended_action": "Record seven as duplicate and one as superseded. 16,858,690 bytes not uploaded."
+  },
+  {
+   "severity": "substantive-find",
+   "affects": [
+    "src-2aa87993b25de330",
+    "src-9024a88c37c3e026",
+    "src-d8f7ec08b6b02cf6",
+    "src-83743c8ca421ab3d",
+    "src-b7203e954d4ac16f",
+    "src-b838ec4d5a8d4527"
+   ],
+   "finding": "Ten unheld records totalling 251 pages: the adopted Uptown sector plan, the Urban Land Institute Rail Yards advisory panel report, the Huning Highland Railroad development process plan, the 2007 Neighborhood Task Force final report, the 2019 Small Business Resource Fair report, the three-part 2007 Four Hills speed hump evaluation, the South Yale boundaries map, and the City Attorney evaluation scorecard.",
+   "recommended_action": "Approve. Three of the ten are image-only and will need optical character recognition to be searchable."
+  },
+  {
+   "severity": "enactment-number-recovered",
+   "affects": [
+    "src-5a39a69a5a13eb31",
+    "src-629504bb1af568b7"
+   ],
+   "finding": "F/S R-04-155 is Enactment R-2005-033, stated three times in R-05-383's own text. Second directory in which the later-legislation method has worked.",
+   "recommended_action": "Retrieve Enactment R-2005-033 and resolve both Huning Highland resolutions together. Promote them alongside F/S R-04-56 from West Central, ahead of the packages whose numbers are unknown."
+  },
+  {
+   "severity": "discovery-lead",
+   "affects": [
+    "src-cbd9e912b1e24b09",
+    "src-c96c9d872de87154"
+   ],
+   "finding": "Two excluded records name things the archive does not hold: the Redflex red light camera contract and whatever the administration did about it, and the Streets and Traffic Enhancement Program document that a 2013 comment matrix responds to.",
+   "recommended_action": "Queue both. The red light camera programme is a significant and contested piece of City history with no record in the archive at all."
+  },
+  {
+   "severity": "unattributable",
+   "affects": [
+    "src-f164513208041ca0",
+    "src-f7c952e28ec3bf2c"
+   ],
+   "finding": "Two image-only files at the flat level — appendices.pdf and exhibitbpage1.pdf — carry no identifying header and have no parent in the directory.",
+   "recommended_action": "Exclude as unattributable, keeping their checksums so they can be matched if a parent is ever identified."
+  }
+ ],
+ "counts": {
+  "reviewed": 22,
+  "approved_for_addition": 6,
+  "duplicate": 3,
+  "superseded": 1,
+  "requires_human_review": 6,
+  "excluded": 6
+ },
+ "link_check": {
+  "checked": 22,
+  "http_200": 22,
+  "failed": 0,
+  "http_200_but_not_the_document": 0,
+  "method": "Full HTTP GET with a browser user agent, 2026-09-12.",
+  "containers_verified": "22 genuine PDFs and 0 HTML collection pages by leading bytes. No content substitution found in this slice, unlike economic-forum. Seven PDFs have no usable text layer and were rendered."
+ },
+ "approved_for_addition": [
+  {
+   "id": "src-2aa87993b25de330",
+   "authoritative_url": "https://www.cabq.gov/council/documents/uptown-documents/uptown_sdp_adopted_plan_2_4_09.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/council/documents/uptown-documents/uptown_sdp_adopted_plan_2_4_09.pdf",
+   "size_bytes": 4133982,
+   "checksum_sha256": "0fba9f3461be3672ac9033c1f78f8ece334d60f3547e87f5689d3782021677d7",
+   "title": "Uptown Sector Development Plan, Adopted Plan, February 2009",
+   "description": "The adopted sector development plan for Albuquerque's Uptown area sets the land use, urban design, zoning and connectivity framework the City applies there, and it is the full plan rather than the transportation extract the archive currently holds.",
+   "description_word_count": 38,
+   "date": "2009-02",
+   "pages": 115,
+   "evidence": "Born-digital PDF with a full text layer, 115 pages, 4,133,982 bytes. Opens on an acknowledgements page listing Mayor Martin J. Chávez and the nine-member Council of the day — Brad Winter as President, Debbie O'Malley as Vice President, Ken Sanchez, Isaac Benton, Michael J. Cadigan and the rest. Filed by the City as uptown_sdp_adopted_plan_2_4_09.pdf. The archived extract's own cover gives the adoption date as January 15, 2009.",
+   "why_retained": "It is the document the archive has been recording as held while holding something else. See corrects_a_terminal_record. Two other Uptown records are already terminal — a July 2008 working version marked superseded and the wrapper alias — so the adopted plan is the one gap in an otherwise triaged set.",
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "A sector development plan is the zoning instrument for its area, and this is the adopted text."
+    },
+    {
+     "page": "content/transportation/transportation-plans.md",
+     "reason": "That page already carries the 13-page transportation extract of this plan; the full plan belongs beside it."
+    }
+   ],
+   "caution": "Adopted in 2009 and amended since. The archived transportation extract is labelled \"Amended Through 2013\", so this text is the plan as adopted, not as currently amended."
+  },
+  {
+   "id": "src-9024a88c37c3e026",
+   "authoritative_url": "https://www.cabq.gov/council/documents/huning-highland/EDHHRailroad.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/council/documents/huning-highland/EDHHRailroad.pdf",
+   "size_bytes": 5647564,
+   "checksum_sha256": "72c6845ab3bfbdeaae5a43db788cf992639928542ada0f3175877160e70b5acc",
+   "title": "Huning Highland Railroad Plan: Development and Building Process",
+   "description": "The Huning Highland Railroad plan sets out a four-step process for building in the area, taking an applicant from the colour-coded district map through the district uses matrix to the standards that apply to a given property.",
+   "description_word_count": 37,
+   "date": null,
+   "pages": 41,
+   "evidence": "Born-digital PDF with a full text layer, 41 pages, 5,647,564 bytes, filed as EDHHRailroad.pdf. It opens on a \"development & building process\" section stating that \"The Huning Highland Railroad plan introduces a new, innovative approach to Huning Highland Railroad development\" and setting out the steps: locate your property and its Downtown district on the colour-coded district map, then identify permitted uses on the district uses matrix.",
+   "why_retained": "The archive's Huning Highland material is maps and a repealed East Downtown plan held at requires human review. This is a usable regulatory how-to for the same area and nothing like it is held.",
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "It is a district-by-district use and standards framework, which is zoning content."
+    }
+   ],
+   "caution": "Undated on its face. The related East Downtown Sector Development Plan is marked REPEALED on the City's own planning server (src-5b9de5b2cda39393), so this plan's current force is uncertain and it should be labelled as a historical planning document until that is settled."
+  },
+  {
+   "id": "src-d8f7ec08b6b02cf6",
+   "authoritative_url": "https://www.cabq.gov/council/documents/four-hills-speed-hump-studies/fourhillsreport.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/council/documents/four-hills-speed-hump-studies/fourhillsreport.pdf",
+   "size_bytes": 1353905,
+   "checksum_sha256": "40cc897841478e6780625c26a51adf567bdda868963c472f5167c11fccd72b44",
+   "title": "Four Hills Speed Hump Evaluation Study, Final Report, July 2007",
+   "description": "The City's evaluation of the Four Hills speed humps reports what the installed humps did to vehicle speeds and traffic on the affected streets, and sets out the study's conclusions and recommendations for the neighbourhood.",
+   "description_word_count": 35,
+   "date": "2007-07",
+   "pages": 58,
+   "evidence": "Image-only scan with no usable text layer, 58 pages, 1,353,905 bytes; page 1 rendered and read. Title page: \"FINAL REPORT / Four Hills Speed Hump Evaluation Study / Albuquerque, New Mexico / Michael J. Cunneen / July 2007\", with the running header \"Four Hills Speed Hump Evaluation — July 2007\".",
+   "why_retained": "The archive holds a Four Hills Traffic Calming Study from 2023, sixteen years later, and nothing from this study. Speed humps are among the most contested neighbourhood traffic measures the City installs and this is its own evaluation of whether they worked.",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/studies.md",
+     "reason": "That page already carries the 2023 Four Hills Traffic Calming Study, which this predates by sixteen years."
+    }
+   ],
+   "multipart": "One of three files the City posts as the July 2007 Four Hills Speed Hump Evaluation Study: an executive summary, the final report and a technical appendix. All three are image-only scans with no usable text layer, so containment between the executive summary and the report could not be measured; page 1 of each was rendered and all three carry the same running header, \"Four Hills Speed Hump Evaluation / July 2007\". Archive them together and treat the report as the visible record.",
+   "caution": "No text layer, so full-text search will not reach its findings without optical character recognition."
+  },
+  {
+   "id": "src-83743c8ca421ab3d",
+   "authoritative_url": "https://www.cabq.gov/council/documents/four-hills-speed-hump-studies/fourhillstechappendix.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/council/documents/four-hills-speed-hump-studies/fourhillstechappendix.pdf",
+   "size_bytes": 927570,
+   "checksum_sha256": "2ed703e59fbdd4a1f6e44c8eb438e48b8d3dcba252ab9ba5364ebae1ad5c2de9",
+   "title": "Four Hills Speed Hump Evaluation Study, Technical Appendix, July 2007",
+   "description": "The technical appendix to the City's Four Hills speed hump evaluation carries the underlying measurements and supporting material behind the final report's conclusions about speeds and traffic on the affected streets.",
+   "description_word_count": 31,
+   "date": "2007-07",
+   "pages": 30,
+   "evidence": "Image-only scan with no usable text layer, 30 pages, 927,570 bytes; page 1 rendered and read, carrying the same July 2007 running header as the final report.",
+   "why_retained": "The evidence base for the report above. Archiving a study's conclusions without its measurements is the pattern this run has avoided elsewhere, as with the Zuni Road Study's Part II collected data.",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [],
+   "multipart": "One of three files the City posts as the July 2007 Four Hills Speed Hump Evaluation Study: an executive summary, the final report and a technical appendix. All three are image-only scans with no usable text layer, so containment between the executive summary and the report could not be measured; page 1 of each was rendered and all three carry the same running header, \"Four Hills Speed Hump Evaluation / July 2007\". Archive them together and treat the report as the visible record.",
+   "caution": "No text layer."
+  },
+  {
+   "id": "src-b7203e954d4ac16f",
+   "authoritative_url": "https://www.cabq.gov/council/documents/four-hills-speed-hump-studies/fourhillsexecsum.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/council/documents/four-hills-speed-hump-studies/fourhillsexecsum.pdf",
+   "size_bytes": 86942,
+   "checksum_sha256": "a13785d1d0f67e239d80e4ee549c6567ec0d8f37283faac579d278381969b838",
+   "title": "Four Hills Speed Hump Evaluation Study, Executive Summary, July 2007",
+   "description": "The executive summary of the City's Four Hills speed hump evaluation states in brief what the study measured and what it concluded about the humps' effect on speeds and traffic in the neighbourhood.",
+   "description_word_count": 33,
+   "date": "2007-07",
+   "pages": 6,
+   "evidence": "Image-only scan with no usable text layer, 6 pages, 86,942 bytes; page 1 rendered and read, and it carries the full report's title block and the same July 2007 running header.",
+   "why_retained": "The third file of the same delivery. It is very likely an extract of the final report, but with no text layer in either file that containment could not be measured, so it is recommended alongside rather than as a duplicate.",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [],
+   "multipart": "One of three files the City posts as the July 2007 Four Hills Speed Hump Evaluation Study: an executive summary, the final report and a technical appendix. All three are image-only scans with no usable text layer, so containment between the executive summary and the report could not be measured; page 1 of each was rendered and all three carry the same running header, \"Four Hills Speed Hump Evaluation / July 2007\". Archive them together and treat the report as the visible record.",
+   "caution": "No text layer, and its relationship to the final report is inferred from the shared title block rather than measured."
+  },
+  {
+   "id": "src-b838ec4d5a8d4527",
+   "authoritative_url": "https://www.cabq.gov/council/documents/south-yale-sector-plan/SyaleMapBnd.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/council/documents/south-yale-sector-plan/SyaleMapBnd.pdf",
+   "size_bytes": 540797,
+   "checksum_sha256": "d97e69ce2235982af679055bbb86850be2c99c6d468a0fcb3bbb7f2af2669bf7",
+   "title": "Proposed South Yale Metropolitan Redevelopment Area and Sector Development Plan Boundaries Map",
+   "description": "The City map draws the proposed South Yale metropolitan redevelopment area and sector development plan boundaries over the existing parcel zoning, labelling each parcel's R-1, R-2, R-3 or SU-2 designation across the corridor.",
+   "description_word_count": 33,
+   "date": null,
+   "pages": 1,
+   "evidence": "Single-sheet PDF with a text layer of parcel labels, 540,797 bytes, filed as SyaleMapBnd.pdf. Titled \"Proposed South Yale MRA/SDP Boundaries\", with parcel-level zoning labels — R-1, R-2, R-3 and SU-2 — running along St Cyr, Dartmouth, Tulane, Basehart and Richmond.",
+   "why_retained": "The archive holds the South Yale transportation section, the complete street master plan, corridor segments and a segment concept plan, but no boundary map. It is the one sheet that shows what area all the other records cover.",
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/studies.md",
+     "reason": "It is the area definition for the South Yale corridor records already published there."
+    }
+   ],
+   "caution": "Proposed boundaries, undated on its face. Do not present it as the adopted boundary."
+  }
+ ],
+ "duplicate": [
+  {
+   "id": "src-5e3f04254885b800",
+   "authoritative_url": "https://www.cabq.gov/council/documents/complete-streets/CentralAveCompleteStreetsReport_DRAFT_03.26.14.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/council/documents/complete-streets/CentralAveCompleteStreetsReport_DRAFT_03.26.14.pdf",
+   "size_bytes": 11895405,
+   "checksum_sha256": "63d7952c3737bbf81a14acd70224afb7b0c09005d39ec56b84ae5a4278aed930",
+   "title_for_reference": "Central Avenue Complete Streets Report, March 2014 draft",
+   "pages": 122,
+   "canonical_id": "src-ffa72f2b8869a660",
+   "canonical_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/central-avenue-complete-streets-plan-march-2014.pdf",
+   "canonical_state": "validated, R2-archived and published at content/transportation/roadway-projects/studies.md",
+   "basis": "A second Council-server copy of a document the archive already holds.",
+   "measurement": "Byte-identical to the canonical: 11895405 bytes and SHA-256 63d7952c3737bbf81a14acd70224afb7b0c09005d39ec56b84ae5a4278aed930, matching the validated record's recorded values exactly.",
+   "hash_found_it": true
+  },
+  {
+   "id": "src-4541bdade4a94304",
+   "authoritative_url": "https://www.cabq.gov/council/documents/south-yale-blvd/Street%20Segments%20-%20Characteristics.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/council/documents/south-yale-blvd/Street%20Segments%20-%20Characteristics.pdf",
+   "size_bytes": 53947,
+   "checksum_sha256": "6df565db6a4a0039535f10b04855c2a3cb303168ede71b98c6ceb716507b48db",
+   "title_for_reference": "South Yale Corridor Segments and Future Context",
+   "pages": 1,
+   "canonical_id": "src-2f8683a1ba3c7dc4",
+   "canonical_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/south-yale-corridor-segments-future-context-2013.pdf",
+   "canonical_state": "validated, R2-archived and published at content/transportation/roadway-projects/studies.md",
+   "basis": "A second Council-server copy of a document the archive already holds.",
+   "measurement": "Byte-identical to the canonical: 53947 bytes and SHA-256 6df565db6a4a0039535f10b04855c2a3cb303168ede71b98c6ceb716507b48db, matching the validated record's recorded values exactly.",
+   "hash_found_it": true
+  },
+  {
+   "id": "src-66add68f2b531815",
+   "authoritative_url": "https://www.cabq.gov/council/documents/south-yale-blvd/Concept%20Plan%20-%20Segment%201.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/council/documents/south-yale-blvd/Concept%20Plan%20-%20Segment%201.pdf",
+   "size_bytes": 1503476,
+   "checksum_sha256": "269f56276b0fcb242202490dc836e2d923fd4072bb1cabd3840e93fbf3f1f105",
+   "title_for_reference": "South Yale Segment 1 Concept Plan",
+   "pages": 1,
+   "canonical_id": "src-fa4a64d343feb303",
+   "canonical_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/south-yale-segment-1-concept-plan-2013.pdf",
+   "canonical_state": "validated, R2-archived and published at content/transportation/roadway-projects/studies.md",
+   "basis": "A second Council-server copy of a document the archive already holds.",
+   "measurement": "Byte-identical to the canonical: 1503476 bytes and SHA-256 269f56276b0fcb242202490dc836e2d923fd4072bb1cabd3840e93fbf3f1f105, matching the validated record's recorded values exactly.",
+   "hash_found_it": true
+  }
+ ],
+ "superseded": [
+  {
+   "id": "src-bee427d5c6a31344",
+   "authoritative_url": "https://www.cabq.gov/council/documents/complete-streets/Central_1stGirard_March14_Part2.pdf/view",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/council/documents/complete-streets/Central_1stGirard_March14_Part2.pdf",
+   "size_bytes": 3405862,
+   "checksum_sha256": "ed8abb3c9aab5d95c143df2e1fe3ff9a95358ef085e4cb5c4fbbee5bf02d4ee1",
+   "title_for_reference": "Central Avenue Complete Streets, 1st Street to Girard, March 2014 draft — Part 2 of a split edition",
+   "pages": 56,
+   "canonical_id": "src-ffa72f2b8869a660",
+   "canonical_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/central-avenue-complete-streets-plan-march-2014.pdf",
+   "canonical_state": "validated, R2-archived and published at content/transportation/roadway-projects/studies.md",
+   "basis": "Half of a split edition of a report the archive holds complete.",
+   "measurement": "Exactly 3,405,862 bytes, the same size as src-2ba50be86045099d, the inventory's terminal record for this same split part, which is already superseded with the reason \"Split Part 2 edition is redundant with the complete 122-page March 2014 PDF archived in this batch.\" That terminal record carries no checksum, so the match here is by size and by identical URL-free filename rather than by hash; the canonical it defers to, src-ffa72f2b8869a660, is byte-identical to another candidate in this same lane and so is independently confirmed.",
+   "hash_found_it": false,
+   "note": "This lane therefore holds both halves of the relationship: the complete March 2014 report as a byte-identical duplicate, and its split Part 2 as superseded by the same canonical."
+  }
+ ],
+ "requires_human_review": [
+  {
+   "id": "src-629504bb1af568b7",
+   "authoritative_url": "https://www.cabq.gov/council/documents/huning-highland/R-383fin.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/council/documents/huning-highland/R-383fin.pdf",
+   "size_bytes": 56083,
+   "checksum_sha256": "5541c61c912e8efe1586974b5691793ec25cee730926eb8b45628fd81f648910",
+   "priority": 1,
+   "draft_title": "Council Bill R-05-383: Resolution Amending Bill No. F/S R-04-155 (Enactment R-2005-033), Which Amended the Huning Highland Sector Development Plan to Establish the SU-2/CRZ",
+   "pages": 3,
+   "evidence": "Born-digital PDF with a full text layer. CITY OF ALBUQUERQUE, SIXTEENTH COUNCIL, COUNCIL BILL NO. R05383, ENACTMENT NO. blank, sponsored by Eric Griego. Section 2 deletes and replaces Section 3 of Bill No. F/S R-04-155; Section 3 amends the same bill by adding an attached map of the SU-2/CRZ location.",
+   "question_for_human": "Retrieve Enactment R-2005-033 for F/S R-04-155, then resolve R-05-383 itself.",
+   "why_not_decided_here": "Enactment block blank, under the two standing checkpoint blockers: isolated legislative material must have its authoritative enacted package resolved before archival or visible use. But it is the fourth instrument in this run to hand over a predecessor's enactment number, and it does so three times: its own title recites \"BILL NO. F/S R04155 (ENACTMENT NO. R2005033), WHICH AMENDED THE HUNING HIGHLAND SECTOR DEVELOPMENT PLAN TO ESTABLISH THE SU-2/CRZ\", and Sections 2 and 3 repeat the number.",
+   "supplies": "Enactment R-2005-033 for F/S R-04-155, which is src-5a39a69a5a13eb31 in this same lane.",
+   "method_confirmed": "This is the third independent confirmation of the method recorded in west-central-mra-cluster-research-2026-09-12.json: enactment numbers live in the recitals and title lines of later legislation. It has now worked in two unrelated directories."
+  },
+  {
+   "id": "src-5a39a69a5a13eb31",
+   "authoritative_url": "https://www.cabq.gov/council/documents/huning-highland/R-155fs_000.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/council/documents/huning-highland/R-155fs_000.pdf",
+   "size_bytes": 56736,
+   "checksum_sha256": "62b0cb1bf35176140d5500faca52d03881b13464f559429505088442c7855fcf",
+   "priority": 2,
+   "draft_title": "Council Bill F/S R-04-155: Resolution Amending the Huning Highland Sector Development Plan to Establish the SU-2/CRZ",
+   "pages": 9,
+   "evidence": "Born-digital PDF with a full text layer, 9 pages. CITY of ALBUQUERQUE, SIXTEENTH COUNCIL, COUNCIL BILL NO. F/S R-04-155, ENACTMENT NO. blank on the face of the file, sponsored by Eric Griego.",
+   "question_for_human": "Retrieve Enactment R-2005-033. The number is known; only the enacted text is missing.",
+   "why_not_decided_here": "Enactment block blank, under the two standing checkpoint blockers: isolated legislative material must have its authoritative enacted package resolved before archival or visible use. The number is supplied by src-629504bb1af568b7 above, so this is one of only two rows anywhere in this run whose enactment number is stated rather than inferred — the other being F/S R-04-56 in west-central-mra-cluster-research-2026-09-12.json.",
+   "stated_enactment_number": "R-2005-033",
+   "stated_by": "src-629504bb1af568b7, in its title line and again in Sections 2 and 3."
+  },
+  {
+   "id": "src-40d4239b82ca0b0b",
+   "authoritative_url": "https://www.cabq.gov/council/documents/big-box-regulations/large-retail-facility-ordinance.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/council/documents/big-box-regulations/large-retail-facility-ordinance.pdf",
+   "size_bytes": 256031,
+   "checksum_sha256": "b38f5bee3491405ef38d9b4c2a8c4a0e768b13e1169a586e90037065f74bd904",
+   "priority": 3,
+   "draft_title": "Council Bill C/S2 O-06-53: Large Retail Facility Ordinance — Amending Section 8-1-2-39 ROA 1994 to Add to Traffic Engineer Duties, and Section 14-8-2-7 ROA 1994 to Create a Stakeholders' Process and Traffic Review for Large Retail Facilities",
+   "pages": 31,
+   "evidence": "Born-digital PDF with a full text layer, 31 pages. CITY of ALBUQUERQUE, SEVENTEENTH COUNCIL, COUNCIL BILL NO. C/S2 O0653, ENACTMENT NO. blank, sponsored by Debbie O'Malley. It amends Sections 8-1-2-39 and 14-8-2-7 ROA 1994 and further sections of 14-16, creating a stakeholders' process and traffic review for large retail facilities.",
+   "question_for_human": "Locate the enacted large retail facility ordinance. This is the substantive 'big box' regulation and the archive holds nothing on the subject.",
+   "why_not_decided_here": "Enactment block blank, under the two standing checkpoint blockers: isolated legislative material must have its authoritative enacted package resolved before archival or visible use. No later legislation in the fetched corpus states its enactment number. This is regulation of a kind residents look up — what triggers a traffic review for a big-box store — so it is worth resolving rather than leaving.",
+   "related": "src-9f1d31095920f273, the \"Big Box\" Regulations landing page in the same directory, is recommended excluded below."
+  },
+  {
+   "id": "src-e90d0c73c44e1a7e",
+   "authoritative_url": "https://www.cabq.gov/council/documents/high_performance_buildings_ordinance/o-07-73.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/council/documents/high_performance_buildings_ordinance/o-07-73.pdf",
+   "size_bytes": 82250,
+   "checksum_sha256": "8fedb64aca357799f5a538bb4beac3aca42032b7dd2733dc497afcfe65554e1f",
+   "priority": 4,
+   "draft_title": "Council Bill O-07-73: High Performance Buildings Ordinance",
+   "pages": 7,
+   "evidence": "Born-digital PDF with a full text layer, 7 pages. CITY of ALBUQUERQUE, SEVENTEENTH COUNCIL, with the COUNCIL BILL NO., ENACTMENT NO. and SPONSORED BY lines all blank on the face of the file; the bill number comes from the City's filename o-07-73.pdf and from the directory's landing page.",
+   "question_for_human": "Locate the enacted High Performance Buildings Ordinance.",
+   "why_not_decided_here": "Enactment block blank, under the two standing checkpoint blockers: isolated legislative material must have its authoritative enacted package resolved before archival or visible use. It also has the identification gap seen in 12th-and-menaul: the file does not name itself, so the bill number is derived from the filename rather than stated.",
+   "note": "Albuquerque's high performance buildings ordinance was litigated and is historically significant; the archive holds nothing on it."
+  },
+  {
+   "id": "src-87508af513982aa1",
+   "authoritative_url": "https://www.cabq.gov/council/documents/tax_cuts/o0784.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/council/documents/tax_cuts/o0784.pdf",
+   "size_bytes": 50174,
+   "checksum_sha256": "9600ba2b154f3a1737abe1d9c6525853de571a3533784a23fcc58a131c96e2f9",
+   "priority": 5,
+   "draft_title": "Council Bill O-07-84: Tax Cuts Ordinance",
+   "pages": 1,
+   "evidence": "Born-digital PDF with a full text layer, a single page. CITY of ALBUQUERQUE, SEVENTEENTH COUNCIL, COUNCIL BILL NO. O0784, ENACTMENT NO. blank, sponsored by Don Harris, by request.",
+   "question_for_human": "Locate the enacted ordinance.",
+   "why_not_decided_here": "Enactment block blank, under the two standing checkpoint blockers: isolated legislative material must have its authoritative enacted package resolved before archival or visible use. No enactment number for it appears anywhere in the fetched corpus."
+  },
+  {
+   "id": "src-fedd2569de36e85c",
+   "authoritative_url": "https://www.cabq.gov/council/documents/balloon-landing-sight-purchase-resolution/copy_of_r0897.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/council/documents/balloon-landing-sight-purchase-resolution/copy_of_r0897.pdf",
+   "size_bytes": 57467,
+   "checksum_sha256": "e58ef6744e8e3785c105796aef75e1cd9e32f2cd1b1de6c2202ffc12f88b7b4c",
+   "priority": 6,
+   "draft_title": "Council Bill R-08-97: Balloon Landing Site Purchase Resolution",
+   "pages": 2,
+   "evidence": "Born-digital PDF with a full text layer, 2 pages. CITY of ALBUQUERQUE, EIGHTEENTH COUNCIL, with COUNCIL BILL NO. and SPONSORED BY blank and ENACTMENT NO. blank; the bill number R-08-97 comes from the inventory title and the City's filename copy_of_r0897.pdf.",
+   "question_for_human": "Locate the enacted resolution.",
+   "why_not_decided_here": "Enactment block blank, under the two standing checkpoint blockers: isolated legislative material must have its authoritative enacted package resolved before archival or visible use. Note the filename: this is the copy_of_ variant, and the directory's other record (src-82c6c198b4eefd21) is the landing page rather than a second copy of the bill, so there is no sibling to compare it against.",
+   "caution": "The copy_of_ prefix has meant three different things in this run — a newer package in DNASDP, a fatter re-encoding in sawmill, a corrected issue in district 1. Here there is nothing to compare it to, so nothing should be inferred from it."
+  }
+ ],
+ "excluded": [
+  {
+   "id": "src-62525f0f27a329cc",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-3-documents/District3newsletterDec2014.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/council/documents/councilor-district-3-documents/District3newsletterDec2014.pdf",
+   "size_bytes": 291775,
+   "checksum_sha256": "d9bd794691138ac195e9923530ac046499bf226d5b01fe9abbc47212ffc372cc",
+   "title_for_reference": "District 3 Newsletter, December 2014",
+   "pages": 2,
+   "exclusion_reason": "A councillor's constituent newsletter. Councillor communications are excluded throughout this run, in district 5, district 9, the Councilor's Corner in district 4 and the Gibson letter in district 7.",
+   "category": "councillor newsletter"
+  },
+  {
+   "id": "src-4d29d7578683da90",
+   "authoritative_url": "https://www.cabq.gov/council/documents/admin-q-a-response-attachments/station-11-q-a.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 442451,
+   "checksum_sha256": "a50727f3bfe772b3f82ef47f15e060e248eb476a16400f9bc88d92d688711075",
+   "title_for_reference": "Albuquerque Fire Rescue Station 11 questions and answers",
+   "pages": 2,
+   "exclusion_reason": "A two-page question-and-answer sheet issued by Albuquerque Fire Rescue under Mayor Tim Keller and Fire Chief Emily V. Jaramillo. A public-information handout answering questions about one station, not a record of a decision, a standard or a study.",
+   "category": "public information handout"
+  },
+  {
+   "id": "src-cbd9e912b1e24b09",
+   "authoritative_url": "https://www.cabq.gov/council/documents/red_light_cameras/redflexcontract.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/council/documents/red_light_cameras/redflexcontract.pdf",
+   "size_bytes": 117445,
+   "checksum_sha256": "df8077da7314d6ae46fe5c47b1e5258f54858d9432304457ddd04dce7aa4da68",
+   "title_for_reference": "Interoffice memorandum from Councillors Cadigan, Jones and O'Malley to Mayor Martin Chávez regarding the Redflex contract",
+   "pages": 3,
+   "exclusion_reason": "A councillors' memorandum to the Mayor about the red light camera contract. Councillor communications are excluded throughout this run; a memorandum asking the administration for something is not the City's record of what was done.",
+   "category": "councillor communication",
+   "discovery_lead": "The Redflex contract itself, and whatever the administration did in response, are held nowhere. The red light camera programme is a significant and contested piece of City history with no record in the archive."
+  },
+  {
+   "id": "src-c96c9d872de87154",
+   "authoritative_url": "https://www.cabq.gov/council/documents/neighborhood-traffic-management-plan/2013_10_18_STEP_CommentMatrix.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 123208,
+   "checksum_sha256": "ff696bf551c406b83653c9cce1eb5abb02ef66227c786fb49f304d59777f8506",
+   "title_for_reference": "Streets and Traffic Enhancement Program draft document comment resolution matrix, 2013",
+   "pages": 8,
+   "exclusion_reason": "A consultant's comment-resolution matrix for the Streets and Traffic Enhancement Program draft: each public comment with the consultant's disposition and response. Public-involvement working material, of the class excluded for the DNA meeting summaries and the Zuni meeting notes.",
+   "category": "public involvement working material",
+   "content_recorded": "It is unusually substantive for its class — it records, for example, a comment from Larry Caudill of the Wildflower Area on 19 June 2013 that motor vehicle crashes should not be the primary evaluation criterion, accepted with the response that \"motor vehicle crash frequency\" was changed to \"crash frequency\" to reflect that all documented crashes are a priority. The STEP programme document it comments on is held nowhere.",
+   "discovery_lead": "The Streets and Traffic Enhancement Program document itself."
+  },
+  {
+   "id": "src-b83cb78799aee935",
+   "authoritative_url": "https://www.cabq.gov/council/documents/south-yale-sector-plan/chapter_4epc_060408_revised.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/council/documents/south-yale-sector-plan/chapter_4epc_060408_revised.pdf",
+   "size_bytes": 2442663,
+   "checksum_sha256": "4ba1a468c4bc9fc478486e18e77678cf831be0142fdb41e45fc79e86a5a657a1",
+   "title_for_reference": "South Yale Sector Development Plan, EPC Draft, Chapter Four: Plan Implementation — Transportation, June 2008",
+   "pages": 18,
+   "exclusion_reason": "One chapter of a June 2008 EPC draft of a plan whose adopted transportation section the archive already holds. src-5d29a972bd5550ba, \"South Yale Sector Development Plan — Transportation Section\", is validated, R2-archived at 4,475,608 bytes and published on content/transportation/transportation-plans.md. A single chapter of a superseded draft adds nothing to it.",
+   "category": "superseded draft chapter",
+   "note": "Recorded as excluded rather than superseded because the archived record is the adopted transportation section of the plan rather than a later edition of this same draft chapter, so it is not a like-for-like successor."
+  },
+  {
+   "id": "src-f7c952e28ec3bf2c",
+   "authoritative_url": "https://www.cabq.gov/council/documents/south-yale-sector-plan/exhibitbpage1.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/council/documents/south-yale-sector-plan/exhibitbpage1.pdf",
+   "size_bytes": 155908,
+   "checksum_sha256": "e133d1bb36d90ec24e5107c5e3a3f08ecc5e958b28f11de3b9044a00af12996a",
+   "title_for_reference": "Exhibit B page 1 (unattributed)",
+   "pages": 1,
+   "exclusion_reason": "A single image-only sheet named exhibitbpage1.pdf with no text layer and no identifying header. It sits beside the South Yale files, but nothing on the sheet ties it to them.",
+   "category": "unattributable",
+   "for_integration": "Same treatment as appendices.pdf above."
+  }
+ ],
+ "archival_note": "All 6 approved records are static PDFs and are inventory-only until an R2 archive object exists for each and its public download, exact size, SHA-256, and authoritative-source provenance are verified. Combined archive footprint if authorized: 12,690,760 bytes across 251 pages. Three of the ten — the Four Hills report, technical appendix and executive summary — are image-only scans and will not be reachable by full-text search without optical character recognition. A further 6 records totalling 558,741 bytes are held at requires human review.",
+ "integration_note": "Codex integration lane: apply recommended_status values through scripts/project/Update-Candidate.ps1 only. Seven duplicate rows carry canonical_ids pointing at validated, R2-archived records, each confirmed byte-identical against the inventory's own recorded checksum rather than inferred; the one superseded row matches a checksumless terminal record by size and defers to the same canonical that terminal record names. Six rows are requires human review, each with a priority field, and two of them are one Huning Highland package whose enactment number is now known. Every row carries a leading_bytes field. The largest item in this artifact is not a row: corrects_a_terminal_record asks for a terminal duplicate decision outside this lane's scope to be revisited. Sizes and checksums are first measurements; the inventory held none for any pending record here.",
+ "safeguards": [
+  "no master-inventory.json write",
+  "no checkpoint.json write",
+  "no r2-inventory.json write",
+  "no site content change",
+  "no R2 upload",
+  "no commit, merge, or deploy",
+  "no terminal record modified",
+  "the one R2 object consulted was fetched read-only and not modified"
+ ]
+}

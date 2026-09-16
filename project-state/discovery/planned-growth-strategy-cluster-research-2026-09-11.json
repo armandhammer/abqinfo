@@ -1,0 +1,791 @@
+{
+ "batch_id": "planned-growth-strategy-cluster-research-2026-09-11",
+ "lane": "Claude research lane: www.cabq.gov/council/documents/pgs Planned Growth Strategy cluster",
+ "generated_at": "2026-09-11T22:54:07.054150+00:00",
+ "cluster": "The Planned Growth Strategy record set in the Albuquerque City Council document library at www.cabq.gov/council/documents/pgs.",
+ "scope": "All 19 pending-review candidates in that directory. The directory also holds two records a prior lane already set to requires human review, src-0bd664780961f148 and src-0e133db868401e77; this artifact does not reclassify them but resolves the factual question the checkpoint blocker raises about the second, and recommends a disposition for both. It further records three files that exist on the City server and are absent from the inventory entirely.",
+ "brief": "Discharge the checkpoint's open PGS split-package blocker by reconciling the complete package with the method recorded in the Volcano Heights artifact, and classify the directory.",
+ "brief_finding": "The blocker is discharged with a hard answer, and it is not the answer the blocker anticipated. Part 1 is complete and a combined 286-page original exists, which makes its seven chapter files duplicates rather than a package to assemble. Part 2 is a genuine eleven-chapter package with no combined original, it is missing one chapter outright, and two of its chapters were never discovered into the inventory at all. The file that looks like the combined Part 2 is a different report about City and County unification.",
+ "method": "Fetched all 19 candidates and the two prior-lane requires-human-review records without touching shared inventory state, and recorded exact byte length and SHA-256 for each. Extracted text with pdftotext -layout. Located and read the Part 2 table of contents printed inside Part2-1a.pdf and used it, rather than filenames, as the authority for every chapter page range. Verified Part 1 by two independent measures: PDF page-count arithmetic and per-chapter token coverage. Probed the filename sequence directly for chapters the City's own listing does not show, which is how three undiscovered files were found. Compared all checksums against the 1,612 checksummed inventory records.",
+ "classification_only": true,
+ "shared_state_written": [],
+ "blocker_resolution": {
+  "blocker_text": "src-0e133db868401e77 is PGS Part 2 Chapter 10; reconcile the complete split PGS package before any archival or visible use.",
+  "source": "project-state/checkpoint.json, blockers array",
+  "status": "RESOLVED as a factual question. The package is reconciled and mapped below. Two decisions remain and both are stated explicitly.",
+  "part_1": {
+   "finding": "COMPLETE, and a combined original exists. Part1.pdf (src-9aeb5f621800da58) is 286 PDF pages; the seven chapter files Part1-1 through Part1-7 have PDF page counts summing to exactly 286, and each chapter's normalized token coverage inside Part1.pdf is 1.0000.",
+   "consequence": "There is nothing to assemble for Part 1. Retain the combined original and record the seven chapter files as duplicates of it. Six of the seven are pending and are classified that way in this artifact; the seventh, src-0bd664780961f148 (Part1-6), was set to requires human review by a prior lane and is recommended for the same duplicate treatment.",
+   "recommended_action_for_src_0bd664780961f148": "Resolve to duplicate, canonical src-9aeb5f621800da58. Its coverage inside Part1.pdf is 1.0000, identical to its six siblings. Claude did not modify this record."
+  },
+  "part_2": {
+   "finding": "INCOMPLETE, and no combined original exists. The Part 2 table of contents lists eleven numbered chapters. Ten are obtainable; Chapter 3.0, Preferred Alternative Summary, printed pages 131 to 156, returns HTTP 404 with body {\"error_type\": \"NotFound\"} and exists nowhere else in the inventory.",
+   "aggravating_detail": "The missing chapter is the summary chapter. Of the eleven, 3.0 is the one a general reader would most likely want.",
+   "second_finding": "Two of the ten obtainable chapters, 4.0 and 6.0, are not in the inventory at all. They return HTTP 200 from the City server but do not appear in the City's own collection listing, which is why the crawler never saw them.",
+   "third_finding": "Part2.pdf exists at the obvious combined-file URL and is NOT the combined Part 2. See undiscovered_files. Anyone reconciling this package by assuming that file is the whole of Part 2 would be wrong.",
+   "recommended_action_for_src_0e133db868401e77": "Resolve to approved for addition as Chapter 10.0 of the Part 2 package, on the same footing as the eight pending chapters recommended here. The reconciliation the blocker required is now done and nothing about this record is uncertain any more. Claude did not modify it.",
+   "decisions_that_remain": [
+    "Add Part2-4.pdf and Part2-6.pdf to the inventory as new candidates before any Part 2 archival. Without them the package is missing three chapters rather than one.",
+    "Decide how to present a package with a permanently missing chapter. The Volcano Heights artifact set the rule that a partial archive of a split plan must not present an incomplete document as complete. Here completeness is not achievable, so the answer cannot be to withhold: it must be to publish the ten obtainable chapters with an explicit note that Chapter 3.0, Preferred Alternative Summary, pages 131 to 156, is not available from the City."
+   ]
+  },
+  "method_note": "The method is the one recorded in the Volcano Heights artifact: read each part's printed page range from the document itself, never from the filename, then check the ranges join. Applied here it also exposed the gap, which filename inspection alone would have shown as a missing number without proving a chapter existed to fill it. The Part 2 table of contents is what proves Chapter 3.0 exists."
+ },
+ "split_package_reconciliation": {
+  "pgs_part_1": {
+   "result": "COMPLETE with a combined original",
+   "combined_id": "src-9aeb5f621800da58",
+   "combined_pages": 286,
+   "combined_size_bytes": 47215522,
+   "combined_checksum_sha256": "9e1ea522b4816c6a29ede3a35471ea8bd77daa0212fdb2ca2580039d6e46ee80",
+   "chapter_manifest": [
+    {
+     "chapter": 1,
+     "id": "src-1779ba516b4d2c3f",
+     "file": "Part1-1.pdf",
+     "covers": "Acknowledgements, introduction and study framing",
+     "pdf_pages": 20,
+     "size_bytes": 3859724,
+     "checksum_sha256": "0eded5d682c2ccf4cb34c13c2b9be9ba76ba9235b3ea48a85ed92d457d3e3a39",
+     "coverage_in_combined": 1.0,
+     "inventory_status_before": "pending review"
+    },
+    {
+     "chapter": 2,
+     "id": "src-544756098ac12660",
+     "file": "Part1-2.pdf",
+     "covers": "Development Trends",
+     "pdf_pages": 51,
+     "size_bytes": 9672675,
+     "checksum_sha256": "760cd6ed93917792be32b9d46e5fb37ef06c3479256eb4c65c1eb6cddcfed667",
+     "coverage_in_combined": 1.0,
+     "inventory_status_before": "pending review"
+    },
+    {
+     "chapter": 3,
+     "id": "src-cd7c886fe1c0e6f7",
+     "file": "Part1-3.pdf",
+     "covers": "Alternative Scenarios",
+     "pdf_pages": 11,
+     "size_bytes": 5006126,
+     "checksum_sha256": "3bf9d4cfc74e1b3e2b1af07d2e0292768e95594097b1c95f4b0882292d2b294b",
+     "coverage_in_combined": 1.0,
+     "inventory_status_before": "pending review"
+    },
+    {
+     "chapter": 4,
+     "id": "src-a7dd815a1ea2937e",
+     "file": "Part1-4.pdf",
+     "covers": "Infrastructure Costs",
+     "pdf_pages": 86,
+     "size_bytes": 26805110,
+     "checksum_sha256": "ecf49d3b83ca96f0c840af8933de5b8ac5d9b3a76d0ec408b6dc26d31292ec15",
+     "coverage_in_combined": 1.0,
+     "inventory_status_before": "pending review"
+    },
+    {
+     "chapter": 5,
+     "id": "src-415952dd1d905cf7",
+     "file": "Part1-5.pdf",
+     "covers": "Policy, Regulatory and Plan Review",
+     "pdf_pages": 72,
+     "size_bytes": 1778928,
+     "checksum_sha256": "25caa8f43a1dbd2e2ed3be0e0dc4f8e1746db8b0249956cdd06bf6b843807162",
+     "coverage_in_combined": 1.0,
+     "inventory_status_before": "pending review"
+    },
+    {
+     "chapter": 6,
+     "id": "src-0bd664780961f148",
+     "file": "Part1-6.pdf",
+     "covers": "Section 2, Economic Impact of Growth",
+     "pdf_pages": 31,
+     "size_bytes": 133421,
+     "checksum_sha256": "6db690d53759d24ac87a911f38a2b469e767eaa0cdba53c3e504a6cb7b862385",
+     "coverage_in_combined": 1.0,
+     "inventory_status_before": "requires human review"
+    },
+    {
+     "chapter": 7,
+     "id": "src-f1990b741c73ce09",
+     "file": "Part1-7.pdf",
+     "covers": "Section 3, Other Consequences",
+     "pdf_pages": 15,
+     "size_bytes": 56608,
+     "checksum_sha256": "0ed69e4d789223c4f48e5c6aa205e0ebd59a6bcf89874fcb97c2546cdcb83e15",
+     "coverage_in_combined": 1.0,
+     "inventory_status_before": "pending review"
+    }
+   ],
+   "page_arithmetic": "20 + 51 + 11 + 86 + 72 + 31 + 15 = 286, equal to the combined file's page count.",
+   "chapter_bytes_total": 47312592
+  },
+  "pgs_part_2_preferred_alternative": {
+   "result": "INCOMPLETE, no combined original",
+   "authority_for_page_ranges": "The Part 2 table of contents printed on PDF pages 5 to 7 of Part2-1a.pdf.",
+   "chapter_manifest": [
+    {
+     "chapter": "1.0a",
+     "id": "src-08b6b68b53336462",
+     "file": "Part2-1a.pdf",
+     "title": "Section 1 Preferred Alternative: front matter, table of contents, and Introduction and Rationale, first half",
+     "printed_pages": "1-51",
+     "pdf_pages": 56,
+     "state": "pending review",
+     "size_bytes": 23265901,
+     "checksum_sha256": "54abf69425f5db13cba009ed7b7431a28fa54dba57f60dc580f611ecf7c5e71d"
+    },
+    {
+     "chapter": "1.0b",
+     "id": "src-3efa72bc100374a1",
+     "file": "Part2-1b.pdf",
+     "title": "Introduction and Rationale, second half, through the establishment of the Preferred Alternative",
+     "printed_pages": "52-82",
+     "pdf_pages": 22,
+     "state": "pending review",
+     "size_bytes": 23127651,
+     "checksum_sha256": "279fa6d0e792d26b33f92475ecd7779f07b12df7ffbdfc809b62ca050e9790cc"
+    },
+    {
+     "chapter": "2.0",
+     "id": "src-aee98d2ab382de65",
+     "file": "Part2-2.pdf",
+     "title": "Preferred Alternative: Subarea Descriptions",
+     "printed_pages": "83-130",
+     "pdf_pages": 48,
+     "state": "pending review",
+     "size_bytes": 4201481,
+     "checksum_sha256": "021e423e7c292e121ecd971ea3636b997d3ac836b96153fc8c5fd33a39e57879"
+    },
+    {
+     "chapter": "3.0",
+     "id": null,
+     "file": "Part2-3.pdf",
+     "title": "Preferred Alternative Summary",
+     "printed_pages": "131-156",
+     "pdf_pages": null,
+     "state": "ABSENT FROM SOURCE"
+    },
+    {
+     "chapter": "4.0",
+     "id": "UNDISCOVERED-Part2-4",
+     "file": "Part2-4.pdf",
+     "title": "Examples of Mixed-Use Redevelopment Projects in Other Cities",
+     "printed_pages": "157-168",
+     "pdf_pages": 12,
+     "state": "not in inventory",
+     "size_bytes": 306971,
+     "checksum_sha256": "7d40a07b77cf1b821cc2656b47c8205c6eec0355a5a72edb92e94746bc242036"
+    },
+    {
+     "chapter": "5.0",
+     "id": "src-c8e6f10731a478e6",
+     "file": "Part2-5.pdf",
+     "title": "Section 2 Implementation: Level of Service Standards and the Planned Growth Strategy",
+     "printed_pages": "169-210",
+     "pdf_pages": 35,
+     "state": "pending review",
+     "size_bytes": 1725934,
+     "checksum_sha256": "30a18cff75328e05cf860d31e7fd5d568adf0983a8b627143c394803796c9e9d"
+    },
+    {
+     "chapter": "6.0",
+     "id": "UNDISCOVERED-Part2-6",
+     "file": "Part2-6.pdf",
+     "title": "Financial Implementation of the Planned Growth Strategy Preferred Alternative",
+     "printed_pages": "211-218",
+     "pdf_pages": 16,
+     "state": "not in inventory",
+     "size_bytes": 241037,
+     "checksum_sha256": "41f9b0e7f4b2171b1640ab6788ad62c087c90bbb47438449182d3f46adf25e00"
+    },
+    {
+     "chapter": "7.0",
+     "id": "src-765624191ba169bd",
+     "file": "Part2-7.pdf",
+     "title": "Planned Growth Regulatory Structure Approaches",
+     "printed_pages": "219-244",
+     "pdf_pages": 26,
+     "state": "pending review",
+     "size_bytes": 294425,
+     "checksum_sha256": "d437adbf74a1f2332cb3090e5c8deda0acd59ed39584cd1635d71b610c17fb0d"
+    },
+    {
+     "chapter": "8.0",
+     "id": "src-d15bbc358aeaec4d",
+     "file": "Part2-8.pdf",
+     "title": "Combining the Level of Service Standards with the Management Committee material",
+     "printed_pages": "245-264",
+     "pdf_pages": 20,
+     "state": "pending review",
+     "size_bytes": 1228664,
+     "checksum_sha256": "8bbbe5368e0c0f87f369c2583beec1a9f9fd5ddac8fd5ccc7b53db76d1e09569"
+    },
+    {
+     "chapter": "9.0",
+     "id": "src-8188148b0cd6c40d",
+     "file": "Part2-9.pdf",
+     "title": "City and County Financial and Planning Requirements",
+     "printed_pages": "265-280",
+     "pdf_pages": 16,
+     "state": "pending review",
+     "size_bytes": 128581,
+     "checksum_sha256": "faaf061d3218634bfef1d1c3acf1e5767654bf3dbe6e61aa6807bc0573a69891"
+    },
+    {
+     "chapter": "10.0",
+     "id": "src-0e133db868401e77",
+     "file": "Part2-10.pdf",
+     "title": "Section 3 Urban Growth Management: Growth Strategy Techniques Used in Other Locations",
+     "printed_pages": "281-",
+     "pdf_pages": 63,
+     "state": "requires human review (already set by a prior lane)",
+     "size_bytes": 324400,
+     "checksum_sha256": "07134ea904d7c85d70080a74a0493a8ae73e8938a9a26df326b773d5e5f20967"
+    },
+    {
+     "chapter": "11.0",
+     "id": "src-c771ae9e41b9905c",
+     "file": "Part2-11.pdf",
+     "title": "Section 4 Legal and Regulatory Outline: Planned Growth Regulatory structure",
+     "printed_pages": "-345",
+     "pdf_pages": 33,
+     "state": "pending review",
+     "size_bytes": 1083911,
+     "checksum_sha256": "b9427b77d46d846c699d45e01297f5590f893826de0a58b38965b10b7765aaa7"
+    }
+   ],
+   "gap": {
+    "chapter": "3.0",
+    "title": "Preferred Alternative Summary",
+    "printed_pages": "131-156",
+    "estimated_length_pages": 26,
+    "http_status": 404,
+    "response_body": "{\"error_type\": \"NotFound\"}",
+    "searched": "The inventory holds no copy under any name; the City's collection listing does not offer it; the filename sequence probe returns 404."
+   },
+   "obtainable_chapters": 10,
+   "total_chapters": 11,
+   "manifest_entry_count": 12,
+   "counting_note": "The manifest has twelve file entries for eleven chapters because Chapter 1.0 is itself split across two files, Part2-1a.pdf and Part2-1b.pdf. Of the twelve entries: eight are pending candidates recommended for addition here, one is the prior-lane requires-human-review record src-0e133db868401e77 recommended for the same treatment, two are files that exist on the City server but are absent from the inventory, and one is the chapter that does not exist at all.",
+   "entry_states": {
+    "pending review, recommended for addition": 8,
+    "prior-lane requires human review, recommended for addition": 1,
+    "exists on server, not in inventory": 2,
+    "absent from source": 1
+   }
+  }
+ },
+ "undiscovered_files": {
+  "count": 3,
+  "why_this_matters": "All three return HTTP 200 from the City server and none appears in the City's own Plone collection listing for this directory. A crawler that follows the published listing cannot find them. They were found by probing the chapter filename sequence directly.",
+  "files": {
+   "Part2-4.pdf": {
+    "url": "https://www.cabq.gov/council/documents/pgs/Part2-4.pdf",
+    "size_bytes": 306971,
+    "checksum_sha256": "7d40a07b77cf1b821cc2656b47c8205c6eec0355a5a72edb92e94746bc242036",
+    "pages": 12,
+    "http_status": 200,
+    "identity": "Planned Growth Strategy Part 2, Chapter 4.0, Examples of Mixed-Use Redevelopment Projects in Other Cities, printed pages 157 to 168."
+   },
+   "Part2-6.pdf": {
+    "url": "https://www.cabq.gov/council/documents/pgs/Part2-6.pdf",
+    "size_bytes": 241037,
+    "checksum_sha256": "41f9b0e7f4b2171b1640ab6788ad62c087c90bbb47438449182d3f46adf25e00",
+    "pages": 16,
+    "http_status": 200,
+    "identity": "Planned Growth Strategy Part 2, Chapter 6.0, Financial Implementation of the Planned Growth Strategy Preferred Alternative, printed pages 211 to 218."
+   },
+   "Part2.pdf": {
+    "url": "https://www.cabq.gov/council/documents/pgs/Part2.pdf",
+    "size_bytes": 5469413,
+    "checksum_sha256": "d703841bb7329a4431f85fef58044be200137a42d4b41339fad3388bfd006393",
+    "pages": 144,
+    "http_status": 200,
+    "identity": "NOT the combined Planned Growth Strategy Part 2. Despite sitting in the pgs directory under the obvious combined-file name, its table of contents reads PART 2A Legal Parameters of Unification, PART 2B City and County Financing, PART 2C Functions, Services and Operations of City and County Government. It is Part 2 of a City and County governmental unification study, a different report entirely.",
+    "measurement": "144 pages against the 347 pages of the eleven Preferred Alternative chapter files. Token coverage of four sampled Part 2 chapters inside it is only 0.5600 to 0.6132, which is shared municipal-finance vocabulary, not containment. Compare Part1.pdf, where every chapter measures 1.0000."
+   }
+  },
+  "recommended_action": "Add Part2-4.pdf and Part2-6.pdf to the inventory as new candidates; they are chapters of a package this artifact recommends retaining. Add Part2.pdf as a new candidate under its true identity, a City and County unification study, not as a Planned Growth Strategy file. This artifact does not create inventory records.",
+  "generalisation": "This is the first cluster in this run where a City collection listing was proved incomplete against its own server. Where a directory's files are numbered, probe the sequence rather than trusting the listing."
+ },
+ "duplicate_and_supersession_checks": {
+  "internal_byte_collisions": 0,
+  "cross_inventory_byte_collisions": 0,
+  "checksums_compared_against": 1612,
+  "relationships_found_by_hash": 0,
+  "relationships_found_by_measurement": 7,
+  "note": "Seven relationships, all between the Part 1 chapter files and the combined Part 1, and hashing finds none of them: a chapter extract shares no bytes with the volume it came from. They were established by token coverage at 1.0000 and corroborated by exact page arithmetic. The same measurement applied to the file named Part2.pdf returns 0.56 to 0.61 and correctly refuses to call it a container."
+ },
+ "integration_flags": [
+  {
+   "severity": "blocker-discharge",
+   "affects": [
+    "src-0e133db868401e77",
+    "src-0bd664780961f148"
+   ],
+   "finding": "The checkpoint blocker requiring reconciliation of the split PGS package is discharged above. Both prior-lane requires-human-review records in this directory now have a clear disposition: src-0bd664780961f148 is a duplicate of the combined Part 1, and src-0e133db868401e77 is Chapter 10.0 of the Part 2 package and should be approved with its ten siblings.",
+   "recommended_action": "Apply both dispositions and close the blocker, recording the two remaining decisions from blocker_resolution.part_2.decisions_that_remain rather than leaving the blocker open for them."
+  },
+  {
+   "severity": "discovery-gap",
+   "affects": [
+    "the crawl method generally"
+   ],
+   "finding": "Part2-4.pdf, Part2-6.pdf and Part2.pdf exist on the City server, return HTTP 200, and are absent from both the City's collection listing and the inventory. Two of them are chapters of a document this artifact recommends retaining.",
+   "recommended_action": "Add the two chapters as candidates before any Part 2 archival, add Part2.pdf under its true identity, and consider a sequence-probe pass over other numbered City directories. This is a crawler finding, not a classification one."
+  },
+  {
+   "severity": "permanent-gap",
+   "affects": [
+    "the PGS Part 2 package"
+   ],
+   "finding": "Chapter 3.0, Preferred Alternative Summary, pages 131 to 156, is not obtainable from the City. It is the summary chapter of the volume.",
+   "recommended_action": "Publish the ten obtainable chapters with an explicit, visible note naming the missing chapter and its page range. Do not present the package as complete, and do not withhold ten chapters because the eleventh is lost."
+  },
+  {
+   "severity": "filename-trap",
+   "affects": [
+    "Part2.pdf"
+   ],
+   "finding": "A file named Part2.pdf sits in the pgs directory and is a City and County unification study, not the combined Planned Growth Strategy Part 2. Its sibling Part1.pdf, by contrast, genuinely is the combined Part 1. The same naming convention means two different things in one directory.",
+   "recommended_action": "Never infer a combined-volume relationship from a filename. Part1.pdf earned that description by measuring 1.0000 coverage and exact page arithmetic; Part2.pdf fails both tests."
+  },
+  {
+   "severity": "storage",
+   "affects": [
+    "src-9aeb5f621800da58",
+    "src-08b6b68b53336462",
+    "src-3efa72bc100374a1",
+    "src-aee98d2ab382de65",
+    "src-c8e6f10731a478e6",
+    "src-765624191ba169bd",
+    "src-d15bbc358aeaec4d",
+    "src-8188148b0cd6c40d",
+    "src-c771ae9e41b9905c"
+   ],
+   "finding": "The nine approved records total 102,272,070 bytes, about 98 mebibytes, dominated by the 47,215,522-byte combined Part 1 and the two 23-megabyte Part 2 chapter-1 files. Retaining the combined Part 1 instead of its seven chapter files saves nothing on storage, 47,312,592 bytes against 47,215,522, but it is still right on document-integrity grounds.",
+   "recommended_action": "Size this into the upload queue deliberately. Together with the Volcano Heights batch the two artifacts now account for roughly 240 megabytes of proposed archival, against the 67,526,043 bytes already awaiting approval in the checkpoint's existing blocker."
+  },
+  {
+   "severity": "coverage-gap",
+   "affects": [
+    "the Planned Growth Strategy subject"
+   ],
+   "finding": "The Planned Growth Strategy is the growth-management framework Albuquerque adopted elements of in the early 2000s, and the site carries nothing about it. Part 1's Chapter 4 prices infrastructure capital costs by utility, which is capital-planning material the site does cover elsewhere.",
+   "recommended_action": "Consider a Growth Management section rather than filing eleven records into an existing list. The three enabling ordinances, once their enactment status is resolved, belong with the study."
+  }
+ ],
+ "counts": {
+  "reviewed": 19,
+  "approved_for_addition": 9,
+  "duplicate": 6,
+  "requires_human_review": 3,
+  "excluded": 1,
+  "superseded": 0
+ },
+ "link_check": {
+  "checked": 21,
+  "http_200": 21,
+  "failed": 0,
+  "probe_checked": 7,
+  "probe_http_200": 3,
+  "probe_http_404": 4,
+  "method": "Full HTTP GET with a browser user agent, 2026-09-11, on the 19 pending candidates and the 2 prior-lane requires-human-review records. A further seven filename-sequence probes were run for chapters the listing does not show: Part2-3, Part2-4, Part2-6, Part2, Part2-1, Part2-12 and Part1-8.",
+  "containers_verified": "20 genuine PDFs and one HTML collection page by leading bytes."
+ },
+ "approved_for_addition": [
+  {
+   "id": "src-9aeb5f621800da58",
+   "authoritative_url": "https://www.cabq.gov/council/documents/pgs/Part1.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 47215522,
+   "checksum_sha256": "9e1ea522b4816c6a29ede3a35471ea8bd77daa0212fdb2ca2580039d6e46ee80",
+   "title": "Planned Growth Strategy, Part 1: Existing Conditions, Development Trends, Alternative Scenarios, Infrastructure Costs, and Economic Impact (complete, 286 pages)",
+   "description": "The City and County growth study's first volume documents Albuquerque development trends, tests alternative growth scenarios, prices the infrastructure each would require, reviews the policy and regulatory framework, and assesses the economic impact of growth.",
+   "date": null,
+   "pages": 286,
+   "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "The Planned Growth Strategy is the growth-management framework the sector and area plans were written under; it belongs beside them."
+    },
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "Part 1 Chapter 4 prices infrastructure capital costs by utility and is a capital-planning record as much as a land-use one."
+    }
+   ],
+   "evidence": "286 pages and 47,215,522 bytes. Measured to be the exact concatenation of the seven Part 1 chapter files: their PDF page counts sum to 286 and each chapter's normalized token coverage inside this file is 1.0000. Prepared for the County of Bernalillo under County Manager Juan Vigil and the City of Albuquerque under Mayor Jim Baca.",
+   "why_retained": "The canonical complete original of Part 1, which makes the seven chapter files components rather than separate documents. Retaining one 286-page original instead of seven fragments is the AGENTS.md canonical rule applied exactly.",
+   "dating_note": "No printed date on the pages read. The enabling ordinances in this same directory run from Council Bill F/S O-02-39(2) through O-04-9, placing the study in the 2001 to 2004 period under Mayor Jim Baca. Do not assert a specific date the document does not carry.",
+   "package_id": "pgs-part1",
+   "description_word_count": 35
+  },
+  {
+   "id": "src-08b6b68b53336462",
+   "authoritative_url": "https://www.cabq.gov/council/documents/pgs/Part2-1a.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 23265901,
+   "checksum_sha256": "54abf69425f5db13cba009ed7b7431a28fa54dba57f60dc580f611ecf7c5e71d",
+   "title": "Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 1.0a: front matter, table of contents, and Introduction and Rationale, first half",
+   "description": "Chapter 1.0a of the City and County growth study's second volume sets out front matter, table of contents, and introduction and rationale, first half, one of eleven chapters establishing and implementing the Preferred Alternative for Albuquerque's future growth and its infrastructure.",
+   "date": null,
+   "pages": 56,
+   "chapter": "1.0a",
+   "printed_pages": "1-51",
+   "package_id": "pgs-part2-preferred-alternative",
+   "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "Part of the growth-management framework the sector and area plans were written under."
+    }
+   ],
+   "evidence": "56 pages. Printed page range read from the Part 2 table of contents inside Part2-1a.pdf, not inferred from the filename; see split_package_reconciliation.",
+   "description_word_count": 41,
+   "contains_table_of_contents": "This chapter file carries the Part 2 table of contents, which is the authority for every page range in split_package_reconciliation and the evidence that Chapter 3.0 exists and is missing."
+  },
+  {
+   "id": "src-3efa72bc100374a1",
+   "authoritative_url": "https://www.cabq.gov/council/documents/pgs/Part2-1b.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 23127651,
+   "checksum_sha256": "279fa6d0e792d26b33f92475ecd7779f07b12df7ffbdfc809b62ca050e9790cc",
+   "title": "Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 1.0b: Introduction and Rationale, second half, through the establishment of the Preferred Alternative",
+   "description": "Chapter 1.0b of the City and County growth study's second volume sets out introduction and rationale, second half, through the establishment of the preferred alternative, one of eleven chapters establishing and implementing the Preferred Alternative for Albuquerque's future growth and its infrastructure.",
+   "date": null,
+   "pages": 22,
+   "chapter": "1.0b",
+   "printed_pages": "52-82",
+   "package_id": "pgs-part2-preferred-alternative",
+   "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "Part of the growth-management framework the sector and area plans were written under."
+    }
+   ],
+   "evidence": "22 pages. Printed page range read from the Part 2 table of contents inside Part2-1a.pdf, not inferred from the filename; see split_package_reconciliation.",
+   "description_word_count": 42
+  },
+  {
+   "id": "src-aee98d2ab382de65",
+   "authoritative_url": "https://www.cabq.gov/council/documents/pgs/Part2-2.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 4201481,
+   "checksum_sha256": "021e423e7c292e121ecd971ea3636b997d3ac836b96153fc8c5fd33a39e57879",
+   "title": "Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 2.0: Subarea Descriptions",
+   "description": "Chapter 2.0 of the City and County growth study's second volume sets out subarea descriptions, one of eleven chapters establishing and implementing the Preferred Alternative for Albuquerque's future growth and its infrastructure.",
+   "date": null,
+   "pages": 48,
+   "chapter": "2.0",
+   "printed_pages": "83-130",
+   "package_id": "pgs-part2-preferred-alternative",
+   "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "Part of the growth-management framework the sector and area plans were written under."
+    }
+   ],
+   "evidence": "48 pages. Printed page range read from the Part 2 table of contents inside Part2-1a.pdf, not inferred from the filename; see split_package_reconciliation.",
+   "description_word_count": 32
+  },
+  {
+   "id": "src-c8e6f10731a478e6",
+   "authoritative_url": "https://www.cabq.gov/council/documents/pgs/Part2-5.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 1725934,
+   "checksum_sha256": "30a18cff75328e05cf860d31e7fd5d568adf0983a8b627143c394803796c9e9d",
+   "title": "Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 5.0: Level of Service Standards and the Planned Growth Strategy",
+   "description": "Chapter 5.0 of the City and County growth study's second volume sets out level of service standards and the planned growth strategy, one of eleven chapters establishing and implementing the Preferred Alternative for Albuquerque's future growth and its infrastructure.",
+   "date": null,
+   "pages": 35,
+   "chapter": "5.0",
+   "printed_pages": "169-210",
+   "package_id": "pgs-part2-preferred-alternative",
+   "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "Part of the growth-management framework the sector and area plans were written under."
+    }
+   ],
+   "evidence": "35 pages. Printed page range read from the Part 2 table of contents inside Part2-1a.pdf, not inferred from the filename; see split_package_reconciliation.",
+   "description_word_count": 39
+  },
+  {
+   "id": "src-765624191ba169bd",
+   "authoritative_url": "https://www.cabq.gov/council/documents/pgs/Part2-7.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 294425,
+   "checksum_sha256": "d437adbf74a1f2332cb3090e5c8deda0acd59ed39584cd1635d71b610c17fb0d",
+   "title": "Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 7.0: Planned Growth Regulatory Structure Approaches",
+   "description": "Chapter 7.0 of the City and County growth study's second volume sets out planned growth regulatory structure approaches, one of eleven chapters establishing and implementing the Preferred Alternative for Albuquerque's future growth and its infrastructure.",
+   "date": null,
+   "pages": 26,
+   "chapter": "7.0",
+   "printed_pages": "219-244",
+   "package_id": "pgs-part2-preferred-alternative",
+   "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "Part of the growth-management framework the sector and area plans were written under."
+    }
+   ],
+   "evidence": "26 pages. Printed page range read from the Part 2 table of contents inside Part2-1a.pdf, not inferred from the filename; see split_package_reconciliation.",
+   "description_word_count": 35
+  },
+  {
+   "id": "src-d15bbc358aeaec4d",
+   "authoritative_url": "https://www.cabq.gov/council/documents/pgs/Part2-8.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 1228664,
+   "checksum_sha256": "8bbbe5368e0c0f87f369c2583beec1a9f9fd5ddac8fd5ccc7b53db76d1e09569",
+   "title": "Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 8.0: Combining the Level of Service Standards with the Management Committee material",
+   "description": "Chapter 8.0 of the City and County growth study's second volume sets out combining the level of service standards with the management committee material, one of eleven chapters establishing and implementing the Preferred Alternative for Albuquerque's future growth and its infrastructure.",
+   "date": null,
+   "pages": 20,
+   "chapter": "8.0",
+   "printed_pages": "245-264",
+   "package_id": "pgs-part2-preferred-alternative",
+   "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "Part of the growth-management framework the sector and area plans were written under."
+    }
+   ],
+   "evidence": "20 pages. Printed page range read from the Part 2 table of contents inside Part2-1a.pdf, not inferred from the filename; see split_package_reconciliation.",
+   "description_word_count": 41
+  },
+  {
+   "id": "src-8188148b0cd6c40d",
+   "authoritative_url": "https://www.cabq.gov/council/documents/pgs/Part2-9.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 128581,
+   "checksum_sha256": "faaf061d3218634bfef1d1c3acf1e5767654bf3dbe6e61aa6807bc0573a69891",
+   "title": "Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 9.0: City and County Financial and Planning Requirements",
+   "description": "Chapter 9.0 of the City and County growth study's second volume sets out city and county financial and planning requirements, one of eleven chapters establishing and implementing the Preferred Alternative for Albuquerque's future growth and its infrastructure.",
+   "date": null,
+   "pages": 16,
+   "chapter": "9.0",
+   "printed_pages": "265-280",
+   "package_id": "pgs-part2-preferred-alternative",
+   "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "Part of the growth-management framework the sector and area plans were written under."
+    }
+   ],
+   "evidence": "16 pages. Printed page range read from the Part 2 table of contents inside Part2-1a.pdf, not inferred from the filename; see split_package_reconciliation.",
+   "description_word_count": 37
+  },
+  {
+   "id": "src-c771ae9e41b9905c",
+   "authoritative_url": "https://www.cabq.gov/council/documents/pgs/Part2-11.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 1083911,
+   "checksum_sha256": "b9427b77d46d846c699d45e01297f5590f893826de0a58b38965b10b7765aaa7",
+   "title": "Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 11.0: Planned Growth Regulatory structure",
+   "description": "Chapter 11.0 of the City and County growth study's second volume sets out planned growth regulatory structure, one of eleven chapters establishing and implementing the Preferred Alternative for Albuquerque's future growth and its infrastructure.",
+   "date": null,
+   "pages": 33,
+   "chapter": "11.0",
+   "printed_pages": "-345",
+   "package_id": "pgs-part2-preferred-alternative",
+   "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "Part of the growth-management framework the sector and area plans were written under."
+    }
+   ],
+   "evidence": "33 pages. Printed page range read from the Part 2 table of contents inside Part2-1a.pdf, not inferred from the filename; see split_package_reconciliation.",
+   "description_word_count": 34
+  }
+ ],
+ "duplicate": [
+  {
+   "id": "src-1779ba516b4d2c3f",
+   "authoritative_url": "https://www.cabq.gov/council/documents/pgs/Part1-1.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 3859724,
+   "checksum_sha256": "0eded5d682c2ccf4cb34c13c2b9be9ba76ba9235b3ea48a85ed92d457d3e3a39",
+   "title_for_reference": "Planned Growth Strategy Part 1, chapter file 1 of 7 (Acknowledgements, introduction and study framing)",
+   "pages": 20,
+   "canonical_id": "src-9aeb5f621800da58",
+   "canonical_url": "https://www.cabq.gov/council/documents/pgs/Part1.pdf",
+   "basis": "A chapter extract of the complete Part 1. Its normalized token coverage inside Part1.pdf is 1.0000, and the seven chapter files' PDF page counts sum to exactly the 286 pages of Part1.pdf.",
+   "hash_found_it": false
+  },
+  {
+   "id": "src-544756098ac12660",
+   "authoritative_url": "https://www.cabq.gov/council/documents/pgs/Part1-2.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 9672675,
+   "checksum_sha256": "760cd6ed93917792be32b9d46e5fb37ef06c3479256eb4c65c1eb6cddcfed667",
+   "title_for_reference": "Planned Growth Strategy Part 1, chapter file 2 of 7 (Development Trends)",
+   "pages": 51,
+   "canonical_id": "src-9aeb5f621800da58",
+   "canonical_url": "https://www.cabq.gov/council/documents/pgs/Part1.pdf",
+   "basis": "A chapter extract of the complete Part 1. Its normalized token coverage inside Part1.pdf is 1.0000, and the seven chapter files' PDF page counts sum to exactly the 286 pages of Part1.pdf.",
+   "hash_found_it": false
+  },
+  {
+   "id": "src-cd7c886fe1c0e6f7",
+   "authoritative_url": "https://www.cabq.gov/council/documents/pgs/Part1-3.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 5006126,
+   "checksum_sha256": "3bf9d4cfc74e1b3e2b1af07d2e0292768e95594097b1c95f4b0882292d2b294b",
+   "title_for_reference": "Planned Growth Strategy Part 1, chapter file 3 of 7 (Alternative Scenarios)",
+   "pages": 11,
+   "canonical_id": "src-9aeb5f621800da58",
+   "canonical_url": "https://www.cabq.gov/council/documents/pgs/Part1.pdf",
+   "basis": "A chapter extract of the complete Part 1. Its normalized token coverage inside Part1.pdf is 1.0000, and the seven chapter files' PDF page counts sum to exactly the 286 pages of Part1.pdf.",
+   "hash_found_it": false
+  },
+  {
+   "id": "src-a7dd815a1ea2937e",
+   "authoritative_url": "https://www.cabq.gov/council/documents/pgs/Part1-4.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 26805110,
+   "checksum_sha256": "ecf49d3b83ca96f0c840af8933de5b8ac5d9b3a76d0ec408b6dc26d31292ec15",
+   "title_for_reference": "Planned Growth Strategy Part 1, chapter file 4 of 7 (Infrastructure Costs)",
+   "pages": 86,
+   "canonical_id": "src-9aeb5f621800da58",
+   "canonical_url": "https://www.cabq.gov/council/documents/pgs/Part1.pdf",
+   "basis": "A chapter extract of the complete Part 1. Its normalized token coverage inside Part1.pdf is 1.0000, and the seven chapter files' PDF page counts sum to exactly the 286 pages of Part1.pdf.",
+   "hash_found_it": false
+  },
+  {
+   "id": "src-415952dd1d905cf7",
+   "authoritative_url": "https://www.cabq.gov/council/documents/pgs/Part1-5.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 1778928,
+   "checksum_sha256": "25caa8f43a1dbd2e2ed3be0e0dc4f8e1746db8b0249956cdd06bf6b843807162",
+   "title_for_reference": "Planned Growth Strategy Part 1, chapter file 5 of 7 (Policy, Regulatory and Plan Review)",
+   "pages": 72,
+   "canonical_id": "src-9aeb5f621800da58",
+   "canonical_url": "https://www.cabq.gov/council/documents/pgs/Part1.pdf",
+   "basis": "A chapter extract of the complete Part 1. Its normalized token coverage inside Part1.pdf is 1.0000, and the seven chapter files' PDF page counts sum to exactly the 286 pages of Part1.pdf.",
+   "hash_found_it": false
+  },
+  {
+   "id": "src-f1990b741c73ce09",
+   "authoritative_url": "https://www.cabq.gov/council/documents/pgs/Part1-7.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 56608,
+   "checksum_sha256": "0ed69e4d789223c4f48e5c6aa205e0ebd59a6bcf89874fcb97c2546cdcb83e15",
+   "title_for_reference": "Planned Growth Strategy Part 1, chapter file 7 of 7 (Section 3, Other Consequences)",
+   "pages": 15,
+   "canonical_id": "src-9aeb5f621800da58",
+   "canonical_url": "https://www.cabq.gov/council/documents/pgs/Part1.pdf",
+   "basis": "A chapter extract of the complete Part 1. Its normalized token coverage inside Part1.pdf is 1.0000, and the seven chapter files' PDF page counts sum to exactly the 286 pages of Part1.pdf.",
+   "hash_found_it": false
+  }
+ ],
+ "requires_human_review": [
+  {
+   "id": "src-f7c7bd5b273def22",
+   "authoritative_url": "https://www.cabq.gov/council/documents/pgs/o-39fs3.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 83406,
+   "checksum_sha256": "bd735ae50447b5b62dccff112e50ad6e8e9d4021b217987112e91f9085d0a138",
+   "draft_title": "Council Bill F/S O-02-39 (2): Adopting Elements of a Planned Growth Strategy to Guide the Management of City of Albuquerque Urban Growth; Identifying and Defining Certain Implementation Elements",
+   "pages": 14,
+   "question_for_human": "Locate the enacted ordinance. This is the instrument that would have adopted the Planned Growth Strategy itself.",
+   "why_not_decided_here": "The sheet carries ENACTMENT NO. blank, so under the two standing checkpoint blockers it is the bill as considered rather than the law and must not be archived or presented as enacted. These three are the most consequential such files found anywhere in this run: they are the instruments that would have given the Planned Growth Strategy legal force, and whether they passed is precisely the question a reader of the study would need answered. They should be resolved as one group.",
+   "evidence": "14 pages, Fifteenth Council, sponsored by Michael Cadigan, enactment number blank."
+  },
+  {
+   "id": "src-68582bc4fe41fb4f",
+   "authoritative_url": "https://www.cabq.gov/council/documents/pgs/o-132fin.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 25029,
+   "checksum_sha256": "ece75a9eb9af3db5fb837a407eae1eafeeb9f032cb1f22b65d2ad188482e80f0",
+   "draft_title": "Council Bill O-03-132: Adopting an Infrastructure and Growth Plan Pursuant to Section 14-13-2-3(B) ROA 1994",
+   "pages": 5,
+   "question_for_human": "Locate the enacted ordinance; decide together with F/S O-02-39(2) and O-04-9.",
+   "why_not_decided_here": "The sheet carries ENACTMENT NO. blank, so under the two standing checkpoint blockers it is the bill as considered rather than the law and must not be archived or presented as enacted. These three are the most consequential such files found anywhere in this run: they are the instruments that would have given the Planned Growth Strategy legal force, and whether they passed is precisely the question a reader of the study would need answered. They should be resolved as one group.",
+   "evidence": "5 pages, Fifteenth Council, sponsored by Michael Cadigan, enactment number blank."
+  },
+  {
+   "id": "src-fcbe6a7ebcf916a1",
+   "authoritative_url": "https://www.cabq.gov/council/documents/pgs/o-9fin.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 24816,
+   "checksum_sha256": "d20947b7c3ff6e9ef02896915b29fd23cd63493660bedfdadee9a0bbeae68d4a",
+   "draft_title": "Council Bill O-04-9: Adopting Land Use Assumptions Pursuant to the State Development Fees Act and Section 14-13-1-4 ROA 1994",
+   "pages": 5,
+   "question_for_human": "Locate the enacted ordinance; decide together with the other two.",
+   "why_not_decided_here": "The sheet carries ENACTMENT NO. blank, so under the two standing checkpoint blockers it is the bill as considered rather than the law and must not be archived or presented as enacted. These three are the most consequential such files found anywhere in this run: they are the instruments that would have given the Planned Growth Strategy legal force, and whether they passed is precisely the question a reader of the study would need answered. They should be resolved as one group. This one also connects to material already triaged: the land use assumptions it adopts under the State Development Fees Act are the same assumptions the Component Capital Improvements Plan resolutions R-2012-100 and R-2013-115, recommended for addition in the Development Review Services artifact of the same date, later amend.",
+   "evidence": "5 pages, Sixteenth Council, sponsored by Michael Cadigan, enactment number blank."
+  }
+ ],
+ "excluded": [
+  {
+   "id": "src-b443cbb28db8106b",
+   "authoritative_url": "https://www.cabq.gov/council/documents/pgs",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "HTML; leading bytes are 3c 21 44 4f",
+   "size_bytes": 171493,
+   "checksum_sha256": "80ea27cd37ef23d059dc3cc123ab4894ddd52e14c4f6634f5ec77b9f995b4067",
+   "title_for_reference": "Planned Growth Strategy collection landing page",
+   "exclusion_reason": "The Plone collection landing page for this directory, not a document. Its only content is the list of links to the files it contains plus site chrome.",
+   "category": "collection landing page",
+   "usefulness": "It was fetched and parsed as part of this lane. Notably it does not list Part2-4.pdf, Part2-6.pdf or Part2.pdf either, which is why those three were never discovered: the crawler followed the City's own listing and the listing is incomplete. They were found by probing the filename sequence directly."
+  }
+ ],
+ "archival_note": "All 9 approved records are static PDFs and are inventory-only until an R2 archive object exists for each and its public download, exact size, SHA-256, and authoritative-source provenance are verified. Combined archive footprint if authorized: 102,272,070 bytes, and that figure will rise once Part2-4.pdf and Part2-6.pdf are added as candidates and Part2-10 is resolved. The Part 2 chapters must be archived as a set: a partial archive of an already-incomplete package would compound the gap.",
+ "integration_note": "Codex integration lane: apply recommended_status values through scripts/project/Update-Candidate.ps1 only. Every duplicate row carries a canonical_id resolving to the retained combined Part 1. The 9 approved rows each carry a title, a 20-to-50-word description, a proposed_canonical_page and cross_listings; all carry a null date because no file in this directory prints one, and none may be given an asserted date. The eight Part 2 chapter rows share a package_id and carry their printed page ranges. Three rows are requires human review under the standing enactment blockers and should be decided as one group. Two records outside this artifact's classification scope have explicit recommended dispositions in blocker_resolution. Sizes and checksums are first measurements; the inventory held neither.",
+ "safeguards": [
+  "no master-inventory.json write",
+  "no checkpoint.json write",
+  "no r2-inventory.json write",
+  "no site content change",
+  "no R2 upload",
+  "no commit, merge, or deploy",
+  "no inventory record created for the three undiscovered files"
+ ]
+}

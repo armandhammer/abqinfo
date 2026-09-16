@@ -1,0 +1,346 @@
+{
+ "batch_id": "councilor-district-1-cluster-research-2026-09-12",
+ "lane": "Claude research lane: www.cabq.gov/council/documents/councilor-district-1-documents cluster",
+ "generated_at": "2026-09-12T14:51:18.081473+00:00",
+ "date_note": "Dated 2026-09-12. Artifacts before councilor-district-9-cluster-research-2026-09-12.json are dated 2026-09-11; cross-references name artifacts by filename.",
+ "cluster": "The District 1 councillor's document collection in the Albuquerque City Council library, covering Council President Ken Sanchez's capital-programme and Atrisco Drive work.",
+ "scope": "All 13 pending-review candidates, which is every record in the directory. Nothing here is terminal.",
+ "brief": "Apply the now-standard opening sequence: URL group-by, both URL forms, internal and inventory-wide hashing, then a comparison against the published site and R2 before anything is recommended.",
+ "brief_finding": "The sequence found nothing already held, which is itself the result: unlike the last three clusters, this directory duplicates nothing in the archive. What it does hold is the 2009 capital programming resolution in two presentations plus two working tables — the largest single financial instrument found in a councillor directory this run — and a genuinely unheld traffic engineering case for a lane conversion on a street the archive knows nothing about.",
+ "second_finding": "A small correction with an unusually clean proof. Two copies of one press release differ in two lines: the first prints the bill number E-14-31, the second R-14-31. The Plone filename says the second is the copy, but it is the corrected one — and the proof is in another directory. councilor-district-9-cluster-research-2026-09-12.json recommends the enacted Resolution R-2014-012, Council Bill R-14-31, sponsored by the same two councillors, for exactly this subject. Neither press release is worth archiving; the enacted resolution already is.",
+ "method": "Ran the URL group-by first; no collisions. Fetched all 13 candidates on both URL forms and measured byte length and SHA-256 from the raw form. Compared all checksums within the cluster and against the 1,612 checksummed inventory records: no collisions either way. Extracted text from every PDF; four had no usable text layer and were rendered and read rather than classified from their filenames. Searched the inventory and the published site for the adopted outcome of the one legislative instrument and for prior coverage of the one substantive presentation.",
+ "classification_only": true,
+ "shared_state_written": [],
+ "status_convention": {
+  "problem": "Three clusters in a row have produced version pairs where neither member is retained — the two issues of a DNA meeting summary, the four copies of a Transition Albuquerque flyer, and now the two issues of an adoption press release. Marking one superseded by the other asserts an archival ordering for documents that will not be archived.",
+  "rule_used": "Where the copies are byte-identical, use duplicate: it states a mechanical fact that holds whether or not anything is retained, which is how the flyer group was handled in councilor-district-7-cluster-research-2026-09-12.json. Where the copies differ in content and neither is retained, mark both excluded and record the relationship in prose, which is how the DNA meeting summaries were handled in dnasdp-cluster-research-2026-09-12.json and how the press releases are handled here. Reserve superseded for cases where the canonical is itself retained or held for review, as the redline row in this artifact is.",
+  "for_integration": "Stated so the three artifacts read consistently rather than looking like three different judgments."
+ },
+ "legislative_package": {
+  "instrument": "Council Bill C/S R-08-182, Eighteenth Council, sponsored by Ken Sanchez: approving the programming of funds and projects for the 2009-2018 Decade Plan for Capital Improvements including the 2009 Two-Year Capital Budget, and making appropriations from Transportation Infrastructure Tax Fund 340.",
+  "files_here": {
+   "clean committee substitute": "src-23a38383e9fff089",
+   "redline committee substitute": "src-418a707110a63f41",
+   "floor substitute working table, by department": "src-f8453bfbac0e5e6f",
+   "floor substitute working table, by Council district": "src-e84ecf5f9ebbee36"
+  },
+  "outcome_search": "The programme this resolution approves is published in depth on content/city-data/capital-spending.md — the 2009 funding allocation chart, department scope tables, and 2009-2017 department summaries — and line 141 of that page publishes the enacted criteria resolution R-07-12 for the same bond programme. So enacted instruments from this programme are obtainable. The programming resolution itself is not held in any form.",
+  "why_it_matters": "The district-by-district table is the only place in the archive where the 2009 capital programme is broken out by Council district with before-and-after figures. The published departmental summaries aggregate by department instead.",
+  "recommended_action": "Resolve R-08-182 together with the two Don Harris resolutions from district 9 and memorial M-14-5 from district 4. Four Council instruments now sit at requires human review with their adoption evidenced or their programme published, and only the enacted text unlocated."
+ },
+ "duplicate_and_supersession_checks": {
+  "internal_byte_collisions": 0,
+  "cross_inventory_byte_collisions": 0,
+  "url_collisions_in_this_directory": 0,
+  "checksums_compared_against": 1612,
+  "relationships_found_by_hash": 0,
+  "relationships_found_by_rendering": 1,
+  "relationships_found_by_text_diff": 1,
+  "note": "Two relationships and hashing found neither. The redline and clean bill texts are both image-only and were settled by rendering both first pages and reading the amount column. The press release pair was settled by a two-line diff and then confirmed against an enacted resolution in a different directory."
+ },
+ "integration_flags": [
+  {
+   "severity": "substantive-find",
+   "affects": [
+    "src-1740488e9a78e215"
+   ],
+   "finding": "A 21-page City traffic engineering presentation for an Atrisco Drive NW lane conversion, with speed, crash, access, volume and capacity analysis. Nothing else for this street exists in the inventory; every other Atrisco record is Atrisco Vista Boulevard, a different County road.",
+   "recommended_action": "Approve and place on the corridor studies page, cross-listed to speed management. Label it a proposal, not a decision."
+  },
+  {
+   "severity": "tractable-enactment",
+   "affects": [
+    "src-23a38383e9fff089",
+    "src-f8453bfbac0e5e6f",
+    "src-e84ecf5f9ebbee36"
+   ],
+   "finding": "C/S R-08-182, the 2009 capital programming resolution, plus two floor-substitute working tables. Enactment blocks blank. The programme it approves is published in depth and the enacted criteria resolution for the same bond programme is already on the site.",
+   "recommended_action": "Resolve as a package, alongside district 9's R-14-82 and R-14-113 and district 4's M-14-5."
+  },
+  {
+   "severity": "cross-cluster-confirmation",
+   "affects": [
+    "src-2bf84750e66b6baf",
+    "src-a208f1c6551241b1",
+    "src-7bf7341bebf83fe6"
+   ],
+   "finding": "One of the two adoption press releases misprints the bill number as E-14-31. The enacted Resolution R-2014-012, Council Bill R-14-31, recommended for addition from district 9, settles the number and the observance name.",
+   "recommended_action": "None beyond the exclusions. Recorded because it is a worked example of two clusters checking each other."
+  },
+  {
+   "severity": "discovery-lead",
+   "affects": [
+    "src-161f95b657b74333",
+    "src-7c3f2ea6bda0d838",
+    "src-2cf62271117cfd31"
+   ],
+   "finding": "Three excluded records each name something the archive does not hold: a 2010 Traffic Mitigation Study for the Atrisco Drive area proposing an unbuilt roundabout at Hanover and Atrisco; Council Bill R-14-22 reserving $1.8 million in FY14 for fire and EMS pay; and the interim rules of decorum adopted for the 8 May 2014 special Council meeting.",
+   "recommended_action": "Add all three to the discovery queue. The records that name them are excluded, so these leads exist only here."
+  },
+  {
+   "severity": "convention",
+   "affects": [],
+   "finding": "Version pairs where neither member is retained have now appeared in three consecutive clusters and were handled two different ways.",
+   "recommended_action": "Adopt the rule stated in status_convention: duplicate for byte-identical, excluded-with-prose for content-differing, superseded only where the canonical is retained or held for review."
+  }
+ ],
+ "counts": {
+  "reviewed": 13,
+  "approved_for_addition": 1,
+  "requires_human_review": 3,
+  "superseded": 1,
+  "excluded": 8
+ },
+ "link_check": {
+  "checked": 13,
+  "http_200": 13,
+  "failed": 0,
+  "both_url_forms_checked": 12,
+  "method": "Full HTTP GET with a browser user agent on the raw file URL and on the inventoried /view URL, 2026-09-12.",
+  "containers_verified": "12 genuine PDFs and one HTML collection page by leading bytes. Four PDFs have no usable text layer and were rendered."
+ },
+ "approved_for_addition": [
+  {
+   "id": "src-1740488e9a78e215",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/AtriscoPresentation111314.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET on both URL forms; size_bytes and checksum_sha256 measured from the bytes returned by the raw file URL, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "raw_file_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/AtriscoPresentation111314.pdf",
+   "size_bytes": 9492057,
+   "checksum_sha256": "456ede174ae81f12073ee3bbc7721b8e01351ea9c12136706271742068abbca1",
+   "title": "Atrisco Drive Lane Modifications, Central Avenue to Iliff Road — Public Meeting Presentation, November 13, 2014",
+   "description": "The City's traffic engineering case for narrowing Atrisco Drive NW to one lane each way sets out measured speeds, crash causes, access counts, traffic volumes against roadway capacity, expected signal-cycle impacts, and the twelve-month pilot restriping proposed to residents.",
+   "date": "2014-11-13",
+   "pages": 21,
+   "evidence": "PDF with a thin text layer over image slides; pages were rendered and read. Titled ATRISCO DRIVE / LANE MODIFICATIONS / CENTRAL AVENUE TO ILIFF ROAD, November 13, 2014, prepared by Parametrix. It carries existing-conditions speed data from 2009, a crash-cause breakdown (5 following too closely, 4 excessive speed, 4 improper turn, 3 driver inattention, 3 failure to yield, 3 drugs or alcohol, 3 other no-error, 2 avoiding a vehicle, 1 passed stop sign), an access inventory of 22 side-street intersections and over 100 driveways, bikeway conditions, traffic volumes plotted against four-lane and two-lane level-of-service D capacity, and an expected-traffic-impacts slide giving signal cycles to clear at Central.",
+   "why_retained": "It is the only record of this project anywhere. The inventory holds nothing else for Atrisco Drive NW — every other Atrisco record is Atrisco Vista Boulevard, a different County road on the far west side. The condensed-presentation exclusion applied twice in councilor-district-7-cluster-research-2026-09-12.json does not reach this file, because that rule turns on the full study being archived and here there is no full study to defer to. The site already publishes a comparable presentation on the same ground: the GABAC crossing-concept deck at content/transportation/bicycling/projects/_index.md line 125.",
+   "proposed_canonical_page": "content/transportation/roadway-projects/studies.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/speed-management.md",
+     "reason": "Its problem statement is speeding on Atrisco Drive and its proposal is a lane conversion to reduce it; that page already carries the Iliff Road and Milne Road speed studies for the same part of the city."
+    }
+   ],
+   "caution": "A proposal presented to residents, not a decision. It asks for a twelve-month pilot restriping to one lane each way with 6.5-foot bike lanes; nothing here records whether that pilot was approved or built.",
+   "description_word_count": 39
+  }
+ ],
+ "requires_human_review": [
+  {
+   "id": "src-23a38383e9fff089",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/csr-08-182_-_sanchez.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET on both URL forms; size_bytes and checksum_sha256 measured from the bytes returned by the raw file URL, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "raw_file_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/csr-08-182_-_sanchez.pdf",
+   "size_bytes": 290653,
+   "checksum_sha256": "7b800c30609ce385f9394e1d8136bfdc169b7f74e4739f922f720034269a3a3d",
+   "draft_title": "Council Bill C/S R-08-182: Resolution Approving the Programming of Funds and Projects for the 2009-2018 Decade Plan for Capital Improvements Including the 2009 Two-Year Capital Budget",
+   "pages": 14,
+   "evidence": "Image-only PDF with 14 bytes of extractable text; rendered and read. CITY of ALBUQUERQUE, EIGHTEENTH COUNCIL, COUNCIL BILL NO. C/S R-08-182, ENACTMENT NO. blank, sponsored by Ken Sanchez. It recites 2-12-2 ROA 1994 requiring the Mayor to formulate the Decade Plan, the biennial Two-Year Capital Budget requirement, and Council approval within 60 days of a public hearing, then sets out Section 1's project-and-amount table beginning with DMD/Streets: Reconstruction of Lead and Coal Avenues $4,000,000, Reconstruction Major Streets $1,600,000, Reconstruction Major Intersections $1,650,000. It also makes appropriations from Transportation Infrastructure Tax Fund 340.",
+   "question_for_human": "Locate the enacted resolution for R-08-182.",
+   "why_not_decided_here": "Enactment number blank, under the two standing checkpoint blockers. Applying the standing lesson from councilor-district-9-cluster-research-2026-09-12.json, this lane searched for the adopted outcome and found the programme but not the instrument. The 2009 general obligation bond programme this resolution approves is published in unusual depth: content/city-data/capital-spending.md carries the funding allocation chart, the department scope tables and the 2009-2017 department summaries for Streets, Storm Drainage, Parks and Recreation, ABQ RIDE, Community Facilities and more, and at line 141 it publishes the *enacted* criteria resolution R-07-12 for the same programme. So the Council's enacted instruments for this programme are demonstrably obtainable; the programming resolution is simply not held. Unlike the district-9 budget case, the outcome here is a programme rather than a single successor document, so no canonical can be asserted.",
+   "note": "This is a complete committee-substitute bill text, not an amendment sheet. The non-self-contained-fragment exclusion recorded in council-documents-cluster-research-2026-09-11.json does not apply to it.",
+   "related_outside_this_cluster": "Two committee amendment sheets to the same bill sit in the District 5 directory, src-a09a7081a2d10b09 and src-652537178b2679cd, both already recommended excluded in councilor-district-5-cluster-research-2026-09-11.json as non-self-contained fragments. Resolving R-08-182 would let those be revisited if desired."
+  },
+  {
+   "id": "src-f8453bfbac0e5e6f",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/2009_cip_sanchez_1.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET on both URL forms; size_bytes and checksum_sha256 measured from the bytes returned by the raw file URL, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "raw_file_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/2009_cip_sanchez_1.pdf",
+   "size_bytes": 29676,
+   "checksum_sha256": "0a14f7b5bd61cd4115096dd4f64c51bcfe8fe5c983f752e42bc12ebd5beeee97",
+   "draft_title": "2009 Capital Implementation Program working table 1: department-by-department comparison of the proposed programme against the proposed floor substitute (Committee Sub R-08-182, Sanchez)",
+   "pages": 8,
+   "evidence": "Born-digital PDF with a full text layer, 27,494 characters. Headed \"Committee Sub - R-08-182 - Sanchez / 2009 CIP\" with columns for Proposed Total, Additions, Proposed Floor Sub Subtract, Proposed Total and Comments, line by line across departments. Example rows: Reconstruct Lead/Coal Avenues $4,000,000 with the comment \"To be funded from Trans Tax\"; Reconstruct Major Streets $2,900,000 less $1,300,000; Major Paving Rehab $6,000,000.",
+   "question_for_human": "Decide with C/S R-08-182 above. If the floor substitute these tables analyse was adopted, they document how the programme changed; if it was not, they are working papers for a proposal that failed.",
+   "why_not_decided_here": "These are exhibits to a *floor* substitute, a later instrument than the committee substitute above and one that is not held at all. The amendment-packet rule recorded in council-amendments-cluster-research-2026-09-11.json says an amendment packet with no enacted parent held is excluded, but that rule was written for amendment sheets, which are unreadable without the bill. These tables are self-contained and carry figures that exist nowhere else, so excluding them on a rule written for a different document type would lose real content on a technicality.",
+   "companion": "src-e84ecf5f9ebbee36"
+  },
+  {
+   "id": "src-e84ecf5f9ebbee36",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/2009_cip_sanchez_2.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET on both URL forms; size_bytes and checksum_sha256 measured from the bytes returned by the raw file URL, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "raw_file_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/2009_cip_sanchez_2.pdf",
+   "size_bytes": 18484,
+   "checksum_sha256": "047f42ebd61c158adbd290facce90126e7435159aa5af20eef6f3c84142810f7",
+   "draft_title": "2009 Capital Implementation Program working table 2: district-specific and multiple-district projects by Council district (Committee Sub R-08-182, Sanchez)",
+   "pages": 3,
+   "evidence": "Born-digital PDF with a full text layer. Headed \"District Specific & Multiple District Projects by Council District / Committee Sub - R-08-182 - Sanchez\" with columns As Proposed, Proposed Floor Sub and Difference. Council District One rows include Public Library at Central and Unser $650,000 unchanged, Westgate Community Center Renovation $1,000,000 rising to $3,000,000, Fortuna Storm Drain $1,500,000 unchanged, SW Arterial Roadways $1,000,000 unchanged, and West Central MRA / New Neighborhood Park $500,000 rising to $750,000.",
+   "question_for_human": "Decide with the two rows above.",
+   "why_not_decided_here": "Same grounds as its companion table. This one is the more consequential of the two: it is a district-by-district ledger of what each councillor's area would gain or lose under the floor substitute, which is exactly the kind of figure a resident would want and which the published departmental summaries do not break out.",
+   "companion": "src-f8453bfbac0e5e6f"
+  }
+ ],
+ "superseded": [
+  {
+   "id": "src-418a707110a63f41",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/csr-08-182_-_sanchezredline.pdf/view",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET on both URL forms; size_bytes and checksum_sha256 measured from the bytes returned by the raw file URL, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "raw_file_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/csr-08-182_-_sanchezredline.pdf",
+   "size_bytes": 236013,
+   "checksum_sha256": "32f0c4c2a63286154be0ecc113183e9fea9b9592a304972ec4dcaab99f3a430d",
+   "title_for_reference": "Council Bill C/S R-08-182 — Redline Version",
+   "pages": 11,
+   "canonical_id": "src-23a38383e9fff089",
+   "canonical_url": null,
+   "canonical_state": "requires human review in this batch, under the standing enactment blockers",
+   "basis": "The change-marked presentation of the same committee substitute; the clean text is the operative one.",
+   "measurement": "Both are image-only and both were rendered. The pages are identical through line 24 — same council, same bill number C/S R-08-182, same blank enactment block, same sponsor, same resolution title and recitals — and diverge only in the amount column, where the clean text prints \"$1,600,000\" and the redline prints \"[-$2,900,000-][+$1,600,000+]\". The redline also carries the banner \"~ Redline Version ~\" above the City name. It runs 11 pages to the clean text's 14 because the markup reflows the tables.",
+   "hash_found_it": false,
+   "what_is_lost": "The redline is the only record of what the committee changed from the original R-08-182. That is worth noting rather than archiving: the same information is recoverable from the two CIP working tables held at requires human review above, which give the before and after figures in columns.",
+   "precedent": "Two presentations of one instrument, resolved to the clean text. Same treatment as the R-14-82 and R-14-113 pairs in councilor-district-9-cluster-research-2026-09-12.json and the FY2011 floor substitute pair in councilor-district-5-cluster-research-2026-09-11.json."
+  }
+ ],
+ "excluded": [
+  {
+   "id": "src-2bf84750e66b6baf",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/copy_of_Harris_Sanchez_Adoption.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET on both URL forms; size_bytes and checksum_sha256 measured from the bytes returned by the raw file URL, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "raw_file_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/copy_of_Harris_Sanchez_Adoption.pdf",
+   "size_bytes": 227912,
+   "checksum_sha256": "76835b07706c9023c9cf4074716e483262372db4082764882dca0c2b6faae6d6",
+   "title_for_reference": "Press release: Albuquerque City Council amends R-14-31, National Adoption Appreciation Day (corrected issue)",
+   "pages": 1,
+   "exclusion_reason": "A City Council press release on Council letterhead, marked FOR IMMEDIATE RELEASE. Press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json: they announce rather than record, and the instrument or action behind them is the archivable thing.",
+   "category": "press release",
+   "date": "2014-03-17",
+   "version_relationship": "The corrected issue of src-a208f1c6551241b1, and the correction runs the opposite way from what the filenames suggest: this is copy_of_Harris_Sanchez_Adoption.pdf and it is the later, right one. The earlier file prints the bill number as E-14-31 in both the headline and the body and calls the observance \"National Adoption Day Appreciation\"; this one prints R-14-31 and \"National Adoption Appreciation Day\". Normalized-text ratio 0.99; those two lines are the whole difference.",
+   "confirmed_against_another_cluster": "R-14-31 is right and E-14-31 is a typo. councilor-district-9-cluster-research-2026-09-12.json recommends src-7bf7341bebf83fe6 for addition: the enacted Resolution R-2014-012, Council Bill R-14-31, sponsored by Don Harris and Ken Sanchez, amending R-13-189 on Adoption Appreciation Day. The enacted instrument settles both the number and the name.",
+   "but_see": "The enacted resolution itself is the archivable record of this action, and it is already recommended for addition from the District 9 directory."
+  },
+  {
+   "id": "src-a208f1c6551241b1",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/Harris_Sanchez_Adoption.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET on both URL forms; size_bytes and checksum_sha256 measured from the bytes returned by the raw file URL, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "raw_file_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/Harris_Sanchez_Adoption.pdf",
+   "size_bytes": 227525,
+   "checksum_sha256": "9acfcd8f5c8b697574fe170617f3b659ebb57d48ad0c5c82406de5bfcc8f3124",
+   "title_for_reference": "Press release: Albuquerque City Council amends E-14-31, National Adoption Day Appreciation (first issue, contains a bill-number error)",
+   "pages": 1,
+   "exclusion_reason": "A City Council press release on Council letterhead, marked FOR IMMEDIATE RELEASE. Press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json: they announce rather than record, and the instrument or action behind them is the archivable thing.",
+   "category": "press release",
+   "date": "2014-03-17",
+   "version_relationship": "Superseded in substance by src-2bf84750e66b6baf. Both are excluded, so no canonical_id is asserted; see the status_convention block.",
+   "error": "Prints the bill number as E-14-31; the enacted instrument is Council Bill R-14-31, Enactment R-2014-012."
+  },
+  {
+   "id": "src-2cf62271117cfd31",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/NoonebannedfromFutureCityCouncilMeetings1.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET on both URL forms; size_bytes and checksum_sha256 measured from the bytes returned by the raw file URL, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "raw_file_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/NoonebannedfromFutureCityCouncilMeetings1.pdf",
+   "size_bytes": 209224,
+   "checksum_sha256": "9378a0903753ee5ff8bfbb5674cfa6b262605b91c44821c2600481fdd753d93d",
+   "title_for_reference": "Press release: No one banned from future City Council meetings, May 13, 2014",
+   "pages": 2,
+   "exclusion_reason": "A City Council press release on Council letterhead, marked FOR IMMEDIATE RELEASE. Press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json: they announce rather than record, and the instrument or action behind them is the archivable thing.",
+   "category": "press release",
+   "date": "2014-05-13",
+   "content": "Council President Ken Sanchez's statement about the 5 May 2014 Council meeting, the special meeting he called for 8 May, and the strict interim rules of decorum implemented for it. It notes that Council Rules do not permit general public comment at special meetings.",
+   "discovery_lead": "The interim rules of decorum themselves, and whatever instrument adopted them, are not held anywhere in the inventory."
+  },
+  {
+   "id": "src-ce4f3ca1b6df8211",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/Election%20of%20Officers%20FINAL.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET on both URL forms; size_bytes and checksum_sha256 measured from the bytes returned by the raw file URL, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "raw_file_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/Election%20of%20Officers%20FINAL.pdf",
+   "size_bytes": 161956,
+   "checksum_sha256": "625ce05bc940e226de8dead7dae1f3f77d3d28bd7c0c3789c95f61334a9c0c2f",
+   "title_for_reference": "Press release: Election of Officers, December 3, 2013",
+   "pages": 1,
+   "exclusion_reason": "A City Council press release on Council letterhead, marked FOR IMMEDIATE RELEASE. Press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json: they announce rather than record, and the instrument or action behind them is the archivable thing.",
+   "category": "press release",
+   "date": "2013-12-03",
+   "content": "Records that at the 2 December meeting the Council unanimously elected Councillor Ken Sanchez President, Councillor Trudy Jones Vice-President and Councillor Dan Lewis Committee of the Whole Chair, and summarises the President's duties: presiding, assigning and referring bills, preparing the agenda, signing passed bills, and appointing councillors to committees.",
+   "why_still_excluded": "It reports a Council action rather than being one. The minutes of the 2 December 2013 meeting are the record, and the run's missing-minutes policy is explicit that an agenda or a notice is never presented as minutes; the same reasoning applies more strongly to a press release."
+  },
+  {
+   "id": "src-7c3f2ea6bda0d838",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/AFD%20Pay%20Increase%20Press%20Release.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET on both URL forms; size_bytes and checksum_sha256 measured from the bytes returned by the raw file URL, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "raw_file_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/AFD%20Pay%20Increase%20Press%20Release.pdf",
+   "size_bytes": 171803,
+   "checksum_sha256": "17a52c2375757b9448c684c026ae61ac540522de9006d5c201cc73862ff790f9",
+   "title_for_reference": "Press release: Albuquerque Fire Department pay increase, February 2, 2014",
+   "pages": 1,
+   "exclusion_reason": "A City Council press release on Council letterhead, marked FOR IMMEDIATE RELEASE. Press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json: they announce rather than record, and the instrument or action behind them is the archivable thing.",
+   "category": "press release",
+   "date": "2014-02-02",
+   "content": "Announces the intention of Council President Sanchez and Councillor Lewis to introduce R-14-22 for immediate action on 3 February 2014, reserving $1.8 million in the FY14 General Fund for salary increases for firefighters and emergency medical personnel, equivalent to a 3.5% average pay increase.",
+   "discovery_lead": "R-14-22 is not held in any form, enacted or otherwise."
+  },
+  {
+   "id": "src-161f95b657b74333",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/AtriscoDrNWLetter.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET on both URL forms; size_bytes and checksum_sha256 measured from the bytes returned by the raw file URL, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "raw_file_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/AtriscoDrNWLetter.pdf",
+   "size_bytes": 57884,
+   "checksum_sha256": "bc88934ed9b87b3a065f2c24fabe3f4a18374a5aa8efd78da4dfee56a66d4c14",
+   "title_for_reference": "Letter from Council President Ken Sanchez to neighbours regarding the Atrisco Drive project, November 5, 2014",
+   "pages": 1,
+   "exclusion_reason": "A councillor's letter to constituents inviting them to the 13 November 2014 public meeting. Councillor communications are excluded throughout this run, most recently for the Councilor's Corner newsletter in councilor-district-4-cluster-research-2026-09-12.json and the Gibson letter in councilor-district-7-cluster-research-2026-09-12.json.",
+   "category": "councillor communication",
+   "date": "2014-11-05",
+   "tested_not_assumed": "Image-only, one byte of extractable text; rendered and read.",
+   "discovery_lead": "It records two things held nowhere else: a Traffic Mitigation Study presented to the community in 2010 that proposed a roundabout at Hanover and Atrisco, never built for want of funding; and a current two-way volume of approximately 10,800 vehicles per weekday on Atrisco Drive NW. It also names the meeting the approved presentation was given at, which is how the two files in this directory connect."
+  },
+  {
+   "id": "src-cefba0fa7ce6abe6",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/JanNewsletter2015.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET on both URL forms; size_bytes and checksum_sha256 measured from the bytes returned by the raw file URL, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "raw_file_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents/JanNewsletter2015.pdf",
+   "size_bytes": 724578,
+   "checksum_sha256": "8e53db976140d5d2a25eb06df17fcfbf66a97fba850f7266e0785a600b3a399b",
+   "title_for_reference": "Northwest Area Command, On the Beat, Issue 8, January 2015",
+   "pages": 4,
+   "exclusion_reason": "An Albuquerque Police Department area command community newsletter: a commander's column, neighbourhood notices and seasonal items. A departmental community bulletin, not a record of City action, a standard or a decision.",
+   "category": "departmental newsletter",
+   "date": "2015-01"
+  },
+  {
+   "id": "src-641e77fab876f4f0",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET on both URL forms; size_bytes and checksum_sha256 measured from the bytes returned by the raw file URL, because the inventory record carried neither",
+   "content_kind": "HTML",
+   "size_bytes": 169150,
+   "checksum_sha256": "da135a77cdaafae4633818295dea0513a00bb821dbfdd143665a41cfb113b29c",
+   "title_for_reference": "Councilor District 1 documents collection landing page",
+   "pages": null,
+   "exclusion_reason": "The Plone collection landing page for this directory, not a document.",
+   "category": "collection landing page"
+  }
+ ],
+ "archival_note": "The single approved record is a static PDF and is inventory-only until an R2 archive object exists for it and its public download, exact size, SHA-256, and authoritative-source provenance are verified. Archive footprint if authorized: 9,492,057 bytes. Its slides are images with only a thin text layer, so full-text search will reach the slide titles but not the figures; that is a property of the City's original. Three further records are held at requires human review and would add more if resolved.",
+ "integration_note": "Codex integration lane: apply recommended_status values through scripts/project/Update-Candidate.ps1 only. The one superseded row carries a canonical_id that is itself at requires human review in this batch. Three rows are requires human review and belong to one legislative package, described in the legislative_package block. The one approved row carries a title, a 20-to-50-word description, a date, a proposed_canonical_page, a cross-listing and a caution. No row is a duplicate; this directory duplicates nothing in the archive and nothing within itself. Sizes and checksums are first measurements; the inventory held none.",
+ "safeguards": [
+  "no master-inventory.json write",
+  "no checkpoint.json write",
+  "no r2-inventory.json write",
+  "no site content change",
+  "no R2 upload",
+  "no commit, merge, or deploy",
+  "no terminal record modified"
+ ]
+}

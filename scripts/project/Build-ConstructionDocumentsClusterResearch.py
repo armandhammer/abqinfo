@@ -1,0 +1,443 @@
+import json, collections, datetime, os, sys
+
+OUT = r'C:\Users\ben\Documents\ABQinfo\project-state\discovery\construction-documents-cluster-research-2026-09-11.json'
+
+BASE = 'https://www.cabq.gov/municipaldevelopment/documents/construction-documents/'
+PACKET = 'src-1f9234403de1f16f'
+
+approved = [
+ {
+  "id": PACKET,
+  "file": "ProceduresforContractorstoObtainPermits.pdf",
+  "authoritative_url": BASE + "ProceduresforContractorstoObtainPermits.pdf",
+  "official_library_title": "ProceduresforContractorstoObtainPermits.pdf",
+  "size_bytes": 1986153,
+  "checksum_sha256": "3c872b474d4c122faf26a3b8698eab4242583762ba278dc5829a802258f6076d",
+  "pages": 5,
+  "content_kind": "PDF 1.6",
+  "link_check": "HTTP 200 verified 2026-09-11 by full GET; fetched length matches the inventory size_bytes exactly",
+  "recommended_status": "approved for addition",
+  "title": "Procedures to Obtain Permits for Barricading, Excavating and Construction in the Public Right-of-Way (with Contractor Bond Forms)",
+  "date": "2005-05-01",
+  "date_basis": "Page footers inside the packet read \"Page 1 5-1-05\" and \"Page 2 5-1-05\" on the excavation-bond sheets; the appended sidewalk bond carries its own earlier \"5-4-01\" footer.",
+  "description": "The City Municipal Development permit packet sets the requirements for working in Albuquerque right-of-way: $2,000,000 general liability insurance, specified state contractor license classes, a $10,000 excavation bond, and a $5,000 sidewalk, curb, and gutter bond, with both bond forms.",
+  "description_word_count": 39,
+  "proposed_canonical_page": "content/transportation/design-references.md",
+  "proposed_canonical_section": "Supplemental City Guidance",
+  "cross_listings": [
+   {"page": "content/development-land-use/development-process.md", "section": "Public Infrastructure Cost Estimating / Infrastructure Improvements Agreements neighbourhood of the page", "reason": "The packet states the bonding and insurance a private party must post before the City will permit right-of-way construction, which is development-process information as much as design-reference information."}
+  ],
+  "why_retained": "This is a statement of substantive regulatory requirements, not a blank form. Page 1 fixes dollar thresholds and license classes and cites the authorising ordinances (Street Excavation & Barricading Ordinance 6-5-2-3(A)(2), R.O. 2005; Sidewalk Ordinance 6-5-5-8 et seq., R.O. 1994). It is the same class of record as the already-validated regulatory packets elsewhere in the inventory, and it is the canonical container for four other files in this directory.",
+  "components": [
+   "Page 1: Procedures to Obtain Permits for Barricading, Excavating and/or Construction in Public Right-of-way (six numbered requirements).",
+   "Pages 2-3: Contractor's Excavation Bond, $10,000, citing Street Excavation & Barricading Ordinance 6-5-2-3 (A)(2), (R.O. 2005), footer 5-1-05, with attorney-in-fact, natural-person, partnership and corporate acknowledgements.",
+   "Pages 4-5: Contractor's Sidewalk, Drive-Pad, Curb & Gutter Bond, $5,000, citing Sidewalk Ordinance 6-5-5-8 et seq., (R.O. 1994), footer 5-4-01."
+  ],
+  "evidence": "Five pages, 9,751 extracted characters. Normalized-token coverage measured against every other candidate in the cluster: src-aeb5714315a45302 1.0000 contained, src-53360c1d0a0f898f 1.0000 contained, src-7967079340432392 0.9867 contained, and src-497bd154d2db10c6 contains 0.9892 of this file's tokens."
+ },
+ {
+  "id": "src-380887c0fbcc9111",
+  "file": "ProcedurestoObtainHomeownerPermits.pdf",
+  "authoritative_url": BASE + "ProcedurestoObtainHomeownerPermits.pdf",
+  "official_library_title": "ProcedurestoObtainHomeownerPermits.pdf",
+  "size_bytes": 58925,
+  "checksum_sha256": "e67b337f89d79005a44df08eef49f3956a8f0fd4beebbab82dffd56d59244acd",
+  "pages": 2,
+  "content_kind": "PDF 1.4",
+  "link_check": "HTTP 200 verified 2026-09-11 by full GET; fetched length matches the inventory size_bytes exactly",
+  "recommended_status": "approved for addition",
+  "title": "Procedures to Obtain Homeowner Permits for Drive Pads and Sidewalk (Revised May 2004)",
+  "date": "2004-05",
+  "date_basis": "The sheet's own footer reads \"Rev. 05/04\".",
+  "description": "The City Municipal Development sheet sets what an Albuquerque property owner must do to pour a drive pad or sidewalk: post a $1,000 homeowner bond, carry $500,000 liability insurance, and hire a contractor for any curb and gutter cut.",
+  "description_word_count": 39,
+  "proposed_canonical_page": "content/transportation/design-references.md",
+  "proposed_canonical_section": "Supplemental City Guidance",
+  "cross_listings": [
+   {"page": "content/development-land-use/development-process.md", "section": "Public Infrastructure Cost Estimating / Infrastructure Improvements Agreements neighbourhood of the page", "reason": "It is the homeowner counterpart to the contractor packet and belongs beside it wherever that is listed."}
+  ],
+  "why_retained": "Like the contractor packet, this states requirements rather than collecting information: it fixes the $1,000 homeowner bond and the $500,000 insurance figure, cites the Sidewalk Ordinance, and draws the line between work a homeowner may do and work that must go to a licensed contractor. It is the only record in this directory addressed to residents rather than to the construction trade.",
+  "relationship": "Homeowner counterpart to " + PACKET + ". Token coverage inside that packet is only 0.7222 and the shared tokens are generic permit vocabulary; the dollar thresholds, the insurance figure, and the homeowner-versus-contractor split are unique to this sheet. It is not a duplicate.",
+  "evidence": "Two pages, 862 extracted characters; five numbered homeowner requirements plus a closing note that anyone working in City right-of-way must obtain a permit. Footer \"Rev. 05/04\"."
+ },
+]
+
+duplicates = [
+ {
+  "id": "src-497bd154d2db10c6",
+  "file": "Procedureforcontractorstoobtainpermits_001.doc",
+  "authoritative_url": BASE + "Procedureforcontractorstoobtainpermits_001.doc",
+  "official_library_title": "Procedureforcontractorstoobtainpermits_001.doc",
+  "size_bytes": 442366,
+  "checksum_sha256": "863ac8e420f8aff666bd92f93e8ce00f21539286059e97ae4eb288481229c8fd",
+  "content_kind": "RTF (Rich Text Format) served under a .doc extension; leading bytes are 7b 5c 72 74 (\"{\\rt\"), not the OLE2 signature d0 cf 11 e0",
+  "link_check": "HTTP 200 verified 2026-09-11 by full GET; fetched length matches the inventory size_bytes exactly",
+  "recommended_status": "duplicate",
+  "canonical_id": PACKET,
+  "canonical_url": BASE + "ProceduresforContractorstoObtainPermits.pdf",
+  "basis": "Same document, Word delivery format. 98.92 per cent of the PDF packet's normalized tokens appear in this file, and every substantive block matches line for line: the six numbered procedures, the $10,000 excavation bond citing R.O. 2005, and the $5,000 sidewalk bond citing R.O. 1994.",
+  "documented_delta": "This copy additionally embeds a filled sample ACORD Certificate of Liability Insurance (certificate number \"S-16 Rewrite\") showing the coverage limits a contractor's certificate must display: $1,000,000 each occurrence, $3,000,000 general aggregate, $3,000,000 products/completed operations, $2,000,000 umbrella. The PDF packet has no such page. The delta is an illustrative specimen attached to the same requirements, not a different or later standard, so the PDF remains the canonical original under the AGENTS.md wrapper rule. If the specimen certificate is ever wanted, this file is where it lives.",
+  "hash_found_it": False,
+  "note": "Byte hashes are distinct. This relationship is visible only to normalized-text and token-coverage comparison."
+ },
+ {
+  "id": "src-aeb5714315a45302",
+  "file": "ContractorsExcavationBond.doc",
+  "authoritative_url": BASE + "ContractorsExcavationBond.doc",
+  "official_library_title": "ContractorsExcavationBond.doc",
+  "size_bytes": 38400,
+  "checksum_sha256": "0116a791fe936b764b5e7772a66d71b929f0997cc031ed1c339fee7cd4944dca",
+  "content_kind": "OLE2 Word document",
+  "link_check": "HTTP 200 verified 2026-09-11 by full GET; fetched length matches the inventory size_bytes exactly",
+  "recommended_status": "duplicate",
+  "canonical_id": PACKET,
+  "canonical_url": BASE + "ProceduresforContractorstoObtainPermits.pdf",
+  "basis": "The current $10,000 Contractor's Excavation Bond, citing Street Excavation & Barricading Ordinance 6-5-2-3 (A)(2), (R.O. 2005). Normalized-token coverage inside the retained packet is 1.0000: every token of this file appears there.",
+  "hash_found_it": False,
+  "note": "This is the successor form; see the superseded section for the earlier 2001 $5,000 version that is still published alongside it."
+ },
+ {
+  "id": "src-53360c1d0a0f898f",
+  "file": "ContractorsSidewalkBond.doc",
+  "authoritative_url": BASE + "ContractorsSidewalkBond.doc",
+  "official_library_title": "ContractorsSidewalkBond.doc",
+  "size_bytes": 25088,
+  "checksum_sha256": "781ba79fb40631db3bbc96767470815443a37d74d1b5162c00f68bf38a0681b7",
+  "content_kind": "OLE2 Word document",
+  "link_check": "HTTP 200 verified 2026-09-11 by full GET; fetched length matches the inventory size_bytes exactly",
+  "recommended_status": "duplicate",
+  "canonical_id": PACKET,
+  "canonical_url": BASE + "ProceduresforContractorstoObtainPermits.pdf",
+  "basis": "The $5,000 Contractor's Sidewalk, Drive-Pad, Curb & Gutter Bond, citing Sidewalk Ordinance 6-5-5-8 et seq., (R.O. 1994). Normalized-token coverage inside the retained packet is 1.0000. It is also the Word twin of src-7967079340432392 at 0.9793 normalized-text similarity.",
+  "hash_found_it": False
+ },
+ {
+  "id": "src-7967079340432392",
+  "file": "ContractorsBond.pdf",
+  "authoritative_url": BASE + "ContractorsBond.pdf",
+  "official_library_title": "Contractors Sidewalk Bond.pdf",
+  "size_bytes": 65379,
+  "checksum_sha256": "46646177dd0f78d7909403bbe9dd5e6bb226ef784d86bf9b45a8ba3574517342",
+  "pages": 1,
+  "content_kind": "PDF 1.3",
+  "link_check": "HTTP 200 verified 2026-09-11 by full GET; fetched length matches the inventory size_bytes exactly",
+  "recommended_status": "duplicate",
+  "canonical_id": PACKET,
+  "canonical_url": BASE + "ProceduresforContractorstoObtainPermits.pdf",
+  "basis": "The same $5,000 sidewalk, drive-pad, curb and gutter bond, header \"Revised 05/04/01\". Normalized-token coverage inside the retained packet is 0.9867; the only tokens outside it are the header's own \"Revised 05/04/01\" spelling, which the packet renders as the footer \"5-4-01\".",
+  "hash_found_it": False,
+  "naming_note": "The filename is ContractorsBond.pdf but the City library's own listing titles it \"Contractors Sidewalk Bond.pdf\". Do not confuse this with the excavation bond; the filename alone is ambiguous."
+ },
+ {
+  "id": "src-7165157e3542b841",
+  "file": "ContractorAffidavit_003.doc",
+  "authoritative_url": BASE + "ContractorAffidavit_003.doc",
+  "official_library_title": "ContractorAffidavit_003.doc",
+  "size_bytes": 54784,
+  "checksum_sha256": "e4fc096e1dc3c36a6e40d975167c41cd5edfbee5552de1dfec74af9fd3c09ed7",
+  "content_kind": "OLE2 Word document",
+  "link_check": "HTTP 200 verified 2026-09-11 by full GET; fetched length matches the inventory size_bytes exactly",
+  "recommended_status": "duplicate",
+  "canonical_id": "src-906f674e57f311e0",
+  "canonical_url": BASE + "ContractorAffidavit_001.pdf",
+  "basis": "Word delivery of the same one-page Contractor Affidavit. Normalized-text similarity 0.9915, token coverage 0.9627 / 0.9748. Both list the identical sixteen governing documents in the identical order.",
+  "hash_found_it": False,
+  "note": "The canonical record is itself recommended excluded as routine permit paperwork. The format-pair relationship is still recorded here so it is not lost inside a generic exclusion."
+ },
+ {
+  "id": "src-11abb0f76d395355",
+  "file": "block-party-application.doc",
+  "authoritative_url": BASE + "block-party-application.doc",
+  "official_library_title": "Block Party Application.doc",
+  "size_bytes": 124928,
+  "checksum_sha256": "921f9daaf37337d095935314e7076c8a5459b47aa6329fda0eebbaa50daae0f8",
+  "content_kind": "OLE2 Word document",
+  "link_check": "HTTP 200 verified 2026-09-11 by full GET; fetched length matches the inventory size_bytes exactly",
+  "recommended_status": "duplicate",
+  "canonical_id": "src-a76b5c8c3ad10b52",
+  "canonical_url": BASE + "block-party-application.pdf",
+  "basis": "Word delivery of the same Block Party Permit Application. Normalized-text similarity 0.9377 and token coverage 1.0000 of this file inside the PDF; the 0.06 text gap is checkbox and rule-line glyphs the PDF renders and Word does not.",
+  "hash_found_it": False,
+  "note": "The canonical record is itself recommended excluded as a routine permit application. The format-pair relationship is recorded so it is not lost."
+ },
+]
+
+superseded = [
+ {
+  "id": "src-fb5fde5246712f61",
+  "file": "ContractorExcavationBond.pdf",
+  "authoritative_url": BASE + "ContractorExcavationBond.pdf",
+  "official_library_title": "ContractorExcavationBond.pdf",
+  "size_bytes": 64135,
+  "checksum_sha256": "efa4fd297608d9dd5ca744ea130ebf135c883d07ca20819cc9020aca0539d26e",
+  "pages": 2,
+  "content_kind": "PDF 1.3",
+  "link_check": "HTTP 200 verified 2026-09-11 by full GET; fetched length matches the inventory size_bytes exactly",
+  "recommended_status": "superseded",
+  "canonical_id": PACKET,
+  "canonical_url": BASE + "ProceduresforContractorstoObtainPermits.pdf",
+  "successor_component_id": "src-aeb5714315a45302",
+  "basis": "This is an earlier version of the Contractor's Excavation Bond, not a duplicate of the current one. Three measured differences, all substantive: the penal sum is FIVE THOUSAND DOLLARS ($5,000) where the current form reads TEN THOUSAND DOLLARS ($10,000); it cites the \"Street Excavation Ordinance, 6-5-2-3 (A)(3), (R.O. 1994)\" where the current form cites the \"Street Excavation & Barricading Ordinance, 6-5-2-3 (A)(2), (R.O. 2005)\"; and its header reads \"Revised 05/04/01\" against the current form's 5-1-05 footer.",
+  "measurement": "Against the current form src-aeb5714315a45302: normalized-text similarity only 0.4426 despite token coverage 0.9709 / 0.9382. High token overlap with low sequence similarity is exactly the signature of a re-versioned boilerplate instrument, and it is why a hash-only or a token-only check would both have mis-called this pair.",
+  "hash_found_it": False,
+  "currency_note": "Both versions are live on the City page at the same time with no version label in either filename, so a contractor downloading ContractorExcavationBond.pdf today gets the superseded 2001 instrument. That is a City publication problem, not an inventory problem, but it is the reason this record must not be published as the current bond form."
+ },
+]
+
+rhr = [
+ {
+  "id": "src-b7d34f9ee6422783",
+  "file": "balloon_fiesta_moratorium_8-20-09.pdf",
+  "authoritative_url": BASE + "balloon_fiesta_moratorium_8-20-09.pdf",
+  "official_library_title": "Balloon Fiesta Moratorium Map",
+  "size_bytes": 89394,
+  "checksum_sha256": "78137989f4168409bb47258b534041bdb07dab077cafc185333aef11f9399610",
+  "pages": 1,
+  "content_kind": "PDF 1.5",
+  "link_check": "HTTP 200 verified 2026-09-11 by full GET; fetched length matches the inventory size_bytes exactly",
+  "recommended_status": "requires human review",
+  "draft_title": "Balloon Fiesta Construction Moratorium Area Map, September 28 - October 11, 2015",
+  "draft_description": "The City Municipal Development map shows the Albuquerque street corridors closed to construction work during the 2015 Balloon Fiesta moratorium, naming the affected arterials across the west side, the North Valley, and the Interstate 25 and Interstate 40 corridors.",
+  "draft_description_word_count": 39,
+  "question_for_human": "Does ABQInfo retain the historic event-moratorium map series at all, and if so as a series rather than one sheet at a time?",
+  "why_not_decided_here": "Three things collide and only a single series-level decision resolves them. (1) A sibling record is already terminal the other way: src-09153929967d729f, \"New Mexico State Fair Construction Moratorium Area Map\", is excluded on the ground that it is an \"undated one-page map ... with no stated legal authority, period, project list, or implementation record\". (2) This sheet does not share that defect - it prints its own period - so applying that exclusion verbatim would be wrong, but approving it would leave two near-identical City map series classified opposite ways. (3) The current members of the series are already served on the site by the validated live City page src-9a35226d6d5d0bfc (\"Construction moratoriums\", placed on content/maps-data/dashboards.md), which the inventory describes as carrying current moratorium boundaries, dates, and downloadable maps. Five further sheets of the same series are still pending in the sibling directory (src-3b8d91e803255804, src-db6729572f9b4184, src-2266ca3b89ee09f0, src-d271ba5b038d8770, src-7c96ca757c40af55), so a decision made on this one sheet would pre-empt six others.",
+  "if_retained": {"proposed_canonical_page": "content/maps-data/maps.md", "cross_listings": [{"page": "content/maps-data/dashboards.md", "section": "beside the validated live \"Construction moratoriums\" page src-9a35226d6d5d0bfc", "reason": "The live page is the current-state source; an archived sheet is the historic-state source. They should sit together or not at all."}]},
+  "evidence": "One page, image-plus-label map. The text layer carries the printed period \"9/28/2015-10/11/2015\", the title block \"Balloon Fiesta Moratorium\", and the legend \"Streets / Moratorium Areas\" over roughly 130 distinct street-name labels."
+ },
+ {
+  "id": "src-cebad24115e1b02d",
+  "file": "state_fair_moratorium_8-21-09.pdf",
+  "authoritative_url": BASE + "state_fair_moratorium_8-21-09.pdf",
+  "official_library_title": "State Fair Moratorium Map",
+  "size_bytes": 76508,
+  "checksum_sha256": "9f7b6b25935142e81017a4771a91455a918ff6316280c9070fd980fdc6b3310b",
+  "pages": 1,
+  "content_kind": "PDF 1.5",
+  "link_check": "HTTP 200 verified 2026-09-11 by full GET; fetched length matches the inventory size_bytes exactly",
+  "recommended_status": "requires human review",
+  "draft_title": "New Mexico State Fair Construction Moratorium Area Map, September 7 - 20, 2015",
+  "draft_description": "The City Municipal Development map shows the Albuquerque street corridors closed to construction work during the 2015 New Mexico State Fair moratorium, covering the Interstate 40 and San Mateo approaches to Expo New Mexico and the wider arterial network.",
+  "draft_description_word_count": 39,
+  "question_for_human": "Same series question as src-b7d34f9ee6422783; decide both together.",
+  "why_not_decided_here": "This sheet is the dated counterpart of the already-excluded src-09153929967d729f, which is the same State Fair moratorium map without a printed period. Deciding this one in isolation would either contradict that exclusion or discard a sheet that does carry the context the exclusion said was missing.",
+  "if_retained": {"proposed_canonical_page": "content/maps-data/maps.md", "cross_listings": [{"page": "content/maps-data/dashboards.md", "section": "beside the validated live \"Construction moratoriums\" page src-9a35226d6d5d0bfc", "reason": "Historic sheet beside the current-state live source."}]},
+  "evidence": "One page, image-plus-label map. The text layer carries the printed period \"9/7/2015 - 9/20/2015\", the title block \"State Fair Moratorium\", and the legend \"Streets / Moratorium Areas\" over roughly 130 distinct street-name labels."
+ },
+]
+
+excluded = [
+ {
+  "id": "src-906f674e57f311e0",
+  "file": "ContractorAffidavit_001.pdf",
+  "authoritative_url": BASE + "ContractorAffidavit_001.pdf",
+  "official_library_title": "ContractorAffidavit_001.pdf",
+  "size_bytes": 47912,
+  "checksum_sha256": "5ab445ab2ae8b95c31702fd686cb16adff65e0acaae05b391ef9dadd9ffc23dc",
+  "pages": 1,
+  "content_kind": "PDF 1.4",
+  "link_check": "HTTP 200 verified 2026-09-11 by full GET; fetched length matches the inventory size_bytes exactly",
+  "recommended_status": "excluded",
+  "exclusion_reason": "One-page signature form on which a contractor certifies having read sixteen listed ordinances and manuals. It is routine permit paperwork rather than an Albuquerque plan, project record, or adopted standard, matching the exclusions already recorded for src-aef0ad3451266b39 in this directory and for the Planning code-enforcement affidavits src-6eee99e375ac4587, src-73d8d1859ed00404, and src-e55c9574d36c58da.",
+  "salvage_note": "Its one durable feature is the list itself, which is a compact index of the City's right-of-way construction regulatory framework: Street Excavation and Barricading Ordinance 6-5-2-1; Standard Specifications for Public Works Construction; Noise Control Ordinance 9-9-1; Sidewalk, Drive Pad, Curb and Gutter Ordinance 6-5-5-1; NPDES Manual; Fugitive Dust Control Regulation 20.11.20 NMAC; New Mexico State Excavation Law; Graffiti Vandalism Ordinance 11-7-1; MUTCD; Traffic Code 8-1-1-1; and the Development Process Manual. Eleven of the sixteen link targets are dead cabq.gov paths from the pre-2015 site. The list is worth reusing as editorial context on content/transportation/design-references.md; the form itself is not worth archiving."
+ },
+ {
+  "id": "src-a76b5c8c3ad10b52",
+  "file": "block-party-application.pdf",
+  "authoritative_url": BASE + "block-party-application.pdf",
+  "official_library_title": "Block Party Application.pdf",
+  "size_bytes": 338332,
+  "checksum_sha256": "4c54bdaea0d57d63d5d941289e65b3dd4afb01da2fdcba18f18cd73a75947ad4",
+  "pages": 4,
+  "content_kind": "PDF 1.4",
+  "link_check": "HTTP 200 verified 2026-09-11 by full GET; fetched length matches the inventory size_bytes exactly",
+  "recommended_status": "excluded",
+  "exclusion_reason": "Block Party Permit Application: a fill-in application with a sponsor declaration. It does carry conditions of approval - Type III barricade dimensions, reflectorisation and amber lighting, one security guard per hundred attendees, an Environmental Health noise permit - but those are conditions printed on a form, not a separately adopted standard, so it falls on the form side of the form-versus-standard split applied in the Planning UDD and code-enforcement lanes.",
+  "format_pair": "src-11abb0f76d395355 is the Word twin; see duplicates."
+ },
+ {
+  "id": "src-1e6778601cac2fec",
+  "file": "2excbarricadeform_2_19_09.doc",
+  "authoritative_url": BASE + "2excbarricadeform_2_19_09.doc",
+  "official_library_title": "ExcavationBaricadeForm2_19_2009",
+  "size_bytes": 326144,
+  "checksum_sha256": "392882eb0c13789785277862c7c376c84747a21a82800ef7fa276539260e5349",
+  "content_kind": "OLE2 Word document",
+  "link_check": "HTTP 200 verified 2026-09-11 by full GET; fetched length matches the inventory size_bytes exactly",
+  "recommended_status": "excluded",
+  "exclusion_reason": "Excavation/Barricade Permit Application Form dated 19 February 2009: a fill-in permit application with fee-calculation boxes for City staff. Routine permit paperwork, and doubly obsolete - superseded in substance by the current paper form and in practice by the Edgesoft online permit system described in src-ba39d49eb178e6af.",
+  "cross_cluster_supersession_evidence": "Fetched and compared against the parent directory's current form for this research note only, without changing those records: https://www.cabq.gov/municipaldevelopment/documents/excavationbarricadeform.pdf (src-44905a6eda9d90af, 202,740 bytes, SHA-256 f850a7cd3e409a08...) is titled \"Excavation and Temporary Traffic Control Permit Application\", requires fourteen calendar days' notice, and uses an entirely different field set including striped-bike-lane closure and preferred closure time frames. Its Word twin is https://www.cabq.gov/municipaldevelopment/documents/excavationbarricadeform.doc (src-6924f5ef7f391100, 60,416 bytes). Both remain pending review in the sibling municipaldevelopment/documents cluster; this artifact does not classify them."
+ },
+ {
+  "id": "src-b485c36a9490b38c",
+  "file": "ProjectInspectionRequestForm.doc",
+  "authoritative_url": BASE + "ProjectInspectionRequestForm.doc",
+  "official_library_title": "ProjectInspectionRequestForm.doc",
+  "size_bytes": 716288,
+  "checksum_sha256": "c5904b4d177f5367a72858f28de2e5d475e6b024f9d7a64e9bbb4ac7ea113f72",
+  "content_kind": "OLE2 Word document",
+  "link_check": "HTTP 200 verified 2026-09-11 by full GET; fetched length matches the inventory size_bytes exactly",
+  "recommended_status": "excluded",
+  "exclusion_reason": "Internal City routing form on which a project manager requests construction inspection and the Construction Services Division records its approval, assigned inspector, and approval signatures. Administrative workflow paperwork with no public-facing interpretive content."
+ },
+ {
+  "id": "src-5962fd01c9b7f0a4",
+  "file": "Dumpsterpermit.pdf",
+  "authoritative_url": BASE + "Dumpsterpermit.pdf",
+  "official_library_title": "Dumpster_Storage Pod Application",
+  "size_bytes": 30689,
+  "checksum_sha256": "f02aee709eee1d6146163e1f8cbe274031b0084c2a9988ba45e4646b9a1439ae",
+  "pages": 1,
+  "content_kind": "PDF 1.6",
+  "link_check": "HTTP 200 verified 2026-09-11 by full GET; fetched length matches the inventory size_bytes exactly",
+  "recommended_status": "excluded",
+  "exclusion_reason": "Dumpster/Storage Pod Application Form: a one-page fill-in application with a five-business-day processing note and a lighted-barricade placement instruction. Routine permit paperwork on the same footing as the other application forms in this directory."
+ },
+ {
+  "id": "src-8939a2f1f9f4b382",
+  "file": "barricade-companies.pdf",
+  "authoritative_url": BASE + "barricade-companies.pdf",
+  "official_library_title": "Albuquerque Traffic Control Companies",
+  "size_bytes": 421102,
+  "checksum_sha256": "bbba6b1e40d8772dce139fa2409d2795d7f2eaeb5bdd69d64d62848f8631a0b2",
+  "pages": 1,
+  "content_kind": "PDF 1.7",
+  "link_check": "HTTP 200 verified 2026-09-11 by full GET; fetched length matches the inventory size_bytes exactly",
+  "recommended_status": "excluded",
+  "exclusion_reason": "A one-page contact list of five private traffic-control firms (VCS Traffic Control, Southwest Safety Services, AWP Safety, RoadSafe Traffic Systems, Access Road Safety) with website, street address, and telephone number. It is a vendor convenience list, not a plan, study, map, or dataset with standalone interpretive value - the same ground on which src-061e6c9304325cf5 was excluded in this directory.",
+  "volatility_evidence": "The list is demonstrably volatile. The City's own current excavation permit form in the sibling directory (src-44905a6eda9d90af, fetched 2026-09-11) offers a different set of barricade companies to circle - Advantage Barricade, Highway Supply, Southwest Safety - of which only Southwest Safety also appears on this sheet. Two City documents published concurrently disagree about who the barricade companies are, which is a further reason not to archive either list as a record."
+ },
+ {
+  "id": "src-ba39d49eb178e6af",
+  "file": "edgesoft-help-sheet.docx",
+  "authoritative_url": BASE + "edgesoft-help-sheet.docx",
+  "official_library_title": "Edgesoft Help Sheet",
+  "size_bytes": 1262080,
+  "checksum_sha256": "62ab0193c2fc85f1d086fb588ca66447251c3bcdb8059e02db1c1eb8c6dd9c49",
+  "content_kind": "OLE2 Word document served under a .docx extension; leading bytes are d0 cf 11 e0, not the ZIP signature 50 4b 03 04 that a genuine .docx would carry",
+  "link_check": "HTTP 200 verified 2026-09-11 by full GET; fetched length matches the inventory size_bytes exactly",
+  "recommended_status": "excluded",
+  "exclusion_reason": "An eight-step screenshot walkthrough of the Edgesoft online excavation-permit wizard: where to click, which activity type to choose, how to draw the work-zone polyline. Software user guidance tied to a specific vendor interface, not an Albuquerque plan, project record, or adopted standard, and it goes stale whenever the vendor changes the screens.",
+  "retained_fact": "Worth keeping as a research fact rather than a record: excavation permits are applied for through the Edgesoft wizard, and the sheet states that the Maximo Number field is for the Water Authority only and that the facility owner for sidewalks and drive pads is the property owner."
+ },
+ {
+  "id": "src-e34f830fac140d8e",
+  "file": "(collection landing page)",
+  "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/construction-documents",
+  "official_library_title": "construction documents",
+  "size_bytes": 118575,
+  "checksum_sha256": "12dd69df0188726342a5c6748c5f6301712989e44561e5f18771ff80721f8c9e",
+  "content_kind": "HTML; leading bytes are 3c 21 44 4f (\"<!DO\")",
+  "link_check": "HTTP 200 verified 2026-09-11 by full GET",
+  "recommended_status": "excluded",
+  "exclusion_reason": "The Plone collection landing page for this directory, not a document. Its only content is the eighteen file links this artifact enumerates plus site chrome and Google-translate links. Excluding it removes the last non-terminal record in the cluster.",
+  "usefulness": "It was used here as the authority for each file's official display title, which in three cases differs materially from the filename: barricade-companies.pdf is \"Albuquerque Traffic Control Companies\", Dumpsterpermit.pdf is \"Dumpster_Storage Pod Application\", and ContractorsBond.pdf is \"Contractors Sidewalk Bond.pdf\"."
+ },
+]
+
+rows = approved + duplicates + superseded + rhr + excluded
+ids = [r['id'] for r in rows]
+assert len(ids) == len(set(ids)), 'duplicate id in artifact'
+assert len(ids) == 19, len(ids)
+
+counts = collections.Counter(r['recommended_status'] for r in rows)
+
+artifact = {
+ "batch_id": "construction-documents-cluster-research-2026-09-11",
+ "lane": "Claude research lane: www.cabq.gov/municipaldevelopment/documents/construction-documents cluster",
+ "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+ "cluster": "City of Albuquerque Department of Municipal Development construction-documents library at www.cabq.gov/municipaldevelopment/documents/construction-documents.",
+ "scope": "All 19 pending-review candidates whose source, direct-file, or parent URL lies under that directory: the 18 files the City lists there plus the collection landing page itself. The directory already held 2 excluded records (src-061e6c9304325cf5, the Barricade_Linear.kmz symbol asset, and src-aef0ad3451266b39, a generic example lane-closure sheet). Completing this artifact leaves the directory with no non-terminal records.",
+ "brief": "Separate adopted construction standards and specifications from routine forms and bid paperwork.",
+ "brief_finding": "The directory contains no adopted standards or specifications. Those live elsewhere and are already validated: the eleven City Standard Specifications sections and the Section 2800 Temporary Traffic Control standard drawings under documents.cabq.gov/planning/DevelopmentReviewServices/DRC. What this directory holds is the permit layer that sits on top of them - two statements of substantive permit requirements, one earlier and one current version of the same bond instrument, two event-moratorium maps, and eleven items of routine forms, vendor lists, software guidance, and format twins.",
+ "method": "Fetched all 19 candidates to a scratch directory without touching shared inventory state and recorded exact byte length and SHA-256 for each. Checked the leading bytes of every fetch rather than trusting the extension. Extracted text with pdftotext -layout for PDFs, antiword for OLE2 Word files, and a purpose-written RTF destination-stripping extractor for the one file served as RTF under a .doc name. Ran pairwise normalized-text similarity and normalized-token coverage across the whole cluster, then hand-read every pair above 0.55 similarity or 0.9 coverage. Compared all 19 SHA-256 values against the 1,612 checksummed records in master-inventory.json. Parsed the collection landing page for the City's own display titles. Fetched two out-of-cluster sibling files read-only to settle one supersession question.",
+ "classification_only": True,
+ "shared_state_written": [],
+ "precedent_applied": "Three lines already drawn in this inventory decide most of this directory. (1) The form-versus-standard split from the Planning UDD and code-enforcement lanes: applications and affidavits out, statements of adopted requirements in. (2) The two terminal exclusions already in this directory: src-aef0ad3451266b39 excluded as 'an administrative template rather than an Albuquerque plan, project record, or adopted standard', and src-061e6c9304325cf5 excluded as 'not a public-facing plan, study, map, or dataset with standalone interpretive value'. (3) The AGENTS.md wrapper rule: where one file's substantive content is wholly contained in another, retain one canonical original and document the relationship rather than archiving both.",
+ "file_type_findings": {
+  "extension_lies_detected": 2,
+  "detail": [
+   "src-497bd154d2db10c6 is published as .doc but is RTF (7b 5c 72 74). antiword cannot read it and returns nothing; a pipeline that trusts the extension would silently record this file as having no extractable text and would therefore miss that it is the Word copy of the retained packet.",
+   "src-ba39d49eb178e6af is published as .docx but is a legacy OLE2 Word document (d0 cf 11 e0), not a ZIP container. A python-docx or unzip-based reader fails on it."
+  ],
+  "carry_forward": "Extend the existing leading-bytes check from 'is this HTML served as PDF' to 'does the container match the extension at all'. Both failures here are Word-family, which the earlier Plone-directory finding did not cover."
+ },
+ "duplicate_and_supersession_checks": {
+  "internal_byte_collisions": 0,
+  "cross_inventory_byte_collisions": 0,
+  "checksums_compared_against": 1612,
+  "relationships_found_by_hash": 0,
+  "relationships_found_by_normalized_text_or_token_coverage": 7,
+  "format_twin_pairs": 3,
+  "containment_relationships": 4,
+  "version_pairs": 1,
+  "note": "Every one of the seven relationships in this directory is invisible to hashing: all 19 SHA-256 values are distinct from each other and from all 1,612 checksummed inventory records. Three are PDF/Word twins of the same document, four are whole-file containment inside the retained permit packet, and one is a genuine earlier version of the same bond instrument. The version pair is the instructive one: src-fb5fde5246712f61 and src-aeb5714315a45302 share 0.9709 of their tokens but only 0.4426 of their normalized text, because a re-versioned legal boilerplate keeps almost all of its vocabulary while changing the numbers that matter. Token coverage alone would have called them duplicates; sequence similarity alone would have called them unrelated. Both measures are needed."
+ },
+ "measurements": {
+  "normalized_text_similarity": [
+   {"pair": ["src-7165157e3542b841", "src-906f674e57f311e0"], "ratio": 0.9915, "coverage": [0.9627, 0.9748], "reading": "format twin"},
+   {"pair": ["src-53360c1d0a0f898f", "src-7967079340432392"], "ratio": 0.9793, "coverage": [1.0, 0.9733], "reading": "format twin"},
+   {"pair": ["src-11abb0f76d395355", "src-a76b5c8c3ad10b52"], "ratio": 0.9377, "coverage": [1.0, 0.9755], "reading": "format twin"},
+   {"pair": ["src-1f9234403de1f16f", "src-aeb5714315a45302"], "ratio": 0.6107, "coverage": [0.6187, 1.0], "reading": "containment: the bond is a component of the packet"},
+   {"pair": ["src-1f9234403de1f16f", "src-497bd154d2db10c6"], "ratio": 0.6601, "coverage": [0.9892, 0.6486], "reading": "same packet, Word delivery, plus one extra specimen insurance certificate"},
+   {"pair": ["src-aeb5714315a45302", "src-fb5fde5246712f61"], "ratio": 0.4426, "coverage": [0.9709, 0.9382], "reading": "version pair, not duplicate: $10,000 R.O. 2005 against $5,000 R.O. 1994"},
+   {"pair": ["src-1f9234403de1f16f", "src-380887c0fbcc9111"], "ratio": 0.0, "coverage": [None, 0.7222], "reading": "not a duplicate: shared tokens are generic permit vocabulary, and every threshold differs"}
+  ],
+  "containment_inside_the_retained_packet": {
+   "src-aeb5714315a45302": 1.0,
+   "src-53360c1d0a0f898f": 1.0,
+   "src-7967079340432392": 0.9867,
+   "src-fb5fde5246712f61": 0.9663,
+   "src-380887c0fbcc9111": 0.7222,
+   "src-906f674e57f311e0": 0.3836
+  }
+ },
+ "integration_flags": [
+  {
+   "severity": "currency",
+   "affects": ["src-fb5fde5246712f61", "src-aeb5714315a45302"],
+   "finding": "The City publishes two different versions of the Contractor's Excavation Bond on the same page with no version label in either filename. ContractorExcavationBond.pdf is the 2001 instrument for $5,000 citing R.O. 1994; ContractorsExcavationBond.doc is the 2005 instrument for $10,000 citing R.O. 2005, and only the 2005 text matches the $10,000 figure stated on page 1 of the City's own procedures packet.",
+   "recommended_action": "Record src-fb5fde5246712f61 as superseded with canonical src-1f9234403de1f16f. If the bond form is ever surfaced visibly, surface only the packet, and never link ContractorExcavationBond.pdf as the current form."
+  },
+  {
+   "severity": "consistency",
+   "affects": ["src-b7d34f9ee6422783", "src-cebad24115e1b02d", "src-09153929967d729f"],
+   "finding": "src-09153929967d729f is terminal-excluded as the \"New Mexico State Fair Construction Moratorium Area Map\" on the stated ground that it is undated and states no period. The two sheets in this directory are the same two City map series and they do print their periods: 9/28/2015-10/11/2015 and 9/7/2015-9/20/2015. Five more sheets of the series remain pending in the sibling municipaldevelopment/documents directory, and the current state of the series is already on the site through the validated live page src-9a35226d6d5d0bfc.",
+   "recommended_action": "Make one series-level decision covering the excluded sheet, these two dated sheets, and the five pending siblings, rather than classifying them one at a time. Claude did not modify the terminal excluded record.",
+   "pending_siblings": ["src-3b8d91e803255804", "src-db6729572f9b4184", "src-2266ca3b89ee09f0", "src-d271ba5b038d8770", "src-7c96ca757c40af55"]
+  },
+  {
+   "severity": "methodology",
+   "affects": ["src-b7d34f9ee6422783", "src-cebad24115e1b02d"],
+   "finding": "Filename dates in this City library are unreliable. balloon_fiesta_moratorium_8-20-09.pdf and state_fair_moratorium_8-21-09.pdf both print 2015 periods on the sheet itself. The City replaced the file contents in place and kept the 2009 URLs, so anything that dated these records from the filename would be six years wrong. This is the Municipal Development counterpart of the dating rule the Planning UDD lane recorded: the printed title and date govern, not the file name.",
+   "recommended_action": "Do not date any record in the municipaldevelopment/documents tree from its filename without reading the printed sheet. Re-check the five pending moratorium siblings on the same basis before classifying them."
+  }
+ ],
+ "counts": {
+  "reviewed": len(rows),
+  "approved_for_addition": counts["approved for addition"],
+  "duplicate": counts["duplicate"],
+  "superseded": counts["superseded"],
+  "requires_human_review": counts["requires human review"],
+  "excluded": counts["excluded"]
+ },
+ "link_check": {
+  "checked": 19,
+  "http_200": 19,
+  "failed": 0,
+  "method": "Full HTTP GET with a browser user agent, 2026-09-11. Every fetched length matched the size_bytes already recorded in master-inventory.json exactly, so no candidate URL has been silently replaced since discovery.",
+  "size_mismatches": 0
+ },
+ "approved_for_addition": approved,
+ "duplicate": duplicates,
+ "superseded": superseded,
+ "requires_human_review": rhr,
+ "excluded": excluded,
+ "archival_note": "Both approved records are static PDFs and are therefore inventory-only until an R2 archive object exists and its public download, exact size, SHA-256, and authoritative-source provenance are verified. Neither may be added to a site page on the strength of the official cabq.gov link alone. Combined archive footprint if authorized: 2,045,078 bytes.",
+ "integration_note": "Codex integration lane: apply recommended_status values through scripts/project/Update-Candidate.ps1 only. Every duplicate and superseded row carries a canonical_id. The two approved rows carry a proposed_canonical_page, a proposed_canonical_section, cross_listings, and a description already inside the 20-50 word band. The two requires-human-review rows carry a draft title and description so they can be acted on immediately if the moratorium series decision goes that way.",
+ "safeguards": ["no master-inventory.json write", "no checkpoint.json write", "no r2-inventory.json write", "no site content change", "no R2 upload", "no commit, merge, or deploy"]
+}
+
+os.makedirs(os.path.dirname(OUT), exist_ok=True)
+with open(OUT, 'w', encoding='utf-8') as f:
+    json.dump(artifact, f, indent=1, ensure_ascii=False)
+print(json.dumps({"output": OUT, "counts": artifact["counts"]}))

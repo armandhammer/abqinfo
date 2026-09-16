@@ -1,0 +1,2 @@
+Read `AGENTS.md` and `project-state/AGENT-HANDOFF.md` before any work in this repository. Their policies are binding. A static document is not site-ready until its original is archived to R2 and the public archive download is verified; an official live link alone is not a substitute. Claim the Claude research lane in the handoff file, work it through to its recorded artifact, then automatically claim the next Claude lane. Do not ask the user to relay a prompt or wait for Codex; communicate through the saved artifacts and handoff ledger.
+

@@ -1,0 +1,4859 @@
+{
+ "batch_id": "inventory-url-collision-audit-2026-09-11",
+ "lane": "Claude research lane: inventory-wide audit of records sharing one URL",
+ "generated_at": "2026-09-12T02:42:43.965531+00:00",
+ "type": "inventory audit, not a cluster triage",
+ "why_this_exists": "The councilor-district-2 cluster triaged on the same date turned up twelve URLs in one directory carrying twenty-six inventory records between them, including three URLs with two validated records each. Seven of the extra records were still pending and their disposition was already settled by an excluded twin. That is a detection method no earlier lane in this run had used, and it costs nothing to run inventory-wide, so this artifact does.",
+ "method": "Grouped all 7,074 inventory candidates by their direct_file_url, falling back to source_url, with a trailing /view and any trailing slash stripped. No fetching, no hashing, no text extraction: two records pointing at one URL are one document by definition. Then separated the groups whose URL ends in a document extension from those whose URL is a page or service, because only the former are necessarily one document.",
+ "classification_only": true,
+ "shared_state_written": [],
+ "creates_no_inventory_record": true,
+ "false_positive_excluded": {
+  "url": "https://mrmpo.nm.tipviewer.pmgpro.com",
+  "records": 231,
+  "what_it_is": "The Mid-Region Metropolitan Planning Organization TIP Viewer, a live web application. 229 distinct transportation projects are catalogued against this single application URL, plus one validated record for the viewer itself and one duplicate.",
+  "why_it_is_not_a_collision": "These are different projects, not different records of one document. The repository already treats live official services as a category of their own, exempt from the archival rule, and this is that category behaving normally.",
+  "impact_of_not_excluding_it": "A first pass that counted it reported 296 excess records. Excluding it, the real figure is 68. Every headline number in this artifact would have been wrong by roughly a factor of four. Any future run of this audit must exclude live-service URLs before reporting."
+ },
+ "findings": {
+  "distinct_urls": 5999,
+  "urls_with_more_than_one_record": 454,
+  "records_in_those_groups": 929,
+  "document_urls_with_more_than_one_record": 344,
+  "records_in_document_groups": 701,
+  "excess_records_beyond_one_per_url": {
+   "all_urls": {
+    "validated": 33,
+    "excluded": 10,
+    "duplicate": 7,
+    "pending review": 13,
+    "superseded": 5
+   },
+   "all_urls_total": 68,
+   "document_urls_only": {
+    "validated": 16,
+    "excluded": 1,
+    "duplicate": 7,
+    "pending review": 13,
+    "superseded": 3
+   },
+   "document_urls_total": 40
+  },
+  "document_group_size_distribution": {
+   "2": 332,
+   "3": 11,
+   "4": 1
+  },
+  "scale_note": "68 excess records against 7,074 candidates is a small defect rate, and the finding is not that the inventory is broadly unreliable. It is that a cheap check nobody was running catches a real class of error, and that two of the affected numbers are ones the project reports."
+ },
+ "effect_on_reported_counts": {
+  "source": "project-state/checkpoint.json counts_by_status, recorded 2026-09-11T19:15:00Z",
+  "validated": {
+   "reported": 1321,
+   "excess_on_document_urls": 16,
+   "on_a_one_record_per_document_basis": 1305
+  },
+  "excluded": {
+   "reported": 1335,
+   "excess_on_document_urls": 1,
+   "on_a_one_record_per_document_basis": 1334
+  },
+  "pending_review": {
+   "reported": 2255,
+   "excess_on_document_urls": 13,
+   "note": "13 pending records are second records for a document another pending record already covers. Separately, 79 document groups carry a pending record whose twin is already terminal; those are not excess pending records, they are pending records with a settled answer."
+  },
+  "honest_reading": "The validated count is overstated by 16 on a one-record-per-document basis, about 1.2 per cent. That is small but it is the number the project reports as its archive size, so it is worth stating correctly rather than leaving to be rediscovered."
+ },
+ "actionable_now": {
+  "headline": "79 document URLs carry a pending record alongside a record that is already terminal.",
+  "why_it_matters": "Each of these is a pending record whose disposition is already decided, because the other record is the same file. They need no fetching, no measurement and no judgement: they inherit. At roughly four per cluster they are the cheapest pending records in the inventory to clear.",
+  "twin_status_breakdown": {
+   "superseded": 2,
+   "validated": 13,
+   "duplicate": 31,
+   "excluded": 38
+  },
+  "recommended_rule": "Where a pending record shares a normalised document URL with a terminal record, recommend it duplicate with the terminal record as canonical, and carry the canonical's reasoning across rather than re-deriving it. Recording it as a duplicate rather than silently re-applying the twin's status preserves the fact that the inventory double-counted one document.",
+  "worked_example": "The councilor-district-2 artifact of the same date applies exactly this rule to seven records, each a Complete Streets letter of support titled once from the organisation that wrote it and once from the link text on the Council page.",
+  "groups": [
+   {
+    "url": "https://documents.cabq.gov/planning/online-forms/SITE%20PLAN_ADMINISTRATIVE_DFT_CHECKLIST.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-7fdc83982a50ca00",
+      "status": "pending review",
+      "title": "SITE PLANADMINISTRATIVEDFTCHECKLIST.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-9bf85f625461a3e7",
+      "status": "superseded",
+      "title": "FormA.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/50-mile-activity-loop/documents/50-mile-activity-loop-map-may-2020.pdf",
+    "record_count": 3,
+    "records": [
+     {
+      "id": "src-2edf86588af244d8",
+      "status": "validated",
+      "title": "50-Mile Activity Loop Map",
+      "checksum_sha256": "d1c1823c61fd1b2f3580b88e1f3de320225ec5159bb4f07ec4a549360683b6b4",
+      "size_bytes": 6656115
+     },
+     {
+      "id": "src-6747d5a10047c3bc",
+      "status": "duplicate",
+      "title": "50-Mile Activity Loop Map",
+      "checksum_sha256": "d1c1823c61fd1b2f3580b88e1f3de320225ec5159bb4f07ec4a549360683b6b4",
+      "size_bytes": 6656115
+     },
+     {
+      "id": "src-c1d97fa6b004e461",
+      "status": "pending review",
+      "title": "50 Mile Activity Loop Map: May 2020",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/4th-street-montano-area-improvement-coalition/4th_street_and_montano_area_improvements_draft_plan.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-48a9681a27727130",
+      "status": "superseded",
+      "title": "Draft North Fourth Street Rank III Corridor Plan",
+      "checksum_sha256": "558ce8f2b72821da0d5ba2b0a4ade70c38a11409c2e033488a76afa280561738",
+      "size_bytes": 34703589
+     },
+     {
+      "id": "src-f90f45e9692ffc1a",
+      "status": "pending review",
+      "title": "4th Street and Montano Area Improvements Draft Plan.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/4th-street-montano-area-improvement-coalition/4thstcommunityvisioningreport11.06.04.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-173ce250cdac7c01",
+      "status": "validated",
+      "title": "Fourth Street and Montaño Community Visioning Report",
+      "checksum_sha256": "6a50f38bb6836736e29628722e42943aff09ac0fcebc3352e170372b15d2371c",
+      "size_bytes": 1246032
+     },
+     {
+      "id": "src-4d604937d6910980",
+      "status": "pending review",
+      "title": "4thstcommunityvisioningreport11.06.04.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/CentralCompleteStreetPlan2013Draft.pdf",
+    "record_count": 3,
+    "records": [
+     {
+      "id": "src-357f0a012444d081",
+      "status": "validated",
+      "title": "October 2013 Draft Central Avenue Complete Street Plan and Design Toolkit",
+      "checksum_sha256": "c85e0d723e9233d7fb9f7b4451d6240760a94f8a7f2082840e04ef935283ef35",
+      "size_bytes": 11759630
+     },
+     {
+      "id": "src-4c9e6a583778b007",
+      "status": "duplicate",
+      "title": "October 2013 Draft Central Avenue Complete Street Plan and Design Toolkit",
+      "checksum_sha256": "c85e0d723e9233d7fb9f7b4451d6240760a94f8a7f2082840e04ef935283ef35",
+      "size_bytes": 11759630
+     },
+     {
+      "id": "src-a0095a2e8b524b85",
+      "status": "pending review",
+      "title": "Central Avenue Complete Streets Design Toolkit (1st to Girard)",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/EPCNODVolcanoTrails030311.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-442d80b03a4e05eb",
+      "status": "pending review",
+      "title": "EPC-NODVolcanoTrails030311.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-e8d18ebb99858984",
+      "status": "validated",
+      "title": "Volcano Trails Environmental Planning Commission Official Notice of Decision",
+      "checksum_sha256": "b44015e36515f3bf86e3dafdcde44313005f2812aa03722c926a1cecb162014d",
+      "size_bytes": 96283
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/R211csfinal.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-8b120e71c3650349",
+      "status": "validated",
+      "title": "Volcano Trails Sector Development Plan Adoption Resolution R-11-211",
+      "checksum_sha256": "fcd72d78be2eb6fc15c94dd4562ffbbb4440f06de4999673d1bd5533ba425353",
+      "size_bytes": 90762
+     },
+     {
+      "id": "src-f93aa90a07d83d6d",
+      "status": "pending review",
+      "title": "Volcano Trails Resolution",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/VolcanoTrailsSDPFINAL.PDF",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-5506a88128e7de17",
+      "status": "pending review",
+      "title": "Volcano Trails SDP",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-81c75a7d7a217a68",
+      "status": "validated",
+      "title": "Volcano Trails Sector Development Plan",
+      "checksum_sha256": "a6da27a70e4bda95e8b4e971e2698e2f47d7e88af7e49671ece6ef2aad712e26",
+      "size_bytes": 8903701
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/complete-streets/CentralAveCompleteStreetsReport_DRAFT_03.26.14.pdf",
+    "record_count": 3,
+    "records": [
+     {
+      "id": "src-5e3f04254885b800",
+      "status": "pending review",
+      "title": "Central 1st to Girard Complete Streets March 2014 Draft",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-fb83e1ee4d276d04",
+      "status": "duplicate",
+      "title": "March 2014 Draft Central Avenue Complete Street Plan and Design Toolkit",
+      "checksum_sha256": "63d7952c3737bbf81a14acd70224afb7b0c09005d39ec56b84ae5a4278aed930",
+      "size_bytes": 11895405
+     },
+     {
+      "id": "src-ffa72f2b8869a660",
+      "status": "validated",
+      "title": "March 2014 Draft Central Avenue Complete Street Plan and Design Toolkit",
+      "checksum_sha256": "63d7952c3737bbf81a14acd70224afb7b0c09005d39ec56b84ae5a4278aed930",
+      "size_bytes": 11895405
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/2014PositionSupportingCompleteStreetsOrdinance.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-9e03c0a2637b4ea0",
+      "status": "pending review",
+      "title": "Greater Albuquerque Chamber of Commerce",
+      "checksum_sha256": null,
+      "size_bytes": 126801
+     },
+     {
+      "id": "src-e271c19776152b9e",
+      "status": "excluded",
+      "title": "Complete Streets Letter of Support2",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreetsLetterofSupportAPANM.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-1aad59487828ec12",
+      "status": "pending review",
+      "title": "American Planning Association",
+      "checksum_sha256": null,
+      "size_bytes": 743287
+     },
+     {
+      "id": "src-be8f4bed636a4047",
+      "status": "excluded",
+      "title": "Complete Streets Letter of Support1",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreetsNMASLALetterofSupport.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-81fec81c380435d0",
+      "status": "excluded",
+      "title": "Complete Streets Letter of Support3",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-dac1fb8d66e29479",
+      "status": "pending review",
+      "title": "American Society of Landscape Architects",
+      "checksum_sha256": null,
+      "size_bytes": 425305
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreets_ABQCityCouncilLtr_12015.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-568151e20e03cfa4",
+      "status": "pending review",
+      "title": "The American Institute of Architects",
+      "checksum_sha256": null,
+      "size_bytes": 294856
+     },
+     {
+      "id": "src-8f7e044375532900",
+      "status": "excluded",
+      "title": "Complete Streets Letter of Support7",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/LetterofSupportforCABQCompleteStreets.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-2d4310a701de4e61",
+      "status": "pending review",
+      "title": "New Mexico Complete Streets Leadership Team",
+      "checksum_sha256": null,
+      "size_bytes": 679211
+     },
+     {
+      "id": "src-bc780b95996af003",
+      "status": "excluded",
+      "title": "Complete Streets Letter of Support4",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/MiABQCompleteStreetsLetterofSupport.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-881523bf4e425992",
+      "status": "pending review",
+      "title": "Downtown Albuquerque Millennial Project",
+      "checksum_sha256": null,
+      "size_bytes": 278404
+     },
+     {
+      "id": "src-f8188bd262397e5b",
+      "status": "excluded",
+      "title": "Complete Streets Letter of Support6",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/NMHWCLetterofSupportCompleteStreetsOrdinance01427.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-ba088806917968aa",
+      "status": "pending review",
+      "title": "New Mexico Healthier Weight Council",
+      "checksum_sha256": null,
+      "size_bytes": 432598
+     },
+     {
+      "id": "src-d779aab19483f927",
+      "status": "excluded",
+      "title": "Complete Streets Letter of Support5",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/south-yale-blvd/Concept%20Plan%20-%20Segment%201.pdf",
+    "record_count": 3,
+    "records": [
+     {
+      "id": "src-66add68f2b531815",
+      "status": "pending review",
+      "title": "Concept Plan -- Segment 1",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-d2e84afc15b63900",
+      "status": "duplicate",
+      "title": "Concept Plan - Segment 1",
+      "checksum_sha256": "269f56276b0fcb242202490dc836e2d923fd4072bb1cabd3840e93fbf3f1f105",
+      "size_bytes": 1503476
+     },
+     {
+      "id": "src-fa4a64d343feb303",
+      "status": "validated",
+      "title": "South Yale Segment 1 Concept Plan: Avenida Cesar Chavez to Kathryn",
+      "checksum_sha256": "269f56276b0fcb242202490dc836e2d923fd4072bb1cabd3840e93fbf3f1f105",
+      "size_bytes": 1503476
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/south-yale-blvd/Street%20Segments%20-%20Characteristics.pdf",
+    "record_count": 3,
+    "records": [
+     {
+      "id": "src-18e50a6ed6696c30",
+      "status": "duplicate",
+      "title": "Street Segments and Characteristics",
+      "checksum_sha256": "6df565db6a4a0039535f10b04855c2a3cb303168ede71b98c6ceb716507b48db",
+      "size_bytes": 53947
+     },
+     {
+      "id": "src-2f8683a1ba3c7dc4",
+      "status": "validated",
+      "title": "South Yale Corridor Segments and Future Context",
+      "checksum_sha256": "6df565db6a4a0039535f10b04855c2a3cb303168ede71b98c6ceb716507b48db",
+      "size_bytes": 53947
+     },
+     {
+      "id": "src-4541bdade4a94304",
+      "status": "pending review",
+      "title": "Street Segments and Future Characteristics",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/ABQRideTransitScope.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-b373e41dd4832bb0",
+      "status": "duplicate",
+      "title": "ABQ Ride Scope",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-fea8e180a783d0e2",
+      "status": "pending review",
+      "title": "ABQRideTransitScope.pdf",
+      "checksum_sha256": null,
+      "size_bytes": 42732
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/AnimalWelfareScope.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-5db7f093ad2d4dfa",
+      "status": "duplicate",
+      "title": "Animal Welfare Scope",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-70ad58e6e7d46a7f",
+      "status": "pending review",
+      "title": "AnimalWelfareScope.pdf",
+      "checksum_sha256": null,
+      "size_bytes": 37335
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/AnimalWelfareSummary.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-cb6b4d5dea093829",
+      "status": "duplicate",
+      "title": "Animal Welfare Summary",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-f9a6fbd8202d6c06",
+      "status": "pending review",
+      "title": "AnimalWelfareSummary.pdf",
+      "checksum_sha256": null,
+      "size_bytes": 42581
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/CityCountyEscalatorsAddendum1.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-598b98e539779b39",
+      "status": "pending review",
+      "title": "CityCountyEscalatorsAddendum1.pdf",
+      "checksum_sha256": null,
+      "size_bytes": 53577
+     },
+     {
+      "id": "src-614949fd6f51f356",
+      "status": "duplicate",
+      "title": "Addendum 1",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/CityCountyEscalatorsRFPDueDec4.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-3783e58f9cc98436",
+      "status": "pending review",
+      "title": "CityCountyEscalatorsRFPDueDec4.pdf",
+      "checksum_sha256": null,
+      "size_bytes": 1733352
+     },
+     {
+      "id": "src-7c399133847c1436",
+      "status": "duplicate",
+      "title": "City County Escalator RFP Due Dec 4th",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/CouncilNeighborhoodSetAsideScope.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-3db3b76742a05f24",
+      "status": "duplicate",
+      "title": "Council Neighborhood Set Aside Scope",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-cbcf25da33ca198e",
+      "status": "pending review",
+      "title": "CouncilNeighborhoodSetAsideScope.pdf",
+      "checksum_sha256": null,
+      "size_bytes": 44141
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/CouncilNeighborhoodSetAsideSummary.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-fac7cc51bf89fa91",
+      "status": "pending review",
+      "title": "CouncilNeighborhoodSetAsideSummary.pdf",
+      "checksum_sha256": null,
+      "size_bytes": 43404
+     },
+     {
+      "id": "src-ff783a59d68401e4",
+      "status": "duplicate",
+      "title": "Council Neighborhood Set Aside Summary",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/DMDStormDrainageSummary.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-8a1cd2f9d8f7c6c1",
+      "status": "pending review",
+      "title": "DMDStormDrainageSummary.pdf",
+      "checksum_sha256": null,
+      "size_bytes": 51291
+     },
+     {
+      "id": "src-e5dd0d9240886664",
+      "status": "duplicate",
+      "title": "DMD Storm Drain Summary",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/Env.HealthScope.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-544546ccf42b9c17",
+      "status": "duplicate",
+      "title": "Environmental Health Scope",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-73c472b85ecfc91e",
+      "status": "pending review",
+      "title": "Env.HealthScope.pdf",
+      "checksum_sha256": null,
+      "size_bytes": 47860
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/Env.HealthSummary.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-7860dfb9fdbf1643",
+      "status": "pending review",
+      "title": "Env.HealthSummary.pdf",
+      "checksum_sha256": null,
+      "size_bytes": 46569
+     },
+     {
+      "id": "src-d0cf51de7d26c72d",
+      "status": "duplicate",
+      "title": "Environmental Health Summary",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/FamilyCommServicesScope.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-d2058997aed9387b",
+      "status": "duplicate",
+      "title": "Family and Community Services Scope",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-da3be12779d12aa9",
+      "status": "pending review",
+      "title": "FamilyCommServicesScope.pdf",
+      "checksum_sha256": null,
+      "size_bytes": 50825
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/bike-safety-skills-class-flyer-2026.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-988538bf7692dd93",
+      "status": "duplicate",
+      "title": "Esperanza Bicycle Safety Education Center Bike Safety Skills Class Flyer 2026",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-b31976802bec1a91",
+      "status": "pending review",
+      "title": "bike safety skills class flyer 2026.pdf",
+      "checksum_sha256": null,
+      "size_bytes": 259623
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/copy_of_DMDStormDrainageSummary.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-7ea5e714c2ce7bae",
+      "status": "duplicate",
+      "title": "Approved Storm Summary",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-cb94b02f92bf79bb",
+      "status": "pending review",
+      "title": "copy of DMDStormDrainageSummary.pdf",
+      "checksum_sha256": null,
+      "size_bytes": 51201
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/final-plat-checklist.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-78e5d98cb0f1016b",
+      "status": "pending review",
+      "title": "final plat checklist.pdf",
+      "checksum_sha256": null,
+      "size_bytes": 13900
+     },
+     {
+      "id": "src-da6d77e888e210e9",
+      "status": "duplicate",
+      "title": "Final Plat Checklist",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/mf-3335.docx",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-1cc32706cb5e9a49",
+      "status": "duplicate",
+      "title": "On street bicycle on call design",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-e0b517a974bfdc14",
+      "status": "pending review",
+      "title": "mf 3335.docx",
+      "checksum_sha256": null,
+      "size_bytes": 20076
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/mountain-road-bike-blvd-crossing-at-san-pedro-drive.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-350f1b4d381f1b7e",
+      "status": "excluded",
+      "title": "Mountain Road Bike Boulevard Crossing at San Pedro Drive",
+      "checksum_sha256": "96751722265c0047383d32c3aae4526b5cb90587d6fbb2539e7282bcea4bc3a2",
+      "size_bytes": 36723
+     },
+     {
+      "id": "src-48c77cfd3533626b",
+      "status": "pending review",
+      "title": "Mountain Road Bike Blvd Crossing at San Pedro Drive",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/request-for-proposal-packet-western-trails-triangle.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-8cc352afd205c7ee",
+      "status": "pending review",
+      "title": "request for proposal packet western trails triangle.pdf",
+      "checksum_sha256": null,
+      "size_bytes": 293345
+     },
+     {
+      "id": "src-9374c19ba0fd361a",
+      "status": "duplicate",
+      "title": "Request for Proposal Document - Western Trails Triangle",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/rfp-for-choke-cherry-trail-in-farmington-02-22-23.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-b8eb79393e08b13d",
+      "status": "duplicate",
+      "title": "RFP for Choke Cherry Trail in Farmington 2.22.23",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-de22d63276c9444b",
+      "status": "pending review",
+      "title": "rfp for choke cherry trail in farmington 02 22 23.pdf",
+      "checksum_sha256": null,
+      "size_bytes": 340336
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/streetnaming_coa5thcouncil.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-53b596f0bdeff2e2",
+      "status": "duplicate",
+      "title": "Street Naming Ordinance",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-af1446ca7eb32215",
+      "status": "pending review",
+      "title": "streetnaming coa5thcouncil.pdf",
+      "checksum_sha256": null,
+      "size_bytes": 111265
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/diagonal-diverter.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-2cde2e90c0636d94",
+      "status": "pending review",
+      "title": "Diagonal Diverter",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-8c0ad165888c397b",
+      "status": "duplicate",
+      "title": "Diagonal Diverter",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/lane-narrowing-with-center-island-pedestrian-refuge.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-9caef3e2cedb3a6a",
+      "status": "duplicate",
+      "title": "Lane Narrowing with Center Island / Pedestrian Refuge",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-f27e382bd6704623",
+      "status": "pending review",
+      "title": "Lane Narrowing with Center Island or Pedestrian Refuge",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/lateral-shift.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-48c8201fe984df1a",
+      "status": "duplicate",
+      "title": "Lateral Shift",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-ec1e762f9b98c82c",
+      "status": "pending review",
+      "title": "Lateral Shift",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/medians-partial-medians.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-0c707f3232e86bbf",
+      "status": "duplicate",
+      "title": "Medians and Partial Medians (NTMP fact sheet)",
+      "checksum_sha256": "4d1421d279f995963e3f14b9fcb3536bef5863f76b45d16a34544e85708ef45f",
+      "size_bytes": 200372
+     },
+     {
+      "id": "src-a1a403bdeb36778d",
+      "status": "pending review",
+      "title": "Medians & Partial Medians",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/one-lane-choker.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-76ab16d1cf4f6adb",
+      "status": "duplicate",
+      "title": "One-Lane Choker",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-a5f9cd7670a1f4ae",
+      "status": "pending review",
+      "title": "One-Lane Choker",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/one-way-couplet-conversions.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-84a471a0d9136a60",
+      "status": "pending review",
+      "title": "One-Way Couplet Conversions",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-86df802b920c03f1",
+      "status": "duplicate",
+      "title": "One-Way Couplet Conversions",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/parking-strategies.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-376ded4f51fc7cd7",
+      "status": "pending review",
+      "title": "Parking Strategies",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-66bb4f6d77b6ee40",
+      "status": "duplicate",
+      "title": "Parking Strategies",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/partial-closure.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-4493447a3152c28c",
+      "status": "duplicate",
+      "title": "Partial Closure",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-a2efcb827356877e",
+      "status": "pending review",
+      "title": "Partial Closure",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/AcademyHillsPark.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-f1dc11aedccdbb5f",
+      "status": "pending review",
+      "title": "AcademyHillsPark.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-f62ebc68c725461d",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": 540662
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/AlamedaDrainTrail.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-ae8741d7f3b85db3",
+      "status": "pending review",
+      "title": "AlamedaDrainTrail.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-e6f90a65d61b197c",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/AldoLeopoldTrail.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-48f239de2668009c",
+      "status": "pending review",
+      "title": "AldoLeopoldTrail.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-b0b66a26d18d3b6d",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/AlturaPark.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-0d2fa0c80cc94b95",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-115748559bd98413",
+      "status": "pending review",
+      "title": "AlturaPark.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/BataanPark.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-6aac91ed022c6b4f",
+      "status": "pending review",
+      "title": "BataanPark.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-86a6f7035bb2004d",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/BelAir-MiramontesPark.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-a8a5712990583711",
+      "status": "pending review",
+      "title": "BelAir-MiramontesPark.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-fb0ab637d6fa13ab",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/BlackArroyoTrail.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-688cdc9428c2a7a7",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-8015bccf7c3e82c8",
+      "status": "pending review",
+      "title": "BlackArroyoTrail.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/ElOsoGrande-BearCanyonTrails.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-85d8c31c29cda82b",
+      "status": "pending review",
+      "title": "ElOsoGrande-BearCanyonTrails.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-cab57fe9bb039cb1",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/EmbudoHillsPark.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-4b1070da8a9669c0",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-e9a5daf40c7891ce",
+      "status": "pending review",
+      "title": "EmbudoHillsPark.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/HeritageHillsPark.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-00a12ed83af9b28d",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-9e17a94b1f144e94",
+      "status": "pending review",
+      "title": "HeritageHillsPark.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/HighlandHighSchoolTrack.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-6c1b5e31f517427f",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-fd0c881da9ce98f3",
+      "status": "pending review",
+      "title": "HighlandHighSchoolTrack.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/JerryClinePark.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-22c0eeefb9f411b0",
+      "status": "pending review",
+      "title": "JerryClinePark.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-640bf414a1a85c47",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/LazaDayPark.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-4c77d1cc887b693a",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-55d03bc9cb7cb850",
+      "status": "pending review",
+      "title": "LazaDayPark.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/LomaDelNortePark.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-5a663e68b3372f34",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-e8ba3edf809099d7",
+      "status": "pending review",
+      "title": "LomaDelNortePark.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/LosPoblanosOpenSpace.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-a7cee959814a0712",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": 503775
+     },
+     {
+      "id": "src-ec9f831defe82924",
+      "status": "pending review",
+      "title": "LosPoblanosOpenSpace.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/MariposaBasinPark.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-3cb251f4c5161c2e",
+      "status": "pending review",
+      "title": "MariposaBasinPark.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-b503d80df1329651",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/MesaVerdePark.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-6636fce995654aff",
+      "status": "pending review",
+      "title": "MesaVerdePark.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-c3e2ea14f039b113",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/MontgomeryPark.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-937c95d604d7a686",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-fe2821d289c917cf",
+      "status": "pending review",
+      "title": "MontgomeryPark.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/NoresteParkTrail.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-a33fe17e628705e7",
+      "status": "pending review",
+      "title": "NoresteParkTrail.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-e86d187649de8228",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": 571035
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/PatHurleyPark.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-4683f2146bd4cca8",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": 923569
+     },
+     {
+      "id": "src-6c2d73dc9d085051",
+      "status": "pending review",
+      "title": "PatHurleyPark.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/PhilChaconPark.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-8487a08cee4e24f2",
+      "status": "pending review",
+      "title": "PhilChaconPark.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-ffb279f703692618",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": 1459500
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/RedlandsPark.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-6bda2411a8b5e415",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": 814808
+     },
+     {
+      "id": "src-87d94050811db519",
+      "status": "pending review",
+      "title": "RedlandsPark.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/RioBravoOpenSpace.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-4e28d1f52544e081",
+      "status": "pending review",
+      "title": "RioBravoOpenSpace.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-5d59479af919d133",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": 1329082
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/RooseveltPark.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-23a310e22730c6cf",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": 870298
+     },
+     {
+      "id": "src-3e5f55c547e63960",
+      "status": "pending review",
+      "title": "RooseveltPark.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/SantaFeVillagePark.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-caeb1cc440404629",
+      "status": "pending review",
+      "title": "SantaFeVillagePark.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-eb16857007164611",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": 947828
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/TiguexPark.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-1d663b40ba097502",
+      "status": "pending review",
+      "title": "TiguexPark.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-840affac67fe2462",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": 441605
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/UNMGolfCourse.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-a5853cd186a37bbd",
+      "status": "pending review",
+      "title": "UNMGolfCourse.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-afa3bb7390cc963a",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": 1167960
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/ValleDelBosquePark.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-bff535ffa8ec5a9f",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": 394977
+     },
+     {
+      "id": "src-cf9551d519692607",
+      "status": "pending review",
+      "title": "ValleDelBosquePark.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/WestsideCommunityComplex.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-f6b55a2eac3712e6",
+      "status": "pending review",
+      "title": "WestsideCommunityComplex.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-f817bb29e32f3203",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": 653521
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/WildflowerPark.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-de2feca1b6836d55",
+      "status": "excluded",
+      "title": "Print this information out and take it with you!",
+      "checksum_sha256": null,
+      "size_bytes": 727561
+     },
+     {
+      "id": "src-e7c330125c6cff88",
+      "status": "pending review",
+      "title": "WildflowerPark.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/recreation/bike/documents/final-albuquerque-comprehensive-on-street-bicycle-plan.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-0f60535452ac9154",
+      "status": "validated",
+      "title": "2000 Albuquerque Comprehensive On-Street Bicycle Plan",
+      "checksum_sha256": "81e89d704fe74949d958fb42f8e5ede02adeeb3ebb5b243cf16acc6f92514651",
+      "size_bytes": 8054496
+     },
+     {
+      "id": "src-bad74bf291ef24a0",
+      "status": "pending review",
+      "title": "Final Albuquerque Comprehensive On-Street Bicycle Plan",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/recreation/documents/foothillsmap.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-7c0654024a94c161",
+      "status": "pending review",
+      "title": "foothillsmap.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-f959feb16b7d43c7",
+      "status": "validated",
+      "title": "Sandia Foothills Open Space Trail Map",
+      "checksum_sha256": "1710d8901b0eeeaaa723a83f1d938e426fffc07db2b0b50f3508f283c7e9bd2d",
+      "size_bytes": 1060239
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/progress/documents/albuquerque-yearly-survey-2023.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-9a6e43f69e2e059a",
+      "status": "pending review",
+      "title": "2023 Albuquerque Yearly Survey",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-bf7598bed4055750",
+      "status": "validated",
+      "title": "Albuquerque Yearly Survey Results (2024)",
+      "checksum_sha256": "93f6e567e0377de799d5185cfc82582ad5ba6294d0655779b5789142902a4c45",
+      "size_bytes": 572545
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/progress/documents/complete_2008_apr.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-d62d1abce680dce0",
+      "status": "validated",
+      "title": "2008 Albuquerque Progress Report",
+      "checksum_sha256": "b4fd6cc7fdf76d3f73aca038c2e4129b794dbc4e0bc85b23f447f25fcd493079",
+      "size_bytes": 4976512
+     },
+     {
+      "id": "src-f970379557245cd0",
+      "status": "pending review",
+      "title": "2008APR",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   }
+  ]
+ },
+ "pending_pairs_still_needing_triage": {
+  "headline": "13 document URLs carry two pending records and no terminal record.",
+  "why_separated": "These are not a cheap win and must not be confused with the group above. Neither record has a disposition to inherit, so the document still needs triaging on its merits. What the collision gives is a saving of effort, not an answer: triage the document once and apply the result to both records rather than fetching and measuring it twice.",
+  "recommended_rule": "Collapse each pair to one record at triage time: classify one on the merits and recommend the other duplicate against it. Whichever cluster lane reaches the URL first should do this rather than leaving the second record for a later lane that will redo the work.",
+  "groups": [
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/2026-08-10-gaatc-agenda.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-43b1f7a8cd1931fc",
+      "status": "pending review",
+      "title": "Meeting Agenda",
+      "checksum_sha256": null,
+      "size_bytes": 334892
+     },
+     {
+      "id": "src-d2c20fc383f46c12",
+      "status": "pending review",
+      "title": "August 10, 2026 Greater Albuquerque Active Transportation Committee (GAATC) Agen",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/bike-lane-ed-poster-final-eng.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-2f5da96c42d54fa8",
+      "status": "pending review",
+      "title": "View a PDF file of the above image.",
+      "checksum_sha256": null,
+      "size_bytes": 349018
+     },
+     {
+      "id": "src-b1e0a1643b2e820c",
+      "status": "pending review",
+      "title": "bike lane parking english",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/bike-lane-ed-poster-final-esp.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-7f40f4a3c910becd",
+      "status": "pending review",
+      "title": "bike lane parking spanish",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-cc44b06a2deb4a51",
+      "status": "pending review",
+      "title": "View a PDF of the above image.",
+      "checksum_sha256": null,
+      "size_bytes": 349256
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/chicane.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-c1efbc252b944815",
+      "status": "pending review",
+      "title": "Chicane",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-ff8a8efda91c6d0d",
+      "status": "pending review",
+      "title": "Chicane",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/education-community-involvement.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-b15da81f9d71a717",
+      "status": "pending review",
+      "title": "Education & Community Involvement",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-d330781542a36f24",
+      "status": "pending review",
+      "title": "Education & Community Involvement",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/forced-turn-island.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-6c461a5bb313c28f",
+      "status": "pending review",
+      "title": "Forced Turn Island",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-c078a57c7fc43a1d",
+      "status": "pending review",
+      "title": "Forced Turn Island",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/high-visibility-crosswalks.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-467ac67b11502959",
+      "status": "pending review",
+      "title": "High Visibility Crosswalks",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-fa784adbe11c7bfe",
+      "status": "pending review",
+      "title": "High Visibility Crosswalks",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/median-barrier.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-2efe76b357b083a2",
+      "status": "pending review",
+      "title": "Median Barrier",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-eb2323c8cee0992a",
+      "status": "pending review",
+      "title": "Median Barrier",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/neckdowns-bulbouts.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-9efb9f49c1fdf473",
+      "status": "pending review",
+      "title": "Neckdowns & Bulbouts",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-c464a2f3e63f465b",
+      "status": "pending review",
+      "title": "Neckdowns & Bulbouts",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/permanent-radar-speed-sign.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-25484cf5e782b8cb",
+      "status": "pending review",
+      "title": "Permanent Radar Speed Sign",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-ebdd2fb1280faa2b",
+      "status": "pending review",
+      "title": "Permanent Radar Speed Sign",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/radar-speed-trailer.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-26c73014ab7a9c30",
+      "status": "pending review",
+      "title": "Radar Speed Trailer",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-f2b60939e3efc80f",
+      "status": "pending review",
+      "title": "Radar Speed Trailer",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/ArroyoDelOsoPark.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-32936beb4d93f790",
+      "status": "pending review",
+      "title": "ArroyoDelOsoPark.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-bf34505f308a8e22",
+      "status": "pending review",
+      "title": "Download Arroyo del Oso trail info.",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/walking-log.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-63f7f8d96ae99f78",
+      "status": "pending review",
+      "title": "walking-log.pdf",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-a1b30f8c8ab8f657",
+      "status": "pending review",
+      "title": "Print a walking log",
+      "checksum_sha256": null,
+      "size_bytes": 977879
+     }
+    ]
+   }
+  ]
+ },
+ "needs_codex_adjudication": {
+  "headline": "135 document URLs carry more than one validated or implemented record.",
+  "why_this_lane_cannot_decide_it": "Every record in these groups is already terminal, and the coordination rules reserve terminal records to the integration lane. Claude modified none of them.",
+  "the_ambiguity_to_resolve_first": "Some pairs are validated plus implemented, which may be deliberate if the project distinguishes an inventory record from a site-placement record. Others are validated plus validated, which is harder to read as intentional. Decide what a validated-and-implemented pair means before treating any of these as errors, because that decision determines how many of the 135 are real.",
+  "groups": [
+   {
+    "url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/a698b953-f3f1-4eea-80a8-6358dbe38853/Public%20Involvement%20Plan%20%28PIP%29%20%288.8%20mb%29.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-61d85ca57d63e6f3",
+      "status": "implemented",
+      "title": "Official NMDOT PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-c8d7be8df90dce69",
+      "status": "validated",
+      "title": "NMDOT Public Involvement Plan",
+      "checksum_sha256": "010a05df708550cff3dd7101b62a86b6b17b3b7bd62f83dcf9c11159ecacb371",
+      "size_bytes": 9273494
+     }
+    ]
+   },
+   {
+    "url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/07/South-Valley-Multimodal-Study-Dec-2017.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-0c7b921697a65f23",
+      "status": "validated",
+      "title": "Near South Valley Multimodal Study",
+      "checksum_sha256": "ab16213b85bf76855dbf701079c495e4ebb75814cd92acff6a7a38fc8a9a301c",
+      "size_bytes": 11260913
+     },
+     {
+      "id": "src-2f979014a85e2eff",
+      "status": "validated",
+      "title": "Official County PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2021/07/Sunport-Commerce-Center-Transportation-Plan-Final.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-0a39e768262a9380",
+      "status": "validated",
+      "title": "Sunport Commerce Center Transportation Plan",
+      "checksum_sha256": "f9eec8973a6cbcc6c9ee233304784250aa551dfb89275a7e0fb0576701a1bb8a",
+      "size_bytes": 3985885
+     },
+     {
+      "id": "src-3652a5509e9b0c50",
+      "status": "validated",
+      "title": "Official County PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/acs/documents/acs-organizational-plan-20211207.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-0e0c9257becc602a",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-dddf3adb203db9cb",
+      "status": "validated",
+      "title": "Albuquerque Community Safety Organizational Plan",
+      "checksum_sha256": "1ef9b63d12b4174c2738094d4ccb1218fe1320dd66f6c0dc7d8ff917df3a8748",
+      "size_bytes": 12941632
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/acs/documents/quarterly-report-q4-2024fy.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-38c2c765a7f4bb3c",
+      "status": "validated",
+      "title": "Albuquerque Community Safety FY2024 Fourth-Quarter Report",
+      "checksum_sha256": "2550fadf6495665683c7c0837b908195a50fa042ad94e9147a0b47ad70c75f0f",
+      "size_bytes": 5879258
+     },
+     {
+      "id": "src-4d7ad30be7202f21",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/acs/documents/vip-mayors-report-to-date.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-97fe86f47eef115b",
+      "status": "validated",
+      "title": "Violence Intervention Program Annual Report with September 2022 Data Update",
+      "checksum_sha256": "411ccd69d529c122b85af10f75d77f51c469b9630739799431a78e50bfe90b19",
+      "size_bytes": 8376807
+     },
+     {
+      "id": "src-99051cbc69a4ea66",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/8-16-21-cutler_pre-final_power-point_pi.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-1bc478383334a5ad",
+      "status": "validated",
+      "title": "Cutler Avenue Pedestrian Improvements Presentation",
+      "checksum_sha256": "08fc26d5b671f2b9f1bdb2294af1926624e1d75f933ffcd4357fc23b937366b8",
+      "size_bytes": 1789788
+     },
+     {
+      "id": "src-78729c767c3f2472",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/Appendix.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-66d6dd3f2f7408bb",
+      "status": "validated",
+      "title": "DNA Traffic Report Appendix",
+      "checksum_sha256": "a4a8b68743d825ed8f52fd9738b55ae6df900597ad10dafff77183d00c2467f0",
+      "size_bytes": 1298813
+     },
+     {
+      "id": "src-89f97c6a639700bb",
+      "status": "implemented",
+      "title": "Official City Appendices",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreetsLegislationPacket.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-439525683f2a5e58",
+      "status": "validated",
+      "title": "Informational Packet",
+      "checksum_sha256": null,
+      "size_bytes": 5086786
+     },
+     {
+      "id": "src-8b18827057480dac",
+      "status": "validated",
+      "title": "Albuquerque Complete Streets Legislation Packet",
+      "checksum_sha256": "b717123d792ed94aa2a3f7c10aee6a7b82a8caeba48969b453913091020c88ee",
+      "size_bytes": 5086786
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreetsOrdinancePresentation.pdf",
+    "record_count": 3,
+    "records": [
+     {
+      "id": "src-0089b84c33b46e84",
+      "status": "duplicate",
+      "title": "Albuquerque Complete Streets Ordinance Presentation (2014)",
+      "checksum_sha256": "278c75aa308d5ef6ee9e11f6f4df05ce89e955dbf22e194383890daf549ef381",
+      "size_bytes": 5031873
+     },
+     {
+      "id": "src-83279794dcb22b7a",
+      "status": "validated",
+      "title": "PowerPoint Presentation",
+      "checksum_sha256": null,
+      "size_bytes": 5031873
+     },
+     {
+      "id": "src-f4de3930a6e04830",
+      "status": "validated",
+      "title": "Albuquerque Complete Streets Ordinance Presentation",
+      "checksum_sha256": "278c75aa308d5ef6ee9e11f6f4df05ce89e955dbf22e194383890daf549ef381",
+      "size_bytes": 5031873
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/O27_CompleteStreet_FloorSub_Final_as_amended.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-50dbc9e020356e05",
+      "status": "validated",
+      "title": "Adopted Legislation",
+      "checksum_sha256": null,
+      "size_bytes": 126155
+     },
+     {
+      "id": "src-912bc14c869a79b0",
+      "status": "validated",
+      "title": "Original Albuquerque Complete Streets Ordinance",
+      "checksum_sha256": "48ba20445951050b1fdeb19bc7e2e94a6e9086f5a57c96fdb0ed7d7178bedf8b",
+      "size_bytes": 126155
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/TrafficReportFINALJuly2014.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-ce3c9f54fa83aba9",
+      "status": "validated",
+      "title": "DNA Traffic Report Final August 2014",
+      "checksum_sha256": "35280e61c883281a4e0b477a79efc79d43e3bc0b82206a7c90438b5d31135a48",
+      "size_bytes": 2026687
+     },
+     {
+      "id": "src-df8844768db111e4",
+      "status": "implemented",
+      "title": "Official City Report",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/councilor-district-6-documents/ZuniGeometricAnalysis.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-5a3c0c601f75c4a9",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-66553f9534aa579f",
+      "status": "validated",
+      "title": "Central Avenue and Zuni Road Cross-Section Modification Analysis",
+      "checksum_sha256": "7f9c673b9f206fdc80e42ea9037b15d281e173b8e0845a5d1202719cdd524436",
+      "size_bytes": 10021665
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/cutler-avenue-report-final-august.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-82a238700e5c6270",
+      "status": "validated",
+      "title": "Cutler Avenue Report",
+      "checksum_sha256": "cda024d5af531ef2d67573940eaa1037d211b791433703660f8adaec5871eea4",
+      "size_bytes": 2431456
+     },
+     {
+      "id": "src-e511519a41d0a650",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/mcduffie-twin-parks-study-public-meeting-2.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-2d079663fad72b74",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-804c31a041e2eb1f",
+      "status": "validated",
+      "title": "McDuffie-Twin Parks Traffic Calming Study Public Meeting 2",
+      "checksum_sha256": "99cf3bd1504ff3320d6fe7a850e8db09a9033a93623d375b353ee0f6c81bcd91",
+      "size_bytes": 1362829
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/north-campus-summit-park/june_2009.final_summit_park-north_campus_ntmp.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-36aeae26d4bb7572",
+      "status": "validated",
+      "title": "Summit Park and North Campus Neighborhood Transportation Management Plan",
+      "checksum_sha256": "583b701ef4ba068051e97f3d3f08f62d1c5692e106f82aaa7fe1db5d698fb2bd",
+      "size_bytes": 9103723
+     },
+     {
+      "id": "src-b24719a4bbe4350f",
+      "status": "implemented",
+      "title": "Download the Final Plan.",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/council/documents/rio-grande-corridor-documents/rio_grande_corridor_plan_1989.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-d25ae9b6c27b4b2c",
+      "status": "validated",
+      "title": "Rio Grande Boulevard Corridor Plan",
+      "checksum_sha256": "01648d5f774f3150e8faac8aa231e92e077d779ef6530589ce2baeb9020d2728",
+      "size_bytes": 11209504
+     },
+     {
+      "id": "src-f063fb4bd173f5f3",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/mra/documents/north-corridor-mra-plan-final-6-29-2020.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-917173b06523dda9",
+      "status": "validated",
+      "title": "North Corridor Metropolitan Redevelopment Area Plan (2020)",
+      "checksum_sha256": "91e1f29bca8a742ca5e1205e71cb5709d3589412059331c35f74339bca0ad667",
+      "size_bytes": 4098627
+     },
+     {
+      "id": "src-bac9ca833a6257a6",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/030619-steam-learning-campus-master-plan-1.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-9b9a27d57063af29",
+      "status": "validated",
+      "title": "Explora STEAM Campus Master Plan — Draft",
+      "checksum_sha256": "fe113b35c025c18a3fd4878a29f5bb6b6706fcfe218e5062f2c26a08611a3a0f",
+      "size_bytes": 1900560
+     },
+     {
+      "id": "src-d60499b3a9c17295",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/2025-bond-program-by-purpose.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-48b873837f28d1f8",
+      "status": "validated",
+      "title": "Albuquerque 2025 General Obligation Bond Program by Purpose",
+      "checksum_sha256": "341d54448c94648b62bfa31eb6845848469a1cf75e6c9471e07bfa60b550d3da",
+      "size_bytes": 2769595
+     },
+     {
+      "id": "src-60e231943d84ef4a",
+      "status": "implemented",
+      "title": "Official City record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/632194-west-central-roll-plot_7-9-26.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-3be6aa47e1698006",
+      "status": "validated",
+      "title": "West Central Complete Streets 60% Design Roll Plot",
+      "checksum_sha256": "fc11eb60c4c66934e570a5da1ca324c3fffe230be409e636027658327c1160e6",
+      "size_bytes": 9410834
+     },
+     {
+      "id": "src-b2930455212d0763",
+      "status": "validated",
+      "title": "632194 west central roll plot 7 9 26.pdf",
+      "checksum_sha256": null,
+      "size_bytes": 9410834
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/98th-benavides-assessment-part-1.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-8a33ed9c2b493ba3",
+      "status": "validated",
+      "title": "98th Street and Benavides Road Intersection Assessment — Part 1",
+      "checksum_sha256": "9fd13caeb24d7f2ac28bb19d0f4bed27e68d4a4eb97a1a5a5358d60f1673f20b",
+      "size_bytes": 3368615
+     },
+     {
+      "id": "src-f2732f30e89dc3ba",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/98th-benavides-assessment-part-2.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-61ffb5299052d2f6",
+      "status": "validated",
+      "title": "98th Street and Benavides Road Intersection Assessment — Part 2: Appendices",
+      "checksum_sha256": "83ab628c1b3f345e904c39c879bc5157d536dec90fa2e97c8c2a1a6354edf0b6",
+      "size_bytes": 12280121
+     },
+     {
+      "id": "src-a9985ac057422e64",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/NMDOTstatewidelongrangeplan_overview_2014_714_GABAC.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-1f36eb20d7e06e47",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-c9a788fdd19a3223",
+      "status": "validated",
+      "title": "New Mexico 2040 Statewide Long-Range Multimodal Transportation Plan Briefing",
+      "checksum_sha256": "22c85cf730911b9e8a25d333ef07dabe79e1fa1367be0d600729ae57b795932e",
+      "size_bytes": 1041523
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/RailYardsBlacksmithShopFeasibilityStudy.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-1b854e9d043388bc",
+      "status": "validated",
+      "title": "Rail Yards Blacksmith Shop Feasibility Study",
+      "checksum_sha256": "b67757dc533373ea66b157ab3953613283216eee660c60ea583e8a1ddba1066b",
+      "size_bytes": 3919189
+     },
+     {
+      "id": "src-cca44df451aad719",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/RailYardsEnvironmentalLeadBasedPaintReport.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-d81eb996ad97027c",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-fafd89492c71ec90",
+      "status": "validated",
+      "title": "Rail Yards Blacksmith Shop Environmental Sampling Report",
+      "checksum_sha256": "7cabe7d5aff810b68b03ace91db93656d135b0690c1b8865e5fdc4897741c6ed",
+      "size_bytes": 2154946
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/VolcanoPlansAmendments20140714.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-ef328e9ebf57aaab",
+      "status": "validated",
+      "title": "Volcano Mesa Plans — Proposed Transportation Text Amendments",
+      "checksum_sha256": "88d7885973980484c6c182ccfed60938214fa143339a3b0d293730f064741112",
+      "size_bytes": 2927589
+     },
+     {
+      "id": "src-fe68bebf0ee43fee",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/abq-final-report_volume-1.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-aa5b24a4e9116d98",
+      "status": "validated",
+      "title": "Yale Maintenance Facility Assessment — Volume 1",
+      "checksum_sha256": "d0ecae3c2a396758b9e18bf2343ba7d5e73b690723cd38217c0911f357ea228f",
+      "size_bytes": 13798156
+     },
+     {
+      "id": "src-ce39869b0db742a6",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/abq-final-report_volume-2.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-0056485f3f753936",
+      "status": "validated",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-1ec6e26a1059cc8c",
+      "status": "validated",
+      "title": "Yale Maintenance Facility Assessment — Volume 2: Appendices",
+      "checksum_sha256": "bbfb57227af2d3c5f88828675db873674d342aeeed70d61883e6f879f804ae47",
+      "size_bytes": 25668004
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/abq-west-central-meeting-faqs-07-09-26.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-0ec0ff4ef84b635d",
+      "status": "validated",
+      "title": "West Central Complete Streets Frequently Asked Questions",
+      "checksum_sha256": "96c8850204fddcab86324678c6fe78cfadcc9a493139dae26771b592b147c0cc",
+      "size_bytes": 840958
+     },
+     {
+      "id": "src-96dea3fd008458e2",
+      "status": "validated",
+      "title": "View the West Central Complete Streets Project FAQs",
+      "checksum_sha256": null,
+      "size_bytes": 840958
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/abq-west-meeting-boards_3final-print_.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-98abe715c4ad25dc",
+      "status": "validated",
+      "title": "West Central Complete Streets Open House Boards",
+      "checksum_sha256": "501e82224cba9fc8d85100cd6fd467078773e6a45b93c56d94868fe604ef732e",
+      "size_bytes": 20789985
+     },
+     {
+      "id": "src-ee845d073ea89d81",
+      "status": "validated",
+      "title": "abq west meeting boards 3final print .pdf",
+      "checksum_sha256": null,
+      "size_bytes": 20789985
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/annual-report-fy23-signed-attachments.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-277c2b0fd42dbea7",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-a439fdefe9cbeb23",
+      "status": "validated",
+      "title": "City of Albuquerque MS4 Annual Report, FY 2023",
+      "checksum_sha256": "aaa4f523b1642105b5f5d8633234f6a306efb593b295cad5a588a33e3f21e625",
+      "size_bytes": 19797543
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/cabq-mlk-sbl-faq-sheet_spanish_final.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-8c2e8e528af877b9",
+      "status": "validated",
+      "title": "Dr. MLK Separated Bike Lane Pilot Project FAQ in Spanish",
+      "checksum_sha256": "e2b0672b9934e9383be5d891f064a5c32d3b1d9ec394fa1b15fb0ae5f7f65bf3",
+      "size_bytes": 955616
+     },
+     {
+      "id": "src-f2a251eaec621554",
+      "status": "validated",
+      "title": "Spanish",
+      "checksum_sha256": null,
+      "size_bytes": 955616
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/cip-building-design-standards-oct-2025-rev-17.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-6137f5287b788d84",
+      "status": "validated",
+      "title": "Official City document page",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-e9eb53c6a03fbaba",
+      "status": "validated",
+      "title": "City of Albuquerque CIP Building Design Standards and Guidelines, Revision 17",
+      "checksum_sha256": "5d1543b3d84eaf369c18c1df30b88071de173ffbf6756360b71a2dd9afb550d8",
+      "size_bytes": 4839146
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/DecadePlanCriteria.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-729386d247b3831d",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-74326241e19c1551",
+      "status": "validated",
+      "title": "2003 Decade Plan Project Evaluation Criteria",
+      "checksum_sha256": "451e081b46bf25a1663957190a05174efa4a294613b3534233710cfce64dc2db",
+      "size_bytes": 408846
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/bondprojectrankings.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-d03009026d67b56c",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-dc6e3fd3425cb32a",
+      "status": "validated",
+      "title": "2003 Staff Committee General Obligation Bond Project Rankings",
+      "checksum_sha256": "a46abe9a584f95e88f99f161b672140b4ede503f3bc3b9643268a94056f990a2",
+      "size_bytes": 111765
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2004-bond-documents/20032004StrProjs.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-14896b1831c45f3c",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-b196c741237acbf2",
+      "status": "validated",
+      "title": "2003-2004 Street Bond Projects",
+      "checksum_sha256": "cebf1deafdc6d8534ceb8e8d58c6f262ab939e3434a3dd8841fb3caf0e3f77d4",
+      "size_bytes": 11744
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2004-bond-documents/PlannedQuarterCentProjects.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-5ac1ca833dad5d15",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-c5569fc34458c4d2",
+      "status": "validated",
+      "title": "2004 Planned Quarter-Cent Street Projects",
+      "checksum_sha256": "7730afcc59769cc39cb4561c4d09f052ac2a206ce4f9f254c705de6100873097",
+      "size_bytes": 24873
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2004-bond-documents/PriorityProjects.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-8a6f5ff6578e960a",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-93e8d3f4cf0238e6",
+      "status": "validated",
+      "title": "2004 Priority General Obligation Bond Street Projects",
+      "checksum_sha256": "e3c8376da8b64d8bdc6074dc210b05e6709bd0023cfc4198d31f176fe88a5b56",
+      "size_bytes": 25147
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2004-bond-documents/RepavingExpenditures.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-98f3257d51aa8ae1",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-ba1ff357823017a2",
+      "status": "validated",
+      "title": "Repaving Expenditures by Council District, 1999-2003",
+      "checksum_sha256": "115a95ae662274b48b1c9ffba34df1b6588049f8537ea778b52c22371f276a38",
+      "size_bytes": 9739
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-bond-documents/criteria-resolution.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-8e8e799fe1441d72",
+      "status": "validated",
+      "title": "Capital Improvements Plan Priorities and Scoring Resolution R-2006-089",
+      "checksum_sha256": "7bf52a4be28fd288152bb837dbc84befa70031a982d009744efbdcbead7f452d",
+      "size_bytes": 1608508
+     },
+     {
+      "id": "src-cc2b0291a58dbb8c",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/ccip-roadway.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-c991a0238465f1ca",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-fecd59ba99e137d1",
+      "status": "validated",
+      "title": "Roadway Component Capital Implementation Plan, 2005-2013",
+      "checksum_sha256": "328bf60f3f85395c2b6e4e65440d7e112dd9bbaa06616568061e68e5d715ac67",
+      "size_bytes": 64736
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2007-decade-plan/consolidated-plan.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-6cf28585f1c293cd",
+      "status": "validated",
+      "title": "2003-2007 Consolidated Plan Capital Summary",
+      "checksum_sha256": "fbc3631afe595c86529d971c591f81c418f9bd2d74c9b3e32ac79936c5de0073",
+      "size_bytes": 100635
+     },
+     {
+      "id": "src-a848c1e4c7dae2ea",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/r-07-12_criteria_resolution.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-370fed4be1f1effa",
+      "status": "validated",
+      "title": "Capital Improvements Plan Priorities and Scoring Resolution R-2008-017",
+      "checksum_sha256": "17c75c9df5676a0292d824b63f38093b2142d78a0551dd3d0af23798629ebd5e",
+      "size_bytes": 1163575
+     },
+     {
+      "id": "src-a345fa05a5711c63",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/summary_2011-2020.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-30336f37f87177dc",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-721384a7c1ac6b21",
+      "status": "validated",
+      "title": "2011-2020 General Obligation Bond Summary",
+      "checksum_sha256": "4e5e1711835ca110ab706dea1465eded359d678d3f83dc7b242a85fb5c0a8832",
+      "size_bytes": 113108
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/2017-mayors-recommendation-to-city-council.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-55a0db2fbbff3622",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-882e9458215c5ce7",
+      "status": "validated",
+      "title": "2017-2026 Decade Plan and 2017 General Obligation Bond Program - Mayor's Recomme",
+      "checksum_sha256": "5fd7c9351d9c1817032d7092496330edfc414be523fb5fcd41e9c07610b555fe",
+      "size_bytes": 4165440
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/city-of-albuquerque-fy18-ms4-annual-report-nmr04a014.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-5f9bf5a35bdb196e",
+      "status": "validated",
+      "title": "City of Albuquerque MS4 Annual Report, FY 2018",
+      "checksum_sha256": "c3df3af90f718107b06d06df59d0688cd629fac0c8f4418299861ff29af2f7ae",
+      "size_bytes": 106231387
+     },
+     {
+      "id": "src-f588da98a838e5db",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/icip-2026-session.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-2735a3a027a4ebff",
+      "status": "validated",
+      "title": "icip 2026 session.pdf",
+      "checksum_sha256": "2f4d3e2f7b4ceab6427063f5e571a142e0f9deaf8cf2aee54a9380cc4cd71fb1",
+      "size_bytes": 114334
+     },
+     {
+      "id": "src-a4fc2a4a6d37bc0d",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/ntmp_study_group_draft_9-7-10.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-6a57fb74c2cff21f",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-9f3d4a5aba4ab98c",
+      "status": "validated",
+      "title": "Neighborhood Traffic Management Program Study Group Draft",
+      "checksum_sha256": "e242c11edc6fb333d8c33ea58363db30ebfcf52462ffcabb6fddfef61afaf464",
+      "size_bytes": 11386572
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/publicflyeralamedadrain2015.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-5a5a0161646963d9",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-af07fc621a7d39ff",
+      "status": "validated",
+      "title": "Alameda Drain Trail Master Plan and Design Notice",
+      "checksum_sha256": "10857b59772c485dca6d6352371e811dff22ab34e0035285734218769640df63",
+      "size_bytes": 761311
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/water-quality-monitoring-status-july-2014-to-december-2014.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-17564e79a9d160c5",
+      "status": "validated",
+      "title": "Albuquerque MS4 Water-Quality Monitoring Status, July 2014-January 2015",
+      "checksum_sha256": "76a19c5227218437d5aaaf74f07dc9b1b44e6d72c0c2db0feb8258273c107f4c",
+      "size_bytes": 48745
+     },
+     {
+      "id": "src-7c5fbfff9e451a25",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/water-quality-monitoring-status-june-september-2015.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-102daadbcc2b9f58",
+      "status": "validated",
+      "title": "Albuquerque MS4 Water-Quality Monitoring Status, June-September 2015",
+      "checksum_sha256": "7877d01ea277ee569873bc6f2d642c04a5e5202d32eb6b7ce44f79f247c36f88",
+      "size_bytes": 49071
+     },
+     {
+      "id": "src-c2d1d0a2a56641ee",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/municipaldevelopment/documents/water-year-2015-report-032516.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-6de51c89b658020b",
+      "status": "implemented",
+      "title": "Official City Record",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-c312994aa69f9bd5",
+      "status": "validated",
+      "title": "City of Albuquerque MS4 Monitoring Data for Water Year 2015",
+      "checksum_sha256": "ad4f2bc38767568af763761075fb8525d8e1ba27b521668e0ab772e12b0418a9",
+      "size_bytes": 127553
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/86th-st.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-750a6401a2da53e9",
+      "status": "validated",
+      "title": "86th Street Speed Study",
+      "checksum_sha256": "ee89c62d45194aa87655430e7ed964f60746f1672422e8599019fb9851427b9e",
+      "size_bytes": 4431945
+     },
+     {
+      "id": "src-b5873a97c0dd599c",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/8th-st-coal-to-atlantic-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-83ea63e996d14a7a",
+      "status": "validated",
+      "title": "8th Street Speed Study — Coal Avenue to Atlantic Avenue",
+      "checksum_sha256": "d260c9e08e25d598760252ae3ddc4863c4cb1e1da5cf929bcddf253c9919767f",
+      "size_bytes": 2791087
+     },
+     {
+      "id": "src-c784d8e6ac291b01",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/8th-st.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-1f0ebd4814602446",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-32fdee2d2bef98ee",
+      "status": "validated",
+      "title": "8th Street Speed Study",
+      "checksum_sha256": "6d9a09d3096a0f40f006d7560b58d9e094c1b189f2beeef26a1eaf0706bb0dd4",
+      "size_bytes": 3600344
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/9th-st-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-1bdb3f385be1faaf",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-5f1d0094a0da7f1c",
+      "status": "validated",
+      "title": "9th Street Speed Study",
+      "checksum_sha256": "92fd28f288f8cb7b5847f5f816bd3fc00fe21d06573a3a3d6ee6becf16d5a0a1",
+      "size_bytes": 3334284
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/alvarado-dr-speed-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-bd5db3f64d2912cd",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-e39307b93c5db8b6",
+      "status": "validated",
+      "title": "Alvarado Drive Speed Study",
+      "checksum_sha256": "c46c5719ee80673865caf4c060fcdc07281c90fe015fd06f3f6ab4cbe65cef42",
+      "size_bytes": 12112797
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/amherst-dr-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-0c6fc2cc4030096d",
+      "status": "validated",
+      "title": "Amherst Drive Speed Study",
+      "checksum_sha256": "0a666eee3f46f75c0d84ad133aab5fb4e0a6c8b00f41eca661359ef07bdf9763",
+      "size_bytes": 3447819
+     },
+     {
+      "id": "src-8b0fbdf8b0e41ec5",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/andrew-dr-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-245118056da39584",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-5247e676f00790a1",
+      "status": "validated",
+      "title": "Andrew Drive Speed Study",
+      "checksum_sha256": "6c2194d406a87bf5c291104f62daab9560d0325cb9de6cd92f456ace4bc0683a",
+      "size_bytes": 1007337
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/arizona-st-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-28e73e3d95146a38",
+      "status": "validated",
+      "title": "Arizona Street Speed Study",
+      "checksum_sha256": "c49f465f288711337218b21a1f95284931f76bb54d80b9cf1b596a0cd66b342f",
+      "size_bytes": 1901965
+     },
+     {
+      "id": "src-81e69d2414a01559",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/arroyo-de-vista-speed-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-4950470a3d45969e",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-f42d3a89ef99b31e",
+      "status": "validated",
+      "title": "Arroyo de Vista Speed Study",
+      "checksum_sha256": "98956d2095fe679b181ebfd5dfc6fa86a0bf7f5cc9bf56c3679b1d9f8d43df2b",
+      "size_bytes": 9624572
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/avital-dr-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-72c53279ea8e45a1",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-f89c6222ec8cf941",
+      "status": "validated",
+      "title": "Avital Drive Speed Study",
+      "checksum_sha256": "073f14147c676c269aa23962a491261ae6a874a39f6dc178461d3031f154a357",
+      "size_bytes": 4412270
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/aztec-rd-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-0241f72df40f8a47",
+      "status": "validated",
+      "title": "Aztec Road Speed Study",
+      "checksum_sha256": "0a27363536e319fde9f1d606bed35c36766cf229415de3529fd38de9d50c4b49",
+      "size_bytes": 4034149
+     },
+     {
+      "id": "src-2c4d9f18839ab919",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/azuelo-ave-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-591c95d2660e4b30",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-8176ce3888683c9a",
+      "status": "validated",
+      "title": "Azuelo Avenue Speed Study",
+      "checksum_sha256": "0d58fd3dcdc732623bde58a176a52f97b541f34dc7fd06ab8a25fe922d193b23",
+      "size_bytes": 3670428
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/baldwin-ave-west.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-0b307e7d0946492d",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-7cb657e190db5117",
+      "status": "validated",
+      "title": "Baldwin Avenue West Speed Study",
+      "checksum_sha256": "ef11f87cb0372c99182441c5a3b49d7b2cfbd2b440cc349891987931fb52ea1b",
+      "size_bytes": 824555
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/baldwin-avenue-east-speed-study-final-report-11232016.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-8222909270eddf7e",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-bb4c7549e1fc74f6",
+      "status": "validated",
+      "title": "Baldwin Avenue East Speed Study",
+      "checksum_sha256": "d661790bc7c198ea482d482da3e397bf256c076df8acc6b5b9421cc9759580bd",
+      "size_bytes": 4771927
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/bandelier-dr-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-1a225b1370d7b805",
+      "status": "validated",
+      "title": "Bandelier Drive Speed Study",
+      "checksum_sha256": "2aa9699269ea3de203f882a7288b0ee933660e9d8cbfde464e1621879a396e7f",
+      "size_bytes": 5079291
+     },
+     {
+      "id": "src-c11c3eb4314d4138",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/barnhart-st-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-8ac47fa5da24fad9",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-c0c3788492fdd727",
+      "status": "validated",
+      "title": "Barnhart Street Speed Study",
+      "checksum_sha256": "2fce1b29f07fcfd81cd646e15207b9edb3c33cf134f808f443a292e986f1f936",
+      "size_bytes": 3348884
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/bellehaven-ave.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-1e839217f398a255",
+      "status": "validated",
+      "title": "Bellehaven Avenue Speed Study",
+      "checksum_sha256": "beebb895b528758b2946f361116d54627922cbdc9b9272c96d4e717e4a633184",
+      "size_bytes": 1367237
+     },
+     {
+      "id": "src-5dad9c544694650e",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/blue-ribbon-rd-speed-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-14482da7f15359cb",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-699f75d877610795",
+      "status": "validated",
+      "title": "Blue Ribbon Road Speed Study",
+      "checksum_sha256": "d01ab860ef12d7552ddb069917ceb8b405407be6225f6c699a4de3a59f0e5ac3",
+      "size_bytes": 9940326
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/brandywine-rd.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-1c4d6fe4276ea1e8",
+      "status": "validated",
+      "title": "Brandywine Road Speed Study",
+      "checksum_sha256": "6a54ebe3f8f1495c47ebc9efd3e87037a071af4e3d5aea0cd80dac41f62b328b",
+      "size_bytes": 2377452
+     },
+     {
+      "id": "src-900d8e560afab44c",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/bursera-dr-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-4461f12df4d347ae",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-ad34fdef8b9e50b6",
+      "status": "validated",
+      "title": "Bursera Drive Speed Study",
+      "checksum_sha256": "0d7e07413485e980533a38a87c8d45b1f36daaca75918f5a617e4430bdb0c483",
+      "size_bytes": 4051472
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/calle-de-tierra-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-9183e9550f0c8280",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-cc0cd09fe02ab65c",
+      "status": "validated",
+      "title": "Calle de Tierra and Della Longa Lane Speed Study",
+      "checksum_sha256": "7d5cf531474761fa8e3e645a8555f16dd8658517b78b20818dc924bc18279c0e",
+      "size_bytes": 8672379
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/carolina-st-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-b57ce5c61876a255",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-df6c2c0c74519f2e",
+      "status": "validated",
+      "title": "Carolina Street Speed Study",
+      "checksum_sha256": "74afb56c155bc4b1259277f2d4fb0a697386bbce12487b5480d659fe6dc45e7e",
+      "size_bytes": 4258241
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/casa-grande-ave-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-0b07feb02d238677",
+      "status": "validated",
+      "title": "Casa Grande Avenue Speed Study",
+      "checksum_sha256": "06a671e97e43acea15866ee05108332b96e50d76de5fb71f8fc572e8b1d93447",
+      "size_bytes": 2875910
+     },
+     {
+      "id": "src-b896fc3390160269",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/coa625409-all-way-warrant-study-final-sealed-20171222.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-491f8fc794de5781",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-d17338f308015c89",
+      "status": "validated",
+      "title": "Eastern Avenue and Cardenas Drive Traffic Study",
+      "checksum_sha256": "4e845b5a07488b1d20cef341d15d80e990209738dbf14d963bddc286438bc190",
+      "size_bytes": 3659944
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/conejo-rd.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-6dea2e5a077fcc88",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-83ec976c2c12c38c",
+      "status": "validated",
+      "title": "Conejo Road Speed Study",
+      "checksum_sha256": "28fa876498b148026e7905a913b76410b426bf5de13b4b2b326edc3dfcd444db",
+      "size_bytes": 2998081
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/conestoga-speed-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-3dbdde9b77df2027",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-da7a537cb1071c9c",
+      "status": "validated",
+      "title": "Conestoga Street Area Speed Study",
+      "checksum_sha256": "702a69bbeeb158404f57db82dfa5f9c93addab57a50ea3afc2b3cc0323eb7d50",
+      "size_bytes": 14002738
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/del-monte-trail-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-a8d38587a1d1bf7c",
+      "status": "validated",
+      "title": "Del Monte Trail Speed Study",
+      "checksum_sha256": "0d5f821b8ada183ff8131b5efd23e435e4c1991f1303647dd611f50900c682b3",
+      "size_bytes": 5095616
+     },
+     {
+      "id": "src-e28ba6e82d79c27b",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/dolores-dr-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-65a1cc45883f1d28",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-d5cf0b47387bea30",
+      "status": "validated",
+      "title": "Dolores Drive Speed Study",
+      "checksum_sha256": "a79e3d688f79d2885432bc72436389c6584964e2843fb6061eb5223456d4ffb2",
+      "size_bytes": 4389450
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/dover-st-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-892e86b93ed5c826",
+      "status": "validated",
+      "title": "Dover Street Speed Study",
+      "checksum_sha256": "2bfe94e59240be1a11e150c9057a90205a8eead2fafabf38e7d78a0abc7aa1f0",
+      "size_bytes": 3686208
+     },
+     {
+      "id": "src-ee76f0e1ad535572",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/eastern-ave-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-423a9b109e650283",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-a3f16af6f3ddc648",
+      "status": "validated",
+      "title": "Eastern Avenue Speed Study",
+      "checksum_sha256": "5f50a481c318938c8a6d2f66f05cd5bc7f80bd5924c5a6c27f254266f1af5411",
+      "size_bytes": 1261882
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/eastridge-dr-speed-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-a4f7d9e40afc92b1",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-a9c8f8d60c79e6df",
+      "status": "validated",
+      "title": "Eastridge Drive Speed Study",
+      "checksum_sha256": "e140efcb38021797bba0ec955b58879b788563bcd421d00258f738a1e8e653b2",
+      "size_bytes": 10814560
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/el-patron-rd-speed-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-2f3af5b3c9959870",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-82348e1af6d22d94",
+      "status": "validated",
+      "title": "El Patron Road Speed Study",
+      "checksum_sha256": "5f82f1590ab1db1bffb190c4046b0681a174994e634824fb5a7f1a057203e5c8",
+      "size_bytes": 10208493
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/espanola-st.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-286f138cacc5ea41",
+      "status": "validated",
+      "title": "Española Street Speed Study",
+      "checksum_sha256": "63ecdf6af40b7d71cc3dfa3eb489456cd8aacbe24d8cf2e0fcdd2729513cc8e9",
+      "size_bytes": 4055028
+     },
+     {
+      "id": "src-b50653c762f6a2a0",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/flora-vista-ave-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-728f643345394dc4",
+      "status": "validated",
+      "title": "Flora Vista Avenue Cut-Through Traffic Study",
+      "checksum_sha256": "62546700ee88fd3eed67fd55d6c177297c33298c8992e335797b4ae60fcfd92d",
+      "size_bytes": 3502279
+     },
+     {
+      "id": "src-f1ac2ea0572d9842",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/gallant-fox-rd-speed-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-4884fa8392cf9784",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-ef06d7358f6a8c4d",
+      "status": "validated",
+      "title": "Gallant Fox Road Speed Study",
+      "checksum_sha256": "c68c0d840ba49e72e837a0a6180dfd7f9e13be6c12ee987bc0c788a9295e7ff9",
+      "size_bytes": 10815122
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/general-stilwell-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-318000b2b03f9e81",
+      "status": "validated",
+      "title": "General Stilwell Street Speed Study",
+      "checksum_sha256": "d4cdffe7123ad38d0b359726e4846f3157cea21c1267231f6d83d7922090f0b7",
+      "size_bytes": 3479586
+     },
+     {
+      "id": "src-b466e5ffd66927da",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/gonzales-road-speed-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-25ac8b2b16ee6df1",
+      "status": "validated",
+      "title": "Gonzales Road Speed Study",
+      "checksum_sha256": "4c8d8b5c76e835da630014b85a56ef10eb09291edc780f5d7eb35325da089eb7",
+      "size_bytes": 3578967
+     },
+     {
+      "id": "src-eb7be53c3b654a27",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/grande-dr.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-2a52d0ec67939e94",
+      "status": "validated",
+      "title": "Grande Drive Speed Study",
+      "checksum_sha256": "b49a7cfea574d9af75a246c4342d0b3078ff892901c3aec368dea125b0a3141a",
+      "size_bytes": 3013095
+     },
+     {
+      "id": "src-dda8bcb931f88367",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/gun-club-speed-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-0a79d2ba39c98f19",
+      "status": "validated",
+      "title": "Gun Club Road Speed Study",
+      "checksum_sha256": "1d047c64ad9bf356ab1f2b0c06c6022b9a8fac7c76a98642c3d6b95d79fab1b7",
+      "size_bytes": 5315030
+     },
+     {
+      "id": "src-48d87510e4b96ec0",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/gwin-rd-speed-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-1c5b6b5453302e21",
+      "status": "validated",
+      "title": "Gwin Road Speed Study",
+      "checksum_sha256": "0d27f0b8ac86bb969cd20883c9161211a7e4765acba05c89e6292f3a5b9105b3",
+      "size_bytes": 1428973
+     },
+     {
+      "id": "src-9a84f348e0b9a6d3",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/harper-dr-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-784b9822a6d67446",
+      "status": "validated",
+      "title": "Harper Drive Speed Study",
+      "checksum_sha256": "6dee6bcaec5f854932e49919d529e20386e061299d163fba1ad3ece36bb75602",
+      "size_bytes": 17776337
+     },
+     {
+      "id": "src-ff3043a0240152b9",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/hidalgo-cir.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-252b72094fe76273",
+      "status": "validated",
+      "title": "Hidalgo Circle Speed Study",
+      "checksum_sha256": "54a34f66f1703602893030e9c6664624f2a3dfec45fa3de1d396b58969d23b25",
+      "size_bytes": 3536979
+     },
+     {
+      "id": "src-7e013c397a0c8334",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/hilton-ave-speed-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-2d249a691f695cc7",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-390588245fb0f7e4",
+      "status": "validated",
+      "title": "Hilton Avenue Speed Study",
+      "checksum_sha256": "96e670c95b1d0cffb98517fadfaf81309c2c1b1bf44f587da072809b2d2d356e",
+      "size_bytes": 9910465
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/innovation-pky-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-8193b1f94e117608",
+      "status": "validated",
+      "title": "Innovation Parkway Traffic and Safety Study",
+      "checksum_sha256": "6d2d68037172b397b12154db8e8e1dbfe07f9929f75c1263b9b9965880f6273c",
+      "size_bytes": 23503632
+     },
+     {
+      "id": "src-b54695e2bf027a41",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/jane-st-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-d4671b0db660def8",
+      "status": "validated",
+      "title": "Jane Street Speed Study",
+      "checksum_sha256": "d5c2a420bc5f41a30e5c24da9561019ec71b94b769daa694c7d7f3d06acf1865",
+      "size_bytes": 4150935
+     },
+     {
+      "id": "src-f9b94d7b29003282",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/la-corrida-dr.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-3735fb7cc37d3670",
+      "status": "implemented",
+      "title": "Read a PDF of the final report.",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-dc0c2ea9ec93cd61",
+      "status": "validated",
+      "title": "La Corrida Road Speed Study",
+      "checksum_sha256": "26b2ad80273ace222f7a724ccf93e0cdec389c2986e0730ea93af1c51de620f0",
+      "size_bytes": 706908
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/lafayette-dr.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-afe60adb77bb29af",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-b413d9e47205ef64",
+      "status": "validated",
+      "title": "Lafayette Drive Speed Study",
+      "checksum_sha256": "5baa3440fea28be7bfde3a54acd17896b97ce932460c961daaa9d63d35901c3e",
+      "size_bytes": 988476
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/landau-st.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-94350df088b55e5e",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-c9cc239ec8ae5fb2",
+      "status": "validated",
+      "title": "Landau Street Speed Study",
+      "checksum_sha256": "c71c3807eea0cc51f03e34ad89f21a37d01303e9964cead0ff6678e320cce5e3",
+      "size_bytes": 3671346
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/los-lomas-road.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-169af942c3378430",
+      "status": "validated",
+      "title": "Los Lomas Road Speed Study",
+      "checksum_sha256": "7292f4b6bc70d4b41ecdb0ff89a2e6572d326b455f9de104140225e20cc74492",
+      "size_bytes": 4883419
+     },
+     {
+      "id": "src-57445acdd92732bc",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/los-tretos-st.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-099508666243ab63",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-a9c25db3eb18ad4a",
+      "status": "validated",
+      "title": "Los Tretos Street Speed Study",
+      "checksum_sha256": "b97ae0d8b992d3c1feb4646e7ecf9614401609c37aaba7ab90e8953841ef686a",
+      "size_bytes": 4427107
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/lucretia-st-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-088df7054d7e4646",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-fca2fee9ce97b641",
+      "status": "validated",
+      "title": "Lucretia Street Speed Study",
+      "checksum_sha256": "af447d9756af25f3defb67756820a7fdedbb460768be118d56215b0dfc126ec1",
+      "size_bytes": 3133589
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/luna-blvd-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-1225691928e072bd",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-66a63e9f64c19936",
+      "status": "validated",
+      "title": "Luna Boulevard Speed Study",
+      "checksum_sha256": "145a0f37c626401fcba2f43ff639a72b31172c4e426e6c5db77613fcc82f187f",
+      "size_bytes": 4179112
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/marble-ave-speed-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-0122b8ffdbaf7be0",
+      "status": "validated",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-7f57859df60e6c62",
+      "status": "validated",
+      "title": "Marble Avenue Speed Study",
+      "checksum_sha256": "31bbcd1846a719b1991e06a06725a3d1315b3815c25773f796839ec81dbb5820",
+      "size_bytes": 9978264
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/mary-ellen-st-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-65412fe254f27920",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-90ee10797ecae9b0",
+      "status": "validated",
+      "title": "Mary Ellen Street Speed Study",
+      "checksum_sha256": "92c280dc72afafd668b687322378e87eb18f3f9253fca88d0cb6117695b4935e",
+      "size_bytes": 3827258
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/milne-rd-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-024e9015bd3ca346",
+      "status": "validated",
+      "title": "Milne Road Speed Study",
+      "checksum_sha256": "864d3739bf29f4292d865f45afc9e03705d336722acf5567674973d7c71f2ada",
+      "size_bytes": 3026646
+     },
+     {
+      "id": "src-358a49ef01a4694a",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/morris-st-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-6b268503153a85d5",
+      "status": "validated",
+      "title": "Morris Street Speed Study",
+      "checksum_sha256": "e8974c84a0d4ee196b672e7891e75b6c2c563d6b39b13a05527071114b527491",
+      "size_bytes": 4495592
+     },
+     {
+      "id": "src-701082c5d072da17",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/ortiz-dr-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-6e2a1ca140aa3101",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-7756694083c48fbe",
+      "status": "validated",
+      "title": "Ortiz Drive Speed Study",
+      "checksum_sha256": "667fede22b9636f45197dd4206d3052e45dbae99c256dd9a88b180b2f7319c83",
+      "size_bytes": 3243709
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/parsifal-st-speed-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-6b8114bf65152029",
+      "status": "validated",
+      "title": "Parsifal Street Speed Study",
+      "checksum_sha256": "ca9d5561eabf4670a64b01865539c2a91d0b7693832f22fb687171402848f422",
+      "size_bytes": 9981635
+     },
+     {
+      "id": "src-88c9676869c07b16",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/paso-fino-pl-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-e724d365fa3c6251",
+      "status": "validated",
+      "title": "Paso Fino Place Speed Study",
+      "checksum_sha256": "e9b5aab672603cf740bfd250ca28d3e01d9e97c9dd9086f3585956ce11eb3c1c",
+      "size_bytes": 3416954
+     },
+     {
+      "id": "src-f29c688b2383b0c9",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/quincy-st-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-a858ed6f98b007c7",
+      "status": "validated",
+      "title": "Quincy Street Speed Study",
+      "checksum_sha256": "62194ee930b3a3f8f3e1c4816757e61b1b76dcf1100d4e8f36a64d20179c7ce5",
+      "size_bytes": 2655534
+     },
+     {
+      "id": "src-ca77f919684fff83",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/san-pablo-st-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-a373c766ee89a57b",
+      "status": "validated",
+      "title": "San Pablo Street Speed Study",
+      "checksum_sha256": "667ed036d9e994bdc2204646e8d1dd08b86b4bed9b07326ef49e5fc3358f5012",
+      "size_bytes": 3215623
+     },
+     {
+      "id": "src-df9108bc3d15b7fa",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/san-pasquale-ave-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-30f0e7e8e0dbb55f",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-3ffb5f69a35a216a",
+      "status": "validated",
+      "title": "San Pasquale Avenue Speed Study",
+      "checksum_sha256": "b6469d912b4752a209fb0fca9477d817c02aa5e26d41ec3c4d612ae92325e6ed",
+      "size_bytes": 3168779
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/san-rafael-ave-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-2f796692299d1ab9",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-8f938afaa196864e",
+      "status": "validated",
+      "title": "San Rafael Avenue Speed Study",
+      "checksum_sha256": "ff6716a3e094f829b6e4f8b9e6eff2c38d810bfff426de1e558030a70c5dca28",
+      "size_bytes": 3425382
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/santa-clara-ave-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-00f3d3a4cc811fca",
+      "status": "validated",
+      "title": "Santa Clara Avenue Speed Study",
+      "checksum_sha256": "c3cda53d56271a1b81dedccf98e5beffd5a30b87ae072b51cf25f76c3d9a36b8",
+      "size_bytes": 1431467
+     },
+     {
+      "id": "src-20b9ae8ffa26954f",
+      "status": "validated",
+      "title": "Santa Clara Avenue Speed Study",
+      "checksum_sha256": "c3cda53d56271a1b81dedccf98e5beffd5a30b87ae072b51cf25f76c3d9a36b8",
+      "size_bytes": 1431467
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/sicily-rd.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-8d76bc3e666b3ea1",
+      "status": "validated",
+      "title": "Sicily Road Speed Study",
+      "checksum_sha256": "0b87f82be41bd8e9c006ba06872aa2104d7edc2bcb5ebb093a860e929407aafb",
+      "size_bytes": 3345340
+     },
+     {
+      "id": "src-c40262510491c81d",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/spanish-sun-ave-speed-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-125eb8fe745b5bcd",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-b863acfbb1cdeac7",
+      "status": "validated",
+      "title": "Spanish Sun Avenue Speed Study",
+      "checksum_sha256": "c5b95f5444bdad8b9e4c6492d778b7a93bbfe4980fdf615bd89cc44cf1a24215",
+      "size_bytes": 10339317
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/speed-hump-radar-sign-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-d08d3db0111ffdd0",
+      "status": "validated",
+      "title": "Existing Speed Hump and Radar Sign Study",
+      "checksum_sha256": "bf0e5e581908e492f2b03b5c5e7946e7625110b60532c1db5bf83d53c6c9e0f1",
+      "size_bytes": 8890553
+     },
+     {
+      "id": "src-dc1d994bc444a9d4",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/tony-sanchez-drive-speed-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-87b0d1133120f4e1",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-8dcb29a979cb5bee",
+      "status": "validated",
+      "title": "Tony Sanchez Drive Speed Study",
+      "checksum_sha256": "256f730b5547e7b8a9a320cb6156a7cc545be1c782dbba47be181a6603c55c89",
+      "size_bytes": 4821170
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/trail-ridge-rd-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-088b38dd23f32b60",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-fe416bd8dfa0b1d3",
+      "status": "validated",
+      "title": "Trail Ridge Road Speed Study",
+      "checksum_sha256": "240c06dd05228f74102ce8ac77698487d16d4b777784cd9229344b0772119ac5",
+      "size_bytes": 6945965
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/trumbull-ave-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-646887130a1cc7f8",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-eaa0507db69a01f2",
+      "status": "validated",
+      "title": "Trumbull Avenue Speed Study",
+      "checksum_sha256": "e29ed3113fce5f68aa9fa42027bdd66ce0f4d50b8efadb95483b8afe608db4b7",
+      "size_bytes": 3778895
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/ventana-west-paseo-del-norte-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-a30f9dff9a55b65b",
+      "status": "validated",
+      "title": "Ventana West Parkway and Paseo del Norte Study",
+      "checksum_sha256": "cf049948affcf6445bce55eb6be654bbe9fa909aa09bb9ee2330196c08542dbf",
+      "size_bytes": 3661274
+     },
+     {
+      "id": "src-d9602c44ffe4d7ab",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/ventura-st.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-1c9b4e21de9e0c92",
+      "status": "validated",
+      "title": "Ventura Street Speed Study",
+      "checksum_sha256": "a4d07a1d3fb5e1256fa82c300be1ada15faae28e9f3a49a21a1efcc6ec07ad13",
+      "size_bytes": 3947634
+     },
+     {
+      "id": "src-8a332a0fdccf89bf",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/woodland-ave-phoenix-ave.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-55f75a33d31f91cc",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-eefaabfa61697495",
+      "status": "validated",
+      "title": "Woodland and Phoenix Avenues Speed Study",
+      "checksum_sha256": "275828dea5c638cfa37093d52886e0c56834a72184eb2f7f5bab8dc6ab6c8994",
+      "size_bytes": 4793224
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/yucca-dr-speed-study.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-4bbbbcbb52bfb133",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-f01f6f758696cf79",
+      "status": "validated",
+      "title": "Yucca Drive Speed Study",
+      "checksum_sha256": "5f29a5904d8fe394d10ffe013604e306f115fac37243e2ec3366f5dd6d732957",
+      "size_bytes": 4247367
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%20Appendices%2011-10-11.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-50fdeb4703e57b9f",
+      "status": "validated",
+      "title": "2011 Albuquerque Bikeways and Trails Master Plan Update - Appendices",
+      "checksum_sha256": "bd6469328ed5fb8a878e6789cd94ed9eb09306f336672e5aa18bf610159d9cb8",
+      "size_bytes": 1757042
+     },
+     {
+      "id": "src-731ef9cb0deff4d7",
+      "status": "implemented",
+      "title": "2011 Albuquerque Bikeways and Trails Master Plan Update - Appendices",
+      "checksum_sha256": "bd6469328ed5fb8a878e6789cd94ed9eb09306f336672e5aa18bf610159d9cb8",
+      "size_bytes": 1757042
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/documents/DRAFT%20Bikeways%20-%20Trails%20Master%20Plan%20Design%20Guidelines%2011-10.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-5cd111deac4749c3",
+      "status": "validated",
+      "title": "2011 Albuquerque Bikeways and Trails Master Plan Update - Design Guidelines",
+      "checksum_sha256": "e6a6b0d13a07dc8daa3990d5c08c1a35da0963366a10ac2bd09644f02d7d3c4d",
+      "size_bytes": 31152896
+     },
+     {
+      "id": "src-89ba195983f6d5e8",
+      "status": "implemented",
+      "title": "2011 Albuquerque Bikeways and Trails Master Plan Update - Design Guidelines",
+      "checksum_sha256": "e6a6b0d13a07dc8daa3990d5c08c1a35da0963366a10ac2bd09644f02d7d3c4d",
+      "size_bytes": 31152896
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/documents/city-of-albuquerque-trails-americans-with-disabilities-act-may-17-2016-compressed.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-329cb18fd33134d0",
+      "status": "validated",
+      "title": "Trails Are for Everyone: Americans with Disabilities Act",
+      "checksum_sha256": "548c887356b8ef8b2a8dc3c251050d2d1fe0e93d6697eae128b41fc0883efc3d",
+      "size_bytes": 1509809
+     },
+     {
+      "id": "src-98a7971f46cfda6d",
+      "status": "implemented",
+      "title": "Official City source",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/parksandrecreation/recreation/bike/documents/technical-appendices-of-the-albuquerque-comprehensive-on-street-bicycle-plan.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-4dd0d7313497ab4e",
+      "status": "validated",
+      "title": "Technical Appendices of the Albuquerque Comprehensive On-Street Bicycle Plan",
+      "checksum_sha256": "7c2d8e369cd73039b6f2ffd188550ddb332abac393d0c4d406185dac5236f368",
+      "size_bytes": 15789262
+     },
+     {
+      "id": "src-bd12fc6e9a74e9f9",
+      "status": "implemented",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
+    "record_count": 4,
+    "records": [
+     {
+      "id": "src-0281f8d53810aa8c",
+      "status": "duplicate",
+      "title": "2024 Bikeway and Trail Facilities Plan",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-0b1dfe6e620d7fe0",
+      "status": "implemented",
+      "title": "2024 Bikeway and Trail Facilities Plan — Combined Authoritative Edition",
+      "checksum_sha256": "6c9db59edb778cc2115405d79540c692c775a3dc677424699cc38a0686fec1e1",
+      "size_bytes": 68233939
+     },
+     {
+      "id": "src-545128f068ffb941",
+      "status": "validated",
+      "title": "2024 Bikeway and Trail Facilities Plan - Combined Authoritative Edition",
+      "checksum_sha256": "6c9db59edb778cc2115405d79540c692c775a3dc677424699cc38a0686fec1e1",
+      "size_bytes": 68233939
+     },
+     {
+      "id": "src-907f4de342216f97",
+      "status": "requires human review",
+      "title": "2024 Bikeway and Trail Facilities Plan",
+      "checksum_sha256": "873a5ead78ba2881bf7fc7fb61445da8c8f68207635c2045cd4a10daa1bd7407",
+      "size_bytes": 19715991
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/transit/documents/abq_paratransit_outbrief-110111.pptx",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-0ab89b3f6a6914ec",
+      "status": "validated",
+      "title": "Official City PowerPoint",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-fbef44f233c29736",
+      "status": "validated",
+      "title": "ABQ RIDE Sun Van Compliance Review Briefing",
+      "checksum_sha256": "4ddacdf334bb8744aaf8944fb4f59684a9e625c85141e942d059b1469d274026",
+      "size_bytes": 446462
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/transit/documents/sun_van_performance_metrics_draft_05_10_11.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-11079b878f62f804",
+      "status": "validated",
+      "title": "Official City PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-d3121fe1438282dc",
+      "status": "validated",
+      "title": "Draft Sun Van Performance Metrics",
+      "checksum_sha256": "9fbe8df15214dfe670d5b90468b18c3956e5d87f1e770faffedc43ebe9e5a464",
+      "size_bytes": 145132
+     }
+    ]
+   },
+   {
+    "url": "https://www.i25improved.com/_files/ugd/4242bb_d03c59ceb23c41e2b95ab20b45687681.pdf",
+    "record_count": 2,
+    "records": [
+     {
+      "id": "src-1e715cd1badffb21",
+      "status": "validated",
+      "title": "I-25 Improved Planned Improvements Map (retrieved August 2026)",
+      "checksum_sha256": "bdae9edb81faf0d919350c84a56029d6aba3bbe250baa851f75dcba6a0a85cc8",
+      "size_bytes": 43681293
+     },
+     {
+      "id": "src-894b9b501df894ba",
+      "status": "validated",
+      "title": "Official Project PDF",
+      "checksum_sha256": null,
+      "size_bytes": null
+     }
+    ]
+   }
+  ]
+ },
+ "checksum_conflicts": {
+  "headline": "2 document URLs carry records with different recorded checksums.",
+  "why_it_matters": "These are the only groups where the records are not merely duplicated but disagree about what the file is. One URL served different bytes at different capture times, which is a currency question rather than a hygiene one.",
+  "groups": [
+   {
+    "url": "https://www.cabq.gov/council/documents/south-yale-blvd/Study%20Area.pdf",
+    "record_count": 3,
+    "records": [
+     {
+      "id": "src-454bc0a462647a7f",
+      "status": "duplicate",
+      "title": "South Yale Complete Street Plan Study Area",
+      "checksum_sha256": "9dc48e5037e7c33f8183022dcf0895c2eb088af075816e088e00a8e0edfb67f5",
+      "size_bytes": 167088
+     },
+     {
+      "id": "src-baff718ee06b25a3",
+      "status": "validated",
+      "title": "South Yale Study Area and Context Zones",
+      "checksum_sha256": "44b65194a5cf251ce249e96cf074a86332e5dc7240fb6967ad6920f7425a1afb",
+      "size_bytes": 526773
+     },
+     {
+      "id": "src-ce27aad8f857234a",
+      "status": "duplicate",
+      "title": "Study Area",
+      "checksum_sha256": "44b65194a5cf251ce249e96cf074a86332e5dc7240fb6967ad6920f7425a1afb",
+      "size_bytes": 526773
+     }
+    ]
+   },
+   {
+    "url": "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
+    "record_count": 4,
+    "records": [
+     {
+      "id": "src-0281f8d53810aa8c",
+      "status": "duplicate",
+      "title": "2024 Bikeway and Trail Facilities Plan",
+      "checksum_sha256": null,
+      "size_bytes": null
+     },
+     {
+      "id": "src-0b1dfe6e620d7fe0",
+      "status": "implemented",
+      "title": "2024 Bikeway and Trail Facilities Plan — Combined Authoritative Edition",
+      "checksum_sha256": "6c9db59edb778cc2115405d79540c692c775a3dc677424699cc38a0686fec1e1",
+      "size_bytes": 68233939
+     },
+     {
+      "id": "src-545128f068ffb941",
+      "status": "validated",
+      "title": "2024 Bikeway and Trail Facilities Plan - Combined Authoritative Edition",
+      "checksum_sha256": "6c9db59edb778cc2115405d79540c692c775a3dc677424699cc38a0686fec1e1",
+      "size_bytes": 68233939
+     },
+     {
+      "id": "src-907f4de342216f97",
+      "status": "requires human review",
+      "title": "2024 Bikeway and Trail Facilities Plan",
+      "checksum_sha256": "873a5ead78ba2881bf7fc7fb61445da8c8f68207635c2045cd4a10daa1bd7407",
+      "size_bytes": 19715991
+     }
+    ]
+   }
+  ],
+  "reading": [
+   "The 2024 Bikeway and Trail Facilities Plan has two records at 68,233,939 bytes sharing one checksum and a third at 19,715,991 bytes with a different one. The small one is already requires human review. The City replaced the file at that URL; the archive captured both. Establish which is current before any site use.",
+   "The South Yale Boulevard Study Area sheet has one record at 167,088 bytes and two at 526,773 bytes sharing a checksum. The odd one out is already a duplicate, so this group may already be correctly resolved and needs only confirmation."
+  ]
+ },
+ "method_note_for_future_lanes": {
+  "rule": "Run the URL group-by before fetching anything in a new cluster. It is the cheapest of the four duplicate-detection methods this run has used and it catches a class the others cannot.",
+  "the_four_methods_and_what_each_catches": [
+   {
+    "method": "byte hashing",
+    "catches": "identical republished files",
+    "misses": "anything re-encoded, re-scanned, or extracted"
+   },
+   {
+    "method": "normalized-text and token-coverage comparison",
+    "catches": "re-typeset versions and component-in-container relationships",
+    "misses": "image-only files, and it over-calls on sparse slide text"
+   },
+   {
+    "method": "fetching the R2 object and locating content by printed page",
+    "catches": "image-only extracts of a document the archive already holds",
+    "misses": "nothing in that class, but it is the most expensive"
+   },
+   {
+    "method": "URL group-by",
+    "catches": "two inventory records for one file",
+    "misses": "the same file published at two different URLs"
+   }
+  ],
+  "complementarity": "The last two are opposites and together they close the gap: URL group-by finds one file with two records, and content measurement finds one document at two URLs. Neither alone is sufficient and this run has now hit both failure modes in real clusters."
+ },
+ "integration_flags": [
+  {
+   "severity": "reported-figure",
+   "affects": [
+    "project-state/checkpoint.json counts_by_status"
+   ],
+   "finding": "The validated count of 1321 includes 16 records that are second records for a document another validated record already covers.",
+   "recommended_action": "State the archive size on a one-record-per-document basis, or reconcile the groups first. Either is fine; reporting the raw count without the caveat is not."
+  },
+  {
+   "severity": "cheap-win",
+   "affects": [
+    "79 groups listed in actionable_now.groups"
+   ],
+   "finding": "Each carries a pending record whose disposition is already settled by a terminal twin at the same URL.",
+   "recommended_action": "Apply the recommended_rule. This clears pending records at a fraction of the cost of a normal triage and needs no research lane."
+  },
+  {
+   "severity": "effort-saving",
+   "affects": [
+    "13 groups listed in pending_pairs_still_needing_triage.groups"
+   ],
+   "finding": "Two pending records for one document, with nothing to inherit from. These still need triaging on the merits.",
+   "recommended_action": "Triage the document once and collapse the pair, rather than letting two lanes fetch and measure the same file."
+  },
+  {
+   "severity": "correctness",
+   "affects": [
+    "135 groups listed in needs_codex_adjudication.groups"
+   ],
+   "finding": "More than one validated or implemented record per document URL.",
+   "recommended_action": "Decide what a validated-and-implemented pair means first, then reconcile. Claude modified none of these."
+  },
+  {
+   "severity": "currency",
+   "affects": [
+    "https://www.cabq.gov/council/documents/south-yale-blvd/Study%20Area.pdf",
+    "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf"
+   ],
+   "finding": "Two URLs carry records with genuinely different checksums: the same URL served different files at different times.",
+   "recommended_action": "Establish which capture is current before any site use of either."
+  },
+  {
+   "severity": "method",
+   "affects": [
+    "future research lanes"
+   ],
+   "finding": "A live-service URL with 229 project records against it inflated the first pass of this audit roughly fourfold.",
+   "recommended_action": "Exclude live-service URLs before reporting any URL-collision figure. The exclusion list is in this artifact."
+  }
+ ],
+ "counts": {
+  "candidates_examined": 7074,
+  "document_url_groups_reported": 344,
+  "groups_with_a_pending_record_and_a_terminal_twin": 79,
+  "groups_with_two_pending_records_and_no_terminal": 13,
+  "multi_validated_groups": 135,
+  "checksum_conflict_groups": 2
+ },
+ "safeguards": [
+  "no master-inventory.json write",
+  "no checkpoint.json write",
+  "no r2-inventory.json write",
+  "no site content change",
+  "no R2 upload",
+  "no commit, merge, or deploy",
+  "no terminal record modified",
+  "no inventory record created",
+  "no network access: this audit reads local state only"
+ ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-11",
+  "scope": "42 City of Albuquerque candidates escalated solely for HTTP 404 during the completed verification-supervisor campaign",
+  "method": "Reviewed the recorded URL, the current official City site, and authoritative City search results. This is inventory-only source recovery; it does not alter completed verification results or publish content.",
+  "summary": {
+    "current_official_hub_or_successor": 28,
+    "no_current_standalone_replacement": 14
+  },
+  "decisions": [
+    {
+      "outcome": "current official hub or successor located",
+      "replacement_url": "https://documents.cabq.gov/planning/DesignReviewServices/DRC2018/City%20Engineers%20Unit%20Price%20Update%202023%20FINAL.pdf",
+      "ids": ["src-eb603aee4ee75c80"],
+      "note": "The obsolete DevelopmentReviewServices PDF is replaced by the City-hosted 2023 unit-price update; retain the original URL in provenance history."
+    },
+    {
+      "outcome": "current official hub or successor located",
+      "replacement_url": "https://www.cabq.gov/planning/download-forms-applications",
+      "ids": ["src-604a1a0a869074c5", "src-9bf85f625461a3e7", "src-eb2f81701f018eda", "src-e61acca0cb8e6c9f"],
+      "note": "The City now maintains Planning application forms through its current forms portal; no byte-identical replacement for each obsolete IDO file was asserted."
+    },
+    {
+      "outcome": "current official hub or successor located",
+      "replacement_url": "https://www.cabq.gov/council/council-history",
+      "ids": ["src-55c375edefc1bcce"],
+      "note": "The current Council history page documents the City Charter's role and is the authoritative successor to the obsolete Charter navigation link."
+    },
+    {
+      "outcome": "current official hub or successor located",
+      "replacement_url": "https://www.cabq.gov/council",
+      "ids": ["src-b67e617c31ad0bc3", "src-c996c6673ba5ed73", "src-846463ef6c58ca64", "src-c820c69c31d2fa91", "src-68c2d572bbc36214", "src-48a50c9d60ec65d2"],
+      "note": "These are obsolete Council department-detail/resolver links. The current Council hub is authoritative, but it is not treated as a replacement for a distinct historic record."
+    },
+    {
+      "outcome": "current official hub or successor located",
+      "replacement_url": "https://www.cabq.gov/council/agendas-minutes-legislation",
+      "ids": ["src-dcd9efab9f61c678", "src-a9d35011d01f9bcc", "src-beb7c181e83a4581", "src-c72de192669a59ff", "src-76d394e1753791e7", "src-986b4f8a29648df8", "src-679dee4385066639"],
+      "note": "The broken View.ashx targets are agenda/minute delivery links. The current official Council agenda-and-minutes hub is preserved as the authoritative access point; the entries are not discrete document candidates."
+    },
+    {
+      "outcome": "current official hub or successor located",
+      "replacement_url": "https://www.cabq.gov/311/abq311/contacting-311",
+      "ids": ["src-ce7ea3865db93be6", "src-59ba0bf48d1710cc", "src-5c7272d3cc3de147", "src-b6ecaded9294788f", "src-5064e2813a4c2b61", "src-6ed7c8af8b3a1bec"],
+      "note": "The obsolete resolver links point to City service referrals. The current official 311 contact/service portal covers contact, streetlight, animal, needle, and related requests."
+    },
+    {
+      "outcome": "current official hub or successor located",
+      "replacement_url": "https://www.cabq.gov/neighborhood-traffic-management-program",
+      "ids": ["src-537a4500e296e2c4", "src-da58675bd758153b"],
+      "note": "The current NTMP program page provides the adopted 2020 policy manual and application materials; it supersedes the obsolete A-Z resolver and 2015 low-resolution PDF delivery link."
+    },
+    {
+      "outcome": "current official hub or successor located",
+      "replacement_url": "https://www.cabq.gov/sustainability/transportation",
+      "ids": ["src-d09430e0f68adbcb"],
+      "note": "The corrupted-title record is a navigation fragment from the official transportation page, not a discrete source."
+    },
+    {
+      "outcome": "no current standalone replacement located",
+      "ids": ["src-5bc3500e537abf3e", "src-830374b28a00a31c", "src-ae5ffe79b6a7547a", "src-6cd889013d0025d4", "src-e39b856b35c2c848"],
+      "note": "These are Cloudflare email-obfuscation, generic help, or sentence-fragment crawler artifacts. They do not identify a distinct City document or service record."
+    },
+    {
+      "outcome": "no current standalone replacement located",
+      "ids": ["src-7ac022ea1f37b97e", "src-917d29bdf349bf66", "src-95c375e15989e054", "src-486c5e1183552db5", "src-6b75926a66956c51", "src-cb8bfb44b3879143"],
+      "note": "These are expired meeting, event, task-force, or conference pages. Official search did not identify a current page that replaces the same historical event."
+    },
+    {
+      "outcome": "no current standalone replacement located",
+      "ids": ["src-a62e77002e1ef47c", "src-4f4312bab0e635fb", "src-d168379c28f17cc2"],
+      "note": "These records are legacy South Broadway Cultural Center/A-Z navigation artifacts. No distinct current City source matching the individual crawler labels was found."
+    }
+  ],
+  "follow_up": "Keep the completed verification results intact. Treat the 28 successor hubs as fresh source leads and terminalize the 14 non-document or expired-event artifacts through this separately reviewed inventory decision."
+}

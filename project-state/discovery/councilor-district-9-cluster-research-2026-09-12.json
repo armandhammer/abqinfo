@@ -1,0 +1,444 @@
+{
+ "batch_id": "councilor-district-9-cluster-research-2026-09-12",
+ "lane": "Claude research lane: www.cabq.gov/council/documents/councilor-district-9-documents cluster",
+ "generated_at": "2026-09-12T14:13:28.043004+00:00",
+ "date_note": "This artifact is dated 2026-09-12. The sixteen cluster artifacts and the inventory URL-collision audit that precede it are dated 2026-09-11 and were produced in one continuous run; cross-references here name them by filename rather than by \"the artifact of the same date\", which those artifacts use among themselves and which remains correct there.",
+ "cluster": "The District 9 councillor's document collection in the Albuquerque City Council library, covering the terms of Councillor Don Harris.",
+ "scope": "All 20 pending-review candidates in that directory. The directory holds 21 records; the twenty-first is already excluded and it is what corrects an earlier artifact of this run.",
+ "brief": "Separate substantive district records from constituent notices, running the URL group-by first and rendering image-only records.",
+ "brief_finding": "Four records carry substance and eight are the councillor's own project write-ups. The two things worth reporting beyond that are both about checking rather than classifying: the directory's apparent headline find, a 128-page open space resource management plan, is already validated and archived and was caught before being recommended; and this directory's one terminal record shows that a decision recorded in councilor-district-5-cluster-research-2026-09-11.json was wrong.",
+ "method": "Ran the URL group-by across the directory first, per inventory-url-collision-audit-2026-09-11.json; no collisions. Fetched all 20 candidates and recorded exact byte length and SHA-256 for each. Read the already-excluded record's recorded reasoning before classifying anything. Rendered the five files with no usable text layer, which is how both enacted and both plan records were identified. Fetched two R2 objects read-only to test candidates against what the archive already holds. Compared all checksums against the 1,612 checksummed inventory records.",
+ "classification_only": true,
+ "shared_state_written": [],
+ "corrects_an_earlier_artifact": {
+  "artifact": "project-state/discovery/councilor-district-5-cluster-research-2026-09-11.json",
+  "what_it_said": "It held three records at requires human review under the standing enactment blockers: src-338b0d72594a0aad and src-a9d18b1ea8963cad, the clean and redline copies of Councillor Lewis's floor substitute to R-10-58 for the Fiscal Year 2011 operating budget, and src-a4e93912f58bcb5d, its graduated wage cut scale exhibit. The stated question was to locate the enacted instrument.",
+  "why_that_was_wrong": "The question was answerable from the inventory and this lane did not check. The adopted outcome is already held: src-03b66a5d8f836d44, \"City of Albuquerque Approved Budget, Fiscal Year 2011\", is validated, R2-archived and published on content/city-data/budget-spending.md. A proposed floor substitute for a budget that was adopted and is held is superseded, not awaiting an enactment number.",
+  "how_this_directory_shows_it": "District 9 holds the competing floor substitute to the same bill, by Councillors Harris and Sanchez, and it is already terminal: src-0a2535af77a1ecdc is excluded with the reason \"Superseded proposed floor substitute for the FY2011 budget; the adopted FY2011 operating budget is already preserved and linked on ABQInfo.\" Two councillors offered rival substitutes for one budget; one set was resolved correctly by an earlier pass and the other was left open by this run.",
+  "recommended_revision": "Resolve all three District 5 records to superseded with canonical src-03b66a5d8f836d44, matching the treatment this artifact gives the District 9 redline and exhibit. That closes three of the five requires-human-review rows that artifact raised.",
+  "claude_did_not_modify": "Those records remain as that artifact left them. This is a recommendation to the integration lane.",
+  "lesson": "Before writing an enactment-blocker row, search the inventory for the adopted outcome, not just for the enactment number. A budget, a plan or a map that was adopted may already be archived under a completely different title on a completely different page."
+ },
+ "already_archived_check": {
+  "rule_applied": "nob-hill-highland-cluster-research-2026-09-11.json established that a candidate must be tested against R2 objects the archive already holds before it is recommended, because an inventory title can understate what an archived object contains.",
+  "candidate": "src-2ea5c8b1ed06eea9, the Tijeras Arroyo Biological Zone Open Space Resource Management Plan, February 2014, 128 pages, 5,988,865 bytes.",
+  "test": "Fetched the R2 object for src-9696b9222ba27231 read-only and compared normalized text and page counts.",
+  "result": "Identical: ratio 1.0000, full token coverage both ways, 128 pages each. Different bytes only, 21,463 fewer in the archived copy.",
+  "why_it_was_not_obvious": "The archived record was captured from www.cabq.gov/parksandrecreation/documents/ and this copy sits on a councillor's page under a filename beginning R82, so neither the directory nor the filename connects them. Hashing does not connect them either.",
+  "outcome": "Recommended duplicate rather than approved, keeping a 6 MB re-upload out of the queue.",
+  "what_survived_the_check": "The EPC record src-ed3a4d379473def8 is a different document and is recommended for addition: the archive holds the plan but not the record of how it was adopted."
+ },
+ "duplicate_and_supersession_checks": {
+  "internal_byte_collisions": 0,
+  "cross_inventory_byte_collisions": 0,
+  "url_collisions_in_this_directory": 0,
+  "checksums_compared_against": 1612,
+  "relationships_found_by_hash": 0,
+  "relationships_found_by_normalized_text": 3,
+  "relationships_found_by_recorded_status": 2,
+  "note": "Five relationships and hashing finds none. Three are text comparisons: two final-versus-earlier resolution pairs within the directory and one cross-directory match against an R2 object. The other two were established from a terminal record's recorded reasoning rather than from any measurement, which is a reminder that the inventory's own prose carries findings no comparison will reproduce."
+ },
+ "integration_flags": [
+  {
+   "severity": "corrects-earlier-artifact",
+   "affects": [
+    "src-338b0d72594a0aad",
+    "src-a9d18b1ea8963cad",
+    "src-a4e93912f58bcb5d"
+   ],
+   "finding": "Three District 5 records held at requires human review under an enactment blocker are in fact superseded by an adopted budget the archive already holds and publishes.",
+   "recommended_action": "Resolve all three to superseded with canonical src-03b66a5d8f836d44. Claude did not modify them."
+  },
+  {
+   "severity": "avoid-duplicate-archival",
+   "affects": [
+    "src-2ea5c8b1ed06eea9"
+   ],
+   "finding": "A 128-page, 5,988,865-byte plan in this directory is text-identical to an R2 object already published on the parks page.",
+   "recommended_action": "Record as duplicate and do not upload. Second cluster in this run where the saving is against an object already in R2."
+  },
+  {
+   "severity": "tractable-enactment",
+   "affects": [
+    "src-80dbed6afbf096c3",
+    "src-e90039aa580fda19"
+   ],
+   "finding": "Two Don Harris resolutions with blank enactment numbers. For R-14-82 the adoption is independently evidenced: the EPC approval record is in this batch and the plan it adopts is already published as City policy.",
+   "recommended_action": "Resolve the two together. R-14-82 is the more tractable and the more consequential. Note that R-14-31 in this same directory does carry its enactment number, so the Council page posts enacted versions inconsistently rather than never."
+  },
+  {
+   "severity": "discovery-lead",
+   "affects": [
+    "src-7bf7341bebf83fe6"
+   ],
+   "finding": "The enacted R-2014-012 amends Resolution R-13-189, Enactment R-2013-054, of June 17 2013, which the archive does not hold.",
+   "recommended_action": "Add the predecessor to the discovery queue. An amending resolution is hard to read without the one it amends."
+  },
+  {
+   "severity": "editorial",
+   "affects": [
+    "src-534350482454b96b",
+    "src-20dfa986309e3216",
+    "src-c74b39a83a00a244",
+    "src-6d830b446092995c",
+    "src-f6eeb70f0d02621d",
+    "src-160b35307aab600b",
+    "src-1e915db242db66a5",
+    "src-b5a0cbe9aec8027c"
+   ],
+   "finding": "Eight councillor project summaries are recommended excluded, but several describe projects whose substantive records are held or recommended: the Tijeras Arroyo plan, Four Hills Village Park, Mile High Little League and Rancho de Carnue.",
+   "recommended_action": "The summaries are not the record, but they are a usable index of which District 9 projects have records worth finding. Nothing needs archiving for that."
+  }
+ ],
+ "counts": {
+  "reviewed": 20,
+  "approved_for_addition": 4,
+  "duplicate": 1,
+  "superseded": 4,
+  "requires_human_review": 2,
+  "excluded": 9
+ },
+ "link_check": {
+  "checked": 20,
+  "http_200": 20,
+  "failed": 0,
+  "archive_fetches": "Two R2 objects at files.abqinfo.com were fetched read-only for comparison, both HTTP 200.",
+  "method": "Full HTTP GET with a browser user agent, 2026-09-12.",
+  "containers_verified": "19 genuine PDFs and one HTML collection page by leading bytes. Five PDFs have no usable text layer and were rendered."
+ },
+ "approved_for_addition": [
+  {
+   "id": "src-ed3a4d379473def8",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents/R82EPCRecord.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 5787947,
+   "checksum_sha256": "8df3e853280186aea5b87ea295d50bfd32947de93a0fce6e93334b874f2ffe63",
+   "title": "Environmental Planning Commission Record Recommending Adoption of a Rank II Facility Plan for the Tijeras Arroyo Bio-Zone Preserve (Project 1009983, 14EPC-40013)",
+   "description": "The Environmental Planning Commission forwards its recommendation of approval to the City Council for adopting a Rank II facility plan over roughly 684 acres of the Tijeras Arroyo Bio-Zone Preserve, with the full staff record behind it.",
+   "description_word_count": 37,
+   "date": "2014-06-06",
+   "pages": 88,
+   "proposed_canonical_page": "content/public-works/parks-recreation.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "Its background turns on the East Gateway Sector Development Plan and the Major Public Open Space Facility Plan, both area-plan records."
+    }
+   ],
+   "evidence": "Image-only PDF with almost no text layer; page 1 was rendered and read. It is an interoffice memorandum from Mayor Richard J. Berry to Council President Ken Sanchez dated June 6 2014, forwarding an EPC recommendation of APPROVAL for a preserve running about 3.7 miles from the Carnuel Interstate 40 interchange west to the Kirtland Air Force Base boundary. Staff planner Lorena Patten-Quintana. The background recites the 1986 Facility Plan for Arroyos, the 1999 Major Public Open Space Facility Plan policy A.2.c calling for this very plan, Resolution R-07-278 of 2007 mandating a Bio-Zone Preserve, and the 2010 East Gateway Sector Development Plan.",
+   "why_retained": "The adoption record for a plan the archive already holds. content/public-works/parks-recreation.md publishes the Tijeras Arroyo Biological Zone Open Space Resource Management Plan under a Tijeras Arroyo Bio-Zone heading, but nothing showing how it was adopted or on what analysis. This is that, and it is the only copy in the inventory.",
+   "relationship": "Companion to the archived plan src-9696b9222ba27231, not a copy of it. See already_archived_check."
+  },
+  {
+   "id": "src-7bf7341bebf83fe6",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents/R31Enacted.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 75286,
+   "checksum_sha256": "46ac1980a3c48f0b49b75bfb26d95a54605512cac49424efb5dc8f8512b479c3",
+   "title": "Enacted Resolution R-2014-012: Amending Resolution R-13-189 on Albuquerque Adoption Appreciation Day and Extending Biopark and Explora Passes to Adoptive and Foster Families (Council Bill R-14-31)",
+   "description": "The enacted City resolution widens an earlier one so that annual Zoo, Biopark and Explora passes go to families of all children adopted or placed in foster care in Bernalillo County, removing the sixty-day claim window and the CYFD-only limit.",
+   "description_word_count": 40,
+   "date": "2014",
+   "pages": 2,
+   "proposed_canonical_page": "content/city-data/city-progress-surveys.md",
+   "cross_listings": [],
+   "evidence": "Image-only PDF with no text layer; page 1 was rendered and read. Council Bill No. R-14-31 with the handwritten Enactment No. R-2014-012, Twenty-First Council, sponsored by Don Harris and Ken Sanchez. It amends Section 3 of Resolution R-13-189, Enactment No. R-2013-054, approved June 17 2013.",
+   "why_retained": "Enacted law, which is rare in this tree: most Council files posted here are bills as considered with the enactment block left blank, including the two held at requires human review in this same directory. Unusually for this tree the filename told the truth: R31Enacted.pdf. It is also the only record in this directory that changes what a resident is entitled to.",
+   "note": "It amends a resolution the archive does not hold, R-13-189 / R-2013-054. That predecessor is a discovery lead."
+  },
+  {
+   "id": "src-5cdf0511f8cc1c98",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents/FourHillsVillageParkPlan.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 1223986,
+   "checksum_sha256": "eb69629baf5fb1fb4ff208e9eb8cf5545e180975f9f2e6b6e0590a92f7bf00e6",
+   "title": "Four Hills Village Park Design Plan, July 25, 2013",
+   "description": "The City park design plan for Four Hills Village Park keys the proposed layout, marking play areas, a half basketball court, walking paths, a bridge, exercise stations, shade structures, fencing, and pedestrian and vehicular entries.",
+   "description_word_count": 35,
+   "date": "2013-07-25",
+   "pages": 2,
+   "proposed_canonical_page": "content/public-works/parks-recreation.md",
+   "cross_listings": [],
+   "evidence": "Image-only PDF with no text layer; rendered and read. The sheet is titled FOUR HILLS VILLAGE PARK and dated \"Design 07.25.13\", with about twenty keyed callouts and a noted golf course well site excluded from the park.",
+   "why_retained": "A dated design record for a named City park, which is the class of record the parks page already carries under Current Parks and Open Space Projects. It is the only Four Hills Village Park record in the inventory.",
+   "caution": "It is a design plan, not an as-built. Do not describe it as constructed."
+  },
+  {
+   "id": "src-1d8383220acdfcbd",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents/MHLLMP814.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 416674,
+   "checksum_sha256": "7f01635f81ebc930cf7d8e9300a6794fe200472bc227396625c61a54c4c2d2a7",
+   "title": "Mile High Little League Schematic Master Plan, June 2014",
+   "description": "The City Parks and Recreation schematic master plan for the Mile High Little League site off Juan Tabo Boulevard keys sixteen proposed works, including reoriented fields, relocated batting cages, shade structures over bleachers, parking, and a drainage swale.",
+   "description_word_count": 38,
+   "date": "2014-06",
+   "pages": 1,
+   "proposed_canonical_page": "content/public-works/parks-recreation.md",
+   "cross_listings": [],
+   "evidence": "Image-only PDF whose only extractable text is two stray characters; rendered and read. The title block reads CITY OF ALBUQUERQUE, STRATEGIC PLANNING AND DESIGN, PARKS AND RECREATION DEPARTMENT, MILE HIGH LITTLE LEAGUE, SCHEMATIC MASTER PLAN - JUNE, 2014, prepared by Morrow Reardon Wilkinson Miller, Ltd., Landscape Architects, at 1 inch to 30 feet.",
+   "why_retained": "A keyed master plan for a named City recreation site. The same landscape architecture firm prepared the Highland Park renovation drawing recommended in councilor-district-2-cluster-research-2026-09-11.json, so the two are part of one Parks and Recreation design programme.",
+   "caution": "Schematic, and unsigned: the City Project No. block reads XXXXXX and the Zone Map block X-XX, so no project number can be cited and the design review and city engineer approval blocks are empty. Describe it as a schematic master plan and nothing firmer."
+  }
+ ],
+ "duplicate": [
+  {
+   "id": "src-2ea5c8b1ed06eea9",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents/R82ResourceMgmtPlanforTijerasArroyo.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 5988865,
+   "checksum_sha256": "1f66ab354c524b9a51e54bc58fa3d9cb28a64e59f260fb57cbcc5513a4a6d3e9",
+   "title_for_reference": "Tijeras Arroyo Biological Zone Open Space Resource Management Plan, February 2014 (Council copy)",
+   "pages": 128,
+   "canonical_id": "src-9696b9222ba27231",
+   "canonical_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-tijeras-arroyo-bio-zone-resource-management-plan-2014.pdf",
+   "canonical_state": "validated, R2-archived, and already published on content/public-works/parks-recreation.md",
+   "basis": "The same 128-page plan the archive already holds. The City publishes it twice: the archived copy came from www.cabq.gov/parksandrecreation/documents/, this one from the District 9 councilor's page. Normalized text is identical at ratio 1.0000 with full token coverage in both directions and the same 128 pages; the files differ by 21,463 bytes of encoding, 5,988,865 here against 5,967,402 archived.",
+   "hash_found_it": false,
+   "note": "This was the apparent headline find of the directory and it is not a find. It was caught by checking the R2 object before recommending, which is the rule nob-hill-highland-cluster-research-2026-09-11.json records. Recognising it keeps a 6 MB duplicate out of the upload queue.",
+   "cross_directory": true
+  }
+ ],
+ "superseded": [
+  {
+   "id": "src-f1cf917bfeaf11c7",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents/R82.pdf/view",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 39106,
+   "checksum_sha256": "3183cfb6e8bcc09e47922594e0a11bc5ee7bc0d9298fe1f6ef975d4365ac07ee",
+   "title_for_reference": "Council Bill R-14-82: Resolution for approximately 684 acres including the Tijeras Arroyo Bio-Zone (earlier version)",
+   "pages": 6,
+   "canonical_id": "src-80dbed6afbf096c3",
+   "canonical_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents/R82final.pdf/view",
+   "canonical_state": "pending review",
+   "basis": "An earlier layout of the same resolution, superseded by the version the City itself names final.",
+   "measurement": "Normalized-text similarity 0.9907 with token coverage 1.0000 of this file inside the final. The only substantive difference found by diff is pagination and a source-file footer: the successor's last page carries the path x:\\city council\\share\\cl-staff\\_legislative staff\\legislation\\21 council\\r-82final.doc, which is what establishes which of the two is final rather than the filename alone.",
+   "hash_found_it": false
+  },
+  {
+   "id": "src-bbda1951b4676549",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents/R113.pdf/view",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 15089,
+   "checksum_sha256": "7b014507f470a53f80a9937ba88580922b65c41d261f9b069b067f99c943cf78",
+   "title_for_reference": "Council Bill R-14-113: Resolution recognizing the significance of the historic Rancho de Carnue site adjacent to the Singing Arrow Community Center (earlier version)",
+   "pages": 2,
+   "canonical_id": "src-e90039aa580fda19",
+   "canonical_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents/R113final.pdf/view",
+   "canonical_state": "pending review",
+   "basis": "An earlier layout of the same resolution, superseded by the version the City names final.",
+   "measurement": "Normalized-text similarity 0.9828 with token coverage 1.0000 of this file inside the final.",
+   "hash_found_it": false
+  },
+  {
+   "id": "src-a5d1865eee112514",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents/harris_sanchez_floor_sub_redline.pdf/view",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 514479,
+   "checksum_sha256": "c31da06248ffbb04170757d6b93cded10db1fe6b0ac9267040f2c4aac63318db",
+   "title_for_reference": "R-10-58 Floor Substitute: Proposed FY2011 Operating Budget, Harris and Sanchez, redline copy",
+   "pages": 21,
+   "canonical_id": "src-03b66a5d8f836d44",
+   "canonical_url": "https://files.abqinfo.com/city-data/budget-spending/cabq-approved-budget-fy2011.pdf",
+   "canonical_state": "validated",
+   "basis": "A proposed floor substitute for the Fiscal Year 2011 operating budget, superseded by the budget actually adopted. The adopted budget is already validated, R2-archived and published on content/city-data/budget-spending.md as \"City of Albuquerque Approved Budget, Fiscal Year 2011\".",
+   "measurement": "Not a text measurement but a status one: this directory's own terminal record src-0a2535af77a1ecdc, the clean copy of this same floor substitute, is excluded with the reason \"Superseded proposed floor substitute for the FY2011 budget; the adopted FY2011 operating budget is already preserved and linked on ABQInfo.\"",
+   "hash_found_it": false,
+   "pair": "src-20c88c17ca7fa831 is its supporting exhibit and takes the same disposition."
+  },
+  {
+   "id": "src-20c88c17ca7fa831",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents/harris_sanchez_additional_info.pdf/view",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 88667,
+   "checksum_sha256": "8e732a1b332d0c0ef526dd374684aa142e33deacaf6ba48b087472504ace0e11",
+   "title_for_reference": "Additional information supporting the Harris and Sanchez R-10-58 floor substitute",
+   "pages": 5,
+   "canonical_id": "src-03b66a5d8f836d44",
+   "canonical_url": "https://files.abqinfo.com/city-data/budget-spending/cabq-approved-budget-fy2011.pdf",
+   "canonical_state": "validated",
+   "basis": "The supporting exhibit to the floor substitute above, superseded with it by the adopted FY2011 budget.",
+   "measurement": "Same ground as its parent. An exhibit to a superseded proposal has no independent standing.",
+   "hash_found_it": false,
+   "parent": "src-a5d1865eee112514"
+  }
+ ],
+ "requires_human_review": [
+  {
+   "id": "src-80dbed6afbf096c3",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents/R82final.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 95996,
+   "checksum_sha256": "5a60daaa85b06edfc817e01e8bfedabea8935cf2f33a970402300a1f136703b0",
+   "draft_title": "Council Bill R-14-82: Resolution for Approximately 684 Acres Including the Tijeras Arroyo Bio-Zone (final version)",
+   "pages": 6,
+   "question_for_human": "Locate the enacted resolution for R-14-82. Unlike most such cases in this run, the adoption is independently evidenced and only the enactment number is missing.",
+   "why_not_decided_here": "Enactment number blank, under the two standing checkpoint blockers. What makes this one tractable is that the outcome is already visible in the archive: the Environmental Planning Commission record recommending approval is recommended for addition in this same batch, and the Resource Management Plan the resolution adopts is already validated, R2-archived and published. The plan exists on the site as adopted policy; the instrument that adopted it is what is missing.",
+   "evidence": "6 pages, Twenty-First Council, sponsored by Don Harris, enactment number blank. It covers approximately 684 acres, the same acreage the EPC record names."
+  },
+  {
+   "id": "src-e90039aa580fda19",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents/R113final.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 76222,
+   "checksum_sha256": "fdf3bb9b43c95e28a935fd2b97177c7adb60ba1d16007aae1bd280520a35eb8e",
+   "draft_title": "Council Bill R-14-113: Resolution Recognizing the Significance of the Historic Rancho de Carnue Site Adjacent to the Singing Arrow Community Center (final version)",
+   "pages": 2,
+   "question_for_human": "Locate the enacted resolution for R-14-113; decide with R-14-82 above.",
+   "why_not_decided_here": "Enactment number blank, same standing blockers. Both resolutions are Don Harris District 9 measures from the Twenty-First Council and both concern designating or recognising land in that district, so they should be resolved together. Note that R-14-31 in this same directory does carry its enactment number, which shows the Council page sometimes posts the enacted version and sometimes does not.",
+   "evidence": "2 pages, Twenty-First Council, sponsored by Don Harris, enactment number blank."
+  }
+ ],
+ "excluded": [
+  {
+   "id": "src-534350482454b96b",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents/EastGatewaySummary.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 897832,
+   "checksum_sha256": "176a43fa294778564adba2fc188f71e3eb35a078a9ced0114aec3cd2bc561f84",
+   "title_for_reference": "East Gateway Summary",
+   "pages": 3,
+   "exclusion_reason": "A District 9 councillor's project summary sheet. These are narrative pieces written in the councillor's voice about what he is doing for the district, not City records of a decision, a study or a standard. The sample text is characteristic: \"Councilor Harris is working to change that... Elected in 2005, Councilor Harris has...\". The substantive records behind several of them are held separately, and four are recommended for addition in this same batch. The inventory already carries terminal exclusions for councillor communications of this kind, and councilor-district-5-cluster-research-2026-09-11.json excluded five more.",
+   "category": "councillor project summary"
+  },
+  {
+   "id": "src-20dfa986309e3216",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents/FourHillsParkSummary.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 509874,
+   "checksum_sha256": "dff2c2feff91c1fa884f1feb913051f170f8982474f46e65f37c8e3e9235f0f1",
+   "title_for_reference": "Four Hills Park Summary",
+   "pages": 1,
+   "exclusion_reason": "A District 9 councillor's project summary sheet. These are narrative pieces written in the councillor's voice about what he is doing for the district, not City records of a decision, a study or a standard. The sample text is characteristic: \"Councilor Harris is working to change that... Elected in 2005, Councilor Harris has...\". The substantive records behind several of them are held separately, and four are recommended for addition in this same batch. The inventory already carries terminal exclusions for councillor communications of this kind, and councilor-district-5-cluster-research-2026-09-11.json excluded five more.",
+   "category": "councillor project summary"
+  },
+  {
+   "id": "src-c74b39a83a00a244",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents/JeanneBellamahCommunityCenter.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 342586,
+   "checksum_sha256": "d14f4e85a0253fa5da5041f05b8bca734d9bec4d5e54e5899029abf811ce427c",
+   "title_for_reference": "Jeanne Bellamah Community Center Summary",
+   "pages": 1,
+   "exclusion_reason": "A District 9 councillor's project summary sheet. These are narrative pieces written in the councillor's voice about what he is doing for the district, not City records of a decision, a study or a standard. The sample text is characteristic: \"Councilor Harris is working to change that... Elected in 2005, Councilor Harris has...\". The substantive records behind several of them are held separately, and four are recommended for addition in this same batch. The inventory already carries terminal exclusions for councillor communications of this kind, and councilor-district-5-cluster-research-2026-09-11.json excluded five more.",
+   "category": "councillor project summary"
+  },
+  {
+   "id": "src-6d830b446092995c",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents/ManzanoMesaMultigenCenterSummary.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 343220,
+   "checksum_sha256": "52d267ab67fa68f9ddba880b624b1887e28454c53a4b454a769f652e5a20add0",
+   "title_for_reference": "Manzano Mesa Multigenerational Center Summary",
+   "pages": 1,
+   "exclusion_reason": "A District 9 councillor's project summary sheet. These are narrative pieces written in the councillor's voice about what he is doing for the district, not City records of a decision, a study or a standard. The sample text is characteristic: \"Councilor Harris is working to change that... Elected in 2005, Councilor Harris has...\". The substantive records behind several of them are held separately, and four are recommended for addition in this same batch. The inventory already carries terminal exclusions for councillor communications of this kind, and councilor-district-5-cluster-research-2026-09-11.json excluded five more.",
+   "category": "councillor project summary"
+  },
+  {
+   "id": "src-f6eeb70f0d02621d",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents/MileHighLittleLeagueSummary.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 337838,
+   "checksum_sha256": "aa759416a6002c4d79628955dcfc8bb9ddc5e79d07785924cf405a4dfdd86992",
+   "title_for_reference": "Mile High Little League Summary",
+   "pages": 1,
+   "exclusion_reason": "A District 9 councillor's project summary sheet. These are narrative pieces written in the councillor's voice about what he is doing for the district, not City records of a decision, a study or a standard. The sample text is characteristic: \"Councilor Harris is working to change that... Elected in 2005, Councilor Harris has...\". The substantive records behind several of them are held separately, and four are recommended for addition in this same batch. The inventory already carries terminal exclusions for councillor communications of this kind, and councilor-district-5-cluster-research-2026-09-11.json excluded five more.",
+   "category": "councillor project summary"
+  },
+  {
+   "id": "src-160b35307aab600b",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents/RanchodeCarnueArcheologicalSiteSummary.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 797335,
+   "checksum_sha256": "5a48b4d3daeaaed2b15fc7f5bb4f1ab9d5fd690fe31741c9faf790f1ac05e5ff",
+   "title_for_reference": "Rancho de Carnue Archeological Site Summary",
+   "pages": 1,
+   "exclusion_reason": "A District 9 councillor's project summary sheet. These are narrative pieces written in the councillor's voice about what he is doing for the district, not City records of a decision, a study or a standard. The sample text is characteristic: \"Councilor Harris is working to change that... Elected in 2005, Councilor Harris has...\". The substantive records behind several of them are held separately, and four are recommended for addition in this same batch. The inventory already carries terminal exclusions for councillor communications of this kind, and councilor-district-5-cluster-research-2026-09-11.json excluded five more.",
+   "category": "councillor project summary"
+  },
+  {
+   "id": "src-1e915db242db66a5",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents/SingingArrowCommunityCenter.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 327722,
+   "checksum_sha256": "69985c49e1096ace48bbbb8e1fe4f00956057b616563843fba7c810c31eef2db",
+   "title_for_reference": "Singing Arrow Community Center Summary",
+   "pages": 1,
+   "exclusion_reason": "A District 9 councillor's project summary sheet. These are narrative pieces written in the councillor's voice about what he is doing for the district, not City records of a decision, a study or a standard. The sample text is characteristic: \"Councilor Harris is working to change that... Elected in 2005, Councilor Harris has...\". The substantive records behind several of them are held separately, and four are recommended for addition in this same batch. The inventory already carries terminal exclusions for councillor communications of this kind, and councilor-district-5-cluster-research-2026-09-11.json excluded five more.",
+   "category": "councillor project summary"
+  },
+  {
+   "id": "src-b5a0cbe9aec8027c",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents/TijerasArroyoBiozoneSummary.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 1048642,
+   "checksum_sha256": "aa5aef41c6fcac4c2df8b34cab049954611ecce12a3cba1731d05f9417b42b92",
+   "title_for_reference": "Tijeras Arroyo Biozone Summary",
+   "pages": 3,
+   "exclusion_reason": "A District 9 councillor's project summary sheet. These are narrative pieces written in the councillor's voice about what he is doing for the district, not City records of a decision, a study or a standard. The sample text is characteristic: \"Councilor Harris is working to change that... Elected in 2005, Councilor Harris has...\". The substantive records behind several of them are held separately, and four are recommended for addition in this same batch. The inventory already carries terminal exclusions for councillor communications of this kind, and councilor-district-5-cluster-research-2026-09-11.json excluded five more.",
+   "category": "councillor project summary"
+  },
+  {
+   "id": "src-e00b831cfe974916",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "HTML",
+   "size_bytes": 176402,
+   "checksum_sha256": "033dbbdb3f8173675ff399dff57aae50b6113e6036a906b38e4b29449bdf2c12",
+   "title_for_reference": "Councilor District 9 documents collection landing page",
+   "exclusion_reason": "The Plone collection landing page for this directory, not a document.",
+   "category": "collection landing page"
+  }
+ ],
+ "archival_note": "All 4 approved records are static PDFs and are inventory-only until an R2 archive object exists for each and its public download, exact size, SHA-256, and authoritative-source provenance are verified. Combined archive footprint if authorized: 7,503,893 bytes, dominated by the 5,787,947-byte EPC record. All four are scans with no usable text layer, so full-text search will not reach them without optical character recognition; that is a property of the City's originals.",
+ "integration_note": "Codex integration lane: apply recommended_status values through scripts/project/Update-Candidate.ps1 only. Every duplicate and superseded row carries a canonical_id; two of those canonicals are validated and R2-archived records outside this cluster, and two are final versions held at requires human review inside it. The 4 approved rows each carry a title, a 20-to-50-word description, a date, a proposed_canonical_page, and a caution where the document's own blocks are unsigned or its project number blank. Two rows are requires human review under the standing enactment blockers. Separately, corrects_an_earlier_artifact proposes resolving three records in another artifact of this run that are outside this lane's classification scope. Sizes and checksums are first measurements; the inventory held neither.",
+ "safeguards": [
+  "no master-inventory.json write",
+  "no checkpoint.json write",
+  "no r2-inventory.json write",
+  "no site content change",
+  "no R2 upload",
+  "no commit, merge, or deploy",
+  "no terminal record modified",
+  "the two R2 objects were fetched read-only and not modified"
+ ]
+}

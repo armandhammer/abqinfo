@@ -1,0 +1,239 @@
+"""Claude research lane. Reads the inventory and this lane's measurements and
+writes one dated decision artifact. It never modifies master-inventory.json,
+checkpoint.json, r2-inventory.json, site content, or R2.
+
+Dated 2026-09-12.
+"""
+
+import collections
+import datetime
+import json
+import os
+
+OUT = r'C:\Users\ben\Documents\ABQinfo\project-state\discovery\councilor-district-8-cluster-research-2026-09-12.json'
+INV = r'C:\Users\ben\Documents\ABQinfo\project-state\master-inventory.json'
+FETCH = (r'C:\Users\ben\AppData\Local\Temp\claude\C--Users-ben-Documents-ABQinfo'
+         r'\7da19eae-d375-451f-a516-82ba7d95c865\scratchpad\d8\fetch.log')
+
+PARKS = 'content/public-works/parks-recreation.md'
+CAPITAL = 'content/public-works/capital-projects.md'
+
+PLAN = 'src-1b34668e04121332'
+PRESS = 'src-2738f3e723d3a69a'
+
+inv = json.load(open(INV, encoding='utf-8'))
+IDX = {x['id']: x for x in inv['candidates']}
+
+M, MAGIC, RAW = {}, {}, {}
+for line in open(FETCH, encoding='utf-8'):
+    i, c, s, h, mag, raw, v = line.rstrip('\n').split('\t')
+    M[i] = {"size_bytes": int(s), "checksum_sha256": h}
+    MAGIC[i] = mag
+    RAW[i] = raw
+
+LC = ("HTTP 200 verified 2026-09-12 by full GET on both URL forms; size_bytes and checksum_sha256 measured from the "
+      "fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by "
+      "extension, per economic-forum-cluster-research-2026-09-12.json.")
+
+
+def row(i, status):
+    u = IDX[i].get('direct_file_url') or IDX[i].get('source_url')
+    r = {"id": i, "authoritative_url": u,
+         "recommended_status": status, "link_check": LC,
+         "content_kind": "PDF" if MAGIC[i] == '25504446' else "HTML",
+         "leading_bytes": MAGIC[i]}
+    if RAW[i] != u:
+        r["raw_file_url"] = RAW[i]
+    r.update(M[i])
+    return r
+
+
+approved = [{
+ **row(PLAN, "approved for addition"),
+ "title": "Academy Hills Park Improvements: Detailed Plan, Scope, Funding and Schedule",
+ "description": ("The City's keyed improvement plan for Academy Hills Park draws a 1.25-mile perimeter asphalt path "
+                 "and a 0.5-mile loop, locating benches, a picnic table, mutt mitt dispensers, new trees and "
+                 "plantings, and states the scope, the $900,000 funding and the construction schedule."),
+ "date": "2013",
+ "pages": 1,
+ "evidence": ("Image-only PDF with one byte of extractable text across a single large-format sheet, 6,742,283 bytes; "
+              "rendered and read. Titled ACADEMY HILLS PARK. The scope block reads: perimeter asphalt path; up-loop "
+              "crusher fine and asphalt path; irrigation repairs and adjustments; new site furnishings; new trees. "
+              "Funding: $900,000 CSA. Schedule: design complete this year, construction to start in early 2014, "
+              "construction complete Fall 2014. The legend keys a 1.25-mile perimeter path, a 0.5-mile loop path, "
+              "benches, picnic table, mutt mitt dispenser and trash can, new trees and new plantings, with a public "
+              "art location marked. Engineering callouts cover header walls to retain slope, subsurface perforated "
+              "pipe, trench drains, colored concrete on slope adjacent to sidewalk, accessible ramps, bollards, "
+              "concrete mower access pads, and a note that changing existing blue grass on slope to a native turf "
+              "blend will conserve water and reduce maintenance."),
+ "why_retained": ("It is the only record of this project anywhere. An inventory-wide search for Academy Hills returns "
+                  "just this sheet and the press release that accompanies it, and the parks page holds nothing for "
+                  "the park. It is also unusually complete for a single sheet: scope, cost, schedule and a dimensioned "
+                  "design on one page."),
+ "proposed_canonical_page": PARKS,
+ "cross_listings": [
+   {"page": CAPITAL, "reason": "It states a funded City capital project with an amount and a construction schedule, which is what that page collects."},
+ ],
+ "caution": ("A plan with a forecast schedule, not an as-built. It says construction would start in early 2014 and "
+             "finish in Fall 2014; nothing in this directory records what was built. The press release excluded below "
+             "adds detail to the intent, not to the outcome."),
+ "description_word_count": 0,
+}]
+
+
+def X(i, title, pages, reason, category, date=None, extra=None):
+    r = row(i, "excluded")
+    r.update({"title_for_reference": title, "pages": pages, "exclusion_reason": reason, "category": category})
+    if date:
+        r["date"] = date
+    if extra:
+        r.update(extra)
+    return r
+
+
+excluded = [
+ X(PRESS, "Press release: Academy Hills Park Update, February 14, 2014", 1,
+   ("A City Council press release on Council letterhead, marked FOR IMMEDIATE RELEASE, contact Council Vice-President "
+    "Trudy Jones. Press releases are excluded on the ground recorded in "
+    "councilor-district-4-cluster-research-2026-09-12.json: they announce rather than record."),
+   "press release", "2014-02-14",
+   extra={"content_recorded": ("It adds counts the plan sheet does not print: a 6-foot wide asphalt walking and "
+                               "jogging path around the perimeter with a shorter natural-surface path paralleling it "
+                               "at the upper end; two picnic tables with benches; eleven benches, five of them "
+                               "'Tribute Benches' sponsored by the public and the neighbourhood and to carry "
+                               "commemorative plaques; twenty-seven new trash cans; and six new mutt mitt "
+                               "dispensers."),
+          "but_see": "The approved plan sheet is the record of the project. These figures are noted here so they are not lost with the release."}),
+
+ X("src-6cf78aff0597bce8", "Agenda: Community Policing Council, Northeast Area Command, March 16, 2015", 1,
+   ("A meeting agenda. The missing-minutes policy permits preserving a verified official agenda only after a recorded "
+    "exhaustive official-source review finds no approved minutes, and this agenda defeats its own case: item two is "
+    "\"Approval of February Meeting Minutes\", so this body takes and approves minutes. The agenda is not a substitute "
+    "for them."),
+   "meeting agenda", "2015-03-16",
+   extra={"content": ("Held 5:30 to 8:30 pm at the North Domingo Baca Multigenerational Center. Business: approval of "
+                      "the agenda and the February minutes; discussion of Northeast Area CPC operating procedures; "
+                      "City and Albuquerque Police Department updates including Northeast Area crime statistics and "
+                      "issues of concern; discussion of improving communication from the Area Command to "
+                      "neighbourhoods; questions and public discussion; scheduling of April and May meetings."),
+          "discovery_lead": ("The Northeast Area Community Policing Council's approved minutes and its operating "
+                             "procedures are held nowhere in the inventory. The agenda names both.")}),
+
+ X("src-c8618010048df754", "BearWatch flyer: tips for living with bears", 2,
+   ("An advocacy flyer from Sandia Mountain BearWatch and New Mexico BearWatch, a private organisation at PO Box 591, "
+    "Tijeras. Not a City record, not a City decision, and not published by the City beyond being posted on a "
+    "councillor's page. Third-party material is excluded on the ground applied to the Transition Albuquerque flyer in "
+    "councilor-district-7-cluster-research-2026-09-12.json."),
+   "third-party advocacy flyer",
+   extra={"content": ("It argues that roughly 140 Sandia bears have been killed or relocated in three years out of an "
+                      "originally estimated population of 50 to 73, that the species' low reproduction rate cannot "
+                      "sustain that attrition, and it gives household guidance — one Arizona study is cited for the "
+                      "claim that keeping trash in a garage, shed or bear-proof can and putting it out on the morning "
+                      "of pickup cuts the chance of a bear visit from 70 percent to 2 percent.")}),
+
+ X("src-722f21f26f70eaf7", "Councilor District 8 documents collection landing page", None,
+   "The Plone collection landing page for this directory, not a document.", "collection landing page"),
+]
+
+for r in approved:
+    r["description_word_count"] = len(r["description"].split())
+
+rows = approved + excluded
+ids = [r["id"] for r in rows]
+assert len(ids) == len(set(ids))
+assert len(ids) == 5, len(ids)
+counts = collections.Counter(r["recommended_status"] for r in rows)
+approved_bytes = sum(r["size_bytes"] for r in approved)
+raw_differs = [r["id"] for r in rows if "raw_file_url" in r]
+
+artifact = {
+ "batch_id": "councilor-district-8-cluster-research-2026-09-12",
+ "lane": "Claude research lane: www.cabq.gov/council/documents/councilor-district-8-documents cluster",
+ "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+ "date_note": "Dated 2026-09-12. Artifacts before councilor-district-9-cluster-research-2026-09-12.json are dated 2026-09-11; cross-references name artifacts by filename.",
+ "cluster": "The District 8 councillor's document collection in the Albuquerque City Council library, five records covering one park project and three unrelated items.",
+ "scope": "All 5 pending-review candidates, which is every record in the directory. Nothing here is terminal.",
+ "brief": "Run the standard opening sequence, verifying every container by leading bytes per the economic-forum content-substitution finding, and testing each candidate against records recommended earlier in this batch as well as against terminal inventory state.",
+ "brief_finding": ("Containers all check out: four genuine PDFs and one genuine collection page, no substitution. One "
+                   "record is worth keeping — a single sheet that carries an entire City park project on it, with "
+                   "scope, a $900,000 figure, a construction schedule and a dimensioned keyed design. The archive "
+                   "holds nothing for Academy Hills Park."),
+ "method": ("Ran the URL group-by first; no collisions. Fetched all 5 candidates on both URL forms and measured byte "
+            "length and SHA-256 from the fetched bytes, verifying every container by leading bytes. Compared all "
+            "checksums within the cluster, against the 1,612 checksummed inventory records, and against every file "
+            "fetched earlier in this batch. Rendered the one image-only sheet and read its title block, scope block, "
+            "legend and engineering callouts rather than classifying it from its filename. Searched the inventory and "
+            "the published site for Academy Hills and for bear-related holdings."),
+ "classification_only": True,
+ "shared_state_written": [],
+ "already_archived_check": {
+  "rule_applied": "Test candidates against R2 objects, published site entries, and anything recommended earlier in the same batch.",
+  "result": "Nothing here duplicates anything, inside the inventory or inside this batch.",
+  "academy_hills": "An inventory-wide search returns only the two records in this directory. The parks page carries nothing for the park.",
+  "bear_records": ("The archive does hold bear-named records — the Bear Canyon Arroyo Resource Management Plan and "
+                   "the Arroyo del Oso and Bear Canyon trail guides — but those are place names on the Bear Canyon "
+                   "arroyo, unrelated to the BearWatch wildlife flyer. Checked so the flyer was not excluded on a "
+                   "mistaken assumption that it was covered."),
+  "cross_inventory_byte_collisions": 0,
+  "cross_batch_byte_collisions": 0,
+ },
+ "duplicate_and_supersession_checks": {
+  "internal_byte_collisions": 0,
+  "cross_inventory_byte_collisions": 0,
+  "url_collisions_in_this_directory": 0,
+  "checksums_compared_against": 1612,
+  "relationships_found": 0,
+  "note": ("No duplicates and no supersession. The plan sheet and the press release describe the same project but are "
+           "different documents in different registers, and the press release carries counts the sheet does not "
+           "print, so neither contains the other."),
+ },
+ "integration_flags": [
+  {"severity": "substantive-find",
+   "affects": [PLAN],
+   "finding": "A single large-format sheet carrying the whole Academy Hills Park improvement project: scope, $900,000 funding, construction schedule, a 1.25-mile perimeter path and 0.5-mile loop, and dimensioned engineering callouts. Nothing for this park is held anywhere.",
+   "recommended_action": "Approve and place on the parks page, cross-listed to capital projects. Label it a plan with a forecast schedule, not an as-built."},
+  {"severity": "editorial",
+   "affects": [PRESS],
+   "finding": "The excluded press release carries counts the approved sheet does not print — eleven benches including five publicly sponsored Tribute Benches with commemorative plaques, two picnic tables, twenty-seven trash cans, six mutt mitt dispensers.",
+   "recommended_action": "No archival action. The figures are recorded in the row so they survive the exclusion, and they are intent rather than outcome."},
+  {"severity": "discovery-lead",
+   "affects": ["src-6cf78aff0597bce8"],
+   "finding": "The Northeast Area Community Policing Council's approved minutes and its operating procedures are held nowhere. The excluded agenda names both, and its own second item is approval of the previous month's minutes.",
+   "recommended_action": "Queue the Community Policing Council minutes series. It is a standing public body whose record the archive does not have."},
+  {"severity": "policy-applied",
+   "affects": ["src-6cf78aff0597bce8"],
+   "finding": "The missing-minutes policy allows preserving an agenda only after a recorded exhaustive review finds no approved minutes. This agenda shows minutes exist, so the policy excludes it rather than permitting it.",
+   "recommended_action": "None. Noted because the policy is more often cited to justify keeping an agenda than to rule one out."},
+ ],
+ "counts": {
+  "reviewed": len(rows),
+  "approved_for_addition": counts["approved for addition"],
+  "excluded": counts["excluded"],
+ },
+ "link_check": {"checked": 5, "http_200": 5, "failed": 0,
+                "both_url_forms_checked": len(raw_differs),
+                "http_200_but_not_the_document": 0,
+                "method": "Full HTTP GET with a browser user agent on the raw file URL and on the inventoried /view URL, 2026-09-12.",
+                "containers_verified": "4 genuine PDFs and one HTML collection page by leading bytes. One PDF has no usable text layer and was rendered."},
+ "approved_for_addition": approved,
+ "excluded": excluded,
+ "archival_note": (f"The single approved record is a static PDF and is inventory-only until an R2 archive object "
+                   f"exists for it and its public download, exact size, SHA-256, and authoritative-source provenance "
+                   f"are verified. Archive footprint if authorized: {approved_bytes:,} bytes for one sheet, which is "
+                   f"large for a single page because it is a scanned large-format drawing. It has no usable text "
+                   f"layer, so full-text search will not reach its scope block or callouts without optical character "
+                   f"recognition; the description and evidence fields carry that content instead."),
+ "integration_note": ("Codex integration lane: apply recommended_status values through "
+                      "scripts/project/Update-Candidate.ps1 only. No row carries a canonical_id; this directory "
+                      "contains no duplicates, no supersession and no legislative material, so nothing is held for "
+                      "human review. The one approved row carries a title, a 20-to-50-word description, a date, a "
+                      "proposed_canonical_page, a cross-listing and a caution. Every row carries a leading_bytes "
+                      "field. Sizes and checksums are first measurements; the inventory held none."),
+ "safeguards": ["no master-inventory.json write", "no checkpoint.json write", "no r2-inventory.json write",
+                "no site content change", "no R2 upload", "no commit, merge, or deploy", "no terminal record modified"],
+}
+
+os.makedirs(os.path.dirname(OUT), exist_ok=True)
+with open(OUT, 'w', encoding='utf-8') as f:
+    json.dump(artifact, f, indent=1, ensure_ascii=False)
+print(json.dumps({"output": OUT, "counts": artifact["counts"]}))

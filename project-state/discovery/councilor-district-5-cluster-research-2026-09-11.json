@@ -1,0 +1,410 @@
+{
+ "batch_id": "councilor-district-5-cluster-research-2026-09-11",
+ "lane": "Claude research lane: www.cabq.gov/council/documents/councilor-district-5-documents cluster",
+ "generated_at": "2026-09-11T21:57:46.372192+00:00",
+ "cluster": "The District 5 councilor's document collection in the Albuquerque City Council library at www.cabq.gov/council/documents/councilor-district-5-documents, covering the terms of Councilor Dan Lewis.",
+ "scope": "All 20 pending-review candidates in that directory, which is the entire directory: no record in it held any other status. Completing this artifact leaves the directory with no non-terminal records.",
+ "brief": "Resolve the cross-directory DOJ findings-letter duplicate flagged by the police-oversight artifact, and separate substantive district records from constituent notices.",
+ "brief_finding": "The duplicate is confirmed and the separation holds, but the directory's real value turned out to be legislative rather than constituent. Two of its files carry an actual enactment number, which almost nothing else triaged in this tree does: Ordinance O-2014-005 on the Eclipse Aerospace economic development project, and Resolution R-2010-056 creating the Rainbow and Universe Boulevard traffic and pedestrian safety project. The second one closes a loop the council-documents artifact opened hours earlier, when a public meeting flyer was found announcing a Rainbow Boulevard study the archive did not hold.",
+ "method": "Fetched all 20 candidates without touching shared inventory state and recorded exact byte length and SHA-256 for each. Checked leading bytes: 18 PDFs and 2 Word documents. Eleven of the eighteen PDFs carry no text layer at all, so nine were rendered page by page through pdf.js in a headless browser and read, which is how both enacted instruments, the Redflex investigation request, the budget substitute and its wage-cut exhibit were identified. Extracted text with pdftotext -layout and antiword for the rest. Compared all 20 checksums against the 1,612 checksummed inventory records and against each other. Fetched nothing outside the cluster: the cross-directory duplicate was settled against measurements already taken in the police-oversight lane.",
+ "classification_only": true,
+ "shared_state_written": [],
+ "image_only_records": {
+  "count": 11,
+  "share_of_cluster": "55 per cent",
+  "note": "More than half this directory is scanned paper with no text layer, the highest proportion of any cluster triaged in this run. Every record recommended for addition here is one of them. A pipeline that triages on extracted text would have classified this directory as almost empty and left its two enacted instruments pending indefinitely.",
+  "ids": [
+   "src-338b0d72594a0aad",
+   "src-4347bb9af15c89ba",
+   "src-47bf834e27b251e6",
+   "src-652537178b2679cd",
+   "src-77ded92dfd05478c",
+   "src-7ca564066d19954f",
+   "src-a09a7081a2d10b09",
+   "src-a4e93912f58bcb5d",
+   "src-a9d18b1ea8963cad",
+   "src-bdf2981b4899255b",
+   "src-fc250f15df2ab028"
+  ]
+ },
+ "duplicate_and_supersession_checks": {
+  "internal_byte_collisions": 1,
+  "cross_inventory_byte_collisions": 0,
+  "checksums_compared_against": 1612,
+  "relationships_found_by_hash": 1,
+  "relationships_found_only_by_rendering": 1,
+  "note": "The cross-directory DOJ duplicate is invisible to every automated method available in this project. The two copies share no bytes, so hashing fails; this copy yields no extractable text at all, so normalized-text and token-coverage comparison fail too. It was settled by rendering page 1 and reading it. Any future claim that a directory holds no duplicates should state whether its image-only records were rendered."
+ },
+ "integration_flags": [
+  {
+   "severity": "closes-a-lead",
+   "affects": [
+    "src-77ded92dfd05478c",
+    "src-6db0397455652054"
+   ],
+   "finding": "The council-documents artifact of the same date excluded a public meeting flyer for a Rainbow Boulevard Traffic Calming and Pedestrian Safety Study and recorded that the study itself was nowhere in the inventory. Enacted Resolution R-2010-056 in this directory is that project's legislative origin: it creates the traffic and pedestrian safety project on Rainbow and Universe Boulevards and appropriates the Transportation Infrastructure Tax Fund 340 money for it.",
+   "recommended_action": "The study document is still missing and remains worth a targeted search. The resolution supplies the project name, the funding source and the date to search on."
+  },
+  {
+   "severity": "convention",
+   "affects": [
+    "src-a4e93912f58bcb5d",
+    "src-7ca564066d19954f"
+   ],
+   "finding": "A leading 1 on a filename means a duplicate upload in this directory (1lewis_additional_info.pdf is byte-identical to lewis_additional_info.pdf), where in the 2011 general obligation bond directory the same convention marked a materially different earlier version.",
+   "recommended_action": "Do not carry a filename convention across City libraries. Measure each directory."
+  },
+  {
+   "severity": "blocker-consistent",
+   "affects": [
+    "src-1288d4b8b7490606",
+    "src-16da4791a0edb197",
+    "src-338b0d72594a0aad",
+    "src-a9d18b1ea8963cad",
+    "src-a4e93912f58bcb5d"
+   ],
+   "finding": "Five files are pre-enactment legislation or its supporting exhibit, all with the enactment number blank, held under the two standing checkpoint blockers. They should be decided as one group, and the three F/S R-10-58 records as one instrument.",
+   "recommended_action": "Resolve R-09-1 first: the site already has an Unser Boulevard and Paseo del Norte section on the roadway projects page, so an enacted version has an immediate home. Note that the enacted-versus-not question is now answerable in this tree, because this directory proves the City does publish enacted instruments with their enactment numbers written on them."
+  },
+  {
+   "severity": "editorial",
+   "affects": [
+    "src-fbd917f968b7e407",
+    "src-47bf834e27b251e6"
+   ],
+   "finding": "Two excluded records carry durable facts worth keeping as editorial context even though the documents themselves are not archived: a City park was named for Hailey Ratliff, a Tony Hillerman Middle School student killed riding her bicycle to school; and the 2013 General Obligation Bond cycle funded a fully signalized intersection at Irving and Universe Boulevards.",
+   "recommended_action": "Neither needs an inventory record. Both are checkable against the validated 2013 GO bond set already held."
+  }
+ ],
+ "counts": {
+  "reviewed": 20,
+  "approved_for_addition": 3,
+  "duplicate": 2,
+  "requires_human_review": 5,
+  "excluded": 10,
+  "superseded": 0
+ },
+ "link_check": {
+  "checked": 20,
+  "http_200": 20,
+  "failed": 0,
+  "method": "Full HTTP GET with a browser user agent, 2026-09-11.",
+  "containers_verified": "18 PDFs and 2 OLE2 Word documents by leading bytes; both Word files are published with a .doc extension that matches."
+ },
+ "approved_for_addition": [
+  {
+   "id": "src-fc250f15df2ab028",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/O4Enacted.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 265817,
+   "checksum_sha256": "c09ea45e7f6bb09e8deb3daf9d9f77203ce2d9d08438ba9b16873ccf9b980a6c",
+   "title": "Enacted Ordinance O-2014-005: Approving a Project Involving Eclipse Aerospace, Inc. Under the Local Economic Development Act (Council Bill O-14-4)",
+   "description": "The enacted City ordinance approves a Local Economic Development Act project with Eclipse Aerospace to support continued aircraft assembly and administrative operations in Albuquerque, authorising a project participation agreement and making the findings the Act requires.",
+   "description_word_count": 36,
+   "date": "2014",
+   "pages": 7,
+   "proposed_canonical_page": "content/city-data/budget-spending.md",
+   "cross_listings": [],
+   "evidence": "Image-only PDF with no text layer; page 1 was rendered and read. It carries Council Bill No. O-14-4 and the handwritten Enactment No. O-2014-005, Twenty-First Council, sponsored by Rey Garduno and Dan Lewis, and recites Sections 5-10-1 through 5-10-13 NMSA 1978 and the City's implementing LEDA ordinance F/S O-04-10.",
+   "why_retained": "Enacted law, and the only copy in the inventory. It is a rare find in this tree. Across the Council library triaged in this run, thirty-five legislative files carry a blank enactment number, and only three carry a real one: this ordinance, R-2010-056 below, and R-2018-081, which survives only because it was bound as Appendix 1 inside a Council staff report rather than published on its own.",
+   "companion": "src-26ac11ece2bef98d is Councilor Lewis's press release announcing support for the same bill. The press release is recommended excluded; the ordinance is the record."
+  },
+  {
+   "id": "src-77ded92dfd05478c",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/r-10-44.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 81074,
+   "checksum_sha256": "2da3445c515cc5be3d319e86774790c11a53123ed8f86904e6e0184183995690",
+   "title": "Enacted Resolution R-2010-056: Creating a Traffic and Pedestrian Safety Project on Rainbow Boulevard and Universe Boulevard (Council Bill C/S R-10-44)",
+   "description": "The enacted City resolution creates a traffic and pedestrian safety project on Rainbow and Universe Boulevards, directing lighting, safety, and street improvements and appropriating funds from the Transportation Infrastructure Tax Fund 340 for the school corridor.",
+   "description_word_count": 36,
+   "date": "2010",
+   "pages": 3,
+   "proposed_canonical_page": "content/transportation/roadway-projects/_index.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/safety-crash-data.md",
+     "section": "School Transportation Safety",
+     "reason": "The resolution's entire justification is student pedestrian and driver safety at three named schools, which is what that section covers."
+    }
+   ],
+   "evidence": "Image-only PDF with no text layer; page 1 was rendered and read. Council Bill No. C/S R-10-44, handwritten Enactment No. R-2010-056, Nineteenth Council, sponsored by Dan Lewis. The recitals name Tierra Antigua Elementary, Tony Hillerman Middle School, Volcano Vista High School and the APS sports complex as the traffic generators, and cite unsignalized crossings and a lack of roadway lighting.",
+   "why_retained": "Enacted law creating a named, funded City project. It also closes a loop opened by the council-documents artifact of the same date, which flagged that a public meeting flyer announced a Rainbow Boulevard Traffic Calming and Pedestrian Safety Study the archive did not hold. This resolution is that project's legislative origin."
+  },
+  {
+   "id": "src-4347bb9af15c89ba",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/Investigation%20Request%20of%20Redflex%20Letter.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 175223,
+   "checksum_sha256": "8f21914ebf1520d13e71807c31468986d630ee55ff088ea44608c5c744e2fc31",
+   "title": "Councilor Dan Lewis Request for Investigation into the Redflex Traffic Systems Contract With the City of Albuquerque, January 24, 2014",
+   "description": "The District 5 councilor formally asks the City Inspector General and the Director of Internal Audit to investigate the procurement process behind Albuquerque's original Redflex red-light camera contract, following press reports of alleged misconduct in the company's municipal contracting.",
+   "description_word_count": 39,
+   "date": "2014-01-24",
+   "pages": 1,
+   "proposed_canonical_page": "content/transportation/safety-crash-data.md",
+   "cross_listings": [],
+   "evidence": "Image-only PDF with no text layer; rendered and read. Addressed to Peter Pacheco, Office of Inspector General, and Deborah Yoshimura, Director of Internal Audit, copied to City Councilors. It cites a Chicago Tribune report of January 23, 2014 and dates the City's Redflex contract to approximately 2005.",
+   "why_retained": "A formal oversight request to two named City accountability offices, not constituent correspondence or an announcement. It is a dated primary record of how Albuquerque's red-light camera programme came under scrutiny, and the inventory holds nothing else on the Redflex procurement.",
+   "related": "The Council library has a separate red_light_cameras collection page, src-c846ef71accb706a, which is excluded as a landing page in the council-documents artifact of the same date. This letter is the substantive record behind that topic."
+  }
+ ],
+ "duplicate": [
+  {
+   "id": "src-bdf2981b4899255b",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/DOJFindingsandRecommendations.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 4283835,
+   "checksum_sha256": "478f9225a725e88d64bf396756e7cf760671d8ab984ce71c5fc4b7671a70d84b",
+   "title_for_reference": "DOJ Findings and Recommendations (scanned copy)",
+   "canonical_id": "src-5961fb8a4db0fb4e",
+   "canonical_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/140410DOJAPDFindingsLetter.pdf",
+   "pages": 48,
+   "basis": "The same United States Department of Justice Civil Rights Division findings letter on the Albuquerque Police Department of April 10, 2014, published a second time in a different Council directory. This copy is a 48-page scan with no text layer at 4,283,835 bytes; the canonical is born-digital, 46 pages, 242,627 bytes, with a full text layer. Keep the born-digital copy: it is searchable and one eighteenth the size.",
+   "measurement": "Neither hashing nor text comparison could connect these: the bytes differ completely and this copy yields no extractable text at all. Page 1 was rendered and read, confirming the identical letter to Mayor Richard J. Berry under 42 U.S.C. Section 14141.",
+   "hash_found_it": false,
+   "note": "This relationship was predicted by the police-oversight-task-force artifact of the same date and is confirmed here."
+  },
+  {
+   "id": "src-7ca564066d19954f",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/lewis_additional_info.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 66361,
+   "checksum_sha256": "a4c50c85f6943150ac27040a75cc9ed95673c44e0e2c7c7db228d2d4f12efbd3",
+   "title_for_reference": "Lewis additional info.pdf (second copy)",
+   "canonical_id": "src-a4e93912f58bcb5d",
+   "canonical_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/1lewis_additional_info.pdf",
+   "pages": 4,
+   "basis": "Byte-identical to the copy published one directory entry above it under a leading-1 filename: same 4 pages, same size, same SHA-256. The City published the same file twice.",
+   "measurement": "Identical SHA-256 a4c50c85f6943150ac27040a75cc9ed95673c44e0e2c7c7db228d2d4f12efbd3. The only byte collision in this cluster.",
+   "hash_found_it": true,
+   "note": "The leading-1 convention here marks a duplicate upload, not an earlier version. That is the opposite of the 2011 GO-bond directory, where a leading 1 marked an earlier version of a materially different document. Do not generalise the convention across City libraries."
+  }
+ ],
+ "requires_human_review": [
+  {
+   "id": "src-1288d4b8b7490606",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/r-09-1.doc/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "OLE2 Word document",
+   "size_bytes": 36864,
+   "checksum_sha256": "25899d462a974f526868e1ab4c085c2e9eff5beedfa266687f93037037ffee0f",
+   "draft_title": "Council Bill R-09-1: Creating an Unser Boulevard Extension Project, Compass Drive to Lyons Boulevard, Appropriating Funds in the Transportation Infrastructure Tax Fund 340",
+   "pages": null,
+   "question_for_human": "Locate the enacted instrument for this bill before any archival or visible use, and decide whether ABQInfo carries pre-enactment bill versions at all.",
+   "why_not_decided_here": "The document carries ENACTMENT NO. blank on its face, so it is the version considered rather than the law. The checkpoint holds two standing blockers on exactly this: isolated legislative amendment and substitute files must have their authoritative enacted packages resolved before archival or visible use, and a non-enacted version must not be archived or presented as enacted. The council-documents artifact of the same date held seven substitute bill texts on the same ground. This directory makes the point sharply: two of its legislative files do carry enactment numbers and are recommended for addition, and these do not. This one is worth resolving first: the site already carries an Unser Boulevard and Paseo del Norte project section on content/transportation/roadway-projects/_index.md, so an enacted version would have an immediate home.",
+   "evidence": "Word document, not a PDF. Nineteenth Council, sponsored by Dan Lewis, enactment number blank. The recitals argue that Coors Boulevard is the only north-south arterial alternative to Interstate 25 for west side residents and that completing the Unser corridor would relieve pressure on both and on the Interstate 25 and Paseo del Norte interchange."
+  },
+  {
+   "id": "src-16da4791a0edb197",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/o_08_35fs.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 59253,
+   "checksum_sha256": "31d1e059c19a690634d6a41760ef600529636909456bce49bca7b6c899c1cc3a",
+   "draft_title": "Council Bill F/S O-08-35: Amending Section 14-14-5-3 ROA 1994, a Portion of the Subdivision Ordinance, to Require Certain Notice and Approval",
+   "pages": null,
+   "question_for_human": "Locate the enacted instrument for this bill before any archival or visible use, and decide whether ABQInfo carries pre-enactment bill versions at all.",
+   "why_not_decided_here": "The document carries ENACTMENT NO. blank on its face, so it is the version considered rather than the law. The checkpoint holds two standing blockers on exactly this: isolated legislative amendment and substitute files must have their authoritative enacted packages resolved before archival or visible use, and a non-enacted version must not be archived or presented as enacted. The council-documents artifact of the same date held seven substitute bill texts on the same ground. This directory makes the point sharply: two of its legislative files do carry enactment numbers and are recommended for addition, and these do not.",
+   "evidence": "Eighteenth Council, sponsored by Cadigan, enactment number blank. A floor substitute amending the Subdivision Ordinance notice and approval requirements."
+  },
+  {
+   "id": "src-338b0d72594a0aad",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/lewis_floor_sub.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 459004,
+   "checksum_sha256": "738fd9c18241491207d501be4f7766bf131e5f689d5e78bf0b334b1b569c3c75",
+   "draft_title": "Council Bill F/S R-10-58: Appropriating Funds for Operating the Government of the City of Albuquerque for Fiscal Year 2011 (Lewis floor substitute, clean copy)",
+   "pages": 20,
+   "question_for_human": "Locate the enacted instrument for this bill before any archival or visible use, and decide whether ABQInfo carries pre-enactment bill versions at all.",
+   "why_not_decided_here": "The document carries ENACTMENT NO. blank on its face, so it is the version considered rather than the law. The checkpoint holds two standing blockers on exactly this: isolated legislative amendment and substitute files must have their authoritative enacted packages resolved before archival or visible use, and a non-enacted version must not be archived or presented as enacted. The council-documents artifact of the same date held seven substitute bill texts on the same ground. This directory makes the point sharply: two of its legislative files do carry enactment numbers and are recommended for addition, and these do not. This is also the largest single piece of legislation in the directory, a whole fiscal-year operating budget, so the gap between the substitute and whatever passed could be substantial.",
+   "evidence": "Image-only PDF with no text layer; identified by rendering its redline twin. Twenty pages, Nineteenth Council, sponsored by Dan Lewis, enactment number blank.",
+   "date": "2010"
+  },
+  {
+   "id": "src-a9d18b1ea8963cad",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/lewis_floor_sub_redline.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 497087,
+   "checksum_sha256": "7c3f856d3490d1587799c4aafb1090349f2ef8927fea2fc2e631e8724c4f9680",
+   "draft_title": "Council Bill F/S R-10-58: Fiscal Year 2011 Operating Budget (Lewis floor substitute, redline copy)",
+   "pages": 21,
+   "question_for_human": "Locate the enacted instrument for this bill before any archival or visible use, and decide whether ABQInfo carries pre-enactment bill versions at all.",
+   "why_not_decided_here": "The document carries ENACTMENT NO. blank on its face, so it is the version considered rather than the law. The checkpoint holds two standing blockers on exactly this: isolated legislative amendment and substitute files must have their authoritative enacted packages resolved before archival or visible use, and a non-enacted version must not be archived or presented as enacted. The council-documents artifact of the same date held seven substitute bill texts on the same ground. This directory makes the point sharply: two of its legislative files do carry enactment numbers and are recommended for addition, and these do not. The redline and clean copies are the same instrument in two presentations, one page apart, and must be decided together: if the substitute is retained at all, the redline is the more informative of the two because it shows what Councilor Lewis proposed to change.",
+   "evidence": "Image-only PDF; page 1 was rendered and read. Twenty-one pages. The title line carries the bracketed insertion \"[+STATING THE CITY COUNCIL'S INTENT WITH REGARD TO THE WAGE DECREASES+]\", and Section 1 shows the operating reserve changing from $37,926,000 to $37,935,000. Enactment number blank.",
+   "date": "2010"
+  },
+  {
+   "id": "src-a4e93912f58bcb5d",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/1lewis_additional_info.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 66361,
+   "checksum_sha256": "a4c50c85f6943150ac27040a75cc9ed95673c44e0e2c7c7db228d2d4f12efbd3",
+   "draft_title": "Graduated Wage Cut Scale, Lewis Budget Substitute (supporting exhibit to F/S R-10-58)",
+   "pages": 4,
+   "question_for_human": "Decide with the two floor-substitute copies above; this exhibit has no meaning apart from them.",
+   "why_not_decided_here": "A supporting exhibit to a bill whose enacted status is unresolved. It cannot be retained if the substitute it supports is not, and it should not be excluded separately if the substitute is retained.",
+   "evidence": "Image-only PDF; page 1 was rendered and read. It tabulates a graduated municipal pay cut by salary band, from no cut below $30,000 up to 6.5 per cent above $125,001, with a stated weighted average effective cut of 2.14 per cent. src-7ca564066d19954f is a byte-identical second copy and is recorded as a duplicate of this record.",
+   "date": "2010"
+  }
+ ],
+ "excluded": [
+  {
+   "id": "src-a09a7081a2d10b09",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/committee_amendment_r-08-182_-_1_cadigan.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 24183,
+   "checksum_sha256": "11cbc4a2df96cbd6abf8ac5536b59f5f2f3fe2edd8f012b58d53510a47c0a8c7",
+   "title_for_reference": "Committee Amendment 1 to C/S R-08-182 (Cadigan), March 12, 2009",
+   "exclusion_reason": "A committee amendment sheet: a numbered list of line edits against a bill text it does not contain, of the form \"On page 4, line 1, replace $1,500,000 with $3,000,000\". Excluded as a non-self-contained legislative fragment, the category decision recorded in the council-documents artifact of the same date, which covers at least 57 such files across this tree.",
+   "category": "council legislative amendment sheet",
+   "pages": 2,
+   "identifies": "Committee of the Whole, March 12, 2009. Fourteen numbered edits rewriting capital appropriation figures, ending \"Recalculate and change all subtotals and totals accordingly\"."
+  },
+  {
+   "id": "src-652537178b2679cd",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/committee_ammendment_r-08-182storehouse.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 16798,
+   "checksum_sha256": "8c195d9604e22d1ba4559b7e7d92f09bd6472308895882b92f76c541a812f5c3",
+   "title_for_reference": "Committee Amendment 2 to C/S R-08-182 (Cadigan), Storehouse",
+   "exclusion_reason": "A committee amendment sheet: a numbered list of line edits against a bill text it does not contain, of the form \"On page 4, line 1, replace $1,500,000 with $3,000,000\". Excluded as a non-self-contained legislative fragment, the category decision recorded in the council-documents artifact of the same date, which covers at least 57 such files across this tree.",
+   "category": "council legislative amendment sheet",
+   "pages": 1
+  },
+  {
+   "id": "src-26ac11ece2bef98d",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/Support%20for%20Eclipse%20Aerospace%20O-14-4.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 168085,
+   "checksum_sha256": "8e2f8ef5aa992d7424792ef712c0d3832834c5ab89201940ca4679b7060c9fde",
+   "title_for_reference": "Press Release: Councilor Dan Lewis Announces Support for O-14-4, Eclipse Aerospace, February 19, 2014",
+   "exclusion_reason": "A District 5 councilor's press release. It announces a position or an event rather than recording a City action, and the record of the action, where one exists, is held separately. The inventory already carries a terminal exclusion for a Council news item of this kind, src-0b20b31b78ea3865.",
+   "category": "councilor press release",
+   "note": "The bill it supports, enacted as O-2014-005, is recommended for addition in this batch. The ordinance is the record; the announcement is not."
+  },
+  {
+   "id": "src-38a1243f852e6b87",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/Lewis%20-%20Response%20to%20DOJ%20Findings.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 210304,
+   "checksum_sha256": "d19656380705e14d346af269a58f23cb92ddd957704fdbd37498e21b6dd49ed9",
+   "title_for_reference": "Press Release: Councilor Dan Lewis Responds to the Department of Justice Findings, April 11, 2014",
+   "exclusion_reason": "A District 5 councilor's press release. It announces a position or an event rather than recording a City action, and the record of the action, where one exists, is held separately. The inventory already carries a terminal exclusion for a Council news item of this kind, src-0b20b31b78ea3865.",
+   "category": "councilor press release",
+   "note": "The findings it responds to are the DOJ letter recommended for addition in the police-oversight artifact of the same date. This is the closest call in the batch: it is a same-day reaction by the chair of the Council Committee of the Whole to the most consequential document in the archive. It is still an announcement rather than a City action, and the Council's actual response is the ordinance amendment work recorded in the task force directory."
+  },
+  {
+   "id": "src-ab90bbed4d6998b9",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/DedicationofParadiseHillsLLFields.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 166191,
+   "checksum_sha256": "2f08de8d0513d5cc2a0d81f43321430631c80315f7485f0e3acd5aadd70c8d03",
+   "title_for_reference": "Press Release: Paradise Hills Little League Fields Dedication, March 28, 2014",
+   "exclusion_reason": "A District 5 councilor's press release. It announces a position or an event rather than recording a City action, and the record of the action, where one exists, is held separately. The inventory already carries a terminal exclusion for a Council news item of this kind, src-0b20b31b78ea3865.",
+   "category": "councilor press release"
+  },
+  {
+   "id": "src-fbd917f968b7e407",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/PRESS%20RELEASE%20-%20Dedication%20of%20Hailey%20Ratliff%20Trails%20Park.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 166516,
+   "checksum_sha256": "c4fc72b4dea0eec41f545ffb5b576751480f340a9779a9717a0228636fb8b5d6",
+   "title_for_reference": "Press Release: Hailey Ratliff Trails Park Dedication, February 14, 2014",
+   "exclusion_reason": "A District 5 councilor's press release. It announces a position or an event rather than recording a City action, and the record of the action, where one exists, is held separately. The inventory already carries a terminal exclusion for a Council news item of this kind, src-0b20b31b78ea3865.",
+   "category": "councilor press release",
+   "note": "It records that a City park was named for a Tony Hillerman Middle School student killed while riding her bicycle to school. That naming is a durable fact worth carrying as editorial context on a parks or school-safety page; the press release is not the record of it."
+  },
+  {
+   "id": "src-3f3e90ba56e359ca",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/PRESS%20RELEASE%20-%20Restructure%20Abq%20Downtown%20BID%20-3.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 165461,
+   "checksum_sha256": "f24a7464d2e3656005db4eb1aa03ec97f03f5f6ef385911ebc94c6ca10b9ddb0",
+   "title_for_reference": "Press Release: Legislation to Restructure the Albuquerque Downtown Business Improvement District, February 28, 2014",
+   "exclusion_reason": "A District 5 councilor's press release. It announces a position or an event rather than recording a City action, and the record of the action, where one exists, is held separately. The inventory already carries a terminal exclusion for a Council news item of this kind, src-0b20b31b78ea3865.",
+   "category": "councilor press release",
+   "note": "It announces a bill to be introduced at the March 3, 2014 Council meeting tying the Downtown BID's five-year review to service delivery. The bill itself is not in this directory."
+  },
+  {
+   "id": "src-10f0d9df6be21453",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/DN%20-%20Tony%20Hillerman.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 106306,
+   "checksum_sha256": "bb487ee241ecacb33bfe6b4e4be99b3c2bd9eaa85ebbf2ec539eb2bad7461e42",
+   "title_for_reference": "Film Notice for Tony Hillerman Elementary School, February 27, 2014",
+   "exclusion_reason": "A commercial production company's neighborhood notice that filming would occur near a school, published on the councilor's page as a courtesy. Not a City record, not a plan, project record, or adopted standard, and spent the moment the shoot ended.",
+   "category": "third-party notice"
+  },
+  {
+   "id": "src-47bf834e27b251e6",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/LettertoVentanaRanchNA.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 189261,
+   "checksum_sha256": "ac659803fc85c5c004e4d9cfddc36f7bd4027cf948b8ce225ee1c0f21898b49d",
+   "title_for_reference": "Letter to the Ventana Ranch Neighborhood Association Regarding Stop Signs at Ventana Road and Universe Boulevard, March 7, 2014",
+   "exclusion_reason": "Constituent correspondence answering a neighborhood association about stop signs. It is a councilor's reply rather than a City decision record, and the decisions it relays are recorded elsewhere.",
+   "category": "constituent correspondence",
+   "facts_worth_keeping": "It states two concrete commitments that are useful as editorial context even though the letter is not archived: the Department of Municipal Development agreed to reinstall the removed stop signs at Ventana Road and Universe Boulevard until a new signal was in place, and the 2013 General Obligation Bond cycle funded a fully signalized intersection at Irving and Universe. The inventory already holds an extensive validated 2013 GO bond record set against which that second claim can be checked."
+  },
+  {
+   "id": "src-61ae66da543b1909",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/donate_life_proclamation.doc/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "OLE2 Word document",
+   "size_bytes": 46080,
+   "checksum_sha256": "ab4176c9cb7889a4806b256f65bbe67f2c944985f7268f66c2e7f3b5fade7466",
+   "title_for_reference": "Donate Life Proclamation, May 3, 2010",
+   "exclusion_reason": "A ceremonial Council proclamation recognising organ and tissue donation. Proclamations carry no legal effect and record no City action beyond the recognition itself.",
+   "category": "ceremonial proclamation",
+   "note": "Word document, not a PDF."
+  }
+ ],
+ "archival_note": "All 3 approved records are static PDFs and are inventory-only until an R2 archive object exists for each and its public download, exact size, SHA-256, and authoritative-source provenance are verified. Combined archive footprint if authorized: 522,114 bytes, a small batch. All three are scans with no text layer, so any future full-text search over the archive will not reach them without optical character recognition; that is a property of the City's originals, not something archiving changes.",
+ "integration_note": "Codex integration lane: apply recommended_status values through scripts/project/Update-Candidate.ps1 only. Both duplicate rows carry a canonical_id; one resolves outside this cluster to src-5961fb8a4db0fb4e in the police-oversight directory, so integrate the two artifacts together. The 3 approved rows each carry a title, a 20-to-50-word description, a date, a proposed_canonical_page, and a cross_listing where a second page applies. Five rows are requires human review under the standing enactment blockers and three of those are one instrument in two presentations plus its exhibit. Sizes and checksums are first measurements; the inventory held neither.",
+ "safeguards": [
+  "no master-inventory.json write",
+  "no checkpoint.json write",
+  "no r2-inventory.json write",
+  "no site content change",
+  "no R2 upload",
+  "no commit, merge, or deploy"
+ ]
+}

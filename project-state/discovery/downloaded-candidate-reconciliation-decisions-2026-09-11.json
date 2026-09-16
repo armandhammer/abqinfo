@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-11",
+  "scope": "Nine records in downloaded status at the start of the Codex integration lane.",
+  "method": "Reviewed the staged artifact when present, its recorded authoritative source path, and existing canonical inventory and site records. This is inventory-only work: no R2 upload, content change, commit, merge, or deployment is authorized.",
+  "decisions": [
+    {
+      "id": "src-049f7958bcc2f6da",
+      "status": "excluded",
+      "reason": "The downloaded GTFS ZIP is a time-sensitive machine-data feed. The maintained NMDOT Park and Ride service page is already the authoritative public route to current data; a frozen feed snapshot adds no durable document value."
+    },
+    {
+      "id": "src-05176d26d35effd3",
+      "status": "requires human review",
+      "direct_file_url": "https://www.cabq.gov/council/documents/form-based-code/fbz_part_b_04_02_09.final.pdf/@@download/file/FBZ%20Part%20B%2004%2002%2009.FINAL.pdf",
+      "reason": "The City document-view page resolves to this exact City PDF delivery path, but the direct PDF could not be retrieved in the constrained browser session. Review the document alongside the pending February 2009 revision before deciding whether it is a distinct historical plan component or a superseded draft."
+    },
+    {
+      "id": "src-05811a1b936d915f",
+      "status": "excluded",
+      "reason": "This is Bernalillo County's completed Alvarado Square project announcement, not a plan, study, adopted record, or durable source document within the ABQInfo inventory scope."
+    },
+    {
+      "id": "src-0eb2bcba2848b4dd",
+      "status": "requires human review",
+      "reason": "The staged PDF identifies itself only as Bernalillo County Transportation Planning Process. Its source URL and publication context remain unreconciled, so it cannot be represented as an authoritative source yet."
+    },
+    {
+      "id": "src-53d60284f9f9963b",
+      "status": "duplicate",
+      "canonical_id": "src-a59d0a45be606c45",
+      "reason": "The checksum exactly matches the existing Buena Vista Bike Boulevard Project Roll Plot record. That canonical record remains requires-human-review for source provenance; this duplicate must not create a second archival or editorial item."
+    },
+    {
+      "id": "src-5f0c2c011baafecf",
+      "status": "duplicate",
+      "canonical_id": "src-7b469401205a34c0",
+      "source_url": "https://www.cabq.gov/transit/documents/reasonable-modification-notice-2.pdf",
+      "reason": "The one-page staged notice is the same ABQ RIDE reasonable-modification notice already reviewed and excluded under src-7b469401205a34c0. The maintained Sun Van service page already provides the current route."
+    },
+    {
+      "id": "src-cb776cdbd1f3ec08",
+      "status": "excluded",
+      "reason": "This is a May 2015 Metropolitan Redevelopment Agency appeal application form. It is a transactional administrative form, not a substantive public plan, study, enacted record, or historical source for the site taxonomy."
+    },
+    {
+      "id": "src-d3e6f30ed9199497",
+      "status": "duplicate",
+      "canonical_id": "src-13275237185605e6",
+      "reason": "The zero-byte staged alias points to src-003b8da3ca653ca2, which is already a duplicate of the implemented Bridge Boulevard Village Center and Corridor Plan canonical record src-13275237185605e6."
+    },
+    {
+      "id": "src-ea9839282b301e5f",
+      "status": "requires human review",
+      "reason": "The 9.39 MB staged EC-175 file is absent from its recorded local path and has no source provenance. It must not be conflated with the distinct, validated 15.82 MB 2025 Downtown Albuquerque Parking Study attachment (src-4e595175bd75b740)."
+    }
+  ],
+  "counts": {
+    "excluded": 3,
+    "duplicate": 3,
+    "requires_human_review": 3
+  },
+  "follow_up": "No document is newly approved for addition. The three requires-human-review records retain their staged-artifact and source-provenance uncertainty for a future focused review."
+}
