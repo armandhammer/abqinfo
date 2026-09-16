@@ -10,7 +10,7 @@ function New-CampaignTestCandidate([string]$Id){[pscustomobject][ordered]@{id=$I
 $testRoot=Join-Path ([IO.Path]::GetTempPath()) ('abqinfo-campaign-tests-'+[guid]::NewGuid().ToString('N'));$inventoryPath=Join-Path $testRoot 'master-inventory.json';$campaignRoot=Join-Path $testRoot 'campaigns';$activePath=Join-Path $testRoot 'active-run.json';$leasePath=Join-Path $testRoot 'writer.lock';$coordinatorLease=Join-Path $testRoot 'coordinator.lock';$tests=[Collections.Generic.List[string]]::new()
 try{
   New-Item -ItemType Directory -Path $testRoot -Force|Out-Null
-  function Invoke-WebRequest { throw [Net.Http.HttpRequestException]::new('Fixture transport failure without a Response property.') }
+  function Invoke-WebRequest { throw [System.Exception]::new('Fixture transport failure without a Response property.') }
   try{$httpFailure=Test-ParallelVerificationWorkerLink 'https://www.cabq.gov/fixture-http-error' 1}finally{Remove-Item Function:\Invoke-WebRequest -ErrorAction SilentlyContinue}
   Assert-CampaignTest ($httpFailure.status-eq'failed' -and $null-eq$httpFailure.http_status -and $httpFailure.reason-match'Fixture transport failure') 'StrictMode HTTP failure handling masked the original transport error.';$tests.Add('strictmode-http-error-without-response')
 
