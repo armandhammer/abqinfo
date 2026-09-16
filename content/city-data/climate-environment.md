@@ -40,6 +40,12 @@ Project contacts: Dan McGregor, [dmcgregor@bernco.gov](mailto:dmcgregor@bernco.g
 
   [Official City climate-plan hub](https://www.cabq.gov/sustainability/climate-action-plan) · [Official City PDF](https://www.cabq.gov/sustainability/documents/2021-climate-action-plan.pdf)
 
+- [Albuquerque Metropolitan Statistical Area Priority Climate Action Plan (2024 Archived PDF)](https://files.abqinfo.com/city-data/climate-environment/albuquerque-msa-priority-climate-action-plan-2024.pdf)
+
+  Presents the 2024 EPA Climate Pollution Reduction Grants Priority Climate Action Plan for the Albuquerque MSA, identifying near-term measures across buildings, renewable energy, transportation, waste, and neighborhoods with regional greenhouse-gas, equity, delivery-agency, and benefits analyses.
+
+  [EPA Priority Climate Action Plan directory](https://www.epa.gov/inflation-reduction-act/priority-climate-action-plans-states-msas-tribes-and-territories) · [Official EPA PDF](https://www.epa.gov/system/files/documents/2024-03/cprg-pcap-albuquerque-msa-city-of-albuquerque.pdf)
+
 ## Climate Action Plan Implementation
 
 - [Climate Action Plan Implementation Report 2025 (Archived PDF)](https://files.abqinfo.com/city-data/climate-environment/cabq-climate-action-plan-implementation-report-2025.pdf)
