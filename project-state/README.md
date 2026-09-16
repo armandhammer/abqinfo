@@ -1,6 +1,6 @@
 # ABQ Info project state
 
-For a durable handoff between Codex, Claude, or another approved coding agent, read [AGENT-HANDOFF.md](AGENT-HANDOFF.md) and use [agent-handoff-template.md](agent-handoff-template.md). The protocol includes safe GitHub access setup and requires an open-PR check before any new PR is created.
+For normal Codex work, read `AGENTS.md` and [CURRENT.md](CURRENT.md). `CURRENT.md` is the compact durable resume state between sessions and between Codex logins. The former Codex/Claude handoff protocol is historical and must not be loaded as routine startup context.
 
 For simultaneous file/source/link verification by Codex and Claude, follow [PARALLEL-VERIFICATION.md](PARALLEL-VERIFICATION.md). It uses immutable disjoint shards in detached worktrees and reserves all durable state changes for one integrator.
 
