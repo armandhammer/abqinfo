@@ -33,5 +33,10 @@ $arguments += @('-SupervisorRoot',$supervisorRootFull)
 $arguments += '-ManagedLaneIds'
 $arguments += @($ManagedLaneIds)
 if ($TakeOverExpiredLease) { $arguments += '-TakeOverExpiredLease' }
-$process = Start-Process -FilePath (Get-Process -Id $PID).Path -ArgumentList $arguments -WorkingDirectory $repo -WindowStyle Hidden -RedirectStandardOutput $stdoutPath -RedirectStandardError $stderrPath -PassThru
+$pwsh = Get-Command pwsh -CommandType Application -ErrorAction Stop
+$pwshPath = $pwsh.Source
+$pwshMajor = & $pwshPath -NoLogo -NoProfile -NonInteractive -Command '$PSVersionTable.PSVersion.Major'
+if ([int]$pwshMajor -lt 7) { throw "PowerShell 7 or newer is required to start the verification supervisor." }
+
+$process = Start-Process -FilePath $pwshPath -ArgumentList $arguments -WorkingDirectory $repo -WindowStyle Hidden -RedirectStandardOutput $stdoutPath -RedirectStandardError $stderrPath -PassThru
 [pscustomobject][ordered]@{launch_id=$launchId;pid=$process.Id;started_at=[DateTimeOffset]::UtcNow.ToString('o');duration_hours=$DurationHours;managed_lanes=@($ManagedLaneIds);supervisor_root=$supervisorRootFull;latest_status=Join-Path $supervisorRootFull 'latest.json';stdout_log=$stdoutPath;stderr_log=$stderrPath;safeguards=@('verification only','no R2','no merge','no deploy','no content or editorial changes')} | ConvertTo-Json -Depth 6
