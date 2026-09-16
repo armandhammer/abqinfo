@@ -88,9 +88,11 @@ Parks and recreation facilities and programs.
 
   [Full 2003 program record](/city-data/capital-spending/#20032004-general-obligation-bond-program) · [Official City source library](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc)
 
-- [2017 Parks and Recreation General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-2017-parks-recreation-go-bond-project-scopes.pdf)
+- [2017-2026 Decade Plan and 2017 General Obligation Bond Program: Mayor's Recommendation (Official Program Book, Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-2026-decade-plan-mayors-recommendation-2017.pdf)
 
-  Details $12.6 million in 2017 scopes for park irrigation renovation, Bosque restoration, golf, open space and park management equipment, Los Altos Pool, recreation facilities, Balloon Fiesta Park, new parks, pool renovation, and forestry rehabilitation. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-2017-2025-parks-recreation-go-bond-summary.pdf) schedules $59.55 million through 2025, adding Cibola Loop, citywide forestry, a regional baseball complex, and Westgate Community Center Park. [Full 2017 capital-program record](/city-data/capital-spending/#2017-general-obligation-bond-program) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/parks-recreation-scope.pdf) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/parks-recreation-summary.pdf)
+  The City's complete 2017 program book includes the Parks and Recreation scopes and 2017-2025 funding schedule within the broader decade plan, alongside planning criteria, operating impacts, maps, and legislation.
+
+  [Full 2017 program context](/city-data/capital-spending/#historical-capital-programs) · [Official City record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/2017-mayors-recommendation-to-city-council.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/2017-mayors-recommendation-to-city-council.pdf)
 
 - [2009–2017 Parks and Recreation General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-2017-parks-recreation-go-bond-summary.pdf)
 
