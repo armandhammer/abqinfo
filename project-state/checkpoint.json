@@ -1,6 +1,6 @@
 {
-  "recorded_at": "2026-09-11T19:15:00Z",
-  "completed_item_range": "Resolved the verified City code-enforcement snapshot succession: the March 2024 completed-problem-properties snapshot is superseded as the current cumulative record by the approved June 2026 successor. The predecessor's R2 object, checksum, provenance, and completed verification results remain preserved. Evidence: project-state/discovery/code-enforcement-snapshot-supersession-2026-09-11.json. No site-content change, R2 upload or deletion, commit, merge, or deployment was performed.",
+  "recorded_at": "2026-09-16T22:41:15Z",
+  "completed_item_range": "Completed the 18-record Development Process Manual Executive Committee minutes batch (2014-2018). All 18 original City PDFs were archived to R2, every public archive download matched the reviewed local file by exact size and SHA-256, and the records were added under Archived Approved Amendments on content/development-land-use/development-process.md with both archive and official City links. Evidence: project-state/discovery/dpm-executive-committee-minutes-r2-archive-plan-2026-09-16.json and project-state/discovery/dpm-executive-committee-minutes-r2-public-validation-2026-09-16.json. Master inventory, Hugo build, document-graph validation, and verification workflow tests passed; no commit, PR, merge, or deployment was performed.",
   "verification_campaign_totals": {
     "verified": 2194,
     "passed": 2070,
@@ -34,7 +34,7 @@
     "src-0f4496e4073a5e06 and src-0feec7ebf6650e27 are isolated legislative amendment/substitute files; resolve authoritative enacted packages before archival or visible use.",
     "src-0f5140179b1f087f is only an announcement for the International District Choice Neighborhood final plan; locate the authoritative final plan before visible use.",
     "src-10209c5fcdce2906 is explicitly a 2026-02-02 draft stormwater BMP package; locate or verify an adopted final version before archival or visible use.",
-    "The 18 approved-for-addition DPM Executive Committee minutes (2014-2018) are inventory-approved only; they need a later editorial pass to add visible entries under Archived Approved Amendments on content/development-land-use/development-process.md, and no R2 archival is authorized."
+    "Repository-wide retained-source descendant-audit coverage currently fails on 19 unrelated 2003-2004 bond-source URLs. The completed DPM minutes batch must not be committed, opened as site-ready, merged, or deployed until that validation gate is resolved or an authorized exception is recorded."
   ],
-  "resume_command": "Add the 18 approved Development Process Manual Executive Committee minutes to content/development-land-use/development-process.md under Archived Approved Amendments, using the official documents.cabq.gov URLs recorded in project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json. Do not upload to R2, merge, or deploy without explicit approval."
+  "resume_command": "Preserve the completed DPM Executive Committee minutes batch and resolve the unrelated retained-source descendant-audit coverage failure before creating a site-ready PR, merge, or deployment. Do not redo DPM discovery, upload, or public-byte verification unless validation identifies a defect."
 }
