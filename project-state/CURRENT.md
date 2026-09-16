@@ -29,6 +29,18 @@ Completed so far:
 - preserved the former dual-agent ledger verbatim at `project-state/history/AGENT-HANDOFF-legacy-2026-09-16.md`;
 - adopted a single logical Codex workflow regardless of which ChatGPT/Codex account is currently logged in.
 
+## Current workflow
+
+Token/context optimization is complete.
+
+- Use one logical Codex workflow regardless of which Codex account is logged in.
+- Use `project-state/CURRENT.md` for compact cross-session continuity.
+- Query `master-inventory.json` selectively; do not load it wholesale unless the task inherently requires it.
+- `Get-CandidatesByStatus.ps1` returns 50 records by default; use `-Skip` and `-Limit` for paging or `-All` only when full output is explicitly required.
+- The verification supervisor processes both legacy `codex` and `claude` lane IDs sequentially with deterministic PowerShell workers; those lane names do not represent separate AI agents.
+- Verification campaign tooling requires PowerShell 7 or newer.
+- Historical dual-agent handoff material is preserved under `project-state/history/` and is not normal startup context.
+
 ## Next action
 
-Verify and commit the migration from the active dual-agent handoff to this compact resume model, then continue reducing unnecessary context loads in inventory-query and campaign workflows.
+Resume ordinary ABQInfo project work from the user's next requested task. Do not perform additional workflow optimization unless a concrete problem appears.
