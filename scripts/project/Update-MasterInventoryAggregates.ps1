@@ -6,7 +6,7 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
-$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json -DateKind String
 $counts = [ordered]@{}
 foreach ($status in @($inventory.allowed_statuses)) {
   $counts[[string]$status] = @($inventory.candidates | Where-Object { [string]$_.status -eq [string]$status }).Count

@@ -22,7 +22,9 @@ This is the compact resume file for normal ABQInfo work. Workflow and context op
 
 The 44 `add_to_inventory` rows in `project-state/discovery/undiscovered-documents-research-2026-09-14.json` are now inventory candidates with exact saved sizes, SHA-256 hashes, descriptions, cautions, and proposed pages. The durable mapping is `project-state/discovery/undiscovered-documents-candidate-integration-2026-09-17.json`. All remain `pending review`; no content or R2 change occurred.
 
-Resume ordinary review from `src-04e406c4dde231a8` or select a coherent saved queue. The newly integrated 2014 MS4 family should be reviewed as a package rather than as isolated attachments, and must pass the normal archive gate before publication.
+The official City DPM directory and 18 existing Bernalillo County project pages passed authoritative HTTP validation as a coherent live-service batch. Results are in `project-state/discovery/live-service-validation-batch-2026-09-17.json`. Five MRCOG DocumentCenter records encountered during selection are static PDFs and remain behind the normal archive-first gate.
+
+Resume ordinary review from `src-05705d25113d3f2e` or select a coherent saved queue. The newly integrated 2014 MS4 family should be reviewed as a package rather than as isolated attachments, and must pass the normal archive gate before publication.
 
 ## External gates
 
