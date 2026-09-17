@@ -26,8 +26,6 @@ The official City DPM directory and 18 existing Bernalillo County project pages 
 
 Capital Spending consolidation is complete. The durable family status is `project-state/discovery/capital-spending-consolidation-status-2026-09-17.json`; the 2013 decision is `project-state/discovery/go2013-department-set-decision-2026-09-17.json`. The 2013-2022 book is an EPC-stage record, not an adopted-program record, so the materially distinct 2013 department editions and useful existing summary/scope records remain separate. Resume ordinary review from `src-05705d25113d3f2e`; review the 2014 MS4 family as a package.
 
-After the Capital Spending consolidation queue reaches a defensible family boundary, resume ordinary review from `src-05705d25113d3f2e`. The newly integrated 2014 MS4 family should be reviewed as a package rather than as isolated attachments, and must pass the normal archive gate before publication.
-
 ## External gates
 
 - Do not upload the corrected DPM packets or the separate 17-PDF / 67,526,043-byte batch without explicit authorization.
