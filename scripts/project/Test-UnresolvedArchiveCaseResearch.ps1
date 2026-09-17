@@ -19,6 +19,7 @@ if ([int]$r2.object_count -ne 1180 -or [int64]$r2.total_bytes -ne 8614076524) { 
 $liveByKey = @{}; foreach ($object in @($live.objects)) { $liveByKey[[string]$object.key] = $object }
 $repoByKey = @{}; foreach ($object in @($r2.objects)) { if ($repoByKey.ContainsKey([string]$object.key)) { Fail "Duplicate R2 key: $($object.key)" }; $repoByKey[[string]$object.key] = $object }
 if ($repoByKey.Count -ne $liveByKey.Count) { Fail 'Repository/live key-set count mismatch.' }
+if ((@($r2.objects.key) -join "`n") -ne (@($live.objects.key) -join "`n")) { Fail 'Repository R2 object order does not match saved live-R2 inventory order.' }
 foreach ($key in $liveByKey.Keys) { foreach ($field in @('key','size_bytes','last_modified','etag','storage_class','public_url')) { if (-not $repoByKey.ContainsKey($key) -or [string]$repoByKey[$key].$field -ne [string]$liveByKey[$key].$field) { Fail "R2 equality mismatch for $key field $field." } } }
 $masterById = @{}; foreach ($candidate in @($master.candidates)) { $masterById[[string]$candidate.id] = $candidate }
 foreach ($case in @($research.cases)) { $candidate = $masterById[[string]$case.master_id]; if ($null -eq $candidate -or $candidate.status -ne 'requires human review' -or $candidate.r2_key -ne $case.r2_key) { Fail "Master status/linkage changed for $($case.master_id)." } }
