@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-17",
+  "purpose": "Durable resume state for the saved Capital Spending consolidation queue.",
+  "families": [
+    {
+      "year": 2004,
+      "state": "complete_keep_distinct_records",
+      "result": "project-state/discovery/claude-consolidation-2004-street-bond-program-history-2026-09-17.json",
+      "next_action": null
+    },
+    {
+      "year": 2009,
+      "state": "master_not_safe_to_build",
+      "research": "project-state/discovery/go2009-bond-cluster-research-2026-09-11.json",
+      "reason": "Four version/content relationships remain unresolved, including competing Streets schedules and Senior Affairs and Family/Community Services material not fully contained in the broad Community Facilities records.",
+      "next_action": "Obtain deterministic City evidence for the version relationships before selecting components for a program master."
+    },
+    {
+      "year": 2011,
+      "state": "master_not_safe_to_build",
+      "research": "project-state/discovery/go2011-bond-cluster-research-2026-09-11.json",
+      "reason": "Four abbreviated-name variants are materially different from the validated sheets but lack an authoritative version order.",
+      "next_action": "Resolve the four-version package as a group before consolidating."
+    },
+    {
+      "year": 2013,
+      "state": "existing_complete_program_book_retained_department_set_unresolved",
+      "canonical_program_book": "src-cb8cd727e3ca1fde",
+      "research": "project-state/discovery/bond-2013-department-set-cluster-research-2026-09-12.json",
+      "reason": "The existing 2013-2022 EPC program book remains visible. Twenty-eight plain/copy_of department pairs are materially different and neither edition can be ranked from saved evidence.",
+      "next_action": "Do not replace distinct 2013 summary/scope records or build a department-set compilation until the edition package is resolved."
+    }
+  ],
+  "side_effects": "None. No R2 upload, inventory mutation, site-content edit, deployment, or generic-candidate review was performed."
+}
