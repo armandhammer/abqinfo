@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-17T03:18:46.5371770Z",
+  "source_provenance": "project-state/discovery/archive-reconciliation-provenance-2026-09-17.json",
+  "unresolved_count": 3,
+  "cases": [
+    {
+      "action_id": "repair-001",
+      "issue_group_id": "issue-0001",
+      "r2_key": "city-data/capital-spending/cabq-2003-2012-capital-improvements-epc-recommendations.pdf",
+      "identified_document": {
+        "title": "2003 Environmental Planning Commission Hearing Recommendations and Decision Notifications",
+        "date_or_version": "",
+        "issuing_organization": "City of Albuquerque",
+        "existing_master_candidate_id": "src-6735737588d294e0",
+        "existing_master_status": "requires human review"
+      },
+      "result": "requires_user_or_higher_judgment",
+      "reason": "The official EPC hearing-notification packet is byte-identical, but its saved 2003 bond research requires an editorial decision on preserving EPC decision notifications as a document class.",
+      "required_next_decision": "Editorial or policy judgment; no local inventory mutation is authorized for this case.",
+      "external_storage_action_requires_explicit_authorization": true
+    },
+    {
+      "action_id": "repair-017",
+      "issue_group_id": "issue-0018",
+      "r2_key": "city-data/capital-spending/cabq-2003-water-master-plan-infrastructure-zone-map.pdf",
+      "identified_document": {
+        "title": "Water Master Plan Infrastructure Zone Map",
+        "date_or_version": "",
+        "issuing_organization": "City of Albuquerque",
+        "existing_master_candidate_id": "src-3c9907796a0cfaf3",
+        "existing_master_status": "requires human review"
+      },
+      "result": "requires_user_or_higher_judgment",
+      "reason": "The official WIZ map is byte-identical, but its saved 2003 bond research identifies it as appendix page B-6 of an unlocated parent plan and requires an editorial decision on preserving the standalone map.",
+      "required_next_decision": "Editorial or policy judgment; no local inventory mutation is authorized for this case.",
+      "external_storage_action_requires_explicit_authorization": true
+    },
+    {
+      "action_id": "repair-020",
+      "issue_group_id": "issue-0043",
+      "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agenda-2018-04-04-approved-minutes-not-located.pdf",
+      "identified_document": {
+        "title": "Development Process Manual Executive Committee Agenda, April 4, 2018",
+        "date_or_version": "",
+        "issuing_organization": "City of Albuquerque",
+        "existing_master_candidate_id": "src-f6feb3549d055097",
+        "existing_master_status": "requires human review"
+      },
+      "result": "requires_user_or_higher_judgment",
+      "reason": "The official April 4, 2018 agenda is byte-identical, but the saved DPM research requires an exhaustive missing-minutes review and a missing-minutes-policy decision before accounting or preservation.",
+      "required_next_decision": "Editorial or policy judgment; no local inventory mutation is authorized for this case.",
+      "external_storage_action_requires_explicit_authorization": true
+    }
+  ]
+}

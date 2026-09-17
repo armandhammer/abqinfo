@@ -20,7 +20,7 @@ Do not use historical handoff ledgers as routine startup context.
 
 ## Current task
 
-Archive reconciliation is in progress. Fourteen safe R2-inventory bookkeeping repairs are complete; 27 provenance-reconstruction cases remain. One noncanonical duplicate R2 object remains only a future deletion candidate. No live R2 deletion or modification, publication, deployment, or master-inventory repair is currently authorized.
+The archive-reconciliation provenance campaign is complete for all deterministic local work: 14 initial R2-inventory bookkeeping repairs and 24 provenance-backed master/R2 accounting repairs are complete. Three editorial or policy cases remain in `project-state/discovery/archive-reconciliation-unresolved-review-2026-09-17.json`: the 2003 EPC hearing-notification packet, the Water Master Plan Infrastructure Zone map, and the April 4, 2018 DPM agenda. One noncanonical duplicate R2 object remains only a future deletion candidate. No live R2 deletion or modification, publication, deployment, or further master-inventory repair is currently authorized.
 
 Completed so far:
 
@@ -43,4 +43,4 @@ Token/context optimization is complete.
 
 ## Next action
 
-Begin provenance reconstruction for the remaining 27 archive-reconciliation cases when authorized. Do not perform live R2 deletion or modification, publication, deployment, or master-inventory repair.
+Obtain an editorial or policy decision for the three isolated unresolved archive-reconciliation cases before any further local accounting, publication, or storage action. Do not perform live R2 deletion or modification, publication, deployment, or further master-inventory repair without explicit authorization.
