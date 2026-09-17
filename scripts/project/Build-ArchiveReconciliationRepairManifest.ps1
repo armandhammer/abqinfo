@@ -1,4 +1,4 @@
-﻿[CmdletBinding()]
+[CmdletBinding()]
 param(
     [string]$DecisionPath = 'project-state/discovery/live-abqinfo-archive-reconciliation-decisions-2026-09-17.json',
     [string]$ClassificationPath = 'project-state/discovery/live-abqinfo-archive-reconciliation-classification-2026-09-16.json',
@@ -14,21 +14,26 @@ $r2 = Get-Content $R2InventoryPath -Raw | ConvertFrom-Json
 $r2ByKey = @{}; foreach ($o in $r2.objects) { $r2ByKey[$o.key] = $o }
 $classByKey = @{}; foreach ($section in @($classification.unreferenced_r2_objects, $classification.expected_but_not_live, $classification.published_objects_missing_repository_r2_inventory)) { foreach ($x in $section) { if ($x.key) { $classByKey[$x.key] = $x } } }
 $liveByKey = @{}; foreach ($o in $liveInventory.objects) { $liveByKey[$o.key.ToLowerInvariant()] = $o }
+function Get-R2InventoryObject($liveObject) {
+    if (-not $liveObject) { throw 'Safe R2 backfill has no corresponding live-R2 object.' }
+    [pscustomobject]@{ key = $liveObject.key; size_bytes = $liveObject.size_bytes; last_modified = $liveObject.last_modified; etag = $liveObject.etag; storage_class = $liveObject.storage_class; public_url = $liveObject.public_url }
+}
 
 $actions = [System.Collections.Generic.List[object]]::new()
 $normalGroups = $decisions | Group-Object { ($_.affected_r2_keys | Select-Object -First 1).ToLowerInvariant() }
 foreach ($group in $normalGroups) {
     $items = @($group.Group); $keys = @($items | ForEach-Object { $_.affected_r2_keys } | Sort-Object -Unique); $ids = @($items | ForEach-Object { $_.affected_master_ids } | Sort-Object -Unique); $key = $keys[0]; $c = $classByKey[$key]; $live = $liveByKey[$key.ToLowerInvariant()]; if (-not $live -and $c) { $live = [pscustomobject]@{ size_bytes = $c.size_bytes; etag = $c.etag; public_url = $c.public_url } }
     if ($items[0].disposition -eq 'duplicate/superseded - retain canonical') { continue }
+    $proposedR2Object = $null; $publication = $null
     if ($items[0].disposition -eq 'accounting/inventory repair only') {
         $actionType = 'provenance_reconstruction_required'; $gate = 'blocked_on_provenance_research'; $target = @('project-state/master-inventory.json','project-state/r2-inventory.json'); $current = 'Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.'; $proposed = 'After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.'
-        if ($ids.Count -gt 0) { $actionType = 'safe_r2_inventory_backfill'; $gate = 'safe_local_bookkeeping'; $target = @('project-state/r2-inventory.json'); $current = 'Validated master record exists and the live R2 object is absent from repository R2 inventory.'; $proposed = [pscustomobject]@{ key = $key; size_bytes = $live.size_bytes; etag = $live.etag; public_url = $live.public_url; source_master_ids = $ids } }
+        if ($ids.Count -gt 0) { $actionType = 'safe_r2_inventory_backfill'; $gate = 'safe_local_bookkeeping'; $target = @('project-state/r2-inventory.json'); $current = 'Validated master record exists and the live R2 object is absent from repository R2 inventory.'; $proposed = 'Add the proposed R2 object to project-state/r2-inventory.json; publication is unchanged.'; $proposedR2Object = Get-R2InventoryObject $live; $publication = 'unchanged' }
     } else {
         if ($ids.Count -gt 0 -and $c -and -not $c.repository_r2_record_present) {
-            $actionType = 'safe_r2_inventory_backfill_without_publication'; $gate = 'safe_local_bookkeeping'; $target = @('project-state/r2-inventory.json'); $current = 'Validated master record and live R2 object exist, but the repository R2 inventory record is absent; the decision explicitly withholds publication.'; $proposed = [pscustomobject]@{ key = $key; size_bytes = $live.size_bytes; etag = $live.etag; public_url = $live.public_url; source_master_ids = $ids; publication = 'no-op' }
+            $actionType = 'safe_r2_inventory_backfill_without_publication'; $gate = 'safe_local_bookkeeping'; $target = @('project-state/r2-inventory.json'); $current = 'Validated master record and live R2 object exist, but the repository R2 inventory record is absent; the decision explicitly withholds publication.'; $proposed = 'Add the proposed R2 object to project-state/r2-inventory.json; publication remains a no-op.'; $proposedR2Object = Get-R2InventoryObject $live; $publication = 'no-op'
         } else { $actionType = 'no_op_retain_intentionally_unpublished'; $gate = 'no_action'; $target = @(); $current = 'Decision explicitly retains the object unpublished; no publication action is authorized.'; $proposed = 'No local publication change.' }
     }
-    $actions.Add([pscustomobject]@{ action_id = ('repair-' + ($actions.Count + 1).ToString('000')); action_type = $actionType; safety_gate = $gate; covered_issue_group_ids = @($items.issue_group_id); affected_master_ids = $ids; affected_r2_keys = $keys; target_files = $target; current_state = $current; proposed_state = $proposed; evidence = @($items | ForEach-Object { $_.case_specific_evidence; $_.rationale }); proposed_follow_up = @($items.proposed_follow_up) })
+    $actions.Add([pscustomobject]@{ action_id = ('repair-' + ($actions.Count + 1).ToString('000')); action_type = $actionType; safety_gate = $gate; covered_issue_group_ids = @($items.issue_group_id); affected_master_ids = $ids; source_master_ids = $ids; affected_r2_keys = $keys; target_files = $target; current_state = $current; proposed_state = $proposed; proposed_r2_object = $proposedR2Object; publication = $publication; rationale = @($items.rationale); provenance = @($items.case_specific_evidence); evidence = @($items | ForEach-Object { $_.case_specific_evidence; $_.rationale }); proposed_follow_up = @($items.proposed_follow_up) })
 }
 
 $duplicateItems = @($decisions | Where-Object disposition -eq 'duplicate/superseded - retain canonical')

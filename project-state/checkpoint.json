@@ -107,7 +107,8 @@
                                                             },
                                 "repair_manifest_correction":  {
                                                                    "malformed_issue_id_fixed":  "i -\u003e issue-0016 in review packet and decision artifact; manifest regenerated",
-                                                                   "safe_backfills_missing_metadata":  0,
+                                                                   "safe_backfills_schema_correction":  "All 14 safe backfills now carry exact six-field live-R2 objects; master linkage, publication state, rationale, and provenance remain action-level.",
+                                                                   "action_category_counts_unchanged":  true,
                                                                    "identity_sets_packet_decision_manifest":  "44/44/44 exact",
                                                                    "validation":  "Test-ArchiveReconciliationDecisions.ps1 and Test-ArchiveReconciliationRepairManifest.ps1 passed",
                                                                    "execution_performed":  false
