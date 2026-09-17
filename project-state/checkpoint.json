@@ -1,5 +1,5 @@
-﻿{
-    "recorded_at":  "2026-09-16T23:37:46Z",
+{
+    "recorded_at":  "2026-09-17T00:25:10Z",
     "completed_item_range":  "Reconciled the retained-source descendant-audit queue after the aggregate validator found 19 missing 2003-2004 bond-source entries. The omission was genuine stale queue state, not a validator defect: all 19 validated City PDF records use retained Plone /view source wrappers, matching 166 existing comparable queue records. Regenerating project-state/discovery/retained-source-audit-queue.json preserved all 550 existing records and states, added exactly 19 pending descendant crawls, and changed coverage from 569 eligible/550 queued/19 missing to 569/569/0. Full project validation and Hugo build passed. The completed DPM minutes batch remains preserved and was not reprocessed.",
     "verification_campaign_totals":  {
                                          "verified":  2194,
@@ -35,7 +35,7 @@
                      "src-0f5140179b1f087f is only an announcement for the International District Choice Neighborhood final plan; locate the authoritative final plan before visible use.",
                      "src-10209c5fcdce2906 is explicitly a 2026-02-02 draft stormwater BMP package; locate or verify an adopted final version before archival or visible use."
                  ],
-    "resume_command":  "Resume from the deterministic archive-reconciliation classification artifacts; do not repeat live crawl or R2 verification. Review only the compact packet, then resolve flagged editorial/storage cases before any content, inventory, R2, or production change.",
+    "resume_command":  "Resume from the reduced archive-reconciliation review packet; do not repeat live crawl, R2 verification, or deterministic classification. Resolve only the 42 unique review issue groups before any content, inventory, R2, or production change.",
     "live_reconciliation":  {
                                 "recorded_at":  "2026-09-16T23:20:00Z",
                                 "stage":  "complete_mechanical_reconciliation",
@@ -57,28 +57,29 @@
                                                   "project-state/discovery/live-r2-public-verification-final-2026-09-16.json",
                                                   "project-state/discovery/live-abqinfo-archive-reconciliation-2026-09-16.json"
                                               ],
-                                "next_stage":  "classification_complete_review_packet_pending_editorial_review",
+                                "next_stage":  "classification_reduction_complete_review_packet_pending_editorial_review",
                                 "classification_artifacts":  [
                                                                  "project-state/discovery/live-abqinfo-archive-reconciliation-classification-2026-09-16.json",
                                                                  "project-state/discovery/live-abqinfo-archive-reconciliation-review-packet-2026-09-16.json"
                                                              ],
                                 "classification_summary":  {
-                                                               "discrepancies":  284,
-                                                               "mechanically_resolvable":  92,
-                                                               "requires_human_review":  192,
+                                                               "raw_discrepancies":  284,
+                                                               "unique_underlying_issue_groups":  220,
+                                                               "unique_review_issue_groups":  42,
+                                                               "mechanically_resolvable":  229,
+                                                               "requires_human_review_raw":  55,
                                                                "unreferenced":  101,
                                                                "published_missing_repository_r2":  116,
-                                                               "expected_not_live":  67
+                                                               "expected_not_live":  67,
+                                                               "set_overlap_normalized_key_unreferenced_expected":  65,
+                                                               "actual_storage_duplicate_groups":  1
                                                            },
                                 "classification_validation":  {
                                                                   "script":  "Classify-ArchiveReconciliation.ps1",
                                                                   "passed":  true,
-                                                                  "discrepancy_counts":  "101 unreferenced + 116 published-missing-r2-inventory + 67 expected-not-live = 284",
-                                                                  "mechanical":  65,
-                                                                  "human_review":  219,
-                                                                  "project_validation":  "partial",
-                                                                  "project_validation_errors":  0,
-                                                                  "project_validation_blocker":  "Invoke-ProjectValidation.ps1 reached parallel verification checks but could not create .git/worktrees/codex12 (permission denied); no repository content or state inconsistency reported."
+                                                                  "utf8_bom":  false,
+                                                                  "targeted_checks":  "normalized r2_key/r2_url matching; current content exact links; origin/main git grep; per-page git history; SHA-256 duplicate references",
+                                                                  "project_validation":  "not rerun (no content/inventory changes)"
                                                               }
                             }
 }
