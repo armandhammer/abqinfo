@@ -1,5 +1,5 @@
 {
-    "recorded_at":  "2026-09-17T00:31:19Z",
+    "recorded_at":  "2026-09-17T00:41:24Z",
     "completed_item_range":  "Reconciled the retained-source descendant-audit queue after the aggregate validator found 19 missing 2003-2004 bond-source entries. The omission was genuine stale queue state, not a validator defect: all 19 validated City PDF records use retained Plone /view source wrappers, matching 166 existing comparable queue records. Regenerating project-state/discovery/retained-source-audit-queue.json preserved all 550 existing records and states, added exactly 19 pending descendant crawls, and changed coverage from 569 eligible/550 queued/19 missing to 569/569/0. Full project validation and Hugo build passed. The completed DPM minutes batch remains preserved and was not reprocessed.",
     "verification_campaign_totals":  {
                                          "verified":  2194,
@@ -35,7 +35,7 @@
                      "src-0f5140179b1f087f is only an announcement for the International District Choice Neighborhood final plan; locate the authoritative final plan before visible use.",
                      "src-10209c5fcdce2906 is explicitly a 2026-02-02 draft stormwater BMP package; locate or verify an adopted final version before archival or visible use."
                  ],
-    "resume_command":  "Resume from the reduced archive-reconciliation review packet; do not repeat live crawl, R2 verification, or deterministic classification. Resolve only the 42 unique review issue groups before any content, inventory, R2, or production change.",
+    "resume_command":  "Archive-reconciliation judgment review is complete: 44 unique issue groups received dispositions. Do not repeat the live crawl, R2 verification, deterministic reduction, or judgment artifact. Begin only an explicitly authorized follow-up action from project-state/discovery/live-abqinfo-archive-reconciliation-decisions-2026-09-17.json.",
     "live_reconciliation":  {
                                 "recorded_at":  "2026-09-16T23:20:00Z",
                                 "stage":  "complete_mechanical_reconciliation",
@@ -57,7 +57,7 @@
                                                   "project-state/discovery/live-r2-public-verification-final-2026-09-16.json",
                                                   "project-state/discovery/live-abqinfo-archive-reconciliation-2026-09-16.json"
                                               ],
-                                "next_stage":  "classification_reduction_complete_review_packet_pending_editorial_review",
+                                "next_stage":  "decision_review_complete_authorized_follow_up_required",
                                 "classification_artifacts":  [
                                                                  "project-state/discovery/live-abqinfo-archive-reconciliation-classification-2026-09-16.json",
                                                                  "project-state/discovery/live-abqinfo-archive-reconciliation-review-packet-2026-09-16.json"
@@ -81,6 +81,16 @@
                                                                   "utf8_bom":  false,
                                                                   "targeted_checks":  "normalized r2_key/r2_url matching; current content exact links; origin/main git grep; per-page git history; SHA-256 duplicate references",
                                                                   "project_validation":  "not rerun (no content/inventory changes)"
-                                                              }
+                                                              },
+                                "decision_artifact":  "project-state/discovery/live-abqinfo-archive-reconciliation-decisions-2026-09-17.json",
+                                "decision_summary":  {
+                                                         "unique_issue_groups":  44,
+                                                         "decisions":  44,
+                                                         "retain_and_publish":  16,
+                                                         "retain_intentionally_unpublished":  26,
+                                                         "duplicate_retain_canonical":  2,
+                                                         "probable_r2_deletion_candidates":  1,
+                                                         "unresolved_needs_user_decision":  0
+                                                     }
                             }
 }
