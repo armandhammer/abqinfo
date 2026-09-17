@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-09-17T14:10:00Z",
+  "recorded_at": "2026-09-17T14:45:00Z",
   "completed_item_range": "Reconciled the retained-source descendant-audit queue after the aggregate validator found 19 missing 2003-2004 bond-source entries. The omission was genuine stale queue state, not a validator defect: all 19 validated City PDF records use retained Plone /view source wrappers, matching 166 existing comparable queue records. Regenerating project-state/discovery/retained-source-audit-queue.json preserved all 550 existing records and states, added exactly 19 pending descendant crawls, and changed coverage from 569 eligible/550 queued/19 missing to 569/569/0. Full project validation and Hugo build passed. The completed DPM minutes batch remains preserved and was not reprocessed.",
   "verification_campaign_totals": {
     "verified": 2194,
@@ -16,12 +16,12 @@
     "description drafted": 0,
     "placement assigned": 2,
     "implemented": 178,
-    "validated": 1321,
+    "validated": 1361,
     "excluded": 1335,
     "duplicate": 1481,
     "superseded": 212,
     "blocked": 0,
-    "requires human review": 194
+    "requires human review": 191
   },
   "remaining_nonterminal": 2531,
   "next_pending_id": "src-04e406c4dde231a8",
@@ -35,9 +35,9 @@
     "src-0f5140179b1f087f is only an announcement for the International District Choice Neighborhood final plan; locate the authoritative final plan before visible use.",
     "src-10209c5fcdce2906 is explicitly a 2026-02-02 draft stormwater BMP package; locate or verify an adopted final version before archival or visible use."
   ],
-  "resume_command": "Final unresolved archive-case research is complete. The EPC packet is objectively a substantive decision/recommendation record under repository precedent; its future visible placement remains a separately authorized content action. Two user decisions remain: whether an unidentified B-6 Water Master Plan map may later be used as a standalone appendix map, and whether the scheduled April 4, 2018 DPM agenda may be preserved without evidence that the meeting occurred. Repository R2 inventory exactly matches saved live R2 (1180 objects / 8614076524 bytes). Do not repeat completed crawl, listing, hash audit, accounting, or this research.",
+  "resume_command": "Archive-reconciliation editorial resolutions and local DPM annual packets are complete. Local R2 inventory remains exactly equal to saved live R2 (1180 objects / 8614076524 bytes). Five DPM annual PDFs require separately authorized R2 upload before their content transition; 53 current-branch links await deployment. The 111 legacy published-without-master records remain intentionally unconverted, and the noncanonical mrmppo duplicate remains a future deletion candidate only.",
   "live_reconciliation": {
-    "recorded_at": "2026-09-16T23:20:00Z",
+    "recorded_at": "2026-09-17T14:45:00Z",
     "stage": "complete_mechanical_reconciliation",
     "live_pages": 42,
     "published_document_link_occurrences": 2310,
@@ -57,7 +57,7 @@
       "project-state/discovery/live-r2-public-verification-final-2026-09-16.json",
       "project-state/discovery/live-abqinfo-archive-reconciliation-2026-09-16.json"
     ],
-    "next_stage": "user_decision_water_map_and_dpm_agenda;_epc_ready_for_later_authorized_content_placement",
+    "next_stage": "external_authorization_for_dpm_packet_uploads_then_content_deployment",
     "classification_artifacts": [
       "project-state/discovery/live-abqinfo-archive-reconciliation-classification-2026-09-16.json",
       "project-state/discovery/live-abqinfo-archive-reconciliation-review-packet-2026-09-16.json"
@@ -121,7 +121,7 @@
       "reconciliation_report_regenerated": true,
       "live_crawl_or_r2_audit_repeated": false,
       "master_inventory_modified": true,
-      "site_content_modified": false,
+      "site_content_modified": true,
       "live_r2_modified": false,
       "provenance_campaign_artifact": "project-state/discovery/archive-reconciliation-provenance-2026-09-17.json",
       "provenance_verification_artifact": "project-state/discovery/archive-reconciliation-provenance-verification-2026-09-17.json",
@@ -137,8 +137,8 @@
       "safe_provenance_repairs_completed_without_publication": true,
       "validation": "Archive-reconciliation, provenance, repair, master-inventory, content-style, crawler, and parallel-workflow validations passed. Hugo build was not run because the configured executable is absent from this environment.",
       "provenance_cases_classified_historical": 27,
-      "unresolved_editorial_cases_remaining": 2,
-      "master_inventory_editorial_statuses_changed": false,
+      "unresolved_editorial_cases_remaining": 0,
+      "master_inventory_editorial_statuses_changed": true,
       "published_inventory_gaps_repaired": 116,
       "editorial_objects_storage_accounted": 3,
       "legacy_published_without_master_records_remaining": 111,
@@ -149,7 +149,7 @@
       "final_accounting_validation": "Test-FinalArchiveReconciliationAccounting.ps1 passed: exact 1180-key and six-field saved-live metadata equality.",
       "unresolved_case_research_artifact": "project-state/discovery/archive-reconciliation-unresolved-case-research-2026-09-17.json",
       "unresolved_case_research_summary": "EPC document class resolved by repository precedent; Water Master Plan B-6 parent remains unidentified; April 4, 2018 DPM minutes/cancellation/occurrence evidence remains insufficient.",
-      "unresolved_case_research_user_decisions_remaining": 2,
+      "unresolved_case_research_user_decisions_remaining": 0,
       "unresolved_case_research_validation": "Test-UnresolvedArchiveCaseResearch.ps1 passed: 3 cases represented, 2 user decisions isolated, and exact R2 equality preserved."
     }
   }

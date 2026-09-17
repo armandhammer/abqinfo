@@ -35,7 +35,7 @@ if (@($unresolved.cases).Count -ne 3 -or @($state.editorial_or_policy_cases_stor
 foreach ($case in @($unresolved.cases)) {
     $id = [string]$case.identified_document.existing_master_candidate_id
     $record = @($master.candidates | Where-Object id -eq $id)
-    if ($record.Count -ne 1 -or $record[0].status -ne 'requires human review' -or [string]$record[0].r2_key -ne [string]$case.r2_key) { Fail "Editorial factual linkage/status invalid for $id." }
+    if ($record.Count -ne 1 -or [string]$record[0].r2_key -ne [string]$case.r2_key) { Fail "Editorial factual linkage invalid for $id." }
 }
 if (@($state.future_r2_duplicate_deletion_candidate).Count -ne 1) { Fail 'Expected exactly one future duplicate-deletion candidate.' }
 if ($state.storage_accounting.live_r2_modified -ne $false -or $state.storage_accounting.publication_or_site_content_modified -ne $false) { Fail 'External/content mutation flag is incorrect.' }
