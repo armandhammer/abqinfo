@@ -66,7 +66,7 @@ Give each worker only its worktree path, absolute manifest path, and assigned wo
   -RepoRoot (Get-Location).Path
 ```
 
-Claude uses the same command with `-WorkerId claude`. The worker script performs:
+Any Codex session uses the same command with the other legacy lane ID, `-WorkerId claude`, when that is its immutable assignment. The worker script performs:
 
 1. local-file existence, byte-size, and SHA-256 verification when a local file is recorded;
 2. authoritative-source/provenance metadata verification, rejecting an R2 URL as the authoritative source; and
@@ -148,4 +148,4 @@ Run the isolated regression suite with:
 ./scripts/project/Test-ParallelVerificationWorkflow.ps1
 ```
 
-For long-running, candidate-checkpointed work that survives provider usage pauses, use [AUTONOMOUS-VERIFICATION-CAMPAIGNS.md](AUTONOMOUS-VERIFICATION-CAMPAIGNS.md). Campaigns build on this safety model while adding immutable per-candidate results, provider-neutral resumable lanes, expiring exclusive leases, derived status, and write-ahead idempotent integration.
+For long-running, candidate-checkpointed work that survives session interruptions, use [AUTONOMOUS-VERIFICATION-CAMPAIGNS.md](AUTONOMOUS-VERIFICATION-CAMPAIGNS.md). Campaigns build on this safety model while adding immutable per-candidate results, lane-neutral resumption, expiring exclusive leases, derived status, and write-ahead idempotent integration.

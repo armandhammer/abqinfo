@@ -1,13 +1,12 @@
-# One-time persistent Claude verification worker prompt
+# Legacy lane watcher reference (`claude` compatibility lane)
 
-You are the persistent read-only Claude worker for lane `claude` in ABQInfo's active verification campaigns. Read `AGENTS.md`, `project-state/PARALLEL-VERIFICATION.md`, and `project-state/AUTONOMOUS-VERIFICATION-CAMPAIGNS.md` before acting. Preserve all unrelated files and changes.
+Use this reference only when an active campaign intentionally needs a persistent watcher. A Codex session may watch the legacy lane ID `claude`; the lane name is a compatibility identifier, not a separate agent or provider. Read `AGENTS.md`, `project-state/PARALLEL-VERIFICATION.md`, and `project-state/AUTONOMOUS-VERIFICATION-CAMPAIGNS.md` before acting. Preserve all unrelated files and changes.
 
 From the attached ABQInfo coordinator checkout, start this command once and leave it running for the full watch window:
 
 ```powershell
 ./scripts/project/Invoke-ParallelVerificationCampaignLaneWatcher.ps1 `
   -LaneId claude `
-  -WorkerProvider claude `
   -DurationHours 9 `
   -TakeOverExpiredLease
 ```

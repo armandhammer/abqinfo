@@ -92,4 +92,4 @@ For usage-paused-proof campaigns with many microbatches:
 .\scripts\project\Test-ParallelVerificationCampaignWorkflow.ps1
 ```
 
-See [`project-state/AUTONOMOUS-VERIFICATION-CAMPAIGNS.md`](../project-state/AUTONOMOUS-VERIFICATION-CAMPAIGNS.md) for the one-prompt Claude worker, Codex coordinator loop, `Continue` behavior, leases, and crash-safe integration.
+See [`project-state/AUTONOMOUS-VERIFICATION-CAMPAIGNS.md`](../project-state/AUTONOMOUS-VERIFICATION-CAMPAIGNS.md) for legacy-lane worker examples, coordinator operation, `Continue` behavior, leases, and crash-safe integration.

@@ -12,7 +12,7 @@ This is the compact resume file for normal ABQInfo work. Workflow and context op
 
 ## Current state
 
-- Branch: `codex/autonomous-campaign-coordinator`, reconciled with current `origin/main` while preserving the later local archive-accounting work.
+- Repository history preserves the later local archive-accounting work through a history-preserving reconciliation with `origin/main`.
 - Master inventory: 7,130 unique records; status aggregates and `next_pending_id` are generated from the records.
 - R2 inventory: 1,180 objects / 8,614,076,524 bytes, with exact six-field equality to the saved live-R2 inventory.
 - Archive reconciliation is locally complete. EPC and WIZ use the later explicit editorial decisions; no live R2 mutation occurred.

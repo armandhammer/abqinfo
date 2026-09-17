@@ -1,8 +1,8 @@
 # Usage-paused-proof verification campaigns
 
-ABQInfo verification campaigns extend the bounded parallel-run workflow with candidate-level durability. A Codex or Claude task may stop at any point because of a five-hour window, weekly usage limit, terminal interruption, or provider handoff. Re-running the same lane command reconstructs progress from immutable artifacts and continues at the first missing candidate.
+ABQInfo verification campaigns extend the bounded parallel-run workflow with candidate-level durability. A Codex session may stop at any point because of a five-hour window, weekly usage limit, or terminal interruption. Re-running the same lane command reconstructs progress from immutable artifacts and continues at the first missing candidate.
 
-The campaign system does not run work in the background after a provider stops. It guarantees that completed verification and integration work is neither lost nor duplicated when the user later says **Continue**.
+The campaign system does not run work in the background after a session stops. It guarantees that completed verification and integration work is neither lost nor duplicated when the user later says **Continue**.
 
 ## State model
 
@@ -21,11 +21,11 @@ integration/
   receipts/src-....json
 ```
 
-- `campaign.json` is an immutable, hashed assignment of sorted candidate IDs to fixed microbatches and provider-neutral lanes.
+- `campaign.json` is an immutable, hashed assignment of sorted candidate IDs to fixed microbatches and legacy-compatible lanes.
 - Every candidate result is written atomically with create-new semantics and then made read-only. There is no mutable progress cursor.
 - Status is derived by validating the manifest and scanning expected candidate results, intents, and receipts.
 - Lane leases use an exclusive operating-system file handle. An active worker therefore cannot share ownership. An abandoned lease can be taken over only after expiration and only after the replacement obtains the exclusive handle.
-- A lane name is an assignment, not an identity. Codex may resume `claude`, or Claude may resume `codex`, when the coordinator explicitly gives it that lane.
+- A lane name is an assignment, not an identity. Any resumed Codex session may work either legacy lane ID when the coordinator explicitly gives it that lane.
 - Integration writes an immutable intent before calling `Update-Candidate.ps1`. The inventory update includes a deterministic operation marker, followed by an immutable receipt. If execution stops between those writes, a rerun recognizes the marker and completes the receipt without applying the operation twice.
 
 Workers never modify `master-inventory.json`, checkpoint, the active-run pointer, content, queues, Git state, or R2. Only the coordinator creates campaigns, sets the active pointer, creates/removes worktrees, accepts results, and integrates inventory decisions.
@@ -66,15 +66,15 @@ Create detached lane worktrees outside the repository:
   -WorktreeRoot 'C:\ABQinfo-campaign-worktrees'
 ```
 
-## One-prompt Claude worker
+## One-prompt legacy-lane worker
 
-Replace the three bracketed values with coordinator output and send this once:
+Fill the three bracketed values from coordinator output, then run this once:
 
 ```text
-You are the read-only worker for lane `claude` in the active ABQInfo verification campaign.
+You are the read-only worker for the legacy lane ID `claude` in the active ABQInfo verification campaign. The lane ID is a compatibility identifier, not a separate agent or provider.
 
 Work only in this detached worktree:
-<CLAUDE_WORKTREE>
+<LANE_WORKTREE>
 
 Use this immutable campaign manifest:
 <CAMPAIGN_MANIFEST>
@@ -89,7 +89,6 @@ Run the following from the detached worktree and allow it to process the entire 
 ./scripts/project/Invoke-ParallelVerificationCampaignWorker.ps1 `
   -ManifestPath '<CAMPAIGN_MANIFEST>' `
   -LaneId claude `
-  -WorkerProvider claude `
   -RepoRoot (Get-Location).Path `
   -TakeOverExpiredLease
 
@@ -102,16 +101,15 @@ Your only persistent writes may be your lane lease and manifest-assigned candida
 
 If the prior process was terminated while holding a lease, wait until its recorded expiration before using `-TakeOverExpiredLease`. An exclusive handle still held by a live process always blocks takeover.
 
-## Codex master-decider and parallel worker
+## Coordinator working a lane
 
-The coordinator can work its own lane in bounded slices, inspect Claude's progress between slices, and make editorial decisions without allowing either worker to write shared project state:
+The coordinator can work an assigned lane in bounded slices, inspect the derived status of every lane between slices, and make editorial decisions without allowing any worker to write shared project state:
 
 ```powershell
 ./scripts/project/Invoke-ParallelVerificationCampaignWorker.ps1 `
   -ManifestPath $manifest `
   -LaneId codex `
-  -WorkerProvider codex `
-  -RepoRoot '<CODEX_WORKTREE>' `
+  -RepoRoot '<LANE_WORKTREE>' `
   -TakeOverExpiredLease `
   -MaxCandidates 10
 
@@ -119,7 +117,7 @@ The coordinator can work its own lane in bounded slices, inspect Claude's progre
   -ManifestPath $manifest
 ```
 
-Repeat the worker command until the Codex lane is complete. `MaxCandidates` counts newly created results, not valid results skipped during resumption.
+Repeat the worker command until the assigned lane is complete. `MaxCandidates` counts newly created results, not valid results skipped during resumption.
 
 Status reports campaign-, lane-, and batch-level assigned, completed, remaining, passed, failed, ambiguous, accepted, and integrated counts. It also reports whether each lease is absent, released, expired, unlocked/orphaned, or actively locked.
 
@@ -196,7 +194,7 @@ Rerunning the same coordinator command after interruption is idempotent. Existin
 
 ## Continue and takeover protocol
 
-When the user says **Continue**, either provider must:
+When the user says **Continue**, any resumed Codex session must:
 
 1. Read project instructions, checkpoint, and the active-run pointer.
 2. Resolve and hash-validate the immutable campaign.
@@ -216,7 +214,7 @@ Run:
 ./scripts/project/Test-ParallelVerificationCampaignWorkflow.ps1
 ```
 
-The suite covers immutable deterministic assignment, overlap across campaigns and batches, active-pointer recovery, detached worktree planning, interruption before and during verification, post-result restart, batch-transition restart, stale input, result tampering, lease contention and expiry, provider-neutral takeover, integration dry-run, write-ahead interruption, post-inventory/pre-receipt recovery, post-receipt restart, and duplicate-application prevention.
+The suite covers immutable deterministic assignment, overlap across campaigns and batches, active-pointer recovery, detached worktree planning, interruption before and during verification, post-result restart, batch-transition restart, stale input, result tampering, lease contention and expiry, lane-neutral takeover, integration dry-run, write-ahead interruption, post-inventory/pre-receipt recovery, post-receipt restart, and duplicate-application prevention.
 
 ## Unattended supervisor and persistent lane watchers
 
@@ -236,12 +234,11 @@ By default, the supervisor manages both legacy campaign lane IDs, `codex` and `c
 
 By default, process output and persistent state are written under the sibling `ABQinfo-verification-supervisor` directory. `latest.json` points to the active run's atomic `status.json` and append-only `events.ndjson`. The hidden process also has separate stdout and stderr logs. A supervisor-wide exclusive file lease prevents concurrent coordinators.
 
-A provider can watch one assigned lane across every pointer rollover with:
+A Codex session can watch one assigned lane across every pointer rollover with:
 
 ```powershell
 ./scripts/project/Invoke-ParallelVerificationCampaignLaneWatcher.ps1 `
   -LaneId claude `
-  -WorkerProvider claude `
   -DurationHours 9 `
   -TakeOverExpiredLease
 ```
