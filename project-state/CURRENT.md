@@ -20,7 +20,7 @@ Do not use historical handoff ledgers as routine startup context.
 
 ## Current task
 
-Reduce Codex context and token overhead while preserving ABQInfo project state, research history, validation rules, and automation.
+Archive reconciliation is in progress. Fourteen safe R2-inventory bookkeeping repairs are complete; 27 provenance-reconstruction cases remain. One noncanonical duplicate R2 object remains only a future deletion candidate. No live R2 deletion or modification, publication, deployment, or master-inventory repair is currently authorized.
 
 Completed so far:
 
@@ -43,4 +43,4 @@ Token/context optimization is complete.
 
 ## Next action
 
-Resume ordinary ABQInfo project work from the user's next requested task. Do not perform additional workflow optimization unless a concrete problem appears.
+Begin provenance reconstruction for the remaining 27 archive-reconciliation cases when authorized. Do not perform live R2 deletion or modification, publication, deployment, or master-inventory repair.
