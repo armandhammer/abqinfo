@@ -1,5 +1,10 @@
 # ABQInfo Codex Instructions
 
+## Workflow Roles
+
+- ChatGPT is the project lead and handles planning, stage sequencing, and continuation prompts.
+- Codex is the implementation worker.
+
 ## Durable Project State
 
 - At the start of a task, inspect the current Git branch and working-tree state and read `project-state/CURRENT.md` when present. Read `project-state/checkpoint.json` and `project-state/active-run.json` only when they are relevant to the task.
@@ -21,9 +26,9 @@
 - Distinguish inventory-only work from visible site changes. Report R2 uploads, exact added storage, size warnings, validation results, and unresolved items.
 - The user has authorized autonomous merge and production deployment for routine ABQInfo content PRs that meet the archival and validation standards in this file. Before merging, confirm the PR is limited to the intended coherent batch, its temporary deployment is healthy, and all required checks pass. Do not autonomously merge or deploy a PR involving a novel content category, unresolved provenance/version conflict, failed check, destructive storage change, credential/permission change, or material site-architecture change; surface those for user direction.
 
-## Required End-of-Task Handoff
+## Required End-of-Task Report
 
-Every substantive task-ending response must state the saved artifact paths, the concrete result, validation performed, and any remaining blocker. It must be self-contained: do not require the user to relay a prompt, create a new conversation, or manually coordinate a follow-up merely to receive or use the completed work.
+At the end of a substantive task, Codex should report what it completed, commits and artifacts created, validation performed, unresolved blockers or issues, and the recommended next type of work and model/reasoning level when useful. Codex should not generate a copy-and-paste continuation prompt.
 
 ## Interruption and Usage-Limit Resilience
 
@@ -42,18 +47,6 @@ Assume any Codex session may terminate without warning because of usage limits, 
 For work that naturally divides into stages with materially different reasoning needs, use the least expensive appropriate model and reasoning level for each stage rather than carrying one model through the entire workflow.
 
 At the end of a stage, stop before beginning work that would materially benefit from a different model or reasoning level.
-
-At every substantive task-ending or stopping response, if any meaningful project work remains, report:
-
-1. the stage or task just completed and its concrete result;
-2. the next recommended task or stage;
-3. the recommended model and reasoning level, even when unchanged from the current session;
-4. a brief reason for that recommendation;
-5. a self-contained copy-and-paste prompt for continuing from saved repository state.
-
-The continuation prompt must preserve completed work and instruct the next session not to repeat completed discovery, research, deterministic processing, uploads, or validation unless repository state indicates that repetition is necessary.
-
-If work is blocked, the continuation prompt must state the blocker and begin from resolving that blocker rather than restarting the completed task.
 
 Do not create artificial stage boundaries merely to switch models. Continue in the current session when the next work is appropriately handled by the current model and reasoning level.
 
