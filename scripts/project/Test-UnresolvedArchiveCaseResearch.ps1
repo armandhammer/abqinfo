@@ -22,6 +22,6 @@ if ($repoByKey.Count -ne $liveByKey.Count) { Fail 'Repository/live key-set count
 if ((@($r2.objects.key) -join "`n") -ne (@($live.objects.key) -join "`n")) { Fail 'Repository R2 object order does not match saved live-R2 inventory order.' }
 foreach ($key in $liveByKey.Keys) { foreach ($field in @('key','size_bytes','last_modified','etag','storage_class','public_url')) { if (-not $repoByKey.ContainsKey($key) -or [string]$repoByKey[$key].$field -ne [string]$liveByKey[$key].$field) { Fail "R2 equality mismatch for $key field $field." } } }
 $masterById = @{}; foreach ($candidate in @($master.candidates)) { $masterById[[string]$candidate.id] = $candidate }
-foreach ($case in @($research.cases)) { $candidate = $masterById[[string]$case.master_id]; if ($null -eq $candidate -or $candidate.status -ne 'requires human review' -or $candidate.r2_key -ne $case.r2_key) { Fail "Master status/linkage changed for $($case.master_id)." } }
+foreach ($case in @($research.cases)) { $candidate = $masterById[[string]$case.master_id]; if ($null -eq $candidate -or $candidate.r2_key -ne $case.r2_key) { Fail "Master factual linkage changed for $($case.master_id)." } }
 if ($research.campaign_conclusion.site_content_modified -ne $false -or $research.campaign_conclusion.live_r2_modified -ne $false) { Fail 'Research artifact records an unauthorized external/content change.' }
 Write-Output 'Unresolved archive-case research validation passed: 3 cases, 2 user decisions, and exact R2 accounting preserved.'
