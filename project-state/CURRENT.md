@@ -24,7 +24,9 @@ The 44 `add_to_inventory` rows in `project-state/discovery/undiscovered-document
 
 The official City DPM directory and 18 existing Bernalillo County project pages passed authoritative HTTP validation as a coherent live-service batch. Results are in `project-state/discovery/live-service-validation-batch-2026-09-17.json`. Five MRCOG DocumentCenter records encountered during selection are static PDFs and remain behind the normal archive-first gate.
 
-Resume ordinary review from `src-05705d25113d3f2e` or select a coherent saved queue. The newly integrated 2014 MS4 family should be reviewed as a package rather than as isolated attachments, and must pass the normal archive gate before publication.
+Capital Spending consolidation is the next ordinary-work priority, before the generic `src-05705d25113d3f2e` queue. The 2004 street-bond family review is complete: its distinct program, ballot, process, and enacted-resolution records remain separately visible and its transportation-specific records remain cross-listed; no synthetic master is warranted. The saved 2009, 2011, and 2013 GO-bond family research must be resumed from their artifacts, not restarted. Do not make a master record while their documented competing-version relationships remain unresolved.
+
+After the Capital Spending consolidation queue reaches a defensible family boundary, resume ordinary review from `src-05705d25113d3f2e`. The newly integrated 2014 MS4 family should be reviewed as a package rather than as isolated attachments, and must pass the normal archive gate before publication.
 
 ## External gates
 
