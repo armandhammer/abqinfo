@@ -22,6 +22,13 @@ foreach ($case in $safe) {
     if ($candidate.r2_key -ne $case.r2_key -or $candidate.r2_url -ne $object.public_url -or $candidate.r2_etag -ne $object.etag -or $candidate.r2_last_modified -ne $object.last_modified) { throw "Master linkage mismatch for $($case.action_id)." }
     foreach ($field in $fields) { if ([string]$object.$field -ne [string]$case.exact_proposed_local_accounting_action.r2_object.$field) { throw "R2 object mismatch for $($case.action_id), field $field." } }
 }
-foreach ($case in $unresolved) { if ($r2ByKey.ContainsKey([string]$case.r2_key)) { throw "Unresolved case $($case.action_id) was incorrectly added to R2 inventory." } }
+foreach ($case in $unresolved) {
+    $object = $r2ByKey[[string]$case.r2_key]
+    $id = [string]$case.identified_document.existing_master_candidate_id
+    $candidate = $masterById[$id]
+    if ($null -eq $object -or $null -eq $candidate) { throw "Final factual accounting is missing for unresolved case $($case.action_id)." }
+    if ($candidate.status -ne 'requires human review' -or $candidate.r2_key -ne $case.r2_key -or $candidate.r2_url -ne $object.public_url -or $candidate.r2_etag -ne $object.etag -or $candidate.r2_last_modified -ne $object.last_modified) { throw "Unresolved case $($case.action_id) changed status or has incorrect factual linkage." }
+    if (-not (@($candidate.processing_notes) -match 'storage accounting.*byte-identical.*editorial retention/publication remains unresolved')) { throw "Unresolved case $($case.action_id) is missing its processing note." }
+}
 if ([int]$r2.object_count -ne @($r2.objects).Count -or [int64]$r2.total_bytes -ne [int64](($r2.objects | Measure-Object -Property size_bytes -Sum).Sum)) { throw 'R2 inventory aggregate metadata is inconsistent.' }
-Write-Output 'Archive-reconciliation provenance repairs validation passed: 24 safe links/objects exact and 3 unresolved cases untouched.'
+Write-Output 'Archive-reconciliation provenance repairs validation passed: 24 safe links/objects exact and 3 editorial cases factually accounted with human-review status preserved.'
