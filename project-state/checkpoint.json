@@ -1,5 +1,5 @@
 {
-    "recorded_at":  "2026-09-17T00:50:49Z",
+    "recorded_at":  "2026-09-17T01:02:18Z",
     "completed_item_range":  "Reconciled the retained-source descendant-audit queue after the aggregate validator found 19 missing 2003-2004 bond-source entries. The omission was genuine stale queue state, not a validator defect: all 19 validated City PDF records use retained Plone /view source wrappers, matching 166 existing comparable queue records. Regenerating project-state/discovery/retained-source-audit-queue.json preserved all 550 existing records and states, added exactly 19 pending descendant crawls, and changed coverage from 569 eligible/550 queued/19 missing to 569/569/0. Full project validation and Hugo build passed. The completed DPM minutes batch remains preserved and was not reprocessed.",
     "verification_campaign_totals":  {
                                          "verified":  2194,
@@ -35,7 +35,7 @@
                      "src-0f5140179b1f087f is only an announcement for the International District Choice Neighborhood final plan; locate the authoritative final plan before visible use.",
                      "src-10209c5fcdce2906 is explicitly a 2026-02-02 draft stormwater BMP package; locate or verify an adopted final version before archival or visible use."
                  ],
-    "resume_command":  "Archive-reconciliation individual judgment review is complete: all 44 unique issue groups have evidence-backed conservative dispositions. Do not repeat crawl, verification, reduction, or review. Any inventory repair, content publication, or storage cleanup requires a separately authorized follow-up stage.",
+    "resume_command":  "Dry-run repair planning is complete with no repairs executed. Use the repair manifest to authorize a later local bookkeeping/provenance stage; do not repeat reconciliation crawl, verification, reduction, or judgment review.",
     "live_reconciliation":  {
                                 "recorded_at":  "2026-09-16T23:20:00Z",
                                 "stage":  "complete_mechanical_reconciliation",
@@ -57,7 +57,7 @@
                                                   "project-state/discovery/live-r2-public-verification-final-2026-09-16.json",
                                                   "project-state/discovery/live-abqinfo-archive-reconciliation-2026-09-16.json"
                                               ],
-                                "next_stage":  "individual_decision_review_complete_separate_authorization_required",
+                                "next_stage":  "dry_run_repair_manifest_complete_no_repairs_executed",
                                 "classification_artifacts":  [
                                                                  "project-state/discovery/live-abqinfo-archive-reconciliation-classification-2026-09-16.json",
                                                                  "project-state/discovery/live-abqinfo-archive-reconciliation-review-packet-2026-09-16.json"
@@ -91,7 +91,19 @@
                                                          "accounting_inventory_repair_only":  27,
                                                          "duplicate_retain_canonical":  2,
                                                          "probable_r2_deletion_candidates":  1,
-                                                         "unresolved_needs_user_decision":  0
-                                                     }
+                                                         "unresolved_needs_user_decision":  0,
+                                                         "probable_r2_deletion_candidates_note":  "Object-level count attached to the duplicate/superseded disposition; not an additional decision group."
+                                                     },
+                                "repair_manifest":  "project-state/discovery/live-abqinfo-archive-reconciliation-repair-manifest-2026-09-17.json",
+                                "repair_manifest_summary":  {
+                                                                "decision_groups":  44,
+                                                                "consolidated_actions":  42,
+                                                                "safe_local_bookkeeping_repairs":  14,
+                                                                "provenance_reconstruction_cases":  27,
+                                                                "no_action_retained_objects":  0,
+                                                                "duplicate_noncanonical_objects":  1,
+                                                                "exact_future_r2_deletion_candidates":  1,
+                                                                "unexpected_editorial_judgment_cases":  0
+                                                            }
                             }
 }

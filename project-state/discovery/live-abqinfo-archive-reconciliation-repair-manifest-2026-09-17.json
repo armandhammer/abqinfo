@@ -1,0 +1,2267 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-09-17T01:03:02.0536493Z",
+  "dry_run": true,
+  "execution_performed": false,
+  "source_decision_artifact": "project-state/discovery/live-abqinfo-archive-reconciliation-decisions-2026-09-17.json",
+  "source_classification_artifact": "project-state/discovery/live-abqinfo-archive-reconciliation-classification-2026-09-16.json",
+  "source_r2_inventory": "project-state/r2-inventory.json",
+  "summary": {
+    "decision_groups": 44,
+    "consolidated_actions": 42,
+    "safe_local_bookkeeping_repairs": 14,
+    "provenance_reconstruction_cases": 27,
+    "no_action_retained_objects": 0,
+    "duplicate_noncanonical_objects": 1,
+    "exact_future_r2_deletion_candidates": 1,
+    "unexpected_editorial_judgment_cases": 0
+  },
+  "coverage": {
+    "decision_group_ids": [
+      "i",
+      "issue-0001",
+      "issue-0002",
+      "issue-0003",
+      "issue-0004",
+      "issue-0005",
+      "issue-0006",
+      "issue-0007",
+      "issue-0008",
+      "issue-0009",
+      "issue-0010",
+      "issue-0011",
+      "issue-0012",
+      "issue-0013",
+      "issue-0014",
+      "issue-0015",
+      "issue-0017",
+      "issue-0018",
+      "issue-0019",
+      "issue-0037",
+      "issue-0043",
+      "issue-0045",
+      "issue-0046",
+      "issue-0047",
+      "issue-0049",
+      "issue-0050",
+      "issue-0051",
+      "issue-0052",
+      "issue-0053",
+      "issue-0054",
+      "issue-0056",
+      "issue-0057",
+      "issue-0058",
+      "issue-0059",
+      "issue-0061",
+      "issue-0063",
+      "issue-0064",
+      "issue-0068",
+      "issue-0073",
+      "issue-0075",
+      "issue-0077",
+      "issue-0078",
+      "issue-0099",
+      "issue-0100"
+    ],
+    "covered_by_actions": [
+      "i",
+      "issue-0001",
+      "issue-0002",
+      "issue-0003",
+      "issue-0004",
+      "issue-0005",
+      "issue-0006",
+      "issue-0007",
+      "issue-0008",
+      "issue-0009",
+      "issue-0010",
+      "issue-0011",
+      "issue-0012",
+      "issue-0013",
+      "issue-0014",
+      "issue-0015",
+      "issue-0017",
+      "issue-0018",
+      "issue-0019",
+      "issue-0037",
+      "issue-0043",
+      "issue-0045",
+      "issue-0046",
+      "issue-0047",
+      "issue-0049",
+      "issue-0050",
+      "issue-0051",
+      "issue-0052",
+      "issue-0053",
+      "issue-0054",
+      "issue-0056",
+      "issue-0057",
+      "issue-0058",
+      "issue-0059",
+      "issue-0061",
+      "issue-0063",
+      "issue-0064",
+      "issue-0068",
+      "issue-0073",
+      "issue-0075",
+      "issue-0077",
+      "issue-0078",
+      "issue-0099",
+      "issue-0100"
+    ],
+    "missing": [],
+    "duplicated_coverage": []
+  },
+  "actions": [
+    {
+      "action_id": "repair-001",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0001"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "city-data/capital-spending/cabq-2003-2012-capital-improvements-epc-recommendations.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "city-data/capital-spending/cabq-2003-2012-capital-improvements-epc-recommendations.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        "This 2003 capital-spending object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or documented authoritative source relationship."
+      ],
+      "proposed_follow_up": [
+        "Reconstruct authoritative provenance and inventory accounting before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-002",
+      "action_type": "safe_r2_inventory_backfill_without_publication",
+      "safety_gate": "safe_local_bookkeeping",
+      "covered_issue_group_ids": [
+        "issue-0002"
+      ],
+      "affected_master_ids": [
+        "src-93085b1bc76f4709"
+      ],
+      "affected_r2_keys": [
+        "city-data/capital-spending/cabq-2003-2012-decade-plan-capital-budget-resolution-r-03-215.pdf"
+      ],
+      "target_files": [
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Validated master record and live R2 object exist, but the repository R2 inventory record is absent; the decision explicitly withholds publication.",
+      "proposed_state": {
+        "key": "city-data/capital-spending/cabq-2003-2012-decade-plan-capital-budget-resolution-r-03-215.pdf",
+        "size_bytes": null,
+        "etag": null,
+        "public_url": null,
+        "source_master_ids": [
+          "src-93085b1bc76f4709"
+        ],
+        "publication": "no-op"
+      },
+      "evidence": [
+        {
+          "r2_key": "city-data/capital-spending/cabq-2003-2012-decade-plan-capital-budget-resolution-r-03-215.pdf",
+          "classifier_case": "unreferenced_known_master_publication_intent_unresolved",
+          "classifier_reason": "Active/validated master linkage exists without current/origin placement or live publication.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "master_id": "src-93085b1bc76f4709",
+          "status": "validated",
+          "title": "2003-2012 Decade Plan and 2003 Two-Year Capital Budget Resolution R-03-215",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/R-03-215.pdf/view",
+          "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/R-03-215.pdf",
+          "validation_status": "passed: authoritative source HTTP 200",
+          "processing_notes": [
+            "Enactment 49-2003. Amended by R-03-265 (src-d86965da6d5d26f2), which must be presented alongside it.",
+            "Original authoritative PDF selected for byte-identical archival without modification.",
+            "Original source file uploaded without modification; R2 object verified by HEAD."
+          ]
+        },
+        "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      ],
+      "proposed_follow_up": [
+        "Keep the object and master record unchanged. Reconsider only in an authorized editorial batch that confirms the exact visible placement and cross-listing."
+      ]
+    },
+    {
+      "action_id": "repair-003",
+      "action_type": "safe_r2_inventory_backfill_without_publication",
+      "safety_gate": "safe_local_bookkeeping",
+      "covered_issue_group_ids": [
+        "issue-0003"
+      ],
+      "affected_master_ids": [
+        "src-d86965da6d5d26f2"
+      ],
+      "affected_r2_keys": [
+        "city-data/capital-spending/cabq-2003-capital-budget-amendment-resolution-r-03-265.pdf"
+      ],
+      "target_files": [
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Validated master record and live R2 object exist, but the repository R2 inventory record is absent; the decision explicitly withholds publication.",
+      "proposed_state": {
+        "key": "city-data/capital-spending/cabq-2003-capital-budget-amendment-resolution-r-03-265.pdf",
+        "size_bytes": null,
+        "etag": null,
+        "public_url": null,
+        "source_master_ids": [
+          "src-d86965da6d5d26f2"
+        ],
+        "publication": "no-op"
+      },
+      "evidence": [
+        {
+          "r2_key": "city-data/capital-spending/cabq-2003-capital-budget-amendment-resolution-r-03-265.pdf",
+          "classifier_case": "unreferenced_known_master_publication_intent_unresolved",
+          "classifier_reason": "Active/validated master linkage exists without current/origin placement or live publication.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "master_id": "src-d86965da6d5d26f2",
+          "status": "validated",
+          "title": "2003 Capital Budget Amendment Resolution R-03-265",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/R-03-265.pdf/view",
+          "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/R-03-265.pdf",
+          "validation_status": "passed: authoritative source HTTP 200",
+          "processing_notes": [
+            "Enactment 79-2003. An enacted amending resolution, not an isolated floor amendment; it revises the adopted totals in R-03-215.",
+            "Original authoritative PDF selected for byte-identical archival without modification.",
+            "Original source file uploaded without modification; R2 object verified by HEAD."
+          ]
+        },
+        "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      ],
+      "proposed_follow_up": [
+        "Keep the object and master record unchanged. Reconsider only in an authorized editorial batch that confirms the exact visible placement and cross-listing."
+      ]
+    },
+    {
+      "action_id": "repair-004",
+      "action_type": "safe_r2_inventory_backfill_without_publication",
+      "safety_gate": "safe_local_bookkeeping",
+      "covered_issue_group_ids": [
+        "issue-0004"
+      ],
+      "affected_master_ids": [
+        "src-cae140d675779242"
+      ],
+      "affected_r2_keys": [
+        "city-data/capital-spending/cabq-2003-capital-improvements-priorities-resolution-r-02-30.pdf"
+      ],
+      "target_files": [
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Validated master record and live R2 object exist, but the repository R2 inventory record is absent; the decision explicitly withholds publication.",
+      "proposed_state": {
+        "key": "city-data/capital-spending/cabq-2003-capital-improvements-priorities-resolution-r-02-30.pdf",
+        "size_bytes": null,
+        "etag": null,
+        "public_url": null,
+        "source_master_ids": [
+          "src-cae140d675779242"
+        ],
+        "publication": "no-op"
+      },
+      "evidence": [
+        {
+          "r2_key": "city-data/capital-spending/cabq-2003-capital-improvements-priorities-resolution-r-02-30.pdf",
+          "classifier_case": "unreferenced_known_master_publication_intent_unresolved",
+          "classifier_reason": "Active/validated master linkage exists without current/origin placement or live publication.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "master_id": "src-cae140d675779242",
+          "status": "validated",
+          "title": "2003 Capital Improvements Plan Priorities and Criteria Resolution R-02-30",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/R-02-30.pdf/view",
+          "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/R-02-30.pdf",
+          "validation_status": "passed: authoritative source HTTP 200",
+          "processing_notes": [
+            "Enactment 34-2002. Directly parallel to resolutions R-2006-089 and R-2008-017 already published on the capital-spending page.",
+            "Original authoritative PDF selected for byte-identical archival without modification.",
+            "Original source file uploaded without modification; R2 object verified by HEAD."
+          ]
+        },
+        "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      ],
+      "proposed_follow_up": [
+        "Keep the object and master record unchanged. Reconsider only in an authorized editorial batch that confirms the exact visible placement and cross-listing."
+      ]
+    },
+    {
+      "action_id": "repair-005",
+      "action_type": "safe_r2_inventory_backfill_without_publication",
+      "safety_gate": "safe_local_bookkeeping",
+      "covered_issue_group_ids": [
+        "issue-0005"
+      ],
+      "affected_master_ids": [
+        "src-724dd13839ecb166"
+      ],
+      "affected_r2_keys": [
+        "city-data/capital-spending/cabq-2003-fire-protection-go-bond-project-scopes.pdf"
+      ],
+      "target_files": [
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Validated master record and live R2 object exist, but the repository R2 inventory record is absent; the decision explicitly withholds publication.",
+      "proposed_state": {
+        "key": "city-data/capital-spending/cabq-2003-fire-protection-go-bond-project-scopes.pdf",
+        "size_bytes": null,
+        "etag": null,
+        "public_url": null,
+        "source_master_ids": [
+          "src-724dd13839ecb166"
+        ],
+        "publication": "no-op"
+      },
+      "evidence": [
+        {
+          "r2_key": "city-data/capital-spending/cabq-2003-fire-protection-go-bond-project-scopes.pdf",
+          "classifier_case": "unreferenced_known_master_publication_intent_unresolved",
+          "classifier_reason": "Active/validated master linkage exists without current/origin placement or live publication.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "master_id": "src-724dd13839ecb166",
+          "status": "validated",
+          "title": "2003 Fire Protection General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/FireProtectionBonds.pdf/view",
+          "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/FireProtectionBonds.pdf",
+          "validation_status": "passed: authoritative source HTTP 200",
+          "processing_notes": [
+            "Visually reviewed because the PDF uses glyph-encoded text that defeats extraction; the rendered page is a detailed project-scope table totaling $6,039,565.",
+            "Original authoritative PDF selected for byte-identical archival without modification.",
+            "Original source file uploaded without modification; R2 object verified by HEAD."
+          ]
+        },
+        "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      ],
+      "proposed_follow_up": [
+        "Keep the object and master record unchanged. Reconsider only in an authorized editorial batch that confirms the exact visible placement and cross-listing."
+      ]
+    },
+    {
+      "action_id": "repair-006",
+      "action_type": "safe_r2_inventory_backfill_without_publication",
+      "safety_gate": "safe_local_bookkeeping",
+      "covered_issue_group_ids": [
+        "issue-0006"
+      ],
+      "affected_master_ids": [
+        "src-57a1e412247c863d"
+      ],
+      "affected_r2_keys": [
+        "city-data/capital-spending/cabq-2003-go-bond-funding-allocation-chart.pdf"
+      ],
+      "target_files": [
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Validated master record and live R2 object exist, but the repository R2 inventory record is absent; the decision explicitly withholds publication.",
+      "proposed_state": {
+        "key": "city-data/capital-spending/cabq-2003-go-bond-funding-allocation-chart.pdf",
+        "size_bytes": null,
+        "etag": null,
+        "public_url": null,
+        "source_master_ids": [
+          "src-57a1e412247c863d"
+        ],
+        "publication": "no-op"
+      },
+      "evidence": [
+        {
+          "r2_key": "city-data/capital-spending/cabq-2003-go-bond-funding-allocation-chart.pdf",
+          "classifier_case": "unreferenced_known_master_publication_intent_unresolved",
+          "classifier_reason": "Active/validated master linkage exists without current/origin placement or live publication.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "master_id": "src-57a1e412247c863d",
+          "status": "validated",
+          "title": "2003 General Obligation Bond Funding Allocation Chart",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/FundingAllocationChart.pdf/view",
+          "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/FundingAllocationChart.pdf",
+          "validation_status": "passed: authoritative source HTTP 200",
+          "processing_notes": [
+            "Visually reviewed: a detailed allocation comparison table, unlike the one-page percentage pie chart src-7405cfc41e5500c4 that was excluded. Parallel to the 2009 funding allocation chart already published.",
+            "Original authoritative PDF selected for byte-identical archival without modification.",
+            "Original source file uploaded without modification; R2 object verified by HEAD."
+          ]
+        },
+        "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      ],
+      "proposed_follow_up": [
+        "Keep the object and master record unchanged. Reconsider only in an authorized editorial batch that confirms the exact visible placement and cross-listing."
+      ]
+    },
+    {
+      "action_id": "repair-007",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0007"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "city-data/capital-spending/cabq-2003-go-bond-program-frequently-asked-questions.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "city-data/capital-spending/cabq-2003-go-bond-program-frequently-asked-questions.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        "This 2003 capital-spending object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or documented authoritative source relationship."
+      ],
+      "proposed_follow_up": [
+        "Reconstruct authoritative provenance and inventory accounting before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-008",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0008"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "city-data/capital-spending/cabq-2003-go-bond-program-purpose-allocation-summary.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "city-data/capital-spending/cabq-2003-go-bond-program-purpose-allocation-summary.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        "This 2003 capital-spending object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or documented authoritative source relationship."
+      ],
+      "proposed_follow_up": [
+        "Reconstruct authoritative provenance and inventory accounting before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-009",
+      "action_type": "safe_r2_inventory_backfill_without_publication",
+      "safety_gate": "safe_local_bookkeeping",
+      "covered_issue_group_ids": [
+        "issue-0009"
+      ],
+      "affected_master_ids": [
+        "src-3dfd629f27870dc1"
+      ],
+      "affected_r2_keys": [
+        "city-data/capital-spending/cabq-2003-go-bond-rehabilitation-maintenance-deficiency-summary.pdf"
+      ],
+      "target_files": [
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Validated master record and live R2 object exist, but the repository R2 inventory record is absent; the decision explicitly withholds publication.",
+      "proposed_state": {
+        "key": "city-data/capital-spending/cabq-2003-go-bond-rehabilitation-maintenance-deficiency-summary.pdf",
+        "size_bytes": null,
+        "etag": null,
+        "public_url": null,
+        "source_master_ids": [
+          "src-3dfd629f27870dc1"
+        ],
+        "publication": "no-op"
+      },
+      "evidence": [
+        {
+          "r2_key": "city-data/capital-spending/cabq-2003-go-bond-rehabilitation-maintenance-deficiency-summary.pdf",
+          "classifier_case": "unreferenced_known_master_publication_intent_unresolved",
+          "classifier_reason": "Active/validated master linkage exists without current/origin placement or live publication.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "master_id": "src-3dfd629f27870dc1",
+          "status": "validated",
+          "title": "2003 General Obligation Bond Rehabilitation, Maintenance, and Deficiency Remediation Summary",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/RehabMaintSumm.pdf/view",
+          "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/RehabMaintSumm.pdf",
+          "validation_status": "passed: authoritative source HTTP 200",
+          "processing_notes": [
+            "Visually reviewed: a detailed seven-category funding table with percentages, not a summary graphic.",
+            "Original authoritative PDF selected for byte-identical archival without modification.",
+            "Original source file uploaded without modification; R2 object verified by HEAD."
+          ]
+        },
+        "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      ],
+      "proposed_follow_up": [
+        "Keep the object and master record unchanged. Reconsider only in an authorized editorial batch that confirms the exact visible placement and cross-listing."
+      ]
+    },
+    {
+      "action_id": "repair-010",
+      "action_type": "safe_r2_inventory_backfill_without_publication",
+      "safety_gate": "safe_local_bookkeeping",
+      "covered_issue_group_ids": [
+        "issue-0010"
+      ],
+      "affected_master_ids": [
+        "src-888427a6abc5edf0"
+      ],
+      "affected_r2_keys": [
+        "city-data/capital-spending/cabq-2003-library-go-bond-project-scopes.pdf"
+      ],
+      "target_files": [
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Validated master record and live R2 object exist, but the repository R2 inventory record is absent; the decision explicitly withholds publication.",
+      "proposed_state": {
+        "key": "city-data/capital-spending/cabq-2003-library-go-bond-project-scopes.pdf",
+        "size_bytes": null,
+        "etag": null,
+        "public_url": null,
+        "source_master_ids": [
+          "src-888427a6abc5edf0"
+        ],
+        "publication": "no-op"
+      },
+      "evidence": [
+        {
+          "r2_key": "city-data/capital-spending/cabq-2003-library-go-bond-project-scopes.pdf",
+          "classifier_case": "unreferenced_known_master_publication_intent_unresolved",
+          "classifier_reason": "Active/validated master linkage exists without current/origin placement or live publication.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "master_id": "src-888427a6abc5edf0",
+          "status": "validated",
+          "title": "2003 Library General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/LibraryBonds.pdf/view",
+          "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/LibraryBonds.pdf",
+          "validation_status": "passed: authoritative source HTTP 200",
+          "processing_notes": [
+            "One-page project-scope table with 7 dollar figures.",
+            "Original authoritative PDF selected for byte-identical archival without modification.",
+            "Original source file uploaded without modification; R2 object verified by HEAD."
+          ]
+        },
+        "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      ],
+      "proposed_follow_up": [
+        "Keep the object and master record unchanged. Reconsider only in an authorized editorial batch that confirms the exact visible placement and cross-listing."
+      ]
+    },
+    {
+      "action_id": "repair-011",
+      "action_type": "safe_r2_inventory_backfill_without_publication",
+      "safety_gate": "safe_local_bookkeeping",
+      "covered_issue_group_ids": [
+        "issue-0011"
+      ],
+      "affected_master_ids": [
+        "src-96e217080e84c14e"
+      ],
+      "affected_r2_keys": [
+        "city-data/capital-spending/cabq-2003-parks-recreation-go-bond-project-scopes.pdf"
+      ],
+      "target_files": [
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Validated master record and live R2 object exist, but the repository R2 inventory record is absent; the decision explicitly withholds publication.",
+      "proposed_state": {
+        "key": "city-data/capital-spending/cabq-2003-parks-recreation-go-bond-project-scopes.pdf",
+        "size_bytes": null,
+        "etag": null,
+        "public_url": null,
+        "source_master_ids": [
+          "src-96e217080e84c14e"
+        ],
+        "publication": "no-op"
+      },
+      "evidence": [
+        {
+          "r2_key": "city-data/capital-spending/cabq-2003-parks-recreation-go-bond-project-scopes.pdf",
+          "classifier_case": "unreferenced_known_master_publication_intent_unresolved",
+          "classifier_reason": "Active/validated master linkage exists without current/origin placement or live publication.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "master_id": "src-96e217080e84c14e",
+          "status": "validated",
+          "title": "2003 Parks and Recreation General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/ParksRecreationBonds.pdf/view",
+          "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/ParksRecreationBonds.pdf",
+          "validation_status": "passed: authoritative source HTTP 200",
+          "processing_notes": [
+            "Five-page project-scope table with 46 dollar figures.",
+            "Original authoritative PDF selected for byte-identical archival without modification.",
+            "Original source file uploaded without modification; R2 object verified by HEAD."
+          ]
+        },
+        "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      ],
+      "proposed_follow_up": [
+        "Keep the object and master record unchanged. Reconsider only in an authorized editorial batch that confirms the exact visible placement and cross-listing."
+      ]
+    },
+    {
+      "action_id": "repair-012",
+      "action_type": "safe_r2_inventory_backfill_without_publication",
+      "safety_gate": "safe_local_bookkeeping",
+      "covered_issue_group_ids": [
+        "issue-0012"
+      ],
+      "affected_master_ids": [
+        "src-ea516f826e5da86a"
+      ],
+      "affected_r2_keys": [
+        "city-data/capital-spending/cabq-2003-police-go-bond-project-scopes.pdf"
+      ],
+      "target_files": [
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Validated master record and live R2 object exist, but the repository R2 inventory record is absent; the decision explicitly withholds publication.",
+      "proposed_state": {
+        "key": "city-data/capital-spending/cabq-2003-police-go-bond-project-scopes.pdf",
+        "size_bytes": null,
+        "etag": null,
+        "public_url": null,
+        "source_master_ids": [
+          "src-ea516f826e5da86a"
+        ],
+        "publication": "no-op"
+      },
+      "evidence": [
+        {
+          "r2_key": "city-data/capital-spending/cabq-2003-police-go-bond-project-scopes.pdf",
+          "classifier_case": "unreferenced_known_master_publication_intent_unresolved",
+          "classifier_reason": "Active/validated master linkage exists without current/origin placement or live publication.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "master_id": "src-ea516f826e5da86a",
+          "status": "validated",
+          "title": "2003 Police General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/PoliceBonds.pdf/view",
+          "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/PoliceBonds.pdf",
+          "validation_status": "passed: authoritative source HTTP 200",
+          "processing_notes": [
+            "One-page project-scope table with 10 dollar figures.",
+            "Original authoritative PDF selected for byte-identical archival without modification.",
+            "Original source file uploaded without modification; R2 object verified by HEAD."
+          ]
+        },
+        "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      ],
+      "proposed_follow_up": [
+        "Keep the object and master record unchanged. Reconsider only in an authorized editorial batch that confirms the exact visible placement and cross-listing."
+      ]
+    },
+    {
+      "action_id": "repair-013",
+      "action_type": "safe_r2_inventory_backfill_without_publication",
+      "safety_gate": "safe_local_bookkeeping",
+      "covered_issue_group_ids": [
+        "issue-0013"
+      ],
+      "affected_master_ids": [
+        "src-a24b9d451e022e8f"
+      ],
+      "affected_r2_keys": [
+        "city-data/capital-spending/cabq-2003-public-facilities-equipment-system-modernization-go-bond-project-scopes.pdf"
+      ],
+      "target_files": [
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Validated master record and live R2 object exist, but the repository R2 inventory record is absent; the decision explicitly withholds publication.",
+      "proposed_state": {
+        "key": "city-data/capital-spending/cabq-2003-public-facilities-equipment-system-modernization-go-bond-project-scopes.pdf",
+        "size_bytes": null,
+        "etag": null,
+        "public_url": null,
+        "source_master_ids": [
+          "src-a24b9d451e022e8f"
+        ],
+        "publication": "no-op"
+      },
+      "evidence": [
+        {
+          "r2_key": "city-data/capital-spending/cabq-2003-public-facilities-equipment-system-modernization-go-bond-project-scopes.pdf",
+          "classifier_case": "unreferenced_known_master_publication_intent_unresolved",
+          "classifier_reason": "Active/validated master linkage exists without current/origin placement or live publication.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "master_id": "src-a24b9d451e022e8f",
+          "status": "validated",
+          "title": "2003 Public Facilities, Equipment, and System Modernization General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/PublicFacEquipment.pdf/view",
+          "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/PublicFacEquipment.pdf",
+          "validation_status": "passed: authoritative source HTTP 200",
+          "processing_notes": [
+            "Two-page project-scope table with 21 dollar figures.",
+            "Original authoritative PDF selected for byte-identical archival without modification.",
+            "Original source file uploaded without modification; R2 object verified by HEAD."
+          ]
+        },
+        "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      ],
+      "proposed_follow_up": [
+        "Keep the object and master record unchanged. Reconsider only in an authorized editorial batch that confirms the exact visible placement and cross-listing."
+      ]
+    },
+    {
+      "action_id": "repair-014",
+      "action_type": "safe_r2_inventory_backfill_without_publication",
+      "safety_gate": "safe_local_bookkeeping",
+      "covered_issue_group_ids": [
+        "issue-0014"
+      ],
+      "affected_master_ids": [
+        "src-e7cd892adf805950"
+      ],
+      "affected_r2_keys": [
+        "city-data/capital-spending/cabq-2003-public-transportation-go-bond-project-scopes.pdf"
+      ],
+      "target_files": [
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Validated master record and live R2 object exist, but the repository R2 inventory record is absent; the decision explicitly withholds publication.",
+      "proposed_state": {
+        "key": "city-data/capital-spending/cabq-2003-public-transportation-go-bond-project-scopes.pdf",
+        "size_bytes": null,
+        "etag": null,
+        "public_url": null,
+        "source_master_ids": [
+          "src-e7cd892adf805950"
+        ],
+        "publication": "no-op"
+      },
+      "evidence": [
+        {
+          "r2_key": "city-data/capital-spending/cabq-2003-public-transportation-go-bond-project-scopes.pdf",
+          "classifier_case": "unreferenced_known_master_publication_intent_unresolved",
+          "classifier_reason": "Active/validated master linkage exists without current/origin placement or live publication.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "master_id": "src-e7cd892adf805950",
+          "status": "validated",
+          "title": "2003 Public Transportation General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/PublicTransportation.pdf/view",
+          "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/PublicTransportation.pdf",
+          "validation_status": "passed: authoritative source HTTP 200",
+          "processing_notes": [
+            "One-page project-scope table with 11 dollar figures.",
+            "Original authoritative PDF selected for byte-identical archival without modification.",
+            "Original source file uploaded without modification; R2 object verified by HEAD."
+          ]
+        },
+        "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      ],
+      "proposed_follow_up": [
+        "Keep the object and master record unchanged. Reconsider only in an authorized editorial batch that confirms the exact visible placement and cross-listing."
+      ]
+    },
+    {
+      "action_id": "repair-015",
+      "action_type": "safe_r2_inventory_backfill_without_publication",
+      "safety_gate": "safe_local_bookkeeping",
+      "covered_issue_group_ids": [
+        "issue-0015",
+        "i"
+      ],
+      "affected_master_ids": [
+        "src-321df68eff322421"
+      ],
+      "affected_r2_keys": [
+        "city-data/capital-spending/cabq-2003-senior-family-community-center-go-bond-project-scopes.pdf"
+      ],
+      "target_files": [
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Validated master record and live R2 object exist, but the repository R2 inventory record is absent; the decision explicitly withholds publication.",
+      "proposed_state": {
+        "key": "city-data/capital-spending/cabq-2003-senior-family-community-center-go-bond-project-scopes.pdf",
+        "size_bytes": null,
+        "etag": null,
+        "public_url": null,
+        "source_master_ids": [
+          "src-321df68eff322421"
+        ],
+        "publication": "no-op"
+      },
+      "evidence": [
+        {
+          "r2_key": "city-data/capital-spending/cabq-2003-senior-family-community-center-go-bond-project-scopes.pdf",
+          "classifier_case": "unreferenced_known_master_publication_intent_unresolved",
+          "classifier_reason": "Active/validated master linkage exists without current/origin placement or live publication.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "master_id": "src-321df68eff322421",
+          "status": "validated",
+          "title": "2003 Senior, Family, and Community Center General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/SeniorFamilyComm.pdf/view",
+          "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/SeniorFamilyComm.pdf",
+          "validation_status": "passed: authoritative source HTTP 200",
+          "processing_notes": [
+            "Two-page project-scope table with 19 dollar figures.",
+            "Original authoritative PDF selected for byte-identical archival without modification.",
+            "Original source file uploaded without modification; R2 object verified by HEAD."
+          ]
+        },
+        "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization.",
+        {
+          "r2_key": "city-data/capital-spending/cabq-2003-senior-family-community-center-go-bond-project-scopes.pdf",
+          "classifier_case": "expected_link_absent_from_repository_content",
+          "classifier_reason": "Expected record has no current/origin exact link or history evidence.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "master_id": "src-321df68eff322421",
+          "status": "validated",
+          "title": "2003 Senior, Family, and Community Center General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/SeniorFamilyComm.pdf/view",
+          "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/SeniorFamilyComm.pdf",
+          "validation_status": "passed: authoritative source HTTP 200",
+          "processing_notes": [
+            "Two-page project-scope table with 19 dollar figures.",
+            "Original authoritative PDF selected for byte-identical archival without modification.",
+            "Original source file uploaded without modification; R2 object verified by HEAD."
+          ]
+        },
+        "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      ],
+      "proposed_follow_up": [
+        "Keep the object and master record unchanged. Reconsider only in an authorized editorial batch that confirms the exact visible placement and cross-listing.",
+        "Keep the object and master record unchanged. Reconsider only in an authorized editorial batch that confirms the exact visible placement and cross-listing."
+      ]
+    },
+    {
+      "action_id": "repair-016",
+      "action_type": "safe_r2_inventory_backfill_without_publication",
+      "safety_gate": "safe_local_bookkeeping",
+      "covered_issue_group_ids": [
+        "issue-0017"
+      ],
+      "affected_master_ids": [
+        "src-6fc996f849849028"
+      ],
+      "affected_r2_keys": [
+        "city-data/capital-spending/cabq-2003-street-go-bond-project-scopes.pdf"
+      ],
+      "target_files": [
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Validated master record and live R2 object exist, but the repository R2 inventory record is absent; the decision explicitly withholds publication.",
+      "proposed_state": {
+        "key": "city-data/capital-spending/cabq-2003-street-go-bond-project-scopes.pdf",
+        "size_bytes": null,
+        "etag": null,
+        "public_url": null,
+        "source_master_ids": [
+          "src-6fc996f849849028"
+        ],
+        "publication": "no-op"
+      },
+      "evidence": [
+        {
+          "r2_key": "city-data/capital-spending/cabq-2003-street-go-bond-project-scopes.pdf",
+          "classifier_case": "unreferenced_known_master_publication_intent_unresolved",
+          "classifier_reason": "Active/validated master linkage exists without current/origin placement or live publication.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "master_id": "src-6fc996f849849028",
+          "status": "validated",
+          "title": "2003 Street General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/StreetBonds.pdf/view",
+          "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/StreetBonds.pdf",
+          "validation_status": "passed: authoritative source HTTP 200",
+          "processing_notes": [
+            "Seven-page project-scope table with 54 dollar figures; the same document class as the already-validated 2003 storm sewer scopes src-e28f489ec0fba72f.",
+            "Original authoritative PDF selected for byte-identical archival without modification.",
+            "Original source file uploaded without modification; R2 object verified by HEAD."
+          ]
+        },
+        "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      ],
+      "proposed_follow_up": [
+        "Keep the object and master record unchanged. Reconsider only in an authorized editorial batch that confirms the exact visible placement and cross-listing."
+      ]
+    },
+    {
+      "action_id": "repair-017",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0018"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "city-data/capital-spending/cabq-2003-water-master-plan-infrastructure-zone-map.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "city-data/capital-spending/cabq-2003-water-master-plan-infrastructure-zone-map.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        "This 2003 capital-spending object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or documented authoritative source relationship."
+      ],
+      "proposed_follow_up": [
+        "Reconstruct authoritative provenance and inventory accounting before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-018",
+      "action_type": "safe_r2_inventory_backfill_without_publication",
+      "safety_gate": "safe_local_bookkeeping",
+      "covered_issue_group_ids": [
+        "issue-0019"
+      ],
+      "affected_master_ids": [
+        "src-3c7653f64815b4ad"
+      ],
+      "affected_r2_keys": [
+        "city-data/capital-spending/cabq-2003-zoo-biological-park-museum-go-bond-project-scopes.pdf"
+      ],
+      "target_files": [
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Validated master record and live R2 object exist, but the repository R2 inventory record is absent; the decision explicitly withholds publication.",
+      "proposed_state": {
+        "key": "city-data/capital-spending/cabq-2003-zoo-biological-park-museum-go-bond-project-scopes.pdf",
+        "size_bytes": null,
+        "etag": null,
+        "public_url": null,
+        "source_master_ids": [
+          "src-3c7653f64815b4ad"
+        ],
+        "publication": "no-op"
+      },
+      "evidence": [
+        {
+          "r2_key": "city-data/capital-spending/cabq-2003-zoo-biological-park-museum-go-bond-project-scopes.pdf",
+          "classifier_case": "unreferenced_known_master_publication_intent_unresolved",
+          "classifier_reason": "Active/validated master linkage exists without current/origin placement or live publication.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "master_id": "src-3c7653f64815b4ad",
+          "status": "validated",
+          "title": "2003 Zoo, Biological Park, and Museum General Obligation Bond Project Scopes",
+          "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/ZooBioParkMuseum.pdf/view",
+          "direct_file_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/ZooBioParkMuseum.pdf",
+          "validation_status": "passed: authoritative source HTTP 200",
+          "processing_notes": [
+            "Two-page project-scope table with 14 dollar figures.",
+            "Original authoritative PDF selected for byte-identical archival without modification.",
+            "Original source file uploaded without modification; R2 object verified by HEAD."
+          ]
+        },
+        "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      ],
+      "proposed_follow_up": [
+        "Keep the object and master record unchanged. Reconsider only in an authorized editorial batch that confirms the exact visible placement and cross-listing."
+      ]
+    },
+    {
+      "action_id": "repair-019",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0037"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "city-data/capital-spending/cabq-go-bond-operating-maintenance-cost-impacts-2003.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "city-data/capital-spending/cabq-go-bond-operating-maintenance-cost-impacts-2003.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        "This 2003 capital-spending object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or documented authoritative source relationship."
+      ],
+      "proposed_follow_up": [
+        "Reconstruct authoritative provenance and inventory accounting before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-020",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0043"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "development-land-use/development-process/cabq-dpm-executive-committee-agenda-2018-04-04-approved-minutes-not-located.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agenda-2018-04-04-approved-minutes-not-located.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "saved_provenance_artifacts": [
+            "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json",
+            "project-state/discovery/dpm-executive-committee-minutes-r2-decisions-2026-09-16.json",
+            "project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json"
+          ],
+          "finding": "No exact matching key is recorded in the approved 18-minute batch artifact; therefore this object is not treated as publication-approved."
+        },
+        "This dated DPM object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or saved exact-date approval record. Its filename alone is insufficient to publish it."
+      ],
+      "proposed_follow_up": [
+        "Create or reconcile a master/provenance record using the applicable DPM minutes or agenda research before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-021",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0045"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2014-08-20.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2014-08-20.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "saved_provenance_artifacts": [
+            "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json",
+            "project-state/discovery/dpm-executive-committee-minutes-r2-decisions-2026-09-16.json",
+            "project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json"
+          ],
+          "finding": "No exact matching key is recorded in the approved 18-minute batch artifact; therefore this object is not treated as publication-approved."
+        },
+        "This dated DPM object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or saved exact-date approval record. Its filename alone is insufficient to publish it."
+      ],
+      "proposed_follow_up": [
+        "Create or reconcile a master/provenance record using the applicable DPM minutes or agenda research before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-022",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0046"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2014-09-24.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2014-09-24.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "saved_provenance_artifacts": [
+            "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json",
+            "project-state/discovery/dpm-executive-committee-minutes-r2-decisions-2026-09-16.json",
+            "project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json"
+          ],
+          "finding": "No exact matching key is recorded in the approved 18-minute batch artifact; therefore this object is not treated as publication-approved."
+        },
+        "This dated DPM object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or saved exact-date approval record. Its filename alone is insufficient to publish it."
+      ],
+      "proposed_follow_up": [
+        "Create or reconcile a master/provenance record using the applicable DPM minutes or agenda research before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-023",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0047"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2014-11-19.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2014-11-19.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "saved_provenance_artifacts": [
+            "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json",
+            "project-state/discovery/dpm-executive-committee-minutes-r2-decisions-2026-09-16.json",
+            "project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json"
+          ],
+          "finding": "No exact matching key is recorded in the approved 18-minute batch artifact; therefore this object is not treated as publication-approved."
+        },
+        "This dated DPM object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or saved exact-date approval record. Its filename alone is insufficient to publish it."
+      ],
+      "proposed_follow_up": [
+        "Create or reconcile a master/provenance record using the applicable DPM minutes or agenda research before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-024",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0049"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2015-01-21.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2015-01-21.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "saved_provenance_artifacts": [
+            "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json",
+            "project-state/discovery/dpm-executive-committee-minutes-r2-decisions-2026-09-16.json",
+            "project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json"
+          ],
+          "finding": "No exact matching key is recorded in the approved 18-minute batch artifact; therefore this object is not treated as publication-approved."
+        },
+        "This dated DPM object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or saved exact-date approval record. Its filename alone is insufficient to publish it."
+      ],
+      "proposed_follow_up": [
+        "Create or reconcile a master/provenance record using the applicable DPM minutes or agenda research before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-025",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0050"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2015-03-18.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2015-03-18.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "saved_provenance_artifacts": [
+            "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json",
+            "project-state/discovery/dpm-executive-committee-minutes-r2-decisions-2026-09-16.json",
+            "project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json"
+          ],
+          "finding": "No exact matching key is recorded in the approved 18-minute batch artifact; therefore this object is not treated as publication-approved."
+        },
+        "This dated DPM object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or saved exact-date approval record. Its filename alone is insufficient to publish it."
+      ],
+      "proposed_follow_up": [
+        "Create or reconcile a master/provenance record using the applicable DPM minutes or agenda research before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-026",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0051"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2015-04-15.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2015-04-15.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "saved_provenance_artifacts": [
+            "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json",
+            "project-state/discovery/dpm-executive-committee-minutes-r2-decisions-2026-09-16.json",
+            "project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json"
+          ],
+          "finding": "No exact matching key is recorded in the approved 18-minute batch artifact; therefore this object is not treated as publication-approved."
+        },
+        "This dated DPM object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or saved exact-date approval record. Its filename alone is insufficient to publish it."
+      ],
+      "proposed_follow_up": [
+        "Create or reconcile a master/provenance record using the applicable DPM minutes or agenda research before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-027",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0052"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2015-05-20.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2015-05-20.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "saved_provenance_artifacts": [
+            "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json",
+            "project-state/discovery/dpm-executive-committee-minutes-r2-decisions-2026-09-16.json",
+            "project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json"
+          ],
+          "finding": "No exact matching key is recorded in the approved 18-minute batch artifact; therefore this object is not treated as publication-approved."
+        },
+        "This dated DPM object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or saved exact-date approval record. Its filename alone is insufficient to publish it."
+      ],
+      "proposed_follow_up": [
+        "Create or reconcile a master/provenance record using the applicable DPM minutes or agenda research before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-028",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0053"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2015-06-17.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2015-06-17.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "saved_provenance_artifacts": [
+            "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json",
+            "project-state/discovery/dpm-executive-committee-minutes-r2-decisions-2026-09-16.json",
+            "project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json"
+          ],
+          "finding": "No exact matching key is recorded in the approved 18-minute batch artifact; therefore this object is not treated as publication-approved."
+        },
+        "This dated DPM object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or saved exact-date approval record. Its filename alone is insufficient to publish it."
+      ],
+      "proposed_follow_up": [
+        "Create or reconcile a master/provenance record using the applicable DPM minutes or agenda research before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-029",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0054"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2015-10-21.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2015-10-21.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "saved_provenance_artifacts": [
+            "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json",
+            "project-state/discovery/dpm-executive-committee-minutes-r2-decisions-2026-09-16.json",
+            "project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json"
+          ],
+          "finding": "No exact matching key is recorded in the approved 18-minute batch artifact; therefore this object is not treated as publication-approved."
+        },
+        "This dated DPM object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or saved exact-date approval record. Its filename alone is insufficient to publish it."
+      ],
+      "proposed_follow_up": [
+        "Create or reconcile a master/provenance record using the applicable DPM minutes or agenda research before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-030",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0056"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-01-20.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-01-20.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "saved_provenance_artifacts": [
+            "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json",
+            "project-state/discovery/dpm-executive-committee-minutes-r2-decisions-2026-09-16.json",
+            "project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json"
+          ],
+          "finding": "No exact matching key is recorded in the approved 18-minute batch artifact; therefore this object is not treated as publication-approved."
+        },
+        "This dated DPM object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or saved exact-date approval record. Its filename alone is insufficient to publish it."
+      ],
+      "proposed_follow_up": [
+        "Create or reconcile a master/provenance record using the applicable DPM minutes or agenda research before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-031",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0057"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-06-15.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-06-15.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "saved_provenance_artifacts": [
+            "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json",
+            "project-state/discovery/dpm-executive-committee-minutes-r2-decisions-2026-09-16.json",
+            "project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json"
+          ],
+          "finding": "No exact matching key is recorded in the approved 18-minute batch artifact; therefore this object is not treated as publication-approved."
+        },
+        "This dated DPM object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or saved exact-date approval record. Its filename alone is insufficient to publish it."
+      ],
+      "proposed_follow_up": [
+        "Create or reconcile a master/provenance record using the applicable DPM minutes or agenda research before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-032",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0058"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-07-20.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-07-20.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "saved_provenance_artifacts": [
+            "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json",
+            "project-state/discovery/dpm-executive-committee-minutes-r2-decisions-2026-09-16.json",
+            "project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json"
+          ],
+          "finding": "No exact matching key is recorded in the approved 18-minute batch artifact; therefore this object is not treated as publication-approved."
+        },
+        "This dated DPM object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or saved exact-date approval record. Its filename alone is insufficient to publish it."
+      ],
+      "proposed_follow_up": [
+        "Create or reconcile a master/provenance record using the applicable DPM minutes or agenda research before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-033",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0059"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-08-17.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-08-17.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "saved_provenance_artifacts": [
+            "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json",
+            "project-state/discovery/dpm-executive-committee-minutes-r2-decisions-2026-09-16.json",
+            "project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json"
+          ],
+          "finding": "No exact matching key is recorded in the approved 18-minute batch artifact; therefore this object is not treated as publication-approved."
+        },
+        "This dated DPM object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or saved exact-date approval record. Its filename alone is insufficient to publish it."
+      ],
+      "proposed_follow_up": [
+        "Create or reconcile a master/provenance record using the applicable DPM minutes or agenda research before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-034",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0061"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-09-21.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-09-21.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "saved_provenance_artifacts": [
+            "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json",
+            "project-state/discovery/dpm-executive-committee-minutes-r2-decisions-2026-09-16.json",
+            "project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json"
+          ],
+          "finding": "No exact matching key is recorded in the approved 18-minute batch artifact; therefore this object is not treated as publication-approved."
+        },
+        "This dated DPM object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or saved exact-date approval record. Its filename alone is insufficient to publish it."
+      ],
+      "proposed_follow_up": [
+        "Create or reconcile a master/provenance record using the applicable DPM minutes or agenda research before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-035",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0063"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-11-16.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-11-16.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "saved_provenance_artifacts": [
+            "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json",
+            "project-state/discovery/dpm-executive-committee-minutes-r2-decisions-2026-09-16.json",
+            "project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json"
+          ],
+          "finding": "No exact matching key is recorded in the approved 18-minute batch artifact; therefore this object is not treated as publication-approved."
+        },
+        "This dated DPM object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or saved exact-date approval record. Its filename alone is insufficient to publish it."
+      ],
+      "proposed_follow_up": [
+        "Create or reconcile a master/provenance record using the applicable DPM minutes or agenda research before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-036",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0064"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-12-07.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-12-07.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "saved_provenance_artifacts": [
+            "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json",
+            "project-state/discovery/dpm-executive-committee-minutes-r2-decisions-2026-09-16.json",
+            "project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json"
+          ],
+          "finding": "No exact matching key is recorded in the approved 18-minute batch artifact; therefore this object is not treated as publication-approved."
+        },
+        "This dated DPM object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or saved exact-date approval record. Its filename alone is insufficient to publish it."
+      ],
+      "proposed_follow_up": [
+        "Create or reconcile a master/provenance record using the applicable DPM minutes or agenda research before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-037",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0068"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-04-05.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-04-05.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "saved_provenance_artifacts": [
+            "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json",
+            "project-state/discovery/dpm-executive-committee-minutes-r2-decisions-2026-09-16.json",
+            "project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json"
+          ],
+          "finding": "No exact matching key is recorded in the approved 18-minute batch artifact; therefore this object is not treated as publication-approved."
+        },
+        "This dated DPM object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or saved exact-date approval record. Its filename alone is insufficient to publish it."
+      ],
+      "proposed_follow_up": [
+        "Create or reconcile a master/provenance record using the applicable DPM minutes or agenda research before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-038",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0073"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-07-19.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-07-19.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "saved_provenance_artifacts": [
+            "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json",
+            "project-state/discovery/dpm-executive-committee-minutes-r2-decisions-2026-09-16.json",
+            "project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json"
+          ],
+          "finding": "No exact matching key is recorded in the approved 18-minute batch artifact; therefore this object is not treated as publication-approved."
+        },
+        "This dated DPM object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or saved exact-date approval record. Its filename alone is insufficient to publish it."
+      ],
+      "proposed_follow_up": [
+        "Create or reconcile a master/provenance record using the applicable DPM minutes or agenda research before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-039",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0075"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-09-20.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-09-20.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "saved_provenance_artifacts": [
+            "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json",
+            "project-state/discovery/dpm-executive-committee-minutes-r2-decisions-2026-09-16.json",
+            "project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json"
+          ],
+          "finding": "No exact matching key is recorded in the approved 18-minute batch artifact; therefore this object is not treated as publication-approved."
+        },
+        "This dated DPM object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or saved exact-date approval record. Its filename alone is insufficient to publish it."
+      ],
+      "proposed_follow_up": [
+        "Create or reconcile a master/provenance record using the applicable DPM minutes or agenda research before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-040",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0077"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-10-18.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-10-18.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "saved_provenance_artifacts": [
+            "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json",
+            "project-state/discovery/dpm-executive-committee-minutes-r2-decisions-2026-09-16.json",
+            "project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json"
+          ],
+          "finding": "No exact matching key is recorded in the approved 18-minute batch artifact; therefore this object is not treated as publication-approved."
+        },
+        "This dated DPM object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or saved exact-date approval record. Its filename alone is insufficient to publish it."
+      ],
+      "proposed_follow_up": [
+        "Create or reconcile a master/provenance record using the applicable DPM minutes or agenda research before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-041",
+      "action_type": "provenance_reconstruction_required",
+      "safety_gate": "blocked_on_provenance_research",
+      "covered_issue_group_ids": [
+        "issue-0078"
+      ],
+      "affected_master_ids": [],
+      "affected_r2_keys": [
+        "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-11-01.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": "Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.",
+      "proposed_state": "After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.",
+      "evidence": [
+        {
+          "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-11-01.pdf",
+          "classifier_case": "unreferenced_unaccounted_storage_candidate",
+          "classifier_reason": "No normalized master/repository record or content/history evidence accounts for this live object.",
+          "current_paths": [
+            null
+          ],
+          "origin_paths": [
+            null
+          ],
+          "history": [
+            null
+          ]
+        },
+        {
+          "saved_provenance_artifacts": [
+            "project-state/discovery/dpm-executive-committee-minutes-decisions-2026-09-11.json",
+            "project-state/discovery/dpm-executive-committee-minutes-r2-decisions-2026-09-16.json",
+            "project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json"
+          ],
+          "finding": "No exact matching key is recorded in the approved 18-minute batch artifact; therefore this object is not treated as publication-approved."
+        },
+        "This dated DPM object is present in live R2 but has no matching master record, repository R2 inventory entry, current/origin content link, or saved exact-date approval record. Its filename alone is insufficient to publish it."
+      ],
+      "proposed_follow_up": [
+        "Create or reconcile a master/provenance record using the applicable DPM minutes or agenda research before any publication decision; retain the object in the meantime."
+      ]
+    },
+    {
+      "action_id": "repair-042",
+      "action_type": "duplicate_relationship_repair_no_storage_change",
+      "safety_gate": "no_action_until_explicit_storage_authorization",
+      "covered_issue_group_ids": [
+        "issue-0099",
+        "issue-0100"
+      ],
+      "affected_master_ids": [
+        "src-1a0dfd37475ddc69",
+        "src-ebd2161a3e07f92a"
+      ],
+      "affected_r2_keys": [
+        "transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf",
+        "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf"
+      ],
+      "target_files": [
+        "project-state/master-inventory.json",
+        "project-state/r2-inventory.json"
+      ],
+      "current_state": {
+        "sha256_duplicate": true,
+        "references": [
+          {
+            "key": "transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf",
+            "live_r2": {
+              "key": "transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf",
+              "size_bytes": 1962324,
+              "last_modified": "2026-08-03T20:47:54.3-06:00",
+              "etag": "b29f2f1e7d19715bd7496d8836b72a61",
+              "storage_class": "STANDARD",
+              "public_url": "https://files.abqinfo.com/transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf"
+            },
+            "repository_r2_inventory": true,
+            "master_records": []
+          },
+          {
+            "key": "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf",
+            "live_r2": {
+              "key": "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf",
+              "size_bytes": 1962324,
+              "last_modified": "2026-08-03T20:47:25.206-06:00",
+              "etag": "b29f2f1e7d19715bd7496d8836b72a61",
+              "storage_class": "STANDARD",
+              "public_url": "https://files.abqinfo.com/transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf"
+            },
+            "repository_r2_inventory": true,
+            "master_records": []
+          }
+        ]
+      },
+      "proposed_state": {
+        "canonical_key": "transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf",
+        "noncanonical_key": "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf",
+        "canonical_action": "no-op retain",
+        "noncanonical_action": "label as exact future R2 deletion candidate only",
+        "deletion_requires_explicit_authorization": true
+      },
+      "evidence": [
+        "This is the correctly spelled MRMPO key. Its linked master record documents the original authoritative upload and identifies it as the correct key.",
+        "This key is explicitly labeled a mistyped duplicate in its linked master record and has the same SHA-256 as the correctly spelled MRMPO object."
+      ],
+      "proposed_follow_up": "Reconcile duplicate/superseded metadata locally only after authorization; never delete during this dry run."
+    }
+  ]
+}
