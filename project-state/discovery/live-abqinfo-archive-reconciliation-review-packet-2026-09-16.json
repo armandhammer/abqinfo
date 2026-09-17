@@ -1,10 +1,10 @@
 {
   "schema_version": "2.0",
-  "generated_at": "2026-09-17T00:25:00.3545727Z",
+  "generated_at": "2026-09-17T00:31:04.1513254Z",
   "source_classification": "project-state/discovery/live-abqinfo-archive-reconciliation-classification-2026-09-16.json",
   "summary": {
-    "raw_cases": 55,
-    "unique_issue_groups": 42,
+    "raw_cases": 57,
+    "unique_issue_groups": 44,
     "storage_duplicate_groups": 1
   },
   "cases": [
@@ -937,6 +937,124 @@
       "mechanically_resolvable": false,
       "requires_human_review": true,
       "review_reason": "No normalized master/repository record or content/history evidence accounts for this live object."
+    },
+    {
+      "issue_group_id": "issue-0099",
+      "key": "transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf",
+      "normalized_key": "transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf",
+      "public_url": "https://files.abqinfo.com/transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf",
+      "size_bytes": 1962324,
+      "etag": "b29f2f1e7d19715bd7496d8836b72a61",
+      "master_record_ids": [
+        "src-1a0dfd37475ddc69"
+      ],
+      "master_statuses": "excluded",
+      "repository_r2_record_present": true,
+      "content_evidence": {
+        "normalized_key": "transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf",
+        "current_paths": null,
+        "origin_paths": null,
+        "targeted_history": null
+      },
+      "storage_duplicate_group": {
+        "sha256": "f0874f637ef063c1e986174f95e76080381be724145ae0a7a7e3d281b341b9fe",
+        "r2_keys": [
+          "transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf",
+          "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf"
+        ],
+        "key_count": 2,
+        "master_record_ids": [
+          "src-1a0dfd37475ddc69",
+          "src-ebd2161a3e07f92a"
+        ],
+        "key_evidence": [
+          {
+            "key": "transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf",
+            "live_object_present": true,
+            "content_evidence": {
+              "normalized_key": "transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf",
+              "current_paths": null,
+              "origin_paths": null,
+              "targeted_history": null
+            }
+          },
+          {
+            "key": "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf",
+            "live_object_present": true,
+            "content_evidence": {
+              "normalized_key": "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf",
+              "current_paths": null,
+              "origin_paths": null,
+              "targeted_history": null
+            }
+          }
+        ],
+        "apparent_canonical_key": "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf",
+        "canonical_selection_basis": "Highest deterministic evidence score: current refs, then origin refs, then active status, then lexical key."
+      },
+      "classification": "unreferenced_storage_duplicate_of_other_r2_key",
+      "mechanically_resolvable": false,
+      "requires_human_review": true,
+      "review_reason": "Different R2 keys share an exact recorded SHA-256; canonical/noncanonical retention requires review."
+    },
+    {
+      "issue_group_id": "issue-0100",
+      "key": "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf",
+      "normalized_key": "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf",
+      "public_url": "https://files.abqinfo.com/transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf",
+      "size_bytes": 1962324,
+      "etag": "b29f2f1e7d19715bd7496d8836b72a61",
+      "master_record_ids": [
+        "src-ebd2161a3e07f92a"
+      ],
+      "master_statuses": "duplicate",
+      "repository_r2_record_present": true,
+      "content_evidence": {
+        "normalized_key": "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf",
+        "current_paths": null,
+        "origin_paths": null,
+        "targeted_history": null
+      },
+      "storage_duplicate_group": {
+        "sha256": "f0874f637ef063c1e986174f95e76080381be724145ae0a7a7e3d281b341b9fe",
+        "r2_keys": [
+          "transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf",
+          "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf"
+        ],
+        "key_count": 2,
+        "master_record_ids": [
+          "src-1a0dfd37475ddc69",
+          "src-ebd2161a3e07f92a"
+        ],
+        "key_evidence": [
+          {
+            "key": "transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf",
+            "live_object_present": true,
+            "content_evidence": {
+              "normalized_key": "transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf",
+              "current_paths": null,
+              "origin_paths": null,
+              "targeted_history": null
+            }
+          },
+          {
+            "key": "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf",
+            "live_object_present": true,
+            "content_evidence": {
+              "normalized_key": "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf",
+              "current_paths": null,
+              "origin_paths": null,
+              "targeted_history": null
+            }
+          }
+        ],
+        "apparent_canonical_key": "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf",
+        "canonical_selection_basis": "Highest deterministic evidence score: current refs, then origin refs, then active status, then lexical key."
+      },
+      "classification": "unreferenced_storage_duplicate_of_other_r2_key",
+      "mechanically_resolvable": false,
+      "requires_human_review": true,
+      "review_reason": "Different R2 keys share an exact recorded SHA-256; canonical/noncanonical retention requires review."
     },
     {
       "issue_group_id": "i",

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "generated_at": "2026-09-17T00:25:00.3545727Z",
+  "generated_at": "2026-09-17T00:31:04.1513254Z",
   "inputs": {
     "report": "project-state/discovery/live-abqinfo-archive-reconciliation-2026-09-16.json",
     "master_inventory": "project-state/master-inventory.json",
@@ -10,34 +10,43 @@
   "summary": {
     "raw_discrepancies": 284,
     "unique_underlying_issue_groups": 220,
-    "unique_review_issue_groups": 42,
-    "mechanically_resolvable": 229,
-    "requires_human_review": 55,
+    "unique_review_issue_groups": 44,
+    "mechanically_resolvable": 227,
+    "requires_human_review": 57,
     "category_counts": {
-      "unreferenced_unaccounted_storage_candidate": 27,
-      "published_object_missing_repository_r2_record_stale_inventory": 5,
-      "unreferenced_present_current_branch_pending_deployment": 53,
-      "expected_link_present_on_current_branch_not_live": 53,
-      "unreferenced_known_master_publication_intent_unresolved": 14,
-      "unreferenced_intentionally_unpublished_noncanonical": 7,
       "expected_link_absent_from_repository_content": 14,
-      "published_legacy_object_missing_inventory_accounting": 111
+      "unreferenced_known_master_publication_intent_unresolved": 14,
+      "unreferenced_storage_duplicate_of_other_r2_key": 2,
+      "published_object_missing_repository_r2_record_stale_inventory": 5,
+      "expected_link_present_on_current_branch_not_live": 53,
+      "published_legacy_object_missing_inventory_accounting": 111,
+      "unreferenced_intentionally_unpublished_noncanonical": 5,
+      "unreferenced_unaccounted_storage_candidate": 27,
+      "unreferenced_present_current_branch_pending_deployment": 53
     },
     "actual_storage_duplicate_groups": 1
   },
   "overlap": {
     "raw_counts": {
+      "unreferenced": 101,
       "published_missing_r2_inventory": 116,
-      "expected_not_live": 67,
-      "unreferenced": 101
+      "expected_not_live": 67
     },
     "unique_underlying_issue_groups": 220,
-    "unique_review_issue_groups": 42,
+    "unique_review_issue_groups": 44,
     "set_intersections": {
-      "published_missing_r2_and_expected_not_live": 0,
-      "all_three": 0,
-      "unreferenced_and_expected_not_live": 65,
-      "unreferenced_and_published_missing_r2": 0
+      "master_record_id_intersections": {
+        "unreferenced_and_published_missing_r2": 0,
+        "published_missing_r2_and_expected_not_live": 0,
+        "unreferenced_and_expected_not_live": 67,
+        "all_three": 0
+      },
+      "normalized_key_intersections": {
+        "unreferenced_and_published_missing_r2": 0,
+        "published_missing_r2_and_expected_not_live": 0,
+        "unreferenced_and_expected_not_live": 65,
+        "all_three": 0
+      }
     },
     "note": "Groups connect normalized keys or master IDs; shared keys are record duplication, not storage duplication."
   },
@@ -74,7 +83,9 @@
             "targeted_history": null
           }
         }
-      ]
+      ],
+      "apparent_canonical_key": "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf",
+      "canonical_selection_basis": "Highest deterministic evidence score: current refs, then origin refs, then active status, then lexical key."
     }
   ],
   "unreferenced_r2_objects": [
@@ -2477,11 +2488,46 @@
         "origin_paths": null,
         "targeted_history": null
       },
-      "storage_duplicate_group": null,
-      "classification": "unreferenced_intentionally_unpublished_noncanonical",
-      "mechanically_resolvable": true,
-      "requires_human_review": false,
-      "review_reason": "Linked master records are all superseded, duplicate, or excluded."
+      "storage_duplicate_group": {
+        "sha256": "f0874f637ef063c1e986174f95e76080381be724145ae0a7a7e3d281b341b9fe",
+        "r2_keys": [
+          "transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf",
+          "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf"
+        ],
+        "key_count": 2,
+        "master_record_ids": [
+          "src-1a0dfd37475ddc69",
+          "src-ebd2161a3e07f92a"
+        ],
+        "key_evidence": [
+          {
+            "key": "transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf",
+            "live_object_present": true,
+            "content_evidence": {
+              "normalized_key": "transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf",
+              "current_paths": null,
+              "origin_paths": null,
+              "targeted_history": null
+            }
+          },
+          {
+            "key": "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf",
+            "live_object_present": true,
+            "content_evidence": {
+              "normalized_key": "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf",
+              "current_paths": null,
+              "origin_paths": null,
+              "targeted_history": null
+            }
+          }
+        ],
+        "apparent_canonical_key": "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf",
+        "canonical_selection_basis": "Highest deterministic evidence score: current refs, then origin refs, then active status, then lexical key."
+      },
+      "classification": "unreferenced_storage_duplicate_of_other_r2_key",
+      "mechanically_resolvable": false,
+      "requires_human_review": true,
+      "review_reason": "Different R2 keys share an exact recorded SHA-256; canonical/noncanonical retention requires review."
     },
     {
       "issue_group_id": "issue-0100",
@@ -2501,11 +2547,46 @@
         "origin_paths": null,
         "targeted_history": null
       },
-      "storage_duplicate_group": null,
-      "classification": "unreferenced_intentionally_unpublished_noncanonical",
-      "mechanically_resolvable": true,
-      "requires_human_review": false,
-      "review_reason": "Linked master records are all superseded, duplicate, or excluded."
+      "storage_duplicate_group": {
+        "sha256": "f0874f637ef063c1e986174f95e76080381be724145ae0a7a7e3d281b341b9fe",
+        "r2_keys": [
+          "transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf",
+          "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf"
+        ],
+        "key_count": 2,
+        "master_record_ids": [
+          "src-1a0dfd37475ddc69",
+          "src-ebd2161a3e07f92a"
+        ],
+        "key_evidence": [
+          {
+            "key": "transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf",
+            "live_object_present": true,
+            "content_evidence": {
+              "normalized_key": "transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf",
+              "current_paths": null,
+              "origin_paths": null,
+              "targeted_history": null
+            }
+          },
+          {
+            "key": "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf",
+            "live_object_present": true,
+            "content_evidence": {
+              "normalized_key": "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf",
+              "current_paths": null,
+              "origin_paths": null,
+              "targeted_history": null
+            }
+          }
+        ],
+        "apparent_canonical_key": "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf",
+        "canonical_selection_basis": "Highest deterministic evidence score: current refs, then origin refs, then active status, then lexical key."
+      },
+      "classification": "unreferenced_storage_duplicate_of_other_r2_key",
+      "mechanically_resolvable": false,
+      "requires_human_review": true,
+      "review_reason": "Different R2 keys share an exact recorded SHA-256; canonical/noncanonical retention requires review."
     }
   ],
   "published_objects_missing_repository_r2_inventory": [

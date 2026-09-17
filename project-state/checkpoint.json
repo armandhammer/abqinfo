@@ -1,5 +1,5 @@
 {
-    "recorded_at":  "2026-09-17T00:25:10Z",
+    "recorded_at":  "2026-09-17T00:31:19Z",
     "completed_item_range":  "Reconciled the retained-source descendant-audit queue after the aggregate validator found 19 missing 2003-2004 bond-source entries. The omission was genuine stale queue state, not a validator defect: all 19 validated City PDF records use retained Plone /view source wrappers, matching 166 existing comparable queue records. Regenerating project-state/discovery/retained-source-audit-queue.json preserved all 550 existing records and states, added exactly 19 pending descendant crawls, and changed coverage from 569 eligible/550 queued/19 missing to 569/569/0. Full project validation and Hugo build passed. The completed DPM minutes batch remains preserved and was not reprocessed.",
     "verification_campaign_totals":  {
                                          "verified":  2194,
@@ -65,13 +65,14 @@
                                 "classification_summary":  {
                                                                "raw_discrepancies":  284,
                                                                "unique_underlying_issue_groups":  220,
-                                                               "unique_review_issue_groups":  42,
-                                                               "mechanically_resolvable":  229,
-                                                               "requires_human_review_raw":  55,
+                                                               "unique_review_issue_groups":  44,
+                                                               "mechanically_resolvable":  227,
+                                                               "requires_human_review_raw":  57,
                                                                "unreferenced":  101,
                                                                "published_missing_repository_r2":  116,
                                                                "expected_not_live":  67,
-                                                               "set_overlap_normalized_key_unreferenced_expected":  65,
+                                                               "normalized_key_overlap_unreferenced_expected":  65,
+                                                               "master_id_overlap_unreferenced_expected":  67,
                                                                "actual_storage_duplicate_groups":  1
                                                            },
                                 "classification_validation":  {
