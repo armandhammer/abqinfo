@@ -1,0 +1,507 @@
+{
+ "batch_id": "form-based-code-cluster-research-2026-09-11",
+ "lane": "Claude research lane: www.cabq.gov/council/documents/form-based-code cluster",
+ "generated_at": "2026-09-11T23:01:41.162314+00:00",
+ "cluster": "The Form Based Code drafting record in the Albuquerque City Council document library at www.cabq.gov/council/documents/form-based-code.",
+ "scope": "All 20 pending-review candidates in that directory. The directory also holds one record a prior lane set to requires human review, src-05176d26d35effd3, which this artifact does not reclassify but identifies as the April 2, 2009 final Part B and names as the successor in one supersession chain.",
+ "brief": "Separate adopted form-based code text and regulating plans from drafts and meeting handouts, applying the enactment test and the split-package method.",
+ "brief_finding": "There is no adopted text here to separate out. Ten of the twenty files are one code drafted four times between October 2007 and April 2009, renumbered twice as it moved from a standalone Chapter 14 Article 20 into the Zoning Code at Section 14-16-3-20 and then Section 14-16-3-22, and every one of them is superseded by a later generation. The three ordinances that would have enacted it all carry blank enactment numbers, and one is filenamed a reintroduction. The two records worth retaining have nothing to do with form-based code at all: a complete 2000 sector development plan filed under the bare name lacueva.pdf, and an extract of the Downtown 2010 Plan.",
+ "method": "Fetched all 20 candidates and the prior-lane requires-human-review record without touching shared inventory state, and recorded exact byte length and SHA-256 for each. Read the section number printed in every page header, which is what establishes the four generations and the two renumberings; filenames alone do not show that a 2008 file and a 2009 file regulate under different code sections. Measured each generation against the next by normalized-text similarity and token coverage in both directions. Rendered the two image-only PDFs, which is how both retained records were identified. Probed the filename sequence for parts the City listing does not show. Compared all checksums against the 1,612 checksummed inventory records.",
+ "classification_only": true,
+ "shared_state_written": [],
+ "drafting_chain": {
+  "finding": "Four generations of one code, with two renumberings. The generation is readable from the section number printed in every page header, not from the filename.",
+  "generations": [
+   {
+    "generation": "G1",
+    "date": "2007-10-30",
+    "scheme": "Chapter 14, Article 20, a standalone Form Based Code article with sections numbered 14-20-1-1",
+    "files": 4,
+    "ids": [
+     "src-24e65271e6797b78",
+     "src-b5fb627dfff69e54",
+     "src-d837cff6918ede96",
+     "src-ef0083880aa30ca5"
+    ]
+   },
+   {
+    "generation": "G2",
+    "date": "2008-06-06",
+    "scheme": "Zoning Code Part 3 General Regulations, Section 14-16-3-20 Form Based Code, in three lettered sections A, B and C",
+    "files": 3,
+    "ids": [
+     "src-6c8fb67dc2dacda9",
+     "src-41772a036fd8d687",
+     "src-9e517541bd23ff4d"
+    ]
+   },
+   {
+    "generation": "G3a",
+    "date": "2009-02-27",
+    "scheme": "Section 14-16-3-22 Form Based Zones, renumbered and renamed, in three lettered parts",
+    "files": 3,
+    "ids": [
+     "src-4ce0f7387bab68d1",
+     "src-5157b5d0c02331a6",
+     "src-a94103538515dadb"
+    ]
+   },
+   {
+    "generation": "G3b",
+    "date": "2009-04-02",
+    "scheme": "Section 14-16-3-22 Form Based Zones, final",
+    "files": 3,
+    "in_inventory": 1,
+    "ids": [
+     "src-05176d26d35effd3"
+    ],
+    "not_in_inventory": [
+     "fbz_part_a_04_02_09.final.pdf",
+     "fbz_part_c_04_02_09.final.pdf"
+    ],
+    "note": "The current generation, and only one of its three parts is in the inventory. Until the other two are added the archive cannot represent the final form of this code at all."
+   }
+  ],
+  "page_growth_signal": "Part A grew from 5 pages in June 2008 to 6 in February 2009 to 59 in the April 2009 final, absorbing material as the drafters consolidated. That is why coverage of the February Part A inside the April final is 0.9900 while only 0.4454 of the final sits inside February."
+ },
+ "undiscovered_files": {
+  "count": 2,
+  "why_this_matters": "Both return HTTP 200 from the City server and neither appears in the City's own collection listing for this directory. They are two of the three parts of the current draft generation. This is the second directory in a row where the City listing is proved incomplete against its own server, after the Planned Growth Strategy cluster of the same date.",
+  "files": {
+   "fbz_part_a_04_02_09.final.pdf": {
+    "url": "https://www.cabq.gov/council/documents/form-based-code/fbz_part_a_04_02_09.final.pdf",
+    "http_status": 200,
+    "size_bytes": 1276278,
+    "checksum_sha256": "16275cace1f321813ee742077921a5a833922f95fc01609b1d6af0f45c7112b0",
+    "pages": 59,
+    "identity": "Form Based Zones, Section 14-16-3-22 Part A, April 2, 2009 final. The current-generation successor to src-4ce0f7387bab68d1."
+   },
+   "fbz_part_c_04_02_09.final.pdf": {
+    "url": "https://www.cabq.gov/council/documents/form-based-code/fbz_part_c_04_02_09.final.pdf",
+    "http_status": 200,
+    "size_bytes": 718729,
+    "checksum_sha256": "f25c90dd167a7f97c82d40e4f904402c57759c2b14ea2976ce7df1082dc6b7c9",
+    "pages": 28,
+    "identity": "Form Based Zones, Section 14-16-3-22 Part C, April 2, 2009 final. The current-generation successor to src-a94103538515dadb."
+   }
+  },
+  "recommended_action": "Add both as candidates before applying the two supersession rows whose canonical_id is null. This artifact creates no inventory records.",
+  "probe_record": "Seven filename-sequence probes were run. Four returned 404: abcfbc_section_d_060608, abcfbc_toc_060608, fbz_part_d_02_27_09, fbz_toc_02_27_09 and ABQFBC-finaldraftedits103007Part4doubleside. Two returned 200 and are listed above. The generations are therefore three parts each after G1, and G1's four-file structure is genuinely four files."
+ },
+ "duplicate_and_supersession_checks": {
+  "internal_byte_collisions": 0,
+  "cross_inventory_byte_collisions": 1,
+  "checksums_compared_against": 1612,
+  "relationships_found_by_hash": 1,
+  "relationships_found_by_measurement": 10,
+  "note": "Hashing found exactly one relationship, the Comprehensive Plan copy shared with the Volcano Heights directory, and it found it because the City republishes that file unchanged. The ten supersession relationships are invisible to it: each generation was re-typeset, so sequence ratios run as low as 0.0379 between files that token coverage shows are 0.86 the same material. Both measures were needed in every case, and in opposite directions from the Paseo del Volcan cluster, where high coverage with low sequence similarity was a false positive. The difference is that here the page headers independently prove the lineage."
+ },
+ "integration_flags": [
+  {
+   "severity": "unresolved-enactment",
+   "affects": [
+    "src-26cb2e52a14f606e",
+    "src-7bf6d7801a352612",
+    "src-d6595748f0d531d4"
+   ],
+   "finding": "All three form-based code ordinances carry blank enactment numbers, and one is filenamed a reintroduction, which implies an earlier attempt did not carry. Whether any passed determines whether this directory records an adopted code or a three-year proposal that failed.",
+   "recommended_action": "Resolve all three together. Note that Section 14-16-3-22 no longer exists: the Integrated Development Ordinance adopted 2017-11-13 replaced Chapter 14 Article 16 entirely, so even an adopted form-based code would now be historic. That does not answer the question, it only bounds it."
+  },
+  {
+   "severity": "discovery-gap",
+   "affects": [
+    "src-4ce0f7387bab68d1",
+    "src-a94103538515dadb"
+   ],
+   "finding": "Two supersession rows carry canonical_id null because their successors, the April 2, 2009 final Parts A and C, exist on the City server but are absent from the inventory. A supersession whose canonical lies outside the inventory cannot be applied cleanly.",
+   "recommended_action": "Add both files as candidates first, then apply those two rows with their real canonical ids. Their URLs, sizes and checksums are in undiscovered_files."
+  },
+  {
+   "severity": "misfiled-record",
+   "affects": [
+    "src-eb96077b20226b87"
+   ],
+   "finding": "lacueva.pdf is the complete La Cueva Sector Development Plan of June 2000, 127 pages, filed in the form-based-code directory and named only for the neighbourhood. Nothing in the filename, the inventory title, or the directory indicates what it is; it was identified by rendering the cover. The inventory's six other La Cueva records are all Bernalillo County drainage-project material.",
+   "recommended_action": "Place it on the area and sector plans page. Treat this as a warning that a bare-neighbourhood-name filename in a topic directory may be a whole plan: render before excluding."
+  },
+  {
+   "severity": "coverage-gap",
+   "affects": [
+    "src-20999f89704896c2"
+   ],
+   "finding": "process.pdf is an extract of the Downtown 2010 Plan beginning at printed page 27, and the complete Downtown 2010 Plan is nowhere in the inventory. The site carries Downtown 2050 and the 2025 parking study but nothing from the 2010 generation.",
+   "recommended_action": "Retain the extract with its partial nature stated in the title, and add the complete Downtown 2010 Plan to the discovery queue. It is a named predecessor of a plan the site already publishes."
+  },
+  {
+   "severity": "cross-artifact",
+   "affects": [
+    "src-ca30482593edc4c9",
+    "src-2f5e70d5a655369e"
+   ],
+   "finding": "The Albuquerque/Bernalillo County Comprehensive Plan is byte-identical across the form-based-code and Volcano Heights directories. The volcano-heights artifact recommends the other copy for addition as the archive's only copy of that plan.",
+   "recommended_action": "Integrate the two artifacts together. Expect further byte-identical copies of this file in other plan directories still to be triaged; they should all resolve to the single canonical."
+  }
+ ],
+ "counts": {
+  "reviewed": 20,
+  "approved_for_addition": 2,
+  "superseded": 10,
+  "duplicate": 1,
+  "requires_human_review": 3,
+  "excluded": 4
+ },
+ "link_check": {
+  "checked": 21,
+  "http_200": 21,
+  "failed": 0,
+  "probe_checked": 7,
+  "probe_http_200": 2,
+  "probe_http_404": 5,
+  "method": "Full HTTP GET with a browser user agent, 2026-09-11, on the 20 pending candidates and the prior-lane requires-human-review record, plus seven filename-sequence probes.",
+  "containers_verified": "20 genuine PDFs and one HTML collection page by leading bytes. Two PDFs have no text layer and were rendered."
+ },
+ "approved_for_addition": [
+  {
+   "id": "src-eb96077b20226b87",
+   "authoritative_url": "https://www.cabq.gov/council/documents/form-based-code/lacueva.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 13004494,
+   "checksum_sha256": "48dd2c73983a5774bd14eb3523fdda5b0f2811a2eb39deccee8b646c5a483ad8",
+   "title": "La Cueva Sector Development Plan, June 2000",
+   "description": "The City sector development plan for the La Cueva area in Albuquerque's far Northeast Heights sets the land use, zoning, transportation, and design framework for the foothills neighbourhoods below the Sandia Mountains.",
+   "date": "2000-06",
+   "pages": 127,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [],
+   "evidence": "Image-only PDF with essentially no text layer; the cover was rendered and read. It reads \"La Cueva Sector Development Plan, City Of Albuquerque, Contracting Agency; Sites Southwest, Chief or Lead Planners; Resource Technology, Inc., Terry O. Brown, P.E., Civitas, Inc., Team; June 2000\". 127 pages, 13,004,494 bytes.",
+   "why_retained": "A complete adopted-era sector development plan, misfiled in the form-based-code directory under the bare filename lacueva.pdf and having nothing to do with form-based code. It is the only copy in the inventory: the six other La Cueva records are all Bernalillo County Upper La Cueva drainage-project material, unrelated to this plan.",
+   "misfiling_note": "Nothing in the filename, the inventory title, or the directory it sits in indicates what this document is. It was identified only by rendering the cover.",
+   "description_word_count": 32
+  },
+  {
+   "id": "src-20999f89704896c2",
+   "authoritative_url": "https://www.cabq.gov/council/documents/form-based-code/process.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 10029361,
+   "checksum_sha256": "6f27f272732c42e894b66ca8bc7151f9ba0ef2a5366b133e9e373db3c8c405b0",
+   "title": "Downtown 2010 Plan: Development and Building Process (extract, from printed page 27)",
+   "description": "The Downtown 2010 Plan chapter explains its four-step development approach, walking an applicant through the districts map, the district uses matrix, the authorised building types, and the building standards that lead to expedited site plan approval.",
+   "date": null,
+   "pages": 44,
+   "proposed_canonical_page": "content/development-land-use/redevelopment-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "It is Albuquerque's earliest form-based-style regulatory scheme and the precedent the 2007 to 2009 form-based code drafts in this same directory were built on."
+    }
+   ],
+   "evidence": "Image-only PDF with no text layer; page 1 was rendered and read. It is headed \"DOWNTOWN 2010, development & building process\" and its first page is printed page 27, so this is an extract rather than the whole plan. It names the five Downtown districts (Housing, Arts and Entertainment, Government, Financial and Hospitality, Warehouse, Mixed-Use) and describes the colour-coded districts map, district uses matrix and building types chart.",
+   "why_retained": "The substantive regulatory core of the Downtown 2010 Plan, and the reason it sits in the form-based-code directory: Downtown 2010 is the precedent the later citywide form-based code drafts were modelled on. The site carries the current Downtown 2050 plan and nothing from the 2010 generation.",
+   "completeness_caveat": "This is an extract beginning at printed page 27, not the complete Downtown 2010 Plan, and the complete plan is not in the inventory. Any title must say so. See integration_flags.",
+   "dating_note": "No printed date on the pages read. The plan is named for 2010 and was adopted well before it; do not assert a date the extract does not carry.",
+   "description_word_count": 36
+  }
+ ],
+ "superseded": [
+  {
+   "id": "src-24e65271e6797b78",
+   "authoritative_url": "https://www.cabq.gov/council/documents/form-based-code/ABQFBC-finaldraftedits103007ToCdoubleside.pdf/view",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 644909,
+   "checksum_sha256": "3a2f0193d4a1eee9a4fee6ba892e411820f4bc823a3afa68acacce5bc7de2084",
+   "title_for_reference": "Form Based Code table of contents, final draft edits, October 30, 2007",
+   "pages": 2,
+   "generation": "G1",
+   "basis": "Chapter 14 Article 20 as a standalone Form Based Code article. The June 2008 generation abandoned that structure entirely and folded the code into the Zoning Code at Section 14-16-3-20, so this contents page describes a document that no longer exists in that form.",
+   "hash_found_it": false,
+   "canonical_id": null,
+   "null_canonical_cause": "no single successor file exists",
+   "canonical_not_in_inventory": "the June 6, 2008 restructure as a whole",
+   "canonical_blocker": "This row has no file-level successor and none can be supplied. The June 2008 restructure published no table of contents: the probe for abcfbc_toc_060608.pdf returned 404. Apply this row as superseded with no canonical, or attach it to src-6c8fb67dc2dacda9 as the first file of the generation that replaced it, which is an editorial choice rather than a measured relationship."
+  },
+  {
+   "id": "src-b5fb627dfff69e54",
+   "authoritative_url": "https://www.cabq.gov/council/documents/form-based-code/ABQFBC-finaldraftedits103007Part1doubleside.pdf/view",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 865757,
+   "checksum_sha256": "b2dba014e0fe53fa24bad647491ad36f44bc55717a874f531024dd58fe7f7eb6",
+   "title_for_reference": "Form Based Code Part 1, General Provisions, final draft edits, October 30, 2007",
+   "pages": 22,
+   "generation": "G1",
+   "basis": "Sections numbered 14-20-1-1 in the standalone Article 20 scheme, replaced by Section 14-16-3-20(A) General Provisions in the June 2008 generation.",
+   "hash_found_it": false,
+   "canonical_id": "src-6c8fb67dc2dacda9",
+   "canonical_url": "https://www.cabq.gov/council/documents/form-based-code/abcfbc_section_a_060608.pdf/view"
+  },
+  {
+   "id": "src-d837cff6918ede96",
+   "authoritative_url": "https://www.cabq.gov/council/documents/form-based-code/ABQFBC-finaldraftedits103007Part2doubleside.pdf/view",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 1550905,
+   "checksum_sha256": "1c474aef7c7d8d5619d26a038994fdd21407f96444de3a79d7d06c41ea197a73",
+   "title_for_reference": "Form Based Code Part 2, Building Forms, Materials, Signage, Lot Layout, final draft edits, October 30, 2007",
+   "pages": 38,
+   "generation": "G1",
+   "basis": "Replaced by the June 2008 Section 14-16-3-20(B) material.",
+   "hash_found_it": false,
+   "canonical_id": "src-41772a036fd8d687",
+   "canonical_url": "https://www.cabq.gov/council/documents/form-based-code/abcfbc_section_b_060608.pdf/view"
+  },
+  {
+   "id": "src-ef0083880aa30ca5",
+   "authoritative_url": "https://www.cabq.gov/council/documents/form-based-code/ABQFBC-finaldraftedits103007Part3doubleside.pdf/view",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 2622609,
+   "checksum_sha256": "17d66903a0da9d43452f352ab454a83ecb7f2dac1dd2b718b338b209421d221b",
+   "title_for_reference": "Form Based Code Part 3, Form Based Code Zones, final draft edits, October 30, 2007",
+   "pages": 44,
+   "generation": "G1",
+   "basis": "Replaced by the June 2008 Section 14-16-3-20(C) components material.",
+   "hash_found_it": false,
+   "canonical_id": "src-9e517541bd23ff4d",
+   "canonical_url": "https://www.cabq.gov/council/documents/form-based-code/abcfbc_section_c_060608.pdf/view"
+  },
+  {
+   "id": "src-6c8fb67dc2dacda9",
+   "authoritative_url": "https://www.cabq.gov/council/documents/form-based-code/abcfbc_section_a_060608.pdf/view",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 32995,
+   "checksum_sha256": "edaa1d419a7a1bde9df8e499f397239861461bda6d35b79c4977478ca5da735d",
+   "title_for_reference": "Form Based Code Section 14-16-3-20(A), General Provisions, June 6, 2008",
+   "pages": 5,
+   "generation": "G2",
+   "basis": "Renumbered to Section 14-16-3-22 Form Based Zones in the February 27, 2009 generation; token coverage of this file inside its successor is 0.9464.",
+   "hash_found_it": false,
+   "canonical_id": "src-4ce0f7387bab68d1",
+   "canonical_url": "https://www.cabq.gov/council/documents/form-based-code/fbz_part_a_02_27_09.pdf/view"
+  },
+  {
+   "id": "src-41772a036fd8d687",
+   "authoritative_url": "https://www.cabq.gov/council/documents/form-based-code/abcfbc_section_b_060608.pdf/view",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 534035,
+   "checksum_sha256": "ad3f81c00c146e44af722f03e7a38ba057c28a3badb36364189fe39d98728326",
+   "title_for_reference": "Form Based Code Section 14-16-3-20(B), Zones, June 6, 2008",
+   "pages": 26,
+   "generation": "G2",
+   "basis": "Renumbered and rewritten as Section 14-16-3-22(B); token coverage 0.8593, sequence ratio only 0.0379, so the text was substantially reworked rather than copied.",
+   "hash_found_it": false,
+   "canonical_id": "src-5157b5d0c02331a6",
+   "canonical_url": "https://www.cabq.gov/council/documents/form-based-code/fbz_part_b_02_27_09-2.rev.pdf/view"
+  },
+  {
+   "id": "src-9e517541bd23ff4d",
+   "authoritative_url": "https://www.cabq.gov/council/documents/form-based-code/abcfbc_section_c_060608.pdf/view",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 990834,
+   "checksum_sha256": "0aaf2f35f755e7849a9db4ae9e484ba234f1dc30c17e5e8de5967f83ba46de1c",
+   "title_for_reference": "Form Based Code Section 14-16-3-20(C), Building Types, Street Design, Parking, Lighting, Signage, Usable Open Space, June 6, 2008",
+   "pages": 32,
+   "generation": "G2",
+   "basis": "Renumbered as Section 14-16-3-22(C) Components; token coverage 0.7883.",
+   "hash_found_it": false,
+   "canonical_id": "src-a94103538515dadb",
+   "canonical_url": "https://www.cabq.gov/council/documents/form-based-code/fbz_part_c_02_27_09-1.pdf/view"
+  },
+  {
+   "id": "src-4ce0f7387bab68d1",
+   "authoritative_url": "https://www.cabq.gov/council/documents/form-based-code/fbz_part_a_02_27_09.pdf/view",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 36265,
+   "checksum_sha256": "6165182cb037fae3ebf3cecc4e5e9564c94476425770b3f7f14eced4df12212f",
+   "title_for_reference": "Form Based Zones Section 14-16-3-22 Part A, February 27, 2009",
+   "pages": 6,
+   "generation": "G3a",
+   "basis": "Superseded five weeks later by the April 2, 2009 final Part A, which expanded from 6 pages to 59: token coverage of this file inside the final is 0.9900 while only 0.4454 of the final sits inside this one.",
+   "hash_found_it": false,
+   "canonical_id": null,
+   "null_canonical_cause": "successor exists on the City server but is not an inventory record",
+   "canonical_not_in_inventory": "fbz_part_a_04_02_09.final.pdf",
+   "canonical_url": "https://www.cabq.gov/council/documents/form-based-code/fbz_part_a_04_02_09.final.pdf",
+   "canonical_blocker": "Add the named file as a candidate before applying this supersession, so the chain does not terminate outside the inventory. Its URL, size and checksum are in undiscovered_files."
+  },
+  {
+   "id": "src-5157b5d0c02331a6",
+   "authoritative_url": "https://www.cabq.gov/council/documents/form-based-code/fbz_part_b_02_27_09-2.rev.pdf/view",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 3176659,
+   "checksum_sha256": "d6683612bfa1dcdb82f6c502601dbc541599b10058c4b9911885c71d65890ae9",
+   "title_for_reference": "Form Based Zones Section 14-16-3-22 Part B, Zones, February 27, 2009 revision",
+   "pages": 25,
+   "generation": "G3a",
+   "basis": "Superseded by the April 2, 2009 final Part B, which is in the inventory as src-05176d26d35effd3. Token coverage 0.9345 and 0.9781 with a sequence ratio of 0.0526: the same material comprehensively re-laid-out.",
+   "hash_found_it": false,
+   "canonical_id": "src-05176d26d35effd3",
+   "canonical_url": "https://www.cabq.gov/council/documents/form-based-code/fbz_part_b_04_02_09.final.pdf/@@download/file/FBZ%20Part%20B%2004%2002%2009.FINAL.pdf"
+  },
+  {
+   "id": "src-a94103538515dadb",
+   "authoritative_url": "https://www.cabq.gov/council/documents/form-based-code/fbz_part_c_02_27_09-1.pdf/view",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 7949588,
+   "checksum_sha256": "cefb5de729c0fbd564d37a68f2d00b71c7e6c492827707090dbad4a85b0b5cba",
+   "title_for_reference": "Form Based Zones Section 14-16-3-22 Part C, Components, February 27, 2009",
+   "pages": 28,
+   "generation": "G3a",
+   "basis": "Superseded by the April 2, 2009 final Part C; token coverage 0.9469 and 0.9194, sequence ratio 0.7190.",
+   "hash_found_it": false,
+   "canonical_id": null,
+   "null_canonical_cause": "successor exists on the City server but is not an inventory record",
+   "canonical_not_in_inventory": "fbz_part_c_04_02_09.final.pdf",
+   "canonical_url": "https://www.cabq.gov/council/documents/form-based-code/fbz_part_c_04_02_09.final.pdf",
+   "canonical_blocker": "Add the named file as a candidate before applying this supersession, so the chain does not terminate outside the inventory. Its URL, size and checksum are in undiscovered_files."
+  }
+ ],
+ "duplicate": [
+  {
+   "id": "src-ca30482593edc4c9",
+   "authoritative_url": "https://www.cabq.gov/council/documents/form-based-code/abq_comp_plan.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 11872609,
+   "checksum_sha256": "344a30caa7a4dc497961386ecfb02ec85f7454459a2ec95482fbad7e6c12e698",
+   "title_for_reference": "Albuquerque/Bernalillo County Comprehensive Plan (second copy)",
+   "pages": 277,
+   "canonical_id": "src-2f5e70d5a655369e",
+   "canonical_url": "https://www.cabq.gov/council/documents/Volcano%20Heights%20Sector%20Development%20Plan/abq_comp_plan.pdf",
+   "basis": "Byte-identical to the copy in the Volcano Heights directory: same 11,872,609 bytes and same SHA-256 344a30caa7a4dc497961386ecfb02ec85f7454459a2ec95482fbad7e6c12e698. The City files the same Comprehensive Plan PDF as reference material in multiple plan directories.",
+   "hash_found_it": true,
+   "note": "The canonical is recommended for addition in the volcano-heights artifact of the same date, where it is recorded as the only actual copy of the Comprehensive Plan in the archive. Integrate the two artifacts together, and expect further copies of this same file in other plan directories still to be triaged."
+  }
+ ],
+ "requires_human_review": [
+  {
+   "id": "src-26cb2e52a14f606e",
+   "authoritative_url": "https://www.cabq.gov/council/documents/form-based-code/O-07-116.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 57596,
+   "checksum_sha256": "cc1eeedf09ed31b4eecd6823d359cfe6de6956fda65438ef21586bcd0c7659f5",
+   "draft_title": "Council Bill O-07-116: Adopting a Form Based Code Prescribing Building Form, Frontage Type, Parking, Connectivity, Design, Signage and Lighting Standards and Establishing Zones Which Allow Mixed Use",
+   "pages": 2,
+   "question_for_human": "Locate the enacted ordinance, or establish that the bill failed. Decide all three together.",
+   "why_not_decided_here": "All three carry ENACTMENT NO. blank, so under the two standing checkpoint blockers each is the bill as considered rather than the law. They must be resolved as one group because they tell a story on their face: O-07-116 in the Seventeenth Council proposed adopting a form based code outright; F/S O-08-58 in the Eighteenth Council took a different route, amending the SU-1 Special Use zone to admit Form Based Zones as a special use; and O-08-58 is explicitly filenamed a reintroduction. Whether any of them passed decides whether the ten superseded drafts in this directory are the record of an adopted code or of a proposal Albuquerque spent three years on and did not adopt. That is the single most consequential unresolved question in this cluster and it cannot be answered from these files.",
+   "evidence": "2 pages, Seventeenth Council, sponsored by Isaac Benton, enactment number blank."
+  },
+  {
+   "id": "src-7bf6d7801a352612",
+   "authoritative_url": "https://www.cabq.gov/council/documents/form-based-code/fso-08-58.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 15969,
+   "checksum_sha256": "65e25a13412ac9a6d041ccf11b49e62b4f22e9aae61b7a1f741ad215d0d20b3a",
+   "draft_title": "Council Bill F/S O-08-58: Amending Section 14-16-2-22(B) ROA 1994, the SU-1 Special Use Zone, to Include Form Based Zones as a Special Use (floor substitute)",
+   "pages": 3,
+   "question_for_human": "Same question; this is the floor substitute of the reintroduced bill below.",
+   "why_not_decided_here": "All three carry ENACTMENT NO. blank, so under the two standing checkpoint blockers each is the bill as considered rather than the law. They must be resolved as one group because they tell a story on their face: O-07-116 in the Seventeenth Council proposed adopting a form based code outright; F/S O-08-58 in the Eighteenth Council took a different route, amending the SU-1 Special Use zone to admit Form Based Zones as a special use; and O-08-58 is explicitly filenamed a reintroduction. Whether any of them passed decides whether the ten superseded drafts in this directory are the record of an adopted code or of a proposal Albuquerque spent three years on and did not adopt. That is the single most consequential unresolved question in this cluster and it cannot be answered from these files.",
+   "evidence": "3 pages, Eighteenth Council, sponsored by Isaac Benton, enactment number blank."
+  },
+  {
+   "id": "src-d6595748f0d531d4",
+   "authoritative_url": "https://www.cabq.gov/council/documents/form-based-code/o-08-58.reintroduction_of_form_base_code.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 16031,
+   "checksum_sha256": "bf93452282aa64960a967425b6c229534ec9231c7fbc0ab802216d156d308563",
+   "draft_title": "Council Bill O-08-58: Amending Section 14-16-2-22(B) ROA 1994, the SU-1 Special Use Zone, to Include Form Based Code Zones as a Special Use (reintroduction of the form based code)",
+   "pages": 3,
+   "question_for_human": "Same question; the filename records this as a reintroduction, which implies an earlier attempt did not carry.",
+   "why_not_decided_here": "All three carry ENACTMENT NO. blank, so under the two standing checkpoint blockers each is the bill as considered rather than the law. They must be resolved as one group because they tell a story on their face: O-07-116 in the Seventeenth Council proposed adopting a form based code outright; F/S O-08-58 in the Eighteenth Council took a different route, amending the SU-1 Special Use zone to admit Form Based Zones as a special use; and O-08-58 is explicitly filenamed a reintroduction. Whether any of them passed decides whether the ten superseded drafts in this directory are the record of an adopted code or of a proposal Albuquerque spent three years on and did not adopt. That is the single most consequential unresolved question in this cluster and it cannot be answered from these files.",
+   "evidence": "3 pages, Eighteenth Council, sponsored by Isaac Benton, enactment number blank. Its title says Form Based Code Zones where the floor substitute says Form Based Zones, which matches the section renaming visible across the draft generations."
+  }
+ ],
+ "excluded": [
+  {
+   "id": "src-86ab054ee0977b03",
+   "authoritative_url": "https://www.cabq.gov/council/documents/form-based-code",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "HTML",
+   "size_bytes": 173650,
+   "checksum_sha256": "b242249e90221af67b18f94a0dd72eb4ea3d6c274d150d7d5df652e88791f084",
+   "title_for_reference": "Form Based Code collection landing page",
+   "exclusion_reason": "The Plone collection landing page for this directory, not a document.",
+   "category": "collection landing page",
+   "usefulness": "Parsed as part of this lane. It does not list fbz_part_a_04_02_09.final.pdf or fbz_part_c_04_02_09.final.pdf, which is why only Part B of the final generation was ever discovered."
+  },
+  {
+   "id": "src-f0c757fac463bb4a",
+   "authoritative_url": "https://www.cabq.gov/council/documents/form-based-code/FBC120807IBPresentation.FINAL.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 4475092,
+   "checksum_sha256": "de6e10cbf140b382a16a9ec25766ec6a826cf3ab7bff7edabbc4539e5a374087",
+   "title_for_reference": "Basic Principles of the Form Based Code, Councillor Isaac Benton town hall presentation, December 8, 2007",
+   "pages": 39,
+   "exclusion_reason": "An outreach presentation advocating a proposal, delivered at a councillor's town hall. It argues for the code rather than stating it, and the code text itself is in this directory in four generations.",
+   "category": "outreach presentation"
+  },
+  {
+   "id": "src-740051342d429b2b",
+   "authoritative_url": "https://www.cabq.gov/council/documents/form-based-code/MythsandRealitiesFINAL.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 145334,
+   "checksum_sha256": "298a4f1e2114a5004c22b3c1d6779e22177a9fcd3b7c5f3c7c796a9534534496",
+   "title_for_reference": "Myths and Realities about the Form-Based Code, town hall handout, December 8, 2007",
+   "pages": 1,
+   "exclusion_reason": "A one-page myth-and-rebuttal handout from the same town hall. Advocacy material for a proposal, not a record of a City action or standard.",
+   "category": "outreach handout"
+  },
+  {
+   "id": "src-b3448b2b1a88ceee",
+   "authoritative_url": "https://www.cabq.gov/council/documents/form-based-code/FormBasedCodeOrdinanceSummarySSJ2.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 142110,
+   "checksum_sha256": "8814f25f84a06fe70223c5a9bc6b9cc254749c6a55183edcbf0102c0377a4cd0",
+   "title_for_reference": "Summary of the Form-Based Code",
+   "pages": 2,
+   "exclusion_reason": "A two-page plain-language summary of what the proposed code would do. It is the clearest short explanation in the directory, but it summarises a proposal whose enactment is unresolved and whose every draft is recommended superseded or held, so there is nothing published for it to explain.",
+   "category": "proposal summary",
+   "revisit_if": "If the enactment question resolves in favour of adoption and the April 2009 final package is published, this summary is the natural explainer to reconsider alongside it."
+  }
+ ],
+ "archival_note": "Both approved records are static PDFs and are inventory-only until an R2 archive object exists for each and its public download, exact size, SHA-256, and authoritative-source provenance are verified. Combined archive footprint if authorized: 23,033,855 bytes. Neither has a text layer, so full-text search will not reach them without optical character recognition; that is a property of the City's originals.",
+ "integration_note": "Codex integration lane: apply recommended_status values through scripts/project/Update-Candidate.ps1 only. Seven of the ten superseded rows carry a canonical_id resolving to another record in this same cluster, so apply them in generation order G1 then G2 then G3a. Three rows carry canonical_id null and each states its null_canonical_cause. Two of those three, src-4ce0f7387bab68d1 and src-a94103538515dadb, name a successor file that exists on the City server; do not apply them until those files are added as candidates. The third, src-24e65271e6797b78, has no file-level successor at all because the June 2008 restructure published no table of contents, and its canonical_blocker states the editorial choice that remains. The duplicate row's canonical lies in the volcano-heights artifact of the same date. The two approved rows carry a title, a 20-to-50-word description and a proposed_canonical_page; both carry a null or partial date and neither may be given an asserted one. Three rows are requires human review under the standing enactment blockers and must be decided as one group. Sizes and checksums are first measurements; the inventory held neither.",
+ "safeguards": [
+  "no master-inventory.json write",
+  "no checkpoint.json write",
+  "no r2-inventory.json write",
+  "no site content change",
+  "no R2 upload",
+  "no commit, merge, or deploy",
+  "no inventory record created for the two undiscovered files"
+ ]
+}

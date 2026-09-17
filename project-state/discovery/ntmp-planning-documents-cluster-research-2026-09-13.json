@@ -1,0 +1,1440 @@
+{
+ "batch_id": "ntmp-planning-documents-cluster-research-2026-09-13",
+ "lane": "Claude research lane: neighborhood-traffic-management-program/documents and www.cabq.gov/planning/documents",
+ "generated_at": "2026-09-13T22:38:22.636319+00:00",
+ "date_note": "Dated 2026-09-13.",
+ "cluster": "The City's traffic calming toolbox, and what is left on the planning department's document page - which turns out to be adopted plans going back to 1991.",
+ "scope": "All 61 uncovered candidates across the two paths. The coverage gate is asserted in the generator.",
+ "brief": "Check the archive's existing decisions at both paths first, and run the cross-inventory checksum sweep - it has found three already-archived records in two consecutive lanes.",
+ "brief_finding": "Both instructions paid. The existing dispositions settled two whole classes before any candidate was read, and the sweep found two more already-archived records, bringing the run's total to five across three consecutive lanes.",
+ "the_sweep_again": {
+  "archived_records_compared_against": 1020,
+  "found": 2,
+  "what_they_are": "ABQcomprehensiveonstreetbicycleplan.pdf, byte-identical to the 2000 Albuquerque Comprehensive On-Street Bicycle Plan the archive holds; and VolcanoTrailsSDPFINAL.pdf, byte-identical to the Volcano Trails Sector Development Plan it holds. Both already carry r2_urls.",
+  "the_bicycle_plan_has_now_appeared_three_times": "Once in the parks lane at parksandrecreation/recreation/bike/documents, once here at planning/documents, and once already archived. One 8,054,496-byte file, three inventory records, three different paths.",
+  "running_total": "Five already-archived records caught by this sweep in three consecutive lanes. It should be standard before any lane is written."
+ },
+ "an_enacted_package_the_archive_does_not_have": {
+  "what_the_archive_holds": "The Volcano Trails Sector Development Plan (8,903,701 bytes, validated with an r2_url), its adoption resolution, and the Environmental Planning Commission notice, as three separate objects.",
+  "what_this_lane_found": "VolcanoTrailsSDPFINALenacted2011.pdf, 8,976,542 bytes - the plan and its adopting legislation in one instrument.",
+  "the_measurement": "Token coverage of the held plan inside the enacted file is 1.0000, with two of three contiguous sixty-word runs present verbatim. The enacted file carries 221 tokens the held plan does not, and they are the vocabulary of adoption: adopt, adopting, authorized, advisory, enactment-style numbers, NMSA years.",
+  "why_it_matters": "The standing blocker on isolated legislative files exists because a plan without its adopting instrument is an incomplete record. Here the archive has the plan and the resolution separately and this is the two bound together as enacted.",
+  "and_a_second_legislative_package": "UnserBlvdOverlayZoneCompleteLegislation.pdf is Council Bill C/S R-14 of the Ninth Council, sponsored by Alan B. Armijo, with a blank ENACTMENT NO. line on its face - but it is titled complete legislation and runs to 1,969,125 bytes, so it is the package rather than an isolated substitute. Recommended, with the blank enactment line recorded on the row."
+ },
+ "the_traffic_calming_toolbox": {
+  "count": 22,
+  "what_it_is": "One sheet per measure across the City's whole traffic calming repertoire: chicanes, diagonal diverters, forced turn islands, high visibility crosswalks, lane narrowing with a centre island, lateral shifts, median barriers, medians and partial medians, neckdowns and bulbouts, one-lane and two-lane chokers, one-way couplet conversions, parking strategies, partial closures, permanent radar speed signs, radar speed trailers, raised intersections, speed humps, speed kidneys, speed tables, and education and community involvement - plus the program document itself.",
+  "why_it_belongs": "The archive already holds 83 validated Neighborhood Traffic Management Program records, mostly street-by-street speed studies, and a live-link record titled Program documents and traffic-calming tools. It holds the studies and the link, and not the tools.",
+  "eight_are_registered_twice": "Eight of the sheets appear as two candidate ids at one URL with identical bytes. They are recommended duplicate against their twins."
+ },
+ "plans_that_were_sitting_in_a_forms_directory": {
+  "count": 16,
+  "the_oldest": "Planned Communities Criteria: Policy Element, February 1991.",
+  "the_largest": "Barelas Sector Development Plan, Adopted April 2008, at 49,626,419 bytes.",
+  "the_list": [
+   "Barelas Sector Development Plan (2008)",
+   "Barelas Neighborhood Commercial Area Revitalization Plan",
+   "Bosque Action Plan, Rio Grande Valley State Park (1993)",
+   "Major Public Open Space Facility Plan (1999)",
+   "Clayton Heights Metropolitan Redevelopment Area Plan (2010)",
+   "Facility Plan: Electric System Transmission and Generation (2010-2020)",
+   "Volcano Trails SDP as enacted 2011",
+   "H-1 Historic Old Town Zone Design Guidelines (1998)",
+   "Unser Boulevard Overlay Zone complete legislation",
+   "Planned Communities Criteria: Policy Element (1991)",
+   "Trails and Bikeways Facility Plan (1993)",
+   "Revocable Permit standard form",
+   "Planning Impact Area study chapters 1, 3, 5 and 8"
+  ],
+  "five_had_to_be_rendered": "The Barelas revitalization plan, the Bosque Action Plan, the El Rancho Atrisco sector plan, the Planned Communities policy element and the Trails and Bikeways Facility Plan have no usable text layer. Five adopted plans, invisible to any pass that reads text.",
+  "a_predecessor_for_a_series_the_archive_holds": "The Trails and Bikeways Facility Plan is Adopted, July 1993, Map Revised Nov. 1996. The archive holds a 2015 appendix and the 2024 Bikeway and Trail Facilities Plan. This is where that sequence starts."
+ },
+ "method": "Read the archive's existing dispositions at both paths before fetching. Fetched all 61 candidates and measured byte length, SHA-256 and leading bytes from the fetched bytes. Swept every checksum against all 1020 checksummed archived records. Grouped by checksum within the slice. Rendered the ten files with no usable text layer. Compared the enacted Volcano Trails file against the held plan by token coverage and contiguous run. One fetch timed out mid-download at 15,130,560 of 15,918,465 bytes; curl's own retry completed it, and the logged measurement was confirmed by an independent refetch returning the identical SHA-256 before anything was recorded.",
+ "classification_only": true,
+ "shared_state_written": [],
+ "already_archived_check": {
+  "rule_applied": "Test candidates against R2 objects the archive already holds, against the published site, and against anything recommended earlier in the same batch.",
+  "cross_inventory_byte_collisions": 2,
+  "internal_byte_collisions": 8,
+  "archived_records_compared_against": 1020,
+  "result": "Two candidates are already held with r2_urls and are recommended duplicate against them."
+ },
+ "duplicate_and_supersession_checks": {
+  "internal_byte_collisions": 8,
+  "cross_inventory_byte_collisions": 2,
+  "archived_records_compared_against": 1020,
+  "relationships_found": 10,
+  "note": "Eight internal pairs are one URL registered twice. The two cross-inventory hits are different URLs for one file, which is why only the bytes found them."
+ },
+ "integration_flags": [
+  {
+   "severity": "avoids-duplicate-archival",
+   "affects": [
+    "src-b2e786436af22521",
+    "src-eba23c3560c544ca"
+   ],
+   "finding": "Two candidates are byte-identical to records already validated and archived with r2_urls. The 2000 Comprehensive On-Street Bicycle Plan has now appeared as three inventory records at three paths for one 8,054,496-byte file.",
+   "recommended_action": "Apply duplicate. Make the cross-inventory checksum sweep standard; it has now found five such records in three consecutive lanes."
+  },
+  {
+   "severity": "enacted-package-found",
+   "affects": [
+    "src-f528ec2e0e955690"
+   ],
+   "finding": "The Volcano Trails Sector Development Plan as enacted in 2011, plan and adopting legislation in one instrument. The archive holds the plan and its adoption resolution as separate objects and not the two bound together.",
+   "recommended_action": "Approve. Record it against the held plan so the enacted form is the one cited."
+  },
+  {
+   "severity": "substantive-find",
+   "affects": [
+    "src-2379e7a8b1c51aca",
+    "src-7de0f5803d442e8f",
+    "src-8740362a1b751e26",
+    "src-99fe2201b73355c4",
+    "src-afac0cf84867a22f",
+    "src-c87775c045d8acc4",
+    "src-d9bf34830a9467e2",
+    "src-e6ec0d7ea1527506",
+    "src-eb0f4b39798d29df",
+    "src-f528ec2e0e955690",
+    "src-fb6e95610a43c7a4",
+    "src-fee63a8f74f3f110",
+    "src-16b33375ffbddc62",
+    "src-1fa6ae851ddf282d",
+    "src-513fe9056bf9b34c",
+    "src-c54e59cd5c25282d"
+   ],
+   "finding": "Thirteen adopted plans, policy elements and legislative packages in a directory of application forms, reaching back to the Planned Communities Criteria of February 1991. Five have no usable text layer and were readable only by rendering.",
+   "recommended_action": "Approve. Title and date each from the document; the filenames are unreliable here, and chapter1_2010.pdf carries 1990-1998 data."
+  },
+  {
+   "severity": "substantive-find",
+   "affects": [
+    "src-c1efbc252b944815",
+    "src-2cde2e90c0636d94",
+    "src-b15da81f9d71a717",
+    "src-6c461a5bb313c28f",
+    "src-467ac67b11502959",
+    "src-f27e382bd6704623",
+    "src-ec1e762f9b98c82c",
+    "src-2efe76b357b083a2",
+    "src-a1a403bdeb36778d",
+    "src-9efb9f49c1fdf473",
+    "src-a5f9cd7670a1f4ae",
+    "src-84a471a0d9136a60",
+    "src-376ded4f51fc7cd7",
+    "src-a2efcb827356877e",
+    "src-25484cf5e782b8cb",
+    "src-26c73014ab7a9c30",
+    "src-ecc6321b772f492c",
+    "src-a6640d8737b70f34",
+    "src-a2ba2edcebf9a929",
+    "src-acf62190d549d250",
+    "src-e12fca5b7dbc6aae",
+    "src-8331f1d05445b90a"
+   ],
+   "finding": "The City's complete traffic calming toolbox, one sheet per measure, plus the program document. The archive holds 83 validated speed studies from this program and a live link to the tools, and not the tools themselves.",
+   "recommended_action": "Approve as a set on the speed management page."
+  },
+  {
+   "severity": "judgment-needed",
+   "affects": [
+    "src-40f04f71007ea537",
+    "src-ec22ce0ade528517"
+   ],
+   "finding": "A trails map that is almost certainly a sheet of the Bosque Action Plan but cannot be proved to be, because both files are wholly image-only; and a sector plan whose cover marks it as a developer's submission to the Environmental Planning Commission rather than an adopted plan.",
+   "recommended_action": "Settle the first with a page-by-page render comparison; settle the second by asking whether the plan was adopted in this form."
+  }
+ ],
+ "counts": {
+  "reviewed": 61,
+  "approved_for_addition": 38,
+  "duplicate": 10,
+  "requires_human_review": 2,
+  "excluded": 11,
+  "approved_by_group": {
+   "traffic calming toolbox": 22,
+   "adopted plans and legislation": 16
+  },
+  "containers": {
+   "PDF": 57,
+   "HTML": 4
+  }
+ },
+ "link_check": {
+  "checked": 61,
+  "http_200": 61,
+  "failed": 0,
+  "method": "Full HTTP GET with a browser user agent, 2026-09-13.",
+  "one_retry": "A 15,918,465-byte plan timed out at 15,130,560 bytes on one attempt; curl's retry completed it and an independent refetch returned the identical SHA-256.",
+  "rendered": "10 files with no usable text layer.",
+  "containers_verified": "57 PDFs and 4 HTML pages by leading bytes."
+ },
+ "approved_for_addition": [
+  {
+   "id": "src-c1efbc252b944815",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/chicane.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/chicane.pdf",
+   "size_bytes": 218194,
+   "checksum_sha256": "85ee225ab9f9e9451ffe17b11b4522b9cc582bfdbaeb4480e816b93fb1fb66ff",
+   "title": "Neighborhood Traffic Management Program tool sheet: chicanes",
+   "description": "The City's traffic calming tool sheet for chicanes, setting out what the measure does, where it is appropriate, what it costs and what effect it has on speeds, emergency access and drainage.",
+   "evidence": "One sheet in the City's traffic calming toolbox, published at neighborhood-traffic-management-program/documents/chicane.pdf.",
+   "group": "traffic calming toolbox",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/_index.md",
+     "reason": "The measures are applied on City streets."
+    }
+   ],
+   "description_word_count": 32
+  },
+  {
+   "id": "src-2cde2e90c0636d94",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/diagonal-diverter.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/diagonal-diverter.pdf",
+   "size_bytes": 202377,
+   "checksum_sha256": "fe64dc095b4764762679843aace4bbffac56c76d56c72ea697d0f8dcf36b24a4",
+   "title": "Neighborhood Traffic Management Program tool sheet: diagonal diverters",
+   "description": "The City's traffic calming tool sheet for diagonal diverters, setting out what the measure does, where it is appropriate, what it costs and what effect it has on speeds, emergency access and drainage.",
+   "evidence": "One sheet in the City's traffic calming toolbox, published at neighborhood-traffic-management-program/documents/diagonal-diverter.pdf.",
+   "group": "traffic calming toolbox",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/_index.md",
+     "reason": "The measures are applied on City streets."
+    }
+   ],
+   "description_word_count": 33
+  },
+  {
+   "id": "src-b15da81f9d71a717",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/education-community-involvement.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 219031,
+   "checksum_sha256": "aa632f2c01d78637ee1062e1b74b82a8e46ff3cadc9b9336399477d2f6879298",
+   "title": "Neighborhood Traffic Management Program tool sheet: education and community involvement",
+   "description": "The City's traffic calming tool sheet for education and community involvement, setting out what the measure does, where it is appropriate, what it costs and what effect it has on speeds, emergency access and drainage.",
+   "evidence": "One sheet in the City's traffic calming toolbox, published at neighborhood-traffic-management-program/documents/education-community-involvement.pdf.",
+   "group": "traffic calming toolbox",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/_index.md",
+     "reason": "The measures are applied on City streets."
+    }
+   ],
+   "description_word_count": 35
+  },
+  {
+   "id": "src-6c461a5bb313c28f",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/forced-turn-island.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/forced-turn-island.pdf",
+   "size_bytes": 198800,
+   "checksum_sha256": "ee52b0c18ad86ab9c293ee45d821fcc99330a295c57cd2a29764acde0f9c198b",
+   "title": "Neighborhood Traffic Management Program tool sheet: forced turn islands",
+   "description": "The City's traffic calming tool sheet for forced turn islands, setting out what the measure does, where it is appropriate, what it costs and what effect it has on speeds, emergency access and drainage.",
+   "evidence": "One sheet in the City's traffic calming toolbox, published at neighborhood-traffic-management-program/documents/forced-turn-island.pdf.",
+   "group": "traffic calming toolbox",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/_index.md",
+     "reason": "The measures are applied on City streets."
+    }
+   ],
+   "description_word_count": 34
+  },
+  {
+   "id": "src-467ac67b11502959",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/high-visibility-crosswalks.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/high-visibility-crosswalks.pdf",
+   "size_bytes": 193859,
+   "checksum_sha256": "a22381274953231344d729f0a3fe64dd4f47ba27cc5a130e4764cc2b319e8d78",
+   "title": "Neighborhood Traffic Management Program tool sheet: high visibility crosswalks",
+   "description": "The City's traffic calming tool sheet for high visibility crosswalks, setting out what the measure does, where it is appropriate, what it costs and what effect it has on speeds, emergency access and drainage.",
+   "evidence": "One sheet in the City's traffic calming toolbox, published at neighborhood-traffic-management-program/documents/high-visibility-crosswalks.pdf.",
+   "group": "traffic calming toolbox",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/_index.md",
+     "reason": "The measures are applied on City streets."
+    }
+   ],
+   "description_word_count": 34
+  },
+  {
+   "id": "src-f27e382bd6704623",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/lane-narrowing-with-center-island-pedestrian-refuge.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/lane-narrowing-with-center-island-pedestrian-refuge.pdf",
+   "size_bytes": 201670,
+   "checksum_sha256": "d31cf3877f6f17b9d8ad7512817bf6fcefbb140eae85bd6e180f4f227b199a52",
+   "title": "Neighborhood Traffic Management Program: program document",
+   "description": "The City's Neighborhood Traffic Management Program document, the framework under which residents request traffic calming on their streets and the City ranks, designs and installs it.",
+   "evidence": "A 4,101,479-byte PDF published at the program's own landing path.",
+   "group": "traffic calming toolbox",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/development-process.md",
+     "reason": "It sets the process a neighbourhood follows."
+    }
+   ],
+   "description_word_count": 26
+  },
+  {
+   "id": "src-ec1e762f9b98c82c",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/lateral-shift.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/lateral-shift.pdf",
+   "size_bytes": 149141,
+   "checksum_sha256": "f38ace43373e9b7a90194e66b4d7865ca0dd03cc8b945ee8e63a7e0f326a9ca4",
+   "title": "Neighborhood Traffic Management Program tool sheet: lateral shifts",
+   "description": "The City's traffic calming tool sheet for lateral shifts, setting out what the measure does, where it is appropriate, what it costs and what effect it has on speeds, emergency access and drainage.",
+   "evidence": "One sheet in the City's traffic calming toolbox, published at neighborhood-traffic-management-program/documents/lateral-shift.pdf.",
+   "group": "traffic calming toolbox",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/_index.md",
+     "reason": "The measures are applied on City streets."
+    }
+   ],
+   "description_word_count": 33
+  },
+  {
+   "id": "src-2efe76b357b083a2",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/median-barrier.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/median-barrier.pdf",
+   "size_bytes": 207986,
+   "checksum_sha256": "4621241a8d540fb4e6ed3d9e1761095ccab5da3bc5b115079ebf6e48fa1702b2",
+   "title": "Neighborhood Traffic Management Program tool sheet: median barriers",
+   "description": "The City's traffic calming tool sheet for median barriers, setting out what the measure does, where it is appropriate, what it costs and what effect it has on speeds, emergency access and drainage.",
+   "evidence": "One sheet in the City's traffic calming toolbox, published at neighborhood-traffic-management-program/documents/median-barrier.pdf.",
+   "group": "traffic calming toolbox",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/_index.md",
+     "reason": "The measures are applied on City streets."
+    }
+   ],
+   "description_word_count": 33
+  },
+  {
+   "id": "src-a1a403bdeb36778d",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/medians-partial-medians.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 200372,
+   "checksum_sha256": "4d1421d279f995963e3f14b9fcb3536bef5863f76b45d16a34544e85708ef45f",
+   "title": "Neighborhood Traffic Management Program tool sheet: medians and partial medians",
+   "description": "The City's traffic calming tool sheet for medians and partial medians, setting out what the measure does, where it is appropriate, what it costs and what effect it has on speeds, emergency access and drainage.",
+   "evidence": "One sheet in the City's traffic calming toolbox, published at neighborhood-traffic-management-program/documents/medians-partial-medians.pdf.",
+   "group": "traffic calming toolbox",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/_index.md",
+     "reason": "The measures are applied on City streets."
+    }
+   ],
+   "description_word_count": 35
+  },
+  {
+   "id": "src-9efb9f49c1fdf473",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/neckdowns-bulbouts.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/neckdowns-bulbouts.pdf",
+   "size_bytes": 202972,
+   "checksum_sha256": "0e497558a3446df934a33aacc2bcb100316be2c0c42674d30a4a32c65e54dacc",
+   "title": "Neighborhood Traffic Management Program tool sheet: neckdowns and bulbouts",
+   "description": "The City's traffic calming tool sheet for neckdowns and bulbouts, setting out what the measure does, where it is appropriate, what it costs and what effect it has on speeds, emergency access and drainage.",
+   "evidence": "One sheet in the City's traffic calming toolbox, published at neighborhood-traffic-management-program/documents/neckdowns-bulbouts.pdf.",
+   "group": "traffic calming toolbox",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/_index.md",
+     "reason": "The measures are applied on City streets."
+    }
+   ],
+   "description_word_count": 34
+  },
+  {
+   "id": "src-a5f9cd7670a1f4ae",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/one-lane-choker.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/one-lane-choker.pdf",
+   "size_bytes": 190650,
+   "checksum_sha256": "ad42255b59da37e1d6b399290184ff42926f6fb4d18c864fe656932af4b8b958",
+   "title": "Neighborhood Traffic Management Program tool sheet: one-lane chokers",
+   "description": "The City's traffic calming tool sheet for one-lane chokers, setting out what the measure does, where it is appropriate, what it costs and what effect it has on speeds, emergency access and drainage.",
+   "evidence": "One sheet in the City's traffic calming toolbox, published at neighborhood-traffic-management-program/documents/one-lane-choker.pdf.",
+   "group": "traffic calming toolbox",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/_index.md",
+     "reason": "The measures are applied on City streets."
+    }
+   ],
+   "description_word_count": 33
+  },
+  {
+   "id": "src-84a471a0d9136a60",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/one-way-couplet-conversions.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/one-way-couplet-conversions.pdf",
+   "size_bytes": 206701,
+   "checksum_sha256": "6f8b38d4ee5dfbecbf321cecea8f889ca31231d7005a7d40efc2f5f14d90e5da",
+   "title": "Neighborhood Traffic Management Program tool sheet: one-way couplet conversions",
+   "description": "The City's traffic calming tool sheet for one-way couplet conversions, setting out what the measure does, where it is appropriate, what it costs and what effect it has on speeds, emergency access and drainage.",
+   "evidence": "One sheet in the City's traffic calming toolbox, published at neighborhood-traffic-management-program/documents/one-way-couplet-conversions.pdf.",
+   "group": "traffic calming toolbox",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/_index.md",
+     "reason": "The measures are applied on City streets."
+    }
+   ],
+   "description_word_count": 34
+  },
+  {
+   "id": "src-376ded4f51fc7cd7",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/parking-strategies.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/parking-strategies.pdf",
+   "size_bytes": 205738,
+   "checksum_sha256": "bed7f6066b234f652858e123b5acf89b617ad8f4bc01aae7e137be529a71df07",
+   "title": "Neighborhood Traffic Management Program tool sheet: parking strategies",
+   "description": "The City's traffic calming tool sheet for parking strategies, setting out what the measure does, where it is appropriate, what it costs and what effect it has on speeds, emergency access and drainage.",
+   "evidence": "One sheet in the City's traffic calming toolbox, published at neighborhood-traffic-management-program/documents/parking-strategies.pdf.",
+   "group": "traffic calming toolbox",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/_index.md",
+     "reason": "The measures are applied on City streets."
+    }
+   ],
+   "description_word_count": 33
+  },
+  {
+   "id": "src-a2efcb827356877e",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/partial-closure.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/partial-closure.pdf",
+   "size_bytes": 198469,
+   "checksum_sha256": "9cc94bad2487b9ebf8b843d04c9f212192bde192b2f525660eb34fb366eb8156",
+   "title": "Neighborhood Traffic Management Program tool sheet: partial closures",
+   "description": "The City's traffic calming tool sheet for partial closures, setting out what the measure does, where it is appropriate, what it costs and what effect it has on speeds, emergency access and drainage.",
+   "evidence": "One sheet in the City's traffic calming toolbox, published at neighborhood-traffic-management-program/documents/partial-closure.pdf.",
+   "group": "traffic calming toolbox",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/_index.md",
+     "reason": "The measures are applied on City streets."
+    }
+   ],
+   "description_word_count": 33
+  },
+  {
+   "id": "src-25484cf5e782b8cb",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/permanent-radar-speed-sign.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/permanent-radar-speed-sign.pdf",
+   "size_bytes": 235065,
+   "checksum_sha256": "6cfc8c9dbceb709d8aa0ce21de920dc38589ceb15b7d9ea2e042b6569f3bb7dd",
+   "title": "Neighborhood Traffic Management Program tool sheet: permanent radar speed signs",
+   "description": "The City's traffic calming tool sheet for permanent radar speed signs, setting out what the measure does, where it is appropriate, what it costs and what effect it has on speeds, emergency access and drainage.",
+   "evidence": "One sheet in the City's traffic calming toolbox, published at neighborhood-traffic-management-program/documents/permanent-radar-speed-sign.pdf.",
+   "group": "traffic calming toolbox",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/_index.md",
+     "reason": "The measures are applied on City streets."
+    }
+   ],
+   "description_word_count": 35
+  },
+  {
+   "id": "src-26c73014ab7a9c30",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/radar-speed-trailer.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/radar-speed-trailer.pdf",
+   "size_bytes": 225270,
+   "checksum_sha256": "4802b616389fbfafc65bc4428b5c481a8c0ef9735432c5d183b4dd120e030122",
+   "title": "Neighborhood Traffic Management Program tool sheet: radar speed trailers",
+   "description": "The City's traffic calming tool sheet for radar speed trailers, setting out what the measure does, where it is appropriate, what it costs and what effect it has on speeds, emergency access and drainage.",
+   "evidence": "One sheet in the City's traffic calming toolbox, published at neighborhood-traffic-management-program/documents/radar-speed-trailer.pdf.",
+   "group": "traffic calming toolbox",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/_index.md",
+     "reason": "The measures are applied on City streets."
+    }
+   ],
+   "description_word_count": 34
+  },
+  {
+   "id": "src-ecc6321b772f492c",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/raised-intersection.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 205599,
+   "checksum_sha256": "cd25de6ff00f812892837a793c4e3c6d0622bc31f123a590b4228693a0bf3481",
+   "title": "Neighborhood Traffic Management Program tool sheet: raised intersections",
+   "description": "The City's traffic calming tool sheet for raised intersections, setting out what the measure does, where it is appropriate, what it costs and what effect it has on speeds, emergency access and drainage.",
+   "evidence": "One sheet in the City's traffic calming toolbox, published at neighborhood-traffic-management-program/documents/raised-intersection.pdf.",
+   "group": "traffic calming toolbox",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/_index.md",
+     "reason": "The measures are applied on City streets."
+    }
+   ],
+   "description_word_count": 33
+  },
+  {
+   "id": "src-a6640d8737b70f34",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/speed-hump.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 238273,
+   "checksum_sha256": "f4f81167642619e3fd4e75aa03da29e7ba9e92afcc32a054a064f778e8d3858f",
+   "title": "Neighborhood Traffic Management Program tool sheet: speed humps",
+   "description": "The City's traffic calming tool sheet for speed humps, setting out what the measure does, where it is appropriate, what it costs and what effect it has on speeds, emergency access and drainage.",
+   "evidence": "One sheet in the City's traffic calming toolbox, published at neighborhood-traffic-management-program/documents/speed-hump.pdf.",
+   "group": "traffic calming toolbox",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/_index.md",
+     "reason": "The measures are applied on City streets."
+    }
+   ],
+   "description_word_count": 33
+  },
+  {
+   "id": "src-a2ba2edcebf9a929",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/speed-kidney.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 203046,
+   "checksum_sha256": "0fa7120ec6dd927234b46e7392ab9751b023a368da3f14405aa8a890017d787d",
+   "title": "Neighborhood Traffic Management Program tool sheet: speed kidneys",
+   "description": "The City's traffic calming tool sheet for speed kidneys, setting out what the measure does, where it is appropriate, what it costs and what effect it has on speeds, emergency access and drainage.",
+   "evidence": "One sheet in the City's traffic calming toolbox, published at neighborhood-traffic-management-program/documents/speed-kidney.pdf.",
+   "group": "traffic calming toolbox",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/_index.md",
+     "reason": "The measures are applied on City streets."
+    }
+   ],
+   "description_word_count": 33
+  },
+  {
+   "id": "src-acf62190d549d250",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/speed-table.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 205562,
+   "checksum_sha256": "8d427231c1a2678ac2e8d6aa3bff11b288eabe610772a4d9583b8375c107bdaa",
+   "title": "Neighborhood Traffic Management Program tool sheet: speed tables",
+   "description": "The City's traffic calming tool sheet for speed tables, setting out what the measure does, where it is appropriate, what it costs and what effect it has on speeds, emergency access and drainage.",
+   "evidence": "One sheet in the City's traffic calming toolbox, published at neighborhood-traffic-management-program/documents/speed-table.pdf.",
+   "group": "traffic calming toolbox",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/_index.md",
+     "reason": "The measures are applied on City streets."
+    }
+   ],
+   "description_word_count": 33
+  },
+  {
+   "id": "src-e12fca5b7dbc6aae",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/two-lane-choker.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 202675,
+   "checksum_sha256": "fdba3fcdafa3161856e096619cf189e168b2493a5ae85bbe53e46052c3203a33",
+   "title": "Neighborhood Traffic Management Program tool sheet: two-lane chokers",
+   "description": "The City's traffic calming tool sheet for two-lane chokers, setting out what the measure does, where it is appropriate, what it costs and what effect it has on speeds, emergency access and drainage.",
+   "evidence": "One sheet in the City's traffic calming toolbox, published at neighborhood-traffic-management-program/documents/two-lane-choker.pdf.",
+   "group": "traffic calming toolbox",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/_index.md",
+     "reason": "The measures are applied on City streets."
+    }
+   ],
+   "description_word_count": 33
+  },
+  {
+   "id": "src-8331f1d05445b90a",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/neighborhood-traffic-management-program/resolveuid/c6583bf29b1046c2964d63d6e688af63",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 4101479,
+   "checksum_sha256": "cb4359339d0360f4289003a870a4ed81b87605314278916db8d1bf21e8cd53ae",
+   "title": "Neighborhood Traffic Management Program: program document",
+   "description": "The City's Neighborhood Traffic Management Program document, the framework under which residents request traffic calming on their streets and the City ranks, designs and installs it.",
+   "evidence": "A 4,101,479-byte PDF published at the program's own landing path.",
+   "group": "traffic calming toolbox",
+   "proposed_canonical_page": "content/transportation/roadway-projects/speed-management.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/development-process.md",
+     "reason": "It sets the process a neighbourhood follows."
+    }
+   ],
+   "description_word_count": 26
+  },
+  {
+   "id": "src-2379e7a8b1c51aca",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/ClaytonHtsMraPlanfinal072010.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/planning/documents/ClaytonHtsMraPlanfinal072010.pdf",
+   "size_bytes": 4952377,
+   "checksum_sha256": "8aed57fd4fb1fb41401153d9dd8d7f39aa61cf812b0f5fe1f1aaa3f36e828f34",
+   "title": "Clayton Heights Metropolitan Redevelopment Area Plan, July 2010",
+   "description": "The City's metropolitan redevelopment area plan for Clayton Heights, described on its own cover as an Albuquerque gateway neighbourhood, setting the redevelopment framework for the designated area.",
+   "date": "2010",
+   "evidence": "Headed Clayton Heights, Metropolitan Redevelopment Area Plan, An Albuquerque Gateway Neighborhood. The filename records final 07 2010.",
+   "group": "adopted plans and legislation",
+   "proposed_canonical_page": "content/development-land-use/redevelopment-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "An adopted area plan."
+    }
+   ],
+   "description_word_count": 27
+  },
+  {
+   "id": "src-7de0f5803d442e8f",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/EFPwithsecurityCOABernco20102020.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/planning/documents/EFPwithsecurityCOABernco20102020.pdf",
+   "size_bytes": 16542346,
+   "checksum_sha256": "60d4fd8f74ddfa5a250a50b1b5cae3ce3dbe8bf52f6b2008e5b6b8b07add1c38",
+   "title": "Facility Plan: Electric System Transmission and Generation, 2010-2020",
+   "description": "The joint City and County facility plan for electric system transmission and generation across the decade to 2020, the adopted framework for where electrical infrastructure may be built.",
+   "date": null,
+   "evidence": "Headed FACILITY PLAN, Electric System, Transmission and Generation (2010 - 2020), City of Albuquerque and Bernalillo County.",
+   "group": "adopted plans and legislation",
+   "proposed_canonical_page": "content/public-works/city-facilities.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "An adopted area plan."
+    }
+   ],
+   "description_word_count": 28
+  },
+  {
+   "id": "src-8740362a1b751e26",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/planned.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/planning/documents/planned.pdf",
+   "size_bytes": 7312527,
+   "checksum_sha256": "70a6a68c0d3870ec0fd8f93e73ab1e0ff1bd0d1698c7fe3d90e58070f26b26e2",
+   "title": "Planned Communities Criteria: Policy Element, February 1991",
+   "description": "The City's adopted policy element setting the criteria a planned community must meet, the framework under which large master-planned developments are judged against the Comprehensive Plan.",
+   "date": "1991",
+   "evidence": "Rendered, because the file has no usable text layer. Its cover reads PLANNED COMMUNITIES, PLANNED COMMUNITIES CRITERIA: POLICY ELEMENT, February, 1991.",
+   "group": "adopted plans and legislation",
+   "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "An adopted area plan."
+    }
+   ],
+   "description_word_count": 26
+  },
+  {
+   "id": "src-99fe2201b73355c4",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/BARELASsdprpt806forprintcolor.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/planning/documents/BARELASsdprpt806forprintcolor.pdf",
+   "size_bytes": 49626419,
+   "checksum_sha256": "4c68c600323dd42171ab42d954008b6f30d0ad304b0ce20e43d05283a97d4d99",
+   "title": "Barelas Sector Development Plan, Adopted April 2008",
+   "description": "The adopted sector development plan for Barelas, the City's land use and design framework for the neighbourhood, setting what may be built where and to what standard within the plan's boundary.",
+   "date": "2008",
+   "evidence": "Titled BARELAS SECTOR DEVELOPMENT PLAN, Adopted April 2008, on its cover. At 49,626,419 bytes it is the largest file in this lane.",
+   "group": "adopted plans and legislation",
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/development-process.md",
+     "reason": "It governs development review in the plan area."
+    }
+   ],
+   "description_word_count": 31
+  },
+  {
+   "id": "src-afac0cf84867a22f",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/BosqueActionPlanParksGeneralServices0193.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/planning/documents/BosqueActionPlanParksGeneralServices0193.pdf",
+   "size_bytes": 15918465,
+   "checksum_sha256": "002ef0e4f24a5f09d9701dd2359b653e18d09b4b418d8112c896fd5fd5ebcc77",
+   "title": "Bosque Action Plan, Rio Grande Valley State Park, Final Plan, January 1993",
+   "description": "The City's final action plan for the bosque within Rio Grande Valley State Park, setting out what the City proposed to do along the river corridor, from access and trails through restoration and wildlife preserve.",
+   "date": "1993",
+   "evidence": "Rendered, because the file has no usable text layer at all. Its cover reads City of Albuquerque, Parks and General Services Department, BOSQUE ACTION PLAN, Rio Grande Valley State Park, Final Plan, January 1993. 105 pages.",
+   "group": "adopted plans and legislation",
+   "proposed_canonical_page": "content/public-works/parks-recreation.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "An adopted area plan."
+    }
+   ],
+   "description_word_count": 35
+  },
+  {
+   "id": "src-c87775c045d8acc4",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/H1OldTownBufferZone032912.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/planning/documents/H1OldTownBufferZone032912.pdf",
+   "size_bytes": 15409,
+   "checksum_sha256": "610913cb0fce2deff67a891986e1da515924fb2c4b3c0dfd373c574bae1051c4",
+   "title": "H-1 Historic Old Town Zone Design Guidelines, as amended through April 9, 1998",
+   "description": "The design guidelines adopted by the Landmarks and Urban Conservation Commission for building projects in the H-1 Historic Old Town Zone and the three hundred foot buffer zone around it.",
+   "date": "1998",
+   "evidence": "Opens: The following Design Guidelines (as amended through April 9, 1998) have been adopted by the Landmarks and Urban Conservation Commission for building projects in the H-1 Historic Old Town Zone and in the 300 foot buffer zone surrounding the H-1 Zone.",
+   "group": "adopted plans and legislation",
+   "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "An adopted area plan."
+    }
+   ],
+   "description_word_count": 30
+  },
+  {
+   "id": "src-d9bf34830a9467e2",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/BarelasRevitPlanCompleteWlegislationpdf.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/planning/documents/BarelasRevitPlanCompleteWlegislationpdf.pdf",
+   "size_bytes": 8719030,
+   "checksum_sha256": "c2081c6cbc60b029c2b558a73ad975b429b03e89cc1837c393f8b5c30191ae19",
+   "title": "Barelas Neighborhood Commercial Area Revitalization Plan, with legislation",
+   "description": "The City's revitalization plan for the Barelas neighbourhood commercial area, published complete with the legislation that adopted it, covering the commercial frontage the plan set out to revive.",
+   "date": null,
+   "evidence": "Rendered, because the file has no usable text layer. Its cover reads BARELAS NEIGHBORHOOD COMMERCIAL AREA REVITALIZATION PLAN over a photograph of the Arrow Super Market building. The filename records that the legislation is bound in.",
+   "group": "adopted plans and legislation",
+   "proposed_canonical_page": "content/development-land-use/redevelopment-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "An adopted area plan."
+    }
+   ],
+   "description_word_count": 28
+  },
+  {
+   "id": "src-e6ec0d7ea1527506",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/RevocablePermit.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/planning/documents/RevocablePermit.pdf",
+   "size_bytes": 128637,
+   "checksum_sha256": "293102afb0f6434a70df19c75487879b55fc2febfb5230bae11bb2ffcc984dac",
+   "title": "Revocable Permit (standard form)",
+   "description": "The City's standard revocable permit instrument, the agreement by which the City grants a permission it can later withdraw, with the project name, number and parties left to be filled in.",
+   "date": null,
+   "evidence": "Headed REVOCABLE PERMIT with Project Name and Project Number blank, opening THIS REVOCABLE PERMIT (Permit), made and entered into this ___ day of.",
+   "group": "adopted plans and legislation",
+   "proposed_canonical_page": "content/development-land-use/development-process.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "An adopted area plan."
+    }
+   ],
+   "description_word_count": 31
+  },
+  {
+   "id": "src-eb0f4b39798d29df",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/UnserBlvdOverlayZoneCompleteLegislation.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/planning/documents/UnserBlvdOverlayZoneCompleteLegislation.pdf",
+   "size_bytes": 1969125,
+   "checksum_sha256": "da74a6536568142b82485e0753fe488358d589d6a5f0f689973c419669317f20",
+   "title": "Unser Boulevard Overlay Zone: complete legislation",
+   "description": "The complete legislative package establishing the Unser Boulevard overlay zone, the additional development controls applied along the corridor over and above the underlying zoning.",
+   "date": null,
+   "evidence": "Headed CITY of ALBUQUERQUE, NINTH COUNCIL, COUNCIL BILL NO. C/S R-14, sponsored by Alan B. Armijo. Its ENACTMENT NO. line is blank on the face, but the file is titled complete legislation and runs to 1,969,125 bytes, so the package rather than an isolated substitute.",
+   "group": "adopted plans and legislation",
+   "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "An adopted area plan."
+    }
+   ],
+   "description_word_count": 24
+  },
+  {
+   "id": "src-f528ec2e0e955690",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/VolcanoTrailsSDPFINALenacted2011.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/planning/documents/VolcanoTrailsSDPFINALenacted2011.pdf",
+   "size_bytes": 8976542,
+   "checksum_sha256": "7e1291301365c09fa76bd2c495aa0e563b2e6ce8e864458d5213ea343d449ad7",
+   "title": "Volcano Trails Sector Development Plan, as enacted 2011, with adopting legislation",
+   "description": "The Volcano Trails sector development plan in its enacted form, the plan text published together with the legislation that adopted it, which the plan document alone does not carry.",
+   "date": "2011",
+   "evidence": "8,976,542 bytes against the 8,903,701-byte plan the archive already holds. Token coverage of the held plan inside this file is 1.0000 with two of three contiguous sixty-word runs present, and this file carries 221 further tokens the held plan does not: adopt, adopting, authorized, advisory, enactment-style numbers and NMSA years. It is the plan with its adopting legislation bound in.",
+   "group": "adopted plans and legislation",
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/development-process.md",
+     "reason": "It governs development review in the plan area."
+    }
+   ],
+   "description_word_count": 29
+  },
+  {
+   "id": "src-fb6e95610a43c7a4",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/COAMPOSFP.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/planning/documents/COAMPOSFP.pdf",
+   "size_bytes": 16276532,
+   "checksum_sha256": "15ca95c5d9662e2984024c3b98c4e3824ae1bde53a82ac3d3a24c1ef1f6414a8",
+   "title": "Major Public Open Space Facility Plan, January 1999",
+   "description": "The City's adopted facility plan for its major public open space, the framework governing how the City's open space lands are acquired, managed and used.",
+   "date": "1999",
+   "evidence": "Headed CITY OF ALBUQUERQUE, MAJOR PUBLIC OPEN SPACE FACILITY PLAN, January 1999.",
+   "group": "adopted plans and legislation",
+   "proposed_canonical_page": "content/public-works/parks-recreation.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "An adopted area plan."
+    }
+   ],
+   "description_word_count": 25
+  },
+  {
+   "id": "src-fee63a8f74f3f110",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/trailbky.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/planning/documents/trailbky.pdf",
+   "size_bytes": 4624017,
+   "checksum_sha256": "c61bc45648f9fb2ec7e36262e71c61a68babaa6b3fbab37b436ce0603f415b92",
+   "title": "Trails and Bikeways Facility Plan, Adopted July 1993, map revised November 1996",
+   "description": "The City's adopted facility plan for trails and bikeways, the earliest in the sequence the archive holds, setting the framework for the trail and bikeway network the later plans revised.",
+   "date": "1993",
+   "evidence": "Rendered, because the file has no usable text layer. Its cover reads Trails & Bikeways Facility Plan, Adopted, July 1993, Map Revised Nov. 1996. The archive already holds a 2015 appendix and the 2024 Bikeway and Trail Facilities Plan; this is their predecessor.",
+   "group": "adopted plans and legislation",
+   "proposed_canonical_page": "content/transportation/bicycling/bike-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "An adopted area plan."
+    }
+   ],
+   "description_word_count": 30
+  },
+  {
+   "id": "src-16b33375ffbddc62",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/chapter1_2010.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/planning/documents/chapter1_2010.pdf",
+   "size_bytes": 1340591,
+   "checksum_sha256": "673d90a0c41b2548f824aa50b248496e444f700aa3cf33d93d4d5524ad9c8930",
+   "title": "Planning Impact Area population and land use study: Chapter 1.0",
+   "description": "Chapter 1.0 of the City's planning impact area population and land use study, one of four chapters of that study published separately on the planning department's document page.",
+   "evidence": "Chapter 1.0 is headed EXECUTIVE SUMMARY and reports planning impact area population reaching almost 600,000 by 1998 against the 1990 Census total of 515,143, naming PIAs 4, 5, 14 and 15. The filenames carry 2010, which on the evidence of the data is the projection horizon rather than the publication year.",
+   "group": "adopted plans and legislation",
+   "caution": "Only chapters 1, 3, 5 and 8 are here; 2, 4, 6 and 7 are not among the candidates. Name the parent study from a complete copy before publishing, and do not date it 2010 from the filename.",
+   "proposed_canonical_page": "content/city-data/demographics.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "The study underpins area planning."
+    }
+   ],
+   "description_word_count": 28
+  },
+  {
+   "id": "src-1fa6ae851ddf282d",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/chapter5_2010.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/planning/documents/chapter5_2010.pdf",
+   "size_bytes": 1746980,
+   "checksum_sha256": "a60c5babe0cdca83937bcdb0086153d0024d92ff17896a68b89d44a0483f56f9",
+   "title": "Planning Impact Area population and land use study: Chapter 5",
+   "description": "Chapter 5 of the City's planning impact area population and land use study, one of four chapters of that study published separately on the planning department's document page.",
+   "evidence": "Chapter 1.0 is headed EXECUTIVE SUMMARY and reports planning impact area population reaching almost 600,000 by 1998 against the 1990 Census total of 515,143, naming PIAs 4, 5, 14 and 15. The filenames carry 2010, which on the evidence of the data is the projection horizon rather than the publication year.",
+   "group": "adopted plans and legislation",
+   "caution": "Only chapters 1, 3, 5 and 8 are here; 2, 4, 6 and 7 are not among the candidates. Name the parent study from a complete copy before publishing, and do not date it 2010 from the filename.",
+   "proposed_canonical_page": "content/city-data/demographics.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "The study underpins area planning."
+    }
+   ],
+   "description_word_count": 28
+  },
+  {
+   "id": "src-513fe9056bf9b34c",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/chapter8_2010.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/planning/documents/chapter8_2010.pdf",
+   "size_bytes": 1028761,
+   "checksum_sha256": "d0d15d835381400a3c05092dfef8e473423c32acd6b4ffc6f8d548815096d661",
+   "title": "Planning Impact Area population and land use study: Chapter 8",
+   "description": "Chapter 8 of the City's planning impact area population and land use study, one of four chapters of that study published separately on the planning department's document page.",
+   "evidence": "Chapter 1.0 is headed EXECUTIVE SUMMARY and reports planning impact area population reaching almost 600,000 by 1998 against the 1990 Census total of 515,143, naming PIAs 4, 5, 14 and 15. The filenames carry 2010, which on the evidence of the data is the projection horizon rather than the publication year.",
+   "group": "adopted plans and legislation",
+   "caution": "Only chapters 1, 3, 5 and 8 are here; 2, 4, 6 and 7 are not among the candidates. Name the parent study from a complete copy before publishing, and do not date it 2010 from the filename.",
+   "proposed_canonical_page": "content/city-data/demographics.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "The study underpins area planning."
+    }
+   ],
+   "description_word_count": 28
+  },
+  {
+   "id": "src-c54e59cd5c25282d",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/chapter3_2010.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/planning/documents/chapter3_2010.pdf",
+   "size_bytes": 1495629,
+   "checksum_sha256": "26fe18c4e274cd4384b83216c2436a0dc1724a3220a1e26894a7d98e2123942b",
+   "title": "Planning Impact Area population and land use study: Chapter 3",
+   "description": "Chapter 3 of the City's planning impact area population and land use study, one of four chapters of that study published separately on the planning department's document page.",
+   "evidence": "Chapter 1.0 is headed EXECUTIVE SUMMARY and reports planning impact area population reaching almost 600,000 by 1998 against the 1990 Census total of 515,143, naming PIAs 4, 5, 14 and 15. The filenames carry 2010, which on the evidence of the data is the projection horizon rather than the publication year.",
+   "group": "adopted plans and legislation",
+   "caution": "Only chapters 1, 3, 5 and 8 are here; 2, 4, 6 and 7 are not among the candidates. Name the parent study from a complete copy before publishing, and do not date it 2010 from the filename.",
+   "proposed_canonical_page": "content/city-data/demographics.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/area-sector-plans.md",
+     "reason": "The study underpins area planning."
+    }
+   ],
+   "description_word_count": 28
+  }
+ ],
+ "duplicate": [
+  {
+   "id": "src-b2e786436af22521",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/ABQcomprehensiveonstreetbicycleplan.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/planning/documents/ABQcomprehensiveonstreetbicycleplan.pdf",
+   "size_bytes": 8054496,
+   "checksum_sha256": "81e89d704fe74949d958fb42f8e5ede02adeeb3ebb5b243cf16acc6f92514651",
+   "canonical_id": "src-0f60535452ac9154",
+   "title_for_reference": "ABQcomprehensiveonstreetbicycleplan.pdf",
+   "relationship": "The same file the archive already holds as 2000 Albuquerque Comprehensive On-Street Bicycle Plan, validated with an r2_url.",
+   "how_it_was_established": "Byte-identical to the archived record: 8,054,496 bytes and the same SHA-256, found by sweeping every fetched checksum against all 1020 checksummed archived records.",
+   "why_this_one_is_the_copy": "The archive already holds it, validated and archived.",
+   "group": "already archived"
+  },
+  {
+   "id": "src-eba23c3560c544ca",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/VolcanoTrailsSDPFINAL.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/planning/documents/VolcanoTrailsSDPFINAL.pdf",
+   "size_bytes": 8903701,
+   "checksum_sha256": "a6da27a70e4bda95e8b4e971e2698e2f47d7e88af7e49671ece6ef2aad712e26",
+   "canonical_id": "src-81c75a7d7a217a68",
+   "title_for_reference": "VolcanoTrailsSDPFINAL.pdf",
+   "relationship": "The same file the archive already holds as Volcano Trails Sector Development Plan, validated with an r2_url.",
+   "how_it_was_established": "Byte-identical to the archived record: 8,903,701 bytes and the same SHA-256, found by sweeping every fetched checksum against all 1020 checksummed archived records.",
+   "why_this_one_is_the_copy": "The archive already holds it, validated and archived.",
+   "group": "already archived"
+  },
+  {
+   "id": "src-c078a57c7fc43a1d",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/forced-turn-island.pdf",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 198800,
+   "checksum_sha256": "ee52b0c18ad86ab9c293ee45d821fcc99330a295c57cd2a29764acde0f9c198b",
+   "canonical_id": "src-6c461a5bb313c28f",
+   "title_for_reference": "forced-turn-island.pdf, second inventory record",
+   "relationship": "The same file registered twice in the inventory under two candidate ids at one URL.",
+   "how_it_was_established": "Byte-identical: both 198,800 bytes with the same SHA-256 at the same URL.",
+   "why_this_one_is_the_copy": "Arbitrary between two identical registrations of one URL; the relationship is what matters.",
+   "group": "duplicate registrations"
+  },
+  {
+   "id": "src-c464a2f3e63f465b",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/neckdowns-bulbouts.pdf",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 202972,
+   "checksum_sha256": "0e497558a3446df934a33aacc2bcb100316be2c0c42674d30a4a32c65e54dacc",
+   "canonical_id": "src-9efb9f49c1fdf473",
+   "title_for_reference": "neckdowns-bulbouts.pdf, second inventory record",
+   "relationship": "The same file registered twice in the inventory under two candidate ids at one URL.",
+   "how_it_was_established": "Byte-identical: both 202,972 bytes with the same SHA-256 at the same URL.",
+   "why_this_one_is_the_copy": "Arbitrary between two identical registrations of one URL; the relationship is what matters.",
+   "group": "duplicate registrations"
+  },
+  {
+   "id": "src-d330781542a36f24",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/education-community-involvement.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/education-community-involvement.pdf",
+   "size_bytes": 219031,
+   "checksum_sha256": "aa632f2c01d78637ee1062e1b74b82a8e46ff3cadc9b9336399477d2f6879298",
+   "canonical_id": "src-b15da81f9d71a717",
+   "title_for_reference": "education-community-involvement.pdf, second inventory record",
+   "relationship": "The same file registered twice in the inventory under two candidate ids at one URL.",
+   "how_it_was_established": "Byte-identical: both 219,031 bytes with the same SHA-256 at the same URL.",
+   "why_this_one_is_the_copy": "Arbitrary between two identical registrations of one URL; the relationship is what matters.",
+   "group": "duplicate registrations"
+  },
+  {
+   "id": "src-eb2323c8cee0992a",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/median-barrier.pdf",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 207986,
+   "checksum_sha256": "4621241a8d540fb4e6ed3d9e1761095ccab5da3bc5b115079ebf6e48fa1702b2",
+   "canonical_id": "src-2efe76b357b083a2",
+   "title_for_reference": "median-barrier.pdf, second inventory record",
+   "relationship": "The same file registered twice in the inventory under two candidate ids at one URL.",
+   "how_it_was_established": "Byte-identical: both 207,986 bytes with the same SHA-256 at the same URL.",
+   "why_this_one_is_the_copy": "Arbitrary between two identical registrations of one URL; the relationship is what matters.",
+   "group": "duplicate registrations"
+  },
+  {
+   "id": "src-ebdd2fb1280faa2b",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/permanent-radar-speed-sign.pdf",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 235065,
+   "checksum_sha256": "6cfc8c9dbceb709d8aa0ce21de920dc38589ceb15b7d9ea2e042b6569f3bb7dd",
+   "canonical_id": "src-25484cf5e782b8cb",
+   "title_for_reference": "permanent-radar-speed-sign.pdf, second inventory record",
+   "relationship": "The same file registered twice in the inventory under two candidate ids at one URL.",
+   "how_it_was_established": "Byte-identical: both 235,065 bytes with the same SHA-256 at the same URL.",
+   "why_this_one_is_the_copy": "Arbitrary between two identical registrations of one URL; the relationship is what matters.",
+   "group": "duplicate registrations"
+  },
+  {
+   "id": "src-f2b60939e3efc80f",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/radar-speed-trailer.pdf",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 225270,
+   "checksum_sha256": "4802b616389fbfafc65bc4428b5c481a8c0ef9735432c5d183b4dd120e030122",
+   "canonical_id": "src-26c73014ab7a9c30",
+   "title_for_reference": "radar-speed-trailer.pdf, second inventory record",
+   "relationship": "The same file registered twice in the inventory under two candidate ids at one URL.",
+   "how_it_was_established": "Byte-identical: both 225,270 bytes with the same SHA-256 at the same URL.",
+   "why_this_one_is_the_copy": "Arbitrary between two identical registrations of one URL; the relationship is what matters.",
+   "group": "duplicate registrations"
+  },
+  {
+   "id": "src-fa784adbe11c7bfe",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/high-visibility-crosswalks.pdf",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 193859,
+   "checksum_sha256": "a22381274953231344d729f0a3fe64dd4f47ba27cc5a130e4764cc2b319e8d78",
+   "canonical_id": "src-467ac67b11502959",
+   "title_for_reference": "high-visibility-crosswalks.pdf, second inventory record",
+   "relationship": "The same file registered twice in the inventory under two candidate ids at one URL.",
+   "how_it_was_established": "Byte-identical: both 193,859 bytes with the same SHA-256 at the same URL.",
+   "why_this_one_is_the_copy": "Arbitrary between two identical registrations of one URL; the relationship is what matters.",
+   "group": "duplicate registrations"
+  },
+  {
+   "id": "src-ff8a8efda91c6d0d",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/documents/chicane.pdf",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 218194,
+   "checksum_sha256": "85ee225ab9f9e9451ffe17b11b4522b9cc582bfdbaeb4480e816b93fb1fb66ff",
+   "canonical_id": "src-c1efbc252b944815",
+   "title_for_reference": "chicane.pdf, second inventory record",
+   "relationship": "The same file registered twice in the inventory under two candidate ids at one URL.",
+   "how_it_was_established": "Byte-identical: both 218,194 bytes with the same SHA-256 at the same URL.",
+   "why_this_one_is_the_copy": "Arbitrary between two identical registrations of one URL; the relationship is what matters.",
+   "group": "duplicate registrations"
+  }
+ ],
+ "requires_human_review": [
+  {
+   "id": "src-40f04f71007ea537",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/BosquectionPlansA0193pdf.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/planning/documents/BosquectionPlansA0193pdf.pdf",
+   "size_bytes": 1318593,
+   "checksum_sha256": "7cb97c893bb3a5edef8518afa1e7d93a836a42c3465592d0040c1a868eaf50cd",
+   "draft_title": "Bosque Action Plan: Map #3, Trails Map (existing and proposed trails)",
+   "question_for_human": "Confirm whether this sheet is a page of the Bosque Action Plan recommended in this artifact, and drop it if so.",
+   "why_not_decided_here": "Everything points to it being one sheet of that plan and the test that would prove it could not be run. Its own legend reads BOSQUE ACTION PLAN, RIO GRANDE VALLEY STATE PARK, CITY OF ALBUQUERQUE PARKS AND GENERAL SERVICES DEPARTMENT, it is numbered Map #3, it carries the printed sheet number 19, and both files carry the same 0193 date stamp in their filenames. But both are entirely image-only - zero extractable tokens each - so token containment cannot be measured at all, and render-and-hash at PDF page 19 does not match because the printed sheet number is offset from the PDF page number: PDF page 19 of the 105-page plan is an Introduction divider.",
+   "measurement": "1,318,593 bytes against the plan's 15,918,465. Rendered page 1 is 902,309 bytes of PNG; the plan's rendered page 19 is 1,195,874 bytes and a different image.",
+   "distinguishing_content": "Map #3 Trails Map, existing and proposed trails, Bosque Action Plan, Rio Grande Valley State Park.",
+   "package": "a_sheet_of_a_plan_or_a_document",
+   "what_would_settle_it": "A page-by-page render comparison across the 105-page plan. That is a mechanical job, not a research question, and it was out of proportion to one record here.",
+   "priority": 1
+  },
+  {
+   "id": "src-ec22ce0ade528517",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/ElRanchoAtriscoSDP.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/planning/documents/ElRanchoAtriscoSDP.pdf",
+   "size_bytes": 459890,
+   "checksum_sha256": "7d4277c4c6c030f1c81aa975e8d729ad1104b39fc3e3dc48cfa3d00b22f49bae",
+   "draft_title": "Sector Plan: El Rancho Atrisco Phase III",
+   "question_for_human": "Establish whether this is the adopted sector plan or the developer's submission, then decide.",
+   "why_not_decided_here": "Its cover says what it is and what it is not. SECTOR PLAN, EL RANCHO ATRISCO PHASE III, Prepared for WESTLAND DEVELOPMENT CO. INC., For Submission TO THE CITY OF ALBUQUERQUE ENVIRONMENTAL PLANNING COMMISSION, prepared by a private engineering and planning firm. It is a private party's submission to the commission, not on its face a plan the City adopted. Publishing a developer's submission as an adopted sector plan would misstate its standing.",
+   "measurement": "Rendered, because the file has no usable text layer. 459,890 bytes. The cover carries a fax header dated 2004 and a page stamp.",
+   "distinguishing_content": "El Rancho Atrisco Phase III sector plan, prepared for Westland Development Co. Inc. by Denney-Gross & Associates.",
+   "package": "submitted_or_adopted",
+   "priority": 2
+  }
+ ],
+ "excluded": [
+  {
+   "id": "src-5d66c65377ed6036",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/neighborhood-traffic-management-program/resolveuid/16e20ffb89c94e6ea27dee7dc1ce3f4f",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "HTML",
+   "leading_bytes": "3c21444f",
+   "size_bytes": 111495,
+   "checksum_sha256": "c5a192602311bfea69ed6077fc72d7d5087182aa0de5d8060c2a34c08b2ac49f",
+   "title_for_reference": "Web page: neighborhood-traffic-management-program/neighborhood-traffic-management-program/resolveuid/16e20ffb89c94e6ea27dee7dc1ce3f4f",
+   "what_it_is": "A live page on the City's site.",
+   "exclusion_reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f. The archive has already settled this class at both of this lane's paths: six neighborhood-traffic-management-program records and nine planning/documents records are excluded in the inventory with the reason navigation, pagination, contact, or generic interface text captured as a candidate.",
+   "category": "live web page",
+   "package": "web_pages"
+  },
+  {
+   "id": "src-fba682bf06667948",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/neighborhood-traffic-management-program/resolveuid/c1786266d89a426f8eb1c378d365dc35",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "HTML",
+   "leading_bytes": "3c21444f",
+   "size_bytes": 93619,
+   "checksum_sha256": "49f65778af2a272a0349393b22c8f2016415dc527efd80b52a2ad2ecc17f1582",
+   "title_for_reference": "Web page: neighborhood-traffic-management-program/neighborhood-traffic-management-program/resolveuid/c1786266d89a426f8eb1c378d365dc35",
+   "what_it_is": "A live page on the City's site.",
+   "exclusion_reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f. The archive has already settled this class at both of this lane's paths: six neighborhood-traffic-management-program records and nine planning/documents records are excluded in the inventory with the reason navigation, pagination, contact, or generic interface text captured as a candidate.",
+   "category": "live web page",
+   "package": "web_pages"
+  },
+  {
+   "id": "src-19304c8c382aeb03",
+   "authoritative_url": "https://www.cabq.gov/neighborhood-traffic-management-program/neighborhood-traffic-management-program/resolveuid/d7dc930173234eafba4f2da00f7f92cf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "HTML",
+   "leading_bytes": "3c21444f",
+   "size_bytes": 94887,
+   "checksum_sha256": "188b1427809b57ccea49cb90a9fb50a74ed37fc27ed30922ba052bc8d451e4f6",
+   "title_for_reference": "Web page: neighborhood-traffic-management-program/neighborhood-traffic-management-program/resolveuid/d7dc930173234eafba4f2da00f7f92cf",
+   "what_it_is": "A live page on the City's site.",
+   "exclusion_reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f. The archive has already settled this class at both of this lane's paths: six neighborhood-traffic-management-program records and nine planning/documents records are excluded in the inventory with the reason navigation, pagination, contact, or generic interface text captured as a candidate.",
+   "category": "live web page",
+   "package": "web_pages"
+  },
+  {
+   "id": "src-a6cfbc7f15e0dd8f",
+   "authoritative_url": "https://www.cabq.gov/planning/documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "HTML",
+   "leading_bytes": "3c21444f",
+   "size_bytes": 131461,
+   "checksum_sha256": "609e56f9d31ca3bd6acd62b948f71636c6b3772cd8dc662a505770a1746079f2",
+   "title_for_reference": "Web page: planning/documents",
+   "what_it_is": "A live page on the City's site.",
+   "exclusion_reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f. The archive has already settled this class at both of this lane's paths: six neighborhood-traffic-management-program records and nine planning/documents records are excluded in the inventory with the reason navigation, pagination, contact, or generic interface text captured as a candidate.",
+   "category": "live web page",
+   "package": "web_pages"
+  },
+  {
+   "id": "src-e9a45e771497acb7",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/contractor-building-permit-flow-chart.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 59128,
+   "checksum_sha256": "2181a795688d62d932ef65fd087129771473ab0622f26518256c259efde68cb4",
+   "title_for_reference": "contractor-building-permit-flow-chart.pdf",
+   "what_it_is": "A permit process flow chart, cancellation request, stop-work request or contact sheet for a live City permitting process.",
+   "exclusion_reason": "Not a substantive record. It is process paperwork for a permitting process that is still running - a flow chart of the steps, a request form to cancel or stop work, a contact sheet. The archive has already settled this class at this exact path, excluding a generic hard-copy application link for a live process as not substantive.",
+   "category": "live process paperwork",
+   "package": "process_paperwork"
+  },
+  {
+   "id": "src-a64d3561994aa604",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/contractor-trade-permit-flow-chart.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 58335,
+   "checksum_sha256": "ef121dc9d30ff1870a72801b37af1ae47358571fe29f39172522493ac94b8e90",
+   "title_for_reference": "contractor-trade-permit-flow-chart.pdf",
+   "what_it_is": "A permit process flow chart, cancellation request, stop-work request or contact sheet for a live City permitting process.",
+   "exclusion_reason": "Not a substantive record. It is process paperwork for a permitting process that is still running - a flow chart of the steps, a request form to cancel or stop work, a contact sheet. The archive has already settled this class at this exact path, excluding a generic hard-copy application link for a live process as not substantive.",
+   "category": "live process paperwork",
+   "package": "process_paperwork"
+  },
+  {
+   "id": "src-826b838b930e23b6",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/homeowners-building-permit-flow-chart.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 81919,
+   "checksum_sha256": "60210d5d6e6bddb1b102768a790a793fdd938a1076e332c090455968f5d6db4b",
+   "title_for_reference": "homeowners-building-permit-flow-chart.pdf",
+   "what_it_is": "A permit process flow chart, cancellation request, stop-work request or contact sheet for a live City permitting process.",
+   "exclusion_reason": "Not a substantive record. It is process paperwork for a permitting process that is still running - a flow chart of the steps, a request form to cancel or stop work, a contact sheet. The archive has already settled this class at this exact path, excluding a generic hard-copy application link for a live process as not substantive.",
+   "category": "live process paperwork",
+   "package": "process_paperwork"
+  },
+  {
+   "id": "src-c28ac1861614a36d",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/homeowners-trade-permit-flow-chart.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 83925,
+   "checksum_sha256": "705703b19efac89de64ba2fce572c3284cb6508d4e9b845012660bf0dc0b5487",
+   "title_for_reference": "homeowners-trade-permit-flow-chart.pdf",
+   "what_it_is": "A permit process flow chart, cancellation request, stop-work request or contact sheet for a live City permitting process.",
+   "exclusion_reason": "Not a substantive record. It is process paperwork for a permitting process that is still running - a flow chart of the steps, a request form to cancel or stop work, a contact sheet. The archive has already settled this class at this exact path, excluding a generic hard-copy application link for a live process as not substantive.",
+   "category": "live process paperwork",
+   "package": "process_paperwork"
+  },
+  {
+   "id": "src-da51e530c87ba7ca",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/permit-cancellation-request-for-contractors-2.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 49305,
+   "checksum_sha256": "0a6542a042c59158fcce9fd157f3ab5317ae36a46168bbfd60f00bbb86f36504",
+   "title_for_reference": "permit-cancellation-request-for-contractors-2.pdf",
+   "what_it_is": "A permit process flow chart, cancellation request, stop-work request or contact sheet for a live City permitting process.",
+   "exclusion_reason": "Not a substantive record. It is process paperwork for a permitting process that is still running - a flow chart of the steps, a request form to cancel or stop work, a contact sheet. The archive has already settled this class at this exact path, excluding a generic hard-copy application link for a live process as not substantive.",
+   "category": "live process paperwork",
+   "package": "process_paperwork"
+  },
+  {
+   "id": "src-21c399e0d5a2510c",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/stop-work-request-for-homeowners-dm.docx",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 51660,
+   "checksum_sha256": "b3b13a1d9cf048fe46a226385050367f70ba563bdb2d0914384d552f2c0f31b7",
+   "title_for_reference": "stop-work-request-for-homeowners-dm.docx",
+   "what_it_is": "A permit process flow chart, cancellation request, stop-work request or contact sheet for a live City permitting process.",
+   "exclusion_reason": "Not a substantive record. It is process paperwork for a permitting process that is still running - a flow chart of the steps, a request form to cancel or stop work, a contact sheet. The archive has already settled this class at this exact path, excluding a generic hard-copy application link for a live process as not substantive. Its name ends .docx and its leading bytes are 25504446: it is a PDF.",
+   "category": "live process paperwork",
+   "package": "process_paperwork"
+  },
+  {
+   "id": "src-12776db138d35f11",
+   "authoritative_url": "https://www.cabq.gov/planning/documents/copy_of_NextStepsContactInfo.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/planning/documents/copy_of_NextStepsContactInfo.pdf",
+   "size_bytes": 82043,
+   "checksum_sha256": "9210a536cdccc734e759fdd04e3fd6d513d479873598b4488d8f948725d61006",
+   "title_for_reference": "copy_of_NextStepsContactInfo.pdf",
+   "what_it_is": "A permit process flow chart, cancellation request, stop-work request or contact sheet for a live City permitting process.",
+   "exclusion_reason": "Not a substantive record. It is process paperwork for a permitting process that is still running - a flow chart of the steps, a request form to cancel or stop work, a contact sheet. The archive has already settled this class at this exact path, excluding a generic hard-copy application link for a live process as not substantive.",
+   "category": "live process paperwork",
+   "package": "process_paperwork"
+  }
+ ],
+ "archival_note": "All 38 approved records are inventory-only until an R2 archive object exists for each and its public download, exact size, SHA-256, and authoritative-source provenance are verified. Combined archive footprint if authorized: 149,086,316 bytes, dominated by the Barelas Sector Development Plan at 49,626,419 bytes. Nineteen approved records are scanned documents with no usable text layer and should be archived as they are, with their titles taken from this artifact.",
+ "integration_note": "Codex integration lane: apply recommended_status values through scripts/project/Update-Candidate.ps1 only. Ten rows carry a canonical_id; eight canonicals are rows in this artifact and two are records already validated and archived. Every approved row carries a group. The chapter rows carry a caution about their incomplete set and their misleading filenames. Every row carries a leading_bytes field. Sizes and checksums are first measurements; the inventory held none.",
+ "safeguards": [
+  "no master-inventory.json write",
+  "no checkpoint.json write",
+  "no r2-inventory.json write",
+  "no site content change",
+  "no R2 upload",
+  "no commit, merge, or deploy",
+  "no terminal record modified"
+ ]
+}

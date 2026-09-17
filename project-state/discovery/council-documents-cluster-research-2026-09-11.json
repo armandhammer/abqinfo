@@ -1,0 +1,1346 @@
+{
+ "batch_id": "council-documents-cluster-research-2026-09-11",
+ "lane": "Claude research lane: www.cabq.gov/council/documents flat directory",
+ "generated_at": "2026-09-11T21:39:16.548567+00:00",
+ "cluster": "The flat level of the Albuquerque City Council document library at www.cabq.gov/council/documents: files and collection landing pages published directly under that path, excluding the 48 subdirectories beneath it.",
+ "scope": "All 107 pending-review candidates at the flat level: 65 documents and 42 collection landing pages. The handoff ledger recorded 52 pending for www.cabq.gov/council/documents; the whole tree in fact holds 525 pending across 872 records, and this artifact deliberately scopes to the flat level, which is the coherent unit. The 48 subdirectories, led by 21st-century-transportation-task-force at 57 pending, councilor-district-2-documents at 50, and amendments-for-posting-on-council-page at 34, remain untriaged and are the natural next lanes.",
+ "brief": "Separate enacted legislation, adopted plans, and Council reports from routine agendas, notices, and administrative forms.",
+ "brief_finding": "The brief's first category turns out to be almost empty and the reason matters: every piece of legislation at this level carries a blank enactment number. Seven are substitute bill texts and twenty-three are one-page amendment sheets, and not one is an enacted ordinance or resolution. The only enacted instrument in the cluster arrives by accident, bound as Appendix 1 inside the appendix volume of a Council staff report. What the directory does hold is a small set of genuinely substantive records buried among fifty-eight forms, fragments, agendas, and landing pages: the 2008 Urban Land Institute Rail Yards panel report, the 2007 Neighborhood Task Force report, a Council staff report with its appendices, three advisory board minutes, and three sets of Old Town task force ranking results.",
+ "method": "Scoped the cluster by path depth, separating 65 document files from 42 collection landing pages. Fetched all 65 files without touching shared inventory state and recorded exact byte length and SHA-256 for each; all 65 are genuine PDFs by leading bytes. Extracted text with pdftotext -layout, and rendered the one image-only PDF through pdf.js in a headless browser to identify it. Ran pairwise normalized-text similarity and token coverage across the cluster. Compared all 65 SHA-256 values against the 1,612 checksummed records in master-inventory.json. For the agenda records, searched all 872 council/documents inventory records, ran the cabq.gov site search, and fetched the meeting-agenda-documents directory listing to look for minutes.",
+ "classification_only": true,
+ "shared_state_written": [],
+ "precedent_applied": "Three standing repository rules decide most of this cluster. (1) The missing-minutes agenda policy in AGENTS.md, whose application here is confirmed by an already-terminal record: src-0a6bdb5c898342da, the June 2, 2026 African American Advisory Board agenda, is excluded while the minutes of that same meeting sit pending in this batch. (2) The two open checkpoint blockers on legislative files, which require the authoritative enacted package to be resolved before archival or visible use and forbid presenting a non-enacted version as enacted. (3) The form-versus-substance line applied in the Planning UDD, code-enforcement, construction-documents, and Development Review Services lanes.",
+ "duplicate_and_supersession_checks": {
+  "internal_byte_collisions": 0,
+  "cross_inventory_byte_collisions": 4,
+  "checksums_compared_against": 1612,
+  "relationships_found_by_hash": 4,
+  "relationships_found_by_normalized_text_or_token_coverage": 2,
+  "note": "This is the first cluster in this run where hashing did most of the work: four pending files are byte-identical to already-validated records, including an 8.9 MB sector development plan and an 11.8 MB complete streets toolkit. The two relationships hashing missed are the Old Town task force colour and greyscale editions, which are the same result set rendered twice for accessibility and differ in bytes, page images, and extracted chart labels while carrying identical questions and participant counts."
+ },
+ "integration_flags": [
+  {
+   "severity": "category",
+   "affects": [
+    "all 23 amendment-sheet records in this artifact"
+   ],
+   "finding": "The 23 one-page floor and committee amendment sheets here are recommended excluded as non-self-contained fragments, but they are not stray files: they are a deliberate City Council publication series, and a sibling subdirectory named amendments-for-posting-on-council-page holds 34 more. Together that is at least 57 records of the same kind. Each sheet does carry information the enacted text does not, namely the recorded vote with councilors named for and against.",
+   "recommended_action": "Treat the exclusion as a category decision that is open to revisiting, not as 23 independent judgements. If ABQInfo ever carries Council legislative history as a feature, revisit all 57 together rather than record by record."
+  },
+  {
+   "severity": "blocker-consistent",
+   "affects": [
+    "src-be410a77ceab45b2",
+    "src-cb868b1506e51793",
+    "src-844d4e3d0227e107",
+    "src-bc91d8e4f296d80b",
+    "src-26cc63bf3b00147d",
+    "src-3ce96f0fc670867e",
+    "src-3cd044acfb1a299f"
+   ],
+   "finding": "All seven substitute bill texts carry a blank ENACTMENT NO. on their face. The checkpoint already holds two open blockers on precisely this: isolated legislative amendment and substitute files must have their authoritative enacted packages resolved before archival or visible use, and a non-enacted version must not be archived or presented as enacted.",
+   "recommended_action": "Hold all seven at requires human review until each enacted counterpart is located. Two of them, F/S O-24-4 and F/S R-24-17, are general obligation bond instruments, and the inventory already holds an extensive validated GO bond record set, so those two are the most likely to resolve quickly."
+  },
+  {
+   "severity": "architecture",
+   "affects": [
+    "src-baf2db7aea5be0d2",
+    "src-c8618de9cd7384e7",
+    "src-f6f982e95a648dd7",
+    "src-f0c76005377afd83"
+   ],
+   "finding": "ABQInfo has no page for City board and commission records. The Development Process Manual Executive Committee minutes were placed on a subject-matter page because the manual has one; the African American Advisory Board and Council Services have no equivalent. The proposed_canonical_page on these four records is the least-bad existing page, not a good fit.",
+   "recommended_action": "A new page such as content/about/boards-commissions.md would fit, but that is a material site-architecture change and AGENTS.md reserves those for user direction. Keep these four inventory-only until the user decides. They are approved on the merits; only their placement is open."
+  },
+  {
+   "severity": "scope",
+   "affects": [
+    "the council/documents tree"
+   ],
+   "finding": "The handoff ledger recorded 52 pending for www.cabq.gov/council/documents. The real figure is 525 pending across 872 records, spread over 48 subdirectories. This artifact covers the 107 at the flat level.",
+   "recommended_action": "Correct the ledger figure and treat the larger subdirectories as separate lanes. By size: 21st-century-transportation-task-force (57), councilor-district-2-documents (50), amendments-for-posting-on-council-page (34), north-fourth-street-plan (23), and then a long tail of 20-record directories."
+  },
+  {
+   "severity": "follow-up",
+   "affects": [
+    "src-6db0397455652054"
+   ],
+   "finding": "The excluded public meeting flyer announces a Rainbow Boulevard Traffic Calming and Pedestrian Safety Study between Paseo del Norte and the southern property line of Volcano Vista High School. The study itself is nowhere in the inventory.",
+   "recommended_action": "Worth a targeted search in a later lane. A flyer that names a study the archive does not hold is a discovery lead, which is the only reason it is recorded here at all."
+  }
+ ],
+ "counts": {
+  "reviewed": 107,
+  "approved_for_addition": 12,
+  "duplicate": 6,
+  "requires_human_review": 14,
+  "excluded": 75,
+  "superseded": 0,
+  "excluded_breakdown": {
+   "council legislative amendment sheet": 23,
+   "collection landing page": 42,
+   "other": 10
+  }
+ },
+ "link_check": {
+  "checked": 65,
+  "http_200": 65,
+  "failed": 0,
+  "method": "Full HTTP GET with a browser user agent, 2026-09-11, on the 65 document files. The 42 collection landing pages were not individually fetched; they are excluded as pages rather than documents and the parent listing resolved for all of them.",
+  "containers_verified": "All 65 files are genuine PDFs by leading bytes (25 50 44 46). No extension mismatch in this cluster, unlike the Municipal Development and Development Review Services libraries."
+ },
+ "approved_for_addition": [
+  {
+   "id": "src-9f5ac56df8c6cbb8",
+   "authoritative_url": "https://www.cabq.gov/council/documents/1uli_final_report.abq_rail_yards_advisory_services_panel.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "985833b24a0b3e6ee14dbd354ba376b52ac3f6fcd07b5961b88c122f03ec944e",
+   "size_bytes": 2459168,
+   "title": "Albuquerque Rail Yards: Redeveloping the City's Historic Rail Yards, a Urban Land Institute Advisory Services Panel Report (February 2008)",
+   "description": "The Urban Land Institute panel report on the Albuquerque Rail Yards sets out market findings, planning and design recommendations, development strategy, and implementation advice for redeveloping the historic Santa Fe Railway shops site south of Downtown.",
+   "description_word_count": 36,
+   "proposed_canonical_page": "content/development-land-use/projects.md",
+   "cross_listings": [],
+   "pages": 46,
+   "date": "2008-02",
+   "date_basis": "The title page reads \"Redeveloping the City's Historic Rail Yards, February 24-29, 2008\".",
+   "why_retained": "The earliest substantive planning study for the Rail Yards and the only copy of it in the inventory. The site already publishes three editions of the Rail Yards Master Plan and two Blacksmith Shop studies under \"Rail Yards Planning and Environmental Records\"; this 2008 panel report is the precursor to all of them and completes that record.",
+   "evidence": "46 pages, produced by ULI, 1025 Thomas Jefferson Street NW, Washington. Its SHA-256 does not match any of the 1,612 checksummed inventory records, so it is not a copy of anything already held."
+  },
+  {
+   "id": "src-a3afa3078e7351a7",
+   "authoritative_url": "https://www.cabq.gov/council/documents/natffinalrpt2.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "c7e79c15e9d6e73d355ed1364ecb282ef4cdc6b437e6a954074c8b0afd12aa1f",
+   "size_bytes": 147090,
+   "title": "Neighborhood Task Force Final Report to the City Council (September 2007)",
+   "description": "The Council-appointed task force reports on five assigned topics covering the function and role of the Office of Neighborhood Coordination, neighborhood association recognition, notification requirements, and the relationship between neighborhood organisations and the City development review process.",
+   "description_word_count": 37,
+   "proposed_canonical_page": "content/development-land-use/development-process.md",
+   "cross_listings": [],
+   "pages": 13,
+   "date": "2007-09",
+   "date_basis": "The report is headed \"Respectfully Submitted To City Council September XX, 2007\"; the day was left as a placeholder in the published file.",
+   "why_retained": "A Council task force report with findings and recommendations, not a meeting record. It documents how Albuquerque's neighborhood notification and recognition rules came to be, which is background the development-process page carries for no other era.",
+   "evidence": "13 pages. Its executive summary cites the Don Harris District 9 Council memorandum of April 25, 2007 that created the task force and lists the five topics it was asked to address."
+  },
+  {
+   "id": "src-42032f0eef57807c",
+   "authoritative_url": "https://www.cabq.gov/council/documents/small-business-resource-fair-report-final-draft.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "9faf7d162033d1968728d64885416a4258c9dd1e920fd91d483eae2af0ebcad4",
+   "size_bytes": 2561993,
+   "title": "Small Business Resource Fair Report: Supporting Albuquerque's Growing Small Business Community (April 2019)",
+   "description": "The City Council staff report reviews the Small Business Resource Fair, setting out the local small business context, what the fair delivered, participant and partner feedback, and recommendations for future City support of small businesses.",
+   "description_word_count": 35,
+   "proposed_canonical_page": "content/city-data/city-progress-surveys.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/development-process.md",
+     "reason": "Its recommendations touch City permitting and business registration steps described there."
+    }
+   ],
+   "pages": 15,
+   "date": "2019-04",
+   "date_basis": "The cover reads \"Report Created by City Council Staff April 2019\".",
+   "why_retained": "A Council staff evaluation report with findings and recommendations. It is the substantive half of a two-file package whose other half is the appendices retained below.",
+   "evidence": "15 pages with a table of contents running executive summary, context, and recommendations."
+  },
+  {
+   "id": "src-f164513208041ca0",
+   "authoritative_url": "https://www.cabq.gov/council/documents/appendices.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "91dbfeadedb185fa13588fb41bc32b150ce62e2d5d84a35d7392725995e8ba00",
+   "size_bytes": 4987608,
+   "title": "Appendices to the Small Business Resource Fair Report, Including Enacted Resolution R-2018-081",
+   "description": "The appendix volume to the Council small business report opens with enacted Resolution R-2018-081, which directs the Economic Development Department to convene a micro-enterprise development fair with local and state partners, and carries the supporting materials.",
+   "description_word_count": 36,
+   "proposed_canonical_page": "content/city-data/city-progress-surveys.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/development-process.md",
+     "reason": "Same reason as the report it belongs to."
+    }
+   ],
+   "pages": 20,
+   "date": "2019-04",
+   "date_basis": "Published as the appendix volume to the April 2019 report; its Appendix 1 transmittal is dated November 15, 2018.",
+   "why_retained": "Not a separate document but the second half of the retained report, and it carries the enacting legislation the report implements. Under the repository canonical-package rule the two belong together.",
+   "evidence": "Image-only PDF with no text layer; page 1 was rendered and read. It is hand-labelled \"APPENDIX 1\" over Enactment No. R-2018-081, a Council Services transmittal to Mayor Timothy M. Keller for Bill No. R-18-82, \"Directing The Economic Development Department To Collaborate With The City Council Office And Other Local And State Government Agencies To Convene A Micro-Enterprise Development Fair (Pena)\", passed at the Special Council meeting of November 5, 2018 by a vote of 9 for and 0 against."
+  },
+  {
+   "id": "src-baf2db7aea5be0d2",
+   "authoritative_url": "https://www.cabq.gov/council/documents/aaab-minutes-july-7-final-version-7-16-2026.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "5aba22bdda5bf7697b25e0ca60559265d32716e08640fbe908bbb07f7ad7fd28",
+   "size_bytes": 207416,
+   "title": "African American Advisory Board Minutes, July 7, 2026",
+   "description": "The approved minutes of the City African American Advisory Board record attendance, the business transacted, member reports, and actions taken at the board's July 7, 2026 meeting in the City Council Committee Room.",
+   "description_word_count": 33,
+   "proposed_canonical_page": "content/city-data/city-progress-surveys.md",
+   "cross_listings": [],
+   "pages": 6,
+   "date": "2026-07-07",
+   "date_basis": "The minutes are headed \"Tuesday, July 7th, 2026, 11:00 A.M.\" and the filename records a final version of July 16, 2026.",
+   "why_retained": "Approved minutes of a standing City advisory board. Minutes are retained wherever the repository has triaged a board, and the sibling agenda for this same meeting is excluded because these minutes exist.",
+   "evidence": "Six pages opening with the voting members present. See integration_flags: ABQInfo has no existing page for advisory-board minutes, so placement is an open architecture question."
+  },
+  {
+   "id": "src-c8618de9cd7384e7",
+   "authoritative_url": "https://www.cabq.gov/council/documents/aaab-minutes-june-2-2026.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "cd81768ea32c1ce5514dd74b36ec7dec428efcdc3a3fc5333d207e8dca849183",
+   "size_bytes": 202555,
+   "title": "African American Advisory Board Minutes, June 2, 2026",
+   "description": "The approved minutes of the City African American Advisory Board record attendance, business transacted, and actions taken at the board's June 2, 2026 meeting, held at the Black Chambers of Commerce New Mexico on Fourth Street SW.",
+   "description_word_count": 37,
+   "proposed_canonical_page": "content/city-data/city-progress-surveys.md",
+   "cross_listings": [],
+   "pages": 5,
+   "date": "2026-06-02",
+   "date_basis": "The minutes are headed \"Tuesday, June 2nd, 11:00 A.M.\".",
+   "why_retained": "Approved minutes of a standing City advisory board. Decisive precedent: the agenda for this same meeting, src-0a6bdb5c898342da, is already terminal-excluded in the inventory, which is exactly the treatment the repository missing-minutes policy prescribes when approved minutes exist.",
+   "evidence": "Five pages opening with the voting members present."
+  },
+  {
+   "id": "src-f6f982e95a648dd7",
+   "authoritative_url": "https://www.cabq.gov/council/documents/aaab-minutes-may-2026-accessible.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "32c916e2298c1dd5044594fdfbb2e32d0c135bb5017109109e56f7746f41eada",
+   "size_bytes": 176286,
+   "title": "African American Advisory Board Minutes, May 5, 2026",
+   "description": "The approved minutes of the City African American Advisory Board record attendance, business transacted, and actions taken at the board's May 5, 2026 meeting in the Department of Municipal Development conference room at One Civic Plaza.",
+   "description_word_count": 36,
+   "proposed_canonical_page": "content/city-data/city-progress-surveys.md",
+   "cross_listings": [],
+   "pages": 4,
+   "date": "2026-05-05",
+   "date_basis": "The minutes are headed \"May 5, 2026 at 11 am\".",
+   "why_retained": "Approved minutes of a standing City advisory board; the agenda for the same meeting is recommended excluded below on the same ground the June agenda was already excluded.",
+   "evidence": "Four pages listing members present by organisation, including the Black Chambers of Commerce, the New Mexico Black Leadership Council, the African American Museum and Cultural Center, and UNM African American Student Services."
+  },
+  {
+   "id": "src-f0c76005377afd83",
+   "authoritative_url": "https://www.cabq.gov/council/documents/council-services-org-chart-4-6-26.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "11a05a8cac66fe241bc42f3f59066f54a2163b319b300a71f697ca96d3696de8",
+   "size_bytes": 89166,
+   "title": "Albuquerque City Council Services Organizational Chart, April 6, 2026",
+   "description": "The chart shows how City Council Services is organised, naming the Director, the deputy directors for policy and operations, general counsel, the Clerk of the Council, and the program evaluation and district associate director roles beneath them.",
+   "description_word_count": 37,
+   "proposed_canonical_page": "content/city-data/city-progress-surveys.md",
+   "cross_listings": [],
+   "pages": 1,
+   "date": "2026-04-06",
+   "date_basis": "The filename records 4-6-26 and the chart is current as published.",
+   "why_retained": "A current, dated statement of how the legislative branch staff is structured and who holds each post. It is a reference record rather than a form, and the inventory holds no other organisational chart for Council Services.",
+   "evidence": "One page naming the Director of Council Services and the deputy director, general counsel, operations, and clerk positions."
+  },
+  {
+   "id": "src-9642139286c8f411",
+   "authoritative_url": "https://www.cabq.gov/council/documents/dec_2008.dmd_proposal_for_stop_sign_reconfiguration.raynolds_and_barelas.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "2242e12384639a6d01d2408e5d3b0fa0146cff9eeeb1bbcef9ec262747c38a5c",
+   "size_bytes": 279795,
+   "title": "Stop Sign Reconfiguration Proposal for Raynolds and Barelas, December 2008",
+   "description": "The City Municipal Development traffic engineering proposal maps the one-way street grid in the Raynolds and Barelas neighborhoods, marking which existing stop signs would remain, which would be removed, and where new stop signs would be installed.",
+   "description_word_count": 37,
+   "proposed_canonical_page": "content/transportation/operations-data.md",
+   "cross_listings": [],
+   "pages": 1,
+   "date": "2008-12",
+   "date_basis": "The sheet credits \"City of Albuquerque - Department of Municipal Development, Traffic Engineering Division, December 2008\".",
+   "why_retained": "A dated, named traffic-engineering project record for two specific Albuquerque neighborhoods, with a legend that makes it readable on its own. It is the class of neighborhood traffic record the transportation operations page already carries.",
+   "evidence": "One page. The legend distinguishes one-way westbound and eastbound segments, existing stops to remain, existing stops to be removed, and new stops to be installed."
+  },
+  {
+   "id": "src-4f28a655d98c8ae3",
+   "authoritative_url": "https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-1-colo.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "54f5947e02ce30c7a375d0fa5edcb1c177510ab9d65245543f8cc2219d0e31de",
+   "size_bytes": 649338,
+   "title": "Old Town Virtual Task Force Summary of Ranking Results, Topic 1: Outdoor Displays",
+   "description": "The City task force summary charts how thirty-three participants ranked proposed options for regulating outdoor merchandise displays in Old Town, giving the vote distribution behind the recommendations that fed the Old Town historic protection overlay standards.",
+   "description_word_count": 36,
+   "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/projects.md",
+     "reason": "Old Town is a named City redevelopment and planning area."
+    }
+   ],
+   "pages": 5,
+   "why_retained": "Recorded public-input results with participant counts and per-option vote distributions, which is data rather than a meeting handout. It is the evidence base behind the Old Town sign and display rules that Council later amended by O-19-52, itself in this directory.",
+   "evidence": "Five pages, all headed \"Topic 1: Outdoor Displays, Total Number of Participants: 33\". No black and white counterpart is published for this topic."
+  },
+  {
+   "id": "src-3f866d2089b33926",
+   "authoritative_url": "https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-2-colo.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "c7c6d33f1262c4f436370fd0ffb78e915b0016a116e12a676cfdead8f4ae4576",
+   "size_bytes": 1626369,
+   "title": "Old Town Virtual Task Force Summary of Ranking Results, Topic 2: Signs",
+   "description": "The City task force summary charts how twelve participants ranked proposed sign rules for Old Town, covering off-premises signs among other categories, and records the vote distribution behind each option the task force considered.",
+   "description_word_count": 34,
+   "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/projects.md",
+     "reason": "Old Town is a named City redevelopment and planning area."
+    }
+   ],
+   "pages": 15,
+   "why_retained": "Same ground as Topic 1. The participant count of twelve is small and should be stated in any published description so the weight of the result is not overstated.",
+   "evidence": "Fifteen pages, all headed \"Topic 2: Signs, Total Number of Participants: 12\", including an Off-Premises Signs block at item 11a. The black and white edition src-388cbd495a6eb4f4 is its greyscale twin."
+  },
+  {
+   "id": "src-d866542fe3372c5e",
+   "authoritative_url": "https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-3-colo.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "35fd115b767f87644d79f1567019cbf9e3ccb65b122cc831318f4937620a2202",
+   "size_bytes": 509482,
+   "title": "Old Town Virtual Task Force Summary of Ranking Results, Topic 3: Outdoor Demonstrations",
+   "description": "The City task force summary charts how seven participants ranked options for regulating outdoor craft demonstrations in Old Town, testing whether the former zoning code definition at Section 14-16-2-25(o)(1) adequately defined an outdoor demonstration.",
+   "description_word_count": 34,
+   "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/projects.md",
+     "reason": "Old Town is a named City redevelopment and planning area."
+    }
+   ],
+   "pages": 4,
+   "why_retained": "Same ground as the other two topics, and it is the only record in the directory that quotes the superseded zoning code definition of an outdoor demonstration. The seven-participant count must be stated in any description.",
+   "evidence": "Four pages headed \"Topic 3: Outdoor Demonstrations, Total Number of Participants: 7\", quoting the old zoning code language at 14-16-2-25 (o) 1. The black and white edition src-78ba9058dfb576e0 is its greyscale twin."
+  }
+ ],
+ "duplicate": [
+  {
+   "id": "src-442d80b03a4e05eb",
+   "authoritative_url": "https://www.cabq.gov/council/documents/EPCNODVolcanoTrails030311.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "b44015e36515f3bf86e3dafdcde44313005f2812aa03722c926a1cecb162014d",
+   "size_bytes": 96283,
+   "canonical_id": "src-e8d18ebb99858984",
+   "canonical_url": "https://www.cabq.gov/council/documents/EPCNODVolcanoTrails030311.pdf",
+   "canonical_status": "validated",
+   "basis": "Byte-identical to an already-validated record: same 96,283 bytes and same SHA-256. The City serves the Volcano Trails Environmental Planning Commission Official Notification of Decision of March 3, 2011 from two paths.",
+   "hash_found_it": true
+  },
+  {
+   "id": "src-5506a88128e7de17",
+   "authoritative_url": "https://www.cabq.gov/council/documents/VolcanoTrailsSDPFINAL.PDF/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "a6da27a70e4bda95e8b4e971e2698e2f47d7e88af7e49671ece6ef2aad712e26",
+   "size_bytes": 8903701,
+   "canonical_id": "src-81c75a7d7a217a68",
+   "canonical_url": "https://www.cabq.gov/council/documents/VolcanoTrailsSDPFINAL.PDF",
+   "canonical_status": "validated",
+   "basis": "Byte-identical to the already-validated Volcano Trails Sector Development Plan of August 2011: same 8,903,701 bytes and same SHA-256.",
+   "hash_found_it": true,
+   "note": "At 8.9 MB this is the second largest file in the cluster; recognising it as an exact duplicate avoids a pointless re-archive."
+  },
+  {
+   "id": "src-a0095a2e8b524b85",
+   "authoritative_url": "https://www.cabq.gov/council/documents/CentralCompleteStreetPlan2013Draft.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "c85e0d723e9233d7fb9f7b4451d6240760a94f8a7f2082840e04ef935283ef35",
+   "size_bytes": 11759630,
+   "canonical_id": "src-357f0a012444d081",
+   "canonical_url": "https://www.cabq.gov/council/documents/CentralCompleteStreetPlan2013Draft.pdf",
+   "canonical_status": "validated",
+   "basis": "Byte-identical to the already-validated October 2013 Draft Central Avenue Complete Street Plan and Design Toolkit: same 11,759,630 bytes and same SHA-256. A second duplicate of that record, src-4c9e6a583778b007, is already terminal.",
+   "hash_found_it": true,
+   "note": "The inventory title for this pending record, \"Central Avenue Complete Streets Design Toolkit (1st Street to Girard)\", differs from the validated record's title for the same bytes. Use the validated record's title."
+  },
+  {
+   "id": "src-f93aa90a07d83d6d",
+   "authoritative_url": "https://www.cabq.gov/council/documents/R211csfinal.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "fcd72d78be2eb6fc15c94dd4562ffbbb4440f06de4999673d1bd5533ba425353",
+   "size_bytes": 90762,
+   "canonical_id": "src-8b120e71c3650349",
+   "canonical_url": "https://www.cabq.gov/council/documents/R211csfinal.pdf",
+   "canonical_status": "validated",
+   "basis": "Byte-identical to the already-validated Volcano Trails Sector Development Plan Adoption Resolution: same 90,762 bytes and same SHA-256. The file is Council Bill C/S R-11-211, Nineteenth Council.",
+   "hash_found_it": true
+  },
+  {
+   "id": "src-388cbd495a6eb4f4",
+   "authoritative_url": "https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-2-tone.pdf",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "b2d7ffbd7424bf1b547cbd065fa1a8923e83b8ca8235098c6fb3e39574dec84d",
+   "size_bytes": 1854033,
+   "canonical_id": "src-3f866d2089b33926",
+   "canonical_url": "https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-2-colo.pdf",
+   "canonical_status": "pending review",
+   "basis": "The black and white edition of the Old Town task force Topic 2 ranking results. Same fifteen pages, same twelve participants, same questions; only the chart rendering differs. Normalized-text similarity 0.9271 with token coverage 0.9896 of the colour edition inside it.",
+   "hash_found_it": false,
+   "note": "Published deliberately as an accessibility alternative rather than as a separate result set. Retain the colour edition and record this as its greyscale twin."
+  },
+  {
+   "id": "src-78ba9058dfb576e0",
+   "authoritative_url": "https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-3-tone.pdf",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "7bab4322a28bcfefb129a79ac7f3b3ef5f78c7ad9776227a44d4990ad87fe29d",
+   "size_bytes": 492169,
+   "canonical_id": "src-d866542fe3372c5e",
+   "canonical_url": "https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-3-colo.pdf",
+   "canonical_status": "pending review",
+   "basis": "The black and white edition of the Old Town task force Topic 3 ranking results. Normalized-text similarity 0.9677 with token coverage 0.9620 in both directions.",
+   "hash_found_it": false
+  }
+ ],
+ "requires_human_review": [
+  {
+   "id": "src-bc1dbb930feefaaf",
+   "authoritative_url": "https://www.cabq.gov/council/documents/52913TrailsPIDagenda.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "6440fab9e7142d498818f631aae8885fefb69520943e097d78dfa222974de905",
+   "size_bytes": 10672,
+   "draft_title": "The Trails Public Improvement District Board of Directors Special Meeting Agenda, May 29, 2013",
+   "question_for_human": "Does the recorded official-source review below meet the repository's \"exhaustive\" bar for the missing-minutes agenda policy, and was any of these meetings cancelled or held without a quorum?",
+   "why_not_decided_here": "The repository missing-minutes policy permits preserving a verified original official agenda only \"after a recorded exhaustive official-source review finds no approved minutes for a meeting\", and forbids archiving an agenda for an officially cancelled or no-quorum meeting. This lane searched all 872 council/documents records in the inventory, ran the cabq.gov site search for Trails PID minutes, and fetched and listed the council/documents/meeting-agenda-documents directory, which holds agendas for the Trails, Mesa del Sol, Saltillo, Winrock and Hunt district boards and no minutes for any of them. No Trails PID minutes exist anywhere on the City site that this lane could reach. What this review did not cover is Legistar and the district administrator's own records, and the agendas themselves prove minutes exist: the May 29, 2013 agenda lists \"Review of minutes of August 21, 2012 and February 15, 2013\" as a business item. Nothing in an agenda reveals whether the meeting it announces actually took place, so the cancellation and quorum test cannot be applied from these files at all. Deciding six agendas on an incomplete review would set the precedent for every public improvement district agenda in the tree.",
+   "pages": 1,
+   "date": "2013-05-29"
+  },
+  {
+   "id": "src-b657a1bd0d19ffe8",
+   "authoritative_url": "https://www.cabq.gov/council/documents/8113TrailsAgenda.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "98635194ac88122d94f6e23df35d45b04ca72bca0fdb753c6b30b7307f9c221d",
+   "size_bytes": 10824,
+   "draft_title": "The Trails Public Improvement District Board of Directors Special Meeting Agenda, August 1, 2013",
+   "question_for_human": "Does the recorded official-source review below meet the repository's \"exhaustive\" bar for the missing-minutes agenda policy, and was any of these meetings cancelled or held without a quorum?",
+   "why_not_decided_here": "The repository missing-minutes policy permits preserving a verified original official agenda only \"after a recorded exhaustive official-source review finds no approved minutes for a meeting\", and forbids archiving an agenda for an officially cancelled or no-quorum meeting. This lane searched all 872 council/documents records in the inventory, ran the cabq.gov site search for Trails PID minutes, and fetched and listed the council/documents/meeting-agenda-documents directory, which holds agendas for the Trails, Mesa del Sol, Saltillo, Winrock and Hunt district boards and no minutes for any of them. No Trails PID minutes exist anywhere on the City site that this lane could reach. What this review did not cover is Legistar and the district administrator's own records, and the agendas themselves prove minutes exist: the May 29, 2013 agenda lists \"Review of minutes of August 21, 2012 and February 15, 2013\" as a business item. Nothing in an agenda reveals whether the meeting it announces actually took place, so the cancellation and quorum test cannot be applied from these files at all. Deciding six agendas on an incomplete review would set the precedent for every public improvement district agenda in the tree.",
+   "pages": 1,
+   "date": "2013-08-01"
+  },
+  {
+   "id": "src-a6bd9f4f6ae1cb40",
+   "authoritative_url": "https://www.cabq.gov/council/documents/5-16-25-trails-pid-agenda.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "883f98db514c30d32171fecb46d92a16e93d7c614625ecd809e877a5e10d4fde",
+   "size_bytes": 107385,
+   "draft_title": "The Trails Public Improvement District Board of Directors Regular Meeting Agenda, May 16, 2025",
+   "question_for_human": "Does the recorded official-source review below meet the repository's \"exhaustive\" bar for the missing-minutes agenda policy, and was any of these meetings cancelled or held without a quorum?",
+   "why_not_decided_here": "The repository missing-minutes policy permits preserving a verified original official agenda only \"after a recorded exhaustive official-source review finds no approved minutes for a meeting\", and forbids archiving an agenda for an officially cancelled or no-quorum meeting. This lane searched all 872 council/documents records in the inventory, ran the cabq.gov site search for Trails PID minutes, and fetched and listed the council/documents/meeting-agenda-documents directory, which holds agendas for the Trails, Mesa del Sol, Saltillo, Winrock and Hunt district boards and no minutes for any of them. No Trails PID minutes exist anywhere on the City site that this lane could reach. What this review did not cover is Legistar and the district administrator's own records, and the agendas themselves prove minutes exist: the May 29, 2013 agenda lists \"Review of minutes of August 21, 2012 and February 15, 2013\" as a business item. Nothing in an agenda reveals whether the meeting it announces actually took place, so the cancellation and quorum test cannot be applied from these files at all. Deciding six agendas on an incomplete review would set the precedent for every public improvement district agenda in the tree.",
+   "pages": 2,
+   "date": "2025-05-16"
+  },
+  {
+   "id": "src-7e3d417f146c307b",
+   "authoritative_url": "https://www.cabq.gov/council/documents/7-25-25-trails-pid-agenda.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "348c0aa140f010d4d776f535b854cda4b37d836aab805b17b1e6d62ba73931e3",
+   "size_bytes": 78761,
+   "draft_title": "The Trails Public Improvement District Board of Directors Regular Meeting Agenda, July 25, 2025",
+   "question_for_human": "Does the recorded official-source review below meet the repository's \"exhaustive\" bar for the missing-minutes agenda policy, and was any of these meetings cancelled or held without a quorum?",
+   "why_not_decided_here": "The repository missing-minutes policy permits preserving a verified original official agenda only \"after a recorded exhaustive official-source review finds no approved minutes for a meeting\", and forbids archiving an agenda for an officially cancelled or no-quorum meeting. This lane searched all 872 council/documents records in the inventory, ran the cabq.gov site search for Trails PID minutes, and fetched and listed the council/documents/meeting-agenda-documents directory, which holds agendas for the Trails, Mesa del Sol, Saltillo, Winrock and Hunt district boards and no minutes for any of them. No Trails PID minutes exist anywhere on the City site that this lane could reach. What this review did not cover is Legistar and the district administrator's own records, and the agendas themselves prove minutes exist: the May 29, 2013 agenda lists \"Review of minutes of August 21, 2012 and February 15, 2013\" as a business item. Nothing in an agenda reveals whether the meeting it announces actually took place, so the cancellation and quorum test cannot be applied from these files at all. Deciding six agendas on an incomplete review would set the precedent for every public improvement district agenda in the tree.",
+   "pages": 2,
+   "date": "2025-07-25"
+  },
+  {
+   "id": "src-c393d59e029b52e9",
+   "authoritative_url": "https://www.cabq.gov/council/documents/5-26-26-trails-pid-agenda-final.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "b5ac89e802bab47dc7b4e7e46f05491785576102fc24faf2d1f9e3d0c46e231a",
+   "size_bytes": 163181,
+   "draft_title": "The Trails Public Improvement District Board of Directors Regular Meeting Agenda, May 26, 2026",
+   "question_for_human": "Does the recorded official-source review below meet the repository's \"exhaustive\" bar for the missing-minutes agenda policy, and was any of these meetings cancelled or held without a quorum?",
+   "why_not_decided_here": "The repository missing-minutes policy permits preserving a verified original official agenda only \"after a recorded exhaustive official-source review finds no approved minutes for a meeting\", and forbids archiving an agenda for an officially cancelled or no-quorum meeting. This lane searched all 872 council/documents records in the inventory, ran the cabq.gov site search for Trails PID minutes, and fetched and listed the council/documents/meeting-agenda-documents directory, which holds agendas for the Trails, Mesa del Sol, Saltillo, Winrock and Hunt district boards and no minutes for any of them. No Trails PID minutes exist anywhere on the City site that this lane could reach. What this review did not cover is Legistar and the district administrator's own records, and the agendas themselves prove minutes exist: the May 29, 2013 agenda lists \"Review of minutes of August 21, 2012 and February 15, 2013\" as a business item. Nothing in an agenda reveals whether the meeting it announces actually took place, so the cancellation and quorum test cannot be applied from these files at all. Deciding six agendas on an incomplete review would set the precedent for every public improvement district agenda in the tree.",
+   "pages": 2,
+   "date": "2026-05-26"
+  },
+  {
+   "id": "src-15bd43bb6a15984d",
+   "authoritative_url": "https://www.cabq.gov/council/documents/7-24-26-trails-pid-agenda-final.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "b70bbc9c73487b62b49ea4a9882534a7fac7af56ae1671d6ec7115768a616cfc",
+   "size_bytes": 138522,
+   "draft_title": "The Trails Public Improvement District Board of Directors Regular Meeting Agenda, July 24, 2026",
+   "question_for_human": "Does the recorded official-source review below meet the repository's \"exhaustive\" bar for the missing-minutes agenda policy, and was any of these meetings cancelled or held without a quorum?",
+   "why_not_decided_here": "The repository missing-minutes policy permits preserving a verified original official agenda only \"after a recorded exhaustive official-source review finds no approved minutes for a meeting\", and forbids archiving an agenda for an officially cancelled or no-quorum meeting. This lane searched all 872 council/documents records in the inventory, ran the cabq.gov site search for Trails PID minutes, and fetched and listed the council/documents/meeting-agenda-documents directory, which holds agendas for the Trails, Mesa del Sol, Saltillo, Winrock and Hunt district boards and no minutes for any of them. No Trails PID minutes exist anywhere on the City site that this lane could reach. What this review did not cover is Legistar and the district administrator's own records, and the agendas themselves prove minutes exist: the May 29, 2013 agenda lists \"Review of minutes of August 21, 2012 and February 15, 2013\" as a business item. Nothing in an agenda reveals whether the meeting it announces actually took place, so the cancellation and quorum test cannot be applied from these files at all. Deciding six agendas on an incomplete review would set the precedent for every public improvement district agenda in the tree.",
+   "pages": 2,
+   "date": "2026-07-24"
+  },
+  {
+   "id": "src-9dbe491dce873f71",
+   "authoritative_url": "https://www.cabq.gov/council/documents/4-16-26-lgcc-agenda-final.pdf",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "c3627fc441e19fbd78e4641fc72c7e0db1cf6af70d02e1f50661077698806876",
+   "size_bytes": 123243,
+   "draft_title": "Local Government Coordinating Commission Agenda, April 16, 2026",
+   "question_for_human": "Same missing-minutes question as the Trails PID agendas, for a different body.",
+   "why_not_decided_here": "The Local Government Coordinating Commission brings together City councilors, County commissioners and APS board members. This is the only LGCC document of any kind in the inventory: no minutes, and no other agenda to establish a series. The same policy bar and the same unresolved cancellation and quorum test apply.",
+   "pages": 3,
+   "date": "2026-04-16"
+  },
+  {
+   "id": "src-be410a77ceab45b2",
+   "authoritative_url": "https://www.cabq.gov/council/documents/o-1-approved-committee-substitute.pdf",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "92476e3c96c2ca1612c4d699607b826f7bfe5232e11e275db563d4716e689669",
+   "size_bytes": 127418,
+   "draft_title": "Council Bill C/S O-24-1: Administrative Demolition of Unsafe Commercial Buildings, Unsafe Accessory Structures, or Dwellings Unfit for Human Habitation (Finance and Government Operations Committee Substitute, January 29, 2024)",
+   "question_for_human": "Locate the enacted ordinance for each of these bills before any archival or visible use, and decide whether ABQInfo carries pre-enactment bill versions at all.",
+   "why_not_decided_here": "Every one of these files carries \"ENACTMENT NO. ________________\" blank on its face: they are the version a committee or the Council considered, not the law. The checkpoint already holds an open blocker on exactly this problem for two other records, \"isolated legislative amendment/substitute files; resolve authoritative enacted packages before archival or visible use\", and a second blocker stating that src-0b1642254494f22e \"must not be archived or visibly used as enacted\". Applying that standing instruction is the only defensible answer here. Each of these is a substantial, self-contained bill text, so unlike the one-page amendment sheets they are not excluded as fragments; they are held until their enacted counterparts are located.",
+   "pages": 9,
+   "date": "2024-01-29"
+  },
+  {
+   "id": "src-cb868b1506e51793",
+   "authoritative_url": "https://www.cabq.gov/council/documents/o-4-approved-fs-pena.pdf",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "b5123bbd7f6d7ff2183c1ed177933a28d763a6acd8cb7dfa1359efa4ed2652f9",
+   "size_bytes": 306913,
+   "draft_title": "Council Bill F/S O-24-4: Authorizing the Issuance and Sale of City of Albuquerque General Obligation Bonds in Two Series Not to Exceed $111,850,000 (Floor Substitute, April 3, 2024)",
+   "question_for_human": "Same question: locate the enacted ordinance.",
+   "why_not_decided_here": "Thirty-six pages of bond authorisation with the enactment number blank. The inventory already holds an extensive validated general obligation bond record set, so the enacted counterpart is likely findable and this file should not stand in for it.",
+   "pages": 36,
+   "date": "2024-04-03"
+  },
+  {
+   "id": "src-844d4e3d0227e107",
+   "authoritative_url": "https://www.cabq.gov/council/documents/o-6-approved-cs-fiebelkorn-grout-rogers.pdf",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "ac4d4b7737674a8c00570cb280713d9656c7c3c4f9e7b116c39029ac51ddae32",
+   "size_bytes": 116408,
+   "draft_title": "Council Bill C/S O-24-6: Amending the Complete Streets Ordinance to Define Arid Adapted Landscaping (Land Use, Planning and Zoning Committee Substitute, March 13, 2024)",
+   "question_for_human": "Same question: locate the enacted ordinance.",
+   "why_not_decided_here": "Enactment number blank. The site already carries Complete Streets material, so an unenacted substitute must not be placed beside it without the enacted text.",
+   "pages": 5,
+   "date": "2024-03-13"
+  },
+  {
+   "id": "src-bc91d8e4f296d80b",
+   "authoritative_url": "https://www.cabq.gov/council/documents/o-96-approved-cs-pena.pdf",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "8ecbb9da54848028a7d291298d8ad16514020da505f41270f690468ff94c58d7",
+   "size_bytes": 172036,
+   "draft_title": "Council Bill C/S O-23-96: Adopting a New Part in Chapter 9, Article 5 of the Revised Ordinances to Create an Environmental Justice Air Quality Permit (Finance and Government Operations Committee Substitute, February 12, 2024)",
+   "question_for_human": "Same question: locate the enacted ordinance.",
+   "why_not_decided_here": "Enactment number blank. Seventeen pages creating a new permit class; whether it became law is precisely the fact a reader would need and this file does not answer.",
+   "pages": 17,
+   "date": "2024-02-12"
+  },
+  {
+   "id": "src-26cc63bf3b00147d",
+   "authoritative_url": "https://www.cabq.gov/council/documents/o-52.pdf",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "edd514d725386aec819b4eb5a5cb07d4a32731c70049601958e8d81c7b373be8",
+   "size_bytes": 204777,
+   "draft_title": "Council Bill O-19-52: Amending the Integrated Development Ordinance Section 14-16-3-5(J)(3) Old Town HPO 5, Other Development Standards, to Allow Increased Types and Amount of Signage in Old Town",
+   "question_for_human": "Same question: locate the enacted ordinance.",
+   "why_not_decided_here": "Enactment number blank. This is the legislative sequel to the Old Town task force ranking results recommended for addition in this same batch, which makes pairing it with its enacted text worth doing rather than skipping.",
+   "pages": 7
+  },
+  {
+   "id": "src-3ce96f0fc670867e",
+   "authoritative_url": "https://www.cabq.gov/council/documents/r-17-approved-fs-pena.pdf",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "4689281728046cba44928f5e846d28b379cb7fe6be020dac913d44ee2fdb3f18",
+   "size_bytes": 175337,
+   "draft_title": "Council Bill F/S R-24-17: Authorizing the Giving of Notices for Bids for the Sale of City of Albuquerque General Obligation Bonds Consisting of $102,850,000 (Floor Substitute, April 3, 2024)",
+   "question_for_human": "Same question: locate the enacted resolution.",
+   "why_not_decided_here": "Enactment number blank; the companion to F/S O-24-4 above and subject to the same treatment.",
+   "pages": 20,
+   "date": "2024-04-03"
+  },
+  {
+   "id": "src-3cd044acfb1a299f",
+   "authoritative_url": "https://www.cabq.gov/council/documents/r-2-approved-floor-substitute-fiebelkorn-pena-bassan.pdf",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "e4251fdeccde7659ca5488087920a194a0baa6d3b200978e825bb0404cb4c143",
+   "size_bytes": 4622344,
+   "draft_title": "Council Bill FS R-24-2: Establishing Federal Programming and Policy Priorities for the City of Albuquerque for Federal Fiscal Years 2024/2025 (Floor Substitute, January 22, 2024)",
+   "question_for_human": "Same question: locate the enacted resolution.",
+   "why_not_decided_here": "Enactment number blank. A floor amendment to this same bill, src-e0342708393dff1c, is in this directory and records that it failed 1-8, which shows the bill was actively contested on the floor and that this substitute may not be the final text.",
+   "pages": 7,
+   "date": "2024-01-22"
+  }
+ ],
+ "excluded": [
+  {
+   "id": "src-73043c0b97d9b011",
+   "authoritative_url": "https://www.cabq.gov/council/documents/m-1-approved-fa-1-kp.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "887a2bdd8e4404e9fa2f756bbacaec40b12f98506a7ae30e32adc0e89f51a303",
+   "size_bytes": 51893,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Floor Amendment 1 to M-24-1, January 8, 2024, passed 9-0."
+  },
+  {
+   "id": "src-c4f048e06b594f03",
+   "authoritative_url": "https://www.cabq.gov/council/documents/m-2-approved-fa-1-baca-bassan.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "4968a17c2b0a2d38d59492b749d63bbf7bfea888103fd7d8e24f41ce5cd81653",
+   "size_bytes": 55508,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Floor Amendment 1 to M-24-2, February 21, 2024, passed 8-1."
+  },
+  {
+   "id": "src-fb13b70ee7c4ab0a",
+   "authoritative_url": "https://www.cabq.gov/council/documents/o-1-amendements.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "1920276a35c0fd1d63648c37fbac94ad99317506fa35e0223244d6ebd5355acf",
+   "size_bytes": 89457,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Floor Amendment 1 to C/S O-24-1, March 4, 2024, passed 9-0."
+  },
+  {
+   "id": "src-5b892782bc45aa76",
+   "authoritative_url": "https://www.cabq.gov/council/documents/o-2-approved-fa-1-lewis.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "86ca920b02b5a5cf4e8e785a115e65fcf0b1f2ab9ee7aae574488a3b1b329221",
+   "size_bytes": 55948,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Floor Amendment 1 to O-24-2, March 4, 2024, passed 9-0."
+  },
+  {
+   "id": "src-7700b19e3d6bcf84",
+   "authoritative_url": "https://www.cabq.gov/council/documents/o-3-approved-ca-1-baca-pena.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "ae44b66abb250c5e621900df3172671cc85b8b9301acca84cadeee85d66e4865",
+   "size_bytes": 186444,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Land Use, Planning and Zoning Committee Amendment 1 to O-24-3, March 13, 2024, passed 5-0."
+  },
+  {
+   "id": "src-a222307b5ab1a98e",
+   "authoritative_url": "https://www.cabq.gov/council/documents/o-87-approved-fa-1-fa-2-kp.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "83ec75ca3d520d00a0b92fa7ea03f1d63457ec2fce72f1298c4e281d2f4611e2",
+   "size_bytes": 152313,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Floor Amendments 1 and 2 to O-23-87, November 8, 2023, passed 9-0."
+  },
+  {
+   "id": "src-66174144ce60e7a3",
+   "authoritative_url": "https://www.cabq.gov/council/documents/o-88-fas-combined.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "559d11a94a46274d49a57c0ed4e5b2d799316bbb69bc10fbc54590f7b67fbdc3",
+   "size_bytes": 241032,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Combined floor amendments to O-23-88, November 8, 2023; Amendment 1 was withdrawn by its sponsor."
+  },
+  {
+   "id": "src-c94c856a9c4ca66a",
+   "authoritative_url": "https://www.cabq.gov/council/documents/p-2-approved-fa-1-5-20-24-cc-meeting.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "9624c9678c35ae60190b5d6bd2bccfdcd0378f415cfa45ced96fdef64e4c5bba",
+   "size_bytes": 53361,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Floor Amendment 1 to P-24-2, May 20, 2024, passed 9-0."
+  },
+  {
+   "id": "src-d31eb4e88918a27f",
+   "authoritative_url": "https://www.cabq.gov/council/documents/p-3-approved-fa-1-and-fa-2-5-20-24-cc-meeting.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "3437f2cef929ccef71d8a524f94a9189f6136f6a1ade6ba345faeb2eadf50811",
+   "size_bytes": 11613,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Floor Amendments 1 and 2 to P-24-3, May 20, 2024, passed 9-0."
+  },
+  {
+   "id": "src-9bbb867f1b8e1338",
+   "authoritative_url": "https://www.cabq.gov/council/documents/r-176-fa-1-approved-kp.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "ed413c9b85590589fe9a2f8d75a04dbb895fb705c857eaa52f451ec9c938b982",
+   "size_bytes": 10112,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Floor Amendment 1 to R-23-176, November 8, 2023, passed 9-0."
+  },
+  {
+   "id": "src-8379ac4691808eb2",
+   "authoritative_url": "https://www.cabq.gov/council/documents/r-183-approved-fa-1-benton.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "600db737b83bcbacfb49b9d1e5f74663f3d30521d4b4658ae26b45ad83d877ec",
+   "size_bytes": 58549,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Floor Amendment 1 to R-23-183, November 20, 2023, passed 9-0."
+  },
+  {
+   "id": "src-f5c714195ef5da69",
+   "authoritative_url": "https://www.cabq.gov/council/documents/r-184-fs-fas-combined.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "6bb7292465e313579006234bbbd2684670a171d811b7552d5202c05df3e880c6",
+   "size_bytes": 104118,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Combined floor substitute and amendments to R-23-184, December 4, 2023, passed 8-0."
+  },
+  {
+   "id": "src-ef40025fc4a31d03",
+   "authoritative_url": "https://www.cabq.gov/council/documents/r-193-fa1-10-packet.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "d4a96d79c1095ded268ec4783f3f37147d44a3a003d1fe078bfd78f76f898ba8",
+   "size_bytes": 459418,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Amendment packet 1 to 10 for R-23-193, December 4, 2023, with a pass, fail and withdrawn tracking table."
+  },
+  {
+   "id": "src-e0342708393dff1c",
+   "authoritative_url": "https://www.cabq.gov/council/documents/r-2-approved-fs-fa-1-and-2-combined.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "e3774d0aba779487f72630a4780cf8e377128384ae785ca5ed9619e84661784f",
+   "size_bytes": 64191,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Combined floor substitute and Amendments 1 and 2 to R-24-2, January 22, 2024; Amendment 1 failed 1-8."
+  },
+  {
+   "id": "src-4e3ee8ab55ea29a0",
+   "authoritative_url": "https://www.cabq.gov/council/documents/r-22-approved-ca-1-grout-1.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "42ea7f05e615cb06606d0710fd68a7bd6bca07cb71bc9e7936bbcaf993d803e6",
+   "size_bytes": 78424,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Land Use, Planning and Zoning Committee Amendment 1 to R-24-22, March 2024, passed 5-0."
+  },
+  {
+   "id": "src-1a9b18d86e47137f",
+   "authoritative_url": "https://www.cabq.gov/council/documents/r-3-approved-fa-1-fiebelkorn-rogers.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "811594d88c14e417a263f807a65323ed16ebbf557751fd4f9097517717a74350",
+   "size_bytes": 50083,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Floor Amendment 1 to R-24-3, February 21, 2024, passed 9-0."
+  },
+  {
+   "id": "src-bc2bf6cdf0c45835",
+   "authoritative_url": "https://www.cabq.gov/council/documents/r-4-approved-fa-1-rogers.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "2d85257314f8ecd1675256f54b63275a1d2c641b8a9cfc2d6b07a914fbc502d1",
+   "size_bytes": 10656,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Floor Amendment 1 to R-24-4, March 4, 2024, passed 9-0; it revises three appropriation figures."
+  },
+  {
+   "id": "src-fac05bc1c96112ec",
+   "authoritative_url": "https://www.cabq.gov/council/documents/r-47-approved-fa-1-6-3-24-cc-meeting.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "1f1a0e00bf4f167a29382a9a109f5c34dc6db6dfddba22723c5d7dd1288f2753",
+   "size_bytes": 52682,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Floor Amendment 1 to R-24-47, June 3, 2024, passed 8-1."
+  },
+  {
+   "id": "src-f0aa9bf5629ada5a",
+   "authoritative_url": "https://www.cabq.gov/council/documents/r-48-approved-fa-1-5-20-24-cc-meeting.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "f8b8dd4f70110ba8f2efa9dd7d17055d7eb58de46e954a4d61f65d39adc0e113",
+   "size_bytes": 55464,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Floor Amendment 1 to R-24-48, May 20, 2024, passed 9-0."
+  },
+  {
+   "id": "src-3e345572c917c940",
+   "authoritative_url": "https://www.cabq.gov/council/documents/r-5-approved-ca-1-and-2-combined.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "765c4832719ac7a5a2e3705777f94496089a580d64c362703df5287c6615ddfb",
+   "size_bytes": 98691,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Finance and Government Operations Committee Amendments 1 and 2 to R-24-5, January 29, 2024, passed 5-0."
+  },
+  {
+   "id": "src-a9b5c9080422b55d",
+   "authoritative_url": "https://www.cabq.gov/council/documents/r-50-approved-fa-1-and-fa-2-6-3-24-cc-meeting.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "f3e13177d5e2c74c7878edd938c227dfe0d74dd96594d718a25d9f0a3a7ffe5a",
+   "size_bytes": 99584,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Floor Amendments 1 and 2 to R-24-50, June 3, 2024, passed 8-1."
+  },
+  {
+   "id": "src-8ee8b160a18fce76",
+   "authoritative_url": "https://www.cabq.gov/council/documents/r-8-combined-03062024.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "61790449a908ded3bf38cfa86cdfc8dfdc7fd10c2df9c8bb3474270a44b82a06",
+   "size_bytes": 186992,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Combined floor amendments to R-24-8, March 4, 2024, passed 9-0, adjusting general obligation bond affordable housing lines."
+  },
+  {
+   "id": "src-28a0d2e5c2f2c838",
+   "authoritative_url": "https://www.cabq.gov/council/documents/r-8-combined.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "5d0772ddc25e9a3a7441054a8d7993ebef4ef4e2fbc8ef81e52aff20c9dca192",
+   "size_bytes": 113260,
+   "exclusion_reason": "A one-page City Council floor or committee amendment sheet. It cannot be read on its own: its content is instructions of the form \"on page 2, line 12, strike 'serious' and insert 'violent'\" against a bill text it does not contain. Whatever it changed is already inside the enacted ordinance or resolution, which is the record a reader needs. Excluded as a non-self-contained legislative fragment. See integration_flags: this is a category of at least 57 files across this directory and its amendments-for-posting-on-council-page subdirectory, and the exclusion should be revisited as a category if ABQInfo ever carries Council legislative history as a feature.",
+   "category": "council legislative amendment sheet",
+   "identifies": "Finance and Government Operations Committee amendments to R-24-8, February 12, 2024, passed 5-0."
+  },
+  {
+   "id": "src-7be54d79de9efd93",
+   "authoritative_url": "https://www.cabq.gov/council/documents/aaab-agenda-may-2026-accessible.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "00e73eb89b4593fe31deb34271bf5a34e44863ead09542f039200be3eef53045",
+   "size_bytes": 171598,
+   "exclusion_reason": "African American Advisory Board agenda for May 5, 2026. The approved minutes of that same meeting, src-f6f982e95a648dd7, are recommended for addition in this batch, and the repository missing-minutes policy preserves an agenda only where approved minutes cannot be located.",
+   "category": "advisory board agenda superseded by its own minutes",
+   "precedent": "src-0a6bdb5c898342da, the June 2, 2026 agenda for this same board, is already terminal-excluded on this exact ground."
+  },
+  {
+   "id": "src-b3fbcf775c57fa6d",
+   "authoritative_url": "https://www.cabq.gov/council/documents/7-7-26-aaab-agenda-final.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "d80092e9516249976ebdf028c0a108771ef287f00b42ebe35a549157d55e634e",
+   "size_bytes": 196472,
+   "exclusion_reason": "African American Advisory Board agenda for July 7, 2026. The approved minutes of that same meeting, src-baf2db7aea5be0d2, are recommended for addition in this batch.",
+   "category": "advisory board agenda superseded by its own minutes",
+   "precedent": "src-0a6bdb5c898342da."
+  },
+  {
+   "id": "src-dc13bd3962e198df",
+   "authoritative_url": "https://www.cabq.gov/council/documents/8-25-exhibit-2-balanced-scorecard-city-attorney-evaluation.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "c88b5614060122445b3e3f99fd1d88054c6b736eaaefb3c169d7c97ad6bcc195",
+   "size_bytes": 52780,
+   "exclusion_reason": "\"Exhibit 2 - Balanced Scorecard\": the rating scale and survey-item description used in the City Attorney's 360-degree feedback assessment. It is the measuring instrument, not the result, so it reports nothing about anyone's performance and has no standalone interpretive value.",
+   "category": "evaluation instrument without results",
+   "note": "If the completed scorecard results are ever located they would be a different matter; this file is not them."
+  },
+  {
+   "id": "src-3240234b98d27b27",
+   "authoritative_url": "https://www.cabq.gov/council/documents/abqnw-program-schedule_no-dates.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "9fa80bd3bef32b78dc4dcc6f24390039e51ff21e9865852a4e48e8987f6a9b35",
+   "size_bytes": 216185,
+   "exclusion_reason": "ABQ NeighborWoods program schedule: a week-by-week outline of what Tree New Mexico and a neighborhood do after joining the tree-planting program. Program-administration guidance published without dates, tied to a third-party delivery partner.",
+   "category": "program administration handout"
+  },
+  {
+   "id": "src-a7315c04bfa42eb7",
+   "authoritative_url": "https://www.cabq.gov/council/documents/abqnwagreement.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "867c9ea2ca90fdb76c8c65c88163c770687dd08d36940331d1f07331bec8b827",
+   "size_bytes": 63613,
+   "exclusion_reason": "Property Owner Agreement to Participate in the ABQ NeighborWoods Tree Program, English. A blank agreement a resident signs. Transactional instrument template.",
+   "category": "program form",
+   "translation_pair": "src-9d612c0b224dfb37 is the Spanish edition of this same agreement; both are excluded, and a translation is recorded as a parallel edition rather than a duplicate."
+  },
+  {
+   "id": "src-9d612c0b224dfb37",
+   "authoritative_url": "https://www.cabq.gov/council/documents/abqnwagreement_spanish.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "4a874485073aba22647711e0bfc3b4746e7b3d2f4582d6c988d1d98bc05ef450",
+   "size_bytes": 64549,
+   "exclusion_reason": "Acuerdo del Propietario para participar en el programa de arboles de ABQ NeighborWoods: the Spanish edition of the same participation agreement. Same exclusion ground.",
+   "category": "program form",
+   "translation_pair": "src-a7315c04bfa42eb7.",
+   "encoding_note": "The inventory title for this record is mojibake, \"EspaÃƒÆ'Ã‚Â±ol\", a double-encoded \"Espanol\" from the source page. Any title written for it must come from the document, not the inventory field."
+  },
+  {
+   "id": "src-2390ede0d0136e64",
+   "authoritative_url": "https://www.cabq.gov/council/documents/neighborwoods-application.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "e6abf4074ddb152aa61c631efb9736b23d87fc0876ca3e730499375f999d546e",
+   "size_bytes": 49623,
+   "exclusion_reason": "ABQ NeighborWoods program application: a fill-in application asking for coordinator contact details, neighborhood boundaries, and a narrative about existing trees.",
+   "category": "program form"
+  },
+  {
+   "id": "src-962345dea8ed8430",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-board-application-2026.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "cfbd8a8b00f0f9b5a5c402ffa2bb6bbd33e4d348113246005e68c2d5cb1f9206",
+   "size_bytes": 11404905,
+   "exclusion_reason": "Civilian Police Oversight Advisory Board application form, 2026 edition. A fill-in application for board membership. Routine even though it recites the Police Oversight Ordinance eligibility rules at Section 9-4-1-5.",
+   "category": "board application form",
+   "size_note": "At 11,404,905 bytes across 35 pages this is the third largest file in the cluster, and excluding it keeps a large object out of any future upload batch."
+  },
+  {
+   "id": "src-616ec5b352fd39da",
+   "authoritative_url": "https://www.cabq.gov/council/documents/vial-of-life-form_final-2020.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "035d75d93b22d87b8ff4758b344b0207e460bd1de53bafb701baaa29db66e708",
+   "size_bytes": 163943,
+   "exclusion_reason": "Albuquerque Fire Rescue \"Vial of Life\" medical information form: a blank form a resident completes and keeps at home for emergency responders.",
+   "category": "resident form"
+  },
+  {
+   "id": "src-6db0397455652054",
+   "authoritative_url": "https://www.cabq.gov/council/documents/rainbowpublicmeetingflyer_may31.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "checksum_sha256": "bc547474a2fe2912ee301e2c766cba198eff1d4fabf3f8f60a28938bc37300df",
+   "size_bytes": 4284884,
+   "exclusion_reason": "Public meeting flyer for the Rainbow Boulevard Traffic Calming Study, announcing a single District 5 meeting. An event notice for a meeting long past; the study it announces would be the record worth holding, and it is not in this directory.",
+   "category": "event flyer",
+   "follow_up": "The Rainbow Boulevard traffic calming and pedestrian safety study itself, between Paseo del Norte and the southern property line of Volcano Vista High School, is not in the inventory. Worth a targeted search in a later lane."
+  },
+  {
+   "id": "src-32776c81a6b4c7e8",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-4-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "councilor district 4 documents"
+  },
+  {
+   "id": "src-3c44f7d09f2add68",
+   "authoritative_url": "https://www.cabq.gov/council/documents/economic-forum",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "Economic Forum"
+  },
+  {
+   "id": "src-3d2bc0752190c539",
+   "authoritative_url": "https://www.cabq.gov/council/documents/if",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "Impact Fees Documents"
+  },
+  {
+   "id": "src-42469f4bc1ba2c77",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "councilor district 2 documents"
+  },
+  {
+   "id": "src-4981e2d1057203fb",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-6-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "councilor district 6 documents"
+  },
+  {
+   "id": "src-4c601049183a910e",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "police oversight task force documents"
+  },
+  {
+   "id": "src-61a14597afff95cf",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-board",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "The Civilian Police Oversight Advisory Board (CPOAB)"
+  },
+  {
+   "id": "src-641e77fab876f4f0",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-1-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "councilor district 1 documents"
+  },
+  {
+   "id": "src-645154f89f6064aa",
+   "authoritative_url": "https://www.cabq.gov/council/documents/meeting-agenda-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "meeting agenda documents"
+  },
+  {
+   "id": "src-682fe0a6d7cd8cf3",
+   "authoritative_url": "https://www.cabq.gov/council/documents/Volcano%20Heights%20Sector%20Development%20Plan",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "Volcano Heights Sector Development Plan"
+  },
+  {
+   "id": "src-68f163bcca798dae",
+   "authoritative_url": "https://www.cabq.gov/council/documents/paseo-del-norte-and-i-25-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "paseo del norte and I-25 documents"
+  },
+  {
+   "id": "src-722f21f26f70eaf7",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-8-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "councilor district 8 documents"
+  },
+  {
+   "id": "src-7615be91eb93e1e0",
+   "authoritative_url": "https://www.cabq.gov/council/documents/east-central-sector",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "East Central Sector"
+  },
+  {
+   "id": "src-774ecfe26cc33fa5",
+   "authoritative_url": "https://www.cabq.gov/council/documents/neighborhood-traffic-management-plan",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "Neighborhood Traffic Management Plan"
+  },
+  {
+   "id": "src-7f560a60734c0eb5",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-7-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "councilor district 7 documents"
+  },
+  {
+   "id": "src-82c6c198b4eefd21",
+   "authoritative_url": "https://www.cabq.gov/council/documents/balloon-landing-sight-purchase-resolution",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "Balloon Landing Sight Purchase Resolution"
+  },
+  {
+   "id": "src-86ab054ee0977b03",
+   "authoritative_url": "https://www.cabq.gov/council/documents/form-based-code",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "Form Based Code"
+  },
+  {
+   "id": "src-880db422c2320123",
+   "authoritative_url": "https://www.cabq.gov/council/documents/nob-hill-highland",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "Nob Hill Highland"
+  },
+  {
+   "id": "src-896acd7eda087469",
+   "authoritative_url": "https://www.cabq.gov/council/documents/paseo-del-volcan-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "paseo del volcan documents"
+  },
+  {
+   "id": "src-8c3e9038799c59a4",
+   "authoritative_url": "https://www.cabq.gov/council/documents/downtown_arena",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "Downtown Arena"
+  },
+  {
+   "id": "src-8eeb755b80a898d9",
+   "authoritative_url": "https://www.cabq.gov/council/documents/West%20Central%20Metropolitan%20Redevelopment%20Area",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "West Central Metropolitan Redevelopment Area"
+  },
+  {
+   "id": "src-915026ad52b7bce2",
+   "authoritative_url": "https://www.cabq.gov/council/documents/sawmill-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "sawmill documents"
+  },
+  {
+   "id": "src-936b48bc54970418",
+   "authoritative_url": "https://www.cabq.gov/council/documents/uptown-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "uptown documents"
+  },
+  {
+   "id": "src-96fcac92a6d81b53",
+   "authoritative_url": "https://www.cabq.gov/council/documents/complete-streets",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "Complete Streets"
+  },
+  {
+   "id": "src-9f1d31095920f273",
+   "authoritative_url": "https://www.cabq.gov/council/documents/big-box-regulations",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "\"Big Box\" Regulations"
+  },
+  {
+   "id": "src-a0298c9fa44d3887",
+   "authoritative_url": "https://www.cabq.gov/council/documents/high_performance_buildings_ordinance",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "High Performance Buildings Ordinance"
+  },
+  {
+   "id": "src-a2c9ffe1607190be",
+   "authoritative_url": "https://www.cabq.gov/council/documents/four-hills-speed-hump-studies",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "Four Hills Speed Hump Studies"
+  },
+  {
+   "id": "src-b443cbb28db8106b",
+   "authoritative_url": "https://www.cabq.gov/council/documents/pgs",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "Planned Growth Strategy"
+  },
+  {
+   "id": "src-c0433b3c564a14ca",
+   "authoritative_url": "https://www.cabq.gov/council/documents/task-force-on-mental-health-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "task force on mental health documents"
+  },
+  {
+   "id": "src-c6b72a59af8fcfdc",
+   "authoritative_url": "https://www.cabq.gov/council/documents/court-approved-settlement-agreement",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "Court Approved Settlement Agreement"
+  },
+  {
+   "id": "src-c846ef71accb706a",
+   "authoritative_url": "https://www.cabq.gov/council/documents/red_light_cameras",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "Red Light Cameras"
+  },
+  {
+   "id": "src-ca8abef11c283b6e",
+   "authoritative_url": "https://www.cabq.gov/council/documents/completed-reports-studies",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "Completed Reports & Studies"
+  },
+  {
+   "id": "src-cf4646a4b7b00c14",
+   "authoritative_url": "https://www.cabq.gov/council/documents/12th-and-menaul",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "12th and Menaul"
+  },
+  {
+   "id": "src-d1cf1358b2edfdcc",
+   "authoritative_url": "https://www.cabq.gov/council/documents/redistricting-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "redistricting documents"
+  },
+  {
+   "id": "src-d1fff819221a71ca",
+   "authoritative_url": "https://www.cabq.gov/council/documents/comp-plan-udo-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "comp plan udo documents"
+  },
+  {
+   "id": "src-da24c49ffdf93613",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "councilor district 5 documents"
+  },
+  {
+   "id": "src-dd1a8f9f37ef2db0",
+   "authoritative_url": "https://www.cabq.gov/council/documents/dnasdp-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "dnasdp documents"
+  },
+  {
+   "id": "src-df71413ad4181460",
+   "authoritative_url": "https://www.cabq.gov/council/documents/huning-highland",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "Huning Highland"
+  },
+  {
+   "id": "src-e00b831cfe974916",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-9-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "councilor district 9 documents"
+  },
+  {
+   "id": "src-e21e4844738a9fb8",
+   "authoritative_url": "https://www.cabq.gov/council/documents/tax_cuts",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "Tax Cuts"
+  },
+  {
+   "id": "src-ea5ee0cc900fff12",
+   "authoritative_url": "https://www.cabq.gov/council/documents/cell_phones",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "Cell Phones"
+  },
+  {
+   "id": "src-fe609268ed420ea7",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-3-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11",
+   "exclusion_reason": "A Plone collection landing page inside the Council document library, not a document. Its content is the list of links to the files it contains, plus site chrome. Excluding it does not touch any file it lists: those are separate inventory records, most of them in subdirectory clusters this artifact does not cover.",
+   "category": "collection landing page",
+   "inventory_title": "councilor district 3 documents"
+  }
+ ],
+ "archival_note": "All 12 approved records are static PDFs and are inventory-only until an R2 archive object exists for each and its public download, exact size, SHA-256, and authoritative-source provenance are verified. Four of them, the three advisory board minutes and the Council Services organisational chart, additionally have no settled page to go on; see integration_flags.",
+ "integration_note": "Codex integration lane: apply recommended_status values through scripts/project/Update-Candidate.ps1 only. Every duplicate row carries a canonical_id and all four hash-based canonicals are already validated records. The 12 approved rows carry a title, a 20-to-50-word description, a proposed_canonical_page, and cross_listings where a second page applies. Fourteen rows are requires human review and each states its question and what evidence was already gathered, so none of them needs the research repeated. Sizes and checksums for the 65 document files are first measurements; the inventory held neither.",
+ "safeguards": [
+  "no master-inventory.json write",
+  "no checkpoint.json write",
+  "no r2-inventory.json write",
+  "no site content change",
+  "no R2 upload",
+  "no commit, merge, or deploy"
+ ]
+}

@@ -1,0 +1,760 @@
+{
+ "batch_id": "project-procurement-records-cluster-research-2026-09-12",
+ "lane": "Claude research lane: the project-specific engineering and procurement records in www.cabq.gov/municipaldevelopment/documents",
+ "generated_at": "2026-09-13T03:37:01.897798+00:00",
+ "date_note": "Dated 2026-09-12, the seventh slice of the municipaldevelopment/documents lane.",
+ "cluster": "What the City posts while it is hiring a designer for a capital project: scope statements, requests for proposals, questions and answers, site walk-through notices, sign-in sheets, and the condition records behind one renovation.",
+ "scope": "All 29 uncovered candidates in this group. The coverage gate is asserted in the generator.",
+ "brief": "Tie each file to its City project number and decide whether procurement process papers for a single project belong in a public archive at all.",
+ "brief_finding_on_project_numbers": "Every file that prints a project number was tied to one, and the numbers are recorded on the rows as city_project_number: 138.02, 183.02, 5798.82, 6353.93, 720600, 720700, 720800, 7223.03, 7232.00, 7246.92, 7303.95, 7303.99, 7697.90. Two files carry no project number at all - the Selection Advisory Committee presentation and the agreement and insurance certification, both process records rather than project records - and one names none and is held for review. Three more are recorded under project_attribution rather than city_project_number, because their number exists only in their filename; see three_numbers_that_come_from_the_filename_alone.",
+ "brief_finding_on_whether_they_belong": {
+  "the_answer": "Not as a class. The question splits cleanly, and the split is not between important and unimportant projects but between what a document says and what it merely records having happened.",
+  "what_is_kept": "Anything that states scope, budget, schedule, condition or a City position: the on-call scope statements, the requests for proposals, the questions and answers - which is where the City puts its budget figures and its policy on the record - the Children's Fantasy Garden condition survey and deficiency list, the Yale cost estimate, and the presentation explaining how consultants are chosen.",
+  "what_is_not": "Meeting rosters and expired meeting logistics. A sign-in sheet records who came; a walk-through notice records where to stand on a morning in 2022. Neither says anything about the project that the project's own documents do not.",
+  "the_privacy_point": "Three of the four rosters are lists of named private individuals with their working email addresses. Republishing those on a public archive has a real cost and no archival return. This is the reason the rosters are excluded as a group rather than judged one at a time.",
+  "what_this_does_not_say": "Nothing here is excluded for being procurement. The requests for proposals are procurement documents and all three are recommended, because each one states what the City wanted built and what it expected it to cost."
+ },
+ "method": "Fetched every candidate and measured byte length and SHA-256 from the fetched bytes, verifying every container by leading bytes; one is an HTML page and one an OOXML document, and neither was assumed from its extension. Read each file for its project number, department and date rather than taking them from the filename. Compared every checksum within the slice and against the 1,612 checksummed inventory records. Where two files looked alike, compared normalized text with a real sequence ratio and a string-equality test, then rendered both pages and compared the rendered images.",
+ "classification_only": true,
+ "shared_state_written": [],
+ "a_duplicate_that_hashing_could_not_find_and_rendering_settled": {
+  "the_pair": "cfg-survey-markup_2021-11-03-6353-93.pdf and cfg-survey-markup_2021-11-03-percent-grade-extents_amp-003-6353-93.pdf",
+  "what_each_method_said": {
+   "byte_hashing": "Different. 741,873 against 740,221 bytes, different SHA-256.",
+   "normalized_text": "String-equal, real sequence ratio 1.0000, token coverage 1.0000 both directions.",
+   "rendering": "Identical. Both rendered to a 5,090,954-byte PNG with the same SHA-256."
+  },
+  "why_rendering_was_needed": "Text equality alone would not have been enough here. This is a single-page aerial markup: almost all of its content is one raster image, and its text layer is only the annotation list beside it. Two sheets could share every annotation and carry different drawings. Rendering compares what a reader actually sees.",
+  "the_method_to_keep": "Render and hash. When two candidates differ in bytes but not in text, and their substance is graphical, render both at the same scale and hash the images. It is the only comparison in this run that answers the question directly.",
+  "and_it_cuts_the_other_way_too": "The same technique, applied in the previous slice, overturned an exclusion: a file excluded for naming no site names it in large type on page 1, in text that is not in its text layer. Rendering settled a false difference here and a false absence there."
+ },
+ "three_numbers_that_come_from_the_filename_alone": {
+  "count": 3,
+  "the_files": [
+   "cfg-deficiency-list_2021-12-09-6353-93.pdf",
+   "cfg-survey-markup_2021-11-03-6353-93.pdf",
+   "cost-estimate.pdf"
+  ],
+  "what_is_true": "None of the three prints a project number anywhere, and their subjects are not equally certain either. The Yale cost estimate is headed with its facility and addressed to that department's director, so its subject is beyond doubt. The two Children's Fantasy Garden files never write the garden's name: the deficiency list abbreviates it to CFG and lists the Doolittle Fountain and the Labyrinth, and the survey markup names no site at all - its text layer is slope readings, and the only identifying words in it are Mushroom Tunnel and Labyrinth. Each row records the evidence terms actually present in its own text.",
+  "why_it_is_recorded_separately": "This lane has found a filename contradicting its own document in four slices running. A number taken from a filename is an attribution and must not be presented as something the document states. These three carry a project_attribution object with its basis written out, rather than a city_project_number field.",
+  "how_it_was_caught": "The validation harness checks that every project number claimed on a row occurs in that file's extracted text. It failed on these three, and on a fourth where the document prints 720600 and the row had been written 7206.00. It then failed a second time, on a first draft of this very block that claimed all three name their subject unmistakably: two of them do not, and the check that every asserted evidence term occurs in the text is what said so."
+ },
+ "filenames_that_contradict_their_documents": {
+  "count": 2,
+  "cases": [
+   "7373-99-informational-sheet.pdf is headed Project No: 7303.99.",
+   "mf-3604-10-20-25.pdf is a request for proposals for citywide on-call traffic engineering, Project No. 183.02; its filename records neither."
+  ],
+  "the_standing_rule": "Title from the document. This lane has now found filename errors in four slices - a body and a date wrong on an Energy Council file, two misspelled facilities in the stormwater set, and these two - and not one of them was visible without opening the file."
+ },
+ "the_meeting_rosters": {
+  "count": 4,
+  "what_they_contain": "Names of attending architects, engineers and City staff. Three also carry working email addresses; the fourth, the Yale walk-through attendance, carries thirteen names without addresses.",
+  "how_the_fourth_was_identified": "site-walk-through-attendance.pdf and 5798-82-sitewalkthrough.pdf are the same notice, at a sequence ratio of 0.7755 with the notice fully contained in the attendance file, token coverage 1.0000 one way and 0.7190 the other. Reading the diff shows exactly what the longer file adds: a thirteen-name attendance list.",
+  "decision": "Excluded as a group, on the reasoning in brief_finding_on_whether_they_belong."
+ },
+ "the_walk_through_notices": {
+  "count": 4,
+  "decision": "Excluded as expired logistics.",
+  "what_is_preserved_here_instead": "Each notice is the only trace in this slice of its project, so the project numbers and titles are recorded on the rows rather than lost with the files: 6370.93 Architectural Consultants for Albuquerque Museum Education Center, and 7011.95 Brillante Explora Early Learning Center. Neither project appears anywhere else in this slice."
+ },
+ "already_archived_check": {
+  "rule_applied": "Test candidates against R2 objects the archive already holds, against the published site, and against anything recommended earlier in the same batch.",
+  "cross_inventory_byte_collisions": 0,
+  "internal_byte_collisions": 0,
+  "result": "Nothing here duplicates anything the archive holds. The one duplicate in the slice is internal to it."
+ },
+ "duplicate_and_supersession_checks": {
+  "internal_byte_collisions": 0,
+  "cross_inventory_byte_collisions": 0,
+  "url_collisions_in_this_slice": 0,
+  "checksums_compared_against": 1612,
+  "relationships_found": 2,
+  "found_by": "One by text equality confirmed by rendering; one by containment, which established that a notice and an attendance sheet are the same notice with a roster appended.",
+  "note": "Neither was findable by hashing. Both files in the duplicate pair are genuine distinct byte sequences of the same document."
+ },
+ "integration_flags": [
+  {
+   "severity": "method",
+   "affects": [
+    "src-348b198176600aa7",
+    "src-a6cabf80272f6d7d"
+   ],
+   "finding": "A duplicate that byte hashing called different and that text comparison could not prove: a single-page graphical markup whose text layer is only its annotation list. Rendering both pages produced byte-identical images.",
+   "recommended_action": "Adopt render-and-hash for graphical candidates that differ in bytes but not in text. Detail in a_duplicate_that_hashing_could_not_find_and_rendering_settled."
+  },
+  {
+   "severity": "substantive-find",
+   "affects": [
+    "src-3f3ee8935635a62f",
+    "src-a6cabf80272f6d7d",
+    "src-9df858c530430f8e",
+    "src-c40a9e760b69fb42"
+   ],
+   "finding": "A complete condition record for the ABQ BioPark Children's Fantasy Garden: a 28-point accessibility slope survey, a priced deficiency list with low, medium and high cost remedies, the renovation's scope, and the City's own statement of its $5 million budget and $4 million maximum allowable construction cost.",
+   "recommended_action": "Approve as a set. This is the most complete picture of a single City facility renovation in the slice."
+  },
+  {
+   "severity": "substantive-find",
+   "affects": [
+    "src-c11e4d79949d1e86"
+   ],
+   "finding": "A 2015 conceptual construction cost estimate for redeveloping the ABQ RIDE Yale maintenance facility, pricing three fleet options and their sub-options, addressed to the Transit director. It reaches the inventory under the filename cost-estimate.pdf and identifies neither its project nor its subject in that name.",
+   "recommended_action": "Approve and title it from the document."
+  },
+  {
+   "severity": "privacy",
+   "affects": [
+    "src-79863973bfbc7332",
+    "src-debad5dae8789593",
+    "src-19209afc44e66148",
+    "src-ce7b73f98ea2dc28"
+   ],
+   "finding": "Four procurement meeting rosters, three of them lists of named private individuals with their working email addresses.",
+   "recommended_action": "Exclude. Do not publish; the reasoning is recorded in brief_finding_on_whether_they_belong."
+  },
+  {
+   "severity": "title-from-the-document",
+   "affects": [
+    "src-f1412e3759ceb01d",
+    "src-c1907ae0fa973eb2"
+   ],
+   "finding": "Two filenames that contradict or omit what their document says: 7373-99 for a document headed 7303.99, and mf-3604-10-20-25 for a request for proposals on Project No. 183.02.",
+   "recommended_action": "Title both from the document."
+  }
+ ],
+ "counts": {
+  "reviewed": 29,
+  "approved_for_addition": 18,
+  "duplicate": 1,
+  "requires_human_review": 1,
+  "excluded": 9
+ },
+ "link_check": {
+  "checked": 29,
+  "http_200": 29,
+  "failed": 0,
+  "http_200_but_not_the_document": 0,
+  "method": "Full HTTP GET with a browser user agent, 2026-09-12.",
+  "containers_verified": "27 genuine PDFs, 1 OOXML document and 1 HTML page by leading bytes. The HTML one is a directory listing and is excluded as not a document."
+ },
+ "approved_for_addition": [
+  {
+   "id": "src-bee26bf4c7d2ea17",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/7206-00-7207-00-7208-00-informational-sheet.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 642657,
+   "checksum_sha256": "6f8b957bf4ebe6c25ac6b3ca202aa5e19da96f4a27b76ffe5f84e32e8eb87fea",
+   "title": "2022 Citywide On-Call Engineering Services: Scope of Projects",
+   "description": "The City's statement of what its 2022 citywide on-call engineering contracts cover, running from roadway, drainage and traffic evaluations through design, bid documents and construction phase services for the work called off against them.",
+   "date": "2022",
+   "pages": null,
+   "evidence": "Headed CITY OF ALBUQUERQUE, DEPARTMENT OF MUNICIPAL DEVELOPMENT, 2022 CITYWIDE ON-CALL ENGINEERING SERVICES, Project Number: 720600, 720700, 720800, over a SCOPE OF PROJECTS listing.",
+   "proposed_canonical_page": "content/development-land-use/development-process.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "On-call engineering is the delivery mechanism for much of the Capital Implementation Program."
+    }
+   ],
+   "description_word_count": 34,
+   "city_project_number": "720600, 720700, 720800"
+  },
+  {
+   "id": "src-dae0e5bc39e97e1a",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/pre-submittal-presentation-138-02-updated.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 249442,
+   "checksum_sha256": "2208567020e224ea5bdc86d8655bbd52bf33385d39ca8defd7c8293e4ea985cd",
+   "title": "Citywide On-Call Engineering Services for Transportation and Storm Drainage: Scope of Projects",
+   "description": "The City's scope statement for its transportation and storm drainage on-call engineering contract, covering green stormwater infrastructure evaluations, roadway and drainage study work, and the design and construction phase services that follow.",
+   "date": null,
+   "pages": null,
+   "evidence": "Headed CITY OF ALBUQUERQUE, DEPARTMENT OF MUNICIPAL DEVELOPMENT, CITYWIDE ON-CALL ENGINEERING SERVICES FOR TRANSPORTATION AND STORM DRAINAGE, Project Numbers: 138.02, over a SCOPE OF PROJECTS listing that opens on Green Stormwater Infrastructure evaluations.",
+   "proposed_canonical_page": "content/development-land-use/development-process.md",
+   "cross_listings": [
+    {
+     "page": "content/public-works/stormwater-drainage.md",
+     "reason": "The scope is half stormwater work, including green stormwater infrastructure."
+    }
+   ],
+   "description_word_count": 32,
+   "city_project_number": "138.02"
+  },
+  {
+   "id": "src-1233bd4667df880b",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/pre-submittal-informational-sheet_university-at-lomas.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 172119,
+   "checksum_sha256": "6390d666b75401153340649b24ffe3c8f4c6e8ea61a4caf58ff92a1ecf164530",
+   "title": "University Boulevard at Lomas Boulevard Reconstruction: Scope of Project",
+   "description": "The City's scope statement for the University at Lomas reconstruction sets out the roadway, drainage and utility study work required, then the design, bid document and construction phase services the project needs.",
+   "date": null,
+   "pages": null,
+   "evidence": "Headed CITY OF ALBUQUERQUE, DEPARTMENT OF MUNICIPAL DEVELOPMENT, UNIVERSITY BOULEVARD AT LOMAS BOULEVARD RECONSTRUCTION, Project Number: 724692, over a SCOPE OF PROJECT listing.",
+   "proposed_canonical_page": "content/transportation/roadway-projects/_index.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/development-process.md",
+     "reason": "The scope is written in the City's standard pre-submittal form."
+    }
+   ],
+   "description_word_count": 32,
+   "city_project_number": "7246.92"
+  },
+  {
+   "id": "src-4f03b2e57d8b3737",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/98th-street-and-benavides-road-presubmittal-presentation.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 712128,
+   "checksum_sha256": "b6bbc410b6b5b90ac3fa0480adddb12f78afd34743e524913e3942f264030b52",
+   "title": "98th Street and Benavides Road Intersection Improvements: Pre-Submittal Meeting Presentation",
+   "description": "The City's presentation on its 98th Street and Benavides Road intersection project sets out the location, the improvements planned, the schedule through design completion and the funding behind the work.",
+   "date": "2020",
+   "pages": null,
+   "evidence": "Titled 98th STREET AND BENAVIDES ROAD INTERSECTION IMPROVEMENTS, CPN 7697.90, Department of Municipal Development Engineering Division, OCTOBER 2, 2020, PRE-SUBMITTAL MEETING. Carries project location, and a PROJECT SCHEDULE & FUNDING slide giving design completion by Spring 2022.",
+   "proposed_canonical_page": "content/transportation/roadway-projects/_index.md",
+   "cross_listings": [],
+   "description_word_count": 30,
+   "city_project_number": "7697.90"
+  },
+  {
+   "id": "src-d2235c5ab30cf715",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/7223-03-ae-consultant-services-for-new-terminal-deii.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 133573,
+   "checksum_sha256": "2bcb218a298b6a5503e7fbf5dedc7a45972ab8246f54bdffe3bd15d3c136422d",
+   "title": "Request for Proposals: A/E Consultant Services for a New General Aviation Terminal at Double Eagle II Airport",
+   "description": "The City's request for proposals for the design of a new general aviation terminal at Double Eagle II Airport states the project, the submission deadline, the insurance and format requirements, and where the full request is published.",
+   "date": "2024",
+   "pages": null,
+   "evidence": "Headed City of Albuquerque, Notice of Requests for Proposals from A/E Consultant Services for the Design of a New General Aviation Terminal at the Double Eagle II Airport, Project No: 7223.03, proposals due Wednesday, February 28, 2024 by 3:00pm.",
+   "proposed_canonical_page": "content/development-land-use/projects.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "A capital project procurement."
+    }
+   ],
+   "description_word_count": 37,
+   "city_project_number": "7223.03"
+  },
+  {
+   "id": "src-c1907ae0fa973eb2",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/mf-3604-10-20-25.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 104792,
+   "checksum_sha256": "87aed7341221c5407f1760881c605b6b16791594b28eb0c264a4e2b52df67460",
+   "title": "Request for Proposals: Citywide On-Call Traffic Engineering",
+   "description": "The City's request for proposals for its citywide on-call traffic engineering contract states the project number, the submission deadline and format, and where the full request for proposals is published.",
+   "date": "2025",
+   "pages": null,
+   "evidence": "Headed City of Albuquerque, Notice of Requests for Proposals from CITY WIDE ON-CALL TRAFFIC ENGINEERING, Project No. 183.02, proposals due Wednesday, November 12, 2025. Reaches this slice under the filename mf-3604-10-20-25.pdf.",
+   "proposed_canonical_page": "content/development-land-use/development-process.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/_index.md",
+     "reason": "Traffic engineering work on the City street network."
+    }
+   ],
+   "description_word_count": 30,
+   "city_project_number": "183.02"
+  },
+  {
+   "id": "src-ff1c069af719b528",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/selection-advisory-committee-documents/mf-3328.docx",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "DOCX",
+   "leading_bytes": "504b0304",
+   "size_bytes": 27845,
+   "checksum_sha256": "f0c4d9d86053aa60aa449eba1d3d0f0f054621d29d1983535aeb70b74e98fb07",
+   "title": "Request for Proposals: Architectural Consultants for Asia at the ABQ BioPark Zoo",
+   "description": "The City's request for proposals for the Asia exhibit at the BioPark Zoo describes a new multi-level Asian exhibit with site development, containment perimeter, entry gate and animal holding, at an approximate construction cost of fifteen million dollars.",
+   "date": "2018",
+   "pages": null,
+   "evidence": "Headed CITY OF ALBUQUERQUE, NOTICE OF REQUEST FOR PROPOSALS FROM ARCHITECTURAL CONSULTANTS FOR ASIA AT ABQ BIOPARK ZOO, Project No. 7303.95, proposals due Wednesday, July 11, 2018. A DOCX, leading bytes 504b0304, read from word/document.xml.",
+   "proposed_canonical_page": "content/public-works/parks-recreation.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "A fifteen-million-dollar capital project."
+    }
+   ],
+   "description_word_count": 38,
+   "city_project_number": "7303.95"
+  },
+  {
+   "id": "src-c40a9e760b69fb42",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/project-no-6353-93-abq-biopark-children2019s-fantasy-garden.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 366992,
+   "checksum_sha256": "0cdf99f05a0d0c0e8840bf0de68dab499fe7b4a89b4c216e8d861dbf801df592",
+   "title": "Pre-Submittal Conference Information Sheet: ABQ BioPark Children's Fantasy Garden Renovation",
+   "description": "The City's information sheet for the Children's Fantasy Garden renovation explains what the BioPark is seeking, the experience it requires of bidders, the public engagement expected, and the range of renovation it will consider.",
+   "date": null,
+   "pages": null,
+   "evidence": "Headed Project No: 6353.93; Abq BioPark Children's Fantasy Garden, Pre-Submittal Conference Information Sheet. Records that the garden opened in 2001, that theme park and family project experience is required, and that the project has potential for CMAR with no animal component anticipated.",
+   "proposed_canonical_page": "content/public-works/parks-recreation.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "A capital renovation of a City facility."
+    }
+   ],
+   "description_word_count": 34,
+   "city_project_number": "6353.93"
+  },
+  {
+   "id": "src-a717db006dc435fe",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/cabq-ppt_ae_outreach_dmd-website-update-002-sac-process.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 540919,
+   "checksum_sha256": "42087aa4d44e73f175b759f0bcacc9a0c8064473f6b3c33c7d4691dd50da04a8",
+   "title": "Selection Advisory Committee Process Presentation",
+   "description": "The City's presentation on how its Selection Advisory Committee chooses design consultants explains the process, the December 2022 rules update, and the raised expedited design services threshold that lets user departments select directly.",
+   "date": "2024",
+   "pages": null,
+   "evidence": "Titled Selection Advisory Committee (SAC) PowerPoint, April 2024. Records the Updated SAC Rules and Regulations of December 2022 and the rise in the Expedited Design Services limit from $25,000 to $150,000.",
+   "proposed_canonical_page": "content/development-land-use/development-process.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "The committee selects the consultants who deliver the capital programme."
+    }
+   ],
+   "description_word_count": 33
+  },
+  {
+   "id": "src-feceff17d2f6b2cf",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/selection-advisory-committee-documents/agreement-insurance-certification.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 27186,
+   "checksum_sha256": "37818289228d8bbd4506900f711c1f7c97f20e144273d01a66de5e364fd0c49c",
+   "title": "Agreement and Insurance Certification, Capital Implementation Program",
+   "description": "The City's certification form has a proposing firm confirm it has reviewed the standard engineering, architectural or landscape architectural services agreement and will enter into it and meet its insurance requirements if selected.",
+   "date": null,
+   "pages": null,
+   "evidence": "Headed City of Albuquerque Capital Implementation Program, Agreement and Insurance Certification, with Project Name, Project Number, Date and Firm Name left blank.",
+   "proposed_canonical_page": "content/development-land-use/development-process.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "Required of every firm proposing on a Capital Implementation Program project."
+    }
+   ],
+   "description_word_count": 33
+  },
+  {
+   "id": "src-3f3ee8935635a62f",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/cfg-deficiency-list_2021-12-09-6353-93.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 456174,
+   "checksum_sha256": "652113794ca490cf2b1a80875ccb6bbe4b83579003f683b883c8b911e9b1f7e7",
+   "title": "Children's Fantasy Garden Deficiency List, December 9, 2021",
+   "description": "The City's condition assessment of the Children's Fantasy Garden lists each defect found by area, from the clogged Doolittle Fountain to walkways that fail accessibility standards, and prices a low, medium and high cost remedy for each.",
+   "date": "2021",
+   "pages": null,
+   "evidence": "Tabulated by CFG Area, Number, Deficiency, and Low, Medium and High Cost Solution. Records the Doolittle Fountain clogged and not running, pedestrian walkways non-compliant for vertical surface discontinuity, drip irrigation not working, and landscape overhanging pathways.",
+   "proposed_canonical_page": "content/public-works/parks-recreation.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "The condition record behind a capital renovation."
+    }
+   ],
+   "description_word_count": 37,
+   "project_attribution": {
+    "project": "ABQ BioPark Children's Fantasy Garden",
+    "number": "6353.93",
+    "number_stated_in_the_document": false,
+    "evidence_terms_present_in_the_document": [
+     "CFG",
+     "Doolittle",
+     "Labyrinth"
+    ],
+    "basis": "The document never writes the garden's name. It abbreviates it to CFG in its own column heading, and the features it lists - the Doolittle Fountain, the Labyrinth - are features of the Children's Fantasy Garden, which the pre-submittal information sheet for 6353.93 describes. The project number itself appears only in the filename."
+   }
+  },
+  {
+   "id": "src-a6cabf80272f6d7d",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/cfg-survey-markup_2021-11-03-6353-93.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 741873,
+   "checksum_sha256": "93615111e0b63a02b4880d472f8ca28c539b5afdaeb140dd96120531fbf1f038",
+   "title": "Children's Fantasy Garden Accessibility Survey Markup, November 3, 2021",
+   "description": "The City's accessibility survey marks 28 measured locations on an aerial view of the Children's Fantasy Garden and gives the longitudinal and cross slope at each, identifying which stretches of path are inaccessible under accessibility standards.",
+   "date": "2021",
+   "pages": null,
+   "evidence": "A single-page aerial markup with 28 numbered extents of measurement and concern and a slope reading for each, from 0.3% to 15.8%, with items 20 and 21 annotated inaccessible for ADA and a note that grades are measured from point of inflection to point of inflection.",
+   "proposed_canonical_page": "content/public-works/parks-recreation.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "The survey behind a capital renovation."
+    }
+   ],
+   "description_word_count": 36,
+   "project_attribution": {
+    "project": "ABQ BioPark Children's Fantasy Garden",
+    "number": "6353.93",
+    "number_stated_in_the_document": false,
+    "evidence_terms_present_in_the_document": [
+     "Mushroom",
+     "Labyrinth"
+    ],
+    "basis": "The weakest attribution in the slice, and it is recorded as such. The text layer is a list of slope readings and names no site at all; the only identifying words in it are two features, the Mushroom Tunnel and the Labyrinth, which the deficiency list and the pre-submittal sheet place in the Children's Fantasy Garden. The rendered page is an aerial of that garden. The project number appears only in the filename."
+   }
+  },
+  {
+   "id": "src-c11e4d79949d1e86",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/cost-estimate.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 932974,
+   "checksum_sha256": "919464fa08f628ebbea9bbc2922e2fb643ff35e094511026306639db679be150",
+   "title": "ABQ RIDE Yale Maintenance Facility Assessment: Conceptual Estimate of Probable Construction Cost",
+   "description": "The consultant's conceptual cost estimate for redeveloping the Yale bus facility prices three fleet options and their sub-options for reusing or replacing the operations and maintenance buildings, with site work, demolition, equipment and a contingency.",
+   "date": "2015",
+   "pages": null,
+   "evidence": "A letter of June 25, 2015 from a Houston engineering consultancy to Bruce Rizzieri, Director, ABQ Ride, transmitting the estimate. Prices Option 1 40-foot fixed route plus paratransit, Option 2 40-foot and 60-foot plus paratransit, and Option 3 paratransit only, each with sub-options A, B and a second-floor operations variant. Carries a 25% contingency for the conceptual stage.",
+   "proposed_canonical_page": "content/transportation/transit/abq-ride.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "A capital cost estimate for a City facility."
+    }
+   ],
+   "description_word_count": 35,
+   "project_attribution": {
+    "project": "ABQ RIDE Yale Maintenance Facility",
+    "number": "5798.82",
+    "number_stated_in_the_document": false,
+    "evidence_terms_present_in_the_document": [
+     "Yale",
+     "ABQ Ride"
+    ],
+    "basis": "The document is headed Re: ABQ Ride Yale Maintenance Facility Assessment and is addressed to the Director of ABQ Ride, so its subject is beyond doubt. It prints no project number; 5798.82 comes from the pre-submittal documents for the same facility, not from this file, and not from its filename either - the filename is just cost-estimate.pdf."
+   }
+  },
+  {
+   "id": "src-5abd331d18df47d5",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/q-a-for-2_5_2024-presubmittal-meeting-7223-03.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 94934,
+   "checksum_sha256": "918e7dceb216a63fcfe30be44f0fa7b4297d34fbd9cc9eea8c95eb275c59b1b4",
+   "title": "Questions and Answers: New General Aviation Terminal at Double Eagle II Airport",
+   "description": "The City's answers to bidders on the Double Eagle II general aviation terminal record its position on certification and other requirements of the design, given after the mandatory pre-submittal meeting for the project.",
+   "date": "2024",
+   "pages": null,
+   "evidence": "Dated February 6, 2024, headed Q & A after mandatory Zoom pre-submittal meeting for Project No: 7223.03. Records that City projects are not LEED Certified.",
+   "proposed_canonical_page": "content/development-land-use/projects.md",
+   "cross_listings": [],
+   "description_word_count": 33,
+   "city_project_number": "7223.03"
+  },
+  {
+   "id": "src-9df858c530430f8e",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/qa-children-fantasy-garden-06-06-2024-6353-93.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 84469,
+   "checksum_sha256": "4eadead86e7d94a45b63d9e7ed14f33e3ca02d1c9b1d67eea97c57a621037d02",
+   "title": "Questions and Answers: ABQ BioPark Children's Fantasy Garden Renovation",
+   "description": "The City's answers to bidders on the Children's Fantasy Garden renovation set out the total project budget, how much of it is soft cost, the maximum allowable construction cost, and how the advertised compensation relates to them.",
+   "date": "2024",
+   "pages": null,
+   "evidence": "Dated June 17, 2024, headed Questions regarding Project No: 6353.93. Records a total project budget of $5 million, 20% or $1 million in soft costs, $4 million of potential maximum allowable construction cost, and an estimated compensation of $750,000, about 18.75% of that construction cost.",
+   "proposed_canonical_page": "content/public-works/parks-recreation.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "It states the capital budget for the project."
+    }
+   ],
+   "description_word_count": 37,
+   "city_project_number": "6353.93"
+  },
+  {
+   "id": "src-b450bb1e49b889c3",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/questions-and-answers.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 404799,
+   "checksum_sha256": "c8d9878a0e8d9a7abc1a4cf500f6529e0ad42d5965607f3c9c09ae3d5073e4ac",
+   "title": "Questions and Answers: Yale Operations and Maintenance Facility Site Assessment and Design",
+   "description": "The City's answers to bidders on the Yale facility project explain how the work is phased, that ABQ RIDE estimates a year for the first phase, and that later phases depend on the department securing further funding.",
+   "date": null,
+   "pages": null,
+   "evidence": "Headed Project No: 5798.82; Architectural Consultant for Site Assessment and Design of the Yale Operations & Maintenance Facility, Questions and Answers.",
+   "proposed_canonical_page": "content/transportation/transit/abq-ride.md",
+   "cross_listings": [],
+   "description_word_count": 37,
+   "city_project_number": "5798.82"
+  },
+  {
+   "id": "src-62e38196b34a1e8b",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/questions-regarding-project-no-7232-00-architectural-consultants-for-city-wide.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 220944,
+   "checksum_sha256": "4761d999cce4e68e65deed6f1a28d77b9740caa0d3221e9b9571c211dc71b69b",
+   "title": "Questions and Answers: Citywide On-Call Architectural Services, Project 7232.00",
+   "description": "The City's answers to bidders on its citywide on-call architectural contract confirm that a firm already holding an on-call architectural agreement with the City is excluded from proposing, whatever department that agreement sits with.",
+   "date": "2024",
+   "pages": null,
+   "evidence": "Dated June 17, 2024, headed Questions regarding: Project No: 7232.00; Architectural Consultants for City Wide On-Call Architectural Services.",
+   "proposed_canonical_page": "content/development-land-use/development-process.md",
+   "cross_listings": [],
+   "description_word_count": 34,
+   "city_project_number": "7232.00"
+  },
+  {
+   "id": "src-f1412e3759ceb01d",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/7373-99-informational-sheet.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 7279,
+   "checksum_sha256": "13c0001d74b543595b1df4fa49a3e546181ea10a875c5b2a6de8641375c3f63b",
+   "title": "Questions and Answers: Citywide On-Call Architectural Services, Project 7303.99",
+   "description": "The City's answers to bidders on its citywide on-call architectural contract identify who prepared the facility plan refresh and confirm that firm is not barred from joining a proposing team as a consultant.",
+   "date": "2023",
+   "pages": null,
+   "evidence": "Dated June 5, 2023, headed Questions regarding: Project No: 7303.99; Architectural Consultants for City Wide On-Call Architectural Services. The filename reads 7373-99; the document reads 7303.99. Title it from the document.",
+   "proposed_canonical_page": "content/development-land-use/development-process.md",
+   "cross_listings": [],
+   "description_word_count": 33,
+   "city_project_number": "7303.99"
+  }
+ ],
+ "duplicate": [
+  {
+   "id": "src-348b198176600aa7",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/cfg-survey-markup_2021-11-03-percent-grade-extents_amp-003-6353-93.pdf",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 740221,
+   "checksum_sha256": "0d7878458124b6481c1bd287ad2863bda033871be5b418160d06ec6bb3ea5ef2",
+   "canonical_id": "src-a6cabf80272f6d7d",
+   "title_for_reference": "Children's Fantasy Garden Accessibility Survey Markup, November 3, 2021, second export",
+   "relationship": "The same document as its canonical, published twice under different names. The longer name adds percent-grade-extents and amp-003, which reads like an addendum number in the procurement package; it describes what the sheet shows and does not make it a different sheet.",
+   "how_it_was_established": "Byte hashing said different: 741,873 against 740,221 bytes, different SHA-256. Normalized text is string-equal with a real sequence ratio of 1.0000. The two were then rendered to PNG at the same scale and the rendered pages are byte-identical - the same 5,090,954-byte image with the same SHA-256. The PDF containers differ by 1,652 bytes; the documents do not differ at all.",
+   "why_this_one_is_the_copy": "Neither carries a revision stamp and neither filename is a recency signal, so this follows the rule already applied to the copy_of editions: the plainer name is the primary object and is canonical."
+  }
+ ],
+ "requires_human_review": [
+  {
+   "id": "src-c2c171a89b600fa8",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/7204-00-technical-approach_opportunities-for-innovation.pdf",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 383827,
+   "checksum_sha256": "e96826f1fb85f675bb179d19ab01aebc392110c96456bf4c386b48b59032f345",
+   "draft_title": "Technical Approach: Opportunities for Innovation, proposal evaluation prompt",
+   "question_for_human": "Confirm which project this prompt was issued for, or publish it as an undated general selection prompt.",
+   "why_not_decided_here": "Its content is a City evaluation prompt with real substance - it asks proposers how their design will empower small, minority and disadvantaged groups, how an under-budget construction estimate affects end users, and how the design will support cultural and community inclusivity. But the document names no project, no department and no date. The only identification is the filename's 7204-00, and this lane has now twice found a filename that contradicts its own document.",
+   "distinguishing_content": "Technical Approach: Opportunities for Innovation; opens on incorporating new ideas and practices to empower small/minority/disadvantaged groups.",
+   "package": "unidentified_procurement_prompt",
+   "priority": 1
+  }
+ ],
+ "excluded": [
+  {
+   "id": "src-79863973bfbc7332",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/project-no_-5798-82-pre-submittal-sign-in.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 129595,
+   "checksum_sha256": "0bba6077b1c439723c4f34f7dccfc3f4563e343238ca22d642bdd283afdd9da6",
+   "title_for_reference": "5798.82 pre-submittal sign-in",
+   "what_it_is": "A forwarded email containing the Zoom chat roll of a September 2022 pre-submittal meeting.",
+   "exclusion_reason": "A meeting roster. It compiles the names, and in three of the four cases the working email addresses, of named private individuals who attended a City procurement meeting. It records nothing about the project that the project's own documents do not, and republishing a roster of private individuals' contact details carries a cost with no archival return.",
+   "category": "procurement meeting roster",
+   "package": "the_meeting_rosters"
+  },
+  {
+   "id": "src-debad5dae8789593",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/sign-in-sheet-2_5_2024.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 119376,
+   "checksum_sha256": "91abfefa8700b6018ced5ec3aa781f14fed1c24c642c063bad72602ec69faae4",
+   "title_for_reference": "Sign-in sheet, February 5, 2024",
+   "what_it_is": "The roll of the mandatory Zoom pre-submittal meeting for the Double Eagle II terminal project.",
+   "exclusion_reason": "A meeting roster. It compiles the names, and in three of the four cases the working email addresses, of named private individuals who attended a City procurement meeting. It records nothing about the project that the project's own documents do not, and republishing a roster of private individuals' contact details carries a cost with no archival return.",
+   "category": "procurement meeting roster",
+   "package": "the_meeting_rosters"
+  },
+  {
+   "id": "src-19209afc44e66148",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/7700-99-architectural-consultants-for-ais-pre-seecturity-fire-protetction-sign-in-sheet.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 88025,
+   "checksum_sha256": "b181409b8b8bc25dd3b4f52191004bcb05ba4163c473dd601c9ea7bf552b7dc0",
+   "title_for_reference": "7700.99 pre-submittal sign-in sheet",
+   "what_it_is": "The roll of the May 2, 2024 mandatory pre-submittal for architectural consultants on AIS pre-security fire protection.",
+   "exclusion_reason": "A meeting roster. It compiles the names, and in three of the four cases the working email addresses, of named private individuals who attended a City procurement meeting. It records nothing about the project that the project's own documents do not, and republishing a roster of private individuals' contact details carries a cost with no archival return.",
+   "category": "procurement meeting roster",
+   "package": "the_meeting_rosters"
+  },
+  {
+   "id": "src-ce7b73f98ea2dc28",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/site-walk-through-attendance.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 139232,
+   "checksum_sha256": "7c08970e4312c8a9d551087ef92c7f19005c533341d1739598faf455de5e3df8",
+   "title_for_reference": "5798.82 site walk-through attendance",
+   "what_it_is": "The walk-through notice with a thirteen-name attendance list appended.",
+   "exclusion_reason": "A meeting roster. It compiles the names, and in three of the four cases the working email addresses, of named private individuals who attended a City procurement meeting. It records nothing about the project that the project's own documents do not, and republishing a roster of private individuals' contact details carries a cost with no archival return.",
+   "category": "procurement meeting roster",
+   "package": "the_meeting_rosters"
+  },
+  {
+   "id": "src-a7b4e83d08d2713b",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/5798-82-sitewalkthrough.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 212693,
+   "checksum_sha256": "536558bd9c71259a46a6109d6dd29acb88bc5926cdfecbdf0f50bd6e5b72661b",
+   "title_for_reference": "5798.82 site walk-through notice",
+   "what_it_is": "Site Assessment and Design of the Yale Operations & Maintenance Facility; non-mandatory walk-through, Monday, September 12, 2022, 11:00 AM.",
+   "exclusion_reason": "Expired meeting logistics. A single page announcing where and when to meet for a site visit on a date now years past. It carries no scope, no budget, no schedule and no finding.",
+   "category": "expired meeting logistics",
+   "package": "the_walk_through_notices"
+  },
+  {
+   "id": "src-8fd77d0f2a7c3eab",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/6370-93-site-walkthrough.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 394874,
+   "checksum_sha256": "a1569a3892f660767dae3ceb7379db238ab79a3a1b20e13a366f3564263d123c",
+   "title_for_reference": "6370.93 site walk-through notice",
+   "what_it_is": "Architectural Consultants for Albuquerque Museum Education Center; non-mandatory walkthrough, Monday, July 18, 10:00 AM.",
+   "exclusion_reason": "Expired meeting logistics. A single page announcing where and when to meet for a site visit on a date now years past. It carries no scope, no budget, no schedule and no finding.",
+   "category": "expired meeting logistics",
+   "package": "the_walk_through_notices"
+  },
+  {
+   "id": "src-cf3ee217fcc745bb",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/site-walk-through6353-93-childs.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 269519,
+   "checksum_sha256": "856b9622c3d3f706d3de601b8b32fa7b6fd72412f6cb0ac5f67ab9d6a5b1c340",
+   "title_for_reference": "6353.93 site walk-through notice",
+   "what_it_is": "Abq BioPark Children's Fantasy Garden; non-mandatory walk-through, Friday, June 21, 2024, 9:00 AM.",
+   "exclusion_reason": "Expired meeting logistics. A single page announcing where and when to meet for a site visit on a date now years past. It carries no scope, no budget, no schedule and no finding.",
+   "category": "expired meeting logistics",
+   "package": "the_walk_through_notices"
+  },
+  {
+   "id": "src-f92d9eafb7e1a13f",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/site-walk_through.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 399655,
+   "checksum_sha256": "9d4251399f46b84eaba9ade67afa091f2d2652d54a4d9bcd6ac2caa9088eb00f",
+   "title_for_reference": "7011.95 site walk-through notice",
+   "what_it_is": "Brillante Explora Early Learning Center; non-mandatory walk-through, Thursday, August 11, 2022, 8:30 AM.",
+   "exclusion_reason": "Expired meeting logistics. A single page announcing where and when to meet for a site visit on a date now years past. It carries no scope, no budget, no schedule and no finding.",
+   "category": "expired meeting logistics",
+   "package": "the_walk_through_notices"
+  },
+  {
+   "id": "src-15080d936785b6d8",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/selection-advisory-committee-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "HTML",
+   "leading_bytes": "3c21444f",
+   "size_bytes": 111743,
+   "checksum_sha256": "1727d36938b3c3074a32340dae57c1e1602c8dbc96d256e3946cf7642be1efd2",
+   "title_for_reference": "selection-advisory-committee-documents, directory listing",
+   "what_it_is": "The City's web page for the directory, not a document in it.",
+   "exclusion_reason": "Not a document. The URL returns an HTML page, leading bytes 3c21444f, whose extracted text is the City's site navigation. The two files that actually sit in this directory are decided in this artifact in their own right.",
+   "category": "directory listing, not a document",
+   "package": "not_a_document"
+  }
+ ],
+ "archival_note": "All 18 approved records are inventory-only until an R2 archive object exists for each and its public download, exact size, SHA-256, and authoritative-source provenance are verified. Combined archive footprint if authorized: 5,921,099 bytes. One is an OOXML document and should be archived in its original format rather than converted. The 9 excluded records, 1,864,712 bytes, are not to be archived at all.",
+ "integration_note": "Codex integration lane: apply recommended_status values through scripts/project/Update-Candidate.ps1 only. One row carries a canonical_id and it is in this artifact. Approved rows carry a city_project_number where the document states one, so the records can be grouped by project rather than by filename. Two rows must be titled from the document rather than the filename and say so. Every row carries a leading_bytes field. Sizes and checksums are first measurements; the inventory held none.",
+ "safeguards": [
+  "no master-inventory.json write",
+  "no checkpoint.json write",
+  "no r2-inventory.json write",
+  "no site content change",
+  "no R2 upload",
+  "no commit, merge, or deploy",
+  "no terminal record modified",
+  "the excluded rosters were read only to establish what they contain and are not reproduced here"
+ ]
+}

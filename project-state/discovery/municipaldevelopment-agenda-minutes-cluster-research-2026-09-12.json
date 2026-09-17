@@ -1,0 +1,747 @@
+{
+ "batch_id": "municipaldevelopment-agenda-minutes-cluster-research-2026-09-12",
+ "lane": "Claude research lane: the agenda and minutes series of www.cabq.gov/municipaldevelopment/documents",
+ "generated_at": "2026-09-12T20:50:04.004594+00:00",
+ "date_note": "Dated 2026-09-12, the third slice of the municipaldevelopment/documents lane.",
+ "cluster": "The Albuquerque Energy Council's agendas and minutes from 2015 to 2022, together with three Greater Albuquerque Active Transportation Committee records.",
+ "scope": "All 26 pending-review candidates in this series that are not already rows in a saved artifact. The coverage gate is asserted in the generator.",
+ "brief": "Apply the missing-minutes policy, checking for each body whether approved minutes exist before any agenda is considered.",
+ "brief_finding": "The policy resolves the whole slice and it cuts both ways within one directory. For the Greater Albuquerque Active Transportation Committee the minutes are archived and maintained, so its agendas are excluded. For the Albuquerque Energy Council a recorded review found the body has no presence on the City's website at all — three candidate page URLs return 404 and the City's own site search for the exact phrase returns zero items — so for the ten meetings where no minutes survive, the agenda is the only official trace and is preserved under the policy's exception, labelled accordingly.",
+ "method": "Ran the URL group-by first; one collision, a pending-pending pair. Fetched all 26 candidates and measured byte length and SHA-256 from the fetched bytes, verifying every container by leading bytes. Compared every checksum within the slice and against the 1,612 checksummed inventory records. Extracted the meeting date from the face of every file and built the agenda-to-minutes map from those dates rather than from filenames, which matters because one filename is wrong about both the body and the date. Rendered the one image-only file, both pages. Ran the official-source review for the Energy Council and recorded its result. Checked every preserved agenda for cancellation or no-quorum language.",
+ "classification_only": true,
+ "shared_state_written": [],
+ "the_missing_minutes_review": {
+  "body": "Albuquerque Energy Council",
+  "result": "Recorded exhaustive official-source review, 2026-09-12: the Albuquerque Energy Council has no presence on the City's website. Three candidate page URLs return HTTP 404 (/municipaldevelopment/albuquerque-energy-council, /energy-council, /municipaldevelopment/boards-commissions/albuquerque-energy-council), and the City's own site search for the exact phrase \"Albuquerque Energy Council\" returns \"0 items matching your search terms\". The inventory holds no Energy Council record outside this directory. The council appears defunct and these files are the only surviving official trace of it, so no approved minutes exist to be located for the meetings below.",
+  "what_it_licenses": "Preservation of the ten Energy Council agendas for which no minutes survive, each labelled \"Agenda (approved minutes not located)\" and none of them presented as minutes.",
+  "what_it_does_not_license": "The five agendas whose minutes are in this same batch. Those are excluded, because the policy's exception applies only where minutes cannot be located.",
+  "cancellation_check": "All ten were searched for cancellation, postponement, rescheduling and no-quorum language and all ten are clean, so the policy's bar on preserving agendas for cancelled or no-quorum meetings does not bite."
+ },
+ "the_same_policy_the_other_way": {
+  "body": "Greater Albuquerque Active Transportation Committee",
+  "why_its_agendas_are_excluded": "Its minutes are held and the series is maintained. The inventory holds 25 validated GAATC records running from January 8, 2024 to August 10, 2026, published on content/transportation/bicycling/_index.md, and their own descriptions state they are \"retained in the minutes-only history\". The archive already applies a minutes-only rule to this body; this lane follows it.",
+  "the_august_2026_agenda": "Excluded because src-99529b2a4c8db5aa is the validated, published minutes for that exact meeting. Its byte-identical second inventory record is recommended duplicate.",
+  "the_task_force_agenda": "Excluded on different grounds: its minutes are not missing, they are not yet produced. The meeting was three weeks before this review and the minutes series is current. Recorded as worth revisiting rather than preserved by default.",
+  "what_was_added_instead": "The July 10, 2023 meeting packet, whose pages 3 onward are that meeting's minutes. It sits six months before the earliest archived GAATC minutes and extends the series backwards."
+ },
+ "the_gaatc_series_is_not_site_ready": {
+  "finding": "All 25 validated Greater Albuquerque Active Transportation Committee minutes records are published on content/transportation/bicycling/_index.md and none of them carries an r2_url. Their validation_status reads \"passed: authoritative source HTTP 200\" and their direct_file_url points at onbase.cabq.gov/publicaccess, the City's live document system.",
+  "why_it_matters": "The standing rule is explicit: a static document is not site-ready until its original is archived to R2 and the public archive download is verified, and an official live link alone is not a substitute. An entire published series rests on links to a City system that can reorganise or expire its document identifiers.",
+  "how_it_was_found": "Incidentally. The lane needed to confirm that the August 2026 minutes really were held before excluding the agenda for the same meeting, and checking the record turned up an empty r2_url on it and then on every one of its 24 siblings.",
+  "scope": "This is outside this lane's classification scope. No record here is modified; it is raised for the integration lane.",
+  "recommended_action": "Queue the 25 GAATC minutes for R2 archival and download verification. Until then the bicycling index publishes 25 entries that the project's own rule would not call site-ready."
+ },
+ "a_filename_wrong_twice": {
+  "record": "src-5a55fed4c4811d02",
+  "filed_as": "albuquerque-energy-committee-meeting-minutes-dec-17-2014.pdf",
+  "actually": "A two-page packet: the Albuquerque Energy *Council* agenda for January 21, 2015 on page 1 and that meeting's minutes on page 2.",
+  "both_errors": "The body's name (Committee for Council) and the date (17 December 2014 for 21 January 2015).",
+  "why_it_matters": "The file is image-only with two bytes of extractable text, so neither error is visible without rendering, and the inventory title simply repeats the filename. Any pass that trusted the filename would have dated the archive's earliest Energy Council record more than a month wrong and attributed it to a body that does not exist.",
+  "for_integration": "Title it from the document, not from the filename or the inventory title."
+ },
+ "already_archived_check": {
+  "rule_applied": "Test candidates against R2 objects the archive already holds, against the published site, and against anything recommended earlier in the same batch.",
+  "cross_inventory_byte_collisions": 0,
+  "internal_byte_collisions": 1,
+  "what_the_check_found": "No byte duplication against the archive, but the decisive find was a title match rather than a hash match: the GAATC minutes for August 10, 2026 are already validated and archived, which is what excludes the agenda for the same meeting. A checksum comparison alone would have found nothing, because an agenda and its minutes are different documents."
+ },
+ "duplicate_and_supersession_checks": {
+  "internal_byte_collisions": 1,
+  "internal_collision_group_size": 2,
+  "cross_inventory_byte_collisions": 0,
+  "url_collisions_in_this_slice": 1,
+  "url_collisions_resolved_here": 1,
+  "checksums_compared_against": 1612,
+  "relationships_found_by_hash": 1,
+  "relationships_found_by_date_mapping": 6,
+  "note": "Hashing found the one duplicate. The six agenda-to-minutes relationships were found by extracting the meeting date from the face of every file and matching on it — not by filename, which is unreliable here, and not by hash, which cannot relate two different documents about one meeting."
+ },
+ "integration_flags": [
+  {
+   "severity": "substantive-find",
+   "affects": [
+    "src-d43081e8b7973ea8",
+    "src-ca966518d02f2696",
+    "src-48f3706e1d6e8b31",
+    "src-a61f376f3c74afe6",
+    "src-7928766e796148c3",
+    "src-dfbc6cbb5e58f506",
+    "src-5a55fed4c4811d02",
+    "src-95460bead0e780ee"
+   ],
+   "finding": "8 sets of minutes for two City advisory bodies: the Albuquerque Energy Council from 2015 to 2021, whose work is otherwise undocumented anywhere in the archive, and a GAATC meeting packet from July 2023 that extends the archived minutes series six months further back.",
+   "recommended_action": "Approve. Place the Energy Council records on the climate and environment page, cross-listed to city facilities; the GAATC packet on the bicycling index beside the existing minutes series."
+  },
+  {
+   "severity": "policy-exception-invoked",
+   "affects": [
+    "src-0a03811e298d7753",
+    "src-49351428fdea2985",
+    "src-42b5f091cc46568d",
+    "src-adf4ec503c230405",
+    "src-d63a640b27136aab",
+    "src-a034863d2b05dd79",
+    "src-4a350d8b561eef61",
+    "src-1c5b1252fde7e9b1",
+    "src-aaadec876bbf554f",
+    "src-3f3273f2dcaafbf9"
+   ],
+   "finding": "10 Energy Council agendas are preserved under the missing-minutes policy after a recorded review found the body has no presence on the City website and no minutes survive for those meetings.",
+   "recommended_action": "Approve, and carry the label \"Agenda (approved minutes not located)\" into the published description on every one. None may be presented as minutes."
+  },
+  {
+   "severity": "title-from-the-document",
+   "affects": [
+    "src-5a55fed4c4811d02"
+   ],
+   "finding": "One record's filename is wrong about both the body and the date, and the inventory title repeats it. The file is image-only, so the errors are invisible without rendering.",
+   "recommended_action": "Title it Albuquerque Energy Council Agenda and Meeting Minutes, January 21, 2015."
+  },
+  {
+   "severity": "revisit-later",
+   "affects": [
+    "src-3580d6515ebd9ce4"
+   ],
+   "finding": "The GAATC and GARTC task force agenda of August 18, 2026 has no minutes yet because the meeting is recent, not because the record is lost.",
+   "recommended_action": "Exclude now; revisit when the task force's minutes are published. The distinction between not-yet-produced and permanently-missing matters for how the policy is applied."
+  },
+  {
+   "severity": "not-site-ready",
+   "affects": [
+    "src-99529b2a4c8db5aa"
+   ],
+   "finding": "All 25 validated GAATC minutes records are published on the bicycling index with no r2_url, validated against the live OnBase source only. The standing rule says an official live link is not a substitute for a verified archive object.",
+   "recommended_action": "Queue the whole series for R2 archival and download verification. Found incidentally while confirming the minutes existed before excluding the matching agenda."
+  },
+  {
+   "severity": "url-twin-resolution",
+   "affects": [
+    "src-d2c20fc383f46c12",
+    "src-43b1f7a8cd1931fc"
+   ],
+   "finding": "A pending-pending URL twin pair, byte-identical at 334,892 bytes. This is from the 13-group subset the URL-collision audit separated out as still needing triage rather than the 79 actionable_now groups.",
+   "recommended_action": "Resolve one as duplicate of the other; both are excluded on the merits anyway."
+  }
+ ],
+ "counts": {
+  "reviewed": 26,
+  "approved_for_addition": 18,
+  "duplicate": 1,
+  "excluded": 7
+ },
+ "link_check": {
+  "checked": 26,
+  "http_200": 26,
+  "failed": 0,
+  "http_200_but_not_the_document": 0,
+  "method": "Full HTTP GET with a browser user agent, 2026-09-12.",
+  "containers_verified": "26 genuine PDFs by leading bytes. One has no usable text layer and both its pages were rendered."
+ },
+ "approved_for_addition": [
+  {
+   "id": "src-d43081e8b7973ea8",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/20190516-approved-aec-meeting-minutes-april-17-2019.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 151165,
+   "checksum_sha256": "63107d12e4b926eddc1a42c824abc619bc1eabc5af38086b46211250e0872939",
+   "title": "Albuquerque Energy Council Meeting Minutes, April 17, 2019",
+   "description": "The Albuquerque Energy Council's minutes record who attended, what the Department of Municipal Development's facilities and energy staff reported on City lighting, buildings and energy projects, and what the council decided at its April 17, 2019 meeting.",
+   "description_word_count": 37,
+   "date": "2019-04-17",
+   "pages": 2,
+   "evidence": "Born-digital PDF with a full text layer, headed \"Albuquerque Energy Council\" over Minutes, Department of Municipal Development, 1801 4th Street Bldg. B.",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/public-works/city-facilities.md",
+     "reason": "Its business is City building lighting, energy retrofits and facility projects, which is what that page collects."
+    }
+   ],
+   "why_retained": "The minutes are the record of a City advisory body whose work is otherwise undocumented anywhere in the archive. Recorded exhaustive official-source review, 2026-09-12: the Albuquerque Energy Council has no presence on the City's website. Three candidate page URLs return HTTP 404 (/municipaldevelopment/albuquerque-energy-council, /energy-council, /municipaldevelopment/boards-commissions/albuquerque-energy-council), and the City's own site search for the exact phrase \"Albuquerque Energy Council\" returns \"0 items matching your search terms\". The inventory holds no Energy Council record outside this directory. The council appears defunct and these files are the only surviving official trace of it, so no approved minutes exist to be located for the meetings below.",
+   "note": "The filename records it as approved on 16 May 2019, so this is the adopted text rather than a draft."
+  },
+  {
+   "id": "src-ca966518d02f2696",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/aec-20190814-meeting-minutes-june-19-2019.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 158929,
+   "checksum_sha256": "913835b99442e3d45e7ca030c588c0d4df109d4de0a7c9d38bf0691e42a51f9d",
+   "title": "Albuquerque Energy Council Meeting Minutes, June 19, 2019",
+   "description": "The Albuquerque Energy Council's minutes record who attended, what the Department of Municipal Development's facilities and energy staff reported on City lighting, buildings and energy projects, and what the council decided at its June 19, 2019 meeting.",
+   "description_word_count": 37,
+   "date": "2019-06-19",
+   "pages": 2,
+   "evidence": "Born-digital PDF with a full text layer, headed \"Albuquerque Energy Council\" over Minutes, Department of Municipal Development, 1801 4th Street Bldg. B.",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/public-works/city-facilities.md",
+     "reason": "Its business is City building lighting, energy retrofits and facility projects, which is what that page collects."
+    }
+   ],
+   "why_retained": "The minutes are the record of a City advisory body whose work is otherwise undocumented anywhere in the archive. Recorded exhaustive official-source review, 2026-09-12: the Albuquerque Energy Council has no presence on the City's website. Three candidate page URLs return HTTP 404 (/municipaldevelopment/albuquerque-energy-council, /energy-council, /municipaldevelopment/boards-commissions/albuquerque-energy-council), and the City's own site search for the exact phrase \"Albuquerque Energy Council\" returns \"0 items matching your search terms\". The inventory holds no Energy Council record outside this directory. The council appears defunct and these files are the only surviving official trace of it, so no approved minutes exist to be located for the meetings below."
+  },
+  {
+   "id": "src-48f3706e1d6e8b31",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/aec-20191018-minutes-aug-21-2019.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 155583,
+   "checksum_sha256": "c8bd35acbe981f5992659782dc507da45af13d44430c88d9ae4595f28e9ba117",
+   "title": "Albuquerque Energy Council Meeting Minutes, August 21, 2019",
+   "description": "The Albuquerque Energy Council's minutes record who attended, what the Department of Municipal Development's facilities and energy staff reported on City lighting, buildings and energy projects, and what the council decided at its August 21, 2019 meeting.",
+   "description_word_count": 37,
+   "date": "2019-08-21",
+   "pages": 2,
+   "evidence": "Born-digital PDF with a full text layer, headed \"Albuquerque Energy Council\" over Minutes, Department of Municipal Development, 1801 4th Street Bldg. B.",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/public-works/city-facilities.md",
+     "reason": "Its business is City building lighting, energy retrofits and facility projects, which is what that page collects."
+    }
+   ],
+   "why_retained": "The minutes are the record of a City advisory body whose work is otherwise undocumented anywhere in the archive. Recorded exhaustive official-source review, 2026-09-12: the Albuquerque Energy Council has no presence on the City's website. Three candidate page URLs return HTTP 404 (/municipaldevelopment/albuquerque-energy-council, /energy-council, /municipaldevelopment/boards-commissions/albuquerque-energy-council), and the City's own site search for the exact phrase \"Albuquerque Energy Council\" returns \"0 items matching your search terms\". The inventory holds no Energy Council record outside this directory. The council appears defunct and these files are the only surviving official trace of it, so no approved minutes exist to be located for the meetings below.",
+   "note": "Filed under a 18 October 2019 date, which is when the council adopted them."
+  },
+  {
+   "id": "src-a61f376f3c74afe6",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/aec-minutes-2020-08-19.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 224654,
+   "checksum_sha256": "505bbfba597364b5cdfc81dea31875d0722680c8321066310c83a27a93483ff8",
+   "title": "Albuquerque Energy Council Meeting Minutes, August 19, 2020",
+   "description": "The Albuquerque Energy Council's minutes record who attended, what the Department of Municipal Development's facilities and energy staff reported on City lighting, buildings and energy projects, and what the council decided at its August 19, 2020 meeting.",
+   "description_word_count": 37,
+   "date": "2020-08-19",
+   "pages": 2,
+   "evidence": "Born-digital PDF with a full text layer, headed \"Albuquerque Energy Council\" over Meeting Minutes, Department of Municipal Development, 1801 4th Street Bldg. B.",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/public-works/city-facilities.md",
+     "reason": "Its business is City building lighting, energy retrofits and facility projects, which is what that page collects."
+    }
+   ],
+   "why_retained": "The minutes are the record of a City advisory body whose work is otherwise undocumented anywhere in the archive. Recorded exhaustive official-source review, 2026-09-12: the Albuquerque Energy Council has no presence on the City's website. Three candidate page URLs return HTTP 404 (/municipaldevelopment/albuquerque-energy-council, /energy-council, /municipaldevelopment/boards-commissions/albuquerque-energy-council), and the City's own site search for the exact phrase \"Albuquerque Energy Council\" returns \"0 items matching your search terms\". The inventory holds no Energy Council record outside this directory. The council appears defunct and these files are the only surviving official trace of it, so no approved minutes exist to be located for the meetings below."
+  },
+  {
+   "id": "src-7928766e796148c3",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/aec-september-meeting-minutes.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 121238,
+   "checksum_sha256": "239cf8698ebcdfea76a16fd4f87acf7e52ad411667ee2adfc05dc88a7659cb68",
+   "title": "Albuquerque Energy Council Meeting Minutes, September 16, 2020",
+   "description": "The Albuquerque Energy Council's minutes record who attended, what the Department of Municipal Development's facilities and energy staff reported on City lighting, buildings and energy projects, and what the council decided at its September 16, 2020 meeting.",
+   "description_word_count": 37,
+   "date": "2020-09-16",
+   "pages": 2,
+   "evidence": "Born-digital PDF with a full text layer, headed \"Albuquerque Energy Council\" over Meeting Minutes, Department of Municipal Development, 1801 4th Street Bldg. B.",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/public-works/city-facilities.md",
+     "reason": "Its business is City building lighting, energy retrofits and facility projects, which is what that page collects."
+    }
+   ],
+   "why_retained": "The minutes are the record of a City advisory body whose work is otherwise undocumented anywhere in the archive. Recorded exhaustive official-source review, 2026-09-12: the Albuquerque Energy Council has no presence on the City's website. Three candidate page URLs return HTTP 404 (/municipaldevelopment/albuquerque-energy-council, /energy-council, /municipaldevelopment/boards-commissions/albuquerque-energy-council), and the City's own site search for the exact phrase \"Albuquerque Energy Council\" returns \"0 items matching your search terms\". The inventory holds no Energy Council record outside this directory. The council appears defunct and these files are the only surviving official trace of it, so no approved minutes exist to be located for the meetings below."
+  },
+  {
+   "id": "src-dfbc6cbb5e58f506",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/september-15th-minutes-002.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 660281,
+   "checksum_sha256": "e0b23954653a8e0ff25e948ac0c6739e5cd6120c26ed19e1f539de4dbbc347dc",
+   "title": "Albuquerque Energy Council Meeting Minutes, September 15, 2021",
+   "description": "The Albuquerque Energy Council's minutes record who attended, what the Department of Municipal Development's facilities and energy staff reported on City lighting, buildings and energy projects, and what the council decided at its September 15, 2021 meeting.",
+   "description_word_count": 37,
+   "date": "2021-09-15",
+   "pages": 2,
+   "evidence": "Born-digital PDF with a full text layer, headed \"Albuquerque Energy Council\" over Meeting Minutes, Department of Municipal Development, 1801 4th Street Bldg. B.",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/public-works/city-facilities.md",
+     "reason": "Its business is City building lighting, energy retrofits and facility projects, which is what that page collects."
+    }
+   ],
+   "why_retained": "The minutes are the record of a City advisory body whose work is otherwise undocumented anywhere in the archive. Recorded exhaustive official-source review, 2026-09-12: the Albuquerque Energy Council has no presence on the City's website. Three candidate page URLs return HTTP 404 (/municipaldevelopment/albuquerque-energy-council, /energy-council, /municipaldevelopment/boards-commissions/albuquerque-energy-council), and the City's own site search for the exact phrase \"Albuquerque Energy Council\" returns \"0 items matching your search terms\". The inventory holds no Energy Council record outside this directory. The council appears defunct and these files are the only surviving official trace of it, so no approved minutes exist to be located for the meetings below."
+  },
+  {
+   "id": "src-5a55fed4c4811d02",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/albuquerque-energy-committee-meeting-minutes-dec-17-2014.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 75422,
+   "checksum_sha256": "00987b5a2ec5e3936efbac827bd9f88b98d0d606a6fa1afd9385d69719807951",
+   "title": "Albuquerque Energy Council Agenda and Meeting Minutes, January 21, 2015",
+   "description": "A two-page Albuquerque Energy Council packet carrying the agenda and the minutes for one meeting, recording attendance, a parking structure lighting recommendation, a waste collection centre project update, the department website build and the City's three per cent energy set-aside.",
+   "description_word_count": 40,
+   "date": "2015-01-21",
+   "pages": 2,
+   "evidence": "Image-only PDF with two bytes of extractable text; both pages were rendered and read. Page 1 is the agenda for Wednesday, January 21, 2015, 8:00 to 10:00 am, chaired by Wes Wilson. Page 2 is headed \"Albuquerque Energy Council / Meeting Minutes / Department of Municipal Development/FEMD / Facilities Conference Rm., Wednesday, January 21, 2015\", listing members in attendance, recording the 5th and Copper parking structure presentation (323 total lighting fixtures counted), the 6301 Eagle Rock Waste Collecting Center update, the cabq.gov website build with historical data back to 2008, the COA 3% for Energy Active Projects update, announcements, and adjournment on a Wilson motion seconded by Birdsall.",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/public-works/city-facilities.md",
+     "reason": "Its substance is City facility lighting and building energy work."
+    }
+   ],
+   "filename_is_wrong_twice": "The City files it as albuquerque-energy-committee-meeting-minutes-dec-17-2014.pdf. The body is the Energy *Council*, not Committee, and the meeting is 21 January 2015, not 17 December 2014. Neither error is visible without rendering the file, and the inventory title repeats the filename. Title it from the document.",
+   "why_retained": "It is both the earliest Energy Council record in the directory and the only one carrying an agenda and its minutes together. Recorded exhaustive official-source review, 2026-09-12: the Albuquerque Energy Council has no presence on the City's website. Three candidate page URLs return HTTP 404 (/municipaldevelopment/albuquerque-energy-council, /energy-council, /municipaldevelopment/boards-commissions/albuquerque-energy-council), and the City's own site search for the exact phrase \"Albuquerque Energy Council\" returns \"0 items matching your search terms\". The inventory holds no Energy Council record outside this directory. The council appears defunct and these files are the only surviving official trace of it, so no approved minutes exist to be located for the meetings below."
+  },
+  {
+   "id": "src-95460bead0e780ee",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/2023-07-10-meeting-minutes-draft-compiled.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 2729584,
+   "checksum_sha256": "e47e4aef1b48d47b6b80bfe4c4cface0d5d056b81440315450d93dca1764fd51",
+   "title": "Greater Albuquerque Active Transportation Committee Meeting Minutes, July 10, 2023 (meeting packet)",
+   "description": "The committee's minutes for its July 2023 meeting, bound with the agenda and the Open Meetings Act reference material the City distributes to members, recording the business transacted and the approval of the previous month's minutes.",
+   "description_word_count": 36,
+   "date": "2023-07-10",
+   "pages": 78,
+   "evidence": "Born-digital PDF with a full text layer, 78 pages. Pages 1 and 2 are the GAATC agenda for July 10, 2023, 4:00 to 6:00 pm, held virtually by Zoom, with item 2 \"Approval of July 10, 2023 Meeting Agenda\" and item 3 \"Approval of June 12, 2023 Meeting Minutes\". Pages 3 onward are headed \"Greater Albuquerque Active Transportation Committee (GAATC) Meeting Minutes Monday, July 10, 2023\". The remainder of the packet is New Mexico Open Meetings Act reference text.",
+   "proposed_canonical_page": "content/transportation/bicycling/_index.md",
+   "cross_listings": [],
+   "why_retained": "It predates the archive's GAATC minutes series. The 28 validated GAATC records run from January 8, 2024 to August 10, 2026; this is July 2023, six months before the earliest of them, and fills the front of that series.",
+   "note_on_that_series": "None of those 25 records carries an r2_url — they are validated against the live OnBase source only. See the_gaatc_series_is_not_site_ready.",
+   "caution": "The filename says \"meeting minutes draft compiled\" and the file is a packet, not a clean minutes document. Describe it as the meeting packet containing the minutes, and note that the bulk of its 78 pages is statutory reference material rather than committee business.",
+   "tested_not_assumed": "Its first page is an agenda, so the page structure was mapped before classifying rather than reading the filename or the first sheet."
+  },
+  {
+   "id": "src-0a03811e298d7753",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/20190513_aec-agenda-may-15-2019.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 35734,
+   "checksum_sha256": "ffbcd9669086c94e770a25dc51b204f3b61e8ba61a69a2cb14d11644b7c620a8",
+   "title": "Albuquerque Energy Council Agenda, May 15, 2019 (approved minutes not located)",
+   "description": "The Albuquerque Energy Council's agenda for its May 15, 2019 meeting lists the business the council set down for that sitting, including the reports and project updates its members were to receive from City staff.",
+   "description_word_count": 35,
+   "date": "2019-05-15",
+   "pages": 1,
+   "evidence": "Born-digital PDF with a full text layer, one page, headed \"Albuquerque Energy Council\" and \"AGENDA\" over the Department of Municipal Development address and the meeting date and time.",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/public-works/city-facilities.md",
+     "reason": "Its items are City facility and energy business."
+    }
+   ],
+   "preserved_under_the_missing_minutes_policy": true,
+   "label_required": "Agenda (approved minutes not located). It must never be presented as minutes.",
+   "review": "Recorded exhaustive official-source review, 2026-09-12: the Albuquerque Energy Council has no presence on the City's website. Three candidate page URLs return HTTP 404 (/municipaldevelopment/albuquerque-energy-council, /energy-council, /municipaldevelopment/boards-commissions/albuquerque-energy-council), and the City's own site search for the exact phrase \"Albuquerque Energy Council\" returns \"0 items matching your search terms\". The inventory holds no Energy Council record outside this directory. The council appears defunct and these files are the only surviving official trace of it, so no approved minutes exist to be located for the meetings below.",
+   "not_cancelled": "Checked: the file contains no cancellation, postponement, rescheduling or no-quorum language, so the policy's exclusion for cancelled and no-quorum meetings does not apply."
+  },
+  {
+   "id": "src-49351428fdea2985",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/aec-20190708-agenda-july-17-2019.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 576113,
+   "checksum_sha256": "c397db2d15eba45f6865bc6a177bfd4dc238b32712d1432d41f40c64051fd8ca",
+   "title": "Albuquerque Energy Council Agenda, July 17, 2019 (approved minutes not located)",
+   "description": "The Albuquerque Energy Council's agenda for its July 17, 2019 meeting lists the business the council set down for that sitting, including the reports and project updates its members were to receive from City staff.",
+   "description_word_count": 35,
+   "date": "2019-07-17",
+   "pages": 1,
+   "evidence": "Born-digital PDF with a full text layer, one page, headed \"Albuquerque Energy Council\" and \"AGENDA\" over the Department of Municipal Development address and the meeting date and time.",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/public-works/city-facilities.md",
+     "reason": "Its items are City facility and energy business."
+    }
+   ],
+   "preserved_under_the_missing_minutes_policy": true,
+   "label_required": "Agenda (approved minutes not located). It must never be presented as minutes.",
+   "review": "Recorded exhaustive official-source review, 2026-09-12: the Albuquerque Energy Council has no presence on the City's website. Three candidate page URLs return HTTP 404 (/municipaldevelopment/albuquerque-energy-council, /energy-council, /municipaldevelopment/boards-commissions/albuquerque-energy-council), and the City's own site search for the exact phrase \"Albuquerque Energy Council\" returns \"0 items matching your search terms\". The inventory holds no Energy Council record outside this directory. The council appears defunct and these files are the only surviving official trace of it, so no approved minutes exist to be located for the meetings below.",
+   "not_cancelled": "Checked: the file contains no cancellation, postponement, rescheduling or no-quorum language, so the policy's exclusion for cancelled and no-quorum meetings does not apply."
+  },
+  {
+   "id": "src-42b5f091cc46568d",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/aec20191009-agenda-oct-16-2019.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 128617,
+   "checksum_sha256": "bfd42280313f2649bf18dffb52cc0f783070dbf0a9cf1949ee098d37470e2e9f",
+   "title": "Albuquerque Energy Council Agenda, October 16, 2019 (approved minutes not located)",
+   "description": "The Albuquerque Energy Council's agenda for its October 16, 2019 meeting lists the business the council set down for that sitting, including the reports and project updates its members were to receive from City staff.",
+   "description_word_count": 35,
+   "date": "2019-10-16",
+   "pages": 1,
+   "evidence": "Born-digital PDF with a full text layer, one page, headed \"Albuquerque Energy Council\" and \"AGENDA\" over the Department of Municipal Development address and the meeting date and time.",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/public-works/city-facilities.md",
+     "reason": "Its items are City facility and energy business."
+    }
+   ],
+   "preserved_under_the_missing_minutes_policy": true,
+   "label_required": "Agenda (approved minutes not located). It must never be presented as minutes.",
+   "review": "Recorded exhaustive official-source review, 2026-09-12: the Albuquerque Energy Council has no presence on the City's website. Three candidate page URLs return HTTP 404 (/municipaldevelopment/albuquerque-energy-council, /energy-council, /municipaldevelopment/boards-commissions/albuquerque-energy-council), and the City's own site search for the exact phrase \"Albuquerque Energy Council\" returns \"0 items matching your search terms\". The inventory holds no Energy Council record outside this directory. The council appears defunct and these files are the only surviving official trace of it, so no approved minutes exist to be located for the meetings below.",
+   "not_cancelled": "Checked: the file contains no cancellation, postponement, rescheduling or no-quorum language, so the policy's exclusion for cancelled and no-quorum meetings does not apply."
+  },
+  {
+   "id": "src-adf4ec503c230405",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/aec-agenda-2020-03-18.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 31007,
+   "checksum_sha256": "675d4297a387a7d2095d1ecf6c23df04615a376cd9d1bbf559fa2206f635aa76",
+   "title": "Albuquerque Energy Council Agenda, March 18, 2020 (approved minutes not located)",
+   "description": "The Albuquerque Energy Council's agenda for its March 18, 2020 meeting lists the business the council set down for that sitting, including the reports and project updates its members were to receive from City staff.",
+   "description_word_count": 35,
+   "date": "2020-03-18",
+   "pages": 1,
+   "evidence": "Born-digital PDF with a full text layer, one page, headed \"Albuquerque Energy Council\" and \"AGENDA\" over the Department of Municipal Development address and the meeting date and time.",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/public-works/city-facilities.md",
+     "reason": "Its items are City facility and energy business."
+    }
+   ],
+   "preserved_under_the_missing_minutes_policy": true,
+   "label_required": "Agenda (approved minutes not located). It must never be presented as minutes.",
+   "review": "Recorded exhaustive official-source review, 2026-09-12: the Albuquerque Energy Council has no presence on the City's website. Three candidate page URLs return HTTP 404 (/municipaldevelopment/albuquerque-energy-council, /energy-council, /municipaldevelopment/boards-commissions/albuquerque-energy-council), and the City's own site search for the exact phrase \"Albuquerque Energy Council\" returns \"0 items matching your search terms\". The inventory holds no Energy Council record outside this directory. The council appears defunct and these files are the only surviving official trace of it, so no approved minutes exist to be located for the meetings below.",
+   "not_cancelled": "Checked: the file contains no cancellation, postponement, rescheduling or no-quorum language, so the policy's exclusion for cancelled and no-quorum meetings does not apply."
+  },
+  {
+   "id": "src-d63a640b27136aab",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/aec-agenda-2020-04-15.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 183263,
+   "checksum_sha256": "1473e267fe0a1ff6728571d2d34c642ef11d0721a0dbc41b66b5f33d89949b74",
+   "title": "Albuquerque Energy Council Agenda, April 15, 2020 (approved minutes not located)",
+   "description": "The Albuquerque Energy Council's agenda for its April 15, 2020 meeting lists the business the council set down for that sitting, including the reports and project updates its members were to receive from City staff.",
+   "description_word_count": 35,
+   "date": "2020-04-15",
+   "pages": 1,
+   "evidence": "Born-digital PDF with a full text layer, one page, headed \"Albuquerque Energy Council\" and \"AGENDA\" over the Department of Municipal Development address and the meeting date and time.",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/public-works/city-facilities.md",
+     "reason": "Its items are City facility and energy business."
+    }
+   ],
+   "preserved_under_the_missing_minutes_policy": true,
+   "label_required": "Agenda (approved minutes not located). It must never be presented as minutes.",
+   "review": "Recorded exhaustive official-source review, 2026-09-12: the Albuquerque Energy Council has no presence on the City's website. Three candidate page URLs return HTTP 404 (/municipaldevelopment/albuquerque-energy-council, /energy-council, /municipaldevelopment/boards-commissions/albuquerque-energy-council), and the City's own site search for the exact phrase \"Albuquerque Energy Council\" returns \"0 items matching your search terms\". The inventory holds no Energy Council record outside this directory. The council appears defunct and these files are the only surviving official trace of it, so no approved minutes exist to be located for the meetings below.",
+   "not_cancelled": "Checked: the file contains no cancellation, postponement, rescheduling or no-quorum language, so the policy's exclusion for cancelled and no-quorum meetings does not apply."
+  },
+  {
+   "id": "src-a034863d2b05dd79",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/aec-agenda-2020-05-20.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 30671,
+   "checksum_sha256": "f405c978b2d2a84b017298362ad6aa5a9777b86859a07799266b30c42f92aa93",
+   "title": "Albuquerque Energy Council Agenda, May 20, 2020 (approved minutes not located)",
+   "description": "The Albuquerque Energy Council's agenda for its May 20, 2020 meeting lists the business the council set down for that sitting, including the reports and project updates its members were to receive from City staff.",
+   "description_word_count": 35,
+   "date": "2020-05-20",
+   "pages": 1,
+   "evidence": "Born-digital PDF with a full text layer, one page, headed \"Albuquerque Energy Council\" and \"AGENDA\" over the Department of Municipal Development address and the meeting date and time.",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/public-works/city-facilities.md",
+     "reason": "Its items are City facility and energy business."
+    }
+   ],
+   "preserved_under_the_missing_minutes_policy": true,
+   "label_required": "Agenda (approved minutes not located). It must never be presented as minutes.",
+   "review": "Recorded exhaustive official-source review, 2026-09-12: the Albuquerque Energy Council has no presence on the City's website. Three candidate page URLs return HTTP 404 (/municipaldevelopment/albuquerque-energy-council, /energy-council, /municipaldevelopment/boards-commissions/albuquerque-energy-council), and the City's own site search for the exact phrase \"Albuquerque Energy Council\" returns \"0 items matching your search terms\". The inventory holds no Energy Council record outside this directory. The council appears defunct and these files are the only surviving official trace of it, so no approved minutes exist to be located for the meetings below.",
+   "not_cancelled": "Checked: the file contains no cancellation, postponement, rescheduling or no-quorum language, so the policy's exclusion for cancelled and no-quorum meetings does not apply."
+  },
+  {
+   "id": "src-4a350d8b561eef61",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/aec-meeting-agenda-2020-07-16.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 30729,
+   "checksum_sha256": "33cba65939155bea51179aac440ce4554450f78b22365f50012cffe57125a378",
+   "title": "Albuquerque Energy Council Agenda, July 16, 2020 (approved minutes not located)",
+   "description": "The Albuquerque Energy Council's agenda for its July 16, 2020 meeting lists the business the council set down for that sitting, including the reports and project updates its members were to receive from City staff.",
+   "description_word_count": 35,
+   "date": "2020-07-16",
+   "pages": 1,
+   "evidence": "Born-digital PDF with a full text layer, one page, headed \"Albuquerque Energy Council\" and \"AGENDA\" over the Department of Municipal Development address and the meeting date and time.",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/public-works/city-facilities.md",
+     "reason": "Its items are City facility and energy business."
+    }
+   ],
+   "preserved_under_the_missing_minutes_policy": true,
+   "label_required": "Agenda (approved minutes not located). It must never be presented as minutes.",
+   "review": "Recorded exhaustive official-source review, 2026-09-12: the Albuquerque Energy Council has no presence on the City's website. Three candidate page URLs return HTTP 404 (/municipaldevelopment/albuquerque-energy-council, /energy-council, /municipaldevelopment/boards-commissions/albuquerque-energy-council), and the City's own site search for the exact phrase \"Albuquerque Energy Council\" returns \"0 items matching your search terms\". The inventory holds no Energy Council record outside this directory. The council appears defunct and these files are the only surviving official trace of it, so no approved minutes exist to be located for the meetings below.",
+   "not_cancelled": "Checked: the file contains no cancellation, postponement, rescheduling or no-quorum language, so the policy's exclusion for cancelled and no-quorum meetings does not apply."
+  },
+  {
+   "id": "src-1c5b1252fde7e9b1",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/aec-agenda-oct-21-2020.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 30497,
+   "checksum_sha256": "d05718344bfb3e4a1e5b4a8c285554592f13eb521673673e1c0c56775a8cb329",
+   "title": "Albuquerque Energy Council Agenda, October 21, 2020 (approved minutes not located)",
+   "description": "The Albuquerque Energy Council's agenda for its October 21, 2020 meeting lists the business the council set down for that sitting, including the reports and project updates its members were to receive from City staff.",
+   "description_word_count": 35,
+   "date": "2020-10-21",
+   "pages": 1,
+   "evidence": "Born-digital PDF with a full text layer, one page, headed \"Albuquerque Energy Council\" and \"AGENDA\" over the Department of Municipal Development address and the meeting date and time.",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/public-works/city-facilities.md",
+     "reason": "Its items are City facility and energy business."
+    }
+   ],
+   "preserved_under_the_missing_minutes_policy": true,
+   "label_required": "Agenda (approved minutes not located). It must never be presented as minutes.",
+   "review": "Recorded exhaustive official-source review, 2026-09-12: the Albuquerque Energy Council has no presence on the City's website. Three candidate page URLs return HTTP 404 (/municipaldevelopment/albuquerque-energy-council, /energy-council, /municipaldevelopment/boards-commissions/albuquerque-energy-council), and the City's own site search for the exact phrase \"Albuquerque Energy Council\" returns \"0 items matching your search terms\". The inventory holds no Energy Council record outside this directory. The council appears defunct and these files are the only surviving official trace of it, so no approved minutes exist to be located for the meetings below.",
+   "not_cancelled": "Checked: the file contains no cancellation, postponement, rescheduling or no-quorum language, so the policy's exclusion for cancelled and no-quorum meetings does not apply."
+  },
+  {
+   "id": "src-aaadec876bbf554f",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/aec-agenda-october-20th-2021.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 32180,
+   "checksum_sha256": "3ce22c6fd30af39fd7fd75b0cc36a8da3210a50a241122e22d7852bf2e77b4b8",
+   "title": "Albuquerque Energy Council Agenda, October 20, 2021 (approved minutes not located)",
+   "description": "The Albuquerque Energy Council's agenda for its October 20, 2021 meeting lists the business the council set down for that sitting, including the reports and project updates its members were to receive from City staff.",
+   "description_word_count": 35,
+   "date": "2021-10-20",
+   "pages": 1,
+   "evidence": "Born-digital PDF with a full text layer, one page, headed \"Albuquerque Energy Council\" and \"AGENDA\" over the Department of Municipal Development address and the meeting date and time.",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/public-works/city-facilities.md",
+     "reason": "Its items are City facility and energy business."
+    }
+   ],
+   "preserved_under_the_missing_minutes_policy": true,
+   "label_required": "Agenda (approved minutes not located). It must never be presented as minutes.",
+   "review": "Recorded exhaustive official-source review, 2026-09-12: the Albuquerque Energy Council has no presence on the City's website. Three candidate page URLs return HTTP 404 (/municipaldevelopment/albuquerque-energy-council, /energy-council, /municipaldevelopment/boards-commissions/albuquerque-energy-council), and the City's own site search for the exact phrase \"Albuquerque Energy Council\" returns \"0 items matching your search terms\". The inventory holds no Energy Council record outside this directory. The council appears defunct and these files are the only surviving official trace of it, so no approved minutes exist to be located for the meetings below.",
+   "not_cancelled": "Checked: the file contains no cancellation, postponement, rescheduling or no-quorum language, so the policy's exclusion for cancelled and no-quorum meetings does not apply."
+  },
+  {
+   "id": "src-3f3273f2dcaafbf9",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/aec-agenda-may18th-2022.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 185931,
+   "checksum_sha256": "3ecf01386b0a44b1b23b7e275d849990be72bb690d6b855cabf9cdcad5c86745",
+   "title": "Albuquerque Energy Council Agenda, May 18, 2022 (approved minutes not located)",
+   "description": "The Albuquerque Energy Council's agenda for its May 18, 2022 meeting lists the business the council set down for that sitting, including the reports and project updates its members were to receive from City staff.",
+   "description_word_count": 35,
+   "date": "2022-05-18",
+   "pages": 1,
+   "evidence": "Born-digital PDF with a full text layer, one page, headed \"Albuquerque Energy Council\" and \"AGENDA\" over the Department of Municipal Development address and the meeting date and time.",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/public-works/city-facilities.md",
+     "reason": "Its items are City facility and energy business."
+    }
+   ],
+   "preserved_under_the_missing_minutes_policy": true,
+   "label_required": "Agenda (approved minutes not located). It must never be presented as minutes.",
+   "review": "Recorded exhaustive official-source review, 2026-09-12: the Albuquerque Energy Council has no presence on the City's website. Three candidate page URLs return HTTP 404 (/municipaldevelopment/albuquerque-energy-council, /energy-council, /municipaldevelopment/boards-commissions/albuquerque-energy-council), and the City's own site search for the exact phrase \"Albuquerque Energy Council\" returns \"0 items matching your search terms\". The inventory holds no Energy Council record outside this directory. The council appears defunct and these files are the only surviving official trace of it, so no approved minutes exist to be located for the meetings below.",
+   "not_cancelled": "Checked: the file contains no cancellation, postponement, rescheduling or no-quorum language, so the policy's exclusion for cancelled and no-quorum meetings does not apply."
+  }
+ ],
+ "duplicate": [
+  {
+   "id": "src-d2c20fc383f46c12",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/2026-08-10-gaatc-agenda.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "raw_file_url": "https://www.cabq.gov/municipaldevelopment/documents/2026-08-10-gaatc-agenda.pdf",
+   "size_bytes": 334892,
+   "checksum_sha256": "f5d195de971e99e234028e5680f1cf8e1cfc2566f3e23804925c029c7037f59f",
+   "title_for_reference": "Greater Albuquerque Active Transportation Committee Agenda, August 10, 2026",
+   "pages": 2,
+   "canonical_id": "src-43b1f7a8cd1931fc",
+   "canonical_url": "https://www.cabq.gov/municipaldevelopment/documents/2026-08-10-gaatc-agenda.pdf",
+   "canonical_state": "recommended excluded in this batch, because the minutes for that meeting are already archived",
+   "basis": "Two inventory records for one file: the same URL once the Plone /view suffix is normalised.",
+   "measurement": "Byte-identical: 334,892 bytes and SHA-256 f5d195de971e99e234028e5680f1cf8e1cfc2566f3e23804925c029c7037f59f on both records.",
+   "hash_found_it": true,
+   "audit_class": "The actionable_now class from inventory-url-collision-audit-2026-09-11.json, but a pending-pending pair rather than a pending record with a terminal twin — the 13-group subset that artifact separated out as still needing triage. This one is now triaged."
+  }
+ ],
+ "excluded": [
+  {
+   "id": "src-87d24ac8826a2094",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/20190412_aec-agenda-april-17-2019.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 117318,
+   "checksum_sha256": "8aa92c0eab2be3b94260ea4f210ed4b6dd596d10c35071a5ebc844fe0bec313d",
+   "title_for_reference": "Albuquerque Energy Council Agenda, April 17, 2019",
+   "pages": 1,
+   "exclusion_reason": "Approved minutes for this meeting are held and recommended for addition in this same batch as src-d43081e8b7973ea8. Minutes are the record of the meeting; the agenda is the notice of it. Where minutes exist for a meeting, this lane retains the minutes and excludes the agenda, which is the treatment the archive already applies to this series — the validated GAATC minutes records carry descriptions stating they are \"retained in the minutes-only history\". The missing-minutes policy permits preserving an agenda only where approved minutes cannot be located, which is not the case here.",
+   "category": "meeting agenda superseded by its minutes",
+   "minutes_record": "src-d43081e8b7973ea8"
+  },
+  {
+   "id": "src-70f9423293fd0bc4",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/aec-20190613-agenda-june-19-2019-final.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 537172,
+   "checksum_sha256": "c05f43e17d87c6bcded94148b0991e8ccf8fd1d2a89750e2f50495d6a3778063",
+   "title_for_reference": "Albuquerque Energy Council Agenda, June 19, 2019",
+   "pages": 1,
+   "exclusion_reason": "Approved minutes for this meeting are held and recommended for addition in this same batch as src-ca966518d02f2696. Minutes are the record of the meeting; the agenda is the notice of it. Where minutes exist for a meeting, this lane retains the minutes and excludes the agenda, which is the treatment the archive already applies to this series — the validated GAATC minutes records carry descriptions stating they are \"retained in the minutes-only history\". The missing-minutes policy permits preserving an agenda only where approved minutes cannot be located, which is not the case here.",
+   "category": "meeting agenda superseded by its minutes",
+   "minutes_record": "src-ca966518d02f2696"
+  },
+  {
+   "id": "src-c31ac8274a898d24",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/aec-20190814-agend-aug-21-2019.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 30174,
+   "checksum_sha256": "73a85687b219c156b07272bd121413cf1d8a75a13b4c52a872f304ef815578e1",
+   "title_for_reference": "Albuquerque Energy Council Agenda, August 21, 2019",
+   "pages": 1,
+   "exclusion_reason": "Approved minutes for this meeting are held and recommended for addition in this same batch as src-48f3706e1d6e8b31. Minutes are the record of the meeting; the agenda is the notice of it. Where minutes exist for a meeting, this lane retains the minutes and excludes the agenda, which is the treatment the archive already applies to this series — the validated GAATC minutes records carry descriptions stating they are \"retained in the minutes-only history\". The missing-minutes policy permits preserving an agenda only where approved minutes cannot be located, which is not the case here.",
+   "category": "meeting agenda superseded by its minutes",
+   "minutes_record": "src-48f3706e1d6e8b31"
+  },
+  {
+   "id": "src-364c6cd9aa7c9d43",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/aec-agenda-2020-08-19.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 30417,
+   "checksum_sha256": "a0868f30706b628cfdfd898b38b18217050ac80c2c922c946933b7294110df57",
+   "title_for_reference": "Albuquerque Energy Council Agenda, August 19, 2020",
+   "pages": 1,
+   "exclusion_reason": "Approved minutes for this meeting are held and recommended for addition in this same batch as src-a61f376f3c74afe6. Minutes are the record of the meeting; the agenda is the notice of it. Where minutes exist for a meeting, this lane retains the minutes and excludes the agenda, which is the treatment the archive already applies to this series — the validated GAATC minutes records carry descriptions stating they are \"retained in the minutes-only history\". The missing-minutes policy permits preserving an agenda only where approved minutes cannot be located, which is not the case here.",
+   "category": "meeting agenda superseded by its minutes",
+   "minutes_record": "src-a61f376f3c74afe6"
+  },
+  {
+   "id": "src-94e4fdd9c433773d",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/aec-agenda-2020-09-16.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 30827,
+   "checksum_sha256": "b753400cb3c0b1de99414b3621c0f0eed8816757e2218cd25ae60f0d07b065d9",
+   "title_for_reference": "Albuquerque Energy Council Agenda, September 16, 2020",
+   "pages": 1,
+   "exclusion_reason": "Approved minutes for this meeting are held and recommended for addition in this same batch as src-7928766e796148c3. Minutes are the record of the meeting; the agenda is the notice of it. Where minutes exist for a meeting, this lane retains the minutes and excludes the agenda, which is the treatment the archive already applies to this series — the validated GAATC minutes records carry descriptions stating they are \"retained in the minutes-only history\". The missing-minutes policy permits preserving an agenda only where approved minutes cannot be located, which is not the case here.",
+   "category": "meeting agenda superseded by its minutes",
+   "minutes_record": "src-7928766e796148c3"
+  },
+  {
+   "id": "src-43b1f7a8cd1931fc",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/2026-08-10-gaatc-agenda.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 334892,
+   "checksum_sha256": "f5d195de971e99e234028e5680f1cf8e1cfc2566f3e23804925c029c7037f59f",
+   "title_for_reference": "Greater Albuquerque Active Transportation Committee Agenda, August 10, 2026",
+   "pages": 2,
+   "exclusion_reason": "The minutes for this exact meeting are already held and published as src-99529b2a4c8db5aa, \"Greater Albuquerque Active Transportation Committee Meeting Minutes — August 10, 2026\", 1,668,895 bytes, validated and live on content/transportation/bicycling/_index.md. Minutes are the record of the meeting; the agenda is the notice of it. Where minutes exist for a meeting, this lane retains the minutes and excludes the agenda, which is the treatment the archive already applies to this series — the validated GAATC minutes records carry descriptions stating they are \"retained in the minutes-only history\".",
+   "category": "meeting agenda superseded by its archived minutes",
+   "minutes_record": "src-99529b2a4c8db5aa",
+   "canonical_of_group": "The byte-identical second record for this file is recommended duplicate of this one."
+  },
+  {
+   "id": "src-3580d6515ebd9ce4",
+   "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/gaatc-gartc-task-force-agenda.pdf",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-12 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "size_bytes": 322969,
+   "checksum_sha256": "9caeb549e75c50931b0c714ac93af005c2dd0130518067dc8e26298ee3588cbb",
+   "title_for_reference": "Greater Albuquerque Active Transportation Committee and Greater Albuquerque Recreational Trails Committee Task Force, Meeting Agenda, August 18, 2026",
+   "pages": 1,
+   "exclusion_reason": "A joint GAATC and GARTC task force agenda from three weeks before this review. No minutes for it are held, but that is not the situation the missing-minutes policy addresses: the policy exists to preserve a record that is permanently missing, and minutes for a meeting this recent have simply not been approved and published yet. The archive's GAATC minutes series is current through August 10, 2026 and is maintained, so the record for this meeting is expected rather than lost.",
+   "category": "meeting agenda, minutes not yet produced",
+   "revisit": "Worth revisiting once the task force's minutes are published. If they never are, this agenda becomes a candidate under the missing-minutes policy on a future recorded review.",
+   "content": "Lists the Zoom joining details and the members of both committees — Nancy Tankersley, Dustin Berg and Mariah Tallent for GARTC; Sebastian Bentley, Alex Applegate and Melinda Montoya for GAATC — under Mayor Timothy M. Keller's letterhead."
+  }
+ ],
+ "archival_note": "All 18 approved records are static PDFs and are inventory-only until an R2 archive object exists for each and its public download, exact size, SHA-256, and authoritative-source provenance are verified. Combined archive footprint if authorized: 5,541,598 bytes, most of it the 78-page GAATC packet. One record, src-5a55fed4c4811d02, is an image-only scan and will not be reachable by full-text search without optical character recognition; its content is carried in the evidence field instead.",
+ "integration_note": "Codex integration lane: apply recommended_status values through scripts/project/Update-Candidate.ps1 only. The one duplicate row carries a canonical_id pointing at a record in this same batch that is itself excluded, which is correct: the two are one file and neither is archived. Ten approved rows carry preserved_under_the_missing_minutes_policy and a required label; that label must reach the published description. Six excluded rows name the minutes record that supersedes them. No row requires human review. Sizes and checksums are first measurements; the inventory held none.",
+ "safeguards": [
+  "no master-inventory.json write",
+  "no checkpoint.json write",
+  "no r2-inventory.json write",
+  "no site content change",
+  "no R2 upload",
+  "no commit, merge, or deploy",
+  "no terminal record modified"
+ ]
+}

@@ -1,0 +1,1097 @@
+{
+ "batch_id": "council-qa-lgcc-news-cluster-research-2026-09-13",
+ "lane": "Claude research lane: the Council's questions-and-answers page, the Local Government Coordinating Commission, and Council news",
+ "generated_at": "2026-09-13T23:23:01.215209+00:00",
+ "date_note": "Dated 2026-09-13.",
+ "cluster": "Three Council directories: what the Administration answers when councillors ask, what a joint City and County commission puts on its agendas, and what the Council puts in its news feed.",
+ "scope": "All 40 uncovered candidates across the three sources. The coverage gate is asserted in the generator.",
+ "brief": "Check existing dispositions first and run the checksum sweep against both the archived inventory records and every row of every saved artifact.",
+ "brief_finding": "Nothing had been decided at any of the three paths before this lane - all 40 were untouched - and the two-set sweep returned no collisions against either set. The work here was reading, not de-duplicating.",
+ "the_sweep": {
+  "archived_records_compared_against": 1020,
+  "artifact_rows_compared_against": 1714,
+  "collisions": 0,
+  "internal_byte_collisions": 0,
+  "note": "The first lane since the sweep was introduced to return nothing from either set. Worth recording that it is cheap and sometimes finds nothing."
+ },
+ "the_missing_minutes_review": {
+  "policy": "An agenda may be preserved only after a recorded exhaustive official-source review finds no approved minutes, and never for a cancelled or no-quorum meeting.",
+  "body": "Local Government Coordinating Commission, a joint City of Albuquerque and Bernalillo County body",
+  "inventory": "Three records match the commission in the inventory and none is a minute.",
+  "city_pages_checked": [
+   "/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission (HTTP 200, 129,963 bytes)",
+   "/council/albuquerque-bernalillo-county-government-commission (HTTP 200, 125,371 bytes)"
+  ],
+  "what_those_pages_carry": "Neither page contains a single link whose address includes the word minutes.",
+  "site_search": "The City's own search for the exact phrase Local Government Coordinating Commission together with minutes returns a no-results page.",
+  "a_limitation_on_the_word_exhaustive": "The commission is a joint City and County body, and the County side could not be checked: www.bernco.gov returned HTTP 403 to this lane's request. The City side is thorough; the County side is unchecked. If minutes exist anywhere, the County's site is where to look.",
+  "cancellation_check": "None of the ten agendas carries cancellation, postponement, rescheduling or no-quorum language; zero matches across all ten.",
+  "conclusion": "The exception applies on the evidence available, with the County limitation recorded. Label each Agenda (approved minutes not located) and never present one as minutes."
+ },
+ "the_hardest_call_in_this_lane": {
+  "what_they_are": "Seven City Code Enforcement Notices and Orders with Appeal, each naming the owner of a specific Albuquerque property and finding its units substandard under the Uniform Housing Code. All six are image-only scans of two bytes of extractable text each and were read by rendering, and the seventh has a usable text layer and was read from it.",
+  "why_they_are_here_at_all": "The Administration supplied them to the City Council in answer to councillor questions about motel enforcement, and the Council published them on its public questions and answers page.",
+  "the_split_that_matters": "Six are addressed to companies - 1213 INC, AA & S INC, HOTEL GP ILIFFE ABQ LLC, RELIANCE ABQ LLC, ROSHYOGI LLC and ROCKHILL CAPITAL PARTNERS LLC. One, for 2700 4th St NW, is addressed to three named natural persons.",
+  "why_this_lane_will_not_decide_it": "The argument for publishing is strong: they are City enforcement actions that the City itself put on a public page. The argument for caution is the one this lane has applied elsewhere on its own judgment, excluding rosters of private individuals' details. When those two collide over named individuals, the scope question belongs to a person, not to this lane.",
+  "how_it_is_arranged_for_deciding": "All seven are one package and one decision. Every row carries the owner named on the notice, whether that owner is a company or a natural person, the date, and the case file number.",
+  "the_documents_about_the_same_campaign_that_are_recommended": "The Comprehensive Motel Enforcement History Report and the Planning Department's response on motel closure operations are recommended for addition without hesitation. They describe the enforcement campaign; they do not name the owner of a particular building."
+ },
+ "what_the_questions_and_answers_page_turns_out_to_be": {
+  "count": 7,
+  "what_it_holds": "The Administration's written answers to councillors, which is an oversight record rather than a publicity one: numbered responses on whether a statutory committee was properly constituted, a list of the FY25 budget's non-recurring items, a breakdown of the National Guard deployment, the code enforcement motel history, boundary map exhibits, and a contract and fee ledger for the North Domingo Baca aquatic centre.",
+  "one_of_them_is_not_the_container_its_title_implies": "The record titled NDB 12 IDOH is an OOXML workbook, not a Word document: leading bytes 504b0304 with xl/ parts. Its shared strings name BRADBURY STAMM CONSTRUCTION INC against a contractor fee line and WSP USA ENVIRONMENT & INFRASTRUCTURE against an engineering fee line.",
+  "and_the_served_filenames_are_useless": "Every file on this page is served under an opaque 32-character identifier - 3a1ae030b21146e7a55cec9a727ae5b7 and the like. The inventory title is the only name there is, which is why each row here carries the inventory_title as well as a title read from the document."
+ },
+ "method": "Read the archive's existing dispositions at all three paths before fetching: there were none. Fetched all 40 candidates and measured byte length, SHA-256 and leading bytes from the fetched bytes. Swept every checksum against the archived inventory records and against every row of every saved artifact. Extracted text with the right reader for each container - including one workbook whose title implied a document - and rendered the nine files with no usable text layer. Performed and recorded an official-source review for the commission's minutes, and recorded what that review could not reach.",
+ "classification_only": true,
+ "shared_state_written": [],
+ "already_archived_check": {
+  "rule_applied": "Test candidates against R2 objects the archive already holds, against the published site, against anything recommended earlier in the same batch, and against every row of every saved artifact.",
+  "cross_inventory_byte_collisions": 0,
+  "collisions_with_earlier_artifacts_in_this_run": 0,
+  "internal_byte_collisions": 0,
+  "archived_records_compared_against": 1020,
+  "artifact_rows_compared_against": 1714,
+  "result": "Nothing here duplicates anything, in the archive or in this run."
+ },
+ "duplicate_and_supersession_checks": {
+  "internal_byte_collisions": 0,
+  "cross_inventory_byte_collisions": 0,
+  "collisions_with_earlier_artifacts": 0,
+  "relationships_found": 0,
+  "note": "No relationships in this lane. Every one of the forty candidates is a distinct object."
+ },
+ "integration_flags": [
+  {
+   "severity": "judgment-needed",
+   "affects": [
+    "src-64bc8e1da1e45187",
+    "src-b44e7af124c01c10",
+    "src-bd2d82443bb2eb9b",
+    "src-be7caa7193b994f3",
+    "src-d1213d0fba1ca8ca",
+    "src-f33de69926b6c41a",
+    "src-f7dfbcaeae424c72"
+   ],
+   "finding": "Seven code enforcement Notices and Orders naming property owners, six companies and one set of three named natural persons, published by the City on a public Council page in answer to councillor questions.",
+   "recommended_action": "Decide the class once and apply it to all seven. Every row carries the owner, whether it is a company or a person, the date and the case number."
+  },
+  {
+   "severity": "missing-minutes-exception-applied",
+   "affects": [
+    "src-44d50a56eea89947",
+    "src-7055dfd30a8efa51",
+    "src-21468eb5acc3d6fe",
+    "src-83634881de7f4825",
+    "src-78d69e16f06a17b7",
+    "src-da4a1570a9a31d35",
+    "src-65a948ba4f3a8e73",
+    "src-50e17b8f38e64769",
+    "src-6283e5e98f8690b9",
+    "src-33c27704152de957"
+   ],
+   "finding": "Ten Local Government Coordinating Commission agendas qualify on the City-side evidence: both official City pages carry no link containing the word minutes, the City's site search returns no results, the inventory holds none, and no agenda shows a cancellation.",
+   "recommended_action": "Approve labelled Agenda (approved minutes not located). Note the recorded limitation: bernco.gov returned HTTP 403, so the County side of this joint body was not checked."
+  },
+  {
+   "severity": "substantive-find",
+   "affects": [
+    "src-070a763aa9701f86",
+    "src-0878bc7d09a7c65b",
+    "src-4ac9f8a1fb953e46",
+    "src-5006deafb03b1f7a",
+    "src-51fb6dc80b316253",
+    "src-9fd0da60e94eb698",
+    "src-a6753953181feb4f"
+   ],
+   "finding": "The Administration's written answers to councillors: whether a statutory committee was lawfully constituted, the FY25 non-recurring items, the National Guard deployment breakdown, the Comprehensive Motel Enforcement History Report of June 2025, boundary exhibits, and a contract and fee ledger for the North Domingo Baca aquatic centre.",
+   "recommended_action": "Approve. This page is an oversight record, not a publicity one."
+  },
+  {
+   "severity": "container-from-the-bytes",
+   "affects": [
+    "src-5006deafb03b1f7a"
+   ],
+   "finding": "The record titled NDB 12 IDOH is a spreadsheet, leading bytes 504b0304 with xl/ parts, not the document its title implies. Its contents are contract and fee lines naming the contractor and the engineering consultant.",
+   "recommended_action": "Record it as a workbook and archive it in its original format."
+  }
+ ],
+ "counts": {
+  "reviewed": 40,
+  "approved_for_addition": 17,
+  "requires_human_review": 7,
+  "excluded": 16,
+  "approved_by_group": {
+   "Local Government Coordinating Commission agendas": 10,
+   "Administration answers to Council questions": 7
+  },
+  "containers": {
+   "PDF": 23,
+   "XLSX": 1,
+   "HTML": 16
+  }
+ },
+ "link_check": {
+  "checked": 40,
+  "http_200": 40,
+  "failed": 0,
+  "method": "Full HTTP GET with a browser user agent, 2026-09-13.",
+  "additional_probes": "Two official City pages, one County page (HTTP 403) and one City site search for the commission's minutes.",
+  "rendered": "9 files with no usable text layer.",
+  "containers_verified": "23 PDFs, 16 HTML pages and 1 OOXML workbook by leading bytes."
+ },
+ "approved_for_addition": [
+  {
+   "id": "src-44d50a56eea89947",
+   "authoritative_url": "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/18fc5211b7d84d188d362011d6333a94",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "April 25, 2024",
+   "size_bytes": 176647,
+   "checksum_sha256": "20e322065ea9a7d6346f40eafd0ba23d2b1ac229cad8a062eea65df25be1acc0",
+   "title": "Local Government Coordinating Commission Commission: Agenda (approved minutes not located), April 25, 2024",
+   "description": "The Local Government Coordinating Commission's agenda for its meeting of April 25, 2024, listing the members and the business set down for that meeting of this joint City and County body.",
+   "evidence": "Headed City of Albuquerque, Government Center, Agenda, over the commission or sub-committee name and the meeting date and place. Published at council/albuquerque-bernalillo-county-government-commission.",
+   "group": "Local Government Coordinating Commission agendas",
+   "missing_minutes_review": {
+    "policy": "An agenda may be preserved only after a recorded exhaustive official-source review finds no approved minutes, and never for a cancelled or no-quorum meeting.",
+    "body": "Local Government Coordinating Commission, a joint City of Albuquerque and Bernalillo County body",
+    "inventory": "Three records match the commission in the inventory and none is a minute.",
+    "city_pages_checked": [
+     "/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission (HTTP 200, 129,963 bytes)",
+     "/council/albuquerque-bernalillo-county-government-commission (HTTP 200, 125,371 bytes)"
+    ],
+    "what_those_pages_carry": "Neither page contains a single link whose address includes the word minutes.",
+    "site_search": "The City's own search for the exact phrase Local Government Coordinating Commission together with minutes returns a no-results page.",
+    "a_limitation_on_the_word_exhaustive": "The commission is a joint City and County body, and the County side could not be checked: www.bernco.gov returned HTTP 403 to this lane's request. The City side is thorough; the County side is unchecked. If minutes exist anywhere, the County's site is where to look.",
+    "cancellation_check": "None of the ten agendas carries cancellation, postponement, rescheduling or no-quorum language; zero matches across all ten.",
+    "conclusion": "The exception applies on the evidence available, with the County limitation recorded. Label each Agenda (approved minutes not located) and never present one as minutes."
+   },
+   "proposed_canonical_page": "content/about/_index.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "A joint City and County governance body."
+    }
+   ],
+   "description_word_count": 31
+  },
+  {
+   "id": "src-7055dfd30a8efa51",
+   "authoritative_url": "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/ecad76b01a2943d19064f045fda36b38",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "June 27, 2024",
+   "size_bytes": 177190,
+   "checksum_sha256": "95492e4b14c265b91bc87e7397f05ba5f37ababc14c8673eb8b6ce277db3d115",
+   "title": "Local Government Coordinating Commission Commission: Agenda (approved minutes not located), June 27, 2024",
+   "description": "The Local Government Coordinating Commission's agenda for its meeting of June 27, 2024, listing the members and the business set down for that meeting of this joint City and County body.",
+   "evidence": "Headed City of Albuquerque, Government Center, Agenda, over the commission or sub-committee name and the meeting date and place. Published at council/albuquerque-bernalillo-county-government-commission.",
+   "group": "Local Government Coordinating Commission agendas",
+   "missing_minutes_review": {
+    "policy": "An agenda may be preserved only after a recorded exhaustive official-source review finds no approved minutes, and never for a cancelled or no-quorum meeting.",
+    "body": "Local Government Coordinating Commission, a joint City of Albuquerque and Bernalillo County body",
+    "inventory": "Three records match the commission in the inventory and none is a minute.",
+    "city_pages_checked": [
+     "/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission (HTTP 200, 129,963 bytes)",
+     "/council/albuquerque-bernalillo-county-government-commission (HTTP 200, 125,371 bytes)"
+    ],
+    "what_those_pages_carry": "Neither page contains a single link whose address includes the word minutes.",
+    "site_search": "The City's own search for the exact phrase Local Government Coordinating Commission together with minutes returns a no-results page.",
+    "a_limitation_on_the_word_exhaustive": "The commission is a joint City and County body, and the County side could not be checked: www.bernco.gov returned HTTP 403 to this lane's request. The City side is thorough; the County side is unchecked. If minutes exist anywhere, the County's site is where to look.",
+    "cancellation_check": "None of the ten agendas carries cancellation, postponement, rescheduling or no-quorum language; zero matches across all ten.",
+    "conclusion": "The exception applies on the evidence available, with the County limitation recorded. Label each Agenda (approved minutes not located) and never present one as minutes."
+   },
+   "proposed_canonical_page": "content/about/_index.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "A joint City and County governance body."
+    }
+   ],
+   "description_word_count": 31
+  },
+  {
+   "id": "src-21468eb5acc3d6fe",
+   "authoritative_url": "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/b78f39a074534620a8416dd00f8fb505",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "August 22, 2024",
+   "size_bytes": 177732,
+   "checksum_sha256": "65647ce00fcaf45e1b3af325cea1106d58911e0b350bb1689e4af3f1ffb4146b",
+   "title": "Local Government Coordinating Commission Commission: Agenda (approved minutes not located), August 22, 2024",
+   "description": "The Local Government Coordinating Commission's agenda for its meeting of August 22, 2024, listing the members and the business set down for that meeting of this joint City and County body.",
+   "evidence": "Headed City of Albuquerque, Government Center, Agenda, over the commission or sub-committee name and the meeting date and place. Published at council/albuquerque-bernalillo-county-government-commission.",
+   "group": "Local Government Coordinating Commission agendas",
+   "missing_minutes_review": {
+    "policy": "An agenda may be preserved only after a recorded exhaustive official-source review finds no approved minutes, and never for a cancelled or no-quorum meeting.",
+    "body": "Local Government Coordinating Commission, a joint City of Albuquerque and Bernalillo County body",
+    "inventory": "Three records match the commission in the inventory and none is a minute.",
+    "city_pages_checked": [
+     "/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission (HTTP 200, 129,963 bytes)",
+     "/council/albuquerque-bernalillo-county-government-commission (HTTP 200, 125,371 bytes)"
+    ],
+    "what_those_pages_carry": "Neither page contains a single link whose address includes the word minutes.",
+    "site_search": "The City's own search for the exact phrase Local Government Coordinating Commission together with minutes returns a no-results page.",
+    "a_limitation_on_the_word_exhaustive": "The commission is a joint City and County body, and the County side could not be checked: www.bernco.gov returned HTTP 403 to this lane's request. The City side is thorough; the County side is unchecked. If minutes exist anywhere, the County's site is where to look.",
+    "cancellation_check": "None of the ten agendas carries cancellation, postponement, rescheduling or no-quorum language; zero matches across all ten.",
+    "conclusion": "The exception applies on the evidence available, with the County limitation recorded. Label each Agenda (approved minutes not located) and never present one as minutes."
+   },
+   "proposed_canonical_page": "content/about/_index.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "A joint City and County governance body."
+    }
+   ],
+   "description_word_count": 31
+  },
+  {
+   "id": "src-83634881de7f4825",
+   "authoritative_url": "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/9d5b806a18894d7f924119947b10847a",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "October 24, 2024",
+   "size_bytes": 176557,
+   "checksum_sha256": "d7d8e8b53cdad61dda38c0c0407260e7f924a244483491153419951513437af9",
+   "title": "Local Government Coordinating Commission Commission: Agenda (approved minutes not located), October 24, 2024",
+   "description": "The Local Government Coordinating Commission's agenda for its meeting of October 24, 2024, listing the members and the business set down for that meeting of this joint City and County body.",
+   "evidence": "Headed City of Albuquerque, Government Center, Agenda, over the commission or sub-committee name and the meeting date and place. Published at council/albuquerque-bernalillo-county-government-commission.",
+   "group": "Local Government Coordinating Commission agendas",
+   "missing_minutes_review": {
+    "policy": "An agenda may be preserved only after a recorded exhaustive official-source review finds no approved minutes, and never for a cancelled or no-quorum meeting.",
+    "body": "Local Government Coordinating Commission, a joint City of Albuquerque and Bernalillo County body",
+    "inventory": "Three records match the commission in the inventory and none is a minute.",
+    "city_pages_checked": [
+     "/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission (HTTP 200, 129,963 bytes)",
+     "/council/albuquerque-bernalillo-county-government-commission (HTTP 200, 125,371 bytes)"
+    ],
+    "what_those_pages_carry": "Neither page contains a single link whose address includes the word minutes.",
+    "site_search": "The City's own search for the exact phrase Local Government Coordinating Commission together with minutes returns a no-results page.",
+    "a_limitation_on_the_word_exhaustive": "The commission is a joint City and County body, and the County side could not be checked: www.bernco.gov returned HTTP 403 to this lane's request. The City side is thorough; the County side is unchecked. If minutes exist anywhere, the County's site is where to look.",
+    "cancellation_check": "None of the ten agendas carries cancellation, postponement, rescheduling or no-quorum language; zero matches across all ten.",
+    "conclusion": "The exception applies on the evidence available, with the County limitation recorded. Label each Agenda (approved minutes not located) and never present one as minutes."
+   },
+   "proposed_canonical_page": "content/about/_index.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "A joint City and County governance body."
+    }
+   ],
+   "description_word_count": 31
+  },
+  {
+   "id": "src-78d69e16f06a17b7",
+   "authoritative_url": "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/1c21c5bd5d5747dfbbe67d2d0a6f26bc",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "November 8, 2024",
+   "size_bytes": 70165,
+   "checksum_sha256": "21cdb3fb2294e5a8cc78cb28ae82ac139c1cf21d7a1ad13e4405f37b3f88e80d",
+   "title": "Local Government Coordinating Commission Commission: Agenda (approved minutes not located), November 8, 2024",
+   "description": "The Local Government Coordinating Commission's agenda for its meeting of November 8, 2024, listing the members and the business set down for that meeting of this joint City and County body.",
+   "evidence": "Headed City of Albuquerque, Government Center, Agenda, over the commission or sub-committee name and the meeting date and place. Published at council/albuquerque-bernalillo-county-government-commission.",
+   "group": "Local Government Coordinating Commission agendas",
+   "missing_minutes_review": {
+    "policy": "An agenda may be preserved only after a recorded exhaustive official-source review finds no approved minutes, and never for a cancelled or no-quorum meeting.",
+    "body": "Local Government Coordinating Commission, a joint City of Albuquerque and Bernalillo County body",
+    "inventory": "Three records match the commission in the inventory and none is a minute.",
+    "city_pages_checked": [
+     "/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission (HTTP 200, 129,963 bytes)",
+     "/council/albuquerque-bernalillo-county-government-commission (HTTP 200, 125,371 bytes)"
+    ],
+    "what_those_pages_carry": "Neither page contains a single link whose address includes the word minutes.",
+    "site_search": "The City's own search for the exact phrase Local Government Coordinating Commission together with minutes returns a no-results page.",
+    "a_limitation_on_the_word_exhaustive": "The commission is a joint City and County body, and the County side could not be checked: www.bernco.gov returned HTTP 403 to this lane's request. The City side is thorough; the County side is unchecked. If minutes exist anywhere, the County's site is where to look.",
+    "cancellation_check": "None of the ten agendas carries cancellation, postponement, rescheduling or no-quorum language; zero matches across all ten.",
+    "conclusion": "The exception applies on the evidence available, with the County limitation recorded. Label each Agenda (approved minutes not located) and never present one as minutes."
+   },
+   "proposed_canonical_page": "content/about/_index.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "A joint City and County governance body."
+    }
+   ],
+   "description_word_count": 31
+  },
+  {
+   "id": "src-da4a1570a9a31d35",
+   "authoritative_url": "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/092dcbc8ed31412994497ada7c61160f",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "December 5, 2024",
+   "size_bytes": 30766,
+   "checksum_sha256": "ea71f64a84b07712340008e7ce460471a6cc1aa896a1488fd5aea74b0082b5bf",
+   "title": "Local Government Coordinating Commission Sub-Committee: Agenda (approved minutes not located), December 5, 2024",
+   "description": "The Local Government Coordinating Commission's agenda for its meeting of December 5, 2024, listing the members and the business set down for that meeting of this joint City and County body.",
+   "evidence": "Headed City of Albuquerque, Government Center, Agenda, over the commission or sub-committee name and the meeting date and place. Published at council/albuquerque-bernalillo-county-government-commission.",
+   "group": "Local Government Coordinating Commission agendas",
+   "missing_minutes_review": {
+    "policy": "An agenda may be preserved only after a recorded exhaustive official-source review finds no approved minutes, and never for a cancelled or no-quorum meeting.",
+    "body": "Local Government Coordinating Commission, a joint City of Albuquerque and Bernalillo County body",
+    "inventory": "Three records match the commission in the inventory and none is a minute.",
+    "city_pages_checked": [
+     "/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission (HTTP 200, 129,963 bytes)",
+     "/council/albuquerque-bernalillo-county-government-commission (HTTP 200, 125,371 bytes)"
+    ],
+    "what_those_pages_carry": "Neither page contains a single link whose address includes the word minutes.",
+    "site_search": "The City's own search for the exact phrase Local Government Coordinating Commission together with minutes returns a no-results page.",
+    "a_limitation_on_the_word_exhaustive": "The commission is a joint City and County body, and the County side could not be checked: www.bernco.gov returned HTTP 403 to this lane's request. The City side is thorough; the County side is unchecked. If minutes exist anywhere, the County's site is where to look.",
+    "cancellation_check": "None of the ten agendas carries cancellation, postponement, rescheduling or no-quorum language; zero matches across all ten.",
+    "conclusion": "The exception applies on the evidence available, with the County limitation recorded. Label each Agenda (approved minutes not located) and never present one as minutes."
+   },
+   "proposed_canonical_page": "content/about/_index.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "A joint City and County governance body."
+    }
+   ],
+   "description_word_count": 31
+  },
+  {
+   "id": "src-65a948ba4f3a8e73",
+   "authoritative_url": "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/60f202f8db4f460d925b35b04c71de80",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "December 12, 2024",
+   "size_bytes": 176069,
+   "checksum_sha256": "7a3679bd079c14fae13537a2f42d0606436670fe3dcaab44f6f538b536990e0d",
+   "title": "Local Government Coordinating Commission Commission: Agenda (approved minutes not located), December 12, 2024",
+   "description": "The Local Government Coordinating Commission's agenda for its meeting of December 12, 2024, listing the members and the business set down for that meeting of this joint City and County body.",
+   "evidence": "Headed City of Albuquerque, Government Center, Agenda, over the commission or sub-committee name and the meeting date and place. Published at council/albuquerque-bernalillo-county-government-commission.",
+   "group": "Local Government Coordinating Commission agendas",
+   "missing_minutes_review": {
+    "policy": "An agenda may be preserved only after a recorded exhaustive official-source review finds no approved minutes, and never for a cancelled or no-quorum meeting.",
+    "body": "Local Government Coordinating Commission, a joint City of Albuquerque and Bernalillo County body",
+    "inventory": "Three records match the commission in the inventory and none is a minute.",
+    "city_pages_checked": [
+     "/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission (HTTP 200, 129,963 bytes)",
+     "/council/albuquerque-bernalillo-county-government-commission (HTTP 200, 125,371 bytes)"
+    ],
+    "what_those_pages_carry": "Neither page contains a single link whose address includes the word minutes.",
+    "site_search": "The City's own search for the exact phrase Local Government Coordinating Commission together with minutes returns a no-results page.",
+    "a_limitation_on_the_word_exhaustive": "The commission is a joint City and County body, and the County side could not be checked: www.bernco.gov returned HTTP 403 to this lane's request. The City side is thorough; the County side is unchecked. If minutes exist anywhere, the County's site is where to look.",
+    "cancellation_check": "None of the ten agendas carries cancellation, postponement, rescheduling or no-quorum language; zero matches across all ten.",
+    "conclusion": "The exception applies on the evidence available, with the County limitation recorded. Label each Agenda (approved minutes not located) and never present one as minutes."
+   },
+   "proposed_canonical_page": "content/about/_index.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "A joint City and County governance body."
+    }
+   ],
+   "description_word_count": 31
+  },
+  {
+   "id": "src-50e17b8f38e64769",
+   "authoritative_url": "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/f9a67ae1941d4d99b7f6815a21db8bcd",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "January 16, 2025",
+   "size_bytes": 25813,
+   "checksum_sha256": "b1a730b22a7df8b12ca14740dae9d871f34256913f7d4681d7f5c5612441faac",
+   "title": "Local Government Coordinating Commission Sub-Committee: Agenda (approved minutes not located), January 16, 2025",
+   "description": "The Local Government Coordinating Commission's agenda for its meeting of January 16, 2025, listing the members and the business set down for that meeting of this joint City and County body.",
+   "evidence": "Headed City of Albuquerque, Government Center, Agenda, over the commission or sub-committee name and the meeting date and place. Published at council/albuquerque-bernalillo-county-government-commission.",
+   "group": "Local Government Coordinating Commission agendas",
+   "missing_minutes_review": {
+    "policy": "An agenda may be preserved only after a recorded exhaustive official-source review finds no approved minutes, and never for a cancelled or no-quorum meeting.",
+    "body": "Local Government Coordinating Commission, a joint City of Albuquerque and Bernalillo County body",
+    "inventory": "Three records match the commission in the inventory and none is a minute.",
+    "city_pages_checked": [
+     "/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission (HTTP 200, 129,963 bytes)",
+     "/council/albuquerque-bernalillo-county-government-commission (HTTP 200, 125,371 bytes)"
+    ],
+    "what_those_pages_carry": "Neither page contains a single link whose address includes the word minutes.",
+    "site_search": "The City's own search for the exact phrase Local Government Coordinating Commission together with minutes returns a no-results page.",
+    "a_limitation_on_the_word_exhaustive": "The commission is a joint City and County body, and the County side could not be checked: www.bernco.gov returned HTTP 403 to this lane's request. The City side is thorough; the County side is unchecked. If minutes exist anywhere, the County's site is where to look.",
+    "cancellation_check": "None of the ten agendas carries cancellation, postponement, rescheduling or no-quorum language; zero matches across all ten.",
+    "conclusion": "The exception applies on the evidence available, with the County limitation recorded. Label each Agenda (approved minutes not located) and never present one as minutes."
+   },
+   "proposed_canonical_page": "content/about/_index.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "A joint City and County governance body."
+    }
+   ],
+   "description_word_count": 31
+  },
+  {
+   "id": "src-6283e5e98f8690b9",
+   "authoritative_url": "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/5ba6b4ce5fcc469eb296c493225a205a",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "February 20, 2025",
+   "size_bytes": 176115,
+   "checksum_sha256": "8e7a828d6046f5745c9fb766cc347ae584da0a1f62ca51b4024da3417c0bb445",
+   "title": "Local Government Coordinating Commission Commission: Agenda (approved minutes not located), February 20, 2025",
+   "description": "The Local Government Coordinating Commission's agenda for its meeting of February 20, 2025, listing the members and the business set down for that meeting of this joint City and County body.",
+   "evidence": "Headed City of Albuquerque, Government Center, Agenda, over the commission or sub-committee name and the meeting date and place. Published at council/albuquerque-bernalillo-county-government-commission.",
+   "group": "Local Government Coordinating Commission agendas",
+   "missing_minutes_review": {
+    "policy": "An agenda may be preserved only after a recorded exhaustive official-source review finds no approved minutes, and never for a cancelled or no-quorum meeting.",
+    "body": "Local Government Coordinating Commission, a joint City of Albuquerque and Bernalillo County body",
+    "inventory": "Three records match the commission in the inventory and none is a minute.",
+    "city_pages_checked": [
+     "/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission (HTTP 200, 129,963 bytes)",
+     "/council/albuquerque-bernalillo-county-government-commission (HTTP 200, 125,371 bytes)"
+    ],
+    "what_those_pages_carry": "Neither page contains a single link whose address includes the word minutes.",
+    "site_search": "The City's own search for the exact phrase Local Government Coordinating Commission together with minutes returns a no-results page.",
+    "a_limitation_on_the_word_exhaustive": "The commission is a joint City and County body, and the County side could not be checked: www.bernco.gov returned HTTP 403 to this lane's request. The City side is thorough; the County side is unchecked. If minutes exist anywhere, the County's site is where to look.",
+    "cancellation_check": "None of the ten agendas carries cancellation, postponement, rescheduling or no-quorum language; zero matches across all ten.",
+    "conclusion": "The exception applies on the evidence available, with the County limitation recorded. Label each Agenda (approved minutes not located) and never present one as minutes."
+   },
+   "proposed_canonical_page": "content/about/_index.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "A joint City and County governance body."
+    }
+   ],
+   "description_word_count": 31
+  },
+  {
+   "id": "src-33c27704152de957",
+   "authoritative_url": "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/c5839686404e49348b7c33ccb0b8f867",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "March 4, 2025 Agenda with Supporting Documents",
+   "size_bytes": 6612209,
+   "checksum_sha256": "76e00293b9f29293ca3165b66a496ba51fbe3131037f3cc27d772665b8644b0b",
+   "title": "Local Government Coordinating Commission Commission: Agenda (approved minutes not located), March 4, 2025 Agenda with Supporting Documents",
+   "description": "The Local Government Coordinating Commission's agenda for its meeting of March 4, 2025 Agenda with Supporting Documents, listing the members and the business set down for that meeting of this joint City and County body.",
+   "evidence": "Headed City of Albuquerque, Government Center, Agenda, over the commission or sub-committee name and the meeting date and place. Published at council/albuquerque-bernalillo-county-government-commission.",
+   "group": "Local Government Coordinating Commission agendas",
+   "missing_minutes_review": {
+    "policy": "An agenda may be preserved only after a recorded exhaustive official-source review finds no approved minutes, and never for a cancelled or no-quorum meeting.",
+    "body": "Local Government Coordinating Commission, a joint City of Albuquerque and Bernalillo County body",
+    "inventory": "Three records match the commission in the inventory and none is a minute.",
+    "city_pages_checked": [
+     "/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission (HTTP 200, 129,963 bytes)",
+     "/council/albuquerque-bernalillo-county-government-commission (HTTP 200, 125,371 bytes)"
+    ],
+    "what_those_pages_carry": "Neither page contains a single link whose address includes the word minutes.",
+    "site_search": "The City's own search for the exact phrase Local Government Coordinating Commission together with minutes returns a no-results page.",
+    "a_limitation_on_the_word_exhaustive": "The commission is a joint City and County body, and the County side could not be checked: www.bernco.gov returned HTTP 403 to this lane's request. The City side is thorough; the County side is unchecked. If minutes exist anywhere, the County's site is where to look.",
+    "cancellation_check": "None of the ten agendas carries cancellation, postponement, rescheduling or no-quorum language; zero matches across all ten.",
+    "conclusion": "The exception applies on the evidence available, with the County limitation recorded. Label each Agenda (approved minutes not located) and never present one as minutes."
+   },
+   "proposed_canonical_page": "content/about/_index.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "A joint City and County governance body."
+    }
+   ],
+   "description_word_count": 35,
+   "note": "This one is titled Agenda with Supporting Documents and runs to 6,612,209 bytes, so it carries the meeting's papers as well as its agenda."
+  },
+  {
+   "id": "src-070a763aa9701f86",
+   "authoritative_url": "https://www.cabq.gov/council/administration-questions-answers/administration-questions-answers/resolveuid/3a1ae030b21146e7a55cec9a727ae5b7",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "Responses to Councilor Grout-EHS Governance 2-19-25.pdf",
+   "size_bytes": 103372,
+   "checksum_sha256": "190ce7589448001377e296ed787da252014619083a9ba405fb91b73c578e1996",
+   "title": "Administration responses to Councillor Grout on Environmental Health Services governance",
+   "description": "The Administration's numbered written answers to a councillor's questions about how the Environmental Health Services committee is constituted and whether it was established as the law requires.",
+   "evidence": "Opens on the numbered question Is it the Administration's position that it does not have to establish the Committee in accordance with the law? and the answer No.",
+   "group": "Administration answers to Council questions",
+   "proposed_canonical_page": "content/about/_index.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "A record of City administration."
+    }
+   ],
+   "description_word_count": 27
+  },
+  {
+   "id": "src-4ac9f8a1fb953e46",
+   "authoritative_url": "https://www.cabq.gov/council/administration-questions-answers/administration-questions-answers/resolveuid/51dce59068504bec9f4ffe317d5fb899",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "List of FY25 Non-Recurring Items.pdf",
+   "size_bytes": 77513,
+   "checksum_sha256": "0223d2bf61bca4e7f3e62bcf60f3bea4befe0b0d3f6ae015565f41ca53ad836d",
+   "title": "List of FY25 Non-Recurring Items",
+   "description": "The Administration's list of the non-recurring items in the FY25 budget, supplied to the Council in answer to a question about one-off rather than continuing spending.",
+   "evidence": "Titled List of FY25 Non-Recurring Items.",
+   "group": "Administration answers to Council questions",
+   "proposed_canonical_page": "content/city-data/capital-spending.md",
+   "cross_listings": [
+    {
+     "page": "content/about/_index.md",
+     "reason": "Part of the Council's oversight record."
+    }
+   ],
+   "description_word_count": 26
+  },
+  {
+   "id": "src-9fd0da60e94eb698",
+   "authoritative_url": "https://www.cabq.gov/council/administration-questions-answers/administration-questions-answers/resolveuid/da09bd39a6984fed87ad90d2d4d5d754",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "Code Enforcement Motel Closure Operations Memo - signed",
+   "size_bytes": 203472,
+   "checksum_sha256": "c866020685e424c562d8bd0668d5e2d42f13b43450812d89308c439a3d5bd083",
+   "title": "Planning Department response on code enforcement motel closure operations, 5 June 2025",
+   "description": "The Planning Department director's written answer to the Council on the City's motel closure operations, the enforcement campaign against substandard motels.",
+   "evidence": "A Planning Department letter of June 5, 2025 over the director's name.",
+   "group": "Administration answers to Council questions",
+   "proposed_canonical_page": "content/development-land-use/development-process.md",
+   "cross_listings": [
+    {
+     "page": "content/about/_index.md",
+     "reason": "Part of the Council's oversight record."
+    }
+   ],
+   "description_word_count": 21
+  },
+  {
+   "id": "src-a6753953181feb4f",
+   "authoritative_url": "https://www.cabq.gov/council/administration-questions-answers/administration-questions-answers/resolveuid/de266ecfd91b4d1799ba0873b1a4dbb0",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "Comprehensive Motel Enforcement History Report.pdf",
+   "size_bytes": 158711,
+   "checksum_sha256": "caaa31bc3483f96db7ba6de537e726dbb50274875b8c4d21dc81d4bedd119c59",
+   "title": "Code Enforcement Division: Comprehensive Motel Enforcement History Report, June 2025",
+   "description": "The Code Enforcement Division's history of its motel enforcement, the record of what the City has done about substandard motels and when, supplied to the Council.",
+   "evidence": "Headed Code Enforcement Division, Comprehensive Motel Enforcement History Report, June 2025.",
+   "group": "Administration answers to Council questions",
+   "proposed_canonical_page": "content/development-land-use/development-process.md",
+   "cross_listings": [
+    {
+     "page": "content/about/_index.md",
+     "reason": "Part of the Council's oversight record."
+    }
+   ],
+   "description_word_count": 26
+  },
+  {
+   "id": "src-51fb6dc80b316253",
+   "authoritative_url": "https://www.cabq.gov/council/administration-questions-answers/administration-questions-answers/resolveuid/ef33ce8e0820442788cf5ad02623c977",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "Breakdown of the National Guard Deployment",
+   "size_bytes": 70357,
+   "checksum_sha256": "494280835115802ade57e72c1b55028ac44e4782a39a61d31daa14932cab553e",
+   "title": "Breakdown of the National Guard deployment",
+   "description": "The Administration's breakdown of the National Guard deployment in Albuquerque, supplied to the Council in answer to a question about what the deployment consisted of.",
+   "evidence": "Rendered, because the file has one byte of extractable text for one page.",
+   "group": "Administration answers to Council questions",
+   "proposed_canonical_page": "content/about/_index.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "A record of City administration."
+    }
+   ],
+   "description_word_count": 25
+  },
+  {
+   "id": "src-0878bc7d09a7c65b",
+   "authoritative_url": "https://www.cabq.gov/council/administration-questions-answers/administration-questions-answers/resolveuid/dc28acf4bb74483db9b67f0273e7e89f",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "Final Exhibit A-B.pdf",
+   "size_bytes": 2727754,
+   "checksum_sha256": "dab605c007b36f24b51a7030770cf8f5bd1a9d80ca54194f7cacb85f7293f384",
+   "title": "Exhibit A and B: Downtown and adjoining area boundary maps",
+   "description": "The boundary maps supplied to the Council as exhibits, showing the downtown area and its surrounds at street level with the boundary drawn on.",
+   "evidence": "Rendered, because the file has two bytes of extractable text. Page 1 is headed Exhibit A - Downtown over a street map from Marquette Avenue to Coal Avenue.",
+   "group": "Administration answers to Council questions",
+   "proposed_canonical_page": "content/development-land-use/projects.md",
+   "cross_listings": [
+    {
+     "page": "content/about/_index.md",
+     "reason": "Part of the Council's oversight record."
+    }
+   ],
+   "description_word_count": 24
+  },
+  {
+   "id": "src-5006deafb03b1f7a",
+   "authoritative_url": "https://www.cabq.gov/council/administration-questions-answers/administration-questions-answers/resolveuid/77c223acb66540adb48209479e370eec",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "XLSX",
+   "leading_bytes": "504b0304",
+   "inventory_title": "NDB 12 IDOH",
+   "size_bytes": 15227,
+   "checksum_sha256": "c1d6dabd6feb6d4cffed0d739dd2cdd6dfbf1f7eecda09e69aa6b88b0b20e119",
+   "title": "North Domingo Baca aquatic centre: contract and fee ledger",
+   "description": "A spending ledger for the North Domingo Baca aquatic centre project, naming the contractor and the engineering consultant against each fee line and account code.",
+   "evidence": "An OOXML workbook, leading bytes 504b0304, read from xl/sharedStrings.xml - a spreadsheet, not the Word document its inventory title suggests. Its strings include BRADBURY STAMM CONSTRUCTION INC against Svcs-Contractor Fee and WSP USA ENVIRONMENT & INFRASTRUCTURE against Prof - Engineering Fee, for 4 - North Domingo Baca Aquatic Center.",
+   "group": "Administration answers to Council questions",
+   "proposed_canonical_page": "content/public-works/capital-projects.md",
+   "cross_listings": [
+    {
+     "page": "content/about/_index.md",
+     "reason": "Part of the Council's oversight record."
+    }
+   ],
+   "description_word_count": 25
+  }
+ ],
+ "duplicate": [],
+ "requires_human_review": [
+  {
+   "id": "src-64bc8e1da1e45187",
+   "authoritative_url": "https://www.cabq.gov/council/administration-questions-answers/administration-questions-answers/resolveuid/372adaa12d184aa595b1602e4ad75d0b",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "5715 Central Av NE",
+   "size_bytes": 6232176,
+   "checksum_sha256": "d536cef483aae2e64504eb0c8f2bc4ad5b552f73d98a3a6f2be50c05d0321977",
+   "draft_title": "Code Enforcement Notice and Order with Appeal: 5715 Central Ave NE, Oct 21, 2024",
+   "question_for_human": "Decide, once, whether this archive republishes code enforcement notices that name property owners. The answer governs all seven.",
+   "why_not_decided_here": "These are live enforcement actions naming the owner of a specific property, and the owners are not all companies. Six are corporations or limited liability companies; one is addressed to three named natural persons. The City itself published them on a public Council page in answer to councillor questions, which is a strong argument that they are publishable - but whether this archive republishes enforcement notices against named individuals is a question about the archive's scope, and this lane has excluded rosters of private individuals' details on its own judgment elsewhere. It should not decide this one alone.",
+   "measurement": "6,232,176 bytes. Image-only, two bytes of extractable text, so it was rendered. Its first page is a City of Albuquerque Code Enforcement NOTICE AND ORDER WITH APPEAL dated Oct 21, 2024, citing the Uniform Housing Code, City Council Enactment Ordinance No. 25-2018, codified at 14-3-1-1 et seq ROA 1994.",
+   "owner_named_on_the_notice": "1213 INC",
+   "owner_kind": "a corporation",
+   "case_file_number": "CF-2024-060230",
+   "distinguishing_content": "Notice and Order with Appeal for 5715 Central Ave NE.",
+   "package": "code_enforcement_notices_naming_owners",
+   "priority": 1
+  },
+  {
+   "id": "src-b44e7af124c01c10",
+   "authoritative_url": "https://www.cabq.gov/council/administration-questions-answers/administration-questions-answers/resolveuid/64fd96d810df43c693fd4427ed4c047b",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "6015 Iliff Rd NW NAO Vacate",
+   "size_bytes": 5787833,
+   "checksum_sha256": "bafa4dce4aa8f0eedc163bc5ea98ccd4c30825ee2f1a6f5e63fcc22587a10eef",
+   "draft_title": "Code Enforcement Notice and Order with Appeal: 6015 Iliff Rd NW, March 11, 2025",
+   "question_for_human": "Decide, once, whether this archive republishes code enforcement notices that name property owners. The answer governs all seven.",
+   "why_not_decided_here": "These are live enforcement actions naming the owner of a specific property, and the owners are not all companies. Six are corporations or limited liability companies; one is addressed to three named natural persons. The City itself published them on a public Council page in answer to councillor questions, which is a strong argument that they are publishable - but whether this archive republishes enforcement notices against named individuals is a question about the archive's scope, and this lane has excluded rosters of private individuals' details on its own judgment elsewhere. It should not decide this one alone.",
+   "measurement": "5,787,833 bytes. Image-only, two bytes of extractable text, so it was rendered. Its first page is a City of Albuquerque Code Enforcement NOTICE AND ORDER WITH APPEAL dated March 11, 2025, citing the Uniform Housing Code, City Council Enactment Ordinance No. 25-2018, codified at 14-3-1-1 et seq ROA 1994.",
+   "owner_named_on_the_notice": "HOTEL GP ILIFFE ABQ LLC",
+   "owner_kind": "a limited liability company",
+   "case_file_number": "UHC-2025-00166",
+   "distinguishing_content": "Notice and Order with Appeal for 6015 Iliff Rd NW.",
+   "package": "code_enforcement_notices_naming_owners",
+   "priority": 2
+  },
+  {
+   "id": "src-bd2d82443bb2eb9b",
+   "authoritative_url": "https://www.cabq.gov/council/administration-questions-answers/administration-questions-answers/resolveuid/f64f007cf25c46e5a8359c25bca7a0a5",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "8300 Central Av SE",
+   "size_bytes": 7430439,
+   "checksum_sha256": "0da2e8a88043f177dbf991553c5c49777667b98ca3fec760705e41c506780f92",
+   "draft_title": "Code Enforcement Notice and Order with Appeal: 8300 Central Ave SE, February 21, 2025",
+   "question_for_human": "Decide, once, whether this archive republishes code enforcement notices that name property owners. The answer governs all seven.",
+   "why_not_decided_here": "These are live enforcement actions naming the owner of a specific property, and the owners are not all companies. Six are corporations or limited liability companies; one is addressed to three named natural persons. The City itself published them on a public Council page in answer to councillor questions, which is a strong argument that they are publishable - but whether this archive republishes enforcement notices against named individuals is a question about the archive's scope, and this lane has excluded rosters of private individuals' details on its own judgment elsewhere. It should not decide this one alone.",
+   "measurement": "7,430,439 bytes. Image-only, two bytes of extractable text, so it was rendered. Its first page is a City of Albuquerque Code Enforcement NOTICE AND ORDER WITH APPEAL dated February 21, 2025, citing the Uniform Housing Code, City Council Enactment Ordinance No. 25-2018, codified at 14-3-1-1 et seq ROA 1994.",
+   "owner_named_on_the_notice": "ROSHYOGI LLC",
+   "owner_kind": "a limited liability company",
+   "case_file_number": "UHC-2025-00100",
+   "distinguishing_content": "Notice and Order with Appeal for 8300 Central Ave SE.",
+   "package": "code_enforcement_notices_naming_owners",
+   "priority": 3
+  },
+  {
+   "id": "src-be7caa7193b994f3",
+   "authoritative_url": "https://www.cabq.gov/council/administration-questions-answers/administration-questions-answers/resolveuid/b7e8a6638145462ba89c598ad3aa3b77",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "900 Louisiana Blvd NE",
+   "size_bytes": 531482,
+   "checksum_sha256": "5f364102230313adca3f2151cd36f5dc5f2bcc62b2cd68ccaf2bf1ca9b062330",
+   "draft_title": "Code Enforcement Notice and Order with Appeal: 900 Louisiana Blvd NE, May 30, 2025",
+   "question_for_human": "Decide, once, whether this archive republishes code enforcement notices that name property owners. The answer governs all seven.",
+   "why_not_decided_here": "These are live enforcement actions naming the owner of a specific property, and the owners are not all companies. Six are corporations or limited liability companies; one is addressed to three named natural persons. The City itself published them on a public Council page in answer to councillor questions, which is a strong argument that they are publishable - but whether this archive republishes enforcement notices against named individuals is a question about the archive's scope, and this lane has excluded rosters of private individuals' details on its own judgment elsewhere. It should not decide this one alone.",
+   "measurement": "531,482 bytes. It has a usable text layer and was read from it. Its first page is a City of Albuquerque Code Enforcement NOTICE AND ORDER WITH APPEAL dated May 30, 2025, citing the Uniform Housing Code, City Council Enactment Ordinance No. 25-2018, codified at 14-3-1-1 et seq ROA 1994.",
+   "owner_named_on_the_notice": "ROCKHILL CAPITAL PARTNERS LLC",
+   "owner_kind": "a limited liability company",
+   "case_file_number": "UHC-2025-00554",
+   "distinguishing_content": "Notice and Order with Appeal for 900 Louisiana Blvd NE.",
+   "package": "code_enforcement_notices_naming_owners",
+   "priority": 4
+  },
+  {
+   "id": "src-d1213d0fba1ca8ca",
+   "authoritative_url": "https://www.cabq.gov/council/administration-questions-answers/administration-questions-answers/resolveuid/57f20dc0ace34e26870a41024eb1e331",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "7503 Central Av NE - NAO",
+   "size_bytes": 2710135,
+   "checksum_sha256": "103d16018cc68bf53bf673fbaddd330fe0154bbf2f713e42fb55edb2acc9b141",
+   "draft_title": "Code Enforcement Notice and Order with Appeal: 7503 Central Ave NE, Jan 9, 2025",
+   "question_for_human": "Decide, once, whether this archive republishes code enforcement notices that name property owners. The answer governs all seven.",
+   "why_not_decided_here": "These are live enforcement actions naming the owner of a specific property, and the owners are not all companies. Six are corporations or limited liability companies; one is addressed to three named natural persons. The City itself published them on a public Council page in answer to councillor questions, which is a strong argument that they are publishable - but whether this archive republishes enforcement notices against named individuals is a question about the archive's scope, and this lane has excluded rosters of private individuals' details on its own judgment elsewhere. It should not decide this one alone.",
+   "measurement": "2,710,135 bytes. Image-only, two bytes of extractable text, so it was rendered. Its first page is a City of Albuquerque Code Enforcement NOTICE AND ORDER WITH APPEAL dated Jan 9, 2025, citing the Uniform Housing Code, City Council Enactment Ordinance No. 25-2018, codified at 14-3-1-1 et seq ROA 1994.",
+   "owner_named_on_the_notice": "AA & S INC",
+   "owner_kind": "a corporation",
+   "case_file_number": "CF-2025-000839",
+   "distinguishing_content": "Notice and Order with Appeal for 7503 Central Ave NE.",
+   "package": "code_enforcement_notices_naming_owners",
+   "priority": 5
+  },
+  {
+   "id": "src-f33de69926b6c41a",
+   "authoritative_url": "https://www.cabq.gov/council/administration-questions-answers/administration-questions-answers/resolveuid/ad289ad8745743fbb486e541fafd08d1",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "6031 Iliff Rd NW",
+   "size_bytes": 5343647,
+   "checksum_sha256": "17a52582259b0dfc27f59529372d6b2e9c3e1b626e36baa3bcc2891c05e3e716",
+   "draft_title": "Code Enforcement Notice and Order with Appeal: 6031 Iliff Rd NW, March 13, 2025",
+   "question_for_human": "Decide, once, whether this archive republishes code enforcement notices that name property owners. The answer governs all seven.",
+   "why_not_decided_here": "These are live enforcement actions naming the owner of a specific property, and the owners are not all companies. Six are corporations or limited liability companies; one is addressed to three named natural persons. The City itself published them on a public Council page in answer to councillor questions, which is a strong argument that they are publishable - but whether this archive republishes enforcement notices against named individuals is a question about the archive's scope, and this lane has excluded rosters of private individuals' details on its own judgment elsewhere. It should not decide this one alone.",
+   "measurement": "5,343,647 bytes. Image-only, two bytes of extractable text, so it was rendered. Its first page is a City of Albuquerque Code Enforcement NOTICE AND ORDER WITH APPEAL dated March 13, 2025, citing the Uniform Housing Code, City Council Enactment Ordinance No. 25-2018, codified at 14-3-1-1 et seq ROA 1994.",
+   "owner_named_on_the_notice": "RELIANCE ABQ LLC",
+   "owner_kind": "a limited liability company",
+   "case_file_number": "UHC-2025-00178",
+   "distinguishing_content": "Notice and Order with Appeal for 6031 Iliff Rd NW.",
+   "package": "code_enforcement_notices_naming_owners",
+   "priority": 6
+  },
+  {
+   "id": "src-f7dfbcaeae424c72",
+   "authoritative_url": "https://www.cabq.gov/council/administration-questions-answers/administration-questions-answers/resolveuid/69ecddada9584e10af7cf1dc9f09fc42",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "inventory_title": "2700 4th St NW NAO-Vacate",
+   "size_bytes": 6727162,
+   "checksum_sha256": "2b666f34e99faad2bf8accb3f8555efaa0fed95e0c9870165d181a994add7df7",
+   "draft_title": "Code Enforcement Notice and Order with Appeal: 2700 4th St NW, May 1, 2025",
+   "question_for_human": "Decide, once, whether this archive republishes code enforcement notices that name property owners. The answer governs all seven.",
+   "why_not_decided_here": "These are live enforcement actions naming the owner of a specific property, and the owners are not all companies. Six are corporations or limited liability companies; one is addressed to three named natural persons. The City itself published them on a public Council page in answer to councillor questions, which is a strong argument that they are publishable - but whether this archive republishes enforcement notices against named individuals is a question about the archive's scope, and this lane has excluded rosters of private individuals' details on its own judgment elsewhere. It should not decide this one alone.",
+   "measurement": "6,727,162 bytes. Image-only, two bytes of extractable text, so it was rendered. Its first page is a City of Albuquerque Code Enforcement NOTICE AND ORDER WITH APPEAL dated May 1, 2025, citing the Uniform Housing Code, City Council Enactment Ordinance No. 25-2018, codified at 14-3-1-1 et seq ROA 1994.",
+   "owner_named_on_the_notice": "three named individuals",
+   "owner_kind": "three named natural persons",
+   "case_file_number": "UHC-2025-00427",
+   "distinguishing_content": "Notice and Order with Appeal for 2700 4th St NW.",
+   "package": "code_enforcement_notices_naming_owners",
+   "priority": 7
+  }
+ ],
+ "excluded": [
+  {
+   "id": "src-179df6cd3df2cb37",
+   "authoritative_url": "https://www.cabq.gov/council/administration-questions-answers",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "HTML",
+   "leading_bytes": "3c21444f",
+   "inventory_title": "Administration Questions & Answers",
+   "size_bytes": 208608,
+   "checksum_sha256": "54d4799178524e168c2f1ec83a156e7cf3c88ee5fe0a995d5550abeb066c37cc",
+   "title_for_reference": "Web page: council/administration-questions-answers",
+   "what_it_is": "A live page on the City Council's website.",
+   "exclusion_reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f, and there is no original file to archive. It is an index or member page for the body whose documents are decided in this artifact.",
+   "category": "live web page",
+   "package": "web_pages"
+  },
+  {
+   "id": "src-7b8f70f06274426f",
+   "authoritative_url": "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "HTML",
+   "leading_bytes": "3c21444f",
+   "inventory_title": "Local Government Coordinating Commission",
+   "size_bytes": 125371,
+   "checksum_sha256": "22136a55b3dc61fbb01e9c485fdd0857b1adade8233aec6ed6f86150e8160072",
+   "title_for_reference": "Web page: council/albuquerque-bernalillo-county-government-commission",
+   "what_it_is": "A live page on the City Council's website.",
+   "exclusion_reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f, and there is no original file to archive. It is an index or member page for the body whose documents are decided in this artifact.",
+   "category": "live web page",
+   "package": "web_pages"
+  },
+  {
+   "id": "src-e18125b55a88573d",
+   "authoritative_url": "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/1c0e11f787b14c33a47dd26853f80048",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "HTML",
+   "leading_bytes": "3c21444f",
+   "inventory_title": "Samantha Sengel, Mayor Tim Keller Designee",
+   "size_bytes": 123818,
+   "checksum_sha256": "c81f4a09d63e88eabeb0c527d1df6863a8343588a32bb0717a6675802b69dd14",
+   "title_for_reference": "Web page: council/albuquerque-bernalillo-county-government-commission/local-government-coordinatin",
+   "what_it_is": "A live page on the City Council's website.",
+   "exclusion_reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f, and there is no original file to archive. It is an index or member page for the body whose documents are decided in this artifact.",
+   "category": "live web page",
+   "package": "web_pages"
+  },
+  {
+   "id": "src-cc4589b27d9b4c9a",
+   "authoritative_url": "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/22e5246fcb494d1a850d2709927eec46",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "HTML",
+   "leading_bytes": "3c21444f",
+   "inventory_title": "Tammy Fiebelkorn, Councilor, District 7",
+   "size_bytes": 144472,
+   "checksum_sha256": "29106463c00c87d8616f99451dee4ec7f8105205f5a5bb943e06e6331d4471f3",
+   "title_for_reference": "Web page: council/albuquerque-bernalillo-county-government-commission/local-government-coordinatin",
+   "what_it_is": "A live page on the City Council's website.",
+   "exclusion_reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f, and there is no original file to archive. It is an index or member page for the body whose documents are decided in this artifact.",
+   "category": "live web page",
+   "package": "web_pages"
+  },
+  {
+   "id": "src-d64c25f610dc4db0",
+   "authoritative_url": "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/4d34cf22c69049b7924971a4d9bc7340",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "HTML",
+   "leading_bytes": "3c21444f",
+   "inventory_title": "Nichole Rogers, Chairwoman, Councilor, District 6",
+   "size_bytes": 198400,
+   "checksum_sha256": "5860e3e603783151eeacdf759cd8b568394eb1d287da1a80b973a103bb02465f",
+   "title_for_reference": "Web page: council/albuquerque-bernalillo-county-government-commission/local-government-coordinatin",
+   "what_it_is": "A live page on the City Council's website.",
+   "exclusion_reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f, and there is no original file to archive. It is an index or member page for the body whose documents are decided in this artifact.",
+   "category": "live web page",
+   "package": "web_pages"
+  },
+  {
+   "id": "src-4b22ae9ab39155c3",
+   "authoritative_url": "https://www.cabq.gov/council/news/city-council-committee-of-the-whole-voting-to-advance-fy27-budget-committee-substitute-focused-on-workforce-investment-fiscal-stability-and-long-term-sustainability",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "HTML",
+   "leading_bytes": "3c21444f",
+   "inventory_title": "City Council Committee of the Whole Voting to Advance FY27 Budget Committee Substitute Focused on Workforce Investment, Fiscal Stability, and Long-Term Sustainability",
+   "size_bytes": 135527,
+   "checksum_sha256": "e2174fd121e0b26673d764c428862eda54166c4d1648ec0ee7f6c1f2108ce57b",
+   "title_for_reference": "Web page: council/news/city-council-committee-of-the-whole-voting-to-advance-fy27-budget-committee",
+   "what_it_is": "A live page on the City Council's website.",
+   "exclusion_reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f, and there is no original file to archive. It is also a Council news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json.",
+   "category": "live web page: council news release",
+   "package": "web_pages"
+  },
+  {
+   "id": "src-e0fc407dfefb54bd",
+   "authoritative_url": "https://www.cabq.gov/council/news/city-council-creates-hospitality-revitalization-working-group",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "HTML",
+   "leading_bytes": "3c21444f",
+   "inventory_title": "City Council Creates Hospitality Revitalization Working Group",
+   "size_bytes": 120852,
+   "checksum_sha256": "1270cf367c830852017cd53c0e8b7fe69852a75521750e7664dc69d635f9a14b",
+   "title_for_reference": "Web page: council/news/city-council-creates-hospitality-revitalization-working-group",
+   "what_it_is": "A live page on the City Council's website.",
+   "exclusion_reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f, and there is no original file to archive. It is also a Council news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json.",
+   "category": "live web page: council news release",
+   "package": "web_pages"
+  },
+  {
+   "id": "src-7d3b67724d942b24",
+   "authoritative_url": "https://www.cabq.gov/council/news/city-council-highlights",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "HTML",
+   "leading_bytes": "3c21444f",
+   "inventory_title": "View news from the Albuquerque City Council. City Council News View news from the Albuquerque City Council.",
+   "size_bytes": 183026,
+   "checksum_sha256": "334f43a3b2344b50e9d2b90c00337140212e6bb81fec0f06fe5a6335a46504d2",
+   "title_for_reference": "Web page: council/news/city-council-highlights",
+   "what_it_is": "A live page on the City Council's website.",
+   "exclusion_reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f, and there is no original file to archive. It is also a Council news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json.",
+   "category": "live web page: council news release",
+   "package": "web_pages"
+  },
+  {
+   "id": "src-4f6fa021c8cd4f98",
+   "authoritative_url": "https://www.cabq.gov/council/news/city-councilor-dan-champine2019s-statement-regarding-joint-air-quality-control-board-investigation",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "HTML",
+   "leading_bytes": "3c21444f",
+   "inventory_title": "City Councilor Dan ChampineÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢s Statement Regarding Joint Air Quality Control Board Investigation",
+   "size_bytes": 125036,
+   "checksum_sha256": "99576373d34284f207d911017a24f4c6b37113bef6e6cc707e57c42edf556b22",
+   "title_for_reference": "Web page: council/news/city-councilor-dan-champine2019s-statement-regarding-joint-air-quality-cont",
+   "what_it_is": "A live page on the City Council's website.",
+   "exclusion_reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f, and there is no original file to archive. It is also a Council news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json.",
+   "category": "live web page: council news release",
+   "package": "web_pages"
+  },
+  {
+   "id": "src-f5ca08e6b51ce1f3",
+   "authoritative_url": "https://www.cabq.gov/council/news/city-councils-committee-of-the-whole-uncovers-11-8m-discrepancy-in-mayors-proposed-fy27-budget",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "HTML",
+   "leading_bytes": "3c21444f",
+   "inventory_title": "City CouncilÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢s Committee of the Whole Uncovers $11.8M Discrepancy in MayorÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢s Proposed FY27 Budget",
+   "size_bytes": 125622,
+   "checksum_sha256": "676db70105163626ac1b5cdb7e70637fd5ac811a6c499c14d1342d0617148664",
+   "title_for_reference": "Web page: council/news/city-councils-committee-of-the-whole-uncovers-11-8m-discrepancy-in-mayors-p",
+   "what_it_is": "A live page on the City Council's website.",
+   "exclusion_reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f, and there is no original file to archive. It is also a Council news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json.",
+   "category": "live web page: council news release",
+   "package": "web_pages"
+  },
+  {
+   "id": "src-2377ac28d387ef9f",
+   "authoritative_url": "https://www.cabq.gov/council/news/council-selects-new-civilian-police-oversight-agency-executive-director",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "HTML",
+   "leading_bytes": "3c21444f",
+   "inventory_title": "Council Selects New Civilian Police Oversight Agency Executive Director",
+   "size_bytes": 121587,
+   "checksum_sha256": "e90f880faa7cb3f6b01610aa6b50a7c8246098b4425bdcc47040cceabbbfea47",
+   "title_for_reference": "Web page: council/news/council-selects-new-civilian-police-oversight-agency-executive-director",
+   "what_it_is": "A live page on the City Council's website.",
+   "exclusion_reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f, and there is no original file to archive. It is also a Council news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json.",
+   "category": "live web page: council news release",
+   "package": "web_pages"
+  },
+  {
+   "id": "src-c4a6a2e9b5aed14c",
+   "authoritative_url": "https://www.cabq.gov/council/news/give-input-regarding-apd-reforms",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "HTML",
+   "leading_bytes": "3c21444f",
+   "inventory_title": "Give Input Regarding APD Reforms",
+   "size_bytes": 117242,
+   "checksum_sha256": "510e5e3d4b2c370cad17ee4bd3d273c583d67718c03af026db9654fe7f66da7e",
+   "title_for_reference": "Web page: council/news/give-input-regarding-apd-reforms",
+   "what_it_is": "A live page on the City Council's website.",
+   "exclusion_reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f, and there is no original file to archive. It is also a Council news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json.",
+   "category": "live web page: council news release",
+   "package": "web_pages"
+  },
+  {
+   "id": "src-5e25c8bab21985d3",
+   "authoritative_url": "https://www.cabq.gov/council/news/new-councilors-take-oath-of-office",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "HTML",
+   "leading_bytes": "3c21444f",
+   "inventory_title": "New Councilors Take Oath of Office",
+   "size_bytes": 116799,
+   "checksum_sha256": "db138daf1275a3c9ac82a7ea62ea37553af8213a0689b99ff75820cb84dcdcf9",
+   "title_for_reference": "Web page: council/news/new-councilors-take-oath-of-office",
+   "what_it_is": "A live page on the City Council's website.",
+   "exclusion_reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f, and there is no original file to archive. It is also a Council news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json.",
+   "category": "live web page: council news release",
+   "package": "web_pages"
+  },
+  {
+   "id": "src-29dcb72f76550f01",
+   "authoritative_url": "https://www.cabq.gov/council/news/new-district-1-city-councilor-stephanie-telles-re-elected-councilors-sworn-in-for-27th-city-council",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "HTML",
+   "leading_bytes": "3c21444f",
+   "inventory_title": "New District 1 City Councilor Stephanie Telles, Re-Elected Councilors Sworn In for 27th City Council",
+   "size_bytes": 126087,
+   "checksum_sha256": "4e2a9d3d15468b8e1ec6bb3553e9da6a60e6e129e31534d02d9541e0702a3c2d",
+   "title_for_reference": "Web page: council/news/new-district-1-city-councilor-stephanie-telles-re-elected-councilors-sworn-",
+   "what_it_is": "A live page on the City Council's website.",
+   "exclusion_reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f, and there is no original file to archive. It is also a Council news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json.",
+   "category": "live web page: council news release",
+   "package": "web_pages"
+  },
+  {
+   "id": "src-58225c777ad81989",
+   "authoritative_url": "https://www.cabq.gov/council/news/share-your-opinion-about-apd",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "HTML",
+   "leading_bytes": "3c21444f",
+   "inventory_title": "Share Your Opinion About APD",
+   "size_bytes": 116580,
+   "checksum_sha256": "3db27b474b78316e6bf1f787b8f9157453eb0a3b65cc225d98236bb6e0d5cb41",
+   "title_for_reference": "Web page: council/news/share-your-opinion-about-apd",
+   "what_it_is": "A live page on the City Council's website.",
+   "exclusion_reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f, and there is no original file to archive. It is also a Council news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json.",
+   "category": "live web page: council news release",
+   "package": "web_pages"
+  },
+  {
+   "id": "src-69dbada9bff9f6ee",
+   "authoritative_url": "https://www.cabq.gov/council/news/special-procedures-for-december-5-2022-city-council-meeting",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "HTML",
+   "leading_bytes": "3c21444f",
+   "inventory_title": "Special Procedures for December 5, 2022, City Council Meeting",
+   "size_bytes": 119375,
+   "checksum_sha256": "316d89d32d9639a89696480fdb245ff8b7f424d208acf96bff81f2edc32518fe",
+   "title_for_reference": "Web page: council/news/special-procedures-for-december-5-2022-city-council-meeting",
+   "what_it_is": "A live page on the City Council's website.",
+   "exclusion_reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f, and there is no original file to archive. It is also a Council news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json.",
+   "category": "live web page: council news release",
+   "package": "web_pages"
+  }
+ ],
+ "archival_note": "All 17 approved records are inventory-only until an R2 archive object exists for each and its public download, exact size, SHA-256, and authoritative-source provenance are verified. Combined archive footprint if authorized: 11,155,669 bytes. One approved record is an OOXML workbook and should be archived in its original format. The 7 records held for review are not to be archived until the class question is settled.",
+ "integration_note": "Codex integration lane: apply recommended_status values through scripts/project/Update-Candidate.ps1 only. No row carries a canonical_id; this lane contains no duplicates and no supersession. Every row carries the inventory_title alongside the title read from the document, because the served filenames on the questions and answers page are opaque identifiers. The ten agenda rows carry their missing-minutes review inline, including its recorded limitation, and must be labelled as agendas. The seven enforcement rows are one package and one decision. Sizes and checksums are first measurements; the inventory held none.",
+ "safeguards": [
+  "no master-inventory.json write",
+  "no checkpoint.json write",
+  "no r2-inventory.json write",
+  "no site content change",
+  "no R2 upload",
+  "no commit, merge, or deploy",
+  "no terminal record modified",
+  "the enforcement notices were read only to establish whose names they carry and are not reproduced here"
+ ]
+}

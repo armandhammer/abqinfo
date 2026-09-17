@@ -1,0 +1,433 @@
+{
+ "batch_id": "meeting-agenda-documents-cluster-research-2026-09-11",
+ "lane": "Claude research lane: www.cabq.gov/council/documents/meeting-agenda-documents cluster",
+ "generated_at": "2026-09-12T03:58:23.606777+00:00",
+ "cluster": "The Albuquerque City Council's posted meeting agendas for Council, its committees, and the tax increment and public improvement district boards it seats.",
+ "scope": "All 20 pending-review candidates in that directory. The directory holds 21 records; the twenty-first is already excluded and is what decides most of this artifact.",
+ "brief": "Apply the missing-minutes agenda policy and its recorded exhaustive-review method, running the URL group-by first.",
+ "brief_finding": "The brief pointed at the wrong policy. The missing-minutes policy governs whether an agenda may be preserved when minutes cannot be found; this directory's own terminal record decides these files on a different and prior question, whether the agenda carries any substance at all. Eighteen of the twenty list resolutions, reports and plans without containing any of them. One is a study session agenda already held in another directory. One turns out not to be an agenda at all: it carries the full adopted text of a City committee's Open Meetings Act notice resolution, and nothing in its inventory title says so.",
+ "method": "Ran the URL group-by across the directory first, per the inventory URL-collision audit of the same date; it found no collisions. Fetched all 20 candidates and recorded exact byte length and SHA-256 for each. Read the already-excluded record's recorded reasoning before classifying anything, which is what supplied the test. Read every agenda's masthead and business list rather than its filename. Rendered the one file with no text layer. Compared all checksums against the 1,612 checksummed inventory records, and compared one file by normalized text against a copy in another Council directory.",
+ "classification_only": true,
+ "shared_state_written": [],
+ "governing_test": {
+  "source": "src-00f9dae00dbfbbc4, already excluded in this same directory",
+  "recorded_reason": "Meeting agenda lists consideration of two Winrock TID resolutions but contains neither final resolution nor supporting substantive plan.",
+  "recorded_validation_status": "excluded: agenda only; does not contain the referenced adopted resolutions or substantive planning record",
+  "the_test": "Does the agenda contain the substance it names, or only name it?",
+  "why_it_governs_here": "Every board agenda in this directory has the same shape: call to order, approval of agenda, consideration of numbered resolutions, reports, adjourn. The resolutions are named and never included. The precedent applies without interpretation, and applying it uniformly is what makes the one exception visible.",
+  "relationship_to_the_missing_minutes_policy": "They are not in conflict and they are not the same question. The AGENTS.md missing-minutes policy is permissive: after an exhaustive review finds no approved minutes, ABQInfo MAY preserve a verified original official agenda. It never requires preservation. The substance test asks a prior question and can answer no before the minutes question is reached. The rail-yards and redistricting artifacts of the same date preserved orphan agendas that carried substantive business of their own; this directory's agendas do not, which is why the outcome differs."
+ },
+ "revises_an_earlier_recommendation": {
+  "affects": [
+   "src-bc1dbb930feefaaf",
+   "src-b657a1bd0d19ffe8",
+   "src-a6bd9f4f6ae1cb40",
+   "src-7e3d417f146c307b",
+   "src-c393d59e029b52e9",
+   "src-15bd43bb6a15984d",
+   "src-9dbe491dce873f71"
+  ],
+  "where": "project-state/discovery/council-documents-cluster-research-2026-09-11.json",
+  "what_that_artifact_said": "It held six Trails Public Improvement District agendas and one Local Government Coordinating Commission agenda at requires human review, pending a single series-level decision, and stated that the review it had run could not be called exhaustive.",
+  "what_this_lane_found": "That artifact did not have this directory's terminal precedent, which was not in the flat level it triaged. The Winrock exclusion decides those records on the substance test without needing the minutes question answered at all: the Trails agendas in this directory have exactly the same structure as the ones held there, listing Resolutions 2014-01 through 2014-03 and containing none of them.",
+  "recommended_revision": "Resolve the six Trails PID agendas to excluded on the substance test, citing src-00f9dae00dbfbbc4. The Local Government Coordinating Commission agenda should be checked against the same test before being resolved the same way, since this lane did not fetch it. This removes six of the seven requires-human-review rows that artifact raised, and removes the series decision it asked for.",
+  "claude_did_not_modify": "Those records remain as that artifact left them. This is a recommendation to the integration lane, not a change."
+ },
+ "bodies_represented": {
+  "note": "Nine distinct public bodies across eighteen excluded agendas, which is why the directory looks miscellaneous. Counted by body, not by masthead wording: the City writes Mesa del Sol Public Improvement District(s) both ways.",
+  "counts": {
+   "Albuquerque City Council": 4,
+   "Finance and Government Operations Committee": 2,
+   "Albuquerque/Bernalillo County Government Commission": 2,
+   "The Trails Public Improvement District": 2,
+   "Saltillo Public Improvement District": 1,
+   "Mesa del Sol Public Improvement District": 2,
+   "Mesa del Sol Tax Increment Development Districts 1-5": 1,
+   "Winrock Town Center Tax Increment Development Districts": 1,
+   "Quorum at ABQ Uptown Tax Increment Development District": 2
+  },
+  "observation": "Six of the nine are tax increment or public improvement district boards, seated by the Council and administered in several cases by an outside law firm whose document-management stamps survive in the filenames. They meet to adopt open-meetings policies, approve bylaws and quarterly reports, and receive foreclosure and settlement updates. The substance of that work is in their resolutions and reports, none of which this directory holds."
+ },
+ "duplicate_and_supersession_checks": {
+  "internal_byte_collisions": 0,
+  "cross_inventory_byte_collisions": 0,
+  "url_collisions_in_this_directory": 0,
+  "checksums_compared_against": 1612,
+  "relationships_found_by_hash": 0,
+  "relationships_found_by_normalized_text": 1,
+  "note": "One relationship and hashing misses it by 177 bytes. The March 7 2014 Council study session agenda is published in this directory and in the police-oversight directory with identical normalized text and different encodings. This is the second cross-directory pair in the Council tree found only by text comparison, after the DOJ findings letter, and the third distinct near-miss size: 177 bytes here against a fivefold difference for O-03-132 and a complete byte divergence for the DOJ scan."
+ },
+ "integration_flags": [
+  {
+   "severity": "revises-earlier-artifact",
+   "affects": [
+    "project-state/discovery/council-documents-cluster-research-2026-09-11.json"
+   ],
+   "finding": "Six Trails PID agendas held there at requires human review are decided by this directory's terminal precedent, which that lane had not seen.",
+   "recommended_action": "Apply the revision in revises_an_earlier_recommendation. It closes six requires-human-review rows and the series decision that artifact requested."
+  },
+  {
+   "severity": "identification",
+   "affects": [
+    "src-1f47a1d06392eecc"
+   ],
+   "finding": "The one retainable record in the directory has no text layer and an inventory title that is just its filename. It contains an adopted Open Meetings Act notice resolution and was found only by rendering.",
+   "recommended_action": "Title it for the resolution it contains, not for the agenda on its first page. It is the fourth record in this run whose identity was recoverable only by rendering an image-only PDF."
+  },
+  {
+   "severity": "filename-trap",
+   "affects": [
+    "src-d810ef001941f846"
+   ],
+   "finding": "A file named and inventoried as a Hunt board agenda is a Quorum at ABQ Uptown Tax Increment Development District agenda on its masthead. The filename carries an outside law firm's document-management stamp and a client name, not the name of the body that met.",
+   "recommended_action": "Cite the masthead. Where a filename carries a third-party document-management prefix such as BHFSDOCS, treat the rest of the filename as that firm's internal labelling rather than a description."
+  },
+  {
+   "severity": "cross-artifact",
+   "affects": [
+    "src-d5cfa0fec162e3c1",
+    "src-ff9893ec1cd700be"
+   ],
+   "finding": "The March 7 2014 study session agenda is the same document in two Council directories; the canonical is held at requires human review in the police-oversight artifact.",
+   "recommended_action": "Integrate the two artifacts together so the study-session minutes question is answered once."
+  }
+ ],
+ "counts": {
+  "reviewed": 20,
+  "approved_for_addition": 1,
+  "duplicate": 1,
+  "excluded": 18,
+  "superseded": 0,
+  "requires_human_review": 0,
+  "distinct_public_bodies_in_excluded_agendas": 9
+ },
+ "link_check": {
+  "checked": 20,
+  "http_200": 20,
+  "failed": 0,
+  "method": "Full HTTP GET with a browser user agent, 2026-09-11.",
+  "containers_verified": "19 genuine PDFs and one HTML collection page by leading bytes. One PDF has no text layer and was rendered."
+ },
+ "approved_for_addition": [
+  {
+   "id": "src-1f47a1d06392eecc",
+   "authoritative_url": "https://www.cabq.gov/council/documents/meeting-agenda-documents/31914GuidlinesCommitteeAgendaandResolutionFINAL.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 148196,
+   "checksum_sha256": "82807ff53ef7728b83f67a98aa148334a3bcce975aecdc72a3c018e238614c9b",
+   "title": "Resolution of the Committee on Guidelines for Negotiations Determining Reasonable Notice of Meetings for Calendar Year 2014, With the March 19, 2014 Meeting Agenda",
+   "description": "The City committee that sets collective bargaining negotiation guidelines adopts its annual Open Meetings Act notice resolution, fixing seventy-two hours' notice, how agendas are published, and the conditions under which emergency meetings may be called.",
+   "date": "2014-03-19",
+   "pages": 3,
+   "proposed_canonical_page": "content/city-data/city-progress-surveys.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/public-safety-data.md",
+     "reason": "The Committee on Guidelines for Negotiations sets the City's bargaining guidelines, which is the process behind the police union agreement recommended in the police-oversight artifact of the same date."
+    }
+   ],
+   "evidence": "Image-only PDF with no text layer; pages 1 and 2 were rendered and read. Page 1 is the agenda of the Committee on Guidelines for Negotiations for Wednesday March 19 2014, chaired by Chief Administrative Officer Robert J. Perry as interim chair. Page 2 begins the full text of the \"Resolution of the Committee on Guidelines for Negotiations to Determine Reasonable Notice of Meetings for the Calendar Year 2014\", reciting Section 10-15-1(B) and (D) of the Open Meetings Act, NMSA 1978 Sections 10-15-1 to 4, and resolving five numbered sections on meeting notice.",
+   "why_retained": "The only file in this directory that passes the test its own terminal record sets. Every other agenda here lists resolutions without containing them; this one contains the adopted resolution in full. Its filename says so and the render confirms it: 31914GuidlinesCommitteeAgendaandResolutionFINAL.pdf.",
+   "identification_note": "Nothing in the inventory title, which is the bare filename, indicates that a resolution is attached. It was found by rendering, because the file has no text layer at all.",
+   "caveat": "It is a procedural notice resolution, not a substantive policy instrument. Describe it as what it is.",
+   "description_word_count": 35
+  }
+ ],
+ "duplicate": [
+  {
+   "id": "src-d5cfa0fec162e3c1",
+   "authoritative_url": "https://www.cabq.gov/council/documents/meeting-agenda-documents/3714StudySessionAgendaFINAL.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 71569,
+   "checksum_sha256": "fdc5c894248b8a53f42316e2e435e50b4a5482191b49c0d89b33d985618de189",
+   "title_for_reference": "Albuquerque City Council Study Session Agenda, March 7, 2014",
+   "pages": 1,
+   "canonical_id": "src-ff9893ec1cd700be",
+   "canonical_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/3-7-14%20Study%20Session%20Agenda%20-%20FINAL.pdf",
+   "canonical_state": "recommended requires human review in the police-oversight-task-force artifact of the same date",
+   "basis": "The same City Council study session agenda of March 7 2014, published in two Council directories. Normalized text is identical at ratio 1.0000 with full token coverage in both directions and an identical 1,132 normalized characters; the files differ by 177 bytes of encoding, 71,569 here against 71,392 there.",
+   "hash_found_it": false,
+   "note": "The canonical is held at requires human review because Council keeps study session minutes as a running series and the policy precondition that no approved minutes exist is not met. Pointing this copy at it keeps that question answered once rather than twice. Integrate the two artifacts together.",
+   "cross_directory": true
+  }
+ ],
+ "excluded": [
+  {
+   "id": "src-9de32e0dd9c4a8e0",
+   "authoritative_url": "https://www.cabq.gov/council/documents/meeting-agenda-documents/12214CouncilAgendaFINAL.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 98785,
+   "checksum_sha256": "94d509e823b33188f5735abf02cad6d93cf8a63ede6356dcf1cf7eac27c3486a",
+   "title_for_reference": "Albuquerque City Council Agenda, January 22, 2014",
+   "body": "Albuquerque City Council",
+   "pages": 4,
+   "exclusion_reason": "Agenda only: it lists items for consideration but contains none of the resolutions, reports or plans it names. This is the test the directory's own terminal record already applies. src-00f9dae00dbfbbc4, the Winrock Town Center Tax Increment Development Districts board agenda of January 20 2009, is excluded with the reason \"Meeting agenda lists consideration of two Winrock TID resolutions but contains neither final resolution nor supporting substantive plan\" and the validation status \"excluded: agenda only; does not contain the referenced adopted resolutions or substantive planning record\".",
+   "precedent": "src-00f9dae00dbfbbc4"
+  },
+  {
+   "id": "src-2d75c127adec9fc9",
+   "authoritative_url": "https://www.cabq.gov/council/documents/meeting-agenda-documents/2314CouncilAgendaFINAL.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 99638,
+   "checksum_sha256": "895e1c65cccca09da7c1bce6eae86e63c17a46ab6bc47a1ad97c8a8f38945f9b",
+   "title_for_reference": "Albuquerque City Council Agenda, February 3, 2014",
+   "body": "Albuquerque City Council",
+   "pages": 4,
+   "exclusion_reason": "Agenda only: it lists items for consideration but contains none of the resolutions, reports or plans it names. This is the test the directory's own terminal record already applies. src-00f9dae00dbfbbc4, the Winrock Town Center Tax Increment Development Districts board agenda of January 20 2009, is excluded with the reason \"Meeting agenda lists consideration of two Winrock TID resolutions but contains neither final resolution nor supporting substantive plan\" and the validation status \"excluded: agenda only; does not contain the referenced adopted resolutions or substantive planning record\".",
+   "precedent": "src-00f9dae00dbfbbc4"
+  },
+  {
+   "id": "src-976d642659a9c1b2",
+   "authoritative_url": "https://www.cabq.gov/council/documents/meeting-agenda-documents/12214LetterofIntroductionFINAL.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 69622,
+   "checksum_sha256": "9f7f893dca74494b309f69a0b7788e3892b206f3af908641c21ffddc0ed749a6",
+   "title_for_reference": "Albuquerque City Council Letter of Introduction, January 22, 2014",
+   "body": "Albuquerque City Council",
+   "pages": 1,
+   "exclusion_reason": "A Letter of Introduction is the Council's list of communications and bills introduced at a meeting, recording for each an item number, a one-line subject and the committee it was referred to. It names records without containing them, which is the same defect as an agenda under the directory's substance test, and it is the companion document to the January 22 2014 agenda also excluded here.",
+   "precedent": "src-00f9dae00dbfbbc4",
+   "sample_content": "Item 1a is EC-14-22, the Mayor's appointment of Mrs. Karen L. Hudson to the Environmental Planning Commission, referred to the Land Use, Planning, and Zoning Committee; item 1b is EC-14-23, submission of the Five-Year Forecast."
+  },
+  {
+   "id": "src-fda00a8093561da6",
+   "authoritative_url": "https://www.cabq.gov/council/documents/meeting-agenda-documents/2314LetterofIntroductionFINAL.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 77873,
+   "checksum_sha256": "22effd15eb4510cc20aef0248a127d7853b8ea5dae5cb7ade878a5ef2ec73ddf",
+   "title_for_reference": "Albuquerque City Council Letter of Introduction, February 3, 2014",
+   "body": "Albuquerque City Council",
+   "pages": 3,
+   "exclusion_reason": "Same document type and same ground as the January 22 Letter of Introduction above.",
+   "precedent": "src-00f9dae00dbfbbc4"
+  },
+  {
+   "id": "src-09b266eabc8aa975",
+   "authoritative_url": "https://www.cabq.gov/council/documents/meeting-agenda-documents/21014FGOAgendaFINAL.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 86788,
+   "checksum_sha256": "a77689e6ec51ad3db3c7b2946a8ed038abf534cb6b9ae1777b4856e1e0f177b9",
+   "title_for_reference": "Finance and Government Operations Committee Agenda, February 10, 2014",
+   "body": "Finance and Government Operations Committee",
+   "pages": 2,
+   "exclusion_reason": "Agenda only: it lists items for consideration but contains none of the resolutions, reports or plans it names. This is the test the directory's own terminal record already applies. src-00f9dae00dbfbbc4, the Winrock Town Center Tax Increment Development Districts board agenda of January 20 2009, is excluded with the reason \"Meeting agenda lists consideration of two Winrock TID resolutions but contains neither final resolution nor supporting substantive plan\" and the validation status \"excluded: agenda only; does not contain the referenced adopted resolutions or substantive planning record\".",
+   "precedent": "src-00f9dae00dbfbbc4"
+  },
+  {
+   "id": "src-42c51b56f4c6fa2e",
+   "authoritative_url": "https://www.cabq.gov/council/documents/meeting-agenda-documents/31014FGOAgendaFINAL.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 87742,
+   "checksum_sha256": "72404a06b97ac249459c205c490c6ce7b617db0153a1e3a5467e5d71816a0368",
+   "title_for_reference": "Finance and Government Operations Committee Agenda, March 10, 2014",
+   "body": "Finance and Government Operations Committee",
+   "pages": 3,
+   "exclusion_reason": "Agenda only: it lists items for consideration but contains none of the resolutions, reports or plans it names. This is the test the directory's own terminal record already applies. src-00f9dae00dbfbbc4, the Winrock Town Center Tax Increment Development Districts board agenda of January 20 2009, is excluded with the reason \"Meeting agenda lists consideration of two Winrock TID resolutions but contains neither final resolution nor supporting substantive plan\" and the validation status \"excluded: agenda only; does not contain the referenced adopted resolutions or substantive planning record\".",
+   "precedent": "src-00f9dae00dbfbbc4"
+  },
+  {
+   "id": "src-8c067aacd117389a",
+   "authoritative_url": "https://www.cabq.gov/council/documents/meeting-agenda-documents/abcgc_meeting_agenda_3-3-09.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 173433,
+   "checksum_sha256": "0cf29b48cdc747d74ff68d8439f10073edb0ba076567d3e4fdade1d57338351b",
+   "title_for_reference": "Albuquerque/Bernalillo County Government Commission Agenda, March 3, 2009",
+   "body": "Albuquerque/Bernalillo County Government Commission",
+   "pages": 1,
+   "exclusion_reason": "Agenda only: it lists items for consideration but contains none of the resolutions, reports or plans it names. This is the test the directory's own terminal record already applies. src-00f9dae00dbfbbc4, the Winrock Town Center Tax Increment Development Districts board agenda of January 20 2009, is excluded with the reason \"Meeting agenda lists consideration of two Winrock TID resolutions but contains neither final resolution nor supporting substantive plan\" and the validation status \"excluded: agenda only; does not contain the referenced adopted resolutions or substantive planning record\".",
+   "precedent": "src-00f9dae00dbfbbc4"
+  },
+  {
+   "id": "src-d0bc37f3b3711f5d",
+   "authoritative_url": "https://www.cabq.gov/council/documents/meeting-agenda-documents/ABCGC%2003-17-2011.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 71987,
+   "checksum_sha256": "29a1d80137b2784ec20b41bdad8c7b84474e02f46cdd3b7743a0cf4459678a56",
+   "title_for_reference": "Albuquerque/Bernalillo County Government Commission Agenda, March 17, 2011",
+   "body": "Albuquerque/Bernalillo County Government Commission",
+   "pages": 1,
+   "exclusion_reason": "Agenda only: it lists items for consideration but contains none of the resolutions, reports or plans it names. This is the test the directory's own terminal record already applies. src-00f9dae00dbfbbc4, the Winrock Town Center Tax Increment Development Districts board agenda of January 20 2009, is excluded with the reason \"Meeting agenda lists consideration of two Winrock TID resolutions but contains neither final resolution nor supporting substantive plan\" and the validation status \"excluded: agenda only; does not contain the referenced adopted resolutions or substantive planning record\".",
+   "precedent": "src-00f9dae00dbfbbc4",
+   "note": "Its membership list is the one durable detail: the commission seats the Mayor, four County Commissioners and four City Councilors. That fact needs no archived agenda to record it."
+  },
+  {
+   "id": "src-ffa1c53ba6478833",
+   "authoritative_url": "https://www.cabq.gov/council/documents/meeting-agenda-documents/2414TrailsPIDBoardAgendaFINAL.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 11316,
+   "checksum_sha256": "79169fd76c4729c50b97a9532024012d2463f6aeb65f6d8c05bfb32b728c6c95",
+   "title_for_reference": "The Trails Public Improvement District Board Agenda, February 4, 2014",
+   "body": "The Trails Public Improvement District",
+   "pages": 1,
+   "exclusion_reason": "Agenda only: it lists items for consideration but contains none of the resolutions, reports or plans it names. This is the test the directory's own terminal record already applies. src-00f9dae00dbfbbc4, the Winrock Town Center Tax Increment Development Districts board agenda of January 20 2009, is excluded with the reason \"Meeting agenda lists consideration of two Winrock TID resolutions but contains neither final resolution nor supporting substantive plan\" and the validation status \"excluded: agenda only; does not contain the referenced adopted resolutions or substantive planning record\".",
+   "precedent": "src-00f9dae00dbfbbc4",
+   "lists_without_containing": "Resolution 2014-01 establishing an Open Meetings Policy and Annual Schedule of Meetings, and Resolution 2014-02 approving Quarterly Reports to the Department of Finance and Administration.",
+   "minutes_signal": "Item 3 is \"Review of minutes of August 1, 2013 meeting\", which again shows this board kept minutes it did not publish."
+  },
+  {
+   "id": "src-de4897208bd2a7b7",
+   "authoritative_url": "https://www.cabq.gov/council/documents/meeting-agenda-documents/21214TrailsMeetingAgenda.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 10195,
+   "checksum_sha256": "f85547cc7232f4cee9aacef59f84c3b146c8d023b172f04cc0d82c24b64111bb",
+   "title_for_reference": "The Trails Public Improvement District Board Agenda, February 12, 2014",
+   "body": "The Trails Public Improvement District",
+   "pages": 1,
+   "exclusion_reason": "Agenda only: it lists items for consideration but contains none of the resolutions, reports or plans it names. This is the test the directory's own terminal record already applies. src-00f9dae00dbfbbc4, the Winrock Town Center Tax Increment Development Districts board agenda of January 20 2009, is excluded with the reason \"Meeting agenda lists consideration of two Winrock TID resolutions but contains neither final resolution nor supporting substantive plan\" and the validation status \"excluded: agenda only; does not contain the referenced adopted resolutions or substantive planning record\".",
+   "precedent": "src-00f9dae00dbfbbc4",
+   "lists_without_containing": "Resolution 2014-03 approving a professional contract with David Taussig and Associates for election services, plus reports on a proposed settlement and on foreclosure proceedings."
+  },
+  {
+   "id": "src-bf9851ed23cd8281",
+   "authoritative_url": "https://www.cabq.gov/council/documents/meeting-agenda-documents/2414SaltilloPIDBoardMeetingAgendaFINAL.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 11056,
+   "checksum_sha256": "b1f8568dbd7799ceaec5255469f8e0b20fef38a0e1e2e9057458d9305236fb75",
+   "title_for_reference": "Saltillo Public Improvement District Board Agenda, February 4, 2014",
+   "body": "Saltillo Public Improvement District",
+   "pages": 1,
+   "exclusion_reason": "Agenda only: it lists items for consideration but contains none of the resolutions, reports or plans it names. This is the test the directory's own terminal record already applies. src-00f9dae00dbfbbc4, the Winrock Town Center Tax Increment Development Districts board agenda of January 20 2009, is excluded with the reason \"Meeting agenda lists consideration of two Winrock TID resolutions but contains neither final resolution nor supporting substantive plan\" and the validation status \"excluded: agenda only; does not contain the referenced adopted resolutions or substantive planning record\".",
+   "precedent": "src-00f9dae00dbfbbc4",
+   "lists_without_containing": "Resolutions 2014-01, 2014-02 and 2014-03, the last approving the Land Ownership Report."
+  },
+  {
+   "id": "src-c40120beb93660b5",
+   "authoritative_url": "https://www.cabq.gov/council/documents/meeting-agenda-documents/21214MesaDelSolPIDBoardMeetinagenda.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 11169,
+   "checksum_sha256": "db783c13a90a32f7627ace4426b93cf9e0882cc5e65bc031fad46944fd05b41f",
+   "title_for_reference": "Mesa del Sol Public Improvement Districts Board Agenda, February 12, 2014",
+   "body": "Mesa del Sol Public Improvement District",
+   "pages": 1,
+   "exclusion_reason": "Agenda only: it lists items for consideration but contains none of the resolutions, reports or plans it names. This is the test the directory's own terminal record already applies. src-00f9dae00dbfbbc4, the Winrock Town Center Tax Increment Development Districts board agenda of January 20 2009, is excluded with the reason \"Meeting agenda lists consideration of two Winrock TID resolutions but contains neither final resolution nor supporting substantive plan\" and the validation status \"excluded: agenda only; does not contain the referenced adopted resolutions or substantive planning record\".",
+   "precedent": "src-00f9dae00dbfbbc4",
+   "masthead_note": "The masthead reads DISTRICTS plural here and DISTRICT singular on the May 6 2014 agenda. The City varies its own wording between meetings; it is one body."
+  },
+  {
+   "id": "src-e34955a7c649cde1",
+   "authoritative_url": "https://www.cabq.gov/council/documents/meeting-agenda-documents/5614MesadelSolPIDAgendaFINAL.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 61609,
+   "checksum_sha256": "74e9751e50f31bae64aa30075b5032addee3ae398ab2df46a60d7f1709db150b",
+   "title_for_reference": "Mesa del Sol Public Improvement District Special Board Meeting Agenda, May 6, 2014",
+   "body": "Mesa del Sol Public Improvement District",
+   "pages": 1,
+   "exclusion_reason": "Agenda only: it lists items for consideration but contains none of the resolutions, reports or plans it names. This is the test the directory's own terminal record already applies. src-00f9dae00dbfbbc4, the Winrock Town Center Tax Increment Development Districts board agenda of January 20 2009, is excluded with the reason \"Meeting agenda lists consideration of two Winrock TID resolutions but contains neither final resolution nor supporting substantive plan\" and the validation status \"excluded: agenda only; does not contain the referenced adopted resolutions or substantive planning record\".",
+   "precedent": "src-00f9dae00dbfbbc4"
+  },
+  {
+   "id": "src-d47f5aece7717493",
+   "authoritative_url": "https://www.cabq.gov/council/documents/meeting-agenda-documents/mesa_del_sol_tidd_agenda_2-5-09.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 15701,
+   "checksum_sha256": "a5eb907d0da8840f36930b3f0e830053a3829c21bdcd2a075e42763aafbfbb15",
+   "title_for_reference": "Mesa del Sol Tax Increment Development Districts 1 to 5 Meeting Agenda, February 5, 2009",
+   "body": "Mesa del Sol Tax Increment Development Districts 1-5",
+   "pages": 1,
+   "exclusion_reason": "Agenda only: it lists items for consideration but contains none of the resolutions, reports or plans it names. This is the test the directory's own terminal record already applies. src-00f9dae00dbfbbc4, the Winrock Town Center Tax Increment Development Districts board agenda of January 20 2009, is excluded with the reason \"Meeting agenda lists consideration of two Winrock TID resolutions but contains neither final resolution nor supporting substantive plan\" and the validation status \"excluded: agenda only; does not contain the referenced adopted resolutions or substantive planning record\".",
+   "precedent": "src-00f9dae00dbfbbc4"
+  },
+  {
+   "id": "src-3241b0da2e08730c",
+   "authoritative_url": "https://www.cabq.gov/council/documents/meeting-agenda-documents/bhfsdocs-1210069-v1-winrock_board_agenda.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 14001,
+   "checksum_sha256": "6fd2eec810c46ed2d4c20d6a25e7e1c02906c3d950ea6ec5f5fb63d8f47cea45",
+   "title_for_reference": "Winrock Town Center Tax Increment Development Districts Board Agenda, November 14, 2008",
+   "body": "Winrock Town Center Tax Increment Development Districts",
+   "pages": 1,
+   "exclusion_reason": "Agenda only: it lists items for consideration but contains none of the resolutions, reports or plans it names. This is the test the directory's own terminal record already applies. src-00f9dae00dbfbbc4, the Winrock Town Center Tax Increment Development Districts board agenda of January 20 2009, is excluded with the reason \"Meeting agenda lists consideration of two Winrock TID resolutions but contains neither final resolution nor supporting substantive plan\" and the validation status \"excluded: agenda only; does not contain the referenced adopted resolutions or substantive planning record\".",
+   "precedent": "src-00f9dae00dbfbbc4",
+   "direct_precedent": "This is the same board as the already-excluded src-00f9dae00dbfbbc4, two months earlier. It lists Resolution 2008-01 establishing an Open Meetings Policy and Resolution 2008-02 approving Bylaws, and contains neither. The precedent applies without interpretation."
+  },
+  {
+   "id": "src-3a79439ff2bba95d",
+   "authoritative_url": "https://www.cabq.gov/council/documents/meeting-agenda-documents/quorum_agenda_1-20-09.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 63743,
+   "checksum_sha256": "d9a744fc40a3d54cc1feb3f69d13f8b8e495729eb8f88dba02a49b33f633ee56",
+   "title_for_reference": "Quorum at ABQ Uptown Tax Increment Development District Board Agenda, January 20, 2009",
+   "body": "Quorum at ABQ Uptown Tax Increment Development District",
+   "pages": 1,
+   "exclusion_reason": "Agenda only: it lists items for consideration but contains none of the resolutions, reports or plans it names. This is the test the directory's own terminal record already applies. src-00f9dae00dbfbbc4, the Winrock Town Center Tax Increment Development Districts board agenda of January 20 2009, is excluded with the reason \"Meeting agenda lists consideration of two Winrock TID resolutions but contains neither final resolution nor supporting substantive plan\" and the validation status \"excluded: agenda only; does not contain the referenced adopted resolutions or substantive planning record\".",
+   "precedent": "src-00f9dae00dbfbbc4"
+  },
+  {
+   "id": "src-d810ef001941f846",
+   "authoritative_url": "https://www.cabq.gov/council/documents/meeting-agenda-documents/bhfsdocs-1209862-v2-hunt_board_agenda.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 14340,
+   "checksum_sha256": "c4ec87cddf8659eb11b6dd66990049da9d21dfc21ee236c26a32800b3b7e2f6c",
+   "title_for_reference": "Quorum at ABQ Uptown Tax Increment Development District Board Agenda, November 14, 2008",
+   "body": "Quorum at ABQ Uptown Tax Increment Development District",
+   "pages": 1,
+   "exclusion_reason": "Agenda only: it lists items for consideration but contains none of the resolutions, reports or plans it names. This is the test the directory's own terminal record already applies. src-00f9dae00dbfbbc4, the Winrock Town Center Tax Increment Development Districts board agenda of January 20 2009, is excluded with the reason \"Meeting agenda lists consideration of two Winrock TID resolutions but contains neither final resolution nor supporting substantive plan\" and the validation status \"excluded: agenda only; does not contain the referenced adopted resolutions or substantive planning record\".",
+   "precedent": "src-00f9dae00dbfbbc4",
+   "filename_trap": "The file is named bhfsdocs-1209862-v2-hunt_board_agenda.pdf and the inventory titles it \"BHFSDOCS-1209862-v2-HuntBoardAgenda\". Its masthead reads QUORUM AT ABQ UPTOWN TAX INCREMENT DEVELOPMENT DISTRICT, not Hunt. The BHFSDOCS prefix is a document-management stamp from the outside law firm that drafted it, and the client name in the filename is not the name of the body meeting. If this record is ever cited, cite the masthead."
+  },
+  {
+   "id": "src-645154f89f6064aa",
+   "authoritative_url": "https://www.cabq.gov/council/documents/meeting-agenda-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "HTML",
+   "size_bytes": 176091,
+   "checksum_sha256": "467216ac057470a1397a6165f676ee622fc1bf03aade97e3da9b9f53609a4964",
+   "title_for_reference": "Meeting agenda documents collection landing page",
+   "body": "n/a",
+   "pages": 0,
+   "exclusion_reason": "The Plone collection landing page for this directory, not a document.",
+   "precedent": "src-00f9dae00dbfbbc4",
+   "content_kind_note": "HTML by leading bytes, unlike the twenty PDFs."
+  }
+ ],
+ "archival_note": "The single approved record is a static PDF and is inventory-only until an R2 archive object exists and its public download, exact size, SHA-256, and authoritative-source provenance are verified. Archive footprint if authorized: 148,196 bytes.",
+ "integration_note": "Codex integration lane: apply recommended_status values through scripts/project/Update-Candidate.ps1 only. Eighteen rows are excluded on the substance test and each names the terminal record that supplies it, so the ground is traceable rather than asserted. The single duplicate row's canonical lies in the police-oversight artifact of the same date and is itself at requires human review. The one approved row carries a title, a 20-to-50-word description, a proposed_canonical_page and a cross_listing. This artifact raises no requires-human-review row and, in revises_an_earlier_recommendation, proposes closing six raised by an earlier one. Sizes and checksums are first measurements; the inventory held neither.",
+ "safeguards": [
+  "no master-inventory.json write",
+  "no checkpoint.json write",
+  "no r2-inventory.json write",
+  "no site content change",
+  "no R2 upload",
+  "no commit, merge, or deploy",
+  "no terminal record modified"
+ ]
+}

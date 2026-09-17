@@ -1,139 +1,15 @@
-# ABQInfo multi-provider agent handoff protocol
+# Legacy Agent Handoff
 
-## Claude checkpointed consolidation-research lane — active September 13, 2026
+The former Codex/Claude dual-agent work ledger is no longer part of the active ABQInfo workflow.
 
-Claude's next work is the queue in `project-state/discovery/claude-consolidation-research-queue-2026-09-13.json`. This is a research-only lane supporting Codex's approved site cleanup. Work slices in ascending `priority` order and continue automatically until the queue is complete or a systemic blocker occurs.
+For current work, read:
 
-Checkpoint after **every document or official-source meeting check**, not merely at the end of a slice. Write only within the queue's unique `research/staging/claude-consolidation-checkpoints/<slice>/items/` directories and the named self-contained slice-result artifacts. Complete each JSON through a temporary sibling and rename it atomically. Before doing work, scan existing checkpoints; a valid result is immutable and must never be repeated. If usage stops, the next Claude session resumes at the first missing document in the lowest-priority unfinished slice.
+1. `AGENTS.md`
+2. `project-state/CURRENT.md`
+3. only the task-specific project-state files and artifacts needed for the work
 
-For every annual committee-minutes slice, exhaustively check the official calendar/archive for missing approved minutes, cancellations, no-quorum meetings, and agendas eligible under the missing-minutes policy. For every program slice, review the complete source family, version relationships, governing records, page order, proposed contents, and whether a compilation would exceed 100-150 pages. Do not edit shared inventory, project checkpoint, site content, R2 state, Git state, or deployment state. Codex alone integrates accepted research.
+The complete historical ledger was preserved verbatim at:
 
-This protocol lets Codex, Claude, or another approved coding agent continue ABQInfo work without losing provenance, validation evidence, or Git history. It is intentionally provider-neutral: the repository and GitHub are the shared source of truth, not a chat transcript.
+`project-state/history/AGENT-HANDOFF-legacy-2026-09-16.md`
 
-## Non-negotiable rules
-
-1. Only one agent may make content, inventory, or project-state changes in a checkout at a time.
-2. Work only from a fresh `origin/main` base on a dedicated branch. Do not continue an old branch after another PR has merged without first integrating current `origin/main`.
-3. Before creating a PR, list all open PRs targeting `main`. If another open PR overlaps the planned pages, inventory, scripts, or project state, stop and ask the user whether to wait for it to merge or to integrate it first.
-4. Preserve unrelated modified and untracked files. Never stage, commit, reset, checkout, delete, or move them merely to obtain a clean working tree.
-5. `project-state/master-inventory.json` and `project-state/checkpoint.json` are durable handoff records. Update candidates promptly through `scripts/project/Update-Candidate.ps1`; do not hand-edit status changes or rebuild the inventory unless the task specifically requires it.
-6. Do not merge a PR, deploy the site, overwrite an R2 object, expose credentials, or change access controls without the user's explicit authorization.
-
-## GitHub access for Claude or another external agent
-
-Claude needs a shell-enabled coding environment with filesystem access to the clone (for example, Claude Code or another approved local-agent host). A browser-only chat cannot independently clone, edit, commit, or push this repository. The user must grant the GitHub account that Claude will use at least **write** access to `armandhammer/abqinfo` (or an organization/team role with equivalent repository access). Access must be granted through GitHub's normal invitation, team, or organization controls; no token, password, SSH private key, or credential file belongs in this repository or a prompt.
-
-On Windows, install Git and the GitHub CLI (`gh`) on the machine where Claude will work if they are not already installed:
-
-```powershell
-winget install --id Git.Git --exact
-winget install --id GitHub.cli --exact
-```
-
-Authenticate interactively as the authorized GitHub account and configure Git to use that credential:
-
-```powershell
-gh auth login
-# Select GitHub.com, HTTPS, then browser or device-code authentication.
-gh auth status
-gh auth setup-git
-```
-
-Set the author identity once if it is not already configured:
-
-```powershell
-git config --global user.name "Your Name"
-git config --global user.email "you@example.com"
-```
-
-Clone the repository if needed, then enter it:
-
-```powershell
-git clone https://github.com/armandhammer/abqinfo.git
-Set-Location abqinfo
-git remote -v
-```
-
-For every new assignment, update the remote state and check access before making changes:
-
-```powershell
-git fetch origin
-git status --short --branch
-gh repo view armandhammer/abqinfo
-gh pr list --base main --state open
-```
-
-If `gh auth status`, `gh repo view`, or `git push` fails, stop and ask the user to grant or repair access. Do not work around the failure with someone else's token or by storing secrets in files, environment variables, issue comments, or chat.
-
-R2 uploads require the separately managed Windows credential described in `scripts/README.md`. An agent must not create, export, transmit, or commit that credential. If it is unavailable, complete the non-upload work and report the blocked archival step.
-
-## Start-of-turn checklist
-
-Run these checks before researching or modifying content:
-
-```powershell
-git fetch origin
-git status --short --branch
-Get-Content project-state/checkpoint.json -Raw
-Get-Content project-state/master-inventory.json -Raw
-if (Test-Path project-state/active-run.json) { Get-Content project-state/active-run.json -Raw }
-gh pr list --base main --state open
-```
-
-Read `AGENTS.md` and `project-state/README.md`. Treat their repository policies as binding regardless of the agent provider.
-
-When no blocking PR exists, create a new branch from `origin/main`:
-
-```powershell
-git switch -c provider/short-batch-name origin/main
-```
-
-Use a provider-prefixed branch name such as `codex/...` or `claude/...`. Never commit directly to `main`.
-
-## Working rules
-
-- Begin from `master-inventory.json`'s `next_pending_id` unless the user scopes a different record or batch.
-- Prefer existing deterministic scripts for crawling, download, hashing, extraction, deduplication, R2 plans/uploads, inventory updates, link checks, and Hugo validation.
-- Record source URLs, dates, byte sizes, SHA-256 hashes, provenance, duplicate/supersession decisions, placements, and validation evidence in the inventory and batch artifacts.
-- Treat provenance and archival correctness as separate from publication quality. Every proposed visible document needs the structured quality assessment required by `scripts/project/Test-ContentPublicationQuality.ps1`, including visual inspection, standalone value, information density, series/component review, publication form, and rationale. Prefer a consolidated master historical record when short serial or component files are meaningful mainly together; preserve each authoritative original and its provenance even when it is not separately listed on the site.
-- Treat Legistar attachments as wrappers until their substantive content is compared with City-source copies.
-- Do not claim an agenda is minutes. Apply the repository's missing-minutes policy.
-- Save meaningful progress immediately. If nearing a provider limit, stop after a completed, durable state transition rather than beginning an uncheckpointed download, upload, bulk edit, or conflict resolution.
-- Keep a normal content PR to a coherent 15–30 visible-addition batch across 3–8 appropriate pages unless a documented boundary prevents it.
-
-## Parallel verification exception
-
-The one-writer rule does not prevent multiple agents from performing read-only verification concurrently. When Codex and Claude verify files, official sources, or links in parallel, they must follow [PARALLEL-VERIFICATION.md](PARALLEL-VERIFICATION.md): separate detached worktrees, one immutable run manifest, deterministic non-overlapping shards, one unique create-once result per worker, and one coordinator/integrator.
-
-Workers may not change the inventory, checkpoint, active-run state, content, discovery queues, Git state, or R2. Worker proposals are evidence only. The integrator must reject stale or overlapping input, explicitly name every accepted candidate, and apply accepted inventory changes through `Update-Candidate.ps1` under the single-writer lease.
-
-For a long-running campaign, also follow [AUTONOMOUS-VERIFICATION-CAMPAIGNS.md](AUTONOMOUS-VERIFICATION-CAMPAIGNS.md). A usage pause is not a handoff failure: on `Continue`, derive progress from the active pointer and immutable candidate artifacts, resume the assigned provider-neutral lane at its first missing result, and reconcile intent-only integrations through their deterministic operation markers.
-
-## Handoff procedure
-
-Before ending work, the departing agent must:
-
-1. Finish or explicitly record the current candidate state; do not leave ambiguous work in memory only.
-2. Update `master-inventory.json` through the project script and update `checkpoint.json` with completed range, counts, next ID, blockers, and a paste-ready resume command.
-3. Save batch decisions, archive plans, source validation, public byte-identical validation, and any unresolved review evidence under `project-state/discovery/`.
-4. Run proportionate validation. For content changes this normally includes `git diff --check`, the project's validation scripts, Hugo build, and a placement check. Record failures plainly.
-5. Commit only files belonging to the assignment. Leave unrelated changes unstaged and name them in the handoff.
-6. Push the branch and open a PR only after checking open PRs targeting `main`. The PR description must include every modified ABQInfo page's direct `https://abqinfo.com/` URL and exact visible additions, removals, moves, and cross-listings.
-7. Give the next provider the completed template in `agent-handoff-template.md`, including the exact branch, commit, PR URL/state, next candidate ID, validation results, and unresolved decisions.
-
-## Receiving a handoff
-
-The receiving agent must not assume the supplied chat summary is current. It must fetch and verify the branch, PR, checkpoint, inventory, and open-PR list itself.
-
-If the handoff branch has an open PR and `main` advanced:
-
-1. Inspect the new `main` commits and the PR's changed files.
-2. Integrate current `origin/main` into the handoff branch only after preserving unrelated working-tree changes.
-3. Resolve only the actual conflict, re-run validation, and push the resolution.
-4. Recheck PR mergeability. Do not merge or deploy unless the user explicitly asks.
-
-## Copy-ready prompts
-
-Use the template in [agent-handoff-template.md](agent-handoff-template.md). A minimal Claude start prompt is:
-
-> You are continuing ABQInfo in the existing repository. Read `AGENTS.md`, `project-state/AGENT-HANDOFF.md`, `project-state/checkpoint.json`, `project-state/master-inventory.json`, and `project-state/README.md`. Fetch `origin`, inspect `git status`, and list open PRs targeting `main` before editing. Preserve unrelated changes. Use a dedicated branch, deterministic project scripts, and durable inventory/checkpoint updates. Do not merge or deploy without explicit user approval. Fill in and follow the current handoff template below.
+Do not load the historical ledger as routine startup context. Consult it only when a task specifically requires historical findings that are not available in the relevant saved discovery artifact or current project state.

@@ -1,0 +1,612 @@
+{
+ "batch_id": "councilor-district-2-cluster-research-2026-09-11",
+ "lane": "Claude research lane: www.cabq.gov/council/documents/councilor-district-2-documents cluster",
+ "generated_at": "2026-09-12T02:39:06.471480+00:00",
+ "cluster": "The District 2 councilor's document collection in the Albuquerque City Council library, covering the terms of Councillor Isaac Benton.",
+ "scope": "All 27 pending-review candidates in that directory. The directory holds 51 records in total, 24 of them already terminal, which is unusual: most of the Complete Streets material here was triaged by an earlier pass and this lane had to reconcile against it rather than classify fresh.",
+ "brief": "Separate substantive district records from constituent notices and press material, applying the district-5 method: render image-only records, check the enactment number on every legislative file, and check against R2 objects already held.",
+ "brief_finding": "The separation is stark: five records carry real content and twenty-two are event calendars, flyers, notices, or the same file counted twice. But the five include the largest document triaged anywhere in this run, a 302-page Downtown Albuquerque walkability analysis, whose author is identifiable only from a flyer in the same directory that is recommended excluded. The reconciliation against existing records also turned up an inventory-hygiene problem the lane brief did not anticipate.",
+ "method": "Fetched all 27 pending candidates without touching shared inventory state and recorded exact byte length and SHA-256 for each. Grouped every record in the directory, terminal ones included, by normalised URL, which is what exposed the duplicate-record problem. Rendered the three image-only PDFs. Fetched the already-validated adopted Complete Streets ordinance read-only and measured the pending December draft against it. Compared all checksums against the 1,612 checksummed inventory records.",
+ "classification_only": true,
+ "shared_state_written": [],
+ "inventory_hygiene_finding": {
+  "headline": "Twelve URLs in this one directory carry more than one inventory record each: 26 records for 12 files.",
+  "how_found": "By grouping every record in the directory on its URL with /view stripped, rather than on its id or title. No content measurement was needed.",
+  "cause": "Two discovery passes titled the same file differently. One pass took the title from the organisation that wrote the document (\"Greater Albuquerque Chamber of Commerce\"), the other from the link text on the Council page (\"Complete Streets Letter of Support2\"). Both created records.",
+  "pending_half": "Seven of the extra records are still pending and are recommended duplicate in this artifact. Each shares a URL with a twin that is already excluded, so the disposition is settled by the twin.",
+  "terminal_half_needs_codex": {
+   "severity": "correctness",
+   "finding": "Five URL groups consist entirely of already-terminal records, so this lane cannot touch them, and three of those groups pair two validated records for one file. The archive is double-counting validated documents.",
+   "groups": [
+    {
+     "file": "CompleteStreetsOrdinancePresentation.pdf",
+     "records": [
+      "src-0089b84c33b46e84 (duplicate)",
+      "src-83279794dcb22b7a (validated)",
+      "src-f4de3930a6e04830 (validated)"
+     ],
+     "note": "Three records for one file, two of them validated."
+    },
+    {
+     "file": "CompleteStreetsLegislationPacket.pdf",
+     "records": [
+      "src-439525683f2a5e58 (validated)",
+      "src-8b18827057480dac (validated)"
+     ]
+    },
+    {
+     "file": "O27_CompleteStreet_FloorSub_Final_as_amended.pdf",
+     "records": [
+      "src-50dbc9e020356e05 (validated)",
+      "src-912bc14c869a79b0 (validated)"
+     ],
+     "note": "This is the adopted Complete Streets ordinance, and it is the canonical this artifact's one superseded row points at."
+    },
+    {
+     "file": "TrafficReportFINALJuly2014.pdf",
+     "records": [
+      "src-ce3c9f54fa83aba9 (validated)",
+      "src-df8844768db111e4 (implemented)"
+     ]
+    },
+    {
+     "file": "Appendix.pdf",
+     "records": [
+      "src-66d6dd3f2f7408bb (validated)",
+      "src-89f97c6a639700bb (implemented)"
+     ]
+    }
+   ],
+   "recommended_action": "Codex should reconcile these five groups to one record per file. Claude did not modify any of them. Two carry a validated-and-implemented pair, which may be deliberate if the project distinguishes an inventory record from a site placement record; the three validated-validated and validated-duplicate-validated groups are harder to read as intentional.",
+   "wider_question": "This lane found the pattern by URL-grouping one directory. Whether it recurs across the 7,074-record inventory is a cheap check worth running before any count of validated records is reported: group all records on normalised direct_file_url and list groups with more than one terminal record."
+  }
+ },
+ "duplicate_and_supersession_checks": {
+  "internal_byte_collisions": 0,
+  "cross_inventory_byte_collisions": 0,
+  "checksums_compared_against": 1612,
+  "relationships_found_by_hash": 0,
+  "relationships_found_by_url_grouping": 7,
+  "relationships_found_by_measurement": 1,
+  "note": "A fourth distinct detection method, and the cheapest yet. The seven duplicate rows here needed no hashing, no text extraction and no rendering: two records pointing at one URL are one document by definition. The earlier clusters in this run needed byte hashing, normalized-text coverage, and R2-object inspection respectively; this one needed only a group-by. Run the URL group-by first in future clusters, before fetching anything."
+ },
+ "integration_flags": [
+  {
+   "severity": "correctness",
+   "affects": [
+    "src-0089b84c33b46e84",
+    "src-83279794dcb22b7a",
+    "src-f4de3930a6e04830",
+    "src-439525683f2a5e58",
+    "src-8b18827057480dac",
+    "src-50dbc9e020356e05",
+    "src-912bc14c869a79b0",
+    "src-ce3c9f54fa83aba9",
+    "src-df8844768db111e4",
+    "src-66d6dd3f2f7408bb",
+    "src-89f97c6a639700bb"
+   ],
+   "finding": "Eleven already-terminal records cover five files. Three groups pair two validated records for a single document and one group has three records for one document.",
+   "recommended_action": "Reconcile to one record per file, and run the inventory-wide URL group-by described in inventory_hygiene_finding before any validated-record count is reported. Claude did not modify these records."
+  },
+  {
+   "severity": "storage",
+   "affects": [
+    "src-d31769eae697e92b"
+   ],
+   "finding": "The walkability analysis is 31,565,710 bytes, 80 per cent of this batch's 39,569,998-byte footprint and the largest single document triaged in this run.",
+   "recommended_action": "Size it into the upload queue deliberately rather than folding it into a routine batch, as with the NPDES Manual and the Volcano Heights plan parts."
+  },
+  {
+   "severity": "attribution",
+   "affects": [
+    "src-d31769eae697e92b",
+    "src-aa08d71a1dd69370"
+   ],
+   "finding": "The walkability analysis carries no author on its title page. The only thing identifying Jeff Speck as its author is the lecture announcement in the same directory, which is recommended excluded.",
+   "recommended_action": "Carry the attribution into the retained record's description and evidence rather than relying on the flyer surviving. It is already recorded in both rows of this artifact."
+  },
+  {
+   "severity": "discovery-lead",
+   "affects": [
+    "src-385036989b8d1925"
+   ],
+   "finding": "The excluded hearing notice names a substantive record the archive does not hold: proposed text amendments to Chapter 6 of the Sawmill/Wells Park Sector Development Plan, Project 1000029, heard by the Environmental Planning Commission on October 9, 2014. Neither the amendments nor the Sawmill/Wells Park plan itself is in the inventory.",
+   "recommended_action": "Add both to the discovery queue. The Council library has a sawmill-documents subdirectory still untriaged, which is the obvious place to look first."
+  },
+  {
+   "severity": "completes-a-record",
+   "affects": [
+    "src-54ea9bb0628a1a53"
+   ],
+   "finding": "The inventory holds the Downtown Neighborhood Area Traffic Report final of July 2014 as validated and implemented records plus its appendix, and a superseded February 2014 draft, but nothing showing what was put to the public. This June 5, 2014 presentation is that.",
+   "recommended_action": "Place it with the existing DNA Traffic Report records rather than separately."
+  }
+ ],
+ "counts": {
+  "reviewed": 27,
+  "approved_for_addition": 5,
+  "superseded": 1,
+  "duplicate": 7,
+  "excluded": 14,
+  "requires_human_review": 0
+ },
+ "link_check": {
+  "checked": 28,
+  "http_200": 28,
+  "failed": 0,
+  "method": "Full HTTP GET with a browser user agent, 2026-09-11, on the 27 pending candidates plus a read-only fetch of the already-validated adopted Complete Streets ordinance for the supersession measurement.",
+  "containers_verified": "26 genuine PDFs and one HTML collection page by leading bytes. Three PDFs have no text layer and were rendered."
+ },
+ "approved_for_addition": [
+  {
+   "id": "src-d31769eae697e92b",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/SPECK_ALB.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 31565710,
+   "checksum_sha256": "27d476b857b97fa14682306ef4c02afd2c12c8d75ce6158c8751df40a4b5fbfc",
+   "title": "Downtown Albuquerque Walkability Analysis and Recommendations (Jeff Speck)",
+   "description": "The consultant walkability study analyses Downtown Albuquerque street by street and recommends changes to make the centre walkable, covering street design, traffic operation, parking, land use, and the sequencing of interventions.",
+   "description_word_count": 31,
+   "date": null,
+   "pages": 302,
+   "proposed_canonical_page": "content/development-land-use/redevelopment-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/transportation-plans.md",
+     "reason": "It is a street-design and traffic-operations study as much as a redevelopment one."
+    }
+   ],
+   "evidence": "302 pages and 31,565,710 bytes, by a wide margin the largest single document triaged in this run. The title page reads \"DOWNTOWN ALBUQUERQUE WALKABILITY ANALYSIS AND RECOMMENDATIONS\". The directory also holds the announcement of the author's Albuquerque lecture, src-aa08d71a1dd69370, which names him: \"City Councilor Isaac Benton welcomes Jeff Speck, urbanist and author, to speak in Albuquerque\".",
+   "why_retained": "A major commissioned analysis of Downtown Albuquerque and the only copy in the inventory. The site already carries the Downtown 2050 plan and the 2025 Downtown parking study; this is the walkability analysis that sits between them in subject and predates both.",
+   "dating_note": "No printed date on the pages read. The surrounding directory material is 2014 and the lecture announcement is undated; do not assert a year the document does not carry.",
+   "size_flag": "At 31.5 MB this is a storage decision in its own right; see integration_flags."
+  },
+  {
+   "id": "src-18d68c05c5230e3e",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/CentralAveMonitoringSummaryHandout_v1.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 2043638,
+   "checksum_sha256": "bbae6d4390d596d6b63812d5bdb4d6d21dd4586f4721ba1fe46fb25a7906968c",
+   "title": "Central Avenue Complete Street Performance Monitoring Summary",
+   "description": "The City handout summarises performance monitoring for the Central Avenue complete street work, setting out the background and previous planning efforts and reporting the measures used to judge whether the redesign performed as intended.",
+   "description_word_count": 34,
+   "date": null,
+   "pages": 12,
+   "proposed_canonical_page": "content/transportation/transportation-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/roadway-projects/_index.md",
+     "reason": "Central Avenue is a named City corridor project and the monitoring belongs with the corridor record."
+    }
+   ],
+   "evidence": "12 pages headed \"PERFORMANCE MONITORING SUMMARY, Background & Previous Planning Efforts\".",
+   "why_retained": "Post-implementation measurement is rare in this archive. The inventory holds the Complete Streets ordinance, its legislation packet and its presentation, all validated, but nothing that reports how the resulting street actually performed. This does.",
+   "dating_note": "No printed date; the directory context is 2014 to 2015. Do not assert one."
+  },
+  {
+   "id": "src-222f76b6ba5f337e",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/CentralandEstablishedUrbanAreas_8x11.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 3154645,
+   "checksum_sha256": "e5efa3dcb809179d6acda4011c9ba7a03ee54b9774285b3459fa44c496f936ad",
+   "title": "Comprehensive Plan Central and Established Urban Areas Map",
+   "description": "The City map shows the Comprehensive Plan's Central Urban and Established Urban area designations across Albuquerque, the geography that determines where the Complete Streets ordinance and related area policies apply.",
+   "description_word_count": 30,
+   "date": null,
+   "pages": 1,
+   "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/transportation-plans.md",
+     "reason": "It was published as a Complete Streets supporting map and defines where that ordinance applies."
+    }
+   ],
+   "evidence": "One large-format sheet, 3,154,645 bytes, labelled \"Comprehensive Plan Central and Established Urban Areas\" with arterial labels from Westside Boulevard and McMahon to Coors Bypass and NM 528.",
+   "why_retained": "The Comprehensive Plan area designations are cited throughout Albuquerque land-use material and the archive holds no map of them. It pairs directly with the 1988-to-2002 Comprehensive Plan recommended in the volcano-heights artifact of the same date, which is the text those designations come from.",
+   "dating_note": "No printed date. Do not assert one."
+  },
+  {
+   "id": "src-54ea9bb0628a1a53",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/DNAPublicMeeting6514FINALPresentation.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 1552148,
+   "checksum_sha256": "8f914dda0ac99cb1921319954206bf05a39e56aefa86c90bf17b878940f3cd12",
+   "title": "Downtown Neighborhood Area Traffic Study: Public Meeting Presentation, June 5, 2014",
+   "description": "The City presentation to the June 2014 public meeting sets out the Downtown Neighborhood Area traffic study's findings and options, covering the street network, circulation patterns, and the changes under consideration for the area.",
+   "description_word_count": 34,
+   "date": "2014-06-05",
+   "pages": 50,
+   "proposed_canonical_page": "content/transportation/roadway-projects/_index.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/redevelopment-plans.md",
+     "reason": "The Downtown Neighborhood Area is a named planning area with its own plan records."
+    }
+   ],
+   "evidence": "50 pages headed \"Downtown Neighborhood Area Traffic Study\". The filename records the meeting date as 6/5/14 and marks the deck FINAL.",
+   "why_retained": "The public-facing half of a study whose technical output the archive already holds. The inventory carries the DNA Traffic Report final of July 2014 as validated and implemented records (src-ce3c9f54fa83aba9, src-df8844768db111e4) and its appendix (src-66d6dd3f2f7408bb), but nothing showing what was put to the public or when. This presentation predates the final report by a month.",
+   "relationship": "Companion to the already-validated DNA Traffic Report; not a draft of it. The superseded draft of that report is a separate record, src-959643609168b387."
+  },
+  {
+   "id": "src-6228d26224c6e19f",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/HighlandParkRenderedPlan.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 1253857,
+   "checksum_sha256": "c4a35e486e5d1e34c5235ab1be587ec1b0b2414ec731459dbf8416aca3f1d9b4",
+   "title": "Highland Park Renovation Record Drawing, City Project 644294 (Sheet LP101)",
+   "description": "The City landscape architecture record drawing for the Highland Park renovation keys eight numbered interventions across the park block, covering an accessible pedestrian walk, accessible parking, landscape buffers, play areas, and turf replacing removed parking.",
+   "description_word_count": 35,
+   "date": null,
+   "pages": 1,
+   "proposed_canonical_page": "content/public-works/parks-recreation.md",
+   "cross_listings": [],
+   "evidence": "One large-format sheet, rendered and read. The title block reads \"CITY OF ALBUQUERQUE, STRATEGIC PLANNING AND DESIGN, PARKS AND RECREATION DEPARTMENT, HIGHLAND PARK RENOVATION\", City Project No. 644294, Zone Map K-14 and K-15, Sheet LP101, prepared by Morrow Reardon Wilkinson Miller, Ltd., Landscape Architects. The park block is bounded by Gold Avenue SE, Locust Street SE, Silver Avenue SE and a public alley.",
+   "why_retained": "A named, numbered City park capital project with a keyed site plan, which is the class of record the parks page already carries under Current Parks and Open Space Projects. It is the only Highland Park record in the inventory.",
+   "dating_note": "The record-drawing date block is blank on the sheet. Do not assert a date.",
+   "caution": "The sheet is headed RECORD DRAWINGS but its as-built and city-engineer-approval blocks are unsigned, so it should not be described as an as-built."
+  }
+ ],
+ "superseded": [
+  {
+   "id": "src-3934eab6ae32efb7",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/O-14-27_CommitteeSub-Dec10_DRAFT_2.pdf/view",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 218950,
+   "checksum_sha256": "d47d16a8a65113ae17886f02700f19cbfcfe19a6c69f997c8c08b26b271f295d",
+   "title_for_reference": "Council Bill C/S O-14-27: Complete Streets Ordinance, committee substitute, December 10, 2014 draft",
+   "pages": 11,
+   "canonical_id": "src-50dbc9e020356e05",
+   "canonical_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/O27_CompleteStreet_FloorSub_Final_as_amended.pdf",
+   "canonical_state": "validated, and titled Adopted Legislation in the inventory",
+   "basis": "A committee-substitute draft superseded by the floor substitute as amended, which the inventory already holds as a validated record. The bill designation changes on the face of the two documents: this draft is C/S O-14-27 at 11 pages, the successor is F/S O-14-27 at 12 pages.",
+   "measurement": "Normalized-token coverage 0.9819 in both directions with a sequence ratio of 0.4865: the same ordinance re-laid-out and amended on the floor, not a different instrument.",
+   "hash_found_it": false,
+   "note": "Two earlier drafts in this directory are already terminal-superseded, src-6705ec42d3bb6d2e for November 7 and src-dbf42102a1f6ab24. This December 10 draft is the last one before adoption and completes that chain."
+  }
+ ],
+ "duplicate": [
+  {
+   "id": "src-9e03c0a2637b4ea0",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/2014PositionSupportingCompleteStreetsOrdinance.pdf",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 126801,
+   "checksum_sha256": "5aac4bb0047e8e8eb184460a50d9a762f50514871c966dbb3230a0845e65b825",
+   "title_for_reference": "Complete Streets Ordinance letter of support from the Greater Albuquerque Chamber of Commerce",
+   "pages": 2,
+   "canonical_id": "src-e271c19776152b9e",
+   "canonical_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/2014PositionSupportingCompleteStreetsOrdinance.pdf",
+   "canonical_state": "already terminal-excluded as \"Complete Streets Letter of Support2\"",
+   "basis": "Not a similar document but the same URL. The inventory holds two records for this one file: one titled from the organisation that wrote it and one titled from the link text on the Council page. The organisation-titled record is still pending; the link-text record is already excluded.",
+   "hash_found_it": false,
+   "same_url": true,
+   "inherits_disposition": "The canonical is excluded as a stakeholder support letter that adds little policy or technical information. That reasoning applies to this record unchanged, because it is the same file. Recording it as a duplicate rather than re-excluding it preserves the fact that the inventory double-counted one document."
+  },
+  {
+   "id": "src-1aad59487828ec12",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreetsLetterofSupportAPANM.pdf",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 743287,
+   "checksum_sha256": "271b6c6d5d930cb38f438bf0ecbd470ca080a6c844bd2b4bc634485abe4bfdc9",
+   "title_for_reference": "Complete Streets Ordinance letter of support from the American Planning Association, New Mexico Chapter",
+   "pages": 1,
+   "canonical_id": "src-be8f4bed636a4047",
+   "canonical_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreetsLetterofSupportAPANM.pdf",
+   "canonical_state": "already terminal-excluded as \"Complete Streets Letter of Support1\"",
+   "basis": "Not a similar document but the same URL. The inventory holds two records for this one file: one titled from the organisation that wrote it and one titled from the link text on the Council page. The organisation-titled record is still pending; the link-text record is already excluded.",
+   "hash_found_it": false,
+   "same_url": true,
+   "inherits_disposition": "The canonical is excluded as a stakeholder support letter that adds little policy or technical information. That reasoning applies to this record unchanged, because it is the same file. Recording it as a duplicate rather than re-excluding it preserves the fact that the inventory double-counted one document."
+  },
+  {
+   "id": "src-dac1fb8d66e29479",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreetsNMASLALetterofSupport.pdf",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 425305,
+   "checksum_sha256": "7cdac8aded12e150f18caccfd262e6c92b606090a466fa670bb23fcb6cb8ae68",
+   "title_for_reference": "Complete Streets Ordinance letter of support from the American Society of Landscape Architects, New Mexico",
+   "pages": 2,
+   "canonical_id": "src-81fec81c380435d0",
+   "canonical_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreetsNMASLALetterofSupport.pdf",
+   "canonical_state": "already terminal-excluded as \"Complete Streets Letter of Support3\"",
+   "basis": "Not a similar document but the same URL. The inventory holds two records for this one file: one titled from the organisation that wrote it and one titled from the link text on the Council page. The organisation-titled record is still pending; the link-text record is already excluded.",
+   "hash_found_it": false,
+   "same_url": true,
+   "inherits_disposition": "The canonical is excluded as a stakeholder support letter that adds little policy or technical information. That reasoning applies to this record unchanged, because it is the same file. Recording it as a duplicate rather than re-excluding it preserves the fact that the inventory double-counted one document."
+  },
+  {
+   "id": "src-568151e20e03cfa4",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreets_ABQCityCouncilLtr_12015.pdf",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 294856,
+   "checksum_sha256": "eaef0167cb82b264cda131db38e7f6494d77f977b93edf3c7de54c6824ddb34c",
+   "title_for_reference": "Complete Streets Ordinance letter of support from the American Institute of Architects",
+   "pages": 1,
+   "canonical_id": "src-8f7e044375532900",
+   "canonical_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/CompleteStreets_ABQCityCouncilLtr_12015.pdf",
+   "canonical_state": "already terminal-excluded as \"Complete Streets Letter of Support7\"",
+   "basis": "Not a similar document but the same URL. The inventory holds two records for this one file: one titled from the organisation that wrote it and one titled from the link text on the Council page. The organisation-titled record is still pending; the link-text record is already excluded.",
+   "hash_found_it": false,
+   "same_url": true,
+   "inherits_disposition": "The canonical is excluded as a stakeholder support letter that adds little policy or technical information. That reasoning applies to this record unchanged, because it is the same file. Recording it as a duplicate rather than re-excluding it preserves the fact that the inventory double-counted one document."
+  },
+  {
+   "id": "src-2d4310a701de4e61",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/LetterofSupportforCABQCompleteStreets.pdf",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 679211,
+   "checksum_sha256": "031094f75c91a520300f19424edfa8332a6816f303179f0a468d410fc9aa4500",
+   "title_for_reference": "Complete Streets Ordinance letter of support from the New Mexico Complete Streets Leadership Team",
+   "pages": 1,
+   "canonical_id": "src-bc780b95996af003",
+   "canonical_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/LetterofSupportforCABQCompleteStreets.pdf",
+   "canonical_state": "already terminal-excluded as \"Complete Streets Letter of Support4\"",
+   "basis": "Not a similar document but the same URL. The inventory holds two records for this one file: one titled from the organisation that wrote it and one titled from the link text on the Council page. The organisation-titled record is still pending; the link-text record is already excluded.",
+   "hash_found_it": false,
+   "same_url": true,
+   "inherits_disposition": "The canonical is excluded as a stakeholder support letter that adds little policy or technical information. That reasoning applies to this record unchanged, because it is the same file. Recording it as a duplicate rather than re-excluding it preserves the fact that the inventory double-counted one document."
+  },
+  {
+   "id": "src-881523bf4e425992",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/MiABQCompleteStreetsLetterofSupport.pdf",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 278404,
+   "checksum_sha256": "dbbb8c6f404b5244c177457589fe761ef7c6a2c60e7ec571dbcda8e4e31900a7",
+   "title_for_reference": "Complete Streets Ordinance letter of support from the Downtown Albuquerque Millennial Project",
+   "pages": 5,
+   "canonical_id": "src-f8188bd262397e5b",
+   "canonical_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/MiABQCompleteStreetsLetterofSupport.pdf",
+   "canonical_state": "already terminal-excluded as \"Complete Streets Letter of Support6\"",
+   "basis": "Not a similar document but the same URL. The inventory holds two records for this one file: one titled from the organisation that wrote it and one titled from the link text on the Council page. The organisation-titled record is still pending; the link-text record is already excluded.",
+   "hash_found_it": false,
+   "same_url": true,
+   "inherits_disposition": "The canonical is excluded as a stakeholder support letter that adds little policy or technical information. That reasoning applies to this record unchanged, because it is the same file. Recording it as a duplicate rather than re-excluding it preserves the fact that the inventory double-counted one document."
+  },
+  {
+   "id": "src-ba088806917968aa",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/NMHWCLetterofSupportCompleteStreetsOrdinance01427.pdf",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 432598,
+   "checksum_sha256": "ee4e13d80f1cf0741d7af39450ab0f07634fcc0a24e23601623df628391300ff",
+   "title_for_reference": "Complete Streets Ordinance letter of support from the New Mexico Healthier Weight Council",
+   "pages": 2,
+   "canonical_id": "src-d779aab19483f927",
+   "canonical_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/NMHWCLetterofSupportCompleteStreetsOrdinance01427.pdf",
+   "canonical_state": "already terminal-excluded as \"Complete Streets Letter of Support5\"",
+   "basis": "Not a similar document but the same URL. The inventory holds two records for this one file: one titled from the organisation that wrote it and one titled from the link text on the Council page. The organisation-titled record is still pending; the link-text record is already excluded.",
+   "hash_found_it": false,
+   "same_url": true,
+   "inherits_disposition": "The canonical is excluded as a stakeholder support letter that adds little policy or technical information. That reasoning applies to this record unchanged, because it is the same file. Recording it as a duplicate rather than re-excluding it preserves the fact that the inventory double-counted one document."
+  }
+ ],
+ "excluded": [
+  {
+   "id": "src-bdc2b727531fe546",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/May2014CulturalServicesMasterCalendar.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 413814,
+   "checksum_sha256": "3a94235fbcf081acbfda2cb10d8900e8af7c4fafe2b83cbe34508d643604dbe9",
+   "title_for_reference": "May 2014 Master Calendar of Cultural Events and Activities, Cultural Services Department",
+   "pages": 17,
+   "exclusion_reason": "A monthly listing of City cultural events. Every entry expired within the month it names, and the series has no interpretive value beyond the events themselves.",
+   "category": "monthly event calendar",
+   "series": "Six consecutive months, May to October 2014, all excluded on the same ground."
+  },
+  {
+   "id": "src-b8ce3dac10f06189",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/June2014CulturalServicesMasterCalendar.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 571273,
+   "checksum_sha256": "36d1701a931564cea3206ada4231411ab5619e662738ac302a434af92cb90210",
+   "title_for_reference": "June 2014 Master Calendar of Cultural Events and Activities, Cultural Services Department",
+   "pages": 30,
+   "exclusion_reason": "A monthly listing of City cultural events. Every entry expired within the month it names, and the series has no interpretive value beyond the events themselves.",
+   "category": "monthly event calendar",
+   "series": "Six consecutive months, May to October 2014, all excluded on the same ground."
+  },
+  {
+   "id": "src-d5d5762a61168290",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/July2014CulturalServicesMasterCalendar.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 514396,
+   "checksum_sha256": "2105d3e1ed3129f0de82f20296d92677d70618da833a833cb906318e1bd86b74",
+   "title_for_reference": "July 2014 Master Calendar of Cultural Events and Activities, Cultural Services Department",
+   "pages": 25,
+   "exclusion_reason": "A monthly listing of City cultural events. Every entry expired within the month it names, and the series has no interpretive value beyond the events themselves.",
+   "category": "monthly event calendar",
+   "series": "Six consecutive months, May to October 2014, all excluded on the same ground."
+  },
+  {
+   "id": "src-70612036b0b5dfa4",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/August2014CulturalServicesMasterCalendar.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 435149,
+   "checksum_sha256": "de0c44cd75dc7e860ecd9564877a8d1fcea914634304a99581fbcd96f9f31a2b",
+   "title_for_reference": "August 2014 Master Calendar of Cultural Events and Activities, Cultural Services Department",
+   "pages": 18,
+   "exclusion_reason": "A monthly listing of City cultural events. Every entry expired within the month it names, and the series has no interpretive value beyond the events themselves.",
+   "category": "monthly event calendar",
+   "series": "Six consecutive months, May to October 2014, all excluded on the same ground."
+  },
+  {
+   "id": "src-30428d73a043ced0",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/September2014CulturalServicesMasterCalendar.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 453731,
+   "checksum_sha256": "ddba48c3f7e772a301c9da5b3a860ead02fe8b20215faecc7294a0c1aed84262",
+   "title_for_reference": "September 2014 Master Calendar of Cultural Events and Activities, Cultural Services Department",
+   "pages": 19,
+   "exclusion_reason": "A monthly listing of City cultural events. Every entry expired within the month it names, and the series has no interpretive value beyond the events themselves.",
+   "category": "monthly event calendar",
+   "series": "Six consecutive months, May to October 2014, all excluded on the same ground."
+  },
+  {
+   "id": "src-cb7dda40e52ce7cb",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/October2014CulturalServicesMasterCalendar2.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 463127,
+   "checksum_sha256": "c390ca94f26dab3d62c9f71a47278327e4c233d4a52af9673480e94592d0f6ee",
+   "title_for_reference": "October 2014 Master Calendar of Cultural Events and Activities, Cultural Services Department",
+   "pages": 23,
+   "exclusion_reason": "A monthly listing of City cultural events. Every entry expired within the month it names, and the series has no interpretive value beyond the events themselves.",
+   "category": "monthly event calendar",
+   "series": "Six consecutive months, May to October 2014, all excluded on the same ground."
+  },
+  {
+   "id": "src-9bec272a402e22ab",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/516ArtsJuneEvents.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 1014790,
+   "checksum_sha256": "88c5e62ab63cc2345cc486bc1e5420c063d21006bea71444029ef2c5bc48b053",
+   "title_for_reference": "516 Arts June Events Calendar",
+   "pages": 4,
+   "exclusion_reason": "An events calendar for a private downtown arts organisation, published on the councilor's page as a courtesy. Not a City record.",
+   "category": "third-party event calendar"
+  },
+  {
+   "id": "src-3d558921eed83f30",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/ShakespeareonthePlaza.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 18429,
+   "checksum_sha256": "5cb040ea65445f983f4cac202489450b1b4bd7086fd021ec8919e043c86e596a",
+   "title_for_reference": "Shakespeare on the Plaza event flyer",
+   "pages": 1,
+   "exclusion_reason": "A flyer for a performance series. An event notice, spent when the performances ended.",
+   "category": "event flyer"
+  },
+  {
+   "id": "src-988e0fb95a74f2c1",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/FlyerHealthyAgingNOCMEv2.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 200317,
+   "checksum_sha256": "0ede25fad08c10a8d9af2762544a0e495c759c0a4b3d3d74fd5feed8177c7180",
+   "title_for_reference": "Healthy Aging series flyer, UNM School of Medicine Institute for Ethics",
+   "pages": 1,
+   "exclusion_reason": "A flyer for a lecture series run by a university institute. Not a City record and not a City event.",
+   "category": "third-party event flyer"
+  },
+  {
+   "id": "src-de7de072cc095357",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/RYMFlyer.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 2163555,
+   "checksum_sha256": "e13da964b0e5b93b54a2879c4ab9e960c9ae473a07d9ace8a36e6cf6be27f460",
+   "title_for_reference": "Rail Yards Market flyer",
+   "pages": 1,
+   "exclusion_reason": "A season flyer for the Rail Yards Market, \"food. art. music. Sundays 9-3, May 4-Nov 2\". An event notice.",
+   "category": "event flyer",
+   "note": "The Rail Yards themselves are well covered: the rail-yards-advisory-board artifact of the same date recommends seventeen records for that site. This flyer adds nothing to them."
+  },
+  {
+   "id": "src-aa08d71a1dd69370",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/Jeff%20Speck%20Announcement.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 253847,
+   "checksum_sha256": "cb5ea67d8dac926ec9298f37c3c3ec6e8d325fe86529ac73982fb4718bf5ed6a",
+   "title_for_reference": "Jeff Speck lecture announcement",
+   "pages": 1,
+   "exclusion_reason": "An announcement that Councillor Isaac Benton was hosting the urbanist Jeff Speck to speak in Albuquerque. An event notice.",
+   "category": "event announcement",
+   "useful_fact": "It is what identifies the author of the 302-page walkability analysis recommended for addition in this batch, which carries no author on its title page. Recorded here so the attribution is not lost with the flyer."
+  },
+  {
+   "id": "src-711bf07c3fe40d74",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/BarelasPedestrianBridgeRibbonCutting_PressRelease.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 63511,
+   "checksum_sha256": "18e202750052e89b800bc6322e22f0c5902fb84b1e503542fb21d6a0c45623c9",
+   "title_for_reference": "Barelas Pedestrian Bridge ribbon cutting press release",
+   "pages": 1,
+   "exclusion_reason": "A City Council press release announcing a ribbon cutting. The inventory already carries a terminal exclusion for a Council news item of this kind, src-0b20b31b78ea3865, and five more were excluded in the councilor-district-5 artifact of the same date.",
+   "category": "councilor press release"
+  },
+  {
+   "id": "src-385036989b8d1925",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents/RecognizedNANotificationLetterSawmills_WellsParkSDP.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 84715,
+   "checksum_sha256": "dd19531ffd2492c58b4e79fc7e0daba37daf000f089f7baae05e4e4adab05d86",
+   "title_for_reference": "Neighborhood association notification letter, proposed text amendments to the Sawmill/Wells Park Sector Development Plan, August 27, 2014",
+   "pages": 1,
+   "exclusion_reason": "A hearing notice sent to recognised neighbourhood associations under the Neighborhood Recognition Ordinance. It announces a meeting rather than recording a decision, and the amendments it announces are not in this directory.",
+   "category": "hearing notice",
+   "discovery_lead": "Rendered and read. It gives the details needed to find the substantive record: Project 1000029, proposed text amendments to Chapter 6 of the Sawmill/Wells Park Sector Development Plan to update the road network and transportation design, Environmental Planning Commission hearing October 9, 2014, staff planner Vicente M. Quevedo. Neither the amendments nor the Sawmill/Wells Park plan is in the inventory."
+  },
+  {
+   "id": "src-42469f4bc1ba2c77",
+   "authoritative_url": "https://www.cabq.gov/council/documents/councilor-district-2-documents",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "HTML",
+   "size_bytes": 177306,
+   "checksum_sha256": "c4c355b401c476600534e382d9e7ba52e0ac385de2f864565d13ce785d1b583e",
+   "title_for_reference": "Councilor District 2 documents collection landing page",
+   "exclusion_reason": "The Plone collection landing page for this directory, not a document.",
+   "category": "collection landing page",
+   "note": "Three paginated views of this same listing are already terminal-excluded as src-7a409f39d2efa5c9, src-45cbbefa896507d4 and src-7eb126e84c6a8609, titled only \"1\", \"2\" and \"3\"."
+  }
+ ],
+ "archival_note": "All 5 approved records are static PDFs and are inventory-only until an R2 archive object exists for each and its public download, exact size, SHA-256, and authoritative-source provenance are verified. Combined archive footprint if authorized: 39,569,998 bytes, dominated by the 31,565,710-byte walkability analysis. Three of the five carry a null date because no page prints one, and none may be given an asserted date.",
+ "integration_note": "Codex integration lane: apply recommended_status values through scripts/project/Update-Candidate.ps1 only. The single superseded row's canonical is an already-validated record. All seven duplicate rows are same-URL duplicates whose canonicals are already excluded, and each carries same_url true and an inherits_disposition note; they need no content check. The 5 approved rows each carry a title, a 20-to-50-word description, a proposed_canonical_page and cross_listings where a second page applies. This artifact raises no requires-human-review row. Separately, eleven already-terminal records in this directory cover five files and need reconciliation; that is recorded in inventory_hygiene_finding and is outside this lane's classification scope. Sizes and checksums are first measurements; the inventory held neither.",
+ "safeguards": [
+  "no master-inventory.json write",
+  "no checkpoint.json write",
+  "no r2-inventory.json write",
+  "no site content change",
+  "no R2 upload",
+  "no commit, merge, or deploy",
+  "no terminal record modified"
+ ]
+}

@@ -1,0 +1,428 @@
+{
+ "batch_id": "police-oversight-task-force-cluster-research-2026-09-11",
+ "lane": "Claude research lane: www.cabq.gov/council/documents/police-oversight-task-force-documents cluster",
+ "generated_at": "2026-09-11T21:51:42.271946+00:00",
+ "cluster": "The Ad Hoc Police Oversight Task Force record set in the Albuquerque City Council document library at www.cabq.gov/council/documents/police-oversight-task-force-documents.",
+ "scope": "All 20 pending-review candidates in that directory, which is the entire directory: no record in it held any other status, and the City's own listing returns exactly these 20 files. Completing this artifact leaves the directory with no non-terminal records.",
+ "brief": "Separate the task force's findings, recommendations, and adopted ordinance material from meeting handouts, applying the missing-minutes agenda policy as recorded in the Rail Yards artifact.",
+ "brief_finding": "The directory's own structure does most of the separating once it is measured. The 238-page final report to Council is the canonical package, and nine of the other nineteen files are extracts from it or drafts of it, a relationship no hash can see and that only token-coverage measurement establishes. Two files are neither task force product nor handout and are the most consequential records present: the United States Department of Justice findings letter on APD of April 10, 2014, and the City's collective bargaining agreement with the Albuquerque Police Officers Association, which is the document that determines what civilian oversight can actually reach.",
+ "method": "Fetched all 20 candidates without touching shared inventory state and recorded exact byte length and SHA-256 for each; all 20 are genuine PDFs by leading bytes. Extracted text with pdftotext -layout and rendered the one file with no text layer through pdf.js in a headless browser to identify it. Ran pairwise normalized-text similarity and token coverage across the whole cluster, which is how the nine component and version relationships to the final report were found. Compared all 20 checksums against the 1,612 checksummed inventory records. Paired agendas against minutes by meeting date, then ran a recorded exhaustive official-source review for the one task force agenda with no matching minutes. Fetched one out-of-cluster file read-only to settle a cross-directory duplicate question.",
+ "classification_only": true,
+ "shared_state_written": [],
+ "precedent_applied": "The AGENTS.md canonical-package rule governs the report family: where one file's substantive content is wholly contained in another, retain one canonical original and document the relationship. The AGENTS.md missing-minutes agenda policy governs the four agendas. The federal-document line drawn in the Development Review Services artifact of the same date governs the DOJ letter.",
+ "duplicate_and_supersession_checks": {
+  "internal_byte_collisions": 0,
+  "cross_inventory_byte_collisions": 0,
+  "checksums_compared_against": 1612,
+  "relationships_found_by_hash": 0,
+  "relationships_found_by_normalized_text_or_token_coverage": 9,
+  "note": "Hashing found nothing in this directory, and would not have: the nine relationships are one 238-page report and the extracts, drafts and handouts that were cut from it or grew into it. Every one was found by token coverage. Two of them would also have been mis-called by coverage alone and needed the sequence ratio as well: the January 15 draft recommendations and the Goal 3 substitute sit above 0.85 coverage inside the final recommendations while sharing almost no sequence with them, because the text was rewritten rather than copied."
+ },
+ "filename_trap": {
+  "affects": [
+   "src-ae7ae3ce5e1f23f8",
+   "src-b4b2a26ac036021a"
+  ],
+  "finding": "POTF Final Recommendations_updated.pdf is the earlier document and POTF Final Recommendations.pdf is the later one. The file called \"updated\" lacks the Statement of Principles that the other carries as section A, and 0.9944 of its tokens sit inside the other while only 0.8750 of the other's sit inside it.",
+  "rule": "Do not order these two by filename. This is the fourth directory in this run where a filename asserts a version or a date that the document contradicts."
+ },
+ "exhaustive_minutes_review": {
+  "purpose": "The AGENTS.md missing-minutes agenda policy permits preserving an official agenda only after a recorded exhaustive official-source review finds no approved minutes for that meeting. This is that record, for the August 6, 2014 task force meeting.",
+  "steps": [
+   "Fetched the City's own directory listing on 2026-09-11. It returns exactly 20 links, matched one for one against the 20 inventory records. The only summary minutes the City publishes for this task force are the four from January 2014.",
+   "Searched all 7,074 inventory candidates for police oversight task force material. Nothing outside this directory holds task force minutes.",
+   "Read the August 6 agenda itself, whose item 3 is \"Approval of Summary Minutes July 23, 2014\". That proves the task force continued to meet and to keep minutes after January, and that at least one further set of minutes exists unpublished."
+  ],
+  "conclusion": "No approved minutes for the August 6, 2014 meeting exist in any official source reachable from the City site or the inventory. The agenda carries a substantive seven-part business list.",
+  "limit_stated_plainly": "This review establishes that the minutes are unpublished, not that they were never written; the agenda's own reference to July 23 minutes shows the task force kept minutes it did not publish. Nothing in an agenda shows whether the meeting took place, was cancelled, or lacked a quorum, so that half of the policy cannot be affirmatively cleared. If held to a stricter standard this one record moves to requires human review and nothing else in the batch changes."
+ },
+ "integration_flags": [
+  {
+   "severity": "cross-directory duplicate",
+   "affects": [
+    "src-5961fb8a4db0fb4e",
+    "src-bdf2981b4899255b"
+   ],
+   "finding": "The same April 10, 2014 DOJ findings letter is published twice in the Council library under different names in different directories. This cluster's copy is born-digital, 46 pages, 242,627 bytes, with a full text layer. The other, src-bdf2981b4899255b in councilor-district-5-documents, is a scanned image copy, 48 pages, 4,283,835 bytes, with no text layer at all; its first page was rendered and read to confirm it is the same letter to Mayor Richard J. Berry. Different bytes, different hashes, and the other record carries no checksum in the inventory, so nothing automated connects them.",
+   "recommended_action": "When councilor-district-5-documents is triaged, make src-bdf2981b4899255b a duplicate of src-5961fb8a4db0fb4e. The born-digital copy is the one to keep: it is text-searchable and one eighteenth the size. This lane did not modify that record, which is outside its cluster."
+  },
+  {
+   "severity": "currency",
+   "affects": [
+    "src-8fa6fb11a3c5125b"
+   ],
+   "finding": "The collective bargaining agreement's term ran from July 16, 2014 to July 16, 2015 and expired more than eleven years ago. Its filename, NewUnionContract.pdf, says only \"new\".",
+   "recommended_action": "Any title must state the exact term. It must never be presented as the agreement in force, and if a current APOA agreement is later located this record becomes its superseded predecessor rather than a competing copy."
+  },
+  {
+   "severity": "placement",
+   "affects": [
+    "all 8 approved records"
+   ],
+   "finding": "content/city-data/public-safety-data.md is the only page that fits this material, and it currently carries data snapshots rather than reports and legal instruments. Eight records including a 238-page report, a federal findings letter and a union contract is a different kind of content from what the page holds today.",
+   "recommended_action": "Consider a distinct section on that page, for example Police Oversight Records, rather than appending to the existing data lists. A page-structure choice within an existing page, not a site-architecture change."
+  },
+  {
+   "severity": "storage",
+   "affects": [
+    "src-f4204196f921104e"
+   ],
+   "finding": "The final report is 17,608,309 bytes, 83 per cent of this batch's total archive footprint.",
+   "recommended_action": "Size it into any upload batch deliberately. The checkpoint already carries an open blocker for 17 originals awaiting separate explicit R2 upload approval."
+  }
+ ],
+ "counts": {
+  "reviewed": 20,
+  "approved_for_addition": 8,
+  "superseded": 5,
+  "duplicate": 3,
+  "excluded": 3,
+  "requires_human_review": 1
+ },
+ "link_check": {
+  "checked": 20,
+  "http_200": 20,
+  "failed": 0,
+  "method": "Full HTTP GET with a browser user agent, 2026-09-11.",
+  "containers_verified": "All 20 files are genuine PDFs by leading bytes. One, the collective bargaining agreement, has no text layer and was rendered."
+ },
+ "approved_for_addition": [
+  {
+   "id": "src-f4204196f921104e",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/POTF%20Report_Final%20013114.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 17608309,
+   "checksum_sha256": "97f41654add557bd5eb91b3e3f79a1182bb26c31a96fb3f376821ad9d86a945f",
+   "title": "Report on the Activities of the Ad Hoc Police Oversight Task Force, Prepared for the City Council in Conformance With Resolution 13-143 (January 31, 2014)",
+   "description": "The task force's complete final report to the Albuquerque City Council sets out its statement of principles, its findings on the civilian police oversight process, and its recommendations for amending the Police Oversight Ordinance, with the supporting record appended.",
+   "description_word_count": 39,
+   "date": "2014-01-31",
+   "pages": 238,
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [],
+   "evidence": "238 pages and 17,608,309 bytes, by far the largest record in the directory. Measured token coverage establishes it as the canonical package: the standalone statement of principles and the final recommendations are each 1.0000 contained in it, the report draft is 1.0000 contained, the January 15 draft recommendations 0.9776, the Goal 3 substitute 0.9663, the cover memorandum 0.9557, and the cover-letter handout 0.9528.",
+   "why_retained": "The canonical original of nine other files in this directory. Under the AGENTS.md rule, retain one canonical original and document the component relationships rather than archiving every extract separately."
+  },
+  {
+   "id": "src-5961fb8a4db0fb4e",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/140410DOJAPDFindingsLetter.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 242627,
+   "checksum_sha256": "7201110150d377945947aed4006be21fb0f230676dd715004c47f4066fe2d022",
+   "title": "United States Department of Justice Civil Rights Division Findings Letter on the Albuquerque Police Department, April 10, 2014",
+   "description": "The federal findings letter reports reasonable cause to believe the Albuquerque Police Department engages in a pattern or practice of excessive force including deadly force, identifies structural deficiencies in oversight, training, and policy, and sets out remedial measures.",
+   "description_word_count": 38,
+   "date": "2014-04-10",
+   "pages": 46,
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [],
+   "evidence": "46 pages addressed to Mayor Richard J. Berry from the Office of the Assistant Attorney General, Civil Rights Division, under the Violent Crime Control and Law Enforcement Act of 1994, 42 U.S.C. Section 14141.",
+   "why_retained": "A federal publication, but one entirely about Albuquerque: it is the single document that reshaped APD oversight and the reason the ordinance amendments in this directory were written. This is the distinction applied when the Federal Communications Commission antenna-safety guide was excluded from the Development Review Services library in the artifact of the same date: a federal document with no Albuquerque-specific content is out, a federal finding about an Albuquerque department is in.",
+   "cross_directory_note": "A second copy exists outside this cluster; see integration_flags."
+  },
+  {
+   "id": "src-8fa6fb11a3c5125b",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/NewUnionContract.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 3013027,
+   "checksum_sha256": "e2913e597c39bb536585aa69761aab84ca4215fb0de7e6e4707a76ab453136b7",
+   "title": "City of Albuquerque and Albuquerque Police Officers Association Collective Bargaining Agreement, Effective July 16, 2014 to July 16, 2015",
+   "description": "The collective bargaining agreement between the City and the police officers' union sets the terms governing Albuquerque police employment for the 2014 to 2015 term, including the disciplinary and investigatory provisions that constrain civilian oversight.",
+   "description_word_count": 35,
+   "date": "2014-07-16",
+   "pages": 50,
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [],
+   "evidence": "Image-only PDF with no text layer; the cover was rendered and read. It carries a 2014-2015 tab and the stamp \"CITY OF ALBUQUERQUE OFFICE OF ADMIN HEARINGS JUL 16 2014\".",
+   "why_retained": "The union contract is the document that determines what a civilian oversight body can and cannot do about police discipline, which is why the task force's own library holds it. It is the only copy in the inventory.",
+   "currency_warning": "This term expired on July 16, 2015. The title must carry the exact term so no reader takes it as the current agreement, and it must never be presented as in force."
+  },
+  {
+   "id": "src-acac2ea782e05c6d",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/1-8-14%20POTF%20Summary%20Minutes.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 44575,
+   "checksum_sha256": "1ace954dc2d9964a96b85417a7b3854d61c0fc4e8332839723eb75f335c17251",
+   "title": "Police Oversight Task Force Summary Minutes, January 8, 2014",
+   "description": "The task force's summary minutes record attendance and the business transacted at its January 8, 2014 meeting as it worked toward recommendations for amending the Albuquerque Police Oversight Ordinance.",
+   "description_word_count": 29,
+   "date": "2014-01-08",
+   "pages": 3,
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [],
+   "evidence": "Three pages headed \"Summary Minutes\", listing members present and Council staff present."
+  },
+  {
+   "id": "src-eafbf706ed009dcc",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/1-15-14%20POTF%20Summary%20Minutes.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 41303,
+   "checksum_sha256": "b5045ec82f77c156309f9b01bdaaff73d1ae3416a8d1d71b2757cb65bd54d5e6",
+   "title": "Police Oversight Task Force Summary Minutes, January 15, 2014",
+   "description": "The task force's summary minutes record attendance and business at its January 15, 2014 meeting, the session that produced the dated draft recommendations work product also held in this directory.",
+   "description_word_count": 30,
+   "date": "2014-01-15",
+   "pages": 2,
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [],
+   "evidence": "Two pages headed \"Summary Minutes\". The draft recommendations src-834a319683f40c09 are stamped \"as of 1/15/14\", tying them to this meeting."
+  },
+  {
+   "id": "src-d59b9b37da75fde5",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/1-21-14%20POTF%20Summary%20Minutes.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 46010,
+   "checksum_sha256": "e70e5a5fb3e3f3b12d0a9102a0e0e5b90ed0e556e52162930a248835d32db03d",
+   "title": "Police Oversight Task Force Summary Minutes, January 21, 2014",
+   "description": "The task force's summary minutes record attendance and business at its January 21, 2014 meeting, at which a substitute text for Goal 3 on the composition of the civilian oversight board was tabled.",
+   "description_word_count": 33,
+   "date": "2014-01-21",
+   "pages": 2,
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [],
+   "evidence": "Two pages headed \"Summary Minutes\". The Goal 3 substitute src-e58c5af13f0ef4e0 is dated 1-21-14, tying it to this meeting. The agenda for the same meeting is recommended excluded below."
+  },
+  {
+   "id": "src-1fb997ce90184cb5",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/1-29-14%20POTF%20Summary%20Minutes.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 168547,
+   "checksum_sha256": "bccc6c6121b6944c4b4bae269363461c6d089f2acb9214e4c4f0aeedb411f742",
+   "title": "Police Oversight Task Force Summary Minutes, January 29, 2014",
+   "description": "The task force's summary minutes record attendance and business at its January 29, 2014 meeting, the working session two days before the final report, at which members went through the recommendations line by line.",
+   "description_word_count": 34,
+   "date": "2014-01-29",
+   "pages": 4,
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [],
+   "evidence": "Four pages headed \"Summary Minutes\", naming members and Council staff present including Frances Armijo and Stephanie Yara. Three handouts in this directory are filenamed for this date. The agenda for the same meeting is recommended excluded below."
+  },
+  {
+   "id": "src-f44c5eec8b947674",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/POCTaskForceAgendaAugust6.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 77796,
+   "checksum_sha256": "5fc8a2117c1eb8c214ede6a1995498e0c18054d67376f47af0f8df6610963d64",
+   "title": "Police Oversight Task Force Agenda, August 6, 2014 (approved minutes not located)",
+   "description": "The task force's published agenda sets out a final review of seven specific Police Oversight Ordinance amendment recommendations, covering board size, member selection and removal, subject matter experts, access to investigative files, and selection of the independent review officer.",
+   "description_word_count": 39,
+   "date": "2014-08-06",
+   "pages": 1,
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [],
+   "evidence": "One page with a substantive numbered business list, not a bare notice. Item 4 enumerates seven lettered topics from the number of oversight board members through the selection, retention and removal of the review officer. The agenda notes that public comment would not be taken at this meeting.",
+   "why_retained": "Preserved under the AGENTS.md missing-minutes agenda policy. It is the only record of the task force's work after January 2014, showing the seven questions still open seven months later.",
+   "policy": "Must be labelled \"Agenda (approved minutes not located)\" or equivalent, must link the official source, must preserve the meeting date, and must never be presented as minutes or as a substitute for them.",
+   "review_recorded": "See exhaustive_minutes_review."
+  }
+ ],
+ "superseded": [
+  {
+   "id": "src-834a319683f40c09",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/POTF%20Draft%20Recommendations-Work%20Product_1_15_14.pdf/view",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 332572,
+   "checksum_sha256": "1f2bf4033365ca88c0a218a4541f3f956acee117e6e879197a53bb75fcd6527b",
+   "title_for_reference": "Police Oversight Task Force DRAFT Recommendations, Work Product as of January 15, 2014",
+   "canonical_id": "src-f4204196f921104e",
+   "canonical_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/POTF%20Report_Final%20013114.pdf/view",
+   "basis": "A dated working draft of the recommendations, marked DRAFT on its face and stamped \"(as of 1/15/14)\". It was superseded twice over within sixteen days, first by the January 31 final recommendations and then by the final report that contains them.",
+   "measurement": "Token coverage 0.9776 inside the retained final report and 0.8590 inside the January 31 final recommendations; normalized-text similarity is low in both cases because the recommendations were substantially rewritten, which is what makes this a version rather than a component.",
+   "hash_found_it": false,
+   "immediate_successor": "src-b4b2a26ac036021a"
+  },
+  {
+   "id": "src-e58c5af13f0ef4e0",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/POTF_RECOMMENDATIONS_FB%20_1-21-14.pdf/view",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 117710,
+   "checksum_sha256": "ff63663f61d95928e8dd82e99be4f70d40e8a75c56018ddee35c1b3353212532",
+   "title_for_reference": "Police Oversight Task Force, Substitute for Goal 3, January 21, 2014",
+   "canonical_id": "src-f4204196f921104e",
+   "canonical_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/POTF%20Report_Final%20013114.pdf/view",
+   "basis": "A single-goal substitute text tabled at the January 21 meeting, proposing that the oversight board be broadly representative of the community, balanced geographically and across stakeholders, and collectively hold a broad range of skills and experience. It was absorbed into the final recommendations.",
+   "measurement": "Token coverage 0.9663 inside the retained final report and 0.8652 inside the January 31 final recommendations.",
+   "hash_found_it": false,
+   "immediate_successor": "src-b4b2a26ac036021a"
+  },
+  {
+   "id": "src-ae7ae3ce5e1f23f8",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/POTF%20Final%20Recommendations_updated.pdf/view",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 196604,
+   "checksum_sha256": "0234bb07781606e86e9fcb97d63a567f6b3e55c6f7219e1643d44b63b9df9a6c",
+   "title_for_reference": "Police Oversight Task Force Final Recommendations, Updated",
+   "canonical_id": "src-f4204196f921104e",
+   "canonical_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/POTF%20Report_Final%20013114.pdf/view",
+   "basis": "Despite the word \"updated\" in its filename this is the earlier of the two final-recommendations documents, not the later one. It lacks the Statement of Principles that section A of the January 31 document carries, and its text is almost wholly contained in that document.",
+   "measurement": "Against the January 31 recommendations src-b4b2a26ac036021a: normalized-text similarity 0.6234 with token coverage 0.9944 of this file inside it and only 0.8750 the other way, so the January 31 document is the superset. Token coverage inside the retained final report is 1.0000.",
+   "hash_found_it": false,
+   "immediate_successor": "src-b4b2a26ac036021a"
+  },
+  {
+   "id": "src-eda751586522df88",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/POTF%20Report%20draft1%20Handout%2001292014.pdf/view",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 244632,
+   "checksum_sha256": "74e58c745c026f14e93260169e2bdb6674ba21f3570d88082cea88640f6e45bb",
+   "title_for_reference": "Report on the Activities of the Ad Hoc Police Oversight Task Force, Draft 1 (handout, January 29, 2014)",
+   "canonical_id": "src-f4204196f921104e",
+   "canonical_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/POTF%20Report_Final%20013114.pdf/view",
+   "basis": "A fifteen-page draft of the same report, distributed as a handout at the January 29 meeting two days before the final version. Its filename says \"Handout 01292014\" on its face.",
+   "measurement": "Token coverage 1.0000 inside the retained 238-page final report; the final report is roughly ten times longer in normalized characters, 352,150 against 36,009.",
+   "hash_found_it": false
+  },
+  {
+   "id": "src-7e6495cf09df9304",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/CoverLetter_final%20Handout%2001292014.pdf/view",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 4927,
+   "checksum_sha256": "f2ca3b690bf39201678ff7f308b11f6dcf37b7139558455ea420dfda3c8e0339",
+   "title_for_reference": "Police Oversight Task Force Cover Letter, final draft (handout, January 29, 2014)",
+   "canonical_id": "src-f4204196f921104e",
+   "canonical_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/POTF%20Report_Final%20013114.pdf/view",
+   "basis": "A draft of the transmittal letter to Council President Ken Sanchez, distributed as a handout at the January 29 meeting. The letter actually sent is the interoffice memorandum src-2a426f210dd181dd, which is itself a component of the retained final report.",
+   "measurement": "Against the sent memorandum: normalized-text similarity 0.3008 with token coverage 0.8868 of this draft inside it. Token coverage inside the retained final report is 0.9528.",
+   "hash_found_it": false,
+   "immediate_successor": "src-2a426f210dd181dd"
+  }
+ ],
+ "duplicate": [
+  {
+   "id": "src-3ead951a710687fa",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/POTF%20-%20STATEMENT%20OF%20PRINCIPLES.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 92728,
+   "checksum_sha256": "c82adc31b708e67795196166da3423b996ac540e4db5db956bf5c16a5cf050e3",
+   "title_for_reference": "Police Oversight Task Force Statement of Principles",
+   "canonical_id": "src-f4204196f921104e",
+   "canonical_url": null,
+   "basis": "A one-page extract of the statement of principles, published separately. It is section A of the January 31 final recommendations and appears verbatim inside the retained final report.",
+   "measurement": "Token coverage 1.0000 inside the final recommendations and 1.0000 inside the retained final report.",
+   "hash_found_it": false
+  },
+  {
+   "id": "src-b4b2a26ac036021a",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/POTF%20Final%20Recommendations.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 317706,
+   "checksum_sha256": "a7fcf036dae6fe7460e4d6d72455511a6e8a3609503ea882916dad9ed51e3ccb",
+   "title_for_reference": "Police Oversight Task Force Recommendations for Improving the City of Albuquerque Police Oversight Process, January 31, 2014",
+   "canonical_id": "src-f4204196f921104e",
+   "canonical_url": null,
+   "basis": "The complete final recommendations, dated the same day as the final report and published separately from it. It is the substantive core of the retained report rather than a different document, and it is the successor named for three of the superseded rows above.",
+   "measurement": "Token coverage 1.0000 inside the retained final report. It is itself a superset of the statement of principles (1.0000), the \"updated\" recommendations (0.9944), the January 15 draft (0.8590) and the Goal 3 substitute (0.8652).",
+   "hash_found_it": false
+  },
+  {
+   "id": "src-2a426f210dd181dd",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/POTFCoverLetter_memo.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 7556,
+   "checksum_sha256": "41bb4d669a3106cf9d5a8afc1371b59afdb667a619023cf799de1766e4e14e1b",
+   "title_for_reference": "Police Oversight Task Force Cover Letter Memorandum to City Council President Ken Sanchez",
+   "canonical_id": "src-f4204196f921104e",
+   "canonical_url": null,
+   "basis": "The interoffice memorandum transmitting the recommendations to Council. It is bound into the retained final report.",
+   "measurement": "Token coverage 0.9557 inside the retained final report.",
+   "hash_found_it": false
+  }
+ ],
+ "excluded": [
+  {
+   "id": "src-de4e623c20869360",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/POTF%20Items%20for%20Discussion%20January%2029.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 120575,
+   "checksum_sha256": "a262ac6fbb16cc1c13b664d3de0593b39789c7f1919fe88620c043ec405d6237",
+   "title_for_reference": "Police Oversight Task Force Items for Discussion, January 29, 2014",
+   "exclusion_reason": "A working handout listing individual members' proposed wording changes, such as Mr. Wagman's note that Goal 1 item 2a should read \"policy formulation\" rather than \"policy formation\". It is a line-edit list for a meeting, not a finding or a recommendation, and every change it proposes is settled in the retained final report.",
+   "measurement": "Token coverage 0.8949 inside the retained final report."
+  },
+  {
+   "id": "src-1cdafb9d390b104d",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/POC%20Task%20Force%20Agenda%20January%2021.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 76638,
+   "checksum_sha256": "63b3236330e3e0d8c485fb2d579f123666f41327cd3c69f6477732f8f84536f1",
+   "title_for_reference": "Police Oversight Task Force Agenda, January 21, 2014",
+   "exclusion_reason": "Agenda for a meeting whose summary minutes are published and recommended for addition in this same batch (src-d59b9b37da75fde5). The AGENTS.md missing-minutes policy forbids archiving an agenda when an approved-minutes original is available.",
+   "minutes_record_for_same_meeting": "src-d59b9b37da75fde5"
+  },
+  {
+   "id": "src-eaf6dcd1e7d31d5f",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/POC%20Task%20Force%20Agenda%20January%2029.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 75646,
+   "checksum_sha256": "dab2f7c47b47a47364943273b677d461dd82691b894db1968d90483f8fe5a160",
+   "title_for_reference": "Police Oversight Task Force Agenda, January 29, 2014",
+   "exclusion_reason": "Agenda for a meeting whose summary minutes are published and recommended for addition in this same batch (src-1fb997ce90184cb5). Same policy ground.",
+   "minutes_record_for_same_meeting": "src-1fb997ce90184cb5"
+  }
+ ],
+ "requires_human_review": [
+  {
+   "id": "src-ff9893ec1cd700be",
+   "authoritative_url": "https://www.cabq.gov/council/documents/police-oversight-task-force-documents/3-7-14%20Study%20Session%20Agenda%20-%20FINAL.pdf/view",
+   "recommended_status": "requires human review",
+   "link_check": "HTTP 200 verified 2026-09-11 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither",
+   "content_kind": "PDF",
+   "size_bytes": 71392,
+   "checksum_sha256": "b09e6d66f32a3b6892dd92fbd4afe7d4fb7e4fc737b8df80010af580ffee7044",
+   "draft_title": "Albuquerque City Council Study Session Agenda, March 7, 2014",
+   "date": "2014-03-07",
+   "pages": 1,
+   "question_for_human": "City Council study session minutes are a maintained series that this lane cannot reach. Does ABQInfo hold Council study session records at all, and if so is the March 7, 2014 summary retrievable from Legistar?",
+   "why_not_decided_here": "This is the one file in the directory that is not a task force record: it is a City Council study session agenda, filed here because item (b) is \"Police Oversight Task Force Recommendations (OC-14-2)\". The missing-minutes policy cannot be applied to it the way it was applied to the August 6 task force agenda, because the agenda itself proves Council keeps study session minutes as a running series: its item (a) is \"Approval of Study Session Summary Minutes - February 13, 2013\". Approved minutes for March 7, 2014 therefore almost certainly exist, in Legistar rather than on this page, so the policy's precondition that an exhaustive review find no approved minutes is not met and preserving the agenda would be wrong. Excluding it would also be wrong, because it is the only record in the inventory dating when the task force recommendations reached Council.",
+   "evidence": "One page listing the Twenty-First Council by district under President Ken Sanchez and Vice-President Trudy E. Jones, with three lettered items: approval of prior study session minutes, the Police Oversight Task Force Recommendations under file OC-14-2, and the Indicators Progress Commission."
+  }
+ ],
+ "archival_note": "All 8 approved records are static PDFs and are inventory-only until an R2 archive object exists for each and its public download, exact size, SHA-256, and authoritative-source provenance are verified. Combined archive footprint if authorized: 21,242,194 bytes, of which the 238-page final report alone is 17,608,309.",
+ "integration_note": "Codex integration lane: apply recommended_status values through scripts/project/Update-Candidate.ps1 only. Every superseded and duplicate row carries a canonical_id, and all of them resolve to the single retained final report src-f4204196f921104e; the superseded rows additionally name their immediate successor where that is a different file, so the version chain is preserved rather than flattened. The 8 approved rows each carry a title, a 20-to-50-word description, a date, and a proposed_canonical_page. One approved row is an agenda preserved under the missing-minutes policy and its title must keep the \"(approved minutes not located)\" qualifier. One row is requires human review and states its question and the evidence already gathered. Sizes and checksums are first measurements; the inventory held neither.",
+ "safeguards": [
+  "no master-inventory.json write",
+  "no checkpoint.json write",
+  "no r2-inventory.json write",
+  "no site content change",
+  "no R2 upload",
+  "no commit, merge, or deploy"
+ ]
+}

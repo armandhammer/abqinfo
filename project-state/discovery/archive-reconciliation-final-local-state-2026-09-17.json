@@ -1,0 +1,1781 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-17T13:28:26.5769632Z",
+  "state": "final_local_archive_accounting_reconciliation",
+  "source_artifacts": {
+    "live_r2_inventory": "project-state/discovery/live-r2-object-inventory-2026-09-16.json",
+    "live_reconciliation": "project-state/discovery/live-abqinfo-archive-reconciliation-2026-09-16.json",
+    "historical_classification": "project-state/discovery/live-abqinfo-archive-reconciliation-classification-2026-09-16.json",
+    "completed_judgment_artifact": "project-state/discovery/live-abqinfo-archive-reconciliation-decisions-2026-09-17.json",
+    "repair_manifest": "project-state/discovery/live-abqinfo-archive-reconciliation-repair-manifest-2026-09-17.json",
+    "unresolved_review": "project-state/discovery/archive-reconciliation-unresolved-review-2026-09-17.json"
+  },
+  "storage_accounting": {
+    "saved_live_r2_object_count": 1180,
+    "saved_live_r2_total_bytes": 8614076524,
+    "repository_r2_object_count": 1180,
+    "repository_r2_total_bytes": 8614076524,
+    "published_object_repository_inventory_failures": 0,
+    "published_inventory_gaps_repaired": 116,
+    "editorial_objects_accounted_without_disposition": 3,
+    "master_records_created": 0,
+    "master_records_updated_for_factual_editorial_linkage": 3,
+    "live_r2_modified": false,
+    "publication_or_site_content_modified": false
+  },
+  "published_legacy_without_master_records": {
+    "count": 111,
+    "status": "accounted_in_repository_r2_inventory; intentionally not converted into master records",
+    "reason": "Durable published content/history references are sufficient for factual R2 storage accounting; no master record was manufactured.",
+    "objects": [
+      {
+        "issue_group_id": "issue-0101",
+        "r2_key": "city-data/budget-spending/cabq-eclipse-aerospace-leda-ordinance-o-2014-005.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/budget-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0102",
+        "r2_key": "city-data/capital-spending/cabq-2003-general-obligation-bond-program-master-record-abqinfo-compilation.pdf",
+        "live_pages": [
+          "https://abqinfo.com/transportation/transit/abq-ride/",
+          "https://abqinfo.com/transportation/transportation-plans/",
+          "https://abqinfo.com/city-data/public-safety-data/",
+          "https://abqinfo.com/city-data/capital-spending/",
+          "https://abqinfo.com/public-works/parks-recreation/",
+          "https://abqinfo.com/public-works/stormwater-drainage/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0107",
+        "r2_key": "city-data/capital-spending/cabq-2009-2017-council-neighborhood-set-aside-go-bond-summary.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0108",
+        "r2_key": "city-data/capital-spending/cabq-2009-council-neighborhood-set-aside-project-scopes.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0109",
+        "r2_key": "city-data/capital-spending/cabq-2009-cultural-services-go-bond-project-scopes.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0110",
+        "r2_key": "city-data/capital-spending/cabq-2009-library-go-bond-authorization.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0111",
+        "r2_key": "city-data/capital-spending/cabq-2009-senior-family-community-center-community-enhancement-bond-authorization.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0112",
+        "r2_key": "city-data/capital-spending/cabq-2011-2019-finance-administrative-services-go-bond-schedule-initial.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0113",
+        "r2_key": "city-data/capital-spending/cabq-2011-2019-go-bond-summary-totals.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0114",
+        "r2_key": "city-data/capital-spending/cabq-2011-2019-senior-affairs-go-bond-schedule.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0115",
+        "r2_key": "city-data/capital-spending/cabq-2011-affordable-housing-go-bond-project-scope-initial.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0116",
+        "r2_key": "city-data/capital-spending/cabq-2011-affordable-housing-go-bond-project-scope-published.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0117",
+        "r2_key": "city-data/capital-spending/cabq-2011-council-neighborhood-set-aside-project-scopes.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0118",
+        "r2_key": "city-data/capital-spending/cabq-2011-cultural-services-go-bond-project-scopes-published.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0119",
+        "r2_key": "city-data/capital-spending/cabq-2011-environmental-health-go-bond-project-scopes-published.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0120",
+        "r2_key": "city-data/capital-spending/cabq-2011-family-community-services-go-bond-project-scopes-initial.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0121",
+        "r2_key": "city-data/capital-spending/cabq-2011-family-community-services-go-bond-project-scopes-published.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0122",
+        "r2_key": "city-data/capital-spending/cabq-2011-finance-administrative-services-go-bond-project-scopes-published.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0123",
+        "r2_key": "city-data/capital-spending/cabq-2011-senior-affairs-go-bond-project-scopes-published.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0124",
+        "r2_key": "city-data/capital-spending/cabq-apd-forensics-solar-carport-design-2017.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0125",
+        "r2_key": "city-data/capital-spending/cabq-dmd-capital-facilities-parking-scope-2013.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0126",
+        "r2_key": "city-data/capital-spending/cabq-enacted-resolution-r-2012-100-impact-fee-ccip-2012-2022.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0127",
+        "r2_key": "city-data/capital-spending/cabq-enacted-resolution-r-2013-115-impact-fee-credits.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0128",
+        "r2_key": "city-data/capital-spending/cabq-family-community-services-bond-scope-2009.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0129",
+        "r2_key": "city-data/capital-spending/cabq-go-bond-program-summary-2013.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0130",
+        "r2_key": "city-data/capital-spending/cabq-impact-fee-credit-holder-summary-2020-02-18.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0131",
+        "r2_key": "city-data/capital-spending/cabq-selection-advisory-committee-rules-2023.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0132",
+        "r2_key": "city-data/capital-spending/cabq-urban-enhancement-trust-fund-funded-projects-2010-2011.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0133",
+        "r2_key": "city-data/capital-spending/cabq-urban-enhancement-trust-fund-funding-summary-2010-2011.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0134",
+        "r2_key": "city-data/capital-spending/cabq-urban-enhancement-trust-fund-program-overview-2010-2011.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0135",
+        "r2_key": "city-data/city-progress-surveys/cabq-african-american-advisory-board-minutes-2026-05-05.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/city-progress-surveys/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0136",
+        "r2_key": "city-data/city-progress-surveys/cabq-african-american-advisory-board-minutes-2026-06-02.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/city-progress-surveys/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0137",
+        "r2_key": "city-data/city-progress-surveys/cabq-african-american-advisory-board-minutes-2026-07-07.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/city-progress-surveys/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0138",
+        "r2_key": "city-data/city-progress-surveys/cabq-city-council-services-organizational-chart-2026.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/city-progress-surveys/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0139",
+        "r2_key": "city-data/city-progress-surveys/cabq-small-business-resource-fair-report-2019.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/city-progress-surveys/",
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0140",
+        "r2_key": "city-data/city-progress-surveys/cabq-small-business-resource-fair-report-appendices-2019.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/city-progress-surveys/",
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0141",
+        "r2_key": "city-data/climate-environment/albuquerque-msa-priority-climate-action-plan-2024.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/climate-environment/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0142",
+        "r2_key": "city-data/public-safety/cabq-2009-2017-fire-go-bond-summary.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/public-safety-data/",
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0143",
+        "r2_key": "city-data/public-safety/cabq-2009-2017-police-go-bond-summary.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/public-safety-data/",
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0144",
+        "r2_key": "city-data/public-safety/cabq-2009-fire-go-bond-project-scopes.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/public-safety-data/",
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0145",
+        "r2_key": "city-data/public-safety/cabq-2009-police-go-bond-project-scopes.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/public-safety-data/",
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0146",
+        "r2_key": "city-data/public-safety/cabq-2009-public-safety-go-bond-authorization.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/public-safety-data/",
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0147",
+        "r2_key": "city-data/public-safety/cabq-2011-2019-fire-go-bond-schedule-initial.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0148",
+        "r2_key": "city-data/public-safety/cabq-2011-fire-go-bond-project-scopes-initial.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0149",
+        "r2_key": "city-data/public-safety/cabq-2011-fire-go-bond-project-scopes-published.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/",
+          "https://abqinfo.com/city-data/public-safety-data/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0150",
+        "r2_key": "city-data/public-safety/cabq-2011-police-go-bond-project-scopes-published.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/",
+          "https://abqinfo.com/city-data/public-safety-data/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0151",
+        "r2_key": "development-land-use/development-process/cabq-annexation-policies-resolution-r-54-1990.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0153",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2014-abqinfo-compilation.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0154",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2015-abqinfo-compilation.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0155",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-abqinfo-compilation.pdf",
+        "live_pages": [
+          "https://abqinfo.com/public-works/stormwater-drainage/",
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0156",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-abqinfo-compilation.pdf",
+        "live_pages": [
+          "https://abqinfo.com/transportation/design-references/",
+          "https://abqinfo.com/public-works/stormwater-drainage/",
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0157",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-records-2018-abqinfo-compilation.pdf",
+        "live_pages": [
+          "https://abqinfo.com/transportation/design-references/",
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0158",
+        "r2_key": "development-land-use/development-process/cabq-drc-jurisdiction-memorandum-2026-08-25.pdf",
+        "live_pages": [
+          "https://abqinfo.com/transportation/design-references/",
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0159",
+        "r2_key": "development-land-use/development-process/cabq-eighth-forrester-historic-protection-overlay-zone-map-2018.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0160",
+        "r2_key": "development-land-use/development-process/cabq-facilitated-meetings-criteria-ido-2018.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0161",
+        "r2_key": "development-land-use/development-process/cabq-fourth-ward-historic-protection-overlay-zone-map-2018.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0162",
+        "r2_key": "development-land-use/development-process/cabq-historic-protection-overlay-zones-citywide-map-2018.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0163",
+        "r2_key": "development-land-use/development-process/cabq-huning-highland-edo-historic-protection-overlay-zone-map-2018.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0164",
+        "r2_key": "development-land-use/development-process/cabq-hydrology-review-fees-2024.pdf",
+        "live_pages": [
+          "https://abqinfo.com/public-works/stormwater-drainage/",
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0165",
+        "r2_key": "development-land-use/development-process/cabq-infrastructure-improvements-agreement-assignment-amendment.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0166",
+        "r2_key": "development-land-use/development-process/cabq-infrastructure-improvements-agreement-procedure-c.pdf",
+        "live_pages": [
+          "https://abqinfo.com/transportation/design-references/",
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0167",
+        "r2_key": "development-land-use/development-process/cabq-neighborhood-task-force-final-report-2007.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0168",
+        "r2_key": "development-land-use/development-process/cabq-official-plant-palette-sizing-list-2018.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0169",
+        "r2_key": "development-land-use/development-process/cabq-old-town-development-standards-guidelines-hpo-5-2018.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0170",
+        "r2_key": "development-land-use/development-process/cabq-old-town-historic-protection-overlay-zone-map-2018.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0171",
+        "r2_key": "development-land-use/development-process/cabq-revocable-permit-submittal-requirements-2020.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0172",
+        "r2_key": "development-land-use/development-process/cabq-silver-hill-historic-overlay-zone-design-guidelines.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0173",
+        "r2_key": "development-land-use/development-process/cabq-silver-hill-historic-protection-overlay-zone-map-2018.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/development-process/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0174",
+        "r2_key": "development-land-use/projects/cabq-rail-yards-uli-advisory-panel-report-2008.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/projects/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0175",
+        "r2_key": "development-land-use/redevelopment-plans/cabq-barelas-neighborhood-commercial-area-revitalization-plan.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/redevelopment-plans/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0176",
+        "r2_key": "development-land-use/redevelopment-plans/cabq-south-broadway-sector-development-plan.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/redevelopment-plans/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0177",
+        "r2_key": "development-land-use/redevelopment/cabq-2011-2019-planning-go-bond-schedule-initial.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0178",
+        "r2_key": "development-land-use/redevelopment/cabq-2011-planning-go-bond-project-scopes-initial.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0179",
+        "r2_key": "development-land-use/redevelopment/cabq-2011-planning-go-bond-project-scopes-published.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/",
+          "https://abqinfo.com/development-land-use/redevelopment-plans/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0180",
+        "r2_key": "development-land-use/zoning-ido/cabq-old-town-task-force-ranking-outdoor-demonstrations.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/projects/",
+          "https://abqinfo.com/development-land-use/zoning-ido/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0181",
+        "r2_key": "development-land-use/zoning-ido/cabq-old-town-task-force-ranking-outdoor-displays.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/projects/",
+          "https://abqinfo.com/development-land-use/zoning-ido/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0182",
+        "r2_key": "development-land-use/zoning-ido/cabq-old-town-task-force-ranking-signs.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/projects/",
+          "https://abqinfo.com/development-land-use/zoning-ido/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0183",
+        "r2_key": "development-land-use/zoning-ido/mrcog-cannabis-planning-commissioner-workshop-2021.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/zoning-ido/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0184",
+        "r2_key": "development-land-use/zoning/cabq-enacted-ordinance-o-2014-024-wireless-telecommunications.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/development-process/",
+          "https://abqinfo.com/development-land-use/zoning-ido/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0185",
+        "r2_key": "development-land-use/zoning/cabq-zoning-code-14-16-3-17-wireless-telecommunications.pdf",
+        "live_pages": [
+          "https://abqinfo.com/development-land-use/development-process/",
+          "https://abqinfo.com/development-land-use/zoning-ido/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0186",
+        "r2_key": "public-works/city-facilities/cabq-2011-city-facilities-cip-parking-go-bond-project-scopes-published.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/",
+          "https://abqinfo.com/public-works/city-facilities/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0187",
+        "r2_key": "public-works/city-facilities/cabq-sunport-airport-master-plan-executive-summary.pdf",
+        "live_pages": [
+          "https://abqinfo.com/public-works/city-facilities/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0188",
+        "r2_key": "public-works/parks-recreation/cabq-2011-parks-recreation-go-bond-project-scopes-published.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/",
+          "https://abqinfo.com/public-works/parks-recreation/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0189",
+        "r2_key": "public-works/parks-recreation/cabq-manzano-mesa-prescription-trail-guide.pdf",
+        "live_pages": [
+          "https://abqinfo.com/public-works/parks-recreation/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0190",
+        "r2_key": "public-works/stormwater-drainage/cabq-candelaria-fleet-yard-swppp-2021.pdf",
+        "live_pages": [
+          "https://abqinfo.com/public-works/stormwater-drainage/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0191",
+        "r2_key": "public-works/stormwater/cabq-2011-storm-drainage-go-bond-project-scopes-published.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/",
+          "https://abqinfo.com/public-works/stormwater-drainage/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0192",
+        "r2_key": "public-works/stormwater/cabq-construction-stormwater-quality-submittal-process-2025.pdf",
+        "live_pages": [
+          "https://abqinfo.com/public-works/stormwater-drainage/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0193",
+        "r2_key": "public-works/stormwater/cabq-drainage-flood-erosion-governing-regulations-summary.pdf",
+        "live_pages": [
+          "https://abqinfo.com/public-works/stormwater-drainage/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0194",
+        "r2_key": "public-works/stormwater/cabq-enacted-ordinance-o-2018-020-drainage-runoff-best-practices.pdf",
+        "live_pages": [
+          "https://abqinfo.com/public-works/stormwater-drainage/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0195",
+        "r2_key": "public-works/stormwater/cabq-erosion-sediment-control-plan-permit-drc-process-2018.pdf",
+        "live_pages": [
+          "https://abqinfo.com/public-works/stormwater-drainage/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0196",
+        "r2_key": "public-works/stormwater/cabq-fema-three-processes-remove-structure-flood-hazard-area.pdf",
+        "live_pages": [
+          "https://abqinfo.com/public-works/stormwater-drainage/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0197",
+        "r2_key": "public-works/stormwater/cabq-npdes-storm-water-management-manual-revision-2-2012.pdf",
+        "live_pages": [
+          "https://abqinfo.com/public-works/stormwater-drainage/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0198",
+        "r2_key": "public-works/stormwater/cabq-special-flood-hazard-areas-explainer.pdf",
+        "live_pages": [
+          "https://abqinfo.com/public-works/stormwater-drainage/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0199",
+        "r2_key": "public-works/stormwater/cabq-stormwater-quality-plan-fee-schedule.pdf",
+        "live_pages": [
+          "https://abqinfo.com/public-works/stormwater-drainage/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0200",
+        "r2_key": "transportation/design-references/cabq-special-order-19-private-drainage-facilities-2022.pdf",
+        "live_pages": [
+          "https://abqinfo.com/transportation/design-references/",
+          "https://abqinfo.com/public-works/stormwater-drainage/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0201",
+        "r2_key": "transportation/design-references/cabq-subdivision-plat-drainage-easement-language-2018.pdf",
+        "live_pages": [
+          "https://abqinfo.com/transportation/design-references/",
+          "https://abqinfo.com/public-works/stormwater-drainage/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0202",
+        "r2_key": "transportation/operations-data/cabq-raynolds-barelas-stop-sign-reconfiguration-proposal-2008.pdf",
+        "live_pages": [
+          "https://abqinfo.com/transportation/operations-data/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0203",
+        "r2_key": "transportation/roadway-projects/cabq-rainbow-universe-safety-project-resolution-r-2010-056.pdf",
+        "live_pages": [
+          "https://abqinfo.com/transportation/roadway-projects/",
+          "https://abqinfo.com/transportation/safety-crash-data/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0204",
+        "r2_key": "transportation/roadway-projects/studies/cabq-4th-street-complete-streets-review-2025.pdf",
+        "live_pages": [
+          "https://abqinfo.com/transportation/roadway-projects/studies/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0205",
+        "r2_key": "transportation/roadway-projects/studies/cabq-fy2025-complete-streets-package-1-updates.pdf",
+        "live_pages": [
+          "https://abqinfo.com/transportation/roadway-projects/studies/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0206",
+        "r2_key": "transportation/roadway-projects/studies/cabq-fy2026-2027-complete-streets-package-final-signed.pdf",
+        "live_pages": [
+          "https://abqinfo.com/transportation/roadway-projects/studies/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0207",
+        "r2_key": "transportation/roadway-projects/studies/cabq-girard-existing-conditions-assessment-2012.pdf",
+        "live_pages": [
+          "https://abqinfo.com/transportation/roadway-projects/studies/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0208",
+        "r2_key": "transportation/safety-crash-data/cabq-redflex-contract-investigation-request-2014.pdf",
+        "live_pages": [
+          "https://abqinfo.com/transportation/safety-crash-data/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0209",
+        "r2_key": "transportation/transit/cabq-2011-abq-ride-go-bond-project-scopes-published.pdf",
+        "live_pages": [
+          "https://abqinfo.com/transportation/transit/abq-ride/",
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0210",
+        "r2_key": "transportation/transportation-plans/cabq-2011-2019-streets-go-bond-schedule-initial.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0211",
+        "r2_key": "transportation/transportation-plans/cabq-2011-streets-go-bond-project-scopes-initial.pdf",
+        "live_pages": [
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0212",
+        "r2_key": "transportation/transportation-plans/cabq-2011-streets-go-bond-project-scopes-published.pdf",
+        "live_pages": [
+          "https://abqinfo.com/transportation/transportation-plans/",
+          "https://abqinfo.com/city-data/capital-spending/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0213",
+        "r2_key": "transportation/transportation-plans/mrmpo-ffy-2006-annual-listing-obligations.pdf",
+        "live_pages": [
+          "https://abqinfo.com/transportation/transportation-plans/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0214",
+        "r2_key": "transportation/transportation-plans/mrmpo-ffy-2007-annual-listing-obligations.pdf",
+        "live_pages": [
+          "https://abqinfo.com/transportation/transportation-plans/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0215",
+        "r2_key": "transportation/transportation-plans/mrmpo-ffy-2008-annual-listing-obligations.pdf",
+        "live_pages": [
+          "https://abqinfo.com/transportation/transportation-plans/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      },
+      {
+        "issue_group_id": "issue-0216",
+        "r2_key": "transportation/transportation-plans/mrmpo-ffy-2009-annual-listing-obligations.pdf",
+        "live_pages": [
+          "https://abqinfo.com/transportation/transportation-plans/"
+        ],
+        "repository_r2_accounted": true,
+        "master_record_ids": []
+      }
+    ]
+  },
+  "stale_published_master_linkages": [
+    {
+      "issue_group_id": "issue-0103",
+      "r2_key": "city-data/capital-spending/cabq-2004-capital-programming-amendment-resolution-r-04-109.pdf",
+      "master_record_ids": [
+        "src-f1a9e4e7e1d84e9e"
+      ],
+      "linkage_verified_unchanged": true,
+      "repository_r2_accounted": true
+    },
+    {
+      "issue_group_id": "issue-0104",
+      "r2_key": "city-data/capital-spending/cabq-2004-street-bond-ballot-question.pdf",
+      "master_record_ids": [
+        "src-a58b458f5d0f5284"
+      ],
+      "linkage_verified_unchanged": true,
+      "repository_r2_accounted": true
+    },
+    {
+      "issue_group_id": "issue-0105",
+      "r2_key": "city-data/capital-spending/cabq-2004-street-bond-program-planning-process.pdf",
+      "master_record_ids": [
+        "src-6ebb9f0834bce393"
+      ],
+      "linkage_verified_unchanged": true,
+      "repository_r2_accounted": true
+    },
+    {
+      "issue_group_id": "issue-0106",
+      "r2_key": "city-data/capital-spending/cabq-2004-street-go-bond-project-titles-amounts-scopes.pdf",
+      "master_record_ids": [
+        "src-8c5d2888cc22b991"
+      ],
+      "linkage_verified_unchanged": true,
+      "repository_r2_accounted": true
+    },
+    {
+      "issue_group_id": "issue-0152",
+      "r2_key": "development-land-use/development-process/cabq-consultant-compensation-rules-2003.pdf",
+      "master_record_ids": [
+        "src-230753126ba3bbf7"
+      ],
+      "linkage_verified_unchanged": true,
+      "repository_r2_accounted": true
+    }
+  ],
+  "current_branch_links_awaiting_deployment": {
+    "count": 53,
+    "classification": "deployment_lag_not_editorial_omission",
+    "objects": [
+      {
+        "issue_group_id": "issue-0016",
+        "r2_key": "city-data/capital-spending/cabq-2003-storm-sewer-system-go-bond-project-scopes.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md",
+          "content/public-works/stormwater-drainage.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0020",
+        "r2_key": "city-data/capital-spending/cabq-2017-2025-animal-welfare-go-bond-summary.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0021",
+        "r2_key": "city-data/capital-spending/cabq-2017-2025-cultural-services-go-bond-summary.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0022",
+        "r2_key": "city-data/capital-spending/cabq-2017-2025-environmental-health-go-bond-summary.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0023",
+        "r2_key": "city-data/capital-spending/cabq-2017-2025-family-community-services-go-bond-summary.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0024",
+        "r2_key": "city-data/capital-spending/cabq-2017-2025-planning-go-bond-summary.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0025",
+        "r2_key": "city-data/capital-spending/cabq-2017-2025-senior-affairs-go-bond-summary.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0026",
+        "r2_key": "city-data/capital-spending/cabq-2017-2025-technology-innovation-services-go-bond-summary.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0027",
+        "r2_key": "city-data/capital-spending/cabq-2017-animal-welfare-go-bond-project-scopes.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0028",
+        "r2_key": "city-data/capital-spending/cabq-2017-cultural-services-go-bond-project-scopes.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0029",
+        "r2_key": "city-data/capital-spending/cabq-2017-environmental-health-go-bond-project-scopes.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0030",
+        "r2_key": "city-data/capital-spending/cabq-2017-family-community-services-go-bond-project-scopes.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0031",
+        "r2_key": "city-data/capital-spending/cabq-2017-go-bond-program-introduction.docx",
+        "current_paths": [
+          "content/city-data/capital-spending.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0032",
+        "r2_key": "city-data/capital-spending/cabq-2017-go-bond-program-process.docx",
+        "current_paths": [
+          "content/city-data/capital-spending.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0033",
+        "r2_key": "city-data/capital-spending/cabq-2017-planning-go-bond-project-scopes.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0034",
+        "r2_key": "city-data/capital-spending/cabq-2017-senior-affairs-go-bond-project-scopes.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0035",
+        "r2_key": "city-data/capital-spending/cabq-2017-technology-innovation-services-go-bond-project-scopes.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0036",
+        "r2_key": "city-data/capital-spending/cabq-decade-plan-project-evaluation-criteria-2003.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0038",
+        "r2_key": "city-data/capital-spending/cabq-go-bond-project-rankings-2003.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0039",
+        "r2_key": "city-data/public-safety/cabq-2017-2025-fire-go-bond-summary.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md",
+          "content/city-data/public-safety-data.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0040",
+        "r2_key": "city-data/public-safety/cabq-2017-2025-police-go-bond-summary.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md",
+          "content/city-data/public-safety-data.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0041",
+        "r2_key": "city-data/public-safety/cabq-2017-fire-go-bond-project-scopes.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md",
+          "content/city-data/public-safety-data.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0042",
+        "r2_key": "city-data/public-safety/cabq-2017-police-go-bond-project-scopes.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md",
+          "content/city-data/public-safety-data.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0044",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2014-07-16.pdf",
+        "current_paths": [
+          "content/development-land-use/development-process.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0048",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2014-12-17.pdf",
+        "current_paths": [
+          "content/development-land-use/development-process.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0055",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2015-12-16.pdf",
+        "current_paths": [
+          "content/development-land-use/development-process.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0060",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-09-07.pdf",
+        "current_paths": [
+          "content/development-land-use/development-process.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0062",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2016-10-19.pdf",
+        "current_paths": [
+          "content/development-land-use/development-process.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0065",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-01-18.pdf",
+        "current_paths": [
+          "content/development-land-use/development-process.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0066",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-02-01.pdf",
+        "current_paths": [
+          "content/development-land-use/development-process.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0067",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-03-01.pdf",
+        "current_paths": [
+          "content/development-land-use/development-process.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0069",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-04-19.pdf",
+        "current_paths": [
+          "content/development-land-use/development-process.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0070",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-05-03.pdf",
+        "current_paths": [
+          "content/development-land-use/development-process.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0071",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-05-17.pdf",
+        "current_paths": [
+          "content/development-land-use/development-process.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0072",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-06-21.pdf",
+        "current_paths": [
+          "content/development-land-use/development-process.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0074",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-09-06.pdf",
+        "current_paths": [
+          "content/development-land-use/development-process.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0076",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-10-04.pdf",
+        "current_paths": [
+          "content/development-land-use/development-process.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0079",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2017-11-15.pdf",
+        "current_paths": [
+          "content/development-land-use/development-process.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0080",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2018-02-07.pdf",
+        "current_paths": [
+          "content/development-land-use/development-process.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0081",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2018-02-21.pdf",
+        "current_paths": [
+          "content/development-land-use/development-process.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0082",
+        "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-minutes-2018-03-07.pdf",
+        "current_paths": [
+          "content/development-land-use/development-process.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0084",
+        "r2_key": "public-works/capital-projects/cabq-2017-2025-streets-go-bond-summary.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md",
+          "content/public-works/capital-projects.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0085",
+        "r2_key": "public-works/capital-projects/cabq-2017-streets-go-bond-project-scopes.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md",
+          "content/public-works/capital-projects.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0086",
+        "r2_key": "public-works/city-facilities/cabq-2017-2025-city-facilities-parking-go-bond-summary.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md",
+          "content/public-works/city-facilities.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0087",
+        "r2_key": "public-works/city-facilities/cabq-2017-city-facilities-parking-go-bond-project-scopes.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md",
+          "content/public-works/city-facilities.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0088",
+        "r2_key": "public-works/parks-recreation/cabq-2017-2025-parks-recreation-go-bond-summary.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md",
+          "content/public-works/parks-recreation.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0089",
+        "r2_key": "public-works/parks-recreation/cabq-2017-parks-recreation-go-bond-project-scopes.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md",
+          "content/public-works/parks-recreation.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0090",
+        "r2_key": "public-works/stormwater/cabq-2017-2025-storm-drainage-go-bond-summary.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md",
+          "content/public-works/stormwater-drainage.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0091",
+        "r2_key": "public-works/stormwater/cabq-2017-storm-drainage-go-bond-project-scopes.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md",
+          "content/public-works/stormwater-drainage.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0092",
+        "r2_key": "transportation/bicycling/projects/",
+        "current_paths": [
+          "content/maps-data/maps.md",
+          "content/transportation/bicycling/projects/_index.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0093",
+        "r2_key": "transportation/design-references/",
+        "current_paths": [
+          "content/development-land-use/development-process.md",
+          "content/transportation/design-references.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0095",
+        "r2_key": "transportation/transit/cabq-2017-2025-abq-ride-transit-go-bond-summary.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md",
+          "content/transportation/transit/abq-ride.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      },
+      {
+        "issue_group_id": "issue-0096",
+        "r2_key": "transportation/transit/cabq-2017-abq-ride-transit-go-bond-project-scopes.pdf",
+        "current_paths": [
+          "content/city-data/capital-spending.md",
+          "content/transportation/transit/abq-ride.md"
+        ],
+        "classification": "unreferenced_present_current_branch_pending_deployment"
+      }
+    ]
+  },
+  "intentionally_unpublished_by_completed_judgment": {
+    "count": 15,
+    "note": "These completed judgment decisions override raw expected-page-missing signals; they are not unresolved publication defects.",
+    "decisions": [
+      {
+        "issue_group_id": "issue-0002",
+        "r2_keys": [
+          "city-data/capital-spending/cabq-2003-2012-decade-plan-capital-budget-resolution-r-03-215.pdf"
+        ],
+        "master_ids": [
+          "src-93085b1bc76f4709"
+        ],
+        "disposition": "retain intentionally unpublished",
+        "rationale": "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      },
+      {
+        "issue_group_id": "issue-0003",
+        "r2_keys": [
+          "city-data/capital-spending/cabq-2003-capital-budget-amendment-resolution-r-03-265.pdf"
+        ],
+        "master_ids": [
+          "src-d86965da6d5d26f2"
+        ],
+        "disposition": "retain intentionally unpublished",
+        "rationale": "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      },
+      {
+        "issue_group_id": "issue-0004",
+        "r2_keys": [
+          "city-data/capital-spending/cabq-2003-capital-improvements-priorities-resolution-r-02-30.pdf"
+        ],
+        "master_ids": [
+          "src-cae140d675779242"
+        ],
+        "disposition": "retain intentionally unpublished",
+        "rationale": "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      },
+      {
+        "issue_group_id": "issue-0005",
+        "r2_keys": [
+          "city-data/capital-spending/cabq-2003-fire-protection-go-bond-project-scopes.pdf"
+        ],
+        "master_ids": [
+          "src-724dd13839ecb166"
+        ],
+        "disposition": "retain intentionally unpublished",
+        "rationale": "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      },
+      {
+        "issue_group_id": "issue-0006",
+        "r2_keys": [
+          "city-data/capital-spending/cabq-2003-go-bond-funding-allocation-chart.pdf"
+        ],
+        "master_ids": [
+          "src-57a1e412247c863d"
+        ],
+        "disposition": "retain intentionally unpublished",
+        "rationale": "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      },
+      {
+        "issue_group_id": "issue-0009",
+        "r2_keys": [
+          "city-data/capital-spending/cabq-2003-go-bond-rehabilitation-maintenance-deficiency-summary.pdf"
+        ],
+        "master_ids": [
+          "src-3dfd629f27870dc1"
+        ],
+        "disposition": "retain intentionally unpublished",
+        "rationale": "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      },
+      {
+        "issue_group_id": "issue-0010",
+        "r2_keys": [
+          "city-data/capital-spending/cabq-2003-library-go-bond-project-scopes.pdf"
+        ],
+        "master_ids": [
+          "src-888427a6abc5edf0"
+        ],
+        "disposition": "retain intentionally unpublished",
+        "rationale": "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      },
+      {
+        "issue_group_id": "issue-0011",
+        "r2_keys": [
+          "city-data/capital-spending/cabq-2003-parks-recreation-go-bond-project-scopes.pdf"
+        ],
+        "master_ids": [
+          "src-96e217080e84c14e"
+        ],
+        "disposition": "retain intentionally unpublished",
+        "rationale": "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      },
+      {
+        "issue_group_id": "issue-0012",
+        "r2_keys": [
+          "city-data/capital-spending/cabq-2003-police-go-bond-project-scopes.pdf"
+        ],
+        "master_ids": [
+          "src-ea516f826e5da86a"
+        ],
+        "disposition": "retain intentionally unpublished",
+        "rationale": "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      },
+      {
+        "issue_group_id": "issue-0013",
+        "r2_keys": [
+          "city-data/capital-spending/cabq-2003-public-facilities-equipment-system-modernization-go-bond-project-scopes.pdf"
+        ],
+        "master_ids": [
+          "src-a24b9d451e022e8f"
+        ],
+        "disposition": "retain intentionally unpublished",
+        "rationale": "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      },
+      {
+        "issue_group_id": "issue-0014",
+        "r2_keys": [
+          "city-data/capital-spending/cabq-2003-public-transportation-go-bond-project-scopes.pdf"
+        ],
+        "master_ids": [
+          "src-e7cd892adf805950"
+        ],
+        "disposition": "retain intentionally unpublished",
+        "rationale": "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      },
+      {
+        "issue_group_id": "issue-0015",
+        "r2_keys": [
+          "city-data/capital-spending/cabq-2003-senior-family-community-center-go-bond-project-scopes.pdf"
+        ],
+        "master_ids": [
+          "src-321df68eff322421"
+        ],
+        "disposition": "retain intentionally unpublished",
+        "rationale": "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      },
+      {
+        "issue_group_id": "issue-0017",
+        "r2_keys": [
+          "city-data/capital-spending/cabq-2003-street-go-bond-project-scopes.pdf"
+        ],
+        "master_ids": [
+          "src-6fc996f849849028"
+        ],
+        "disposition": "retain intentionally unpublished",
+        "rationale": "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      },
+      {
+        "issue_group_id": "issue-0019",
+        "r2_keys": [
+          "city-data/capital-spending/cabq-2003-zoo-biological-park-museum-go-bond-project-scopes.pdf"
+        ],
+        "master_ids": [
+          "src-3c7653f64815b4ad"
+        ],
+        "disposition": "retain intentionally unpublished",
+        "rationale": "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      },
+      {
+        "issue_group_id": "issue-0016",
+        "r2_keys": [
+          "city-data/capital-spending/cabq-2003-senior-family-community-center-go-bond-project-scopes.pdf"
+        ],
+        "master_ids": [
+          "src-321df68eff322421"
+        ],
+        "disposition": "retain intentionally unpublished",
+        "rationale": "The specific master record is validated and has official-source provenance, but neither current content, origin/main, nor the live crawl places this exact archive link. Its implementation field is planning metadata, not publication authorization."
+      }
+    ]
+  },
+  "editorial_or_policy_cases_storage_accounted_disposition_unresolved": [
+    {
+      "action_id": "repair-001",
+      "issue_group_id": "issue-0001",
+      "r2_key": "city-data/capital-spending/cabq-2003-2012-capital-improvements-epc-recommendations.pdf",
+      "master_id": "src-6735737588d294e0",
+      "master_status": "requires human review",
+      "storage_accounted": true,
+      "editorial_disposition": "unresolved",
+      "processing_note": "Storage accounting reconciled because the existing R2 object is byte-identical to the official source; editorial retention/publication remains unresolved."
+    },
+    {
+      "action_id": "repair-017",
+      "issue_group_id": "issue-0018",
+      "r2_key": "city-data/capital-spending/cabq-2003-water-master-plan-infrastructure-zone-map.pdf",
+      "master_id": "src-3c9907796a0cfaf3",
+      "master_status": "requires human review",
+      "storage_accounted": true,
+      "editorial_disposition": "unresolved",
+      "processing_note": "Storage accounting reconciled because the existing R2 object is byte-identical to the official source; editorial retention/publication remains unresolved."
+    },
+    {
+      "action_id": "repair-020",
+      "issue_group_id": "issue-0043",
+      "r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agenda-2018-04-04-approved-minutes-not-located.pdf",
+      "master_id": "src-f6feb3549d055097",
+      "master_status": "requires human review",
+      "storage_accounted": true,
+      "editorial_disposition": "unresolved",
+      "processing_note": "Storage accounting reconciled because the existing R2 object is byte-identical to the official source; editorial retention/publication remains unresolved."
+    }
+  ],
+  "future_r2_duplicate_deletion_candidate": [
+    {
+      "action_id": "repair-042",
+      "canonical_key": "transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy-2027-2028.pdf",
+      "noncanonical_key": "transportation/transportation-plans/mrmppo-unified-planning-work-program-ffy-2027-2028.pdf",
+      "storage_action": "none",
+      "future_deletion_requires_explicit_authorization": true
+    }
+  ],
+  "remaining_non_accounting_issues": {
+    "deployment_lag_cases": 53,
+    "unresolved_editorial_retention_decisions": 3,
+    "future_duplicate_deletion_candidates": 1,
+    "legacy_published_without_master_records": 111,
+    "pending_17_pdf_upload_batch_requires_explicit_authorization": true
+  },
+  "historical_artifacts_preserved": true
+}

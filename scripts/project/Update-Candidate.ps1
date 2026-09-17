@@ -10,7 +10,7 @@ $ErrorActionPreference = 'Stop'
 
 function Read-InventoryWithRetry([string]$Path) {
   for ($attempt = 1; $attempt -le 8; $attempt++) {
-    try { return Get-Content -Raw -Encoding UTF8 -LiteralPath $Path | ConvertFrom-Json }
+    try { return Get-Content -Raw -Encoding UTF8 -LiteralPath $Path | ConvertFrom-Json -DateKind String }
     catch {
       $retryable = $_.Exception -is [System.IO.IOException] -or $_.Exception -is [System.UnauthorizedAccessException] -or $_.Exception.InnerException -is [System.IO.IOException] -or $_.Exception.InnerException -is [System.UnauthorizedAccessException]
       if (-not $retryable -or $attempt -eq 8) { throw }

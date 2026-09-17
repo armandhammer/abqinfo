@@ -1,0 +1,2897 @@
+{
+ "batch_id": "urban-design-planning-research-2026-09-14",
+ "lane": "Claude research lane: the planning/UDD slice of the third link harvest",
+ "generated_at": "2026-09-14T21:41:30.192919+00:00",
+ "date_note": "Dated 2026-09-14.",
+ "THIS_ARTIFACT_IS_NOT_A_TRIAGE_OF_CANDIDATES": {
+  "what_that_means": "None of these files has an inventory id. Every row carries inventory_id: null and a recommendation rather than a recommended_status.",
+  "so_it_cannot_be_applied_the_usual_way": "Update-Candidate.ps1 cannot act on any row here."
+ },
+ "cluster": "The City's comprehensive planning record: two generations of the Albuquerque Bernalillo County Comprehensive Plan, and the 54 sector and area plans the Integrated Development Ordinance repealed.",
+ "what_is_in_it": {
+  "repealed sector and area plans": 54,
+  "comprehensive plan 2017": 16,
+  "comprehensive plan 2025": 14,
+  "comprehensive plan in Spanish": 2
+ },
+ "THE_THIRD_HARVEST_AND_WHAT_THE_CHECKSUM_SWEEP_SAVED": {
+  "the_harvest": "1,337 City pages, already fetched for the file-share sweep and parsed again here, yielded 1,625 document links. 636 were already inventory records by URL and 14 already decided, leaving 975 that looked new.",
+  "then_the_checksum_sweep_ran": "Of those 975, **73 are byte-identical to inventory records and 542 to rows this run had already decided**, and 16 more are duplicates of each other. Only 358 are genuinely new documents.",
+  "what_that_means": "A URL-based reconciliation would have proposed 975 additions, of which 631 - nearly two thirds - are files the archive already holds or has already decided, served at addresses it had not seen. The checksum sweep is not a tidying step; on this batch it was the difference between 358 additions and 975.",
+  "this_slice": "The 86 files under planning/UDD."
+ },
+ "why_both_the_whole_and_its_parts_are_kept": {
+  "what_was_measured": "For both plan generations, every separately published chapter and the appendices were tested against the compiled file using the containment method this run established: token coverage, then three sixty-word contiguous runs taken from the part and searched verbatim in the parent.",
+  "the_result": "Unanimous. All fourteen 2017 chapters plus the 2017 appendices, and all twelve published 2025 chapters plus the 2025 appendices, score coverage 1.0000 with 3 of 3 runs present. Every part is inside its compiled plan.",
+  "and_yet_both_are_recommended": "This departs from how the run treated Connections 2040, where proving containment avoided 60,998,778 bytes of redundant archival. The reason is size: that parent was 61 MB, and these are 113 MB and 294 MB. A 294-megabyte file is not a usable citation target for a page about, say, urban design. The chapters are the practical unit and the compiled plan is the authoritative one.",
+  "the_departure_is_deliberate_and_recorded": "So that it reads as a judgment rather than an inconsistency. If the archive would rather hold only the compiled plans, the chapter rows can be dropped and nothing else in this artifact changes - every chapter row carries the containment measurement that justifies dropping it.",
+  "the_redundancy_if_both_are_kept": 368988198
+ },
+ "three_chapters_of_the_current_plan_are_not_published_separately": {
+  "what": "The 2025 plan has fourteen chapters. Twelve are published as separate files. Chapters 6, 9 and 10 are not.",
+  "what_they_are": "Read from the compiled plan's own contents: Chapter 6 Transportation, Chapter 9 Housing, Chapter 10 Parks & Open Space.",
+  "they_are_not_missing_from_the_plan": "All three are inside EFFECTIVE_CompPlan_October2025.pdf - the compiled file names each of them in its contents and carries their text.",
+  "what_is_unknown": "Whether they were never split out, or are published somewhere this page does not link. Three of the most-cited subjects in the plan are the three without a citable chapter file.",
+  "recommended_action": "Look for them before treating the chapter set as complete."
+ },
+ "the_repeal_stamp_and_what_it_hides": {
+  "how_the_repeal_was_verified": "Not from the filenames, which all end -REPEALED. 53 of the 54 carry a text-layer stamp on their own pages; 52 of those name R-17-213 as the repealing instrument and 8 also name O-17-49.",
+  "the_two_that_do_not_fit": "One plan carries the word REPEALED but names no instrument. One - the Southwest Area Plan - yields no extractable text at all, not even a stamp, so its repeal rests on its filename and nothing else. Both rows say so, and neither is counted among the verified.",
+  "the_finding_that_matters_for_search": "For 20 of the 54 plans, that stamp is the *only* extractable text in the first eight pages - exactly 144 characters, and byte-identical across all 20 of them. The stamp is a text overlay; the plan underneath is a scan.",
+  "the_consequence": "A keyword search of this archive would match those files only on the word REPEALED. Search for Sawmill, or Old Town, or University Neighborhoods, and the plan for that neighbourhood would not come back. They need OCR before they are findable, and every affected row says so.",
+  "how_i_nearly_got_this_wrong_twice": "First: a check of pages one and two found the R-17-213 and O-17-49 pair in only 8 of 50, which would have supported a claim that 42 plans carry no repeal marking. Widening to eight pages and stripping punctuation before matching showed that 50 carry R-17-213. The narrow check was measuring my extraction window, not the documents. Second: the generator counted a plan as having no text whenever it had no measurement, so the four area plans - which had not been measured at all - were silently counted among the stamp-only files, making 22 where the verified figure was 18. Measuring them properly gave 20, and turned up the two exceptions above. Absent data must never be allowed to read as a measured zero."
+ },
+ "method": "Parsed 1,337 stored City pages for document links, reconciled by URL against every inventory URL and every saved artifact row, fetched and measured the remainder, refetched four anomalies without a timeout, verified containers by leading bytes, tested every PDF for its end-of-file marker, extracted text, ran the containment test for both plan generations, and swept every checksum against all checksummed inventory records and every saved artifact row.",
+ "classification_only": true,
+ "shared_state_written": [],
+ "already_archived_check": {
+  "rule_applied": "For proposed additions, test against every inventory record rather than only the archived ones, and by URL as well as by checksum.",
+  "cross_inventory_byte_collisions": 0,
+  "cross_inventory_url_collisions": 0,
+  "collisions_with_earlier_artifacts_in_this_run": 0,
+  "internal_byte_collisions": 0,
+  "archived_records_compared_against": 1020,
+  "all_checksummed_records_compared_against": 1460,
+  "inventory_urls_compared_against": 5727,
+  "artifact_rows_compared_against": 2802,
+  "result": "Nothing in this slice is already held or already decided; the sweep that removed the rest of the batch removed nothing from here."
+ },
+ "duplicate_and_supersession_checks": {
+  "internal_byte_collisions": 0,
+  "supersession_recorded": 54,
+  "note": "The 54 repealed plans are superseded by the Integrated Development Ordinance, recorded from the stamp on each document rather than inferred. The two plan generations supersede one another: the 2025 edition replaces the 2017."
+ },
+ "integration_flags": [
+  {
+   "severity": "not-applicable-through-update-candidate",
+   "affects": [],
+   "finding": "No file in this artifact has an inventory id.",
+   "recommended_action": "Create them as candidates first; they then fall under the ordinary archival gate."
+  },
+  {
+   "severity": "substantive-find",
+   "affects": [
+    "h3-0162",
+    "h3-0096"
+   ],
+   "finding": "Both generations of the Albuquerque Bernalillo County Comprehensive Plan - the 2017 edition and the edition effective October 2025 - neither in the inventory.",
+   "recommended_action": "Add both, and record that the 2025 edition supersedes the 2017."
+  },
+  {
+   "severity": "repeal-unverified-from-the-document",
+   "affects": [
+    "h3-0079",
+    "h3-0079",
+    "h3-0080"
+   ],
+   "finding": "One plan yields no extractable text at all, so its repeal rests on its filename alone; one more carries the word REPEALED without naming the instrument.",
+   "recommended_action": "Do not attribute either repeal to R-17-213 on this evidence. Render them and read the stamp."
+  },
+  {
+   "severity": "needs-ocr-to-be-findable",
+   "affects": [
+    "h3-0077",
+    "h3-0078",
+    "h3-0105",
+    "h3-0106",
+    "h3-0107",
+    "h3-0112",
+    "h3-0120",
+    "h3-0124",
+    "h3-0125",
+    "h3-0127",
+    "h3-0129",
+    "h3-0131",
+    "h3-0134",
+    "h3-0135",
+    "h3-0136",
+    "h3-0139",
+    "h3-0140",
+    "h3-0142",
+    "h3-0146",
+    "h3-0148"
+   ],
+   "finding": "20 repealed plans have no text layer except the repeal stamp. A keyword search of the archive will match them only on the word REPEALED.",
+   "recommended_action": "OCR them before publishing, or record plainly that their contents are not searchable."
+  },
+  {
+   "severity": "incomplete-series",
+   "affects": [],
+   "finding": "Chapters 6 Transportation, 9 Housing and 10 Parks & Open Space of the current plan have no separate file.",
+   "recommended_action": "Look for them before treating the chapter set as complete."
+  },
+  {
+   "severity": "deliberate-redundancy",
+   "affects": [
+    "h3-0096",
+    "h3-0082",
+    "h3-0088",
+    "h3-0089",
+    "h3-0090",
+    "h3-0091",
+    "h3-0092",
+    "h3-0093",
+    "h3-0094",
+    "h3-0095",
+    "h3-0083",
+    "h3-0084",
+    "h3-0085",
+    "h3-0086",
+    "h3-0087",
+    "h3-0081",
+    "h3-0162",
+    "h3-0149",
+    "h3-0150",
+    "h3-0151",
+    "h3-0152",
+    "h3-0153",
+    "h3-0154",
+    "h3-0155",
+    "h3-0156",
+    "h3-0157",
+    "h3-0158",
+    "h3-0159",
+    "h3-0160",
+    "h3-0161",
+    "h3-0097",
+    "h3-0098"
+   ],
+   "finding": "Every chapter is proven to be inside its compiled plan, and both are recommended anyway because the compiled files are 113 MB and 294 MB.",
+   "recommended_action": "Accept the redundancy or drop the chapter rows; each carries the measurement that justifies dropping it."
+  },
+  {
+   "severity": "incomplete-translation",
+   "affects": [
+    "h3-0097",
+    "h3-0098"
+   ],
+   "finding": "Only two of the plan's chapters were published in Spanish, and both are marked Borrador - draft.",
+   "recommended_action": "Label them draft translations and record that the Spanish set is incomplete."
+  }
+ ],
+ "counts": {
+  "reviewed": 86,
+  "add_to_the_inventory_as_a_new_candidate": 86,
+  "by_group": {
+   "repealed sector and area plans": 54,
+   "comprehensive plan 2017": 16,
+   "comprehensive plan 2025": 14,
+   "comprehensive plan in Spanish": 2
+  },
+  "repealed_plans": 54,
+  "repeal_stamp_found_in_the_document": 53,
+  "stamp_names_R_17_213": 52,
+  "stamp_also_names_O_17_49": 8,
+  "files_whose_only_text_is_the_repeal_stamp": 20,
+  "files_with_no_extractable_text_at_all": 1
+ },
+ "link_check": {
+  "checked": 86,
+  "http_200": 86,
+  "failed": 0,
+  "method": "Full HTTP GET with a browser user agent, 2026-09-14.",
+  "integrity": "Every row rehashed against its file on disk; every PDF tested for its end-of-file marker.",
+  "containers_verified": "86 PDF, by leading bytes."
+ },
+ "add_to_inventory": [
+  {
+   "local_ref": "h3-0099",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/AcademyTramwayEubankSDP-REPEALED.pdf",
+   "filename": "AcademyTramwayEubankSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 11325604,
+   "checksum_sha256": "d00c6851da689332d58efb311e8c2e7a895c113f0461be50405d1638c0101010",
+   "title": "Academy Tramway Eubank Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Academy Tramway Eubank, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "11,325,604 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED and (O-17-49). The plan body carries its own text layer as well.",
+   "description_word_count": 32,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED and (O-17-49)",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0100",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/BarelasSDP-REPEALED.pdf",
+   "filename": "BarelasSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 49173548,
+   "checksum_sha256": "9dd492c62f21418e2293588667154dd0a48d827846a6b499839ba40725b9707e",
+   "title": "Barelas Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Barelas, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "49,173,548 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED and (O-17-49). The plan body carries its own text layer as well.",
+   "description_word_count": 30,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED and (O-17-49)",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0101",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/CoorsCorridorSDP-REPEALED.pdf",
+   "filename": "CoorsCorridorSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 11972199,
+   "checksum_sha256": "b636e5830aa8f56ff0613939ce4a1a8cf92da49906fb1f352d29d99e00221e79",
+   "title": "Coors Corridor Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Coors Corridor, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "11,972,199 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED and (O-17-49). The plan body carries its own text layer as well.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED and (O-17-49)",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0102",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/Downtown2025SDP-REPEALED.pdf",
+   "filename": "Downtown2025SDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 28145545,
+   "checksum_sha256": "efa134d0b06022bd4f50eeea4f8835298bf98028b8d013274f0fa8f751a18d0d",
+   "title": "Downtown 2025 Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Downtown 2025, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "28,145,545 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED and (O-17-49). The plan body carries its own text layer as well.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED and (O-17-49)",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0103",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/DowntownNeighborhoodAreaSDP-REPEALED.pdf",
+   "filename": "DowntownNeighborhoodAreaSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 18243506,
+   "checksum_sha256": "4f0e2fa0470bd6e78756a95d35795652b1fe3bd838523b9b6198b9accb9a3b4f",
+   "title": "Downtown Neighborhood Area Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Downtown Neighborhood Area, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "18,243,506 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 32,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0104",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/EastAtriscoSDP-REPEALED.pdf",
+   "filename": "EastAtriscoSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 9944797,
+   "checksum_sha256": "f1beaecc16b975538a3db5db0e4ae0293b0828e20d2ac5e14fb7201a33ba52bb",
+   "title": "East Atrisco Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for East Atrisco, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "9,944,797 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED and (O-17-49). The plan body carries its own text layer as well.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED and (O-17-49)",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0105",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/EastGatewaySDP-REPEALED.pdf",
+   "filename": "EastGatewaySDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 43896644,
+   "checksum_sha256": "91bec92b4ccdb751d0f2ad7d198ecd04b86041d72fc8296baad47e4f852f77e1",
+   "title": "East Gateway Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for East Gateway, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "43,896,644 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. That stamp is the only extractable text in the file's first eight pages - exactly 144 characters, byte-identical to the stamp in nineteen other plans in this set. The plan itself is imaged.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "caution": "Searchable only for the word REPEALED. The plan's content has no text layer, so a keyword search of this archive will never match anything inside it. It needs OCR to be findable.",
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": false
+   }
+  },
+  {
+   "local_ref": "h3-0106",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/ElRanchoAtriscoPhase2-SDP-REPEALED.pdf",
+   "filename": "ElRanchoAtriscoPhase2-SDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 3637924,
+   "checksum_sha256": "9531bd6d70139027bafcdbfbd382704673036ad9a4deea23b82d9b986d9b1298",
+   "title": "El Rancho Atrisco Phase 2 Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for El Rancho Atrisco Phase 2, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "3,637,924 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. That stamp is the only extractable text in the file's first eight pages - exactly 144 characters, byte-identical to the stamp in nineteen other plans in this set. The plan itself is imaged.",
+   "description_word_count": 34,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "caution": "Searchable only for the word REPEALED. The plan's content has no text layer, so a keyword search of this archive will never match anything inside it. It needs OCR to be findable.",
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": false
+   }
+  },
+  {
+   "local_ref": "h3-0107",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/ElRanchoAtriscoPhase3-SDP-REPEALED.pdf",
+   "filename": "ElRanchoAtriscoPhase3-SDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 3431648,
+   "checksum_sha256": "306a104840c6018c21e194cd531076333bc4b7ae7a51d4fb1031add233a68503",
+   "title": "El Rancho Atrisco Phase 3 Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for El Rancho Atrisco Phase 3, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "3,431,648 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. That stamp is the only extractable text in the file's first eight pages - exactly 144 characters, byte-identical to the stamp in nineteen other plans in this set. The plan itself is imaged.",
+   "description_word_count": 34,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "caution": "Searchable only for the word REPEALED. The plan's content has no text layer, so a keyword search of this archive will never match anything inside it. It needs OCR to be findable.",
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": false
+   }
+  },
+  {
+   "local_ref": "h3-0108",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/HeritageHillsSDP-REPEALED.pdf",
+   "filename": "HeritageHillsSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 5816600,
+   "checksum_sha256": "13f91e309221c4ddff13a0a6939c09c5e9d2c68d9149746325533c89b0bfbc0b",
+   "title": "Heritage Hills Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Heritage Hills, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "5,816,600 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0109",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/HighDesertSDP-REPEALED.pdf",
+   "filename": "HighDesertSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 18740322,
+   "checksum_sha256": "7e7fb5f72f156182d5a4ec5a5dd15dad87f2b6aac525fcdc8118060e52371359",
+   "title": "High Desert Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for High Desert, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "18,740,322 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0110",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/HuningCastleRaynoldsAdditionSDP-REPEALED.pdf",
+   "filename": "HuningCastleRaynoldsAdditionSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 2059712,
+   "checksum_sha256": "2b895133c43d37f10ee3301c6c18e5a1b8f14254dd60d466d3a187bf51170f1e",
+   "title": "Huning Castle Raynolds Addition Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Huning Castle Raynolds Addition, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "2,059,712 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 33,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0111",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/HuningHighlandSDP-REPEALED.pdf",
+   "filename": "HuningHighlandSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 7533639,
+   "checksum_sha256": "d358a2835af5e0a4e9760a4cd600dda6d2aa7050e2642a2486e56a7f9ba434dd",
+   "title": "Huning Highland Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Huning Highland, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "7,533,639 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED and (O-17-49). The plan body carries its own text layer as well.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED and (O-17-49)",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0112",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/LaCuestaSDP-REPEALED.pdf",
+   "filename": "LaCuestaSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 1839711,
+   "checksum_sha256": "69a004b1ce3c850345054c35f89e443bcafc2bc2be9f48ee864041133d11d1e5",
+   "title": "La Cuesta Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for La Cuesta, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "1,839,711 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. That stamp is the only extractable text in the file's first eight pages - exactly 144 characters, byte-identical to the stamp in nineteen other plans in this set. The plan itself is imaged.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "caution": "Searchable only for the word REPEALED. The plan's content has no text layer, so a keyword search of this archive will never match anything inside it. It needs OCR to be findable.",
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": false
+   }
+  },
+  {
+   "local_ref": "h3-0113",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/LaCuevaSDP-REPEALED.pdf",
+   "filename": "LaCuevaSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 5587167,
+   "checksum_sha256": "5b44cbc89aad906bf46d39bb99e7a103569f8b68d95437abf164c1729acb96e1",
+   "title": "La Cueva Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for La Cueva, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "5,587,167 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0114",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/LaMesaSDP-REPEALED.pdf",
+   "filename": "LaMesaSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 4875228,
+   "checksum_sha256": "7815203fc4524ee322a231ce55fb7686ef1335783e39bbb541f823c5d4cca224",
+   "title": "La Mesa Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for La Mesa, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "4,875,228 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0115",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/LavaShadowsSDP-REPEALED.pdf",
+   "filename": "LavaShadowsSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 7708398,
+   "checksum_sha256": "22e10bbb6d0f26e8d9ca3acc81bb98b02be9bc06bf0f8891dfdf85037ba1640c",
+   "title": "Lava Shadows Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Lava Shadows, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "7,708,398 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0116",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/LosCandelariasSDP-REPEALED.pdf",
+   "filename": "LosCandelariasSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 4363016,
+   "checksum_sha256": "6fd70135f648781b83557a0a487cef1e5ae7dc49548f74bc2cf5c8b1be2636c0",
+   "title": "Los Candelarias Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Los Candelarias, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "4,363,016 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0117",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/LosDuranesSDP-REPEALED.pdf",
+   "filename": "LosDuranesSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 34452977,
+   "checksum_sha256": "bcbc0f9e16ad9b093558a5c5b9f8d6e657160601dd68b2e5bc3cc3efcc606a19",
+   "title": "Los Duranes Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Los Duranes, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "34,452,977 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0118",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/LosGriegosSDP-REPEALED.pdf",
+   "filename": "LosGriegosSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 7671304,
+   "checksum_sha256": "db916080a818b729a01dd2bbd2180831eb644934506ad2427712747ddd372b04",
+   "title": "Los Griegos Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Los Griegos, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "7,671,304 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0119",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/Martineztown-SantaBarbaraSDP-REPEALED.pdf",
+   "filename": "Martineztown-SantaBarbaraSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 9409996,
+   "checksum_sha256": "5f2dbee2acf8cbff1850a9e7d0b907f0a426130697e967cbcebb71928ed0a28b",
+   "title": "Martineztown Santa Barbara Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Martineztown Santa Barbara, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "9,409,996 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED and (O-17-49). The plan body carries its own text layer as well.",
+   "description_word_count": 32,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED and (O-17-49)",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0120",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/McClellanParkSDP-REPEALED.pdf",
+   "filename": "McClellanParkSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 4995037,
+   "checksum_sha256": "487f5a1b17607f6d7444a79d1baf0ca71ebfa31c3068fff283dc195df52a07b2",
+   "title": "McClellan Park Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for McClellan Park, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "4,995,037 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. That stamp is the only extractable text in the file's first eight pages - exactly 144 characters, byte-identical to the stamp in nineteen other plans in this set. The plan itself is imaged.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "caution": "Searchable only for the word REPEALED. The plan's content has no text layer, so a keyword search of this archive will never match anything inside it. It needs OCR to be findable.",
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": false
+   }
+  },
+  {
+   "local_ref": "h3-0121",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/NobHillHighlandSDP-REPEALED.pdf",
+   "filename": "NobHillHighlandSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 29495743,
+   "checksum_sha256": "3cbcfe2872f420883b37b449f2a521eab42a4f97e459c2c82c92b042314fb376",
+   "title": "Nob Hill Highland Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Nob Hill Highland, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "29,495,743 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 32,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0122",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/NorEsteSDP-REPEALED.pdf",
+   "filename": "NorEsteSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 6101439,
+   "checksum_sha256": "ef1b738d78bc49fff0beb173a73820d3aaaa7c80a719032bcf4daa9f67574338",
+   "title": "Nor Este Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Nor Este, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "6,101,439 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0123",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/North-I-25-SDP-REPEALED.pdf",
+   "filename": "North-I-25-SDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 49768250,
+   "checksum_sha256": "fd24453caebbb89644788b4950b572c58e3071654c0eb247fe7ab3987c437fd7",
+   "title": "North I-25 Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for North I-25, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "49,768,250 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0124",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/North4thStreetSDP-REPEALED.pdf",
+   "filename": "North4thStreetSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 7542382,
+   "checksum_sha256": "e075e92065f4e5084848d8aabb9baec29519397f8ef3f28b018c535086d560bd",
+   "title": "North 4th Street Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for North 4th Street, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "7,542,382 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. That stamp is the only extractable text in the file's first eight pages - exactly 144 characters, byte-identical to the stamp in nineteen other plans in this set. The plan itself is imaged.",
+   "description_word_count": 32,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "caution": "Searchable only for the word REPEALED. The plan's content has no text layer, so a keyword search of this archive will never match anything inside it. It needs OCR to be findable.",
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": false
+   }
+  },
+  {
+   "local_ref": "h3-0077",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/AreaPlans/NorthValleyAreaPlan-REPEALED.pdf",
+   "filename": "NorthValleyAreaPlan-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 17652292,
+   "checksum_sha256": "699af58fec14efc24b9194e8b85e74ff9aac127d28769f35cac04799edd9e7e7",
+   "title": "North Valley Area Plan Area Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The area plan for North Valley Area Plan, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "17,652,292 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. That stamp is the only extractable text in the file's first eight pages - exactly 144 characters, byte-identical to the stamp in nineteen other plans in this set. The plan itself is imaged.",
+   "description_word_count": 32,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "caution": "Searchable only for the word REPEALED. The plan's content has no text layer, so a keyword search of this archive will never match anything inside it. It needs OCR to be findable.",
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": false
+   }
+  },
+  {
+   "local_ref": "h3-0125",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/NorthwestMesaEscarpmentPlan-REPEALED.pdf",
+   "filename": "NorthwestMesaEscarpmentPlan-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 44353332,
+   "checksum_sha256": "6161024e9da9308a1239ae84a00cb11f1c88764f867d770f61adbc7c3a490b26",
+   "title": "Northwest Mesa Escarpment Plan Area Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The area plan for Northwest Mesa Escarpment Plan, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "44,353,332 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. That stamp is the only extractable text in the file's first eight pages - exactly 144 characters, byte-identical to the stamp in nineteen other plans in this set. The plan itself is imaged.",
+   "description_word_count": 32,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "caution": "Searchable only for the word REPEALED. The plan's content has no text layer, so a keyword search of this archive will never match anything inside it. It needs OCR to be findable.",
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": false
+   }
+  },
+  {
+   "local_ref": "h3-0126",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/OldTownSDP-REPEALED.pdf",
+   "filename": "OldTownSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 5582538,
+   "checksum_sha256": "a97215f8a7ef8d5e5a296424670d1a51915c466c818602f7b0e4f77b7e0f6b79",
+   "title": "Old Town Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Old Town, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "5,582,538 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0127",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/QuintessenceSDP-REPEALED.pdf",
+   "filename": "QuintessenceSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 4520707,
+   "checksum_sha256": "904a59ac6edcfee6a3fb310bd59cb6c1811df14da56436069c581fc895e57873",
+   "title": "Quintessence Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Quintessence, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "4,520,707 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. That stamp is the only extractable text in the file's first eight pages - exactly 144 characters, byte-identical to the stamp in nineteen other plans in this set. The plan itself is imaged.",
+   "description_word_count": 30,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "caution": "Searchable only for the word REPEALED. The plan's content has no text layer, so a keyword search of this archive will never match anything inside it. It needs OCR to be findable.",
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": false
+   }
+  },
+  {
+   "local_ref": "h3-0128",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/RioBravoSDP-REPEALED.pdf",
+   "filename": "RioBravoSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 26050759,
+   "checksum_sha256": "8ac93ab80ff6ad0834062ef842dc473f0535a748af5df127b1079bf205bcf196",
+   "title": "Rio Bravo Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Rio Bravo, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "26,050,759 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0129",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/RioGrandeBlvdSDP-REPEALED.pdf",
+   "filename": "RioGrandeBlvdSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 12141057,
+   "checksum_sha256": "6d4fc1f6c16c1d4e393155c313a89bd18ade01093c4ce91fd7591538473acd04",
+   "title": "Rio Grande Blvd Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Rio Grande Blvd, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "12,141,057 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. That stamp is the only extractable text in the file's first eight pages - exactly 144 characters, byte-identical to the stamp in nineteen other plans in this set. The plan itself is imaged.",
+   "description_word_count": 32,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "caution": "Searchable only for the word REPEALED. The plan's content has no text layer, so a keyword search of this archive will never match anything inside it. It needs OCR to be findable.",
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": false
+   }
+  },
+  {
+   "local_ref": "h3-0130",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/RiverviewSDP-REPEALED.pdf",
+   "filename": "RiverviewSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 7045871,
+   "checksum_sha256": "ab66e722f13fcee885a05f279847e1a7ae01e33ae5846d65fcd82995794d2163",
+   "title": "Riverview Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Riverview, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "7,045,871 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 30,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0078",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/AreaPlans/SandiaFoothillAreaPlan-REPEALED.pdf",
+   "filename": "SandiaFoothillAreaPlan-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 1384542,
+   "checksum_sha256": "260cdd55fb50476e3072d944657828c321a91fc6b0d4066358d0c0e582b32f94",
+   "title": "Sandia Foothill Area Plan Area Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The area plan for Sandia Foothill Area Plan, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "1,384,542 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. That stamp is the only extractable text in the file's first eight pages - exactly 144 characters, byte-identical to the stamp in nineteen other plans in this set. The plan itself is imaged.",
+   "description_word_count": 32,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "caution": "Searchable only for the word REPEALED. The plan's content has no text layer, so a keyword search of this archive will never match anything inside it. It needs OCR to be findable.",
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": false
+   }
+  },
+  {
+   "local_ref": "h3-0131",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/Sawmill-WellsParkSDP-REPEALED.pdf",
+   "filename": "Sawmill-WellsParkSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 16358328,
+   "checksum_sha256": "eebe7bca282ae338c7bd28f5da467489006499623f89de001fb9d56c6dc3a5f8",
+   "title": "Sawmill Wells Park Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Sawmill Wells Park, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "16,358,328 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. That stamp is the only extractable text in the file's first eight pages - exactly 144 characters, byte-identical to the stamp in nineteen other plans in this set. The plan itself is imaged.",
+   "description_word_count": 32,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "caution": "Searchable only for the word REPEALED. The plan's content has no text layer, so a keyword search of this archive will never match anything inside it. It needs OCR to be findable.",
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": false
+   }
+  },
+  {
+   "local_ref": "h3-0132",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/SevenBarRanchSDP-REPEALED.pdf",
+   "filename": "SevenBarRanchSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 8819641,
+   "checksum_sha256": "daf7c833ab9d050a09d80a43ed71ffc0bb7f54ed844cef1fa8d6ee33df95c93c",
+   "title": "Seven Bar Ranch Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Seven Bar Ranch, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "8,819,641 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 32,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0133",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/SouthBroadwaySDP-REPEALED.pdf",
+   "filename": "SouthBroadwaySDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 15199134,
+   "checksum_sha256": "6585631fde4d769ee1d2ef65438c3fe5a3a8db09a813118feb5b8fa5a0499f2d",
+   "title": "South Broadway Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for South Broadway, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "15,199,134 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED and (O-17-49). The plan body carries its own text layer as well.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED and (O-17-49)",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0134",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/SouthMartineztownSDP-REPEALED.pdf",
+   "filename": "SouthMartineztownSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 4659263,
+   "checksum_sha256": "0f5b210f1f98d4b085a3a5680ac5819f2f02bf0c1179d7a8f9639f203fa37c29",
+   "title": "South Martineztown Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for South Martineztown, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "4,659,263 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. That stamp is the only extractable text in the file's first eight pages - exactly 144 characters, byte-identical to the stamp in nineteen other plans in this set. The plan itself is imaged.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "caution": "Searchable only for the word REPEALED. The plan's content has no text layer, so a keyword search of this archive will never match anything inside it. It needs OCR to be findable.",
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": false
+   }
+  },
+  {
+   "local_ref": "h3-0135",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/SouthYaleSDP-REPEALED.pdf",
+   "filename": "SouthYaleSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 20275559,
+   "checksum_sha256": "2e726cb95fe023294041229087c7d15d07b6689184d5a09e928b550d309cb841",
+   "title": "South Yale Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for South Yale, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "20,275,559 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. That stamp is the only extractable text in the file's first eight pages - exactly 144 characters, byte-identical to the stamp in nineteen other plans in this set. The plan itself is imaged.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "caution": "Searchable only for the word REPEALED. The plan's content has no text layer, so a keyword search of this archive will never match anything inside it. It needs OCR to be findable.",
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": false
+   }
+  },
+  {
+   "local_ref": "h3-0079",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/AreaPlans/SouthwestAreaPlan-REPEALED.pdf",
+   "filename": "SouthwestAreaPlan-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 9814607,
+   "checksum_sha256": "aca4efef94a9f94a5fb79a28bb5edef31fd1adf173671fa74391b3f1859a917c",
+   "title": "Southwest Area Plan Area Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The area plan for Southwest Area Plan, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City under a filename marking it repealed.",
+   "evidence": "9,814,607 bytes. Nothing is extractable from its first eight pages at all - no text layer, and no repeal stamp either. Its repeal rests on its filename alone, which is the only file in this set where that is true.",
+   "description_word_count": 30,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "caution": "No extractable text whatsoever, not even a stamp. Unsearchable, and its repeal is unverified from the document. Render or OCR it before publishing.",
+   "repeal_stamp": {
+    "found": false,
+    "what_that_means": "Every other plan in this set carries a stamp in its own text layer. This one carries no extractable text at all, so the repeal is asserted by the filename and nothing else. Render it before relying on the claim."
+   }
+  },
+  {
+   "local_ref": "h3-0136",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/StJosephospitalSDP-REPEALED.pdf",
+   "filename": "StJosephospitalSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 2382670,
+   "checksum_sha256": "f5a5e2fead119d03a685c6c30963546b35037df2314227c7592ed4914f4bb835",
+   "title": "St Joseph Hospital Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for St Joseph Hospital, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "2,382,670 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. That stamp is the only extractable text in the file's first eight pages - exactly 144 characters, byte-identical to the stamp in nineteen other plans in this set. The plan itself is imaged.",
+   "description_word_count": 32,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "caution": "The City's filename reads StJosephospital - a letter is missing. Titled here as St Joseph Hospital; confirm the plan's own title before publishing. Searchable only for the word REPEALED. The plan's content has no text layer, so a keyword search of this archive will never match anything inside it. It needs OCR to be findable.",
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": false
+   }
+  },
+  {
+   "local_ref": "h3-0137",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/TowerUnserSDP-REPEALED.pdf",
+   "filename": "TowerUnserSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 30910281,
+   "checksum_sha256": "87e20ab3c2b8a8058af16e9e527c9a677e15c9d355e3d34139b2a7d0ae746287",
+   "title": "Tower Unser Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Tower Unser, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "30,910,281 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0138",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/TrumbullSDP-REPEALED.pdf",
+   "filename": "TrumbullSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 142702122,
+   "checksum_sha256": "fc4be5436ef161f234e73d3a9dcb21e9fc020a6a6bf67788b206f6ceb847b691",
+   "title": "Trumbull Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Trumbull, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "142,702,122 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 30,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0139",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/UniversityNeighborhoodsSDP-REPEALED.pdf",
+   "filename": "UniversityNeighborhoodsSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 8831968,
+   "checksum_sha256": "c96bfa1a1b5b48ada216fb13286c17de0dd42187a093d41110baac72f8de05ce",
+   "title": "University Neighborhoods Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for University Neighborhoods, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "8,831,968 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. That stamp is the only extractable text in the file's first eight pages - exactly 144 characters, byte-identical to the stamp in nineteen other plans in this set. The plan itself is imaged.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "caution": "Searchable only for the word REPEALED. The plan's content has no text layer, so a keyword search of this archive will never match anything inside it. It needs OCR to be findable.",
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": false
+   }
+  },
+  {
+   "local_ref": "h3-0140",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/UniversityofAlbuquerqueSDP-REPEALED.pdf",
+   "filename": "UniversityofAlbuquerqueSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 3964622,
+   "checksum_sha256": "21758cb101057dbb301490c2ecfed00f8d8db1070d4cca150ee44ce2f5af6572",
+   "title": "University of Albuquerque Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for University of Albuquerque, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "3,964,622 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. That stamp is the only extractable text in the file's first eight pages - exactly 144 characters, byte-identical to the stamp in nineteen other plans in this set. The plan itself is imaged.",
+   "description_word_count": 32,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "caution": "Searchable only for the word REPEALED. The plan's content has no text layer, so a keyword search of this archive will never match anything inside it. It needs OCR to be findable.",
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": false
+   }
+  },
+  {
+   "local_ref": "h3-0141",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/UptownSDP-REPEALED.pdf",
+   "filename": "UptownSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 12685476,
+   "checksum_sha256": "191b7f4096befbecd9326fd3a01bf88109b6975477495590cce585d6173319a0",
+   "title": "Uptown Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Uptown, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "12,685,476 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 30,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0142",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/VineyardSDP-REPEALED.pdf",
+   "filename": "VineyardSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 3887655,
+   "checksum_sha256": "ff520cbedb59672e7eef7a41fcddb0a5ccba98a1813c4489595a924decddb791",
+   "title": "Vineyard Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Vineyard, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "3,887,655 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. That stamp is the only extractable text in the file's first eight pages - exactly 144 characters, byte-identical to the stamp in nineteen other plans in this set. The plan itself is imaged.",
+   "description_word_count": 30,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "caution": "Searchable only for the word REPEALED. The plan's content has no text layer, so a keyword search of this archive will never match anything inside it. It needs OCR to be findable.",
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": false
+   }
+  },
+  {
+   "local_ref": "h3-0143",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/VolcanoCliffsSDP-REPEALED.pdf",
+   "filename": "VolcanoCliffsSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 19674575,
+   "checksum_sha256": "690070550c7565006b3ebe87edb12842035c83c6ee989d1d99816d811c1882ec",
+   "title": "Volcano Cliffs Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Volcano Cliffs, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "19,674,575 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0144",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/VolcanoHeightsSDP-REPEALED.pdf",
+   "filename": "VolcanoHeightsSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 50528066,
+   "checksum_sha256": "5ef23daafbc0d36f478824b369066da18a8784e2ae3b8aecec9af9fc951dcb0f",
+   "title": "Volcano Heights Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Volcano Heights, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "50,528,066 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0145",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/VolcanoTrailsSDP-REPEALED.pdf",
+   "filename": "VolcanoTrailsSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 20662434,
+   "checksum_sha256": "c957570f50afd446749f6445c1e10d4a44e25dcef66fa0e514b87382c592c196",
+   "title": "Volcano Trails Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Volcano Trails, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "20,662,434 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0146",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/WestMesaSDP-REPEALED.pdf",
+   "filename": "WestMesaSDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 3140437,
+   "checksum_sha256": "7121ec0a7ce0b7de6ac41164d839a82dd068719cf325a3cf535a6437269b3ac8",
+   "title": "West Mesa Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for West Mesa, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "3,140,437 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. That stamp is the only extractable text in the file's first eight pages - exactly 144 characters, byte-identical to the stamp in nineteen other plans in this set. The plan itself is imaged.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "caution": "Searchable only for the word REPEALED. The plan's content has no text layer, so a keyword search of this archive will never match anything inside it. It needs OCR to be findable.",
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": false
+   }
+  },
+  {
+   "local_ref": "h3-0147",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/WestRoute66SDP-REPEALED.pdf",
+   "filename": "WestRoute66SDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 27937210,
+   "checksum_sha256": "7bd91474826bb62108a6ec0f026f41b220ae561d4b20313a1fdf2c7298bd2805",
+   "title": "West Route 66 Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for West Route 66, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "27,937,210 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. The plan body carries its own text layer as well.",
+   "description_word_count": 32,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0080",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/AreaPlans/WestSideStrategicPlan-REPEALED.pdf",
+   "filename": "WestSideStrategicPlan-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 25668064,
+   "checksum_sha256": "60ffa3190460833aa835dc0f85a43519f8fe450d6b72520f2248ea64cc8d4196",
+   "title": "West Side Strategic Plan Area Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The area plan for West Side Strategic Plan, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "25,668,064 bytes. Its own pages carry a text-layer stamp reading REPEALED, without naming the repealing instrument. The plan body carries its own text layer as well.",
+   "description_word_count": 32,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "caution": "Its stamp says REPEALED but does not name the repealing instrument in the first eight pages, unlike the other plans in this set. Record the repeal without attributing it to R-17-213 from this file.",
+   "repeal_stamp": {
+    "found": true,
+    "reads": "REPEALED, with no instrument named in the first eight pages",
+    "names_the_repealing_instrument": false,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": true
+   }
+  },
+  {
+   "local_ref": "h3-0148",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/SectorPlans/WindowG-SDP-REPEALED.pdf",
+   "filename": "WindowG-SDP-REPEALED.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/area-sector-development-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 4533175,
+   "checksum_sha256": "e324c88c47759dc8c2c43be0502acbc5a4698a65532ae1f47ee2ff6e04b21670",
+   "title": "Window G Sector Development Plan, repealed",
+   "group": "repealed sector and area plans",
+   "description": "The sector development plan for Window G, superseded when the Integrated Development Ordinance replaced Albuquerque's sector and area plans, and republished by the City carrying the stamp that records its repeal.",
+   "evidence": "4,533,175 bytes. Its own pages carry a text-layer stamp reading (R-17-213) REPEALED. That stamp is the only extractable text in the file's first eight pages - exactly 144 characters, byte-identical to the stamp in nineteen other plans in this set. The plan itself is imaged.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Repealed by the ordinance that replaced it."
+    }
+   ],
+   "caution": "Titled from the filename as Window G. The document yields only its repeal stamp, so the plan's own title could not be read. Searchable only for the word REPEALED. The plan's content has no text layer, so a keyword search of this archive will never match anything inside it. It needs OCR to be findable.",
+   "repeal_stamp": {
+    "found": true,
+    "reads": "(R-17-213) REPEALED",
+    "names_the_repealing_instrument": true,
+    "verified_from": "the document's own text layer, not from its filename",
+    "text_layer_beyond_the_stamp": false
+   }
+  },
+  {
+   "local_ref": "h3-0096",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/CompPlan-FullText.pdf",
+   "filename": "CompPlan-FullText.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 113805107,
+   "checksum_sha256": "f33770958376b6e474e9cf40e5a156133835c4935435b3119a2dab1a18e36995",
+   "title": "Albuquerque Bernalillo County Comprehensive Plan, 2017: full text",
+   "group": "comprehensive plan 2017",
+   "description": "The complete 2017 Albuquerque Bernalillo County Comprehensive Plan in a single file, the joint City and County policy document that guides growth and development and that the sector plans were folded into.",
+   "evidence": "113,805,107 bytes, 183,992 extracted words. Measured as the container of the whole 2017 set: all fourteen chapters and the appendices score token coverage of 1.0000 inside it, and three sixty-word contiguous runs taken from each part are present verbatim, 3 of 3, for every one of the fifteen.",
+   "description_word_count": 32,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "The plan the code implements."
+    },
+    {
+     "page": "content/development-land-use/development-process.md",
+     "reason": "Applications are judged against it."
+    }
+   ],
+   "caution": "The canonical file for this generation. Its chapters are recommended too; see why_both_the_whole_and_its_parts_are_kept."
+  },
+  {
+   "local_ref": "h3-0082",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/CompPlan-Chapter1.pdf",
+   "filename": "CompPlan-Chapter1.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 25685883,
+   "checksum_sha256": "ac90f37927df063b92d2df87b9a17e379b6635ac6a4db049058b40e6d14707e1",
+   "title": "Comprehensive Plan 2017, Chapter 1",
+   "group": "comprehensive plan 2017",
+   "description": "Chapter 1 of the 2017 Albuquerque Bernalillo County Comprehensive Plan, published as a separate file alongside the compiled plan so that a single chapter can be cited without the whole document.",
+   "evidence": "25,685,883 bytes. Token coverage of 1.0000 inside CompPlan-FullText.pdf and 3 of 3 sixty-word contiguous runs present verbatim: this chapter is inside the compiled plan.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement. Keep the relationship on the record."
+  },
+  {
+   "local_ref": "h3-0088",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/CompPlan-Chapter2.pdf",
+   "filename": "CompPlan-Chapter2.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 3398636,
+   "checksum_sha256": "a3d86f6d9572fbfd3186ed588419f423b9d60b2c7ae50c5f1f285ec31852b887",
+   "title": "Comprehensive Plan 2017, Chapter 2",
+   "group": "comprehensive plan 2017",
+   "description": "Chapter 2 of the 2017 Albuquerque Bernalillo County Comprehensive Plan, published as a separate file alongside the compiled plan so that a single chapter can be cited without the whole document.",
+   "evidence": "3,398,636 bytes. Token coverage of 1.0000 inside CompPlan-FullText.pdf and 3 of 3 sixty-word contiguous runs present verbatim: this chapter is inside the compiled plan.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement. Keep the relationship on the record."
+  },
+  {
+   "local_ref": "h3-0089",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/CompPlan-Chapter3.pdf",
+   "filename": "CompPlan-Chapter3.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 11409130,
+   "checksum_sha256": "a04501314641886f97f6f98aa0340d021d08db1e945348cb6e51ab5513046e72",
+   "title": "Comprehensive Plan 2017, Chapter 3",
+   "group": "comprehensive plan 2017",
+   "description": "Chapter 3 of the 2017 Albuquerque Bernalillo County Comprehensive Plan, published as a separate file alongside the compiled plan so that a single chapter can be cited without the whole document.",
+   "evidence": "11,409,130 bytes. Token coverage of 1.0000 inside CompPlan-FullText.pdf and 3 of 3 sixty-word contiguous runs present verbatim: this chapter is inside the compiled plan.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement. Keep the relationship on the record."
+  },
+  {
+   "local_ref": "h3-0090",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/CompPlan-Chapter4.pdf",
+   "filename": "CompPlan-Chapter4.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 18801164,
+   "checksum_sha256": "aee64c1a8877e3f5072bd4aa6f7645c7239ed26538bc9501f00543028cadcce1",
+   "title": "Comprehensive Plan 2017, Chapter 4",
+   "group": "comprehensive plan 2017",
+   "description": "Chapter 4 of the 2017 Albuquerque Bernalillo County Comprehensive Plan, published as a separate file alongside the compiled plan so that a single chapter can be cited without the whole document.",
+   "evidence": "18,801,164 bytes. Token coverage of 1.0000 inside CompPlan-FullText.pdf and 3 of 3 sixty-word contiguous runs present verbatim: this chapter is inside the compiled plan.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement. Keep the relationship on the record."
+  },
+  {
+   "local_ref": "h3-0091",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/CompPlan-Chapter5.pdf",
+   "filename": "CompPlan-Chapter5.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 4523170,
+   "checksum_sha256": "bd81fc0f34d6423e0d227b1b303330541f490b9562f20af2f6a311127420497f",
+   "title": "Comprehensive Plan 2017, Chapter 5",
+   "group": "comprehensive plan 2017",
+   "description": "Chapter 5 of the 2017 Albuquerque Bernalillo County Comprehensive Plan, published as a separate file alongside the compiled plan so that a single chapter can be cited without the whole document.",
+   "evidence": "4,523,170 bytes. Token coverage of 1.0000 inside CompPlan-FullText.pdf and 3 of 3 sixty-word contiguous runs present verbatim: this chapter is inside the compiled plan.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement. Keep the relationship on the record."
+  },
+  {
+   "local_ref": "h3-0092",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/CompPlan-Chapter6.pdf",
+   "filename": "CompPlan-Chapter6.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 21108283,
+   "checksum_sha256": "3f1cd66977912634c57d4394fe351a1238ce19aa55a202f35d3fae241da75893",
+   "title": "Comprehensive Plan 2017, Chapter 6",
+   "group": "comprehensive plan 2017",
+   "description": "Chapter 6 of the 2017 Albuquerque Bernalillo County Comprehensive Plan, published as a separate file alongside the compiled plan so that a single chapter can be cited without the whole document.",
+   "evidence": "21,108,283 bytes. Token coverage of 1.0000 inside CompPlan-FullText.pdf and 3 of 3 sixty-word contiguous runs present verbatim: this chapter is inside the compiled plan.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement. Keep the relationship on the record."
+  },
+  {
+   "local_ref": "h3-0093",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/CompPlan-Chapter7.pdf",
+   "filename": "CompPlan-Chapter7.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 1296658,
+   "checksum_sha256": "62f77a6310f729064d2220c647b2b23d8a38864efca0f94a2174c9dfb93e9c51",
+   "title": "Comprehensive Plan 2017, Chapter 7",
+   "group": "comprehensive plan 2017",
+   "description": "Chapter 7 of the 2017 Albuquerque Bernalillo County Comprehensive Plan, published as a separate file alongside the compiled plan so that a single chapter can be cited without the whole document.",
+   "evidence": "1,296,658 bytes. Token coverage of 1.0000 inside CompPlan-FullText.pdf and 3 of 3 sixty-word contiguous runs present verbatim: this chapter is inside the compiled plan.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement. Keep the relationship on the record."
+  },
+  {
+   "local_ref": "h3-0094",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/CompPlan-Chapter8.pdf",
+   "filename": "CompPlan-Chapter8.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 1853071,
+   "checksum_sha256": "da751d3f7be42c4a1563e907f91e05ac2934acd8670e030ee75546f64d4e39ff",
+   "title": "Comprehensive Plan 2017, Chapter 8",
+   "group": "comprehensive plan 2017",
+   "description": "Chapter 8 of the 2017 Albuquerque Bernalillo County Comprehensive Plan, published as a separate file alongside the compiled plan so that a single chapter can be cited without the whole document.",
+   "evidence": "1,853,071 bytes. Token coverage of 1.0000 inside CompPlan-FullText.pdf and 3 of 3 sixty-word contiguous runs present verbatim: this chapter is inside the compiled plan.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement. Keep the relationship on the record."
+  },
+  {
+   "local_ref": "h3-0095",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/CompPlan-Chapter9.pdf",
+   "filename": "CompPlan-Chapter9.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 1410153,
+   "checksum_sha256": "30c191bc2ec899f4dc70f6fa51a3f4e77fc757b58eeb53753ea5bd377f458a1f",
+   "title": "Comprehensive Plan 2017, Chapter 9",
+   "group": "comprehensive plan 2017",
+   "description": "Chapter 9 of the 2017 Albuquerque Bernalillo County Comprehensive Plan, published as a separate file alongside the compiled plan so that a single chapter can be cited without the whole document.",
+   "evidence": "1,410,153 bytes. Token coverage of 1.0000 inside CompPlan-FullText.pdf and 3 of 3 sixty-word contiguous runs present verbatim: this chapter is inside the compiled plan.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement. Keep the relationship on the record."
+  },
+  {
+   "local_ref": "h3-0083",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/CompPlan-Chapter10.pdf",
+   "filename": "CompPlan-Chapter10.pdf",
+   "harvested_from": "https://www.cabq.gov/parksandrecreation/open-space/about-open-space/open-space-resource-management-plans",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 3021152,
+   "checksum_sha256": "d7448fdcca300ce267fd1524309fc73ef062672b8fb508990fb33ccb111740c3",
+   "title": "Comprehensive Plan 2017, Chapter 10",
+   "group": "comprehensive plan 2017",
+   "description": "Chapter 10 of the 2017 Albuquerque Bernalillo County Comprehensive Plan, published as a separate file alongside the compiled plan so that a single chapter can be cited without the whole document.",
+   "evidence": "3,021,152 bytes. Token coverage of 1.0000 inside CompPlan-FullText.pdf and 3 of 3 sixty-word contiguous runs present verbatim: this chapter is inside the compiled plan.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement. Keep the relationship on the record."
+  },
+  {
+   "local_ref": "h3-0084",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/CompPlan-Chapter11.pdf",
+   "filename": "CompPlan-Chapter11.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 2054986,
+   "checksum_sha256": "8b30a06bd1333cc708f075cb22b8a1f19591f0ca04a35dfa255f943bf8ebdc4d",
+   "title": "Comprehensive Plan 2017, Chapter 11",
+   "group": "comprehensive plan 2017",
+   "description": "Chapter 11 of the 2017 Albuquerque Bernalillo County Comprehensive Plan, published as a separate file alongside the compiled plan so that a single chapter can be cited without the whole document.",
+   "evidence": "2,054,986 bytes. Token coverage of 1.0000 inside CompPlan-FullText.pdf and 3 of 3 sixty-word contiguous runs present verbatim: this chapter is inside the compiled plan.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement. Keep the relationship on the record."
+  },
+  {
+   "local_ref": "h3-0085",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/CompPlan-Chapter12.pdf",
+   "filename": "CompPlan-Chapter12.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 2606315,
+   "checksum_sha256": "955cdb8f4d4dbb4678af47adcb099c4caf21679659f65596732fda320ef0b180",
+   "title": "Comprehensive Plan 2017, Chapter 12",
+   "group": "comprehensive plan 2017",
+   "description": "Chapter 12 of the 2017 Albuquerque Bernalillo County Comprehensive Plan, published as a separate file alongside the compiled plan so that a single chapter can be cited without the whole document.",
+   "evidence": "2,606,315 bytes. Token coverage of 1.0000 inside CompPlan-FullText.pdf and 3 of 3 sixty-word contiguous runs present verbatim: this chapter is inside the compiled plan.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement. Keep the relationship on the record."
+  },
+  {
+   "local_ref": "h3-0086",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/CompPlan-Chapter13.pdf",
+   "filename": "CompPlan-Chapter13.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 1945605,
+   "checksum_sha256": "2ef74dc7d958db6ebfe5868ee676d592f686df0b32f134f6b1453eb4ac8df31d",
+   "title": "Comprehensive Plan 2017, Chapter 13",
+   "group": "comprehensive plan 2017",
+   "description": "Chapter 13 of the 2017 Albuquerque Bernalillo County Comprehensive Plan, published as a separate file alongside the compiled plan so that a single chapter can be cited without the whole document.",
+   "evidence": "1,945,605 bytes. Token coverage of 1.0000 inside CompPlan-FullText.pdf and 3 of 3 sixty-word contiguous runs present verbatim: this chapter is inside the compiled plan.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement. Keep the relationship on the record."
+  },
+  {
+   "local_ref": "h3-0087",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/CompPlan-Chapter14.pdf",
+   "filename": "CompPlan-Chapter14.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 1492366,
+   "checksum_sha256": "eafb293723eaa7d80906997a79f74abea51f39f678647d8cc70e527f28fc5e28",
+   "title": "Comprehensive Plan 2017, Chapter 14",
+   "group": "comprehensive plan 2017",
+   "description": "Chapter 14 of the 2017 Albuquerque Bernalillo County Comprehensive Plan, published as a separate file alongside the compiled plan so that a single chapter can be cited without the whole document.",
+   "evidence": "1,492,366 bytes. Token coverage of 1.0000 inside CompPlan-FullText.pdf and 3 of 3 sixty-word contiguous runs present verbatim: this chapter is inside the compiled plan.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement. Keep the relationship on the record."
+  },
+  {
+   "local_ref": "h3-0081",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/CompPlan-Appendices.pdf",
+   "filename": "CompPlan-Appendices.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 5238616,
+   "checksum_sha256": "ea838f7f5da28625294f5f67de803739358ad91326a9a5c9e1d0580d06c582c3",
+   "title": "Comprehensive Plan 2017: appendices",
+   "group": "comprehensive plan 2017",
+   "description": "The appendices to the 2017 Comprehensive Plan, published separately from the compiled plan and containing the supporting material the chapters refer to.",
+   "evidence": "5,238,616 bytes, 28,284 extracted words. Token coverage of 1.0000 inside CompPlan-FullText.pdf with 3 of 3 contiguous runs present: the appendices are inside the compiled plan.",
+   "description_word_count": 22,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement."
+  },
+  {
+   "local_ref": "h3-0162",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2024/EFFECTIVE_CompPlan_October2025.pdf",
+   "filename": "EFFECTIVE_CompPlan_October2025.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 294090168,
+   "checksum_sha256": "fb70da9ab9120537004a0b371f42f77cb26b935f7bd22b6b1aad42d97b8a2e26",
+   "title": "Albuquerque Bernalillo County Comprehensive Plan, effective October 2025",
+   "group": "comprehensive plan 2025",
+   "description": "The Comprehensive Plan as it took effect in October 2025, the current joint City and County policy document for growth and development and the successor to the 2017 edition.",
+   "evidence": "294,090,168 bytes - the largest file measured anywhere in this run. Measured as the container of the whole 2024 set: every one of the twelve separately published chapters and the appendices scores token coverage of 1.0000 inside it with 3 of 3 contiguous runs present verbatim.",
+   "description_word_count": 29,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "The plan the code implements."
+    },
+    {
+     "page": "content/development-land-use/development-process.md",
+     "reason": "Applications are judged against it."
+    }
+   ],
+   "caution": "The current plan and the canonical file for this generation. At 294 MB it is not a practical citation target, which is why its chapters are recommended as well."
+  },
+  {
+   "local_ref": "h3-0149",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2024/0%20Title%20Pages.pdf",
+   "filename": "0 Title Pages.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 14538516,
+   "checksum_sha256": "4bbfda8ea09feb46a1423fd2389fa019cedc5bd37677b032d560643012c8137c",
+   "title": "Comprehensive Plan 2025, Chapter 0: Title Pages",
+   "group": "comprehensive plan 2025",
+   "description": "Chapter 0 of the Comprehensive Plan effective October 2025, covering title pages, published as a separate file so the chapter can be cited without the 294-megabyte compiled plan.",
+   "evidence": "14,538,516 bytes. Token coverage of 1.0000 inside EFFECTIVE_CompPlan_October2025.pdf with 3 of 3 sixty-word contiguous runs present verbatim: this part is inside the compiled plan. Its filename does not carry the word EFFECTIVE.",
+   "description_word_count": 28,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement.",
+   "filename_marked_effective": false
+  },
+  {
+   "local_ref": "h3-0150",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2024/1%20Introduction.pdf",
+   "filename": "1 Introduction.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 10591196,
+   "checksum_sha256": "18a9c6ce7edf418a8433b8b571c43915d67da5ac9bf558c516771648689362e3",
+   "title": "Comprehensive Plan 2025, Chapter 1: Introduction",
+   "group": "comprehensive plan 2025",
+   "description": "Chapter 1 of the Comprehensive Plan effective October 2025, covering introduction, published as a separate file so the chapter can be cited without the 294-megabyte compiled plan.",
+   "evidence": "10,591,196 bytes. Token coverage of 1.0000 inside EFFECTIVE_CompPlan_October2025.pdf with 3 of 3 sixty-word contiguous runs present verbatim: this part is inside the compiled plan. Its filename does not carry the word EFFECTIVE.",
+   "description_word_count": 27,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement.",
+   "filename_marked_effective": false
+  },
+  {
+   "local_ref": "h3-0151",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2024/11%20Heritage%20EFFECTIVE.pdf",
+   "filename": "11 Heritage EFFECTIVE.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 17358285,
+   "checksum_sha256": "d236fc3b643dd13b139408583c632cd5bd95ecce2b17b8ee2828c41d50c696e7",
+   "title": "Comprehensive Plan 2025, Chapter 11: Heritage",
+   "group": "comprehensive plan 2025",
+   "description": "Chapter 11 of the Comprehensive Plan effective October 2025, covering heritage, published as a separate file so the chapter can be cited without the 294-megabyte compiled plan.",
+   "evidence": "17,358,285 bytes. Token coverage of 1.0000 inside EFFECTIVE_CompPlan_October2025.pdf with 3 of 3 sixty-word contiguous runs present verbatim: this part is inside the compiled plan. Its filename carries the word EFFECTIVE.",
+   "description_word_count": 27,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement.",
+   "filename_marked_effective": true
+  },
+  {
+   "local_ref": "h3-0152",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2024/12%20ICFS%20EFFECTIVE.pdf",
+   "filename": "12 ICFS EFFECTIVE.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 34685018,
+   "checksum_sha256": "750eae0a6c09fa747e0cc72c492266146f6df0808487170977ce83dd5ed28d51",
+   "title": "Comprehensive Plan 2025, Chapter 12: ICFS",
+   "group": "comprehensive plan 2025",
+   "description": "Chapter 12 of the Comprehensive Plan effective October 2025, covering icfs, published as a separate file so the chapter can be cited without the 294-megabyte compiled plan.",
+   "evidence": "34,685,018 bytes. Token coverage of 1.0000 inside EFFECTIVE_CompPlan_October2025.pdf with 3 of 3 sixty-word contiguous runs present verbatim: this part is inside the compiled plan. Its filename carries the word EFFECTIVE.",
+   "description_word_count": 27,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement.",
+   "filename_marked_effective": true
+  },
+  {
+   "local_ref": "h3-0153",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2024/13%20Resilience%20%26%20Sustainability%20EFFECTIVE.pdf",
+   "filename": "13 Resilience & Sustainability EFFECTIVE.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 10356176,
+   "checksum_sha256": "56e630023d123ffe4ef1abd909635327c63276f69e6b7bed0bd6fd9d2c2e079b",
+   "title": "Comprehensive Plan 2025, Chapter 13: Resilience & Sustainability",
+   "group": "comprehensive plan 2025",
+   "description": "Chapter 13 of the Comprehensive Plan effective October 2025, covering resilience & sustainability, published as a separate file so the chapter can be cited without the 294-megabyte compiled plan.",
+   "evidence": "10,356,176 bytes. Token coverage of 1.0000 inside EFFECTIVE_CompPlan_October2025.pdf with 3 of 3 sixty-word contiguous runs present verbatim: this part is inside the compiled plan. Its filename carries the word EFFECTIVE.",
+   "description_word_count": 29,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement.",
+   "filename_marked_effective": true
+  },
+  {
+   "local_ref": "h3-0154",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2024/14%20Implementation%20EFFECTIVE.pdf",
+   "filename": "14 Implementation EFFECTIVE.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 1132753,
+   "checksum_sha256": "007e6041968a38822e178d76090a3022de8e2d1e350413a61c049cd966791b31",
+   "title": "Comprehensive Plan 2025, Chapter 14: Implementation",
+   "group": "comprehensive plan 2025",
+   "description": "Chapter 14 of the Comprehensive Plan effective October 2025, covering implementation, published as a separate file so the chapter can be cited without the 294-megabyte compiled plan.",
+   "evidence": "1,132,753 bytes. Token coverage of 1.0000 inside EFFECTIVE_CompPlan_October2025.pdf with 3 of 3 sixty-word contiguous runs present verbatim: this part is inside the compiled plan. Its filename carries the word EFFECTIVE.",
+   "description_word_count": 27,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement.",
+   "filename_marked_effective": true
+  },
+  {
+   "local_ref": "h3-0155",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2024/2%20Factors%20of%20Growth%20%26%20Development.pdf",
+   "filename": "2 Factors of Growth & Development.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 3695360,
+   "checksum_sha256": "75bbd5f7716e3dc9b07d20894698cc8a02bf092e93414bb68fb98f1813d35b08",
+   "title": "Comprehensive Plan 2025, Chapter 2: Factors of Growth & Development",
+   "group": "comprehensive plan 2025",
+   "description": "Chapter 2 of the Comprehensive Plan effective October 2025, covering factors of growth & development, published as a separate file so the chapter can be cited without the 294-megabyte compiled plan.",
+   "evidence": "3,695,360 bytes. Token coverage of 1.0000 inside EFFECTIVE_CompPlan_October2025.pdf with 3 of 3 sixty-word contiguous runs present verbatim: this part is inside the compiled plan. Its filename does not carry the word EFFECTIVE.",
+   "description_word_count": 31,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement.",
+   "filename_marked_effective": false
+  },
+  {
+   "local_ref": "h3-0156",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2024/3%20The%20Vision.pdf",
+   "filename": "3 The Vision.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 10979106,
+   "checksum_sha256": "10279de62cebd312990921677bc2f9effcfa2626c4ce4dc17e58df430fad5cc0",
+   "title": "Comprehensive Plan 2025, Chapter 3: The Vision",
+   "group": "comprehensive plan 2025",
+   "description": "Chapter 3 of the Comprehensive Plan effective October 2025, covering the vision, published as a separate file so the chapter can be cited without the 294-megabyte compiled plan.",
+   "evidence": "10,979,106 bytes. Token coverage of 1.0000 inside EFFECTIVE_CompPlan_October2025.pdf with 3 of 3 sixty-word contiguous runs present verbatim: this part is inside the compiled plan. Its filename does not carry the word EFFECTIVE.",
+   "description_word_count": 28,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement.",
+   "filename_marked_effective": false
+  },
+  {
+   "local_ref": "h3-0157",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2024/4%20Community%20Identity%20EFFECTIVE.pdf",
+   "filename": "4 Community Identity EFFECTIVE.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 31837202,
+   "checksum_sha256": "e59786ebe36b849bd7873a37d0f5c782fc2cbc7f0b8afddd26efd2b4b2413c6c",
+   "title": "Comprehensive Plan 2025, Chapter 4: Community Identity",
+   "group": "comprehensive plan 2025",
+   "description": "Chapter 4 of the Comprehensive Plan effective October 2025, covering community identity, published as a separate file so the chapter can be cited without the 294-megabyte compiled plan.",
+   "evidence": "31,837,202 bytes. Token coverage of 1.0000 inside EFFECTIVE_CompPlan_October2025.pdf with 3 of 3 sixty-word contiguous runs present verbatim: this part is inside the compiled plan. Its filename carries the word EFFECTIVE.",
+   "description_word_count": 28,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement.",
+   "filename_marked_effective": true
+  },
+  {
+   "local_ref": "h3-0158",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2024/5%20Land%20Use%20EFFECTIVE.pdf",
+   "filename": "5 Land Use EFFECTIVE.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 36333669,
+   "checksum_sha256": "768ff87c9d5e755d5189a1b0a5fa6137d922209bde485043192793b28b1f862a",
+   "title": "Comprehensive Plan 2025, Chapter 5: Land Use",
+   "group": "comprehensive plan 2025",
+   "description": "Chapter 5 of the Comprehensive Plan effective October 2025, covering land use, published as a separate file so the chapter can be cited without the 294-megabyte compiled plan.",
+   "evidence": "36,333,669 bytes. Token coverage of 1.0000 inside EFFECTIVE_CompPlan_October2025.pdf with 3 of 3 sixty-word contiguous runs present verbatim: this part is inside the compiled plan. Its filename carries the word EFFECTIVE.",
+   "description_word_count": 28,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement.",
+   "filename_marked_effective": true
+  },
+  {
+   "local_ref": "h3-0159",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2024/7%20Urban%20Design%20EFFECTIVE.pdf",
+   "filename": "7 Urban Design EFFECTIVE.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 8629296,
+   "checksum_sha256": "93a14499e6ced768a06d00ac0b057858f9ce600d49c78d9ab48d79d046e06adb",
+   "title": "Comprehensive Plan 2025, Chapter 7: Urban Design",
+   "group": "comprehensive plan 2025",
+   "description": "Chapter 7 of the Comprehensive Plan effective October 2025, covering urban design, published as a separate file so the chapter can be cited without the 294-megabyte compiled plan.",
+   "evidence": "8,629,296 bytes. Token coverage of 1.0000 inside EFFECTIVE_CompPlan_October2025.pdf with 3 of 3 sixty-word contiguous runs present verbatim: this part is inside the compiled plan. Its filename carries the word EFFECTIVE.",
+   "description_word_count": 28,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement.",
+   "filename_marked_effective": true
+  },
+  {
+   "local_ref": "h3-0160",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2024/8%20Economic%20Development%20EFFECTIVE.pdf",
+   "filename": "8 Economic Development EFFECTIVE.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 13709763,
+   "checksum_sha256": "c3f2a33f8e27669efd91b833a14b112e5d67792f6a0726cd126fe49defb5a137",
+   "title": "Comprehensive Plan 2025, Chapter 8: Economic Development",
+   "group": "comprehensive plan 2025",
+   "description": "Chapter 8 of the Comprehensive Plan effective October 2025, covering economic development, published as a separate file so the chapter can be cited without the 294-megabyte compiled plan.",
+   "evidence": "13,709,763 bytes. Token coverage of 1.0000 inside EFFECTIVE_CompPlan_October2025.pdf with 3 of 3 sixty-word contiguous runs present verbatim: this part is inside the compiled plan. Its filename carries the word EFFECTIVE.",
+   "description_word_count": 28,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement.",
+   "filename_marked_effective": true
+  },
+  {
+   "local_ref": "h3-0161",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2024/Appendices%20A-P%20Effective.pdf",
+   "filename": "Appendices A-P Effective.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 52726171,
+   "checksum_sha256": "dd2fb1dd28212a209dc842b8c48cc57f7560bdacb4b62e6c2ed8baef8dbc342d",
+   "title": "Comprehensive Plan 2025: appendices A to P",
+   "group": "comprehensive plan 2025",
+   "description": "Appendices A to P of the Comprehensive Plan effective October 2025, the supporting material the chapters refer to, published separately from the compiled plan.",
+   "evidence": "52,726,171 bytes. Token coverage of 1.0000 inside EFFECTIVE_CompPlan_October2025.pdf with 3 of 3 sixty-word contiguous runs present verbatim: this part is inside the compiled plan. Its filename does not carry the word EFFECTIVE.",
+   "description_word_count": 24,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "A part of the compiled plan, proven by measurement.",
+   "filename_marked_effective": false
+  },
+  {
+   "local_ref": "h3-0097",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/Espanol/ABCPlanIntegral-Espanol-Cap1-Introduccion.pdf",
+   "filename": "ABCPlanIntegral-Espanol-Cap1-Introduccion.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 9949103,
+   "checksum_sha256": "43a40c93d9f72aab48732bf907a54e5897a132fe297932a92d74219f7400d4ee",
+   "title": "Plan Integral, Capitulo 1: Introduccion, draft of February 2017",
+   "group": "comprehensive plan in Spanish",
+   "description": "The Spanish-language draft of Chapter 1 of the Comprehensive Plan, published by the City in February 2017 so that Spanish-speaking residents could read the plan's introduction in their own language.",
+   "evidence": "9,949,103 bytes. Its first page reads Albuquerque y el Condado de Bernalillo, Plan Integral, Borrador Espanol, Febrero 2017.",
+   "description_word_count": 30,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "Marked Borrador - a draft - on its own cover, and only two of the plan's chapters were published in Spanish. Label it a draft translation and record that the set is incomplete."
+  },
+  {
+   "local_ref": "h3-0098",
+   "inventory_id": null,
+   "authoritative_url": "https://documents.cabq.gov/planning/UDD/CompPlan2017/Espanol/ABCPlanIntegral-Espanol-Cap3-Vision.pdf",
+   "filename": "ABCPlanIntegral-Espanol-Cap3-Vision.pdf",
+   "harvested_from": "https://www.cabq.gov/planning/plans-publications/abc-comprehensive-plan",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes, and every PDF tested for its end-of-file marker.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 6621396,
+   "checksum_sha256": "36b1d3132dc7028e24bfe6339fb6b477ae555c52f464528f65214022568e4192",
+   "title": "Plan Integral, Capitulo 3: La Vision, draft of February 2017",
+   "group": "comprehensive plan in Spanish",
+   "description": "The Spanish-language draft of Chapter 3 of the Comprehensive Plan, setting out the plan's vision, the companion to the Spanish introduction chapter.",
+   "evidence": "6,621,396 bytes. Its first page reads Albuquerque y el Condado de Bernalillo, Plan Integral, Borrador Espanol, Febrero 2017.",
+   "description_word_count": 22,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "Part of the plan the code implements."
+    }
+   ],
+   "caution": "Marked Borrador - a draft - on its own cover, and only two of the plan's chapters were published in Spanish. Label it a draft translation and record that the set is incomplete."
+  }
+ ],
+ "archival_note": "None of the 86 proposed additions is a candidate yet. Each remains inventory-only until an R2 archive object exists and its public download, exact size, SHA-256 and authoritative-source provenance are verified. Combined footprint if all are added and archived: 1,715,982,194 bytes - the largest of any lane in this run, and dominated by two compiled Comprehensive Plans totalling 407,895,275 bytes.",
+ "integration_note": "Codex integration lane: this artifact creates nothing and changes nothing. Every row carries the authoritative URL, the measured size, the SHA-256, the leading bytes and harvested_from. Every row carries inventory_id: null. The repealed plans each carry the repeal stamp read from the document, and the chapter rows each carry the containment measurement.",
+ "what_remains_of_this_harvest": "272 more new documents from the same batch: 81 fire/documents, 50 council/documents, 38 planning/DevelopmentReviewServices, 35 acs/documents, 18 planning/IDO and the rest.",
+ "safeguards": [
+  "no master-inventory.json write",
+  "no checkpoint.json write",
+  "no r2-inventory.json write",
+  "no site content change",
+  "no R2 upload",
+  "no commit, merge, or deploy",
+  "no terminal record modified",
+  "no inventory candidate created"
+ ]
+}

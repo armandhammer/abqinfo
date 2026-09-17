@@ -92,6 +92,14 @@ Capital improvement spending and projects.
 
   [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/family_and_community_services_-_scope.pdf)
 
+- [2003 Environmental Planning Commission Recommendation and Notice of Decision - Mayor Proposed 2003-2012 Decade Plan (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2003-2012-capital-improvements-epc-recommendations.pdf)
+
+  Preserves the Environmental Planning Commission recommendation and official notice-of-decision record for the Mayor Proposed 2003-2012 Decade Plan. It records the Commission action preceding later Mayor and City Council consideration; it is not the enacted capital program. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/epchearings.pdf)
+
+- [Water Master Plan Infrastructure Zone (WIZ) Map - Appendix (B-6) - Parent Document Not Located (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2003-water-master-plan-infrastructure-zone-map.pdf)
+
+  Preserves the official standalone WIZ map marked appendix page B-6. The complete parent document has not been located, so this map is retained without inferring a parent-plan title or treating the appendix as a complete plan. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/WaterMasterPlanInfra.pdf)
+
 ### 2021-2023 Decade Plan Resolutions
 
 - [2023-2032 Decade Plan for Capital Improvements (R-23-100 enacted PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2023-2032-decade-plan-resolution-r-2023-032.pdf)

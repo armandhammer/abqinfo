@@ -1,6 +1,6 @@
 # Conflict-free parallel verification
 
-ABQInfo uses a **parallel readers, single writer** workflow when Codex and Claude verify candidate files, official sources, and links at the same time. Workers receive deterministic, non-overlapping shards in separate detached Git worktrees. They may read their checkout and create exactly one assigned result artifact outside Git. They may not change inventory, checkpoint, content, queues, Git state, or R2.
+ABQInfo uses a **parallel readers, single writer** workflow when verification workers process candidate files, official sources, and links concurrently. Workers receive deterministic, non-overlapping shards in separate detached Git worktrees. They may read their checkout and create exactly one assigned result artifact outside Git. They may not change inventory, checkpoint, content, queues, Git state, or R2. Legacy `codex` and `claude` lane IDs are retained for script and artifact compatibility; both are lanes in one logical Codex workflow, not separate active AI agents.
 
 This workflow is for verification. It does not authorize additions, archival, uploads, commits, PRs, merges, or deployment.
 
@@ -66,7 +66,7 @@ Give each worker only its worktree path, absolute manifest path, and assigned wo
   -RepoRoot (Get-Location).Path
 ```
 
-Claude uses the same command with `-WorkerId claude`. The worker script performs:
+Any Codex session uses the same command with the other legacy lane ID, `-WorkerId claude`, when that is its immutable assignment. The worker script performs:
 
 1. local-file existence, byte-size, and SHA-256 verification when a local file is recorded;
 2. authoritative-source/provenance metadata verification, rejecting an R2 URL as the authoritative source; and
@@ -148,4 +148,4 @@ Run the isolated regression suite with:
 ./scripts/project/Test-ParallelVerificationWorkflow.ps1
 ```
 
-For long-running, candidate-checkpointed work that survives provider usage pauses, use [AUTONOMOUS-VERIFICATION-CAMPAIGNS.md](AUTONOMOUS-VERIFICATION-CAMPAIGNS.md). Campaigns build on this safety model while adding immutable per-candidate results, provider-neutral resumable lanes, expiring exclusive leases, derived status, and write-ahead idempotent integration.
+For long-running, candidate-checkpointed work that survives session interruptions, use [AUTONOMOUS-VERIFICATION-CAMPAIGNS.md](AUTONOMOUS-VERIFICATION-CAMPAIGNS.md). Campaigns build on this safety model while adding immutable per-candidate results, lane-neutral resumption, expiring exclusive leases, derived status, and write-ahead idempotent integration.

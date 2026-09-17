@@ -1,0 +1,1700 @@
+{
+ "batch_id": "riometro-sustainability-econdev-cluster-research-2026-09-13",
+ "lane": "Claude research lane: riometro.org/DocumentCenter, cabq.gov/sustainability/documents and cabq.gov/economicdevelopment/documents",
+ "generated_at": "2026-09-13T22:51:52.391587+00:00",
+ "date_note": "Dated 2026-09-13.",
+ "cluster": "Three small directories: the regional transit district's document centre, the City's sustainability page, and its economic development page.",
+ "scope": "All 67 uncovered candidates across the three sources. The coverage gate is asserted in the generator.",
+ "brief": "Check each source's existing dispositions first and run the cross-inventory checksum sweep before writing.",
+ "brief_finding": "The sweep returned its largest yield of the run: ten candidates are byte-identical to records the archive already holds, all ten from the Rio Metro document centre.",
+ "the_sweep": {
+  "archived_records_compared_against": 1020,
+  "collisions_found": 10,
+  "all_from_one_source": "Every one is a Rio Metro record: the Rail Runner system map, the rail and bus connections guide (twice), the project development history, the Paseo del Norte high-capacity transit study, two operations and maintenance facility documents, the double track study, the consolidation study final report and the facility fact sheet.",
+  "why_they_were_missed_before": "The document centre serves each file at both a bare /View/<id> URL and a slugged one, and the archive holds one shape while the inventory registered the other. Two of the ten are the same guide registered under both shapes, so the archive would have taken one file three times.",
+  "running_total_for_the_run": "Fifteen already-archived records caught by this sweep across four consecutive lanes. Before the parks lane introduced it, every lane reported zero cross-inventory collisions and none of these would have been found."
+ },
+ "the_missing_minutes_review": {
+  "policy": "An agenda may be preserved only after a recorded exhaustive official-source review finds no approved minutes, and never for a cancelled or no-quorum meeting.",
+  "body": "Economic Development Action (EDAct) Council",
+  "inventory": "No EDAct minutes exist in the inventory; eight records match the body at all and none is a minute.",
+  "official_pages_probed": [
+   "/economicdevelopment/economic-development-action-council",
+   "/economicdevelopment/edact",
+   "/economicdevelopment/boards-commissions/economic-development-action-council"
+  ],
+  "probe_result": "All three return HTTP 404.",
+  "site_search": "The City's own search for the exact phrase Economic Development Action together with minutes returns a no-results page.",
+  "conclusion": "The exception applies to the agendas. Label each Agenda (approved minutes not located) and never present one as minutes."
+ },
+ "an_agenda_is_not_a_notice": {
+  "the_distinction": "The missing-minutes exception exists to preserve the only official trace of what a meeting considered. An agenda carries that; a notice of meeting does not.",
+  "what_was_found": "Thirteen EDAct Council records: four agendas and nine notices. The notices open NOTICE OF MEETING, EDAct COUNCIL, a date and a time range, and stop.",
+  "the_decision": "The four agendas are recommended under the exception and labelled Agenda (approved minutes not located). The nine notices are excluded as below it.",
+  "why_this_matters": "Applying the exception to everything meeting-shaped would have put nine records into the archive that say only that a meeting was called. The exception is narrow on purpose.",
+  "one_of_the_four_is_a_draft": "EDActagendaMarchdraft.docx carries draft in its own filename and its row says so."
+ },
+ "a_draft_and_its_final": {
+  "what": "The Rio Metro / ABQ RIDE Consolidation Study Draft Report, October 2025, at 25,042,434 bytes, against the final report the archive already holds validated with an r2_url at 25,114,690 bytes.",
+  "how_it_was_established": "The draft says so on its own first page: Rio Metro ABQ RIDE Consolidation Study Draft October 2025.",
+  "the_decision": "Superseded, and retained. It is the only record of what the study said before the final report."
+ },
+ "method": "Read the archive's existing dispositions at all three sources before fetching. Fetched all 67 candidates and measured byte length, SHA-256 and leading bytes from the fetched bytes. Swept every checksum against all 1020 checksummed archived records, then grouped by checksum within the slice. Extracted text with the right reader for each container. Performed and recorded an exhaustive official-source review for the Economic Development Action Council's minutes before applying the missing-minutes exception, and separated that body's agendas from its notices by reading them.",
+ "classification_only": true,
+ "shared_state_written": [],
+ "already_archived_check": {
+  "rule_applied": "Test candidates against R2 objects the archive already holds, against the published site, and against anything recommended earlier in the same batch.",
+  "cross_inventory_byte_collisions": 10,
+  "internal_byte_collisions": 3,
+  "archived_records_compared_against": 1020,
+  "result": "Ten candidates are already held with r2_urls; three more are internal re-registrations. None is recommended for addition."
+ },
+ "duplicate_and_supersession_checks": {
+  "cross_inventory_byte_collisions": 10,
+  "internal_byte_collisions": 3,
+  "archived_records_compared_against": 1020,
+  "relationships_found": 14,
+  "the_internal_three": "A task force minute registered twice, one copy with a -1 suffix; the Albuquerque Food and Agriculture Action Plan registered twice, one copy with a copy_of_ prefix; and the Zozobra train schedule registered twice, once under a bare numeric id. The plainer name is canonical in each case."
+ },
+ "integration_flags": [
+  {
+   "severity": "avoids-duplicate-archival",
+   "affects": [
+    "src-1fe340b308393e51",
+    "src-2cd80872080de4b9",
+    "src-47bd8bdc158f8f89",
+    "src-47f35d1f65ee0534",
+    "src-81cb9993f423bedd",
+    "src-8a1660a76efedcb9",
+    "src-9100a86846fe0cde",
+    "src-a22288ac94eca820",
+    "src-e88af7f1ad6aa039",
+    "src-ef7e8b7ebb1a4ab8"
+   ],
+   "finding": "Ten Rio Metro candidates are byte-identical to records already validated and archived with r2_urls - the largest single yield from the cross-inventory checksum sweep so far, and 90,532,068 bytes of redundant archival avoided.",
+   "recommended_action": "Apply duplicate. The document centre serves each file at two URL shapes; the inventory holds one and the archive the other, so only a checksum comparison finds them."
+  },
+  {
+   "severity": "missing-minutes-exception-applied",
+   "affects": [
+    "src-c834f1df205cf623",
+    "src-cf4ef9e3bdbfe9d3",
+    "src-fea5ee99c7906555",
+    "src-df355d013c988e45"
+   ],
+   "finding": "Four Economic Development Action Council agendas qualify under the exception: three official page URLs return 404, the City's site search for the body plus minutes returns no results, and the inventory holds no EDAct minutes.",
+   "recommended_action": "Approve labelled Agenda (approved minutes not located). One is a draft agenda and says so."
+  },
+  {
+   "severity": "exception-not-extended",
+   "affects": [
+    "src-eb9e92937e376325",
+    "src-59b0a2a4a73e94d5",
+    "src-678e6f3977e49221",
+    "src-216fe2a32ddd2a01",
+    "src-e2ac5601332aee8a",
+    "src-bd314128b8ff3fc6",
+    "src-511b029eaf5c4f0a",
+    "src-ca514a45701353ad",
+    "src-4eb9d168d77a4677"
+   ],
+   "finding": "Nine notices of meeting from the same body are excluded. A notice records only that a meeting was called; the exception exists for records of what a meeting considered.",
+   "recommended_action": "Exclude. Keep the distinction if the policy is applied to other bodies."
+  },
+  {
+   "severity": "supersession",
+   "affects": [
+    "src-8b0b0b105556274b"
+   ],
+   "finding": "The Rio Metro / ABQ RIDE Consolidation Study draft of October 2025, against the final report the archive already holds. The draft names its own stage on page 1.",
+   "recommended_action": "Apply superseded with the archived final as canonical, and retain the draft."
+  },
+  {
+   "severity": "substantive-find",
+   "affects": [
+    "src-3df60b7932dbbdf0",
+    "src-93f979d92e9a5f3e",
+    "src-114911e49460dc22",
+    "src-9dfeda7f63dac219",
+    "src-577e742d6853bdfa",
+    "src-f8870240e86b898c",
+    "src-65ad5065f4968463",
+    "src-d64f86a21d781a13",
+    "src-f66df3fff78c32e9",
+    "src-eb0bbb9c46e40387",
+    "src-58d9f660005fbae5",
+    "src-ba8df2e88e7706d3",
+    "src-b5c28266013f6981",
+    "src-ca93c97eb4a0a4fa",
+    "src-4853e859e6c72fb3",
+    "src-5bd345e02d3460c9",
+    "src-8873610b3af1df69",
+    "src-a498a594b4de4609"
+   ],
+   "finding": "The Albuquerque Climate Change Task Force record for October 2020 - minutes, agendas, four presentations and a one-pager - plus the Food and Agriculture Action Plan, the municipal electric vehicle charging analysis, a greenhouse gas inventory, the Spanish Climate Action Plan implementation report and a climate action survey.",
+   "recommended_action": "Approve. The archive holds the Climate Action Plan and its implementation report; this is the working record behind them."
+  },
+  {
+   "severity": "third-party",
+   "affects": [
+    "src-15192a82ff4dd6e6"
+   ],
+   "finding": "An IRS Form 1040 Schedule SE posted as a sample document for an economic relief grant application.",
+   "recommended_action": "Exclude on the established third-party rule; archive the City's own application guidance instead if the programme needs a record."
+  }
+ ],
+ "counts": {
+  "reviewed": 67,
+  "approved_for_addition": 43,
+  "duplicate": 13,
+  "superseded": 1,
+  "excluded": 10,
+  "approved_by_group": {
+   "economic development records": 10,
+   "Rio Metro transit records": 15,
+   "climate and sustainability records": 18
+  },
+  "containers": {
+   "OOXML": 14,
+   "PDF": 53
+  }
+ },
+ "link_check": {
+  "checked": 67,
+  "http_200": 67,
+  "failed": 0,
+  "method": "Full HTTP GET with a browser user agent, 2026-09-13.",
+  "additional_probes": "Three official-source page probes and one City site search for the EDAct Council's minutes.",
+  "containers_verified": "53 PDFs and 14 OOXML documents by leading bytes."
+ },
+ "approved_for_addition": [
+  {
+   "id": "src-c834f1df205cf623",
+   "authoritative_url": "https://www.cabq.gov/economicdevelopment/documents/170413-edact-agenda.docx/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "OOXML",
+   "leading_bytes": "504b0304",
+   "publisher": "City of Albuquerque",
+   "served_filename": "170413-edact-agenda.docx",
+   "size_bytes": 75910,
+   "checksum_sha256": "2431d1f1841feabe882720be9acb62340d50e9a30ce147a4367dafc39459a043",
+   "title": "EDAct Council: Agenda (approved minutes not located), 170413-edact-agenda.docx",
+   "description": "The Economic Development Action Council's agenda for one of its meetings, listing the councillors and officers on the body and the business set down for that meeting, in the absence of any minutes.",
+   "evidence": "An OOXML document read from word/document.xml. Headed Economic Development Action (EDAct) Council over the membership, which names City Councillors Trudy E. Jones and Isaac Benton, the chairman, the vice chair and the Chief of Staff.",
+   "group": "economic development records",
+   "missing_minutes_review": {
+    "policy": "An agenda may be preserved only after a recorded exhaustive official-source review finds no approved minutes, and never for a cancelled or no-quorum meeting.",
+    "body": "Economic Development Action (EDAct) Council",
+    "inventory": "No EDAct minutes exist in the inventory; eight records match the body at all and none is a minute.",
+    "official_pages_probed": [
+     "/economicdevelopment/economic-development-action-council",
+     "/economicdevelopment/edact",
+     "/economicdevelopment/boards-commissions/economic-development-action-council"
+    ],
+    "probe_result": "All three return HTTP 404.",
+    "site_search": "The City's own search for the exact phrase Economic Development Action together with minutes returns a no-results page.",
+    "conclusion": "The exception applies to the agendas. Label each Agenda (approved minutes not located) and never present one as minutes."
+   },
+   "proposed_canonical_page": "content/development-land-use/projects.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/development-process.md",
+     "reason": "The council advised on City economic development."
+    }
+   ],
+   "description_word_count": 33
+  },
+  {
+   "id": "src-cf4ef9e3bdbfe9d3",
+   "authoritative_url": "https://www.cabq.gov/economicdevelopment/documents/EDActAgendaFeb2015.docx/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "OOXML",
+   "leading_bytes": "504b0304",
+   "publisher": "City of Albuquerque",
+   "served_filename": "EDActAgendaFeb2015.docx",
+   "size_bytes": 75726,
+   "checksum_sha256": "1ad07efb55df12526cf9b69c41e9a861546a443db620a249e4c6f783f72c7c85",
+   "title": "EDAct Council: Agenda (approved minutes not located), EDActAgendaFeb2015.docx",
+   "description": "The Economic Development Action Council's agenda for one of its meetings, listing the councillors and officers on the body and the business set down for that meeting, in the absence of any minutes.",
+   "evidence": "An OOXML document read from word/document.xml. Headed Economic Development Action (EDAct) Council over the membership, which names City Councillors Trudy E. Jones and Isaac Benton, the chairman, the vice chair and the Chief of Staff.",
+   "group": "economic development records",
+   "missing_minutes_review": {
+    "policy": "An agenda may be preserved only after a recorded exhaustive official-source review finds no approved minutes, and never for a cancelled or no-quorum meeting.",
+    "body": "Economic Development Action (EDAct) Council",
+    "inventory": "No EDAct minutes exist in the inventory; eight records match the body at all and none is a minute.",
+    "official_pages_probed": [
+     "/economicdevelopment/economic-development-action-council",
+     "/economicdevelopment/edact",
+     "/economicdevelopment/boards-commissions/economic-development-action-council"
+    ],
+    "probe_result": "All three return HTTP 404.",
+    "site_search": "The City's own search for the exact phrase Economic Development Action together with minutes returns a no-results page.",
+    "conclusion": "The exception applies to the agendas. Label each Agenda (approved minutes not located) and never present one as minutes."
+   },
+   "proposed_canonical_page": "content/development-land-use/projects.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/development-process.md",
+     "reason": "The council advised on City economic development."
+    }
+   ],
+   "description_word_count": 33
+  },
+  {
+   "id": "src-fea5ee99c7906555",
+   "authoritative_url": "https://www.cabq.gov/economicdevelopment/documents/EDActagendaJune2014.docx/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "OOXML",
+   "leading_bytes": "504b0304",
+   "publisher": "City of Albuquerque",
+   "served_filename": "EDActagendaJune2014.docx",
+   "size_bytes": 76218,
+   "checksum_sha256": "6dea04665f1d6567ffe771d413219ededade9389b90e4c136edf0a63aae24e20",
+   "title": "EDAct Council: Agenda (approved minutes not located), EDActagendaJune2014.docx",
+   "description": "The Economic Development Action Council's agenda for one of its meetings, listing the councillors and officers on the body and the business set down for that meeting, in the absence of any minutes.",
+   "evidence": "An OOXML document read from word/document.xml. Headed Economic Development Action (EDAct) Council over the membership, which names City Councillors Trudy E. Jones and Isaac Benton, the chairman, the vice chair and the Chief of Staff.",
+   "group": "economic development records",
+   "missing_minutes_review": {
+    "policy": "An agenda may be preserved only after a recorded exhaustive official-source review finds no approved minutes, and never for a cancelled or no-quorum meeting.",
+    "body": "Economic Development Action (EDAct) Council",
+    "inventory": "No EDAct minutes exist in the inventory; eight records match the body at all and none is a minute.",
+    "official_pages_probed": [
+     "/economicdevelopment/economic-development-action-council",
+     "/economicdevelopment/edact",
+     "/economicdevelopment/boards-commissions/economic-development-action-council"
+    ],
+    "probe_result": "All three return HTTP 404.",
+    "site_search": "The City's own search for the exact phrase Economic Development Action together with minutes returns a no-results page.",
+    "conclusion": "The exception applies to the agendas. Label each Agenda (approved minutes not located) and never present one as minutes."
+   },
+   "proposed_canonical_page": "content/development-land-use/projects.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/development-process.md",
+     "reason": "The council advised on City economic development."
+    }
+   ],
+   "description_word_count": 33
+  },
+  {
+   "id": "src-df355d013c988e45",
+   "authoritative_url": "https://www.cabq.gov/economicdevelopment/documents/EDActagendaMarchdraft.docx/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "OOXML",
+   "leading_bytes": "504b0304",
+   "publisher": "City of Albuquerque",
+   "served_filename": "EDActagendaMarchdraft.docx",
+   "size_bytes": 76198,
+   "checksum_sha256": "fc88f265bf1ee9d995f43c37e74bfdcbf9b70519a3840d1eb70a3b43b73612a5",
+   "title": "EDAct Council: Agenda (approved minutes not located), EDActagendaMarchdraft.docx",
+   "description": "The Economic Development Action Council's agenda for one of its meetings, listing the councillors and officers on the body and the business set down for that meeting, in the absence of any minutes.",
+   "evidence": "An OOXML document read from word/document.xml. Headed Economic Development Action (EDAct) Council over the membership, which names City Councillors Trudy E. Jones and Isaac Benton, the chairman, the vice chair and the Chief of Staff.",
+   "group": "economic development records",
+   "missing_minutes_review": {
+    "policy": "An agenda may be preserved only after a recorded exhaustive official-source review finds no approved minutes, and never for a cancelled or no-quorum meeting.",
+    "body": "Economic Development Action (EDAct) Council",
+    "inventory": "No EDAct minutes exist in the inventory; eight records match the body at all and none is a minute.",
+    "official_pages_probed": [
+     "/economicdevelopment/economic-development-action-council",
+     "/economicdevelopment/edact",
+     "/economicdevelopment/boards-commissions/economic-development-action-council"
+    ],
+    "probe_result": "All three return HTTP 404.",
+    "site_search": "The City's own search for the exact phrase Economic Development Action together with minutes returns a no-results page.",
+    "conclusion": "The exception applies to the agendas. Label each Agenda (approved minutes not located) and never present one as minutes."
+   },
+   "proposed_canonical_page": "content/development-land-use/projects.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/development-process.md",
+     "reason": "The council advised on City economic development."
+    }
+   ],
+   "description_word_count": 33,
+   "caution": "Its filename records it as a draft agenda. Label it as a draft as well as an agenda."
+  },
+  {
+   "id": "src-93a7022fd486b031",
+   "authoritative_url": "https://riometro.org/DocumentCenter/View/1705",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "1705",
+   "size_bytes": 377059,
+   "checksum_sha256": "737baa8b1463a3c396ea635a3cc83daa7e85b6261c2b57444eaa560832034914",
+   "title": "Rio Metro Rider's Guide (Spanish)",
+   "description": "The Rio Metro Regional Transit District's Rio Metro Rider's Guide (Spanish), part of the public record of the regional rail and bus service that connects Albuquerque to the wider region.",
+   "evidence": "Published at riometro.org/DocumentCenter as 1705.",
+   "group": "Rio Metro transit records",
+   "proposed_canonical_page": "content/transportation/transit/abq-ride.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/_index.md",
+     "reason": "Regional transit serving Albuquerque."
+    }
+   ],
+   "description_word_count": 30
+  },
+  {
+   "id": "src-c1716e88c45c7304",
+   "authoritative_url": "https://riometro.org/DocumentCenter/View/4008",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "4008",
+   "size_bytes": 193883,
+   "checksum_sha256": "7ec1e9f84b9da0a6ecb0a6b6cfe68cb528095e017250769f5bd5556d07efafc1",
+   "title": "RMRTD Board of Directors: meeting agenda, May 2026",
+   "description": "The Rio Metro Regional Transit District's RMRTD Board of Directors: meeting agenda, May 2026, part of the public record of the regional rail and bus service that connects Albuquerque to the wider region.",
+   "evidence": "Published at riometro.org/DocumentCenter as 4008.",
+   "group": "Rio Metro transit records",
+   "proposed_canonical_page": "content/transportation/transit/abq-ride.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/_index.md",
+     "reason": "Regional transit serving Albuquerque."
+    }
+   ],
+   "description_word_count": 33,
+   "caution": "A board meeting agenda. The missing-minutes policy applies to it as it does to the EDAct agendas, and this lane did not run a separate official-source review for RMRTD minutes. Confirm before publishing, or label it as an agenda."
+  },
+  {
+   "id": "src-2391369a53d77db9",
+   "authoritative_url": "https://riometro.org/DocumentCenter/View/404",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "404",
+   "size_bytes": 2384180,
+   "checksum_sha256": "bcd630d7b27fd480e8b889967b4b0db3e0c307c82d3623b3bafd77bc70616aa1",
+   "title": "Rio Metro Bus Ridership Policy",
+   "description": "The Rio Metro Regional Transit District's Rio Metro Bus Ridership Policy, part of the public record of the regional rail and bus service that connects Albuquerque to the wider region.",
+   "evidence": "Published at riometro.org/DocumentCenter as 404.",
+   "group": "Rio Metro transit records",
+   "proposed_canonical_page": "content/transportation/transit/abq-ride.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/_index.md",
+     "reason": "Regional transit serving Albuquerque."
+    }
+   ],
+   "description_word_count": 30
+  },
+  {
+   "id": "src-4515253a25838463",
+   "authoritative_url": "https://riometro.org/DocumentCenter/View/55/Request-For-Document-in-Alternate-Format-PDF",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "Request-For-Document-in-Alternate-Format-PDF",
+   "size_bytes": 58700,
+   "checksum_sha256": "31cb7a54ae1a43941a4545cc8f4a91f8efebb5f194794e0a90156f73380cd56e",
+   "title": "Request for a Document in an Alternate Format",
+   "description": "The Rio Metro Regional Transit District's Request for a Document in an Alternate Format, part of the public record of the regional rail and bus service that connects Albuquerque to the wider region.",
+   "evidence": "Published at riometro.org/DocumentCenter/View as Request-For-Document-in-Alternate-Format-PDF.",
+   "group": "Rio Metro transit records",
+   "proposed_canonical_page": "content/transportation/transit/abq-ride.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/_index.md",
+     "reason": "Regional transit serving Albuquerque."
+    }
+   ],
+   "description_word_count": 33
+  },
+  {
+   "id": "src-14be4b3e253f0140",
+   "authoritative_url": "https://www.cabq.gov/economicdevelopment/documents/18-117-small-business-saturday.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "18-117-small-business-saturday.pdf",
+   "size_bytes": 1405166,
+   "checksum_sha256": "634ea3cbbd9804b1a21474b5222aed5ad6936ab92863a17a479167914144423e",
+   "title": "Small Business Saturday proclamation",
+   "description": "The City's Small Business Saturday proclamation, part of the record of how Albuquerque promotes and supports economic development in the city.",
+   "evidence": "Published at www.cabq.gov/economicdevelopment as 18-117-small-business-saturday.pdf.",
+   "group": "economic development records",
+   "proposed_canonical_page": "content/development-land-use/projects.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/development-process.md",
+     "reason": "How the City engages business and development."
+    }
+   ],
+   "description_word_count": 21
+  },
+  {
+   "id": "src-180558500c0620fa",
+   "authoritative_url": "https://www.cabq.gov/economicdevelopment/documents/abq-66-media-kit.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "abq-66-media-kit.pdf",
+   "size_bytes": 18168857,
+   "checksum_sha256": "32b976035d5e87f25c0b3177435f06debf9be2d12c66005803d0c9ed27384c0d",
+   "title": "ABQ 66 Media Kit",
+   "description": "The City's ABQ 66 Media Kit, part of the record of how Albuquerque promotes and supports economic development in the city.",
+   "evidence": "Published at www.cabq.gov/economicdevelopment as abq-66-media-kit.pdf.",
+   "group": "economic development records",
+   "proposed_canonical_page": "content/development-land-use/projects.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/development-process.md",
+     "reason": "How the City engages business and development."
+    }
+   ],
+   "description_word_count": 21
+  },
+  {
+   "id": "src-21c0534a5c43eed8",
+   "authoritative_url": "https://www.cabq.gov/economicdevelopment/documents/aerospace_new.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "aerospace_new.pdf",
+   "size_bytes": 573420,
+   "checksum_sha256": "13a5e06fd1566435f46def9d990ff59dd73ced9bfdf7bb4fce3c00d1f0211822",
+   "title": "Key Industries: Aerospace",
+   "description": "The City's Key Industries: Aerospace, part of the record of how Albuquerque promotes and supports economic development in the city.",
+   "evidence": "Published at www.cabq.gov/economicdevelopment as aerospace_new.pdf.",
+   "group": "economic development records",
+   "proposed_canonical_page": "content/development-land-use/projects.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/development-process.md",
+     "reason": "How the City engages business and development."
+    }
+   ],
+   "description_word_count": 20
+  },
+  {
+   "id": "src-5e98fcee73405730",
+   "authoritative_url": "https://www.cabq.gov/economicdevelopment/documents/bioscience_new-1.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "bioscience_new-1.pdf",
+   "size_bytes": 974788,
+   "checksum_sha256": "b91bd69a26a97ab5d0f670dfe4c8e4888ae44bfe85f0647491e38c5e70434497",
+   "title": "Key Industries: Bioscience",
+   "description": "The City's Key Industries: Bioscience, part of the record of how Albuquerque promotes and supports economic development in the city.",
+   "evidence": "Published at www.cabq.gov/economicdevelopment as bioscience_new-1.pdf.",
+   "group": "economic development records",
+   "proposed_canonical_page": "content/development-land-use/projects.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/development-process.md",
+     "reason": "How the City engages business and development."
+    }
+   ],
+   "description_word_count": 20
+  },
+  {
+   "id": "src-614be70118062297",
+   "authoritative_url": "https://www.cabq.gov/economicdevelopment/documents/bioscience_new.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "bioscience_new.pdf",
+   "size_bytes": 962425,
+   "checksum_sha256": "6b76ce4af5b370f89c5893c6de37e899cc3445a81a70af7df6a1f4e46a16b98a",
+   "title": "Bioscience key-industry one-pager, earlier edition",
+   "description": "The City's Bioscience key-industry one-pager, earlier edition, part of the record of how Albuquerque promotes and supports economic development in the city.",
+   "evidence": "Published at www.cabq.gov/economicdevelopment as bioscience_new.pdf.",
+   "group": "economic development records",
+   "proposed_canonical_page": "content/development-land-use/projects.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/development-process.md",
+     "reason": "How the City engages business and development."
+    }
+   ],
+   "description_word_count": 22
+  },
+  {
+   "id": "src-ca3885445d4ce4d4",
+   "authoritative_url": "https://www.cabq.gov/economicdevelopment/documents/edd-rollout-presentation-rm-for-website.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "edd-rollout-presentation-rm-for-website.pdf",
+   "size_bytes": 3796246,
+   "checksum_sha256": "36c978215418a28f410f10b06eda876caecdd845999a5954c4d56e07ef712a1f",
+   "title": "Economic Development Department rollout presentation",
+   "description": "The City's Economic Development Department rollout presentation, part of the record of how Albuquerque promotes and supports economic development in the city.",
+   "evidence": "Published at www.cabq.gov/economicdevelopment as edd-rollout-presentation-rm-for-website.pdf.",
+   "group": "economic development records",
+   "proposed_canonical_page": "content/development-land-use/projects.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/development-process.md",
+     "reason": "How the City engages business and development."
+    }
+   ],
+   "description_word_count": 22
+  },
+  {
+   "id": "src-3df60b7932dbbdf0",
+   "authoritative_url": "https://www.cabq.gov/sustainability/documents/10-14-20-cabq-task-force-meeting-minutes.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "10-14-20-cabq-task-force-meeting-minutes.pdf",
+   "size_bytes": 207306,
+   "checksum_sha256": "1cc4e971459b0502a922a35622cd2de542c0633e581557ac8cd0f4592b062fa6",
+   "title": "10.14.20 - CABQ Task Force Meeting Minutes.pdf",
+   "description": "The City's 10.14.20 - CABQ Task Force Meeting Minutes.pdf, part of the record of how Albuquerque set and pursued its climate and sustainability commitments.",
+   "evidence": "Published at www.cabq.gov/sustainability as 10-14-20-cabq-task-force-meeting-minutes.pdf.",
+   "group": "climate and sustainability records",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "Climate work the City funds."
+    }
+   ],
+   "description_word_count": 24
+  },
+  {
+   "id": "src-93f979d92e9a5f3e",
+   "authoritative_url": "https://www.cabq.gov/sustainability/documents/10-14-20-cabq-task-force-presentation-kelsey-rader.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "10-14-20-cabq-task-force-presentation-kelsey-rader.pdf",
+   "size_bytes": 1956563,
+   "checksum_sha256": "229ff05e97ca3b23bf481535ee945b85f6973355d4f2bcec1f3922251b86b432",
+   "title": "Albuquerque Climate Change Task Force: presentation, 14 October 2020",
+   "description": "The City's Albuquerque Climate Change Task Force: presentation, 14 October 2020, part of the record of how Albuquerque set and pursued its climate and sustainability commitments.",
+   "evidence": "Published at www.cabq.gov/sustainability as 10-14-20-cabq-task-force-presentation-kelsey-rader.pdf.",
+   "group": "climate and sustainability records",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "Climate work the City funds."
+    }
+   ],
+   "description_word_count": 26
+  },
+  {
+   "id": "src-114911e49460dc22",
+   "authoritative_url": "https://www.cabq.gov/sustainability/documents/10-14-20-cabq-task-force-presentation-lilly-irvin-vitela.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "10-14-20-cabq-task-force-presentation-lilly-irvin-vitela.pdf",
+   "size_bytes": 1072883,
+   "checksum_sha256": "761b629f0feaad0a953475a735ced650352cd1d0bd1024a38705d9c4794a40d4",
+   "title": "Albuquerque Climate Change Task Force: presentation, 14 October 2020",
+   "description": "The City's Albuquerque Climate Change Task Force: presentation, 14 October 2020, part of the record of how Albuquerque set and pursued its climate and sustainability commitments.",
+   "evidence": "Published at www.cabq.gov/sustainability as 10-14-20-cabq-task-force-presentation-lilly-irvin-vitela.pdf.",
+   "group": "climate and sustainability records",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "Climate work the City funds."
+    }
+   ],
+   "description_word_count": 26
+  },
+  {
+   "id": "src-9dfeda7f63dac219",
+   "authoritative_url": "https://www.cabq.gov/sustainability/documents/10-20-20-cabq-task-force-meeting-agenda-agreements.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "10-20-20-cabq-task-force-meeting-agenda-agreements.pdf",
+   "size_bytes": 160062,
+   "checksum_sha256": "7c2a80150b002c773f234f6d28cce7244fa4371eccb7d98dd7bd1e9bc5d57921",
+   "title": "Albuquerque Climate Change Task Force: agenda and agreements, 20 October 2020",
+   "description": "The City's Albuquerque Climate Change Task Force: agenda and agreements, 20 October 2020, part of the record of how Albuquerque set and pursued its climate and sustainability commitments.",
+   "evidence": "Published at www.cabq.gov/sustainability as 10-20-20-cabq-task-force-meeting-agenda-agreements.pdf.",
+   "group": "climate and sustainability records",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "Climate work the City funds."
+    }
+   ],
+   "description_word_count": 28
+  },
+  {
+   "id": "src-577e742d6853bdfa",
+   "authoritative_url": "https://www.cabq.gov/sustainability/documents/10-20-20-cabq-task-force-meeting-one-pager.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "10-20-20-cabq-task-force-meeting-one-pager.pdf",
+   "size_bytes": 131167,
+   "checksum_sha256": "4ee91456314e8c302ee74801e23b5607ffbc39151954e57c20428957b78eefb3",
+   "title": "Albuquerque Climate Change Task Force: one-pager, 20 October 2020",
+   "description": "The City's Albuquerque Climate Change Task Force: one-pager, 20 October 2020, part of the record of how Albuquerque set and pursued its climate and sustainability commitments.",
+   "evidence": "Published at www.cabq.gov/sustainability as 10-20-20-cabq-task-force-meeting-one-pager.pdf.",
+   "group": "climate and sustainability records",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "Climate work the City funds."
+    }
+   ],
+   "description_word_count": 26
+  },
+  {
+   "id": "src-f8870240e86b898c",
+   "authoritative_url": "https://www.cabq.gov/sustainability/documents/10-20-20-cabq-task-force-presentation-diane-wikler.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "10-20-20-cabq-task-force-presentation-diane-wikler.pdf",
+   "size_bytes": 1529950,
+   "checksum_sha256": "3ec9fd2fc91c91bdad7f68996515e4e9d23776ff5cd60b8b3b03d52178e41c86",
+   "title": "Albuquerque Climate Change Task Force: presentation, 20 October 2020",
+   "description": "The City's Albuquerque Climate Change Task Force: presentation, 20 October 2020, part of the record of how Albuquerque set and pursued its climate and sustainability commitments.",
+   "evidence": "Published at www.cabq.gov/sustainability as 10-20-20-cabq-task-force-presentation-diane-wikler.pdf.",
+   "group": "climate and sustainability records",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "Climate work the City funds."
+    }
+   ],
+   "description_word_count": 26
+  },
+  {
+   "id": "src-65ad5065f4968463",
+   "authoritative_url": "https://www.cabq.gov/sustainability/documents/10-20-20-cabq-task-force-presentation-sarah-pierpont.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "10-20-20-cabq-task-force-presentation-sarah-pierpont.pdf",
+   "size_bytes": 1733587,
+   "checksum_sha256": "63506cc5772c40e034390979c6575ae1f0307b11675baf24bcb0f8f4bd7a79dd",
+   "title": "Albuquerque Climate Change Task Force: presentation, 20 October 2020",
+   "description": "The City's Albuquerque Climate Change Task Force: presentation, 20 October 2020, part of the record of how Albuquerque set and pursued its climate and sustainability commitments.",
+   "evidence": "Published at www.cabq.gov/sustainability as 10-20-20-cabq-task-force-presentation-sarah-pierpont.pdf.",
+   "group": "climate and sustainability records",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "Climate work the City funds."
+    }
+   ],
+   "description_word_count": 26
+  },
+  {
+   "id": "src-d64f86a21d781a13",
+   "authoritative_url": "https://www.cabq.gov/sustainability/documents/albuquerque-food-and-agriculture-action-plan.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "albuquerque-food-and-agriculture-action-plan.pdf",
+   "size_bytes": 6423851,
+   "checksum_sha256": "a0036bb2940eb4b77712a6944e270ef6d2e371ae0bb42526e903330399cb3a65",
+   "title": "Albuquerque Food and Agriculture Action Plan",
+   "description": "The City's Albuquerque Food and Agriculture Action Plan, part of the record of how Albuquerque set and pursued its climate and sustainability commitments.",
+   "evidence": "Published at www.cabq.gov/sustainability as albuquerque-food-and-agriculture-action-plan.pdf.",
+   "group": "climate and sustainability records",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "Climate work the City funds."
+    }
+   ],
+   "description_word_count": 23
+  },
+  {
+   "id": "src-f66df3fff78c32e9",
+   "authoritative_url": "https://www.cabq.gov/sustainability/documents/cabq-building-flier.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "cabq-building-flier.pdf",
+   "size_bytes": 92483,
+   "checksum_sha256": "16b102646352fa7c54a788af06efd5672c98f350435bebba69b540e413e609c8",
+   "title": "Mayor's climate pledge flier: buildings",
+   "description": "The City's Mayor's climate pledge flier: buildings, part of the record of how Albuquerque set and pursued its climate and sustainability commitments.",
+   "evidence": "Published at www.cabq.gov/sustainability as cabq-building-flier.pdf.",
+   "group": "climate and sustainability records",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "Climate work the City funds."
+    }
+   ],
+   "description_word_count": 22
+  },
+  {
+   "id": "src-eb0bbb9c46e40387",
+   "authoritative_url": "https://www.cabq.gov/sustainability/documents/cabq-cap-orientation-meeting-agenda.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "cabq-cap-orientation-meeting-agenda.pdf",
+   "size_bytes": 1284828,
+   "checksum_sha256": "4d529915ad0f76c64a3636f4154a5dbc295545f869f8b738dbcdc377f4fd5b85",
+   "title": "Climate Action Plan orientation meeting agenda",
+   "description": "The City's Climate Action Plan orientation meeting agenda, part of the record of how Albuquerque set and pursued its climate and sustainability commitments.",
+   "evidence": "Published at www.cabq.gov/sustainability as cabq-cap-orientation-meeting-agenda.pdf.",
+   "group": "climate and sustainability records",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "Climate work the City funds."
+    }
+   ],
+   "description_word_count": 23
+  },
+  {
+   "id": "src-58d9f660005fbae5",
+   "authoritative_url": "https://www.cabq.gov/sustainability/documents/cabq-climate-change-taskforce-agenda-10-20-20.docx/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "OOXML",
+   "leading_bytes": "504b0304",
+   "publisher": "City of Albuquerque",
+   "served_filename": "cabq-climate-change-taskforce-agenda-10-20-20.docx",
+   "size_bytes": 93095,
+   "checksum_sha256": "eb83d0da956ac8af16de5e6093d810ab4bd6af8f78a1370eff607b91520d4e5b",
+   "title": "Albuquerque Climate Change Task Force: agenda, 20 October 2020",
+   "description": "The City's Albuquerque Climate Change Task Force: agenda, 20 October 2020, part of the record of how Albuquerque set and pursued its climate and sustainability commitments.",
+   "evidence": "Published at www.cabq.gov/sustainability as cabq-climate-change-taskforce-agenda-10-20-20.docx.",
+   "group": "climate and sustainability records",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "Climate work the City funds."
+    }
+   ],
+   "description_word_count": 26
+  },
+  {
+   "id": "src-ba8df2e88e7706d3",
+   "authoritative_url": "https://www.cabq.gov/sustainability/documents/cabq-creatinggreenteam-flier.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "cabq-creatinggreenteam-flier.pdf",
+   "size_bytes": 124072,
+   "checksum_sha256": "2834a8e39ec93ad2d993e02b374cc8457849c27685f74963f820a0b1f06fa325",
+   "title": "Mayor's climate pledge flier: creating a green team",
+   "description": "The City's Mayor's climate pledge flier: creating a green team, part of the record of how Albuquerque set and pursued its climate and sustainability commitments.",
+   "evidence": "Published at www.cabq.gov/sustainability as cabq-creatinggreenteam-flier.pdf.",
+   "group": "climate and sustainability records",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "Climate work the City funds."
+    }
+   ],
+   "description_word_count": 25
+  },
+  {
+   "id": "src-b5c28266013f6981",
+   "authoritative_url": "https://www.cabq.gov/sustainability/documents/cabq-electric-vehicle-analysis-report-2019-06-28.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "cabq-electric-vehicle-analysis-report-2019-06-28.pdf",
+   "size_bytes": 9183343,
+   "checksum_sha256": "96e99e2549574ce80a447e60b54c8802a7eb80642efab91812157fd2885c51e2",
+   "title": "Optimized Municipal Electric Vehicle Charging Analysis, 2019",
+   "description": "The City's Optimized Municipal Electric Vehicle Charging Analysis, 2019, part of the record of how Albuquerque set and pursued its climate and sustainability commitments.",
+   "evidence": "Published at www.cabq.gov/sustainability as cabq-electric-vehicle-analysis-report-2019-06-28.pdf.",
+   "group": "climate and sustainability records",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "Climate work the City funds."
+    }
+   ],
+   "description_word_count": 24
+  },
+  {
+   "id": "src-ca93c97eb4a0a4fa",
+   "authoritative_url": "https://www.cabq.gov/sustainability/documents/cabq-site-flier.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "cabq-site-flier.pdf",
+   "size_bytes": 134804,
+   "checksum_sha256": "9393baf3ac08a39c14e27afe081d2e4eca24577259e89016caa989853a06bc31",
+   "title": "Mayor's climate pledge flier: site",
+   "description": "The City's Mayor's climate pledge flier: site, part of the record of how Albuquerque set and pursued its climate and sustainability commitments.",
+   "evidence": "Published at www.cabq.gov/sustainability as cabq-site-flier.pdf.",
+   "group": "climate and sustainability records",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "Climate work the City funds."
+    }
+   ],
+   "description_word_count": 22
+  },
+  {
+   "id": "src-4853e859e6c72fb3",
+   "authoritative_url": "https://www.cabq.gov/sustainability/documents/cabq-transportation-flier.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "cabq-transportation-flier.pdf",
+   "size_bytes": 109702,
+   "checksum_sha256": "0467328c0f6fdeccc33edc26368e874a3f6273973d317733c70fcb733200757a",
+   "title": "Mayor's climate pledge flier: transportation",
+   "description": "The City's Mayor's climate pledge flier: transportation, part of the record of how Albuquerque set and pursued its climate and sustainability commitments.",
+   "evidence": "Published at www.cabq.gov/sustainability as cabq-transportation-flier.pdf.",
+   "group": "climate and sustainability records",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "Climate work the City funds."
+    }
+   ],
+   "description_word_count": 22
+  },
+  {
+   "id": "src-5bd345e02d3460c9",
+   "authoritative_url": "https://www.cabq.gov/sustainability/documents/city-of-albuquerque-ghg-inventory-3.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "city-of-albuquerque-ghg-inventory-3.pdf",
+   "size_bytes": 1267866,
+   "checksum_sha256": "edbf504a9b9d66e8e02eb0fc6f69c8827ff467833ad3f7424029aa63fc52b056",
+   "title": "City of Albuquerque Greenhouse Gas Inventory",
+   "description": "The City's City of Albuquerque Greenhouse Gas Inventory, part of the record of how Albuquerque set and pursued its climate and sustainability commitments.",
+   "evidence": "Published at www.cabq.gov/sustainability as city-of-albuquerque-ghg-inventory-3.pdf.",
+   "group": "climate and sustainability records",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "Climate work the City funds."
+    }
+   ],
+   "description_word_count": 23
+  },
+  {
+   "id": "src-8873610b3af1df69",
+   "authoritative_url": "https://www.cabq.gov/sustainability/documents/final-cap-ir-2025_spanish.pdf",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "final-cap-ir-2025_spanish.pdf",
+   "size_bytes": 8368554,
+   "checksum_sha256": "c3557c4e16320426e5d10b5d8edfa3335d6b58bee658ed92d77ddc836c573ea1",
+   "title": "Albuquerque Climate Action Plan Implementation Report 2025 (Spanish)",
+   "description": "The City's Albuquerque Climate Action Plan Implementation Report 2025 (Spanish), part of the record of how Albuquerque set and pursued its climate and sustainability commitments.",
+   "evidence": "Published at www.cabq.gov/sustainability as final-cap-ir-2025_spanish.pdf.",
+   "group": "climate and sustainability records",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "Climate work the City funds."
+    }
+   ],
+   "description_word_count": 25
+  },
+  {
+   "id": "src-a498a594b4de4609",
+   "authoritative_url": "https://www.cabq.gov/sustainability/documents/nmf-report-cabq-climate-action-survey.pdf/view",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "nmf-report-cabq-climate-action-survey.pdf",
+   "size_bytes": 4578713,
+   "checksum_sha256": "352f6632475724c90d51571ca080c6f4caf6bffc9a9e728cc1fc34e57e6f8722",
+   "title": "New Mexico Foundation Report: Albuquerque Climate Action Survey",
+   "description": "The City's New Mexico Foundation Report: Albuquerque Climate Action Survey, part of the record of how Albuquerque set and pursued its climate and sustainability commitments.",
+   "evidence": "Published at www.cabq.gov/sustainability as nmf-report-cabq-climate-action-survey.pdf.",
+   "group": "climate and sustainability records",
+   "proposed_canonical_page": "content/city-data/climate-environment.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/capital-spending.md",
+     "reason": "Climate work the City funds."
+    }
+   ],
+   "description_word_count": 25
+  },
+  {
+   "id": "src-8854542f8be96782",
+   "authoritative_url": "https://www.riometro.org/DocumentCenter/View/100",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "100",
+   "size_bytes": 865595,
+   "checksum_sha256": "e2408400f2dfbe1cd64e1616921feb7e9cb38c058957b2aab405a9c1236b2bcb",
+   "title": "Rio Metro Route 208",
+   "description": "The Rio Metro Regional Transit District's Rio Metro Route 208, part of the public record of the regional rail and bus service that connects Albuquerque to the wider region.",
+   "evidence": "Published at www.riometro.org/DocumentCenter as 100.",
+   "group": "Rio Metro transit records",
+   "proposed_canonical_page": "content/transportation/transit/abq-ride.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/_index.md",
+     "reason": "Regional transit serving Albuquerque."
+    }
+   ],
+   "description_word_count": 29
+  },
+  {
+   "id": "src-5bd05ae69fd1dd34",
+   "authoritative_url": "https://www.riometro.org/DocumentCenter/View/1204/RMRTD-Drivers-Manual-PDF",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "RMRTD-Drivers-Manual-PDF",
+   "size_bytes": 346035,
+   "checksum_sha256": "41d5a7149282c3aa5262c1e2cafac68c52291f2622b5d4613e5c3e65687a1c11",
+   "title": "RMRTD Drivers' Manual",
+   "description": "The Rio Metro Regional Transit District's RMRTD Drivers' Manual, part of the public record of the regional rail and bus service that connects Albuquerque to the wider region.",
+   "evidence": "Published at www.riometro.org/DocumentCenter/View as RMRTD-Drivers-Manual-PDF.",
+   "group": "Rio Metro transit records",
+   "proposed_canonical_page": "content/transportation/transit/abq-ride.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/_index.md",
+     "reason": "Regional transit serving Albuquerque."
+    }
+   ],
+   "description_word_count": 28
+  },
+  {
+   "id": "src-6f63f639f6d5087a",
+   "authoritative_url": "https://www.riometro.org/DocumentCenter/View/3651",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "3651",
+   "size_bytes": 1988578,
+   "checksum_sha256": "238c283facbbdf39bfccc4200e6e4d58e72c419b74110d11bbffc7e2db9ec190",
+   "title": "Rio Metro Service Animal Handbook",
+   "description": "The Rio Metro Regional Transit District's Rio Metro Service Animal Handbook, part of the public record of the regional rail and bus service that connects Albuquerque to the wider region.",
+   "evidence": "Published at www.riometro.org/DocumentCenter as 3651.",
+   "group": "Rio Metro transit records",
+   "proposed_canonical_page": "content/transportation/transit/abq-ride.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/_index.md",
+     "reason": "Regional transit serving Albuquerque."
+    }
+   ],
+   "description_word_count": 30
+  },
+  {
+   "id": "src-9c986d4a009aa558",
+   "authoritative_url": "https://www.riometro.org/DocumentCenter/View/3890",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "3890",
+   "size_bytes": 6144250,
+   "checksum_sha256": "027b377f1f6935fc02d2eaca84ceae48cdaa71fce57e0c8e2736bd4dcca841d6",
+   "title": "Presentation to the Rio Metro Board of Directors",
+   "description": "The Rio Metro Regional Transit District's Presentation to the Rio Metro Board of Directors, part of the public record of the regional rail and bus service that connects Albuquerque to the wider region.",
+   "evidence": "Published at www.riometro.org/DocumentCenter as 3890.",
+   "group": "Rio Metro transit records",
+   "proposed_canonical_page": "content/transportation/transit/abq-ride.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/_index.md",
+     "reason": "Regional transit serving Albuquerque."
+    }
+   ],
+   "description_word_count": 33
+  },
+  {
+   "id": "src-8373d44c39d4baf9",
+   "authoritative_url": "https://www.riometro.org/DocumentCenter/View/3891",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "3891",
+   "size_bytes": 17627951,
+   "checksum_sha256": "386128ea99b16f891f79c40927aca61a7abd514a806f8b81b80e3c9e67ed4dd2",
+   "title": "Rio Metro / ABQ RIDE Consolidation Study: Existing Conditions",
+   "description": "The Rio Metro Regional Transit District's Rio Metro / ABQ RIDE Consolidation Study: Existing Conditions, part of the public record of the regional rail and bus service that connects Albuquerque to the wider region.",
+   "evidence": "Published at www.riometro.org/DocumentCenter as 3891.",
+   "group": "Rio Metro transit records",
+   "proposed_canonical_page": "content/transportation/transit/abq-ride.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/_index.md",
+     "reason": "Regional transit serving Albuquerque."
+    }
+   ],
+   "description_word_count": 34
+  },
+  {
+   "id": "src-c1d880c1c76b1720",
+   "authoritative_url": "https://www.riometro.org/DocumentCenter/View/3892",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "3892",
+   "size_bytes": 10401631,
+   "checksum_sha256": "681031fcd6ad5bb761280c3e3a82aeee24f4adf851a32f8162204c7ae0ba3895",
+   "title": "Presentation to the Rio Metro Board of Directors",
+   "description": "The Rio Metro Regional Transit District's Presentation to the Rio Metro Board of Directors, part of the public record of the regional rail and bus service that connects Albuquerque to the wider region.",
+   "evidence": "Published at www.riometro.org/DocumentCenter as 3892.",
+   "group": "Rio Metro transit records",
+   "proposed_canonical_page": "content/transportation/transit/abq-ride.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/_index.md",
+     "reason": "Regional transit serving Albuquerque."
+    }
+   ],
+   "description_word_count": 33
+  },
+  {
+   "id": "src-152abfc8ea1907ae",
+   "authoritative_url": "https://www.riometro.org/DocumentCenter/View/3893",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "3893",
+   "size_bytes": 1784478,
+   "checksum_sha256": "f7cdb563c1b01704434fcec558ea1d1fa74132f05abb65b3e13377794dd90f86",
+   "title": "Presentation to the Rio Metro Board of Directors",
+   "description": "The Rio Metro Regional Transit District's Presentation to the Rio Metro Board of Directors, part of the public record of the regional rail and bus service that connects Albuquerque to the wider region.",
+   "evidence": "Published at www.riometro.org/DocumentCenter as 3893.",
+   "group": "Rio Metro transit records",
+   "proposed_canonical_page": "content/transportation/transit/abq-ride.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/_index.md",
+     "reason": "Regional transit serving Albuquerque."
+    }
+   ],
+   "description_word_count": 33
+  },
+  {
+   "id": "src-e4dd44c3e77b1450",
+   "authoritative_url": "https://www.riometro.org/DocumentCenter/View/4097",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "4097",
+   "size_bytes": 1402908,
+   "checksum_sha256": "47e940d85168817d1c03c238935c6abab91d15b77367bc108afe8568e74e0b5c",
+   "title": "Rail Runner service: Belen, Los Lunas, Pueblo of Isleta and Downtown Albuquerque",
+   "description": "The Rio Metro Regional Transit District's Rail Runner service: Belen, Los Lunas, Pueblo of Isleta and Downtown Albuquerque, part of the public record of the regional rail and bus service that connects Albuquerque to the wider region.",
+   "evidence": "Published at www.riometro.org/DocumentCenter as 4097.",
+   "group": "Rio Metro transit records",
+   "proposed_canonical_page": "content/transportation/transit/abq-ride.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/_index.md",
+     "reason": "Regional transit serving Albuquerque."
+    }
+   ],
+   "description_word_count": 37
+  },
+  {
+   "id": "src-c6f704ae61675f09",
+   "authoritative_url": "https://www.riometro.org/DocumentCenter/View/4111",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "4111",
+   "size_bytes": 817802,
+   "checksum_sha256": "ecf750e5bee2111bbd5fb4cd7259a19d4973a6a85dce85440af23a04fb63dadd",
+   "title": "View the Zozobra Train Schedule",
+   "description": "The Rio Metro Regional Transit District's View the Zozobra Train Schedule, part of the public record of the regional rail and bus service that connects Albuquerque to the wider region.",
+   "evidence": "Published at www.riometro.org/DocumentCenter as 4111.",
+   "group": "Rio Metro transit records",
+   "proposed_canonical_page": "content/transportation/transit/abq-ride.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/_index.md",
+     "reason": "Regional transit serving Albuquerque."
+    }
+   ],
+   "description_word_count": 30
+  },
+  {
+   "id": "src-1da0f53466755def",
+   "authoritative_url": "https://www.riometro.org/DocumentCenter/View/472",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "472",
+   "size_bytes": 424682,
+   "checksum_sha256": "3722f0c1fc7353b8bb15f2a9ba6dd2d80ab890c01889fb73b275dfc34cfa017a",
+   "title": "Rio Metro Rider's Guide (English)",
+   "description": "The Rio Metro Regional Transit District's Rio Metro Rider's Guide (English), part of the public record of the regional rail and bus service that connects Albuquerque to the wider region.",
+   "evidence": "Published at www.riometro.org/DocumentCenter as 472.",
+   "group": "Rio Metro transit records",
+   "proposed_canonical_page": "content/transportation/transit/abq-ride.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/_index.md",
+     "reason": "Regional transit serving Albuquerque."
+    }
+   ],
+   "description_word_count": 30
+  },
+  {
+   "id": "src-2746dc6945db9fea",
+   "authoritative_url": "https://www.riometro.org/DocumentCenter/View/890",
+   "recommended_status": "approved for addition",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "890",
+   "size_bytes": 1737322,
+   "checksum_sha256": "2bf75d4a043d3674bd374ac71feeb90536e6bff86ee60a3ac25a2b23a240ba4f",
+   "title": "Rio Metro Route 210",
+   "description": "The Rio Metro Regional Transit District's Rio Metro Route 210, part of the public record of the regional rail and bus service that connects Albuquerque to the wider region.",
+   "evidence": "Published at www.riometro.org/DocumentCenter as 890.",
+   "group": "Rio Metro transit records",
+   "proposed_canonical_page": "content/transportation/transit/abq-ride.md",
+   "cross_listings": [
+    {
+     "page": "content/transportation/_index.md",
+     "reason": "Regional transit serving Albuquerque."
+    }
+   ],
+   "description_word_count": 29
+  }
+ ],
+ "duplicate": [
+  {
+   "id": "src-1fe340b308393e51",
+   "authoritative_url": "https://www.riometro.org/DocumentCenter/View/2522",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "2522",
+   "size_bytes": 23293348,
+   "checksum_sha256": "cc80a9b601571d9476d715890f78279f4df459257b5f7a2dd175576a3a355b30",
+   "canonical_id": "src-e7c9cdabe1d4149f",
+   "title_for_reference": "Conceptual Design Report",
+   "relationship": "The same file the archive already holds as Rail Runner Operations and Maintenance Facility Conceptual Design Report, validated with an r2_url.",
+   "how_it_was_established": "Byte-identical to the archived record: 23,293,348 bytes and the same SHA-256, found by sweeping every fetched checksum against all 1020 checksummed archived records.",
+   "why_this_one_is_the_copy": "The archive already holds it, validated and archived.",
+   "group": "already archived"
+  },
+  {
+   "id": "src-2cd80872080de4b9",
+   "authoritative_url": "https://riometro.org/DocumentCenter/View/52/Rail-and-Bus-Connections-Guide-PDF",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "Rail-and-Bus-Connections-Guide-PDF",
+   "size_bytes": 9028848,
+   "checksum_sha256": "c0fd6d1b6bf9c204590ffeedea3454202ffc70a8867c228087fc947f9accbdec",
+   "canonical_id": "src-448f241082060f7a",
+   "title_for_reference": "Rail and Bus Connections Guide PDF",
+   "relationship": "The same file the archive already holds as Rail Runner Rail and Bus Connections Guide, validated with an r2_url.",
+   "how_it_was_established": "Byte-identical to the archived record: 9,028,848 bytes and the same SHA-256, found by sweeping every fetched checksum against all 1020 checksummed archived records.",
+   "why_this_one_is_the_copy": "The archive already holds it, validated and archived.",
+   "group": "already archived"
+  },
+  {
+   "id": "src-47bd8bdc158f8f89",
+   "authoritative_url": "https://www.riometro.org/DocumentCenter/View/3930/Consolidation-Study-Final-Report-PDF",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "Consolidation-Study-Final-Report-PDF",
+   "size_bytes": 25114690,
+   "checksum_sha256": "22c04c2ff6780e33a1150d44f5848a567fb952b7051cf1d9c343c356e9b2332b",
+   "canonical_id": "src-efa7bc1d553b325d",
+   "title_for_reference": "Consolidation Study Final Report (PDF)",
+   "relationship": "The same file the archive already holds as Rio Metro / ABQ RIDE Consolidation Study Final Report, validated with an r2_url.",
+   "how_it_was_established": "Byte-identical to the archived record: 25,114,690 bytes and the same SHA-256, found by sweeping every fetched checksum against all 1020 checksummed archived records.",
+   "why_this_one_is_the_copy": "The archive already holds it, validated and archived.",
+   "group": "already archived"
+  },
+  {
+   "id": "src-47f35d1f65ee0534",
+   "authoritative_url": "https://www.riometro.org/DocumentCenter/View/2885",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "2885",
+   "size_bytes": 666551,
+   "checksum_sha256": "670cfe15e505e1c8cc106e46d42cc20ed31887e93b1d08fea2e8b823a6ec0a5e",
+   "canonical_id": "src-081f583fd9c2c86a",
+   "title_for_reference": "Facility Assessment",
+   "relationship": "The same file the archive already holds as Rail Runner Operations and Maintenance Facility Assessment, validated with an r2_url.",
+   "how_it_was_established": "Byte-identical to the archived record: 666,551 bytes and the same SHA-256, found by sweeping every fetched checksum against all 1020 checksummed archived records.",
+   "why_this_one_is_the_copy": "The archive already holds it, validated and archived.",
+   "group": "already archived"
+  },
+  {
+   "id": "src-81cb9993f423bedd",
+   "authoritative_url": "https://www.riometro.org/DocumentCenter/View/52",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "52",
+   "size_bytes": 9028848,
+   "checksum_sha256": "c0fd6d1b6bf9c204590ffeedea3454202ffc70a8867c228087fc947f9accbdec",
+   "canonical_id": "src-448f241082060f7a",
+   "title_for_reference": "Rail and Bus Connections Guide (PDF)",
+   "relationship": "The same file the archive already holds as Rail Runner Rail and Bus Connections Guide, validated with an r2_url.",
+   "how_it_was_established": "Byte-identical to the archived record: 9,028,848 bytes and the same SHA-256, found by sweeping every fetched checksum against all 1020 checksummed archived records.",
+   "why_this_one_is_the_copy": "The archive already holds it, validated and archived.",
+   "group": "already archived"
+  },
+  {
+   "id": "src-8a1660a76efedcb9",
+   "authoritative_url": "https://www.riometro.org/DocumentCenter/View/250/New-Mexico-Rail-Runner-Express-Project-Development-History-PDF",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "New-Mexico-Rail-Runner-Express-Project-Development-History-PDF",
+   "size_bytes": 6260206,
+   "checksum_sha256": "a28ee8abb28e0ae15f5d975daa9845202c382266c492fc71539167554e718864",
+   "canonical_id": "src-eb037a66025fcea5",
+   "title_for_reference": "New Mexico Rail Runner Express Project Development History (PDF)",
+   "relationship": "The same file the archive already holds as New Mexico Rail Runner Express Project Development History, validated with an r2_url.",
+   "how_it_was_established": "Byte-identical to the archived record: 6,260,206 bytes and the same SHA-256, found by sweeping every fetched checksum against all 1020 checksummed archived records.",
+   "why_this_one_is_the_copy": "The archive already holds it, validated and archived.",
+   "group": "already archived"
+  },
+  {
+   "id": "src-9100a86846fe0cde",
+   "authoritative_url": "https://riometro.org/DocumentCenter/View/265",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "265",
+   "size_bytes": 3199012,
+   "checksum_sha256": "49b376a9c2832790ddaefaafbdc1f47eb5677d0e7566fa3c1e70ccb089c33539",
+   "canonical_id": "src-d50cd2863da4f4be",
+   "title_for_reference": "Rail Runner System Map (PDF)",
+   "relationship": "The same file the archive already holds as Rail Runner System Map, validated with an r2_url.",
+   "how_it_was_established": "Byte-identical to the archived record: 3,199,012 bytes and the same SHA-256, found by sweeping every fetched checksum against all 1020 checksummed archived records.",
+   "why_this_one_is_the_copy": "The archive already holds it, validated and archived.",
+   "group": "already archived"
+  },
+  {
+   "id": "src-a22288ac94eca820",
+   "authoritative_url": "https://www.riometro.org/DocumentCenter/View/3802",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "3802",
+   "size_bytes": 5460859,
+   "checksum_sha256": "4b1fdad844006d6aa73809bde7f1140fa7501f60660e725fcc429895efb3bc89",
+   "canonical_id": "src-9023326de3446f0b",
+   "title_for_reference": "Rio Metro Double Track Study (PDF)",
+   "relationship": "The same file the archive already holds as Rio Metro Double Track Study, validated with an r2_url.",
+   "how_it_was_established": "Byte-identical to the archived record: 5,460,859 bytes and the same SHA-256, found by sweeping every fetched checksum against all 1020 checksummed archived records.",
+   "why_this_one_is_the_copy": "The archive already holds it, validated and archived.",
+   "group": "already archived"
+  },
+  {
+   "id": "src-e88af7f1ad6aa039",
+   "authoritative_url": "https://www.riometro.org/DocumentCenter/View/3986",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "3986",
+   "size_bytes": 919336,
+   "checksum_sha256": "a07f8dfd4f461a2672d4707a8dec8ee0969fa04996ef45ebc493cac74b78b07e",
+   "canonical_id": "src-faed9c62872a8ef2",
+   "title_for_reference": "Operations and Maintenance Facility Fact Sheet",
+   "relationship": "The same file the archive already holds as Rail Runner Operations and Maintenance Facility Fact Sheet, validated with an r2_url.",
+   "how_it_was_established": "Byte-identical to the archived record: 919,336 bytes and the same SHA-256, found by sweeping every fetched checksum against all 1020 checksummed archived records.",
+   "why_this_one_is_the_copy": "The archive already holds it, validated and archived.",
+   "group": "already archived"
+  },
+  {
+   "id": "src-ef7e8b7ebb1a4ab8",
+   "authoritative_url": "https://www.riometro.org/DocumentCenter/View/252/Paseo-del-Norte-High-Capacity-Transit-Study-Alternatives-Analysis-Report-PDF",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "Paseo-del-Norte-High-Capacity-Transit-Study-Alternatives-Analysis-Report-PDF",
+   "size_bytes": 7560370,
+   "checksum_sha256": "76692dd8479da5ecfd80ca0c54deb8ee6aab28f22443f80d542dccd72a920525",
+   "canonical_id": "src-10285a23d1622d9c",
+   "title_for_reference": "Paseo del Norte High Capacity Transit Study: Alternatives Analysis Report (PDF)",
+   "relationship": "The same file the archive already holds as Paseo del Norte High-Capacity Transit Study: Alternatives Analysis Report, validated with an r2_url.",
+   "how_it_was_established": "Byte-identical to the archived record: 7,560,370 bytes and the same SHA-256, found by sweeping every fetched checksum against all 1020 checksummed archived records.",
+   "why_this_one_is_the_copy": "The archive already holds it, validated and archived.",
+   "group": "already archived"
+  },
+  {
+   "id": "src-13f6e1487f178196",
+   "authoritative_url": "https://www.cabq.gov/sustainability/documents/10-14-20-cabq-task-force-meeting-minutes-1.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "10-14-20-cabq-task-force-meeting-minutes-1.pdf",
+   "size_bytes": 207306,
+   "checksum_sha256": "1cc4e971459b0502a922a35622cd2de542c0633e581557ac8cd0f4592b062fa6",
+   "canonical_id": "src-3df60b7932dbbdf0",
+   "title_for_reference": "10.14.20 - CABQ Task Force Meeting Minutes.pdf, second registration",
+   "relationship": "The same file registered twice in the inventory under two candidate ids.",
+   "how_it_was_established": "Byte-identical: both 207,306 bytes with the same SHA-256.",
+   "why_this_one_is_the_copy": "The plainer of the two names is canonical: a copy_of_ prefix, a -1 suffix and a bare numeric id are all artefacts of the publishing system rather than names of documents.",
+   "group": "duplicate registrations"
+  },
+  {
+   "id": "src-4a5b49bde2952989",
+   "authoritative_url": "https://www.cabq.gov/sustainability/documents/copy_of_albuquerque-food-and-agriculture-action-plan.pdf/view",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "copy_of_albuquerque-food-and-agriculture-action-plan.pdf",
+   "size_bytes": 6423851,
+   "checksum_sha256": "a0036bb2940eb4b77712a6944e270ef6d2e371ae0bb42526e903330399cb3a65",
+   "canonical_id": "src-d64f86a21d781a13",
+   "title_for_reference": "Albuquerque Food and Agriculture Action Plan.pdf, second registration",
+   "relationship": "The same file registered twice in the inventory under two candidate ids.",
+   "how_it_was_established": "Byte-identical: both 6,423,851 bytes with the same SHA-256.",
+   "why_this_one_is_the_copy": "The plainer of the two names is canonical: a copy_of_ prefix, a -1 suffix and a bare numeric id are all artefacts of the publishing system rather than names of documents.",
+   "group": "duplicate registrations"
+  },
+  {
+   "id": "src-4b29e0080d01ac14",
+   "authoritative_url": "https://www.riometro.org/DocumentCenter/View/4111/Zozobra-2026-Schedule",
+   "recommended_status": "duplicate",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "Zozobra-2026-Schedule",
+   "size_bytes": 817802,
+   "checksum_sha256": "ecf750e5bee2111bbd5fb4cd7259a19d4973a6a85dce85440af23a04fb63dadd",
+   "canonical_id": "src-c6f704ae61675f09",
+   "title_for_reference": "Zozobra 2026 Schedule, second registration",
+   "relationship": "The same file registered twice in the inventory under two candidate ids.",
+   "how_it_was_established": "Byte-identical: both 817,802 bytes with the same SHA-256.",
+   "why_this_one_is_the_copy": "The plainer of the two names is canonical: a copy_of_ prefix, a -1 suffix and a bare numeric id are all artefacts of the publishing system rather than names of documents.",
+   "group": "duplicate registrations"
+  }
+ ],
+ "superseded": [
+  {
+   "id": "src-8b0b0b105556274b",
+   "authoritative_url": "https://www.riometro.org/DocumentCenter/View/3895",
+   "recommended_status": "superseded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "Rio Metro Regional Transit District",
+   "served_filename": "3895",
+   "size_bytes": 25042434,
+   "checksum_sha256": "cf021cb92d55f1d9571d989f1144dde5127bd2ac93d45bd2d5838506f51d53d2",
+   "canonical_id": "src-efa7bc1d553b325d",
+   "title_for_reference": "Rio Metro / ABQ RIDE Consolidation Study: Draft Report, October 2025",
+   "relationship": "The draft of the consolidation study whose final report the archive already holds, validated with an r2_url.",
+   "how_it_was_established": "The document's own first page reads Rio Metro ABQ RIDE Consolidation Study Draft October 2025. The archived final report is 25,114,690 bytes; this draft is 25,042,434. Same study, and the file says which stage it is.",
+   "recommended_treatment": "Retain as the draft. It is the only record of what the study said before the final report.",
+   "group": "superseded"
+  }
+ ],
+ "requires_human_review": [],
+ "excluded": [
+  {
+   "id": "src-eb9e92937e376325",
+   "authoritative_url": "https://www.cabq.gov/economicdevelopment/documents/EDACTMEETINGNOTICE1213.docx/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "OOXML",
+   "leading_bytes": "504b0304",
+   "publisher": "City of Albuquerque",
+   "served_filename": "EDACTMEETINGNOTICE1213.docx",
+   "size_bytes": 54342,
+   "checksum_sha256": "f9c4a6dce9cf749c2e00c35778cc2d8ce83d52fcb13a9e46c927882a6eb2dfab",
+   "title_for_reference": "EDACTMEETINGNOTICE1213.docx",
+   "what_it_is": "A notice that an EDAct Council meeting would be held, giving the date and the hours and nothing else.",
+   "exclusion_reason": "Below the missing-minutes exception. That exception exists to preserve the only official trace of what a meeting considered, which is why it covers agendas. A notice of meeting records only that a meeting was called: these open NOTICE OF MEETING, EDAct COUNCIL, a date and a time range. The agendas from the same body are recommended in this artifact under the exception; the notices carry no business at all.",
+   "category": "notice of meeting",
+   "package": "meeting_notices"
+  },
+  {
+   "id": "src-59b0a2a4a73e94d5",
+   "authoritative_url": "https://www.cabq.gov/economicdevelopment/documents/MEETINGNOTICE0215.docx/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "OOXML",
+   "leading_bytes": "504b0304",
+   "publisher": "City of Albuquerque",
+   "served_filename": "MEETINGNOTICE0215.docx",
+   "size_bytes": 54502,
+   "checksum_sha256": "4ce143fb6e2482d8ac0e0cdae0d7dfea97c2a1ff7fc29b51bdf51cf4ecbdb85d",
+   "title_for_reference": "MEETINGNOTICE0215.docx",
+   "what_it_is": "A notice that an EDAct Council meeting would be held, giving the date and the hours and nothing else.",
+   "exclusion_reason": "Below the missing-minutes exception. That exception exists to preserve the only official trace of what a meeting considered, which is why it covers agendas. A notice of meeting records only that a meeting was called: these open NOTICE OF MEETING, EDAct COUNCIL, a date and a time range. The agendas from the same body are recommended in this artifact under the exception; the notices carry no business at all.",
+   "category": "notice of meeting",
+   "package": "meeting_notices"
+  },
+  {
+   "id": "src-678e6f3977e49221",
+   "authoritative_url": "https://www.cabq.gov/economicdevelopment/documents/MEETINGNOTICE103014.docx/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "OOXML",
+   "leading_bytes": "504b0304",
+   "publisher": "City of Albuquerque",
+   "served_filename": "MEETINGNOTICE103014.docx",
+   "size_bytes": 54259,
+   "checksum_sha256": "df18d2f10faf2b08eefba698accdd2955b9c0f1e2dc20fb20fd0db2d6fba2350",
+   "title_for_reference": "MEETINGNOTICE103014.docx",
+   "what_it_is": "A notice that an EDAct Council meeting would be held, giving the date and the hours and nothing else.",
+   "exclusion_reason": "Below the missing-minutes exception. That exception exists to preserve the only official trace of what a meeting considered, which is why it covers agendas. A notice of meeting records only that a meeting was called: these open NOTICE OF MEETING, EDAct COUNCIL, a date and a time range. The agendas from the same body are recommended in this artifact under the exception; the notices carry no business at all.",
+   "category": "notice of meeting",
+   "package": "meeting_notices"
+  },
+  {
+   "id": "src-216fe2a32ddd2a01",
+   "authoritative_url": "https://www.cabq.gov/economicdevelopment/documents/MEETINGNOTICE2.docx/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "OOXML",
+   "leading_bytes": "504b0304",
+   "publisher": "City of Albuquerque",
+   "served_filename": "MEETINGNOTICE2.docx",
+   "size_bytes": 54419,
+   "checksum_sha256": "87068637514d6f62c75c3ca96098cf81a8d45bafd742df93afee62280b1b30a4",
+   "title_for_reference": "MEETINGNOTICE2.docx",
+   "what_it_is": "A notice that an EDAct Council meeting would be held, giving the date and the hours and nothing else.",
+   "exclusion_reason": "Below the missing-minutes exception. That exception exists to preserve the only official trace of what a meeting considered, which is why it covers agendas. A notice of meeting records only that a meeting was called: these open NOTICE OF MEETING, EDAct COUNCIL, a date and a time range. The agendas from the same body are recommended in this artifact under the exception; the notices carry no business at all.",
+   "category": "notice of meeting",
+   "package": "meeting_notices"
+  },
+  {
+   "id": "src-e2ac5601332aee8a",
+   "authoritative_url": "https://www.cabq.gov/economicdevelopment/documents/MEETINGNOTICE3.docx/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "OOXML",
+   "leading_bytes": "504b0304",
+   "publisher": "City of Albuquerque",
+   "served_filename": "MEETINGNOTICE3.docx",
+   "size_bytes": 54422,
+   "checksum_sha256": "6193a880ba676c92ad4ff84d71528b53fba1272a28538661b256ba08c7e0a783",
+   "title_for_reference": "MEETINGNOTICE3.docx",
+   "what_it_is": "A notice that an EDAct Council meeting would be held, giving the date and the hours and nothing else.",
+   "exclusion_reason": "Below the missing-minutes exception. That exception exists to preserve the only official trace of what a meeting considered, which is why it covers agendas. A notice of meeting records only that a meeting was called: these open NOTICE OF MEETING, EDAct COUNCIL, a date and a time range. The agendas from the same body are recommended in this artifact under the exception; the notices carry no business at all.",
+   "category": "notice of meeting",
+   "package": "meeting_notices"
+  },
+  {
+   "id": "src-bd314128b8ff3fc6",
+   "authoritative_url": "https://www.cabq.gov/economicdevelopment/documents/MEETINGNOTICE4.docx/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "OOXML",
+   "leading_bytes": "504b0304",
+   "publisher": "City of Albuquerque",
+   "served_filename": "MEETINGNOTICE4.docx",
+   "size_bytes": 54463,
+   "checksum_sha256": "5ab9378882b751bb8909295b21f68831c4beb35d4e6ce8c888b973f6aee7c168",
+   "title_for_reference": "MEETINGNOTICE4.docx",
+   "what_it_is": "A notice that an EDAct Council meeting would be held, giving the date and the hours and nothing else.",
+   "exclusion_reason": "Below the missing-minutes exception. That exception exists to preserve the only official trace of what a meeting considered, which is why it covers agendas. A notice of meeting records only that a meeting was called: these open NOTICE OF MEETING, EDAct COUNCIL, a date and a time range. The agendas from the same body are recommended in this artifact under the exception; the notices carry no business at all.",
+   "category": "notice of meeting",
+   "package": "meeting_notices"
+  },
+  {
+   "id": "src-511b029eaf5c4f0a",
+   "authoritative_url": "https://www.cabq.gov/economicdevelopment/documents/MEETINGNOTICE5.docx/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "OOXML",
+   "leading_bytes": "504b0304",
+   "publisher": "City of Albuquerque",
+   "served_filename": "MEETINGNOTICE5.docx",
+   "size_bytes": 54534,
+   "checksum_sha256": "c55ddeb07b6e8a6edb4556806997e359c77ee5f37c0577ab0e0acda98e65d8f3",
+   "title_for_reference": "MEETINGNOTICE5.docx",
+   "what_it_is": "A notice that an EDAct Council meeting would be held, giving the date and the hours and nothing else.",
+   "exclusion_reason": "Below the missing-minutes exception. That exception exists to preserve the only official trace of what a meeting considered, which is why it covers agendas. A notice of meeting records only that a meeting was called: these open NOTICE OF MEETING, EDAct COUNCIL, a date and a time range. The agendas from the same body are recommended in this artifact under the exception; the notices carry no business at all.",
+   "category": "notice of meeting",
+   "package": "meeting_notices"
+  },
+  {
+   "id": "src-ca514a45701353ad",
+   "authoritative_url": "https://www.cabq.gov/economicdevelopment/documents/MEETINGNOTICEEDAct.docx/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "OOXML",
+   "leading_bytes": "504b0304",
+   "publisher": "City of Albuquerque",
+   "served_filename": "MEETINGNOTICEEDAct.docx",
+   "size_bytes": 54110,
+   "checksum_sha256": "c467a7c7b0855c1bd77f142ed5b14d6532d23d5d7d789229e8182ba57bf62d1c",
+   "title_for_reference": "MEETINGNOTICEEDAct.docx",
+   "what_it_is": "A notice that an EDAct Council meeting would be held, giving the date and the hours and nothing else.",
+   "exclusion_reason": "Below the missing-minutes exception. That exception exists to preserve the only official trace of what a meeting considered, which is why it covers agendas. A notice of meeting records only that a meeting was called: these open NOTICE OF MEETING, EDAct COUNCIL, a date and a time range. The agendas from the same body are recommended in this artifact under the exception; the notices carry no business at all.",
+   "category": "notice of meeting",
+   "package": "meeting_notices"
+  },
+  {
+   "id": "src-4eb9d168d77a4677",
+   "authoritative_url": "https://www.cabq.gov/economicdevelopment/documents/PublicmeetingnoticeMarch2014.docx/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "OOXML",
+   "leading_bytes": "504b0304",
+   "publisher": "City of Albuquerque",
+   "served_filename": "PublicmeetingnoticeMarch2014.docx",
+   "size_bytes": 49615,
+   "checksum_sha256": "15d47c2be62fe01fca68b2e986c83e787ebae1059b9ffe4070ad97d7fb0c0f88",
+   "title_for_reference": "PublicmeetingnoticeMarch2014.docx",
+   "what_it_is": "A notice that an EDAct Council meeting would be held, giving the date and the hours and nothing else.",
+   "exclusion_reason": "Below the missing-minutes exception. That exception exists to preserve the only official trace of what a meeting considered, which is why it covers agendas. A notice of meeting records only that a meeting was called: these open NOTICE OF MEETING, EDAct COUNCIL, a date and a time range. The agendas from the same body are recommended in this artifact under the exception; the notices carry no business at all.",
+   "category": "notice of meeting",
+   "package": "meeting_notices"
+  },
+  {
+   "id": "src-15192a82ff4dd6e6",
+   "authoritative_url": "https://www.cabq.gov/economicdevelopment/documents/1040-schedule-se.pdf/view",
+   "recommended_status": "excluded",
+   "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "publisher": "City of Albuquerque",
+   "served_filename": "1040-schedule-se.pdf",
+   "size_bytes": 94606,
+   "checksum_sha256": "79cf20b576733e8e994e37300b81c217e49f600452bebda989d60ad34ce95b38",
+   "title_for_reference": "1040 Schedule SE",
+   "what_it_is": "A United States Internal Revenue Service tax form, posted by the City as a sample document for an economic relief grant application.",
+   "exclusion_reason": "Not a City record. Schedule SE is a federal tax form whose authoritative publisher is the Internal Revenue Service, posted here only as an example of what a grant applicant might submit. Same treatment as the USDA-NRCS technical note, the NMAC licensing rule and the PNM tariff excluded earlier in this run.",
+   "category": "federal tax form",
+   "if_reconsidered": "If the grant programme's requirements need a record, archive the City's own application guidance rather than the IRS form.",
+   "package": "third_party_authority"
+  }
+ ],
+ "archival_note": "All 43 approved records are inventory-only until an R2 archive object exists for each and its public download, exact size, SHA-256, and authoritative-source provenance are verified. Combined archive footprint if authorized: 111,192,837 bytes. The 13 duplicate records, 97,981,027 bytes, must not be archived: ten of them are already in R2 under another candidate id. The superseded draft should be archived; it is the only record of the study before its final report.",
+ "integration_note": "Codex integration lane: apply recommended_status values through scripts/project/Update-Candidate.ps1 only. Fourteen rows carry a canonical_id; three canonicals are rows in this artifact and eleven are records already validated and archived. Every row carries a publisher, a served_filename and a group. The four EDAct agenda rows carry their missing-minutes review inline and must be labelled as agendas; one is a draft. One Rio Metro board agenda carries a caution that its own body's minutes were not reviewed. Sizes and checksums are first measurements; the inventory held none.",
+ "safeguards": [
+  "no master-inventory.json write",
+  "no checkpoint.json write",
+  "no r2-inventory.json write",
+  "no site content change",
+  "no R2 upload",
+  "no commit, merge, or deploy",
+  "no terminal record modified",
+  "the official-source probes and the site search were read-only and created no inventory record"
+ ]
+}

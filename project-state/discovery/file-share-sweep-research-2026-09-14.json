@@ -1,0 +1,557 @@
+{
+ "batch_id": "file-share-sweep-research-2026-09-14",
+ "lane": "Claude research lane: sweeping the City site for file-transfer-host links, and the documents retrieved from them",
+ "generated_at": "2026-09-14T20:36:40.367313+00:00",
+ "date_note": "Dated 2026-09-14.",
+ "THIS_ARTIFACT_IS_NOT_A_TRIAGE_OF_CANDIDATES": {
+  "what_that_means": "None of these files has an inventory id. Every row carries inventory_id: null and a recommendation rather than a recommended_status.",
+  "so_it_cannot_be_applied_the_usual_way": "Update-Candidate.ps1 cannot act on any row here."
+ },
+ "why_this_sweep_was_run": {
+  "the_problem": "sfftp.cabq.gov is a City file-transfer host. Its share URLs return 1,344 bytes of JavaScript application shell to any automated fetch, so a document published only through it is invisible to discovery. Two had already surfaced by accident.",
+  "the_question": "How many more are there, and what are they?"
+ },
+ "A_GAP_IN_MY_OWN_HARVEST_THAT_THIS_SWEEP_EXPOSED": {
+  "what_was_wrong": "Both link harvests filtered candidate links by file extension - pdf, doc, docx, xls, xlsx, ppt, pptx, csv, rtf, txt. A share URL looks like /f/39395977f639746c and has no extension at all, so every one of them was silently discarded.",
+  "how_close_it_came_to_never_being_noticed": "Exactly one sfftp string survived the harvest: sfftp.cabq.gov/f/licenses.txt, the application's own licence file, and only because it happens to end in .txt. That one link is what exposed the wrongly excluded McDuffie study - and it is also what eventually exposed this.",
+  "what_it_cost": "The harvest lanes reported 461 undiscovered documents and implied that was what those pages held. They also linked at least 21 file-share documents that the harvest never reported.",
+  "the_rule": "Filtering links by extension assumes every document URL carries one. Sweep for known document hosts by hostname as well, not only by the shape of the filename."
+ },
+ "the_sweep": {
+  "pages_parsed": 2168,
+  "where_they_came_from": "804 pages already stored from the two link harvests, plus 1,364 City pages the inventory records and nothing in this run had ever parsed, fetched for this sweep (1,337 returned HTTP 200).",
+  "distinct_share_links_found": 21,
+  "what_the_coverage_is_not": "These are only pages that appear in master-inventory.json. Any City page the original crawl never recorded could link more, and this sweep cannot see it. 21 links from 2168 pages is a floor, not a total.",
+  "every_link_found": {
+   "https://sfftp.cabq.gov/f/026aa2b7e929b9d1": {
+    "link_text": [
+     "Albuquerque Food Donation Guide for Restaurants and Caterers"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/council-district-6-highlights/resolveuid/f8b8572d716b4235be0ecff5f36e65ee"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/11042c4b459d5f05": {
+    "link_text": [
+     "Bernalillo County Seniors 50+ Food Pantry Flyer (pdf)"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/council-district-6-highlights/resolveuid/f8b8572d716b4235be0ecff5f36e65ee"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/39395977f639746c": {
+    "link_text": [
+     "Tower Blvd Median Improvements Completed"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-3/district-3-projects",
+     "https://www.cabq.gov/council/find-your-councilor/district-3/district-3/resolveuid/b1a0d10741d8631da18cd62ab73b4ade",
+     "https://www.cabq.gov/council/projects/neighborhood-projects/neighborhood-projects/resolveuid/b1a0d10741d8631da18cd62ab73b4ade"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/4e6493bae484de6a": {
+    "link_text": [
+     "Laurelwood Median and Parkway Conceptual Study"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-1/district-1-projects/laurelwood-median-rehabilitation-project"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/53122a64efa52910": {
+    "link_text": [
+     "View the photos of the evening."
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-9/news/albuquerque-lights-up-blue-and-green-to-kick-off-donate-life-month-and-raise-ald-awareness"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/6d78f9eee27abdc2": {
+    "link_text": [
+     "Bernalillo County Food Impact Team Food Resources"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/council-district-6-highlights/resolveuid/f8b8572d716b4235be0ecff5f36e65ee"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/77375fbe0f6572e7": {
+    "link_text": [
+     "View photos from the 2025 Angel Tree Lighting"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-8/news/city-leaders-and-guardians-of-the-children-gather-to-commemorate-young-lives-at-10th-annual-angel-tree-lighting"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/7ad678a86cd956d0": {
+    "link_text": [
+     "TreeNM 2024 La Mesa Neighborhood Final Report"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/council-district-6-highlights/resolveuid/380b72a3ed2347c9b1982bae1b0b154d"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/7e1d61fbc4c19830": {
+    "link_text": [
+     "Sandia High School Safety and Traffic Calming Study"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/sandia-high-school-area-safety-and-traffic-calming-measures"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/87bb2c6f50d4dd7a": {
+    "link_text": [
+     "August 4, 2026 Agenda"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/african-american-advisory-board-aaab"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/891435ba241e7320": {
+    "link_text": [
+     "2026 Singing Arrow Multicultural Arts Festival"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-9/news/albuquerque-communities-celebrate-global-cultures-at-singing-arrow-multicultural-arts-festival"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/90d99c869c0dce30": {
+    "link_text": [
+     "Participatory Budgeting Project Selection Reveal Presentation from May 3, 2025"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/council-district-6-highlights/resolveuid/f7c83d59ce1249678bdf02f248eb5804"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/abb5ef26df521d07": {
+    "link_text": [
+     "Road Runner Food Bank Step-by-Step Guide for Finding Food Assistance (pdf)"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/council-district-6-highlights/resolveuid/f8b8572d716b4235be0ecff5f36e65ee"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/b9d73a3409003638": {
+    "link_text": [
+     "photos from this year’s “Touch-a-Truck” 2026"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-9/news/fifth-annual-touch-a-truck-event-draws-record-crowds-to-east-albuquerque-for-hands-on-summer-kickoff"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/bea99eddf1a7a6aa": {
+    "link_text": [
+     "proposed amendments"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-1/news/city-councilor-stephanie-telles-opposes-advancement-of-whistleblower-ordinance-without-key-accountability-amendments"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/c853e6c4de4dec8d": {
+    "link_text": [
+     "Albuquerque Food Donation Guide for Restaurants and Caterers"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/council-district-6-highlights/resolveuid/f8b8572d716b4235be0ecff5f36e65ee"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/cf8779d97e34c92c": {
+    "link_text": [
+     "McDuffie/Twin Parks Traffic Calming Study"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/copy2_of_the-mcduffie-twin-parks-traffic-calming-study"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/d233d7ecf3d2305b": {
+    "link_text": [
+     "Main Street Corridor Presentation"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-9/district-9-projects/district-9-street-improvement-projects/expanding-the-main-street-corridor-along-historic-route-66"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/d425b5e959e99dd7": {
+    "link_text": [
+     "2025 Drinking Water Consumer Confidence Report for 2025"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/albuquerque-city-councilors/resolveuid/c48ff3b276da4bafab0179cab6d5409c",
+     "https://www.cabq.gov/council/find-your-councilor/district-8",
+     "https://www.cabq.gov/council/projects/neighborhood-projects/neighborhood-projects/resolveuid/c48ff3b276da4bafab0179cab6d5409c"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/f0c0455b7ccf8d57": {
+    "link_text": [
+     "more photos of the Ceremony and the Workshop"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-6/news/fresh-food-and-local-democracy-bloom-city-officials-and-community-celebrate-grand-opening-of-the-peoples-market-in-the-international-district"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/f46295dffdae49d6": {
+    "link_text": [
+     "July 2, 2025 letter to City Mayor Tim Keller"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-6/news/old-carlisle-village-cleaners-site-qualifies-for-epas-priority-funding"
+    ]
+   }
+  }
+ },
+ "what_the_repository_owner_decided": {
+  "the_question_put_to_them": "The sweep produced 21 share links, of which 2 had already been retrieved. The remaining 19 were listed with the text each linking page uses, and the owner was asked which were worth retrieving by hand.",
+  "what_they_determined": "Three met the standard for the site and were retrieved. The other 16 did not.",
+  "why_that_is_recorded_here_rather_than_decided_by_me": "Whether a food-assistance flyer published by a county food bank, a photo gallery of a tree-lighting, or a festival notice belongs in this archive is a scope question about what the site is for. This run has referred five such questions to a person. This one the owner answered directly.",
+  "the_links_not_taken": {
+   "https://sfftp.cabq.gov/f/026aa2b7e929b9d1": {
+    "link_text": [
+     "Albuquerque Food Donation Guide for Restaurants and Caterers"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/council-district-6-highlights/resolveuid/f8b8572d716b4235be0ecff5f36e65ee"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/11042c4b459d5f05": {
+    "link_text": [
+     "Bernalillo County Seniors 50+ Food Pantry Flyer (pdf)"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/council-district-6-highlights/resolveuid/f8b8572d716b4235be0ecff5f36e65ee"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/39395977f639746c": {
+    "link_text": [
+     "Tower Blvd Median Improvements Completed"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-3/district-3-projects",
+     "https://www.cabq.gov/council/find-your-councilor/district-3/district-3/resolveuid/b1a0d10741d8631da18cd62ab73b4ade",
+     "https://www.cabq.gov/council/projects/neighborhood-projects/neighborhood-projects/resolveuid/b1a0d10741d8631da18cd62ab73b4ade"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/53122a64efa52910": {
+    "link_text": [
+     "View the photos of the evening."
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-9/news/albuquerque-lights-up-blue-and-green-to-kick-off-donate-life-month-and-raise-ald-awareness"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/6d78f9eee27abdc2": {
+    "link_text": [
+     "Bernalillo County Food Impact Team Food Resources"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/council-district-6-highlights/resolveuid/f8b8572d716b4235be0ecff5f36e65ee"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/77375fbe0f6572e7": {
+    "link_text": [
+     "View photos from the 2025 Angel Tree Lighting"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-8/news/city-leaders-and-guardians-of-the-children-gather-to-commemorate-young-lives-at-10th-annual-angel-tree-lighting"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/7ad678a86cd956d0": {
+    "link_text": [
+     "TreeNM 2024 La Mesa Neighborhood Final Report"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/council-district-6-highlights/resolveuid/380b72a3ed2347c9b1982bae1b0b154d"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/87bb2c6f50d4dd7a": {
+    "link_text": [
+     "August 4, 2026 Agenda"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/african-american-advisory-board-aaab"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/891435ba241e7320": {
+    "link_text": [
+     "2026 Singing Arrow Multicultural Arts Festival"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-9/news/albuquerque-communities-celebrate-global-cultures-at-singing-arrow-multicultural-arts-festival"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/90d99c869c0dce30": {
+    "link_text": [
+     "Participatory Budgeting Project Selection Reveal Presentation from May 3, 2025"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/council-district-6-highlights/resolveuid/f7c83d59ce1249678bdf02f248eb5804"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/abb5ef26df521d07": {
+    "link_text": [
+     "Road Runner Food Bank Step-by-Step Guide for Finding Food Assistance (pdf)"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/council-district-6-highlights/resolveuid/f8b8572d716b4235be0ecff5f36e65ee"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/b9d73a3409003638": {
+    "link_text": [
+     "photos from this year’s “Touch-a-Truck” 2026"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-9/news/fifth-annual-touch-a-truck-event-draws-record-crowds-to-east-albuquerque-for-hands-on-summer-kickoff"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/bea99eddf1a7a6aa": {
+    "link_text": [
+     "proposed amendments"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-1/news/city-councilor-stephanie-telles-opposes-advancement-of-whistleblower-ordinance-without-key-accountability-amendments"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/c853e6c4de4dec8d": {
+    "link_text": [
+     "Albuquerque Food Donation Guide for Restaurants and Caterers"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/council-district-6-highlights/resolveuid/f8b8572d716b4235be0ecff5f36e65ee"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/f0c0455b7ccf8d57": {
+    "link_text": [
+     "more photos of the Ceremony and the Workshop"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-6/news/fresh-food-and-local-democracy-bloom-city-officials-and-community-celebrate-grand-opening-of-the-peoples-market-in-the-international-district"
+    ]
+   },
+   "https://sfftp.cabq.gov/f/f46295dffdae49d6": {
+    "link_text": [
+     "July 2, 2025 letter to City Mayor Tim Keller"
+    ],
+    "linked_from": [
+     "https://www.cabq.gov/council/find-your-councilor/district-6/news/old-carlisle-village-cleaners-site-qualifies-for-epas-priority-funding"
+    ]
+   }
+  },
+  "what_that_does_not_mean": "It does not mean those files are not City documents, and it does not mean they are gone. They are recorded above with their link text and their linking page, so the decision can be revisited without running the sweep again."
+ },
+ "the_owner_reviewed_the_three_and_reversed_one": {
+  "what_happened": "This lane recommended all three retrieved files for addition. The repository owner then reviewed them and rejected one - the drinking water briefing - as a low-value slide deck, and confirmed the other two.",
+  "it_was_never_added_anywhere": "Checked before the reversal: the file appears in no record of master-inventory.json by checksum or URL, nowhere in r2-inventory.json, and nowhere in site content. It existed only as a recommendation in this artifact, which is the whole point of a research lane writing recommendations rather than records.",
+  "what_the_owner_wants_instead": "The Consumer Confidence Report itself, when it is found. Recorded as a wanted document below.",
+  "and_the_reason_the_other_deck_was_confirmed": "The Main Street Corridor briefing is kept **because** it is a briefing. In the owner's words, it shows how these initiatives develop and are presented to the public by city employees. That is a different kind of value from the document an initiative eventually produces, and the archive wants it.",
+  "the_principle_this_settles": "A briefing deck is not automatically lesser than the document it describes. It is kept when it is itself the record of a public process - who presented what, to whom, when - and not kept when it is only a summary of a document the archive should hold directly. The drinking water deck is the second kind; the Main Street deck is the first.",
+  "where_this_bears_on_earlier_lanes": "Several rows in this run carry a caution that a deck is not the document it describes - the Sandia meeting presentation, the DRB transition briefing, the redistricting consultant briefings. Those cautions remain correct as statements of what the files are. This principle says they are not, by themselves, reasons to exclude. None of those rows is changed here; the reasoning is recorded so the owner can apply it if they wish."
+ },
+ "documents_this_lane_wants_and_did_not_find": [
+  {
+   "what": "The 2025 Drinking Water Consumer Confidence Report itself, as published.",
+   "why": "The briefing retrieved here describes it; the archive should hold the report, not the description.",
+   "where_it_will_not_be": "On a City path. Its publisher is the Albuquerque Bernalillo County Water Utility Authority, a separate authority, and no URL in master-inventory.json points at it.",
+   "how_it_came_to_be_wanted": "The owner rejected the briefing and named the report as the thing worth having."
+  }
+ ],
+ "the_two_retrieved_and_recommended": {
+  "count": 2,
+  "combined_bytes": 14439260,
+  "why_the_main_street_deck_is_kept": "Not despite being a briefing but because of it. It records a Council planner presenting a Comprehensive Plan amendment to the public on a named date - how the initiative was explained, and by whom. The adopted amendment, if it exists, is a separate document and is not in the inventory.",
+  "the_other_names_itself_differently_from_its_file": "Laurelwood Median and Parkways NA Presentation is the filename; the document is titled a Conceptual Study. Same pattern this run met throughout the MasterDevelopmentPlans directory: title from the document, not the filename."
+ },
+ "the_finding_that_outlasts_this_lane": {
+  "what": "One of the 21 links is an agenda - the African American Advisory Board's agenda for 4 August 2026, published through the file share.",
+  "why_it_matters": "This run invoked the missing-minutes exception four times, each after searching official pages and finding no minutes. A document published through this host looks like a web page to every check those reviews ran. I am not claiming that is what happened for the MPRAB, the EDAct committee or the LGCC; I am recording that my searches could not have distinguished it, and that any future missing-minutes review must check for sfftp.cabq.gov links before concluding nothing was published.",
+  "recommended_action": "Treat an sfftp.cabq.gov URL as a document needing manual retrieval, never as a web page - in discovery, in link checking, and in any exhaustive-search claim."
+ },
+ "how_these_bytes_were_obtained": {
+  "who_retrieved_them": "The repository owner, through a browser.",
+  "what_i_did": "Measured the three files as staged: byte length, SHA-256, leading bytes, container from the bytes, page or slide count, end-of-file marker, and their text.",
+  "the_limitation_this_leaves": "URL and bytes were not verified in one act, as they were everywhere else in this run. I can attest the files are what they say they are and that nothing in the archive matches them; I cannot independently attest they came from the URLs on these rows.",
+  "what_would_strengthen_it": "A second retrieval by anyone else reproducing these checksums."
+ },
+ "already_archived_check": {
+  "rule_applied": "All three checksums swept against every checksummed inventory record and every row of every saved artifact, and all three share URLs against every inventory URL.",
+  "all_checksummed_records_compared_against": 1460,
+  "archived_records_compared_against": 1020,
+  "artifact_rows_compared_against": 2799,
+  "cross_inventory_byte_collisions": 0,
+  "collisions_with_earlier_artifacts": 0,
+  "cross_inventory_url_collisions": 0,
+  "result": "All three are new to the archive by checksum and by URL."
+ },
+ "duplicate_and_supersession_checks": {
+  "internal_byte_collisions": 0,
+  "note": "The three are different documents with different checksums."
+ },
+ "integration_flags": [
+  {
+   "severity": "method-gap-now-closed",
+   "affects": [],
+   "finding": "Both link harvests filtered by file extension and therefore discarded every extensionless share URL. At least 21 file-share documents were linked from pages the harvests parsed and none was reported.",
+   "recommended_action": "Sweep for known document hosts by hostname as well as by filename shape."
+  },
+  {
+   "severity": "owner-rejected-after-retrieval",
+   "affects": [
+    "fss-002"
+   ],
+   "finding": "The drinking water briefing was retrieved, recommended by this lane, and then rejected by the repository owner as a low-value slide deck. It was never added to any record.",
+   "recommended_action": "Do not add. Seek the Consumer Confidence Report itself, which is published by ABCWUA rather than the City and is in no inventory record."
+  },
+  {
+   "severity": "wanted-document",
+   "affects": [],
+   "finding": "The 2025 Drinking Water Consumer Confidence Report is not in the inventory and is what the archive actually wants.",
+   "recommended_action": "Add it to the discovery queue against ABCWUA, not against a City path."
+  },
+  {
+   "severity": "provenance-is-weaker-here",
+   "affects": [
+    "fss-001",
+    "fss-002",
+    "fss-002"
+   ],
+   "finding": "These bytes were retrieved by a person through a browser, not by a fetch I performed.",
+   "recommended_action": "Carry the provenance note with each record."
+  },
+  {
+   "severity": "never-verifiable-by-refetch",
+   "affects": [
+    "fss-001",
+    "fss-002",
+    "fss-002"
+   ],
+   "finding": "All three authoritative URLs return 1,344 bytes of application shell to any fetch.",
+   "recommended_action": "Mark these records as not verifiable by re-fetch, or the next verification pass will flag them as failures."
+  },
+  {
+   "severity": "affects-every-exhaustive-search-claim",
+   "affects": [],
+   "finding": "A City advisory board publishes its agenda through this host, where it is indistinguishable from a web page to any automated check.",
+   "recommended_action": "Any future missing-minutes or exhaustive-source review must check for sfftp.cabq.gov links before concluding nothing was published."
+  }
+ ],
+ "counts": {
+  "share_links_found": 21,
+  "already_retrieved_in_an_earlier_lane": 2,
+  "retrieved_and_recommended_here": 2,
+  "retrieved_and_rejected_by_the_owner": 1,
+  "not_retrieved_reviewed_by_the_owner": 16
+ },
+ "link_check": {
+  "checked": 3,
+  "method": "Not applicable in the usual form: every share URL returns HTTP 200 with 1,344 bytes of application shell. The documents were retrieved through a browser instead.",
+  "integrity": "All three measured from the staged bytes; both PDFs carry their end-of-file marker and the deck's slide count was read from its ppt/slides parts."
+ },
+ "add_to_inventory": [
+  {
+   "local_ref": "fss-001",
+   "inventory_id": null,
+   "recommendation": "add to the inventory as a new candidate",
+   "authoritative_url": "https://sfftp.cabq.gov/f/d233d7ecf3d2305b",
+   "the_page_that_links_it": "https://www.cabq.gov/council/find-your-councilor/district-9/district-9-projects/district-9-street-improvement-projects/expanding-the-main-street-corridor-along-historic-route-66",
+   "how_it_is_labelled_on_that_page": [
+    "Main Street Corridor Presentation"
+   ],
+   "title": "Comprehensive Plan amendment briefing: the Main Street Corridor and East Central, 6 May 2026",
+   "group": "comprehensive plan",
+   "description": "A Council Services briefing on amending the Albuquerque Bernalillo County Comprehensive Plan to apply the Main Street Corridor designation to East Central, explaining what that designation means and how it differs from the separate New Mexico Main Street programme.",
+   "evidence": "12,468,797 bytes, a PowerPoint deck of 20 slides, read from its ppt/slides parts. Slide 1 reads May 6th, 2026, Main Street Corridor, Albuquerque Bernalillo County Comprehensive Plan, City Council Services, Deepa Bansal - Council Planner. Later slides distinguish the Comp Plan's Main Street Corridor from the New Mexico Economic Development Department's Main Street programme, and quote the Plan's own description of such a corridor as lively, highly walkable and characterised by local-serving businesses.",
+   "description_word_count": 39,
+   "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+   "cross_listings": [
+    {
+     "page": "content/development-land-use/zoning-ido.md",
+     "reason": "A corridor designation the code applies."
+    },
+    {
+     "page": "content/development-land-use/redevelopment-plans.md",
+     "reason": "It governs redevelopment along East Central."
+    }
+   ],
+   "caution": "A briefing deck, not the amendment itself - and kept for that reason, not in spite of it. It records how the initiative was presented to the public and by which City employee, on a named date. If the adopted amendment exists it is a separate document and is not in the inventory.",
+   "provenance": "Retrieved through a browser by the repository owner from the share URL on this row, and placed in research/staging/document-review. I measured the file as staged. I did not perform the retrieval and cannot independently attest that these bytes came from that URL.",
+   "what_must_be_archived": "The retrieved file. This authoritative_url returns 1,344 bytes of application shell to any fetch, so the recorded size and checksum can never be reproduced from it.",
+   "filename_as_downloaded": "Comp Plan Amendment - Main Street Corridor- East Central.pptx",
+   "size_bytes": 12468797,
+   "checksum_sha256": "dfc3e3409cf7d079c3ce687b8ef58cfddad9a233b11db7ac6c14b9c981d4daae",
+   "leading_bytes": "504b0304",
+   "content_kind": "PPTX",
+   "slide_count": 20
+  },
+  {
+   "local_ref": "fss-002",
+   "inventory_id": null,
+   "recommendation": "add to the inventory as a new candidate",
+   "authoritative_url": "https://sfftp.cabq.gov/f/4e6493bae484de6a",
+   "the_page_that_links_it": "https://www.cabq.gov/council/find-your-councilor/district-1/district-1-projects/laurelwood-median-rehabilitation-project",
+   "how_it_is_labelled_on_that_page": [
+    "Laurelwood Median and Parkway Conceptual Study"
+   ],
+   "title": "Laurelwood Median and Parkway conceptual landscape and irrigation study, April 2025",
+   "group": "roadway landscape studies",
+   "description": "The Department of Municipal Development's conceptual study for landscape and irrigation improvements to the Laurelwood median and parkway between Ladera Drive NW and Hanover Road, covering existing conditions, design analysis and the options considered.",
+   "evidence": "1,970,463 bytes, 14 pages, complete to its end marker. Its cover reads LAURELWOOD MEDIAN AND PARKWAY CONCEPTUAL LANDSCAPE AND IRRIGATION IMPROVEMENTS, LADERA DR. NW TO HANOVER RD., Laurelwood Median and Parkway Conceptual Study, Department of Municipal Development, April 2025, followed by a table of contents running from median existing conditions through design opportunities.",
+   "description_word_count": 34,
+   "proposed_canonical_page": "content/transportation/roadway-projects/_index.md",
+   "cross_listings": [
+    {
+     "page": "content/public-works/parks-recreation.md",
+     "reason": "Median and parkway landscaping."
+    }
+   ],
+   "caution": "Its filename calls it an NA Presentation - the version shown to a neighbourhood association. The document itself is titled a conceptual study. Title it from the document and note the audience.",
+   "provenance": "Retrieved through a browser by the repository owner from the share URL on this row, and placed in research/staging/document-review. I measured the file as staged. I did not perform the retrieval and cannot independently attest that these bytes came from that URL.",
+   "what_must_be_archived": "The retrieved file. This authoritative_url returns 1,344 bytes of application shell to any fetch, so the recorded size and checksum can never be reproduced from it.",
+   "filename_as_downloaded": "Laurelwood Median and Parkways NA Presentation_2025.04.02.pdf",
+   "size_bytes": 1970463,
+   "checksum_sha256": "56cb50d16140183a81b8e8552d22ab4400752ab77e6ecc922a48a3e285ac8ec7",
+   "leading_bytes": "25504446",
+   "content_kind": "PDF",
+   "complete_to_its_end_marker": true,
+   "page_count": 14
+  }
+ ],
+ "do_not_add": [
+  {
+   "local_ref": "fss-002",
+   "inventory_id": null,
+   "authoritative_url": "https://sfftp.cabq.gov/f/d425b5e959e99dd7",
+   "the_page_that_links_it": "https://www.cabq.gov/council/find-your-councilor/albuquerque-city-councilors/resolveuid/c48ff3b276da4bafab0179cab6d5409c",
+   "how_it_is_labelled_on_that_page": [
+    "2025 Drinking Water Consumer Confidence Report for 2025"
+   ],
+   "provenance": "Retrieved through a browser by the repository owner from the share URL on this row, and placed in research/staging/document-review. I measured the file as staged. I did not perform the retrieval and cannot independently attest that these bytes came from that URL.",
+   "filename_as_downloaded": "D8-ABCWUA  2025 Water Quality Report-05.21.2026.pdf",
+   "size_bytes": 1220118,
+   "checksum_sha256": "87440abbf7cac0efa31579c7c063c1d22f9e5bc0d22c529f3a8a8d31f3923313",
+   "leading_bytes": "25504446",
+   "content_kind": "PDF",
+   "complete_to_its_end_marker": true,
+   "page_count": 13,
+   "recommendation": "do not add",
+   "title_for_reference": "Briefing on the 2025 Drinking Water Consumer Confidence Report, May 2026",
+   "what_it_is": "A 13-page slide deck walking an audience through what the federally required annual drinking water quality report covers.",
+   "why_not": "The repository owner reviewed it after retrieval and determined it does not meet the standard for the site: a low-value slide deck. The document the archive actually wants is the Consumer Confidence Report itself, which this is not and which is not in the inventory.",
+   "category": "briefing deck superseded by a document that should be sought instead",
+   "package": "owner_rejected",
+   "what_should_be_sought_instead": "The 2025 Drinking Water Consumer Confidence Report as published - the EPA-required annual report itself. Its publisher is the Albuquerque Bernalillo County Water Utility Authority, a separate authority from the City, so it will not be found on a City path. It is not in master-inventory.json under any URL.",
+   "and_this_is_why_the_distinction_mattered": "This lane recorded that the file is a briefing about the report and not the report, against the link text on the City page which calls it the report. Had it been catalogued under that link text, the decision now taken could not have been taken: the archive would have believed it already held what it is still missing."
+  }
+ ],
+ "archival_note": "None of the 2 proposed additions is a candidate yet. Each remains inventory-only until an R2 archive object exists and its public download, exact size, SHA-256 and authoritative-source provenance are verified - and for these, provenance verification cannot mean re-fetching the URL. Combined footprint if all are archived: 14,439,260 bytes.",
+ "a_note_on_what_was_not_added": "The drinking water briefing is in do_not_add. It was measured, recommended, reviewed by the owner and rejected, all before any record existed. Its measurements are kept so the decision is reversible without retrieving it again.",
+ "integration_note": "Codex integration lane: this artifact creates nothing and changes nothing. Every row carries inventory_id: null, the share URL, the page that links it, the text that page uses, the measured size and checksum of the retrieved file, and a provenance note that must travel with the record.",
+ "shared_state_written": [],
+ "classification_only": true,
+ "safeguards": [
+  "no master-inventory.json write",
+  "no checkpoint.json write",
+  "no r2-inventory.json write",
+  "no site content change",
+  "no R2 upload",
+  "no commit, merge, or deploy",
+  "no terminal record modified",
+  "no inventory candidate created",
+  "staged files read only, not moved or altered"
+ ]
+}

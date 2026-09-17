@@ -1,0 +1,3304 @@
+{
+ "batch_id": "fire-monthly-reports-research-2026-09-15",
+ "lane": "Claude research lane: the fire/documents slice of the third link harvest",
+ "generated_at": "2026-09-15T19:08:22.686967+00:00",
+ "date_note": "Dated 2026-09-15.",
+ "THIS_ARTIFACT_IS_NOT_A_TRIAGE_OF_CANDIDATES": {
+  "what_that_means": "None of these files has an inventory id. Every row carries inventory_id: null and a recommendation rather than a recommended_status.",
+  "so_it_cannot_be_applied_the_usual_way": "Update-Candidate.ps1 cannot act on any row here."
+ },
+ "cluster": "Albuquerque Fire Rescue's Monthly Informational Reports: the department's report on its call volumes, call types and emergency medical statistics, published month by month. No lane in this run had touched the fire department.",
+ "where_they_came_from": {
+  "the_linking_page": "https://www.cabq.gov/fire/copy_of_reports",
+  "that_page_is_itself_an_inventory_record": "src-6260059ea0d144b3, status validated. The archive already holds the page that links all 81 reports and held none of the reports.",
+  "the_page_links_exactly_these": "It links exactly 81 monthly reports, and they are exactly the 81 in this slice.",
+  "and_nine_more_it_already_had": "The same page links nine fire department annual reports, 2014 to 2022, all already inventory records. The annual reports were collected; the monthly ones were not."
+ },
+ "the_series": {
+  "reports": 81,
+  "first_period": "February 2018",
+  "last_period": "October 2024",
+  "one_report_per_month": true,
+  "gaps_inside_the_span": [],
+  "coverage_by_year": {
+   "2018": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "2019": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "2020": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "2021": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "2022": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "2023": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "2024": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  "period_checked_against_the_documents": "Every report's period was read from its own first page and compared with its filename: no disagreement in 80 of 81. The one with no text layer was read from its rendered cover.",
+  "what_is_not_published": "Nothing after October 2024 appears on the page, and November and December 2024 return HTTP 404 at the predictable filenames. Whether the series stopped or moved, this page does not say."
+ },
+ "the_2018_two_month_labels": {
+  "what": "Seven 2018 reports are titled with a two-month span - February-March, March-April, April-May, May-June, June-July, July-August, August-September - before single-month titles begin in September 2018.",
+  "why_this_is_not_overlapping_coverage": "Counting whole-word month names in each report's text, every two-month report is dominated by its first-named month, and the single-month September 2018 report has the same shape. Counts: feb-mar-mir-2018.pdf FEBRUARY 14, MARCH 2; march-april-mir-2018.pdf MARCH 21, APRIL 11; may-june-mir-2018.pdf MAY 29, JUNE 12; june-july-mir-2018.pdf JUNE 25, JULY 20; july-august-mir-2018.pdf JULY 28, AUGUST 12; august-september-mir-2018.pdf AUGUST 32, SEPTEMBER 11; september-mir-2018.pdf SEPTEMBER 24, OCTOBER 10.",
+  "the_reading": "Consistent with each report covering its first-named month, the second month being when it was prepared or presented. That is an inference from counts, not a page-by-page verification, and each two-month row keeps the span exactly as published.",
+  "what_it_does_to_the_series": "Read that way, 2018 runs February to December with no month twice and none missing."
+ },
+ "two_issues_of_april_2020": {
+  "what": "The page links mir-april-2020-1.pdf. Probing the same name without -1 returned a different file: mir-april-2020.pdf, 8,925,770 bytes against the linked 13,139,371, both 18 pages.",
+  "how_they_differ": "12 pages have identical text by position; the rest do not. Page 1 of the unlinked issue is headed MARCH CALLS under an April 2020 title, where the linked issue reads APRIL CALLS, and the linked issue carries division-update pages the earlier one lacks.",
+  "the_decision": "The linked issue is the record. The earlier issue is recorded in do_not_add as superseded, with its full measurement, so the decision can be reversed without fetching it again - the same treatment this run gave the draft fiscal 2021 stormwater report."
+ },
+ "the_variant_filenames": {
+  "what": "Thirteen filenames carry a variant marker - -v2, -1, final, updated-final, lr, all-pages, no-pages. For each, the name without the marker was probed.",
+  "result": "Only one earlier or fuller version exists: April 2020. Every other probe returned HTTP 404. So the low-resolution 'lr' copies are the only form in which those months are published, and each carries a caution saying so.",
+  "probes": [
+   {
+    "name": "mir-august-2024.pdf",
+    "http_status": "404",
+    "bytes": 26
+   },
+   {
+    "name": "mir-december-2021.pdf",
+    "http_status": "404",
+    "bytes": 26
+   },
+   {
+    "name": "mir-june-2020.pdf",
+    "http_status": "404",
+    "bytes": 26
+   },
+   {
+    "name": "mir-april-2020.pdf",
+    "http_status": "200",
+    "bytes": 8925770
+   },
+   {
+    "name": "mir-october-2021.pdf",
+    "http_status": "404",
+    "bytes": 26
+   },
+   {
+    "name": "mir-october-2021-final.pdf",
+    "http_status": "404",
+    "bytes": 26
+   },
+   {
+    "name": "mir-july-2019.pdf",
+    "http_status": "404",
+    "bytes": 26
+   },
+   {
+    "name": "mir-december-2022.pdf",
+    "http_status": "404",
+    "bytes": 26
+   },
+   {
+    "name": "mir-february-2022.pdf",
+    "http_status": "404",
+    "bytes": 26
+   },
+   {
+    "name": "mir-february-2023.pdf",
+    "http_status": "404",
+    "bytes": 26
+   },
+   {
+    "name": "mir-november-2022.pdf",
+    "http_status": "404",
+    "bytes": 26
+   },
+   {
+    "name": "mir-march-2023.pdf",
+    "http_status": "404",
+    "bytes": 26
+   },
+   {
+    "name": "mir-april-2023.pdf",
+    "http_status": "404",
+    "bytes": 26
+   },
+   {
+    "name": "mir-may-2023.pdf",
+    "http_status": "404",
+    "bytes": 26
+   },
+   {
+    "name": "mir-november-2024.pdf",
+    "http_status": "404",
+    "bytes": 26
+   },
+   {
+    "name": "mir-december-2024.pdf",
+    "http_status": "404",
+    "bytes": 26
+   },
+   {
+    "name": "mir-nov-2024.pdf",
+    "http_status": "404",
+    "bytes": 26
+   },
+   {
+    "name": "mir-dec-2024.pdf",
+    "http_status": "404",
+    "bytes": 26
+   },
+   {
+    "name": "mir-january-2025.pdf",
+    "http_status": "404",
+    "bytes": 26
+   },
+   {
+    "name": "mir-january-2018.pdf",
+    "http_status": "404",
+    "bytes": 26
+   },
+   {
+    "name": "january-mir-2018.pdf",
+    "http_status": "404",
+    "bytes": 26
+   }
+  ],
+  "probed_at": "2026-09-15T19:05Z"
+ },
+ "a_month_that_says_it_is_incomplete": {
+  "what": "The March 2023 report states on its first page that, due to technical issues in data reporting, unit response and alarm reason data for March are not included, and that the issues were expected to be resolved.",
+  "why_it_is_recorded": "So that anyone comparing months knows the March 2023 figures are incomplete by the department's own account."
+ },
+ "method": "Took the 81 fire/documents files from the third harvest's genuinely new set, compared the reports page's links with the slice, read each report's period from its own first page and compared it with the filename, rendered the one with no text layer, counted month names across the 2018 reports, probed the name without each variant marker, fetched and compared the one earlier issue that exists, and swept every checksum against all checksummed inventory records and every saved artifact row.",
+ "classification_only": true,
+ "shared_state_written": [],
+ "already_archived_check": {
+  "rule_applied": "For proposed additions, test against every inventory record rather than only the archived ones, and by URL as well as by checksum.",
+  "cross_inventory_byte_collisions": 0,
+  "cross_inventory_url_collisions": 0,
+  "collisions_with_earlier_artifacts_in_this_run": 0,
+  "internal_byte_collisions": 0,
+  "all_checksummed_records_compared_against": 1460,
+  "archived_records_compared_against": 1020,
+  "inventory_urls_compared_against": 5727,
+  "artifact_rows_compared_against": 2888,
+  "result": "Nothing in this slice, and not the earlier April 2020 issue, is already held or already decided."
+ },
+ "duplicate_and_supersession_checks": {
+  "internal_byte_collisions": 0,
+  "supersession_found": 1,
+  "note": "No two files are byte-identical. One supersession: the unlinked earlier issue of April 2020."
+ },
+ "integration_flags": [
+  {
+   "severity": "not-applicable-through-update-candidate",
+   "affects": [],
+   "finding": "No file in this artifact has an inventory id.",
+   "recommended_action": "Create them as candidates first; they then fall under the ordinary archival gate."
+  },
+  {
+   "severity": "substantive-find",
+   "affects": [
+    "h3-0686",
+    "h3-0687",
+    "h3-0688",
+    "h3-0689",
+    "h3-0690",
+    "h3-0691",
+    "h3-0692",
+    "h3-0693",
+    "h3-0694",
+    "h3-0695",
+    "h3-0696",
+    "h3-0697",
+    "h3-0698",
+    "h3-0699",
+    "h3-0700",
+    "h3-0701",
+    "h3-0702",
+    "h3-0703",
+    "h3-0704",
+    "h3-0705",
+    "h3-0706",
+    "h3-0707",
+    "h3-0708",
+    "h3-0709",
+    "h3-0710",
+    "h3-0711",
+    "h3-0712",
+    "h3-0713",
+    "h3-0714",
+    "h3-0715",
+    "h3-0716",
+    "h3-0717",
+    "h3-0718",
+    "h3-0719",
+    "h3-0720",
+    "h3-0721",
+    "h3-0722",
+    "h3-0723",
+    "h3-0724",
+    "h3-0725",
+    "h3-0726",
+    "h3-0727",
+    "h3-0728",
+    "h3-0729",
+    "h3-0730",
+    "h3-0731",
+    "h3-0732",
+    "h3-0733",
+    "h3-0734",
+    "h3-0735",
+    "h3-0736",
+    "h3-0737",
+    "h3-0738",
+    "h3-0739",
+    "h3-0740",
+    "h3-0741",
+    "h3-0742",
+    "h3-0743",
+    "h3-0744",
+    "h3-0745",
+    "h3-0746",
+    "h3-0747",
+    "h3-0748",
+    "h3-0749",
+    "h3-0750",
+    "h3-0751",
+    "h3-0752",
+    "h3-0753",
+    "h3-0754",
+    "h3-0755",
+    "h3-0756",
+    "h3-0757",
+    "h3-0758",
+    "h3-0759",
+    "h3-0760",
+    "h3-0761",
+    "h3-0762",
+    "h3-0763",
+    "h3-0764",
+    "h3-0765",
+    "h3-0766"
+   ],
+   "finding": "A complete monthly series from the fire department, February 2018 to October 2024, 81 reports and none in the inventory - while the page that links them is a validated inventory record.",
+   "recommended_action": "Add the series together; it is only fully useful as a continuous run."
+  },
+  {
+   "severity": "superseded-issue",
+   "affects": [
+    "fire-extra-001"
+   ],
+   "finding": "An earlier April 2020 issue is still on the server, unlinked, with a page-1 heading that the linked issue corrects.",
+   "recommended_action": "Keep the linked issue; do not add the earlier one unless the archive keeps superseded issues."
+  },
+  {
+   "severity": "incomplete-month",
+   "affects": [
+    "h3-0740"
+   ],
+   "finding": "The March 2023 report omits unit response and alarm reason data by its own statement.",
+   "recommended_action": "Carry the omission onto the record."
+  },
+  {
+   "severity": "low-resolution-only",
+   "affects": [
+    "h3-0708",
+    "h3-0717",
+    "h3-0719",
+    "h3-0720",
+    "h3-0740",
+    "h3-0746",
+    "h3-0750"
+   ],
+   "finding": "Several months are published only as low-resolution copies; the full-resolution names return 404.",
+   "recommended_action": "Archive them as published and record that no full-resolution copy was found."
+  },
+  {
+   "severity": "series-end-unknown",
+   "affects": [],
+   "finding": "Nothing after October 2024 is on the reports page, and November and December 2024 return 404.",
+   "recommended_action": "Check whether the series continues elsewhere before recording it as ended."
+  }
+ ],
+ "counts": {
+  "reviewed": 82,
+  "add_to_the_inventory_as_a_new_candidate": 81,
+  "do_not_add": 1,
+  "by_group": {
+   "fire rescue monthly informational reports": 81
+  }
+ },
+ "add_to_inventory": [
+  {
+   "local_ref": "h3-0686",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/april-may-mir-2018.pdf",
+   "filename": "april-may-mir-2018.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 10087267,
+   "checksum_sha256": "ccc1b916fcc31c0edf9a31ddf1aad5470851d174257e033e503ca773db40ac19",
+   "page_count": 23,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Department, Monthly Informational Report, April-May 2018",
+   "report_period": {
+    "year": 2018,
+    "month": 4,
+    "labelled_as_two_months": true,
+    "period_verified_against": "the rendered cover"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Department monthly informational report for April-May 2018, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "10,087,267 bytes, 23 pages, with no text layer on any page, so it was read by rendering. Its cover reads ALBUQUERQUE FIRE DEPARTMENT, MONTHLY INFORMATIONAL REPORT, APRIL - MAY 2018, Presented to the City of Albuquerque, Mayor Tim Keller and City Council Members.",
+   "quoted_opening": "ALBUQUERQUE FIRE DEPARTMENT, MONTHLY INFORMATIONAL REPORT, APRIL - MAY 2018, Presented to the City of Albuquerque, Mayor Tim Keller and City Council Members",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ],
+   "caution": "Titled with a two-month span; see the_2018_two_month_labels. Record the span as published."
+  },
+  {
+   "local_ref": "h3-0687",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/april-mir-2019.pdf",
+   "filename": "april-mir-2019.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 4365228,
+   "checksum_sha256": "0e998945418cba3087fd56888b8dae308d578a437b9b3456a2c78bc0193a687f",
+   "page_count": 11,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, April 2019",
+   "report_period": {
+    "year": 2019,
+    "month": 4,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for April 2019, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "4,365,228 bytes, 11 pages, complete to its end marker. Page 1 opens: APRIL 2019 MONTHLY INFORMATIONAL REPORT SIGNIFICANT EVENTS 4/4 - Residential Fire: AFR res.",
+   "quoted_opening": "APRIL 2019 MONTHLY INFORMATIONAL REPORT SIGNIFICANT EVENTS 4/4 - Residential Fire: AFR res",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0688",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/august-mir-2019.pdf",
+   "filename": "august-mir-2019.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 2937974,
+   "checksum_sha256": "9b307fd136b66f8288f832d76b0564be16448a868e470ff4015762a8831e41b1",
+   "page_count": 15,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, August 2019",
+   "report_period": {
+    "year": 2019,
+    "month": 8,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for August 2019, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "2,937,974 bytes, 15 pages, complete to its end marker. Page 1 opens: AUGUST 2019 MONTHLY INFORMATIONAL REPORT TOTAL CALLS AUGUST 2019 TOP 10 MEDICAL CALLS 2019.",
+   "quoted_opening": "AUGUST 2019 MONTHLY INFORMATIONAL REPORT TOTAL CALLS AUGUST 2019 TOP 10 MEDICAL CALLS 2019",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0689",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/august-september-mir-2018.pdf",
+   "filename": "august-september-mir-2018.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 4411914,
+   "checksum_sha256": "3d7f5f10aaff72f5aeca520003efc1e9f5437919cc7d7c5b4a66639608238f9b",
+   "page_count": 24,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, August-September 2018",
+   "report_period": {
+    "year": 2018,
+    "month": 8,
+    "labelled_as_two_months": true,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for August-September 2018, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "4,411,914 bytes, 24 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT AUGUST - SEPTEMBER 2018 Presented to.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT AUGUST - SEPTEMBER 2018 Presented to",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ],
+   "caution": "Titled with a two-month span; see the_2018_two_month_labels. Record the span as published."
+  },
+  {
+   "local_ref": "h3-0690",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/december-mir-2018.pdf",
+   "filename": "december-mir-2018.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 3944835,
+   "checksum_sha256": "0ae64c86fb038d9a1bd5a7649f16f1791c9d3b0f757d5a099e59f43c6b9a215c",
+   "page_count": 10,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, December 2018",
+   "report_period": {
+    "year": 2018,
+    "month": 12,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for December 2018, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "3,944,835 bytes, 10 pages, complete to its end marker. Page 1 opens: DECEMBER 2018 MONTHLY INFORMATIONAL REPORT SIGNIFICANT EVENTS 12/7 - Residential Fire: AFR.",
+   "quoted_opening": "DECEMBER 2018 MONTHLY INFORMATIONAL REPORT SIGNIFICANT EVENTS 12/7 - Residential Fire: AFR",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0691",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/december-mir-2019.pdf",
+   "filename": "december-mir-2019.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 7098383,
+   "checksum_sha256": "46aa13e9f24ad9b6750fcbdedd52e855a21e5eb8408f6771bc0982fde26847ad",
+   "page_count": 18,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, December 2019",
+   "report_period": {
+    "year": 2019,
+    "month": 12,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for December 2019, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "7,098,383 bytes, 18 pages, complete to its end marker. Page 1 opens: DECEMBER 2019 MONTHLY INFORMATIONAL REPORT DECEMBER CALLS TOTAL CALLS TOP 5 FIRE CALLS TOP.",
+   "quoted_opening": "DECEMBER 2019 MONTHLY INFORMATIONAL REPORT DECEMBER CALLS TOTAL CALLS TOP 5 FIRE CALLS TOP",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0692",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/feb-mar-mir-2018.pdf",
+   "filename": "feb-mar-mir-2018.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 3429402,
+   "checksum_sha256": "8f4c1e5573e0216ec4153c775fa8e5af566d3d50e70b3be00f5df79f72c03ac6",
+   "page_count": 32,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Department, Monthly Informational Report, February-March 2018",
+   "report_period": {
+    "year": 2018,
+    "month": 2,
+    "labelled_as_two_months": true,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Department monthly informational report for February-March 2018, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "3,429,402 bytes, 32 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE DEPARTMENT Monthly Informational Report February � March 2018 Fire Chief.",
+   "quoted_opening": "ALBUQUERQUE FIRE DEPARTMENT Monthly Informational Report February � March 2018 Fire Chief",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ],
+   "caution": "Titled with a two-month span; see the_2018_two_month_labels. Record the span as published."
+  },
+  {
+   "local_ref": "h3-0693",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/february-mir-2019.pdf",
+   "filename": "february-mir-2019.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 4162258,
+   "checksum_sha256": "d6014ce2811ce26ddfa448588a4966f8a135b5e15ee475b4fd52a371f2a0df4b",
+   "page_count": 10,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, February 2019",
+   "report_period": {
+    "year": 2019,
+    "month": 2,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for February 2019, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "4,162,258 bytes, 10 pages, complete to its end marker. Page 1 opens: FEBRUARY 2019 MONTHLY INFORMATIONAL REPORT SIGNIFICANT EVENTS 2/3 - Residential Fire: AFR.",
+   "quoted_opening": "FEBRUARY 2019 MONTHLY INFORMATIONAL REPORT SIGNIFICANT EVENTS 2/3 - Residential Fire: AFR",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0694",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/february-mir-2020.pdf",
+   "filename": "february-mir-2020.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 7150678,
+   "checksum_sha256": "466ee1dd2e9586128b71bb36d9646712aea035f720cb987ede83367e1a84f022",
+   "page_count": 20,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, February 2020",
+   "report_period": {
+    "year": 2020,
+    "month": 2,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for February 2020, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "7,150,678 bytes, 20 pages, complete to its end marker. Page 1 opens: FEBRUARY 2020 MONTHLY INFORMATIONAL REPORT FEBRUARY CALLS TOTAL CALLS TOP 5 FIRE CALLS TOP.",
+   "quoted_opening": "FEBRUARY 2020 MONTHLY INFORMATIONAL REPORT FEBRUARY CALLS TOTAL CALLS TOP 5 FIRE CALLS TOP",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0695",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/january-mir-2019.pdf",
+   "filename": "january-mir-2019.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 3420441,
+   "checksum_sha256": "d3c9dbbf5c0cfbd72edc26caaf30a0c81b2fe6fea72eb38e52cda75f151da161",
+   "page_count": 9,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, January 2019",
+   "report_period": {
+    "year": 2019,
+    "month": 1,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for January 2019, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "3,420,441 bytes, 9 pages, complete to its end marker. Page 1 opens: JANUARY 2019 MONTHLY INFORMATIONAL REPORT SIGNIFICANT EVENTS 1/16 - Residential Fire: AFR.",
+   "quoted_opening": "JANUARY 2019 MONTHLY INFORMATIONAL REPORT SIGNIFICANT EVENTS 1/16 - Residential Fire: AFR",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0696",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/january-mir-2020.pdf",
+   "filename": "january-mir-2020.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 7655270,
+   "checksum_sha256": "f09244a140eeb084c58af4b4cefc64a98a8cff9ffe3d3601fd3433892292d2e6",
+   "page_count": 21,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, January 2020",
+   "report_period": {
+    "year": 2020,
+    "month": 1,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for January 2020, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "7,655,270 bytes, 21 pages, complete to its end marker. Page 1 opens: JANUARY 2020 MONTHLY INFORMATIONAL REPORT JANUARY CALLS TOTAL CALLS TOP 5 FIRE CALLS TOP 1.",
+   "quoted_opening": "JANUARY 2020 MONTHLY INFORMATIONAL REPORT JANUARY CALLS TOTAL CALLS TOP 5 FIRE CALLS TOP 1",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0697",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/july-august-mir-2018.pdf",
+   "filename": "july-august-mir-2018.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 4007955,
+   "checksum_sha256": "5faa525fab2231b1a84a33a7f8d341d6434d090c9524ba866abe7286c789fd33",
+   "page_count": 25,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, July-August 2018",
+   "report_period": {
+    "year": 2018,
+    "month": 7,
+    "labelled_as_two_months": true,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for July-August 2018, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "4,007,955 bytes, 25 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JULY - AUGUST 2018 Presented to the C.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JULY - AUGUST 2018 Presented to the C",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ],
+   "caution": "Titled with a two-month span; see the_2018_two_month_labels. Record the span as published."
+  },
+  {
+   "local_ref": "h3-0698",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/june-july-mir-2018.pdf",
+   "filename": "june-july-mir-2018.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 3872621,
+   "checksum_sha256": "04872b79a3dc0b7281988271990d3ced903f3076437de87b3121529dfdbaeb1e",
+   "page_count": 23,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, June-July 2018",
+   "report_period": {
+    "year": 2018,
+    "month": 6,
+    "labelled_as_two_months": true,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for June-July 2018, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "3,872,621 bytes, 23 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JUNE - JULY 2018 Presented to the Cit.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JUNE - JULY 2018 Presented to the Cit",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ],
+   "caution": "Titled with a two-month span; see the_2018_two_month_labels. Record the span as published."
+  },
+  {
+   "local_ref": "h3-0699",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/march-april-mir-2018.pdf",
+   "filename": "march-april-mir-2018.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 2894943,
+   "checksum_sha256": "42aa8aee80361eab0b647cf642db1373217a5e6b01a77ac639223f403b71e256",
+   "page_count": 33,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Department, Monthly Informational Report, March-April 2018",
+   "report_period": {
+    "year": 2018,
+    "month": 3,
+    "labelled_as_two_months": true,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Department monthly informational report for March-April 2018, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "2,894,943 bytes, 33 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE DEPARTMENT MONTHLY INFORMATIONAL REPORT MARCH � APRIL 2018 Presented to t.",
+   "quoted_opening": "ALBUQUERQUE FIRE DEPARTMENT MONTHLY INFORMATIONAL REPORT MARCH � APRIL 2018 Presented to t",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ],
+   "caution": "Titled with a two-month span; see the_2018_two_month_labels. Record the span as published."
+  },
+  {
+   "local_ref": "h3-0700",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/march-mir-2019.pdf",
+   "filename": "march-mir-2019.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 3875244,
+   "checksum_sha256": "cc223ac111c907882074871997523ebff1560051da9c04b36b1730ed12942430",
+   "page_count": 11,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, March 2019",
+   "report_period": {
+    "year": 2019,
+    "month": 3,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for March 2019, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "3,875,244 bytes, 11 pages, complete to its end marker. Page 1 opens: MARCH 2019 MONTHLY INFORMATIONAL REPORT SIGNIFICANT EVENTS 3/2 - Motorcycle MVA: AFR respo.",
+   "quoted_opening": "MARCH 2019 MONTHLY INFORMATIONAL REPORT SIGNIFICANT EVENTS 3/2 - Motorcycle MVA: AFR respo",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0701",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/march-mir-2020.pdf",
+   "filename": "march-mir-2020.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 6968746,
+   "checksum_sha256": "a773bef2e9e704ace65e5c08fbe0c3b08211e618797efc9ea50651a2d5decc94",
+   "page_count": 18,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, March 2020",
+   "report_period": {
+    "year": 2020,
+    "month": 3,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for March 2020, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "6,968,746 bytes, 18 pages, complete to its end marker. Page 1 opens: MARCH 2020 MONTHLY INFORMATIONAL REPORT MARCH CALLS TOTAL CALLS TOP 5 FIRE CALLS TOP 10 ME.",
+   "quoted_opening": "MARCH 2020 MONTHLY INFORMATIONAL REPORT MARCH CALLS TOTAL CALLS TOP 5 FIRE CALLS TOP 10 ME",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0702",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/may-june-mir-2018.pdf",
+   "filename": "may-june-mir-2018.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 3625435,
+   "checksum_sha256": "3b46985d94a966e3dc4564f6ec84144cb2d00a64b2d5c2e75b27a4ff27a09dda",
+   "page_count": 23,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, May-June 2018",
+   "report_period": {
+    "year": 2018,
+    "month": 5,
+    "labelled_as_two_months": true,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for May-June 2018, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "3,625,435 bytes, 23 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT MAY - JUNE 2018 Presented to the City.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT MAY - JUNE 2018 Presented to the City",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ],
+   "caution": "Titled with a two-month span; see the_2018_two_month_labels. Record the span as published."
+  },
+  {
+   "local_ref": "h3-0703",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/may-mir-2019.pdf",
+   "filename": "may-mir-2019.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 4098963,
+   "checksum_sha256": "db87cbf44a05b095330b665d0df94251f6328c4f22a10b090e61cfcbcb3f7a70",
+   "page_count": 12,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, May 2019",
+   "report_period": {
+    "year": 2019,
+    "month": 5,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for May 2019, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "4,098,963 bytes, 12 pages, complete to its end marker. Page 1 opens: MAY 2019 MONTHLY INFORMATIONAL REPORT SIGNIFICANT EVENTS 5/20 - Commercial Fire: AFR respo.",
+   "quoted_opening": "MAY 2019 MONTHLY INFORMATIONAL REPORT SIGNIFICANT EVENTS 5/20 - Commercial Fire: AFR respo",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0704",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-april-2020-1.pdf",
+   "filename": "mir-april-2020-1.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 13139371,
+   "checksum_sha256": "cdab94a2bc0e818dbcb303e11182be9bb671ba5b9770bc6dadde5e79a8b62093",
+   "page_count": 18,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, April 2020",
+   "report_period": {
+    "year": 2020,
+    "month": 4,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for April 2020, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "13,139,371 bytes, 18 pages, complete to its end marker. Page 1 opens: APRIL 2020 MONTHLY INFORMATIONAL REPORT APRIL CALLS TOTAL CALLS TOP 5 FIRE CALLS TOP 10 ME.",
+   "quoted_opening": "APRIL 2020 MONTHLY INFORMATIONAL REPORT APRIL CALLS TOTAL CALLS TOP 5 FIRE CALLS TOP 10 ME",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ],
+   "caution": "A corrected re-issue. An earlier April 2020 issue is still on the server, unlinked, and is recorded in do_not_add; see two_issues_of_april_2020."
+  },
+  {
+   "local_ref": "h3-0705",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-april-2021.pdf",
+   "filename": "mir-april-2021.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 6723028,
+   "checksum_sha256": "fdd83331260aff634dfc1185c00ea85e90630108f81535a931d6016b4d361f99",
+   "page_count": 19,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, April 2021",
+   "report_period": {
+    "year": 2021,
+    "month": 4,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for April 2021, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "6,723,028 bytes, 19 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT APRIL 2021 APRIL CALLS TOP 10 NON-MED.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT APRIL 2021 APRIL CALLS TOP 10 NON-MED",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0706",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-april-2022.pdf",
+   "filename": "mir-april-2022.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 10006084,
+   "checksum_sha256": "4f4ee297d2726f0aa32f64b9d370bdd37b9f2f5ddeabb42ae09cef94617506a5",
+   "page_count": 16,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, April 2022",
+   "report_period": {
+    "year": 2022,
+    "month": 4,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for April 2022, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "10,006,084 bytes, 16 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT APRIL 2022 APRIL CALLS TOP 10 NON-MED.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT APRIL 2022 APRIL CALLS TOP 10 NON-MED",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0707",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-april-2024.pdf",
+   "filename": "mir-april-2024.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 7792376,
+   "checksum_sha256": "2c9c6954dc8741f19727a820bf9b1c5870aa6048ca314c4a0f7d10fb2c24f080",
+   "page_count": 17,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, April 2024",
+   "report_period": {
+    "year": 2024,
+    "month": 4,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for April 2024, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "7,792,376 bytes, 17 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT APRIL 2024 CALL CATEGORIES TOP 10 NON.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT APRIL 2024 CALL CATEGORIES TOP 10 NON",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0708",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-april-all-pages-2023lr.pdf",
+   "filename": "mir-april-all-pages-2023lr.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 2063722,
+   "checksum_sha256": "4959a193f047e5749c63d52d7b2cc7f4a3b06efb78beb55f74b4f6e3ac68fb86",
+   "page_count": 15,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, April 2023",
+   "report_period": {
+    "year": 2023,
+    "month": 4,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for April 2023, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "2,063,722 bytes, 15 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT APRIL 2023 FEBRUARY CALL CATEGORIES T.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT APRIL 2023 FEBRUARY CALL CATEGORIES T",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ],
+   "caution": "A low-resolution copy, and the only form in which this month is published: the same name without 'lr' returns HTTP 404."
+  },
+  {
+   "local_ref": "h3-0709",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-aug-2023.pdf",
+   "filename": "mir-aug-2023.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 6874081,
+   "checksum_sha256": "f34821030aae8265a9264bc3dd9b4127d3838fbddb2bf37eb0c84906540105ce",
+   "page_count": 17,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, August 2023",
+   "report_period": {
+    "year": 2023,
+    "month": 8,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for August 2023, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "6,874,081 bytes, 17 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT AUGUST 2023 CALL CATEGORIES TOP 10 NO.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT AUGUST 2023 CALL CATEGORIES TOP 10 NO",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0710",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-august-2020.pdf",
+   "filename": "mir-august-2020.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 14103524,
+   "checksum_sha256": "730e00ea491ef413430ba8887d15c2db3407671fdd14ef4a49b21d914e09dd74",
+   "page_count": 22,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, August 2020",
+   "report_period": {
+    "year": 2020,
+    "month": 8,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for August 2020, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "14,103,524 bytes, 22 pages, complete to its end marker. Page 1 opens: AUGUST 2020 MONTHLY INFORMATIONAL REPORT TOP 5 NON-MEDICAL CALLS TOP 10 MEDICAL AUGUST CAL.",
+   "quoted_opening": "AUGUST 2020 MONTHLY INFORMATIONAL REPORT TOP 5 NON-MEDICAL CALLS TOP 10 MEDICAL AUGUST CAL",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0711",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-august-2021.pdf",
+   "filename": "mir-august-2021.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 6952577,
+   "checksum_sha256": "ecb085801d8e3b0ba699cf4b1dcf7a3f7a8700e9898926d459b03acab326dc2d",
+   "page_count": 16,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, August 2021",
+   "report_period": {
+    "year": 2021,
+    "month": 8,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for August 2021, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "6,952,577 bytes, 16 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT AUGUST 2021 AUGUST CALLS TOTAL YEAR T.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT AUGUST 2021 AUGUST CALLS TOTAL YEAR T",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0712",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-august-2022.pdf",
+   "filename": "mir-august-2022.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 8249627,
+   "checksum_sha256": "bb0f08fbeb0bd1abb5f464fd3269e700f9d9caf9184cfcd97670cd4e0e616c99",
+   "page_count": 16,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, August 2022",
+   "report_period": {
+    "year": 2022,
+    "month": 8,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for August 2022, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "8,249,627 bytes, 16 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT AUGUST 2022 CALL CATEGORIES TOP 10 NO.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT AUGUST 2022 CALL CATEGORIES TOP 10 NO",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0713",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-august-2024-v2.pdf",
+   "filename": "mir-august-2024-v2.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 5133475,
+   "checksum_sha256": "aa21007e376ce9a70f9e546d34630bc303dd20a10da1794e2fd126cdc7860826",
+   "page_count": 14,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, August 2024",
+   "report_period": {
+    "year": 2024,
+    "month": 8,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for August 2024, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "5,133,475 bytes, 14 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT AUGUST 2024 Albuquerque Fire Rescue i.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT AUGUST 2024 Albuquerque Fire Rescue i",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ],
+   "caution": "Its filename marks it a revised or final issue; no earlier issue is published at the predictable name."
+  },
+  {
+   "local_ref": "h3-0714",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-dec-2023.pdf",
+   "filename": "mir-dec-2023.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 8494121,
+   "checksum_sha256": "db426a3ca69b5f89a47eca380440672ae9d2b77e3d0d9942a43c69e6a3de1f09",
+   "page_count": 16,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, December 2023",
+   "report_period": {
+    "year": 2023,
+    "month": 12,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for December 2023, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "8,494,121 bytes, 16 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT DECEMBER 2023 CALL CATEGORIES TOP 10.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT DECEMBER 2023 CALL CATEGORIES TOP 10",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0715",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-december-2020.pdf",
+   "filename": "mir-december-2020.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 5162493,
+   "checksum_sha256": "271d1c250e3c7f393383ca0b432604a7a1781d25f8a0776dccb820add11d4223",
+   "page_count": 18,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, December 2020",
+   "report_period": {
+    "year": 2020,
+    "month": 12,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for December 2020, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "5,162,493 bytes, 18 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT DECEMBER 2020 DECEMBER CALLS TOP 10 N.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT DECEMBER 2020 DECEMBER CALLS TOP 10 N",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0716",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-december-2021-v2.pdf",
+   "filename": "mir-december-2021-v2.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 4334943,
+   "checksum_sha256": "68490d0f2fe0222881e55a9c1b80f6ce5c204c0907af203790167d55084ea501",
+   "page_count": 20,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, December 2021",
+   "report_period": {
+    "year": 2021,
+    "month": 12,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for December 2021, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "4,334,943 bytes, 20 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT DECEMBER 2021 DECEMBER CALLS TOP 10 N.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT DECEMBER 2021 DECEMBER CALLS TOP 10 N",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ],
+   "caution": "Its filename marks it a revised or final issue; no earlier issue is published at the predictable name."
+  },
+  {
+   "local_ref": "h3-0717",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-december-2022lr.pdf",
+   "filename": "mir-december-2022lr.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 2775732,
+   "checksum_sha256": "271a1f3f547d77aa69d0a56a7548cfe42676875a3bf54879fd5ed445922d7e41",
+   "page_count": 15,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, December 2022",
+   "report_period": {
+    "year": 2022,
+    "month": 12,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for December 2022, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "2,775,732 bytes, 15 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT DECEMBER 2022 CALL CATEGORIES TOP 10.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT DECEMBER 2022 CALL CATEGORIES TOP 10",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ],
+   "caution": "A low-resolution copy, and the only form in which this month is published: the same name without 'lr' returns HTTP 404."
+  },
+  {
+   "local_ref": "h3-0718",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-february-2021.pdf",
+   "filename": "mir-february-2021.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 5463174,
+   "checksum_sha256": "cb60c7c77340cbaa5f36474c46bd937d0a0bebc55e845ac3a57a02e09c510b53",
+   "page_count": 17,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, February 2021",
+   "report_period": {
+    "year": 2021,
+    "month": 2,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for February 2021, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "5,463,174 bytes, 17 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT FEBRUARY 2021 FEBRUARY CALLS TOP 10 N.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT FEBRUARY 2021 FEBRUARY CALLS TOP 10 N",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0719",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-february-2022-lr.pdf",
+   "filename": "mir-february-2022-lr.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 3064774,
+   "checksum_sha256": "6f38ae3b871d9394a532ce011ef714d31d88610aad79467e28f9620c1b0448e6",
+   "page_count": 19,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, February 2022",
+   "report_period": {
+    "year": 2022,
+    "month": 2,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for February 2022, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "3,064,774 bytes, 19 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT FEBRUARY 2022 FEBRUARY CALLS TOP 10 N.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT FEBRUARY 2022 FEBRUARY CALLS TOP 10 N",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ],
+   "caution": "A low-resolution copy, and the only form in which this month is published: the same name without 'lr' returns HTTP 404."
+  },
+  {
+   "local_ref": "h3-0720",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-february-2023lr.pdf",
+   "filename": "mir-february-2023lr.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 2876904,
+   "checksum_sha256": "be0375d7302d5bbe8e00a4706a394605da6a8a1cd7b2ff89115670d8e5629968",
+   "page_count": 16,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, February 2023",
+   "report_period": {
+    "year": 2023,
+    "month": 2,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for February 2023, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "2,876,904 bytes, 16 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT FEBRUARY 2023 CALL CATEGORIES TOP 10.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT FEBRUARY 2023 CALL CATEGORIES TOP 10",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ],
+   "caution": "A low-resolution copy, and the only form in which this month is published: the same name without 'lr' returns HTTP 404."
+  },
+  {
+   "local_ref": "h3-0721",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-february-2024.pdf",
+   "filename": "mir-february-2024.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 6629077,
+   "checksum_sha256": "27db8e9ccd6ac9d3abfc5e264bc470d50a96ec511ea63ae115d33b092855fd48",
+   "page_count": 17,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, February 2024",
+   "report_period": {
+    "year": 2024,
+    "month": 2,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for February 2024, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "6,629,077 bytes, 17 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT FEBRUARY 2024 CALL CATEGORIES TOP 10.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT FEBRUARY 2024 CALL CATEGORIES TOP 10",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0722",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-january-2021.pdf",
+   "filename": "mir-january-2021.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 5606901,
+   "checksum_sha256": "08b7733c0f295a6bdf6d69b46186913416e97669529456a575c0d357899c6473",
+   "page_count": 23,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, January 2021",
+   "report_period": {
+    "year": 2021,
+    "month": 1,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for January 2021, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "5,606,901 bytes, 23 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JANUARY 2021 JANUARY CALLS TOP 10 NON.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JANUARY 2021 JANUARY CALLS TOP 10 NON",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0723",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-january-2022.pdf",
+   "filename": "mir-january-2022.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 7784317,
+   "checksum_sha256": "880054bca280e08c0ee0fef1433f1a8749f28a3f8edb3b1436578dbc312430ce",
+   "page_count": 16,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, January 2022",
+   "report_period": {
+    "year": 2022,
+    "month": 1,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for January 2022, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "7,784,317 bytes, 16 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JANUARY 2022 JANUARY CALLS TOP 10 NON.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JANUARY 2022 JANUARY CALLS TOP 10 NON",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0724",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-january-2023.pdf",
+   "filename": "mir-january-2023.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 10505309,
+   "checksum_sha256": "79666f782055604b5507433c38654a2a543c6db3566eea9f66837ce34f77c400",
+   "page_count": 16,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, January 2023",
+   "report_period": {
+    "year": 2023,
+    "month": 1,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for January 2023, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "10,505,309 bytes, 16 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JANUARY 2023 CALL CATEGORIES TOP 10 N.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JANUARY 2023 CALL CATEGORIES TOP 10 N",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0725",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-january-2024.pdf",
+   "filename": "mir-january-2024.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 6729141,
+   "checksum_sha256": "4d248f005b50afb24e93820e842688a26e06ad7f15fb6a89f0c4c1f741b71175",
+   "page_count": 16,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, January 2024",
+   "report_period": {
+    "year": 2024,
+    "month": 1,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for January 2024, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "6,729,141 bytes, 16 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JANUARY 2024 CALL CATEGORIES TOP 10 N.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JANUARY 2024 CALL CATEGORIES TOP 10 N",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0726",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-july-2019-final.pdf",
+   "filename": "mir-july-2019-final.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 3191585,
+   "checksum_sha256": "26892e830dc11934497cd48b390c147e85e9691fe8cd4161361912612baa0535",
+   "page_count": 12,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, July 2019",
+   "report_period": {
+    "year": 2019,
+    "month": 7,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for July 2019, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "3,191,585 bytes, 12 pages, complete to its end marker. Page 1 opens: JULY 2019 MONTHLY INFORMATIONAL REPORT SIGNIFICANT EVENTS 7/1 - Swift Water Rescue: AFR re.",
+   "quoted_opening": "JULY 2019 MONTHLY INFORMATIONAL REPORT SIGNIFICANT EVENTS 7/1 - Swift Water Rescue: AFR re",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ],
+   "caution": "Its filename marks it a revised or final issue; no earlier issue is published at the predictable name."
+  },
+  {
+   "local_ref": "h3-0727",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-july-2020.pdf",
+   "filename": "mir-july-2020.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 12325353,
+   "checksum_sha256": "12602b449e3b1183f5ab96b0b72fa0a56912f1bbd7d10a318fb169b919e78c92",
+   "page_count": 19,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, July 2020",
+   "report_period": {
+    "year": 2020,
+    "month": 7,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for July 2020, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "12,325,353 bytes, 19 pages, complete to its end marker. Page 1 opens: JULY 2020 MONTHLY INFORMATIONAL REPORT TOP 5 NON-MEDICAL CALLS TOP 10 MEDICAL CALLS JULY C.",
+   "quoted_opening": "JULY 2020 MONTHLY INFORMATIONAL REPORT TOP 5 NON-MEDICAL CALLS TOP 10 MEDICAL CALLS JULY C",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0728",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-july-2021.pdf",
+   "filename": "mir-july-2021.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 14602891,
+   "checksum_sha256": "d4a58ff5f19cf60afc9a0048a0413329c3480b6312472c821556c8d485f4031a",
+   "page_count": 16,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, July 2021",
+   "report_period": {
+    "year": 2021,
+    "month": 7,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for July 2021, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "14,602,891 bytes, 16 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JULY 2021 JULY CALLS TOTAL YEAR TO DA.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JULY 2021 JULY CALLS TOTAL YEAR TO DA",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0729",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-july-2022.pdf",
+   "filename": "mir-july-2022.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 8422120,
+   "checksum_sha256": "0e5573731f5c76be6d8770c237fc770922479e11c3ef362d119fbf9c56a561f0",
+   "page_count": 16,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, July 2022",
+   "report_period": {
+    "year": 2022,
+    "month": 7,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for July 2022, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "8,422,120 bytes, 16 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JULY 2022 CALL CATEGORIES TOP 10 NON-.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JULY 2022 CALL CATEGORIES TOP 10 NON-",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0730",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-july-2023.pdf",
+   "filename": "mir-july-2023.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 7326740,
+   "checksum_sha256": "51cb6e29b86a9dc776498172b761ab8cf1622fbf237b09a15f2f905eae39e7a8",
+   "page_count": 16,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, July 2023",
+   "report_period": {
+    "year": 2023,
+    "month": 7,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for July 2023, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "7,326,740 bytes, 16 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JULY 2023 CALL CATEGORIES TOP 10 NON-.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JULY 2023 CALL CATEGORIES TOP 10 NON-",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0731",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-july-2024.pdf",
+   "filename": "mir-july-2024.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 5578176,
+   "checksum_sha256": "c83afd94dc416205338e27b7bcf4c78eea2c0384bf97f6448b668b6db5b90c79",
+   "page_count": 13,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, July 2024",
+   "report_period": {
+    "year": 2024,
+    "month": 7,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for July 2024, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "5,578,176 bytes, 13 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JULY 2024 Albuquerque Fire Rescue is.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JULY 2024 Albuquerque Fire Rescue is",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0732",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-june-2019.pdf",
+   "filename": "mir-june-2019.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 8573770,
+   "checksum_sha256": "c69197249a2cda8d944f2b6ce8df797daf5258b1118c81a295788d1af72f7585",
+   "page_count": 14,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, June 2019",
+   "report_period": {
+    "year": 2019,
+    "month": 6,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for June 2019, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "8,573,770 bytes, 14 pages, complete to its end marker. Page 1 opens: JUNE 2019 MONTHLY INFORMATIONAL REPORT SIGNIFICANT EVENTS 6/5 - Residential Fire: AFR resp.",
+   "quoted_opening": "JUNE 2019 MONTHLY INFORMATIONAL REPORT SIGNIFICANT EVENTS 6/5 - Residential Fire: AFR resp",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0733",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-june-2020-v2.pdf",
+   "filename": "mir-june-2020-v2.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 11740241,
+   "checksum_sha256": "e385ab3159eccfb37be3adc790f3279dddda0e96b7647a1465639dd18770b5c2",
+   "page_count": 22,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, June 2020",
+   "report_period": {
+    "year": 2020,
+    "month": 6,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for June 2020, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "11,740,241 bytes, 22 pages, complete to its end marker. Page 1 opens: JUNE 2020 MONTHLY INFORMATIONAL REPORT TOP 5 FIRE CALLS TOP 10 MEDICAL CALLS JUNE CALLS AP.",
+   "quoted_opening": "JUNE 2020 MONTHLY INFORMATIONAL REPORT TOP 5 FIRE CALLS TOP 10 MEDICAL CALLS JUNE CALLS AP",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ],
+   "caution": "Its filename marks it a revised or final issue; no earlier issue is published at the predictable name."
+  },
+  {
+   "local_ref": "h3-0734",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-june-2021.pdf",
+   "filename": "mir-june-2021.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 15890624,
+   "checksum_sha256": "07ad3bebb8f2539baa4b8e4ae1c9e250eec3269753df7a981d558f06bf662072",
+   "page_count": 16,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, June 2021",
+   "report_period": {
+    "year": 2021,
+    "month": 6,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for June 2021, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "15,890,624 bytes, 16 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JUNE 2021 JUNE CALLS TOTAL YEAR TO DA.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JUNE 2021 JUNE CALLS TOTAL YEAR TO DA",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0735",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-june-2022.pdf",
+   "filename": "mir-june-2022.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 8572537,
+   "checksum_sha256": "7c721ea7f45c25403ba351735a3809f732d848270d031045ad2d156fd7a6deeb",
+   "page_count": 16,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, June 2022",
+   "report_period": {
+    "year": 2022,
+    "month": 6,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for June 2022, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "8,572,537 bytes, 16 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JUNE 2022 CALL CATEGORIES TOP 10 NON-.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JUNE 2022 CALL CATEGORIES TOP 10 NON-",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0736",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-june-2023.pdf",
+   "filename": "mir-june-2023.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 8212780,
+   "checksum_sha256": "1987b5a7d7e117fcffba8a3bc388955e2e7f7cb45038eb322a1c7c9c379f9ee3",
+   "page_count": 15,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, June 2023",
+   "report_period": {
+    "year": 2023,
+    "month": 6,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for June 2023, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "8,212,780 bytes, 15 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JUNE 2023 CALL CATEGORIES TOP 10 NON-.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JUNE 2023 CALL CATEGORIES TOP 10 NON-",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0737",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-june-2024.pdf",
+   "filename": "mir-june-2024.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 7477425,
+   "checksum_sha256": "3c5dc3a5439fe0e8dc6cbc631d5e2b5b0d71af4f8e85822acbdceb8b4cbfd5c5",
+   "page_count": 14,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, June 2024",
+   "report_period": {
+    "year": 2024,
+    "month": 6,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for June 2024, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "7,477,425 bytes, 14 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JUNE 2024 Albuquerque Fire Rescue is.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT JUNE 2024 Albuquerque Fire Rescue is",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0738",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-march-2021.pdf",
+   "filename": "mir-march-2021.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 5238030,
+   "checksum_sha256": "d0b19260ad67df5ccfd9870616e31c2521606fc628df6a2b45408acc59834ee8",
+   "page_count": 17,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, March 2021",
+   "report_period": {
+    "year": 2021,
+    "month": 3,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for March 2021, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "5,238,030 bytes, 17 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT MARCH 2021 FEBRUARY CALLS TOP 10 NON-.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT MARCH 2021 FEBRUARY CALLS TOP 10 NON-",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0739",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-march-2022.pdf",
+   "filename": "mir-march-2022.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 9853804,
+   "checksum_sha256": "5783bade1aa8c9536327720f4e72e208cfe56f5f6a4731fd153285434f5740a8",
+   "page_count": 17,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, March 2022",
+   "report_period": {
+    "year": 2022,
+    "month": 3,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for March 2022, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "9,853,804 bytes, 17 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT MARCH 2022 MARCH CALLS TOP 10 NON-MED.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT MARCH 2022 MARCH CALLS TOP 10 NON-MED",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0740",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-march-2023-no-pageslr.pdf",
+   "filename": "mir-march-2023-no-pageslr.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 2009954,
+   "checksum_sha256": "0f30a99097a91d8d6851a155c0eda991945df8560344737478ac88f45d4be4b3",
+   "page_count": 14,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, March 2023",
+   "report_period": {
+    "year": 2023,
+    "month": 3,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for March 2023, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "2,009,954 bytes, 14 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT MARCH 2023 * DUE TO SOME TECHNICAL IS.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT MARCH 2023 * DUE TO SOME TECHNICAL IS",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ],
+   "caution": "A low-resolution copy, and the only form in which this month is published: the same name without 'lr' returns HTTP 404. Its own first page states that, due to technical issues in data reporting, unit response and alarm reason data for March are not included. Record the omission with the report."
+  },
+  {
+   "local_ref": "h3-0741",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-march-2024.pdf",
+   "filename": "mir-march-2024.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 8303206,
+   "checksum_sha256": "02074e763f3617506490711fb4803b2608e69a5002fd46182ddd47971d4b5545",
+   "page_count": 18,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, March 2024",
+   "report_period": {
+    "year": 2024,
+    "month": 3,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for March 2024, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "8,303,206 bytes, 18 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT MARCH 2024 CALL CATEGORIES TOP 10 NON.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT MARCH 2024 CALL CATEGORIES TOP 10 NON",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0742",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-may-2020.pdf",
+   "filename": "mir-may-2020.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 14402102,
+   "checksum_sha256": "c1e19c802a0c711eb925187a4ec4d354ebb5aee3d6f05540230ea9833d4742e6",
+   "page_count": 19,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, May 2020",
+   "report_period": {
+    "year": 2020,
+    "month": 5,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for May 2020, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "14,402,102 bytes, 19 pages, complete to its end marker. Page 1 opens: MAY 2020 MONTHLY INFORMATIONAL REPORT MAY CALLS TOTAL CALLS TOP 5 FIRE CALLS TOP 10 MEDICA.",
+   "quoted_opening": "MAY 2020 MONTHLY INFORMATIONAL REPORT MAY CALLS TOTAL CALLS TOP 5 FIRE CALLS TOP 10 MEDICA",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0743",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-may-2021.pdf",
+   "filename": "mir-may-2021.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 15151045,
+   "checksum_sha256": "a0934a505346e8d8a7df63e45faa339f7b1f73a969ab5934157e5fd8fe68cb5b",
+   "page_count": 17,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, May 2021",
+   "report_period": {
+    "year": 2021,
+    "month": 5,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for May 2021, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "15,151,045 bytes, 17 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT MAY 2021 MAY CALLS TOTAL YEAR TO DATE.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT MAY 2021 MAY CALLS TOTAL YEAR TO DATE",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0744",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-may-2022.pdf",
+   "filename": "mir-may-2022.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 10228430,
+   "checksum_sha256": "41f3cf434a8aed26f4df4ad94881db4e2d09266e36acf8970370d9132bc58790",
+   "page_count": 16,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, May 2022",
+   "report_period": {
+    "year": 2022,
+    "month": 5,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for May 2022, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "10,228,430 bytes, 16 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT MAY 2022 CALL CATEGORIES TOP 10 NON-M.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT MAY 2022 CALL CATEGORIES TOP 10 NON-M",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0745",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-may-2024.pdf",
+   "filename": "mir-may-2024.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 6499994,
+   "checksum_sha256": "9cf795a68707ff25817d9cd27db8885f54d14ed4a68d2c4b1aa50e7e7afae7d8",
+   "page_count": 14,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, May 2024",
+   "report_period": {
+    "year": 2024,
+    "month": 5,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for May 2024, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "6,499,994 bytes, 14 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT MAY 2024 Albuquerque Fire Rescue is t.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT MAY 2024 Albuquerque Fire Rescue is t",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0746",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-may-all-pages-2023lr.pdf",
+   "filename": "mir-may-all-pages-2023lr.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 2279424,
+   "checksum_sha256": "413efbcb0a9b7ab6981c037681f69c102aef7c3e0971509d100be1eaacd6cb22",
+   "page_count": 16,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, May 2023",
+   "report_period": {
+    "year": 2023,
+    "month": 5,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for May 2023, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "2,279,424 bytes, 16 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT MAY 2023 MARCH CALL CATEGORIES TOP 10.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT MAY 2023 MARCH CALL CATEGORIES TOP 10",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ],
+   "caution": "A low-resolution copy, and the only form in which this month is published: the same name without 'lr' returns HTTP 404."
+  },
+  {
+   "local_ref": "h3-0747",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-nov-2023.pdf",
+   "filename": "mir-nov-2023.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 8776405,
+   "checksum_sha256": "297117ba6be6c839191579e7bd78ad7c10b573e62237f28287060815db496835",
+   "page_count": 16,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, November 2023",
+   "report_period": {
+    "year": 2023,
+    "month": 11,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for November 2023, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "8,776,405 bytes, 16 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT NOVEMBER 2023 CALL CATEGORIES TOP 10.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT NOVEMBER 2023 CALL CATEGORIES TOP 10",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0748",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-november-2020.pdf",
+   "filename": "mir-november-2020.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 8860877,
+   "checksum_sha256": "77cbf3e7214abc0cc33474239615cbea802800fb55180880dda084eb9fb54659",
+   "page_count": 17,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, November 2020",
+   "report_period": {
+    "year": 2020,
+    "month": 11,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for November 2020, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "8,860,877 bytes, 17 pages, complete to its end marker. Page 1 opens: NOVEMBER 2020 MONTHLY INFORMATIONAL REPORT TOP 5 NON-MEDICAL CALLS TOP 10 MEDICAL NOVEMBER.",
+   "quoted_opening": "NOVEMBER 2020 MONTHLY INFORMATIONAL REPORT TOP 5 NON-MEDICAL CALLS TOP 10 MEDICAL NOVEMBER",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0749",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-november-2021.pdf",
+   "filename": "mir-november-2021.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 7671727,
+   "checksum_sha256": "80bba8123f4f80fd142bbd00a5ab22016b20002820c93f3b4dc3664868da20d7",
+   "page_count": 18,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, November 2021",
+   "report_period": {
+    "year": 2021,
+    "month": 11,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for November 2021, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "7,671,727 bytes, 18 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT NOVEMBER 2021 NOVEMBER CALLS TOP 10 N.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT NOVEMBER 2021 NOVEMBER CALLS TOP 10 N",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0750",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-november-2022lr.pdf",
+   "filename": "mir-november-2022lr.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 3215650,
+   "checksum_sha256": "a405d667d276d29c25363c6ebfbaecf1a43ded816ae4ee5fdae64617eb4a76f5",
+   "page_count": 17,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, November 2022",
+   "report_period": {
+    "year": 2022,
+    "month": 11,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for November 2022, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "3,215,650 bytes, 17 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT NOVEMBER 2022 CALL CATEGORIES TOP 10.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT NOVEMBER 2022 CALL CATEGORIES TOP 10",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ],
+   "caution": "A low-resolution copy, and the only form in which this month is published: the same name without 'lr' returns HTTP 404."
+  },
+  {
+   "local_ref": "h3-0751",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-oct-2023.pdf",
+   "filename": "mir-oct-2023.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 6627331,
+   "checksum_sha256": "931313a0a38bb99666bfe2da221daea4cf875c8a5c8a0bd466e15e521d10296f",
+   "page_count": 16,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, October 2023",
+   "report_period": {
+    "year": 2023,
+    "month": 10,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for October 2023, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "6,627,331 bytes, 16 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT OCTOBER 2023 CALL CATEGORIES TOP 10 N.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT OCTOBER 2023 CALL CATEGORIES TOP 10 N",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0752",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-october-2020.pdf",
+   "filename": "mir-october-2020.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 12247426,
+   "checksum_sha256": "2c621a472c157248465e45845ac22f6a9acac7553940ca792cc5030741c0f7c8",
+   "page_count": 19,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, October 2020",
+   "report_period": {
+    "year": 2020,
+    "month": 10,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for October 2020, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "12,247,426 bytes, 19 pages, complete to its end marker. Page 1 opens: OCTOBER 2020 MONTHLY INFORMATIONAL REPORT TOP 5 NON-MEDICAL CALLS TOP 10 MEDICAL OCTOBER C.",
+   "quoted_opening": "OCTOBER 2020 MONTHLY INFORMATIONAL REPORT TOP 5 NON-MEDICAL CALLS TOP 10 MEDICAL OCTOBER C",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0753",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-october-2021-updated-final.pdf",
+   "filename": "mir-october-2021-updated-final.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 9196243,
+   "checksum_sha256": "f4b3652d6ce9f14a953a66329fabe70b0f1160ace00001d690c8248cbd192f52",
+   "page_count": 18,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, October 2021",
+   "report_period": {
+    "year": 2021,
+    "month": 10,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for October 2021, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "9,196,243 bytes, 18 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT OCTOBER 2021 OCTOBER CALLS TOP 10 NON.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT OCTOBER 2021 OCTOBER CALLS TOP 10 NON",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ],
+   "caution": "Its filename marks it a revised or final issue; no earlier issue is published at the predictable name."
+  },
+  {
+   "local_ref": "h3-0754",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-october-2022.pdf",
+   "filename": "mir-october-2022.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 7782917,
+   "checksum_sha256": "be70073cf962513d9d99576e4a6247f2b1533dbe88102bba89325159fe267734",
+   "page_count": 16,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, October 2022",
+   "report_period": {
+    "year": 2022,
+    "month": 10,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for October 2022, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "7,782,917 bytes, 16 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT OCTOBER 2022 CALL CATEGORIES TOP 10 N.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT OCTOBER 2022 CALL CATEGORIES TOP 10 N",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0755",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-october-2024.pdf",
+   "filename": "mir-october-2024.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 5623128,
+   "checksum_sha256": "b5cd23b151dd097c86f1c0128030e9e9091af0d5d0278b22a9cb7bd0323d64db",
+   "page_count": 14,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, October 2024",
+   "report_period": {
+    "year": 2024,
+    "month": 10,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for October 2024, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "5,623,128 bytes, 14 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT OCTOBER 2024 Albuquerque Fire Rescue.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT OCTOBER 2024 Albuquerque Fire Rescue",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0756",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-sept-2023.pdf",
+   "filename": "mir-sept-2023.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 6144801,
+   "checksum_sha256": "435d952654e087d3918b1d197eae4cbd65f3bdd9cad45d42a61005b843998e82",
+   "page_count": 16,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, September 2023",
+   "report_period": {
+    "year": 2023,
+    "month": 9,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for September 2023, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "6,144,801 bytes, 16 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT SEPTEMBER 2023 CALL CATEGORIES TOP 10.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT SEPTEMBER 2023 CALL CATEGORIES TOP 10",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0757",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-september-2020.pdf",
+   "filename": "mir-september-2020.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 14008816,
+   "checksum_sha256": "0070d8e8f0eb68538605ec5f545ed073f9b59ac28590c9d3bc7ca1826e2ef1aa",
+   "page_count": 20,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, September 2020",
+   "report_period": {
+    "year": 2020,
+    "month": 9,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for September 2020, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "14,008,816 bytes, 20 pages, complete to its end marker. Page 1 opens: SEPTEMBER 2020 MONTHLY INFORMATIONAL REPORT TOP 5 NON-MEDICAL CALLS TOP 10 MEDICAL SEPTEMB.",
+   "quoted_opening": "SEPTEMBER 2020 MONTHLY INFORMATIONAL REPORT TOP 5 NON-MEDICAL CALLS TOP 10 MEDICAL SEPTEMB",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0758",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-september-2021.pdf",
+   "filename": "mir-september-2021.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 11221008,
+   "checksum_sha256": "217fa85d04444025c4f8c28f1b4f8eb66fec5a082c67274001716a7f9f5a0ff2",
+   "page_count": 17,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, September 2021",
+   "report_period": {
+    "year": 2021,
+    "month": 9,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for September 2021, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "11,221,008 bytes, 17 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT SEPTEMBER 2021 SEPTEMBER CALLS TOP 10.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT SEPTEMBER 2021 SEPTEMBER CALLS TOP 10",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0759",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-september-2022.pdf",
+   "filename": "mir-september-2022.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 9946818,
+   "checksum_sha256": "7dd0605d2af956e186d2981feeec6b8299218a280b1b5be8fb64945db34816e8",
+   "page_count": 17,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, September 2022",
+   "report_period": {
+    "year": 2022,
+    "month": 9,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for September 2022, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "9,946,818 bytes, 17 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT SEPTEMBER 2022 CALL CATEGORIES TOP 10.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT SEPTEMBER 2022 CALL CATEGORIES TOP 10",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0760",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-september-2024.pdf",
+   "filename": "mir-september-2024.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 7499314,
+   "checksum_sha256": "98795c92d1f276d27c7758b1a869c9889ee8b9fabb40ed0b435785297856b65c",
+   "page_count": 14,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, September 2024",
+   "report_period": {
+    "year": 2024,
+    "month": 9,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for September 2024, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "7,499,314 bytes, 14 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT SEPTEMBER 2024 Albuquerque Fire Rescu.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT SEPTEMBER 2024 Albuquerque Fire Rescu",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0761",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/november-mir-2018.pdf",
+   "filename": "november-mir-2018.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 3894465,
+   "checksum_sha256": "ea905d999ccb8fc6c5524e71af86bfa2e31f17197251a220712261e60b0e8c58",
+   "page_count": 9,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, November 2018",
+   "report_period": {
+    "year": 2018,
+    "month": 11,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for November 2018, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "3,894,465 bytes, 9 pages, complete to its end marker. Page 1 opens: NOVEMBER 2018 MONTHLY INFORMATIONAL REPORT SIGNIFICANT EVENTS 11/1 - Apartment Fire: AFR c.",
+   "quoted_opening": "NOVEMBER 2018 MONTHLY INFORMATIONAL REPORT SIGNIFICANT EVENTS 11/1 - Apartment Fire: AFR c",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0762",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/november-mir-2019.pdf",
+   "filename": "november-mir-2019.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 7093752,
+   "checksum_sha256": "ff0111fe46a4fa7845fa8dbec2771d2238f75eaa39a6f12b00c4a9a59532514b",
+   "page_count": 20,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, November 2019",
+   "report_period": {
+    "year": 2019,
+    "month": 11,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for November 2019, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "7,093,752 bytes, 20 pages, complete to its end marker. Page 1 opens: NOVEMBER 2019 MONTHLY INFORMATIONAL REPORT NOVEMBER CALLS TOTAL CALLS TOP 5 FIRE CALLS TOP.",
+   "quoted_opening": "NOVEMBER 2019 MONTHLY INFORMATIONAL REPORT NOVEMBER CALLS TOTAL CALLS TOP 5 FIRE CALLS TOP",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0763",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/october-mir-2018.pdf",
+   "filename": "october-mir-2018.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 3191828,
+   "checksum_sha256": "73fcfbc674e16089bb20e0686ea6a3ac10456de011d6f063e0dbd89685548730",
+   "page_count": 8,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, October 2018",
+   "report_period": {
+    "year": 2018,
+    "month": 10,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for October 2018, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "3,191,828 bytes, 8 pages, complete to its end marker. Page 1 opens: OCTOBER 2018 MONTHLY INFORMATIONAL REPORT SIGNIFICANT EVENTS 10/1 - Foothill Rescue: Crews.",
+   "quoted_opening": "OCTOBER 2018 MONTHLY INFORMATIONAL REPORT SIGNIFICANT EVENTS 10/1 - Foothill Rescue: Crews",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0764",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/october-mir-2019.pdf",
+   "filename": "october-mir-2019.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 5890338,
+   "checksum_sha256": "11872dc58bf7686c8acc3075860569a300ab16f11cbda0460b82608634690c2a",
+   "page_count": 19,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, October 2019",
+   "report_period": {
+    "year": 2019,
+    "month": 10,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for October 2019, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "5,890,338 bytes, 19 pages, complete to its end marker. Page 1 opens: OCTOBER 2019 MONTHLY INFORMATIONAL REPORT OCTOBER CALLS TOTAL CALLS TOP 5 FIRE CALLS TOP 1.",
+   "quoted_opening": "OCTOBER 2019 MONTHLY INFORMATIONAL REPORT OCTOBER CALLS TOTAL CALLS TOP 5 FIRE CALLS TOP 1",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0765",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/september-mir-2018.pdf",
+   "filename": "september-mir-2018.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 5133045,
+   "checksum_sha256": "dae4349334fea151bd8900f9287951c953c498b130c1c64b2955bd61a5a960db",
+   "page_count": 23,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, September 2018",
+   "report_period": {
+    "year": 2018,
+    "month": 9,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for September 2018, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "5,133,045 bytes, 23 pages, complete to its end marker. Page 1 opens: ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT SEPTEMBER 2018 Presented to the City.",
+   "quoted_opening": "ALBUQUERQUE FIRE RESCUE MONTHLY INFORMATIONAL REPORT SEPTEMBER 2018 Presented to the City",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  },
+  {
+   "local_ref": "h3-0766",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/september-mir-2019.pdf",
+   "filename": "september-mir-2019.pdf",
+   "harvested_from": "https://www.cabq.gov/fire/copy_of_reports",
+   "recommendation": "add to the inventory as a new candidate",
+   "link_check": "HTTP 200 verified by full GET during the third link harvest; size_bytes and checksum_sha256 measured from the fetched bytes, container verified by leading bytes.",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 4649342,
+   "checksum_sha256": "af9624ace8901e273bc44bc778fbd20ff5bd3239f1ac782a7175e25e55bf3054",
+   "page_count": 15,
+   "complete_to_its_end_marker": true,
+   "title": "Albuquerque Fire Rescue, Monthly Informational Report, September 2019",
+   "report_period": {
+    "year": 2019,
+    "month": 9,
+    "labelled_as_two_months": false,
+    "period_verified_against": "the report's own first page"
+   },
+   "group": "fire rescue monthly informational reports",
+   "description": "The Albuquerque Fire Rescue monthly informational report for September 2019, one of a continuous monthly series from February 2018 to October 2024 reporting the department's call volumes, call types and emergency medical statistics.",
+   "description_word_count": 33,
+   "evidence": "4,649,342 bytes, 15 pages, complete to its end marker. Page 1 opens: SEPTEMBER 2019 MONTHLY INFORMATIONAL REPORT SEPTEMBER CALLS TOTAL CALLS TOP 5 FIRE CALLS T.",
+   "quoted_opening": "SEPTEMBER 2019 MONTHLY INFORMATIONAL REPORT SEPTEMBER CALLS TOTAL CALLS TOP 5 FIRE CALLS T",
+   "proposed_canonical_page": "content/city-data/public-safety-data.md",
+   "cross_listings": [
+    {
+     "page": "content/city-data/_index.md",
+     "reason": "Reported City performance data."
+    }
+   ]
+  }
+ ],
+ "do_not_add": [
+  {
+   "local_ref": "fire-extra-001",
+   "inventory_id": null,
+   "authoritative_url": "https://www.cabq.gov/fire/documents/mir-april-2020.pdf",
+   "filename": "mir-april-2020.pdf",
+   "harvested_from": null,
+   "found_by": "Probing the predictable filename of mir-april-2020-1.pdf without its -1 suffix. It is not linked from the reports page.",
+   "recommendation": "do not add",
+   "content_kind": "PDF",
+   "leading_bytes": "25504446",
+   "http_status": "200",
+   "size_bytes": 8925770,
+   "checksum_sha256": "fc06453a2dced01cfef033dd6e9e383d1247ec365ec92903c0bbbaa6372eb84b",
+   "page_count": 18,
+   "complete_to_its_end_marker": true,
+   "title_for_reference": "Albuquerque Fire Rescue Monthly Informational Report, April 2020 - earlier issue",
+   "what_it_is": "An earlier issue of the April 2020 report, still on the server under the name without the -1 suffix.",
+   "why_not": "Superseded by the linked issue, mir-april-2020-1.pdf. The two are not byte-identical. They share 12 pages of identical text by position; the others differ. The earlier issue heads page 1 'MARCH CALLS' under an April 2020 title, where the linked issue reads 'APRIL CALLS', and the linked issue carries division-update pages this one lacks. The City links only the -1 issue. Recorded so the decision is reversible without fetching it again.",
+   "superseded_by": "h3-0704",
+   "category": "earlier issue superseded by a corrected re-issue",
+   "package": "superseded_issue"
+  }
+ ],
+ "archival_note": "None of the 81 proposed additions is a candidate yet. Each remains inventory-only until an R2 archive object exists and its public download, exact size, SHA-256 and authoritative-source provenance are verified. Combined footprint if all are added and archived: 573,027,770 bytes.",
+ "integration_note": "Codex integration lane: this artifact creates nothing and changes nothing. Every row carries inventory_id: null, the authoritative URL, the measured size and checksum, the page count, the report period read from the document, and harvested_from.",
+ "what_remains_of_this_harvest": "191 more new documents from the same batch: 50 council/documents, 38 planning/DevelopmentReviewServices, 35 acs/documents, 18 planning/IDO, 8 planning/agis and the rest.",
+ "safeguards": [
+  "no master-inventory.json write",
+  "no checkpoint.json write",
+  "no r2-inventory.json write",
+  "no site content change",
+  "no R2 upload",
+  "no commit, merge, or deploy",
+  "no terminal record modified",
+  "no inventory candidate created"
+ ]
+}

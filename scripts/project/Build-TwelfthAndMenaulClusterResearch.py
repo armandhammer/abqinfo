@@ -1,0 +1,317 @@
+"""Claude research lane. Reads the inventory and this lane's measurements and
+writes one dated decision artifact. It never modifies master-inventory.json,
+checkpoint.json, r2-inventory.json, site content, or R2.
+
+Dated 2026-09-12.
+"""
+
+import collections
+import datetime
+import json
+import os
+
+OUT = r'C:\Users\ben\Documents\ABQinfo\project-state\discovery\12th-and-menaul-cluster-research-2026-09-12.json'
+INV = r'C:\Users\ben\Documents\ABQinfo\project-state\master-inventory.json'
+FETCH = (r'C:\Users\ben\AppData\Local\Temp\claude\C--Users-ben-Documents-ABQinfo'
+         r'\7da19eae-d375-451f-a516-82ba7d95c865\scratchpad\mn\fetch.log')
+
+AREA = 'content/development-land-use/area-sector-plans.md'
+REDEV = 'content/development-land-use/redevelopment-plans.md'
+STUDIES = 'content/transportation/roadway-projects/studies.md'
+
+HOK = 'src-a3d3af52e6832110'
+ORDINANCE = 'src-8a1f90911b6038b3'
+MENAUL_MRA = 'src-3f2dca78dd97e88d'   # validated + R2 + published: the 2023 Menaul MRA Plan
+
+inv = json.load(open(INV, encoding='utf-8'))
+IDX = {x['id']: x for x in inv['candidates']}
+
+M, MAGIC, RAW = {}, {}, {}
+for line in open(FETCH, encoding='utf-8'):
+    i, c, s, h, mag, raw, v = line.rstrip('\n').split('\t')
+    M[i] = {"size_bytes": int(s), "checksum_sha256": h}
+    MAGIC[i] = mag
+    RAW[i] = raw
+
+LC = ("HTTP 200 verified 2026-09-12 by full GET on both URL forms; size_bytes and checksum_sha256 measured "
+      "from the bytes returned by the raw file URL, because the inventory record carried neither")
+
+BLOCKER = ("Enactment number blank, under the two standing checkpoint blockers: isolated legislative material must "
+           "have its authoritative enacted package resolved before archival or visible use.")
+
+
+def row(i, status):
+    u = IDX[i].get('direct_file_url') or IDX[i].get('source_url')
+    r = {"id": i, "authoritative_url": u,
+         "recommended_status": status, "link_check": LC,
+         "content_kind": "PDF" if MAGIC[i] == '25504446' else "HTML"}
+    if RAW[i] != u:
+        r["raw_file_url"] = RAW[i]
+    r.update(M[i])
+    return r
+
+
+approved = [{
+ **row(HOK, "approved for addition"),
+ "title": "12th & Menaul Study: Planning, Design, and Transportation Recommendations, October 2005 (HOK Planning Group and Hall Planning & Engineering)",
+ "description": ("The City's consultant study for the area around 12th Street NW and Menaul Boulevard, including the "
+                 "former Indian School site, sets out land use, urban design, streetscape and transportation "
+                 "recommendations together with the design standards meant to govern redevelopment there."),
+ "date": "2005-10",
+ "pages": 63,
+ "evidence": ("PDF with a full text layer, 63 pages, 59,048,492 bytes. The cover reads \"STUDY RECOMMENDATIONS / 12th "
+              "& Menaul Study | city of albuquerque / Planning, design, and transportation recommendations for the "
+              "area surrounding the intersection of 12th Street NW and Menaul Boulevard, including the former Indian "
+              "School site. Prepared for the City of Albuquerque, New Mexico. Prepared by The HOK Planning Group & "
+              "Hall Planning & Engineering. Inc. OCTOBER 2005.\""),
+ "why_retained": ("City-commissioned, substantive, and unheld. It is also the source document for the design "
+                  "standards that a rezoning ordinance in this same directory attaches as its Exhibit B1, so it is "
+                  "the only place the full reasoning behind those standards survives."),
+ "proposed_canonical_page": AREA,
+ "cross_listings": [
+   {"page": REDEV, "reason": "It is a redevelopment study for a named City area, which is the class of record that page collects; it also predates the Menaul work the page already carries by sixteen years."},
+   {"page": STUDIES, "reason": "A third of it is transportation recommendations for 12th Street, Menaul Boulevard and the internal street network, prepared by a transportation engineering firm."},
+ ],
+ "already_archived_check": ("Tested against the archive's Menaul holdings, which are the obvious risk. The published "
+                           "Menaul material — " + MENAUL_MRA + " and its 2021 precursor, live on "
+                           "content/development-land-use/redevelopment-plans.md — is a different effort in a "
+                           "different decade. Fetched the archived 2023 Menaul Metropolitan Redevelopment Area Plan "
+                           "read-only and searched it: it does not contain the string \"12th\" anywhere in 7,538,874 "
+                           "bytes, and token overlap with this study is 0.5558, the level two planning documents "
+                           "share from vocabulary alone. No overlap."),
+ "caution": ("A consultant study of recommendations, not an adopted plan. Nothing in this directory shows it being "
+             "adopted; the ordinance that would have carried part of it into zoning has a blank enactment block. "
+             "Describe it as a study prepared for the City."),
+ "archival_cost": ("59,048,492 bytes, the largest single candidate recommended for addition anywhere in this run and "
+                   "larger than the whole approved footprint of most clusters. It is worth it — it is a 63-page "
+                   "City-commissioned study held nowhere else — but the upload should be planned rather than batched."),
+ "description_word_count": 0,
+}]
+
+duplicates = [{
+ **row("src-3c28a0575f8c4b78", "duplicate"),
+ "title_for_reference": "Exhibit B1 to Council Bill F/S O-05-98: HOK/HPE Plan — Design Standards",
+ "pages": 23,
+ "canonical_id": HOK,
+ "canonical_url": IDX[HOK].get('direct_file_url'),
+ "canonical_state": "recommended for addition in this batch",
+ "basis": "An excerpt of the study above, attached to the rezoning ordinance as its design-standards exhibit.",
+ "measurement": ("Token coverage 0.9774 inside the study, confirmed by literal phrase match rather than by vocabulary "
+                 "alone: \"the carriage strip exists as the space adjacent\", \"typical streetscape elements\" and "
+                 "\"build to line\" all appear verbatim in the study's extracted text. The exhibit is 23 pages of the "
+                 "study's 63 and carries its heading, \"HOK/HPE Plan — Design Standards\"."),
+ "hash_found_it": False,
+ "what_the_status_does_not_capture": ("Its legal role. As an ordinance exhibit these 23 pages would have been the "
+                                      "operative design standards for the rezoning, where the study is advisory. That "
+                                      "distinction is preserved in the ordinance row at requires human review below "
+                                      "rather than lost: if F/S O-05-98 is ever resolved as enacted, the standards it "
+                                      "enacted are these pages of the study."),
+}]
+
+
+def R(i, priority, draft_title, pages, evidence, question, why, extra=None):
+    r = row(i, "requires human review")
+    r.update({"priority": priority, "draft_title": draft_title, "pages": pages,
+              "evidence": evidence, "question_for_human": question, "why_not_decided_here": why})
+    if extra:
+        r.update(extra)
+    return r
+
+
+rhr = [
+ R(ORDINANCE, 1,
+   "Council Bill F/S O-05-98: Ordinance for Zone Map Amendment and Site Development Plan for Subdivision Approval, 03EPC01676 and 03EPC01677, for 19 Acres on Indian School Road NW Between Menaul and 12th Street",
+   8,
+   ("Born-digital PDF with a full text layer. CITY of ALBUQUERQUE, SIXTEENTH COUNCIL. Section 1 amends the zone map "
+    "from R-1 to SU-1 for C-2 over \"A 19-acre portion of Tract A, Indian School Site, as illustrated by the "
+    "accompanying site development plan for subdivision\", finding SU-2/C-2 zoning appropriate as complementary to "
+    "surrounding zoning and densities; Section 2 amends the zone map adopted by Section 14-16-1-1 et seq."),
+   "Locate the enacted ordinance for O-05-98, and resolve it together with its four exhibits.",
+   (BLOCKER + " This one is blank in an unusual way: the COUNCIL BILL NO. and SPONSORED BY lines are blank too, so the "
+    "file as posted does not even identify itself as O-05-98. The bill number comes from its exhibits, which are "
+    "headed \"Bill No. F/S O0598\", and from the City's own filenames. That is worth flagging: the ordinance text "
+    "carries less identification than the exhibits attached to it."),
+   extra={"exhibits": ["src-31ba73e0c3ce56f8", "src-13ccd9b9108bee02", "src-3c28a0575f8c4b78", "src-a1731c6529388425"],
+          "outcome_search": ("Applying the standing lesson, the adopted outcome would be the rezoning itself. Nothing "
+                             "in the inventory records the zoning of this site, and the archive's Menaul material is "
+                             "a different area sixteen years later. Unlike the district-9, district-4, district-1 and "
+                             "East Gateway cases, no outcome document is held, so there is nothing to point at.")}),
+
+ R("src-a1731c6529388425", 2,
+   "Exhibit C to Council Bill F/S O-05-98: permitted and excluded C-2 uses for the 12th and Menaul site",
+   3,
+   ("Born-digital PDF with a full text layer, headed \"Bill No. F/S O0598 — Exhibit C\". It opens \"C2 Permissive "
+    "Uses: All are allowed, except the following:\" and then excludes a long list including ambulance service, indoor "
+    "arena, automobile body shop and repair, automobile sales, billiard or pool hall, car wash, outdoor circus, coin "
+    "and gun shop, disco, and drive-in restaurant."),
+   "Decide with the ordinance.",
+   (BLOCKER + " It is also the exhibit least recoverable from anything else: token coverage inside the study is 0.8619 "
+    "but the study is a design document and does not carry a use list, so this exclusion schedule exists only here."),
+   extra={"parent": ORDINANCE}),
+
+ R("src-31ba73e0c3ce56f8", 3,
+   "Exhibit A1 to Council Bill F/S O-05-98: IPFDC Master Plan, Sheet SP-01, Site Plan, August 11, 2005",
+   1,
+   ("Image-only PDF with one byte of extractable text; rendered and read. A large-format architectural sheet, title "
+    "block \"IPFDC MASTER PLAN / INDIAN SCHOOL BLVD / ALBUQUERQUE, NM\", sheet SP-01 SITE PLAN, by Design "
+    "Collaborative Southwest Inc., dated 8-11-05. The area schedule reads Commercial Tract 15.69 acres, Office Tract "
+    "31.69 acres, Total Area 47.38 acres. Eight keyed sheet notes cover the IPFDC security gate, security perimeter "
+    "fence, screen wall, drive-through, internal street, an orchard-like landscape buffer and two portals; the plan "
+    "locates retail and office buildings, a hotel, a bank, a parking garage, future parking garages, the existing BIA "
+    "buildings, bus stops and a roundabout at 12th Street, adjacent to the Indian Pueblo Cultural Center."),
+   "Decide with the ordinance. This is the site development plan for subdivision that Section 1 approves.",
+   (BLOCKER + " The ordinance approves this drawing by reference, so the two stand or fall together."),
+   extra={"parent": ORDINANCE,
+          "note": "The sheet covers 47.38 acres while the ordinance rezones 19 acres, so the drawing is the wider master plan within which the rezoned portion sits. Do not describe the two as coextensive."}),
+
+ R("src-13ccd9b9108bee02", 4,
+   "Exhibit A2 to Council Bill F/S O-05-98: IPFDC Master Plan, Sheet SP-02, Building Height and Setback Plan, August 11, 2005",
+   1,
+   ("Image-only PDF with one byte of extractable text; rendered and read. Sheet SP-02 of the same DCSW set, "
+    "BUILDING HEIGHT & SETBACK PLAN, keying three maximum building heights across the site — 44 feet (3 storey), 56 "
+    "feet (4 storey) and 84 feet (8 storey office or hotel) — with a note that maximum height is measured to the top "
+    "of the roof deck and that parapet walls and mechanical or HVAC enclosures are excluded. Four street sections "
+    "A to D dimension 12th Street at the plaza and the Indian Pueblo Cultural Center, 12th Street south of the "
+    "roundabout, Menaul Boulevard at 12th Street, and the internal street."),
+   "Decide with the ordinance.",
+   (BLOCKER + " Same reasoning as Exhibit A1."),
+   extra={"parent": ORDINANCE,
+          "if_the_package_resolves": "This is the sheet with the most durable regulatory content in the set: heights and setbacks are what a resident or a developer would need to look up."}),
+]
+
+excluded = [{
+ **row("src-cf4646a4b7b00c14", "excluded"),
+ "title_for_reference": "12th and Menaul collection landing page",
+ "exclusion_reason": "The Plone collection landing page for this directory, not a document.",
+ "category": "collection landing page",
+}]
+
+for r in approved:
+    r["description_word_count"] = len(r["description"].split())
+
+rows = approved + duplicates + rhr + excluded
+ids = [r["id"] for r in rows]
+assert len(ids) == len(set(ids))
+assert len(ids) == 7, len(ids)
+counts = collections.Counter(r["recommended_status"] for r in rows)
+approved_bytes = sum(r["size_bytes"] for r in approved)
+rhr_bytes = sum(r["size_bytes"] for r in rhr)
+raw_differs = [r["id"] for r in rows if "raw_file_url" in r]
+
+artifact = {
+ "batch_id": "12th-and-menaul-cluster-research-2026-09-12",
+ "lane": "Claude research lane: www.cabq.gov/council/documents/12th-and-menaul cluster",
+ "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+ "date_note": "Dated 2026-09-12. Artifacts before councilor-district-9-cluster-research-2026-09-12.json are dated 2026-09-11; cross-references name artifacts by filename.",
+ "cluster": "The 12th Street and Menaul Boulevard redevelopment file in the Albuquerque City Council library: one consultant study and one rezoning ordinance with its four exhibits.",
+ "scope": "All 7 pending-review candidates, which is every record in the directory. Nothing here is terminal.",
+ "brief": "Run the standard opening sequence, checking each candidate against the already-triaged Menaul MRA records the council-amendments artifact identified.",
+ "brief_finding": ("The check against the Menaul MRA records was the right one to run and it came back clean, which "
+                   "is what makes the headline find safe to recommend. The archive's Menaul holdings are the 2021 "
+                   "study and the 2023 MRA plan for the Menaul corridor; this directory is a 2005 study of 12th "
+                   "Street and Menaul Boulevard including the former Indian School site. The archived 2023 plan does "
+                   "not contain the string \"12th\" anywhere in its 7.5 MB. Two efforts, one street name, sixteen "
+                   "years apart, no overlap."),
+ "second_finding": ("The ordinance in this directory carries less identification than its own exhibits. Its COUNCIL "
+                    "BILL NO., ENACTMENT NO. and SPONSORED BY lines are all blank, so the file as posted does not "
+                    "name itself; the bill number F/S O-05-98 is known only from the headings of the exhibits "
+                    "attached to it and from the City's filenames."),
+ "method": ("Ran the URL group-by first; no collisions. Fetched all 7 candidates on both URL forms and measured byte "
+            "length and SHA-256 from the raw form. Compared all checksums within the cluster and against the 1,612 "
+            "checksummed inventory records: no collisions either way. Fetched the archived Menaul MRA plan read-only "
+            "and tested the study against it. Tested each exhibit against the study by token coverage and then by "
+            "literal phrase match. Rendered both image-only architectural sheets and read their title blocks, area "
+            "schedules and keyed notes."),
+ "classification_only": True,
+ "shared_state_written": [],
+ "the_package": {
+  "instrument": "Council Bill F/S O-05-98, Sixteenth Council: zone map amendment from R-1 to SU-1 for C-2 and site development plan approval for 19 acres on Indian School Road NW between Menaul and 12th Street, EPC cases 03EPC01676 and 03EPC01677.",
+  "exhibits": {
+   "A1": "src-31ba73e0c3ce56f8 — IPFDC Master Plan sheet SP-01, site plan, 47.38 acres",
+   "A2": "src-13ccd9b9108bee02 — IPFDC Master Plan sheet SP-02, building height and setback plan",
+   "B1": "src-3c28a0575f8c4b78 — HOK/HPE design standards, an excerpt of the study",
+   "C": "src-a1731c6529388425 — permitted and excluded C-2 uses",
+  },
+  "outcome_search": ("Unlike the four other enactment packages raised in this run, no outcome document is held for "
+                     "this one. District 9's R-14-82 has a published plan, district 4's M-14-5 has a formed task "
+                     "force, district 1's C/S R-08-182 has a published bond programme, and East Gateway's R-07-275 "
+                     "and R-07-278 have a published MRA plan and a published resource management plan. Here the "
+                     "adopted outcome would be the zoning itself, and the inventory records nothing about this site's "
+                     "zoning."),
+  "what_this_means_for_priority": ("It is the least evidenced of the five packages and should be resolved last. The "
+                                   "study, by contrast, does not depend on the ordinance at all and can be approved "
+                                   "now."),
+ },
+ "duplicate_and_supersession_checks": {
+  "internal_byte_collisions": 0,
+  "cross_inventory_byte_collisions": 0,
+  "url_collisions_in_this_directory": 0,
+  "checksums_compared_against": 1612,
+  "relationships_found_by_hash": 0,
+  "relationships_found_by_text": 1,
+  "note": ("One relationship: Exhibit B1 is 23 pages of the 63-page study, at token coverage 0.9774 with three "
+           "literal phrase matches. Nothing else in the directory duplicates anything, inside it or outside it. The "
+           "comparison that mattered most returned a negative — the study against the archive's Menaul holdings — and "
+           "a negative result from that check is what licenses the recommendation."),
+ },
+ "integration_flags": [
+  {"severity": "substantive-find",
+   "affects": [HOK],
+   "finding": "A 63-page City-commissioned planning, design and transportation study for 12th Street and Menaul Boulevard including the former Indian School site, October 2005, by HOK Planning Group and Hall Planning & Engineering. Held nowhere and not overlapping the archive's later Menaul material.",
+   "recommended_action": "Approve and place on the area and sector plans page, cross-listed to redevelopment plans and to corridor studies. Label it a study of recommendations, not an adopted plan."},
+  {"severity": "archival-cost",
+   "affects": [HOK],
+   "finding": f"The approved record is {approved_bytes:,} bytes, the largest single candidate recommended anywhere in this run.",
+   "recommended_action": "Plan the upload rather than batching it. There is no smaller edition: the only other copy in the directory is the 23-page design-standards excerpt, which is recommended duplicate."},
+  {"severity": "identification-gap",
+   "affects": [ORDINANCE],
+   "finding": "The ordinance file has blank COUNCIL BILL NO., ENACTMENT NO. and SPONSORED BY lines. It is identifiable as F/S O-05-98 only from its exhibits' headings and the City's filenames.",
+   "recommended_action": "Record the bill number as derived rather than stated if the record is ever titled. Any automated title sweep over this directory will mis-name it."},
+  {"severity": "least-evidenced-package",
+   "affects": [ORDINANCE, "src-a1731c6529388425", "src-31ba73e0c3ce56f8", "src-13ccd9b9108bee02"],
+   "finding": "Five enactment packages now sit at requires human review across this run. This is the only one with no outcome document held anywhere.",
+   "recommended_action": "Resolve it last. The other four each have a published plan, programme or body to work back from."},
+  {"severity": "exhibit-role",
+   "affects": ["src-3c28a0575f8c4b78"],
+   "finding": "The design-standards exhibit is recommended duplicate of the study, but its legal role differs: as an ordinance exhibit these pages would have been operative rather than advisory.",
+   "recommended_action": "If O-05-98 is ever resolved as enacted, note on the study that pages of it were the enacted design standards. Do not archive the excerpt separately."},
+ ],
+ "counts": {
+  "reviewed": len(rows),
+  "approved_for_addition": counts["approved for addition"],
+  "duplicate": counts["duplicate"],
+  "requires_human_review": counts["requires human review"],
+  "excluded": counts["excluded"],
+ },
+ "link_check": {"checked": 7, "http_200": 7, "failed": 0,
+                "both_url_forms_checked": len(raw_differs),
+                "archive_fetches": "The archived 2023 Menaul Metropolitan Redevelopment Area Plan at files.abqinfo.com was fetched read-only for comparison, HTTP 200, 7,538,874 bytes.",
+                "method": "Full HTTP GET with a browser user agent on the raw file URL and on the inventoried /view URL, 2026-09-12.",
+                "containers_verified": "6 genuine PDFs and one HTML collection page by leading bytes. Two PDFs have no usable text layer and were rendered."},
+ "approved_for_addition": approved,
+ "duplicate": duplicates,
+ "requires_human_review": rhr,
+ "excluded": excluded,
+ "archival_note": (f"The single approved record is a static PDF and is inventory-only until an R2 archive object "
+                   f"exists for it and its public download, exact size, SHA-256, and authoritative-source provenance "
+                   f"are verified. Archive footprint if authorized: {approved_bytes:,} bytes. It is born-digital with "
+                   f"a full text layer, so full-text search reaches it without optical character recognition. Four "
+                   f"further records totalling {rhr_bytes:,} bytes are held at requires human review and would add to "
+                   f"that if the ordinance package is ever resolved."),
+ "integration_note": ("Codex integration lane: apply recommended_status values through "
+                      "scripts/project/Update-Candidate.ps1 only. The one duplicate row carries a canonical_id "
+                      "pointing at the approved record in this same batch. Four rows are requires human review and "
+                      "form one ordinance package, described in the_package, each carrying a priority field and a "
+                      "parent or exhibit reference. The approved row carries a title, a 20-to-50-word description, a "
+                      "date, a proposed_canonical_page, two cross-listings, an already_archived_check, a caution and "
+                      "an explicit archival-cost note. Sizes and checksums are first measurements; the inventory held "
+                      "none."),
+ "safeguards": ["no master-inventory.json write", "no checkpoint.json write", "no r2-inventory.json write",
+                "no site content change", "no R2 upload", "no commit, merge, or deploy", "no terminal record modified",
+                "the archived Menaul MRA plan was fetched read-only and not modified"],
+}
+
+os.makedirs(os.path.dirname(OUT), exist_ok=True)
+with open(OUT, 'w', encoding='utf-8') as f:
+    json.dump(artifact, f, indent=1, ensure_ascii=False)
+print(json.dumps({"output": OUT, "counts": artifact["counts"]}))

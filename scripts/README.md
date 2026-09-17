@@ -72,7 +72,7 @@ snapshot, and distinguishes Albuquerque-scope records from other regional work:
 
 # Parallel file/source/link verification
 
-Codex and Claude can verify disjoint inventory shards concurrently without sharing a writable checkout. The coordinator creates an immutable manifest and detached worktrees; workers create only their uniquely assigned result; the single integrator applies an explicit acceptance list through `Update-Candidate.ps1`.
+Verification workers can process disjoint inventory shards concurrently without sharing a writable checkout. The coordinator creates an immutable manifest and detached worktrees; workers create only their uniquely assigned result; the single integrator applies an explicit acceptance list through `Update-Candidate.ps1`. Legacy `codex` and `claude` lane IDs are compatibility identifiers within this one logical Codex workflow.
 
 ```powershell
 .\scripts\project\New-ParallelVerificationRun.ps1 -RunId '2026-09-10-links-01' -StartId 'src-1234567890abcdef' -Count 40
@@ -92,4 +92,4 @@ For usage-paused-proof campaigns with many microbatches:
 .\scripts\project\Test-ParallelVerificationCampaignWorkflow.ps1
 ```
 
-See [`project-state/AUTONOMOUS-VERIFICATION-CAMPAIGNS.md`](../project-state/AUTONOMOUS-VERIFICATION-CAMPAIGNS.md) for the one-prompt Claude worker, Codex coordinator loop, `Continue` behavior, leases, and crash-safe integration.
+See [`project-state/AUTONOMOUS-VERIFICATION-CAMPAIGNS.md`](../project-state/AUTONOMOUS-VERIFICATION-CAMPAIGNS.md) for legacy-lane worker examples, coordinator operation, `Continue` behavior, leases, and crash-safe integration.
