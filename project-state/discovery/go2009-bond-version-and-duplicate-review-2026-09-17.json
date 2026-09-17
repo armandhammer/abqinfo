@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-17",
+  "scope": "Targeted continuation of the saved 2009 General Obligation Bond cluster research; no new crawl was performed.",
+  "authoritative_directory": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents",
+  "methods": [
+    "Saved official-source hashes, sizes, normalized-text comparisons, and containment measurements from go2009-bond-cluster-research-2026-09-11.json.",
+    "Read-only retrieval of the eight affected official City PDFs on 2026-09-17, with local SHA-256 confirmation.",
+    "Embedded PDF information-dictionary inspection for author, title, creation date, and modification date.",
+    "Read-only inspection of the current City directory link text."
+  ],
+  "version_relationships": [
+    {
+      "records": ["src-5cea73d2df70dabb", "src-5066c9f642369e9b"],
+      "documents": ["1dmd_streets_-_summary.pdf", "dmd_streets_-_summary.pdf"],
+      "evidence": {
+        "older_document": {"creation_date": "2008-12-16T14:21:05", "title": "Financial 2009", "author": "CIPDMA", "sha256": "40fa9a3092924734276953aed47d1edc23bf1927e2f3b53c5e895fdef552909b"},
+        "later_document": {"creation_date": "2009-06-02T09:19:18", "title": "Financial 2009.fp5", "author": "CIPDMA", "sha256": "31b49825fb87ae331bb7e6106b0d22b59db887a414fca2a7da7164e392b1398d"},
+        "content": "Saved normalized-text comparison is 0.7679 and records materially different rows; the later document is not a duplicate.",
+        "directory": "The current City directory lists both as DMD Streets - Summary.pdf and provides no revision, approval, or finality label."
+      },
+      "conclusion": "Two distinct official City editions; relative creation chronology is established, but final/adopted precedence is not.",
+      "publication_treatment": "If later consolidated, retain both in chronological order with neutral source-date labels; do not label either final or superseded."
+    },
+    {
+      "records": ["src-5de108fb850c221f", "src-6fe3ca04cbe476d5"],
+      "documents": ["senior_affairs_-_scope.pdf", "senior_affairs_-_summary.pdf"],
+      "evidence": "Both are City-authored Financial 2009.fp5 PDFs generated on 2009-06-03. Saved comparison shows named Bear Canyon and North Domingo Baca Multigenerational rows absent from the broad Community Facilities records.",
+      "conclusion": "Distinct Senior Affairs scope and schedule records, not duplicates of the Community Facilities records; no finality dispute between them is asserted.",
+      "publication_treatment": "Retain as independent components if a future full-family compilation is built."
+    },
+    {
+      "records": ["src-d2d3b593d77a2885", "src-3ef781d4a038852a"],
+      "documents": ["family_and_community_services_-_summary.pdf", "1family_and_community_services_-_summary.pdf"],
+      "evidence": "Read-only retrieval reconfirmed identical 52,137-byte files and SHA-256 4f65949bc72751cacb931746e51003aab07530422026813bb711e2ffc114db62. Saved comparison identifies Holiday Park, Pat Hurley, and Storehouse rows absent from the Community Facilities summary.",
+      "conclusion": "One independent Family and Community Services schedule delivered twice; src-3ef781d4a038852a is correctly duplicate of src-d2d3b593d77a2885, not of the Community Facilities summary.",
+      "publication_treatment": "Keep the twin duplicate classification and preserve the independent canonical schedule for any future full-family treatment."
+    }
+  ],
+  "prior_duplicate_rulings": [
+    {
+      "id": "src-4204206743b66c6c",
+      "current_canonical": "src-b049c4df2812749b",
+      "conclusion": "Current record already documents the corrected relationship: alternate delivery of the separately retained Public Safety authorization, not a Community Facilities component."
+    },
+    {
+      "id": "src-5c9206c81408ce50",
+      "current_canonical": "src-535234f371b3922c",
+      "conclusion": "Current record already documents the corrected relationship: alternate or contained Police schedule, not a Community Facilities component."
+    },
+    {
+      "id": "src-3ef781d4a038852a",
+      "current_canonical": "src-d2d3b593d77a2885",
+      "conclusion": "Current record already documents the corrected relationship: byte-identical alternate delivery of the independent Family and Community Services schedule."
+    }
+  ],
+  "publication_form": {
+    "decision": "C_smaller_set_of_distinct_records",
+    "rationale": "No authoritative complete City program book was identified. A compilation would need to include a large heterogeneous family while preserving several independent authorization, scope, and schedule roles plus the two Streets editions. The current evidence supports transparent future component retention, not a claim that one edition is the final complete program."
+  },
+  "side_effects": "No master-inventory classification change was needed because the three flagged terminal duplicate records had already been re-adjudicated to the correct non-Community-Facilities canonicals. No R2 upload, site change, deployment, or generic-candidate work was performed.",
+  "next_action": "Make 2011 the next Capital Spending family. Its four abbreviated-name variant relationships remain the next evidence package."
+}
