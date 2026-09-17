@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-16T22:51:43.6844719Z",
+  "generated_at": "2026-09-17T15:04:14.0172104Z",
   "policy": "Every retained active government webpage is a document-discovery root. Recursively review relevant child pages and archive qualifying attached documents; access-controlled pages require rendered-browser review rather than silent completion.",
   "allowed_statuses": [
     "pending descendant crawl",
@@ -10,13 +10,15 @@
     "superseded"
   ],
   "counts": {
-    "pending descendant crawl": 429,
+    "pending descendant crawl": 431,
     "crawled": 140,
     "requires rendered-browser review": 0,
     "excluded": 0,
     "superseded": 0
   },
-  "next_pending_source_url": "https://cabq.legistar.com/LegislationDetail.aspx?ID=7733454&GUID=142361E4-4618-4419-B62F-1B4061437040&Options=ID%7CText%7C&Search=O-25-100",
+  "next_pending_source_url": [
+    "https://cabq.legistar.com/LegislationDetail.aspx?ID=7733454&GUID=142361E4-4618-4419-B62F-1B4061437040&Options=ID%7CText%7C&Search=O-25-100"
+  ],
   "records": [
     {
       "candidate_id": "src-68d721c82e0d347d",
@@ -9337,6 +9339,38 @@
       ],
       "created_at": "2026-08-26T16:35:48.5793175Z",
       "updated_at": "2026-08-26T16:35:48.5793175Z"
+    },
+    {
+      "candidate_id": "src-6735737588d294e0",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/epchearings.pdf/view",
+      "title": "2003 Environmental Planning Commission Recommendation and Notice of Decision - Mayor Proposed 2003-2012 Decade Plan",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "Added after the editorial resolution changed this retained official source to validated. No descendant crawl was repeated in this campaign."
+      ],
+      "created_at": "2026-09-17T15:04:13.9739408Z",
+      "updated_at": "2026-09-17T15:04:13.9784307Z"
+    },
+    {
+      "candidate_id": "src-3c9907796a0cfaf3",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/WaterMasterPlanInfra.pdf/view",
+      "title": "Water Master Plan Infrastructure Zone (WIZ) Map - Appendix page B-6; parent document not located",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "Added after the editorial resolution changed this retained official source to validated. No descendant crawl was repeated in this campaign."
+      ],
+      "created_at": "2026-09-17T15:04:13.9802370Z",
+      "updated_at": "2026-09-17T15:04:13.9802819Z"
     }
   ]
 }

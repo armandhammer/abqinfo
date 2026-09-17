@@ -90,7 +90,7 @@ Capital improvement spending and projects.
 
   Preserves the Environmental Planning Commission recommendation and official notice-of-decision record for the Mayor Proposed 2003-2012 Decade Plan. It records the Commission action preceding later Mayor and City Council consideration; it is not the enacted capital program. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/epchearings.pdf)
 
-- [Water Master Plan Infrastructure Zone (WIZ) Map - Appendix page B-6; parent document not located (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2003-water-master-plan-infrastructure-zone-map.pdf)
+- [Water Master Plan Infrastructure Zone (WIZ) Map - Appendix (B-6) - Parent Document Not Located (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2003-water-master-plan-infrastructure-zone-map.pdf)
 
   Preserves the official standalone WIZ map marked appendix page B-6. The complete parent document has not been located, so this map is retained without inferring a parent-plan title or treating the appendix as a complete plan. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/WaterMasterPlanInfra.pdf)
 
