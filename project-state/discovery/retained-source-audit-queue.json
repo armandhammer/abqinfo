@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-17T15:04:14.0172104Z",
+  "generated_at": "2026-09-17T15:27:24.9161968Z",
   "policy": "Every retained active government webpage is a document-discovery root. Recursively review relevant child pages and archive qualifying attached documents; access-controlled pages require rendered-browser review rather than silent completion.",
   "allowed_statuses": [
     "pending descendant crawl",
@@ -10,15 +10,13 @@
     "superseded"
   ],
   "counts": {
-    "pending descendant crawl": 431,
-    "crawled": 140,
-    "requires rendered-browser review": 0,
+    "pending descendant crawl": 390,
+    "crawled": 179,
+    "requires rendered-browser review": 1,
     "excluded": 0,
     "superseded": 0
   },
-  "next_pending_source_url": [
-    "https://cabq.legistar.com/LegislationDetail.aspx?ID=7733454&GUID=142361E4-4618-4419-B62F-1B4061437040&Options=ID%7CText%7C&Search=O-25-100"
-  ],
+  "next_pending_source_url": "https://www.bernco.gov/public-works/development-review/tech-standards/",
   "records": [
     {
       "candidate_id": "src-68d721c82e0d347d",
@@ -165,15 +163,16 @@
       "title": "Menaul MRA Zoning Map Amendment - Enacted",
       "agency": "City of Albuquerque / CABQ Legistar",
       "canonical_page": "content/development-land-use/zoning-ido.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-09fdd8da28f09ff5-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 3,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "All three official attachments were reconciled: introduced src-c21e9ab0d771479f and final src-3f628ea52a79829e are superseded by the signed enacted O-2025-033 record src-09fdd8da28f09ff5, which is already archived and validated."
       ],
       "created_at": "2026-09-06T14:59:18.5583165Z",
-      "updated_at": "2026-09-06T14:59:18.5583165Z"
+      "updated_at": "2026-09-12T19:42:47.498346Z"
     },
     {
       "candidate_id": "src-241c664f388493fc",
@@ -181,15 +180,16 @@
       "title": "2026 Infrastructure Capital Improvements Plan Priorities - Enacted",
       "agency": "City of Albuquerque / CABQ Legistar",
       "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-241c664f388493fc-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 3,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "All three official attachments were reconciled: introduced src-af4dce5dc2c0d75e and final src-4b429f5077e7e49a are superseded by the signed enacted R-2026-024 record src-241c664f388493fc, which is already archived and validated."
       ],
       "created_at": "2026-09-06T14:59:18.5583165Z",
-      "updated_at": "2026-09-06T14:59:18.5583165Z"
+      "updated_at": "2026-09-12T19:42:47.6350822Z"
     },
     {
       "candidate_id": "src-4e595175bd75b740",
@@ -197,15 +197,16 @@
       "title": "2025 Downtown Albuquerque Parking Study (EC-26-175)",
       "agency": "City of Albuquerque",
       "canonical_page": "content/development-land-use/redevelopment-plans.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-4e595175bd75b740-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 1,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The sole official attachment is the already archived and validated 2025 Downtown Albuquerque Parking Study, candidate src-4e595175bd75b740; no additional version or attachment was found."
       ],
       "created_at": "2026-09-05T00:13:12.468734Z",
-      "updated_at": "2026-09-05T00:13:12.468734Z"
+      "updated_at": "2026-09-12T19:42:47.7360457Z"
     },
     {
       "candidate_id": "src-a6a63111f9b4ba00",
@@ -230,15 +231,16 @@
       "title": "UNM Campus Planning",
       "agency": "University of New Mexico",
       "canonical_page": "content/transportation/transportation-plans.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-87fa3827b36c8915-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 3,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The source exposes three substantive PDFs: the oversized Integrated Campus Plan remains requires-human-review; the two-page-spread Safe Mobility Action Plan is a noncanonical presentation of archived validated src-a98e0f22c3231266; and UNM 2040 was added as pending-review candidate src-e0624ecba79f3f17."
       ],
       "created_at": "2026-09-01T21:57:23.4864727Z",
-      "updated_at": "2026-09-01T21:57:23.4864727Z"
+      "updated_at": "2026-09-12T19:41:12.5253604Z"
     },
     {
       "candidate_id": "src-9fa20b87264a7a5c",
@@ -348,15 +350,16 @@
       "title": "Development Process Manual Chapter 28: Improvements Within the Public Right-of-Way",
       "agency": "City of Albuquerque",
       "canonical_page": "content/development-land-use/development-process.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-e6c9a8cffdca81f1-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 112,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The official directory currently exposes 112 static documents; every URL is already represented in the master inventory. The retained Chapter 28 record is already archived and validated; other records keep their existing individual review states."
       ],
       "created_at": "2026-08-31T19:48:40.0854408Z",
-      "updated_at": "2026-08-31T19:48:40.0854408Z"
+      "updated_at": "2026-09-12T19:43:36.0163832Z"
     },
     {
       "candidate_id": "src-46237fe417ee1bb1",
@@ -417,15 +420,16 @@
       "title": "Coronado Metropolitan Redevelopment Area Enacted Plan Packet",
       "agency": "City of Albuquerque",
       "canonical_page": "content/development-land-use/redevelopment-plans.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-c4cf54190d8fe881-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 53,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The official directory currently exposes 53 static documents; every URL is already represented in the master inventory. The retained Coronado MRA packet is already archived and validated; other records keep their existing individual review states."
       ],
       "created_at": "2026-09-01T00:56:18.9378653Z",
-      "updated_at": "2026-09-01T00:56:18.9378653Z"
+      "updated_at": "2026-09-12T19:43:36.1318557Z"
     },
     {
       "candidate_id": "src-82eb4064df12e83a",
@@ -433,15 +437,16 @@
       "title": "Tingley Beach Metropolitan Redevelopment Area Designation Resolution R-305",
       "agency": "City of Albuquerque",
       "canonical_page": "content/development-land-use/redevelopment-plans.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-82eb4064df12e83a-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 29,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The official directory currently exposes 29 static documents; every URL is already represented in the master inventory. The retained Tingley Beach designation resolution is already archived and validated; other records keep their existing individual review states."
       ],
       "created_at": "2026-08-31T20:41:00.1441823Z",
-      "updated_at": "2026-08-31T20:41:00.1441823Z"
+      "updated_at": "2026-09-12T19:43:36.2197803Z"
     },
     {
       "candidate_id": "src-f42f72507c457eda",
@@ -449,15 +454,16 @@
       "title": "Albuquerque Address Report",
       "agency": "City of Albuquerque",
       "canonical_page": "content/maps/dashboards.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-f42f72507c457eda-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The live VertiGIS address-report application returned no authored descendant links or static documents; it remains correctly classified as a live official service."
       ],
       "created_at": "2026-09-04T23:24:57.8641644Z",
-      "updated_at": "2026-09-04T23:24:57.8641644Z"
+      "updated_at": "2026-09-12T19:44:58.523353Z"
     },
     {
       "candidate_id": "src-57b7552826150d27",
@@ -540,15 +546,16 @@
       "title": "NMDOT Traffic Data Management System",
       "agency": "New Mexico Department of Transportation",
       "canonical_page": "content/transportation/operations-data.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "requires rendered-browser review",
+      "crawl_output": "project-state/discovery/src-227eb253ea98b4dd-retained-source-http-audit-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "Five crawler attempts and a direct HTTP inspection returned status 202 with an empty body; rendered-browser review is required to establish whether the live traffic-data application exposes any static descendants."
       ],
       "created_at": "2026-09-04T14:33:15.6681742Z",
-      "updated_at": "2026-09-04T14:33:15.6681742Z"
+      "updated_at": "2026-09-12T19:44:58.7786799Z"
     },
     {
       "candidate_id": "src-8a96e3fdb3ea48a0",
@@ -594,15 +601,16 @@
       "title": "UNM Bike Valet Program",
       "agency": "University of New Mexico",
       "canonical_page": "content/transportation/bicycling/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-c3477a0d3a776c58-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The current program page links operational information, feedback, related transportation pages, and live campus maps; it exposes no static document descendant."
       ],
       "created_at": "2026-09-01T23:04:40.8952426Z",
-      "updated_at": "2026-09-01T23:04:40.8952426Z"
+      "updated_at": "2026-09-12T19:41:12.6529625Z"
     },
     {
       "candidate_id": "src-10f34252a9036d7e",
@@ -610,15 +618,16 @@
       "title": "UNM Electric Vehicle Charging",
       "agency": "University of New Mexico",
       "canonical_page": "content/transportation/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-10f34252a9036d7e-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The current charging page links operational information and live campus-map locations; it exposes no static document descendant."
       ],
       "created_at": "2026-09-01T23:04:40.8952426Z",
-      "updated_at": "2026-09-01T23:04:40.8952426Z"
+      "updated_at": "2026-09-12T19:41:12.7588323Z"
     },
     {
       "candidate_id": "src-f81c048564bd8a31",
@@ -702,15 +711,16 @@
       "title": "NMDOT Planning Division GIS Hub",
       "agency": "New Mexico Department of Transportation",
       "canonical_page": "content/maps/maps.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-583e0e4b02efb676-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The live ArcGIS Hub application returned no static document links in the server response; it remains correctly classified as a live official GIS service."
       ],
       "created_at": "2026-09-04T14:33:15.6681742Z",
-      "updated_at": "2026-09-04T14:33:15.6681742Z"
+      "updated_at": "2026-09-12T19:44:58.6717249Z"
     },
     {
       "candidate_id": "src-e45ef8b986f98b89",
@@ -792,15 +802,16 @@
       "title": "UNM Greenhouse Gas Emissions",
       "agency": "University of New Mexico",
       "canonical_page": "content/city-data/climate-environment.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-71f908f1d56d7adc-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 3,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The page links the FY2024 greenhouse-gas inventory, FY2025 update, and 2025-2030 sustainability plan; all three are already archived and validated as src-ac079a5257dc7c8c, src-e968f9c2d99755fa, and src-a7182f27b9c79459."
       ],
       "created_at": "2026-09-01T23:04:40.8952426Z",
-      "updated_at": "2026-09-01T23:04:40.8952426Z"
+      "updated_at": "2026-09-12T19:41:12.8585617Z"
     },
     {
       "candidate_id": "src-64b93a7e3b77b3c8",
@@ -808,15 +819,16 @@
       "title": "UNM Sustainable Transportation",
       "agency": "University of New Mexico",
       "canonical_page": "content/transportation/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-64b93a7e3b77b3c8-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The page links live campus maps and current UNM transportation programs but exposes no static document descendant."
       ],
       "created_at": "2026-09-01T23:04:40.8952426Z",
-      "updated_at": "2026-09-01T23:04:40.8952426Z"
+      "updated_at": "2026-09-12T19:41:12.9707713Z"
     },
     {
       "candidate_id": "src-1df2696d46cb977a",
@@ -824,15 +836,16 @@
       "title": "UNM Sustainability Strategic Plan",
       "agency": "University of New Mexico",
       "canonical_page": "content/city-data/climate-environment.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-1df2696d46cb977a-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 1,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The page links the already archived and validated UNM Sustainability Strategic Plan 2025-2030, candidate src-a7182f27b9c79459; no additional static document descendant was found."
       ],
       "created_at": "2026-09-01T23:04:40.8952426Z",
-      "updated_at": "2026-09-01T23:04:40.8952426Z"
+      "updated_at": "2026-09-12T19:41:13.0745034Z"
     },
     {
       "candidate_id": "src-fe3273f1de13882d",
@@ -995,15 +1008,16 @@
       "title": "Foothill Pond Feasibility Study",
       "agency": "Bernalillo County",
       "canonical_page": "content/public-works/stormwater-drainage.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-3531b330bc1f738f-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page contains no linked static documents or descendant project pages; its only main-content link is a telephone contact."
       ],
       "created_at": "2026-09-03T13:05:59.067889Z",
-      "updated_at": "2026-09-03T13:05:59.067889Z"
+      "updated_at": "2026-09-12T19:38:41.3151492Z"
     },
     {
       "candidate_id": "src-161e9721e179bb26",
@@ -1366,15 +1380,16 @@
       "title": "Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2017)",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-e982ea5e5e064616-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 1,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page links one official 2017 Gantt chart PDF, already inventoried as pending-review candidate src-8598b5c498e08c1b; no other document descendant was found."
       ],
       "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
+      "updated_at": "2026-09-12T19:38:41.4392542Z"
     },
     {
       "candidate_id": "src-202ad91d5808008d",
@@ -1382,15 +1397,16 @@
       "title": "Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2018)",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-202ad91d5808008d-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page contains no linked static documents or descendant project pages; its only main-content link is a telephone contact."
       ],
       "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
+      "updated_at": "2026-09-12T19:38:41.534637Z"
     },
     {
       "candidate_id": "src-b70b511cb25dfe10",
@@ -1398,15 +1414,16 @@
       "title": "Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2015)",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-b70b511cb25dfe10-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 1,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page links one official 2015 project schedule PDF, already inventoried as pending-review candidate src-ca8b9b57d396508c; no other document descendant was found."
       ],
       "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
+      "updated_at": "2026-09-12T19:38:41.6361227Z"
     },
     {
       "candidate_id": "src-60c67771fb47956a",
@@ -1414,15 +1431,16 @@
       "title": "Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2021)",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-60c67771fb47956a-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page contains no linked static documents or descendant project pages; its only main-content links are telephone contacts."
       ],
       "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
+      "updated_at": "2026-09-12T19:38:41.7301642Z"
     },
     {
       "candidate_id": "src-64710f1309ac2574",
@@ -1430,15 +1448,16 @@
       "title": "Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2016)",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-64710f1309ac2574-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 1,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes 1 official static document descendant(s); every document URL is already represented in the master inventory and retains its existing individual review state."
       ],
       "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
+      "updated_at": "2026-09-12T23:39:37.3661457Z"
     },
     {
       "candidate_id": "src-8919f64d734bdb83",
@@ -1446,15 +1465,16 @@
       "title": "Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2019)",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-8919f64d734bdb83-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
+      "updated_at": "2026-09-12T23:39:37.4766421Z"
     },
     {
       "candidate_id": "src-d7007a453ae04a79",
@@ -1462,15 +1482,16 @@
       "title": "Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2020)",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-d7007a453ae04a79-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
+      "updated_at": "2026-09-12T23:39:37.5647029Z"
     },
     {
       "candidate_id": "src-0234c5a50d77383f",
@@ -1478,15 +1499,16 @@
       "title": "Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2022)",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-0234c5a50d77383f-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
+      "updated_at": "2026-09-12T23:39:37.6430283Z"
     },
     {
       "candidate_id": "src-0763fdd4070f01f0",
@@ -1494,15 +1516,16 @@
       "title": "Chico Project Phase 1 Comfort Way And Ladera Rd Improvements",
       "agency": "Bernalillo County",
       "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-0763fdd4070f01f0-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-10T15:52:28.3151869Z",
-      "updated_at": "2026-09-10T15:52:28.3151869Z"
+      "updated_at": "2026-09-12T23:39:37.727111Z"
     },
     {
       "candidate_id": "src-b2680de9b7aa9d6b",
@@ -1564,15 +1587,16 @@
       "title": "Isleta Boulevard Corridor Phase I Design Schedule",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-c2d601aabba1d8b3-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 2,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes 2 official static document descendant(s); every document URL is already represented in the master inventory and retains its existing individual review state."
       ],
       "created_at": "2026-09-03T01:18:16.7547158Z",
-      "updated_at": "2026-09-03T01:18:16.7547158Z"
+      "updated_at": "2026-09-12T23:39:37.8297539Z"
     },
     {
       "candidate_id": "src-054c70be093fec44",
@@ -1616,15 +1640,16 @@
       "title": "Central Atrisco Fiberoptic Expansion Project",
       "agency": "Bernalillo County",
       "canonical_page": "content/public-works/capital-projects.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-62d3b321644b2b1a-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-03T13:43:06.8237073Z",
-      "updated_at": "2026-09-03T13:43:06.8237073Z"
+      "updated_at": "2026-09-12T23:39:37.927515Z"
     },
     {
       "candidate_id": "src-4fa70bed8f8460f7",
@@ -1632,15 +1657,16 @@
       "title": "Sunset Road Reconstruction Phase 2",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-4fa70bed8f8460f7-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-03T13:43:06.8237073Z",
-      "updated_at": "2026-09-03T13:43:06.8237073Z"
+      "updated_at": "2026-09-12T23:39:38.0493713Z"
     },
     {
       "candidate_id": "src-14bf071bcc9dbde3",
@@ -1665,15 +1691,16 @@
       "title": "Tijeras Creek Watershed Restoration Project",
       "agency": "Bernalillo County",
       "canonical_page": "content/public-works/stormwater-drainage.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-ebce549c834584d9-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-03T13:43:06.8237073Z",
-      "updated_at": "2026-09-03T13:43:06.8237073Z"
+      "updated_at": "2026-09-12T23:39:38.152612Z"
     },
     {
       "candidate_id": "src-cff5c8af175867bc",
@@ -1681,15 +1708,16 @@
       "title": "Sunset Road Improvements: Gonzales to Neetsie",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-cff5c8af175867bc-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-03T01:18:16.7547158Z",
-      "updated_at": "2026-09-03T01:18:16.7547158Z"
+      "updated_at": "2026-09-12T23:39:38.2676067Z"
     },
     {
       "candidate_id": "src-86c8e33bbd9ad791",
@@ -1697,15 +1725,16 @@
       "title": "Sunset Road Improvements Project Map",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-86c8e33bbd9ad791-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-03T01:18:16.7547158Z",
-      "updated_at": "2026-09-03T01:18:16.7547158Z"
+      "updated_at": "2026-09-12T23:39:38.3874974Z"
     },
     {
       "candidate_id": "src-2aa795138321bebe",
@@ -1782,15 +1811,16 @@
       "title": "4th Street Pavement Preservation",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-e7837973289f5918-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 1,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes 1 official static document descendant(s); every document URL is already represented in the master inventory and retains its existing individual review state."
       ],
       "created_at": "2026-09-03T01:18:16.7547158Z",
-      "updated_at": "2026-09-03T01:18:16.7547158Z"
+      "updated_at": "2026-09-12T23:39:38.4766469Z"
     },
     {
       "candidate_id": "src-84331f3cfb0f2318",
@@ -1816,15 +1846,16 @@
       "title": "Foothill Drive",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-99204ec44bdcdca0-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-03T13:43:06.8237073Z",
-      "updated_at": "2026-09-03T13:43:06.8237073Z"
+      "updated_at": "2026-09-12T23:39:38.5877038Z"
     },
     {
       "candidate_id": "src-888e72a3531b11f9",
@@ -1867,15 +1898,16 @@
       "title": "2nd Street ADA Improvements",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-dd3b3cd24c247697-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-03T01:18:16.7547158Z",
-      "updated_at": "2026-09-03T01:18:16.7547158Z"
+      "updated_at": "2026-09-12T23:39:38.6879987Z"
     },
     {
       "candidate_id": "src-06efbb4ef116cd14",
@@ -1883,15 +1915,16 @@
       "title": "2nd Street ADA Improvements Phase 2 Map",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-06efbb4ef116cd14-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-03T01:18:16.7547158Z",
-      "updated_at": "2026-09-03T01:18:16.7547158Z"
+      "updated_at": "2026-09-12T23:39:38.7941917Z"
     },
     {
       "candidate_id": "src-219c8ac7cde52685",
@@ -1899,15 +1932,16 @@
       "title": "Barcelona Road Storm Drain Project Phase 2A",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-219c8ac7cde52685-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-03T01:18:16.7547158Z",
-      "updated_at": "2026-09-03T01:18:16.7547158Z"
+      "updated_at": "2026-09-12T23:39:38.9046038Z"
     },
     {
       "candidate_id": "src-639a0614f2314c1a",
@@ -1915,15 +1949,16 @@
       "title": "Isleta Boulevard Corridor Phase II Design Schedule",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-639a0614f2314c1a-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 1,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes 1 official static document descendant(s); every document URL is already represented in the master inventory and retains its existing individual review state."
       ],
       "created_at": "2026-09-02T20:51:26.6242952Z",
-      "updated_at": "2026-09-02T20:51:26.6242952Z"
+      "updated_at": "2026-09-12T23:39:39.006881Z"
     },
     {
       "candidate_id": "src-9e44e9bc1ed7b70a",
@@ -1931,15 +1966,16 @@
       "title": "Bridge Boulevard at Cortez Intersection",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-9e44e9bc1ed7b70a-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-03T01:18:16.7547158Z",
-      "updated_at": "2026-09-03T01:18:16.7547158Z"
+      "updated_at": "2026-09-12T23:39:39.1343577Z"
     },
     {
       "candidate_id": "src-cc2a2198a662141c",
@@ -1947,15 +1983,16 @@
       "title": "Isleta Blvd Corridor Lighting",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/_index.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-cc2a2198a662141c-retained-source-crawl-2026-09-12.json",
       "discovered_documents": 0,
       "archived_documents": 0,
       "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
+        "The authored project page exposes no linked static document descendant; current project details remain preserved as the verified live source record."
       ],
       "created_at": "2026-09-03T13:05:59.067889Z",
-      "updated_at": "2026-09-03T13:05:59.067889Z"
+      "updated_at": "2026-09-12T23:39:39.2470906Z"
     },
     {
       "candidate_id": "src-1ed20b8190a6304d",
@@ -2032,16 +2069,17 @@
       "title": "For a list of current projects, click here.",
       "agency": "Bernalillo County",
       "canonical_page": "content/transportation/roadway-projects/current.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": "project-state/discovery/bernco-current-projects-crawl.json",
-      "discovered_documents": 32,
-      "archived_documents": 6,
+      "audit_status": "crawled",
+      "crawl_output": "project-state/discovery/src-6bb5c9d96d6a080d-retained-source-crawl-2026-09-12.json",
+      "discovered_documents": 1,
+      "archived_documents": 0,
       "processing_notes": [
         "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted.",
-        "Corrected crawler completed the full current-project page frontier on 2026-08-28: 40 pages retrieved with zero errors and 82 candidates captured. Remaining newly inventoried attachments require relevance review and terminal disposition before this audit closes."
+        "Corrected crawler completed the full current-project page frontier on 2026-08-28: 40 pages retrieved with zero errors and 82 candidates captured. Remaining newly inventoried attachments require relevance review and terminal disposition before this audit closes.",
+        "The current-projects index exposes 41 authored links. Every child page and the linked Bridge Boulevard Corridor Redevelopment Plan is already represented in the retained-source queue or master inventory; no missing descendant was found."
       ],
       "created_at": "2026-08-20T19:09:19.7812179Z",
-      "updated_at": "2026-08-28T22:01:37.112815Z"
+      "updated_at": "2026-09-12T23:39:39.3574331Z"
     },
     {
       "candidate_id": "src-c540ee6e20ebd64c",
@@ -2375,6 +2413,22 @@
       "updated_at": "2026-08-25T01:11:32.9869801Z"
     },
     {
+      "candidate_id": "src-9f5ac56df8c6cbb8",
+      "source_url": "https://www.cabq.gov/council/documents/1uli_final_report.abq_rail_yards_advisory_services_panel.pdf/view",
+      "title": "Albuquerque Rail Yards: Redeveloping the City's Historic Rail Yards, an Urban Land Institute Advisory Services Panel Report (February 2008)",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/development-land-use/projects.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-12T18:35:07.2822988Z",
+      "updated_at": "2026-09-12T18:35:07.2822988Z"
+    },
+    {
       "candidate_id": "src-097f7d99750de64c",
       "source_url": "https://www.cabq.gov/council/documents/complete-streets/Girard_ExistingConditions_Aug23.pdf/view",
       "title": "Girard Boulevard Existing Conditions Assessment",
@@ -2423,6 +2477,54 @@
       "updated_at": "2026-08-31T04:16:46.4923819Z"
     },
     {
+      "candidate_id": "src-4347bb9af15c89ba",
+      "source_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/Investigation%20Request%20of%20Redflex%20Letter.pdf/view",
+      "title": "Councilor Dan Lewis Request for Investigation into the Redflex Traffic Systems Contract With the City of Albuquerque, January 24, 2014",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/transportation/safety-crash-data.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-12T18:35:07.2822988Z",
+      "updated_at": "2026-09-12T18:35:07.2822988Z"
+    },
+    {
+      "candidate_id": "src-fc250f15df2ab028",
+      "source_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/O4Enacted.pdf/view",
+      "title": "Enacted Ordinance O-2014-005: Approving a Project Involving Eclipse Aerospace, Inc. Under the Local Economic Development Act (Council Bill O-14-4)",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/budget-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-12T18:35:07.2822988Z",
+      "updated_at": "2026-09-12T18:35:07.2822988Z"
+    },
+    {
+      "candidate_id": "src-77ded92dfd05478c",
+      "source_url": "https://www.cabq.gov/council/documents/councilor-district-5-documents/r-10-44.pdf/view",
+      "title": "Enacted Resolution R-2010-056: Creating a Traffic and Pedestrian Safety Project on Rainbow Boulevard and Universe Boulevard (Council Bill C/S R-10-44)",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/transportation/roadway-projects/_index.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-12T18:35:07.2822988Z",
+      "updated_at": "2026-09-12T18:35:07.2822988Z"
+    },
+    {
       "candidate_id": "src-66553f9534aa579f",
       "source_url": "https://www.cabq.gov/council/documents/councilor-district-6-documents/ZuniGeometricAnalysis.pdf/view",
       "title": "Central Avenue and Zuni Road Cross-Section Modification Analysis",
@@ -2437,6 +2539,22 @@
       ],
       "created_at": "2026-09-03T13:05:59.067889Z",
       "updated_at": "2026-09-03T13:05:59.067889Z"
+    },
+    {
+      "candidate_id": "src-9642139286c8f411",
+      "source_url": "https://www.cabq.gov/council/documents/dec_2008.dmd_proposal_for_stop_sign_reconfiguration.raynolds_and_barelas.pdf/view",
+      "title": "Stop Sign Reconfiguration Proposal for Raynolds and Barelas, December 2008",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/transportation/operations-data.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-12T18:35:07.2822988Z",
+      "updated_at": "2026-09-12T18:35:07.2822988Z"
     },
     {
       "candidate_id": "src-1c078f889adede14",
@@ -2469,6 +2587,22 @@
       ],
       "created_at": "2026-09-09T20:48:04.9375036Z",
       "updated_at": "2026-09-09T20:48:04.9375036Z"
+    },
+    {
+      "candidate_id": "src-a3afa3078e7351a7",
+      "source_url": "https://www.cabq.gov/council/documents/natffinalrpt2.pdf/view",
+      "title": "Neighborhood Task Force Final Report to the City Council (September 2007)",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/development-land-use/development-process.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-12T18:35:07.2822988Z",
+      "updated_at": "2026-09-12T18:35:07.2822988Z"
     },
     {
       "candidate_id": "src-d25ae9b6c27b4b2c",
@@ -4019,9 +4153,25 @@
       "updated_at": "2026-08-25T01:12:22.4497089Z"
     },
     {
-      "candidate_id": "src-dc6e3fd3425cb32a",
+      "candidate_id": "src-3c9907796a0cfaf3",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc",
+      "title": "Water Master Plan Infrastructure Zone (WIZ) Map - Appendix page B-6; parent document not located",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-17T15:27:24.9161968Z",
+      "updated_at": "2026-09-17T15:27:24.9161968Z"
+    },
+    {
+      "candidate_id": "src-d03009026d67b56c",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/bondprojectrankings.pdf/view",
-      "title": "2003 Staff Committee General Obligation Bond Project Rankings",
+      "title": "Official City Record",
       "agency": "City of Albuquerque",
       "canonical_page": "content/city-data/capital-spending.md",
       "audit_status": "crawled",
@@ -4033,7 +4183,7 @@
         "Official City metadata wrapper and its authoritative direct file were reviewed; the qualifying original is archived and linked with provenance preserved."
       ],
       "created_at": "2026-08-29T14:48:18.782626Z",
-      "updated_at": "2026-08-29T14:48:19.3434462Z"
+      "updated_at": "2026-09-14T02:22:54.9379466Z"
     },
     {
       "candidate_id": "src-230753126ba3bbf7",
@@ -4048,13 +4198,13 @@
       "processing_notes": [
         "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
       ],
-      "created_at": "2026-09-16T22:51:43.6844719Z",
-      "updated_at": "2026-09-16T22:51:43.6844719Z"
+      "created_at": "2026-09-11T21:06:16.0995403Z",
+      "updated_at": "2026-09-11T21:06:16.0995403Z"
     },
     {
-      "candidate_id": "src-74326241e19c1551",
+      "candidate_id": "src-729386d247b3831d",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/DecadePlanCriteria.pdf/view",
-      "title": "2003 Decade Plan Project Evaluation Criteria",
+      "title": "Official City Record",
       "agency": "City of Albuquerque",
       "canonical_page": "content/city-data/capital-spending.md",
       "audit_status": "crawled",
@@ -4066,263 +4216,7 @@
         "Official City metadata wrapper and its authoritative direct file were reviewed; the qualifying original is archived and linked with provenance preserved."
       ],
       "created_at": "2026-08-29T14:48:18.782626Z",
-      "updated_at": "2026-08-29T14:48:19.290938Z"
-    },
-    {
-      "candidate_id": "src-724dd13839ecb166",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/FireProtectionBonds.pdf/view",
-      "title": "2003 Fire Protection General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-16T22:51:43.6844719Z",
-      "updated_at": "2026-09-16T22:51:43.6844719Z"
-    },
-    {
-      "candidate_id": "src-57a1e412247c863d",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/FundingAllocationChart.pdf/view",
-      "title": "2003 General Obligation Bond Funding Allocation Chart",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-16T22:51:43.6844719Z",
-      "updated_at": "2026-09-16T22:51:43.6844719Z"
-    },
-    {
-      "candidate_id": "src-888427a6abc5edf0",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/LibraryBonds.pdf/view",
-      "title": "2003 Library General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-16T22:51:43.6844719Z",
-      "updated_at": "2026-09-16T22:51:43.6844719Z"
-    },
-    {
-      "candidate_id": "src-0782d8521e42a068",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/operations.pdf/view",
-      "title": "2003 General Obligation Bond Operating and Maintenance Cost Impacts",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-10T15:52:28.3151869Z",
-      "updated_at": "2026-09-10T15:52:28.3151869Z"
-    },
-    {
-      "candidate_id": "src-96e217080e84c14e",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/ParksRecreationBonds.pdf/view",
-      "title": "2003 Parks and Recreation General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-16T22:51:43.6844719Z",
-      "updated_at": "2026-09-16T22:51:43.6844719Z"
-    },
-    {
-      "candidate_id": "src-ea516f826e5da86a",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/PoliceBonds.pdf/view",
-      "title": "2003 Police General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-16T22:51:43.6844719Z",
-      "updated_at": "2026-09-16T22:51:43.6844719Z"
-    },
-    {
-      "candidate_id": "src-a24b9d451e022e8f",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/PublicFacEquipment.pdf/view",
-      "title": "2003 Public Facilities, Equipment, and System Modernization General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-16T22:51:43.6844719Z",
-      "updated_at": "2026-09-16T22:51:43.6844719Z"
-    },
-    {
-      "candidate_id": "src-e7cd892adf805950",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/PublicTransportation.pdf/view",
-      "title": "2003 Public Transportation General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-16T22:51:43.6844719Z",
-      "updated_at": "2026-09-16T22:51:43.6844719Z"
-    },
-    {
-      "candidate_id": "src-cae140d675779242",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/R-02-30.pdf/view",
-      "title": "2003 Capital Improvements Plan Priorities and Criteria Resolution R-02-30",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-16T22:51:43.6844719Z",
-      "updated_at": "2026-09-16T22:51:43.6844719Z"
-    },
-    {
-      "candidate_id": "src-93085b1bc76f4709",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/R-03-215.pdf/view",
-      "title": "2003-2012 Decade Plan and 2003 Two-Year Capital Budget Resolution R-03-215",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-16T22:51:43.6844719Z",
-      "updated_at": "2026-09-16T22:51:43.6844719Z"
-    },
-    {
-      "candidate_id": "src-d86965da6d5d26f2",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/R-03-265.pdf/view",
-      "title": "2003 Capital Budget Amendment Resolution R-03-265",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-16T22:51:43.6844719Z",
-      "updated_at": "2026-09-16T22:51:43.6844719Z"
-    },
-    {
-      "candidate_id": "src-3dfd629f27870dc1",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/RehabMaintSumm.pdf/view",
-      "title": "2003 General Obligation Bond Rehabilitation, Maintenance, and Deficiency Remediation Summary",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-16T22:51:43.6844719Z",
-      "updated_at": "2026-09-16T22:51:43.6844719Z"
-    },
-    {
-      "candidate_id": "src-321df68eff322421",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/SeniorFamilyComm.pdf/view",
-      "title": "2003 Senior, Family, and Community Center General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-16T22:51:43.6844719Z",
-      "updated_at": "2026-09-16T22:51:43.6844719Z"
-    },
-    {
-      "candidate_id": "src-e28f489ec0fba72f",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/StormSewerBonds.pdf/view",
-      "title": "2003 Storm Sewer System General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-6fc996f849849028",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/StreetBonds.pdf/view",
-      "title": "2003 Street General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-16T22:51:43.6844719Z",
-      "updated_at": "2026-09-16T22:51:43.6844719Z"
-    },
-    {
-      "candidate_id": "src-3c7653f64815b4ad",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/ZooBioParkMuseum.pdf/view",
-      "title": "2003 Zoo, Biological Park, and Museum General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-16T22:51:43.6844719Z",
-      "updated_at": "2026-09-16T22:51:43.6844719Z"
+      "updated_at": "2026-09-14T02:22:54.9379466Z"
     },
     {
       "candidate_id": "src-b196c741237acbf2",
@@ -4388,8 +4282,8 @@
       "processing_notes": [
         "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
       ],
-      "created_at": "2026-09-16T22:51:43.6844719Z",
-      "updated_at": "2026-09-16T22:51:43.6844719Z"
+      "created_at": "2026-09-11T21:06:16.0995403Z",
+      "updated_at": "2026-09-11T21:06:16.0995403Z"
     },
     {
       "candidate_id": "src-8c5d2888cc22b991",
@@ -4404,8 +4298,8 @@
       "processing_notes": [
         "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
       ],
-      "created_at": "2026-09-16T22:51:43.6844719Z",
-      "updated_at": "2026-09-16T22:51:43.6844719Z"
+      "created_at": "2026-09-11T21:06:16.0995403Z",
+      "updated_at": "2026-09-11T21:06:16.0995403Z"
     },
     {
       "candidate_id": "src-f1a9e4e7e1d84e9e",
@@ -4420,8 +4314,8 @@
       "processing_notes": [
         "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
       ],
-      "created_at": "2026-09-16T22:51:43.6844719Z",
-      "updated_at": "2026-09-16T22:51:43.6844719Z"
+      "created_at": "2026-09-11T21:06:16.0995403Z",
+      "updated_at": "2026-09-11T21:06:16.0995403Z"
     },
     {
       "candidate_id": "src-ba1ff357823017a2",
@@ -4453,8 +4347,8 @@
       "processing_notes": [
         "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
       ],
-      "created_at": "2026-09-16T22:51:43.6844719Z",
-      "updated_at": "2026-09-16T22:51:43.6844719Z"
+      "created_at": "2026-09-11T21:06:16.0995403Z",
+      "updated_at": "2026-09-11T21:06:16.0995403Z"
     },
     {
       "candidate_id": "src-8e8e799fe1441d72",
@@ -4555,6 +4449,54 @@
       "updated_at": "2026-08-31T15:55:51.6069717Z"
     },
     {
+      "candidate_id": "src-e12c77bb460b9c8f",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/council_sas_-_scopes.pdf/view",
+      "title": "2009 Council Neighborhood Set-Aside Project Scopes",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.724032Z",
+      "updated_at": "2026-09-13T00:08:17.724032Z"
+    },
+    {
+      "candidate_id": "src-cb27c408e8c26a66",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/council_sas_-_summary.pdf/view",
+      "title": "2009–2017 Council Neighborhood Set-Aside General Obligation Bond Summary",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.724032Z",
+      "updated_at": "2026-09-13T00:08:17.724032Z"
+    },
+    {
+      "candidate_id": "src-999d681b4e75a4c1",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/cultural_services_-_scope.pdf/view",
+      "title": "2009 Cultural Services General Obligation Bond Project Scopes",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.724032Z",
+      "updated_at": "2026-09-13T00:08:17.724032Z"
+    },
+    {
       "candidate_id": "src-0352ae60169eac10",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/family_and_community_services_-_scope.pdf/view",
       "title": "family and community services scope.pdf",
@@ -4569,6 +4511,102 @@
       ],
       "created_at": "2026-09-10T15:52:28.3151869Z",
       "updated_at": "2026-09-10T15:52:28.3151869Z"
+    },
+    {
+      "candidate_id": "src-e69e9150b150bc1a",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/fire_-_scope.pdf/view",
+      "title": "2009 Fire General Obligation Bond Project Scopes",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.724032Z",
+      "updated_at": "2026-09-13T00:08:17.724032Z"
+    },
+    {
+      "candidate_id": "src-b7ef66c741b8a886",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/fire_-_summary.pdf/view",
+      "title": "2009–2017 Fire General Obligation Bond Summary",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.724032Z",
+      "updated_at": "2026-09-13T00:08:17.724032Z"
+    },
+    {
+      "candidate_id": "src-768a6855fcfaf443",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/library_bonds.pdf/view",
+      "title": "2009 Library General Obligation Bond Authorization",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.724032Z",
+      "updated_at": "2026-09-13T00:08:17.724032Z"
+    },
+    {
+      "candidate_id": "src-5603714dac7351ba",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/police_-_scope.pdf/view",
+      "title": "2009 Police General Obligation Bond Project Scopes",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.724032Z",
+      "updated_at": "2026-09-13T00:08:17.724032Z"
+    },
+    {
+      "candidate_id": "src-535234f371b3922c",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/police_-_summary.pdf/view",
+      "title": "2009–2017 Police General Obligation Bond Summary",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.724032Z",
+      "updated_at": "2026-09-13T00:08:17.724032Z"
+    },
+    {
+      "candidate_id": "src-b049c4df2812749b",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/public_safety_bonds.pdf/view",
+      "title": "2009 Public Safety General Obligation Bond Authorization",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.724032Z",
+      "updated_at": "2026-09-13T00:08:17.724032Z"
     },
     {
       "candidate_id": "src-370fed4be1f1effa",
@@ -4587,6 +4625,22 @@
       "updated_at": "2026-08-31T19:58:16.661498Z"
     },
     {
+      "candidate_id": "src-7567c5f27fceba0a",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/senior_family_community_center_community_enhancement_project_bonds.pdf/view",
+      "title": "2009 Senior, Family, Community Center, and Community Enhancement Project Bond Authorization",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.724032Z",
+      "updated_at": "2026-09-13T00:08:17.724032Z"
+    },
+    {
       "candidate_id": "src-e8df08f8bb47b981",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/street_bonds.pdf/view",
       "title": "2009 Streets General Obligation Bond Project Scopes",
@@ -4603,6 +4657,86 @@
       "updated_at": "2026-09-09T20:48:04.9375036Z"
     },
     {
+      "candidate_id": "src-b9402ce7e2e6c22f",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/uetf_2010-2011_summary.pdf/view",
+      "title": "Urban Enhancement Trust Fund 2010–2011 Funding Summary",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.724032Z",
+      "updated_at": "2026-09-13T00:08:17.724032Z"
+    },
+    {
+      "candidate_id": "src-f70c337140899545",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/uetf_2010-2011.pdf/view",
+      "title": "Urban Enhancement Trust Fund 2010–2011 Program Overview",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.724032Z",
+      "updated_at": "2026-09-13T00:08:17.724032Z"
+    },
+    {
+      "candidate_id": "src-10edc718610865b0",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/uetf_2010-2011projects.pdf/view",
+      "title": "Urban Enhancement Trust Fund 2010–2011 Funded Projects",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-13T00:08:17.724032Z",
+      "updated_at": "2026-09-13T00:08:17.724032Z"
+    },
+    {
+      "candidate_id": "src-25501032bfbfa682",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1affordable_housing_scope.pdf/view",
+      "title": "2011 Affordable Housing General Obligation Bond Project Scope (Initial Version)",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
+    },
+    {
+      "candidate_id": "src-b08cdbd2624ad1a0",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1family_scope.pdf/view",
+      "title": "2011 Family and Community Services General Obligation Bond Project Scopes (Initial Version)",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
+    },
+    {
       "candidate_id": "src-27bd37adf07104b9",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1family_summary.pdf/view",
       "title": "2011 Family and Community Services General Obligation Bond Schedule (Initial Version)",
@@ -4617,6 +4751,150 @@
       ],
       "created_at": "2026-09-09T20:48:04.9375036Z",
       "updated_at": "2026-09-09T20:48:04.9375036Z"
+    },
+    {
+      "candidate_id": "src-542056c326cf2578",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1finance_summary.pdf/view",
+      "title": "2011-2019 Finance and Administrative Services General Obligation Bond Schedule (Initial Version)",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
+    },
+    {
+      "candidate_id": "src-e6ca25d4cfa80752",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1fire_scope.pdf/view",
+      "title": "2011 Fire General Obligation Bond Project Scopes (Initial Version)",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
+    },
+    {
+      "candidate_id": "src-a547a0278fb86fb9",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1fire_summary.pdf/view",
+      "title": "2011-2019 Fire General Obligation Bond Schedule (Initial Version)",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
+    },
+    {
+      "candidate_id": "src-89b36d5577443f99",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1planning_scope.pdf/view",
+      "title": "2011 Planning General Obligation Bond Project Scopes (Initial Version)",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
+    },
+    {
+      "candidate_id": "src-c9af414f77032660",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1planning_summary.pdf/view",
+      "title": "2011-2019 Planning General Obligation Bond Schedule (Initial Version)",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
+    },
+    {
+      "candidate_id": "src-be70a79a59ae0915",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1streets_scope.pdf/view",
+      "title": "2011 Streets General Obligation Bond Project Scopes (Initial Version)",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
+    },
+    {
+      "candidate_id": "src-a31943aca401c7f0",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/1streets_summary.pdf/view",
+      "title": "2011-2019 Streets General Obligation Bond Schedule (Initial Version)",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
+    },
+    {
+      "candidate_id": "src-2746069f062780cf",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/2011_g.o._summary.pdf/view",
+      "title": "2011-2019 General Obligation Bond Summary Totals",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
+    },
+    {
+      "candidate_id": "src-54665bf864159096",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/affordable_housing_scope.pdf/view",
+      "title": "2011 Affordable Housing General Obligation Bond Project Scope",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
     },
     {
       "candidate_id": "src-65e4a509079e184f",
@@ -4651,6 +4929,22 @@
       "updated_at": "2026-09-06T14:59:18.5583165Z"
     },
     {
+      "candidate_id": "src-75f032fd59799df5",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/council_neigh-set_aside_scope.pdf/view",
+      "title": "2011 Council Neighborhood Set-Aside Project Scopes",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
+    },
+    {
       "candidate_id": "src-bd60d8eab4edf667",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/council_neigh-set_aside_summary.pdf/view",
       "title": "2011 Council Neighborhood Set-Aside General Obligation Bond Schedule",
@@ -4665,6 +4959,22 @@
       ],
       "created_at": "2026-09-06T14:59:18.5583165Z",
       "updated_at": "2026-09-06T14:59:18.5583165Z"
+    },
+    {
+      "candidate_id": "src-afc7fa6f1c4ac06f",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/cultural_services_scope.pdf/view",
+      "title": "2011 Cultural Services General Obligation Bond Project Scopes",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
     },
     {
       "candidate_id": "src-003fea9b67977cc0",
@@ -4683,6 +4993,22 @@
       "updated_at": "2026-09-06T14:59:18.5583165Z"
     },
     {
+      "candidate_id": "src-4bafa6f452f2f586",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/env_health_scope.pdf/view",
+      "title": "2011 Environmental Health General Obligation Bond Project Scopes",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
+    },
+    {
       "candidate_id": "src-9eacad9e5872b301",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/env_health_summary.pdf/view",
       "title": "2011–2019 Environmental Health General Obligation Bond Schedule",
@@ -4697,6 +5023,22 @@
       ],
       "created_at": "2026-09-06T14:59:18.5583165Z",
       "updated_at": "2026-09-06T14:59:18.5583165Z"
+    },
+    {
+      "candidate_id": "src-2ed981e6df5e99d2",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/facilities_scope.pdf/view",
+      "title": "2011 City Facilities, CIP, and Parking General Obligation Bond Project Scopes",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
     },
     {
       "candidate_id": "src-b3c2636a2b9c5372",
@@ -4715,6 +5057,22 @@
       "updated_at": "2026-09-06T14:59:18.5583165Z"
     },
     {
+      "candidate_id": "src-352694313c3e5710",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/family_scope.pdf/view",
+      "title": "2011 Family and Community Services General Obligation Bond Project Scopes",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
+    },
+    {
       "candidate_id": "src-90969f7fd9f9f810",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/family_summary.pdf/view",
       "title": "2011–2019 Family and Community Services General Obligation Bond Schedule",
@@ -4729,6 +5087,22 @@
       ],
       "created_at": "2026-09-06T14:59:18.5583165Z",
       "updated_at": "2026-09-06T14:59:18.5583165Z"
+    },
+    {
+      "candidate_id": "src-2daae0eb6e136555",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/finance_scope.pdf/view",
+      "title": "2011 Finance and Administrative Services General Obligation Bond Project Scopes",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
     },
     {
       "candidate_id": "src-38b254217ef6c868",
@@ -4747,6 +5121,22 @@
       "updated_at": "2026-09-06T14:59:18.5583165Z"
     },
     {
+      "candidate_id": "src-db9fefd23083da69",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/fire_scope.pdf/view",
+      "title": "2011 Fire General Obligation Bond Project Scopes",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
+    },
+    {
       "candidate_id": "src-3d3737d5175c3ef7",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/fire_summary.pdf/view",
       "title": "2011–2019 Fire General Obligation Bond Schedule",
@@ -4761,6 +5151,22 @@
       ],
       "created_at": "2026-09-06T14:59:18.5583165Z",
       "updated_at": "2026-09-06T14:59:18.5583165Z"
+    },
+    {
+      "candidate_id": "src-27d391d187280ced",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/parks_and_recreation_scope.pdf/view",
+      "title": "2011 Parks and Recreation General Obligation Bond Project Scopes",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
     },
     {
       "candidate_id": "src-5d81348c100d185e",
@@ -4779,6 +5185,22 @@
       "updated_at": "2026-09-06T14:59:18.5583165Z"
     },
     {
+      "candidate_id": "src-b7f0628556085641",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/planning_scope.pdf/view",
+      "title": "2011 Planning General Obligation Bond Project Scopes",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
+    },
+    {
       "candidate_id": "src-cce2d0242f9145bd",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/planning_summary.pdf/view",
       "title": "2011–2019 Planning General Obligation Bond Schedule",
@@ -4793,6 +5215,22 @@
       ],
       "created_at": "2026-09-06T14:59:18.5583165Z",
       "updated_at": "2026-09-06T14:59:18.5583165Z"
+    },
+    {
+      "candidate_id": "src-f74d655ffb05fd08",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/police_scope.pdf/view",
+      "title": "2011 Police General Obligation Bond Project Scopes",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
     },
     {
       "candidate_id": "src-61f62a0f79a49ead",
@@ -4811,6 +5249,54 @@
       "updated_at": "2026-09-06T14:59:18.5583165Z"
     },
     {
+      "candidate_id": "src-b90b07ac62c4f7fd",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/senior_affairs_scope.pdf/view",
+      "title": "2011 Senior Affairs General Obligation Bond Project Scopes",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
+    },
+    {
+      "candidate_id": "src-4cd84ecef3756fb0",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/senior_affairs_summary.pdf/view",
+      "title": "2011-2019 Senior Affairs General Obligation Bond Schedule",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
+    },
+    {
+      "candidate_id": "src-2663fc607177e07d",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/storm_drainage_scope.pdf/view",
+      "title": "2011 Storm Drainage General Obligation Bond Project Scopes",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
+    },
+    {
       "candidate_id": "src-4c768545506342aa",
       "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/storm_drainage_summary.pdf/view",
       "title": "2011–2019 Storm Drainage General Obligation Bond Schedule",
@@ -4825,6 +5311,22 @@
       ],
       "created_at": "2026-09-06T14:59:18.5583165Z",
       "updated_at": "2026-09-06T14:59:18.5583165Z"
+    },
+    {
+      "candidate_id": "src-d30fe509d51eec50",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/streets_scope.pdf/view",
+      "title": "2011 Streets General Obligation Bond Project Scopes",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
     },
     {
       "candidate_id": "src-5265cf315f641e6c",
@@ -4858,6 +5360,22 @@
       ],
       "created_at": "2026-08-29T14:48:18.782626Z",
       "updated_at": "2026-08-29T14:48:19.1889658Z"
+    },
+    {
+      "candidate_id": "src-b37593a011f57fae",
+      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/transit_scope.pdf/view",
+      "title": "2011 ABQ RIDE Transit General Obligation Bond Project Scopes",
+      "agency": "City of Albuquerque",
+      "canonical_page": "content/city-data/capital-spending.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-11T23:14:25.378935Z",
+      "updated_at": "2026-09-11T23:14:25.378935Z"
     },
     {
       "candidate_id": "src-04a2e444a39dcd41",
@@ -4923,486 +5441,6 @@
       ],
       "created_at": "2026-08-29T14:48:18.782626Z",
       "updated_at": "2026-08-29T14:48:19.1369807Z"
-    },
-    {
-      "candidate_id": "src-4481a036f1386231",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/abq-ride-transit-scope.pdf/view",
-      "title": "2017 ABQ RIDE Transit General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-0aebef9e2df3a7c4",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/abq-ride-transit-summary.pdf/view",
-      "title": "2017-2025 ABQ RIDE Transit General Obligation Bond Summary",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-12ebd2ca96b15422",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/animal-welfare-scope.pdf/view",
-      "title": "2017 Animal Welfare General Obligation Bond Project Scope",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-313a529220b95ddf",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/animal-welfare-summary.pdf/view",
-      "title": "2017-2025 Animal Welfare General Obligation Bond Summary",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-797e0116c0f7b0a2",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/cultural-services-scope.pdf/view",
-      "title": "2017 Cultural Services General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-522b52d5a15c0181",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/cultural-services-summary.pdf/view",
-      "title": "2017-2025 Cultural Services General Obligation Bond Summary",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-336e74527d9d663e",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-cip-fac-parking-scope.pdf/view",
-      "title": "2017 City Facilities, CIP, and Parking General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-b474f3df7b9187a7",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-cip-fac-parking-summary.pdf/view",
-      "title": "2017-2025 City Facilities, CIP, and Parking General Obligation Bond Summary",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-72e8d54278492d06",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-storm-drainage-scope.pdf/view",
-      "title": "2017 Storm Drainage General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-e43d7a5f1c1d6bfe",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-storm-drainage-summary.pdf/view",
-      "title": "2017-2025 Storm Drainage General Obligation Bond Summary",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-249fd1fc3b6de51a",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-streets-scope.pdf/view",
-      "title": "2017 Streets General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-83d02810b171f365",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-streets-summary.pdf/view",
-      "title": "2017-2025 Streets General Obligation Bond Summary",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-61ad2dbdc6d9a82f",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/env-health-scope.pdf/view",
-      "title": "2017 Environmental Health General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-0ab1f927f3729215",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/env-health-summary.pdf/view",
-      "title": "2017-2025 Environmental Health General Obligation Bond Summary",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-0fa26c668eff7260",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/family-comm-services-scope.pdf/view",
-      "title": "2017 Family and Community Services General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-b1c6bfb2ba73681d",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/family-comm-services-summary.pdf/view",
-      "title": "2017-2025 Family and Community Services General Obligation Bond Summary",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-cab3e5143a63a282",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/introduction.docx/view",
-      "title": "2017 General Obligation Bond Program and 2017-2026 Decade Plan Introduction",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-845ddacac48d818e",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/parks-recreation-scope.pdf/view",
-      "title": "2017 Parks and Recreation General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-463cc9e5e708ca82",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/parks-recreation-summary.pdf/view",
-      "title": "2017-2025 Parks and Recreation General Obligation Bond Summary",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-216a7703a7f21006",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/planning-scope.pdf/view",
-      "title": "2017 Planning General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-0e7f98215f3fbb7d",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/planning-summary.pdf/view",
-      "title": "2017-2025 Planning General Obligation Bond Summary",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-659e9742c87de3e4",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/process.docx/view",
-      "title": "2017 General Obligation Bond Project Planning, Selection, and Approval Process",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-2e9204f14cd8f46d",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/public-safety-fire-scope.pdf/view",
-      "title": "2017 Fire General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-1b90ccd44428b6ab",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/public-safety-fire-summary.pdf/view",
-      "title": "2017-2025 Fire General Obligation Bond Summary",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-111d265ec8a4592f",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/public-safety-police-scope.pdf/view",
-      "title": "2017 Police General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-b6933b287a6b8183",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/public-safety-police-summary.pdf/view",
-      "title": "2017-2025 Police General Obligation Bond Summary",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-bc0e9217d013a65e",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/senior-affairs-scope.pdf/view",
-      "title": "2017 Senior Affairs General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-130191bd25715b96",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/senior-affairs-summary.pdf/view",
-      "title": "2017-2025 Senior Affairs General Obligation Bond Summary",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-5fde9efeb5f56c2b",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/technology-innovation-services-scope.pdf/view",
-      "title": "2017 Technology and Innovation Services General Obligation Bond Project Scopes",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
-    },
-    {
-      "candidate_id": "src-e89fa88be97ca7b0",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/technology-innovation-services-summary.pdf/view",
-      "title": "2017-2025 Technology and Innovation Services General Obligation Bond Summary",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
-      ],
-      "created_at": "2026-09-09T20:48:04.9375036Z",
-      "updated_at": "2026-09-09T20:48:04.9375036Z"
     },
     {
       "candidate_id": "src-02e5a5bcff518eca",
@@ -8748,6 +8786,22 @@
       "updated_at": "2026-09-01T01:54:11.4758293Z"
     },
     {
+      "candidate_id": "src-06dce4ce29536831",
+      "source_url": "https://www.mrcog-nm.gov/637/Regional-Planning-Workshops-and-Training",
+      "title": "Legalization of Cannabis in New Mexico: Planning Commissioner Workshop",
+      "agency": "MRCOG",
+      "canonical_page": "content/development-land-use/zoning-ido.md",
+      "audit_status": "pending descendant crawl",
+      "crawl_output": null,
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "A retained active source page must be recursively reviewed for relevant child pages and attached files before its descendant pathway is considered exhausted."
+      ],
+      "created_at": "2026-09-12T19:20:09.1465456Z",
+      "updated_at": "2026-09-12T19:20:09.1465456Z"
+    },
+    {
       "candidate_id": "src-30893aa844583ca1",
       "source_url": "https://www.mrcog-nm.gov/676/Performance-Based-Planning",
       "title": "MRMPO performance-based planning and programming",
@@ -9339,38 +9393,6 @@
       ],
       "created_at": "2026-08-26T16:35:48.5793175Z",
       "updated_at": "2026-08-26T16:35:48.5793175Z"
-    },
-    {
-      "candidate_id": "src-6735737588d294e0",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/epchearings.pdf/view",
-      "title": "2003 Environmental Planning Commission Recommendation and Notice of Decision - Mayor Proposed 2003-2012 Decade Plan",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "Added after the editorial resolution changed this retained official source to validated. No descendant crawl was repeated in this campaign."
-      ],
-      "created_at": "2026-09-17T15:04:13.9739408Z",
-      "updated_at": "2026-09-17T15:04:13.9784307Z"
-    },
-    {
-      "candidate_id": "src-3c9907796a0cfaf3",
-      "source_url": "https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc/WaterMasterPlanInfra.pdf/view",
-      "title": "Water Master Plan Infrastructure Zone (WIZ) Map - Appendix page B-6; parent document not located",
-      "agency": "City of Albuquerque",
-      "canonical_page": "content/city-data/capital-spending.md",
-      "audit_status": "pending descendant crawl",
-      "crawl_output": null,
-      "discovered_documents": 0,
-      "archived_documents": 0,
-      "processing_notes": [
-        "Added after the editorial resolution changed this retained official source to validated. No descendant crawl was repeated in this campaign."
-      ],
-      "created_at": "2026-09-17T15:04:13.9802370Z",
-      "updated_at": "2026-09-17T15:04:13.9802819Z"
     }
   ]
 }

@@ -6,9 +6,15 @@ Planning, design standards, and selected major projects for City-owned buildings
 
 ## Historical Capital Programming
 
-- [2017 City Facilities, CIP, and Parking General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/city-facilities/cabq-2017-city-facilities-parking-go-bond-project-scopes.pdf)
+- [2011 City Facilities, CIP, and Parking General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/city-facilities/cabq-2011-city-facilities-cip-parking-go-bond-project-scopes-published.pdf)
 
-  Details $3.55 million in 2017 Municipal Development scopes for replacement vehicles, parks construction equipment, City building and roof rehabilitation, Civic underground fire suppression and emergency power, ABC Government Center systems, parking facilities, and security improvements. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/public-works/city-facilities/cabq-2017-2025-city-facilities-parking-go-bond-summary.pdf) schedules $19.15 million through 2025. [Full 2017 capital-program record](/city-data/capital-spending/#2017-general-obligation-bond-program) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-cip-fac-parking-scope.pdf) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/dmd-cip-fac-parking-summary.pdf)
+  Details 2011 Municipal Development bond scopes for replacing aging vehicles, City building improvement and rehabilitation, energy and security systems, roofs, and parking facility upgrades. [Full 2011 published-scope record](/city-data/capital-spending/#2011-published-scope-and-version-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/facilities_scope.pdf)
+
+- [2017-2026 Decade Plan and 2017 General Obligation Bond Program: Mayor's Recommendation (Official Program Book, Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-2026-decade-plan-mayors-recommendation-2017.pdf)
+
+  The City's complete 2017 program book includes the City Facilities, CIP, energy, security, and parking scopes and funding schedule within the broader decade plan, with selection criteria and governing records.
+
+  [Full 2017 program context](/city-data/capital-spending/#historical-capital-programs) · [Official City record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/2017-mayors-recommendation-to-city-council.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/2017-mayors-recommendation-to-city-council.pdf)
 
 - [2007–2016 Municipal Facilities, Energy, Security, and Parking Capital Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2007-2016-municipal-facilities-energy-security-parking-capital-summary.pdf)
 
@@ -31,6 +37,12 @@ Planning, design standards, and selected major projects for City-owned buildings
   [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-building-design-standards-oct-2025-rev-17.pdf) · [Official City document page](https://www.cabq.gov/municipaldevelopment/documents/cip-building-design-standards-oct-2025-rev-17.pdf/view)
 
 ## Aviation Facilities
+
+- [Albuquerque International Sunport Airport Master Plan Executive Summary (Archived PDF)](https://files.abqinfo.com/public-works/city-facilities/cabq-sunport-airport-master-plan-executive-summary.pdf)
+
+  Summarizes the Albuquerque International Sunport master plan across forty-four pages, covering aviation demand forecasts, airfield and terminal requirements, land use, and the recommended development program for the airport.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/AirportMasterPlan-ExSum.pdf)
 
 - [Double Eagle II Airport Master Plan (2019; Amended 2024 Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-double-eagle-ii-airport-master-plan-2019-amended-2024.pdf)
 

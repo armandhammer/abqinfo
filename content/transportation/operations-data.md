@@ -44,6 +44,12 @@ Regional roadway operations, traffic analysis, incident management, and intellig
 
 ## Signal Operations and Crossing Controls
 
+- [Stop Sign Reconfiguration Proposal for Raynolds and Barelas (2008 Archived PDF)](https://files.abqinfo.com/transportation/operations-data/cabq-raynolds-barelas-stop-sign-reconfiguration-proposal-2008.pdf)
+
+  The City Municipal Development traffic engineering proposal maps the one-way street grid in the Raynolds and Barelas neighborhoods, marking which existing stop signs would remain, which would be removed, and where new stop signs would be installed.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/dec_2008.dmd_proposal_for_stop_sign_reconfiguration.raynolds_and_barelas.pdf)
+
 - [Yellow-Light and All-Red Clearance Timing Effectiveness Study (2012 archived PDF)](https://files.abqinfo.com/transportation/operations-data/cabq-yellow-all-red-clearance-timing-effectiveness-study-2012.pdf)
 
   Evaluates crash frequency, type, and severity after yellow-light timing changes at 18 Albuquerque intersections and all-red clearance changes at two intersections formerly monitored by red-light cameras.

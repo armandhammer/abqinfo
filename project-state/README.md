@@ -2,7 +2,7 @@
 
 For normal Codex work, read `AGENTS.md` and [CURRENT.md](CURRENT.md). `CURRENT.md` is the compact durable resume state between sessions and between Codex logins. The former Codex/Claude handoff protocol is historical and must not be loaded as routine startup context.
 
-For simultaneous file/source/link verification by Codex and Claude, follow [PARALLEL-VERIFICATION.md](PARALLEL-VERIFICATION.md). It uses immutable disjoint shards in detached worktrees and reserves all durable state changes for one integrator.
+For concurrent file/source/link verification within the Codex workflow, follow [PARALLEL-VERIFICATION.md](PARALLEL-VERIFICATION.md). It uses immutable disjoint shards in detached worktrees and reserves all durable state changes for one integrator. Legacy `codex` and `claude` lane IDs remain compatibility identifiers, not separate active AI agents.
 
 For autonomous multi-batch verification that can resume after five-hour or weekly usage pauses, follow [AUTONOMOUS-VERIFICATION-CAMPAIGNS.md](AUTONOMOUS-VERIFICATION-CAMPAIGNS.md). Completed candidates and integration operations are recovered from immutable artifacts rather than chat history or mutable cursors.
 

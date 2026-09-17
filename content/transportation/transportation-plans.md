@@ -171,10 +171,10 @@ These reports record the federal transportation funds obligated for Albuquerque-
 - [FFY 2012 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/3425/FFY-2012-Annual-Listing-of-Obligations-PDF)
 - [FFY 2011 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/3424/FFY-2011-Annual-Listing-of-Obligations-PDF)
 - [FFY 2010 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/3423/FFY-2010-Annual-Listing-of-Obligations-PDF)
-- [FFY 2009 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/3422/FFY-2009-Annual-Listing-of-Obligations-PDF)
-- [FFY 2008 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/3421/FFY-2008-Annual-Listing-of-Obligations-PDF)
-- [FFY 2007 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/3432/FFY-2007-Annual-Listing-of-Obligations-PDF)
-- [FFY 2006 Annual Listing of Obligations](https://www.mrcog-nm.gov/DocumentCenter/View/3428/FFY-2006-Annual-Listing-of-Obligations-PDF)
+- [MRMPO FFY 2009 Annual Listing of Obligations (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-ffy-2009-annual-listing-obligations.pdf) — records federal transportation funds obligated during FFY 2009 for Albuquerque-area roadway, transit, bicycle, pedestrian, safety, bridge, planning, and other regional transportation projects. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/3422/FFY-2009-Annual-Listing-of-Obligations-PDF)
+- [MRMPO FFY 2008 Annual Listing of Obligations (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-ffy-2008-annual-listing-obligations.pdf) — records federal transportation funds obligated during FFY 2008 for Albuquerque-area roadway, transit, bicycle, pedestrian, safety, bridge, planning, and other regional transportation projects. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/3421/FFY-2008-Annual-Listing-of-Obligations-PDF)
+- [MRMPO FFY 2007 Annual Listing of Obligations (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-ffy-2007-annual-listing-obligations.pdf) — records federal transportation funds obligated during FFY 2007 for Albuquerque-area roadway, transit, bicycle, pedestrian, safety, bridge, planning, and other regional transportation projects. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/3432/FFY-2007-Annual-Listing-of-Obligations-PDF)
+- [MRMPO FFY 2006 Annual Listing of Obligations (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-ffy-2006-annual-listing-obligations.pdf) — records federal transportation funds obligated during FFY 2006 for Albuquerque-area roadway, transit, bicycle, pedestrian, safety, bridge, planning, and other regional transportation projects. [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/3428/FFY-2006-Annual-Listing-of-Obligations-PDF)
 
 - [MRMPO Unified Planning Work Program, FFY 2025-2026 (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/mrmpo-unified-planning-work-program-ffy2025-2026.pdf)
 
@@ -360,6 +360,24 @@ These records preserve the adopted two-year program and each FHWA/FTA-approved r
   [Official Legistar attachment](https://legistar.granicus.com/cabq/attachments/6595.pdf) · [Official EC-07-1 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=EC-07-1&Search=EC-07-1)
 
 ### Historical Capital Programming
+
+- [2011 Streets General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-2011-streets-go-bond-project-scopes-published.pdf)
+
+  Details 2011 street bond scopes covering planning, design, right-of-way acquisition, and construction for major roadways, intersections, paving rehabilitation, bridges, signals, and named corridor projects across the City. [Full 2011 published-scope record](/city-data/capital-spending/#2011-published-scope-and-version-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/streets_scope.pdf)
+
+- [2003 General Obligation Bond Program: Master Record (ABQInfo Historical Compilation, Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2003-general-obligation-bond-program-master-record-abqinfo-compilation.pdf)
+
+  Preserves the 2003 street proposal within the complete annual program record. The compilation documents that voters rejected this purpose in 2003 before the City resubmitted a separate streets program in 2004.
+
+  [Full 2003 program record](/city-data/capital-spending/#20032004-general-obligation-bond-program) · [Official City source library](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc)
+
+- [2004 Street General Obligation Bond Project Titles, Amounts, and Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2004-street-go-bond-project-titles-amounts-scopes.pdf)
+
+  Lists each 2004 street bond project with its title, amount, and scope, covering advance right-of-way acquisition, paving rehabilitation, intersections, bridges, sidewalks, trails, traffic management, and named corridor improvements. [Full 2003–2004 capital-program record](/city-data/capital-spending/#20032004-general-obligation-bond-program) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2004-bond-documents/ProjectTitles.pdf)
+
+- [2004 Street Bond Ballot Question (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2004-street-bond-ballot-question.pdf)
+
+  Preserves the exact street bond question placed before Albuquerque voters on November 2, 2004, authorizing $52,514,950 in general obligation bonds for City street improvements, land acquisition, and equipment. [Full 2003–2004 capital-program record](/city-data/capital-spending/#20032004-general-obligation-bond-program) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2004-bond-documents/StreetBondQuestion.pdf)
 
 - [2009–2017 Streets General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-2017-streets-go-bond-summary.pdf)
 

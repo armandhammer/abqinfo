@@ -46,6 +46,12 @@ Selected major development activity and the plans and datasets needed to underst
 
 ### Rail Yards Planning and Environmental Records
 
+- [Albuquerque Rail Yards: Redeveloping the City's Historic Rail Yards, an Urban Land Institute Advisory Services Panel Report (2008 Archived PDF)](https://files.abqinfo.com/development-land-use/projects/cabq-rail-yards-uli-advisory-panel-report-2008.pdf)
+
+  The Urban Land Institute panel report on the Albuquerque Rail Yards sets out market findings, planning and design recommendations, development strategy, and implementation advice for redeveloping the historic Santa Fe Railway shops site south of Downtown.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/1uli_final_report.abq_rail_yards_advisory_services_panel.pdf)
+
 - [Rail Yards Blacksmith Shop Feasibility Study (2012 Archived PDF)](https://files.abqinfo.com/development-land-use/projects/cabq-rail-yards-blacksmith-shop-feasibility-study-2012.pdf)
 
   Evaluates adaptive reuse of the historic Rail Yards Blacksmith Shop, documenting building history and condition, code requirements, rehabilitation constraints, programming, public-event concepts, accessibility, preservation standards, cost considerations, and conceptual drawings.
@@ -57,6 +63,26 @@ Selected major development activity and the plans and datasets needed to underst
   Documents 2012 Blacksmith Shop air and settled-dust testing for lead and volatile organic compounds, laboratory results, identified hazards, cleanup recommendations, worker-occupancy concerns, and implications for adaptive reuse.
 
   [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/RailYardsEnvironmentalLeadBasedPaintReport.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/RailYardsEnvironmentalLeadBasedPaintReport.pdf)
+
+### Old Town Virtual Task Force Records
+
+- [Old Town Virtual Task Force Summary of Ranking Results, Topic 1: Outdoor Displays (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-old-town-task-force-ranking-outdoor-displays.pdf)
+
+  The City task force summary charts how thirty-three participants ranked proposed options for regulating outdoor merchandise displays in Old Town, giving the vote distribution behind the recommendations that fed the Old Town historic protection overlay standards.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-1-colo.pdf) · [Zoning & IDO placement](/development-land-use/zoning-ido/#old-town-regulatory-review)
+
+- [Old Town Virtual Task Force Summary of Ranking Results, Topic 2: Signs (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-old-town-task-force-ranking-signs.pdf)
+
+  The City task force summary charts how twelve participants ranked proposed sign rules for Old Town, covering off-premises signs among other categories, and records the vote distribution behind each option the task force considered.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-2-colo.pdf) · [Zoning & IDO placement](/development-land-use/zoning-ido/#old-town-regulatory-review)
+
+- [Old Town Virtual Task Force Summary of Ranking Results, Topic 3: Outdoor Demonstrations (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-old-town-task-force-ranking-outdoor-demonstrations.pdf)
+
+  The City task force summary charts how seven participants ranked options for regulating outdoor craft demonstrations in Old Town, testing whether the former zoning code definition at Section 14-16-2-25(o)(1) adequately defined an outdoor demonstration.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-3-colo.pdf) · [Zoning & IDO placement](/development-land-use/zoning-ido/#old-town-regulatory-review)
 
 ## Redevelopment Portfolio
 

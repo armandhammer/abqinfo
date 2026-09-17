@@ -28,9 +28,45 @@ Current zoning tools and a preserved history of Albuquerque's Integrated Develop
 
 ## Planning and Regulatory Context
 
-- [Legalization of Cannabis in New Mexico: Planning Commissioner Workshop (2021 official PDF)](https://www.mrcog-nm.gov/DocumentCenter/View/5452/2021-Legalization-of-Cannabis-Planning-Commissioner-Workshop-PDF)
+- [Legalization of Cannabis in New Mexico: Planning Commissioner Workshop (2021 Archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/mrcog-cannabis-planning-commissioner-workshop-2021.pdf)
 
   Explains the 2021 Cannabis Regulation Act for local planners, covering licenses, local time-place-manner authority, limits on municipal restrictions, taxation, employment, and implementation deadlines.
+
+  [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/5452/2021-Legalization-of-Cannabis-Planning-Commissioner-Workshop-PDF) · [Current Regional Planning Workshops and Training](https://www.mrcog-nm.gov/637/Regional-Planning-Workshops-and-Training)
+
+## Old Town Regulatory Review
+
+- [Old Town Virtual Task Force Summary of Ranking Results, Topic 1: Outdoor Displays (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-old-town-task-force-ranking-outdoor-displays.pdf)
+
+  The City task force summary charts how thirty-three participants ranked proposed options for regulating outdoor merchandise displays in Old Town, giving the vote distribution behind the recommendations that fed the Old Town historic protection overlay standards.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-1-colo.pdf) · [Projects placement](/development-land-use/projects/#old-town-virtual-task-force-records)
+
+- [Old Town Virtual Task Force Summary of Ranking Results, Topic 2: Signs (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-old-town-task-force-ranking-signs.pdf)
+
+  The City task force summary charts how twelve participants ranked proposed sign rules for Old Town, covering off-premises signs among other categories, and records the vote distribution behind each option the task force considered.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-2-colo.pdf) · [Projects placement](/development-land-use/projects/#old-town-virtual-task-force-records)
+
+- [Old Town Virtual Task Force Summary of Ranking Results, Topic 3: Outdoor Demonstrations (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-old-town-task-force-ranking-outdoor-demonstrations.pdf)
+
+  The City task force summary charts how seven participants ranked options for regulating outdoor craft demonstrations in Old Town, testing whether the former zoning code definition at Section 14-16-2-25(o)(1) adequately defined an outdoor demonstration.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-3-colo.pdf) · [Projects placement](/development-land-use/projects/#old-town-virtual-task-force-records)
+
+## Historical Wireless Telecommunications Regulations
+
+- [Enacted Ordinance O-2014-024: Amending the Wireless Telecommunication Regulations and Related Definitions in the Zoning Code (Council Bill F/S O-14-7) (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning/cabq-enacted-ordinance-o-2014-024-wireless-telecommunications.pdf)
+
+  The enacted ordinance rewrites the former Zoning Code's wireless telecommunications rules, replacing readily visible facility definitions with concealment, collocation, public utility collocation, and free-standing facility definitions and standards.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/WirelessTelecom-WTRegulations2014.pdf)
+
+- [Zoning Code Section 14-16-3-17: Wireless Telecommunications Regulations (pre-Integrated Development Ordinance text) (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning/cabq-zoning-code-14-16-3-17-wireless-telecommunications.pdf)
+
+  The codified former zoning regulations set wireless-facility concealment requirements, height and setback standards, collocation rules, public utility provisions, application and approval procedures, and abandonment obligations.
+
+  [Official City PDF](https://documents.cabq.gov/planning/DevelopmentReviewServices/WirelessTelecom-Zoning14-6-3-17.pdf)
 
 ## Historical Effective IDO Editions
 

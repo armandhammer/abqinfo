@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "batch_id": "retained-source-audit-2026-09-12-b",
+  "completed_at": "2026-09-12T19:46:00Z",
+  "source_records": 20,
+  "outcomes": {
+    "crawled": 19,
+    "requires_rendered_browser_review": 1,
+    "new_inventory_candidates": 2,
+    "newly_archived_documents": 0
+  },
+  "new_inventory_records": [
+    {
+      "id": "src-e0624ecba79f3f17",
+      "title": "UNM 2040: Opportunity Defined Strategic Framework",
+      "status": "pending review"
+    },
+    {
+      "id": "src-c21e9ab0d771479f",
+      "title": "Menaul MRA Zoning Map Amendment - Introduced",
+      "status": "superseded",
+      "authoritative_successor": "src-09fdd8da28f09ff5"
+    }
+  ],
+  "existing_pending_documents_confirmed": [
+    "src-8598b5c498e08c1b",
+    "src-ca8b9b57d396508c"
+  ],
+  "coverage": {
+    "development_process_manual_directory_documents": 112,
+    "urban_design_development_directory_documents": 53,
+    "metropolitan_redevelopment_directory_documents": 29,
+    "directory_documents_missing_from_inventory": 0
+  },
+  "rendered_browser_review": {
+    "candidate_id": "src-227eb253ea98b4dd",
+    "reason": "The NMDOT traffic-data application returned HTTP 202 with an empty response after five crawler attempts."
+  },
+  "notes": [
+    "Three current UNM sustainability documents and the current Safe Mobility Action Plan were reconciled to existing validated archives.",
+    "The O-25-100 and R-26-9 Legistar attachment lineages were reconciled to their signed enacted records; draft variants remain superseded.",
+    "Live VertiGIS and ArcGIS sources exposed no static document descendants and remain live-service records."
+  ]
+}

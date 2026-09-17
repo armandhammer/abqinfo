@@ -156,6 +156,14 @@ These adopted budgets preserve changing City priorities, revenues, appropriation
 
   [Official City PDF](https://documents.cabq.gov/budget/fy-08-performance-plan.pdf)
 
+## Historical Economic Development Legislation
+
+- [Enacted Ordinance O-2014-005: Approving a Project Involving Eclipse Aerospace, Inc. Under the Local Economic Development Act (Archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-eclipse-aerospace-leda-ordinance-o-2014-005.pdf)
+
+  The enacted City ordinance approves a Local Economic Development Act project with Eclipse Aerospace to support continued aircraft assembly and administrative operations in Albuquerque, authorizing a project participation agreement and making the findings the Act requires.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/councilor-district-5-documents/O4Enacted.pdf)
+
 ## Audited Financial Results
 
 - [City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2025 (archived PDF)](https://files.abqinfo.com/city-data/budget-spending/cabq-annual-comprehensive-financial-report-fy2025.pdf)

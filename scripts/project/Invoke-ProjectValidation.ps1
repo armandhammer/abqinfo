@@ -10,7 +10,9 @@ $ErrorActionPreference = 'Stop'
 & "$PSScriptRoot/Test-MasterInventory.ps1" -InventoryPath $InventoryPath
 if (-not $?) { throw 'Master inventory validation failed.' }
 & "$PSScriptRoot/Test-ContentStyle.ps1"
-if (-not $?) { throw 'Content style validation failed.' }
+
+& "$PSScriptRoot/Test-ContentPublicationQualityRegression.ps1"
+if (-not $?) { throw 'Content publication quality regression failed.' }
 & "$PSScriptRoot/Test-DiscoveryCrawlerRegression.ps1" -OutputPath 'tmp/crawler-regression-report.json'
 if (-not $?) { throw 'Crawler discovery regression failed.' }
 & "$PSScriptRoot/Test-ParallelVerificationWorkflow.ps1"

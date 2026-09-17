@@ -1,41 +1,292 @@
 {
-  "recorded_at": "2026-09-17T14:58:50.1887633Z",
-  "completed_item_range": "Reconciled the retained-source descendant-audit queue after the aggregate validator found 19 missing 2003-2004 bond-source entries. The omission was genuine stale queue state, not a validator defect: all 19 validated City PDF records use retained Plone /view source wrappers, matching 166 existing comparable queue records. Regenerating project-state/discovery/retained-source-audit-queue.json preserved all 550 existing records and states, added exactly 19 pending descendant crawls, and changed coverage from 569 eligible/550 queued/19 missing to 569/569/0. Full project validation and Hugo build passed. The completed DPM minutes batch remains preserved and was not reprocessed.",
-  "verification_campaign_totals": {
-    "verified": 2194,
-    "passed": 2070,
-    "requires_human_review": 124
-  },
-  "total_candidates": 7074,
+  "recorded_at": "2026-09-17T15:28:15.865473Z",
+  "completed_item_range": "Reconciled codex/autonomous-campaign-coordinator with current origin/main, preserving newer deployed main work and later local archive-accounting decisions; removed stale run state and repaired stored inventory mojibake deterministically.",
+  "total_candidates": 7086,
   "counts_by_status": {
-    "pending review": 2255,
-    "approved for addition": 59,
+    "pending review": 2048,
+    "approved for addition": 5,
     "downloading": 0,
     "downloaded": 0,
     "parsed": 0,
     "description drafted": 0,
     "placement assigned": 2,
     "implemented": 178,
-    "validated": 1361,
-    "excluded": 1335,
-    "duplicate": 1481,
-    "superseded": 212,
+    "validated": 1410,
+    "excluded": 1511,
+    "duplicate": 1499,
+    "superseded": 223,
     "blocked": 0,
-    "requires human review": 191
+    "requires human review": 210
   },
-  "remaining_nonterminal": 2494,
+  "remaining_nonterminal": 2233,
   "next_pending_id": "src-04e406c4dde231a8",
   "blockers": [
-    "The 16-record/eight-page content batch is implemented and validated with authoritative government links; 17 original PDFs totaling 67,526,043 bytes remain pending separate explicit R2 upload approval, including three supporting components of the multipart Downtown Neighborhood plan.",
-    "src-0a39e768262a9380d69d County source returned HTTP 504 twice; no authoritative replacement identified.",
-    "src-0b1642254494f22e must not be archived or visibly used as enacted; canonical source is src-5b9de5b2cda39393.",
-    "src-0e133db868401e77 is PGS Part 2 Chapter 10; reconcile the complete split PGS package before any archival or visible use.",
-    "src-0ee0b959ce0e2a95 is a scanned Trumbull plan compilation; confirm canonical-package and later IDO-replacement relationships before archival or visible use.",
-    "src-0f4496e4073a5e06 and src-0feec7ebf6650e27 are isolated legislative amendment/substitute files; resolve authoritative enacted packages before archival or visible use.",
-    "src-0f5140179b1f087f is only an announcement for the International District Choice Neighborhood final plan; locate the authoritative final plan before visible use.",
-    "src-10209c5fcdce2906 is explicitly a 2026-02-02 draft stormwater BMP package; locate or verify an adopted final version before archival or visible use."
+    "Five corrected local DPM annual packets include the distinct same-date agendas required by project policy; upload and content transition remain externally gated.",
+    "The separate 17-PDF / 67,526,043-byte archive batch remains outside the current authorization.",
+    "The noncanonical mrmppo duplicate remains a future deletion candidate only; no live R2 deletion is authorized."
   ],
-  "resume_command": "Archive-reconciliation editorial resolutions and local DPM annual packets are complete. Local R2 inventory remains exactly equal to saved live R2 (1180 objects / 8614076524 bytes). Five DPM annual PDFs require separately authorized R2 upload before their content transition; 53 current-branch links await deployment. The 111 legacy published-without-master records remain intentionally unconverted, and the noncanonical mrmppo duplicate remains a future deletion candidate only.",
+  "resume_command": "Workflow/context cleanup is complete. Resume ordinary ABQInfo work from master-inventory.json next_pending_id or a coherent saved discovery queue; do not perform externally gated DPM uploads, the separate 17-PDF batch, or R2 deletion without authorization.",
+  "verification_campaign_totals": {
+    "verified": 2194,
+    "passed": 2070,
+    "requires_human_review": 124
+  },
+  "history": [
+    {
+      "recorded_at": "2026-09-13T00:41:38.0556371Z",
+      "completed_item_range": "Archived and publicly verified 16 DPM Executive Committee minutes from 2015 through 2018 (827,283 bytes; 16/16 exact size and SHA-256). Added all 16 under Development Process Manual, cross-listed five Chapter 22 drainage decisions under Hydrology and Development Review, and cross-listed nine transportation-design decisions under Development Review Design References. Full validation and PR are next.",
+      "total_candidates": 7079,
+      "counts_by_status": {
+        "pending review": 2249,
+        "approved for addition": 0,
+        "downloading": 0,
+        "downloaded": 9,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 2,
+        "implemented": 178,
+        "validated": 1450,
+        "excluded": 1402,
+        "duplicate": 1494,
+        "superseded": 176,
+        "blocked": 0,
+        "requires human review": 119
+      },
+      "remaining_nonterminal": 2260,
+      "next_pending_id": "src-049f7958bcc2f6da",
+      "blockers": [
+        "Four abbreviated-name 2011 GO-bond variants remain requires human review because their version order cannot be established: src-ca2ae8cb1ef13fdf, src-832bc2144296aa51, src-20cca95ec6dcbe4f, and src-9e6cb716ac7c28d9. They were not archived or published."
+      ],
+      "resume_command": "On codex/archive-batch-2026-09-13-e, run full validation, commit and push the completed 16-document batch, create a PR, verify its temporary deployment and checks, then merge and confirm production.",
+      "verification_campaign_totals": null
+    },
+    {
+      "recorded_at": "2026-09-13T21:28:25.8336591Z",
+      "completed_item_range": "Archived and publicly verified 21 previously unarchived DPM Executive Committee source records and five ABQInfo annual browsing compilations for 2014-2018 (26 new R2 objects; 3,339,036 bytes). Consolidated 33 standalone minute listings and subject cross-listings into five annual records while preserving all 40 City originals, source URLs, hashes, and verification results. Full inventory, quality, regression, link, and Hugo validation passed.",
+      "total_candidates": 7084,
+      "counts_by_status": {
+        "pending review": 2248,
+        "approved for addition": 0,
+        "downloading": 0,
+        "downloaded": 9,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 2,
+        "implemented": 178,
+        "validated": 1455,
+        "excluded": 1403,
+        "duplicate": 1494,
+        "superseded": 176,
+        "blocked": 0,
+        "requires human review": 119
+      },
+      "remaining_nonterminal": 2437,
+      "next_pending_id": "src-049f7958bcc2f6da",
+      "blockers": [
+        "Four abbreviated-name 2011 GO-bond variants remain requires human review because their version order cannot be established: src-ca2ae8cb1ef13fdf, src-832bc2144296aa51, src-20cca95ec6dcbe4f, and src-9e6cb716ac7c28d9. They were not archived or published.",
+        "DPM annual-compilation PR temporary deployment and GitHub checks remain to be verified before autonomous merge."
+      ],
+      "resume_command": "In the codex/dpm-annual-compilations worktree, review and commit the focused DPM changes, push, open a PR, verify the temporary deployment and GitHub checks, merge when safeguards pass, and confirm production.",
+      "verification_campaign_totals": null
+    },
+    {
+      "recorded_at": "2026-09-13T21:36:00.6796274Z",
+      "completed_item_range": "PR 150 merged at 2026-09-13T21:32:47Z and production deployment passed. Five DPM Executive Committee annual compilations for 2014-2018 are live on Development Process, with consolidated annual cross-listings on Stormwater and Drainage and Transportation Design References. All 40 City originals, provenance URLs, hashes, and verification results remain preserved; 26 new R2 objects totaling 3,339,036 bytes were exact-size/SHA-256 verified.",
+      "total_candidates": 7084,
+      "counts_by_status": {
+        "pending review": 2248,
+        "approved for addition": 0,
+        "downloading": 0,
+        "downloaded": 9,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 2,
+        "implemented": 178,
+        "validated": 1455,
+        "excluded": 1403,
+        "duplicate": 1494,
+        "superseded": 176,
+        "blocked": 0,
+        "requires human review": 119
+      },
+      "remaining_nonterminal": 2437,
+      "next_pending_id": "src-049f7958bcc2f6da",
+      "blockers": [
+        "Four abbreviated-name 2011 GO-bond variants remain requires human review because their version order cannot be established: src-ca2ae8cb1ef13fdf, src-832bc2144296aa51, src-20cca95ec6dcbe4f, and src-9e6cb716ac7c28d9. They were not archived or published."
+      ],
+      "resume_command": "Continue codex/go-bond-annual-compilations by integrating project-state/discovery/claude-consolidation-2003-general-obligation-bond-program-master-record-2026-09-13.json. Archive and publicly verify any missing authoritative originals before building the 92-page provenance-preserving master record; do not make visible changes until all checks pass.",
+      "verification_campaign_totals": null
+    },
+    {
+      "recorded_at": "2026-09-14T02:23:17.7905936Z",
+      "completed_item_range": "Built, archived, publicly byte-verified, and consolidated the 2003 General Obligation Bond Program: 21 original City records (92 source pages) now have one 117-page ABQInfo master record; 22 sparse component records remain preserved in R2 and inventory but have no standalone listing. Six site pages were updated; no PR or deployment has been created yet.",
+      "total_candidates": 7085,
+      "counts_by_status": {
+        "pending review": 2245,
+        "approved for addition": 0,
+        "downloading": 0,
+        "downloaded": 9,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 2,
+        "implemented": 178,
+        "validated": 1438,
+        "excluded": 1424,
+        "duplicate": 1494,
+        "superseded": 176,
+        "blocked": 0,
+        "requires human review": 119
+      },
+      "remaining_nonterminal": 2434,
+      "next_pending_id": "src-04e406c4dde231a8",
+      "blockers": [],
+      "resume_command": "Review the 2003 GO-bond consolidation diff, create the focused PR, verify its temporary deployment, then merge and confirm production if all checks pass.",
+      "verification_campaign_totals": null
+    },
+    {
+      "recorded_at": "2026-09-14T02:39:08.7118252Z",
+      "completed_item_range": "PR 151 merged at 2026-09-14T02:27:11Z and production deployment passed: the 2003 General Obligation Bond Program master record is live on six pages. All 21 City originals, 22 retained component records, source URLs, hashes, R2 objects, and verification results remain preserved.",
+      "total_candidates": 7085,
+      "counts_by_status": {
+        "pending review": 2245,
+        "approved for addition": 0,
+        "downloading": 0,
+        "downloaded": 9,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 2,
+        "implemented": 178,
+        "validated": 1438,
+        "excluded": 1424,
+        "duplicate": 1494,
+        "superseded": 176,
+        "blocked": 0,
+        "requires human review": 119
+      },
+      "remaining_nonterminal": 2434,
+      "next_pending_id": "src-04e406c4dde231a8",
+      "blockers": [],
+      "resume_command": "Review research/staging/document-review/cprg-pcap-albuquerque-msa-city-of-albuquerque.pdf for provenance, relationship to existing City climate plans, standalone value, and archive readiness; make no visible or R2 change until the review is complete.",
+      "verification_campaign_totals": null
+    },
+    {
+      "recorded_at": "2026-09-14T02:53:44.7150158Z",
+      "completed_item_range": "Reviewed and verified the staged 2024 Albuquerque Metropolitan Statistical Area Priority Climate Action Plan: it is a substantive 308-page City-led regional EPA CPRG plan, byte-identical to the official EPA PDF (4,632,373 bytes; SHA-256 230e94dad7e3ad51001febf18a041640fe8a6f5b04ce99aca93e51896cd39634). It is distinct from the 2021 City plan and annual implementation reports and is approved for standalone publication after guarded R2 archival.",
+      "total_candidates": 7086,
+      "counts_by_status": {
+        "pending review": 2245,
+        "approved for addition": 1,
+        "downloading": 0,
+        "downloaded": 9,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 2,
+        "implemented": 178,
+        "validated": 1438,
+        "excluded": 1424,
+        "duplicate": 1494,
+        "superseded": 176,
+        "blocked": 0,
+        "requires human review": 119
+      },
+      "remaining_nonterminal": 2435,
+      "next_pending_id": "src-67baafb695734bcd",
+      "blockers": [],
+      "resume_command": "Archive and publicly verify src-67baafb695734bcd, then add it under Climate Action Plans with EPA source links as part of the next coherent archive-ready batch.",
+      "verification_campaign_totals": null
+    },
+    {
+      "recorded_at": "2026-09-14T03:18:28.9890413Z",
+      "completed_item_range": "Reviewed, archived, and publicly byte-verified the 2024 Albuquerque Metropolitan Statistical Area Priority Climate Action Plan: a substantive 308-page City-led regional EPA CPRG plan, byte-identical to the official EPA PDF (4,632,373 bytes; SHA-256 230e94dad7e3ad51001febf18a041640fe8a6f5b04ce99aca93e51896cd39634). Added it under Climate Action Plans with both EPA provenance links.",
+      "total_candidates": 7086,
+      "counts_by_status": {
+        "pending review": 2245,
+        "approved for addition": 0,
+        "downloading": 0,
+        "downloaded": 9,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 2,
+        "implemented": 178,
+        "validated": 1439,
+        "excluded": 1424,
+        "duplicate": 1494,
+        "superseded": 176,
+        "blocked": 0,
+        "requires human review": 119
+      },
+      "remaining_nonterminal": 2434,
+      "next_pending_id": "src-049f7958bcc2f6da",
+      "blockers": [],
+      "resume_command": "Validate the climate-plan addition, create a focused PR with its temporary deployment, and merge after preview and checks pass.",
+      "verification_campaign_totals": null
+    },
+    {
+      "recorded_at": "2026-09-16T16:50:38.4386505Z",
+      "completed_item_range": "Consolidated the 2017 General Obligation Bond pipeline around the authoritative City 144-page program book: removed 30 sparse component listings while preserving all 30 original R2 objects, official-source URLs, exact sizes, SHA-256 hashes, completed verification results, and retired retained-source audit history. Cross-listed the official master on seven pages. Fresh public R2 size/SHA-256 and all three official City links passed; full inventory, content-style, quality, discovery, parallel-workflow, retained-source, and Hugo validation passed. No R2 upload was needed.",
+      "total_candidates": 7086,
+      "counts_by_status": {
+        "pending review": 2245,
+        "approved for addition": 0,
+        "downloading": 0,
+        "downloaded": 9,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 2,
+        "implemented": 178,
+        "validated": 1409,
+        "excluded": 1454,
+        "duplicate": 1494,
+        "superseded": 176,
+        "blocked": 0,
+        "requires human review": 119
+      },
+      "remaining_nonterminal": 2434,
+      "next_pending_id": "src-049f7958bcc2f6da",
+      "blockers": [],
+      "resume_command": "Review and commit the focused 2017 official-master consolidation, push codex/pipeline-integration-01, open a PR, verify its temporary deployment and GitHub checks, then merge and confirm production if all routine safeguards pass.",
+      "verification_campaign_totals": null
+    },
+    {
+      "recorded_at": "2026-09-17T14:58:50.1887633Z",
+      "completed_item_range": "Reconciled the retained-source descendant-audit queue after the aggregate validator found 19 missing 2003-2004 bond-source entries. The omission was genuine stale queue state, not a validator defect: all 19 validated City PDF records use retained Plone /view source wrappers, matching 166 existing comparable queue records. Regenerating project-state/discovery/retained-source-audit-queue.json preserved all 550 existing records and states, added exactly 19 pending descendant crawls, and changed coverage from 569 eligible/550 queued/19 missing to 569/569/0. Full project validation and Hugo build passed. The completed DPM minutes batch remains preserved and was not reprocessed.",
+      "total_candidates": 7074,
+      "counts_by_status": {
+        "pending review": 2255,
+        "approved for addition": 59,
+        "downloading": 0,
+        "downloaded": 0,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 2,
+        "implemented": 178,
+        "validated": 1361,
+        "excluded": 1335,
+        "duplicate": 1481,
+        "superseded": 212,
+        "blocked": 0,
+        "requires human review": 191
+      },
+      "remaining_nonterminal": 2494,
+      "next_pending_id": "src-04e406c4dde231a8",
+      "blockers": [
+        "The 16-record/eight-page content batch is implemented and validated with authoritative government links; 17 original PDFs totaling 67,526,043 bytes remain pending separate explicit R2 upload approval, including three supporting components of the multipart Downtown Neighborhood plan.",
+        "src-0a39e768262a9380d69d County source returned HTTP 504 twice; no authoritative replacement identified.",
+        "src-0b1642254494f22e must not be archived or visibly used as enacted; canonical source is src-5b9de5b2cda39393.",
+        "src-0e133db868401e77 is PGS Part 2 Chapter 10; reconcile the complete split PGS package before any archival or visible use.",
+        "src-0ee0b959ce0e2a95 is a scanned Trumbull plan compilation; confirm canonical-package and later IDO-replacement relationships before archival or visible use.",
+        "src-0f4496e4073a5e06 and src-0feec7ebf6650e27 are isolated legislative amendment/substitute files; resolve authoritative enacted packages before archival or visible use.",
+        "src-0f5140179b1f087f is only an announcement for the International District Choice Neighborhood final plan; locate the authoritative final plan before visible use.",
+        "src-10209c5fcdce2906 is explicitly a 2026-02-02 draft stormwater BMP package; locate or verify an adopted final version before archival or visible use."
+      ],
+      "resume_command": "Archive-reconciliation editorial resolutions and local DPM annual packets are complete. Local R2 inventory remains exactly equal to saved live R2 (1180 objects / 8614076524 bytes). Five DPM annual PDFs require separately authorized R2 upload before their content transition; 53 current-branch links await deployment. The 111 legacy published-without-master records remain intentionally unconverted, and the noncanonical mrmppo duplicate remains a future deletion candidate only.",
+      "verification_campaign_totals": {
+        "verified": 2194,
+        "passed": 2070,
+        "requires_human_review": 124
+      }
+    }
+  ],
   "live_reconciliation": {
     "recorded_at": "2026-09-17T14:45:00Z",
     "stage": "complete_mechanical_reconciliation",
@@ -57,7 +308,7 @@
       "project-state/discovery/live-r2-public-verification-final-2026-09-16.json",
       "project-state/discovery/live-abqinfo-archive-reconciliation-2026-09-16.json"
     ],
-    "next_stage": "external_authorization_for_dpm_packet_uploads_then_content_deployment",
+    "next_stage": "local storage accounting is complete; corrected DPM packet uploads remain externally gated",
     "classification_artifacts": [
       "project-state/discovery/live-abqinfo-archive-reconciliation-classification-2026-09-16.json",
       "project-state/discovery/live-abqinfo-archive-reconciliation-review-packet-2026-09-16.json"
@@ -151,46 +402,58 @@
       "unresolved_case_research_summary": "EPC document class resolved by repository precedent; Water Master Plan B-6 parent remains unidentified; April 4, 2018 DPM minutes/cancellation/occurrence evidence remains insufficient.",
       "unresolved_case_research_user_decisions_remaining": 0,
       "unresolved_case_research_validation": "Test-UnresolvedArchiveCaseResearch.ps1 passed: 3 cases represented, 2 user decisions isolated, and exact R2 equality preserved."
-    }
+    },
+    "historical_snapshot": true
   },
   "dpm_annual_consolidation": {
-    "state": "local_packets_regenerated_upload_externally_gated",
-    "component_count": 44.0,
+    "state": "corrected_local_packets_generated_upload_externally_gated",
+    "manifest": "project-state/discovery/dpm-executive-committee-consolidation-manifest-2026-09-17.json",
+    "component_count": 44,
     "packets": [
       {
         "year": 2014,
         "component_count": 5,
         "page_count": 13,
         "size_bytes": 284803,
-        "sha256": "e03ddf4a07f20a83b76b6f5ee8afdfda956a0713c68b3a71e3ae034be78c6656"
+        "sha256": "e03ddf4a07f20a83b76b6f5ee8afdfda956a0713c68b3a71e3ae034be78c6656",
+        "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2014.pdf",
+        "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2014.pdf"
       },
       {
         "year": 2015,
         "component_count": 9,
         "page_count": 17,
         "size_bytes": 773060,
-        "sha256": "51457ec34cd80383e6ad92aa38f17da84101b0ad118a8d687e2db48dd468be26"
+        "sha256": "51457ec34cd80383e6ad92aa38f17da84101b0ad118a8d687e2db48dd468be26",
+        "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2015.pdf",
+        "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2015.pdf"
       },
       {
         "year": 2016,
         "component_count": 9,
         "page_count": 19,
         "size_bytes": 449277,
-        "sha256": "9cae8d9fc7fa3a8ea727309015b656749ab759c89a0b434b3689f9f008359ed9"
+        "sha256": "9cae8d9fc7fa3a8ea727309015b656749ab759c89a0b434b3689f9f008359ed9",
+        "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2016.pdf",
+        "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2016.pdf"
       },
       {
         "year": 2017,
         "component_count": 15,
         "page_count": 32,
         "size_bytes": 762787,
-        "sha256": "d41a926cc273886293d4669ae5cb989c442ed3a8fc5fc7cb9c88c869250241c2"
+        "sha256": "d41a926cc273886293d4669ae5cb989c442ed3a8fc5fc7cb9c88c869250241c2",
+        "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2017.pdf",
+        "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2017.pdf"
       },
       {
         "year": 2018,
         "component_count": 6,
         "page_count": 10,
         "size_bytes": 376588,
-        "sha256": "87b085020276d880d388a702c23819027b5b510a955f672d464069df0896273b"
+        "sha256": "87b085020276d880d388a702c23819027b5b510a955f672d464069df0896273b",
+        "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2018.pdf",
+        "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2018.pdf"
       }
     ]
   }

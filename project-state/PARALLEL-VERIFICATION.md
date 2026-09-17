@@ -1,6 +1,6 @@
 # Conflict-free parallel verification
 
-ABQInfo uses a **parallel readers, single writer** workflow when Codex and Claude verify candidate files, official sources, and links at the same time. Workers receive deterministic, non-overlapping shards in separate detached Git worktrees. They may read their checkout and create exactly one assigned result artifact outside Git. They may not change inventory, checkpoint, content, queues, Git state, or R2.
+ABQInfo uses a **parallel readers, single writer** workflow when verification workers process candidate files, official sources, and links concurrently. Workers receive deterministic, non-overlapping shards in separate detached Git worktrees. They may read their checkout and create exactly one assigned result artifact outside Git. They may not change inventory, checkpoint, content, queues, Git state, or R2. Legacy `codex` and `claude` lane IDs are retained for script and artifact compatibility; both are lanes in one logical Codex workflow, not separate active AI agents.
 
 This workflow is for verification. It does not authorize additions, archival, uploads, commits, PRs, merges, or deployment.
 

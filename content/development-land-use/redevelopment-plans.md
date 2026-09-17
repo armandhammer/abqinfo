@@ -54,6 +54,10 @@ Plans and historical records for designated Metropolitan Redevelopment Areas, wh
 
 ## Historical Capital Programming
 
+- [2011 Planning General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment/cabq-2011-planning-go-bond-project-scopes-published.pdf)
+
+  Details 2011 Planning Department bond scopes for studying, designing, and constructing improvements, including electronic plan review, geographic information systems, permitting technology, and redevelopment support. [Full 2011 published-scope record](/city-data/capital-spending/#2011-published-scope-and-version-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/planning_scope.pdf)
+
 - [Metropolitan Redevelopment Fund Capital Plan, 2006–2010 (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-metropolitan-redevelopment-fund-capital-plan-2006-2010.pdf)
 
   Allocates projected redevelopment spending among East Downtown, Near Heights, Highland Central, West Central, Old Albuquerque High, Sunport West, Fourth Street, new projects, property management, and general-fund activities. [Full 2007–2016 capital-program record](/city-data/capital-spending/#20072016-decade-plan)
@@ -71,6 +75,18 @@ Plans and historical records for designated Metropolitan Redevelopment Areas, wh
   Defines $3 million in 2011 Planning bond projects for community planning, electronic plan review, GIS and KIVA systems, North Fourth Street, DeAnza, Clayton Heights, East Gateway, and New York redevelopment areas. [Full October 2010 capital-program record](/city-data/capital-spending/#october-2010-program-scope-and-schedule-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/environmental-planning-commission-2011-go-bond-program/planning_scope.pdf)
 
 ## Historical and Retained Area Plans
+
+- [Barelas Neighborhood Commercial Area Revitalization Plan (Archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-barelas-neighborhood-commercial-area-revitalization-plan.pdf)
+
+  Preserves the one-hundred-fifty-page Barelas neighborhood commercial area revitalization plan, documenting existing conditions, redevelopment strategy, land use, design direction, and implementation actions for the metropolitan redevelopment area.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-BarelasNeighborhoodCommercialArea.pdf)
+
+- [South Broadway Sector Development Plan (Archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-south-broadway-sector-development-plan.pdf)
+
+  Preserves the one-hundred-fourteen-page South Broadway sector development plan as adopted and amended, covering land use, zoning, urban design, transportation, housing, and redevelopment policy for the South Broadway area.
+
+  [Official City PDF](https://documents.cabq.gov/planning/UDD/UDD-SBroadwaySDP-MRA.pdf)
 
 - [Historic Central Metropolitan Redevelopment Area Plan (2013 Archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-historic-central-mra-plan-2013.pdf)
 

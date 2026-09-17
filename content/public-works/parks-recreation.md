@@ -28,9 +28,11 @@ Parks and recreation facilities and programs.
 
   Albuquerque maintains this library for project-specific Open Space plans, including trails, natural areas, visitor-use management, habitat, and facility planning. Individual records are added only when their scope is independently useful beyond this maintained library.
 
-- [Manzano Mesa Park Prescription Trail Guide (official PDF)](https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/ManzanoMesaMulti-CulturalCtr.pdf/@@download/file/ManzanoMesaMulti-CulturalCtr.pdf)
+- [Manzano Mesa Park Prescription Trail Guide (Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-manzano-mesa-prescription-trail-guide.pdf)
 
   Maps a 0.6-mile accessible concrete walking route at Manzano Mesa Park, with route directions, accessibility grade, nearby transit, parking, facilities, and neighborhood connections.
+
+  [Official City PDF](https://www.cabq.gov/parksandrecreation/parks/prescription-trails/pdf/ManzanoMesaMulti-CulturalCtr.pdf/@@download/file/ManzanoMesaMulti-CulturalCtr.pdf)
 
 ## Current Parks and Open Space Projects
 
@@ -76,9 +78,21 @@ Parks and recreation facilities and programs.
 
 ## Historical Capital Programming
 
-- [2017 Parks and Recreation General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-2017-parks-recreation-go-bond-project-scopes.pdf)
+- [2011 Parks and Recreation General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-2011-parks-recreation-go-bond-project-scopes-published.pdf)
 
-  Details $12.6 million in 2017 scopes for park irrigation renovation, Bosque restoration, golf, open space and park management equipment, Los Altos Pool, recreation facilities, Balloon Fiesta Park, new parks, pool renovation, and forestry rehabilitation. The [2017–2025 funding summary (Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-2017-2025-parks-recreation-go-bond-summary.pdf) schedules $59.55 million through 2025, adding Cibola Loop, citywide forestry, a regional baseball complex, and Westgate Community Center Park. [Full 2017 capital-program record](/city-data/capital-spending/#2017-general-obligation-bond-program) · [Official City PDF — scopes](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/parks-recreation-scope.pdf) · [Official City PDF — summary](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/parks-recreation-summary.pdf)
+  Details 2011 Parks and Recreation bond scopes for planning, designing, renovating, equipping, and constructing parks, recreation facilities, trails, open space, and related park improvements. [Full 2011 published-scope record](/city-data/capital-spending/#2011-published-scope-and-version-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/parks_and_recreation_scope.pdf)
+
+- [2003 General Obligation Bond Program: Master Record (ABQInfo Historical Compilation, Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2003-general-obligation-bond-program-master-record-abqinfo-compilation.pdf)
+
+  Preserves the parks and recreation purpose sheet within the complete annual record, including the governing resolutions, funding tables, project rankings, operating impacts, and related citywide capital scopes.
+
+  [Full 2003 program record](/city-data/capital-spending/#20032004-general-obligation-bond-program) · [Official City source library](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2003-bond-doc)
+
+- [2017-2026 Decade Plan and 2017 General Obligation Bond Program: Mayor's Recommendation (Official Program Book, Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-2026-decade-plan-mayors-recommendation-2017.pdf)
+
+  The City's complete 2017 program book includes the Parks and Recreation scopes and 2017-2025 funding schedule within the broader decade plan, alongside planning criteria, operating impacts, maps, and legislation.
+
+  [Full 2017 program context](/city-data/capital-spending/#historical-capital-programs) · [Official City record](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/2017-mayors-recommendation-to-city-council.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2017-go-program/2017-mayors-recommendation-to-city-council.pdf)
 
 - [2009–2017 Parks and Recreation General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-2017-parks-recreation-go-bond-summary.pdf)
 

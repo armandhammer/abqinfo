@@ -72,7 +72,7 @@ snapshot, and distinguishes Albuquerque-scope records from other regional work:
 
 # Parallel file/source/link verification
 
-Codex and Claude can verify disjoint inventory shards concurrently without sharing a writable checkout. The coordinator creates an immutable manifest and detached worktrees; workers create only their uniquely assigned result; the single integrator applies an explicit acceptance list through `Update-Candidate.ps1`.
+Verification workers can process disjoint inventory shards concurrently without sharing a writable checkout. The coordinator creates an immutable manifest and detached worktrees; workers create only their uniquely assigned result; the single integrator applies an explicit acceptance list through `Update-Candidate.ps1`. Legacy `codex` and `claude` lane IDs are compatibility identifiers within this one logical Codex workflow.
 
 ```powershell
 .\scripts\project\New-ParallelVerificationRun.ps1 -RunId '2026-09-10-links-01' -StartId 'src-1234567890abcdef' -Count 40

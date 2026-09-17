@@ -76,6 +76,14 @@ title: "Safety & Crash Data"
 
   [Official crash-rate attachment](https://legistar.granicus.com/cabq/attachments/c7830e07-afd0-44e1-bc9a-c57951f3b699.pdf) · [Official severity-index attachment](https://legistar.granicus.com/cabq/attachments/cea43a7a-714f-40d2-a1f4-3413e541d0dc.pdf) · [Official R-13-163 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=R-13-163&Search=R-13-163) · [Roadway Studies placement](/transportation/roadway-projects/studies/#rio-grande-boulevard)
 
+## Automated Enforcement and Contract Oversight
+
+- [Councilor Dan Lewis Request for Investigation into the Redflex Traffic Systems Contract with the City of Albuquerque (2014 Archived PDF)](https://files.abqinfo.com/transportation/safety-crash-data/cabq-redflex-contract-investigation-request-2014.pdf)
+
+  The District 5 councilor formally asks the City Inspector General and the Director of Internal Audit to investigate the procurement process behind Albuquerque's original Redflex red-light camera contract, following press reports of alleged misconduct in the company's municipal contracting.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/councilor-district-5-documents/Investigation%20Request%20of%20Redflex%20Letter.pdf)
+
 ## Bicycle Travel and Rider Surveys
 
 - [2025 Bike to Work Day Survey Results](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/mrcog-bike-to-work-day-survey-results-2025.pdf)
@@ -161,6 +169,12 @@ title: "Safety & Crash Data"
   Presents NMDOT's adopted statewide pedestrian safety plan, five-year action framework, design and training resources, and implementation materials addressing infrastructure, agency processes, education, and proven pedestrian-safety countermeasures.
 
 ## School Transportation Safety
+
+- [Enacted Resolution R-2010-056: Creating a Traffic and Pedestrian Safety Project on Rainbow Boulevard and Universe Boulevard (Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/cabq-rainbow-universe-safety-project-resolution-r-2010-056.pdf)
+
+  The enacted City resolution creates a traffic and pedestrian safety project on Rainbow and Universe Boulevards, directing lighting, safety, and street improvements and appropriating funds from the Transportation Infrastructure Tax Fund 340 for the school corridor.
+
+  [Official City PDF](https://www.cabq.gov/council/documents/councilor-district-5-documents/r-10-44.pdf) · [Roadway Projects placement](/transportation/roadway-projects/#rainbow-boulevard-and-universe-boulevard-school-safety-project)
 
 - [APS Vision Zero for Youth Action Plan (2022–23 archived PDF)](https://files.abqinfo.com/transportation/bicycling/safety-crash-data/aps-vision-zero-for-youth-action-plan-2022-23.pdf)
 
