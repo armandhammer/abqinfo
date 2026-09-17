@@ -2,20 +2,23 @@
 param(
     [string]$DecisionPath = 'project-state/discovery/live-abqinfo-archive-reconciliation-decisions-2026-09-17.json',
     [string]$ClassificationPath = 'project-state/discovery/live-abqinfo-archive-reconciliation-classification-2026-09-16.json',
+    [string]$LiveR2Path = 'project-state/discovery/live-r2-object-inventory-2026-09-16.json',
     [string]$R2InventoryPath = 'project-state/r2-inventory.json',
     [string]$OutputPath = 'project-state/discovery/live-abqinfo-archive-reconciliation-repair-manifest-2026-09-17.json'
 )
 $ErrorActionPreference = 'Stop'
 $decisions = (Get-Content $DecisionPath -Raw | ConvertFrom-Json).decisions
 $classification = Get-Content $ClassificationPath -Raw | ConvertFrom-Json
+$liveInventory = Get-Content $LiveR2Path -Raw | ConvertFrom-Json
 $r2 = Get-Content $R2InventoryPath -Raw | ConvertFrom-Json
 $r2ByKey = @{}; foreach ($o in $r2.objects) { $r2ByKey[$o.key] = $o }
 $classByKey = @{}; foreach ($section in @($classification.unreferenced_r2_objects, $classification.expected_but_not_live, $classification.published_objects_missing_repository_r2_inventory)) { foreach ($x in $section) { if ($x.key) { $classByKey[$x.key] = $x } } }
+$liveByKey = @{}; foreach ($o in $liveInventory.objects) { $liveByKey[$o.key.ToLowerInvariant()] = $o }
 
 $actions = [System.Collections.Generic.List[object]]::new()
 $normalGroups = $decisions | Group-Object { ($_.affected_r2_keys | Select-Object -First 1).ToLowerInvariant() }
 foreach ($group in $normalGroups) {
-    $items = @($group.Group); $keys = @($items | ForEach-Object { $_.affected_r2_keys } | Sort-Object -Unique); $ids = @($items | ForEach-Object { $_.affected_master_ids } | Sort-Object -Unique); $key = $keys[0]; $c = $classByKey[$key]; $live = $null; if ($c) { $live = [pscustomobject]@{ size_bytes = $c.size_bytes; etag = $c.etag; public_url = $c.public_url } }
+    $items = @($group.Group); $keys = @($items | ForEach-Object { $_.affected_r2_keys } | Sort-Object -Unique); $ids = @($items | ForEach-Object { $_.affected_master_ids } | Sort-Object -Unique); $key = $keys[0]; $c = $classByKey[$key]; $live = $liveByKey[$key.ToLowerInvariant()]; if (-not $live -and $c) { $live = [pscustomobject]@{ size_bytes = $c.size_bytes; etag = $c.etag; public_url = $c.public_url } }
     if ($items[0].disposition -eq 'duplicate/superseded - retain canonical') { continue }
     if ($items[0].disposition -eq 'accounting/inventory repair only') {
         $actionType = 'provenance_reconstruction_required'; $gate = 'blocked_on_provenance_research'; $target = @('project-state/master-inventory.json','project-state/r2-inventory.json'); $current = 'Live R2 object exists, but no authoritative master record or repository R2 accounting record is present.'; $proposed = 'After provenance is reconstructed, add one authoritative master record and reconcile one matching R2 inventory record; do not publish.'
