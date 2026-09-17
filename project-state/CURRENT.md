@@ -20,7 +20,7 @@ Do not use historical handoff ledgers as routine startup context.
 
 ## Current task
 
-The archive-reconciliation provenance campaign is complete for all deterministic local work: 14 initial R2-inventory bookkeeping repairs and 24 provenance-backed master/R2 accounting repairs are complete. Three editorial or policy cases remain in `project-state/discovery/archive-reconciliation-unresolved-review-2026-09-17.json`: the 2003 EPC hearing-notification packet, the Water Master Plan Infrastructure Zone map, and the April 4, 2018 DPM agenda. One noncanonical duplicate R2 object remains only a future deletion candidate. No live R2 deletion or modification, publication, deployment, or further master-inventory repair is currently authorized.
+Archive reconciliation is in progress, with local R2 storage accounting complete: the 14 initial bookkeeping repairs, 24 provenance-backed repairs, and the final 116 published-object accounting gaps are complete. The three editorial or policy cases in `project-state/discovery/archive-reconciliation-unresolved-review-2026-09-17.json` now have factual master↔R2 linkage and remain `requires human review`: the 2003 EPC hearing-notification packet, the Water Master Plan Infrastructure Zone map, and the April 4, 2018 DPM agenda. Fifty-three current-branch links remain deployment lag, 111 published legacy objects remain intentionally unconverted to master records, and one noncanonical duplicate R2 object remains only a future deletion candidate. No live R2 deletion/modification, publication, deployment, or master-inventory repair is currently authorized.
 
 Completed so far:
 
@@ -43,4 +43,4 @@ Token/context optimization is complete.
 
 ## Next action
 
-Obtain an editorial or policy decision for the three isolated unresolved archive-reconciliation cases before any further local accounting, publication, or storage action. Do not perform live R2 deletion or modification, publication, deployment, or further master-inventory repair without explicit authorization.
+Maintain the completed local accounting state and obtain editorial or policy decisions for the three isolated cases before any publication or retention action. The 53 deployment-lag links require deployment authorization/workflow; the one duplicate remains a future deletion candidate only. Do not perform live R2 deletion or modification, publication, deployment, or further master-inventory repair without explicit authorization.
