@@ -11,24 +11,30 @@ function Get-MeetingDate {
 
     if ($Candidate.id -eq 'src-030f7d2a680a31d4') { return '2014-11-19' }
     if ($Candidate.id -eq 'src-f6feb3549d055097') { return '2018-04-04' }
+    if ($Candidate.id -eq 'src-48eb68305e18d8ad') { return '2018-03-07' }
+    if ($Candidate.id -eq 'src-a8dda335fb901049') { return '2015-04-15' }
+    if ($Candidate.id -eq 'src-f2716dd03961455e') { return '2015-05-20' }
     if ($Candidate.date) { return [string]$Candidate.date }
     throw "No deterministic meeting date is available for $($Candidate.id)."
 }
 
 $master = Get-Content -LiteralPath $MasterInventoryPath -Raw | ConvertFrom-Json
 $years = 2014..2018
+$additionalAgendaIds = @('src-a8dda335fb901049','src-f2716dd03961455e','src-48eb68305e18d8ad')
 $components = @(
     $master.candidates |
         Where-Object {
-            $_.r2_key -match '^development-land-use/development-process/cabq-dpm-executive-committee-(minutes|agenda)-20(14|15|16|17|18)' -and
+            ($_.r2_key -match '^development-land-use/development-process/cabq-dpm-executive-committee-(minutes|agenda)-20(14|15|16|17|18)' -or $additionalAgendaIds -contains $_.id) -and
             $_.id -ne 'src-f6feb3549d055097'
         } |
         ForEach-Object {
+            $date = Get-MeetingDate $_
+            $isAgenda = $_.id -in $additionalAgendaIds -or $_.title -match '(?i)agenda' -or $_.direct_file_url -match '(?i)agenda'
             [pscustomobject][ordered]@{
                 source_master_id = $_.id
-                meeting_date = Get-MeetingDate $_
-                document_kind = 'approved_minutes'
-                display_label = "Minutes - $(Get-MeetingDate $_)"
+                meeting_date = $date
+                document_kind = if ($isAgenda) { 'agenda' } else { 'approved_minutes' }
+                display_label = if ($isAgenda) { "Agenda - $date" } else { "Minutes - $date" }
                 source_url = $_.direct_file_url
                 existing_r2_key = $_.r2_key
                 local_path = $_.local_path
@@ -67,7 +73,7 @@ $components += [pscustomobject][ordered]@{
 }
 
 $annualPackets = foreach ($year in $years) {
-    $yearComponents = @($components | Where-Object { $_.meeting_date -like "$year-*" } | Sort-Object meeting_date, source_master_id)
+    $yearComponents = @($components | Where-Object { $_.meeting_date -like "$year-*" } | Sort-Object meeting_date, @{ Expression = { if ($_.document_kind -match '^agenda') { 0 } else { 1 } } }, source_master_id)
     [pscustomobject][ordered]@{
         year = $year
         proposed_filename = "cabq-dpm-executive-committee-agendas-minutes-$year.pdf"
@@ -80,9 +86,6 @@ $annualPackets = foreach ($year in $years) {
 }
 
 $excluded = @(
-    [pscustomobject][ordered]@{ source_master_id = 'src-48eb68305e18d8ad'; source_url = 'https://documents.cabq.gov/planning/development-process-manual/development-process-manual-executive-committee-agenda-march-7-2018.pdf'; disposition = 'exclude_duplicate_agenda'; reason = 'Approved March 7, 2018 minutes are already the included component.' },
-    [pscustomobject][ordered]@{ source_master_id = 'src-a8dda335fb901049'; source_url = 'https://documents.cabq.gov/planning/development-process-manual/DPM-Agenda%204-15-15.pdf'; disposition = 'exclude_duplicate_agenda'; reason = 'Approved April 15, 2015 minutes are already the included component.' },
-    [pscustomobject][ordered]@{ source_master_id = 'src-f2716dd03961455e'; source_url = 'https://documents.cabq.gov/planning/development-process-manual/DPM-Agenda%205-20-15.pdf'; disposition = 'exclude_duplicate_agenda'; reason = 'Approved May 20, 2015 minutes are already the included component.' },
     [pscustomobject][ordered]@{ source_master_id = 'src-2448a4409efca23b'; source_url = 'https://documents.cabq.gov/planning/development-process-manual/DPM-2015April15DPExecMinutes.pdf'; disposition = 'exclude_duplicate_source'; reason = 'Duplicate delivery of the included April 15, 2015 minutes.' },
     [pscustomobject][ordered]@{ source_master_id = 'src-28ce1d8748abb9a2'; source_url = 'https://documents.cabq.gov/planning/development-process-manual/Development%20Process%20Manual%20Executive%20Committee%20Agenda_February-25-2025.pdf'; disposition = 'outside_legacy_consolidation_scope'; reason = 'Later unaccounted record; no accounting or editorial decision is authorized in this campaign.' },
     [pscustomobject][ordered]@{ source_master_id = 'src-89d7a6448976c52e'; source_url = 'https://documents.cabq.gov/planning/development-process-manual/DPM%20Executive%20Committee%20Agenda%20%2012-4-2025.pdf'; disposition = 'outside_legacy_consolidation_scope'; reason = 'Later unaccounted record; no accounting or editorial decision is authorized in this campaign.' },
@@ -94,11 +97,11 @@ $excluded = @(
 $manifest = [pscustomobject][ordered]@{
     artifact_type = 'dpm_executive_committee_annual_consolidation_manifest'
     generated_at = (Get-Date).ToUniversalTime().ToString('o')
-    scope = 'Already represented 2014-2018 Development Process Manual Executive Committee records, plus the March 21, 2018 official agenda needed to complete the year under the approved missing-minutes policy.'
+    scope = 'Already represented 2014-2018 Development Process Manual Executive Committee records, including distinct agenda and approved-minutes records for the same meeting date, plus the March 21, 2018 official agenda needed to complete the year under the approved missing-minutes policy.'
     source_inventory = [pscustomobject][ordered]@{
         master_inventory_path = $MasterInventoryPath
         existing_accounted_component_count = 40
-        external_read_only_component_count = 1
+        external_read_only_component_count = 0
     }
     annual_packets = $annualPackets
     excluded_or_out_of_scope_records = $excluded

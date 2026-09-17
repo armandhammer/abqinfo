@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-09-17T14:45:00Z",
+  "recorded_at": "2026-09-17T14:58:50.1887633Z",
   "completed_item_range": "Reconciled the retained-source descendant-audit queue after the aggregate validator found 19 missing 2003-2004 bond-source entries. The omission was genuine stale queue state, not a validator defect: all 19 validated City PDF records use retained Plone /view source wrappers, matching 166 existing comparable queue records. Regenerating project-state/discovery/retained-source-audit-queue.json preserved all 550 existing records and states, added exactly 19 pending descendant crawls, and changed coverage from 569 eligible/550 queued/19 missing to 569/569/0. Full project validation and Hugo build passed. The completed DPM minutes batch remains preserved and was not reprocessed.",
   "verification_campaign_totals": {
     "verified": 2194,
@@ -9,7 +9,7 @@
   "total_candidates": 7074,
   "counts_by_status": {
     "pending review": 2255,
-    "approved for addition": 96,
+    "approved for addition": 59,
     "downloading": 0,
     "downloaded": 0,
     "parsed": 0,
@@ -23,7 +23,7 @@
     "blocked": 0,
     "requires human review": 191
   },
-  "remaining_nonterminal": 2531,
+  "remaining_nonterminal": 2494,
   "next_pending_id": "src-04e406c4dde231a8",
   "blockers": [
     "The 16-record/eight-page content batch is implemented and validated with authoritative government links; 17 original PDFs totaling 67,526,043 bytes remain pending separate explicit R2 upload approval, including three supporting components of the multipart Downtown Neighborhood plan.",
@@ -152,5 +152,46 @@
       "unresolved_case_research_user_decisions_remaining": 0,
       "unresolved_case_research_validation": "Test-UnresolvedArchiveCaseResearch.ps1 passed: 3 cases represented, 2 user decisions isolated, and exact R2 equality preserved."
     }
+  },
+  "dpm_annual_consolidation": {
+    "state": "local_packets_regenerated_upload_externally_gated",
+    "component_count": 44.0,
+    "packets": [
+      {
+        "year": 2014,
+        "component_count": 5,
+        "page_count": 13,
+        "size_bytes": 284803,
+        "sha256": "e03ddf4a07f20a83b76b6f5ee8afdfda956a0713c68b3a71e3ae034be78c6656"
+      },
+      {
+        "year": 2015,
+        "component_count": 9,
+        "page_count": 17,
+        "size_bytes": 773060,
+        "sha256": "51457ec34cd80383e6ad92aa38f17da84101b0ad118a8d687e2db48dd468be26"
+      },
+      {
+        "year": 2016,
+        "component_count": 9,
+        "page_count": 19,
+        "size_bytes": 449277,
+        "sha256": "9cae8d9fc7fa3a8ea727309015b656749ab759c89a0b434b3689f9f008359ed9"
+      },
+      {
+        "year": 2017,
+        "component_count": 15,
+        "page_count": 32,
+        "size_bytes": 762787,
+        "sha256": "d41a926cc273886293d4669ae5cb989c442ed3a8fc5fc7cb9c88c869250241c2"
+      },
+      {
+        "year": 2018,
+        "component_count": 6,
+        "page_count": 10,
+        "size_bytes": 376588,
+        "sha256": "87b085020276d880d388a702c23819027b5b510a955f672d464069df0896273b"
+      }
+    ]
   }
 }
