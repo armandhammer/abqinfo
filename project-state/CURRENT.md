@@ -13,14 +13,16 @@ This is the compact resume file for normal ABQInfo work. Workflow and context op
 ## Current state
 
 - Branch: `codex/autonomous-campaign-coordinator`, reconciled with current `origin/main` while preserving the later local archive-accounting work.
-- Master inventory: 7,086 unique records; status aggregates and `next_pending_id` are generated from the records.
+- Master inventory: 7,130 unique records; status aggregates and `next_pending_id` are generated from the records.
 - R2 inventory: 1,180 objects / 8,614,076,524 bytes, with exact six-field equality to the saved live-R2 inventory.
 - Archive reconciliation is locally complete. EPC and WIZ use the later explicit editorial decisions; no live R2 mutation occurred.
 - Corrected 2014-2018 DPM packets are local only. Their upload/content transition remains externally gated; the already-live annual packets remain unchanged.
 
 ## Ordinary work
 
-Resume from saved discovery artifacts and the authoritative inventory. The next coherent inventory-only research integration is the 44 `add_to_inventory` rows in `project-state/discovery/undiscovered-documents-research-2026-09-14.json`; recheck current URL and checksum collisions before creating candidates. Do not publish those records until the normal archive gate is complete.
+The 44 `add_to_inventory` rows in `project-state/discovery/undiscovered-documents-research-2026-09-14.json` are now inventory candidates with exact saved sizes, SHA-256 hashes, descriptions, cautions, and proposed pages. The durable mapping is `project-state/discovery/undiscovered-documents-candidate-integration-2026-09-17.json`. All remain `pending review`; no content or R2 change occurred.
+
+Resume ordinary review from `src-04e406c4dde231a8` or select a coherent saved queue. The newly integrated 2014 MS4 family should be reviewed as a package rather than as isolated attachments, and must pass the normal archive gate before publication.
 
 ## External gates
 

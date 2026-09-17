@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-09-17T15:28:15.865473Z",
-  "completed_item_range": "Reconciled codex/autonomous-campaign-coordinator with current origin/main, preserving newer deployed main work and later local archive-accounting decisions; removed stale run state and repaired stored inventory mojibake deterministically.",
-  "total_candidates": 7086,
+  "recorded_at": "2026-09-17T15:33:47.4935271Z",
+  "completed_item_range": "Reconciled codex/autonomous-campaign-coordinator with current origin/main, preserved newer deployed main work and later local archive-accounting decisions, removed stale run state, and repaired stored inventory mojibake deterministically. Then integrated all 44 collision-free add_to_inventory rows from undiscovered-documents-research-2026-09-14.json as inventory-only pending candidates with exact saved sizes, SHA-256 hashes, descriptions, cautions, and proposed pages; no site or R2 change occurred.",
+  "total_candidates": 7130,
   "counts_by_status": {
-    "pending review": 2048,
+    "pending review": 2092,
     "approved for addition": 5,
     "downloading": 0,
     "downloaded": 0,
@@ -18,14 +18,14 @@
     "blocked": 0,
     "requires human review": 210
   },
-  "remaining_nonterminal": 2233,
+  "remaining_nonterminal": 2277,
   "next_pending_id": "src-04e406c4dde231a8",
   "blockers": [
     "Five corrected local DPM annual packets include the distinct same-date agendas required by project policy; upload and content transition remain externally gated.",
     "The separate 17-PDF / 67,526,043-byte archive batch remains outside the current authorization.",
     "The noncanonical mrmppo duplicate remains a future deletion candidate only; no live R2 deletion is authorized."
   ],
-  "resume_command": "Workflow/context cleanup is complete. Resume ordinary ABQInfo work from master-inventory.json next_pending_id or a coherent saved discovery queue; do not perform externally gated DPM uploads, the separate 17-PDF batch, or R2 deletion without authorization.",
+  "resume_command": "Workflow/context cleanup and the 44-record saved-research candidate integration are complete. Resume ordinary ABQInfo work at src-04e406c4dde231a8 or a coherent saved queue; review the new 2014 MS4 family as a package and do not publish it before the archive gate. Do not perform externally gated DPM uploads, the separate 17-PDF batch, or R2 deletion without authorization.",
   "verification_campaign_totals": {
     "verified": 2194,
     "passed": 2070,
