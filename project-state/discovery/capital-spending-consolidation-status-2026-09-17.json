@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-17",
+  "purpose": "Durable resume state for the saved Capital Spending consolidation queue.",
+  "families": [
+    {
+      "year": 2004,
+      "state": "complete_keep_distinct_records",
+      "result": "project-state/discovery/claude-consolidation-2004-street-bond-program-history-2026-09-17.json",
+      "next_action": null
+    },
+    {
+      "year": 2009,
+      "state": "targeted_review_complete_keep_distinct_records",
+      "research": "project-state/discovery/go2009-bond-cluster-research-2026-09-11.json",
+      "review": "project-state/discovery/go2009-bond-version-and-duplicate-review-2026-09-17.json",
+      "reason": "The City PDFs establish that the two Streets schedules are distinct December 2008 and June 2009 editions, but do not establish final/adopted precedence. Senior Affairs and Family/Community Services are independently material; prior duplicate-ruling corrections were already present in the inventory.",
+      "next_action": null
+    },
+    {
+      "year": 2011,
+      "state": "targeted_review_complete_keep_distinct_records",
+      "research": "project-state/discovery/go2011-bond-cluster-research-2026-09-11.json",
+      "review": "project-state/discovery/go2011-bond-version-decision-2026-09-17.json",
+      "reason": "All four abbreviated files are December 2010 City editions; the full-name files are April 2011 City editions. Final/adopted status is not established, so all are retained neutrally and only the later editions remain visible.",
+      "next_action": null
+    },
+    {
+      "year": 2013,
+      "state": "targeted_review_complete_keep_distinct_records",
+      "canonical_program_book": "src-cb8cd727e3ca1fde",
+      "research": "project-state/discovery/bond-2013-department-set-cluster-research-2026-09-12.json",
+      "review": "project-state/discovery/go2013-department-set-decision-2026-09-17.json",
+      "reason": "The existing program book is a November 2012 EPC-stage record, not an adopted program. It cannot rank the materially distinct 2013 plain/copy_of pairs; retain their saved neutral treatment and the useful visible summary/scope records.",
+      "next_action": null
+    }
+  ],
+  "normal_resume_point": "src-05705d25113d3f2e; review the 2014 MS4 family as a package when reached.",
+  "side_effects": "The 2011 review reclassified four master-inventory records from requires human review to approved for addition. No R2 upload, site-content edit, deployment, or generic-candidate review was performed."
+}

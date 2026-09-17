@@ -24,7 +24,7 @@ The 44 `add_to_inventory` rows in `project-state/discovery/undiscovered-document
 
 The official City DPM directory and 18 existing Bernalillo County project pages passed authoritative HTTP validation as a coherent live-service batch. Results are in `project-state/discovery/live-service-validation-batch-2026-09-17.json`. Five MRCOG DocumentCenter records encountered during selection are static PDFs and remain behind the normal archive-first gate.
 
-Resume ordinary review from `src-05705d25113d3f2e` or select a coherent saved queue. The newly integrated 2014 MS4 family should be reviewed as a package rather than as isolated attachments, and must pass the normal archive gate before publication.
+Capital Spending consolidation is complete. The durable family status is `project-state/discovery/capital-spending-consolidation-status-2026-09-17.json`; the 2013 decision is `project-state/discovery/go2013-department-set-decision-2026-09-17.json`. The 2013-2022 book is an EPC-stage record, not an adopted-program record, so the materially distinct 2013 department editions and useful existing summary/scope records remain separate. Resume ordinary review from `src-05705d25113d3f2e`; review the 2014 MS4 family as a package.
 
 ## External gates
 
