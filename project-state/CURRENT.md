@@ -17,6 +17,7 @@ This is the compact resume file for normal ABQInfo work. Workflow and context op
 - R2 inventory: 1,191 objects / 8,638,742,164 bytes. The saved 1,180-object / 8,614,076,524-byte live-R2 snapshot remains the immutable archive-reconciliation baseline; the current ledger additionally contains the later publicly verified Paseo del Volcan archive batch.
 - Archive reconciliation is locally complete. EPC and WIZ use the later explicit editorial decisions; no live R2 mutation occurred.
 - Corrected 2014-2018 DPM packets are local only. Their upload/content transition remains externally gated; the already-live annual packets remain unchanged.
+- Project-state regeneration is deterministic and preserves durable checkpoint metadata. The checkpoint’s DPM packet state is regenerated from its manifest; do not hand-edit derived aggregate fields.
 
 ## Ordinary work
 
@@ -28,7 +29,7 @@ Capital Spending consolidation is complete. The durable family status is `projec
 
 The 2013-2014 Paseo del Volcan family is complete: its 11 approved originals are publicly byte-identical in R2 and validated on Transportation Plans, Roadway Projects, and Parks and Recreation; eight records remain excluded and one delivery copy remains duplicate. Its durable research, decisions, plan, and validation artifact are `project-state/discovery/paseo-del-volcan-cluster-research-2026-09-11.json`, `project-state/discovery/paseo-del-volcan-publication-decisions-2026-09-17.json`, `project-state/discovery/paseo-del-volcan-r2-archive-plan-2026-09-17.json`, and `project-state/discovery/paseo-del-volcan-r2-public-validation-2026-09-17.json`.
 
-`src-05b68a5758490499` is complete as `requires human review`: its saved City-source research records the unresolved choice to publish, redact, or summarize named residents' fiber-rulemaking correspondence. It has no R2 object or content placement. The next queue boundary is the 28-record 2014 MS4 Annual Report family; use `project-state/discovery/2014-ms4-family-package-gate-2026-09-18.json` and do not treat its attachments as individual review items.
+`src-05b68a5758490499` is complete as `requires human review`: its saved City-source research records the unresolved choice to publish, redact, or summarize named residents' fiber-rulemaking correspondence. It has no R2 object or content placement. The next queue boundary is the 2014 MS4 Annual Report package: exactly one main body and 27 attachments (28 records total). Use `project-state/discovery/2014-ms4-family-package-gate-2026-09-18.json` and do not treat its attachments as individual review items.
 
 ## External gates
 
