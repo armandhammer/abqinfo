@@ -11,6 +11,10 @@ $ErrorActionPreference = 'Stop'
 if (-not $?) { throw 'Master inventory validation failed.' }
 & "$PSScriptRoot/Test-ProjectStateRegeneration.ps1" -MasterPath $InventoryPath
 if (-not $?) { throw 'Project-state regeneration validation failed.' }
+if (Test-Path -LiteralPath 'project-state/discovery/2014-ms4-package-decision-2026-09-18.json') {
+  & "$PSScriptRoot/Test-2014Ms4PackageDecision.ps1"
+  if (-not $?) { throw '2014 MS4 package-decision validation failed.' }
+}
 & "$PSScriptRoot/Test-ContentStyle.ps1"
 
 & "$PSScriptRoot/Test-ContentPublicationQualityRegression.ps1"
