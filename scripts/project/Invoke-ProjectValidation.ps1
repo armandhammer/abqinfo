@@ -15,6 +15,10 @@ if (Test-Path -LiteralPath 'project-state/discovery/2014-ms4-package-decision-20
   & "$PSScriptRoot/Test-2014Ms4PackageDecision.ps1"
   if (-not $?) { throw '2014 MS4 package-decision validation failed.' }
 }
+if (Test-Path -LiteralPath 'project-state/discovery/2011-capital-spending-consolidation-manifest-2026-09-18.json') {
+  & python "$PSScriptRoot/Test-2011CapitalSpendingConsolidation.py"
+  if ($LASTEXITCODE) { throw '2011 Capital Spending consolidation validation failed.' }
+}
 & "$PSScriptRoot/Test-ContentStyle.ps1"
 
 & "$PSScriptRoot/Test-ContentPublicationQualityRegression.ps1"

@@ -16,7 +16,7 @@ from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import inch
 from reportlab.pdfgen import canvas
-from reportlab.platypus import LongTable, PageBreak, Paragraph, SimpleDocTemplate, Spacer, TableStyle
+from reportlab.platypus import PageBreak, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 
 
 def sha256(path: Path) -> str:
@@ -49,9 +49,12 @@ def build_intro(manifest: dict, entries: list[dict], path: Path) -> int:
         Paragraph(manifest["title"], styles["CompilationTitle"]),
         Paragraph("ABQInfo historical browsing compilation", styles["CompilationSub"]),
         Paragraph(
-            "This file is an ABQInfo-created convenience compilation, not a single publication issued by the City of Albuquerque. "
-            "Each City document is reproduced as a complete section after a provenance sheet. The separately archived original files, "
-            "their checksums, and their official source links remain the archival record.",
+            manifest.get(
+                "preservation_notice",
+                "This file is an ABQInfo-created convenience compilation, not a single publication issued by the City of Albuquerque. "
+                "Each City document is reproduced as a complete section after a provenance sheet. The separately archived original files, "
+                "their checksums, and their official source links remain the archival record.",
+            ),
             styles["Notice"],
         ),
         Paragraph("Contents", styles["Heading2"]),
@@ -62,8 +65,8 @@ def build_intro(manifest: dict, entries: list[dict], path: Path) -> int:
     for entry in entries:
         rows.append([Paragraph(f"<b>{entry['date']}</b><br/>{entry['title']}", styles["TOC"]), Paragraph(f"page {entry['section_page']}", styles["TOC"])])
 
-    def contents_table(data_rows: list[list[Paragraph]]) -> LongTable:
-        table = LongTable([header] + data_rows, colWidths=[6.15 * inch, 0.7 * inch], repeatRows=1, splitByRow=1)
+    def contents_table(data_rows: list[list[Paragraph]]) -> Table:
+        table = Table([header] + data_rows, colWidths=[6.15 * inch, 0.7 * inch], repeatRows=1, splitByRow=1)
         table.setStyle(TableStyle([
             ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#123b5d")),
             ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
@@ -84,15 +87,66 @@ def build_intro(manifest: dict, entries: list[dict], path: Path) -> int:
     if row_counts:
         if sum(int(count) for count in row_counts) != len(rows):
             raise ValueError("contents_page_row_counts must account for every contents row")
+        page_width, page_height = letter
+        left = 0.65 * inch
+        usable_width = page_width - 1.3 * inch
+        canv = canvas.Canvas(str(path), pagesize=letter)
+        canv.setTitle(manifest["title"])
+        canv.setAuthor("ABQInfo")
+
+        def draw_paragraph(item: Paragraph, top: float, width: float = usable_width) -> float:
+            _, item_height = item.wrap(width, page_height)
+            item.drawOn(canv, left, top - item_height)
+            return top - item_height
+
+        def draw_page_footer(page_number: int) -> None:
+            canv.saveState()
+            canv.setFont("Helvetica", 8)
+            canv.setFillColor(colors.HexColor("#52606d"))
+            canv.drawCentredString(page_width / 2, 0.42 * inch, f"ABQInfo historical compilation - page {page_number}")
+            canv.restoreState()
+
         cursor = 0
         for index, count in enumerate(row_counts):
-            if index:
-                story.append(PageBreak())
             next_cursor = cursor + int(count)
-            story.append(contents_table(rows[cursor:next_cursor]))
+            top = page_height - 0.55 * inch
+            if index == 0:
+                top = draw_paragraph(Paragraph(manifest["title"], styles["CompilationTitle"]), top - 0.08 * inch)
+                top = draw_paragraph(Paragraph("ABQInfo historical browsing compilation", styles["CompilationSub"]), top - 0.04 * inch)
+                notice = manifest.get(
+                    "preservation_notice",
+                    "This file is an ABQInfo-created convenience compilation, not a single publication issued by the City of Albuquerque. "
+                    "Each City document is reproduced as a complete section after a provenance sheet. The separately archived original files, "
+                    "their checksums, and their official source links remain the archival record.",
+                )
+                top = draw_paragraph(Paragraph(notice, styles["Notice"]), top - 0.12 * inch)
+                top = draw_paragraph(Paragraph("Contents", styles["Heading2"]), top - 0.12 * inch)
+                top -= 0.06 * inch
+            table = contents_table(rows[cursor:next_cursor])
+            _, table_height = table.wrap(usable_width, top - 0.65 * inch)
+            if table_height > top - 0.65 * inch:
+                raise ValueError(f"Contents group {index + 1} does not fit its page")
+            table.drawOn(canv, left, top - table_height)
+            top -= table_height + 0.18 * inch
+            if index == len(row_counts) - 1:
+                top = draw_paragraph(Paragraph(f"<b>Coverage:</b> {manifest['coverage_note']}", styles["Normal"]), top)
+                if manifest.get("editorial_note"):
+                    top = draw_paragraph(Paragraph("Record note", styles["Heading3"]), top - 0.12 * inch)
+                    draw_paragraph(Paragraph(manifest["editorial_note"], styles["Normal"]), top - 0.04 * inch)
+            draw_page_footer(index + 1)
+            canv.showPage()
             cursor = next_cursor
-    else:
-        story.append(contents_table(rows))
+
+        top = page_height - 0.65 * inch
+        top = draw_paragraph(Paragraph("Compilation provenance", styles["Heading2"]), top)
+        top = draw_paragraph(Paragraph(manifest["provenance_note"], styles["Normal"]), top - 0.06 * inch)
+        top = draw_paragraph(Paragraph("How to cite a section", styles["Heading3"]), top - 0.16 * inch)
+        draw_paragraph(Paragraph("Cite the original City document title and date shown on its provenance sheet. Use the original archive URL when a stable file citation is required; use this compilation only as a convenient collected edition.", styles["Normal"]), top - 0.04 * inch)
+        draw_page_footer(len(row_counts) + 1)
+        canv.save()
+        return len(PdfReader(str(path)).pages)
+
+    story.append(contents_table(rows))
     story.extend([Spacer(1, 0.18 * inch), Paragraph(f"<b>Coverage:</b> {manifest['coverage_note']}", styles["Normal"])])
     if manifest.get("editorial_note"):
         story.extend([Spacer(1, 0.12 * inch), Paragraph("Record note", styles["Heading3"]), Paragraph(manifest["editorial_note"], styles["Normal"])])
@@ -111,17 +165,22 @@ def build_separator(manifest: dict, entry: dict, path: Path, compilation_page: i
     title_style = ParagraphStyle("SectionTitle", parent=styles["Heading1"], fontName="Helvetica-Bold", fontSize=18, leading=22, textColor=colors.HexColor("#123b5d"), spaceAfter=12)
     body_style = ParagraphStyle("Body", parent=styles["Normal"], fontSize=10, leading=14, textColor=colors.HexColor("#263746"), spaceAfter=8)
     small_style = ParagraphStyle("Small", parent=styles["Normal"], fontSize=8.2, leading=11, textColor=colors.HexColor("#52606d"), wordWrap="CJK")
+    archive_label = entry.get("archive_label", "Byte-identical archived original")
+    preservation_note = entry.get(
+        "preservation_note",
+        "The complete original document begins on the following page. It remains separately available at the archive URL above.",
+    )
     story = [
         Paragraph(manifest.get("source_record_label", "Original City record"), styles["Heading3"]),
         Paragraph(entry["title"], title_style),
         Paragraph(f"<b>{manifest.get('date_label', 'Date')}:</b> {entry['date']}<br/><b>Original pages:</b> {entry['source_pages']}<br/><b>Inventory ID:</b> {entry['candidate_id']}", body_style),
         Paragraph(f"<b>Official City source:</b> <link href=\"{entry['source_url']}\" color=\"#075985\">{entry['source_url']}</link>", small_style),
         Spacer(1, 0.08 * inch),
-        Paragraph(f"<b>Byte-identical archived original:</b> <link href=\"{entry['archive_url']}\" color=\"#075985\">{entry['archive_url']}</link>", small_style),
+        Paragraph(f"<b>{archive_label}:</b> <link href=\"{entry['archive_url']}\" color=\"#075985\">{entry['archive_url']}</link>", small_style),
         Spacer(1, 0.08 * inch),
         Paragraph(f"<b>Original SHA-256:</b> {entry['checksum_sha256']}<br/><b>Original size:</b> {entry['size_bytes']:,} bytes", small_style),
         Spacer(1, 0.22 * inch),
-        Paragraph("The complete original document begins on the following page. It remains separately available at the archive URL above.", body_style),
+        Paragraph(preservation_note, body_style),
     ]
     frame_x, frame_y, frame_w, frame_h = 0.72 * inch, 0.72 * inch, width - 1.44 * inch, height - 2.25 * inch
     from reportlab.platypus import Frame
@@ -197,10 +256,13 @@ def build(manifest_path: Path, output_path: Path, validation_path: Path) -> None
                 "title": entry["title"],
                 "source_pages": entry["source_pages"],
                 "section_page": entry["section_page"],
+                "source_start_page": entry["section_page"] + 1,
+                "source_end_page": entry["section_page"] + entry["source_pages"],
                 "size_bytes": entry["size_bytes"],
                 "checksum_sha256": entry["checksum_sha256"],
                 "official_source_url": entry["source_url"],
                 "archive_url": entry["archive_url"],
+                "archive_status": entry.get("archive_status", "verified_public_r2"),
             }
             for entry in entries
         ],
