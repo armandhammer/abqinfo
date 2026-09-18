@@ -23,6 +23,10 @@ if (Test-Path -LiteralPath 'project-state/discovery/2009-capital-spending-consol
   & python "$PSScriptRoot/Test-2009CapitalSpendingConsolidationDecision.py"
   if ($LASTEXITCODE) { throw '2009 Capital Spending consolidation decision validation failed.' }
 }
+if (Test-Path -LiteralPath 'project-state/discovery/2007-2016-capital-details-consolidation-decision-2026-09-18.json') {
+  & python "$PSScriptRoot/Test-2007DecadePlanCapitalDetailsDecision.py"
+  if ($LASTEXITCODE) { throw '2007--2016 Capital Spending consolidation decision validation failed.' }
+}
 & "$PSScriptRoot/Test-ContentStyle.ps1"
 
 & "$PSScriptRoot/Test-ContentPublicationQualityRegression.ps1"
