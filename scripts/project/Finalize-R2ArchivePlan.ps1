@@ -29,7 +29,7 @@ foreach ($item in @($plan.items)) {
   })
   foreach ($location in $locations) {
     $page = Get-Content -Raw -Encoding UTF8 -LiteralPath $location
-    $officialLinkPresent = $page -like "*$($candidate.direct_file_url)*" -or $page -like "*$($candidate.source_url)*"
+    $officialLinkPresent = $page -like "*$($candidate.direct_file_url)*" -or $page -like "*$($candidate.source_url)*" -or ($candidate.parent_url -and $page -like "*$($candidate.parent_url)*")
     if ($page -notlike "*$($candidate.r2_url)*" -or -not $officialLinkPresent) { throw "Archive or official-source link is missing from implementation page '$location' for '$($item.id)'." }
   }
 

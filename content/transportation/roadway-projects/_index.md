@@ -256,6 +256,20 @@ Project contact: Bridgette Garrett at DMD, bgarrett@cabq.gov
 
 ### Unser Boulevard and Paseo del Norte
 
+### Paseo del Volcan (historical proposal record)
+
+- [Paseo del Volcan Corridor: Analysis of Economic Development Opportunities, With Technical Appendices (September 2014)](https://files.abqinfo.com/transportation/paseo-del-volcan/cabq-paseo-del-volcan-economic-development-opportunities-technical-appendices-2014-09.pdf)
+
+  The 86-page corridor study assesses the land, market, infrastructure, and prospective return-on-investment case for building the proposed road. [Official City document library](https://www.cabq.gov/council/documents/paseo-del-volcan-documents)
+
+- [Paseo del Volcan Right-of-Way Acquisition Status Map (December 2013)](https://files.abqinfo.com/transportation/paseo-del-volcan/cabq-paseo-del-volcan-right-of-way-acquisition-status-map-2013-12.pdf)
+
+  NMDOT’s map tabulates parcels and acres acquired and outstanding along the proposed alignment; its printed date is December 2013, not the later meeting dates in delivery filenames. [Official City document library](https://www.cabq.gov/council/documents/paseo-del-volcan-documents)
+
+- [Long Range Development Plans for Double Eagle II Airport, Steering Committee Presentation (June 27, 2014)](https://files.abqinfo.com/transportation/paseo-del-volcan/cabq-double-eagle-ii-long-range-development-plans-2014-06-27.pdf)
+
+  Places the City-owned airport’s development context alongside the proposed corridor. [Official City document library](https://www.cabq.gov/council/documents/paseo-del-volcan-documents)
+
 - [Unser and Paseo Project Website](https://upgradeunserpaseo.com/)
 
   Tracks construction of Albuquerque's $62 million Unser Boulevard and Paseo del Norte widening project, including traffic control, schedules, lane expansion, bicycle and trail connections, lighting, and stormwater improvements.
