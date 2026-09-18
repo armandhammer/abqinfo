@@ -467,50 +467,6 @@ These records preserve the adopted two-year program and each FHWA/FTA-approved r
 
 ### Historical Area and Corridor Transportation Records
 
-### Paseo del Volcan Corridor Record (2013–2014)
-
-The City-hosted record set documents the MRCOG-convened steering committee's economic, financing, airport-development, and right-of-way work for the proposed west-side corridor. It is evidence for a proposal, not an adopted corridor plan. [Official City document library](https://www.cabq.gov/council/documents/paseo-del-volcan-documents)
-
-- [Paseo del Volcan Corridor: Analysis of Economic Development Opportunities, With Technical Appendices (September 2014)](https://files.abqinfo.com/transportation/paseo-del-volcan/cabq-paseo-del-volcan-economic-development-opportunities-technical-appendices-2014-09.pdf)
-
-  The 86-page corridor study assesses land, market, and infrastructure conditions and the prospective return on investment from building the road.
-
-- [Economic Opportunity Analyses and Implementation Strategy, Steering Committee Summary (November 7, 2014)](https://files.abqinfo.com/transportation/paseo-del-volcan/cabq-paseo-del-volcan-economic-opportunity-implementation-summary-2014-11-07.pdf)
-
-  Summarizes the economic analysis and a proposed implementation strategy for the steering committee.
-
-- [Funding and Financing Workshop Presentation (April 4, 2014)](https://files.abqinfo.com/transportation/paseo-del-volcan/cabq-paseo-del-volcan-funding-financing-workshop-2014-04-04.pdf)
-
-  Presents corridor funding and financing mechanisms to the steering committee.
-
-- [Paseo del Volcan: Long Term Perspective (project brochure)](https://files.abqinfo.com/transportation/paseo-del-volcan/cabq-paseo-del-volcan-long-term-perspective-brochure.pdf)
-
-  Preserves the project’s public-facing cost and growth-case summary; the brochure itself carries no date.
-
-- [Long Range Development Plans for Double Eagle II Airport, Steering Committee Presentation (June 27, 2014)](https://files.abqinfo.com/transportation/paseo-del-volcan/cabq-double-eagle-ii-long-range-development-plans-2014-06-27.pdf)
-
-  Sets out the City-owned airport’s long-range development context for the steering committee.
-
-- [Paseo del Volcan Steering Committee Agenda — approved minutes not located (November 20, 2013)](https://files.abqinfo.com/transportation/paseo-del-volcan/cabq-paseo-del-volcan-steering-committee-agenda-2013-11-20.pdf)
-
-  Agenda for the committee’s first scheduled meeting. Its inclusion does not establish that the meeting occurred.
-
-- [Paseo del Volcan Steering Committee Minutes, Second Meeting (January 15, 2014)](https://files.abqinfo.com/transportation/paseo-del-volcan/cabq-paseo-del-volcan-steering-committee-minutes-2014-01-15.pdf)
-
-  MRCOG’s meeting record of attendance and right-of-way discussion.
-
-- [Paseo del Volcan Steering Committee Minutes (April 4, 2014)](https://files.abqinfo.com/transportation/paseo-del-volcan/cabq-paseo-del-volcan-steering-committee-minutes-2014-04-04.pdf)
-
-  Records the acquisition update, economic-development discussion, and financing workshop.
-
-- [Paseo del Volcan Steering Committee Meeting Notes, Fourth Meeting (June 27, 2014)](https://files.abqinfo.com/transportation/paseo-del-volcan/cabq-paseo-del-volcan-steering-committee-meeting-notes-2014-06-27.pdf)
-
-  The committee titled this record “Meeting Notes”; it covers acquisition, Double Eagle II, and private-landholder presentations.
-
-- [Major Public Open Space on the City’s West Side, Steering Committee Presentation](https://files.abqinfo.com/public-works/parks-recreation/cabq-major-public-open-space-west-side-steering-committee-presentation.pdf)
-
-  City Open Space’s photographic inventory provides the west-side land context for the proposed corridor.
-
 - [Los Duranes Sector Development Plan — Transportation Section (2012 archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-los-duranes-sector-plan-transportation-2012.pdf)
 
   Preserves Los Duranes' adopted transportation guidance and roadway inventory, emphasizing traffic calming, safe routes to school, transit, pedestrian and bicycle safety, acequia and bosque trail connections, intersection improvements, and street standards that maintain the neighborhood's historic rural character.
@@ -558,6 +514,50 @@ The City-hosted record set documents the MRCOG-convened steering committee's eco
   Preserves Volcano Heights' amended street and streetscape standards, documenting limited-access intersections, the primary and secondary network, pedestrian-oriented block design, transit-supportive development, and detailed cross sections for neighborhood streets, connectors, Unser Boulevard, the transit boulevard, and town center.
 
   [Official City PDF](https://documents.cabq.gov/planning/development-process-manual/XSections/Volcano_Heights-2013.pdf)
+
+#### Paseo del Volcan Corridor Record (2013–2014)
+
+The City-hosted record set documents the MRCOG-convened steering committee's economic, financing, airport-development, and right-of-way work for the proposed west-side corridor. It is evidence for a proposal, not an adopted corridor plan. [Official City document library](https://www.cabq.gov/council/documents/paseo-del-volcan-documents)
+
+- [Paseo del Volcan Corridor: Analysis of Economic Development Opportunities, with Technical Appendices (September 2014)](https://files.abqinfo.com/transportation/paseo-del-volcan/cabq-paseo-del-volcan-economic-development-opportunities-technical-appendices-2014-09.pdf)
+
+  The 86-page corridor study assesses land, market, and infrastructure conditions and the prospective return on investment from building the road. [Official City record](https://www.cabq.gov/council/documents/paseo-del-volcan-documents/PaseodelVolcanFinalReportwithTechnicalAppendices.pdf/view)
+
+- [Economic Opportunity Analyses and Implementation Strategy, Steering Committee Summary (November 7, 2014)](https://files.abqinfo.com/transportation/paseo-del-volcan/cabq-paseo-del-volcan-economic-opportunity-implementation-summary-2014-11-07.pdf)
+
+  Summarizes the economic analysis and a proposed implementation strategy for the steering committee. [Official City record](https://www.cabq.gov/council/documents/paseo-del-volcan-documents/PaseodelVolcanSteeringCommitteePresentation11714.pdf/view)
+
+- [Funding and Financing Workshop Presentation (April 4, 2014)](https://files.abqinfo.com/transportation/paseo-del-volcan/cabq-paseo-del-volcan-funding-financing-workshop-2014-04-04.pdf)
+
+  Presents corridor funding and financing mechanisms to the steering committee. [Official City record](https://www.cabq.gov/council/documents/paseo-del-volcan-documents/PdV%20SC%20presentation%2004042014.pdf/view)
+
+- [Paseo del Volcan: Long Term Perspective (project brochure)](https://files.abqinfo.com/transportation/paseo-del-volcan/cabq-paseo-del-volcan-long-term-perspective-brochure.pdf)
+
+  Preserves the project’s public-facing cost and growth-case summary; the brochure itself carries no date. [Official City record](https://www.cabq.gov/council/documents/paseo-del-volcan-documents/PaseodelVolcan_Brochure_FINAL.pdf/view)
+
+- [Long Range Development Plans for Double Eagle II Airport, Steering Committee Presentation (June 27, 2014)](https://files.abqinfo.com/transportation/paseo-del-volcan/cabq-double-eagle-ii-long-range-development-plans-2014-06-27.pdf)
+
+  Sets out the City-owned airport’s long-range development context for the steering committee. [Official City record](https://www.cabq.gov/council/documents/paseo-del-volcan-documents/DEIIPDVPresentation.pdf/view)
+
+- [Paseo del Volcan Steering Committee Agenda — Approved Minutes Not Located (November 20, 2013)](https://files.abqinfo.com/transportation/paseo-del-volcan/cabq-paseo-del-volcan-steering-committee-agenda-2013-11-20.pdf)
+
+  Agenda for the committee’s first scheduled meeting. Its inclusion does not establish that the meeting occurred. [Official City record](https://www.cabq.gov/council/documents/paseo-del-volcan-documents/Paseo%20del%20Volcan%20Steering%20Committee%20Agenda%2011_12_2013.pdf/view)
+
+- [Paseo del Volcan Steering Committee Minutes, Second Meeting (January 15, 2014)](https://files.abqinfo.com/transportation/paseo-del-volcan/cabq-paseo-del-volcan-steering-committee-minutes-2014-01-15.pdf)
+
+  MRCOG’s meeting record of attendance and right-of-way discussion. [Official City record](https://www.cabq.gov/council/documents/paseo-del-volcan-documents/PDVMRCOGSteeringCommitteeMinutes20140115.pdf/view)
+
+- [Paseo del Volcan Steering Committee Minutes (April 4, 2014)](https://files.abqinfo.com/transportation/paseo-del-volcan/cabq-paseo-del-volcan-steering-committee-minutes-2014-04-04.pdf)
+
+  Records the acquisition update, economic-development discussion, and financing workshop. [Official City record](https://www.cabq.gov/council/documents/paseo-del-volcan-documents/PDVSteeringCommitteeMinutes04042014.pdf/view)
+
+- [Paseo del Volcan Steering Committee Meeting Notes, Fourth Meeting (June 27, 2014)](https://files.abqinfo.com/transportation/paseo-del-volcan/cabq-paseo-del-volcan-steering-committee-meeting-notes-2014-06-27.pdf)
+
+  The committee titled this record “Meeting Notes”; it covers acquisition, Double Eagle II, and private-landholder presentations. [Official City record](https://www.cabq.gov/council/documents/paseo-del-volcan-documents/PDVMRCOGSteeringCommitteeMinutes20140627.pdf/view)
+
+- [Major Public Open Space on the City’s West Side, Steering Committee Presentation](https://files.abqinfo.com/public-works/parks-recreation/cabq-major-public-open-space-west-side-steering-committee-presentation.pdf)
+
+  City Open Space’s photographic inventory provides the west-side land context for the proposed corridor. [Official City record](https://www.cabq.gov/council/documents/paseo-del-volcan-documents/westsideOSpresentation.pdf/view)
 
 ## Institutional Transportation Planning
 
