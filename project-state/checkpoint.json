@@ -1,9 +1,9 @@
 {
-  "recorded_at": "2026-09-18T00:11:03.1758928Z",
-  "completed_item_range": "Completed the 2013-2014 Paseo del Volcan public-history family: 11 approved records were archived, publicly byte-identical verified, reconciled into the current R2 ledger (1,191 objects / 8,638,742,164 bytes), placed on their approved transportation and parks pages, and finalized validated. Eight reviewed records remain excluded and one delivery copy remains duplicate; no overwrite or deletion occurred.",
+  "recorded_at": "2026-09-18T02:06:40.9476248Z",
+  "completed_item_range": "Classified src-05b68a5758490499 as requires human review from completed City-source research; no R2 archive or content action occurred. Reached the saved 2014 MS4 Annual Report family gate (28 candidates / 54,354,234 verified source bytes) and preserved it for package-level archive and publication planning.",
   "total_candidates": 7130,
   "counts_by_status": {
-    "pending review": 2072,
+    "pending review": 2071,
     "approved for addition": 9,
     "downloading": 0,
     "downloaded": 0,
@@ -16,14 +16,16 @@
     "duplicate": 1500,
     "superseded": 223,
     "blocked": 0,
-    "requires human review": 206
+    "requires human review": 207
   },
-  "remaining_nonterminal": 2242,
-  "next_pending_id": "src-05b68a5758490499",
+  "remaining_nonterminal": 2241,
+  "next_pending_id": "src-05ec421cb265b29a",
   "blockers": [
-    "Five corrected local DPM annual packets remain externally gated.,The separate 17-PDF / 67,526,043-byte archive batch remains outside the current authorization.,The noncanonical mrmppo duplicate remains a future deletion candidate only."
+    "Fiber correspondence publication/privacy decision for src-05b68a5758490499 remains human review; no archive or site action authorized.",
+    "2014 MS4 Annual Report family must be handled as one 28-record package before individual archival or publication action.",
+    "Corrected DPM packet uploads, the 17-PDF batch, and mrmppo deletion remain externally gated."
   ],
-  "resume_command": "Resume ordinary review at src-05b68a5758490499. When the 2014 MS4 family is reached, review it as one coherent package before any archival or visible work.",
+  "resume_command": "Review the 2014 MS4 Annual Report package using project-state/discovery/2014-ms4-family-package-gate-2026-09-18.json; do not handle src-05ec421cb265b29a in isolation or perform R2 actions without current authorization.",
   "verification_campaign_totals": {
     "verified": 2194,
     "passed": 2070,
@@ -445,58 +447,38 @@
         "passed": 2070,
         "requires_human_review": 124
       }
-    }
-  ],
-  "dpm_annual_consolidation": {
-    "state": "corrected_local_packets_generated_upload_externally_gated",
-    "manifest": "project-state/discovery/dpm-executive-committee-consolidation-manifest-2026-09-17.json",
-    "component_count": 44,
-    "packets": [
-      {
-        "year": 2014,
-        "component_count": 5,
-        "page_count": 13,
-        "size_bytes": 284803,
-        "sha256": "e03ddf4a07f20a83b76b6f5ee8afdfda956a0713c68b3a71e3ae034be78c6656",
-        "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2014.pdf",
-        "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2014.pdf"
+    },
+    {
+      "recorded_at": "2026-09-18T00:11:03.1758928Z",
+      "completed_item_range": "Completed the 2013-2014 Paseo del Volcan public-history family: 11 approved records were archived, publicly byte-identical verified, reconciled into the current R2 ledger (1,191 objects / 8,638,742,164 bytes), placed on their approved transportation and parks pages, and finalized validated. Eight reviewed records remain excluded and one delivery copy remains duplicate; no overwrite or deletion occurred.",
+      "total_candidates": 7130,
+      "counts_by_status": {
+        "pending review": 2072,
+        "approved for addition": 9,
+        "downloading": 0,
+        "downloaded": 0,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 2,
+        "implemented": 159,
+        "validated": 1440,
+        "excluded": 1519,
+        "duplicate": 1500,
+        "superseded": 223,
+        "blocked": 0,
+        "requires human review": 206
       },
-      {
-        "year": 2015,
-        "component_count": 9,
-        "page_count": 17,
-        "size_bytes": 773060,
-        "sha256": "51457ec34cd80383e6ad92aa38f17da84101b0ad118a8d687e2db48dd468be26",
-        "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2015.pdf",
-        "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2015.pdf"
-      },
-      {
-        "year": 2016,
-        "component_count": 9,
-        "page_count": 19,
-        "size_bytes": 449277,
-        "sha256": "9cae8d9fc7fa3a8ea727309015b656749ab759c89a0b434b3689f9f008359ed9",
-        "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2016.pdf",
-        "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2016.pdf"
-      },
-      {
-        "year": 2017,
-        "component_count": 15,
-        "page_count": 32,
-        "size_bytes": 762787,
-        "sha256": "d41a926cc273886293d4669ae5cb989c442ed3a8fc5fc7cb9c88c869250241c2",
-        "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2017.pdf",
-        "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2017.pdf"
-      },
-      {
-        "year": 2018,
-        "component_count": 6,
-        "page_count": 10,
-        "size_bytes": 376588,
-        "sha256": "87b085020276d880d388a702c23819027b5b510a955f672d464069df0896273b",
-        "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2018.pdf",
-        "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2018.pdf"
+      "remaining_nonterminal": 2242,
+      "next_pending_id": "src-05b68a5758490499",
+      "blockers": [
+        "Five corrected local DPM annual packets remain externally gated.,The separate 17-PDF / 67,526,043-byte archive batch remains outside the current authorization.,The noncanonical mrmppo duplicate remains a future deletion candidate only."
+      ],
+      "resume_command": "Resume ordinary review at src-05b68a5758490499. When the 2014 MS4 family is reached, review it as one coherent package before any archival or visible work.",
+      "verification_campaign_totals": {
+        "verified": 2194,
+        "passed": 2070,
+        "requires_human_review": 124
       }
-    ]
-  }
+    }
+  ]
 }
