@@ -27,6 +27,10 @@ if (Test-Path -LiteralPath 'project-state/discovery/2007-2016-capital-details-co
   & python "$PSScriptRoot/Test-2007DecadePlanCapitalDetailsDecision.py"
   if ($LASTEXITCODE) { throw '2007--2016 Capital Spending consolidation decision validation failed.' }
 }
+if (Test-Path -LiteralPath 'project-state/discovery/2005-2013-impact-fee-ccip-consolidation-decision-2026-09-18.json') {
+  & python "$PSScriptRoot/Test-ImpactFeeCcipConsolidationDecision.py"
+  if ($LASTEXITCODE) { throw '2005--2013 impact-fee CCIP consolidation decision validation failed.' }
+}
 & "$PSScriptRoot/Test-ContentStyle.ps1"
 
 & "$PSScriptRoot/Test-ContentPublicationQualityRegression.ps1"
