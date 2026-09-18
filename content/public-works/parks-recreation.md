@@ -134,7 +134,7 @@ Parks and recreation facilities and programs.
 
 - [Major Public Open Space on the City’s West Side, Steering Committee Presentation](https://files.abqinfo.com/public-works/parks-recreation/cabq-major-public-open-space-west-side-steering-committee-presentation.pdf)
 
-  City Open Space’s 25-page photographic inventory of public lands and facilities west of Coors Boulevard, prepared as context for the Paseo del Volcan steering committee. [Official City document library](https://www.cabq.gov/council/documents/paseo-del-volcan-documents)
+  City Open Space’s 25-page photographic inventory of public lands and facilities west of Coors Boulevard, prepared as context for the Paseo del Volcan steering committee. [Official City record](https://www.cabq.gov/council/documents/paseo-del-volcan-documents/westsideOSpresentation.pdf/view)
 
 - [Facility Plan for Arroyos (1986)](https://files.abqinfo.com/public-works/parks-recreation/arroyo-plans/cabq-facility-plan-for-arroyos-1986.pdf)
 
