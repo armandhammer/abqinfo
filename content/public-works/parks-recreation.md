@@ -132,6 +132,10 @@ Parks and recreation facilities and programs.
 
 ## Arroyo and Open Space Planning History
 
+- [Major Public Open Space on the City’s West Side, Steering Committee Presentation](https://files.abqinfo.com/public-works/parks-recreation/cabq-major-public-open-space-west-side-steering-committee-presentation.pdf)
+
+  City Open Space’s 25-page photographic inventory of public lands and facilities west of Coors Boulevard, prepared as context for the Paseo del Volcan steering committee. [Official City document library](https://www.cabq.gov/council/documents/paseo-del-volcan-documents)
+
 - [Facility Plan for Arroyos (1986)](https://files.abqinfo.com/public-works/parks-recreation/arroyo-plans/cabq-facility-plan-for-arroyos-1986.pdf)
 
   Establishes Albuquerque's citywide framework for multiple use of arroyos and floodplains, coordinating drainage, trails, recreation, open space, environmental protection, and compatible development. [Official City Plan Library](https://www.cabq.gov/planning/plans-publications) · [Official City PDF](https://onbase.cabq.gov/PublicAccess/api/Document/12246817/)

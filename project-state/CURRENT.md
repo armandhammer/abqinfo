@@ -14,7 +14,7 @@ This is the compact resume file for normal ABQInfo work. Workflow and context op
 
 - Repository history preserves the later local archive-accounting work through a history-preserving reconciliation with `origin/main`.
 - Master inventory: 7,130 unique records; status aggregates and `next_pending_id` are generated from the records.
-- R2 inventory: 1,180 objects / 8,614,076,524 bytes, with exact six-field equality to the saved live-R2 inventory.
+- R2 inventory: 1,191 objects / 8,638,742,164 bytes. The saved 1,180-object / 8,614,076,524-byte live-R2 snapshot remains the immutable archive-reconciliation baseline; the current ledger additionally contains the later publicly verified Paseo del Volcan archive batch.
 - Archive reconciliation is locally complete. EPC and WIZ use the later explicit editorial decisions; no live R2 mutation occurred.
 - Corrected 2014-2018 DPM packets are local only. Their upload/content transition remains externally gated; the already-live annual packets remain unchanged.
 
@@ -24,7 +24,9 @@ The 44 `add_to_inventory` rows in `project-state/discovery/undiscovered-document
 
 The official City DPM directory and 18 existing Bernalillo County project pages passed authoritative HTTP validation as a coherent live-service batch. Results are in `project-state/discovery/live-service-validation-batch-2026-09-17.json`. Five MRCOG DocumentCenter records encountered during selection are static PDFs and remain behind the normal archive-first gate.
 
-Capital Spending consolidation is complete. The durable family status is `project-state/discovery/capital-spending-consolidation-status-2026-09-17.json`; the 2013 decision is `project-state/discovery/go2013-department-set-decision-2026-09-17.json`. The 2013-2022 book is an EPC-stage record, not an adopted-program record, so the materially distinct 2013 department editions and useful existing summary/scope records remain separate. Resume ordinary review from `src-05705d25113d3f2e`; review the 2014 MS4 family as a package.
+Capital Spending consolidation is complete. The durable family status is `project-state/discovery/capital-spending-consolidation-status-2026-09-17.json`; the 2013 decision is `project-state/discovery/go2013-department-set-decision-2026-09-17.json`. The 2013-2022 book is an EPC-stage record, not an adopted-program record, so the materially distinct 2013 department editions and useful existing summary/scope records remain separate.
+
+The 2013-2014 Paseo del Volcan family is complete: its 11 approved originals are publicly byte-identical in R2 and validated on Transportation Plans, Roadway Projects, and Parks and Recreation; eight records remain excluded and one delivery copy remains duplicate. Its durable research, decisions, plan, and validation artifact are `project-state/discovery/paseo-del-volcan-cluster-research-2026-09-11.json`, `project-state/discovery/paseo-del-volcan-publication-decisions-2026-09-17.json`, `project-state/discovery/paseo-del-volcan-r2-archive-plan-2026-09-17.json`, and `project-state/discovery/paseo-del-volcan-r2-public-validation-2026-09-17.json`. Resume ordinary review at `src-05b68a5758490499`; review the 2014 MS4 family as a package when reached.
 
 ## External gates
 

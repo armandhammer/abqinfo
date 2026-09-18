@@ -90,7 +90,27 @@ try {
     # HttpResponseMessage.RequestMessage property returned by PowerShell 7.
     $finalUrl = [string]$response.BaseResponse.ResponseUri.AbsoluteUri
   }
-  if ($contentType -match '(?i)application/pdf' -and $extension -ne '.pdf') {
+  # City Plone file records commonly expose a human-facing /view page rather
+  # than the binary itself.  Resolve that page's explicit download link before
+  # recording metadata; otherwise an HTML wrapper could be mislabeled .pdf.
+  $leadingBytes = [IO.File]::ReadAllBytes($path)
+  $isPdf = $leadingBytes.Length -ge 5 -and [Text.Encoding]::ASCII.GetString($leadingBytes, 0, 5) -eq '%PDF-'
+  if (-not $isPdf -and $url -match '/view(?:$|[?#])') {
+    $html = [Text.Encoding]::UTF8.GetString($leadingBytes)
+    $downloadMatch = [regex]::Match($html, 'href="(?<url>[^"]+/@@download/[^"]+)"', [Text.RegularExpressions.RegexOptions]::IgnoreCase)
+    if ($downloadMatch.Success) {
+      $downloadUrl = [uri]::new(([uri]$url), [System.Net.WebUtility]::HtmlDecode($downloadMatch.Groups['url'].Value)).AbsoluteUri
+      $response = Invoke-WebRequest -Uri $downloadUrl -OutFile $path -PassThru -UseBasicParsing -Headers $headers
+      $contentType = [string]$response.Headers['Content-Type']
+      $finalUrl = $downloadUrl
+      $leadingBytes = [IO.File]::ReadAllBytes($path)
+      $isPdf = $leadingBytes.Length -ge 5 -and [Text.Encoding]::ASCII.GetString($leadingBytes, 0, 5) -eq '%PDF-'
+    }
+  }
+  if (-not $isPdf -and $contentType -match '(?i)application/pdf') {
+    throw "Source returned a non-PDF body despite PDF content type: $url"
+  }
+  if (($contentType -match '(?i)application/pdf' -or $isPdf) -and $extension -ne '.pdf') {
     $pdfPath = [IO.Path]::ChangeExtension($path, '.pdf')
     Move-Item -LiteralPath $path -Destination $pdfPath -Force
     $path = $pdfPath
