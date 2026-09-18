@@ -1,6 +1,6 @@
 {
-  "recorded_at": "2026-09-17T23:49:58.2081063Z",
-  "completed_item_range": "Recovered the interrupted Paseo del Volcan 11-object archive operation: no uploader remained active; all eleven R2 objects existed and every public download matched the exact staged source size and SHA-256. Reconciled all eleven master records without overwrite or deletion; eight exclusions and one duplicate remain recorded. No content changed.",
+  "recorded_at": "2026-09-18T00:07:53.5279240Z",
+  "completed_item_range": "Reconciled current R2 accounting after the recovered Paseo archive operation: the saved 1,180-object / 8,614,076,524-byte reconciliation snapshot remains historical baseline; 11 newly created Paseo objects were publicly byte-identical and are now recorded, producing 1,191 objects / 8,638,742,164 bytes. No overwrite, deletion, or content publication occurred in the accounting stage.",
   "total_candidates": 7130,
   "counts_by_status": {
     "pending review": 2072,
@@ -23,7 +23,7 @@
   "blockers": [
     "Paseo del Volcan content integration remains to be implemented and validated before a content PR.,Five corrected local DPM annual packets remain externally gated.,The separate 17-PDF / 67,526,043-byte archive batch remains outside the current authorization.,The noncanonical mrmppo duplicate remains a future deletion candidate only."
   ],
-  "resume_command": "Implement and validate the now fully archived Paseo del Volcan public-history family on its approved transportation and parks pages, then create a routine content PR. Do not begin unrelated queue work first.",
+  "resume_command": "Implement and validate the fully archived Paseo del Volcan public-history family on its approved transportation and parks pages, then create a routine content PR. Do not begin unrelated queue work first.",
   "verification_campaign_totals": {
     "verified": 2194,
     "passed": 2070,
@@ -376,6 +376,38 @@
         "Do not resume the Paseo archive plan without verifying the two public R2 downloads and resolving the assigned-but-unverified third object without overwrite.,Eight approved Paseo records remain unarchived; do not edit content until all selected objects are publicly byte-verified.,Five corrected local DPM annual packets remain externally gated.,The separate 17-PDF / 67,526,043-byte archive batch remains outside the current authorization.,The noncanonical mrmppo duplicate remains a future deletion candidate only."
       ],
       "resume_command": "Validate the saved Paseo del Volcan recovery state: publicly verify src-05705d25113d3f2e and src-189c0a45bb72113c, inspect src-2f75875ce1c5cf27 without overwrite, then obtain or confirm authorization before uploading any remaining plan item. Do not modify content until the entire selected family is publicly byte-verified.",
+      "verification_campaign_totals": {
+        "verified": 2194,
+        "passed": 2070,
+        "requires_human_review": 124
+      }
+    },
+    {
+      "recorded_at": "2026-09-17T23:49:58.2081063Z",
+      "completed_item_range": "Recovered the interrupted Paseo del Volcan 11-object archive operation: no uploader remained active; all eleven R2 objects existed and every public download matched the exact staged source size and SHA-256. Reconciled all eleven master records without overwrite or deletion; eight exclusions and one duplicate remain recorded. No content changed.",
+      "total_candidates": 7130,
+      "counts_by_status": {
+        "pending review": 2072,
+        "approved for addition": 9,
+        "downloading": 0,
+        "downloaded": 0,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 13,
+        "implemented": 159,
+        "validated": 1429,
+        "excluded": 1519,
+        "duplicate": 1500,
+        "superseded": 223,
+        "blocked": 0,
+        "requires human review": 206
+      },
+      "remaining_nonterminal": 2253,
+      "next_pending_id": "src-05705d25113d3f2e",
+      "blockers": [
+        "Paseo del Volcan content integration remains to be implemented and validated before a content PR.,Five corrected local DPM annual packets remain externally gated.,The separate 17-PDF / 67,526,043-byte archive batch remains outside the current authorization.,The noncanonical mrmppo duplicate remains a future deletion candidate only."
+      ],
+      "resume_command": "Implement and validate the now fully archived Paseo del Volcan public-history family on its approved transportation and parks pages, then create a routine content PR. Do not begin unrelated queue work first.",
       "verification_campaign_totals": {
         "verified": 2194,
         "passed": 2070,

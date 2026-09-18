@@ -14,7 +14,7 @@ This is the compact resume file for normal ABQInfo work. Workflow and context op
 
 - Repository history preserves the later local archive-accounting work through a history-preserving reconciliation with `origin/main`.
 - Master inventory: 7,130 unique records; status aggregates and `next_pending_id` are generated from the records.
-- R2 inventory: 1,180 objects / 8,614,076,524 bytes, with exact six-field equality to the saved live-R2 inventory.
+- R2 inventory: 1,191 objects / 8,638,742,164 bytes. The saved 1,180-object / 8,614,076,524-byte live-R2 snapshot remains the immutable archive-reconciliation baseline; the current ledger additionally contains the later publicly verified Paseo del Volcan archive batch.
 - Archive reconciliation is locally complete. EPC and WIZ use the later explicit editorial decisions; no live R2 mutation occurred.
 - Corrected 2014-2018 DPM packets are local only. Their upload/content transition remains externally gated; the already-live annual packets remain unchanged.
 
