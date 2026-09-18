@@ -38,23 +38,38 @@ function Write-InventoryWithRetry($Value, [string]$Path) {
   }
 }
 
+function ConvertTo-ComparableJson($Value) {
+  if ($null -eq $Value) { return 'null' }
+  return ($Value | ConvertTo-Json -Depth 20 -Compress)
+}
+
 $inventory = Read-InventoryWithRetry $InventoryPath
 $candidate = @($inventory.candidates | Where-Object id -eq $Id)
 if ($candidate.Count -ne 1) { throw "Expected one candidate for '$Id'; found $($candidate.Count)." }
 $candidate = $candidate[0]
+$candidateChanged = $false
 foreach ($key in $Set.Keys) {
   if (-not $candidate.PSObject.Properties[$key]) { throw "Unknown inventory field '$key'." }
-  $candidate.$key = $Set[$key]
+  if ((ConvertTo-ComparableJson $candidate.$key) -ne (ConvertTo-ComparableJson $Set[$key])) {
+    $candidate.$key = $Set[$key]
+    $candidateChanged = $true
+  }
 }
-if ($Set.ContainsKey('description')) {
+if ($candidateChanged -and $Set.ContainsKey('description')) {
   $candidate.description_word_count = if ([string]::IsNullOrWhiteSpace($candidate.description)) { 0 } else { @($candidate.description -split '\s+' | Where-Object { $_ }).Count }
 }
-$candidate.updated_at = (Get-Date).ToUniversalTime().ToString('o')
 $counts = [ordered]@{}
 foreach ($status in $inventory.allowed_statuses) { $counts[$status] = @($inventory.candidates | Where-Object status -eq $status).Count }
-$inventory.counts = [pscustomobject]$counts
-$inventory.generated_at = (Get-Date).ToUniversalTime().ToString('o')
 $nextCandidates = @($inventory.candidates | Where-Object { $_.status -in @('pending review','approved for addition','downloaded','parsed','description drafted','placement assigned') -or ($_.status -eq 'implemented' -and $_.validation_status -ne 'passed') } | Sort-Object id | Select-Object -First 1)
-$inventory.next_pending_id = if ($nextCandidates.Count) { $nextCandidates[0].id } else { $null }
-Write-InventoryWithRetry $inventory $InventoryPath
+$expectedNext = if ($nextCandidates.Count) { $nextCandidates[0].id } else { $null }
+$aggregateChanged =
+  (ConvertTo-ComparableJson $inventory.counts) -ne (ConvertTo-ComparableJson ([pscustomobject]$counts)) -or
+  $inventory.next_pending_id -ne $expectedNext
+if ($candidateChanged -or $aggregateChanged) {
+  if ($candidateChanged) { $candidate.updated_at = (Get-Date).ToUniversalTime().ToString('o') }
+  $inventory.counts = [pscustomobject]$counts
+  $inventory.next_pending_id = $expectedNext
+  $inventory.generated_at = (Get-Date).ToUniversalTime().ToString('o')
+  Write-InventoryWithRetry $inventory $InventoryPath
+}
 $candidate | ConvertTo-Json -Depth 8

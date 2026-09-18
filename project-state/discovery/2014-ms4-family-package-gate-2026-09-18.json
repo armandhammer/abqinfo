@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_queue_family_gate",
+  "recorded_at": "2026-09-18",
+  "family": "2014 MS4 Annual Report",
+  "scope": {
+    "candidate_mapping_artifact": "project-state/discovery/undiscovered-documents-candidate-integration-2026-09-17.json",
+    "local_ref_range": "und-005 through und-032",
+    "candidate_count": 28,
+    "total_verified_source_bytes": 54354234,
+    "candidate_ids": [
+      "src-1a4cc44113e421eb", "src-9ee9918b01dffcf2", "src-1798e4887199cbc0", "src-79042ca53c369d0d",
+      "src-da3c9e8001fa17cc", "src-e1ba11c182777207", "src-c73b2198c15399d0", "src-e3b16212c3f64be1",
+      "src-d2b74c172101abc1", "src-a157cabe2aed7af4", "src-9db29ece1ba64c4a", "src-1f99b6ed507b0793",
+      "src-92854ab530364bd8", "src-c4306aac8fc929b4", "src-6bae28d2644986c6", "src-401d1d92e61573ba",
+      "src-9a564ff838f78c06", "src-ce44ffbb558f5b99", "src-d6f66fef851522ce", "src-87a111c6c5e74b96",
+      "src-77e4073db8101308", "src-654310d721b45bdf", "src-1dad6bde26ac37ad", "src-8df86786b275082b",
+      "src-43cb5607252c3ca9", "src-95520968ce230ef8", "src-05ec421cb265b29a", "src-7a272474417fe037"
+    ],
+    "composition": {
+      "main_body_candidate_id": "src-1a4cc44113e421eb",
+      "main_body_count": 1,
+      "attachment_count": 27,
+      "total_record_count": 28,
+      "attachment_set_note": "The 27 attachment records include the cover letter/certification statement; it is not an additional twenty-ninth record."
+    }
+  },
+  "saved_evidence": {
+    "research_artifact": "project-state/discovery/undiscovered-documents-research-2026-09-14.json",
+    "source_discovery": "The City-linked 2014 annual-report directory contains exactly one main-body record and 27 attachment records. The attachment set includes the cover letter/certification statement.",
+    "verification": "Every component has an exact saved City source URL, byte size, and SHA-256 in the candidate-integration artifact.",
+    "publication_context": "The main report is not a complete compilation; attachments retain independent substantive content."
+  },
+  "current_decision": "Treat the 2014 MS4 records as one archive and publication family. Do not review, archive, publish, or cross-list individual attachments in isolation.",
+  "next_authorized_local_work": "Prepare one provenance-preserving package plan and quality assessment using the saved research before any archive-first action.",
+  "external_gates": [
+    "No R2 upload, overwrite, rename, or deletion without explicit current authorization.",
+    "No visible content change before every selected static document is R2-archived and publicly byte-verified.",
+    "Do not substitute a sparse attachment list for a family-level publication decision."
+  ],
+  "ordinary_queue_resume_after_family": "Continue from the recalculated master-inventory next_pending_id after the 2014 MS4 package reaches a durable decision boundary."
+}
