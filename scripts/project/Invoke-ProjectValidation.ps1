@@ -35,6 +35,10 @@ if (Test-Path -LiteralPath 'project-state/discovery/energy-water-public-faciliti
   & python "$PSScriptRoot/Test-EnergyWaterBondFamilyMap.py"
   if ($LASTEXITCODE) { throw 'Energy/Water Capital Spending family-map validation failed.' }
 }
+if (Test-Path -LiteralPath 'project-state/discovery/2011-2023-energy-water-public-facilities-system-modernization-cycle-scopes-decision-2026-09-18.json') {
+  & python "$PSScriptRoot/Test-EnergyWaterCycleScopeDecision.py"
+  if ($LASTEXITCODE) { throw 'Energy/Water six-cycle scope decision validation failed.' }
+}
 & "$PSScriptRoot/Test-ContentStyle.ps1"
 
 & "$PSScriptRoot/Test-ContentPublicationQualityRegression.ps1"
