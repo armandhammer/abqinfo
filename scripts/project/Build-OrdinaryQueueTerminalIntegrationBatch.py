@@ -99,6 +99,20 @@ def main() -> None:
             row["relationship"] = saved_row.get("relationship")
         else:
             row["reason"] = saved_row["exclusion_reason"]
+            # Keep the saved source identity and measurement evidence with the
+            # generic terminal decision.  This lets a batch artifact stand on
+            # its own without treating a prior source fetch as a new action.
+            evidence = {
+                key: saved_row[key]
+                for key in (
+                    "authoritative_url", "link_check", "content_kind",
+                    "leading_bytes", "size_bytes", "checksum_sha256",
+                    "title_for_reference", "tested_not_assumed", "content",
+                )
+                if key in saved_row
+            }
+            if evidence:
+                row["source_research_evidence"] = evidence
             # Some excluded live-service rows are navigational aliases rather
             # than independently useful archive objects.  Retain the saved
             # target/identity evidence in every generic terminal-batch

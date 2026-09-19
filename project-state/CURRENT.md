@@ -22,7 +22,9 @@ The accepted 18-record NMDOT grant-administration-and-application decision is `p
 
 The seven-part NMDOT statewide truck parking study is approved inventory-only under `project-state/discovery/nmdot-statewide-truck-parking-study-decision-2026-09-19.json`. It is a complete numbered study series; five DOCX originals and two PDFs retain their original containers. Its proposed Roadway Studies placement fits the state-highway-studies scope, but R2 archival, public-byte verification, implementation, validation, and public-content work remain separately gated.
 
-The next genuinely actionable ordinary candidate is `src-0880f378bceeef60`, `sac rfp 7703 92 bellamah extension.pdf`: a pending-review City PDF not covered by the completed or externally gated families above. Review it only with a new task instruction and first determine whether it belongs to a coherent procurement family rather than merits a standalone record.
+The complete municipal-development procurement cluster is resolved in `project-state/discovery/ordinary-queue-terminal-integration-batch-2026-09-19-municipaldevelopment-procurement.json`: 50 transactional solicitation records are excluded with saved evidence. The two standard-form professional-services agreements remain separately approved archive-first candidates, untouched by that terminal batch.
+
+The next coherent ordinary-queue handoff is `src-b3d8dcb56e000437` and `src-4952ea05cd055792`, the two standard-form professional-services agreements. Start them only with a new task instruction that authorizes the required archive-first workflow; do not fold them into procurement exclusions.
 
 ## External gates
 
