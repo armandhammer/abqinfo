@@ -1,10 +1,10 @@
 {
-  "recorded_at": "2026-09-19T16:12:51.4871740Z",
-  "completed_item_range": "Integrated the complete 38-record Parks and Recreation live-HTML page family as saved exclusions from project-state/discovery/parks-recreation-cluster-research-2026-09-13.json. Exact IDs, saved reasons, safeguards, and handoff are in project-state/discovery/ordinary-queue-terminal-integration-batch-2026-09-19-parks-web-pages.json. The 17 recreation-paperwork exclusions, six archive-gated approved records, two duplicate decisions, and 34-record Prescription Trails requires-human-review package were intentionally untouched. No R2, content, PDF, Capital Spending, MS4, merge, or deployment action occurred.",
+  "recorded_at": "2026-09-19T16:29:59.9431354Z",
+  "completed_item_range": "Completed archive-first review for src-06d0fc4cd0abdef6 (Mayor theory-of-change / August 2026 State of the City address): approved for inventory addition after unique-hash, complete-document, quality, and placement review. Decision artifact: project-state/discovery/theory-of-change-review-2026-09-19.json. No R2, public-content, MS4, Prescription Trails, Capital Spending, merge, or deployment action occurred.",
   "total_candidates": 7130,
   "counts_by_status": {
-    "pending review": 2003,
-    "approved for addition": 9,
+    "pending review": 2002,
+    "approved for addition": 10,
     "downloading": 0,
     "downloaded": 0,
     "parsed": 0,
@@ -24,9 +24,10 @@
     "Capital Spending publication remains externally gated: all five future compilation boundaries require separate explicit build/R2 authorization, required public byte verification, and temporary-deployment review before any page change.",
     "2014 MS4 Annual Report is an externally gated 28-record package: skip generated next_pending_id src-05ec421cb265b29a during ordinary review; do not perform the MS4 sensitivity review, archive, or publication work without a new explicit instruction.",
     "The 34-record Parks and Recreation Prescription Trails package remains requires human review because the project has conflicting precedent for that document class; do not resolve it without ChatGPT/user direction.",
+    "src-06d0fc4cd0abdef6 is approved inventory-only. Its R2 upload, public-byte verification, and a City-government/municipal-policy placement decision remain separately gated; do not use content/about/_index.md or content/city-data/city-progress-surveys.md as a substitute.",
     "Corrected DPM packet uploads, the separate 17-PDF batch, and mrmppo deletion remain externally gated."
   ],
-  "resume_command": "Skip the externally gated 2014 MS4 package as a family. The next ordinary-queue candidate is src-06d0fc4cd0abdef6, the City theory-of-change PDF with saved source validation and normal archive-first review required. Do not begin it until a new task instruction.",
+  "resume_command": "Skip the externally gated 2014 MS4 package as a family and do not resolve Prescription Trails. The next ordinary-queue candidate is src-070a763aa9701f86, the saved Council administration-questions-and-answers candidate. Do not begin it until a new task instruction.",
   "verification_campaign_totals": {
     "verified": 2194,
     "passed": 2070,
@@ -1447,6 +1448,185 @@
         "Corrected DPM packet uploads, the separate 17-PDF batch, and mrmppo deletion remain externally gated."
       ],
       "resume_command": "Skip the externally gated 2014 MS4 package (including generated next_pending_id src-05ec421cb265b29a) as a family. The next saved actionable ordinary-queue candidate is src-065b5f5fc704c3a6, the Esperanza Bicycle Safety Education Center live-page exclusion in project-state/discovery/parks-recreation-cluster-research-2026-09-13.json. Do not begin it until a new task instruction.",
+      "verification_campaign_totals": {
+        "verified": 2194,
+        "passed": 2070,
+        "requires_human_review": 124
+      },
+      "durable_metadata": {
+        "dpm_annual_consolidation": {
+          "state": "corrected_local_packets_generated_upload_externally_gated",
+          "manifest": "project-state/discovery/dpm-executive-committee-consolidation-manifest-2026-09-17.json",
+          "component_count": 44,
+          "packets": [
+            {
+              "year": 2014,
+              "component_count": 5,
+              "page_count": 13,
+              "size_bytes": 284803,
+              "sha256": "e03ddf4a07f20a83b76b6f5ee8afdfda956a0713c68b3a71e3ae034be78c6656",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2014.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2014.pdf"
+            },
+            {
+              "year": 2015,
+              "component_count": 9,
+              "page_count": 17,
+              "size_bytes": 773060,
+              "sha256": "51457ec34cd80383e6ad92aa38f17da84101b0ad118a8d687e2db48dd468be26",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2015.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2015.pdf"
+            },
+            {
+              "year": 2016,
+              "component_count": 9,
+              "page_count": 19,
+              "size_bytes": 449277,
+              "sha256": "9cae8d9fc7fa3a8ea727309015b656749ab759c89a0b434b3689f9f008359ed9",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2016.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2016.pdf"
+            },
+            {
+              "year": 2017,
+              "component_count": 15,
+              "page_count": 32,
+              "size_bytes": 762787,
+              "sha256": "d41a926cc273886293d4669ae5cb989c442ed3a8fc5fc7cb9c88c869250241c2",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2017.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2017.pdf"
+            },
+            {
+              "year": 2018,
+              "component_count": 6,
+              "page_count": 10,
+              "size_bytes": 376588,
+              "sha256": "87b085020276d880d388a702c23819027b5b510a955f672d464069df0896273b",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2018.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2018.pdf"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "recorded_at": "2026-09-19T16:12:51.4871740Z",
+      "completed_item_range": "Integrated the complete 38-record Parks and Recreation live-HTML page family as saved exclusions from project-state/discovery/parks-recreation-cluster-research-2026-09-13.json. Exact IDs, saved reasons, safeguards, and handoff are in project-state/discovery/ordinary-queue-terminal-integration-batch-2026-09-19-parks-web-pages.json. The 17 recreation-paperwork exclusions, six archive-gated approved records, two duplicate decisions, and 34-record Prescription Trails requires-human-review package were intentionally untouched. No R2, content, PDF, Capital Spending, MS4, merge, or deployment action occurred.",
+      "total_candidates": 7130,
+      "counts_by_status": {
+        "pending review": 2003,
+        "approved for addition": 9,
+        "downloading": 0,
+        "downloaded": 0,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 2,
+        "implemented": 159,
+        "validated": 1440,
+        "excluded": 1584,
+        "duplicate": 1503,
+        "superseded": 223,
+        "blocked": 0,
+        "requires human review": 207
+      },
+      "remaining_nonterminal": 2173,
+      "next_pending_id": "src-05ec421cb265b29a",
+      "blockers": [
+        "Capital Spending publication remains externally gated: all five future compilation boundaries require separate explicit build/R2 authorization, required public byte verification, and temporary-deployment review before any page change.",
+        "2014 MS4 Annual Report is an externally gated 28-record package: skip generated next_pending_id src-05ec421cb265b29a during ordinary review; do not perform the MS4 sensitivity review, archive, or publication work without a new explicit instruction.",
+        "The 34-record Parks and Recreation Prescription Trails package remains requires human review because the project has conflicting precedent for that document class; do not resolve it without ChatGPT/user direction.",
+        "Corrected DPM packet uploads, the separate 17-PDF batch, and mrmppo deletion remain externally gated."
+      ],
+      "resume_command": "Skip the externally gated 2014 MS4 package as a family. The next ordinary-queue candidate is src-06d0fc4cd0abdef6, the City theory-of-change PDF with saved source validation and normal archive-first review required. Do not begin it until a new task instruction.",
+      "verification_campaign_totals": {
+        "verified": 2194,
+        "passed": 2070,
+        "requires_human_review": 124
+      },
+      "durable_metadata": {
+        "dpm_annual_consolidation": {
+          "state": "corrected_local_packets_generated_upload_externally_gated",
+          "manifest": "project-state/discovery/dpm-executive-committee-consolidation-manifest-2026-09-17.json",
+          "component_count": 44,
+          "packets": [
+            {
+              "year": 2014,
+              "component_count": 5,
+              "page_count": 13,
+              "size_bytes": 284803,
+              "sha256": "e03ddf4a07f20a83b76b6f5ee8afdfda956a0713c68b3a71e3ae034be78c6656",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2014.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2014.pdf"
+            },
+            {
+              "year": 2015,
+              "component_count": 9,
+              "page_count": 17,
+              "size_bytes": 773060,
+              "sha256": "51457ec34cd80383e6ad92aa38f17da84101b0ad118a8d687e2db48dd468be26",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2015.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2015.pdf"
+            },
+            {
+              "year": 2016,
+              "component_count": 9,
+              "page_count": 19,
+              "size_bytes": 449277,
+              "sha256": "9cae8d9fc7fa3a8ea727309015b656749ab759c89a0b434b3689f9f008359ed9",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2016.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2016.pdf"
+            },
+            {
+              "year": 2017,
+              "component_count": 15,
+              "page_count": 32,
+              "size_bytes": 762787,
+              "sha256": "d41a926cc273886293d4669ae5cb989c442ed3a8fc5fc7cb9c88c869250241c2",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2017.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2017.pdf"
+            },
+            {
+              "year": 2018,
+              "component_count": 6,
+              "page_count": 10,
+              "size_bytes": 376588,
+              "sha256": "87b085020276d880d388a702c23819027b5b510a955f672d464069df0896273b",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2018.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2018.pdf"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "recorded_at": "2026-09-19T16:29:18.7758809Z",
+      "completed_item_range": "Completed archive-first review for src-06d0fc4cd0abdef6 (Mayor theory-of-change / August 2026 State of the City address): approved for inventory addition after unique-hash, complete-document, quality, and placement review. Decision artifact: project-state/discovery/theory-of-change-review-2026-09-19.json. No R2, public-content, MS4, Prescription Trails, Capital Spending, merge, or deployment action occurred.",
+      "total_candidates": 7130,
+      "counts_by_status": {
+        "pending review": 2002,
+        "approved for addition": 10,
+        "downloading": 0,
+        "downloaded": 0,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 2,
+        "implemented": 159,
+        "validated": 1440,
+        "excluded": 1584,
+        "duplicate": 1503,
+        "superseded": 223,
+        "blocked": 0,
+        "requires human review": 207
+      },
+      "remaining_nonterminal": 2173,
+      "next_pending_id": "src-070a763aa9701f86",
+      "blockers": [
+        "Capital Spending publication remains externally gated: all five future compilation boundaries require separate explicit build/R2 authorization, required public byte verification, and temporary-deployment review before any page change.",
+        "2014 MS4 Annual Report is an externally gated 28-record package: skip generated next_pending_id src-05ec421cb265b29a during ordinary review; do not perform the MS4 sensitivity review, archive, or publication work without a new explicit instruction.",
+        "The 34-record Parks and Recreation Prescription Trails package remains requires human review because the project has conflicting precedent for that document class; do not resolve it without ChatGPT/user direction.",
+        "src-06d0fc4cd0abdef6 is approved inventory-only. Its R2 upload, public-byte verification, and a City-government/municipal-policy placement decision remain separately gated; do not use content/about/_index.md or content/city-data/city-progress-surveys.md as a substitute.",
+        "Corrected DPM packet uploads, the separate 17-PDF batch, and mrmppo deletion remain externally gated."
+      ],
+      "resume_command": "Skip the externally gated 2014 MS4 package as a family and do not resolve Prescription Trails. The next ordinary-queue candidate is src-070a763aa9701f86, the saved Council administration-questions-and-answers candidate. Do not begin it until a new task instruction.",
       "verification_campaign_totals": {
         "verified": 2194,
         "passed": 2070,
