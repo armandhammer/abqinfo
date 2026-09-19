@@ -39,6 +39,10 @@ if (Test-Path -LiteralPath 'project-state/discovery/2011-2023-energy-water-publi
   & python "$PSScriptRoot/Test-EnergyWaterCycleScopeDecision.py"
   if ($LASTEXITCODE) { throw 'Energy/Water six-cycle scope decision validation failed.' }
 }
+if (Test-Path -LiteralPath 'project-state/discovery/capital-spending-consolidation-closeout-status-2026-09-18.json') {
+  & python "$PSScriptRoot/Test-CapitalSpendingConsolidationCloseout.py"
+  if ($LASTEXITCODE) { throw 'Capital Spending consolidation closeout validation failed.' }
+}
 & "$PSScriptRoot/Test-ContentStyle.ps1"
 
 & "$PSScriptRoot/Test-ContentPublicationQualityRegression.ps1"
