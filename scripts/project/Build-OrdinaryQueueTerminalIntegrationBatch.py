@@ -99,6 +99,13 @@ def main() -> None:
             row["relationship"] = saved_row.get("relationship")
         else:
             row["reason"] = saved_row["exclusion_reason"]
+            # Some excluded live-service rows are navigational aliases rather
+            # than independently useful archive objects.  Retain the saved
+            # target/identity evidence in every generic terminal-batch
+            # artifact without treating it as a canonical document relation.
+            for key in ("resolves_to", "aliases_a_candidate_in_this_slice", "byte_identical_to"):
+                if key in saved_row:
+                    row[key] = saved_row[key]
         rows.append(row)
     next_research = find_nested(load(next_research_path), args.next_id)
     saved_next_status = next_research.get("recommended_status") if next_research else None

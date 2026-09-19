@@ -1,0 +1,569 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_queue_terminal_integration_batch",
+  "recorded_at": "2026-09-19",
+  "state": "terminal_inventory_decisions_applied_no_archive_or_content_action",
+  "source_research": "project-state/discovery/councilor-district-3-and-6-cluster-research-2026-09-13.json",
+  "selection_rule": "Complete saved District 3 and District 6 councillor-page terminal family: all 70 reviewed candidates, selected explicitly in deterministic inventory-ID order. This integration is limited to settled live-service exclusions; it does not fetch or classify the remaining 139 find-your-councilor candidates and does not revisit the four undiscovered documents reported by the source research.",
+  "results": [
+    {
+      "candidate_id": "src-08797c56e61cf7e7",
+      "title": "Sponsored Legislation",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/council/find-your-councilor/district-3/sponsored-legislation, which is a live web page. That target is itself a candidate in this slice, src-44bde802628a5b42, so the two records describe one page.",
+      "resolves_to": "https://www.cabq.gov/council/find-your-councilor/district-3/sponsored-legislation",
+      "aliases_a_candidate_in_this_slice": "src-44bde802628a5b42"
+    },
+    {
+      "candidate_id": "src-08fd267c6cd0a896",
+      "title": "9857c9e61610435fa0626ed678be7a74",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/housing, which is a live web page.",
+      "resolves_to": "https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/housing"
+    },
+    {
+      "candidate_id": "src-1245ed3261591591",
+      "title": "APD Youth Leadership Lowrider",
+      "status": "excluded",
+      "saved_research_category": "live web page",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive."
+    },
+    {
+      "candidate_id": "src-159b929f770d18c3",
+      "title": "Landlord Resources",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/health-housing-homelessness/homelessness/connect-to-resources, which is a live web page.",
+      "resolves_to": "https://www.cabq.gov/health-housing-homelessness/homelessness/connect-to-resources"
+    },
+    {
+      "candidate_id": "src-17a72df340edfb0a",
+      "title": "Neighborhood Associations",
+      "status": "excluded",
+      "saved_research_category": "live web page",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive."
+    },
+    {
+      "candidate_id": "src-180b4bf7ad747425",
+      "title": "City Finalizes Development Agreement for Major Reuse of Park Central Tower",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-182545e695e03c8d",
+      "title": "Public Comment on Renaming Cesar Chavez Community Center",
+      "status": "excluded",
+      "saved_research_category": "live web page",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive."
+    },
+    {
+      "candidate_id": "src-1c02a270fa9dd2e3",
+      "title": "118th Street SW Improvements",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/council/find-your-councilor/district-3/118th-street-sw-improvements, which is a live web page.",
+      "resolves_to": "https://www.cabq.gov/council/find-your-councilor/district-3/118th-street-sw-improvements"
+    },
+    {
+      "candidate_id": "src-1c100c813e19d4f3",
+      "title": "District 3 Councilor Expenses",
+      "status": "excluded",
+      "saved_research_category": "live web page",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive."
+    },
+    {
+      "candidate_id": "src-241a3f071505f53f",
+      "title": "Join the Community Conversation with Councilor Rogers and the District 6 Community! October 1, 2026 at Eat My Thai!",
+      "status": "excluded",
+      "saved_research_category": "live web page",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive."
+    },
+    {
+      "candidate_id": "src-2481c3e6f07039c2",
+      "title": "Memorial Service for Homeless Men",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-2b9479b21e2a47d8",
+      "title": "Find another district.",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/council/find-your-councilor, which is a live web page.",
+      "resolves_to": "https://www.cabq.gov/council/find-your-councilor"
+    },
+    {
+      "candidate_id": "src-30b0d127039b3843",
+      "title": "District 3 Projects",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/council/find-your-councilor/district-3/district-3-projects, which is a live web page. That target is itself a candidate in this slice, src-ad4bf85943a38480, so the two records describe one page.",
+      "resolves_to": "https://www.cabq.gov/council/find-your-councilor/district-3/district-3-projects",
+      "aliases_a_candidate_in_this_slice": "src-ad4bf85943a38480"
+    },
+    {
+      "candidate_id": "src-3104f81ffffe9ae2",
+      "title": "Albuquerque Community Safety",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/acs, which is a live web page.",
+      "resolves_to": "https://www.cabq.gov/acs"
+    },
+    {
+      "candidate_id": "src-34ce9773ec93b6db",
+      "title": "City Councilors and Administration Launch Public Process to Develop Naming and Renaming Standards for Public Assets",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-360f3152436d0000",
+      "title": "Events",
+      "status": "excluded",
+      "saved_research_category": "live web page",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive."
+    },
+    {
+      "candidate_id": "src-3db3905a563d004e",
+      "title": "About District 6 Councilor Nichole Rogers",
+      "status": "excluded",
+      "saved_research_category": "live web page",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive."
+    },
+    {
+      "candidate_id": "src-3ec556ce2b32830d",
+      "title": "d6 parks and rec",
+      "status": "excluded",
+      "saved_research_category": "live web page",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive.",
+      "byte_identical_to": [
+        "src-8747cb03d3642dc3"
+      ]
+    },
+    {
+      "candidate_id": "src-3eddb1576c834607",
+      "title": "Albuquerque City Councilor Nichole Rogers Partners with UNM Sustainability Studies Researchers and International District Food Experts to Co-Host International District Food Systems Kickoff Event",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-3fefa860fcb62f42",
+      "title": "About the Councilor",
+      "status": "excluded",
+      "saved_research_category": "live web page",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive."
+    },
+    {
+      "candidate_id": "src-44bde802628a5b42",
+      "title": "Sponsored Legislation",
+      "status": "excluded",
+      "saved_research_category": "live web page",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive."
+    },
+    {
+      "candidate_id": "src-46f3f636387ead8f",
+      "title": "City Councilor Nichole L. Rogers Calls for Urgency Over String of APD Officer-Involved Shootings",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-48ec6b3d16107794",
+      "title": "2026 District 6 Community Conversations dates!",
+      "status": "excluded",
+      "saved_research_category": "live web page",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive."
+    },
+    {
+      "candidate_id": "src-49ba2ec03de1f71a",
+      "title": "District 6 Community Effort Yields New ADA-Compliant Shower and Laundry Trailers to Expand Hygiene Access",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-4f5b2804ff85ecc3",
+      "title": "Albuquerque City Council Expands Metropolitan Redevelopment Area to Combat Blight and Spur Economic Vitality",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-4f6b0fd9c56dfd0c",
+      "title": "Park & Chill Pilot Program Parking Lot Instructions",
+      "status": "excluded",
+      "saved_research_category": "live web page",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive."
+    },
+    {
+      "candidate_id": "src-51e58a491bd17157",
+      "title": "North Star Mentorship Program: Guiding the Next Generation of Albuquerque's Youth",
+      "status": "excluded",
+      "saved_research_category": "live web page",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive."
+    },
+    {
+      "candidate_id": "src-56d9b31f28ac8acf",
+      "title": "Learn more about Councilor Peña.",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/council/find-your-councilor/district-3/about-the-councilor-district-3, which is a live web page. That target is itself a candidate in this slice, src-3fefa860fcb62f42, so the two records describe one page.",
+      "resolves_to": "https://www.cabq.gov/council/find-your-councilor/district-3/about-the-councilor-district-3",
+      "aliases_a_candidate_in_this_slice": "src-3fefa860fcb62f42"
+    },
+    {
+      "candidate_id": "src-5a52c16243e4dc4a",
+      "title": "Albuquerque Establishes Permanent Board Learn more about the landmark ordinance that transitioned the AAAB from a temporary task force to a permanent pillar of City government.",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-5a82a03b876f9b4b",
+      "title": "Albuquerque City Council has New Leadership for the 27th Term",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-5d7853238d7ca1f3",
+      "title": "1364393ba8dc4443a2c94adaa5834c0d",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/district-6-data, which is a live web page.",
+      "resolves_to": "https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/district-6-data"
+    },
+    {
+      "candidate_id": "src-5ec030f306ee28f2",
+      "title": "Cruising Initiative",
+      "status": "excluded",
+      "saved_research_category": "live web page",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive."
+    },
+    {
+      "candidate_id": "src-6111c7f6633f65ed",
+      "title": "Report a Streetlight Outage",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/municipaldevelopment/lighting-and-light-outages, which is a live web page.",
+      "resolves_to": "https://www.cabq.gov/municipaldevelopment/lighting-and-light-outages"
+    },
+    {
+      "candidate_id": "src-628d2ef30f1959c5",
+      "title": "Albuquerque City Council Passes \"Safety and Privacy in Community Spaces\" Ordinance",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-663c64d54d205210",
+      "title": "f8b8572d716b4235be0ecff5f36e65ee",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/food-insecurity, which is a live web page.",
+      "resolves_to": "https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/food-insecurity"
+    },
+    {
+      "candidate_id": "src-702858b107e714ad",
+      "title": "District 3 Councilor Expenses",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/council/find-your-councilor/district-3/district-3-councilor-expenses, which is a live web page. That target is itself a candidate in this slice, src-1c100c813e19d4f3, so the two records describe one page.",
+      "resolves_to": "https://www.cabq.gov/council/find-your-councilor/district-3/district-3-councilor-expenses",
+      "aliases_a_candidate_in_this_slice": "src-1c100c813e19d4f3"
+    },
+    {
+      "candidate_id": "src-74cd3fe88f97dd9c",
+      "title": "Cruising Initiative",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/council/find-your-councilor/district-3/cruising-initiative, which is a live web page. That target is itself a candidate in this slice, src-5ec030f306ee28f2, so the two records describe one page.",
+      "resolves_to": "https://www.cabq.gov/council/find-your-councilor/district-3/cruising-initiative",
+      "aliases_a_candidate_in_this_slice": "src-5ec030f306ee28f2"
+    },
+    {
+      "candidate_id": "src-798fbe1e5e4422e3",
+      "title": "District 6 Projects",
+      "status": "excluded",
+      "saved_research_category": "live web page",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive."
+    },
+    {
+      "candidate_id": "src-7dcc5e1da08d12b7",
+      "title": "Neighborhood Traffic Management Program",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/neighborhood-traffic-management-program, which is a live web page.",
+      "resolves_to": "https://www.cabq.gov/neighborhood-traffic-management-program"
+    },
+    {
+      "candidate_id": "src-8747cb03d3642dc3",
+      "title": "b3460faf02614d6097a9bfccbd7a2e7d",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/d6-parks-and-rec, which is a live web page. That target is itself a candidate in this slice, src-3ec556ce2b32830d, so the two records describe one page.",
+      "resolves_to": "https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/d6-parks-and-rec",
+      "aliases_a_candidate_in_this_slice": "src-3ec556ce2b32830d",
+      "byte_identical_to": [
+        "src-3ec556ce2b32830d"
+      ]
+    },
+    {
+      "candidate_id": "src-8edb800004db8bc0",
+      "title": "City Councilor Nichole L. Rogers Demands Accountability in Federal Fentanyl Revelations; Challenges Lagging Rollout of Opioid Settlement Funds",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-8f2632c651f974e2",
+      "title": "Participatory Budgeting ABQ Project Breaks Ground",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-936c9146ba074eb4",
+      "title": "News from District 3",
+      "status": "excluded",
+      "saved_research_category": "live web page",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive."
+    },
+    {
+      "candidate_id": "src-9e98718cc85eafe5",
+      "title": "Albuquerque Establishes Permanent African American Advisory Board to Advance Equity, Unity, and Policy Innovation",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-a34f5bf5d01f6f27",
+      "title": "Albuquerque City Councilor Nichole L. Rogers Selected for National 2026 Champions Institute",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-a82ef5b3f0bdad7f",
+      "title": "Klarissa J. Peña - District 3",
+      "status": "excluded",
+      "saved_research_category": "live web page",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive."
+    },
+    {
+      "candidate_id": "src-a94cafc5788e06e6",
+      "title": "414366f6241c451cb8193c508fb847e5",
+      "status": "excluded",
+      "saved_research_category": "portrait image behind a UID alias",
+      "reason": "Site furniture. It is a 400 by 500 pixel portrait used to illustrate the councillor's page, not a record of anything the City did. It is also not the object the candidate URL names: the URL is a UID under a district folder and the bytes are a JPEG in /council/images/.",
+      "resolves_to": "https://www.cabq.gov/council/images/minicouncil3_400x500_2022.jpg"
+    },
+    {
+      "candidate_id": "src-abab4422fe2fd1b2",
+      "title": "City Councilor Nichole Rogers Announces RFP for Affordable Housing Development at Former Shriners Property",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-ad4bf85943a38480",
+      "title": "District 3 Projects",
+      "status": "excluded",
+      "saved_research_category": "live web page",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive."
+    },
+    {
+      "candidate_id": "src-ad5956f06fabcc30",
+      "title": "Old Carlisle Village Cleaners Site Qualifies for EPA’s Priority Funding",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-b39be7e6d265e428",
+      "title": "84554af34ead4906856d7c7a7979df00",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/street-improvement, which is a live web page. That target is itself a candidate in this slice, src-c0e4a2d378661568, so the two records describe one page.",
+      "resolves_to": "https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/street-improvement",
+      "aliases_a_candidate_in_this_slice": "src-c0e4a2d378661568",
+      "byte_identical_to": [
+        "src-c0e4a2d378661568"
+      ]
+    },
+    {
+      "candidate_id": "src-b971ac294659cf5a",
+      "title": "Lowrider Bike Program Continues to Inspire Youth Through Creativity and Mentorship",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-b989200b9917ee83",
+      "title": "District 6 News",
+      "status": "excluded",
+      "saved_research_category": "live web page",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive."
+    },
+    {
+      "candidate_id": "src-bb9ad145f3046ba9",
+      "title": "Duke City Leadership Lowrider Bike Club",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/family/crei/duke-city-lowrider-bike-program, which is a live web page.",
+      "resolves_to": "https://www.cabq.gov/family/crei/duke-city-lowrider-bike-program"
+    },
+    {
+      "candidate_id": "src-c0e4a2d378661568",
+      "title": "Street Improvement",
+      "status": "excluded",
+      "saved_research_category": "live web page",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive.",
+      "byte_identical_to": [
+        "src-b39be7e6d265e428"
+      ]
+    },
+    {
+      "candidate_id": "src-c1bf31132f36c437",
+      "title": "City Councilor Nichole L. Rogers Introduces Legislation to Modernize and Clarify Albuquerque's Public Safety Tax",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-c7fbdac0ca48fee4",
+      "title": "380b72a3ed2347c9b1982bae1b0b154d",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/environmental-justice-1, which is a live web page.",
+      "resolves_to": "https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/environmental-justice-1"
+    },
+    {
+      "candidate_id": "src-c9c6b977aa13fa5a",
+      "title": "2026 Council District 6 Funding Requests",
+      "status": "excluded",
+      "saved_research_category": "live web page",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive."
+    },
+    {
+      "candidate_id": "src-cca82432a838af1e",
+      "title": "Neighborhood Associations",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/council/find-your-councilor/district-3/neighborhood-associations, which is a live web page. That target is itself a candidate in this slice, src-17a72df340edfb0a, so the two records describe one page.",
+      "resolves_to": "https://www.cabq.gov/council/find-your-councilor/district-3/neighborhood-associations",
+      "aliases_a_candidate_in_this_slice": "src-17a72df340edfb0a"
+    },
+    {
+      "candidate_id": "src-d1067b8b75794c0a",
+      "title": "248c6acc2299412eb86a100eba44e421",
+      "status": "excluded",
+      "saved_research_category": "portrait image behind a UID alias",
+      "reason": "Site furniture. It is a 400 by 500 pixel portrait used to illustrate the councillor's page, not a record of anything the City did. It is also not the object the candidate URL names: the URL is a UID under a district folder and the bytes are a JPEG in /council/images/.",
+      "resolves_to": "https://www.cabq.gov/council/images/minicouncil6_400x500_2022.jpg"
+    },
+    {
+      "candidate_id": "src-d3176451f1bc5245",
+      "title": "Albuquerque City Council Authorizes $776.6 Million Industrial Revenue Bonds for Fusion Center",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-d98ee78ca7fac025",
+      "title": "311 Community Contact Center",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/311, which is a live web page.",
+      "resolves_to": "https://www.cabq.gov/311"
+    },
+    {
+      "candidate_id": "src-dbead719650b78f6",
+      "title": "Councilor Klarissa J. Peña Introduces Community Investment Tax to Invest in Albuquerque’s Future",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-ddaf5d4a7f207828",
+      "title": "City Councilor Nichole Rogers, PBABQ to Launch the Second Round of Participatory Budgeting in Council District 6",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-e4e91bd6c4ab7ada",
+      "title": "Nichole Rogers - District 6",
+      "status": "excluded",
+      "saved_research_category": "live web page",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive."
+    },
+    {
+      "candidate_id": "src-e753444ddb5d8538",
+      "title": "f7c83d59ce1249678bdf02f248eb5804",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/participatory-budgeting, which is a live web page.",
+      "resolves_to": "https://www.cabq.gov/council/find-your-councilor/district-6/district-6-projects/participatory-budgeting"
+    },
+    {
+      "candidate_id": "src-f7a67ae4bb05c1c0",
+      "title": "Learn more about Councilor Rogers.",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/council/find-your-councilor/district-6/about-the-councilor, which is a live web page. That target is itself a candidate in this slice, src-3db3905a563d004e, so the two records describe one page.",
+      "resolves_to": "https://www.cabq.gov/council/find-your-councilor/district-6/about-the-councilor",
+      "aliases_a_candidate_in_this_slice": "src-3db3905a563d004e"
+    },
+    {
+      "candidate_id": "src-f829ab5d8704d890",
+      "title": "Council President Peña Issues Statement on Council’s Dismissal of Key City Operation & Infrastructure Measures Addressed in Community Investment Tax Proposal",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-f95d538d7498bf1a",
+      "title": "Rehabilitating the Garfield Alley",
+      "status": "excluded",
+      "saved_research_category": "live web page: councillor news release",
+      "reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f - a councillor page rendered by the City's content management system, not a file the City published. The archive's standing rule is that a record is not site-ready until its original is archived to R2 and the download verified; there is no original here to archive. It is also a councillor news release, and press releases are excluded on the ground recorded in councilor-district-4-cluster-research-2026-09-12.json."
+    },
+    {
+      "candidate_id": "src-fb6d010fe0142217",
+      "title": "Make a street repair request",
+      "status": "excluded",
+      "saved_research_category": "navigational alias",
+      "reason": "Not a document and not a distinct object. The URL is a Plone resolveuid alias; fetched, it redirects to https://www.cabq.gov/municipaldevelopment/residents/street-repair-request, which is a live web page.",
+      "resolves_to": "https://www.cabq.gov/municipaldevelopment/residents/street-repair-request"
+    }
+  ],
+  "summary": {
+    "total": 70,
+    "excluded": 70,
+    "duplicate_deliveries": 0,
+    "superseded": 0
+  },
+  "ordinary_queue_handoff": {
+    "generated_next_pending_id": "src-05ec421cb265b29a",
+    "skip_family": "2014 MS4 Annual Report",
+    "skip_evidence": "project-state/discovery/2014-ms4-package-decision-2026-09-18.json",
+    "next_actionable_candidate": "src-087c613a50cf2f77",
+    "next_saved_research": "project-state/discovery/nmdot-file-host-cluster-research-2026-09-13.json",
+    "next_saved_recommendation": "approved for addition",
+    "instruction": "Do not start this candidate without a new task instruction."
+  },
+  "safeguards_observed": {
+    "r2_mutation": false,
+    "content_changed": false,
+    "pdf_built": false,
+    "ms4_reviewed": false,
+    "capital_spending_work": false,
+    "merge_or_deploy": false
+  }
+}
