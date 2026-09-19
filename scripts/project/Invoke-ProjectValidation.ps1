@@ -43,6 +43,10 @@ if (Test-Path -LiteralPath 'project-state/discovery/capital-spending-consolidati
   & python "$PSScriptRoot/Test-CapitalSpendingConsolidationCloseout.py"
   if ($LASTEXITCODE) { throw 'Capital Spending consolidation closeout validation failed.' }
 }
+Get-ChildItem -LiteralPath 'project-state/discovery' -Filter 'ordinary-queue-terminal-integration-batch*.json' | ForEach-Object {
+  & python "$PSScriptRoot/Test-OrdinaryQueueTerminalIntegrationBatch.py" --artifact ([IO.Path]::GetRelativePath((Get-Location).Path, $_.FullName).Replace('\','/'))
+  if ($LASTEXITCODE) { throw "Ordinary-queue terminal integration validation failed for $($_.Name)." }
+}
 & "$PSScriptRoot/Test-ContentStyle.ps1"
 
 & "$PSScriptRoot/Test-ContentPublicationQualityRegression.ps1"
