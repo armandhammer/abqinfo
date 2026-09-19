@@ -26,6 +26,10 @@ The complete municipal-development procurement cluster is resolved in `project-s
 
 Their next action is the separately and explicitly authorized R2 archive/upload stage, followed by public-byte verification. Public page edits remain gated on that verification; the approved canonical future page is Development Process and the proposed Capital Spending cross-listing was rejected.
 
+The next ordinary family after the Municipal Development gates was the 23-record Planned Growth Strategy (PGS) set, resolved in `project-state/discovery/planned-growth-strategy-decision-2026-09-19.json`. The complete 286-page Part 1 original is approved inventory-only; its seven component deliveries are duplicates. Eleven obtainable Part 2 delivery files are approved inventory-only with a durable missing-Chapter-3.0 warning; the City serves no combined Part 2 original, so do not synthesize one. Three related PGS enactment-bill copies remain requires-human-review until their enacted ordinances are located. All approved PGS originals remain behind separate R2/public-byte-verification and future editorial gates.
+
+After applying every existing gate and completed-family decision, `src-090b501b1579de50` (MRA Appeal Form) is the next genuinely actionable ordinary candidate. Scope its immediate online-form family before taking any decision; do not treat it as authorization to revisit the excluded Municipal Development procurement or gated standard-form work.
+
 ## External gates
 
 - Do not upload corrected DPM packets, the separate 17-PDF / 67,526,043-byte batch, or any inventory-only NMDOT study originals without explicit authorization.

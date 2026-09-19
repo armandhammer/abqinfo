@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-19T23:32:52.6129329Z",
+  "generated_at": "2026-09-19T23:53:44.9717101Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,8 +18,8 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 1848,
-    "approved for addition": 44,
+    "pending review": 1828,
+    "approved for addition": 56,
     "downloading": 0,
     "downloaded": 0,
     "parsed": 0,
@@ -28,10 +28,10 @@
     "implemented": 159,
     "validated": 1440,
     "excluded": 1704,
-    "duplicate": 1503,
+    "duplicate": 1510,
     "superseded": 223,
     "blocked": 0,
-    "requires human review": 207
+    "requires human review": 208
   },
   "next_pending_id": "src-05ec421cb265b29a",
   "candidates": [
@@ -24236,19 +24236,19 @@
     },
     {
       "id": "src-08b6b68b53336462",
-      "status": "pending review",
+      "status": "approved for addition",
       "source_url": "https://www.cabq.gov/council/documents/pgs/Part2-1a.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/documents/pgs/Part2-1a.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Part2-1a.pdf",
+      "title": "Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 1.0a: front matter, table of contents, and Introduction and Rationale, first half",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 23265901,
+      "checksum_sha256": "54abf69425f5db13cba009ed7b7431a28fa54dba57f60dc580f611ecf7c5e71d",
       "parent_url": "https://www.cabq.gov/council/documents/pgs",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/pgs"
@@ -24266,22 +24266,21 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "authoritative City source, exact-file measurements, and family relationship retained",
+      "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+      "description": "Chapter 1.0a of the City and County growth study's second volume sets out front matter, table of contents, and introduction and rationale, first half, one of eleven chapters establishing and implementing the Preferred Alternative for Albuquerque's future growth and its infrastructure.",
+      "description_word_count": 41,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Planned Growth Strategy family decision 2026-09-19: 56 pages. Printed page range read from the Part 2 table of contents inside Part2-1a.pdf, not inferred from the filename; see split_package_reconciliation. Exact City source, size, SHA-256, and package relationship retained; inventory-only pending separately authorized R2 archival and public-byte verification."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "saved family research, visual/content review, and quality assessment retained; inventory-only, R2 archival and public-byte verification not run",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-08-04T15:02:43.0923654Z",
-      "updated_at": "2026-08-04T15:02:43.0923654Z"
+      "updated_at": "2026-09-19T23:51:45.4187932Z"
     },
     {
       "id": "src-08b73773100e138d",
@@ -28040,7 +28039,7 @@
     },
     {
       "id": "src-0bd664780961f148",
-      "status": "requires human review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/pgs/Part1-6.pdf/view",
       "direct_file_url": "https://www.cabq.gov/council/documents/pgs/Part1-6.pdf",
       "r2_url": null,
@@ -28070,24 +28069,21 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": "content/transportation/transportation-plans.md",
+      "provenance_status": "authoritative City source and measured component-to-canonical relationship retained",
+      "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Downloaded, extracted, and visually reviewed pages 1 and 2 on 2026-09-10.",
-        "The source /view URL delivered HTML when downloaded on 2026-09-10. The raw official City PDF endpoint was verified by GET as a valid PDF and used for review.",
-        "This 31-page Planned Growth Strategy Part 1, Section 6 report evaluates economic impacts of Bernalillo County growth scenarios through 2020, including output, employment, earnings, local tax revenues, infrastructure investment, and financing assumptions.",
-        "It is distinct from the existing 2008 task-force briefing and the preserved transportation-cost and policy excerpts: this is the underlying economic-impact analysis. Retain for a future archival and placement decision after the frozen 16-record batch."
+        "Planned Growth Strategy family decision 2026-09-19: duplicate component of canonical src-9aeb5f621800da58. A chapter extract of complete Part 1: normalized token coverage in Part1.pdf is 1.0000 and seven chapter page counts equal its 286 pages."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal family decision: duplicate component of complete Part 1",
+      "exclusion_reason": "Planned Growth Strategy family decision 2026-09-19: duplicate component of canonical src-9aeb5f621800da58. A chapter extract of complete Part 1: normalized token coverage in Part1.pdf is 1.0000 and seven chapter page counts equal its 286 pages.",
       "local_path": "research/staging/queue/src-0bd664780961f148.pdf",
       "discovered_at": "2026-08-04T15:02:43.0903628Z",
-      "updated_at": "2026-09-10T03:18:57.8447567Z"
+      "updated_at": "2026-09-19T23:53:28.2786689Z"
     },
     {
       "id": "src-0be2e74cdf5ef302",
@@ -30940,7 +30936,7 @@
     },
     {
       "id": "src-0e133db868401e77",
-      "status": "requires human review",
+      "status": "approved for addition",
       "source_url": "https://www.cabq.gov/council/documents/pgs/Part2-10.pdf/view",
       "direct_file_url": "https://www.cabq.gov/council/documents/pgs/Part2-10.pdf",
       "r2_url": null,
@@ -30948,7 +30944,7 @@
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Planned Growth Strategy Part 2, Section 3, Chapter 10: Growth Strategy Techniques Used in Other Locations",
+      "title": "Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 10.0: Growth Strategy Techniques Used in Other Locations",
       "date": null,
       "file_type": "PDF",
       "size_bytes": 324400,
@@ -30970,27 +30966,21 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": "content/transportation/transportation-plans.md",
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "authoritative City source, exact-file measurements, and family relationship retained",
+      "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+      "description": "Chapter 10.0 of the City and County growth study compares growth-management techniques used in other locations as one of the obtainable chapters establishing and implementing Albuquerque's Preferred Alternative.",
+      "description_word_count": 28,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Distinct substantive component of a split official package. Frozen batch prevents addition; future human review must reconcile it with the PGS landing page and remaining Part 2 chapters before selecting one canonical package or explicitly preserving multipart components.",
-        "Downloaded exact size: 324400 bytes (316.80 KiB); SHA-256 recorded.",
-        "Exact metadata and relevance remain pending source review.",
-        "Official City 63-page PDF downloaded, hashed, fully text-extracted, and representative pages across the complete chapter visually reviewed 2026-09-10.",
-        "PDF pages: 63; extracted text: research/staging/queue/src-0e133db868401e77.txt",
-        "The document is Chapter 10 of Planned Growth Strategy Part 2, Section 3, pages 281-342, comparing growth-management practices in other U.S. communities and their applicability to Albuquerque and Bernalillo County."
+        "Planned Growth Strategy family decision 2026-09-19: 63 pages, mapped from the Part 2 table of contents; previously held only pending package reconciliation, now discharged by the saved family research. Exact City source, size, SHA-256, and package relationship retained; inventory-only pending separately authorized R2 archival and public-byte verification."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "saved family research, visual/content review, and quality assessment retained; inventory-only, R2 archival and public-byte verification not run",
       "exclusion_reason": null,
       "local_path": "research/staging/queue/src-0e133db868401e77.pdf",
       "discovered_at": "2026-08-04T15:02:43.0913807Z",
-      "updated_at": "2026-09-10T14:19:50.0367303Z"
+      "updated_at": "2026-09-19T23:52:37.8657470Z"
     },
     {
       "id": "src-0e4d613178cccba9",
@@ -42289,9 +42279,9 @@
     },
     {
       "id": "src-1779ba516b4d2c3f",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/pgs/Part1-1.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/documents/pgs/Part1-1.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -42300,8 +42290,8 @@
       "title": "Part1-1.pdf",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 3859724,
+      "checksum_sha256": "0eded5d682c2ccf4cb34c13c2b9be9ba76ba9235b3ea48a85ed92d457d3e3a39",
       "parent_url": "https://www.cabq.gov/council/documents/pgs",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/pgs"
@@ -42319,22 +42309,21 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "authoritative City source and measured component-to-canonical relationship retained",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Planned Growth Strategy family decision 2026-09-19: duplicate component of canonical src-9aeb5f621800da58. A chapter extract of the complete Part 1. Its normalized token coverage inside Part1.pdf is 1.0000, and the seven chapter files' PDF page counts sum to exactly the 286 pages of Part1.pdf."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal family decision: duplicate component of complete Part 1",
+      "exclusion_reason": "Planned Growth Strategy family decision 2026-09-19: duplicate component of canonical src-9aeb5f621800da58. A chapter extract of the complete Part 1. Its normalized token coverage inside Part1.pdf is 1.0000, and the seven chapter files' PDF page counts sum to exactly the 286 pages of Part1.pdf.",
       "local_path": null,
       "discovered_at": "2026-08-04T15:02:43.0868224Z",
-      "updated_at": "2026-08-04T15:02:43.0868224Z"
+      "updated_at": "2026-09-19T23:52:42.9405322Z"
     },
     {
       "id": "src-177e8e0fc2f3b652",
@@ -89582,19 +89571,19 @@
     },
     {
       "id": "src-3efa72bc100374a1",
-      "status": "pending review",
+      "status": "approved for addition",
       "source_url": "https://www.cabq.gov/council/documents/pgs/Part2-1b.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/documents/pgs/Part2-1b.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Part2-1b.pdf",
+      "title": "Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 1.0b: Introduction and Rationale, second half, through the establishment of the Preferred Alternative",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 23127651,
+      "checksum_sha256": "279fa6d0e792d26b33f92475ecd7779f07b12df7ffbdfc809b62ca050e9790cc",
       "parent_url": "https://www.cabq.gov/council/documents/pgs",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/pgs"
@@ -89612,22 +89601,21 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "authoritative City source, exact-file measurements, and family relationship retained",
+      "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+      "description": "Chapter 1.0b of the City and County growth study's second volume sets out introduction and rationale, second half, through the establishment of the preferred alternative, one of eleven chapters establishing and implementing the Preferred Alternative for Albuquerque's future growth and its infrastructure.",
+      "description_word_count": 42,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Planned Growth Strategy family decision 2026-09-19: 22 pages. Printed page range read from the Part 2 table of contents inside Part2-1a.pdf, not inferred from the filename; see split_package_reconciliation. Exact City source, size, SHA-256, and package relationship retained; inventory-only pending separately authorized R2 archival and public-byte verification."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "saved family research, visual/content review, and quality assessment retained; inventory-only, R2 archival and public-byte verification not run",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-08-04T15:02:43.0923654Z",
-      "updated_at": "2026-08-04T15:02:43.0923654Z"
+      "updated_at": "2026-09-19T23:51:50.8926688Z"
     },
     {
       "id": "src-3f1dd4fc87ec8551",
@@ -92120,9 +92108,9 @@
     },
     {
       "id": "src-415952dd1d905cf7",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/pgs/Part1-5.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/documents/pgs/Part1-5.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -92131,8 +92119,8 @@
       "title": "Part1-5.pdf",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 1778928,
+      "checksum_sha256": "25caa8f43a1dbd2e2ed3be0e0dc4f8e1746db8b0249956cdd06bf6b843807162",
       "parent_url": "https://www.cabq.gov/council/documents/pgs",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/pgs"
@@ -92150,22 +92138,21 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "authoritative City source and measured component-to-canonical relationship retained",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Planned Growth Strategy family decision 2026-09-19: duplicate component of canonical src-9aeb5f621800da58. A chapter extract of the complete Part 1. Its normalized token coverage inside Part1.pdf is 1.0000, and the seven chapter files' PDF page counts sum to exactly the 286 pages of Part1.pdf."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal family decision: duplicate component of complete Part 1",
+      "exclusion_reason": "Planned Growth Strategy family decision 2026-09-19: duplicate component of canonical src-9aeb5f621800da58. A chapter extract of the complete Part 1. Its normalized token coverage inside Part1.pdf is 1.0000, and the seven chapter files' PDF page counts sum to exactly the 286 pages of Part1.pdf.",
       "local_path": null,
       "discovered_at": "2026-08-04T15:02:43.0893503Z",
-      "updated_at": "2026-08-04T15:02:43.0893503Z"
+      "updated_at": "2026-09-19T23:53:17.0236728Z"
     },
     {
       "id": "src-41772a036fd8d687",
@@ -114715,9 +114702,9 @@
     },
     {
       "id": "src-544756098ac12660",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/pgs/Part1-2.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/documents/pgs/Part1-2.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -114726,8 +114713,8 @@
       "title": "Part1-2.pdf",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 9672675,
+      "checksum_sha256": "760cd6ed93917792be32b9d46e5fb37ef06c3479256eb4c65c1eb6cddcfed667",
       "parent_url": "https://www.cabq.gov/council/documents/pgs",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/pgs"
@@ -114745,22 +114732,21 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "authoritative City source and measured component-to-canonical relationship retained",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Planned Growth Strategy family decision 2026-09-19: duplicate component of canonical src-9aeb5f621800da58. A chapter extract of the complete Part 1. Its normalized token coverage inside Part1.pdf is 1.0000, and the seven chapter files' PDF page counts sum to exactly the 286 pages of Part1.pdf."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal family decision: duplicate component of complete Part 1",
+      "exclusion_reason": "Planned Growth Strategy family decision 2026-09-19: duplicate component of canonical src-9aeb5f621800da58. A chapter extract of the complete Part 1. Its normalized token coverage inside Part1.pdf is 1.0000, and the seven chapter files' PDF page counts sum to exactly the 286 pages of Part1.pdf.",
       "local_path": null,
       "discovered_at": "2026-08-04T15:02:43.0878222Z",
-      "updated_at": "2026-08-04T15:02:43.0878222Z"
+      "updated_at": "2026-09-19T23:52:48.4920263Z"
     },
     {
       "id": "src-545128f068ffb941",
@@ -139799,19 +139785,19 @@
     },
     {
       "id": "src-68582bc4fe41fb4f",
-      "status": "pending review",
+      "status": "requires human review",
       "source_url": "https://www.cabq.gov/council/documents/pgs/o-132fin.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/documents/pgs/o-132fin.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "o-132fin.pdf",
+      "title": "Council Bill O-03-132: Adopting an Infrastructure and Growth Plan Pursuant to Section 14-13-2-3(B) ROA 1994",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 25029,
+      "checksum_sha256": "ece75a9eb9af3db5fb837a407eae1eafeeb9f032cb1f22b65d2ad188482e80f0",
       "parent_url": "https://www.cabq.gov/council/documents/pgs",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/pgs"
@@ -139829,22 +139815,21 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "authoritative City bill copy, exact-file measurements, and enactment uncertainty retained",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Planned Growth Strategy family decision 2026-09-19: The sheet carries ENACTMENT NO. blank, so under the two standing checkpoint blockers it is the bill as considered rather than the law and must not be archived or presented as enacted. These three are the most consequential such files found anywhere in this run: they are the instruments that would have given the Planned Growth Strategy legal force, and whether they passed is precisely the question a reader of the study would need answered. They should be resolved as one group. Locate the enacted ordinance; decide together with F/S O-02-39(2) and O-04-9."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "requires human review: enacted ordinance not located",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-08-04T15:02:43.0833137Z",
-      "updated_at": "2026-08-04T15:02:43.0833137Z"
+      "updated_at": "2026-09-19T23:53:38.7183402Z"
     },
     {
       "id": "src-686b414d62aec0c2",
@@ -156382,19 +156367,19 @@
     },
     {
       "id": "src-765624191ba169bd",
-      "status": "pending review",
+      "status": "approved for addition",
       "source_url": "https://www.cabq.gov/council/documents/pgs/Part2-7.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/documents/pgs/Part2-7.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Part2-7.pdf",
+      "title": "Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 7.0: Planned Growth Regulatory Structure Approaches",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 294425,
+      "checksum_sha256": "d437adbf74a1f2332cb3090e5c8deda0acd59ed39584cd1635d71b610c17fb0d",
       "parent_url": "https://www.cabq.gov/council/documents/pgs",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/pgs"
@@ -156412,22 +156397,21 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "authoritative City source, exact-file measurements, and family relationship retained",
+      "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+      "description": "Chapter 7.0 of the City and County growth study's second volume sets out planned growth regulatory structure approaches, one of eleven chapters establishing and implementing the Preferred Alternative for Albuquerque's future growth and its infrastructure.",
+      "description_word_count": 35,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Planned Growth Strategy family decision 2026-09-19: 26 pages. Printed page range read from the Part 2 table of contents inside Part2-1a.pdf, not inferred from the filename; see split_package_reconciliation. Exact City source, size, SHA-256, and package relationship retained; inventory-only pending separately authorized R2 archival and public-byte verification."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "saved family research, visual/content review, and quality assessment retained; inventory-only, R2 archival and public-byte verification not run",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-08-04T15:02:43.0943633Z",
-      "updated_at": "2026-08-04T15:02:43.0943633Z"
+      "updated_at": "2026-09-19T23:52:06.4401585Z"
     },
     {
       "id": "src-768a6855fcfaf443",
@@ -169864,19 +169848,19 @@
     },
     {
       "id": "src-8188148b0cd6c40d",
-      "status": "pending review",
+      "status": "approved for addition",
       "source_url": "https://www.cabq.gov/council/documents/pgs/Part2-9.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/documents/pgs/Part2-9.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Part2-9.pdf",
+      "title": "Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 9.0: City and County Financial and Planning Requirements",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 128581,
+      "checksum_sha256": "faaf061d3218634bfef1d1c3acf1e5767654bf3dbe6e61aa6807bc0573a69891",
       "parent_url": "https://www.cabq.gov/council/documents/pgs",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/pgs"
@@ -169894,22 +169878,21 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "authoritative City source, exact-file measurements, and family relationship retained",
+      "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+      "description": "Chapter 9.0 of the City and County growth study's second volume sets out city and county financial and planning requirements, one of eleven chapters establishing and implementing the Preferred Alternative for Albuquerque's future growth and its infrastructure.",
+      "description_word_count": 37,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Planned Growth Strategy family decision 2026-09-19: 16 pages. Printed page range read from the Part 2 table of contents inside Part2-1a.pdf, not inferred from the filename; see split_package_reconciliation. Exact City source, size, SHA-256, and package relationship retained; inventory-only pending separately authorized R2 archival and public-byte verification."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "saved family research, visual/content review, and quality assessment retained; inventory-only, R2 archival and public-byte verification not run",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-08-04T15:02:43.0954385Z",
-      "updated_at": "2026-08-04T15:02:43.0954385Z"
+      "updated_at": "2026-09-19T23:52:17.6411352Z"
     },
     {
       "id": "src-81901ef1fe3374c6",
@@ -201734,19 +201717,19 @@
     },
     {
       "id": "src-9aeb5f621800da58",
-      "status": "pending review",
+      "status": "approved for addition",
       "source_url": "https://www.cabq.gov/council/documents/pgs/Part1.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/documents/pgs/Part1.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Part1.pdf",
+      "title": "Planned Growth Strategy, Part 1: Existing Conditions, Development Trends, Alternative Scenarios, Infrastructure Costs, and Economic Impact (complete, 286 pages)",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 47215522,
+      "checksum_sha256": "9e1ea522b4816c6a29ede3a35471ea8bd77daa0212fdb2ca2580039d6e46ee80",
       "parent_url": "https://www.cabq.gov/council/documents/pgs",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/pgs"
@@ -201764,22 +201747,21 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "authoritative City source, exact-file measurements, and family relationship retained",
+      "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+      "description": "The City and County growth study's first volume documents Albuquerque development trends, tests alternative growth scenarios, prices the infrastructure each would require, reviews the policy and regulatory framework, and assesses the economic impact of growth.",
+      "description_word_count": 35,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Planned Growth Strategy family decision 2026-09-19: 286 pages and 47,215,522 bytes. Measured to be the exact concatenation of the seven Part 1 chapter files: their PDF page counts sum to 286 and each chapter's normalized token coverage inside this file is 1.0000. Prepared for the County of Bernalillo under County Manager Juan Vigil and the City of Albuquerque under Mayor Jim Baca. Exact City source, size, SHA-256, and package relationship retained; inventory-only pending separately authorized R2 archival and public-byte verification."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "saved family research, visual/content review, and quality assessment retained; inventory-only, R2 archival and public-byte verification not run",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-08-04T15:02:43.0858226Z",
-      "updated_at": "2026-08-04T15:02:43.0858226Z"
+      "updated_at": "2026-09-19T23:51:41.0883070Z"
     },
     {
       "id": "src-9af9c3680c5755eb",
@@ -216386,9 +216368,9 @@
     },
     {
       "id": "src-a7dd815a1ea2937e",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/pgs/Part1-4.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/documents/pgs/Part1-4.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -216397,8 +216379,8 @@
       "title": "Part1-4.pdf",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 26805110,
+      "checksum_sha256": "ecf49d3b83ca96f0c840af8933de5b8ac5d9b3a76d0ec408b6dc26d31292ec15",
       "parent_url": "https://www.cabq.gov/council/documents/pgs",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/pgs"
@@ -216416,22 +216398,21 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "authoritative City source and measured component-to-canonical relationship retained",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Planned Growth Strategy family decision 2026-09-19: duplicate component of canonical src-9aeb5f621800da58. A chapter extract of the complete Part 1. Its normalized token coverage inside Part1.pdf is 1.0000, and the seven chapter files' PDF page counts sum to exactly the 286 pages of Part1.pdf."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal family decision: duplicate component of complete Part 1",
+      "exclusion_reason": "Planned Growth Strategy family decision 2026-09-19: duplicate component of canonical src-9aeb5f621800da58. A chapter extract of the complete Part 1. Its normalized token coverage inside Part1.pdf is 1.0000, and the seven chapter files' PDF page counts sum to exactly the 286 pages of Part1.pdf.",
       "local_path": null,
       "discovered_at": "2026-08-04T15:02:43.0878222Z",
-      "updated_at": "2026-08-04T15:02:43.0878222Z"
+      "updated_at": "2026-09-19T23:53:03.8585520Z"
     },
     {
       "id": "src-a7e2a3bc1c09e1cd",
@@ -224787,19 +224768,19 @@
     },
     {
       "id": "src-aee98d2ab382de65",
-      "status": "pending review",
+      "status": "approved for addition",
       "source_url": "https://www.cabq.gov/council/documents/pgs/Part2-2.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/documents/pgs/Part2-2.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Part2-2.pdf",
+      "title": "Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 2.0: Subarea Descriptions",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 4201481,
+      "checksum_sha256": "021e423e7c292e121ecd971ea3636b997d3ac836b96153fc8c5fd33a39e57879",
       "parent_url": "https://www.cabq.gov/council/documents/pgs",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/pgs"
@@ -224817,22 +224798,21 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "authoritative City source, exact-file measurements, and family relationship retained",
+      "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+      "description": "Chapter 2.0 of the City and County growth study's second volume sets out subarea descriptions, one of eleven chapters establishing and implementing the Preferred Alternative for Albuquerque's future growth and its infrastructure.",
+      "description_word_count": 32,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Planned Growth Strategy family decision 2026-09-19: 48 pages. Printed page range read from the Part 2 table of contents inside Part2-1a.pdf, not inferred from the filename; see split_package_reconciliation. Exact City source, size, SHA-256, and package relationship retained; inventory-only pending separately authorized R2 archival and public-byte verification."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "saved family research, visual/content review, and quality assessment retained; inventory-only, R2 archival and public-byte verification not run",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-08-04T15:02:43.0933637Z",
-      "updated_at": "2026-08-04T15:02:43.0933637Z"
+      "updated_at": "2026-09-19T23:51:56.0407381Z"
     },
     {
       "id": "src-aeef612474b58f1f",
@@ -239813,7 +239793,7 @@
     },
     {
       "id": "src-bc069f52331eb293",
-      "status": "pending review",
+      "status": "approved for addition",
       "source_url": "https://www.cabq.gov/council/documents/pgs/Part2-4.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/pgs/Part2-4.pdf",
       "r2_url": null,
@@ -239837,24 +239817,21 @@
       "crawl_depth": null,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative City URL, exact size, SHA-256, PDF signature, and HTTP 200 recorded in saved research",
-      "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+      "provenance_status": "authoritative City source, exact-file measurements, and family relationship retained",
+      "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
       "description": "Chapter 4.0 of Part 2 of the City's Planned Growth Strategy, surveying mixed-use redevelopment projects in other cities as precedent for Albuquerque's own redevelopment approach.",
       "description_word_count": 25,
       "processing_notes": [
-        "Integrated from project-state/discovery/undiscovered-documents-research-2026-09-14.json row und-043.",
-        "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes and the container verified by leading bytes. Every PDF was tested for its end-of-file marker.",
-        "306,971 bytes, 12 pages, printed pages 157 to 168. Opens: 4.0 Examples of Mixed-Use Redevelopment Projects In Other Cities. Absent from the City's own collection listing for the directory it sits in.",
-        "Research-proposed future cross-listing: content/development-land-use/development-process.md — It informs how redevelopment is handled."
+        "Planned Growth Strategy family decision 2026-09-19: 306,971 bytes, 12 pages, printed pages 157 to 168. Opens: 4.0 Examples of Mixed-Use Redevelopment Projects In Other Cities. Absent from the City's own collection listing for the directory it sits in. Exact City source, size, SHA-256, and package relationship retained; inventory-only pending separately authorized R2 archival and public-byte verification."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "research evidence saved; normal archival and publication validation not run",
+      "validation_status": "saved family research, visual/content review, and quality assessment retained; inventory-only, R2 archival and public-byte verification not run",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-09-14T13:52:09.759904-06:00",
-      "updated_at": "2026-09-17T15:33:26.561165Z"
+      "updated_at": "2026-09-19T23:52:27.5435727Z"
     },
     {
       "id": "src-bc0e9217d013a65e",
@@ -254137,19 +254114,19 @@
     },
     {
       "id": "src-c771ae9e41b9905c",
-      "status": "pending review",
+      "status": "approved for addition",
       "source_url": "https://www.cabq.gov/council/documents/pgs/Part2-11.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/documents/pgs/Part2-11.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Part2-11.pdf",
+      "title": "Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 11.0: Planned Growth Regulatory structure",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 1083911,
+      "checksum_sha256": "b9427b77d46d846c699d45e01297f5590f893826de0a58b38965b10b7765aaa7",
       "parent_url": "https://www.cabq.gov/council/documents/pgs",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/pgs"
@@ -254167,22 +254144,21 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "authoritative City source, exact-file measurements, and family relationship retained",
+      "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+      "description": "Chapter 11.0 of the City and County growth study's second volume sets out planned growth regulatory structure, one of eleven chapters establishing and implementing the Preferred Alternative for Albuquerque's future growth and its infrastructure.",
+      "description_word_count": 34,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Planned Growth Strategy family decision 2026-09-19: 33 pages. Printed page range read from the Part 2 table of contents inside Part2-1a.pdf, not inferred from the filename; see split_package_reconciliation. Exact City source, size, SHA-256, and package relationship retained; inventory-only pending separately authorized R2 archival and public-byte verification."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "saved family research, visual/content review, and quality assessment retained; inventory-only, R2 archival and public-byte verification not run",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-08-04T15:02:43.0913807Z",
-      "updated_at": "2026-08-04T15:02:43.0913807Z"
+      "updated_at": "2026-09-19T23:52:22.6918422Z"
     },
     {
       "id": "src-c784d8e6ac291b01",
@@ -256094,19 +256070,19 @@
     },
     {
       "id": "src-c8e6f10731a478e6",
-      "status": "pending review",
+      "status": "approved for addition",
       "source_url": "https://www.cabq.gov/council/documents/pgs/Part2-5.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/documents/pgs/Part2-5.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Part2-5.pdf",
+      "title": "Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 5.0: Level of Service Standards and the Planned Growth Strategy",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 1725934,
+      "checksum_sha256": "30a18cff75328e05cf860d31e7fd5d568adf0983a8b627143c394803796c9e9d",
       "parent_url": "https://www.cabq.gov/council/documents/pgs",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/pgs"
@@ -256124,22 +256100,21 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "authoritative City source, exact-file measurements, and family relationship retained",
+      "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+      "description": "Chapter 5.0 of the City and County growth study's second volume sets out level of service standards and the planned growth strategy, one of eleven chapters establishing and implementing the Preferred Alternative for Albuquerque's future growth and its infrastructure.",
+      "description_word_count": 39,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Planned Growth Strategy family decision 2026-09-19: 35 pages. Printed page range read from the Part 2 table of contents inside Part2-1a.pdf, not inferred from the filename; see split_package_reconciliation. Exact City source, size, SHA-256, and package relationship retained; inventory-only pending separately authorized R2 archival and public-byte verification."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "saved family research, visual/content review, and quality assessment retained; inventory-only, R2 archival and public-byte verification not run",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-08-04T15:02:43.0943633Z",
-      "updated_at": "2026-08-04T15:02:43.0943633Z"
+      "updated_at": "2026-09-19T23:52:01.6632686Z"
     },
     {
       "id": "src-c90203992c87956e",
@@ -261819,7 +261794,7 @@
     },
     {
       "id": "src-cd72192082580abe",
-      "status": "pending review",
+      "status": "approved for addition",
       "source_url": "https://www.cabq.gov/council/documents/pgs/Part2-6.pdf",
       "direct_file_url": "https://www.cabq.gov/council/documents/pgs/Part2-6.pdf",
       "r2_url": null,
@@ -261843,24 +261818,21 @@
       "crawl_depth": null,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative City URL, exact size, SHA-256, PDF signature, and HTTP 200 recorded in saved research",
-      "proposed_canonical_page": "content/development-land-use/area-sector-plans.md",
+      "provenance_status": "authoritative City source, exact-file measurements, and family relationship retained",
+      "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
       "description": "Chapter 6.0 of Part 2 of the City's Planned Growth Strategy, setting out how the preferred alternative was to be paid for and what that implied for City finances.",
       "description_word_count": 29,
       "processing_notes": [
-        "Integrated from project-state/discovery/undiscovered-documents-research-2026-09-14.json row und-044.",
-        "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes and the container verified by leading bytes. Every PDF was tested for its end-of-file marker.",
-        "241,037 bytes, 16 pages, printed pages 211 to 218. Opens: 6.0 Financial Implementation of the Planned Growth Strategy Preferred Alternative, 6.1 Executive Summary. Absent from the City's own collection listing.",
-        "Research-proposed future cross-listing: content/city-data/capital-spending.md — It is a financing chapter."
+        "Planned Growth Strategy family decision 2026-09-19: 241,037 bytes, 16 pages, printed pages 211 to 218. Opens: 6.0 Financial Implementation of the Planned Growth Strategy Preferred Alternative, 6.1 Executive Summary. Absent from the City's own collection listing. Exact City source, size, SHA-256, and package relationship retained; inventory-only pending separately authorized R2 archival and public-byte verification."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "research evidence saved; normal archival and publication validation not run",
+      "validation_status": "saved family research, visual/content review, and quality assessment retained; inventory-only, R2 archival and public-byte verification not run",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-09-14T13:52:09.759904-06:00",
-      "updated_at": "2026-09-17T15:33:26.561165Z"
+      "updated_at": "2026-09-19T23:52:32.9479886Z"
     },
     {
       "id": "src-cd76ed2642c5bc5b",
@@ -261912,9 +261884,9 @@
     },
     {
       "id": "src-cd7c886fe1c0e6f7",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/pgs/Part1-3.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/documents/pgs/Part1-3.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -261923,8 +261895,8 @@
       "title": "Part1-3.pdf",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 5006126,
+      "checksum_sha256": "3bf9d4cfc74e1b3e2b1af07d2e0292768e95594097b1c95f4b0882292d2b294b",
       "parent_url": "https://www.cabq.gov/council/documents/pgs",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/pgs"
@@ -261942,22 +261914,21 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "authoritative City source and measured component-to-canonical relationship retained",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Planned Growth Strategy family decision 2026-09-19: duplicate component of canonical src-9aeb5f621800da58. A chapter extract of the complete Part 1. Its normalized token coverage inside Part1.pdf is 1.0000, and the seven chapter files' PDF page counts sum to exactly the 286 pages of Part1.pdf."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal family decision: duplicate component of complete Part 1",
+      "exclusion_reason": "Planned Growth Strategy family decision 2026-09-19: duplicate component of canonical src-9aeb5f621800da58. A chapter extract of the complete Part 1. Its normalized token coverage inside Part1.pdf is 1.0000, and the seven chapter files' PDF page counts sum to exactly the 286 pages of Part1.pdf.",
       "local_path": null,
       "discovered_at": "2026-08-04T15:02:43.0878222Z",
-      "updated_at": "2026-08-04T15:02:43.0878222Z"
+      "updated_at": "2026-09-19T23:52:53.6261627Z"
     },
     {
       "id": "src-cd7f22b07bc0a16e",
@@ -266519,19 +266490,19 @@
     },
     {
       "id": "src-d15bbc358aeaec4d",
-      "status": "pending review",
+      "status": "approved for addition",
       "source_url": "https://www.cabq.gov/council/documents/pgs/Part2-8.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/documents/pgs/Part2-8.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Part2-8.pdf",
+      "title": "Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 8.0: Combining the Level of Service Standards with the Management Committee material",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 1228664,
+      "checksum_sha256": "8bbbe5368e0c0f87f369c2583beec1a9f9fd5ddac8fd5ccc7b53db76d1e09569",
       "parent_url": "https://www.cabq.gov/council/documents/pgs",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/pgs"
@@ -266549,22 +266520,21 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
-      "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "provenance_status": "authoritative City source, exact-file measurements, and family relationship retained",
+      "proposed_canonical_page": "content/development-land-use/zoning-ido.md",
+      "description": "Chapter 8.0 of the City and County growth study's second volume sets out combining the level of service standards with the management committee material, one of eleven chapters establishing and implementing the Preferred Alternative for Albuquerque's future growth and its infrastructure.",
+      "description_word_count": 41,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Planned Growth Strategy family decision 2026-09-19: 20 pages. Printed page range read from the Part 2 table of contents inside Part2-1a.pdf, not inferred from the filename; see split_package_reconciliation. Exact City source, size, SHA-256, and package relationship retained; inventory-only pending separately authorized R2 archival and public-byte verification."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "saved family research, visual/content review, and quality assessment retained; inventory-only, R2 archival and public-byte verification not run",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-08-04T15:02:43.0954385Z",
-      "updated_at": "2026-08-04T15:02:43.0954385Z"
+      "updated_at": "2026-09-19T23:52:12.0852814Z"
     },
     {
       "id": "src-d1649bd34ba4a39f",
@@ -305784,9 +305754,9 @@
     },
     {
       "id": "src-f1990b741c73ce09",
-      "status": "pending review",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/council/documents/pgs/Part1-7.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/documents/pgs/Part1-7.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -305795,8 +305765,8 @@
       "title": "Part1-7.pdf",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 56608,
+      "checksum_sha256": "0ed69e4d789223c4f48e5c6aa205e0ebd59a6bcf89874fcb97c2546cdcb83e15",
       "parent_url": "https://www.cabq.gov/council/documents/pgs",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/pgs"
@@ -305814,22 +305784,21 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "authoritative City source and measured component-to-canonical relationship retained",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Planned Growth Strategy family decision 2026-09-19: duplicate component of canonical src-9aeb5f621800da58. A chapter extract of the complete Part 1. Its normalized token coverage inside Part1.pdf is 1.0000, and the seven chapter files' PDF page counts sum to exactly the 286 pages of Part1.pdf."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal family decision: duplicate component of complete Part 1",
+      "exclusion_reason": "Planned Growth Strategy family decision 2026-09-19: duplicate component of canonical src-9aeb5f621800da58. A chapter extract of the complete Part 1. Its normalized token coverage inside Part1.pdf is 1.0000, and the seven chapter files' PDF page counts sum to exactly the 286 pages of Part1.pdf.",
       "local_path": null,
       "discovered_at": "2026-08-04T15:02:43.0903628Z",
-      "updated_at": "2026-08-04T15:02:43.0903628Z"
+      "updated_at": "2026-09-19T23:53:22.8702834Z"
     },
     {
       "id": "src-f19a78a166008dae",
@@ -312598,19 +312567,19 @@
     },
     {
       "id": "src-f7c7bd5b273def22",
-      "status": "pending review",
+      "status": "requires human review",
       "source_url": "https://www.cabq.gov/council/documents/pgs/o-39fs3.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/documents/pgs/o-39fs3.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "o-39fs3.pdf",
+      "title": "Council Bill F/S O-02-39 (2): Adopting Elements of a Planned Growth Strategy to Guide the Management of City of Albuquerque Urban Growth; Identifying and Defining Certain Implementation Elements",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 83406,
+      "checksum_sha256": "bd735ae50447b5b62dccff112e50ad6e8e9d4021b217987112e91f9085d0a138",
       "parent_url": "https://www.cabq.gov/council/documents/pgs",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/pgs"
@@ -312628,22 +312597,21 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "authoritative City bill copy, exact-file measurements, and enactment uncertainty retained",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Planned Growth Strategy family decision 2026-09-19: The sheet carries ENACTMENT NO. blank, so under the two standing checkpoint blockers it is the bill as considered rather than the law and must not be archived or presented as enacted. These three are the most consequential such files found anywhere in this run: they are the instruments that would have given the Planned Growth Strategy legal force, and whether they passed is precisely the question a reader of the study would need answered. They should be resolved as one group. Locate the enacted ordinance. This is the instrument that would have adopted the Planned Growth Strategy itself."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "requires human review: enacted ordinance not located",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-08-04T15:02:43.0843122Z",
-      "updated_at": "2026-08-04T15:02:43.0843122Z"
+      "updated_at": "2026-09-19T23:53:33.2907252Z"
     },
     {
       "id": "src-f7c952e28ec3bf2c",
@@ -319104,19 +319072,19 @@
     },
     {
       "id": "src-fcbe6a7ebcf916a1",
-      "status": "pending review",
+      "status": "requires human review",
       "source_url": "https://www.cabq.gov/council/documents/pgs/o-9fin.pdf/view",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/documents/pgs/o-9fin.pdf",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "o-9fin.pdf",
+      "title": "Council Bill O-04-9: Adopting Land Use Assumptions Pursuant to the State Development Fees Act and Section 14-13-1-4 ROA 1994",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 24816,
+      "checksum_sha256": "d20947b7c3ff6e9ef02896915b29fd23cd63493660bedfdadee9a0bbeae68d4a",
       "parent_url": "https://www.cabq.gov/council/documents/pgs",
       "referring_urls": [
         "https://www.cabq.gov/council/documents/pgs"
@@ -319134,22 +319102,21 @@
       "crawl_depth": 6,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "authoritative City bill copy, exact-file measurements, and enactment uncertainty retained",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Planned Growth Strategy family decision 2026-09-19: The sheet carries ENACTMENT NO. blank, so under the two standing checkpoint blockers it is the bill as considered rather than the law and must not be archived or presented as enacted. These three are the most consequential such files found anywhere in this run: they are the instruments that would have given the Planned Growth Strategy legal force, and whether they passed is precisely the question a reader of the study would need answered. They should be resolved as one group. This one also connects to material already triaged: the land use assumptions it adopts under the State Development Fees Act are the same assumptions the Component Capital Improvements Plan resolutions R-2012-100 and R-2013-115, recommended for addition in the Development Review Services artifact of the same date, later amend. Locate the enacted ordinance; decide together with the other two."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
+      "validation_status": "requires human review: enacted ordinance not located",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-08-04T15:02:43.0848169Z",
-      "updated_at": "2026-08-04T15:02:43.0848169Z"
+      "updated_at": "2026-09-19T23:53:44.9713997Z"
     },
     {
       "id": "src-fcdc70705711d818",
