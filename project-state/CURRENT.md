@@ -22,11 +22,12 @@ The accepted 18-record NMDOT grant-administration-and-application decision is `p
 
 The seven-part NMDOT statewide truck parking study is approved inventory-only under `project-state/discovery/nmdot-statewide-truck-parking-study-decision-2026-09-19.json`. It is a complete numbered study series; five DOCX originals and two PDFs retain their original containers. Its proposed Roadway Studies placement fits the state-highway-studies scope, but R2 archival, public-byte verification, implementation, validation, and public-content work remain separately gated.
 
-The complete municipal-development procurement cluster is resolved in `project-state/discovery/ordinary-queue-terminal-integration-batch-2026-09-19-municipaldevelopment-procurement.json`: 50 transactional solicitation records are excluded with saved evidence. The two standard-form professional-services agreements remain separately approved archive-first candidates, untouched by that terminal batch.
+The complete municipal-development procurement cluster is resolved in `project-state/discovery/ordinary-queue-terminal-integration-batch-2026-09-19-municipaldevelopment-procurement.json`: 50 transactional solicitation records are excluded with saved evidence. The two standard-form professional-services agreements are approved and fully prepared in `project-state/discovery/municipaldevelopment-standard-forms-archive-preparation-2026-09-19.json`; do not repeat their research or preparation.
 
-The next coherent ordinary-queue handoff is `src-b3d8dcb56e000437` and `src-4952ea05cd055792`, the two standard-form professional-services agreements. Start them only with a new task instruction that authorizes the required archive-first workflow; do not fold them into procurement exclusions.
+Their next action is the separately and explicitly authorized R2 archive/upload stage, followed by public-byte verification. Public page edits remain gated on that verification; the approved canonical future page is Development Process and the proposed Capital Spending cross-listing was rejected.
 
 ## External gates
 
 - Do not upload corrected DPM packets, the separate 17-PDF / 67,526,043-byte batch, or any inventory-only NMDOT study originals without explicit authorization.
+- Do not upload the two prepared Municipal Development standard-form agreements without explicit authorization, and do not edit public content for them before successful archive public-byte verification.
 - Do not modify live R2, delete the noncanonical `mrmppo` duplicate, merge, or deploy merely as cleanup.
