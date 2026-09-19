@@ -11,6 +11,8 @@ $ErrorActionPreference = 'Stop'
 if (-not $?) { throw 'Master inventory validation failed.' }
 & "$PSScriptRoot/Test-ProjectStateRegeneration.ps1" -MasterPath $InventoryPath
 if (-not $?) { throw 'Project-state regeneration validation failed.' }
+& "$PSScriptRoot/Test-PullRequestDescriptionRegression.ps1"
+if (-not $?) { throw 'Pull-request description regression failed.' }
 & python "$PSScriptRoot/Test-ApplySavedTerminalResearch.py"
 if ($LASTEXITCODE) { throw 'Saved terminal research regression failed.' }
 if (Test-Path -LiteralPath 'project-state/discovery/nmdot-grant-administration-and-application-decision-2026-09-19.json') {
