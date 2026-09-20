@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-19T23:53:44.9717101Z",
+  "generated_at": "2026-09-20T00:04:23.9053273Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,7 +18,7 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 1828,
+    "pending review": 1827,
     "approved for addition": 56,
     "downloading": 0,
     "downloaded": 0,
@@ -27,7 +27,7 @@
     "placement assigned": 2,
     "implemented": 159,
     "validated": 1440,
-    "excluded": 1704,
+    "excluded": 1705,
     "duplicate": 1510,
     "superseded": 223,
     "blocked": 0,
@@ -24657,7 +24657,7 @@
     },
     {
       "id": "src-090b501b1579de50",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://documents.cabq.gov/planning/online-forms/MRA-Appeal-Form.pdf",
       "direct_file_url": "https://documents.cabq.gov/planning/online-forms/MRA-Appeal-Form.pdf",
       "r2_url": null,
@@ -24668,8 +24668,8 @@
       "title": "MRA-Appeal-Form.pdf",
       "date": null,
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 42712,
+      "checksum_sha256": "f87a15739db517f2dbeb4f2c1ee85d2e973f5566af1a9178420ade6cf219bee2",
       "parent_url": "https://documents.cabq.gov/planning/online-forms/",
       "referring_urls": [
         "https://documents.cabq.gov/planning/online-forms/"
@@ -24685,22 +24685,23 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "authoritative City source, full-GET metadata, and exact delivery-alias relationship retained",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "MRA Appeal Form family decision 2026-09-19: full GET evidence for https://documents.cabq.gov/planning/online-forms/MRA-Appeal-Form.pdf is a one-page PDF (42,712 bytes; SHA-256 f87a15739db517f2dbeb4f2c1ee85d2e973f5566af1a9178420ade6cf219bee2) revised May 2015. It is the exact byte-identical City delivery alias of excluded src-cb776cdbd1f3ec08 at https://documents.cabq.gov/planning/UDD/MRA/MRA-Appeal-Form.pdf; both URLs serve the same transactional appeal form."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
+      "validation_status": "terminal family decision: excluded transactional form; exact City alias relationship verified",
+      "exclusion_reason": "This is a revised-May-2015 Metropolitan Redevelopment Agency appeal application form. It is a transactional administrative form for a live appeal process, not a substantive public plan, study, enacted record, or historical source for the site taxonomy.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:16:00.1117545Z",
-      "updated_at": "2026-08-04T14:16:00.1117545Z"
+      "updated_at": "2026-09-20T00:04:23.9017158Z"
     },
     {
       "id": "src-09153929967d729f",

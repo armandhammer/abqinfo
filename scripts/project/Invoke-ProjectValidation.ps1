@@ -23,6 +23,10 @@ if (Test-Path -LiteralPath 'project-state/discovery/municipaldevelopment-standar
   & python "$PSScriptRoot/Test-MunicipalDevelopmentStandardFormsArchivePreparation.py"
   if ($LASTEXITCODE) { throw 'Municipal Development standard-forms archive-preparation validation failed.' }
 }
+if (Test-Path -LiteralPath 'project-state/discovery/mra-appeal-form-family-decision-2026-09-19.json') {
+  & python "$PSScriptRoot/Test-MraAppealFormFamilyDecision.py"
+  if ($LASTEXITCODE) { throw 'MRA Appeal Form family-decision validation failed.' }
+}
 if (Test-Path -LiteralPath 'project-state/discovery/2014-ms4-package-decision-2026-09-18.json') {
   & "$PSScriptRoot/Test-2014Ms4PackageDecision.ps1"
   if (-not $?) { throw '2014 MS4 package-decision validation failed.' }
