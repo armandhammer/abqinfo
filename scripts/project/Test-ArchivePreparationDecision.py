@@ -23,8 +23,10 @@ def main() -> None:
     inventory = {row["id"]: row for row in load(ROOT / "project-state/master-inventory.json")["candidates"]}
     r2_keys = {item["key"] for item in load(ROOT / "project-state/r2-inventory.json")["objects"]}
     records = decision["records"]
-    assert len(records) == len(decision["scope_candidate_ids"])
-    assert {record["id"] for record in records} == set(decision["scope_candidate_ids"])
+    scope = decision.get("scope_candidate_ids") or decision.get("starting_candidate_ids")
+    assert scope, "Decision needs an explicit candidate scope"
+    assert len(records) == len(scope)
+    assert {record["id"] for record in records} == set(scope)
     for record in records:
         update = record["inventory_update"]
         assert inventory[record["id"]]["status"] == update["status"]

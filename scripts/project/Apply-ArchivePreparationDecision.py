@@ -71,6 +71,8 @@ def main() -> None:
         row = rows[candidate_id]
         for key, value in update.items():
             row[key] = value
+        if "description" in update:
+            row["description_word_count"] = len((update["description"] or "").split())
         row["updated_at"] = now
         applied.append(candidate_id)
     inventory["counts"] = {
