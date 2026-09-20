@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-20T18:00:00Z",
+  "generated_at": "2026-09-20T19:00:00Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,8 +18,8 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 1675,
-    "approved for addition": 92,
+    "pending review": 1645,
+    "approved for addition": 93,
     "downloading": 0,
     "downloaded": 0,
     "parsed": 0,
@@ -27,7 +27,7 @@
     "placement assigned": 2,
     "implemented": 159,
     "validated": 1440,
-    "excluded": 1820,
+    "excluded": 1849,
     "duplicate": 1515,
     "superseded": 230,
     "blocked": 0,
@@ -34971,9 +34971,9 @@
     },
     {
       "id": "src-119123d6a089aca6",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/7b1f3397b8fe5589471087dcce4bbb86",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/7b1f3397b8fe5589471087dcce4bbb86",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
@@ -34982,23 +34982,24 @@
       "title": "Report Weed and Litter Issues",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 130965,
+      "checksum_sha256": "f5b254108f038b3f17f32e9a1f9b93de48792abadb161f09e0b1328eaff608f8",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML and there is no original file to archive. It is also byte-identical to a record this run has already decided, but that record was itself excluded as a web page, so pointing a duplicate at it would name a canonical that is not worth keeping. The relationship is recorded on this row instead.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0596155Z",
-      "updated_at": "2026-08-04T12:37:50.0596155Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/22e5246fcb494d1a850d2709927eec46"
       ],
@@ -35008,7 +35009,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-11940795fcc0fceb",
@@ -52758,34 +52759,35 @@
     },
     {
       "id": "src-20240b20e86fbe5c",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/a9dd0006884242589f1d6be5c318ccf4",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/a9dd0006884242589f1d6be5c318ccf4",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Archive of the District 7 Councilor Connect videos",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/a9dd0006884242",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 151033,
+      "checksum_sha256": "e702262916600f4a8a37fcdd72ce063ecfcdd57ddd1ecd272033fef59e60b901",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0616196Z",
-      "updated_at": "2026-08-04T12:37:50.0616196Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/22e5246fcb494d1a850d2709927eec46"
       ],
@@ -52795,7 +52797,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-202ad91d5808008d",
@@ -73555,34 +73557,35 @@
     },
     {
       "id": "src-313c2cc4e2821832",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/58a76a0a71534255b12bdbee63c14eda",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/58a76a0a71534255b12bdbee63c14eda",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Archive of the District 7 Councilor Connection Newsletters",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/58a76a0a715342",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 145632,
+      "checksum_sha256": "868000389de207c0ae5b66c464e1858468120f4bc9bc120a58b3ed1849803b9d",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0586155Z",
-      "updated_at": "2026-08-04T12:37:50.0586155Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/22e5246fcb494d1a850d2709927eec46"
       ],
@@ -73592,7 +73595,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-314d78e8c4cc4224",
@@ -78723,34 +78726,35 @@
     },
     {
       "id": "src-35b93738333c9a67",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/news",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/news",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "News from District 7",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/news",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 194122,
+      "checksum_sha256": "8482165046dea57545c194788aea7b05e0a6308b72b976f670092e92a970b79d",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0756185Z",
-      "updated_at": "2026-08-04T12:37:50.0756185Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/22e5246fcb494d1a850d2709927eec46"
       ],
@@ -78760,7 +78764,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-35bb0b01fe3f0508",
@@ -92093,34 +92097,35 @@
     },
     {
       "id": "src-411a15d264e21c69",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/news/albuquerque-city-council-passes-resolution-to-distribute-opioid-settlement-funds",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/news/albuquerque-city-council-passes-resolution-to-distribute-opioid-settlement-funds",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Albuquerque City Council Passes Resolution to Distribute Opioid Settlement Funds",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/news/albuquerque-city-council-passes",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 142945,
+      "checksum_sha256": "b1dedc792b4e6ca3dd548e7e4f5a1eb5f3fc52a4b57f051e4d394d410430ee91",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0766187Z",
-      "updated_at": "2026-08-04T12:37:50.0766187Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/find-your-councilor/albuquerque-city-councilors/resolveuid/c48ff3b276da4bafab0179cab6d5409c"
       ],
@@ -92130,7 +92135,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-413fa7aafc8b0546",
@@ -103885,34 +103890,35 @@
     },
     {
       "id": "src-4b3b35f9a30ce157",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "District 7 Projects",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/district-7-projects",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 135117,
+      "checksum_sha256": "ed236255d5542704fdd5f89f07a99bd8e6317337eaa830160fcae048b006311b",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0686197Z",
-      "updated_at": "2026-08-04T12:37:50.0686197Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/22e5246fcb494d1a850d2709927eec46"
       ],
@@ -103922,7 +103928,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-4b429f5077e7e49a",
@@ -108149,34 +108155,35 @@
     },
     {
       "id": "src-4f03fc07ad7b2306",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/news/city-councilor-tammy-fiebelkorn-statement-on-falsely-attributed-comments-submitted-for-project-jupiter",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/news/city-councilor-tammy-fiebelkorn-statement-on-falsely-attributed-comments-submitted-for-project-jupiter",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "City Councilor Tammy Fiebelkorn Statement on Falsely Attributed Comments Submitted for Project Jupiter",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/news/city-councilor-tammy-fiebelkorn",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 142714,
+      "checksum_sha256": "4bfde14de64d6840cb4e072f5837e6a6acb9bdf50fc8e7cedccb407cefcfdcd7",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0786181Z",
-      "updated_at": "2026-08-04T12:37:50.0786181Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/22e5246fcb494d1a850d2709927eec46"
       ],
@@ -108186,7 +108193,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-4f0be0584ea4fb17",
@@ -121682,34 +121689,35 @@
     },
     {
       "id": "src-5a74f69b20e8db35",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/councilor-connect-video-archives",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/councilor-connect-video-archives",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "District 7 Councilor Connect Video Archives",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/councilor-connect-video-archives",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 151033,
+      "checksum_sha256": "93bc2f0527feaf92684af651b9b975b337a83e4e8a2b382ff12cfde8ea84cbcf",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0556153Z",
-      "updated_at": "2026-08-04T12:37:50.0556153Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/park-improvements/tom-bolack-urban-forest-trail-extension",
         "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/mile-high-bike-blvd-traffic-calming-meeting"
@@ -121726,7 +121734,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-5a772937c1a428c4",
@@ -131918,34 +131926,35 @@
     },
     {
       "id": "src-6213e6bd0ba3dc9b",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/news/city-councilors-introduce-resolution-to-fund-services-for-individuals-experiencing-substance-use-disorder",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/news/city-councilors-introduce-resolution-to-fund-services-for-individuals-experiencing-substance-use-disorder",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "City Councilors Introduce Resolution to Fund Services for Individuals Experiencing Substance Use Disorder",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/news/city-councilors-introduce-resol",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 145800,
+      "checksum_sha256": "ee87b2ee45b7eaf61cff0df0e5eb698f7606d96baa26a63b80f656e534f15e86",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0776187Z",
-      "updated_at": "2026-08-04T12:37:50.0776187Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/find-your-councilor/albuquerque-city-councilors/resolveuid/c48ff3b276da4bafab0179cab6d5409c"
       ],
@@ -131955,7 +131964,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-6220c942e21cbc67",
@@ -133113,34 +133122,35 @@
     },
     {
       "id": "src-62f8b1ed80bcb9c4",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-councilor-connection-newsletters",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-councilor-connection-newsletters",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "District 7 Councilor Connection Newsletter Archive",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/district-7-councilor-connection-news",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 145632,
+      "checksum_sha256": "4b782348cfdf53a4de53f8000e87f2d6cc9dbfd6abeb4601e53cd05a02c6f314",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0676202Z",
-      "updated_at": "2026-08-04T12:37:50.0676202Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/park-improvements/tom-bolack-urban-forest-trail-extension",
         "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/mile-high-bike-blvd-traffic-calming-meeting"
@@ -133157,7 +133167,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-62f957e563e55b52",
@@ -136696,34 +136706,35 @@
     },
     {
       "id": "src-65b5603ca4b5ecfa",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/1939d4867b9f4cde8d3cf0370e1acc4b",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/1939d4867b9f4cde8d3cf0370e1acc4b",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Traffic concerns in your neighborhood",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/1939d4867b9f4c",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 96706,
+      "checksum_sha256": "935389517fd8542293da4d372f381259a8983a0e0b191caec750b665e7a1ff6e",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0556153Z",
-      "updated_at": "2026-08-04T12:37:50.0556153Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/22e5246fcb494d1a850d2709927eec46"
       ],
@@ -136733,7 +136744,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-65b867a46ee549e4",
@@ -138698,34 +138709,35 @@
     },
     {
       "id": "src-672b855ab1a749f6",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/news/councilors-fund-doghouses-for-city-animal-welfare-department",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/news/councilors-fund-doghouses-for-city-animal-welfare-department",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Councilors Fund Doghouses for City Animal Welfare Department",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/news/councilors-fund-doghouses-for-c",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 144042,
+      "checksum_sha256": "a9d1d68979f474270f26826930cd5181eb078b3cdb639af9b7a9c87741bcb9ca",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0796179Z",
-      "updated_at": "2026-08-04T12:37:50.0796179Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/find-your-councilor/albuquerque-city-councilors/resolveuid/c48ff3b276da4bafab0179cab6d5409c"
       ],
@@ -138735,7 +138747,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-672e690f4fbdaba1",
@@ -149720,34 +149732,35 @@
     },
     {
       "id": "src-7114281f0a684097",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/about-the-councilor-district-7",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/about-the-councilor-district-7",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "About the Councilor",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/about-the-councilor-district-7",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 134726,
+      "checksum_sha256": "7ed89096390ff0869a832137b67054e2cf60facfacd9a0a3c6ff9b2a9a540030",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0546158Z",
-      "updated_at": "2026-08-04T12:37:50.0546158Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/22e5246fcb494d1a850d2709927eec46"
       ],
@@ -149757,7 +149770,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-711bf07c3fe40d74",
@@ -158997,34 +159010,35 @@
     },
     {
       "id": "src-78a933e426fd4b74",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/65879db7b6a3e4b9425988ffd9d3d8a7",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/65879db7b6a3e4b9425988ffd9d3d8a7",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "ABQ HEART ordinance",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/65879db7b6a3e4",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 119001,
+      "checksum_sha256": "3153dfef4325cf4d17ddadb9be6ea1339a7d9f7a8231357bbfba839d9505cf4d",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0586155Z",
-      "updated_at": "2026-08-04T12:37:50.0586155Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/22e5246fcb494d1a850d2709927eec46"
       ],
@@ -159034,7 +159048,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-78ad201f6197b420",
@@ -159486,34 +159500,35 @@
     },
     {
       "id": "src-7907210efc3690e9",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/3bb71a8e31fb526e844d8133ad25050f",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/3bb71a8e31fb526e844d8133ad25050f",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "A Word About McDuffie Park (Hidden Park)",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/3bb71a8e31fb52",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 121489,
+      "checksum_sha256": "f6dbe6aaded7bd1a9fbd859c8c2bf46d0ca7c688f61b718e585279e00658bd15",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0566163Z",
-      "updated_at": "2026-08-04T12:37:50.0566163Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/3bb71a8e31fb526e844d8133ad25050f"
       ],
@@ -159523,7 +159538,7 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-79103713f5275a4c",
@@ -164774,34 +164789,35 @@
     },
     {
       "id": "src-7d12884712b91c27",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/events",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/events",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "District 7 Events",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/events",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 129874,
+      "checksum_sha256": "e6c2720e0a2474d90ddbc04d5540eba69d37a1eca1f135a22f21fab12feb72dc",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0726188Z",
-      "updated_at": "2026-08-04T12:37:50.0726188Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/22e5246fcb494d1a850d2709927eec46"
       ],
@@ -164811,7 +164827,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-7d1c050e4617779c",
@@ -167642,19 +167658,19 @@
     },
     {
       "id": "src-7f47a37e55cf3b17",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/median-improvements",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/median-improvements",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "District 7 Medians",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-i",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 136985,
+      "checksum_sha256": "d6061c104347d5158dfec211e4264bf55384749d7ac5d6270cc4cbc1740e59c9",
       "parent_url": "https://www.cabq.gov/sitemap",
       "referring_urls": [
         "https://www.cabq.gov/@@sitemap",
@@ -167670,22 +167686,23 @@
       "crawl_depth": 1,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "Saved research measured the directly fetched authoritative City container.",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0956755Z",
-      "updated_at": "2026-08-04T14:15:58.0956755Z"
+      "updated_at": "2026-09-20T19:00:00Z"
     },
     {
       "id": "src-7f51d9a1a82e1f84",
@@ -168503,19 +168520,19 @@
     },
     {
       "id": "src-8014f7e67e8bd593",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/economic-development-and-mra-projects/san-pedro-mainstreet-streetscaping-a",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/economic-development-and-mra-projects/san-pedro-mainstreet-streetscaping-a",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "San Pedro Mainstreet & Streetscaping",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/economic-develop",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 147320,
+      "checksum_sha256": "eae10c4288fd00a2d82098c64ec7fb91fc8a9ee4c579dcd0b93b75286979ad53",
       "parent_url": "https://www.cabq.gov/sitemap",
       "referring_urls": [
         "https://www.cabq.gov/@@sitemap",
@@ -168530,22 +168547,23 @@
       "crawl_depth": 1,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "Saved research measured the directly fetched authoritative City container.",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0861568Z",
-      "updated_at": "2026-08-04T14:15:58.0861568Z"
+      "updated_at": "2026-09-20T19:00:00Z"
     },
     {
       "id": "src-8015bccf7c3e82c8",
@@ -179811,19 +179829,19 @@
     },
     {
       "id": "src-88b083b092a7305e",
-      "status": "pending review",
+      "status": "approved for addition",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/sandia-high-school-area-safety-and-traffic-calming-measures/resolveuid/11596e4dcc044a40a9bdd14d58e380ae",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/sandia-high-school-area-safety-and-traffic-calming-measures/resolveuid/11596e4dcc044a40a9bdd14d58e380ae",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Meeting PowerPoint Presentation",
-      "date": null,
-      "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "title": "Sandia High School Area Safety and Traffic Calming Study: Public Meeting Presentation, 2023",
+      "date": "2023-01-01",
+      "file_type": "PDF",
+      "size_bytes": 3774703,
+      "checksum_sha256": "5cc7a5d775a5cf3aadb36dbb8688a8c06796d5f484d16fa51f70ebcf68ff8681",
       "parent_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/sandia-high-school-area-safety-and-traffic-calming-measures",
       "referring_urls": [
         "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/sandia-high-school-area-safety-and-traffic-calming-measures"
@@ -179840,20 +179858,20 @@
       "cited_successors": [],
       "provenance_status": "authoritative government source recorded",
       "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "description": "Public-meeting presentation for Albuquerque's 2023 Sandia High School Area Safety and Traffic Calming Study, covering study conditions, maps, and the path to a later final report.",
+      "description_word_count": 26,
       "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Saved complete-tree research measured/rendered the 29-page authoritative City PDF.",
+        "Archive preparation only; no R2 or public content action is authorized."
       ],
       "implementation_location": null,
       "implementation_locations": [],
-      "cross_listing_approved": false,
-      "validation_status": "not run",
+      "cross_listing_approved": true,
+      "validation_status": "approved for addition: archive preparation complete; presentation is not the final report; R2/public-byte verification and public-content action gated",
       "exclusion_reason": null,
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0986761Z",
-      "updated_at": "2026-08-04T14:15:58.0986761Z"
+      "updated_at": "2026-09-20T19:00:00Z"
     },
     {
       "id": "src-88b9c4645e13a40c",
@@ -217267,34 +217285,35 @@
     },
     {
       "id": "src-a85bb8339a63bec4",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/park-improvements",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/park-improvements",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Park Improvements",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/park-improvement",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 144326,
+      "checksum_sha256": "bace4fdb40fdcc0bffd943830fb3e44c782515096aceeffb9f40ac8656d12591",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0706195Z",
-      "updated_at": "2026-08-04T12:37:50.0706195Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects"
       ],
@@ -217304,7 +217323,7 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-a882830374dd01fc",
@@ -218206,34 +218225,35 @@
     },
     {
       "id": "src-a9651bc7525bbb7e",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/news/city-councilors-approve-resolution-funding-housing-and-sobering-for-substance-use-disorder-services-in-the-city2019s-gateway-system",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/news/city-councilors-approve-resolution-funding-housing-and-sobering-for-substance-use-disorder-services-in-the-city2019s-gateway-system",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "City Councilors Approve Resolution Funding Housing and Sobering for Substance Use Disorder Services in the City’s Gateway System",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/news/city-councilors-approve-resolut",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 148224,
+      "checksum_sha256": "06537042ae4a120b02084785e64e6d277b853a57ab55c97c57d68af3913fcbf2",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0766187Z",
-      "updated_at": "2026-08-04T12:37:50.0766187Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/4d34cf22c69049b7924971a4d9bc7340"
       ],
@@ -218243,7 +218263,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-a97d57aa9b6b69e1",
@@ -219535,34 +219555,35 @@
     },
     {
       "id": "src-aa3cfc70dcf98e92",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/storm-water",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/storm-water",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Climate Resilience",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/storm-water",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 133733,
+      "checksum_sha256": "c75fba507bda2f55f46db389d77eca56d2ea2cf8e409245910083b74c5fe6676",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0716179Z",
-      "updated_at": "2026-08-04T12:37:50.0716179Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects"
       ],
@@ -219572,7 +219593,7 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-aa46a7bec6cc3f17",
@@ -271656,34 +271677,35 @@
     },
     {
       "id": "src-d4dc870aef9fce13",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/48e869d8d86d4c2c952ce4fe0c4314cd",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/48e869d8d86d4c2c952ce4fe0c4314cd",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "48e869d8d86d4c2c952ce4fe0c4314cd",
+      "title": "Councillor portrait photograph (48e869d8d86d4c2c952ce4fe0c4314cd)",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 140867,
+      "checksum_sha256": "eb3dfe8fa2a5260fac498719630e7573251fe445c97635d252ccb32bfe4ce32b",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Site furniture, not a record. All four images in this lane are 400 by 500 pixels, the portrait size the councillor pages use, and each is reached through a resolveuid alias whose inventory title is only the identifier itself.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0576163Z",
-      "updated_at": "2026-08-04T12:37:50.0576163Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/22e5246fcb494d1a850d2709927eec46"
       ],
@@ -271693,7 +271715,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-d50cd2863da4f4be",
@@ -273775,34 +273797,35 @@
     },
     {
       "id": "src-d69f8dae0726c7c6",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/district-7-public-safety-projects",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/district-7-public-safety-projects",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Community Improvements",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/district-7-publi",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 134478,
+      "checksum_sha256": "e71101d7b5ecab26df10c707dea1be1c3a8e794363ad25f915c3d95a202317d6",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0696179Z",
-      "updated_at": "2026-08-04T12:37:50.0696179Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects"
       ],
@@ -273812,7 +273835,7 @@
       "crawl_depth": 4,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-d6aafb422a776b91",
@@ -286744,34 +286767,35 @@
     },
     {
       "id": "src-e1961c7f8cb65239",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/events/district-7-councilor-connect-zoom-scheduled-friday-september-6th-at-10-00-am",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/events/district-7-councilor-connect-zoom-scheduled-friday-september-6th-at-10-00-am",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "District 7 Councilor Connect",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/events/district-7-councilor-connect-",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 144779,
+      "checksum_sha256": "2c97abdd7205dc199f1961ea7315f16c38f1a62440c3dfae48250e5ad7c52f99",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0746181Z",
-      "updated_at": "2026-08-04T12:37:50.0746181Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/22e5246fcb494d1a850d2709927eec46"
       ],
@@ -286781,7 +286805,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-e1ad4337a9e778cd",
@@ -288334,34 +288358,35 @@
     },
     {
       "id": "src-e2f73b9b71678e74",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/news/city-council-puts-bad-landlords-on-notice",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/news/city-council-puts-bad-landlords-on-notice",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "City Council Puts Bad Landlords on Notice",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/news/city-council-puts-bad-landlords",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 138562,
+      "checksum_sha256": "f9422f638c1ef7d3418bcadf2a362cbc999c57c708d4979cc38a6ab41faa95fc",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0786181Z",
-      "updated_at": "2026-08-04T12:37:50.0786181Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/22e5246fcb494d1a850d2709927eec46"
       ],
@@ -288371,7 +288396,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-e2fc2a6e96b3ea3b",
@@ -307263,34 +307288,35 @@
     },
     {
       "id": "src-f26bffe86b234301",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/d5dc04dcbd644d18930189b0429c3ece",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/d5dc04dcbd644d18930189b0429c3ece",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Learn more about Councilor Fiebelkorn.",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/d5dc04dcbd644d",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 134726,
+      "checksum_sha256": "07a12544b350abb8e2accd7a469ae828c9762be7a2a197789c4fd458c436c2ef",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0666202Z",
-      "updated_at": "2026-08-04T12:37:50.0666202Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/22e5246fcb494d1a850d2709927eec46"
       ],
@@ -307300,7 +307326,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-f2716dd03961455e",
@@ -313532,19 +313558,19 @@
     },
     {
       "id": "src-f7fafe2b8474eb34",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/sandia-high-school-area-safety-and-traffic-calming-measures",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/sandia-high-school-area-safety-and-traffic-calming-measures",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Sandia High School Area Safety & Traffic Calming Measures",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-i",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 148081,
+      "checksum_sha256": "e27f48ea5ffee8c397732bcc490b139153b57c9aa4f4d5e7f54b8c77d838f456",
       "parent_url": "https://www.cabq.gov/sitemap",
       "referring_urls": [
         "https://www.cabq.gov/@@sitemap",
@@ -313560,22 +313586,23 @@
       "crawl_depth": 1,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded",
+      "provenance_status": "Saved research measured the directly fetched authoritative City container.",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T14:15:58.0986761Z",
-      "updated_at": "2026-08-04T14:15:58.0986761Z"
+      "updated_at": "2026-09-20T19:00:00Z"
     },
     {
       "id": "src-f81117edb505b024",
@@ -314199,34 +314226,35 @@
     },
     {
       "id": "src-f868d4a916ebb17a",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/d01ba00a5ec9fc75f526b2d0893ccda2",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/d01ba00a5ec9fc75f526b2d0893ccda2",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Contact PNM to report a broken street light",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/district-7/resolveuid/d01ba00a5ec9fc",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 137185,
+      "checksum_sha256": "fc5d19390ddcd9f2845447db697785ed92835eb4c821f3c7529058520c57624e",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0656187Z",
-      "updated_at": "2026-08-04T12:37:50.0656187Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/22e5246fcb494d1a850d2709927eec46"
       ],
@@ -314236,7 +314264,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-f868faefe72b90f4",
@@ -320941,34 +320969,35 @@
     },
     {
       "id": "src-fda3f712913ac0b0",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://www.cabq.gov/council/find-your-councilor/district-7/news/statements-from-city-councilors-on-the-passage-of-minimum-wage-increase",
-      "direct_file_url": null,
+      "direct_file_url": "https://www.cabq.gov/council/find-your-councilor/district-7/news/statements-from-city-councilors-on-the-passage-of-minimum-wage-increase",
       "r2_url": null,
       "r2_key": null,
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "City of Albuquerque",
-      "title": "Statements From City Councilors On The Passage Of Minimum Wage Increase",
+      "title": "Web page: www.cabq.gov/council/find-your-councilor/district-7/news/statements-from-city-councilors",
       "date": null,
       "file_type": "Web page or live service",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 140230,
+      "checksum_sha256": "19ad52a45391a2962b6cc185340ce5bdcefa10288a4cccc31b1c71b9e52e1b7b",
       "proposed_canonical_page": null,
       "description": null,
       "description_word_count": 0,
       "processing_notes": [
         "Discovered by deterministic crawl of https://www.cabq.gov/council.",
-        "Exact metadata and relevance remain pending source review."
+        "Exact metadata and relevance remain pending source review.",
+        "Saved terminal research supplied authoritative URL, exact size, and SHA-256."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
       "validation_status": "not run",
-      "exclusion_reason": null,
+      "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. This is the same disposition the archive has applied to councillor pages throughout.",
       "local_path": null,
       "discovered_at": "2026-08-04T12:37:50.0806179Z",
-      "updated_at": "2026-08-04T12:37:50.0806179Z",
+      "updated_at": "2026-09-20T19:00:00Z",
       "referring_urls": [
         "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission/local-government-coordinating-commission/resolveuid/4d34cf22c69049b7924971a4d9bc7340"
       ],
@@ -320978,7 +321007,7 @@
       "crawl_depth": 3,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "authoritative government source recorded"
+      "provenance_status": "Saved research measured the directly fetched authoritative City container."
     },
     {
       "id": "src-fda465463c32bcee",
