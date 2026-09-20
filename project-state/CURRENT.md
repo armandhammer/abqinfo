@@ -38,6 +38,8 @@ The 26-record Municipal Development agenda/minutes family is resolved in `projec
 
 Archive preparation for all 18 retained Municipal Development agenda/minutes records is complete in `project-state/discovery/municipaldevelopment-agenda-minutes-archive-preparation-2026-09-20.json`; it records source bytes, quality assessments, placement, future archive keys, collision checks, and the exact warnings for ten orphan agendas. The current District 2 Find Your Councilor subtree is terminally resolved in `project-state/discovery/district-2-find-your-councilor-family-decision-2026-09-20.json`: all 14 rows are excluded as live web pages or councillor page furniture. Skip both complete families when selecting the next ordinary review.
 
+The October 14, 2020 Climate Action Task Force opening-meeting family is resolved in `project-state/discovery/climate-action-task-force-opening-meeting-decision-2026-09-20.json`: the six-page City minutes and 16-page City climate-survey presentation are approved inventory-only with full archive preparation and future Climate Environment placement. R2/public-byte verification and public content remain gated. The next actionable family is the remaining District 7 Find Your Councilor subtree, using its complete saved-tree research.
+
 The Council amendment-sheet family above supersedes the prior `src-09a0152fb526fcba` handoff; it is now terminally excluded and must not be reviewed independently.
 
 ## External gates
