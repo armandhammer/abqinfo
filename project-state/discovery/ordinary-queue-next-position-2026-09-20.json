@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_queue_filtered_position",
+  "recorded_at": "2026-09-20",
+  "method": "Sort current master-inventory candidates by id, retain status=pending review, then remove only the explicitly gated families recorded in CURRENT.md and their existing discovery artifacts. Terminal completed/excluded families disappear by status and are checked separately against their saved decision scopes.",
+  "source_inventory": "project-state/master-inventory.json",
+  "source_current": "project-state/CURRENT.md",
+  "source_artifacts": [
+    "project-state/checkpoint.json",
+    "project-state/discovery/2014-ms4-family-package-gate-2026-09-18.json",
+    "project-state/discovery/council-qa-lgcc-news-cluster-research-2026-09-13.json",
+    "project-state/discovery/district-7-find-your-councilor-family-decision-2026-09-20.json"
+  ],
+  "counts": {
+    "pending_review_before_filter": 1645,
+    "gated_ms4_pending": 28,
+    "gated_prescription_trails_pending": 34,
+    "gated_lgcc_family_pending": 33,
+    "gated_notices_and_orders_pending": 3,
+    "filtered_pending_review": 1550,
+    "unique_gated_pending": 95,
+    "overlapping_gate_memberships": 3,
+    "next_cluster_count": 18
+  },
+  "gates_applied": [
+    {
+      "family": "2014 MS4 Annual Report",
+      "basis": "CURRENT.md and the exact 28-id family gate artifact",
+      "artifact": "project-state/discovery/2014-ms4-family-package-gate-2026-09-18.json",
+      "pending_count": 28
+    },
+    {
+      "family": "Prescription Trails",
+      "basis": "CURRENT.md standing external gate and the exact pending source-url family",
+      "pending_count": 34
+    },
+    {
+      "family": "LGCC and related Council-news family",
+      "basis": "CURRENT.md standing external gate and the saved 40-record research family; 17 are already approved and 33 remain pending (the remaining saved dispositions are not terminal in the inventory)",
+      "artifact": "project-state/discovery/council-qa-lgcc-news-cluster-research-2026-09-13.json",
+      "pending_count": 33
+    },
+    {
+      "family": "Code-enforcement Notices and Orders",
+      "basis": "CURRENT.md standing external gate; exact pending NAO titles",
+      "pending_count": 3
+    }
+  ],
+  "terminal_scope_checks": [
+    {
+      "family": "District 7 Find Your Councilor subtree",
+      "artifact": "project-state/discovery/district-7-find-your-councilor-family-decision-2026-09-20.json",
+      "scope_count": 30,
+      "pending_scope_count": 0,
+      "result": "not resurfaced"
+    }
+  ],
+  "next_actionable_cluster": {
+    "family": "Municipal Development construction-documents family",
+    "selection_rule": "First remaining pending family by source parent URL after the gates above; members are not researched or reviewed by this artifact.",
+    "parent_url": "https://www.cabq.gov/municipaldevelopment/documents/construction-documents",
+    "count": 18,
+    "first_candidate_id": "src-11abb0f76d395355",
+    "first_candidate_title": "block party application.doc",
+    "candidate_ids": [
+      "src-11abb0f76d395355",
+      "src-1e6778601cac2fec",
+      "src-1f9234403de1f16f",
+      "src-380887c0fbcc9111",
+      "src-497bd154d2db10c6",
+      "src-53360c1d0a0f898f",
+      "src-5962fd01c9b7f0a4",
+      "src-7165157e3542b841",
+      "src-7967079340432392",
+      "src-8939a2f1f9f4b382",
+      "src-906f674e57f311e0",
+      "src-a76b5c8c3ad10b52",
+      "src-aeb5714315a45302",
+      "src-b485c36a9490b38c",
+      "src-b7d34f9ee6422783",
+      "src-ba39d49eb178e6af",
+      "src-cebad24115e1b02d",
+      "src-fb5fde5246712f61"
+    ]
+  },
+  "safeguards_observed": {
+    "research_started": false,
+    "source_downloads": false,
+    "r2_mutation": false,
+    "hugo_content_changed": false,
+    "pull_request_created": false,
+    "merge_or_deploy": false
+  }
+}

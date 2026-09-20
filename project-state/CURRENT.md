@@ -42,6 +42,8 @@ The October 14, 2020 Climate Action Task Force opening-meeting family is resolve
 
 The 30-record District 7 Find Your Councilor subtree is resolved in `project-state/discovery/district-7-find-your-councilor-family-decision-2026-09-20.json`: 29 live pages or portrait assets are excluded; the 29-page Sandia High School traffic-calming public-meeting presentation is approved inventory-only with full archive preparation and is explicitly not the final report. Recompute the filtered queue for the next family.
 
+The filtered queue was recomputed in `project-state/discovery/ordinary-queue-next-position-2026-09-20.json`. After skipping the recorded MS4, Prescription Trails, LGCC/Council-news, and Code-enforcement Notices-and-Orders gates, the next actionable family is the 18 pending Municipal Development `construction-documents` records, beginning with `src-11abb0f76d395355` (`block party application.doc`). No member of that family has been researched or reviewed; do not begin it until ChatGPT authorizes the next stage.
+
 The Council amendment-sheet family above supersedes the prior `src-09a0152fb526fcba` handoff; it is now terminally excluded and must not be reviewed independently.
 
 ## External gates
