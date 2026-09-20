@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_queue_filtered_position",
+  "recorded_at": "2026-09-20",
+  "supersedes": "project-state/discovery/ordinary-queue-next-position-2026-09-20.json",
+  "method": "Queried the current master inventory for status=pending review, reproduced the existing completed-artifact filter, and removed the now-terminal 19-record Planning documents-root residual through its family-decision artifact. The first remaining candidate was checked against the saved undiscovered-documents research artifact to establish a coherent later-MS4 family; no source document was fetched or researched.",
+  "sources": {
+    "source_inventory": "project-state/master-inventory.json",
+    "source_current": "project-state/CURRENT.md",
+    "source_checkpoint": "project-state/checkpoint.json",
+    "prior_queue": "project-state/discovery/ordinary-queue-next-position-2026-09-20.json",
+    "completed_family": "project-state/discovery/planning-documents-root-residual-decision-2026-09-20.json",
+    "additional_saved_classification": [
+      "project-state/discovery/undiscovered-documents-research-2026-09-14.json",
+      "project-state/discovery/2014-ms4-family-package-gate-2026-09-18.json"
+    ]
+  },
+  "counts": {
+    "pending_review_current": 1626,
+    "completed_artifact_filter_pending_covered": 1505,
+    "residual_after_completed_filter": 121,
+    "external_gate_residual_skipped": 0,
+    "filtered_pending_review": 121,
+    "next_cluster_count": 8
+  },
+  "skipped_scopes": [
+    {"scope":"Planning documents-root residual","count":19,"artifact":"project-state/discovery/planning-documents-root-residual-decision-2026-09-20.json","reason":"Completed in the preceding family decision; 13 inventory-only approvals, two duplicates, and four exclusions."}
+  ],
+  "next_actionable_cluster": {
+    "family": "Later MS4 annual reports and permit instruments",
+    "parent_url": "mixed City stormwater-document sources",
+    "count": 8,
+    "first_candidate_id": "src-185f33493177b085",
+    "selection_rule": "First remaining pending family by candidate ID after completed decisions and the separately gated 2014 MS4 package; this is a saved-research integration handoff, not a new source-research authorization.",
+    "candidate_ids": [
+      "src-185f33493177b085",
+      "src-3408f5b9a86bcb5c",
+      "src-5cdb4d5491c3a02d",
+      "src-7c1a063b817989bd",
+      "src-975528e01439f6df",
+      "src-e531466aed7f5387",
+      "src-eda3280085776f61",
+      "src-fdc66c5b8de48584"
+    ],
+    "saved_research": "project-state/discovery/undiscovered-documents-research-2026-09-14.json",
+    "saved_finding": "The saved research identifies a continuous City federal-stormwater-compliance record: fiscal 2016, 2017, 2019, 2020, and 2021 annual reports, the FY2021 draft/final pair, the EPA permit-coverage authorization letter, and the MS4 general permit. It records the FY2021 draft as superseded by the final. The 2014 annual-report body and 27 attachments are a separate externally gated family and are not included here.",
+    "next_instruction": "Review and integrate only this eight-record saved-research family when separately authorized; do not fetch source documents as part of this queue-position handoff. Preserve the draft/final relationship and ordinary archive/publication gates."
+  },
+  "safeguards_observed": {
+    "research_started": false,
+    "source_downloads": false,
+    "r2_mutation": false,
+    "hugo_content_changed": false,
+    "pull_request_created": false,
+    "merge_or_deploy": false
+  }
+}
