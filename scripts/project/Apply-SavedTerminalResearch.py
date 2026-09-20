@@ -25,12 +25,29 @@ now=a.updated_at or datetime.now(timezone.utc).isoformat().replace('+00:00','Z')
 assert now.endswith('Z')
 for i in ids:
     row, rec=rows[i], found[i]; status=rec['recommended_status']; row['status']=status; row['updated_at']=now
+    authoritative_url=rec.get('authoritative_url')
+    if authoritative_url:
+        row['source_url']=authoritative_url
+        row['direct_file_url']=authoritative_url
+        row['parent_url']=row.get('parent_url') or authoritative_url.rsplit('/view',1)[0]
+    if rec.get('content_kind') in {'PDF','DOCX','XLSX','CSV','ZIP'}: row['file_type']=rec['content_kind']
+    if rec.get('size_bytes') is not None: row['size_bytes']=rec['size_bytes']
+    if rec.get('checksum_sha256'): row['checksum_sha256']=rec['checksum_sha256']
+    if rec.get('date') is not None: row['date']=rec['date']
+    if rec.get('body'): row['agency']=rec['body']
+    title=rec.get('title') or rec.get('title_for_reference')
+    if title: row['title']=title
+    if authoritative_url:
+        row['provenance_status']='Saved research measured the directly fetched authoritative City container.'
+        notes=row.setdefault('processing_notes', [])
+        note='Saved terminal research supplied authoritative URL, exact size, and SHA-256.'
+        if note not in notes: notes.append(note)
     if status == 'excluded':
         row['exclusion_reason']=rec['exclusion_reason']
         continue
 
     canonical_id=rec.get('canonical_id')
-    relationship=rec.get('relationship')
+    relationship=rec.get('relationship') or rec.get('basis')
     assert canonical_id and relationship, f'{i} {status} decision lacks canonical_id or relationship'
     assert canonical_id in rows and canonical_id != i, f'{i} has an invalid canonical_id'
     canonical=rows[canonical_id]
