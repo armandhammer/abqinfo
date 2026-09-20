@@ -94,6 +94,9 @@ def main() -> None:
         if candidate["status"] != saved_row["recommended_status"]:
             raise ValueError(f"{candidate_id} does not retain its saved terminal disposition")
         row = {"candidate_id": candidate_id, "title": candidate["title"], "status": candidate["status"], "saved_research_category": saved_row.get("category")}
+        for key in ("bill", "parent_enacted_instrument_held"):
+            if key in saved_row:
+                row[key] = saved_row[key]
         if candidate["status"] in {"duplicate", "superseded"}:
             row["canonical_candidate_id"] = saved_row["canonical_id"]
             row["relationship"] = saved_row.get("relationship")

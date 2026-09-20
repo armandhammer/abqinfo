@@ -32,7 +32,9 @@ The two-record MRA Appeal Form delivery-alias family is resolved in `project-sta
 
 The June 5, 2025 fiber-rulemaking hearing family is complete in `project-state/discovery/fiber-rulemaking-meeting-records-decision-2026-09-19.json`: final City regulations are approved inventory-only; the unreviewed Otter transcript and Zoom chat log are excluded; the 79 MB correspondence/complaints record remains requires human review for privacy-sensitive publication treatment. No archive or public-content work occurred.
 
-After applying every existing gate and completed-family decision, `src-09a0152fb526fcba` (June 17, 2024 O-24-13 Council amendment) is the next genuinely actionable ordinary candidate. Scope its amendment/document family before taking any decision; do not treat it as authorization to revisit excluded Municipal Development procurement, gated standard-form work, or the protected fiber correspondence record.
+The 25-record Council amendment-sheet terminal family is complete in `project-state/discovery/ordinary-queue-terminal-integration-batch-2026-09-20-council-amendment-sheets.json`: all 25 saved `excluded` decisions are integrated with bill, source, measurement, and rationale evidence. The four substitute-bill records (`src-29b20d60b30299cd`, `src-d7c28482bfc9b3c0`, `src-cba160dcbb55f5a1`, and `src-56f776ae07a23774`) remain unresolved and must be decided together with the seven related flat-level substitute bills. All prior external gates remain intact. After skipping those gates and completed families, the next genuinely actionable ordinary candidate/family is `src-09a90d2b97f9bd12` (`Rider Education`, a saved live web-page exclusion); do not begin it in this task.
+
+The Council amendment-sheet family above supersedes the prior `src-09a0152fb526fcba` handoff; it is now terminally excluded and must not be reviewed independently.
 
 ## External gates
 

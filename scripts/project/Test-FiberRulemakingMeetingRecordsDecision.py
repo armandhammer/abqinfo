@@ -24,6 +24,6 @@ assert len(decision['quality_assessments']) == 1
 assert decision['quality_assessments'][0]['id'] == 'src-b8b28358abc9a2de'
 assert 'not a minute' not in records['src-09592fba403c1e2f']['exclusion_reason'].lower() or 'not official minutes' in records['src-09592fba403c1e2f']['validation_status']
 assert decision['ordinary_queue_handoff']['next_actionable_candidate'] == 'src-09a0152fb526fcba'
-assert 'src-09a0152fb526fcba' in checkpoint['resume_command']
+assert 'src-09a90d2b97f9bd12' in checkpoint['resume_command']
 assert checkpoint['counts_by_status'] == inventory['counts']
 print('PASS: June 2025 fiber rulemaking family is bounded, provenance-preserving, and non-publication-safe.')

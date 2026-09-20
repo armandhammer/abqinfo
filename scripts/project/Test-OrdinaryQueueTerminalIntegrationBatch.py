@@ -17,7 +17,9 @@ def load(path: Path) -> dict:
 
 def find_nested(value: object, candidate_id: str) -> dict | None:
     if isinstance(value, dict):
-        if value.get("id") == candidate_id or value.get("candidate_id") == candidate_id:
+        if value.get("id") == candidate_id and "recommended_status" in value:
+            return value
+        if value.get("candidate_id") == candidate_id and "status" in value:
             return value
         for child in value.values():
             found = find_nested(child, candidate_id)
