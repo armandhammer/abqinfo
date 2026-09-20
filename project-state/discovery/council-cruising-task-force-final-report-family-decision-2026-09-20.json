@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_queue_family_decision",
+  "recorded_at": "2026-09-20",
+  "family": "Council Cruising Task Force final report",
+  "scope": {
+    "candidate_ids": ["src-59a9ee7af1987815"],
+    "included_count": 1,
+    "excluded_scope": "The separately externally gated 2014 MS4 body-and-attachments package and every other completed or gated ordinary-work family remain outside this decision."
+  },
+  "starting_evidence": {
+    "saved_research": "project-state/discovery/undiscovered-documents-research-2026-09-14.json (und-038)",
+    "queue_handoff": "project-state/discovery/ordinary-queue-next-position-2026-09-20-post-ms4.json",
+    "method": "Used saved City measurements and cover evidence as the starting point. Performed only bounded current verification: downloaded the direct City PDF, compared size and SHA-256 with saved evidence, extracted text and metadata, rendered representative cover, membership, recommendations, resolution, and appendix pages, and searched the current inventory for the measured SHA-256. No broad source research, R2 action, or public-content action occurred."
+  },
+  "family_relationship": {
+    "identity": "Cruising Task Force Findings & Recommendations (per R-17-250), dated April 2, 2018, is a City of Albuquerque City Council Cruising Task Force report. The cover and running headers identify the City Council body; the acknowledgements identify 11 named participants from car clubs, merchants, City Planning, APD, DMD, Cultural Services, and City Council Services.",
+    "resolution_relationship": "Appendix C reproduces City Council Bill R-17-250, enacted as R-2017-113 and sponsored by Klarissa Peña and Isaac Benton. That resolution establishes the 10-member task force to explore options and make recommendations to promote responsible cruising. The report documents six February-March meetings and supplies the resulting findings and recommendations; it is the task force's substantive completion of that charge, not the resolution itself.",
+    "finality": "The cover calls the work Findings & Recommendations; its executive summary, complete two-part structure, prioritized next steps, and appendices confirm a finished deliverable. Appendix H labels only its proposed economic-impact-analysis scope preliminary; that limited future-work component does not make the report a draft.",
+    "canonical_record_check": "The authoritative direct City PDF downloaded on 2026-09-20 is 9,756,353 bytes with SHA-256 34a6f47262458cfe9ea5d176213f48fbcf525fa43f061073363aded408d567e9, exactly matching saved research. The saved 2026-09-14 integration had already swept all inventory URLs and checksummed records; the current hash search finds only this candidate. No alternate authoritative version or stronger canonical report was found or inferred."
+  },
+  "records": [
+    {
+      "id": "src-59a9ee7af1987815",
+      "identity": "Cruising Task Force Findings & Recommendations (per R-17-250), City of Albuquerque City Council Cruising Task Force, April 2, 2018.",
+      "disposition": "approved for addition",
+      "source_verification": "Direct authoritative City PDF downloaded 2026-09-20: 9,756,353 bytes; SHA-256 34a6f47262458cfe9ea5d176213f48fbcf525fa43f061073363aded408d567e9, matching saved 2026-09-14 City GET evidence; PDF has 43 pages and 14,455 extracted words.",
+      "quality_assessment": {
+        "visual_inspection": "Rendered cover, acknowledgements/membership, a recommendation page, Appendix C's R-17-250 page, and the economic-impact appendix. The professionally designed City Council report has legible text, photographs, tables/structured recommendations, and consistent headers/footers; no material rendering defect was observed.",
+        "measured_content": "43 letter pages; 9,756,353 bytes; 14,455 extracted words. Part 1 covers local and national cruising history, task-force establishment, methodology, and existing conditions. Part 2 supplies legislative, administrative, event-coordination, enforcement, economic-development, next-step, and vision recommendations. Appendices preserve the governing ordinance/resolutions, comparative research, proposed economic-analysis scope, survey/results, and bibliography.",
+        "standalone_public_value": "High. It is a dated City Council task-force deliverable on a distinctive Albuquerque transportation, cultural-heritage, public-safety, and downtown policy question, retaining both the deliberative basis and actionable recommendations.",
+        "information_density": "High: approximately 336 extracted words per page, with substantive narrative, prioritized recommendations, documented methodology, a survey, and primary legal/context appendices. It is not a skeletal presentation, attachment, or administrative fragment.",
+        "series_component_relationship": "A self-contained final report, not a serial installment. Its embedded copies of O-05-104, R-05-328, and R-17-250 are contextual appendices rather than a reason to classify the report as a duplicate of those legal records.",
+        "intended_publication_form": "After separately authorized unchanged R2 archival and public-byte verification, retain it as one standalone original under the Transportation landing page's future City transportation policy/history material. Do not split or repackage the report; preserve its original 43-page container and direct City provenance.",
+        "rationale": "Its complete final-report form, City Council provenance, strong measured and visual content, unique policy recommendations, and lack of a stronger canonical version meet the AGENTS.md publication-quality threshold. This approval is inventory-only and does not authorize archive or visible publication work."
+      },
+      "placement": {
+        "proposed_canonical_page": "content/transportation/_index.md",
+        "proposed_heading": "Future City transportation policy and history material (heading unresolved until a separately authorized editorial implementation review)",
+        "cross_listing": "Rejected: content/about/_index.md is too general; the report's Council provenance alone does not justify a second visible listing. No other cross-listing is justified by this one-record decision."
+      }
+    }
+  ],
+  "archive_publication_gates": [
+    "No R2 mutation occurred or is authorized by this decision.",
+    "No Hugo, PR, merge, deployment, or public-content action occurred.",
+    "Before any future visible listing, archive the unchanged original, verify public download size and SHA-256, retain the official City source URL, and perform the separate editorial implementation review.",
+    "Do not treat approval for addition as archive or publication approval."
+  ],
+  "queue_follow_up": "This one-record family now has a durable disposition. The recomputed filtered queue is recorded in project-state/discovery/ordinary-queue-next-position-2026-09-20-post-cruising.json; its next actionable residual family is the two-record Public service guides cluster. Do not begin that family in this task.",
+  "safeguards_observed": {"r2_mutation": false, "public_content_changed": false, "pull_request_created": false, "merge_or_deploy": false}
+}

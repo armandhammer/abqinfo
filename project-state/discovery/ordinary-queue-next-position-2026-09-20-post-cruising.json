@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_queue_filtered_position",
+  "recorded_at": "2026-09-20",
+  "supersedes": "project-state/discovery/ordinary-queue-next-position-2026-09-20-post-ms4.json",
+  "method": "Queried current master-inventory pending-review rows after the completed Council Cruising Task Force decision, applied the durable completed-family and external-gate filter, and removed src-59a9ee7af1987815. Existing discovery classifications establish only that the remaining candidates belong to unresolved residual clusters; no next-family research or source-document fetch occurred.",
+  "sources": {
+    "source_inventory": "project-state/master-inventory.json",
+    "source_current": "project-state/CURRENT.md",
+    "source_checkpoint": "project-state/checkpoint.json",
+    "prior_queue": "project-state/discovery/ordinary-queue-next-position-2026-09-20-post-ms4.json",
+    "completed_family": "project-state/discovery/council-cruising-task-force-final-report-family-decision-2026-09-20.json",
+    "additional_classification": [
+      "project-state/discovery/undiscovered-documents-research-2026-09-14.json",
+      "project-state/discovery/undiscovered-documents-candidate-integration-2026-09-17.json",
+      "project-state/discovery/retained-source-audit-2026-09-12-b-summary.json",
+      "project-state/discovery/mrcog-documentcenter-cluster-research-2026-09-13.json"
+    ]
+  },
+  "counts": {
+    "pending_review_current": 1617,
+    "completed_or_gated_pending_covered": 1612,
+    "filtered_pending_review": 5,
+    "next_cluster_count": 2,
+    "residual_clusters": 3
+  },
+  "skipped_scopes": [
+    {"scope": "2014 MS4 annual-report body and 27 attachments", "count": 28, "artifact": "project-state/discovery/2014-ms4-family-package-gate-2026-09-18.json", "reason": "Separately externally gated; untouched."},
+    {"scope": "Later MS4 annual reports and permit instruments", "count": 8, "artifact": "project-state/discovery/later-ms4-annual-reports-and-permit-instruments-decision-2026-09-20.json", "reason": "Completed before the preceding queue handoff; no member remains pending review."},
+    {"scope": "Council Cruising Task Force final report", "count": 1, "artifact": "project-state/discovery/council-cruising-task-force-final-report-family-decision-2026-09-20.json", "reason": "Completed inventory-only in this decision; no member remains pending review."},
+    {"scope": "Other completed, excluded, and externally gated families", "count": 1612, "reason": "Covered by durable family decisions, terminal integrations, saved completed classifications, or explicit CURRENT.md/checkpoint gates; not resurfaced."}
+  ],
+  "residual_clusters": [
+    {"family": "Public service guides", "count": 2, "first_candidate_id": "src-6085ad664fa5ee86", "candidate_ids": ["src-6085ad664fa5ee86", "src-6f5bbd44fccbd086"], "basis": "Saved research identifies two separate guides with no completed family decision or proposed canonical page."},
+    {"family": "Form Based Zones final parts", "count": 2, "first_candidate_id": "src-77df51d4334f3749", "candidate_ids": ["src-77df51d4334f3749", "src-bdb71a8eaf8a29fa"], "basis": "Saved research identifies final Part A and Part C zoning-code components; no decision was made."},
+    {"family": "UNM 2040 strategic framework", "count": 1, "first_candidate_id": "src-e0624ecba79f3f17", "candidate_ids": ["src-e0624ecba79f3f17"], "basis": "Retained-source audit summary records this as a pending candidate; no decision was made."}
+  ],
+  "next_actionable_cluster": {
+    "family": "Public service guides",
+    "count": 2,
+    "first_candidate_id": "src-6085ad664fa5ee86",
+    "candidate_ids": ["src-6085ad664fa5ee86", "src-6f5bbd44fccbd086"],
+    "saved_research": "project-state/discovery/undiscovered-documents-research-2026-09-14.json",
+    "saved_finding": "Saved research identifies two separate guide records without a completed family decision or proposed canonical page.",
+    "selection_rule": "First residual pending candidate by deterministic candidate ID after excluding the separately gated 2014 MS4 package and all durable completed or externally gated scopes.",
+    "next_instruction": "Review this two-record saved-research family only when separately authorized; do not fetch or research it as part of this queue-position handoff."
+  },
+  "safeguards_observed": {"research_started": false, "source_downloads": false, "r2_mutation": false, "hugo_content_changed": false, "pull_request_created": false, "merge_or_deploy": false}
+}
