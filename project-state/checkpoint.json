@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-09-20T15:42:25.8506487Z",
+  "recorded_at": "2026-09-20T15:53:29.2410107Z",
   "completed_item_range": "Stages A-C complete; archive-preparation schema correction",
   "total_candidates": 7130,
   "counts_by_status": {
@@ -34,7 +34,7 @@
     "Seven newly identified enacted Council counterparts require deterministic final-file capture before inventory registration.",
     "Corrected DPM packet/archive gates remain externally gated."
   ],
-  "resume_command": "Preserve the prior fiber handoff src-09a90d2b97f9bd12; skip externally gated families and do not begin src-09b266eabc8aa975.",
+  "resume_command": "Skip all existing external gates and completed families. The next genuinely actionable ordinary candidate is src-09b266eabc8aa975 (2014 FGO agenda); scope its immediate meeting family and availability of approved minutes before deciding it. Do not begin it in this correction task.",
   "verification_campaign_totals": {
     "verified": 2194,
     "passed": 2070,
@@ -2712,6 +2712,103 @@
         "Corrected DPM packet/archive gates remain externally gated."
       ],
       "resume_command": "Skip externally gated families; do not begin src-09b266eabc8aa975.",
+      "verification_campaign_totals": {
+        "verified": 2194,
+        "passed": 2070,
+        "requires_human_review": 124
+      },
+      "durable_metadata": {
+        "dpm_annual_consolidation": {
+          "state": "corrected_local_packets_generated_upload_externally_gated",
+          "manifest": "project-state/discovery/dpm-executive-committee-consolidation-manifest-2026-09-17.json",
+          "component_count": 44,
+          "packets": [
+            {
+              "year": 2014,
+              "component_count": 5,
+              "page_count": 13,
+              "size_bytes": 284803,
+              "sha256": "e03ddf4a07f20a83b76b6f5ee8afdfda956a0713c68b3a71e3ae034be78c6656",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2014.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2014.pdf"
+            },
+            {
+              "year": 2015,
+              "component_count": 9,
+              "page_count": 17,
+              "size_bytes": 773060,
+              "sha256": "51457ec34cd80383e6ad92aa38f17da84101b0ad118a8d687e2db48dd468be26",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2015.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2015.pdf"
+            },
+            {
+              "year": 2016,
+              "component_count": 9,
+              "page_count": 19,
+              "size_bytes": 449277,
+              "sha256": "9cae8d9fc7fa3a8ea727309015b656749ab759c89a0b434b3689f9f008359ed9",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2016.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2016.pdf"
+            },
+            {
+              "year": 2017,
+              "component_count": 15,
+              "page_count": 32,
+              "size_bytes": 762787,
+              "sha256": "d41a926cc273886293d4669ae5cb989c442ed3a8fc5fc7cb9c88c869250241c2",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2017.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2017.pdf"
+            },
+            {
+              "year": 2018,
+              "component_count": 6,
+              "page_count": 10,
+              "size_bytes": 376588,
+              "sha256": "87b085020276d880d388a702c23819027b5b510a955f672d464069df0896273b",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2018.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2018.pdf"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "recorded_at": "2026-09-20T15:42:25.8506487Z",
+      "completed_item_range": "Stages A-C complete; archive-preparation schema correction",
+      "total_candidates": 7130,
+      "counts_by_status": {
+        "pending review": 1737,
+        "approved for addition": 66,
+        "downloading": 0,
+        "downloaded": 0,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 2,
+        "implemented": 159,
+        "validated": 1440,
+        "excluded": 1780,
+        "duplicate": 1513,
+        "superseded": 230,
+        "blocked": 0,
+        "requires human review": 203
+      },
+      "remaining_nonterminal": 1964,
+      "next_pending_id": "src-05ec421cb265b29a",
+      "blockers": [
+        "Capital Spending publication/build/archive gate remains externally gated.",
+        "2014 MS4 is a 28-record externally gated package; skip it.",
+        "Prescription Trails remains externally gated.",
+        "Code-enforcement Notices and Orders remain externally gated.",
+        "LGCC agenda family remains externally gated.",
+        "Approved NMDOT inventory-only families await R2/public-byte/placement work.",
+        "Two prepared Municipal Development standard-form agreements await R2/public-byte verification.",
+        "Privacy-sensitive fiber correspondence remains requires human review.",
+        "Unresolved PGS enactment-bill records remain requires human review.",
+        "O-23-96 and F/S R-24-17 final-disposition questions remain unresolved.",
+        "Seven newly identified enacted Council counterparts require deterministic final-file capture before inventory registration.",
+        "Corrected DPM packet/archive gates remain externally gated."
+      ],
+      "resume_command": "Preserve the prior fiber handoff src-09a90d2b97f9bd12; skip externally gated families and do not begin src-09b266eabc8aa975.",
       "verification_campaign_totals": {
         "verified": 2194,
         "passed": 2070,
