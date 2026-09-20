@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_queue_filtered_position",
+  "recorded_at": "2026-09-20",
+  "supersedes": "project-state/discovery/ordinary-queue-next-position-2026-09-20-recomputed.json",
+  "method": "Queried current master-inventory pending-review rows, applied the durable completed-family and external-gate filter, and removed the completed eight-record later-MS4 family. Existing discovery classifications were used only to establish that apparent lower-ID rows belong to completed or already scoped families; no next-family research or source-document fetch occurred.",
+  "sources": {
+    "source_inventory": "project-state/master-inventory.json",
+    "source_current": "project-state/CURRENT.md",
+    "source_checkpoint": "project-state/checkpoint.json",
+    "prior_queue": "project-state/discovery/ordinary-queue-next-position-2026-09-20-recomputed.json",
+    "completed_family": "project-state/discovery/later-ms4-annual-reports-and-permit-instruments-decision-2026-09-20.json",
+    "additional_classification": [
+      "project-state/discovery/undiscovered-documents-candidate-integration-2026-09-17.json",
+      "project-state/discovery/undiscovered-documents-research-2026-09-14.json",
+      "project-state/discovery/retained-source-audit-2026-09-12-b-summary.json",
+      "project-state/discovery/ordinary-queue-terminal-integration-batch-2026-09-19-municipaldevelopment-procurement.json",
+      "project-state/discovery/mrcog-documentcenter-cluster-research-2026-09-13.json"
+    ]
+  },
+  "counts": {
+    "pending_review_current": 1618,
+    "completed_or_gated_pending_covered": 1612,
+    "filtered_pending_review": 6,
+    "next_cluster_count": 1,
+    "residual_clusters": 4
+  },
+  "skipped_scopes": [
+    {"scope":"2014 MS4 annual-report body and 27 attachments","count":28,"artifact":"project-state/discovery/2014-ms4-family-package-gate-2026-09-18.json","reason":"Separately externally gated; untouched."},
+    {"scope":"Later MS4 annual reports and permit instruments","count":8,"artifact":"project-state/discovery/later-ms4-annual-reports-and-permit-instruments-decision-2026-09-20.json","reason":"Completed in the preceding family decision; no member remains pending review."},
+    {"scope":"Other completed, excluded, and externally gated families","count":1612,"reason":"Covered by durable family decisions, terminal integrations, saved completed classifications, or explicit CURRENT.md/checkpoint gates; not resurfaced."}
+  ],
+  "residual_clusters": [
+    {"family":"Council Cruising Task Force final report","count":1,"first_candidate_id":"src-59a9ee7af1987815","candidate_ids":["src-59a9ee7af1987815"],"basis":"Saved undiscovered-document integration identifies one substantive Council task-force report under Resolution R-17-250; no completed family decision covers it."},
+    {"family":"Public service guides","count":2,"candidate_ids":["src-6085ad664fa5ee86","src-6f5bbd44fccbd086"],"basis":"Saved research identifies two separate guides with no proposed canonical page; not selected before the lower-ID actionable cluster."},
+    {"family":"Form Based Zones final parts","count":2,"candidate_ids":["src-77df51d4334f3749","src-bdb71a8eaf8a29fa"],"basis":"Saved research identifies final Part A and Part C zoning-code components; not selected before the lower-ID actionable cluster."},
+    {"family":"UNM 2040 strategic framework","count":1,"candidate_ids":["src-e0624ecba79f3f17"],"basis":"Retained-source audit summary records this as a new pending candidate; no decision was made."}
+  ],
+  "next_actionable_cluster": {
+    "family": "Council Cruising Task Force final report",
+    "parent_url": "https://www.cabq.gov/council/documents/cruising-task-force-final-report_.pdf",
+    "count": 1,
+    "first_candidate_id": "src-59a9ee7af1987815",
+    "candidate_ids": ["src-59a9ee7af1987815"],
+    "saved_research": "project-state/discovery/undiscovered-documents-research-2026-09-14.json",
+    "saved_finding": "The saved research describes the City Council Cruising Task Force findings and recommendations produced under Resolution R-17-250; it records a measured 9,756,353-byte City PDF and proposed Transportation placement.",
+    "selection_rule": "First residual pending candidate by deterministic candidate ID after excluding the separately gated 2014 MS4 package, the completed later-MS4 family, and all other durable completed or externally gated scopes.",
+    "next_instruction": "Review this one-record saved-research family only when separately authorized; do not fetch or research it as part of this queue-position handoff."
+  },
+  "safeguards_observed": {"research_started": false,"source_downloads": false,"r2_mutation": false,"hugo_content_changed": false,"pull_request_created": false,"merge_or_deploy": false}
+}
