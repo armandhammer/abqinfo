@@ -30,7 +30,9 @@ The next ordinary family after the Municipal Development gates was the 23-record
 
 The two-record MRA Appeal Form delivery-alias family is resolved in `project-state/discovery/mra-appeal-form-family-decision-2026-09-19.json`: both City URLs serve the same one-page May 2015 transactional appeal intake form and are excluded. This is not a publication or archive candidate.
 
-After applying every existing gate and completed-family decision, `src-09592fba403c1e2f` (`shawns meeting notes otter ai.pdf`) is the next genuinely actionable ordinary candidate. Scope its immediate coherent Municipal Development document-library family before taking any decision; do not treat it as authorization to revisit the excluded Municipal Development procurement or gated standard-form work.
+The June 5, 2025 fiber-rulemaking hearing family is complete in `project-state/discovery/fiber-rulemaking-meeting-records-decision-2026-09-19.json`: final City regulations are approved inventory-only; the unreviewed Otter transcript and Zoom chat log are excluded; the 79 MB correspondence/complaints record remains requires human review for privacy-sensitive publication treatment. No archive or public-content work occurred.
+
+After applying every existing gate and completed-family decision, `src-09a0152fb526fcba` (June 17, 2024 O-24-13 Council amendment) is the next genuinely actionable ordinary candidate. Scope its amendment/document family before taking any decision; do not treat it as authorization to revisit excluded Municipal Development procurement, gated standard-form work, or the protected fiber correspondence record.
 
 ## External gates
 

@@ -34,7 +34,13 @@ for candidate_id in expected:
 assert any(note.startswith('Discovered by deterministic crawl') for note in records['src-090b501b1579de50']['processing_notes'])
 assert any(note.startswith('MRA Appeal Form family decision 2026-09-19:') for note in records['src-090b501b1579de50']['processing_notes'])
 assert decision['ordinary_queue_handoff']['next_actionable_candidate'] == 'src-09592fba403c1e2f'
-assert 'src-09592fba403c1e2f' in checkpoint['resume_command']
+# The MRA artifact keeps its historical handoff. CURRENT checkpoint state may
+# legitimately advance after that next family is completed.
+assert 'src-090b501b1579de50' not in checkpoint['resume_command']
 assert checkpoint['counts_by_status'] == inventory['counts']
-assert checkpoint['remaining_nonterminal'] == 2044
+assert checkpoint['remaining_nonterminal'] == sum(
+    row['status'] in {'pending review', 'approved for addition', 'downloaded', 'parsed', 'description drafted', 'placement assigned'}
+    or (row['status'] == 'implemented' and row['validation_status'] != 'passed')
+    for row in inventory['candidates']
+)
 print('PASS: MRA Appeal Form aliases remain bounded, excluded, provenance-preserving, and non-publication records.')
