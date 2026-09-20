@@ -17,11 +17,12 @@ ROOT = Path(__file__).resolve().parents[2]
 INVENTORY = ROOT / "project-state/master-inventory.json"
 ALLOWED_FIELDS = {
     "status", "title", "source_url", "direct_file_url", "description",
-    "document_date", "content_type", "sha256", "size_bytes",
-    "content_length", "validation_status", "exclusion_reason",
+    "date", "file_type", "checksum_sha256", "size_bytes",
+    "validation_status", "exclusion_reason",
     "processing_notes", "cited_successors", "implementation_locations",
     "cross_listing_approved",
 }
+FORBIDDEN_ALIASES = {"document_date", "content_type", "sha256", "content_length"}
 TERMINAL = {"excluded", "duplicate", "superseded", "requires human review"}
 
 
@@ -57,6 +58,9 @@ def main() -> None:
         unknown = set(update) - ALLOWED_FIELDS
         if unknown:
             raise ValueError(f"{candidate_id}: unsupported inventory fields: {sorted(unknown)}")
+        aliases = set(update) & FORBIDDEN_ALIASES
+        if aliases:
+            raise ValueError(f"{candidate_id}: noncanonical inventory fields: {sorted(aliases)}")
         status = update.get("status")
         if status not in inventory["allowed_statuses"]:
             raise ValueError(f"{candidate_id}: invalid status")
@@ -65,12 +69,14 @@ def main() -> None:
         if status in TERMINAL and not update.get("exclusion_reason"):
             raise ValueError(f"{candidate_id}: terminal decision needs exclusion_reason")
         if status == "approved for addition":
-            for field in ("sha256", "size_bytes", "content_type", "direct_file_url"):
+            for field in ("checksum_sha256", "size_bytes", "file_type", "direct_file_url"):
                 if not update.get(field):
                     raise ValueError(f"{candidate_id}: approved preparation lacks {field}")
         row = rows[candidate_id]
         for key, value in update.items():
             row[key] = value
+        for alias in FORBIDDEN_ALIASES:
+            row.pop(alias, None)
         if "description" in update:
             row["description_word_count"] = len((update["description"] or "").split())
         row["updated_at"] = now
