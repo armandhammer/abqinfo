@@ -23,6 +23,7 @@ if (Test-Path -LiteralPath 'project-state/discovery/nmdot-grant-administration-a
 }
 if (Test-Path -LiteralPath 'project-state/discovery/municipaldevelopment-standard-forms-archive-preparation-2026-09-19.json') {
   & python "$PSScriptRoot/Test-MunicipalDevelopmentStandardFormsArchivePreparation.py"
+  & python "$PSScriptRoot/Test-MunicipalDevelopmentAgendaMinutesArchivePreparation.py"
   if ($LASTEXITCODE) { throw 'Municipal Development standard-forms archive-preparation validation failed.' }
 }
 if (Test-Path -LiteralPath 'project-state/discovery/mra-appeal-form-family-decision-2026-09-19.json') {
