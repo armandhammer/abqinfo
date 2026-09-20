@@ -16,7 +16,7 @@ if ($retainedBlockers -notcontains $o2024006Blocker) { $retainedBlockers += $o20
 $deduplicated=[Collections.Generic.List[string]]::new()
 foreach ($blocker in $retainedBlockers) { if ($blocker -and -not $deduplicated.Contains([string]$blocker)) { $deduplicated.Add([string]$blocker) } }
 $checkpoint.blockers=@($deduplicated)
-$checkpoint.resume_command='Council closeout evidence is recorded. Skip externally gated MS4, Prescription Trails, code-enforcement, LGCC, completed/gated families, and begin the next actionable AEC agenda/minutes family at src-0a03811e298d7753 using saved research.'
+$checkpoint.resume_command='Council closeout and the 26-record Municipal Development agenda/minutes family are complete. Skip all listed gates and completed families; recompute the filtered ordinary queue before the next coherent-family review.'
 $temporaryPath=([IO.Path]::GetFullPath($CheckpointPath))+'.tmp-'+$PID
 try{[IO.File]::WriteAllText($temporaryPath,($checkpoint|ConvertTo-Json -Depth 30),[Text.UTF8Encoding]::new($false));Move-Item -LiteralPath $temporaryPath -Destination $CheckpointPath -Force}finally{if(Test-Path $temporaryPath){Remove-Item $temporaryPath -Force}}
 $checkpoint|Select-Object total_candidates,counts_by_status,remaining_nonterminal,next_pending_id,resume_command|ConvertTo-Json -Depth 5

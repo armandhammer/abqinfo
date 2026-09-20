@@ -10,7 +10,7 @@ This is the compact resume file for normal ABQInfo work. Workflow and context op
 
 ## Current state
 
-- Master inventory has 7,130 unique records; status aggregates and `next_pending_id` are generated. R2 contains 1,191 objects / 8,638,742,164 bytes; the 1,180-object live-R2 snapshot remains the immutable archive-reconciliation baseline.
+- Master inventory has 7,136 unique records; status aggregates and `next_pending_id` are generated. R2 contains 1,191 objects / 8,638,742,164 bytes; the 1,180-object live-R2 snapshot remains the immutable archive-reconciliation baseline.
 - Archive reconciliation is locally complete without live-R2 mutation. Corrected 2014-2018 DPM packets are local only and externally gated.
 - Capital Spending consolidation research is closed by `project-state/discovery/capital-spending-consolidation-closeout-status-2026-09-18.json`; future build, archive/public verification, page edit, merge, or deployment is separately externally gated.
 
@@ -33,6 +33,8 @@ The two-record MRA Appeal Form delivery-alias family is resolved in `project-sta
 The June 5, 2025 fiber-rulemaking hearing family is complete in `project-state/discovery/fiber-rulemaking-meeting-records-decision-2026-09-19.json`: final City regulations are approved inventory-only; the unreviewed Otter transcript and Zoom chat log are excluded; the 79 MB correspondence/complaints record remains requires human review for privacy-sensitive publication treatment. No archive or public-content work occurred.
 
 The Council closeout is recorded in `project-state/discovery/council-closeout-status-2026-09-20.json`. The meeting-agenda and 107-record reconciliations remain authoritative; the public-body matrix preserves the agenda/minutes evidence without inferring meeting occurrence, and LGCC remains untouched. Six enacted counterparts are inventory-only registered; O-2024-006 remains source-access blocked. O-23-96 and R-24-17 remain requires human review after bounded primary-source review. No R2 or public action occurred. After all gates and completed families are skipped, the next actionable ordinary family is the AEC agenda/minutes sequence beginning `src-0a03811e298d7753`.
+
+The 26-record Municipal Development agenda/minutes family is resolved in `project-state/discovery/municipaldevelopment-agenda-minutes-family-decision-2026-09-20.json`: 18 records are approved inventory-only (including eight verified orphan agendas with the required missing-minutes label), one duplicate is retained, and seven agendas are excluded where stronger minutes exist or are expected. No R2 or public action occurred. Recompute the filtered ordinary queue before starting the next family.
 
 The Council amendment-sheet family above supersedes the prior `src-09a0152fb526fcba` handoff; it is now terminally excluded and must not be reviewed independently.
 
