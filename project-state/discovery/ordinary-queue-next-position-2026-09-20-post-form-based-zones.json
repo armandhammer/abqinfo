@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_queue_filtered_position",
+  "recorded_at": "2026-09-20",
+  "supersedes": "project-state/discovery/ordinary-queue-next-position-2026-09-20-post-public-service-guides.json",
+  "method": "Queried the current master-inventory pending-review rows after applying the Form Based Zones final-parts decision, then retained the durable completed-family and external-gate filter from the superseded queue artifact and CURRENT.md. No UNM source fetch or research occurred.",
+  "sources": {
+    "source_inventory": "project-state/master-inventory.json",
+    "source_current": "project-state/CURRENT.md",
+    "source_checkpoint": "project-state/checkpoint.json",
+    "prior_queue": "project-state/discovery/ordinary-queue-next-position-2026-09-20-post-public-service-guides.json",
+    "completed_family": "project-state/discovery/form-based-zones-final-parts-family-decision-2026-09-20.json"
+  },
+  "counts": {
+    "pending_review_current": 1613,
+    "completed_or_gated_pending_covered": 1612,
+    "filtered_pending_review": 1,
+    "next_cluster_count": 1,
+    "residual_clusters": 1
+  },
+  "residual_clusters": [
+    {
+      "family": "UNM 2040 strategic framework",
+      "count": 1,
+      "first_candidate_id": "src-e0624ecba79f3f17",
+      "candidate_ids": [
+        "src-e0624ecba79f3f17"
+      ],
+      "basis": "Retained-source audit summary identifies this as the only remaining pending candidate outside durable completed and externally gated scopes; no decision has been made."
+    }
+  ],
+  "next_actionable_cluster": {
+    "family": "UNM 2040 strategic framework",
+    "count": 1,
+    "first_candidate_id": "src-e0624ecba79f3f17",
+    "candidate_ids": [
+      "src-e0624ecba79f3f17"
+    ],
+    "selection_rule": "Only residual pending candidate after applying durable completed-family, requires-human-review, and external-gate dispositions.",
+    "next_instruction": "Review only when separately tasked; do not fetch or research it as part of this queue-position handoff."
+  },
+  "safeguards_observed": {
+    "next_family_research_started": false,
+    "source_downloads_for_next_family": false,
+    "r2_mutation": false,
+    "hugo_content_changed": false,
+    "pull_request_created": false,
+    "merge_or_deploy": false
+  }
+}
