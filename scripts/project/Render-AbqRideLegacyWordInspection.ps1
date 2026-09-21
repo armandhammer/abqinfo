@@ -17,6 +17,11 @@ function Write-Utf8Json([object]$Value, [string]$Path) {
 $verification = Get-Content -Raw -Encoding UTF8 -LiteralPath $VerificationPath | ConvertFrom-Json
 $items = @($verification.results | Where-Object { $_.r2_key -like '*.doc' })
 if ($items.Count -ne 3 -or @($items | Where-Object source_byte_verification -ne 'passed').Count) { throw 'The three legacy Word originals must pass source-byte verification before rendering.' }
+$preflightById = @{}
+foreach ($preflight in @($verification.preflight)) {
+  if ($preflightById.ContainsKey([string]$preflight.id)) { throw "Duplicate preflight record: $($preflight.id)" }
+  $preflightById[[string]$preflight.id] = $preflight
+}
 New-Item -ItemType Directory -Force -Path $RenderDirectory | Out-Null
 $word = $null
 try {
@@ -24,14 +29,18 @@ try {
   $word.Visible = $false
   $word.DisplayAlerts = 0
   foreach ($item in $items) {
-    $pdfPath = Join-Path $RenderDirectory ([IO.Path]::ChangeExtension([IO.Path]::GetFileName($item.local_path), '.pdf'))
+    $preflight = $preflightById[[string]$item.id]
+    if ($null -eq $preflight -or [string]::IsNullOrWhiteSpace([string]$preflight.local_path)) { throw "Missing staged local_path in preflight evidence for $($item.id)." }
+    $sourcePath = [IO.Path]::GetFullPath([string]$preflight.local_path)
+    $pdfPath = Join-Path $RenderDirectory ([IO.Path]::ChangeExtension([IO.Path]::GetFileName($sourcePath), '.pdf'))
     $document = $null
     try {
-      $document = $word.Documents.Open([IO.Path]::GetFullPath($item.local_path), $false, $true)
+      $document = $word.Documents.Open($sourcePath, $false, $true)
       $document.ExportAsFixedFormat($pdfPath, 17)
       $pdf = Get-Item -LiteralPath $pdfPath
       $item | Add-Member -NotePropertyName visual_render_pdf_path -NotePropertyValue $pdf.FullName -Force
       $item | Add-Member -NotePropertyName visual_render_inspection -NotePropertyValue 'rendered_pending_human_visual_inspection' -Force
+      $item.failure = $null
     } finally {
       if ($document) { $document.Close(0) }
     }
