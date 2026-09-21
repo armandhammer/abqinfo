@@ -1,0 +1,91 @@
+{
+  "artifact_type": "single-candidate archive-first research and decision",
+  "reviewed_at": "2026-09-19",
+  "candidate_id": "src-06d0fc4cd0abdef6",
+  "local_ref": "und-033",
+  "authoritative_source_url": "https://www.cabq.gov/mayor/documents/2026-8-15-theory-of-change-final-pdf.pdf",
+  "source_validation_reused": {
+    "saved_research": "project-state/discovery/undiscovered-documents-research-2026-09-14.json",
+    "integration_metadata": "project-state/discovery/undiscovered-documents-candidate-integration-2026-09-17.json",
+    "size_bytes": 397194,
+    "sha256": "32f6a71aaa5413f464bda0d92d9793e69785d486b0f2f5f0c770535751584412",
+    "note": "The existing authoritative-source HTTP 200, PDF-signature, size, and SHA-256 evidence was retained. A temporary review fetch reproduced the saved size and SHA-256 solely to inspect the document; it did not change source-validation status."
+  },
+  "document_review": {
+    "document_identity": "A 15-page, approximately 9,091-extractable-word text of Mayor Tim Keller's third-term State of the City address, presented as a theory-of-change statement for Albuquerque.",
+    "title_as_printed": "Scarcity, Resilience and the Path to Abundance: A Theory of Change for the City at the Crossroads",
+    "date": "2026-08-15",
+    "date_evidence": "The official filename supplies 2026-8-15. The PDF metadata records creation and modification on 2026-08-20, consistent with a later file export; no competing event date is printed in the reviewed text.",
+    "author_and_issuer": "Mayor Tim Keller / City of Albuquerque Mayor's Office",
+    "form": "State of the City address and administration policy framework, not an adopted ordinance, resolution, implementation plan, City Council action, survey, or performance report.",
+    "scope": "Explains the address's scarcity-to-abundance framing and discusses administration priorities including public safety, government-service friction, housing, City land and facilities, childcare, family recreation, addiction response, and intergovernmental coordination.",
+    "visual_and_text_review": "The PDF has 15 numbered, text-led pages with repeated running title and third-term theory-of-change header. It is not a form, wrapper, fragment, or XFA placeholder; no embedded links were reported by extraction. Poppler was unavailable in this environment, so the visual finding is limited to page structure and PDF inspection rather than rendered-page screenshots."
+  },
+  "existing-holdings_comparison": {
+    "exact_hash_match": [],
+    "same_source_url_match": [],
+    "substantive_overlap": [
+      {
+        "records": [
+          "src-a9edf95587555344",
+          "src-d136988f67d3e648",
+          "src-e4691b2ec7a08601"
+        ],
+        "relationship": "The three retained Mayor-office citizen-perception surveys are evidence about resident views; this address is an administration-authored policy framing and is neither a duplicate nor a successor to them."
+      },
+      {
+        "records": [
+          "src-cd8f57c4c1140437",
+          "src-f920e1a97488d336",
+          "src-f9c6246de583e9da"
+        ],
+        "relationship": "The Albuquerque Progress Reports are indicator and scorecard records. This address refers broadly to community conditions but does not reproduce, replace, or update those reports."
+      }
+    ],
+    "conclusion": "No exact duplicate, delivery-wrapper relationship, explicit successor, or sufficiently overlapping retained site item was found."
+  },
+  "quality_assessment": {
+    "page_count": 15,
+    "extractable_word_count": 9091,
+    "standalone_public_value": "High as a dated primary record of the Mayor's stated third-term policy framework and municipal priorities.",
+    "information_density": "Substantive continuous address text with identified framing, policy themes, and future-facing commitments; not a skeletal summary or administrative scrap.",
+    "series_or_component_relationship": "A standalone address. It has no identified companion delivery wrapper, adopted action, or component family in the current inventory.",
+    "intended_publication_form": "One archived original record after a separate authorized R2 archival and public-byte-verification gate; no derivative compilation is proposed.",
+    "rationale": "The complete official address has durable documentary value independent of the unrelated City pages that surfaced its link."
+  },
+  "placement_review": {
+    "saved_proposal": "content/about/_index.md",
+    "decision": "Do not use the current About page as the canonical public placement.",
+    "reason": "That page describes ABQInfo itself, not City government or a Mayor's policy address. Placing this record there would blur the site's own description with an administration-authored document.",
+    "other_existing_page_reviewed": "content/city-data/city-progress-surveys.md",
+    "other_existing_page_result": "Not suitable as canonical placement: its retained series are City indicators, progress reports, and resident surveys rather than policy addresses.",
+    "future_publication_recommendation": "Hold the record inventory-approved and archive-gated until an explicitly approved City-government or municipal-policy page exists. Do not create a page, edit content, or infer a cross-listing during this task.",
+    "canonical_page_now": null,
+    "cross_listings_now": []
+  },
+  "recommended_metadata": {
+    "title": "Scarcity, Resilience and the Path to Abundance: A Theory of Change for the City at the Crossroads",
+    "date": "2026-08-15",
+    "description": "Presents Mayor Tim Keller's August 2026 State of the City address, framing an administration policy agenda around resilience, scarcity, public safety, government services, housing, public assets, family access, and intergovernmental action.",
+    "description_word_count": 31
+  },
+  "inventory_recommendation": {
+    "status": "approved for addition",
+    "reason": "A unique, complete, authoritative City policy-address record with standalone archival value. Approval concerns inventory retention only and does not authorize archive storage or public publication.",
+    "inventory_update": "Set the corrected title, date, description, quality assessment, no current canonical page, and an archive/publication gate through scripts/project/Update-Candidate.ps1.",
+    "next_gate": "Obtain separate authorization for R2 upload, verify the public archive copy by exact size and SHA-256, then obtain editorial approval for a topical City-government/policy placement before any site change."
+  },
+  "safeguards_observed": {
+    "no_r2_mutation": true,
+    "no_public_content_edit": true,
+    "no_implementation_or_validation_status": true,
+    "no_ms4_package_work": true,
+    "no_prescription_trails_work": true,
+    "no_capital_spending_publication_work": true,
+    "no_merge_or_deploy": true
+  },
+  "handoff": {
+    "next_actionable_candidate": "Do not begin a next candidate in this task. After the separate archive/publication gate is addressed or explicitly deferred, resume ordinary-queue triage from the saved queue after src-06d0fc4cd0abdef6, while continuing to skip the externally gated 2014 MS4 family and the Prescription Trails conflict.",
+    "issue_requiring_user_judgment": "Future public placement requires a City-government/municipal-policy information-architecture decision; there is no appropriate existing page."
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_queue_filtered_position",
+  "recorded_at": "2026-09-20",
+  "method": "Sort current master-inventory candidates by id, retain status=pending review, then remove every family recorded as completed, excluded, or externally gated in CURRENT.md and the existing completed discovery artifacts. Existing research scopes are selected deterministically from discovery filenames matching cluster-research, family-decision, ordinary-queue-terminal-integration, closeout-status, or decision-2026-09, excluding archive, R2, validation, plan, and manifest artifacts.",
+  "source_inventory": "project-state/master-inventory.json",
+  "source_current": "project-state/CURRENT.md",
+  "source_checkpoint": "project-state/checkpoint.json",
+  "completed_artifact_filter": {
+    "filename_regex": "(?i)(cluster-research|family-decision|ordinary-queue-terminal-integration|closeout-status|decision-2026-09)",
+    "excluded_filename_regex": "(?i)(archive|r2|validation|plan|manifest)",
+    "matched_file_count": 76,
+    "pending_candidates_covered": 1505
+  },
+  "counts": {
+    "pending_review_before_filter": 1645,
+    "completed_or_gated_pending": 1505,
+    "filtered_pending_review": 140,
+    "next_cluster_count": 19,
+    "aec_family_records": 23,
+    "aec_pending_records": 0,
+    "construction_documents_pending_records": 0
+  },
+  "skipped_families": [
+    {
+      "family": "2014 MS4 Annual Report",
+      "artifact": "project-state/discovery/2014-ms4-family-package-gate-2026-09-18.json",
+      "reason": "external gate"
+    },
+    {
+      "family": "Prescription Trails",
+      "reason": "external gate recorded in CURRENT.md"
+    },
+    {
+      "family": "LGCC and related Council-news family",
+      "artifact": "project-state/discovery/council-qa-lgcc-news-cluster-research-2026-09-13.json",
+      "reason": "external gate recorded in CURRENT.md"
+    },
+    {
+      "family": "Code-enforcement Notices and Orders",
+      "reason": "external gate recorded in CURRENT.md"
+    },
+    {
+      "family": "Municipal Development construction-documents",
+      "artifact": "project-state/discovery/construction-documents-cluster-research-2026-09-11.json",
+      "reason": "completed saved research; prior 18-record handoff was stale"
+    },
+    {
+      "family": "Albuquerque Energy Council agenda/minutes sequence",
+      "artifact": "project-state/discovery/municipaldevelopment-agenda-minutes-family-decision-2026-09-20.json",
+      "reason": "already decided and archive-prepared; all 23 AEC records are non-pending"
+    },
+    {
+      "family": "MRCOG DocumentCenter family",
+      "artifact": "project-state/discovery/mrcog-documentcenter-cluster-research-2026-09-13.json",
+      "reason": "completed saved research; not a new review family"
+    }
+  ],
+  "candidate_claim_check": {
+    "candidate_id": "src-0a03811e298d7753",
+    "title": "Albuquerque Energy Council Agenda, May 15, 2019 (approved minutes not located)",
+    "inventory_status": "approved for addition",
+    "ordinary_review_status": "not pending; do not resurface",
+    "family_scope_count": 23,
+    "family_pending_count": 0
+  },
+  "terminal_scope_checks": [
+    {
+      "family": "District 7 Find Your Councilor subtree",
+      "artifact": "project-state/discovery/district-7-find-your-councilor-family-decision-2026-09-20.json",
+      "scope_count": 30,
+      "pending_scope_count": 0,
+      "result": "not resurfaced"
+    },
+    {
+      "family": "AEC agenda/minutes sequence",
+      "artifact": "project-state/discovery/municipaldevelopment-agenda-minutes-family-decision-2026-09-20.json",
+      "scope_count": 23,
+      "pending_scope_count": 0,
+      "result": "not an ordinary-review candidate"
+    }
+  ],
+  "next_actionable_cluster": {
+    "family": "Planning documents-root residual",
+    "selection_rule": "First remaining pending family by source parent URL after all completed, excluded, and gated scopes above; members are not researched or reviewed by this artifact.",
+    "parent_url": "https://www.cabq.gov/planning/documents/",
+    "count": 19,
+    "first_candidate_id": "src-12776db138d35f11",
+    "first_candidate_title": "NextSteps-ContactInfo.pdf",
+    "candidate_ids": [
+      "src-12776db138d35f11",
+      "src-16b33375ffbddc62",
+      "src-1fa6ae851ddf282d",
+      "src-2379e7a8b1c51aca",
+      "src-40f04f71007ea537",
+      "src-513fe9056bf9b34c",
+      "src-7de0f5803d442e8f",
+      "src-8740362a1b751e26",
+      "src-99fe2201b73355c4",
+      "src-afac0cf84867a22f",
+      "src-b2e786436af22521",
+      "src-c54e59cd5c25282d",
+      "src-c87775c045d8acc4",
+      "src-d9bf34830a9467e2",
+      "src-e6ec0d7ea1527506",
+      "src-eb0f4b39798d29df",
+      "src-ec22ce0ade528517",
+      "src-f528ec2e0e955690",
+      "src-fb6e95610a43c7a4"
+    ]
+  },
+  "safeguards_observed": {
+    "research_started": false,
+    "source_downloads": false,
+    "r2_mutation": false,
+    "hugo_content_changed": false,
+    "pull_request_created": false,
+    "merge_or_deploy": false
+  }
+}

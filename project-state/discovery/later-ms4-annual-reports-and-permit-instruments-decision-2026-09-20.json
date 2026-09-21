@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_queue_family_decision",
+  "recorded_at": "2026-09-20",
+  "family": "Later MS4 annual reports and permit instruments",
+  "scope": {
+    "candidate_ids": ["src-185f33493177b085", "src-3408f5b9a86bcb5c", "src-5cdb4d5491c3a02d", "src-7c1a063b817989bd", "src-975528e01439f6df", "src-e531466aed7f5387", "src-eda3280085776f61", "src-fdc66c5b8de48584"],
+    "included_count": 8,
+    "excluded_scope": "The separately externally gated 2014 MS4 annual-report body and its 27 attachments (28 records) are not reviewed or changed by this decision."
+  },
+  "starting_evidence": {
+    "saved_research": "project-state/discovery/undiscovered-documents-research-2026-09-14.json",
+    "candidate_mapping": "project-state/discovery/undiscovered-documents-candidate-integration-2026-09-17.json",
+    "queue_handoff": "project-state/discovery/ordinary-queue-next-position-2026-09-20-recomputed.json",
+    "method": "Used the saved direct-City measurements, rendered/text-layer findings, and stated draft/final finding. Performed narrow 2026-09-20 HTTP HEAD verification only to determine current retrieval status; no broad source research, R2 action, or public-content action occurred."
+  },
+  "family_relationship": {
+    "permit": "EPA NPDES general permit NMR04A000 is the watershed-based instrument; City tracking number NMR04A014 is the City's coverage under it.",
+    "coverage_letter": "EPA's December 17, 2015 letter confirms the City's complete notice of intent and effective authorization under NMR04A000/NMR04A014. It provides provenance context, not a separate public record.",
+    "annual_series": "The retained reports are distinct complete annual compliance filings for FY2016, FY2017, FY2019, FY2020, and FY2021. No missing FY2018 filing is inferred.",
+    "draft_final": "The FY2021 draft and final each have 382 pages; saved rendered comparison found identical first-page images and a 134,830-byte file difference. The final is the canonical annual filing and the draft is superseded.",
+    "future_publication_form": "After separately authorized unchanged archival and public-byte verification, present the retained originals as one curated chronological MS4 compliance-report series on content/public-works/stormwater-drainage.md. The annual reports remain separately labelled original filings; the 2014 permit is a contextual historical permit record. Do not create a standalone listing for the authorization letter or an unsupported synthesized report."
+  },
+  "records": [
+    {
+      "id": "src-185f33493177b085",
+      "identity": "City of Albuquerque FY2021 MS4 Annual Report, draft, reporting period July 1, 2020 through June 30, 2021, NMR04A014.",
+      "disposition": "superseded",
+      "superseded_by": "src-e531466aed7f5387",
+      "source_verification": "HTTP 200 on 2026-09-20; application/pdf; 20,780,456 bytes, matching saved measurement.",
+      "quality_assessment": {"visual_inspection": "Saved research rendered page 1 and compared it to the final.", "measured_content": "382 pages; 20,780,456 bytes; SHA-256 f55ea8827bc785634b70ea4c89286d4194a3b648a33c996e9192193a2c568739.", "standalone_public_value": "Not retained as a separate public record because the final filing is available.", "information_density": "Substantive filing, but duplicative in publication purpose.", "series_component_relationship": "Draft version of the FY2021 annual filing.", "intended_publication_form": "No standalone publication; retain provenance only.", "rationale": "Saved primary-file comparison establishes a draft/final relationship; no contrary evidence was found."}
+    },
+    {
+      "id": "src-3408f5b9a86bcb5c",
+      "identity": "EPA Region 6 authorization/coverage letter to the City, December 17, 2015, NMR04A000 / NMR04A014.",
+      "disposition": "excluded",
+      "source_verification": "HTTP 200 on 2026-09-20; application/pdf; 33,429 bytes, matching saved measurement.",
+      "quality_assessment": {"visual_inspection": "Saved research rendered the no-text-layer EPA letter.", "measured_content": "33,429 bytes; a short authorization letter, with no saved page count.", "standalone_public_value": "Limited: it establishes coverage but does not independently explain the permit program or annual compliance results.", "information_density": "Thin administrative correspondence.", "series_component_relationship": "Context for the City's coverage under the general permit and its later annual reports.", "intended_publication_form": "No standalone public entry; cite as provenance within any future permit-series presentation if useful.", "rationale": "AGENTS.md bars isolated publication of thin administrative fragments; the substantive permit and reports preserve the public record."}
+    },
+    {
+      "id": "src-5cdb4d5491c3a02d",
+      "identity": "EPA Middle Rio Grande watershed-based MS4 general permit, NPDES No. NMR04A000, effective December 2014.",
+      "disposition": "approved for addition",
+      "source_verification": "HTTP 200 on 2026-09-20; application/pdf; 1,724,506 bytes, matching saved measurement.",
+      "quality_assessment": {"visual_inspection": "Saved research read the permit opening and identified the NPDES number and full title.", "measured_content": "1,724,506 bytes; SHA-256 c9e368ec12280953ac8c20b5ada86ee9fea5e468f2a3babdbf5994402e361aef.", "standalone_public_value": "High as the governing federal instrument that defines the obligations answered by this City compliance series.", "information_density": "Substantive regulatory instrument, not a thin administrative fragment.", "series_component_relationship": "Program-level permit for City coverage NMR04A014 and the retained annual reports.", "intended_publication_form": "Contextual historical permit record within the curated MS4 compliance series after archive verification.", "rationale": "The permit is necessary to interpret the reports and is distinct from the earlier 2005 Albuquerque permit already preserved."}
+    },
+    {
+      "id": "src-975528e01439f6df",
+      "identity": "City of Albuquerque signed and compiled FY2016 MS4 Annual Report, NMR04A014, compiled November 21, 2016.",
+      "disposition": "approved for addition",
+      "source_verification": "Saved City measurement is 10,027,499 bytes with SHA-256 e5b5713e32de6cb04119a11d5f4e2ef6183a81ddfda73b46dc56bad9e1be982e; its legacy City URL returned HTTP 404 on 2026-09-20 and no direct host-migration variant was inferred.",
+      "quality_assessment": {"visual_inspection": "Saved research read the report-form first page.", "measured_content": "10,027,499 bytes; signed and compiled MS4 annual-report form; saved research did not record a page count.", "standalone_public_value": "High as a complete annual compliance filing for a distinct reporting year.", "information_density": "Substantive annual filing, not a fragment.", "series_component_relationship": "Earliest retained annual report in this later series; it does not replace or complete the gated 2014 package.", "intended_publication_form": "Chronological original within the future curated MS4 compliance-report series, contingent on a future authoritative-source recovery and archive verification.", "rationale": "The durable saved identity and measurement support inventory retention; present source unavailability blocks only future archival action."}
+    },
+    {
+      "id": "src-fdc66c5b8de48584",
+      "identity": "City of Albuquerque FY2017 MS4 Annual Report, reporting period July 1, 2016 through June 30, 2017, NMR04A014.",
+      "disposition": "approved for addition",
+      "source_verification": "HTTP 200 on 2026-09-20; application/pdf; 138,084,248 bytes, matching saved measurement.",
+      "quality_assessment": {"visual_inspection": "Saved research read the text layer from page 7 after six imaged opening pages.", "measured_content": "138,084,248 bytes; reporting-period text confirms FY2017; SHA-256 31cbc0412f4d655d9ff0f576383de02f23bc0529ddf5515eb9d8f1f50c922b01.", "standalone_public_value": "High as a complete annual compliance filing for a distinct reporting year.", "information_density": "Large substantive annual filing.", "series_component_relationship": "Chronological successor to FY2016 and predecessor to FY2019; no missing year is inferred.", "intended_publication_form": "Chronological original within the future curated MS4 compliance-report series after archive verification.", "rationale": "Its distinct annual evidence cannot be substituted by another year's report."}
+    },
+    {
+      "id": "src-7c1a063b817989bd",
+      "identity": "City of Albuquerque FY2019 MS4 Annual Report, reporting period July 1, 2018 through June 30, 2019, NMR04A014.",
+      "disposition": "approved for addition",
+      "source_verification": "HTTP 200 on 2026-09-20; application/pdf; 122,657,409 bytes, matching saved measurement.",
+      "quality_assessment": {"visual_inspection": "Saved research read the text layer from page 7 after six imaged opening pages.", "measured_content": "122,657,409 bytes; reporting-period text confirms FY2019; SHA-256 b7d7008a39c470edc04c08a966bd4322d14cbedea96630daa898cc1382e71f3a.", "standalone_public_value": "High as a complete annual compliance filing for a distinct reporting year.", "information_density": "Large substantive annual filing.", "series_component_relationship": "Chronological successor to FY2017 and predecessor to FY2020; the saved family contains no FY2018 report.", "intended_publication_form": "Chronological original within the future curated MS4 compliance-report series after archive verification.", "rationale": "Its year-specific compliance evidence is not duplicated by adjacent reports."}
+    },
+    {
+      "id": "src-eda3280085776f61",
+      "identity": "City of Albuquerque final FY2020 MS4 Annual Report, reporting period July 1, 2019 through June 30, 2020, NMR04A014.",
+      "disposition": "approved for addition",
+      "source_verification": "The saved URL now returns HTTP 404, but the direct documents.cabq.gov lowercase-nmr04a014 migration variant returned HTTP 200 on 2026-09-20 with 133,787,450 bytes, matching the saved measurement.",
+      "quality_assessment": {"visual_inspection": "Saved research read the text layer from page 7 after six imaged opening pages.", "measured_content": "133,787,450 bytes; reporting-period text confirms FY2020; SHA-256 0b5a84bb81f5615feba687924c785b1a94528d4028b6630b43670eda8c65506b.", "standalone_public_value": "High as a complete annual compliance filing for a distinct reporting year.", "information_density": "Large substantive annual filing.", "series_component_relationship": "Chronological successor to FY2019 and predecessor to the FY2021 final.", "intended_publication_form": "Chronological original within the future curated MS4 compliance-report series after archive verification.", "rationale": "Direct migration verification preserves a current authoritative path without altering the saved hash evidence."}
+    },
+    {
+      "id": "src-e531466aed7f5387",
+      "identity": "City of Albuquerque final FY2021 MS4 Annual Report, reporting period July 1, 2020 through June 30, 2021, NMR04A014.",
+      "disposition": "approved for addition",
+      "source_verification": "HTTP 200 on 2026-09-20; application/pdf; 20,645,626 bytes, matching saved measurement.",
+      "quality_assessment": {"visual_inspection": "Saved research rendered the imaged first page and identified the EPA form, reporting period, population served, and listed impairments.", "measured_content": "382 pages; 20,645,626 bytes; SHA-256 ac139129ef0e412e94970ec4725eebf6c1adcda5343a0f24ed14d3dc86174ce4.", "standalone_public_value": "High as the final complete annual compliance filing for a distinct reporting year.", "information_density": "Substantive 382-page annual filing.", "series_component_relationship": "Canonical FY2021 report; supersedes the same-year draft src-185f33493177b085.", "intended_publication_form": "Chronological original within the future curated MS4 compliance-report series after archive verification.", "rationale": "The final is the authoritative completion of the FY2021 draft/final pair."}
+    }
+  ],
+  "archive_publication_gates": ["No R2 mutation occurred or is authorized by this decision.", "No Hugo, PR, merge, deployment, or public-content action occurred.", "Before any future visible listing, archive the selected unchanged originals, verify public size and SHA-256, retain official-source provenance, and resolve the FY2016 source-recovery blocker.", "Do not treat approval as archive or publication approval."],
+  "queue_follow_up": "All eight records have durable dispositions. Recompute the ordinary queue before selecting another family; do not begin that research in this task.",
+  "safeguards_observed": {"r2_mutation": false, "public_content_changed": false, "pull_request_created": false, "merge_or_deploy": false}
+}

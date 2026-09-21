@@ -9,8 +9,31 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 & "$PSScriptRoot/Test-MasterInventory.ps1" -InventoryPath $InventoryPath
 if (-not $?) { throw 'Master inventory validation failed.' }
+& "$PSScriptRoot/Test-UpdateCouncilCloseoutCheckpoint.ps1"
+if (-not $?) { throw 'Council checkpoint idempotency validation failed.' }
 & "$PSScriptRoot/Test-ProjectStateRegeneration.ps1" -MasterPath $InventoryPath
 if (-not $?) { throw 'Project-state regeneration validation failed.' }
+& "$PSScriptRoot/Test-PullRequestDescriptionRegression.ps1"
+if (-not $?) { throw 'Pull-request description regression failed.' }
+& python "$PSScriptRoot/Test-ApplySavedTerminalResearch.py"
+if ($LASTEXITCODE) { throw 'Saved terminal research regression failed.' }
+if (Test-Path -LiteralPath 'project-state/discovery/nmdot-grant-administration-and-application-decision-2026-09-19.json') {
+  & python "$PSScriptRoot/Test-NmdotGrantAdministrationDecision.py"
+  if ($LASTEXITCODE) { throw 'NMDOT grant-administration decision validation failed.' }
+}
+if (Test-Path -LiteralPath 'project-state/discovery/municipaldevelopment-standard-forms-archive-preparation-2026-09-19.json') {
+  & python "$PSScriptRoot/Test-MunicipalDevelopmentStandardFormsArchivePreparation.py"
+  & python "$PSScriptRoot/Test-MunicipalDevelopmentAgendaMinutesArchivePreparation.py"
+  if ($LASTEXITCODE) { throw 'Municipal Development standard-forms archive-preparation validation failed.' }
+}
+if (Test-Path -LiteralPath 'project-state/discovery/mra-appeal-form-family-decision-2026-09-19.json') {
+  & python "$PSScriptRoot/Test-MraAppealFormFamilyDecision.py"
+  if ($LASTEXITCODE) { throw 'MRA Appeal Form family-decision validation failed.' }
+}
+if (Test-Path -LiteralPath 'project-state/discovery/fiber-rulemaking-meeting-records-decision-2026-09-19.json') {
+  & python "$PSScriptRoot/Test-FiberRulemakingMeetingRecordsDecision.py"
+  if ($LASTEXITCODE) { throw 'Fiber rulemaking meeting-records decision validation failed.' }
+}
 if (Test-Path -LiteralPath 'project-state/discovery/2014-ms4-package-decision-2026-09-18.json') {
   & "$PSScriptRoot/Test-2014Ms4PackageDecision.ps1"
   if (-not $?) { throw '2014 MS4 package-decision validation failed.' }
@@ -38,6 +61,14 @@ if (Test-Path -LiteralPath 'project-state/discovery/energy-water-public-faciliti
 if (Test-Path -LiteralPath 'project-state/discovery/2011-2023-energy-water-public-facilities-system-modernization-cycle-scopes-decision-2026-09-18.json') {
   & python "$PSScriptRoot/Test-EnergyWaterCycleScopeDecision.py"
   if ($LASTEXITCODE) { throw 'Energy/Water six-cycle scope decision validation failed.' }
+}
+if (Test-Path -LiteralPath 'project-state/discovery/capital-spending-consolidation-closeout-status-2026-09-18.json') {
+  & python "$PSScriptRoot/Test-CapitalSpendingConsolidationCloseout.py"
+  if ($LASTEXITCODE) { throw 'Capital Spending consolidation closeout validation failed.' }
+}
+Get-ChildItem -LiteralPath 'project-state/discovery' -Filter 'ordinary-queue-terminal-integration-batch*.json' | ForEach-Object {
+  & python "$PSScriptRoot/Test-OrdinaryQueueTerminalIntegrationBatch.py" --artifact ([IO.Path]::GetRelativePath((Get-Location).Path, $_.FullName).Replace('\','/'))
+  if ($LASTEXITCODE) { throw "Ordinary-queue terminal integration validation failed for $($_.Name)." }
 }
 & "$PSScriptRoot/Test-ContentStyle.ps1"
 

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_queue_filtered_closeout",
+  "recorded_at": "2026-09-20",
+  "supersedes": "project-state/discovery/ordinary-queue-next-position-2026-09-20-post-form-based-zones.json",
+  "method": "After applying the UNM 2040 one-record terminal decision, queried the current master inventory pending-review rows and applied the same durable completed-family, requires-human-review, and external-gate filter used by the superseded filtered queue.",
+  "sources": {
+    "source_inventory": "project-state/master-inventory.json",
+    "source_current": "project-state/CURRENT.md",
+    "source_checkpoint": "project-state/checkpoint.json",
+    "prior_queue": "project-state/discovery/ordinary-queue-next-position-2026-09-20-post-form-based-zones.json",
+    "completed_record_decision": "project-state/discovery/unm-2040-strategic-framework-decision-2026-09-20.json"
+  },
+  "counts": {
+    "pending_review_current": 1612,
+    "completed_or_gated_pending_covered": 1612,
+    "filtered_pending_review": 0,
+    "residual_clusters": 0
+  },
+  "ordinary_review_queue_exhausted": true,
+  "residual_clusters": [],
+  "next_actionable_cluster": null,
+  "next_logical_project_work_category": {
+    "category": "Separately authorized archive preparation/upload and public-byte verification for already approved inventory-only records",
+    "recommended_start": "Municipal Development standard-form agreements already prepared for their explicitly authorized archive stage, or another user-selected durable archive gate.",
+    "authorization_boundary": "Do not start this category without explicit current authorization for the relevant external archive action."
+  },
+  "safeguards_observed": {
+    "r2_mutation": false,
+    "hugo_content_changed": false,
+    "pull_request_created": false,
+    "merge_or_deploy": false
+  }
+}

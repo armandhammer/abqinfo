@@ -1,0 +1,621 @@
+{
+  "schema_version": 1,
+  "artifact_type": "archive_first_publication_preparation",
+  "recorded_at": "2026-09-20",
+  "source_research": "project-state/discovery/transit-openspace-nmdot-sustainability-cluster-research-2026-09-13.json",
+  "scope_candidate_ids": [
+    "src-cd76ed2642c5bc5b",
+    "src-e42bbc888a2b6931",
+    "src-6220c942e21cbc67",
+    "src-bd98a6f5ef11e68b",
+    "src-f0b725eecf05a992",
+    "src-62ebf9197c3727ba",
+    "src-bd33f9a55aae6b71",
+    "src-3f7f0d0579ad62c0",
+    "src-ee0aec5b78f6ec86",
+    "src-54391dbd27e5d212",
+    "src-4092005fa5d61b38",
+    "src-e28e38dabfbdb2e2",
+    "src-2dbbf587fead4146",
+    "src-12207bd87008378c"
+  ],
+  "verification_method": "On 2026-09-20 the official Plone @@download/file endpoints reproduced every saved size, SHA-256, and container signature. The human-facing /view URLs returned anti-bot HTML to this environment, so they are retained as provenance URLs but not treated as file bytes. R2 accounting was read only; no proposed key exists in project-state/r2-inventory.json.",
+  "family_decisions": {
+    "para_transit_minutes": "Retain the three official minutes as a chronological Para-Transit Advisory Board record group on ABQ RIDE. They are actual minutes, not agendas; a current City search also demonstrates the board series continued. Preserve the OLE2 originals unchanged. The group is intentionally limited to the three recovered historical minutes; no fourth original was fabricated from the zero-byte City response.",
+    "paseo_del_bosque": "Do not retain either item. The 2006 one-page map is low-context historical wayfinding and is eclipsed for public use by the validated 2020 full City guide. The purported guide is actually a one-page 2011 Tingley Beach public-art walking-tour PDF, not a Paseo del Bosque guide. Neither is a byte duplicate, so both are excluded rather than labelled duplicate or superseded.",
+    "city_service_programmes": "Do not retain the three one-off service/programme items as static archive records. The Electrified Dealer overview is a one-page 2021 promotional handout while the live City programme page carries current information; the Convention Center directions are transient trip directions; and the Honored Citizen document is a transactional ID-card application form.",
+    "montano_station": "Retain all six as one Montano Rail Runner Station project family, canonically under an ABQ RIDE Montano Station subsection. The traffic assessment is also useful on Roadway Studies, but the project family—not a generic studies page—is canonical. Present the two construction-plan packages as grouped design documentation, not equivalent standalone history entries. The EA remains explicitly DRAFT and the 46-sheet set explicitly 65% SUBMITTAL; Part II is a separately served 13-sheet companion, not a claimed final or synthetic combined plan set."
+  },
+  "records": [
+    {
+      "id": "src-6220c942e21cbc67",
+      "title": "Para-Transit Advisory Board minutes, 6 May 2009",
+      "disposition": "approved for addition",
+      "source_evidence": {
+        "provenance_url": "https://www.cabq.gov/transit/documents/minutes_5.6.09.doc/view",
+        "verified_download_url": "https://www.cabq.gov/transit/documents/minutes_5.6.09.doc/@@download/file/minutes_5.6.09.doc",
+        "container": "OLE2",
+        "leading_bytes": "d0cf11e0",
+        "size_bytes": 34816,
+        "sha256": "ed194f2a3a059ab245ecdb9b8be25d543681f15881953be9210f20d09c2744c7",
+        "extent": "34,816-byte legacy Word original; saved research read the OLE2 minutes with antiword."
+      },
+      "quality_assessment": {
+        "visual_inspection": "The original OLE2 container was reverified; current local tools cannot render legacy Word visually, so no PDF-like visual claim is made. Saved source review read it as board minutes; a future archive stage must preserve the original rather than convert it.",
+        "measured_content": "34,816 bytes, OLE2, exact SHA-256 above; dated 6 May 2009 and a substantive meeting-minutes record rather than an agenda.",
+        "standalone_public_value": "Moderate as one dated component of a scarce official paratransit-board historical series.",
+        "information_density": "Meeting-minutes content; not subject to the sparse-form rule.",
+        "series_component_relationship": "Earliest of the three recovered 2009-10 Para-Transit Advisory Board minutes; retain as an ordered group, not a synthetic compilation.",
+        "intended_publication_form": "One chronological entry within an ABQ RIDE Para-Transit Advisory Board minutes subsection after authorized archival.",
+        "rationale": "Official minutes document board deliberation and decisions; the original-container and no-synthesis safeguards preserve their historical character."
+      },
+      "archive_preparation": {
+        "proposed_filename": "cabq-para-transit-advisory-board-minutes-2009-05-06.doc",
+        "proposed_r2_key": "transportation/transit/abq-ride/cabq-para-transit-advisory-board-minutes-2009-05-06.doc",
+        "collision_check": "No matching current R2 key or saved byte collision.",
+        "canonical_page": "content/transportation/transit/abq-ride.md",
+        "section": "Para-Transit Advisory Board minutes",
+        "cross_listing": "none",
+        "remaining_gates": [
+          "authorized R2 upload",
+          "exact public-byte verification",
+          "legacy Word visual render check before any page edit",
+          "future public-content authorization"
+        ]
+      },
+      "r2_action": "none",
+      "inventory_update": {
+        "status": "approved for addition",
+        "title": "Para-Transit Advisory Board minutes, 6 May 2009",
+        "direct_file_url": "https://www.cabq.gov/transit/documents/minutes_5.6.09.doc/@@download/file/minutes_5.6.09.doc",
+        "description": "Official minutes of the Para-Transit Advisory Board meeting of 6 May 2009.",
+        "size_bytes": 34816,
+        "validation_status": "archive preparation complete; exact City original reverified; R2 and public-byte verification remain external gates",
+        "exclusion_reason": null,
+        "date": "2009-05-06",
+        "file_type": "application/msword",
+        "checksum_sha256": "ed194f2a3a059ab245ecdb9b8be25d543681f15881953be9210f20d09c2744c7"
+      }
+    },
+    {
+      "id": "src-cd76ed2642c5bc5b",
+      "title": "Para-Transit Advisory Board minutes, 9 September 2009",
+      "disposition": "approved for addition",
+      "source_evidence": {
+        "provenance_url": "https://www.cabq.gov/transit/documents/Minutes%209.9.09.doc/view",
+        "verified_download_url": "https://www.cabq.gov/transit/documents/Minutes%209.9.09.doc/@@download/file/Minutes%209.9.09.doc",
+        "container": "OLE2",
+        "leading_bytes": "d0cf11e0",
+        "size_bytes": 43008,
+        "sha256": "f573f941301cad76626c8680526b8a8649a7dd34743421f9b9fcd0162a92dfc6",
+        "extent": "43,008-byte legacy Word original; saved research read the OLE2 minutes with antiword."
+      },
+      "quality_assessment": {
+        "visual_inspection": "OLE2 original reverified; current local tools cannot visually render it, and the future archive check must inspect the unchanged original rather than a conversion.",
+        "measured_content": "43,008 bytes, OLE2, exact SHA-256 above; dated 9 September 2009 and identified in saved source review as official minutes.",
+        "standalone_public_value": "Moderate within the official board-record series.",
+        "information_density": "Meeting-minutes content, not a sparse form or notice.",
+        "series_component_relationship": "Middle recovered record in the ordered 2009-10 Para-Transit Advisory Board minutes group.",
+        "intended_publication_form": "Chronological ABQ RIDE group entry after archival.",
+        "rationale": "Preserves scarce official historical minutes without implying an unbroken series."
+      },
+      "archive_preparation": {
+        "proposed_filename": "cabq-para-transit-advisory-board-minutes-2009-09-09.doc",
+        "proposed_r2_key": "transportation/transit/abq-ride/cabq-para-transit-advisory-board-minutes-2009-09-09.doc",
+        "collision_check": "No matching current R2 key or saved byte collision.",
+        "canonical_page": "content/transportation/transit/abq-ride.md",
+        "section": "Para-Transit Advisory Board minutes",
+        "cross_listing": "none",
+        "remaining_gates": [
+          "authorized R2 upload",
+          "exact public-byte verification",
+          "legacy Word visual render check",
+          "future public-content authorization"
+        ]
+      },
+      "r2_action": "none",
+      "inventory_update": {
+        "status": "approved for addition",
+        "title": "Para-Transit Advisory Board minutes, 9 September 2009",
+        "direct_file_url": "https://www.cabq.gov/transit/documents/Minutes%209.9.09.doc/@@download/file/Minutes%209.9.09.doc",
+        "description": "Official minutes of the Para-Transit Advisory Board meeting of 9 September 2009.",
+        "size_bytes": 43008,
+        "validation_status": "archive preparation complete; exact City original reverified; R2 and public-byte verification remain external gates",
+        "exclusion_reason": null,
+        "date": "2009-09-09",
+        "file_type": "application/msword",
+        "checksum_sha256": "f573f941301cad76626c8680526b8a8649a7dd34743421f9b9fcd0162a92dfc6"
+      }
+    },
+    {
+      "id": "src-e42bbc888a2b6931",
+      "title": "Para-Transit Advisory Board minutes, 9 February 2010",
+      "disposition": "approved for addition",
+      "source_evidence": {
+        "provenance_url": "https://www.cabq.gov/transit/documents/minutes_2.9.10.doc/view",
+        "verified_download_url": "https://www.cabq.gov/transit/documents/minutes_2.9.10.doc/@@download/file/minutes_2.9.10.doc",
+        "container": "OLE2",
+        "leading_bytes": "d0cf11e0",
+        "size_bytes": 42496,
+        "sha256": "4e016dc0eb50da9dba34f1f315484d90b99fe087e41045bc2d051c639a4123ad",
+        "extent": "42,496-byte legacy Word original; saved research read the OLE2 minutes with antiword."
+      },
+      "quality_assessment": {
+        "visual_inspection": "OLE2 original reverified; visual rendering remains an archive-stage gate and no conversion is authorized.",
+        "measured_content": "42,496 bytes, OLE2, exact SHA-256 above; dated 9 February 2010 and identified in saved source review as official minutes.",
+        "standalone_public_value": "Moderate within the official board-record series.",
+        "information_density": "Meeting-minutes content, not a sparse form or notice.",
+        "series_component_relationship": "Latest recovered record in the ordered 2009-10 Para-Transit Advisory Board minutes group.",
+        "intended_publication_form": "Chronological ABQ RIDE group entry after archival.",
+        "rationale": "Its official meeting record adds genuine historical continuity while remaining correctly framed as a partial recovered series."
+      },
+      "archive_preparation": {
+        "proposed_filename": "cabq-para-transit-advisory-board-minutes-2010-02-09.doc",
+        "proposed_r2_key": "transportation/transit/abq-ride/cabq-para-transit-advisory-board-minutes-2010-02-09.doc",
+        "collision_check": "No matching current R2 key or saved byte collision.",
+        "canonical_page": "content/transportation/transit/abq-ride.md",
+        "section": "Para-Transit Advisory Board minutes",
+        "cross_listing": "none",
+        "remaining_gates": [
+          "authorized R2 upload",
+          "exact public-byte verification",
+          "legacy Word visual render check",
+          "future public-content authorization"
+        ]
+      },
+      "r2_action": "none",
+      "inventory_update": {
+        "status": "approved for addition",
+        "title": "Para-Transit Advisory Board minutes, 9 February 2010",
+        "direct_file_url": "https://www.cabq.gov/transit/documents/minutes_2.9.10.doc/@@download/file/minutes_2.9.10.doc",
+        "description": "Official minutes of the Para-Transit Advisory Board meeting of 9 February 2010.",
+        "size_bytes": 42496,
+        "validation_status": "archive preparation complete; exact City original reverified; R2 and public-byte verification remain external gates",
+        "exclusion_reason": null,
+        "date": "2010-02-09",
+        "file_type": "application/msword",
+        "checksum_sha256": "4e016dc0eb50da9dba34f1f315484d90b99fe087e41045bc2d051c639a4123ad"
+      }
+    },
+    {
+      "id": "src-bd98a6f5ef11e68b",
+      "title": "Paseo del Bosque Trail map (2006)",
+      "disposition": "excluded",
+      "source_evidence": {
+        "provenance_url": "https://www.cabq.gov/parksandrecreation/open-space/lands/paseo-del-bosque-trail/resolveuid/76d9358e601ecc52e4eaabe06f3c1e7c",
+        "container": "PDF",
+        "size_bytes": 662396,
+        "sha256": "cd96d3c15144456e9fcaecf85ea6f8814349ed2b12eb62680cd92d0a16c29997",
+        "extent": "one-page map; PDF metadata creation date 2006-09-27."
+      },
+      "decision_rationale": "A low-context 2006 map is not a sufficiently distinct historical record for a separate entry when the validated 2020 full City guide remains the useful current/historical reference. This is not a byte duplicate or a claim that the old map is an identical version.",
+      "r2_action": "none",
+      "inventory_update": {
+        "status": "excluded",
+        "title": "Paseo del Bosque Trail map (2006)",
+        "direct_file_url": "https://www.cabq.gov/parksandrecreation/open-space/lands/paseo-del-bosque-trail/resolveuid/76d9358e601ecc52e4eaabe06f3c1e7c",
+        "description": "One-page 2006 City trail map reviewed against the validated 2020 full guide.",
+        "size_bytes": 662396,
+        "validation_status": "terminal archive-preparation decision: excluded; source bytes reverified",
+        "exclusion_reason": "One-page 2006 wayfinding map lacks enough standalone historical context for a separate public record; the validated 2020 City full guide is the stronger reference. Not a byte-duplicate claim.",
+        "date": "2006-09-27",
+        "file_type": "application/pdf",
+        "checksum_sha256": "cd96d3c15144456e9fcaecf85ea6f8814349ed2b12eb62680cd92d0a16c29997"
+      }
+    },
+    {
+      "id": "src-f0b725eecf05a992",
+      "title": "Tingley Beach public-art walking tour (2011)",
+      "disposition": "excluded",
+      "source_evidence": {
+        "provenance_url": "https://www.cabq.gov/parksandrecreation/open-space/lands/paseo-del-bosque-trail/resolveuid/9b88dc6138bcbe4050e5ea0bf8f2e311",
+        "container": "PDF",
+        "size_bytes": 14632675,
+        "sha256": "ba9de95298f9312818acdd435981f0ba763f60cf6c6b822427e5d8929fa74dfd",
+        "extent": "one landscape page; PDF XMP names Tingley Beach and was modified 2011-01-20."
+      },
+      "decision_rationale": "The candidate title was misleading: the source is a one-page Tingley Beach public-art walking tour, not a Paseo del Bosque guide. It has no demonstrated fit or standalone public value within the scoped pages.",
+      "r2_action": "none",
+      "inventory_update": {
+        "status": "excluded",
+        "title": "Tingley Beach public-art walking tour (2011)",
+        "direct_file_url": "https://www.cabq.gov/parksandrecreation/open-space/lands/paseo-del-bosque-trail/resolveuid/9b88dc6138bcbe4050e5ea0bf8f2e311",
+        "description": "One-page 2011 City Tingley Beach public-art walking tour; not a Paseo del Bosque trail guide.",
+        "size_bytes": 14632675,
+        "validation_status": "terminal archive-preparation decision: excluded; source bytes reverified",
+        "exclusion_reason": "Misclassified one-page Tingley Beach public-art walking tour, not a Paseo del Bosque guide; no demonstrated canonical page or sufficient standalone archival value.",
+        "date": "2011-01-20",
+        "file_type": "application/pdf",
+        "checksum_sha256": "ba9de95298f9312818acdd435981f0ba763f60cf6c6b822427e5d8929fa74dfd"
+      }
+    },
+    {
+      "id": "src-62ebf9197c3727ba",
+      "title": "Electrified Dealer Program overview (2021)",
+      "disposition": "excluded",
+      "source_evidence": {
+        "provenance_url": "https://www.cabq.gov/sustainability/transportation/transportation-resources/resolveuid/6996f3fbf6d34ba0a6fb55e0e3efdcba",
+        "container": "PDF",
+        "size_bytes": 3594029,
+        "sha256": "2277f65eb34a724be2b06c344f2ad306418272beb22e9eb650f9748c75f0eeb4",
+        "extent": "one-page PDF created 2021-03-09."
+      },
+      "decision_rationale": "The current City Transportation Resources page carries the programme's current dealer information. This one-page promotional overview falls below the limited-content threshold and has no separately established historical context.",
+      "r2_action": "none",
+      "inventory_update": {
+        "status": "excluded",
+        "title": "Electrified Dealer Program overview (2021)",
+        "direct_file_url": "https://www.cabq.gov/sustainability/transportation/transportation-resources/resolveuid/6996f3fbf6d34ba0a6fb55e0e3efdcba",
+        "description": "One-page 2021 City promotional overview for the Electrified Dealer Program.",
+        "size_bytes": 3594029,
+        "validation_status": "terminal archive-preparation decision: excluded; source bytes reverified",
+        "exclusion_reason": "One-page promotional programme overview is adequately represented by the current City service page and lacks a limited-content historical exception.",
+        "date": "2021-03-09",
+        "file_type": "application/pdf",
+        "checksum_sha256": "2277f65eb34a724be2b06c344f2ad306418272beb22e9eb650f9748c75f0eeb4"
+      }
+    },
+    {
+      "id": "src-bd33f9a55aae6b71",
+      "title": "ABQ RIDE directions to Albuquerque Convention Center",
+      "disposition": "excluded",
+      "source_evidence": {
+        "provenance_url": "https://www.cabq.gov/transit/documents/convention_center_directions.pdf/view",
+        "verified_download_url": "https://www.cabq.gov/transit/documents/convention_center_directions.pdf/@@download/file/convention_center_directions.pdf",
+        "container": "PDF",
+        "size_bytes": 261571,
+        "sha256": "6703a1619c56703689d8d68fe8d0bec629d27b87f6ef35f855511a8219bfcdaf",
+        "extent": "one-page PDF."
+      },
+      "decision_rationale": "Transient destination directions are not an enduring historical or policy record and fail the one-page limited-content standard.",
+      "r2_action": "none",
+      "inventory_update": {
+        "status": "excluded",
+        "title": "ABQ RIDE directions to Albuquerque Convention Center",
+        "direct_file_url": "https://www.cabq.gov/transit/documents/convention_center_directions.pdf/@@download/file/convention_center_directions.pdf",
+        "description": "One-page ABQ RIDE destination-directions handout.",
+        "size_bytes": 261571,
+        "validation_status": "terminal archive-preparation decision: excluded; source bytes reverified",
+        "exclusion_reason": "One-page transient service directions have no durable standalone archival value.",
+        "date": null,
+        "file_type": "application/pdf",
+        "checksum_sha256": "6703a1619c56703689d8d68fe8d0bec629d27b87f6ef35f855511a8219bfcdaf"
+      }
+    },
+    {
+      "id": "src-3f7f0d0579ad62c0",
+      "title": "ABQ RIDE Honored Citizen ID-card application",
+      "disposition": "excluded",
+      "source_evidence": {
+        "provenance_url": "https://www.cabq.gov/transit/documents/honored_citizen_id_card_application.pdf/view",
+        "verified_download_url": "https://www.cabq.gov/transit/documents/honored_citizen_id_card_application.pdf/@@download/file/honored_citizen_id_card_application.pdf",
+        "container": "PDF",
+        "size_bytes": 156251,
+        "sha256": "3bdfe37f94891dfab7dc1cef8451931cd19db0f6fd929b1db4b0cb32b25ae430",
+        "extent": "two-page transactional application form."
+      },
+      "decision_rationale": "A blank intake/application form is transactional administration, not a standalone historical public-information record; no limited-content exception applies.",
+      "r2_action": "none",
+      "inventory_update": {
+        "status": "excluded",
+        "title": "ABQ RIDE Honored Citizen ID-card application",
+        "direct_file_url": "https://www.cabq.gov/transit/documents/honored_citizen_id_card_application.pdf/@@download/file/honored_citizen_id_card_application.pdf",
+        "description": "Two-page ABQ RIDE Honored Citizen ID-card application form.",
+        "size_bytes": 156251,
+        "validation_status": "terminal archive-preparation decision: excluded; source bytes reverified",
+        "exclusion_reason": "Transactional two-page ID-card application form; it is not a standalone archival/publication record.",
+        "date": null,
+        "file_type": "application/pdf",
+        "checksum_sha256": "3bdfe37f94891dfab7dc1cef8451931cd19db0f6fd929b1db4b0cb32b25ae430"
+      }
+    },
+    {
+      "id": "src-ee0aec5b78f6ec86",
+      "title": "Traffic Assessment: Montano Rail Runner Station (2010)",
+      "disposition": "approved for addition",
+      "source_evidence": {
+        "provenance_url": "https://www.cabq.gov/transit/documents/cr_mont_traffic_study_final_7.10.pdf/view",
+        "verified_download_url": "https://www.cabq.gov/transit/documents/cr_mont_traffic_study_final_7.10.pdf/@@download/file/cr_mont_traffic_study_final_7.10.pdf",
+        "container": "PDF",
+        "size_bytes": 5300254,
+        "sha256": "d7999a978521be8b240f20b22de869a804e36b97f6f402f1a418e5a83a75588d",
+        "extent": "5.3 MB final study; embedded PDF page tree is compressed, so page count is a pre-archive extraction gate rather than guessed."
+      },
+      "quality_assessment": {
+        "visual_inspection": "PDF structure and title/date metadata were inspected; a local renderer is unavailable, so final page-image inspection is explicitly retained as an archive-stage gate.",
+        "measured_content": "5,300,254-byte PDF, exact SHA-256 above, identified as a final July 2010 traffic assessment.",
+        "standalone_public_value": "High as the traffic-impact record for a built regional rail station.",
+        "information_density": "Substantive technical study, not a short administrative fragment.",
+        "series_component_relationship": "Project-family traffic analysis; cross-listing on Roadway Studies is useful, but its primary relationship is the Montano station record.",
+        "intended_publication_form": "One study entry in a Montano Rail Runner Station subsection, cross-listed on Roadway Studies after archival.",
+        "rationale": "It explains a material project decision and remains intelligible as an individual technical study."
+      },
+      "archive_preparation": {
+        "proposed_filename": "cabq-montano-rail-runner-station-traffic-assessment-2010.pdf",
+        "proposed_r2_key": "transportation/transit/abq-ride/montano-rail-runner-station/cabq-montano-rail-runner-station-traffic-assessment-2010.pdf",
+        "collision_check": "No matching current R2 key or saved byte collision.",
+        "canonical_page": "content/transportation/transit/abq-ride.md",
+        "section": "Montano Rail Runner Station",
+        "cross_listing": "content/transportation/roadway-projects/studies.md",
+        "remaining_gates": [
+          "authorized R2 upload",
+          "exact public-byte verification",
+          "PDF visual/page-render check",
+          "future public-content authorization"
+        ]
+      },
+      "r2_action": "none",
+      "inventory_update": {
+        "status": "approved for addition",
+        "title": "Traffic Assessment: Montano Rail Runner Station (2010)",
+        "direct_file_url": "https://www.cabq.gov/transit/documents/cr_mont_traffic_study_final_7.10.pdf/@@download/file/cr_mont_traffic_study_final_7.10.pdf",
+        "description": "Final traffic assessment for the Montano Rail Runner Station project.",
+        "size_bytes": 5300254,
+        "validation_status": "archive preparation complete; exact City original reverified; R2 and public-byte verification remain external gates",
+        "exclusion_reason": null,
+        "date": "2010-07-01",
+        "file_type": "application/pdf",
+        "checksum_sha256": "d7999a978521be8b240f20b22de869a804e36b97f6f402f1a418e5a83a75588d"
+      }
+    },
+    {
+      "id": "src-54391dbd27e5d212",
+      "title": "Draft Environmental Assessment: Montano Rail Runner Station (2010)",
+      "disposition": "approved for addition",
+      "source_evidence": {
+        "provenance_url": "https://www.cabq.gov/transit/documents/montano_ea_draft_4.10.pdf/view",
+        "verified_download_url": "https://www.cabq.gov/transit/documents/montano_ea_draft_4.10.pdf/@@download/file/montano_ea_draft_4.10.pdf",
+        "container": "PDF",
+        "size_bytes": 8644002,
+        "sha256": "c928e458a99985f0b995f8ca6aa9e029e883a5c01f93334009bbda8ede596d33",
+        "extent": "47-page PDF."
+      },
+      "quality_assessment": {
+        "visual_inspection": "PDF structure and 47-page extent verified; final page-image inspection remains an archive-stage gate.",
+        "measured_content": "8,644,002-byte PDF, exact SHA-256 above; face filename and record identify it as DRAFT.",
+        "standalone_public_value": "High project-history value, contingent on retaining the draft label.",
+        "information_density": "Substantive environmental assessment.",
+        "series_component_relationship": "Environmental-review component of the Montano station family; not claimed to be the final EA or final project approval.",
+        "intended_publication_form": "Explicitly labelled Draft Environmental Assessment in the Montano Station subsection.",
+        "rationale": "A draft is meaningful legislative/project history when its nonfinal status is never obscured."
+      },
+      "archive_preparation": {
+        "proposed_filename": "cabq-montano-rail-runner-station-draft-environmental-assessment-2010.pdf",
+        "proposed_r2_key": "transportation/transit/abq-ride/montano-rail-runner-station/cabq-montano-rail-runner-station-draft-environmental-assessment-2010.pdf",
+        "collision_check": "No matching current R2 key or saved byte collision.",
+        "canonical_page": "content/transportation/transit/abq-ride.md",
+        "section": "Montano Rail Runner Station",
+        "cross_listing": "none",
+        "remaining_gates": [
+          "authorized R2 upload",
+          "exact public-byte verification",
+          "PDF visual/page-render check",
+          "future public-content authorization"
+        ]
+      },
+      "r2_action": "none",
+      "inventory_update": {
+        "status": "approved for addition",
+        "title": "Draft Environmental Assessment: Montano Rail Runner Station (2010)",
+        "direct_file_url": "https://www.cabq.gov/transit/documents/montano_ea_draft_4.10.pdf/@@download/file/montano_ea_draft_4.10.pdf",
+        "description": "Draft environmental assessment for the Montano Rail Runner Station project; not final.",
+        "size_bytes": 8644002,
+        "validation_status": "archive preparation complete; exact City original reverified; R2 and public-byte verification remain external gates",
+        "exclusion_reason": null,
+        "date": "2010-04-01",
+        "file_type": "application/pdf",
+        "checksum_sha256": "c928e458a99985f0b995f8ca6aa9e029e883a5c01f93334009bbda8ede596d33"
+      }
+    },
+    {
+      "id": "src-4092005fa5d61b38",
+      "title": "NMDOT certification: Montano Rail Runner Station (11 August 2010)",
+      "disposition": "approved for addition",
+      "source_evidence": {
+        "provenance_url": "https://www.cabq.gov/transit/documents/montano_rr_sta_cert.nmdot.08_11_10.pdf/view",
+        "verified_download_url": "https://www.cabq.gov/transit/documents/montano_rr_sta_cert.nmdot.08_11_10.pdf/@@download/file/montano_rr_sta_cert.nmdot.08_11_10.pdf",
+        "container": "PDF",
+        "size_bytes": 1019674,
+        "sha256": "e0eab3a1aba68c7ca628e96e013e7a64db17b66a115d15c5adb57510c86fa2fa",
+        "extent": "5-page PDF."
+      },
+      "quality_assessment": {
+        "visual_inspection": "PDF structure and five-page extent verified; final page-image inspection remains an archive-stage gate.",
+        "measured_content": "1,019,674-byte PDF, exact SHA-256 above; dated NMDOT certification record.",
+        "standalone_public_value": "Moderate-high as a discrete regulatory milestone for the station.",
+        "information_density": "Five-page agency certification, more than a skeletal notice.",
+        "series_component_relationship": "Regulatory certification component following the project studies, not a substitute for them.",
+        "intended_publication_form": "Chronological Montano Station subsection entry.",
+        "rationale": "It documents a distinct state-agency project milestone with clear provenance."
+      },
+      "archive_preparation": {
+        "proposed_filename": "nmdot-montano-rail-runner-station-certification-2010-08-11.pdf",
+        "proposed_r2_key": "transportation/transit/abq-ride/montano-rail-runner-station/nmdot-montano-rail-runner-station-certification-2010-08-11.pdf",
+        "collision_check": "No matching current R2 key or saved byte collision.",
+        "canonical_page": "content/transportation/transit/abq-ride.md",
+        "section": "Montano Rail Runner Station",
+        "cross_listing": "none",
+        "remaining_gates": [
+          "authorized R2 upload",
+          "exact public-byte verification",
+          "PDF visual/page-render check",
+          "future public-content authorization"
+        ]
+      },
+      "r2_action": "none",
+      "inventory_update": {
+        "status": "approved for addition",
+        "title": "NMDOT certification: Montano Rail Runner Station (11 August 2010)",
+        "direct_file_url": "https://www.cabq.gov/transit/documents/montano_rr_sta_cert.nmdot.08_11_10.pdf/@@download/file/montano_rr_sta_cert.nmdot.08_11_10.pdf",
+        "description": "NMDOT certification for the Montano Rail Runner Station project, dated 11 August 2010.",
+        "size_bytes": 1019674,
+        "validation_status": "archive preparation complete; exact City original reverified; R2 and public-byte verification remain external gates",
+        "exclusion_reason": null,
+        "date": "2010-08-11",
+        "file_type": "application/pdf",
+        "checksum_sha256": "e0eab3a1aba68c7ca628e96e013e7a64db17b66a115d15c5adb57510c86fa2fa"
+      }
+    },
+    {
+      "id": "src-e28e38dabfbdb2e2",
+      "title": "Montano Rail Runner Station Framework Plan (June 2010)",
+      "disposition": "approved for addition",
+      "source_evidence": {
+        "provenance_url": "https://www.cabq.gov/transit/documents/mrcog_station_area_study_final_6.10.pdf/view",
+        "verified_download_url": "https://www.cabq.gov/transit/documents/mrcog_station_area_study_final_6.10.pdf/@@download/file/mrcog_station_area_study_final_6.10.pdf",
+        "container": "PDF",
+        "size_bytes": 7669322,
+        "sha256": "933778e0f19eb52c8c460189425cbdee3df50297542c458c30f0ccbcc6d3c79b",
+        "extent": "41-page PDF."
+      },
+      "quality_assessment": {
+        "visual_inspection": "PDF structure and 41-page extent verified; final page-image inspection remains an archive-stage gate.",
+        "measured_content": "7,669,322-byte PDF, exact SHA-256 above; MRCOG final framework study dated June 2010.",
+        "standalone_public_value": "High as the station-area planning framework.",
+        "information_density": "Substantive 41-page plan connecting land use, access, and station design context.",
+        "series_component_relationship": "Core planning component of the Montano project family.",
+        "intended_publication_form": "One prominent Montano Station subsection entry.",
+        "rationale": "The framework plan supplies the project-level context that makes the other components legible."
+      },
+      "archive_preparation": {
+        "proposed_filename": "mrcog-montano-rail-runner-station-framework-plan-2010-06.pdf",
+        "proposed_r2_key": "transportation/transit/abq-ride/montano-rail-runner-station/mrcog-montano-rail-runner-station-framework-plan-2010-06.pdf",
+        "collision_check": "No matching current R2 key or saved byte collision.",
+        "canonical_page": "content/transportation/transit/abq-ride.md",
+        "section": "Montano Rail Runner Station",
+        "cross_listing": "none",
+        "remaining_gates": [
+          "authorized R2 upload",
+          "exact public-byte verification",
+          "PDF visual/page-render check",
+          "future public-content authorization"
+        ]
+      },
+      "r2_action": "none",
+      "inventory_update": {
+        "status": "approved for addition",
+        "title": "Montano Rail Runner Station Framework Plan (June 2010)",
+        "direct_file_url": "https://www.cabq.gov/transit/documents/mrcog_station_area_study_final_6.10.pdf/@@download/file/mrcog_station_area_study_final_6.10.pdf",
+        "description": "MRCOG framework plan for the Montano Rail Runner Station area, June 2010.",
+        "size_bytes": 7669322,
+        "validation_status": "archive preparation complete; exact City original reverified; R2 and public-byte verification remain external gates",
+        "exclusion_reason": null,
+        "date": "2010-06-01",
+        "file_type": "application/pdf",
+        "checksum_sha256": "933778e0f19eb52c8c460189425cbdee3df50297542c458c30f0ccbcc6d3c79b"
+      }
+    },
+    {
+      "id": "src-2dbbf587fead4146",
+      "title": "Montano Rail Runner Station plans for construction — 65% SUBMITTAL",
+      "disposition": "approved for addition",
+      "source_evidence": {
+        "provenance_url": "https://www.cabq.gov/transit/documents/plansforconstruction.pdf/view",
+        "verified_download_url": "https://www.cabq.gov/transit/documents/plansforconstruction.pdf/@@download/file/plansforconstruction.pdf",
+        "container": "PDF",
+        "size_bytes": 12773163,
+        "sha256": "2340dffc13bd3b8e19674dfa3246f4c4fc50b4f0da9c11f12af0d0e25e64160d",
+        "extent": "46-sheet PDF; title block reads 65% SUBMITTAL."
+      },
+      "quality_assessment": {
+        "visual_inspection": "PDF structure and 46-sheet extent verified; saved source review identifies the 65% SUBMITTAL title block. Final page-image inspection remains an archive-stage gate.",
+        "measured_content": "12,773,163-byte PDF, exact SHA-256 above; preliminary design drawings rather than as-built or final plans.",
+        "standalone_public_value": "High archival project-documentation value, but not equal public-facing prominence to the framework plan.",
+        "information_density": "Dense 46-sheet technical design package.",
+        "series_component_relationship": "First of two separately served construction-plan packages; must remain grouped as design documentation.",
+        "intended_publication_form": "Nested Montano Station design-documentation entry explicitly labelled 65% SUBMITTAL.",
+        "rationale": "The package documents project development but requires strict stage labelling to prevent a false final/as-built claim."
+      },
+      "archive_preparation": {
+        "proposed_filename": "cabq-montano-rail-runner-station-construction-plans-65-percent-submittal.pdf",
+        "proposed_r2_key": "transportation/transit/abq-ride/montano-rail-runner-station/cabq-montano-rail-runner-station-construction-plans-65-percent-submittal.pdf",
+        "collision_check": "No matching current R2 key or saved byte collision.",
+        "canonical_page": "content/transportation/transit/abq-ride.md",
+        "section": "Montano Rail Runner Station / design documentation",
+        "cross_listing": "none",
+        "remaining_gates": [
+          "authorized R2 upload",
+          "exact public-byte verification",
+          "PDF visual/page-render check",
+          "future public-content authorization"
+        ]
+      },
+      "r2_action": "none",
+      "inventory_update": {
+        "status": "approved for addition",
+        "title": "Montano Rail Runner Station plans for construction — 65% SUBMITTAL",
+        "direct_file_url": "https://www.cabq.gov/transit/documents/plansforconstruction.pdf/@@download/file/plansforconstruction.pdf",
+        "description": "46-sheet 65% SUBMITTAL construction-plan package for Montano Rail Runner Station; not final or as-built plans.",
+        "size_bytes": 12773163,
+        "validation_status": "archive preparation complete; exact City original reverified; R2 and public-byte verification remain external gates",
+        "exclusion_reason": null,
+        "date": null,
+        "file_type": "application/pdf",
+        "checksum_sha256": "2340dffc13bd3b8e19674dfa3246f4c4fc50b4f0da9c11f12af0d0e25e64160d"
+      }
+    },
+    {
+      "id": "src-12207bd87008378c",
+      "title": "Montano Rail Runner Station plans for construction — Part II",
+      "disposition": "approved for addition",
+      "source_evidence": {
+        "provenance_url": "https://www.cabq.gov/transit/documents/plansforconstructuionii.pdf/view",
+        "verified_download_url": "https://www.cabq.gov/transit/documents/plansforconstructuionii.pdf/@@download/file/plansforconstructuionii.pdf",
+        "container": "PDF",
+        "size_bytes": 2332115,
+        "sha256": "2ee44bd2ff3b48db46e14af1daa15337f16b0482f99df25571d60908793bc058",
+        "extent": "13-sheet separately served PDF."
+      },
+      "quality_assessment": {
+        "visual_inspection": "PDF structure and 13-sheet extent verified; final page-image inspection remains an archive-stage gate.",
+        "measured_content": "2,332,115-byte PDF, exact SHA-256 above; separately delivered Part II plans.",
+        "standalone_public_value": "Moderate as a necessary companion within the technical plan family, not as an equally prominent independent record.",
+        "information_density": "Dense technical drawings.",
+        "series_component_relationship": "Companion to the 46-sheet 65% package, with no byte or substantive-identity claim and no synthetic combination authorized.",
+        "intended_publication_form": "Nested Montano Station design-documentation entry paired with, but separate from, the 65% package.",
+        "rationale": "Keep the City’s original component intact and explain its relation without claiming it is final/as-built material."
+      },
+      "archive_preparation": {
+        "proposed_filename": "cabq-montano-rail-runner-station-construction-plans-part-ii.pdf",
+        "proposed_r2_key": "transportation/transit/abq-ride/montano-rail-runner-station/cabq-montano-rail-runner-station-construction-plans-part-ii.pdf",
+        "collision_check": "No matching current R2 key or saved byte collision.",
+        "canonical_page": "content/transportation/transit/abq-ride.md",
+        "section": "Montano Rail Runner Station / design documentation",
+        "cross_listing": "none",
+        "remaining_gates": [
+          "authorized R2 upload",
+          "exact public-byte verification",
+          "PDF visual/page-render check",
+          "future public-content authorization"
+        ]
+      },
+      "r2_action": "none",
+      "inventory_update": {
+        "status": "approved for addition",
+        "title": "Montano Rail Runner Station plans for construction — Part II",
+        "direct_file_url": "https://www.cabq.gov/transit/documents/plansforconstructuionii.pdf/@@download/file/plansforconstructuionii.pdf",
+        "description": "13-sheet Part II construction-plan package for Montano Rail Runner Station; a separately served companion to the 65% package.",
+        "size_bytes": 2332115,
+        "validation_status": "archive preparation complete; exact City original reverified; R2 and public-byte verification remain external gates",
+        "exclusion_reason": null,
+        "date": null,
+        "file_type": "application/pdf",
+        "checksum_sha256": "2ee44bd2ff3b48db46e14af1daa15337f16b0482f99df25571d60908793bc058"
+      }
+    }
+  ],
+  "summary": {
+    "reviewed": 14,
+    "approved_for_addition": 9,
+    "excluded": 5,
+    "duplicate": 0,
+    "superseded": 0,
+    "requires_human_review": 0
+  },
+  "safeguards_observed": {
+    "r2_mutation": false,
+    "public_content_changed": false,
+    "synthetic_pdf_built": false,
+    "merge_or_deploy": false
+  }
+}

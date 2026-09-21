@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_queue_family_decision",
+  "recorded_at": "2026-09-20",
+  "family": "Public service guides",
+  "scope": [
+    "src-6085ad664fa5ee86",
+    "src-6f5bbd44fccbd086"
+  ],
+  "starting_evidence": [
+    "project-state/discovery/ordinary-queue-next-position-2026-09-20-post-cruising.json",
+    "project-state/discovery/undiscovered-documents-research-2026-09-14.json",
+    "project-state/discovery/councilor-district-3-and-6-cluster-research-2026-09-13.json"
+  ],
+  "verification": {
+    "date": "2026-09-20",
+    "method": "Fetched the two authoritative City PDFs, recomputed length and SHA-256, extracted text and metadata, and visually rendered every page. Both current files exactly matched saved 2026-09-14 bytes and checksums. No source replacement was found at either authoritative URL.",
+    "r2_mutation": false,
+    "site_content_mutation": false
+  },
+  "records": [
+    {
+      "id": "src-6085ad664fa5ee86",
+      "title": "APD Resource Card",
+      "issuing_body": "City of Albuquerque, Albuquerque Police Department",
+      "date_and_edition": "Updated February 1, 2026; file revision 2; PDF created February 24, 2026",
+      "intended_audience": "APD officers making referrals and people receiving the folded card",
+      "source_url": "https://www.cabq.gov/health-housing-homelessness/documents/apd-resource-card_17inchx5-5_2_2026_rev2.pdf",
+      "size_bytes": 574917,
+      "checksum_sha256": "65535905445dd820e834a6d762229316d3e5ddec43470e33cc12ce8d39ad276b",
+      "page_count": 2,
+      "format": "Two 17.58 x 6.08 inch print-artwork sides forming a ten-panel folded card",
+      "extractable_words": 2034,
+      "quality_assessment": {
+        "visual_document_quality": "Legible but tightly typeset multi-panel print artwork, designed for folding rather than screen reading.",
+        "information_density": "High for a referral card: shelters, health, crisis, housing, family, legal, and employment contacts.",
+        "standalone_public_value": "Limited. Its value is immediate operational referral; provider details, hours, eligibility, phone numbers, and programs require continual maintenance.",
+        "intended_publication_form": "Current operational handout, not enduring historical guide.",
+        "rationale": "It does not meet the durable-publication test despite authoritative provenance and dense content."
+      },
+      "newer_or_stronger_canonical_version": "No newer PDF was found at the authoritative URL. The absence of a replacement does not convert a volatile referral card into a durable record.",
+      "disposition": "excluded",
+      "proposed_canonical_page": null
+    },
+    {
+      "id": "src-6f5bbd44fccbd086",
+      "title": "ABQ Area Resources Quick Guide",
+      "issuing_body": "City of Albuquerque Health, Housing & Homelessness",
+      "date_and_edition": "Updated March 1, 2026; PDF created March 3, 2026",
+      "intended_audience": "Albuquerque-area residents and navigators seeking current social-service referrals",
+      "source_url": "https://www.cabq.gov/health-housing-homelessness/documents/abq-area-resources-quick-guide.pdf",
+      "size_bytes": 1608587,
+      "checksum_sha256": "dbf386c32351f1cde55972c685701745a7a3dcce782657b6713940aea5829b1e",
+      "page_count": 16,
+      "format": "Letter-size, tagged Microsoft Word PDF with 316 embedded links",
+      "extractable_words": 12266,
+      "quality_assessment": {
+        "visual_document_quality": "Legible, well-structured two-column directory with clear category headings; utilitarian rather than archival editorial design.",
+        "information_density": "High: current services, contact details, eligibility cues, referral procedures, and web links.",
+        "standalone_public_value": "Limited as a durable record because its contact directory must stay current. Its own opening page identifies the CABQ HHH Connect to Resources page as the maintained access context.",
+        "intended_publication_form": "Maintained live-service directory, not enduring historical guide.",
+        "rationale": "The document is useful now but has no meaningful durable ABQInfo home or independent historical/public-information value that outweighs rapid obsolescence."
+      },
+      "newer_or_stronger_canonical_version": "No newer PDF was found at the authoritative URL. The maintained City resource-service context is stronger for access than a static archival placement.",
+      "disposition": "excluded",
+      "proposed_canonical_page": null
+    }
+  ],
+  "family_relationship": "The records overlap substantially in shelters, crisis, health, housing, and other referrals, but they are genuinely independent current guides: the APD card is a compact officer-facing referral handout and the Quick Guide is a much broader resident-facing directory. Their different formats, audiences, scope, text, dates, and checksums establish that neither is duplicate, superseded, nor canonical for the other.",
+  "placement_decision": "No canonical ABQInfo page is proposed. The saved research suggestion to cross-list either item under About was rejected because generic City authorship is not a meaningful durable information architecture.",
+  "safeguards": [
+    "No R2 upload or mutation",
+    "No Hugo or public-content change",
+    "No pull request, merge, or deployment",
+    "Both exclusions were applied through scripts/project/Update-Candidate.ps1"
+  ],
+  "next_queue_action": "Recompute the filtered ordinary queue after these two exclusions; do not research the next residual family in this task."
+}

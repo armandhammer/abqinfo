@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_queue_one_record_decision",
+  "recorded_at": "2026-09-20",
+  "candidate_id": "src-e0624ecba79f3f17",
+  "selection_artifact": "project-state/discovery/ordinary-queue-next-position-2026-09-20-post-form-based-zones.json",
+  "retained_source_evidence": [
+    "project-state/discovery/src-87fa3827b36c8915-retained-source-crawl-2026-09-12.json",
+    "project-state/discovery/retained-source-audit-queue.json",
+    "project-state/discovery/retained-source-audit-2026-09-12-b-summary.json",
+    "project-state/discovery/unm-cnm-focused-source-scope.json"
+  ],
+  "identity": {
+    "exact_title": "UNM 2040: Opportunity Defined - Strategic Planning Framework",
+    "edition_date": "Revised April 13, 2022 (the official linked filename is dated May 2022)",
+    "issuing_body": "The University of New Mexico",
+    "document_type": "University-wide strategic planning framework / long-term aspirational vision",
+    "authoritative_source": "https://opportunity.unm.edu/assets/docs/unm2040_strategic_framework_5_2022.pdf",
+    "authoritative_parent": "https://css.unm.edu/campus-planning/",
+    "source_verification": "The retained Campus Planning crawl recorded the official outbound link. Current official UNM 2040 About and President pages still describe UNM 2040 as the university framework and link the framework/initiative site.",
+    "bytes": 8896226,
+    "sha256": "4757e9d9882608a83768d9cab44509f3c39e141f8dff9bebec605af38c38ae00"
+  },
+  "framework_relationship": {
+    "official_unm_framework": true,
+    "finding": "This is the official UNM 2040 high-level framework, not another institution's planning document and not an UNM campus master plan.",
+    "unm_2040_role": "Sets a 20-year aspirational vision, mission, values, five university-level goals, and near-term objectives; the document itself says detailed tactics, accountability, and targets are to be set in the implementation phase.",
+    "later_or_implementation_material": "The current UNM 2040 website presents initiatives as the mechanism to achieve the goals; it does not present a later replacement comprehensive framework. The 2025 UNM legislative-priorities material applies the 2040 goals to specific capital and infrastructure requests but is a separate, time-bounded legislative record.",
+    "stronger_canonical_version": "No stronger superseding general UNM 2040 framework was found in the bounded official-source review. For physical campus development, the separately retained UNM Integrated Campus Plan is the more specific canonical planning record; for sustainability and mobility, the separately retained 2025-2030 Sustainability Strategic Plan and Safe Mobility Action Plan are more specific records. None is a duplicate or successor to this framework as a whole."
+  },
+  "subject_scope_review": {
+    "direct_relevance": [
+      "Goal Four generally calls for sustainable operations, reduced environmental impact, campus wellness, housing, security, and activation of physical and virtual spaces.",
+      "Goal One generally refers to economic development and relationships with public agencies and communities."
+    ],
+    "absent_material": [
+      "No transportation mode, route, parking, bicycle, pedestrian, transit, roadway, or mobility policy, program, map, data, project, budget, or implementation measure.",
+      "No land-use designation, campus-development plan, facilities inventory, project list, capital program, site plan, infrastructure plan, locational analysis, or project-specific public engagement record.",
+      "No Albuquerque-specific policy action beyond general institutional context."
+    ],
+    "abqinfo_scope_finding": "UNM is a major Albuquerque institution, but that fact alone is insufficient. This university-wide aspirational strategy does not provide a durable ABQInfo public-policy/infrastructure record or support a non-stretched canonical placement.",
+    "canonical_placement": null
+  },
+  "quality_assessment": {
+    "visual_inspection": "Rendered selected pages (cover, framework, sustainability goal, timeline, and next-steps page) show a professional, legible UNM-branded publication with consistent hierarchy, photographs, diagrams, and no visible clipping or corruption.",
+    "page_count": 18,
+    "extractable_words": 4276,
+    "information_density": "Substantive for institutional strategy: five goal/objective pages plus planning, governance, and stakeholder-engagement narrative. The density is not subject-specific infrastructure or public-policy evidence.",
+    "document_quality": "Official, visually polished, text-extractable PDF; 8,896,226 bytes; SHA-256 4757e9d9882608a83768d9cab44509f3c39e141f8dff9bebec605af38c38ae00.",
+    "standalone_public_value": "Meaningful to UNM stakeholders and statewide higher-education context, but not independently valuable as an ABQInfo public-policy/infrastructure record.",
+    "series_component_relationship": "Canonical high-level UNM 2040 framework, with the official UNM 2040 website providing goal-specific initiatives and implementation context. It is not a component of the UNM Integrated Campus Plan or the 2025-2030 Sustainability Strategic Plan.",
+    "intended_publication_form": "None in ABQInfo. Retain the narrower Integrated Campus Plan, Safe Mobility Action Plan, and Sustainability Strategic Plan pathways for separately authorized and independently scoped review.",
+    "rationale": "Quality alone does not establish ABQInfo fit. The framework contains generic institutional aspirations rather than durable, independently interpretable Albuquerque policy, transportation, land-use, campus-development, public-infrastructure, project, map, capital-program, or implementation information."
+  },
+  "disposition": {
+    "status": "excluded",
+    "reason": "Outside ABQInfo scope despite high publication quality and official status.",
+    "inventory_only": true,
+    "archive_or_publication_authorized": false,
+    "r2_mutation": false,
+    "hugo_content_changed": false,
+    "pull_request_created": false,
+    "merge_or_deploy": false
+  },
+  "ordinary_queue_closeout": {
+    "filtered_ordinary_residuals_after_decision": 0,
+    "ordinary_review_queue_exhausted": true,
+    "method": "Recomputed pending-review rows after this terminal decision and applied the durable completed-family, requires-human-review, and external-gate filter from the preceding ordinary-queue artifact, CURRENT.md, and checkpoint state.",
+    "next_logical_project_work_category": "Separately authorized archive preparation/upload and public-byte verification for already approved inventory-only families, beginning with the prepared Municipal Development standard-form agreements or another explicitly chosen durable archive gate.",
+    "do_not_begin": "No archive, R2, Hugo, public-placement, implementation, merge, or deployment work began in this task."
+  },
+  "validation": {
+    "source_pdf_downloaded": true,
+    "pdf_text_extracted": true,
+    "page_count_verified": true,
+    "rendered_visual_sample_reviewed": true,
+    "official_current_framework_pages_checked": true,
+    "inventory_status_checked": true,
+    "ordinary_queue_recomputed": true
+  }
+}

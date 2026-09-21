@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_queue_family_decision",
+  "recorded_at": "2026-09-20",
+  "selection_artifact": "project-state/discovery/ordinary-queue-next-position-2026-09-20-post-public-service-guides.json",
+  "saved_evidence": [
+    "project-state/discovery/undiscovered-documents-research-2026-09-14.json",
+    "project-state/discovery/form-based-code-cluster-research-2026-09-11.json"
+  ],
+  "family": {
+    "name": "Form Based Zones final parts",
+    "scope_candidate_ids": [
+      "src-77df51d4334f3749",
+      "src-bdb71a8eaf8a29fa"
+    ],
+    "related_final_part_b": "src-05176d26d35effd3",
+    "issuing_body": "City of Albuquerque; the files are City-hosted zoning-code deliveries associated with City Council Form Based Zones proposals.",
+    "exact_context": "The April 2, 2009 final (G3b) delivery of former Zoning Code Section 14-16-3-22 Form Based Zones, replacing the February 27, 2009 G3a revision. G3b is three lettered parts: A, B, and C. The 2017 Integrated Development Ordinance replaced Chapter 14 Article 16, so this is obsolete pre-IDO material.",
+    "complete_canonical_record": "No combined final City document was found. The City collection listing exposes final Part B, while saved server research located final Parts A and C. The related bills O-07-116 and O-08-58 have blank enactment numbers; no enacted ordinance or stronger codified record was established in the bounded saved research."
+  },
+  "dispositions": [
+    {
+      "id": "src-77df51d4334f3749",
+      "status": "requires human review",
+      "title": "Form Based Zones, Section 14-16-3-22, Part A (Final)",
+      "date": "2009-04-02",
+      "issuing_body": "City of Albuquerque",
+      "role": "Final Part A, general regulations and section organization",
+      "disposition": "Hold as a complementary partial component; do not retain or publish independently.",
+      "proposed_future_placement": "If the entire three-part final package is later shown enacted and archived/verified, Zoning and IDO under a clearly historical pre-IDO heading; no cross-listing justified."
+    },
+    {
+      "id": "src-bdb71a8eaf8a29fa",
+      "status": "requires human review",
+      "title": "Form Based Zones, Section 14-16-3-22, Part C (Final)",
+      "date": "2009-04-02",
+      "issuing_body": "City of Albuquerque",
+      "role": "Final Part C, components including building types, street design, and parking",
+      "disposition": "Hold as a complementary partial component; do not retain or publish independently.",
+      "proposed_future_placement": "If the entire three-part final package is later shown enacted and archived/verified, Zoning and IDO under a clearly historical pre-IDO heading; no cross-listing justified."
+    }
+  ],
+  "quality_assessments": [
+    {
+      "id": "src-77df51d4334f3749",
+      "pages": 59,
+      "size_bytes": 1276278,
+      "information_density": "High: substantive general regulations and section organization, but only one lettered component.",
+      "visual_inspection": "Saved research verified the City PDF container and opening page; no new render was needed for this inventory-only decision.",
+      "document_quality": "Authoritative City-hosted final PDF, exact checksum saved, and a substantial stable legal-text component.",
+      "standalone_public_value": "Insufficient alone because Part A omits the final zones and components material in Parts B and C.",
+      "series_component_relationship": "Part A of a three-part final delivery with Parts B and C.",
+      "intended_publication_form": "Only a complete, enacted-status-resolved historical three-part package, if future archival and editorial gates are authorized.",
+      "rationale": "A standalone listing would incorrectly imply an intelligible complete form-based zoning code."
+    },
+    {
+      "id": "src-bdb71a8eaf8a29fa",
+      "pages": 28,
+      "size_bytes": 718729,
+      "information_density": "High: substantive building-type, street-design, and parking standards, but only one lettered component.",
+      "visual_inspection": "Saved research verified the City PDF container and opening page; no new render was needed for this inventory-only decision.",
+      "document_quality": "Authoritative City-hosted final PDF, exact checksum saved, and a substantial stable legal-text component.",
+      "standalone_public_value": "Insufficient alone because Part C omits the final general regulations and zones in Parts A and B.",
+      "series_component_relationship": "Part C of a three-part final delivery with Parts A and B.",
+      "intended_publication_form": "Only a complete, enacted-status-resolved historical three-part package, if future archival and editorial gates are authorized.",
+      "rationale": "A standalone listing would misrepresent a partial zoning-code delivery as a self-contained record."
+    }
+  ],
+  "relationship_findings": {
+    "truly_final_components": true,
+    "complementary_not_duplicate": true,
+    "partial_delivery": true,
+    "independently_publishable": false,
+    "pre_ido_obsolete": true,
+    "part_b_state": "src-05176d26d35effd3 remains requires human review; it is the final Part B and completes neither Part A nor Part C alone.",
+    "predecessor_successors": "Part A succeeds src-4ce0f7387bab68d1 and Part C succeeds src-a94103538515dadb. The final generation is not byte-identical to its predecessors and has documented substantive growth/revision."
+  },
+  "unresolved_question": "Locate an enacted ordinance or otherwise establish the disposition of the Form Based Zones proposals before deciding whether the complete final G3b package has enduring historic-record value. Do not infer adoption from a filename marked final.",
+  "archive_publication_gate": "No R2 mutation, Hugo content change, PR, merge, deployment, or public placement occurred. Any future package requires separate authorization, preservation of all three original final parts, exact public-byte verification, and an editorial decision that labels it as historic pre-IDO material.",
+  "ordinary_queue_handoff": {
+    "next_actionable_candidate": "src-e0624ecba79f3f17",
+    "family": "UNM 2040 strategic framework",
+    "instruction": "This is the sole remaining filtered ordinary residual. Do not begin research in this task."
+  },
+  "safeguards_observed": {
+    "source_refetch": false,
+    "r2_mutation": false,
+    "hugo_content_changed": false,
+    "pull_request_created": false,
+    "merge_or_deploy": false
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_queue_filtered_position",
+  "recorded_at": "2026-09-20",
+  "supersedes": "project-state/discovery/ordinary-queue-next-position-2026-09-20-post-cruising.json",
+  "method": "Queried the current master-inventory pending-review rows after applying the completed Public service guides decision, then applied the durable completed-family and external-gate filter recorded in the superseded queue artifact and CURRENT.md. No next-family source-document fetch or research occurred.",
+  "sources": {
+    "source_inventory": "project-state/master-inventory.json",
+    "source_current": "project-state/CURRENT.md",
+    "source_checkpoint": "project-state/checkpoint.json",
+    "prior_queue": "project-state/discovery/ordinary-queue-next-position-2026-09-20-post-cruising.json",
+    "completed_family": "project-state/discovery/public-service-guides-family-decision-2026-09-20.json"
+  },
+  "counts": {
+    "pending_review_current": 1615,
+    "completed_or_gated_pending_covered": 1612,
+    "filtered_pending_review": 3,
+    "next_cluster_count": 2,
+    "residual_clusters": 2
+  },
+  "skipped_scopes": [
+    {
+      "scope": "2014 MS4 annual-report body and 27 attachments",
+      "count": 28,
+      "artifact": "project-state/discovery/2014-ms4-family-package-gate-2026-09-18.json",
+      "reason": "Separately externally gated; untouched."
+    },
+    {
+      "scope": "Public service guides",
+      "count": 2,
+      "artifact": "project-state/discovery/public-service-guides-family-decision-2026-09-20.json",
+      "reason": "Completed as excluded; no member remains pending review."
+    },
+    {
+      "scope": "Other completed, excluded, and externally gated families",
+      "count": 1612,
+      "reason": "Covered by durable family decisions, terminal integrations, saved completed classifications, or explicit CURRENT.md/checkpoint gates; not resurfaced."
+    }
+  ],
+  "residual_clusters": [
+    {
+      "family": "Form Based Zones final parts",
+      "count": 2,
+      "first_candidate_id": "src-77df51d4334f3749",
+      "candidate_ids": [
+        "src-77df51d4334f3749",
+        "src-bdb71a8eaf8a29fa"
+      ],
+      "basis": "Saved research identifies final Part A and Part C zoning-code components; no decision has been made."
+    },
+    {
+      "family": "UNM 2040 strategic framework",
+      "count": 1,
+      "first_candidate_id": "src-e0624ecba79f3f17",
+      "candidate_ids": [
+        "src-e0624ecba79f3f17"
+      ],
+      "basis": "Retained-source audit summary records this as a pending candidate; no decision has been made."
+    }
+  ],
+  "next_actionable_cluster": {
+    "family": "Form Based Zones final parts",
+    "count": 2,
+    "first_candidate_id": "src-77df51d4334f3749",
+    "candidate_ids": [
+      "src-77df51d4334f3749",
+      "src-bdb71a8eaf8a29fa"
+    ],
+    "saved_research": "project-state/discovery/undiscovered-documents-research-2026-09-14.json",
+    "selection_rule": "First residual pending candidate by deterministic candidate ID after excluding separately gated and durable completed scopes.",
+    "next_instruction": "Review this two-record saved-research family only when separately authorized; do not fetch or research it as part of this queue-position handoff."
+  },
+  "safeguards_observed": {
+    "next_family_research_started": false,
+    "source_downloads_for_next_family": false,
+    "r2_mutation": false,
+    "hugo_content_changed": false,
+    "pull_request_created": false,
+    "merge_or_deploy": false
+  }
+}
