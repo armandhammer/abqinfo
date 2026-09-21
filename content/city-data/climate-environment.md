@@ -100,6 +100,28 @@ Project contacts: Dan McGregor, [dmcgregor@bernco.gov](mailto:dmcgregor@bernco.g
 
   [Official City climate-plan hub](https://www.cabq.gov/sustainability/climate-action-plan) · [Official City PDF](https://www.cabq.gov/sustainability/documents/ccap_-2023-community-scale-greenhouse-gas-inventory_accessible.pdf)
 
+## Albuquerque Energy Council Meeting Records
+
+The City-hosted records below are arranged chronologically. Entries labeled **Agenda (approved minutes not located)** preserve the surviving official agenda after an exhaustive official-source review did not locate approved minutes; they are not minutes and do not establish that a meeting occurred.
+
+- [January 21, 2015 Agenda and Minutes (Archived PDF)](https://files.abqinfo.com/city-data/climate-environment/cabq-albuquerque-energy-council-agenda-and-minutes-2015-01-21.pdf) ([Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/albuquerque-energy-committee-meeting-minutes-dec-17-2014.pdf))
+- [April 17, 2019 Minutes (Archived PDF)](https://files.abqinfo.com/city-data/climate-environment/cabq-albuquerque-energy-council-minutes-2019-04-17.pdf) ([Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/20190516-approved-aec-meeting-minutes-april-17-2019.pdf))
+- **Agenda (approved minutes not located), May 15, 2019:** [archived PDF](https://files.abqinfo.com/city-data/climate-environment/cabq-albuquerque-energy-council-agenda-2019-05-15.pdf) ([Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/20190513_aec-agenda-may-15-2019.pdf))
+- [June 19, 2019 Minutes (Archived PDF)](https://files.abqinfo.com/city-data/climate-environment/cabq-albuquerque-energy-council-minutes-2019-06-19.pdf) ([Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/aec-20190814-meeting-minutes-june-19-2019.pdf))
+- **Agenda (approved minutes not located), July 17, 2019:** [archived PDF](https://files.abqinfo.com/city-data/climate-environment/cabq-albuquerque-energy-council-agenda-2019-07-17.pdf) ([Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/aec-20190708-agenda-july-17-2019.pdf))
+- [August 21, 2019 Minutes (Archived PDF)](https://files.abqinfo.com/city-data/climate-environment/cabq-albuquerque-energy-council-minutes-2019-08-21.pdf) ([Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/aec-20191018-minutes-aug-21-2019.pdf))
+- **Agenda (approved minutes not located), October 16, 2019:** [archived PDF](https://files.abqinfo.com/city-data/climate-environment/cabq-albuquerque-energy-council-agenda-2019-10-16.pdf) ([Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/aec20191009-agenda-oct-16-2019.pdf))
+- **Agenda (approved minutes not located), March 18, 2020:** [archived PDF](https://files.abqinfo.com/city-data/climate-environment/cabq-albuquerque-energy-council-agenda-2020-03-18.pdf) ([Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/aec-agenda-2020-03-18.pdf))
+- **Agenda (approved minutes not located), April 15, 2020:** [archived PDF](https://files.abqinfo.com/city-data/climate-environment/cabq-albuquerque-energy-council-agenda-2020-04-15.pdf) ([Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/aec-agenda-2020-04-15.pdf))
+- **Agenda (approved minutes not located), May 20, 2020:** [archived PDF](https://files.abqinfo.com/city-data/climate-environment/cabq-albuquerque-energy-council-agenda-2020-05-20.pdf) ([Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/aec-agenda-2020-05-20.pdf))
+- **Agenda (approved minutes not located), July 16, 2020:** [archived PDF](https://files.abqinfo.com/city-data/climate-environment/cabq-albuquerque-energy-council-agenda-2020-07-16.pdf) ([Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/aec-meeting-agenda-2020-07-16.pdf))
+- [August 19, 2020 Minutes (Archived PDF)](https://files.abqinfo.com/city-data/climate-environment/cabq-albuquerque-energy-council-minutes-2020-08-19.pdf) ([Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/aec-minutes-2020-08-19.pdf))
+- [September 16, 2020 Minutes (Archived PDF)](https://files.abqinfo.com/city-data/climate-environment/cabq-albuquerque-energy-council-minutes-2020-09-16.pdf) ([Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/aec-september-meeting-minutes.pdf))
+- **Agenda (approved minutes not located), October 21, 2020:** [archived PDF](https://files.abqinfo.com/city-data/climate-environment/cabq-albuquerque-energy-council-agenda-2020-10-21.pdf) ([Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/aec-agenda-oct-21-2020.pdf))
+- [September 15, 2021 Minutes (Archived PDF)](https://files.abqinfo.com/city-data/climate-environment/cabq-albuquerque-energy-council-minutes-2021-09-15.pdf) ([Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/september-15th-minutes-002.pdf))
+- **Agenda (approved minutes not located), October 20, 2021:** [archived PDF](https://files.abqinfo.com/city-data/climate-environment/cabq-albuquerque-energy-council-agenda-2021-10-20.pdf) ([Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/aec-agenda-october-20th-2021.pdf))
+- **Agenda (approved minutes not located), May 18, 2022:** [archived PDF](https://files.abqinfo.com/city-data/climate-environment/cabq-albuquerque-energy-council-agenda-2022-05-18.pdf) ([Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/aec-agenda-may18th-2022.pdf))
+
 ## UNM Albuquerque Campus Sustainability
 
 - [UNM Sustainability Strategic Plan 2025-2030 (Archived PDF)](https://files.abqinfo.com/city-data/climate-environment/unm-sustainability-strategic-plan-2025-2030.pdf)

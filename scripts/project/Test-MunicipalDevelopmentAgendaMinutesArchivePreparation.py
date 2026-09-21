@@ -32,7 +32,7 @@ for candidate_id, record in records.items():
     candidate = inventory[candidate_id]
     if archive_complete:
         result = verification_results[candidate_id]
-        assert candidate["status"] == "placement assigned"
+        assert candidate["status"] in {"placement assigned", "implemented", "validated"}
         assert candidate["r2_key"] == record["proposed_r2_key"]
         assert candidate["r2_url"] == f"https://files.abqinfo.com/{record['proposed_r2_key']}"
         assert result["source_byte_verification"] == result["upload"] == result["public_byte_verification"] == "passed"
@@ -49,7 +49,10 @@ for candidate_id, record in records.items():
     else:
         assert record["proposed_r2_key"] not in r2_keys
         assert candidate["r2_key"] is None and candidate["r2_url"] is None
-    assert candidate["implementation_location"] is None and not candidate["implementation_locations"]
+    if candidate["status"] == "placement assigned":
+        assert candidate["implementation_location"] is None and not candidate["implementation_locations"]
+    else:
+        assert candidate["implementation_location"] and candidate["implementation_locations"]
     assert record["canonical_placement"]["page"]
     assert record["canonical_placement"]["section"]
     assert record["cross_listing"]["decision"]
