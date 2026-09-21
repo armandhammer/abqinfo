@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-21T01:41:26.9220335Z",
+  "generated_at": "2026-09-21T02:05:27.0550654Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -18,7 +18,7 @@
     "requires human review"
   ],
   "counts": {
-    "pending review": 1613,
+    "pending review": 1612,
     "approved for addition": 113,
     "downloading": 0,
     "downloaded": 0,
@@ -27,7 +27,7 @@
     "placement assigned": 2,
     "implemented": 159,
     "validated": 1440,
-    "excluded": 1856,
+    "excluded": 1857,
     "duplicate": 1517,
     "superseded": 231,
     "blocked": 0,
@@ -285517,7 +285517,7 @@
     },
     {
       "id": "src-e0624ecba79f3f17",
-      "status": "pending review",
+      "status": "excluded",
       "source_url": "https://opportunity.unm.edu/assets/docs/unm2040_strategic_framework_5_2022.pdf",
       "direct_file_url": "https://opportunity.unm.edu/assets/docs/unm2040_strategic_framework_5_2022.pdf",
       "r2_url": null,
@@ -285525,11 +285525,11 @@
       "r2_etag": null,
       "r2_last_modified": null,
       "agency": "University of New Mexico",
-      "title": "UNM 2040: Opportunity Defined Strategic Framework",
-      "date": "2022-05",
+      "title": "UNM 2040: Opportunity Defined - Strategic Planning Framework (revised April 13, 2022)",
+      "date": "2022-04-13",
       "file_type": "PDF",
-      "size_bytes": null,
-      "checksum_sha256": null,
+      "size_bytes": 8896226,
+      "checksum_sha256": "4757e9d9882608a83768d9cab44509f3c39e141f8dff9bebec605af38c38ae00",
       "parent_url": "https://css.unm.edu/campus-planning/",
       "referring_urls": [
         "https://css.unm.edu/campus-planning/"
@@ -285542,21 +285542,24 @@
       "crawl_depth": 1,
       "cited_predecessors": [],
       "cited_successors": [],
-      "provenance_status": "source URL recorded",
+      "provenance_status": "Official UNM Opportunity Defined PDF linked from UNM Campus Planning and the current official UNM 2040 site.",
       "proposed_canonical_page": null,
-      "description": null,
-      "description_word_count": 0,
+      "description": "Official 2022 UNM-wide aspirational framework stating vision, mission, values, five goals, objectives, planning process, and engagement; excluded because it lacks specific Albuquerque public-policy, infrastructure, land-use, or transportation content.",
+      "description_word_count": 28,
       "processing_notes": [
-        "Added through authoritative campus-planning outbound link from the recorded authoritative source graph."
+        "Added through authoritative campus-planning outbound link from the recorded authoritative source graph.",
+        "Downloaded exact size: 8896226 bytes (8.48 MiB); SHA-256 recorded.",
+        "PDF pages: 18; extracted text: research/staging/queue/src-e0624ecba79f3f17.txt",
+        "Decision 2026-09-20: reviewed official UNM 2040 Strategic Planning Framework, revised 2022-04-13. It is a polished, high-density 18-page UNM-wide aspirational framework, not a campus master plan or transportation/land-use/infrastructure plan. Its only physical references are generic sustainability, housing, security, and activation aspirations; it contains no locational, capital-program, mobility, land-use, or implementation detail suitable for ABQInfo. Excluded as outside durable ABQInfo public-policy/infrastructure scope. No R2 or public-content action."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "not run",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "excluded: reviewed official 18-page framework is a university-wide aspirational strategy without a durable ABQInfo scope fit or canonical placement.",
+      "exclusion_reason": "University-wide strategic framework, not a campus master plan: polished and substantive but lacks specific transportation, land-use, campus-development, public-infrastructure, locational, capital-program, or implementation content. A standalone ABQInfo entry would stretch the site beyond its Albuquerque public-policy/infrastructure scope.",
+      "local_path": "research/staging/queue/src-e0624ecba79f3f17.pdf",
       "discovered_at": "2026-09-12T19:40:34.2369231Z",
-      "updated_at": "2026-09-12T19:40:34.2369231Z"
+      "updated_at": "2026-09-21T02:05:27.0444830Z"
     },
     {
       "id": "src-e0628c393a60e09a",
