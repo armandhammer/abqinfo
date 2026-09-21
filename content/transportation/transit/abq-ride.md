@@ -100,6 +100,68 @@ ABQ Ride bus service information and data.
 
   [Official Legistar attachment](https://legistar.granicus.com/cabq/attachments/8166.doc) · [Official EC-08-324 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=EC-08-324&Search=EC-08-324)
 
+### Para-Transit Advisory Board Minutes
+
+These are three preserved historical minutes, not a complete meeting history.
+
+- [Para-Transit Advisory Board Minutes — May 6, 2009 (Archived DOC)](https://files.abqinfo.com/transportation/transit/abq-ride/cabq-para-transit-advisory-board-minutes-2009-05-06.doc)
+
+  Official minutes of the Para-Transit Advisory Board meeting of May 6, 2009.
+
+  [Official City Record](https://www.cabq.gov/transit/documents/minutes_5.6.09.doc/view)
+
+- [Para-Transit Advisory Board Minutes — September 9, 2009 (Archived DOC)](https://files.abqinfo.com/transportation/transit/abq-ride/cabq-para-transit-advisory-board-minutes-2009-09-09.doc)
+
+  Official minutes of the Para-Transit Advisory Board meeting of September 9, 2009.
+
+  [Official City Record](https://www.cabq.gov/transit/documents/Minutes%209.9.09.doc/view)
+
+- [Para-Transit Advisory Board Minutes — February 9, 2010 (Archived DOC)](https://files.abqinfo.com/transportation/transit/abq-ride/cabq-para-transit-advisory-board-minutes-2010-02-09.doc)
+
+  Official minutes of the Para-Transit Advisory Board meeting of February 9, 2010.
+
+  [Official City Record](https://www.cabq.gov/transit/documents/minutes_2.9.10.doc/view)
+
+### Montano Rail Runner Station
+
+- [Draft Environmental Assessment (2010 Archived PDF)](https://files.abqinfo.com/transportation/transit/abq-ride/montano-rail-runner-station/cabq-montano-rail-runner-station-draft-environmental-assessment-2010.pdf)
+
+  Preserves the project's draft environmental assessment. It is a historical draft, not a final environmental assessment or final project approval.
+
+  [Official City Record](https://www.cabq.gov/transit/documents/montano_ea_draft_4.10.pdf/view)
+
+- [Framework Plan (June 2010 Archived PDF)](https://files.abqinfo.com/transportation/transit/abq-ride/montano-rail-runner-station/mrcog-montano-rail-runner-station-framework-plan-2010-06.pdf)
+
+  MRCOG's framework plan for the station area, providing project-level context for access, development, and transportation connections.
+
+  [Official City Record](https://www.cabq.gov/transit/documents/mrcog_station_area_study_final_6.10.pdf/view)
+
+- [Traffic Assessment (2010 Archived PDF)](https://files.abqinfo.com/transportation/transit/abq-ride/montano-rail-runner-station/cabq-montano-rail-runner-station-traffic-assessment-2010.pdf)
+
+  Final traffic assessment for the Montano Rail Runner Station project.
+
+  [Official City Record](https://www.cabq.gov/transit/documents/cr_mont_traffic_study_final_7.10.pdf/view)
+
+- [NMDOT Certification — August 11, 2010 (Archived PDF)](https://files.abqinfo.com/transportation/transit/abq-ride/montano-rail-runner-station/nmdot-montano-rail-runner-station-certification-2010-08-11.pdf)
+
+  NMDOT certification for the Montano Rail Runner Station project, dated August 11, 2010.
+
+  [Official City Record](https://www.cabq.gov/transit/documents/montano_rr_sta_cert.nmdot.08_11_10.pdf/view)
+
+#### Construction-Plan Packages
+
+- [Plans for Construction — 65% SUBMITTAL (Archived PDF)](https://files.abqinfo.com/transportation/transit/abq-ride/montano-rail-runner-station/cabq-montano-rail-runner-station-construction-plans-65-percent-submittal.pdf)
+
+  46-sheet 65% SUBMITTAL construction-plan package. It is not final or as-built plans.
+
+  [Official City Record](https://www.cabq.gov/transit/documents/plansforconstruction.pdf/view)
+
+- [Plans for Construction — Part II (Archived PDF)](https://files.abqinfo.com/transportation/transit/abq-ride/montano-rail-runner-station/cabq-montano-rail-runner-station-construction-plans-part-ii.pdf)
+
+  Separately served 13-sheet companion construction-plan package to the 65% SUBMITTAL package; it is not represented as final or as-built plans.
+
+  [Official City Record](https://www.cabq.gov/transit/documents/plansforconstructuionii.pdf/view)
+
 ## Workforce and Operations
 
 - [NMDOT Transit Compensation Study (2026 Archived PDF)](https://files.abqinfo.com/transportation/transit/abq-ride/nmdot-transit-compensation-study-2026.pdf)
