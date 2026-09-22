@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "artifact_type": "mission_scope_review_policy",
+  "recorded_at": "2026-09-22",
+  "applies_before": [
+    "approved for addition",
+    "archive preparation",
+    "backlog prioritization",
+    "visible/static publication"
+  ],
+  "required_scope_assessment_fields": [
+    "assessed_at",
+    "geographic_institutional_scope",
+    "specific_albuquerque_connection",
+    "abqinfo_public_information_value",
+    "general_context_exclusion_test",
+    "final_scope_decision",
+    "substantive_rationale"
+  ],
+  "positive_approval_decision": "passes_both_gates",
+  "regression_enforcement": "Test-MasterInventory.ps1 rejects approved-for-addition candidates without a complete positive assessment; Test-MissionScopeAudit.py validates the 2026-09-22 correction and scope-gated ranking."
+}

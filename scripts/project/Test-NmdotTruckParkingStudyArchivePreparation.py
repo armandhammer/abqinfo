@@ -6,6 +6,8 @@ a=json.loads((ROOT/'project-state/discovery/nmdot-statewide-truck-parking-study-
 r2={r['key'] for r in json.loads((ROOT/'project-state/r2-inventory.json').read_text(encoding='utf-8-sig'))['objects']}
 assert a['scope_candidate_ids']==['src-1f8378fe0d939884','src-1ce9fae6e4b2e675','src-a5f4c28aefd1ce20','src-57017bee270744dd','src-68d5d6b446b98b35','src-b07a77c5f6cd79b3','src-84c88a71842b2ed1']
 assert a['state']=='archive_preparation_complete_external_r2_upload_and_public_byte_verification_gated'
+assert a['superseded_by_mission_scope_audit']['historical_evidence_preserved'] is True
+assert a['superseded_by_mission_scope_audit']['r2_or_publication_action_authorized'] is False
 assert a['summary']=={'source_verification_passed':7,'docx_visual_qa_passed':5,'pdf_render_qa_passed':2,'r2_key_collisions':0,'total_source_bytes':88893781}
 assert not any(a['safeguards_observed'].values())
 for n,r in enumerate(a['records'],1):

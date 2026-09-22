@@ -49,6 +49,19 @@ foreach ($candidate in $inventory.candidates) {
   }
   if ($candidate.status -in @('implemented','validated') -and -not $candidate.description) { $errors.Add("Implemented item missing description: $($candidate.id)") }
   if ($candidate.status -in @('excluded','duplicate','superseded') -and -not $candidate.exclusion_reason) { $errors.Add("Terminal exclusion missing reason: $($candidate.id)") }
+  if ($candidate.status -eq 'approved for addition') {
+    if (-not $candidate.PSObject.Properties['scope_assessment'] -or $null -eq $candidate.scope_assessment) {
+      $errors.Add("Approved candidate missing mission scope assessment: $($candidate.id)")
+    }
+    else {
+      $scope = $candidate.scope_assessment
+      $requiredScopeFields = @('assessed_at','geographic_institutional_scope','specific_albuquerque_connection','abqinfo_public_information_value','general_context_exclusion_test','final_scope_decision','substantive_rationale')
+      foreach ($field in $requiredScopeFields) {
+        if (-not $scope.PSObject.Properties[$field] -or [string]::IsNullOrWhiteSpace([string]$scope.$field)) { $errors.Add("Approved candidate has incomplete mission scope assessment: $($candidate.id) = $field") }
+      }
+      if ($scope.final_scope_decision -ne 'passes_both_gates') { $errors.Add("Approved candidate does not have a positive mission scope decision: $($candidate.id) = $($scope.final_scope_decision)") }
+    }
+  }
   if ($candidate.status -in @('implemented','validated') -and -not $candidate.implementation_location) { $errors.Add("Implemented item missing location: $($candidate.id)") }
   if ($candidate.status -eq 'validated' -and $candidate.r2_url -and -not $candidate.source_url) { $errors.Add("R2-only item incorrectly marked validated without authoritative provenance: $($candidate.id)") }
   $locations = @($candidate.implementation_locations | Where-Object { $_ } | Sort-Object -Unique)

@@ -25,6 +25,8 @@ inventory = {record['id']: record for record in load(INVENTORY)['candidates']}
 assert len(saved) == len(records) == 18
 assert set(saved) == set(records)
 assert decision['state'] == 'approved_for_addition_inventory_only'
+assert decision['superseded_by_mission_scope_audit']['historical_evidence_preserved'] is True
+assert decision['superseded_by_mission_scope_audit']['r2_or_publication_action_authorized'] is False
 assert decision['placement_review']['decision'] == 'unresolved_for_all_records'
 for candidate_id, saved_record in saved.items():
     record, candidate = records[candidate_id], inventory[candidate_id]
@@ -32,7 +34,8 @@ for candidate_id, saved_record in saved.items():
         assert record[field] == saved_record[field], f'{candidate_id} {field} drifted from saved research'
     assert record['container'] == saved_record['content_kind']
     assert record['leading_bytes'] == saved_record['leading_bytes']
-    assert record['status'] == candidate['status'] == 'approved for addition'
+    assert record['status'] == 'approved for addition'
+    assert candidate['status'] == 'excluded'
     assert record['placement'] == 'unresolved'
     assert candidate['source_url'] == candidate['direct_file_url'] == saved_record['authoritative_url']
     assert candidate['agency'] == 'New Mexico Department of Transportation'
