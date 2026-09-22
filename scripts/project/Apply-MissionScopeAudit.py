@@ -187,7 +187,17 @@ def main():
         'applies_before': ['approved for addition', 'archive preparation', 'backlog prioritization', 'visible/static publication'],
         'required_scope_assessment_fields': list(scope('', '', '', '', '', '').keys()),
         'positive_approval_decision': 'passes_both_gates',
-        'regression_enforcement': 'Test-MasterInventory.ps1 rejects approved-for-addition candidates without a complete positive assessment; Test-MissionScopeAudit.py validates the 2026-09-22 correction and scope-gated ranking.',
+        'borderline_human_review': {
+            'scope_decision': 'requires_human_scope_review',
+            'inventory_status': 'requires human review',
+            'review_reason': 'mission_scope_borderline',
+            'only_when': 'A specific material Albuquerque connection and credible public-information value exist, but the usefulness/significance judgment is genuinely close.',
+            'maximum_unresolved_records': 20,
+            'queue_artifact': 'project-state/discovery/mission-scope-borderline-human-review-queue.json',
+            'human_decision_options': ['Add', 'Exclude', 'Needs more research'],
+            'advance_rule': 'No record with requires_human_scope_review may advance until a human disposition is durably applied to inventory and the relevant family decision artifact.',
+        },
+        'regression_enforcement': 'Test-MasterInventory.ps1 rejects incomplete scope assessments and scope-borderline advancement; Test-MissionScopeAudit.py validates the 2026-09-22 correction; Test-MissionScopeBorderlineQueue.py validates the isolated 20-record queue.',
     }
     write(POLICY, policy)
 

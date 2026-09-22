@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "artifact_type": "mission_scope_borderline_human_review_queue",
+  "recorded_at": "2026-09-22",
+  "purpose": "Rapid human editorial decisions for genuinely borderline mission-scope cases only. This queue excludes privacy, provenance, version/finality, legal-status, source-recovery, and every other human-review reason.",
+  "scope_outcome": "requires_human_scope_review",
+  "inventory_status": "requires human review",
+  "review_reason": "mission_scope_borderline",
+  "unresolved_count": 0,
+  "capacity": {
+    "maximum_unresolved_records": 20,
+    "below_capacity_policy": "Continue ordinary work while fewer than 20 unresolved scope-borderline records exist.",
+    "at_capacity_policy": "At exactly 20 unresolved records, stop adding scope-borderline cases and make this 20-record batch the next user-facing decision task before continuing reviews that could add more.",
+    "early_smaller_batch_exception": "Surface a smaller batch only when it is necessary to resolve the currently active family or no other productive ungated work remains."
+  },
+  "state": "open_under_threshold",
+  "new_borderline_intake_allowed": true,
+  "next_user_facing_decision_task": null,
+  "decision_options": [
+    "Add",
+    "Exclude",
+    "Needs more research"
+  ],
+  "records": [],
+  "resolved_records": [],
+  "prospective_only_note": "No completed 2026-09-22 mission-scope-audit disposition was changed to populate this workflow. The audit identified no ambiguous scope cases."
+}
