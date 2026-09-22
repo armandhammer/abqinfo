@@ -13,5 +13,6 @@ for n,r in enumerate(a['records'],1):
  assert r['canonical_placement']['page']=='content/transportation/roadway-projects/studies.md'
  assert r['source_evidence']['source_byte_verification']=='passed_re_fetched_authoritative_original'
  assert r['visual_qa']['result'].startswith('passed_')
+ if n==1: assert 'benign visual observation' in r['visual_qa']['detail']
  assert all(r['quality_assessment'][f] for f in ('visual_inspection','measured_content','standalone_public_value','information_density','series_component_relationship','intended_publication_form','rationale'))
 print('PASS: NMDOT seven-record archive preparation preserves exact originals, source evidence, Roadway Studies placement, completed visual QA, and the external R2 gate without mutation.')
