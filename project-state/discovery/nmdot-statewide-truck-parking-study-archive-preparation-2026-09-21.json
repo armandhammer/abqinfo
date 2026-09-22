@@ -2,8 +2,9 @@
   "schema_version": 1,
   "artifact_type": "nmdot_statewide_truck_parking_study_archive_preparation",
   "recorded_at": "2026-09-21",
-  "state": "archive_preparation_substantially_complete_pending_docx_host_visual_inspection_no_r2_mutation",
+  "state": "archive_preparation_complete_external_r2_upload_and_public_byte_verification_gated",
   "source_decision": "project-state/discovery/nmdot-statewide-truck-parking-study-decision-2026-09-19.json",
+  "docx_visual_qa_attestation": "project-state/discovery/nmdot-statewide-truck-parking-study-docx-visual-qa-attestation-2026-09-21.json",
   "scope_candidate_ids": [
     "src-1f8378fe0d939884",
     "src-1ce9fae6e4b2e675",
@@ -45,11 +46,11 @@
         "page_count": null
       },
       "visual_qa": {
-        "result": "pending_host_word_render_and_human_visual_inspection",
-        "detail": "Codex Word COM is unavailable (HRESULT 0x80070520). The supplied host-side helper verifies staged bytes, opens each original read-only, and exports inspection-only PDFs; no DOCX conversion or source mutation occurred."
+        "result": "passed_host_word_render_and_human_visual_inspection",
+        "detail": "The five inspection-only PDFs for Parts 1-5 rendered successfully from the already byte-verified DOCX originals. Human visual inspection confirmed they are complete and readable, with no obvious missing content, corrupted pages, malformed tables or figures, or significant rendering or layout defects. The DOCX originals remain unchanged and are the proposed future archive objects; the rendered PDFs are inspection-only derivatives."
       },
       "quality_assessment": {
-        "visual_inspection": "Codex Word COM is unavailable (HRESULT 0x80070520). The supplied host-side helper verifies staged bytes, opens each original read-only, and exports inspection-only PDFs; no DOCX conversion or source mutation occurred.",
+        "visual_inspection": "The five inspection-only PDFs for Parts 1-5 rendered successfully from the already byte-verified DOCX originals. Human visual inspection confirmed they are complete and readable, with no obvious missing content, corrupted pages, malformed tables or figures, or significant rendering or layout defects. The DOCX originals remain unchanged and are the proposed future archive objects; the rendered PDFs are inspection-only derivatives.",
         "measured_content": "Page count pending host render; 5988 extracted words; 602527 bytes; SHA-256 0b70f34707fd3b625c721e948917099b64948432af8f17134ec1be969db5da2d.",
         "standalone_public_value": "A distinct substantive phase of the complete statewide truck-parking study, needed to retain the project management, engagement, evidence, analysis, assessment, and implementation record as published.",
         "information_density": "Substantive technical-study content with narrative, data, tables, figures, or recommendations; not an administrative fragment.",
@@ -83,11 +84,12 @@
         "file_type": "DOCX",
         "size_bytes": 602527,
         "checksum_sha256": "0b70f34707fd3b625c721e948917099b64948432af8f17134ec1be969db5da2d",
-        "validation_status": "archive preparation complete except pending DOCX host-side visual inspection; no R2 archive or public-byte verification performed",
+        "validation_status": "archive preparation complete with visual QA passed; no R2 archive or public-byte verification performed",
         "processing_notes": [
           "Saved NMDOT statewide truck parking study research 2026-09-13: Served from NMDOT's public file host as 1 - Project Management Plan.docx. Container verified by leading bytes 504b0304; complete ordered family and placement decision retained in project-state/discovery/nmdot-statewide-truck-parking-study-decision-2026-09-19.json.",
           "Saved publisher: New Mexico Department of Transportation. The realfile.rtsclients.com delivery host is not treated as publisher.",
-          "Archive preparation 2026-09-21: re-fetched authoritative NMDOT original matched 602527 bytes and SHA-256 0b70f34707fd3b625c721e948917099b64948432af8f17134ec1be969db5da2d; proposed R2 key transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-1-project-management-plan.docx; no R2 upload or public-byte verification performed."
+          "Archive preparation 2026-09-21: re-fetched authoritative NMDOT original matched 602527 bytes and SHA-256 0b70f34707fd3b625c721e948917099b64948432af8f17134ec1be969db5da2d; proposed R2 key transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-1-project-management-plan.docx; no R2 upload or public-byte verification performed.",
+          "Archive preparation 2026-09-21: host-side DOCX render and human visual QA passed; unchanged DOCX remains proposed archive object."
         ]
       }
     },
@@ -117,11 +119,11 @@
         "page_count": null
       },
       "visual_qa": {
-        "result": "pending_host_word_render_and_human_visual_inspection",
-        "detail": "Codex Word COM is unavailable (HRESULT 0x80070520). The supplied host-side helper verifies staged bytes, opens each original read-only, and exports inspection-only PDFs; no DOCX conversion or source mutation occurred."
+        "result": "passed_host_word_render_and_human_visual_inspection",
+        "detail": "The five inspection-only PDFs for Parts 1-5 rendered successfully from the already byte-verified DOCX originals. Human visual inspection confirmed they are complete and readable, with no obvious missing content, corrupted pages, malformed tables or figures, or significant rendering or layout defects. The DOCX originals remain unchanged and are the proposed future archive objects; the rendered PDFs are inspection-only derivatives."
       },
       "quality_assessment": {
-        "visual_inspection": "Codex Word COM is unavailable (HRESULT 0x80070520). The supplied host-side helper verifies staged bytes, opens each original read-only, and exports inspection-only PDFs; no DOCX conversion or source mutation occurred.",
+        "visual_inspection": "The five inspection-only PDFs for Parts 1-5 rendered successfully from the already byte-verified DOCX originals. Human visual inspection confirmed they are complete and readable, with no obvious missing content, corrupted pages, malformed tables or figures, or significant rendering or layout defects. The DOCX originals remain unchanged and are the proposed future archive objects; the rendered PDFs are inspection-only derivatives.",
         "measured_content": "Page count pending host render; 1767 extracted words; 620430 bytes; SHA-256 c8e6a35189341675ef13238b0cb22f43d2352f47e25ce197a432066cc4d5921e.",
         "standalone_public_value": "A distinct substantive phase of the complete statewide truck-parking study, needed to retain the project management, engagement, evidence, analysis, assessment, and implementation record as published.",
         "information_density": "Substantive technical-study content with narrative, data, tables, figures, or recommendations; not an administrative fragment.",
@@ -155,11 +157,12 @@
         "file_type": "DOCX",
         "size_bytes": 620430,
         "checksum_sha256": "c8e6a35189341675ef13238b0cb22f43d2352f47e25ce197a432066cc4d5921e",
-        "validation_status": "archive preparation complete except pending DOCX host-side visual inspection; no R2 archive or public-byte verification performed",
+        "validation_status": "archive preparation complete with visual QA passed; no R2 archive or public-byte verification performed",
         "processing_notes": [
           "Saved NMDOT statewide truck parking study research 2026-09-13: Served from NMDOT's public file host as 2 - Stakeholder Engagement Plan.docx. Container verified by leading bytes 504b0304; complete ordered family and placement decision retained in project-state/discovery/nmdot-statewide-truck-parking-study-decision-2026-09-19.json.",
           "Saved publisher: New Mexico Department of Transportation. The realfile.rtsclients.com delivery host is not treated as publisher.",
-          "Archive preparation 2026-09-21: re-fetched authoritative NMDOT original matched 620430 bytes and SHA-256 c8e6a35189341675ef13238b0cb22f43d2352f47e25ce197a432066cc4d5921e; proposed R2 key transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-2-stakeholder-engagement-plan.docx; no R2 upload or public-byte verification performed."
+          "Archive preparation 2026-09-21: re-fetched authoritative NMDOT original matched 620430 bytes and SHA-256 c8e6a35189341675ef13238b0cb22f43d2352f47e25ce197a432066cc4d5921e; proposed R2 key transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-2-stakeholder-engagement-plan.docx; no R2 upload or public-byte verification performed.",
+          "Archive preparation 2026-09-21: host-side DOCX render and human visual QA passed; unchanged DOCX remains proposed archive object."
         ]
       }
     },
@@ -189,11 +192,11 @@
         "page_count": null
       },
       "visual_qa": {
-        "result": "pending_host_word_render_and_human_visual_inspection",
-        "detail": "Codex Word COM is unavailable (HRESULT 0x80070520). The supplied host-side helper verifies staged bytes, opens each original read-only, and exports inspection-only PDFs; no DOCX conversion or source mutation occurred."
+        "result": "passed_host_word_render_and_human_visual_inspection",
+        "detail": "The five inspection-only PDFs for Parts 1-5 rendered successfully from the already byte-verified DOCX originals. Human visual inspection confirmed they are complete and readable, with no obvious missing content, corrupted pages, malformed tables or figures, or significant rendering or layout defects. The DOCX originals remain unchanged and are the proposed future archive objects; the rendered PDFs are inspection-only derivatives."
       },
       "quality_assessment": {
-        "visual_inspection": "Codex Word COM is unavailable (HRESULT 0x80070520). The supplied host-side helper verifies staged bytes, opens each original read-only, and exports inspection-only PDFs; no DOCX conversion or source mutation occurred.",
+        "visual_inspection": "The five inspection-only PDFs for Parts 1-5 rendered successfully from the already byte-verified DOCX originals. Human visual inspection confirmed they are complete and readable, with no obvious missing content, corrupted pages, malformed tables or figures, or significant rendering or layout defects. The DOCX originals remain unchanged and are the proposed future archive objects; the rendered PDFs are inspection-only derivatives.",
         "measured_content": "Page count pending host render; 14561 extracted words; 6579570 bytes; SHA-256 ee2cdd4976db3dcb60927871709026bfa6ec2d4f91ae1bd2f104d208cd1130ad.",
         "standalone_public_value": "A distinct substantive phase of the complete statewide truck-parking study, needed to retain the project management, engagement, evidence, analysis, assessment, and implementation record as published.",
         "information_density": "Substantive technical-study content with narrative, data, tables, figures, or recommendations; not an administrative fragment.",
@@ -227,11 +230,12 @@
         "file_type": "DOCX",
         "size_bytes": 6579570,
         "checksum_sha256": "ee2cdd4976db3dcb60927871709026bfa6ec2d4f91ae1bd2f104d208cd1130ad",
-        "validation_status": "archive preparation complete except pending DOCX host-side visual inspection; no R2 archive or public-byte verification performed",
+        "validation_status": "archive preparation complete with visual QA passed; no R2 archive or public-byte verification performed",
         "processing_notes": [
           "Saved NMDOT statewide truck parking study research 2026-09-13: Served from NMDOT's public file host as 3 - Literature Review & Best Practices.docx. Container verified by leading bytes 504b0304; complete ordered family and placement decision retained in project-state/discovery/nmdot-statewide-truck-parking-study-decision-2026-09-19.json.",
           "Saved publisher: New Mexico Department of Transportation. The realfile.rtsclients.com delivery host is not treated as publisher.",
-          "Archive preparation 2026-09-21: re-fetched authoritative NMDOT original matched 6579570 bytes and SHA-256 ee2cdd4976db3dcb60927871709026bfa6ec2d4f91ae1bd2f104d208cd1130ad; proposed R2 key transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-3-literature-review-best-practices.docx; no R2 upload or public-byte verification performed."
+          "Archive preparation 2026-09-21: re-fetched authoritative NMDOT original matched 6579570 bytes and SHA-256 ee2cdd4976db3dcb60927871709026bfa6ec2d4f91ae1bd2f104d208cd1130ad; proposed R2 key transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-3-literature-review-best-practices.docx; no R2 upload or public-byte verification performed.",
+          "Archive preparation 2026-09-21: host-side DOCX render and human visual QA passed; unchanged DOCX remains proposed archive object."
         ]
       }
     },
@@ -261,11 +265,11 @@
         "page_count": null
       },
       "visual_qa": {
-        "result": "pending_host_word_render_and_human_visual_inspection",
-        "detail": "Codex Word COM is unavailable (HRESULT 0x80070520). The supplied host-side helper verifies staged bytes, opens each original read-only, and exports inspection-only PDFs; no DOCX conversion or source mutation occurred."
+        "result": "passed_host_word_render_and_human_visual_inspection",
+        "detail": "The five inspection-only PDFs for Parts 1-5 rendered successfully from the already byte-verified DOCX originals. Human visual inspection confirmed they are complete and readable, with no obvious missing content, corrupted pages, malformed tables or figures, or significant rendering or layout defects. The DOCX originals remain unchanged and are the proposed future archive objects; the rendered PDFs are inspection-only derivatives."
       },
       "quality_assessment": {
-        "visual_inspection": "Codex Word COM is unavailable (HRESULT 0x80070520). The supplied host-side helper verifies staged bytes, opens each original read-only, and exports inspection-only PDFs; no DOCX conversion or source mutation occurred.",
+        "visual_inspection": "The five inspection-only PDFs for Parts 1-5 rendered successfully from the already byte-verified DOCX originals. Human visual inspection confirmed they are complete and readable, with no obvious missing content, corrupted pages, malformed tables or figures, or significant rendering or layout defects. The DOCX originals remain unchanged and are the proposed future archive objects; the rendered PDFs are inspection-only derivatives.",
         "measured_content": "Page count pending host render; 5950 extracted words; 11815039 bytes; SHA-256 a4748261facc64582dda003b7a303b211b62beecd967b50d1ae889f699399455.",
         "standalone_public_value": "A distinct substantive phase of the complete statewide truck-parking study, needed to retain the project management, engagement, evidence, analysis, assessment, and implementation record as published.",
         "information_density": "Substantive technical-study content with narrative, data, tables, figures, or recommendations; not an administrative fragment.",
@@ -299,11 +303,12 @@
         "file_type": "DOCX",
         "size_bytes": 11815039,
         "checksum_sha256": "a4748261facc64582dda003b7a303b211b62beecd967b50d1ae889f699399455",
-        "validation_status": "archive preparation complete except pending DOCX host-side visual inspection; no R2 archive or public-byte verification performed",
+        "validation_status": "archive preparation complete with visual QA passed; no R2 archive or public-byte verification performed",
         "processing_notes": [
           "Saved NMDOT statewide truck parking study research 2026-09-13: Served from NMDOT's public file host as 4 - Freight Activity Evaluation.docx. Container verified by leading bytes 504b0304; complete ordered family and placement decision retained in project-state/discovery/nmdot-statewide-truck-parking-study-decision-2026-09-19.json.",
           "Saved publisher: New Mexico Department of Transportation. The realfile.rtsclients.com delivery host is not treated as publisher.",
-          "Archive preparation 2026-09-21: re-fetched authoritative NMDOT original matched 11815039 bytes and SHA-256 a4748261facc64582dda003b7a303b211b62beecd967b50d1ae889f699399455; proposed R2 key transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-4-freight-activity-evaluation.docx; no R2 upload or public-byte verification performed."
+          "Archive preparation 2026-09-21: re-fetched authoritative NMDOT original matched 11815039 bytes and SHA-256 a4748261facc64582dda003b7a303b211b62beecd967b50d1ae889f699399455; proposed R2 key transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-4-freight-activity-evaluation.docx; no R2 upload or public-byte verification performed.",
+          "Archive preparation 2026-09-21: host-side DOCX render and human visual QA passed; unchanged DOCX remains proposed archive object."
         ]
       }
     },
@@ -333,11 +338,11 @@
         "page_count": null
       },
       "visual_qa": {
-        "result": "pending_host_word_render_and_human_visual_inspection",
-        "detail": "Codex Word COM is unavailable (HRESULT 0x80070520). The supplied host-side helper verifies staged bytes, opens each original read-only, and exports inspection-only PDFs; no DOCX conversion or source mutation occurred."
+        "result": "passed_host_word_render_and_human_visual_inspection",
+        "detail": "The five inspection-only PDFs for Parts 1-5 rendered successfully from the already byte-verified DOCX originals. Human visual inspection confirmed they are complete and readable, with no obvious missing content, corrupted pages, malformed tables or figures, or significant rendering or layout defects. The DOCX originals remain unchanged and are the proposed future archive objects; the rendered PDFs are inspection-only derivatives."
       },
       "quality_assessment": {
-        "visual_inspection": "Codex Word COM is unavailable (HRESULT 0x80070520). The supplied host-side helper verifies staged bytes, opens each original read-only, and exports inspection-only PDFs; no DOCX conversion or source mutation occurred.",
+        "visual_inspection": "The five inspection-only PDFs for Parts 1-5 rendered successfully from the already byte-verified DOCX originals. Human visual inspection confirmed they are complete and readable, with no obvious missing content, corrupted pages, malformed tables or figures, or significant rendering or layout defects. The DOCX originals remain unchanged and are the proposed future archive objects; the rendered PDFs are inspection-only derivatives.",
         "measured_content": "Page count pending host render; 8334 extracted words; 9108586 bytes; SHA-256 9fa3b9685692911695ede0a23e08b8f28d4ff82275b83f22fe0dc7d51bc712e8.",
         "standalone_public_value": "A distinct substantive phase of the complete statewide truck-parking study, needed to retain the project management, engagement, evidence, analysis, assessment, and implementation record as published.",
         "information_density": "Substantive technical-study content with narrative, data, tables, figures, or recommendations; not an administrative fragment.",
@@ -371,11 +376,12 @@
         "file_type": "DOCX",
         "size_bytes": 9108586,
         "checksum_sha256": "9fa3b9685692911695ede0a23e08b8f28d4ff82275b83f22fe0dc7d51bc712e8",
-        "validation_status": "archive preparation complete except pending DOCX host-side visual inspection; no R2 archive or public-byte verification performed",
+        "validation_status": "archive preparation complete with visual QA passed; no R2 archive or public-byte verification performed",
         "processing_notes": [
           "Saved NMDOT statewide truck parking study research 2026-09-13: Served from NMDOT's public file host as 5 - Truck Parking Supply & Demand.docx. Container verified by leading bytes 504b0304; complete ordered family and placement decision retained in project-state/discovery/nmdot-statewide-truck-parking-study-decision-2026-09-19.json.",
           "Saved publisher: New Mexico Department of Transportation. The realfile.rtsclients.com delivery host is not treated as publisher.",
-          "Archive preparation 2026-09-21: re-fetched authoritative NMDOT original matched 9108586 bytes and SHA-256 9fa3b9685692911695ede0a23e08b8f28d4ff82275b83f22fe0dc7d51bc712e8; proposed R2 key transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-5-truck-parking-supply-demand.docx; no R2 upload or public-byte verification performed."
+          "Archive preparation 2026-09-21: re-fetched authoritative NMDOT original matched 9108586 bytes and SHA-256 9fa3b9685692911695ede0a23e08b8f28d4ff82275b83f22fe0dc7d51bc712e8; proposed R2 key transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-5-truck-parking-supply-demand.docx; no R2 upload or public-byte verification performed.",
+          "Archive preparation 2026-09-21: host-side DOCX render and human visual QA passed; unchanged DOCX remains proposed archive object."
         ]
       }
     },
@@ -443,7 +449,7 @@
         "file_type": "PDF",
         "size_bytes": 4415613,
         "checksum_sha256": "fc43e66829b534f1b2366727065279d831566e44cf9cea415cad4dc9ea15e638",
-        "validation_status": "archive preparation complete with PDF render/visual QA passed; no R2 archive or public-byte verification performed",
+        "validation_status": "archive preparation complete with visual QA passed; no R2 archive or public-byte verification performed",
         "processing_notes": [
           "Saved NMDOT statewide truck parking study research 2026-09-13: Served from NMDOT's public file host as 6 - Interstate Truck Parking Assessment.pdf. Container verified by leading bytes 25504446; complete ordered family and placement decision retained in project-state/discovery/nmdot-statewide-truck-parking-study-decision-2026-09-19.json.",
           "Saved publisher: New Mexico Department of Transportation. The realfile.rtsclients.com delivery host is not treated as publisher.",
@@ -515,7 +521,7 @@
         "file_type": "PDF",
         "size_bytes": 55752016,
         "checksum_sha256": "75c8517cda9067d992553a9600079748817aaecf31e482768c1079e48d3c2997",
-        "validation_status": "archive preparation complete with PDF render/visual QA passed; no R2 archive or public-byte verification performed",
+        "validation_status": "archive preparation complete with visual QA passed; no R2 archive or public-byte verification performed",
         "processing_notes": [
           "Saved NMDOT statewide truck parking study research 2026-09-13: Served from NMDOT's public file host as 7- Recommendation and Implementation Plan.pdf. Container verified by leading bytes 25504446; complete ordered family and placement decision retained in project-state/discovery/nmdot-statewide-truck-parking-study-decision-2026-09-19.json.",
           "Saved publisher: New Mexico Department of Transportation. The realfile.rtsclients.com delivery host is not treated as publisher.",
@@ -526,7 +532,7 @@
   ],
   "summary": {
     "source_verification_passed": 7,
-    "docx_visual_qa_pending": 5,
+    "docx_visual_qa_passed": 5,
     "pdf_render_qa_passed": 2,
     "r2_key_collisions": 0,
     "total_source_bytes": 88893781
@@ -535,13 +541,13 @@
     "helper": "scripts/project/Render-NmdotTruckParkingDocxInspection.ps1",
     "staged_originals": "research/staging/nmdot-statewide-truck-parking-study-archive-preparation-2026-09-21",
     "current_codex_limitation": "Word COM unavailable in Codex Windows execution context: HRESULT 0x80070520; this is not a source-document defect.",
-    "output_report": "research/staging/nmdot-statewide-truck-parking-study-archive-preparation-2026-09-21/docx-visual-render/host-docx-render-report.json"
+    "output_report": "research/staging/nmdot-statewide-truck-parking-study-archive-preparation-2026-09-21/docx-visual-render/host-docx-render-report.json",
+    "report_reconciliation": "The checked host-docx-render-report.json still records the prior Codex Windows Word COM failure 0x80070520 and has no rendered rows. It is retained as evidence of the Codex-session limitation, not treated as evidence against the completed interactive-host rendering and direct human inspection attestation."
   },
   "remaining_gates": [
-    "Five DOCX visual inspections remain pending through the supplied host-side helper.",
-    "No R2 upload/storage mutation is authorized.",
-    "Exact public-byte verification is required only after a separately authorized upload.",
-    "No Hugo, PR, merge, or deployment action is authorized."
+    "Obtain separate explicit authorization before any R2 upload or storage mutation.",
+    "After upload, verify each public archive download against saved exact size and SHA-256.",
+    "Obtain separate authorization for any Hugo/public-content, PR, merge, or deployment work."
   ],
   "safeguards_observed": {
     "r2_mutation": false,

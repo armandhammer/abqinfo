@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-21",
+  "scope_candidate_ids": [
+    "src-1f8378fe0d939884",
+    "src-1ce9fae6e4b2e675",
+    "src-a5f4c28aefd1ce20",
+    "src-57017bee270744dd",
+    "src-68d5d6b446b98b35"
+  ],
+  "renderer": "scripts/project/Render-NmdotTruckParkingDocxInspection.ps1",
+  "human_visual_qa": "passed",
+  "attestation": "The five inspection-only PDFs for Parts 1-5 rendered successfully from the already byte-verified DOCX originals. Human visual inspection confirmed they are complete and readable, with no obvious missing content, corrupted pages, malformed tables or figures, or significant rendering or layout defects.",
+  "preservation": "The DOCX originals remain unchanged and are the proposed future archive objects; the rendered PDFs are inspection-only derivatives.",
+  "report_reconciliation": "The checked host-docx-render-report.json still records the prior Codex Windows Word COM failure 0x80070520 and has no rendered rows. It is retained as evidence of the Codex-session limitation, not treated as evidence against the completed interactive-host rendering and direct human inspection attestation.",
+  "r2_action": "none"
+}
