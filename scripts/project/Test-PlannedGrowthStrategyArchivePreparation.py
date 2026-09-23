@@ -20,6 +20,8 @@ def main() -> None:
     r2 = load("project-state/r2-inventory.json")
     decision = load("project-state/discovery/planned-growth-strategy-decision-2026-09-19.json")
     recovery = load("project-state/discovery/planned-growth-strategy-source-recovery-and-presentation-2026-09-23.json")
+    archive_path = "project-state/discovery/planned-growth-strategy-archive-public-byte-verification-2026-09-23.json"
+    archive = load(archive_path) if (ROOT / archive_path).exists() else None
     expected = [
         ("src-9aeb5f621800da58", "Part1.pdf", 286),
         ("src-08b6b68b53336462", "Part2-1a.pdf", 56),
@@ -57,8 +59,19 @@ def main() -> None:
         "preparation_blockers": 0,
     }
     assert artifact["pdf_qa_attestation"]["result"] == "passed"
-    assert artifact["r2_inventory_snapshot"]["object_count"] == artifact["live_r2_inventory_snapshot"]["object_count"] == r2["object_count"] == 1218
-    assert artifact["r2_inventory_snapshot"]["total_bytes"] == artifact["live_r2_inventory_snapshot"]["total_bytes"] == r2["total_bytes"] == 8682142612
+    assert artifact["r2_inventory_snapshot"]["object_count"] == artifact["live_r2_inventory_snapshot"]["object_count"] == 1218
+    assert artifact["r2_inventory_snapshot"]["total_bytes"] == artifact["live_r2_inventory_snapshot"]["total_bytes"] == 8682142612
+    if archive:
+        assert archive["state"] == "complete_all_13_public_byte_verified_and_inventory_reconciled"
+        assert archive["summary"] == {"intended": 13, "uploaded_now": 13, "already_present_identical": 0, "public_byte_verified": 13, "added_bytes": 109212492}
+        assert archive["before_r2"]["object_count"] == 1218 and archive["before_r2"]["total_bytes"] == 8682142612
+        assert archive["after_r2"]["object_count"] == r2["object_count"] == 1231
+        assert archive["after_r2"]["total_bytes"] == r2["total_bytes"] == 8791355104
+        assert {result["id"] for result in archive["results"]} == expected_ids and len(archive["results"]) == 13
+        results = {result["id"]: result for result in archive["results"]}
+        objects = {obj["key"]: obj for obj in r2["objects"]}
+    else:
+        assert r2["object_count"] == 1218 and r2["total_bytes"] == 8682142612
     keys, hashes = set(), set()
     saved_r2_keys = {obj["key"].casefold() for obj in r2["objects"]}
     for n, record in enumerate(records, 1):
@@ -70,13 +83,27 @@ def main() -> None:
         assert record["size_bytes"] == row["size_bytes"] and record["checksum_sha256"] == row["checksum_sha256"]
         assert record["checksum_sha256"] not in hashes
         hashes.add(record["checksum_sha256"])
-        assert row["status"] == "approved for addition" and row["scope_assessment"]["final_scope_decision"] == "passes_both_gates"
+        assert row["status"] == ("placement assigned" if archive else "approved for addition")
+        assert row["scope_assessment"]["final_scope_decision"] == "passes_both_gates"
         assert row["local_path"] == record["staged_original"]
-        assert "archive preparation complete" in row["validation_status"]
-        assert row["r2_key"] is None and row["r2_url"] is None
+        if archive:
+            result = results[record["id"]]
+            obj = objects[record["proposed_r2_key"]]
+            assert result["action"] == "uploaded_now" and result["http_public_get"] == "passed" and result["byte_identical"] is True
+            assert result["source_url"] == record["authoritative_original_url"] == row["direct_file_url"]
+            assert result["public_url"] == record["proposed_future_archive_url"] == row["r2_url"] == obj["public_url"]
+            assert result["r2_key"] == row["r2_key"] == obj["key"]
+            assert result["expected_size_bytes"] == result["public_size_bytes"] == obj["size_bytes"] == record["size_bytes"]
+            assert result["expected_checksum_sha256"] == result["public_checksum_sha256"] == record["checksum_sha256"]
+            assert row["r2_etag"] == obj["etag"] and row["r2_last_modified"] == obj["last_modified"]
+            assert "public R2 bytes match exact size and SHA-256" in row["validation_status"]
+        else:
+            assert "archive preparation complete" in row["validation_status"]
+            assert row["r2_key"] is None and row["r2_url"] is None
         assert record["proposed_future_archive_url"] == "https://files.abqinfo.com/" + record["proposed_r2_key"]
         assert record["proposed_r2_key"].startswith("development-land-use/area-sector-plans/")
-        assert record["proposed_r2_key"].casefold() not in keys | saved_r2_keys
+        if not archive:
+            assert record["proposed_r2_key"].casefold() not in keys | saved_r2_keys
         keys.add(record["proposed_r2_key"].casefold())
         assert record["r2_key_collision"] is False and record["inventory_sha256_collision"] is False
         assert record["r2_action"] == "none" and record["preparation_blocker"] is None
@@ -109,7 +136,7 @@ def main() -> None:
             )), record["id"]
     assert all(value is False for value in artifact["safeguards_observed"].values())
     assert not any("Part1-" in r["served_filename"] or r["served_filename"] == "Part2.pdf" for r in records)
-    print("PASS: PGS preparation has exactly 13 original City PDFs, 109,212,492 verified bytes, 652 rendered pages, zero saved/live R2 key collisions, and no upload/publication action.")
+    print("PASS: PGS has exactly 13 City originals, 109,212,492 source bytes, 652 previously rendered pages, and " + ("13/13 exact public-byte-verified R2 objects with no content change." if archive else "zero prepared R2 key collisions with no upload/publication action."))
 
 
 if __name__ == "__main__":
