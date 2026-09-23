@@ -37,6 +37,10 @@ if (Test-Path -LiteralPath 'project-state/discovery/nmdot-statewide-truck-parkin
   & python "$PSScriptRoot/Test-NmdotTruckParkingStudyArchivePreparation.py"
   if ($LASTEXITCODE) { throw 'NMDOT truck-parking study archive-preparation validation failed.' }
 }
+if (Test-Path -LiteralPath 'project-state/discovery/planned-growth-strategy-archive-preparation-2026-09-23.json') {
+  & python "$PSScriptRoot/Test-PlannedGrowthStrategyArchivePreparation.py"
+  if ($LASTEXITCODE) { throw 'Planned Growth Strategy archive-preparation validation failed.' }
+}
 if (Test-Path -LiteralPath 'project-state/discovery/municipaldevelopment-standard-forms-archive-preparation-2026-09-19.json') {
   & python "$PSScriptRoot/Test-MunicipalDevelopmentStandardFormsArchivePreparation.py"
   & python "$PSScriptRoot/Test-MunicipalDevelopmentAgendaMinutesArchivePreparation.py"
