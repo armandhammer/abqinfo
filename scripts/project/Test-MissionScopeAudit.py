@@ -10,12 +10,19 @@ audit = json.loads((DISCOVERY / 'approved-inventory-mission-scope-audit-2026-09-
 priority = json.loads((DISCOVERY / 'approved-inventory-backlog-prioritization-mission-scope-2026-09-22.json').read_text(encoding='utf-8'))
 pgs_archive_path = DISCOVERY / 'planned-growth-strategy-archive-public-byte-verification-2026-09-23.json'
 pgs_archived_ids = set()
+pgs_implemented_ids = set()
 if pgs_archive_path.exists():
     pgs_archive = json.loads(pgs_archive_path.read_text(encoding='utf-8'))
     assert pgs_archive['state'] == 'complete_all_13_public_byte_verified_and_inventory_reconciled'
     assert pgs_archive['summary']['public_byte_verified'] == 13
     pgs_archived_ids = {result['id'] for result in pgs_archive['results']}
     assert len(pgs_archived_ids) == 13
+pgs_implementation_path = DISCOVERY / 'planned-growth-strategy-hugo-implementation-2026-09-23.json'
+if pgs_implementation_path.exists():
+    pgs_implementation = json.loads(pgs_implementation_path.read_text(encoding='utf-8'))
+    assert pgs_implementation['state'] == 'implemented_on_planning_branch_not_live'
+    pgs_implemented_ids = set(pgs_implementation['implemented_inventory_ids'])
+    assert pgs_implemented_ids == pgs_archived_ids
 
 required = {'assessed_at', 'geographic_institutional_scope', 'specific_albuquerque_connection', 'abqinfo_public_information_value', 'general_context_exclusion_test', 'final_scope_decision', 'substantive_rationale'}
 records = audit['records']
@@ -32,7 +39,7 @@ by_id = {c['id']: c for c in inventory['candidates']}
 for record in records:
     assert set(record['scope_assessment']) == required
     candidate = by_id[record['id']]
-    expected_status = 'placement assigned' if record['id'] in pgs_archived_ids and record['resulting_status'] == 'approved for addition' else record['resulting_status']
+    expected_status = ('implemented' if record['id'] in pgs_implemented_ids else 'placement assigned') if record['id'] in pgs_archived_ids and record['resulting_status'] == 'approved for addition' else record['resulting_status']
     assert candidate['status'] == expected_status
     assert candidate['scope_assessment'] == record['scope_assessment']
 for candidate in inventory['candidates']:

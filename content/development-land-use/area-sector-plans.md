@@ -8,6 +8,31 @@ Historical area, sector, and community plans that explain how Albuquerque neighb
 
   Maintains the City’s current reference index for adopted historical plans. ABQInfo preserves selected complete plans and adoption records whose context remains independently useful.
 
+## Citywide Growth Strategy
+
+The Planned Growth Strategy is a historical City and County study of future growth in Albuquerque and Bernalillo County. It examines development patterns and land-use alternatives alongside infrastructure costs, public services, level-of-service standards, finance, regulatory approaches, and City/County responsibilities. It is a planning-history record, not a statement of current zoning rules.
+
+- [Planned Growth Strategy, Part 1 — Complete Findings Report (286 Pages)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-planned-growth-strategy-part-1-findings-report.pdf)
+
+  The complete City original documents existing conditions, development trends, alternative growth scenarios, infrastructure costs, and economic impacts. [Official City PDF](https://www.cabq.gov/council/documents/pgs/Part1.pdf)
+
+Part 2, the Preferred Alternative, was published by the City as separate chapter PDFs. All 11 named chapters are represented below by 12 files because Chapter 1.0 has two deliveries. No verified complete combined Part 2 original has been located, so the City originals appear in documented order rather than as a merged PDF.
+
+Archived Part 2 chapters (each link is a separate original City PDF):
+
+1. [Chapter 1.0a — Introduction and Rationale, first half](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-planned-growth-strategy-part-2-chapter-01a-introduction-rationale.pdf) · [Official City PDF](https://www.cabq.gov/council/documents/pgs/Part2-1a.pdf)
+2. [Chapter 1.0b — Introduction and Rationale, second half](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-planned-growth-strategy-part-2-chapter-01b-introduction-rationale.pdf) · [Official City PDF](https://www.cabq.gov/council/documents/pgs/Part2-1b.pdf)
+3. [Chapter 2.0 — Subarea Descriptions](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-planned-growth-strategy-part-2-chapter-02-subarea-descriptions.pdf) · [Official City PDF](https://www.cabq.gov/council/documents/pgs/Part2-2.pdf)
+4. [Chapter 3.0 — Preferred Alternative Summary](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-planned-growth-strategy-part-2-chapter-03-preferred-alternative-summary.pdf) · [Official City PDF](https://www.cabq.gov/council/documents/pgs/part2-3.pdf)
+5. [Chapter 4.0 — Mixed-Use Redevelopment Examples](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-planned-growth-strategy-part-2-chapter-04-mixed-use-redevelopment-examples.pdf) · [Official City PDF](https://www.cabq.gov/council/documents/pgs/Part2-4.pdf)
+6. [Chapter 5.0 — Level of Service Standards](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-planned-growth-strategy-part-2-chapter-05-level-of-service-standards.pdf) · [Official City PDF](https://www.cabq.gov/council/documents/pgs/Part2-5.pdf)
+7. [Chapter 6.0 — Financial Implementation](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-planned-growth-strategy-part-2-chapter-06-financial-implementation.pdf) · [Official City PDF](https://www.cabq.gov/council/documents/pgs/Part2-6.pdf)
+8. [Chapter 7.0 — Regulatory Structure Approaches](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-planned-growth-strategy-part-2-chapter-07-regulatory-structure-approaches.pdf) · [Official City PDF](https://www.cabq.gov/council/documents/pgs/Part2-7.pdf)
+9. [Chapter 8.0 — Level of Service and Finance](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-planned-growth-strategy-part-2-chapter-08-level-of-service-and-finance.pdf) · [Official City PDF](https://www.cabq.gov/council/documents/pgs/Part2-8.pdf)
+10. [Chapter 9.0 — City/County Requirements](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-planned-growth-strategy-part-2-chapter-09-city-county-requirements.pdf) · [Official City PDF](https://www.cabq.gov/council/documents/pgs/Part2-9.pdf)
+11. [Chapter 10.0 — Growth Strategy Techniques Used in Other Locations](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-planned-growth-strategy-part-2-chapter-10-growth-strategy-techniques.pdf) · [Official City PDF](https://www.cabq.gov/council/documents/pgs/Part2-10.pdf)
+12. [Chapter 11.0 — Regulatory Structure Outline](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-planned-growth-strategy-part-2-chapter-11-regulatory-structure-outline.pdf) · [Official City PDF](https://www.cabq.gov/council/documents/pgs/Part2-11.pdf)
+
 ## Downtown Neighborhood Area
 
 - [Downtown Neighborhood Area Sector Development Plan Update (Draft, September 17, 2010; multipart)](https://www.cabq.gov/council/documents/dnasdp-documents/dna_sector_plan_-_part_1.pdf)

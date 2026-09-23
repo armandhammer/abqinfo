@@ -41,6 +41,10 @@ if (Test-Path -LiteralPath 'project-state/discovery/planned-growth-strategy-arch
   & python "$PSScriptRoot/Test-PlannedGrowthStrategyArchivePreparation.py"
   if ($LASTEXITCODE) { throw 'Planned Growth Strategy archive-preparation validation failed.' }
 }
+if (Test-Path -LiteralPath 'project-state/discovery/planned-growth-strategy-hugo-implementation-2026-09-23.json') {
+  & python "$PSScriptRoot/Test-PlannedGrowthStrategyHugoImplementation.py"
+  if ($LASTEXITCODE) { throw 'Planned Growth Strategy Hugo implementation validation failed.' }
+}
 if (Test-Path -LiteralPath 'project-state/discovery/municipaldevelopment-standard-forms-archive-preparation-2026-09-19.json') {
   & python "$PSScriptRoot/Test-MunicipalDevelopmentStandardFormsArchivePreparation.py"
   & python "$PSScriptRoot/Test-MunicipalDevelopmentAgendaMinutesArchivePreparation.py"
@@ -104,6 +108,10 @@ if (-not $?) { throw 'Autonomous parallel verification campaign regression faile
 if (-not $?) { throw 'Retained-source descendant-audit coverage failed.' }
 & $HugoPath --gc --minify --cleanDestinationDir --destination tmp/site-build
 if ($LASTEXITCODE) { throw 'Hugo build failed.' }
+if (Test-Path -LiteralPath 'project-state/discovery/planned-growth-strategy-hugo-implementation-2026-09-23.json') {
+  & python "$PSScriptRoot/Test-PlannedGrowthStrategyRenderedPage.py"
+  if ($LASTEXITCODE) { throw 'Planned Growth Strategy rendered-page validation failed.' }
+}
 
 $broken = @()
 if ($CheckExternalLinks) {

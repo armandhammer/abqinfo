@@ -22,6 +22,10 @@ def main() -> None:
     recovery = load("project-state/discovery/planned-growth-strategy-source-recovery-and-presentation-2026-09-23.json")
     archive_path = "project-state/discovery/planned-growth-strategy-archive-public-byte-verification-2026-09-23.json"
     archive = load(archive_path) if (ROOT / archive_path).exists() else None
+    implementation_path = "project-state/discovery/planned-growth-strategy-hugo-implementation-2026-09-23.json"
+    implementation = load(implementation_path) if (ROOT / implementation_path).exists() else None
+    if implementation:
+        assert archive and implementation["state"] == "implemented_on_planning_branch_not_live"
     expected = [
         ("src-9aeb5f621800da58", "Part1.pdf", 286),
         ("src-08b6b68b53336462", "Part2-1a.pdf", 56),
@@ -83,7 +87,7 @@ def main() -> None:
         assert record["size_bytes"] == row["size_bytes"] and record["checksum_sha256"] == row["checksum_sha256"]
         assert record["checksum_sha256"] not in hashes
         hashes.add(record["checksum_sha256"])
-        assert row["status"] == ("placement assigned" if archive else "approved for addition")
+        assert row["status"] == ("implemented" if implementation else "placement assigned" if archive else "approved for addition")
         assert row["scope_assessment"]["final_scope_decision"] == "passes_both_gates"
         assert row["local_path"] == record["staged_original"]
         if archive:
@@ -96,7 +100,12 @@ def main() -> None:
             assert result["expected_size_bytes"] == result["public_size_bytes"] == obj["size_bytes"] == record["size_bytes"]
             assert result["expected_checksum_sha256"] == result["public_checksum_sha256"] == record["checksum_sha256"]
             assert row["r2_etag"] == obj["etag"] and row["r2_last_modified"] == obj["last_modified"]
-            assert "public R2 bytes match exact size and SHA-256" in row["validation_status"]
+            if implementation:
+                assert row["implementation_location"] == row["proposed_canonical_page"] == implementation["page"]
+                assert row["implementation_locations"] == [implementation["page"]]
+                assert "planning branch" in row["validation_status"] and "production verification pending" in row["validation_status"]
+            else:
+                assert "public R2 bytes match exact size and SHA-256" in row["validation_status"]
         else:
             assert "archive preparation complete" in row["validation_status"]
             assert row["r2_key"] is None and row["r2_url"] is None
