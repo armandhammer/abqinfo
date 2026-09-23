@@ -24,6 +24,23 @@ for candidate in inventory['candidates']:
         assert assessment['final_scope_decision'] == 'requires_human_scope_review', candidate['id']
         expected.append(candidate['id'])
 assert [record['id'] for record in queue['records']] == sorted(expected)
+by_id = {candidate['id']: candidate for candidate in inventory['candidates']}
+resolved = queue.get('resolved_records', [])
+assert len({record['id'] for record in resolved}) == len(resolved)
+assert not ({record['id'] for record in resolved} & set(expected))
+for record in resolved:
+    candidate = by_id[record['id']]
+    assert record['decision'] in ('Add', 'Exclude')
+    assert record['prior_scope_assessment']['final_scope_decision'] == 'requires_human_scope_review'
+    assert candidate.get('review_reason') != 'mission_scope_borderline'
+    assert candidate['scope_assessment']['final_scope_decision'] != 'requires_human_scope_review'
+    assert record['disposition_key'] in {entry['disposition_key'] for entry in candidate['scope_assessment_history']}
+    if record['decision'] == 'Add':
+        assert record['resulting_status'] == 'approved for addition'
+        assert record['final_scope_assessment']['final_scope_decision'] == 'passes_both_gates'
+    else:
+        assert record['resulting_status'] == 'excluded'
+        assert record['final_scope_assessment']['final_scope_decision'] == 'excluded_insufficient_abqinfo_usefulness'
 if len(expected) < 20:
     assert queue['state'] == 'open_under_threshold' and queue['new_borderline_intake_allowed'] is True and queue['next_user_facing_decision_task'] is None
 else:

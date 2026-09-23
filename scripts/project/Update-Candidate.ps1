@@ -44,12 +44,15 @@ function ConvertTo-ComparableJson($Value) {
 }
 
 $inventory = Read-InventoryWithRetry $InventoryPath
+. "$PSScriptRoot/MissionScopePolicy.ps1"
+$legacyScopeRegistry = Read-MissionScopeLegacyRegistry
 $candidate = @($inventory.candidates | Where-Object id -eq $Id)
 if ($candidate.Count -ne 1) { throw "Expected one candidate for '$Id'; found $($candidate.Count)." }
 $candidate = $candidate[0]
 $candidateChanged = $false
 foreach ($key in $Set.Keys) {
-  if (-not $candidate.PSObject.Properties[$key]) { throw "Unknown inventory field '$key'." }
+  if (-not $candidate.PSObject.Properties[$key] -and $key -notin @('scope_assessment','review_reason')) { throw "Unknown inventory field '$key'." }
+  if (-not $candidate.PSObject.Properties[$key]) { $candidate | Add-Member -NotePropertyName $key -NotePropertyValue $null }
   if ((ConvertTo-ComparableJson $candidate.$key) -ne (ConvertTo-ComparableJson $Set[$key])) {
     $candidate.$key = $Set[$key]
     $candidateChanged = $true
@@ -57,6 +60,12 @@ foreach ($key in $Set.Keys) {
 }
 if ($candidateChanged -and $Set.ContainsKey('description')) {
   $candidate.description_word_count = if ([string]::IsNullOrWhiteSpace($candidate.description)) { 0 } else { @($candidate.description -split '\s+' | Where-Object { $_ }).Count }
+}
+if ($candidateChanged) {
+  $candidate.updated_at = (Get-Date).ToUniversalTime().ToString('o')
+  if (-not (Test-MissionScopeProgressEligible $candidate $legacyScopeRegistry)) {
+    throw "Candidate '$Id' cannot enter or remain in '$($candidate.status)' after an update without a complete positive mission scope assessment."
+  }
 }
 $counts = [ordered]@{}
 foreach ($status in $inventory.allowed_statuses) { $counts[$status] = @($inventory.candidates | Where-Object status -eq $status).Count }
@@ -66,7 +75,6 @@ $aggregateChanged =
   (ConvertTo-ComparableJson $inventory.counts) -ne (ConvertTo-ComparableJson ([pscustomobject]$counts)) -or
   $inventory.next_pending_id -ne $expectedNext
 if ($candidateChanged -or $aggregateChanged) {
-  if ($candidateChanged) { $candidate.updated_at = (Get-Date).ToUniversalTime().ToString('o') }
   $inventory.counts = [pscustomobject]$counts
   $inventory.next_pending_id = $expectedNext
   $inventory.generated_at = (Get-Date).ToUniversalTime().ToString('o')

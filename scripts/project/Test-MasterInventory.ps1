@@ -6,7 +6,9 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
-$inventory = Get-Content -Raw -Encoding UTF8 $InventoryPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 $InventoryPath | ConvertFrom-Json -DateKind String
+. "$PSScriptRoot/MissionScopePolicy.ps1"
+$legacyScopeRegistry = Read-MissionScopeLegacyRegistry
 $errors = [Collections.Generic.List[string]]::new()
 $ids = @{}
 $primaryUrls = [Collections.Generic.HashSet[string]]::new([StringComparer]::Ordinal)
@@ -49,18 +51,8 @@ foreach ($candidate in $inventory.candidates) {
   }
   if ($candidate.status -in @('implemented','validated') -and -not $candidate.description) { $errors.Add("Implemented item missing description: $($candidate.id)") }
   if ($candidate.status -in @('excluded','duplicate','superseded') -and -not $candidate.exclusion_reason) { $errors.Add("Terminal exclusion missing reason: $($candidate.id)") }
-  if ($candidate.status -eq 'approved for addition') {
-    if (-not $candidate.PSObject.Properties['scope_assessment'] -or $null -eq $candidate.scope_assessment) {
-      $errors.Add("Approved candidate missing mission scope assessment: $($candidate.id)")
-    }
-    else {
-      $scope = $candidate.scope_assessment
-      $requiredScopeFields = @('assessed_at','geographic_institutional_scope','specific_albuquerque_connection','abqinfo_public_information_value','general_context_exclusion_test','final_scope_decision','substantive_rationale')
-      foreach ($field in $requiredScopeFields) {
-        if (-not $scope.PSObject.Properties[$field] -or [string]::IsNullOrWhiteSpace([string]$scope.$field)) { $errors.Add("Approved candidate has incomplete mission scope assessment: $($candidate.id) = $field") }
-      }
-      if ($scope.final_scope_decision -ne 'passes_both_gates') { $errors.Add("Approved candidate does not have a positive mission scope decision: $($candidate.id) = $($scope.final_scope_decision)") }
-    }
+  if (-not (Test-MissionScopeProgressEligible $candidate $legacyScopeRegistry)) {
+    $errors.Add("Candidate in $($candidate.status) lacks a complete positive mission scope assessment or an unchanged cutover legacy entry: $($candidate.id)")
   }
   if ($candidate.status -eq 'requires human review' -and $candidate.PSObject.Properties['review_reason'] -and $candidate.review_reason -eq 'mission_scope_borderline') {
     if (-not $candidate.PSObject.Properties['scope_assessment'] -or $null -eq $candidate.scope_assessment) {

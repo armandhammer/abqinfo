@@ -18,6 +18,21 @@
     "substantive_rationale"
   ],
   "positive_approval_decision": "passes_both_gates",
+  "progress_statuses_requiring_positive_scope": [
+    "approved for addition",
+    "downloading",
+    "downloaded",
+    "parsed",
+    "description drafted",
+    "placement assigned",
+    "implemented",
+    "validated"
+  ],
+  "legacy_cutover": {
+    "artifact": "project-state/discovery/mission-scope-legacy-cutover-2026-09-23.json",
+    "rule": "Only the exact 1628 frozen historical records at their original ID, later status, and updated_at may validate without retrospective scope assessments. Any edit or state transition invalidates this exception and requires a complete passes_both_gates assessment. No new record can enter the cutover registry.",
+    "legacy_statuses": ["placement assigned", "implemented", "validated"]
+  },
   "borderline_human_review": {
     "scope_decision": "requires_human_scope_review",
     "inventory_status": "requires human review",
@@ -50,5 +65,5 @@
     "human_decision_options": ["Add", "Exclude", "Needs more research"],
     "advance_rule": "No record with requires_human_scope_review may advance to an eligible publication state until a human disposition is durably applied to inventory and the relevant family decision artifact."
   },
-  "regression_enforcement": "Test-MasterInventory.ps1 rejects approved-for-addition candidates without a complete positive assessment and incomplete scope-borderline records; Test-MissionScopeAudit.py validates the 2026-09-22 correction and scope-gated ranking; Test-MissionScopeBorderlineQueue.py validates the isolated 20-record queue."
+  "regression_enforcement": "Test-MasterInventory.ps1 and Update-Candidate.ps1 require complete positive assessments in all eight progress statuses except for the immutable exact-record legacy cutover. Test-MissionScopeEligibility.ps1 exercises historical validation and new-record transitions. Test-MissionScopeAudit.py validates the 2026-09-22 correction and scope-gated ranking. Test-MissionScopeBorderlineQueue.py and Test-MissionScopeBorderlineDispositions.py validate the isolated queue, durable human history, and idempotent disposition application."
 }

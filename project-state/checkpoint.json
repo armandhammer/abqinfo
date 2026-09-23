@@ -1,6 +1,6 @@
 {
-  "recorded_at": "2026-09-22T13:14:47.3786627Z",
-  "completed_item_range": "Extended the mission-scope system with a prospective dedicated borderline human-review workflow. The isolated queue is empty and records only requires_human_scope_review cases with review_reason mission_scope_borderline; it does not alter any completed 86-record audit disposition or mix other human-review reasons. New safeguards prevent borderline records from advancing until a durable human Add, Exclude, or Needs more research disposition updates inventory and the relevant decision artifact. No archive, R2, Hugo, PR, merge, deployment, or source-research action occurred.",
+  "recorded_at": "2026-09-23T17:42:17.8780126Z",
+  "completed_item_range": "Closed the mission-scope later-status bypass with an exact historical cutover and fixed durable, idempotent borderline human-disposition history. The 86-record audit and empty scope-borderline queue are unchanged. No new-family or external work occurred.",
   "total_candidates": 7136,
   "counts_by_status": {
     "pending review": 1612,
@@ -21,10 +21,10 @@
   "remaining_nonterminal": 1831,
   "next_pending_id": "src-05ec421cb265b29a",
   "blockers": [
-    "Mission-scope gate is mandatory before approval, archive preparation, or ranking.",
-    "Mission-scope borderline queue has 0 unresolved records; continue ordinary work until it reaches 20 unless an active-family or no-work exception applies.",
+    "Mission scope is mandatory in all eight approval-through-validation states; only exact unchanged 2026-09-23 legacy later-state rows validate without retrospective assessments.",
+    "Mission-scope borderline queue has 0 unresolved records; continue ordinary work until 20 unless an active-family or no-work exception applies.",
     "The seven NMDOT statewide truck-parking records and 18 NMDOT grant-administration/application records remain excluded.",
-    "Planned Growth Strategy Part 2 remains incomplete pending authoritative City recovery of Chapter 3.0.",
+    "Planned Growth Strategy Part 2 remains incomplete pending separately authorized authoritative City recovery of Chapter 3.0.",
     "2014 MS4, Prescription Trails, Code-enforcement Notices and Orders, LGCC, and corrected DPM packet gates remain externally gated."
   ],
   "resume_command": "When separately authorized, perform only the bounded authoritative-source recovery and truthful family-presentation determination for the missing Planned Growth Strategy Part 2 Chapter 3.0 original. Do not begin archive preparation, R2 mutation, Hugo work, a PR, merge, or deployment. Validation regression anchor: src-09b266eabc8aa975 remains named only to preserve the bounded fiber-rulemaking decision test; it is not an instruction to begin that work.",
@@ -4684,6 +4684,96 @@
         "The seven NMDOT statewide truck-parking records are excluded; do not upload or publish them.",
         "The 18 NMDOT grant-administration/application records are excluded for insufficient Albuquerque relevance.",
         "The two Municipal Development standard-form agreements are excluded for insufficient ABQInfo usefulness.",
+        "Planned Growth Strategy Part 2 remains incomplete pending authoritative City recovery of Chapter 3.0.",
+        "2014 MS4, Prescription Trails, Code-enforcement Notices and Orders, LGCC, and corrected DPM packet gates remain externally gated."
+      ],
+      "resume_command": "When separately authorized, perform only the bounded authoritative-source recovery and truthful family-presentation determination for the missing Planned Growth Strategy Part 2 Chapter 3.0 original. Do not begin archive preparation, R2 mutation, Hugo work, a PR, merge, or deployment. Validation regression anchor: src-09b266eabc8aa975 remains named only to preserve the bounded fiber-rulemaking decision test; it is not an instruction to begin that work.",
+      "verification_campaign_totals": {
+        "verified": 2194,
+        "passed": 2070,
+        "requires_human_review": 124
+      },
+      "durable_metadata": {
+        "dpm_annual_consolidation": {
+          "state": "corrected_local_packets_generated_upload_externally_gated",
+          "manifest": "project-state/discovery/dpm-executive-committee-consolidation-manifest-2026-09-17.json",
+          "component_count": 44,
+          "packets": [
+            {
+              "year": 2014,
+              "component_count": 5,
+              "page_count": 13,
+              "size_bytes": 284803,
+              "sha256": "e03ddf4a07f20a83b76b6f5ee8afdfda956a0713c68b3a71e3ae034be78c6656",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2014.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2014.pdf"
+            },
+            {
+              "year": 2015,
+              "component_count": 9,
+              "page_count": 17,
+              "size_bytes": 773060,
+              "sha256": "51457ec34cd80383e6ad92aa38f17da84101b0ad118a8d687e2db48dd468be26",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2015.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2015.pdf"
+            },
+            {
+              "year": 2016,
+              "component_count": 9,
+              "page_count": 19,
+              "size_bytes": 449277,
+              "sha256": "9cae8d9fc7fa3a8ea727309015b656749ab759c89a0b434b3689f9f008359ed9",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2016.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2016.pdf"
+            },
+            {
+              "year": 2017,
+              "component_count": 15,
+              "page_count": 32,
+              "size_bytes": 762787,
+              "sha256": "d41a926cc273886293d4669ae5cb989c442ed3a8fc5fc7cb9c88c869250241c2",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2017.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2017.pdf"
+            },
+            {
+              "year": 2018,
+              "component_count": 6,
+              "page_count": 10,
+              "size_bytes": 376588,
+              "sha256": "87b085020276d880d388a702c23819027b5b510a955f672d464069df0896273b",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2018.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2018.pdf"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "recorded_at": "2026-09-22T13:14:47.3786627Z",
+      "completed_item_range": "Extended the mission-scope system with a prospective dedicated borderline human-review workflow. The isolated queue is empty and records only requires_human_scope_review cases with review_reason mission_scope_borderline; it does not alter any completed 86-record audit disposition or mix other human-review reasons. New safeguards prevent borderline records from advancing until a durable human Add, Exclude, or Needs more research disposition updates inventory and the relevant decision artifact. No archive, R2, Hugo, PR, merge, deployment, or source-research action occurred.",
+      "total_candidates": 7136,
+      "counts_by_status": {
+        "pending review": 1612,
+        "approved for addition": 58,
+        "downloading": 0,
+        "downloaded": 0,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 2,
+        "implemented": 159,
+        "validated": 1467,
+        "excluded": 1885,
+        "duplicate": 1517,
+        "superseded": 231,
+        "blocked": 0,
+        "requires human review": 205
+      },
+      "remaining_nonterminal": 1831,
+      "next_pending_id": "src-05ec421cb265b29a",
+      "blockers": [
+        "Mission-scope gate is mandatory before approval, archive preparation, or ranking.",
+        "Mission-scope borderline queue has 0 unresolved records; continue ordinary work until it reaches 20 unless an active-family or no-work exception applies.",
+        "The seven NMDOT statewide truck-parking records and 18 NMDOT grant-administration/application records remain excluded.",
         "Planned Growth Strategy Part 2 remains incomplete pending authoritative City recovery of Chapter 3.0.",
         "2014 MS4, Prescription Trails, Code-enforcement Notices and Orders, LGCC, and corrected DPM packet gates remain externally gated."
       ],

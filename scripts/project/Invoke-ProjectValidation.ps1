@@ -9,6 +9,8 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 & "$PSScriptRoot/Test-MasterInventory.ps1" -InventoryPath $InventoryPath
 if (-not $?) { throw 'Master inventory validation failed.' }
+& "$PSScriptRoot/Test-MissionScopeEligibility.ps1"
+if (-not $?) { throw 'Mission-scope later-status eligibility regression failed.' }
 if (Test-Path -LiteralPath 'project-state/discovery/approved-inventory-mission-scope-audit-2026-09-22.json') {
   & python "$PSScriptRoot/Test-MissionScopeAudit.py"
   if ($LASTEXITCODE) { throw 'Mission-scope audit regression failed.' }
@@ -16,6 +18,8 @@ if (Test-Path -LiteralPath 'project-state/discovery/approved-inventory-mission-s
 if (Test-Path -LiteralPath 'project-state/discovery/mission-scope-borderline-human-review-queue.json') {
   & python "$PSScriptRoot/Test-MissionScopeBorderlineQueue.py"
   if ($LASTEXITCODE) { throw 'Mission-scope borderline human-review queue regression failed.' }
+  & python "$PSScriptRoot/Test-MissionScopeBorderlineDispositions.py"
+  if ($LASTEXITCODE) { throw 'Mission-scope borderline disposition regression failed.' }
 }
 & "$PSScriptRoot/Test-UpdateCouncilCloseoutCheckpoint.ps1"
 if (-not $?) { throw 'Council checkpoint idempotency validation failed.' }
