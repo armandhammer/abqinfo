@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -89,6 +90,23 @@ def main() -> None:
             assert staged.stat().st_size == record["size_bytes"] and digest == record["checksum_sha256"]
     assert records[4]["checksum_sha256"] == "56401ff3c1a17c2e19465c8b71f7b2afa893ad00e20a2bf6a5e92a66e60e1b08"
     assert records[4]["size_bytes"] == 6068014
+    assert recovery["chapter_3_result"]["recovered"] is True
+    assert recovery["combined_part_2_result"]["verified_complete_combined_original_found"] is False
+    assert records[4]["quality_assessment"] == recovery["quality_assessment_for_recovered_chapter"]
+    older_part_2_ids = set(decision["family_relationships"]["part_2_obtainable_files"])
+    assert len(older_part_2_ids) == 11
+    for record in records[1:]:
+        prose = " ".join(str(value) for value in record["quality_assessment"].values() if isinstance(value, str)).casefold()
+        assert not any(phrase in prose for phrase in (
+            "unavailable summary chapter", "permanent chapter 3.0 gap",
+            "permanently lacks chapter 3.0", "missing-chapter notice",
+        )), record["id"]
+        assert not re.search(r"chapter 3(?:\.0)? (?:is |remains )?(?:unavailable|missing|absent|not found|not located)", prose), record["id"]
+        if record["id"] in older_part_2_ids:
+            assert all(phrase in prose for phrase in (
+                "11 named chapters", "12 separate official city pdf deliveries", "recovered chapter 3.0",
+                "no verified complete combined part 2 original", "curated multipart family",
+            )), record["id"]
     assert all(value is False for value in artifact["safeguards_observed"].values())
     assert not any("Part1-" in r["served_filename"] or r["served_filename"] == "Part2.pdf" for r in records)
     print("PASS: PGS preparation has exactly 13 original City PDFs, 109,212,492 verified bytes, 652 rendered pages, zero saved/live R2 key collisions, and no upload/publication action.")

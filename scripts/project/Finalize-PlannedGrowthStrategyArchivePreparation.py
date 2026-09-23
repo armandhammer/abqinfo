@@ -54,8 +54,21 @@ def main() -> None:
     assert len(artifact["records"]) == 13 and [r["id"] for r in artifact["records"]] == list(ORDER)
     assert (saved["object_count"], saved["total_bytes"]) == (live["object_count"], live["total_bytes"])
     saved_keys, live_keys = ({r["key"].casefold() for r in source["objects"]} for source in (saved, live))
-    prior_quality = {r["id"]: r["quality_assessment"] for r in decision["dispositions"]["approved_for_addition"]}
-    prior_quality[recovery["chapter_3_result"]["inventory_id"]] = recovery["quality_assessment_for_recovered_chapter"]
+    quality = {r["id"]: r["quality_assessment"] for r in decision["dispositions"]["approved_for_addition"]}
+    older_part_2_ids = decision["family_relationships"]["part_2_obtainable_files"]
+    assert len(older_part_2_ids) == 11
+    assert recovery["chapter_3_result"]["recovered"] is True
+    assert recovery["combined_part_2_result"]["verified_complete_combined_original_found"] is False
+    assert "all 11 named chapters are represented by 12 separate City PDF deliveries" in recovery["final_family_determination"]["part_2_chapter_roster"]
+    for record_id in older_part_2_ids:
+        # The September 19 assessment is historical; the later recovery controls presentation.
+        quality[record_id] = {
+            **quality[record_id],
+            "rationale": "This substantive City chapter is a component of the complete named Part 2 chapter roster. All 11 named chapters are represented by 12 separate official City PDF deliveries, including recovered Chapter 3.0, and belong in one curated multipart family.",
+            "aggregation_rationale": "No verified complete combined Part 2 original has been found. Keeping the 12 separate City originals in documented chapter order preserves provenance without inventing a derivative combined volume.",
+            "standalone_exception": "Present this original City delivery with the other Part 2 components in a curated multipart family. Chapter 3.0 is recovered, so no gap warning is required; the chapter series must not be described as an original combined volume.",
+        }
+    quality[recovery["chapter_3_result"]["inventory_id"]] = recovery["quality_assessment_for_recovered_chapter"]
     warnings = []
     for record in artifact["records"]:
         record_id, key = record["id"], record["proposed_r2_key"]
@@ -73,7 +86,7 @@ def main() -> None:
         assert inventory_hashes[record["checksum_sha256"]] == [record_id]
         record["container"] = "PDF"
         record["pdf_version"] = staged.open("rb").read(8).decode("ascii", errors="replace").strip()
-        record["quality_assessment"] = prior_quality[record_id]
+        record["quality_assessment"] = quality[record_id]
         record["r2_key_collision"] = False
         record["inventory_sha256_collision"] = False
         record["collision_check"] = "No case-insensitive exact-key collision in saved or read-only live R2 inventory, each 1,218 objects / 8,682,142,612 bytes."
