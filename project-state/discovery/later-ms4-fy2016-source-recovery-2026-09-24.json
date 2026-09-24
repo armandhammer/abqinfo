@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "artifact_type": "bounded_authoritative_source_recovery",
+  "recorded_at": "2026-09-24T21:42:50Z",
+  "outcome": "A_exact_authoritative_recovery",
+  "scope": "Research-only source recovery for FY2016 and narrow source-integrity checks for the other five retained later-MS4 records. The separately gated 2014 MS4 annual-report body and 27 attachments were not reviewed or changed.",
+  "target": {
+    "id": "src-975528e01439f6df",
+    "identity": "City of Albuquerque signed and compiled FY2016 MS4 Annual Report, NMR04A014, compiled November 21, 2016",
+    "inventory_status_before_and_after": "approved for addition",
+    "expected_size_bytes": 10027499,
+    "expected_sha256": "e5b5713e32de6cb04119a11d5f4e2ef6183a81ddfda73b46dc56bad9e1be982e",
+    "legacy_url": "https://www.cabq.gov/municipaldevelopment/documents/storm-drainage-documents/annual_report_ver-6-112116-signed-compiled-small.pdf",
+    "legacy_url_history": "Saved 2026-09-14 full GET produced the expected City PDF; the 2026-09-20 family review recorded HTTP 404. On 2026-09-24 this same City URL again returned HTTP 200 and the exact saved bytes. The intervening 404 remains historical evidence; no migration or replacement URL is claimed.",
+    "current_authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/storm-drainage-documents/annual_report_ver-6-112116-signed-compiled-small.pdf",
+    "retrieval": {
+      "date_utc": "2026-09-24",
+      "method": "Live PowerShell Invoke-WebRequest HEAD followed by full GET from the City URL; local temporary download hashed with Get-FileHash SHA256.",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "content_length_header_bytes": 10027499,
+      "downloaded_size_bytes": 10027499,
+      "downloaded_sha256": "e5b5713e32de6cb04119a11d5f4e2ef6183a81ddfda73b46dc56bad9e1be982e",
+      "exact_saved_original_match": true,
+      "temporary_download": "C:/Users/ben/AppData/Local/Temp/abqinfo-fy2016-ms4-source-recovery-2026-09-24.pdf; research copy only, not an archive or repository artifact"
+    },
+    "pdf_identity_verification": {
+      "method": "Read the downloaded PDF with pypdf after exact hash comparison.",
+      "pages": 173,
+      "page_1": "EPA MS4 Annual Report Format names City of Albuquerque, NMR04A014, and reporting period July 1, 2015 through June 30, 2016.",
+      "page_6": "Certification Statement and Signature section is present.",
+      "page_7": "City of Albuquerque Annual Report for Fiscal Year 2016 (FY16), July 1, 2015 to June 30, 2016; NPDES permit NMR04A000.",
+      "conclusion": "The byte-identical City-served PDF is the saved signed/compiled FY2016 filing, not another year, draft, isolated attachment, or derivative. The compilation date is supported by its established City filename and saved identity; no new date was inferred from metadata."
+    }
+  },
+  "source_path_investigation": {
+    "priority_1_current_cabq_gov": "The current City MS4 Permit page directly links 'View the 2016 annual report' to the saved legacy URL; live HEAD and full GET now succeed at that URL.",
+    "current_city_page": "https://www.cabq.gov/municipaldevelopment/our-department/engineering/storm-water-management/municipal-separate-storm-sewer-system-ms4-permit",
+    "priority_2_documents_cabq_gov": "The municipal-development document index was checked for migration patterns. It lists the later FY2019, FY2020, and FY2021 filings under documents.cabq.gov, but no FY2016 counterpart at that directory root. No candidate from this tier was needed once the exact City original was recovered at priority 1.",
+    "document_index": "https://documents.cabq.gov/municipal-development/",
+    "patterns_considered": [
+      "Original filename, underscores, date suffix, and capitalization at the current cabq.gov path",
+      "www.cabq.gov to documents.cabq.gov migration seen in FY2019-FY2021 paths",
+      "Municipal Development document-root versus storm-drainage-documents directory structure",
+      "FY2020 lowercase nmr04a014 document-host correction from the saved family decision"
+    ],
+    "lower_priority_sources": "No other government repository or third-party archive was needed. No Internet Archive copy is classified as a current authoritative source."
+  },
+  "other_five_source_integrity": [
+    {"id": "src-5cdb4d5491c3a02d", "record": "2014 EPA Middle Rio Grande watershed-based MS4 general permit", "saved_url": "https://www.cabq.gov/municipaldevelopment/documents/storm-drainage-documents/ms4-permit.pdf", "head_http_status": 200, "content_type": "application/pdf", "content_length_bytes": 1724506, "matches_saved_size": true},
+    {"id": "src-fdc66c5b8de48584", "record": "FY2017 City MS4 Annual Report", "saved_url": "https://www.cabq.gov/municipaldevelopment/documents/storm-drainage-documents/fiscal-2017-ms4-annual-report.pdf", "head_http_status": 200, "content_type": "application/pdf", "content_length_bytes": 138084248, "matches_saved_size": true},
+    {"id": "src-7c1a063b817989bd", "record": "FY2019 City MS4 Annual Report", "saved_url": "https://documents.cabq.gov/municipal-development/city-of-albuquerque-fy19-ms4-annual-report-nmr04A014.pdf", "head_http_status": 200, "content_type": "application/pdf", "content_length_bytes": 122657409, "matches_saved_size": true},
+    {"id": "src-eda3280085776f61", "record": "final FY2020 City MS4 Annual Report", "saved_url": "https://documents.cabq.gov/municipal-development/city-of-albuquerque-final-fy20-ms4-annual-report-nmr04a014.pdf", "head_http_status": 200, "content_type": "application/pdf", "content_length_bytes": 133787450, "matches_saved_size": true, "migration_history": "The former URL returned 404 in the 2026-09-20 review; this lowercase documents.cabq.gov variant then returned the expected authoritative bytes and remains usable."},
+    {"id": "src-e531466aed7f5387", "record": "final FY2021 City MS4 Annual Report", "saved_url": "https://documents.cabq.gov/municipal-development/city-of-albuquerque-fy21-ms4-annual-report-nmr04a14.pdf", "head_http_status": 200, "content_type": "application/pdf", "content_length_bytes": 20645626, "matches_saved_size": true}
+  ],
+  "family_source_complete": true,
+  "source_integrity_limit": "The other five checks were live HEAD status, content type, and exact length comparisons only. Their previously saved SHA-256 measurements were not repeated by full download in this bounded task.",
+  "fy2018_note": "No missing FY2018 filing is inferred; preserve the 2026-09-20 family decision.",
+  "inventory_action": "No inventory status, source URL, expected size, checksum, or disposition changed. The same authoritative City URL recovered; its historical 404 is preserved here rather than erased.",
+  "next_permissible_stage": "Separately authorized archive preparation for the six retained originals. This recovery does not authorize preparation, R2 upload, public-byte verification, Hugo/content editing, PR work, merge, or deployment.",
+  "safeguards": {"r2_mutation": false, "visitor_visible_content_changed": false, "inventory_status_disposition_changed": false, "separately_gated_2014_ms4_28_record_package_touched": false}
+}
