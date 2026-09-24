@@ -11,6 +11,7 @@ priority = json.loads((DISCOVERY / 'approved-inventory-backlog-prioritization-mi
 pgs_archive_path = DISCOVERY / 'planned-growth-strategy-archive-public-byte-verification-2026-09-23.json'
 pgs_archived_ids = set()
 pgs_implemented_ids = set()
+pgs_validated_ids = set()
 if pgs_archive_path.exists():
     pgs_archive = json.loads(pgs_archive_path.read_text(encoding='utf-8'))
     assert pgs_archive['state'] == 'complete_all_13_public_byte_verified_and_inventory_reconciled'
@@ -23,6 +24,12 @@ if pgs_implementation_path.exists():
     assert pgs_implementation['state'] == 'implemented_on_planning_branch_not_live'
     pgs_implemented_ids = set(pgs_implementation['implemented_inventory_ids'])
     assert pgs_implemented_ids == pgs_archived_ids
+pgs_closeout_path = DISCOVERY / 'planned-growth-strategy-production-closeout-2026-09-24.json'
+if pgs_closeout_path.exists():
+    pgs_closeout = json.loads(pgs_closeout_path.read_text(encoding='utf-8'))
+    assert pgs_closeout['production_verification_result'] == 'passed'
+    pgs_validated_ids = set(pgs_closeout['ordered_inventory_ids'])
+    assert len(pgs_validated_ids) == 13 and pgs_validated_ids == pgs_implemented_ids
 
 required = {'assessed_at', 'geographic_institutional_scope', 'specific_albuquerque_connection', 'abqinfo_public_information_value', 'general_context_exclusion_test', 'final_scope_decision', 'substantive_rationale'}
 records = audit['records']
@@ -39,7 +46,7 @@ by_id = {c['id']: c for c in inventory['candidates']}
 for record in records:
     assert set(record['scope_assessment']) == required
     candidate = by_id[record['id']]
-    expected_status = ('implemented' if record['id'] in pgs_implemented_ids else 'placement assigned') if record['id'] in pgs_archived_ids and record['resulting_status'] == 'approved for addition' else record['resulting_status']
+    expected_status = ('validated' if record['id'] in pgs_validated_ids else 'implemented' if record['id'] in pgs_implemented_ids else 'placement assigned') if record['id'] in pgs_archived_ids and record['resulting_status'] == 'approved for addition' else record['resulting_status']
     assert candidate['status'] == expected_status
     assert candidate['scope_assessment'] == record['scope_assessment']
 for candidate in inventory['candidates']:

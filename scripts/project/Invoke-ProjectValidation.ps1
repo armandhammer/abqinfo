@@ -45,6 +45,10 @@ if (Test-Path -LiteralPath 'project-state/discovery/planned-growth-strategy-hugo
   & python "$PSScriptRoot/Test-PlannedGrowthStrategyHugoImplementation.py"
   if ($LASTEXITCODE) { throw 'Planned Growth Strategy Hugo implementation validation failed.' }
 }
+if (Test-Path -LiteralPath 'project-state/discovery/planned-growth-strategy-production-closeout-2026-09-24.json') {
+  & python "$PSScriptRoot/Test-PlannedGrowthStrategyProductionCloseout.py"
+  if ($LASTEXITCODE) { throw 'Planned Growth Strategy production-closeout validation failed.' }
+}
 if (Test-Path -LiteralPath 'project-state/discovery/municipaldevelopment-standard-forms-archive-preparation-2026-09-19.json') {
   & python "$PSScriptRoot/Test-MunicipalDevelopmentStandardFormsArchivePreparation.py"
   & python "$PSScriptRoot/Test-MunicipalDevelopmentAgendaMinutesArchivePreparation.py"

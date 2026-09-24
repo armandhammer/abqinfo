@@ -24,6 +24,10 @@ def main() -> None:
     archive = load(archive_path) if (ROOT / archive_path).exists() else None
     implementation_path = "project-state/discovery/planned-growth-strategy-hugo-implementation-2026-09-23.json"
     implementation = load(implementation_path) if (ROOT / implementation_path).exists() else None
+    closeout_path = "project-state/discovery/planned-growth-strategy-production-closeout-2026-09-24.json"
+    closeout = load(closeout_path) if (ROOT / closeout_path).exists() else None
+    if closeout:
+        assert implementation and closeout["production_verification_result"] == "passed"
     if implementation:
         assert archive and implementation["state"] == "implemented_on_planning_branch_not_live"
     expected = [
@@ -87,7 +91,7 @@ def main() -> None:
         assert record["size_bytes"] == row["size_bytes"] and record["checksum_sha256"] == row["checksum_sha256"]
         assert record["checksum_sha256"] not in hashes
         hashes.add(record["checksum_sha256"])
-        assert row["status"] == ("implemented" if implementation else "placement assigned" if archive else "approved for addition")
+        assert row["status"] == ("validated" if closeout else "implemented" if implementation else "placement assigned" if archive else "approved for addition")
         assert row["scope_assessment"]["final_scope_decision"] == "passes_both_gates"
         assert row["local_path"] == record["staged_original"]
         if archive:
@@ -103,7 +107,10 @@ def main() -> None:
             if implementation:
                 assert row["implementation_location"] == row["proposed_canonical_page"] == implementation["page"]
                 assert row["implementation_locations"] == [implementation["page"]]
-                assert "planning branch" in row["validation_status"] and "production verification pending" in row["validation_status"]
+                if closeout:
+                    assert "PR #168 merged" in row["validation_status"] and "production Area & Sector Plans" in row["validation_status"]
+                else:
+                    assert "planning branch" in row["validation_status"] and "production verification pending" in row["validation_status"]
             else:
                 assert "public R2 bytes match exact size and SHA-256" in row["validation_status"]
         else:
