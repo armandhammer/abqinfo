@@ -25,24 +25,23 @@ if ($body -match '\\[A-Za-z]') {
   $problems.Add('PR description contains an obvious malformed escape prefix (for example, \\requires).')
 }
 
-$requiredSections = @('Summary', 'What changed', 'Archive / inventory / provenance', 'Visible site changes', 'Validation', 'Deferred / not included')
-foreach ($section in $requiredSections) {
-  if ($body -notmatch ('(?m)^##\s+' + [regex]::Escape($section) + '\s*$')) {
-    $problems.Add("Missing required section: ## $section")
-  }
+if ($body -notmatch '(?m)^##\s+Summary\s*$') {
+  $problems.Add('Missing required section: ## Summary')
 }
-
-if ($body -match '(?ms)^##\s+Visible site changes\s*$\s*None\.\s*(?:$|^##\s)') {
-  # Research/state-only PRs have no page-level enumeration requirement.
-} elseif ($body -match '(?m)^##\s+Visible site changes\s*$') {
-  if ($body -notmatch 'https://(?:[a-z0-9-]+\.)?abqinfo\.com/') {
-    $problems.Add('Visible site changes must include an ABQInfo page or verified preview URL.')
+if ($body -match '(?m)^##\s+Review this change\s*$') {
+  if ($body -notmatch '(?m)^\*\*Preview:\*\*\s+https://[a-z0-9-]+\.abqinfo\.pages\.dev/[^\s)]+') {
+    $problems.Add('A visible-site PR needs a direct non-production preview page URL on a Preview line.')
   }
-  if ($body -notmatch '(?m)^###\s+') {
-    $problems.Add('Visible site changes must use page-and-heading subsections.')
+  if ($body -match 'https://abqinfo\.com/') {
+    $problems.Add('Use the preview page, not the production site, for an unmerged visible change.')
   }
+  if ($body -notmatch '(?m)^\s*[-*]\s+(Added|Removed|Renamed|Moved|Cross-listed|Rewritten):\s+\S') {
+    $problems.Add('Name at least one actual visible change with an action label.')
+  }
+} elseif ($body -match '(?ms)^##\s+Visible site changes\s*$\s*None\.\s*(?:$|^##\s)') {
+  # Background-only PRs do not need a visible-content review section.
 } else {
-  $problems.Add('Unable to evaluate the Visible site changes section.')
+  $problems.Add('Use ## Review this change for visible content, or mark Visible site changes as None for background-only work.')
 }
 
 if ($problems.Count) {
