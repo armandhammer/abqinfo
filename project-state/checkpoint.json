@@ -1,6 +1,6 @@
 {
-  "recorded_at": "2026-09-24T21:42:50Z",
-  "completed_item_range": "Research-only FY2016 later-MS4 source recovery completed: the original City URL again serves the exact saved 10,027,499-byte SHA-256, and all five other retained official paths returned HTTP 200 with saved lengths. Six-record family source-complete; no inventory status, R2, or Hugo change.",
+  "recorded_at": "2026-09-24T22:37:15.181533+00:00",
+  "completed_item_range": "Prepared exactly six later-MS4 originals from full official-source GETs: all exact saved sizes/SHA-256, 426,926,738 staged bytes, 5,917 pages rendered, visual QA and saved/live R2 key checks passed; no R2 or visible-content action.",
   "total_candidates": 7137,
   "counts_by_status": {
     "pending review": 1612,
@@ -21,12 +21,11 @@
   "remaining_nonterminal": 1819,
   "next_pending_id": "src-05ec421cb265b29a",
   "blockers": [
-    "FY2016 later-MS4 City URL returned 404 on 2026-09-20 but served the exact saved original on 2026-09-24; historical outage and current recovery are recorded in the dated source-recovery artifact.",
-    "The six retained later-MS4 records are source-complete. Archive preparation is the next stage and requires a separate instruction; R2 upload/public-byte verification and visible content remain separately authorized.",
+    "Later-MS4 archive preparation is complete for exactly six unchanged official originals (426,926,738 bytes; 5,917 pages rendered); proposed R2 keys are collision-free. R2 upload/public-byte verification and visible content remain separately gated. FY2016 outage/recovery and FY2020 source migration are preserved in the preparation artifact.",
     "PGS, ABQ RIDE historic transit, and Municipal Development meeting records are complete/live and must not be resurfaced.",
     "Mission-scope borderline queue remains 0/20; 2014 MS4, Prescription Trails, Notices and Orders, LGCC, DPM, and fiber correspondence remain separately gated."
   ],
-  "resume_command": "Source recovery is complete. Await separately scoped authorization for archive preparation of the six retained later-MS4 originals; do not infer R2 upload, public-byte verification, or content authorization. Do not reopen the gated 2014 MS4 package.",
+  "resume_command": "Later-MS4 archive preparation is complete in project-state/discovery/later-ms4-archive-preparation-2026-09-24.json. Await separate authorization for unchanged-original R2 upload and exact public-byte verification. Keep six statuses approved for addition and do not edit public content or reopen the separate 2014 MS4 package.",
   "verification_campaign_totals": {
     "verified": 2194,
     "passed": 2070,
@@ -5915,6 +5914,93 @@
             }
           ]
         }
+      }
+    },
+    {
+      "recorded_at": "2026-09-24T21:42:50Z",
+      "completed_item_range": "Research-only FY2016 later-MS4 source recovery completed: the original City URL again serves the exact saved 10,027,499-byte SHA-256, and all five other retained official paths returned HTTP 200 with saved lengths. Six-record family source-complete; no inventory status, R2, or Hugo change.",
+      "total_candidates": 7137,
+      "counts_by_status": {
+        "pending review": 1612,
+        "approved for addition": 46,
+        "downloading": 0,
+        "downloaded": 0,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 2,
+        "implemented": 159,
+        "validated": 1480,
+        "excluded": 1885,
+        "duplicate": 1517,
+        "superseded": 231,
+        "blocked": 0,
+        "requires human review": 205
+      },
+      "remaining_nonterminal": 1819,
+      "next_pending_id": "src-05ec421cb265b29a",
+      "blockers": [
+        "FY2016 later-MS4 City URL returned 404 on 2026-09-20 but served the exact saved original on 2026-09-24; historical outage and current recovery are recorded in the dated source-recovery artifact.",
+        "The six retained later-MS4 records are source-complete. Archive preparation is the next stage and requires a separate instruction; R2 upload/public-byte verification and visible content remain separately authorized.",
+        "PGS, ABQ RIDE historic transit, and Municipal Development meeting records are complete/live and must not be resurfaced.",
+        "Mission-scope borderline queue remains 0/20; 2014 MS4, Prescription Trails, Notices and Orders, LGCC, DPM, and fiber correspondence remain separately gated."
+      ],
+      "resume_command": "Source recovery is complete. Await separately scoped authorization for archive preparation of the six retained later-MS4 originals; do not infer R2 upload, public-byte verification, or content authorization. Do not reopen the gated 2014 MS4 package.",
+      "verification_campaign_totals": {
+        "verified": 2194,
+        "passed": 2070,
+        "requires_human_review": 124
+      },
+      "dpm_annual_consolidation": {
+        "state": "corrected_local_packets_generated_upload_externally_gated",
+        "manifest": "project-state/discovery/dpm-executive-committee-consolidation-manifest-2026-09-17.json",
+        "component_count": 44,
+        "packets": [
+          {
+            "year": 2014,
+            "component_count": 5,
+            "page_count": 13,
+            "size_bytes": 284803,
+            "sha256": "e03ddf4a07f20a83b76b6f5ee8afdfda956a0713c68b3a71e3ae034be78c6656",
+            "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2014.pdf",
+            "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2014.pdf"
+          },
+          {
+            "year": 2015,
+            "component_count": 9,
+            "page_count": 17,
+            "size_bytes": 773060,
+            "sha256": "51457ec34cd80383e6ad92aa38f17da84101b0ad118a8d687e2db48dd468be26",
+            "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2015.pdf",
+            "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2015.pdf"
+          },
+          {
+            "year": 2016,
+            "component_count": 9,
+            "page_count": 19,
+            "size_bytes": 449277,
+            "sha256": "9cae8d9fc7fa3a8ea727309015b656749ab759c89a0b434b3689f9f008359ed9",
+            "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2016.pdf",
+            "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2016.pdf"
+          },
+          {
+            "year": 2017,
+            "component_count": 15,
+            "page_count": 32,
+            "size_bytes": 762787,
+            "sha256": "d41a926cc273886293d4669ae5cb989c442ed3a8fc5fc7cb9c88c869250241c2",
+            "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2017.pdf",
+            "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2017.pdf"
+          },
+          {
+            "year": 2018,
+            "component_count": 6,
+            "page_count": 10,
+            "size_bytes": 376588,
+            "sha256": "87b085020276d880d388a702c23819027b5b510a955f672d464069df0896273b",
+            "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2018.pdf",
+            "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2018.pdf"
+          }
+        ]
       }
     }
   ]
