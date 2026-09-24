@@ -20,6 +20,10 @@ def main() -> None:
     prepared = load(DISCOVERY / "planned-growth-strategy-archive-preparation-2026-09-23.json")
     verified = load(DISCOVERY / "planned-growth-strategy-archive-public-byte-verification-2026-09-23.json")
     implemented = load(DISCOVERY / "planned-growth-strategy-hugo-implementation-2026-09-23.json")
+    closeout_path = DISCOVERY / "planned-growth-strategy-production-closeout-2026-09-24.json"
+    closeout = load(closeout_path) if closeout_path.exists() else None
+    if closeout:
+        assert closeout["production_verification_result"] == "passed"
     decision = load(DISCOVERY / "planned-growth-strategy-decision-2026-09-19.json")
     inventory = {row["id"]: row for row in load(ROOT / "project-state/master-inventory.json")["candidates"]}
     page = PAGE.read_bytes().decode("utf-8-sig")
@@ -54,7 +58,7 @@ def main() -> None:
         assert section.count(archive_url) == section.count(city_url) == 1, record["id"]
         archive_positions.append(section.index(archive_url))
         assert section.index(archive_url) < section.index(city_url), record["id"]
-        assert row["status"] == "implemented" and row["implementation_location"] == implemented["page"]
+        assert row["status"] == ("validated" if closeout else "implemented") and row["implementation_location"] == implemented["page"]
         assert row["implementation_locations"] == [implemented["page"]]
         assert row["r2_url"] == archive_url and row["direct_file_url"] == city_url
         assert row["r2_key"] == record["proposed_r2_key"]
@@ -62,7 +66,7 @@ def main() -> None:
     for duplicate_id in decision["family_relationships"]["part_1_duplicate_components"]:
         duplicate = inventory[duplicate_id]
         assert duplicate["direct_file_url"] not in section
-    print("PASS: one PGS Citywide Growth Strategy section contains 13 ordered archive/City-source pairs, a complete Part 1 original, and a separate 12-file/11-chapter Part 2 series; all 13 records are branch-implemented only.")
+    print("PASS: one PGS Citywide Growth Strategy section contains 13 ordered archive/City-source pairs, a complete Part 1 original, and a separate 12-file/11-chapter Part 2 series; all 13 records have the expected lifecycle status.")
 
 
 if __name__ == "__main__":
