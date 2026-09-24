@@ -9,6 +9,18 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 & "$PSScriptRoot/Test-MasterInventory.ps1" -InventoryPath $InventoryPath
 if (-not $?) { throw 'Master inventory validation failed.' }
+& "$PSScriptRoot/Test-MissionScopeEligibility.ps1"
+if (-not $?) { throw 'Mission-scope later-status eligibility regression failed.' }
+if (Test-Path -LiteralPath 'project-state/discovery/approved-inventory-mission-scope-audit-2026-09-22.json') {
+  & python "$PSScriptRoot/Test-MissionScopeAudit.py"
+  if ($LASTEXITCODE) { throw 'Mission-scope audit regression failed.' }
+}
+if (Test-Path -LiteralPath 'project-state/discovery/mission-scope-borderline-human-review-queue.json') {
+  & python "$PSScriptRoot/Test-MissionScopeBorderlineQueue.py"
+  if ($LASTEXITCODE) { throw 'Mission-scope borderline human-review queue regression failed.' }
+  & python "$PSScriptRoot/Test-MissionScopeBorderlineDispositions.py"
+  if ($LASTEXITCODE) { throw 'Mission-scope borderline disposition regression failed.' }
+}
 & "$PSScriptRoot/Test-UpdateCouncilCloseoutCheckpoint.ps1"
 if (-not $?) { throw 'Council checkpoint idempotency validation failed.' }
 & "$PSScriptRoot/Test-ProjectStateRegeneration.ps1" -MasterPath $InventoryPath
@@ -20,6 +32,18 @@ if ($LASTEXITCODE) { throw 'Saved terminal research regression failed.' }
 if (Test-Path -LiteralPath 'project-state/discovery/nmdot-grant-administration-and-application-decision-2026-09-19.json') {
   & python "$PSScriptRoot/Test-NmdotGrantAdministrationDecision.py"
   if ($LASTEXITCODE) { throw 'NMDOT grant-administration decision validation failed.' }
+}
+if (Test-Path -LiteralPath 'project-state/discovery/nmdot-statewide-truck-parking-study-archive-preparation-2026-09-21.json') {
+  & python "$PSScriptRoot/Test-NmdotTruckParkingStudyArchivePreparation.py"
+  if ($LASTEXITCODE) { throw 'NMDOT truck-parking study archive-preparation validation failed.' }
+}
+if (Test-Path -LiteralPath 'project-state/discovery/planned-growth-strategy-archive-preparation-2026-09-23.json') {
+  & python "$PSScriptRoot/Test-PlannedGrowthStrategyArchivePreparation.py"
+  if ($LASTEXITCODE) { throw 'Planned Growth Strategy archive-preparation validation failed.' }
+}
+if (Test-Path -LiteralPath 'project-state/discovery/planned-growth-strategy-hugo-implementation-2026-09-23.json') {
+  & python "$PSScriptRoot/Test-PlannedGrowthStrategyHugoImplementation.py"
+  if ($LASTEXITCODE) { throw 'Planned Growth Strategy Hugo implementation validation failed.' }
 }
 if (Test-Path -LiteralPath 'project-state/discovery/municipaldevelopment-standard-forms-archive-preparation-2026-09-19.json') {
   & python "$PSScriptRoot/Test-MunicipalDevelopmentStandardFormsArchivePreparation.py"
@@ -84,6 +108,10 @@ if (-not $?) { throw 'Autonomous parallel verification campaign regression faile
 if (-not $?) { throw 'Retained-source descendant-audit coverage failed.' }
 & $HugoPath --gc --minify --cleanDestinationDir --destination tmp/site-build
 if ($LASTEXITCODE) { throw 'Hugo build failed.' }
+if (Test-Path -LiteralPath 'project-state/discovery/planned-growth-strategy-hugo-implementation-2026-09-23.json') {
+  & python "$PSScriptRoot/Test-PlannedGrowthStrategyRenderedPage.py"
+  if ($LASTEXITCODE) { throw 'Planned Growth Strategy rendered-page validation failed.' }
+}
 
 $broken = @()
 if ($CheckExternalLinks) {

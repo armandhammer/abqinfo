@@ -1,0 +1,564 @@
+{
+  "schema_version": 1,
+  "artifact_type": "nmdot_statewide_truck_parking_study_archive_preparation",
+  "recorded_at": "2026-09-21",
+  "state": "archive_preparation_complete_external_r2_upload_and_public_byte_verification_gated",
+  "source_decision": "project-state/discovery/nmdot-statewide-truck-parking-study-decision-2026-09-19.json",
+  "docx_visual_qa_attestation": "project-state/discovery/nmdot-statewide-truck-parking-study-docx-visual-qa-attestation-2026-09-21.json",
+  "scope_candidate_ids": [
+    "src-1f8378fe0d939884",
+    "src-1ce9fae6e4b2e675",
+    "src-a5f4c28aefd1ce20",
+    "src-57017bee270744dd",
+    "src-68d5d6b446b98b35",
+    "src-b07a77c5f6cd79b3",
+    "src-84c88a71842b2ed1"
+  ],
+  "series": {
+    "name": "NMDOT statewide truck-parking study",
+    "relationship": "Complete ordered seven-part series; do not split or substitute any part.",
+    "total_source_bytes": 88893781
+  },
+  "records": [
+    {
+      "id": "src-1f8378fe0d939884",
+      "series_order": 1,
+      "accepted_title": "1-Project Management Plan",
+      "status": "approved for addition",
+      "disposition": "approved for addition",
+      "authoritative_source": {
+        "publisher": "New Mexico Department of Transportation",
+        "NMDOT_landing_page": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/multimodal-planning-and-programs-bureau/",
+        "direct_original_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/0974e4f0-f147-41b2-9b18-c65dfd348d46/1%20-%20Project%20Management%20Plan.docx",
+        "delivery_host_context": "Public realfile.rtsclients.com file host linked from dot.nm.gov; saved research identifies NMDOT as publisher."
+      },
+      "container": "OOXML/DOCX",
+      "source_evidence": {
+        "staged_path": "research/staging/nmdot-statewide-truck-parking-study-archive-preparation-2026-09-21/01-project-management-plan.docx",
+        "size_bytes": 602527,
+        "sha256": "0b70f34707fd3b625c721e948917099b64948432af8f17134ec1be969db5da2d",
+        "leading_bytes": "504b0304",
+        "source_byte_verification": "passed_re_fetched_authoritative_original"
+      },
+      "document_metadata": {
+        "served_filename": "1 - Project Management Plan.docx",
+        "extracted_word_count": 5988,
+        "page_count": null
+      },
+      "visual_qa": {
+        "result": "passed_host_word_render_and_human_visual_inspection",
+        "detail": "The host-side helper successfully rendered all five inspection-only PDFs for Parts 1-5 from the already byte-verified DOCX originals and reported failure: null. Human visual inspection confirmed all five are complete and readable. Parts 2-5 have no obvious missing content, corrupted pages, malformed tables or figures, or significant layout defects. Part 1 (01-project-management-plan.pdf) has several blank pages between sections. They are intentional separator/layout pages from the original: surrounding sections are complete, with no content missing or displaced. This is a benign visual observation, not a source or document defect. The DOCX originals remain unchanged and are the proposed future archive objects; the rendered PDFs are inspection-only derivatives."
+      },
+      "quality_assessment": {
+        "visual_inspection": "The host-side helper successfully rendered all five inspection-only PDFs for Parts 1-5 from the already byte-verified DOCX originals and reported failure: null. Human visual inspection confirmed all five are complete and readable. Parts 2-5 have no obvious missing content, corrupted pages, malformed tables or figures, or significant layout defects. Part 1 (01-project-management-plan.pdf) has several blank pages between sections. They are intentional separator/layout pages from the original: surrounding sections are complete, with no content missing or displaced. This is a benign visual observation, not a source or document defect. The DOCX originals remain unchanged and are the proposed future archive objects; the rendered PDFs are inspection-only derivatives.",
+        "measured_content": "Page count pending host render; 5988 extracted words; 602527 bytes; SHA-256 0b70f34707fd3b625c721e948917099b64948432af8f17134ec1be969db5da2d.",
+        "standalone_public_value": "A distinct substantive phase of the complete statewide truck-parking study, needed to retain the project management, engagement, evidence, analysis, assessment, and implementation record as published.",
+        "information_density": "Substantive technical-study content with narrative, data, tables, figures, or recommendations; not an administrative fragment.",
+        "series_component_relationship": "Number 1 of 7 in the complete ordered NMDOT statewide truck-parking study series; preserve separately in original container and present only as a clearly numbered series.",
+        "intended_publication_form": "One unchanged original archive object in Roadway Studies after separately authorized R2 upload and exact public-byte verification; no DOCX-to-PDF conversion.",
+        "rationale": "The saved family decision found each deliverable noninterchangeable and necessary to the complete statewide freight and highway reference record relevant to Albuquerque."
+      },
+      "canonical_placement": {
+        "page": "content/transportation/roadway-projects/studies.md",
+        "section": "State Highway Studies Affecting Albuquerque",
+        "decision": "approved_for_future_archive_first_publication"
+      },
+      "proposed_canonical_archive_filename": "nmdot-statewide-truck-parking-study-part-1-project-management-plan.docx",
+      "proposed_r2_key": "transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-1-project-management-plan.docx",
+      "archive_preparation": {
+        "proposed_r2_key": "transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-1-project-management-plan.docx",
+        "preserve_original_container_unchanged": true,
+        "r2_action": "none"
+      },
+      "collision_check": "No exact proposed-key collision in project-state/r2-inventory.json (1,218 objects).",
+      "r2_action": "none",
+      "remaining_gates": [
+        "Complete the five DOCX host-side render and human visual inspections.",
+        "Obtain separate explicit authorization before any R2 upload or storage mutation.",
+        "After upload, verify each public archive download against saved exact size and SHA-256.",
+        "Obtain separate authorization for any Hugo/public-content, PR, merge, or deployment work."
+      ],
+      "inventory_update": {
+        "status": "approved for addition",
+        "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/0974e4f0-f147-41b2-9b18-c65dfd348d46/1%20-%20Project%20Management%20Plan.docx",
+        "file_type": "DOCX",
+        "size_bytes": 602527,
+        "checksum_sha256": "0b70f34707fd3b625c721e948917099b64948432af8f17134ec1be969db5da2d",
+        "validation_status": "archive preparation complete with visual QA passed; no R2 archive or public-byte verification performed",
+        "processing_notes": [
+          "Saved NMDOT statewide truck parking study research 2026-09-13: Served from NMDOT's public file host as 1 - Project Management Plan.docx. Container verified by leading bytes 504b0304; complete ordered family and placement decision retained in project-state/discovery/nmdot-statewide-truck-parking-study-decision-2026-09-19.json.",
+          "Saved publisher: New Mexico Department of Transportation. The realfile.rtsclients.com delivery host is not treated as publisher.",
+          "Archive preparation 2026-09-21: re-fetched authoritative NMDOT original matched 602527 bytes and SHA-256 0b70f34707fd3b625c721e948917099b64948432af8f17134ec1be969db5da2d; proposed R2 key transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-1-project-management-plan.docx; no R2 upload or public-byte verification performed.",
+          "Archive preparation 2026-09-21: host-side DOCX render and human visual QA passed; unchanged DOCX remains proposed archive object."
+        ]
+      }
+    },
+    {
+      "id": "src-1ce9fae6e4b2e675",
+      "series_order": 2,
+      "accepted_title": "2-Stakeholder Engagement Plan",
+      "status": "approved for addition",
+      "disposition": "approved for addition",
+      "authoritative_source": {
+        "publisher": "New Mexico Department of Transportation",
+        "NMDOT_landing_page": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/multimodal-planning-and-programs-bureau/",
+        "direct_original_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/a38df3f8-fe58-426a-aa1b-7b135b38c99a/2%20-%20Stakeholder%20Engagement%20Plan.docx",
+        "delivery_host_context": "Public realfile.rtsclients.com file host linked from dot.nm.gov; saved research identifies NMDOT as publisher."
+      },
+      "container": "OOXML/DOCX",
+      "source_evidence": {
+        "staged_path": "research/staging/nmdot-statewide-truck-parking-study-archive-preparation-2026-09-21/02-stakeholder-engagement-plan.docx",
+        "size_bytes": 620430,
+        "sha256": "c8e6a35189341675ef13238b0cb22f43d2352f47e25ce197a432066cc4d5921e",
+        "leading_bytes": "504b0304",
+        "source_byte_verification": "passed_re_fetched_authoritative_original"
+      },
+      "document_metadata": {
+        "served_filename": "2 - Stakeholder Engagement Plan.docx",
+        "extracted_word_count": 1767,
+        "page_count": null
+      },
+      "visual_qa": {
+        "result": "passed_host_word_render_and_human_visual_inspection",
+        "detail": "The host-side helper successfully rendered all five inspection-only PDFs for Parts 1-5 from the already byte-verified DOCX originals and reported failure: null. Human visual inspection confirmed all five are complete and readable. Parts 2-5 have no obvious missing content, corrupted pages, malformed tables or figures, or significant layout defects. Parts 2-5 passed without an observed visual defect. The DOCX originals remain unchanged and are the proposed future archive objects; the rendered PDFs are inspection-only derivatives."
+      },
+      "quality_assessment": {
+        "visual_inspection": "The host-side helper successfully rendered all five inspection-only PDFs for Parts 1-5 from the already byte-verified DOCX originals and reported failure: null. Human visual inspection confirmed all five are complete and readable. Parts 2-5 have no obvious missing content, corrupted pages, malformed tables or figures, or significant layout defects. Parts 2-5 passed without an observed visual defect. The DOCX originals remain unchanged and are the proposed future archive objects; the rendered PDFs are inspection-only derivatives.",
+        "measured_content": "Page count pending host render; 1767 extracted words; 620430 bytes; SHA-256 c8e6a35189341675ef13238b0cb22f43d2352f47e25ce197a432066cc4d5921e.",
+        "standalone_public_value": "A distinct substantive phase of the complete statewide truck-parking study, needed to retain the project management, engagement, evidence, analysis, assessment, and implementation record as published.",
+        "information_density": "Substantive technical-study content with narrative, data, tables, figures, or recommendations; not an administrative fragment.",
+        "series_component_relationship": "Number 2 of 7 in the complete ordered NMDOT statewide truck-parking study series; preserve separately in original container and present only as a clearly numbered series.",
+        "intended_publication_form": "One unchanged original archive object in Roadway Studies after separately authorized R2 upload and exact public-byte verification; no DOCX-to-PDF conversion.",
+        "rationale": "The saved family decision found each deliverable noninterchangeable and necessary to the complete statewide freight and highway reference record relevant to Albuquerque."
+      },
+      "canonical_placement": {
+        "page": "content/transportation/roadway-projects/studies.md",
+        "section": "State Highway Studies Affecting Albuquerque",
+        "decision": "approved_for_future_archive_first_publication"
+      },
+      "proposed_canonical_archive_filename": "nmdot-statewide-truck-parking-study-part-2-stakeholder-engagement-plan.docx",
+      "proposed_r2_key": "transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-2-stakeholder-engagement-plan.docx",
+      "archive_preparation": {
+        "proposed_r2_key": "transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-2-stakeholder-engagement-plan.docx",
+        "preserve_original_container_unchanged": true,
+        "r2_action": "none"
+      },
+      "collision_check": "No exact proposed-key collision in project-state/r2-inventory.json (1,218 objects).",
+      "r2_action": "none",
+      "remaining_gates": [
+        "Complete the five DOCX host-side render and human visual inspections.",
+        "Obtain separate explicit authorization before any R2 upload or storage mutation.",
+        "After upload, verify each public archive download against saved exact size and SHA-256.",
+        "Obtain separate authorization for any Hugo/public-content, PR, merge, or deployment work."
+      ],
+      "inventory_update": {
+        "status": "approved for addition",
+        "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/a38df3f8-fe58-426a-aa1b-7b135b38c99a/2%20-%20Stakeholder%20Engagement%20Plan.docx",
+        "file_type": "DOCX",
+        "size_bytes": 620430,
+        "checksum_sha256": "c8e6a35189341675ef13238b0cb22f43d2352f47e25ce197a432066cc4d5921e",
+        "validation_status": "archive preparation complete with visual QA passed; no R2 archive or public-byte verification performed",
+        "processing_notes": [
+          "Saved NMDOT statewide truck parking study research 2026-09-13: Served from NMDOT's public file host as 2 - Stakeholder Engagement Plan.docx. Container verified by leading bytes 504b0304; complete ordered family and placement decision retained in project-state/discovery/nmdot-statewide-truck-parking-study-decision-2026-09-19.json.",
+          "Saved publisher: New Mexico Department of Transportation. The realfile.rtsclients.com delivery host is not treated as publisher.",
+          "Archive preparation 2026-09-21: re-fetched authoritative NMDOT original matched 620430 bytes and SHA-256 c8e6a35189341675ef13238b0cb22f43d2352f47e25ce197a432066cc4d5921e; proposed R2 key transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-2-stakeholder-engagement-plan.docx; no R2 upload or public-byte verification performed.",
+          "Archive preparation 2026-09-21: host-side DOCX render and human visual QA passed; unchanged DOCX remains proposed archive object."
+        ]
+      }
+    },
+    {
+      "id": "src-a5f4c28aefd1ce20",
+      "series_order": 3,
+      "accepted_title": "3-Literature Review & Best Practices",
+      "status": "approved for addition",
+      "disposition": "approved for addition",
+      "authoritative_source": {
+        "publisher": "New Mexico Department of Transportation",
+        "NMDOT_landing_page": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/multimodal-planning-and-programs-bureau/",
+        "direct_original_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/cee161bb-2040-4b5b-92ed-2620a0699a3e/3%20-%20Literature%20Review%20%26%20Best%20Practices.docx",
+        "delivery_host_context": "Public realfile.rtsclients.com file host linked from dot.nm.gov; saved research identifies NMDOT as publisher."
+      },
+      "container": "OOXML/DOCX",
+      "source_evidence": {
+        "staged_path": "research/staging/nmdot-statewide-truck-parking-study-archive-preparation-2026-09-21/03-literature-review-best-practices.docx",
+        "size_bytes": 6579570,
+        "sha256": "ee2cdd4976db3dcb60927871709026bfa6ec2d4f91ae1bd2f104d208cd1130ad",
+        "leading_bytes": "504b0304",
+        "source_byte_verification": "passed_re_fetched_authoritative_original"
+      },
+      "document_metadata": {
+        "served_filename": "3 - Literature Review & Best Practices.docx",
+        "extracted_word_count": 14561,
+        "page_count": null
+      },
+      "visual_qa": {
+        "result": "passed_host_word_render_and_human_visual_inspection",
+        "detail": "The host-side helper successfully rendered all five inspection-only PDFs for Parts 1-5 from the already byte-verified DOCX originals and reported failure: null. Human visual inspection confirmed all five are complete and readable. Parts 2-5 have no obvious missing content, corrupted pages, malformed tables or figures, or significant layout defects. Parts 2-5 passed without an observed visual defect. The DOCX originals remain unchanged and are the proposed future archive objects; the rendered PDFs are inspection-only derivatives."
+      },
+      "quality_assessment": {
+        "visual_inspection": "The host-side helper successfully rendered all five inspection-only PDFs for Parts 1-5 from the already byte-verified DOCX originals and reported failure: null. Human visual inspection confirmed all five are complete and readable. Parts 2-5 have no obvious missing content, corrupted pages, malformed tables or figures, or significant layout defects. Parts 2-5 passed without an observed visual defect. The DOCX originals remain unchanged and are the proposed future archive objects; the rendered PDFs are inspection-only derivatives.",
+        "measured_content": "Page count pending host render; 14561 extracted words; 6579570 bytes; SHA-256 ee2cdd4976db3dcb60927871709026bfa6ec2d4f91ae1bd2f104d208cd1130ad.",
+        "standalone_public_value": "A distinct substantive phase of the complete statewide truck-parking study, needed to retain the project management, engagement, evidence, analysis, assessment, and implementation record as published.",
+        "information_density": "Substantive technical-study content with narrative, data, tables, figures, or recommendations; not an administrative fragment.",
+        "series_component_relationship": "Number 3 of 7 in the complete ordered NMDOT statewide truck-parking study series; preserve separately in original container and present only as a clearly numbered series.",
+        "intended_publication_form": "One unchanged original archive object in Roadway Studies after separately authorized R2 upload and exact public-byte verification; no DOCX-to-PDF conversion.",
+        "rationale": "The saved family decision found each deliverable noninterchangeable and necessary to the complete statewide freight and highway reference record relevant to Albuquerque."
+      },
+      "canonical_placement": {
+        "page": "content/transportation/roadway-projects/studies.md",
+        "section": "State Highway Studies Affecting Albuquerque",
+        "decision": "approved_for_future_archive_first_publication"
+      },
+      "proposed_canonical_archive_filename": "nmdot-statewide-truck-parking-study-part-3-literature-review-best-practices.docx",
+      "proposed_r2_key": "transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-3-literature-review-best-practices.docx",
+      "archive_preparation": {
+        "proposed_r2_key": "transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-3-literature-review-best-practices.docx",
+        "preserve_original_container_unchanged": true,
+        "r2_action": "none"
+      },
+      "collision_check": "No exact proposed-key collision in project-state/r2-inventory.json (1,218 objects).",
+      "r2_action": "none",
+      "remaining_gates": [
+        "Complete the five DOCX host-side render and human visual inspections.",
+        "Obtain separate explicit authorization before any R2 upload or storage mutation.",
+        "After upload, verify each public archive download against saved exact size and SHA-256.",
+        "Obtain separate authorization for any Hugo/public-content, PR, merge, or deployment work."
+      ],
+      "inventory_update": {
+        "status": "approved for addition",
+        "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/cee161bb-2040-4b5b-92ed-2620a0699a3e/3%20-%20Literature%20Review%20%26%20Best%20Practices.docx",
+        "file_type": "DOCX",
+        "size_bytes": 6579570,
+        "checksum_sha256": "ee2cdd4976db3dcb60927871709026bfa6ec2d4f91ae1bd2f104d208cd1130ad",
+        "validation_status": "archive preparation complete with visual QA passed; no R2 archive or public-byte verification performed",
+        "processing_notes": [
+          "Saved NMDOT statewide truck parking study research 2026-09-13: Served from NMDOT's public file host as 3 - Literature Review & Best Practices.docx. Container verified by leading bytes 504b0304; complete ordered family and placement decision retained in project-state/discovery/nmdot-statewide-truck-parking-study-decision-2026-09-19.json.",
+          "Saved publisher: New Mexico Department of Transportation. The realfile.rtsclients.com delivery host is not treated as publisher.",
+          "Archive preparation 2026-09-21: re-fetched authoritative NMDOT original matched 6579570 bytes and SHA-256 ee2cdd4976db3dcb60927871709026bfa6ec2d4f91ae1bd2f104d208cd1130ad; proposed R2 key transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-3-literature-review-best-practices.docx; no R2 upload or public-byte verification performed.",
+          "Archive preparation 2026-09-21: host-side DOCX render and human visual QA passed; unchanged DOCX remains proposed archive object."
+        ]
+      }
+    },
+    {
+      "id": "src-57017bee270744dd",
+      "series_order": 4,
+      "accepted_title": "4-Freight Activity Evaluation",
+      "status": "approved for addition",
+      "disposition": "approved for addition",
+      "authoritative_source": {
+        "publisher": "New Mexico Department of Transportation",
+        "NMDOT_landing_page": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/multimodal-planning-and-programs-bureau/",
+        "direct_original_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/73d4b0d7-0dca-4521-916a-f7659d1eea48/4%20-%20Freight%20Activity%20Evaluation.docx",
+        "delivery_host_context": "Public realfile.rtsclients.com file host linked from dot.nm.gov; saved research identifies NMDOT as publisher."
+      },
+      "container": "OOXML/DOCX",
+      "source_evidence": {
+        "staged_path": "research/staging/nmdot-statewide-truck-parking-study-archive-preparation-2026-09-21/04-freight-activity-evaluation.docx",
+        "size_bytes": 11815039,
+        "sha256": "a4748261facc64582dda003b7a303b211b62beecd967b50d1ae889f699399455",
+        "leading_bytes": "504b0304",
+        "source_byte_verification": "passed_re_fetched_authoritative_original"
+      },
+      "document_metadata": {
+        "served_filename": "4 - Freight Activity Evaluation.docx",
+        "extracted_word_count": 5950,
+        "page_count": null
+      },
+      "visual_qa": {
+        "result": "passed_host_word_render_and_human_visual_inspection",
+        "detail": "The host-side helper successfully rendered all five inspection-only PDFs for Parts 1-5 from the already byte-verified DOCX originals and reported failure: null. Human visual inspection confirmed all five are complete and readable. Parts 2-5 have no obvious missing content, corrupted pages, malformed tables or figures, or significant layout defects. Parts 2-5 passed without an observed visual defect. The DOCX originals remain unchanged and are the proposed future archive objects; the rendered PDFs are inspection-only derivatives."
+      },
+      "quality_assessment": {
+        "visual_inspection": "The host-side helper successfully rendered all five inspection-only PDFs for Parts 1-5 from the already byte-verified DOCX originals and reported failure: null. Human visual inspection confirmed all five are complete and readable. Parts 2-5 have no obvious missing content, corrupted pages, malformed tables or figures, or significant layout defects. Parts 2-5 passed without an observed visual defect. The DOCX originals remain unchanged and are the proposed future archive objects; the rendered PDFs are inspection-only derivatives.",
+        "measured_content": "Page count pending host render; 5950 extracted words; 11815039 bytes; SHA-256 a4748261facc64582dda003b7a303b211b62beecd967b50d1ae889f699399455.",
+        "standalone_public_value": "A distinct substantive phase of the complete statewide truck-parking study, needed to retain the project management, engagement, evidence, analysis, assessment, and implementation record as published.",
+        "information_density": "Substantive technical-study content with narrative, data, tables, figures, or recommendations; not an administrative fragment.",
+        "series_component_relationship": "Number 4 of 7 in the complete ordered NMDOT statewide truck-parking study series; preserve separately in original container and present only as a clearly numbered series.",
+        "intended_publication_form": "One unchanged original archive object in Roadway Studies after separately authorized R2 upload and exact public-byte verification; no DOCX-to-PDF conversion.",
+        "rationale": "The saved family decision found each deliverable noninterchangeable and necessary to the complete statewide freight and highway reference record relevant to Albuquerque."
+      },
+      "canonical_placement": {
+        "page": "content/transportation/roadway-projects/studies.md",
+        "section": "State Highway Studies Affecting Albuquerque",
+        "decision": "approved_for_future_archive_first_publication"
+      },
+      "proposed_canonical_archive_filename": "nmdot-statewide-truck-parking-study-part-4-freight-activity-evaluation.docx",
+      "proposed_r2_key": "transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-4-freight-activity-evaluation.docx",
+      "archive_preparation": {
+        "proposed_r2_key": "transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-4-freight-activity-evaluation.docx",
+        "preserve_original_container_unchanged": true,
+        "r2_action": "none"
+      },
+      "collision_check": "No exact proposed-key collision in project-state/r2-inventory.json (1,218 objects).",
+      "r2_action": "none",
+      "remaining_gates": [
+        "Complete the five DOCX host-side render and human visual inspections.",
+        "Obtain separate explicit authorization before any R2 upload or storage mutation.",
+        "After upload, verify each public archive download against saved exact size and SHA-256.",
+        "Obtain separate authorization for any Hugo/public-content, PR, merge, or deployment work."
+      ],
+      "inventory_update": {
+        "status": "approved for addition",
+        "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/73d4b0d7-0dca-4521-916a-f7659d1eea48/4%20-%20Freight%20Activity%20Evaluation.docx",
+        "file_type": "DOCX",
+        "size_bytes": 11815039,
+        "checksum_sha256": "a4748261facc64582dda003b7a303b211b62beecd967b50d1ae889f699399455",
+        "validation_status": "archive preparation complete with visual QA passed; no R2 archive or public-byte verification performed",
+        "processing_notes": [
+          "Saved NMDOT statewide truck parking study research 2026-09-13: Served from NMDOT's public file host as 4 - Freight Activity Evaluation.docx. Container verified by leading bytes 504b0304; complete ordered family and placement decision retained in project-state/discovery/nmdot-statewide-truck-parking-study-decision-2026-09-19.json.",
+          "Saved publisher: New Mexico Department of Transportation. The realfile.rtsclients.com delivery host is not treated as publisher.",
+          "Archive preparation 2026-09-21: re-fetched authoritative NMDOT original matched 11815039 bytes and SHA-256 a4748261facc64582dda003b7a303b211b62beecd967b50d1ae889f699399455; proposed R2 key transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-4-freight-activity-evaluation.docx; no R2 upload or public-byte verification performed.",
+          "Archive preparation 2026-09-21: host-side DOCX render and human visual QA passed; unchanged DOCX remains proposed archive object."
+        ]
+      }
+    },
+    {
+      "id": "src-68d5d6b446b98b35",
+      "series_order": 5,
+      "accepted_title": "5-Truck Parking Supply & Demand",
+      "status": "approved for addition",
+      "disposition": "approved for addition",
+      "authoritative_source": {
+        "publisher": "New Mexico Department of Transportation",
+        "NMDOT_landing_page": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/multimodal-planning-and-programs-bureau/",
+        "direct_original_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/6d588acb-86f1-4eeb-bbc3-f5f02359c252/5%20-%20Truck%20Parking%20Supply%20%26%20Demand.docx",
+        "delivery_host_context": "Public realfile.rtsclients.com file host linked from dot.nm.gov; saved research identifies NMDOT as publisher."
+      },
+      "container": "OOXML/DOCX",
+      "source_evidence": {
+        "staged_path": "research/staging/nmdot-statewide-truck-parking-study-archive-preparation-2026-09-21/05-truck-parking-supply-demand.docx",
+        "size_bytes": 9108586,
+        "sha256": "9fa3b9685692911695ede0a23e08b8f28d4ff82275b83f22fe0dc7d51bc712e8",
+        "leading_bytes": "504b0304",
+        "source_byte_verification": "passed_re_fetched_authoritative_original"
+      },
+      "document_metadata": {
+        "served_filename": "5 - Truck Parking Supply & Demand.docx",
+        "extracted_word_count": 8334,
+        "page_count": null
+      },
+      "visual_qa": {
+        "result": "passed_host_word_render_and_human_visual_inspection",
+        "detail": "The host-side helper successfully rendered all five inspection-only PDFs for Parts 1-5 from the already byte-verified DOCX originals and reported failure: null. Human visual inspection confirmed all five are complete and readable. Parts 2-5 have no obvious missing content, corrupted pages, malformed tables or figures, or significant layout defects. Parts 2-5 passed without an observed visual defect. The DOCX originals remain unchanged and are the proposed future archive objects; the rendered PDFs are inspection-only derivatives."
+      },
+      "quality_assessment": {
+        "visual_inspection": "The host-side helper successfully rendered all five inspection-only PDFs for Parts 1-5 from the already byte-verified DOCX originals and reported failure: null. Human visual inspection confirmed all five are complete and readable. Parts 2-5 have no obvious missing content, corrupted pages, malformed tables or figures, or significant layout defects. Parts 2-5 passed without an observed visual defect. The DOCX originals remain unchanged and are the proposed future archive objects; the rendered PDFs are inspection-only derivatives.",
+        "measured_content": "Page count pending host render; 8334 extracted words; 9108586 bytes; SHA-256 9fa3b9685692911695ede0a23e08b8f28d4ff82275b83f22fe0dc7d51bc712e8.",
+        "standalone_public_value": "A distinct substantive phase of the complete statewide truck-parking study, needed to retain the project management, engagement, evidence, analysis, assessment, and implementation record as published.",
+        "information_density": "Substantive technical-study content with narrative, data, tables, figures, or recommendations; not an administrative fragment.",
+        "series_component_relationship": "Number 5 of 7 in the complete ordered NMDOT statewide truck-parking study series; preserve separately in original container and present only as a clearly numbered series.",
+        "intended_publication_form": "One unchanged original archive object in Roadway Studies after separately authorized R2 upload and exact public-byte verification; no DOCX-to-PDF conversion.",
+        "rationale": "The saved family decision found each deliverable noninterchangeable and necessary to the complete statewide freight and highway reference record relevant to Albuquerque."
+      },
+      "canonical_placement": {
+        "page": "content/transportation/roadway-projects/studies.md",
+        "section": "State Highway Studies Affecting Albuquerque",
+        "decision": "approved_for_future_archive_first_publication"
+      },
+      "proposed_canonical_archive_filename": "nmdot-statewide-truck-parking-study-part-5-truck-parking-supply-demand.docx",
+      "proposed_r2_key": "transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-5-truck-parking-supply-demand.docx",
+      "archive_preparation": {
+        "proposed_r2_key": "transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-5-truck-parking-supply-demand.docx",
+        "preserve_original_container_unchanged": true,
+        "r2_action": "none"
+      },
+      "collision_check": "No exact proposed-key collision in project-state/r2-inventory.json (1,218 objects).",
+      "r2_action": "none",
+      "remaining_gates": [
+        "Complete the five DOCX host-side render and human visual inspections.",
+        "Obtain separate explicit authorization before any R2 upload or storage mutation.",
+        "After upload, verify each public archive download against saved exact size and SHA-256.",
+        "Obtain separate authorization for any Hugo/public-content, PR, merge, or deployment work."
+      ],
+      "inventory_update": {
+        "status": "approved for addition",
+        "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/6d588acb-86f1-4eeb-bbc3-f5f02359c252/5%20-%20Truck%20Parking%20Supply%20%26%20Demand.docx",
+        "file_type": "DOCX",
+        "size_bytes": 9108586,
+        "checksum_sha256": "9fa3b9685692911695ede0a23e08b8f28d4ff82275b83f22fe0dc7d51bc712e8",
+        "validation_status": "archive preparation complete with visual QA passed; no R2 archive or public-byte verification performed",
+        "processing_notes": [
+          "Saved NMDOT statewide truck parking study research 2026-09-13: Served from NMDOT's public file host as 5 - Truck Parking Supply & Demand.docx. Container verified by leading bytes 504b0304; complete ordered family and placement decision retained in project-state/discovery/nmdot-statewide-truck-parking-study-decision-2026-09-19.json.",
+          "Saved publisher: New Mexico Department of Transportation. The realfile.rtsclients.com delivery host is not treated as publisher.",
+          "Archive preparation 2026-09-21: re-fetched authoritative NMDOT original matched 9108586 bytes and SHA-256 9fa3b9685692911695ede0a23e08b8f28d4ff82275b83f22fe0dc7d51bc712e8; proposed R2 key transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-5-truck-parking-supply-demand.docx; no R2 upload or public-byte verification performed.",
+          "Archive preparation 2026-09-21: host-side DOCX render and human visual QA passed; unchanged DOCX remains proposed archive object."
+        ]
+      }
+    },
+    {
+      "id": "src-b07a77c5f6cd79b3",
+      "series_order": 6,
+      "accepted_title": "6-Interstate Truck Parking Assessment",
+      "status": "approved for addition",
+      "disposition": "approved for addition",
+      "authoritative_source": {
+        "publisher": "New Mexico Department of Transportation",
+        "NMDOT_landing_page": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/multimodal-planning-and-programs-bureau/",
+        "direct_original_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/a3ac5aea-a57f-419b-8388-d1b44a81d20a/6%20-%20Interstate%20Truck%20Parking%20Assessment.pdf",
+        "delivery_host_context": "Public realfile.rtsclients.com file host linked from dot.nm.gov; saved research identifies NMDOT as publisher."
+      },
+      "container": "PDF",
+      "source_evidence": {
+        "staged_path": "research/staging/nmdot-statewide-truck-parking-study-archive-preparation-2026-09-21/06-interstate-truck-parking-assessment.pdf",
+        "size_bytes": 4415613,
+        "sha256": "fc43e66829b534f1b2366727065279d831566e44cf9cea415cad4dc9ea15e638",
+        "leading_bytes": "25504446",
+        "source_byte_verification": "passed_re_fetched_authoritative_original"
+      },
+      "document_metadata": {
+        "served_filename": "6 - Interstate Truck Parking Assessment.pdf",
+        "extracted_word_count": 2745,
+        "page_count": 21
+      },
+      "visual_qa": {
+        "result": "passed_all_pages_rendered_and_contact_sheet_reviewed",
+        "detail": "All 21 pages rendered successfully; contact-sheet review found no missing/corrupt pages or obvious visual defects."
+      },
+      "quality_assessment": {
+        "visual_inspection": "All 21 pages rendered successfully; contact-sheet review found no missing/corrupt pages or obvious visual defects.",
+        "measured_content": "21; 2745 extracted words; 4415613 bytes; SHA-256 fc43e66829b534f1b2366727065279d831566e44cf9cea415cad4dc9ea15e638.",
+        "standalone_public_value": "A distinct substantive phase of the complete statewide truck-parking study, needed to retain the project management, engagement, evidence, analysis, assessment, and implementation record as published.",
+        "information_density": "Substantive technical-study content with narrative, data, tables, figures, or recommendations; not an administrative fragment.",
+        "series_component_relationship": "Number 6 of 7 in the complete ordered NMDOT statewide truck-parking study series; preserve separately in original container and present only as a clearly numbered series.",
+        "intended_publication_form": "One unchanged original archive object in Roadway Studies after separately authorized R2 upload and exact public-byte verification; no DOCX-to-PDF conversion.",
+        "rationale": "The saved family decision found each deliverable noninterchangeable and necessary to the complete statewide freight and highway reference record relevant to Albuquerque."
+      },
+      "canonical_placement": {
+        "page": "content/transportation/roadway-projects/studies.md",
+        "section": "State Highway Studies Affecting Albuquerque",
+        "decision": "approved_for_future_archive_first_publication"
+      },
+      "proposed_canonical_archive_filename": "nmdot-statewide-truck-parking-study-part-6-interstate-truck-parking-assessment.pdf",
+      "proposed_r2_key": "transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-6-interstate-truck-parking-assessment.pdf",
+      "archive_preparation": {
+        "proposed_r2_key": "transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-6-interstate-truck-parking-assessment.pdf",
+        "preserve_original_container_unchanged": true,
+        "r2_action": "none"
+      },
+      "collision_check": "No exact proposed-key collision in project-state/r2-inventory.json (1,218 objects).",
+      "r2_action": "none",
+      "remaining_gates": [
+        "Complete the five DOCX host-side render and human visual inspections.",
+        "Obtain separate explicit authorization before any R2 upload or storage mutation.",
+        "After upload, verify each public archive download against saved exact size and SHA-256.",
+        "Obtain separate authorization for any Hugo/public-content, PR, merge, or deployment work."
+      ],
+      "inventory_update": {
+        "status": "approved for addition",
+        "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/a3ac5aea-a57f-419b-8388-d1b44a81d20a/6%20-%20Interstate%20Truck%20Parking%20Assessment.pdf",
+        "file_type": "PDF",
+        "size_bytes": 4415613,
+        "checksum_sha256": "fc43e66829b534f1b2366727065279d831566e44cf9cea415cad4dc9ea15e638",
+        "validation_status": "archive preparation complete with visual QA passed; no R2 archive or public-byte verification performed",
+        "processing_notes": [
+          "Saved NMDOT statewide truck parking study research 2026-09-13: Served from NMDOT's public file host as 6 - Interstate Truck Parking Assessment.pdf. Container verified by leading bytes 25504446; complete ordered family and placement decision retained in project-state/discovery/nmdot-statewide-truck-parking-study-decision-2026-09-19.json.",
+          "Saved publisher: New Mexico Department of Transportation. The realfile.rtsclients.com delivery host is not treated as publisher.",
+          "Archive preparation 2026-09-21: re-fetched authoritative NMDOT original matched 4415613 bytes and SHA-256 fc43e66829b534f1b2366727065279d831566e44cf9cea415cad4dc9ea15e638; proposed R2 key transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-6-interstate-truck-parking-assessment.pdf; no R2 upload or public-byte verification performed."
+        ]
+      }
+    },
+    {
+      "id": "src-84c88a71842b2ed1",
+      "series_order": 7,
+      "accepted_title": "7-Recommendation and Implementation Plan",
+      "status": "approved for addition",
+      "disposition": "approved for addition",
+      "authoritative_source": {
+        "publisher": "New Mexico Department of Transportation",
+        "NMDOT_landing_page": "https://www.dot.nm.gov/planning-research-multimodal-and-safety/planning-division/multimodal-planning-and-programs-bureau/",
+        "direct_original_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/0745e29c-3139-468a-98ce-879e82dc2a9f/7-%20Recommendation%20and%20Implementation%20Plan.pdf",
+        "delivery_host_context": "Public realfile.rtsclients.com file host linked from dot.nm.gov; saved research identifies NMDOT as publisher."
+      },
+      "container": "PDF",
+      "source_evidence": {
+        "staged_path": "research/staging/nmdot-statewide-truck-parking-study-archive-preparation-2026-09-21/07-recommendation-implementation-plan.pdf",
+        "size_bytes": 55752016,
+        "sha256": "75c8517cda9067d992553a9600079748817aaecf31e482768c1079e48d3c2997",
+        "leading_bytes": "25504446",
+        "source_byte_verification": "passed_re_fetched_authoritative_original"
+      },
+      "document_metadata": {
+        "served_filename": "7- Recommendation and Implementation Plan.pdf",
+        "extracted_word_count": 22698,
+        "page_count": 111
+      },
+      "visual_qa": {
+        "result": "passed_all_pages_rendered_and_contact_sheet_reviewed",
+        "detail": "All 111 pages rendered successfully; contact-sheet review found no missing/corrupt pages or obvious visual defects."
+      },
+      "quality_assessment": {
+        "visual_inspection": "All 111 pages rendered successfully; contact-sheet review found no missing/corrupt pages or obvious visual defects.",
+        "measured_content": "111; 22698 extracted words; 55752016 bytes; SHA-256 75c8517cda9067d992553a9600079748817aaecf31e482768c1079e48d3c2997.",
+        "standalone_public_value": "A distinct substantive phase of the complete statewide truck-parking study, needed to retain the project management, engagement, evidence, analysis, assessment, and implementation record as published.",
+        "information_density": "Substantive technical-study content with narrative, data, tables, figures, or recommendations; not an administrative fragment.",
+        "series_component_relationship": "Number 7 of 7 in the complete ordered NMDOT statewide truck-parking study series; preserve separately in original container and present only as a clearly numbered series.",
+        "intended_publication_form": "One unchanged original archive object in Roadway Studies after separately authorized R2 upload and exact public-byte verification; no DOCX-to-PDF conversion.",
+        "rationale": "The saved family decision found each deliverable noninterchangeable and necessary to the complete statewide freight and highway reference record relevant to Albuquerque."
+      },
+      "canonical_placement": {
+        "page": "content/transportation/roadway-projects/studies.md",
+        "section": "State Highway Studies Affecting Albuquerque",
+        "decision": "approved_for_future_archive_first_publication"
+      },
+      "proposed_canonical_archive_filename": "nmdot-statewide-truck-parking-study-part-7-recommendation-implementation-plan.pdf",
+      "proposed_r2_key": "transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-7-recommendation-implementation-plan.pdf",
+      "archive_preparation": {
+        "proposed_r2_key": "transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-7-recommendation-implementation-plan.pdf",
+        "preserve_original_container_unchanged": true,
+        "r2_action": "none"
+      },
+      "collision_check": "No exact proposed-key collision in project-state/r2-inventory.json (1,218 objects).",
+      "r2_action": "none",
+      "remaining_gates": [
+        "Complete the five DOCX host-side render and human visual inspections.",
+        "Obtain separate explicit authorization before any R2 upload or storage mutation.",
+        "After upload, verify each public archive download against saved exact size and SHA-256.",
+        "Obtain separate authorization for any Hugo/public-content, PR, merge, or deployment work."
+      ],
+      "inventory_update": {
+        "status": "approved for addition",
+        "direct_file_url": "https://api.realfile.rtsclients.com/PublicFiles/f260a66b364d453e91ff9b3fedd494dc/0745e29c-3139-468a-98ce-879e82dc2a9f/7-%20Recommendation%20and%20Implementation%20Plan.pdf",
+        "file_type": "PDF",
+        "size_bytes": 55752016,
+        "checksum_sha256": "75c8517cda9067d992553a9600079748817aaecf31e482768c1079e48d3c2997",
+        "validation_status": "archive preparation complete with visual QA passed; no R2 archive or public-byte verification performed",
+        "processing_notes": [
+          "Saved NMDOT statewide truck parking study research 2026-09-13: Served from NMDOT's public file host as 7- Recommendation and Implementation Plan.pdf. Container verified by leading bytes 25504446; complete ordered family and placement decision retained in project-state/discovery/nmdot-statewide-truck-parking-study-decision-2026-09-19.json.",
+          "Saved publisher: New Mexico Department of Transportation. The realfile.rtsclients.com delivery host is not treated as publisher.",
+          "Archive preparation 2026-09-21: re-fetched authoritative NMDOT original matched 55752016 bytes and SHA-256 75c8517cda9067d992553a9600079748817aaecf31e482768c1079e48d3c2997; proposed R2 key transportation/roadway-projects/studies/nmdot-statewide-truck-parking-study-part-7-recommendation-implementation-plan.pdf; no R2 upload or public-byte verification performed."
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "source_verification_passed": 7,
+    "docx_visual_qa_passed": 5,
+    "pdf_render_qa_passed": 2,
+    "r2_key_collisions": 0,
+    "total_source_bytes": 88893781
+  },
+  "host_docx_renderer": {
+    "helper": "scripts/project/Render-NmdotTruckParkingDocxInspection.ps1",
+    "staged_originals": "research/staging/nmdot-statewide-truck-parking-study-archive-preparation-2026-09-21",
+    "current_codex_limitation": "Word COM unavailable in Codex Windows execution context: HRESULT 0x80070520; this is not a source-document defect.",
+    "output_report": "research/staging/nmdot-statewide-truck-parking-study-archive-preparation-2026-09-21/docx-visual-render/host-docx-render-report.json",
+    "report_reconciliation": "At this reconciliation the file currently present at host-docx-render-report.json still records the prior Codex Windows Word COM failure 0x80070520 and has no rendered rows, rather than the completed host result described above. Preserve it as stale Codex-session limitation evidence; the direct host-execution and human-inspection attestation is the completion evidence and does not indicate a source defect."
+  },
+  "remaining_gates": [
+    "Obtain separate explicit authorization before any R2 upload or storage mutation.",
+    "After upload, verify each public archive download against saved exact size and SHA-256.",
+    "Obtain separate authorization for any Hugo/public-content, PR, merge, or deployment work."
+  ],
+  "safeguards_observed": {
+    "r2_mutation": false,
+    "public_content_changed": false,
+    "merge_or_deploy": false
+  },
+  "superseded_by_mission_scope_audit": {
+    "artifact": "project-state/discovery/approved-inventory-mission-scope-audit-2026-09-22.json",
+    "recorded_at": "2026-09-22",
+    "reason": "all seven candidates excluded for insufficient Albuquerque relevance; no R2 objects were uploaded",
+    "historical_evidence_preserved": true,
+    "r2_or_publication_action_authorized": false
+  }
+}

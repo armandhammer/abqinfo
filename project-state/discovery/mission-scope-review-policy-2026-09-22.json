@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "artifact_type": "mission_scope_review_policy",
+  "recorded_at": "2026-09-22",
+  "applies_before": [
+    "approved for addition",
+    "archive preparation",
+    "backlog prioritization",
+    "visible/static publication"
+  ],
+  "required_scope_assessment_fields": [
+    "assessed_at",
+    "geographic_institutional_scope",
+    "specific_albuquerque_connection",
+    "abqinfo_public_information_value",
+    "general_context_exclusion_test",
+    "final_scope_decision",
+    "substantive_rationale"
+  ],
+  "positive_approval_decision": "passes_both_gates",
+  "progress_statuses_requiring_positive_scope": [
+    "approved for addition",
+    "downloading",
+    "downloaded",
+    "parsed",
+    "description drafted",
+    "placement assigned",
+    "implemented",
+    "validated"
+  ],
+  "legacy_cutover": {
+    "artifact": "project-state/discovery/mission-scope-legacy-cutover-2026-09-23.json",
+    "rule": "Only the exact 1628 frozen historical records at their original ID, later status, and updated_at may validate without retrospective scope assessments. Any edit or state transition invalidates this exception and requires a complete passes_both_gates assessment. No new record can enter the cutover registry.",
+    "legacy_statuses": ["placement assigned", "implemented", "validated"]
+  },
+  "borderline_human_review": {
+    "scope_decision": "requires_human_scope_review",
+    "inventory_status": "requires human review",
+    "review_reason": "mission_scope_borderline",
+    "only_when": "A specific material Albuquerque connection and credible public-information value exist, but the usefulness/significance judgment is genuinely close.",
+    "never_use_for": [
+      "clearly irrelevant material",
+      "generic or statewide material",
+      "transactional or trivial material",
+      "merely contextual material",
+      "privacy, provenance, version/finality, legal-status, source-recovery, or another non-scope human-review reason"
+    ],
+    "required_scope_assessment_fields": [
+      "assessed_at",
+      "title",
+      "publisher",
+      "date",
+      "geographic_institutional_scope",
+      "specific_albuquerque_connection",
+      "potential_abqinfo_public_information_value",
+      "reason_does_not_confidently_pass",
+      "reason_does_not_clearly_fail",
+      "proposed_page_or_section_if_admitted",
+      "recommended_default_disposition",
+      "final_scope_decision",
+      "substantive_rationale"
+    ],
+    "queue_artifact": "project-state/discovery/mission-scope-borderline-human-review-queue.json",
+    "maximum_unresolved_records": 20,
+    "human_decision_options": ["Add", "Exclude", "Needs more research"],
+    "advance_rule": "No record with requires_human_scope_review may advance to an eligible publication state until a human disposition is durably applied to inventory and the relevant family decision artifact."
+  },
+  "regression_enforcement": "Test-MasterInventory.ps1 and Update-Candidate.ps1 require complete positive assessments in all eight progress statuses except for the immutable exact-record legacy cutover. Test-MissionScopeEligibility.ps1 exercises historical validation and new-record transitions. Test-MissionScopeAudit.py validates the 2026-09-22 correction and scope-gated ranking. Test-MissionScopeBorderlineQueue.py and Test-MissionScopeBorderlineDispositions.py validate the isolated queue, durable human history, and idempotent disposition application."
+}

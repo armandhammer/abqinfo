@@ -20,12 +20,15 @@ r2_keys = {r['key'] for r in load(R2)['objects']}
 expected = {'src-b3d8dcb56e000437', 'src-4952ea05cd055792'}
 
 assert decision['state'] == 'approved_for_addition_archive_preparation_complete_external_archive_and_publication_gated'
+assert decision['superseded_by_mission_scope_audit']['historical_evidence_preserved'] is True
+assert decision['superseded_by_mission_scope_audit']['r2_or_publication_action_authorized'] is False
 assert set(records) == expected == set(research)
 assert decision['placement_review']['canonical_page'] == 'content/development-land-use/development-process.md'
 assert decision['placement_review']['cross_listing']['decision'] == 'rejected_for_future_publication'
 for candidate_id in sorted(expected):
     record, saved, candidate = records[candidate_id], research[candidate_id], inventory[candidate_id]
-    assert record['status'] == candidate['status'] == 'approved for addition'
+    assert record['status'] == 'approved for addition'
+    assert candidate['status'] == 'excluded'
     assert record['accepted_title'] == candidate['title'] == saved['title']
     assert record['authoritative_source_url'] == candidate['direct_file_url'] == saved['authoritative_url']
     for field in ('size_bytes', 'checksum_sha256'):

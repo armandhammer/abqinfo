@@ -6,7 +6,9 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
-$inventory = Get-Content -Raw -Encoding UTF8 $InventoryPath | ConvertFrom-Json
+$inventory = Get-Content -Raw -Encoding UTF8 $InventoryPath | ConvertFrom-Json -DateKind String
+. "$PSScriptRoot/MissionScopePolicy.ps1"
+$legacyScopeRegistry = Read-MissionScopeLegacyRegistry
 $errors = [Collections.Generic.List[string]]::new()
 $ids = @{}
 $primaryUrls = [Collections.Generic.HashSet[string]]::new([StringComparer]::Ordinal)
@@ -49,6 +51,24 @@ foreach ($candidate in $inventory.candidates) {
   }
   if ($candidate.status -in @('implemented','validated') -and -not $candidate.description) { $errors.Add("Implemented item missing description: $($candidate.id)") }
   if ($candidate.status -in @('excluded','duplicate','superseded') -and -not $candidate.exclusion_reason) { $errors.Add("Terminal exclusion missing reason: $($candidate.id)") }
+  if (-not (Test-MissionScopeProgressEligible $candidate $legacyScopeRegistry)) {
+    $errors.Add("Candidate in $($candidate.status) lacks a complete positive mission scope assessment or an unchanged cutover legacy entry: $($candidate.id)")
+  }
+  if ($candidate.status -eq 'requires human review' -and $candidate.PSObject.Properties['review_reason'] -and $candidate.review_reason -eq 'mission_scope_borderline') {
+    if (-not $candidate.PSObject.Properties['scope_assessment'] -or $null -eq $candidate.scope_assessment) {
+      $errors.Add("Mission-scope borderline candidate missing scope assessment: $($candidate.id)")
+    }
+    else {
+      $scope = $candidate.scope_assessment
+      $requiredBorderlineScopeFields = @('assessed_at','title','publisher','date','geographic_institutional_scope','specific_albuquerque_connection','potential_abqinfo_public_information_value','reason_does_not_confidently_pass','reason_does_not_clearly_fail','proposed_page_or_section_if_admitted','recommended_default_disposition','final_scope_decision','substantive_rationale')
+      foreach ($field in $requiredBorderlineScopeFields) {
+        if (-not $scope.PSObject.Properties[$field] -or [string]::IsNullOrWhiteSpace([string]$scope.$field)) { $errors.Add("Mission-scope borderline candidate has incomplete scope assessment: $($candidate.id) = $field") }
+      }
+      if ($scope.final_scope_decision -ne 'requires_human_scope_review') { $errors.Add("Mission-scope borderline candidate has invalid scope decision: $($candidate.id) = $($scope.final_scope_decision)") }
+      if ($scope.recommended_default_disposition -notin @('Add','Exclude','Needs more research')) { $errors.Add("Mission-scope borderline candidate has invalid recommended disposition: $($candidate.id)") }
+    }
+  }
+  if ($candidate.status -ne 'requires human review' -and $candidate.PSObject.Properties['review_reason'] -and $candidate.review_reason -eq 'mission_scope_borderline') { $errors.Add("Resolved candidate retains mission-scope borderline review reason: $($candidate.id)") }
   if ($candidate.status -in @('implemented','validated') -and -not $candidate.implementation_location) { $errors.Add("Implemented item missing location: $($candidate.id)") }
   if ($candidate.status -eq 'validated' -and $candidate.r2_url -and -not $candidate.source_url) { $errors.Add("R2-only item incorrectly marked validated without authoritative provenance: $($candidate.id)") }
   $locations = @($candidate.implementation_locations | Where-Object { $_ } | Sort-Object -Unique)

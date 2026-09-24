@@ -13,36 +13,24 @@ try {
   @'
 ## Summary
 
-Records a research-only decision.
+Adds one historical planning section for editorial review.
 
-## What changed
+## Review this change
 
-* Added the durable decision artifact.
+**Area & Sector Plans → Citywide Growth Strategy**
 
-## Archive / inventory / provenance
+* Added: Citywide Growth Strategy, including Planned Growth Strategy Part 1 and the Part 2 chapter series.
 
-No R2 change; source evidence remains preserved.
-
-## Visible site changes
-
-None.
-
-No `content/` pages or public archive objects changed.
-
-## Validation
-
-* Focused regression passed.
-
-## Deferred / not included
-
-Archive and publication remain gated.
+**Preview:** https://example.abqinfo.pages.dev/development-land-use/area-sector-plans/#citywide-growth-strategy
 '@ | Set-Content -LiteralPath $validPath -Encoding utf8NoBOM
   & $validator -Path $validPath
 
   foreach ($case in @(
-    @{ Name = 'literal-newline'; Text = (Get-Content $validPath -Raw) -replace "## What changed", "## What changed\\n" },
-    @{ Name = 'malformed-prefix'; Text = (Get-Content $validPath -Raw) -replace 'Records a research-only decision\.', 'Records a \\requires review decision.' },
-    @{ Name = 'missing-section'; Text = (Get-Content $validPath -Raw) -replace '(?ms)## Deferred / not included.*$', '' }
+    @{ Name = 'literal-newline'; Text = (Get-Content $validPath -Raw) -replace '## Review this change', '## Review this change\\n' },
+    @{ Name = 'malformed-prefix'; Text = (Get-Content $validPath -Raw) -replace 'historical planning section', '\\requires planning section' },
+    @{ Name = 'missing-section'; Text = (Get-Content $validPath -Raw) -replace '(?m)^## Summary$', '## Overview' },
+    @{ Name = 'production-url'; Text = (Get-Content $validPath -Raw) -replace 'https://example.abqinfo.pages.dev/', 'https://abqinfo.com/' },
+    @{ Name = 'preview-home'; Text = (Get-Content $validPath -Raw) -replace 'https://example.abqinfo.pages.dev/development-land-use/area-sector-plans/#citywide-growth-strategy', 'https://example.abqinfo.pages.dev/' }
   )) {
     $path = Join-Path $tempRoot ($case.Name + '.md')
     Set-Content -LiteralPath $path -Value $case.Text -Encoding utf8NoBOM

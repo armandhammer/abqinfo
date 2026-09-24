@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "artifact_type": "bounded_authoritative_source_recovery_and_family_presentation_decision",
+  "recorded_at": "2026-09-23",
+  "scope": "Only the missing Planned Growth Strategy Part 2 Chapter 3.0 source and the existing family's truthful future form. The settled Part 1 and ten other Part 2 chapter reviews were not repeated.",
+  "prior_evidence": [
+    "project-state/discovery/planned-growth-strategy-cluster-research-2026-09-11.json",
+    "project-state/discovery/undiscovered-documents-research-2026-09-14.json",
+    "project-state/discovery/planned-growth-strategy-decision-2026-09-19.json",
+    "project-state/discovery/approved-inventory-mission-scope-audit-2026-09-22.json"
+  ],
+  "authoritative_source_search": [
+    {
+      "source": "https://www.cabq.gov/council/projects/completed-projects/2004/planned-growth-strategy",
+      "method": "Inspected the official City Council completed-project page and followed its Chapter 3 and entire-report links.",
+      "result": "The project page explicitly names Chapter 3 - Preferred Alternative Summary and links to lowercase part2-3.pdf. It also labels Part2.pdf as the entire Preferred Alternative report, but the linked PDF is unrelated."
+    },
+    {
+      "source": "https://www.cabq.gov/council/documents/pgs",
+      "method": "Compared the City's Plone collection listing with the project page and saved direct-file sequence research.",
+      "result": "The collection listing omits Chapter 3, as it also omitted obtainable Chapters 4 and 6 in the saved research. The listing is an incomplete file index."
+    },
+    {
+      "source": "https://www.cabq.gov/council/documents/pgs/Part2-3.pdf",
+      "method": "Reviewed the saved 2026-09-11 exact-path probe from the cluster research.",
+      "result": "The uppercase-P direct path returned HTTP 404. The historical negative probe cannot rule out the lowercase file linked by the City project page."
+    },
+    {
+      "source": "https://www.cabq.gov/council/documents/pgs/part2-3.pdf",
+      "method": "Fetched the official City-hosted original by full GET on 2026-09-23; hashed the fetched bytes and inspected PDF structure, extracted text, and representative rendered pages including maps.",
+      "result": "HTTP 200, application/pdf, PDF 1.4. It is the missing Chapter 3.0 original."
+    },
+    {
+      "source": "https://www.cabq.gov/council/documents/pgs/Part2.pdf",
+      "method": "Followed the City project page's apparent entire-Part-2 link and compared its table of contents and 144-page identity with saved family research.",
+      "result": "It is Part 2 of a separate City/County government-unification study, not the Planned Growth Strategy Preferred Alternative. Saved research already relates it to the complete Structuring A New Urban Government record."
+    },
+    {
+      "source": "City and Bernalillo County government web search",
+      "method": "Bounded first-party searches for a combined Planned Growth Strategy Part 2 original, including the City project and file hosts and County domain.",
+      "result": "No verified combined Preferred Alternative original found beyond the misleading Part2.pdf link. This is an evidence limit, not proof that no such original ever existed."
+    }
+  ],
+  "chapter_3_result": {
+    "recovered": true,
+    "inventory_id": "src-44dedde405c00c2c",
+    "official_project_page": "https://www.cabq.gov/council/projects/completed-projects/2004/planned-growth-strategy",
+    "official_original_url": "https://www.cabq.gov/council/documents/pgs/part2-3.pdf",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "container": "PDF 1.4, leading bytes %PDF-1.4, unencrypted",
+    "size_bytes": 6068014,
+    "checksum_sha256": "56401ff3c1a17c2e19465c8b71f7b2afa893ad00e20a2bf6a5e92a66e60e1b08",
+    "pdf_pages": 19,
+    "pdf_title_metadata": "Planned Growth Strategy - Part 2, Chapter 3",
+    "printed_identity": "3.0 Preferred Alternative Summary",
+    "printed_pagination_observed": "Text pages 131-143, followed by six image-only map pages bearing odd printed folios 145, 147, 149, 151, 153 and 155. The table of contents lists Chapter 3 as pages 131-156; the next chapter begins on printed page 157.",
+    "substantive_inspection": "The opening section explains the preferred alternative's 2000-2025 Albuquerque and Bernalillo County growth objectives. The text and tables cover housing and employment allocations by subarea; rendered Figures 19 and 24 show population and employment change maps. The last six pages are image-only, so extractable-text counts alone understate content.",
+    "extractable_text": "32,577 characters and approximately 3,115 alphabetic tokens measured by PyMuPDF across the 19-page PDF; six map pages have no text layer.",
+    "recovery_explanation": "The apparent gap was an incomplete historical file capture: the City collection listing omits the file, and the prior filename probe used uppercase Part2-3.pdf while the project page links lowercase part2-3.pdf. The chapter was publicly issued, neither intentionally omitted nor renamed into another chapter.",
+    "local_verification_copy": "tmp/pgs-part2-3-official-2026-09-23.pdf",
+    "archive_status": "inventory_only_no_R2_upload_or_public_byte_verification"
+  },
+  "combined_part_2_result": {
+    "verified_complete_combined_original_found": false,
+    "city_page_claim": "The official City project page labels Part2.pdf as Part 2 - Preferred Alternative (entire report).",
+    "verified_link_identity": "The actual 144-page Part2.pdf is a City/County governmental-unification study, not the Preferred Alternative. Its misleading label cannot establish a complete Planned Growth Strategy Part 2 original.",
+    "evidence_limit": "No other authoritative combined original was found in this bounded search. An unindexed or offline government original remains possible."
+  },
+  "final_family_determination": {
+    "part_1": "Use the one complete 286-page City original, Part1.pdf, as the canonical Part 1 document. Its seven component deliveries remain duplicates; no status change is warranted.",
+    "part_2_chapter_roster": "The City project page and Part 2 table of contents list Chapters 1.0 through 11.0. With Chapter 3.0 recovered, all 11 named chapters are represented by 12 separate City PDF deliveries because Chapter 1.0 has two files.",
+    "part_2_completeness": "Complete against the official named-chapter roster, but no verified complete combined Part 2 original exists. The 19-page Chapter 3 delivery has nonconsecutive printed map folios, so do not claim page-for-page identity with an unavailable master volume or label the chapter set a complete original report.",
+    "future_presentation": "A single curated Planned Growth Strategy family entry: Part 1 as one complete original, then Part 2 as an explicitly labelled City-published chapter/component series with all 11 chapter headings and 12 separate official PDFs in order. State that Chapter 3.0 was recovered from a lowercase official City URL missing from the collection listing, and that the City page's purported entire-Part-2 link points to another study. Do not create a synthetic combined PDF.",
+    "future_canonical_page": "content/development-land-use/area-sector-plans.md",
+    "future_section": "Citywide Growth Strategy",
+    "placement_rationale": "The historical study is a land-use and growth-planning framework, not an IDO edition, zoning enactment, area-specific sector plan, or transaction. Within the existing site structure, the historical plans page is the closest truthful home if given an explicit citywide-framework heading; the previous Zoning & IDO proposal overemphasized one regulatory aspect. A separate Zoning & IDO cross-listing is not justified at this decision stage.",
+    "duplicate_and_supersession_disposition": "No changes. The seven Part 1 component duplicates remain covered by the complete original. All 12 Part 2 files are distinct original deliveries, including the newly recovered Chapter 3. The unrelated Part2.pdf remains governed by its government-unification-study disposition. The three enactment-bill copies remain requires human review for legal-status resolution and are outside this source-recovery task."
+  },
+  "scope_assessment": {
+    "assessed_at": "2026-09-23",
+    "geographic_institutional_scope": "City of Albuquerque and Bernalillo County planned-growth policy affecting Albuquerque subareas, infrastructure, redevelopment, land use, and regulatory choices.",
+    "specific_albuquerque_connection": "The preferred alternative allocates housing, population, and employment among Albuquerque subareas and maps the City's anticipated growth and infrastructure pattern.",
+    "abqinfo_public_information_value": "The family explains a material historical Albuquerque planning framework and the policy choices behind later land-use and infrastructure work. The recovered summary supplies the overview formerly missing from the chapter set.",
+    "general_context_exclusion_test": "The record is the City and County's own growth strategy, with substantive Albuquerque policy and mapped allocations; it is not retained merely because statewide or regional context mentions Albuquerque.",
+    "final_scope_decision": "passes_both_gates",
+    "substantive_rationale": "Both independent gates pass confidently for the recovered chapter and retained family. The publication-form and misleading-link caveats concern truthful presentation, not mission relevance. No mission-scope-borderline record is warranted."
+  },
+  "quality_assessment_for_recovered_chapter": {
+    "reviewed_document_content": true,
+    "visual_inspection_completed": true,
+    "page_count": 19,
+    "extractable_text_characters": 32577,
+    "estimated_alphabetic_tokens": 3115,
+    "information_density": "substantial text, tables, and six image-only growth maps",
+    "standalone_public_value": "high within the Part 2 series because it summarizes the preferred alternative and its Albuquerque subarea allocations",
+    "series_relationship": "serial chapter, not a Part 1 duplicate or replacement for the complete Part 2 volume",
+    "intended_publication_form": "separate official original within one curated Part 2 chapter series",
+    "substantive_rationale": "The official summary supplies important policy and map content previously absent from the delivered set. The authentic PDF must remain distinct, linked in chapter order, with the absence of a verified combined original disclosed."
+  },
+  "inventory_effect": "One new authoritative Chapter 3.0 candidate approved inventory-only with full positive scope assessment. The 12 already approved Part 1/Part 2 originals retain their statuses; their proposed canonical page is corrected to Area & Sector Plans. No duplicate, superseded, or enactment-bill status changes. No mission-scope-borderline queue addition.",
+  "remaining_blockers": [
+    "No verified authoritative combined Planned Growth Strategy Part 2 original has been located; the City project page's purported complete link is misidentified.",
+    "R2 archival, exact public-byte verification, and site presentation remain separate future gates. The three enactment-bill copies still need enacted-ordinance resolution."
+  ],
+  "safeguards": [
+    "No archive preparation or R2/storage mutation",
+    "No Hugo/content change or PR",
+    "No merge or deployment",
+    "No other family reviewed"
+  ]
+}

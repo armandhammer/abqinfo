@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-21",
+  "scope_candidate_ids": [
+    "src-1f8378fe0d939884",
+    "src-1ce9fae6e4b2e675",
+    "src-a5f4c28aefd1ce20",
+    "src-57017bee270744dd",
+    "src-68d5d6b446b98b35"
+  ],
+  "renderer": "scripts/project/Render-NmdotTruckParkingDocxInspection.ps1",
+  "human_visual_qa": "passed",
+  "attestation": "The host-side helper successfully rendered all five inspection-only PDFs for Parts 1-5 from the already byte-verified DOCX originals and reported failure: null. Human visual inspection confirmed all five are complete and readable. Parts 2-5 have no obvious missing content, corrupted pages, malformed tables or figures, or significant layout defects.",
+  "part_1_benign_blank_page_observation": "Part 1 (01-project-management-plan.pdf) has several blank pages between sections. They are intentional separator/layout pages from the original: surrounding sections are complete, with no content missing or displaced. This is a benign visual observation, not a source or document defect.",
+  "preservation": "The DOCX originals remain unchanged and are the proposed future archive objects; the rendered PDFs are inspection-only derivatives.",
+  "report_reconciliation": "At this reconciliation the file currently present at host-docx-render-report.json still records the prior Codex Windows Word COM failure 0x80070520 and has no rendered rows, rather than the completed host result described above. Preserve it as stale Codex-session limitation evidence; the direct host-execution and human-inspection attestation is the completion evidence and does not indicate a source defect.",
+  "r2_action": "none",
+  "superseded_by_mission_scope_audit": {
+    "artifact": "project-state/discovery/approved-inventory-mission-scope-audit-2026-09-22.json",
+    "recorded_at": "2026-09-22",
+    "reason": "all seven candidates excluded for insufficient Albuquerque relevance",
+    "historical_evidence_preserved": true,
+    "r2_or_publication_action_authorized": false
+  }
+}
