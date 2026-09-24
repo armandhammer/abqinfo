@@ -112,7 +112,16 @@ $contentTypes = @{
 }
 $extension = [IO.Path]::GetExtension($source.Name).ToLowerInvariant()
 $contentType = if ($contentTypes.ContainsKey($extension)) { $contentTypes[$extension] } else { 'application/octet-stream' }
-$hash = (Get-FileHash -LiteralPath $source.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+# Get-FileHash has a WhatIf-sensitive provider operation in Windows PowerShell.
+# Keep its local read active during an uploader dry run; restore WhatIf before
+# the upload's ShouldProcess gate below.
+$savedWhatIfPreference = $WhatIfPreference
+try {
+  $WhatIfPreference = $false
+  $hash = (Get-FileHash -LiteralPath $source.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+} finally {
+  $WhatIfPreference = $savedWhatIfPreference
+}
 
 $previousEnvironment = @{}
 foreach ($name in 'AWS_ACCESS_KEY_ID', 'AWS_SECRET_ACCESS_KEY', 'AWS_DEFAULT_REGION', 'AWS_EC2_METADATA_DISABLED') {
