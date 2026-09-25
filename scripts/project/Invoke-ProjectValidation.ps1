@@ -41,6 +41,16 @@ if (Test-Path -LiteralPath 'project-state/discovery/planned-growth-strategy-arch
   & python "$PSScriptRoot/Test-PlannedGrowthStrategyArchivePreparation.py"
   if ($LASTEXITCODE) { throw 'Planned Growth Strategy archive-preparation validation failed.' }
 }
+if (Test-Path -LiteralPath 'project-state/discovery/later-ms4-archive-preparation-2026-09-24.json') {
+  & python "$PSScriptRoot/Test-LaterMs4ArchivePreparation.py"
+  if ($LASTEXITCODE) { throw 'Later-MS4 archive-preparation validation failed.' }
+  & python "$PSScriptRoot/Test-LaterMs4R2UploadPreflight.py"
+  if ($LASTEXITCODE) { throw 'Later-MS4 historical upload-preflight validation failed.' }
+}
+if (Test-Path -LiteralPath 'project-state/discovery/later-ms4-archive-public-byte-verification-2026-09-25.json') {
+  & python "$PSScriptRoot/Test-LaterMs4ArchivePublicBytes.py"
+  if ($LASTEXITCODE) { throw 'Later-MS4 archive/public-byte validation failed.' }
+}
 if (Test-Path -LiteralPath 'project-state/discovery/planned-growth-strategy-hugo-implementation-2026-09-23.json') {
   & python "$PSScriptRoot/Test-PlannedGrowthStrategyHugoImplementation.py"
   if ($LASTEXITCODE) { throw 'Planned Growth Strategy Hugo implementation validation failed.' }
