@@ -30,6 +30,10 @@ def main() -> None:
     gate = load(DISCOVERY / '2014-ms4-family-package-gate-2026-09-18.json')
     inventory = {r['id']: r for r in load(ROOT / 'project-state/master-inventory.json')['candidates']}
     r2 = load(ROOT / 'project-state/r2-inventory.json')
+    closeout_path = DISCOVERY / 'later-ms4-production-closeout-2026-09-25.json'
+    closeout = load(closeout_path) if closeout_path.exists() else None
+    if closeout:
+        assert closeout['production_verification_result'] == 'passed'
     page = PAGE.read_text(encoding='utf-8-sig')
     heading = '### Municipal Stormwater Program and Annual Reports'
     assert page.count(heading) == 1
@@ -70,12 +74,12 @@ def main() -> None:
         assert page.count(archive_url) == page.count(official_url) == 1
         assert section.index(archive_url) < section.index(official_url)
         positions.append(section.index(archive_url))
-        assert row['status'] == 'implemented'
+        assert row['status'] == ('validated' if closeout else 'implemented')
         assert row['implementation_location'] == implementation['page']
         assert row['implementation_locations'] == [implementation['page']]
         assert row['proposed_canonical_page'] == implementation['page']
         assert row['scope_assessment']['final_scope_decision'] == 'passes_both_gates'
-        assert 'not live' in row['validation_status']
+        assert ('production Stormwater and Drainage' if closeout else 'not live') in row['validation_status']
     assert positions == sorted(positions)
     assert inventory['src-185f33493177b085']['status'] == 'superseded'
     assert inventory['src-3408f5b9a86bcb5c']['status'] == 'excluded'
@@ -85,7 +89,7 @@ def main() -> None:
             if excluded.get(field):
                 assert excluded[field] not in section, (excluded_id, field)
     assert not re.search(r'FY\s*2021 draft|2015 EPA coverage letter|2014 MS4 Annual Report', section, re.I)
-    print('PASS: Stormwater section has six exact archived/source pairs, ten annual reports in descending FY order, one permit context, and six implemented rows; no excluded or gated records.')
+    print('PASS: Stormwater section has six exact archived/source pairs, ten annual reports in descending FY order, one permit context, and six ' + ('validated live' if closeout else 'implemented') + ' rows; no excluded or gated records.')
 
 
 if __name__ == '__main__':
