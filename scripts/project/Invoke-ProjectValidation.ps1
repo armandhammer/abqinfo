@@ -51,6 +51,10 @@ if (Test-Path -LiteralPath 'project-state/discovery/later-ms4-archive-public-byt
   & python "$PSScriptRoot/Test-LaterMs4ArchivePublicBytes.py"
   if ($LASTEXITCODE) { throw 'Later-MS4 archive/public-byte validation failed.' }
 }
+if (Test-Path -LiteralPath 'project-state/discovery/later-ms4-hugo-implementation-2026-09-25.json') {
+  & python "$PSScriptRoot/Test-LaterMs4HugoImplementation.py"
+  if ($LASTEXITCODE) { throw 'Later-MS4 Hugo implementation validation failed.' }
+}
 if (Test-Path -LiteralPath 'project-state/discovery/planned-growth-strategy-hugo-implementation-2026-09-23.json') {
   & python "$PSScriptRoot/Test-PlannedGrowthStrategyHugoImplementation.py"
   if ($LASTEXITCODE) { throw 'Planned Growth Strategy Hugo implementation validation failed.' }
@@ -125,6 +129,10 @@ if ($LASTEXITCODE) { throw 'Hugo build failed.' }
 if (Test-Path -LiteralPath 'project-state/discovery/planned-growth-strategy-hugo-implementation-2026-09-23.json') {
   & python "$PSScriptRoot/Test-PlannedGrowthStrategyRenderedPage.py"
   if ($LASTEXITCODE) { throw 'Planned Growth Strategy rendered-page validation failed.' }
+}
+if (Test-Path -LiteralPath 'project-state/discovery/later-ms4-hugo-implementation-2026-09-25.json') {
+  & python "$PSScriptRoot/Test-LaterMs4RenderedPage.py"
+  if ($LASTEXITCODE) { throw 'Later-MS4 rendered-page validation failed.' }
 }
 
 $broken = @()

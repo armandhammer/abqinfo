@@ -27,6 +27,7 @@ def main() -> None:
     prep, manifest = load(PREP), load(PREFLIGHT)
     evidence_path = ROOT / 'project-state/discovery/later-ms4-archive-public-byte-verification-2026-09-25.json'
     completed = evidence_path.exists() and load(evidence_path).get('state') == 'complete_all_six_public_byte_verified_and_inventory_reconciled'
+    implemented = (ROOT / 'project-state/discovery/later-ms4-hugo-implementation-2026-09-25.json').exists()
     assert manifest['state'] == 'no_mutation_preflight_complete_awaiting_explicit_upload_authorization'
     assert manifest['candidate_ids_in_order'] == prep['candidate_ids_in_order']
     assert len(manifest['candidate_ids_in_order']) == len(set(manifest['candidate_ids_in_order'])) == len(manifest['records']) == 6
@@ -64,7 +65,7 @@ def main() -> None:
         assert record['source_sha256'] == prepared['checksum_sha256'] == row['checksum_sha256'] == digest(path)
         assert record['proposed_r2_key'] == prepared['proposed_r2_key']
         assert record['expected_public_archive_url'] == prepared['proposed_future_archive_url']
-        assert row['status'] == ('placement assigned' if completed else 'approved for addition')
+        assert row['status'] == ('implemented' if implemented else 'placement assigned' if completed else 'approved for addition')
         assert row['r2_key'] == (prepared['proposed_r2_key'] if completed else None)
         assert row['r2_url'] == (prepared['proposed_future_archive_url'] if completed else None)
         assert record['current_r2_key_absent'] and record['current_r2_same_size_object_absent']

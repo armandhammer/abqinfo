@@ -206,6 +206,12 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
 ### Municipal Stormwater Program and Annual Reports
 
+- [EPA Middle Rio Grande Watershed-Based MS4 General Permit (2014 archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/epa-middle-rio-grande-watershed-ms4-general-permit-2014.pdf)
+
+  Sets the NMR04A000 watershed permit requirements for water-quality standards, impaired waters, construction and post-construction runoff, illicit discharges, public education, municipal operations, and monitoring. Albuquerque's NMR04A014 coverage and later annual filings are under this permit.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/storm-drainage-documents/ms4-permit.pdf)
+
 - [City of Albuquerque MS4 Annual Report, FY 2025 (archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-annual-report-fy2025.pdf)
 
   Reports FY 2025 municipal stormwater permit compliance in Albuquerque, including monitoring, pollutant controls, inspections, public education, construction oversight, water-quality results, and extensive supporting records and appendices.
@@ -230,11 +236,41 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
   [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/city-of-albuquerque-fy22-ms4-annual-report-nmr04a14.pdf)
 
+- [City of Albuquerque MS4 Annual Report, FY 2021 (final archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-annual-report-fy2021-final.pdf)
+
+  The final FY 2021 filing covers wet-weather monitoring, impaired-water responses, stormwater-quality features, illicit-discharge controls, construction and post-construction oversight, municipal operations, outreach, and supporting attachments.
+
+  [Official City PDF](https://documents.cabq.gov/municipal-development/city-of-albuquerque-fy21-ms4-annual-report-nmr04a14.pdf)
+
+- [City of Albuquerque MS4 Annual Report, FY 2020 (final archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-annual-report-fy2020-final.pdf)
+
+  The final FY 2020 filing records monitoring and impaired-water work, stormwater-quality controls, construction and post-construction review, illicit-discharge investigations, municipal pollution prevention, outreach, and supporting records.
+
+  [Official City PDF](https://documents.cabq.gov/municipal-development/city-of-albuquerque-final-fy20-ms4-annual-report-nmr04a014.pdf)
+
+- [City of Albuquerque MS4 Annual Report, FY 2019 (archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-annual-report-fy2019.pdf)
+
+  Records FY 2019 monitoring and impaired-water responses, structural stormwater controls, construction review, illicit-discharge work, municipal operations, public outreach, and supporting monitoring and inspection materials.
+
+  [Official City PDF](https://documents.cabq.gov/municipal-development/city-of-albuquerque-fy19-ms4-annual-report-nmr04A014.pdf)
+
 - [City of Albuquerque MS4 Annual Report, FY 2018 (Archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-annual-report-fy2018.pdf)
 
   Documents Albuquerque's FY2018 municipal stormwater permit compliance, including impaired-water priorities, monitoring, illicit-discharge investigations, construction oversight, municipal operations, public education, photographs, laboratory results, inspection records, and extensive supporting appendices.
 
   [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/city-of-albuquerque-fy18-ms4-annual-report-nmr04a014.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/city-of-albuquerque-fy18-ms4-annual-report-nmr04a014.pdf)
+
+- [City of Albuquerque MS4 Annual Report, FY 2017 (archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-annual-report-fy2017.pdf)
+
+  Reports FY 2017 monitoring, impaired-water measures, illicit-discharge detection, construction and post-construction controls, municipal operations, public education, and extensive supporting attachments.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/storm-drainage-documents/fiscal-2017-ms4-annual-report.pdf)
+
+- [City of Albuquerque MS4 Annual Report, FY 2016 (archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-ms4-annual-report-fy2016.pdf)
+
+  The signed, compiled FY 2016 filing addresses water-quality priorities, public education, construction-site inspections, illicit-discharge detection, municipal stormwater operations, and supporting records.
+
+  [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/storm-drainage-documents/annual_report_ver-6-112116-signed-compiled-small.pdf)
 
 - [City of Albuquerque Stormwater Management Program (2019 archived PDF)](https://files.abqinfo.com/public-works/stormwater-drainage/cabq-stormwater-management-program-2019.pdf)
 
