@@ -14,6 +14,7 @@ pgs_implemented_ids = set()
 pgs_validated_ids = set()
 later_ms4_archived_ids = set()
 later_ms4_implemented_ids = set()
+later_ms4_validated_ids = set()
 if pgs_archive_path.exists():
     pgs_archive = json.loads(pgs_archive_path.read_text(encoding='utf-8'))
     assert pgs_archive['state'] == 'complete_all_13_public_byte_verified_and_inventory_reconciled'
@@ -45,6 +46,12 @@ if later_ms4_implementation_path.exists():
     assert later_ms4_implementation['state'] == 'implemented_on_planning_branch_not_live'
     later_ms4_implemented_ids = set(later_ms4_implementation['implemented_inventory_ids'])
     assert later_ms4_implemented_ids == later_ms4_archived_ids
+later_ms4_closeout_path = DISCOVERY / 'later-ms4-production-closeout-2026-09-25.json'
+if later_ms4_closeout_path.exists():
+    later_ms4_closeout = json.loads(later_ms4_closeout_path.read_text(encoding='utf-8-sig'))
+    assert later_ms4_closeout['production_verification_result'] == 'passed'
+    later_ms4_validated_ids = set(later_ms4_closeout['inventory_ids_to_validate'])
+    assert later_ms4_validated_ids == later_ms4_implemented_ids
 
 required = {'assessed_at', 'geographic_institutional_scope', 'specific_albuquerque_connection', 'abqinfo_public_information_value', 'general_context_exclusion_test', 'final_scope_decision', 'substantive_rationale'}
 records = audit['records']
@@ -63,7 +70,7 @@ for record in records:
     candidate = by_id[record['id']]
     expected_status = ('validated' if record['id'] in pgs_validated_ids else 'implemented' if record['id'] in pgs_implemented_ids else 'placement assigned') if record['id'] in pgs_archived_ids and record['resulting_status'] == 'approved for addition' else record['resulting_status']
     if record['id'] in later_ms4_archived_ids and record['resulting_status'] == 'approved for addition':
-        expected_status = 'implemented' if record['id'] in later_ms4_implemented_ids else 'placement assigned'
+        expected_status = 'validated' if record['id'] in later_ms4_validated_ids else 'implemented' if record['id'] in later_ms4_implemented_ids else 'placement assigned'
     assert candidate['status'] == expected_status
     assert candidate['scope_assessment'] == record['scope_assessment']
 for candidate in inventory['candidates']:

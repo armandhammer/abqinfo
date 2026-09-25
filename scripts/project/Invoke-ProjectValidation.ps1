@@ -55,6 +55,10 @@ if (Test-Path -LiteralPath 'project-state/discovery/later-ms4-hugo-implementatio
   & python "$PSScriptRoot/Test-LaterMs4HugoImplementation.py"
   if ($LASTEXITCODE) { throw 'Later-MS4 Hugo implementation validation failed.' }
 }
+if (Test-Path -LiteralPath 'project-state/discovery/later-ms4-production-closeout-2026-09-25.json') {
+  & python "$PSScriptRoot/Test-LaterMs4ProductionCloseout.py"
+  if ($LASTEXITCODE) { throw 'Later-MS4 production closeout validation failed.' }
+}
 if (Test-Path -LiteralPath 'project-state/discovery/planned-growth-strategy-hugo-implementation-2026-09-23.json') {
   & python "$PSScriptRoot/Test-PlannedGrowthStrategyHugoImplementation.py"
   if ($LASTEXITCODE) { throw 'Planned Growth Strategy Hugo implementation validation failed.' }
