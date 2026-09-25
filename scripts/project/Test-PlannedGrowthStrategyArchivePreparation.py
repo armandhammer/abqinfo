@@ -5,6 +5,7 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -73,8 +74,8 @@ def main() -> None:
         assert archive["state"] == "complete_all_13_public_byte_verified_and_inventory_reconciled"
         assert archive["summary"] == {"intended": 13, "uploaded_now": 13, "already_present_identical": 0, "public_byte_verified": 13, "added_bytes": 109212492}
         assert archive["before_r2"]["object_count"] == 1218 and archive["before_r2"]["total_bytes"] == 8682142612
-        assert archive["after_r2"]["object_count"] == r2["object_count"] == 1231
-        assert archive["after_r2"]["total_bytes"] == r2["total_bytes"] == 8791355104
+        assert archive["after_r2"]["object_count"] == 1231 and r2["object_count"] >= 1231
+        assert archive["after_r2"]["total_bytes"] == 8791355104 and r2["total_bytes"] >= 8791355104
         assert {result["id"] for result in archive["results"]} == expected_ids and len(archive["results"]) == 13
         results = {result["id"]: result for result in archive["results"]}
         objects = {obj["key"]: obj for obj in r2["objects"]}
@@ -103,7 +104,8 @@ def main() -> None:
             assert result["r2_key"] == row["r2_key"] == obj["key"]
             assert result["expected_size_bytes"] == result["public_size_bytes"] == obj["size_bytes"] == record["size_bytes"]
             assert result["expected_checksum_sha256"] == result["public_checksum_sha256"] == record["checksum_sha256"]
-            assert row["r2_etag"] == obj["etag"] and row["r2_last_modified"] == obj["last_modified"]
+            assert row["r2_etag"] == obj["etag"]
+            assert datetime.fromisoformat(row["r2_last_modified"]).astimezone(timezone.utc) == datetime.fromisoformat(obj["last_modified"]).astimezone(timezone.utc)
             if implementation:
                 assert row["implementation_location"] == row["proposed_canonical_page"] == implementation["page"]
                 assert row["implementation_locations"] == [implementation["page"]]

@@ -12,6 +12,7 @@ pgs_archive_path = DISCOVERY / 'planned-growth-strategy-archive-public-byte-veri
 pgs_archived_ids = set()
 pgs_implemented_ids = set()
 pgs_validated_ids = set()
+later_ms4_archived_ids = set()
 if pgs_archive_path.exists():
     pgs_archive = json.loads(pgs_archive_path.read_text(encoding='utf-8'))
     assert pgs_archive['state'] == 'complete_all_13_public_byte_verified_and_inventory_reconciled'
@@ -30,6 +31,13 @@ if pgs_closeout_path.exists():
     assert pgs_closeout['production_verification_result'] == 'passed'
     pgs_validated_ids = set(pgs_closeout['ordered_inventory_ids'])
     assert len(pgs_validated_ids) == 13 and pgs_validated_ids == pgs_implemented_ids
+later_ms4_archive_path = DISCOVERY / 'later-ms4-archive-public-byte-verification-2026-09-25.json'
+if later_ms4_archive_path.exists():
+    later_ms4_archive = json.loads(later_ms4_archive_path.read_text(encoding='utf-8-sig'))
+    if later_ms4_archive['state'] == 'complete_all_six_public_byte_verified_and_inventory_reconciled':
+        assert later_ms4_archive['summary']['public_byte_verified'] == 6
+        later_ms4_archived_ids = {result['id'] for result in later_ms4_archive['results']}
+        assert len(later_ms4_archived_ids) == 6
 
 required = {'assessed_at', 'geographic_institutional_scope', 'specific_albuquerque_connection', 'abqinfo_public_information_value', 'general_context_exclusion_test', 'final_scope_decision', 'substantive_rationale'}
 records = audit['records']
@@ -47,6 +55,8 @@ for record in records:
     assert set(record['scope_assessment']) == required
     candidate = by_id[record['id']]
     expected_status = ('validated' if record['id'] in pgs_validated_ids else 'implemented' if record['id'] in pgs_implemented_ids else 'placement assigned') if record['id'] in pgs_archived_ids and record['resulting_status'] == 'approved for addition' else record['resulting_status']
+    if record['id'] in later_ms4_archived_ids and record['resulting_status'] == 'approved for addition':
+        expected_status = 'placement assigned'
     assert candidate['status'] == expected_status
     assert candidate['scope_assessment'] == record['scope_assessment']
 for candidate in inventory['candidates']:

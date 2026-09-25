@@ -39,6 +39,7 @@ def main() -> None:
         "public-works/stormwater-drainage/cabq-ms4-annual-report-fy2021-final.pdf",
     )
     expected = module.EXPECTED
+    completed = (ROOT / 'project-state/discovery/later-ms4-archive-public-byte-verification-2026-09-25.json').exists() and load('project-state/discovery/later-ms4-archive-public-byte-verification-2026-09-25.json').get('state') == 'complete_all_six_public_byte_verified_and_inventory_reconciled'
     ids = [item[0] for item in expected]
     assert len(ids) == len(set(ids)) == 6
     assert ids == artifact["candidate_ids_in_order"] == [record["id"] for record in artifact["records"]]
@@ -64,8 +65,10 @@ def main() -> None:
         assert record["staged_original"] == (module.STAGING / filename).relative_to(ROOT).as_posix()
         assert path.stat().st_size == record["size_bytes"] == row["size_bytes"] == size
         assert sha256(path) == record["checksum_sha256"] == row["checksum_sha256"] == checksum
-        assert row["status"] == "approved for addition" and row["scope_assessment"]["final_scope_decision"] == "passes_both_gates"
-        assert row["local_path"] == record["staged_original"] and row["r2_key"] is None and row["r2_url"] is None
+        assert row["status"] == ("placement assigned" if completed else "approved for addition") and row["scope_assessment"]["final_scope_decision"] == "passes_both_gates"
+        assert row["local_path"] == record["staged_original"]
+        assert row["r2_key"] == (record["proposed_r2_key"] if completed else None)
+        assert row["r2_url"] == (record["proposed_future_archive_url"] if completed else None)
         assert record["authoritative_source_url"] == row["direct_file_url"]
         assert record["retrieval"] == {"method": "official_source_full_GET_2026-09-24", "http_status": 200, "content_type": "application/pdf", "pdf_magic_verified": True}
         assert record["pdf_qa"]["rendered_pages"] == record["page_count"] and record["pdf_qa"]["structure"] == "opens_without_password_or_repair"
@@ -82,7 +85,7 @@ def main() -> None:
     assert "404" in artifact["records"][1]["source_path_history"]
     assert "lowercase" in artifact["records"][4]["source_path_history"]
     assert artifact["future_canonical_page"] == "content/public-works/stormwater-drainage.md"
-    print("later-MS4 preparation: exact six IDs, 426,926,738 bytes, 5,917 rendered pages, collision-free, upload gated")
+    print("later-MS4 preparation: exact six IDs, 426,926,738 bytes, 5,917 rendered pages, collision-free, historical upload gate preserved")
 
 
 if __name__ == "__main__":
