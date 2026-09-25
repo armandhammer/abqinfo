@@ -49,6 +49,7 @@ def main() -> None:
     evidence = load(BASE / 'later-ms4-archive-public-byte-verification-2026-09-25.json')
     r2 = load(ROOT / 'project-state/r2-inventory.json')
     inventory = {r['id']: r for r in load(ROOT / 'project-state/master-inventory.json')['candidates']}
+    implemented = (BASE / 'later-ms4-hugo-implementation-2026-09-25.json').exists()
     assert evidence['state'] == 'complete_all_six_public_byte_verified_and_inventory_reconciled'
     assert prep['candidate_ids_in_order'] == list(IDS)
     assert len(prep['records']) == len(evidence['preflight']) == len(evidence['results']) == 6
@@ -88,13 +89,13 @@ def main() -> None:
         assert result['public_url'] == 'https://files.abqinfo.com/' + key
         assert result['source_url'] == prep_row['authoritative_source_url'] == row['direct_file_url']
         assert objects[key]['size_bytes'] == size and objects[key]['public_url'] == result['public_url']
-        assert row['status'] == 'placement assigned'
+        assert row['status'] == ('implemented' if implemented else 'placement assigned')
         assert row['r2_key'] == key and row['r2_url'] == result['public_url']
         assert row['size_bytes'] == size and row['checksum_sha256'] == checksum
         assert row['local_path'] == prep_row['staged_original']
         assert row['proposed_canonical_page'] == 'content/public-works/stormwater-drainage.md'
         assert row['scope_assessment']['final_scope_decision'] == 'passes_both_gates'
-    print('later-MS4 archive: six exact public objects, 426,926,738 added bytes, R2 1,237 / 9,218,281,842, placement assigned')
+    print('later-MS4 archive: six exact public objects, 426,926,738 added bytes, R2 1,237 / 9,218,281,842, ' + ('implemented on branch' if implemented else 'placement assigned'))
 
 
 if __name__ == '__main__':
