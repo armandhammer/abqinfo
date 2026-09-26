@@ -19,7 +19,7 @@ case('old_etag_changed',lambda d:d['objects'][0].update(etag='one'))
 case('unexpected_new_key',lambda d:d['objects'][-1].update(key='c/unknown.pdf'))
 case('intent_size_changed',lambda d:d['objects'][-1].update(size_bytes=8))
 case('duplicate_intent',lambda d:None,[intent,intent])
-case('storage_ceiling',lambda d:d.update(total_bytes=10000000001))
+case('storage_ceiling',lambda d:d.update(total_bytes=13000000001))
 case('casefold_collision',lambda d:d['objects'].append({'key':'A/ONE.pdf','size_bytes':3,'etag':'Other'}))
 case('changed_old_key_case',lambda d:d['objects'][0].update(key='A/ONE.pdf'))
 tests=[]

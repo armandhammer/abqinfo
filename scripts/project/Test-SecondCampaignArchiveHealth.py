@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Exact health-population coverage; independent saved/live object accounting."""
-import json
+import json,subprocess
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2];D=ROOT/"project-state/discovery"
 def load(p):return json.loads(Path(p).read_text(encoding="utf-8-sig"))
@@ -13,9 +13,9 @@ for name,records in [("prior_13",first["archive_objects"]),("second_campaign",c[
 receipts={r["key"]:r for r in h["receipts"]};pop={r["key"]:r for r in h["population"]}
 assert len(receipts)==len(h["receipts"])==len(expected) and pop.keys()==receipts.keys()==expected.keys()
 live=load(ROOT/h["live_listing_artifact"]);objects={r["key"]:r for r in live["objects"]}
-saved=load(ROOT/"project-state/r2-inventory.json")
+saved=json.loads(subprocess.check_output(["git","show","1b5bb82:project-state/r2-inventory.json"],cwd=ROOT).decode("utf-8-sig")) if (ROOT/"project-state/active-campaign.json").exists() else load(ROOT/"project-state/r2-inventory.json")
 identity=lambda d:{r["key"]:(r["size_bytes"],r["etag"]) for r in d["objects"]}
-assert identity(live)==identity(saved) and live["total_bytes"]==saved["total_bytes"]<=10000000000
+assert identity(live)==identity(saved) and live["total_bytes"]==saved["total_bytes"]<=c["project_storage_limit_bytes"]
 baseline=load(ROOT/c["baseline_r2_artifact"])
 for r in baseline["objects"]:assert objects[r["key"]]["size_bytes"]==r["size_bytes"] and objects[r["key"]]["etag"]==r["etag"]
 for key,x in receipts.items():

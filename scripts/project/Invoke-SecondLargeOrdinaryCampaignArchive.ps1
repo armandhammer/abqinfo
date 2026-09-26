@@ -9,7 +9,7 @@ $guardPath='tmp/ordinary-second-large-campaign-live-2026-09-26.json'
 $d=Get-Content $campaignPath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
 $allFamilyRecords=@(Get-ChildItem 'project-state/discovery/ordinary-second-large-campaign-family-*-2026-09-26.json' | Where-Object { $_.Name -notmatch 'application' } | ForEach-Object { (Get-Content $_.FullName -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String).records })
 $baseline=Get-Content $d.baseline_r2_artifact -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
-if ($d.project_storage_limit_bytes -ne 10000000000 -or $d.visitor_visible_content_changed) {throw 'Campaign boundary changed'}
+if ($d.project_storage_limit_bytes -ne 13000000000 -or $d.visitor_visible_content_changed) {throw 'Campaign boundary changed'}
 function Field($o,$n,$v){$o|Add-Member -NotePropertyName $n -NotePropertyValue $v -Force}
 $familyPath=$null
 $family=$null
@@ -42,7 +42,7 @@ function Guard {
   foreach($o in $live.objects){if(-not $oldKeys.Contains($o.key)){
     if(-not $intentIndex.ContainsKey($o.key) -or $intentIndex[$o.key].fresh_source_qa.size_bytes -ne $o.size_bytes){throw "Unexpected R2 object: $($o.key)"}
   }}
-  if($live.total_bytes -gt 10000000000){throw 'Storage ceiling exceeded'}
+  if($live.total_bytes -gt 13000000000){throw 'Storage ceiling exceeded'}
   return $live
 }
 # The complete listing is refreshed immediately before the first mutation and
@@ -78,7 +78,7 @@ $r=@($family.records|Where-Object id -eq $task.id)[0]
     # after every completed upload and at the final closeout boundary.
     $present=@($live.objects|Where-Object {$_.key.ToLowerInvariant() -eq $r.r2_key.ToLowerInvariant()})
     if($present.Count -and ($present.Count -ne 1 -or $present[0].key -cne $r.r2_key -or $present[0].size_bytes -ne $qa.size_bytes -or -not $r.PSObject.Properties['upload_intent'])){throw 'Exact/casefold collision; overwrite prohibited'}
-    if(-not $present.Count -and $live.total_bytes+$qa.size_bytes -gt 10000000000){Field $r 'archive_deferred_reason' 'Fully prepared; only storage capacity prevents upload';Save-State;continue}
+    if(-not $present.Count -and $live.total_bytes+$qa.size_bytes -gt 13000000000){Field $r 'archive_deferred_reason' 'Fully prepared; only storage capacity prevents upload';Save-State;continue}
     $inv=Get-Content project-state/master-inventory.json -Raw -Encoding UTF8|ConvertFrom-Json -DateKind String
     $row=@($inv.candidates|Where-Object id -eq $r.id)[0]
     if($row.status -notin @('approved for addition','placement assigned') -or $row.checksum_sha256 -cne $qa.checksum_sha256 -or $row.size_bytes -ne $qa.size_bytes){throw 'Inventory identity/state changed'}
@@ -93,7 +93,7 @@ $r=@($family.records|Where-Object id -eq $task.id)[0]
       if($existing.Count -ne 1 -or $existing[0].key -cne $r.r2_key -or $existing[0].size_bytes -ne $qa.size_bytes -or -not $r.PSObject.Properties['upload_intent']){throw 'Exact/casefold collision; overwrite prohibited'}
     }else{
       if(@($live.objects|Where-Object size_bytes -eq $qa.size_bytes).Count){throw 'Unresolved same-size R2 candidate'}
-      if($live.total_bytes+$qa.size_bytes -gt 10000000000){Field $r 'archive_deferred_reason' 'Fully prepared; only storage capacity prevents upload';Save-State;continue}
+      if($live.total_bytes+$qa.size_bytes -gt 13000000000){Field $r 'archive_deferred_reason' 'Fully prepared; only storage capacity prevents upload';Save-State;continue}
       Field $r 'upload_intent' ([pscustomobject]@{key=$r.r2_key;key_was_absent=$true;size_bytes=$qa.size_bytes;sha256=$qa.checksum_sha256;started_at=(Get-Date).ToUniversalTime().ToString('o')})
       Save-State
       $allFamilyRecords=@($allFamilyRecords|Where-Object id -ne $r.id)+@($r)

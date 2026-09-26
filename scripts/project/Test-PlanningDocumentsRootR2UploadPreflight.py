@@ -84,7 +84,7 @@ assert rows['src-99fe2201b73355c4']['status']==('placement assigned' if archived
 assert 'Barelas sector plan is unique' in load('project-state/discovery/approved-inventory-backlog-prioritization-post-later-ms4-2026-09-25.json')['ranked_units'][0]['placement']
 tool=m['tooling_readiness']
 assert tool['credentials_accessible'] and tool['twelve_default_limit_whatif_probes_passed'] and tool['public_verifier_ready']
-assert tool['max_object_bytes']==100000000 and tool['max_projected_storage_bytes']==10000000000 and tool['object_size_override_required'] is False
+assert tool['max_object_bytes']==100000000 and tool['max_projected_storage_bytes']<=load(ROOT/'project-state/r2-storage-policy.json')['maximum_projected_r2_bytes'] and tool['object_size_override_required'] is False
 assert tool['projected_storage_headroom_bytes']==659468832
 for artifact in (m,recon):
     assert artifact['r2_mutation'] is False and artifact['visitor_visible_content_changed'] is False

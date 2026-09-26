@@ -1,0 +1,3449 @@
+{
+  "schema_version": 1,
+  "artifact_type": "autonomous_background_campaign",
+  "campaign_id": "ordinary-review-large-2026-09-26-third",
+  "profile": "ordinary-review-large",
+  "started_at": "2026-09-26T20:40:30.520183+00:00",
+  "state": "background_work_complete_validation_and_integration_pending",
+  "baseline_commit": "1b5bb82ea52e3ea7450d9526b55881c22e029af0",
+  "content_tree_baseline": "4ed0004a289935e26c9d664cf335ab059121a0ce",
+  "baseline_inventory_counts": {
+    "pending review": 412,
+    "approved for addition": 73,
+    "downloading": 0,
+    "downloaded": 0,
+    "parsed": 0,
+    "description drafted": 0,
+    "placement assigned": 269,
+    "implemented": 159,
+    "validated": 1486,
+    "excluded": 2696,
+    "duplicate": 1593,
+    "superseded": 244,
+    "blocked": 0,
+    "requires human review": 205
+  },
+  "baseline_r2": {
+    "object_count": 1510,
+    "total_bytes": 9999969313
+  },
+  "baseline_r2_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/r2-baseline.json",
+  "selection_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/selection.json",
+  "source_queue_artifact": "project-state/discovery/ordinary-queue-next-position-post-second-large-campaign-2026-09-26.json",
+  "project_storage_limit_bytes": 13000000000,
+  "maximum_object_bytes": 150000000,
+  "authorization": {
+    "authority": "Owner instruction 2026-09-26: build and execute autonomous background campaign; standing project ceiling raised to 13000000000 bytes; objects <=150000000 bytes.",
+    "local_review_and_inventory": true,
+    "eligible_original_r2_upload_and_exact_public_verification": true,
+    "background_only_integration_and_branch_reconciliation": true,
+    "protected_or_human_review_families": false,
+    "r2_delete_or_overwrite": false,
+    "visitor_visible_changes": false,
+    "scope": "This authorized campaign and its recovery; a profile is not authority for a new unrelated external action. New launches require current instruction or exact standing authorization in AGENTS.md."
+  },
+  "families_processed": [
+    {
+      "family_id": "family-008",
+      "family": "Delivery aliases of src-1f9234403de1f16f",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-008.json"
+    },
+    {
+      "family_id": "family-029",
+      "family": "Delivery aliases of src-342ebd812c1da1a0",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-029.json"
+    },
+    {
+      "family_id": "family-032",
+      "family": "Delivery aliases of src-44905a6eda9d90af",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-032.json"
+    },
+    {
+      "family_id": "family-042",
+      "family": "Delivery aliases of src-6111c7f6633f65ed",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-042.json"
+    },
+    {
+      "family_id": "family-054",
+      "family": "Delivery aliases of src-8601d314cf5109b4",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-054.json"
+    },
+    {
+      "family_id": "family-058",
+      "family": "Delivery aliases of src-906f674e57f311e0",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-058.json"
+    },
+    {
+      "family_id": "family-061",
+      "family": "Delivery aliases of src-9a013eb269ced64d",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-061.json"
+    },
+    {
+      "family_id": "family-067",
+      "family": "Delivery aliases of src-a76b5c8c3ad10b52",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-067.json"
+    },
+    {
+      "family_id": "family-078",
+      "family": "Delivery aliases of src-c9d341de31a70f5f",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-078.json"
+    },
+    {
+      "family_id": "family-089",
+      "family": "www.cabq.gov/gis/map-views",
+      "resolved_count": 1,
+      "complete": false,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-089.json"
+    },
+    {
+      "family_id": "family-090",
+      "family": "www.cabq.gov/council/frequently-asked-questions-faq/frequently-asked-questions-faq",
+      "resolved_count": 2,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-090.json"
+    },
+    {
+      "family_id": "family-091",
+      "family": "dmdgis.cabq.gov/server/rest/services/Engineering/Proposed_Bikeway_Facilities_PUBLIC",
+      "resolved_count": 2,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-091.json"
+    },
+    {
+      "family_id": "family-092",
+      "family": "dmdgis.cabq.gov/server/rest/services/Public/Existing_Bikeway_Facilities_PUBLIC",
+      "resolved_count": 2,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-092.json"
+    },
+    {
+      "family_id": "family-093",
+      "family": "dmdgis.cabq.gov/server/rest/services/Public/Road_Centerlines",
+      "resolved_count": 2,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-093.json"
+    },
+    {
+      "family_id": "family-094",
+      "family": "www.cabq.gov/gis",
+      "resolved_count": 2,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-094.json"
+    },
+    {
+      "family_id": "family-096",
+      "family": "cabq.legistar.com",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-096.json"
+    },
+    {
+      "family_id": "family-101",
+      "family": "nmdot-statewide-freight-plan-nmdot.hub.arcgis.com",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-101.json"
+    },
+    {
+      "family_id": "family-102",
+      "family": "planningdivisiongis-nmdot.hub.arcgis.com/pages",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-102.json"
+    },
+    {
+      "family_id": "family-103",
+      "family": "services.arcgis.com/CWv1abTnC3urn4bV/arcgis/rest/services/Bikeways_Existing_in_2024",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-103.json"
+    },
+    {
+      "family_id": "family-104",
+      "family": "services.arcgis.com/CWv1abTnC3urn4bV/arcgis/rest/services/Public_Restrooms_Repub",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-104.json"
+    },
+    {
+      "family_id": "family-105",
+      "family": "tiles.arcgis.com/tiles/CWv1abTnC3urn4bV/arcgis/rest/services/coabase_darkmode_labels",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-105.json"
+    },
+    {
+      "family_id": "family-106",
+      "family": "tiles.arcgis.com/tiles/CWv1abTnC3urn4bV/arcgis/rest/services/coadark_NOLABELS",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-106.json"
+    },
+    {
+      "family_id": "family-115",
+      "family": "www.mrcog-nm.gov/ImageRepository",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-115.json"
+    },
+    {
+      "family_id": "family-116-06",
+      "family": "Public-works project showcases",
+      "resolved_count": 2,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-06.json"
+    },
+    {
+      "family_id": "family-116-08",
+      "family": "On-call design procurement and standard contract forms",
+      "resolved_count": 4,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-08.json"
+    },
+    {
+      "family_id": "family-116-17",
+      "family": "DMD independent source gvp applicaiton 2024.pdf",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-17.json"
+    },
+    {
+      "family_id": "family-116-19",
+      "family": "Airport design-procurement scope and support records",
+      "resolved_count": 2,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-19.json"
+    },
+    {
+      "family_id": "family-116-20",
+      "family": "Public-works procurement and capital-outlay regulations",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-20.json"
+    },
+    {
+      "family_id": "family-116-22",
+      "family": "Operational territory and historic land-grant maps",
+      "resolved_count": 2,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-22.json"
+    },
+    {
+      "family_id": "family-116-24",
+      "family": "DMD independent source CIP Bidding and Contract Book Overview: Building Albuquerque presentation",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-24.json"
+    },
+    {
+      "family_id": "family-116-29",
+      "family": "DMD independent source smart for district 8 coalition.pdf",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-29.json"
+    },
+    {
+      "family_id": "family-116-32",
+      "family": "DMD independent source regulation governing the award and rejection of bids001.pdf",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-32.json"
+    },
+    {
+      "family_id": "family-116-34",
+      "family": "DMD independent source construction documents",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-34.json"
+    },
+    {
+      "family_id": "family-121",
+      "family": "www.cabq.gov/economicdevelopment/documents",
+      "resolved_count": 13,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-121.json"
+    },
+    {
+      "family_id": "family-122",
+      "family": "www.cabq.gov/sustainability/documents",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-122.json"
+    },
+    {
+      "family_id": "family-123",
+      "family": "www.cabq.gov/council/documents/councilor-district-9-documents",
+      "resolved_count": 2,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-123.json"
+    },
+    {
+      "family_id": "family-128",
+      "family": "www.cabq.gov/council/documents/councilor-district-7-documents",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-128.json"
+    },
+    {
+      "family_id": "family-130",
+      "family": "www.cabq.gov/council/documents/nob-hill-highland",
+      "resolved_count": 2,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-130.json"
+    },
+    {
+      "family_id": "family-132",
+      "family": "www.cabq.gov/council/documents/councilor-district-1-documents",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-132.json"
+    },
+    {
+      "family_id": "family-135",
+      "family": "www.cabq.gov/council/projects/completed-projects/2015/complete-streets/complete-streets",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-135.json"
+    },
+    {
+      "family_id": "family-140",
+      "family": "www.cabq.gov/municipaldevelopment/documents/selection-advisory-committee-documents",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-140.json"
+    },
+    {
+      "family_id": "family-143",
+      "family": "www.cabq.gov/parksandrecreation/recreation/bike/documents",
+      "resolved_count": 3,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-143.json"
+    },
+    {
+      "family_id": "family-150",
+      "family": "www.cabq.gov/parksandrecreation/recreation/documents",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-150.json"
+    },
+    {
+      "family_id": "family-152-08",
+      "family": "MRCOG programme forms and guides",
+      "resolved_count": 5,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-152-08.json"
+    },
+    {
+      "family_id": "family-230-03",
+      "family": "Statewide technical research and general guidance",
+      "resolved_count": 2,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-230-03.json"
+    },
+    {
+      "family_id": "family-037",
+      "family": "Delivery aliases of src-4c1b7ae34207fd2f",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-037.json"
+    },
+    {
+      "family_id": "family-074",
+      "family": "Delivery aliases of src-bce376528f3a3ada",
+      "resolved_count": 1,
+      "complete": true,
+      "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-074.json"
+    }
+  ],
+  "resolved_records": [
+    {
+      "id": "src-497bd154d2db10c6",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-008",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-008.json"
+    },
+    {
+      "id": "src-a9cf1a6f1d8154cb",
+      "initial_status": "pending review",
+      "decision": "duplicate",
+      "current_status": "duplicate",
+      "family_id": "family-029",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-029.json"
+    },
+    {
+      "id": "src-6924f5ef7f391100",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-032",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-032.json"
+    },
+    {
+      "id": "src-b2c755f99cb6f97c",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-042",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-042.json"
+    },
+    {
+      "id": "src-eb67d0897e1b7829",
+      "initial_status": "pending review",
+      "decision": "duplicate",
+      "current_status": "duplicate",
+      "family_id": "family-054",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-054.json"
+    },
+    {
+      "id": "src-7165157e3542b841",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-058",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-058.json"
+    },
+    {
+      "id": "src-cf7c361fff2b8ab0",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-061",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-061.json"
+    },
+    {
+      "id": "src-11abb0f76d395355",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-067",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-067.json"
+    },
+    {
+      "id": "src-c36ffce7daea12d5",
+      "initial_status": "pending review",
+      "decision": "duplicate",
+      "current_status": "duplicate",
+      "family_id": "family-078",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-078.json"
+    },
+    {
+      "id": "src-9410641f7a5c34c2",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-089",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-089.json"
+    },
+    {
+      "id": "src-6f4331d5c1ba6646",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-090",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-090.json"
+    },
+    {
+      "id": "src-b0119c30170eb7cc",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-090",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-090.json"
+    },
+    {
+      "id": "src-2721a1c42746cf9e",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-091",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-091.json"
+    },
+    {
+      "id": "src-f597090dc7028f41",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-091",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-091.json"
+    },
+    {
+      "id": "src-3f1dd4fc87ec8551",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-092",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-092.json"
+    },
+    {
+      "id": "src-d734593adbdbd399",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-092",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-092.json"
+    },
+    {
+      "id": "src-b07450551557fb04",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-093",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-093.json"
+    },
+    {
+      "id": "src-fa993b171f8cad5e",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-093",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-093.json"
+    },
+    {
+      "id": "src-67c27f41893855a3",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-094",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-094.json"
+    },
+    {
+      "id": "src-fb49acbcd77205f0",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-094",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-094.json"
+    },
+    {
+      "id": "src-74d50c710a7740fe",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-096",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-096.json"
+    },
+    {
+      "id": "src-98f3bfebd8cd8273",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-101",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-101.json"
+    },
+    {
+      "id": "src-ef4841e56224ab01",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-102",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-102.json"
+    },
+    {
+      "id": "src-b6d9546992ca800c",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-103",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-103.json"
+    },
+    {
+      "id": "src-5160dbf8a7a84010",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-104",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-104.json"
+    },
+    {
+      "id": "src-396770eab8cc4a74",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-105",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-105.json"
+    },
+    {
+      "id": "src-d0e913435e1a32bc",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-106",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-106.json"
+    },
+    {
+      "id": "src-320cea1616f728e2",
+      "initial_status": "pending review",
+      "decision": "approved for addition",
+      "current_status": "placement assigned",
+      "family_id": "family-115",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-115.json"
+    },
+    {
+      "id": "src-d6c487f305a5153a",
+      "initial_status": "pending review",
+      "decision": "approved for addition",
+      "current_status": "placement assigned",
+      "family_id": "family-116-06",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-06.json"
+    },
+    {
+      "id": "src-fdcc45f96bed54e8",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-116-06",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-06.json"
+    },
+    {
+      "id": "src-4abc31e10a698871",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-116-08",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-08.json"
+    },
+    {
+      "id": "src-4c1b7ae34207fd2f",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-116-08",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-08.json"
+    },
+    {
+      "id": "src-a659323fdbfc0d8a",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-116-08",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-08.json"
+    },
+    {
+      "id": "src-e0b517a974bfdc14",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-116-08",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-08.json"
+    },
+    {
+      "id": "src-5091be606b6614ab",
+      "initial_status": "pending review",
+      "decision": "superseded",
+      "current_status": "superseded",
+      "family_id": "family-116-17",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-17.json"
+    },
+    {
+      "id": "src-d2235c5ab30cf715",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-116-19",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-19.json"
+    },
+    {
+      "id": "src-da782a8496860fd5",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-116-19",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-19.json"
+    },
+    {
+      "id": "src-5f4d0d85d6c85eaf",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-116-20",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-20.json"
+    },
+    {
+      "id": "src-792abbefaf7e2364",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-116-22",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-22.json"
+    },
+    {
+      "id": "src-afa324837918e7b9",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-116-22",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-22.json"
+    },
+    {
+      "id": "src-96224aad72485bf6",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-116-24",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-24.json"
+    },
+    {
+      "id": "src-b2f10ed06a3359a3",
+      "initial_status": "pending review",
+      "decision": "superseded",
+      "current_status": "superseded",
+      "family_id": "family-116-29",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-29.json"
+    },
+    {
+      "id": "src-d611348f13f18054",
+      "initial_status": "pending review",
+      "decision": "superseded",
+      "current_status": "superseded",
+      "family_id": "family-116-32",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-32.json"
+    },
+    {
+      "id": "src-e34f830fac140d8e",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-116-34",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-116-34.json"
+    },
+    {
+      "id": "src-216fe2a32ddd2a01",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-121",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-121.json"
+    },
+    {
+      "id": "src-4eb9d168d77a4677",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-121",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-121.json"
+    },
+    {
+      "id": "src-511b029eaf5c4f0a",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-121",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-121.json"
+    },
+    {
+      "id": "src-59b0a2a4a73e94d5",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-121",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-121.json"
+    },
+    {
+      "id": "src-678e6f3977e49221",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-121",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-121.json"
+    },
+    {
+      "id": "src-bd314128b8ff3fc6",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-121",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-121.json"
+    },
+    {
+      "id": "src-c834f1df205cf623",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-121",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-121.json"
+    },
+    {
+      "id": "src-ca514a45701353ad",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-121",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-121.json"
+    },
+    {
+      "id": "src-cf4ef9e3bdbfe9d3",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-121",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-121.json"
+    },
+    {
+      "id": "src-df355d013c988e45",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-121",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-121.json"
+    },
+    {
+      "id": "src-e2ac5601332aee8a",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-121",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-121.json"
+    },
+    {
+      "id": "src-eb9e92937e376325",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-121",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-121.json"
+    },
+    {
+      "id": "src-fea5ee99c7906555",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-121",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-121.json"
+    },
+    {
+      "id": "src-58d9f660005fbae5",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-122",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-122.json"
+    },
+    {
+      "id": "src-bbda1951b4676549",
+      "initial_status": "pending review",
+      "decision": "superseded",
+      "current_status": "superseded",
+      "family_id": "family-123",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-123.json"
+    },
+    {
+      "id": "src-f1cf917bfeaf11c7",
+      "initial_status": "pending review",
+      "decision": "superseded",
+      "current_status": "superseded",
+      "family_id": "family-123",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-123.json"
+    },
+    {
+      "id": "src-2251877ee3dc73ba",
+      "initial_status": "pending review",
+      "decision": "approved for addition",
+      "current_status": "placement assigned",
+      "family_id": "family-128",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-128.json"
+    },
+    {
+      "id": "src-da5e395c4284e4b8",
+      "initial_status": "pending review",
+      "decision": "approved for addition",
+      "current_status": "placement assigned",
+      "family_id": "family-130",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-130.json"
+    },
+    {
+      "id": "src-eee3ae1f6b6df008",
+      "initial_status": "pending review",
+      "decision": "approved for addition",
+      "current_status": "placement assigned",
+      "family_id": "family-130",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-130.json"
+    },
+    {
+      "id": "src-418a707110a63f41",
+      "initial_status": "pending review",
+      "decision": "superseded",
+      "current_status": "superseded",
+      "family_id": "family-132",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-132.json"
+    },
+    {
+      "id": "src-a011d61f6d837e34",
+      "initial_status": "pending review",
+      "decision": "duplicate",
+      "current_status": "duplicate",
+      "family_id": "family-135",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-135.json"
+    },
+    {
+      "id": "src-ff1c069af719b528",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-140",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-140.json"
+    },
+    {
+      "id": "src-89247de353dabf15",
+      "initial_status": "pending review",
+      "decision": "approved for addition",
+      "current_status": "placement assigned",
+      "family_id": "family-143",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-143.json"
+    },
+    {
+      "id": "src-e7a32ece938ca8d9",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-143",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-143.json"
+    },
+    {
+      "id": "src-f12ce7ae6ca1e3f6",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-143",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-143.json"
+    },
+    {
+      "id": "src-fa2f1eb3090e7cce",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-150",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-150.json"
+    },
+    {
+      "id": "src-ed40148d74571564",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-152-08",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-152-08.json"
+    },
+    {
+      "id": "src-bce376528f3a3ada",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-152-08",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-152-08.json"
+    },
+    {
+      "id": "src-34ee4b2c84a342d8",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-152-08",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-152-08.json"
+    },
+    {
+      "id": "src-606ceff8ec912ce2",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-152-08",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-152-08.json"
+    },
+    {
+      "id": "src-99d89b03829df2bb",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-152-08",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-152-08.json"
+    },
+    {
+      "id": "src-2826813909b1548c",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-230-03",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-230-03.json"
+    },
+    {
+      "id": "src-33b18230da1b6e36",
+      "initial_status": "pending review",
+      "decision": "excluded",
+      "current_status": "excluded",
+      "family_id": "family-230-03",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-230-03.json"
+    },
+    {
+      "id": "src-8dfa6da27a05f4f1",
+      "initial_status": "pending review",
+      "decision": "duplicate",
+      "current_status": "duplicate",
+      "family_id": "family-037",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-037.json"
+    },
+    {
+      "id": "src-3064e4e7213ced94",
+      "initial_status": "pending review",
+      "decision": "duplicate",
+      "current_status": "duplicate",
+      "family_id": "family-074",
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-074.json"
+    }
+  ],
+  "archive_objects": [
+    {
+      "id": "src-acac2ea782e05c6d",
+      "key": "city-data/public-safety-data/cabq-acac2ea7-police-oversight-task-force-summary-minutes-january-8-2014.pdf",
+      "size_bytes": 44575,
+      "checksum_sha256": "1ace954dc2d9964a96b85417a7b3854d61c0fc4e8332839723eb75f335c17251",
+      "etag": "bb1e9155377f2d2b82cc8060f1db06b8",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/public-safety-data/cabq-acac2ea7-police-oversight-task-force-summary-minutes-january-8-2014.pdf",
+        "size_bytes": 44575,
+        "checksum_sha256": "1ace954dc2d9964a96b85417a7b3854d61c0fc4e8332839723eb75f335c17251",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:44:05.6037446Z"
+      },
+      "upload_intent": {
+        "key": "city-data/public-safety-data/cabq-acac2ea7-police-oversight-task-force-summary-minutes-january-8-2014.pdf",
+        "key_was_absent": true,
+        "size_bytes": 44575,
+        "sha256": "1ace954dc2d9964a96b85417a7b3854d61c0fc4e8332839723eb75f335c17251",
+        "started_at": "2026-09-26T20:43:58.2695872Z"
+      }
+    },
+    {
+      "id": "src-d59b9b37da75fde5",
+      "key": "city-data/public-safety-data/cabq-d59b9b37-police-oversight-task-force-summary-minutes-january-21-2014.pdf",
+      "size_bytes": 46010,
+      "checksum_sha256": "e70e5a5fb3e3f3b12d0a9102a0e0e5b90ed0e556e52162930a248835d32db03d",
+      "etag": "b4ff54a24f2c125db0bbf29e8c51457e",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/public-safety-data/cabq-d59b9b37-police-oversight-task-force-summary-minutes-january-21-2014.pdf",
+        "size_bytes": 46010,
+        "checksum_sha256": "e70e5a5fb3e3f3b12d0a9102a0e0e5b90ed0e556e52162930a248835d32db03d",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:44:22.9540278Z"
+      },
+      "upload_intent": {
+        "key": "city-data/public-safety-data/cabq-d59b9b37-police-oversight-task-force-summary-minutes-january-21-2014.pdf",
+        "key_was_absent": true,
+        "size_bytes": 46010,
+        "sha256": "e70e5a5fb3e3f3b12d0a9102a0e0e5b90ed0e556e52162930a248835d32db03d",
+        "started_at": "2026-09-26T20:44:15.6343435Z"
+      }
+    },
+    {
+      "id": "src-eafbf706ed009dcc",
+      "key": "city-data/public-safety-data/cabq-eafbf706-police-oversight-task-force-summary-minutes-january-15-2014.pdf",
+      "size_bytes": 41303,
+      "checksum_sha256": "b5045ec82f77c156309f9b01bdaaff73d1ae3416a8d1d71b2757cb65bd54d5e6",
+      "etag": "166582138c208143028674236eb8db42",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/public-safety-data/cabq-eafbf706-police-oversight-task-force-summary-minutes-january-15-2014.pdf",
+        "size_bytes": 41303,
+        "checksum_sha256": "b5045ec82f77c156309f9b01bdaaff73d1ae3416a8d1d71b2757cb65bd54d5e6",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:44:39.3180874Z"
+      },
+      "upload_intent": {
+        "key": "city-data/public-safety-data/cabq-eafbf706-police-oversight-task-force-summary-minutes-january-15-2014.pdf",
+        "key_was_absent": true,
+        "size_bytes": 41303,
+        "sha256": "b5045ec82f77c156309f9b01bdaaff73d1ae3416a8d1d71b2757cb65bd54d5e6",
+        "started_at": "2026-09-26T20:44:31.8861874Z"
+      }
+    },
+    {
+      "id": "src-f44c5eec8b947674",
+      "key": "city-data/public-safety-data/cabq-f44c5eec-police-oversight-task-force-agenda-august-6-2014-approved-minutes-not-located.pdf",
+      "size_bytes": 77796,
+      "checksum_sha256": "5fc8a2117c1eb8c214ede6a1995498e0c18054d67376f47af0f8df6610963d64",
+      "etag": "2d97933873b81aa218c4fad31603e0d5",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/public-safety-data/cabq-f44c5eec-police-oversight-task-force-agenda-august-6-2014-approved-minutes-not-located.pdf",
+        "size_bytes": 77796,
+        "checksum_sha256": "5fc8a2117c1eb8c214ede6a1995498e0c18054d67376f47af0f8df6610963d64",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:44:58.0278877Z"
+      },
+      "upload_intent": {
+        "key": "city-data/public-safety-data/cabq-f44c5eec-police-oversight-task-force-agenda-august-6-2014-approved-minutes-not-located.pdf",
+        "key_was_absent": true,
+        "size_bytes": 77796,
+        "sha256": "5fc8a2117c1eb8c214ede6a1995498e0c18054d67376f47af0f8df6610963d64",
+        "started_at": "2026-09-26T20:44:50.4078221Z"
+      }
+    },
+    {
+      "id": "src-c8b06367d22b8e24",
+      "key": "transportation/roadway-projects/studies/cabq-c8b06367-observations-and-recommendations-the-built-environment-albuquerque-new-mexico-walkable-and-l.pdf",
+      "size_bytes": 242712,
+      "checksum_sha256": "be705db974953e16e540a27a28723aed6f166b3445ee1846981510710bfa83d0",
+      "etag": "a4fd871efcb3388c432c28d76abe16b7",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-c8b06367-observations-and-recommendations-the-built-environment-albuquerque-new-mexico-walkable-and-l.pdf",
+        "size_bytes": 242712,
+        "checksum_sha256": "be705db974953e16e540a27a28723aed6f166b3445ee1846981510710bfa83d0",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:45:18.0081027Z"
+      },
+      "upload_intent": {
+        "key": "transportation/roadway-projects/studies/cabq-c8b06367-observations-and-recommendations-the-built-environment-albuquerque-new-mexico-walkable-and-l.pdf",
+        "key_was_absent": true,
+        "size_bytes": 242712,
+        "sha256": "be705db974953e16e540a27a28723aed6f166b3445ee1846981510710bfa83d0",
+        "started_at": "2026-09-26T20:45:09.9727001Z"
+      }
+    },
+    {
+      "id": "src-3e58c28a0e371255",
+      "key": "city-data/demographics/cabq-3e58c28a-2010-redistricting-committee-meeting-3-agenda-december-2-2010-approved-minutes-not-located.pdf",
+      "size_bytes": 83181,
+      "checksum_sha256": "f50b52d4f12e864f1c4e5b7f0de7db4aa237d7ec3ba6982e5fee62262e6bbefe",
+      "etag": "cfa09b1c512aa50d71a8972aefcf3e24",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/demographics/cabq-3e58c28a-2010-redistricting-committee-meeting-3-agenda-december-2-2010-approved-minutes-not-located.pdf",
+        "size_bytes": 83181,
+        "checksum_sha256": "f50b52d4f12e864f1c4e5b7f0de7db4aa237d7ec3ba6982e5fee62262e6bbefe",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:45:36.1858109Z"
+      },
+      "upload_intent": {
+        "key": "city-data/demographics/cabq-3e58c28a-2010-redistricting-committee-meeting-3-agenda-december-2-2010-approved-minutes-not-located.pdf",
+        "key_was_absent": true,
+        "size_bytes": 83181,
+        "sha256": "f50b52d4f12e864f1c4e5b7f0de7db4aa237d7ec3ba6982e5fee62262e6bbefe",
+        "started_at": "2026-09-26T20:45:28.2422657Z"
+      }
+    },
+    {
+      "id": "src-7bab2bcd5abfef1c",
+      "key": "city-data/demographics/cabq-7bab2bcd-2010-redistricting-committee-summary-minutes-meeting-2-november-18-2010.pdf",
+      "size_bytes": 78552,
+      "checksum_sha256": "c43c38fc2991449cd75b1efc56e0c82031eb6393d8ef6a846cab918d92906efd",
+      "etag": "83e3aa2115a45c4a49285397c9cd36f4",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/demographics/cabq-7bab2bcd-2010-redistricting-committee-summary-minutes-meeting-2-november-18-2010.pdf",
+        "size_bytes": 78552,
+        "checksum_sha256": "c43c38fc2991449cd75b1efc56e0c82031eb6393d8ef6a846cab918d92906efd",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:45:54.9116647Z"
+      },
+      "upload_intent": {
+        "key": "city-data/demographics/cabq-7bab2bcd-2010-redistricting-committee-summary-minutes-meeting-2-november-18-2010.pdf",
+        "key_was_absent": true,
+        "size_bytes": 78552,
+        "sha256": "c43c38fc2991449cd75b1efc56e0c82031eb6393d8ef6a846cab918d92906efd",
+        "started_at": "2026-09-26T20:45:47.8857191Z"
+      }
+    },
+    {
+      "id": "src-9f7b881c3ef71d73",
+      "key": "city-data/demographics/cabq-9f7b881c-2010-redistricting-committee-summary-minutes-meeting-1-november-4-2010.pdf",
+      "size_bytes": 68416,
+      "checksum_sha256": "b4ed544ebdd82d997f2850d54953c9569adb826c5bd9093d9eec6c159ae2c381",
+      "etag": "0b2295cea34689d017ead48f390e7695",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/demographics/cabq-9f7b881c-2010-redistricting-committee-summary-minutes-meeting-1-november-4-2010.pdf",
+        "size_bytes": 68416,
+        "checksum_sha256": "b4ed544ebdd82d997f2850d54953c9569adb826c5bd9093d9eec6c159ae2c381",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:46:13.3063320Z"
+      },
+      "upload_intent": {
+        "key": "city-data/demographics/cabq-9f7b881c-2010-redistricting-committee-summary-minutes-meeting-1-november-4-2010.pdf",
+        "key_was_absent": true,
+        "size_bytes": 68416,
+        "sha256": "b4ed544ebdd82d997f2850d54953c9569adb826c5bd9093d9eec6c159ae2c381",
+        "started_at": "2026-09-26T20:46:06.0601374Z"
+      }
+    },
+    {
+      "id": "src-f634c5079e834843",
+      "key": "city-data/demographics/cabq-f634c507-enacted-resolution-r-2010-103-establishing-a-redistricting-committee-under-article-iv-sectio.pdf",
+      "size_bytes": 121231,
+      "checksum_sha256": "a7f9a4a4cac197d5bab1fa0d0cdfe559c5eec341265cbd40b99fe83cbfd4ea25",
+      "etag": "3b736ae2fc272e0f7df38e721b144d37",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/demographics/cabq-f634c507-enacted-resolution-r-2010-103-establishing-a-redistricting-committee-under-article-iv-sectio.pdf",
+        "size_bytes": 121231,
+        "checksum_sha256": "a7f9a4a4cac197d5bab1fa0d0cdfe559c5eec341265cbd40b99fe83cbfd4ea25",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:46:31.3693527Z"
+      },
+      "upload_intent": {
+        "key": "city-data/demographics/cabq-f634c507-enacted-resolution-r-2010-103-establishing-a-redistricting-committee-under-article-iv-sectio.pdf",
+        "key_was_absent": true,
+        "size_bytes": 121231,
+        "sha256": "a7f9a4a4cac197d5bab1fa0d0cdfe559c5eec341265cbd40b99fe83cbfd4ea25",
+        "started_at": "2026-09-26T20:46:24.0643901Z"
+      }
+    },
+    {
+      "id": "src-1740488e9a78e215",
+      "key": "transportation/roadway-projects/studies/cabq-1740488e-atrisco-drive-lane-modifications-central-avenue-to-iliff-road-public-meeting-presentation-no.pdf",
+      "size_bytes": 9492057,
+      "checksum_sha256": "456ede174ae81f12073ee3bbc7721b8e01351ea9c12136706271742068abbca1",
+      "etag": "e1b15cef53ddb0f272c54268040d53d4-2",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-1740488e-atrisco-drive-lane-modifications-central-avenue-to-iliff-road-public-meeting-presentation-no.pdf",
+        "size_bytes": 9492057,
+        "checksum_sha256": "456ede174ae81f12073ee3bbc7721b8e01351ea9c12136706271742068abbca1",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:46:51.6183531Z"
+      },
+      "upload_intent": {
+        "key": "transportation/roadway-projects/studies/cabq-1740488e-atrisco-drive-lane-modifications-central-avenue-to-iliff-road-public-meeting-presentation-no.pdf",
+        "key_was_absent": true,
+        "size_bytes": 9492057,
+        "sha256": "456ede174ae81f12073ee3bbc7721b8e01351ea9c12136706271742068abbca1",
+        "started_at": "2026-09-26T20:46:42.4005916Z"
+      }
+    },
+    {
+      "id": "src-2015fa7cf7b66c2e",
+      "key": "city-data/public-safety-data/cabq-2015fa7c-albuquerque-s-industrial-revenue-bond-program-community-stakeholder-perspectives-and-recomme.pdf",
+      "size_bytes": 448341,
+      "checksum_sha256": "40b90b2f7b64b29073998c1a356c892147c980511cc0d8105cac7b04915aa884",
+      "etag": "dd5088579b61fd7979df5d834676aa5e",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/public-safety-data/cabq-2015fa7c-albuquerque-s-industrial-revenue-bond-program-community-stakeholder-perspectives-and-recomme.pdf",
+        "size_bytes": 448341,
+        "checksum_sha256": "40b90b2f7b64b29073998c1a356c892147c980511cc0d8105cac7b04915aa884",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:47:09.3693828Z"
+      },
+      "upload_intent": {
+        "key": "city-data/public-safety-data/cabq-2015fa7c-albuquerque-s-industrial-revenue-bond-program-community-stakeholder-perspectives-and-recomme.pdf",
+        "key_was_absent": true,
+        "size_bytes": 448341,
+        "sha256": "40b90b2f7b64b29073998c1a356c892147c980511cc0d8105cac7b04915aa884",
+        "started_at": "2026-09-26T20:47:02.0998928Z"
+      }
+    },
+    {
+      "id": "src-17661dabd6894288",
+      "key": "development-land-use/zoning-ido/cabq-17661dab-integrated-development-ordinance-2022-naro-update-effective-draft-27-may-2022.pdf",
+      "size_bytes": 35898335,
+      "checksum_sha256": "edfe308d46f50c384f9e988018d41b3a26cc58aabf6a7aa0d4881db8c6ba43cf",
+      "etag": "bcba551adc8c5a0530c416082ce80d09-5",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/development-land-use/zoning-ido/cabq-17661dab-integrated-development-ordinance-2022-naro-update-effective-draft-27-may-2022.pdf",
+        "size_bytes": 35898335,
+        "checksum_sha256": "edfe308d46f50c384f9e988018d41b3a26cc58aabf6a7aa0d4881db8c6ba43cf",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:47:29.3780516Z"
+      },
+      "upload_intent": {
+        "key": "development-land-use/zoning-ido/cabq-17661dab-integrated-development-ordinance-2022-naro-update-effective-draft-27-may-2022.pdf",
+        "key_was_absent": true,
+        "size_bytes": 35898335,
+        "sha256": "edfe308d46f50c384f9e988018d41b3a26cc58aabf6a7aa0d4881db8c6ba43cf",
+        "started_at": "2026-09-26T20:47:19.5291305Z"
+      }
+    },
+    {
+      "id": "src-513734e069783a79",
+      "key": "development-land-use/zoning-ido/cabq-513734e0-integrated-development-ordinance-2019-archive-draft-2-november-2020.pdf",
+      "size_bytes": 22684755,
+      "checksum_sha256": "2d4fbfd7171faedabb5da2c7b225ca0eae4d5c2abcae775b728c24376b4844d0",
+      "etag": "ef6d700f25b6486dd2602a0f1610f586-3",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/development-land-use/zoning-ido/cabq-513734e0-integrated-development-ordinance-2019-archive-draft-2-november-2020.pdf",
+        "size_bytes": 22684755,
+        "checksum_sha256": "2d4fbfd7171faedabb5da2c7b225ca0eae4d5c2abcae775b728c24376b4844d0",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:47:55.3186083Z"
+      },
+      "upload_intent": {
+        "key": "development-land-use/zoning-ido/cabq-513734e0-integrated-development-ordinance-2019-archive-draft-2-november-2020.pdf",
+        "key_was_absent": true,
+        "size_bytes": 22684755,
+        "sha256": "2d4fbfd7171faedabb5da2c7b225ca0eae4d5c2abcae775b728c24376b4844d0",
+        "started_at": "2026-09-26T20:47:38.8325344Z"
+      }
+    },
+    {
+      "id": "src-15cbbf915ccd9c8d",
+      "key": "city-data/capital-spending/source-15cbbf91-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2013-albuquerque-allocations.pdf",
+      "size_bytes": 1347792,
+      "checksum_sha256": "7d284da4133691919137b0ad1d99352d837e768d82f8375358beae01188c230e",
+      "etag": "9c5a65cb0c697ccf40474374aea616dc",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/source-15cbbf91-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2013-albuquerque-allocations.pdf",
+        "size_bytes": 1347792,
+        "checksum_sha256": "7d284da4133691919137b0ad1d99352d837e768d82f8375358beae01188c230e",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:48:13.4661064Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/source-15cbbf91-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2013-albuquerque-allocations.pdf",
+        "key_was_absent": true,
+        "size_bytes": 1347792,
+        "sha256": "7d284da4133691919137b0ad1d99352d837e768d82f8375358beae01188c230e",
+        "started_at": "2026-09-26T20:48:05.8399615Z"
+      }
+    },
+    {
+      "id": "src-4411ec8b5839b8f9",
+      "key": "city-data/capital-spending/source-4411ec8b-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2019-albuquerque-allocations.pdf",
+      "size_bytes": 349561,
+      "checksum_sha256": "3d1feaac221a7c6149daa2b6acfc46ffa3a783220340ea42380aabb8b8c13700",
+      "etag": "a5f34f98a163feececefa2f89b2bc27b",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/source-4411ec8b-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2019-albuquerque-allocations.pdf",
+        "size_bytes": 349561,
+        "checksum_sha256": "3d1feaac221a7c6149daa2b6acfc46ffa3a783220340ea42380aabb8b8c13700",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:48:31.3648357Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/source-4411ec8b-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2019-albuquerque-allocations.pdf",
+        "key_was_absent": true,
+        "size_bytes": 349561,
+        "sha256": "3d1feaac221a7c6149daa2b6acfc46ffa3a783220340ea42380aabb8b8c13700",
+        "started_at": "2026-09-26T20:48:23.7356195Z"
+      }
+    },
+    {
+      "id": "src-67aa71fbec16d4fb",
+      "key": "city-data/capital-spending/source-67aa71fb-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2018-albuquerque-allocations.pdf",
+      "size_bytes": 337939,
+      "checksum_sha256": "8aa3eecc7cd6bd3f8cf39089112c75882798bfb7e595ce3fd0673100033786cf",
+      "etag": "c870eebf06b0e57a01aa30f024e9a6ae",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/source-67aa71fb-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2018-albuquerque-allocations.pdf",
+        "size_bytes": 337939,
+        "checksum_sha256": "8aa3eecc7cd6bd3f8cf39089112c75882798bfb7e595ce3fd0673100033786cf",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:48:48.7046105Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/source-67aa71fb-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2018-albuquerque-allocations.pdf",
+        "key_was_absent": true,
+        "size_bytes": 337939,
+        "sha256": "8aa3eecc7cd6bd3f8cf39089112c75882798bfb7e595ce3fd0673100033786cf",
+        "started_at": "2026-09-26T20:48:41.1115778Z"
+      }
+    },
+    {
+      "id": "src-92870e1ee8d3cc8c",
+      "key": "city-data/capital-spending/source-92870e1e-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2014-albuquerque-allocations.pdf",
+      "size_bytes": 1126966,
+      "checksum_sha256": "48148869f3e22d3ea9ba263570d8d7a250e3a99d7113eae8bd53db42b6450bf0",
+      "etag": "da09539e89884599915b7a93bcda0d4a",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/source-92870e1e-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2014-albuquerque-allocations.pdf",
+        "size_bytes": 1126966,
+        "checksum_sha256": "48148869f3e22d3ea9ba263570d8d7a250e3a99d7113eae8bd53db42b6450bf0",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:49:06.3052193Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/source-92870e1e-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2014-albuquerque-allocations.pdf",
+        "key_was_absent": true,
+        "size_bytes": 1126966,
+        "sha256": "48148869f3e22d3ea9ba263570d8d7a250e3a99d7113eae8bd53db42b6450bf0",
+        "started_at": "2026-09-26T20:48:58.6444575Z"
+      }
+    },
+    {
+      "id": "src-a5bd813703037d72",
+      "key": "city-data/capital-spending/source-a5bd8137-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2020-albuquerque-allocations.pdf",
+      "size_bytes": 347020,
+      "checksum_sha256": "84450e3aad1ee6556977abf92d0ebbb1f98b57bd461be9a229fb61edcd0d64e0",
+      "etag": "ef928d548cb53e21f5f9b2504313710d",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/source-a5bd8137-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2020-albuquerque-allocations.pdf",
+        "size_bytes": 347020,
+        "checksum_sha256": "84450e3aad1ee6556977abf92d0ebbb1f98b57bd461be9a229fb61edcd0d64e0",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:49:23.7710343Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/source-a5bd8137-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2020-albuquerque-allocations.pdf",
+        "key_was_absent": true,
+        "size_bytes": 347020,
+        "sha256": "84450e3aad1ee6556977abf92d0ebbb1f98b57bd461be9a229fb61edcd0d64e0",
+        "started_at": "2026-09-26T20:49:16.3133846Z"
+      }
+    },
+    {
+      "id": "src-b3c1915b03ebdb15",
+      "key": "city-data/capital-spending/source-b3c1915b-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2021-albuquerque-allocations.pdf",
+      "size_bytes": 382528,
+      "checksum_sha256": "98e4bf873909530e7392978ebd6df701019b6823e472417d1d473e62c9a8f4a2",
+      "etag": "5ea1632bc8a8b7cda3287eced5e2acd4",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/source-b3c1915b-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2021-albuquerque-allocations.pdf",
+        "size_bytes": 382528,
+        "checksum_sha256": "98e4bf873909530e7392978ebd6df701019b6823e472417d1d473e62c9a8f4a2",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:49:41.8141980Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/source-b3c1915b-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2021-albuquerque-allocations.pdf",
+        "key_was_absent": true,
+        "size_bytes": 382528,
+        "sha256": "98e4bf873909530e7392978ebd6df701019b6823e472417d1d473e62c9a8f4a2",
+        "started_at": "2026-09-26T20:49:33.6383519Z"
+      }
+    },
+    {
+      "id": "src-c427f1031b8c0a99",
+      "key": "city-data/capital-spending/source-c427f103-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2015-albuquerque-allocations.pdf",
+      "size_bytes": 1614516,
+      "checksum_sha256": "f7a6059cc7def2a31806878b139b5272e592d4cc4648ee6c59ea6ee3cfafd351",
+      "etag": "b13b2dda1dcd4f3f665a7c1cefa0fc41",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/source-c427f103-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2015-albuquerque-allocations.pdf",
+        "size_bytes": 1614516,
+        "checksum_sha256": "f7a6059cc7def2a31806878b139b5272e592d4cc4648ee6c59ea6ee3cfafd351",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:49:59.0647691Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/source-c427f103-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2015-albuquerque-allocations.pdf",
+        "key_was_absent": true,
+        "size_bytes": 1614516,
+        "sha256": "f7a6059cc7def2a31806878b139b5272e592d4cc4648ee6c59ea6ee3cfafd351",
+        "started_at": "2026-09-26T20:49:52.1694277Z"
+      }
+    },
+    {
+      "id": "src-cc7cc72752250807",
+      "key": "city-data/capital-spending/source-cc7cc727-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2017-albuquerque-allocations.pdf",
+      "size_bytes": 1374350,
+      "checksum_sha256": "eda29611df230c219b126984410a4d212739288ede3ae9e43591df4346f7ef34",
+      "etag": "81d25625f36328940f6ac4ec9f1c25b5",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/source-cc7cc727-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2017-albuquerque-allocations.pdf",
+        "size_bytes": 1374350,
+        "checksum_sha256": "eda29611df230c219b126984410a4d212739288ede3ae9e43591df4346f7ef34",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:50:17.4372283Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/source-cc7cc727-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2017-albuquerque-allocations.pdf",
+        "key_was_absent": true,
+        "size_bytes": 1374350,
+        "sha256": "eda29611df230c219b126984410a4d212739288ede3ae9e43591df4346f7ef34",
+        "started_at": "2026-09-26T20:50:09.4741260Z"
+      }
+    },
+    {
+      "id": "src-e5a3f02506f8a4f1",
+      "key": "city-data/capital-spending/source-e5a3f025-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2012-albuquerque-allocations.pdf",
+      "size_bytes": 528939,
+      "checksum_sha256": "edda5bed46c125f2f4ca1907b5d9c62cfff70440289f84b957d2c0036958cf0d",
+      "etag": "d0a7b5c2271929e025b23eddaf079812",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/source-e5a3f025-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2012-albuquerque-allocations.pdf",
+        "size_bytes": 528939,
+        "checksum_sha256": "edda5bed46c125f2f4ca1907b5d9c62cfff70440289f84b957d2c0036958cf0d",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:50:34.7671405Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/source-e5a3f025-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2012-albuquerque-allocations.pdf",
+        "key_was_absent": true,
+        "size_bytes": 528939,
+        "sha256": "edda5bed46c125f2f4ca1907b5d9c62cfff70440289f84b957d2c0036958cf0d",
+        "started_at": "2026-09-26T20:50:27.7436864Z"
+      }
+    },
+    {
+      "id": "src-ed690ceff6122f7a",
+      "key": "city-data/capital-spending/source-ed690cef-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2016-albuquerque-allocations.pdf",
+      "size_bytes": 1316049,
+      "checksum_sha256": "85b01d61bd52f2dbf6309b540068e774ffa80bf17d231139767e2168eef6b7b7",
+      "etag": "56eb382610a3479b24fdd6f7049de336",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/source-ed690cef-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2016-albuquerque-allocations.pdf",
+        "size_bytes": 1316049,
+        "checksum_sha256": "85b01d61bd52f2dbf6309b540068e774ffa80bf17d231139767e2168eef6b7b7",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:50:51.9504882Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/source-ed690cef-nmdot-statewide-transit-budget-award-recommendation-meeting-fy2016-albuquerque-allocations.pdf",
+        "key_was_absent": true,
+        "size_bytes": 1316049,
+        "sha256": "85b01d61bd52f2dbf6309b540068e774ffa80bf17d231139767e2168eef6b7b7",
+        "started_at": "2026-09-26T20:50:44.5174226Z"
+      }
+    },
+    {
+      "id": "src-a3d3af52e6832110",
+      "key": "transportation/roadway-projects/studies/source-a3d3af52-12th-menaul-study-planning-design-and-transportation-recommendations-october-2005-hok-plan.pdf",
+      "size_bytes": 59048492,
+      "checksum_sha256": "9fc9a6c5d446f7180b7ccda2340e22e1dba767f2deca7ffb4fb119fc334548b4",
+      "etag": "9c4ea21f4f11e318ba58b13a503d8e21-8",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/source-a3d3af52-12th-menaul-study-planning-design-and-transportation-recommendations-october-2005-hok-plan.pdf",
+        "size_bytes": 59048492,
+        "checksum_sha256": "9fc9a6c5d446f7180b7ccda2340e22e1dba767f2deca7ffb4fb119fc334548b4",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:51:14.3815684Z"
+      },
+      "upload_intent": {
+        "key": "transportation/roadway-projects/studies/source-a3d3af52-12th-menaul-study-planning-design-and-transportation-recommendations-october-2005-hok-plan.pdf",
+        "key_was_absent": true,
+        "size_bytes": 59048492,
+        "sha256": "9fc9a6c5d446f7180b7ccda2340e22e1dba767f2deca7ffb4fb119fc334548b4",
+        "started_at": "2026-09-26T20:51:02.0903408Z"
+      }
+    },
+    {
+      "id": "src-3f3ee8935635a62f",
+      "key": "public-works/parks-recreation/cabq-3f3ee8935635a62f-children-s-fantasy-garden-deficiency-list-december-9-2021.pdf",
+      "size_bytes": 456174,
+      "checksum_sha256": "652113794ca490cf2b1a80875ccb6bbe4b83579003f683b883c8b911e9b1f7e7",
+      "etag": "943493a396d2eee325b36fef5414c084",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-3f3ee8935635a62f-children-s-fantasy-garden-deficiency-list-december-9-2021.pdf",
+        "size_bytes": 456174,
+        "checksum_sha256": "652113794ca490cf2b1a80875ccb6bbe4b83579003f683b883c8b911e9b1f7e7",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:51:30.8829144Z"
+      },
+      "upload_intent": {
+        "key": "public-works/parks-recreation/cabq-3f3ee8935635a62f-children-s-fantasy-garden-deficiency-list-december-9-2021.pdf",
+        "key_was_absent": true,
+        "size_bytes": 456174,
+        "sha256": "652113794ca490cf2b1a80875ccb6bbe4b83579003f683b883c8b911e9b1f7e7",
+        "started_at": "2026-09-26T20:51:23.7707007Z"
+      }
+    },
+    {
+      "id": "src-9df858c530430f8e",
+      "key": "public-works/parks-recreation/cabq-9df858c530430f8e-questions-and-answers-abq-biopark-children-s-fantasy-garden-renovation.pdf",
+      "size_bytes": 84469,
+      "checksum_sha256": "4eadead86e7d94a45b63d9e7ed14f33e3ca02d1c9b1d67eea97c57a621037d02",
+      "etag": "987a75e58bc1477e5dcf97c7655606cc",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-9df858c530430f8e-questions-and-answers-abq-biopark-children-s-fantasy-garden-renovation.pdf",
+        "size_bytes": 84469,
+        "checksum_sha256": "4eadead86e7d94a45b63d9e7ed14f33e3ca02d1c9b1d67eea97c57a621037d02",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:51:49.4815580Z"
+      },
+      "upload_intent": {
+        "key": "public-works/parks-recreation/cabq-9df858c530430f8e-questions-and-answers-abq-biopark-children-s-fantasy-garden-renovation.pdf",
+        "key_was_absent": true,
+        "size_bytes": 84469,
+        "sha256": "4eadead86e7d94a45b63d9e7ed14f33e3ca02d1c9b1d67eea97c57a621037d02",
+        "started_at": "2026-09-26T20:51:42.7222622Z"
+      }
+    },
+    {
+      "id": "src-679f8fb7755e21b3",
+      "key": "city-data/capital-spending/cabq-679f8fb7755e21b3-solar-shade-structure-proposal-daytona-transit-facility.pdf",
+      "size_bytes": 2209895,
+      "checksum_sha256": "06513337fd9645380759cc80464dda529b07891279de7d27bc5e6da4139dd8fe",
+      "etag": "62746f6bc844b0358f62ac17d3eadb23",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-679f8fb7755e21b3-solar-shade-structure-proposal-daytona-transit-facility.pdf",
+        "size_bytes": 2209895,
+        "checksum_sha256": "06513337fd9645380759cc80464dda529b07891279de7d27bc5e6da4139dd8fe",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:52:07.4577276Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-679f8fb7755e21b3-solar-shade-structure-proposal-daytona-transit-facility.pdf",
+        "key_was_absent": true,
+        "size_bytes": 2209895,
+        "sha256": "06513337fd9645380759cc80464dda529b07891279de7d27bc5e6da4139dd8fe",
+        "started_at": "2026-09-26T20:51:59.8889818Z"
+      }
+    },
+    {
+      "id": "src-8cc352afd205c7ee",
+      "key": "development-land-use/projects/cabq-8cc352afd205c7ee-request-for-proposals-western-trails-triangle-real-property-division.pdf",
+      "size_bytes": 293345,
+      "checksum_sha256": "249268340ff9bb1cd73dd59b7571bc0abf7ec00ecb037d2e655525e2822a8a1b",
+      "etag": "4dc2575182956ff896c86d8e5d82899d",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/development-land-use/projects/cabq-8cc352afd205c7ee-request-for-proposals-western-trails-triangle-real-property-division.pdf",
+        "size_bytes": 293345,
+        "checksum_sha256": "249268340ff9bb1cd73dd59b7571bc0abf7ec00ecb037d2e655525e2822a8a1b",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:52:24.8474404Z"
+      },
+      "upload_intent": {
+        "key": "development-land-use/projects/cabq-8cc352afd205c7ee-request-for-proposals-western-trails-triangle-real-property-division.pdf",
+        "key_was_absent": true,
+        "size_bytes": 293345,
+        "sha256": "249268340ff9bb1cd73dd59b7571bc0abf7ec00ecb037d2e655525e2822a8a1b",
+        "started_at": "2026-09-26T20:52:17.7828686Z"
+      }
+    },
+    {
+      "id": "src-e32027cc45bd73b3",
+      "key": "city-data/capital-spending/cabq-e32027cc45bd73b3-capital-implementation-program-presentation-to-the-council-committee-of-the-whole-2015.pdf",
+      "size_bytes": 950870,
+      "checksum_sha256": "e952649e5f24f08813183dee82402d2f2e746b7aea6e7e69bf6617a8ed97ba13",
+      "etag": "58e5cb82842fd32d355c75e51f3e500c",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-e32027cc45bd73b3-capital-implementation-program-presentation-to-the-council-committee-of-the-whole-2015.pdf",
+        "size_bytes": 950870,
+        "checksum_sha256": "e952649e5f24f08813183dee82402d2f2e746b7aea6e7e69bf6617a8ed97ba13",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:52:42.4833549Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-e32027cc45bd73b3-capital-implementation-program-presentation-to-the-council-committee-of-the-whole-2015.pdf",
+        "key_was_absent": true,
+        "size_bytes": 950870,
+        "sha256": "e952649e5f24f08813183dee82402d2f2e746b7aea6e7e69bf6617a8ed97ba13",
+        "started_at": "2026-09-26T20:52:35.4607150Z"
+      }
+    },
+    {
+      "id": "src-f020ff71081d2224",
+      "key": "public-works/capital-projects/cabq-f020ff71081d2224-brillante-steam-early-learning-center-concept-board.pdf",
+      "size_bytes": 255764,
+      "checksum_sha256": "6cebc0c8a46e07bffd07b3a3714302dcf794bd73b553a3af5ed8154a34a129c0",
+      "etag": "ba0076c140cac1795ab0b7862e5432f3",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/public-works/capital-projects/cabq-f020ff71081d2224-brillante-steam-early-learning-center-concept-board.pdf",
+        "size_bytes": 255764,
+        "checksum_sha256": "6cebc0c8a46e07bffd07b3a3714302dcf794bd73b553a3af5ed8154a34a129c0",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:52:59.0787981Z"
+      },
+      "upload_intent": {
+        "key": "public-works/capital-projects/cabq-f020ff71081d2224-brillante-steam-early-learning-center-concept-board.pdf",
+        "key_was_absent": true,
+        "size_bytes": 255764,
+        "sha256": "6cebc0c8a46e07bffd07b3a3714302dcf794bd73b553a3af5ed8154a34a129c0",
+        "started_at": "2026-09-26T20:52:52.1844478Z"
+      }
+    },
+    {
+      "id": "src-f68d3b814d3fb873",
+      "key": "transportation/bicycling/projects/cabq-f68d3b814d3fb873-dr-martin-luther-king-jr-avenue-bike-facility-enhancements-project-trifold.pdf",
+      "size_bytes": 192958,
+      "checksum_sha256": "9f0d4fc6f84d5da95007750dd966b98ff86866cb82d47792d7f3c1e1a123edcc",
+      "etag": "93e1efb1d5c96e99caa133a346526eb1",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/transportation/bicycling/projects/cabq-f68d3b814d3fb873-dr-martin-luther-king-jr-avenue-bike-facility-enhancements-project-trifold.pdf",
+        "size_bytes": 192958,
+        "checksum_sha256": "9f0d4fc6f84d5da95007750dd966b98ff86866cb82d47792d7f3c1e1a123edcc",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:53:15.5109071Z"
+      },
+      "upload_intent": {
+        "key": "transportation/bicycling/projects/cabq-f68d3b814d3fb873-dr-martin-luther-king-jr-avenue-bike-facility-enhancements-project-trifold.pdf",
+        "key_was_absent": true,
+        "size_bytes": 192958,
+        "sha256": "9f0d4fc6f84d5da95007750dd966b98ff86866cb82d47792d7f3c1e1a123edcc",
+        "started_at": "2026-09-26T20:53:08.5612367Z"
+      }
+    },
+    {
+      "id": "src-18d68c05c5230e3e",
+      "key": "transportation/roadway-projects/studies/cabq-18d68c05-central-avenue-complete-street-performance-monitoring-summary.pdf",
+      "size_bytes": 2043638,
+      "checksum_sha256": "bbae6d4390d596d6b63812d5bdb4d6d21dd4586f4721ba1fe46fb25a7906968c",
+      "etag": "3d6b30670b24ccbb1a92502ce308449c",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-18d68c05-central-avenue-complete-street-performance-monitoring-summary.pdf",
+        "size_bytes": 2043638,
+        "checksum_sha256": "bbae6d4390d596d6b63812d5bdb4d6d21dd4586f4721ba1fe46fb25a7906968c",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:53:31.9671076Z"
+      },
+      "upload_intent": {
+        "key": "transportation/roadway-projects/studies/cabq-18d68c05-central-avenue-complete-street-performance-monitoring-summary.pdf",
+        "key_was_absent": true,
+        "size_bytes": 2043638,
+        "sha256": "bbae6d4390d596d6b63812d5bdb4d6d21dd4586f4721ba1fe46fb25a7906968c",
+        "started_at": "2026-09-26T20:53:24.7286041Z"
+      }
+    },
+    {
+      "id": "src-222f76b6ba5f337e",
+      "key": "transportation/roadway-projects/studies/cabq-222f76b6-comprehensive-plan-central-and-established-urban-areas-map.pdf",
+      "size_bytes": 3154645,
+      "checksum_sha256": "e5efa3dcb809179d6acda4011c9ba7a03ee54b9774285b3459fa44c496f936ad",
+      "etag": "f8193ce3455dac978da4d5368e74a319",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-222f76b6-comprehensive-plan-central-and-established-urban-areas-map.pdf",
+        "size_bytes": 3154645,
+        "checksum_sha256": "e5efa3dcb809179d6acda4011c9ba7a03ee54b9774285b3459fa44c496f936ad",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:53:48.7789676Z"
+      },
+      "upload_intent": {
+        "key": "transportation/roadway-projects/studies/cabq-222f76b6-comprehensive-plan-central-and-established-urban-areas-map.pdf",
+        "key_was_absent": true,
+        "size_bytes": 3154645,
+        "sha256": "e5efa3dcb809179d6acda4011c9ba7a03ee54b9774285b3459fa44c496f936ad",
+        "started_at": "2026-09-26T20:53:41.3421038Z"
+      }
+    },
+    {
+      "id": "src-6228d26224c6e19f",
+      "key": "transportation/roadway-projects/studies/cabq-6228d262-highland-park-renovation-record-drawing-city-project-644294-sheet-lp101.pdf",
+      "size_bytes": 1253857,
+      "checksum_sha256": "c4a35e486e5d1e34c5235ab1be587ec1b0b2414ec731459dbf8416aca3f1d9b4",
+      "etag": "1082da3ea106a860d311a75cc3383d58",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-6228d262-highland-park-renovation-record-drawing-city-project-644294-sheet-lp101.pdf",
+        "size_bytes": 1253857,
+        "checksum_sha256": "c4a35e486e5d1e34c5235ab1be587ec1b0b2414ec731459dbf8416aca3f1d9b4",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:54:06.6482692Z"
+      },
+      "upload_intent": {
+        "key": "transportation/roadway-projects/studies/cabq-6228d262-highland-park-renovation-record-drawing-city-project-644294-sheet-lp101.pdf",
+        "key_was_absent": true,
+        "size_bytes": 1253857,
+        "sha256": "c4a35e486e5d1e34c5235ab1be587ec1b0b2414ec731459dbf8416aca3f1d9b4",
+        "started_at": "2026-09-26T20:53:59.4354707Z"
+      }
+    },
+    {
+      "id": "src-b5c28266013f6981",
+      "key": "city-data/climate-environment/cabq-b5c28266-optimized-municipal-electric-vehicle-charging-analysis-2019.pdf",
+      "size_bytes": 9183343,
+      "checksum_sha256": "96e99e2549574ce80a447e60b54c8802a7eb80642efab91812157fd2885c51e2",
+      "etag": "46ee6fa6a0b6376018d207ffa06eaaf4-2",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/climate-environment/cabq-b5c28266-optimized-municipal-electric-vehicle-charging-analysis-2019.pdf",
+        "size_bytes": 9183343,
+        "checksum_sha256": "96e99e2549574ce80a447e60b54c8802a7eb80642efab91812157fd2885c51e2",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:54:25.1618667Z"
+      },
+      "upload_intent": {
+        "key": "city-data/climate-environment/cabq-b5c28266-optimized-municipal-electric-vehicle-charging-analysis-2019.pdf",
+        "key_was_absent": true,
+        "size_bytes": 9183343,
+        "sha256": "96e99e2549574ce80a447e60b54c8802a7eb80642efab91812157fd2885c51e2",
+        "started_at": "2026-09-26T20:54:16.6503961Z"
+      }
+    },
+    {
+      "id": "src-3e18d918097011be",
+      "key": "development-land-use/area-sector-plans/cabq-3e18d918-downtown-neighborhoods-area-boundary-and-historic-districts-map-september-17-2010.pdf",
+      "size_bytes": 740759,
+      "checksum_sha256": "34b7cbebfbd188373fed9f911de88a60d0b7a1213d41aaafb3cc61cf1a62bbba",
+      "etag": "76407ff0d4b2fc6daf19ac0a529f7c2e",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-3e18d918-downtown-neighborhoods-area-boundary-and-historic-districts-map-september-17-2010.pdf",
+        "size_bytes": 740759,
+        "checksum_sha256": "34b7cbebfbd188373fed9f911de88a60d0b7a1213d41aaafb3cc61cf1a62bbba",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:54:42.5098745Z"
+      },
+      "upload_intent": {
+        "key": "development-land-use/area-sector-plans/cabq-3e18d918-downtown-neighborhoods-area-boundary-and-historic-districts-map-september-17-2010.pdf",
+        "key_was_absent": true,
+        "size_bytes": 740759,
+        "sha256": "34b7cbebfbd188373fed9f911de88a60d0b7a1213d41aaafb3cc61cf1a62bbba",
+        "started_at": "2026-09-26T20:54:35.3058947Z"
+      }
+    },
+    {
+      "id": "src-52dc90346e567ac1",
+      "key": "development-land-use/area-sector-plans/cabq-52dc9034-downtown-neighborhood-area-sector-development-plan-update-epc-draft-october-28-2010-part-3-o.pdf",
+      "size_bytes": 3037476,
+      "checksum_sha256": "28a2c58493e3fab08954f0b04ffb80e8b1bf1303640dbb7b23913958dd832114",
+      "etag": "d4e4a306bd6938485073c738e60fdf9f",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-52dc9034-downtown-neighborhood-area-sector-development-plan-update-epc-draft-october-28-2010-part-3-o.pdf",
+        "size_bytes": 3037476,
+        "checksum_sha256": "28a2c58493e3fab08954f0b04ffb80e8b1bf1303640dbb7b23913958dd832114",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:54:59.3701131Z"
+      },
+      "upload_intent": {
+        "key": "development-land-use/area-sector-plans/cabq-52dc9034-downtown-neighborhood-area-sector-development-plan-update-epc-draft-october-28-2010-part-3-o.pdf",
+        "key_was_absent": true,
+        "size_bytes": 3037476,
+        "sha256": "28a2c58493e3fab08954f0b04ffb80e8b1bf1303640dbb7b23913958dd832114",
+        "started_at": "2026-09-26T20:54:52.0149152Z"
+      }
+    },
+    {
+      "id": "src-7472d7fda76be8bb",
+      "key": "development-land-use/area-sector-plans/cabq-7472d7fd-official-notice-of-decision-environmental-planning-commission-recommendation-of-approval-dow.pdf",
+      "size_bytes": 203762,
+      "checksum_sha256": "02c5ff4846aa3c047ef2e2215cc07ad4e0bb0e4c7ceb4f1faf3ae9c541892112",
+      "etag": "b874184bed748f257443bdaf6d50df88",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-7472d7fd-official-notice-of-decision-environmental-planning-commission-recommendation-of-approval-dow.pdf",
+        "size_bytes": 203762,
+        "checksum_sha256": "02c5ff4846aa3c047ef2e2215cc07ad4e0bb0e4c7ceb4f1faf3ae9c541892112",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:55:15.9986765Z"
+      },
+      "upload_intent": {
+        "key": "development-land-use/area-sector-plans/cabq-7472d7fd-official-notice-of-decision-environmental-planning-commission-recommendation-of-approval-dow.pdf",
+        "key_was_absent": true,
+        "size_bytes": 203762,
+        "sha256": "02c5ff4846aa3c047ef2e2215cc07ad4e0bb0e4c7ceb4f1faf3ae9c541892112",
+        "started_at": "2026-09-26T20:55:09.1848949Z"
+      }
+    },
+    {
+      "id": "src-9f4896d16e30c694",
+      "key": "development-land-use/area-sector-plans/cabq-9f4896d1-downtown-neighborhood-area-sector-development-plan-update-epc-draft-october-28-2010-part-1-o.pdf",
+      "size_bytes": 24738286,
+      "checksum_sha256": "a5042709071ae357619f875c0029737276bd538f98ae008e2e4af7d31cff3d49",
+      "etag": "c0f66bdd66004969fa5aee6b0174f756-3",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-9f4896d1-downtown-neighborhood-area-sector-development-plan-update-epc-draft-october-28-2010-part-1-o.pdf",
+        "size_bytes": 24738286,
+        "checksum_sha256": "a5042709071ae357619f875c0029737276bd538f98ae008e2e4af7d31cff3d49",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:55:42.1336895Z"
+      },
+      "upload_intent": {
+        "key": "development-land-use/area-sector-plans/cabq-9f4896d1-downtown-neighborhood-area-sector-development-plan-update-epc-draft-october-28-2010-part-1-o.pdf",
+        "key_was_absent": true,
+        "size_bytes": 24738286,
+        "sha256": "a5042709071ae357619f875c0029737276bd538f98ae008e2e4af7d31cff3d49",
+        "started_at": "2026-09-26T20:55:25.2785468Z"
+      }
+    },
+    {
+      "id": "src-60a000a59cfbbaaf",
+      "key": "public-works/parks-recreation/cabq-60a000a5-north-domingo-baca-park-master-development-plan-february-3-2005.pdf",
+      "size_bytes": 2991248,
+      "checksum_sha256": "5d96a9733d0160b944e3cc02a89cb97bd4cb2ea4ad6486468528e8dcccda15b9",
+      "etag": "55200dd189a831469bbbef9cd26497fd",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-60a000a5-north-domingo-baca-park-master-development-plan-february-3-2005.pdf",
+        "size_bytes": 2991248,
+        "checksum_sha256": "5d96a9733d0160b944e3cc02a89cb97bd4cb2ea4ad6486468528e8dcccda15b9",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:56:00.0026957Z"
+      },
+      "upload_intent": {
+        "key": "public-works/parks-recreation/cabq-60a000a5-north-domingo-baca-park-master-development-plan-february-3-2005.pdf",
+        "key_was_absent": true,
+        "size_bytes": 2991248,
+        "sha256": "5d96a9733d0160b944e3cc02a89cb97bd4cb2ea4ad6486468528e8dcccda15b9",
+        "started_at": "2026-09-26T20:55:52.4718423Z"
+      }
+    },
+    {
+      "id": "src-189ef27f66da7fef",
+      "key": "city-data/capital-spending/cabq-189ef27f-street-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+      "size_bytes": 59308,
+      "checksum_sha256": "383a7a6c8bfb526db1cfcc4e3533c46e87268efe0642bc0f78589fbb19f75353",
+      "etag": "3cc34628f70154e92c7d0183bcd96f2c",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-189ef27f-street-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+        "size_bytes": 59308,
+        "checksum_sha256": "383a7a6c8bfb526db1cfcc4e3533c46e87268efe0642bc0f78589fbb19f75353",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:56:16.2801512Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-189ef27f-street-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+        "key_was_absent": true,
+        "size_bytes": 59308,
+        "sha256": "383a7a6c8bfb526db1cfcc4e3533c46e87268efe0642bc0f78589fbb19f75353",
+        "started_at": "2026-09-26T20:56:09.4969014Z"
+      }
+    },
+    {
+      "id": "src-1ecfc67085793132",
+      "key": "city-data/capital-spending/cabq-1ecfc670-2007-general-obligation-bond-issue-taxable-and-non-taxable-balance-table.pdf",
+      "size_bytes": 67780,
+      "checksum_sha256": "32b910a5da975a2f33b406d3f98d856c9459a925129359a5b32256338ebe2483",
+      "etag": "e841738150091e31a5358edc4a716e47",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-1ecfc670-2007-general-obligation-bond-issue-taxable-and-non-taxable-balance-table.pdf",
+        "size_bytes": 67780,
+        "checksum_sha256": "32b910a5da975a2f33b406d3f98d856c9459a925129359a5b32256338ebe2483",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:56:33.2260362Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-1ecfc670-2007-general-obligation-bond-issue-taxable-and-non-taxable-balance-table.pdf",
+        "key_was_absent": true,
+        "size_bytes": 67780,
+        "sha256": "32b910a5da975a2f33b406d3f98d856c9459a925129359a5b32256338ebe2483",
+        "started_at": "2026-09-26T20:56:26.3984000Z"
+      }
+    },
+    {
+      "id": "src-454e7b6319a9b1bd",
+      "key": "city-data/capital-spending/cabq-454e7b63-museum-and-cultural-facility-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+      "size_bytes": 39699,
+      "checksum_sha256": "0e8db13a076bcbf4f4b621c5ecbf2e2d9f8486b4d6d12f8578b5fc405ea40885",
+      "etag": "bfe32d0d969f7a6edd4ba3057dbbb24d",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-454e7b63-museum-and-cultural-facility-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+        "size_bytes": 39699,
+        "checksum_sha256": "0e8db13a076bcbf4f4b621c5ecbf2e2d9f8486b4d6d12f8578b5fc405ea40885",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:56:49.5846432Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-454e7b63-museum-and-cultural-facility-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+        "key_was_absent": true,
+        "size_bytes": 39699,
+        "sha256": "0e8db13a076bcbf4f4b621c5ecbf2e2d9f8486b4d6d12f8578b5fc405ea40885",
+        "started_at": "2026-09-26T20:56:43.1286224Z"
+      }
+    },
+    {
+      "id": "src-45b2bd5570996347",
+      "key": "city-data/capital-spending/cabq-45b2bd55-storm-sewer-system-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+      "size_bytes": 47230,
+      "checksum_sha256": "74ff111985fdf755d6214a9b877d43af646702c35ee5adcd81e236ae997c09d4",
+      "etag": "ed9d3fbef4a1818f36e1496b2fb03ebf",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-45b2bd55-storm-sewer-system-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+        "size_bytes": 47230,
+        "checksum_sha256": "74ff111985fdf755d6214a9b877d43af646702c35ee5adcd81e236ae997c09d4",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:57:06.0900210Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-45b2bd55-storm-sewer-system-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+        "key_was_absent": true,
+        "size_bytes": 47230,
+        "sha256": "74ff111985fdf755d6214a9b877d43af646702c35ee5adcd81e236ae997c09d4",
+        "started_at": "2026-09-26T20:56:59.3256774Z"
+      }
+    },
+    {
+      "id": "src-5d250f83bc10d354",
+      "key": "city-data/capital-spending/cabq-5d250f83-public-safety-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+      "size_bytes": 40795,
+      "checksum_sha256": "1321ac9418c61c0b2caed9c95db86324a8d3d659905e417232189c21c714606d",
+      "etag": "50bac96618001bc3c73ef484eaa6aef6",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-5d250f83-public-safety-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+        "size_bytes": 40795,
+        "checksum_sha256": "1321ac9418c61c0b2caed9c95db86324a8d3d659905e417232189c21c714606d",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T20:57:22.7652224Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-5d250f83-public-safety-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+        "key_was_absent": true,
+        "size_bytes": 40795,
+        "sha256": "1321ac9418c61c0b2caed9c95db86324a8d3d659905e417232189c21c714606d",
+        "started_at": "2026-09-26T20:57:15.7801448Z"
+      }
+    },
+    {
+      "id": "src-d6c487f305a5153a",
+      "key": "development-land-use/projects/designing-albuquerque-projects-open-house-june-15-2022.pptx",
+      "size_bytes": 26985442,
+      "checksum_sha256": "0b4684b4f6d82f1ba7bb0a28d696b352ac130545241c3b9045bb5b26e71d819a",
+      "etag": "c005c3e11f2a327476f4ce92a4f51f19-4",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/development-land-use/projects/designing-albuquerque-projects-open-house-june-15-2022.pptx",
+        "size_bytes": 26985442,
+        "checksum_sha256": "0b4684b4f6d82f1ba7bb0a28d696b352ac130545241c3b9045bb5b26e71d819a",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:00:52.7846847Z"
+      },
+      "upload_intent": {
+        "key": "development-land-use/projects/designing-albuquerque-projects-open-house-june-15-2022.pptx",
+        "key_was_absent": true,
+        "size_bytes": 26985442,
+        "sha256": "0b4684b4f6d82f1ba7bb0a28d696b352ac130545241c3b9045bb5b26e71d819a",
+        "started_at": "2026-09-26T21:00:42.3409556Z"
+      }
+    },
+    {
+      "id": "src-6e1fadf40a815ca1",
+      "key": "city-data/capital-spending/cabq-6e1fadf4-frequently-asked-questions-and-answers-general-obligation-bonds-undated-set.pdf",
+      "size_bytes": 89597,
+      "checksum_sha256": "112196881da2b82975457fc62636d181bdc493793c59f6ac4a32faf23ad1d2ff",
+      "etag": "07bc2187f75cf876e3a45ffa838ce158",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-6e1fadf4-frequently-asked-questions-and-answers-general-obligation-bonds-undated-set.pdf",
+        "size_bytes": 89597,
+        "checksum_sha256": "112196881da2b82975457fc62636d181bdc493793c59f6ac4a32faf23ad1d2ff",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:01:09.3478692Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-6e1fadf4-frequently-asked-questions-and-answers-general-obligation-bonds-undated-set.pdf",
+        "key_was_absent": true,
+        "size_bytes": 89597,
+        "sha256": "112196881da2b82975457fc62636d181bdc493793c59f6ac4a32faf23ad1d2ff",
+        "started_at": "2026-09-26T21:01:02.6583854Z"
+      }
+    },
+    {
+      "id": "src-72def9da3ba1d799",
+      "key": "city-data/capital-spending/cabq-72def9da-zoo-and-biological-park-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+      "size_bytes": 39453,
+      "checksum_sha256": "a470353c724995013c410fa70596199042df88ddf4b10e867d662e718e9496e7",
+      "etag": "d1d5109f65e35803adcfeb7e9657a501",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-72def9da-zoo-and-biological-park-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+        "size_bytes": 39453,
+        "checksum_sha256": "a470353c724995013c410fa70596199042df88ddf4b10e867d662e718e9496e7",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:01:26.7627959Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-72def9da-zoo-and-biological-park-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+        "key_was_absent": true,
+        "size_bytes": 39453,
+        "sha256": "a470353c724995013c410fa70596199042df88ddf4b10e867d662e718e9496e7",
+        "started_at": "2026-09-26T21:01:19.9329943Z"
+      }
+    },
+    {
+      "id": "src-7f2c021eb265318b",
+      "key": "city-data/capital-spending/cabq-7f2c021e-parks-and-recreation-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+      "size_bytes": 51994,
+      "checksum_sha256": "5e4ed9019225526967957b1d113a6f4cc1dcf37caf45f6748b6e61ce8dba4483",
+      "etag": "7b541cb80fcb2f879df5f2c6d4a5b0b7",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-7f2c021e-parks-and-recreation-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+        "size_bytes": 51994,
+        "checksum_sha256": "5e4ed9019225526967957b1d113a6f4cc1dcf37caf45f6748b6e61ce8dba4483",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:01:43.9674835Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-7f2c021e-parks-and-recreation-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+        "key_was_absent": true,
+        "size_bytes": 51994,
+        "sha256": "5e4ed9019225526967957b1d113a6f4cc1dcf37caf45f6748b6e61ce8dba4483",
+        "started_at": "2026-09-26T21:01:36.8704907Z"
+      }
+    },
+    {
+      "id": "src-b115ed6fef212714",
+      "key": "city-data/capital-spending/cabq-b115ed6f-public-transportation-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+      "size_bytes": 41036,
+      "checksum_sha256": "44680df27ce80f442bc2a52a675785141655c800c84a82de1b1d74cb491fc065",
+      "etag": "ebf6b0c0af1a097c25bc667557a6f24c",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-b115ed6f-public-transportation-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+        "size_bytes": 41036,
+        "checksum_sha256": "44680df27ce80f442bc2a52a675785141655c800c84a82de1b1d74cb491fc065",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:02:00.6779589Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-b115ed6f-public-transportation-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+        "key_was_absent": true,
+        "size_bytes": 41036,
+        "sha256": "44680df27ce80f442bc2a52a675785141655c800c84a82de1b1d74cb491fc065",
+        "started_at": "2026-09-26T21:01:54.0354604Z"
+      }
+    },
+    {
+      "id": "src-cf8de7cdd1e33ab5",
+      "key": "city-data/capital-spending/cabq-cf8de7cd-library-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+      "size_bytes": 40011,
+      "checksum_sha256": "f32184cecf159b6102b7bd1e4d9c11c138f0eaf3b0a8f9ca0f1d28ddd5f9255e",
+      "etag": "d531f0314aee5334c50759a6808e0dc0",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-cf8de7cd-library-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+        "size_bytes": 40011,
+        "checksum_sha256": "f32184cecf159b6102b7bd1e4d9c11c138f0eaf3b0a8f9ca0f1d28ddd5f9255e",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:02:17.3602487Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-cf8de7cd-library-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+        "key_was_absent": true,
+        "size_bytes": 40011,
+        "sha256": "f32184cecf159b6102b7bd1e4d9c11c138f0eaf3b0a8f9ca0f1d28ddd5f9255e",
+        "started_at": "2026-09-26T21:02:10.9567382Z"
+      }
+    },
+    {
+      "id": "src-f87c2b7ead021f67",
+      "key": "city-data/capital-spending/cabq-f87c2b7e-affordable-housing-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+      "size_bytes": 33757,
+      "checksum_sha256": "9b8eb459ea30db0c834f606b1016bfc60de033a9a719c21e61513951ea7bc524",
+      "etag": "ba855fe4f8bcb4f6a20236dbe5a89e3b",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-f87c2b7e-affordable-housing-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+        "size_bytes": 33757,
+        "checksum_sha256": "9b8eb459ea30db0c834f606b1016bfc60de033a9a719c21e61513951ea7bc524",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:02:34.0585461Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-f87c2b7e-affordable-housing-bonds-general-obligation-bond-project-scopes-undated-set.pdf",
+        "key_was_absent": true,
+        "size_bytes": 33757,
+        "sha256": "9b8eb459ea30db0c834f606b1016bfc60de033a9a719c21e61513951ea7bc524",
+        "started_at": "2026-09-26T21:02:27.5956755Z"
+      }
+    },
+    {
+      "id": "src-fbea59110f9af935",
+      "key": "city-data/capital-spending/cabq-fbea5911-senior-family-community-center-and-community-enhancement-project-bonds-general-obligation-bo.pdf",
+      "size_bytes": 48379,
+      "checksum_sha256": "238046886401047bc2678b03679d54d68468cd82d43cc8a5772fbd8448b6f045",
+      "etag": "0fb48207ea18b148d00428a2a6e81333",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-fbea5911-senior-family-community-center-and-community-enhancement-project-bonds-general-obligation-bo.pdf",
+        "size_bytes": 48379,
+        "checksum_sha256": "238046886401047bc2678b03679d54d68468cd82d43cc8a5772fbd8448b6f045",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:02:50.3865725Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-fbea5911-senior-family-community-center-and-community-enhancement-project-bonds-general-obligation-bo.pdf",
+        "key_was_absent": true,
+        "size_bytes": 48379,
+        "sha256": "238046886401047bc2678b03679d54d68468cd82d43cc8a5772fbd8448b6f045",
+        "started_at": "2026-09-26T21:02:43.8745905Z"
+      }
+    },
+    {
+      "id": "src-692f5564d80d10f0",
+      "key": "city-data/demographics/cabq-692f5564-interoffice-memorandum-appointments-to-the-2010-redistricting-committee-september-15-2010.pdf",
+      "size_bytes": 68103,
+      "checksum_sha256": "8608a18f2167bcb0c964e061099b593c352dedef41e74e357f403dd20a375e3b",
+      "etag": "5564d44a394b754fdc4ef03f5c2c7fd6",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/demographics/cabq-692f5564-interoffice-memorandum-appointments-to-the-2010-redistricting-committee-september-15-2010.pdf",
+        "size_bytes": 68103,
+        "checksum_sha256": "8608a18f2167bcb0c964e061099b593c352dedef41e74e357f403dd20a375e3b",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:03:07.1581098Z"
+      },
+      "upload_intent": {
+        "key": "city-data/demographics/cabq-692f5564-interoffice-memorandum-appointments-to-the-2010-redistricting-committee-september-15-2010.pdf",
+        "key_was_absent": true,
+        "size_bytes": 68103,
+        "sha256": "8608a18f2167bcb0c964e061099b593c352dedef41e74e357f403dd20a375e3b",
+        "started_at": "2026-09-26T21:03:00.3299514Z"
+      }
+    },
+    {
+      "id": "src-afcdfa5c5ab2978f",
+      "key": "city-data/demographics/cabq-afcdfa5c-redistricting-information-one-person-one-vote-minority-voting-rights-and-traditional-distric.pdf",
+      "size_bytes": 356289,
+      "checksum_sha256": "8c5d463e6e9dfa831eb5a9409969688dd7f05f349000f458f4af62ad0fb4b878",
+      "etag": "fed4496e0bfce92d5dd93db7ba527c54",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/demographics/cabq-afcdfa5c-redistricting-information-one-person-one-vote-minority-voting-rights-and-traditional-distric.pdf",
+        "size_bytes": 356289,
+        "checksum_sha256": "8c5d463e6e9dfa831eb5a9409969688dd7f05f349000f458f4af62ad0fb4b878",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:03:23.7428140Z"
+      },
+      "upload_intent": {
+        "key": "city-data/demographics/cabq-afcdfa5c-redistricting-information-one-person-one-vote-minority-voting-rights-and-traditional-distric.pdf",
+        "key_was_absent": true,
+        "size_bytes": 356289,
+        "sha256": "8c5d463e6e9dfa831eb5a9409969688dd7f05f349000f458f4af62ad0fb4b878",
+        "started_at": "2026-09-26T21:03:16.9210509Z"
+      }
+    },
+    {
+      "id": "src-1ef3942c3d4cb415",
+      "key": "city-data/capital-spending/cabq-1ef3942c-2007-affordable-housing-bonds.pdf",
+      "size_bytes": 33569,
+      "checksum_sha256": "05d9b0a5a0a7165f88715201d5a3d42a35d23dbea00e0c507f7054271396f12a",
+      "etag": "fe08dde73a64a425fdb345c3f422bccb",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-1ef3942c-2007-affordable-housing-bonds.pdf",
+        "size_bytes": 33569,
+        "checksum_sha256": "05d9b0a5a0a7165f88715201d5a3d42a35d23dbea00e0c507f7054271396f12a",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:03:39.7343115Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-1ef3942c-2007-affordable-housing-bonds.pdf",
+        "key_was_absent": true,
+        "size_bytes": 33569,
+        "sha256": "05d9b0a5a0a7165f88715201d5a3d42a35d23dbea00e0c507f7054271396f12a",
+        "started_at": "2026-09-26T21:03:33.2931336Z"
+      }
+    },
+    {
+      "id": "src-3d9162c12630506a",
+      "key": "city-data/capital-spending/cabq-3d9162c1-2007-general-obligation-bond-summary-chart-dollar-amounts-and-percentages-by-purpose.pdf",
+      "size_bytes": 32113,
+      "checksum_sha256": "4158bd33cfb5d3a426df16ed1ddfa90e39c2fea71845ae9f2a8c533dce5ddf77",
+      "etag": "d3d6b64bfe3a86974d9d7b167bbd9d14",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-3d9162c1-2007-general-obligation-bond-summary-chart-dollar-amounts-and-percentages-by-purpose.pdf",
+        "size_bytes": 32113,
+        "checksum_sha256": "4158bd33cfb5d3a426df16ed1ddfa90e39c2fea71845ae9f2a8c533dce5ddf77",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:03:56.3340134Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-3d9162c1-2007-general-obligation-bond-summary-chart-dollar-amounts-and-percentages-by-purpose.pdf",
+        "key_was_absent": true,
+        "size_bytes": 32113,
+        "sha256": "4158bd33cfb5d3a426df16ed1ddfa90e39c2fea71845ae9f2a8c533dce5ddf77",
+        "started_at": "2026-09-26T21:03:49.8131857Z"
+      }
+    },
+    {
+      "id": "src-3d99f4eec334285b",
+      "key": "city-data/capital-spending/cabq-3d99f4ee-frequently-asked-questions-and-answers-2007-general-obligation-bond-programme.pdf",
+      "size_bytes": 80682,
+      "checksum_sha256": "eb1d8bfebb1d9ac322b31ffd3f2ff924b397e06e6acc6ee00cad583ec3761d89",
+      "etag": "c9a98e65eae90f27b1e9dab210b112a1",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-3d99f4ee-frequently-asked-questions-and-answers-2007-general-obligation-bond-programme.pdf",
+        "size_bytes": 80682,
+        "checksum_sha256": "eb1d8bfebb1d9ac322b31ffd3f2ff924b397e06e6acc6ee00cad583ec3761d89",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:04:13.8356814Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-3d99f4ee-frequently-asked-questions-and-answers-2007-general-obligation-bond-programme.pdf",
+        "key_was_absent": true,
+        "size_bytes": 80682,
+        "sha256": "eb1d8bfebb1d9ac322b31ffd3f2ff924b397e06e6acc6ee00cad583ec3761d89",
+        "started_at": "2026-09-26T21:04:07.1057894Z"
+      }
+    },
+    {
+      "id": "src-51d8d424c326104e",
+      "key": "city-data/capital-spending/cabq-51d8d424-2007-public-transportation-bonds.pdf",
+      "size_bytes": 42928,
+      "checksum_sha256": "6184460281ab49f116e4d0078609bcec3221d43a17ff00156d323409df73a55c",
+      "etag": "74dffa7cc1595850b796615c5026dfe0",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-51d8d424-2007-public-transportation-bonds.pdf",
+        "size_bytes": 42928,
+        "checksum_sha256": "6184460281ab49f116e4d0078609bcec3221d43a17ff00156d323409df73a55c",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:04:30.5500775Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-51d8d424-2007-public-transportation-bonds.pdf",
+        "key_was_absent": true,
+        "size_bytes": 42928,
+        "sha256": "6184460281ab49f116e4d0078609bcec3221d43a17ff00156d323409df73a55c",
+        "started_at": "2026-09-26T21:04:23.9922356Z"
+      }
+    },
+    {
+      "id": "src-8933cccca7b7c3ff",
+      "key": "city-data/capital-spending/cabq-8933cccc-2007-parks-and-recreation-bonds.pdf",
+      "size_bytes": 54320,
+      "checksum_sha256": "f09f97083f83fceca2bf672a0f16d32659bc753dde041e4178f8b271f08e2966",
+      "etag": "d8f8466617cd549fbb66fa8bbd28ae7c",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-8933cccc-2007-parks-and-recreation-bonds.pdf",
+        "size_bytes": 54320,
+        "checksum_sha256": "f09f97083f83fceca2bf672a0f16d32659bc753dde041e4178f8b271f08e2966",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:10:49.6599973Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-8933cccc-2007-parks-and-recreation-bonds.pdf",
+        "key_was_absent": true,
+        "size_bytes": 54320,
+        "sha256": "f09f97083f83fceca2bf672a0f16d32659bc753dde041e4178f8b271f08e2966",
+        "started_at": "2026-09-26T21:10:42.6222077Z"
+      }
+    },
+    {
+      "id": "src-9b4cd97fc2be099b",
+      "key": "city-data/capital-spending/cabq-9b4cd97f-2007-energy-conservation-public-facilities-and-system-modernization-bonds.pdf",
+      "size_bytes": 50261,
+      "checksum_sha256": "6ab136169519fca179407639356044c3ac66374f93b68a4fd9462eec6489909e",
+      "etag": "0042dc712e47ef524c63fdbdae830418",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-9b4cd97f-2007-energy-conservation-public-facilities-and-system-modernization-bonds.pdf",
+        "size_bytes": 50261,
+        "checksum_sha256": "6ab136169519fca179407639356044c3ac66374f93b68a4fd9462eec6489909e",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:11:09.2746321Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-9b4cd97f-2007-energy-conservation-public-facilities-and-system-modernization-bonds.pdf",
+        "key_was_absent": true,
+        "size_bytes": 50261,
+        "sha256": "6ab136169519fca179407639356044c3ac66374f93b68a4fd9462eec6489909e",
+        "started_at": "2026-09-26T21:11:02.1794644Z"
+      }
+    },
+    {
+      "id": "src-a9913e4be707e219",
+      "key": "city-data/capital-spending/cabq-a9913e4b-2007-public-safety-bonds.pdf",
+      "size_bytes": 42920,
+      "checksum_sha256": "768966ac6d9cdda6de80efb998e877a96117b99c96d621d712b2a681009cfc0d",
+      "etag": "b801b5f3399584008cff03451052895b",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-a9913e4b-2007-public-safety-bonds.pdf",
+        "size_bytes": 42920,
+        "checksum_sha256": "768966ac6d9cdda6de80efb998e877a96117b99c96d621d712b2a681009cfc0d",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:11:27.9152960Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-a9913e4b-2007-public-safety-bonds.pdf",
+        "key_was_absent": true,
+        "size_bytes": 42920,
+        "sha256": "768966ac6d9cdda6de80efb998e877a96117b99c96d621d712b2a681009cfc0d",
+        "started_at": "2026-09-26T21:11:21.7105302Z"
+      }
+    },
+    {
+      "id": "src-d3efe770119ba686",
+      "key": "city-data/capital-spending/cabq-d3efe770-2007-zoo-biological-park-museum-and-cultural-facility-bonds.pdf",
+      "size_bytes": 46602,
+      "checksum_sha256": "dd80eb72aa68b054678083d32318a4fcdcf96b05882ba5d98283a4547ff35335",
+      "etag": "37fb18bddd60773c77a8ce5c37aefb3a",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-d3efe770-2007-zoo-biological-park-museum-and-cultural-facility-bonds.pdf",
+        "size_bytes": 46602,
+        "checksum_sha256": "dd80eb72aa68b054678083d32318a4fcdcf96b05882ba5d98283a4547ff35335",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:11:49.1949790Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-d3efe770-2007-zoo-biological-park-museum-and-cultural-facility-bonds.pdf",
+        "key_was_absent": true,
+        "size_bytes": 46602,
+        "sha256": "dd80eb72aa68b054678083d32318a4fcdcf96b05882ba5d98283a4547ff35335",
+        "started_at": "2026-09-26T21:11:42.1409382Z"
+      }
+    },
+    {
+      "id": "src-eb26d8bc05ea810f",
+      "key": "city-data/capital-spending/cabq-eb26d8bc-2007-senior-family-community-center-and-community-enhancement-project-bonds.pdf",
+      "size_bytes": 47668,
+      "checksum_sha256": "b32e00155d66047490e96fdecc273a3259bc3c64f8bc0a3a32b0730c803dc4e2",
+      "etag": "6a82ff5442072b786468f07b575ea460",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-eb26d8bc-2007-senior-family-community-center-and-community-enhancement-project-bonds.pdf",
+        "size_bytes": 47668,
+        "checksum_sha256": "b32e00155d66047490e96fdecc273a3259bc3c64f8bc0a3a32b0730c803dc4e2",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:12:08.7169783Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-eb26d8bc-2007-senior-family-community-center-and-community-enhancement-project-bonds.pdf",
+        "key_was_absent": true,
+        "size_bytes": 47668,
+        "sha256": "b32e00155d66047490e96fdecc273a3259bc3c64f8bc0a3a32b0730c803dc4e2",
+        "started_at": "2026-09-26T21:12:01.9131839Z"
+      }
+    },
+    {
+      "id": "src-24319f0b447bf4a2",
+      "key": "city-data/capital-spending/cabq-24319f0b-public-safety-costs-of-accommodating-new-development-and-recommended-public-safety-impact-fe.pdf",
+      "size_bytes": 148961,
+      "checksum_sha256": "f9064e53d586f93c954ba8daafc3d7c810be326a08dc8ba8b45ff9eb1543baec",
+      "etag": "61f92b6ac6f3d898a6dc15d291e77225",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-24319f0b-public-safety-costs-of-accommodating-new-development-and-recommended-public-safety-impact-fe.pdf",
+        "size_bytes": 148961,
+        "checksum_sha256": "f9064e53d586f93c954ba8daafc3d7c810be326a08dc8ba8b45ff9eb1543baec",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:12:28.6752009Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-24319f0b-public-safety-costs-of-accommodating-new-development-and-recommended-public-safety-impact-fe.pdf",
+        "key_was_absent": true,
+        "size_bytes": 148961,
+        "sha256": "f9064e53d586f93c954ba8daafc3d7c810be326a08dc8ba8b45ff9eb1543baec",
+        "started_at": "2026-09-26T21:12:21.5016818Z"
+      }
+    },
+    {
+      "id": "src-6a516acc2759d33c",
+      "key": "city-data/capital-spending/cabq-6a516acc-park-recreation-trail-and-open-space-costs-of-accommodating-new-development-and-recommended-.pdf",
+      "size_bytes": 244088,
+      "checksum_sha256": "162c1518ce631debbf5001ec145352df4d76125a4e97c2170cdcca4bc59531b8",
+      "etag": "ad0dda204dfc685fe758e7ad11724145",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-6a516acc-park-recreation-trail-and-open-space-costs-of-accommodating-new-development-and-recommended-.pdf",
+        "size_bytes": 244088,
+        "checksum_sha256": "162c1518ce631debbf5001ec145352df4d76125a4e97c2170cdcca4bc59531b8",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:12:48.3173543Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-6a516acc-park-recreation-trail-and-open-space-costs-of-accommodating-new-development-and-recommended-.pdf",
+        "key_was_absent": true,
+        "size_bytes": 244088,
+        "sha256": "162c1518ce631debbf5001ec145352df4d76125a4e97c2170cdcca4bc59531b8",
+        "started_at": "2026-09-26T21:12:41.2284404Z"
+      }
+    },
+    {
+      "id": "src-9aaa5d2d38dc619f",
+      "key": "city-data/capital-spending/cabq-9aaa5d2d-proposed-impact-fees-impact-fees-consultant-methodology-summaries.pdf",
+      "size_bytes": 123126,
+      "checksum_sha256": "bc6191385487c6fb8d56fbed07a3345db849d7738ccc4336f299ae87caceb39f",
+      "etag": "4390e00b9c3e7327d203ec657bd3506e",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/capital-spending/cabq-9aaa5d2d-proposed-impact-fees-impact-fees-consultant-methodology-summaries.pdf",
+        "size_bytes": 123126,
+        "checksum_sha256": "bc6191385487c6fb8d56fbed07a3345db849d7738ccc4336f299ae87caceb39f",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:13:07.6031544Z"
+      },
+      "upload_intent": {
+        "key": "city-data/capital-spending/cabq-9aaa5d2d-proposed-impact-fees-impact-fees-consultant-methodology-summaries.pdf",
+        "key_was_absent": true,
+        "size_bytes": 123126,
+        "sha256": "bc6191385487c6fb8d56fbed07a3345db849d7738ccc4336f299ae87caceb39f",
+        "started_at": "2026-09-26T21:13:00.6430930Z"
+      }
+    },
+    {
+      "id": "src-1b34668e04121332",
+      "key": "public-works/parks-recreation/cabq-1b34668e-academy-hills-park-improvements-detailed-plan-scope-funding-and-schedule.pdf",
+      "size_bytes": 6742283,
+      "checksum_sha256": "31c03f65a363bff49af3b70cedef920b7ab3cbfb7c16d43661374a651e7df4da",
+      "etag": "338d606c6c633a5dff9445a033f28328",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-1b34668e-academy-hills-park-improvements-detailed-plan-scope-funding-and-schedule.pdf",
+        "size_bytes": 6742283,
+        "checksum_sha256": "31c03f65a363bff49af3b70cedef920b7ab3cbfb7c16d43661374a651e7df4da",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:13:26.9672617Z"
+      },
+      "upload_intent": {
+        "key": "public-works/parks-recreation/cabq-1b34668e-academy-hills-park-improvements-detailed-plan-scope-funding-and-schedule.pdf",
+        "key_was_absent": true,
+        "size_bytes": 6742283,
+        "sha256": "31c03f65a363bff49af3b70cedef920b7ab3cbfb7c16d43661374a651e7df4da",
+        "started_at": "2026-09-26T21:13:19.9031765Z"
+      }
+    },
+    {
+      "id": "src-b838ec4d5a8d4527",
+      "key": "development-land-use/redevelopment-plans/cabq-b838ec4d-proposed-south-yale-metropolitan-redevelopment-area-and-sector-development-plan-boundaries-m.pdf",
+      "size_bytes": 540797,
+      "checksum_sha256": "d97e69ce2235982af679055bbb86850be2c99c6d468a0fcb3bbb7f2af2669bf7",
+      "etag": "873fb15ab116eb2c783015306039a39d",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-b838ec4d-proposed-south-yale-metropolitan-redevelopment-area-and-sector-development-plan-boundaries-m.pdf",
+        "size_bytes": 540797,
+        "checksum_sha256": "d97e69ce2235982af679055bbb86850be2c99c6d468a0fcb3bbb7f2af2669bf7",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:13:47.4839107Z"
+      },
+      "upload_intent": {
+        "key": "development-land-use/redevelopment-plans/cabq-b838ec4d-proposed-south-yale-metropolitan-redevelopment-area-and-sector-development-plan-boundaries-m.pdf",
+        "key_was_absent": true,
+        "size_bytes": 540797,
+        "sha256": "d97e69ce2235982af679055bbb86850be2c99c6d468a0fcb3bbb7f2af2669bf7",
+        "started_at": "2026-09-26T21:13:39.8469653Z"
+      }
+    },
+    {
+      "id": "src-da37e2197d571ffd",
+      "key": "transportation/transit/abq-ride/source-da37e219-mid-region-rtpo-mpo-coordinated-public-transit-human-services-transportation-plan-septembe.pdf",
+      "size_bytes": 2908445,
+      "checksum_sha256": "37500ea0e3a4d2e6f145572e805f37b2c82d182b2e30310eb797ed6f2dc24859",
+      "etag": "2de6b58b53e9e99b1f7926c142adbd79",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/transportation/transit/abq-ride/source-da37e219-mid-region-rtpo-mpo-coordinated-public-transit-human-services-transportation-plan-septembe.pdf",
+        "size_bytes": 2908445,
+        "checksum_sha256": "37500ea0e3a4d2e6f145572e805f37b2c82d182b2e30310eb797ed6f2dc24859",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:14:09.0952523Z"
+      },
+      "upload_intent": {
+        "key": "transportation/transit/abq-ride/source-da37e219-mid-region-rtpo-mpo-coordinated-public-transit-human-services-transportation-plan-septembe.pdf",
+        "key_was_absent": true,
+        "size_bytes": 2908445,
+        "sha256": "37500ea0e3a4d2e6f145572e805f37b2c82d182b2e30310eb797ed6f2dc24859",
+        "started_at": "2026-09-26T21:14:01.2668419Z"
+      }
+    },
+    {
+      "id": "src-320cea1616f728e2",
+      "key": "maps-data/maps/mrcog-transportation-planning-boundaries-map.png",
+      "size_bytes": 1826828,
+      "checksum_sha256": "4182c9a5c6a7974afae28eec2cad19e976eb5d408f2412b2ae31a493547e1d2c",
+      "etag": "663aa486ebde811240ec29e7800b2752",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/maps-data/maps/mrcog-transportation-planning-boundaries-map.png",
+        "size_bytes": 1826828,
+        "checksum_sha256": "4182c9a5c6a7974afae28eec2cad19e976eb5d408f2412b2ae31a493547e1d2c",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:14:29.5636772Z"
+      },
+      "upload_intent": {
+        "key": "maps-data/maps/mrcog-transportation-planning-boundaries-map.png",
+        "key_was_absent": true,
+        "size_bytes": 1826828,
+        "sha256": "4182c9a5c6a7974afae28eec2cad19e976eb5d408f2412b2ae31a493547e1d2c",
+        "started_at": "2026-09-26T21:14:21.9551716Z"
+      }
+    },
+    {
+      "id": "src-2251877ee3dc73ba",
+      "key": "transportation/roadway-projects/studies/san-pedro-drive-streetscape-concept-unm-planning-studio-summer-2011.pdf",
+      "size_bytes": 45323369,
+      "checksum_sha256": "e1348592c8c87f97bc271e0b84c2b2dccac32571034596cad7b673df4be87e53",
+      "etag": "071b19db84c7ba2f07e5a6128991c554-6",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/transportation/roadway-projects/studies/san-pedro-drive-streetscape-concept-unm-planning-studio-summer-2011.pdf",
+        "size_bytes": 45323369,
+        "checksum_sha256": "e1348592c8c87f97bc271e0b84c2b2dccac32571034596cad7b673df4be87e53",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:14:53.4369354Z"
+      },
+      "upload_intent": {
+        "key": "transportation/roadway-projects/studies/san-pedro-drive-streetscape-concept-unm-planning-studio-summer-2011.pdf",
+        "key_was_absent": true,
+        "size_bytes": 45323369,
+        "sha256": "e1348592c8c87f97bc271e0b84c2b2dccac32571034596cad7b673df4be87e53",
+        "started_at": "2026-09-26T21:14:42.2612510Z"
+      }
+    },
+    {
+      "id": "src-da5e395c4284e4b8",
+      "key": "development-land-use/area-sector-plans/nob-hill-highland-september-2006-draft-appendices-a-to-c.pdf",
+      "size_bytes": 854976,
+      "checksum_sha256": "bd4147ef5ca11aec03b36fa99604c0a1874dd273aad3c6b610131f7f417bdc57",
+      "etag": "54ece62fde006b3a39a67d7ebc8c3294",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/development-land-use/area-sector-plans/nob-hill-highland-september-2006-draft-appendices-a-to-c.pdf",
+        "size_bytes": 854976,
+        "checksum_sha256": "bd4147ef5ca11aec03b36fa99604c0a1874dd273aad3c6b610131f7f417bdc57",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:15:14.9552571Z"
+      },
+      "upload_intent": {
+        "key": "development-land-use/area-sector-plans/nob-hill-highland-september-2006-draft-appendices-a-to-c.pdf",
+        "key_was_absent": true,
+        "size_bytes": 854976,
+        "sha256": "bd4147ef5ca11aec03b36fa99604c0a1874dd273aad3c6b610131f7f417bdc57",
+        "started_at": "2026-09-26T21:15:06.9941855Z"
+      }
+    },
+    {
+      "id": "src-eee3ae1f6b6df008",
+      "key": "development-land-use/area-sector-plans/nob-hill-highland-september-2006-draft-front-matter-and-introduction.pdf",
+      "size_bytes": 2471576,
+      "checksum_sha256": "6231c4f00646f21de94092c00d588708b94b52504389f00b2b598eef104fa527",
+      "etag": "82f4afca4d385dcc64541244a28486c0",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/development-land-use/area-sector-plans/nob-hill-highland-september-2006-draft-front-matter-and-introduction.pdf",
+        "size_bytes": 2471576,
+        "checksum_sha256": "6231c4f00646f21de94092c00d588708b94b52504389f00b2b598eef104fa527",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:15:34.7495821Z"
+      },
+      "upload_intent": {
+        "key": "development-land-use/area-sector-plans/nob-hill-highland-september-2006-draft-front-matter-and-introduction.pdf",
+        "key_was_absent": true,
+        "size_bytes": 2471576,
+        "sha256": "6231c4f00646f21de94092c00d588708b94b52504389f00b2b598eef104fa527",
+        "started_at": "2026-09-26T21:15:27.4078518Z"
+      }
+    },
+    {
+      "id": "src-89247de353dabf15",
+      "key": "transportation/bicycling/bike-plans/north-diversion-channel-trail-full-historical-tour.docx",
+      "size_bytes": 10603256,
+      "checksum_sha256": "47582a79d56b6b24673f08f271f56d9191fa3052b4b1d055c08e9071cdb6057a",
+      "etag": "3be5cc09e0c7946d0b951b55d5f690ea-2",
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/transportation/bicycling/bike-plans/north-diversion-channel-trail-full-historical-tour.docx",
+        "size_bytes": 10603256,
+        "checksum_sha256": "47582a79d56b6b24673f08f271f56d9191fa3052b4b1d055c08e9071cdb6057a",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T21:15:56.1308427Z"
+      },
+      "upload_intent": {
+        "key": "transportation/bicycling/bike-plans/north-diversion-channel-trail-full-historical-tour.docx",
+        "key_was_absent": true,
+        "size_bytes": 10603256,
+        "sha256": "47582a79d56b6b24673f08f271f56d9191fa3052b4b1d055c08e9071cdb6057a",
+        "started_at": "2026-09-26T21:15:47.5172716Z"
+      }
+    }
+  ],
+  "archive_family_artifacts": [
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-116-13-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-116-18-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-116-23-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-116-33-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-116-36-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-116-37-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-120-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-122-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-124-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-125-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-126-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-128-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-129-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-131-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-132-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-133-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-134-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-137-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-139-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-141-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-148-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-230-03-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-230-04-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-287-2026-09-26.json",
+    "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-291-2026-09-26.json"
+  ],
+  "deferred_records": [
+    {
+      "id": "src-29bec2b60308d513",
+      "reason": "City parks/open-space interactive app 99029a0318a144f0b726cbaf6f2c6a69: meaningful facility data; rendered usability verification required, no browser surface available in this session.",
+      "category": "live_application_render_or_relationship_blocker",
+      "state": "unresolved_ungated_not_currently_actionable",
+      "browser_inventory": "apps=[] browsers=[]"
+    },
+    {
+      "id": "src-58b6e48562da781c",
+      "reason": "Council-district interactive map 93befad4261f44d495146fc8d6ec3890: meaningful representation geography; rendered usability verification required, no browser surface available.",
+      "category": "live_application_render_or_relationship_blocker",
+      "state": "unresolved_ungated_not_currently_actionable",
+      "browser_inventory": "apps=[] browsers=[]"
+    },
+    {
+      "id": "src-5a12b40f6dcba285",
+      "reason": "Bikeways wrapper embeds bfda88ddb89a40c08440b4abd4c182ba, marked retired/broken by saved rendered audit. Need bounded current successor/usable-map confirmation; no browser surface available.",
+      "category": "live_application_render_or_relationship_blocker",
+      "state": "unresolved_ungated_not_currently_actionable",
+      "browser_inventory": "apps=[] browsers=[]"
+    },
+    {
+      "id": "src-a9ddff947a4282c9",
+      "reason": "School-crossing app now returns Item Replacement. Metadata/HTTP 200 cannot establish a usable replacement map; source/application recovery and rendered inspection required.",
+      "category": "live_application_render_or_relationship_blocker",
+      "state": "unresolved_ungated_not_currently_actionable",
+      "browser_inventory": "apps=[] browsers=[]"
+    },
+    {
+      "id": "src-fe8c43a2ca9b7417",
+      "reason": "Emergency/ineligible-roadways app 74daadcad5a740928893f163e952d854: meaningful local route policy, but application-shell HTTP 200 does not prove usability. No browser available for required rendering.",
+      "category": "live_application_render_or_relationship_blocker",
+      "state": "unresolved_ungated_not_currently_actionable",
+      "browser_inventory": "apps=[] browsers=[]"
+    },
+    {
+      "id": "src-4c2b3614256aaf20",
+      "reason": "Pedestrian Safety Action Plan Experience a5918cf455ae4fe7835cf9b5fe0c78cb: meaningful local safety-policy application; content/usability must be rendered, not inferred from shell. Browser unavailable.",
+      "category": "live_application_render_or_relationship_blocker",
+      "state": "unresolved_ungated_not_currently_actionable",
+      "browser_inventory": "apps=[] browsers=[]"
+    },
+    {
+      "id": "src-27314f06651cc1c9",
+      "reason": "MRMPO portfolio e5b9886b6d774b1fa8bbbf11593e6306: specific interactive content not established by shell. Requires rendered application review; browser unavailable.",
+      "category": "live_application_render_or_relationship_blocker",
+      "state": "unresolved_ungated_not_currently_actionable",
+      "browser_inventory": "apps=[] browsers=[]"
+    },
+    {
+      "id": "src-7867bdf940d22b3f",
+      "reason": "MRMPO portfolio 3721154423534a49b2ba2f0dfe1f7e5d has a different appid from alleged canonical e5b9886b6d774b1fa8bbbf11593e6306. Shared shell hashes do not prove identical maps. Preserve unresolved relationship pending rendered/data-content comparison.",
+      "category": "live_application_render_or_relationship_blocker",
+      "state": "unresolved_ungated_not_currently_actionable",
+      "browser_inventory": "apps=[] browsers=[]"
+    },
+    {
+      "id": "src-aece84c62701c551",
+      "reason": "ABQ Transportation Dashboard has credible local policy metrics, but HTTP/static wrapper cannot verify the interactive data. Required rendered usability review unavailable.",
+      "category": "live_application_render_or_relationship_blocker",
+      "state": "unresolved_ungated_not_currently_actionable",
+      "browser_inventory": "apps=[] browsers=[]"
+    }
+  ],
+  "recovery_records": [
+    {
+      "id": "src-48c77cfd3533626b",
+      "attempted_at": "2026-09-26T21:05:49.232863+00:00",
+      "review_authorized": false,
+      "outcome": "source_or_structural_blocker_preserved",
+      "reason": "Fresh official original is still a repaired zero-page PDF. No new clean or authoritative replacement path is demonstrated; do not salvage or assign an uncertain disposition.",
+      "source_receipt": {
+        "id": "src-48c77cfd3533626b",
+        "url": "https://www.cabq.gov/municipaldevelopment/documents/mountain-road-bike-blvd-crossing-at-san-pedro-drive.pdf",
+        "http_status": 200,
+        "final_url": "https://www.cabq.gov/municipaldevelopment/documents/mountain-road-bike-blvd-crossing-at-san-pedro-drive.pdf",
+        "content_type": "application/pdf",
+        "size_bytes": 36723,
+        "sha256": "96751722265c0047383d32c3aae4526b5cb90587d6fbb2539e7282bcea4bc3a2",
+        "retrieved_at": "2026-09-26T20:49:57.328278+00:00",
+        "saved_source": "research/staging/ordinary-review-large-2026-09-26-third/src-48c77cfd3533626b-current-source.bin",
+        "pages": 0,
+        "needs_password": 0,
+        "is_repaired": true
+      },
+      "historical_evidence_preserved": true,
+      "inventory_unchanged": true
+    },
+    {
+      "id": "src-2f89e1bc040e1d33",
+      "attempted_at": "2026-09-26T21:05:49.232884+00:00",
+      "review_authorized": false,
+      "outcome": "source_or_structural_blocker_preserved",
+      "reason": "Owner-retrieved 321-page McDuffie original remains exact saved bytes, but a fresh official share GET yields only a 1344-byte JavaScript shell. Attempted browser discovery reports no available apps or browsers; independent repeat retrieval/provenance cannot be established in this environment. Preserve original and owner chain; no upload.",
+      "source_receipt": {
+        "id": "src-2f89e1bc040e1d33",
+        "url": "https://sfftp.cabq.gov/f/cf8779d97e34c92c",
+        "http_status": 200,
+        "final_url": "https://sfftp.cabq.gov/f/cf8779d97e34c92c",
+        "content_type": "text/html",
+        "size_bytes": 1344,
+        "sha256": "148ebbd4cfd41b830a8f0d1912a7475efffbf78a7c7638f9b1691266dfeeb657",
+        "retrieved_at": "2026-09-26T20:49:57.572782+00:00",
+        "saved_source": "research/staging/ordinary-review-large-2026-09-26-third/src-2f89e1bc040e1d33-current-source.bin",
+        "links": [],
+        "title": "",
+        "text_excerpt": "               \n          :root {\n            --background: 0 0% 100%;\n            --foreground: 0 17% 8%;\n            --secondary: 0 12% 95%;\n            --text-primary: #131111;\n          }\n            -->    \n    \n    \n  \n    "
+      },
+      "historical_evidence_preserved": true,
+      "inventory_unchanged": true,
+      "owner_original_remeasurement": {
+        "local_path": "research/staging/document-review/COA Final McDuffie_Traffic Calming Study 052024.pdf",
+        "size_bytes": 11940327,
+        "sha256": "48b6d8d5f91290f55a56b22398aa754e5696378e69e0693ecc9914cd285fee15"
+      },
+      "browser_inventory": "cua.getState returned apps=[] browsers=[] on 2026-09-26"
+    },
+    {
+      "id": "src-e63d4ebb9302ec96",
+      "attempted_at": "2026-09-26T21:05:49.232892+00:00",
+      "review_authorized": false,
+      "outcome": "source_or_structural_blocker_preserved",
+      "reason": "Original MRCOG annual-report URL now redirects to https://www.wccnm.org/wccnm-board/ with no annual-report link. Saved preparation never retrieved an original, so there is no deterministic report identity or replacement path. Do not treat unrelated redirect as the annual report.",
+      "source_receipt": {
+        "id": "src-e63d4ebb9302ec96",
+        "url": "https://www.mrcog-nm.gov/536/Annual-Report",
+        "http_status": 200,
+        "final_url": "https://www.wccnm.org/wccnm-board/",
+        "content_type": "text/html; charset=UTF-8",
+        "size_bytes": 142424,
+        "sha256": "6d42f4d077ab8ad642f2c9dac0bfd18a0c76693419bf6b01be4d3b9825c23c62",
+        "retrieved_at": "2026-09-26T20:50:00.314471+00:00",
+        "saved_source": "research/staging/ordinary-review-large-2026-09-26-third/src-e63d4ebb9302ec96-current-source.bin",
+        "links": [
+          {
+            "url": "https://www.wccnm.org",
+            "label": "Home"
+          },
+          {
+            "url": "https://www.wccnm.org/wccnm-board/#",
+            "label": ""
+          },
+          {
+            "url": "https://omny.fm/shows/weekend-magazine-1/local-workforce-board#sharing",
+            "label": "Listen to the full interview HERE"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/sbanewmexico_for-over-60-years-the-president-has-issued-activity-7318356401712447489-cwov?utm_source=share&utm_medium=member_desktop&rcm=ACoAACGYfO8BLwUC6iRyoBmqfUA-iRtsBqDMzMM",
+            "label": "Read more..."
+          },
+          {
+            "url": "https://www.abq.org/strategicplan/action/",
+            "label": "Read more..."
+          },
+          {
+            "url": "https://www.wccnm.org/wccnm-board/wccnm-board-of-directors#ceos",
+            "label": "View Bios"
+          },
+          {
+            "url": "https://www.wccnm.org/wccnm-board/wccnm-board-of-directors#boardmembers",
+            "label": "View Complete Board Member List"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2020/12/board-members-discussing-document.jpg",
+            "label": ""
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2023/03/WCCNM-Executive-Standing-Committee-Charter-DRAFT-1_1_2022.pdf",
+            "label": "View WCCNM Executive Standing Committee Charter"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2023/03/WCCNM-Disability-Standing-Committee-Charter-DRAFT-11_1_2022.pdf",
+            "label": "View WCCNM Disability Standing Committee Charter"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2023/03/WCCNM-Finance-Standing-Committee-Charter-DRAFT-11_1_2022.pdf",
+            "label": "View WCCNM Finance Standing Committee Charter"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2023/03/WCCNM-Operations-Standing-Committee-Charter-January-20231.pdf",
+            "label": "View WCCNM Operations Standing Committee Charter"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2023/03/WCCNM-Youth-Standing-Committee-Charter-DRAFT-11_1_2022.pdf",
+            "label": "View WCCNM Youth Standing Committee Charter"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2020/12/young-coworkers-in-meeting-room.jpg",
+            "label": ""
+          },
+          {
+            "url": "mailto:ngiddings@mrcog-nm.gov",
+            "label": "ngiddings@mrcog-nm.gov"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2026/07/9-23-26-WCCNM-Special-Full-Board-Agenda.pdf",
+            "label": "09/23/2026 – Special Full Board –  Agenda"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2026/07/AGENDA-Spanish-2.pdf",
+            "label": "Junta Especial Completa – Agenda"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2026/07/9-21-26-WCCNM-Executive-Standing-Committee-Agenda-ADA-1.pdf",
+            "label": "09/21/26 – Executive Standing Committee –  Agenda"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2026/07/AGENDA-Spanish-1.pdf",
+            "label": "Agenda del Comité Ejecutivo Permanente"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2026/07/AGENDA-Spanish-1.pdf",
+            "label": "21 de septiembre de 2026"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2026/07/8-17-26-WCCNM-Full-Board-Agenda-2.pdf",
+            "label": "08/17/2026 – Full Board –  Agenda"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2026/07/8-17-26-WCCNM-Full-Board-Agenda-Spanish-1.pdf",
+            "label": "Junta Directiva Completa – 17 de Agosto de 2026 (Agenda)"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2026/04/6.2-YDI-WIOA-Youth-Budget-Forms_FY27-revised-FINAL.pdf",
+            "label": "06/15/2026 – Full Board – Agenda"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2026/04/6-15-26-Agenda-Spanish-ADA.pdf",
+            "label": "Junta Directiva Completa – 15 de Junio de 2026 (Agenda)"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2026/04/6-9-26-CEO-Agenda-ADA-Reviewed-1.pdf",
+            "label": "06/09/2026 – CEO Meeting – Agenda"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2026/04/6-9-26-CEO-Agenda-Spanish-ADA-Reviewed-1.pdf",
+            "label": "Junta de los Funcionarios Electos Principales – 09 de Junio de 2026 (Agenda)"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2026/03/4-20-26-WCCNM-Full-Board-Agenda-Packet-1.pdf",
+            "label": "04/20/2026 – Full Board – Agenda Packet"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2026/03/Translated-copy-of-Agenda-Full-Board-4-20-26.pdf",
+            "label": "Junta Directiva Completa – 20 de Abril de 2026 (Agenda)"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2026/01/2-23-26-WCCNM-Full-Board-Agenda-Packet.pdf",
+            "label": "02/23/2026 – Full Board – Agenda Packet"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2026/01/Translated-copy-of-Agenda-Full-Board-2-23-26.pdf",
+            "label": "Junta Directiva Completa – 23 de Febrero de 2026 (Agenda)"
+          },
+          {
+            "url": "mailto:NGiddings@mrcog-nm.gov",
+            "label": "NGiddings@mrcog-nm.gov"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2026/04/2-23-26-Full-Board-Minutes-ADA-Web.pdf",
+            "label": "02-23-26 Full Board (Approved)"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2026/04/4-20-26-Full-Board-Minutes-ADA-Web.pdf",
+            "label": "04-20-26 Full Board (Approved)"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2026/06/6-9-26-CEO-Minutes-ADA-Web-Draft.pdf",
+            "label": "06-09-26 Chief Elected Officials (Draft)"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2026/07/6-15-26-Full-Board-Minutes-ADA-Web.pdf",
+            "label": "06-15-26 Full Board (Draft)"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2026/07/9-23-26-WCCNM-Speical-Full-Board-Meeting-Notice.pdf",
+            "label": "English"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2026/07/9-23-26-AVISO-DE-REUNION.pdf",
+            "label": "Spanish"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2020/12/outside-event.jpg",
+            "label": ""
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2024/04/GP-106-WIOA-Youth-Activities-and-Program-Eligibility-Change-3.pdf",
+            "label": "GP-106 WIOA Youth Activities and Program Eligibility Change 3"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/11/GP-107_Change_3_Requirements_and_Eligibility_for_WIOA_ADW.docx-signed.pdf",
+            "label": "GP-107 Change 3 Requirements and Eligibility for WIOA Adult and Dislocated Worker Programs"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2021/12/AP-208-Non-discrimination-and-Equal-Opportunity-Provisions-of-the-WIOA-2014-Policy-for-AE-FA-Operator-Providers-with-Attachment.pdf",
+            "label": "AP-208 Non-discrimination and Equal Opportunity Policy"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2024/01/AP-209-Firewall-Policy-change-2_11-30-22-signed.pdf",
+            "label": "AP- 209 Change 2 Firewall Policy"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2024/08/Tab-2-AP-210_Stevens-Amendment_Policy-Sep-4-2024-09_16_24-SIGNED.pdf",
+            "label": "AP-210 Stevens Amendment Policy"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2024/01/MP-301-Code-of-Conduct-Conflict-of-Interest-Policy-Change-2-with-Form-Approved-2-28-22.pdf",
+            "label": "MP-301 Code of Conduct (Conflict of Interest) Policy Change 2"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2024/01/MP-304-Change-2-Monitoring-and-Resolution-Policy-8-19-19.pdf",
+            "label": "MP-304 Change 2 Monitoring and Resolution"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2024/10/WCCNM-MP-306-Data-Validation-Policy-Change-1-signed-11.18.24.pdf",
+            "label": "MP-306 Data Validation Policy Change 1"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2021/10/OP-404-Priority-of-Service-10_04_2021-final.pdf",
+            "label": "OP-404 Change 4 Priority of Service"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2022/03/OP-406-Assessment-Policy-Reinstatement.pdf",
+            "label": "OP-406 Assessment Policy – Reinstatement"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/11/OP-410-Supportive-Service-Policy-Change-12_Nov-6-2025-FINAL-sgined.docx.pdf",
+            "label": "OP-410 Supportive Service Policy Change 12"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2021/11/OP-411-Change-5-Customized-Training-062121.pdf",
+            "label": "OP-411 Change 5 Customized Training"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2021/11/OP-412-Change-6-On-the-Job-Training-Policy-062121-1.pdf",
+            "label": "OP-412 Change 6 On-the-Job Training Policy"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2022/05/OP-416-Change-6-Follow-up-Services-Policy.pdf",
+            "label": "OP-416 Change 6 Follow-Up Services Policy"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2023/03/PY22-Change-4-OP-418-Demand-Occupation-022723-signature.pdf",
+            "label": "OP – 418 Operational Policy In-Demand Occupations"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2023/11/OP-419-ITA-Policy-Change-9.pdf",
+            "label": "OP-419 Change 9 ITA Policy"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2024/10/OP-422A-Change-1-Participation-and-Co-Enrollment-9-25-23-Signed.docx.pdf",
+            "label": "OP-422A Change 1 Participation and Co-Enrollment"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2024/10/WCCNM-OP-423-ETPL-Policy-change-2-signed-11-18-24.pdf",
+            "label": "OP-423 ETPL Policy change 2"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2021/11/OP-424-Individual-Career-Services-Policy-10_04_2021-2.pdf",
+            "label": "OP-424 Change 2 Individual Career Services Policy"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/04/OP-426-Participant-File-Policy-Change-2-signed.pdf",
+            "label": "OP-426 Participant File Policy – Change 2"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2023/10/PY22-Change-2-OP-427-Parameters-for-Utilization-of-Unrestricted-Non-WIOA-Funds-06_05_2022-signed.pdf",
+            "label": "OP-427 Parameters for Utilization of Unrestricted-Non-WIOA Funds Change 2"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2021/11/OP-428-Definition-of-Additional-Assistance-Barrier-for-Youth-Eligibility-10_04_2021.pdf",
+            "label": "OP-428 Definition of Additional Assistance Barrier for Youth Eligibility"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2021/11/OP-429-WIOA-Performance-Measures.pdf",
+            "label": "OP-429 WIOA Performance Measures"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2024/04/OP-430-Self-Suffiency-Policy-Change-3-Final-w-Signature.pdf",
+            "label": "OP-430 Self-Suffiency Policy Change 3"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2021/11/OP-431-One-Stop-Certification-Guidance-051517.pdf",
+            "label": "OP-431 One-Stop Certification Policy"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2021/11/OP-432-Personally-Indentifiable-Information-Policy-070117.pdf",
+            "label": "OP-432 Personally Indentifiable Information Policy"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2021/11/OP-433-Incumbent-Worker-Training-Change-2-062121-1.pdf",
+            "label": "OP-433 Change 2 Incumbent Worker Training"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2024/04/OP-434-One-Stop-Operator-Policy-New-12-10-18-signed.pdf",
+            "label": "OP-434 One-Stop Operator Policy"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/11/Change_4_-_Work_Experience_-_Intership_Policy_-_Adult_Dislocated_Worker.docx-signed.pdf",
+            "label": "OP-435 Work Experience- Internship Policy- Adult, Dislocated Worker & Youth Change 4"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2021/11/OP-436-Assistance-Services-to-Wage-Claimants-10_04_2021-1.pdf",
+            "label": "OP-436 Assistance Services to Wage Claimants"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2021/11/OP-437-Supplemental-Wage-Data-Policy-10_04_2021.pdf",
+            "label": "OP-437 Supplemental Wage Data Policy"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2021/11/OP-438-Work-Experience-Transitional-Jobs-Policy-10_04_2021-1.pdf",
+            "label": "OP-438 Work Experience – Transitional Jobs Policy"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2021/11/OP-439-Electronic-Signature-Policy-10_04_2021.pdf",
+            "label": "OP-439 Electronic Signature Policy"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2024/05/OP-441-14-Elements-Policy-Change-1-Approved-02-28-22.pdf",
+            "label": "OP- 441 14 Elements Policy, Change 1"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2022/03/Referral-Policy-OP-442-022822.pdf",
+            "label": "OP-442 Referral Policy"
+          },
+          {
+            "url": "mailto:trowland@mrcog-nm.gov",
+            "label": "trowland@mrcog-nm.gov"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2020/12/friendly-discussion.jpg",
+            "label": ""
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2026/07/WCCNM-WIOA-2024-2027-2-Year-Plan-Modification-DRAFT.pdf",
+            "label": "WCCNM WIOA 2024-2027 2 Year Plan Modification-DRAFT"
+          },
+          {
+            "url": "mailto:trowland@mrcog-nm.gov",
+            "label": "trowland@mrcog-nm.gov"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/10/WCCNM-Monthly-Briefing-December-2025.pdf",
+            "label": "December 2025"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/10/WCCNM-Monthly-Briefing-November-2025.pdf",
+            "label": "November 2025"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/10/WCCNM-Monthly-Briefing-OCT-2025.pdf",
+            "label": "October 2025"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/10/Monthly-Briefing-Report-September-2025.pdf",
+            "label": "September 2025"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/08/Monthly-Briefing-Report-August-2025.pdf",
+            "label": "August 2025"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/06/Monthly-Briefing-Report-July-2025.pdf",
+            "label": "July 2025"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/05/Monthly-Briefing-Report-June.pdf",
+            "label": "June 2025"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/04/Monthly-Briefing-Report-May-2025.pdf",
+            "label": "May 2025"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/02/Monthly-Briefing-Report-April-2025.pdf",
+            "label": "April 2025"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/04/Monthly-Briefing-Report-May-2025.pdf",
+            "label": "May 2025"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/02/Monthly-Briefing-Report-April-2025.pdf",
+            "label": "April 2025"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/04/Monthly-Briefing-Report-March-2025.pdf",
+            "label": "March 2025"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/01/Monthly-Briefing-Report-February-2025-1.pdf",
+            "label": "February 2025"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/01/WCCNM-Monthly-Briefing-Jan-2025-3.pdf",
+            "label": "January 2025"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/02/Full-Board-Monthly-Newsletter-Dec-2023.pdf",
+            "label": "December 2024"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/02/WCCNM-Monthly-Briefing-Nov-2024-1.pdf",
+            "label": "November 2024"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/02/WCCNM-Monthly-Briefing-Oct-2024-1.pdf",
+            "label": "October 2024"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/02/WCCNM-Monthly-Briefing-Sep-2024.pdf",
+            "label": "September 2024"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/02/WCCNM-monthly-briefing-August-2024-1.pdf",
+            "label": "August 2024"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2025/02/WCCNM-monthly-briefing-July-2024-1.pdf",
+            "label": "July 2024"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2021/02/WIOA-Guide-for-LWDBs-and-CEOs-compressed.pdf",
+            "label": "Reference Material: WIOA Guide for Local Workforce Development Boards and Chief Elected Officials"
+          },
+          {
+            "url": "https://www.doleta.gov/wioa/",
+            "label": "The Workforce Innovation and Opportunity Act (WIOA)"
+          },
+          {
+            "url": "mailto:trowland@mrcog-nm.gov",
+            "label": "trowland@mrcog-nm.gov"
+          },
+          {
+            "url": "https://www.wccnm.org/wp-content/uploads/2020/12/typing-on-laptop.jpg",
+            "label": ""
+          },
+          {
+            "url": "https://app.powerbi.com/view?r=eyJrIjoiZjBjMDQ2YmQtYzk3NS00ODJiLWFjYjYtZDU1MjhlNzVkOWFiIiwidCI6IjJjYzcyNjZjLWFmZWUtNGNhNy1iNWUxLWY3MmUxZDc5ZDIxMyIsImMiOjZ9&pageName=6c0328ec5a02f45f7251",
+            "label": "EMBED"
+          },
+          {
+            "url": "https://www.facebook.com/nmworkforce/",
+            "label": "Follow"
+          },
+          {
+            "url": "https://twitter.com/nmworkforce",
+            "label": "Follow"
+          },
+          {
+            "url": "https://www.instagram.com/nmworkforce/?hl=en",
+            "label": "Follow"
+          },
+          {
+            "url": "https://www.youtube.com/channel/UCfB_nNMs_l7xdHVnpHLRYow",
+            "label": "Follow"
+          },
+          {
+            "url": "https://www.tiktok.com/@nmworkforce?",
+            "label": "Follow"
+          },
+          {
+            "url": "https://www.wccnm.org/",
+            "label": ""
+          },
+          {
+            "url": "https://www.wccnm.org/",
+            "label": ""
+          },
+          {
+            "url": "mailto:NMWorkforceConnection@wccnm.org%20",
+            "label": ""
+          },
+          {
+            "url": "mailto:NMWorkforceConnection@wccnm.org%20",
+            "label": "Email Us"
+          },
+          {
+            "url": "https://www.wccnm.org/individuals/contact/",
+            "label": ""
+          },
+          {
+            "url": "https://www.wccnm.org/individuals/contact/",
+            "label": "Find the nearest center"
+          },
+          {
+            "url": "https://www.wccnm.org/individuals/job-fairs-events/",
+            "label": ""
+          },
+          {
+            "url": "https://www.wccnm.org/accessibility/",
+            "label": "Accessibility"
+          },
+          {
+            "url": "https://www.wccnm.org/privacy-policy-2/",
+            "label": "Privacy Policy"
+          },
+          {
+            "url": "https://www.wccnm.org/social-media-commenting-policy/",
+            "label": "Social Media Comment Policy"
+          },
+          {
+            "url": "https://www.wccnm.org/",
+            "label": "Home"
+          },
+          {
+            "url": "https://www.wccnm.org/individuals/job-fairs-events/",
+            "label": "Job Fairs & Events"
+          },
+          {
+            "url": "https://www.wccnm.org/wccnm-board/",
+            "label": "WCCNM Board"
+          },
+          {
+            "url": "https://www.wccnm.org/wccnm-partners/",
+            "label": "WCCNM Partners"
+          },
+          {
+            "url": "https://www.wccnm.org/individuals/about-us/",
+            "label": "About Us"
+          },
+          {
+            "url": "https://www.wccnm.org/jumpstart-your-career-video-series/",
+            "label": "Jumpstart Your Career Video Series"
+          },
+          {
+            "url": "https://www.wccnm.org/individuals/faq/",
+            "label": "FAQ"
+          },
+          {
+            "url": "https://www.wccnm.org/individuals/job-fairs-events/",
+            "label": "Job Fairs & Events"
+          },
+          {
+            "url": "https://www.wccnm.org/individuals/resources/",
+            "label": "Resources"
+          },
+          {
+            "url": "https://www.wccnm.org/individuals/about-us/",
+            "label": "About Us"
+          },
+          {
+            "url": "https://www.wccnm.org/individuals/contact/",
+            "label": "Contact"
+          },
+          {
+            "url": "https://www.wccnm.org/employers/",
+            "label": "Home"
+          },
+          {
+            "url": "https://www.wccnm.org/employers/about-us/",
+            "label": "About Us"
+          },
+          {
+            "url": "https://www.wccnm.org/employers/request-services/",
+            "label": "Request Services"
+          },
+          {
+            "url": "https://www.wccnm.org/employers/contact/",
+            "label": "Contact"
+          },
+          {
+            "url": "https://www.wccnm.org/funding",
+            "label": "https://www.wccnm.org/funding"
+          },
+          {
+            "url": "http://www.rtsolutions.com",
+            "label": "Real Time Solutions"
+          },
+          {
+            "url": "http://www.rtsolutions.com/realsites",
+            "label": "Website Design"
+          },
+          {
+            "url": "http://www.rtsolutions.com/realfile",
+            "label": "Document Management"
+          }
+        ],
+        "title": "WCCNM Board - Workforce Connection of Central New Mexico",
+        "text_excerpt": "se-ranch-vre\\/\",\"target\":\"_blank\"},{\"class\":\"et_pb_blurb_0_tb_footer\",\"url\":\"mailto:NMWorkforceConnection@wccnm.org%20\",\"target\":\"_blank\"},{\"class\":\"et_pb_blurb_1_tb_footer\",\"url\":\"https:\\/\\/www.wccnm.org\\/individuals\\/contact\\/\",\"target\":\"_self\"},{\"class\":\"et_pb_blurb_2_tb_footer\",\"url\":\"https:\\/\\/www.wccnm.org\\/\",\"target\":\"_self\"},{\"class\":\"et_pb_blurb_3_tb_footer\",\"url\":\"\\/individuals\\/job-fairs-events\\/\",\"target\":\"_self\"},{\"class\":\"et_pb_blurb_4_tb_footer\",\"url\":\"https:\\/\\/www.wccnm.org\\/\",\"target\":\"_self\"},{\"class\":\"et_pb_blurb_5_tb_footer\",\"url\":\"https:\\/\\/www.wccnm.org\\/individuals\\/\",\"target\":\"_self\"},{\"class\":\"et_pb_blurb_6_tb_footer\",\"url\":\"https:\\/\\/www.wccnm.org\\/employers\\/\",\"target\":\"_self\"}];\n\t\t\t \n\t         \r\n            window.dFlipLocation = 'https://www.wccnm.org/wp-content/plugins/3d-flipbook-dflip-lite/assets/';\r\n            window.dFlipWPGlobal = {\"text\":{\"toggleSound\":\"Turn on\\/off Sound\",\"toggleThumbnails\":\"Toggle Thumbnails\",\"toggleOutline\":\"Toggle Outline\\/Bookmark\",\"previousPage\":\"Previous Page\",\"nextPage\":\"Next Page\",\"toggleFullscreen\":\"Toggle Fullscreen\",\"zoomIn\":\"Zoom In\",\"zoomOut\":\"Zoom Out\",\"toggleHelp\":\"Toggle Help\",\"singlePageMode\":\"Single Page Mode\",\"doublePageMode\":\"Double Page Mode\",\"downloadPDFFile\":\"Download PDF File\",\"gotoFirstPage\":\"Goto First Page\",\"gotoLastPage\":\"Goto Last Page\",\"share\":\"Share\",\"mailSubject\":\"I wanted you to see this FlipBook\",\"mailBody\":\"Check out this site {{url}}\",\"loading\":\"DearFlip: Loading \"},\"viewerType\":\"flipbook\",\"moreControls\":\"download,pageMode,startPage,endPage,sound\",\"hideControls\":\"\",\"scrollWheel\":\"false\",\"backgroundColor\":\"#777\",\"backgroundImage\":\"\",\"height\":\"auto\",\"paddingLeft\":\"20\",\"paddingRight\":\"20\",\"controlsPosition\":\"bottom\",\"duration\":800,\"soundEnable\":\"true\",\"enableDownload\":\"true\",\"showSearchControl\":\"false\",\"showPrintControl\":\"false\",\"enableAnnotation\":false,\"enableAnalytics\":\"false\",\"webgl\":\"true\",\"hard\":\"none\",\"maxTextureSize\":\"1600\",\"rangeChunkSize\":\"524288\",\"zoomRatio\":1.5,\"stiffness\":3,\"pageMode\":\"0\",\"singlePageMode\":\"0\",\"pageSize\":\"0\",\"autoPlay\":\"false\",\"autoPlayDuration\":5000,\"autoPlayStart\":\"false\",\"linkTarget\":\"2\",\"sharePrefix\":\"flipbook-\"};\r\n         \r\n       \njQuery.uiBackCompat = true;\n//# sourceURL=jquery-ui-core-js-before\n \n  \n  \n \njQuery(function(jQuery){jQuery.datepicker.setDefaults({\"closeText\":\"Close\",\"currentText\":\"Today\",\"monthNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\"],\"monthNamesShort\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\"],\"nextText\":\"Next\",\"prevText\":\"Previous\",\"dayNames\":[\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"],\"dayNamesShort\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"],\"dayNamesMin\":[\"S\",\"M\",\"T\",\"W\",\"T\",\"F\",\"S\"],\"dateFormat\":\"MM d, yy\",\"firstDay\":1,\"isRTL\":false});});\n//# sourceURL=jquery-ui-datepicker-js-after\n \n  \n  \n  \n  \n  \n  \n  \n \nvar mecdata = {\"day\":\"day\",\"days\":\"days\",\"hour\":\"hour\",\"hours\":\"hours\",\"minute\":\"minute\",\"minutes\":\"minutes\",\"second\":\"second\",\"seconds\":\"seconds\",\"next\":\"Next\",\"prev\":\"Prev\",\"elementor_edit_mode\":\"no\",\"recapcha_key\":\"MoominTroll!7056\",\"ajax_url\":\"https://www.wccnm.org/wp-admin/admin-ajax.php\",\"fes_nonce\":\"9531866e1f\",\"fes_thankyou_page_time\":\"2000\",\"fes_upload_nonce\":\"c8668d4a93\",\"current_year\":\"2026\",\"current_month\":\"09\",\"datepicker_format\":\"yy-mm-dd&Y-m-d\",\"sf_update_url\":\"0\",\"a11y_search_results\":\"Search updated. %1$s events found%2$s.\",\"a11y_search_result\":\"Search updated. %1$s event found%2$s.\",\"a11y_search_query\":\" for \\\"%s\\\"\",\"a11y_search_address\":\" near \\\"%s\\\"\",\"a11y_calendar_dialog\":\"Calendar date picker\"};\nvar mecdata = {\"day\":\"day\",\"days\":\"days\",\"hour\":\"hour\",\"hours\":\"hours\",\"minute\":\"minute\",\"minutes\":\"minutes\",\"second\":\"second\",\"seconds\":\"seconds\",\"next\":\"Next\",\"prev\":\"Prev\",\"elementor_edit_mode\":\"no\",\"recapcha_key\":\"MoominTroll!7056\",\"ajax_url\":\"https://www.wccnm.org/wp-admin/admin-ajax.php\",\"fes_nonce\":\"9531866e1f\",\"fes_thankyou_page_time\":\"2000\",\"fes_upload_nonce\":\"c8668d4a93\",\"current_year\":\"2026\",\"current_month\":\"09\",\"datepicker_format\":\"yy-mm-dd&Y-m-d\",\"sf_update_url\":\"0\",\"a11y_search_results\":\"Search updated. %1$s events found%2$s.\",\"a11y_search_result\":\"Search updated. %1$s event found%2$s.\",\"a11y_search_query\":\" for \\\"%s\\\"\",\"a11y_search_address\":\" near \\\"%s\\\"\",\"a11y_calendar_dialog\":\"Calendar date picker\",\"interval_units\":{\"daily\":\"days\",\"weekly\":\"weeks\",\"monthly\":\"months\",\"yearly\":\"years\"}};\n//# sourceURL=mec-frontend-script-js-extra\n \n  \n  \n  \n  \n  \n  \n  \n  \n \nvar pac_da_objj = {\"keyboardOutlineColor\":\"#E1271A\"};\n//# sourceURL=pac-da-keyboard-navigation-outline-js-extra\n \n  \n \nvar pacDaAccessibilityASLabels = {\"wide_header\":\"Wide Header\",\"comments\":\"Comments\",\"do_not_use\":\"Do not use\"};\n//# sourceURL=pac-da-aria-Support-desktop-js-extra\n \n  \n  \n \nvar pacDaAccessibilityALabels = {\"click_to_move_to_previous_slide\":\"Click to move to previous slide\",\"click_to_move_to_next_slide\":\"Click to move to next slide\",\"visit_our\":\"Visit our\",\"page\":\"page\",\"read_more_about\":\"Read more about\",\"video_play_button\":\"Video play button\",\"input_search_label\":\"Open Site Search\",\"search_form\":\"Search form\",\"menu_search_form\":\"Menu search form\",\"button_to_close_search_menu\":\"Button to close search in menu\",\"open_and_close_mobile_menu\":\"Open and close mobile menu\",\"audio_player\":\"Audio player\",\"by\":\"by\",\"of\":\"of\",\"back_to_top\":\"Back to top\"};\n//# sourceURL=pac-da-aria-label-js-extra\n \n  \n  \n  \n  \n  \n \nvar DIVI = {\"item_count\":\"%d Item\",\"items_count\":\"%d Items\"};\nvar et_builder_utils_params = {\"condition\":{\"diviTheme\":true,\"extraTheme\":false},\"scrollLocations\":[\"app\",\"top\"],\"builderScrollLocations\":{\"desktop\":\"app\",\"tablet\":\"app\",\"phone\":\"app\"},\"onloadScrollLocation\":\"app\",\"builderType\":\"fe\"};\nvar et_frontend_scripts = {\"builderCssContainerPrefix\":\"#et-boc\",\"builderCssLayoutPrefix\":\"#et-boc .et-l\"};\nvar et_pb_custom = {\"ajaxurl\":\"https://www.wccnm.org/wp-admin/admin-ajax.php\",\"images_uri\":\"https://www.wccnm.org/wp-content/themes/Divi/images\",\"builder_images_uri\":\"https://www.wccnm.org/wp-content/themes/Divi/includes/builder/images\",\"et_frontend_nonce\":\"0c0bf74775\",\"subscription_failed\":\"Please, check the fields below to make sure you entered the correct information.\",\"et_ab_log_nonce\":\"8b78a56d23\",\"fill_message\":\"Please, fill in the following fields:\",\"contact_error_message\":\"Please, fix the following errors:\",\"invalid\":\"Invalid email\",\"captcha\":\"Captcha\",\"prev\":\"Prev\",\"previous\":\"Previous\",\"next\":\"Next\",\"wrong_captcha\":\"You entered the wrong number in captcha.\",\"wrong_checkbox\":\"Checkbox\",\"ignore_waypoints\":\"no\",\"is_divi_theme_used\":\"1\",\"widget_search_selector\":\".widget_search\",\"ab_tests\":[],\"is_ab_testing_active\":\"\",\"page_id\":\"2200\",\"unique_test_id\":\"\",\"ab_bounce_rate\":\"5\",\"is_cache_plugin_active\":\"no\",\"is_shortcode_tracking\":\"\",\"tinymce_uri\":\"https://www.wccnm.org/wp-content/themes/Divi/includes/builder/frontend-builder/assets/vendors\",\"accent_color\":\"#577399\",\"waypoints_options\":[]};\nvar et_pb_box_shadow_elements = [];\n//# sourceURL=divi-custom-script-js-extra\n \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n \njQuery(document).ready(function($) {\n                    $(\"img\").mouseenter(function() {\n                        let $pac_da_title = $(this).attr(\"title\");\n                        $(this).attr(\"pac_da_title\", $pac_da_title);\n                        $(this).attr(\"title\", \"\");\n                    }).mouseleave(function() {\n                        let $pac_da_title = $(this).attr(\"pac_da_title\");\n                        $(this).attr(\"title\", $pac_da_title);\n                        $(this).removeAttr(\"pac_da_title\");\n                    });\n                });\n                \n//# sourceURL=pac-da-js-after\n \n \nvar mejsL10n = {\"language\":\"en\",\"strings\":{\"mejs.download-file\":\"Download File\",\"mejs.install-flash\":\"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https://get.adobe.com/flashplayer/\",\"mejs.fullscreen\":\"Fullscreen\",\"mejs.play\":\"Play\",\"mejs.pause\":\"Pause\",\"mejs.time-slider\":\"Time Slider\",\"mejs.time-help-text\":\"Use Left/Right Arrow keys to advance one second, Up/Down arrows to advance ten seconds.\",\"mejs.live-broadcast\":\"Live Broadcast\",\"mejs.volume-help-text\":\"Use Up/Down Arrow keys to increase or decrease volume.\",\"mejs.unmute\":\"Unmute\",\"mejs.mute\":\"Mute\",\"mejs.volume-slider\":\"Volume Slider\",\"mejs.video-player\":\"Video Player\",\"mejs.audio-player\":\"Audio Player\",\"mejs.captions-subtitles\":\"Captions/Subtitles\",\"mejs.captions-chapters\":\"Chapters\",\"mejs.none\":\"None\",\"mejs.afrikaans\":\"Afrikaans\",\"mejs.albanian\":\"Albanian\",\"mejs.arabic\":\"Arabic\",\"mejs.belarusian\":\"Belarusian\",\"mejs.bulgarian\":\"Bulgarian\",\"mejs.catalan\":\"Catalan\",\"mejs.chinese\":\"Chinese\",\"mejs.chinese-simplified\":\"Chinese (Simplified)\",\"mejs.chinese-traditional\":\"Chinese (Traditional)\",\"mejs.croatian\":\"Croatian\",\"mejs.czech\":\"Czech\",\"mejs.danish\":\"Danish\",\"mejs.dutch\":\"Dutch\",\"mejs.english\":\"English\",\"mejs.estonian\":\"Estonian\",\"mejs.filipino\":\"Filipino\",\"mejs.finnish\":\"Finnish\",\"mejs.french\":\"French\",\"mejs.galician\":\"Galician\",\"mejs.german\":\"German\",\"mejs.greek\":\"Greek\",\"mejs.haitian-creole\":\"Haitian Creole\",\"mejs.hebrew\":\"Hebrew\",\"mejs.hindi\":\"Hindi\",\"mejs.hungarian\":\"Hungarian\",\"mejs.icelandic\":\"Icelandic\",\"mejs.indonesian\":\"Indonesian\",\"mejs.irish\":\"Irish\",\"mejs.italian\":\"Italian\",\"mejs.japanese\":\"Japanese\",\"mejs.korean\":\"Korean\",\"mejs.latvian\":\"Latvian\",\"mejs.lithuanian\":\"Lithuanian\",\"mejs.macedonian\":\"Macedonian\",\"mejs.malay\":\"Malay\",\"mejs.maltese\":\"Maltese\",\"mejs.norwegian\":\"Norwegian\",\"mejs.persian\":\"Persian\",\"mejs.polish\":\"Polish\",\"mejs.portuguese\":\"Portuguese\",\"mejs.romanian\":\"Romanian\",\"mejs.russian\":\"Russian\",\"mejs.serbian\":\"Serbian\",\"mejs.slovak\":\"Slovak\",\"mejs.slovenian\":\"Slovenian\",\"mejs.spanish\":\"Spanish\",\"mejs.swahili\":\"Swahili\",\"mejs.swedish\":\"Swedish\",\"mejs.tagalog\":\"Tagalog\",\"mejs.thai\":\"Thai\",\"mejs.turkish\":\"Turkish\",\"mejs.ukrainian\":\"Ukrainian\",\"mejs.vietnamese\":\"Vietnamese\",\"mejs.welsh\":\"Welsh\",\"mejs.yiddish\":\"Yiddish\"}};\n//# sourceURL=mediaelement-core-js-before\n \n  \n  \n \nvar _wpmejsSettings = {\"pluginPath\":\"/wp-includes/js/mediaelement/\",\"classPrefix\":\"mejs-\",\"stretching\":\"responsive\",\"audioShortcodeLibrary\":\"mediaelement\",\"videoShortcodeLibrary\":\"mediaelement\"};\n//# sourceURL=mediaelement-js-extra\n \n  \n \nvar et_pb_motion_elements = {\"desktop\":[],\"tablet\":[],\"phone\":[]};\n//# sourceURL=et-builder-modules-script-motion-js-extra\n \n  \n \nvar et_pb_sticky_elements = {\"et_pb_gallery_0\":{\"id\":\"et_pb_gallery_0\",\"selector\":\".et_pb_gallery_0\",\"position\":\"top\",\"topOffset\":\"0px\",\"bottomOffset\":\"0px\",\"topLimit\":\"none\",\"bottomLimit\":\"column\",\"offsetSurrounding\":\"on\",\"transition\":\"on\",\"styles\":{\"module_alignment\":{\"desktop\":\"\",\"tablet\":\"\",\"phone\":\"\"}}},\"et_pb_gallery_1\":{\"id\":\"et_pb_gallery_1\",\"selector\":\".et_pb_gallery_1\",\"position\":\"top\",\"topOffset\":\"0px\",\"bottomOffset\":\"0px\",\"topLimit\":\"none\",\"bottomLimit\":\"column\",\"offsetSurrounding\":\"on\",\"transition\":\"on\",\"styles\":{\"module_alignment\":{\"desktop\":\"\",\"tablet\":\"\",\"phone\":\"\"}}},\"et_pb_gallery_2\":{\"id\":\"et_pb_gallery_2\",\"selector\":\".et_pb_gallery_2\",\"position\":\"top\",\"topOffset\":\"0px\",\"bottomOffset\":\"0px\",\"topLimit\":\"none\",\"bottomLimit\":\"column\",\"offsetSurrounding\":\"on\",\"transition\":\"on\",\"styles\":{\"module_alignment\":{\"desktop\":\"\",\"tablet\":\"\",\"phone\":\"\"}}},\"et_pb_gallery_3\":{\"id\":\"et_pb_gallery_3\",\"selector\":\".et_pb_gallery_3\",\"position\":\"top\",\"topOffset\":\"0px\",\"bottomOffset\":\"0px\",\"topLimit\":\"none\",\"bottomLimit\":\"column\",\"offsetSurrounding\":\"on\",\"transition\":\"on\",\"styles\":{\"module_alignment\":{\"desktop\":\"\",\"tablet\":\"\",\"phone\":\"\"}}},\"et_pb_gallery_4\":{\"id\":\"et_pb_gallery_4\",\"selector\":\".et_pb_gallery_4\",\"position\":\"top\",\"topOffset\":\"0px\",\"bottomOffset\":\"0px\",\"topLimit\":\"none\",\"bottomLimit\":\"column\",\"offsetSurrounding\":\"on\",\"transition\":\"on\",\"styles\":{\"module_alignment\":{\"desktop\":\"\",\"tablet\":\"\",\"phone\":\"\"}}}};\n//# sourceURL=et-builder-modules-script-sticky-js-extra\n \n  \n \n{\"baseUrl\":\"https://s.w.org/images/core/emoji/17.0.2/72x72/\",\"ext\":\".png\",\"svgUrl\":\"https://s.w.org/images/core/emoji/17.0.2/svg/\",\"svgExt\":\".svg\",\"source\":{\"concatemoji\":\"https://www.wccnm.org/wp-includes/js/wp-emoji-release.min.js?ver=7.1.2\"}}\n \n \n/*! This file is auto-generated */\nvar e=\"script#wp-emoji-settings\",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error(\"Element missing: \"+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,\"wpEmojiSettingsSupports\"),o=[\"flag\",\"emoji\"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e {o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement(\"script\");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if(\"object\"==typeof e&&\"number\"==typeof e.timestamp&&(new Date).valueOf() {i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],\"flag\"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});\n//# sourceURL=https://www.wccnm.org/wp-includes/js/wp-emoji-loader.min.js\n \n\t\n\t \n \n"
+      },
+      "historical_evidence_preserved": true,
+      "inventory_unchanged": true
+    }
+  ],
+  "integration": {},
+  "visitor_visible_content_changed": false,
+  "governing_artifact_hashes": {
+    "AGENTS.md": "1f907734d06164845a1c790bc8f49fb41daab8495c881b19aadf8bcf166cdf5c",
+    "project-state/campaign-workflow.md": "9fa96ea80497631a4657742df4a382e90b58dbfe733ad05459f0a4e745ae7e6f",
+    "project-state/campaign-profiles/ordinary-review-large.json": "460bfd1ebd7504e5f4ea9a9a1ce374fa080eb3ae063924a081ec0aa2aa57d1b8",
+    "project-state/r2-storage-policy.json": "519e20d7a90fac93f7cfddacc35168ea9e5eaf822f2d86d5480122ee4639dac5"
+  },
+  "last_checkpoint_at": "2026-09-26T21:16:38.356067+00:00",
+  "latest_r2": {
+    "object_count": 1585,
+    "total_bytes": 10289088859,
+    "headroom_bytes": 2710911141
+  },
+  "review_completed_at": "2026-09-26T21:16:38.239595+00:00",
+  "accounting": {
+    "resolved_records": 79,
+    "outcomes": {
+      "excluded": 61,
+      "duplicate": 6,
+      "approved for addition": 6,
+      "superseded": 6
+    },
+    "archive_objects_added": 75,
+    "archive_bytes_added": 289119546,
+    "prior_approved_archives": 69,
+    "newly_approved_archives": 6,
+    "existing_source_blockers": 3,
+    "unresolved_live_service_prerequisites": 9,
+    "currently_actionable_ungated_pending": 0,
+    "new_human_review_cases": 0,
+    "new_scope_borderlines": 0
+  },
+  "archive_deferrals": [
+    {
+      "id": "src-1f9cf39555e7be6f",
+      "reason": "Object exceeds 150000000-byte campaign authorization",
+      "size_bytes": 280024902,
+      "preparation_complete": true,
+      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/approved-ordinary-second-large-campaign-family-287-2026-09-26.json",
+      "title": "Albuquerque Sustainable Airport Master Plan",
+      "prepared_key": "public-works/city-facilities/source-1f9cf395-albuquerque-sustainable-airport-master-plan.pdf"
+    }
+  ],
+  "final_live_listing_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/r2-final.json",
+  "next_queue_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/next-ordinary-queue.json",
+  "final_inventory_counts": {
+    "pending review": 333,
+    "approved for addition": 4,
+    "downloading": 0,
+    "downloaded": 0,
+    "parsed": 0,
+    "description drafted": 0,
+    "placement assigned": 344,
+    "implemented": 159,
+    "validated": 1486,
+    "excluded": 2757,
+    "duplicate": 1599,
+    "superseded": 250,
+    "blocked": 0,
+    "requires human review": 205
+  },
+  "zero_content_change": true,
+  "live_site_published": false,
+  "stop_reason": "Actionable ordinary queue exhausted; 9 concrete ungated prerequisites and 3 source/structural blockers preserved.",
+  "validation": {
+    "started_at": "2026-09-26T21:19:28.354524+00:00",
+    "completed_at": "2026-09-26T21:20:54.175086+00:00",
+    "command": [
+      "pwsh",
+      "-NoProfile",
+      "-ExecutionPolicy",
+      "Bypass",
+      "-File",
+      "scripts/project/Invoke-ProjectValidation.ps1"
+    ],
+    "exit_code": 0,
+    "git_diff_check_exit_code": 0,
+    "content_tree_unchanged": true,
+    "log_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/full-validation-002.log",
+    "log_sha256": "ece40ebe73958a8bc42ba42ae9f78375d1e712349aace77dee23f9fd6eaf8da0",
+    "state": "passed",
+    "raw_console_log_sha256": "d3e8ff277310fff132f7c5fdf59ba0022588d9f9071c8c5b5269e44909e67896",
+    "log_normalization": "UTF-8 console text; CRLF normalized to LF and trailing console whitespace removed."
+  },
+  "framework_amendments": [
+    {
+      "path": "AGENTS.md",
+      "initial_sha256": "1f907734d06164845a1c790bc8f49fb41daab8495c881b19aadf8bcf166cdf5c",
+      "current_sha256": "d68b25f6153acd023850b6de13e373544e958331e5467dcf2df9887b544e7d59",
+      "reason": "Owner-authorized framework hardening during implementation; initial governance evidence retained."
+    },
+    {
+      "path": "project-state/campaign-workflow.md",
+      "initial_sha256": "9fa96ea80497631a4657742df4a382e90b58dbfe733ad05459f0a4e745ae7e6f",
+      "current_sha256": "44c8640922348c4f82c7a48b8228501d0c846d499be1c1ec475a208400ab0f4a",
+      "reason": "Owner-authorized framework hardening during implementation; initial governance evidence retained."
+    },
+    {
+      "path": "project-state/campaign-profiles/ordinary-review-large.json",
+      "initial_sha256": "460bfd1ebd7504e5f4ea9a9a1ce374fa080eb3ae063924a081ec0aa2aa57d1b8",
+      "current_sha256": "414f2acbff185139d705e30e00c333869db12f910be3d9b43bd61ffb12e20c6c",
+      "reason": "Owner-authorized framework hardening during implementation; initial governance evidence retained."
+    }
+  ],
+  "validation_history": [
+    {
+      "started_at": "2026-09-26T21:17:22.759476+00:00",
+      "completed_at": "2026-09-26T21:18:21.524906+00:00",
+      "command": [
+        "pwsh",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "scripts/project/Invoke-ProjectValidation.ps1"
+      ],
+      "exit_code": 1,
+      "git_diff_check_exit_code": 0,
+      "content_tree_unchanged": true,
+      "log_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/full-validation.log",
+      "log_sha256": "13f9b495547d0132abbb78f0751334c1334d6ddeb7a623740753b2a988f58697",
+      "state": "failed",
+      "raw_console_log_sha256": "5fe7fa56ac5b329a6b17a674a04ae4d9a0cc8d09295b09d90cd28655417168d9",
+      "log_normalization": "UTF-8 console text; CRLF normalized to LF and trailing console whitespace removed."
+    },
+    {
+      "started_at": "2026-09-26T21:19:28.354524+00:00",
+      "completed_at": "2026-09-26T21:20:54.175086+00:00",
+      "command": [
+        "pwsh",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "scripts/project/Invoke-ProjectValidation.ps1"
+      ],
+      "exit_code": 0,
+      "git_diff_check_exit_code": 0,
+      "content_tree_unchanged": true,
+      "log_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/full-validation-002.log",
+      "log_sha256": "ece40ebe73958a8bc42ba42ae9f78375d1e712349aace77dee23f9fd6eaf8da0",
+      "state": "passed",
+      "raw_console_log_sha256": "d3e8ff277310fff132f7c5fdf59ba0022588d9f9071c8c5b5269e44909e67896",
+      "log_normalization": "UTF-8 console text; CRLF normalized to LF and trailing console whitespace removed."
+    }
+  ],
+  "external_action_journal_artifact": "project-state/campaign-runtime/ordinary-review-large-2026-09-26-third/external-action-journal.json"
+}

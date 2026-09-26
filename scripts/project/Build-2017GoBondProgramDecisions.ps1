@@ -110,7 +110,7 @@ $planItems = @($items | ForEach-Object {
   $candidate = @($inventory.candidates | Where-Object id -eq $_.id)[0]
   [ordered]@{id=$_.id;source_url=$candidate.source_url;direct_file_url=$candidate.direct_file_url;parent_url=$candidate.parent_url;agency=$candidate.agency;title=$_.title;date=$_.date;file_type=$candidate.file_type;size_bytes=[int64]$candidate.size_bytes;checksum_sha256=$candidate.checksum_sha256;r2_key=$_.key;proposed_canonical_page=$_.page;implementation_locations=@($_.locations);description=$_.description;provenance_status=$candidate.provenance_status;processing_notes=$_.note;size_warning_over_25mb=([int64]$candidate.size_bytes -gt 25MB);already_present=[bool]$existingKeys.ContainsKey($_.key)}
 })
-[ordered]@{schema_version=1;created_at=(Get-Date).ToUniversalTime().ToString('o');batch_id='2017-go-bond-program-2026-09-09';current_r2_bytes=[int64]$r2.total_bytes;maximum_object_bytes=100000000;maximum_projected_r2_bytes=10000000000;batch_bytes=$bytes;added_bytes=$bytes;projected_r2_bytes=([int64]$r2.total_bytes+$bytes);items=$planItems} | ConvertTo-Json -Depth 12 | Set-Content -LiteralPath $PlanPath -Encoding utf8
+[ordered]@{schema_version=1;created_at=(Get-Date).ToUniversalTime().ToString('o');batch_id='2017-go-bond-program-2026-09-09';current_r2_bytes=[int64]$r2.total_bytes;maximum_object_bytes=100000000;maximum_projected_r2_bytes=13000000000;batch_bytes=$bytes;added_bytes=$bytes;projected_r2_bytes=([int64]$r2.total_bytes+$bytes);items=$planItems} | ConvertTo-Json -Depth 12 | Set-Content -LiteralPath $PlanPath -Encoding utf8
 
 $duplicateDecision = [ordered]@{
   id='src-5b871c8f94c619b8'

@@ -50,7 +50,7 @@ $initialBefore=if ($prior) { $prior.before_r2 } else { [pscustomobject]@{object_
 $initialHash=if ($prior) { $prior.pre_existing_manifest_sha256 } else { Get-ManifestHash @($before.objects) }
 $priorObjects=@($before.objects | Where-Object { $_.key -cnotin $keys })
 if ((Get-ManifestHash $priorObjects) -cne $initialHash) { throw 'Initial R2 listing has an unexpected authorized key or pre-existing manifest change; reconcile before mutation.' }
-if ([int64]$initialBefore.total_bytes + $bytes -gt 10000000000) { throw 'Batch exceeds normal projected-storage limit.' }
+if ([int64]$initialBefore.total_bytes + $bytes -gt 13000000000) { throw 'Batch exceeds normal projected-storage limit.' }
 $saved=Get-Content project-state/r2-inventory.json -Raw -Encoding UTF8 | ConvertFrom-Json
 $baselineReference=[ordered]@{repository_commit='6f2f181a81e75dd95faac1c0bf2283176964824c';path='project-state/r2-inventory.json';exact_match_to_saved=(Get-ManifestHash @($saved.objects)) -ceq $initialHash}
 if (-not $baselineReference.exact_match_to_saved -and -not $prior) {
@@ -64,7 +64,7 @@ if (-not $baselineReference.exact_match_to_saved -and -not $prior) {
 $evidence=if ($prior) { $prior } else { [pscustomobject][ordered]@{
   schema_version=1;artifact_type='planning_documents_root_archive_public_byte_verification';started_at=(Get-Date).ToUniversalTime().ToString('o');state='running'
   owner_authorization='Owner explicitly authorized exactly the 12 unchanged originals and exact destination keys in the finalized 2026-09-26 preflight, followed by full public-byte verification. No content edits, overwrite, deletion, or Barelas duplicate upload authorized.'
-  manifest_path=$ManifestPath;candidate_ids=@($records.id);max_object_bytes=100000000;max_projected_storage_bytes=10000000000
+  manifest_path=$ManifestPath;candidate_ids=@($records.id);max_object_bytes=100000000;max_projected_storage_bytes=13000000000
   before_r2=$initialBefore;pre_existing_manifest_sha256=$initialHash;baseline_reference=$baselineReference
   initial_pre_upload_listing_local_path=$PreLivePath;source_guard=[ordered]@{all_12_staged_sizes_hashes_verified=$true;aggregate_bytes=$bytes;aggregate_pages=$pages;cross_inventory_same_hash_collisions=0;credentials_accessible=$true}
   excluded_barelas_duplicate=$manifest.excluded_exact_duplicate;planning_impact_area_family=$manifest.planning_impact_area_family
@@ -91,7 +91,7 @@ try {
         $evidence.upload_intents += [pscustomobject]@{id=$record.id;r2_key=$record.proposed_r2_key;started_at=(Get-Date).ToUniversalTime().ToString('o');key_was_absent=$true}
       }
       $evidence.r2_mutation=$true; Save-Evidence $evidence
-      $upload=@(& "$PSScriptRoot/../upload-r2-document.ps1" -SourcePath $record.staged_path -ObjectKey $record.proposed_r2_key -MaxObjectBytes 100000000 -MaxProjectedStorageBytes 10000000000)
+      $upload=@(& "$PSScriptRoot/../upload-r2-document.ps1" -SourcePath $record.staged_path -ObjectKey $record.proposed_r2_key -MaxObjectBytes 100000000 -MaxProjectedStorageBytes 13000000000)
       if (@($upload | Where-Object { $_.PSObject.Properties.Name -contains 'R2Metadata' }).Count -ne 1) { throw "Uploader did not return metadata: $($record.id)" }
       $action='uploaded_now'
       $public=& "$PSScriptRoot/Test-R2PublicObject.ps1" -SourcePath $record.staged_path -PublicUrl ([uri]$record.expected_public_archive_url)

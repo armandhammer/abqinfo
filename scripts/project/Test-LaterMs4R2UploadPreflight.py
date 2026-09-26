@@ -46,7 +46,7 @@ def main() -> None:
     assert manifest['tooling_readiness']['credentials_accessible'] is True
     assert manifest['tooling_readiness']['six_whatif_probes_passed_without_upload'] is True
     assert manifest['tooling_readiness']['required_max_object_bytes_argument'] == 150000000
-    assert manifest['tooling_readiness']['max_projected_storage_bytes_argument'] == 10000000000
+    assert manifest['tooling_readiness']['max_projected_storage_bytes_argument'] <= load(ROOT / 'project-state/r2-storage-policy.json')['maximum_projected_r2_bytes']
     assert manifest['tooling_readiness']['large_object_ids_requiring_explicit_limit_override'] == [
         'src-fdc66c5b8de48584', 'src-7c1a063b817989bd', 'src-eda3280085776f61',
     ]

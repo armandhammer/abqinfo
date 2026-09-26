@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "profile": "ordinary-review-large",
+  "workflow": "project-state/campaign-workflow.md",
+  "goal": "Exhaust genuinely actionable ungated ordinary pending families and archive eligible approved originals; background only.",
+  "maximum_object_bytes": 150000000,
+  "storage_policy": "project-state/r2-storage-policy.json",
+  "authorization": {
+    "authority": "Owner instruction 2026-09-26: build and execute autonomous background campaign; standing project ceiling raised to 13000000000 bytes; objects <=150000000 bytes.",
+    "local_review_and_inventory": true,
+    "eligible_original_r2_upload_and_exact_public_verification": true,
+    "background_only_integration_and_branch_reconciliation": true,
+    "protected_or_human_review_families": false,
+    "r2_delete_or_overwrite": false,
+    "visitor_visible_changes": false,
+    "scope": "An owner invocation of this exact profile authorizes its bounded effects under AGENTS.md standing authorization. Save current invocation authority and locked population; recovery retains the same authority. Saved profile/queue alone cannot launch a new campaign or authorize unrelated effects."
+  },
+  "stopping_conditions": ["No genuinely actionable ungated records remain", "20 unresolved mission-scope borderline cases", "Authorization boundary", "Unexplained R2 drift or identity collision"],
+  "checkpoint_boundaries": ["Each family", "Before every external mutation", "Immediately after every external mutation", "After public verification", "After inventory reconciliation", "Before integration and after integration"]
+}

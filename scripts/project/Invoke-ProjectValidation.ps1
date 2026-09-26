@@ -7,6 +7,10 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+if (Test-Path -LiteralPath "$PSScriptRoot/Test-BackgroundCampaign.py") {
+  & python -B "$PSScriptRoot/Test-BackgroundCampaign.py"
+  if ($LASTEXITCODE) { throw 'Durable background campaign regression failed.' }
+}
 if (Test-Path -LiteralPath "$PSScriptRoot/Test-UpdateCandidatesBatch.py") {
   & python -B "$PSScriptRoot/Test-UpdateCandidatesBatch.py"
   if ($LASTEXITCODE) { throw 'Atomic candidate batch scope regression failed.' }

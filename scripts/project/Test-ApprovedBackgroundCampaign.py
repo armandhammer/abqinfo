@@ -14,7 +14,7 @@ assert len(d['records'])==27 and len(d['generated_packages'])==7
 assert {r['id'] for r in d['records']}=={r['id'] for r in locked['records']}
 assert d['exclusions']==locked['exclusions']
 assert d['visitor_visible_content_changed'] is False
-assert d['project_storage_limit_bytes']==10000000000
+assert d['project_storage_limit_bytes']==locked['project_storage_limit_bytes']
 assert d['capacity_plan']==locked['capacity_plan']
 baseline_inventory=git_json(d['baseline_git_sha'],'project-state/master-inventory.json')
 # Preserve this completed campaign's exact historical contract. The ordinary

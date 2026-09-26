@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "family_id": "family-093",
+  "family": "dmdgis.cabq.gov/server/rest/services/Public/Road_Centerlines",
+  "scope_ids": [
+    "src-b07450551557fb04",
+    "src-fa993b171f8cad5e"
+  ],
+  "records": [
+    {
+      "id": "src-b07450551557fb04",
+      "source_qa": "saved_full_GET_container_and_content_analysis_reused",
+      "saved_evidence": {
+        "id": "src-b07450551557fb04",
+        "authoritative_url": "https://dmdgis.cabq.gov/server/rest/services/Public/Road_Centerlines/MapServer",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "HTML",
+        "leading_bytes": "3c68746d",
+        "http_status": "200",
+        "inventory_title": "Road Centerlines",
+        "size_bytes": 8877,
+        "checksum_sha256": "a6ab511be7eba486b29e4b4f948285d1f1664bbe758c2197afbade0079eaf7b3",
+        "title_for_reference": "Web page: dmdgis.cabq.gov/server/rest/services/Public/Road_Centerlines/MapServer",
+        "what_it_is": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+        "category": "live web page",
+        "package": "web_pages"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/final-sweep-cluster-research-2026-09-13.json"
+      ],
+      "disposition": "excluded",
+      "rationale": "Full delivery is a raw ArcGIS service catalogue/configuration or machine tile descriptor, not an independently usable reader-facing map or document. The underlying geographic data are not excluded from future interactive-map evaluation; preserve exact endpoint and current response evidence. Separate configuration entries add no distinct public explanation beyond the corresponding official map/service.",
+      "quality_assessment": {
+        "measured_container": "HTML",
+        "measured_size_bytes": 8877,
+        "saved_sha256": "a6ab511be7eba486b29e4b4f948285d1f1664bbe758c2197afbade0079eaf7b3",
+        "actual_function": "Full delivery is a raw ArcGIS service catalogue/configuration or machine tile descriptor, not an independently usable reader-facing map or document. The underlying geographic data are not excluded from future interactive-map evaluation; preserve exact endpoint and current response evidence. Separate configuration entries add no distinct public explanation beyond the corresponding official map/service.",
+        "standalone_public_value": "No distinct eligible standalone public record. Full delivery is a raw ArcGIS service catalogue/configuration or machine tile descriptor, not an independently usable reader-facing map or document. The underlying geographic data are not excluded from future interactive-map evaluation; preserve exact endpoint and current response evidence. Separate configuration entries add no distinct public explanation beyond the corresponding official map/service.",
+        "intended_publication_form": "none; no visitor-visible implementation authorized",
+        "visual_inspection": "Saved full HTML content analysis; no static original",
+        "information_density": "Measured full-document pages/words and source container are retained in QA.",
+        "series_component_relationship": "Family boundary reviewed; independent original or administrative supporting file as identified in rationale.",
+        "substantive_rationale": "Full delivery is a raw ArcGIS service catalogue/configuration or machine tile descriptor, not an independently usable reader-facing map or document. The underlying geographic data are not excluded from future interactive-map evaluation; preserve exact endpoint and current response evidence. Separate configuration entries add no distinct public explanation beyond the corresponding official map/service."
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T20:57:12.815589Z",
+        "geographic_institutional_scope": "City of Albuquerque",
+        "specific_albuquerque_connection": "Full delivery is a raw ArcGIS service catalogue/configuration or machine tile descriptor, not an independently usable reader-facing map or document. The underlying geographic data are not excluded from future interactive-map evaluation; preserve exact endpoint and current response evidence. Separate configuration entries add no distinct public explanation beyond the corresponding official map/service.",
+        "abqinfo_public_information_value": "No substantive additional ABQInfo policy/infrastructure information is established by this delivery.",
+        "general_context_exclusion_test": "City hosting, jurisdiction, geographic origin and procedural usefulness alone are insufficient; the actual document function and distinct public value control.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Full delivery is a raw ArcGIS service catalogue/configuration or machine tile descriptor, not an independently usable reader-facing map or document. The underlying geographic data are not excluded from future interactive-map evaluation; preserve exact endpoint and current response evidence. Separate configuration entries add no distinct public explanation beyond the corresponding official map/service."
+      },
+      "archival_readiness": "not eligible: excluded HTML discovery/navigation row",
+      "proposed_canonical_page": null,
+      "independent_review_input": "project-state/campaigns/ordinary-review-large-2026-09-26-third/review-decisions.json",
+      "review_complete": true
+    },
+    {
+      "id": "src-fa993b171f8cad5e",
+      "source_qa": "saved_full_GET_container_and_content_analysis_reused",
+      "saved_evidence": {
+        "id": "src-fa993b171f8cad5e",
+        "authoritative_url": "https://dmdgis.cabq.gov/server/rest/services/Public/Road_Centerlines/FeatureServer",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "HTML",
+        "leading_bytes": "3c68746d",
+        "http_status": "200",
+        "inventory_title": "City Road Centerlines",
+        "size_bytes": 8246,
+        "checksum_sha256": "8a7d6409edc7345040b96724297e2f5be29238bf40f303a0a4577eb26cbadb7e",
+        "title_for_reference": "Web page: dmdgis.cabq.gov/server/rest/services/Public/Road_Centerlines/FeatureServer",
+        "what_it_is": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+        "category": "live web page",
+        "package": "web_pages"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/final-sweep-cluster-research-2026-09-13.json"
+      ],
+      "disposition": "excluded",
+      "rationale": "Full delivery is a raw ArcGIS service catalogue/configuration or machine tile descriptor, not an independently usable reader-facing map or document. The underlying geographic data are not excluded from future interactive-map evaluation; preserve exact endpoint and current response evidence. Separate configuration entries add no distinct public explanation beyond the corresponding official map/service.",
+      "quality_assessment": {
+        "measured_container": "HTML",
+        "measured_size_bytes": 8246,
+        "saved_sha256": "8a7d6409edc7345040b96724297e2f5be29238bf40f303a0a4577eb26cbadb7e",
+        "actual_function": "Full delivery is a raw ArcGIS service catalogue/configuration or machine tile descriptor, not an independently usable reader-facing map or document. The underlying geographic data are not excluded from future interactive-map evaluation; preserve exact endpoint and current response evidence. Separate configuration entries add no distinct public explanation beyond the corresponding official map/service.",
+        "standalone_public_value": "No distinct eligible standalone public record. Full delivery is a raw ArcGIS service catalogue/configuration or machine tile descriptor, not an independently usable reader-facing map or document. The underlying geographic data are not excluded from future interactive-map evaluation; preserve exact endpoint and current response evidence. Separate configuration entries add no distinct public explanation beyond the corresponding official map/service.",
+        "intended_publication_form": "none; no visitor-visible implementation authorized",
+        "visual_inspection": "Saved full HTML content analysis; no static original",
+        "information_density": "Measured full-document pages/words and source container are retained in QA.",
+        "series_component_relationship": "Family boundary reviewed; independent original or administrative supporting file as identified in rationale.",
+        "substantive_rationale": "Full delivery is a raw ArcGIS service catalogue/configuration or machine tile descriptor, not an independently usable reader-facing map or document. The underlying geographic data are not excluded from future interactive-map evaluation; preserve exact endpoint and current response evidence. Separate configuration entries add no distinct public explanation beyond the corresponding official map/service."
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T20:57:12.815600Z",
+        "geographic_institutional_scope": "City of Albuquerque",
+        "specific_albuquerque_connection": "Full delivery is a raw ArcGIS service catalogue/configuration or machine tile descriptor, not an independently usable reader-facing map or document. The underlying geographic data are not excluded from future interactive-map evaluation; preserve exact endpoint and current response evidence. Separate configuration entries add no distinct public explanation beyond the corresponding official map/service.",
+        "abqinfo_public_information_value": "No substantive additional ABQInfo policy/infrastructure information is established by this delivery.",
+        "general_context_exclusion_test": "City hosting, jurisdiction, geographic origin and procedural usefulness alone are insufficient; the actual document function and distinct public value control.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Full delivery is a raw ArcGIS service catalogue/configuration or machine tile descriptor, not an independently usable reader-facing map or document. The underlying geographic data are not excluded from future interactive-map evaluation; preserve exact endpoint and current response evidence. Separate configuration entries add no distinct public explanation beyond the corresponding official map/service."
+      },
+      "archival_readiness": "not eligible: excluded HTML discovery/navigation row",
+      "proposed_canonical_page": null,
+      "independent_review_input": "project-state/campaigns/ordinary-review-large-2026-09-26-third/review-decisions.json",
+      "review_complete": true
+    }
+  ],
+  "visitor_visible_content_changed": false,
+  "state": "reviewed_decisions_ready_for_inventory"
+}
