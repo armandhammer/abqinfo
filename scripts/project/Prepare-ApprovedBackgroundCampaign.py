@@ -105,6 +105,8 @@ def inspect(r):
 
 def prepare():
     d=load(ART); inv=load(ROOT/'project-state/master-inventory.json')['candidates']; live=load(BASE); STAGE.mkdir(parents=True,exist_ok=True)
+    if d['state']=='complete_background_campaign':
+        raise SystemExit('Campaign complete; preserve approved source and archive evidence. No preparation rerun.')
     for r in d['records']:
         if r.get('source_exact_verified'): continue
         try:

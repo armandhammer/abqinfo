@@ -5,6 +5,7 @@ $ErrorActionPreference='Stop'
 $campaignPath='project-state/discovery/approved-backlog-background-archive-campaign-2026-09-26.json'
 $guardPath='tmp/background-campaign-current-live-2026-09-26.json'
 $d=Get-Content $campaignPath -Raw -Encoding utf8 | ConvertFrom-Json -DateKind String
+if ($d.state -eq 'complete_background_campaign') { throw 'Completed campaign: preserve evidence, no upload rerun.' }
 $baseline=Get-Content $d.baseline_r2_artifact -Raw -Encoding utf8 | ConvertFrom-Json -DateKind String
 $baselineMap=[Collections.Generic.Dictionary[string,object]]::new([StringComparer]::Ordinal)
 foreach ($obj in $baseline.objects) { $baselineMap.Add($obj.key,$obj) }
@@ -63,7 +64,7 @@ foreach ($r in $selected) {
     $action='already_completed_after_interruption'
     if ($existing.Count) {
       if ($existing.Count -ne 1 -or $existing[0].key -cne $r.r2_key -or $existing[0].size_bytes -ne $r.size_bytes -or -not $r.PSObject.Properties['upload_intent']) { throw 'Existing-object collision; no overwrite allowed' }
-      if ($r.outcome -eq 'archive_complete' -and $r.PSObject.Properties['inventory_reconciled']) {continue}
+      if ($r.outcome -eq 'archive_complete' -and ($r.classification -ne 'unchanged_City_original' -or $r.PSObject.Properties['inventory_reconciled'])) {continue}
     } else {
       if ($r.outcome -eq 'archive_complete') { throw 'Previously verified object disappeared' }
       if (@($live.objects | Where-Object size_bytes -eq $r.size_bytes).Count) { throw 'Unresolved same-size live object' }

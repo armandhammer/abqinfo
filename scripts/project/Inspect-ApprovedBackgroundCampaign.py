@@ -32,6 +32,7 @@ def packages(d):
                 offset=doc.page_count-sum(s['source_page_count'] for s in sources) if is_dpm else 0
                 for s in sources:
                     rid=s['source_master_id'] if is_dpm else s['candidate_id']; row=inv[rid]
+                    assert row['status']!='requires human review',f'Human review {rid}'
                     sp=c.ROOT/(s.get('local_path') or ('tmp/pdfs/dpm-input/'+rid+'.pdf'))
                     assert sp.is_file(),f'Missing component {sp}'
                     expected_hash,expected_size=row['checksum_sha256'],row['size_bytes']
@@ -47,7 +48,6 @@ def packages(d):
                             expected_hash,expected_size=c.sha(fresh),fresh.stat().st_size
                             evidence_basis='fresh_authoritative_full_GET_matches_stored_component; corrected_manifest_inclusion; historical_original_status_unchanged'
                     assert c.sha(sp)==expected_hash and sp.stat().st_size==expected_size,f'Component bytes mismatch {rid}'
-                    assert row['status']!='requires human review',f'Human review {rid}'
                     with c.fitz.open(sp) as src:
                         start=offset if is_dpm else s['compilation_source_page_start']-1
                         for i in range(src.page_count):
@@ -96,4 +96,6 @@ def compare(d):
         c.save(d)
 
 if __name__=='__main__':
-    d=c.load(c.ART); packages(d); compare(d);review_sheets(d['records'],'original-review');review_sheets(d['generated_packages'],'package-review');c.save(d)
+    d=c.load(c.ART)
+    if d['state']=='complete_background_campaign':raise SystemExit('Completed campaign evidence must not be re-prepared or re-compared.')
+    packages(d); compare(d);review_sheets(d['records'],'original-review');review_sheets(d['generated_packages'],'package-review');c.save(d)

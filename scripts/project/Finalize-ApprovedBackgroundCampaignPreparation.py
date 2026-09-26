@@ -3,6 +3,7 @@ import importlib.util,json,hashlib,subprocess
 from pathlib import Path
 spec=importlib.util.spec_from_file_location('campaign',Path(__file__).with_name('Prepare-ApprovedBackgroundCampaign.py'));c=importlib.util.module_from_spec(spec);spec.loader.exec_module(c)
 d=c.load(c.ART);live=c.load(c.BASE);inv=c.load(c.ROOT/'project-state/master-inventory.json')['candidates']
+if d['state']=='complete_background_campaign':raise SystemExit('Campaign complete; no readiness/state reset allowed.')
 assert len(d['records'])==27 and all(r.get('source_exact_verified') for r in d['records'])
 for r in d['records']+d['generated_packages']:
     if r.get('qa'):

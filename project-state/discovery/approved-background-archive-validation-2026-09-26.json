@@ -1,0 +1,30 @@
+{
+  "artifact_type": "approved_background_archive_campaign_validation",
+  "recorded_at": "2026-09-26T17:05:59.170198+00:00",
+  "full_project_validation": "passed",
+  "full_project_validation_command": "pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/project/Invoke-ProjectValidation.ps1",
+  "full_project_exit_code": 0,
+  "local_full_validation_log": "tmp/background-campaign-full-validation-2026-09-26.log",
+  "local_log_sha256": "f8ecbde014ded77a32bd49f54b09359006cffa217fc62b07c9aa3e1f46f03a5f",
+  "targeted_checks": [
+    "Test-ApprovedBackgroundCampaign.py",
+    "Test-MissionScopeAudit.py",
+    "Test-FiberRulemakingMeetingRecordsDecision.py",
+    "Test-PlanningDocumentsRootArchivePublicBytes.py",
+    "Test-PlanningDocumentsRootR2UploadPreflight.py",
+    "Test-2011CapitalSpendingConsolidation.py",
+    "Test-DpmExecutiveCommitteeAnnualPdfs.py",
+    "Test-ProjectStateRegeneration.ps1",
+    "campaign Python and PowerShell syntax"
+  ],
+  "targeted_result": "passed",
+  "public_byte_verified_objects": 30,
+  "r2_saved_live_key_size_etag_match": true,
+  "hugo_version": "0.164.0 extended",
+  "hugo_result": "passed",
+  "hugo_warning_disposition": "two existing language-property deprecations; no content/template change",
+  "full_external_link_scan": false,
+  "git_diff_check": "passed",
+  "content_diff": "none",
+  "visitor_visible_content_changed": false
+}

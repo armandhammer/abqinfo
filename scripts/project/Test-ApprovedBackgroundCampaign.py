@@ -83,4 +83,8 @@ if d['state']=='complete_background_campaign':
     assert d['accounting']['pre_existing_objects_unchanged'] and d['accounting']['saved_live_key_size_etag_match']
     final=load(d['final_live_listing_artifact']);assert current['objects']==final['objects']
     checkpoint=load('project-state/checkpoint.json');assert checkpoint['counts_by_status']==inventory['counts']
+    dpm=checkpoint['dpm_annual_consolidation']
+    assert dpm['state']=='corrected_packets_partially_archived_2018_human_review_deferred'
+    assert [(p['year'],p['archive_outcome']) for p in dpm['packets']]==[(2014,'archive_complete'),(2015,'archive_complete'),(2016,'archive_complete'),(2017,'archive_complete'),(2018,'deferred_human_review')]
+    assert not any(o['key']==locked_rows['generated-dpm-2018']['r2_key'] for o in current['objects'])
 print(f'PASS: 27 approved originals / seven named generated outputs; {len(verified)} exact public archives; unchanged baseline objects and noncampaign inventory; no content changes.')
