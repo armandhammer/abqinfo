@@ -54,7 +54,7 @@ if active.exists():
  # The independent reassessment audit constrains every subsequent changed row,
  # object and queue. Never grant this profile protected-family authorization.
  later=ROOT/'project-state/discovery/human-review-reassessment-2026-09-26/authorization.json'
- if later.exists() and d['state']=='complete_background_campaign':
+ if later.exists() and d['state']=='complete_background_campaign' and d['campaign_id']=='ordinary-review-large-2026-09-26-third':
   sealed_commit=load(later)['baseline_commit']; live_load=load
   sealed_paths={'project-state/master-inventory.json','project-state/r2-inventory.json','project-state/discovery/mission-scope-borderline-human-review-queue.json'}
   def load(p):

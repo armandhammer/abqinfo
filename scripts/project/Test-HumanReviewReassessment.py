@@ -1,6 +1,7 @@
 """Independent population, provenance, disposition and archive audit for the owner task."""
 import collections
 import hashlib
+import gzip
 import json
 import subprocess
 from pathlib import Path
@@ -60,6 +61,20 @@ assert scope['unresolved_count'] == 1 and rows['src-333e4b4b3970edc1']['review_r
 for r in load(F / 'fbz-comparison.json'):
     assert rows[r['id']]['status'] == 'superseded' and r['old_pages'] == r['new_pages']
     assert r['changes'] and all(x == {'op':'replace','old':'04 02 09 draft','new':'final'} for x in r['changes'])
+retrievals = load(F / 'retrievals.json')['records']
+link_bytes = (F / 'source-links.json.gz').read_bytes(); links = json.loads(gzip.decompress(link_bytes))
+for r in retrievals:
+    if r.get('links_artifact'):
+        assert r['links_artifact_sha256'] == hashlib.sha256(link_bytes).hexdigest() and r['link_count'] == len(links[r['url']])
+legislation = load(F / 'legislative-evidence.json')['records']
+matters = {v['MatterFile']:v for r in legislation if '/matters?' in r['url'] for v in r['payload']}
+for bill,i in [('R-04-158','src-0feec7ebf6650e27'),('O-23-96','src-bc91d8e4f296d80b')]:
+    assert matters[bill]['MatterStatusName'] == 'Died on Expiration' and rows[i]['status'] == 'excluded'
+    matter_id = matters[bill]['MatterId']
+    history = next(r['payload'] for r in legislation if r['url'].endswith('/'+str(matter_id)+'/histories'))
+    assert any(x['MatterHistoryActionName']=='Died on Expiration' for x in history)
+for bill,number in [('O-08-58','O-2009-009'),('R-24-17','R-2024-018')]:
+    assert matters[bill]['MatterEnactmentNumber'] == number and matters[bill]['MatterStatusName'] in ['Enacted','Enacted and Published']
 old = load(F / 'r2-baseline.json'); final = load(F / 'r2-final.json'); current = load(ROOT / 'project-state/r2-inventory.json')
 objects = {o['key']:o for o in final['objects']}; original = {o['key']:o for o in old['objects']}
 assert {o['key']:o for o in current['objects']} == objects and current['total_bytes'] == final['total_bytes']
