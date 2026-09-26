@@ -7,6 +7,10 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+if (Test-Path -LiteralPath 'project-state/discovery/ordinary-queue-large-resolution-campaign-2026-09-26.json') {
+  & python -B "$PSScriptRoot/Test-LargeOrdinaryCampaign.py"
+  if ($LASTEXITCODE) { throw 'Ordinary large campaign and exact-identity integrity regression failed.' }
+}
 if (Test-Path -LiteralPath 'project-state/discovery/approved-backlog-background-archive-campaign-2026-09-26.json') {
   & python -B "$PSScriptRoot/Test-ApprovedBackgroundCampaign.py"
   if ($LASTEXITCODE) { throw 'Approved background campaign regression failed.' }

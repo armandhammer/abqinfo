@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_large_campaign_family_evidence",
+  "family_id": "family-170",
+  "family": "www.mrcog-nm.gov/649",
+  "scope_ids": [
+    "src-62afb3e637655f5e"
+  ],
+  "methods": "Saved full-document research reused; every static source fresh full GET checked by exact size/hash; PDF text extracted from every page, opening/middle/ending rendered; all pages rendered for approval candidates and short files. HTML uses saved full-GET evidence with current source-health sampling.",
+  "records": [
+    {
+      "id": "src-62afb3e637655f5e",
+      "source_qa": "saved_full_GET_container_and_content_analysis_reused",
+      "saved_evidence": {
+        "id": "src-62afb3e637655f5e",
+        "authoritative_url": "https://www.mrcog-nm.gov/649/Planning-for-Equity",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "HTML",
+        "leading_bytes": "3c21444f",
+        "http_status": "200",
+        "inventory_title": "Planning for Equity",
+        "size_bytes": 273872,
+        "checksum_sha256": "a5bf5066a464f0e4b34e30d188cd8ebd39d7a296d863a777c553deaed0e96233",
+        "title_for_reference": "Web page: www.mrcog-nm.gov/649/Planning-for-Equity",
+        "what_it_is": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+        "category": "live web page",
+        "package": "web_pages"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/final-sweep-cluster-research-2026-09-13.json"
+      ],
+      "disposition": "excluded",
+      "rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+      "quality_assessment": {
+        "measured_container": "HTML",
+        "measured_size_bytes": 273872,
+        "saved_sha256": "a5bf5066a464f0e4b34e30d188cd8ebd39d7a296d863a777c553deaed0e96233",
+        "actual_function": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "standalone_public_value": "No separate static record: the saved review identifies a navigation, contact, directory, general live information or news delivery rather than an original plan, report, regulation or dataset. Retained document links and meaningful live services remain independently reviewable.",
+        "intended_publication_form": "none; excluded crawler row",
+        "visual_inspection": "not applicable to live HTML candidate; no static original"
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T17:35:18.081739+00:00",
+        "geographic_institutional_scope": "www.mrcog-nm.gov",
+        "specific_albuquerque_connection": "City/local agency live information or navigation candidate; origin alone does not establish useful separate archival record.",
+        "abqinfo_public_information_value": "The specific candidate function recorded in saved evidence supplies no independent archival public-information value beyond the originating live page.",
+        "general_context_exclusion_test": "The source is retained for discovery; no distinct substantive archival document or qualifying interactive public dataset is established by this row.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate."
+      },
+      "archival_readiness": "not eligible: excluded HTML discovery/navigation row",
+      "proposed_canonical_page": null,
+      "review_complete": true
+    }
+  ],
+  "visitor_visible_content_changed": false,
+  "source_health_sample": {
+    "http_status": 200,
+    "requested_url": "https://www.mrcog-nm.gov/649/Planning-for-Equity",
+    "final_url": "https://cpauthentication.civicplus.com/Identity/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3D378e2ad6-2f1b-4d8a-a3d9-a45d3842777e%26redirect_uri%3Dhttps%253A%252F%252Fwww.mrcog-nm.gov%252FIdentityServer%252FSignInCallback%26response_type%3Dcode%2520id_token%2520token%26scope%3Dopenid%2520profile%2520email%2520account.api%26state%3Dcb6089e660394f41ac33611fa5631d56_https%253A%252F%252Fwww.mrcog-nm.gov%252F649%252FPlanning-for-Equity%26nonce%3D18f8d559021a474b81c2af8394f831d9%26response_mode%3Dform_post%26acr_values%3DOrgBranding%253Afaf8d634-db80-43b6-8fee-3e4186bde4ae%26code_challenge%3D044be9e521d71e28442096cb8c9869acd9254d8fa5130f711f115a9e3f7b4f62%26code_challenge_method%3DS256%26login_origin_uri%3Dhttps%253A%252F%252Fwww.mrcog-nm.gov%252F649%252FPlanning-for-Equity",
+    "content_type": "text/html; charset=utf-8",
+    "verified_at": "2026-09-26T17:35:20.569762+00:00",
+    "size_bytes": 274780,
+    "checksum_sha256": "f6864bf2a87986ea7e9ba6ebb5137010ac45923d2d95f6f7185c0c660310937f",
+    "leading_bytes": "3c21444f43545950452068746d6c3e0a"
+  },
+  "state": "reviewed_decisions_ready_for_inventory"
+}

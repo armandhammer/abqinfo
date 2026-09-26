@@ -25,6 +25,11 @@ now=a.updated_at or datetime.now(timezone.utc).isoformat().replace('+00:00','Z')
 assert now.endswith('Z')
 for i in ids:
     row, rec=rows[i], found[i]; status=rec['recommended_status']; row['status']=status; row['updated_at']=now
+    if rec.get('scope_assessment'):
+        row['scope_assessment']=rec['scope_assessment']
+    if rec.get('evidence_note'):
+        notes=row.setdefault('processing_notes', [])
+        if rec['evidence_note'] not in notes: notes.append(rec['evidence_note'])
     authoritative_url=rec.get('authoritative_url')
     if authoritative_url:
         row['source_url']=authoritative_url

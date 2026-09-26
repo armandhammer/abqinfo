@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_large_campaign_family_evidence",
+  "family_id": "family-004",
+  "family": "Delivery aliases of src-0f60535452ac9154",
+  "scope_ids": [
+    "src-bad74bf291ef24a0"
+  ],
+  "methods": "Saved full-document research reused; every static source fresh full GET checked by exact size/hash; PDF text extracted from every page, opening/middle/ending rendered; all pages rendered for approval candidates and short files. HTML uses saved full-GET evidence with current source-health sampling.",
+  "records": [
+    {
+      "id": "src-bad74bf291ef24a0",
+      "saved_evidence": {
+        "id": "src-bad74bf291ef24a0",
+        "authoritative_url": "https://www.cabq.gov/parksandrecreation/recreation/bike/documents/final-albuquerque-comprehensive-on-street-bicycle-plan.pdf/view",
+        "recommended_status": "duplicate",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .doc in this lane is a PDF.",
+        "content_kind": "PDF",
+        "leading_bytes": "25504446",
+        "raw_file_url": "https://www.cabq.gov/parksandrecreation/recreation/bike/documents/final-albuquerque-comprehensive-on-street-bicycle-plan.pdf",
+        "size_bytes": 8054496,
+        "checksum_sha256": "81e89d704fe74949d958fb42f8e5ede02adeeb3ebb5b243cf16acc6f92514651",
+        "canonical_id": "src-0f60535452ac9154",
+        "title_for_reference": "Final Albuquerque Comprehensive On-Street Bicycle Plan",
+        "relationship": "The same file the archive already holds as the 2000 Albuquerque Comprehensive On-Street Bicycle Plan, validated with an r2_url.",
+        "how_it_was_established": "Byte-identical to the archived record: 8,054,496 bytes and SHA-256 81e89d704fe74949d958fb42f8e5ede02adeeb3ebb5b243cf16acc6f92514651 on both. The two inventory records carry different URL strings for the same object, which is why the URL group-by did not catch it.",
+        "why_this_one_is_the_copy": "The archive already holds it, validated and archived. This is the second inventory record for one file.",
+        "note_for_the_run": "This is the first cross-inventory byte collision found in this run. Every slice before it reported zero, and the reason this one was found is that the checksum was compared against the archived record rather than only within the slice.",
+        "group": "duplicates"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/parks-recreation-cluster-research-2026-09-13.json"
+      ],
+      "fresh_source_qa": {
+        "source_exact_verified": true,
+        "source_GET": {
+          "http_status": 200,
+          "requested_url": "https://www.cabq.gov/parksandrecreation/recreation/bike/documents/final-albuquerque-comprehensive-on-street-bicycle-plan.pdf",
+          "final_url": "https://www.cabq.gov/parksandrecreation/recreation/bike/documents/final-albuquerque-comprehensive-on-street-bicycle-plan.pdf",
+          "content_type": "application/pdf",
+          "verified_at": "2026-09-26T17:27:58.245651+00:00",
+          "size_bytes": 8054496,
+          "checksum_sha256": "81e89d704fe74949d958fb42f8e5ede02adeeb3ebb5b243cf16acc6f92514651",
+          "leading_bytes": "255044462d312e350d25e2e3cfd30d0a"
+        },
+        "staged_path": "research/staging/ordinary-large-campaign-2026-09-26/src-bad74bf291ef24a0.pdf",
+        "size_bytes": 8054496,
+        "checksum_sha256": "81e89d704fe74949d958fb42f8e5ede02adeeb3ebb5b243cf16acc6f92514651",
+        "container": "PDF",
+        "structural_result": "opens_without_password_or_repair",
+        "page_count": 124,
+        "word_count": 0,
+        "text_layer_pages": 0,
+        "rendered_pages": 3,
+        "low_ink_pages": [
+          124
+        ],
+        "contact_sheets": [
+          "tmp/ordinary-large-campaign-qa-2026-09-26/src-bad74bf291ef24a0-contact-1.jpg"
+        ],
+        "representative_images": [
+          "tmp/ordinary-large-campaign-qa-2026-09-26/src-bad74bf291ef24a0-page-1.png",
+          "tmp/ordinary-large-campaign-qa-2026-09-26/src-bad74bf291ef24a0-page-63.png",
+          "tmp/ordinary-large-campaign-qa-2026-09-26/src-bad74bf291ef24a0-page-124.png"
+        ],
+        "full_text_path": "research/staging/ordinary-large-campaign-2026-09-26/src-bad74bf291ef24a0.txt",
+        "text_excerpts": {
+          "1": "",
+          "63": "",
+          "124": ""
+        },
+        "metadata": {
+          "format": "PDF 1.5",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "",
+          "producer": "Xerox WCP C3545",
+          "creationDate": "D:20050907104044Z",
+          "modDate": "D:20050907154545-06'00'",
+          "trapped": "",
+          "encryption": null
+        },
+        "representative_visual_qa": "passed_agent_inspection_opening_middle_ending",
+        "visually_reviewed_at": "2026-09-26T17:31:28.118483+00:00"
+      },
+      "disposition": "duplicate",
+      "rationale": "The same file the archive already holds as the 2000 Albuquerque Comprehensive On-Street Bicycle Plan, validated with an r2_url.",
+      "canonical_candidate_id": "src-0f60535452ac9154",
+      "quality_assessment": {
+        "visual_inspection": "representative pages inspected; structural QA passed; saved full-document analysis reused",
+        "actual_function": "Same complete underlying document as retained canonical; preserve draft/finality labels of canonical. No independent public entry justified by delivery alias.",
+        "measured_page_count": 124,
+        "measured_word_count": 0,
+        "intended_publication_form": "no publication in this campaign; original preserved if approved",
+        "standalone_public_value": "No distinct substantive content beyond the byte-identical retained canonical.",
+        "series_component_relationship": "exact delivery alias, not a new edition",
+        "information_density": "identical to retained canonical",
+        "substantive_rationale": "The same file the archive already holds as the 2000 Albuquerque Comprehensive On-Street Bicycle Plan, validated with an r2_url."
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T17:31:28.118497+00:00",
+        "geographic_institutional_scope": "City of Albuquerque",
+        "specific_albuquerque_connection": "Same Albuquerque document as existing canonical src-0f60535452ac9154",
+        "abqinfo_public_information_value": "No incremental public value from repeating identical bytes. Canonical policy remains unchanged.",
+        "general_context_exclusion_test": "Exact hash and size, independently freshly verified, establish delivery identity rather than a new public-information record.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "The same file the archive already holds as the 2000 Albuquerque Comprehensive On-Street Bicycle Plan, validated with an r2_url."
+      },
+      "archival_readiness": "already archived canonical; reconcile alias without upload",
+      "proposed_canonical_page": null,
+      "exact_identity_relationship": {
+        "canonical_id": "src-0f60535452ac9154",
+        "canonical_status": "validated",
+        "same_sha256": true,
+        "same_size": true,
+        "canonical_r2_key": "transportation/bicycling/bike-plans/2000-albuquerque-comprehensive-on-street-bicycle-plan.pdf",
+        "canonical_source_url": "https://www.cabq.gov/parksandrecreation/recreation/bike/documents/final-albuquerque-comprehensive-on-street-bicycle-plan.pdf"
+      },
+      "review_complete": true
+    }
+  ],
+  "visitor_visible_content_changed": false,
+  "state": "reviewed_decisions_ready_for_inventory"
+}

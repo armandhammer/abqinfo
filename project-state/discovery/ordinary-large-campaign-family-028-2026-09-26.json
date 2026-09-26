@@ -1,0 +1,597 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_large_campaign_family_evidence",
+  "family_id": "family-028",
+  "family": "www.cabq.gov/council",
+  "scope_ids": [
+    "src-179df6cd3df2cb37",
+    "src-30fed3f85a70b1da",
+    "src-35cfdc0138ace8cb",
+    "src-3ca594e056a07733",
+    "src-3fac29782b1b25bf",
+    "src-5cda09a06a9e6aef",
+    "src-5f170c7635987c4b",
+    "src-6eb804d9c328c6ca",
+    "src-7b8f70f06274426f",
+    "src-8aa4e60fb7c2549b",
+    "src-acf797a91206a608",
+    "src-b0d7317dd9b9fe80"
+  ],
+  "methods": "Saved full-document research reused; every static source fresh full GET checked by exact size/hash; PDF text extracted from every page, opening/middle/ending rendered; all pages rendered for approval candidates and short files. HTML uses saved full-GET evidence with current source-health sampling.",
+  "records": [
+    {
+      "id": "src-179df6cd3df2cb37",
+      "source_qa": "saved_full_GET_container_and_content_analysis_reused",
+      "saved_evidence": {
+        "id": "src-179df6cd3df2cb37",
+        "authoritative_url": "https://www.cabq.gov/council/administration-questions-answers",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+        "content_kind": "HTML",
+        "leading_bytes": "3c21444f",
+        "inventory_title": "Administration Questions & Answers",
+        "size_bytes": 208608,
+        "checksum_sha256": "54d4799178524e168c2f1ec83a156e7cf3c88ee5fe0a995d5550abeb066c37cc",
+        "title_for_reference": "Web page: council/administration-questions-answers",
+        "what_it_is": "A live page on the City Council's website.",
+        "exclusion_reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f, and there is no original file to archive. It is an index or member page for the body whose documents are decided in this artifact.",
+        "category": "live web page",
+        "package": "web_pages"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/council-qa-lgcc-news-cluster-research-2026-09-13.json"
+      ],
+      "disposition": "excluded",
+      "rationale": "Not a static document. The URL returns HTML, leading bytes 3c21444f, and there is no original file to archive. It is an index or member page for the body whose documents are decided in this artifact.",
+      "quality_assessment": {
+        "measured_container": "HTML",
+        "measured_size_bytes": 208608,
+        "saved_sha256": "54d4799178524e168c2f1ec83a156e7cf3c88ee5fe0a995d5550abeb066c37cc",
+        "actual_function": "A live page on the City Council's website.",
+        "standalone_public_value": "No separate static record: the saved review identifies a navigation, contact, directory, general live information or news delivery rather than an original plan, report, regulation or dataset. Retained document links and meaningful live services remain independently reviewable.",
+        "intended_publication_form": "none; excluded crawler row",
+        "visual_inspection": "not applicable to live HTML candidate; no static original"
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T17:30:02.870128+00:00",
+        "geographic_institutional_scope": "www.cabq.gov",
+        "specific_albuquerque_connection": "City/local agency live information or navigation candidate; origin alone does not establish useful separate archival record.",
+        "abqinfo_public_information_value": "The specific candidate function recorded in saved evidence supplies no independent archival public-information value beyond the originating live page.",
+        "general_context_exclusion_test": "The source is retained for discovery; no distinct substantive archival document or qualifying interactive public dataset is established by this row.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Not a static document. The URL returns HTML, leading bytes 3c21444f, and there is no original file to archive. It is an index or member page for the body whose documents are decided in this artifact."
+      },
+      "archival_readiness": "not eligible: excluded HTML discovery/navigation row",
+      "proposed_canonical_page": null,
+      "review_complete": true
+    },
+    {
+      "id": "src-30fed3f85a70b1da",
+      "source_qa": "saved_full_GET_container_and_content_analysis_reused",
+      "saved_evidence": {
+        "id": "src-30fed3f85a70b1da",
+        "authoritative_url": "https://www.cabq.gov/council/frequently-asked-questions-faq",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "HTML",
+        "leading_bytes": "3c21444f",
+        "http_status": "200",
+        "inventory_title": "Frequently Asked Questions (FAQ)",
+        "size_bytes": 137712,
+        "checksum_sha256": "b3d99302d2fad07a56d46d279a139d0ce220ccd67ee3d318c6edc383fbb5d6be",
+        "title_for_reference": "Web page: www.cabq.gov/council/frequently-asked-questions-faq",
+        "what_it_is": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+        "category": "live web page",
+        "package": "web_pages"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/final-sweep-cluster-research-2026-09-13.json"
+      ],
+      "disposition": "excluded",
+      "rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+      "quality_assessment": {
+        "measured_container": "HTML",
+        "measured_size_bytes": 137712,
+        "saved_sha256": "b3d99302d2fad07a56d46d279a139d0ce220ccd67ee3d318c6edc383fbb5d6be",
+        "actual_function": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "standalone_public_value": "No separate static record: the saved review identifies a navigation, contact, directory, general live information or news delivery rather than an original plan, report, regulation or dataset. Retained document links and meaningful live services remain independently reviewable.",
+        "intended_publication_form": "none; excluded crawler row",
+        "visual_inspection": "not applicable to live HTML candidate; no static original"
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T17:30:02.872632+00:00",
+        "geographic_institutional_scope": "www.cabq.gov",
+        "specific_albuquerque_connection": "City/local agency live information or navigation candidate; origin alone does not establish useful separate archival record.",
+        "abqinfo_public_information_value": "The specific candidate function recorded in saved evidence supplies no independent archival public-information value beyond the originating live page.",
+        "general_context_exclusion_test": "The source is retained for discovery; no distinct substantive archival document or qualifying interactive public dataset is established by this row.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate."
+      },
+      "archival_readiness": "not eligible: excluded HTML discovery/navigation row",
+      "proposed_canonical_page": null,
+      "review_complete": true
+    },
+    {
+      "id": "src-35cfdc0138ace8cb",
+      "source_qa": "saved_full_GET_container_and_content_analysis_reused",
+      "saved_evidence": {
+        "id": "src-35cfdc0138ace8cb",
+        "authoritative_url": "https://www.cabq.gov/council/liquor-hearings",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "HTML",
+        "leading_bytes": "3c21444f",
+        "http_status": "200",
+        "inventory_title": "Notice of Liquor Hearings and State and City Applications. Liquor Hearings & Alcohol Permit Applications Notice of Liquor Hearings and State and City Applications.",
+        "size_bytes": 132321,
+        "checksum_sha256": "cc58113affcedc4217a21911bb9df60e11504ad31071b5b629858825aa4c9c1f",
+        "title_for_reference": "Web page: www.cabq.gov/council/liquor-hearings",
+        "what_it_is": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+        "category": "live web page",
+        "package": "web_pages"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/final-sweep-cluster-research-2026-09-13.json"
+      ],
+      "disposition": "excluded",
+      "rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+      "quality_assessment": {
+        "measured_container": "HTML",
+        "measured_size_bytes": 132321,
+        "saved_sha256": "cc58113affcedc4217a21911bb9df60e11504ad31071b5b629858825aa4c9c1f",
+        "actual_function": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "standalone_public_value": "No separate static record: the saved review identifies a navigation, contact, directory, general live information or news delivery rather than an original plan, report, regulation or dataset. Retained document links and meaningful live services remain independently reviewable.",
+        "intended_publication_form": "none; excluded crawler row",
+        "visual_inspection": "not applicable to live HTML candidate; no static original"
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T17:30:02.875111+00:00",
+        "geographic_institutional_scope": "www.cabq.gov",
+        "specific_albuquerque_connection": "City/local agency live information or navigation candidate; origin alone does not establish useful separate archival record.",
+        "abqinfo_public_information_value": "The specific candidate function recorded in saved evidence supplies no independent archival public-information value beyond the originating live page.",
+        "general_context_exclusion_test": "The source is retained for discovery; no distinct substantive archival document or qualifying interactive public dataset is established by this row.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate."
+      },
+      "archival_readiness": "not eligible: excluded HTML discovery/navigation row",
+      "proposed_canonical_page": null,
+      "review_complete": true
+    },
+    {
+      "id": "src-3ca594e056a07733",
+      "source_qa": "saved_full_GET_container_and_content_analysis_reused",
+      "saved_evidence": {
+        "id": "src-3ca594e056a07733",
+        "authoritative_url": "https://www.cabq.gov/council/albuquerque-neighborwoods",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "HTML",
+        "leading_bytes": "3c21444f",
+        "http_status": "200",
+        "inventory_title": "Albuquerque NeighborWoods",
+        "size_bytes": 113334,
+        "checksum_sha256": "487c10878fbc52d17273aa691fbca4c317f6551aee101a72dd2d0ba7d27e0a56",
+        "title_for_reference": "Web page: www.cabq.gov/council/albuquerque-neighborwoods",
+        "what_it_is": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+        "category": "live web page",
+        "package": "web_pages"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/final-sweep-cluster-research-2026-09-13.json"
+      ],
+      "disposition": "excluded",
+      "rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+      "quality_assessment": {
+        "measured_container": "HTML",
+        "measured_size_bytes": 113334,
+        "saved_sha256": "487c10878fbc52d17273aa691fbca4c317f6551aee101a72dd2d0ba7d27e0a56",
+        "actual_function": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "standalone_public_value": "No separate static record: the saved review identifies a navigation, contact, directory, general live information or news delivery rather than an original plan, report, regulation or dataset. Retained document links and meaningful live services remain independently reviewable.",
+        "intended_publication_form": "none; excluded crawler row",
+        "visual_inspection": "not applicable to live HTML candidate; no static original"
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T17:30:02.879479+00:00",
+        "geographic_institutional_scope": "www.cabq.gov",
+        "specific_albuquerque_connection": "City/local agency live information or navigation candidate; origin alone does not establish useful separate archival record.",
+        "abqinfo_public_information_value": "The specific candidate function recorded in saved evidence supplies no independent archival public-information value beyond the originating live page.",
+        "general_context_exclusion_test": "The source is retained for discovery; no distinct substantive archival document or qualifying interactive public dataset is established by this row.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate."
+      },
+      "archival_readiness": "not eligible: excluded HTML discovery/navigation row",
+      "proposed_canonical_page": null,
+      "review_complete": true
+    },
+    {
+      "id": "src-3fac29782b1b25bf",
+      "source_qa": "saved_full_GET_container_and_content_analysis_reused",
+      "saved_evidence": {
+        "id": "src-3fac29782b1b25bf",
+        "authoritative_url": "https://www.cabq.gov/council/council-history",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "HTML",
+        "leading_bytes": "3c21444f",
+        "http_status": "200",
+        "inventory_title": "Council History",
+        "size_bytes": 111452,
+        "checksum_sha256": "1072389aaf32bebfb8a1476b5f09f86bfc8da08934efbd03d057c1d1dedb6caa",
+        "title_for_reference": "Web page: www.cabq.gov/council/council-history",
+        "what_it_is": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+        "category": "live web page",
+        "package": "web_pages"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/final-sweep-cluster-research-2026-09-13.json"
+      ],
+      "disposition": "excluded",
+      "rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+      "quality_assessment": {
+        "measured_container": "HTML",
+        "measured_size_bytes": 111452,
+        "saved_sha256": "1072389aaf32bebfb8a1476b5f09f86bfc8da08934efbd03d057c1d1dedb6caa",
+        "actual_function": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "standalone_public_value": "No separate static record: the saved review identifies a navigation, contact, directory, general live information or news delivery rather than an original plan, report, regulation or dataset. Retained document links and meaningful live services remain independently reviewable.",
+        "intended_publication_form": "none; excluded crawler row",
+        "visual_inspection": "not applicable to live HTML candidate; no static original"
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T17:30:02.882157+00:00",
+        "geographic_institutional_scope": "www.cabq.gov",
+        "specific_albuquerque_connection": "City/local agency live information or navigation candidate; origin alone does not establish useful separate archival record.",
+        "abqinfo_public_information_value": "The specific candidate function recorded in saved evidence supplies no independent archival public-information value beyond the originating live page.",
+        "general_context_exclusion_test": "The source is retained for discovery; no distinct substantive archival document or qualifying interactive public dataset is established by this row.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate."
+      },
+      "archival_readiness": "not eligible: excluded HTML discovery/navigation row",
+      "proposed_canonical_page": null,
+      "review_complete": true
+    },
+    {
+      "id": "src-5cda09a06a9e6aef",
+      "source_qa": "saved_full_GET_container_and_content_analysis_reused",
+      "saved_evidence": {
+        "id": "src-5cda09a06a9e6aef",
+        "authoritative_url": "https://www.cabq.gov/council/documents",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "HTML",
+        "leading_bytes": "3c21444f",
+        "http_status": "200",
+        "inventory_title": "documents",
+        "size_bytes": 171971,
+        "checksum_sha256": "756378cdcf85b0a4fe4ff664747945c1900f91e4ee1201d3526faed712db2317",
+        "title_for_reference": "Web page: www.cabq.gov/council/documents",
+        "what_it_is": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+        "category": "live web page",
+        "package": "web_pages"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/final-sweep-cluster-research-2026-09-13.json"
+      ],
+      "disposition": "excluded",
+      "rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+      "quality_assessment": {
+        "measured_container": "HTML",
+        "measured_size_bytes": 171971,
+        "saved_sha256": "756378cdcf85b0a4fe4ff664747945c1900f91e4ee1201d3526faed712db2317",
+        "actual_function": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "standalone_public_value": "No separate static record: the saved review identifies a navigation, contact, directory, general live information or news delivery rather than an original plan, report, regulation or dataset. Retained document links and meaningful live services remain independently reviewable.",
+        "intended_publication_form": "none; excluded crawler row",
+        "visual_inspection": "not applicable to live HTML candidate; no static original"
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T17:30:02.884719+00:00",
+        "geographic_institutional_scope": "www.cabq.gov",
+        "specific_albuquerque_connection": "City/local agency live information or navigation candidate; origin alone does not establish useful separate archival record.",
+        "abqinfo_public_information_value": "The specific candidate function recorded in saved evidence supplies no independent archival public-information value beyond the originating live page.",
+        "general_context_exclusion_test": "The source is retained for discovery; no distinct substantive archival document or qualifying interactive public dataset is established by this row.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate."
+      },
+      "archival_readiness": "not eligible: excluded HTML discovery/navigation row",
+      "proposed_canonical_page": null,
+      "review_complete": true
+    },
+    {
+      "id": "src-5f170c7635987c4b",
+      "source_qa": "saved_full_GET_container_and_content_analysis_reused",
+      "saved_evidence": {
+        "id": "src-5f170c7635987c4b",
+        "authoritative_url": "https://www.cabq.gov/council/albuquerque-police-oversight-board-application",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "HTML",
+        "leading_bytes": "3c21444f",
+        "http_status": "200",
+        "inventory_title": "Apply now to become a member of the Albuquerque Civilian Police Oversight Agency Board! Civilian Police Oversight Advisory Board Application Apply now to become a member of the Albuquerque Civilian Police Oversight Agency Board!",
+        "size_bytes": 117477,
+        "checksum_sha256": "04bb63b8e11d1a17b417443b8413abce235cab68ea685cb96afc949698407370",
+        "title_for_reference": "Web page: www.cabq.gov/council/albuquerque-police-oversight-board-application",
+        "what_it_is": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+        "category": "live web page",
+        "package": "web_pages"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/final-sweep-cluster-research-2026-09-13.json"
+      ],
+      "disposition": "excluded",
+      "rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+      "quality_assessment": {
+        "measured_container": "HTML",
+        "measured_size_bytes": 117477,
+        "saved_sha256": "04bb63b8e11d1a17b417443b8413abce235cab68ea685cb96afc949698407370",
+        "actual_function": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "standalone_public_value": "No separate static record: the saved review identifies a navigation, contact, directory, general live information or news delivery rather than an original plan, report, regulation or dataset. Retained document links and meaningful live services remain independently reviewable.",
+        "intended_publication_form": "none; excluded crawler row",
+        "visual_inspection": "not applicable to live HTML candidate; no static original"
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T17:30:02.887904+00:00",
+        "geographic_institutional_scope": "www.cabq.gov",
+        "specific_albuquerque_connection": "City/local agency live information or navigation candidate; origin alone does not establish useful separate archival record.",
+        "abqinfo_public_information_value": "The specific candidate function recorded in saved evidence supplies no independent archival public-information value beyond the originating live page.",
+        "general_context_exclusion_test": "The source is retained for discovery; no distinct substantive archival document or qualifying interactive public dataset is established by this row.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate."
+      },
+      "archival_readiness": "not eligible: excluded HTML discovery/navigation row",
+      "proposed_canonical_page": null,
+      "review_complete": true
+    },
+    {
+      "id": "src-6eb804d9c328c6ca",
+      "source_qa": "saved_full_GET_container_and_content_analysis_reused",
+      "saved_evidence": {
+        "id": "src-6eb804d9c328c6ca",
+        "authoritative_url": "https://www.cabq.gov/council/old-town-virtual-task-force",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "HTML",
+        "leading_bytes": "3c21444f",
+        "http_status": "200",
+        "inventory_title": "Old Town Virtual Task Force",
+        "size_bytes": 117957,
+        "checksum_sha256": "455708542718087c52216d1f64f3f80667ac813ff0e63ed5ddfcd46b9f162c34",
+        "title_for_reference": "Web page: www.cabq.gov/council/old-town-virtual-task-force",
+        "what_it_is": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+        "category": "live web page",
+        "package": "web_pages"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/final-sweep-cluster-research-2026-09-13.json"
+      ],
+      "disposition": "excluded",
+      "rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+      "quality_assessment": {
+        "measured_container": "HTML",
+        "measured_size_bytes": 117957,
+        "saved_sha256": "455708542718087c52216d1f64f3f80667ac813ff0e63ed5ddfcd46b9f162c34",
+        "actual_function": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "standalone_public_value": "No separate static record: the saved review identifies a navigation, contact, directory, general live information or news delivery rather than an original plan, report, regulation or dataset. Retained document links and meaningful live services remain independently reviewable.",
+        "intended_publication_form": "none; excluded crawler row",
+        "visual_inspection": "not applicable to live HTML candidate; no static original"
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T17:30:02.890804+00:00",
+        "geographic_institutional_scope": "www.cabq.gov",
+        "specific_albuquerque_connection": "City/local agency live information or navigation candidate; origin alone does not establish useful separate archival record.",
+        "abqinfo_public_information_value": "The specific candidate function recorded in saved evidence supplies no independent archival public-information value beyond the originating live page.",
+        "general_context_exclusion_test": "The source is retained for discovery; no distinct substantive archival document or qualifying interactive public dataset is established by this row.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate."
+      },
+      "archival_readiness": "not eligible: excluded HTML discovery/navigation row",
+      "proposed_canonical_page": null,
+      "review_complete": true
+    },
+    {
+      "id": "src-7b8f70f06274426f",
+      "source_qa": "saved_full_GET_container_and_content_analysis_reused",
+      "saved_evidence": {
+        "id": "src-7b8f70f06274426f",
+        "authoritative_url": "https://www.cabq.gov/council/albuquerque-bernalillo-county-government-commission",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes.",
+        "content_kind": "HTML",
+        "leading_bytes": "3c21444f",
+        "inventory_title": "Local Government Coordinating Commission",
+        "size_bytes": 125371,
+        "checksum_sha256": "22136a55b3dc61fbb01e9c485fdd0857b1adade8233aec6ed6f86150e8160072",
+        "title_for_reference": "Web page: council/albuquerque-bernalillo-county-government-commission",
+        "what_it_is": "A live page on the City Council's website.",
+        "exclusion_reason": "Not a static document. The URL returns HTML, leading bytes 3c21444f, and there is no original file to archive. It is an index or member page for the body whose documents are decided in this artifact.",
+        "category": "live web page",
+        "package": "web_pages"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/council-qa-lgcc-news-cluster-research-2026-09-13.json"
+      ],
+      "disposition": "excluded",
+      "rationale": "Not a static document. The URL returns HTML, leading bytes 3c21444f, and there is no original file to archive. It is an index or member page for the body whose documents are decided in this artifact.",
+      "quality_assessment": {
+        "measured_container": "HTML",
+        "measured_size_bytes": 125371,
+        "saved_sha256": "22136a55b3dc61fbb01e9c485fdd0857b1adade8233aec6ed6f86150e8160072",
+        "actual_function": "A live page on the City Council's website.",
+        "standalone_public_value": "No separate static record: the saved review identifies a navigation, contact, directory, general live information or news delivery rather than an original plan, report, regulation or dataset. Retained document links and meaningful live services remain independently reviewable.",
+        "intended_publication_form": "none; excluded crawler row",
+        "visual_inspection": "not applicable to live HTML candidate; no static original"
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T17:30:02.894194+00:00",
+        "geographic_institutional_scope": "www.cabq.gov",
+        "specific_albuquerque_connection": "City/local agency live information or navigation candidate; origin alone does not establish useful separate archival record.",
+        "abqinfo_public_information_value": "The specific candidate function recorded in saved evidence supplies no independent archival public-information value beyond the originating live page.",
+        "general_context_exclusion_test": "The source is retained for discovery; no distinct substantive archival document or qualifying interactive public dataset is established by this row.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Not a static document. The URL returns HTML, leading bytes 3c21444f, and there is no original file to archive. It is an index or member page for the body whose documents are decided in this artifact."
+      },
+      "archival_readiness": "not eligible: excluded HTML discovery/navigation row",
+      "proposed_canonical_page": null,
+      "review_complete": true
+    },
+    {
+      "id": "src-8aa4e60fb7c2549b",
+      "source_qa": "saved_full_GET_container_and_content_analysis_reused",
+      "saved_evidence": {
+        "id": "src-8aa4e60fb7c2549b",
+        "authoritative_url": "https://www.cabq.gov/council/council-old",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "HTML",
+        "leading_bytes": "3c21444f",
+        "http_status": "200",
+        "inventory_title": "Albuquerque City Council Highlights",
+        "size_bytes": 125080,
+        "checksum_sha256": "597f1b245828f5ee1a51ee59d41dafbd9eb8b869ba3ec66c70bb8b463bbdc35b",
+        "title_for_reference": "Web page: www.cabq.gov/council/council-old",
+        "what_it_is": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+        "category": "live web page",
+        "package": "web_pages"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/final-sweep-cluster-research-2026-09-13.json"
+      ],
+      "disposition": "excluded",
+      "rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+      "quality_assessment": {
+        "measured_container": "HTML",
+        "measured_size_bytes": 125080,
+        "saved_sha256": "597f1b245828f5ee1a51ee59d41dafbd9eb8b869ba3ec66c70bb8b463bbdc35b",
+        "actual_function": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "standalone_public_value": "No separate static record: the saved review identifies a navigation, contact, directory, general live information or news delivery rather than an original plan, report, regulation or dataset. Retained document links and meaningful live services remain independently reviewable.",
+        "intended_publication_form": "none; excluded crawler row",
+        "visual_inspection": "not applicable to live HTML candidate; no static original"
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T17:30:02.898382+00:00",
+        "geographic_institutional_scope": "www.cabq.gov",
+        "specific_albuquerque_connection": "City/local agency live information or navigation candidate; origin alone does not establish useful separate archival record.",
+        "abqinfo_public_information_value": "The specific candidate function recorded in saved evidence supplies no independent archival public-information value beyond the originating live page.",
+        "general_context_exclusion_test": "The source is retained for discovery; no distinct substantive archival document or qualifying interactive public dataset is established by this row.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate."
+      },
+      "archival_readiness": "not eligible: excluded HTML discovery/navigation row",
+      "proposed_canonical_page": null,
+      "review_complete": true
+    },
+    {
+      "id": "src-acf797a91206a608",
+      "source_qa": "saved_full_GET_container_and_content_analysis_reused",
+      "saved_evidence": {
+        "id": "src-acf797a91206a608",
+        "authoritative_url": "https://www.cabq.gov/council/vial-of-life",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "HTML",
+        "leading_bytes": "3c21444f",
+        "http_status": "200",
+        "inventory_title": "Vial of Life",
+        "size_bytes": 110688,
+        "checksum_sha256": "b5fa41bbe3f7ca61a63d11522408fcdb393d220e63c7f6c0806cdc4f4da0f71a",
+        "title_for_reference": "Web page: www.cabq.gov/council/vial-of-life",
+        "what_it_is": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+        "category": "live web page",
+        "package": "web_pages"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/final-sweep-cluster-research-2026-09-13.json"
+      ],
+      "disposition": "excluded",
+      "rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+      "quality_assessment": {
+        "measured_container": "HTML",
+        "measured_size_bytes": 110688,
+        "saved_sha256": "b5fa41bbe3f7ca61a63d11522408fcdb393d220e63c7f6c0806cdc4f4da0f71a",
+        "actual_function": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "standalone_public_value": "No separate static record: the saved review identifies a navigation, contact, directory, general live information or news delivery rather than an original plan, report, regulation or dataset. Retained document links and meaningful live services remain independently reviewable.",
+        "intended_publication_form": "none; excluded crawler row",
+        "visual_inspection": "not applicable to live HTML candidate; no static original"
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T17:30:02.901500+00:00",
+        "geographic_institutional_scope": "www.cabq.gov",
+        "specific_albuquerque_connection": "City/local agency live information or navigation candidate; origin alone does not establish useful separate archival record.",
+        "abqinfo_public_information_value": "The specific candidate function recorded in saved evidence supplies no independent archival public-information value beyond the originating live page.",
+        "general_context_exclusion_test": "The source is retained for discovery; no distinct substantive archival document or qualifying interactive public dataset is established by this row.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate."
+      },
+      "archival_readiness": "not eligible: excluded HTML discovery/navigation row",
+      "proposed_canonical_page": null,
+      "review_complete": true
+    },
+    {
+      "id": "src-b0d7317dd9b9fe80",
+      "source_qa": "saved_full_GET_container_and_content_analysis_reused",
+      "saved_evidence": {
+        "id": "src-b0d7317dd9b9fe80",
+        "authoritative_url": "https://www.cabq.gov/council/events",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "HTML",
+        "leading_bytes": "3c21444f",
+        "http_status": "200",
+        "inventory_title": "Albuquerque City Council Upcoming Meetings & Events",
+        "size_bytes": 116847,
+        "checksum_sha256": "b8babdc23d11602a335e66dfb578588e2926c8dc27d3c4f910494ff4a5743fa5",
+        "title_for_reference": "Web page: www.cabq.gov/council/events",
+        "what_it_is": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+        "category": "live web page",
+        "package": "web_pages"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/final-sweep-cluster-research-2026-09-13.json"
+      ],
+      "disposition": "excluded",
+      "rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+      "quality_assessment": {
+        "measured_container": "HTML",
+        "measured_size_bytes": 116847,
+        "saved_sha256": "b8babdc23d11602a335e66dfb578588e2926c8dc27d3c4f910494ff4a5743fa5",
+        "actual_function": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "standalone_public_value": "No separate static record: the saved review identifies a navigation, contact, directory, general live information or news delivery rather than an original plan, report, regulation or dataset. Retained document links and meaningful live services remain independently reviewable.",
+        "intended_publication_form": "none; excluded crawler row",
+        "visual_inspection": "not applicable to live HTML candidate; no static original"
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T17:30:02.904732+00:00",
+        "geographic_institutional_scope": "www.cabq.gov",
+        "specific_albuquerque_connection": "City/local agency live information or navigation candidate; origin alone does not establish useful separate archival record.",
+        "abqinfo_public_information_value": "The specific candidate function recorded in saved evidence supplies no independent archival public-information value beyond the originating live page.",
+        "general_context_exclusion_test": "The source is retained for discovery; no distinct substantive archival document or qualifying interactive public dataset is established by this row.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate."
+      },
+      "archival_readiness": "not eligible: excluded HTML discovery/navigation row",
+      "proposed_canonical_page": null,
+      "review_complete": true
+    }
+  ],
+  "visitor_visible_content_changed": false,
+  "source_health_sample": {
+    "http_status": 200,
+    "requested_url": "https://www.cabq.gov/council/administration-questions-answers",
+    "final_url": "https://www.cabq.gov/council/administration-questions-answers",
+    "content_type": "text/html;charset=utf-8",
+    "verified_at": "2026-09-26T17:30:03.655793+00:00",
+    "size_bytes": 208608,
+    "checksum_sha256": "54d4799178524e168c2f1ec83a156e7cf3c88ee5fe0a995d5550abeb066c37cc",
+    "leading_bytes": "3c21444f43545950452068746d6c3e0a"
+  },
+  "state": "reviewed_decisions_ready_for_inventory"
+}

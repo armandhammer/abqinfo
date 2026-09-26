@@ -14,12 +14,17 @@ ORDER=['src-16b33375ffbddc62','src-1fa6ae851ddf282d','src-513fe9056bf9b34c','src
 def load(path):return json.loads((ROOT/path).read_text(encoding='utf-8-sig'))
 def baseline(path):return subprocess.run(['git','show',BASELINE+':'+path],cwd=ROOT,capture_output=True,check=True).stdout
 
-master=load('project-state/master-inventory.json'); rows={r['id']:r for r in master['candidates']}
+from BackgroundArchiveCampaign import ordinary_baseline_inventory
+master=ordinary_baseline_inventory(load('project-state/master-inventory.json')); rows={r['id']:r for r in master['candidates']}
 before={r['id']:r for r in json.loads(baseline('project-state/master-inventory.json').decode('utf-8-sig'))['candidates']}
 recon=load('project-state/discovery/planning-documents-root-barelas-duplicate-reconciliation-2026-09-26.json')
 prep=load('project-state/discovery/planning-documents-root-archive-preparation-2026-09-25.json')
 m=load('project-state/discovery/planning-documents-root-r2-upload-preflight-2026-09-26.json')
 r2=load('project-state/r2-inventory.json'); checkpoint=load('project-state/checkpoint.json')
+ordinary_path=ROOT/'project-state/discovery/ordinary-queue-large-resolution-campaign-2026-09-26.json'
+if ordinary_path.exists():
+    ordinary=load(ordinary_path.relative_to(ROOT).as_posix())
+    checkpoint=json.loads(subprocess.check_output(['git','show',ordinary['baseline_commit']+':project-state/checkpoint.json'],cwd=ROOT).decode('utf-8-sig'))
 archive_path=ROOT/'project-state/discovery/planning-documents-root-archive-public-byte-verification-2026-09-26.json'
 archived=archive_path.exists() and load(archive_path.relative_to(ROOT).as_posix()).get('state')=='complete_all_12_public_byte_verified_and_inventory_reconciled'
 assert set(rows)==set(before)

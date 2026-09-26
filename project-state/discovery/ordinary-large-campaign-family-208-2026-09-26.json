@@ -1,0 +1,589 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_large_campaign_family_evidence",
+  "family_id": "family-208",
+  "family": "www.cabq.gov/planning/documents",
+  "scope_ids": [
+    "src-21c399e0d5a2510c",
+    "src-826b838b930e23b6",
+    "src-a64d3561994aa604",
+    "src-c28ac1861614a36d",
+    "src-da51e530c87ba7ca",
+    "src-e9a45e771497acb7"
+  ],
+  "methods": "Saved full-document research reused; every static source fresh full GET checked by exact size/hash; PDF text extracted from every page, opening/middle/ending rendered; all pages rendered for approval candidates and short files. HTML uses saved full-GET evidence with current source-health sampling.",
+  "records": [
+    {
+      "id": "src-21c399e0d5a2510c",
+      "saved_evidence": {
+        "id": "src-21c399e0d5a2510c",
+        "authoritative_url": "https://www.cabq.gov/planning/documents/stop-work-request-for-homeowners-dm.docx",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+        "content_kind": "PDF",
+        "leading_bytes": "25504446",
+        "size_bytes": 51660,
+        "checksum_sha256": "b3b13a1d9cf048fe46a226385050367f70ba563bdb2d0914384d552f2c0f31b7",
+        "title_for_reference": "stop-work-request-for-homeowners-dm.docx",
+        "what_it_is": "A permit process flow chart, cancellation request, stop-work request or contact sheet for a live City permitting process.",
+        "exclusion_reason": "Not a substantive record. It is process paperwork for a permitting process that is still running - a flow chart of the steps, a request form to cancel or stop work, a contact sheet. The archive has already settled this class at this exact path, excluding a generic hard-copy application link for a live process as not substantive. Its name ends .docx and its leading bytes are 25504446: it is a PDF.",
+        "category": "live process paperwork",
+        "package": "process_paperwork"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/ntmp-planning-documents-cluster-research-2026-09-13.json"
+      ],
+      "fresh_source_qa": {
+        "source_exact_verified": true,
+        "source_GET": {
+          "http_status": 200,
+          "requested_url": "https://www.cabq.gov/planning/documents/stop-work-request-for-homeowners-dm.docx",
+          "final_url": "https://www.cabq.gov/planning/documents/stop-work-request-for-homeowners-dm.docx",
+          "content_type": "application/pdf",
+          "verified_at": "2026-09-26T17:35:41.325271+00:00",
+          "size_bytes": 51660,
+          "checksum_sha256": "b3b13a1d9cf048fe46a226385050367f70ba563bdb2d0914384d552f2c0f31b7",
+          "leading_bytes": "255044462d312e370d0a25b5b5b5b50d"
+        },
+        "staged_path": "research/staging/ordinary-large-campaign-2026-09-26/src-21c399e0d5a2510c.pdf",
+        "size_bytes": 51660,
+        "checksum_sha256": "b3b13a1d9cf048fe46a226385050367f70ba563bdb2d0914384d552f2c0f31b7",
+        "container": "PDF",
+        "structural_result": "opens_without_password_or_repair",
+        "page_count": 1,
+        "word_count": 85,
+        "text_layer_pages": 1,
+        "rendered_pages": 1,
+        "low_ink_pages": [],
+        "contact_sheets": [
+          "tmp/ordinary-large-campaign-qa-2026-09-26/src-21c399e0d5a2510c-contact-1.jpg"
+        ],
+        "representative_images": [
+          "tmp/ordinary-large-campaign-qa-2026-09-26/src-21c399e0d5a2510c-page-1.png"
+        ],
+        "full_text_path": "research/staging/ordinary-large-campaign-2026-09-26/src-21c399e0d5a2510c.txt",
+        "text_excerpts": {
+          "1": " \nDate:  _________________________________ \n \nEffective immediately, I, _____________________________________, homeowner of property located at \n____________________________________, wish to stop work for permit number  \n_______________________________ and discontinue service with the following contractor:      \nName: ______________________________________________ \nCompany Name:  ______________________________________ \nAddress:  _____________________________________________ \nPhone Number:  _______________________________________ \nTermination/cancellation is requested for the following reason: \n______________________________________________________________________________ \n______________________________________________________________________________ \n______________________________________________________________________________ \n______________________________________________________________________________ \n \nState of New Mexico \nCounty of Bernalillo \nSinged and sworn to before me on this day, the ___________________ of _____________________, \n_____________, by _____________________________. \n \n \n \n \n \n \n________________________________________________ \n \n \n \n \n \n(Signature) \n \n \n(Notary Stamp) \n \n \n________________________________________________ \n \n \n \n \n \n(Notary Signature) \nApproved by: \n \n \n___________________________________________ \n \n________________________ \n(Division Manager) \n \n \n \n \n \n \nDate \n"
+        },
+        "metadata": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "Elliott, Laurie",
+          "subject": "",
+          "keywords": "",
+          "creator": "Microsoft® Word 2019",
+          "producer": "Microsoft® Word 2019",
+          "creationDate": "D:20221005115557-06'00'",
+          "modDate": "D:20221005115557-06'00'",
+          "trapped": "",
+          "encryption": null
+        },
+        "representative_visual_qa": "passed_agent_inspection_opening_middle_ending",
+        "visually_reviewed_at": "2026-09-26T17:39:28.765533+00:00"
+      },
+      "disposition": "excluded",
+      "rationale": "stop-work-request-for-homeowners-dm.docx: Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record. This is routine transaction guidance without sufficient standalone policy/infrastructure value.",
+      "canonical_candidate_id": null,
+      "quality_assessment": {
+        "visual_inspection": "Fresh measured source, all-page text extraction and rendered opening/middle/ending inspected; low-ink pages inspected where present.",
+        "actual_function": "Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record.",
+        "measured_page_count": 1,
+        "measured_word_count": 85,
+        "intended_publication_form": "none; excluded",
+        "standalone_public_value": "Insufficient substantive ABQInfo public-information value; direct exclusion, not a borderline.",
+        "information_density": "Measured pages/words preserved; density does not convert generic material or transaction paperwork into eligible policy evidence.",
+        "series_component_relationship": "Administrative/generic supporting file; related substantive records remain independently reviewable.",
+        "substantive_rationale": "stop-work-request-for-homeowners-dm.docx: Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record. This is routine transaction guidance without sufficient standalone policy/infrastructure value."
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T17:39:28.765544+00:00",
+        "geographic_institutional_scope": "City of Albuquerque",
+        "specific_albuquerque_connection": "Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record.",
+        "abqinfo_public_information_value": "Does not materially explain a core Albuquerque public-policy or infrastructure subject beyond the originating transaction or generic external guidance.",
+        "general_context_exclusion_test": "City hosting, geographic origin, statewide applicability and administrative process usefulness do not substitute for both material Albuquerque content and substantial ABQInfo public-information value.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "stop-work-request-for-homeowners-dm.docx: Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record. This is routine transaction guidance without sufficient standalone policy/infrastructure value."
+      },
+      "archival_readiness": "not eligible: mission-scope exclusion; no R2 object",
+      "proposed_canonical_page": null,
+      "review_complete": true
+    },
+    {
+      "id": "src-826b838b930e23b6",
+      "saved_evidence": {
+        "id": "src-826b838b930e23b6",
+        "authoritative_url": "https://www.cabq.gov/planning/documents/homeowners-building-permit-flow-chart.pdf",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+        "content_kind": "PDF",
+        "leading_bytes": "25504446",
+        "size_bytes": 81919,
+        "checksum_sha256": "60210d5d6e6bddb1b102768a790a793fdd938a1076e332c090455968f5d6db4b",
+        "title_for_reference": "homeowners-building-permit-flow-chart.pdf",
+        "what_it_is": "A permit process flow chart, cancellation request, stop-work request or contact sheet for a live City permitting process.",
+        "exclusion_reason": "Not a substantive record. It is process paperwork for a permitting process that is still running - a flow chart of the steps, a request form to cancel or stop work, a contact sheet. The archive has already settled this class at this exact path, excluding a generic hard-copy application link for a live process as not substantive.",
+        "category": "live process paperwork",
+        "package": "process_paperwork"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/ntmp-planning-documents-cluster-research-2026-09-13.json"
+      ],
+      "fresh_source_qa": {
+        "source_exact_verified": true,
+        "source_GET": {
+          "http_status": 200,
+          "requested_url": "https://www.cabq.gov/planning/documents/homeowners-building-permit-flow-chart.pdf",
+          "final_url": "https://www.cabq.gov/planning/documents/homeowners-building-permit-flow-chart.pdf",
+          "content_type": "application/pdf",
+          "verified_at": "2026-09-26T17:35:41.960377+00:00",
+          "size_bytes": 81919,
+          "checksum_sha256": "60210d5d6e6bddb1b102768a790a793fdd938a1076e332c090455968f5d6db4b",
+          "leading_bytes": "255044462d312e370d0a25b5b5b5b50d"
+        },
+        "staged_path": "research/staging/ordinary-large-campaign-2026-09-26/src-826b838b930e23b6.pdf",
+        "size_bytes": 81919,
+        "checksum_sha256": "60210d5d6e6bddb1b102768a790a793fdd938a1076e332c090455968f5d6db4b",
+        "container": "PDF",
+        "structural_result": "opens_without_password_or_repair",
+        "page_count": 1,
+        "word_count": 97,
+        "text_layer_pages": 1,
+        "rendered_pages": 1,
+        "low_ink_pages": [],
+        "contact_sheets": [
+          "tmp/ordinary-large-campaign-qa-2026-09-26/src-826b838b930e23b6-contact-1.jpg"
+        ],
+        "representative_images": [
+          "tmp/ordinary-large-campaign-qa-2026-09-26/src-826b838b930e23b6-page-1.png"
+        ],
+        "full_text_path": "research/staging/ordinary-large-campaign-2026-09-26/src-826b838b930e23b6.txt",
+        "text_excerpts": {
+          "1": "Read the \nHomeowner’s Guide \nto help you know \nwhat permit(s) you \nneed for your \nproject?\nHomeowner  fills \nout an online permit \napplication or \nsubmits via email\nIf plans/drawings \nare required, \nhomeowner uploads \nthem during online \napplication process\nSubmitted \napplication is \nreviewed by \nPlanning Assistant\nSubmitted \napplication is \nreviewed by \nPlanning Assistant\nIf corrections are \nneeded, the online \nsystem will send \nnotification to the \nhomeowner\nHomeowner submits \ncorrections online\nIf no corrections are \nrequired or if \ncorrections have \nbeen made, \nhomeowner pays \npermit fees\nPermit is issued\nNote:  Permit issued must be kept on site, at all times.\n"
+        },
+        "metadata": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "Elliott, Laurie",
+          "subject": "",
+          "keywords": "",
+          "creator": "Microsoft® Visio® LTSC",
+          "producer": "Microsoft® Visio® LTSC",
+          "creationDate": "D:20240220093919-07'00'",
+          "modDate": "D:20240220093919-07'00'",
+          "trapped": "",
+          "encryption": null
+        },
+        "representative_visual_qa": "passed_agent_inspection_opening_middle_ending",
+        "visually_reviewed_at": "2026-09-26T17:39:28.765548+00:00"
+      },
+      "disposition": "excluded",
+      "rationale": "homeowners-building-permit-flow-chart.pdf: Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record. This is routine transaction guidance without sufficient standalone policy/infrastructure value.",
+      "canonical_candidate_id": null,
+      "quality_assessment": {
+        "visual_inspection": "Fresh measured source, all-page text extraction and rendered opening/middle/ending inspected; low-ink pages inspected where present.",
+        "actual_function": "Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record.",
+        "measured_page_count": 1,
+        "measured_word_count": 97,
+        "intended_publication_form": "none; excluded",
+        "standalone_public_value": "Insufficient substantive ABQInfo public-information value; direct exclusion, not a borderline.",
+        "information_density": "Measured pages/words preserved; density does not convert generic material or transaction paperwork into eligible policy evidence.",
+        "series_component_relationship": "Administrative/generic supporting file; related substantive records remain independently reviewable.",
+        "substantive_rationale": "homeowners-building-permit-flow-chart.pdf: Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record. This is routine transaction guidance without sufficient standalone policy/infrastructure value."
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T17:39:28.765551+00:00",
+        "geographic_institutional_scope": "City of Albuquerque",
+        "specific_albuquerque_connection": "Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record.",
+        "abqinfo_public_information_value": "Does not materially explain a core Albuquerque public-policy or infrastructure subject beyond the originating transaction or generic external guidance.",
+        "general_context_exclusion_test": "City hosting, geographic origin, statewide applicability and administrative process usefulness do not substitute for both material Albuquerque content and substantial ABQInfo public-information value.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "homeowners-building-permit-flow-chart.pdf: Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record. This is routine transaction guidance without sufficient standalone policy/infrastructure value."
+      },
+      "archival_readiness": "not eligible: mission-scope exclusion; no R2 object",
+      "proposed_canonical_page": null,
+      "review_complete": true
+    },
+    {
+      "id": "src-a64d3561994aa604",
+      "saved_evidence": {
+        "id": "src-a64d3561994aa604",
+        "authoritative_url": "https://www.cabq.gov/planning/documents/contractor-trade-permit-flow-chart.pdf",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+        "content_kind": "PDF",
+        "leading_bytes": "25504446",
+        "size_bytes": 58335,
+        "checksum_sha256": "ef121dc9d30ff1870a72801b37af1ae47358571fe29f39172522493ac94b8e90",
+        "title_for_reference": "contractor-trade-permit-flow-chart.pdf",
+        "what_it_is": "A permit process flow chart, cancellation request, stop-work request or contact sheet for a live City permitting process.",
+        "exclusion_reason": "Not a substantive record. It is process paperwork for a permitting process that is still running - a flow chart of the steps, a request form to cancel or stop work, a contact sheet. The archive has already settled this class at this exact path, excluding a generic hard-copy application link for a live process as not substantive.",
+        "category": "live process paperwork",
+        "package": "process_paperwork"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/ntmp-planning-documents-cluster-research-2026-09-13.json"
+      ],
+      "fresh_source_qa": {
+        "source_exact_verified": true,
+        "source_GET": {
+          "http_status": 200,
+          "requested_url": "https://www.cabq.gov/planning/documents/contractor-trade-permit-flow-chart.pdf",
+          "final_url": "https://www.cabq.gov/planning/documents/contractor-trade-permit-flow-chart.pdf",
+          "content_type": "application/pdf",
+          "verified_at": "2026-09-26T17:35:42.516395+00:00",
+          "size_bytes": 58335,
+          "checksum_sha256": "ef121dc9d30ff1870a72801b37af1ae47358571fe29f39172522493ac94b8e90",
+          "leading_bytes": "255044462d312e370d0a25b5b5b5b50d"
+        },
+        "staged_path": "research/staging/ordinary-large-campaign-2026-09-26/src-a64d3561994aa604.pdf",
+        "size_bytes": 58335,
+        "checksum_sha256": "ef121dc9d30ff1870a72801b37af1ae47358571fe29f39172522493ac94b8e90",
+        "container": "PDF",
+        "structural_result": "opens_without_password_or_repair",
+        "page_count": 1,
+        "word_count": 81,
+        "text_layer_pages": 1,
+        "rendered_pages": 1,
+        "low_ink_pages": [],
+        "contact_sheets": [
+          "tmp/ordinary-large-campaign-qa-2026-09-26/src-a64d3561994aa604-contact-1.jpg"
+        ],
+        "representative_images": [
+          "tmp/ordinary-large-campaign-qa-2026-09-26/src-a64d3561994aa604-page-1.png"
+        ],
+        "full_text_path": "research/staging/ordinary-large-campaign-2026-09-26/src-a64d3561994aa604.txt",
+        "text_excerpts": {
+          "1": "Do you need an \nElectrical, Plumbing \nor Mechanical \npermit?\nContractor fills out \nan online permit \napplication or \nsubmits via email\nPlans/Drawings are \nreviewed and \nApproved/Denied by \nPlan Reviewer\nSubmitted \napplication is \nreviewed by \nPlanning Assistant\nIf corrections are \nneeded, the online \nsystem will send \nnotification to the \ncontractor\nContractor submits \ncorrections online\nIf no corrections are \nrequired or if \ncorrections have \nbeen made, \ncontractor pays \npermit fees\nPermit is issued\nNote:  Permit issued must be kept on site, at all times.\n"
+        },
+        "metadata": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "Elliott, Laurie",
+          "subject": "",
+          "keywords": "",
+          "creator": "Microsoft® Visio® LTSC",
+          "producer": "Microsoft® Visio® LTSC",
+          "creationDate": "D:20240220094927-07'00'",
+          "modDate": "D:20240220094927-07'00'",
+          "trapped": "",
+          "encryption": null
+        },
+        "representative_visual_qa": "passed_agent_inspection_opening_middle_ending",
+        "visually_reviewed_at": "2026-09-26T17:39:28.765553+00:00"
+      },
+      "disposition": "excluded",
+      "rationale": "contractor-trade-permit-flow-chart.pdf: Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record. This is routine transaction guidance without sufficient standalone policy/infrastructure value.",
+      "canonical_candidate_id": null,
+      "quality_assessment": {
+        "visual_inspection": "Fresh measured source, all-page text extraction and rendered opening/middle/ending inspected; low-ink pages inspected where present.",
+        "actual_function": "Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record.",
+        "measured_page_count": 1,
+        "measured_word_count": 81,
+        "intended_publication_form": "none; excluded",
+        "standalone_public_value": "Insufficient substantive ABQInfo public-information value; direct exclusion, not a borderline.",
+        "information_density": "Measured pages/words preserved; density does not convert generic material or transaction paperwork into eligible policy evidence.",
+        "series_component_relationship": "Administrative/generic supporting file; related substantive records remain independently reviewable.",
+        "substantive_rationale": "contractor-trade-permit-flow-chart.pdf: Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record. This is routine transaction guidance without sufficient standalone policy/infrastructure value."
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T17:39:28.765556+00:00",
+        "geographic_institutional_scope": "City of Albuquerque",
+        "specific_albuquerque_connection": "Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record.",
+        "abqinfo_public_information_value": "Does not materially explain a core Albuquerque public-policy or infrastructure subject beyond the originating transaction or generic external guidance.",
+        "general_context_exclusion_test": "City hosting, geographic origin, statewide applicability and administrative process usefulness do not substitute for both material Albuquerque content and substantial ABQInfo public-information value.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "contractor-trade-permit-flow-chart.pdf: Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record. This is routine transaction guidance without sufficient standalone policy/infrastructure value."
+      },
+      "archival_readiness": "not eligible: mission-scope exclusion; no R2 object",
+      "proposed_canonical_page": null,
+      "review_complete": true
+    },
+    {
+      "id": "src-c28ac1861614a36d",
+      "saved_evidence": {
+        "id": "src-c28ac1861614a36d",
+        "authoritative_url": "https://www.cabq.gov/planning/documents/homeowners-trade-permit-flow-chart.pdf",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+        "content_kind": "PDF",
+        "leading_bytes": "25504446",
+        "size_bytes": 83925,
+        "checksum_sha256": "705703b19efac89de64ba2fce572c3284cb6508d4e9b845012660bf0dc0b5487",
+        "title_for_reference": "homeowners-trade-permit-flow-chart.pdf",
+        "what_it_is": "A permit process flow chart, cancellation request, stop-work request or contact sheet for a live City permitting process.",
+        "exclusion_reason": "Not a substantive record. It is process paperwork for a permitting process that is still running - a flow chart of the steps, a request form to cancel or stop work, a contact sheet. The archive has already settled this class at this exact path, excluding a generic hard-copy application link for a live process as not substantive.",
+        "category": "live process paperwork",
+        "package": "process_paperwork"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/ntmp-planning-documents-cluster-research-2026-09-13.json"
+      ],
+      "fresh_source_qa": {
+        "source_exact_verified": true,
+        "source_GET": {
+          "http_status": 200,
+          "requested_url": "https://www.cabq.gov/planning/documents/homeowners-trade-permit-flow-chart.pdf",
+          "final_url": "https://www.cabq.gov/planning/documents/homeowners-trade-permit-flow-chart.pdf",
+          "content_type": "application/pdf",
+          "verified_at": "2026-09-26T17:35:42.957054+00:00",
+          "size_bytes": 83925,
+          "checksum_sha256": "705703b19efac89de64ba2fce572c3284cb6508d4e9b845012660bf0dc0b5487",
+          "leading_bytes": "255044462d312e370d0a25b5b5b5b50d"
+        },
+        "staged_path": "research/staging/ordinary-large-campaign-2026-09-26/src-c28ac1861614a36d.pdf",
+        "size_bytes": 83925,
+        "checksum_sha256": "705703b19efac89de64ba2fce572c3284cb6508d4e9b845012660bf0dc0b5487",
+        "container": "PDF",
+        "structural_result": "opens_without_password_or_repair",
+        "page_count": 1,
+        "word_count": 94,
+        "text_layer_pages": 1,
+        "rendered_pages": 1,
+        "low_ink_pages": [],
+        "contact_sheets": [
+          "tmp/ordinary-large-campaign-qa-2026-09-26/src-c28ac1861614a36d-contact-1.jpg"
+        ],
+        "representative_images": [
+          "tmp/ordinary-large-campaign-qa-2026-09-26/src-c28ac1861614a36d-page-1.png"
+        ],
+        "full_text_path": "research/staging/ordinary-large-campaign-2026-09-26/src-c28ac1861614a36d.txt",
+        "text_excerpts": {
+          "1": "Read the \nHomeowner’s Guide \nto help you know \nwhat permit(s) you \nneed for your \nproject?\nHomeowner \nschedules & passes \nplumbing and/or \nelectrical exam\nHomeowner fills out \nan online permit \napplication or \nsubmits via email\nSubmitted \napplication is \nreviewed by \nPlanning Assistant\nSubmitted \napplication is \nreviewed by \nPlanning Assistant\nIf corrections are \nneeded, the online \nsystem will send \nnotification to the \nhomeowner\nHomeowner submits \ncorrections online\nIf no corrections are \nrequired or if \ncorrections have \nbeen made, \nhomeowner pays \npermit fees\nPermit is issued\nNote:  Permit issued must be kept on site, at all times.\n"
+        },
+        "metadata": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "Elliott, Laurie",
+          "subject": "",
+          "keywords": "",
+          "creator": "Microsoft® Visio® LTSC",
+          "producer": "Microsoft® Visio® LTSC",
+          "creationDate": "D:20240220094350-07'00'",
+          "modDate": "D:20240220094350-07'00'",
+          "trapped": "",
+          "encryption": null
+        },
+        "representative_visual_qa": "passed_agent_inspection_opening_middle_ending",
+        "visually_reviewed_at": "2026-09-26T17:39:28.765558+00:00"
+      },
+      "disposition": "excluded",
+      "rationale": "homeowners-trade-permit-flow-chart.pdf: Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record. This is routine transaction guidance without sufficient standalone policy/infrastructure value.",
+      "canonical_candidate_id": null,
+      "quality_assessment": {
+        "visual_inspection": "Fresh measured source, all-page text extraction and rendered opening/middle/ending inspected; low-ink pages inspected where present.",
+        "actual_function": "Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record.",
+        "measured_page_count": 1,
+        "measured_word_count": 94,
+        "intended_publication_form": "none; excluded",
+        "standalone_public_value": "Insufficient substantive ABQInfo public-information value; direct exclusion, not a borderline.",
+        "information_density": "Measured pages/words preserved; density does not convert generic material or transaction paperwork into eligible policy evidence.",
+        "series_component_relationship": "Administrative/generic supporting file; related substantive records remain independently reviewable.",
+        "substantive_rationale": "homeowners-trade-permit-flow-chart.pdf: Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record. This is routine transaction guidance without sufficient standalone policy/infrastructure value."
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T17:39:28.765560+00:00",
+        "geographic_institutional_scope": "City of Albuquerque",
+        "specific_albuquerque_connection": "Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record.",
+        "abqinfo_public_information_value": "Does not materially explain a core Albuquerque public-policy or infrastructure subject beyond the originating transaction or generic external guidance.",
+        "general_context_exclusion_test": "City hosting, geographic origin, statewide applicability and administrative process usefulness do not substitute for both material Albuquerque content and substantial ABQInfo public-information value.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "homeowners-trade-permit-flow-chart.pdf: Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record. This is routine transaction guidance without sufficient standalone policy/infrastructure value."
+      },
+      "archival_readiness": "not eligible: mission-scope exclusion; no R2 object",
+      "proposed_canonical_page": null,
+      "review_complete": true
+    },
+    {
+      "id": "src-da51e530c87ba7ca",
+      "saved_evidence": {
+        "id": "src-da51e530c87ba7ca",
+        "authoritative_url": "https://www.cabq.gov/planning/documents/permit-cancellation-request-for-contractors-2.pdf",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+        "content_kind": "PDF",
+        "leading_bytes": "25504446",
+        "size_bytes": 49305,
+        "checksum_sha256": "0a6542a042c59158fcce9fd157f3ab5317ae36a46168bbfd60f00bbb86f36504",
+        "title_for_reference": "permit-cancellation-request-for-contractors-2.pdf",
+        "what_it_is": "A permit process flow chart, cancellation request, stop-work request or contact sheet for a live City permitting process.",
+        "exclusion_reason": "Not a substantive record. It is process paperwork for a permitting process that is still running - a flow chart of the steps, a request form to cancel or stop work, a contact sheet. The archive has already settled this class at this exact path, excluding a generic hard-copy application link for a live process as not substantive.",
+        "category": "live process paperwork",
+        "package": "process_paperwork"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/ntmp-planning-documents-cluster-research-2026-09-13.json"
+      ],
+      "fresh_source_qa": {
+        "source_exact_verified": true,
+        "source_GET": {
+          "http_status": 200,
+          "requested_url": "https://www.cabq.gov/planning/documents/permit-cancellation-request-for-contractors-2.pdf",
+          "final_url": "https://www.cabq.gov/planning/documents/permit-cancellation-request-for-contractors-2.pdf",
+          "content_type": "application/pdf",
+          "verified_at": "2026-09-26T17:35:43.640333+00:00",
+          "size_bytes": 49305,
+          "checksum_sha256": "0a6542a042c59158fcce9fd157f3ab5317ae36a46168bbfd60f00bbb86f36504",
+          "leading_bytes": "255044462d312e370d0a25b5b5b5b50d"
+        },
+        "staged_path": "research/staging/ordinary-large-campaign-2026-09-26/src-da51e530c87ba7ca.pdf",
+        "size_bytes": 49305,
+        "checksum_sha256": "0a6542a042c59158fcce9fd157f3ab5317ae36a46168bbfd60f00bbb86f36504",
+        "container": "PDF",
+        "structural_result": "opens_without_password_or_repair",
+        "page_count": 1,
+        "word_count": 69,
+        "text_layer_pages": 1,
+        "rendered_pages": 1,
+        "low_ink_pages": [],
+        "contact_sheets": [
+          "tmp/ordinary-large-campaign-qa-2026-09-26/src-da51e530c87ba7ca-contact-1.jpg"
+        ],
+        "representative_images": [
+          "tmp/ordinary-large-campaign-qa-2026-09-26/src-da51e530c87ba7ca-page-1.png"
+        ],
+        "full_text_path": "research/staging/ordinary-large-campaign-2026-09-26/src-da51e530c87ba7ca.txt",
+        "text_excerpts": {
+          "1": " \nDate:  _________________________________ \n \nEffective immediately, I, _____________________________________, contractor on record for permit \nnumber _______________________________ wish to cancel permit for property location:      \n___________________________________________________________________________________. \nCancellation is requested for the following reason: \n______________________________________________________________________________ \n______________________________________________________________________________ \n______________________________________________________________________________ \n______________________________________________________________________________ \n \nState of New Mexico \nCounty of Bernalillo \nSinged and sworn to before me on this day, the ___________________ of _____________________, \n_____________, by _____________________________. \n \n \n \n \n \n \n________________________________________________ \n \n \n \n \n \n(Signature) \n \n \n(Notary Stamp) \n \n \n________________________________________________ \n \n \n \n \n \n(Notary Signature) \nApproved by: \n \n \n___________________________________________ \n \n________________________ \n(Division Manager) \n \n \n \n \n \n \nDate \n"
+        },
+        "metadata": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "Elliott, Laurie",
+          "subject": "",
+          "keywords": "",
+          "creator": "Microsoft® Word 2019",
+          "producer": "Microsoft® Word 2019",
+          "creationDate": "D:20221005115653-06'00'",
+          "modDate": "D:20221005115653-06'00'",
+          "trapped": "",
+          "encryption": null
+        },
+        "representative_visual_qa": "passed_agent_inspection_opening_middle_ending",
+        "visually_reviewed_at": "2026-09-26T17:39:28.765562+00:00"
+      },
+      "disposition": "excluded",
+      "rationale": "permit-cancellation-request-for-contractors-2.pdf: Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record. This is routine transaction guidance without sufficient standalone policy/infrastructure value.",
+      "canonical_candidate_id": null,
+      "quality_assessment": {
+        "visual_inspection": "Fresh measured source, all-page text extraction and rendered opening/middle/ending inspected; low-ink pages inspected where present.",
+        "actual_function": "Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record.",
+        "measured_page_count": 1,
+        "measured_word_count": 69,
+        "intended_publication_form": "none; excluded",
+        "standalone_public_value": "Insufficient substantive ABQInfo public-information value; direct exclusion, not a borderline.",
+        "information_density": "Measured pages/words preserved; density does not convert generic material or transaction paperwork into eligible policy evidence.",
+        "series_component_relationship": "Administrative/generic supporting file; related substantive records remain independently reviewable.",
+        "substantive_rationale": "permit-cancellation-request-for-contractors-2.pdf: Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record. This is routine transaction guidance without sufficient standalone policy/infrastructure value."
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T17:39:28.765564+00:00",
+        "geographic_institutional_scope": "City of Albuquerque",
+        "specific_albuquerque_connection": "Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record.",
+        "abqinfo_public_information_value": "Does not materially explain a core Albuquerque public-policy or infrastructure subject beyond the originating transaction or generic external guidance.",
+        "general_context_exclusion_test": "City hosting, geographic origin, statewide applicability and administrative process usefulness do not substitute for both material Albuquerque content and substantial ABQInfo public-information value.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "permit-cancellation-request-for-contractors-2.pdf: Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record. This is routine transaction guidance without sufficient standalone policy/infrastructure value."
+      },
+      "archival_readiness": "not eligible: mission-scope exclusion; no R2 object",
+      "proposed_canonical_page": null,
+      "review_complete": true
+    },
+    {
+      "id": "src-e9a45e771497acb7",
+      "saved_evidence": {
+        "id": "src-e9a45e771497acb7",
+        "authoritative_url": "https://www.cabq.gov/planning/documents/contractor-building-permit-flow-chart.pdf",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - one file named .docx in this lane is a PDF.",
+        "content_kind": "PDF",
+        "leading_bytes": "25504446",
+        "size_bytes": 59128,
+        "checksum_sha256": "2181a795688d62d932ef65fd087129771473ab0622f26518256c259efde68cb4",
+        "title_for_reference": "contractor-building-permit-flow-chart.pdf",
+        "what_it_is": "A permit process flow chart, cancellation request, stop-work request or contact sheet for a live City permitting process.",
+        "exclusion_reason": "Not a substantive record. It is process paperwork for a permitting process that is still running - a flow chart of the steps, a request form to cancel or stop work, a contact sheet. The archive has already settled this class at this exact path, excluding a generic hard-copy application link for a live process as not substantive.",
+        "category": "live process paperwork",
+        "package": "process_paperwork"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/ntmp-planning-documents-cluster-research-2026-09-13.json"
+      ],
+      "fresh_source_qa": {
+        "source_exact_verified": true,
+        "source_GET": {
+          "http_status": 200,
+          "requested_url": "https://www.cabq.gov/planning/documents/contractor-building-permit-flow-chart.pdf",
+          "final_url": "https://www.cabq.gov/planning/documents/contractor-building-permit-flow-chart.pdf",
+          "content_type": "application/pdf",
+          "verified_at": "2026-09-26T17:35:44.068114+00:00",
+          "size_bytes": 59128,
+          "checksum_sha256": "2181a795688d62d932ef65fd087129771473ab0622f26518256c259efde68cb4",
+          "leading_bytes": "255044462d312e370d0a25b5b5b5b50d"
+        },
+        "staged_path": "research/staging/ordinary-large-campaign-2026-09-26/src-e9a45e771497acb7.pdf",
+        "size_bytes": 59128,
+        "checksum_sha256": "2181a795688d62d932ef65fd087129771473ab0622f26518256c259efde68cb4",
+        "container": "PDF",
+        "structural_result": "opens_without_password_or_repair",
+        "page_count": 1,
+        "word_count": 87,
+        "text_layer_pages": 1,
+        "rendered_pages": 1,
+        "low_ink_pages": [],
+        "contact_sheets": [
+          "tmp/ordinary-large-campaign-qa-2026-09-26/src-e9a45e771497acb7-contact-1.jpg"
+        ],
+        "representative_images": [
+          "tmp/ordinary-large-campaign-qa-2026-09-26/src-e9a45e771497acb7-page-1.png"
+        ],
+        "full_text_path": "research/staging/ordinary-large-campaign-2026-09-26/src-e9a45e771497acb7.txt",
+        "text_excerpts": {
+          "1": "Do you need a \nBuilding Permit?\nContractor fills out \nan online permit \napplication or \nsubmits via email\nBuilding Plans are \nuploaded during the \nonline application \nprocess\nPlans/Drawings are \nreviewed and \nApproved/Denied by \nPlan Reviewer\nSubmitted \napplication is \nreviewed by \nPlanning Assistant\nIf corrections are \nneeded, the online \nsystem will send \nnotification to the \ncontractor\nContractor submits \ncorrections online\nIf no corrections are \nrequired or if \ncorrections have \nbeen made, \ncontractor pays \npermit fees\nPermit is issued\nNote:  Permit issued must be kept on site, at all times.\n"
+        },
+        "metadata": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "Elliott, Laurie",
+          "subject": "",
+          "keywords": "",
+          "creator": "Microsoft® Visio® LTSC",
+          "producer": "Microsoft® Visio® LTSC",
+          "creationDate": "D:20240220094734-07'00'",
+          "modDate": "D:20240220094734-07'00'",
+          "trapped": "",
+          "encryption": null
+        },
+        "representative_visual_qa": "passed_agent_inspection_opening_middle_ending",
+        "visually_reviewed_at": "2026-09-26T17:39:28.765567+00:00"
+      },
+      "disposition": "excluded",
+      "rationale": "contractor-building-permit-flow-chart.pdf: Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record. This is routine transaction guidance without sufficient standalone policy/infrastructure value.",
+      "canonical_candidate_id": null,
+      "quality_assessment": {
+        "visual_inspection": "Fresh measured source, all-page text extraction and rendered opening/middle/ending inspected; low-ink pages inspected where present.",
+        "actual_function": "Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record.",
+        "measured_page_count": 1,
+        "measured_word_count": 87,
+        "intended_publication_form": "none; excluded",
+        "standalone_public_value": "Insufficient substantive ABQInfo public-information value; direct exclusion, not a borderline.",
+        "information_density": "Measured pages/words preserved; density does not convert generic material or transaction paperwork into eligible policy evidence.",
+        "series_component_relationship": "Administrative/generic supporting file; related substantive records remain independently reviewable.",
+        "substantive_rationale": "contractor-building-permit-flow-chart.pdf: Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record. This is routine transaction guidance without sufficient standalone policy/infrastructure value."
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T17:39:28.765569+00:00",
+        "geographic_institutional_scope": "City of Albuquerque",
+        "specific_albuquerque_connection": "Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record.",
+        "abqinfo_public_information_value": "Does not materially explain a core Albuquerque public-policy or infrastructure subject beyond the originating transaction or generic external guidance.",
+        "general_context_exclusion_test": "City hosting, geographic origin, statewide applicability and administrative process usefulness do not substitute for both material Albuquerque content and substantial ABQInfo public-information value.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "contractor-building-permit-flow-chart.pdf: Permit-processing flow chart or blank permit stop/cancellation request, with steps or fields rather than a substantive adopted instrument or project record. This is routine transaction guidance without sufficient standalone policy/infrastructure value."
+      },
+      "archival_readiness": "not eligible: mission-scope exclusion; no R2 object",
+      "proposed_canonical_page": null,
+      "review_complete": true
+    }
+  ],
+  "visitor_visible_content_changed": false,
+  "state": "reviewed_decisions_ready_for_inventory"
+}
