@@ -25,6 +25,11 @@ def start(a):
         subprocess.run(['pwsh','-NoProfile','-ExecutionPolicy','Bypass','-File','scripts/project/Get-R2Inventory.ps1','-OutputPath',a.live],cwd=ROOT,check=True)
     if ACTIVE.exists():assert context()[1]['state']=='complete_background_campaign','Resume the unfinished campaign; never reset it'
     assert not git('status','--porcelain','--','content'),'Visible changes prohibit background launch'
+    assert not git('diff','--name-only') and not git('diff','--cached','--name-only'),'Commit and integrate unfinished tracked background work before launch'
+    heads={git('rev-parse',r) for r in ['HEAD','main','chatgpt/planning-snapshot','origin/main','origin/chatgpt/planning-snapshot']}
+    live_heads={line.split()[0] for line in git('ls-remote','origin','refs/heads/main','refs/heads/chatgpt/planning-snapshot').splitlines()}
+    assert len(heads)==1 and live_heads==heads,'Finish prior background branch reconciliation before locking a new campaign'
+    assert load(STATE/'discovery/mission-scope-borderline-human-review-queue.json')['unresolved_count']<20,'Human scope batch is at capacity; obtain dispositions first'
     queue=load(ROOT/a.queue);inv=load(STATE/'master-inventory.json');rows={r['id']:r for r in inv['candidates']}
     pending={i for i,r in rows.items() if r['status']=='pending review'}
     assert pending==set(queue['pending_ids']),'Queue stale: regenerate before launch'
@@ -75,7 +80,8 @@ def review_module(d):
     return m
 def checkpoint(a):
     path,d=context();d['last_checkpoint_at']=now();save(path,d)
-    subprocess.run(['pwsh','-NoProfile','-ExecutionPolicy','Bypass','-File','scripts/project/Write-ProjectCheckpoint.ps1','-CompletedRange',f"Active background campaign {d['campaign_id']}: {len(d['resolved_records'])} resolutions; {len(d['archive_objects'])} exact archives",'-ResumeCommand','Read AGENTS.md, CURRENT.md, campaign-workflow.md and active-campaign.json; resume saved campaign without resetting or repeating completed families.'],cwd=ROOT,check=True,stdout=subprocess.DEVNULL)
+    resume='Campaign complete; read CURRENT.md and the current queue. Do not repeat sealed families; next work requires its own owner invocation.' if d['state']=='complete_background_campaign' else 'Read AGENTS.md, CURRENT.md, campaign-workflow.md and active-campaign.json; resume saved campaign without resetting or repeating completed families.'
+    subprocess.run(['pwsh','-NoProfile','-ExecutionPolicy','Bypass','-File','scripts/project/Write-ProjectCheckpoint.ps1','-CompletedRange',f"Active background campaign {d['campaign_id']}: {len(d['resolved_records'])} resolutions; {len(d['archive_objects'])} exact archives",'-ResumeCommand',resume],cwd=ROOT,check=True,stdout=subprocess.DEVNULL)
     cp=load(STATE/'checkpoint.json');cp['active_background_campaign']=dict(campaign_id=d['campaign_id'],artifact=rel(path),profile=d['profile'],state=d['state'],resolutions=len(d['resolved_records']),exact_archives=len(d['archive_objects']),workflow='project-state/campaign-workflow.md');save(STATE/'checkpoint.json',cp)
 def main():
     p=argparse.ArgumentParser();p.add_argument('operation',choices=['start','status','prepare','show','review','apply','checkpoint']);p.add_argument('--profile',default='ordinary-review-large');p.add_argument('--id');p.add_argument('--queue');p.add_argument('--live');p.add_argument('--start',type=int,default=1);p.add_argument('--end',type=int,default=999);p.add_argument('--workers',type=int,default=4);p.add_argument('--text',type=int,default=0);p.add_argument('--images',action='store_true');p.add_argument('--decisions');a=p.parse_args()
@@ -91,6 +97,7 @@ def main():
     if a.operation=='checkpoint':checkpoint(a);return
     assert d['state']!='complete_background_campaign','Completed campaign is sealed'
     if a.operation=='review':
+        assert load(STATE/'discovery/mission-scope-borderline-human-review-queue.json')['unresolved_count']<20,'Human scope batch is at capacity; stop ordinary intake'
         decisions=load(ROOT/a.decisions)['decisions']
         assert isinstance(decisions,dict) and decisions,'Decisions must be an explicit nonempty ID-keyed mapping'
         selected={q['id'] for q in load(ROOT/d['selection_artifact'])['all_pending_records']}
