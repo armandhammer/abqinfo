@@ -7,6 +7,10 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+if (Test-Path -LiteralPath 'project-state/discovery/human-review-reassessment-2026-09-26/summary.json') {
+  & python -B "$PSScriptRoot/Test-HumanReviewReassessment.py"
+  if ($LASTEXITCODE) { throw 'Human-review reassessment population/provenance/archive audit failed.' }
+}
 if (Test-Path -LiteralPath 'project-state/discovery/consolidated-human-review-queue.json') {
   & python -B "$PSScriptRoot/Build-ConsolidatedHumanReviewQueue.py" --check
   if ($LASTEXITCODE) { throw 'Consolidated human-review queue freshness and coverage validation failed.' }

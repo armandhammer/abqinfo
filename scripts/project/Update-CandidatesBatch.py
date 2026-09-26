@@ -12,7 +12,7 @@ now=datetime.now(timezone.utc).isoformat().replace('+00:00','Z');validation=[]
 for x in request:
  row=rows[x['id']];before=copy.deepcopy(row)
  for key,value in x['changes'].items():
-  assert key in row or key in ['scope_assessment','review_reason'], 'Unknown field '+key
+  assert key in row or key in ['scope_assessment','quality_assessment','review_reason','canonical_candidate_id'], 'Unknown field '+key
   row[key]=value
  assert row['status'] in inventory['allowed_statuses'], 'Unknown candidate status'
  if row!=before:

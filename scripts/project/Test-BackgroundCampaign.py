@@ -50,6 +50,17 @@ subprocess.run(['pwsh','-NoProfile','-ExecutionPolicy','Bypass','-File',str(size
 active=ROOT/'project-state/active-campaign.json'
 if active.exists():
  pointer=load(active);d=load(ROOT/pointer['campaign_artifact'])
+ # Seal this completed campaign at the next owner task's immutable baseline.
+ # The independent reassessment audit constrains every subsequent changed row,
+ # object and queue. Never grant this profile protected-family authorization.
+ later=ROOT/'project-state/discovery/human-review-reassessment-2026-09-26/authorization.json'
+ if later.exists() and d['state']=='complete_background_campaign':
+  sealed_commit=load(later)['baseline_commit']; live_load=load
+  sealed_paths={'project-state/master-inventory.json','project-state/r2-inventory.json','project-state/discovery/mission-scope-borderline-human-review-queue.json'}
+  def load(p):
+   relative=Path(p).resolve().relative_to(ROOT).as_posix()
+   if relative in sealed_paths:return json.loads(subprocess.check_output(['git','show',sealed_commit+':'+relative],cwd=ROOT).decode('utf-8-sig'))
+   return live_load(p)
  for receipt in d.get('validation_history',[]):
   assert hashlib.sha256((ROOT/receipt['log_artifact']).read_bytes()).hexdigest()==receipt['log_sha256'],'Durable validation log changed'
  s=load(ROOT/d['selection_artifact'])
