@@ -22,4 +22,4 @@ Read AGENTS.md and retrieve inventory rows selectively. Preserve unrelated files
 
 ## Validation and integration
 
-Full project validation, inventory/scope regressions, all campaign regressions, focused archive health, crawler checks, local Hugo build and git diff --check passed. External links were not swept across the full site; archive verification covers the exact 261-object campaign population. Background-only Git integration is the remaining closeout step.
+Full project validation, inventory/scope regressions, all campaign regressions, focused archive health, crawler checks, local Hugo build and git diff --check passed. External links were not swept across the full site; archive verification covers the exact 261-object campaign population. Background-only campaign PR [#183](https://github.com/armandhammer/abqinfo/pull/183) merged at `39e3b73073d7bccb8b4459d81f9a86339794fc75`; Cloudflare Pages check passed. Local main and planning-snapshot were fast-forwarded to that merge. The final metadata-only handoff is to be integrated and both remote/local branches synchronized before ending this task. The campaign is closed; do not repeat review or archival.
