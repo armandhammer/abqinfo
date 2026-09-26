@@ -10,9 +10,10 @@ with (ROOT/'tmp/background-campaign-writer.lock').open('a+b') as lock:
  path,d=context();attempt=len(d.get('validation_history',[]))+1;log=path.parent/f'full-validation-{attempt:03d}.log';started=now()
  command=['pwsh','-NoProfile','-ExecutionPolicy','Bypass','-File','scripts/project/Invoke-ProjectValidation.ps1']
  with log.open('wb') as output:r=subprocess.run(command,cwd=ROOT,stdout=output,stderr=subprocess.STDOUT)
+ raw_log=log.read_bytes();log.write_text('\n'.join(line.rstrip() for line in raw_log.decode('utf-8',errors='replace').splitlines())+'\n',encoding='utf-8',newline='\n')
  diff=subprocess.run(['git','diff','--check'],cwd=ROOT,capture_output=True)
  visible=subprocess.check_output(['git','diff',d['baseline_commit'],'--name-only','--','content'],cwd=ROOT).strip()
- receipt=dict(started_at=started,completed_at=now(),command=command,exit_code=r.returncode,git_diff_check_exit_code=diff.returncode,content_tree_unchanged=not bool(visible),log_artifact=rel(log),log_sha256=hashlib.sha256(log.read_bytes()).hexdigest(),state='passed' if r.returncode==0 and diff.returncode==0 and not visible else 'failed')
+ receipt=dict(raw_console_log_sha256=hashlib.sha256(raw_log).hexdigest(),log_normalization='UTF-8 console text; CRLF normalized to LF and trailing console whitespace removed.',started_at=started,completed_at=now(),command=command,exit_code=r.returncode,git_diff_check_exit_code=diff.returncode,content_tree_unchanged=not bool(visible),log_artifact=rel(log),log_sha256=hashlib.sha256(log.read_bytes()).hexdigest(),state='passed' if r.returncode==0 and diff.returncode==0 and not visible else 'failed')
  save(path.parent/f'validation-{attempt:03d}.json',receipt);save(path.parent/'validation.json',receipt);d.setdefault('validation_history',[]).append(receipt);d['validation']=receipt;save(path,d)
  print(receipt)
  print(log.read_text(encoding='utf-8',errors='replace')[-2500:])
