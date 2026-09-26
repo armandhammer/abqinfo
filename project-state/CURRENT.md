@@ -34,4 +34,4 @@ Compact resume state. Read `AGENTS.md`, inspect branch/worktree, and query inven
 
 ## Validation and integration
 
-Campaign regression locks sources, keys, public hashes, lifecycle states, generated/original distinctions, unrelated inventory, exclusions, governing artifacts and zero content diffs. Checkpoint regenerators retain verified DPM outcomes instead of restoring a satisfied storage gate. Full validation and background integration outcomes are recorded in the campaign artifact. No content PR or publication is part of this task.
+Campaign regression locks sources, keys, public hashes, lifecycle states, generated/original distinctions, unrelated inventory, exclusions, governing artifacts and zero content diffs. Checkpoint regenerators retain verified DPM outcomes instead of restoring a satisfied storage gate. Full validation passed. Background PR [#179](https://github.com/armandhammer/abqinfo/pull/179) merged at 1f31c9c6716eab316d9c1b4ed8cc987e265928da; integration evidence is recorded in the campaign artifact. No content PR or publication is part of this task.
