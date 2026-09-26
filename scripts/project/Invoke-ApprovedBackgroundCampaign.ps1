@@ -44,7 +44,7 @@ function Update-Inventory($r,$object) {
   Set-Field $r 'inventory_status_after' $(if($r.canonical_page){'placement assigned'}else{'approved for addition'})
   Set-Field $r 'inventory_reconciled' $true
 }
-if ($d.records.Count -ne 27 -or $d.visitor_visible_content_changed -or $d.project_storage_limit_bytes -ne 10000000000) { throw 'Campaign scope/guardrails invalid.' }
+if ($d.records.Count -ne 27 -or $d.visitor_visible_content_changed -or $d.project_storage_limit_bytes -ne 13000000000) { throw 'Campaign scope/guardrails invalid.' }
 if ($Phase -eq 'originals') { $selected=@($d.records) }
 elseif ($Phase -eq 'capital') {
   if (@($d.records | Where-Object outcome -eq 'ready_for_guarded_upload').Count) { throw 'Process all original attempts first.' }
@@ -68,7 +68,7 @@ foreach ($r in $selected) {
     } else {
       if ($r.outcome -eq 'archive_complete') { throw 'Previously verified object disappeared' }
       if (@($live.objects | Where-Object size_bytes -eq $r.size_bytes).Count) { throw 'Unresolved same-size live object' }
-      if ($live.total_bytes+$r.size_bytes -gt 10000000000) {throw 'Storage ceiling reached'}
+      if ($live.total_bytes+$r.size_bytes -gt 13000000000) {throw 'Storage ceiling reached'}
       Set-Field $r 'upload_intent' ([pscustomobject]@{id=$r.id;r2_key=$r.r2_key;key_was_absent=$true;started_at=(Get-Date).ToUniversalTime().ToString('o')})
       Save-Campaign
       $args=@{SourcePath=$r.staged_path;ObjectKey=$r.r2_key}

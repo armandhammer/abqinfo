@@ -8,7 +8,7 @@ $guardPath='tmp/ordinary-large-campaign-live-2026-09-26.json'
 $d=Get-Content $campaignPath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
 $family=Get-Content $familyPath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
 $baseline=Get-Content $d.baseline_r2_artifact -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
-if ($d.project_storage_limit_bytes -ne 10000000000 -or $d.visitor_visible_content_changed) {throw 'Campaign boundary changed'}
+if ($d.project_storage_limit_bytes -ne 13000000000 -or $d.visitor_visible_content_changed) {throw 'Campaign boundary changed'}
 function Field($o,$n,$v){$o|Add-Member -NotePropertyName $n -NotePropertyValue $v -Force}
 function Save-State {
   foreach ($entry in @(@{path=$campaignPath;data=$d},@{path=$familyPath;data=$family})) {
@@ -28,7 +28,7 @@ function Guard {
     $intents=@($family.records|Where-Object { $_.PSObject.Properties['upload_intent'] -and $_.r2_key -ceq $o.key -and $_.fresh_source_qa.size_bytes -eq $o.size_bytes })
     if($intents.Count -ne 1){throw "Unexpected R2 object: $($o.key)"}
   }}
-  if($live.total_bytes -gt 10000000000){throw 'Storage ceiling exceeded'}
+  if($live.total_bytes -gt 13000000000){throw 'Storage ceiling exceeded'}
   return $live
 }
 # The complete listing is refreshed immediately before the first mutation and
@@ -53,7 +53,7 @@ foreach($r in $family.records){
       if($existing.Count -ne 1 -or $existing[0].key -cne $r.r2_key -or $existing[0].size_bytes -ne $qa.size_bytes -or -not $r.PSObject.Properties['upload_intent']){throw 'Exact/casefold collision; overwrite prohibited'}
     }else{
       if(@($live.objects|Where-Object size_bytes -eq $qa.size_bytes).Count){throw 'Unresolved same-size R2 candidate'}
-      if($live.total_bytes+$qa.size_bytes -gt 10000000000){Field $r 'archive_deferred_reason' 'Fully prepared; only storage capacity prevents upload';Save-State;continue}
+      if($live.total_bytes+$qa.size_bytes -gt 13000000000){Field $r 'archive_deferred_reason' 'Fully prepared; only storage capacity prevents upload';Save-State;continue}
       Field $r 'upload_intent' ([pscustomobject]@{key=$r.r2_key;key_was_absent=$true;size_bytes=$qa.size_bytes;sha256=$qa.checksum_sha256;started_at=(Get-Date).ToUniversalTime().ToString('o')})
       Save-State
       $uploadArgs=@{SourcePath=$qa.staged_path;ObjectKey=$r.r2_key}

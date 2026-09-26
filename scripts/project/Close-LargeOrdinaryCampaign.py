@@ -14,14 +14,14 @@ def main():
     final=load(final_path);old={o['key']:o for o in baseline['objects']};current={o['key']:o for o in final['objects']};added={o['key']:o for o in d['archive_objects']}
     for k,o in old.items():assert k in current and all(current[k][f]==o[f] for f in ['key','size_bytes','etag'])
     assert current.keys()-old.keys()==added.keys()
-    assert final['total_bytes']==baseline['total_bytes']+sum(o['size_bytes'] for o in added.values())<=10000000000
+    assert final['total_bytes']==baseline['total_bytes']+sum(o['size_bytes'] for o in added.values())<=13000000000
     assert load(ROOT/'project-state/r2-inventory.json')['objects']==final['objects']
     evidence=[load(ROOT/f['artifact']) for f in d['families_processed']]
     qa=[r['fresh_source_qa'] for fam in evidence for r in fam['records'] if r.get('review_complete') and r.get('fresh_source_qa')]
     html=[r for fam in evidence for r in fam['records'] if r.get('review_complete') and r['saved_evidence']['content_kind']=='HTML']
     outcomes=collections.Counter(r['decision'] for r in d['resolved_records'])
     d['accounting']=dict(resolved_records=500,families_completed=sum(f['complete'] for f in d['families_processed']),families_attempted=len(d['families_processed']),outcomes=dict(outcomes),new_human_review=0,new_borderlines=0,exact_source_files_reviewed=len(qa),exact_source_bytes_reviewed=sum(q['size_bytes'] for q in qa),pdf_pages_reviewed=sum(q['page_count'] for q in qa),pages_rendered=sum(q['rendered_pages'] for q in qa),html_records_resolved_using_saved_full_GET=len(html),saved_html_bytes_measured=sum(r['saved_evidence']['size_bytes'] for r in html),current_source_health_samples=sum('source_health_sample' in fam for fam in evidence),archive_prepared=sum(r['decision']=='approved for addition' for r in d['resolved_records']),objects_archived=len(added),bytes_archived=sum(o['size_bytes'] for o in added.values()),placement_assigned_transitions=sum(rows[r['id']]['status']=='placement assigned' for r in d['resolved_records']),capacity_deferred=0,source_or_structural_blocked=len(d['deferred_records']),exact_duplicate_reconciliations=outcomes['duplicate'],additional_integrity_audit_status_changes=0,pre_existing_objects_unchanged=True,no_preexisting_overwrites=True,no_unexpected_objects_added=True,saved_live_key_size_etag_match=True)
-    d['final_inventory_counts']=inv['counts'];d['final_r2']={'object_count':final['object_count'],'total_bytes':final['total_bytes'],'storage_headroom_bytes':10000000000-final['total_bytes']};d['final_live_listing_artifact']=final_path.relative_to(ROOT).as_posix()
+    d['final_inventory_counts']=inv['counts'];d['final_r2']={'object_count':final['object_count'],'total_bytes':final['total_bytes'],'storage_headroom_bytes':13000000000-final['total_bytes']};d['final_live_listing_artifact']=final_path.relative_to(ROOT).as_posix()
     qs={q['id']:q for q in s['all_pending_records']};pending=[r for r in rows.values() if r['status']=='pending review'];gated={i:reason for i,reason in s['excluded_gated_pending_ids'].items() if rows[i]['status']=='pending review'};blocked={r['id'] for r in d['deferred_records']}
     groups=collections.defaultdict(list)
     for r in pending:

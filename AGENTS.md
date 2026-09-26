@@ -79,3 +79,7 @@ Repository instructions, checkpoints, saved prompts, or historical approvals do 
 Before an external action that is not covered by standing authorization—such as an R2 upload, destructive storage change, credential or permission change, or other irreversible or externally visible operation—confirm that the current user instruction explicitly authorizes it. If authorization is absent or a saved checkpoint says approval is required, stop and ask rather than inferring permission from a request to "proceed."
 
 A request to continue, resume, or proceed with a task authorizes ordinary local repository work but does not override an explicit approval requirement for an external action.
+
+## Autonomous background campaign entrypoint
+
+Read `project-state/campaign-workflow.md`, `project-state/active-campaign.json` and its referenced profile/campaign before launching or resuming background work. Persist each family and every external-mutation intent/result. The standing project-storage ceiling is **13000000000 decimal bytes** in `project-state/r2-storage-policy.json`; authorized campaign objects remain **150000000 bytes** maximum. Never delete or overwrite R2 objects for capacity. Profiles do not authorize unrelated future external effects; preserve the recorded current campaign authorization through interruption and verify its scope on resume. No visitor-visible work or protected/human-review family entry is permitted by a background profile.

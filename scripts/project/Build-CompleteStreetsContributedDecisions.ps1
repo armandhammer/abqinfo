@@ -157,7 +157,7 @@ $archivePlan = [ordered]@{
   schema_version = 1; generated_at = (Get-Date).ToUniversalTime().ToString('o')
   bucket = [string]$r2.bucket; current_r2_bytes = $preBatchR2Bytes; added_bytes = $addedBytes
   projected_r2_bytes = $preBatchR2Bytes + $addedBytes
-  maximum_object_bytes = [int64](100MB); maximum_projected_r2_bytes = [int64](10GB); items = $decisions
+  maximum_object_bytes = [int64](100MB); maximum_projected_r2_bytes = [int64](13000000000); items = $decisions
 }
 $archivePlan | ConvertTo-Json -Depth 12 | Set-Content -LiteralPath $ArchivePlanPath -Encoding utf8
 

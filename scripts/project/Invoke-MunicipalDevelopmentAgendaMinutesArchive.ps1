@@ -6,7 +6,7 @@ param(
   [string]$OutputPath = 'project-state/discovery/municipaldevelopment-agenda-minutes-archive-public-byte-verification-2026-09-21.json',
   [string]$SourceDirectory = 'research/staging/municipaldevelopment-agenda-minutes-archive-2026-09-21',
   [int64]$MaximumObjectBytes = 100000000,
-  [int64]$MaximumProjectedR2Bytes = 10000000000
+  [int64]$MaximumProjectedR2Bytes = 13000000000
 )
 
 Set-StrictMode -Version Latest

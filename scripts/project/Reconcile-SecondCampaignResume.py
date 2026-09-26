@@ -12,7 +12,7 @@ live = load(D / 'second-large-campaign-resume-live-2026-09-26.json')
 baseline = load(ROOT / c['baseline_r2_artifact'])
 objects = {o['key']: o for o in live['objects']}
 assert len(objects) == len({k.casefold() for k in objects}) == live['object_count']
-assert live['total_bytes'] == sum(o['size_bytes'] for o in objects.values()) <= 10000000000
+assert live['total_bytes'] == sum(o['size_bytes'] for o in objects.values()) <= 13000000000
 for o in baseline['objects']:
     assert all(objects[o['key']][f] == o[f] for f in ['size_bytes', 'etag']), ('Baseline collision', o['key'])
 records = {r['id']: r for f in c['families_processed'] for r in load(ROOT / f['artifact'])['records'] if r.get('review_complete')}

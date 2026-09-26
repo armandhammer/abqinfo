@@ -293,7 +293,7 @@ $archivePlan = [ordered]@{
   added_bytes = $totalAdded
   projected_r2_bytes = [int64]$r2.total_bytes + $totalAdded
   maximum_object_bytes = [int64](100MB)
-  maximum_projected_r2_bytes = [int64](10GB)
+  maximum_projected_r2_bytes = [int64](13000000000)
   items = $archiveItems
 }
 $archivePlan | ConvertTo-Json -Depth 12 | Set-Content -LiteralPath $ArchivePlanPath -Encoding utf8

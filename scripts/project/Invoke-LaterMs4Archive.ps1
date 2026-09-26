@@ -73,7 +73,7 @@ $evidence = [ordered]@{
   schema_version=1;artifact_type='later_ms4_archive_public_byte_verification'
   started_at=(Get-Date).ToUniversalTime().ToString('o');state='running'
   authorized_scope='exactly six unchanged prepared originals; R2 upload and exact public-byte verification only'
-  max_object_bytes=150000000;max_projected_storage_bytes=10000000000
+  max_object_bytes=150000000;max_projected_storage_bytes=13000000000
   preparation_artifact=$PreparationPath;preflight_artifact='project-state/discovery/later-ms4-r2-upload-preflight-2026-09-24.json'
   before_r2=$initialBefore;initial_pre_existing_manifest_sha256=$initialManifest
   preflight=$preflight;results=@()
@@ -98,7 +98,7 @@ try {
     if ($present.ContainsKey($check.id)) {
       $public = $present[$check.id]
     } else {
-      $upload = @(& "$PSScriptRoot/../upload-r2-document.ps1" -SourcePath $check.staged_original -ObjectKey $check.r2_key -MaxObjectBytes 150000000 -MaxProjectedStorageBytes 10000000000)
+      $upload = @(& "$PSScriptRoot/../upload-r2-document.ps1" -SourcePath $check.staged_original -ObjectKey $check.r2_key -MaxObjectBytes 150000000 -MaxProjectedStorageBytes 13000000000)
       if (@($upload | Where-Object { $_.PSObject.Properties.Name -contains 'R2Metadata' }).Count -ne 1) { throw "Uploader did not confirm R2 metadata: $($check.id)" }
       $action = 'uploaded_now'
       $public = & "$PSScriptRoot/Test-R2PublicObject.ps1" -SourcePath $check.staged_original -PublicUrl ([uri]$check.public_url)

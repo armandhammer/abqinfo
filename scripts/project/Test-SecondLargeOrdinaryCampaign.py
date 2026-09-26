@@ -5,6 +5,16 @@ from pathlib import Path
 c=runpy.run_path(str(Path(__file__).with_name('SecondLargeOrdinaryCampaign.py')))
 ROOT,DISC,ART,SEL,BASE,load,digest=(c[k] for k in ['ROOT','DISC','ART','SEL','BASE','load','digest'])
 def seal_digest(obj):return hashlib.sha256(json.dumps(obj,sort_keys=True,separators=(',',':'),ensure_ascii=False).encode()).hexdigest()
+# A later campaign owns subsequent changes; verify this closed campaign at its sealed handoff.
+active=ROOT/'project-state/active-campaign.json'
+if active.exists():
+    original_load=load
+    def historical_load(path):
+        relative=Path(path).relative_to(ROOT).as_posix()
+        if relative in ['project-state/master-inventory.json','project-state/r2-inventory.json','project-state/checkpoint.json']:
+            return json.loads(subprocess.check_output(['git','show','1b5bb82:'+relative],cwd=ROOT).decode('utf-8-sig'))
+        return original_load(path)
+    load=historical_load
 d=load(ART);s=load(SEL);inv=load(ROOT/'project-state/master-inventory.json');rows={r['id']:r for r in inv['candidates']}
 prior={r['id']:r for r in json.loads(subprocess.check_output(['git','show',BASE+':project-state/master-inventory.json'],cwd=ROOT).decode('utf-8-sig'))['candidates']}
 resolved={r['id']:r for r in d['resolved_records']}

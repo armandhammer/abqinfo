@@ -18,11 +18,16 @@ param(
   [Int64]$MaxObjectBytes = 100000000,
 
   [ValidateRange(1, [Int64]::MaxValue)]
-  [Int64]$MaxProjectedStorageBytes = 10000000000
+  [Int64]$MaxProjectedStorageBytes = 13000000000
 )
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+
+$storagePolicy = Get-Content -LiteralPath "$PSScriptRoot/../project-state/r2-storage-policy.json" -Raw -Encoding UTF8 | ConvertFrom-Json
+if ($MaxProjectedStorageBytes -gt [int64]$storagePolicy.maximum_projected_r2_bytes) {
+  throw 'Requested storage limit exceeds authoritative project-storage policy.'
+}
 
 if (-not (Test-Path -LiteralPath $SourcePath -PathType Leaf)) {
   throw "Source file not found: $SourcePath"

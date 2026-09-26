@@ -43,7 +43,7 @@ if ($existingCount -eq $items.Count) {
   $accounting = [pscustomobject]@{ object_count = $r2.object_count; total_bytes = $r2.total_bytes; added_or_reconciled = $items.Count; inventory_path = $R2InventoryPath }
 } else {
   [int64]$addedBytes = ($items | Measure-Object size_bytes -Sum).Sum
-  $plan = [ordered]@{ schema_version = 1; batch_id = 'municipaldevelopment-agenda-minutes-archive-2026-09-21'; current_r2_bytes = [int64]$r2.total_bytes; maximum_object_bytes = 100000000; maximum_projected_r2_bytes = 10000000000; batch_bytes = $addedBytes; added_bytes = $addedBytes; projected_r2_bytes = [int64]$r2.total_bytes + $addedBytes; items = $items }
+  $plan = [ordered]@{ schema_version = 1; batch_id = 'municipaldevelopment-agenda-minutes-archive-2026-09-21'; current_r2_bytes = [int64]$r2.total_bytes; maximum_object_bytes = 100000000; maximum_projected_r2_bytes = 13000000000; batch_bytes = $addedBytes; added_bytes = $addedBytes; projected_r2_bytes = [int64]$r2.total_bytes + $addedBytes; items = $items }
   $validation = [ordered]@{ schema_version = 1; artifact_type = 'public_byte_validation'; verified_at = (Get-Date).ToUniversalTime().ToString('o'); results = $validationResults }
   Write-Json $plan $PlanPath
   Write-Json $validation $PublicValidationPath
