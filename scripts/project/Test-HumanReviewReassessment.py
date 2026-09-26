@@ -8,7 +8,19 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 F = ROOT / 'project-state/discovery/human-review-reassessment-2026-09-26'
-def load(p): return json.loads(Path(p).read_text(encoding='utf-8-sig'))
+def load(p):
+    p = Path(p)
+    later = ROOT / 'project-state/discovery/background-followup-2026-09-26/authorization.json'
+    # Keep this completed 205-record audit sealed at the next authorized task's
+    # immutable baseline. Test-BackgroundFollowup.py audits all later live changes.
+    sealed_paths = {'project-state/master-inventory.json', 'project-state/r2-inventory.json',
+                    'project-state/checkpoint.json', 'project-state/ordinary-queue-current.json',
+                    'project-state/discovery/codex-human-review-followup-queue.json'}
+    relative = p.relative_to(ROOT).as_posix()
+    if later.exists() and relative in sealed_paths:
+        baseline = json.loads(later.read_text(encoding='utf-8'))['baseline_commit']
+        return json.loads(subprocess.check_output(['git', 'show', baseline + ':' + relative], cwd=ROOT).decode('utf-8-sig'))
+    return json.loads(p.read_text(encoding='utf-8-sig'))
 def digest(r): return hashlib.sha256(json.dumps(r, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
 def git(*args): return subprocess.check_output(['git', *args], cwd=ROOT)
 

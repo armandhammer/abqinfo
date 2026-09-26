@@ -6,6 +6,10 @@ param(
 )
 
 Set-StrictMode -Version Latest
+if (Test-Path -LiteralPath 'project-state/discovery/background-followup-2026-09-26/summary.json') {
+  & python "$PSScriptRoot/Test-BackgroundFollowup.py"
+  if ($LASTEXITCODE) { throw 'Background follow-up validation failed.' }
+}
 $ErrorActionPreference = 'Stop'
 if (Test-Path -LiteralPath 'project-state/discovery/human-review-reassessment-2026-09-26/summary.json') {
   & python -B "$PSScriptRoot/Test-HumanReviewReassessment.py"

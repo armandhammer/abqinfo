@@ -46,6 +46,10 @@ def build():
     evidence = {i: [] for i in ids}
     tracked = subprocess.check_output(['git', 'ls-files', 'project-state', 'research'], cwd=ROOT, text=True).splitlines()
     for name in tracked:
+        # This task preserves owner packages; its baseline copies and whole-row
+        # digest manifests are bookkeeping, not new owner-decision evidence.
+        if name.startswith('project-state/discovery/background-followup-2026-09-26/'):
+            continue
         if name == 'project-state/master-inventory.json' or 'consolidated-human-review' in name or '/campaigns/' in name or not name.endswith(('.json', '.md')):
             continue
         # Evidence lookup only; never derive membership from historical artifacts.
