@@ -87,6 +87,8 @@ if planning_archive_path.exists():
     assert planning_archive['summary']['public_byte_verified']==12
     planning_archived_ids={r['id'] for r in planning_archive['results'] if r['byte_identical']}
     assert len(planning_archived_ids)==12 and 'src-d9bf34830a9467e2' not in planning_archived_ids
+from BackgroundArchiveCampaign import completed_originals
+campaign_archived=completed_originals()
 for record in records:
     assert set(record['scope_assessment']) == required
     candidate = by_id[record['id']]
@@ -96,6 +98,12 @@ for record in records:
     if record['id'] in planning_archived_ids:
         assert record['resulting_status']=='approved for addition'
         expected_status='placement assigned'
+    if record['id'] in campaign_archived:
+        result=campaign_archived[record['id']]
+        assert record['resulting_status']=='approved for addition'
+        assert result['public_verification']['checksum_sha256']==candidate['checksum_sha256']
+        assert result['public_verification']['size_bytes']==candidate['size_bytes']
+        expected_status=result['inventory_status_after']
     if record['id'] == barelas_reconciled_id:
         assert record['resulting_status'] == 'approved for addition'
         expected_status = 'duplicate'

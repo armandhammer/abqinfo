@@ -20,23 +20,7 @@ function ConvertTo-ComparableJson {
 
 function Get-DpmAnnualConsolidationState {
   param([string]$ManifestPath)
-  $manifest = Get-Content -Raw -Encoding UTF8 -LiteralPath $ManifestPath | ConvertFrom-Json
-  return [pscustomobject][ordered]@{
-    state = 'corrected_local_packets_generated_upload_externally_gated'
-    manifest = $ManifestPath
-    component_count = [int](@($manifest.annual_packets | ForEach-Object { $_.component_count }) | Measure-Object -Sum).Sum
-    packets = @($manifest.annual_packets | ForEach-Object {
-      [pscustomobject][ordered]@{
-        year = $_.year
-        component_count = $_.component_count
-        page_count = $_.resulting_page_count
-        size_bytes = $_.resulting_size_bytes
-        sha256 = $_.resulting_sha256
-        local_output_path = $_.local_output_path
-        proposed_r2_key = $_.proposed_r2_key
-      }
-    })
-  }
+  & "$PSScriptRoot/Get-DpmAnnualConsolidationState.ps1" -ManifestPath $ManifestPath
 }
 
 $inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json

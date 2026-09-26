@@ -23,7 +23,12 @@ r2=load('project-state/r2-inventory.json'); checkpoint=load('project-state/check
 archive_path=ROOT/'project-state/discovery/planning-documents-root-archive-public-byte-verification-2026-09-26.json'
 archived=archive_path.exists() and load(archive_path.relative_to(ROOT).as_posix()).get('state')=='complete_all_12_public_byte_verified_and_inventory_reconciled'
 assert set(rows)==set(before)
-assert all(rows[rid]==before[rid] for rid in rows if rid!=DUP and not (archived and rid in ORDER)),'An unrelated or canonical inventory row changed'
+from BackgroundArchiveCampaign import completed_originals
+campaign_completed=completed_originals()
+assert all(rows[rid]==before[rid] for rid in rows if rid!=DUP and not (archived and rid in ORDER) and rid not in campaign_completed),'An unrelated or canonical inventory row changed'
+for rid,result in campaign_completed.items():
+    assert rid not in ORDER and rid not in {DUP,CANONICAL}
+    assert result['public_verification']['byte_identical'] and result['public_verification']['checksum_sha256']==rows[rid]['checksum_sha256']
 for field in ('source_url','direct_file_url','title','size_bytes','checksum_sha256','referring_urls','discovery_path','quality_assessment','scope_assessment'):
     assert rows[DUP][field]==before[DUP][field]
 assert rows[DUP]['status']=='duplicate' and rows[CANONICAL]['status']=='validated'
@@ -80,7 +85,9 @@ for artifact in (m,recon):
     assert artifact['r2_mutation'] is False and artifact['visitor_visible_content_changed'] is False
 counts=Counter(r['status'] for r in rows.values())
 assert {s:counts[s] for s in master['allowed_statuses']}==master['counts']==checkpoint['counts_by_status']
-assert counts['approved for addition']==(27 if archived else 39) and counts['duplicate']==1518
+from BackgroundArchiveCampaign import completed_originals
+campaign_placed=sum(r.get('inventory_status_after')=='placement assigned' for r in completed_originals().values())
+assert counts['approved for addition']==((27-campaign_placed) if archived else 39) and counts['duplicate']==1518
 historical='project-state/discovery/planning-documents-root-residual-decision-2026-09-20.json'
 assert (ROOT/historical).read_bytes()==baseline(historical),'Historical decision was rewritten'
 if not archived: assert (ROOT/'project-state/r2-inventory.json').read_text(encoding='utf-8-sig').replace('\r\n','\n')==baseline('project-state/r2-inventory.json').decode('utf-8-sig').replace('\r\n','\n')

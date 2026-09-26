@@ -24,7 +24,8 @@ def main() -> None:
     implementation = load(DISCOVERY / 'later-ms4-hugo-implementation-2026-09-25.json')
     archive = load(DISCOVERY / 'later-ms4-archive-public-byte-verification-2026-09-25.json')
     inventory = {r['id']: r for r in load(ROOT / 'project-state/master-inventory.json')['candidates']}
-    r2 = load(ROOT / 'project-state/r2-inventory.json')
+    from BackgroundArchiveCampaign import historical_r2
+    r2 = historical_r2(load(ROOT / 'project-state/r2-inventory.json'))
     gate = load(DISCOVERY / '2014-ms4-family-package-gate-2026-09-18.json')
     assert closeout['artifact_type'] == 'later_ms4_production_closeout'
     assert closeout['pr_number'] == 174

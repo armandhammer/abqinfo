@@ -7,6 +7,10 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+if (Test-Path -LiteralPath 'project-state/discovery/approved-backlog-background-archive-campaign-2026-09-26.json') {
+  & python -B "$PSScriptRoot/Test-ApprovedBackgroundCampaign.py"
+  if ($LASTEXITCODE) { throw 'Approved background campaign regression failed.' }
+}
 & "$PSScriptRoot/Test-MasterInventory.ps1" -InventoryPath $InventoryPath
 if (-not $?) { throw 'Master inventory validation failed.' }
 & "$PSScriptRoot/Test-MissionScopeEligibility.ps1"
