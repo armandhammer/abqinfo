@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-25T18:44:55.9788377Z",
+  "generated_at": "2026-09-26T05:38:38.2970951Z",
   "allowed_statuses": [
     "pending review",
     "approved for addition",
@@ -19,7 +19,7 @@
   ],
   "counts": {
     "pending review": 1612,
-    "approved for addition": 40,
+    "approved for addition": 39,
     "downloading": 0,
     "downloaded": 0,
     "parsed": 0,
@@ -28,7 +28,7 @@
     "implemented": 159,
     "validated": 1486,
     "excluded": 1885,
-    "duplicate": 1517,
+    "duplicate": 1518,
     "superseded": 231,
     "blocked": 0,
     "requires human review": 205
@@ -278764,7 +278764,7 @@
     },
     {
       "id": "src-d9bf34830a9467e2",
-      "status": "approved for addition",
+      "status": "duplicate",
       "source_url": "https://www.cabq.gov/planning/documents/BarelasRevitPlanCompleteWlegislationpdf.pdf/view",
       "direct_file_url": "https://www.cabq.gov/planning/documents/BarelasRevitPlanCompleteWlegislationpdf.pdf",
       "r2_url": null,
@@ -278791,7 +278791,9 @@
       "discovery_method": "authored document link",
       "crawl_depth": 4,
       "cited_predecessors": [],
-      "cited_successors": [],
+      "cited_successors": [
+        "https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-BarelasNeighborhoodCommercialArea.pdf"
+      ],
       "provenance_status": "Authoritative City PDF directly fetched and remeasured; direct URL returned HTTP 200 on 2026-09-20.",
       "proposed_canonical_page": "content/development-land-use/redevelopment-plans.md",
       "description": "The City's revitalization plan for the Barelas neighbourhood commercial area, published complete with the legislation that adopted it, covering the commercial frontage the plan set out to revive.",
@@ -278800,16 +278802,17 @@
         "Discovered by deterministic crawl of https://www.cabq.gov/planning/documents/.",
         "Exact metadata and relevance remain pending source review.",
         "Planning documents-root residual family decision 2026-09-20: direct City PDF rechecked HTTP 200; size, SHA-256, page count, and disposition recorded.",
-        "Mission-scope audit 2026-09-22: passes_both_gates. Saved family research and the direct City originals establish a specific public-policy or infrastructure value for Albuquerque. Prior proposed placement/archive-preparation evidence is preserved as historical evidence and superseded for any excluded record."
+        "Mission-scope audit 2026-09-22: passes_both_gates. Saved family research and the direct City originals establish a specific public-policy or infrastructure value for Albuquerque. Prior proposed placement/archive-preparation evidence is preserved as historical evidence and superseded for any excluded record.",
+        "Planning documents-root exact-duplicate reconciliation 2026-09-26: this unchanged 8,719,030-byte / 150-page source delivery has SHA-256 c2081c6cbc60b029c2b558a73ad975b429b03e89cc1837c393f8b5c30191ae19, identical to validated canonical src-28418cab91a745a6 and its exact-public-byte verified archive. Preserve the Planning-root URLs and historical review; no second archive object or standalone public entry is appropriate. Evidence: project-state/discovery/planning-documents-root-barelas-duplicate-reconciliation-2026-09-26.json."
       ],
       "implementation_location": null,
       "implementation_locations": [],
       "cross_listing_approved": false,
-      "validation_status": "inventory-only Planning documents-root family decision; no archive or public-content action authorized",
-      "exclusion_reason": null,
-      "local_path": null,
+      "validation_status": "duplicate: exact saved/prepared size and SHA-256 match canonical src-28418cab91a745a6; canonical R2 object remains exact-public-byte verified",
+      "exclusion_reason": "Byte-identical source-path delivery of validated canonical src-28418cab91a745a6; no second archive object or standalone public entry.",
+      "local_path": "research/staging/planning-documents-root-archive-preparation-2026-09-25/src-d9bf34830a9467e2-BarelasRevitPlanCompleteWlegislationpdf.pdf",
       "discovered_at": "2026-08-04T14:15:57.2761953Z",
-      "updated_at": "2026-09-20T23:00:00Z",
+      "updated_at": "2026-09-26T05:38:37.5404487Z",
       "quality_assessment": {
         "visual_inspection": "Saved research visually inspected the cover or rendered image-only pages; other retained PDFs have usable text layers.",
         "measured_content": "Page counts, direct-source byte counts, and SHA-256 values are recorded per row. The retained plans range from 1 to 168 pages; image-only plans were rendered in saved research.",

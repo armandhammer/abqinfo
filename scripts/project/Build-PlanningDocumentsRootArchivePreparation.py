@@ -109,6 +109,8 @@ def inspect(path, pages, record_id):
     return {"structural_result":"opens_without_password_or_repair", "render_result":"all_pages_rendered", "rendered_pages":pages, "text_layer_pages":text_pages, "low_ink_pages_1_based":low_ink, "contact_sheets":sheets, "pdf_metadata_title":metadata.get("title",""), "page_text_excerpts":excerpts, "representative_visual_qa":"pending_human_review"}
 
 def main():
+    if (ROOT/'project-state/discovery/planning-documents-root-barelas-duplicate-reconciliation-2026-09-26.json').exists():
+        raise SystemExit('Source preparation is complete and has a superseding duplicate reconciliation; preserve its current derived state.')
     decision = load(DECISION)
     selected = [r for r in decision["records"] if r["disposition"] == "approved for addition"]
     assert len(selected) == 13 and set(PLAN) == {r["id"] for r in selected}
