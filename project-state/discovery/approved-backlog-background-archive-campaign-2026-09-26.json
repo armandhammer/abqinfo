@@ -4232,5 +4232,24 @@
   "remaining_backlog_artifact": "project-state/discovery/approved-inventory-backlog-status-post-background-archive-campaign-2026-09-26.json",
   "completed_at": "2026-09-26T17:00:31.103073+00:00",
   "validation_artifact": "project-state/discovery/approved-background-archive-validation-2026-09-26.json",
-  "validation_result": "passed"
+  "validation_result": "passed",
+  "integration": {
+    "state": "archive_PR_integrated_local_branches_reconciled",
+    "recorded_at": "2026-09-26T17:08:46.297873+00:00",
+    "background_pr_number": 179,
+    "background_pr_url": "https://github.com/armandhammer/abqinfo/pull/179",
+    "tested_head_commit": "63d06b56195fa41cc9c0ea733abda3fba2965f6a",
+    "merge_commit": "1f31c9c6716eab316d9c1b4ed8cc987e265928da",
+    "local_main_and_planning_sha": "1f31c9c6716eab316d9c1b4ed8cc987e265928da",
+    "cloudflare_pages_check": "passed",
+    "content_files_in_PR": [],
+    "visitor_visible_content_changed": false,
+    "publication_performed": false,
+    "logical_checkpoint_commits": [
+      "38828d2",
+      "0a7da28",
+      "63d06b5"
+    ],
+    "remaining_followup": "Commit durable integration receipt as background metadata, then reconcile final branches; no archival or content work remains."
+  }
 }
