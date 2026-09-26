@@ -1,24 +1,24 @@
 {
-  "recorded_at": "2026-09-26T18:28:49.3463975Z",
-  "completed_item_range": "Second large campaign in progress: 24 formerly pending resolutions; archives and remaining review tracked in project-state/discovery/ordinary-queue-second-large-resolution-campaign-2026-09-26.json",
+  "recorded_at": "2026-09-26T19:34:15.6547182Z",
+  "completed_item_range": "Second large campaign in progress: 700 formerly pending resolutions; archives and remaining review tracked in project-state/discovery/ordinary-queue-second-large-resolution-campaign-2026-09-26.json",
   "total_candidates": 7137,
   "counts_by_status": {
-    "pending review": 1088,
-    "approved for addition": 3,
+    "pending review": 412,
+    "approved for addition": 160,
     "downloading": 0,
     "downloaded": 0,
     "parsed": 0,
     "description drafted": 0,
-    "placement assigned": 56,
+    "placement assigned": 182,
     "implemented": 159,
     "validated": 1486,
-    "excluded": 2368,
-    "duplicate": 1541,
-    "superseded": 231,
+    "excluded": 2696,
+    "duplicate": 1593,
+    "superseded": 244,
     "blocked": 0,
     "requires human review": 205
   },
-  "remaining_nonterminal": 1306,
+  "remaining_nonterminal": 913,
   "next_pending_id": "src-05ec421cb265b29a",
   "blockers": [],
   "resume_command": "Resume second campaign evidence; no content changes; preserve all gates.",
@@ -28198,6 +28198,363 @@
         "Existing human/editorial gates remain; three prepared approvals require namespace/IA decisions; encrypted San Pedro crossing source remains pending; no content implementation authorized"
       ],
       "resume_command": "Read project-state/discovery/ordinary-queue-next-position-post-large-campaign-2026-09-26.json; next background review is the three MRCOG later measurement publications",
+      "verification_campaign_totals": {
+        "verified": 2194,
+        "passed": 2070,
+        "requires_human_review": 124
+      },
+      "durable_metadata": {
+        "dpm_annual_consolidation": {
+          "state": "corrected_packets_partially_archived_2018_human_review_deferred",
+          "manifest": "project-state/discovery/dpm-executive-committee-consolidation-manifest-2026-09-17.json",
+          "component_count": 44,
+          "packets": [
+            {
+              "year": 2014,
+              "component_count": 5,
+              "page_count": 13,
+              "size_bytes": 284803,
+              "sha256": "e03ddf4a07f20a83b76b6f5ee8afdfda956a0713c68b3a71e3ae034be78c6656",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2014.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2014.pdf",
+              "archive_outcome": "archive_complete",
+              "public_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2014.pdf"
+            },
+            {
+              "year": 2015,
+              "component_count": 9,
+              "page_count": 17,
+              "size_bytes": 773060,
+              "sha256": "51457ec34cd80383e6ad92aa38f17da84101b0ad118a8d687e2db48dd468be26",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2015.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2015.pdf",
+              "archive_outcome": "archive_complete",
+              "public_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2015.pdf"
+            },
+            {
+              "year": 2016,
+              "component_count": 9,
+              "page_count": 19,
+              "size_bytes": 449277,
+              "sha256": "9cae8d9fc7fa3a8ea727309015b656749ab759c89a0b434b3689f9f008359ed9",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2016.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2016.pdf",
+              "archive_outcome": "archive_complete",
+              "public_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2016.pdf"
+            },
+            {
+              "year": 2017,
+              "component_count": 15,
+              "page_count": 32,
+              "size_bytes": 762787,
+              "sha256": "d41a926cc273886293d4669ae5cb989c442ed3a8fc5fc7cb9c88c869250241c2",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2017.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2017.pdf",
+              "archive_outcome": "archive_complete",
+              "public_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2017.pdf"
+            },
+            {
+              "year": 2018,
+              "component_count": 6,
+              "page_count": 10,
+              "size_bytes": 376588,
+              "sha256": "87b085020276d880d388a702c23819027b5b510a955f672d464069df0896273b",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2018.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2018.pdf",
+              "archive_outcome": "deferred_human_review"
+            }
+          ],
+          "archive_evidence": "project-state/discovery/approved-backlog-background-archive-campaign-2026-09-26.json"
+        },
+        "background_archive_campaign": {
+          "state": "complete_background_campaign",
+          "artifact": "project-state/discovery/approved-backlog-background-archive-campaign-2026-09-26.json",
+          "archive_integration_pr": 179,
+          "archive_merge_commit": "1f31c9c6716eab316d9c1b4ed8cc987e265928da",
+          "verified_objects": 30,
+          "verified_added_bytes": 29783028,
+          "unresolved_archive_namespaces": 3,
+          "dpm_2018_human_review_deferred": true,
+          "visitor_visible_content_changed": false
+        },
+        "ordinary_large_campaign": {
+          "artifact": "project-state/discovery/ordinary-queue-large-resolution-campaign-2026-09-26.json",
+          "state": "complete_background_campaign",
+          "resolved_records": 500,
+          "families_completed": 201,
+          "objects_archived": 13,
+          "bytes_archived": 17230744,
+          "visitor_visible_content_changed": false,
+          "next_actionable_queue": "project-state/discovery/ordinary-queue-next-position-post-large-campaign-2026-09-26.json",
+          "next_actionable_background_id": "src-b9f68064d83c5038",
+          "integration_pr": 181,
+          "integration_merge_commit": "fa3e24b63b122ebf4257f7179d2cacc075ada9f8",
+          "validation": "full_project_validation_passed"
+        }
+      }
+    },
+    {
+      "recorded_at": "2026-09-26T18:28:49.3463975Z",
+      "completed_item_range": "Second large campaign in progress: 24 formerly pending resolutions; archives and remaining review tracked in project-state/discovery/ordinary-queue-second-large-resolution-campaign-2026-09-26.json",
+      "total_candidates": 7137,
+      "counts_by_status": {
+        "pending review": 1088,
+        "approved for addition": 3,
+        "downloading": 0,
+        "downloaded": 0,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 56,
+        "implemented": 159,
+        "validated": 1486,
+        "excluded": 2368,
+        "duplicate": 1541,
+        "superseded": 231,
+        "blocked": 0,
+        "requires human review": 205
+      },
+      "remaining_nonterminal": 1306,
+      "next_pending_id": "src-05ec421cb265b29a",
+      "blockers": [],
+      "resume_command": "Resume second campaign evidence; no content changes; preserve all gates.",
+      "verification_campaign_totals": {
+        "verified": 2194,
+        "passed": 2070,
+        "requires_human_review": 124
+      },
+      "durable_metadata": {
+        "dpm_annual_consolidation": {
+          "state": "corrected_packets_partially_archived_2018_human_review_deferred",
+          "manifest": "project-state/discovery/dpm-executive-committee-consolidation-manifest-2026-09-17.json",
+          "component_count": 44,
+          "packets": [
+            {
+              "year": 2014,
+              "component_count": 5,
+              "page_count": 13,
+              "size_bytes": 284803,
+              "sha256": "e03ddf4a07f20a83b76b6f5ee8afdfda956a0713c68b3a71e3ae034be78c6656",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2014.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2014.pdf",
+              "archive_outcome": "archive_complete",
+              "public_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2014.pdf"
+            },
+            {
+              "year": 2015,
+              "component_count": 9,
+              "page_count": 17,
+              "size_bytes": 773060,
+              "sha256": "51457ec34cd80383e6ad92aa38f17da84101b0ad118a8d687e2db48dd468be26",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2015.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2015.pdf",
+              "archive_outcome": "archive_complete",
+              "public_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2015.pdf"
+            },
+            {
+              "year": 2016,
+              "component_count": 9,
+              "page_count": 19,
+              "size_bytes": 449277,
+              "sha256": "9cae8d9fc7fa3a8ea727309015b656749ab759c89a0b434b3689f9f008359ed9",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2016.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2016.pdf",
+              "archive_outcome": "archive_complete",
+              "public_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2016.pdf"
+            },
+            {
+              "year": 2017,
+              "component_count": 15,
+              "page_count": 32,
+              "size_bytes": 762787,
+              "sha256": "d41a926cc273886293d4669ae5cb989c442ed3a8fc5fc7cb9c88c869250241c2",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2017.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2017.pdf",
+              "archive_outcome": "archive_complete",
+              "public_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2017.pdf"
+            },
+            {
+              "year": 2018,
+              "component_count": 6,
+              "page_count": 10,
+              "size_bytes": 376588,
+              "sha256": "87b085020276d880d388a702c23819027b5b510a955f672d464069df0896273b",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2018.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2018.pdf",
+              "archive_outcome": "deferred_human_review"
+            }
+          ],
+          "archive_evidence": "project-state/discovery/approved-backlog-background-archive-campaign-2026-09-26.json"
+        },
+        "background_archive_campaign": {
+          "state": "complete_background_campaign",
+          "artifact": "project-state/discovery/approved-backlog-background-archive-campaign-2026-09-26.json",
+          "archive_integration_pr": 179,
+          "archive_merge_commit": "1f31c9c6716eab316d9c1b4ed8cc987e265928da",
+          "verified_objects": 30,
+          "verified_added_bytes": 29783028,
+          "unresolved_archive_namespaces": 3,
+          "dpm_2018_human_review_deferred": true,
+          "visitor_visible_content_changed": false
+        },
+        "ordinary_large_campaign": {
+          "artifact": "project-state/discovery/ordinary-queue-large-resolution-campaign-2026-09-26.json",
+          "state": "complete_background_campaign",
+          "resolved_records": 500,
+          "families_completed": 201,
+          "objects_archived": 13,
+          "bytes_archived": 17230744,
+          "visitor_visible_content_changed": false,
+          "next_actionable_queue": "project-state/discovery/ordinary-queue-next-position-post-large-campaign-2026-09-26.json",
+          "next_actionable_background_id": "src-b9f68064d83c5038",
+          "integration_pr": 181,
+          "integration_merge_commit": "fa3e24b63b122ebf4257f7179d2cacc075ada9f8",
+          "validation": "full_project_validation_passed"
+        }
+      }
+    },
+    {
+      "recorded_at": "2026-09-26T19:02:42.6782872Z",
+      "completed_item_range": "Second large campaign in progress: 153 formerly pending resolutions; archives and remaining review tracked in project-state/discovery/ordinary-queue-second-large-resolution-campaign-2026-09-26.json",
+      "total_candidates": 7137,
+      "counts_by_status": {
+        "pending review": 959,
+        "approved for addition": 22,
+        "downloading": 0,
+        "downloaded": 0,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 118,
+        "implemented": 159,
+        "validated": 1486,
+        "excluded": 2416,
+        "duplicate": 1541,
+        "superseded": 231,
+        "blocked": 0,
+        "requires human review": 205
+      },
+      "remaining_nonterminal": 1258,
+      "next_pending_id": "src-05ec421cb265b29a",
+      "blockers": [],
+      "resume_command": "Resume second campaign evidence; no content changes; preserve all gates.",
+      "verification_campaign_totals": {
+        "verified": 2194,
+        "passed": 2070,
+        "requires_human_review": 124
+      },
+      "durable_metadata": {
+        "dpm_annual_consolidation": {
+          "state": "corrected_packets_partially_archived_2018_human_review_deferred",
+          "manifest": "project-state/discovery/dpm-executive-committee-consolidation-manifest-2026-09-17.json",
+          "component_count": 44,
+          "packets": [
+            {
+              "year": 2014,
+              "component_count": 5,
+              "page_count": 13,
+              "size_bytes": 284803,
+              "sha256": "e03ddf4a07f20a83b76b6f5ee8afdfda956a0713c68b3a71e3ae034be78c6656",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2014.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2014.pdf",
+              "archive_outcome": "archive_complete",
+              "public_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2014.pdf"
+            },
+            {
+              "year": 2015,
+              "component_count": 9,
+              "page_count": 17,
+              "size_bytes": 773060,
+              "sha256": "51457ec34cd80383e6ad92aa38f17da84101b0ad118a8d687e2db48dd468be26",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2015.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2015.pdf",
+              "archive_outcome": "archive_complete",
+              "public_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2015.pdf"
+            },
+            {
+              "year": 2016,
+              "component_count": 9,
+              "page_count": 19,
+              "size_bytes": 449277,
+              "sha256": "9cae8d9fc7fa3a8ea727309015b656749ab759c89a0b434b3689f9f008359ed9",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2016.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2016.pdf",
+              "archive_outcome": "archive_complete",
+              "public_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2016.pdf"
+            },
+            {
+              "year": 2017,
+              "component_count": 15,
+              "page_count": 32,
+              "size_bytes": 762787,
+              "sha256": "d41a926cc273886293d4669ae5cb989c442ed3a8fc5fc7cb9c88c869250241c2",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2017.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2017.pdf",
+              "archive_outcome": "archive_complete",
+              "public_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2017.pdf"
+            },
+            {
+              "year": 2018,
+              "component_count": 6,
+              "page_count": 10,
+              "size_bytes": 376588,
+              "sha256": "87b085020276d880d388a702c23819027b5b510a955f672d464069df0896273b",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2018.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2018.pdf",
+              "archive_outcome": "deferred_human_review"
+            }
+          ],
+          "archive_evidence": "project-state/discovery/approved-backlog-background-archive-campaign-2026-09-26.json"
+        },
+        "background_archive_campaign": {
+          "state": "complete_background_campaign",
+          "artifact": "project-state/discovery/approved-backlog-background-archive-campaign-2026-09-26.json",
+          "archive_integration_pr": 179,
+          "archive_merge_commit": "1f31c9c6716eab316d9c1b4ed8cc987e265928da",
+          "verified_objects": 30,
+          "verified_added_bytes": 29783028,
+          "unresolved_archive_namespaces": 3,
+          "dpm_2018_human_review_deferred": true,
+          "visitor_visible_content_changed": false
+        },
+        "ordinary_large_campaign": {
+          "artifact": "project-state/discovery/ordinary-queue-large-resolution-campaign-2026-09-26.json",
+          "state": "complete_background_campaign",
+          "resolved_records": 500,
+          "families_completed": 201,
+          "objects_archived": 13,
+          "bytes_archived": 17230744,
+          "visitor_visible_content_changed": false,
+          "next_actionable_queue": "project-state/discovery/ordinary-queue-next-position-post-large-campaign-2026-09-26.json",
+          "next_actionable_background_id": "src-b9f68064d83c5038",
+          "integration_pr": 181,
+          "integration_merge_commit": "fa3e24b63b122ebf4257f7179d2cacc075ada9f8",
+          "validation": "full_project_validation_passed"
+        }
+      }
+    },
+    {
+      "recorded_at": "2026-09-26T19:30:57.0618840Z",
+      "completed_item_range": "Second large campaign in progress: 584 formerly pending resolutions; archives and remaining review tracked in project-state/discovery/ordinary-queue-second-large-resolution-campaign-2026-09-26.json",
+      "total_candidates": 7137,
+      "counts_by_status": {
+        "pending review": 528,
+        "approved for addition": 152,
+        "downloading": 0,
+        "downloaded": 0,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 182,
+        "implemented": 159,
+        "validated": 1486,
+        "excluded": 2637,
+        "duplicate": 1544,
+        "superseded": 244,
+        "blocked": 0,
+        "requires human review": 205
+      },
+      "remaining_nonterminal": 1021,
+      "next_pending_id": "src-05ec421cb265b29a",
+      "blockers": [],
+      "resume_command": "Resume second campaign evidence; no content changes; preserve all gates.",
       "verification_campaign_totals": {
         "verified": 2194,
         "passed": 2070,

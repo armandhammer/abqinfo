@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_second_large_campaign_family_evidence",
+  "family_id": "family-027",
+  "family": "Delivery aliases of src-2f5da96c42d54fa8",
+  "scope_ids": [
+    "src-b1e0a1643b2e820c"
+  ],
+  "records": [
+    {
+      "id": "src-b1e0a1643b2e820c",
+      "saved_evidence": {
+        "id": "src-b1e0a1643b2e820c",
+        "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/bike-lane-ed-poster-final-eng.pdf/view",
+        "recommended_status": "duplicate",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes, because the inventory record carried neither. Container verified by leading bytes, not by extension.",
+        "content_kind": "PDF",
+        "leading_bytes": "25504446",
+        "raw_file_url": "https://www.cabq.gov/municipaldevelopment/documents/bike-lane-ed-poster-final-eng.pdf",
+        "size_bytes": 349018,
+        "checksum_sha256": "9d7d9d95ace8cbfb28024309f996377f5c58afc72c0e92ef5bea655287059b5b",
+        "canonical_id": "src-2f5da96c42d54fa8",
+        "title_for_reference": "bike-lane-ed-poster-final-eng.pdf/view",
+        "relationship": "The Plone /view wrapper URL of the English bicycle lane poster, recorded as a separate candidate.",
+        "how_it_was_established": "The /view URL was fetched in both forms. Stripped of the suffix it returns the same 349,018 bytes with the same SHA-256 as its plain twin. Fetched with the suffix intact it returns 110,513 bytes of HTML, leading bytes 3c21444f - the content management system's viewer page, not the document.",
+        "why_this_one_is_the_copy": "A /view URL is a wrapper around the object, not an object. Archive the raw form.",
+        "precedent": "The inventory already records the /view twin of gabac-mountain-road-bike-blvd-crossing.pdf as a duplicate; this follows it."
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/municipaldevelopment-flat-remainder-cluster-research-2026-09-13.json"
+      ],
+      "fresh_source_qa": {
+        "source_exact_verified": true,
+        "source_GET": {
+          "http_status": 200,
+          "requested_url": "https://www.cabq.gov/municipaldevelopment/documents/bike-lane-ed-poster-final-eng.pdf",
+          "final_url": "https://www.cabq.gov/municipaldevelopment/documents/bike-lane-ed-poster-final-eng.pdf",
+          "content_type": "application/pdf",
+          "verified_at": "2026-09-26T18:21:37.486969+00:00",
+          "size_bytes": 349018,
+          "checksum_sha256": "9d7d9d95ace8cbfb28024309f996377f5c58afc72c0e92ef5bea655287059b5b",
+          "leading_bytes": "255044462d312e370d25e2e3cfd30d0a"
+        },
+        "staged_path": "research/staging/ordinary-second-large-campaign-2026-09-26/src-b1e0a1643b2e820c.pdf",
+        "size_bytes": 349018,
+        "checksum_sha256": "9d7d9d95ace8cbfb28024309f996377f5c58afc72c0e92ef5bea655287059b5b",
+        "container": "PDF",
+        "structural_result": "opens_without_password_or_repair",
+        "page_count": 1,
+        "word_count": 103,
+        "text_layer_pages": 1,
+        "rendered_pages": 1,
+        "low_ink_pages": [],
+        "contact_sheets": [
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-b1e0a1643b2e820c-contact-1.jpg"
+        ],
+        "representative_images": [
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-b1e0a1643b2e820c-page-1.png"
+        ],
+        "full_text_path": "research/staging/ordinary-second-large-campaign-2026-09-26/src-b1e0a1643b2e820c.txt",
+        "text_excerpts": {
+          "1": "Parking Locations - \nNo Parking in Bicycle Lanes\nStopping in a bicycle lane, even for just a little bit, can be very dangerous for someone on a bicycle. \nAlways be sure to stop or park your car in a designated parking or loading space and never block or \nstop in the bike lane. Effective December 19, 2018 and per Section 8-5-1-1 of the Traffic Code, stopping, \nstanding, or parking is prohibited in bicycle lanes, and may result in a ticket.\nVehicle \nLane\nBicycle \nLane\nShared Vehicle \n& Bicycle Lane\nParking\nLane\nVehicle \nLane\nBicycle \nLane\nParking\nLane\nVehicle \nLane\nParking\nLane\nBicycle \nLane\n"
+        },
+        "metadata": {
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "Adobe InDesign CS6 (Windows)",
+          "producer": "Adobe PDF Library 10.0.1",
+          "creationDate": "D:20181128164317-07'00'",
+          "modDate": "D:20181128164425-07'00'",
+          "trapped": "",
+          "encryption": null
+        },
+        "representative_visual_qa": "passed_agent_inspection_opening_middle_ending",
+        "visual_review_evidence": "Opening/middle/ending pages inspected in supporting-review-01 through supporting-review-13, with complete source text and container/page/word QA. Full component comparisons and Nob Hill printed figure pages were independently checked against canonical originals; saved recommendations corrected where contradicted.",
+        "visually_reviewed_at": "2026-09-26T19:20:52.871417Z"
+      },
+      "disposition": "duplicate",
+      "rationale": "Fresh full authoritative GET exactly matches src-2f5da96c42d54fa8 by SHA-256 9d7d9d95ace8cbfb28024309f996377f5c58afc72c0e92ef5bea655287059b5b and size 349018 bytes. Preserve this delivery provenance and the settled canonical disposition; no second archival object.",
+      "canonical_candidate_id": "src-2f5da96c42d54fa8",
+      "quality_assessment": {
+        "visual_inspection": "Opening/middle/ending pages inspected in supporting-review-01 through supporting-review-13, with complete source text and container/page/word QA. Full component comparisons and Nob Hill printed figure pages were independently checked against canonical originals; saved recommendations corrected where contradicted.",
+        "actual_function": "Fresh full authoritative GET exactly matches src-2f5da96c42d54fa8 by SHA-256 9d7d9d95ace8cbfb28024309f996377f5c58afc72c0e92ef5bea655287059b5b and size 349018 bytes. Preserve this delivery provenance and the settled canonical disposition; no second archival object.",
+        "measured_page_count": 1,
+        "measured_word_count": 103,
+        "intended_publication_form": "none; no visitor-visible implementation authorized",
+        "standalone_public_value": "No distinct eligible standalone public record. Fresh full authoritative GET exactly matches src-2f5da96c42d54fa8 by SHA-256 9d7d9d95ace8cbfb28024309f996377f5c58afc72c0e92ef5bea655287059b5b and size 349018 bytes. Preserve this delivery provenance and the settled canonical disposition; no second archival object.",
+        "information_density": "Measured full-document pages/words and source container are retained in QA.",
+        "series_component_relationship": "Family boundary reviewed; independent original or administrative supporting file as identified in rationale.",
+        "substantive_rationale": "Fresh full authoritative GET exactly matches src-2f5da96c42d54fa8 by SHA-256 9d7d9d95ace8cbfb28024309f996377f5c58afc72c0e92ef5bea655287059b5b and size 349018 bytes. Preserve this delivery provenance and the settled canonical disposition; no second archival object."
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T19:20:52.871434Z",
+        "geographic_institutional_scope": "City of Albuquerque",
+        "specific_albuquerque_connection": "Fresh full authoritative GET exactly matches src-2f5da96c42d54fa8 by SHA-256 9d7d9d95ace8cbfb28024309f996377f5c58afc72c0e92ef5bea655287059b5b and size 349018 bytes. Preserve this delivery provenance and the settled canonical disposition; no second archival object.",
+        "abqinfo_public_information_value": "No substantive additional ABQInfo policy/infrastructure information is established by this delivery.",
+        "general_context_exclusion_test": "City hosting, jurisdiction, geographic origin and procedural usefulness alone are insufficient; the actual document function and distinct public value control.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Fresh full authoritative GET exactly matches src-2f5da96c42d54fa8 by SHA-256 9d7d9d95ace8cbfb28024309f996377f5c58afc72c0e92ef5bea655287059b5b and size 349018 bytes. Preserve this delivery provenance and the settled canonical disposition; no second archival object."
+      },
+      "archival_readiness": "Retain canonical relationship; no second upload",
+      "proposed_canonical_page": null,
+      "independent_review_input": "project-state/discovery/ordinary-second-large-campaign-supporting-review-decisions-2026-09-26.json",
+      "exact_identity_relationship": {
+        "canonical_id": "src-2f5da96c42d54fa8",
+        "canonical_status": "excluded",
+        "same_sha256": true,
+        "same_size": true,
+        "canonical_r2_key": null
+      },
+      "review_complete": true
+    }
+  ],
+  "visitor_visible_content_changed": false,
+  "state": "reviewed_decisions_ready_for_inventory"
+}

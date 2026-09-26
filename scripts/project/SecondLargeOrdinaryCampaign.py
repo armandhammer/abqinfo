@@ -157,6 +157,7 @@ def review(a):
                 assert not any(rows[i]['status'] in ['placement assigned','implemented','validated','approved for addition'] for i in aliases),'Retained exact canonical unresolved'
                 r['archive_preflight']=dict(same_hash_inventory_ids=aliases,key_collision=False,namespace_basis='Established page and R2 topical namespace: '+x['page'])
                 r['r2_key']=key;r['archival_readiness']='Original fully prepared; authorized guarded upload pending'
+                r['reviewed_title']=x.get('title') or rec['title']
             r['review_complete']=True;changed=True
         if changed:fam['state']='reviewed_decisions_ready_for_inventory';save(p,fam)
     print('Explicit reviewed decisions saved:',len(decisions))
@@ -179,7 +180,7 @@ def apply(a):
             qa=r.get('fresh_source_qa');rec=r['saved_evidence']
             if r['disposition']=='approved for addition':
                 assert r['mission_scope_assessment']['final_scope_decision']=='passes_both_gates'
-                approved.append(dict(id=i,changes=dict(status='approved for addition',title=rec['title'],agency=rec.get('publisher') or row['agency'],size_bytes=qa['size_bytes'],checksum_sha256=qa['checksum_sha256'],file_type=qa['container'],local_path=qa['staged_path'],scope_assessment=r['mission_scope_assessment'],proposed_canonical_page=r['proposed_canonical_page'],processing_notes=row['processing_notes']+[note],validation_status='Full source/quality/scope reviewed; original prepared; no implementation')))
+                approved.append(dict(id=i,changes=dict(status='approved for addition',title=r.get('reviewed_title') or rec['title'],agency=rec.get('publisher') or row['agency'],size_bytes=qa['size_bytes'],checksum_sha256=qa['checksum_sha256'],file_type=qa['container'],local_path=qa['staged_path'],scope_assessment=r['mission_scope_assessment'],proposed_canonical_page=r['proposed_canonical_page'],processing_notes=row['processing_notes']+[note],validation_status='Full source/quality/scope reviewed; original prepared; no implementation')))
             else:
                 z=dict(id=i,recommended_status=r['disposition'],scope_assessment=r['mission_scope_assessment'],evidence_note=note,size_bytes=(qa or rec)['size_bytes'],checksum_sha256=(qa or rec)['checksum_sha256'])
                 if row.get('checksum_sha256'):assert row['checksum_sha256']==z['checksum_sha256'],'Historical source identity changed'
@@ -189,9 +190,7 @@ def apply(a):
         application=DISC/f"ordinary-second-large-campaign-{f['family_id']}-application-{DATE}.json"
         save(application,dict(decisions=terminal,approved_updates=approved,source_evidence_artifact=rel(p),visitor_visible_content_changed=False))
         if terminal:subprocess.run([sys.executable,'-B',str(ROOT/'scripts/project/Apply-SavedTerminalResearch.py'),'--research',str(application),'--ids',','.join(z['id'] for z in terminal)],cwd=ROOT,check=True,stdout=subprocess.DEVNULL)
-        if approved:
-            cmd="$requests=Get-Content -Raw -Encoding UTF8 '"+rel(application)+"' | ConvertFrom-Json -AsHashtable -DateKind String; foreach($r in $requests.approved_updates){ & scripts/project/Update-Candidate.ps1 -Id $r.id -Set $r.changes | Out-Null }"
-            subprocess.run(['pwsh','-NoProfile','-ExecutionPolicy','Bypass','-Command',cmd],cwd=ROOT,check=True)
+        if approved:subprocess.run([sys.executable,'-B',str(ROOT/'scripts/project/Update-CandidatesBatch.py'),'--requests',rel(application)],cwd=ROOT,check=True,stdout=subprocess.DEVNULL)
         rows={r['id']:r for r in load(ROOT/'project-state/master-inventory.json')['candidates']}
         for r in selected:
             assert rows[r['id']]['status']==r['disposition']

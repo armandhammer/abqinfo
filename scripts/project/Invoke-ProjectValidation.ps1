@@ -7,6 +7,10 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+if (Test-Path -LiteralPath 'project-state/discovery/inventory-legacy-relationship-hardening-2026-09-26.json') {
+  & python -B "$PSScriptRoot/Test-LegacyRelationshipHardening.py"
+  if ($LASTEXITCODE) { throw 'Legacy relationship hardening regression failed.' }
+}
 if (Test-Path -LiteralPath 'project-state/discovery/ordinary-queue-second-large-resolution-campaign-2026-09-26.json') {
   & python -B "$PSScriptRoot/Test-SecondLargeOrdinaryCampaign.py"
   if ($LASTEXITCODE) { throw 'Second ordinary large campaign regression failed.' }

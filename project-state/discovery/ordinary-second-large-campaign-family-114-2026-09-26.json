@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_second_large_campaign_family_evidence",
+  "family_id": "family-114",
+  "family": "www.mrcog-nm.gov/536",
+  "scope_ids": [
+    "src-e63d4ebb9302ec96"
+  ],
+  "records": [
+    {
+      "id": "src-e63d4ebb9302ec96",
+      "disposition": "deferred",
+      "error": "Needs format-specific independent preparation: NOT RETRIEVED",
+      "saved_evidence": {
+        "id": "src-e63d4ebb9302ec96",
+        "authoritative_url": "https://www.mrcog-nm.gov/536/Annual-Report",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "NOT RETRIEVED",
+        "leading_bytes": "(none)",
+        "http_status": "302",
+        "inventory_title": "Annual Report",
+        "size_bytes": 0,
+        "checksum_sha256": "(not retrieved)",
+        "title_for_reference": "Annual Report",
+        "what_it_is": "A redirect to a host whose TLS certificate has expired.",
+        "exclusion_reason": "Could not be retrieved. The URL answers HTTP 302 and following the redirect fails at the TLS handshake: the destination's certificate has expired. Nothing was downloaded, so nothing was measured, and the row carries no checksum.",
+        "category": "unreachable: expired certificate",
+        "package": "nothing_at_the_url"
+      },
+      "historical_source_evidence_preserved": true
+    }
+  ],
+  "visitor_visible_content_changed": false,
+  "state": "prepared_pending_independent_review"
+}

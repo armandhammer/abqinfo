@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_second_large_campaign_family_evidence",
+  "family_id": "family-074",
+  "family": "Delivery aliases of src-bce376528f3a3ada",
+  "scope_ids": [
+    "src-3064e4e7213ced94"
+  ],
+  "records": [
+    {
+      "id": "src-3064e4e7213ced94",
+      "disposition": "deferred",
+      "error": "Needs format-specific independent preparation: OOXML",
+      "saved_evidence": {
+        "id": "src-3064e4e7213ced94",
+        "authoritative_url": "https://www.mrcog-nm.gov/DocumentCenter/View/6504/Project-Feasibility-Form-PFF-DOCX",
+        "recommended_status": "duplicate",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - three records in this lane return HTML despite sitting under a DocumentCenter path, and one file whose URL slug ends -PDF is a JPEG.",
+        "content_kind": "OOXML",
+        "leading_bytes": "504b0304",
+        "publisher": "Mid-Region Council of Governments",
+        "mrcog_document_number": 6504,
+        "size_bytes": 59280,
+        "checksum_sha256": "bc786d35c5f727bfed80f550a446cb4c2954507ef8234ed7446d21eac04f9932",
+        "canonical_id": "src-bce376528f3a3ada",
+        "title_for_reference": "Project Feasibility Form (PFF) (DOCX), second publication",
+        "relationship": "The same file published twice under two different DocumentCenter ids.",
+        "how_it_was_established": "Byte-identical: 59,280 bytes and the same SHA-256 at /View/6498 and /View/6504. Unlike the eleven URL twins, these are genuinely two document records for one file.",
+        "why_this_one_is_the_copy": "The lower document number is the original publication.",
+        "group": "url twins"
+      },
+      "historical_source_evidence_preserved": true
+    }
+  ],
+  "visitor_visible_content_changed": false,
+  "state": "prepared_pending_independent_review"
+}

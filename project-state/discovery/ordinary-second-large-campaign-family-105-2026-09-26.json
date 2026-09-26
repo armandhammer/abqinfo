@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_second_large_campaign_family_evidence",
+  "family_id": "family-105",
+  "family": "tiles.arcgis.com/tiles/CWv1abTnC3urn4bV/arcgis/rest/services/coabase_darkmode_labels",
+  "scope_ids": [
+    "src-396770eab8cc4a74"
+  ],
+  "records": [
+    {
+      "id": "src-396770eab8cc4a74",
+      "disposition": "deferred",
+      "error": "Needs format-specific independent preparation: JSON",
+      "saved_evidence": {
+        "id": "src-396770eab8cc4a74",
+        "authoritative_url": "https://tiles.arcgis.com/tiles/CWv1abTnC3urn4bV/arcgis/rest/services/coabase_darkmode_labels/VectorTileServer",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "JSON",
+        "leading_bytes": "7b226375",
+        "http_status": "200",
+        "inventory_title": "coabase Reference Dark Theme",
+        "size_bytes": 2652,
+        "checksum_sha256": "010c5cd1b34fe6ab367a9c32b3788e2231913e4ae8c0746268a387adcc51a1d4",
+        "title_for_reference": "coabase Reference Dark Theme",
+        "what_it_is": "An ArcGIS vector tile service description.",
+        "exclusion_reason": "Not a document. The URL returns a JSON service descriptor for a map tile layer - currentVersion, capabilities, tileMap - which is machine configuration for a map, not anything published.",
+        "category": "map service endpoint",
+        "package": "not_a_document"
+      },
+      "historical_source_evidence_preserved": true
+    }
+  ],
+  "visitor_visible_content_changed": false,
+  "state": "prepared_pending_independent_review"
+}

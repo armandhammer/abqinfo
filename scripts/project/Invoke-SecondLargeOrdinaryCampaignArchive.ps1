@@ -35,10 +35,25 @@ function Guard {
 # The complete listing is refreshed immediately before the first mutation and
 # every subsequent upload. Resume verifies existing intended bytes, never puts.
 $live=Guard
-foreach($familyPath in $familyPaths){
+$tasks=@(foreach($path in $familyPaths){
+ $ff=Get-Content $path -Raw -Encoding UTF8|ConvertFrom-Json -DateKind String
+ foreach($rr in $ff.records){if($rr.PSObject.Properties['review_complete'] -and $rr.review_complete -and $rr.disposition -eq 'approved for addition' -and (-not $rr.PSObject.Properties['archive_complete'] -or -not $rr.archive_complete)){
+  $priority=5
+  $title=if($rr.PSObject.Properties['reviewed_title']){$rr.reviewed_title}else{''}
+  if($ff.family_id -match '^family-(139|137|123|142|290|295|296|297|298|294)$' -or $title -match 'Enacted|Signed|Final|Adopted|Ordinance|Resolution|Regulation'){$priority=1}
+  elseif($ff.family_id -match '^family-(119|127|134|136|144|146|291)$' -or $title -match 'Albuquerque|Study|Master Plan|Design|Traffic|Parking|Construction|Greenhouse|Climate|Food'){$priority=2}
+  elseif($ff.family_id -match '^family-152'){$priority=3}
+  elseif($title -match 'Minutes|Meeting|Survey|Data|Report'){$priority=4}
+  if($title -match 'Draft|Proposed|Recommended|Recommendation|Instruction|Agenda'){$priority=[Math]::Max($priority,4)}
+  [pscustomobject]@{path=$path;id=$rr.id;priority=$priority;size=$rr.fresh_source_qa.size_bytes}
+ }}
+}) | Sort-Object priority,path,id
+foreach($task in $tasks){
+$familyPath=$task.path
 $family=Get-Content $familyPath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
-foreach($r in $family.records){
-  if($r.disposition -ne 'approved for addition' -or -not $r.review_complete){continue}
+$r=@($family.records|Where-Object id -eq $task.id)[0]
+
+  if($r.disposition -ne 'approved for addition' -or -not $r.PSObject.Properties['review_complete'] -or -not $r.review_complete){continue}
   $qa=$r.fresh_source_qa
   if($r.PSObject.Properties['archive_complete'] -and $r.archive_complete){continue}
   try {
@@ -47,7 +62,9 @@ foreach($r in $family.records){
     $inv=Get-Content project-state/master-inventory.json -Raw -Encoding UTF8|ConvertFrom-Json -DateKind String
     $row=@($inv.candidates|Where-Object id -eq $r.id)[0]
     if($row.status -notin @('approved for addition','placement assigned') -or $row.checksum_sha256 -cne $qa.checksum_sha256 -or $row.size_bytes -ne $qa.size_bytes){throw 'Inventory identity/state changed'}
-    if(@($inv.candidates|Where-Object { $_.id -ne $r.id -and $_.checksum_sha256 -ceq $qa.checksum_sha256 }).Count){throw 'Unresolved exact inventory alias'}
+    $canonicalSource=if($row.direct_file_url){$row.direct_file_url}else{$row.source_url}
+    $aliases=@($inv.candidates|Where-Object { $_.id -ne $r.id -and $_.checksum_sha256 -ceq $qa.checksum_sha256 })
+    foreach($alias in $aliases){if($alias.status -ne 'duplicate' -or $canonicalSource -cnotin @($alias.cited_successors) -or ($alias.processing_notes -join ' ') -notmatch [regex]::Escape($r.id)){throw 'Unresolved exact inventory alias'}}
     $file=Get-Item -LiteralPath $qa.staged_path
     if($file.Length -ne $qa.size_bytes -or (Get-FileHash $file.FullName -Algorithm SHA256).Hash.ToLowerInvariant() -cne $qa.checksum_sha256){throw 'Staged source bytes changed'}
     $live=Guard
@@ -84,7 +101,6 @@ foreach($r in $family.records){
     Field $r 'archive_operation_error' ([string]$_.Exception.Message);Save-State
     Write-Warning "Isolated archive failure: $($r.id) $($_.Exception.Message)"
   }
-}
 }
 $live=Guard
 Copy-Item $guardPath project-state/r2-inventory.json -Force

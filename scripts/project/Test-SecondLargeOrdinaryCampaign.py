@@ -38,7 +38,13 @@ for i,x in resolved.items():
         assert row['scope_assessment']['final_scope_decision']=='passes_both_gates'
         for key in ['specific_albuquerque_connection','abqinfo_public_information_value','general_context_exclusion_test','substantive_rationale']:assert row['scope_assessment'][key]
     if x['decision']=='duplicate':
-        can=rows[rec['canonical_candidate_id']];assert (row['size_bytes'],row['checksum_sha256'])==(can['size_bytes'],can['checksum_sha256'])
+        can=rows[rec['canonical_candidate_id']]
+        if can['checksum_sha256'] is None and rec.get('existing_canonical_public_verification'):
+            v=rec['existing_canonical_public_verification'];assert can['status']=='requires human review' and can==prior[can['id']]
+            obj=next(o for o in load(ROOT/'project-state/r2-inventory.json')['objects'] if o['key']==can['r2_key'])
+            assert v['byte_identical'] and v['public_url']==obj['public_url']
+            assert (row['size_bytes'],row['checksum_sha256'])==(v['size_bytes'],v['checksum_sha256']) and obj['size_bytes']==row['size_bytes']
+        else:assert (row['size_bytes'],row['checksum_sha256'])==(can['size_bytes'],can['checksum_sha256'])
         assert (can.get('direct_file_url') or can['source_url']) in row['cited_successors']
     if x['decision']=='superseded':assert rec['chronology_evidence']
 baseline=load(ROOT/d['baseline_r2_artifact']);current=load(ROOT/'project-state/r2-inventory.json')

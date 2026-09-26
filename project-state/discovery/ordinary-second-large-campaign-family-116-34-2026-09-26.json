@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_second_large_campaign_family_evidence",
+  "family_id": "family-116-34",
+  "family": "DMD independent source construction documents",
+  "scope_ids": [
+    "src-e34f830fac140d8e"
+  ],
+  "records": [
+    {
+      "id": "src-e34f830fac140d8e",
+      "disposition": "deferred",
+      "error": "Needs format-specific independent preparation: HTML; leading bytes are 3c 21 44 4f (\"<!DO\")",
+      "saved_evidence": {
+        "id": "src-e34f830fac140d8e",
+        "file": "(collection landing page)",
+        "authoritative_url": "https://www.cabq.gov/municipaldevelopment/documents/construction-documents",
+        "official_library_title": "construction documents",
+        "size_bytes": 118575,
+        "checksum_sha256": "12dd69df0188726342a5c6748c5f6301712989e44561e5f18771ff80721f8c9e",
+        "content_kind": "HTML; leading bytes are 3c 21 44 4f (\"<!DO\")",
+        "link_check": "HTTP 200 verified 2026-09-11 by full GET",
+        "recommended_status": "excluded",
+        "exclusion_reason": "The Plone collection landing page for this directory, not a document. Its only content is the eighteen file links this artifact enumerates plus site chrome and Google-translate links. Excluding it removes the last non-terminal record in the cluster.",
+        "usefulness": "It was used here as the authority for each file's official display title, which in three cases differs materially from the filename: barricade-companies.pdf is \"Albuquerque Traffic Control Companies\", Dumpsterpermit.pdf is \"Dumpster_Storage Pod Application\", and ContractorsBond.pdf is \"Contractors Sidewalk Bond.pdf\"."
+      },
+      "historical_source_evidence_preserved": true
+    }
+  ],
+  "visitor_visible_content_changed": false,
+  "state": "prepared_pending_independent_review"
+}
