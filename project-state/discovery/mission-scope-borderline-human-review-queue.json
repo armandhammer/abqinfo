@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "artifact_type": "mission_scope_borderline_human_review_queue",
-  "recorded_at": "2026-09-22",
+  "recorded_at": "2026-09-26",
   "purpose": "Rapid human editorial decisions for genuinely borderline mission-scope cases only. This queue excludes privacy, provenance, version/finality, legal-status, source-recovery, and every other human-review reason.",
   "scope_outcome": "requires_human_scope_review",
   "inventory_status": "requires human review",
   "review_reason": "mission_scope_borderline",
-  "unresolved_count": 0,
+  "unresolved_count": 1,
   "capacity": {
     "maximum_unresolved_records": 20,
     "below_capacity_policy": "Continue ordinary work while fewer than 20 unresolved scope-borderline records exist.",
@@ -21,7 +21,30 @@
     "Exclude",
     "Needs more research"
   ],
-  "records": [],
+  "records": [
+    {
+      "id": "src-333e4b4b3970edc1",
+      "title": "Code-WTF-StaffAppReviewChecklist-May2017.pdf",
+      "publisher": "City of Albuquerque",
+      "date": null,
+      "source_url": "https://documents.cabq.gov/planning/code-enforcement/Code-WTF-StaffAppReviewChecklist-May2017.pdf",
+      "scope_assessment": {
+        "assessed_at": "2026-09-26",
+        "title": "Code-WTF-StaffAppReviewChecklist-May2017.pdf",
+        "publisher": "City of Albuquerque",
+        "date": "May 2017",
+        "geographic_institutional_scope": "City Albuquerque wireless telecommunications zoning administration",
+        "specific_albuquerque_connection": "Interprets former Albuquerque Zoning Code section 14-16-3-17, effective December 22, 2014, for City wireless-facility review.",
+        "potential_abqinfo_public_information_value": "Ten pages of code-specific criteria may explain historical wireless-facility regulation beyond the blank application form.",
+        "reason_does_not_confidently_pass": "Staff routing, fill-in questions and procedural checks dominate parts of the record; final regulations may provide the same reader value more directly.",
+        "reason_does_not_clearly_fail": "The checklist interprets a named local zoning section in substantive detail, rather than providing only generic or statewide paperwork.",
+        "proposed_page_or_section_if_admitted": "Development process: historical wireless-facility standards",
+        "recommended_default_disposition": "Exclude",
+        "final_scope_decision": "requires_human_scope_review",
+        "substantive_rationale": "Specific Albuquerque legal criteria and credible regulatory information coexist with internal applicant-processing content. Owner editorial significance judgment should determine retention; successful retrieval alone is insufficient."
+      }
+    }
+  ],
   "resolved_records": [],
   "prospective_only_note": "No completed 2026-09-22 mission-scope-audit disposition was changed to populate this workflow. The audit identified no ambiguous scope cases."
 }

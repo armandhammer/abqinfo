@@ -1,12 +1,18 @@
 #!/usr/bin/env python3
 """Validate the Form Based Zones final-parts inventory-only decision."""
-import json
+import json, subprocess
 from pathlib import Path
 
 root = Path(__file__).resolve().parents[2]
 decision = json.loads((root / 'project-state/discovery/form-based-zones-final-parts-family-decision-2026-09-20.json').read_text(encoding='utf-8'))
 queue = json.loads((root / 'project-state/discovery/ordinary-queue-next-position-2026-09-20-post-form-based-zones.json').read_text(encoding='utf-8'))
 inventory = json.loads((root / 'project-state/master-inventory.json').read_text(encoding='utf-8'))
+later = root / 'project-state/discovery/human-review-reassessment-2026-09-26/authorization.json'
+if later.exists():
+    # Preserve the historical decision assertions; the independent new audit
+    # verifies full draft/final comparison and today's explicit supersession.
+    commit = json.loads(later.read_text(encoding='utf-8'))['baseline_commit']
+    inventory = json.loads(subprocess.check_output(['git','show',commit+':project-state/master-inventory.json'],cwd=root).decode('utf-8-sig'))
 records = {row['id']: row for row in inventory['candidates']}
 
 assert decision['family']['scope_candidate_ids'] == ['src-77df51d4334f3749', 'src-bdb71a8eaf8a29fa']
