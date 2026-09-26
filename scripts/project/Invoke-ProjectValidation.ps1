@@ -7,6 +7,10 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+if (Test-Path -LiteralPath 'project-state/discovery/consolidated-human-review-queue.json') {
+  & python -B "$PSScriptRoot/Build-ConsolidatedHumanReviewQueue.py" --check
+  if ($LASTEXITCODE) { throw 'Consolidated human-review queue freshness and coverage validation failed.' }
+}
 if (Test-Path -LiteralPath "$PSScriptRoot/Test-BackgroundCampaign.py") {
   & python -B "$PSScriptRoot/Test-BackgroundCampaign.py"
   if ($LASTEXITCODE) { throw 'Durable background campaign regression failed.' }

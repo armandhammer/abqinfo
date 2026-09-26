@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "artifact_type": "consolidated_human_review_queue_validation",
+  "recorded_at": "2026-09-26",
+  "result": "passed",
+  "records": 205,
+  "packages": 46,
+  "full_validation_command": "pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/project/Invoke-ProjectValidation.ps1",
+  "full_validation_exit_code": 0,
+  "full_validation_log": "project-state/discovery/consolidated-human-review-validation-2026-09-26.log",
+  "full_validation_log_sha256": "81afc6b42d61f4689d952c57c86c06eb5bbf0aa4ba2ad6798f104c64e552bfd4",
+  "raw_console_log_sha256": "fea20cee6fa4133dc1d35448eeee3a91838618023e8d55b0a740c44a510aecc0",
+  "queue_check": "passed after final generator edit",
+  "protected_paths_unchanged": [
+    "project-state/master-inventory.json",
+    "project-state/checkpoint.json",
+    "content/",
+    "R2 metadata"
+  ],
+  "r2_operations": 0,
+  "added_storage_bytes": 0,
+  "limitations": [
+    "Saved links were not live-verified.",
+    "Owner decisions remain unresolved; no disposition applied."
+  ],
+  "integration": "Commit and background PR integration; Git history and PR carry final remote commit identifiers."
+}
