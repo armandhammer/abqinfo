@@ -22,12 +22,21 @@ function Guard {
   & "$PSScriptRoot/Get-R2Inventory.ps1" -OutputPath $guardPath | Out-Null
   $live=Get-Content $guardPath -Raw -Encoding UTF8|ConvertFrom-Json -DateKind String
   $map=[Collections.Generic.Dictionary[string,object]]::new([StringComparer]::Ordinal)
-  foreach($o in $live.objects){$map.Add($o.key,$o)}
+  $foldKeys=[Collections.Generic.HashSet[string]]::new([StringComparer]::OrdinalIgnoreCase)
+  foreach($o in $live.objects){
+    if(-not $foldKeys.Add($o.key)){throw "Unexpected R2 object: casefold key collision $($o.key)"}
+    $map.Add($o.key,$o)
+  }
   foreach($o in $baseline.objects){if(-not $map.ContainsKey($o.key) -or $map[$o.key].size_bytes -ne $o.size_bytes -or $map[$o.key].etag -cne $o.etag){throw "Pre-campaign object missing or overwritten: $($o.key)"}}
-  $oldKeys=@($baseline.objects.key)
-  foreach($o in $live.objects){if($o.key -cnotin $oldKeys){
-    $intents=@($allFamilyRecords|Where-Object { $_.PSObject.Properties['upload_intent'] -and $_.r2_key -ceq $o.key -and $_.fresh_source_qa.size_bytes -eq $o.size_bytes })
-    if($intents.Count -ne 1){throw "Unexpected R2 object: $($o.key)"}
+  $oldKeys=[Collections.Generic.HashSet[string]]::new([StringComparer]::Ordinal)
+  foreach($o in $baseline.objects){[void]$oldKeys.Add($o.key)}
+  $intentIndex=[Collections.Generic.Dictionary[string,object]]::new([StringComparer]::Ordinal)
+  foreach($rr in $allFamilyRecords){if($rr.PSObject.Properties['upload_intent']){
+    if($intentIndex.ContainsKey($rr.r2_key)){throw "Unexpected R2 object: duplicate saved intents for $($rr.r2_key)"}
+    $intentIndex.Add($rr.r2_key,$rr)
+  }}
+  foreach($o in $live.objects){if(-not $oldKeys.Contains($o.key)){
+    if(-not $intentIndex.ContainsKey($o.key) -or $intentIndex[$o.key].fresh_source_qa.size_bytes -ne $o.size_bytes){throw "Unexpected R2 object: $($o.key)"}
   }}
   if($live.total_bytes -gt 10000000000){throw 'Storage ceiling exceeded'}
   return $live
@@ -41,7 +50,7 @@ $tasks=@(foreach($path in $familyPaths){
   $priority=5
   $title=if($rr.PSObject.Properties['reviewed_title']){$rr.reviewed_title}else{''}
   if($ff.family_id -match '^family-(139|137|123|142|290|295|296|297|298|294)$' -or $title -match 'Enacted|Signed|Final|Adopted|Ordinance|Resolution|Regulation'){$priority=1}
-  elseif($ff.family_id -match '^family-(119|127|134|136|144|146|291)$' -or $title -match 'Albuquerque|Study|Master Plan|Design|Traffic|Parking|Construction|Greenhouse|Climate|Food'){$priority=2}
+  elseif($ff.family_id -match '^family-(095|108|111|119|127|134|136|144|146|291)$' -or $title -match 'Albuquerque|Study|Master Plan|Design|Traffic|Parking|Construction|Greenhouse|Climate|Food'){$priority=2}
   elseif($ff.family_id -match '^family-152'){$priority=3}
   elseif($title -match 'Minutes|Meeting|Survey|Data|Report'){$priority=4}
   if($title -match 'Draft|Proposed|Recommended|Recommendation|Instruction|Agenda'){$priority=[Math]::Max($priority,4)}
@@ -49,6 +58,7 @@ $tasks=@(foreach($path in $familyPaths){
  }}
 }) | Sort-Object priority,path,id
 foreach($task in $tasks){
+if(Test-Path -LiteralPath 'tmp/second-campaign-pause-archive'){Write-Host 'Paused at completed-object boundary';break}
 $familyPath=$task.path
 $family=Get-Content $familyPath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
 $r=@($family.records|Where-Object id -eq $task.id)[0]
@@ -89,7 +99,11 @@ $r=@($family.records|Where-Object id -eq $task.id)[0]
     Copy-Item $guardPath project-state/r2-inventory.json -Force
     $note='Second large ordinary campaign 2026-09-26: unchanged original exact-public-byte verified; background archival only. '+$familyPath
     $notes=@($row.processing_notes);if($note -notin $notes){$notes+=$note}
-    & "$PSScriptRoot/Update-Candidate.ps1" -Id $r.id -Set @{status='placement assigned';r2_key=$r.r2_key;r2_url=$verification.public_url;r2_etag=$object.etag;r2_last_modified=$object.last_modified;proposed_canonical_page=$r.proposed_canonical_page;processing_notes=$notes;validation_status='exact authoritative source and fresh public R2 GET match size/SHA-256; archive complete; no implementation'} | Out-Null
+    $placementRequest='tmp/second-campaign-placement-update.json'
+    $updates=@([pscustomobject]@{id=$r.id;changes=@{status='placement assigned';r2_key=$r.r2_key;r2_url=$verification.public_url;r2_etag=$object.etag;r2_last_modified=$object.last_modified;proposed_canonical_page=$r.proposed_canonical_page;processing_notes=$notes;validation_status='exact authoritative source and fresh public R2 GET match size/SHA-256; archive complete; no implementation'}})
+    [IO.File]::WriteAllText([IO.Path]::GetFullPath($placementRequest),(ConvertTo-Json -InputObject $updates -Depth 20),[Text.UTF8Encoding]::new($false))
+    & python -B "$PSScriptRoot/Update-CandidatesBatch.py" --requests $placementRequest | Out-Null
+    if($LASTEXITCODE){throw 'Exact-public placement update failed existing mission-scope policy'}
     Field $r 'archive_complete' $true
     $d.archive_objects=@($d.archive_objects|Where-Object id -ne $r.id)+@([pscustomobject]@{id=$r.id;key=$r.r2_key;size_bytes=$qa.size_bytes;checksum_sha256=$qa.checksum_sha256;etag=$object.etag;public_verification=$verification;upload_intent=$r.upload_intent})
     foreach($resolved in $d.resolved_records){if($resolved.id -eq $r.id){$resolved.current_status='placement assigned'}}

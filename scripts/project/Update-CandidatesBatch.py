@@ -14,6 +14,7 @@ for x in request:
  for key,value in x['changes'].items():
   assert key in row or key in ['scope_assessment','review_reason'], 'Unknown field '+key
   row[key]=value
+ assert row['status'] in inventory['allowed_statuses'], 'Unknown candidate status'
  if row!=before:
   row['updated_at']=now
   if 'description' in x['changes']:row['description_word_count']=len((row['description'] or '').split())

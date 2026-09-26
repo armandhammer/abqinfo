@@ -7,6 +7,18 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+if (Test-Path -LiteralPath "$PSScriptRoot/Test-UpdateCandidatesBatch.py") {
+  & python -B "$PSScriptRoot/Test-UpdateCandidatesBatch.py"
+  if ($LASTEXITCODE) { throw 'Atomic candidate batch scope regression failed.' }
+}
+if (Test-Path -LiteralPath "$PSScriptRoot/Test-SecondCampaignArchiveGuard.py") {
+  & python -B "$PSScriptRoot/Test-SecondCampaignArchiveGuard.py"
+  if ($LASTEXITCODE) { throw 'Second-campaign R2 mutation guard regression failed.' }
+}
+if (Test-Path -LiteralPath 'project-state/discovery/second-large-campaign-archive-health-2026-09-26.json') {
+  & python -B "$PSScriptRoot/Test-SecondCampaignArchiveHealth.py"
+  if ($LASTEXITCODE) { throw 'Focused archive health regression failed.' }
+}
 if (Test-Path -LiteralPath 'project-state/discovery/inventory-legacy-relationship-hardening-2026-09-26.json') {
   & python -B "$PSScriptRoot/Test-LegacyRelationshipHardening.py"
   if ($LASTEXITCODE) { throw 'Legacy relationship hardening regression failed.' }

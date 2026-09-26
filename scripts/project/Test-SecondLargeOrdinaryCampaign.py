@@ -4,10 +4,12 @@ import collections,hashlib,json,runpy,subprocess
 from pathlib import Path
 c=runpy.run_path(str(Path(__file__).with_name('SecondLargeOrdinaryCampaign.py')))
 ROOT,DISC,ART,SEL,BASE,load,digest=(c[k] for k in ['ROOT','DISC','ART','SEL','BASE','load','digest'])
+def seal_digest(obj):return hashlib.sha256(json.dumps(obj,sort_keys=True,separators=(',',':'),ensure_ascii=False).encode()).hexdigest()
 d=load(ART);s=load(SEL);inv=load(ROOT/'project-state/master-inventory.json');rows={r['id']:r for r in inv['candidates']}
 prior={r['id']:r for r in json.loads(subprocess.check_output(['git','show',BASE+':project-state/master-inventory.json'],cwd=ROOT).decode('utf-8-sig'))['candidates']}
 resolved={r['id']:r for r in d['resolved_records']}
 assert len(resolved)==len(d['resolved_records'])<=700
+population=[]
 assert len(rows)==len(prior)==7137 and s['starting_population']==sorted(i for i,r in prior.items() if r['status']=='pending review')
 assert {i:digest(r) for i,r in prior.items()}==s['baseline_row_digests']
 assert not set(resolved)&(set(s['gated_pending_ids'])|set(s['structural_blocked_ids']))
@@ -27,6 +29,7 @@ for i,x in resolved.items():
     for field in ['source_url','direct_file_url','discovery_path','cited_predecessors']:assert row[field]==old[field]
     assert all(n in row['processing_notes'] for n in old['processing_notes'])
     rec=next(r for r in load(ROOT/x['evidence_artifact'])['records'] if r['id']==i)
+    population.append({'id':i,'decision':x['decision'],'family_id':x['family_id'],'source_size_bytes':rec['fresh_source_qa']['size_bytes'],'source_sha256':rec['fresh_source_qa']['checksum_sha256'],'canonical_candidate_id':rec.get('canonical_candidate_id')})
     assert rec['review_complete'] and rec['disposition']==x['decision'] and rec['quality_assessment']['substantive_rationale']
     assert row['status'] in ['approved for addition','placement assigned','duplicate','superseded','excluded']
     qa=rec.get('fresh_source_qa')
@@ -37,6 +40,8 @@ for i,x in resolved.items():
     if x['decision']=='approved for addition':
         assert row['scope_assessment']['final_scope_decision']=='passes_both_gates'
         for key in ['specific_albuquerque_connection','abqinfo_public_information_value','general_context_exclusion_test','substantive_rationale']:assert row['scope_assessment'][key]
+        for key in ['visual_inspection','standalone_public_value','information_density','series_component_relationship','intended_publication_form','substantive_rationale']:assert rec['quality_assessment'][key]
+        if (qa.get('page_count') or 0)<=2 and (qa.get('word_count') or 0)<250:assert rec['quality_assessment']['limited_content_exception']
     if x['decision']=='duplicate':
         can=rows[rec['canonical_candidate_id']]
         if can['checksum_sha256'] is None and rec.get('existing_canonical_public_verification'):
@@ -46,7 +51,10 @@ for i,x in resolved.items():
             assert (row['size_bytes'],row['checksum_sha256'])==(v['size_bytes'],v['checksum_sha256']) and obj['size_bytes']==row['size_bytes']
         else:assert (row['size_bytes'],row['checksum_sha256'])==(can['size_bytes'],can['checksum_sha256'])
         assert (can.get('direct_file_url') or can['source_url']) in row['cited_successors']
-    if x['decision']=='superseded':assert rec['chronology_evidence']
+    if x['decision']=='superseded':
+        assert rec['chronology_evidence']
+        can=rows[rec['canonical_candidate_id']]
+        assert (can.get('direct_file_url') or can['source_url']) in row['cited_successors']
 baseline=load(ROOT/d['baseline_r2_artifact']);current=load(ROOT/'project-state/r2-inventory.json')
 old={o['key']:o for o in baseline['objects']};objects={o['key']:o for o in current['objects']};added={a['key']:a for a in d['archive_objects']}
 assert (len(old),baseline['total_bytes'])==(1292,9387544940)
@@ -64,9 +72,36 @@ assert not subprocess.check_output(['git','diff',BASE,'--name-only','--','conten
 assert not subprocess.check_output(['git','ls-files','--others','--exclude-standard','content'],cwd=ROOT).strip()
 assert subprocess.check_output(['git','rev-parse','HEAD:content'],cwd=ROOT,text=True).strip()==d['content_tree_baseline']
 if d['state']=='complete_background_campaign':
+    population.sort(key=lambda r:r['id'])
+    expected_population_hash='877f6e78d06a6afd6c389f0924d6843572dd6d4bc0c299f23ec0ab0e71d5258d'
+    assert seal_digest(population)==expected_population_hash and len(resolved)==700
+    lock=load(ROOT/d['population_lock_artifact'])
+    assert lock['population']==population and lock['population_sha256']==expected_population_hash
+    lifecycle=[{'id':i,'status':rows[i]['status'],'r2_key':rows[i]['r2_key'],'checksum_sha256':rows[i]['checksum_sha256'],'size_bytes':rows[i]['size_bytes']} for i in sorted(resolved)]
+    assert lock['final_lifecycle']==lifecycle and lock['final_lifecycle_sha256']==seal_digest(lifecycle)
+    archive_population=[{'id':o['id'],'key':o['key'],'sha256':o['checksum_sha256'],'size_bytes':o['size_bytes']} for o in sorted(d['archive_objects'],key=lambda o:o['id'])]
+    assert lock['archive_population']==archive_population and lock['legacy_changed_ids']==legacy['changed_ids']
+    assert lock['content_tree']==d['content_tree_baseline']
     assert d['accounting']['resolved_records']==len(resolved)
     assert d['final_inventory_counts']==inv['counts']
     assert d['accounting']['outcomes']==dict(collections.Counter(r['decision'] for r in resolved.values()))
     assert load(ROOT/d['final_live_listing_artifact'])['objects']==current['objects']
     assert load(ROOT/'project-state/checkpoint.json')['counts_by_status']==inv['counts']
+    queue=load(ROOT/d['next_queue_artifact'])
+    pending={i for i,r in rows.items() if r['status']=='pending review'}
+    gates=set(queue['gated_pending_ids']);blocked=set(queue['source_or_structural_blocked_pending_ids']);ungated=set(queue['ungated_pending_ids'])
+    assert set(queue['pending_ids'])==pending==gates|blocked|ungated
+    assert not (gates&blocked or gates&ungated or blocked&ungated)
+    assert (len(pending),len(gates),len(blocked),len(ungated))==(queue['pending_review_count'],queue['gated_pending_count'],queue['source_or_structural_blocked_pending_count'],queue['ungated_pending_count'])
+    assert queue['mission_borderline_queue_size']==0 and not queue['visitor_visible_content_changed']
+    deferrals={r['id']:r for r in d['archive_deferrals']}
+    approvals={i for i,x in resolved.items() if x['decision']=='approved for addition'}
+    assert approvals=={a['id'] for a in added.values()}|deferrals.keys()
+    assert not ({a['id'] for a in added.values()}&deferrals.keys())
+    for i,r in deferrals.items():
+        assert r['preparation_complete'] and rows[i]['status']=='approved for addition'
+        assert r['checksum_sha256']==rows[i]['checksum_sha256'] and r['size_bytes']==rows[i]['size_bytes']
+        assert r['prepared_key'] not in objects
+        if 'only storage capacity' in r['reason']:assert r['size_bytes']>10000000000-current['total_bytes']
+    assert d['zero_content_change'] and not d['live_site_published']
 print(f'PASS: {len(resolved)} second-campaign transitions, {len(added)} exact-public originals; protected baseline and zero content changes preserved.')
