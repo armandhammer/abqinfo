@@ -87,7 +87,7 @@ def main():
         # ArcGIS/live services have a deliberate archival exception. A HTML
         # signature alone cannot establish their exclusion.
         if html and re.search(r'arcgis|/gis|map-view|dashboard|tracker|/services/',url,re.I): html=False
-        actionable = not gate and (html or exact_alias or cmp or static_exclusion)
+        actionable = bool(not gate and (html or exact_alias or cmp or static_exclusion))
         u=urlsplit(url)
         queue.append(dict(id=i,title=r['title'],source_url=url,direct_file_url=r.get('direct_file_url'),parent_url=r.get('parent_url'),source_directory=u.path.rsplit('/',1)[0],host=u.netloc,inferred_family=family(r,rec),research_artifacts=[p for p,_ in matches],saved_recommendation=status,prior_identity_established=bool(rec.get('checksum_sha256')),candidate_container_type=kind or r['file_type'],likely_local_relevance='City/local-government source' if 'cabq.gov' in u.netloc or 'mrcog' in u.netloc or 'riometro' in u.netloc else 'must establish material Albuquerque component',disposition_difficulty='low: saved measured terminal evidence' if html or exact_alias else 'full source QA and scope required',completed_or_gated=bool(gate),skip_reason=gate or (None if actionable else 'not selected: substantive, live-service, unresolved or unsaved evidence; available for later independent review'),actionable=actionable,saved_evidence=rec if actionable else None,baseline_row_sha256=digest(r)))
     groups=collections.defaultdict(list)

@@ -18,9 +18,14 @@ def build():
             if key not in objects:anomalies.append(dict(type='claimed_r2_key_absent_from_saved_listing',id=r['id'],key=key))
             elif r.get('size_bytes') and r['size_bytes']!=objects[key]['size_bytes']:anomalies.append(dict(type='inventory_source_size_differs_from_r2_size',id=r['id'],key=key,source_size_bytes=r['size_bytes'],r2_size_bytes=objects[key]['size_bytes'],note='May describe source/wrapper or historical source; no automatic replacement of provenance.'))
         if r['status'] in ['duplicate','superseded']:
-            text=str(r.get('exclusion_reason',''))+' '+' '.join(r.get('processing_notes',[]))
-            for target in re.findall(r'canonical inventory record ((?:src|lin)-[a-f0-9]{16})',text):
+            text=str(r.get('exclusion_reason',''))+' '+' '.join(str(n) for n in r.get('processing_notes',[]) if n is not None)
+            explicit=set(re.findall(r'canonical inventory record ((?:src|lin)-[a-f0-9]{16})',text))
+            explicit.update(x for x in r.get('cited_successors',[]) if re.fullmatch(r'(?:src|lin)-[a-f0-9]{16}',x))
+            if r.get('duplicate_of'):explicit.add(r['duplicate_of'])
+            for target in sorted(explicit):
                 if target not in rows:anomalies.append(dict(type='missing_explicit_canonical_or_successor_id',id=r['id'],target=target))
+            if r['status']=='superseded' and not explicit and not r.get('cited_successors'):
+                anomalies.append(dict(type='legacy_supersession_target_not_structured',id=r['id'],note='Historical prose may identify successor; no deterministic target ID or cited-successor metadata. Retain evidence for later research, without reopening disposition.'))
     groups=[]
     for h,rs in sorted(hashes.items()):
         if len(rs)<2:continue
@@ -29,9 +34,11 @@ def build():
         for r in rs:
             if r['status']=='duplicate' and retained:
                 urls={x.get('source_url') for x in retained}|{x.get('direct_file_url') for x in retained}|{x.get('r2_url') for x in retained}
-                evidence=str(r.get('exclusion_reason',''))+' '+' '.join(r.get('processing_notes',[]))
+                evidence=str(r.get('exclusion_reason',''))+' '+' '.join(str(n) for n in r.get('processing_notes',[]) if n is not None)
                 linked=bool(set(r.get('cited_successors',[])) & (urls-{None})) or any(x['id'] in evidence for x in retained)
                 if not linked:correct=False
+        if not retained and any(r['status']=='duplicate' for r in rs):
+            correct=False
         classification='already_correct_relationship_or_all_excluded' if correct and len(retained)<=1 else 'legacy_relationship_needs_research'
         if len(retained)>1:anomalies.append(dict(type='multiple_retained_later_state_rows_share_exact_hash',checksum_sha256=h,ids=[r['id'] for r in retained],note='Read-only audit: protected/settled later-state rows are not reopened; original/component/page semantics need research.'))
         elif not correct:anomalies.append(dict(type='duplicate_hash_group_relationship_not_explicit',checksum_sha256=h,ids=[r['id'] for r in rs]))
