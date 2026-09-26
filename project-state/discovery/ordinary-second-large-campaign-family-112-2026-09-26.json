@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_second_large_campaign_family_evidence",
+  "family_id": "family-112",
+  "family": "www.cabq.gov/council/find-your-councilor/district-8/city-councilor-dan-champine",
+  "scope_ids": [
+    "src-8e4d2353a0407237"
+  ],
+  "records": [
+    {
+      "id": "src-8e4d2353a0407237",
+      "saved_evidence": {
+        "id": "src-8e4d2353a0407237",
+        "authoritative_url": "https://www.cabq.gov/council/find-your-councilor/district-8/city-councilor-dan-champine/resolveuid/f84377bce73d4fc3a0b105079597d5cc",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-14 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes and the container verified by leading bytes, never by the URL.",
+        "content_kind": "JPEG",
+        "leading_bytes": "ffd8ffe0",
+        "http_status": "200",
+        "inventory_title": "f84377bce73d4fc3a0b105079597d5cc",
+        "size_bytes": 131389,
+        "checksum_sha256": "b52310bc9acfe11ebf226deaac7c5f990b9e6c86f197a7eaa1c504b0624a7edb",
+        "title_for_reference": "Councillor portrait photograph (f84377bce73d4fc3a0b105079597d5cc)",
+        "what_it_is": "A 400x500 pixel JPEG photograph served behind a content-management UID on a councillor's page.",
+        "exclusion_reason": "Site furniture, not a record. All four images in this lane are 400 by 500 pixels, the portrait size the councillor pages use, and each is reached through a resolveuid alias whose inventory title is only the identifier itself.",
+        "category": "page portrait",
+        "package": "site_furniture",
+        "pixel_dimensions": "400x500"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/find-your-councilor-cluster-research-2026-09-14.json"
+      ],
+      "fresh_source_qa": {
+        "source_exact_verified": true,
+        "source_GET": {
+          "http_status": 200,
+          "requested_url": "https://www.cabq.gov/council/find-your-councilor/district-8/city-councilor-dan-champine/resolveuid/f84377bce73d4fc3a0b105079597d5cc",
+          "final_url": "https://www.cabq.gov/council/images/minicouncil8_400x500_2022.jpg",
+          "content_type": "image/jpeg",
+          "verified_at": "2026-09-26T18:28:44.882579+00:00",
+          "size_bytes": 131389,
+          "checksum_sha256": "b52310bc9acfe11ebf226deaac7c5f990b9e6c86f197a7eaa1c504b0624a7edb",
+          "leading_bytes": "ffd8ffe000104a464946000101010096"
+        },
+        "staged_path": "research/staging/ordinary-second-large-campaign-2026-09-26/src-8e4d2353a0407237.jpg",
+        "size_bytes": 131389,
+        "checksum_sha256": "b52310bc9acfe11ebf226deaac7c5f990b9e6c86f197a7eaa1c504b0624a7edb",
+        "container": "JPEG",
+        "image_dimensions": [
+          400,
+          500
+        ],
+        "representative_images": [
+          "research/staging/ordinary-second-large-campaign-2026-09-26/src-8e4d2353a0407237.jpg"
+        ],
+        "page_count": 0,
+        "rendered_pages": 0,
+        "full_text": "Map image; no invented OCR text",
+        "word_count": null,
+        "representative_visual_qa": "passed_agent_inspection_opening_middle_ending",
+        "visual_review_evidence": "Opening/middle/ending pages inspected in supporting-review-01 through supporting-review-13, with complete source text and container/page/word QA. Full component comparisons and Nob Hill printed figure pages were independently checked against canonical originals; saved recommendations corrected where contradicted.",
+        "visually_reviewed_at": "2026-09-26T19:20:53.786355Z"
+      },
+      "disposition": "approved for addition",
+      "rationale": "A useful historical jurisdiction map identifies the specific district geometry. No election recommendation or current-boundary assertion; retain as a dated-unknown map rather than infer an edition. Actual JPEG is a labeled Albuquerque Council district boundary map, not the portrait described by the saved recommendation. Local streets and adjacent districts are visible.",
+      "canonical_candidate_id": null,
+      "quality_assessment": {
+        "visual_inspection": "Opening/middle/ending pages inspected in supporting-review-01 through supporting-review-13, with complete source text and container/page/word QA. Full component comparisons and Nob Hill printed figure pages were independently checked against canonical originals; saved recommendations corrected where contradicted.",
+        "actual_function": "A useful historical jurisdiction map identifies the specific district geometry. No election recommendation or current-boundary assertion; retain as a dated-unknown map rather than infer an edition. Actual JPEG is a labeled Albuquerque Council district boundary map, not the portrait described by the saved recommendation. Local streets and adjacent districts are visible.",
+        "measured_page_count": 0,
+        "measured_word_count": null,
+        "intended_publication_form": "none; no visitor-visible implementation authorized",
+        "standalone_public_value": "A useful historical jurisdiction map identifies the specific district geometry. No election recommendation or current-boundary assertion; retain as a dated-unknown map rather than infer an edition.",
+        "information_density": "Measured full-document pages/words and source container are retained in QA.",
+        "series_component_relationship": "Curated documentary family with original components preserved separately; no visible publication in this campaign.",
+        "substantive_rationale": "A useful historical jurisdiction map identifies the specific district geometry. No election recommendation or current-boundary assertion; retain as a dated-unknown map rather than infer an edition. Actual JPEG is a labeled Albuquerque Council district boundary map, not the portrait described by the saved recommendation. Local streets and adjacent districts are visible.",
+        "limited_content_exception": "Visual boundary map with dense street and jurisdiction labels; no extractable text layer. Full image inspected."
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T19:20:53.786368Z",
+        "geographic_institutional_scope": "City of Albuquerque",
+        "specific_albuquerque_connection": "Actual JPEG is a labeled Albuquerque Council district boundary map, not the portrait described by the saved recommendation. Local streets and adjacent districts are visible.",
+        "abqinfo_public_information_value": "A useful historical jurisdiction map identifies the specific district geometry. No election recommendation or current-boundary assertion; retain as a dated-unknown map rather than infer an edition.",
+        "general_context_exclusion_test": "City hosting, jurisdiction, geographic origin and procedural usefulness alone are insufficient; the actual document function and distinct public value control.",
+        "final_scope_decision": "passes_both_gates",
+        "substantive_rationale": "A useful historical jurisdiction map identifies the specific district geometry. No election recommendation or current-boundary assertion; retain as a dated-unknown map rather than infer an edition. Actual JPEG is a labeled Albuquerque Council district boundary map, not the portrait described by the saved recommendation. Local streets and adjacent districts are visible."
+      },
+      "archival_readiness": "Original fully prepared; authorized guarded upload pending",
+      "proposed_canonical_page": "content/city-data/demographics.md",
+      "independent_review_input": "project-state/discovery/ordinary-second-large-campaign-supporting-review-decisions-2026-09-26.json",
+      "archive_preflight": {
+        "same_hash_inventory_ids": [],
+        "key_collision": false,
+        "namespace_basis": "Established page and R2 topical namespace: content/city-data/demographics.md"
+      },
+      "r2_key": "city-data/demographics/historical-district-8-boundary-8e4d2353.jpg",
+      "reviewed_title": "Albuquerque City Council District 8: Historical Boundary Map (undated)",
+      "review_complete": true,
+      "upload_intent": {
+        "key": "city-data/demographics/historical-district-8-boundary-8e4d2353.jpg",
+        "key_was_absent": true,
+        "size_bytes": 131389,
+        "sha256": "b52310bc9acfe11ebf226deaac7c5f990b9e6c86f197a7eaa1c504b0624a7edb",
+        "started_at": "2026-09-26T19:38:57.0695829Z"
+      },
+      "uploaded_pending_public_verification": true,
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/city-data/demographics/historical-district-8-boundary-8e4d2353.jpg",
+        "size_bytes": 131389,
+        "checksum_sha256": "b52310bc9acfe11ebf226deaac7c5f990b9e6c86f197a7eaa1c504b0624a7edb",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T19:39:03.7280090Z"
+      },
+      "archive_complete": true
+    }
+  ],
+  "visitor_visible_content_changed": false,
+  "state": "reviewed_decisions_ready_for_inventory"
+}

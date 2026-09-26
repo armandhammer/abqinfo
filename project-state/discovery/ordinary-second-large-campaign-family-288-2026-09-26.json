@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_second_large_campaign_family_evidence",
+  "family_id": "family-288",
+  "family": "sfftp.cabq.gov/f",
+  "scope_ids": [
+    "src-2f89e1bc040e1d33"
+  ],
+  "records": [
+    {
+      "id": "src-2f89e1bc040e1d33",
+      "disposition": "deferred",
+      "error": "'exclusion_reason'",
+      "saved_evidence": {
+        "id": "src-2f89e1bc040e1d33",
+        "authoritative_url": "https://sfftp.cabq.gov/f/cf8779d97e34c92c",
+        "recommended_status": "approved for addition",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "HTML",
+        "leading_bytes": "3c21646f",
+        "http_status": "200",
+        "inventory_title": "Final McDuffie-Twin Parks Traffic Calming Study",
+        "size_bytes": 1344,
+        "checksum_sha256": "c6efe1684502a3e94788a537d3adda698e648a045892616b2dd279d111ff3f31",
+        "title_for_reference": "Final McDuffie-Twin Parks Traffic Calming Study",
+        "what_it_is": "A City traffic calming study, published through the City's file-transfer host rather than as a file on a City web server.",
+        "measurement": "HTTP 200 and 1,344 bytes of JavaScript application shell, leading bytes 3c21646f. The document itself is loaded by that application; the host's REST API answers 401 without credentials.",
+        "it_was_then_retrieved": "Resolved on 2026-09-14. The repository owner retrieved it through a browser. It is the McDuffie/Twin Parks Neighborhood Traffic Calming Study, final report dated 7 May 2024, prepared for the City by Wilson & Company, 11,940,327 bytes and 321 pages. See file-share-retrieval-research-2026-09-14.json, which carries the full row and the provenance note.",
+        "the_measurements_on_this_row_are_the_share_page_not_the_document": "1,344 bytes of application shell is what the URL returns and what this lane measured. The document's size and checksum are on the retrieval artifact's row, and re-fetching this URL will never reproduce them.",
+        "package": "published_only_through_a_file_share",
+        "decided_in": "file-share-retrieval-research-2026-09-14.json"
+      },
+      "historical_source_evidence_preserved": true
+    }
+  ],
+  "visitor_visible_content_changed": false,
+  "state": "prepared_pending_independent_review"
+}

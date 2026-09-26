@@ -5,6 +5,22 @@ from pathlib import Path
 c=runpy.run_path(str(Path(__file__).with_name('Build-LargeOrdinaryCampaign.py')))
 ROOT,DISC,DATE,BASE,SELECTION,CAMPAIGN,load,digest=(c[k] for k in ['ROOT','DISC','DATE','BASE','SELECTION','CAMPAIGN','load','digest'])
 def git_json(path):return json.loads(subprocess.check_output(['git','show',BASE+':'+path],cwd=ROOT).decode('utf-8-sig'))
+
+# A subsequent authorized campaign must not reinterpret this completed run's
+# exact population/count/R2 contract. Run every original assertion against its
+# immutable reviewed closeout. The second campaign regression checks current
+# rows and preserves all first-campaign results against this same snapshot.
+second_path=DISC/f'ordinary-queue-second-large-resolution-campaign-{DATE}.json'
+second=load(second_path) if second_path.exists() else None
+if second:
+    assert second['baseline_commit']=='34ccc0fe230ffb8290652979cbe8603c69db3115'
+    original_load=load
+    def historical_load(path):
+        relative=Path(path).relative_to(ROOT).as_posix()
+        if relative in ['project-state/master-inventory.json','project-state/r2-inventory.json','project-state/checkpoint.json']:
+            return json.loads(subprocess.check_output(['git','show',second['baseline_commit']+':'+relative],cwd=ROOT).decode('utf-8-sig'))
+        return original_load(path)
+    load=historical_load
 d=load(CAMPAIGN);s=load(SELECTION);inv=load(ROOT/'project-state/master-inventory.json');rows={r['id']:r for r in inv['candidates']};prior={r['id']:r for r in git_json('project-state/master-inventory.json')['candidates']}
 resolved={r['id']:r for r in d['resolved_records']}
 assert len(resolved)==len(d['resolved_records'])<=500
@@ -78,6 +94,7 @@ if d['state']=='complete_background_campaign':
     final=load(ROOT/d['final_live_listing_artifact']);assert final['objects']==current['objects']
     audit=load(DISC/f'inventory-exact-identity-integrity-audit-{DATE}.json')
     module=runpy.run_path(str(Path(__file__).with_name('Audit-InventoryExactIdentity.py')))
+    if second:module['build'].__globals__['load']=historical_load
     actual=module['build']();actual.pop('recorded_at');expected=dict(audit);expected.pop('recorded_at');assert actual==expected
     assert audit['audit_population']==7137 and set(audit['newly_reconciled_aliases'])=={i for i,r in resolved.items() if r['decision']=='duplicate'}
     assert load(ROOT/'project-state/checkpoint.json')['counts_by_status']==inv['counts']

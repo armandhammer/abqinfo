@@ -1,0 +1,483 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_second_large_campaign_family_evidence",
+  "family_id": "family-152-05",
+  "family": "MRCOG Connections 2040 appendices",
+  "scope_ids": [
+    "src-7a90167f2ad9a83e",
+    "src-c58ea51f5773870b",
+    "src-a3654251040b0e8f",
+    "src-55a8e87de2bd9c0c"
+  ],
+  "records": [
+    {
+      "id": "src-7a90167f2ad9a83e",
+      "saved_evidence": {
+        "id": "src-7a90167f2ad9a83e",
+        "authoritative_url": "https://www.mrcog-nm.gov/DocumentCenter/View/4212/Appendix-H---Model-Methodologies-PDF",
+        "recommended_status": "approved for addition",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - three records in this lane return HTML despite sitting under a DocumentCenter path, and one file whose URL slug ends -PDF is a JPEG.",
+        "content_kind": "PDF",
+        "leading_bytes": "25504446",
+        "publisher": "Mid-Region Council of Governments",
+        "mrcog_document_number": 4212,
+        "size_bytes": 2032992,
+        "checksum_sha256": "98002a78ff26bc6fac84e27410d258e4e30588d0e1a64a0da9d75a8484802e5a",
+        "title": "Connections 2040 Appendix H: Model Methodologies",
+        "description": "Appendix H to the Connections 2040 Metropolitan Transportation Plan, the adopted regional plan for the Albuquerque metropolitan planning area, supplying supporting material the plan itself refers to.",
+        "evidence": "Headed Appendix H on its own first page and naming Connections 2040 in its text. Tested against the archived full plan: token coverage 0.8447 and not one contiguous fifty-word run present, so it is not bound into the document the archive already holds.",
+        "group": "Connections 2040 appendices",
+        "proposed_canonical_page": "content/transportation/_index.md",
+        "cross_listings": [
+          {
+            "page": "content/transportation/roadway-projects/studies.md",
+            "reason": "Methodology and sources behind the plan's analysis."
+          }
+        ],
+        "description_word_count": 27,
+        "completes_record": "src-d651356cdad0e349"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/mrcog-documentcenter-cluster-research-2026-09-13.json"
+      ],
+      "fresh_source_qa": {
+        "source_exact_verified": true,
+        "source_GET": {
+          "http_status": 200,
+          "requested_url": "https://www.mrcog-nm.gov/DocumentCenter/View/4212/Appendix-H---Model-Methodologies-PDF",
+          "final_url": "https://www.mrcog-nm.gov/DocumentCenter/View/4212/Appendix-H---Model-Methodologies-PDF",
+          "content_type": "application/pdf",
+          "verified_at": "2026-09-26T18:29:39.750177+00:00",
+          "size_bytes": 2032992,
+          "checksum_sha256": "98002a78ff26bc6fac84e27410d258e4e30588d0e1a64a0da9d75a8484802e5a",
+          "leading_bytes": "255044462d312e350d25e2e3cfd30d0a"
+        },
+        "staged_path": "research/staging/ordinary-second-large-campaign-2026-09-26/src-7a90167f2ad9a83e.pdf",
+        "size_bytes": 2032992,
+        "checksum_sha256": "98002a78ff26bc6fac84e27410d258e4e30588d0e1a64a0da9d75a8484802e5a",
+        "container": "PDF",
+        "structural_result": "opens_without_password_or_repair",
+        "page_count": 26,
+        "word_count": 7839,
+        "text_layer_pages": 26,
+        "rendered_pages": 26,
+        "low_ink_pages": [],
+        "contact_sheets": [
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-7a90167f2ad9a83e-contact-1.jpg",
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-7a90167f2ad9a83e-contact-2.jpg",
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-7a90167f2ad9a83e-contact-3.jpg"
+        ],
+        "representative_images": [
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-7a90167f2ad9a83e-page-1.png",
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-7a90167f2ad9a83e-page-14.png",
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-7a90167f2ad9a83e-page-26.png"
+        ],
+        "full_text_path": "research/staging/ordinary-second-large-campaign-2026-09-26/src-7a90167f2ad9a83e.txt",
+        "text_excerpts": {
+          "1": "H-1 \nConnections 2040 MTP Appendix \nAppendix H: Model Methodologies \n \nTravel Demand Model \n \nThe Mid Region Council of Governments employs a travel model to assess the anticipated future travel \ndemand in the region. The four-step model is the most widely used transportation model for MPO \nagencies throughout the country to help determine future demand and regional travel patterns. The \nfour steps of the model are: \n \n1. Trip generation  \n2. Trip Distribution  \n3. Mode Choice, and  \n4. Trip assignment \n \nMore detail on each step, including date needs and outputs is provided below. The travel demand \nmodel is currently developed in the Cube software (Citilabs) platform with several components written \nin Python.  \n \nThe travel model is run for a scenario year, to represent a particular year, set of projects, or can be \nproject-specific. There are 3 main inputs needed, including a socio-economic file generated by the land \nuse model, a road network, and two transit networks for the peak and off-peak time. \n \nThe socio-economic file has information by Data Analysis Sub Zone (DASZ) such as employment by type, \nnumber of households, and population while the road network has road characteristics such as posted \nspeed, number of lanes, and functional class. \n \nIn order to better represent the travel behavior of the area, the model must be calibrated for a base-\nyear using a travel survey to understand current travel patterns and characteristics. Observed travel \npatterns, such as trip-purpose split to distinguish different trip types is used to validate the accuracy of \nthe model. For this, MRCOG conducted a 2014 Household travel survey to update for this MTP. The \nsurvey findings were used to adjust the different trip purpose factors needed to represent the trip \ndistribution by trip purpose and time of day.    \nThe four travel demand steps are: \nStep 1: Trip Generation – How many trips are generated?  \nThe first step of the model is the trip generation (production) step",
+          "14": "H-14 \nConnections 2040 MTP Appendix \n• \nBehavioral patterns are assumed to be relatively stable over time. The UrbanSim model assumes \nthat behavioral patterns will not change dramatically over time. Models are estimated using \nobserved data, and the parameters reflect a certain range of conditions observed in the data. If \nconditions were to change dramatically, such as fuel prices tripling and continuing to increase, it \nis probably the case that fundamental changes in consumption behavior, such as vehicle \nownership and use, would result. \n \n \n \n",
+          "26": "H-26 \nConnections 2040 MTP Appendix \nare public and transparent, and they outline the parameters internal to the model for performing \neconomic analysis and benefit-cost analysis. The sources shown below serve as defaults and can be \nadjusted by the user to reflect alternative assumptions or data sources.  \n \nParameter \nData Source \nEmissions rates per VMT \n(five types: VOC, NOX, CO, \nSOX, PM) \nUnited States Environmental Protection Agency (U.S. EPA) models: \nPART5 (SOX and PM) and MOBILE6b (CO, NOX, and VOC) \nSocial costs of emissions \n(five types: VOC, NOX, \nCO, SOX, PM) \nMcCubbin, Donald and Mark Delucchi, “The Social Costs of the Health \nEffects of Motor Vehicle Air Pollution.” Report 11 from The Annualized \nSocial Cost of Motor-Vehicle Use in the United States. Institute of \nTransportation Studies. University of California-Davis, 1996. \nSafety valuations \n(fatalities, injuries, and \nPDOs) \nNational Safety Council (which incorporates wage and productivity \nlosses, medical expenses, vehicle damage, and risk adverseness) – \nEstimating the Cost of Unintentional Injuries \nHistorical Fuel Prices \nEnergy Information Administration (EIA) \nHistorical Fuel Efficiency \nEnergy Information Administration (EIA) \nValue of lost leisure time \ndue to travel and delay \n• \nHighlights of the 2001 National Household Travel Survey, Bureau \nof Transportation Statistics, U.S. Department of Transportation, \nBTS-0305, 2003. \n• \nSummary of Travel Trends: 1995 Nationwide Personal \nTransportation Survey, Federal Highway Administration, U.S. \nDepartment of Transportation, 1999, 2001 National Transit \nDatabase. \n• \nThe Value of Saving Travel Time: Departmental Guidance for \nConducting Economic Evaluations, U.S. Department of \nTransportation, April 19, 1997. \n• \nThese are the prefabricated estimates of occupancy of leisure \ntime values—FHWA recommends 50% of the median hourly \nwage as the hourly value of lost/gained leisure time \nOccupancy rates \nSee the category for leisure time \n \n"
+        },
+        "metadata": {
+          "format": "PDF 1.5",
+          "title": "",
+          "author": "Daniel Jimenez",
+          "subject": "",
+          "keywords": "",
+          "creator": "Acrobat PDFMaker 17 for Word",
+          "producer": "Adobe PDF Library 15.0",
+          "creationDate": "D:20200423153534-06'00'",
+          "modDate": "D:20200423153539-06'00'",
+          "trapped": "",
+          "encryption": null
+        },
+        "representative_visual_qa": "passed_agent_inspection_opening_middle_ending",
+        "visual_review_evidence": "Fresh authoritative opening/middle/ending images inspected in regional-review-01 through regional-review-18 sheets, with complete all-page text extraction, page measurements, source identity and low-ink checks retained. Image-only signed instruments and visual charts/maps reviewed directly.",
+        "visually_reviewed_at": "2026-09-26T18:58:05.478675Z"
+      },
+      "disposition": "approved for addition",
+      "rationale": "Fresh exact authoritative original reviewed. The detailed model-methodology appendix explains the local model, regional input data and forecasting assumptions supporting Albuquerque metropolitan infrastructure choices. It belongs to the existing plan/appendix family and is not an unrelated generic modeling manual.",
+      "canonical_candidate_id": null,
+      "quality_assessment": {
+        "visual_inspection": "Fresh authoritative opening/middle/ending images inspected in regional-review-01 through regional-review-18 sheets, with complete all-page text extraction, page measurements, source identity and low-ink checks retained. Image-only signed instruments and visual charts/maps reviewed directly.",
+        "actual_function": "Fresh exact authoritative original reviewed. The detailed model-methodology appendix explains the local model, regional input data and forecasting assumptions supporting Albuquerque metropolitan infrastructure choices. It belongs to the existing plan/appendix family and is not an unrelated generic modeling manual.",
+        "measured_page_count": 26,
+        "measured_word_count": 7839,
+        "intended_publication_form": "Future curated historical programme/study family, preserving exact individual source originals and dates; no visitor-visible implementation.",
+        "standalone_public_value": "The detailed model-methodology appendix explains the local model, regional input data and forecasting assumptions supporting Albuquerque metropolitan infrastructure choices. It belongs to the existing plan/appendix family and is not an unrelated generic modeling manual.",
+        "information_density": "Measured full-document pages/words and source container are retained in QA.",
+        "series_component_relationship": "The detailed model-methodology appendix explains the local model, regional input data and forecasting assumptions supporting Albuquerque metropolitan infrastructure choices. It belongs to the existing plan/appendix family and is not an unrelated generic modeling manual.",
+        "substantive_rationale": "Fresh exact authoritative original reviewed. The detailed model-methodology appendix explains the local model, regional input data and forecasting assumptions supporting Albuquerque metropolitan infrastructure choices. It belongs to the existing plan/appendix family and is not an unrelated generic modeling manual."
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T18:58:05.478699Z",
+        "geographic_institutional_scope": "MRCOG",
+        "specific_albuquerque_connection": "Albuquerque metropolitan travel-demand model underlying Connections 2040",
+        "abqinfo_public_information_value": "The detailed model-methodology appendix explains the local model, regional input data and forecasting assumptions supporting Albuquerque metropolitan infrastructure choices. It belongs to the existing plan/appendix family and is not an unrelated generic modeling manual.",
+        "general_context_exclusion_test": "City hosting, jurisdiction, geographic origin and procedural usefulness alone are insufficient; the actual document function and distinct public value control.",
+        "final_scope_decision": "passes_both_gates",
+        "substantive_rationale": "Fresh exact authoritative original reviewed. The detailed model-methodology appendix explains the local model, regional input data and forecasting assumptions supporting Albuquerque metropolitan infrastructure choices. It belongs to the existing plan/appendix family and is not an unrelated generic modeling manual."
+      },
+      "archival_readiness": "Original fully prepared; authorized guarded upload pending",
+      "proposed_canonical_page": "content/transportation/transportation-plans.md",
+      "independent_review_input": "project-state/discovery/ordinary-second-large-campaign-regional-review-decisions-2026-09-26.json",
+      "archive_preflight": {
+        "same_hash_inventory_ids": [],
+        "key_collision": false,
+        "namespace_basis": "Established page and R2 topical namespace: content/transportation/transportation-plans.md"
+      },
+      "r2_key": "transportation/transportation-plans/source-7a90167f-connections-2040-appendix-h-model-methodologies.pdf",
+      "reviewed_title": "Connections 2040 Appendix H: Model Methodologies",
+      "review_complete": true,
+      "upload_intent": {
+        "key": "transportation/transportation-plans/source-7a90167f-connections-2040-appendix-h-model-methodologies.pdf",
+        "key_was_absent": true,
+        "size_bytes": 2032992,
+        "sha256": "98002a78ff26bc6fac84e27410d258e4e30588d0e1a64a0da9d75a8484802e5a",
+        "started_at": "2026-09-26T19:59:05.2356808Z"
+      },
+      "uploaded_pending_public_verification": true,
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/transportation/transportation-plans/source-7a90167f-connections-2040-appendix-h-model-methodologies.pdf",
+        "size_bytes": 2032992,
+        "checksum_sha256": "98002a78ff26bc6fac84e27410d258e4e30588d0e1a64a0da9d75a8484802e5a",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T19:59:13.3113674Z"
+      },
+      "archive_complete": true
+    },
+    {
+      "id": "src-c58ea51f5773870b",
+      "saved_evidence": {
+        "id": "src-c58ea51f5773870b",
+        "authoritative_url": "https://www.mrcog-nm.gov/DocumentCenter/View/4214/Appendix-J---Data-Sources-for-Maps-PDF",
+        "recommended_status": "approved for addition",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - three records in this lane return HTML despite sitting under a DocumentCenter path, and one file whose URL slug ends -PDF is a JPEG.",
+        "content_kind": "PDF",
+        "leading_bytes": "25504446",
+        "publisher": "Mid-Region Council of Governments",
+        "mrcog_document_number": 4214,
+        "size_bytes": 128681,
+        "checksum_sha256": "4c5d1e90fe77dcf7f12b6896aa3200bdc80d551bb518fed952987ad176f3f207",
+        "title": "Connections 2040 Appendix J: Data Sources for Maps",
+        "description": "Appendix J to the Connections 2040 Metropolitan Transportation Plan, the adopted regional plan for the Albuquerque metropolitan planning area, supplying supporting material the plan itself refers to.",
+        "evidence": "Headed Appendix J on its own first page and naming Connections 2040 in its text. Tested against the archived full plan: token coverage 0.8800 and not one contiguous fifty-word run present, so it is not bound into the document the archive already holds.",
+        "group": "Connections 2040 appendices",
+        "proposed_canonical_page": "content/transportation/_index.md",
+        "cross_listings": [
+          {
+            "page": "content/transportation/roadway-projects/studies.md",
+            "reason": "Methodology and sources behind the plan's analysis."
+          }
+        ],
+        "description_word_count": 27,
+        "completes_record": "src-d651356cdad0e349"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/mrcog-documentcenter-cluster-research-2026-09-13.json"
+      ],
+      "fresh_source_qa": {
+        "source_exact_verified": true,
+        "source_GET": {
+          "http_status": 200,
+          "requested_url": "https://www.mrcog-nm.gov/DocumentCenter/View/4214/Appendix-J---Data-Sources-for-Maps-PDF",
+          "final_url": "https://www.mrcog-nm.gov/DocumentCenter/View/4214/Appendix-J---Data-Sources-for-Maps-PDF",
+          "content_type": "application/pdf",
+          "verified_at": "2026-09-26T18:29:39.500029+00:00",
+          "size_bytes": 128681,
+          "checksum_sha256": "4c5d1e90fe77dcf7f12b6896aa3200bdc80d551bb518fed952987ad176f3f207",
+          "leading_bytes": "255044462d312e350d25e2e3cfd30d0a"
+        },
+        "staged_path": "research/staging/ordinary-second-large-campaign-2026-09-26/src-c58ea51f5773870b.pdf",
+        "size_bytes": 128681,
+        "checksum_sha256": "4c5d1e90fe77dcf7f12b6896aa3200bdc80d551bb518fed952987ad176f3f207",
+        "container": "PDF",
+        "structural_result": "opens_without_password_or_repair",
+        "page_count": 2,
+        "word_count": 269,
+        "text_layer_pages": 2,
+        "rendered_pages": 2,
+        "low_ink_pages": [],
+        "contact_sheets": [
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-c58ea51f5773870b-contact-1.jpg"
+        ],
+        "representative_images": [
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-c58ea51f5773870b-page-1.png",
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-c58ea51f5773870b-page-2.png"
+        ],
+        "full_text_path": "research/staging/ordinary-second-large-campaign-2026-09-26/src-c58ea51f5773870b.txt",
+        "text_excerpts": {
+          "1": "J-1 \n Connections 2040 MTP Appendix \nAppendix J: Data Sources for Maps in the \nConnections 2040 Metropolitan Transportation Plan \n \nNB: This is not an exhaustive list of data sources. It summarizes major sources. In some cases, a specific \ndivision within an agency or major database is listed. In other cases, data may have come from a variety \nof sources or divisions within the listed agency. For information about a particular map theme or \nfeature, please contact us. \n \nRegional: \nMid-Region Council of Governments (MRCOG) \nMid-Region Metropolitan Planning Organization (MRMPO) \nMid-Region Regional Transportation Planning Organization (MRRTPO) \nRio Metro Regional Transit District (RMRTD) \nNew Mexico Department of Transportation (NMDOT) \nTribal Entities \nLocal Entities \n \nNational: \nBureau of Indian Affairs (BIA) \nLand Area Representations (LAR) \nDepartment of Defense (DoD) \nMilitary Installations, Ranges, and Training Areas (MIRTA) \nEsri \nNational Parks Service (NPS) \nPark Unit Boundaries \nUnited States Census Bureau \nUnited States Department of Transportation (USDOT) \nFederal Highway Administration (FHWA) \nNational Highway System (NHS) \nNational Performance Management Research Data Set (NPMRDS) \nUnited States Geological Survey (USGS) \nNational Hydrography Dataset (NHD) \nNational Land Cover Database (NLCD) \nProtected Area Database of the U.S. (PAD-US) \nUnited States Forest Service (USFS) \nAdministrative Forest Boundaries \nWildlife-Urban Interface (WUI) \n \nAdditional Sources by Chapter: \nChapter 5: \nPace \nStrava \n \nChapter 6: \nCenter for Neighborhood Technology (CNT) \nUnited States Department of Housing and Urban Development (HUD) \n",
+          "2": "J-2 \n Connections 2040 MTP Appendix \n \nChapter 7: \nFederal Emergency Management Agency (FEMA) National Flood Hazard Layer (NFHL) \nThe Nature Conservancy \nThe Trust for Public Land \nWestern Association of Fish & Wildlife Agencies (WAFWA) Crucial Habitat Assessment Tool (CHAT) \n \nChapter 9: \nCenter for Health Innovation \nCoStar/MRCOG \nNew Mexico Community Data Collaborative \n \n \n \n"
+        },
+        "metadata": {
+          "format": "PDF 1.5",
+          "title": "",
+          "author": "Sagert Sheets",
+          "subject": "",
+          "keywords": "",
+          "creator": "Acrobat PDFMaker 17 for Word",
+          "producer": "Adobe PDF Library 15.0",
+          "creationDate": "D:20200423153802-06'00'",
+          "modDate": "D:20200423153803-06'00'",
+          "trapped": "",
+          "encryption": null
+        },
+        "representative_visual_qa": "passed_agent_inspection_opening_middle_ending",
+        "visual_review_evidence": "Fresh authoritative opening/middle/ending images inspected in regional-review-01 through regional-review-18 sheets, with complete all-page text extraction, page measurements, source identity and low-ink checks retained. Image-only signed instruments and visual charts/maps reviewed directly.",
+        "visually_reviewed_at": "2026-09-26T18:58:05.481271Z"
+      },
+      "disposition": "excluded",
+      "rationale": "Two-page bibliography lists data sources for maps in a plan already retained. It is reference metadata rather than a substantive Albuquerque dataset, planning analysis or independent decision. Actual original: Connections 2040 Appendix J: Data Sources for Maps",
+      "canonical_candidate_id": null,
+      "quality_assessment": {
+        "visual_inspection": "Fresh authoritative opening/middle/ending images inspected in regional-review-01 through regional-review-18 sheets, with complete all-page text extraction, page measurements, source identity and low-ink checks retained. Image-only signed instruments and visual charts/maps reviewed directly.",
+        "actual_function": "Two-page bibliography lists data sources for maps in a plan already retained. It is reference metadata rather than a substantive Albuquerque dataset, planning analysis or independent decision. Actual original: Connections 2040 Appendix J: Data Sources for Maps",
+        "measured_page_count": 2,
+        "measured_word_count": 269,
+        "intended_publication_form": "none; no visitor-visible implementation authorized",
+        "standalone_public_value": "No distinct eligible standalone public record. Two-page bibliography lists data sources for maps in a plan already retained. It is reference metadata rather than a substantive Albuquerque dataset, planning analysis or independent decision. Actual original: Connections 2040 Appendix J: Data Sources for Maps",
+        "information_density": "Measured full-document pages/words and source container are retained in QA.",
+        "series_component_relationship": "Family boundary reviewed; independent original or administrative supporting file as identified in rationale.",
+        "substantive_rationale": "Two-page bibliography lists data sources for maps in a plan already retained. It is reference metadata rather than a substantive Albuquerque dataset, planning analysis or independent decision. Actual original: Connections 2040 Appendix J: Data Sources for Maps"
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T18:58:05.481290Z",
+        "geographic_institutional_scope": "MRCOG",
+        "specific_albuquerque_connection": "Two-page bibliography lists data sources for maps in a plan already retained. It is reference metadata rather than a substantive Albuquerque dataset, planning analysis or independent decision. Actual original: Connections 2040 Appendix J: Data Sources for Maps",
+        "abqinfo_public_information_value": "No substantive additional ABQInfo policy/infrastructure information is established by this delivery.",
+        "general_context_exclusion_test": "City hosting, jurisdiction, geographic origin and procedural usefulness alone are insufficient; the actual document function and distinct public value control.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Two-page bibliography lists data sources for maps in a plan already retained. It is reference metadata rather than a substantive Albuquerque dataset, planning analysis or independent decision. Actual original: Connections 2040 Appendix J: Data Sources for Maps"
+      },
+      "archival_readiness": "pending source/content/duplicate/mission review",
+      "proposed_canonical_page": "content/transportation/_index.md",
+      "independent_review_input": "project-state/discovery/ordinary-second-large-campaign-regional-review-decisions-2026-09-26.json",
+      "review_complete": true
+    },
+    {
+      "id": "src-a3654251040b0e8f",
+      "saved_evidence": {
+        "id": "src-a3654251040b0e8f",
+        "authoritative_url": "https://www.mrcog-nm.gov/DocumentCenter/View/4215/Appendix-K---Common-Acronyms-PDF",
+        "recommended_status": "approved for addition",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - three records in this lane return HTML despite sitting under a DocumentCenter path, and one file whose URL slug ends -PDF is a JPEG.",
+        "content_kind": "PDF",
+        "leading_bytes": "25504446",
+        "publisher": "Mid-Region Council of Governments",
+        "mrcog_document_number": 4215,
+        "size_bytes": 136735,
+        "checksum_sha256": "02c6149864942e8cd8db9a15c1cb755b9f7929b3a527166110113c38581f540b",
+        "title": "Connections 2040 Appendix K: Common Acronyms",
+        "description": "Appendix K to the Connections 2040 Metropolitan Transportation Plan, the adopted regional plan for the Albuquerque metropolitan planning area, supplying supporting material the plan itself refers to.",
+        "evidence": "Headed Appendix K on its own first page and naming Connections 2040 in its text. Tested against the archived full plan: token coverage 0.9622 and not one contiguous fifty-word run present, so it is not bound into the document the archive already holds.",
+        "group": "Connections 2040 appendices",
+        "proposed_canonical_page": "content/transportation/_index.md",
+        "cross_listings": [
+          {
+            "page": "content/transportation/roadway-projects/studies.md",
+            "reason": "Methodology and sources behind the plan's analysis."
+          }
+        ],
+        "description_word_count": 27,
+        "completes_record": "src-d651356cdad0e349"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/mrcog-documentcenter-cluster-research-2026-09-13.json"
+      ],
+      "fresh_source_qa": {
+        "source_exact_verified": true,
+        "source_GET": {
+          "http_status": 200,
+          "requested_url": "https://www.mrcog-nm.gov/DocumentCenter/View/4215/Appendix-K---Common-Acronyms-PDF",
+          "final_url": "https://www.mrcog-nm.gov/DocumentCenter/View/4215/Appendix-K---Common-Acronyms-PDF",
+          "content_type": "application/pdf",
+          "verified_at": "2026-09-26T18:29:39.517677+00:00",
+          "size_bytes": 136735,
+          "checksum_sha256": "02c6149864942e8cd8db9a15c1cb755b9f7929b3a527166110113c38581f540b",
+          "leading_bytes": "255044462d312e350d25e2e3cfd30d0a"
+        },
+        "staged_path": "research/staging/ordinary-second-large-campaign-2026-09-26/src-a3654251040b0e8f.pdf",
+        "size_bytes": 136735,
+        "checksum_sha256": "02c6149864942e8cd8db9a15c1cb755b9f7929b3a527166110113c38581f540b",
+        "container": "PDF",
+        "structural_result": "opens_without_password_or_repair",
+        "page_count": 4,
+        "word_count": 993,
+        "text_layer_pages": 4,
+        "rendered_pages": 4,
+        "low_ink_pages": [],
+        "contact_sheets": [
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-a3654251040b0e8f-contact-1.jpg"
+        ],
+        "representative_images": [
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-a3654251040b0e8f-page-1.png",
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-a3654251040b0e8f-page-3.png",
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-a3654251040b0e8f-page-4.png"
+        ],
+        "full_text_path": "research/staging/ordinary-second-large-campaign-2026-09-26/src-a3654251040b0e8f.txt",
+        "text_excerpts": {
+          "1": "K-1 \n Connections 2040 MTP Appendix \nAppendix K – Common Acronyms \n \nADA – American with Disabilities Act \nAMPA – Albuquerque Metropolitan Planning Area, the planning boundary for MRMPO \nAV – Autonomous vehicles \nAWDT – Average Weekday Daily Traffic \nBRT - Bus Rapid Transit which is a level of bus service which copies several characteristics of light-rail.   \nCAV – Connected and autonomous vehicles \nCFR – Code of Federal Regulations \nCMAQ – Congestion Mitigation/Air Quality which is a category of Federal aid to states \nCMP – Congestion Management Process \nCNM – Central New Mexico Community College \nCO – Carbon monoxide which is one of the pollutants generated by vehicle emissions  \nCO2 – Carbon dioxide which is one of the greenhouse gases suspected of accelerating climate change \nCRDC – Central Region Design Center of NMDOT \nCV – Connected vehicle. Connected vehicle technology enables vehicles to communicate with other \nvehicles and infrastructure.  \nDASZ – Data Analysis Subzones. Small areas of geography used for transportation planning. \nEJ – Environmental justice. Addresses how low-income and minority populations are affected by \ngovernment actions. \nEPA – U. S. Environmental Protection Agency \nFAST ACT –Fixing America’s Surface Transportation (FAST) Act (current federal transportation law signed \nin 2015) \nFEMA – Federal Emergency Management Agency \nFHWA – Federal Highway Administration \nFTA – Federal Transit Administration \nFFY – Federal Fiscal Year.  In this document, unless otherwise noted, FY refers to the Federal Fiscal Year \nwhich begins October 1st and ends September 30th. \nIDO – Integrated Development Ordinance. The City of Albuquerque’s zoning and subdivision regulations \nthat govern land use and development within the City. The IDO became effective in 2018.  \n",
+          "3": "K-3 \n Connections 2040 MTP Appendix \nRTPO – Rural Transportation Planning Organization \nRTSAP – Regional Transportation Safety Action Plan \nSIP – State Implementation Plan, a statewide plan that addresses air quality nonconformance issues in \norder to implement requirements of the Clean Air Act. \nSOV – Single Occupant Vehicle \nSTIP – Statewide Transportation Improvement Program which is a statewide prioritized list of \ntransportation projects covering a four year period.  A STIP incorporates metropolitan TIPs \n“without modification” per Federal regulations. \nSTP-U– Surface Transportation Program-Large Urban, a subcategory of federal funds for large urban \nareas (in the AMPA that is the Albuquerque UZA) (a.k.a. STP-L) \nTAP – Transportation Alternative Program, a category of federal funding for alternative modes of \ntransportation such as bicycle and pedestrian projects. \nTCC – Transportation Coordinating Committee. MRMPO committee that provides technical advice to the \nMTB. \nTDM – Travel Demand Management. Efforts that reduce demand for vehicle travel. \nTIP – Transportation Improvement Program which is a prioritized list of transportation projects for a \nmetropolitan planning area covering a minimum four year period.  All TIP projects must conform \nto the MTP.  A TIP is to be incorporated into the STIP “without modification” per Federal \nregulations. \nTNC – Transportation Network Companies (i.e., ride-hailing companies) \nTPTG – Transportation Program Task Group. MRMPO committee that provides advice on the TIP. \nTSM and TSMO – Transportation Systems Management and Operations. A set of integrated strategies \nthat focus on operational improvements that can maintain and even restore the performance of \nthe existing transportation system before any extra physical capacity or widening is needed. \nTTP – Tribal Transportation Program, a category of federal funding for tribal governments. \nUNM – University of New Mexico \nUPWP – Unified Planning Work Program which establishes ",
+          "4": "K-4 \n Connections 2040 MTP Appendix \nVHD – Vehicle Hours of Delay, the cumulative difference in time for all travelers between the posted \nspeed limit and the observed or actual travel speed \nZEV – Zero Emissions Vehicle \n \n"
+        },
+        "metadata": {
+          "format": "PDF 1.5",
+          "title": "",
+          "author": "Aaron Sussman",
+          "subject": "",
+          "keywords": "",
+          "creator": "Acrobat PDFMaker 17 for Word",
+          "producer": "Adobe PDF Library 15.0",
+          "creationDate": "D:20200423153930-06'00'",
+          "modDate": "D:20200423153931-06'00'",
+          "trapped": "",
+          "encryption": null
+        },
+        "representative_visual_qa": "passed_agent_inspection_opening_middle_ending",
+        "visual_review_evidence": "Fresh authoritative opening/middle/ending images inspected in regional-review-01 through regional-review-18 sheets, with complete all-page text extraction, page measurements, source identity and low-ink checks retained. Image-only signed instruments and visual charts/maps reviewed directly.",
+        "visually_reviewed_at": "2026-09-26T18:58:05.481299Z"
+      },
+      "disposition": "excluded",
+      "rationale": "Generic acronym definitions form a reference glossary; no local policy, infrastructure evidence or unique programme findings exist in this separate delivery. Actual original: Connections 2040 Appendix K: Common Acronyms",
+      "canonical_candidate_id": null,
+      "quality_assessment": {
+        "visual_inspection": "Fresh authoritative opening/middle/ending images inspected in regional-review-01 through regional-review-18 sheets, with complete all-page text extraction, page measurements, source identity and low-ink checks retained. Image-only signed instruments and visual charts/maps reviewed directly.",
+        "actual_function": "Generic acronym definitions form a reference glossary; no local policy, infrastructure evidence or unique programme findings exist in this separate delivery. Actual original: Connections 2040 Appendix K: Common Acronyms",
+        "measured_page_count": 4,
+        "measured_word_count": 993,
+        "intended_publication_form": "none; no visitor-visible implementation authorized",
+        "standalone_public_value": "No distinct eligible standalone public record. Generic acronym definitions form a reference glossary; no local policy, infrastructure evidence or unique programme findings exist in this separate delivery. Actual original: Connections 2040 Appendix K: Common Acronyms",
+        "information_density": "Measured full-document pages/words and source container are retained in QA.",
+        "series_component_relationship": "Family boundary reviewed; independent original or administrative supporting file as identified in rationale.",
+        "substantive_rationale": "Generic acronym definitions form a reference glossary; no local policy, infrastructure evidence or unique programme findings exist in this separate delivery. Actual original: Connections 2040 Appendix K: Common Acronyms"
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T18:58:05.481304Z",
+        "geographic_institutional_scope": "MRCOG",
+        "specific_albuquerque_connection": "Generic acronym definitions form a reference glossary; no local policy, infrastructure evidence or unique programme findings exist in this separate delivery. Actual original: Connections 2040 Appendix K: Common Acronyms",
+        "abqinfo_public_information_value": "No substantive additional ABQInfo policy/infrastructure information is established by this delivery.",
+        "general_context_exclusion_test": "City hosting, jurisdiction, geographic origin and procedural usefulness alone are insufficient; the actual document function and distinct public value control.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Generic acronym definitions form a reference glossary; no local policy, infrastructure evidence or unique programme findings exist in this separate delivery. Actual original: Connections 2040 Appendix K: Common Acronyms"
+      },
+      "archival_readiness": "pending source/content/duplicate/mission review",
+      "proposed_canonical_page": "content/transportation/_index.md",
+      "independent_review_input": "project-state/discovery/ordinary-second-large-campaign-regional-review-decisions-2026-09-26.json",
+      "review_complete": true
+    },
+    {
+      "id": "src-55a8e87de2bd9c0c",
+      "saved_evidence": {
+        "id": "src-55a8e87de2bd9c0c",
+        "authoritative_url": "https://www.mrcog-nm.gov/DocumentCenter/View/4983/Appendix-F-Public-Outreach-Revised-101221-PDF",
+        "recommended_status": "approved for addition",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - three records in this lane return HTML despite sitting under a DocumentCenter path, and one file whose URL slug ends -PDF is a JPEG.",
+        "content_kind": "PDF",
+        "leading_bytes": "25504446",
+        "publisher": "Mid-Region Council of Governments",
+        "mrcog_document_number": 4983,
+        "size_bytes": 213402,
+        "checksum_sha256": "5c3b96409e453472474e6d091d93fc3e08b18901ed63bd8e0dae50062838c979",
+        "title": "Connections 2040 Appendix F: Public Outreach",
+        "description": "Appendix F to the Connections 2040 Metropolitan Transportation Plan, the adopted regional plan for the Albuquerque metropolitan planning area, supplying supporting material the plan itself refers to.",
+        "evidence": "Headed Appendix F on its own first page and naming Connections 2040 in its text. Tested against the archived full plan: token coverage 0.9220 and not one contiguous fifty-word run present, so it is not bound into the document the archive already holds.",
+        "group": "Connections 2040 appendices",
+        "proposed_canonical_page": "content/transportation/_index.md",
+        "cross_listings": [
+          {
+            "page": "content/transportation/roadway-projects/studies.md",
+            "reason": "Methodology and sources behind the plan's analysis."
+          }
+        ],
+        "description_word_count": 27,
+        "completes_record": "src-d651356cdad0e349"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/mrcog-documentcenter-cluster-research-2026-09-13.json"
+      ],
+      "fresh_source_qa": {
+        "source_exact_verified": true,
+        "source_GET": {
+          "http_status": 200,
+          "requested_url": "https://www.mrcog-nm.gov/DocumentCenter/View/4983/Appendix-F-Public-Outreach-Revised-101221-PDF",
+          "final_url": "https://www.mrcog-nm.gov/DocumentCenter/View/4983/Appendix-F-Public-Outreach-Revised-101221-PDF",
+          "content_type": "application/pdf",
+          "verified_at": "2026-09-26T18:29:39.551514+00:00",
+          "size_bytes": 213402,
+          "checksum_sha256": "5c3b96409e453472474e6d091d93fc3e08b18901ed63bd8e0dae50062838c979",
+          "leading_bytes": "255044462d312e360d25e2e3cfd30d0a"
+        },
+        "staged_path": "research/staging/ordinary-second-large-campaign-2026-09-26/src-55a8e87de2bd9c0c.pdf",
+        "size_bytes": 213402,
+        "checksum_sha256": "5c3b96409e453472474e6d091d93fc3e08b18901ed63bd8e0dae50062838c979",
+        "container": "PDF",
+        "structural_result": "opens_without_password_or_repair",
+        "page_count": 4,
+        "word_count": 955,
+        "text_layer_pages": 4,
+        "rendered_pages": 4,
+        "low_ink_pages": [],
+        "contact_sheets": [
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-55a8e87de2bd9c0c-contact-1.jpg"
+        ],
+        "representative_images": [
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-55a8e87de2bd9c0c-page-1.png",
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-55a8e87de2bd9c0c-page-3.png",
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-55a8e87de2bd9c0c-page-4.png"
+        ],
+        "full_text_path": "research/staging/ordinary-second-large-campaign-2026-09-26/src-55a8e87de2bd9c0c.txt",
+        "text_excerpts": {
+          "1": "F-1 \nConnections 2040 MTP Appendix \n \nAppendix F:  Connections 2040 Public Outreach  \n \nPublic Engagement \nPublic engagement efforts and activities for Connections 2040 were undertaken in accordance with \nMRMPO’s Public Participation Procedures adopted by the Metropolitan Transportation Board in 2018 \nand were guided by MRMPO’s Connections 2040 Public Participation Plan.  \nMRMPO’s overarching goal for public participation is to provide effective outreach to engage as many \nmembers of the public and stakeholders as possible, with particular focus on reaching out to \npopulations underrepresented in the planning process such as low-income, minority populations, and \nyoung adults. The objectives of MRMPO’s public participation goal are to increase engagement through \nnew methods, to increase efforts to reach underrepresented groups, and to put more effort on going \nwhere people are, as opposed to having them come to where we are.  \nIn its outreach efforts, MRMPO’s focus has shifted from presenting information to gathering \ninformation and ideas from the public, agency members, and stakeholders through a variety of \nmethods. As this information is gathered staff integrates that feedback where possible.   \nOutreach strategies used for Connections 2040 MTP include the following:  \n• \nPaper and online Questionnaires in English and Spanish \n• \nPublic meetings and open houses, including new methods and techniques to engage \nparticipants at those meetings \n• \nInformation about MTP and feedback opportunities made available at community events \n• \nSocial media, electronic newsletters, and email blasts \n• \nInteractive maps to gather information \n• \nPresentations to groups and organizations \n• \nVideos that explain the MTP processes \nSpecific to the development of this MTP, there were three main outreach phases during the course of \nthe plan’s development. \nPHASE 1 - Goals, Existing Conditions, and Needs (May 2018-January 2019):  \nPHASE 2 - Evaluation of Strategies and Project Sele",
+          "3": "F-3 \nConnections 2040 MTP Appendix \n \nEvent Name \nLocation \nDate \nABQ Age-Friendly Solutions Forum \nABQ \n9/28/2017 \nMTP 2018 Survey \nOnline    \n2018 \nDowntown ABQ Growers' Market \nABQ \n8/25/2018 \nLos Lunas Farmers Market \nLos Lunas \n9/11/2018 \nRail Yards Market \nABQ \n9/16/2018 \nSouth Valley Market \nBernalillo County \n9/22/2018 \nBernalillo County Public Kick Off Meeting \nBernalillo County \n10/18/2018 \nABQ CiQlovia \nABQ \n10/21/2018 \nSandoval County Public Kick Off Meeting \nRio Rancho \n10/25/2018 \nValencia County Public Kick Off Meeting \nLos Lunas \n10/30/2018 \nLos Ranchos Farmers Market \nLos Ranchos \n9/15/2018 \nNM ITS Conference \nABQ \n10/30/2018 \nGIS Day at UNM \nABQ \n11/4/2018 \nMTP Agency Kick Off Meeting \nABQ \n11/14/2018 \nOptimist Club of ABQ \nABQ \n1/23/2019 \nAlbuquerque/Bern. Co. Government Commission \nABQ \n1/24/2019 \nEvening Optimist Club of ABQ \nABQ \n2/21/2019 \nITE Luncheon Presentation \nABQ \n4/4/2019 \nUNM Sustainability EXPO \nABQ \n4/18/2019 \nOnline Interactive Gaps Map \nOnline  \n2019 \nHealthy Here Lead Group \nABQ \n5/24/2019 \nInternational District Healthy Communities Coalition \nABQ \n6/27/2019 \nRaynolds Addition Neighborhood Association \nABQ \n9/5/2019 \nRail Yards Market \nABQ \n9/22/2019 \nABQ CiQlovia \nABQ \n10/20/2019 \nNM ITS Conference \nABQ \n10/29/2019 \nMTP Tribal Meeting/Workshop \nABQ \n10/30/2019 \nGABAC Presentation \nABQ \n1/13/2020 \nLUTI presentation \nABQ \n1/15/2020 \nPublic Draft MTP Meeting-Sandoval County Meeting \nTown of Bernalillo \n1/15/2020 \nPublic Draft MTP Meeting-Valencia County Meeting \nLos Lunas \n1/22/2020 \nPublic Draft MTP Meeting-Bernalillo County Meeting \nABQ \n1/30/2020 \nVirtual Open House (held via Facebook Live during the \nCOVID-19 outbreak) \nOnline \n3/25/2020 \n \n \n \n",
+          "4": "F-4 \nConnections 2040 MTP Appendix \n \nOutreach for the Socioeconomic Forecast \nThe socioeconomic forecasting process also included an extensive level of input both from member \nagencies, planners, and the private development community. MRMPO staff conduct interviews to ask \nabout historical growth patterns and influences, near term developments, and potential for long range \ndevelopment out to the horizon year of 2040. This data collection process in ongoing, MRMPO staff are \ncontinuously conducting meetings that inform the regional forecast. Below is an incomplete list of the \nentities that were consulted in the development of the 2040 Socioeconomic Forecast: \n• \nLocal land use planners  \n• \nAlbuquerque Public Schools \n• \nRio Rancho Public Schools \n• \nAlbuquerque Bernalillo County Water Utility Authority \n• \nGarrett Development Corporation \n• \nWestland Area Land Holdings \n• \nSC3 International, Mesa del Sol \n• \nBohannan Huston Inc.  \n• \nNew Mexico Home Builders Association \n• \nConsensus Planning \n• \nTitan Development \n• \nUniversity of New Mexico \n• \nCentral New Mexico Community College \n• \nUniversity of New Mexico Hospital \n• \nNM Apartment Association \n• \nWest Wood Realty \n• \nAMREP Corporation \n \nMRMPO also uses the following key databases and resources in order to identify near term \ndevelopments for the regional socioeconomic forecast: \n• \nMetrostudy Residential Database (single family housing developments with 4 or more units \n• \nCoStar Commercial Real Estate Database (multi-family, retail, commercial, office and industrial \nproperties) \n• \nLocal Development Review \n• \nNew Mexico Business First \n• \nAlbuquerque Journal \n \nLastly, MRMPO staff collect all zoning regulations and approved local land use plans, sector \ndevelopment plans, area plans, comprehensive plans and master plans which combine to inform the \nlong range forecast. \n \n"
+        },
+        "metadata": {
+          "format": "PDF 1.6",
+          "title": "",
+          "author": "Tara Cok",
+          "subject": "",
+          "keywords": "",
+          "creator": "Acrobat PDFMaker 17 for Word",
+          "producer": "Adobe PDF Library 17.11.238",
+          "creationDate": "D:20211020145726-06'00'",
+          "modDate": "D:20211020145728-06'00'",
+          "trapped": "",
+          "encryption": null
+        },
+        "representative_visual_qa": "passed_agent_inspection_opening_middle_ending",
+        "visual_review_evidence": "Fresh authoritative opening/middle/ending images inspected in regional-review-01 through regional-review-18 sheets, with complete all-page text extraction, page measurements, source identity and low-ink checks retained. Image-only signed instruments and visual charts/maps reviewed directly.",
+        "visually_reviewed_at": "2026-09-26T18:58:05.481309Z"
+      },
+      "disposition": "excluded",
+      "rationale": "Outreach appendix lists meetings, dates, programme publicity and process background without an independent local decision or analysis. The full metropolitan plan retains the resulting substantive policy record. Actual original: Connections 2040 Appendix F: Public Outreach",
+      "canonical_candidate_id": null,
+      "quality_assessment": {
+        "visual_inspection": "Fresh authoritative opening/middle/ending images inspected in regional-review-01 through regional-review-18 sheets, with complete all-page text extraction, page measurements, source identity and low-ink checks retained. Image-only signed instruments and visual charts/maps reviewed directly.",
+        "actual_function": "Outreach appendix lists meetings, dates, programme publicity and process background without an independent local decision or analysis. The full metropolitan plan retains the resulting substantive policy record. Actual original: Connections 2040 Appendix F: Public Outreach",
+        "measured_page_count": 4,
+        "measured_word_count": 955,
+        "intended_publication_form": "none; no visitor-visible implementation authorized",
+        "standalone_public_value": "No distinct eligible standalone public record. Outreach appendix lists meetings, dates, programme publicity and process background without an independent local decision or analysis. The full metropolitan plan retains the resulting substantive policy record. Actual original: Connections 2040 Appendix F: Public Outreach",
+        "information_density": "Measured full-document pages/words and source container are retained in QA.",
+        "series_component_relationship": "Family boundary reviewed; independent original or administrative supporting file as identified in rationale.",
+        "substantive_rationale": "Outreach appendix lists meetings, dates, programme publicity and process background without an independent local decision or analysis. The full metropolitan plan retains the resulting substantive policy record. Actual original: Connections 2040 Appendix F: Public Outreach"
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T18:58:05.481313Z",
+        "geographic_institutional_scope": "MRCOG",
+        "specific_albuquerque_connection": "Outreach appendix lists meetings, dates, programme publicity and process background without an independent local decision or analysis. The full metropolitan plan retains the resulting substantive policy record. Actual original: Connections 2040 Appendix F: Public Outreach",
+        "abqinfo_public_information_value": "No substantive additional ABQInfo policy/infrastructure information is established by this delivery.",
+        "general_context_exclusion_test": "City hosting, jurisdiction, geographic origin and procedural usefulness alone are insufficient; the actual document function and distinct public value control.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Outreach appendix lists meetings, dates, programme publicity and process background without an independent local decision or analysis. The full metropolitan plan retains the resulting substantive policy record. Actual original: Connections 2040 Appendix F: Public Outreach"
+      },
+      "archival_readiness": "pending source/content/duplicate/mission review",
+      "proposed_canonical_page": "content/transportation/_index.md",
+      "independent_review_input": "project-state/discovery/ordinary-second-large-campaign-regional-review-decisions-2026-09-26.json",
+      "review_complete": true
+    }
+  ],
+  "visitor_visible_content_changed": false,
+  "state": "reviewed_decisions_ready_for_inventory"
+}

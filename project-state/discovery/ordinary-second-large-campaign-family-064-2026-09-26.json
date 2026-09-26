@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_second_large_campaign_family_evidence",
+  "family_id": "family-064",
+  "family": "Delivery aliases of src-a348ef5e50807cc0",
+  "scope_ids": [
+    "src-593e66c54f094b9e"
+  ],
+  "records": [
+    {
+      "id": "src-593e66c54f094b9e",
+      "saved_evidence": {
+        "id": "src-593e66c54f094b9e",
+        "authoritative_url": "https://www.mrcog-nm.gov/DocumentCenter/View/2057",
+        "recommended_status": "duplicate",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - three records in this lane return HTML despite sitting under a DocumentCenter path, and one file whose URL slug ends -PDF is a JPEG.",
+        "content_kind": "PDF",
+        "leading_bytes": "25504446",
+        "publisher": "Mid-Region Council of Governments",
+        "mrcog_document_number": 2057,
+        "size_bytes": 2784891,
+        "checksum_sha256": "113771e4d81de08019d146bfeaa4e318f301a071af8a653640391d2b598db089",
+        "canonical_id": "src-a348ef5e50807cc0",
+        "title_for_reference": "DocumentCenter/View/2057, bare form",
+        "relationship": "The same object as its canonical, reached by the DocumentCenter id without the document slug.",
+        "how_it_was_established": "Byte-identical: both return 2,784,891 bytes with the same SHA-256. The publisher serves one document at two URL shapes, /View/<id> and /View/<id>/<Slug>.",
+        "why_this_one_is_the_copy": "The slugged form names the document; the bare form is an opaque id. Archive the form that says what it is.",
+        "group": "url twins"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/mrcog-documentcenter-cluster-research-2026-09-13.json"
+      ],
+      "fresh_source_qa": {
+        "source_exact_verified": true,
+        "source_GET": {
+          "http_status": 200,
+          "requested_url": "https://www.mrcog-nm.gov/DocumentCenter/View/2057",
+          "final_url": "https://www.mrcog-nm.gov/DocumentCenter/View/2057/2010-CMP-Profiles-PDF?bidId=",
+          "content_type": "application/pdf",
+          "verified_at": "2026-09-26T18:22:02.393878+00:00",
+          "size_bytes": 2784891,
+          "checksum_sha256": "113771e4d81de08019d146bfeaa4e318f301a071af8a653640391d2b598db089",
+          "leading_bytes": "255044462d312e360d25e2e3cfd30d0a"
+        },
+        "staged_path": "research/staging/ordinary-second-large-campaign-2026-09-26/src-593e66c54f094b9e.pdf",
+        "size_bytes": 2784891,
+        "checksum_sha256": "113771e4d81de08019d146bfeaa4e318f301a071af8a653640391d2b598db089",
+        "container": "PDF",
+        "structural_result": "opens_without_password_or_repair",
+        "page_count": 38,
+        "word_count": 11566,
+        "text_layer_pages": 35,
+        "rendered_pages": 3,
+        "low_ink_pages": [],
+        "contact_sheets": [
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-593e66c54f094b9e-contact-1.jpg"
+        ],
+        "representative_images": [
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-593e66c54f094b9e-page-1.png",
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-593e66c54f094b9e-page-20.png",
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-593e66c54f094b9e-page-38.png"
+        ],
+        "full_text_path": "research/staging/ordinary-second-large-campaign-2026-09-26/src-593e66c54f094b9e.txt",
+        "text_excerpts": {
+          "1": "",
+          "20": "Unser Blvd\nProfi le & Statistics\n#13\nStudy\u0003Area\nLength\u0003&\u0003No.\u0003of\u0003Segments\nFunctional\u0003Class\nAccess\u0003Control\nLanes\nTransit\nDaily\u0003Volume\nAverage\u0003Speeds\u0003(PM\u0003North)\nAverage\u0003Speeds\u0003(PM\u0003South)\nTotal\u0003Delay\u0003(PM\u0003North)\nTotal\u0003Delay\u0003(PM\u0003South)\nMeasure\n2000\n2008\n2035\nPopulation\n57,723\n103,391\n207,896\nEmployment\n7,506\n13,875\n50,296\nVolume/Capacity\u0003Ratio\nSpeed\u0003Differential\nCrash\u0003Rates\nOverall\u0003Rank\nITS\u0003deployment:\u0003Yes\u0003\u0003Ͳ\u0003\u0003PF,\u0003CCTV,\u0003DMS\nLimited\u0003access:\u0003Entire\u0003corridor\nLanes:\u0003Abrazo\u0003to\u0003Farol\nABQ\u0003Ride :\u0003Route\u0003155\u0003(local),\u000394\u0003(commuter)\nTrail:\u0003Blake\u0003to\u0003Rainbow\nLanes:\u0003Tower\u0003to\u0003Rainbow\u0003(small\u0003gaps)\nTrail:\u0003Paradise\u0003to\u0003Farol\nCorridor\u0003Ranks\n6\u0003/\u000330\n29\u0003/\u000330\n14\u0003/\u000330\n13\u0003/\u000330\n101.7\u0003Sq.\u0003Miles\n23.8\u0003Miles\u0003\u0003Ͳ\u0003\u000335\u0003segments\nPrincipal\u0003Arterial\nCorridor\u0003Profile*\nDemographic\u0003Trends\n3,000\u0003Ͳ\u000332,000\n31\u0003Ͳ\u000352\u0003mph\n21\u0003Ͳ\u000352\u0003mph\n39\u0003seconds\u0003(2\u0003sec./mile)\n97\u0003seconds\u0003(4\u0003sec./mile)\n2\u0003Ͳ\u00036\u0003lanes\nSummary\u0003Data^\nRoute:\u0003Farol\u0003to\u0003US\u0003550\nDesignated\u0003corridor:\u0003Yes\nIntelligent\u0003Transportation\u0003\nSystems\nBicycle\u0003Facilities\n• \nUnser Blvd is a nearly 24-mile limited-access principal arterial and major north-south facility that connects southwest Bernalillo County, the \nCity of Albuquerque, and the City of Rio Rancho. Unser provides connections from Westside residential areas to I-40 and other east-west road-\nways and off ers access to Rio Rancho City Center.\n• \nThe CMP corridor runs between Blake Rd and US 550. There is currently a gap in Unser Blvd between Universe Blvd and Paradise Blvd.\n• \nThe corridor is highly varied in its conditions. Congestion is minor-to-moderate between Bridge and Ouray and most severe between Mon-\ntaño and McMahon. There is little traffi  c and uncongested conditions between Northern Blvd and US 550.\n• \nThe highest volumes along Unser are found around I-40 (30,000 vehicles per day).\n• \nOverall crash rates along Unser are right around the regional average. Intersections at Sage and Central have crash rates more than three \ntimes the regional average.\n• \nThe study area, along with much of the Westside, is proj",
+          "38": "Mid Region Council of Governments\n809 Copper Ave., NW\nAlbuquerque, NM 87102\nPhone: 505.247.1750\nFax: 505.247.1753\n"
+        },
+        "metadata": {
+          "format": "PDF 1.6",
+          "title": "cover1.indd",
+          "author": "djimenez",
+          "subject": "",
+          "keywords": "",
+          "creator": "PScript5.dll Version 5.2.2",
+          "producer": "Acrobat Distiller 9.4.6 (Windows)",
+          "creationDate": "D:20111205155144-07'00'",
+          "modDate": "D:20111205155144-07'00'",
+          "trapped": "",
+          "encryption": null
+        },
+        "representative_visual_qa": "passed_agent_inspection_opening_middle_ending",
+        "visual_review_evidence": "Opening/middle/ending pages inspected in supporting-review-01 through supporting-review-13, with complete source text and container/page/word QA. Full component comparisons and Nob Hill printed figure pages were independently checked against canonical originals; saved recommendations corrected where contradicted.",
+        "visually_reviewed_at": "2026-09-26T19:20:53.383090Z"
+      },
+      "disposition": "duplicate",
+      "rationale": "Fresh full authoritative GET exactly matches src-a348ef5e50807cc0 by SHA-256 113771e4d81de08019d146bfeaa4e318f301a071af8a653640391d2b598db089 and size 2784891 bytes. Preserve this delivery provenance and the settled canonical disposition; no second archival object.",
+      "canonical_candidate_id": "src-a348ef5e50807cc0",
+      "quality_assessment": {
+        "visual_inspection": "Opening/middle/ending pages inspected in supporting-review-01 through supporting-review-13, with complete source text and container/page/word QA. Full component comparisons and Nob Hill printed figure pages were independently checked against canonical originals; saved recommendations corrected where contradicted.",
+        "actual_function": "Fresh full authoritative GET exactly matches src-a348ef5e50807cc0 by SHA-256 113771e4d81de08019d146bfeaa4e318f301a071af8a653640391d2b598db089 and size 2784891 bytes. Preserve this delivery provenance and the settled canonical disposition; no second archival object.",
+        "measured_page_count": 38,
+        "measured_word_count": 11566,
+        "intended_publication_form": "none; no visitor-visible implementation authorized",
+        "standalone_public_value": "No distinct eligible standalone public record. Fresh full authoritative GET exactly matches src-a348ef5e50807cc0 by SHA-256 113771e4d81de08019d146bfeaa4e318f301a071af8a653640391d2b598db089 and size 2784891 bytes. Preserve this delivery provenance and the settled canonical disposition; no second archival object.",
+        "information_density": "Measured full-document pages/words and source container are retained in QA.",
+        "series_component_relationship": "Family boundary reviewed; independent original or administrative supporting file as identified in rationale.",
+        "substantive_rationale": "Fresh full authoritative GET exactly matches src-a348ef5e50807cc0 by SHA-256 113771e4d81de08019d146bfeaa4e318f301a071af8a653640391d2b598db089 and size 2784891 bytes. Preserve this delivery provenance and the settled canonical disposition; no second archival object."
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T19:20:53.383106Z",
+        "geographic_institutional_scope": "MRCOG",
+        "specific_albuquerque_connection": "Fresh full authoritative GET exactly matches src-a348ef5e50807cc0 by SHA-256 113771e4d81de08019d146bfeaa4e318f301a071af8a653640391d2b598db089 and size 2784891 bytes. Preserve this delivery provenance and the settled canonical disposition; no second archival object.",
+        "abqinfo_public_information_value": "No substantive additional ABQInfo policy/infrastructure information is established by this delivery.",
+        "general_context_exclusion_test": "City hosting, jurisdiction, geographic origin and procedural usefulness alone are insufficient; the actual document function and distinct public value control.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Fresh full authoritative GET exactly matches src-a348ef5e50807cc0 by SHA-256 113771e4d81de08019d146bfeaa4e318f301a071af8a653640391d2b598db089 and size 2784891 bytes. Preserve this delivery provenance and the settled canonical disposition; no second archival object."
+      },
+      "archival_readiness": "Retain canonical relationship; no second upload",
+      "proposed_canonical_page": null,
+      "independent_review_input": "project-state/discovery/ordinary-second-large-campaign-supporting-review-decisions-2026-09-26.json",
+      "exact_identity_relationship": {
+        "canonical_id": "src-a348ef5e50807cc0",
+        "canonical_status": "placement assigned",
+        "same_sha256": true,
+        "same_size": true,
+        "canonical_r2_key": "transportation/operations-data/mrcog-2010-cmp-profiles.pdf"
+      },
+      "review_complete": true
+    }
+  ],
+  "visitor_visible_content_changed": false,
+  "state": "reviewed_decisions_ready_for_inventory"
+}

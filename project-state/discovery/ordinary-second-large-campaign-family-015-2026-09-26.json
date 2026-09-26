@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_second_large_campaign_family_evidence",
+  "family_id": "family-015",
+  "family": "Delivery aliases of src-14aad9f4e2e568a5",
+  "scope_ids": [
+    "src-f37001702294a0ff"
+  ],
+  "records": [
+    {
+      "id": "src-f37001702294a0ff",
+      "saved_evidence": {
+        "id": "src-f37001702294a0ff",
+        "authoritative_url": "https://www.mrcog-nm.gov/DocumentCenter/View/2060",
+        "recommended_status": "duplicate",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - three records in this lane return HTML despite sitting under a DocumentCenter path, and one file whose URL slug ends -PDF is a JPEG.",
+        "content_kind": "PDF",
+        "leading_bytes": "25504446",
+        "publisher": "Mid-Region Council of Governments",
+        "mrcog_document_number": 2060,
+        "size_bytes": 394579,
+        "checksum_sha256": "935184d6bb712cb8000e91b9a2085bc61e59f5197fcbe5886f93aef91f975105",
+        "canonical_id": "src-14aad9f4e2e568a5",
+        "title_for_reference": "DocumentCenter/View/2060, bare form",
+        "relationship": "The same object as its canonical, reached by the DocumentCenter id without the document slug.",
+        "how_it_was_established": "Byte-identical: both return 394,579 bytes with the same SHA-256. The publisher serves one document at two URL shapes, /View/<id> and /View/<id>/<Slug>.",
+        "why_this_one_is_the_copy": "The slugged form names the document; the bare form is an opaque id. Archive the form that says what it is.",
+        "group": "url twins"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/mrcog-documentcenter-cluster-research-2026-09-13.json"
+      ],
+      "fresh_source_qa": {
+        "source_exact_verified": true,
+        "source_GET": {
+          "http_status": 200,
+          "requested_url": "https://www.mrcog-nm.gov/DocumentCenter/View/2060",
+          "final_url": "https://www.mrcog-nm.gov/DocumentCenter/View/2060/2014-CMP-Corridor-Rankings-PDF?bidId=",
+          "content_type": "application/pdf",
+          "verified_at": "2026-09-26T18:21:30.640752+00:00",
+          "size_bytes": 394579,
+          "checksum_sha256": "935184d6bb712cb8000e91b9a2085bc61e59f5197fcbe5886f93aef91f975105",
+          "leading_bytes": "255044462d312e350d0a25b5b5b5b50d"
+        },
+        "staged_path": "research/staging/ordinary-second-large-campaign-2026-09-26/src-f37001702294a0ff.pdf",
+        "size_bytes": 394579,
+        "checksum_sha256": "935184d6bb712cb8000e91b9a2085bc61e59f5197fcbe5886f93aef91f975105",
+        "container": "PDF",
+        "structural_result": "opens_without_password_or_repair",
+        "page_count": 1,
+        "word_count": 316,
+        "text_layer_pages": 1,
+        "rendered_pages": 1,
+        "low_ink_pages": [],
+        "contact_sheets": [
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-f37001702294a0ff-contact-1.jpg"
+        ],
+        "representative_images": [
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-f37001702294a0ff-page-1.png"
+        ],
+        "full_text_path": "research/staging/ordinary-second-large-campaign-2026-09-26/src-f37001702294a0ff.txt",
+        "text_excerpts": {
+          "1": "2014 Congestion Management Process Corridor Network and Rank\nRank\nRoute\nV/C Points\nSpeed Points Crash Points\nFinal Score\n1\nAlameda Blvd.\n68.19\n23.97\n3.64\n95.80\n2\nMontano Rd.\n41.25\n25.88\n11.82\n78.95\n3\nBridge/Cesar Chavez Blvd.\n48.61\n15.08\n11.33\n75.02\n4\nU.S. 550\n52.87\n17.14\n3.33\n73.35\n5\nPaseo Del Norte\n33.68\n16.89\n16.32\n66.89\n6\nSan Mateo Blvd.\n9.19\n38.78\n18.13\n66.10\n7\nParadise Blvd.\n30.65\n18.86\n16.00\n65.51\n8\nIsleta Blvd.\n40.16\n19.21\n4.62\n63.98\n9\nOsuna Rd.\n15.92\n38.17\n9.33\n63.42\n10\nArenal Rd.\n27.82\n21.54\n10.00\n59.35\n11\nMontgomery Blvd.\n7.27\n27.78\n20.83\n55.88\n12\nRio Bravo/Dennis Chavez Blvd.\n24.13\n14.69\n14.29\n53.11\n13\nJefferson St.\n22.63\n22.19\n7.78\n52.60\n14\nCoors Blvd.\n15.68\n16.53\n13.44\n45.64\n15\nWyoming Blvd.\n4.86\n24.99\n13.33\n43.18\n16\nCentral Ave.\n10.99\n16.97\n14.25\n42.21\n17\nN.M. 6\n8.50\n29.02\n4.00\n41.52\n18\nEubank Blvd.\n8.22\n20.25\n12.00\n40.47\n19\n2nd St.\n11.07\n18.78\n9.62\n39.47\n20\n4th St.\n11.47\n22.88\n5.00\n39.35\n21\nN.M. 47\n29.82\n3.65\n1.25\n34.72\n22\nGibson Blvd.\n10.13\n17.18\n6.67\n33.98\n23\nN.M. 528\n13.86\n13.50\n6.19\n33.56\n24\nLomas Blvd.\n1.73\n22.36\n9.17\n33.26\n25\nLouisiana Blvd.\n3.00\n16.34\n10.48\n29.82\n26\nUnser Blvd.\n11.37\n9.42\n8.80\n29.59\n27\nMenaul Blvd.\n3.00\n15.00\n9.09\n27.10\n28\nSouthern Blvd.\n7.46\n11.23\n5.83\n24.52\n29\nIrving Blvd.\n2.98\n11.31\n10.00\n24.29\n30\nBroadway/Edith Blvd.\n1.69\n15.81\n5.91\n23.41\n31\nTramway Blvd.\n8.74\n3.83\n6.47\n19.04\n0.00\n20.00\n40.00\n60.00\n80.00\n100.00\nTramway Blvd.\nBroadway/Edith Blvd.\nIrving Blvd.\nSouthern Blvd.\nMenaul Blvd.\nUnser Blvd.\nLouisiana Blvd.\nLomas Blvd.\nN.M. 528\nGibson Blvd.\nN.M. 47\n4th St.\n2nd St.\nEubank Blvd.\nN.M. 6\nCentral Ave.\nWyoming Blvd.\nCoors Blvd.\nJefferson St.\nRio Bravo/Dennis Chavez Blvd.\nMontgomery Blvd.\nArenal Rd.\nOsuna Rd.\nIsleta Blvd.\nParadise Blvd.\nSan Mateo Blvd.\nPaseo Del Norte\nU.S. 550\nBridge/Cesar Chavez Blvd.\nMontano Rd.\nAlameda Blvd.\nFinal Score\nRoute\n"
+        },
+        "metadata": {
+          "format": "PDF 1.5",
+          "title": "PowerPoint Presentation",
+          "author": "William Simon",
+          "subject": "",
+          "keywords": "",
+          "creator": "Microsoft® PowerPoint® 2013",
+          "producer": "Microsoft® PowerPoint® 2013",
+          "creationDate": "D:20170413123908-06'00'",
+          "modDate": "D:20170413123908-06'00'",
+          "trapped": "",
+          "encryption": null
+        },
+        "representative_visual_qa": "passed_agent_inspection_opening_middle_ending",
+        "visual_review_evidence": "Opening/middle/ending pages inspected in supporting-review-01 through supporting-review-13, with complete source text and container/page/word QA. Full component comparisons and Nob Hill printed figure pages were independently checked against canonical originals; saved recommendations corrected where contradicted.",
+        "visually_reviewed_at": "2026-09-26T19:20:52.682267Z"
+      },
+      "disposition": "duplicate",
+      "rationale": "Fresh full authoritative GET exactly matches src-14aad9f4e2e568a5 by SHA-256 935184d6bb712cb8000e91b9a2085bc61e59f5197fcbe5886f93aef91f975105 and size 394579 bytes. Preserve this delivery provenance and the settled canonical disposition; no second archival object.",
+      "canonical_candidate_id": "src-14aad9f4e2e568a5",
+      "quality_assessment": {
+        "visual_inspection": "Opening/middle/ending pages inspected in supporting-review-01 through supporting-review-13, with complete source text and container/page/word QA. Full component comparisons and Nob Hill printed figure pages were independently checked against canonical originals; saved recommendations corrected where contradicted.",
+        "actual_function": "Fresh full authoritative GET exactly matches src-14aad9f4e2e568a5 by SHA-256 935184d6bb712cb8000e91b9a2085bc61e59f5197fcbe5886f93aef91f975105 and size 394579 bytes. Preserve this delivery provenance and the settled canonical disposition; no second archival object.",
+        "measured_page_count": 1,
+        "measured_word_count": 316,
+        "intended_publication_form": "none; no visitor-visible implementation authorized",
+        "standalone_public_value": "No distinct eligible standalone public record. Fresh full authoritative GET exactly matches src-14aad9f4e2e568a5 by SHA-256 935184d6bb712cb8000e91b9a2085bc61e59f5197fcbe5886f93aef91f975105 and size 394579 bytes. Preserve this delivery provenance and the settled canonical disposition; no second archival object.",
+        "information_density": "Measured full-document pages/words and source container are retained in QA.",
+        "series_component_relationship": "Family boundary reviewed; independent original or administrative supporting file as identified in rationale.",
+        "substantive_rationale": "Fresh full authoritative GET exactly matches src-14aad9f4e2e568a5 by SHA-256 935184d6bb712cb8000e91b9a2085bc61e59f5197fcbe5886f93aef91f975105 and size 394579 bytes. Preserve this delivery provenance and the settled canonical disposition; no second archival object."
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T19:20:52.682284Z",
+        "geographic_institutional_scope": "MRCOG",
+        "specific_albuquerque_connection": "Fresh full authoritative GET exactly matches src-14aad9f4e2e568a5 by SHA-256 935184d6bb712cb8000e91b9a2085bc61e59f5197fcbe5886f93aef91f975105 and size 394579 bytes. Preserve this delivery provenance and the settled canonical disposition; no second archival object.",
+        "abqinfo_public_information_value": "No substantive additional ABQInfo policy/infrastructure information is established by this delivery.",
+        "general_context_exclusion_test": "City hosting, jurisdiction, geographic origin and procedural usefulness alone are insufficient; the actual document function and distinct public value control.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Fresh full authoritative GET exactly matches src-14aad9f4e2e568a5 by SHA-256 935184d6bb712cb8000e91b9a2085bc61e59f5197fcbe5886f93aef91f975105 and size 394579 bytes. Preserve this delivery provenance and the settled canonical disposition; no second archival object."
+      },
+      "archival_readiness": "Retain canonical relationship; no second upload",
+      "proposed_canonical_page": null,
+      "independent_review_input": "project-state/discovery/ordinary-second-large-campaign-supporting-review-decisions-2026-09-26.json",
+      "exact_identity_relationship": {
+        "canonical_id": "src-14aad9f4e2e568a5",
+        "canonical_status": "placement assigned",
+        "same_sha256": true,
+        "same_size": true,
+        "canonical_r2_key": "transportation/operations-data/mrcog-2014-cmp-corridor-rankings.pdf"
+      },
+      "review_complete": true
+    }
+  ],
+  "visitor_visible_content_changed": false,
+  "state": "reviewed_decisions_ready_for_inventory"
+}

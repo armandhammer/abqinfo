@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_second_large_campaign_family_evidence",
+  "family_id": "family-096",
+  "family": "cabq.legistar.com",
+  "scope_ids": [
+    "src-74d50c710a7740fe"
+  ],
+  "records": [
+    {
+      "id": "src-74d50c710a7740fe",
+      "disposition": "deferred",
+      "error": "Needs format-specific independent preparation: TEXT",
+      "saved_evidence": {
+        "id": "src-74d50c710a7740fe",
+        "authoritative_url": "http://cabq.legistar.com/LegislationDetail.aspx?ID=886393&GUID=C6496564-654A-475F-ADE9-5F3B52D1C1C6&Options=ID%7CText%7C&Search=R-11-211",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "TEXT",
+        "leading_bytes": "496e7661",
+        "http_status": "200",
+        "inventory_title": "The Volcano Trails Sector Development Plan",
+        "size_bytes": 19,
+        "checksum_sha256": "db3194faa729d9d69e9aa6909d1d354358d5cb8907f156847af90d4ce4bdd675",
+        "title_for_reference": "The Volcano Trails Sector Development Plan",
+        "what_it_is": "A Legistar legislation URL that answers Invalid parameters!",
+        "exclusion_reason": "There is no document at this URL. It returns HTTP 200 and nineteen bytes reading Invalid parameters! - the legislation detail record it addresses is gone. Another case where the status code says success and the bytes say otherwise.",
+        "category": "dead link answering with an error string",
+        "package": "nothing_at_the_url"
+      },
+      "historical_source_evidence_preserved": true
+    }
+  ],
+  "visitor_visible_content_changed": false,
+  "state": "prepared_pending_independent_review"
+}
