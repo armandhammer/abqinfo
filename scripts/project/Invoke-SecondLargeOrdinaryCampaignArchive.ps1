@@ -11,8 +11,12 @@ $allFamilyRecords=@(Get-ChildItem 'project-state/discovery/ordinary-second-large
 $baseline=Get-Content $d.baseline_r2_artifact -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
 if ($d.project_storage_limit_bytes -ne 10000000000 -or $d.visitor_visible_content_changed) {throw 'Campaign boundary changed'}
 function Field($o,$n,$v){$o|Add-Member -NotePropertyName $n -NotePropertyValue $v -Force}
+$familyPath=$null
+$family=$null
 function Save-State {
-  foreach ($entry in @(@{path=$campaignPath;data=$d},@{path=$familyPath;data=$family})) {
+  $entries=@(@{path=$campaignPath;data=$d})
+  if($familyPath){$entries+=@{path=$familyPath;data=$family}}
+  foreach ($entry in $entries) {
     $temporary=$entry.path+'.archive.tmp'
     [IO.File]::WriteAllText([IO.Path]::GetFullPath($temporary),($entry.data|ConvertTo-Json -Depth 40),[Text.UTF8Encoding]::new($false))
     Move-Item -LiteralPath $temporary -Destination $entry.path -Force
@@ -69,6 +73,12 @@ $r=@($family.records|Where-Object id -eq $task.id)[0]
   try {
     if($r.mission_scope_assessment.final_scope_decision -ne 'passes_both_gates' -or -not $qa.source_exact_verified -or $qa.representative_visual_qa -ne 'passed_agent_inspection_opening_middle_ending'){throw 'Eligibility or QA gate failed'}
     if($qa.size_bytes -gt 150000000){Field $r 'archive_deferred_reason' 'Object exceeds 150000000-byte campaign authorization';Save-State;continue}
+    # A known capacity deferral performs no remote mutation. Avoid repeating a
+    # full listing for it; Guard still runs immediately before every actual PUT,
+    # after every completed upload and at the final closeout boundary.
+    $present=@($live.objects|Where-Object {$_.key.ToLowerInvariant() -eq $r.r2_key.ToLowerInvariant()})
+    if($present.Count -and ($present.Count -ne 1 -or $present[0].key -cne $r.r2_key -or $present[0].size_bytes -ne $qa.size_bytes -or -not $r.PSObject.Properties['upload_intent'])){throw 'Exact/casefold collision; overwrite prohibited'}
+    if(-not $present.Count -and $live.total_bytes+$qa.size_bytes -gt 10000000000){Field $r 'archive_deferred_reason' 'Fully prepared; only storage capacity prevents upload';Save-State;continue}
     $inv=Get-Content project-state/master-inventory.json -Raw -Encoding UTF8|ConvertFrom-Json -DateKind String
     $row=@($inv.candidates|Where-Object id -eq $r.id)[0]
     if($row.status -notin @('approved for addition','placement assigned') -or $row.checksum_sha256 -cne $qa.checksum_sha256 -or $row.size_bytes -ne $qa.size_bytes){throw 'Inventory identity/state changed'}
@@ -93,7 +103,7 @@ $r=@($family.records|Where-Object id -eq $task.id)[0]
       Field $r 'uploaded_pending_public_verification' $true;Save-State
     }
     $verification=& "$PSScriptRoot/Test-R2PublicObject.ps1" -SourcePath $qa.staged_path -PublicUrl ([uri]('https://files.abqinfo.com/'+$r.r2_key))
-    if(-not $verification.byte_identical -or $verification.size_bytes -ne $qa.size_bytes -or $verification.checksum_sha256 -cne $qa.checksum_sha256){throw 'Fresh public full GET did not match exact original'}
+    if(-not $verification.byte_identical -or $verification.size_bytes -ne $qa.size_bytes -or $verification.checksum_sha256 -cne $qa.checksum_sha256){throw 'Non-identical collision: fresh public full GET did not match exact original'}
     Field $r 'public_verification' $verification;Save-State
     $live=Guard;$object=@($live.objects|Where-Object key -CEQ $r.r2_key)[0]
     Copy-Item $guardPath project-state/r2-inventory.json -Force
@@ -111,7 +121,7 @@ $r=@($family.records|Where-Object id -eq $task.id)[0]
     & "$PSScriptRoot/Update-ArchiveReconciliationCheckpointCounts.ps1" | Out-Null
     Write-Host "Archived and exact-public-byte verified: $($r.id), $($qa.size_bytes) bytes"
   } catch {
-    if($_.Exception.Message -match 'Pre-campaign object|Unexpected R2 object|Storage ceiling exceeded'){throw}
+    if($_.Exception.Message -match 'Pre-campaign object|Unexpected R2 object|Storage ceiling exceeded|collision|Unresolved same-size R2 candidate|Public object (size|checksum) mismatch'){throw}
     Field $r 'archive_operation_error' ([string]$_.Exception.Message);Save-State
     Write-Warning "Isolated archive failure: $($r.id) $($_.Exception.Message)"
   }
