@@ -2,6 +2,8 @@
 param([int]$Start=1,[int]$End=999)
 Set-StrictMode -Version Latest
 $ErrorActionPreference='Stop'
+$writerLock=[IO.File]::Open([IO.Path]::GetFullPath('tmp/background-campaign-writer.lock'),[IO.FileMode]::OpenOrCreate,[IO.FileAccess]::ReadWrite,[IO.FileShare]::None)
+try {
 $pointer=Get-Content 'project-state/active-campaign.json' -Raw -Encoding UTF8|ConvertFrom-Json -DateKind String
 $campaignPath=$pointer.campaign_artifact
 $d=Get-Content $campaignPath -Raw -Encoding UTF8|ConvertFrom-Json -DateKind String
@@ -48,6 +50,13 @@ function Guard {
   }}
   if($live.total_bytes -gt $policy.maximum_projected_r2_bytes){throw 'Storage ceiling exceeded'}
   return $live
+}
+function Assert-SameSizeCandidates($objects,$record) {
+  foreach($o in $objects){
+    $receipts=if($record.PSObject.Properties['same_size_r2_disambiguation']){@($record.same_size_r2_disambiguation)}else{@()}
+    $matched=@($receipts|Where-Object {$_.key -ceq $o.key -and $_.etag -ceq $o.etag -and $_.size_bytes -eq $o.size_bytes -and $_.source_sha256 -ceq $record.fresh_source_qa.checksum_sha256 -and $_.public_get_size_bytes -eq $o.size_bytes -and $_.public_get_sha256 -match '^[0-9a-f]{64}$' -and $_.public_get_sha256 -cne $_.source_sha256 -and $_.verified_at})
+    if($matched.Count -ne 1){throw ('Unresolved same-size R2 candidate: '+$o.key)}
+  }
 }
 # The complete listing is refreshed immediately before the first mutation and
 # every subsequent upload. Resume verifies existing intended bytes, never puts.
@@ -96,7 +105,25 @@ $r=@($family.records|Where-Object id -eq $task.id)[0]
     if($existing.Count){
       if($existing.Count -ne 1 -or $existing[0].key -cne $r.r2_key -or $existing[0].size_bytes -ne $qa.size_bytes -or -not $r.PSObject.Properties['upload_intent']){throw 'Exact/casefold collision; overwrite prohibited'}
     }else{
-      if(@($live.objects|Where-Object size_bytes -eq $qa.size_bytes).Count){throw 'Unresolved same-size R2 candidate'}
+      $sameSize=@($live.objects|Where-Object size_bytes -eq $qa.size_bytes)
+      foreach($candidate in $sameSize){
+        $receipts=if($r.PSObject.Properties['same_size_r2_disambiguation']){@($r.same_size_r2_disambiguation)}else{@()}
+        $already=@($receipts|Where-Object {$_.key -ceq $candidate.key -and $_.etag -ceq $candidate.etag -and $_.source_sha256 -ceq $qa.checksum_sha256})
+        if(-not $already.Count){
+          $comparisonPath=Join-Path ([IO.Path]::GetTempPath()) ('abqinfo-size-comparison-'+[guid]::NewGuid().ToString('n'))
+          try {
+            Invoke-WebRequest -Uri ('https://files.abqinfo.com/'+$candidate.key) -OutFile $comparisonPath -UseBasicParsing -TimeoutSec 180 -Headers @{'Cache-Control'='no-cache'}
+            $comparison=Get-Item -LiteralPath $comparisonPath
+            $comparisonHash=(Get-FileHash -LiteralPath $comparisonPath -Algorithm SHA256).Hash.ToLowerInvariant()
+            $receipts=@($receipts|Where-Object key -CNE $candidate.key)+@([pscustomobject]@{key=$candidate.key;etag=$candidate.etag;size_bytes=$candidate.size_bytes;source_sha256=$qa.checksum_sha256;public_get_size_bytes=$comparison.Length;public_get_sha256=$comparisonHash;public_url=('https://files.abqinfo.com/'+$candidate.key);verified_at=(Get-Date).ToUniversalTime().ToString('o')})
+            Field $r 'same_size_r2_disambiguation' $receipts;Save-State
+          } finally {if(Test-Path -LiteralPath $comparisonPath){Remove-Item -LiteralPath $comparisonPath}}
+        }
+      }
+      # A byte-size coincidence is cleared only by saved full-GET negative hash
+      # evidence tied to the current listing ETag and exact source identity.
+      $live=Guard
+      Assert-SameSizeCandidates @($live.objects|Where-Object size_bytes -eq $qa.size_bytes) $r
       if($live.total_bytes+$qa.size_bytes -gt $policy.maximum_projected_r2_bytes){Field $r 'archive_deferred_reason' 'Fully prepared; only storage capacity prevents upload';Save-State;continue}
       Field $r 'upload_intent' ([pscustomobject]@{key=$r.r2_key;key_was_absent=$true;size_bytes=$qa.size_bytes;sha256=$qa.checksum_sha256;started_at=(Get-Date).ToUniversalTime().ToString('o')})
       Save-State
@@ -135,3 +162,4 @@ $live=Guard
 Copy-Item $guardPath project-state/r2-inventory.json -Force
 Field $d 'latest_r2' ([pscustomobject]@{object_count=$live.object_count;total_bytes=$live.total_bytes})
 Save-State
+} finally { $writerLock.Dispose() }

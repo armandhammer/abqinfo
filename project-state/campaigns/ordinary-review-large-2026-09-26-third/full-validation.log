@@ -1,0 +1,48 @@
+PASS: background framework policy, actual guard failures, locked population, immutable baseline and exact archive receipts.
+PASS: bulk updates preserve atomic no-write on missing mission scope, invalid status and unknown fields; valid scoped approval leaves the protected fixture row untouched.
+PASS: production guard rejects old-key/size/ETag changes, unknown/duplicate intents, casefold collisions and storage overflow; valid listing passes.
+PASS: 30 prior + 13 first-campaign + 218 new objects; all full public GETs, sizes, hashes, ETags and saved/live equality.
+PASS: all 174 observations accounted; 84 hardened/2 already structured, 95 metadata rows; no status/source/protected changes.
+PASS: 700 second-campaign transitions, 218 exact-public originals; protected baseline and zero content changes preserved.
+PASS: 500 reviewed transitions; 13 exact public originals; protected and unrelated rows unchanged; no content changes.
+PASS: 27 approved originals / seven named generated outputs; 30 exact public archives; unchanged baseline objects and noncampaign inventory; no content changes.
+{
+  "Candidates": 7137,
+  "ContentUrls": 2718,
+  "InventoryPrimaryUrls": 8037,
+  "InventoryProvenanceUrls": 5151,
+  "SupportingIndexUrls": 74,
+  "Errors": 0,
+  "Messages": []
+}
+PASS: 1628 frozen historical records validate; new and changed records require positive scope in all 8 progress states.
+PASS: mission-scope audit reconciles the 86-record starting population, preserves one structured disposition per record, and ranks only the 58 positive-scope records.
+PASS: mission-scope-borderline queue is isolated from other human-review reasons and contains 0 unresolved record(s) within the 20-record cap.
+PASS: Add and Exclude persist final assessments and prior borderline history; research remains queued; reruns are byte-identical.
+PASS: Council checkpoint blocker update is idempotent.
+PASS: checkpoint counts equal authoritative master inventory; total=7137, remaining=840, next=src-05ec421cb265b29a.
+PASS: project-state regeneration preserves durable metadata, restores DPM state, enforces the 28-record MS4 package, and is idempotent on a second pass.
+{"Path":"C:\\Users\\ben\\AppData\\Local\\Temp\\abqinfo-pr-body-4a22f52aab734d86bd99d6d53bd9fd06\\valid.md","Result":"passed"}
+Pull-request description regression passed.
+{"applied": 3, "counts": {"pending review": 1, "duplicate": 1, "superseded": 1, "excluded": 1}, "next_pending_id": "canonical"}
+PASS: terminal duplicate and superseded decisions retain canonical provenance generically.
+PASS: all 18 saved NMDOT grant-administration decisions retain metadata, original containers, unresolved placement, and archive gates.
+PASS: NMDOT seven-record archive preparation preserves exact originals, source evidence, Roadway Studies placement, completed visual QA, and the external R2 gate without mutation.
+PASS: PGS has exactly 13 City originals, 109,212,492 source bytes, 652 previously rendered pages, and 13/13 exact public-byte-verified R2 objects with no content change.
+later-MS4 preparation: exact six IDs, 426,926,738 bytes, 5,917 rendered pages, collision-free, historical upload gate preserved
+later-MS4 R2 preflight: six exact staged originals, 426,926,738 bytes, historical no-mutation manifest preserved
+Planning preparation: 13 exact PDFs, 130,968,356 bytes, 1,078 pages; 12 unique keys; Barelas exact duplicate reconciled; historical preparation involved no content/R2 mutation
+Traceback (most recent call last):
+  File "C:\Users\ben\Documents\ABQinfo\scripts\project/Test-PlanningDocumentsRootArchivePublicBytes.py", line 20, in <module>
+    snapshot_inventory=historical_inventory(current_inventory)
+  File "C:\Users\ben\Documents\ABQinfo\scripts\project\BackgroundArchiveCampaign.py", line 55, in historical_inventory
+    current=ordinary_baseline_inventory(current)
+  File "C:\Users\ben\Documents\ABQinfo\scripts\project\BackgroundArchiveCampaign.py", line 28, in ordinary_baseline_inventory
+    assert {i for i in before if before[i]!=after[i]}==resolved|hardened
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Exception: C:\Users\ben\Documents\ABQinfo\scripts\project\Invoke-ProjectValidation.ps1:88
+Line |
+  88 |  … EXITCODE) { throw 'Planning archive/public-byte validation failed.' } …
+     |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Planning archive/public-byte validation failed.

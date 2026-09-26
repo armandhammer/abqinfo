@@ -18,15 +18,26 @@ def context():
     pointer=load(ACTIVE);path=ROOT/pointer['campaign_artifact'];return path,load(path)
 def start(a):
     profile=load(STATE/'campaign-profiles'/f'{a.profile}.json')
+    if not a.id:a.id=a.profile+'-'+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+    if not a.queue:a.queue=load(STATE/'ordinary-queue-current.json')['artifact']
+    if not a.live:
+        a.live='tmp/'+a.id+'-r2-baseline.json'
+        subprocess.run(['pwsh','-NoProfile','-ExecutionPolicy','Bypass','-File','scripts/project/Get-R2Inventory.ps1','-OutputPath',a.live],cwd=ROOT,check=True)
     if ACTIVE.exists():assert context()[1]['state']=='complete_background_campaign','Resume the unfinished campaign; never reset it'
     assert not git('status','--porcelain','--','content'),'Visible changes prohibit background launch'
     queue=load(ROOT/a.queue);inv=load(STATE/'master-inventory.json');rows={r['id']:r for r in inv['candidates']}
     pending={i for i,r in rows.items() if r['status']=='pending review'}
     assert pending==set(queue['pending_ids']),'Queue stale: regenerate before launch'
     assert pending==set(queue['gated_pending_ids'])|set(queue['source_or_structural_blocked_pending_ids'])|set(queue['ungated_pending_ids'])
+    gates=set(queue['gated_pending_ids']);blocked=set(queue['source_or_structural_blocked_pending_ids']);ungated=set(queue['ungated_pending_ids'])
+    assert not (gates & blocked or gates & ungated or blocked & ungated),'Queue partitions overlap'
+    assert inv==json.loads(subprocess.check_output(['git','show','HEAD:project-state/master-inventory.json'],cwd=ROOT).decode('utf-8-sig')),'Commit coherent inventory changes before locking a new baseline'
+    baseline=load(ROOT/a.live);saved=load(STATE/'r2-inventory.json')
+    identity=lambda d:{o['key']:(o['size_bytes'],o['etag']) for o in d['objects']}
+    assert identity(baseline)==identity(saved),'Live/saved drift requires reconciliation before campaign launch'
     folder=STATE/'campaigns'/a.id;assert not folder.exists(),'Campaign id already exists; resume'
     folder.mkdir(parents=True)
-    old=load(STATE/'discovery/ordinary-queue-second-large-campaign-selection-2026-09-26.json')
+    old=load(ROOT/queue.get('selection_artifact','project-state/discovery/ordinary-queue-second-large-campaign-selection-2026-09-26.json'))
     qrows={q['id']:q for q in old['all_pending_records']}
     candidates=[];families=[]
     for order,f in enumerate(queue['background_family_groups'],1):
@@ -50,7 +61,13 @@ def start(a):
     save(folder/'campaign.json',campaign);save(ACTIVE,dict(schema_version=1,campaign_id=a.id,profile=a.profile,campaign_artifact=rel(folder/'campaign.json'),workflow='project-state/campaign-workflow.md'))
     print(json.dumps(dict(campaign=a.id,pending=len(pending),ungated=len(candidates),families=len(families))))
 def review_module(d):
-    m=runpy.run_path(str(ROOT/'scripts/project/SecondLargeOrdinaryCampaign.py'))
+    # Reuse existing gates while redirecting every output and removing the old
+    # campaign-specific cap/names. This does not edit any historical evidence.
+    source=(ROOT/'scripts/project/SecondLargeOrdinaryCampaign.py').read_text(encoding='utf-8-sig')
+    source=source.replace('Second large ordinary campaign 2026-09-26','Autonomous background campaign '+d['campaign_id']).replace('Second large campaign in progress','Autonomous background campaign in progress').replace('ordinary-second-large-campaign-','background-campaign-').replace('<=700','<=len(s["all_pending_records"])')
+    source=source.replace("assert (qa['size_bytes'],qa['checksum_sha256'])==(can['size_bytes'],can['checksum_sha256'])", "assert (qa['size_bytes'],qa['checksum_sha256'])==(can['size_bytes'],can['checksum_sha256']), ('Canonical identity mismatch',r['id'],cid)")
+    m={'__file__':str(ROOT/'scripts/project/SecondLargeOrdinaryCampaign.py'),'__name__':'background_review_engine'}
+    exec(compile(source,m['__file__'],'exec'),m)
     g=m['prepare'].__globals__;folder=(ROOT/load(ACTIVE)['campaign_artifact']).parent
     g.update(ART=folder/'campaign.json',SEL=folder/'selection.json',STAGE=ROOT/'research/staging'/d['campaign_id'],QA=ROOT/'tmp'/d['campaign_id'],DATE=d['campaign_id'])
     g['family_path']=lambda f:ROOT/f['evidence_artifact']
@@ -58,14 +75,38 @@ def review_module(d):
     return m
 def checkpoint(a):
     path,d=context();d['last_checkpoint_at']=now();save(path,d)
-    subprocess.run(['pwsh','-NoProfile','-ExecutionPolicy','Bypass','-File','scripts/project/Write-ProjectCheckpoint.ps1','-CompletedRange',f"Active background campaign {d['campaign_id']}: {len(d['resolved_records'])} resolutions; {len(d['archive_objects'])} exact archives",'-ResumeCommand','Read AGENTS.md, CURRENT.md, campaign-workflow.md and active-campaign.json; resume saved campaign without resetting or repeating completed families.'],cwd=ROOT,check=True)
+    subprocess.run(['pwsh','-NoProfile','-ExecutionPolicy','Bypass','-File','scripts/project/Write-ProjectCheckpoint.ps1','-CompletedRange',f"Active background campaign {d['campaign_id']}: {len(d['resolved_records'])} resolutions; {len(d['archive_objects'])} exact archives",'-ResumeCommand','Read AGENTS.md, CURRENT.md, campaign-workflow.md and active-campaign.json; resume saved campaign without resetting or repeating completed families.'],cwd=ROOT,check=True,stdout=subprocess.DEVNULL)
+    cp=load(STATE/'checkpoint.json');cp['active_background_campaign']=dict(campaign_id=d['campaign_id'],artifact=rel(path),profile=d['profile'],state=d['state'],resolutions=len(d['resolved_records']),exact_archives=len(d['archive_objects']),workflow='project-state/campaign-workflow.md');save(STATE/'checkpoint.json',cp)
 def main():
     p=argparse.ArgumentParser();p.add_argument('operation',choices=['start','status','prepare','show','review','apply','checkpoint']);p.add_argument('--profile',default='ordinary-review-large');p.add_argument('--id');p.add_argument('--queue');p.add_argument('--live');p.add_argument('--start',type=int,default=1);p.add_argument('--end',type=int,default=999);p.add_argument('--workers',type=int,default=4);p.add_argument('--text',type=int,default=0);p.add_argument('--images',action='store_true');p.add_argument('--decisions');a=p.parse_args()
-    if a.operation=='start':start(a);return
+    if a.operation=='start':
+        import msvcrt
+        (ROOT/'tmp').mkdir(exist_ok=True)
+        with (ROOT/'tmp/background-campaign-writer.lock').open('a+b') as writer:
+            writer.seek(0);msvcrt.locking(writer.fileno(),msvcrt.LK_NBLCK,1)
+            start(a)
+        return
     path,d=context()
     if a.operation=='status':print(json.dumps(d,indent=2));return
     if a.operation=='checkpoint':checkpoint(a);return
     assert d['state']!='complete_background_campaign','Completed campaign is sealed'
-    m=review_module(d);m[a.operation](a)
+    if a.operation=='review':
+        decisions=load(ROOT/a.decisions)['decisions']
+        assert isinstance(decisions,dict) and decisions,'Decisions must be an explicit nonempty ID-keyed mapping'
+        selected={q['id'] for q in load(ROOT/d['selection_artifact'])['all_pending_records']}
+        assert set(decisions)<=selected,'Decision outside authorized pending population'
+        assert not set(decisions)&{r['id'] for r in d['resolved_records']},'Completed dispositions are sealed; no reopened review'
+    lock=None
+    if a.operation in ['prepare','review','apply']:
+        import msvcrt
+        lock=(ROOT/'tmp/background-campaign-writer.lock').open('a+b')
+        lock.seek(0);msvcrt.locking(lock.fileno(),msvcrt.LK_NBLCK,1)
+    try:
+        m=review_module(d);m[a.operation](a)
+        if a.operation=='review':
+            reviewed={r['id'] for f in load(ROOT/d['selection_artifact'])['candidate_families'] for r in load(ROOT/f['evidence_artifact'])['records'] if r.get('review_complete')}
+            assert set(decisions)<=reviewed,'Requested decisions were not persisted'
+    finally:
+        if lock:lock.close()
     if a.operation=='apply':checkpoint(a)
 if __name__=='__main__':main()

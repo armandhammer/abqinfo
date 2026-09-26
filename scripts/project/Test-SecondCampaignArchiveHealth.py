@@ -15,7 +15,7 @@ assert len(receipts)==len(h["receipts"])==len(expected) and pop.keys()==receipts
 live=load(ROOT/h["live_listing_artifact"]);objects={r["key"]:r for r in live["objects"]}
 saved=json.loads(subprocess.check_output(["git","show","1b5bb82:project-state/r2-inventory.json"],cwd=ROOT).decode("utf-8-sig")) if (ROOT/"project-state/active-campaign.json").exists() else load(ROOT/"project-state/r2-inventory.json")
 identity=lambda d:{r["key"]:(r["size_bytes"],r["etag"]) for r in d["objects"]}
-assert identity(live)==identity(saved) and live["total_bytes"]==saved["total_bytes"]<=10000000000
+assert identity(live)==identity(saved) and live["total_bytes"]==saved["total_bytes"]<=c["project_storage_limit_bytes"]
 baseline=load(ROOT/c["baseline_r2_artifact"])
 for r in baseline["objects"]:assert objects[r["key"]]["size_bytes"]==r["size_bytes"] and objects[r["key"]]["etag"]==r["etag"]
 for key,x in receipts.items():

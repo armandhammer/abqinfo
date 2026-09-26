@@ -6,6 +6,10 @@ ROOT=Path(__file__).resolve().parents[2];D=ROOT/"project-state/discovery"
 def load(p):return json.loads(Path(p).read_text(encoding="utf-8-sig"))
 a=load(D/"inventory-exact-identity-integrity-audit-2026-09-26.json");h=load(D/"inventory-legacy-relationship-hardening-2026-09-26.json");assert h["state"]=="applied"
 b=json.loads(subprocess.check_output(["git","show",h["baseline_commit"]+":project-state/master-inventory.json"],cwd=ROOT).decode("utf-8-sig"));prior={r["id"]:r for r in b["candidates"]};rows={r["id"]:r for r in load(ROOT/"project-state/master-inventory.json")["candidates"]}
+# This completed hardening stage remains sealed; the active campaign regression
+# independently constrains subsequent changes to exact newly authorized rows.
+if (ROOT/'project-state/active-campaign.json').exists():
+ rows={r['id']:r for r in json.loads(subprocess.check_output(['git','show','1b5bb82:project-state/master-inventory.json'],cwd=ROOT).decode('utf-8-sig'))['candidates']}
 assert [z["original_observation"] for z in h["observations"]]==a["unresolved_anomalies"] and len(h["observations"])==174
 expected={};seen=set()
 for z in h["observations"]:

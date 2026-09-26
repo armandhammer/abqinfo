@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "family_id": "family-094",
+  "family": "www.cabq.gov/gis",
+  "scope_ids": [
+    "src-67c27f41893855a3",
+    "src-fb49acbcd77205f0"
+  ],
+  "records": [
+    {
+      "id": "src-67c27f41893855a3",
+      "source_qa": "saved_full_GET_container_and_content_analysis_reused",
+      "saved_evidence": {
+        "id": "src-67c27f41893855a3",
+        "authoritative_url": "https://www.cabq.gov/gis/advanced-map-viewer",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "HTML",
+        "leading_bytes": "3c21444f",
+        "http_status": "200",
+        "inventory_title": "Advanced Map Viewer",
+        "size_bytes": 96071,
+        "checksum_sha256": "e2489d3f62235085ef18bd72474652acf588423ead35d2f1c2ba88e28080033f",
+        "title_for_reference": "Web page: www.cabq.gov/gis/advanced-map-viewer",
+        "what_it_is": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+        "category": "live web page",
+        "package": "web_pages"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/final-sweep-cluster-research-2026-09-13.json"
+      ],
+      "disposition": "excluded",
+      "rationale": "Advanced Map Viewer is a general-purpose GIS entry point without a distinct bounded policy dataset documented by this crawler row. It supplies no separate static original or substantive subject-specific record; preserve navigation/source discovery.",
+      "quality_assessment": {
+        "measured_container": "HTML",
+        "measured_size_bytes": 96071,
+        "saved_sha256": "e2489d3f62235085ef18bd72474652acf588423ead35d2f1c2ba88e28080033f",
+        "actual_function": "Advanced Map Viewer is a general-purpose GIS entry point without a distinct bounded policy dataset documented by this crawler row. It supplies no separate static original or substantive subject-specific record; preserve navigation/source discovery.",
+        "standalone_public_value": "No distinct eligible standalone public record. Advanced Map Viewer is a general-purpose GIS entry point without a distinct bounded policy dataset documented by this crawler row. It supplies no separate static original or substantive subject-specific record; preserve navigation/source discovery.",
+        "intended_publication_form": "none; no visitor-visible implementation authorized",
+        "visual_inspection": "Saved full HTML content analysis; no static original",
+        "information_density": "Measured full-document pages/words and source container are retained in QA.",
+        "series_component_relationship": "Family boundary reviewed; independent original or administrative supporting file as identified in rationale.",
+        "substantive_rationale": "Advanced Map Viewer is a general-purpose GIS entry point without a distinct bounded policy dataset documented by this crawler row. It supplies no separate static original or substantive subject-specific record; preserve navigation/source discovery."
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T20:57:12.816541Z",
+        "geographic_institutional_scope": "City of Albuquerque",
+        "specific_albuquerque_connection": "Advanced Map Viewer is a general-purpose GIS entry point without a distinct bounded policy dataset documented by this crawler row. It supplies no separate static original or substantive subject-specific record; preserve navigation/source discovery.",
+        "abqinfo_public_information_value": "No substantive additional ABQInfo policy/infrastructure information is established by this delivery.",
+        "general_context_exclusion_test": "City hosting, jurisdiction, geographic origin and procedural usefulness alone are insufficient; the actual document function and distinct public value control.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Advanced Map Viewer is a general-purpose GIS entry point without a distinct bounded policy dataset documented by this crawler row. It supplies no separate static original or substantive subject-specific record; preserve navigation/source discovery."
+      },
+      "archival_readiness": "not eligible: excluded HTML discovery/navigation row",
+      "proposed_canonical_page": null,
+      "independent_review_input": "project-state/campaigns/ordinary-review-large-2026-09-26-third/review-decisions.json",
+      "review_complete": true
+    },
+    {
+      "id": "src-fb49acbcd77205f0",
+      "source_qa": "saved_full_GET_container_and_content_analysis_reused",
+      "saved_evidence": {
+        "id": "src-fb49acbcd77205f0",
+        "authoritative_url": "https://www.cabq.gov/gis/map-views",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "HTML",
+        "leading_bytes": "3c21444f",
+        "http_status": "200",
+        "inventory_title": "Map Views & Searches",
+        "size_bytes": 95821,
+        "checksum_sha256": "eea66b9d473e5911ceb1787467931b12ed2d4c9098910906706c47c819e0b5ac",
+        "title_for_reference": "Web page: www.cabq.gov/gis/map-views",
+        "what_it_is": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+        "category": "live web page",
+        "package": "web_pages"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/final-sweep-cluster-research-2026-09-13.json"
+      ],
+      "disposition": "excluded",
+      "rationale": "Map Views & Searches is a gallery/navigation wrapper (embedGallery group bb17da3604634ed2b3cfe266ff7a01b9), rather than a specific standalone dataset. Individual meaningful applications remain separately reviewable.",
+      "quality_assessment": {
+        "measured_container": "HTML",
+        "measured_size_bytes": 95821,
+        "saved_sha256": "eea66b9d473e5911ceb1787467931b12ed2d4c9098910906706c47c819e0b5ac",
+        "actual_function": "Map Views & Searches is a gallery/navigation wrapper (embedGallery group bb17da3604634ed2b3cfe266ff7a01b9), rather than a specific standalone dataset. Individual meaningful applications remain separately reviewable.",
+        "standalone_public_value": "No distinct eligible standalone public record. Map Views & Searches is a gallery/navigation wrapper (embedGallery group bb17da3604634ed2b3cfe266ff7a01b9), rather than a specific standalone dataset. Individual meaningful applications remain separately reviewable.",
+        "intended_publication_form": "none; no visitor-visible implementation authorized",
+        "visual_inspection": "Saved full HTML content analysis; no static original",
+        "information_density": "Measured full-document pages/words and source container are retained in QA.",
+        "series_component_relationship": "Family boundary reviewed; independent original or administrative supporting file as identified in rationale.",
+        "substantive_rationale": "Map Views & Searches is a gallery/navigation wrapper (embedGallery group bb17da3604634ed2b3cfe266ff7a01b9), rather than a specific standalone dataset. Individual meaningful applications remain separately reviewable."
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T20:57:12.816551Z",
+        "geographic_institutional_scope": "City of Albuquerque",
+        "specific_albuquerque_connection": "Map Views & Searches is a gallery/navigation wrapper (embedGallery group bb17da3604634ed2b3cfe266ff7a01b9), rather than a specific standalone dataset. Individual meaningful applications remain separately reviewable.",
+        "abqinfo_public_information_value": "No substantive additional ABQInfo policy/infrastructure information is established by this delivery.",
+        "general_context_exclusion_test": "City hosting, jurisdiction, geographic origin and procedural usefulness alone are insufficient; the actual document function and distinct public value control.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Map Views & Searches is a gallery/navigation wrapper (embedGallery group bb17da3604634ed2b3cfe266ff7a01b9), rather than a specific standalone dataset. Individual meaningful applications remain separately reviewable."
+      },
+      "archival_readiness": "not eligible: excluded HTML discovery/navigation row",
+      "proposed_canonical_page": null,
+      "independent_review_input": "project-state/campaigns/ordinary-review-large-2026-09-26-third/review-decisions.json",
+      "review_complete": true
+    }
+  ],
+  "visitor_visible_content_changed": false,
+  "state": "reviewed_decisions_ready_for_inventory"
+}

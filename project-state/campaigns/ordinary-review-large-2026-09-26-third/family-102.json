@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "family_id": "family-102",
+  "family": "planningdivisiongis-nmdot.hub.arcgis.com/pages",
+  "scope_ids": [
+    "src-ef4841e56224ab01"
+  ],
+  "records": [
+    {
+      "id": "src-ef4841e56224ab01",
+      "source_qa": "saved_full_GET_container_and_content_analysis_reused",
+      "saved_evidence": {
+        "id": "src-ef4841e56224ab01",
+        "authoritative_url": "https://planningdivisiongis-nmdot.hub.arcgis.com/pages/highway-safety-improvement-program",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "HTML",
+        "leading_bytes": "3c21444f",
+        "http_status": "200",
+        "inventory_title": "HSIP Web Map Applications",
+        "size_bytes": 68200,
+        "checksum_sha256": "2d0c01afb42e2490bb25bd7cc484eaa165d8e66cdaed734f93c12c31ecd60b50",
+        "title_for_reference": "Web page: planningdivisiongis-nmdot.hub.arcgis.com/pages/highway-safety-improvement-program",
+        "what_it_is": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+        "category": "live web page",
+        "package": "web_pages"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/final-sweep-cluster-research-2026-09-13.json"
+      ],
+      "disposition": "excluded",
+      "rationale": "Statewide HSIP GIS applications gateway describes generic statewide safety tools, without a specific material Albuquerque decision or component in this delivery. Generic programme jurisdiction is insufficient.",
+      "quality_assessment": {
+        "measured_container": "HTML",
+        "measured_size_bytes": 68200,
+        "saved_sha256": "2d0c01afb42e2490bb25bd7cc484eaa165d8e66cdaed734f93c12c31ecd60b50",
+        "actual_function": "Statewide HSIP GIS applications gateway describes generic statewide safety tools, without a specific material Albuquerque decision or component in this delivery. Generic programme jurisdiction is insufficient.",
+        "standalone_public_value": "No distinct eligible standalone public record. Statewide HSIP GIS applications gateway describes generic statewide safety tools, without a specific material Albuquerque decision or component in this delivery. Generic programme jurisdiction is insufficient.",
+        "intended_publication_form": "none; no visitor-visible implementation authorized",
+        "visual_inspection": "Saved full HTML content analysis; no static original",
+        "information_density": "Measured full-document pages/words and source container are retained in QA.",
+        "series_component_relationship": "Family boundary reviewed; independent original or administrative supporting file as identified in rationale.",
+        "substantive_rationale": "Statewide HSIP GIS applications gateway describes generic statewide safety tools, without a specific material Albuquerque decision or component in this delivery. Generic programme jurisdiction is insufficient."
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T20:57:12.819537Z",
+        "geographic_institutional_scope": "Other authoritative source",
+        "specific_albuquerque_connection": "Statewide HSIP GIS applications gateway describes generic statewide safety tools, without a specific material Albuquerque decision or component in this delivery. Generic programme jurisdiction is insufficient.",
+        "abqinfo_public_information_value": "No substantive additional ABQInfo policy/infrastructure information is established by this delivery.",
+        "general_context_exclusion_test": "City hosting, jurisdiction, geographic origin and procedural usefulness alone are insufficient; the actual document function and distinct public value control.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Statewide HSIP GIS applications gateway describes generic statewide safety tools, without a specific material Albuquerque decision or component in this delivery. Generic programme jurisdiction is insufficient."
+      },
+      "archival_readiness": "not eligible: excluded HTML discovery/navigation row",
+      "proposed_canonical_page": null,
+      "independent_review_input": "project-state/campaigns/ordinary-review-large-2026-09-26-third/review-decisions.json",
+      "review_complete": true
+    }
+  ],
+  "visitor_visible_content_changed": false,
+  "state": "reviewed_decisions_ready_for_inventory"
+}

@@ -51,7 +51,7 @@ assert a['r2_inventory_accounting']['saved_live_key_size_etag_match'] is True
 live=ROOT/a['after_r2']['listing_local_path']
 if live.exists():assert r2['objects']==json.loads(live.read_text(encoding='utf-8-sig'))['objects']
 assert a['r2_mutation'] is True and a['visitor_visible_content_changed'] is False
-assert a['max_object_bytes']==100000000 and a['max_projected_storage_bytes']==10000000000
+assert a['max_object_bytes']==100000000 and a['max_projected_storage_bytes']<=load(ROOT/'project-state/r2-storage-policy.json')['maximum_projected_r2_bytes']
 dup='src-d9bf34830a9467e2'; canonical='src-28418cab91a745a6'
 assert dup not in ids and rows[dup]['status']=='duplicate' and rows[canonical]['status']=='validated'
 assert rows[dup]==before[dup] and rows[canonical]==before[canonical]

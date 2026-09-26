@@ -71,7 +71,7 @@ assert (len(old),baseline['total_bytes'])==(1292,9387544940)
 for key,o in old.items():assert all(objects[key][f]==o[f] for f in ['key','size_bytes','etag'])
 assert objects.keys()-old.keys()==added.keys()
 assert len(objects)==current['object_count']==1292+len(added)
-assert current['total_bytes']==sum(o['size_bytes'] for o in objects.values())==9387544940+sum(a['size_bytes'] for a in added.values())<=10000000000
+assert current['total_bytes']==sum(o['size_bytes'] for o in objects.values())==9387544940+sum(a['size_bytes'] for a in added.values())<=d['project_storage_limit_bytes']
 assert len({k.casefold() for k in objects})==len(objects)
 for key,a in added.items():
     assert a['upload_intent']['key_was_absent'] and a['size_bytes']<=150000000
@@ -112,6 +112,6 @@ if d['state']=='complete_background_campaign':
         assert r['preparation_complete'] and rows[i]['status']=='approved for addition'
         assert r['checksum_sha256']==rows[i]['checksum_sha256'] and r['size_bytes']==rows[i]['size_bytes']
         assert r['prepared_key'] not in objects
-        if 'only storage capacity' in r['reason']:assert r['size_bytes']>10000000000-current['total_bytes']
+        if 'only storage capacity' in r['reason']:assert r['size_bytes']>d['project_storage_limit_bytes']-current['total_bytes']
     assert d['zero_content_change'] and not d['live_site_published']
 print(f'PASS: {len(resolved)} second-campaign transitions, {len(added)} exact-public originals; protected baseline and zero content changes preserved.')

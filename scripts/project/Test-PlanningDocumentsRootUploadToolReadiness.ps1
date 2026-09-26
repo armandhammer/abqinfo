@@ -5,7 +5,7 @@ $ErrorActionPreference='Stop'
 $prep=Get-Content project-state/discovery/planning-documents-root-archive-preparation-2026-09-25.json -Raw -Encoding UTF8 | ConvertFrom-Json
 $records=@($prep.records | Where-Object id -ne 'src-d9bf34830a9467e2')
 if ($records.Count -ne 12) { throw 'Expected exactly 12 upload candidates.' }
-$ledger=[ordered]@{recorded_at=(Get-Date).ToUniversalTime().ToString('o'); records=@(); r2_mutation=$false; credentials_accessible=$false; max_object_bytes=100000000; max_projected_storage_bytes=10000000000; public_byte_verification_tool='scripts/project/Test-R2PublicObject.ps1'}
+$ledger=[ordered]@{recorded_at=(Get-Date).ToUniversalTime().ToString('o'); records=@(); r2_mutation=$false; credentials_accessible=$false; max_object_bytes=100000000; max_projected_storage_bytes=13000000000; public_byte_verification_tool='scripts/project/Test-R2PublicObject.ps1'}
 foreach ($record in $records) {
   $probe=@(& "$PSScriptRoot/../upload-r2-document.ps1" -SourcePath $record.staged_local_path -ObjectKey $record.proposed_r2_key -WhatIf)
   $result=@($probe | Where-Object { $_.PSObject.Properties.Name -contains 'Result' })

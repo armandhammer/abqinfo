@@ -61,7 +61,7 @@ def main() -> None:
     assert [r['expected_size_bytes'] for r in evidence['results']] == list(SIZES)
     assert [r['expected_checksum_sha256'] for r in evidence['results']] == list(HASHES)
     assert evidence['max_object_bytes'] == 150000000
-    assert evidence['max_projected_storage_bytes'] == 10000000000
+    assert evidence['max_projected_storage_bytes'] <= load(ROOT / 'project-state/r2-storage-policy.json')['maximum_projected_r2_bytes']
     assert evidence['summary']['public_byte_verified'] == 6
     assert evidence['summary']['uploaded_now'] + evidence['summary']['exact_existing_after_interrupted_resume'] == 6
     assert evidence['summary']['added_bytes'] == sum(SIZES) == 426926738

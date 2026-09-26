@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "family_id": "family-096",
+  "family": "cabq.legistar.com",
+  "scope_ids": [
+    "src-74d50c710a7740fe"
+  ],
+  "records": [
+    {
+      "id": "src-74d50c710a7740fe",
+      "disposition": "excluded",
+      "error": null,
+      "saved_evidence": {
+        "id": "src-74d50c710a7740fe",
+        "authoritative_url": "http://cabq.legistar.com/LegislationDetail.aspx?ID=886393&GUID=C6496564-654A-475F-ADE9-5F3B52D1C1C6&Options=ID%7CText%7C&Search=R-11-211",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "TEXT",
+        "leading_bytes": "496e7661",
+        "http_status": "200",
+        "inventory_title": "The Volcano Trails Sector Development Plan",
+        "size_bytes": 19,
+        "checksum_sha256": "db3194faa729d9d69e9aa6909d1d354358d5cb8907f156847af90d4ce4bdd675",
+        "title_for_reference": "The Volcano Trails Sector Development Plan",
+        "what_it_is": "A Legistar legislation URL that answers Invalid parameters!",
+        "exclusion_reason": "There is no document at this URL. It returns HTTP 200 and nineteen bytes reading Invalid parameters! - the legislation detail record it addresses is gone. Another case where the status code says success and the bytes say otherwise.",
+        "category": "dead link answering with an error string",
+        "package": "nothing_at_the_url"
+      },
+      "historical_source_evidence_preserved": true,
+      "fresh_source_qa": {
+        "source_exact_verified": true,
+        "source_GET": {
+          "http_status": 200,
+          "requested_url": "http://cabq.legistar.com/LegislationDetail.aspx?ID=886393&GUID=C6496564-654A-475F-ADE9-5F3B52D1C1C6&Options=ID%7CText%7C&Search=R-11-211",
+          "final_url": "https://cabq.legistar.com/LegislationDetail.aspx?ID=886393&GUID=C6496564-654A-475F-ADE9-5F3B52D1C1C6&Options=ID%7CText%7C&Search=R-11-211",
+          "content_type": "text/html; charset=utf-8",
+          "verified_at": "2026-09-26T20:44:57.033056+00:00",
+          "size_bytes": 19,
+          "checksum_sha256": "db3194faa729d9d69e9aa6909d1d354358d5cb8907f156847af90d4ce4bdd675",
+          "leading_bytes": "496e76616c696420706172616d657465"
+        },
+        "staged_path": "research/staging/ordinary-review-large-2026-09-26-third/src-74d50c710a7740fe.bin",
+        "size_bytes": 19,
+        "checksum_sha256": "db3194faa729d9d69e9aa6909d1d354358d5cb8907f156847af90d4ce4bdd675",
+        "container": "BIN",
+        "page_count": 0,
+        "word_count": 2,
+        "representative_visual_qa": "passed_agent_inspection_opening_middle_ending",
+        "full_text_path": "research/staging/ordinary-review-large-2026-09-26-third/src-74d50c710a7740fe.txt",
+        "visual_review_evidence": "Full actual text/service descriptor and saved complete source evidence inspected; no rendered static document for this HTML/text delivery.",
+        "visually_reviewed_at": "2026-09-26T20:57:12.817426Z"
+      },
+      "rationale": "The recorded Legistar URL returns only Invalid parameters! (19 bytes in saved evidence); current full GET matches the same failure container. No actual Volcano Trails plan is delivered. Preserve historical source URL, do not substitute a title for absent document content.",
+      "quality_assessment": {
+        "visual_inspection": "Full actual text/service descriptor and saved complete source evidence inspected; no rendered static document for this HTML/text delivery.",
+        "measured_page_count": 0,
+        "intended_publication_form": "none; no visitor-visible implementation authorized",
+        "actual_function": "The recorded Legistar URL returns only Invalid parameters! (19 bytes in saved evidence); current full GET matches the same failure container. No actual Volcano Trails plan is delivered. Preserve historical source URL, do not substitute a title for absent document content.",
+        "standalone_public_value": "No distinct eligible standalone public record. The recorded Legistar URL returns only Invalid parameters! (19 bytes in saved evidence); current full GET matches the same failure container. No actual Volcano Trails plan is delivered. Preserve historical source URL, do not substitute a title for absent document content.",
+        "information_density": "Measured full-document pages/words and source container are retained in QA.",
+        "series_component_relationship": "Family boundary reviewed; independent original or administrative supporting file as identified in rationale.",
+        "substantive_rationale": "The recorded Legistar URL returns only Invalid parameters! (19 bytes in saved evidence); current full GET matches the same failure container. No actual Volcano Trails plan is delivered. Preserve historical source URL, do not substitute a title for absent document content."
+      },
+      "canonical_candidate_id": null,
+      "independent_review_input": "project-state/campaigns/ordinary-review-large-2026-09-26-third/review-decisions.json",
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T20:57:12.817436Z",
+        "geographic_institutional_scope": "City of Albuquerque",
+        "specific_albuquerque_connection": "The recorded Legistar URL returns only Invalid parameters! (19 bytes in saved evidence); current full GET matches the same failure container. No actual Volcano Trails plan is delivered. Preserve historical source URL, do not substitute a title for absent document content.",
+        "abqinfo_public_information_value": "No substantive additional ABQInfo policy/infrastructure information is established by this delivery.",
+        "general_context_exclusion_test": "City hosting, jurisdiction, geographic origin and procedural usefulness alone are insufficient; the actual document function and distinct public value control.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "The recorded Legistar URL returns only Invalid parameters! (19 bytes in saved evidence); current full GET matches the same failure container. No actual Volcano Trails plan is delivered. Preserve historical source URL, do not substitute a title for absent document content."
+      },
+      "review_complete": true
+    }
+  ],
+  "visitor_visible_content_changed": false,
+  "state": "reviewed_decisions_ready_for_inventory"
+}

@@ -65,7 +65,7 @@ assert (len(old),baseline['total_bytes'])==(1279,9370314196)
 for key,o in old.items():assert all(objects[key][f]==o[f] for f in ['key','size_bytes','etag'])
 assert objects.keys()-old.keys()==added.keys()
 assert len(objects)==current['object_count']==1279+len(added)
-assert current['total_bytes']==sum(o['size_bytes'] for o in objects.values())==9370314196+sum(a['size_bytes'] for a in added.values())<=10000000000
+assert current['total_bytes']==sum(o['size_bytes'] for o in objects.values())==9370314196+sum(a['size_bytes'] for a in added.values())<=d['project_storage_limit_bytes']
 assert len({k.casefold() for k in objects})==len(objects)
 for key,a in added.items():
     assert a['upload_intent']['key_was_absent'] and a['size_bytes']<=150000000

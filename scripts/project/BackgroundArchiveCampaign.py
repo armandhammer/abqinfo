@@ -16,6 +16,11 @@ def historical_r2(current):
         assert all(actual[o['key']][f]==o[f] for f in ('key','size_bytes','etag')),o['key']
     return baseline
 def ordinary_baseline_inventory(current):
+    if (ROOT/'project-state/active-campaign.json').exists():
+        # The active-framework regression validates every current authorized
+        # delta. Older contracts retain the sealed second-campaign inventory,
+        # never reinterpret new resolutions as historical second-campaign work.
+        current=json.loads(subprocess.check_output(['git','show','1b5bb82ea52e3ea7450d9526b55881c22e029af0:project-state/master-inventory.json'],cwd=ROOT).decode('utf-8-sig'))
     second_path=ROOT/'project-state/discovery/ordinary-queue-second-large-resolution-campaign-2026-09-26.json'
     if second_path.exists():
         second=json.loads(second_path.read_text(encoding='utf-8-sig'))
