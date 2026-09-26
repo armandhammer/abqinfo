@@ -1,9 +1,10 @@
 """Persist validated/integrated task state using hashed validation and live-ref receipts."""
-import argparse,hashlib
+import argparse,gzip,hashlib
 from BackgroundFollowup import ROOT,F,load,save
 p=argparse.ArgumentParser();p.add_argument('--validation',required=True);p.add_argument('--integration');a=p.parse_args()
 v=load(ROOT/a.validation);assert v['result']=='passed'
 assert hashlib.sha256((ROOT/v['log_artifact']).read_bytes()).hexdigest()==v['log_sha256']
+assert hashlib.sha256(gzip.decompress((ROOT/v['log_artifact']).read_bytes())).hexdigest()==v['uncompressed_log_sha256']
 auth=load(F/'authorization.json');summary=load(F/'summary.json');cp=load(ROOT/'project-state/checkpoint.json')
 state='validated_pending_background_integration'
 paragraph='Full project validation passed. Authorized background-only integration and branch reconciliation remain pending.'

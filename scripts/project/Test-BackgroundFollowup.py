@@ -49,8 +49,13 @@ for r in receipts:
  assert (v['size_bytes'],v['checksum_sha256'])==(r['size_bytes'],r['checksum_sha256'])==(row['size_bytes'],row['checksum_sha256'])==(item['size_bytes'],item['sha256'])
  assert 0<r['size_bytes']<=a['maximum_object_bytes']==150000000 and objects[r['key']]['etag']==r['etag']
  assert row['r2_key']==r['key'] and row['status']=='placement assigned'
- p=ROOT/item['source_path'];assert p.stat().st_size==r['size_bytes']
- with p.open('rb') as f:assert hashlib.file_digest(f,'sha256').hexdigest()==r['checksum_sha256']
+ # Original staging bytes are local recovery material, not tracked repository
+ # artifacts. Check them when retained; durable source/public receipts below
+ # remain authoritative in a fresh checkout.
+ p=ROOT/item['source_path']
+ if p.exists():
+  assert p.stat().st_size==r['size_bytes']
+  with p.open('rb') as f:assert hashlib.file_digest(f,'sha256').hexdigest()==r['checksum_sha256']
  assert any(x.get('sha256')==r['checksum_sha256'] and x.get('size_bytes')==r['size_bytes'] and x.get('http_status')==200 and not x.get('truncated') and x['url']==item['source_url'] for x in load(F/'retrievals.json')['records'])
 approved={i for i,r in rows.items() if r['status']=='approved for addition'}
 assert all(not rows[i].get('size_bytes') or rows[i]['size_bytes']>150000000 for i in approved)
