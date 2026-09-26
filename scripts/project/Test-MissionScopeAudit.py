@@ -65,12 +65,29 @@ assert sum(g['candidate_count'] for g in priority['family_groups']) == 58
 assert priority['eligible_population']['count'] == 58
 
 by_id = {c['id']: c for c in inventory['candidates']}
+barelas_reconciliation_path = DISCOVERY / 'planning-documents-root-barelas-duplicate-reconciliation-2026-09-26.json'
+barelas_reconciled_id = None
+if barelas_reconciliation_path.exists():
+    reconciliation = json.loads(barelas_reconciliation_path.read_text(encoding='utf-8-sig'))
+    assert reconciliation['state'] == 'reconciled_exact_duplicate'
+    assert reconciliation['duplicate_id'] == 'src-d9bf34830a9467e2'
+    assert reconciliation['canonical_id'] == 'src-28418cab91a745a6'
+    alias, canonical = by_id[reconciliation['duplicate_id']], by_id[reconciliation['canonical_id']]
+    assert canonical['status'] == 'validated'
+    assert alias['size_bytes'] == canonical['size_bytes'] == reconciliation['size_bytes'] == 8719030
+    assert alias['checksum_sha256'] == canonical['checksum_sha256'] == reconciliation['checksum_sha256'] == 'c2081c6cbc60b029c2b558a73ad975b429b03e89cc1837c393f8b5c30191ae19'
+    assert reconciliation['exact_public_byte_evidence']['record']['byte_identical'] is True
+    assert canonical['direct_file_url'] in alias['cited_successors']
+    barelas_reconciled_id = reconciliation['duplicate_id']
 for record in records:
     assert set(record['scope_assessment']) == required
     candidate = by_id[record['id']]
     expected_status = ('validated' if record['id'] in pgs_validated_ids else 'implemented' if record['id'] in pgs_implemented_ids else 'placement assigned') if record['id'] in pgs_archived_ids and record['resulting_status'] == 'approved for addition' else record['resulting_status']
     if record['id'] in later_ms4_archived_ids and record['resulting_status'] == 'approved for addition':
         expected_status = 'validated' if record['id'] in later_ms4_validated_ids else 'implemented' if record['id'] in later_ms4_implemented_ids else 'placement assigned'
+    if record['id'] == barelas_reconciled_id:
+        assert record['resulting_status'] == 'approved for addition'
+        expected_status = 'duplicate'
     assert candidate['status'] == expected_status
     assert candidate['scope_assessment'] == record['scope_assessment']
 for candidate in inventory['candidates']:

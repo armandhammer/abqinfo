@@ -51,6 +51,10 @@ if (Test-Path -LiteralPath 'project-state/discovery/planning-documents-root-arch
   & python "$PSScriptRoot/Test-PlanningDocumentsRootArchivePreparation.py"
   if ($LASTEXITCODE) { throw 'Planning documents-root archive-preparation validation failed.' }
 }
+if (Test-Path -LiteralPath 'project-state/discovery/planning-documents-root-r2-upload-preflight-2026-09-26.json') {
+  & python "$PSScriptRoot/Test-PlanningDocumentsRootR2UploadPreflight.py"
+  if ($LASTEXITCODE) { throw 'Planning documents-root duplicate reconciliation and upload preflight validation failed.' }
+}
 if (Test-Path -LiteralPath 'project-state/discovery/later-ms4-archive-public-byte-verification-2026-09-25.json') {
   & python "$PSScriptRoot/Test-LaterMs4ArchivePublicBytes.py"
   if ($LASTEXITCODE) { throw 'Later-MS4 archive/public-byte validation failed.' }

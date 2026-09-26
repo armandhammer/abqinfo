@@ -6,6 +6,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 PATH = ROOT / "project-state/discovery/planning-documents-root-archive-preparation-2026-09-25.json"
 a = json.loads(PATH.read_text(encoding="utf-8"))
+if (ROOT/'project-state/discovery/planning-documents-root-barelas-duplicate-reconciliation-2026-09-26.json').exists():
+    raise SystemExit('Visual preparation is complete and superseded by duplicate reconciliation; do not reset current derived state.')
 a["reviewed_baseline_commit"] = "f07a830ddbf6d5d75c87267f6dd5335594b74a07"
 a["inventory_rows_changed"] = False
 saved=json.loads((ROOT/"project-state/r2-inventory.json").read_text(encoding="utf-8-sig"))

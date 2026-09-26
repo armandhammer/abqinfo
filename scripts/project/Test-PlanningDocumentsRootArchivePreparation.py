@@ -25,6 +25,8 @@ expected = {
 a=read("project-state/discovery/planning-documents-root-archive-preparation-2026-09-25.json")
 d=read("project-state/discovery/planning-documents-root-residual-decision-2026-09-20.json")
 inventory={r["id"]:r for r in read("project-state/master-inventory.json")["candidates"]}
+reconciliation_path=ROOT/'project-state/discovery/planning-documents-root-barelas-duplicate-reconciliation-2026-09-26.json'
+reconciled=reconciliation_path.exists() and read(reconciliation_path.relative_to(ROOT).as_posix()).get('state')=='reconciled_exact_duplicate'
 assert len(expected)==len(a["records"])==len(set(a["scope_candidate_ids"]))==13
 assert set(expected)==set(a["scope_candidate_ids"])=={r["id"] for r in a["records"]}
 assert sum(s for s,_,_ in expected.values())==a["summary"]["source_bytes_total"]==130968356
@@ -52,7 +54,7 @@ for r in a["records"]:
     assert r["page_count"]==r["pdf_qa"]["rendered_pages"]==pages
     assert r["pdf_qa"]["structural_result"]=="opens_without_password_or_repair" and r["pdf_qa"]["representative_visual_qa"].startswith("passed_")
     assert r["direct_file_url"]==row["direct_file_url"]==r["final_url"] and r["http_status"]==200 and not r["redirected"]
-    assert row["status"]=="approved for addition" and row["scope_assessment"]["final_scope_decision"]=="passes_both_gates"
+    assert row["status"]==("duplicate" if reconciled and rid=="src-d9bf34830a9467e2" else "approved for addition") and row["scope_assessment"]["final_scope_decision"]=="passes_both_gates"
     assert row["r2_key"] is None and row["r2_url"] is None
     assert not r["saved_key_collision"] and not r["live_key_collision"]
     if rid in family["component_ids"]:
@@ -65,6 +67,9 @@ for r in a["records"]:
         assert r["preparation_blocker"] is None and r["proposed_public_archive_url"]=="https://files.abqinfo.com/"+r["proposed_r2_key"]
         keys.append(r["proposed_r2_key"].casefold())
 assert len(keys)==len(set(keys))==12
+if reconciled:
+    assert a['blockers']==[] and a['current_derived_state']['exact_duplicate_deliveries_reconciled']==1
+    assert a['current_derived_state']['unique_upload_bytes']==122249326 and a['current_derived_state']['unique_upload_pages']==928
 for r in d["records"]:
     if r["id"] not in expected:
         assert inventory[r["id"]]["status"]==r["disposition"]
@@ -75,4 +80,4 @@ assert (a["r2_snapshot"]["live_read_only"]["objects"],a["r2_snapshot"]["live_rea
 for args in (["git","diff","--name-only",a["reviewed_baseline_commit"],"--","content"],["git","ls-files","--others","--exclude-standard","content"]):
     result=subprocess.run(args,cwd=ROOT,capture_output=True,text=True,check=True)
     assert not result.stdout.strip(),result.stdout
-print("Planning preparation: 13 exact PDFs, 130,968,356 bytes, 1,078 pages; 12 unique keys, one archived Barelas conflict; no content/R2 mutation")
+print("Planning preparation: 13 exact PDFs, 130,968,356 bytes, 1,078 pages; 12 unique keys; Barelas exact duplicate " + ("reconciled" if reconciled else "awaiting reconciliation") + "; no content/R2 mutation")

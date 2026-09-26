@@ -668,7 +668,7 @@
       "visitor_caveat": "Exact byte-identical archived original; no second object or public entry.",
       "cross_listing_recommendation": "A related-plan link from the future Area & Sector Plans / Barelas section to the existing canonical revitalization entry improves discoverability without a second archive or standalone entry.",
       "inventory_proposal": "retain",
-      "preparation_blocker": "Already archived byte-identical canonical original src-28418cab91a745a6; no second object or independent public entry may be proposed. Settled retained disposition needs a separate reconciliation decision.",
+      "preparation_blocker": null,
       "http_status": 200,
       "final_url": "https://www.cabq.gov/planning/documents/BarelasRevitPlanCompleteWlegislationpdf.pdf",
       "content_type": "application/pdf",
@@ -713,10 +713,12 @@
       "collision_resolution": {
         "existing_canonical_inventory_id": "src-28418cab91a745a6",
         "existing_r2_key": "development-land-use/redevelopment-plans/cabq-barelas-neighborhood-commercial-area-revitalization-plan.pdf",
-        "action": "no_second_archive_object; preserve the settled retained row and request a separate reconciliation decision before any upload plan includes it"
+        "action": "resolved_exact_duplicate; canonical already archived; no second object or standalone entry"
       },
       "source_verification_method": "fresh_full_GET_authoritative_City_source_2026-09-25",
-      "source_identity_result": "exact_saved_size_sha256_and_page_count_match"
+      "source_identity_result": "exact_saved_size_sha256_and_page_count_match",
+      "current_disposition": "duplicate",
+      "duplicate_reconciliation_artifact": "project-state/discovery/planning-documents-root-barelas-duplicate-reconciliation-2026-09-26.json"
     },
     {
       "id": "src-eb0f4b39798d29df",
@@ -944,13 +946,8 @@
   ],
   "r2_mutation": false,
   "visitor_visible_content_changed": false,
-  "preparation_readiness": "13_exact_sources_and_pdf_qa_complete;_12_unique_upload_candidates;_one_already_archived_canonical_conflict_blocks_13_object_upload_plan",
-  "blockers": [
-    {
-      "id": "src-d9bf34830a9467e2",
-      "reason": "Already archived byte-identical canonical original src-28418cab91a745a6; no second object or independent public entry may be proposed. Settled retained disposition needs a separate reconciliation decision."
-    }
-  ],
+  "preparation_readiness": "13_deliveries_source_and_QA_verified;_one_exact_duplicate_reconciled;_12_unique_originals_upload_ready_after_explicit_authorization",
+  "blockers": [],
   "summary": {
     "intended_originals": 13,
     "source_bytes_verified": 13,
@@ -963,10 +960,14 @@
     "exact_key_collisions_live": 0,
     "archived_same_hash_conflicts": 1,
     "unique_proposed_new_keys": 12,
-    "source_or_hash_discrepancies": 0
+    "source_or_hash_discrepancies": 0,
+    "duplicate_deliveries_reconciled": 1,
+    "current_preparation_blockers": 0,
+    "unique_upload_bytes": 122249326,
+    "unique_upload_pages": 928
   },
   "presentation_plan_status": "background_plan_complete_no_content_edit",
-  "next_gate": "First reconcile the already-archived Barelas original without changing the settled disposition in this stage; separately authorize R2 upload and exact public-byte verification for the unique eligible originals. Visitor-visible implementation remains a later manual-review content-PR stage.",
+  "next_gate": "Explicit authorization for exactly these 12 unchanged Planning uploads and exact public-byte verification; later visible Hugo implementation requires separate manual-review content PR.",
   "expected_identity_transcription_note": "The user-supplied Chapter 3 SHA-256 ends in 3942 and contains 63 characters. The authoritative settled decision and inventory end in 3942b; the fresh source exactly matches that full 64-character canonical hash. No canonical identity was replaced.",
   "reviewed_baseline_commit": "f07a830ddbf6d5d75c87267f6dd5335594b74a07",
   "inventory_rows_changed": false,
@@ -985,5 +986,41 @@
     "nonblocking_warnings": [
       "Existing Hugo LanguageCode and LanguageDirection deprecations"
     ]
+  },
+  "historical_preparation_blockers": [
+    {
+      "id": "src-d9bf34830a9467e2",
+      "reason": "Already archived byte-identical canonical original src-28418cab91a745a6; no second object or independent public entry may be proposed. Settled retained disposition needs a separate reconciliation decision."
+    }
+  ],
+  "current_derived_state": {
+    "recorded_at": "2026-09-26T05:46:19.407500+00:00",
+    "verified_authoritative_source_deliveries": 13,
+    "exact_duplicate_deliveries_reconciled": 1,
+    "unique_new_upload_candidates": 12,
+    "unique_upload_candidate_ids": [
+      "src-16b33375ffbddc62",
+      "src-1fa6ae851ddf282d",
+      "src-513fe9056bf9b34c",
+      "src-c54e59cd5c25282d",
+      "src-7de0f5803d442e8f",
+      "src-8740362a1b751e26",
+      "src-99fe2201b73355c4",
+      "src-afac0cf84867a22f",
+      "src-c87775c045d8acc4",
+      "src-eb0f4b39798d29df",
+      "src-f528ec2e0e955690",
+      "src-fb6e95610a43c7a4"
+    ],
+    "unique_upload_bytes": 122249326,
+    "unique_upload_pages": 928,
+    "duplicate_reconciliation_artifact": "project-state/discovery/planning-documents-root-barelas-duplicate-reconciliation-2026-09-26.json",
+    "final_no_mutation_preflight": "project-state/discovery/planning-documents-root-r2-upload-preflight-2026-09-26.json",
+    "inventory_transition": {
+      "src-d9bf34830a9467e2": "duplicate"
+    },
+    "other_12_status": "approved for addition",
+    "r2_mutation": false,
+    "visitor_visible_content_changed": false
   }
 }
