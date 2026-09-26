@@ -5,7 +5,7 @@ from pathlib import Path
 c=runpy.run_path(str(Path(__file__).with_name('BackgroundCampaign.py')))
 ROOT,STATE,load,save,rel,context,now,digest=(c[k] for k in ['ROOT','STATE','load','save','rel','context','now','digest'])
 p=argparse.ArgumentParser();p.add_argument('--live',required=True);a=p.parse_args()
-path,d=context();s=load(ROOT/d['selection_artifact']);before=load(ROOT/d['source_queue_artifact'])
+path,d=context();assert d['state']!='complete_background_campaign','Completed campaign is sealed';s=load(ROOT/d['selection_artifact']);before=load(ROOT/d['source_queue_artifact'])
 import msvcrt
 with (ROOT/'tmp/background-campaign-writer.lock').open('a+b') as lock:
  lock.seek(0);msvcrt.locking(lock.fileno(),msvcrt.LK_NBLCK,1)

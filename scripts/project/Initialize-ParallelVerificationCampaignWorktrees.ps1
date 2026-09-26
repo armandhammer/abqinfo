@@ -21,13 +21,13 @@ if(-not$PlanOnly){
   foreach($plan in $plans){
     if(Test-Path -LiteralPath $plan.path){
       if(-not$ResumeExisting){throw "Worktree path exists: $($plan.path)"}
-      $existingCommit=(& git -C $plan.path rev-parse HEAD).Trim();if($LASTEXITCODE -or $existingCommit-ne$commit){throw "Existing worktree is not at the campaign commit: $($plan.path)"}
-      & git -C $plan.path symbolic-ref --quiet HEAD|Out-Null;if(-not$LASTEXITCODE){throw "Existing campaign worktree is not detached: $($plan.path)"}
-      $dirty=@(& git -C $plan.path status --porcelain);if($LASTEXITCODE -or $dirty.Count){throw "Existing campaign worktree is not clean: $($plan.path)"}
+      $existingCommit=(& git -c core.longpaths=true -C $plan.path rev-parse HEAD).Trim();if($LASTEXITCODE -or $existingCommit-ne$commit){throw "Existing worktree is not at the campaign commit: $($plan.path)"}
+      & git -c core.longpaths=true -C $plan.path symbolic-ref --quiet HEAD|Out-Null;if(-not$LASTEXITCODE){throw "Existing campaign worktree is not detached: $($plan.path)"}
+      $dirty=@(& git -c core.longpaths=true -C $plan.path status --porcelain);if($LASTEXITCODE -or $dirty.Count){throw "Existing campaign worktree is not clean: $($plan.path)"}
       $plan.state='reused'
       continue
     }
-    & git worktree add --detach $plan.path $commit | Out-Null;if($LASTEXITCODE){throw "Unable to create worktree for lane $($plan.lane_id)"};$plan.state='created'
+    & git -c core.longpaths=true worktree add --detach $plan.path $commit | Out-Null;if($LASTEXITCODE){throw "Unable to create worktree for lane $($plan.lane_id)"};$plan.state='created'
   }
 }
 [pscustomobject][ordered]@{campaign_id=$campaign.campaign_id;manifest_path=$manifestFull;plan_only=[bool]$PlanOnly;worktrees=@($plans)}|ConvertTo-Json -Depth 6

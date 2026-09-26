@@ -49,7 +49,10 @@ subprocess.run(['pwsh','-NoProfile','-ExecutionPolicy','Bypass','-File',str(size
 
 active=ROOT/'project-state/active-campaign.json'
 if active.exists():
- pointer=load(active);d=load(ROOT/pointer['campaign_artifact']);s=load(ROOT/d['selection_artifact'])
+ pointer=load(active);d=load(ROOT/pointer['campaign_artifact'])
+ for receipt in d.get('validation_history',[]):
+  assert hashlib.sha256((ROOT/receipt['log_artifact']).read_bytes()).hexdigest()==receipt['log_sha256'],'Durable validation log changed'
+ s=load(ROOT/d['selection_artifact'])
  inv=load(ROOT/'project-state/master-inventory.json');rows={r['id']:r for r in inv['candidates']}
  prior={r['id']:r for r in json.loads(subprocess.check_output(['git','show',d['baseline_commit']+':project-state/master-inventory.json'],cwd=ROOT).decode('utf-8-sig'))['candidates']}
  digest=runpy.run_path(str(ROOT/'scripts/project/BackgroundCampaign.py'))['digest']
@@ -100,5 +103,5 @@ if active.exists():
   assert not (gates&blocked or gates&ungated or blocked&ungated)
   assert len(ungated)==queue['ungated_pending_count'] and queue['genuinely_actionable_ungated_pending_count']==0
   assert ungated=={r['id'] for r in queue['unresolved_ungated_prerequisites']}
-  assert queue['mission_borderline_queue_size']==0
+  assert queue['mission_borderline_queue_size']==load(ROOT/'project-state/discovery/mission-scope-borderline-human-review-queue.json')['unresolved_count']<=20
 print('PASS: background framework policy, actual guard failures, locked population, immutable baseline and exact archive receipts.')

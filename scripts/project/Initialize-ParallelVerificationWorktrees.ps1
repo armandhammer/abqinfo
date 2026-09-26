@@ -47,7 +47,7 @@ if (-not $PlanOnly) {
   }
   New-Item -ItemType Directory -Path (Join-Path $rootFullPath ([string]$manifest.run_id)) -Force | Out-Null
   foreach ($plan in $plans) {
-    & git worktree add --detach $plan.path $resolvedRef
+    & git -c core.longpaths=true worktree add --detach $plan.path $resolvedRef
     if ($LASTEXITCODE) { throw "Unable to create worktree for $($plan.worker_id)." }
   }
 }
