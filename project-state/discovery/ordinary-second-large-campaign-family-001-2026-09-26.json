@@ -1,0 +1,414 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_second_large_campaign_family_evidence",
+  "family_id": "family-001",
+  "family": "Later MRCOG CMP measurement releases",
+  "scope_ids": [
+    "src-b9f68064d83c5038",
+    "src-ba0a4030fcc63e6e",
+    "src-d5e398345f6eec6b"
+  ],
+  "records": [
+    {
+      "id": "src-b9f68064d83c5038",
+      "saved_evidence": {
+        "id": "src-b9f68064d83c5038",
+        "authoritative_url": "https://www.mrcog-nm.gov/DocumentCenter/View/3500",
+        "recommended_status": "approved for addition",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - three records in this lane return HTML despite sitting under a DocumentCenter path, and one file whose URL slug ends -PDF is a JPEG.",
+        "content_kind": "PDF",
+        "leading_bytes": "25504446",
+        "publisher": "Mid-Region Council of Governments",
+        "mrcog_document_number": 3500,
+        "size_bytes": 1604312,
+        "checksum_sha256": "a25ba39f8a127b186789412932d805f16e5cf9c9a1a4ba497ccfdadecec9830c",
+        "title": "2016 CMP Corridors Rankings Map",
+        "description": "The Mid-Region Council of Governments' congestion management record: 2016 CMP Corridors Rankings Map, part of the series by which the region measures where its corridors are congested and what it proposes to do about it.",
+        "evidence": "Published by the Mid-Region Council of Governments at DocumentCenter/View/3500 as 3500.",
+        "group": "congestion management process",
+        "proposed_canonical_page": "content/transportation/roadway-projects/studies.md",
+        "cross_listings": [
+          {
+            "page": "content/transportation/operations-data.md",
+            "reason": "Corridor congestion measurement."
+          }
+        ],
+        "description_word_count": 35
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/mrcog-documentcenter-cluster-research-2026-09-13.json"
+      ],
+      "fresh_source_qa": {
+        "source_exact_verified": true,
+        "source_GET": {
+          "http_status": 200,
+          "requested_url": "https://www.mrcog-nm.gov/DocumentCenter/View/3500",
+          "final_url": "https://www.mrcog-nm.gov/DocumentCenter/View/3500/2016-CMP-Corridor-Rankings-Map-PDF?bidId=",
+          "content_type": "application/pdf",
+          "verified_at": "2026-09-26T18:20:39.193755+00:00",
+          "size_bytes": 1604312,
+          "checksum_sha256": "a25ba39f8a127b186789412932d805f16e5cf9c9a1a4ba497ccfdadecec9830c",
+          "leading_bytes": "255044462d312e360d0a312030206f62"
+        },
+        "staged_path": "research/staging/ordinary-second-large-campaign-2026-09-26/src-b9f68064d83c5038.pdf",
+        "size_bytes": 1604312,
+        "checksum_sha256": "a25ba39f8a127b186789412932d805f16e5cf9c9a1a4ba497ccfdadecec9830c",
+        "container": "PDF",
+        "structural_result": "opens_without_password_or_repair",
+        "page_count": 1,
+        "word_count": 87,
+        "text_layer_pages": 1,
+        "rendered_pages": 1,
+        "low_ink_pages": [],
+        "contact_sheets": [
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-b9f68064d83c5038-contact-1.jpg"
+        ],
+        "representative_images": [
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-b9f68064d83c5038-page-1.png"
+        ],
+        "full_text_path": "research/staging/ordinary-second-large-campaign-2026-09-26/src-b9f68064d83c5038.txt",
+        "text_excerpts": {
+          "1": "CIBOLA\nNATIONAL\nFOREST\nPETROGLYPH\nNATIONAL\nMONUMENT\nPUEBLO OF\nSANDIA\nPUEBLO OF ISLETA\nLAGUNA \nPUEBLO\nLAGUNA \nPUEBLO\nTO'HAJIILEE \nNAVAJO \nRESERVATION\nBERNALILLO \nCOUNTY\nSANDOVAL\nCOUNTY\nVALENCIA\nCOUNTY\nPUEBLO OF ISLETA\nPeralta\nTijeras\nEdgewood\nCorrales\nLos Lunas\nRio Rancho\nBernalillo\nAlbuquerque\nBosque Farms\nLos Ranchos\nRio\nGra\nn\nde\nBase Map\nAMPA Boundary\nCounty Boundaries\nMuncipal Boundaries\nAirports\n0\n2\n4\n6\n8\n1\nMiles\n/\nCongestion Management Process (CMP) \n2016 Corridors Ranking\nRANK\n1 - 3\n4 - 10\n11 - 17\n18 - 24\n25 - 31\nInterstates\n"
+        },
+        "metadata": {
+          "format": "PDF 1.6",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "Esri ArcMap 10.4.1.5686",
+          "producer": "",
+          "creationDate": "D:20180830101231-07",
+          "modDate": "",
+          "trapped": "",
+          "encryption": null
+        },
+        "representative_visual_qa": "passed_agent_inspection_opening_middle_ending",
+        "visual_review_evidence": "Inspected opening/middle/ending rendered sheets; map and matrix show dense named local corridors; profile contains expected mapped/tabular statistics and original source spacers.",
+        "visually_reviewed_at": "2026-09-26T18:25:41.158129Z"
+      },
+      "disposition": "approved for addition",
+      "rationale": "Distinct 2016 CMP corridor-rankings map delineates the Albuquerque metropolitan planning area and ranks the monitored local street network. Dense cartographic evidence is useful with the congestion-profile program record.",
+      "canonical_candidate_id": null,
+      "quality_assessment": {
+        "visual_inspection": "Inspected opening/middle/ending rendered sheets; map and matrix show dense named local corridors; profile contains expected mapped/tabular statistics and original source spacers.",
+        "actual_function": "Distinct 2016 CMP corridor-rankings map delineates the Albuquerque metropolitan planning area and ranks the monitored local street network. Dense cartographic evidence is useful with the congestion-profile program record.",
+        "measured_page_count": 1,
+        "measured_word_count": 87,
+        "intended_publication_form": "Future curated CMP program-family record on existing operations-data page; maps/matrices are components, no new standalone site entry now.",
+        "standalone_public_value": "Provides dated local congestion measurements and locally assigned improvement strategies, materially explaining Albuquerque transportation planning and investment.",
+        "information_density": "Measured full-document pages/words and source container are retained in QA.",
+        "series_component_relationship": "Later distinct dated CMP measurement/strategy release; preserve 2008-2014 program chronology and measurement/publication date distinctions.",
+        "substantive_rationale": "Distinct 2016 CMP corridor-rankings map delineates the Albuquerque metropolitan planning area and ranks the monitored local street network. Dense cartographic evidence is useful with the congestion-profile program record.",
+        "limited_content_exception": "Dense local cartographic or corridor-strategy matrix original; low text count does not measure its substantive visual information."
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T18:25:41.158152Z",
+        "geographic_institutional_scope": "MRCOG",
+        "specific_albuquerque_connection": "Distinct 2016 CMP corridor-rankings map delineates the Albuquerque metropolitan planning area and ranks the monitored local street network. Dense cartographic evidence is useful with the congestion-profile program record.",
+        "abqinfo_public_information_value": "Provides dated local congestion measurements and locally assigned improvement strategies, materially explaining Albuquerque transportation planning and investment.",
+        "general_context_exclusion_test": "City hosting, jurisdiction, geographic origin and procedural usefulness alone are insufficient; the actual document function and distinct public value control.",
+        "final_scope_decision": "passes_both_gates",
+        "substantive_rationale": "Distinct 2016 CMP corridor-rankings map delineates the Albuquerque metropolitan planning area and ranks the monitored local street network. Dense cartographic evidence is useful with the congestion-profile program record."
+      },
+      "archival_readiness": "Original fully prepared; authorized guarded upload pending",
+      "proposed_canonical_page": "content/transportation/operations-data.md",
+      "independent_review_input": "project-state/discovery/ordinary-second-large-campaign-starting-review-decisions-2026-09-26.json",
+      "archive_preflight": {
+        "same_hash_inventory_ids": [],
+        "key_collision": false,
+        "namespace_basis": "Established page and R2 topical namespace: content/transportation/operations-data.md"
+      },
+      "r2_key": "transportation/operations-data/mrcog-cmp-2016-corridor-rankings-map.pdf",
+      "review_complete": true,
+      "upload_intent": {
+        "key": "transportation/operations-data/mrcog-cmp-2016-corridor-rankings-map.pdf",
+        "key_was_absent": true,
+        "size_bytes": 1604312,
+        "sha256": "a25ba39f8a127b186789412932d805f16e5cf9c9a1a4ba497ccfdadecec9830c",
+        "started_at": "2026-09-26T18:27:29.2125811Z"
+      },
+      "uploaded_pending_public_verification": true,
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/transportation/operations-data/mrcog-cmp-2016-corridor-rankings-map.pdf",
+        "size_bytes": 1604312,
+        "checksum_sha256": "a25ba39f8a127b186789412932d805f16e5cf9c9a1a4ba497ccfdadecec9830c",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T18:27:36.8928384Z"
+      },
+      "archive_complete": true
+    },
+    {
+      "id": "src-ba0a4030fcc63e6e",
+      "saved_evidence": {
+        "id": "src-ba0a4030fcc63e6e",
+        "authoritative_url": "https://www.mrcog-nm.gov/DocumentCenter/View/3925/Profiles-in-Congestion-2016-PDF",
+        "recommended_status": "approved for addition",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - three records in this lane return HTML despite sitting under a DocumentCenter path, and one file whose URL slug ends -PDF is a JPEG.",
+        "content_kind": "PDF",
+        "leading_bytes": "25504446",
+        "publisher": "Mid-Region Council of Governments",
+        "mrcog_document_number": 3925,
+        "size_bytes": 2748885,
+        "checksum_sha256": "eff213676d9f58cef6092173fbe12fa14224a1538433211c6265c87d7e9cb848",
+        "title": "Profiles in Congestion 2016",
+        "description": "The Mid-Region Council of Governments' congestion management record: Profiles in Congestion 2016, part of the series by which the region measures where its corridors are congested and what it proposes to do about it.",
+        "evidence": "Published by the Mid-Region Council of Governments at DocumentCenter/View/3925 as Profiles-in-Congestion-2016-PDF.",
+        "group": "congestion management process",
+        "proposed_canonical_page": "content/transportation/roadway-projects/studies.md",
+        "cross_listings": [
+          {
+            "page": "content/transportation/operations-data.md",
+            "reason": "Corridor congestion measurement."
+          }
+        ],
+        "description_word_count": 34
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/mrcog-documentcenter-cluster-research-2026-09-13.json"
+      ],
+      "fresh_source_qa": {
+        "source_exact_verified": true,
+        "source_GET": {
+          "http_status": 200,
+          "requested_url": "https://www.mrcog-nm.gov/DocumentCenter/View/3925/Profiles-in-Congestion-2016-PDF",
+          "final_url": "https://www.mrcog-nm.gov/DocumentCenter/View/3925/Profiles-in-Congestion-2016-PDF",
+          "content_type": "application/pdf",
+          "verified_at": "2026-09-26T18:20:38.694771+00:00",
+          "size_bytes": 2748885,
+          "checksum_sha256": "eff213676d9f58cef6092173fbe12fa14224a1538433211c6265c87d7e9cb848",
+          "leading_bytes": "255044462d312e360d25e2e3cfd30d0a"
+        },
+        "staged_path": "research/staging/ordinary-second-large-campaign-2026-09-26/src-ba0a4030fcc63e6e.pdf",
+        "size_bytes": 2748885,
+        "checksum_sha256": "eff213676d9f58cef6092173fbe12fa14224a1538433211c6265c87d7e9cb848",
+        "container": "PDF",
+        "structural_result": "opens_without_password_or_repair",
+        "page_count": 54,
+        "word_count": 13364,
+        "text_layer_pages": 49,
+        "rendered_pages": 54,
+        "low_ink_pages": [
+          2,
+          4,
+          6,
+          20,
+          53
+        ],
+        "contact_sheets": [
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-ba0a4030fcc63e6e-contact-1.jpg",
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-ba0a4030fcc63e6e-contact-2.jpg",
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-ba0a4030fcc63e6e-contact-3.jpg",
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-ba0a4030fcc63e6e-contact-4.jpg",
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-ba0a4030fcc63e6e-contact-5.jpg"
+        ],
+        "representative_images": [
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-ba0a4030fcc63e6e-page-1.png",
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-ba0a4030fcc63e6e-page-28.png",
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-ba0a4030fcc63e6e-page-54.png"
+        ],
+        "full_text_path": "research/staging/ordinary-second-large-campaign-2026-09-26/src-ba0a4030fcc63e6e.txt",
+        "text_excerpts": {
+          "1": "A PROFILE IN CONGESTION, 2016\nMRMPO\nMid-Region Metropolitan Planning Organization\nThe 30 most congested corridors in the Albuquerque Metropolitan Area\n",
+          "28": "28\n7. jefferson st.\nCORRIDOR\nprofile\n•\t\nJefferson St. is a north-south principal arterial that serves the Journal \nCenter and major employment destinations along the northern I-25 \ncorridor.\n•\t\nThe Jefferson CMP corridor runs from Montgomery to Alameda.\n•\t\nThe most extreme congestion on the corridor occurs between Osuna \nand San Antonio, where volumes are high and travel times are \nextremely long. Interestingly, the travel times are considerably worse in \nthe southbound direction in both the AM and PM peak periods.\n•\t\nThe highest volumes along the corridor are found between Osuna and \nHawkins and on the links abutting Paseo Del Norte and I-25. \n•\t\nSix intersections have crash rates above the regional average, and the \nintersection with Paseo is Five times above the regional crash rate.\nstatistics\nSUMMARY DATA\t\nHighest Volume Segment\t\n25,800\nAverage Speeds (PM North)\t\n11-26 mph\nAverage Speeds (PM South)\t\n13-28 mph\nTotal Delay (PM North)\t \t\n338 seconds (83 secs./mile)\nTotal Delay (PM South)\t \t\n302 seconds (74 secs./mile)\nDEMOGRAPHIC TRENDS\n\t\n\t\n\t\n\t\n2008\t\n2016\t\n2040\n\t\n\t\nPopulation\t\n7,311\t\n7,089\t\n9,458\n\t\n\t\nEmployment\t\n35,960\t 35,151\t 38,090\nCORRIDOR RANKS\t\nVolume/Capacity Ratio\t\n9/31\nSpeed Differential\t\n\t\n4/31\nCrash Rates\t\n\t\n\t\n15/31\nOverall Rank\t\n\t\n\t\n7/31\nSTUDY AREA: \n4.9 Sq. Miles\nLENGTH & NO. OF SEGMENTS: \n4 Miles - 15 Segments\nFunctional Class: \nMinor Arterial\nAccess Control: None\nSpeed Limit: 35 mph\nLanes: 4 lanes\nITS Designated Corridor: Yes\nITS Deployment: \nCCTV, AS  \nTransit: \nABQ Ride: 140 (local), \n251 (Rail Runner connector), \n551 (Commuter)\nBicycle Facilities: \n• Route: Montgomery Blvd.     \n   to Singer Blvd. \n• Lanes: Singer Blvd. to \n   Masthead Rd. \n• Route: Paseo Del Norte to \n   Alameda Blvd.\n",
+          "54": "Mid-Region Council of Governments\n809 Copper Avenue NW\nAlbuquerque, NM 87102\n(505) 247-1750\nwww.mrcog-nm.gov\n"
+        },
+        "metadata": {
+          "format": "PDF 1.6",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "Adobe InDesign CS6 (Windows)",
+          "producer": "Adobe PDF Library 10.0.1",
+          "creationDate": "D:20190731101906-06'00'",
+          "modDate": "D:20190731112215-06'00'",
+          "trapped": "",
+          "encryption": null
+        },
+        "representative_visual_qa": "passed_agent_inspection_opening_middle_ending",
+        "visual_review_evidence": "Inspected opening/middle/ending rendered sheets; map and matrix show dense named local corridors; profile contains expected mapped/tabular statistics and original source spacers.",
+        "visually_reviewed_at": "2026-09-26T18:25:41.159776Z"
+      },
+      "disposition": "approved for addition",
+      "rationale": "Complete 54-page A Profile in Congestion, 2016 presents methodology, crash/speed/volume-capacity rankings and mapped statistics for 31 metropolitan corridors including Central, Coors, Alameda and Jefferson. Printed publication date is June 2019; 2016 is the measurement vintage. Later measurements do not supersede historical 2008-2014 releases.",
+      "canonical_candidate_id": null,
+      "quality_assessment": {
+        "visual_inspection": "Inspected opening/middle/ending rendered sheets; map and matrix show dense named local corridors; profile contains expected mapped/tabular statistics and original source spacers.",
+        "actual_function": "Complete 54-page A Profile in Congestion, 2016 presents methodology, crash/speed/volume-capacity rankings and mapped statistics for 31 metropolitan corridors including Central, Coors, Alameda and Jefferson. Printed publication date is June 2019; 2016 is the measurement vintage. Later measurements do not supersede historical 2008-2014 releases.",
+        "measured_page_count": 54,
+        "measured_word_count": 13364,
+        "intended_publication_form": "Future curated CMP program-family record on existing operations-data page; maps/matrices are components, no new standalone site entry now.",
+        "standalone_public_value": "Provides dated local congestion measurements and locally assigned improvement strategies, materially explaining Albuquerque transportation planning and investment.",
+        "information_density": "Measured full-document pages/words and source container are retained in QA.",
+        "series_component_relationship": "Later distinct dated CMP measurement/strategy release; preserve 2008-2014 program chronology and measurement/publication date distinctions.",
+        "substantive_rationale": "Complete 54-page A Profile in Congestion, 2016 presents methodology, crash/speed/volume-capacity rankings and mapped statistics for 31 metropolitan corridors including Central, Coors, Alameda and Jefferson. Printed publication date is June 2019; 2016 is the measurement vintage. Later measurements do not supersede historical 2008-2014 releases."
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T18:25:41.159790Z",
+        "geographic_institutional_scope": "MRCOG",
+        "specific_albuquerque_connection": "Complete 54-page A Profile in Congestion, 2016 presents methodology, crash/speed/volume-capacity rankings and mapped statistics for 31 metropolitan corridors including Central, Coors, Alameda and Jefferson. Printed publication date is June 2019; 2016 is the measurement vintage. Later measurements do not supersede historical 2008-2014 releases.",
+        "abqinfo_public_information_value": "Provides dated local congestion measurements and locally assigned improvement strategies, materially explaining Albuquerque transportation planning and investment.",
+        "general_context_exclusion_test": "City hosting, jurisdiction, geographic origin and procedural usefulness alone are insufficient; the actual document function and distinct public value control.",
+        "final_scope_decision": "passes_both_gates",
+        "substantive_rationale": "Complete 54-page A Profile in Congestion, 2016 presents methodology, crash/speed/volume-capacity rankings and mapped statistics for 31 metropolitan corridors including Central, Coors, Alameda and Jefferson. Printed publication date is June 2019; 2016 is the measurement vintage. Later measurements do not supersede historical 2008-2014 releases."
+      },
+      "archival_readiness": "Original fully prepared; authorized guarded upload pending",
+      "proposed_canonical_page": "content/transportation/operations-data.md",
+      "independent_review_input": "project-state/discovery/ordinary-second-large-campaign-starting-review-decisions-2026-09-26.json",
+      "archive_preflight": {
+        "same_hash_inventory_ids": [],
+        "key_collision": false,
+        "namespace_basis": "Established page and R2 topical namespace: content/transportation/operations-data.md"
+      },
+      "r2_key": "transportation/operations-data/mrcog-profile-in-congestion-2016-published-june-2019.pdf",
+      "review_complete": true,
+      "upload_intent": {
+        "key": "transportation/operations-data/mrcog-profile-in-congestion-2016-published-june-2019.pdf",
+        "key_was_absent": true,
+        "size_bytes": 2748885,
+        "sha256": "eff213676d9f58cef6092173fbe12fa14224a1538433211c6265c87d7e9cb848",
+        "started_at": "2026-09-26T18:27:46.7048363Z"
+      },
+      "uploaded_pending_public_verification": true,
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/transportation/operations-data/mrcog-profile-in-congestion-2016-published-june-2019.pdf",
+        "size_bytes": 2748885,
+        "checksum_sha256": "eff213676d9f58cef6092173fbe12fa14224a1538433211c6265c87d7e9cb848",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T18:27:53.9440029Z"
+      },
+      "archive_complete": true
+    },
+    {
+      "id": "src-d5e398345f6eec6b",
+      "saved_evidence": {
+        "id": "src-d5e398345f6eec6b",
+        "authoritative_url": "https://www.mrcog-nm.gov/DocumentCenter/View/6646/2018-Strategies-Matrix-PDF",
+        "recommended_status": "approved for addition",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes, not by extension - three records in this lane return HTML despite sitting under a DocumentCenter path, and one file whose URL slug ends -PDF is a JPEG.",
+        "content_kind": "PDF",
+        "leading_bytes": "25504446",
+        "publisher": "Mid-Region Council of Governments",
+        "mrcog_document_number": 6646,
+        "size_bytes": 64887,
+        "checksum_sha256": "97aed79093c1ae0c4ed4ab47acad93c79f36117580c68247a82dc02a3980652a",
+        "title": "2018 Strategies Matrix",
+        "description": "The Mid-Region Council of Governments' congestion management record: 2018 Strategies Matrix, part of the series by which the region measures where its corridors are congested and what it proposes to do about it.",
+        "evidence": "Published by the Mid-Region Council of Governments at DocumentCenter/View/6646 as 2018-Strategies-Matrix-PDF.",
+        "group": "congestion management process",
+        "proposed_canonical_page": "content/transportation/roadway-projects/studies.md",
+        "cross_listings": [
+          {
+            "page": "content/transportation/operations-data.md",
+            "reason": "Corridor congestion measurement."
+          }
+        ],
+        "description_word_count": 33
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/mrcog-documentcenter-cluster-research-2026-09-13.json"
+      ],
+      "fresh_source_qa": {
+        "source_exact_verified": true,
+        "source_GET": {
+          "http_status": 200,
+          "requested_url": "https://www.mrcog-nm.gov/DocumentCenter/View/6646/2018-Strategies-Matrix-PDF",
+          "final_url": "https://www.mrcog-nm.gov/DocumentCenter/View/6646/2018-Strategies-Matrix-PDF",
+          "content_type": "application/pdf",
+          "verified_at": "2026-09-26T18:20:38.661685+00:00",
+          "size_bytes": 64887,
+          "checksum_sha256": "97aed79093c1ae0c4ed4ab47acad93c79f36117580c68247a82dc02a3980652a",
+          "leading_bytes": "255044462d312e350d25e2e3cfd30d0a"
+        },
+        "staged_path": "research/staging/ordinary-second-large-campaign-2026-09-26/src-d5e398345f6eec6b.pdf",
+        "size_bytes": 64887,
+        "checksum_sha256": "97aed79093c1ae0c4ed4ab47acad93c79f36117580c68247a82dc02a3980652a",
+        "container": "PDF",
+        "structural_result": "opens_without_password_or_repair",
+        "page_count": 1,
+        "word_count": 377,
+        "text_layer_pages": 1,
+        "rendered_pages": 1,
+        "low_ink_pages": [],
+        "contact_sheets": [
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-d5e398345f6eec6b-contact-1.jpg"
+        ],
+        "representative_images": [
+          "tmp/ordinary-second-large-campaign-qa-2026-09-26/src-d5e398345f6eec6b-page-1.png"
+        ],
+        "full_text_path": "research/staging/ordinary-second-large-campaign-2026-09-26/src-d5e398345f6eec6b.txt",
+        "text_excerpts": {
+          "1": "Expanded traffic signal timing and \ncoordination ‐ITS\nTraffic signal equipment \nmodernization ‐ ITS\nTraveler information devices ‐ ITS\nCommunications networks and \nroadway surveillance ‐ ITS\nAccess management\nFixed guideways and dedicated transit \nlanes\nTransit service expansion\nTransit vehicle information\nTransit intersection queue‐jump lanes \nand signal priority\nElectronic fare collection\nPark & Ride facilities\nOff‐street multi‐use trails\nOn‐street bicycle treatments\nParking management\nIntersection turn lanes\nDeceleration lanes\nFreight Improvement Strategies\nGrade‐separated railroad crossings\nNew grade‐separated intersections\nNew travel lanes (general purpose)\nNew roadways\nNon‐CMP Corridor (NC)\nR\nHigh Priority Regional Strategies\nInterstate 25\nI25\nElectronic fare collection\nInterstate 40\nI40\nTelework and flexible schedules\n1\nAlameda Blvd.\n1\nRidesharing travel services\n2\nIsleta Blvd.\n2\nAlternative travel mode events and assistance\n3\nBridge/Cesar Chavez Blvd.\n1\n3\nTraffic management centers\n4\nUS 550\n2\n4\nIncident management plans\n5\nMontano Rd.\n5\nIncident response and Courtesy Patrol\n6\nPaseo del Norte Blvd.\n3\n6\n7\nJefferson St.\n7\nMedium Priority Regional Strategies\n8\nDennis Chavez/Rio Bravo\n8\nRoadway signage improvements (wayfinding)\n9\nParadise Blvd.\n9\n10\nSan Mateo Blvd.\n10\nLocation‐Specific Strategies*\n11\nNM 6\n11\nRamp Meters\n12\nCentral Ave.\n4\n5\n12\nNew (or converted) HOV/HOT/Truck Lanes\n13\nOsuna Blvd.\n13\nRoundabout intersections\n14\nMontgomery Blvd.\n14\n15\nCoors Blvd.\n6\n7\n8\n15\n16\nWyoming Blvd.\n16\n* These strategies are only\n17\nGibson Blvd.\n17\nappropriate in a few locations.\n18\nEubank Blvd.\n18\nConsult the CMP Toolkit for\n19\n2nd St.\n19\nappropriate locations and priority levels.\n20\nMenaul Blvd.\n20\n21\nLomas Blvd.\n21\n22\n4th St.\n22\n23\nNM 47\n23\n24\nLouisiana Blvd.\n24\n25\nUnser Blvd.\n25\n26\nBroadway Blvd.\n26\n27\nNM 528\n9\n27\n28\nArenal Blvd.\n28\n29\nSouthern Blvd.\n29\n30\nTramway Blvd.\n30\n31\nIrving Blvd.\n31\n^ See CMP Toolkit for additional corridors\nfor which the strategy is a high priorit"
+        },
+        "metadata": {
+          "format": "PDF 1.5",
+          "title": "Strategies Matrix 2018 Update CMP Committee.xlsx",
+          "author": "wsimon",
+          "subject": "",
+          "keywords": "",
+          "creator": "PScript5.dll Version 5.2.2",
+          "producer": "Acrobat Distiller 17.0 (Windows)",
+          "creationDate": "D:20180829165121-06'00'",
+          "modDate": "D:20180829165121-06'00'",
+          "trapped": "",
+          "encryption": null
+        },
+        "representative_visual_qa": "passed_agent_inspection_opening_middle_ending",
+        "visual_review_evidence": "Inspected opening/middle/ending rendered sheets; map and matrix show dense named local corridors; profile contains expected mapped/tabular statistics and original source spacers.",
+        "visually_reviewed_at": "2026-09-26T18:25:41.161479Z"
+      },
+      "disposition": "approved for addition",
+      "rationale": "One-page 2018 CMP strategy matrix links named Albuquerque corridors to transit, access, ITS, freight, bicycle and pedestrian improvement priorities. It is dense local infrastructure-planning evidence, distinct from the earlier matrix.",
+      "canonical_candidate_id": null,
+      "quality_assessment": {
+        "visual_inspection": "Inspected opening/middle/ending rendered sheets; map and matrix show dense named local corridors; profile contains expected mapped/tabular statistics and original source spacers.",
+        "actual_function": "One-page 2018 CMP strategy matrix links named Albuquerque corridors to transit, access, ITS, freight, bicycle and pedestrian improvement priorities. It is dense local infrastructure-planning evidence, distinct from the earlier matrix.",
+        "measured_page_count": 1,
+        "measured_word_count": 377,
+        "intended_publication_form": "Future curated CMP program-family record on existing operations-data page; maps/matrices are components, no new standalone site entry now.",
+        "standalone_public_value": "Provides dated local congestion measurements and locally assigned improvement strategies, materially explaining Albuquerque transportation planning and investment.",
+        "information_density": "Measured full-document pages/words and source container are retained in QA.",
+        "series_component_relationship": "Later distinct dated CMP measurement/strategy release; preserve 2008-2014 program chronology and measurement/publication date distinctions.",
+        "substantive_rationale": "One-page 2018 CMP strategy matrix links named Albuquerque corridors to transit, access, ITS, freight, bicycle and pedestrian improvement priorities. It is dense local infrastructure-planning evidence, distinct from the earlier matrix."
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T18:25:41.161487Z",
+        "geographic_institutional_scope": "MRCOG",
+        "specific_albuquerque_connection": "One-page 2018 CMP strategy matrix links named Albuquerque corridors to transit, access, ITS, freight, bicycle and pedestrian improvement priorities. It is dense local infrastructure-planning evidence, distinct from the earlier matrix.",
+        "abqinfo_public_information_value": "Provides dated local congestion measurements and locally assigned improvement strategies, materially explaining Albuquerque transportation planning and investment.",
+        "general_context_exclusion_test": "City hosting, jurisdiction, geographic origin and procedural usefulness alone are insufficient; the actual document function and distinct public value control.",
+        "final_scope_decision": "passes_both_gates",
+        "substantive_rationale": "One-page 2018 CMP strategy matrix links named Albuquerque corridors to transit, access, ITS, freight, bicycle and pedestrian improvement priorities. It is dense local infrastructure-planning evidence, distinct from the earlier matrix."
+      },
+      "archival_readiness": "Original fully prepared; authorized guarded upload pending",
+      "proposed_canonical_page": "content/transportation/operations-data.md",
+      "independent_review_input": "project-state/discovery/ordinary-second-large-campaign-starting-review-decisions-2026-09-26.json",
+      "archive_preflight": {
+        "same_hash_inventory_ids": [],
+        "key_collision": false,
+        "namespace_basis": "Established page and R2 topical namespace: content/transportation/operations-data.md"
+      },
+      "r2_key": "transportation/operations-data/mrcog-cmp-2018-strategies-matrix.pdf",
+      "review_complete": true,
+      "upload_intent": {
+        "key": "transportation/operations-data/mrcog-cmp-2018-strategies-matrix.pdf",
+        "key_was_absent": true,
+        "size_bytes": 64887,
+        "sha256": "97aed79093c1ae0c4ed4ab47acad93c79f36117580c68247a82dc02a3980652a",
+        "started_at": "2026-09-26T18:28:03.5245510Z"
+      },
+      "uploaded_pending_public_verification": true,
+      "public_verification": {
+        "public_url": "https://files.abqinfo.com/transportation/operations-data/mrcog-cmp-2018-strategies-matrix.pdf",
+        "size_bytes": 64887,
+        "checksum_sha256": "97aed79093c1ae0c4ed4ab47acad93c79f36117580c68247a82dc02a3980652a",
+        "byte_identical": true,
+        "verified_at": "2026-09-26T18:28:10.2440267Z"
+      },
+      "archive_complete": true
+    }
+  ],
+  "visitor_visible_content_changed": false,
+  "state": "reviewed_decisions_ready_for_inventory"
+}
