@@ -79,12 +79,23 @@ if barelas_reconciliation_path.exists():
     assert reconciliation['exact_public_byte_evidence']['record']['byte_identical'] is True
     assert canonical['direct_file_url'] in alias['cited_successors']
     barelas_reconciled_id = reconciliation['duplicate_id']
+planning_archive_path=DISCOVERY/'planning-documents-root-archive-public-byte-verification-2026-09-26.json'
+planning_archived_ids=set()
+if planning_archive_path.exists():
+    planning_archive=json.loads(planning_archive_path.read_text(encoding='utf-8-sig'))
+    assert planning_archive['state']=='complete_all_12_public_byte_verified_and_inventory_reconciled'
+    assert planning_archive['summary']['public_byte_verified']==12
+    planning_archived_ids={r['id'] for r in planning_archive['results'] if r['byte_identical']}
+    assert len(planning_archived_ids)==12 and 'src-d9bf34830a9467e2' not in planning_archived_ids
 for record in records:
     assert set(record['scope_assessment']) == required
     candidate = by_id[record['id']]
     expected_status = ('validated' if record['id'] in pgs_validated_ids else 'implemented' if record['id'] in pgs_implemented_ids else 'placement assigned') if record['id'] in pgs_archived_ids and record['resulting_status'] == 'approved for addition' else record['resulting_status']
     if record['id'] in later_ms4_archived_ids and record['resulting_status'] == 'approved for addition':
         expected_status = 'validated' if record['id'] in later_ms4_validated_ids else 'implemented' if record['id'] in later_ms4_implemented_ids else 'placement assigned'
+    if record['id'] in planning_archived_ids:
+        assert record['resulting_status']=='approved for addition'
+        expected_status='placement assigned'
     if record['id'] == barelas_reconciled_id:
         assert record['resulting_status'] == 'approved for addition'
         expected_status = 'duplicate'

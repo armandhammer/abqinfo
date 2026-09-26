@@ -48,7 +48,14 @@ def main() -> None:
         'object_count': 1237, 'total_bytes': 9218281842,
         'every_key_size_etag_matches_fresh_live_listing': True,
     }
-    assert (r2['object_count'], r2['total_bytes']) == (1237, 9218281842)
+    planning_path=ROOT/'project-state/discovery/planning-documents-root-archive-public-byte-verification-2026-09-26.json'
+    if planning_path.exists():
+        planning=json.loads(planning_path.read_text(encoding='utf-8-sig'))
+        assert planning['state']=='complete_all_12_public_byte_verified_and_inventory_reconciled'
+        assert planning['accounting']['pre_existing_objects_unchanged'] is True
+        assert (r2['object_count'],r2['total_bytes'])==(1249,9340531168)
+    else:
+        assert (r2['object_count'], r2['total_bytes']) == (1237, 9218281842)
     assert closeout['r2_mutation'] is closeout['visitor_visible_content_changed_during_closeout'] is False
     assert closeout['inventory_ids_to_validate'] == implementation['implemented_inventory_ids'] == list(IDS)
     assert archive['summary']['public_byte_verified'] == 6 and archive['summary']['added_bytes'] == 426926738

@@ -20,8 +20,10 @@ recon=load('project-state/discovery/planning-documents-root-barelas-duplicate-re
 prep=load('project-state/discovery/planning-documents-root-archive-preparation-2026-09-25.json')
 m=load('project-state/discovery/planning-documents-root-r2-upload-preflight-2026-09-26.json')
 r2=load('project-state/r2-inventory.json'); checkpoint=load('project-state/checkpoint.json')
+archive_path=ROOT/'project-state/discovery/planning-documents-root-archive-public-byte-verification-2026-09-26.json'
+archived=archive_path.exists() and load(archive_path.relative_to(ROOT).as_posix()).get('state')=='complete_all_12_public_byte_verified_and_inventory_reconciled'
 assert set(rows)==set(before)
-assert all(rows[rid]==before[rid] for rid in rows if rid!=DUP),'An unrelated or canonical inventory row changed'
+assert all(rows[rid]==before[rid] for rid in rows if rid!=DUP and not (archived and rid in ORDER)),'An unrelated or canonical inventory row changed'
 for field in ('source_url','direct_file_url','title','size_bytes','checksum_sha256','referring_urls','discovery_path','quality_assessment','scope_assessment'):
     assert rows[DUP][field]==before[DUP][field]
 assert rows[DUP]['status']=='duplicate' and rows[CANONICAL]['status']=='validated'
@@ -55,8 +57,9 @@ for r in m['records']:
         for block in iter(lambda:stream.read(1024*1024),b''):h.update(block)
     assert h.hexdigest()==r['checksum_sha256']==p['sha256']==row['checksum_sha256']
     assert r['page_count']==p['page_count']
-    assert row['status']=='approved for addition' and row['r2_key'] is None and row['r2_url'] is None
-    assert r['proposed_r2_key']==p['proposed_r2_key'] and r['proposed_r2_key'].casefold() not in keys
+    assert row['status']==('placement assigned' if archived else 'approved for addition')
+    assert (row['r2_key'],row['r2_url'])==((r['proposed_r2_key'],r['expected_public_archive_url']) if archived else (None,None))
+    assert r['proposed_r2_key']==p['proposed_r2_key'] and ((r['proposed_r2_key'].casefold() in keys) == archived)
     assert r['expected_public_archive_url']=='https://files.abqinfo.com/'+r['proposed_r2_key']
     checks=r['collision_checks']
     assert checks['exact_key_exists'] is False and checks['case_insensitive_key_exists'] is False
@@ -67,20 +70,20 @@ family=m['planning_impact_area_family']
 assert set(family['component_ids'])==set(ORDER[:4]) and len(family['component_ids'])==4
 assert family['complete_study_recovered'] is False and family['other_chapters_inferred'] is False and family['synthesized_pdf'] is False
 assert 'incomplete' in family['state'] and 'one grouped' in family['future_public_treatment']
-assert rows['src-99fe2201b73355c4']['status']=='approved for addition' and rows['src-99fe2201b73355c4']['checksum_sha256']!=SHA
+assert rows['src-99fe2201b73355c4']['status']==('placement assigned' if archived else 'approved for addition') and rows['src-99fe2201b73355c4']['checksum_sha256']!=SHA
 assert 'Barelas sector plan is unique' in load('project-state/discovery/approved-inventory-backlog-prioritization-post-later-ms4-2026-09-25.json')['ranked_units'][0]['placement']
 tool=m['tooling_readiness']
 assert tool['credentials_accessible'] and tool['twelve_default_limit_whatif_probes_passed'] and tool['public_verifier_ready']
 assert tool['max_object_bytes']==100000000 and tool['max_projected_storage_bytes']==10000000000 and tool['object_size_override_required'] is False
 assert tool['projected_storage_headroom_bytes']==659468832
-for artifact in (m,recon,prep['current_derived_state']):
+for artifact in (m,recon):
     assert artifact['r2_mutation'] is False and artifact['visitor_visible_content_changed'] is False
 counts=Counter(r['status'] for r in rows.values())
 assert {s:counts[s] for s in master['allowed_statuses']}==master['counts']==checkpoint['counts_by_status']
-assert counts['approved for addition']==39 and counts['duplicate']==1518
+assert counts['approved for addition']==(27 if archived else 39) and counts['duplicate']==1518
 historical='project-state/discovery/planning-documents-root-residual-decision-2026-09-20.json'
 assert (ROOT/historical).read_bytes()==baseline(historical),'Historical decision was rewritten'
-assert (ROOT/'project-state/r2-inventory.json').read_text(encoding='utf-8-sig').replace('\r\n','\n')==baseline('project-state/r2-inventory.json').decode('utf-8-sig').replace('\r\n','\n')
+if not archived: assert (ROOT/'project-state/r2-inventory.json').read_text(encoding='utf-8-sig').replace('\r\n','\n')==baseline('project-state/r2-inventory.json').decode('utf-8-sig').replace('\r\n','\n')
 for args in (['git','diff','--name-only',BASELINE,'--','content'],['git','ls-files','--others','--exclude-standard','content']):
     assert not subprocess.run(args,cwd=ROOT,capture_output=True,text=True,check=True).stdout.strip()
-print('Planning preflight: exact Barelas duplicate reconciled; 39 approved / 1518 duplicate; 12 originals / 122,249,326 bytes / 928 pages; normal-limit WhatIf passed; no R2/content mutation')
+print('Historical Planning preflight: exact Barelas duplicate reconciled; 39 approved / 1518 duplicate; 12 originals / 122,249,326 bytes / 928 pages; normal-limit WhatIf passed; no R2/content mutation')

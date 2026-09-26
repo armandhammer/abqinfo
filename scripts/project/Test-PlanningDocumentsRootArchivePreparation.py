@@ -27,6 +27,8 @@ d=read("project-state/discovery/planning-documents-root-residual-decision-2026-0
 inventory={r["id"]:r for r in read("project-state/master-inventory.json")["candidates"]}
 reconciliation_path=ROOT/'project-state/discovery/planning-documents-root-barelas-duplicate-reconciliation-2026-09-26.json'
 reconciled=reconciliation_path.exists() and read(reconciliation_path.relative_to(ROOT).as_posix()).get('state')=='reconciled_exact_duplicate'
+archive_path=ROOT/'project-state/discovery/planning-documents-root-archive-public-byte-verification-2026-09-26.json'
+archived=archive_path.exists() and read(archive_path.relative_to(ROOT).as_posix()).get('state')=='complete_all_12_public_byte_verified_and_inventory_reconciled'
 assert len(expected)==len(a["records"])==len(set(a["scope_candidate_ids"]))==13
 assert set(expected)==set(a["scope_candidate_ids"])=={r["id"] for r in a["records"]}
 assert sum(s for s,_,_ in expected.values())==a["summary"]["source_bytes_total"]==130968356
@@ -54,8 +56,8 @@ for r in a["records"]:
     assert r["page_count"]==r["pdf_qa"]["rendered_pages"]==pages
     assert r["pdf_qa"]["structural_result"]=="opens_without_password_or_repair" and r["pdf_qa"]["representative_visual_qa"].startswith("passed_")
     assert r["direct_file_url"]==row["direct_file_url"]==r["final_url"] and r["http_status"]==200 and not r["redirected"]
-    assert row["status"]==("duplicate" if reconciled and rid=="src-d9bf34830a9467e2" else "approved for addition") and row["scope_assessment"]["final_scope_decision"]=="passes_both_gates"
-    assert row["r2_key"] is None and row["r2_url"] is None
+    assert row["status"]==("duplicate" if reconciled and rid=="src-d9bf34830a9467e2" else "placement assigned" if archived else "approved for addition") and row["scope_assessment"]["final_scope_decision"]=="passes_both_gates"
+    assert (row["r2_key"],row["r2_url"]) == ((r["proposed_r2_key"],r["proposed_public_archive_url"]) if archived and rid!="src-d9bf34830a9467e2" else (None,None))
     assert not r["saved_key_collision"] and not r["live_key_collision"]
     if rid in family["component_ids"]:
         assert "incomplete" in r["presentation_treatment"] and "independent" in r["visitor_caveat"]
@@ -80,4 +82,4 @@ assert (a["r2_snapshot"]["live_read_only"]["objects"],a["r2_snapshot"]["live_rea
 for args in (["git","diff","--name-only",a["reviewed_baseline_commit"],"--","content"],["git","ls-files","--others","--exclude-standard","content"]):
     result=subprocess.run(args,cwd=ROOT,capture_output=True,text=True,check=True)
     assert not result.stdout.strip(),result.stdout
-print("Planning preparation: 13 exact PDFs, 130,968,356 bytes, 1,078 pages; 12 unique keys; Barelas exact duplicate " + ("reconciled" if reconciled else "awaiting reconciliation") + "; no content/R2 mutation")
+print("Planning preparation: 13 exact PDFs, 130,968,356 bytes, 1,078 pages; 12 unique keys; Barelas exact duplicate " + ("reconciled" if reconciled else "awaiting reconciliation") + "; historical preparation involved no content/R2 mutation")

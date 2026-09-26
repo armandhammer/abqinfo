@@ -66,8 +66,18 @@ def main() -> None:
     assert evidence['summary']['added_bytes'] == sum(SIZES) == 426926738
     assert evidence['before_r2']['object_count'] == 1231
     assert evidence['before_r2']['total_bytes'] == 8791355104
-    assert evidence['after_r2']['object_count'] == r2['object_count'] == 1237
-    assert evidence['after_r2']['total_bytes'] == r2['total_bytes'] == 9218281842
+    assert evidence['after_r2']['object_count'] == 1237
+    assert evidence['after_r2']['total_bytes'] == 9218281842
+    planning_path = ROOT / 'project-state/discovery/planning-documents-root-archive-public-byte-verification-2026-09-26.json'
+    if planning_path.exists():
+        planning = load(planning_path)
+        assert planning['state'] == 'complete_all_12_public_byte_verified_and_inventory_reconciled'
+        assert planning['before_r2']['object_count'] == 1237 and planning['before_r2']['total_bytes'] == 9218281842
+        assert planning['accounting']['pre_existing_objects_unchanged'] is True
+        assert r2['object_count'] == planning['after_r2']['object_count'] == 1249
+        assert r2['total_bytes'] == planning['after_r2']['total_bytes'] == 9340531168
+    else:
+        assert r2['object_count'] == 1237 and r2['total_bytes'] == 9218281842
     accounting = evidence['accounting']
     assert accounting['new_objects'] == 6 and accounting['new_bytes'] == 426926738
     assert accounting['pre_existing_object_count'] == 1231

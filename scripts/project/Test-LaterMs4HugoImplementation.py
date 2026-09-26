@@ -51,7 +51,14 @@ def main() -> None:
     assert implementation['r2_mutation'] is implementation['production_or_live'] is implementation['merge_or_deploy'] is False
     assert verified['state'] == 'complete_all_six_public_byte_verified_and_inventory_reconciled'
     assert verified['summary']['public_byte_verified'] == 6 and verified['summary']['added_bytes'] == 426926738
-    assert (r2['object_count'], r2['total_bytes']) == (1237, 9218281842)
+    planning_path=ROOT/'project-state/discovery/planning-documents-root-archive-public-byte-verification-2026-09-26.json'
+    if planning_path.exists():
+        planning=json.loads(planning_path.read_text(encoding='utf-8-sig'))
+        assert planning['state']=='complete_all_12_public_byte_verified_and_inventory_reconciled'
+        assert planning['accounting']['pre_existing_objects_unchanged'] is True
+        assert (r2['object_count'],r2['total_bytes'])==(1249,9340531168)
+    else:
+        assert (r2['object_count'], r2['total_bytes']) == (1237, 9218281842)
     assert tuple(int(y) for y in re.findall(r'City of Albuquerque MS4 Annual Report, FY (\d{4}) \(', section)) == YEARS
     assert section.count('EPA Middle Rio Grande Watershed-Based MS4 General Permit') == 1
     assert section.index('NMR04A000') < section.index('City of Albuquerque MS4 Annual Report, FY 2025')
