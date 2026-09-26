@@ -89,6 +89,12 @@ if planning_archive_path.exists():
     assert len(planning_archived_ids)==12 and 'src-d9bf34830a9467e2' not in planning_archived_ids
 from BackgroundArchiveCampaign import completed_originals
 campaign_archived=completed_originals()
+followup_folder = DISCOVERY / 'background-followup-2026-09-26'
+followup_archived = {}
+followup_baseline = {}
+if (followup_folder / 'archive-receipts.json').exists():
+    followup_archived = {r['id']: r for r in json.loads((followup_folder / 'archive-receipts.json').read_text(encoding='utf-8-sig')) if r['state'] == 'inventory_reconciled'}
+    followup_baseline = {r['id']: r for r in json.loads((followup_folder / 'baseline-records.json').read_text(encoding='utf-8'))}
 for record in records:
     assert set(record['scope_assessment']) == required
     candidate = by_id[record['id']]
@@ -107,8 +113,18 @@ for record in records:
     if record['id'] == barelas_reconciled_id:
         assert record['resulting_status'] == 'approved for addition'
         expected_status = 'duplicate'
+    if record['id'] in followup_archived:
+        receipt = followup_archived[record['id']]
+        original = followup_baseline[record['id']]
+        assert original['status'] == record['resulting_status'] == 'approved for addition'
+        assert original['scope_assessment'] == record['scope_assessment']
+        assert receipt['public_verification']['byte_identical']
+        assert (receipt['public_verification']['checksum_sha256'], receipt['public_verification']['size_bytes']) == (candidate['checksum_sha256'], candidate['size_bytes'])
+        assert set(candidate['scope_assessment']) == required and candidate['scope_assessment']['final_scope_decision'] == 'passes_both_gates'
+        expected_status = 'placement assigned'
     assert candidate['status'] == expected_status
-    assert candidate['scope_assessment'] == record['scope_assessment']
+    if record['id'] not in followup_archived:
+        assert candidate['scope_assessment'] == record['scope_assessment']
 for candidate in inventory['candidates']:
     if candidate['status'] == 'approved for addition':
         assessment = candidate.get('scope_assessment', {})

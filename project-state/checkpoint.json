@@ -1,27 +1,27 @@
 {
-  "recorded_at": "2026-09-26T22:47:54.3442231Z",
-  "completed_item_range": "Human-review reassessment: 139 automatic dispositions, 55 Codex research prerequisites, 11 owner records in four packages; three exact archives",
+  "recorded_at": "2026-09-26T23:37:10.942319Z",
+  "completed_item_range": "Background follow-up: 16 deterministic dispositions, 39 specific factual prerequisites, four unchanged owner packages; 16 exact archives",
   "total_candidates": 7137,
   "counts_by_status": {
-    "pending review": 388,
-    "approved for addition": 64,
+    "pending review": 372,
+    "approved for addition": 51,
     "downloading": 0,
     "downloaded": 0,
     "parsed": 0,
     "description drafted": 0,
-    "placement assigned": 347,
+    "placement assigned": 363,
     "implemented": 159,
     "validated": 1486,
-    "excluded": 2821,
+    "excluded": 2834,
     "duplicate": 1602,
     "superseded": 259,
     "blocked": 0,
     "requires human review": 11
   },
-  "remaining_nonterminal": 958,
+  "remaining_nonterminal": 945,
   "next_pending_id": "lin-2f6fbe4ffb0b6564",
   "blockers": [],
-  "resume_command": "Read CURRENT.md, the owner-only consolidated queue and separate Codex prerequisite queue. Do not repeat completed decisions or upload receipts; finish background validation/integration if its receipt is incomplete.",
+  "resume_command": "Read CURRENT.md and background-followup-2026-09-26 authorization, summary, validation and integration receipts. Preserve unresolved factual prerequisites and owner packages; do not repeat uploads.",
   "verification_campaign_totals": {
     "verified": 2194,
     "passed": 2070,
@@ -29849,5 +29849,15 @@
         }
       }
     }
-  ]
+  ],
+  "background_followup": {
+    "artifact": "project-state/discovery/background-followup-2026-09-26/summary.json",
+    "state": "validated_pending_background_integration",
+    "resolved": 16,
+    "unresolved": 39,
+    "archives": 16,
+    "added_r2_bytes": 14454680,
+    "validation_artifact": "project-state/discovery/background-followup-2026-09-26/validation-002.json",
+    "integration_artifact": null
+  }
 }
