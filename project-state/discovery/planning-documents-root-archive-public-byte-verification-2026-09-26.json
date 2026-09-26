@@ -1,0 +1,410 @@
+{
+  "schema_version": 1,
+  "artifact_type": "planning_documents_root_archive_public_byte_verification",
+  "started_at": "2026-09-26T15:22:34.4704725Z",
+  "state": "complete_all_12_public_byte_verified_and_inventory_reconciled",
+  "owner_authorization": "Owner explicitly authorized exactly the 12 unchanged originals and exact destination keys in the finalized 2026-09-26 preflight, followed by full public-byte verification. No content edits, overwrite, deletion, or Barelas duplicate upload authorized.",
+  "manifest_path": "project-state/discovery/planning-documents-root-r2-upload-preflight-2026-09-26.json",
+  "candidate_ids": [
+    "src-16b33375ffbddc62",
+    "src-1fa6ae851ddf282d",
+    "src-513fe9056bf9b34c",
+    "src-c54e59cd5c25282d",
+    "src-7de0f5803d442e8f",
+    "src-8740362a1b751e26",
+    "src-99fe2201b73355c4",
+    "src-afac0cf84867a22f",
+    "src-c87775c045d8acc4",
+    "src-eb0f4b39798d29df",
+    "src-f528ec2e0e955690",
+    "src-fb6e95610a43c7a4"
+  ],
+  "max_object_bytes": 100000000,
+  "max_projected_storage_bytes": 10000000000,
+  "before_r2": {
+    "object_count": 1237,
+    "total_bytes": 9218281842,
+    "generated_at": "2026-09-26T15:22:34.257608Z"
+  },
+  "pre_existing_manifest_sha256": "35a54e6682ea005ef39422de9f2570b7a4c27aea030ce776639ee307f2d212e8",
+  "baseline_reference": {
+    "repository_commit": "6f2f181a81e75dd95faac1c0bf2283176964824c",
+    "path": "project-state/r2-inventory.json",
+    "exact_match_to_saved": true
+  },
+  "initial_pre_upload_listing_local_path": "tmp/planning-documents-root-live-preupload-2026-09-26.json",
+  "source_guard": {
+    "all_12_staged_sizes_hashes_verified": true,
+    "aggregate_bytes": 122249326,
+    "aggregate_pages": 928,
+    "cross_inventory_same_hash_collisions": 0,
+    "credentials_accessible": true
+  },
+  "excluded_barelas_duplicate": {
+    "id": "src-d9bf34830a9467e2",
+    "canonical_id": "src-28418cab91a745a6",
+    "reconciliation_artifact": "project-state/discovery/planning-documents-root-barelas-duplicate-reconciliation-2026-09-26.json",
+    "size_bytes": 8719030,
+    "page_count": 150,
+    "reason": "already archived exact-byte canonical original; no second object or standalone entry"
+  },
+  "planning_impact_area_family": {
+    "component_ids": [
+      "src-16b33375ffbddc62",
+      "src-1fa6ae851ddf282d",
+      "src-513fe9056bf9b34c",
+      "src-c54e59cd5c25282d"
+    ],
+    "delivered_chapters": [
+      "1.0",
+      "3",
+      "5",
+      "8"
+    ],
+    "state": "incomplete City-delivered component set",
+    "future_public_treatment": "one grouped historical component set, never four independent entries",
+    "complete_study_recovered": false,
+    "other_chapters_inferred": false,
+    "synthesized_pdf": false
+  },
+  "upload_intents": [
+    {
+      "id": "src-16b33375ffbddc62",
+      "r2_key": "city-data/demographics/cabq-planning-impact-area-chapter-01-executive-summary.pdf",
+      "started_at": "2026-09-26T15:22:36.9461589Z",
+      "key_was_absent": true
+    },
+    {
+      "id": "src-1fa6ae851ddf282d",
+      "r2_key": "city-data/demographics/cabq-planning-impact-area-chapter-05.pdf",
+      "started_at": "2026-09-26T15:22:47.9330338Z",
+      "key_was_absent": true
+    },
+    {
+      "id": "src-513fe9056bf9b34c",
+      "r2_key": "city-data/demographics/cabq-planning-impact-area-chapter-08.pdf",
+      "started_at": "2026-09-26T15:22:57.3115885Z",
+      "key_was_absent": true
+    },
+    {
+      "id": "src-c54e59cd5c25282d",
+      "r2_key": "city-data/demographics/cabq-planning-impact-area-chapter-03.pdf",
+      "started_at": "2026-09-26T15:23:07.0319397Z",
+      "key_was_absent": true
+    },
+    {
+      "id": "src-7de0f5803d442e8f",
+      "r2_key": "public-works/city-facilities/cabq-electric-system-transmission-generation-facility-plan-2010-2020.pdf",
+      "started_at": "2026-09-26T15:23:16.0711531Z",
+      "key_was_absent": true
+    },
+    {
+      "id": "src-8740362a1b751e26",
+      "r2_key": "development-land-use/zoning-ido/cabq-planned-communities-criteria-policy-element-1991.pdf",
+      "started_at": "2026-09-26T15:23:26.7462233Z",
+      "key_was_absent": true
+    },
+    {
+      "id": "src-99fe2201b73355c4",
+      "r2_key": "development-land-use/area-sector-plans/cabq-barelas-sector-development-plan-2008.pdf",
+      "started_at": "2026-09-26T15:23:36.3462086Z",
+      "key_was_absent": true
+    },
+    {
+      "id": "src-afac0cf84867a22f",
+      "r2_key": "public-works/parks-recreation/cabq-bosque-action-plan-rio-grande-valley-state-park-1993.pdf",
+      "started_at": "2026-09-26T15:23:53.1052616Z",
+      "key_was_absent": true
+    },
+    {
+      "id": "src-c87775c045d8acc4",
+      "r2_key": "development-land-use/zoning-ido/cabq-h1-historic-old-town-zone-design-guidelines-1998.pdf",
+      "started_at": "2026-09-26T15:24:04.1117341Z",
+      "key_was_absent": true
+    },
+    {
+      "id": "src-eb0f4b39798d29df",
+      "r2_key": "development-land-use/zoning-ido/cabq-unser-boulevard-overlay-zone-complete-legislation.pdf",
+      "started_at": "2026-09-26T15:24:12.6962995Z",
+      "key_was_absent": true
+    },
+    {
+      "id": "src-f528ec2e0e955690",
+      "r2_key": "development-land-use/area-sector-plans/cabq-volcano-trails-sector-development-plan-enacted-package-2011.pdf",
+      "started_at": "2026-09-26T15:24:22.0641321Z",
+      "key_was_absent": true
+    },
+    {
+      "id": "src-fb6e95610a43c7a4",
+      "r2_key": "public-works/parks-recreation/cabq-major-public-open-space-facility-plan-1999.pdf",
+      "started_at": "2026-09-26T15:24:33.3065048Z",
+      "key_was_absent": true
+    }
+  ],
+  "results": [
+    {
+      "id": "src-16b33375ffbddc62",
+      "staged_path": "research/staging/planning-documents-root-archive-preparation-2026-09-25/src-16b33375ffbddc62-chapter1_2010.pdf",
+      "authoritative_source_url": "https://www.cabq.gov/planning/documents/chapter1_2010.pdf",
+      "official_source_page_url": "https://www.cabq.gov/planning/documents/chapter1_2010.pdf/view",
+      "size_bytes": 1340591,
+      "checksum_sha256": "673d90a0c41b2548f824aa50b248496e444f700aa3cf33d93d4d5524ad9c8930",
+      "page_count": 34,
+      "r2_key": "city-data/demographics/cabq-planning-impact-area-chapter-01-executive-summary.pdf",
+      "public_url": "https://files.abqinfo.com/city-data/demographics/cabq-planning-impact-area-chapter-01-executive-summary.pdf",
+      "upload_action": "uploaded_now",
+      "http_public_get": "passed",
+      "public_size_bytes": 1340591,
+      "public_checksum_sha256": "673d90a0c41b2548f824aa50b248496e444f700aa3cf33d93d4d5524ad9c8930",
+      "byte_identical": true,
+      "verified_at": "2026-09-26T15:22:45.5893758Z"
+    },
+    {
+      "id": "src-1fa6ae851ddf282d",
+      "staged_path": "research/staging/planning-documents-root-archive-preparation-2026-09-25/src-1fa6ae851ddf282d-chapter5_2010.pdf",
+      "authoritative_source_url": "https://www.cabq.gov/planning/documents/chapter5_2010.pdf",
+      "official_source_page_url": "https://www.cabq.gov/planning/documents/chapter5_2010.pdf/view",
+      "size_bytes": 1746980,
+      "checksum_sha256": "a60c5babe0cdca83937bcdb0086153d0024d92ff17896a68b89d44a0483f56f9",
+      "page_count": 76,
+      "r2_key": "city-data/demographics/cabq-planning-impact-area-chapter-05.pdf",
+      "public_url": "https://files.abqinfo.com/city-data/demographics/cabq-planning-impact-area-chapter-05.pdf",
+      "upload_action": "uploaded_now",
+      "http_public_get": "passed",
+      "public_size_bytes": 1746980,
+      "public_checksum_sha256": "a60c5babe0cdca83937bcdb0086153d0024d92ff17896a68b89d44a0483f56f9",
+      "byte_identical": true,
+      "verified_at": "2026-09-26T15:22:55.1250706Z"
+    },
+    {
+      "id": "src-513fe9056bf9b34c",
+      "staged_path": "research/staging/planning-documents-root-archive-preparation-2026-09-25/src-513fe9056bf9b34c-chapter8_2010.pdf",
+      "authoritative_source_url": "https://www.cabq.gov/planning/documents/chapter8_2010.pdf",
+      "official_source_page_url": "https://www.cabq.gov/planning/documents/chapter8_2010.pdf/view",
+      "size_bytes": 1028761,
+      "checksum_sha256": "d0d15d835381400a3c05092dfef8e473423c32acd6b4ffc6f8d548815096d661",
+      "page_count": 45,
+      "r2_key": "city-data/demographics/cabq-planning-impact-area-chapter-08.pdf",
+      "public_url": "https://files.abqinfo.com/city-data/demographics/cabq-planning-impact-area-chapter-08.pdf",
+      "upload_action": "uploaded_now",
+      "http_public_get": "passed",
+      "public_size_bytes": 1028761,
+      "public_checksum_sha256": "d0d15d835381400a3c05092dfef8e473423c32acd6b4ffc6f8d548815096d661",
+      "byte_identical": true,
+      "verified_at": "2026-09-26T15:23:04.4970988Z"
+    },
+    {
+      "id": "src-c54e59cd5c25282d",
+      "staged_path": "research/staging/planning-documents-root-archive-preparation-2026-09-25/src-c54e59cd5c25282d-chapter3_2010.pdf",
+      "authoritative_source_url": "https://www.cabq.gov/planning/documents/chapter3_2010.pdf",
+      "official_source_page_url": "https://www.cabq.gov/planning/documents/chapter3_2010.pdf/view",
+      "size_bytes": 1495629,
+      "checksum_sha256": "26fe18c4e274cd4384b83216c2436a0dc1724a3220a1e26894a7d98e2123942b",
+      "page_count": 38,
+      "r2_key": "city-data/demographics/cabq-planning-impact-area-chapter-03.pdf",
+      "public_url": "https://files.abqinfo.com/city-data/demographics/cabq-planning-impact-area-chapter-03.pdf",
+      "upload_action": "uploaded_now",
+      "http_public_get": "passed",
+      "public_size_bytes": 1495629,
+      "public_checksum_sha256": "26fe18c4e274cd4384b83216c2436a0dc1724a3220a1e26894a7d98e2123942b",
+      "byte_identical": true,
+      "verified_at": "2026-09-26T15:23:13.9588803Z"
+    },
+    {
+      "id": "src-7de0f5803d442e8f",
+      "staged_path": "research/staging/planning-documents-root-archive-preparation-2026-09-25/src-7de0f5803d442e8f-EFPwithsecurityCOABernco20102020.pdf",
+      "authoritative_source_url": "https://www.cabq.gov/planning/documents/EFPwithsecurityCOABernco20102020.pdf",
+      "official_source_page_url": "https://www.cabq.gov/planning/documents/EFPwithsecurityCOABernco20102020.pdf/view",
+      "size_bytes": 16542346,
+      "checksum_sha256": "60d4fd8f74ddfa5a250a50b1b5cae3ce3dbe8bf52f6b2008e5b6b8b07add1c38",
+      "page_count": 98,
+      "r2_key": "public-works/city-facilities/cabq-electric-system-transmission-generation-facility-plan-2010-2020.pdf",
+      "public_url": "https://files.abqinfo.com/public-works/city-facilities/cabq-electric-system-transmission-generation-facility-plan-2010-2020.pdf",
+      "upload_action": "uploaded_now",
+      "http_public_get": "passed",
+      "public_size_bytes": 16542346,
+      "public_checksum_sha256": "60d4fd8f74ddfa5a250a50b1b5cae3ce3dbe8bf52f6b2008e5b6b8b07add1c38",
+      "byte_identical": true,
+      "verified_at": "2026-09-26T15:23:24.666344Z"
+    },
+    {
+      "id": "src-8740362a1b751e26",
+      "staged_path": "research/staging/planning-documents-root-archive-preparation-2026-09-25/src-8740362a1b751e26-planned.pdf",
+      "authoritative_source_url": "https://www.cabq.gov/planning/documents/planned.pdf",
+      "official_source_page_url": "https://www.cabq.gov/planning/documents/planned.pdf/view",
+      "size_bytes": 7312527,
+      "checksum_sha256": "70a6a68c0d3870ec0fd8f93e73ab1e0ff1bd0d1698c7fe3d90e58070f26b26e2",
+      "page_count": 123,
+      "r2_key": "development-land-use/zoning-ido/cabq-planned-communities-criteria-policy-element-1991.pdf",
+      "public_url": "https://files.abqinfo.com/development-land-use/zoning-ido/cabq-planned-communities-criteria-policy-element-1991.pdf",
+      "upload_action": "uploaded_now",
+      "http_public_get": "passed",
+      "public_size_bytes": 7312527,
+      "public_checksum_sha256": "70a6a68c0d3870ec0fd8f93e73ab1e0ff1bd0d1698c7fe3d90e58070f26b26e2",
+      "byte_identical": true,
+      "verified_at": "2026-09-26T15:23:34.2036593Z"
+    },
+    {
+      "id": "src-99fe2201b73355c4",
+      "staged_path": "research/staging/planning-documents-root-archive-preparation-2026-09-25/src-99fe2201b73355c4-BARELASsdprpt806forprintcolor.pdf",
+      "authoritative_source_url": "https://www.cabq.gov/planning/documents/BARELASsdprpt806forprintcolor.pdf",
+      "official_source_page_url": "https://www.cabq.gov/planning/documents/BARELASsdprpt806forprintcolor.pdf/view",
+      "size_bytes": 49626419,
+      "checksum_sha256": "4c68c600323dd42171ab42d954008b6f30d0ad304b0ce20e43d05283a97d4d99",
+      "page_count": 168,
+      "r2_key": "development-land-use/area-sector-plans/cabq-barelas-sector-development-plan-2008.pdf",
+      "public_url": "https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-barelas-sector-development-plan-2008.pdf",
+      "upload_action": "uploaded_now",
+      "http_public_get": "passed",
+      "public_size_bytes": 49626419,
+      "public_checksum_sha256": "4c68c600323dd42171ab42d954008b6f30d0ad304b0ce20e43d05283a97d4d99",
+      "byte_identical": true,
+      "verified_at": "2026-09-26T15:23:50.8690349Z"
+    },
+    {
+      "id": "src-afac0cf84867a22f",
+      "staged_path": "research/staging/planning-documents-root-archive-preparation-2026-09-25/src-afac0cf84867a22f-BosqueActionPlanParksGeneralServices0193.pdf",
+      "authoritative_source_url": "https://www.cabq.gov/planning/documents/BosqueActionPlanParksGeneralServices0193.pdf",
+      "official_source_page_url": "https://www.cabq.gov/planning/documents/BosqueActionPlanParksGeneralServices0193.pdf/view",
+      "size_bytes": 15918465,
+      "checksum_sha256": "002ef0e4f24a5f09d9701dd2359b653e18d09b4b418d8112c896fd5fd5ebcc77",
+      "page_count": 105,
+      "r2_key": "public-works/parks-recreation/cabq-bosque-action-plan-rio-grande-valley-state-park-1993.pdf",
+      "public_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-bosque-action-plan-rio-grande-valley-state-park-1993.pdf",
+      "upload_action": "uploaded_now",
+      "http_public_get": "passed",
+      "public_size_bytes": 15918465,
+      "public_checksum_sha256": "002ef0e4f24a5f09d9701dd2359b653e18d09b4b418d8112c896fd5fd5ebcc77",
+      "byte_identical": true,
+      "verified_at": "2026-09-26T15:24:01.9326526Z"
+    },
+    {
+      "id": "src-c87775c045d8acc4",
+      "staged_path": "research/staging/planning-documents-root-archive-preparation-2026-09-25/src-c87775c045d8acc4-H1OldTownBufferZone032912.pdf",
+      "authoritative_source_url": "https://www.cabq.gov/planning/documents/H1OldTownBufferZone032912.pdf",
+      "official_source_page_url": "https://www.cabq.gov/planning/documents/H1OldTownBufferZone032912.pdf/view",
+      "size_bytes": 15409,
+      "checksum_sha256": "610913cb0fce2deff67a891986e1da515924fb2c4b3c0dfd373c574bae1051c4",
+      "page_count": 1,
+      "r2_key": "development-land-use/zoning-ido/cabq-h1-historic-old-town-zone-design-guidelines-1998.pdf",
+      "public_url": "https://files.abqinfo.com/development-land-use/zoning-ido/cabq-h1-historic-old-town-zone-design-guidelines-1998.pdf",
+      "upload_action": "uploaded_now",
+      "http_public_get": "passed",
+      "public_size_bytes": 15409,
+      "public_checksum_sha256": "610913cb0fce2deff67a891986e1da515924fb2c4b3c0dfd373c574bae1051c4",
+      "byte_identical": true,
+      "verified_at": "2026-09-26T15:24:10.4393319Z"
+    },
+    {
+      "id": "src-eb0f4b39798d29df",
+      "staged_path": "research/staging/planning-documents-root-archive-preparation-2026-09-25/src-eb0f4b39798d29df-UnserBlvdOverlayZoneCompleteLegislation.pdf",
+      "authoritative_source_url": "https://www.cabq.gov/planning/documents/UnserBlvdOverlayZoneCompleteLegislation.pdf",
+      "official_source_page_url": "https://www.cabq.gov/planning/documents/UnserBlvdOverlayZoneCompleteLegislation.pdf/view",
+      "size_bytes": 1969125,
+      "checksum_sha256": "da74a6536568142b82485e0753fe488358d589d6a5f0f689973c419669317f20",
+      "page_count": 5,
+      "r2_key": "development-land-use/zoning-ido/cabq-unser-boulevard-overlay-zone-complete-legislation.pdf",
+      "public_url": "https://files.abqinfo.com/development-land-use/zoning-ido/cabq-unser-boulevard-overlay-zone-complete-legislation.pdf",
+      "upload_action": "uploaded_now",
+      "http_public_get": "passed",
+      "public_size_bytes": 1969125,
+      "public_checksum_sha256": "da74a6536568142b82485e0753fe488358d589d6a5f0f689973c419669317f20",
+      "byte_identical": true,
+      "verified_at": "2026-09-26T15:24:19.8646246Z"
+    },
+    {
+      "id": "src-f528ec2e0e955690",
+      "staged_path": "research/staging/planning-documents-root-archive-preparation-2026-09-25/src-f528ec2e0e955690-VolcanoTrailsSDPFINALenacted2011.pdf",
+      "authoritative_source_url": "https://www.cabq.gov/planning/documents/VolcanoTrailsSDPFINALenacted2011.pdf",
+      "official_source_page_url": "https://www.cabq.gov/planning/documents/VolcanoTrailsSDPFINALenacted2011.pdf/view",
+      "size_bytes": 8976542,
+      "checksum_sha256": "7e1291301365c09fa76bd2c495aa0e563b2e6ce8e864458d5213ea343d449ad7",
+      "page_count": 82,
+      "r2_key": "development-land-use/area-sector-plans/cabq-volcano-trails-sector-development-plan-enacted-package-2011.pdf",
+      "public_url": "https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-volcano-trails-sector-development-plan-enacted-package-2011.pdf",
+      "upload_action": "uploaded_now",
+      "http_public_get": "passed",
+      "public_size_bytes": 8976542,
+      "public_checksum_sha256": "7e1291301365c09fa76bd2c495aa0e563b2e6ce8e864458d5213ea343d449ad7",
+      "byte_identical": true,
+      "verified_at": "2026-09-26T15:24:31.0505507Z"
+    },
+    {
+      "id": "src-fb6e95610a43c7a4",
+      "staged_path": "research/staging/planning-documents-root-archive-preparation-2026-09-25/src-fb6e95610a43c7a4-COAMPOSFP.pdf",
+      "authoritative_source_url": "https://www.cabq.gov/planning/documents/COAMPOSFP.pdf",
+      "official_source_page_url": "https://www.cabq.gov/planning/documents/COAMPOSFP.pdf/view",
+      "size_bytes": 16276532,
+      "checksum_sha256": "15ca95c5d9662e2984024c3b98c4e3824ae1bde53a82ac3d3a24c1ef1f6414a8",
+      "page_count": 153,
+      "r2_key": "public-works/parks-recreation/cabq-major-public-open-space-facility-plan-1999.pdf",
+      "public_url": "https://files.abqinfo.com/public-works/parks-recreation/cabq-major-public-open-space-facility-plan-1999.pdf",
+      "upload_action": "uploaded_now",
+      "http_public_get": "passed",
+      "public_size_bytes": 16276532,
+      "public_checksum_sha256": "15ca95c5d9662e2984024c3b98c4e3824ae1bde53a82ac3d3a24c1ef1f6414a8",
+      "byte_identical": true,
+      "verified_at": "2026-09-26T15:24:46.2826728Z"
+    }
+  ],
+  "summary": {
+    "intended": 12,
+    "uploaded_now": 12,
+    "already_completed": 0,
+    "public_byte_verified": 12,
+    "verified_bytes": 122249326,
+    "verified_pages": 928
+  },
+  "visitor_visible_content_changed": false,
+  "r2_mutation": true,
+  "after_r2": {
+    "object_count": 1249,
+    "total_bytes": 9340531168,
+    "generated_at": "2026-09-26T15:24:48.3841511Z",
+    "listing_local_path": "tmp/planning-documents-root-live-postupload-2026-09-26.json"
+  },
+  "accounting": {
+    "added_objects": 12,
+    "added_bytes": 122249326,
+    "pages": 928,
+    "pre_existing_objects_unchanged": true,
+    "pre_existing_manifest_sha256_before": "35a54e6682ea005ef39422de9f2570b7a4c27aea030ce776639ee307f2d212e8",
+    "pre_existing_manifest_sha256_after": "35a54e6682ea005ef39422de9f2570b7a4c27aea030ce776639ee307f2d212e8",
+    "unexpected_objects_added": false,
+    "overwrite_or_deletion_performed": false
+  },
+  "inventory_reconciled_ids": [
+    "src-16b33375ffbddc62",
+    "src-1fa6ae851ddf282d",
+    "src-513fe9056bf9b34c",
+    "src-c54e59cd5c25282d",
+    "src-7de0f5803d442e8f",
+    "src-8740362a1b751e26",
+    "src-99fe2201b73355c4",
+    "src-afac0cf84867a22f",
+    "src-c87775c045d8acc4",
+    "src-eb0f4b39798d29df",
+    "src-f528ec2e0e955690",
+    "src-fb6e95610a43c7a4"
+  ],
+  "r2_inventory_accounting": {
+    "saved_object_count": 1249,
+    "saved_total_bytes": 9340531168,
+    "live_object_count": 1249,
+    "live_total_bytes": 9340531168,
+    "saved_live_key_size_etag_match": true,
+    "records_updated": 12,
+    "inventory_status": "placement assigned"
+  },
+  "completed_at": "2026-09-26T15:28:29.8788372Z",
+  "validation": {
+    "recorded_at": "2026-09-26T15:33:38.543647+00:00",
+    "targeted_archive_preparation_duplicate_preflight_public_bytes_mission_scope": "passed",
+    "full_project_validation": "passed",
+    "hugo_build_and_existing_rendered_family_checks": "passed",
+    "git_diff_check": "passed",
+    "content_files_changed": false,
+    "r2_objects_outside_authorized_set_changed": false,
+    "local_validation_log": "tmp/planning-documents-root-archive-project-validation-2026-09-26.log"
+  }
+}
