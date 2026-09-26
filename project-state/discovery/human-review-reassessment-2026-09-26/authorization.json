@@ -7364,8 +7364,16 @@
     "blocked": 0,
     "requires human review": 205
   },
-  "state": "validated_pending_background_integration",
+  "state": "complete_background_reassessment",
   "maximum_object_bytes": 150000000,
   "maximum_storage_bytes": 13000000000,
-  "validation_artifact": "project-state/discovery/human-review-reassessment-2026-09-26/validation-002.json"
+  "validation_artifact": "project-state/discovery/human-review-reassessment-2026-09-26/validation-002.json",
+  "integration_artifact": "project-state/campaign-runtime/human-review-reassessment-2026-09-26/final-integration.json",
+  "integration_baseline_refs": {
+    "HEAD": "ba7a8747c46db28eac05bcb190dbef4be3d03d59",
+    "main": "ba7a8747c46db28eac05bcb190dbef4be3d03d59",
+    "chatgpt/planning-snapshot": "ba7a8747c46db28eac05bcb190dbef4be3d03d59",
+    "origin/main": "ba7a8747c46db28eac05bcb190dbef4be3d03d59",
+    "origin/chatgpt/planning-snapshot": "ba7a8747c46db28eac05bcb190dbef4be3d03d59"
+  }
 }
