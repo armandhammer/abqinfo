@@ -29,3 +29,5 @@ Read `AGENTS.md`, inspect branch/worktree, and query inventory selectively. Pres
 ## Validation and integration
 
 Campaign regression checks all 500 transitions, unchanged unrelated/gated rows, preserved provenance, exact aliases, archived public bytes, storage ceiling, no overwrite, saved/live equality, full-inventory audit and zero content changes. Full validation and background integration results are recorded in the campaign artifact. No content PR or deployment is part of this task.
+
+Full project validation passed, including Hugo and historical family regressions. Background PR [#181](https://github.com/armandhammer/abqinfo/pull/181) merged at `fa3e24b63b122ebf4257f7179d2cacc075ada9f8`; both project branches were reconciled to that merge. Integration closeout changes only these durable background records.
