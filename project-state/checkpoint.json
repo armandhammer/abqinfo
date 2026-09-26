@@ -1,15 +1,15 @@
 {
-  "recorded_at": "2026-09-26T20:00:59.2991883Z",
-  "completed_item_range": "Second large campaign in progress: 700 formerly pending resolutions; archives and remaining review tracked in project-state/discovery/ordinary-queue-second-large-resolution-campaign-2026-09-26.json",
+  "recorded_at": "2026-09-26T20:23:25.487454+00:00",
+  "completed_item_range": "Second large ordinary campaign complete: 700 resolutions preserved; 218 exact archives; 70 fully prepared deferrals; background only.",
   "total_candidates": 7137,
   "counts_by_status": {
     "pending review": 412,
-    "approved for addition": 94,
+    "approved for addition": 73,
     "downloading": 0,
     "downloaded": 0,
     "parsed": 0,
     "description drafted": 0,
-    "placement assigned": 248,
+    "placement assigned": 269,
     "implemented": 159,
     "validated": 1486,
     "excluded": 2696,
@@ -21,7 +21,7 @@
   "remaining_nonterminal": 913,
   "next_pending_id": "src-05ec421cb265b29a",
   "blockers": [],
-  "resume_command": "Resume second campaign evidence; no content changes; preserve all gates.",
+  "resume_command": "Campaign closed. Use the post-second-campaign ordinary queue for separately authorized bounded background work; preserve gates and storage ceiling.",
   "verification_campaign_totals": {
     "verified": 2194,
     "passed": 2070,
@@ -28650,5 +28650,24 @@
         }
       }
     }
-  ]
+  ],
+  "ordinary_second_large_campaign": {
+    "state": "complete_background_campaign",
+    "artifact": "project-state/discovery/ordinary-queue-second-large-resolution-campaign-2026-09-26.json",
+    "resolved_records": 700,
+    "objects_archived": 218,
+    "bytes_archived": 612424373,
+    "capacity_deferred_approvals": 69,
+    "object_size_deferred_approvals": 1,
+    "latest_r2": {
+      "object_count": 1510,
+      "total_bytes": 9999969313,
+      "remaining_headroom_bytes": 30687
+    },
+    "next_actionable_queue": "project-state/discovery/ordinary-queue-next-position-post-second-large-campaign-2026-09-26.json",
+    "ungated_pending_count": 88,
+    "visitor_visible_content_changed": false,
+    "validation": "full_project_validation_passed",
+    "integration": {}
+  }
 }
