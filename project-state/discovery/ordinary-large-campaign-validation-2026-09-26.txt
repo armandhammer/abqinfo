@@ -1,0 +1,137 @@
+PASS: 500 reviewed transitions; 13 exact public originals; protected and unrelated rows unchanged; no content changes.
+PASS: 27 approved originals / seven named generated outputs; 30 exact public archives; unchanged baseline objects and noncampaign inventory; no content changes.
+{
+  "Candidates": 7137,
+  "ContentUrls": 2718,
+  "InventoryPrimaryUrls": 7744,
+  "InventoryProvenanceUrls": 5151,
+  "SupportingIndexUrls": 74,
+  "Errors": 0,
+  "Messages": []
+}
+PASS: 1628 frozen historical records validate; new and changed records require positive scope in all 8 progress states.
+PASS: mission-scope audit reconciles the 86-record starting population, preserves one structured disposition per record, and ranks only the 58 positive-scope records.
+PASS: mission-scope-borderline queue is isolated from other human-review reasons and contains 0 unresolved record(s) within the 20-record cap.
+PASS: Add and Exclude persist final assessments and prior borderline history; research remains queued; reruns are byte-identical.
+PASS: Council checkpoint blocker update is idempotent.
+PASS: checkpoint counts equal authoritative master inventory; total=7137, remaining=1325, next=src-05ec421cb265b29a.
+PASS: project-state regeneration preserves durable metadata, restores DPM state, enforces the 28-record MS4 package, and is idempotent on a second pass.
+{"Path":"C:\\Users\\ben\\AppData\\Local\\Temp\\abqinfo-pr-body-d8105fee2b6c41d99cab8e56c47ff604\\valid.md","Result":"passed"}
+Pull-request description regression passed.
+{"applied": 3, "counts": {"pending review": 1, "duplicate": 1, "superseded": 1, "excluded": 1}, "next_pending_id": "canonical"}
+PASS: terminal duplicate and superseded decisions retain canonical provenance generically.
+PASS: all 18 saved NMDOT grant-administration decisions retain metadata, original containers, unresolved placement, and archive gates.
+PASS: NMDOT seven-record archive preparation preserves exact originals, source evidence, Roadway Studies placement, completed visual QA, and the external R2 gate without mutation.
+PASS: PGS has exactly 13 City originals, 109,212,492 source bytes, 652 previously rendered pages, and 13/13 exact public-byte-verified R2 objects with no content change.
+later-MS4 preparation: exact six IDs, 426,926,738 bytes, 5,917 rendered pages, collision-free, historical upload gate preserved
+later-MS4 R2 preflight: six exact staged originals, 426,926,738 bytes, historical no-mutation manifest preserved
+Planning preparation: 13 exact PDFs, 130,968,356 bytes, 1,078 pages; 12 unique keys; Barelas exact duplicate reconciled; historical preparation involved no content/R2 mutation
+PASS: 12 exact public-byte archives; 122,249,326 bytes / 928 pages; R2 1,249 / 9,340,531,168; only authorized inventory transitions; no content changes.
+Historical Planning preflight: exact Barelas duplicate reconciled; 39 approved / 1518 duplicate; 12 originals / 122,249,326 bytes / 928 pages; normal-limit WhatIf passed; no R2/content mutation
+later-MS4 archive: six exact public objects, 426,926,738 added bytes, R2 1,237 / 9,218,281,842, validated live
+PASS: Stormwater section has six exact archived/source pairs, ten annual reports in descending FY order, one permit context, and six validated live rows; no excluded or gated records.
+PASS: later-MS4 PR #174 production closeout has two HTTP 200 section checks, six validated originals, ten ordered reports, unchanged R2, and preserved exclusions.
+PASS: one PGS Citywide Growth Strategy section contains 13 ordered archive/City-source pairs, a complete Part 1 original, and a separate 12-file/11-chapter Part 2 series; all 13 records have the expected lifecycle status.
+PASS: PGS production closeout preserves 13 exact archived originals and 13 validated live inventory records.
+PASS: Municipal Development standard-form archive preparation retains exact source evidence, future-only placement, and external archive/publication gates.
+PASS: 18 settled Municipal Development records retain complete archive evidence; all public objects match saved bytes and ten agendas preserve their exact missing-minutes warning.
+PASS: MRA Appeal Form aliases remain bounded, excluded, provenance-preserving, and non-publication records.
+PASS: June 2025 fiber rulemaking family is bounded, provenance-preserving, and non-publication-safe.
+PASS: 2014 MS4 decision covers exactly one main body plus 27 attachments with saved exact-source evidence and no current archive/publication authorization.
+PASS: 2011 Capital Spending preparation preserves 67 originals in 21/46 compilations, validates PDF fidelity, and enforces the future two-entry page contract.
+PASS: 2009 decision preserves 24 components, four legal records, three UETF nonmembers, and the neutral Streets version treatment.
+PASS: 2007--2016 decision preserves 18 GO components, three individual records, and five impact-fee nonmembers.
+PASS: CCIP decision preserves six components, the Roadway member, later legal records, and the unresolved committee memorandum gate.
+PASS: Energy/Water map preserves 27 visible records across the six-cycle, 2009, 2007, legal, and independent-plan boundaries.
+PASS: six distinct Energy/Water election-cycle scopes remain ordered, verified, and proposed as one 25-page-source historical compilation.
+PASS: Capital Spending closeout covers five future compilation decisions, retained individual records, and the MS4 ordinary-queue skip.
+PASS: ordinary-queue-terminal-integration-batch-2026-09-19-councilor-district-3-6-web-pages.json retains 70 saved terminal inventory decisions.
+PASS: ordinary-queue-terminal-integration-batch-2026-09-19-municipaldevelopment-procurement.json retains 50 saved terminal inventory decisions.
+PASS: ordinary-queue-terminal-integration-batch-2026-09-19-parks-web-pages.json retains 38 saved terminal inventory decisions.
+PASS: ordinary-queue-terminal-integration-batch-2026-09-19.json retains 30 saved terminal inventory decisions.
+PASS: ordinary-queue-terminal-integration-batch-2026-09-20-council-amendment-sheets.json retains 25 saved terminal inventory decisions.
+PASS: ordinary-queue-terminal-integration-batch-2026-09-20-transit-openspace-nmdot-sustainability.json retains 44 saved terminal inventory decisions.
+{
+  "markdown_files": 40,
+  "allowed_nested_resource_pages": [
+    "transportation/bicycling/bike-plans.md",
+    "transportation/roadway-projects/studies.md",
+    "transportation/transportation-plans.md"
+  ],
+  "errors": []
+}
+{"passed":true,"rejected_missing_assessment":true,"rejected_unjustified_thin_record":true,"rejected_unreviewed_series":true,"accepted_substantial_record":true}
+{"generated_at":"2026-09-26T18:01:20.6593874Z","regression":"document-graph discovery, retained-source expansion, and outbound-host capture","passed":true,"checks":18,"errors":[]}
+{
+  "passed": true,
+  "tests": [
+    "deterministic-sharding-and-immutable-manifest",
+    "separate-detached-worktree-plan",
+    "incomplete-run-inspection",
+    "unique-create-once-worker-results",
+    "result-tamper-detection",
+    "stale-input-detection",
+    "shard-overlap-detection",
+    "single-writer-dry-run",
+    "repository-wide-writer-contention",
+    "accepted-apply-through-update-candidate"
+  ],
+  "test_count": 10
+}
+Preparing worktree (detached HEAD f75bb01)
+Preparing worktree (detached HEAD f75bb01)
+{
+  "passed": true,
+  "test_count": 18,
+  "tests": [
+    "strictmode-http-error-without-response",
+    "immutable-deterministic-campaign",
+    "cross-campaign-overlap-detection",
+    "detached-lane-worktree-plan",
+    "detached-lane-worktree-provision-json",
+    "active-pointer-and-derived-status",
+    "interrupt-before-and-during-verification",
+    "atomic-publication-ignores-orphaned-temporary-file",
+    "candidate-and-batch-resumption",
+    "lease-contention-expiry-stale-and-provider-takeover",
+    "tamper-and-within-campaign-overlap-detection",
+    "master-controlled-ambiguity-decision",
+    "crash-safe-idempotent-single-writer-integration",
+    "receipt-replay-after-inventory-reversion",
+    "coordinator-lease-blocks-other-shared-state-writers",
+    "coordinator-lease-blocks-successor-creation",
+    "autonomous-completion-escalation-and-successor-rollover",
+    "completed-campaign-without-successor-returns-clean-terminal-result"
+  ]
+}
+{
+  "EligibleSources": 601,
+  "QueueRecords": 601,
+  "Missing": 0,
+  "Errors": []
+}
+Start building sites … 
+hugo v0.164.0-ce2470e7012b5ab5fc4e10ebe4027e9f8d9e00dc+extended windows/amd64 BuildDate=2026-07-06T16:39:30Z VendorInfo=gohugoio
+
+WARN  deprecated: .Site.LanguageCode was deprecated in Hugo v0.158.0 and will be removed in a future release. Use .Site.Language.Locale instead.
+WARN  deprecated: .Language.LanguageDirection was deprecated in Hugo v0.158.0 and will be removed in a future release. Use .Language.Direction instead.
+
+                  │ EN 
+──────────────────┼────
+ Pages            │ 57 
+ Paginator pages  │  0 
+ Non-page files   │  0 
+ Static files     │ 70 
+ Processed images │  0 
+ Aliases          │  0 
+ Cleaned          │  0 
+
+Total in 280 ms
+PASS: rendered Area & Sector Plans page has one PGS H2, one ordered Part 2 list, and 13 exact archive/City source link pairs.
+PASS: rendered Stormwater section has its anchor, 13 list entries, ten descending annual reports, and six exact archive/source pairs.
+{
+  "Hugo": "passed",
+  "ExternalLinksChecked": false,
+  "BrokenLinks": 0,
+  "Broken": []
+}

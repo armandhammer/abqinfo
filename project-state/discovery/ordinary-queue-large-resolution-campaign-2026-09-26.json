@@ -5931,7 +5931,13 @@
   "hard_cap_formerly_pending": 500,
   "visitor_visible_content_changed": false,
   "content_tree_baseline": "4ed0004a289935e26c9d664cf335ab059121a0ce",
-  "integration": {},
+  "integration": {
+    "logical_checkpoint_commits": [
+      "b3edc78",
+      "0d946b4",
+      "f75bb01"
+    ]
+  },
   "latest_r2": {
     "object_count": 1292,
     "total_bytes": 9387544940
@@ -5992,5 +5998,26 @@
   "remaining_queue_artifact": "project-state/discovery/ordinary-queue-next-position-post-large-campaign-2026-09-26.json",
   "integrity_audit_artifact": "project-state/discovery/inventory-exact-identity-integrity-audit-2026-09-26.json",
   "completed_at": "2026-09-26T17:57:17.649476+00:00",
-  "validation_result": "pending_full_validation"
+  "validation_result": "passed_full_project_validation_and_supplemental_campaign_regression",
+  "validation": {
+    "command": "pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/project/Invoke-ProjectValidation.ps1",
+    "exit_code": 0,
+    "recorded_at": "2026-09-26T18:02:35.161403+00:00",
+    "log_artifact": "project-state/discovery/ordinary-large-campaign-validation-2026-09-26.txt",
+    "log_sha256": "6e000d37bae1f692984825e8325db2a1c1d41d77dc9bfbe7477d68c1327f92b4",
+    "git_diff_check": "passed",
+    "content_tree_unchanged": true,
+    "supplemental_campaign_regression": "passed after boolean metadata normalization and final accounting assertions",
+    "hugo": "passed; existing language property deprecation warnings only"
+  },
+  "queue_accounting": {
+    "starting_pending": 1612,
+    "gated_or_deprioritized_pending": 297,
+    "initial_high_confidence_selected_candidates": 614,
+    "initial_candidate_families": 225,
+    "final_pending": 1112,
+    "final_gated_or_deprioritized_pending": 297,
+    "final_structurally_blocked": 1,
+    "final_other_ungated_pending": 814
+  }
 }

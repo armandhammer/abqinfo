@@ -15,9 +15,7 @@ def historical_r2(current):
     for o in baseline['objects']:
         assert all(actual[o['key']][f]==o[f] for f in ('key','size_bytes','etag')),o['key']
     return baseline
-def historical_inventory(current):
-    d=campaign()
-    if not d:return current
+def ordinary_baseline_inventory(current):
     ordinary_path=ROOT/'project-state/discovery/ordinary-queue-large-resolution-campaign-2026-09-26.json'
     if ordinary_path.exists():
         ordinary=json.loads(ordinary_path.read_text(encoding='utf-8-sig'))
@@ -30,7 +28,13 @@ def historical_inventory(current):
         # The ordinary campaign's dedicated regression checks each current
         # transition and archive. Keep this earlier campaign's original exact
         # completion contract against its immutable post-merge snapshot.
-        current=completed
+        return completed
+    return current
+
+def historical_inventory(current):
+    d=campaign()
+    if not d:return current
+    current=ordinary_baseline_inventory(current)
     prior=json.loads(subprocess.check_output(['git','show',d['baseline_git_sha']+':project-state/master-inventory.json'],cwd=ROOT).decode('utf-8-sig'))
     before={r['id']:r for r in prior['candidates']}; permitted=set(completed_originals())
     assert {r['id'] for r in current['candidates'] if r!=before[r['id']]}<=permitted

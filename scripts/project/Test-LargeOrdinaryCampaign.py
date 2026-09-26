@@ -9,6 +9,7 @@ d=load(CAMPAIGN);s=load(SELECTION);inv=load(ROOT/'project-state/master-inventory
 resolved={r['id']:r for r in d['resolved_records']}
 assert len(resolved)==len(d['resolved_records'])<=500
 assert len(rows)==len(prior)==7137 and s['total_pending_population']==1612
+assert all(isinstance(q['actionable'],bool) for q in s['all_pending_records'])
 assert set(resolved).isdisjoint(s['excluded_gated_pending_ids'])
 assert {i for i in rows if rows[i]!=prior[i]}==set(resolved),'Unexpected inventory change or missing campaign accounting'
 for i in rows.keys()-resolved.keys():assert rows[i]==prior[i]
@@ -60,7 +61,19 @@ assert not subprocess.check_output(['git','ls-files','--others','--exclude-stand
 assert subprocess.check_output(['git','rev-parse','HEAD:content'],cwd=ROOT,text=True).strip()==d['content_tree_baseline']
 if d['state']=='complete_background_campaign':
     assert len(resolved)==500 and sum(f['complete'] for f in d['families_processed'])>=20
-    assert d['accounting']['resolved_records']==500
+    a=d['accounting']
+    assert a['resolved_records']==500 and a['families_completed']==201 and a['families_attempted']==202
+    assert a['outcomes']=={'approved for addition':13,'duplicate':23,'excluded':464}
+    assert a['outcomes']==dict(collections.Counter(r['decision'] for r in resolved.values()))
+    assert a['new_human_review']==a['new_borderlines']==a['capacity_deferred']==0
+    assert a['archive_prepared']==a['objects_archived']==a['placement_assigned_transitions']==len(added)==13
+    assert a['bytes_archived']==sum(x['size_bytes'] for x in added.values())==17230744
+    assert a['exact_source_files_reviewed']==96 and a['exact_source_bytes_reviewed']==169833087
+    assert a['pdf_pages_reviewed']==1334 and a['pages_rendered']==359
+    assert a['html_records_resolved_using_saved_full_GET']==404 and a['current_source_health_samples']==173
+    assert {r['id'] for r in d['deferred_records']}=={'src-48c77cfd3533626b'}
+    assert all(rows[r['id']]==prior[r['id']] for r in d['deferred_records'])
+    assert d['final_r2']=={'object_count':1292,'total_bytes':9387544940,'storage_headroom_bytes':612455060}
     assert d['final_inventory_counts']==inv['counts']
     final=load(ROOT/d['final_live_listing_artifact']);assert final['objects']==current['objects']
     audit=load(DISC/f'inventory-exact-identity-integrity-audit-{DATE}.json')
