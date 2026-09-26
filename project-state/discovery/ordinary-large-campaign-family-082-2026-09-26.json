@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_large_campaign_family_evidence",
+  "family_id": "family-082",
+  "family": "riometro.org/431",
+  "scope_ids": [
+    "src-72b6ceaa43200309"
+  ],
+  "methods": "Saved full-document research reused; every static source fresh full GET checked by exact size/hash; PDF text extracted from every page, opening/middle/ending rendered; all pages rendered for approval candidates and short files. HTML uses saved full-GET evidence with current source-health sampling.",
+  "records": [
+    {
+      "id": "src-72b6ceaa43200309",
+      "source_qa": "saved_full_GET_container_and_content_analysis_reused",
+      "saved_evidence": {
+        "id": "src-72b6ceaa43200309",
+        "authoritative_url": "https://riometro.org/431/Safety-Reporting-Database",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "HTML",
+        "leading_bytes": "0d0a3c21",
+        "http_status": "200",
+        "inventory_title": "Safety Reporting Database",
+        "size_bytes": 101229,
+        "checksum_sha256": "2bf49e0a661d252b4b9fd7e68cc0ac0312c6297019f94f397228c9a0c5434300",
+        "title_for_reference": "Web page: riometro.org/431/Safety-Reporting-Database",
+        "what_it_is": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+        "category": "live web page",
+        "package": "web_pages"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/final-sweep-cluster-research-2026-09-13.json"
+      ],
+      "disposition": "excluded",
+      "rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+      "quality_assessment": {
+        "measured_container": "HTML",
+        "measured_size_bytes": 101229,
+        "saved_sha256": "2bf49e0a661d252b4b9fd7e68cc0ac0312c6297019f94f397228c9a0c5434300",
+        "actual_function": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "standalone_public_value": "No separate static record: the saved review identifies a navigation, contact, directory, general live information or news delivery rather than an original plan, report, regulation or dataset. Retained document links and meaningful live services remain independently reviewable.",
+        "intended_publication_form": "none; excluded crawler row",
+        "visual_inspection": "not applicable to live HTML candidate; no static original"
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T17:30:58.835532+00:00",
+        "geographic_institutional_scope": "riometro.org",
+        "specific_albuquerque_connection": "City/local agency live information or navigation candidate; origin alone does not establish useful separate archival record.",
+        "abqinfo_public_information_value": "The specific candidate function recorded in saved evidence supplies no independent archival public-information value beyond the originating live page.",
+        "general_context_exclusion_test": "The source is retained for discovery; no distinct substantive archival document or qualifying interactive public dataset is established by this row.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate."
+      },
+      "archival_readiness": "not eligible: excluded HTML discovery/navigation row",
+      "proposed_canonical_page": null,
+      "review_complete": true
+    }
+  ],
+  "visitor_visible_content_changed": false,
+  "source_health_sample": {
+    "http_status": 200,
+    "requested_url": "https://riometro.org/431/Safety-Reporting-Database",
+    "final_url": "https://riometro.org/431/Safety-Reporting-Database",
+    "content_type": "text/html; charset=utf-8",
+    "verified_at": "2026-09-26T17:30:59.934574+00:00",
+    "size_bytes": 101246,
+    "checksum_sha256": "ef3b2df5af9fe55310ae6027cffcc049b05d7e3077dbbd19587cf349628196a6",
+    "leading_bytes": "0d0a3c21444f43545950452068746d6c"
+  },
+  "state": "reviewed_decisions_ready_for_inventory"
+}

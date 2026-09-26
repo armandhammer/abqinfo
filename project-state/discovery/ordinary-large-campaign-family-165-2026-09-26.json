@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ordinary_large_campaign_family_evidence",
+  "family_id": "family-165",
+  "family": "www.mrcog-nm.gov/590",
+  "scope_ids": [
+    "src-92d0cf35b7981e48"
+  ],
+  "methods": "Saved full-document research reused; every static source fresh full GET checked by exact size/hash; PDF text extracted from every page, opening/middle/ending rendered; all pages rendered for approval candidates and short files. HTML uses saved full-GET evidence with current source-health sampling.",
+  "records": [
+    {
+      "id": "src-92d0cf35b7981e48",
+      "source_qa": "saved_full_GET_container_and_content_analysis_reused",
+      "saved_evidence": {
+        "id": "src-92d0cf35b7981e48",
+        "authoritative_url": "https://www.mrcog-nm.gov/590/New-Mexico-Rail-Runner-Express-Newslette",
+        "recommended_status": "excluded",
+        "link_check": "HTTP 200 verified 2026-09-13 by full GET unless the row says otherwise; size_bytes and checksum_sha256 measured from the fetched bytes. Container verified by leading bytes: five distinct byte signatures in this lane are HTML.",
+        "content_kind": "HTML",
+        "leading_bytes": "3c21444f",
+        "http_status": "200",
+        "inventory_title": "New Mexico Rail Runner Express Newsletter",
+        "size_bytes": 37236,
+        "checksum_sha256": "5c87b44b8c7083aaec343707dc16b14a3369ed00b01dc594b55bd0a361285274",
+        "title_for_reference": "Web page: www.mrcog-nm.gov/590/New-Mexico-Rail-Runner-Express-Newslette",
+        "what_it_is": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "exclusion_reason": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+        "category": "live web page",
+        "package": "web_pages"
+      },
+      "source_provenance_artifacts": [
+        "project-state/discovery/final-sweep-cluster-research-2026-09-13.json"
+      ],
+      "disposition": "excluded",
+      "rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate.",
+      "quality_assessment": {
+        "measured_container": "HTML",
+        "measured_size_bytes": 37236,
+        "saved_sha256": "5c87b44b8c7083aaec343707dc16b14a3369ed00b01dc594b55bd0a361285274",
+        "actual_function": "A live page on a City, NMDOT, MRCOG or Rio Metro website.",
+        "standalone_public_value": "No separate static record: the saved review identifies a navigation, contact, directory, general live information or news delivery rather than an original plan, report, regulation or dataset. Retained document links and meaningful live services remain independently reviewable.",
+        "intended_publication_form": "none; excluded crawler row",
+        "visual_inspection": "not applicable to live HTML candidate; no static original"
+      },
+      "mission_scope_assessment": {
+        "assessed_at": "2026-09-26T17:35:11.994021+00:00",
+        "geographic_institutional_scope": "www.mrcog-nm.gov",
+        "specific_albuquerque_connection": "City/local agency live information or navigation candidate; origin alone does not establish useful separate archival record.",
+        "abqinfo_public_information_value": "The specific candidate function recorded in saved evidence supplies no independent archival public-information value beyond the originating live page.",
+        "general_context_exclusion_test": "The source is retained for discovery; no distinct substantive archival document or qualifying interactive public dataset is established by this row.",
+        "final_scope_decision": "excluded",
+        "substantive_rationale": "Not a static document. The URL returns HTML, and there is no original file to archive. The archive has settled this class repeatedly, excluding navigation, pagination, contact, or generic interface text captured as a candidate."
+      },
+      "archival_readiness": "not eligible: excluded HTML discovery/navigation row",
+      "proposed_canonical_page": null,
+      "review_complete": true
+    }
+  ],
+  "visitor_visible_content_changed": false,
+  "source_health_sample": {
+    "http_status": 200,
+    "requested_url": "https://www.mrcog-nm.gov/590/New-Mexico-Rail-Runner-Express-Newslette",
+    "final_url": "https://visitor.r20.constantcontact.com/manage/optin?v=001RgvbKVLa7a75waO9a2LzuaH5EW0mdquuxPC6BChJQrhbXZjzjgww_77FQAi2niwg93yFKtTK9t8vQrBHmeMUJKdCpG0t-0aztaWVYryyAL4mWfEAwDoAyjm2iniARB1hg0IuQqtI26aEAPi_bTYb51RQ1df4zvT6",
+    "content_type": "text/html;charset=UTF-8",
+    "verified_at": "2026-09-26T17:35:13.382592+00:00",
+    "size_bytes": 37237,
+    "checksum_sha256": "353d29420bc1c3da93e440cd752996d0e9b38e8defa8b11124d1721c9219e883",
+    "leading_bytes": "3c21444f43545950452048544d4c2050"
+  },
+  "state": "reviewed_decisions_ready_for_inventory"
+}

@@ -66,11 +66,12 @@ def inspect(q):
     return dict(id=rid,saved_evidence=r,source_provenance_artifacts=q['research_artifacts'],fresh_source_qa=qa,disposition=r['recommended_status'],rationale=r.get('exclusion_reason') or r.get('relationship') or r.get('description'),canonical_candidate_id=r.get('canonical_id'),quality_assessment={'visual_inspection':'pending','actual_function':'pending full text and rendered-page review','measured_page_count':qa['page_count'],'measured_word_count':qa.get('word_count'),'intended_publication_form':'no publication in this campaign; original preserved if approved'},mission_scope_assessment=None,archival_readiness='pending source/content/duplicate/mission review',proposed_canonical_page=r.get('proposed_canonical_page'))
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--start',type=int,default=1);parser.add_argument('--end',type=int,default=999);a=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--start',type=int,default=1);parser.add_argument('--end',type=int,default=999);parser.add_argument('--families');a=parser.parse_args()
     s=load(SELECTION);qs={q['id']:q for q in s['all_pending_records']};d=load(CAMPAIGN)
     STAGE.mkdir(parents=True,exist_ok=True);QA.mkdir(parents=True,exist_ok=True)
     for f in s['candidate_families']:
         if not a.start<=f['order']<=a.end:continue
+        if a.families and f['order'] not in {int(x) for x in a.families.split(',')}:continue
         path=DISC/f"ordinary-large-campaign-{f['family_id']}-{DATE}.json"
         existing=load(path) if path.exists() else dict(schema_version=1,artifact_type='ordinary_large_campaign_family_evidence',family_id=f['family_id'],family=f['family'],scope_ids=f['candidate_ids'],methods='Saved full-document research reused; every static source fresh full GET checked by exact size/hash; PDF text extracted from every page, opening/middle/ending rendered; all pages rendered for approval candidates and short files. HTML uses saved full-GET evidence with current source-health sampling.',records=[],visitor_visible_content_changed=False)
         complete={r['id'] for r in existing['records']}

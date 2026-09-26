@@ -17,7 +17,14 @@ assert d['visitor_visible_content_changed'] is False
 assert d['project_storage_limit_bytes']==10000000000
 assert d['capacity_plan']==locked['capacity_plan']
 baseline_inventory=git_json(d['baseline_git_sha'],'project-state/master-inventory.json')
-inventory=load('project-state/master-inventory.json');rows={r['id']:r for r in inventory['candidates']};prior={r['id']:r for r in baseline_inventory['candidates']}
+# Preserve this completed campaign's exact historical contract. The ordinary
+# campaign regression separately checks every current row against this snapshot,
+# its complete R2 delta and all protected boundaries; no old invariant is relaxed.
+ordinary_path='project-state/discovery/ordinary-queue-large-resolution-campaign-2026-09-26.json'
+ordinary=load(ordinary_path) if (ROOT/ordinary_path).exists() else None
+if ordinary:assert ordinary['baseline_commit']=='b8a52bbdef5f78599187b1020d1f10b65c1a17b4'
+historical=lambda path:git_json(ordinary['baseline_commit'],path) if ordinary else load(path)
+inventory=historical('project-state/master-inventory.json');rows={r['id']:r for r in inventory['candidates']};prior={r['id']:r for r in baseline_inventory['candidates']}
 assert len(rows)==len(prior)==7137
 assert {r['id'] for r in baseline_inventory['candidates'] if r['status']=='approved for addition'}=={r['id'] for r in d['records']}
 counts=Counter(r['status'] for r in rows.values());assert {s:counts[s] for s in inventory['allowed_statuses']}==inventory['counts']
@@ -66,7 +73,7 @@ for r in d['records']+d['generated_packages']:
         assert r['outcome']=='prepared_unuploaded_unresolved_archive_namespace'
         assert rows[r['id']]==prior[r['id']]
     else:assert d['state']!='complete_background_campaign',r['id']
-baseline=load(d['baseline_r2_artifact']);current=load('project-state/r2-inventory.json');objects={o['key']:o for o in current['objects']};old={o['key']:o for o in baseline['objects']}
+baseline=load(d['baseline_r2_artifact']);current=historical('project-state/r2-inventory.json');objects={o['key']:o for o in current['objects']};old={o['key']:o for o in baseline['objects']}
 assert (len(old),baseline['total_bytes'])==(1249,9340531168)
 for k,o in old.items():assert all(objects[k][f]==o[f] for f in ('key','size_bytes','etag'))
 assert set(objects)-set(old)=={r['r2_key'] for r in verified}
@@ -82,7 +89,7 @@ if d['state']=='complete_background_campaign':
     assert counts['approved for addition']==3 and counts['placement assigned']==38
     assert d['accounting']['pre_existing_objects_unchanged'] and d['accounting']['saved_live_key_size_etag_match']
     final=load(d['final_live_listing_artifact']);assert current['objects']==final['objects']
-    checkpoint=load('project-state/checkpoint.json');assert checkpoint['counts_by_status']==inventory['counts']
+    checkpoint=historical('project-state/checkpoint.json');assert checkpoint['counts_by_status']==inventory['counts']
     dpm=checkpoint['dpm_annual_consolidation']
     assert dpm['state']=='corrected_packets_partially_archived_2018_human_review_deferred'
     assert [(p['year'],p['archive_outcome']) for p in dpm['packets']]==[(2014,'archive_complete'),(2015,'archive_complete'),(2016,'archive_complete'),(2017,'archive_complete'),(2018,'deferred_human_review')]
