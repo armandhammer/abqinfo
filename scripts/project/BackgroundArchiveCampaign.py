@@ -1,0 +1,24 @@
+"""Evidence helpers for historical regressions after authorized archive progress."""
+import json,subprocess
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[2]
+PATH=ROOT/'project-state/discovery/approved-backlog-background-archive-campaign-2026-09-26.json'
+def campaign(): return json.loads(PATH.read_text(encoding='utf-8-sig')) if PATH.exists() else None
+def completed_originals():
+    d=campaign()
+    return {r['id']:r for r in d['records'] if r.get('inventory_reconciled') and r['outcome']=='archive_complete' and r['public_verification']['byte_identical']} if d else {}
+def historical_r2(current):
+    d=campaign()
+    if not d:return current
+    baseline=json.loads((ROOT/d['baseline_r2_artifact']).read_text(encoding='utf-8-sig'))
+    actual={o['key']:o for o in current['objects']}
+    for o in baseline['objects']:
+        assert all(actual[o['key']][f]==o[f] for f in ('key','size_bytes','etag')),o['key']
+    return baseline
+def historical_inventory(current):
+    d=campaign()
+    if not d:return current
+    prior=json.loads(subprocess.check_output(['git','show',d['baseline_git_sha']+':project-state/master-inventory.json'],cwd=ROOT).decode('utf-8-sig'))
+    before={r['id']:r for r in prior['candidates']}; permitted=set(completed_originals())
+    assert {r['id'] for r in current['candidates'] if r!=before[r['id']]}<=permitted
+    return prior

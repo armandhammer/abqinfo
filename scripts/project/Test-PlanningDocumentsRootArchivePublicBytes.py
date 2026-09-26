@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Exact authorized archive identities, lifecycle, and complete R2 accounting."""
 import json, subprocess
+from BackgroundArchiveCampaign import historical_inventory, historical_r2
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
 BASE='6f2f181a81e75dd95faac1c0bf2283176964824c'
@@ -15,7 +16,10 @@ assert ids=={r['id'] for r in a['results']}==set(a['inventory_reconciled_ids'])
 assert len(a['results'])==12 and a['summary']['public_byte_verified']==12
 assert sum(r['size_bytes'] for r in a['results'])==122249326
 assert sum(r['page_count'] for r in a['results'])==928
-rows={r['id']:r for r in load('project-state/master-inventory.json')['candidates']}
+current_inventory=load('project-state/master-inventory.json')
+snapshot_inventory=historical_inventory(current_inventory)
+rows={r['id']:r for r in snapshot_inventory['candidates']}
+assert all(next(r for r in current_inventory['candidates'] if r['id']==rid)==rows[rid] for rid in ids)
 before={r['id']:r for r in old('project-state/master-inventory.json')['candidates']}
 assert {rid for rid in rows if rows[rid]!=before[rid]}==ids
 allowed={'status','r2_key','r2_url','r2_etag','r2_last_modified','local_path','processing_notes','validation_status','updated_at'}
@@ -31,7 +35,7 @@ for r in a['results']:
     assert {k for k in row if row[k]!=before[r['id']][k]}<=allowed
     assert row['scope_assessment']['final_scope_decision']=='passes_both_gates'
     assert r['authoritative_source_url']==row['direct_file_url']
-r2=load('project-state/r2-inventory.json'); b=old('project-state/r2-inventory.json')
+r2=historical_r2(load('project-state/r2-inventory.json')); b=old('project-state/r2-inventory.json')
 objects={o['key']:o for o in r2['objects']}; prior={o['key']:o for o in b['objects']}
 assert len(objects)==r2['object_count']==1249 and sum(o['size_bytes'] for o in objects.values())==r2['total_bytes']==9340531168
 assert len(prior)==1237 and b['total_bytes']==9218281842

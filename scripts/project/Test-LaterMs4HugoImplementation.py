@@ -29,7 +29,8 @@ def main() -> None:
     verified = load(DISCOVERY / 'later-ms4-archive-public-byte-verification-2026-09-25.json')
     gate = load(DISCOVERY / '2014-ms4-family-package-gate-2026-09-18.json')
     inventory = {r['id']: r for r in load(ROOT / 'project-state/master-inventory.json')['candidates']}
-    r2 = load(ROOT / 'project-state/r2-inventory.json')
+    from BackgroundArchiveCampaign import historical_r2
+    r2 = historical_r2(load(ROOT / 'project-state/r2-inventory.json'))
     closeout_path = DISCOVERY / 'later-ms4-production-closeout-2026-09-25.json'
     closeout = load(closeout_path) if closeout_path.exists() else None
     if closeout:

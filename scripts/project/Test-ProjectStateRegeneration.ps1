@@ -20,7 +20,7 @@ $gate = Get-Content -Raw -Encoding UTF8 -LiteralPath $Ms4GatePath | ConvertFrom-
 
 if ($checkpoint.PSObject.Properties.Name -notcontains 'dpm_annual_consolidation') { throw 'Checkpoint lost durable dpm_annual_consolidation metadata.' }
 $dpm = $checkpoint.dpm_annual_consolidation
-Assert-Equal $dpm.state 'corrected_local_packets_generated_upload_externally_gated' 'Unexpected DPM state.'
+Assert-Equal $dpm.state (& "$PSScriptRoot/Get-DpmAnnualConsolidationState.ps1" -ManifestPath $DpmManifestPath).state 'Unexpected DPM state.'
 Assert-Equal $dpm.manifest $DpmManifestPath 'Unexpected DPM manifest path.'
 Assert-Equal @($dpm.packets).Count @($manifest.annual_packets).Count 'DPM packet count differs from manifest.'
 Assert-Equal ([int]$dpm.component_count) ([int](@($manifest.annual_packets | ForEach-Object { $_.component_count }) | Measure-Object -Sum).Sum) 'DPM component count differs from manifest.'

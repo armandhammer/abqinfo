@@ -47,7 +47,8 @@ def digest(path: Path) -> str:
 def main() -> None:
     prep = load(BASE / 'later-ms4-archive-preparation-2026-09-24.json')
     evidence = load(BASE / 'later-ms4-archive-public-byte-verification-2026-09-25.json')
-    r2 = load(ROOT / 'project-state/r2-inventory.json')
+    from BackgroundArchiveCampaign import historical_r2
+    r2 = historical_r2(load(ROOT / 'project-state/r2-inventory.json'))
     inventory = {r['id']: r for r in load(ROOT / 'project-state/master-inventory.json')['candidates']}
     implemented = (BASE / 'later-ms4-hugo-implementation-2026-09-25.json').exists()
     closeout_path = BASE / 'later-ms4-production-closeout-2026-09-25.json'
