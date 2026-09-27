@@ -4,6 +4,13 @@ param(
     [string]$OutputPath = 'project-state/discovery/dpm-executive-committee-consolidation-manifest-2026-09-17.json'
 )
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 $ErrorActionPreference = 'Stop'
 
 function Get-MeetingDate {

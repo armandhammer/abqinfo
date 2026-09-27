@@ -3,6 +3,11 @@
 import argparse, hashlib, json, runpy, subprocess, sys
 from datetime import datetime, timezone
 from pathlib import Path
+
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
 ROOT=Path(__file__).resolve().parents[2]
 STATE=ROOT/'project-state'
 ACTIVE=STATE/'active-campaign.json'
@@ -35,6 +40,8 @@ def start(a):
     assert pending==set(queue['pending_ids']),'Queue stale: regenerate before launch'
     assert pending==set(queue['gated_pending_ids'])|set(queue['source_or_structural_blocked_pending_ids'])|set(queue['ungated_pending_ids'])
     gates=set(queue['gated_pending_ids']);blocked=set(queue['source_or_structural_blocked_pending_ids']);ungated=set(queue['ungated_pending_ids'])
+    from TaskGovernance import active_check
+    active_check('review','family_review',ungated)
     assert not (gates & blocked or gates & ungated or blocked & ungated),'Queue partitions overlap'
     assert inv==json.loads(subprocess.check_output(['git','show','HEAD:project-state/master-inventory.json'],cwd=ROOT).decode('utf-8-sig')),'Commit coherent inventory changes before locking a new baseline'
     baseline=load(ROOT/a.live);saved=load(STATE/'r2-inventory.json')
@@ -85,6 +92,10 @@ def checkpoint(a):
     cp=load(STATE/'checkpoint.json');cp['active_background_campaign']=dict(campaign_id=d['campaign_id'],artifact=rel(path),profile=d['profile'],state=d['state'],resolutions=len(d['resolved_records']),exact_archives=len(d['archive_objects']),workflow='project-state/campaign-workflow.md');save(STATE/'checkpoint.json',cp)
 def main():
     p=argparse.ArgumentParser();p.add_argument('operation',choices=['start','status','prepare','show','review','apply','checkpoint']);p.add_argument('--profile',default='ordinary-review-large');p.add_argument('--id');p.add_argument('--queue');p.add_argument('--live');p.add_argument('--start',type=int,default=1);p.add_argument('--end',type=int,default=999);p.add_argument('--workers',type=int,default=4);p.add_argument('--text',type=int,default=0);p.add_argument('--images',action='store_true');p.add_argument('--decisions');a=p.parse_args()
+    if a.operation not in ('status', 'show'):
+        from TaskGovernance import active_check
+        active_check('mutation' if a.operation in ('apply', 'checkpoint', 'start') else 'review',
+                     'inventory_disposition' if a.operation == 'apply' else 'family_review')
     if a.operation=='start':
         import msvcrt
         (ROOT/'tmp').mkdir(exist_ok=True)
@@ -94,6 +105,9 @@ def main():
         return
     path,d=context()
     if a.operation=='status':print(json.dumps(d,indent=2));return
+    if a.operation not in ('status','show'):
+        from TaskGovernance import active_check
+        active_check('review','family_review',[r['id'] for r in load(ROOT/d['selection_artifact'])['all_pending_records']])
     if a.operation=='checkpoint':checkpoint(a);return
     assert d['state']!='complete_background_campaign','Completed campaign is sealed'
     if a.operation=='review':

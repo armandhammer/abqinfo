@@ -7,6 +7,13 @@ param(
   [string]$ArchivePlanPath = 'project-state/contributed-document-archive-plan-2026-08-14.json'
 )
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 

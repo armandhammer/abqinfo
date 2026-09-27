@@ -6,6 +6,10 @@ param(
 )
 
 Set-StrictMode -Version Latest
+& python "$PSScriptRoot/Test-TaskGovernance.py"
+if ($LASTEXITCODE) { throw 'Durable governance regression failed.' }
+& python "$PSScriptRoot/Resolve-TaskGovernance.py" active --phase final
+if ($LASTEXITCODE) { throw 'Current task governance validation failed.' }
 & python "$PSScriptRoot/Test-Pr196Closeout.py"
 if ($LASTEXITCODE) { throw 'PR #196 background closeout validation failed.' }
 & python "$PSScriptRoot/Test-FirstQualityRemediation.py"

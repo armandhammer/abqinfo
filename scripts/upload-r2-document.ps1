@@ -24,6 +24,11 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
+if (-not $WhatIfPreference) {
+  & python "$PSScriptRoot/project/Resolve-TaskGovernance.py" active --phase mutation --operation archive | Out-Null
+  if ($LASTEXITCODE) { throw 'Task governance archive gate failed.' }
+}
+
 $storagePolicy = Get-Content -LiteralPath "$PSScriptRoot/../project-state/r2-storage-policy.json" -Raw -Encoding UTF8 | ConvertFrom-Json
 if ($MaxProjectedStorageBytes -gt [int64]$storagePolicy.maximum_projected_r2_bytes) {
   throw 'Requested storage limit exceeds authoritative project-storage policy.'
@@ -180,6 +185,8 @@ try {
     return
   }
 
+  & python "$PSScriptRoot/project/Resolve-TaskGovernance.py" active --phase mutation --operation archive --r2-key $ObjectKey --source-sha256 $hash | Out-Null
+  if ($LASTEXITCODE) { throw 'Task governance freshness/object population changed before upload.' }
   & $aws.Source s3 cp $source.FullName "s3://$Bucket/$ObjectKey" --endpoint-url $Endpoint --content-type $contentType --no-progress
   if ($LASTEXITCODE -ne 0) {
     throw "R2 upload failed for '$ObjectKey'."

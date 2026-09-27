@@ -6,6 +6,13 @@ param(
     [string]$R2InventoryPath = 'project-state/r2-inventory.json',
     [string]$OutputPath = 'project-state/discovery/live-abqinfo-archive-reconciliation-repair-manifest-2026-09-17.json'
 )
+
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
 $ErrorActionPreference = 'Stop'
 $decisions = (Get-Content $DecisionPath -Raw | ConvertFrom-Json).decisions
 $classification = Get-Content $ClassificationPath -Raw | ConvertFrom-Json

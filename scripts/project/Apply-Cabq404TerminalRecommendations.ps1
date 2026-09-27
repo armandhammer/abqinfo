@@ -1,5 +1,12 @@
 [CmdletBinding()]
 param([string]$InventoryPath='project-state/master-inventory.json')
+
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference='Stop'
 $exclude=@('src-b67e617c31ad0bc3','src-c996c6673ba5ed73','src-846463ef6c58ca64','src-c820c69c31d2fa91','src-68c2d572bbc36214','src-ce7ea3865db93be6','src-59ba0bf48d1710cc','src-5c7272d3cc3de147','src-b6ecaded9294788f','src-5064e2813a4c2b61','src-6ed7c8af8b3a1bec','src-537a4500e296e2c4','src-d09430e0f68adbcb')

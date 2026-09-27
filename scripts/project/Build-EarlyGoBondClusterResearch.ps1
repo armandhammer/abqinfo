@@ -5,6 +5,13 @@ param(
   [string]$OutputPath = 'project-state/discovery/early-go-bond-cluster-research-2026-09-11.json'
 )
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 # Research lane only. Reads the inventory and a scratch metadata file and writes
 # one dated decision artifact. It never modifies master-inventory.json or checkpoint.json.
 

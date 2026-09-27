@@ -1,5 +1,12 @@
 [CmdletBinding()]
 param([string]$InventoryPath='project-state/master-inventory.json',[string]$OutputPath='project-state/acfr-history-decisions-2026-08-24.json')
+
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference='Stop'
 $parent='https://www.cabq.gov/dfa/treasury/investor-information/annual-comprehensive-financial-reports'

@@ -5,6 +5,13 @@ param(
   [string]$OutputPath = 'project-state/discovery/meeting-agenda-documents-closeout-2026-09-20.json'
 )
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 function Write-AtomicJson($Value, [string]$Path) {

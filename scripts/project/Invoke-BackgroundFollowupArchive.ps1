@@ -1,5 +1,12 @@
 [CmdletBinding()]
 param([string]$Folder = 'project-state/discovery/background-followup-2026-09-26')
+
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $folder = $Folder

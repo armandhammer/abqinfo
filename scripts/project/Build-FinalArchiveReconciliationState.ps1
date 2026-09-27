@@ -8,6 +8,13 @@ param(
     [string]$R2Path = 'project-state/r2-inventory.json',
     [string]$OutputPath = 'project-state/discovery/archive-reconciliation-final-local-state-2026-09-17.json'
 )
+
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
 $ErrorActionPreference = 'Stop'
 function Read-Json([string]$Path) { Get-Content -LiteralPath $Path -Raw | ConvertFrom-Json }
 function Write-JsonUtf8NoBom($Value, [string]$Path) { [IO.File]::WriteAllText([IO.Path]::GetFullPath($Path), ($Value | ConvertTo-Json -Depth 100) + [Environment]::NewLine, [Text.UTF8Encoding]::new($false)) }

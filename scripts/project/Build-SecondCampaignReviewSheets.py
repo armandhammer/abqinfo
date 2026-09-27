@@ -1,4 +1,9 @@
 import sys,json,pathlib,argparse
+
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
 ROOT=pathlib.Path.cwd();sys.path.insert(0,str(ROOT/'tmp/pgs-pdf-deps'));from PIL import Image,ImageDraw
 p=argparse.ArgumentParser();p.add_argument('--start',type=int,default=152);p.add_argument('--end',type=int,default=299);p.add_argument('--label',default='regional');a=p.parse_args()
 D=ROOT/'project-state/discovery';Q=ROOT/'tmp/ordinary-second-large-campaign-qa-2026-09-26';sel=json.loads((D/'ordinary-queue-second-large-campaign-selection-2026-09-26.json').read_text(encoding='utf-8-sig'));rr=[]

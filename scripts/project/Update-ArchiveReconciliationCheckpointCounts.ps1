@@ -4,6 +4,13 @@ param(
     [string]$CheckpointPath = 'project-state/checkpoint.json',
     [string]$DpmManifestPath = 'project-state/discovery/dpm-executive-committee-consolidation-manifest-2026-09-17.json'
 )
+
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
 $ErrorActionPreference = 'Stop'
 $master = Get-Content -LiteralPath $MasterPath -Raw | ConvertFrom-Json -DateKind String
 $checkpoint = Get-Content -LiteralPath $CheckpointPath -Raw | ConvertFrom-Json -DateKind String

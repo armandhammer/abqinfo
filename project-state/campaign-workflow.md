@@ -25,3 +25,6 @@ Reconcile saved/live R2 and every intended upload. Retrieve a fresh `Get-R2Inven
 ## Consolidated evidence
 
 This workflow consolidates AGENTS.md, CURRENT/checkpoint, the approved-backlog and first/second ordinary campaign artifacts, SecondLargeOrdinaryCampaign.py, Invoke-SecondLargeOrdinaryCampaignArchive.ps1, Reconcile-SecondCampaignResume.py, Test-SecondCampaignArchiveGuard.py, campaign archive-health regressions and Update-CandidatesBatch.py. Preserve historical limits and sealed receipts as dated evidence; executable defaults and active safeguards follow the current storage policy.
+# Mandatory governance entry gate
+
+Before reviewing any campaign family, freeze the complete selected population and resolve all active global and applicable scoped governance under [governance-workflow.md](governance-workflow.md). Campaign authorization does not bypass this gate. Freshness-check before any inventory/R2/external mutation and validate the same contract during normal validation. Any selection change requires a new immutable contract; completed historical evidence remains sealed.

@@ -1,5 +1,12 @@
 [CmdletBinding()]
 param([int]$Start=1,[int]$End=999)
+
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference='Stop'
 $writerLock=[IO.File]::Open([IO.Path]::GetFullPath('tmp/background-campaign-writer.lock'),[IO.FileMode]::OpenOrCreate,[IO.FileAccess]::ReadWrite,[IO.FileShare]::None)

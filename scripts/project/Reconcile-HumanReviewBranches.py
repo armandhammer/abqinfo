@@ -1,6 +1,11 @@
 """Fast-forward only; verify local and live remote background refs and save receipt."""
 import importlib.util, json, subprocess, sys
 from pathlib import Path
+
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
 spec=importlib.util.spec_from_file_location('task_external',Path(__file__).with_name('Invoke-HumanReviewExternal.py'))
 m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
 assert m.git('branch','--show-current')=='chatgpt/planning-snapshot'

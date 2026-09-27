@@ -18,6 +18,13 @@ param(
   [Parameter(DontShow)][ValidateSet('','after-integration','after-inventory-commit','after-successor','after-worktrees','after-pointer')][string]$TestInterruptAt = ''
 )
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 . "$PSScriptRoot/ParallelVerification.Campaign.Common.ps1"

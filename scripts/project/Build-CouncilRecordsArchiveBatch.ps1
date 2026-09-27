@@ -5,6 +5,13 @@ param(
   [string]$DecisionPath = 'project-state/discovery/council-records-archive-decisions-2026-09-12.json'
 )
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 

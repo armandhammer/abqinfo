@@ -18,6 +18,11 @@ import subprocess
 import urllib.parse
 import zipfile
 
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
+
 OUT = (r'C:\Users\ben\Documents\ABQinfo\project-state\discovery'
        r'\file-share-sweep-research-2026-09-14.json')
 INV = r'C:\Users\ben\Documents\ABQinfo\project-state\master-inventory.json'

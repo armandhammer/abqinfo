@@ -2,6 +2,11 @@
 """Apply only reviewed decisions through established repository update tools."""
 import argparse,json,runpy,subprocess,sys
 from pathlib import Path
+
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
 c=runpy.run_path(str(Path(__file__).with_name('Build-LargeOrdinaryCampaign.py')))
 ROOT,DISC,DATE,BASE,SELECTION,CAMPAIGN,load,save,digest=(c[k] for k in ['ROOT','DISC','DATE','BASE','SELECTION','CAMPAIGN','load','save','digest'])
 

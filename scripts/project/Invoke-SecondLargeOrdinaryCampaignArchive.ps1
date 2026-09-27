@@ -1,5 +1,12 @@
 [CmdletBinding()]
 param([int]$Start=1,[int]$End=999)
+
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference='Stop'
 $campaignPath='project-state/discovery/ordinary-queue-second-large-resolution-campaign-2026-09-26.json'

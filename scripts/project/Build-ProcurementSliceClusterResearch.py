@@ -13,6 +13,11 @@ import json
 import os
 import re
 
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
+
 OUT = r'C:\Users\ben\Documents\ABQinfo\project-state\discovery\municipaldevelopment-procurement-cluster-research-2026-09-12.json'
 INV = r'C:\Users\ben\Documents\ABQinfo\project-state\master-inventory.json'
 FETCH = (r'C:\Users\ben\AppData\Local\Temp\claude\C--Users-ben-Documents-ABQinfo'

@@ -5,6 +5,13 @@ param(
   [string]$PublicValidationPath = 'project-state/discovery/2017-go-bond-program-public-validation-2026-09-09.json'
 )
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 

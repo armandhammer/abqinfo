@@ -7,6 +7,11 @@ import json
 import re
 from pathlib import Path
 
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
+
 
 ROOT = Path(__file__).resolve().parents[2]
 INVENTORY = ROOT / "project-state/master-inventory.json"

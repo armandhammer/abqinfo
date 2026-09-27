@@ -1,5 +1,12 @@
 [CmdletBinding()]
 param()
+
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference='Stop'
 $path='project-state/discovery/approved-backlog-background-archive-campaign-2026-09-26.json'

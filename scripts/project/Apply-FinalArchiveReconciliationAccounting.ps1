@@ -6,6 +6,13 @@ param(
     [string]$MasterPath = 'project-state/master-inventory.json',
     [string]$R2Path = 'project-state/r2-inventory.json'
 )
+
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
 $ErrorActionPreference = 'Stop'
 
 function Read-Json([string]$Path) { Get-Content -LiteralPath $Path -Raw | ConvertFrom-Json }

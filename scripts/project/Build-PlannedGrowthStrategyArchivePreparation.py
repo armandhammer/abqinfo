@@ -11,6 +11,11 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
+
 ROOT = Path(__file__).resolve().parents[2]
 STAGING = ROOT / "research/staging/planned-growth-strategy-archive-preparation-2026-09-23"
 QA_DIR = ROOT / "tmp/pgs-archive-qa-2026-09-23"

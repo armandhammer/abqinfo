@@ -1,5 +1,12 @@
 [CmdletBinding()]
 param()
+
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference='Stop'
 $manifestPath='project-state/discovery/planning-documents-root-r2-upload-preflight-2026-09-26.json'

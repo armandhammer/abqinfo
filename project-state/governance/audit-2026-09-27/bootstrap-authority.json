@@ -1,0 +1,23 @@
+{
+  "governance_metadata": {
+    "state": "active",
+    "governance_id": "owner-durable-governance-2026-09-27",
+    "authority": "explicit current owner instruction"
+  },
+  "binding_requirement": "Audit all durable authority repository-wide; register active/superseded decisions; freeze populations; resolve all global and applicable scoped rules before substantive work; immutable contracts; pre-mutation freshness; complete final validation and explicit supersession only. No chronology-based supersession. Pause PR198 implementation; do not alter content, inventory dispositions, R2 or publication. Integrate background governance and reconcile main/planning.",
+  "required_actions": [
+    "Complete authority audit",
+    "Registry and mandatory preflight/freshness/final validation",
+    "Negative regressions for all failure classes and actual PR198 capital masters",
+    "Save PR198 next-step contract",
+    "Full normal suite and background integration"
+  ],
+  "prohibited_actions": [
+    "content changes",
+    "inventory dispositions",
+    "R2 mutations",
+    "merge PR198",
+    "silent supersession"
+  ],
+  "bootstrap_note": "The registry does not yet exist. This explicit bootstrap freezes the whole repository before authority audit; the completed governance task contract will then be resolved using the new registry before implementation integration."
+}

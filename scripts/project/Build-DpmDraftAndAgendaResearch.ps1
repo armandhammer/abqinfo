@@ -4,6 +4,13 @@ param(
   [string]$OutputPath = 'project-state/discovery/dpm-draft-and-agenda-research-2026-09-11.json'
 )
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 # Research lane only. This script reads the inventory and writes one dated
 # decision artifact. It never modifies master-inventory.json or checkpoint.json.
 

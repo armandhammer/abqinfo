@@ -1,5 +1,7 @@
 # Usage-paused-proof verification campaigns
 
+Before substantive verification/review, freeze the complete campaign population and resolve all active global/applicable scoped governance under [governance-workflow.md](governance-workflow.md). Resume checks the same contract; changed populations or authority require a replacement preflight. The integrator freshness-checks before applying any result.
+
 ABQInfo verification campaigns extend the bounded parallel-run workflow with candidate-level durability. A Codex session may stop at any point because of a five-hour window, weekly usage limit, or terminal interruption. Re-running the same lane command reconstructs progress from immutable artifacts and continues at the first missing candidate.
 
 The campaign system does not run work in the background after a session stops. It guarantees that completed verification and integration work is neither lost nor duplicated when the user later says **Continue**.

@@ -6,6 +6,13 @@ param(
   [string]$PostLivePath = 'tmp/pgs-live-r2-postupload-2026-09-23.json'
 )
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 if (Test-Path -LiteralPath $EvidencePath) {

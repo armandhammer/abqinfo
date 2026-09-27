@@ -6,6 +6,13 @@ param(
   [string]$PostLivePath = 'tmp/later-ms4-live-postupload-2026-09-25.json'
 )
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 function Save-Evidence($value) {

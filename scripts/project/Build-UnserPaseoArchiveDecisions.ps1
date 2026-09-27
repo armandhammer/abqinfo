@@ -4,6 +4,13 @@ param(
   [string]$OutputPath = 'project-state/retained-source-expansion-6d-decisions-2026-08-25.json'
 )
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $crawl = Get-Content -Raw -Encoding UTF8 -LiteralPath $CrawlPath | ConvertFrom-Json

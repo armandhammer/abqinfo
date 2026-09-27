@@ -1,5 +1,10 @@
 """Explicit current-evidence outcomes; unresolved facts are never owner choices."""
 from BackgroundFollowup import ROOT,F,load,save
+
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
 base={r['id']:r for r in load(F/'baseline-records.json')}
 retrievals=load(F/'retrievals.json')['records']
 updates=[];decisions={}
