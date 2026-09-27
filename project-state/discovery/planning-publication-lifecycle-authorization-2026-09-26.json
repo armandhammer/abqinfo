@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "pr_number": 194,
+  "authority": "Current owner instruction explicitly authorizes updating completed-stage regressions to sealed snapshots while every later stage retains an exact-delta guard.",
+  "authorized_scope": [
+    "Preserve every completed stage's original population, mutation and evidence safeguards",
+    "Register immutable historical snapshot boundaries and continuous later-stage coverage",
+    "Protect the current Planning batch's exact twelve inventory transitions and six content pages",
+    "Forbid unrelated inventory, source/provenance, content-path and R2 mutations",
+    "Retain page hashes, rendered output, source/archive links and anchor checks",
+    "Generalize the lifecycle pattern for later authorized stages",
+    "Run the normal complete suite, update PR metadata and verify the current preview"
+  ],
+  "historical_evidence_may_be_rewritten": false,
+  "new_external_archive_mutation_authorized": false,
+  "merge_authorized": false,
+  "production_deployment_authorized": false,
+  "review_branch": "content/planning-documents-root-publication"
+}

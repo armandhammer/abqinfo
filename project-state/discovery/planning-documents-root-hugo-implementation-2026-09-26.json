@@ -28,12 +28,12 @@
     "content/development-land-use/redevelopment-plans.md"
   ],
   "page_sha256": {
-    "content/city-data/demographics.md": "9594279acc9ba161882f10ad6971cc9cc20d691236dc14a724bfc04b6ba1e55c",
-    "content/public-works/city-facilities.md": "4b8af7e9f095b2021944634913314d819f92eb5354511081ca494aec35f54c85",
-    "content/development-land-use/zoning-ido.md": "c7e1fe49f018f227f583454c02cc101d5e5204499cedde4fe0323ad578ab2bc4",
-    "content/public-works/parks-recreation.md": "b0ad471b03734f028aa971c2f4bb63996ab7ef3d8cf8f386a1bcb184c219b8db",
-    "content/development-land-use/area-sector-plans.md": "cac045f12106b8135f4198b43516d7453ac6c8f1c2052ed27178393b40d8d5b3",
-    "content/development-land-use/redevelopment-plans.md": "eba1b10ab8613ea5233cda9badc502a14d485a9257cc58c7bf7bad922ed56e3c"
+    "content/city-data/demographics.md": "fe532bada3ebdc4e85e1ee6d971bcfc24476a124c1f7951cbcbfcde5a5302d20",
+    "content/public-works/city-facilities.md": "d9de80a5d545aa7113d8bbcd6e436c996cff1bb9072868905f4e7ccd45c16d5a",
+    "content/development-land-use/zoning-ido.md": "8f5d4fc75ebc19fa1c08628c5de45af148d5db4e448c75b681155091b2aff174",
+    "content/public-works/parks-recreation.md": "89aa756251075b43f244a193e78e3e5eb3c8221f462be7d7b4f0582d035d94b4",
+    "content/development-land-use/area-sector-plans.md": "875f210ffd879775fa43dae6692857021c8729539fe8d785e310e3438db1e3ee",
+    "content/development-land-use/redevelopment-plans.md": "9567dea7ec5012a781247bc6ba8142ddb65ac9ac0fab2166bdc8dd7299a35af2"
   },
   "records": [
     {
@@ -181,15 +181,23 @@
   "production_or_live": false,
   "merge_or_deploy": false,
   "validation": {
-    "local_hugo_build": "passed",
-    "rendered_archive_source_pairs_and_anchors": "passed",
-    "content_style": "passed",
+    "state": "passed",
+    "full_project_suite": "passed",
+    "normal_entrypoint": "pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/project/Invoke-ProjectValidation.ps1",
+    "full_suite_log": "project-state/discovery/planning-documents-root-publication-lifecycle-validation-2026-09-26.log",
+    "hugo_build": "passed",
+    "rendered_pages": "passed",
     "master_inventory": "passed",
-    "negative_current_delta_fixtures": "passed",
-    "full_project_suite": "blocked_by_historical_no_later_content_contracts",
-    "full_suite_log": "project-state/discovery/planning-documents-root-publication-validation-2026-09-26.log",
-    "owner_authorization_for_guarded_lifecycle_updates": "pending",
-    "preview": "passed"
+    "content_style": "passed",
+    "historical_evidence_files_unchanged": 109,
+    "contiguous_stage_intervals": 9,
+    "original_mission_scope_audit_records": 86,
+    "current_inventory_transition_guard": "passed",
+    "current_content_and_source_provenance_guard": "passed",
+    "current_r2_guard": "passed_no_mutation",
+    "retained_source_queue_delta": "passed_twelve_pending_sources_prior_audits_unchanged",
+    "owner_authorization_artifact": "project-state/discovery/planning-publication-lifecycle-authorization-2026-09-26.json",
+    "recorded_at": "2026-09-27T01:40:42.975486+00:00"
   },
   "recorded_at": "2026-09-27T00:50:06.962840+00:00",
   "preview": {
@@ -199,5 +207,32 @@
     "result": "passed_all_six_pages_twelve_archive_source_pairs_section_anchors_and_two_cross_links",
     "production": false
   },
-  "pr_description_artifact": "project-state/discovery/planning-documents-root-publication-pr-2026-09-26.md"
+  "pr_description_artifact": "project-state/discovery/planning-documents-root-publication-pr-2026-09-26.md",
+  "expected_row_digests": {
+    "src-16b33375ffbddc62": "e5c99e52dfa5d3645d6fb63fc8f62e2dab0e24e236e81392ffd227f6b25d58ad",
+    "src-1fa6ae851ddf282d": "9dc6014d47fe694a2ddd5281591fb59f0d39b581ce425d77eba227ed68eef8d0",
+    "src-513fe9056bf9b34c": "de1c5d01114a12c013e5c8a9e94c5cfcc9803dabca5da7aff8f8a8499044120f",
+    "src-7de0f5803d442e8f": "c1f91bf1ae48d151c5aeaa9cf137396641721535d0fe2e6a447366a207cac40b",
+    "src-8740362a1b751e26": "9ad0fb397e92fa22b10677a209b71e09366f4c047a6d564c5880b5dcb581b361",
+    "src-99fe2201b73355c4": "495dba15e6ee0d638eed3be85307e4e197a2bdf0923ac4375325bde4217897bd",
+    "src-afac0cf84867a22f": "8d1516e9fd0fd1e2731db67bc7a6c20b67b5229891d94db083721c4f67513835",
+    "src-c54e59cd5c25282d": "5c7c89f725c250deb6a2e2a40edfe914a8e4d33bd61eb9358631110994164c0e",
+    "src-c87775c045d8acc4": "ff88563981d26c0325d70cb47ef5626477e207582a1ed5a1f45e0c363f35b551",
+    "src-eb0f4b39798d29df": "f6f667176076c1fd7c43ed30c9dad4cedd09dfbdcbcde6c5c7100d9e72920c4c",
+    "src-f528ec2e0e955690": "e4448105445143d401ecd44f35a1b49704758395704db9a1be5831b72a48bf78",
+    "src-fb6e95610a43c7a4": "92be13fdc00fd675d7406e2fc74c642c79d505521f83d95bf0c2d94cd8952a4e"
+  },
+  "page_hash_mode": "UTF-8 normalized LF",
+  "page_hash_reference_commit": "65ee04ad5b7953814015779fd6ac0188fe6736ce",
+  "prior_validation_attempt": {
+    "local_hugo_build": "passed",
+    "rendered_archive_source_pairs_and_anchors": "passed",
+    "content_style": "passed",
+    "master_inventory": "passed",
+    "negative_current_delta_fixtures": "passed",
+    "full_project_suite": "blocked_by_historical_no_later_content_contracts",
+    "full_suite_log": "project-state/discovery/planning-documents-root-publication-validation-2026-09-26.log",
+    "owner_authorization_for_guarded_lifecycle_updates": "pending",
+    "preview": "passed"
+  }
 }

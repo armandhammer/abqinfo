@@ -1,3 +1,5 @@
+from WorkflowStageLifecycle import StageSnapshot
+stage=StageSnapshot('human-reassessment')
 """Independent population, provenance, disposition and archive audit for the owner task."""
 import collections
 import hashlib
@@ -8,20 +10,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 F = ROOT / 'project-state/discovery/human-review-reassessment-2026-09-26'
-def load(p):
-    p = Path(p)
-    later = ROOT / 'project-state/discovery/background-followup-2026-09-26/authorization.json'
-    # Keep this completed 205-record audit sealed at the next authorized task's
-    # immutable baseline. Test-BackgroundFollowup.py audits all later live changes.
-    sealed_paths = {'project-state/master-inventory.json', 'project-state/r2-inventory.json',
-                    'project-state/checkpoint.json', 'project-state/ordinary-queue-current.json',
-                    'project-state/discovery/codex-human-review-followup-queue.json',
-                    'project-state/discovery/mission-scope-borderline-human-review-queue.json'}
-    relative = p.relative_to(ROOT).as_posix()
-    if later.exists() and relative in sealed_paths:
-        baseline = json.loads(later.read_text(encoding='utf-8'))['baseline_commit']
-        return json.loads(subprocess.check_output(['git', 'show', baseline + ':' + relative], cwd=ROOT).decode('utf-8-sig'))
-    return json.loads(p.read_text(encoding='utf-8-sig'))
+load=stage.load_state_or_live_evidence
+
 def digest(r): return hashlib.sha256(json.dumps(r, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
 def git(*args): return subprocess.check_output(['git', *args], cwd=ROOT)
 
@@ -105,8 +95,7 @@ for r in receipts:
     assert row['r2_key'] == r['key'] and row['status'] == 'placement assigned' and objects[r['key']]['etag'] == r['etag']
     source = ROOT / row['local_path']; assert source.stat().st_size == r['size_bytes']
     with source.open('rb') as f: assert hashlib.file_digest(f,'sha256').hexdigest() == r['checksum_sha256']
-assert not git('diff',a['baseline_commit'],'--name-only','--','content').strip()
-assert git('rev-parse','HEAD:content').decode().strip() == a['content_tree']
+stage.assert_no_visible_changes(a['baseline_commit'],a['content_tree'])
 assert not git('ls-files','--others','--exclude-standard','content').strip()
 cp = load(ROOT / 'project-state/checkpoint.json'); assert cp['counts_by_status'] == inv['counts']
 queue = load(ROOT / load(ROOT / 'project-state/ordinary-queue-current.json')['artifact'])

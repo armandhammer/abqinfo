@@ -1,3 +1,5 @@
+from WorkflowStageLifecycle import StageSnapshot
+stage=StageSnapshot('ordinary-second')
 #!/usr/bin/env python3
 """Check live second-campaign changes against the immutable owner-reviewed state."""
 import collections,hashlib,json,runpy,subprocess
@@ -8,13 +10,9 @@ def seal_digest(obj):return hashlib.sha256(json.dumps(obj,sort_keys=True,separat
 # A later campaign owns subsequent changes; verify this closed campaign at its sealed handoff.
 active=ROOT/'project-state/active-campaign.json'
 if active.exists():
-    original_load=load
-    def historical_load(path):
-        relative=Path(path).relative_to(ROOT).as_posix()
-        if relative in ['project-state/master-inventory.json','project-state/r2-inventory.json','project-state/checkpoint.json']:
-            return json.loads(subprocess.check_output(['git','show','1b5bb82:'+relative],cwd=ROOT).decode('utf-8-sig'))
-        return original_load(path)
+    historical_load=stage.load_state_or_live_evidence
     load=historical_load
+
 d=load(ART);s=load(SEL);inv=load(ROOT/'project-state/master-inventory.json');rows={r['id']:r for r in inv['candidates']}
 prior={r['id']:r for r in json.loads(subprocess.check_output(['git','show',BASE+':project-state/master-inventory.json'],cwd=ROOT).decode('utf-8-sig'))['candidates']}
 resolved={r['id']:r for r in d['resolved_records']}
@@ -78,9 +76,9 @@ for key,a in added.items():
     v=a['public_verification'];assert v['byte_identical'] and v['size_bytes']==a['size_bytes'] and v['checksum_sha256']==a['checksum_sha256']
     assert objects[key]['size_bytes']==a['size_bytes'] and objects[key]['etag']==a['etag']
     row=rows[a['id']];assert row['status']=='placement assigned' and row['r2_key']==key
-assert not subprocess.check_output(['git','diff',BASE,'--name-only','--','content'],cwd=ROOT).strip()
+stage.assert_no_visible_changes(BASE,d['content_tree_baseline'])
 assert not subprocess.check_output(['git','ls-files','--others','--exclude-standard','content'],cwd=ROOT).strip()
-assert subprocess.check_output(['git','rev-parse','HEAD:content'],cwd=ROOT,text=True).strip()==d['content_tree_baseline']
+
 if d['state']=='complete_background_campaign':
     population.sort(key=lambda r:r['id'])
     expected_population_hash='877f6e78d06a6afd6c389f0924d6843572dd6d4bc0c299f23ec0ab0e71d5258d'

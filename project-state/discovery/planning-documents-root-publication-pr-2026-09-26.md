@@ -13,10 +13,14 @@ Present the 12 archive-complete Planning originals in their approved historical 
 - Added: [Parks & Recreation — System and Facility Plans](https://0cd40a76.abqinfo.pages.dev/public-works/parks-recreation/#system-and-facility-plans). Add **Major Public Open Space Facility Plan (January 1999)** under this existing heading, distinguished from the West Side steering presentation. Under the existing [Arroyo and Open Space Planning History](https://0cd40a76.abqinfo.pages.dev/public-works/parks-recreation/#arroyo-and-open-space-planning-history) heading, add **Bosque Action Plan, Rio Grande Valley State Park, Final Plan (January 1993)**.
 - Cross-listed: [Redevelopment Plans — Historical and Retained Area Plans](https://0cd40a76.abqinfo.pages.dev/development-land-use/redevelopment-plans/#historical-and-retained-area-plans). Add a related-plan link beside the existing Barelas revitalization entry to the new **Barelas** sector-plan section. The sector-plan section links back to the existing revitalization-plan section. Neither link duplicates a document entry.
 
+## Validation architecture
+
+The owner-authorized lifecycle registry records nine contiguous stage intervals. Completed stages still verify their original populations, mutations and evidence at immutable Git endpoints; all 109 protected historical evidence files remain unchanged. The original 86-record mission-scope correction is checked at its correction commit, alongside the current eligibility gates.
+
+Every later stage must declare its own exact-delta guard and run its regressions in the normal suite. Planning retains exactly the twelve authorized inventory transitions and six content pages, with pinned final row values and page hashes, unchanged source/provenance and R2 state, and archive/source link, description and anchor checks. The derived audit queue adds only the twelve Planning sources as pending roots and preserves every earlier audit result. Negative fixtures reject unknown mutations, gaps, missing guards, altered historical evidence and false queue completion. No special validation mode or bypass is used.
+
 ## Validation
 
-Hugo build, master inventory, content style, exact publication-delta checks, rendered archive/source links and section anchors pass. Five negative fixtures reject unrelated inventory transitions, provenance changes, extra pages, altered page bytes and R2 mutations.
+The complete normal project suite passes, including inventory and scope eligibility, all historical regressions, content style and architecture, archive evidence, queue coverage, Hugo build and rendered-page checks. Preview verification covers all six changed pages, all twelve archive/source pairs, the changed-section anchors and both Barelas cross-links.
 
-The full project suite was run but is blocked by completed-stage regressions that assert no later inventory/content changes may exist. Automatic approval review rejected adapting those historical contracts; the original tests remain unchanged, and explicit owner authorization for the guarded lifecycle update is pending. This PR remains a draft until that validation blocker is resolved.
-
-No R2 uploads or storage changes: **0 added bytes**. Inventory rows are **implemented on the review branch**, with production and manual approval still pending. No merge or production deployment is authorized.
+No visitor-visible edits were made during the validation-architecture follow-up. No R2 uploads or storage changes: **0 added bytes**. The twelve inventory rows remain **implemented**, with validation passed on the review branch; production is not claimed. This PR is ready for the owner's manual review and has not been merged or deployed to production.

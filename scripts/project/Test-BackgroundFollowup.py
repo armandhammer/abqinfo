@@ -1,17 +1,11 @@
+from WorkflowStageLifecycle import StageSnapshot
+stage=StageSnapshot('background-followup')
 """Independent exact-population, untouched-owner and archive/public-byte audit."""
 import collections,gzip,hashlib,json,subprocess
 from pathlib import Path
 from BackgroundFollowup import ROOT,F,load as live_load,digest
-# Audit the completed follow-up task at the next authorized task baseline.
-# Test-OwnerDecisions.py independently audits all subsequent live changes.
-def load(p):
- p=Path(p);later=ROOT/'project-state/discovery/owner-decisions-2026-09-26/authorization.json'
- if later.exists():
-  rel=p.relative_to(ROOT).as_posix()
-  if rel in {'project-state/master-inventory.json','project-state/r2-inventory.json','project-state/checkpoint.json','project-state/ordinary-queue-current.json','project-state/discovery/codex-human-review-followup-queue.json','project-state/discovery/consolidated-human-review-queue.json','project-state/discovery/mission-scope-borderline-human-review-queue.json'}:
-   baseline=live_load(later)['baseline_commit']
-   return json.loads(subprocess.check_output(['git','show',baseline+':'+rel],cwd=ROOT).decode('utf-8-sig'))
- return live_load(p)
+load=stage.load_state_or_live_evidence
+
 a=load(F/'authorization.json')
 prior={r['id']:r for r in json.loads(subprocess.check_output(['git','show',a['baseline_commit']+':project-state/master-inventory.json'],cwd=ROOT).decode('utf-8-sig'))['candidates']}
 inv=load(ROOT/'project-state/master-inventory.json');rows={r['id']:r for r in inv['candidates']}
@@ -88,6 +82,6 @@ link_bytes=(F/'source-links.json.gz').read_bytes();links=json.loads(gzip.decompr
 for r in load(F/'retrievals.json')['records']:
  if r.get('links_artifact'):
   assert r['links_artifact_sha256']==hashlib.sha256(link_bytes).hexdigest() and r['link_count']==len(links[r['url']])
-assert not subprocess.check_output(['git','diff',a['baseline_commit'],'--name-only','--','content','layouts','assets','static','hugo.toml'],cwd=ROOT).strip()
-assert subprocess.check_output(['git','rev-parse','HEAD:content'],cwd=ROOT,text=True).strip()==a['content_tree']
+stage.assert_no_visible_changes(a['baseline_commit'],a['content_tree'])
+
 print('PASS: exact 55 follow-ups; 16 resolved, 39 factual prerequisites; four owner packages unchanged; 16 exact archives, 14454680 added bytes; unrelated rows and visible content preserved.')

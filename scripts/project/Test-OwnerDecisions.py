@@ -1,5 +1,8 @@
+from WorkflowStageLifecycle import StageSnapshot
+stage=StageSnapshot('owner-decisions')
 """Audit exact owner scope, preserved provenance, queues and archive deltas."""
 from OwnerDecisions import *
+load=stage.load_state_or_live_evidence
 a=load(F/'authorization.json');baseline={r['id']:r for r in json.loads(subprocess.check_output(['git','show',a['baseline_commit']+':project-state/master-inventory.json'],cwd=ROOT).decode('utf-8-sig'))['candidates']};inv=load(ROOT/'project-state/master-inventory.json');rows={r['id']:r for r in inv['candidates']};allowed=set(a['allowed_ids'])
 assert a['baseline_row_digests']=={i:digest(r) for i,r in baseline.items()}
 assert rows.keys()==baseline.keys() and {i for i in rows if rows[i]!=baseline[i]}==allowed and len(allowed)==11
@@ -32,5 +35,5 @@ for x in art:
  r=rows[x['id']];v=x['verification'];assert v['byte_identical'] and (v['size_bytes'],v['checksum_sha256'])==(r['size_bytes'],r['checksum_sha256']) and x['key']==r['r2_key']
 cp=load(ROOT/'project-state/checkpoint.json');assert cp['counts_by_status']==inv['counts']
 q=load(ROOT/load(ROOT/'project-state/ordinary-queue-current.json')['artifact']);assert set(q['pending_ids'])=={i for i,r in rows.items() if r['status']=='pending review'} and q['pending_review_count']==372
-assert not git('diff',a['baseline_commit'],'--name-only','--','content','layouts','assets','static','hugo.toml') and git('rev-parse','HEAD:content')==a['content_tree']
+stage.assert_no_visible_changes(a['baseline_commit'],a['content_tree'])
 print('PASS: 11 explicit owner dispositions; nine retained, two excluded; six exact archives / 4522318 bytes; zero owner cases; 39 factual prerequisites; unrelated rows/content preserved.')

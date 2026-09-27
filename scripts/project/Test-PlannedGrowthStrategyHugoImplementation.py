@@ -26,7 +26,9 @@ def main() -> None:
         assert closeout["production_verification_result"] == "passed"
     decision = load(DISCOVERY / "planned-growth-strategy-decision-2026-09-19.json")
     inventory = {row["id"]: row for row in load(ROOT / "project-state/master-inventory.json")["candidates"]}
-    page = PAGE.read_bytes().decode("utf-8-sig")
+    # Hash canonical Markdown, matching the sealed artifact across Git's Windows
+    # newline conversion. This preserves the original exact section digest.
+    page = PAGE.read_bytes().decode("utf-8-sig").replace("\r\n", "\n")
     heading = "## Citywide Growth Strategy"
     assert page.count(heading) == 1
     section = page.split(heading, 1)[1].split("\n## ", 1)[0]

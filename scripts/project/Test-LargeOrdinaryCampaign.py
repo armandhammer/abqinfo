@@ -1,3 +1,5 @@
+from WorkflowStageLifecycle import StageSnapshot
+stage=StageSnapshot('ordinary-first')
 #!/usr/bin/env python3
 """Exact campaign population, transitions, archive identity and protected scope."""
 import collections,hashlib,json,runpy,subprocess
@@ -14,13 +16,9 @@ second_path=DISC/f'ordinary-queue-second-large-resolution-campaign-{DATE}.json'
 second=load(second_path) if second_path.exists() else None
 if second:
     assert second['baseline_commit']=='34ccc0fe230ffb8290652979cbe8603c69db3115'
-    original_load=load
-    def historical_load(path):
-        relative=Path(path).relative_to(ROOT).as_posix()
-        if relative in ['project-state/master-inventory.json','project-state/r2-inventory.json','project-state/checkpoint.json']:
-            return json.loads(subprocess.check_output(['git','show',second['baseline_commit']+':'+relative],cwd=ROOT).decode('utf-8-sig'))
-        return original_load(path)
+    historical_load=stage.load_state_or_live_evidence
     load=historical_load
+
 d=load(CAMPAIGN);s=load(SELECTION);inv=load(ROOT/'project-state/master-inventory.json');rows={r['id']:r for r in inv['candidates']};prior={r['id']:r for r in git_json('project-state/master-inventory.json')['candidates']}
 resolved={r['id']:r for r in d['resolved_records']}
 assert len(resolved)==len(d['resolved_records'])<=500
@@ -72,9 +70,9 @@ for key,a in added.items():
     v=a['public_verification'];assert v['byte_identical'] and v['size_bytes']==a['size_bytes'] and v['checksum_sha256']==a['checksum_sha256']
     assert objects[key]['size_bytes']==a['size_bytes'] and objects[key]['etag']==a['etag']
     row=rows[a['id']];assert row['status']=='placement assigned' and row['r2_key']==key and row['r2_url']==v['public_url']
-assert not subprocess.check_output(['git','diff',BASE,'--name-only','--','content'],cwd=ROOT).strip()
+stage.assert_no_visible_changes(BASE,d['content_tree_baseline'])
 assert not subprocess.check_output(['git','ls-files','--others','--exclude-standard','content'],cwd=ROOT).strip()
-assert subprocess.check_output(['git','rev-parse','HEAD:content'],cwd=ROOT,text=True).strip()==d['content_tree_baseline']
+
 if d['state']=='complete_background_campaign':
     assert len(resolved)==500 and sum(f['complete'] for f in d['families_processed'])>=20
     a=d['accounting']

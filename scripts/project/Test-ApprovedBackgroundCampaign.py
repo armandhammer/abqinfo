@@ -1,3 +1,5 @@
+from WorkflowStageLifecycle import StageSnapshot
+stage=StageSnapshot('approved-background-archive')
 #!/usr/bin/env python3
 """Exact family/source/key/public/lifecycle and zero-publication campaign contract."""
 import hashlib,json,subprocess
@@ -23,7 +25,7 @@ baseline_inventory=git_json(d['baseline_git_sha'],'project-state/master-inventor
 ordinary_path='project-state/discovery/ordinary-queue-large-resolution-campaign-2026-09-26.json'
 ordinary=load(ordinary_path) if (ROOT/ordinary_path).exists() else None
 if ordinary:assert ordinary['baseline_commit']=='b8a52bbdef5f78599187b1020d1f10b65c1a17b4'
-historical=lambda path:git_json(ordinary['baseline_commit'],path) if ordinary else load(path)
+historical=stage.load_state_or_live_evidence
 inventory=historical('project-state/master-inventory.json');rows={r['id']:r for r in inventory['candidates']};prior={r['id']:r for r in baseline_inventory['candidates']}
 assert len(rows)==len(prior)==7137
 assert {r['id'] for r in baseline_inventory['candidates'] if r['status']=='approved for addition'}=={r['id'] for r in d['records']}
@@ -80,8 +82,7 @@ assert set(objects)-set(old)=={r['r2_key'] for r in verified}
 assert current['object_count']==len(objects)==1249+len(verified)
 assert current['total_bytes']==sum(o['size_bytes'] for o in objects.values())==9340531168+sum(r['size_bytes'] for r in verified)
 for r in verified:assert objects[r['r2_key']]['size_bytes']==r['size_bytes'] and objects[r['r2_key']]['etag']==r['r2_etag']
-assert subprocess.check_output(['git','rev-parse','HEAD:content'],cwd=ROOT,text=True).strip()==d['content_tree_sha256_baseline']
-assert not subprocess.check_output(['git','diff','--name-only',d['baseline_git_sha'],'--','content'],cwd=ROOT).strip()
+stage.assert_no_visible_changes(d['baseline_git_sha'],d['content_tree_sha256_baseline'])
 assert not subprocess.check_output(['git','ls-files','--others','--exclude-standard','content'],cwd=ROOT).strip()
 for path,expected in d['governing_artifact_hashes'].items():assert sha(path)==expected,path
 if d['state']=='complete_background_campaign':

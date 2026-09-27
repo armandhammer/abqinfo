@@ -6,6 +6,8 @@ param(
 )
 
 Set-StrictMode -Version Latest
+& python "$PSScriptRoot/Test-WorkflowStageLifecycle.py"
+if ($LASTEXITCODE) { throw 'Workflow lifecycle historical evidence or active exact-delta validation failed.' }
 if (Test-Path 'project-state/discovery/planning-documents-root-hugo-implementation-2026-09-26.json') {
   & python "$PSScriptRoot/Test-PlanningPublicationLifecycle.py"
   if ($LASTEXITCODE) { throw 'Planning publication negative guard regression failed.' }
