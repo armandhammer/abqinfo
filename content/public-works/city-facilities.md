@@ -38,6 +38,12 @@ Planning, design standards, and selected major projects for City-owned buildings
 
 ## Energy and City Facilities
 
+- [Facility Plan: Electric System Transmission and Generation, 2010–2020 (Archived PDF)](https://files.abqinfo.com/public-works/city-facilities/cabq-electric-system-transmission-generation-facility-plan-2010-2020.pdf)
+
+  Preserves the joint City and County electric-system transmission and generation facility plan for the 2010–2020 planning period. This historical utility-network plan concerns electrical infrastructure, rather than an inventory of City-owned buildings.
+
+  [Official City PDF](https://www.cabq.gov/planning/documents/EFPwithsecurityCOABernco20102020.pdf)
+
 Albuquerque Energy Council meeting records document City-facility and energy business. The full chronological series, including its agenda-only caveats, is on [Climate & Environment](/city-data/climate-environment/#albuquerque-energy-council-meeting-records).
 
 - [January 21, 2015 Agenda and Minutes](https://files.abqinfo.com/city-data/climate-environment/cabq-albuquerque-energy-council-agenda-and-minutes-2015-01-21.pdf)

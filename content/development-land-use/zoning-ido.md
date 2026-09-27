@@ -34,7 +34,25 @@ Current zoning tools and a preserved history of Albuquerque's Integrated Develop
 
   [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/5452/2021-Legalization-of-Cannabis-Planning-Commissioner-Workshop-PDF) · [Current Regional Planning Workshops and Training](https://www.mrcog-nm.gov/637/Regional-Planning-Workshops-and-Training)
 
+- [Planned Communities Criteria: Policy Element, February 1991 (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-planned-communities-criteria-policy-element-1991.pdf)
+
+  Preserves the February 1991 planned-community policy element, documenting criteria for evaluating large master-planned developments against the Comprehensive Plan. This is a historical policy record, not current Integrated Development Ordinance text.
+
+  [Official City PDF](https://www.cabq.gov/planning/documents/planned.pdf)
+
+- [Unser Boulevard Overlay Zone: Complete Legislation (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-unser-boulevard-overlay-zone-complete-legislation.pdf)
+
+  Preserves the historical legislation adopting and mapping the Unser Boulevard Design Overlay Zone, including its boundary and map sheets. The first page carries a handwritten enactment notation; no numbered-enactment claim is made here.
+
+  [Official City PDF](https://www.cabq.gov/planning/documents/UnserBlvdOverlayZoneCompleteLegislation.pdf)
+
 ## Old Town Regulatory Review
+
+- [H-1 Historic Old Town Zone Design Guidelines (As Amended Through April 9, 1998; Archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-h1-historic-old-town-zone-design-guidelines-1998.pdf)
+
+  Preserves the former H-1 Historic Old Town Zone design guidelines as amended through April 9, 1998. These historical guidelines are distinct from later HPO-5 controls and should not be read as current zoning requirements.
+
+  [Official City PDF](https://www.cabq.gov/planning/documents/H1OldTownBufferZone032912.pdf)
 
 - [Old Town Virtual Task Force Summary of Ranking Results, Topic 1: Outdoor Displays (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-old-town-task-force-ranking-outdoor-displays.pdf)
 

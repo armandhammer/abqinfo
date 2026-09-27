@@ -79,6 +79,16 @@ The exact former City download locations for this draft collection have not been
 
   [Planning Boundary Map (2025 Archived Image)](https://files.abqinfo.com/development-land-use/area-sector-plans/bernco-south-coors-sector-plan-boundary-map-2025.png) · [Official County Image](https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2025/02/South-Coors-Corridor-Sector-Development-Plan-Map.png)
 
+## Barelas
+
+- [Barelas Sector Development Plan (Adopted April 2008; Archived PDF)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-barelas-sector-development-plan-2008.pdf)
+
+  Preserves the Barelas Sector Development Plan adopted in April 2008, covering neighborhood land use and design. This historical sector plan is distinct from the Barelas Neighborhood Commercial Area Revitalization Plan.
+
+  [Official City PDF](https://www.cabq.gov/planning/documents/BARELASsdprpt806forprintcolor.pdf)
+
+Related record: [Barelas Neighborhood Commercial Area Revitalization Plan](/development-land-use/redevelopment-plans/#historical-and-retained-area-plans), preserved separately with its commercial-area redevelopment context.
+
 ## Southwest Mesa and Volcano Area
 
 - [Southwest Area Plan (Bernalillo County 2001; Albuquerque 2002)](https://files.abqinfo.com/development-land-use/area-sector-plans/abc-southwest-area-plan-2001-2002.pdf)
@@ -92,6 +102,12 @@ The exact former City download locations for this draft collection have not been
   Explains proposed 2014 transportation amendments across the Volcano Cliffs, Volcano Heights, Volcano Trails, and West Side plans, comparing roadway-network maps, Paseo del Norte and Unser cross-sections, frontage roads, and multimodal design.
 
   [Official City Record](https://www.cabq.gov/municipaldevelopment/documents/VolcanoPlansAmendments20140714.pdf/view) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/VolcanoPlansAmendments20140714.pdf)
+
+- [Volcano Trails Sector Development Plan with Adopting Legislation (As Enacted 2011; Archived PDF)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-volcano-trails-sector-development-plan-enacted-package-2011.pdf)
+
+  Preserves the enacted August 2011 Volcano Trails plan package with adopting legislation. It complements the separately held plan and adoption resolution below; these are related deliveries, not the same original.
+
+  [Official City PDF](https://www.cabq.gov/planning/documents/VolcanoTrailsSDPFINALenacted2011.pdf)
 
 - [Volcano Trails Sector Development Plan (2011)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-volcano-trails-sector-development-plan-2011.pdf)
 

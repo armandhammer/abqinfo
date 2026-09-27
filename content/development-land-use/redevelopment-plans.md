@@ -82,6 +82,8 @@ Plans and historical records for designated Metropolitan Redevelopment Areas, wh
 
   [Official City PDF](https://documents.cabq.gov/planning/UDD/MRA/MRA-RedevPlan-BarelasNeighborhoodCommercialArea.pdf)
 
+Related record: [Barelas Sector Development Plan (adopted April 2008)](/development-land-use/area-sector-plans/#barelas), a distinct neighborhood land-use and design plan.
+
 - [South Broadway Sector Development Plan (Archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment-plans/cabq-south-broadway-sector-development-plan.pdf)
 
   Preserves the one-hundred-fourteen-page South Broadway sector development plan as adopted and amended, covering land use, zoning, urban design, transportation, housing, and redevelopment policy for the South Broadway area.

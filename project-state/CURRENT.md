@@ -1,5 +1,11 @@
 # ABQInfo Current Work
 
+Planning documents-root publication is implemented on `content/planning-documents-root-publication`: 12 exact-byte archived originals across five canonical pages, plus approved Barelas cross-links on Redevelopment Plans. The four Impact Area chapters remain one grouped incomplete historical set. The duplicate revitalization-plan inventory row and its validated canonical row are unchanged. No R2 mutation or storage was added.
+
+Hugo build, rendered archive/source links and section anchors, inventory and content style passed. Full-suite completion is blocked by historical background/archive regressions that prohibit all later content changes. Automatic approval review rejected updating those contracts to sealed historical state; owner authorization for the guarded lifecycle update is pending. The current-stage guard rejects unrelated rows, provenance, content, altered page bytes and R2 changes. Artifact: `project-state/discovery/planning-documents-root-hugo-implementation-2026-09-26.json`. Do not merge or deploy without owner approval.
+
+## Prior completed work
+
 All four owner human-review packages are resolved by explicit September 26 decisions. All three ART advocacy originals are retained as attributed historical evidence, with authorship/viewpoint labels and no claim of official City findings or approved minutes. All six DPM originals are retained as a historical proposal/draft series with dates and adopted-record relationships preserved; they are never current or enacted standards. Fiber correspondence is excluded from the public collection: no original, derivative or summary publication. The wireless checklist is excluded. Research and provenance evidence remain preserved.
 
 The authoritative inventory and owner/mission-scope queues now contain zero unresolved human-review records. The Codex follow-up queue remains 39 factual prerequisites; none was converted to an owner decision or inferred resolved. The ordinary queue remains 372 pending records, with the existing unrelated gates and source/family prerequisites preserved. Current pointer: `project-state/discovery/owner-decisions-2026-09-26/next-ordinary-queue.json`.

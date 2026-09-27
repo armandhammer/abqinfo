@@ -75,3 +75,14 @@ Current population, household, economic, neighborhood, and regional-growth data 
   Defines the geography, population, household, housing-unit, group-quarters, and employment fields used in MRMPO’s 2025 regional and county forecast workbooks, including the industries assigned to basic, retail, and service employment.
 
   [Official MRMPO PDF](https://www.mrcog-nm.gov/DocumentCenter/View/6657) · [Official Forecast Hub](https://www.mrcog-nm.gov/227/Socioeconomic-Forecasts)
+
+## Historical Planning Impact Area Study Components
+
+The City’s historical Planning Impact Area population and land use study is represented here by one grouped incomplete component set: Chapters 1.0, 3, 5, and 8. These original City chapter files are historical planning evidence, not current population estimates. They do not constitute a complete study; no other chapters are inferred and no combined PDF has been created.
+
+Archived components (each retains its separate official City original):
+
+- [Chapter 1.0 (Executive Summary)](https://files.abqinfo.com/city-data/demographics/cabq-planning-impact-area-chapter-01-executive-summary.pdf) · [Official City PDF](https://www.cabq.gov/planning/documents/chapter1_2010.pdf)
+- [Chapter 3](https://files.abqinfo.com/city-data/demographics/cabq-planning-impact-area-chapter-03.pdf) · [Official City PDF](https://www.cabq.gov/planning/documents/chapter3_2010.pdf)
+- [Chapter 5](https://files.abqinfo.com/city-data/demographics/cabq-planning-impact-area-chapter-05.pdf) · [Official City PDF](https://www.cabq.gov/planning/documents/chapter5_2010.pdf)
+- [Chapter 8](https://files.abqinfo.com/city-data/demographics/cabq-planning-impact-area-chapter-08.pdf) · [Official City PDF](https://www.cabq.gov/planning/documents/chapter8_2010.pdf)
