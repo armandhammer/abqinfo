@@ -73,6 +73,10 @@ def guard_current_delta():
     assert stage.read_bytes('project-state/discovery/consolidated-human-review-queue.md') == subprocess.check_output(['git','show',baseline+':project-state/discovery/consolidated-human-review-queue.md'],cwd=ROOT)
     for p, expected in data['protected_correction_evidence'].items():
         assert hashlib.sha256(canonical_bytes(stage.read_bytes(p))).hexdigest() == expected, 'Quality evidence/debt witness changed'
+    receipts = stage.load_json('project-state/discovery/old-town-quality-correction-2026-09-26/currentness-evidence.json')
+    pdf = next(r for r in receipts['sources'] if r['saved_path'].endswith('.pdf'))
+    actual_pdf = stage.read_bytes(pdf['saved_path'])
+    assert len(actual_pdf) == pdf['size_bytes'] and hashlib.sha256(actual_pdf).hexdigest() == pdf['sha256'], 'Currentness PDF original bytes changed'
     rows = {r['id']: r for r in current['candidates']}
     texts = {p: stage.read_text(p) for p in data['pr_changed_pages']}
     for rid in data['excluded_ids']:
