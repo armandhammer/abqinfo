@@ -2,7 +2,7 @@
   "task_id": "governance-bootstrap-2026-09-27",
   "baseline_commit": "940e3032d96f868eed8cff7c3deeaf1c556f50a2",
   "branch": "codex/durable-governance",
-  "state": "pr_open",
+  "state": "integrated",
   "authorized_effect": "Background governance fix integration and main/planning reconciliation, under the current owner instruction",
   "pr198_head_unchanged": "a6997a3cb40dafdfc6ad0bc4a6343e4d5688cbc5",
   "content_changes": 0,
@@ -12,5 +12,19 @@
   "pull_request_url": "https://github.com/armandhammer/abqinfo/pull/199",
   "implementation_commit": "84810e9",
   "validation_log": "project-state/governance/normal-validation-003.log",
-  "next_external_effect": "Merge background PR 199 after checks pass, then fast-forward main and planning snapshot"
+  "merged_governance_pr": 199,
+  "merge_commit": "06b481d5a76c58fa1b98e001030294deeda627ea",
+  "branch_reconciliation": {
+    "observed_at": "after PR 199 merge, before metadata closeout",
+    "main": "06b481d5a76c58fa1b98e001030294deeda627ea",
+    "chatgpt/planning-snapshot": "06b481d5a76c58fa1b98e001030294deeda627ea",
+    "local_and_remote_equal": true
+  },
+  "cloudflare_check": "passed",
+  "pr198_contract_check": {
+    "result": "passed",
+    "applicable_ids": 125,
+    "contract": "project-state/governance/pr198/next-step-contract-v6.json"
+  },
+  "closeout": "Metadata receipt and task completion integrated separately; source implementation and governing hashes unchanged"
 }
