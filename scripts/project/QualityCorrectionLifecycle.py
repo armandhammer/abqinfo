@@ -69,7 +69,13 @@ def guard_current_delta():
     prior_review = before('project-state/discovery/consolidated-human-review-queue.json', baseline)
     current_review = stage.load_json('project-state/discovery/consolidated-human-review-queue.json')
     assert all(current_review[k] == prior_review[k] for k in prior_review if k != 'inventory_sha256')
-    assert current_review['inventory_sha256'] == hashlib.sha256(stage.read_bytes('project-state/master-inventory.json')).hexdigest()
+    # Historical queue hashes were measured on Windows checkout bytes (CRLF).
+    # Git snapshots store LF; reconstruct only those two checkout representations.
+    inventory_bytes = canonical_bytes(stage.read_bytes('project-state/master-inventory.json'))
+    assert current_review['inventory_sha256'] in {
+        hashlib.sha256(inventory_bytes).hexdigest(),
+        hashlib.sha256(inventory_bytes.replace(b'\n', b'\r\n')).hexdigest(),
+    }
     assert stage.read_bytes('project-state/discovery/consolidated-human-review-queue.md') == subprocess.check_output(['git','show',baseline+':project-state/discovery/consolidated-human-review-queue.md'],cwd=ROOT)
     for p, expected in data['protected_correction_evidence'].items():
         assert hashlib.sha256(canonical_bytes(stage.read_bytes(p))).hexdigest() == expected, 'Quality evidence/debt witness changed'

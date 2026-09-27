@@ -2,6 +2,8 @@
 import argparse
 import json
 import re
+import hashlib
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib.request import urlopen, Request
 from html.parser import HTMLParser
@@ -18,7 +20,7 @@ class Links(HTMLParser):
         if 'id' in a: self.anchors.append(a['id'])
     def handle_data(self, data): self.text += data+' '
 
-parser=argparse.ArgumentParser(); parser.add_argument('--rendered-root'); parser.add_argument('--preview'); args=parser.parse_args()
+parser=argparse.ArgumentParser(); parser.add_argument('--rendered-root'); parser.add_argument('--preview'); parser.add_argument('--receipt'); args=parser.parse_args()
 data=guard_current_delta(); stage=StageSnapshot('old-town-quality-correction')
 rows={r['id']:r for r in stage.load_json('project-state/master-inventory.json')['candidates']}
 validate_affected_records([rows[rid] for rid in data['planning_publication_ids']])
@@ -42,14 +44,16 @@ dem=pages['content/city-data/demographics.md']
 assert 'one grouped incomplete component set' in dem and 'do not constitute a complete study' in dem
 assert not re.search(r'^### .*Chapter',dem,re.M)
 for link in original['cross_links']: assert pages[link['from']].count(link['to'])==1
-if (args.rendered_root or args.preview) and not stage.end:
+if (args.rendered_root or args.preview) and (not stage.end or args.receipt):
     rendered={}
+    responses=[]
     for page in data['pr_changed_pages']:
         path=page.removeprefix('content/').removesuffix('.md')+'/'
         if args.preview:
             url=args.preview.rstrip('/')+'/'+path
             with urlopen(Request(url,headers={'User-Agent':'Mozilla/5.0 ABQInfo-Preview-Validator'}),timeout=45) as response:
                 assert response.status==200;value=response.read().decode()
+                responses.append({'url':url,'final_url':response.url,'http_status':response.status,'html_sha256':hashlib.sha256(value.encode()).hexdigest(),'verified_at':datetime.now(timezone.utc).isoformat()})
         else:value=(Path(args.rendered_root)/path/'index.html').read_text(encoding='utf-8')
         rendered[page]=Links(value)
     for record in records:
@@ -68,4 +72,6 @@ if (args.rendered_root or args.preview) and not stage.end:
     for link in original['cross_links']:
         path,anchor=link['to'].split('#');page='content/'+path.strip('/')+'.md'
         assert anchor in rendered[page].anchors
+    if args.receipt:
+        Path(args.receipt).write_text(json.dumps({'result':'passed','responses':responses,'planning_archive_source_pairs':11,'old_town_exclusions':4,'barelas_cross_links':2},indent=2)+'\n',encoding='utf-8')
 print('PASS: actual-record quality gate on eleven Planning originals; four Old Town exclusions; seven PR pages; immutable provenance/R2; approved hashes, original qualifications, descriptions, archive/source links and Barelas anchors; '+('preview' if args.preview else 'rendered' if args.rendered_root else 'source')+' checks passed.')

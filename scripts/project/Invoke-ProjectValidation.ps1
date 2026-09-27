@@ -6,6 +6,8 @@ param(
 )
 
 Set-StrictMode -Version Latest
+& python "$PSScriptRoot/Test-Pr194Closeout.py"
+if ($LASTEXITCODE) { throw 'PR #194 background closeout validation failed.' }
 & python "$PSScriptRoot/Test-PublicationQuality.py"
 if ($LASTEXITCODE) { throw 'Actual-record publication-quality regressions failed.' }
 & python "$PSScriptRoot/Audit-VisiblePublicationQuality.py"
