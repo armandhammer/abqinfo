@@ -54,6 +54,8 @@ Plans and historical records for designated Metropolitan Redevelopment Areas, wh
 
 ## Historical Capital Programming
 
+The [2011 published program record](/city-data/capital-spending/#2011-published-scope-and-version-records) compares the Planning editions, including the change from the $6.55 million initial scope to the $3 million published scope and their different redevelopment-project mixes. The original topical scopes below remain available. Neither source chronology nor these planning allocations establishes final approval or actual expenditure.
+
 - [2011 Planning General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/development-land-use/redevelopment/cabq-2011-planning-go-bond-project-scopes-published.pdf)
 
   Details 2011 Planning Department bond scopes for studying, designing, and constructing improvements, including electronic plan review, geographic information systems, permitting technology, and redevelopment support. [Full 2011 published-scope record](/city-data/capital-spending/#2011-published-scope-and-version-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/planning_scope.pdf)
