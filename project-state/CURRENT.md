@@ -4,7 +4,7 @@ Planning documents-root publication is implemented and fully validated on `conte
 
 The owner explicitly authorized the completed-stage lifecycle architecture for this PR. Nine contiguous stage intervals, the original 86-record mission-scope audit and 109 immutable historical evidence files are registered. The active guard preserves exactly the twelve implementation transitions, six approved content pages, source/provenance, page hashes and unchanged R2. Twelve derived retained-source roots were added as pending; all prior audit results remain unchanged. The normal complete project suite passes, including Hugo and rendered-page links, descriptions and anchors. No special-case bypass. Evidence: `project-state/discovery/planning-documents-root-publication-final-state-validation-2026-09-26.log` and `planning-documents-root-hugo-implementation-2026-09-26.json`.
 
-Current head preview verification and final ready-for-review receipt are recorded separately. Stop for manual owner review of PR #194. Do not merge or deploy without subsequent explicit owner approval.
+Final-state preview verified at `https://c1b65bde.abqinfo.pages.dev` (commit `8cfbce47b22457972113412470f2668b2c4aceb7`). Ready-for-review receipt: `project-state/discovery/planning-documents-root-publication-ready-review-2026-09-26.json`. Stop for manual owner review of PR #194. Do not merge or deploy without subsequent explicit owner approval.
 
 ## Prior completed work
 
