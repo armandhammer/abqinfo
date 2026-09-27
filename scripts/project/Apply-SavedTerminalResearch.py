@@ -10,6 +10,11 @@ import argparse, json
 from datetime import datetime, timezone
 from pathlib import Path
 
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
+
 def walk(value, found):
     if isinstance(value, dict):
         if value.get('id') and value.get('recommended_status') in {'excluded','duplicate','superseded'}: found[value['id']] = value

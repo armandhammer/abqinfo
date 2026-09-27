@@ -10,6 +10,11 @@ import re
 import subprocess
 from pathlib import Path
 
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
+
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / 'project-state/discovery/consolidated-human-review-queue.json'
 REPORT = OUT.with_suffix('.md')

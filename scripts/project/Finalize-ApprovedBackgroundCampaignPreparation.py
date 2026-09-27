@@ -1,6 +1,11 @@
 """Record completed agent visual review and guarded campaign capacity plan."""
 import importlib.util,json,hashlib,subprocess
 from pathlib import Path
+
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
 spec=importlib.util.spec_from_file_location('campaign',Path(__file__).with_name('Prepare-ApprovedBackgroundCampaign.py'));c=importlib.util.module_from_spec(spec);spec.loader.exec_module(c)
 d=c.load(c.ART);live=c.load(c.BASE);inv=c.load(c.ROOT/'project-state/master-inventory.json')['candidates']
 if d['state']=='complete_background_campaign':raise SystemExit('Campaign complete; no readiness/state reset allowed.')

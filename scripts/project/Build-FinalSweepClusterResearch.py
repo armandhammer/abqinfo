@@ -14,6 +14,11 @@ import os
 import re
 import urllib.parse
 
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
+
 OUT = r'C:\Users\ben\Documents\ABQinfo\project-state\discovery\final-sweep-cluster-research-2026-09-13.json'
 INV = r'C:\Users\ben\Documents\ABQinfo\project-state\master-inventory.json'
 DISC = r'C:\Users\ben\Documents\ABQinfo\project-state\discovery'

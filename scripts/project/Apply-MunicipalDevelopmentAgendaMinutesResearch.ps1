@@ -1,5 +1,12 @@
 [CmdletBinding()]
 param([string]$ResearchPath='project-state/discovery/municipaldevelopment-agenda-minutes-cluster-research-2026-09-12.json',[string]$InventoryPath='project-state/master-inventory.json',[string]$OutputPath='project-state/discovery/municipaldevelopment-agenda-minutes-family-decision-2026-09-20.json')
+
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference='Stop'
 $research=Get-Content -Raw -Encoding UTF8 $ResearchPath|ConvertFrom-Json;$inventory=Get-Content -Raw -Encoding UTF8 $InventoryPath|ConvertFrom-Json;$byId=@{};foreach($r in $inventory.candidates){$byId[$r.id]=$r};$now=(Get-Date).ToUniversalTime().ToString('o')

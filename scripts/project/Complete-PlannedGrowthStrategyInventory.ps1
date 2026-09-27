@@ -1,6 +1,13 @@
 [CmdletBinding()]
 param()
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $closeout = Get-Content -Raw -Encoding UTF8 'project-state/discovery/planned-growth-strategy-production-closeout-2026-09-24.json' | ConvertFrom-Json -DateKind String

@@ -7,6 +7,8 @@
 
 ## Durable Project State
 
+- Mandatory governance for every substantive review, disposition, quality assessment, consolidation, archive, content/removal, placement/cross-listing or visitor-visible task: inspect repository state; freeze exact task population; resolve the complete active `project-state/governance-registry.json` with `scripts/project/Resolve-TaskGovernance.py`; review/implement under its immutable contract; freshness-check immediately before mutation; validate against that same contract at completion. Follow `project-state/governance-workflow.md`. CURRENT, memory, historical searches and relevance judgment cannot substitute for exhaustive registry resolution. Register new binding decisions in the same change. Active authority requires explicit authorized supersession; no chronology-based precedence. Pause before any conflicting implementation.
+
 - At the start of a task, inspect the current Git branch and working-tree state and read `project-state/CURRENT.md` when present. Read `project-state/checkpoint.json` and `project-state/active-run.json` only when they are relevant to the task.
 - `project-state/master-inventory.json` is authoritative project state, but do not read it wholesale by default. Use the repository's deterministic scripts or targeted parsing to retrieve only the candidate records or fields needed for the task. Load the full inventory only when a task explicitly requires full-inventory validation, regeneration, or another operation that inherently needs the complete file.
 - Do not pull, rebase, merge, or otherwise reconcile with `origin/main` merely as startup housekeeping. Compare with `origin/main` when needed for the task and preserve the current worktree and branch state.

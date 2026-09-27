@@ -1,6 +1,13 @@
 [CmdletBinding()]
 param([string]$OutputPath = 'project-state/discovery/historical-transportation-review-27-decisions.json')
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $taskPage = 'content/transportation/transportation-plans.md'

@@ -4,6 +4,11 @@ import concurrent.futures, hashlib, json, urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
+
 ROOT = Path(__file__).resolve().parents[2]
 D = ROOT / 'project-state/discovery'
 def load(p): return json.loads(p.read_text(encoding='utf-8-sig'))

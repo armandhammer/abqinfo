@@ -7,6 +7,13 @@ param(
   [string]$ReportPath = 'project-state/discovery/map-dashboard-audit-report-2026-08-30.json'
 )
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 if ($PSVersionTable.PSVersion.Major -lt 7) { throw 'PowerShell 7 or newer is required to preserve canonical JSON formatting.' }

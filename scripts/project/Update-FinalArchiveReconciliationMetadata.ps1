@@ -3,6 +3,13 @@ param(
     [string]$MasterPath = 'project-state/master-inventory.json',
     [string[]]$LinkedMasterIds = @('src-6735737588d294e0', 'src-3c9907796a0cfaf3', 'src-f6feb3549d055097')
 )
+
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
 $ErrorActionPreference = 'Stop'
 $timestamp = (Get-Date).ToUniversalTime().ToString('o')
 $path = [IO.Path]::GetFullPath($MasterPath)

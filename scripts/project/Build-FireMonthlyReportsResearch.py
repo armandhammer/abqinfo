@@ -18,6 +18,11 @@ import re
 import subprocess
 import urllib.parse
 
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
+
 OUT = (r'C:\Users\ben\Documents\ABQinfo\project-state\discovery'
        r'\fire-monthly-reports-research-2026-09-15.json')
 INV = r'C:\Users\ben\Documents\ABQinfo\project-state\master-inventory.json'

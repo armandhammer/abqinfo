@@ -5,6 +5,13 @@ param(
   [string]$R2InventoryPath = 'project-state/r2-inventory.json'
 )
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $plan = Get-Content -Raw -Encoding UTF8 -LiteralPath $PlanPath | ConvertFrom-Json

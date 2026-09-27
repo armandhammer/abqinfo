@@ -2,6 +2,11 @@
 """Persist Git/GitHub mutation intents/results without recursive receipt commits."""
 import argparse, json, msvcrt, runpy, subprocess, sys
 from pathlib import Path
+
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
 c=runpy.run_path(str(Path(__file__).with_name('BackgroundCampaign.py')))
 ROOT,load,save,context,now=(c[k] for k in ['ROOT','load','save','context','now'])
 p=argparse.ArgumentParser();p.add_argument('--label',required=True);p.add_argument('command',nargs=argparse.REMAINDER);a=p.parse_args();cmd=a.command

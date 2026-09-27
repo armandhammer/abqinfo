@@ -5,6 +5,11 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
+
 
 ROOT = Path(__file__).resolve().parents[2]
 RESEARCH_PATH = ROOT / "project-state/discovery/municipaldevelopment-agenda-minutes-cluster-research-2026-09-12.json"

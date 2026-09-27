@@ -9,6 +9,11 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+
+if (-not $WhatIfPreference) {
+  & python "$PSScriptRoot/Resolve-TaskGovernance.py" active --phase mutation --operation external_mutation | Out-Null
+  if ($LASTEXITCODE) { throw 'Task governance external-action gate failed.' }
+}
 if ([string]::IsNullOrWhiteSpace($Key) -or $Key.StartsWith('/') -or $Key.EndsWith('/')) {
   throw 'Key must identify one exact R2 object, not a prefix.'
 }

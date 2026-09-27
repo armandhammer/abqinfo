@@ -5,6 +5,13 @@ param(
   [string]$OutputPath = 'project-state/discovery/claude-consolidation-research-queue-2026-09-13.json'
 )
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 

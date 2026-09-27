@@ -9,6 +9,13 @@ param(
     [string]$UnresolvedOutputPath = 'project-state/discovery/archive-reconciliation-unresolved-review-2026-09-17.json'
 )
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 $ErrorActionPreference = 'Stop'
 $manifest = Get-Content -Raw -Encoding UTF8 $ManifestPath | ConvertFrom-Json
 $provenance = Get-Content -Raw -Encoding UTF8 $ProvenancePath | ConvertFrom-Json

@@ -4,6 +4,13 @@ param(
   [string]$OutputPath = 'project-state/near-complete-review-decisions-2026-08-20.json'
 )
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 

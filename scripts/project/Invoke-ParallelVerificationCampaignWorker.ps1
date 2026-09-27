@@ -13,6 +13,13 @@ param(
   [Parameter(DontShow)][ValidateSet('','before-verification','after-verification-before-result','after-result','after-batch')][string]$TestInterruptAt=''
 )
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference='Stop'
 . "$PSScriptRoot/ParallelVerification.Campaign.Common.ps1"

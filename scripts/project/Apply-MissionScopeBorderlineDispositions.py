@@ -7,6 +7,11 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
+
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_INVENTORY = ROOT / 'project-state/master-inventory.json'
 DEFAULT_QUEUE = ROOT / 'project-state/discovery/mission-scope-borderline-human-review-queue.json'

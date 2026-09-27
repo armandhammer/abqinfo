@@ -9,6 +9,11 @@ import sys
 import urllib.request
 from pathlib import Path
 
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
+
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "tmp/pgs-pdf-deps"))
 import pymupdf as fitz

@@ -3,6 +3,13 @@ param(
     [string]$LiveR2Path = 'project-state/discovery/live-r2-object-inventory-2026-09-16.json',
     [string]$R2Path = 'project-state/r2-inventory.json'
 )
+
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
 $ErrorActionPreference = 'Stop'
 function Read-Json([string]$Path) { Get-Content -LiteralPath $Path -Raw | ConvertFrom-Json -DateKind String }
 function Fail([string]$Message) { throw $Message }

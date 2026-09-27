@@ -1,6 +1,13 @@
 [CmdletBinding()]
 param([string]$CheckpointPath = 'project-state/checkpoint.json')
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $artifact = Get-Content -Raw -Encoding UTF8 -LiteralPath 'project-state/discovery/planned-growth-strategy-hugo-implementation-2026-09-23.json' | ConvertFrom-Json

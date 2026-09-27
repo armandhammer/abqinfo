@@ -10,6 +10,11 @@ import datetime
 import json
 import os
 
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
+
 OUT = r'C:\Users\ben\Documents\ABQinfo\project-state\discovery\west-central-mra-cluster-research-2026-09-12.json'
 INV = r'C:\Users\ben\Documents\ABQinfo\project-state\master-inventory.json'
 FETCH = (r'C:\Users\ben\AppData\Local\Temp\claude\C--Users-ben-Documents-ABQinfo'

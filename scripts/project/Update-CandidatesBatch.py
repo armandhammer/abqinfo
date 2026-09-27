@@ -27,5 +27,8 @@ counts=collections.Counter(r['status'] for r in rows.values());inventory['counts
 eligible=[r['id'] for r in rows.values() if r['status'] in ['pending review','approved for addition','downloaded','parsed','description drafted','placement assigned'] or r['status']=='implemented' and r.get('validation_status')!='passed']
 inventory['next_pending_id']=min(eligible) if eligible else None;inventory['generated_at']=now
 assert path.read_bytes()==original,'Inventory changed during preflight; retry without overwriting'
+if path.resolve() == (ROOT/'project-state/master-inventory.json').resolve():
+ from TaskGovernance import active_check
+ active_check('mutation', 'inventory_disposition', [x['id'] for x in request])
 temporary=path.with_name(path.name+'.batch-update.tmp');temporary.write_text(json.dumps(inventory,indent=2,ensure_ascii=False)+'\n',encoding='utf-8');temporary.replace(path)
 print('Applied',len(request),'explicit updates atomically; existing mission-scope policy passed.')

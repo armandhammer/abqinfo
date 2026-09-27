@@ -1,5 +1,7 @@
 # ABQ Info project state
 
+Every substantive task must freeze its population and resolve the entire active governance registry before record review. Follow [governance-workflow.md](governance-workflow.md); historical searches and CURRENT are not substitutes. The normal validation suite requires an immutable current task contract.
+
 For normal Codex work, read `AGENTS.md` and [CURRENT.md](CURRENT.md). `CURRENT.md` is the compact durable resume state between sessions and between Codex logins. The former Codex/Claude handoff protocol is historical and must not be loaded as routine startup context.
 
 For concurrent file/source/link verification within the Codex workflow, follow [PARALLEL-VERIFICATION.md](PARALLEL-VERIFICATION.md). It uses immutable disjoint shards in detached worktrees and reserves all durable state changes for one integrator. Legacy `codex` and `claude` lane IDs remain compatibility identifiers, not separate active AI agents.

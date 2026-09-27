@@ -1,5 +1,10 @@
 import json, collections, datetime, os, sys
 
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
+
 OUT = r'C:\Users\ben\Documents\ABQinfo\project-state\discovery\construction-documents-cluster-research-2026-09-11.json'
 
 BASE = 'https://www.cabq.gov/municipaldevelopment/documents/construction-documents/'

@@ -4,6 +4,13 @@ param(
   [string]$PlanPath = 'project-state/discovery/paseo-del-volcan-r2-archive-plan-2026-09-17.json'
 )
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 

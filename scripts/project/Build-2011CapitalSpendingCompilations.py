@@ -7,6 +7,11 @@ import importlib.util
 import json
 from pathlib import Path
 
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
+
 
 ROOT = Path(__file__).resolve().parents[2]
 MANIFEST = ROOT / "project-state/discovery/2011-capital-spending-consolidation-manifest-2026-09-18.json"

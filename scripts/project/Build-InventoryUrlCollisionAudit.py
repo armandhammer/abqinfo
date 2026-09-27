@@ -13,6 +13,11 @@ import datetime
 import json
 import os
 
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
+
 OUT = r'C:\Users\ben\Documents\ABQinfo\project-state\discovery\inventory-url-collision-audit-2026-09-11.json'
 INV = r'C:\Users\ben\Documents\ABQinfo\project-state\master-inventory.json'
 CKPT = r'C:\Users\ben\Documents\ABQinfo\project-state\checkpoint.json'

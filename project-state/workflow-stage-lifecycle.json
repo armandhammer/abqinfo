@@ -128,6 +128,18 @@
       "exact_delta_guard": {
         "module": "Pr196CloseoutLifecycle",
         "function": "guard_current_delta"
+      },
+      "end_commit": "940e3032d96f868eed8cff7c3deeaf1c556f50a2"
+    },
+    {
+      "id": "durable-governance",
+      "baseline_commit": "940e3032d96f868eed8cff7c3deeaf1c556f50a2",
+      "regression_scripts": [
+        "scripts/project/Test-TaskGovernance.py"
+      ],
+      "exact_delta_guard": {
+        "module": "GovernanceLifecycle",
+        "function": "guard_current_delta"
       }
     }
   ],
@@ -863,6 +875,76 @@
       "path": "project-state/discovery/quality-remediation-first-2026-09-27/validation.json",
       "commit": "a7b470ec2e5391639b85ce4995e55b8886652c00",
       "sha256": "aa16e7f9c6c7a0854532f010b10af274a2fddd688e41bf47739bbba0ff3e50b9"
+    },
+    {
+      "path": "project-state/discovery/pr196-production-closeout-2026-09-27/city-data-capital-spending-merge-deployment.html.gz",
+      "commit": "940e3032d96f868eed8cff7c3deeaf1c556f50a2",
+      "sha256": "cedbbef720e391a6bbf1b77a464b0a79e89af1752cccdda10766f5379402320f"
+    },
+    {
+      "path": "project-state/discovery/pr196-production-closeout-2026-09-27/city-data-capital-spending-production.html.gz",
+      "commit": "940e3032d96f868eed8cff7c3deeaf1c556f50a2",
+      "sha256": "b0d2b71a0155f74ca9762b1461c25074490ff434ffdeb1189ab927aa35ccad5d"
+    },
+    {
+      "path": "project-state/discovery/pr196-production-closeout-2026-09-27/city-data-capital-spending-reviewed-preview.html.gz",
+      "commit": "940e3032d96f868eed8cff7c3deeaf1c556f50a2",
+      "sha256": "cedbbef720e391a6bbf1b77a464b0a79e89af1752cccdda10766f5379402320f"
+    },
+    {
+      "path": "project-state/discovery/pr196-production-closeout-2026-09-27/development-land-use-development-process-merge-deployment.html.gz",
+      "commit": "940e3032d96f868eed8cff7c3deeaf1c556f50a2",
+      "sha256": "65098c76b46211a20670a052933c439ecc5bac46cab5fd87b0472205d21f1b68"
+    },
+    {
+      "path": "project-state/discovery/pr196-production-closeout-2026-09-27/development-land-use-development-process-production.html.gz",
+      "commit": "940e3032d96f868eed8cff7c3deeaf1c556f50a2",
+      "sha256": "0e991556f81802d8f8e7b827e5109329285f14ec9e52c5343c5e2d8d1320376e"
+    },
+    {
+      "path": "project-state/discovery/pr196-production-closeout-2026-09-27/development-land-use-development-process-reviewed-preview.html.gz",
+      "commit": "940e3032d96f868eed8cff7c3deeaf1c556f50a2",
+      "sha256": "65098c76b46211a20670a052933c439ecc5bac46cab5fd87b0472205d21f1b68"
+    },
+    {
+      "path": "project-state/discovery/pr196-production-closeout-2026-09-27/merge-production-receipt.json",
+      "commit": "940e3032d96f868eed8cff7c3deeaf1c556f50a2",
+      "sha256": "005b3141c665274a851e88cc3bf9b68767337f1af5bc4d052146844636688981"
+    },
+    {
+      "path": "project-state/discovery/pr196-production-closeout-2026-09-27/normal-project-validation.log",
+      "commit": "940e3032d96f868eed8cff7c3deeaf1c556f50a2",
+      "sha256": "52f8b6bb9b9bebcc8e767e4d0da150effd708abe622fa5dafb8a535d43f8c367"
+    },
+    {
+      "path": "project-state/discovery/pr196-production-closeout-2026-09-27/pr-description.md",
+      "commit": "940e3032d96f868eed8cff7c3deeaf1c556f50a2",
+      "sha256": "087d590dca367c3b793547565177de803f9f985239bdb2d1913e1c0decea31f7"
+    },
+    {
+      "path": "project-state/discovery/pr196-production-closeout-2026-09-27/production-verification.json",
+      "commit": "940e3032d96f868eed8cff7c3deeaf1c556f50a2",
+      "sha256": "dcae90cafb1488f82366e8f8f871c14a604ff21c81b285d90a90e7d7c6df6040"
+    },
+    {
+      "path": "project-state/discovery/pr196-production-closeout-2026-09-27/transportation-transportation-plans-merge-deployment.html.gz",
+      "commit": "940e3032d96f868eed8cff7c3deeaf1c556f50a2",
+      "sha256": "a6067359868ee36dc79b86b879d4b5b9904ccd802e25ec3de1391affc7ddf23a"
+    },
+    {
+      "path": "project-state/discovery/pr196-production-closeout-2026-09-27/transportation-transportation-plans-production.html.gz",
+      "commit": "940e3032d96f868eed8cff7c3deeaf1c556f50a2",
+      "sha256": "1d85cafa94a8b254473adb2e308ae16a31ec4229ddd52408d80652d70e43e744"
+    },
+    {
+      "path": "project-state/discovery/pr196-production-closeout-2026-09-27/transportation-transportation-plans-reviewed-preview.html.gz",
+      "commit": "940e3032d96f868eed8cff7c3deeaf1c556f50a2",
+      "sha256": "a6067359868ee36dc79b86b879d4b5b9904ccd802e25ec3de1391affc7ddf23a"
+    },
+    {
+      "path": "project-state/discovery/pr196-production-closeout-2026-09-27/validation.json",
+      "commit": "940e3032d96f868eed8cff7c3deeaf1c556f50a2",
+      "sha256": "24c02b37c3b6820c693b428ea955e768719457164fb2f64c27728b5cf59c7527"
     }
   ],
   "completed_audits": [

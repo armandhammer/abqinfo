@@ -9,6 +9,11 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
+
 ROOT = Path(__file__).resolve().parents[2]
 sys.dont_write_bytecode = True
 inspection_spec = importlib.util.spec_from_file_location("later_ms4_inspection", Path(__file__).with_name("Inspect-LaterMs4ArchivePreparation.py"))

@@ -4,6 +4,13 @@ param(
   [string]$ReportPath = 'project-state/discovery/post-pr132-content-quality-review-2026-09-13.md'
 )
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 

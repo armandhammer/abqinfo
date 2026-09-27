@@ -1,6 +1,11 @@
 """Fast-forward only branch reconciliation and durable final live-ref receipt."""
 import importlib.util,subprocess,sys
 from pathlib import Path
+
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
 s=importlib.util.spec_from_file_location('task_external',Path(__file__).with_name('Invoke-BackgroundFollowupExternal.py'));m=importlib.util.module_from_spec(s);s.loader.exec_module(m)
 assert m.git('branch','--show-current')=='chatgpt/planning-snapshot'
 assert not m.git('diff','--name-only') and not m.git('diff','--cached','--name-only')

@@ -1,6 +1,13 @@
 [CmdletBinding()]
 param([string]$OutputPath = 'project-state/discovery/2009-go-bond-retained-11-decisions.json')
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 

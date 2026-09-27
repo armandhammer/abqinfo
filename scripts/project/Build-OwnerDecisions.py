@@ -1,5 +1,10 @@
 """Create explicit owner dispositions and absent-key original archive plan."""
 from OwnerDecisions import *
+
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
 a=load(F/'authorization.json');base={r['id']:r for r in load(F/'baseline-records.json')};inspect={r['id']:r for r in load(F/'inspection.json')};live=load(F/'r2-baseline.json');updates=[];items=[]
 keys={'src-10209c5fcdce2906':'construction-stormwater-bmp-details-draft-2026-02-02.pdf','src-30b5123b798a30f3':'dpm-ch23-section-3-3-pavement-design-draft-2017-10-12.pdf','src-3ff7d77c284d06a8':'dpm-ch23-section-3-5-pedestrian-facilities-draft.pdf','src-967a816e5ddac695':'dpm-ch23-section-3-9-7-median-turn-lane-draft-2017-11-27.pdf','src-dda1163373f3754c':'dpm-chapter-7-proposed-changes-markups-2026-04-14.pdf','src-f904f6d8bf3787f5':'dpm-chapter-7-proposed-changes-letter-2026-02-24.pdf'}
 for p in load(F/'baseline-owner-packages.json'):

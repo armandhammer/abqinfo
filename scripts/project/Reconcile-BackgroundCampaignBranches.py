@@ -2,6 +2,11 @@
 """Non-destructive background branch reconciliation with durable final receipts."""
 import json, msvcrt, runpy, subprocess, sys
 from pathlib import Path
+
+if __name__ == '__main__':
+    from GovernedEntrypoint import require_tool_governance
+    require_tool_governance(__file__)
+
 c=runpy.run_path(str(Path(__file__).with_name('BackgroundCampaign.py')))
 ROOT,load,save,rel,context,now,git=(c[k] for k in ['ROOT','load','save','rel','context','now','git'])
 assert git('branch','--show-current')=='chatgpt/planning-snapshot','Run from the framework planning checkout'

@@ -1,5 +1,7 @@
 # Conflict-free parallel verification
 
+Freeze the complete task population and resolve the active governance registry before verification/review. The integrator and each shard use the same immutable contract and their assigned candidate rules. Follow [governance-workflow.md](governance-workflow.md); this workflow provides no alternate startup or mutation path.
+
 ABQInfo uses a **parallel readers, single writer** workflow when verification workers process candidate files, official sources, and links concurrently. Workers receive deterministic, non-overlapping shards in separate detached Git worktrees. They may read their checkout and create exactly one assigned result artifact outside Git. They may not change inventory, checkpoint, content, queues, Git state, or R2. Legacy `codex` and `claude` lane IDs are retained for script and artifact compatibility; both are lanes in one logical Codex workflow, not separate active AI agents.
 
 This workflow is for verification. It does not authorize additions, archival, uploads, commits, PRs, merges, or deployment.

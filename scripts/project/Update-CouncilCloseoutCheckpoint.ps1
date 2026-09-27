@@ -1,5 +1,12 @@
 [CmdletBinding()]
 param([string]$CheckpointPath='project-state/checkpoint.json',[string]$InventoryPath='project-state/master-inventory.json')
+
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference='Stop'
 $checkpoint=Get-Content -Raw -Encoding UTF8 -LiteralPath $CheckpointPath|ConvertFrom-Json

@@ -15,6 +15,13 @@ param(
   [Parameter(DontShow)][ValidateRange(0,100000)][int]$MaxCycles = 0
 )
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 

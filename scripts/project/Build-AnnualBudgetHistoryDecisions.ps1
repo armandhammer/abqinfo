@@ -4,6 +4,13 @@ param(
   [string]$OutputPath = 'project-state/annual-budget-history-decisions-2026-08-24.json'
 )
 
+. "$PSScriptRoot/Assert-TaskGovernance.ps1"
+Assert-TaskGovernance -ToolPath $PSCommandPath -Parameters $PSBoundParameters
+
+
+
+
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $parentUrl = 'https://www.cabq.gov/dfa/budget/annual-budget'

@@ -79,6 +79,10 @@ $aggregateChanged =
   (ConvertTo-ComparableJson $inventory.counts) -ne (ConvertTo-ComparableJson ([pscustomobject]$counts)) -or
   $inventory.next_pending_id -ne $expectedNext
 if ($candidateChanged -or $aggregateChanged) {
+  if ([IO.Path]::GetFullPath($InventoryPath) -eq [IO.Path]::GetFullPath("$PSScriptRoot/../../project-state/master-inventory.json")) {
+    & python "$PSScriptRoot/Resolve-TaskGovernance.py" active --phase mutation --operation inventory_disposition --candidate $Id | Out-Null
+    if ($LASTEXITCODE) { throw 'Task governance pre-mutation gate failed.' }
+  }
   $inventory.counts = [pscustomobject]$counts
   $inventory.next_pending_id = $expectedNext
   $inventory.generated_at = (Get-Date).ToUniversalTime().ToString('o')
