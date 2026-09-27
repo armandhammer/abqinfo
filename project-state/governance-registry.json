@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "61e717dcc2386b56b77d0496f3dd3c443597a7e10d5b3d8815bf451a43b59fa6",
+  "audit_sha256": "3dbb92a0b1778114f1c0cc15798034ecf3645204f52c5c6cad258ee466fc2b80",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -18783,6 +18783,78 @@
         "pr198:31-versus-32"
       ],
       "implementation_status": "Owner decision recorded; content implementation remains separate."
+    },
+    {
+      "governance_id": "owner-pr198-exact-archive-publication-2026-09-27",
+      "category": "active storage/external-action authorization",
+      "title": "Owner authorizes exact PR198 archive and settled publication implementation",
+      "scope": {
+        "candidate_ids": [
+          "src-0352ae60169eac10",
+          "src-040d6e306c1c448c",
+          "src-047e8956baad212d",
+          "src-25501032bfbfa682",
+          "src-2746069f062780cf",
+          "src-2ed981e6df5e99d2",
+          "src-352694313c3e5710",
+          "src-4bafa6f452f2f586",
+          "src-4cd84ecef3756fb0",
+          "src-535234f371b3922c",
+          "src-542056c326cf2578",
+          "src-54665bf864159096",
+          "src-5603714dac7351ba",
+          "src-7567c5f27fceba0a",
+          "src-768a6855fcfaf443",
+          "src-89b36d5577443f99",
+          "src-a31943aca401c7f0",
+          "src-a547a0278fb86fb9",
+          "src-a58b458f5d0f5284",
+          "src-b049c4df2812749b",
+          "src-b08cdbd2624ad1a0",
+          "src-b37593a011f57fae",
+          "src-b7ef66c741b8a886",
+          "src-b7f0628556085641",
+          "src-b90b07ac62c4f7fd",
+          "src-be70a79a59ae0915",
+          "src-c9af414f77032660",
+          "src-cb27c408e8c26a66",
+          "src-db9fefd23083da69",
+          "src-e69e9150b150bc1a",
+          "src-e6ca25d4cfa80752",
+          "src-f74d655ffb05fd08"
+        ],
+        "families": [
+          "go-2009",
+          "go-2011"
+        ]
+      },
+      "authority": "explicit current owner approval in this session",
+      "decision_date": "2026-09-27",
+      "effective_date": "2026-09-27",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/pr198-approved-2026-09-27/owner-approval.json",
+          "sha256": "802e1437e2f6aab185c48b8db1dacb0c0abec18a57c1410d6a7072d4e03811cf",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Authorize only the pending exact 2009 master bytes and settled v9 PR198 publication, preview and manual-review preparation. No merge, production deployment, R2 overwrite, deletion or unrelated uploads.",
+      "required_actions": [
+        "Verify exact approved archive bytes before visible publication. Preserve settled v9 architecture and separate manual merge gate."
+      ],
+      "prohibited_actions": [
+        "No autonomous merge or production deployment; no storage overwrite or deletion."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "releases_gates": [
+        "go-2009:archive-publication-authorization",
+        "go-2011:archive-publication-authorization"
+      ]
     }
   ]
 }
