@@ -92,6 +92,18 @@
       "exact_delta_guard": {
         "module": "QualityCorrectionLifecycle",
         "function": "guard_current_delta"
+      },
+      "end_commit": "648cd29745607b6a449ac01b80c8d8cc39099447"
+    },
+    {
+      "id": "pr194-background-closeout",
+      "baseline_commit": "648cd29745607b6a449ac01b80c8d8cc39099447",
+      "regression_scripts": [
+        "scripts/project/Test-Pr194Closeout.py"
+      ],
+      "exact_delta_guard": {
+        "module": "Pr194CloseoutLifecycle",
+        "function": "guard_current_delta"
       }
     }
   ],
@@ -705,6 +717,56 @@
       "path": "project-state/discovery/old-town-quality-correction-2026-09-26/implementation.json",
       "commit": "b6f559a8169c86fc3a122353994d133f2c055fd8",
       "sha256": "0736520481c2258674fa0df0b1df5d90829c05e214f539feb5169a380d4162d8"
+    },
+    {
+      "path": "project-state/discovery/old-town-quality-correction-2026-09-26/normal-project-validation.log",
+      "commit": "648cd29745607b6a449ac01b80c8d8cc39099447",
+      "sha256": "92e6d7535faf7722b3ddaafd69a66670983278832bc3249e375d44e85e746b6b"
+    },
+    {
+      "path": "project-state/discovery/old-town-quality-correction-2026-09-26/preview-validation.log",
+      "commit": "648cd29745607b6a449ac01b80c8d8cc39099447",
+      "sha256": "311315cbd58a37eae1a547216ceea43e31726a5bd2b0e3c50d4c4a33030315f0"
+    },
+    {
+      "path": "project-state/discovery/old-town-quality-correction-2026-09-26/validation.json",
+      "commit": "648cd29745607b6a449ac01b80c8d8cc39099447",
+      "sha256": "d3fde6c6bfc045e8381f05d1059599b6ed2e3df774ebcf46093a10a083519516"
+    },
+    {
+      "path": "project-state/discovery/planning-documents-root-publication-final-preview-validation-2026-09-26.log",
+      "commit": "648cd29745607b6a449ac01b80c8d8cc39099447",
+      "sha256": "fc126b2c837025edd607fd41106ba3c783b6662da9d1f06582d2c3f1f0632bf5"
+    },
+    {
+      "path": "project-state/discovery/planning-documents-root-publication-final-state-validation-2026-09-26.log",
+      "commit": "648cd29745607b6a449ac01b80c8d8cc39099447",
+      "sha256": "bcd5fdde7f74272cf5e6f828d260012d35ebc894dd1fe26bc474d5a138763d9d"
+    },
+    {
+      "path": "project-state/discovery/planning-documents-root-publication-lifecycle-validation-2026-09-26.log",
+      "commit": "648cd29745607b6a449ac01b80c8d8cc39099447",
+      "sha256": "32fa9dc732554801ae079943eac0f3ec881635e680f4b296d6751ff433dabc28"
+    },
+    {
+      "path": "project-state/discovery/planning-documents-root-publication-pr-2026-09-26.md",
+      "commit": "648cd29745607b6a449ac01b80c8d8cc39099447",
+      "sha256": "af2314c21e232d13646c3663bc4e64a84527cb58f25d3e5d888e9e6a68b1aa97"
+    },
+    {
+      "path": "project-state/discovery/planning-documents-root-publication-pr-receipt-2026-09-26.json",
+      "commit": "648cd29745607b6a449ac01b80c8d8cc39099447",
+      "sha256": "96ccc790115be8e3e6816e2ce8e91810a7f9229f861ff2b552203f53c0dc985d"
+    },
+    {
+      "path": "project-state/discovery/planning-documents-root-publication-ready-review-2026-09-26.json",
+      "commit": "648cd29745607b6a449ac01b80c8d8cc39099447",
+      "sha256": "9a331050913fd1e74b17c49a261bf87864d7e60265c0b6f702696ba074cad8ea"
+    },
+    {
+      "path": "project-state/discovery/planning-documents-root-publication-validation-2026-09-26.log",
+      "commit": "648cd29745607b6a449ac01b80c8d8cc39099447",
+      "sha256": "912442fb64da10a4d3e10edcc78a9b88173378a1c8a4cd4f643b390f168b6b7a"
     }
   ],
   "completed_audits": [
