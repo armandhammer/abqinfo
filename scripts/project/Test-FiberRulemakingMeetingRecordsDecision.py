@@ -16,7 +16,17 @@ assert records['src-2883388452797b58']['status'] == 'excluded'
 from BackgroundArchiveCampaign import completed_originals
 archive=completed_originals().get('src-b8b28358abc9a2de')
 assert records['src-b8b28358abc9a2de']['status'] == ('placement assigned' if archive else 'approved for addition')
-assert records['src-05b68a5758490499']['status'] == 'requires human review'
+owner_path = ROOT / 'project-state/discovery/owner-decisions-2026-09-26/authorization.json'
+if owner_path.exists():
+    owner = json.loads(owner_path.read_text(encoding='utf-8-sig'))
+    assert owner['decisions']['fiber-correspondence'] == 'Exclude from public-facing collection; preserve research/provenance; no original, derivative or summary publication.'
+    correspondence = records['src-05b68a5758490499']
+    assert correspondence['status'] == 'excluded' and correspondence.get('review_reason') is None
+    assert owner['decisions']['fiber-correspondence'] in correspondence['exclusion_reason']
+    assert correspondence['checksum_sha256'] == '15e6a271272e2d5f5c29a9c7b108d50b1090f7589279d902ba851f67ee07dd7b'
+    assert correspondence['r2_key'] is None and not correspondence['implementation_locations']
+else:
+    assert records['src-05b68a5758490499']['status'] == 'requires human review'
 assert records['src-09592fba403c1e2f']['checksum_sha256'] == 'dc0a42ea83998ce66b0e1add2a5c52048f12d3d6a41d4431dcbc48fc4908206b'
 assert records['src-2883388452797b58']['checksum_sha256'] == '7fd4846bd508a3e466576a11574c172e22a21fce504e8547b9d012a88306bade'
 assert records['src-b8b28358abc9a2de']['checksum_sha256'] == '068cc29a12e49e546a56d83f247ba2ecb7f05b80e3f4a03d4e0b2077891eb687'

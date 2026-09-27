@@ -44,7 +44,10 @@ with tempfile.TemporaryDirectory(prefix='abqinfo-scope-dispositions-') as direct
     inventory = {'allowed_statuses': ['pending review','approved for addition','downloading','downloaded','parsed','description drafted','placement assigned','implemented','validated','excluded','duplicate','superseded','blocked','requires human review'],
                  'candidates': candidates, 'counts': {'requires human review': 3}, 'next_pending_id': None}
     write(inventory_path, inventory)
-    write(queue_path, read(TEMPLATE))
+    template = read(TEMPLATE)
+    # This isolated three-row fixture must not inherit live resolved history.
+    template['resolved_records'] = []
+    write(queue_path, template)
     write(artifact_path, {'artifact_type': 'test_family_decision'})
     run('Sync-MissionScopeBorderlineQueue.py', '--inventory', inventory_path, '--queue', queue_path, '--recorded-at', '2026-09-23')
     positive = {

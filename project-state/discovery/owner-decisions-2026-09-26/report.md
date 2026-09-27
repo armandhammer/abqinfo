@@ -1,0 +1,11 @@
+# Owner decision closeout
+
+All four packages and eleven rows are resolved by the current explicit owner instruction. Nine retained originals have complete scope and quality assessments and historical presentation restrictions in inventory. The three ART originals preserve contributed advocacy and participant authorship: they are not City findings or approved minutes. The six DPM originals form a historical proposal/draft series; dates, companion relationships and the distinction from adopted records are preserved. No enactment or supersession is inferred. Fiber correspondence is excluded from publication in original, derivative or summary form; wireless staff checklist is excluded by an explicit scope-significance disposition with preserved prior assessment.
+
+Six absent-key DPM uploads added exactly 4,522,318 bytes. Every complete public GET matched the preserved original size and SHA-256. The three existing ART public objects were reverified without upload. Final R2: 1,610 objects / 10,689,937,835 bytes; ceiling headroom 2,310,062,165 bytes. No deletion or overwrite. The 10-page February 2 BMP draft was preserved; the different later 11-page download remains historical retrieval evidence.
+
+Owner-decision and scope-borderline queues: zero unresolved records. Codex factual follow-up queue: 39 unchanged prerequisites. Ordinary queue: 372 pending records with existing gates and blockers. The unrelated 280,024,902-byte Sunport original remains over the 150,000,000-byte object ceiling.
+
+Authoritative artifacts: authorization.json, baseline-records.json, decisions.json, wireless-scope-disposition.json, inspection.json, archive-plan.json, archive-receipts.json, existing-art-public-verification.json, r2-baseline.json and r2-final.json. Historical audits are sealed at the next authorized baseline; Test-OwnerDecisions.py audits all live owner changes. Full validation receipts and logs, then integration and branch-ref receipts, establish completion.
+
+No visitor-visible files changed. Further visible editorial work requires its separately reviewed PR. The next background research stage should address the exact 39 remaining factual prerequisites; no owner decisions remain to request.

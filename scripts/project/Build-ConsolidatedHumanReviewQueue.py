@@ -83,16 +83,16 @@ def build():
     result = dict(schema_version=1, artifact_type='consolidated_human_review_decision_queue', recorded_at='2026-09-26',
                   inventory_sha256=hashlib.sha256(raw).hexdigest(), record_count=len(rows), package_count=len(packages),
                   membership_rule='All and only current inventory candidates with status requires human review, exactly once.',
-                  authority='Owner-invoked policy reassessment separated factual research from genuine privacy/editorial choices. Options remain proposals; no owner choice has been applied.',
+                  authority='Owner-invoked policy reassessment separated factual research from genuine privacy/editorial choices. Current unresolved choices only; completed owner decisions are recorded in owner-decisions-2026-09-26/authorization.json when present.',
                   link_policy='Saved links only; not live-verified by this task. Null means no link recorded, not proof of absence. R2 availability does not establish official provenance.',
                   refresh_command='python scripts/project/Build-ConsolidatedHumanReviewQueue.py',
                   mission_scope_queue=dict(path='project-state/discovery/mission-scope-borderline-human-review-queue.json', unresolved_count=scope['unresolved_count'], role='Exclusive operational queue for scope-borderline cases; this consolidated view does not replace or populate it.'),
                   excluded_from_this_queue='Pending records, approved archive/architecture blockers and other statuses are not human-review membership. No historical resolved family is reopened.',
                   packages=packages)
     lines = ['# Consolidated ABQInfo human-review decision queue', '', f"Snapshot: 2026-09-26 — **{len(rows)} records in {len(packages)} decision packages**.", '',
-             'This queue contains only genuine owner privacy/editorial decisions. Source recovery, family reconciliation, minutes searches and finality prerequisites are Codex work in `codex-human-review-followup-queue.json`. Options are proposed decisions; none has been applied. Visible publication retains manual review.', '',
+             'This queue contains only genuine owner privacy/editorial decisions. Source recovery, family reconciliation, minutes searches and finality prerequisites are Codex work in `codex-human-review-followup-queue.json`. Completed owner choices are preserved in their dated decision artifact; this queue contains only unresolved choices. Visible publication retains manual review.', '',
              'All membership comes from current `requires human review` status and an explicit owner-decision kind/package. The reassessment evidence records research and automatic dispositions separately. Links below retain saved provenance; see retrieval receipts for live checks. R2 identity does not establish authorship or adoption. No visitor-visible content changed.', '',
-             f"The exclusive mission-scope borderline queue has {scope['unresolved_count']} unresolved records; it remains unchanged. Pending live-service prerequisites and approved architecture blockers are outside this queue.", '',
+             f"The exclusive mission-scope borderline queue has {scope['unresolved_count']} unresolved records. Pending live-service prerequisites and approved architecture blockers are outside this queue.", '',
              'Regenerate with `python scripts/project/Build-ConsolidatedHumanReviewQueue.py`; validate freshness and coverage with `--check`.', '', '## Decision index', '', '| Package | Records |', '| --- | ---: |']
     for p in packages:
         lines.append(f"| [{p['title']}](#{p['package_id']}) | {p['record_count']} |")
