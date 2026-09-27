@@ -15227,7 +15227,7 @@
         },
         {
           "path": "scripts/project/Test-TaskGovernance.py",
-          "sha256": "83a4a465a2f2700cd0e9291da7d88b6a9454177aa0237b5dfa9a7057f3300907",
+          "sha256": "bc5fcc689ebaa279dc78f7c22ed02b2890692566c69c60157e7ccc7139304e43",
           "binding_pointers": [
             "/implementation"
           ]
@@ -17324,7 +17324,7 @@
     },
     {
       "governance_id": "policy-settled-september13-findings",
-      "category": "active project-wide policy",
+      "category": "explicitly superseded historical decision",
       "title": "Preserve every original September13 negative finding as settled historical evidence",
       "scope": {
         "candidate_ids": [
@@ -17426,7 +17426,7 @@
       "authority": "explicit owner instruction / standing actual-record quality policy",
       "decision_date": "2026-09-13",
       "effective_date": "2026-09-13",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/discovery/publication-quality-remediation-2026-09-26.json",
@@ -17819,7 +17819,12 @@
         }
       ],
       "unresolved_gates": [],
-      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority.",
+      "superseded_by": "policy-settled-september13-findings-after-owner-keep",
+      "supersession_evidence": {
+        "path": "project-state/governance/owner-keep-2026-09-27/owner-decision.json",
+        "pointer": "/supersession_proposals/policy-settled-september13-findings"
+      }
     },
     {
       "governance_id": "policy-source-priorities",
@@ -17887,7 +17892,7 @@
     },
     {
       "governance_id": "pr198-population-boundary",
-      "category": "active owner decision",
+      "category": "explicitly superseded historical decision",
       "title": "The immutable queue has 32 capital matches against the requested 31",
       "scope": {
         "task_ids": [
@@ -17900,7 +17905,7 @@
       "authority": "explicit owner response / pause instruction",
       "decision_date": "2026-09-27",
       "effective_date": "2026-09-27",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/pr198/freeze-evidence.json",
@@ -17934,7 +17939,12 @@
           ]
         }
       ],
-      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority.",
+      "superseded_by": "owner-pr198-2009-community-authorization-keep",
+      "supersession_evidence": {
+        "path": "project-state/governance/owner-keep-2026-09-27/owner-decision.json",
+        "pointer": "/supersession_proposals/pr198-population-boundary"
+      }
     },
     {
       "governance_id": "workflow-autonomous-verification",
@@ -18137,6 +18147,642 @@
       "settled_decisions": [],
       "unresolved_gates": [],
       "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+    },
+    {
+      "governance_id": "policy-settled-september13-findings-after-owner-keep",
+      "category": "active project-wide policy",
+      "title": "Preserve every original September13 negative finding as settled historical evidence",
+      "scope": {
+        "candidate_ids": [
+          "src-0352ae60169eac10",
+          "src-040d6e306c1c448c",
+          "src-047e8956baad212d",
+          "src-087842cdf31bbd1c",
+          "src-089361e5a66d4fea",
+          "src-0ab1f927f3729215",
+          "src-0aebef9e2df3a7c4",
+          "src-0e7f98215f3fbb7d",
+          "src-0fa26c668eff7260",
+          "src-10edc718610865b0",
+          "src-111d265ec8a4592f",
+          "src-12ebd2ca96b15422",
+          "src-130191bd25715b96",
+          "src-14ba4769fc9b04aa",
+          "src-1b90ccd44428b6ab",
+          "src-21dc013c982971a3",
+          "src-25501032bfbfa682",
+          "src-2746069f062780cf",
+          "src-2e9204f14cd8f46d",
+          "src-2ed981e6df5e99d2",
+          "src-313a529220b95ddf",
+          "src-352694313c3e5710",
+          "src-3dfd629f27870dc1",
+          "src-3f866d2089b33926",
+          "src-4347bb9af15c89ba",
+          "src-4481a036f1386231",
+          "src-463cc9e5e708ca82",
+          "src-4bafa6f452f2f586",
+          "src-4cd84ecef3756fb0",
+          "src-4d3fcb3be20cebb0",
+          "src-4f28a655d98c8ae3",
+          "src-522b52d5a15c0181",
+          "src-5340531bfdbbe7fb",
+          "src-535234f371b3922c",
+          "src-542056c326cf2578",
+          "src-54665bf864159096",
+          "src-55c6440c25460701",
+          "src-5603714dac7351ba",
+          "src-573093423a1bbd50",
+          "src-57a1e412247c863d",
+          "src-58104015e9620a4d",
+          "src-58313c79df87ded3",
+          "src-5fde9efeb5f56c2b",
+          "src-61ad2dbdc6d9a82f",
+          "src-659e9742c87de3e4",
+          "src-73f9afbcaae5d8d2",
+          "src-74c9ef9734483c29",
+          "src-7567c5f27fceba0a",
+          "src-768a6855fcfaf443",
+          "src-79f0672eaab3eca0",
+          "src-808550f86ef1cf0e",
+          "src-83d02810b171f365",
+          "src-888427a6abc5edf0",
+          "src-89b36d5577443f99",
+          "src-9642139286c8f411",
+          "src-a31943aca401c7f0",
+          "src-a547a0278fb86fb9",
+          "src-a58b458f5d0f5284",
+          "src-adfd6742a595ccf6",
+          "src-b049c4df2812749b",
+          "src-b08cdbd2624ad1a0",
+          "src-b1c6bfb2ba73681d",
+          "src-b37593a011f57fae",
+          "src-b474f3df7b9187a7",
+          "src-b6933b287a6b8183",
+          "src-b7ef66c741b8a886",
+          "src-b7f0628556085641",
+          "src-b90b07ac62c4f7fd",
+          "src-b9402ce7e2e6c22f",
+          "src-bafbc17c9bf37553",
+          "src-bbaad13a047c342c",
+          "src-bc0e9217d013a65e",
+          "src-be70a79a59ae0915",
+          "src-c134c414b9f229c1",
+          "src-c2f91d09003c2cbe",
+          "src-c8a6a02c203d0cd2",
+          "src-c9af414f77032660",
+          "src-ca86eefe82a821c3",
+          "src-cab3e5143a63a282",
+          "src-cb27c408e8c26a66",
+          "src-d866542fe3372c5e",
+          "src-db9fefd23083da69",
+          "src-e43d7a5f1c1d6bfe",
+          "src-e69e9150b150bc1a",
+          "src-e6ca25d4cfa80752",
+          "src-e7cd892adf805950",
+          "src-e89fa88be97ca7b0",
+          "src-ea47d347422e2570",
+          "src-ea48e98a01589ffb",
+          "src-ea516f826e5da86a",
+          "src-f70c337140899545",
+          "src-f74d655ffb05fd08",
+          "src-fd0a98e661a8db31"
+        ]
+      },
+      "authority": "explicit owner instruction / standing actual-record quality policy",
+      "decision_date": "2026-09-13",
+      "effective_date": "2026-09-13",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/discovery/publication-quality-remediation-2026-09-26.json",
+          "sha256": "48f9058eb7442eacdb748321e4dcbe972b239096bfe54863988981bf3fe00754",
+          "binding_pointers": [
+            "/september_13_reconciliation"
+          ]
+        },
+        {
+          "path": "project-state/governance/owner-keep-2026-09-27/owner-decision.json",
+          "sha256": "772743efe59cbf8f20707017875dfebe2a2023737c888bf1aed1a77bdd794a9b",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Preserve every original September13 negative finding as settled historical evidence. Resolve weak standalone presentation through substantive assessed family/master forms; current visibility and consolidation are not quality exemptions and do not reopen the original finding. The src-7567c5f27fceba0a negative standalone finding is historical evidence explicitly reversed by the registered owner keep decision; all other findings remain controlling.",
+      "required_actions": [
+        "Preserve every original September13 negative finding as settled historical evidence. Resolve weak standalone presentation through substantive assessed family/master forms; current visibility and consolidation are not quality exemptions and do not reopen the original finding. The src-7567c5f27fceba0a negative standalone finding is historical evidence explicitly reversed by the registered owner keep decision; all other findings remain controlling."
+      ],
+      "prohibited_actions": [
+        "Do not infer new external authorization from this artifact."
+      ],
+      "constraints": [],
+      "settled_decisions": [
+        {
+          "question_id": "src-0352ae60169eac10:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-040d6e306c1c448c:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-047e8956baad212d:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-087842cdf31bbd1c:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-089361e5a66d4fea:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-0ab1f927f3729215:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-0aebef9e2df3a7c4:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-0e7f98215f3fbb7d:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-0fa26c668eff7260:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-10edc718610865b0:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-111d265ec8a4592f:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-12ebd2ca96b15422:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-130191bd25715b96:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-14ba4769fc9b04aa:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-1b90ccd44428b6ab:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-21dc013c982971a3:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-25501032bfbfa682:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-2746069f062780cf:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-2e9204f14cd8f46d:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-2ed981e6df5e99d2:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-313a529220b95ddf:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-352694313c3e5710:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-3dfd629f27870dc1:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-3f866d2089b33926:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-4347bb9af15c89ba:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-4481a036f1386231:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-463cc9e5e708ca82:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-4bafa6f452f2f586:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-4cd84ecef3756fb0:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-4d3fcb3be20cebb0:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-4f28a655d98c8ae3:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-522b52d5a15c0181:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-5340531bfdbbe7fb:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-535234f371b3922c:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-542056c326cf2578:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-54665bf864159096:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-55c6440c25460701:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-5603714dac7351ba:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-573093423a1bbd50:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-57a1e412247c863d:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-58104015e9620a4d:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-58313c79df87ded3:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-5fde9efeb5f56c2b:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-61ad2dbdc6d9a82f:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-659e9742c87de3e4:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-73f9afbcaae5d8d2:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-74c9ef9734483c29:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-768a6855fcfaf443:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-79f0672eaab3eca0:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-808550f86ef1cf0e:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-83d02810b171f365:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-888427a6abc5edf0:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-89b36d5577443f99:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-9642139286c8f411:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-a31943aca401c7f0:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-a547a0278fb86fb9:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-a58b458f5d0f5284:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-adfd6742a595ccf6:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-b049c4df2812749b:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-b08cdbd2624ad1a0:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-b1c6bfb2ba73681d:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-b37593a011f57fae:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-b474f3df7b9187a7:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-b6933b287a6b8183:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-b7ef66c741b8a886:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-b7f0628556085641:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-b90b07ac62c4f7fd:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-b9402ce7e2e6c22f:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-bafbc17c9bf37553:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-bbaad13a047c342c:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-bc0e9217d013a65e:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-be70a79a59ae0915:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-c134c414b9f229c1:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-c2f91d09003c2cbe:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-c8a6a02c203d0cd2:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-c9af414f77032660:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-ca86eefe82a821c3:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-cab3e5143a63a282:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-cb27c408e8c26a66:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-d866542fe3372c5e:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-db9fefd23083da69:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-e43d7a5f1c1d6bfe:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-e69e9150b150bc1a:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-e6ca25d4cfa80752:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-e7cd892adf805950:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-e89fa88be97ca7b0:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-ea47d347422e2570:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-ea48e98a01589ffb:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-ea516f826e5da86a:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-f70c337140899545:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-f74d655ffb05fd08:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        },
+        {
+          "question_id": "src-fd0a98e661a8db31:september13-standalone-quality",
+          "decision": "does not meet standalone standard"
+        }
+      ],
+      "unresolved_gates": [],
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+    },
+    {
+      "governance_id": "owner-pr198-2009-community-authorization-keep",
+      "category": "active owner decision",
+      "title": "Keep reviewed 2009 community-center authorization outside the historical master; PR198 has 32 records",
+      "scope": {
+        "candidate_ids": [
+          "src-7567c5f27fceba0a"
+        ],
+        "task_ids": [
+          "pr198-go-capital-next-step",
+          "pr198-owner-keep-correction"
+        ]
+      },
+      "authority": "explicit current owner review and keep decision",
+      "decision_date": "2026-09-27",
+      "effective_date": "2026-09-27",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/owner-keep-2026-09-27/owner-decision.json",
+          "sha256": "772743efe59cbf8f20707017875dfebe2a2023737c888bf1aed1a77bdd794a9b",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/owner-keep-2026-09-27/preflight.json",
+          "sha256": "a93b02a5b6d5dd3c0abc07f72fee80c3e98f31eac6066d5c2334ac539d605e1b",
+          "binding_pointers": []
+        },
+        {
+          "path": "project-state/governance/owner-keep-2026-09-27/contract.json",
+          "sha256": "e737a79e4b713ca505e7101165b5c1490df4bb7f368a3fa13b3ee09405828e97",
+          "binding_pointers": []
+        },
+        {
+          "path": "project-state/governance/pr198/next-step-contract-v7.json",
+          "sha256": "c62a4ac81bbe55c8d9a7b575a9cab1d1d16957cf4c629ccf281a0fac6f087c88",
+          "binding_pointers": []
+        },
+        {
+          "path": "project-state/governance/pr198/architecture-plan-v7.json",
+          "sha256": "72da96bbe696ed03a392b488d46a27c9d7665e05528060f0551fb722ca5cc519",
+          "binding_pointers": []
+        },
+        {
+          "path": "project-state/governance/owner-keep-2026-09-27/contract-v2.json",
+          "sha256": "96f6582bfbebb400df0dfb1878474aac344ff86ad60560d3b268f0c5080f411b",
+          "binding_pointers": []
+        },
+        {
+          "path": "project-state/governance/pr198/next-step-contract-v8.json",
+          "sha256": "87ea22120c2c7cbf288e1a4b8c2f34d468be641e834ced95ff926fd682ffe4da",
+          "binding_pointers": []
+        },
+        {
+          "path": "project-state/governance/pr198/architecture-plan-v8.json",
+          "sha256": "2a2e7558703dc0c398e2888219680293bde7729b2ceb007149a2d72b3a1ad5fd",
+          "binding_pointers": []
+        }
+      ],
+      "binding_requirement": "Explicit owner reversal of the September 13 standalone-quality finding for this record only. Preserve historical negative evidence, September 18 architecture, other two authorizations, family boundary, and all other quality policy. Background correction only; no content, inventory disposition, R2 or PR198 branch mutation.",
+      "required_actions": [
+        "Retain src-7567c5f27fceba0a separately visible outside the 24-component master. Preserve exactly 32 PR198 records."
+      ],
+      "prohibited_actions": [
+        "No broader quality exception; no arbitrary omission; no inclusion in the master."
+      ],
+      "constraints": [
+        {
+          "subject": "pr198",
+          "field": "candidate_ids",
+          "equals": [
+            "src-0352ae60169eac10",
+            "src-040d6e306c1c448c",
+            "src-047e8956baad212d",
+            "src-25501032bfbfa682",
+            "src-2746069f062780cf",
+            "src-2ed981e6df5e99d2",
+            "src-352694313c3e5710",
+            "src-4bafa6f452f2f586",
+            "src-4cd84ecef3756fb0",
+            "src-535234f371b3922c",
+            "src-542056c326cf2578",
+            "src-54665bf864159096",
+            "src-5603714dac7351ba",
+            "src-7567c5f27fceba0a",
+            "src-768a6855fcfaf443",
+            "src-89b36d5577443f99",
+            "src-a31943aca401c7f0",
+            "src-a547a0278fb86fb9",
+            "src-a58b458f5d0f5284",
+            "src-b049c4df2812749b",
+            "src-b08cdbd2624ad1a0",
+            "src-b37593a011f57fae",
+            "src-b7ef66c741b8a886",
+            "src-b7f0628556085641",
+            "src-b90b07ac62c4f7fd",
+            "src-be70a79a59ae0915",
+            "src-c9af414f77032660",
+            "src-cb27c408e8c26a66",
+            "src-db9fefd23083da69",
+            "src-e69e9150b150bc1a",
+            "src-e6ca25d4cfa80752",
+            "src-f74d655ffb05fd08"
+          ]
+        },
+        {
+          "subject": "src-7567c5f27fceba0a",
+          "field": "retained_visitor_visible",
+          "equals": true
+        },
+        {
+          "subject": "src-7567c5f27fceba0a",
+          "field": "inside_go_2009_master",
+          "equals": false
+        }
+      ],
+      "settled_decisions": [
+        {
+          "question_id": "pr198:31-versus-32",
+          "decision": "Exact 32 records; owner reviewed and kept the 32nd."
+        },
+        {
+          "question_id": "src-7567c5f27fceba0a:september13-standalone-quality",
+          "decision": "Owner explicitly reversed negative finding: Keep it. Historical negative preserved."
+        }
+      ],
+      "unresolved_gates": [],
+      "releases_gates": [
+        "pr198:31-versus-32"
+      ],
+      "implementation_status": "Owner decision recorded; content implementation remains separate."
     }
   ]
 }

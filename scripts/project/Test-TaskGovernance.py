@@ -40,6 +40,16 @@ plan={'population_sha256':contract['population_sha256'],'respected_governance_id
       'subjects':subjects,'actions':['consolidation'],'events':[]}
 G.validate_plan(contract,plan)
 passed.append('compliant_master_pdf_architecture_passes')
+assert not any(g['gate_id']=='pr198:31-versus-32' for g in contract['unresolved_gates'])
+assert subjects['go-2009']['master_count']==1
+assert len(subjects['pr198']['candidate_ids'])==32
+wrong=copy.deepcopy(plan);wrong['subjects']['pr198']['candidate_ids'].remove('src-7567c5f27fceba0a')
+rejects('arbitrary_32nd_record_drop_rejected',lambda:G.validate_plan(contract,wrong))
+wrong=copy.deepcopy(plan);wrong['subjects']['src-7567c5f27fceba0a']['inside_go_2009_master']=True
+rejects('authorization_inside_24_component_master_rejected',lambda:G.validate_plan(contract,wrong))
+wrong=copy.deepcopy(plan);wrong['subjects']['src-7567c5f27fceba0a']['retained_visitor_visible']=False
+rejects('owner_kept_authorization_removal_rejected',lambda:G.validate_plan(contract,wrong))
+
 def pr198_reader(path):return subprocess.check_output(['git','show',pop['baseline_commit']+':'+path],cwd=G.ROOT).decode('utf-8-sig')
 pr198_page=pr198_reader('content/city-data/capital-spending.md')
 rejects('actual_pr198_page_bytes_lack_decided_master_pdfs',lambda:G.actual_presentations(contract,pr198_reader,pop['pages']))
