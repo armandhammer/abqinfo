@@ -90,7 +90,8 @@ from QualityCorrectionLifecycle import before, validate_delta, ARTIFACT
 from WorkflowStageLifecycle import digest
 manifest=json.loads((ROOT/ARTIFACT).read_text(encoding='utf-8'))
 prior=before('project-state/master-inventory.json',manifest['baseline_commit'])
-current=json.loads((ROOT/'project-state/master-inventory.json').read_text(encoding='utf-8-sig'))
+from WorkflowStageLifecycle import StageSnapshot
+current=StageSnapshot('old-town-quality-correction').load_json('project-state/master-inventory.json')
 r2=json.loads((ROOT/'project-state/r2-inventory.json').read_text(encoding='utf-8-sig'))
 validate_delta(manifest,prior,current,manifest['correction_pages'],manifest['correction_page_sha256'],r2,r2)
 bad=copy.deepcopy(current);rid=manifest['planning_publication_ids'][0]

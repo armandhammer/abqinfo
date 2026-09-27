@@ -1,18 +1,15 @@
 # Current visible publication-quality remediation queue
 
-The audit matches actual original/archive URLs or record-specific source wrappers throughout site content, excluding shared provenance hubs. It covers 1649 represented inventory records. Eleven corrected Planning originals pass; 1638 additional records remain unresolved under the strengthened evidence standard. Missing/incomplete assessment does not establish substantive uselessness. No unrelated record was removed in PR #194.
+The audit matches actual original/archive URLs or record-specific source wrappers throughout site content, excluding shared provenance hubs. It covers 1631 represented inventory records. Twenty-three records pass, including the reviewed family components and annual DPM masters; 1608 records remain unresolved under the strengthened evidence standard. Missing/incomplete assessment does not establish substantive uselessness. No unrelated record was removed in PR #194.
 
 ## Priority: unresolved September 13 findings
 
-67 records remain visible: 60 negative standalone findings and seven questionable findings. Later research-only consolidation proposals do not resolve live standalone presentation. JSON links the original findings, actual locations and later family evidence.
+42 records remain unresolved: 35 negative standalone findings and seven questionable findings. Later research-only consolidation proposals do not resolve live standalone presentation. JSON links the original findings, actual locations and later family evidence.
 
 - `src-0352ae60169eac10` — Family and Community Services 2009 General Obligation Bond Scope (does not meet standalone standard).
 - `src-040d6e306c1c448c` — 2013 General Obligation Bond Program Summary (does not meet standalone standard).
 - `src-047e8956baad212d` — Department of Municipal Development Capital Facilities and Parking Scope (does not meet standalone standard).
 - `src-089361e5a66d4fea` — APD Forensics Solar Carport Design Overview (does not meet standalone standard).
-- `src-10edc718610865b0` — Urban Enhancement Trust Fund 2010–2011 Funded Projects (does not meet standalone standard).
-- `src-14ba4769fc9b04aa` — Development Process Manual Executive Committee Minutes, April 19, 2017 (does not meet standalone standard).
-- `src-21dc013c982971a3` — Development Process Manual Executive Committee Minutes, October 19, 2016 (does not meet standalone standard).
 - `src-25501032bfbfa682` — 2011 Affordable Housing General Obligation Bond Project Scope (Initial Version) (does not meet standalone standard).
 - `src-2746069f062780cf` — 2011-2019 General Obligation Bond Summary Totals (does not meet standalone standard).
 - `src-2ed981e6df5e99d2` — 2011 City Facilities, CIP, and Parking General Obligation Bond Project Scopes (does not meet standalone standard).
@@ -20,63 +17,41 @@ The audit matches actual original/archive URLs or record-specific source wrapper
 - `src-4347bb9af15c89ba` — Councilor Dan Lewis Request for Investigation into the Redflex Traffic Systems Contract With the City of Albuquerque, January 24, 2014 (does not meet standalone standard).
 - `src-4bafa6f452f2f586` — 2011 Environmental Health General Obligation Bond Project Scopes (does not meet standalone standard).
 - `src-4cd84ecef3756fb0` — 2011-2019 Senior Affairs General Obligation Bond Schedule (does not meet standalone standard).
-- `src-4d3fcb3be20cebb0` — MRMPO FFY 2008 Annual Listing of Obligations (does not meet standalone standard).
-- `src-5340531bfdbbe7fb` — Development Process Manual Executive Committee Minutes, June 21, 2017 (does not meet standalone standard).
 - `src-535234f371b3922c` — 2009–2017 Police General Obligation Bond Summary (does not meet standalone standard).
 - `src-53f3375a9829dc10` — Drainage, Flood Control and Erosion Control Governing Regulations Summary (questionable; user review requested).
 - `src-542056c326cf2578` — 2011-2019 Finance and Administrative Services General Obligation Bond Schedule (Initial Version) (does not meet standalone standard).
 - `src-54665bf864159096` — 2011 Affordable Housing General Obligation Bond Project Scope (does not meet standalone standard).
-- `src-55c6440c25460701` — MRMPO FFY 2006 Annual Listing of Obligations (does not meet standalone standard).
 - `src-5603714dac7351ba` — 2009 Police General Obligation Bond Project Scopes (does not meet standalone standard).
-- `src-573093423a1bbd50` — Development Process Manual Executive Committee Minutes, March 1, 2017 (does not meet standalone standard).
-- `src-58104015e9620a4d` — Development Process Manual Executive Committee Minutes, March 7, 2018 (does not meet standalone standard).
-- `src-58313c79df87ded3` — MRMPO FFY 2007 Annual Listing of Obligations (does not meet standalone standard).
 - `src-5e74a3b59f6ef58f` — Hydrology Review Fees, 2024 (questionable; user review requested).
 - `src-6d08320245cacfbd` — Facilitated Meetings Criteria Under Integrated Development Ordinance Section 14-16-6-4(D) (questionable; user review requested).
-- `src-73f9afbcaae5d8d2` — Development Process Manual Executive Committee Minutes, December 16, 2015 (does not meet standalone standard).
-- `src-74c9ef9734483c29` — Development Process Manual Executive Committee Minutes, February 21, 2018 (does not meet standalone standard).
 - `src-7567c5f27fceba0a` — 2009 Senior, Family, Community Center, and Community Enhancement Project Bond Authorization (does not meet standalone standard).
 - `src-768a6855fcfaf443` — 2009 Library General Obligation Bond Authorization (does not meet standalone standard).
-- `src-79f0672eaab3eca0` — Development Process Manual Executive Committee Minutes, May 17, 2017 (does not meet standalone standard).
 - `src-7c27417fbd191fdf` — Special Order 19 Notice to Contractor: Private Drainage Facilities Within City Right-of-Way, Revision December 2022 (questionable; user review requested).
-- `src-808550f86ef1cf0e` — Development Process Manual Executive Committee Minutes, November 15, 2017 (does not meet standalone standard).
 - `src-89b36d5577443f99` — 2011 Planning General Obligation Bond Project Scopes (Initial Version) (does not meet standalone standard).
 - `src-9642139286c8f411` — Stop Sign Reconfiguration Proposal for Raynolds and Barelas, December 2008 (does not meet standalone standard).
 - `src-98563dab32c38b5c` — Stormwater Quality Plan Information Sheet and Inspection Fee Schedule (questionable; user review requested).
 - `src-a31943aca401c7f0` — 2011-2019 Streets General Obligation Bond Schedule (Initial Version) (does not meet standalone standard).
 - `src-a547a0278fb86fb9` — 2011-2019 Fire General Obligation Bond Schedule (Initial Version) (does not meet standalone standard).
 - `src-a58b458f5d0f5284` — 2004 Street Bond Ballot Question (does not meet standalone standard).
-- `src-adfd6742a595ccf6` — Development Process Manual Executive Committee Minutes, October 4, 2017 (does not meet standalone standard).
 - `src-b049c4df2812749b` — 2009 Public Safety General Obligation Bond Authorization (does not meet standalone standard).
 - `src-b08cdbd2624ad1a0` — 2011 Family and Community Services General Obligation Bond Project Scopes (Initial Version) (does not meet standalone standard).
 - `src-b37593a011f57fae` — 2011 ABQ RIDE Transit General Obligation Bond Project Scopes (does not meet standalone standard).
 - `src-b7ef66c741b8a886` — 2009–2017 Fire General Obligation Bond Summary (does not meet standalone standard).
 - `src-b7f0628556085641` — 2011 Planning General Obligation Bond Project Scopes (does not meet standalone standard).
 - `src-b90b07ac62c4f7fd` — 2011 Senior Affairs General Obligation Bond Project Scopes (does not meet standalone standard).
-- `src-b9402ce7e2e6c22f` — Urban Enhancement Trust Fund 2010–2011 Funding Summary (does not meet standalone standard).
-- `src-bafbc17c9bf37553` — MRMPO FFY 2009 Annual Listing of Obligations (does not meet standalone standard).
-- `src-bbaad13a047c342c` — Development Process Manual Executive Committee Minutes, February 1, 2017 (does not meet standalone standard).
 - `src-be70a79a59ae0915` — 2011 Streets General Obligation Bond Project Scopes (Initial Version) (does not meet standalone standard).
-- `src-c134c414b9f229c1` — Development Process Manual Executive Committee Minutes, May 3, 2017 (does not meet standalone standard).
-- `src-c2f91d09003c2cbe` — Development Process Manual Executive Committee Minutes, February 7, 2018 (does not meet standalone standard).
-- `src-c8a6a02c203d0cd2` — Development Process Manual Executive Committee Minutes, July 16, 2014 (does not meet standalone standard).
 - `src-c9af414f77032660` — 2011-2019 Planning General Obligation Bond Schedule (Initial Version) (does not meet standalone standard).
-- `src-ca86eefe82a821c3` — Development Process Manual Executive Committee Minutes, September 7, 2016 (does not meet standalone standard).
 - `src-cb27c408e8c26a66` — 2009–2017 Council Neighborhood Set-Aside General Obligation Bond Summary (does not meet standalone standard).
 - `src-db9fefd23083da69` — 2011 Fire General Obligation Bond Project Scopes (does not meet standalone standard).
 - `src-e69e9150b150bc1a` — 2009 Fire General Obligation Bond Project Scopes (does not meet standalone standard).
 - `src-e6ca25d4cfa80752` — 2011 Fire General Obligation Bond Project Scopes (Initial Version) (does not meet standalone standard).
-- `src-ea47d347422e2570` — Development Process Manual Executive Committee Minutes, January 18, 2017 (does not meet standalone standard).
-- `src-ea48e98a01589ffb` — Development Process Manual Executive Committee Minutes, December 17, 2014 (does not meet standalone standard).
 - `src-f0c76005377afd83` — Albuquerque City Council Services Organizational Chart, April 6, 2026 (questionable; user review requested).
-- `src-f70c337140899545` — Urban Enhancement Trust Fund 2010–2011 Program Overview (does not meet standalone standard).
 - `src-f74d655ffb05fd08` — 2011 Police General Obligation Bond Project Scopes (does not meet standalone standard).
 - `src-fa4cf248a6dd7221` — Revocable Permit Submittal Requirements, April 2020 (questionable; user review requested).
-- `src-fd0a98e661a8db31` — Development Process Manual Executive Committee Minutes, September 6, 2017 (does not meet standalone standard).
 
 ## Reconciled findings no longer independently visible
 
-33 findings no longer appear independently: 24 from the 2017 official master, five from the 2003 historical master, one from the 2014 DPM compilation and the three Old Town rankings removed here. This resolves their original standalone presentation issue; it does not reverse the audit or approve standalone publication. The master records themselves remain queued where assessment is incomplete.
+51 findings no longer appear independently: 24 from the 2017 official master, five from the 2003 historical master, one from the 2014 DPM compilation the three Old Town rankings removed in PR #194, and eighteen DPM minutes retired in this batch. Seven additional September 13 component findings are resolved through evidence-backed MRMPO and UETF family presentations. This resolves their original standalone presentation issue; it does not reverse the audit or approve standalone publication. The five annual DPM masters now pass their actual-record gate; other master records remain queued where assessment is incomplete.
 
 ## Complete unresolved list by primary page
 
@@ -149,7 +124,7 @@ Each record appears once, assigned to its first actual visible page alphabetical
 - `src-fc250f15df2ab028` — Enacted Ordinance O-2014-005: Approving a Project Involving Eclipse Aerospace, Inc. Under the Local Economic Development Act (Council Bill O-14-4).
 - `src-fd8e9e236daf4ea2` — City of Albuquerque Approved Budget, Fiscal Year 2012.
 
-### content/city-data/capital-spending.md (170)
+### content/city-data/capital-spending.md (167)
 
 - `src-003fea9b67977cc0` — 2011–2019 Cultural Services General Obligation Bond Schedule.
 - `src-00d75ea75ac5c12a` — 2009 Community Facilities General Obligation Bond Project Scopes.
@@ -169,7 +144,6 @@ Each record appears once, assigned to its first actual visible page alphabetical
 - `src-082325eda8e02ff9` — 2021-2030 Decade Plan for Capital Improvements.
 - `src-089361e5a66d4fea` — APD Forensics Solar Carport Design Overview.
 - `src-0c38e48c453a12db` — 2007–2016 Planning Department Capital Program Summary.
-- `src-10edc718610865b0` — Urban Enhancement Trust Fund 2010–2011 Funded Projects.
 - `src-1446091908574fda` — 2007–2016 Police Capital Program Summary.
 - `src-1f787b166bcf7f0c` — 2011 Senior Affairs General Obligation Bond Project Scope.
 - `src-241c664f388493fc` — 2026 Infrastructure Capital Improvements Plan Priorities - Enacted.
@@ -278,7 +252,6 @@ Each record appears once, assigned to its first actual visible page alphabetical
 - `src-b7ef66c741b8a886` — 2009–2017 Fire General Obligation Bond Summary.
 - `src-b7f0628556085641` — 2011 Planning General Obligation Bond Project Scopes.
 - `src-b90b07ac62c4f7fd` — 2011 Senior Affairs General Obligation Bond Project Scopes.
-- `src-b9402ce7e2e6c22f` — Urban Enhancement Trust Fund 2010–2011 Funding Summary.
 - `src-baa2a3551783da18` — 2007–2016 Cultural Services Capital Program Summary.
 - `src-bd60d8eab4edf667` — 2011 Council Neighborhood Set-Aside General Obligation Bond Schedule.
 - `src-be39966975e9924a` — 2007–2016 Affordable Housing Capital Summary.
@@ -317,7 +290,6 @@ Each record appears once, assigned to its first actual visible page alphabetical
 - `src-f1a9e4e7e1d84e9e` — 2004 Capital Programming Amendment Resolution R-04-109.
 - `src-f372bc592a7af36c` — 2011-2020 General Obligation Bond Program Summary (October 2010 Edition).
 - `src-f46bda77640458ad` — 2025-2033 General Obligation Bond Initial Request Summary.
-- `src-f70c337140899545` — Urban Enhancement Trust Fund 2010–2011 Program Overview.
 - `src-f74d655ffb05fd08` — 2011 Police General Obligation Bond Project Scopes.
 - `src-fbf2928dc2388b68` — 2007–2016 Finance and Administrative Services Capital Program Summary.
 - `src-fea1d0aef6dc4569` — 2009–2017 General Obligation Bond Summary Totals.
@@ -468,29 +440,22 @@ Each record appears once, assigned to its first actual visible page alphabetical
 - `src-f5be150be68a94dd` — Transportation Plans.
 - `src-fe68bebf0ee43fee` — Official City Record.
 
-### content/development-land-use/development-process.md (71)
+### content/development-land-use/development-process.md (48)
 
-- `src-04d3b9e5c9513759` — Development Process Manual Executive Committee Minutes, 2016 - ABQInfo Historical Compilation.
 - `src-04e406c4dde231a8` — Official City DPM Document Directory.
 - `src-0752fa3cfed34f87` — City of Albuquerque General Planning Fee Schedule.
 - `src-0b9dc46fbf32cfb7` — Development Process Manual.
 - `src-10bdee1eea03ca2b` — Bernalillo County Public Works Submittal and Development Standards for Large-Scale Solar Development.
-- `src-14ba4769fc9b04aa` — Development Process Manual Executive Committee Minutes, April 19, 2017.
 - `src-16030da9139693a5` — Design Review and Construction (DRC) Jurisdiction Memorandum, August 25, 2026.
 - `src-1e957902d6657766` — Infrastructure Improvements Agreement - Procedure A with Financial Guaranty (March 2021).
 - `src-1ee4a0c5133aceda` — Historic Old Town Development Standards and Guidelines (HPO-5).
-- `src-21dc013c982971a3` — Development Process Manual Executive Committee Minutes, October 19, 2016.
 - `src-230753126ba3bbf7` — Rules and Regulations Governing Compensation for Consulting Engineers, Architects, and Landscape Architects.
 - `src-247c9733c752f20d` — Development Process Manual Approved DMD Changes.
-- `src-3e5ba877b7385af6` — Development Process Manual Executive Committee Minutes, 2015 - ABQInfo Historical Compilation.
 - `src-42559b8b35af458e` — Infrastructure Improvements Agreement - Procedure B (March 2021).
 - `src-43d3decdbb1add8a` — Bernalillo County Public Works Division Fee Schedule.
 - `src-46068d1079dd321e` — Development Review Services.
 - `src-46237fe417ee1bb1` — Official source: City of Albuquerque Construction Site Manual.
-- `src-5340531bfdbbe7fb` — Development Process Manual Executive Committee Minutes, June 21, 2017.
 - `src-567244356665a527` — Infrastructure Improvements Agreement, Procedure C: Agreement to Construct Public Improvements by City Contract (Figure 13).
-- `src-573093423a1bbd50` — Development Process Manual Executive Committee Minutes, March 1, 2017.
-- `src-58104015e9620a4d` — Development Process Manual Executive Committee Minutes, March 7, 2018.
 - `src-58eba820883efd1a` — Procedure A Amendment and Extension Agreement (March 2021).
 - `src-5dd2daf604742ee7` — Development Review Traffic Impacts.
 - `src-5e74a3b59f6ef58f` — Hydrology Review Fees, 2024.
@@ -500,47 +465,31 @@ Each record appears once, assigned to its first actual visible page alphabetical
 - `src-6d08320245cacfbd` — Facilitated Meetings Criteria Under Integrated Development Ordinance Section 14-16-6-4(D).
 - `src-6df131e72e56bfe9` — Information about Public Improvement Districts in Albuquerque. Public Improvement Districts Information about Public Improvement Districts in Albuquerque..
 - `src-6f6268207f99a8c4` — Development Process Manual Amendments.
-- `src-73f9afbcaae5d8d2` — Development Process Manual Executive Committee Minutes, December 16, 2015.
-- `src-74c9ef9734483c29` — Development Process Manual Executive Committee Minutes, February 21, 2018.
 - `src-75755583aa85c00c` — Huning Highland and EDo Historic Protection Overlay Zone Map.
 - `src-75935732f3f11f34` — Development Process Manual Intersection Design Final-Review Draft.
-- `src-79f0672eaab3eca0` — Development Process Manual Executive Committee Minutes, May 17, 2017.
 - `src-7a08bd24a1a9dcae` — Silver Hill Historic Overlay Zone Design Guidelines: Early Automobile Suburbs.
-- `src-7bd831eb6ef8959f` — Development Process Manual Executive Committee Minutes, 2017 - ABQInfo Historical Compilation.
 - `src-7f1e53975e461d43` — Silver Hill Historic Protection Overlay Zone Map.
-- `src-808550f86ef1cf0e` — Development Process Manual Executive Committee Minutes, November 15, 2017.
 - `src-85425ef5e82d7493` — Zoning Code Section 14-16-3-17: Wireless Telecommunications Regulations (pre-Integrated Development Ordinance text).
 - `src-87b92910cd99400d` — City Annexation Policies Resolution R-54-1990.
 - `src-8d478c6c65e09164` — Procedure A with Financial Guaranty Amendment and Extension Agreement (March 2021).
 - `src-9d95103fffb6e499` — Development Process Manual Approved Planning and DMD Changes.
 - `src-a3afa3078e7351a7` — Neighborhood Task Force Final Report to the City Council (September 2007).
 - `src-ad7c091a07a0fb3f` — Eighth and Forrester Historic Protection Overlay Zone Map.
-- `src-adfd6742a595ccf6` — Development Process Manual Executive Committee Minutes, October 4, 2017.
 - `src-b3d51e22f5d00059` — Stormwater Management Guidance for Large-Scale Ground-Mounted Solar Arrays.
-- `src-bbaad13a047c342c` — Development Process Manual Executive Committee Minutes, February 1, 2017.
 - `src-bbe597de30b63f2f` — Development Review Services.
 - `src-bdf76c84223f82be` — Official Albuquerque Plant Palette and Sizing List.
-- `src-c134c414b9f229c1` — Development Process Manual Executive Committee Minutes, May 3, 2017.
-- `src-c2f91d09003c2cbe` — Development Process Manual Executive Committee Minutes, February 7, 2018.
 - `src-c540ee6e20ebd64c` — Official source: Green Stormwater Infrastructure / Low Impact Development Standards.
 - `src-c74168a5ee95e044` — Old Town Historic Protection Overlay Zone Map.
-- `src-c8a6a02c203d0cd2` — Development Process Manual Executive Committee Minutes, July 16, 2014.
-- `src-ca86eefe82a821c3` — Development Process Manual Executive Committee Minutes, September 7, 2016.
-- `src-cd13f7f4ba7ebf30` — Development Process Manual Executive Committee Meeting Records, 2018 - ABQInfo Historical Compilation.
 - `src-d42df0916d0d8a2b` — Assignment and Amendment to Agreement to Construct Infrastructure Improvements.
 - `src-d6f0d94a12b31a2d` — Development Process Manual Approved Amendment: Article 4-3 ABCWUA Changes.
 - `src-e5b815c2a314724a` — Enacted Ordinance O-2014-024: Amending the Wireless Telecommunication Regulations and Related Definitions in the Zoning Code (Council Bill F/S O-14-7).
 - `src-e6c9a8cffdca81f1` — Development Process Manual Chapter 28: Improvements Within the Public Right of Way.
 - `src-ea0ba81f2420f90f` — Procedure B Amendment and Extension Agreement (March 2021).
-- `src-ea47d347422e2570` — Development Process Manual Executive Committee Minutes, January 18, 2017.
-- `src-ea48e98a01589ffb` — Development Process Manual Executive Committee Minutes, December 17, 2014.
 - `src-ec6e7fdafdab0706` — Fourth Ward Historic Protection Overlay Zone Map.
 - `src-edd2380f46aacc71` — Development Process Manual Chapter 22: Drainage, Flood Control, and Erosion Control.
 - `src-ee6119ec7c188a77` — City Engineer's Estimated Unit Prices for Contract Items, 2026.
 - `src-f9076752a7601d0f` — Infrastructure Improvements Agreement Forms Directory.
 - `src-fa4cf248a6dd7221` — Revocable Permit Submittal Requirements, April 2020.
-- `src-fd0a98e661a8db31` — Development Process Manual Executive Committee Minutes, September 6, 2017.
-- `src-febc40d55b6a3f87` — Development Process Manual Executive Committee Minutes, 2014 - ABQInfo Historical Compilation.
 
 ### content/development-land-use/projects.md (29)
 
@@ -1681,7 +1630,7 @@ Each record appears once, assigned to its first actual visible page alphabetical
 - `src-d3121fe1438282dc` — Draft Sun Van Performance Metrics.
 - `src-fbef44f233c29736` — ABQ RIDE Sun Van Compliance Review Briefing.
 
-### content/transportation/transportation-plans.md (132)
+### content/transportation/transportation-plans.md (128)
 
 - `src-00c90f086ec8c5a2` — Connections 2040 Appendix A: Metropolitan Transportation Plan Project List.
 - `src-00edbf1ee3434578` — MRCOG 2030 Metropolitan Transportation Plan: Pedestrian Element.
@@ -1727,13 +1676,10 @@ Each record appears once, assigned to its first actual visible page alphabetical
 - `src-487b2b28b540a130` — Long Range Transportation System Guide.
 - `src-4b22c8888d5276e7` — ABQ RIDE Planning Briefing.
 - `src-4ccef0c6ec25aac8` — Uptown Sector Development Plan — Transportation and Connectivity.
-- `src-4d3fcb3be20cebb0` — MRMPO FFY 2008 Annual Listing of Obligations.
 - `src-50dbc9e020356e05` — Adopted Legislation.
-- `src-55c6440c25460701` — MRMPO FFY 2006 Annual Listing of Obligations.
 - `src-56302a72a506fb36` — MRMPO Performance Measures Target Assessment (2026).
 - `src-576f2f99563440b5` — MRMPO Unified Planning Work Program, FFY 2025-2026.
 - `src-57ed0875d4d61c7e` — MRMPO FFY 2014 Annual Listing of Obligations.
-- `src-58313c79df87ded3` — MRMPO FFY 2007 Annual Listing of Obligations.
 - `src-5bd547500153d376` — MRMPO FFY 2013 Annual Listing of Obligations.
 - `src-5c59cfb9745f1508` — Planned Growth Strategy Policy, Regulatory, and Plan Review.
 - `src-5c9ad39184c0e9c3` — 21st Century Transportation Task Force Enabling Ordinance O-07-71.
@@ -1781,7 +1727,6 @@ Each record appears once, assigned to its first actual visible page alphabetical
 - `src-b1eb612220474d61` — MRMPO Current TIP and Revisions.
 - `src-b5c323782239e519` — Transitions 2045 Executive Summary (archived PDF).
 - `src-b98248cdd9f46e86` — Replanning the Modern City for Transit.
-- `src-bafbc17c9bf37553` — MRMPO FFY 2009 Annual Listing of Obligations.
 - `src-bb71d6cf149abbde` — Atrisco Vista Boulevard Phase A/B Study.
 - `src-bdce230a1af9a137` — MRMPO FFY 2021 Annual Listing of Obligations.
 - `src-be94b37839f82e41` — NMDOT FFY 2023-2024 Planning Work Program Out-of-Cycle Amendment 1.
@@ -1816,3 +1761,5 @@ Each record appears once, assigned to its first actual visible page alphabetical
 - `src-fd2c4ff2f2681189` — Paseo del Volcan Steering Committee Meeting Notes, Fourth Meeting, June 27, 2014.
 - `src-ffe2da6f8a6daa6c` — NMDOT Resilience Improvement Plan.
 
+
+First remediation batch resolves 25 September 13 component findings and the quality assessments of their five existing annual DPM masters. Original findings and the 1,638-row baseline are preserved under `quality-remediation-first-2026-09-27/`. No unrelated debt row changed.

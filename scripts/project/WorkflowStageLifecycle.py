@@ -92,7 +92,7 @@ def validate_evidence(data):
     """Old evidence must still equal its sealed bytes, even though live state advances."""
     for seal in data['protected_evidence']:
         old = canonical_bytes(git('show', seal['commit'] + ':' + seal['path']))
-        live = canonical_bytes((ROOT / seal['path']).read_bytes())
+        live = canonical_bytes((ROOT / seal.get('live_path', seal['path'])).read_bytes())
         validate_evidence_bytes(seal['sha256'],old,live)
 
 def validate_evidence_bytes(expected,old,live):

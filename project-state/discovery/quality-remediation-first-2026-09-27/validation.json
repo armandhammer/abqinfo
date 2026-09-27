@@ -1,0 +1,48 @@
+{
+  "normal_suite": {
+    "command": "pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/project/Invoke-ProjectValidation.ps1",
+    "exit_code": 0,
+    "result": "passed",
+    "log": "project-state/discovery/quality-remediation-first-2026-09-27/normal-validation.log",
+    "log_sha256": "f6f3da05f88ee515562f16de17e856fd2b1b4d781ec2da148439625f52bdf85f",
+    "global_external_link_sweep": false
+  },
+  "archive_downloads": {
+    "count": 30,
+    "exact_size_sha256": 30
+  },
+  "official_sources": {
+    "count": 25,
+    "http200": 25,
+    "exact_size_sha256": 25
+  },
+  "actual_record_quality": {
+    "inventory_records": 30,
+    "resulting_family_master_presentations": 7,
+    "result": "passed"
+  },
+  "rendered_pages": 3,
+  "debt_before": 1638,
+  "debt_after": 1608,
+  "september_13_unresolved": 42,
+  "r2_uploads": 0,
+  "added_storage_bytes": 0,
+  "warnings": [
+    "Preserved FFY 2008 and 2009 MRMPO objects contain cover sheets only; presentation explicitly qualifies this."
+  ],
+  "preview": {
+    "url": "https://32d81a1d.abqinfo.pages.dev",
+    "deployment_id": "32d81a1d-5f8c-4598-8325-c2ebaff8051a",
+    "content_commit": "b732a76",
+    "result": "passed",
+    "pages": 3,
+    "receipt": "project-state/discovery/quality-remediation-first-2026-09-27/preview-verification.json"
+  },
+  "merge_authorized": false,
+  "pr": {
+    "number": 196,
+    "url": "https://github.com/armandhammer/abqinfo/pull/196",
+    "state": "open_for_owner_review",
+    "merged": false
+  }
+}
