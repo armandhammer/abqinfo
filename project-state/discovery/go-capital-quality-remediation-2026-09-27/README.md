@@ -49,3 +49,7 @@ The queue has 42 unresolved September 13 findings: 32 GO/capital negatives, seve
 ## Resume boundary
 
 Resolve the exact population first. Then inspect/measure/render original bytes and required masters; persist family decisions; implement only those families and required cross-links; extend this stage guard to the exact reviewed inventory/content/queue delta; run the complete normal suite and publication audit; verify changed pages on a nonproduction preview; prepare the focused content PR and stop without merging. Debt remains 1608 and unresolved September 13 findings remain 42. No R2 operations are authorized.
+
+## Owner direction and implemented review delta
+
+Owner requested the count discrepancy be asked in the PR. The branch presents all 32 queue matches, with no arbitrary omission, and flags the original 31-record request explicitly. Four family presentations replace standalone entries across six existing pages; two required masters receive new actual-record assessments. Historical findings remain settled. Debt is 1574 and unresolved September 13 findings are 10. No R2 mutation. Implementation, exact hashes, family gates, byte measurements and visual inspection receipts are saved separately. Initial preparation artifacts remain historical evidence.

@@ -6,9 +6,7 @@ Planning, design standards, and selected major projects for City-owned buildings
 
 ## Historical Capital Programming
 
-- [2011 City Facilities, CIP, and Parking General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/city-facilities/cabq-2011-city-facilities-cip-parking-go-bond-project-scopes-published.pdf)
-
-  Details 2011 Municipal Development bond scopes for replacing aging vehicles, City building improvement and rehabilitation, energy and security systems, roofs, and parking facility upgrades. [Full 2011 published-scope record](/city-data/capital-spending/#2011-published-scope-and-version-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/facilities_scope.pdf)
+The [2011 department/version family](/city-data/capital-spending/#department-scopes-and-initial-versions-20112019) explains the published City Facilities, CIP and Parking scope alongside the other department records: vehicles, building rehabilitation, Plaza del Sol, security, roofs, water efficiency and parking. Its program amounts do not establish actual spending.
 
 - [2017-2026 Decade Plan and 2017 General Obligation Bond Program: Mayor's Recommendation (Official Program Book, Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2017-2026-decade-plan-mayors-recommendation-2017.pdf)
 

@@ -18,9 +18,7 @@ ABQ Ride bus service information and data.
 
 ## Facilities and Fleet Planning History
 
-- [2011 ABQ RIDE Transit General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/transportation/transit/cabq-2011-abq-ride-go-bond-project-scopes-published.pdf)
-
-  Details 2011 transit bond scopes for purchasing revenue and support vehicles, acquiring associated equipment, and related ABQ RIDE facility and technology investments. [Full 2011 published-scope record](/city-data/capital-spending/#2011-published-scope-and-version-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/transit_scope.pdf)
+The [2011 department/version family](/city-data/capital-spending/#department-scopes-and-initial-versions-20112019) includes ABQ RIDE’s proposed $6.2 million scope for vehicles, park-and-ride facilities, technology, facility rehabilitation, maintenance equipment and stops, alongside the wider capital-program context. These are scope allocations, not evidence of final spending.
 
 - [2003 General Obligation Bond Program: Master Record (ABQInfo Historical Compilation, Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2003-general-obligation-bond-program-master-record-abqinfo-compilation.pdf)
 

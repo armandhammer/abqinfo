@@ -369,6 +369,8 @@ These records preserve the adopted two-year program and each FHWA/FTA-approved r
 
 ### Historical Capital Programming
 
+The [2004 street-program record](/city-data/capital-spending/#20032004-general-obligation-bond-program) connects the ten-page project list with the November 2 ballot question and programming context. The question asked permission to issue $52,514,950; it does not establish the election result or completed street improvements.
+
 - [2011 Streets General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-2011-streets-go-bond-project-scopes-published.pdf)
 
   Details 2011 street bond scopes covering planning, design, right-of-way acquisition, and construction for major roadways, intersections, paving rehabilitation, bridges, signals, and named corridor projects across the City. [Full 2011 published-scope record](/city-data/capital-spending/#2011-published-scope-and-version-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/streets_scope.pdf)
@@ -382,10 +384,6 @@ These records preserve the adopted two-year program and each FHWA/FTA-approved r
 - [2004 Street General Obligation Bond Project Titles, Amounts, and Scopes (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2004-street-go-bond-project-titles-amounts-scopes.pdf)
 
   Lists each 2004 street bond project with its title, amount, and scope, covering advance right-of-way acquisition, paving rehabilitation, intersections, bridges, sidewalks, trails, traffic management, and named corridor improvements. [Full 2003–2004 capital-program record](/city-data/capital-spending/#20032004-general-obligation-bond-program) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2004-bond-documents/ProjectTitles.pdf)
-
-- [2004 Street Bond Ballot Question (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2004-street-bond-ballot-question.pdf)
-
-  Preserves the exact street bond question placed before Albuquerque voters on November 2, 2004, authorizing $52,514,950 in general obligation bonds for City street improvements, land acquisition, and equipment. [Full 2003–2004 capital-program record](/city-data/capital-spending/#20032004-general-obligation-bond-program) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2004-bond-documents/StreetBondQuestion.pdf)
 
 - [2009–2017 Streets General Obligation Bond Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-2009-2017-streets-go-bond-summary.pdf)
 

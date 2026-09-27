@@ -1,5 +1,13 @@
 # ABQInfo Current Work
 
+GO/capital publication-quality remediation is implemented on `codex/go-capital-quality-remediation`, based on immutable `940e3032d96f868eed8cff7c3deeaf1c556f50a2`. Four substantive family presentations replace fragmented standalone entries across six existing pages. All 32 capital-family queue matches and two required existing masters have been assessed; the owner requested the original 31/32 discrepancy be raised in the content PR. Seven questionable findings and three unrelated negatives remain unchanged.
+
+The complete normal suite, repository-wide quality audit and local rendered checks passed. Public R2 and official source GETs for all 34 affected originals/masters match exact sizes and SHA-256. No R2 mutation or new navigation/PDF. Debt is 1574 and unresolved September 13 findings are 10 on this review branch; production remains at the prior debt baseline until owner-approved merge.
+
+The `pr196-background-closeout` stage is sealed at the new immutable baseline. Its prior evidence and queue snapshots are preserved. New exact-delta guard and all findings/relationships/reviews are under `project-state/discovery/go-capital-quality-remediation-2026-09-27/`. Next: verify the nonproduction preview, prepare the focused content PR, then stop for manual owner review. Do not merge or deploy production.
+
+## Prior completed state
+
 PR #196 is merged and live at `a7b470ec2e5391639b85ce4995e55b8886652c00` (reviewed head `367bc9dd9a925bfaa96b89fdcf12e54e02b75fc4`). The complete merged tree matches the reviewed head. Cloudflare deployment succeeded for the merge commit, and all three production pages passed family/link/qualification and retired-entry checks: Development Process, Transportation Plans, and Capital Spending. The DPM annual masters, qualified MRMPO FFY 2006-2009 series, and UETF 2010-2011 program record match the reviewed implementation.
 
 The `quality-remediation-first` stage is sealed at the immutable PR #196 merge endpoint. All pre-merge preview and validation artifacts remain historical evidence. Separate merge/deployment and production receipts and the background exact-delta guard are under `project-state/discovery/pr196-production-closeout-2026-09-27/`. This closeout changes no content, inventory dispositions, remediation rows, or R2 objects; added storage is zero.

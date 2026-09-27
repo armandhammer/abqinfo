@@ -226,6 +226,8 @@ if (Test-Path 'project-state/discovery/planning-documents-root-hugo-implementati
   if ($LASTEXITCODE) { throw 'Planning publication rendered validation failed.' }
 }
 
+& python "$PSScriptRoot/Test-GoCapitalQualityRemediation.py" --rendered-root tmp/site-build
+if ($LASTEXITCODE) { throw 'GO capital remediation rendered validation failed.' }
 & python "$PSScriptRoot/Test-FirstQualityRemediation.py" --rendered-root tmp/site-build
 if ($LASTEXITCODE) { throw "First quality remediation rendered validation failed." }
 $broken = @()
