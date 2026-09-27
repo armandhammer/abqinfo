@@ -1,0 +1,719 @@
+{
+  "schema_version": 1,
+  "authorization": "Owner explicitly authorized sealed completed-stage regression architecture and exact guards for every later stage in PR #194; no merge authorized.",
+  "stages": [
+    {
+      "id": "planning-archive",
+      "baseline_commit": "6f2f181a81e75dd95faac1c0bf2283176964824c",
+      "regression_scripts": [
+        "scripts/project/Test-PlanningDocumentsRootArchivePreparation.py",
+        "scripts/project/Test-PlanningDocumentsRootArchivePublicBytes.py",
+        "scripts/project/Test-PlanningDocumentsRootR2UploadPreflight.py"
+      ],
+      "end_commit": "c054c9af67f1984051462d75727bd7fb05ea3ed2"
+    },
+    {
+      "id": "approved-background-archive",
+      "baseline_commit": "c054c9af67f1984051462d75727bd7fb05ea3ed2",
+      "regression_scripts": [
+        "scripts/project/Test-ApprovedBackgroundCampaign.py"
+      ],
+      "end_commit": "b8a52bbdef5f78599187b1020d1f10b65c1a17b4"
+    },
+    {
+      "id": "ordinary-first",
+      "baseline_commit": "b8a52bbdef5f78599187b1020d1f10b65c1a17b4",
+      "regression_scripts": [
+        "scripts/project/Test-LargeOrdinaryCampaign.py"
+      ],
+      "end_commit": "34ccc0fe230ffb8290652979cbe8603c69db3115"
+    },
+    {
+      "id": "ordinary-second",
+      "baseline_commit": "34ccc0fe230ffb8290652979cbe8603c69db3115",
+      "regression_scripts": [
+        "scripts/project/Test-SecondLargeOrdinaryCampaign.py"
+      ],
+      "end_commit": "1b5bb82ea52e3ea7450d9526b55881c22e029af0"
+    },
+    {
+      "id": "ordinary-third",
+      "baseline_commit": "1b5bb82ea52e3ea7450d9526b55881c22e029af0",
+      "regression_scripts": [
+        "scripts/project/Test-BackgroundCampaign.py"
+      ],
+      "end_commit": "b8006612fcf2618c54b10a612fab7b187613a16b"
+    },
+    {
+      "id": "human-reassessment",
+      "baseline_commit": "b8006612fcf2618c54b10a612fab7b187613a16b",
+      "regression_scripts": [
+        "scripts/project/Test-HumanReviewReassessment.py"
+      ],
+      "end_commit": "d6cc45b63a4f30aa9b87e5e00709bba4c861e98f"
+    },
+    {
+      "id": "background-followup",
+      "baseline_commit": "d6cc45b63a4f30aa9b87e5e00709bba4c861e98f",
+      "regression_scripts": [
+        "scripts/project/Test-BackgroundFollowup.py"
+      ],
+      "end_commit": "8f78feda43c40a86f18c1c51dd2da3b106bf6e42"
+    },
+    {
+      "id": "owner-decisions",
+      "baseline_commit": "8f78feda43c40a86f18c1c51dd2da3b106bf6e42",
+      "regression_scripts": [
+        "scripts/project/Test-OwnerDecisions.py"
+      ],
+      "end_commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063"
+    },
+    {
+      "id": "planning-publication",
+      "baseline_commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "regression_scripts": [
+        "scripts/project/Test-PlanningPublicationLifecycle.py",
+        "scripts/project/Test-PlanningDocumentsRootHugoImplementation.py"
+      ],
+      "exact_delta_guard": {
+        "module": "PlanningPublicationLifecycle",
+        "function": "guard_current_delta"
+      },
+      "end_commit": "2588c0c1399351957f140825c50fc485fe5546b1"
+    },
+    {
+      "id": "old-town-quality-correction",
+      "baseline_commit": "2588c0c1399351957f140825c50fc485fe5546b1",
+      "regression_scripts": [
+        "scripts/project/Test-QualityCorrectionHugoImplementation.py",
+        "scripts/project/Test-PublicationQuality.py",
+        "scripts/project/Audit-VisiblePublicationQuality.py"
+      ],
+      "exact_delta_guard": {
+        "module": "QualityCorrectionLifecycle",
+        "function": "guard_current_delta"
+      }
+    }
+  ],
+  "protected_evidence": [
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/archive-plan.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "6d651f3feca8bee8e90f02ebdd409dc86a284d4a46c92b7b71e980c5085bbfdc"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/archive-receipts.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "83792cb0ebac7b107f1917f913afd325a9db900db86f6ac59c683cf06a3f9bd7"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/archive-recovery.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "8418c9354501f389ed0cd8caf85df5b3f918f1d0a907746a91bc32828616baed"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/authorization.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "089d014cba4134adc7cbcc34051c963b4e497777944d07b043a9bcbd439330c8"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/baseline-followup-queue.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "064f271bce7c754b2898e43791547061fec69f4b84994d0e4276ea15c78b641f"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/baseline-owner-packages.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "4babd9b6cadc9450ab60db2dd3ab093358cfb1fd65ef422b7fdac86f9fe816be"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/baseline-records.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "3e4b14399f5ca87e58db753a6399f4d1152add7d7c1ab61d628c16c426678bc2"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/closeout-pr-description.md",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "2c550938b00b19a6e9476609d7e701ca5cf69892e018f7eb8c70fb3ffe4dd4c0"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/decisions.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "13e44965a34de996c1a44c7fccccd9713652ec8f8c1a61e25e5dc21222f60a50"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/existing-art-public-verification.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "e3d27b7b80786b9556c4510833c7af94679172246a6124cc58045854615f326b"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/full-validation-001.log.gz",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "325ad8e119d76cab1202405f2bd66aad7ffc7255642932e76ad79954de7f14c7"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/full-validation-002.log.gz",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "c72e7c32e042607e35425c7576784b6a855d899ee3036e7b64c0964aebded2b0"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/full-validation-003.log.gz",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "00d5dfd974aaa0cd05f50839abc261bf5628afa10fd5fc8235eda708105a79cd"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/full-validation-004.log.gz",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "f3ee50fefbfe7b50644cabf7ab96e5d94bcfecf5e881352f02c6bb894a967ff1"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/full-validation-005.log.gz",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "b1d1cb5b31bc625f42d699746974b30ec79c9df2f514463da5f7ec35310a3166"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/inspection.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "9551d77a02b053a5d49dbf23837b255b08c42ae3449325fe8980fa1211a748fc"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/integration.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "c74889731aa375109ba2424de0d5a6d377a4874bc1b01b4ac222e6b5751a726d"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/next-ordinary-queue.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "c678ba658a03648d733b9d65ece06c9d1467e3eec1414dbe5b40bc0689bf928d"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/pr-description.md",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "f63bd9700ab5adc280d6f5e56d145ee5357cfff60260de4de6237e8030ef7635"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/r2-baseline.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "5596ef21f5f30df09cf6cf2ce8349efe9e15feb5e2dd85eb65e7980b75748bd9"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/r2-current-preflight.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "678cf727cf03a8fee93a18be66431c22aea196fb1a2df41b8be75c78366a4d90"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/r2-final.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "678cf727cf03a8fee93a18be66431c22aea196fb1a2df41b8be75c78366a4d90"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/report.md",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "5a66ab8de1c2f054e500f021437ab5abf196d5bc6b7cf1e3b3de833930b55742"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/summary.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "6e73a788ad4d46ec31407198784ad6ca712afad1861eaa4adc2cb2e2e3035559"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/validation-001.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "845e3eef7253b9d546c9432538eb8aea5c549cc58db81a86c8e5a6d2a858b09b"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/validation-002.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "069de5303d3d9d09413089aa5e3648c6af8a38e2b88e66f07f5e2d9a800e92a4"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/validation-003.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "7d111d310756725c1b9003504bd2a3c68489e6f5d6a7338f9ac462ebca48f310"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/validation-004.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "b3746d79f08a5c72811cae95fd89f11d6673311b69ff2f6308def51a39dc526d"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/validation-005.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "6f487cb78a9e6a3bcba84e5abd7cac30be0aa7620163a0e8cfa5dd1ea6e1e0b5"
+    },
+    {
+      "path": "project-state/discovery/owner-decisions-2026-09-26/wireless-scope-disposition.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "6a3053d097419d98cd0d113d5472b37acad6ee07488494156511df254be5083a"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/approved-archive-partition.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "fd7ed0b37452f85f857fae6312fee1d82e6f0eec18d9bdf8518912e9803c41fe"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/archive-plan.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "c5f44a32b9bd2ed63a7c614ae826644f1cc41e4ae0bdadce97a5c17b85d85beb"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/archive-receipts.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "b3b4417f71a954a9e6fb1aa70a29eb62809246b71048baa12df2b9d57d91903c"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/authorization.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "ed58c02ad58fbb7696c57f9f1b157dd53ddc3215353c77564921808caabaed40"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/baseline-followup-queue.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "c46dde918089dd83cbcb1590cbbab7be98783765364dd179db70da106d3a25d4"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/baseline-records.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "306f5054f77ec1dc157eee30d2eaaa654f1b9156c0513ddc0aefc05a8bf40194"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/closeout-pr-description.md",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "56b4b136d24deb613fdd0bcc37f4bd433925f0a7afcb7a8a34d2d8fe344a8f7f"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/comparisons.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "bb51e7b61f0a2933f51624b062ca44ff44f209ec04664c9a48fad780d20cb277"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/decision-updates.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "48200bd68e0542e3fa895d4607cfddc5de51f5e527f4d4270d2d80696a611b39"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/decisions.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "8ed46af01d7ea2e53947a7c23224930fe4114447ca3caf287a722a63d4a9f88c"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/fetch-tasks-001.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "8ac95c7c05601384f2e671be60620979b9784cff9a330afcbfbdbfc6ac49ee05"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/fetch-tasks-002.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "490f9b85a14f923ce2a004e12b166a139b1662a81b04af5dfd4e4acff5cfa4ca"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/fetch-tasks-003.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "b16af7c99bb42f2124d6a7ae98880186700c0d3083a5f411923b95ec336d8b4e"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/fetch-tasks-004.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "b68d623482885e27b121cad697db859a63e65497f5362f8756867d2accbd0e9e"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/fetch-tasks-005.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "90b9f8bff0d55f6bc99b2c74dc317e62d7ff93c9758e69410439ea85fd98d6a7"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/fetch-tasks-006.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "1bd4b29460c499ceeb6da92e9af1465f986ece628daf8d8b84289640a7c85655"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/fetch-tasks-007.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "1e18d592e18d17399853ebf9079de559b0dbad72245d6923ad1382cf01d21747"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/full-validation-001.log.gz",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "5e047f1f81a62ade7a54b72a12b56f46310352d1744bdce4bf872382a39cd67f"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/full-validation-002.log.gz",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "399cb780f65edffa2ea339cf0ca65d05bc5aa809ec10e9ae96162f1c1de9ad57"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/full-validation-003.log.gz",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "5276d125c573bec5d240f327352977225bf1834358d81af2bec84d3a64e4d908"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/full-validation-004.log.gz",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "c8370f24d7009b36afc93a18a2b73088bebe15e740159babc7f021b85232037d"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/geographic-precision-updates.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "d26a0b7cc96e2c058bcf437859056c91009a339701218e3913b33b284c954a4b"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/integration.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "b79fc4569d197140973c33cf617380b0e0611260e45ac5b7c2ff1ba4325806ef"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/next-ordinary-queue.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "c678ba658a03648d733b9d65ece06c9d1467e3eec1414dbe5b40bc0689bf928d"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/office-requests-002.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "4405627ec1c608ce35bb70a763cda7ce0240eaa146cacb6b641e9a7611df5aad"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/office-requests.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "b7221e5c792c76e072666aafa83ecb70f2c5e180933a8d0b7cae34af64157fa7"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/oldtown-edition-comparison.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "e201c3b1fffc20a9c13aa1ddc511005b5e091f728621cb2c1a4e8a32050fb178"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/owner-packages-baseline.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "d273c9aec400e51802cc3e29fd2eea2f3cef1dcb7c30033baf8c853d729dd441"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/pdf-inspection.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "f11cce006de25920a07fa0797b442083059da35b6910377f4c000254ce9e3f39"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/pr-description.md",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "05d3e9977cc30a66c5e611e9d56d981a99271d2c578b3876893f7a5d460c0b3e"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/precision-updates.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "100bd9901cc4b43db2929e18e4892037c82e480fa20e0cee5aca0acf18a70453"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/r2-baseline.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "eda36c39d6f3f2115e5b319683ea099a61c527deced123e0694691e683a35088"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/r2-current-preflight.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "ca7226cdfa3a5097ccf1117844a9ab281a2d94e78eedc5133df780958775b78f"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/r2-final.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "ca7226cdfa3a5097ccf1117844a9ab281a2d94e78eedc5133df780958775b78f"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/rendered-inspection-receipts.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "0a09ccf49070e89ac729904c0be462a746aa9d71bbb3ad2ae5b2dd807c545b3c"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/report.md",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "8a1534a297a8adadf9a353de85d7855b47216d99a9c1fc5cd0acf8fb18220cc3"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/retrievals.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "e09fe4fb3956effadf9d8a931116566585ff5f17abd2a7a1c192df1da3462353"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/source-links.json.gz",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "59428970d6f48f2b0ff5a2933cda210859f58a4720ceff78a8d9464eaf1d82dd"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/summary.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "58d99915f232419f7a4943a5255999c155c60ccae5ee3d51cc6542adda121fe5"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/validation-001.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "a4f108985c391bea293a28c9d77e240555a49715c0a087a27dcac2fdae0825c1"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/validation-002.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "08d2bc254ce9f1aef9d6922a373b4525c833d49d55212e834cbd26c1697c4df9"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/validation-003.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "4418baeb17455d5dd460d0a0919cc791df54b182ebfa0d90d11cd744cd681ee4"
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/validation-004.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "6917a76312d8e0fa7eb4777f948e47773edd91e4ed1bb3a8c58b8ace47a02f0f"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/archive-decisions.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "ed474b155ae24eff95236a27174f10b63245b78f093581b5314adca59dab2a87"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/archive-plan.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "5e1b262a29ba6a80756744f91a8fff1384e6cf5854174c054c2a30d682caca45"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/archive-receipts.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "dd803235f7bd775c08641a1dbe0df45a9bc58861a6abf0656090dc3e1db42327"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/authorization.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "414832a851a6d3b81b84116adf7096b313835ea6c7e178649f4a2399824bbb5c"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/baseline-queue.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "50ac12d4d0cb39828deb1245a00206e131973846a3b83e99a610156295db27ec"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/baseline-records.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "fd0ab16bc734d1b53898c634bb140dd0c2c92eb005274fb579ae48ef2f5ce85a"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/closeout-pr-description.md",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "e1f00c2c10d568a3b616a9669cbd6baea8c11fe29f4a00c1ba446177841898d6"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/decisions.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "3945092d2134172bbc24bb09907285f1f6f55b68966ac16c3aaa1b59dc864c87"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/family-evidence.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "76ad02fbe9bd05543cba8d3344303fe602a911b739747df599a9cde93cb49e07"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/fbz-comparison.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "1fed2ae32768329e2bf29089788ff2f204741852611ef85770ddbc20115850f9"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/followup-tasks.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "84ad94f914830b8727404fcbc49ca18657c0be34cd949d6f83c2d14569b0992c"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/full-validation-001.log",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "aaf52ef9713e19d341dfe5ffcda7928b179f620d5dfb968a6ed064ed03889170"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/full-validation-002.log",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "6c675f88d43554a2a4ffa2e2bd3d48001cf076b48549417bc7b84fa326fb9ad1"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/integration.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "ea6a6cf020ce4d697b621c99d25214fa9bffcbb94797d4fe1d9394760a3a3a4a"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/legislative-evidence.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "dba7ff90774949bc984643c75ab1123c5264c8ceb2050079e2c6d9bafab24828"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/next-ordinary-queue.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "3f680fac318839491df54e4f866e5d24a1ddef1bd8fddca3bcd3733a5df88565"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/office-inspection-requests.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "8b2ef7bad5eaa6588f7829ed7fd728a27554b5fa1bcaa1b749b24d4896fc4fde"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/owner-packages.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "b789b35e278d4615d258b9c0a1533b7233311026b86a9d7550e4c6c473715c20"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/pr-description.md",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "ac73c0592e60af54b77ca2b690e5dd6662725003d9837b3f4d9a95c5b263be7f"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/r2-baseline.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "47ce335a22cdf50f0ba63aa63b763cd186dddbcce56f864d0513177ff85a8d54"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/r2-current-preflight.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "22af237deacb5c38917ef0af777713d2cc6d85fe22958fe7c6c53d68d0f4341e"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/r2-final.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "22af237deacb5c38917ef0af777713d2cc6d85fe22958fe7c6c53d68d0f4341e"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/r24-17-enacted-inspection.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "8b9304449dfbda91043b69d77905e8db0baf26042dd9e2d0708cf746fe8594d7"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/report.md",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "6a27fbfc3e4f9567c8f383fc7e1fc040a1dcbdbd76a156b3c8ebef11cb400e07"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/retrievals.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "511e80bde94a9b7bbfe38b239991a1c251c1d0e7109d4475059d022617413b25"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/source-links.json.gz",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "a8a9e4cc05a6cec8063610c15ba52a5f787028a739728a998bddf8f5ddba3eff"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/summary.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "6988fe475a7fad27a81e391f8dc79456ca0c39b8f4e4174cd9460b50f2db11d2"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/validation-001.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "a4436f7966e7afec73f71eba2634defdfef514c75db3cf66de1be9c7142a52ca"
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/validation-002.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "dc8b818a02a46aac33114292d55d38a5c23b930563e17ff2ea4b6e7d77665379"
+    },
+    {
+      "path": "project-state/discovery/planning-documents-root-archive-preparation-2026-09-25.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "d72ced495a47e1dc5ad3e9cff8fca8a33fb45848515b8f74607ae036466b535b"
+    },
+    {
+      "path": "project-state/discovery/planning-documents-root-residual-decision-2026-09-20.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "e8721f14e1cecbad9f300e8498223182801b89de243a8583df71a9007227f52e"
+    },
+    {
+      "path": "project-state/discovery/planning-documents-root-barelas-duplicate-reconciliation-2026-09-26.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "3264784b61fcadbf6f9fb69cdb779c76ea8619e592128cc435e2ab7a238c3d93"
+    },
+    {
+      "path": "project-state/discovery/planning-documents-root-archive-public-byte-verification-2026-09-26.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "046cc873e8c4ba2f83e954defd6451c7946324d2647659d762e96e9f8f0aa0ef"
+    },
+    {
+      "path": "project-state/discovery/planning-documents-root-r2-upload-preflight-2026-09-26.json",
+      "commit": "2c5e170e1dda5a4b3ad44dc328f6e3cb1b458063",
+      "sha256": "316af1cea40e39394309c0dc2a1a270ba039da6c864f93046f15dbc45b503aec"
+    },
+    {
+      "path": "project-state/discovery/approved-inventory-mission-scope-audit-2026-09-22.json",
+      "commit": "216dd699c24ec8d95aa83e90d3309d5305df2082",
+      "sha256": "11253da00ad45ad2f5c97cc2a9e0390fa9c86bece590a46094fa82e23d5a1bc9"
+    },
+    {
+      "path": "project-state/discovery/approved-inventory-backlog-prioritization-mission-scope-2026-09-22.json",
+      "commit": "216dd699c24ec8d95aa83e90d3309d5305df2082",
+      "sha256": "ec79c214ffb46d3947dc7afd7dab642b172ee9486532ce90d79ee712653c2c84"
+    },
+    {
+      "path": "project-state/discovery/planning-documents-root-hugo-implementation-2026-09-26.json",
+      "commit": "2588c0c1399351957f140825c50fc485fe5546b1",
+      "sha256": "6156746c5538c9a6448c6de02aab649b201652c782e8f8a110e601c87eed2e54"
+    },
+    {
+      "path": "project-state/discovery/post-pr132-content-quality-audit-2026-09-13.json",
+      "commit": "2588c0c1399351957f140825c50fc485fe5546b1",
+      "sha256": "e5ad668e42474401009e044b5ac32ae50685a2ad3d81a6cd0460b069a5647a47"
+    },
+    {
+      "path": "project-state/discovery/post-pr132-content-quality-review-2026-09-13.md",
+      "commit": "2588c0c1399351957f140825c50fc485fe5546b1",
+      "sha256": "11719e6d21bb7604b21935aaf30fcfb5aa69f8aa6f84d8f9da0e01ca1e6ca31d"
+    },
+    {
+      "path": "project-state/discovery/old-town-quality-correction-2026-09-26/current-ido-index.html",
+      "commit": "b6f559a8169c86fc3a122353994d133f2c055fd8",
+      "sha256": "ff25351314fa65d5770f3ec01b87a4c82c82c2b729de1176fe2e5af0d31ae329"
+    },
+    {
+      "path": "project-state/discovery/old-town-quality-correction-2026-09-26/current-old-town-guidelines.pdf",
+      "commit": "b6f559a8169c86fc3a122353994d133f2c055fd8",
+      "sha256": "995f4bfcf49fdc244c6ff0eaf5ea3710ce4bbb545839409aed2c4452a36ee5b7"
+    },
+    {
+      "path": "project-state/discovery/old-town-quality-correction-2026-09-26/currentness-evidence.json",
+      "commit": "b6f559a8169c86fc3a122353994d133f2c055fd8",
+      "sha256": "823e5424de0b533beceffd3bf9d1ead1a08427a962dd0bce2eef6b78cec085e8"
+    },
+    {
+      "path": "project-state/discovery/old-town-quality-correction-2026-09-26/historic-standards-index.html",
+      "commit": "b6f559a8169c86fc3a122353994d133f2c055fd8",
+      "sha256": "b063c83401fb0c58595c93ad2972a7e95115410388776d0690881ace727a9140"
+    },
+    {
+      "path": "project-state/discovery/old-town-quality-correction-2026-09-26/postmortem.md",
+      "commit": "b6f559a8169c86fc3a122353994d133f2c055fd8",
+      "sha256": "fe39df833722ca57ed78a656647bf124b091fb187a59fd5071fd46b40b0f2cc2"
+    },
+    {
+      "path": "project-state/discovery/old-town-quality-correction-2026-09-26/record-decisions.json",
+      "commit": "b6f559a8169c86fc3a122353994d133f2c055fd8",
+      "sha256": "bc0503f0b9e007ebe36b06cc60b516eaeefb7f876da8b266429bc45cc79b0a2b"
+    },
+    {
+      "path": "project-state/discovery/publication-quality-remediation-2026-09-26.json",
+      "commit": "b6f559a8169c86fc3a122353994d133f2c055fd8",
+      "sha256": "e5aae126aaf574ff0ec1a8974bee4f11412e2ea15744bd36172b0368f10bbeba"
+    },
+    {
+      "path": "project-state/discovery/publication-quality-remediation-2026-09-26.md",
+      "commit": "b6f559a8169c86fc3a122353994d133f2c055fd8",
+      "sha256": "abff291aa5d682c1adce2c4c7ae7eedc901d8d5e155f9bff35e124ed28ff38ce"
+    },
+    {
+      "path": "project-state/publication-quality-policy.md",
+      "commit": "b6f559a8169c86fc3a122353994d133f2c055fd8",
+      "sha256": "b5c9233de11a310b7ed4fa984fce99ab2e070e82766819b0ec09336ea94254e6"
+    },
+    {
+      "path": "project-state/discovery/old-town-quality-correction-2026-09-26/implementation.json",
+      "commit": "b6f559a8169c86fc3a122353994d133f2c055fd8",
+      "sha256": "0736520481c2258674fa0df0b1df5d90829c05e214f539feb5169a380d4162d8"
+    }
+  ],
+  "completed_audits": [
+    {
+      "id": "mission-scope-correction",
+      "end_commit": "216dd699c24ec8d95aa83e90d3309d5305df2082",
+      "regression_scripts": [
+        "scripts/project/Test-MissionScopeAudit.py"
+      ]
+    }
+  ]
+}

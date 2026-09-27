@@ -34,25 +34,17 @@ Current zoning tools and a preserved history of Albuquerque's Integrated Develop
 
   [Official MRCOG PDF](https://www.mrcog-nm.gov/DocumentCenter/View/5452/2021-Legalization-of-Cannabis-Planning-Commissioner-Workshop-PDF) · [Current Regional Planning Workshops and Training](https://www.mrcog-nm.gov/637/Regional-Planning-Workshops-and-Training)
 
-## Old Town Regulatory Review
+- [Planned Communities Criteria: Policy Element, February 1991 (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-planned-communities-criteria-policy-element-1991.pdf)
 
-- [Old Town Virtual Task Force Summary of Ranking Results, Topic 1: Outdoor Displays (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-old-town-task-force-ranking-outdoor-displays.pdf)
+  Preserves the February 1991 planned-community policy element, documenting criteria for evaluating large master-planned developments against the Comprehensive Plan. This is a historical policy record, not current Integrated Development Ordinance text.
 
-  The City task force summary charts how thirty-three participants ranked proposed options for regulating outdoor merchandise displays in Old Town, giving the vote distribution behind the recommendations that fed the Old Town historic protection overlay standards.
+  [Official City PDF](https://www.cabq.gov/planning/documents/planned.pdf)
 
-  [Official City PDF](https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-1-colo.pdf) · [Projects placement](/development-land-use/projects/#old-town-virtual-task-force-records)
+- [Unser Boulevard Overlay Zone: Complete Legislation (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-unser-boulevard-overlay-zone-complete-legislation.pdf)
 
-- [Old Town Virtual Task Force Summary of Ranking Results, Topic 2: Signs (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-old-town-task-force-ranking-signs.pdf)
+  Preserves the historical legislation adopting and mapping the Unser Boulevard Design Overlay Zone, including its boundary and map sheets. The first page carries a handwritten enactment notation; no numbered-enactment claim is made here.
 
-  The City task force summary charts how twelve participants ranked proposed sign rules for Old Town, covering off-premises signs among other categories, and records the vote distribution behind each option the task force considered.
-
-  [Official City PDF](https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-2-colo.pdf) · [Projects placement](/development-land-use/projects/#old-town-virtual-task-force-records)
-
-- [Old Town Virtual Task Force Summary of Ranking Results, Topic 3: Outdoor Demonstrations (Archived PDF)](https://files.abqinfo.com/development-land-use/zoning-ido/cabq-old-town-task-force-ranking-outdoor-demonstrations.pdf)
-
-  The City task force summary charts how seven participants ranked options for regulating outdoor craft demonstrations in Old Town, testing whether the former zoning code definition at Section 14-16-2-25(o)(1) adequately defined an outdoor demonstration.
-
-  [Official City PDF](https://www.cabq.gov/council/documents/old-town-virtual-task-force-summary-of-ranking-results-topic-3-colo.pdf) · [Projects placement](/development-land-use/projects/#old-town-virtual-task-force-records)
+  [Official City PDF](https://www.cabq.gov/planning/documents/UnserBlvdOverlayZoneCompleteLegislation.pdf)
 
 ## Historical Wireless Telecommunications Regulations
 

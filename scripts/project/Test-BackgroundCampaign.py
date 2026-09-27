@@ -1,3 +1,5 @@
+from WorkflowStageLifecycle import StageSnapshot
+stage=StageSnapshot('ordinary-third')
 #!/usr/bin/env python3
 """Production guard fixtures plus active-population/recovery contract."""
 import copy, hashlib, json, runpy, subprocess
@@ -50,17 +52,7 @@ subprocess.run(['pwsh','-NoProfile','-ExecutionPolicy','Bypass','-File',str(size
 active=ROOT/'project-state/active-campaign.json'
 if active.exists():
  pointer=load(active);d=load(ROOT/pointer['campaign_artifact'])
- # Seal this completed campaign at the next owner task's immutable baseline.
- # The independent reassessment audit constrains every subsequent changed row,
- # object and queue. Never grant this profile protected-family authorization.
- later=ROOT/'project-state/discovery/human-review-reassessment-2026-09-26/authorization.json'
- if later.exists() and d['state']=='complete_background_campaign' and d['campaign_id']=='ordinary-review-large-2026-09-26-third':
-  sealed_commit=load(later)['baseline_commit']; live_load=load
-  sealed_paths={'project-state/master-inventory.json','project-state/r2-inventory.json','project-state/discovery/mission-scope-borderline-human-review-queue.json'}
-  def load(p):
-   relative=Path(p).resolve().relative_to(ROOT).as_posix()
-   if relative in sealed_paths:return json.loads(subprocess.check_output(['git','show',sealed_commit+':'+relative],cwd=ROOT).decode('utf-8-sig'))
-   return live_load(p)
+ load=stage.load_state_or_live_evidence
  for receipt in d.get('validation_history',[]):
   assert hashlib.sha256((ROOT/receipt['log_artifact']).read_bytes()).hexdigest()==receipt['log_sha256'],'Durable validation log changed'
  s=load(ROOT/d['selection_artifact'])
@@ -104,8 +96,7 @@ if active.exists():
  for k,r in receipts.items():
   v=r['public_verification'];assert v['byte_identical'] and (v['size_bytes'],v['checksum_sha256'])==(r['size_bytes'],r['checksum_sha256'])
   assert r['size_bytes']<=150000000 and objects[k]['etag']==r['etag'] and rows[r['id']]['r2_key']==k
- assert not subprocess.check_output(['git','diff',d['baseline_commit'],'--name-only','--','content'],cwd=ROOT).strip()
- assert subprocess.check_output(['git','rev-parse','HEAD:content'],cwd=ROOT,text=True).strip()==d['content_tree_baseline']
+ stage.assert_no_visible_changes(d['baseline_commit'],d['content_tree_baseline'])
  if d['state']=='complete_background_campaign':assert objects.keys()-old.keys()==receipts.keys()
  if d.get('next_queue_artifact'):
   queue=load(ROOT/d['next_queue_artifact']);pending={i for i,r in rows.items() if r['status']=='pending review'}

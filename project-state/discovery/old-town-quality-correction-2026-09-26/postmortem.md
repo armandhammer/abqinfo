@@ -1,0 +1,18 @@
+# Old Town publication-quality failure and correction
+
+The owner rejected the isolated 1998 H-1 guidelines and the entire three-topic Old Town ranking-results family on September 26, 2026. PR #194 removes their public presentation and empty headings from Zoning & IDO and Projects. All four records are excluded from publication; original provenance, historical research and R2 objects/URLs remain archival evidence. No consolidated ranking-results entry is authorized.
+
+1. The September 13 post-PR audit explicitly found that the three rankings did not meet the standalone standard. That advisory finding never became an enforceable inventory/publication block.
+2. Later mission-scope and archival validators preserved their existing validated state because those checks answer different questions: Albuquerque relevance, original identity and archival integrity do not establish publication value.
+3. H-1 advanced without a complete publication-quality assessment.
+4. Archive/rendering QA supplied public-usefulness language without a supersession/currentness review. Successful rendering was incorrectly allowed to stand in for editorial assessment.
+5. PR #194's exact-delta validator checked scope, identity, placement, descriptions, links, hashes and rendering, but never ran the publication-quality gate against each actual publication candidate.
+6. The normal suite ran synthetic Test-ContentPublicationQuality fixtures without comprehensively evaluating actual visible records.
+
+The current City historic-standards index identifies Old Town guidelines (2022) and links a 19-page Historic Old Town Development Standards & Guidelines package. These current standards/guidelines supersede the isolated 1998 sheet as a useful public reference. This is a standalone ABQInfo usefulness/currentness decision, not a claim that historical text ceased to exist or that each former provision was individually repealed. See the saved currentness receipts and owner decision artifact.
+
+The correction separates publication value from integrity QA. Actual-record transition gates, explicit implementation-validator calls, a comprehensive visible-record audit, and an immutable remediation witness now run in the normal suite. Thin standalone material requires specific substance, unique durable use and evidence; dated regulatory/procedural material also needs authoritative currentness review. Engagement outputs require analysis, formal action/findings or concrete durable unique information, rather than hosting, chart format or participant counts. Component presentation must honor its aggregation decision. Any reversal of a negative finding must identify that finding and provide new evidence.
+
+The audit does not manufacture approvals for old validated rows. Its 1,638 unresolved legacy records are listed for owner remediation, including 67 still-visible negative/questionable September 13 findings. Their exact rows, locations and link counts cannot silently change or grow while unresolved. New or changed implemented/validated records must pass the actual-record gate regardless of this debt witness. Later research-only consolidation plans do not resolve still-live standalone entries. No unrelated content is removed in this PR.
+
+Historical safeguards remain intact: the completed twelve-original Planning implementation is sealed at its original endpoint; the correction has a separate exact-delta guard. Archive/preparation/public-byte artifacts and completed owner decisions remain unchanged. Eleven Planning originals remain authorized for publication, with four Impact Area chapters in one incomplete historical component set and the Barelas exact duplicate still reconciled to its existing canonical record. No R2 mutation occurred.

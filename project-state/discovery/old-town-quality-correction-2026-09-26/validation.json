@@ -1,0 +1,45 @@
+{
+  "recorded_at": "2026-09-26",
+  "validated_content_commit": "79638244612c3e6a9d2308fc9ef98b9ca1717527",
+  "normal_suite": {
+    "command": "pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/project/Invoke-ProjectValidation.ps1",
+    "exit_code": 0,
+    "result": "passed without special-case bypass",
+    "log": "project-state/discovery/old-town-quality-correction-2026-09-26/normal-project-validation.log",
+    "log_sha256": "f2e4ac1b9737b543adf0a3f68bf1db0b969c601c6b8874cf471edf3e72963f46",
+    "default_external_link_sweep": false
+  },
+  "repository_quality_audit": {
+    "result": "passed exact unchanged debt enforcement; all actual Planning candidates passed",
+    "current_visible_records": 1649,
+    "passing_corrected_planning_records": 11,
+    "additional_legacy_records_needing_complete_assessment": 1638,
+    "unresolved_september_13_findings": 67,
+    "negative_findings": 60,
+    "questionable_findings": 7,
+    "prior_findings_resolved_by_master_or_compilation": 30,
+    "prior_ranking_findings_removed_here": 3,
+    "queue": "project-state/discovery/publication-quality-remediation-2026-09-26.json"
+  },
+  "lifecycle": {
+    "contiguous_stages": 10,
+    "protected_historical_evidence_files": 122,
+    "result": "passed"
+  },
+  "preview": {
+    "url": "https://3689e6f3.abqinfo.pages.dev",
+    "deployment_id": "3689e6f3-3ee8-4b3d-9489-6c4b046e7735",
+    "head_commit": "79638244612c3e6a9d2308fc9ef98b9ca1717527",
+    "result": "passed",
+    "pages_verified": 7,
+    "planning_archive_source_pairs": 11,
+    "old_town_exclusions_verified": 4,
+    "barelas_cross_links_verified": 2,
+    "log": "project-state/discovery/old-town-quality-correction-2026-09-26/preview-validation.log"
+  },
+  "r2_mutation": false,
+  "added_storage_bytes": 0,
+  "pr_number": 194,
+  "pr_state": "open for owner review; not merged",
+  "next_action": "Owner review of corrected PR; then bounded cleanup of 67 unresolved prior findings and evidence backfill for remaining legacy publication-quality debt. No merge or production deployment authorized."
+}

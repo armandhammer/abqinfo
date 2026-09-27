@@ -1,3 +1,5 @@
+from WorkflowStageLifecycle import StageSnapshot
+stage=StageSnapshot("planning-archive")
 #!/usr/bin/env python3
 """Guard exact Barelas reconciliation and the twelve-original no-mutation preflight."""
 import hashlib
@@ -96,6 +98,6 @@ assert counts['approved for addition']==((27-campaign_placed) if archived else 3
 historical='project-state/discovery/planning-documents-root-residual-decision-2026-09-20.json'
 assert (ROOT/historical).read_bytes()==baseline(historical),'Historical decision was rewritten'
 if not archived: assert (ROOT/'project-state/r2-inventory.json').read_text(encoding='utf-8-sig').replace('\r\n','\n')==baseline('project-state/r2-inventory.json').decode('utf-8-sig').replace('\r\n','\n')
-for args in (['git','diff','--name-only',BASELINE,'--','content'],['git','ls-files','--others','--exclude-standard','content']):
-    assert not subprocess.run(args,cwd=ROOT,capture_output=True,text=True,check=True).stdout.strip()
+stage.assert_no_visible_changes(BASELINE,subprocess.check_output(['git','rev-parse',BASELINE+':content'],cwd=ROOT,text=True).strip())
+
 print('Historical Planning preflight: exact Barelas duplicate reconciled; 39 approved / 1518 duplicate; 12 originals / 122,249,326 bytes / 928 pages; normal-limit WhatIf passed; no R2/content mutation')

@@ -60,6 +60,12 @@ Parks and recreation facilities and programs.
 
 ## System and Facility Plans
 
+- [Major Public Open Space Facility Plan, January 1999 (Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-major-public-open-space-facility-plan-1999.pdf)
+
+  Preserves the January 1999 systemwide Major Public Open Space Facility Plan. This historical planning framework is distinct from the West Side steering committee presentation listed under Arroyo and Open Space Planning History.
+
+  [Official City PDF](https://www.cabq.gov/planning/documents/COAMPOSFP.pdf)
+
 - [ABC Comprehensive Plan, Chapter 10: Parks & Open Space (2025 Update)](https://files.abqinfo.com/public-works/parks-recreation/abc-comprehensive-plan-chapter-10-parks-open-space-2025.pdf)
 
   The parks and open space element of the adopted Albuquerque/Bernalillo County Comprehensive Plan provides policy direction for park access, recreation, trail connections, conservation, stewardship, and an integrated open-space network.
@@ -131,6 +137,12 @@ Parks and recreation facilities and programs.
   Programs impact-fee-supported park construction and land acquisition across Academy, Southeast Foothills, North Albuquerque, North Valley, Southwest Mesa, and Northwest Volcano service areas. [Full 2007–2016 capital-program record](/city-data/capital-spending/#20072016-decade-plan)
 
 ## Arroyo and Open Space Planning History
+
+- [Bosque Action Plan, Rio Grande Valley State Park, Final Plan, January 1993 (Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-bosque-action-plan-rio-grande-valley-state-park-1993.pdf)
+
+  Preserves the final January 1993 Bosque Action Plan for Rio Grande Valley State Park, addressing river-corridor access, trails, restoration, and wildlife protection as a historical planning record.
+
+  [Official City PDF](https://www.cabq.gov/planning/documents/BosqueActionPlanParksGeneralServices0193.pdf)
 
 - [Major Public Open Space on the City’s West Side, Steering Committee Presentation](https://files.abqinfo.com/public-works/parks-recreation/cabq-major-public-open-space-west-side-steering-committee-presentation.pdf)
 

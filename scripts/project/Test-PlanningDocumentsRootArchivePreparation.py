@@ -1,3 +1,5 @@
+from WorkflowStageLifecycle import StageSnapshot
+stage=StageSnapshot("planning-archive")
 #!/usr/bin/env python3
 """Regression for the bounded 13-original Planning preparation stage."""
 import hashlib
@@ -24,7 +26,7 @@ expected = {
 }
 a=read("project-state/discovery/planning-documents-root-archive-preparation-2026-09-25.json")
 d=read("project-state/discovery/planning-documents-root-residual-decision-2026-09-20.json")
-inventory={r["id"]:r for r in read("project-state/master-inventory.json")["candidates"]}
+inventory={r["id"]:r for r in stage.load_json("project-state/master-inventory.json")["candidates"]}
 reconciliation_path=ROOT/'project-state/discovery/planning-documents-root-barelas-duplicate-reconciliation-2026-09-26.json'
 reconciled=reconciliation_path.exists() and read(reconciliation_path.relative_to(ROOT).as_posix()).get('state')=='reconciled_exact_duplicate'
 archive_path=ROOT/'project-state/discovery/planning-documents-root-archive-public-byte-verification-2026-09-26.json'
@@ -79,7 +81,6 @@ assert sum(r["disposition"]=="duplicate" for r in d["records"])==2
 assert sum(r["disposition"]=="excluded" for r in d["records"])==4
 assert (a["r2_snapshot"]["saved"]["objects"],a["r2_snapshot"]["saved"]["bytes"])==(1237,9218281842)
 assert (a["r2_snapshot"]["live_read_only"]["objects"],a["r2_snapshot"]["live_read_only"]["bytes"])==(1237,9218281842)
-for args in (["git","diff","--name-only",a["reviewed_baseline_commit"],"--","content"],["git","ls-files","--others","--exclude-standard","content"]):
-    result=subprocess.run(args,cwd=ROOT,capture_output=True,text=True,check=True)
-    assert not result.stdout.strip(),result.stdout
+stage.assert_no_visible_changes(a['reviewed_baseline_commit'],subprocess.check_output(['git','rev-parse',a['reviewed_baseline_commit']+':content'],cwd=ROOT,text=True).strip())
+
 print("Planning preparation: 13 exact PDFs, 130,968,356 bytes, 1,078 pages; 12 unique keys; Barelas exact duplicate " + ("reconciled" if reconciled else "awaiting reconciliation") + "; historical preparation involved no content/R2 mutation")

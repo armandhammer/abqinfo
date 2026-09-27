@@ -6,6 +6,20 @@ param(
 )
 
 Set-StrictMode -Version Latest
+& python "$PSScriptRoot/Test-PublicationQuality.py"
+if ($LASTEXITCODE) { throw 'Actual-record publication-quality regressions failed.' }
+& python "$PSScriptRoot/Audit-VisiblePublicationQuality.py"
+if ($LASTEXITCODE) { throw 'Visible publication quality debt grew or an actual-record transition failed.' }
+& python "$PSScriptRoot/Test-QualityCorrectionHugoImplementation.py"
+if ($LASTEXITCODE) { throw 'Owner quality correction exact-delta/source validation failed.' }
+& python "$PSScriptRoot/Test-WorkflowStageLifecycle.py"
+if ($LASTEXITCODE) { throw 'Workflow lifecycle historical evidence or active exact-delta validation failed.' }
+if (Test-Path 'project-state/discovery/planning-documents-root-hugo-implementation-2026-09-26.json') {
+  & python "$PSScriptRoot/Test-PlanningPublicationLifecycle.py"
+  if ($LASTEXITCODE) { throw 'Planning publication negative guard regression failed.' }
+  & python "$PSScriptRoot/Test-PlanningDocumentsRootHugoImplementation.py"
+  if ($LASTEXITCODE) { throw 'Planning publication exact-delta validation failed.' }
+}
 if (Test-Path -LiteralPath 'project-state/discovery/owner-decisions-2026-09-26/summary.json') {
   & python "$PSScriptRoot/Test-OwnerDecisions.py"
   if ($LASTEXITCODE) { throw 'Owner decision application validation failed.' }
@@ -199,7 +213,14 @@ if (Test-Path -LiteralPath 'project-state/discovery/later-ms4-hugo-implementatio
   if ($LASTEXITCODE) { throw 'Later-MS4 rendered-page validation failed.' }
 }
 
+if (Test-Path 'project-state/discovery/planning-documents-root-hugo-implementation-2026-09-26.json') {
+  & python "$PSScriptRoot/Test-PlanningDocumentsRootHugoImplementation.py" --rendered-root tmp/site-build
+  if ($LASTEXITCODE) { throw 'Planning publication rendered validation failed.' }
+}
+
 $broken = @()
+& python "$PSScriptRoot/Test-QualityCorrectionHugoImplementation.py" --rendered-root tmp/site-build
+if ($LASTEXITCODE) { throw 'Corrected publication rendered/link/anchor validation failed.' }
 if ($CheckExternalLinks) {
   $inventory = Get-Content -Raw -Encoding UTF8 $InventoryPath | ConvertFrom-Json
   foreach ($candidate in $inventory.candidates | Where-Object status -in @('implemented','validated')) {

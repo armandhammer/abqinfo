@@ -24,8 +24,8 @@ function Get-DpmAnnualConsolidationState {
 }
 
 $inventory = Get-Content -Raw -Encoding UTF8 -LiteralPath $InventoryPath | ConvertFrom-Json
-$terminal = @('validated','excluded','duplicate','superseded','blocked','requires human review')
-$remaining = @($inventory.candidates | Where-Object { $_.status -notin $terminal })
+$remainingStatuses = @('pending review','approved for addition','downloaded','parsed','description drafted','placement assigned')
+$remaining = @($inventory.candidates | Where-Object { $_.status -in $remainingStatuses -or ($_.status -eq 'implemented' -and $_.validation_status -ne 'passed') })
 $priorText = if (Test-Path -LiteralPath $OutputPath) { Get-Content -Raw -Encoding UTF8 -LiteralPath $OutputPath } else { $null }
 $prior = if ($null -ne $priorText) { $priorText | ConvertFrom-Json -DateKind String } else { $null }
 

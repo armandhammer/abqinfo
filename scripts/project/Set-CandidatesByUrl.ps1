@@ -17,11 +17,15 @@ foreach ($candidate in $inventory.candidates) {
   $candidateUrls = @($candidate.source_url,$candidate.direct_file_url,$candidate.r2_url) |
     Where-Object { $_ } | ForEach-Object { ([string]$_).Trim().TrimEnd('/') }
   if (-not @($candidateUrls | Where-Object { $_ -in $normalized }).Count) { continue }
+  $previousRecord = $candidate | ConvertTo-Json -Depth 30 | ConvertFrom-Json -DateKind String
   $candidate.status = $Status
   if ($ValidationStatus) { $candidate.validation_status = $ValidationStatus }
   if ($ExclusionReason) { $candidate.exclusion_reason = $ExclusionReason }
   if ($Note) { $candidate.processing_notes = @($candidate.processing_notes) + $Note }
   $candidate.updated_at = (Get-Date).ToUniversalTime().ToString('o')
+  if ($candidate.status -in @('implemented','validated')) {
+    & "$PSScriptRoot/Test-ActualRecordPublicationQuality.ps1" -Record $candidate -PreviousRecord $previousRecord | Out-Null
+  }
   $changed += $candidate
 }
 $missing = @($normalized | Where-Object { $url=$_; -not @($inventory.candidates | Where-Object { @($_.source_url,$_.direct_file_url,$_.r2_url) | Where-Object { $_ -and ([string]$_).Trim().TrimEnd('/') -eq $url } }).Count })

@@ -39,6 +39,7 @@ $results = [Collections.Generic.List[object]]::new()
 $now = (Get-Date).ToUniversalTime().ToString('o')
 
 foreach ($candidate in $implemented) {
+  & "$PSScriptRoot/Test-ActualRecordPublicationQuality.ps1" -Record $candidate | Out-Null
   $locations = @($candidate.implementation_locations | Where-Object { $_ })
   $candidateUrls = @($candidate.r2_url, $candidate.direct_file_url, $candidate.source_url) | Where-Object { $_ } | Select-Object -Unique
   $missingLocations = [Collections.Generic.List[string]]::new()

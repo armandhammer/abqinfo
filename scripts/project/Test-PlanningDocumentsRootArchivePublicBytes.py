@@ -1,3 +1,5 @@
+from WorkflowStageLifecycle import StageSnapshot
+stage=StageSnapshot("planning-archive")
 #!/usr/bin/env python3
 """Exact authorized archive identities, lifecycle, and complete R2 accounting."""
 import json, subprocess
@@ -16,7 +18,7 @@ assert ids=={r['id'] for r in a['results']}==set(a['inventory_reconciled_ids'])
 assert len(a['results'])==12 and a['summary']['public_byte_verified']==12
 assert sum(r['size_bytes'] for r in a['results'])==122249326
 assert sum(r['page_count'] for r in a['results'])==928
-current_inventory=load('project-state/master-inventory.json')
+current_inventory=stage.load_json('project-state/master-inventory.json')
 snapshot_inventory=historical_inventory(current_inventory)
 rows={r['id']:r for r in snapshot_inventory['candidates']}
 assert all(next(r for r in current_inventory['candidates'] if r['id']==rid)==rows[rid] for rid in ids)
@@ -60,6 +62,6 @@ f=a['planning_impact_area_family']; assert len(f['component_ids'])==4 and set(f[
 assert 'incomplete' in f['state'] and 'one grouped' in f['future_public_treatment']
 assert not f['complete_study_recovered'] and not f['other_chapters_inferred'] and not f['synthesized_pdf']
 assert len(list((ROOT/'research/staging/planning-documents-root-archive-preparation-2026-09-25').glob('*.pdf')))==13
-for args in (['git','diff','--name-only',BASE,'--','content'],['git','ls-files','--others','--exclude-standard','content']):
-    assert not subprocess.check_output(args,cwd=ROOT).strip()
+stage.assert_no_visible_changes(BASE,subprocess.check_output(['git','rev-parse',BASE+':content'],cwd=ROOT,text=True).strip())
+
 print('PASS: 12 exact public-byte archives; 122,249,326 bytes / 928 pages; R2 1,249 / 9,340,531,168; only authorized inventory transitions; no content changes.')
