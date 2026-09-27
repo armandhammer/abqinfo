@@ -104,6 +104,18 @@
       "exact_delta_guard": {
         "module": "Pr194CloseoutLifecycle",
         "function": "guard_current_delta"
+      },
+      "end_commit": "0d135f3c07008b82eaa4772066c4dba69b150c48"
+    },
+    {
+      "id": "quality-remediation-first",
+      "baseline_commit": "0d135f3c07008b82eaa4772066c4dba69b150c48",
+      "regression_scripts": [
+        "scripts/project/Test-FirstQualityRemediation.py"
+      ],
+      "exact_delta_guard": {
+        "module": "FirstQualityRemediationLifecycle",
+        "function": "guard_current_delta"
       }
     }
   ],
@@ -701,12 +713,14 @@
     {
       "path": "project-state/discovery/publication-quality-remediation-2026-09-26.json",
       "commit": "b6f559a8169c86fc3a122353994d133f2c055fd8",
-      "sha256": "e5aae126aaf574ff0ec1a8974bee4f11412e2ea15744bd36172b0368f10bbeba"
+      "sha256": "e5aae126aaf574ff0ec1a8974bee4f11412e2ea15744bd36172b0368f10bbeba",
+      "live_path": "project-state/discovery/quality-remediation-first-2026-09-27/baseline-remediation.json"
     },
     {
       "path": "project-state/discovery/publication-quality-remediation-2026-09-26.md",
       "commit": "b6f559a8169c86fc3a122353994d133f2c055fd8",
-      "sha256": "abff291aa5d682c1adce2c4c7ae7eedc901d8d5e155f9bff35e124ed28ff38ce"
+      "sha256": "abff291aa5d682c1adce2c4c7ae7eedc901d8d5e155f9bff35e124ed28ff38ce",
+      "live_path": "project-state/discovery/quality-remediation-first-2026-09-27/baseline-remediation.md"
     },
     {
       "path": "project-state/publication-quality-policy.md",

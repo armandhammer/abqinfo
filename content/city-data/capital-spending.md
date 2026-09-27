@@ -222,17 +222,15 @@ These official City tables preserve the 2009 project scopes and the accompanying
 
   Preserves the 2009 Public Safety bond authorization sheet, covering fire apparatus, the Sixth Area Command, Cibola facilities, and related police and fire capital purposes. [Public Safety Data placement](/city-data/public-safety-data/#fire-and-emergency-response) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/public_safety_bonds.pdf)
 
-- [Urban Enhancement Trust Fund 2010–2011 Program Overview (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-urban-enhancement-trust-fund-program-overview-2010-2011.pdf)
+### Urban Enhancement Trust Fund 2010–2011
 
-  Describes the Urban Enhancement Trust Fund program for 2010 and 2011, including the committee, selection criteria, decade-plan relationship, and the process for awarding community enhancement funding. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/uetf_2010-2011.pdf)
+These three City records explain one Albuquerque cultural-funding cycle: how proposals were selected, the recommended budget and the organizations and activities proposed for support. The overview describes a public endowment established in 1983, an eleven-member citizens’ committee and a two-year review process coordinated with the General Obligation Program / Decade Plan. UETF projects require City Council approval rather than the voter approval required for general obligation bonds.
 
-- [Urban Enhancement Trust Fund 2010–2011 Funding Summary (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-urban-enhancement-trust-fund-funding-summary-2010-2011.pdf)
+The committee reviewed 56 applications received in May 2008 for project quality, community impact and fiscal considerations. The recommended program allocated $887,892 to 41 projects, plus $15,982 in indirect/overhead costs, for a $903,874 total. The fourteen-page project list connects those allocations to named organizations, award amounts and intended activities: for example, $10,000 for 516 ARTS educational outreach, $46,000 for Albuquerque Youth Symphony concerts and $25,000 for ArtStreet public exhibits. Read together, the records show the selection framework, distribution of cultural support and intended public benefits; the recommendation documents do not establish final expenditures or completed outcomes.
 
-  Summarizes Urban Enhancement Trust Fund allocations for the 2010 and 2011 cycle, recording the total program amount available for community enhancement awards. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/uetf_2010-2011_summary.pdf)
-
-- [Urban Enhancement Trust Fund 2010–2011 Funded Projects (Archived PDF)](https://files.abqinfo.com/city-data/capital-spending/cabq-urban-enhancement-trust-fund-funded-projects-2010-2011.pdf)
-
-  Lists the Urban Enhancement Trust Fund projects funded for 2010 and 2011 across fourteen pages, naming each organization, project, and award amount for community, cultural, and educational enhancement work. [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/uetf_2010-2011projects.pdf)
+- Program overview: [preserved original, archived PDF](https://files.abqinfo.com/city-data/capital-spending/cabq-urban-enhancement-trust-fund-program-overview-2010-2011.pdf) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/uetf_2010-2011.pdf)
+- Funding summary: [preserved original, archived PDF](https://files.abqinfo.com/city-data/capital-spending/cabq-urban-enhancement-trust-fund-funding-summary-2010-2011.pdf) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/uetf_2010-2011_summary.pdf)
+- Funded-project list: [preserved original, archived PDF](https://files.abqinfo.com/city-data/capital-spending/cabq-urban-enhancement-trust-fund-funded-projects-2010-2011.pdf) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/uetf_2010-2011projects.pdf)
 
 ### Energy, Water, Public Facilities, and System Modernization Bond Scopes
 

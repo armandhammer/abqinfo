@@ -1,5 +1,11 @@
 # ABQInfo Current Work
 
+First visible publication-quality remediation batch is implemented on `codex/quality-remediation-first-2026-09-27`: exactly 18 DPM standalone minutes retired in favor of the five existing annual masters, four MRMPO FFY 2006-2009 originals presented as one qualified historical series, and three UETF 2010-2011 components presented as one substantive program record. Original R2 objects, provenance and September 13 negative findings are preserved. Thirty actual inventory records and seven resulting family/master presentations pass the publication-quality gate. Remediation debt is 1608 unchanged unrelated rows; 42 September 13 findings remain unresolved. No R2 upload, added storage, merge or production deployment.
+
+Evidence, immutable population, exact-delta guard and validation: `project-state/discovery/quality-remediation-first-2026-09-27/`. Complete normal validation, nonproduction preview and focused content PR are in progress. Owner review is required before merge.
+
+## Prior completed work
+
 PR #194 is merged to main at `648cd29745607b6a449ac01b80c8d8cc39099447` (reviewed head `242f70b788e3455981fefef042f8cc881abf6249`). The entire merged tree matches the reviewed head. Corrected Planning/Old Town content is live: eleven Planning originals on five canonical pages, the grouped incomplete four-chapter Impact Area set and two Barelas cross-links; H-1 and the three Old Town ranking entries and empty sections remain removed. Inventory dispositions and R2 are unchanged.
 
 All seven production pages passed fresh HTTP 200 rendered checks for eleven exact archive/source pairs, four exclusions, descriptions, qualifications and Barelas anchors. Separate receipts: `project-state/discovery/pr194-production-closeout-2026-09-26/merge-production-receipt.json` and `production-verification.json`. The original preview and pre-merge validation artifacts remain unchanged historical evidence. The original Planning stage remains sealed at 2588c0c; old-town-quality-correction is sealed at the immutable PR merge endpoint, and background reconciliation has its own exact-delta guard.

@@ -6,6 +6,8 @@ param(
 )
 
 Set-StrictMode -Version Latest
+& python "$PSScriptRoot/Test-FirstQualityRemediation.py"
+if ($LASTEXITCODE) { throw "First quality remediation exact-delta validation failed." }
 & python "$PSScriptRoot/Test-Pr194Closeout.py"
 if ($LASTEXITCODE) { throw 'PR #194 background closeout validation failed.' }
 & python "$PSScriptRoot/Test-PublicationQuality.py"
@@ -220,6 +222,8 @@ if (Test-Path 'project-state/discovery/planning-documents-root-hugo-implementati
   if ($LASTEXITCODE) { throw 'Planning publication rendered validation failed.' }
 }
 
+& python "$PSScriptRoot/Test-FirstQualityRemediation.py" --rendered-root tmp/site-build
+if ($LASTEXITCODE) { throw "First quality remediation rendered validation failed." }
 $broken = @()
 & python "$PSScriptRoot/Test-QualityCorrectionHugoImplementation.py" --rendered-root tmp/site-build
 if ($LASTEXITCODE) { throw 'Corrected publication rendered/link/anchor validation failed.' }
