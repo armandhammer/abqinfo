@@ -140,6 +140,18 @@
       "exact_delta_guard": {
         "module": "GovernanceLifecycle",
         "function": "guard_current_delta"
+      },
+      "end_commit": "ba7790d8ff8c47dbbf45c30008b157a769e1588f"
+    },
+    {
+      "id": "pr198-settled-implementation",
+      "baseline_commit": "ba7790d8ff8c47dbbf45c30008b157a769e1588f",
+      "regression_scripts": [
+        "scripts/project/Test-Pr198Settled.py"
+      ],
+      "exact_delta_guard": {
+        "module": "Pr198SettledLifecycle",
+        "function": "guard_current_delta"
       }
     }
   ],
