@@ -6,6 +6,8 @@ param(
 )
 
 Set-StrictMode -Version Latest
+& python "$PSScriptRoot/Test-Pr196Closeout.py"
+if ($LASTEXITCODE) { throw 'PR #196 background closeout validation failed.' }
 & python "$PSScriptRoot/Test-FirstQualityRemediation.py"
 if ($LASTEXITCODE) { throw "First quality remediation exact-delta validation failed." }
 & python "$PSScriptRoot/Test-Pr194Closeout.py"
