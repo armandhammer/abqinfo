@@ -1,0 +1,1765 @@
+# Current visible publication-quality remediation queue
+
+The audit matches actual original/archive URLs or record-specific source wrappers throughout site content, excluding shared provenance hubs. It covers 1631 represented inventory records. Twenty-three records pass, including the reviewed family components and annual DPM masters; 1608 records remain unresolved under the strengthened evidence standard. Missing/incomplete assessment does not establish substantive uselessness. No unrelated record was removed in PR #194.
+
+## Priority: unresolved September 13 findings
+
+42 records remain unresolved: 35 negative standalone findings and seven questionable findings. Later research-only consolidation proposals do not resolve live standalone presentation. JSON links the original findings, actual locations and later family evidence.
+
+- `src-0352ae60169eac10` — Family and Community Services 2009 General Obligation Bond Scope (does not meet standalone standard).
+- `src-040d6e306c1c448c` — 2013 General Obligation Bond Program Summary (does not meet standalone standard).
+- `src-047e8956baad212d` — Department of Municipal Development Capital Facilities and Parking Scope (does not meet standalone standard).
+- `src-089361e5a66d4fea` — APD Forensics Solar Carport Design Overview (does not meet standalone standard).
+- `src-25501032bfbfa682` — 2011 Affordable Housing General Obligation Bond Project Scope (Initial Version) (does not meet standalone standard).
+- `src-2746069f062780cf` — 2011-2019 General Obligation Bond Summary Totals (does not meet standalone standard).
+- `src-2ed981e6df5e99d2` — 2011 City Facilities, CIP, and Parking General Obligation Bond Project Scopes (does not meet standalone standard).
+- `src-352694313c3e5710` — 2011 Family and Community Services General Obligation Bond Project Scopes (does not meet standalone standard).
+- `src-4347bb9af15c89ba` — Councilor Dan Lewis Request for Investigation into the Redflex Traffic Systems Contract With the City of Albuquerque, January 24, 2014 (does not meet standalone standard).
+- `src-4bafa6f452f2f586` — 2011 Environmental Health General Obligation Bond Project Scopes (does not meet standalone standard).
+- `src-4cd84ecef3756fb0` — 2011-2019 Senior Affairs General Obligation Bond Schedule (does not meet standalone standard).
+- `src-535234f371b3922c` — 2009–2017 Police General Obligation Bond Summary (does not meet standalone standard).
+- `src-53f3375a9829dc10` — Drainage, Flood Control and Erosion Control Governing Regulations Summary (questionable; user review requested).
+- `src-542056c326cf2578` — 2011-2019 Finance and Administrative Services General Obligation Bond Schedule (Initial Version) (does not meet standalone standard).
+- `src-54665bf864159096` — 2011 Affordable Housing General Obligation Bond Project Scope (does not meet standalone standard).
+- `src-5603714dac7351ba` — 2009 Police General Obligation Bond Project Scopes (does not meet standalone standard).
+- `src-5e74a3b59f6ef58f` — Hydrology Review Fees, 2024 (questionable; user review requested).
+- `src-6d08320245cacfbd` — Facilitated Meetings Criteria Under Integrated Development Ordinance Section 14-16-6-4(D) (questionable; user review requested).
+- `src-7567c5f27fceba0a` — 2009 Senior, Family, Community Center, and Community Enhancement Project Bond Authorization (does not meet standalone standard).
+- `src-768a6855fcfaf443` — 2009 Library General Obligation Bond Authorization (does not meet standalone standard).
+- `src-7c27417fbd191fdf` — Special Order 19 Notice to Contractor: Private Drainage Facilities Within City Right-of-Way, Revision December 2022 (questionable; user review requested).
+- `src-89b36d5577443f99` — 2011 Planning General Obligation Bond Project Scopes (Initial Version) (does not meet standalone standard).
+- `src-9642139286c8f411` — Stop Sign Reconfiguration Proposal for Raynolds and Barelas, December 2008 (does not meet standalone standard).
+- `src-98563dab32c38b5c` — Stormwater Quality Plan Information Sheet and Inspection Fee Schedule (questionable; user review requested).
+- `src-a31943aca401c7f0` — 2011-2019 Streets General Obligation Bond Schedule (Initial Version) (does not meet standalone standard).
+- `src-a547a0278fb86fb9` — 2011-2019 Fire General Obligation Bond Schedule (Initial Version) (does not meet standalone standard).
+- `src-a58b458f5d0f5284` — 2004 Street Bond Ballot Question (does not meet standalone standard).
+- `src-b049c4df2812749b` — 2009 Public Safety General Obligation Bond Authorization (does not meet standalone standard).
+- `src-b08cdbd2624ad1a0` — 2011 Family and Community Services General Obligation Bond Project Scopes (Initial Version) (does not meet standalone standard).
+- `src-b37593a011f57fae` — 2011 ABQ RIDE Transit General Obligation Bond Project Scopes (does not meet standalone standard).
+- `src-b7ef66c741b8a886` — 2009–2017 Fire General Obligation Bond Summary (does not meet standalone standard).
+- `src-b7f0628556085641` — 2011 Planning General Obligation Bond Project Scopes (does not meet standalone standard).
+- `src-b90b07ac62c4f7fd` — 2011 Senior Affairs General Obligation Bond Project Scopes (does not meet standalone standard).
+- `src-be70a79a59ae0915` — 2011 Streets General Obligation Bond Project Scopes (Initial Version) (does not meet standalone standard).
+- `src-c9af414f77032660` — 2011-2019 Planning General Obligation Bond Schedule (Initial Version) (does not meet standalone standard).
+- `src-cb27c408e8c26a66` — 2009–2017 Council Neighborhood Set-Aside General Obligation Bond Summary (does not meet standalone standard).
+- `src-db9fefd23083da69` — 2011 Fire General Obligation Bond Project Scopes (does not meet standalone standard).
+- `src-e69e9150b150bc1a` — 2009 Fire General Obligation Bond Project Scopes (does not meet standalone standard).
+- `src-e6ca25d4cfa80752` — 2011 Fire General Obligation Bond Project Scopes (Initial Version) (does not meet standalone standard).
+- `src-f0c76005377afd83` — Albuquerque City Council Services Organizational Chart, April 6, 2026 (questionable; user review requested).
+- `src-f74d655ffb05fd08` — 2011 Police General Obligation Bond Project Scopes (does not meet standalone standard).
+- `src-fa4cf248a6dd7221` — Revocable Permit Submittal Requirements, April 2020 (questionable; user review requested).
+
+## Reconciled findings no longer independently visible
+
+51 findings no longer appear independently: 24 from the 2017 official master, five from the 2003 historical master, one from the 2014 DPM compilation the three Old Town rankings removed in PR #194, and eighteen DPM minutes retired in this batch. Seven additional September 13 component findings are resolved through evidence-backed MRMPO and UETF family presentations. This resolves their original standalone presentation issue; it does not reverse the audit or approve standalone publication. The five annual DPM masters now pass their actual-record gate; other master records remain queued where assessment is incomplete.
+
+## Complete unresolved list by primary page
+
+Each record appears once, assigned to its first actual visible page alphabetically. JSON lists all placements, errors and exact row digests. No debt witness authorizes a new transition.
+
+### content/city-data/budget-spending.md (64)
+
+- `src-03b66a5d8f836d44` — City of Albuquerque Approved Budget, Fiscal Year 2011.
+- `src-044547a979bf81ec` — City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2023.
+- `src-0483ab98e025d237` — City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2019.
+- `src-04ab7df840145ebb` — City of Albuquerque Approved Budget, Fiscal Year 2014.
+- `src-058aff5630b08a33` — City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2017.
+- `src-06ee3f5df75f3339` — City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2006.
+- `src-070eb5f9692e6114` — City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2021.
+- `src-0840ebe000dd66c1` — City of Albuquerque Approved Budget, Fiscal Year 2013.
+- `src-084ea6d74523fb92` — City of Albuquerque Annual Comprehensive Financial Report 2025.
+- `src-0c0bf6fdce0dfbea` — City of Albuquerque Approved Budget, Fiscal Year 2027.
+- `src-10c301f98803db5a` — City of Albuquerque Approved Budget, Fiscal Year 2010.
+- `src-116baa4985b7b2df` — City of Albuquerque Five-Year Forecast, Fiscal Year 2015.
+- `src-1283bc07d7ba70fe` — City of Albuquerque Five-Year Forecast, Fiscal Year 2014.
+- `src-1a3d1d0ce1048812` — City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2010.
+- `src-1b1fb49957a1178c` — City of Albuquerque Performance Plan, Fiscal Year 2010.
+- `src-1ef3e26eafa2689e` — City of Albuquerque Annual Budget Archive.
+- `src-25c9a6569a223e48` — City of Albuquerque Approved Budget, Fiscal Year 2008.
+- `src-2632888171fdf234` — City of Albuquerque Approved Budget, Fiscal Year 2023.
+- `src-26a6685a5862eede` — The official forecast archive.
+- `src-2c5f66aed5dab448` — City of Albuquerque Five-Year Forecast, Fiscal Year 2024.
+- `src-37142634567f125a` — City of Albuquerque Approved Budget, Fiscal Year 2025.
+- `src-396710193b8b20b5` — City of Albuquerque Approved Budget, Fiscal Year 2024.
+- `src-3cff43de9c461afa` — City of Albuquerque Approved Budget, Fiscal Year 2018.
+- `src-3eb46b903b1d55bf` — City of Albuquerque Five-Year Forecast, Fiscal Year 2020.
+- `src-4100c817855932d2` — City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2004.
+- `src-455aae3f9a8ca578` — City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2018.
+- `src-48ba9d6c50b4be01` — City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2014.
+- `src-4be8913c529a0518` — City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2009.
+- `src-505977b76a3fcffb` — City of Albuquerque Approved Budget, Fiscal Year 2021.
+- `src-5904c0151e64521c` — City of Albuquerque Five-Year Forecast, Fiscal Year 2021.
+- `src-63898eb1611d6938` — City of Albuquerque Five-Year Forecast, Fiscal Year 2016.
+- `src-643d45f9287aec63` — City of Albuquerque Approved Budget, Fiscal Year 2015.
+- `src-68df1d69deae179b` — City of Albuquerque Approved Budget, Fiscal Year 2017.
+- `src-6909ac57110b2d52` — City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2011.
+- `src-6f7f07e4bd6a6ec0` — City of Albuquerque Approved Budget, Fiscal Year 2007.
+- `src-718f69042307af58` — City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2005.
+- `src-74280a64a5a9ea9c` — City of Albuquerque Five-Year Forecast, Fiscal Year 2022.
+- `src-7d0d40b79d89eccd` — City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2020.
+- `src-83550b3f89f7757b` — City of Albuquerque Performance Plan, Fiscal Year 2008.
+- `src-8a4313642159cfbd` — City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2016.
+- `src-8de8917deb50111d` — City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2022.
+- `src-91278995df018bd6` — City of Albuquerque Approved Budget, Fiscal Year 2020.
+- `src-91412a301c53df07` — City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2007.
+- `src-92cd8e9f3fe6d7f6` — City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2013.
+- `src-957b4600b330755e` — City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2015.
+- `src-961f64c241cee159` — City of Albuquerque Five-Year Forecast, Fiscal Year 2025.
+- `src-9c199865656a4d2e` — City of Albuquerque Approved Budget, Fiscal Year 2016.
+- `src-9edfd1134a552c85` — City of Albuquerque Approved Budget, Fiscal Year 2009.
+- `src-a52268ebaa62a8ec` — City of Albuquerque Approved Budget, Fiscal Year 2019.
+- `src-a7f34b07644389dc` — City of Albuquerque Approved Budget, Fiscal Year 2022.
+- `src-a9c2d1e1975b51c5` — City of Albuquerque Five-Year Forecast, Fiscal Year 2018.
+- `src-adcf7bf46506a243` — City of Albuquerque Five-Year Forecast, Fiscal Year 2013.
+- `src-bf6a02537d052336` — City of Albuquerque Five-Year Forecast, Fiscal Year 2019.
+- `src-c73a07bbcd39aaec` — City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2008.
+- `src-ca799e13dc500093` — City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2012.
+- `src-cbb3f4e6dcd1199d` — City of Albuquerque Five-Year Forecast, Fiscal Year 2023.
+- `src-da77c0b16c5ed0d6` — City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2003.
+- `src-dc3d6e81f8d8694e` — City of Albuquerque Five-Year Forecast, Fiscal Year 2026.
+- `src-dfdca82de3a27292` — City of Albuquerque Five-Year Forecast, Fiscal Year 2017.
+- `src-e50353283acfe2e5` — City of Albuquerque Performance Plan, Fiscal Year 2011.
+- `src-ee5591d447c1fba9` — City of Albuquerque Annual Comprehensive Financial Report, Fiscal Year 2024.
+- `src-f0e0e8a46b1e0c93` — City of Albuquerque Approved Budget, Fiscal Year 2026.
+- `src-fc250f15df2ab028` — Enacted Ordinance O-2014-005: Approving a Project Involving Eclipse Aerospace, Inc. Under the Local Economic Development Act (Council Bill O-14-4).
+- `src-fd8e9e236daf4ea2` — City of Albuquerque Approved Budget, Fiscal Year 2012.
+
+### content/city-data/capital-spending.md (167)
+
+- `src-003fea9b67977cc0` — 2011–2019 Cultural Services General Obligation Bond Schedule.
+- `src-00d75ea75ac5c12a` — 2009 Community Facilities General Obligation Bond Project Scopes.
+- `src-00e4a0dfe5460a1d` — 2025–2034 Decade Plan Funding Allocation Workbook.
+- `src-00f4701d290c58d2` — 2013-2021 General Obligation Bond Summary.
+- `src-020571df6ddd5552` — 2009 General Obligation Bond Funding Allocation Chart.
+- `src-026feb8e01adbb43` — 2011 Police General Obligation Bond Project Scope.
+- `src-02e5a5bcff518eca` — 2011 Energy and Water Conservation, Public Facilities, and System Modernization Bond Scopes.
+- `src-0352ae60169eac10` — Family and Community Services 2009 General Obligation Bond Scope.
+- `src-040d6e306c1c448c` — 2013 General Obligation Bond Program Summary.
+- `src-044a641dbf7991dc` — City of Albuquerque Selection Advisory Committee Rules and Regulations.
+- `src-047e8956baad212d` — Department of Municipal Development Capital Facilities and Parking Scope.
+- `src-04a2e444a39dcd41` — 2011–2019 Transit General Obligation Bond Schedule.
+- `src-06c8dc909a7e8354` — 2011-2019 Finance and Administrative Services General Obligation Bond Schedule (October 2010 Edition).
+- `src-0763fdd4070f01f0` — Chico Project Phase 1 Comfort Way And Ladera Rd Improvements.
+- `src-07b72b905984e0db` — 2011 Parks and Recreation General Obligation Bond Project Scope.
+- `src-082325eda8e02ff9` — 2021-2030 Decade Plan for Capital Improvements.
+- `src-089361e5a66d4fea` — APD Forensics Solar Carport Design Overview.
+- `src-0c38e48c453a12db` — 2007–2016 Planning Department Capital Program Summary.
+- `src-1446091908574fda` — 2007–2016 Police Capital Program Summary.
+- `src-1f787b166bcf7f0c` — 2011 Senior Affairs General Obligation Bond Project Scope.
+- `src-241c664f388493fc` — 2026 Infrastructure Capital Improvements Plan Priorities - Enacted.
+- `src-25501032bfbfa682` — 2011 Affordable Housing General Obligation Bond Project Scope (Initial Version).
+- `src-2663fc607177e07d` — 2011 Storm Drainage General Obligation Bond Project Scopes.
+- `src-2735a3a027a4ebff` — icip 2026 session.pdf.
+- `src-2746069f062780cf` — 2011-2019 General Obligation Bond Summary Totals.
+- `src-27bd37adf07104b9` — 2011 Family and Community Services General Obligation Bond Schedule (Initial Version).
+- `src-27d391d187280ced` — 2011 Parks and Recreation General Obligation Bond Project Scopes.
+- `src-2938db47584ebb1c` — 2009 Energy, Water Conservation, Public Facilities, and System Modernization Bond Scopes.
+- `src-2b015205e93852b3` — 2009–2017 Parks and Recreation General Obligation Bond Summary.
+- `src-2daae0eb6e136555` — 2011 Finance and Administrative Services General Obligation Bond Project Scopes.
+- `src-2ed981e6df5e99d2` — 2011 City Facilities, CIP, and Parking General Obligation Bond Project Scopes.
+- `src-30336f37f87177dc` — Official City Record.
+- `src-3176f1245fb14160` — 2007–2016 Family and Community Services Capital Program Summary.
+- `src-352694313c3e5710` — 2011 Family and Community Services General Obligation Bond Project Scopes.
+- `src-370fed4be1f1effa` — Capital Improvements Plan Priorities and Scoring Resolution R-2008-017.
+- `src-389b414dbe0fb8b9` — 2005–2013 Open Space, Trails, and Recreation Component Capital Plan.
+- `src-38b254217ef6c868` — 2011–2019 Finance and Administrative Services General Obligation Bond Schedule.
+- `src-3c9907796a0cfaf3` — Water Master Plan Infrastructure Zone (WIZ) Map - Appendix page B-6; parent document not located.
+- `src-3cc1912d7ac89cf9` — 2013 Energy and Water Conservation, Public Facilities, and System Modernization Bond Scopes.
+- `src-3d31dcad9dec671a` — 2017 Energy and Water Conservation, Public Facilities, and System Modernization Bond Scopes.
+- `src-3d3737d5175c3ef7` — 2011–2019 Fire General Obligation Bond Schedule.
+- `src-4386e4a8fe337de9` — 2009–2017 ABQ RIDE General Obligation Bond Summary.
+- `src-43f135ae1e00492e` — Metropolitan Redevelopment Fund Capital Plan, 2006–2010.
+- `src-44d9bb4148593be7` — 2011 City Facilities and Parking General Obligation Bond Project Scope.
+- `src-459cce60ad4eee7a` — 2023-2032 Decade Plan for Capital Improvements.
+- `src-48b873837f28d1f8` — Albuquerque 2025 General Obligation Bond Program by Purpose.
+- `src-49533d311cc95fe9` — Impact Fee Credit Holder Summary, February 18, 2020.
+- `src-4bafa6f452f2f586` — 2011 Environmental Health General Obligation Bond Project Scopes.
+- `src-4c250fc892e7c212` — 2011 Environmental Health General Obligation Bond Project Scope.
+- `src-4c768545506342aa` — 2011–2019 Storm Drainage General Obligation Bond Schedule.
+- `src-4cd84ecef3756fb0` — 2011-2019 Senior Affairs General Obligation Bond Schedule.
+- `src-4ce8e84444dd90a8` — 2019 General Obligation Bond Program Book.
+- `src-5066c9f642369e9b` — 2009–2017 Streets General Obligation Bond Summary.
+- `src-514c1cb1098dac8d` — 2007–2016 Parks and Recreation Capital Program Summary.
+- `src-51df594dc28dba68` — 2011 Finance and Administrative Services General Obligation Bond Project Scope.
+- `src-5265cf315f641e6c` — 2011–2019 Streets General Obligation Bond Schedule.
+- `src-52bda6b47c8295b6` — 2015 Energy and Water Conservation, Public Facilities, and System Modernization Bond Scopes.
+- `src-535234f371b3922c` — 2009–2017 Police General Obligation Bond Summary.
+- `src-542056c326cf2578` — 2011-2019 Finance and Administrative Services General Obligation Bond Schedule (Initial Version).
+- `src-54665bf864159096` — 2011 Affordable Housing General Obligation Bond Project Scope.
+- `src-55a0db2fbbff3622` — Official City Record.
+- `src-5603714dac7351ba` — 2009 Police General Obligation Bond Project Scopes.
+- `src-560e4635031fdaca` — 2009–2017 Storm Drainage General Obligation Bond Summary.
+- `src-5899cfe72f45d68e` — 2025-2034 Decade Plan for Capital Improvements.
+- `src-5b99a463b29ba37a` — 2011-2019 Senior Affairs General Obligation Bond Schedule (October 2010 Edition).
+- `src-5d6179a1366bc337` — 2011-2019 Environmental Health General Obligation Bond Schedule (October 2010 Edition).
+- `src-5d81348c100d185e` — 2011–2019 Parks and Recreation General Obligation Bond Schedule.
+- `src-5e610a27e456abd8` — 2007 Storm Sewer System General Obligation Bond Project Scopes.
+- `src-60615a9cae3d68d4` — 2009 Parks and Recreation General Obligation Bond Project Scopes.
+- `src-60e231943d84ef4a` — Official City record.
+- `src-61f62a0f79a49ead` — 2011–2019 Police General Obligation Bond Schedule.
+- `src-62f957e563e55b52` — 2019 Energy and Water Conservation, Public Facilities, and System Modernization Bond Scopes.
+- `src-646e9ec716227351` — 2027–2036 Decade Plan Funding Allocation Chart.
+- `src-648ac93d276128cf` — 2011 Storm Drainage General Obligation Bond Project Scope.
+- `src-65e4a509079e184f` — 2011 Affordable Housing General Obligation Bond Schedule.
+- `src-6735737588d294e0` — 2003 Environmental Planning Commission Recommendation and Notice of Decision - Mayor Proposed 2003-2012 Decade Plan.
+- `src-68d721c82e0d347d` — Capital Improvements Plan Community Equity Criterion.
+- `src-6cf28585f1c293cd` — 2003-2007 Consolidated Plan Capital Summary.
+- `src-6d545a49bdfd87fc` — 2011 Family and Community Services General Obligation Bond Project Scope.
+- `src-6ebb9f0834bce393` — 2004 Street Bond Program Summary of Planning Process.
+- `src-721384a7c1ac6b21` — 2011-2020 General Obligation Bond Summary.
+- `src-7567c5f27fceba0a` — 2009 Senior, Family, Community Center, and Community Enhancement Project Bond Authorization.
+- `src-75f032fd59799df5` — 2011 Council Neighborhood Set-Aside Project Scopes.
+- `src-768a6855fcfaf443` — 2009 Library General Obligation Bond Authorization.
+- `src-7b20faff7d0ee849` — 2021 General Obligation Bond Program by Purpose.
+- `src-7eec9cf82301005b` — 2011 Cultural Services General Obligation Bond Project Scope.
+- `src-83f0d442beb438b9` — 2007 Council-Neighborhood Set-Aside Projects.
+- `src-84fb340bc61d8443` — 2007 Capital Program Policies and Project-Selection Criteria.
+- `src-857af4faf4a82a56` — 2007–2016 Environmental Health Capital Program Summary.
+- `src-882e9458215c5ce7` — 2017-2026 Decade Plan and 2017 General Obligation Bond Program: Mayor's Recommendation.
+- `src-89b36d5577443f99` — 2011 Planning General Obligation Bond Project Scopes (Initial Version).
+- `src-89cf13c2d742e6d2` — 2005–2013 Park Development Component Capital Plan.
+- `src-8c5d2888cc22b991` — 2004 Street General Obligation Bond Project Titles, Amounts, and Scopes.
+- `src-8d8336fa08217661` — 2011–2019 Animal Welfare General Obligation Bond Schedule.
+- `src-8e8e799fe1441d72` — Capital Improvements Plan Priorities and Scoring Resolution R-2006-089.
+- `src-8ea637fcf3e9208a` — 2007 Component Capital Improvement Plan Overview.
+- `src-8fbb8bea079db918` — 2011 Transit General Obligation Bond Project Scope.
+- `src-90969f7fd9f9f810` — 2011–2019 Family and Community Services General Obligation Bond Schedule.
+- `src-982cc018b0b8fc01` — 2025 General Obligation Bond Approved Program Book.
+- `src-999d681b4e75a4c1` — 2009 Cultural Services General Obligation Bond Project Scopes.
+- `src-9eacad9e5872b301` — 2011–2019 Environmental Health General Obligation Bond Schedule.
+- `src-a2b7bca418fedf22` — documents.
+- `src-a31943aca401c7f0` — 2011-2019 Streets General Obligation Bond Schedule (Initial Version).
+- `src-a345fa05a5711c63` — Official City Record.
+- `src-a4c924b7039b13da` — 2007–2016 Storm Drainage Capital Program Summary.
+- `src-a4fc2a4a6d37bc0d` — Official City Record.
+- `src-a547a0278fb86fb9` — 2011-2019 Fire General Obligation Bond Schedule (Initial Version).
+- `src-a58b458f5d0f5284` — 2004 Street Bond Ballot Question.
+- `src-a5972c809e70a11a` — 2011-2019 Cultural Services General Obligation Bond Schedule (October 2010 Edition).
+- `src-a848c1e4c7dae2ea` — Official City Record.
+- `src-a9e35369bc0ff59e` — 2007–2016 Transit Capital Program Summary.
+- `src-ab1f9d7ff3dfd004` — 2007–2016 Senior Affairs Capital Program Summary.
+- `src-af35c3eb64539dab` — 2023 General Obligation Bond Program Book.
+- `src-afc7fa6f1c4ac06f` — 2011 Cultural Services General Obligation Bond Project Scopes.
+- `src-afd33bcd74a06555` — 2017 General Obligation Bond Program Document Library.
+- `src-b049c4df2812749b` — 2009 Public Safety General Obligation Bond Authorization.
+- `src-b08cdbd2624ad1a0` — 2011 Family and Community Services General Obligation Bond Project Scopes (Initial Version).
+- `src-b0f7d5425b632aa5` — 2025 Infrastructure Capital Improvements Plan Priorities.
+- `src-b17fb11a9e63c180` — 2011 Streets General Obligation Bond Project Scope.
+- `src-b37593a011f57fae` — 2011 ABQ RIDE Transit General Obligation Bond Project Scopes.
+- `src-b3c2636a2b9c5372` — 2011–2019 City Facilities and Parking General Obligation Bond Schedule.
+- `src-b3d0cd2df96d0bc6` — 2009–2017 Community Facilities General Obligation Bond Summary.
+- `src-b61b7bac266437a3` — 2011-2019 Streets General Obligation Bond Schedule (October 2010 Edition).
+- `src-b7ef66c741b8a886` — 2009–2017 Fire General Obligation Bond Summary.
+- `src-b7f0628556085641` — 2011 Planning General Obligation Bond Project Scopes.
+- `src-b90b07ac62c4f7fd` — 2011 Senior Affairs General Obligation Bond Project Scopes.
+- `src-baa2a3551783da18` — 2007–2016 Cultural Services Capital Program Summary.
+- `src-bd60d8eab4edf667` — 2011 Council Neighborhood Set-Aside General Obligation Bond Schedule.
+- `src-be39966975e9924a` — 2007–2016 Affordable Housing Capital Summary.
+- `src-be70a79a59ae0915` — 2011 Streets General Obligation Bond Project Scopes (Initial Version).
+- `src-c108ac10089df2fa` — 2005–2013 Public Safety Component Capital Implementation Plan.
+- `src-c3b290c3fd2dd0a9` — 2007–2016 Community Facilities Capital Summary.
+- `src-c589fb10e8ee842b` — 2011 Planning General Obligation Bond Project Scope.
+- `src-c83a5233716f5e1f` — 2005–2013 Drainage Component Capital Implementation Plan.
+- `src-c862e9705c4818eb` — 2007–2016 Streets Capital Program Summary.
+- `src-c9af414f77032660` — 2011-2019 Planning General Obligation Bond Schedule (Initial Version).
+- `src-cb27c408e8c26a66` — 2009–2017 Council Neighborhood Set-Aside General Obligation Bond Summary.
+- `src-cb8cd727e3ca1fde` — 2013–2022 Decade Plan and 2013 General Obligation Bond Program.
+- `src-cc2b0291a58dbb8c` — Official City Record.
+- `src-cce2d0242f9145bd` — 2011–2019 Planning General Obligation Bond Schedule.
+- `src-cd53dc44578da73b` — 2011 Animal Welfare General Obligation Bond Project Scope.
+- `src-ce691b140ada313b` — 2007–2016 Enterprise Fund Capital Summary.
+- `src-d216c408addb1788` — 2011 Fire General Obligation Bond Project Scope.
+- `src-d30fe509d51eec50` — 2011 Streets General Obligation Bond Project Scopes.
+- `src-d356c01557a3a067` — 2023 Energy and Water Conservation, Public Facilities, and System Modernization Bond Scopes.
+- `src-d554e2dfdf46e98b` — 2007–2016 Fire Capital Program Summary.
+- `src-d91051fe76863796` — 2007–2016 Park Design and Construction Capital Program Summary.
+- `src-db74fbcfb6e04b9e` — Enacted Resolution R-2012-100: Amending the Adopted Component Capital Improvements Plan for Impact Fees, 2012 to 2022 (Council Bill R-12-98).
+- `src-db9fefd23083da69` — 2011 Fire General Obligation Bond Project Scopes.
+- `src-dc0625283b21dd13` — 2003 General Obligation Bond Program: Master Record - ABQInfo Historical Compilation.
+- `src-e0944409dcca0904` — 2025–2034 Approved Decade Plan Summary.
+- `src-e12c77bb460b9c8f` — 2009 Council Neighborhood Set-Aside Project Scopes.
+- `src-e665566329c4a04d` — 2007–2016 Municipal Facilities, Energy, Security, and Parking Capital Summary.
+- `src-e69e9150b150bc1a` — 2009 Fire General Obligation Bond Project Scopes.
+- `src-e6ca25d4cfa80752` — 2011 Fire General Obligation Bond Project Scopes (Initial Version).
+- `src-e8df08f8bb47b981` — 2009 Streets General Obligation Bond Project Scopes.
+- `src-eb39149f50c9fa29` — 2011-2019 Parks and Recreation General Obligation Bond Schedule (October 2010 Edition).
+- `src-ec2498a018d22816` — 2009 Storm Sewer System General Obligation Bond Project Scopes.
+- `src-ee36b5c72dd925b8` — 2021 General Obligation Bond Approved Program.
+- `src-ef823eb290efe729` — 2007–2016 General Obligation Bond Decade Plan Summary.
+- `src-f0d6744711099a88` — Enacted Resolution R-2013-115: Amending the Adopted Component Capital Improvements Plan to Restore Unser Boulevard and Escarpment Trail Impact Fee Credits (Council Bill R-13-248).
+- `src-f1a9e4e7e1d84e9e` — 2004 Capital Programming Amendment Resolution R-04-109.
+- `src-f372bc592a7af36c` — 2011-2020 General Obligation Bond Program Summary (October 2010 Edition).
+- `src-f46bda77640458ad` — 2025-2033 General Obligation Bond Initial Request Summary.
+- `src-f74d655ffb05fd08` — 2011 Police General Obligation Bond Project Scopes.
+- `src-fbf2928dc2388b68` — 2007–2016 Finance and Administrative Services Capital Program Summary.
+- `src-fea1d0aef6dc4569` — 2009–2017 General Obligation Bond Summary Totals.
+
+### content/city-data/city-progress-surveys.md (19)
+
+- `src-0cec8aac1c0949a7` — Informe de Progreso de Albuquerque 2022.
+- `src-3af3d3d2b34a5606` — 2012 Albuquerque Progress Report Snapshot.
+- `src-42032f0eef57807c` — Small Business Resource Fair Report: Supporting Albuquerque's Growing Small Business Community (April 2019).
+- `src-572f6d8a7a30f8a1` — 2014 Albuquerque Progress Report.
+- `src-5da6965abacdaee9` — 2018 Albuquerque Progress Report.
+- `src-a9edf95587555344` — 2020 Albuquerque Citizen Perception Survey.
+- `src-ae40288e3e1de0ea` — Progress Reports.
+- `src-baf2db7aea5be0d2` — African American Advisory Board Minutes, July 7, 2026.
+- `src-bf7598bed4055750` — Albuquerque Yearly Survey Results (2024).
+- `src-c8618de9cd7384e7` — African American Advisory Board Minutes, June 2, 2026.
+- `src-cd8f57c4c1140437` — 2022 Albuquerque Progress Report.
+- `src-d136988f67d3e648` — 2021 Albuquerque Citizen Perception Survey.
+- `src-d62d1abce680dce0` — 2008 Albuquerque Progress Report.
+- `src-e4691b2ec7a08601` — 2022 Albuquerque Citizen Perception Survey.
+- `src-f0c76005377afd83` — Albuquerque City Council Services Organizational Chart, April 6, 2026.
+- `src-f164513208041ca0` — Appendices to the Small Business Resource Fair Report, Including Enacted Resolution R-2018-081.
+- `src-f6f982e95a648dd7` — African American Advisory Board Minutes, May 5, 2026.
+- `src-f920e1a97488d336` — 2020 Albuquerque Progress Report.
+- `src-f9c6246de583e9da` — 2016 Albuquerque Progress Report.
+
+### content/city-data/climate-environment.md (37)
+
+- `src-0a03811e298d7753` — Albuquerque Energy Council Agenda, May 15, 2019 (approved minutes not located).
+- `src-0fc49a04d2900975` — Official source: City of Albuquerque Climate Action Plan.
+- `src-1c5b1252fde7e9b1` — Albuquerque Energy Council Agenda, October 21, 2020 (approved minutes not located).
+- `src-1df2696d46cb977a` — UNM Sustainability Strategic Plan.
+- `src-393d5c55d9ccdc0e` — Central New Mexico Community-Scale Greenhouse Gas Inventory.
+- `src-3a2032075a8a2880` — Albuquerque Business-as-Usual Emissions Forecast.
+- `src-3f3273f2dcaafbf9` — Albuquerque Energy Council Agenda, May 18, 2022 (approved minutes not located).
+- `src-42b5f091cc46568d` — Albuquerque Energy Council Agenda, October 16, 2019 (approved minutes not located).
+- `src-432312bc5e6951b9` — Mountain View Environmental Inventory and Gap Mapping Analysis.
+- `src-48f3706e1d6e8b31` — Albuquerque Energy Council Meeting Minutes, August 21, 2019.
+- `src-49351428fdea2985` — Albuquerque Energy Council Agenda, July 17, 2019 (approved minutes not located).
+- `src-4a350d8b561eef61` — Albuquerque Energy Council Agenda, July 16, 2020 (approved minutes not located).
+- `src-5a55fed4c4811d02` — Albuquerque Energy Council Agenda and Meeting Minutes, January 21, 2015.
+- `src-67baafb695734bcd` — Albuquerque Metropolitan Statistical Area Priority Climate Action Plan.
+- `src-7085b119749f17d6` — Albuquerque Climate Action Plan Implementation Report 2023.
+- `src-71f908f1d56d7adc` — UNM Greenhouse Gas Emissions.
+- `src-7928766e796148c3` — Albuquerque Energy Council Meeting Minutes, September 16, 2020.
+- `src-9c487e273f4a14d4` — Mountain View Environmental Inventory Project — Community Workshop 2.
+- `src-a034863d2b05dd79` — Albuquerque Energy Council Agenda, May 20, 2020 (approved minutes not located).
+- `src-a29d3a7b778cfca8` — Albuquerque Climate Action Plan Implementation Report 2024.
+- `src-a61f376f3c74afe6` — Albuquerque Energy Council Meeting Minutes, August 19, 2020.
+- `src-a7182f27b9c79459` — UNM Sustainability Strategic Plan 2025-2030.
+- `src-aaadec876bbf554f` — Albuquerque Energy Council Agenda, October 20, 2021 (approved minutes not located).
+- `src-ac079a5257dc7c8c` — UNM Greenhouse Gas Inventory FY2024.
+- `src-adf4ec503c230405` — Albuquerque Energy Council Agenda, March 18, 2020 (approved minutes not located).
+- `src-b6907ea6557674ae` — Central New Mexico Climate Funding and Finance Overview.
+- `src-bcc67eae99ad39ef` — Albuquerque Climate Action Plan.
+- `src-bdab724a0eea51b3` — Albuquerque Climate Action Plan Implementation Report 2025.
+- `src-ca966518d02f2696` — Albuquerque Energy Council Meeting Minutes, June 19, 2019.
+- `src-d43081e8b7973ea8` — Albuquerque Energy Council Meeting Minutes, April 17, 2019.
+- `src-d63a640b27136aab` — Albuquerque Energy Council Agenda, April 15, 2020 (approved minutes not located).
+- `src-d6d9241cd63ba002` — Mountain View Environmental Inventory Project — Information Pamphlet.
+- `src-dd879e78b53b3f86` — City of Albuquerque Climate Action Plan.
+- `src-dfbc6cbb5e58f506` — Albuquerque Energy Council Meeting Minutes, September 15, 2021.
+- `src-e21e6f424ad30447` — Albuquerque Climate Action Plan Implementation Report 2022.
+- `src-e968f9c2d99755fa` — UNM Greenhouse Gas Inventory FY2025 Update.
+- `src-ff823647e5c83f56` — Central New Mexico Climate Workforce Analysis.
+
+### content/city-data/demographics.md (14)
+
+- `src-4087b4488d15f3a6` — Community Profiles.
+- `src-4ee4d7493e2495ec` — MRMPO Regional Forecast by Data Analysis Subzone.
+- `src-5f849b41555c3f69` — MRCOG Employment Data.
+- `src-612f7ca2e738b3fc` — Albuquerque neighborhood data.
+- `src-619ff9bbf9f6572a` — MRCOG Population and Housing Data.
+- `src-739a9bba8cf8de4c` — MRMPO Socioeconomic Forecasts.
+- `src-8493274afa12331f` — MRMPO 2045 Socioeconomic Forecast Presentation.
+- `src-8a937773e70ff07e` — MRCOG socioeconomic data.
+- `src-8f8a0c52a2c709c7` — MRCOG Income Data.
+- `src-93b85b580ff2b069` — MRMPO Bernalillo County Forecast by Data Analysis Subzone.
+- `src-98959984b4d407e3` — MRMPO 2045 Socioeconomic Forecast Interactive Map.
+- `src-a7142e5881e12e74` — QuickFacts: Albuquerque City, New Mexico.
+- `src-d61668456fb71bf8` — MRCOG Commuting Data.
+- `src-db8b649daf20497b` — MRMPO Data Analysis Subzone Data Dictionary.
+
+### content/city-data/public-safety-data.md (26)
+
+- `src-0a59a7d3f4983528` — Albuquerque Community Safety FY2025 Fourth-Quarter Report.
+- `src-0e0c9257becc602a` — Official City PDF.
+- `src-38c2c765a7f4bb3c` — Albuquerque Community Safety FY2024 Fourth-Quarter Report.
+- `src-3a835c2b19ef4768` — ABQ Safety Dashboard.
+- `src-3ade5bdf7fdad5f2` — Albuquerque Fire Rescue Annual Report, 2018.
+- `src-4360c18dfd756fbd` — Albuquerque Community Safety FY2026 Fourth-Quarter Report.
+- `src-4d7ad30be7202f21` — Official City PDF.
+- `src-4e82cb29139d4e50` — Albuquerque Fire Rescue Annual Report, 2022.
+- `src-4f0be0584ea4fb17` — Crime in Albuquerque 2017–2022.
+- `src-5062a3631414b26e` — Albuquerque NIBRS Crime Statistics.
+- `src-5db37846d3d60f22` — Albuquerque Fire Rescue Annual Report, 2021.
+- `src-6260059ea0d144b3` — Albuquerque Fire Rescue Reports.
+- `src-691aaf5060d0f6e0` — Albuquerque Fire Department Annual Report, 2016.
+- `src-927b8769beacaa97` — Albuquerque Fire Rescue Annual Report, 2020.
+- `src-93247ab65ca30d01` — Albuquerque Police Department CAD Incident Dashboard.
+- `src-97fe86f47eef115b` — Violence Intervention Program Annual Report with September 2022 Data Update.
+- `src-98831bf4b816fccc` — Albuquerque Community Safety Community Engagement Report.
+- `src-99051cbc69a4ea66` — Official City PDF.
+- `src-add52e93354ef7dd` — Albuquerque Fire Department Annual Report, 2015.
+- `src-c961fa67645828dc` — Albuquerque Community Safety Transparency.
+- `src-cb67b0c24f6d6382` — Albuquerque Fire Department Annual Report, 2017.
+- `src-cd3a6c790cb30a46` — APD Crime Statistics by Area Command.
+- `src-cec3ae3ad800ae86` — Albuquerque Police Crime Statistics.
+- `src-d9a0497ecc366ac2` — Albuquerque Fire Rescue Annual Report, 2019.
+- `src-dddf3adb203db9cb` — Albuquerque Community Safety Organizational Plan.
+- `src-ed77e4dabe43b4f2` — Albuquerque Fire Department Annual Report, 2014.
+
+### content/development-land-use/area-sector-plans.md (35)
+
+- `src-08b6b68b53336462` — Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 1.0a: front matter, table of contents, and Introduction and Rationale, first half.
+- `src-0e133db868401e77` — Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 10.0: Growth Strategy Techniques Used in Other Locations.
+- `src-0e54db8defd44eed` — Official source: Volcano Trails Sector Development Plan Adoption Resolution R-11-211.
+- `src-173ce250cdac7c01` — Fourth Street and Montaño Community Visioning Report.
+- `src-1c078f889adede14` — Downtown Neighborhood Area Sector Development Plan Update (Draft, September 17, 2010; multipart).
+- `src-250f97b9f111e86b` — Los Duranes Sector Development Plan — Draft Vision and Goals (September 2009).
+- `src-3db861b0a5e12f06` — Official source: Southwest Area Plan.
+- `src-3efa72bc100374a1` — Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 1.0b: Introduction and Rationale, second half, through the establishment of the Preferred Alternative.
+- `src-44dedde405c00c2c` — Planned Growth Strategy, Part 2 (Preferred Alternative) - Chapter 3.0: Preferred Alternative Summary.
+- `src-5a04b1c6a4d3ea3e` — Southwest Area Plan.
+- `src-5cdd997502c0d388` — North Fourth Street Form-Based Overlay Zone Map.
+- `src-6479e8efc5bcc2b6` — North Fourth Street Rank III Corridor Plan - City Council Draft.
+- `src-65592118671ee943` — Near Heights Community Planning Area Assessment.
+- `src-765624191ba169bd` — Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 7.0: Planned Growth Regulatory Structure Approaches.
+- `src-7bad0631d3753fd5` — Official source: Fourth Street and Montaño Community Visioning Report.
+- `src-7ef6d021d2326e49` — North Fourth Street Existing Zoning Map.
+- `src-8188148b0cd6c40d` — Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 9.0: City and County Financial and Planning Requirements.
+- `src-81c75a7d7a217a68` — Volcano Trails Sector Development Plan.
+- `src-8b120e71c3650349` — Volcano Trails Sector Development Plan Adoption Resolution R-11-211.
+- `src-925265ba30c142c1` — North Fourth Street Background and Resources Materials.
+- `src-9a1ce13c6db23360` — Sunport Commerce Center Design Overlay Zone.
+- `src-9aeb5f621800da58` — Planned Growth Strategy, Part 1: Existing Conditions, Development Trends, Alternative Scenarios, Infrastructure Costs, and Economic Impact (complete, 286 pages).
+- `src-9e996afbf47ccdf3` — South Coors Boulevard Sector Development Plan.
+- `src-aee98d2ab382de65` — Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 2.0: Subarea Descriptions.
+- `src-b9af942860e2cb94` — South Coors Boulevard Sector Development Plan — Boundary Map.
+- `src-bc069f52331eb293` — Planned Growth Strategy Part 2, Chapter 4.0: examples of mixed-use redevelopment in other cities.
+- `src-c771ae9e41b9905c` — Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 11.0: Planned Growth Regulatory structure.
+- `src-c8e6f10731a478e6` — Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 5.0: Level of Service Standards and the Planned Growth Strategy.
+- `src-cd72192082580abe` — Planned Growth Strategy Part 2, Chapter 6.0: financial implementation of the preferred alternative.
+- `src-d15bbc358aeaec4d` — Planned Growth Strategy, Part 2 (Preferred Alternative) — Chapter 8.0: Combining the Level of Service Standards with the Management Committee material.
+- `src-e8d18ebb99858984` — Volcano Trails Environmental Planning Commission Official Notice of Decision.
+- `src-ef328e9ebf57aaab` — Volcano Mesa Plans — Proposed Transportation Text Amendments.
+- `src-f2c233748eb19f2f` — Los Duranes Sector Development Plan — Neighborhood Review Draft (May 2010).
+- `src-f5be150be68a94dd` — Transportation Plans.
+- `src-fe68bebf0ee43fee` — Official City Record.
+
+### content/development-land-use/development-process.md (48)
+
+- `src-04e406c4dde231a8` — Official City DPM Document Directory.
+- `src-0752fa3cfed34f87` — City of Albuquerque General Planning Fee Schedule.
+- `src-0b9dc46fbf32cfb7` — Development Process Manual.
+- `src-10bdee1eea03ca2b` — Bernalillo County Public Works Submittal and Development Standards for Large-Scale Solar Development.
+- `src-16030da9139693a5` — Design Review and Construction (DRC) Jurisdiction Memorandum, August 25, 2026.
+- `src-1e957902d6657766` — Infrastructure Improvements Agreement - Procedure A with Financial Guaranty (March 2021).
+- `src-1ee4a0c5133aceda` — Historic Old Town Development Standards and Guidelines (HPO-5).
+- `src-230753126ba3bbf7` — Rules and Regulations Governing Compensation for Consulting Engineers, Architects, and Landscape Architects.
+- `src-247c9733c752f20d` — Development Process Manual Approved DMD Changes.
+- `src-42559b8b35af458e` — Infrastructure Improvements Agreement - Procedure B (March 2021).
+- `src-43d3decdbb1add8a` — Bernalillo County Public Works Division Fee Schedule.
+- `src-46068d1079dd321e` — Development Review Services.
+- `src-46237fe417ee1bb1` — Official source: City of Albuquerque Construction Site Manual.
+- `src-567244356665a527` — Infrastructure Improvements Agreement, Procedure C: Agreement to Construct Public Improvements by City Contract (Figure 13).
+- `src-58eba820883efd1a` — Procedure A Amendment and Extension Agreement (March 2021).
+- `src-5dd2daf604742ee7` — Development Review Traffic Impacts.
+- `src-5e74a3b59f6ef58f` — Hydrology Review Fees, 2024.
+- `src-6370c534dac0c540` — Historic Protection Overlay Zones Citywide Map.
+- `src-63d212f6733be409` — Development Process Manual Chapter 17: Drainage and Transportation Procedures.
+- `src-65a7c910647e2670` — Infrastructure Improvements Agreement - Procedure A (March 2021).
+- `src-6d08320245cacfbd` — Facilitated Meetings Criteria Under Integrated Development Ordinance Section 14-16-6-4(D).
+- `src-6df131e72e56bfe9` — Information about Public Improvement Districts in Albuquerque. Public Improvement Districts Information about Public Improvement Districts in Albuquerque..
+- `src-6f6268207f99a8c4` — Development Process Manual Amendments.
+- `src-75755583aa85c00c` — Huning Highland and EDo Historic Protection Overlay Zone Map.
+- `src-75935732f3f11f34` — Development Process Manual Intersection Design Final-Review Draft.
+- `src-7a08bd24a1a9dcae` — Silver Hill Historic Overlay Zone Design Guidelines: Early Automobile Suburbs.
+- `src-7f1e53975e461d43` — Silver Hill Historic Protection Overlay Zone Map.
+- `src-85425ef5e82d7493` — Zoning Code Section 14-16-3-17: Wireless Telecommunications Regulations (pre-Integrated Development Ordinance text).
+- `src-87b92910cd99400d` — City Annexation Policies Resolution R-54-1990.
+- `src-8d478c6c65e09164` — Procedure A with Financial Guaranty Amendment and Extension Agreement (March 2021).
+- `src-9d95103fffb6e499` — Development Process Manual Approved Planning and DMD Changes.
+- `src-a3afa3078e7351a7` — Neighborhood Task Force Final Report to the City Council (September 2007).
+- `src-ad7c091a07a0fb3f` — Eighth and Forrester Historic Protection Overlay Zone Map.
+- `src-b3d51e22f5d00059` — Stormwater Management Guidance for Large-Scale Ground-Mounted Solar Arrays.
+- `src-bbe597de30b63f2f` — Development Review Services.
+- `src-bdf76c84223f82be` — Official Albuquerque Plant Palette and Sizing List.
+- `src-c540ee6e20ebd64c` — Official source: Green Stormwater Infrastructure / Low Impact Development Standards.
+- `src-c74168a5ee95e044` — Old Town Historic Protection Overlay Zone Map.
+- `src-d42df0916d0d8a2b` — Assignment and Amendment to Agreement to Construct Infrastructure Improvements.
+- `src-d6f0d94a12b31a2d` — Development Process Manual Approved Amendment: Article 4-3 ABCWUA Changes.
+- `src-e5b815c2a314724a` — Enacted Ordinance O-2014-024: Amending the Wireless Telecommunication Regulations and Related Definitions in the Zoning Code (Council Bill F/S O-14-7).
+- `src-e6c9a8cffdca81f1` — Development Process Manual Chapter 28: Improvements Within the Public Right of Way.
+- `src-ea0ba81f2420f90f` — Procedure B Amendment and Extension Agreement (March 2021).
+- `src-ec6e7fdafdab0706` — Fourth Ward Historic Protection Overlay Zone Map.
+- `src-edd2380f46aacc71` — Development Process Manual Chapter 22: Drainage, Flood Control, and Erosion Control.
+- `src-ee6119ec7c188a77` — City Engineer's Estimated Unit Prices for Contract Items, 2026.
+- `src-f9076752a7601d0f` — Infrastructure Improvements Agreement Forms Directory.
+- `src-fa4cf248a6dd7221` — Revocable Permit Submittal Requirements, April 2020.
+
+### content/development-land-use/projects.md (29)
+
+- `src-08590a95e933fe6d` — Serenade at Park Central.
+- `src-14e4cd864d467daa` — Official source: Bridge Boulevard Corridor Redevelopment Plan.
+- `src-16d851caed2d2c01` — Rail Yards Master Plan Retained City Copy With Adoption and Amendments.
+- `src-1b854e9d043388bc` — Rail Yards Blacksmith Shop Feasibility Study.
+- `src-1ce1cfa574c4cbbf` — Uptown Connect project page.
+- `src-2d17d01d04c78c38` — Community Residential Program and Emergency Shelter Regulations.
+- `src-3e64d04f2de01f3a` — CNM Master Plan Projects.
+- `src-44fbf6a5812ad64b` — Metropolitan Redevelopment Agency Annual Report 2023.
+- `src-510d4d71581f7248` — CNM Main Campus Map - May 2026.
+- `src-57cdf934b4db34ff` — Albuquerque Rail Yards Master Plan.
+- `src-5833586f28079104` — ABC Comprehensive Plan, Chapter 9: Housing (2025 Update).
+- `src-613418827a749d36` — Albuquerque Rail Yards Redevelopment.
+- `src-67062b09466cac70` — The Vacant and Abandoned Houses Task Force Releases Report.
+- `src-74054dc72ca5a472` — CNM Fiscal Year 2025 Master Plan Projects List.
+- `src-76c00e3df3f87c29` — Metropolitan Redevelopment Agency.
+- `src-8778e4e2844fdd47` — Albuquerque Region Housing Needs Assessment (2024).
+- `src-9f5ac56df8c6cbb8` — Albuquerque Rail Yards: Redeveloping the City's Historic Rail Yards, an Urban Land Institute Advisory Services Panel Report (February 2008).
+- `src-9fa20b87264a7a5c` — Building permits open data.
+- `src-cca44df451aad719` — Official City Record.
+- `src-d04c986967667400` — De Anza Motor Lodge Redevelopment Official Notice of Decision.
+- `src-d2647601984f4cbc` — City of Albuquerque 2023-2027 Consolidated Plan and 2023 Action Plan.
+- `src-d81eb996ad97027c` — Official City Record.
+- `src-d83c6c8206910d55` — RailYardsMasterPlan.pdf.
+- `src-eca86eadb44893e2` — Albuquerque Rail Yards Redevelopment.
+- `src-f0a83bd9e920650b` — Highlands Central Market and Residence Inn.
+- `src-f24ddd95ac2229d0` — Bridge Boulevard Corridor Redevelopment Plan.
+- `src-f4d22d7907cf46df` — Updated Rail Yards Master Plan.
+- `src-f8be7d570b5854a0` — Official source: Central/Highland/Upper Nob Hill Metropolitan Redevelopment Plan.
+- `src-fafd89492c71ec90` — Rail Yards Blacksmith Shop Environmental Sampling Report.
+
+### content/development-land-use/redevelopment-plans.md (51)
+
+- `src-01cfdb2a2c85130a` — North Fourth Street Metropolitan Redevelopment Plan.
+- `src-07360716bb99118c` — Central/Highland/Upper Nob Hill Metropolitan Redevelopment Plan.
+- `src-09fdd8da28f09ff5` — Menaul MRA Zoning Map Amendment - Enacted.
+- `src-0c6a7aab0c2bea95` — Official source: Sawmill/Wells Park Community Metropolitan Redevelopment Area Plan.
+- `src-1df4ccb006e5a79f` — Official source: Coronado Metropolitan Redevelopment Area Plan.
+- `src-28418cab91a745a6` — Barelas Neighborhood Commercial Area Revitalization Plan.
+- `src-2e9b4aaeaf731e69` — City parking-study page.
+- `src-33f990150811e7bb` — South Broadway Sector Development Plan.
+- `src-3a96108b2a92192c` — Official source: South Broadway Neighborhoods Metropolitan Redevelopment Plan.
+- `src-3f2dca78dd97e88d` — Menaul Metropolitan Redevelopment Area Plan.
+- `src-42700a168ad3eb38` — East Gateway Metropolitan Redevelopment Area Plan.
+- `src-44de10e288a1f3b4` — R-22-38: University Metropolitan Redevelopment Area Designation Resolution.
+- `src-48b3697bb9474b06` — Old Albuquerque High School Metropolitan Redevelopment Plan.
+- `src-4db7ffe52592f683` — McClellan Park Metropolitan Redevelopment Plan.
+- `src-4e595175bd75b740` — 2025 Downtown Albuquerque Parking Study (EC-26-175).
+- `src-52bf6aef9493f355` — Official source: East Gateway Metropolitan Redevelopment Area Plan.
+- `src-53783397543af7ae` — Historic Central Metropolitan Redevelopment Area Plan.
+- `src-54a0fdc70d3fe70c` — Clayton Heights Metropolitan Redevelopment Area Plan.
+- `src-55360104e51159f9` — Official source: Old Albuquerque High School Metropolitan Redevelopment Plan.
+- `src-56485de565b52365` — West Central Metropolitan Redevelopment Area Plan.
+- `src-5c0c02ee4f9fe904` — Official source: South Barelas Industrial Park Metropolitan Redevelopment Plan.
+- `src-5d543243da9daf6d` — Del Rey Metropolitan Redevelopment Project Plan.
+- `src-5f2bb1c1296c574f` — R-22-92: Menaul Metropolitan Redevelopment Area Plan Approval Resolution.
+- `src-657c1cd76dba9bce` — Menaul Redevelopment Study and Recommendations.
+- `src-6d2bd024ade8862e` — Sawmill/Wells Park Community Metropolitan Redevelopment Area Plan.
+- `src-7f78a45299ba4c94` — Official source: West Central Metropolitan Redevelopment Area Plan.
+- `src-82eb4064df12e83a` — Tingley Beach Metropolitan Redevelopment Area Designation Resolution R-305.
+- `src-89107d80d63d016c` — University MRA Designation Report.
+- `src-90f05d58ca733862` — Near Heights Metropolitan Redevelopment Area Plan.
+- `src-917173b06523dda9` — North Corridor Metropolitan Redevelopment Area Plan (2020).
+- `src-9c1c7a23d2d20baf` — Downtown 2025 Metropolitan Redevelopment Plan.
+- `src-9c331626fe38988c` — Official City MRA Document Directory.
+- `src-a38c0dcb7d64e22c` — Downtown 2050 Metropolitan Redevelopment Area Plan.
+- `src-aadebaccdf26e105` — South Barelas Industrial Park Metropolitan Redevelopment Plan.
+- `src-b048ef77aa8b8b4a` — Official source: McClellan Park Metropolitan Redevelopment Plan.
+- `src-b4350ab53979fbbc` — Sycamore Metropolitan Redevelopment Plan.
+- `src-ba702c5f055d8e38` — St. Joseph Hospital Metropolitan Redevelopment Plan.
+- `src-bac9ca833a6257a6` — Official City PDF.
+- `src-be0f7de953f05caf` — Near Heights Metropolitan Redevelopment Area Expansion Plan.
+- `src-c0f6bd74e17b5c97` — Coronado Metropolitan Redevelopment Area Plan.
+- `src-c1dc716922ff8a82` — Official source: Near Heights Metropolitan Redevelopment Area Plan.
+- `src-c4b04604b2d64746` — Soldiers & Sailors Park Metropolitan Redevelopment Area Plan.
+- `src-c4cf54190d8fe881` — Coronado Metropolitan Redevelopment Area Enacted Plan Packet.
+- `src-d246e14730e98d87` — R-21-207: Menaul Redevelopment Study Adoption Resolution.
+- `src-d6d3b671040d9c5c` — MRA-RedevPlan-LosCandelariasVillageCenterMRAplan.pdf.
+- `src-e338135e23a78c39` — Tingley Beach Metropolitan Redevelopment Area Project I Plan.
+- `src-e516b3e230fe5d82` — North Corridor.
+- `src-e52197012ce5ecbf` — Official EC-26-175 matter record.
+- `src-eb1b4600559aa8da` — South Broadway Neighborhoods Metropolitan Redevelopment Plan.
+- `src-f4d3bc242320a9a3` — MRA-RedevPlan-RailroadMRA.pdf.
+- `src-f6788a6c210da2d8` — Tingley Beach Metropolitan Redevelopment Area Project I Plan Adoption Resolution R-306.
+
+### content/development-land-use/zoning-ido.md (12)
+
+- `src-06dce4ce29536831` — Legalization of Cannabis in New Mexico: Planning Commissioner Workshop.
+- `src-131e6aac3a3051b9` — Integrated Development Ordinance, Effective December 25, 2022.
+- `src-1b2a5dd7fd8be69a` — City zoning and land-use maps.
+- `src-1e804cf584b0878a` — Integrated Development Ordinance, Effective April 21, 2025.
+- `src-239d8ae6cb679106` — Integrated Development Ordinance, Effective August 1, 2021.
+- `src-25cfba414ae7e7a7` — Integrated Development Ordinance, Effective November 2, 2020.
+- `src-3185d79f43e15a3a` — Integrated Development Ordinance, Effective April 20, 2026.
+- `src-81e5bf1147259520` — Integrated Development Ordinance, Effective July 27, 2023.
+- `src-8e220130c8cbca3d` — Integrated Development Ordinance — effective May 6, 2026.
+- `src-922772f1241f3027` — Interactive IDO zoning map.
+- `src-c872587dd95dbef1` — Integrated Development Ordinance, Effective May 17, 2018.
+- `src-e0fd9c071d423fac` — Integrated Development Ordinance, Effective August 3, 2024.
+
+### content/maps-data/dashboards.md (23)
+
+- `src-00b4e4cf87f6ddb7` — DMD by the Numbers.
+- `src-11940795fcc0fceb` — Permitted construction in the public right of way.
+- `src-1272a9a90679fdae` — Transportation Analysis and Querying Application.
+- `src-149ea9e6395a41ca` — MRMPO TIP Viewer.
+- `src-303ced5125e5ca88` — Active Projects.
+- `src-3159cc3c3e4e7fde` — City of Albuquerque School Crossings Dashboard.
+- `src-39dc369f8428464a` — Pedestrian, Bicyclist, and Vision Zero Projects Viewer.
+- `src-3cf8d352dd4b0bb3` — Road Diet Candidates Map.
+- `src-6349e5f02f95ba83` — City of Albuquerque Elementary & Middle School Crossing Evaluation (2019).
+- `src-8cb092f67a03b619` — NMDOT STIP viewer.
+- `src-9a35226d6d5d0bfc` — Construction moratoriums.
+- `src-aeba700cf422bcb9` — MRCOG Traffic Counts Viewer.
+- `src-b99c80d1f32fb174` — Street Maintenance Projects Viewer.
+- `src-bcc1c74806a585c5` — Streetlight Status Dashboard.
+- `src-d30a4026cb802c6d` — Neighborhood Traffic Management Program Dashboard.
+- `src-d311dfa1ad0a2915` — Albuquerque Address Report.
+- `src-d4a784166e8e1de9` — High Fatal and Injury Network.
+- `src-db4a9723c3839247` — DMD Active Projects Viewer.
+- `src-dc4f6836061b1a86` — MRCOG traffic flow maps and busiest intersections.
+- `src-dfe528e25b833667` — NMDOT Project Dashboard.
+- `src-f42f72507c457eda` — Albuquerque Address Report.
+- `src-fe13d8844ba9e9b6` — Pedestrian, bicyclist, and traffic-safety projects map.
+- `src-fef1a0308b8716cc` — Traffic Barricades Map.
+
+### content/maps-data/maps.md (130)
+
+- `src-005af4d0a7c9c760` — Foothills Trail Map: Indian School.
+- `src-011ccfd869be15b6` — Huning Highland Historic Overlay Zone and EDo Urban Conservation Overlay Zone Map.
+- `src-032761f66b5cbd19` — Tijeras Creek Watershed Restoration Overall Site Plan.
+- `src-054c70be093fec44` — Isleta Drain Trail Master Plan — Aerial Network Map.
+- `src-062ee90c33a52690` — Official MRCOG PDF.
+- `src-0a3fd1500873edc3` — Official County project page.
+- `src-0c0a09c86638f4c2` — Albuquerque Metropolitan Area's 25 Busiest Intersections.
+- `src-0e59d03bed7cfaf8` — Ruth Eisenberg Trailhead and West Mesa Trail Map.
+- `src-0e64d7e28326591c` — Blake Road and Coors Boulevard Improvements — Phase 6 Map.
+- `src-0edebe68e5032908` — Current Bikeways and Trails Data.
+- `src-15ffafc74755cd91` — Paradise Hills Trail — Conceptual Improvements Map.
+- `src-183f9856caaf7a57` — Sunset Gardens Road Phase 2 — Project Map.
+- `src-1c5fd2f23ddfc6c2` — 2024 AMPA Summary Statistics, Mileage, VMT, and VHT (PDF).
+- `src-1cff86b46343d908` — Foothills Trail Map: Piedra Lisa.
+- `src-211b1a6772e1a7a9` — NMRoads Live GeoJSON Feed.
+- `src-21df738018b6a39f` — East Mountains Traffic Flows.
+- `src-22218b70f20f0a1d` — Survey Monument Search.
+- `src-227eb253ea98b4dd` — NMDOT Traffic Data Management System.
+- `src-234b4b2f020e9455` — John A. Milne/Gutierrez Canyon Open Space Trail Map.
+- `src-23efd0866dc60c3f` — Rural Bernalillo County Traffic-Flow Maps, 1993–2023.
+- `src-29a1d22427148b89` — Big I Approach Volumes, 1980-2024.
+- `src-2c7717c59cac7477` — City of Albuquerque Metropolitan Redevelopment Areas Map.
+- `src-2c94f1cc7996207a` — Albuquerque Metropolitan Planning Area Boundary Map.
+- `src-2df68bc35987ea5c` — Sunset Road Improvements — Proposed Storm Drain Map.
+- `src-2e209534cdbb12bd` — Goff Boulevard Roadway Improvement Project Map.
+- `src-2fec9403a904115d` — Foothills Trail Map: Embudito.
+- `src-30712fcfe7158b3c` — Official MRCOG PDF.
+- `src-3080803365506588` — MRMPO Long-Range Transit System Map.
+- `src-30f5df6ec1a93c81` — Albuquerque Area Street Jurisdictions.
+- `src-337b15afa142bfda` — Official County project page.
+- `src-3617488d3e23ed73` — City of Albuquerque Open Space Overview Map.
+- `src-367376e22773795f` — Official County project page.
+- `src-36c8976c6dc16816` — MRMPO Potential Road Diet Candidates Map.
+- `src-383ffa9ebb83f71c` — Dennis Chavez Boulevard and Condershire Drive Intersection Improvements — Conceptual Design Board.
+- `src-3872c10e4e5bf4ef` — City of Albuquerque Metropolitan Redevelopment Areas Map.
+- `src-396f5cf13b358a77` — Atrisco Vista Boulevard Reconstruction Project Flyer.
+- `src-3d6ca5c431e0b412` — Foothill Drive Project Map.
+- `src-408aea6002f1f2f7` — Second Street SW Corridor Improvement Project Map.
+- `src-47094de943dd35cf` — Alameda Boulevard Median Landscape Renovation Phase II — Plans.
+- `src-4752ea3b8c1ef183` — Placitas Open Space Trail Map.
+- `src-486007b62394bcd1` — Official County project page.
+- `src-4d0ab611f5d62e1a` — NMRoads Public User Guide.
+- `src-4f52cc9a9cc25828` — Manzano/Four Hills Open Space Trail Map.
+- `src-4fa70bed8f8460f7` — Sunset Road Reconstruction Phase 2.
+- `src-505d96f7cbe6797c` — Bicycle and Pedestrian Planning Maps.
+- `src-50e93315a23c70b8` — Sunset Road Reconstruction Phase 2 Project Map.
+- `src-5117db04df44009e` — Greater Albuquerque Area and Rio Rancho Traffic-Flow Maps, 1968–2023.
+- `src-52c0eef8b18c4006` — Gatewood Avenue Improvements — Project Map.
+- `src-53495318782dae10` — MRMPO Long-Range Roadway System Map.
+- `src-583e0e4b02efb676` — NMDOT Planning Division GIS Hub.
+- `src-5be7a31d2dc26662` — North Diversion Channel and Paseo del Nordeste Trail Map.
+- `src-61412b57ce54be39` — Vista del Rio Area Storm Drainage Project — Phase Map.
+- `src-614981bcd06ef6c1` — Historic to Current AMPA Daily per Capita VMT, Chart (PDF).
+- `src-6697ce61c4489b98` — MRMPO Long-Range Pedestrian System Map.
+- `src-66bde071ea18823a` — Tapia Boulevard Phase IA — Proposed Roadway Section.
+- `src-69234459e6cf881f` — Official County project page.
+- `src-6a81c3bbae8aff0b` — Survey Monument Maintenance Public.
+- `src-6e176d8210637ebf` — AMPA VMT, Historic to Current: Daily and Per Capita Information (PDF).
+- `src-6fa1c94ac2269c55` — CNM Interactive Campus Map.
+- `src-708a570d8fd6f98f` — Foothills Trail Map: Copper.
+- `src-715a90a7300c5af8` — Bernalillo County Comprehensive Plan Development Areas.
+- `src-71895a3c26291b39` — Pedestrian Level of Traffic Stress (LTS) App.
+- `src-72433a545bdd2a24` — Paseo de la Mesa Recreation Trail Map.
+- `src-7287327f90d80686` — Arenal Storm Drain Project — Site Map.
+- `src-7765c50904c04e7a` — Alameda Adaptive Signal Project Phase 2 — Location Map.
+- `src-7957f9b308c70f11` — 2040 Long-Range Roadway Map.
+- `src-80c4be7e2e3a1f7e` — Rio Grande Valley State Park Map.
+- `src-80ed3bf1a12ab292` — City Drainage Ponds.
+- `src-81e918d47f146375` — Official County project page.
+- `src-84331f3cfb0f2318` — Hardy Court Improvements — Project Map.
+- `src-855247cc6565ec23` — Bernalillo County Comprehensive Plan Development Areas.
+- `src-86c2c6c570cead39` — Official MRCOG PDF.
+- `src-87fa3827b36c8915` — UNM Campus Planning.
+- `src-88f2a9180f45f3cc` — Long Range Roadway System (LRRS) Public App.
+- `src-8a96e3fdb3ea48a0` — Road Conditions.
+- `src-8e008bff2171f539` — Planned and Potential Transit Service (PPTS) Public App.
+- `src-90b9a8c884425861` — Official MRCOG PDF.
+- `src-92b99f9525a66440` — NMDOT Permanent Traffic Counters.
+- `src-934fc0a8a71b499f` — San Antonito Open Space Trail Map.
+- `src-949efe6dcb757173` — Woodward Road Improvements — Project Map.
+- `src-95551b44d82bab42` — Maps.
+- `src-95cb84bc3ca2e1ea` — Albuquerque Bird Watching Guide and Map.
+- `src-99204ec44bdcdca0` — Foothill Drive.
+- `src-999e00f72cfe2059` — Blake Road and Coors Boulevard Improvements — Phases 1–5 Map.
+- `src-9a27ab1e21b126ec` — Official County project page.
+- `src-9a8ab38bdba859ee` — Elena Gallegos Open Space Trail Map.
+- `src-9a8de57080520216` — Council District Poster Map.
+- `src-9b6157dcf376a919` — San Ygnacio Road and Tapia Boulevard Phase IA Improvements.
+- `src-9bfc5f6b20b1d942` — South Valley Drinking Water Project — Phase 7 Map.
+- `src-9e44aadc0096eada` — Piedra Lisa Open Space Loop and Canyon Trails Map.
+- `src-a1a4808f971f6584` — Tower Road SW Roadway and Utility Improvements — Project Map.
+- `src-a287b2a5ddc0c0b2` — Proposed Bike Network.
+- `src-a3013fed9a879aad` — El Camino Real National Historic Trail — Bernalillo County Route Map.
+- `src-a8d87ba818e2bf96` — Official County project page.
+- `src-a98e0f22c3231266` — UNM Safe Mobility Action Plan.
+- `src-acd6ffe812b54229` — Official source: Sandia Foothills Open Space Trail Map.
+- `src-ad103b60136441e2` — Los Poblanos Fields Open Space Trail Map.
+- `src-af2c036fc1a71e0a` — Arroyo Maintenance Responsibility Lookup.
+- `src-b2680de9b7aa9d6b` — Edith Boulevard and Vineyard Road Improvements — Project Map.
+- `src-b5a87ce12f1a37d5` — River Crossing Volumes - Total, Historic to Current (PDF).
+- `src-b5bd08f7dca5d8e5` — Open Space Visitor Center and Bosque Trail Access Map.
+- `src-bb42c063320e363d` — CNM Main Campus.
+- `src-bbad1918e212205d` — Official County project page.
+- `src-bc8bf8824f053ef6` — Greater Albuquerque Area Traffic Flows.
+- `src-be7fb993336ee3cb` — 2024 Top 75 Busiest Intersections with Past Rankings (PDF).
+- `src-be98b87e777e3a55` — Official County project page.
+- `src-c0ae02beede01ac4` — Official source: 2040 Long-Range Roadway Map.
+- `src-c3234970ff829698` — Official County project page.
+- `src-c69a7d10c4431a33` — Official County project page.
+- `src-cc6ab35f81bf1bfc` — Official MRCOG PDF.
+- `src-ce5b0fcd1b98a2b7` — Official County project page.
+- `src-cee60739837f2c92` — Isleta Drain Trail Master Plan — Reference Map.
+- `src-cf972c5c99624ed3` — Paseo del Norte Access to Fire Station 35 — Project Map.
+- `src-d1e0b028a125e23e` — Rail Runner System Map.
+- `src-d3f0cf9107a00c74` — MRMPO Long-Range Bikeway System Map.
+- `src-d50cd2863da4f4be` — Rail Runner System Map.
+- `src-e09a96c519c110ed` — Montessa Park Open Space Locations Map.
+- `src-e306c55c06eaceb1` — Official County project page.
+- `src-e3bb4120719554ae` — Official County project page.
+- `src-e65d0b612a672dbb` — South Valley Drinking Water Project — Overall Phasing Map.
+- `src-e93a6fe1808a9257` — Foothills Open Space Trail Map.
+- `src-ea40079f0398e386` — Current Bikeways and Trails Data.
+- `src-eb7faaebd60cf26b` — Foothills Trail Map: Menaul.
+- `src-ebce549c834584d9` — Tijeras Creek Watershed Restoration Project.
+- `src-f823581a733714a3` — Official County project page.
+- `src-f9051c697fcfef66` — Golden Open Space Trail Map.
+- `src-f959feb16b7d43c7` — Sandia Foothills Open Space Trail Map.
+- `src-fcebc36a75dddabe` — Official County project page.
+- `src-fe85bd5f4525e206` — Boca Negra Canyon Trail Map.
+- `src-fece0b6b04317d55` — Official County project page.
+
+### content/public-works/capital-projects.md (6)
+
+- `src-00145247e1a3c4f3` — DMD 2025 Project Highlights.
+- `src-27ffc3b6dced1dd3` — Stay informed about the current projects and studies initiated by the City Council. Projects & Initiatives Stay informed about the current projects and studies initiated by the City Council..
+- `src-62d3b321644b2b1a` — Central Atrisco Fiberoptic Expansion Project.
+- `src-6b3d2641a8391d43` — Municipal Development featured projects.
+- `src-9b9a27d57063af29` — Explora STEAM Campus Master Plan — Draft.
+- `src-d60499b3a9c17295` — Official City Record.
+
+### content/public-works/city-facilities.md (12)
+
+- `src-1278bab05bf5d909` — Accessible City park and recreation facilities.
+- `src-198c245ad504211f` — ABQ Referral Program Community Impact Report.
+- `src-2cf447cc8b453482` — Double Eagle II Airport Master Plan.
+- `src-6137f5287b788d84` — Official City document page.
+- `src-64e6b5953bddaf8c` — International District Library Park Project.
+- `src-6d243844fe259b86` — Albuquerque International Sunport Airport Master Plan Executive Summary.
+- `src-7016f4a70ccf6480` — Southwest Safety Center.
+- `src-7866aab2f7338c18` — Gateway Center.
+- `src-90e54dce49f86710` — Fire Station 4 at Coronado Park.
+- `src-9a64aa40900368f8` — Double Eagle II Airport Master Plan — Original Adopted Edition.
+- `src-9ac92f40d3bc70ba` — Double Eagle II Aerospace Technology Park Transportation Distribution Status.
+- `src-e9eb53c6a03fbaba` — City of Albuquerque CIP Building Design Standards and Guidelines, Revision 17.
+
+### content/public-works/parks-recreation.md (34)
+
+- `lin-25bd3939b1cddc44` — Amole Arroyo Resource Management Plan.
+- `lin-83db784b0755f109` — Bear Canyon Arroyo Resource Management Plan.
+- `lin-a1eb6d3354704e36` — Facility Plan for Arroyos.
+- `lin-b1becfc139b356e3` — Pajarito Arroyo Resource Management Plan.
+- `src-059fc7acf9594ed0` — x Urban Forestry x.
+- `src-08682b53cc068b7b` — Manzano Mesa Park Prescription Trail Guide.
+- `src-0a4e7c7c5123a1ea` — East Atrisco Kimbar Park Renovation (2026).
+- `src-12887e34b7770ec1` — Rio Grande Indoor Pool Renovation — Schematic Floor Plan.
+- `src-1959dee3f761b3ab` — Featured Projects & Improvements.
+- `src-3d2e5b739cd6460a` — Official source: Tijeras Arroyo Biological Zone Open Space Resource Management Plan.
+- `src-40193914b85bdf2c` — Wells Park NeighborWoods Final Report.
+- `src-40c93f162b4d763a` — Official City PDF.
+- `src-5b490b476a44aabd` — Official source: ABQ BioPark Master Plan.
+- `src-5b61308fa4fd2e2e` — Official City PDF.
+- `src-5beed526e0966f75` — City Open Space planning projects and resource-management plans.
+- `src-5cefbce02e362e4b` — ABC Comprehensive Plan, Chapter 10: Parks & Open Space (2025 Update).
+- `src-60a71de7cc2b490a` — Volcano View Trailhead.
+- `src-6938309d94c27be9` — ABQ BioPark Master Plan.
+- `src-85a073b969906b0e` — Official City PDF.
+- `src-86e1580c015c4502` — Official City PDF.
+- `src-8e7eec0616dee3f7` — Bernalillo County Open Space Holdings.
+- `src-94437ce17eaa523c` — Tijeras Bio-Zone Education Center Proposed Site Plan.
+- `src-9494fa616c420e18` — City Council District 2.
+- `src-9696b9222ba27231` — Tijeras Arroyo Biological Zone Open Space Resource Management Plan.
+- `src-995b7fdf05d5fb91` — Rio Grande Indoor Pool Renovation.
+- `src-9a62d6053635a659` — Bernalillo County Open Space Holdings.
+- `src-a61566721d63d9e1` — Route 66 Open Space Trailhead Draft Construction Drawings.
+- `src-aad6f1446bed0a2f` — Official source: Unser Boulevard, Mariposa, and Riverview Trail Guide.
+- `src-ade23590407e56c3` — Plans & Publications.
+- `src-ae33c3c2fbc6e0d8` — Official source: Paseo de la Mesa Recreation Trail Map.
+- `src-ba1b0bed574d6cec` — Tijeras Bio-Zone Education Center Proposed Site Plan Presentation.
+- `src-bdb03a2b53786b9a` — Major Public Open Space on the City's West Side, Steering Committee Presentation.
+- `src-c6c29c659589329f` — Tom Bolack Urban Forest Trail Improvements.
+- `src-efd20a6e9d1b0fd8` — Tijeras Bio-Zone Education Center Existing Conditions and Site Analysis.
+
+### content/public-works/stormwater-drainage.md (62)
+
+- `src-02ea7ef3e62f8a24` — Antibiotic Resistance Analysis of Contamination in Stormwater — Figures.
+- `src-09dd52f2c537c57d` — Fleet Storage Yard Candelaria Storm Water Pollution Prevention Plan.
+- `src-0c7c3af1438a8349` — Use of NOAA Atlas 14 With AHYMO Type 1 and 2 Rainfall Distributions.
+- `src-102daadbcc2b9f58` — Albuquerque MS4 Water-Quality Monitoring Status, June-September 2015.
+- `src-11da795efc34f4f3` — Antibiotic Resistance Analysis of Contamination in Stormwater — Final Report.
+- `src-14bf071bcc9dbde3` — Upper La Cueva Improvements Primrose Pointe HOA Presentation.
+- `src-154c5b6063d97abb` — Rainfall, Runoff, and Water-Quality Data for the Albuquerque Metropolitan Area, Water Year 2003.
+- `src-17564e79a9d160c5` — Albuquerque MS4 Water-Quality Monitoring Status, July 2014-January 2015.
+- `src-1ca72137a5210168` — Upper La Cueva Improvements Public Meeting Presentation.
+- `src-219c8ac7cde52685` — Barcelona Road Storm Drain Project Phase 2A.
+- `src-21d984c5cc37a25c` — Official source: AMAFCA/Albuquerque MS4 Floatable and Gross Pollutant Study.
+- `src-277c2b0fd42dbea7` — Official City Record.
+- `src-28372ac121eeb0ba` — Enacted Ordinance O-2018-020: Amending the Drainage Ordinance to Implement Best Practices for Management of New Runoff Associated With Land Development (Council Bill C/S O-18-2).
+- `src-33a926d35f72fdc0` — Rainfall, Runoff, and Water-Quality Data for the Albuquerque Metropolitan Area, Water Year 2004.
+- `src-3531b330bc1f738f` — Foothill Pond Feasibility Study.
+- `src-3b06f2c87c6eed7a` — Official source: AHYMO-S4-R2 Hydrologic Model User’s Manual.
+- `src-42070e2d53434fef` — What Are Special Flood Hazard Areas, Also Known as Flood Zones.
+- `src-422be8ae2e295542` — AMAFCA/Albuquerque MS4 Floatable and Gross Pollutant Study.
+- `src-42a14fc531457523` — Upper La Cueva Improvements Project Page.
+- `src-516ebc4bf5dbe6e9` — Arroyo Maintenance Facility Stormwater Pollution Prevention Plan.
+- `src-5244dc0ca1c18e95` — Albuquerque MS4 Bacterial TMDL Loading Report, Water Year 2015.
+- `src-53f3375a9829dc10` — Drainage, Flood Control and Erosion Control Governing Regulations Summary.
+- `src-5cdb4d5491c3a02d` — Middle Rio Grande watershed-based MS4 general permit.
+- `src-5f9bf5a35bdb196e` — City of Albuquerque MS4 Annual Report, FY 2018.
+- `src-64ad8d6862df1b52` — Standard Easement Language for Subdivision Plats: Drainage Facilities and Detention Areas.
+- `src-64fe15e764b8c334` — City of Albuquerque NPDES Permit Transitional Update.
+- `src-676d9afa33a1fdcf` — MS4 Stormwater-Quality Sampling Fact Sheet.
+- `src-68e69a0015fc4cdd` — Upper Piedras Marcadas Watershed Plan, Volume 1 - Literature Review.
+- `src-6c78a9b8c3dc88b8` — NMDOT Green Stormwater Infrastructure Maintenance Manual.
+- `src-6de51c89b658020b` — Official City Record.
+- `src-75f0dcf6be426005` — Albuquerque MS4 Notice of Intent.
+- `src-7b6cb9849a434271` — City of Albuquerque MS4 Annual Report, FY 2025.
+- `src-7c1a063b817989bd` — MS4 Annual Report for fiscal year 2019.
+- `src-7c27417fbd191fdf` — Special Order 19 Notice to Contractor: Private Drainage Facilities Within City Right-of-Way, Revision December 2022.
+- `src-7c5fbfff9e451a25` — Official City Record.
+- `src-7f0d4c4f77185c6f` — Requirement for an Erosion and Sediment Control Plan and Permit in the DRC Process, Revision July 2018.
+- `src-83a50a7b1723e768` — Erosion and Sediment Control Plan Standard Notes.
+- `src-850bc7367355b085` — Albuquerque Municipal Separate Storm Sewer System Permit.
+- `src-90604f46a9ff3c1e` — City Storm Drainage Library Index.
+- `src-93e0f5fd370f5709` — City of Albuquerque Construction Site Manual.
+- `src-975528e01439f6df` — MS4 Annual Report, signed and compiled, 2016.
+- `src-98563dab32c38b5c` — Stormwater Quality Plan Information Sheet and Inspection Fee Schedule.
+- `src-9cfc976496d924bf` — AHYMO-S4-R2 Hydrologic Model User’s Manual.
+- `src-9e5882e05bd61a72` — Official project resources.
+- `src-a066bb85795d81d4` — Construction Stormwater Quality Submittal Process, Revision February 7, 2025.
+- `src-a439fdefe9cbeb23` — City of Albuquerque MS4 Annual Report, FY 2023.
+- `src-a9a656ef061f06b5` — City of Albuquerque MS4 Annual Report, FY 2022.
+- `src-c2d1d0a2a56641ee` — Official City Record.
+- `src-c312994aa69f9bd5` — City of Albuquerque MS4 Monitoring Data for Water Year 2015.
+- `src-cac65cdc3b8dace0` — City of Albuquerque MS4 Annual Report, FY 2024.
+- `src-ce078e834d05b947` — Antibiotic Resistance Analysis of Contamination in Stormwater — Appendices.
+- `src-d74108ddea65eb7d` — National Pollutant Discharge Elimination System Manual: Storm Water Management Guidelines for Construction and Industrial Activities, Revision 2 (August 2012).
+- `src-de16a832dd3bdd8a` — City of Albuquerque Stormwater Management Program.
+- `src-e531466aed7f5387` — MS4 Annual Report for fiscal year 2021.
+- `src-e6c483a6440f5a01` — Upper Piedras Marcadas Watershed Plan, Volume 2 - Existing Conditions.
+- `src-e87ebbf853413338` — Drainage Pond Slope Stabilization and Seeding Requirements.
+- `src-eda3280085776f61` — MS4 Annual Report for fiscal year 2020.
+- `src-f3389ee4d757562d` — Three FEMA Processes for Removing a Home or Structure From a Special Flood Hazard Area.
+- `src-f588da98a838e5db` — Official City Record.
+- `src-f83ab9f85df68319` — Official NMDOT Research and Climate Bureau.
+- `src-fd224fd0694e0bc3` — Upper Piedras Marcadas Watershed Plan, Volume 3 - Developed Conditions.
+- `src-fdc66c5b8de48584` — MS4 Annual Report for fiscal year 2017.
+
+### content/transportation/bicycling/_index.md (64)
+
+- `src-00579536b46d85b5` — City of Albuquerque OnBase Public Records Search.
+- `src-01305fec2c9f60e2` — Greater Albuquerque Bicycling Advisory Committee Agenda, June 8, 2015.
+- `src-021943721750b362` — Greater Albuquerque Active Transportation Committee Meeting Minutes — November 10, 2025.
+- `src-02f7f9913481627f` — Greater Albuquerque Bicycling Advisory Committee Meeting Minutes — March 14, 2016.
+- `src-0496bf1dd0a9b4cd` — Greater Albuquerque Bicycling Advisory Committee Agenda, April 13, 2015.
+- `src-0700df74becac220` — Greater Albuquerque Recreational Trails Committee Minutes, April 21, 2015.
+- `src-07e8fe1d3a979502` — Greater Albuquerque Bicycling Advisory Committee Agenda, October 12, 2015.
+- `src-0d774d27fefbb48c` — Greater Albuquerque Recreational Trails Committee.
+- `src-14fdf8f8e43e85ae` — Greater Albuquerque Active Transportation Committee Meeting Minutes — January 13, 2025.
+- `src-175f425b4b89b61d` — Greater Albuquerque Active Transportation Committee Meeting Minutes — February 10, 2025.
+- `src-1a3d1113c3865d0c` — Greater Albuquerque Recreational Trails Committee: Agendas & Minutes.
+- `src-2302ea057260d09a` — Greater Albuquerque Bicycling Advisory Committee Agenda, May 11, 2015.
+- `src-2483ba8f6b9c29e4` — GABAC Annual Report 2018.
+- `src-25047e742c8384b4` — Greater Albuquerque Bicycling Advisory Committee Meeting Minutes — January 12, 2015.
+- `src-27540294ad847cd0` — Greater Albuquerque Recreational Trails Committee Minutes, January 20, 2015.
+- `src-2b3bc90121016b4f` — Greater Albuquerque Bicycling Advisory Committee Agenda, March 9, 2015.
+- `src-2bb0562301252913` — Greater Albuquerque Recreational Trails Committee Minutes, February 17, 2015.
+- `src-2ecf2ec6038f8018` — Greater Albuquerque Active Transportation Committee Meeting Minutes — May 11, 2026.
+- `src-329cb18fd33134d0` — Trails Are for Everyone: Americans with Disabilities Act.
+- `src-3a28862d112bfaf8` — Greater Albuquerque Active Transportation Committee Meeting Minutes — April 13, 2026.
+- `src-4e3536b0006daf9f` — Greater Albuquerque Bicycling Advisory Committee Meeting Minutes — July 11, 2016.
+- `src-4f129e8274197c79` — Greater Albuquerque Active Transportation Committee Meeting Minutes — July 13, 2026.
+- `src-5213edfc685ad50e` — Greater Albuquerque Active Transportation Committee Meeting Minutes — March 9, 2026.
+- `src-57e24377f8a36943` — Greater Albuquerque Active Transportation Committee Meeting Minutes — February 12, 2024.
+- `src-5be5af6bc684adbc` — Greater Albuquerque Bicycling Advisory Committee Agenda, September 14, 2015.
+- `src-5f98ad4aae4f92bf` — Greater Albuquerque Bicycling Advisory Committee Meeting Minutes — December 12, 2016.
+- `src-64b93a7e3b77b3c8` — UNM Sustainable Transportation.
+- `src-6a52da44a8c5f38b` — Greater Albuquerque Bicycling Advisory Committee Meeting Minutes — May 9, 2016.
+- `src-6d3dca57bcc7aff3` — Greater Albuquerque Active Transportation Committee Meeting Minutes — June 9, 2025.
+- `src-7578f4905e641aa7` — Greater Albuquerque Recreational Trails Committee Minutes, May 19, 2015.
+- `src-7872bc7475c6b504` — Greater Albuquerque Active Transportation Committee Meeting Minutes — May 13, 2024.
+- `src-7ccc217b19d1e947` — Greater Albuquerque Bicycling Advisory Committee Agenda, February 9, 2015.
+- `src-7e06bcfc4334bd56` — Greater Albuquerque Recreational Trails Committee Minutes, December 15, 2015.
+- `src-81c65ec58772a24f` — Greater Albuquerque Bicycling Advisory Committee Meeting Minutes — December 14, 2015.
+- `src-84c6c27068d476c2` — Greater Albuquerque Active Transportation Committee Meeting Minutes — February 9, 2026.
+- `src-8d8812220580bcd4` — Greater Albuquerque Active Transportation Committee Meeting Minutes — December 9, 2024.
+- `src-8fd24610fd814fb9` — Greater Albuquerque Bicycling Advisory Committee Meeting Minutes — August 8, 2016.
+- `src-95460bead0e780ee` — Greater Albuquerque Active Transportation Committee Meeting Minutes, July 10, 2023 (meeting packet).
+- `src-98a7971f46cfda6d` — Official City source.
+- `src-99529b2a4c8db5aa` — Greater Albuquerque Active Transportation Committee Meeting Minutes — August 10, 2026.
+- `src-99d9d144d198ba12` — Greater Albuquerque Active Transportation Committee Meeting Minutes — May 12, 2025.
+- `src-a127a114e536629e` — Greater Albuquerque Active Transportation Committee Meeting Minutes — April 8, 2024.
+- `src-a1ed1a72312f7ff5` — Greater Albuquerque Active Transportation Committee Meeting Minutes — July 14, 2025.
+- `src-aa4b44789f28cc08` — Greater Albuquerque Bicycling Advisory Committee Meeting Minutes — January 11, 2016.
+- `src-aaaf150b8e3f5c5c` — Greater Albuquerque Active Transportation Committee Meeting Minutes — September 9, 2024.
+- `src-af73b939f90e5f60` — Greater Albuquerque Active Transportation Committee Meeting Minutes — September 8, 2025.
+- `src-b29f7167365e501f` — Greater Albuquerque Recreational Trails Committee Minutes, March 17, 2015.
+- `src-b941791e08f877d3` — Greater Albuquerque Active Transportation Committee Meeting Minutes — June 8, 2026.
+- `src-bbf3b7af620eeba3` — Greater Albuquerque Bicycling Advisory Committee Agenda, August 10, 2015.
+- `src-bc5e37c59677ecd4` — Greater Albuquerque Active Transportation Committee Meeting Minutes — March 11, 2024.
+- `src-c0814ef6e88da88e` — Greater Albuquerque Recreational Trails Committee Agenda, August 18, 2015.
+- `src-c3477a0d3a776c58` — UNM Bike Valet Program.
+- `src-cb1fc0160a092a42` — Greater Albuquerque Recreational Trails Committee Minutes, June 16, 2015.
+- `src-da0493dea81dabb6` — Greater Albuquerque Active Transportation Committee Meeting Minutes — March 10, 2025.
+- `src-da125a4481a61b45` — Greater Albuquerque Active Transportation Committee Meeting Minutes — June 10, 2024.
+- `src-dbeb582a5c9fc001` — Greater Albuquerque Bicycling Advisory Committee Meeting Minutes — September 12, 2016.
+- `src-dd82e9520fffb68b` — Bike Laws Bike Laws Bike Laws.
+- `src-e21266990c2b8a79` — Albuquerque Rapid Transit Project: GABAC Bicycle Integration Presentation.
+- `src-e39a28d013f802ac` — Greater Albuquerque Active Transportation Committee Meeting Minutes — November 18, 2024.
+- `src-ecb5eb5ca00e599c` — Greater Albuquerque Bicycling Advisory Committee Meeting Minutes — February 8, 2016.
+- `src-ed7ea4c9f3e76369` — Greater Albuquerque Active Transportation Committee Meeting Minutes — December 8, 2025.
+- `src-f16f997fda78d184` — Greater Albuquerque Bicycling Advisory Committee Agenda, November 9, 2015.
+- `src-fac96940f2079948` — Greater Albuquerque Recreational Trails Committee Agenda, September 15, 2015.
+- `src-fbc771c45af4ff3d` — Greater Albuquerque Active Transportation Committee Meeting Minutes — January 8, 2024.
+
+### content/transportation/bicycling/bike-maps.md (23)
+
+- `src-01582dd7631ed92c` — Unser Boulevard, Mariposa, and Riverview Trail Guide.
+- `src-064b45b390088918` — Northeast Heights Bike Trails Guide.
+- `src-0ce924c2d9dcc556` — Paseo del Bosque Trail Guide — Full Version.
+- `src-1325560782280672` — Paseo de las Montañas Trail Guide.
+- `src-2edf86588af244d8` — 50-Mile Activity Loop Map.
+- `src-3cf5fa60c833bcf0` — Bernalillo County Bikeways.
+- `src-53fb7c8f80678e6d` — Bicycle Boulevard Guide — Full Version.
+- `src-56cf52742d7d943b` — Albuquerque Bikeways and Trails Map.
+- `src-5bef4eb4ac2b0481` — I-40 Trail Guide — Full Version.
+- `src-5d0745683414efa2` — Paseo de la Mesa Trail Guide.
+- `src-7753d0c7a7ed7f15` — Bernalillo County Multi-Use Trails.
+- `src-77a2ef88e4fe4233` — Tramway Trail Guide — Full Version.
+- `src-89fb2fd603486a1f` — Bike Maps & Trail Guides Bike Maps & Trail Guides Bike Maps & Trail Guides.
+- `src-8f4aa055be026803` — Hahn Arroyo and Paseo del Nordeste Trail Guide.
+- `src-a1327d48ad5c993a` — Bernalillo County Multi-Use Trails.
+- `src-adf5b03493832eda` — Arroyo del Oso and Bear Canyon Trail Guide.
+- `src-bc35720a4d6068b7` — North Diversion Channel and Paseo del Nordeste Trail Guide.
+- `src-d6b4543b0b6a5821` — Del Rey, North Pino, and Pino Arroyo Trail Guide.
+- `src-ddbf1a1c7f09590b` — Official source: Albuquerque Bikeways and Trails Map.
+- `src-dfd6e4b5cdd3831e` — Official source: 50-Mile Activity Loop Map.
+- `src-e2fc2a6e96b3ea3b` — Active Transportation Committee Portfolio App.
+- `src-e498102bcaf54b8b` — Paseo del Norte and South Domingo Baca Trail Guide.
+- `src-f81c048564bd8a31` — Bernalillo County Bikeways.
+
+### content/transportation/bicycling/bike-plans.md (22)
+
+- `src-03c30139ad471b0e` — El Camino Real National Historic Trail Development Concept Plan Executive Summary.
+- `src-0b1dfe6e620d7fe0` — 2024 Bikeway and Trail Facilities Plan — Combined Authoritative Edition.
+- `src-0f60535452ac9154` — 2000 Albuquerque Comprehensive On-Street Bicycle Plan.
+- `src-138b3f8088e22373` — Official source: 2015 Bikeways and Trails Facilities Plan Appendix A: Proposed Facilities.
+- `src-1d90eba4d193069b` — Alameda Drain and Trail Master Plan.
+- `src-27b939c34a1c59fc` — 2015 Bikeways and Trails Facilities Plan - Final.
+- `src-35f4be7a97b9f89e` — New Mexico Prioritized Statewide Bicycle Network Plan.
+- `src-4dd0d7313497ab4e` — Technical Appendices of the Albuquerque Comprehensive On-Street Bicycle Plan.
+- `src-50fdeb4703e57b9f` — 2011 Albuquerque Bikeways and Trails Master Plan Update - Appendices.
+- `src-545128f068ffb941` — 2024 Bikeway and Trail Facilities Plan - Combined Authoritative Edition.
+- `src-5a5a0161646963d9` — Official City Record.
+- `src-5cd111deac4749c3` — 2011 Albuquerque Bikeways and Trails Master Plan Update - Design Guidelines.
+- `src-731ef9cb0deff4d7` — 2011 Albuquerque Bikeways and Trails Master Plan Update - Appendices.
+- `src-74cff8b407c4916f` — Bikeways & Trails 2024 Conditions.
+- `src-89ba195983f6d5e8` — 2011 Albuquerque Bikeways and Trails Master Plan Update - Design Guidelines.
+- `src-94cdef5b70765253` — 2011 Albuquerque Bikeways and Trails Master Plan Update.
+- `src-9be16ea017ac043f` — New Mexico Prioritized Statewide Bicycle Network Plan Appendix.
+- `src-a244e2c4eeb801fc` — Isleta Drain and Trail Master Plan.
+- `src-af07fc621a7d39ff` — Alameda Drain Trail Master Plan and Design Notice.
+- `src-b3723cde2e9cf28c` — Official NMDOT planning page.
+- `src-bd12fc6e9a74e9f9` — Official City PDF.
+- `src-f03b7b0925523dae` — Existing & Proposed Bikeway Network.
+
+### content/transportation/bicycling/projects/_index.md (17)
+
+- `src-0f5f4a570a7fe2b6` — Two-Stage Bike Box at MLK Avenue and Broadway Boulevard.
+- `src-380ba25628c0ee5c` — Two-Stage Bike Box at MLK Avenue and Broadway Boulevard — Image.
+- `src-438b3ebcc3f671e2` — Mountain Road Bike Boulevard Crossing at San Pedro Drive.
+- `src-444e6a6bc9b21bb9` — I-25 Bicycle Accessibility Study Summary (2020; Updated 2021).
+- `src-4ddc850e99380009` — Uptown Pedestrian and Bicycle Plan and Wayfinding Program.
+- `src-65011a235ea2c10e` — Bernalillo County Project Page.
+- `src-6a9b9f0ca2394a9f` — Official City GAATC Project Update Record.
+- `src-7bbe0a9dbd29fb97` — Silver Avenue Bike Boulevard Review (2019).
+- `src-869bb49fc86733b4` — Dr. Martin Luther King Jr. Avenue Separated Bike Lane Pilot FAQ.
+- `src-8c2e8e528af877b9` — Dr. MLK Separated Bike Lane Pilot Project FAQ in Spanish.
+- `src-9ae1682efee4fbb8` — Official source: Uptown Pedestrian and Bicycle Plan and Wayfinding Program.
+- `src-a42856962290497a` — San Pedro Drive Bike Facility Assessment.
+- `src-bf6b7ac64ed443d8` — ABQ RIDE Document Collection.
+- `src-bf834f9e01200726` — City Council Resolution R-2020-079: Silver Avenue Bike Boulevard Review.
+- `src-c253e8dd6d233d95` — Dr. Martin Luther King Jr. Ave Separated Bicycle Lane Pilot Project - Coming soon!.
+- `src-dbc524f99ea2c711` — Official source: San Pedro Drive Bike Facility Assessment.
+- `src-f2a251eaec621554` — Spanish.
+
+### content/transportation/design-references.md (25)
+
+- `src-01307008e993ff37` — City Standard Specifications - Section 400: Traffic Control.
+- `src-0fe062b102da0ae8` — NMDOT Functional Classification System Guide.
+- `src-2568f4883d073e0e` — City Turn-Bay Standards (2024).
+- `src-38e836332a0d260e` — City Standard Specifications - Section 500: Structures.
+- `src-3a1ee89b7709c7ce` — City Standard Specifications - Section 800: Water.
+- `src-42ff065feb86046d` — Complete Bernalillo County Technical Standards.
+- `src-572c525a48aeee65` — City Standard Drawings - Section 2800: Temporary Traffic Control (January 2003).
+- `src-5d22b20234849181` — City Standard Drawings - Section 2200: Drainage (May 2020).
+- `src-5f5da37173dac636` — Connections 2040 Appendix E: Long-Range Transportation System Guidelines - 2020 Update.
+- `src-69a94adf01b8766b` — City Standard Specifications - Section 100: Materials.
+- `src-6ea55afe4727c442` — City Standard Drawings - Section 2700: Irrigation (2019).
+- `src-7fa7591c8abf21ac` — City Standard Specifications - Section 600: Open Channels, Dikes, and Dams.
+- `src-8b666e4aff967766` — City Standard Specifications - Section 200: Earthwork.
+- `src-92406a39eaba47ce` — Green Stormwater Infrastructure / Low Impact Development Standards.
+- `src-945033acba6e5c1e` — City Standard Specifications - Section 300: Streets and Related Work.
+- `src-96be93f8970521e8` — City Standard Specifications - Section 700: Trenching.
+- `src-9ce6c1fddfedfb5a` — City Standard Drawings - Section 2600: Signing and Striping (March 2020).
+- `src-a525db9f0737164e` — City Standard Specifications - Section 000: General Conditions.
+- `src-af388b760a4f124c` — NMDOT Complete Streets Strategic Plan.
+- `src-b3f3d02d675a1a0f` — City Standard Specifications - Section 1000: Landscaping.
+- `src-c09a66e57406cd5e` — Guidance for Public Street-Light Infrastructure (December 2020).
+- `src-c422781c9fd3a0d3` — City Standard Drawings - Section 2400: Paving (March 2020).
+- `src-c5f033e2a16fd132` — City Standard Specifications - Section 900: Sewer.
+- `src-d2a773fa04e3a040` — City Development Review and Construction Standards Directory.
+- `src-e9bbac9e46a6a538` — City Standard Drawings - Section 2500: Traffic (March 2020).
+
+### content/transportation/operations-data.md (26)
+
+- `src-043b8237ba0764e6` — HAWK Signal Guide for Lomas Boulevard and Alvarado Drive.
+- `src-0c338b7492be1b45` — Yellow-Light and All-Red Clearance Timing Effectiveness Study.
+- `src-160e1af1a9437b00` — NMDOT Data Management Bureau.
+- `src-2098b91e085169e7` — Street-Maintenance Pavement-Rating Program Status Packet.
+- `src-25c15ede0314ba7a` — Street Maintenance and Rehabilitation in the Twenty-First Century.
+- `src-352d5b2af8924b5e` — City Street Speed-Limit Data.
+- `src-405deb003c0ea0fb` — street maintenance.
+- `src-41420efb69f7fb19` — City Traffic Cameras, Signals, and Roadway Data Map.
+- `src-41e001deba07ec49` — Incident Management Plan for the Albuquerque Metropolitan Planning Area.
+- `src-4868ae4c29aeabbe` — City Traffic Cameras, Signals, and Roadway Data Map.
+- `src-5944d10faf27bfc4` — FHWA Model Inventory of Roadway Elements 2.1.
+- `src-64110fb866fec2ae` — Interstate Maintenance Responsibilities.
+- `src-658a1f0ede046651` — DMD Roads Speed Limits Data.
+- `src-81517a5d1582d72c` — CMP Archives.
+- `src-88c307ac48599bc8` — Traffic Monitoring.
+- `src-9642139286c8f411` — Stop Sign Reconfiguration Proposal for Raynolds and Barelas, December 2008.
+- `src-a6622c38d315c448` — 2023 AMPA ITS Architecture.
+- `src-ae32eb87bc457560` — traffic engineering.
+- `src-b4a077cdff17e8a2` — NMDOT Data Management Bureau.
+- `src-b6196f03e242e736` — NMDOT Traffic Data Management System Info Sheet.
+- `src-b9c1a8d5cb7902b6` — FFY 2024-2029 TIP ITS Project Review and Architecture Certification.
+- `src-bdc584620c51dfa1` — Albuquerque Metropolitan Area Intelligent Transportation Systems Briefing.
+- `src-c6fe5cbcbd49f54b` — NMDOT Roadway Inventory System Data Dictionary and Metadata.
+- `src-e1efccbd14cc5b06` — NMDOT Transportation Systems Management and Operations Strategic and Program Plan.
+- `src-e4d63b306cfa4aa2` — Official NMDOT Intelligent Transportation Systems page.
+- `src-ee6144b66038fee0` — Intelligent Transportation Systems.
+
+### content/transportation/roadway-projects/_index.md (88)
+
+- `src-01935688f2cfeaa3` — Traffic & Street Improvements.
+- `src-0234c5a50d77383f` — Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2022).
+- `src-06efbb4ef116cd14` — 2nd Street ADA Improvements Phase 2 Map.
+- `src-0a0d14f59fad8efb` — I-25 Improved Pedestrian and Bicycle Construction Detour Map (retrieved August 2026).
+- `src-0ec0ff4ef84b635d` — West Central Complete Streets Frequently Asked Questions.
+- `src-161e9721e179bb26` — Goff Boulevard Improvements.
+- `src-163146f77e5b5580` — Goff Boulevard Roadway Improvements — Community Meeting Presentation.
+- `src-16f8ae9c0bf6e508` — Bridge Boulevard Phase 3 Selected Alternative.
+- `src-1bc478383334a5ad` — Cutler Avenue Pedestrian Improvements Presentation.
+- `src-1e715cd1badffb21` — I-25 Improved Planned Improvements Map (retrieved August 2026).
+- `src-1ed20b8190a6304d` — Dennis Chavez Boulevard and Condershire Drive Intersection Safety Improvements — Public Meeting Presentation.
+- `src-1fd64a58c83c5ba0` — Rio Bravo Bridge Gas-Pipeline Relocation — Resident FAQ.
+- `src-202ad91d5808008d` — Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2018).
+- `src-283a646fce537c4d` — Defense Community Infrastructure Program.
+- `src-2aa795138321bebe` — East Central Pedestrian Safety Project.
+- `src-2f75875ce1c5cf27` — Long Range Development Plans for Double Eagle II Airport, Steering Committee Presentation (June 27, 2014).
+- `src-306ac32ab7c29a8b` — West Central Complete Streets Project.
+- `src-3735fb7cc37d3670` — Read a PDF of the final report..
+- `src-3be6aa47e1698006` — West Central Complete Streets 60% Design Roll Plot.
+- `src-3ff7d0de5c42b98d` — Unser and Paseo Phase 1 Construction Fact Sheet - Spanish.
+- `src-492e95f3e1c0db70` — Second Street SW Corridor Improvement Project.
+- `src-4aaa2a918146e21c` — Paseo del Volcan Right-of-Way Acquisition Status Map, December 2013.
+- `src-4ccb5ec2a9cc85ba` — Laurelwood Median Rehabilitation and Parkway Landscape Project.
+- `src-4e967018b1d83d1b` — Second Street SW Corridor Improvements — Open House Boards.
+- `src-4f3ba9d0a06d0e56` — 2nd Street ADA Improvements.
+- `src-53771ce5aa538e80` — NMDOT District 3.
+- `src-53a1082347813b21` — Blake Roadway and Storm Drain Improvements Public Meeting Presentation.
+- `src-55255b2a1e98df71` — Cutler Avenue Street Improvements.
+- `src-57b7552826150d27` — I-25 Improved project website.
+- `src-5e939ad6f45e914e` — 118th Street Study Public Meeting Presentation.
+- `src-6019029e9f3785c8` — I-25 Improved Live Traffic Impacts.
+- `src-60c67771fb47956a` — Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2021).
+- `src-639a0614f2314c1a` — Isleta Boulevard Corridor Phase II Design Schedule.
+- `src-63c2a85a2093e399` — Rio Bravo Boulevard and Second Street Intersection.
+- `src-64710f1309ac2574` — Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2016).
+- `src-660fe6c60622c71e` — East Central Pedestrian Safety Project Map.
+- `src-69823eb213e3d218` — Official Project Image.
+- `src-6a6d29c903f5857f` — Isleta Boulevard Reconstruction Phase 1.
+- `src-6bb5c9d96d6a080d` — For a list of current projects, click here..
+- `src-72bcfd3a37ac4a41` — East Central Pedestrian Safety Project.
+- `src-76a5c4da3d9d0e90` — Bridge Boulevard Phase 3.
+- `src-77ded92dfd05478c` — Enacted Resolution R-2010-056: Creating a Traffic and Pedestrian Safety Project on Rainbow Boulevard and Universe Boulevard (Council Bill C/S R-10-44).
+- `src-78729c767c3f2472` — Official City PDF.
+- `src-79262fb84e00fe05` — Bernalillo County Transportation Projects Update.
+- `src-8043e1de7031af50` — Paseo del Volcan Corridor: Analysis of Economic Development Opportunities, With Technical Appendices (September 2014).
+- `src-82a238700e5c6270` — Cutler Avenue Report.
+- `src-8618710dc07a99b5` — La Corrida Speed Cushions Completed.
+- `src-863499b79dab41c0` — Unser and Paseo Public Meeting Presentation.
+- `src-86c8e33bbd9ad791` — Sunset Road Improvements Project Map.
+- `src-87fd2a5755eea903` — McDuffie-Twin Parks Traffic Calming Measures.
+- `src-888e72a3531b11f9` — San Ygnacio Road and Tapia Boulevard Phase IA — Public Information Meeting.
+- `src-8919f64d734bdb83` — Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2019).
+- `src-894b9b501df894ba` — Official Project PDF.
+- `src-8c1842be24bb5b14` — Mackland & Carlisle Crosswalk.
+- `src-8e8bcb7f9f5bf24d` — Sunset Road Improvements: Gonzales to Neetsie.
+- `src-96dea3fd008458e2` — View the West Central Complete Streets Project FAQs.
+- `src-98abe715c4ad25dc` — West Central Complete Streets Open House Boards.
+- `src-99848da5508629e1` — Finished Projects.
+- `src-9e44e9bc1ed7b70a` — Bridge Boulevard at Cortez Intersection.
+- `src-a6a63111f9b4ba00` — Kirtland Air Force Base Access-Corridor Safety Grant Application.
+- `src-aa46a7bec6cc3f17` — Sunset Road Reconstruction Phase 2 Typical Section.
+- `src-ac968f2a82c383e2` — Isleta Boulevard Reconstruction Phases 2 and 3.
+- `src-acd9632b3f6863de` — Official source: Universe Boulevard Traffic and Pedestrian Study Public Meeting Presentation.
+- `src-b2031154bf40eabd` — Dennis Chavez Boulevard and Condershire Drive Intersection Safety Improvements.
+- `src-b2930455212d0763` — 632194 west central roll plot 7 9 26.pdf.
+- `src-b422c2535de83efc` — Biological Evaluation for the Unser Widening Project.
+- `src-b70b511cb25dfe10` — Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2015).
+- `src-ba3ca56213bab3a7` — 118th Street SW Improvements.
+- `src-c2d601aabba1d8b3` — Isleta Boulevard Corridor Phase I Design Schedule.
+- `src-c6aad2951b9b5ab1` — Second Street and Rio Bravo Intersection Construction Schedule.
+- `src-cc2a2198a662141c` — Isleta Boulevard Corridor Lighting.
+- `src-cff5c8af175867bc` — Sunset Road Improvements: Gonzales to Neetsie.
+- `src-d12ba7a2f591f7c7` — Fiber Installation Barricades Map.
+- `src-d7007a453ae04a79` — Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2020).
+- `src-d8e7dd2c390c5ac5` — Biological Evaluation for the Paseo del Norte Widening Project.
+- `src-dc0c2ea9ec93cd61` — La Corrida Road Speed Study.
+- `src-dd3b3cd24c247697` — 2nd Street ADA Improvements.
+- `src-e32146e8459b95f8` — Universe Boulevard Traffic and Pedestrian Study Public Meeting Presentation.
+- `src-e45ef8b986f98b89` — I-25 Improved Interactive Planned Improvements Map.
+- `src-e511519a41d0a650` — Official City PDF.
+- `src-e7837973289f5918` — 4th Street Pavement Preservation.
+- `src-e982ea5e5e064616` — Bernalillo County Capital Cooperative and School Bus Route Road Improvements (2017).
+- `src-ee845d073ea89d81` — abq west meeting boards 3final print .pdf.
+- `src-ef0b1e81c86b0e2d` — 2nd Street Rehab/Sidewalk and Lighting Improvements Project (CN A302300).
+- `src-f827e747d14f6216` — Unser and Paseo Phase 1 Construction Fact Sheet - English.
+- `src-fb2017c6645ff6b8` — Blake Road Improvements.
+- `src-fb966b8b33693f12` — 4th Street Road Diet.
+- `src-fe3273f1de13882d` — Unser and Paseo project website.
+
+### content/transportation/roadway-projects/speed-management.md (192)
+
+- `src-00f3d3a4cc811fca` — Santa Clara Avenue Speed Study.
+- `src-0122b8ffdbaf7be0` — Official City PDF.
+- `src-0241f72df40f8a47` — Aztec Road Speed Study.
+- `src-024e9015bd3ca346` — Milne Road Speed Study.
+- `src-041e5adacfef11b3` — Program documents and traffic-calming tools.
+- `src-088b38dd23f32b60` — Official City PDF.
+- `src-088df7054d7e4646` — Official City PDF.
+- `src-099508666243ab63` — Official City PDF.
+- `src-0a79d2ba39c98f19` — Gun Club Road Speed Study.
+- `src-0b07feb02d238677` — Casa Grande Avenue Speed Study.
+- `src-0b307e7d0946492d` — Official City PDF.
+- `src-0c6fc2cc4030096d` — Amherst Drive Speed Study.
+- `src-1225691928e072bd` — Official City PDF.
+- `src-125eb8fe745b5bcd` — Official City PDF.
+- `src-14482da7f15359cb` — Official City PDF.
+- `src-169af942c3378430` — Los Lomas Road Speed Study.
+- `src-1a225b1370d7b805` — Bandelier Drive Speed Study.
+- `src-1bdb3f385be1faaf` — Official City PDF.
+- `src-1c4d6fe4276ea1e8` — Brandywine Road Speed Study.
+- `src-1c5b6b5453302e21` — Gwin Road Speed Study.
+- `src-1c9b4e21de9e0c92` — Ventura Street Speed Study.
+- `src-1e839217f398a255` — Bellehaven Avenue Speed Study.
+- `src-1f0ebd4814602446` — Official City PDF.
+- `src-20b9ae8ffa26954f` — Santa Clara Avenue Speed Study.
+- `src-23d0c6c8780944f9` — Vivian Drive Speed Study.
+- `src-245118056da39584` — Official City PDF.
+- `src-252b72094fe76273` — Hidalgo Circle Speed Study.
+- `src-25ac8b2b16ee6df1` — Gonzales Road Speed Study.
+- `src-26eec5c4fc575e19` — 7 Bar Loop Speed and Volume Study.
+- `src-2771b9024db9668b` — Rancho Sereno/Las Terrezas Traffic-Calming Study.
+- `src-286f138cacc5ea41` — Española Street Speed Study.
+- `src-28e73e3d95146a38` — Arizona Street Speed Study.
+- `src-2a52d0ec67939e94` — Grande Drive Speed Study.
+- `src-2c4d9f18839ab919` — Official City PDF.
+- `src-2d249a691f695cc7` — Official City PDF.
+- `src-2f3af5b3c9959870` — Official City PDF.
+- `src-2f796692299d1ab9` — Official City PDF.
+- `src-30f0e7e8e0dbb55f` — Official City PDF.
+- `src-310e89e31b12747a` — San Francisco Road Speed Study.
+- `src-318000b2b03f9e81` — General Stilwell Street Speed Study.
+- `src-32fdee2d2bef98ee` — 8th Street Speed Study.
+- `src-358a49ef01a4694a` — Official City PDF.
+- `src-36aeae26d4bb7572` — Summit Park and North Campus Neighborhood Transportation Management Plan.
+- `src-390588245fb0f7e4` — Hilton Avenue Speed Study.
+- `src-393cac968c0c2b62` — NTMP Request Process Flowchart.
+- `src-3dbdde9b77df2027` — Official City PDF.
+- `src-3f90073d1c52b069` — Submit a Traffic Calming Request.
+- `src-3ffb5f69a35a216a` — San Pasquale Avenue Speed Study.
+- `src-423a9b109e650283` — Official City PDF.
+- `src-443d248392597a00` — Iliff Road Speed Study.
+- `src-4461f12df4d347ae` — Official City PDF.
+- `src-4884fa8392cf9784` — Official City PDF.
+- `src-48d87510e4b96ec0` — Official City PDF.
+- `src-491f8fc794de5781` — Official City PDF.
+- `src-4950470a3d45969e` — Official City PDF.
+- `src-4bbbbcbb52bfb133` — Official City PDF.
+- `src-50b22c2cff55127c` — Constitution Avenue Speed Study.
+- `src-5247e676f00790a1` — Andrew Drive Speed Study.
+- `src-5492d231debc826a` — 61st Street Speed Study.
+- `src-55919b89045da7bf` — Truman Street Speed Study.
+- `src-55f75a33d31f91cc` — Official City PDF.
+- `src-57445acdd92732bc` — Official City PDF.
+- `src-591c95d2660e4b30` — Official City PDF.
+- `src-5dad9c544694650e` — Official City PDF.
+- `src-5f1d0094a0da7f1c` — 9th Street Speed Study.
+- `src-6104954a4bb9d83f` — NTMP Adoption Resolution R-14-99 Floor Amendment 1.
+- `src-646887130a1cc7f8` — Official City PDF.
+- `src-65412fe254f27920` — Official City PDF.
+- `src-65a1cc45883f1d28` — Official City PDF.
+- `src-66a63e9f64c19936` — Luna Boulevard Speed Study.
+- `src-6981a0204fb7ffe2` — City Automated Speed Enforcement Program.
+- `src-699f75d877610795` — Blue Ribbon Road Speed Study.
+- `src-6a57fb74c2cff21f` — Official City Record.
+- `src-6b268503153a85d5` — Morris Street Speed Study.
+- `src-6b44e57d517969e1` — Neighborhood Traffic Management Program Public Meeting Comments.
+- `src-6b8114bf65152029` — Parsifal Street Speed Study.
+- `src-6c6f2aed1a9d4d1f` — Desert Springs Drive Speed Study.
+- `src-6dea2e5a077fcc88` — Official City PDF.
+- `src-6e2a1ca140aa3101` — Official City PDF.
+- `src-701082c5d072da17` — Official City PDF.
+- `src-70d6d253b034c1aa` — Freedom Way Speed Study.
+- `src-728f643345394dc4` — Flora Vista Avenue Cut-Through Traffic Study.
+- `src-72c53279ea8e45a1` — Official City PDF.
+- `src-750a6401a2da53e9` — 86th Street Speed Study.
+- `src-7756694083c48fbe` — Ortiz Drive Speed Study.
+- `src-784b9822a6d67446` — Harper Drive Speed Study.
+- `src-7c6240f55fadae7a` — Morningside Drive Speed Study.
+- `src-7cb657e190db5117` — Baldwin Avenue West Speed Study.
+- `src-7d61498dd115170d` — Rancho Sereno/Las Terrezas Traffic-Calming Study Public Meeting 1.
+- `src-7e013c397a0c8334` — Official City PDF.
+- `src-7f57859df60e6c62` — Marble Avenue Speed Study.
+- `src-8176ce3888683c9a` — Azuelo Avenue Speed Study.
+- `src-8193b1f94e117608` — Innovation Parkway Traffic and Safety Study.
+- `src-81e69d2414a01559` — Official City PDF.
+- `src-8222909270eddf7e` — Official City PDF.
+- `src-82348e1af6d22d94` — El Patron Road Speed Study.
+- `src-82ed5901df5a3610` — 7th Street Speed Study.
+- `src-83ea63e996d14a7a` — 8th Street Speed Study — Coal Avenue to Atlantic Avenue.
+- `src-83ec976c2c12c38c` — Conejo Road Speed Study.
+- `src-87b0d1133120f4e1` — Official City PDF.
+- `src-88c9676869c07b16` — Official City PDF.
+- `src-892e86b93ed5c826` — Dover Street Speed Study.
+- `src-8a332a0fdccf89bf` — Official City PDF.
+- `src-8ac47fa5da24fad9` — Official City PDF.
+- `src-8b0fbdf8b0e41ec5` — Official City PDF.
+- `src-8b1615990bac4953` — Program FAQ and evaluation criteria.
+- `src-8c58d5f587062d81` — Pending Traffic Requests.
+- `src-8d76bc3e666b3ea1` — Sicily Road Speed Study.
+- `src-8dcb29a979cb5bee` — Tony Sanchez Drive Speed Study.
+- `src-8f938afaa196864e` — San Rafael Avenue Speed Study.
+- `src-900d8e560afab44c` — Official City PDF.
+- `src-90ee10797ecae9b0` — Mary Ellen Street Speed Study.
+- `src-9183e9550f0c8280` — Official City PDF.
+- `src-936ffac8c8c90741` — neighborhood traffic management program.
+- `src-94350df088b55e5e` — Official City PDF.
+- `src-9608715e6616b5ca` — NTMP Adoption Resolution R-14-99 Floor Amendment 2.
+- `src-9a84f348e0b9a6d3` — Official City PDF.
+- `src-9b50c853b151ada2` — 17th Street Speed Study.
+- `src-9f3d4a5aba4ab98c` — Neighborhood Traffic Management Program Study Group Draft.
+- `src-a30f9dff9a55b65b` — Ventana West Parkway and Paseo del Norte Study.
+- `src-a373c766ee89a57b` — San Pablo Street Speed Study.
+- `src-a3f16af6f3ddc648` — Eastern Avenue Speed Study.
+- `src-a4f7d9e40afc92b1` — Official City PDF.
+- `src-a858ed6f98b007c7` — Quincy Street Speed Study.
+- `src-a8d38587a1d1bf7c` — Del Monte Trail Speed Study.
+- `src-a9c25db3eb18ad4a` — Los Tretos Street Speed Study.
+- `src-a9c8f8d60c79e6df` — Eastridge Drive Speed Study.
+- `src-ac5d57a7d09b4ac6` — Toolkit.
+- `src-ad34fdef8b9e50b6` — Bursera Drive Speed Study.
+- `src-ad45c8e945713880` — Neighborhood Traffic Management Program Policy Manual.
+- `src-afe60adb77bb29af` — Official City PDF.
+- `src-b24719a4bbe4350f` — Download the Final Plan..
+- `src-b413d9e47205ef64` — Lafayette Drive Speed Study.
+- `src-b466e5ffd66927da` — Official City PDF.
+- `src-b50653c762f6a2a0` — Official City PDF.
+- `src-b54695e2bf027a41` — Official City PDF.
+- `src-b57ce5c61876a255` — Official City PDF.
+- `src-b5873a97c0dd599c` — Official City PDF.
+- `src-b863acfbb1cdeac7` — Spanish Sun Avenue Speed Study.
+- `src-b896fc3390160269` — Official City PDF.
+- `src-b978a32849d783ce` — Sierra Grande Avenue Speed Study.
+- `src-bb4c7549e1fc74f6` — Baldwin Avenue East Speed Study.
+- `src-bd5db3f64d2912cd` — Official City PDF.
+- `src-c0c3788492fdd727` — Barnhart Street Speed Study.
+- `src-c11c3eb4314d4138` — Official City PDF.
+- `src-c2112472deff2555` — Baja Drive Speed Study.
+- `src-c40262510491c81d` — Official City PDF.
+- `src-c68882c45fa8d45c` — Storrie Place Speed Study.
+- `src-c784d8e6ac291b01` — Official City PDF.
+- `src-c9cc239ec8ae5fb2` — Landau Street Speed Study.
+- `src-ca1359ac633453a9` — Rancho Sereno/Las Terrezas Traffic-Calming Study Public Meeting 2.
+- `src-ca77f919684fff83` — Official City PDF.
+- `src-cc0cd09fe02ab65c` — Calle de Tierra and Della Longa Lane Speed Study.
+- `src-ce04fb6842a09dea` — Field Drive Speed Study.
+- `src-cef309f0fc19d674` — Ruidoso Road Speed Study.
+- `src-d08d3db0111ffdd0` — Existing Speed Hump and Radar Sign Study.
+- `src-d17338f308015c89` — Eastern Avenue and Cardenas Drive Traffic Study.
+- `src-d19827d1fca91d3f` — Milky Way Street Speed Study.
+- `src-d1e88b8307e6dcf1` — Neighborhood Traffic Management Program Traffic-Calming Toolkit.
+- `src-d2c2143636e12e52` — Streets and Traffic Enhancement Program Draft Policy Manual and Resolution.
+- `src-d4671b0db660def8` — Jane Street Speed Study.
+- `src-d5cf0b47387bea30` — Dolores Drive Speed Study.
+- `src-d9239a8ed7e51e52` — Vision Zero implementation work.
+- `src-d9602c44ffe4d7ab` — Official City PDF.
+- `src-da7a537cb1071c9c` — Conestoga Street Area Speed Study.
+- `src-dc1d994bc444a9d4` — Official City PDF.
+- `src-dda8bcb931f88367` — Official City PDF.
+- `src-df6c2c0c74519f2e` — Carolina Street Speed Study.
+- `src-df9108bc3d15b7fa` — Official City PDF.
+- `src-e28ba6e82d79c27b` — Official City PDF.
+- `src-e39307b93c5db8b6` — Alvarado Drive Speed Study.
+- `src-e724d365fa3c6251` — Paso Fino Place Speed Study.
+- `src-ea9e689316a9e3ee` — Sunridge Avenue Speed Study.
+- `src-eaa0507db69a01f2` — Trumbull Avenue Speed Study.
+- `src-eb7be53c3b654a27` — Official City PDF.
+- `src-ee76f0e1ad535572` — Official City PDF.
+- `src-eefaabfa61697495` — Woodland and Phoenix Avenues Speed Study.
+- `src-ef06d7358f6a8c4d` — Gallant Fox Road Speed Study.
+- `src-ef552ed5fa8021e6` — Albuquerque Automated Speed Enforcement Regulation.
+- `src-f01f6f758696cf79` — Yucca Drive Speed Study.
+- `src-f18cd98a58a4fef5` — Kimmick Drive Speed and Volume Study.
+- `src-f1ac2ea0572d9842` — Official City PDF.
+- `src-f29c688b2383b0c9` — Official City PDF.
+- `src-f42d3a89ef99b31e` — Arroyo de Vista Speed Study.
+- `src-f89c6222ec8cf941` — Avital Drive Speed Study.
+- `src-f89cd32a01517ca5` — Official source: Neighborhood Traffic Management Program Policy Manual.
+- `src-f9b94d7b29003282` — Official City PDF.
+- `src-fca2fee9ce97b641` — Lucretia Street Speed Study.
+- `src-fd0b7e26b82595c2` — automated photo speed enforcement.
+- `src-fd39663e88df4e39` — Studies.
+- `src-fe416bd8dfa0b1d3` — Trail Ridge Road Speed Study.
+- `src-ff3043a0240152b9` — Official City PDF.
+
+### content/transportation/roadway-projects/studies.md (105)
+
+- `src-077083ce2fb2fd6a` — Conduct Friction Testing Program, Data Analysis, and Effectiveness of Open Graded Friction Course.
+- `src-08fccf3238a33b27` — Official County PDF.
+- `src-097f7d99750de64c` — Girard Boulevard Existing Conditions Assessment.
+- `src-0a4be3ada7c1f837` — Official source: Zuni Road Study — Part I.
+- `src-1127a4fb834fe6f9` — Official source: Juan Tabo Hills Traffic Study.
+- `src-13275237185605e6` — Bridge Boulevard Village Center and Corridor Plan.
+- `src-14896b1831c45f3c` — Official City Record.
+- `src-16b14ec7c5b486aa` — Montaño Road Transportation Alternatives Analysis.
+- `src-175afc4f0e4b8e24` — Draft Girard Boulevard Complete Street Master Plan.
+- `src-17d49e3ef030ed1a` — Montaño and Fourth Street Study Authorization — Resolution R-05-216.
+- `src-18607fb52ce0c989` — Amole Mesa Ave. and Messina Dr. Traffic Calming Study.
+- `src-19f842bf2d87e421` — Official County PDF.
+- `src-1a2f6ca6cba245d2` — East Central Avenue Safety Study (2020).
+- `src-1a82c77452c85991` — Montaño Four General-Purpose Lanes Proposal — Resolution R-05-390.
+- `src-1bc9d1fd120307b7` — Official source: Montaño Road Transportation Alternatives Analysis.
+- `src-1da24ab39a92db2a` — Official source: Four Hills Traffic Calming Study.
+- `src-1fae6da0c4394a70` — FY 2025 Complete Streets Package 1 Updates.
+- `src-203fb37e4964e658` — Montaño Four-Lane Policy — Resolution R-04-204.
+- `src-212c8824e5871f94` — Girard Boulevard Phase II Construction Plans: Central to Lomas.
+- `src-24ecbc020b4a7d88` — Irving Boulevard Traffic Calming Study.
+- `src-257a9d7a9cd2784a` — Zuni Road Study — Part II: Collected Data.
+- `src-25da1aeef04264f6` — I-25 S-Curve Area Study.
+- `src-26532dcb33a27b7d` — Montaño Road Corridor Study — Wilson & Company.
+- `src-292206c9c3dce25a` — Big I Operations Study.
+- `src-2c31c1d23184af7e` — Official source: Juan Tabo Boulevard Connectivity Study.
+- `src-2d079663fad72b74` — Official City PDF.
+- `src-2ef65b8415918550` — Girard Boulevard Complete Streets Master Plan.
+- `src-2f8683a1ba3c7dc4` — South Yale Corridor Segments and Future Context.
+- `src-3226456d7e9bd345` — Rio Grande Boulevard Complete Street Concept Plan.
+- `src-33c9514ab8b560cb` — I-25 Gibson Interchange Reconstruction Project.
+- `src-347c0c7d93f35890` — Lead and Coal Studies Final Report.
+- `src-357f0a012444d081` — October 2013 Draft Central Avenue Complete Street Plan and Design Toolkit.
+- `src-39b5ebaf93c616fb` — I-25 Bobby Foster and Mesa del Sol Interchange Study.
+- `src-40b50e7c6063ba63` — South Yale Segment 2 Concept Plan: Kathryn to Ross.
+- `src-4393955674489891` — NMDOT NM 556/Tramway Boulevard Corridor Study.
+- `src-4d22afa226e99835` — Rio Grande Boulevard and Candelaria Road Severity Index Report.
+- `src-5407455e271a4dca` — Rio Grande Boulevard and Candelaria Road Crash Rate Report.
+- `src-5a3c0c601f75c4a9` — Official City PDF.
+- `src-5ac1ca833dad5d15` — Official City Record.
+- `src-61d3b9e91c3d476b` — Girard Boulevard Phase I Construction Plans: Thaxton to Central.
+- `src-61ffb5299052d2f6` — 98th Street and Benavides Road Intersection Assessment — Part 2: Appendices.
+- `src-63af4f443dc4a4b3` — South Yale Complete Street Master Plan.
+- `src-66553f9534aa579f` — Central Avenue and Zuni Road Cross-Section Modification Analysis.
+- `src-66d6dd3f2f7408bb` — DNA Traffic Report Appendix.
+- `src-6a4bffaeaafe587a` — Juan Tabo Boulevard Connectivity Study — Virtual Public Meeting 1.
+- `src-6ab062defb508468` — I-40 Conceptual Alternatives Plan Sheets.
+- `src-7207d3be0e5161cb` — Official County PDF.
+- `src-79de5bb4324d2dd4` — NM 556/Tramway Boulevard Public Engagement Summary.
+- `src-7bd4ffd09c8d274d` — Route 66 Action Plan.
+- `src-804c31a041e2eb1f` — McDuffie-Twin Parks Traffic Calming Study Public Meeting 2.
+- `src-826f7a381c11ba17` — Rainbow Boulevard Traffic Calming and Pedestrian Safety Recommendations.
+- `src-88febb22b86ec472` — Four Hills Traffic Calming Study.
+- `src-89f97c6a639700bb` — Official City Appendices.
+- `src-8a33ed9c2b493ba3` — 98th Street and Benavides Road Intersection Assessment — Part 1.
+- `src-8a6f5ff6578e960a` — Official City Record.
+- `src-90435f8f38ec3949` — 4th Street Complete Streets Review: Menaul Boulevard to Candelaria Road (August 2025).
+- `src-922fcd8ff3e7ab91` — Montaño HOV and River-Crossing Policy — Resolution R-05-382.
+- `src-932529cd9a5ef6c8` — Road Safety Audit of Lead and Coal Avenues.
+- `src-93e8d3f4cf0238e6` — 2004 Priority General Obligation Bond Street Projects.
+- `src-945c2a98506dc18c` — Official source: Golf Course Road Complete Streets Study.
+- `src-95e2d3e4b039fac1` — Amole Mesa Avenue and Messina Drive Traffic Calming Study Public Meeting Presentation.
+- `src-965f3834649310d3` — Central Avenue Complete Street Plan: 1st Street to Girard.
+- `src-967112fbf63ba98f` — Uptown Pedestrian Study.
+- `src-97381237296e36bf` — Official County PDF.
+- `src-98f3257d51aa8ae1` — Official City Record.
+- `src-9972f51deabe0436` — rio grande corridor documents.
+- `src-997b4346f988d062` — FY 2026–2027 City of Albuquerque Complete Streets Package (Final Signed, May 29, 2026).
+- `src-a2f388bda144848c` — Juan Tabo Hills Traffic Study.
+- `src-a392767a77f1d229` — Juan Tabo Boulevard Connectivity Study — Virtual Public Meeting 2.
+- `src-a89c0c7e764e720f` — I-40 Highway Operations Improvement Plan, Milepost 0 to 150.
+- `src-a9985ac057422e64` — Official City Record.
+- `src-a9c2168cb80890c2` — Official County PDF.
+- `src-aa9dcbee6ed39ff3` — Official source: Lomas Boulevard Safety Study.
+- `src-abbf384c27c405c8` — Juan Tabo Hills Traffic Study — Public Meeting Presentation.
+- `src-b196c741237acbf2` — 2003-2004 Street Bond Projects.
+- `src-b8908ddbf65f257e` — October 2013 Draft Plan Presentation.
+- `src-ba1ff357823017a2` — Repaving Expenditures by Council District, 1999-2003.
+- `src-baff718ee06b25a3` — South Yale Study Area and Context Zones.
+- `src-be5649b2f37e6f6c` — Rainbow Blvd Traffic Calming and Pedestrian Safety Study.
+- `src-c10e75d5af00809d` — Juan Tabo Boulevard Connectivity Study.
+- `src-c5569fc34458c4d2` — 2004 Planned Quarter-Cent Street Projects.
+- `src-c991a0238465f1ca` — Official City Record.
+- `src-cd134d512caa5833` — Official County PDF.
+- `src-ce3c9f54fa83aba9` — DNA Traffic Report Final August 2014.
+- `src-d19e8aed3e338083` — Central Avenue Existing Conditions Presentation.
+- `src-d25ae9b6c27b4b2c` — Rio Grande Boulevard Corridor Plan.
+- `src-d4957d9c6500b754` — I-40 Phase I-A/B Corridor Study, Milepost 0 to 150.
+- `src-da1bcd4a91ed7921` — Irving Boulevard Traffic Calming & Pedestrian Safety Study.
+- `src-dc5a3e9da1aaa41d` — Golf Course Road Complete Streets Study.
+- `src-df8844768db111e4` — Official City Report.
+- `src-dfe25eaf61396fc7` — Girard Boulevard Phase III Construction Plans: Lomas to Indian School.
+- `src-e60615e24211cb36` — I-40 West Corridor Study Executive Summary (2024).
+- `src-e684be015735bf1f` — South Yale Segment 3 Concept Plan: Ross to Gibson.
+- `src-e7442b03ed708de4` — Zuni Road Study — Part I.
+- `src-e85b2f4c2716a83d` — City transportation plans and studies.
+- `src-ea7194fd124da55c` — Official County PDF.
+- `src-eab3c8be5578f1d5` — Lomas Boulevard Safety Study.
+- `src-ef594ed2984d3100` — Rio Grande Boulevard Complete Street Concept Plan — Adopted Edition.
+- `src-f063fb4bd173f5f3` — Official City PDF.
+- `src-f2732f30e89dc3ba` — Official City Record.
+- `src-f93f8f11481c3c74` — Montaño Citizens Advisory Committee Recommendations.
+- `src-fa4a64d343feb303` — South Yale Segment 1 Concept Plan: Avenida Cesar Chavez to Kathryn.
+- `src-fd3b9788c5d2f256` — Official County PDF.
+- `src-fecd59ba99e137d1` — Roadway Component Capital Implementation Plan, 2005-2013.
+- `src-ffa72f2b8869a660` — March 2014 Draft Central Avenue Complete Street Plan and Design Toolkit.
+
+### content/transportation/safety-crash-data.md (44)
+
+- `src-0fc0e6c184ce2b77` — NMDOT Traffic Safety Division Annual Report.
+- `src-160f7cb3fdce384c` — Current NMDOT Traffic Records Bureau.
+- `src-1ab4b8188d3eeda8` — Albuquerque Vision Zero Action Plan (2021).
+- `src-1c71a4326a470435` — Albuquerque Metropolitan Crash and Safety Report, 2002–2011.
+- `src-1ef9b5996dd6c8ad` — APS Vision Zero for Youth Initiative.
+- `src-282e583e7246853d` — 2019 Bike to Work Day Survey Report.
+- `src-29f5622a2a55a74f` — 2020 Bike to Work Day Survey Report.
+- `src-2cd0e5cfed7354f9` — Bicycle and Pedestrian Counts Program.
+- `src-3b2b9707e1ba4f66` — New Mexico Uniform Crash Report Instruction Manual.
+- `src-3b45c3557a8dfd40` — Bernalillo County Pedestrian and Bicycle Crash Data Analysis, 2010–2014.
+- `src-3cc1f3b18d5bf054` — Bicycle and Pedestrian Analysis and Reports.
+- `src-43032d2e0a697cb4` — New Mexico Strategic Highway Safety Plan.
+- `src-4347bb9af15c89ba` — Councilor Dan Lewis Request for Investigation into the Redflex Traffic Systems Contract With the City of Albuquerque, January 24, 2014.
+- `src-470289bc6b339acd` — Pedestrian and Bicycle Travel Monitoring Report.
+- `src-5ba4ee83a4510f85` — APS Vision Zero Task Force Meeting 4 Notes.
+- `src-6514a288a010bb56` — Official City 2021 release.
+- `src-6b8e63d6c94e036a` — APS Vision Zero Task Force Meeting 5 Notes.
+- `src-6c0a311dd3a08a51` — Albuquerque Metropolitan Crash and Safety Report, 2001–2010.
+- `src-6f3d9f6c260012dd` — Official source: Albuquerque Vision Zero Year-in-Review.
+- `src-6f4c48237d29ddc0` — APS Links and Resources.
+- `src-72d91318a9fc0168` — APS Vision Zero for Youth Action Plan.
+- `src-75bf5eb398612f90` — APS Vision Zero Task Force Meeting 1 Notes.
+- `src-8308fe8a36ba911a` — Bernalillo County Pedestrian–Bicyclist Safety Action Plan.
+- `src-85146ea71ceee429` — Archived Crash Reports.
+- `src-85b380f017be32be` — New Mexico Occupant Seat Belt Observation Study.
+- `src-87ba808103fb4732` — NMDOT Vulnerable Road User Safety Assessment.
+- `src-87f7f1efed09f4a2` — APS Vision Zero Board Policy Discussion Brief.
+- `src-97af7de773e5eba4` — Albuquerque Vision Zero.
+- `src-9b3a3aad50ad0c65` — MRCOG Regional Transportation Safety Action Plan (2024).
+- `src-a81d8f2eb8de8c03` — Albuquerque Vision Zero Year-in-Review.
+- `src-adce5c402971b082` — Official MRCOG PDF.
+- `src-b2c0ad0c4336e968` — NMDOT Highway Safety Improvement Program.
+- `src-b5ca82f0a87d9451` — Paseo del Bosque and North Diversion Channel Bicycle Trends.
+- `src-bdf172ce679fc7ad` — APS Vision Zero Task Force Meeting 3 Notes.
+- `src-be0aad8c7d71a541` — MRCOG safety hub.
+- `src-c06421fb0912856c` — Bernalillo County Pedestrian–Bicyclist Safety Action Plan Appendix.
+- `src-c4bc0920de6e9e4b` — 2022 Bike to Wherever Day Survey Report.
+- `src-c7c7831654b1b75a` — Official MRCOG PDF.
+- `src-d09d62361e0831a2` — Current NMDOT Traffic Safety Division.
+- `src-d47ebc84d3471e5b` — 2025 Bike to Work Day Survey Results.
+- `src-db5a082a44bc115e` — Walk Safe New Mexico: Pedestrian Safety Action Plan.
+- `src-eb4b8c09b824edc9` — APS Vision Zero Superintendent Letter of Support.
+- `src-fda23e3b8e702b91` — Statewide Traffic Records System.
+- `src-fda465463c32bcee` — APS Vision Zero Task Force Meeting 2 Notes.
+
+### content/transportation/transit/_index.md (31)
+
+- `src-0114a0bd71baeb97` — CNM Parking and Fleet Services.
+- `src-1026d674bbbf2619` — NMDOT FY 2026 Section 5310, 5311, and 5339 Transit Budget Awards.
+- `src-10285a23d1622d9c` — Paseo del Norte High-Capacity Transit Study: Alternatives Analysis Report.
+- `src-10f34252a9036d7e` — UNM Electric Vehicle Charging.
+- `src-154dddf5a53708aa` — NMDOT FY 2025 Section 5310, 5311, and 5339 Transit Budget Awards.
+- `src-2102f32c414369f0` — NMDOT FY 2027 Section 5310, 5311, and 5339 Transit Budget Awards.
+- `src-30893aa844583ca1` — MRMPO performance-based planning and programming.
+- `src-3fb85f9bf9c30a51` — Rio Metro Zero Emission Feasibility Study.
+- `src-405a9389e84cc5a2` — Rio Metro Public Transportation Agency Safety Plan (PDF).
+- `src-6825d0105cc90290` — Connect New Mexico: Statewide Public Transportation Plan (May 2025).
+- `src-68be032e2a1c3cd6` — Rio Metro Zero Emission Transition Plan.
+- `src-713c2eb7e427e6a3` — Rio Metro Publications.
+- `src-72ae694d5fbe4800` — FY 2022 FTA Section 5310 5311 5339 CARES Act and ARP Act Budget Awards.
+- `src-735a0a8b019c14db` — Official MRCOG PDF.
+- `src-787e833d60d98ea5` — NMDOT Transit and Rail Division Fact Sheet.
+- `src-85e073f50952c5d2` — FY 2023 Section 5310, 5311, and 5339 Transit Budget Awards.
+- `src-891b8b5116766d94` — Current Transit Bureau Page.
+- `src-91864ee97e4cd4a3` — Transit & Rail.
+- `src-93a3a19a94426b04` — Rio Metro Transit Asset Management Plan (PDF).
+- `src-97a023a2057ef115` — Official MRCOG PDF.
+- `src-a814beef74b73265` — New Mexico Transit Guide.
+- `src-b1a9fa0d47f90574` — UNM/CNM/Sunport Transit Study: Alternative Alignments Identification and Assessment.
+- `src-bbce3877050f2793` — Official MRCOG PDF.
+- `src-c0f50c34651627f9` — FY 2024 Section 5310, 5311, and 5339 Transit Budget Awards.
+- `src-c3f76d888e9f0420` — City of Albuquerque Public Transportation Agency Safety Plan (PDF).
+- `src-d242fbc1afcfb57d` — Official MRCOG PDF.
+- `src-d614a4c972986da5` — NMDOT Park & Ride.
+- `src-d662cfa92401be3b` — City of Albuquerque Transit Asset Management Plan (PDF).
+- `src-efa7bc1d553b325d` — Rio Metro / ABQ RIDE Consolidation Study Final Report.
+- `src-f65b90995cb80ae0` — NMDOT State Management Plan for Federal Transit Grants.
+- `src-fdb6dadc5a9915a1` — Current NMDOT Transit and Rail Division.
+
+### content/transportation/transit/abq-ride.md (43)
+
+- `src-0056485f3f753936` — Official City Record.
+- `src-00c01eedba3cb6cd` — 2009 go bond documents.
+- `src-01a8eebf280d76a6` — ABQ RIDE 2009 General Obligation Bond Capital Scope.
+- `src-11cc7b7d64070a33` — ABQ RIDE Forward Phase I Engagement Summary.
+- `src-12207bd87008378c` — Montano Rail Runner Station plans for construction — Part II.
+- `src-1ec6e26a1059cc8c` — Yale Maintenance Facility Assessment — Volume 2: Appendices.
+- `src-25ddb6889b7ba3cb` — Zero Fares Resolution.
+- `src-2dbbf587fead4146` — Montano Rail Runner Station plans for construction — 65% SUBMITTAL.
+- `src-2fe355df9c91c053` — Official ABQ RIDE Forward Project Page.
+- `src-31b1f5469a32b3a3` — Transit to the Future: Short Range Transit Plan for 2006–2011.
+- `src-3ecaa7b70d612f16` — ABQ RIDE: routes and schedules.
+- `src-4064681b7affed0c` — ABQ RIDE open data.
+- `src-4092005fa5d61b38` — NMDOT certification: Montano Rail Runner Station (11 August 2010).
+- `src-457a45c7d198ddc0` — Albuquerque Rapid Transit Amended Design and Finance Plan — Maps and Figures.
+- `src-4946e3c5af08a1f1` — Coors and Montaño Park-and-Ride Progress Report.
+- `src-4e723435faf9f7a3` — Official source: Replanning the Modern City for Transit.
+- `src-54391dbd27e5d212` — Draft Environmental Assessment: Montano Rail Runner Station (2010).
+- `src-56fef63212b7c5c8` — Albuquerque Streetcar Evaluation Appendices.
+- `src-5dd938f55d949f8e` — Park-and-Ride Transit Center Strategic Planning Status.
+- `src-6220c942e21cbc67` — Para-Transit Advisory Board minutes, 6 May 2009.
+- `src-6ba7c575abb1ac19` — ABQ RIDE Forward Phase II Concepts Report.
+- `src-7b3147e8e7b5baff` — Albuquerque Rapid Transit Amended Design and Finance Plan Response.
+- `src-7db056cdbc0cbb43` — Albuquerque Streetcar Evaluation Summary Report.
+- `src-7e3ac56766921ae2` — ABQ RIDE Forward Phase I Existing Conditions Report.
+- `src-8578ac9aeef57f31` — Montaño Intermodal Center Project Application.
+- `src-a693edbb88d8436a` — Albuquerque Rapid Transit Design Reconfiguration Conditions.
+- `src-aa5b24a4e9116d98` — Yale Maintenance Facility Assessment — Volume 1.
+- `src-aec47259ed0c7711` — NMDOT Transit Compensation Study.
+- `src-b22d3474ffadb293` — Final ABQ RIDE Forward Recovery Network Plan.
+- `src-b26e385e6a10d44e` — 2022 ABQ RIDE On-Board Rider Survey.
+- `src-b369bd65c787365b` — Official City project page and marked draft.
+- `src-be7a3aa7f00c2f76` — Albuquerque Streetcar Cost and Ridership Analysis.
+- `src-bf38ed4520fe9dba` — Short Range Transit Planning Status and WebHoshin Transition.
+- `src-cd76ed2642c5bc5b` — Para-Transit Advisory Board minutes, 9 September 2009.
+- `src-ce39869b0db742a6` — Official City Record.
+- `src-e28e38dabfbdb2e2` — Montano Rail Runner Station Framework Plan (June 2010).
+- `src-e3a463e26d43ed61` — ABQ RIDE Forward Phase III Recovery Network Report.
+- `src-e42bbc888a2b6931` — Para-Transit Advisory Board minutes, 9 February 2010.
+- `src-e579f837294379a3` — ABQ RIDE Forward Phase II Engagement Summary.
+- `src-ee0aec5b78f6ec86` — Traffic Assessment: Montano Rail Runner Station (2010).
+- `src-f2e651c62ba4dbd6` — ABQ RIDE Forward Phase III Engagement Summary.
+- `src-fc716c440ae9896a` — Transit 10-Year Capital Needs Assessment Status.
+- `src-fce9a176fba5c609` — Final ABQ RIDE Forward Recovery Network Map.
+
+### content/transportation/transit/rail-runner.md (23)
+
+- `src-0316305a0a6ea7e0` — Rio Metro Performance Targets (PDF).
+- `src-081f583fd9c2c86a` — Rail Runner Operations and Maintenance Facility Assessment.
+- `src-0b6bde8211ca34fe` — Official MRCOG PDF.
+- `src-132a8105973da62a` — Belen Rail Runner Station Infrastructure and Development Workshop.
+- `src-1c959dc78edf70fa` — Stations & Connections.
+- `src-21ebbb39ef75ee4f` — New Mexico State Rail Plan.
+- `src-2676e158bc53541e` — Bernalillo County Sunport Plan.
+- `src-2ce711ded9d1ca82` — Belen Station Area Planning Study.
+- `src-41dc6c7ca84c9bfe` — Official NMDOT Rail Bureau.
+- `src-448f241082060f7a` — Rail Runner Rail and Bus Connections Guide.
+- `src-4985178a468a3575` — NMDOT Section 130 Highway-Rail Grade Crossing Safety Manual.
+- `src-56ebc3082bb90475` — Rail Runner Operation & Maintenance Facility.
+- `src-770824652557bf7b` — Belen Plan.
+- `src-81cd99e1578af090` — Rio Metro Regional Transit District Short Range Plan, FY2012-FY2017.
+- `src-9023326de3446f0b` — Rio Metro Double Track Study.
+- `src-cb3254288f19ff4a` — Rio Metro Budget and Capital Plan, FY2027-FY2031.
+- `src-d2fbb686e1f200b2` — Official MRCOG PDF.
+- `src-d4cb8f9b3e15bbab` — Rail Runner schedules.
+- `src-e342833d5b161931` — NMRX Grade Crossing Pedestrian and Bicyclist Safety Study.
+- `src-e7c9cdabe1d4149f` — Rail Runner Operations and Maintenance Facility Conceptual Design Report.
+- `src-eb037a66025fcea5` — New Mexico Rail Runner Express Project Development History.
+- `src-f1b5d131fcf34c1d` — Bernalillo County / International Sunport Station Area Sector Development Plan.
+- `src-faed9c62872a8ef2` — Rail Runner Operations and Maintenance Facility Fact Sheet.
+
+### content/transportation/transit/sun-van.md (8)
+
+- `src-0ab89b3f6a6914ec` — Official City PowerPoint.
+- `src-11079b878f62f804` — Official City PDF.
+- `src-1bad32082e26fb6a` — ABQ RIDE GO!.
+- `src-2ddfe4b7c2a75264` — Sun Van and You Passenger Guide.
+- `src-5fd74920802643e4` — Sun Van Eligibility Process.
+- `src-7ceade7af32fa28b` — Official City PDF.
+- `src-d3121fe1438282dc` — Draft Sun Van Performance Metrics.
+- `src-fbef44f233c29736` — ABQ RIDE Sun Van Compliance Review Briefing.
+
+### content/transportation/transportation-plans.md (128)
+
+- `src-00c90f086ec8c5a2` — Connections 2040 Appendix A: Metropolitan Transportation Plan Project List.
+- `src-00edbf1ee3434578` — MRCOG 2030 Metropolitan Transportation Plan: Pedestrian Element.
+- `src-04c1343bcd698b63` — Planned Growth Strategy Transportation-System Cost Findings.
+- `src-05705d25113d3f2e` — Paseo del Volcan Steering Committee Agenda, First Meeting, November 20, 2013 (approved minutes not located).
+- `src-05ee0c53f77c67fd` — Complete Streets Planning.
+- `src-0a39e768262a9380` — Sunport Commerce Center Transportation Plan.
+- `src-0b0fce00fb5f421e` — New Mexico 2045 Freight Plan Update with Freight Investment Plan Amendment 3.
+- `src-0b89c7adb106d638` — Resumen ejecutivo de Transiciones 2045 en español (PDF archivado).
+- `src-0c2d8157b7ae743b` — MRMPO Annual Performance and Expenditure Report, FFY 2024.
+- `src-0c7b921697a65f23` — Near South Valley Multimodal Study.
+- `src-0cb900601ce2b2c5` — New Mexico 2040 Plan — Appendix D: Stakeholder and Public Involvement.
+- `src-0f88a7f2855dc68a` — Connections 2040 Appendix G: Recommended Pathways.
+- `src-12c9b75ddf4c5756` — Connections 2040 Appendix C: Projects of Regional Interest.
+- `src-138227e776c65c2d` — 118th Street Alignment Study.
+- `src-160d637127796eed` — New Mexico Statewide Transportation Improvement Program, FFY 2024-2029 - Approved Snapshot (August 2026).
+- `src-163ee00f6135153c` — Albuquerque International Sunport Sustainable Airport Master Plan.
+- `src-189c0a45bb72113c` — Paseo del Volcan Steering Committee Minutes, Second Meeting, January 15, 2014.
+- `src-1f36eb20d7e06e47` — Official City Record.
+- `src-21c8a228327cb220` — NMDOT FFY 2023-2024 Planning Work Program Amendment 1.
+- `src-2703735321fae696` — MRMPO FFY 2025 Annual Listing of Obligations.
+- `src-278552b95a4c8916` — Los Duranes Sector Development Plan — Transportation Section.
+- `src-29d16770aaba0939` — NMDOT FFY 2023-2024 Planning Work Program Amendment 6.
+- `src-2e670a3b5593ee35` — MRCOG Regional Transportation Planning Briefing.
+- `src-2f979014a85e2eff` — Official County PDF.
+- `src-301604ce13d0f06e` — Complete Streets.
+- `src-30975754bfb3814b` — NMDOT CMAQ and Carbon Reduction Program Guide, FFY 2026-2028.
+- `src-31c4d4eff2bc1b5a` — Long-Range Transportation System Guide.
+- `src-337e5f8c784df952` — NMDOT FFY 2023-2024 Planning Work Program.
+- `src-3652a5509e9b0c50` — Official County PDF.
+- `src-3924fb39a476b0a7` — Paseo del Volcan Steering Committee Minutes, April 4, 2014.
+- `src-3acbfa59246593bf` — North Fourth Street Corridor Plan — Transportation and Street Design.
+- `src-3b004c7f3ad79a11` — MRMPO FFY 2012 Annual Listing of Obligations.
+- `src-3b9f0fe8d0093769` — Albuquerque Complete Streets Ordinance Update.
+- `src-3eb06ca9bbe46bfd` — MTP Archive.
+- `src-40aef00206b76ce0` — NMDOT FFY 2023-2024 Planning Work Program Amendment 4.
+- `src-439525683f2a5e58` — Informational Packet.
+- `src-4472af8b6581c0e1` — MRMPO FFY 2015 Annual Listing of Obligations.
+- `src-44e2abd1db14165c` — Planned Growth Strategy Briefing.
+- `src-4586b960617d9440` — MRMPO FFY 2018 Annual Listing of Obligations.
+- `src-473a0cb1cefea8f9` — NMDOT FFY 2023-2024 Planning Work Program Amendment 2.
+- `src-485896ebebca55b3` — Connections 2040 Appendix I: Federal Performance Measures and FAST Act Report.
+- `src-487b2b28b540a130` — Long Range Transportation System Guide.
+- `src-4b22c8888d5276e7` — ABQ RIDE Planning Briefing.
+- `src-4ccef0c6ec25aac8` — Uptown Sector Development Plan — Transportation and Connectivity.
+- `src-50dbc9e020356e05` — Adopted Legislation.
+- `src-56302a72a506fb36` — MRMPO Performance Measures Target Assessment (2026).
+- `src-576f2f99563440b5` — MRMPO Unified Planning Work Program, FFY 2025-2026.
+- `src-57ed0875d4d61c7e` — MRMPO FFY 2014 Annual Listing of Obligations.
+- `src-5bd547500153d376` — MRMPO FFY 2013 Annual Listing of Obligations.
+- `src-5c59cfb9745f1508` — Planned Growth Strategy Policy, Regulatory, and Plan Review.
+- `src-5c9ad39184c0e9c3` — 21st Century Transportation Task Force Enabling Ordinance O-07-71.
+- `src-5d29a972bd5550ba` — South Yale Sector Development Plan — Transportation Section.
+- `src-5e276bb1e5161144` — Unified Planning Work Program.
+- `src-5f411bb13f1bce72` — Official County Project Page.
+- `src-5f6978129d29e9c7` — MRMPO FFY 2019 Annual Listing of Obligations.
+- `src-61d85ca57d63e6f3` — Official NMDOT PDF.
+- `src-625f2a5f3f04d910` — Paseo del Volcan: Long Term Perspective (project brochure).
+- `src-634418eda297c1c0` — MRMPO FFY 2011 Annual Listing of Obligations.
+- `src-65b867a46ee549e4` — MRMPO Futures 2040 Metropolitan Transportation Plan.
+- `src-6744f130b941ddc2` — New Mexico 2040 Plan — Appendix C: Scenario Analysis Report.
+- `src-6916bbd03258654b` — Nob Hill Highland Sector Development Plan — Transportation Section.
+- `src-6fdca53f0eace08c` — Bernalillo County Transportation Project Planning Process.
+- `src-74c6250763ee3c21` — City Capital Improvements Ordinance — 2008 Task Force Reference.
+- `src-7825ff6ffdb62504` — NMDOT Transportation Alternatives and Recreational Trails Program Guide, FFY 2026+.
+- `src-798daf62d62bac9c` — Transportation Project Planning.
+- `src-7d34e458a74a5a8e` — MRMPO FFY 2022 Annual Listing of Obligations.
+- `src-7df12a95d5f9eee0` — Connections 2040 Appendix D: Financial Plan Detail.
+- `src-7e1a8bec260f1b77` — MRMPO 2045 Metropolitan Transportation Plan.
+- `src-81f15323d0f0275a` — Congestion Management Process.
+- `src-82e0a739034eef0e` — MRMPO FFY 2010 Annual Listing of Obligations.
+- `src-83279794dcb22b7a` — PowerPoint Presentation.
+- `src-8398194accd6f866` — Official MRCOG PDF.
+- `src-84fadba4aeacc8ab` — Annual Project Listing & Obligation Reports.
+- `src-8832a87573fd5ed6` — ABC Comprehensive Plan, Chapter 6: Transportation (2025 Update).
+- `src-896bf973f9715d81` — MRMPO FFY 2017 Annual Listing of Obligations.
+- `src-8b18827057480dac` — Albuquerque Complete Streets Legislation Packet.
+- `src-8b49885f46b0b748` — NMDOT FFY 2025-2026 Planning Work Program, as Amended.
+- `src-8ba9141e19a5a9ac` — 21st Century Transportation Task Force Final Report.
+- `src-8bf2a4ba9f3e40df` — NMDOT FFY 2023-2024 Planning Work Program Amendment 3.
+- `src-8d1025bbf81e5719` — Connections 2040 Appendix B: Illustrative Project List.
+- `src-8fc53a9eb94fae1c` — New Mexico 2040 Plan — Appendix B: Technical Analysis Report.
+- `src-912bc14c869a79b0` — Original Albuquerque Complete Streets Ordinance.
+- `src-93826b70c1c0e594` — Transitions 2045 MTP Public Outreach.
+- `src-9a20086460b5de27` — NMDOT Public Involvement Plan Appendix: Stakeholder and Public Outreach.
+- `src-9d0be5eb4f050430` — Project Development.
+- `src-9f98b2dbdfc9d974` — MRMPO 2045 Metropolitan Transportation Plan - Full Appendix.
+- `src-a61754e9e493cd3c` — Downtown Walkability Analysis (2014 archived PDF).
+- `src-a6773cf4ea024587` — NMDOT Statewide Transportation Improvement Program.
+- `src-ab74a46266ac1cff` — Paseo del Norte and Unser Boulevard Access-Modification Resolution.
+- `src-ae8c5ea12d77ae54` — Library of Congress catalog record.
+- `src-af925f159e470295` — MRMPO Transportation Improvement Program, FFY 2024-2029 - Approved Snapshot (August 2026).
+- `src-b1816c40babc0546` — Paseo del Volcan Funding and Financing Workshop Presentation (April 4, 2014).
+- `src-b1eb612220474d61` — MRMPO Current TIP and Revisions.
+- `src-b5c323782239e519` — Transitions 2045 Executive Summary (archived PDF).
+- `src-b98248cdd9f46e86` — Replanning the Modern City for Transit.
+- `src-bb71d6cf149abbde` — Atrisco Vista Boulevard Phase A/B Study.
+- `src-bdce230a1af9a137` — MRMPO FFY 2021 Annual Listing of Obligations.
+- `src-be94b37839f82e41` — NMDOT FFY 2023-2024 Planning Work Program Out-of-Cycle Amendment 1.
+- `src-c27184cdd954e89e` — New Mexico 2040 Plan — Appendix E: Action Tracking.
+- `src-c383ec4084ccaabe` — NMDOT Carbon Reduction Strategy.
+- `src-c521717f4e9314bc` — Official NMDOT Planning Division.
+- `src-c56b47befa3978df` — MRMPO FFY 2020 Annual Listing of Obligations.
+- `src-c7b23be6a9c2dae9` — MRCOG 2025 Annual Report.
+- `src-c8aa80b0c57a5f22` — New Mexico 2040 Plan — Appendix A: Existing Conditions and Trends.
+- `src-c8d7be8df90dce69` — NMDOT Public Involvement Plan.
+- `src-c9a788fdd19a3223` — New Mexico 2040 Statewide Long-Range Multimodal Transportation Plan Briefing.
+- `src-ca3eb3cd65860dce` — Metropolitan Transportation Plan.
+- `src-cebfacb620f0cb7e` — 118th Street Amole Mesa to Eucariz Alignment Study.
+- `src-cf6671124fb75641` — Atrisco Vista Boulevard Alignment Study.
+- `src-d039a67a62889b20` — New Mexico 2045 Plan.
+- `src-d32431822c71b142` — The New Mexico 2040 Plan.
+- `src-d45aecabefa6c217` — 2009 Capital Improvements Plan Priorities and Scoring Resolution.
+- `src-d4cc8f7b8355a863` — MRMPO FFY 2023 Annual Listing of Obligations.
+- `src-d651356cdad0e349` — MRMPO Connections 2040 Metropolitan Transportation Plan.
+- `src-dbc00b0a27b822d2` — NMDOT FFY 2023-2024 Planning Work Program Amendment 5.
+- `src-dd0447c7c88addd3` — Albuquerque Modern Streetcar Technical Presentation.
+- `src-e04cf778f5a04ae9` — Paseo del Volcan Economic Opportunity Analyses and Implementation Strategy, Steering Committee Summary Presentation (November 7, 2014).
+- `src-e1cde64af2f4a573` — Volcano Cliffs Sector Development Plan — Transportation Standards.
+- `src-e440d0fcb2763709` — MRMPO FFY 2024 Annual Listing of Obligations.
+- `src-e80a85b1879eaae3` — MRMPO FFY 2016 Annual Listing of Obligations.
+- `src-e83d30ce68171820` — Volcano Heights Sector Development Plan — Transportation Standards.
+- `src-f0ffd5eedda98a81` — MRMPO Futures 2040 Metropolitan Transportation Plan - Appendices.
+- `src-f4de3930a6e04830` — Albuquerque Complete Streets Ordinance Presentation.
+- `src-f913be8e40092d8a` — Official County page.
+- `src-fa2a5f605557f258` — MRMPO 2035 Metropolitan Transportation Plan - Complete Plan and Appendices.
+- `src-fafc18484f76379b` — MRMPO Unified Planning Work Program Progress Report, FFY 2026 Quarter 1.
+- `src-fd2c4ff2f2681189` — Paseo del Volcan Steering Committee Meeting Notes, Fourth Meeting, June 27, 2014.
+- `src-ffe2da6f8a6daa6c` — NMDOT Resilience Improvement Plan.
+
+
+First remediation batch resolves 25 September 13 component findings and the quality assessments of their five existing annual DPM masters. Original findings and the 1,638-row baseline are preserved under `quality-remediation-first-2026-09-27/`. No unrelated debt row changed.

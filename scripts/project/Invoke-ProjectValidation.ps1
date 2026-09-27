@@ -6,6 +6,8 @@ param(
 )
 
 Set-StrictMode -Version Latest
+& python "$PSScriptRoot/Test-GoCapitalQualityRemediation.py"
+if ($LASTEXITCODE) { throw 'GO capital quality remediation validation failed.' }
 & python "$PSScriptRoot/Test-Pr196Closeout.py"
 if ($LASTEXITCODE) { throw 'PR #196 background closeout validation failed.' }
 & python "$PSScriptRoot/Test-FirstQualityRemediation.py"

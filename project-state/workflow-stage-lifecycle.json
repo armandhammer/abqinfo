@@ -128,6 +128,18 @@
       "exact_delta_guard": {
         "module": "Pr196CloseoutLifecycle",
         "function": "guard_current_delta"
+      },
+      "end_commit": "940e3032d96f868eed8cff7c3deeaf1c556f50a2"
+    },
+    {
+      "id": "go-capital-quality-remediation",
+      "baseline_commit": "940e3032d96f868eed8cff7c3deeaf1c556f50a2",
+      "regression_scripts": [
+        "scripts/project/Test-GoCapitalQualityRemediation.py"
+      ],
+      "exact_delta_guard": {
+        "module": "GoCapitalQualityRemediationLifecycle",
+        "function": "guard_current_delta"
       }
     }
   ],
