@@ -1,6 +1,6 @@
 {
   "recorded_at": "2026-09-27T04:22:57.024760+00:00",
-  "completed_item_range": "Implemented the three authorized publication-quality consolidation families; all originals and historical findings preserved; debt 1638 -> 1608 and unresolved September 13 findings 67 -> 42. Full validation and PR preview in progress.",
+  "completed_item_range": "Remediated exactly three publication-quality families; full suite and three-page nonproduction preview passed; PR #196 open for manual owner review. Debt 1608; unresolved September 13 findings 42; no R2 or production mutation.",
   "total_candidates": 7137,
   "counts_by_status": {
     "pending review": 372,
@@ -24,7 +24,7 @@
     "1608 unrelated publication-quality debt records remain, including 42 unresolved September 13 findings.",
     "Owner manual content PR review required before merge or production deployment."
   ],
-  "resume_command": "Use quality-remediation-first-2026-09-27 durable artifacts; do not repeat source review or consolidation. Complete validation, preview and content PR owner review; no merge authorized.",
+  "resume_command": "PR #196 awaits owner manual review. Preserve original bytes and September 13 findings; do not merge or deploy without subsequent explicit approval.",
   "verification_campaign_totals": {
     "verified": 2194,
     "passed": 2070,
@@ -30968,12 +30968,15 @@
     }
   ],
   "quality_remediation_first": {
-    "state": "implemented_validation_in_progress",
+    "state": "pr_ready_for_owner_review",
     "artifact": "project-state/discovery/quality-remediation-first-2026-09-27/implementation.json",
     "target_count": 25,
     "annual_master_count": 5,
     "debt_remaining": 1608,
     "september_13_unresolved": 42,
-    "r2_mutation": false
+    "r2_mutation": false,
+    "pr_number": 196,
+    "preview": "https://32d81a1d.abqinfo.pages.dev",
+    "normal_suite": "passed"
   }
 }

@@ -2,7 +2,7 @@
 
 First visible publication-quality remediation batch is implemented on `codex/quality-remediation-first-2026-09-27`: exactly 18 DPM standalone minutes retired in favor of the five existing annual masters, four MRMPO FFY 2006-2009 originals presented as one qualified historical series, and three UETF 2010-2011 components presented as one substantive program record. Original R2 objects, provenance and September 13 negative findings are preserved. Thirty actual inventory records and seven resulting family/master presentations pass the publication-quality gate. Remediation debt is 1608 unchanged unrelated rows; 42 September 13 findings remain unresolved. No R2 upload, added storage, merge or production deployment.
 
-Evidence, immutable population, exact-delta guard and validation: `project-state/discovery/quality-remediation-first-2026-09-27/`. Complete normal validation, nonproduction preview and focused content PR are in progress. Owner review is required before merge.
+Evidence, immutable population, exact-delta guard and validation: `project-state/discovery/quality-remediation-first-2026-09-27/`. The complete normal validation suite passed. All three changed pages on `https://32d81a1d.abqinfo.pages.dev` passed preview verification. PR #196 is open at https://github.com/armandhammer/abqinfo/pull/196 for owner review; do not merge or deploy without subsequent approval. Implementation commit: b732a76; final receipt: `quality-remediation-first-2026-09-27/review-ready.json`.
 
 ## Prior completed work
 
