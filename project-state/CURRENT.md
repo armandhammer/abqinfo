@@ -1,11 +1,19 @@
 # Current project state
 
-PR #198 is paused at `a6997a3cb40dafdfc6ad0bc4a6343e4d5688cbc5`; it remains unmerged. Its content is excluded from the governance stage.
+PR #198 implementation is complete on `codex/go-capital-quality-remediation`, with manual editorial review pending. The PR remains open and unmerged: https://github.com/armandhammer/abqinfo/pull/198 . Its visitor-visible content is not integrated into main.
 
-The background governance stage starts at `940e3032d96f868eed8cff7c3deeaf1c556f50a2`. Prior lifecycle evidence, inventory, content and R2 state remain preserved. Publication-quality debt is 1608 records; unresolved September 13 findings are 42 at this baseline.
+`main` and `chatgpt/planning-snapshot` remain synchronized at `de48a74d8522806a0d68ce247eb1d5d6a309c0ca`. The reviewed content revision is `555385b32a08ac1cffa7fefcf6a15d90c2c9fe4a`, content-tree SHA `833e473021f9fa58d6c361e6ea7a5e3f2b47fb1e`. Subsequent commits record validation and handoff metadata; the current PR head is the live remote branch reference.
 
-Every substantive task starts with population freeze and the complete governance preflight described in [governance-workflow.md](governance-workflow.md), using [governance-registry.json](governance-registry.json). This page is navigation/resume evidence, not a substitute for active authority.
+The exact 32-record negative-review boundary is preserved. The complete 2009 master contains 24 originals in 87 pages; the separate 2011 preliminary/EPC and published-directory masters contain 21 originals in 56 pages and 46 originals in 130 pages. The owner-kept community-center authorization remains independently visible outside the 2009 master. Original bytes, independent instruments and historical negative findings are preserved.
 
-PR #198 next-step inputs and the immutable contract are in [governance/pr198](governance/pr198). The 2009 historical master and 2011 two-master architecture are settled. Its exact 32-record boundary is resolved by the owner keep decision in `governance/owner-keep-2026-09-27/owner-decision.json`. Use `governance/pr198/next-step-contract-v9.json` and `architecture-plan-v9.json` for the next implementation. The reviewed 2009 community-center authorization stays independently visible outside the 24-component master; its negative historical finding is preserved with explicit owner reversal. Distinct independent instruments remain traceable in assessed family context; altering that relationship requires explicit supersession. Archival/publication authorization remains separate.
+The explicit owner archive/publication approval is registered in `governance/pr198-approved-2026-09-27/owner-approval.json`. The exact new 2009 master upload added 1,303,860 bytes. The two existing 2011 masters were reused; all three full public downloads match their pinned hashes. No R2 overwrite or deletion occurred. Archive receipts and complete listings are in `governance/pr198-archive-authorized-2026-09-27`.
 
-For current queue/campaign data, use `ordinary-queue-current.json`, `active-campaign.json` and `campaign-workflow.md` under the task contract. For history, use the sealed `workflow-stage-lifecycle.json` stages and their evidence. Completed classifications and their historical cursors are recorded in the sealed lifecycle evidence.
+Separate frozen tasks govern supporting records, derived-master closeout, the 32-record implementation and final review preparation. Final population, immutable contract, governance accounting and normal-suite results are in `governance/pr198-review-ready-2026-09-27`. Earlier contracts and evidence remain immutable. The original remediation witness remains sealed; current actual output accounting is separate.
+
+Verified nonproduction review pages: https://e89de4d4.abqinfo.pages.dev/city-data/capital-spending/ . Every changed page has a direct link in the PR description, and all six rendered article texts, links and anchors match the local Hugo build. Browser UI inspection was unavailable. The full normal suite and actual-record/output-form regressions passed; final handoff validation is recorded in the review-ready folder.
+
+The remaining gate is manual PR editorial review and subsequent merge/production authorization. No architecture or archival owner question remains pending.
+
+Governance navigation: [workflow](governance-workflow.md), [registry](governance-registry.json), [active task](governance/active-task.json). CURRENT is resume evidence, not governing authority. Future substantive work uses a new frozen population and exhaustive resolver contract; a completed task supplies no new authorization.
+
+Queue and campaign navigation: `ordinary-queue-current.json`, `active-campaign.json`, `campaign-workflow.md`. Prior stage evidence remains sealed by `workflow-stage-lifecycle.json`.
