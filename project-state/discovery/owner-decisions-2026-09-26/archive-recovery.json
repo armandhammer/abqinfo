@@ -1,0 +1,17 @@
+{
+  "events": [
+    {
+      "stage": "before_first_PUT",
+      "error": "Copy-Item cannot copy existing PDF onto itself",
+      "storage_effect": "none",
+      "recovery": "Read-only live listing confirmed absent first key; resumed the existing pre-PUT intent after guarding self-copy."
+    },
+    {
+      "stage": "after_first_object_verified",
+      "error": "PowerShell single saved receipt unwrapped to scalar and could not add second entry",
+      "storage_effect": "First object already fully verified and inventory reconciled; no second PUT",
+      "recovery": "Explicit array concatenation; verified first object skipped."
+    }
+  ],
+  "policy": "No PUT is repeated for an uploaded intent; subsequent resumes require the saved key to exist and reconcile exact full public bytes."
+}

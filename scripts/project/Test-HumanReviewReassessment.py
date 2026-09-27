@@ -15,7 +15,8 @@ def load(p):
     # immutable baseline. Test-BackgroundFollowup.py audits all later live changes.
     sealed_paths = {'project-state/master-inventory.json', 'project-state/r2-inventory.json',
                     'project-state/checkpoint.json', 'project-state/ordinary-queue-current.json',
-                    'project-state/discovery/codex-human-review-followup-queue.json'}
+                    'project-state/discovery/codex-human-review-followup-queue.json',
+                    'project-state/discovery/mission-scope-borderline-human-review-queue.json'}
     relative = p.relative_to(ROOT).as_posix()
     if later.exists() and relative in sealed_paths:
         baseline = json.loads(later.read_text(encoding='utf-8'))['baseline_commit']

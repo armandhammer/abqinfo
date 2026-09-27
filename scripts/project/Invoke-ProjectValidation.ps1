@@ -6,6 +6,10 @@ param(
 )
 
 Set-StrictMode -Version Latest
+if (Test-Path -LiteralPath 'project-state/discovery/owner-decisions-2026-09-26/summary.json') {
+  & python "$PSScriptRoot/Test-OwnerDecisions.py"
+  if ($LASTEXITCODE) { throw 'Owner decision application validation failed.' }
+}
 if (Test-Path -LiteralPath 'project-state/discovery/background-followup-2026-09-26/summary.json') {
   & python "$PSScriptRoot/Test-BackgroundFollowup.py"
   if ($LASTEXITCODE) { throw 'Background follow-up validation failed.' }

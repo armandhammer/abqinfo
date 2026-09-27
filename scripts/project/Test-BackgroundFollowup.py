@@ -1,6 +1,17 @@
 """Independent exact-population, untouched-owner and archive/public-byte audit."""
 import collections,gzip,hashlib,json,subprocess
-from BackgroundFollowup import ROOT,F,load,digest
+from pathlib import Path
+from BackgroundFollowup import ROOT,F,load as live_load,digest
+# Audit the completed follow-up task at the next authorized task baseline.
+# Test-OwnerDecisions.py independently audits all subsequent live changes.
+def load(p):
+ p=Path(p);later=ROOT/'project-state/discovery/owner-decisions-2026-09-26/authorization.json'
+ if later.exists():
+  rel=p.relative_to(ROOT).as_posix()
+  if rel in {'project-state/master-inventory.json','project-state/r2-inventory.json','project-state/checkpoint.json','project-state/ordinary-queue-current.json','project-state/discovery/codex-human-review-followup-queue.json','project-state/discovery/consolidated-human-review-queue.json','project-state/discovery/mission-scope-borderline-human-review-queue.json'}:
+   baseline=live_load(later)['baseline_commit']
+   return json.loads(subprocess.check_output(['git','show',baseline+':'+rel],cwd=ROOT).decode('utf-8-sig'))
+ return live_load(p)
 a=load(F/'authorization.json')
 prior={r['id']:r for r in json.loads(subprocess.check_output(['git','show',a['baseline_commit']+':project-state/master-inventory.json'],cwd=ROOT).decode('utf-8-sig'))['candidates']}
 inv=load(ROOT/'project-state/master-inventory.json');rows={r['id']:r for r in inv['candidates']}
