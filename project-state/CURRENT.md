@@ -4,7 +4,7 @@ GO/capital publication-quality remediation is implemented on `codex/go-capital-q
 
 The complete normal suite, repository-wide quality audit and local rendered checks passed. Public R2 and official source GETs for all 34 affected originals/masters match exact sizes and SHA-256. No R2 mutation or new navigation/PDF. Debt is 1574 and unresolved September 13 findings are 10 on this review branch; production remains at the prior debt baseline until owner-approved merge.
 
-The `pr196-background-closeout` stage is sealed at the new immutable baseline. Its prior evidence and queue snapshots are preserved. New exact-delta guard and all findings/relationships/reviews are under `project-state/discovery/go-capital-quality-remediation-2026-09-27/`. Next: verify the nonproduction preview, prepare the focused content PR, then stop for manual owner review. Do not merge or deploy production.
+The `pr196-background-closeout` stage is sealed at the new immutable baseline. Its prior evidence and queue snapshots are preserved. New exact-delta guard and all findings/relationships/reviews are under `project-state/discovery/go-capital-quality-remediation-2026-09-27/`. PR #198 is ready for manual owner review: https://github.com/armandhammer/abqinfo/pull/198. All six changed pages passed the nonproduction preview at https://63421749.abqinfo.pages.dev. The original 31/32 question is explicit in the PR. Stop here; do not merge or deploy production.
 
 ## Prior completed state
 
