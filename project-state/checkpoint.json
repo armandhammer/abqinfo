@@ -1,6 +1,6 @@
 {
-  "recorded_at": "2026-09-27T04:22:57.024760+00:00",
-  "completed_item_range": "Remediated exactly three publication-quality families; full suite and three-page nonproduction preview passed; PR #196 open for manual owner review. Debt 1608; unresolved September 13 findings 42; no R2 or production mutation.",
+  "recorded_at": "2026-09-27T15:31:18.402746+00:00",
+  "completed_item_range": "PR #196 merged and live; reviewed tree, production deployment and three family presentations verified; background-only closeout; exact debt 1608/42 preserved.",
   "total_candidates": 7137,
   "counts_by_status": {
     "pending review": 372,
@@ -21,10 +21,9 @@
   "remaining_nonterminal": 942,
   "next_pending_id": "lin-2f6fbe4ffb0b6564",
   "blockers": [
-    "1608 unrelated publication-quality debt records remain, including 42 unresolved September 13 findings.",
-    "Owner manual content PR review required before merge or production deployment."
+    "1608 publication-quality debt records remain, including 42 unresolved September 13 findings."
   ],
-  "resume_command": "PR #196 awaits owner manual review. Preserve original bytes and September 13 findings; do not merge or deploy without subsequent explicit approval.",
+  "resume_command": "Next task: separately scoped publication-quality remediation; PR #196 closeout receipts are historical evidence.",
   "verification_campaign_totals": {
     "verified": 2194,
     "passed": 2070,
@@ -30968,7 +30967,7 @@
     }
   ],
   "quality_remediation_first": {
-    "state": "pr_ready_for_owner_review",
+    "state": "merged_and_live",
     "artifact": "project-state/discovery/quality-remediation-first-2026-09-27/implementation.json",
     "target_count": 25,
     "annual_master_count": 5,
@@ -30977,6 +30976,10 @@
     "r2_mutation": false,
     "pr_number": 196,
     "preview": "https://32d81a1d.abqinfo.pages.dev",
-    "normal_suite": "passed"
+    "normal_suite": "passed",
+    "merge_commit": "a7b470ec2e5391639b85ce4995e55b8886652c00",
+    "reviewed_head": "367bc9dd9a925bfaa96b89fdcf12e54e02b75fc4",
+    "production_verified_pages": 3,
+    "closeout_artifact": "project-state/discovery/pr196-production-closeout-2026-09-27/merge-production-receipt.json"
   }
 }

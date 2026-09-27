@@ -1,0 +1,117 @@
+{
+  "recorded_at": "2026-09-27T15:31:17.562515+00:00",
+  "pr_number": 196,
+  "merge_commit": "a7b470ec2e5391639b85ce4995e55b8886652c00",
+  "reviewed_head": "367bc9dd9a925bfaa96b89fdcf12e54e02b75fc4",
+  "reviewed_tree_matches_merge": true,
+  "tree": "8e6a67e4e9452b9d122e5cb87798a64067c7f971",
+  "pr": {
+    "headRefOid": "367bc9dd9a925bfaa96b89fdcf12e54e02b75fc4",
+    "mergeCommit": {
+      "oid": "a7b470ec2e5391639b85ce4995e55b8886652c00"
+    },
+    "mergedAt": "2026-09-27T15:27:38Z",
+    "state": "MERGED"
+  },
+  "deployment": {
+    "total_count": 1,
+    "check_runs": [
+      {
+        "id": 108649019802,
+        "name": "Cloudflare Pages",
+        "node_id": "CR_kwDOQYVLK88AAAAZS_x5mg",
+        "head_sha": "a7b470ec2e5391639b85ce4995e55b8886652c00",
+        "external_id": "36e65987-2553-4876-926b-24f9c617423f",
+        "url": "https://api.github.com/repos/armandhammer/abqinfo/check-runs/108649019802",
+        "html_url": "https://github.com/armandhammer/abqinfo/runs/108649019802",
+        "details_url": "https://dash.cloudflare.com/?to=/28e1ba1d2f40f5046283843b8a748256/pages/view/abqinfo/36e65987-2553-4876-926b-24f9c617423f",
+        "status": "completed",
+        "conclusion": "success",
+        "started_at": "2026-09-27T15:28:02Z",
+        "completed_at": "2026-09-27T15:28:02Z",
+        "output": {
+          "title": "Deployed successfully",
+          "summary": "<table><tr><td><strong>Latest commit:</strong> </td><td>\n<code>a7b470e</code>\n</td></tr>\n<tr><td><strong>Status:</strong></td><td>&nbsp;✅&nbsp; Deploy successful!</td></tr>\n<tr><td><strong>Preview URL:</strong></td><td>\n<a href='https://36e65987.abqinfo.pages.dev'>https://36e65987.abqinfo.pages.dev</a>\n</td></tr>\n</table>\n\n[View logs](https://dash.cloudflare.com/?to=/28e1ba1d2f40f5046283843b8a748256/pages/view/abqinfo/36e65987-2553-4876-926b-24f9c617423f)\n",
+          "text": null,
+          "annotations_count": 0,
+          "annotations_url": "https://api.github.com/repos/armandhammer/abqinfo/check-runs/108649019802/annotations"
+        },
+        "check_suite": {
+          "id": 98371690268
+        },
+        "app": {
+          "id": 85455,
+          "client_id": "Iv1.0879b6ff6c8f7a1a",
+          "slug": "cloudflare-workers-and-pages",
+          "node_id": "MDM6QXBwODU0NTU=",
+          "owner": {
+            "login": "cloudflare",
+            "id": 314135,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjMxNDEzNQ==",
+            "avatar_url": "https://avatars.githubusercontent.com/u/314135?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/cloudflare",
+            "html_url": "https://github.com/cloudflare",
+            "followers_url": "https://api.github.com/users/cloudflare/followers",
+            "following_url": "https://api.github.com/users/cloudflare/following{/other_user}",
+            "gists_url": "https://api.github.com/users/cloudflare/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/cloudflare/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/cloudflare/subscriptions",
+            "organizations_url": "https://api.github.com/users/cloudflare/orgs",
+            "repos_url": "https://api.github.com/users/cloudflare/repos",
+            "events_url": "https://api.github.com/users/cloudflare/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/cloudflare/received_events",
+            "type": "Organization",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "name": "Cloudflare Workers and Pages",
+          "description": "The **Cloudflare GitHub App** automatically deploys your code to Cloudflare when you merge a pull request to your GitHub repository. It can also create a new repository on your GitHub account when you get started with a Cloudflare template. \r\n\r\n\r\nThis integration also:\r\n- Displays the status of your deployments as check runs\r\n- Posts links to preview URLs as comments on each pull request (Cloudflare Pages only)\r\n\r\n\r\n<img src=\"https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/b3c1fc84-7d73-4fc4-8835-69e85980df00/public\" width=67% >\r\n\r\n\r\n<img src=\"https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/e9a5ffb3-4ec3-4dd6-8bc8-ed0eec5ddb00/public\" width=67% >\r\n\r\n\r\nFor more information, refer to the [Cloudflare Workers docs](https://developers.cloudflare.com/workers/ci-cd/builds/) and [Cloudflare Pages docs](https://developers.cloudflare.com/pages/configuration/git-integration/).",
+          "external_url": "https://developers.cloudflare.com/workers/ci-cd/builds/",
+          "html_url": "https://github.com/apps/cloudflare-workers-and-pages",
+          "created_at": "2020-10-19T20:23:00Z",
+          "updated_at": "2024-12-19T22:06:10Z",
+          "permissions": {
+            "administration": "write",
+            "checks": "write",
+            "contents": "write",
+            "deployments": "write",
+            "metadata": "read",
+            "pull_requests": "write"
+          },
+          "events": [
+            "pull_request",
+            "push"
+          ]
+        },
+        "pull_requests": []
+      }
+    ]
+  },
+  "remediation_records": 1608,
+  "unresolved_september_13_findings": 42,
+  "inventory_changes": false,
+  "r2_mutation": false,
+  "r2_uploads": 0,
+  "added_storage_bytes": 0,
+  "preserved_blobs": {
+    "project-state/discovery/quality-remediation-first-2026-09-27/authorization.json": "d5da39bb48ead5288f16fdfb08342bdde8dbd22a",
+    "project-state/discovery/quality-remediation-first-2026-09-27/baseline-remediation.json": "52faeabca0a8a87479a6af566e3d2da5c9daf1ce",
+    "project-state/discovery/quality-remediation-first-2026-09-27/baseline-remediation.md": "45c74f00482d34558f8066c9a0c2c03483c516cb",
+    "project-state/discovery/quality-remediation-first-2026-09-27/implementation.json": "8bf2777323b37625ccb8fcab6883f54d001cdeec",
+    "project-state/discovery/quality-remediation-first-2026-09-27/normal-validation.log": "e53bce374f582da0b1c4a232741df1dff56a5126",
+    "project-state/discovery/quality-remediation-first-2026-09-27/official-link-verification.json": "077d691e7e9130536f2d98792b1a0c47ee626daa",
+    "project-state/discovery/quality-remediation-first-2026-09-27/pr-description.md": "ae95d8dfcb40da202419bda89635d3ac2f6381dc",
+    "project-state/discovery/quality-remediation-first-2026-09-27/preview-validation.log": "a9d14574e942ba92ae5190e1bd112d890db78fec",
+    "project-state/discovery/quality-remediation-first-2026-09-27/preview-verification.json": "f1b15b66e06bfb27aa69a4c7c842a045b69e3cc0",
+    "project-state/discovery/quality-remediation-first-2026-09-27/public-byte-measurements.json": "749432c45c7ba44df8aeb206c666b0e29eb4455a",
+    "project-state/discovery/quality-remediation-first-2026-09-27/rendered-verification.json": "608d57bb33dd87770d47d4901f49333fef18310a",
+    "project-state/discovery/quality-remediation-first-2026-09-27/review-ready.json": "377135d86124183b4c4c1a74c8d6042fd3baebea",
+    "project-state/discovery/quality-remediation-first-2026-09-27/review.json": "a319d8147b070ef782ff8c8d41a26042d5fefc3b",
+    "project-state/discovery/quality-remediation-first-2026-09-27/validation.json": "bd71a230ffbb9ba2a3574ef99da01ba199fc182c",
+    "project-state/master-inventory.json": "70f16b6c8e87ae339ff9cfa1324dc68363ff00b2",
+    "project-state/r2-inventory.json": "4751d1834d98348adb97ef370a2cf4c7ed63d7c0",
+    "project-state/discovery/publication-quality-remediation-2026-09-26.json": "058aa2e64815157ba58ebbf9db6c6d3fba9611c1",
+    "project-state/discovery/publication-quality-remediation-2026-09-26.md": "595c33b2374006b66441c3e5f3a1ce3eb876d10e"
+  }
+}
