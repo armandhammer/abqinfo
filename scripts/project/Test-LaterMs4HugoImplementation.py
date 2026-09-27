@@ -35,6 +35,8 @@ def main() -> None:
     closeout = load(closeout_path) if closeout_path.exists() else None
     if closeout:
         assert closeout['production_verification_result'] == 'passed'
+    from PublicationQuality import validate_completed_implementation
+    validate_completed_implementation([inventory[i] for i in IDS], closeout)
     page = PAGE.read_text(encoding='utf-8-sig')
     heading = '### Municipal Stormwater Program and Annual Reports'
     assert page.count(heading) == 1

@@ -64,9 +64,12 @@ try {
     candidates = @([pscustomobject]@{
       id = $new.id; status = 'pending review'; updated_at = '2026-09-23T00:00:00Z'
       scope_assessment = $null; description = $null; description_word_count = 0; validation_status = $null
+      # Isolate this scope regression using a separate complete quality decision.
+      # Positive scope alone must no longer imply publication quality.
+      publication_quality_decision = $byId['src-7de0f5803d442e8f'].publication_quality_decision
     })
   }
-  [IO.File]::WriteAllText($temporaryInventory, ($fixture | ConvertTo-Json -Depth 8), [Text.UTF8Encoding]::new($false))
+  [IO.File]::WriteAllText($temporaryInventory, ($fixture | ConvertTo-Json -Depth 30), [Text.UTF8Encoding]::new($false))
   foreach ($laterStatus in @('placement assigned','implemented','validated')) {
     try {
       & "$PSScriptRoot/Update-Candidate.ps1" -Id $new.id -Set @{status=$laterStatus} -InventoryPath $temporaryInventory | Out-Null

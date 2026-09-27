@@ -14,6 +14,7 @@ $candidates = @($inventory.candidates | Where-Object {
 
 $results = foreach ($candidate in $candidates) {
   try {
+    & "$PSScriptRoot/Test-ActualRecordPublicationQuality.ps1" -Record $candidate | Out-Null
     & "$PSScriptRoot/Test-Candidate.ps1" -Id $candidate.id -InventoryPath $InventoryPath -UpdateInventory | ConvertFrom-Json
   } catch {
     [pscustomobject]@{ id = $candidate.id; title = $candidate.title; error = $_.Exception.Message }

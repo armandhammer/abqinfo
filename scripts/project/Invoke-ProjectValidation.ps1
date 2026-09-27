@@ -6,6 +6,12 @@ param(
 )
 
 Set-StrictMode -Version Latest
+& python "$PSScriptRoot/Test-PublicationQuality.py"
+if ($LASTEXITCODE) { throw 'Actual-record publication-quality regressions failed.' }
+& python "$PSScriptRoot/Audit-VisiblePublicationQuality.py"
+if ($LASTEXITCODE) { throw 'Visible publication quality debt grew or an actual-record transition failed.' }
+& python "$PSScriptRoot/Test-QualityCorrectionHugoImplementation.py"
+if ($LASTEXITCODE) { throw 'Owner quality correction exact-delta/source validation failed.' }
 & python "$PSScriptRoot/Test-WorkflowStageLifecycle.py"
 if ($LASTEXITCODE) { throw 'Workflow lifecycle historical evidence or active exact-delta validation failed.' }
 if (Test-Path 'project-state/discovery/planning-documents-root-hugo-implementation-2026-09-26.json') {
@@ -213,6 +219,8 @@ if (Test-Path 'project-state/discovery/planning-documents-root-hugo-implementati
 }
 
 $broken = @()
+& python "$PSScriptRoot/Test-QualityCorrectionHugoImplementation.py" --rendered-root tmp/site-build
+if ($LASTEXITCODE) { throw 'Corrected publication rendered/link/anchor validation failed.' }
 if ($CheckExternalLinks) {
   $inventory = Get-Content -Raw -Encoding UTF8 $InventoryPath | ConvertFrom-Json
   foreach ($candidate in $inventory.candidates | Where-Object status -in @('implemented','validated')) {

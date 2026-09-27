@@ -49,9 +49,10 @@ $legacyScopeRegistry = Read-MissionScopeLegacyRegistry
 $candidate = @($inventory.candidates | Where-Object id -eq $Id)
 if ($candidate.Count -ne 1) { throw "Expected one candidate for '$Id'; found $($candidate.Count)." }
 $candidate = $candidate[0]
+$previousRecord = $candidate | ConvertTo-Json -Depth 30 | ConvertFrom-Json -DateKind String
 $candidateChanged = $false
 foreach ($key in $Set.Keys) {
-  if (-not $candidate.PSObject.Properties[$key] -and $key -notin @('scope_assessment','review_reason')) { throw "Unknown inventory field '$key'." }
+  if (-not $candidate.PSObject.Properties[$key] -and $key -notin @('scope_assessment','review_reason','publication_quality_decision')) { throw "Unknown inventory field '$key'." }
   if (-not $candidate.PSObject.Properties[$key]) { $candidate | Add-Member -NotePropertyName $key -NotePropertyValue $null }
   if ((ConvertTo-ComparableJson $candidate.$key) -ne (ConvertTo-ComparableJson $Set[$key])) {
     $candidate.$key = $Set[$key]
@@ -65,6 +66,9 @@ if ($candidateChanged) {
   $candidate.updated_at = (Get-Date).ToUniversalTime().ToString('o')
   if (-not (Test-MissionScopeProgressEligible $candidate $legacyScopeRegistry)) {
     throw "Candidate '$Id' cannot enter or remain in '$($candidate.status)' after an update without a complete positive mission scope assessment."
+  }
+  if ($candidate.status -in @('implemented','validated')) {
+    & "$PSScriptRoot/Test-ActualRecordPublicationQuality.ps1" -Record $candidate -PreviousRecord $previousRecord | Out-Null
   }
 }
 $counts = [ordered]@{}

@@ -26,6 +26,8 @@ def main() -> None:
         assert closeout["production_verification_result"] == "passed"
     decision = load(DISCOVERY / "planned-growth-strategy-decision-2026-09-19.json")
     inventory = {row["id"]: row for row in load(ROOT / "project-state/master-inventory.json")["candidates"]}
+    from PublicationQuality import validate_completed_implementation
+    validate_completed_implementation([inventory[i] for i in implemented['implemented_inventory_ids']], closeout)
     # Hash canonical Markdown, matching the sealed artifact across Git's Windows
     # newline conversion. This preserves the original exact section digest.
     page = PAGE.read_bytes().decode("utf-8-sig").replace("\r\n", "\n")

@@ -4,6 +4,7 @@ import argparse,collections,copy,hashlib,json,subprocess
 from datetime import datetime,timezone
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
+from PublicationQuality import require_quality_transition
 p=argparse.ArgumentParser();p.add_argument('--requests',required=True);p.add_argument('--inventory',default='project-state/master-inventory.json');a=p.parse_args()
 path=ROOT/a.inventory;original=path.read_bytes();inventory=json.loads(original.decode('utf-8-sig'));rows={r['id']:r for r in inventory['candidates']}
 request=json.loads((ROOT/a.requests).read_text(encoding='utf-8-sig'));request=request.get('approved_updates',request) if isinstance(request,dict) else request
@@ -12,10 +13,11 @@ now=datetime.now(timezone.utc).isoformat().replace('+00:00','Z');validation=[]
 for x in request:
  row=rows[x['id']];before=copy.deepcopy(row)
  for key,value in x['changes'].items():
-  assert key in row or key in ['scope_assessment','quality_assessment','review_reason','canonical_candidate_id'], 'Unknown field '+key
+  assert key in row or key in ['scope_assessment','quality_assessment','publication_quality_decision','review_reason','canonical_candidate_id'], 'Unknown field '+key
   row[key]=value
  assert row['status'] in inventory['allowed_statuses'], 'Unknown candidate status'
  if row!=before:
+  if row['status'] in {'implemented','validated'}: require_quality_transition(before,row)
   row['updated_at']=now
   if 'description' in x['changes']:row['description_word_count']=len((row['description'] or '').split())
  validation.append({'candidate':row})

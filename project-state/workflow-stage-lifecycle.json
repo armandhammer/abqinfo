@@ -78,6 +78,20 @@
       "exact_delta_guard": {
         "module": "PlanningPublicationLifecycle",
         "function": "guard_current_delta"
+      },
+      "end_commit": "2588c0c1399351957f140825c50fc485fe5546b1"
+    },
+    {
+      "id": "old-town-quality-correction",
+      "baseline_commit": "2588c0c1399351957f140825c50fc485fe5546b1",
+      "regression_scripts": [
+        "scripts/project/Test-QualityCorrectionHugoImplementation.py",
+        "scripts/project/Test-PublicationQuality.py",
+        "scripts/project/Audit-VisiblePublicationQuality.py"
+      ],
+      "exact_delta_guard": {
+        "module": "QualityCorrectionLifecycle",
+        "function": "guard_current_delta"
       }
     }
   ],
@@ -626,6 +640,21 @@
       "path": "project-state/discovery/approved-inventory-backlog-prioritization-mission-scope-2026-09-22.json",
       "commit": "216dd699c24ec8d95aa83e90d3309d5305df2082",
       "sha256": "ec79c214ffb46d3947dc7afd7dab642b172ee9486532ce90d79ee712653c2c84"
+    },
+    {
+      "path": "project-state/discovery/planning-documents-root-hugo-implementation-2026-09-26.json",
+      "commit": "2588c0c1399351957f140825c50fc485fe5546b1",
+      "sha256": "6156746c5538c9a6448c6de02aab649b201652c782e8f8a110e601c87eed2e54"
+    },
+    {
+      "path": "project-state/discovery/post-pr132-content-quality-audit-2026-09-13.json",
+      "commit": "2588c0c1399351957f140825c50fc485fe5546b1",
+      "sha256": "e5ad668e42474401009e044b5ac32ae50685a2ad3d81a6cd0460b069a5647a47"
+    },
+    {
+      "path": "project-state/discovery/post-pr132-content-quality-review-2026-09-13.md",
+      "commit": "2588c0c1399351957f140825c50fc485fe5546b1",
+      "sha256": "11719e6d21bb7604b21935aaf30fcfb5aa69f8aa6f84d8f9da0e01ca1e6ca31d"
     }
   ],
   "completed_audits": [

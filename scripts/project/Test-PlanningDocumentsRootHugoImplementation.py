@@ -33,6 +33,9 @@ current=stage.load_json('project-state/master-inventory.json')
 old={r['id']:r for r in before['candidates']}; rows={r['id']:r for r in current['candidates']}
 archives=load(data['archive_artifact']); verified={r['id']:r for r in archives['results']}
 ids=set(data['implemented_inventory_ids']); assert ids==set(verified)
+from PublicationQuality import validate_affected_records
+if not stage.end:
+    validate_affected_records([rows[i] for i in ids])
 assert rows.keys()==old.keys() and {i for i in rows if rows[i]!=old[i]}==ids
 allowed={'status','implementation_location','implementation_locations','description','description_word_count','quality_assessment','validation_status','processing_notes','updated_at'}
 texts={p:stage.read_text(p) for p in data['changed_pages']}
