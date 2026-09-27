@@ -1,0 +1,17 @@
+warning: in the working copy of 'content/city-data/demographics.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'content/development-land-use/area-sector-plans.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'content/development-land-use/zoning-ido.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'content/city-data/demographics.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'content/development-land-use/area-sector-plans.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'content/development-land-use/zoning-ido.md', LF will be replaced by CRLF the next time Git touches it
+PASS: exact 12 publication transitions, six pages, one incomplete chapter set, two Barelas cross-links, unchanged duplicate/canonical rows and R2; source checks passed.
+Traceback (most recent call last):
+  File "C:\Users\ben\Documents\ABQinfo\scripts\project/Test-OwnerDecisions.py", line 5, in <module>
+    assert rows.keys()==baseline.keys() and {i for i in rows if rows[i]!=baseline[i]}==allowed and len(allowed)==11
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Exception: C:\Users\ben\Documents\ABQinfo\scripts\project\Invoke-ProjectValidation.ps1:15
+Line |
+  15 |  … STEXITCODE) { throw 'Owner decision application validation failed.' }
+     |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Owner decision application validation failed.

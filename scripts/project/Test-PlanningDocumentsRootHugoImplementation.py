@@ -5,7 +5,7 @@ import json
 import re
 import subprocess
 from pathlib import Path
-from urllib.request import urlopen
+from urllib.request import urlopen, Request
 from html.parser import HTMLParser
 from PlanningPublicationLifecycle import ROOT, BASELINE, implementation, sealed_json
 
@@ -13,6 +13,8 @@ parser=argparse.ArgumentParser()
 parser.add_argument('--rendered-root')
 parser.add_argument('--preview')
 args=parser.parse_args()
+def fetch(url):
+    return urlopen(Request(url,headers={'User-Agent':'Mozilla/5.0 ABQInfo-Preview-Validator/1.0'}),timeout=45).read().decode()
 class Links(HTMLParser):
     def __init__(self,html):
         super().__init__(); self.links=[]; self.anchors=[]; self.feed(html)
@@ -46,7 +48,7 @@ for record in data['records']:
     assert r['description']==record['description'] and 20<=r['description_word_count']<=50
     if args.rendered_root or args.preview:
         urlpath=page.removeprefix('content/').removesuffix('.md')+'/'
-        html=urlopen(args.preview.rstrip('/')+'/'+urlpath,timeout=45).read().decode() if args.preview else (Path(args.rendered_root)/urlpath/'index.html').read_text(encoding='utf-8')
+        html=fetch(args.preview.rstrip('/')+'/'+urlpath) if args.preview else (Path(args.rendered_root)/urlpath/'index.html').read_text(encoding='utf-8')
         anchor=re.sub(r'[^a-z0-9 -]','',record['section'].lower()).replace(' ','-')
         parsed=Links(html)
         assert anchor in parsed.anchors and parsed.links.count(record['archive_url'])==1 and record['source_url'] in parsed.links,record
@@ -58,7 +60,7 @@ for link in data['cross_links']:
     assert texts[link['from']].count(link['to'])==1
     if args.rendered_root or args.preview:
         path,anchor=link['to'].split('#')
-        html=urlopen(args.preview.rstrip('/')+path,timeout=45).read().decode() if args.preview else (Path(args.rendered_root)/path.lstrip('/')/'index.html').read_text(encoding='utf-8')
+        html=fetch(args.preview.rstrip('/')+path) if args.preview else (Path(args.rendered_root)/path.lstrip('/')/'index.html').read_text(encoding='utf-8')
         assert anchor in Links(html).anchors
 for rid in (data['duplicate_id_unchanged'],data['canonical_revitalization_id_unchanged']): assert rows[rid]==old[rid]
 assert sum(t.count(rows[data['canonical_revitalization_id_unchanged']]['r2_url']) for t in texts.values())==1
