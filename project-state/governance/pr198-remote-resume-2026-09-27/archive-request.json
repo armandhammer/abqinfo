@@ -1,0 +1,47 @@
+{
+  "state": "prepared_pending_explicit_object_authorization",
+  "objects": [
+    {
+      "local_path": "project-state/governance/pr198-remote-resume-2026-09-27/2009-master.pdf",
+      "r2_key": "city-data/capital-spending/abqinfo-2009-general-obligation-bond-program-historical-master-record.pdf",
+      "size_bytes": 1303860,
+      "sha256": "ae2a1567476cf966b87b87c268dfd8795ad5ea6a5bc474ed4e009bc4b42830af",
+      "current_public_head_status": 404,
+      "original_filename": "abqinfo-2009-general-obligation-bond-program-historical-master-record.pdf",
+      "fresh_public_head_status": 404
+    }
+  ],
+  "total_bytes": 1303860,
+  "r2_mutations": 0,
+  "authorization_present": false,
+  "blocking_gate_ids": [
+    "go-2009:archive-publication-authorization",
+    "go-2011:archive-publication-authorization"
+  ],
+  "all_original_component_archive_urls_already_in_current_inventory": true,
+  "content_implementation_pending_archive_verification": true,
+  "existing_master_reuse": [
+    {
+      "r2_key": "city-data/capital-spending/abqinfo-2011-go-bond-october-2010-preliminary-epc-program-record.pdf",
+      "public_size_bytes": 1031416,
+      "public_sha256": "3c5b2bd8eba451ccd30f5d90d7b69bc79dfb42d7563aefcc0139e5278a946de5",
+      "local_existing_pdf": "output/pdf/capital-spending/abqinfo-2011-go-bond-october-2010-preliminary-epc-program-record.pdf",
+      "full_public_get_verified": true,
+      "fresh_full_public_get_verified": true
+    },
+    {
+      "r2_key": "city-data/capital-spending/abqinfo-2011-go-bond-published-program-record.pdf",
+      "public_size_bytes": 2313619,
+      "public_sha256": "6a62e7a944e3c55ddd08127c7a2bb6e54fe7f08a4d5bb8b6723c9ecea1283015",
+      "local_existing_pdf": "output/pdf/capital-spending/abqinfo-2011-go-bond-published-program-record.pdf",
+      "full_public_get_verified": true,
+      "fresh_full_public_get_verified": true
+    }
+  ],
+  "unused_local_published_revision": {
+    "path": "output/pdf/pr198-resume/abqinfo-2011-go-bond-published-program-record.pdf",
+    "sha256": "ef8b72e2461354c8ae43dc7a4b1b80ae952ada8bbe849d7f605c72aacd16c6a6",
+    "upload_planned": false,
+    "reason": "The existing archived historical master is preserved. A refreshed local provenance cover is separate preparation evidence and has nonidentical bytes; no overwrite is proposed."
+  }
+}

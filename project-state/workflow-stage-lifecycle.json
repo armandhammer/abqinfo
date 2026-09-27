@@ -140,6 +140,18 @@
       "exact_delta_guard": {
         "module": "GovernanceLifecycle",
         "function": "guard_current_delta"
+      },
+      "end_commit": "de48a74d8522806a0d68ce247eb1d5d6a309c0ca"
+    },
+    {
+      "id": "pr198-background-snapshot",
+      "baseline_commit": "de48a74d8522806a0d68ce247eb1d5d6a309c0ca",
+      "regression_scripts": [
+        "scripts/project/Test-Pr198BackgroundSnapshot.py"
+      ],
+      "exact_delta_guard": {
+        "module": "Pr198BackgroundSnapshotLifecycle",
+        "function": "guard_current_delta"
       }
     }
   ],
