@@ -369,6 +369,8 @@ These records preserve the adopted two-year program and each FHWA/FTA-approved r
 
 ### Historical Capital Programming
 
+The [2004 street-program record](/city-data/capital-spending/#20032004-general-obligation-bond-program) connects the ten-page project list with the November 2 ballot question and programming context. The question asked permission to issue $52,514,950; it does not establish the election result or completed street improvements. The original ballot and department documents below remain available as distinct evidence.
+
 - [2011 Streets General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/transportation/transportation-plans/cabq-2011-streets-go-bond-project-scopes-published.pdf)
 
   Details 2011 street bond scopes covering planning, design, right-of-way acquisition, and construction for major roadways, intersections, paving rehabilitation, bridges, signals, and named corridor projects across the City. [Full 2011 published-scope record](/city-data/capital-spending/#2011-published-scope-and-version-records) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2011-go-bond-documents/streets_scope.pdf)

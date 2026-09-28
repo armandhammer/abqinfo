@@ -141,28 +141,40 @@
         "module": "GovernanceLifecycle",
         "function": "guard_current_delta"
       },
-      "end_commit": "de48a74d8522806a0d68ce247eb1d5d6a309c0ca"
+      "end_commit": "ba7790d8ff8c47dbbf45c30008b157a769e1588f"
     },
     {
-      "id": "pr198-background-snapshot",
-      "baseline_commit": "de48a74d8522806a0d68ce247eb1d5d6a309c0ca",
+      "id": "pr198-settled-implementation",
+      "baseline_commit": "ba7790d8ff8c47dbbf45c30008b157a769e1588f",
       "regression_scripts": [
-        "scripts/project/Test-Pr198BackgroundSnapshot.py"
+        "scripts/project/Test-Pr198Settled.py"
       ],
       "exact_delta_guard": {
-        "module": "Pr198BackgroundSnapshotLifecycle",
+        "module": "Pr198SettledLifecycle",
         "function": "guard_current_delta"
       },
-      "end_commit": "90c78020d7d7cc2fc3eaee8b1baa7689966ed7b9"
+      "end_commit": "073edabd10d9a0996eb897e2ed957943aed4de18"
     },
     {
-      "id": "pr198-continuity",
-      "baseline_commit": "90c78020d7d7cc2fc3eaee8b1baa7689966ed7b9",
+      "id": "pr198-main-reconciliation",
+      "baseline_commit": "073edabd10d9a0996eb897e2ed957943aed4de18",
+      "regression_scripts": [
+        "scripts/project/Test-Pr198Reconcile.py"
+      ],
+      "exact_delta_guard": {
+        "module": "Pr198ReconcileLifecycle",
+        "function": "guard_current_delta"
+      },
+      "end_commit": "700515a90de68294936e21925e7ac5b8f0d65d3d"
+    },
+    {
+      "id": "pr198-continuity-pr-merge",
+      "baseline_commit": "700515a90de68294936e21925e7ac5b8f0d65d3d",
       "regression_scripts": [
         "scripts/project/Test-WorkflowStageLifecycle.py"
       ],
       "exact_delta_guard": {
-        "module": "Pr198ContinuityLifecycle",
+        "module": "Pr198ContinuityPrMergeLifecycle",
         "function": "guard_current_delta"
       }
     }
@@ -978,6 +990,26 @@
       "regression_scripts": [
         "scripts/project/Test-MissionScopeAudit.py"
       ]
+    },
+    {
+      "id": "pr198-background-snapshot",
+      "baseline_commit": "de48a74d8522806a0d68ce247eb1d5d6a309c0ca",
+      "regression_scripts": [
+        "scripts/project/Test-Pr198BackgroundSnapshot.py"
+      ],
+      "exact_delta_guard": {
+        "module": "Pr198BackgroundSnapshotLifecycle",
+        "function": "guard_current_delta"
+      },
+      "end_commit": "90c78020d7d7cc2fc3eaee8b1baa7689966ed7b9"
+    },
+    {
+      "id": "pr198-continuity",
+      "baseline_commit": "90c78020d7d7cc2fc3eaee8b1baa7689966ed7b9",
+      "regression_scripts": [
+        "scripts/project/Test-WorkflowStageLifecycle.py"
+      ],
+      "end_commit": "dc649b4f68510381c38902e615cae8246461cb94"
     }
   ]
 }

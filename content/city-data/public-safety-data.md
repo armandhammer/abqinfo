@@ -92,6 +92,8 @@ Maintained public-safety dashboards, police statistics, geographic breakdowns, r
 
 ## Fire and Emergency Response
 
+The [2009 historical master](/city-data/capital-spending/#2009-general-obligation-bond-program) relates Police and Fire scopes to multi-cycle schedules and the separate public-safety authorization. The [2011 published program record](/city-data/capital-spending/#2011-published-scope-and-version-records) distinguishes department scopes and initial editions, including Fire’s changed project mix. The original topical PDFs below remain available alongside that broader context; these records describe capital purposes and allocations rather than completed work or actual spending.
+
 - [2009 Fire General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/city-data/public-safety/cabq-2009-fire-go-bond-project-scopes.pdf)
 
   Details the 2009 Fire bond scopes for replacing outdated emergency response apparatus, rehabilitating fire stations, acquiring land for Station 9 expansion, and renovating Fire Station 2. [Full 2009 capital-program record](/city-data/capital-spending/#2009-general-obligation-bond-program) · [Official City PDF](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2009-go-bond-documents/fire_-_scope.pdf)

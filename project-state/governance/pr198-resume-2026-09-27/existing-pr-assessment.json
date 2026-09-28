@@ -1,0 +1,28 @@
+{
+  "assessed_head": "a6997a3cb40dafdfc6ad0bc4a6343e4d5688cbc5",
+  "render_source": "tmp/pr198-existing-render",
+  "required_master_links_absent": [
+    "https://files.abqinfo.com/city-data/capital-spending/abqinfo-2009-general-obligation-bond-program-historical-master-record.pdf",
+    "https://files.abqinfo.com/city-data/capital-spending/abqinfo-2011-go-bond-october-2010-preliminary-epc-program-record.pdf",
+    "https://files.abqinfo.com/city-data/capital-spending/abqinfo-2011-go-bond-published-program-record.pdf"
+  ],
+  "output_form_failures": [
+    {
+      "governance_id": "capital-2009-historical-master",
+      "failure": "Actual page violates decided master-PDF architecture: capital-2009-historical-master: https://files.abqinfo.com/city-data/capital-spending/abqinfo-2009-general-obligation-bond-program-historical-master-record.pdf"
+    },
+    {
+      "governance_id": "capital-2011-two-masters",
+      "failure": "Actual page violates decided master-PDF architecture: capital-2011-two-masters: https://files.abqinfo.com/city-data/capital-spending/abqinfo-2011-go-bond-october-2010-preliminary-epc-program-record.pdf"
+    }
+  ],
+  "existing_inventory_delta_count": 34,
+  "inventory_delta_outside_32_record_boundary": [
+    "src-8c5d2888cc22b991",
+    "src-cb8cd727e3ca1fde"
+  ],
+  "owner_kept_original_link_present": true,
+  "current_main_requires_background_artifact_preservation": true,
+  "reconciliation_strategy": "Preserve the six-page existing implementation as source material. After exact archive authorization and public-byte verification, reconcile on current main with the three settled masters, distinct independent instrument links and useful topical originals. Carry forward only the frozen 32 inventory deltas; preserve unrelated current governance and historical receipts.",
+  "no_pr_branch_mutation": true
+}

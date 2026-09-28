@@ -296,6 +296,12 @@ def check_unregistered(data, paths, root=ROOT):
                 freshness(value, value['task_population'], data, file_hash(REGISTRY, root))
                 continue
             if isinstance(value, dict) and value.get('artifact_type')=='task_implementation_plan':
+                # A completed task imported from another branch is immutable
+                # historical evidence. Its contract may predate this registry;
+                # only an exact audited copy may bypass current freshness.
+                audit = audited.get(path)
+                if audit and audit['sha256'] == file_hash(path, root) and audit['classification'] == 'historical evidence only / non-binding':
+                    continue
                 allowed={'artifact_type','contract','contract_sha256','population_sha256','respected_governance_ids',
                          'subjects','actions','events','satisfied_gates','completion_evidence','status'}
                 require(set(value)<=allowed,'Implementation plan contains unregistered instruction fields')

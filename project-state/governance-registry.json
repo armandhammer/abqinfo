@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "2bc743582e3be3d70da70b441c8294bda4c4fe0d7fc66ccab8639f757103b59f",
+  "audit_sha256": "e89bcd4848930756dd4eae77087908db74784fdf541ce1c8aaa7a40cb22f84a8",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15105,212 +15105,6 @@
       ]
     },
     {
-      "governance_id": "owner-pr198-2009-community-authorization-keep",
-      "category": "active owner decision",
-      "title": "Keep reviewed 2009 community-center authorization outside the historical master; PR198 has 32 records",
-      "scope": {
-        "candidate_ids": [
-          "src-7567c5f27fceba0a"
-        ],
-        "task_ids": [
-          "pr198-go-capital-next-step",
-          "pr198-owner-keep-correction"
-        ]
-      },
-      "authority": "explicit current owner review and keep decision",
-      "decision_date": "2026-09-27",
-      "effective_date": "2026-09-27",
-      "state": "active",
-      "controlling_artifacts": [
-        {
-          "path": "project-state/governance/owner-keep-2026-09-27/owner-decision.json",
-          "sha256": "772743efe59cbf8f20707017875dfebe2a2023737c888bf1aed1a77bdd794a9b",
-          "binding_pointers": [
-            "/"
-          ]
-        },
-        {
-          "path": "project-state/governance/owner-keep-2026-09-27/preflight.json",
-          "sha256": "a93b02a5b6d5dd3c0abc07f72fee80c3e98f31eac6066d5c2334ac539d605e1b",
-          "binding_pointers": []
-        },
-        {
-          "path": "project-state/governance/owner-keep-2026-09-27/contract.json",
-          "sha256": "e737a79e4b713ca505e7101165b5c1490df4bb7f368a3fa13b3ee09405828e97",
-          "binding_pointers": []
-        },
-        {
-          "path": "project-state/governance/pr198/next-step-contract-v7.json",
-          "sha256": "c62a4ac81bbe55c8d9a7b575a9cab1d1d16957cf4c629ccf281a0fac6f087c88",
-          "binding_pointers": []
-        },
-        {
-          "path": "project-state/governance/pr198/architecture-plan-v7.json",
-          "sha256": "72da96bbe696ed03a392b488d46a27c9d7665e05528060f0551fb722ca5cc519",
-          "binding_pointers": []
-        },
-        {
-          "path": "project-state/governance/owner-keep-2026-09-27/contract-v2.json",
-          "sha256": "96f6582bfbebb400df0dfb1878474aac344ff86ad60560d3b268f0c5080f411b",
-          "binding_pointers": []
-        },
-        {
-          "path": "project-state/governance/pr198/next-step-contract-v8.json",
-          "sha256": "87ea22120c2c7cbf288e1a4b8c2f34d468be641e834ced95ff926fd682ffe4da",
-          "binding_pointers": []
-        },
-        {
-          "path": "project-state/governance/pr198/architecture-plan-v8.json",
-          "sha256": "2a2e7558703dc0c398e2888219680293bde7729b2ceb007149a2d72b3a1ad5fd",
-          "binding_pointers": []
-        }
-      ],
-      "binding_requirement": "Explicit owner reversal of the September 13 standalone-quality finding for this record only. Preserve historical negative evidence, September 18 architecture, other two authorizations, family boundary, and all other quality policy. Background correction only; no content, inventory disposition, R2 or PR198 branch mutation.",
-      "required_actions": [
-        "Retain src-7567c5f27fceba0a separately visible outside the 24-component master. Preserve exactly 32 PR198 records."
-      ],
-      "prohibited_actions": [
-        "No broader quality exception; no arbitrary omission; no inclusion in the master."
-      ],
-      "constraints": [
-        {
-          "subject": "pr198",
-          "field": "candidate_ids",
-          "equals": [
-            "src-0352ae60169eac10",
-            "src-040d6e306c1c448c",
-            "src-047e8956baad212d",
-            "src-25501032bfbfa682",
-            "src-2746069f062780cf",
-            "src-2ed981e6df5e99d2",
-            "src-352694313c3e5710",
-            "src-4bafa6f452f2f586",
-            "src-4cd84ecef3756fb0",
-            "src-535234f371b3922c",
-            "src-542056c326cf2578",
-            "src-54665bf864159096",
-            "src-5603714dac7351ba",
-            "src-7567c5f27fceba0a",
-            "src-768a6855fcfaf443",
-            "src-89b36d5577443f99",
-            "src-a31943aca401c7f0",
-            "src-a547a0278fb86fb9",
-            "src-a58b458f5d0f5284",
-            "src-b049c4df2812749b",
-            "src-b08cdbd2624ad1a0",
-            "src-b37593a011f57fae",
-            "src-b7ef66c741b8a886",
-            "src-b7f0628556085641",
-            "src-b90b07ac62c4f7fd",
-            "src-be70a79a59ae0915",
-            "src-c9af414f77032660",
-            "src-cb27c408e8c26a66",
-            "src-db9fefd23083da69",
-            "src-e69e9150b150bc1a",
-            "src-e6ca25d4cfa80752",
-            "src-f74d655ffb05fd08"
-          ]
-        },
-        {
-          "subject": "src-7567c5f27fceba0a",
-          "field": "retained_visitor_visible",
-          "equals": true
-        },
-        {
-          "subject": "src-7567c5f27fceba0a",
-          "field": "inside_go_2009_master",
-          "equals": false
-        }
-      ],
-      "settled_decisions": [
-        {
-          "question_id": "pr198:31-versus-32",
-          "decision": "Exact 32 records; owner reviewed and kept the 32nd."
-        },
-        {
-          "question_id": "src-7567c5f27fceba0a:september13-standalone-quality",
-          "decision": "Owner explicitly reversed negative finding: Keep it. Historical negative preserved."
-        }
-      ],
-      "unresolved_gates": [],
-      "releases_gates": [
-        "pr198:31-versus-32"
-      ],
-      "implementation_status": "Owner decision recorded; content implementation remains separate."
-    },
-    {
-      "governance_id": "owner-pr198-exact-archive-publication-2026-09-27",
-      "category": "active storage/external-action authorization",
-      "title": "Owner authorizes exact PR198 archive and settled publication implementation",
-      "scope": {
-        "candidate_ids": [
-          "src-0352ae60169eac10",
-          "src-040d6e306c1c448c",
-          "src-047e8956baad212d",
-          "src-25501032bfbfa682",
-          "src-2746069f062780cf",
-          "src-2ed981e6df5e99d2",
-          "src-352694313c3e5710",
-          "src-4bafa6f452f2f586",
-          "src-4cd84ecef3756fb0",
-          "src-535234f371b3922c",
-          "src-542056c326cf2578",
-          "src-54665bf864159096",
-          "src-5603714dac7351ba",
-          "src-7567c5f27fceba0a",
-          "src-768a6855fcfaf443",
-          "src-89b36d5577443f99",
-          "src-a31943aca401c7f0",
-          "src-a547a0278fb86fb9",
-          "src-a58b458f5d0f5284",
-          "src-b049c4df2812749b",
-          "src-b08cdbd2624ad1a0",
-          "src-b37593a011f57fae",
-          "src-b7ef66c741b8a886",
-          "src-b7f0628556085641",
-          "src-b90b07ac62c4f7fd",
-          "src-be70a79a59ae0915",
-          "src-c9af414f77032660",
-          "src-cb27c408e8c26a66",
-          "src-db9fefd23083da69",
-          "src-e69e9150b150bc1a",
-          "src-e6ca25d4cfa80752",
-          "src-f74d655ffb05fd08"
-        ],
-        "families": [
-          "go-2009",
-          "go-2011"
-        ]
-      },
-      "authority": "explicit current owner approval in this session",
-      "decision_date": "2026-09-27",
-      "effective_date": "2026-09-27",
-      "state": "active",
-      "controlling_artifacts": [
-        {
-          "path": "project-state/governance/pr198-approved-2026-09-27/owner-approval.json",
-          "sha256": "802e1437e2f6aab185c48b8db1dacb0c0abec18a57c1410d6a7072d4e03811cf",
-          "binding_pointers": [
-            "/"
-          ]
-        }
-      ],
-      "binding_requirement": "Authorize only the pending exact 2009 master bytes and settled v9 PR198 publication, preview and manual-review preparation. No merge, production deployment, R2 overwrite, deletion or unrelated uploads.",
-      "required_actions": [
-        "Verify exact approved archive bytes before visible publication. Preserve settled v9 architecture and separate manual merge gate."
-      ],
-      "prohibited_actions": [
-        "No autonomous merge or production deployment; no storage overwrite or deletion."
-      ],
-      "constraints": [],
-      "settled_decisions": [],
-      "unresolved_gates": [],
-      "releases_gates": [
-        "go-2009:archive-publication-authorization",
-        "go-2011:archive-publication-authorization"
-      ]
-    },
-    {
       "governance_id": "owner-wireless-checklist",
       "category": "active owner decision",
       "title": "Exclude",
@@ -15419,7 +15213,7 @@
         },
         {
           "path": "scripts/project/TaskGovernance.py",
-          "sha256": "fb0e38f0c5693bb7f38546d89fae3d2857a05372a332ada5a979e46c66937bcf",
+          "sha256": "5738d95a59461e6ac03b8c22cad728ec2c25f937e4b2bb3b16626d5182780ac8",
           "binding_pointers": [
             "/implementation"
           ]
@@ -15447,7 +15241,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "160807a43d1cf5a7ee5e390c6c511e6a289eda2625f3a51e5d31eb7389108828",
+          "sha256": "6ec41b5c55a1adbf48757f8a7315034fa7be8981462ce601795bf4c9ca824b5d",
           "binding_pointers": [
             "/implementation"
           ]
@@ -18033,6 +17827,328 @@
       }
     },
     {
+      "governance_id": "policy-source-priorities",
+      "category": "active project-wide policy",
+      "title": "Follow recorded primary/deferred/last-resort source priorities; jurisdiction and discovery do not establish mission scope",
+      "scope": {
+        "global": true
+      },
+      "authority": "standing project policy / explicit owner instruction",
+      "decision_date": "2026-09-01T00:00:00Z",
+      "effective_date": "as recorded in controlling artifact; no chronology precedence",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/source-priorities.json",
+          "sha256": "4c156f76f345f3adce14f835603c7bd92eb16667f6a976c8bffd06d25d4fa1cf",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Follow recorded primary/deferred/last-resort source priorities; jurisdiction and discovery do not establish mission scope.",
+      "required_actions": [
+        "Follow recorded primary/deferred/last-resort source priorities; jurisdiction and discovery do not establish mission scope."
+      ],
+      "prohibited_actions": [
+        "Do not infer new external authorization from this artifact."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+    },
+    {
+      "governance_id": "policy-tip-stip-retention",
+      "category": "active family decision",
+      "title": "Retain distinct stable/adopted TIP/STIP finals and version lineage; do not treat unlabelled regenerated viewer snapshots as adopted plans",
+      "scope": {
+        "global": true
+      },
+      "authority": "standing project policy / explicit owner instruction",
+      "decision_date": null,
+      "effective_date": "as recorded in controlling artifact; no chronology precedence",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/tip-stip-retention-policy.json",
+          "sha256": "dd36f27a355fb80a64424a5ae42ce7cf1a9c7af5f0eee77090f4c822f281a1ee",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Retain distinct stable/adopted TIP/STIP finals and version lineage; do not treat unlabelled regenerated viewer snapshots as adopted plans.",
+      "required_actions": [
+        "Retain distinct stable/adopted TIP/STIP finals and version lineage; do not treat unlabelled regenerated viewer snapshots as adopted plans."
+      ],
+      "prohibited_actions": [
+        "Do not infer new external authorization from this artifact."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+    },
+    {
+      "governance_id": "pr198-population-boundary",
+      "category": "explicitly superseded historical decision",
+      "title": "The immutable queue has 32 capital matches against the requested 31",
+      "scope": {
+        "task_ids": [
+          "pr198-go-capital-next-step"
+        ],
+        "artifact_paths": [
+          "project-state/governance/pr198/freeze-evidence.json"
+        ]
+      },
+      "authority": "explicit owner response / pause instruction",
+      "decision_date": "2026-09-27",
+      "effective_date": "2026-09-27",
+      "state": "superseded",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/pr198/freeze-evidence.json",
+          "sha256": "44dc428741f6c1459abfaa42d167e0b1004d416c5b888a0019f9ae5e392be175",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "The immutable queue has 32 capital matches against the requested 31. Owner directed that the exclusion question be left in the PR, not guessed. PR198 is paused; no arbitrary exclusion or implementation before resolution.",
+      "required_actions": [
+        "The immutable queue has 32 capital matches against the requested 31. Owner directed that the exclusion question be left in the PR, not guessed. PR198 is paused; no arbitrary exclusion or implementation before resolution."
+      ],
+      "prohibited_actions": [
+        "Do not infer new external authorization from this artifact."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [
+        {
+          "gate_id": "pr198:31-versus-32",
+          "requirement": "Owner resolves the exact population boundary; preserve all 32 observed matches meanwhile.",
+          "blocks_operations": [
+            "inventory_disposition",
+            "archive",
+            "content_implementation",
+            "content_removal",
+            "placement",
+            "cross_listing",
+            "visitor_visible_change"
+          ]
+        }
+      ],
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority.",
+      "superseded_by": "owner-pr198-2009-community-authorization-keep",
+      "supersession_evidence": {
+        "path": "project-state/governance/owner-keep-2026-09-27/owner-decision.json",
+        "pointer": "/supersession_proposals/pr198-population-boundary"
+      }
+    },
+    {
+      "governance_id": "workflow-autonomous-verification",
+      "category": "active workflow requirement",
+      "title": "Verification campaign selections, operation intents/results and recovery evidence are immutable; honor explicit campaign invocation and integrator boundaries",
+      "scope": {
+        "global": true
+      },
+      "authority": "standing project policy / explicit owner instruction",
+      "decision_date": null,
+      "effective_date": "as recorded in controlling artifact; no chronology precedence",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/AUTONOMOUS-VERIFICATION-CAMPAIGNS.md",
+          "sha256": "1f52f4ff1834d0581a4c203e3bcf6ded8182305a6214fcd31ead012b1673d149",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Verification campaign selections, operation intents/results and recovery evidence are immutable; honor explicit campaign invocation and integrator boundaries.",
+      "required_actions": [
+        "Verification campaign selections, operation intents/results and recovery evidence are immutable; honor explicit campaign invocation and integrator boundaries.",
+        "# Usage-paused-proof verification campaigns\n\nBefore substantive verification/review, freeze the complete campaign population and resolve all active global/applicable scoped governance under [governance-workflow.md](governance-workflow.md). Resume checks the same contract; changed populations or authority require a replacement preflight. The integrator freshness-checks before applying any result.\n\nABQInfo verification campaigns extend the bounded parallel-run workflow with candidate-level durability. A Codex session may stop at any point because of a five-hour window, weekly usage limit, or terminal interruption. Re-running the same lane command reconstructs progress from immutable artifacts and continues at the first missing candidate.\n\nThe campaign system does not run work in the background after a session stops. It guarantees that completed verification and integration work is neither lost nor duplicated when the user later says **Continue**.\n\n## State model\n\nThe campaign directory is outside Git and contains:\n\n```text\ncampaign.json\nleases/\n  codex.json\n  claude.json\nresults/\n  codex/batch-0001/src-....json\n  claude/batch-0002/src-....json\nintegration/\n  intents/src-....json\n  receipts/src-....json\n```\n\n- `campaign.json` is an immutable, hashed assignment of sorted candidate IDs to fixed microbatches and legacy-compatible lanes.\n- Every candidate result is written atomically with create-new semantics and then made read-only. There is no mutable progress cursor.\n- Status is derived by validating the manifest and scanning expected candidate results, intents, and receipts.\n- Lane leases use an exclusive operating-system file handle. An active worker therefore cannot share ownership. An abandoned lease can be taken over only after expiration and only after the replacement obtains the exclusive handle.\n- A lane name is an assignment, not an identity. Any resumed Codex session may work either legacy lane ID when the coordinator explicitly gives it that lane.\n- Integration writes an immutable intent before calling `Update-Candidate.ps1`. The inventory update includes a deterministic operation marker, followed by an immutable receipt. If execution stops between those writes, a rerun recognizes the marker and completes the receipt without applying the operation twice.\n\nWorkers never modify `master-inventory.json`, checkpoint, the active-run pointer, content, queues, Git state, or R2. Only the coordinator creates campaigns, sets the active pointer, creates/removes worktrees, accepts results, and integrates inventory decisions.\n\n## Create a campaign\n\nFrom a fresh coordinator branch at `origin/main`:\n\n```powershell\n$campaign = ./scripts/project/New-ParallelVerificationCampaign.ps1 `\n  -CampaignId '2026-09-10-pending-01' `\n  -LaneIds codex,claude `\n  -StartId 'src-10d16d79d48b3ed3' `\n  -Count 240 `\n  -MicrobatchSize 10 | ConvertFrom-Json\n\n$manifest = $campaign.manifest_path\n```\n\nCampaign creation requires the tracked inventory to match the selected Git commit. It scans existing immutable manifests under the campaign root and refuses any candidate assigned by another campaign. Candidate IDs are sorted, divided into consecutive microbatches, and batches are assigned round-robin to lanes.\n\nThe default campaign root is the sibling `ABQinfo-verification-campaigns` directory, outside the repository.\n\nCreate a coordinator-owned active pointer:\n\n```powershell\n./scripts/project/Set-ActiveParallelVerificationCampaign.ps1 `\n  -ManifestPath $manifest\n```\n\nThe pointer records the absolute manifest and artifact paths. Workers may read it but cannot modify it. `-Replace` is intentionally required when an active pointer already exists.\n\nCreate detached lane worktrees outside the repository:\n\n```powershell\n./scripts/project/Initialize-ParallelVerificationCampaignWorktrees.ps1 `\n  -ManifestPath $manifest `\n  -WorktreeRoot 'C:\\ABQinfo-campaign-worktrees'\n```\n\n## One-prompt legacy-lane worker\n\nFill the three bracketed values from coordinator output, then run this once:\n\n```text\nYou are the read-only worker for the legacy lane ID `claude` in the active ABQInfo verification campaign. The lane ID is a compatibility identifier, not a separate agent or provider.\n\nWork only in this detached worktree:\n<LANE_WORKTREE>\n\nUse this immutable campaign manifest:\n<CAMPAIGN_MANIFEST>\n\nThe coordinator-owned active pointer is:\n<ACTIVE_RUN_POINTER>\n\nRead AGENTS.md, project-state/PARALLEL-VERIFICATION.md, and project-state/AUTONOMOUS-VERIFICATION-CAMPAIGNS.md. Do not fetch, switch branches, modify Git state, create a campaign, change the active pointer, or edit inventory, checkpoint, content, queues, or R2.\n\nRun the following from the detached worktree and allow it to process the entire assigned lane:\n\n./scripts/project/Invoke-ParallelVerificationCampaignWorker.ps1 `\n  -ManifestPath '<CAMPAIGN_MANIFEST>' `\n  -LaneId claude `\n  -RepoRoot (Get-Location).Path `\n  -TakeOverExpiredLease\n\nOrdinary candidate failures or ambiguity are durable results; continue processing later candidates. Stop only for a manifest/hash/assignment error, stale worker inventory, invalid existing result, active lane lease, or another systemic failure.\n\nIf usage pauses and I later say “Continue,” do not ask for a new batch prompt. Re-read the same three project instructions and active pointer, validate the same campaign, run the same command, skip every valid existing result, and resume at the first missing candidate. Report derived campaign status when the lane completes or stops.\n\nYour only persistent writes may be your lane lease and manifest-assigned candidate result artifacts. Do not integrate results, commit, push, open a PR, upload, merge, or deploy.\n```\n\nIf the prior process was terminated while holding a lease, wait until its recorded expiration before using `-TakeOverExpiredLease`. An exclusive handle still held by a live process always blocks takeover.\n\n## Coordinator working a lane\n\nThe coordinator can work an assigned lane in bounded slices, inspect the derived status of every lane between slices, and make editorial decisions without allowing any worker to write shared project state:\n\n```powershell\n./scripts/project/Invoke-ParallelVerificationCampaignWorker.ps1 `\n  -ManifestPath $manifest `\n  -LaneId codex `\n  -RepoRoot '<LANE_WORKTREE>' `\n  -TakeOverExpiredLease `\n  -MaxCandidates 10\n\n./scripts/project/Get-ParallelVerificationCampaignStatus.ps1 `\n  -ManifestPath $manifest\n```\n\nRepeat the worker command until the assigned lane is complete. `MaxCandidates` counts newly created results, not valid results skipped during resumption.\n\nStatus reports campaign-, lane-, and batch-level assigned, completed, remaining, passed, failed, ambiguous, accepted, and integrated counts. It also reports whether each lease is absent, released, expired, unlocked/orphaned, or actively locked.\n\nThe coordinator reviews completed results and explicitly names accepted candidates. Preview is the default:\n\n```powershell\n./scripts/project/Merge-ParallelVerificationCampaign.ps1 `\n  -ManifestPath $manifest `\n  -AcceptedCandidateIds src-1111111111111111,src-2222222222222222\n```\n\nApply only after reviewing the preview:\n\n```powershell\n./scripts/project/Merge-ParallelVerificationCampaign.ps1 `\n  -ManifestPath $manifest `\n  -AcceptedCandidateIds src-1111111111111111,src-2222222222222222 `\n  -Apply `\n  -TakeOverExpiredLease\n```\n\nAn optional coordinator-owned decision JSON may add allowed inventory updates:\n\n```json\n{\n  \"campaign_id\": \"2026-09-10-pending-01\",\n  \"campaign_sha256\": \"<CAMPAIGN_SHA256>\",\n  \"decisions\": [\n    {\n      \"candidate_id\": \"src-1111111111111111\",\n      \"accepted\": true,\n      \"proposed_updates\": {\n        \"status\": \"requires human review\",\n        \"validation_status\": \"official source is ambiguous\",\n        \"processing_notes_append\": \"Master review retained this candidate for human adjudication.\"\n      },\n      \"decision_notes\": \"The source conflict is genuine and needs a person to choose the canonical record.\"\n    }\n  ]\n}\n```\n\nPass it with `-DecisionPath`. The command-line acceptance list remains mandatory. A failed or incomplete worker result can only be integrated when the decision explicitly sets `status` to `requires human review` and supplies non-empty `decision_notes`; it can never be silently treated as passed. Integration never edits content, creates a commit or PR, or performs an R2 operation.\n\nAfter inventory decisions, the master coordinator performs ordinary ABQInfo editorial work in coherent 15–30-visible-addition PRs. Candidate verification does not itself authorize publication.\n\n## Autonomous campaign rollover\n\nWhen every assigned candidate has a valid immutable result and all lane leases are released or expired, preview the coordinator transition:\n\n```powershell\n./scripts/project/Invoke-ParallelVerificationCampaignCoordinator.ps1 `\n  -ManifestPath $manifest `\n  -WorktreeRoot 'C:\\ABQinfo-campaign-worktrees'\n```\n\nThe preview identifies non-passing results that must be escalated and selects the next sorted pending-review range, excluding every candidate reserved by any valid manifest in the campaign root. Selection continues after the completed campaign's highest candidate ID and wraps to the earliest still-unassigned pending record, so earlier gaps cannot be stranded. By default the successor inherits the predecessor's candidate count, microbatch size, and lanes. `-Count`, `-MicrobatchSize`, `-LaneIds`, and `-SuccessorCampaignId` may override those values.\n\nApply the reviewed transition with:\n\n```powershell\n./scripts/project/Invoke-ParallelVerificationCampaignCoordinator.ps1 `\n  -ManifestPath $manifest `\n  -WorktreeRoot 'C:\\ABQinfo-campaign-worktrees' `\n  -Apply `\n  -TakeOverExpiredLease\n```\n\nApply mode holds a coordinator-wide exclusive lease. It converts only valid failed or incomplete results to `requires human review` through `Merge-ParallelVerificationCampaign.ps1` and its separate inventory-writer lease. On a clean exit, it durably marks that lease released before closing it, so a later coordinator can safely reacquire the same path without a delete/recreate race. Invalid or stale results, unfinished verification, and active or orphaned-unexpired lane leases stop the transition. For a repository-local inventory, the coordinator refuses pre-existing unrelated inventory changes and commits only the coordinator-owned inventory path so the successor has an exact immutable Git snapshot.\n\nThe successor uses schema version 2 to hash-bind its predecessor ID and SHA-256. Creating a successor requires the live coordinator lease owner token, closing the race between global non-overlap selection and manifest publication. Its manifest remains create-new and read-only. Exact clean detached worktrees may be reused after an interrupted provisioning pass; conflicting, attached, dirty, or wrong-commit directories are rejected. The active pointer changes atomically only after all lanes are provisioned. The final JSON includes one complete prompt per lane, with the no-integration, no-R2, no-merge, and no-deploy restrictions.\n\nRerunning the same coordinator command after interruption is idempotent. Existing integration intents and receipts are reconciled, including a safe replay only when a receipt-bearing candidate is exactly back at that receipt's immutable input fingerprint, a matching immutable successor is reused, exact worktrees are resumed, and an already-advanced pointer is accepted only when it names that predecessor-bound successor.\n\n## Continue and takeover protocol\n\nWhen the user says **Continue**, any resumed Codex session must:\n\n1. Read project instructions, checkpoint, and the active-run pointer.\n2. Resolve and hash-validate the immutable campaign.\n3. Run campaign status; never trust a remembered cursor.\n4. Resume the explicitly assigned lane. Existing valid candidate results are skipped.\n5. Take over only a released or expired, exclusively obtainable lane lease.\n6. If acting as coordinator, inspect intents and receipts before integration. Existing receipts are skipped; intent-only operations are reconciled against the deterministic inventory marker.\n7. Continue until the lane/campaign completes, usage pauses again, or a systemic safety check fails.\n\nA worker should not ask the user for another candidate range, batch ID, or cursor. Those assignments are already immutable.\n\n## Validation and forced-interruption tests\n\nRun:\n\n```powershell\n./scripts/project/Test-ParallelVerificationCampaignWorkflow.ps1\n```\n\nThe suite covers immutable deterministic assignment, overlap across campaigns and batches, active-pointer recovery, detached worktree planning, interruption before and during verification, post-result restart, batch-transition restart, stale input, result tampering, lease contention and expiry, lane-neutral takeover, integration dry-run, write-ahead interruption, post-inventory/pre-receipt recovery, post-receipt restart, and duplicate-application prevention.\n\n## Unattended supervisor and persistent lane watchers\n\nThe unattended supervisor continuously validates the active pointer, processes only its explicitly managed lanes in small resumable slices, and waits for other lanes. When all lane results are valid and leases are safely released, it invokes the crash-safe coordinator. The coordinator escalates only non-passing results to `requires human review`, commits only that inventory transition, provisions a predecessor-bound successor with no more than 120 candidates per lane, and atomically advances the pointer. The supervisor stops normally at its deadline or when no pending-review candidates remain; malformed, stale, oversized, or structurally invalid state is a systemic fault.\n\nStart the nine-hour coordinator supervisor in a hidden process from the attached coordinator branch:\n\n```powershell\n./scripts/project/Start-ParallelVerificationCampaignSupervisor.ps1 `\n  -DurationHours 9 `\n  -SuccessorCandidateCount 240 `\n  -MaxCandidatesPerLane 120 `\n  -TakeOverExpiredLease\n```\n\nBy default, the supervisor manages both legacy campaign lane IDs, `codex` and `claude`, sequentially with the deterministic PowerShell worker. The lane names are identifiers retained for campaign compatibility; they do not require separate AI agents or accounts. Use `-ManagedLaneIds` only when deliberately limiting supervision to a subset of lanes.\n\nBy default, process output and persistent state are written under the sibling `ABQinfo-verification-supervisor` directory. `latest.json` points to the active run's atomic `status.json` and append-only `events.ndjson`. The hidden process also has separate stdout and stderr logs. A supervisor-wide exclusive file lease prevents concurrent coordinators.\n\nA Codex session can watch one assigned lane across every pointer rollover with:\n\n```powershell\n./scripts/project/Invoke-ParallelVerificationCampaignLaneWatcher.ps1 `\n  -LaneId claude `\n  -DurationHours 9 `\n  -TakeOverExpiredLease\n```\n\nThe watcher never coordinates, integrates, changes Git, or writes repository state. It derives the current campaign from `active-run.json`, enters that campaign's detached lane worktree, writes only assigned immutable candidate results and its external watcher status/log, waits after lane completion, and automatically follows the next active campaign. An exclusive per-lane watcher lease prevents duplicate persistent watchers.\n"
+      ],
+      "prohibited_actions": [
+        "Do not infer new external authorization from this artifact."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+    },
+    {
+      "governance_id": "workflow-background-campaign",
+      "category": "active workflow requirement",
+      "title": "Honor complete durable campaign workflow, exact invocation/population/family receipts, protected boundaries, storage guards, immutable recovery and mandatory governance preflight",
+      "scope": {
+        "global": true
+      },
+      "authority": "standing project policy / explicit owner instruction",
+      "decision_date": null,
+      "effective_date": "as recorded in controlling artifact; no chronology precedence",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/campaign-workflow.md",
+          "sha256": "2d117fba396f6e64f9c87fc06d1457b2d7f3452d0b8500c758dc072cb529684d",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Honor complete durable campaign workflow, exact invocation/population/family receipts, protected boundaries, storage guards, immutable recovery and mandatory governance preflight.",
+      "required_actions": [
+        "Honor complete durable campaign workflow, exact invocation/population/family receipts, protected boundaries, storage guards, immutable recovery and mandatory governance preflight.",
+        "# Autonomous background campaigns\n\nRepository state is the workflow specification after `/new`, context compaction, account switching or interruption. Read AGENTS.md, CURRENT.md, checkpoint.json, active-campaign.json, the referenced campaign and profile. Conversation is disposable. Do not reset an unfinished campaign, repeat sealed review, or infer permission from saved prompts.\n\n## Authority and scope\n\nAGENTS.md controls mission scope, quality, full-family relationships, missing-minutes policy, protected gates, publication and external authorization. CURRENT and checkpoint identify current position; the inventory is authoritative for rows. The active pointer identifies exactly one campaign. Campaign selection locks allowed pending IDs and all baseline row digests. The source queue preserves gate reasons and bounded blockers. A profile defines behavior; it cannot invent authorization. The authorized current campaign may upload eligible originals <=150000000 bytes, perform exact public GET verification and integrate background-only work. The project ceiling is 13000000000 decimal bytes in r2-storage-policy.json. Never delete or overwrite for capacity. No content/ edits, publication or protected/human-family review.\n\n## Launch and review\n\nUse PowerShell 7 and existing deterministic tools. Worktree initializers use command-scoped Git core.longpaths=true on Windows; preserve this safeguard when campaign evidence makes temporary checkout paths exceed the legacy limit. Verify branch/worktree, preserve unrelated files and backups. Recompute the queue if stale. Get a complete live R2 listing with Get-R2Inventory.ps1 to a new evidence path; compare saved/live key, size and ETag before launch. Start with `python -B scripts/project/BackgroundCampaign.py start --id <unique-id> --queue <current-queue> --live <fresh-listing>`. The short default launch is `python -B scripts/project/BackgroundCampaign.py start --profile ordinary-review-large`; it uses the current queue pointer and retrieves a fresh R2 baseline. A new ID never replaces an unfinished campaign. Run `Prepare-BackgroundApprovedArchives.py` to copy the current queue's prepared approved backlog into the active campaign, rehashing originals and preserving sealed prior decisions. `status`, `prepare`, `show`, `review --decisions <file>` and `apply` use the active pointer and family selection. Saved recommendations are evidence, never automatic approvals.\n\nReview each complete family from saved full-source research. Inspect actual content and rendered static originals, verify source size/SHA-256, evaluate both scope gates and quality, check exact aliases and chronology. Use format-specific inspection for Word/slides/sheets/live services; do not treat application HTML as a PDF. Preserve originals unchanged. Apply explicit dispositions through existing inventory gate scripts and persist each family immediately. A genuine uncertain decision stays unresolved with a concrete reason; do not create false exclusions or automatic human gates to claim exhaustion. Track bounded deterministic blocker recovery separately. Persist explicit unresolved prerequisite and recovery receipts in the active campaign; never infer them from a count. `Investigate-BackgroundCampaignSources.py` saves bounded retrievals. `Record-BackgroundCampaignRecovery.py` is the specific September 26 recovery adapter; later campaigns must supply current evidence instead of replaying those conclusions. Do not touch protected canonical rows when an alias can be resolved independently.\n\n## Archive and interruption recovery\n\nArchive-family evidence is copied into the active campaign; closed historical campaign artifacts remain immutable. Run Invoke-BackgroundCampaignArchive.ps1. Before mutation, compare every baseline object by exact key/size/ETag, reject unknown objects, duplicate intents and casefold collisions, rehash source files, require positive scope and completed quality, check actual live storage and <=150 MB. Same-size candidates require saved full-public-GET negative SHA-256 evidence tied to current key, size, ETag and source hash; exact matches stop for alias review. Save absent-key upload intent atomically before PUT. Save uploaded-pending-verification immediately after return. Fetch the complete public object and verify exact size/SHA-256; save receipt before changing inventory. Refresh live R2, save accounting, apply placement metadata through the existing mission gate, then save archive-complete and checkpoint.\n\nOn any restart, reconcile the complete live listing first. An object with a saved intent is recovered by exact full public GET and identity verification, never another PUT. An unknown object, changed baseline ETag, size, key, collision or missing object stops mutations. Recover intent/receipt/inventory gaps idempotently. Failed public verification retains intent and remains unfinished. Run only one mutating worker; no simultaneous upload or inventory writers. Persist Git external-action intent and result with `Invoke-BackgroundCampaignExternal.py --label <purpose> -- git/gh ...` around push, PR creation/edit and merge. Each intent/result is saved atomically in `project-state/campaign-runtime/<campaign-id>/external-action-journal.json` under the single-writer lock. This durable local repository journal survives /new, compaction, interruption and account switching. It is ignored by Git so recording a push/merge receipt does not require infinitely many receipt commits. Tracked campaign integration snapshots preserve completed primary integration; final local receipts and live Git refs establish the final branch SHAs. On a different clone without local receipts, recover from tracked snapshots and read-only remote inspection before retrying. After interruption, inspect remote state before retrying.\n\n## Closeout\n\nReconcile saved/live R2 and every intended upload. Retrieve a fresh `Get-R2Inventory.ps1` listing to the campaign folder, then run `Close-BackgroundCampaign.py --live <listing>` at quiescence to create the next queue, accounting and validation/integration-pending state. Recompute a record-level queue partition: gated, source/structural blockers, unresolved ungated; distinguish actionable from unresolved with specific evidence. Validate each changed row against baseline digests and exact authorized IDs; preserve unrelated and protected rows. Update CURRENT/checkpoint and active campaign, run `Run-BackgroundCampaignValidation.py` to save the full Invoke-ProjectValidation.ps1 log, exit status, diff check and unchanged content proof before recording the passed stage. Commit coherent checkpoints. Prepare a real Markdown PR body, validate Test-PullRequestDescription.ps1, integrate authorized background-only work, inspect remote SHAs and run `Reconcile-BackgroundCampaignBranches.py` from planning-snapshot to fast-forward both local branches and synchronize the remote planning branch without force. The helper advances an older local main with `git fetch . origin/main:refs/heads/main` while keeping the framework checkout available. If a branch predates the framework, read the current workflow/campaign from origin/main using git show, preserve the local runtime journal, and recover only by a verified fast-forward; never infer a new campaign from the older CURRENT. After a verified background merge and exact branch reconciliation, run `Seal-BackgroundCampaign.py --pr <number>` to save the tracked integration snapshot and completion checkpoint. Integrate that background-only metadata checkpoint, then run Reconcile-BackgroundCampaignBranches.py again; its durable local final receipt saves every final local/live SHA. Save final integration SHAs and validation artifacts. Mark complete only after all required work; otherwise state the exact remaining stage. Short future requests can refer to the profile or active pointer because execution and recovery instructions live here.\n\n## Consolidated evidence\n\nThis workflow consolidates AGENTS.md, CURRENT/checkpoint, the approved-backlog and first/second ordinary campaign artifacts, SecondLargeOrdinaryCampaign.py, Invoke-SecondLargeOrdinaryCampaignArchive.ps1, Reconcile-SecondCampaignResume.py, Test-SecondCampaignArchiveGuard.py, campaign archive-health regressions and Update-CandidatesBatch.py. Preserve historical limits and sealed receipts as dated evidence; executable defaults and active safeguards follow the current storage policy.\n# Mandatory governance entry gate\n\nBefore reviewing any campaign family, freeze the complete selected population and resolve all active global and applicable scoped governance under [governance-workflow.md](governance-workflow.md). Campaign authorization does not bypass this gate. Freshness-check before any inventory/R2/external mutation and validate the same contract during normal validation. Any selection change requires a new immutable contract; completed historical evidence remains sealed.\n"
+      ],
+      "prohibited_actions": [
+        "Do not infer new external authorization from this artifact."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+    },
+    {
+      "governance_id": "workflow-handoff-retirement",
+      "category": "active workflow requirement",
+      "title": "Former dual-agent work ledger is explicitly retired",
+      "scope": {
+        "global": true
+      },
+      "authority": "standing project policy / explicit owner instruction",
+      "decision_date": null,
+      "effective_date": "as recorded in controlling artifact; no chronology precedence",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/AGENT-HANDOFF.md",
+          "sha256": "238654a46f34d3e08ca6a3956273e0c3efb86c6ba9eab36cd6f1ab0583d974a9",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Former dual-agent work ledger is explicitly retired. Preserve it as historical evidence and use the governance registry for active authority.",
+      "required_actions": [
+        "Former dual-agent work ledger is explicitly retired. Preserve it as historical evidence and use the governance registry for active authority.",
+        "# Legacy Agent Handoff\n\nThe former Codex/Claude dual-agent work ledger is no longer part of the active ABQInfo workflow.\n\nFor current work, read:\n\n1. `AGENTS.md`\n2. `project-state/CURRENT.md`\n3. only the task-specific project-state files and artifacts needed for the work\n\nThe complete historical ledger was preserved verbatim at:\n\n`project-state/history/AGENT-HANDOFF-legacy-2026-09-16.md`\n\nDo not load the historical ledger as routine startup context. Consult it only when a task specifically requires historical findings that are not available in the relevant saved discovery artifact or current project state.\n"
+      ],
+      "prohibited_actions": [
+        "Do not infer new external authorization from this artifact."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+    },
+    {
+      "governance_id": "workflow-legacy-dual-agent-ledger",
+      "category": "explicitly superseded historical decision",
+      "title": "Former dual-agent ledger is retired by explicit handoff notice",
+      "scope": {
+        "global": true
+      },
+      "authority": "durable recorded project decision",
+      "decision_date": null,
+      "effective_date": "as recorded in controlling artifact; no chronology precedence",
+      "state": "superseded",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/history/AGENT-HANDOFF-legacy-2026-09-16.md",
+          "sha256": "fe72fe953f87f4b7cfb5391ca0ead9687b276b24bc462b737dc4a7abc936e563",
+          "binding_pointers": [
+            "/text"
+          ]
+        }
+      ],
+      "binding_requirement": "Former dual-agent ledger is retired by explicit handoff notice.",
+      "required_actions": [
+        "Former dual-agent ledger is retired by explicit handoff notice."
+      ],
+      "prohibited_actions": [
+        "Do not infer new external authorization from this artifact."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority.",
+      "superseded_by": "workflow-handoff-retirement",
+      "supersession_evidence": {
+        "path": "project-state/AGENT-HANDOFF.md",
+        "pointer": "/text"
+      }
+    },
+    {
+      "governance_id": "workflow-parallel-verification",
+      "category": "active workflow requirement",
+      "title": "If explicitly authorized, parallel verification uses frozen disjoint shards and detached worktrees; only one integrator changes durable state",
+      "scope": {
+        "global": true
+      },
+      "authority": "standing project policy / explicit owner instruction",
+      "decision_date": null,
+      "effective_date": "as recorded in controlling artifact; no chronology precedence",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/PARALLEL-VERIFICATION.md",
+          "sha256": "b16193fc6211d639dfb761907e86596bb7da813062e737741040132ce65384fa",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "If explicitly authorized, parallel verification uses frozen disjoint shards and detached worktrees; only one integrator changes durable state. This does not invoke parallel work.",
+      "required_actions": [
+        "If explicitly authorized, parallel verification uses frozen disjoint shards and detached worktrees; only one integrator changes durable state. This does not invoke parallel work.",
+        "# Conflict-free parallel verification\n\nFreeze the complete task population and resolve the active governance registry before verification/review. The integrator and each shard use the same immutable contract and their assigned candidate rules. Follow [governance-workflow.md](governance-workflow.md); this workflow provides no alternate startup or mutation path.\n\nABQInfo uses a **parallel readers, single writer** workflow when verification workers process candidate files, official sources, and links concurrently. Workers receive deterministic, non-overlapping shards in separate detached Git worktrees. They may read their checkout and create exactly one assigned result artifact outside Git. They may not change inventory, checkpoint, content, queues, Git state, or R2. Legacy `codex` and `claude` lane IDs are retained for script and artifact compatibility; both are lanes in one logical Codex workflow, not separate active AI agents.\n\nThis workflow is for verification. It does not authorize additions, archival, uploads, commits, PRs, merges, or deployment.\n\n## Safety model\n\n- The coordinator creates an immutable manifest with the exact base commit, whole-inventory SHA-256, candidate-level input fingerprints, worker list, check types, field allowlist, shard assignments, and unique result paths.\n- Run creation refuses a repository inventory that is untracked or differs from the selected base commit.\n- Candidate IDs are sorted and assigned round-robin. A candidate can appear in only one shard.\n- Each worker uses a separate detached worktree at the manifest commit. The worker script rejects a checkout whose inventory does not have the manifest hash.\n- Each worker can create only `results/<worker-id>.json` beside the manifest. Create-new semantics and a read-only file attribute prevent accidental overwrite.\n- Result payloads bind themselves to the run, manifest hash, base commit, inventory hash, worker, candidate fingerprints, and their own SHA-256.\n- Validation rejects changed manifests, changed assigned candidates, overlapping shards, missing or duplicate workers, misplaced results, altered result payloads, incomplete check structures, and disallowed proposed fields.\n- Only the coordinator/integrator supplies an explicit accepted-ID list. Apply mode acquires an atomic run lease and routes every accepted field change through `Update-Candidate.ps1`.\n- Dry-run is the integration default. Apply mode emits a unique immutable receipt outside Git. The integrator does not stage, commit, push, upload, merge, or deploy.\n\nFilesystem read-only attributes are a guardrail, not a security boundary. Payload hashes and candidate fingerprints provide the tamper and stale-input detection used at integration.\n\n## Coordinator: create the run\n\nStart from a clean, current coordinator branch and create the manifest. By default, run data is stored in the sibling `ABQinfo-verification-runs` directory, outside every Git worktree.\n\n```powershell\n$run = ./scripts/project/New-ParallelVerificationRun.ps1 `\n  -RunId '2026-09-10-links-01' `\n  -WorkerIds codex,claude `\n  -StartId 'src-1234567890abcdef' `\n  -Count 40 | ConvertFrom-Json\n\n$manifest = $run.manifest_path\n```\n\nExplicit candidate IDs are also supported:\n\n```powershell\n./scripts/project/New-ParallelVerificationRun.ps1 `\n  -RunId '2026-09-10-targeted-01' `\n  -WorkerIds codex,claude `\n  -CandidateIds src-1111111111111111,src-2222222222222222\n```\n\nRun IDs are permanent. Never reuse or edit an existing run directory; create a new run when inputs or assignments must change.\n\n## Coordinator: create isolated worktrees\n\nThe worktree root must be outside the repository. The script creates one detached checkout per worker at the manifest commit. Worktree creation and later removal are coordinator actions, never worker actions.\n\n```powershell\n./scripts/project/Initialize-ParallelVerificationWorktrees.ps1 `\n  -ManifestPath $manifest `\n  -WorktreeRoot 'C:\\ABQinfo-worker-worktrees'\n```\n\nUse `-PlanOnly` to inspect paths without creating them. A detached checkout deliberately gives a worker no task branch to commit or push.\n\n## Worker contract\n\nGive each worker only its worktree path, absolute manifest path, and assigned worker ID. From that worktree, run:\n\n```powershell\n./scripts/project/Invoke-ParallelVerificationShard.ps1 `\n  -ManifestPath 'C:\\ABQinfo-verification-runs\\2026-09-10-links-01\\manifest.json' `\n  -WorkerId codex `\n  -RepoRoot (Get-Location).Path\n```\n\nAny Codex session uses the same command with the other legacy lane ID, `-WorkerId claude`, when that is its immutable assignment. The worker script performs:\n\n1. local-file existence, byte-size, and SHA-256 verification when a local file is recorded;\n2. authoritative-source/provenance metadata verification, rejecting an R2 URL as the authoritative source; and\n3. live HTTP reachability using HEAD with GET fallback.\n\n`-SkipLinkCheck` is only for deterministic offline testing and produces `incomplete`, not `passed`, results.\n\nA coordinator may provide an optional, worker-specific proposal file. It must name the run and worker, contain only candidates in that worker's shard, and use manifest-allowed fields:\n\n```json\n{\n  \"run_id\": \"2026-09-10-links-01\",\n  \"worker_id\": \"codex\",\n  \"proposals\": [\n    {\n      \"candidate_id\": \"src-1111111111111111\",\n      \"proposed_updates\": {\n        \"validation_status\": \"passed: file, official source, and link verified\",\n        \"processing_notes_append\": \"Verified in the immutable parallel run.\"\n      },\n      \"review_notes\": \"The live official file matches the inventoried local copy.\"\n    }\n  ]\n}\n```\n\nProposals are inert evidence. A worker cannot apply them. Do not put arbitrary or content-file changes in a proposal.\n\nWorker prohibitions are absolute:\n\n- no edits to `master-inventory.json`, `checkpoint.json`, `active-run.json`, content, discovery queues, or shared project state;\n- no `Update-Candidate.ps1`, crawler imports, downloads, archive-plan execution, or R2 commands;\n- no `git add`, commit, switch, merge, rebase, push, worktree management, or PR commands; and\n- no output except the manifest-assigned immutable result file.\n\n## Coordinator: validate and integrate\n\nFirst validate all assigned result files:\n\n```powershell\n./scripts/project/Test-ParallelVerificationRun.ps1 -ManifestPath $manifest\n```\n\nPreview only the explicitly accepted candidates. This does not modify inventory:\n\n```powershell\n./scripts/project/Merge-ParallelVerificationRun.ps1 `\n  -ManifestPath $manifest `\n  -AcceptedCandidateIds src-1111111111111111,src-2222222222222222\n```\n\nAfter reviewing the preview, the single coordinator may apply the same acceptance list. Apply mode must run on the coordinator's attached branch, never in a detached worker worktree:\n\n```powershell\n./scripts/project/Merge-ParallelVerificationRun.ps1 `\n  -ManifestPath $manifest `\n  -AcceptedCandidateIds src-1111111111111111,src-2222222222222222 `\n  -Apply\n```\n\nApply mode fails closed if any accepted candidate is stale, missing, duplicated, incomplete, or failed. It also fails if any parallel-verification integrator holds the repository-wide inventory-writer lease. It updates only the accepted candidates, only through `Update-Candidate.ps1`, and records before/after fingerprints in the receipt.\n\nAfter integration, the coordinator owns the normal ABQInfo duties: inspect the diff, update checkpoint state if appropriate, run project validation, and decide what to stage. Results do not authorize a PR or any R2 operation.\n\n## Cleanup and recovery\n\nThe coordinator may remove detached worktrees only after result artifacts are safely validated. Use normal `git worktree remove <exact-path>` commands and then inspect `git worktree list`. Never ask a worker to clean up Git state.\n\nIf a worker or integration stops:\n\n- keep the immutable manifest and completed results;\n- rerun validation to learn exactly which workers are missing;\n- do not overwrite a partial or disputed result—create a new run ID; and\n- treat an existing inventory-writer lease as evidence of an active or interrupted writer. Confirm no integrator is running before removing a stale lease.\n\nRun the isolated regression suite with:\n\n```powershell\n./scripts/project/Test-ParallelVerificationWorkflow.ps1\n```\n\nFor long-running, candidate-checkpointed work that survives session interruptions, use [AUTONOMOUS-VERIFICATION-CAMPAIGNS.md](AUTONOMOUS-VERIFICATION-CAMPAIGNS.md). Campaigns build on this safety model while adding immutable per-candidate results, lane-neutral resumption, expiring exclusive leases, derived status, and write-ahead idempotent integration.\n"
+      ],
+      "prohibited_actions": [
+        "Do not infer new external authorization from this artifact."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+    },
+    {
+      "governance_id": "workflow-stage-lifecycle",
+      "category": "active workflow requirement",
+      "title": "Seal prior lifecycle stages at immutable endpoints; authorize exact later deltas; preserve historical evidence and remediation baselines unchanged",
+      "scope": {
+        "global": true
+      },
+      "authority": "standing project policy / explicit owner instruction",
+      "decision_date": null,
+      "effective_date": "as recorded in controlling artifact; no chronology precedence",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/workflow-stage-lifecycle.md",
+          "sha256": "65f0f0952ba0fc93070fc98664cceab98f73dd91dbfd92eb1b9bf54a0d98b19a",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Seal prior lifecycle stages at immutable endpoints; authorize exact later deltas; preserve historical evidence and remediation baselines unchanged.",
+      "required_actions": [
+        "Seal prior lifecycle stages at immutable endpoints; authorize exact later deltas; preserve historical evidence and remediation baselines unchanged.",
+        "# Workflow stage regression lifecycle\n\nThe owner authorized this architecture for PR #194; the invocation is saved in `discovery/planning-publication-lifecycle-authorization-2026-09-26.json`. `workflow-stage-lifecycle.json` records the contiguous Git boundaries of each completed stage and the active stage, plus independently completed audits such as the original mission-scope correction. It grants no external-action, publication or merge authorization.\n\nA completed stage retains every assertion about its original authorized population, mutations, provenance, archive receipts and governing evidence. `StageSnapshot` reads stage-owned mutable state at that stage's registered endpoint. Content invariants compare the original baseline to that endpoint, including content, layouts, assets, static files and visitor-visible configuration. They do not assert that subsequent work cannot exist.\n\nEvidence files remain live and protected. Their normalized bytes must equal the registered immutable Git blobs; changing a snapshot endpoint cannot silently replace the sealed evidence hash. The lifecycle regression checks continuous stage boundaries, ancestry, required regression scripts and protected evidence, then executes the active stage's exact-delta guard. It runs through the normal project suite without an environment switch, assertion suppression or alternate suite.\n\nFor the next authorized stage, checkpoint the completed current stage, record its immutable endpoint, and append the next stage using that exact commit as its baseline. The new stage must declare a guard and its regression scripts, and those scripts must run in the ordinary suite. A gap, missing guard or multiple active stages fails validation. Preserve all existing boundaries and evidence hashes; add new evidence seals rather than replacing completed-stage evidence. An earlier publication regression can then use its endpoint through the same `StageSnapshot` API instead of requiring new exceptions in older tests.\n\nThe current Planning guard covers exactly the twelve archive-verified records and the six approved pages. It compares the complete inventory population, forbids changes outside the authorized records and fields, pins the authorized final row values, checks the original placement-assigned states and positive mission scope, preserves source/provenance fields, and requires unchanged R2 state. Approved page hashes use UTF-8 bytes with normalized line endings and retain a witness in the original publication commit. Source and rendered regressions retain the incomplete Impact Area family, Barelas duplicate suppression, separate official/archive links, section anchors and both approved cross-links. Rendered and preview checks inspect the delivered HTML and the descriptions. The derived retained-source queue adds exactly the twelve newly implemented sources as pending roots, preserves every prior audit result, and cannot claim that new descendant research was performed.\n"
+      ],
+      "prohibited_actions": [
+        "Do not infer new external authorization from this artifact."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+    },
+    {
       "governance_id": "policy-settled-september13-findings-after-owner-keep",
       "category": "active project-wide policy",
       "title": "Preserve every original September13 negative finding as settled historical evidence",
@@ -18535,326 +18651,210 @@
       "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
     },
     {
-      "governance_id": "policy-source-priorities",
-      "category": "active project-wide policy",
-      "title": "Follow recorded primary/deferred/last-resort source priorities; jurisdiction and discovery do not establish mission scope",
+      "governance_id": "owner-pr198-2009-community-authorization-keep",
+      "category": "active owner decision",
+      "title": "Keep reviewed 2009 community-center authorization outside the historical master; PR198 has 32 records",
       "scope": {
-        "global": true
-      },
-      "authority": "standing project policy / explicit owner instruction",
-      "decision_date": "2026-09-01T00:00:00Z",
-      "effective_date": "as recorded in controlling artifact; no chronology precedence",
-      "state": "active",
-      "controlling_artifacts": [
-        {
-          "path": "project-state/source-priorities.json",
-          "sha256": "4c156f76f345f3adce14f835603c7bd92eb16667f6a976c8bffd06d25d4fa1cf",
-          "binding_pointers": [
-            "/"
-          ]
-        }
-      ],
-      "binding_requirement": "Follow recorded primary/deferred/last-resort source priorities; jurisdiction and discovery do not establish mission scope.",
-      "required_actions": [
-        "Follow recorded primary/deferred/last-resort source priorities; jurisdiction and discovery do not establish mission scope."
-      ],
-      "prohibited_actions": [
-        "Do not infer new external authorization from this artifact."
-      ],
-      "constraints": [],
-      "settled_decisions": [],
-      "unresolved_gates": [],
-      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
-    },
-    {
-      "governance_id": "policy-tip-stip-retention",
-      "category": "active family decision",
-      "title": "Retain distinct stable/adopted TIP/STIP finals and version lineage; do not treat unlabelled regenerated viewer snapshots as adopted plans",
-      "scope": {
-        "global": true
-      },
-      "authority": "standing project policy / explicit owner instruction",
-      "decision_date": null,
-      "effective_date": "as recorded in controlling artifact; no chronology precedence",
-      "state": "active",
-      "controlling_artifacts": [
-        {
-          "path": "project-state/tip-stip-retention-policy.json",
-          "sha256": "dd36f27a355fb80a64424a5ae42ce7cf1a9c7af5f0eee77090f4c822f281a1ee",
-          "binding_pointers": [
-            "/"
-          ]
-        }
-      ],
-      "binding_requirement": "Retain distinct stable/adopted TIP/STIP finals and version lineage; do not treat unlabelled regenerated viewer snapshots as adopted plans.",
-      "required_actions": [
-        "Retain distinct stable/adopted TIP/STIP finals and version lineage; do not treat unlabelled regenerated viewer snapshots as adopted plans."
-      ],
-      "prohibited_actions": [
-        "Do not infer new external authorization from this artifact."
-      ],
-      "constraints": [],
-      "settled_decisions": [],
-      "unresolved_gates": [],
-      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
-    },
-    {
-      "governance_id": "pr198-population-boundary",
-      "category": "explicitly superseded historical decision",
-      "title": "The immutable queue has 32 capital matches against the requested 31",
-      "scope": {
-        "task_ids": [
-          "pr198-go-capital-next-step"
+        "candidate_ids": [
+          "src-7567c5f27fceba0a"
         ],
-        "artifact_paths": [
-          "project-state/governance/pr198/freeze-evidence.json"
+        "task_ids": [
+          "pr198-go-capital-next-step",
+          "pr198-owner-keep-correction"
         ]
       },
-      "authority": "explicit owner response / pause instruction",
+      "authority": "explicit current owner review and keep decision",
       "decision_date": "2026-09-27",
       "effective_date": "2026-09-27",
-      "state": "superseded",
-      "controlling_artifacts": [
-        {
-          "path": "project-state/governance/pr198/freeze-evidence.json",
-          "sha256": "44dc428741f6c1459abfaa42d167e0b1004d416c5b888a0019f9ae5e392be175",
-          "binding_pointers": [
-            "/"
-          ]
-        }
-      ],
-      "binding_requirement": "The immutable queue has 32 capital matches against the requested 31. Owner directed that the exclusion question be left in the PR, not guessed. PR198 is paused; no arbitrary exclusion or implementation before resolution.",
-      "required_actions": [
-        "The immutable queue has 32 capital matches against the requested 31. Owner directed that the exclusion question be left in the PR, not guessed. PR198 is paused; no arbitrary exclusion or implementation before resolution."
-      ],
-      "prohibited_actions": [
-        "Do not infer new external authorization from this artifact."
-      ],
-      "constraints": [],
-      "settled_decisions": [],
-      "unresolved_gates": [
-        {
-          "gate_id": "pr198:31-versus-32",
-          "requirement": "Owner resolves the exact population boundary; preserve all 32 observed matches meanwhile.",
-          "blocks_operations": [
-            "inventory_disposition",
-            "archive",
-            "content_implementation",
-            "content_removal",
-            "placement",
-            "cross_listing",
-            "visitor_visible_change"
-          ]
-        }
-      ],
-      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority.",
-      "superseded_by": "owner-pr198-2009-community-authorization-keep",
-      "supersession_evidence": {
-        "path": "project-state/governance/owner-keep-2026-09-27/owner-decision.json",
-        "pointer": "/supersession_proposals/pr198-population-boundary"
-      }
-    },
-    {
-      "governance_id": "workflow-autonomous-verification",
-      "category": "active workflow requirement",
-      "title": "Verification campaign selections, operation intents/results and recovery evidence are immutable; honor explicit campaign invocation and integrator boundaries",
-      "scope": {
-        "global": true
-      },
-      "authority": "standing project policy / explicit owner instruction",
-      "decision_date": null,
-      "effective_date": "as recorded in controlling artifact; no chronology precedence",
       "state": "active",
       "controlling_artifacts": [
         {
-          "path": "project-state/AUTONOMOUS-VERIFICATION-CAMPAIGNS.md",
-          "sha256": "1f52f4ff1834d0581a4c203e3bcf6ded8182305a6214fcd31ead012b1673d149",
+          "path": "project-state/governance/owner-keep-2026-09-27/owner-decision.json",
+          "sha256": "772743efe59cbf8f20707017875dfebe2a2023737c888bf1aed1a77bdd794a9b",
           "binding_pointers": [
             "/"
           ]
+        },
+        {
+          "path": "project-state/governance/owner-keep-2026-09-27/preflight.json",
+          "sha256": "a93b02a5b6d5dd3c0abc07f72fee80c3e98f31eac6066d5c2334ac539d605e1b",
+          "binding_pointers": []
+        },
+        {
+          "path": "project-state/governance/owner-keep-2026-09-27/contract.json",
+          "sha256": "e737a79e4b713ca505e7101165b5c1490df4bb7f368a3fa13b3ee09405828e97",
+          "binding_pointers": []
+        },
+        {
+          "path": "project-state/governance/pr198/next-step-contract-v7.json",
+          "sha256": "c62a4ac81bbe55c8d9a7b575a9cab1d1d16957cf4c629ccf281a0fac6f087c88",
+          "binding_pointers": []
+        },
+        {
+          "path": "project-state/governance/pr198/architecture-plan-v7.json",
+          "sha256": "72da96bbe696ed03a392b488d46a27c9d7665e05528060f0551fb722ca5cc519",
+          "binding_pointers": []
+        },
+        {
+          "path": "project-state/governance/owner-keep-2026-09-27/contract-v2.json",
+          "sha256": "96f6582bfbebb400df0dfb1878474aac344ff86ad60560d3b268f0c5080f411b",
+          "binding_pointers": []
+        },
+        {
+          "path": "project-state/governance/pr198/next-step-contract-v8.json",
+          "sha256": "87ea22120c2c7cbf288e1a4b8c2f34d468be641e834ced95ff926fd682ffe4da",
+          "binding_pointers": []
+        },
+        {
+          "path": "project-state/governance/pr198/architecture-plan-v8.json",
+          "sha256": "2a2e7558703dc0c398e2888219680293bde7729b2ceb007149a2d72b3a1ad5fd",
+          "binding_pointers": []
         }
       ],
-      "binding_requirement": "Verification campaign selections, operation intents/results and recovery evidence are immutable; honor explicit campaign invocation and integrator boundaries.",
+      "binding_requirement": "Explicit owner reversal of the September 13 standalone-quality finding for this record only. Preserve historical negative evidence, September 18 architecture, other two authorizations, family boundary, and all other quality policy. Background correction only; no content, inventory disposition, R2 or PR198 branch mutation.",
       "required_actions": [
-        "Verification campaign selections, operation intents/results and recovery evidence are immutable; honor explicit campaign invocation and integrator boundaries.",
-        "# Usage-paused-proof verification campaigns\n\nBefore substantive verification/review, freeze the complete campaign population and resolve all active global/applicable scoped governance under [governance-workflow.md](governance-workflow.md). Resume checks the same contract; changed populations or authority require a replacement preflight. The integrator freshness-checks before applying any result.\n\nABQInfo verification campaigns extend the bounded parallel-run workflow with candidate-level durability. A Codex session may stop at any point because of a five-hour window, weekly usage limit, or terminal interruption. Re-running the same lane command reconstructs progress from immutable artifacts and continues at the first missing candidate.\n\nThe campaign system does not run work in the background after a session stops. It guarantees that completed verification and integration work is neither lost nor duplicated when the user later says **Continue**.\n\n## State model\n\nThe campaign directory is outside Git and contains:\n\n```text\ncampaign.json\nleases/\n  codex.json\n  claude.json\nresults/\n  codex/batch-0001/src-....json\n  claude/batch-0002/src-....json\nintegration/\n  intents/src-....json\n  receipts/src-....json\n```\n\n- `campaign.json` is an immutable, hashed assignment of sorted candidate IDs to fixed microbatches and legacy-compatible lanes.\n- Every candidate result is written atomically with create-new semantics and then made read-only. There is no mutable progress cursor.\n- Status is derived by validating the manifest and scanning expected candidate results, intents, and receipts.\n- Lane leases use an exclusive operating-system file handle. An active worker therefore cannot share ownership. An abandoned lease can be taken over only after expiration and only after the replacement obtains the exclusive handle.\n- A lane name is an assignment, not an identity. Any resumed Codex session may work either legacy lane ID when the coordinator explicitly gives it that lane.\n- Integration writes an immutable intent before calling `Update-Candidate.ps1`. The inventory update includes a deterministic operation marker, followed by an immutable receipt. If execution stops between those writes, a rerun recognizes the marker and completes the receipt without applying the operation twice.\n\nWorkers never modify `master-inventory.json`, checkpoint, the active-run pointer, content, queues, Git state, or R2. Only the coordinator creates campaigns, sets the active pointer, creates/removes worktrees, accepts results, and integrates inventory decisions.\n\n## Create a campaign\n\nFrom a fresh coordinator branch at `origin/main`:\n\n```powershell\n$campaign = ./scripts/project/New-ParallelVerificationCampaign.ps1 `\n  -CampaignId '2026-09-10-pending-01' `\n  -LaneIds codex,claude `\n  -StartId 'src-10d16d79d48b3ed3' `\n  -Count 240 `\n  -MicrobatchSize 10 | ConvertFrom-Json\n\n$manifest = $campaign.manifest_path\n```\n\nCampaign creation requires the tracked inventory to match the selected Git commit. It scans existing immutable manifests under the campaign root and refuses any candidate assigned by another campaign. Candidate IDs are sorted, divided into consecutive microbatches, and batches are assigned round-robin to lanes.\n\nThe default campaign root is the sibling `ABQinfo-verification-campaigns` directory, outside the repository.\n\nCreate a coordinator-owned active pointer:\n\n```powershell\n./scripts/project/Set-ActiveParallelVerificationCampaign.ps1 `\n  -ManifestPath $manifest\n```\n\nThe pointer records the absolute manifest and artifact paths. Workers may read it but cannot modify it. `-Replace` is intentionally required when an active pointer already exists.\n\nCreate detached lane worktrees outside the repository:\n\n```powershell\n./scripts/project/Initialize-ParallelVerificationCampaignWorktrees.ps1 `\n  -ManifestPath $manifest `\n  -WorktreeRoot 'C:\\ABQinfo-campaign-worktrees'\n```\n\n## One-prompt legacy-lane worker\n\nFill the three bracketed values from coordinator output, then run this once:\n\n```text\nYou are the read-only worker for the legacy lane ID `claude` in the active ABQInfo verification campaign. The lane ID is a compatibility identifier, not a separate agent or provider.\n\nWork only in this detached worktree:\n<LANE_WORKTREE>\n\nUse this immutable campaign manifest:\n<CAMPAIGN_MANIFEST>\n\nThe coordinator-owned active pointer is:\n<ACTIVE_RUN_POINTER>\n\nRead AGENTS.md, project-state/PARALLEL-VERIFICATION.md, and project-state/AUTONOMOUS-VERIFICATION-CAMPAIGNS.md. Do not fetch, switch branches, modify Git state, create a campaign, change the active pointer, or edit inventory, checkpoint, content, queues, or R2.\n\nRun the following from the detached worktree and allow it to process the entire assigned lane:\n\n./scripts/project/Invoke-ParallelVerificationCampaignWorker.ps1 `\n  -ManifestPath '<CAMPAIGN_MANIFEST>' `\n  -LaneId claude `\n  -RepoRoot (Get-Location).Path `\n  -TakeOverExpiredLease\n\nOrdinary candidate failures or ambiguity are durable results; continue processing later candidates. Stop only for a manifest/hash/assignment error, stale worker inventory, invalid existing result, active lane lease, or another systemic failure.\n\nIf usage pauses and I later say “Continue,” do not ask for a new batch prompt. Re-read the same three project instructions and active pointer, validate the same campaign, run the same command, skip every valid existing result, and resume at the first missing candidate. Report derived campaign status when the lane completes or stops.\n\nYour only persistent writes may be your lane lease and manifest-assigned candidate result artifacts. Do not integrate results, commit, push, open a PR, upload, merge, or deploy.\n```\n\nIf the prior process was terminated while holding a lease, wait until its recorded expiration before using `-TakeOverExpiredLease`. An exclusive handle still held by a live process always blocks takeover.\n\n## Coordinator working a lane\n\nThe coordinator can work an assigned lane in bounded slices, inspect the derived status of every lane between slices, and make editorial decisions without allowing any worker to write shared project state:\n\n```powershell\n./scripts/project/Invoke-ParallelVerificationCampaignWorker.ps1 `\n  -ManifestPath $manifest `\n  -LaneId codex `\n  -RepoRoot '<LANE_WORKTREE>' `\n  -TakeOverExpiredLease `\n  -MaxCandidates 10\n\n./scripts/project/Get-ParallelVerificationCampaignStatus.ps1 `\n  -ManifestPath $manifest\n```\n\nRepeat the worker command until the assigned lane is complete. `MaxCandidates` counts newly created results, not valid results skipped during resumption.\n\nStatus reports campaign-, lane-, and batch-level assigned, completed, remaining, passed, failed, ambiguous, accepted, and integrated counts. It also reports whether each lease is absent, released, expired, unlocked/orphaned, or actively locked.\n\nThe coordinator reviews completed results and explicitly names accepted candidates. Preview is the default:\n\n```powershell\n./scripts/project/Merge-ParallelVerificationCampaign.ps1 `\n  -ManifestPath $manifest `\n  -AcceptedCandidateIds src-1111111111111111,src-2222222222222222\n```\n\nApply only after reviewing the preview:\n\n```powershell\n./scripts/project/Merge-ParallelVerificationCampaign.ps1 `\n  -ManifestPath $manifest `\n  -AcceptedCandidateIds src-1111111111111111,src-2222222222222222 `\n  -Apply `\n  -TakeOverExpiredLease\n```\n\nAn optional coordinator-owned decision JSON may add allowed inventory updates:\n\n```json\n{\n  \"campaign_id\": \"2026-09-10-pending-01\",\n  \"campaign_sha256\": \"<CAMPAIGN_SHA256>\",\n  \"decisions\": [\n    {\n      \"candidate_id\": \"src-1111111111111111\",\n      \"accepted\": true,\n      \"proposed_updates\": {\n        \"status\": \"requires human review\",\n        \"validation_status\": \"official source is ambiguous\",\n        \"processing_notes_append\": \"Master review retained this candidate for human adjudication.\"\n      },\n      \"decision_notes\": \"The source conflict is genuine and needs a person to choose the canonical record.\"\n    }\n  ]\n}\n```\n\nPass it with `-DecisionPath`. The command-line acceptance list remains mandatory. A failed or incomplete worker result can only be integrated when the decision explicitly sets `status` to `requires human review` and supplies non-empty `decision_notes`; it can never be silently treated as passed. Integration never edits content, creates a commit or PR, or performs an R2 operation.\n\nAfter inventory decisions, the master coordinator performs ordinary ABQInfo editorial work in coherent 15–30-visible-addition PRs. Candidate verification does not itself authorize publication.\n\n## Autonomous campaign rollover\n\nWhen every assigned candidate has a valid immutable result and all lane leases are released or expired, preview the coordinator transition:\n\n```powershell\n./scripts/project/Invoke-ParallelVerificationCampaignCoordinator.ps1 `\n  -ManifestPath $manifest `\n  -WorktreeRoot 'C:\\ABQinfo-campaign-worktrees'\n```\n\nThe preview identifies non-passing results that must be escalated and selects the next sorted pending-review range, excluding every candidate reserved by any valid manifest in the campaign root. Selection continues after the completed campaign's highest candidate ID and wraps to the earliest still-unassigned pending record, so earlier gaps cannot be stranded. By default the successor inherits the predecessor's candidate count, microbatch size, and lanes. `-Count`, `-MicrobatchSize`, `-LaneIds`, and `-SuccessorCampaignId` may override those values.\n\nApply the reviewed transition with:\n\n```powershell\n./scripts/project/Invoke-ParallelVerificationCampaignCoordinator.ps1 `\n  -ManifestPath $manifest `\n  -WorktreeRoot 'C:\\ABQinfo-campaign-worktrees' `\n  -Apply `\n  -TakeOverExpiredLease\n```\n\nApply mode holds a coordinator-wide exclusive lease. It converts only valid failed or incomplete results to `requires human review` through `Merge-ParallelVerificationCampaign.ps1` and its separate inventory-writer lease. On a clean exit, it durably marks that lease released before closing it, so a later coordinator can safely reacquire the same path without a delete/recreate race. Invalid or stale results, unfinished verification, and active or orphaned-unexpired lane leases stop the transition. For a repository-local inventory, the coordinator refuses pre-existing unrelated inventory changes and commits only the coordinator-owned inventory path so the successor has an exact immutable Git snapshot.\n\nThe successor uses schema version 2 to hash-bind its predecessor ID and SHA-256. Creating a successor requires the live coordinator lease owner token, closing the race between global non-overlap selection and manifest publication. Its manifest remains create-new and read-only. Exact clean detached worktrees may be reused after an interrupted provisioning pass; conflicting, attached, dirty, or wrong-commit directories are rejected. The active pointer changes atomically only after all lanes are provisioned. The final JSON includes one complete prompt per lane, with the no-integration, no-R2, no-merge, and no-deploy restrictions.\n\nRerunning the same coordinator command after interruption is idempotent. Existing integration intents and receipts are reconciled, including a safe replay only when a receipt-bearing candidate is exactly back at that receipt's immutable input fingerprint, a matching immutable successor is reused, exact worktrees are resumed, and an already-advanced pointer is accepted only when it names that predecessor-bound successor.\n\n## Continue and takeover protocol\n\nWhen the user says **Continue**, any resumed Codex session must:\n\n1. Read project instructions, checkpoint, and the active-run pointer.\n2. Resolve and hash-validate the immutable campaign.\n3. Run campaign status; never trust a remembered cursor.\n4. Resume the explicitly assigned lane. Existing valid candidate results are skipped.\n5. Take over only a released or expired, exclusively obtainable lane lease.\n6. If acting as coordinator, inspect intents and receipts before integration. Existing receipts are skipped; intent-only operations are reconciled against the deterministic inventory marker.\n7. Continue until the lane/campaign completes, usage pauses again, or a systemic safety check fails.\n\nA worker should not ask the user for another candidate range, batch ID, or cursor. Those assignments are already immutable.\n\n## Validation and forced-interruption tests\n\nRun:\n\n```powershell\n./scripts/project/Test-ParallelVerificationCampaignWorkflow.ps1\n```\n\nThe suite covers immutable deterministic assignment, overlap across campaigns and batches, active-pointer recovery, detached worktree planning, interruption before and during verification, post-result restart, batch-transition restart, stale input, result tampering, lease contention and expiry, lane-neutral takeover, integration dry-run, write-ahead interruption, post-inventory/pre-receipt recovery, post-receipt restart, and duplicate-application prevention.\n\n## Unattended supervisor and persistent lane watchers\n\nThe unattended supervisor continuously validates the active pointer, processes only its explicitly managed lanes in small resumable slices, and waits for other lanes. When all lane results are valid and leases are safely released, it invokes the crash-safe coordinator. The coordinator escalates only non-passing results to `requires human review`, commits only that inventory transition, provisions a predecessor-bound successor with no more than 120 candidates per lane, and atomically advances the pointer. The supervisor stops normally at its deadline or when no pending-review candidates remain; malformed, stale, oversized, or structurally invalid state is a systemic fault.\n\nStart the nine-hour coordinator supervisor in a hidden process from the attached coordinator branch:\n\n```powershell\n./scripts/project/Start-ParallelVerificationCampaignSupervisor.ps1 `\n  -DurationHours 9 `\n  -SuccessorCandidateCount 240 `\n  -MaxCandidatesPerLane 120 `\n  -TakeOverExpiredLease\n```\n\nBy default, the supervisor manages both legacy campaign lane IDs, `codex` and `claude`, sequentially with the deterministic PowerShell worker. The lane names are identifiers retained for campaign compatibility; they do not require separate AI agents or accounts. Use `-ManagedLaneIds` only when deliberately limiting supervision to a subset of lanes.\n\nBy default, process output and persistent state are written under the sibling `ABQinfo-verification-supervisor` directory. `latest.json` points to the active run's atomic `status.json` and append-only `events.ndjson`. The hidden process also has separate stdout and stderr logs. A supervisor-wide exclusive file lease prevents concurrent coordinators.\n\nA Codex session can watch one assigned lane across every pointer rollover with:\n\n```powershell\n./scripts/project/Invoke-ParallelVerificationCampaignLaneWatcher.ps1 `\n  -LaneId claude `\n  -DurationHours 9 `\n  -TakeOverExpiredLease\n```\n\nThe watcher never coordinates, integrates, changes Git, or writes repository state. It derives the current campaign from `active-run.json`, enters that campaign's detached lane worktree, writes only assigned immutable candidate results and its external watcher status/log, waits after lane completion, and automatically follows the next active campaign. An exclusive per-lane watcher lease prevents duplicate persistent watchers.\n"
+        "Retain src-7567c5f27fceba0a separately visible outside the 24-component master. Preserve exactly 32 PR198 records."
       ],
       "prohibited_actions": [
-        "Do not infer new external authorization from this artifact."
+        "No broader quality exception; no arbitrary omission; no inclusion in the master."
       ],
-      "constraints": [],
-      "settled_decisions": [],
+      "constraints": [
+        {
+          "subject": "pr198",
+          "field": "candidate_ids",
+          "equals": [
+            "src-0352ae60169eac10",
+            "src-040d6e306c1c448c",
+            "src-047e8956baad212d",
+            "src-25501032bfbfa682",
+            "src-2746069f062780cf",
+            "src-2ed981e6df5e99d2",
+            "src-352694313c3e5710",
+            "src-4bafa6f452f2f586",
+            "src-4cd84ecef3756fb0",
+            "src-535234f371b3922c",
+            "src-542056c326cf2578",
+            "src-54665bf864159096",
+            "src-5603714dac7351ba",
+            "src-7567c5f27fceba0a",
+            "src-768a6855fcfaf443",
+            "src-89b36d5577443f99",
+            "src-a31943aca401c7f0",
+            "src-a547a0278fb86fb9",
+            "src-a58b458f5d0f5284",
+            "src-b049c4df2812749b",
+            "src-b08cdbd2624ad1a0",
+            "src-b37593a011f57fae",
+            "src-b7ef66c741b8a886",
+            "src-b7f0628556085641",
+            "src-b90b07ac62c4f7fd",
+            "src-be70a79a59ae0915",
+            "src-c9af414f77032660",
+            "src-cb27c408e8c26a66",
+            "src-db9fefd23083da69",
+            "src-e69e9150b150bc1a",
+            "src-e6ca25d4cfa80752",
+            "src-f74d655ffb05fd08"
+          ]
+        },
+        {
+          "subject": "src-7567c5f27fceba0a",
+          "field": "retained_visitor_visible",
+          "equals": true
+        },
+        {
+          "subject": "src-7567c5f27fceba0a",
+          "field": "inside_go_2009_master",
+          "equals": false
+        }
+      ],
+      "settled_decisions": [
+        {
+          "question_id": "pr198:31-versus-32",
+          "decision": "Exact 32 records; owner reviewed and kept the 32nd."
+        },
+        {
+          "question_id": "src-7567c5f27fceba0a:september13-standalone-quality",
+          "decision": "Owner explicitly reversed negative finding: Keep it. Historical negative preserved."
+        }
+      ],
       "unresolved_gates": [],
-      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+      "releases_gates": [
+        "pr198:31-versus-32"
+      ],
+      "implementation_status": "Owner decision recorded; content implementation remains separate."
     },
     {
-      "governance_id": "workflow-background-campaign",
-      "category": "active workflow requirement",
-      "title": "Honor complete durable campaign workflow, exact invocation/population/family receipts, protected boundaries, storage guards, immutable recovery and mandatory governance preflight",
+      "governance_id": "owner-pr198-exact-archive-publication-2026-09-27",
+      "category": "active storage/external-action authorization",
+      "title": "Owner authorizes exact PR198 archive and settled publication implementation",
       "scope": {
-        "global": true
+        "candidate_ids": [
+          "src-0352ae60169eac10",
+          "src-040d6e306c1c448c",
+          "src-047e8956baad212d",
+          "src-25501032bfbfa682",
+          "src-2746069f062780cf",
+          "src-2ed981e6df5e99d2",
+          "src-352694313c3e5710",
+          "src-4bafa6f452f2f586",
+          "src-4cd84ecef3756fb0",
+          "src-535234f371b3922c",
+          "src-542056c326cf2578",
+          "src-54665bf864159096",
+          "src-5603714dac7351ba",
+          "src-7567c5f27fceba0a",
+          "src-768a6855fcfaf443",
+          "src-89b36d5577443f99",
+          "src-a31943aca401c7f0",
+          "src-a547a0278fb86fb9",
+          "src-a58b458f5d0f5284",
+          "src-b049c4df2812749b",
+          "src-b08cdbd2624ad1a0",
+          "src-b37593a011f57fae",
+          "src-b7ef66c741b8a886",
+          "src-b7f0628556085641",
+          "src-b90b07ac62c4f7fd",
+          "src-be70a79a59ae0915",
+          "src-c9af414f77032660",
+          "src-cb27c408e8c26a66",
+          "src-db9fefd23083da69",
+          "src-e69e9150b150bc1a",
+          "src-e6ca25d4cfa80752",
+          "src-f74d655ffb05fd08"
+        ],
+        "families": [
+          "go-2009",
+          "go-2011"
+        ]
       },
-      "authority": "standing project policy / explicit owner instruction",
-      "decision_date": null,
-      "effective_date": "as recorded in controlling artifact; no chronology precedence",
+      "authority": "explicit current owner approval in this session",
+      "decision_date": "2026-09-27",
+      "effective_date": "2026-09-27",
       "state": "active",
       "controlling_artifacts": [
         {
-          "path": "project-state/campaign-workflow.md",
-          "sha256": "2d117fba396f6e64f9c87fc06d1457b2d7f3452d0b8500c758dc072cb529684d",
+          "path": "project-state/governance/pr198-approved-2026-09-27/owner-approval.json",
+          "sha256": "802e1437e2f6aab185c48b8db1dacb0c0abec18a57c1410d6a7072d4e03811cf",
           "binding_pointers": [
             "/"
           ]
         }
       ],
-      "binding_requirement": "Honor complete durable campaign workflow, exact invocation/population/family receipts, protected boundaries, storage guards, immutable recovery and mandatory governance preflight.",
+      "binding_requirement": "Authorize only the pending exact 2009 master bytes and settled v9 PR198 publication, preview and manual-review preparation. No merge, production deployment, R2 overwrite, deletion or unrelated uploads.",
       "required_actions": [
-        "Honor complete durable campaign workflow, exact invocation/population/family receipts, protected boundaries, storage guards, immutable recovery and mandatory governance preflight.",
-        "# Autonomous background campaigns\n\nRepository state is the workflow specification after `/new`, context compaction, account switching or interruption. Read AGENTS.md, CURRENT.md, checkpoint.json, active-campaign.json, the referenced campaign and profile. Conversation is disposable. Do not reset an unfinished campaign, repeat sealed review, or infer permission from saved prompts.\n\n## Authority and scope\n\nAGENTS.md controls mission scope, quality, full-family relationships, missing-minutes policy, protected gates, publication and external authorization. CURRENT and checkpoint identify current position; the inventory is authoritative for rows. The active pointer identifies exactly one campaign. Campaign selection locks allowed pending IDs and all baseline row digests. The source queue preserves gate reasons and bounded blockers. A profile defines behavior; it cannot invent authorization. The authorized current campaign may upload eligible originals <=150000000 bytes, perform exact public GET verification and integrate background-only work. The project ceiling is 13000000000 decimal bytes in r2-storage-policy.json. Never delete or overwrite for capacity. No content/ edits, publication or protected/human-family review.\n\n## Launch and review\n\nUse PowerShell 7 and existing deterministic tools. Worktree initializers use command-scoped Git core.longpaths=true on Windows; preserve this safeguard when campaign evidence makes temporary checkout paths exceed the legacy limit. Verify branch/worktree, preserve unrelated files and backups. Recompute the queue if stale. Get a complete live R2 listing with Get-R2Inventory.ps1 to a new evidence path; compare saved/live key, size and ETag before launch. Start with `python -B scripts/project/BackgroundCampaign.py start --id <unique-id> --queue <current-queue> --live <fresh-listing>`. The short default launch is `python -B scripts/project/BackgroundCampaign.py start --profile ordinary-review-large`; it uses the current queue pointer and retrieves a fresh R2 baseline. A new ID never replaces an unfinished campaign. Run `Prepare-BackgroundApprovedArchives.py` to copy the current queue's prepared approved backlog into the active campaign, rehashing originals and preserving sealed prior decisions. `status`, `prepare`, `show`, `review --decisions <file>` and `apply` use the active pointer and family selection. Saved recommendations are evidence, never automatic approvals.\n\nReview each complete family from saved full-source research. Inspect actual content and rendered static originals, verify source size/SHA-256, evaluate both scope gates and quality, check exact aliases and chronology. Use format-specific inspection for Word/slides/sheets/live services; do not treat application HTML as a PDF. Preserve originals unchanged. Apply explicit dispositions through existing inventory gate scripts and persist each family immediately. A genuine uncertain decision stays unresolved with a concrete reason; do not create false exclusions or automatic human gates to claim exhaustion. Track bounded deterministic blocker recovery separately. Persist explicit unresolved prerequisite and recovery receipts in the active campaign; never infer them from a count. `Investigate-BackgroundCampaignSources.py` saves bounded retrievals. `Record-BackgroundCampaignRecovery.py` is the specific September 26 recovery adapter; later campaigns must supply current evidence instead of replaying those conclusions. Do not touch protected canonical rows when an alias can be resolved independently.\n\n## Archive and interruption recovery\n\nArchive-family evidence is copied into the active campaign; closed historical campaign artifacts remain immutable. Run Invoke-BackgroundCampaignArchive.ps1. Before mutation, compare every baseline object by exact key/size/ETag, reject unknown objects, duplicate intents and casefold collisions, rehash source files, require positive scope and completed quality, check actual live storage and <=150 MB. Same-size candidates require saved full-public-GET negative SHA-256 evidence tied to current key, size, ETag and source hash; exact matches stop for alias review. Save absent-key upload intent atomically before PUT. Save uploaded-pending-verification immediately after return. Fetch the complete public object and verify exact size/SHA-256; save receipt before changing inventory. Refresh live R2, save accounting, apply placement metadata through the existing mission gate, then save archive-complete and checkpoint.\n\nOn any restart, reconcile the complete live listing first. An object with a saved intent is recovered by exact full public GET and identity verification, never another PUT. An unknown object, changed baseline ETag, size, key, collision or missing object stops mutations. Recover intent/receipt/inventory gaps idempotently. Failed public verification retains intent and remains unfinished. Run only one mutating worker; no simultaneous upload or inventory writers. Persist Git external-action intent and result with `Invoke-BackgroundCampaignExternal.py --label <purpose> -- git/gh ...` around push, PR creation/edit and merge. Each intent/result is saved atomically in `project-state/campaign-runtime/<campaign-id>/external-action-journal.json` under the single-writer lock. This durable local repository journal survives /new, compaction, interruption and account switching. It is ignored by Git so recording a push/merge receipt does not require infinitely many receipt commits. Tracked campaign integration snapshots preserve completed primary integration; final local receipts and live Git refs establish the final branch SHAs. On a different clone without local receipts, recover from tracked snapshots and read-only remote inspection before retrying. After interruption, inspect remote state before retrying.\n\n## Closeout\n\nReconcile saved/live R2 and every intended upload. Retrieve a fresh `Get-R2Inventory.ps1` listing to the campaign folder, then run `Close-BackgroundCampaign.py --live <listing>` at quiescence to create the next queue, accounting and validation/integration-pending state. Recompute a record-level queue partition: gated, source/structural blockers, unresolved ungated; distinguish actionable from unresolved with specific evidence. Validate each changed row against baseline digests and exact authorized IDs; preserve unrelated and protected rows. Update CURRENT/checkpoint and active campaign, run `Run-BackgroundCampaignValidation.py` to save the full Invoke-ProjectValidation.ps1 log, exit status, diff check and unchanged content proof before recording the passed stage. Commit coherent checkpoints. Prepare a real Markdown PR body, validate Test-PullRequestDescription.ps1, integrate authorized background-only work, inspect remote SHAs and run `Reconcile-BackgroundCampaignBranches.py` from planning-snapshot to fast-forward both local branches and synchronize the remote planning branch without force. The helper advances an older local main with `git fetch . origin/main:refs/heads/main` while keeping the framework checkout available. If a branch predates the framework, read the current workflow/campaign from origin/main using git show, preserve the local runtime journal, and recover only by a verified fast-forward; never infer a new campaign from the older CURRENT. After a verified background merge and exact branch reconciliation, run `Seal-BackgroundCampaign.py --pr <number>` to save the tracked integration snapshot and completion checkpoint. Integrate that background-only metadata checkpoint, then run Reconcile-BackgroundCampaignBranches.py again; its durable local final receipt saves every final local/live SHA. Save final integration SHAs and validation artifacts. Mark complete only after all required work; otherwise state the exact remaining stage. Short future requests can refer to the profile or active pointer because execution and recovery instructions live here.\n\n## Consolidated evidence\n\nThis workflow consolidates AGENTS.md, CURRENT/checkpoint, the approved-backlog and first/second ordinary campaign artifacts, SecondLargeOrdinaryCampaign.py, Invoke-SecondLargeOrdinaryCampaignArchive.ps1, Reconcile-SecondCampaignResume.py, Test-SecondCampaignArchiveGuard.py, campaign archive-health regressions and Update-CandidatesBatch.py. Preserve historical limits and sealed receipts as dated evidence; executable defaults and active safeguards follow the current storage policy.\n# Mandatory governance entry gate\n\nBefore reviewing any campaign family, freeze the complete selected population and resolve all active global and applicable scoped governance under [governance-workflow.md](governance-workflow.md). Campaign authorization does not bypass this gate. Freshness-check before any inventory/R2/external mutation and validate the same contract during normal validation. Any selection change requires a new immutable contract; completed historical evidence remains sealed.\n"
+        "Verify exact approved archive bytes before visible publication. Preserve settled v9 architecture and separate manual merge gate."
       ],
       "prohibited_actions": [
-        "Do not infer new external authorization from this artifact."
+        "No autonomous merge or production deployment; no storage overwrite or deletion."
       ],
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
-    },
-    {
-      "governance_id": "workflow-handoff-retirement",
-      "category": "active workflow requirement",
-      "title": "Former dual-agent work ledger is explicitly retired",
-      "scope": {
-        "global": true
-      },
-      "authority": "standing project policy / explicit owner instruction",
-      "decision_date": null,
-      "effective_date": "as recorded in controlling artifact; no chronology precedence",
-      "state": "active",
-      "controlling_artifacts": [
-        {
-          "path": "project-state/AGENT-HANDOFF.md",
-          "sha256": "238654a46f34d3e08ca6a3956273e0c3efb86c6ba9eab36cd6f1ab0583d974a9",
-          "binding_pointers": [
-            "/"
-          ]
-        }
-      ],
-      "binding_requirement": "Former dual-agent work ledger is explicitly retired. Preserve it as historical evidence and use the governance registry for active authority.",
-      "required_actions": [
-        "Former dual-agent work ledger is explicitly retired. Preserve it as historical evidence and use the governance registry for active authority.",
-        "# Legacy Agent Handoff\n\nThe former Codex/Claude dual-agent work ledger is no longer part of the active ABQInfo workflow.\n\nFor current work, read:\n\n1. `AGENTS.md`\n2. `project-state/CURRENT.md`\n3. only the task-specific project-state files and artifacts needed for the work\n\nThe complete historical ledger was preserved verbatim at:\n\n`project-state/history/AGENT-HANDOFF-legacy-2026-09-16.md`\n\nDo not load the historical ledger as routine startup context. Consult it only when a task specifically requires historical findings that are not available in the relevant saved discovery artifact or current project state.\n"
-      ],
-      "prohibited_actions": [
-        "Do not infer new external authorization from this artifact."
-      ],
-      "constraints": [],
-      "settled_decisions": [],
-      "unresolved_gates": [],
-      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
-    },
-    {
-      "governance_id": "workflow-legacy-dual-agent-ledger",
-      "category": "explicitly superseded historical decision",
-      "title": "Former dual-agent ledger is retired by explicit handoff notice",
-      "scope": {
-        "global": true
-      },
-      "authority": "durable recorded project decision",
-      "decision_date": null,
-      "effective_date": "as recorded in controlling artifact; no chronology precedence",
-      "state": "superseded",
-      "controlling_artifacts": [
-        {
-          "path": "project-state/history/AGENT-HANDOFF-legacy-2026-09-16.md",
-          "sha256": "fe72fe953f87f4b7cfb5391ca0ead9687b276b24bc462b737dc4a7abc936e563",
-          "binding_pointers": [
-            "/text"
-          ]
-        }
-      ],
-      "binding_requirement": "Former dual-agent ledger is retired by explicit handoff notice.",
-      "required_actions": [
-        "Former dual-agent ledger is retired by explicit handoff notice."
-      ],
-      "prohibited_actions": [
-        "Do not infer new external authorization from this artifact."
-      ],
-      "constraints": [],
-      "settled_decisions": [],
-      "unresolved_gates": [],
-      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority.",
-      "superseded_by": "workflow-handoff-retirement",
-      "supersession_evidence": {
-        "path": "project-state/AGENT-HANDOFF.md",
-        "pointer": "/text"
-      }
-    },
-    {
-      "governance_id": "workflow-parallel-verification",
-      "category": "active workflow requirement",
-      "title": "If explicitly authorized, parallel verification uses frozen disjoint shards and detached worktrees; only one integrator changes durable state",
-      "scope": {
-        "global": true
-      },
-      "authority": "standing project policy / explicit owner instruction",
-      "decision_date": null,
-      "effective_date": "as recorded in controlling artifact; no chronology precedence",
-      "state": "active",
-      "controlling_artifacts": [
-        {
-          "path": "project-state/PARALLEL-VERIFICATION.md",
-          "sha256": "b16193fc6211d639dfb761907e86596bb7da813062e737741040132ce65384fa",
-          "binding_pointers": [
-            "/"
-          ]
-        }
-      ],
-      "binding_requirement": "If explicitly authorized, parallel verification uses frozen disjoint shards and detached worktrees; only one integrator changes durable state. This does not invoke parallel work.",
-      "required_actions": [
-        "If explicitly authorized, parallel verification uses frozen disjoint shards and detached worktrees; only one integrator changes durable state. This does not invoke parallel work.",
-        "# Conflict-free parallel verification\n\nFreeze the complete task population and resolve the active governance registry before verification/review. The integrator and each shard use the same immutable contract and their assigned candidate rules. Follow [governance-workflow.md](governance-workflow.md); this workflow provides no alternate startup or mutation path.\n\nABQInfo uses a **parallel readers, single writer** workflow when verification workers process candidate files, official sources, and links concurrently. Workers receive deterministic, non-overlapping shards in separate detached Git worktrees. They may read their checkout and create exactly one assigned result artifact outside Git. They may not change inventory, checkpoint, content, queues, Git state, or R2. Legacy `codex` and `claude` lane IDs are retained for script and artifact compatibility; both are lanes in one logical Codex workflow, not separate active AI agents.\n\nThis workflow is for verification. It does not authorize additions, archival, uploads, commits, PRs, merges, or deployment.\n\n## Safety model\n\n- The coordinator creates an immutable manifest with the exact base commit, whole-inventory SHA-256, candidate-level input fingerprints, worker list, check types, field allowlist, shard assignments, and unique result paths.\n- Run creation refuses a repository inventory that is untracked or differs from the selected base commit.\n- Candidate IDs are sorted and assigned round-robin. A candidate can appear in only one shard.\n- Each worker uses a separate detached worktree at the manifest commit. The worker script rejects a checkout whose inventory does not have the manifest hash.\n- Each worker can create only `results/<worker-id>.json` beside the manifest. Create-new semantics and a read-only file attribute prevent accidental overwrite.\n- Result payloads bind themselves to the run, manifest hash, base commit, inventory hash, worker, candidate fingerprints, and their own SHA-256.\n- Validation rejects changed manifests, changed assigned candidates, overlapping shards, missing or duplicate workers, misplaced results, altered result payloads, incomplete check structures, and disallowed proposed fields.\n- Only the coordinator/integrator supplies an explicit accepted-ID list. Apply mode acquires an atomic run lease and routes every accepted field change through `Update-Candidate.ps1`.\n- Dry-run is the integration default. Apply mode emits a unique immutable receipt outside Git. The integrator does not stage, commit, push, upload, merge, or deploy.\n\nFilesystem read-only attributes are a guardrail, not a security boundary. Payload hashes and candidate fingerprints provide the tamper and stale-input detection used at integration.\n\n## Coordinator: create the run\n\nStart from a clean, current coordinator branch and create the manifest. By default, run data is stored in the sibling `ABQinfo-verification-runs` directory, outside every Git worktree.\n\n```powershell\n$run = ./scripts/project/New-ParallelVerificationRun.ps1 `\n  -RunId '2026-09-10-links-01' `\n  -WorkerIds codex,claude `\n  -StartId 'src-1234567890abcdef' `\n  -Count 40 | ConvertFrom-Json\n\n$manifest = $run.manifest_path\n```\n\nExplicit candidate IDs are also supported:\n\n```powershell\n./scripts/project/New-ParallelVerificationRun.ps1 `\n  -RunId '2026-09-10-targeted-01' `\n  -WorkerIds codex,claude `\n  -CandidateIds src-1111111111111111,src-2222222222222222\n```\n\nRun IDs are permanent. Never reuse or edit an existing run directory; create a new run when inputs or assignments must change.\n\n## Coordinator: create isolated worktrees\n\nThe worktree root must be outside the repository. The script creates one detached checkout per worker at the manifest commit. Worktree creation and later removal are coordinator actions, never worker actions.\n\n```powershell\n./scripts/project/Initialize-ParallelVerificationWorktrees.ps1 `\n  -ManifestPath $manifest `\n  -WorktreeRoot 'C:\\ABQinfo-worker-worktrees'\n```\n\nUse `-PlanOnly` to inspect paths without creating them. A detached checkout deliberately gives a worker no task branch to commit or push.\n\n## Worker contract\n\nGive each worker only its worktree path, absolute manifest path, and assigned worker ID. From that worktree, run:\n\n```powershell\n./scripts/project/Invoke-ParallelVerificationShard.ps1 `\n  -ManifestPath 'C:\\ABQinfo-verification-runs\\2026-09-10-links-01\\manifest.json' `\n  -WorkerId codex `\n  -RepoRoot (Get-Location).Path\n```\n\nAny Codex session uses the same command with the other legacy lane ID, `-WorkerId claude`, when that is its immutable assignment. The worker script performs:\n\n1. local-file existence, byte-size, and SHA-256 verification when a local file is recorded;\n2. authoritative-source/provenance metadata verification, rejecting an R2 URL as the authoritative source; and\n3. live HTTP reachability using HEAD with GET fallback.\n\n`-SkipLinkCheck` is only for deterministic offline testing and produces `incomplete`, not `passed`, results.\n\nA coordinator may provide an optional, worker-specific proposal file. It must name the run and worker, contain only candidates in that worker's shard, and use manifest-allowed fields:\n\n```json\n{\n  \"run_id\": \"2026-09-10-links-01\",\n  \"worker_id\": \"codex\",\n  \"proposals\": [\n    {\n      \"candidate_id\": \"src-1111111111111111\",\n      \"proposed_updates\": {\n        \"validation_status\": \"passed: file, official source, and link verified\",\n        \"processing_notes_append\": \"Verified in the immutable parallel run.\"\n      },\n      \"review_notes\": \"The live official file matches the inventoried local copy.\"\n    }\n  ]\n}\n```\n\nProposals are inert evidence. A worker cannot apply them. Do not put arbitrary or content-file changes in a proposal.\n\nWorker prohibitions are absolute:\n\n- no edits to `master-inventory.json`, `checkpoint.json`, `active-run.json`, content, discovery queues, or shared project state;\n- no `Update-Candidate.ps1`, crawler imports, downloads, archive-plan execution, or R2 commands;\n- no `git add`, commit, switch, merge, rebase, push, worktree management, or PR commands; and\n- no output except the manifest-assigned immutable result file.\n\n## Coordinator: validate and integrate\n\nFirst validate all assigned result files:\n\n```powershell\n./scripts/project/Test-ParallelVerificationRun.ps1 -ManifestPath $manifest\n```\n\nPreview only the explicitly accepted candidates. This does not modify inventory:\n\n```powershell\n./scripts/project/Merge-ParallelVerificationRun.ps1 `\n  -ManifestPath $manifest `\n  -AcceptedCandidateIds src-1111111111111111,src-2222222222222222\n```\n\nAfter reviewing the preview, the single coordinator may apply the same acceptance list. Apply mode must run on the coordinator's attached branch, never in a detached worker worktree:\n\n```powershell\n./scripts/project/Merge-ParallelVerificationRun.ps1 `\n  -ManifestPath $manifest `\n  -AcceptedCandidateIds src-1111111111111111,src-2222222222222222 `\n  -Apply\n```\n\nApply mode fails closed if any accepted candidate is stale, missing, duplicated, incomplete, or failed. It also fails if any parallel-verification integrator holds the repository-wide inventory-writer lease. It updates only the accepted candidates, only through `Update-Candidate.ps1`, and records before/after fingerprints in the receipt.\n\nAfter integration, the coordinator owns the normal ABQInfo duties: inspect the diff, update checkpoint state if appropriate, run project validation, and decide what to stage. Results do not authorize a PR or any R2 operation.\n\n## Cleanup and recovery\n\nThe coordinator may remove detached worktrees only after result artifacts are safely validated. Use normal `git worktree remove <exact-path>` commands and then inspect `git worktree list`. Never ask a worker to clean up Git state.\n\nIf a worker or integration stops:\n\n- keep the immutable manifest and completed results;\n- rerun validation to learn exactly which workers are missing;\n- do not overwrite a partial or disputed result—create a new run ID; and\n- treat an existing inventory-writer lease as evidence of an active or interrupted writer. Confirm no integrator is running before removing a stale lease.\n\nRun the isolated regression suite with:\n\n```powershell\n./scripts/project/Test-ParallelVerificationWorkflow.ps1\n```\n\nFor long-running, candidate-checkpointed work that survives session interruptions, use [AUTONOMOUS-VERIFICATION-CAMPAIGNS.md](AUTONOMOUS-VERIFICATION-CAMPAIGNS.md). Campaigns build on this safety model while adding immutable per-candidate results, lane-neutral resumption, expiring exclusive leases, derived status, and write-ahead idempotent integration.\n"
-      ],
-      "prohibited_actions": [
-        "Do not infer new external authorization from this artifact."
-      ],
-      "constraints": [],
-      "settled_decisions": [],
-      "unresolved_gates": [],
-      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
-    },
-    {
-      "governance_id": "workflow-stage-lifecycle",
-      "category": "active workflow requirement",
-      "title": "Seal prior lifecycle stages at immutable endpoints; authorize exact later deltas; preserve historical evidence and remediation baselines unchanged",
-      "scope": {
-        "global": true
-      },
-      "authority": "standing project policy / explicit owner instruction",
-      "decision_date": null,
-      "effective_date": "as recorded in controlling artifact; no chronology precedence",
-      "state": "active",
-      "controlling_artifacts": [
-        {
-          "path": "project-state/workflow-stage-lifecycle.md",
-          "sha256": "65f0f0952ba0fc93070fc98664cceab98f73dd91dbfd92eb1b9bf54a0d98b19a",
-          "binding_pointers": [
-            "/"
-          ]
-        }
-      ],
-      "binding_requirement": "Seal prior lifecycle stages at immutable endpoints; authorize exact later deltas; preserve historical evidence and remediation baselines unchanged.",
-      "required_actions": [
-        "Seal prior lifecycle stages at immutable endpoints; authorize exact later deltas; preserve historical evidence and remediation baselines unchanged.",
-        "# Workflow stage regression lifecycle\n\nThe owner authorized this architecture for PR #194; the invocation is saved in `discovery/planning-publication-lifecycle-authorization-2026-09-26.json`. `workflow-stage-lifecycle.json` records the contiguous Git boundaries of each completed stage and the active stage, plus independently completed audits such as the original mission-scope correction. It grants no external-action, publication or merge authorization.\n\nA completed stage retains every assertion about its original authorized population, mutations, provenance, archive receipts and governing evidence. `StageSnapshot` reads stage-owned mutable state at that stage's registered endpoint. Content invariants compare the original baseline to that endpoint, including content, layouts, assets, static files and visitor-visible configuration. They do not assert that subsequent work cannot exist.\n\nEvidence files remain live and protected. Their normalized bytes must equal the registered immutable Git blobs; changing a snapshot endpoint cannot silently replace the sealed evidence hash. The lifecycle regression checks continuous stage boundaries, ancestry, required regression scripts and protected evidence, then executes the active stage's exact-delta guard. It runs through the normal project suite without an environment switch, assertion suppression or alternate suite.\n\nFor the next authorized stage, checkpoint the completed current stage, record its immutable endpoint, and append the next stage using that exact commit as its baseline. The new stage must declare a guard and its regression scripts, and those scripts must run in the ordinary suite. A gap, missing guard or multiple active stages fails validation. Preserve all existing boundaries and evidence hashes; add new evidence seals rather than replacing completed-stage evidence. An earlier publication regression can then use its endpoint through the same `StageSnapshot` API instead of requiring new exceptions in older tests.\n\nThe current Planning guard covers exactly the twelve archive-verified records and the six approved pages. It compares the complete inventory population, forbids changes outside the authorized records and fields, pins the authorized final row values, checks the original placement-assigned states and positive mission scope, preserves source/provenance fields, and requires unchanged R2 state. Approved page hashes use UTF-8 bytes with normalized line endings and retain a witness in the original publication commit. Source and rendered regressions retain the incomplete Impact Area family, Barelas duplicate suppression, separate official/archive links, section anchors and both approved cross-links. Rendered and preview checks inspect the delivered HTML and the descriptions. The derived retained-source queue adds exactly the twelve newly implemented sources as pending roots, preserves every prior audit result, and cannot claim that new descendant research was performed.\n"
-      ],
-      "prohibited_actions": [
-        "Do not infer new external authorization from this artifact."
-      ],
-      "constraints": [],
-      "settled_decisions": [],
-      "unresolved_gates": [],
-      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+      "releases_gates": [
+        "go-2009:archive-publication-authorization",
+        "go-2011:archive-publication-authorization"
+      ]
     }
   ]
 }
