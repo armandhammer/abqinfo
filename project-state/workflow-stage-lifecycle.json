@@ -176,6 +176,18 @@
       "exact_delta_guard": {
         "module": "Pr198ContinuityPrMergeLifecycle",
         "function": "guard_current_delta"
+      },
+      "end_commit": "2cc6a349193004b41e42370b2554cd263bde1247"
+    },
+    {
+      "id": "pr198-postmerge-closeout",
+      "baseline_commit": "2cc6a349193004b41e42370b2554cd263bde1247",
+      "regression_scripts": [
+        "scripts/project/Test-WorkflowStageLifecycle.py"
+      ],
+      "exact_delta_guard": {
+        "module": "Pr198PostMergeCloseoutLifecycle",
+        "function": "guard_current_delta"
       }
     }
   ],
