@@ -10,8 +10,12 @@ Set-StrictMode -Version Latest
 if ($LASTEXITCODE) { throw 'Durable governance regression failed.' }
 & python "$PSScriptRoot/Test-Pr198Settled.py"
 if ($LASTEXITCODE) { throw 'Settled PR198 actual-record/output-form regression failed.' }
+& python "$PSScriptRoot/Test-Pr198Reconcile.py"
+if ($LASTEXITCODE) { throw 'PR #198 main-reconciliation regression failed.' }
 & python "$PSScriptRoot/Resolve-TaskGovernance.py" active --phase final
 if ($LASTEXITCODE) { throw 'Current task governance validation failed.' }
+& python "$PSScriptRoot/Test-Pr198BackgroundSnapshot.py"
+if ($LASTEXITCODE) { throw 'PR #198 background snapshot boundary validation failed.' }
 & python "$PSScriptRoot/Test-Pr196Closeout.py"
 if ($LASTEXITCODE) { throw 'PR #196 background closeout validation failed.' }
 & python "$PSScriptRoot/Test-FirstQualityRemediation.py"

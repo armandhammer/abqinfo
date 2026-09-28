@@ -21,7 +21,8 @@ def guard_current_delta():
     for i in delta & a.keys():
         assert all(a[i].get(k)==b[i].get(k) for k in immutable), 'Original evidence changed: '+i
     pages=set(G.load('project-state/governance/pr198-remote-resume-2026-09-27/population.json')['pages'])
-    paths=G.changed_paths(stage.stage['baseline_commit'])
+    paths=(git('diff',stage.stage['baseline_commit'],stage.end,'--name-only').decode().splitlines()
+           if stage.end else G.changed_paths(stage.stage['baseline_commit']))
     visible={p for p in paths if p.startswith(('content/','layouts/','assets/','static/')) or p=='hugo.toml'}
     assert visible<=pages, 'Visitor-visible delta outside six frozen pages'
     allowed={'project-state/master-inventory.json','project-state/r2-inventory.json','project-state/checkpoint.json','project-state/CURRENT.md','project-state/workflow-stage-lifecycle.json','project-state/governance-registry.json','project-state/discovery/consolidated-human-review-queue.json','project-state/discovery/publication-quality-remediation-2026-09-26.json','project-state/discovery/publication-quality-remediation-2026-09-26.md','scripts/project/Pr198SettledLifecycle.py','scripts/project/Test-Pr198Settled.py','scripts/project/Invoke-ProjectValidation.ps1'}

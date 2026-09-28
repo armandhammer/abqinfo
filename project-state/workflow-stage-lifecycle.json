@@ -152,6 +152,18 @@
       "exact_delta_guard": {
         "module": "Pr198SettledLifecycle",
         "function": "guard_current_delta"
+      },
+      "end_commit": "073edabd10d9a0996eb897e2ed957943aed4de18"
+    },
+    {
+      "id": "pr198-main-reconciliation",
+      "baseline_commit": "073edabd10d9a0996eb897e2ed957943aed4de18",
+      "regression_scripts": [
+        "scripts/project/Test-Pr198Reconcile.py"
+      ],
+      "exact_delta_guard": {
+        "module": "Pr198ReconcileLifecycle",
+        "function": "guard_current_delta"
       }
     }
   ],
@@ -966,6 +978,18 @@
       "regression_scripts": [
         "scripts/project/Test-MissionScopeAudit.py"
       ]
+    },
+    {
+      "id": "pr198-background-snapshot",
+      "baseline_commit": "de48a74d8522806a0d68ce247eb1d5d6a309c0ca",
+      "regression_scripts": [
+        "scripts/project/Test-Pr198BackgroundSnapshot.py"
+      ],
+      "exact_delta_guard": {
+        "module": "Pr198BackgroundSnapshotLifecycle",
+        "function": "guard_current_delta"
+      },
+      "end_commit": "90c78020d7d7cc2fc3eaee8b1baa7689966ed7b9"
     }
   ]
 }
