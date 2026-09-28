@@ -164,6 +164,18 @@
       "exact_delta_guard": {
         "module": "Pr198ReconcileLifecycle",
         "function": "guard_current_delta"
+      },
+      "end_commit": "700515a90de68294936e21925e7ac5b8f0d65d3d"
+    },
+    {
+      "id": "pr198-continuity-pr-merge",
+      "baseline_commit": "700515a90de68294936e21925e7ac5b8f0d65d3d",
+      "regression_scripts": [
+        "scripts/project/Test-WorkflowStageLifecycle.py"
+      ],
+      "exact_delta_guard": {
+        "module": "Pr198ContinuityPrMergeLifecycle",
+        "function": "guard_current_delta"
       }
     }
   ],
@@ -990,6 +1002,14 @@
         "function": "guard_current_delta"
       },
       "end_commit": "90c78020d7d7cc2fc3eaee8b1baa7689966ed7b9"
+    },
+    {
+      "id": "pr198-continuity",
+      "baseline_commit": "90c78020d7d7cc2fc3eaee8b1baa7689966ed7b9",
+      "regression_scripts": [
+        "scripts/project/Test-WorkflowStageLifecycle.py"
+      ],
+      "end_commit": "dc649b4f68510381c38902e615cae8246461cb94"
     }
   ]
 }
