@@ -407,7 +407,7 @@ The November 2012 Environmental Planning Commission program book is the broad hi
 
 The separately published two-page 2013 summary is useful as a comparison component because its allocations differ from the EPC book—for example, the 2013 Streets column lists $56.19 million rather than $33 million. The preserved evidence does not establish this table’s approval stage or rank it as a final successor. Compare the editions as historical planning records; do not combine their allocations or treat them as actual expenditures.
 
-- [2013–2022 Decade Plan and 2013 GO Program: EPC-stage book](https://files.abqinfo.com/city-data/capital-spending/cabq-2013-2022-decade-plan-go-bond-program.pdf) · [City original](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2013GOBondProgramEPC.pdf)
+- [2013–2022 Decade Plan and 2013 GO Program: EPC-Stage Book](https://files.abqinfo.com/city-data/capital-spending/cabq-2013-2022-decade-plan-go-bond-program.pdf) · [City original](https://www.cabq.gov/municipaldevelopment/documents/cip-documents/2013GOBondProgramEPC.pdf)
 
 Comparison component: [separate 2013 summary table; approval stage unestablished](https://files.abqinfo.com/city-data/capital-spending/cabq-go-bond-program-summary-2013.pdf) · [City original](https://www.cabq.gov/municipaldevelopment/documents/2013GOSummary.pdf)
 

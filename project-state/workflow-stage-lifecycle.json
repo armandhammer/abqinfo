@@ -188,6 +188,18 @@
       "exact_delta_guard": {
         "module": "Pr198PostMergeCloseoutLifecycle",
         "function": "guard_current_delta"
+      },
+      "end_commit": "22186a1d26568a2fb2f5ae320fa125d3f4a8ae0b"
+    },
+    {
+      "id": "capital-title-case",
+      "baseline_commit": "22186a1d26568a2fb2f5ae320fa125d3f4a8ae0b",
+      "regression_scripts": [
+        "scripts/project/Test-WorkflowStageLifecycle.py"
+      ],
+      "exact_delta_guard": {
+        "module": "CapitalTitleCaseLifecycle",
+        "function": "guard_current_delta"
       }
     }
   ],
