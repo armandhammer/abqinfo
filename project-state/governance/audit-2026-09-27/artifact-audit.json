@@ -1620,9 +1620,11 @@
     },
     {
       "path": "project-state/checkpoint.json",
-      "sha256": "192b60094fd4318dc3f102feba5857fb967fef9155f050c290f2896734be6b49",
+      "sha256": "a3b34342c27d8615ac8a7ae991d0ca2d5dff7201c6659f10c8c2c13381c97b8c",
+      "hash_kind": "normalized-file-bytes",
       "classification": "historical evidence only / non-binding",
-      "reason": "Derived settled implementation snapshot, not new architecture authority."
+      "governance_ids": [],
+      "rationale": "Checkpoint history records project state and recovery context; active requirements are maintained in the governance registry."
     },
     {
       "path": "project-state/climate-action-implementation-decisions-2026-08-23.json",
@@ -16277,6 +16279,14 @@
       "rationale": "Registered exact continuing policy/decision clauses; dates do not determine precedence. Historical receipts and recommendations outside binding clauses confer no authority."
     },
     {
+      "path": "project-state/governance/ordinary-transport-projects-2026-09-28/implementation-v15.json",
+      "sha256": "5f6dade111a840eeb03b800a5a141394b9a3f303bb8af20f1e38622ae91939f7",
+      "hash_kind": "normalized-file-bytes",
+      "classification": "historical evidence only / non-binding",
+      "governance_ids": [],
+      "rationale": "Completed PR implementation or superseded closeout contract retained as evidence; current authority is resolved by the final closeout contract."
+    },
+    {
       "path": "project-state/governance/pr198-approved-2026-09-27/contract-before-approval.json",
       "sha256": "e4683e3054e489d43f968c4736a1c45aad03750e10845d28fcb781ce806844b7",
       "classification": "historical evidence only / non-binding",
@@ -16514,6 +16524,86 @@
       "classification": "historical evidence only / non-binding",
       "reason": "Initial immutable closeout contract retained before audit refresh.",
       "rationale": "Resolver snapshot preserved as task history; current task uses a fresh final contract."
+    },
+    {
+      "path": "project-state/governance/pr202-postmerge-closeout-2026-09-28/contract-final.json",
+      "sha256": "e3f0082b01181e70fc175544eda1541f93235f815e89982abd8fa0429e86b435",
+      "hash_kind": "normalized-file-bytes",
+      "classification": "historical evidence only / non-binding",
+      "governance_ids": [],
+      "rationale": "Superseded resolver evidence retained from earlier population and registry snapshots; current authority is pinned by the closeout's final contract."
+    },
+    {
+      "path": "project-state/governance/pr202-postmerge-closeout-2026-09-28/contract-v2.json",
+      "sha256": "a88ee4b285625511ddf3a932154b1c89d69e34a403a21039d3da1bbe691db8f6",
+      "hash_kind": "normalized-file-bytes",
+      "classification": "historical evidence only / non-binding",
+      "governance_ids": [],
+      "rationale": "Superseded resolver evidence retained from earlier population and registry snapshots; current authority is pinned by the closeout's final contract."
+    },
+    {
+      "path": "project-state/governance/pr202-postmerge-closeout-2026-09-28/contract-v3.json",
+      "sha256": "a3a36390ae7c3e1806a9e94183c1166126afe5a1aa46bfda608126eb20c24b7f",
+      "hash_kind": "normalized-file-bytes",
+      "classification": "historical evidence only / non-binding",
+      "governance_ids": [],
+      "rationale": "Superseded resolver evidence retained from earlier population and registry snapshots; current authority is pinned by the closeout's final contract."
+    },
+    {
+      "path": "project-state/governance/pr202-postmerge-closeout-2026-09-28/contract-v4.json",
+      "sha256": "2b255260c54aae3fbe5e6e791d680fbbd1e35854bfe19ee8a5fc2b15458d4f5b",
+      "hash_kind": "normalized-file-bytes",
+      "classification": "historical evidence only / non-binding",
+      "governance_ids": [],
+      "rationale": "Completed PR implementation or superseded closeout contract retained as evidence; current authority is resolved by the final closeout contract."
+    },
+    {
+      "path": "project-state/governance/pr202-postmerge-closeout-2026-09-28/contract.json",
+      "sha256": "4aa0af13dfdd10f6663c67349963a00da66af21eeaa5ce50cf4d0ba7d880ac63",
+      "hash_kind": "normalized-file-bytes",
+      "classification": "historical evidence only / non-binding",
+      "governance_ids": [],
+      "rationale": "Superseded resolver evidence retained from earlier population and registry snapshots; current authority is pinned by the closeout's final contract."
+    },
+    {
+      "path": "project-state/governance/pr202-postmerge-closeout-2026-09-28/implementation-v2.json",
+      "sha256": "d009857216d190d4c481084e1a7caaf3dc9cf72a0acd9691cacea688415dbc3a",
+      "hash_kind": "normalized-file-bytes",
+      "classification": "historical evidence only / non-binding",
+      "governance_ids": [],
+      "rationale": "Superseded resolver evidence retained from earlier population and registry snapshots; current authority is pinned by the closeout's final contract."
+    },
+    {
+      "path": "project-state/governance/pr202-postmerge-closeout-2026-09-28/implementation-v3.json",
+      "sha256": "93ff949d56bbc175daf0335e70b7907b5fb2ff4729b6fd2ee8f4b1a2569afc2d",
+      "hash_kind": "normalized-file-bytes",
+      "classification": "historical evidence only / non-binding",
+      "governance_ids": [],
+      "rationale": "Superseded resolver evidence retained from earlier population and registry snapshots; current authority is pinned by the closeout's final contract."
+    },
+    {
+      "path": "project-state/governance/pr202-postmerge-closeout-2026-09-28/implementation-v4.json",
+      "sha256": "c7367515e64b6b10eebb4933ba447b384fb373639dab26f200b076d476cb43b5",
+      "hash_kind": "normalized-file-bytes",
+      "classification": "historical evidence only / non-binding",
+      "governance_ids": [],
+      "rationale": "Completed PR implementation or superseded closeout contract retained as evidence; current authority is resolved by the final closeout contract."
+    },
+    {
+      "path": "project-state/governance/pr202-postmerge-closeout-2026-09-28/implementation.json",
+      "sha256": "4f7ab70b830845ef9f905d4c29f298a33308aa3f1006892543b01e4372f3e1ad",
+      "hash_kind": "normalized-file-bytes",
+      "classification": "historical evidence only / non-binding",
+      "governance_ids": [],
+      "rationale": "Superseded resolver evidence retained from earlier population and registry snapshots; current authority is pinned by the closeout's final contract."
+    },
+    {
+      "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/implementation-v2.json",
+      "sha256": "2010b0a928bd2031f5ce463f612a189a48e31b02c9cb9c23eb4284d781fb2814",
+      "hash_kind": "normalized-file-bytes",
+      "classification": "historical evidence only / non-binding",
+      "governance_ids": [],
+      "rationale": "Completed PR implementation or superseded closeout contract retained as evidence; current authority is resolved by the final closeout contract."
     },
     {
       "path": "project-state/governance/task-contract-v1.json",
