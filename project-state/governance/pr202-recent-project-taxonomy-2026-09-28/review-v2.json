@@ -1,0 +1,24 @@
+{
+  "artifact_type": "task_review_evidence",
+  "task_id": "pr202-recent-project-taxonomy-2026-09-28",
+  "baseline_commit": "176a4c8f2347864e852b38d46807277320041f1b",
+  "pages": [
+    "content/transportation/bicycling/projects/_index.md",
+    "content/transportation/roadway-projects/_index.md"
+  ],
+  "observed_issue": "The existing workflow-stage guard covers the original 21-record publication stage and rejected this follow-on correction as an out-of-scope delta.",
+  "stage_plan": "Seal the original stage at its existing branch commit, open a contiguous correction stage, and check the exact two-page taxonomy diff against the frozen baseline.",
+  "page_plan": "Label 2021?2026 projects Recent Projects on both pages and retain the Past Projects (2020 and Earlier) buckets without moving entries.",
+  "record_changes": [],
+  "archive_changes": [],
+  "verification": {
+    "full_project_validation": "passed; local log tmp/pr202-taxonomy-validation.log",
+    "hugo_render": "passed",
+    "local_recent_anchors": "both pages expose recent-projects-20212026",
+    "local_historical_anchors": "both pages retain past-projects-2020-and-earlier",
+    "pr_description_validation": "passed",
+    "workflow_stage_lifecycle": "22 contiguous intervals; 160 historical evidence files unchanged",
+    "governance_resolution": "46 applicable rules; zero conflicts or unresolved gates",
+    "inventory_and_r2_delta": "none"
+  }
+}

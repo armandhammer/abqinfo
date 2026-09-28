@@ -2,11 +2,11 @@
 title: "Roadway Projects"
 ---
 
-Street and roadway infrastructure projects. Projects dated from 2021 through 2026 are grouped as current; projects from 2020 or earlier are grouped as past. State highway projects are included only when they materially affect Albuquerque.
+Street and roadway infrastructure projects. Projects dated from 2021 through 2026 are grouped as recent; projects from 2020 or earlier are grouped as past. State highway projects are included only when they materially affect Albuquerque.
 
 Separate [Studies]({{< relref "studies.md" >}}) and [Speed Management]({{< relref "speed-management.md" >}}) pages retain technical work and program records that are broader than individual project listings.
 
-## Current Projects (2021–2026)
+## Recent Projects (2021–2026)
 
 ### State Highway Project Gateway
 

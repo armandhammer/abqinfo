@@ -4,9 +4,9 @@ title: "Projects"
 
 Bicycle infrastructure projects.
 
-Projects dated from 2021 through 2026 are grouped as current. Projects from 2020 or earlier are grouped as past, avoiding uncertain judgments about whether construction or closeout is still active.
+Projects dated from 2021 through 2026 are grouped as recent. Projects from 2020 or earlier are grouped as past, avoiding uncertain judgments about whether construction or closeout is still active.
 
-## Current Projects (2021–2026)
+## Recent Projects (2021–2026)
 
 ### Tom Bolack Urban Forest Trail Improvements
 

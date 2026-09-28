@@ -1,0 +1,506 @@
+{
+  "artifact_type": "task_implementation_plan",
+  "contract": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/contract-v2.json",
+  "contract_sha256": "8b41df8356cbb2a059dae1b97942289ce20d2fd376170458c1828368f7cff121",
+  "population_sha256": "3f7903687faf842cedc2db674fc98346e768634a83ab3f2f41bbd49222ca3033",
+  "respected_governance_ids": [
+    "decision-archive-recovery-53d2a462",
+    "decision-buena-vista-roll-plot-decisions-2026-08-21-a7753798",
+    "decision-contributed-document-decisions-2026-08-14-49ed9027",
+    "decision-contributed-document-review-2026-08-14-ce37b460",
+    "decision-council-closeout-status-2026-09-20-4dfd8e30",
+    "decision-council-projects-planning-forms-cluster-research-2026-09-13-bed287b5",
+    "decision-council-records-archive-decisions-2026-09-12-cb6d7656",
+    "decision-district-7-find-your-councilor-family-decision-2026-09-20-90f9edc7",
+    "decision-dmd-library-expansion-decisions-2026-08-14-1f0ff836",
+    "decision-eight-batch-2-decisions-2026-08-14-f83e424c",
+    "decision-featured-project-documents-decisions-2026-08-23-a4e2171c",
+    "decision-inventory-overrides-09e22b5f",
+    "decision-kafb-safety-grant-decisions-2026-08-14-59c87024",
+    "decision-ordinary-second-large-campaign-dmd-review-decisions-2026-09-26-a29a51e4",
+    "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
+    "decision-paseo-del-volcan-publication-decisions-2026-09-17-b4f94eab",
+    "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+    "decision-project-procurement-records-cluster-research-2026-09-12-9a7ef8f0",
+    "decision-recent-capital-projects-large3-decisions-c863bf08",
+    "decision-recent-high-value-7-decisions-3ef59640",
+    "decision-recent-programs-maps-large2-decisions-525609f8",
+    "decision-retained-i25-improved-decisions-2026-08-24-67ba7604",
+    "decision-retained-source-expansion-14-decisions-2026-08-28-c9e5ee32",
+    "decision-retained-source-expansion-15-decisions-2026-08-28-85d0a33a",
+    "decision-retained-source-expansion-16-decisions-2026-08-29-08f97fd5",
+    "decision-retained-source-expansion-6d-decisions-2026-08-25-36272992",
+    "decision-retained-source-expansion-8-decisions-2026-08-26-238fdd6d",
+    "decision-retained-source-expansion-9-decisions-2026-08-27-a631728d",
+    "decision-scoped-source-review-2026-08-04-33554a9c",
+    "decision-unm-cnm-focused-source-scope-1673e3f6",
+    "policy-agents",
+    "policy-durable-task-governance",
+    "policy-mission-scope",
+    "policy-mission-scope-legacy",
+    "policy-project-recency",
+    "policy-project-state",
+    "policy-publication-quality",
+    "policy-quality-exclusions",
+    "policy-r2-storage",
+    "policy-source-priorities",
+    "policy-tip-stip-retention",
+    "workflow-autonomous-verification",
+    "workflow-background-campaign",
+    "workflow-handoff-retirement",
+    "workflow-parallel-verification",
+    "workflow-stage-lifecycle"
+  ],
+  "subjects": {},
+  "actions": [
+    "placement",
+    "visitor_visible_change",
+    "content_implementation",
+    "governance_implementation",
+    "external_mutation"
+  ],
+  "events": [
+    {
+      "operation": "placement",
+      "candidate_ids": [],
+      "governance_ids": [
+        "decision-archive-recovery-53d2a462",
+        "decision-buena-vista-roll-plot-decisions-2026-08-21-a7753798",
+        "decision-contributed-document-decisions-2026-08-14-49ed9027",
+        "decision-contributed-document-review-2026-08-14-ce37b460",
+        "decision-council-closeout-status-2026-09-20-4dfd8e30",
+        "decision-council-projects-planning-forms-cluster-research-2026-09-13-bed287b5",
+        "decision-council-records-archive-decisions-2026-09-12-cb6d7656",
+        "decision-district-7-find-your-councilor-family-decision-2026-09-20-90f9edc7",
+        "decision-dmd-library-expansion-decisions-2026-08-14-1f0ff836",
+        "decision-eight-batch-2-decisions-2026-08-14-f83e424c",
+        "decision-featured-project-documents-decisions-2026-08-23-a4e2171c",
+        "decision-inventory-overrides-09e22b5f",
+        "decision-kafb-safety-grant-decisions-2026-08-14-59c87024",
+        "decision-ordinary-second-large-campaign-dmd-review-decisions-2026-09-26-a29a51e4",
+        "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
+        "decision-paseo-del-volcan-publication-decisions-2026-09-17-b4f94eab",
+        "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+        "decision-project-procurement-records-cluster-research-2026-09-12-9a7ef8f0",
+        "decision-recent-capital-projects-large3-decisions-c863bf08",
+        "decision-recent-high-value-7-decisions-3ef59640",
+        "decision-recent-programs-maps-large2-decisions-525609f8",
+        "decision-retained-i25-improved-decisions-2026-08-24-67ba7604",
+        "decision-retained-source-expansion-14-decisions-2026-08-28-c9e5ee32",
+        "decision-retained-source-expansion-15-decisions-2026-08-28-85d0a33a",
+        "decision-retained-source-expansion-16-decisions-2026-08-29-08f97fd5",
+        "decision-retained-source-expansion-6d-decisions-2026-08-25-36272992",
+        "decision-retained-source-expansion-8-decisions-2026-08-26-238fdd6d",
+        "decision-retained-source-expansion-9-decisions-2026-08-27-a631728d",
+        "decision-scoped-source-review-2026-08-04-33554a9c",
+        "decision-unm-cnm-focused-source-scope-1673e3f6",
+        "policy-agents",
+        "policy-durable-task-governance",
+        "policy-mission-scope",
+        "policy-mission-scope-legacy",
+        "policy-project-recency",
+        "policy-project-state",
+        "policy-publication-quality",
+        "policy-quality-exclusions",
+        "policy-r2-storage",
+        "policy-source-priorities",
+        "policy-tip-stip-retention",
+        "workflow-autonomous-verification",
+        "workflow-background-campaign",
+        "workflow-handoff-retirement",
+        "workflow-parallel-verification",
+        "workflow-stage-lifecycle"
+      ],
+      "action": "implement",
+      "use_contract_record_rules": true
+    },
+    {
+      "operation": "visitor_visible_change",
+      "candidate_ids": [],
+      "governance_ids": [
+        "decision-archive-recovery-53d2a462",
+        "decision-buena-vista-roll-plot-decisions-2026-08-21-a7753798",
+        "decision-contributed-document-decisions-2026-08-14-49ed9027",
+        "decision-contributed-document-review-2026-08-14-ce37b460",
+        "decision-council-closeout-status-2026-09-20-4dfd8e30",
+        "decision-council-projects-planning-forms-cluster-research-2026-09-13-bed287b5",
+        "decision-council-records-archive-decisions-2026-09-12-cb6d7656",
+        "decision-district-7-find-your-councilor-family-decision-2026-09-20-90f9edc7",
+        "decision-dmd-library-expansion-decisions-2026-08-14-1f0ff836",
+        "decision-eight-batch-2-decisions-2026-08-14-f83e424c",
+        "decision-featured-project-documents-decisions-2026-08-23-a4e2171c",
+        "decision-inventory-overrides-09e22b5f",
+        "decision-kafb-safety-grant-decisions-2026-08-14-59c87024",
+        "decision-ordinary-second-large-campaign-dmd-review-decisions-2026-09-26-a29a51e4",
+        "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
+        "decision-paseo-del-volcan-publication-decisions-2026-09-17-b4f94eab",
+        "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+        "decision-project-procurement-records-cluster-research-2026-09-12-9a7ef8f0",
+        "decision-recent-capital-projects-large3-decisions-c863bf08",
+        "decision-recent-high-value-7-decisions-3ef59640",
+        "decision-recent-programs-maps-large2-decisions-525609f8",
+        "decision-retained-i25-improved-decisions-2026-08-24-67ba7604",
+        "decision-retained-source-expansion-14-decisions-2026-08-28-c9e5ee32",
+        "decision-retained-source-expansion-15-decisions-2026-08-28-85d0a33a",
+        "decision-retained-source-expansion-16-decisions-2026-08-29-08f97fd5",
+        "decision-retained-source-expansion-6d-decisions-2026-08-25-36272992",
+        "decision-retained-source-expansion-8-decisions-2026-08-26-238fdd6d",
+        "decision-retained-source-expansion-9-decisions-2026-08-27-a631728d",
+        "decision-scoped-source-review-2026-08-04-33554a9c",
+        "decision-unm-cnm-focused-source-scope-1673e3f6",
+        "policy-agents",
+        "policy-durable-task-governance",
+        "policy-mission-scope",
+        "policy-mission-scope-legacy",
+        "policy-project-recency",
+        "policy-project-state",
+        "policy-publication-quality",
+        "policy-quality-exclusions",
+        "policy-r2-storage",
+        "policy-source-priorities",
+        "policy-tip-stip-retention",
+        "workflow-autonomous-verification",
+        "workflow-background-campaign",
+        "workflow-handoff-retirement",
+        "workflow-parallel-verification",
+        "workflow-stage-lifecycle"
+      ],
+      "action": "implement",
+      "use_contract_record_rules": true
+    },
+    {
+      "operation": "governance_implementation",
+      "candidate_ids": [],
+      "governance_ids": [
+        "decision-archive-recovery-53d2a462",
+        "decision-buena-vista-roll-plot-decisions-2026-08-21-a7753798",
+        "decision-contributed-document-decisions-2026-08-14-49ed9027",
+        "decision-contributed-document-review-2026-08-14-ce37b460",
+        "decision-council-closeout-status-2026-09-20-4dfd8e30",
+        "decision-council-projects-planning-forms-cluster-research-2026-09-13-bed287b5",
+        "decision-council-records-archive-decisions-2026-09-12-cb6d7656",
+        "decision-district-7-find-your-councilor-family-decision-2026-09-20-90f9edc7",
+        "decision-dmd-library-expansion-decisions-2026-08-14-1f0ff836",
+        "decision-eight-batch-2-decisions-2026-08-14-f83e424c",
+        "decision-featured-project-documents-decisions-2026-08-23-a4e2171c",
+        "decision-inventory-overrides-09e22b5f",
+        "decision-kafb-safety-grant-decisions-2026-08-14-59c87024",
+        "decision-ordinary-second-large-campaign-dmd-review-decisions-2026-09-26-a29a51e4",
+        "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
+        "decision-paseo-del-volcan-publication-decisions-2026-09-17-b4f94eab",
+        "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+        "decision-project-procurement-records-cluster-research-2026-09-12-9a7ef8f0",
+        "decision-recent-capital-projects-large3-decisions-c863bf08",
+        "decision-recent-high-value-7-decisions-3ef59640",
+        "decision-recent-programs-maps-large2-decisions-525609f8",
+        "decision-retained-i25-improved-decisions-2026-08-24-67ba7604",
+        "decision-retained-source-expansion-14-decisions-2026-08-28-c9e5ee32",
+        "decision-retained-source-expansion-15-decisions-2026-08-28-85d0a33a",
+        "decision-retained-source-expansion-16-decisions-2026-08-29-08f97fd5",
+        "decision-retained-source-expansion-6d-decisions-2026-08-25-36272992",
+        "decision-retained-source-expansion-8-decisions-2026-08-26-238fdd6d",
+        "decision-retained-source-expansion-9-decisions-2026-08-27-a631728d",
+        "decision-scoped-source-review-2026-08-04-33554a9c",
+        "decision-unm-cnm-focused-source-scope-1673e3f6",
+        "policy-agents",
+        "policy-durable-task-governance",
+        "policy-mission-scope",
+        "policy-mission-scope-legacy",
+        "policy-project-recency",
+        "policy-project-state",
+        "policy-publication-quality",
+        "policy-quality-exclusions",
+        "policy-r2-storage",
+        "policy-source-priorities",
+        "policy-tip-stip-retention",
+        "workflow-autonomous-verification",
+        "workflow-background-campaign",
+        "workflow-handoff-retirement",
+        "workflow-parallel-verification",
+        "workflow-stage-lifecycle"
+      ],
+      "action": "implement",
+      "use_contract_record_rules": true
+    }
+  ],
+  "satisfied_gates": {},
+  "completion_evidence": {
+    "decision-archive-recovery-53d2a462": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-buena-vista-roll-plot-decisions-2026-08-21-a7753798": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-contributed-document-decisions-2026-08-14-49ed9027": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-contributed-document-review-2026-08-14-ce37b460": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-council-closeout-status-2026-09-20-4dfd8e30": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-council-projects-planning-forms-cluster-research-2026-09-13-bed287b5": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-council-records-archive-decisions-2026-09-12-cb6d7656": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-district-7-find-your-councilor-family-decision-2026-09-20-90f9edc7": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-dmd-library-expansion-decisions-2026-08-14-1f0ff836": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-eight-batch-2-decisions-2026-08-14-f83e424c": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-featured-project-documents-decisions-2026-08-23-a4e2171c": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-inventory-overrides-09e22b5f": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-kafb-safety-grant-decisions-2026-08-14-59c87024": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-dmd-review-decisions-2026-09-26-a29a51e4": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-paseo-del-volcan-publication-decisions-2026-09-17-b4f94eab": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-project-procurement-records-cluster-research-2026-09-12-9a7ef8f0": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-recent-capital-projects-large3-decisions-c863bf08": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-recent-high-value-7-decisions-3ef59640": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-recent-programs-maps-large2-decisions-525609f8": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-retained-i25-improved-decisions-2026-08-24-67ba7604": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-retained-source-expansion-14-decisions-2026-08-28-c9e5ee32": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-retained-source-expansion-15-decisions-2026-08-28-85d0a33a": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-retained-source-expansion-16-decisions-2026-08-29-08f97fd5": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-retained-source-expansion-6d-decisions-2026-08-25-36272992": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-retained-source-expansion-8-decisions-2026-08-26-238fdd6d": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-retained-source-expansion-9-decisions-2026-08-27-a631728d": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-scoped-source-review-2026-08-04-33554a9c": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "decision-unm-cnm-focused-source-scope-1673e3f6": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "policy-agents": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "policy-durable-task-governance": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "policy-mission-scope": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "policy-mission-scope-legacy": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "policy-project-recency": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "policy-project-state": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "policy-publication-quality": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "policy-quality-exclusions": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "policy-r2-storage": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "policy-source-priorities": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "policy-tip-stip-retention": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "workflow-autonomous-verification": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "workflow-background-campaign": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "workflow-handoff-retirement": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "workflow-parallel-verification": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ],
+    "workflow-stage-lifecycle": [
+      {
+        "path": "project-state/governance/pr202-recent-project-taxonomy-2026-09-28/review-v2.json",
+        "sha256": "e5af698b913e5a15b99467fcea7663718441555f63c11f0395a545964fcf54d4"
+      }
+    ]
+  },
+  "status": "in_progress"
+}
