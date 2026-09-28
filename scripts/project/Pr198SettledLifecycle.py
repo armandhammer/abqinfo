@@ -1,4 +1,5 @@
 """Guard the authorized PR198 delta while preserving sealed prior stages."""
+import hashlib
 import json
 from pathlib import Path
 import TaskGovernance as G
@@ -29,6 +30,7 @@ def guard_current_delta():
     assert all(p in allowed or p in pages or p.startswith(('project-state/governance/','project-state/discovery/go-capital-quality-remediation-2026-09-27/','backups/')) for p in paths), 'Unrelated implementation delta'
     if Path(IMPLEMENTATION).is_file():
         receipt=G.load(IMPLEMENTATION)
-        assert {p:G.file_hash(p) for p in receipt['changed_pages']}==receipt['page_sha256']
+        assert {p:hashlib.sha256(stage.read_bytes(p).replace(b'\r\n', b'\n')).hexdigest()
+                for p in receipt['changed_pages']}==receipt['page_sha256']
         assert {i:G.digest(b[i]) for i in receipt['changed_inventory_ids']}==receipt['row_digests']
     return visible

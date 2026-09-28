@@ -12,7 +12,9 @@ assert list(map(len,support['master_components'].values()))==[24,21,46]
 assert 'src-7567c5f27fceba0a' not in sum(support['master_components'].values(),[])
 rows={r['id']:r for r in G.load('project-state/master-inventory.json')['candidates']}
 validate_affected_records([rows[i] for i in support['support_ids']])
-task=G.load(G.ACTIVE_TASK);contract=G.load(task['contract'])
+# This regression protects the sealed 32-record implementation even after
+# later, narrower visitor-visible tasks replace the active contract.
+contract=G.load('project-state/governance/pr198-implementation-authorized-2026-09-27/contract-final.json')
 if visible:
     validate_affected_records([rows[i] for i in support['review_boundary_ids']])
     reader=lambda p:(G.ROOT/p).read_text(encoding='utf-8-sig')
