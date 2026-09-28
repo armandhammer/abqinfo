@@ -14,6 +14,10 @@ The New Mexico Rail Runner Express connects Belen, Albuquerque, and Santa Fe. Th
 
   Provides current station pages, parking and access information, connecting transit services, and links to rider resources throughout the corridor.
 
+- [Downtown Albuquerque Rail Runner Station - Official Station Page](https://riometro.org/174/Downtown-Albuquerque)
+
+  Rio Metro locates the station at the Alvarado Transportation Center, 100 1st Street SW, and gives parking, accessibility, bicycle-locker, and bus-connection information for riders.
+
 - [Rail Runner Rail and Bus Connections Guide (2025–2026)](https://files.abqinfo.com/transportation/transit/rail-runner/rio-metro-rail-bus-connections-guide-2025-2026.pdf)
 
   Maps Rail Runner stations and connecting transit services, including ABQ RIDE, Rio Metro, Santa Fe Trails, North Central Regional Transit District, NMDOT Park and Ride, airport access, and station-specific transfer information. [Check the official stations and connections page for updates](https://riometro.org/101/Stations-Connections).

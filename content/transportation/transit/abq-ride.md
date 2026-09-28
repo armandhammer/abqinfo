@@ -16,6 +16,12 @@ ABQ Ride bus service information and data.
 
   Tracks the City's transit-centered redevelopment of the Uptown Transit Center, including design and construction progress, the transit plaza, affordable and market-rate housing, commercial space, sustainability features, and the anticipated 2026–2028 delivery schedule.
 
+## Valley Bus Shelter History
+
+- [ABQ RIDE Valley Bus Shelters - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/16/abq-ride-valley-bus-shelters/)
+
+  The County record describes its agreement with ABQ RIDE and the federally funded installation of 45 accessible, solar-powered shelters on North and South Valley routes, with route-level shelter counts. It is a historical facilities record, not a current route guide.
+
 ## Facilities and Fleet Planning History
 
 The [2011 published program record](/city-data/capital-spending/#2011-published-scope-and-version-records) places ABQ RIDE’s proposed $6.2 million scope alongside the wider department schedules and program versions. The originals below preserve vehicles, park-and-ride facilities, technology, facility rehabilitation, maintenance equipment and stop proposals. Scope allocations do not establish actual spending.
