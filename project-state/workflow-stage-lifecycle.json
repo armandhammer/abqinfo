@@ -212,6 +212,30 @@
       "exact_delta_guard": {
         "module": "Pr201PostMergeCloseoutLifecycle",
         "function": "guard_current_delta"
+      },
+      "end_commit": "5829f4e66ea0c38006969a7dd34ff581b02efdc7"
+    },
+    {
+      "id": "ordinary-transport-publication",
+      "baseline_commit": "5829f4e66ea0c38006969a7dd34ff581b02efdc7",
+      "regression_scripts": [
+        "scripts/project/Test-WorkflowStageLifecycle.py"
+      ],
+      "exact_delta_guard": {
+        "module": "OrdinaryTransportPublicationLifecycle",
+        "function": "guard_current_delta"
+      },
+      "end_commit": "176a4c8f2347864e852b38d46807277320041f1b"
+    },
+    {
+      "id": "pr202-recent-project-taxonomy",
+      "baseline_commit": "176a4c8f2347864e852b38d46807277320041f1b",
+      "regression_scripts": [
+        "scripts/project/Test-WorkflowStageLifecycle.py"
+      ],
+      "exact_delta_guard": {
+        "module": "Pr202RecentTaxonomyLifecycle",
+        "function": "guard_current_delta"
       }
     }
   ],

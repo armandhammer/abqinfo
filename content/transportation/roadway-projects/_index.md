@@ -2,11 +2,11 @@
 title: "Roadway Projects"
 ---
 
-Street and roadway infrastructure projects. Projects dated from 2021 through 2026 are grouped as current; projects from 2020 or earlier are grouped as past. State highway projects are included only when they materially affect Albuquerque.
+Street and roadway infrastructure projects. Projects dated from 2021 through 2026 are grouped as recent; projects from 2020 or earlier are grouped as past. State highway projects are included only when they materially affect Albuquerque.
 
 Separate [Studies]({{< relref "studies.md" >}}) and [Speed Management]({{< relref "speed-management.md" >}}) pages retain technical work and program records that are broader than individual project listings.
 
-## Current Projects (2021–2026)
+## Recent Projects (2021–2026)
 
 ### State Highway Project Gateway
 
@@ -238,6 +238,38 @@ Project contact: Bridgette Garrett at DMD, bgarrett@cabq.gov
 
   Project contact: Dominic Ortiz, 505-301-6934, [dortiz@bernco.gov](mailto:dortiz@bernco.gov)
 
+### Additional County Corridor and Crossing Projects
+
+The County maintains these live project pages. Construction notices and target dates on older pages are dated records; check the source for later changes.
+
+- [Bridge Boulevard Phase 2 - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/16/bridge-boulevard-phase-2/)
+
+  The County reconstruction record covers Young Avenue to La Vega Drive, with resurfacing, accessible sidewalks and ramps, bicycle lanes, adaptive signals, and street lighting. Dated traffic notices are historical; consult the County page for any new travel advisory.
+
+- [Rio Bravo Boulevard Gap - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/16/rio-bravo-boulevard-gap/)
+
+  The County project added a lane in each direction between Prince Street and Second Street, alongside a multi-use trail connection, sidewalks, bicycle lanes, lighting, and signals. Its page lists July 2025 completion.
+
+- [Second Street SW Corridor Phase 2 - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/16/second-street-sw-corridor-phase-2-improvement/)
+
+  The County plan covers Second Street SW from Rio Bravo Boulevard to the South Diversion Channel, proposing resurfacing, sidewalks, curb and gutter drainage, lighting, and a pedestrian-bicycle bridge over the channel. The page lists construction bidding in 2029.
+
+- [118th Street Alignment Study at I-40 - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/16/118th-st-alignment-study-at-i-40/)
+
+  The County study examines a future 118th Street SW arterial alignment from Eucariz Avenue to Ladera Drive and the location of a possible I-40 interchange, including alternatives, drainage, right-of-way, and agency coordination.
+
+- [Coors Boulevard SW Safety Project - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/16/coors-boulevard-sw-safety-project/)
+
+  The County project page describes planned accessibility, lighting, and other multimodal safety improvements on Coors Boulevard between Gun Club and Blake Roads. Its design and schedule figures are dated planning information, not a current completion claim.
+
+- [Rio Bravo Adaptive Signals and Fiber - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/15/rio-bravo-adaptive-signal-and-fiber-installation/)
+
+  The County record covers adaptive signal control and fiber between Coors and Broadway on Rio Bravo Boulevard, plus fiber on Second Street to the Animal Care facility to complete the connection. Its page labels the project in closeout.
+
+- [Central Avenue Pedestrian Hybrid Beacon - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/16/central-pedestrian-hybrid-beacon/)
+
+  The County installed a pedestrian hybrid beacon on Central Avenue between Texas and Utah Streets. Its project record lists design beginning in 2019 and construction completion in July 2021.
+
 ### Bernalillo County Project Indexes
 
 - [Current Public Works Projects](https://www.bernco.gov/public-works/current-projects)
@@ -361,6 +393,28 @@ Questions, construction concerns, or text-alert assistance: email [info@i25impro
   Lists current event and seasonal construction moratoriums, affected street boundaries, downloadable maps, dates, and the live map used to coordinate safe traffic operations during major Albuquerque events.
 
 ## Past Projects (2020 and Earlier)
+
+### County Street and Crossing History
+
+- [Bridge Boulevard Phase 1 - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/16/bridge-boulevard-phase-1/)
+
+  The first County reconstruction phase addressed Bridge Boulevard west of Goff to Old Coors and Tower Road toward Coors, with intersection, sidewalk, accessibility, drainage, and lighting work. The page records construction starting in 2020.
+
+- [Second Street Landscaping Project - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/15/second-street-landscaping-project/)
+
+  The County project used native landscaping, irrigation, and green stormwater methods along Second Street, supported by a Great Urban Parks grant and County trail bonds. The page records completion in July 2019.
+
+- [Second Street Quiet Crossing - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/15/second-street-quiet-crossing/)
+
+  The County record documents road, sidewalk, curb, and gutter work needed to activate the rail quiet crossing at Second Street and Prosperity Avenue. It lists construction completion in February 2020.
+
+- [Atrisco Heritage High School 118th Street Improvements - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/16/atrisco-heritage-high-school-118th-st-road-improvements/)
+
+  The County added a curb and extended the trail along 118th Street at Atrisco Heritage High School. Its project page records state funding and December 2018 construction completion.
+
+- [Sage Road and Old Coors Road Intersection - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/15/sage-old-coors-intersection/)
+
+  The County project added dedicated turn lanes, permanent signals, lighting, and accessible crossings at Sage Road SW and Old Coors Road SW. The page describes the intersection work as completed.
 
 ### Rainbow Boulevard and Universe Boulevard School Safety Project
 

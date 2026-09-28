@@ -1,0 +1,26 @@
+{
+  "artifact_type": "task_review_evidence",
+  "task_id": "pr202-recent-project-taxonomy-2026-09-28",
+  "baseline_commit": "176a4c8f2347864e852b38d46807277320041f1b",
+  "pages": [
+    "content/transportation/bicycling/projects/_index.md",
+    "content/transportation/roadway-projects/_index.md"
+  ],
+  "observed_issue": "Both pages classify their 2021?2026 date buckets as Current Projects although several entries explicitly describe completed work.",
+  "planned_edit": "Label the 2021?2026 date buckets Recent Projects in both headings and introductions. Keep the 2020-and-earlier Past Projects buckets and every project entry in place.",
+  "record_changes": [],
+  "source_changes": [],
+  "archive_changes": [],
+  "governance_resolution": {
+    "applicable_ids": 46,
+    "unresolved_gates": 0,
+    "conflicts": 0
+  },
+  "verification": {
+    "page_diff": "Exactly two date-bucket headings and two introductory phrases changed across the roadway and bicycling pages.",
+    "recent_heading": "Recent Projects (2021–2026)",
+    "historical_heading": "Past Projects (2020 and Earlier)",
+    "pr_body_validator": "passed",
+    "record_and_archive_delta": "none"
+  }
+}

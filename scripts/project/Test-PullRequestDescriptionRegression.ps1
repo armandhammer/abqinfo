@@ -28,7 +28,7 @@ Adds one historical planning section for editorial review.
   foreach ($case in @(
     @{ Name = 'literal-newline'; Text = (Get-Content $validPath -Raw) -replace '## Review this change', '## Review this change\\n' },
     @{ Name = 'malformed-prefix'; Text = (Get-Content $validPath -Raw) -replace 'historical planning section', '\\requires planning section' },
-    @{ Name = 'missing-section'; Text = (Get-Content $validPath -Raw) -replace '(?m)^## Summary$', '## Overview' },
+    @{ Name = 'missing-section'; Text = (Get-Content $validPath -Raw) -replace '(?m)^## Summary\r?$', '## Overview' },
     @{ Name = 'production-url'; Text = (Get-Content $validPath -Raw) -replace 'https://example.abqinfo.pages.dev/', 'https://abqinfo.com/' },
     @{ Name = 'preview-home'; Text = (Get-Content $validPath -Raw) -replace 'https://example.abqinfo.pages.dev/development-land-use/area-sector-plans/#citywide-growth-strategy', 'https://example.abqinfo.pages.dev/' }
   )) {

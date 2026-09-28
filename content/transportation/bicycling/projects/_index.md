@@ -4,9 +4,9 @@ title: "Projects"
 
 Bicycle infrastructure projects.
 
-Projects dated from 2021 through 2026 are grouped as current. Projects from 2020 or earlier are grouped as past, avoiding uncertain judgments about whether construction or closeout is still active.
+Projects dated from 2021 through 2026 are grouped as recent. Projects from 2020 or earlier are grouped as past, avoiding uncertain judgments about whether construction or closeout is still active.
 
-## Current Projects (2021–2026)
+## Recent Projects (2021–2026)
 
 ### Tom Bolack Urban Forest Trail Improvements
 
@@ -70,7 +70,43 @@ Questions or comments email Melissa Roseman at DMD melissaroseman@cabq.gov
 
   Project contact: Leila Momenzadeh, 505-252-2837, [lmomenzadeh@bernco.gov](mailto:lmomenzadeh@bernco.gov)
 
+### Alameda Drain Trail Phase 4
+
+- [Alameda Drain Trail Phase 4 - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/16/alameda-drain-trail-phase-4/)
+
+  This County trail phase runs from El Pueblo Road to Alameda Boulevard, continuing the shared-use route with landscaping and water-quality features at drain outfalls. The project page reports completion in October 2025.
+
 ## Past Projects (2020 and Earlier)
+
+### Alameda Drain Trail Earlier Phases
+
+- [Alameda Drain Trail Phase 1 - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/16/alameda-drain-trail-phase-1/)
+
+  The first County phase runs beside the Alameda Drain between Montano and Osuna Roads, adding shared-use trail space, landscaping, amenities, and water-quality work at stormwater outfalls. The source reports the 2018-2019 construction period.
+
+- [Alameda Drain Trail Phase 2 - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/16/alameda-drain-trail-phase-2/)
+
+  The County phase extends the shared-use trail along the Alameda Drain from Osuna Road to El Pueblo Road, with landscaping, trail amenities, and stormwater-quality features. It is part of the nine-mile master-plan corridor.
+
+### Second Street Trail
+
+- [Second Street Trail Phase 1 - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/15/second-street-trail-phase-1-between-south-diversion-channel-to-prosperity-ave/)
+
+  The first County trail phase built an approximately one-mile, 10-foot-wide asphalt route along the east side of Second Street from the South Diversion Channel to Prosperity Avenue. The page records completion in 2016.
+
+- [Second Street Trail Phase 2 - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/15/second-street-trail-phase-2-prosperity-avenue-to-south-of-rio-bravo/)
+
+  The County page documents the approximately one-mile, 10-foot-wide asphalt trail along the east side of Second Street from Prosperity Avenue to Rio Bravo Boulevard, following the earlier South Diversion Channel segment.
+
+### Other County Bicycle Projects
+
+- [Eubank Trail - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/15/eubank-trail/)
+
+  The County project built a paved trail, drainage improvements, and bicycle-lane striping along Eubank Boulevard from Wilshire to Alameda; its source records 2017 construction and completion.
+
+- [Rio Grande Boulevard Bike Lane Improvements - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/15/rio-grande-boulevard-bike-lane-improvements/)
+
+  The County project describes widening Rio Grande Boulevard from the Los Ranchos boundary to Alameda Trail for on-street bicycle lanes, with possible sidewalk work, pavement rehabilitation, utility relocation, and irrigation-canal improvements. The page dates construction to 2017.
 
 ### Paradise Hills Trail
 

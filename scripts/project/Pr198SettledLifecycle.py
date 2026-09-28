@@ -14,7 +14,7 @@ def guard_current_delta():
     selected=set(G.load('project-state/governance/pr198/population.json')['candidate_ids'])
     permitted=selected|set(support['changed_inventory_ids'])
     prior=json.loads(git('show',stage.stage['baseline_commit']+':project-state/master-inventory.json'))
-    current=G.load('project-state/master-inventory.json')
+    current=stage.load_json('project-state/master-inventory.json')
     a={r['id']:r for r in prior['candidates']};b={r['id']:r for r in current['candidates']}
     delta={i for i in a.keys()|b.keys() if a.get(i)!=b.get(i)}
     assert delta<=permitted and not a.keys()-b.keys(), 'Unfrozen inventory delta'
