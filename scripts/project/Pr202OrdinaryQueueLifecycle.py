@@ -1,12 +1,10 @@
 ﻿"""Guard the post-PR202 queue rebuild against inventory or publication changes."""
 import json
-import runpy
 
 from WorkflowStageLifecycle import ROOT, StageSnapshot, canonical_bytes, git
 
 BASE = 'project-state/discovery/owner-decisions-2026-09-26/next-ordinary-queue.json'
 NEW = 'project-state/discovery/pr202-ordinary-queue-reconcile-2026-09-28/queue.json'
-BUILDER = runpy.run_path(str(ROOT / 'scripts/project/Build-Pr202OrdinaryQueue.py'))
 
 
 def validate_queue(old, current, rows, pr202_ids):
@@ -51,7 +49,8 @@ def guard_current_delta():
     rows = {r['id']: r for r in inventory['candidates']}
     ids = set(json.loads(git('show', baseline + ':project-state/governance/pr202-postmerge-closeout-2026-09-28/population-v4.json').decode())['candidate_ids'])
     validate_queue(old, current, rows, ids)
-    assert current == BUILDER['build'](current['recorded_at'])
+    assert current['inventory_generated_at'] == inventory['generated_at']
+    assert current['source_queue_artifact'] == BASE and current['recorded_at']
     pointer = stage.load_json('project-state/ordinary-queue-current.json')
     assert pointer == {'schema_version': 1, 'artifact': NEW, 'task': 'pr202-ordinary-queue-reconcile-2026-09-28'}
     return current

@@ -30,6 +30,8 @@ if ($LASTEXITCODE) { throw 'Visible publication quality debt grew or an actual-r
 if ($LASTEXITCODE) { throw 'Owner quality correction exact-delta/source validation failed.' }
 & python "$PSScriptRoot/Test-WorkflowStageLifecycle.py"
 if ($LASTEXITCODE) { throw 'Workflow lifecycle historical evidence or active exact-delta validation failed.' }
+& python "$PSScriptRoot/Test-OrdinaryCountyRoadwayPublication.py"
+if ($LASTEXITCODE) { throw 'County roadway publication exact-delta validation failed.' }
 & python "$PSScriptRoot/Test-Pr202OrdinaryQueue.py"
 if ($LASTEXITCODE) { throw "PR202 ordinary queue validation failed." }
 & python "$PSScriptRoot/Test-Pr203PostMergeCloseout.py"

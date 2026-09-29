@@ -1,0 +1,204 @@
+{
+  "artifact_type": "ordinary_county_roadway_publication_review",
+  "task_id": "ordinary-county-roadway-publication-2026-09-29-v17",
+  "baseline_commit": "7b28ef1120f7faf7480bdda90a8f0df6a3e31f87",
+  "population": "project-state/governance/ordinary-county-roadway-2026-09-29/population-v17.json",
+  "contract": "project-state/governance/ordinary-county-roadway-2026-09-29/contract-v17.json",
+  "selection": {
+    "source_queue": "project-state/discovery/pr202-ordinary-queue-reconcile-2026-09-28/queue.json",
+    "queue_approved_count": 30,
+    "selected_count": 6,
+    "rationale": "Largest cohesive approved County roadway group with substantive live HTML project pages and a single Roadway Projects canonical page, after excluding records whose publication relies on unarchived static PDFs or a separate editorial/source issue.",
+    "not_selected_after_initial_source_screen": [
+      {
+        "id": "src-0a39e768262a9380d69d",
+        "reason": "The official page leads to the adopted Sunport Commerce Center Transportation Plan PDF; the static plan requires separate archive/public-byte treatment before document publication."
+      },
+      {
+        "id": "src-93024cc660045c22",
+        "reason": "The official page is only a link to the South Valley Transportation Projects Summary PDF; no standalone HTML project content is present, so the static original requires archive/public-byte treatment."
+      },
+      {
+        "id": "src-751926439273bc52",
+        "reason": "The source concerns East Mountains paving and is outside this Albuquerque corridor placement group; its saved approval is unchanged."
+      }
+    ],
+    "other_holds_unchanged": [
+      "src-1f9cf39555e7be6f",
+      "src-ed75a3cb5ecc3b0b"
+    ]
+  },
+  "family_review": [
+    {
+      "family": "county-wide-road-improvements",
+      "selected_ids": [
+        "src-5214ec3ccc315c44",
+        "src-dff2acc5d7549315"
+      ],
+      "finding": "The Tramway Lane and District 4 projects are distinct historic County paving works; retain their separate source links and name their actual corridors."
+    },
+    {
+      "family": "chico-ladera-atrisco-vista",
+      "selected_ids": [
+        "src-f72aaf598e1ba658"
+      ],
+      "finding": "Phase 2 is roadway and intersection construction completed in 2022. The separate Phase 1B sanitary sewer entry remains outside this roadway population and is not cross-listed."
+    },
+    {
+      "family": "county-roadway-and-accessibility",
+      "selected_ids": [
+        "src-2a2c3fa335dc6fdb",
+        "src-4fa1a71ebc82682f",
+        "src-9534febba55a2a64"
+      ],
+      "finding": "Keep ADA remediation, combined roadway/drainage construction, and solar corridor lighting distinct, grouped by project date on the same canonical page. The Greenwich weekly PDF is an operational attachment and is not separately presented."
+    }
+  ],
+  "placement_review": {
+    "page": "content/transportation/roadway-projects/_index.md",
+    "recent_section_ids": [
+      "src-4fa1a71ebc82682f",
+      "src-9534febba55a2a64",
+      "src-f72aaf598e1ba658"
+    ],
+    "past_section_ids": [
+      "src-2a2c3fa335dc6fdb",
+      "src-5214ec3ccc315c44",
+      "src-dff2acc5d7549315"
+    ],
+    "cross_listing_decision": "No duplicate placement; each source appears once under its dated County roadway section."
+  },
+  "entries": [
+    {
+      "id": "src-2a2c3fa335dc6fdb",
+      "title_on_source": "PARADISE HILLS ADA IMPROVEMENT PROJECT - PHASE 1 - Public Works",
+      "source_url": "https://www.bernco.gov/public-works/blog/2021/04/15/paradise-hills-ada-improvement-project-phase-1",
+      "final_url": "https://www.bernco.gov/public-works/blog/2021/04/15/paradise-hills-ada-improvement-project-phase-1/",
+      "checked_at": "2026-09-29T12:18:08.356248+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "source_size_bytes": 1299821,
+      "source_sha256": "0841714c7e236fc635372cde00487f5e4f7641acd8fe70a272a252396b3a9ff9",
+      "measured_article_words": 167,
+      "article_text": "Project Scope Bernalillo County has identified several areas not complying with the current Federal, State and Local regulations that govern ADA mobility requirements as it pertains to the pedestrian traffic facilities located along Bernalillo County Roadway facilities. It is the spirit of this project to help remediate several deficient areas within the Paradise Hills Neighborhood and bring these areas within compliance with all applicable laws and regulations as well as meeting the requirements of the County’s ADA Transition Plan and the Complete Street Initiative. This project will look at removing and replacing existing wheelchair ramps, concrete curbing and concrete sidewalk that does not meet current ADA requirements. This project will also look at making the traveled path safer for pedestrians by replacing pavement markings that have faded or that are currently not in place, as needed. General Project Information Engineer | Jason P. Clark, P.E. Contractor | Albuquerque Asphalt, Inc. Construction Cost: $148,125.20 Project Completed | November 2018 Project Contact Information: Jason P. Clark (505) 848-1534 jpclark@bernco.gov",
+      "linked_static_pdfs": [],
+      "presentation_kind": "live_service",
+      "quality_finding": "Publish one concise official-page entry within the County roadway family; the named local work and dated project outcome provide reader value without a separate static document entry.",
+      "canonical_page": "content/transportation/roadway-projects/_index.md",
+      "section": "County Street and Crossing History",
+      "description": "The County replaced deficient wheelchair ramps, curbs, sidewalks, and pavement markings in Paradise Hills under its ADA transition and Complete Streets work. The project page records completion in November 2018.",
+      "cross_listing": "none"
+    },
+    {
+      "id": "src-4fa1a71ebc82682f",
+      "title_on_source": "Greenwich Road Improvements - Public Works",
+      "source_url": "https://www.bernco.gov/public-works/blog/2021/04/16/greenwich-road-improvements",
+      "final_url": "https://www.bernco.gov/public-works/blog/2021/04/16/greenwich-road-improvements/",
+      "checked_at": "2026-09-29T12:18:12.624335+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "source_size_bytes": 1296203,
+      "source_sha256": "bcbc5c6df9bb38b2b8bf180ee7578a585cfff1a6ec9c9db7007cfbb1ab35fd07",
+      "measured_article_words": 170,
+      "article_text": "Three Week Look-Ahead – Click here for May 5-25, 2024 Project Scope The project will make Drainage improvements to Greenwich Road by installing infiltration chambers served by storm drain inlets. It will install new roadway infrastructure including pavement and mountable/rolled curb & gutter, which will be tied into the existing grade throughout, and a cul-de-sac at the south end of the street. Traffic Control will be performed by Star Paving Co., and will maintain access to all properties and length of the road at all times, unless notified by the contractor ahead of time. Funding: Capital Outlay Status / In Construction Construction Project Engineer / Gary Moreno-Ulibarri Project Manager / Gabriel Chavez Construction / Spring & Summer 2024 Contractor / Star Paving Co. Construction Cost / $818,255.92 Construction Notice To Proceed / 4/15/2024 Phases / One Phase Project % Completed / 25% Project Contact Information: Project Manager / Gabriel Chavez Office Phone Number / 505-527-2657 Cell Phone Number / 505-301-6947 Mail Address / 415 Silver Ave SW, Albuquerque, NM 87102",
+      "linked_static_pdfs": [
+        "https://www.bernco.gov/public-works/wp-content/uploads/sites/76/2024/05/Greenwich-Three-Week-Look-Ahead-5.9.24.pdf"
+      ],
+      "presentation_kind": "live_service",
+      "quality_finding": "Publish one concise official-page entry within the County roadway family; the named local work and dated project outcome provide reader value without a separate static document entry.",
+      "canonical_page": "content/transportation/roadway-projects/_index.md",
+      "section": "Additional County Corridor and Crossing Projects",
+      "description": "The Greenwich Road project combines pavement, rolled curb and gutter, a south-end cul-de-sac, and infiltration chambers connected to storm-drain inlets. The County page retains a spring–summer 2024 construction snapshot; its progress figure is dated.",
+      "cross_listing": "none"
+    },
+    {
+      "id": "src-5214ec3ccc315c44",
+      "title_on_source": "COUNTY-WIDE ROAD IMPROVEMENTS PROJECT, PHASE 6 – TRAMWAY LANE - Public Works",
+      "source_url": "https://www.bernco.gov/public-works/blog/2021/04/15/county-wide-road-improvements-project-phase-6-tramway-lane",
+      "final_url": "https://www.bernco.gov/public-works/blog/2021/04/15/county-wide-road-improvements-project-phase-6-tramway-lane/",
+      "checked_at": "2026-09-29T12:18:17.060352+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "source_size_bytes": 1297330,
+      "source_sha256": "5ced9299428e914ca91ed4123ff4d84f5dfe0db007387f66976a8de5a00d483c",
+      "measured_article_words": 113,
+      "article_text": "Scope This project reconstructed the asphalt paving on Tramway Lane from Tramway Blvd to Tramway Lane Court. Reconstruction included pulverization/compaction of existing asphalt surface and placement of new asphalt. Tramway Lane will remain open during construction and traffic will be controlled by flaggers in the vicinity of the construction activities. Schedule The project was completed in August, 2015. General Project Information: Status | Completed Section| Brad Catanach, P.E. Engineer | Frank Williams, P.E. Design Consultant | Bernalillo County Public Works Project % Design Completed | 100% Construction Contractor | Star Paving Company Estimated Construction Cost | $345,626 Project % Completed | 100% Project Map Project Contact Information: Frank Williams, P.E. (505) 848-1572 frankw@bernco.gov",
+      "linked_static_pdfs": [],
+      "presentation_kind": "live_service",
+      "quality_finding": "Publish one concise official-page entry within the County roadway family; the named local work and dated project outcome provide reader value without a separate static document entry.",
+      "canonical_page": "content/transportation/roadway-projects/_index.md",
+      "section": "County Street and Crossing History",
+      "description": "The County reconstructed Tramway Lane pavement from Tramway Boulevard to Tramway Lane Court by reworking the existing asphalt and placing a new surface. Its project page records completion in August 2015.",
+      "cross_listing": "none"
+    },
+    {
+      "id": "src-9534febba55a2a64",
+      "title_on_source": "MDC Lighting I-40 Frontage road - Public Works",
+      "source_url": "https://www.bernco.gov/public-works/blog/2021/04/16/mdc-lighting-i-40-frontage-road",
+      "final_url": "https://www.bernco.gov/public-works/blog/2021/04/16/mdc-lighting-i-40-frontage-road/",
+      "checked_at": "2026-09-29T12:18:30.285234+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "source_size_bytes": 1295398,
+      "source_sha256": "4c0e39bb0c99ff4c9aed56eb676efb7ae55d43e04739ac4c347c18986b829e73",
+      "measured_article_words": 88,
+      "article_text": "​ Project Scope Design and construction of solar corridor lighting along the I-40 South Frontage Road, between Shelly Dr and Atrisco Vista Blvd General Project Information Status | Design Project Engineer | Jennifer Flor, P.E. Estimated Design Cost | $176,000 Design Start | February 2024 Estimated Design Completion | February 2025 Design Consultant | Lee Engineering Estimated Construction Start | March 2025 Estimated Construction Cost | $2.7 million Project % Design Completed | 90% Project Contact Information Project Engineer | Jennifer Flor Cell Phone | (505) 350-7833 jflor@bernco.gov",
+      "linked_static_pdfs": [],
+      "presentation_kind": "live_service",
+      "quality_finding": "Publish one concise official-page entry within the County roadway family; the named local work and dated project outcome provide reader value without a separate static document entry.",
+      "canonical_page": "content/transportation/roadway-projects/_index.md",
+      "section": "Additional County Corridor and Crossing Projects",
+      "description": "The County project designs solar corridor lighting on the I-40 South Frontage Road between Shelly Drive and Atrisco Vista Boulevard. Its design percentage and projected 2025 construction dates are historical page estimates, not a current completion claim.",
+      "cross_listing": "none"
+    },
+    {
+      "id": "src-dff2acc5d7549315",
+      "title_on_source": "COUNTY WIDE ROAD PROJECT DISTRICT 4 - Public Works",
+      "source_url": "https://www.bernco.gov/public-works/blog/2021/04/15/county-wide-road-project-district-4",
+      "final_url": "https://www.bernco.gov/public-works/blog/2021/04/15/county-wide-road-project-district-4/",
+      "checked_at": "2026-09-29T12:18:34.648003+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "source_size_bytes": 1302611,
+      "source_sha256": "a228da63495a5b8067da0ce5384beef8271b977f651cc2009ba5e776031c4c19",
+      "measured_article_words": 117,
+      "article_text": "This project will include a complete repaving of San Bernardino Rd from Eubank to Holbrook. It will also include a complete repaving of Ortega from 2nd Street to Edith. Finally, the project will include a complete repaving of San Francisco from Lowell to Tennyson. No roads will be closed during construction. Funding: Bernalillo County Road Bonds General Project Information: Status | Construction Project Engineer | Vincent Bartholdi, P.E. Project Manager | Richard Goke, P.M. Construction | Spring 2019 Contractor | Franklin’s Earthmoving Construction Cost | $586,598.97 Construction Notice to Proceed | April 4, 2019 Project Status | Completed Project Contact Information: Project Manager | Richard Goke Office Phone | (505) 848-1570 Cell Phone | (505) 301-6937 rbgoke@bernco.gov",
+      "linked_static_pdfs": [],
+      "presentation_kind": "live_service",
+      "quality_finding": "Publish one concise official-page entry within the County roadway family; the named local work and dated project outcome provide reader value without a separate static document entry.",
+      "canonical_page": "content/transportation/roadway-projects/_index.md",
+      "section": "County Street and Crossing History",
+      "description": "The County road-bond project repaved San Bernardino Road from Eubank to Holbrook, Ortega Road from Second Street to Edith, and San Francisco Road from Lowell to Tennyson. The project page records the 2019 work as completed.",
+      "cross_listing": "none"
+    },
+    {
+      "id": "src-f72aaf598e1ba658",
+      "title_on_source": "CHICO PROJECT PHASE 2: LADERA RD AND ATRISCO VISTA BLVD IMPROVEMENTS - Public Works",
+      "source_url": "https://www.bernco.gov/public-works/blog/2021/04/16/chico-project-phase-2-ladera-rd-and-atrisco-vista-blvd-improvements",
+      "final_url": "https://www.bernco.gov/public-works/blog/2021/04/16/chico-project-phase-2-ladera-rd-and-atrisco-vista-blvd-improvements/",
+      "checked_at": "2026-09-29T12:18:39.007952+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "source_size_bytes": 1298730,
+      "source_sha256": "7211330d02c92688cf5d38dffe8337c937aa8aa0dc799dd5f7d7c9cddb980025",
+      "measured_article_words": 164,
+      "article_text": "Project Scope: This project includes extension of Ladera Rd from Atrisco Vista Blvd to Comfort Way, improvements to Atrisco Vista Blvd in between I-40 Interchange and Ladera Rd intersection, and intersection improvement at Central Ave/Atrisco Vista, and I-40 westbound and eastbound ramps. Funding: This project is comprised of Bernalillo County District 1 Bonds. General Project Information Status | Construction Completed as of January 2022 Project Engineer | Leila Momenzadeh P.E. Construction Cost | $4,521,907.79 Construction Start | December 2020 Construction Completion | January 2022 Construction Contractor | Compass Engineering and Construction Services Project Contact Information: Project Engineer | Leila Momenzadeh Office Phone | (505) 224-2124 Cell Phone | (505) 252-2837 E-mail | lmomenzadeh@bernco.gov Project Notifications: Starting August 16, 2021, Atrisco Vista Blvd northbound lanes will be closed in between Central Ave and I-40 eastbound ramps’ intersections. All traffic driving northbound Atrisco Vista Blvd and westbound Central Ave to follow detour signs and utilize 98 th Street. Anticipated duration of this closure is two weeks.",
+      "linked_static_pdfs": [],
+      "presentation_kind": "live_service",
+      "quality_finding": "Publish one concise official-page entry within the County roadway family; the named local work and dated project outcome provide reader value without a separate static document entry.",
+      "canonical_page": "content/transportation/roadway-projects/_index.md",
+      "section": "Additional County Corridor and Crossing Projects",
+      "description": "Phase 2 extended Ladera Road from Atrisco Vista Boulevard to Comfort Way and improved Atrisco Vista near I-40, the ramps, and the Central Avenue intersection. The County page records construction completion in January 2022.",
+      "cross_listing": "none"
+    }
+  ],
+  "archive_objects_added": 0,
+  "archive_bytes_added": 0,
+  "preview_verification": null,
+  "local_visual_review": {
+    "method": "Hugo v0.164.0 render with the existing Hugo Book theme; headless Edge screenshots of the 1440px local Roadway Projects page and both changed sections inspected",
+    "result": "Six entries render with readable labels and descriptions in the intended recent and historical County sections; no layout collision observed",
+    "rendered_page": "tmp/hugo-site/transportation/roadway-projects/index.html",
+    "rendered_source_link_count": 6
+  }
+}
