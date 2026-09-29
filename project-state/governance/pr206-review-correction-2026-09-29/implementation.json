@@ -1,8 +1,8 @@
 {
   "artifact_type": "task_implementation_plan",
-  "contract": "project-state/governance/pr206-review-correction-2026-09-29/contract-v3.json",
-  "contract_sha256": "d5df8f9801af092114261fc33f119f6c91fb36163a397c93210de32ce8bf3f08",
-  "population_sha256": "15f23f4cdb8c4c06a9e4300b39baac268131a73bef0c1107a6a6145dad83226f",
+  "contract": "project-state/governance/pr206-review-correction-2026-09-29/contract-v6.json",
+  "contract_sha256": "222f0fe804479a246c1c6fb9da656b80cf54ac7ca24e7e6481abc77bf3fa2fb8",
+  "population_sha256": "7d5f41554d0ca2fb7142137791901af8d814f58c0736840fa3c18fde86bd172e",
   "respected_governance_ids": [
     "authorization-profile-ordinary-review-large",
     "capital-2005-2013-ccip-master",
@@ -324,7 +324,8 @@
     "inventory_disposition",
     "governance_implementation",
     "governance_audit",
-    "external_mutation"
+    "external_mutation",
+    "family_review"
   ],
   "events": [
     {
@@ -384,6 +385,15 @@
       ],
       "action": "implement",
       "evidence": "The historical human-review reassessment test now accepts its protected completed-stage public-byte receipt when the ignored local archive cache is absent; its exact source check still runs when the cache exists."
+    },
+    {
+      "operation": "family_review",
+      "candidate_ids": [],
+      "governance_ids": [
+        "policy-durable-task-governance"
+      ],
+      "action": "implement",
+      "evidence": "Regenerate the derived consolidated human-review queue after the four inventory-note timestamps and inventory hash changed; no owner-case disposition changes."
     }
   ],
   "completion_evidence": {
@@ -403,6 +413,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "capital-2005-2013-ccip-master": [
@@ -421,6 +435,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "capital-2007-2016-decade-master": [
@@ -439,6 +457,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "capital-2009-historical-master": [
@@ -457,6 +479,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "capital-2011-two-masters": [
@@ -475,6 +501,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-2009-go-bond-retained-11-decisions-c06a3a6c": [
@@ -493,6 +523,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-2011-go-bond-department-schedules-decisions-1a367fd1": [
@@ -511,6 +545,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-2011-go-bond-program-scope-and-schedule-decisions-7d91c668": [
@@ -529,6 +567,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-2014-ms4-package-decision-2026-09-18-0fbe2935": [
@@ -547,6 +589,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-2017-go-bond-program-decisions-2026-09-09-268c83b9": [
@@ -565,6 +611,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-archive-recovery-53d2a462": [
@@ -583,6 +633,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-capital-program-review-28-decisions-a2e89ee1": [
@@ -601,6 +655,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-council-closeout-status-2026-09-20-4dfd8e30": [
@@ -619,6 +677,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-decisions-b8452592": [
@@ -637,6 +699,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-development-review-services-archive-decisions-2026-09-11-a41e3619": [
@@ -655,6 +721,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-dmd-library-expansion-decisions-2026-08-14-1f0ff836": [
@@ -673,6 +743,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-dpm-annual-compilations-decisions-2026-09-13-9318dfff": [
@@ -691,6 +765,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-dpm-minutes-2015-2018-archive-decisions-2026-09-13-0e087112": [
@@ -709,6 +787,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-eight-batch-2-decisions-2026-08-14-f83e424c": [
@@ -727,6 +809,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-eight-batch-decisions-2026-08-14-01fe2287": [
@@ -745,6 +831,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-facility-environmental-compliance-cluster-research-2026-09-12-f4ed5881": [
@@ -763,6 +853,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-frozen-review-batch-16-decisions-554d266d": [
@@ -781,6 +875,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-gis-dmd-history-decisions-6122241c": [
@@ -799,6 +897,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-go2003-master-compilation-decisions-2026-09-13-7f7a401d": [
@@ -817,6 +919,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-go2011-bond-archive-decisions-2026-09-11-aecdde74": [
@@ -835,6 +941,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-go2017-official-master-consolidation-2026-09-16-a4c4b709": [
@@ -853,6 +963,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-later-ms4-annual-reports-and-permit-instruments-decision-2026-09--18015e6f": [
@@ -871,6 +985,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-legacy-direct-source-remediation-decisions-2026-09-12-a2a646f7": [
@@ -889,6 +1007,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-ms4-rail-station-history-decisions-6d496a38": [
@@ -907,6 +1029,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-next-ordinary-queue-b8bb5c70": [
@@ -925,6 +1051,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-ordinary-second-large-campaign-dmd-review-decisions-2026-09-26-a29a51e4": [
@@ -943,6 +1073,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98": [
@@ -961,6 +1095,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894": [
@@ -979,6 +1117,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-project-procurement-records-cluster-research-2026-09-12-9a7ef8f0": [
@@ -997,6 +1139,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-recent-high-value-7-decisions-3ef59640": [
@@ -1015,6 +1161,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-retained-source-expansion-15-decisions-2026-08-28-85d0a33a": [
@@ -1033,6 +1183,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-retained-source-expansion-16-decisions-2026-08-29-08f97fd5": [
@@ -1051,6 +1205,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-retained-source-expansion-17-decisions-2026-08-29-8210108e": [
@@ -1069,6 +1227,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-retained-source-expansion-18-decisions-2026-08-29-cbe402cf": [
@@ -1087,6 +1249,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-retained-source-expansion-19-decisions-2026-08-29-5f062098": [
@@ -1105,6 +1271,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-retained-source-expansion-6d-decisions-2026-08-25-36272992": [
@@ -1123,6 +1293,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-retained-source-expansion-8-decisions-2026-08-26-238fdd6d": [
@@ -1141,6 +1315,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-review-c298a3ca": [
@@ -1159,6 +1337,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-scoped-source-review-2026-08-04-33554a9c": [
@@ -1177,6 +1359,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-stormwater-history-batch-decisions-2026-09-09-1003496f": [
@@ -1195,6 +1381,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "decision-unm-cnm-focused-source-scope-1673e3f6": [
@@ -1213,6 +1403,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "policy-agents": [
@@ -1231,6 +1425,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "policy-durable-task-governance": [
@@ -1249,6 +1447,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "policy-mission-scope": [
@@ -1267,6 +1469,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "policy-mission-scope-legacy": [
@@ -1285,6 +1491,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "policy-project-recency": [
@@ -1303,6 +1513,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "policy-project-state": [
@@ -1321,6 +1535,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "policy-publication-quality": [
@@ -1339,6 +1557,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "policy-quality-exclusions": [
@@ -1357,6 +1579,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "policy-r2-storage": [
@@ -1375,6 +1601,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "policy-source-priorities": [
@@ -1393,6 +1623,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "policy-tip-stip-retention": [
@@ -1411,6 +1645,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "workflow-autonomous-verification": [
@@ -1429,6 +1667,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "workflow-background-campaign": [
@@ -1447,6 +1689,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "workflow-handoff-retirement": [
@@ -1465,6 +1711,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "workflow-parallel-verification": [
@@ -1483,6 +1733,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ],
     "workflow-stage-lifecycle": [
@@ -1501,6 +1755,10 @@
       {
         "path": "scripts/project/OrdinaryDrainageReviewCorrectionLifecycle.py",
         "sha256": "97990ffbf6d11892a9d9d9f97f6e2bea59ad732803a34027401c8bdf8a02f55b"
+      },
+      {
+        "path": "project-state/discovery/consolidated-human-review-queue.json",
+        "sha256": "ebf5fcf5a54f461f12733d8e3cf60993c66b50cf94c1169b524018b54f162a2c"
       }
     ]
   },
