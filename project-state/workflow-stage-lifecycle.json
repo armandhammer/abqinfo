@@ -320,6 +320,18 @@
       "exact_delta_guard": {
         "module": "OrdinaryDrainagePublicationLifecycle",
         "function": "guard_current_delta"
+      },
+      "end_commit": "f51f6664d21e71c325c658ac0304ca82c30d5239"
+    },
+    {
+      "id": "pr206-review-correction",
+      "baseline_commit": "f51f6664d21e71c325c658ac0304ca82c30d5239",
+      "regression_scripts": [
+        "scripts/project/Test-OrdinaryDrainageReviewCorrection.py"
+      ],
+      "exact_delta_guard": {
+        "module": "OrdinaryDrainageReviewCorrectionLifecycle",
+        "function": "guard_current_delta"
       }
     }
   ],
