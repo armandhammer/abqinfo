@@ -1,8 +1,8 @@
 {
   "artifact_type": "task_implementation_plan",
-  "contract": "project-state/governance/pr206-review-correction-2026-09-29/contract-v6.json",
-  "contract_sha256": "222f0fe804479a246c1c6fb9da656b80cf54ac7ca24e7e6481abc77bf3fa2fb8",
-  "population_sha256": "7d5f41554d0ca2fb7142137791901af8d814f58c0736840fa3c18fde86bd172e",
+  "contract": "project-state/governance/pr206-review-correction-2026-09-29/contract-v7.json",
+  "contract_sha256": "24d12d98ce8f08e828b4b994ca6bd68b863b442bf9febce271b61eb20e508fcb",
+  "population_sha256": "017533a4225c135489ec281bbc52ce60e87e5cb3a0fc98c2d23e7c3939e6d0b7",
   "respected_governance_ids": [
     "authorization-profile-ordinary-review-large",
     "capital-2005-2013-ccip-master",
@@ -394,6 +394,16 @@
       ],
       "action": "implement",
       "evidence": "Regenerate the derived consolidated human-review queue after the four inventory-note timestamps and inventory hash changed; no owner-case disposition changes."
+    },
+    {
+      "operation": "governance_implementation",
+      "candidate_ids": [],
+      "governance_ids": [
+        "policy-durable-task-governance",
+        "workflow-stage-lifecycle"
+      ],
+      "action": "implement",
+      "evidence": "The sealed completed background-campaign source QA remains testable from its committed evidence artifact when its ignored download cache is absent."
     }
   ],
   "completion_evidence": {
