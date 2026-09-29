@@ -458,13 +458,6 @@
       "rationale": "Research recommendation, source capture, queue/snapshot, completed-action receipt or navigation/resume evidence. Continuing decisions are indexed separately; saved recommendations are evidence, not dispositions or new authorization."
     },
     {
-      "path": "project-state/CURRENT.md",
-      "sha256": "a4d4349e91660111626dea9827162bf999372211db3e18141413937b2d0b7b9c",
-      "classification": "historical evidence only / non-binding",
-      "reason": "Factual derived current-state/actual-output snapshot; no new binding architecture or authorization.",
-      "rationale": "PR201 merged production closeout resume pointer; no new publication or archive authority."
-    },
-    {
       "path": "project-state/PARALLEL-VERIFICATION.md",
       "sha256": "b16193fc6211d639dfb761907e86596bb7da813062e737741040132ce65384fa",
       "hash_kind": "normalized-file-bytes",
@@ -1617,14 +1610,6 @@
       "classification": "historical evidence only / non-binding",
       "governance_ids": [],
       "rationale": "Research recommendation, source capture, queue/snapshot, completed-action receipt or navigation/resume evidence. Continuing decisions are indexed separately; saved recommendations are evidence, not dispositions or new authorization."
-    },
-    {
-      "path": "project-state/checkpoint.json",
-      "sha256": "a3b34342c27d8615ac8a7ae991d0ca2d5dff7201c6659f10c8c2c13381c97b8c",
-      "hash_kind": "normalized-file-bytes",
-      "classification": "historical evidence only / non-binding",
-      "governance_ids": [],
-      "rationale": "Checkpoint history records project state and recovery context; active requirements are maintained in the governance registry."
     },
     {
       "path": "project-state/climate-action-implementation-decisions-2026-08-23.json",
@@ -16892,14 +16877,6 @@
       "rationale": "Research recommendation, source capture, queue/snapshot, completed-action receipt or navigation/resume evidence. Continuing decisions are indexed separately; saved recommendations are evidence, not dispositions or new authorization."
     },
     {
-      "path": "project-state/ordinary-queue-current.json",
-      "sha256": "c0b81983599e661a52290d386dd991f6c88164bd7db2dcf2a7764d1fce7ae84f",
-      "hash_kind": "normalized-file-bytes",
-      "classification": "historical evidence only / non-binding",
-      "governance_ids": [],
-      "rationale": "Research recommendation, source capture, queue/snapshot, completed-action receipt or navigation/resume evidence. Continuing decisions are indexed separately; saved recommendations are evidence, not dispositions or new authorization."
-    },
-    {
       "path": "project-state/pr-descriptions/consolidated-human-review-queue-2026-09-26.md",
       "sha256": "f7594595b0d842316147f315cbd6e53173d570b384ca5be827e7082216f2f411",
       "hash_kind": "normalized-file-bytes",
@@ -18323,14 +18300,6 @@
     {
       "path": "project-state/unm-sustainability-r2-report-2026-09-01.json",
       "sha256": "84388124d6749519bf311056ba2018f46e7e6713963b7b5dcd9a6d00ef478066",
-      "hash_kind": "normalized-file-bytes",
-      "classification": "historical evidence only / non-binding",
-      "governance_ids": [],
-      "rationale": "Research recommendation, source capture, queue/snapshot, completed-action receipt or navigation/resume evidence. Continuing decisions are indexed separately; saved recommendations are evidence, not dispositions or new authorization."
-    },
-    {
-      "path": "project-state/workflow-stage-lifecycle.json",
-      "sha256": "f6803c813973cf90a35176191c5377720af0bfc924bb7e626c26298e26e26744",
       "hash_kind": "normalized-file-bytes",
       "classification": "historical evidence only / non-binding",
       "governance_ids": [],
@@ -23171,6 +23140,62 @@
       "classification": "historical evidence only / non-binding",
       "governance_ids": [],
       "rationale": "Superseded task contract setup; latest active contract controls."
+    },
+    {
+      "path": "project-state/discovery/pr202-ordinary-queue-reconcile-2026-09-28/queue.json",
+      "sha256": "03cbd5559579c468897184a2fdd6780d9eea79c77ef8a5394dd56be4df57657c",
+      "hash_kind": "normalized-file-bytes",
+      "classification": "historical evidence only / non-binding",
+      "governance_ids": [],
+      "rationale": "Derived queue, resume pointer or superseded task setup. Registered dispositions remain controlling."
+    },
+    {
+      "path": "project-state/ordinary-queue-current.json",
+      "sha256": "82ba5bd13264423ebbcfafe63fb6e81bf4e21be38061ef42abb323a800764db5",
+      "hash_kind": "normalized-file-bytes",
+      "classification": "historical evidence only / non-binding",
+      "governance_ids": [],
+      "rationale": "Derived queue, resume pointer or superseded task setup. Registered dispositions remain controlling."
+    },
+    {
+      "path": "project-state/workflow-stage-lifecycle.json",
+      "sha256": "fecc46b816afb41ca3c7629c1df874f5839175b0f72e15b408519c5e0794d18b",
+      "hash_kind": "normalized-file-bytes",
+      "classification": "historical evidence only / non-binding",
+      "governance_ids": [],
+      "rationale": "Derived queue, resume pointer or superseded task setup. Registered dispositions remain controlling."
+    },
+    {
+      "path": "project-state/CURRENT.md",
+      "sha256": "b2ac93483570208562373964280d277e8bfabaa03ed8e22377e4d0bc9e99fb4f",
+      "hash_kind": "normalized-file-bytes",
+      "classification": "historical evidence only / non-binding",
+      "governance_ids": [],
+      "rationale": "Derived queue, resume pointer or superseded task setup. Registered dispositions remain controlling."
+    },
+    {
+      "path": "project-state/checkpoint.json",
+      "sha256": "6bd963951a007012ebfec86eda2b872e67fa835156d0d190b20898f082e5df52",
+      "hash_kind": "normalized-file-bytes",
+      "classification": "historical evidence only / non-binding",
+      "governance_ids": [],
+      "rationale": "Derived queue, resume pointer or superseded task setup. Registered dispositions remain controlling."
+    },
+    {
+      "path": "project-state/governance/pr202-ordinary-queue-reconcile-2026-09-28/contract.json",
+      "sha256": "634a6e634c7aa44818aa9cea7526cc8bcd74dbec9fe6c80444af3ba75689d3d3",
+      "hash_kind": "normalized-file-bytes",
+      "classification": "historical evidence only / non-binding",
+      "governance_ids": [],
+      "rationale": "Derived queue, resume pointer or superseded task setup. Registered dispositions remain controlling."
+    },
+    {
+      "path": "project-state/governance/pr202-ordinary-queue-reconcile-2026-09-28/implementation.json",
+      "sha256": "51def3dca49022d4f53721418e4a79c0ec6bd2ab7a6a1aed5fe25621340ce67d",
+      "hash_kind": "normalized-file-bytes",
+      "classification": "historical evidence only / non-binding",
+      "governance_ids": [],
+      "rationale": "Derived queue, resume pointer or superseded task setup. Registered dispositions remain controlling."
     }
   ],
   "categories": [

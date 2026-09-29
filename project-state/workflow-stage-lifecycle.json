@@ -260,6 +260,18 @@
       "exact_delta_guard": {
         "module": "OpenSpaceMapQualityLifecycle",
         "function": "guard_current_delta"
+      },
+      "end_commit": "c901990afb47902755f6e293f2ea801fbaebc041"
+    },
+    {
+      "id": "pr202-ordinary-queue-reconcile",
+      "baseline_commit": "c901990afb47902755f6e293f2ea801fbaebc041",
+      "regression_scripts": [
+        "scripts/project/Test-Pr202OrdinaryQueue.py"
+      ],
+      "exact_delta_guard": {
+        "module": "Pr202OrdinaryQueueLifecycle",
+        "function": "guard_current_delta"
       }
     }
   ],
