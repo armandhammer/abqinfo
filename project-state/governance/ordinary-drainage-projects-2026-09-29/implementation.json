@@ -1,8 +1,8 @@
 {
   "artifact_type": "task_implementation_plan",
-  "contract": "project-state/governance/ordinary-drainage-projects-2026-09-29/contract-v15.json",
-  "contract_sha256": "b3f6ccc8db32a8c7698b15479eba273543fe41783e7c1c3ae65407be1a51a263",
-  "population_sha256": "6ec0474b7a7820de7e94fd2de8f1f8c350cd5a7e0b1158462249dea78a5c9745",
+  "contract": "project-state/governance/ordinary-drainage-projects-2026-09-29/contract-v17.json",
+  "contract_sha256": "cfe81d26c12d845b9d959ba6d514bc999f3c0cac0597fa4bc5bdf545e7d8539b",
+  "population_sha256": "27bd52e373afaaa59b4109eeb5f78bbd5492e9ef80f85f785015babf5ffab96f",
   "respected_governance_ids": [
     "authorization-profile-ordinary-review-large",
     "capital-2005-2013-ccip-master",
@@ -505,13 +505,29 @@
       "use_contract_record_rules": true,
       "action": "implement",
       "evidence": "The active registry was fully resolved, the lifecycle stage and exact delta guard were installed, and the queue now has 20 approved records."
+    },
+    {
+      "operation": "external_mutation",
+      "candidate_ids": [
+        "src-e41d6b432e52a7e1",
+        "src-5dedef596ea61914",
+        "src-b674369d94936b08",
+        "src-ea28455d489f1c2c"
+      ],
+      "governance_ids": [
+        "policy-durable-task-governance",
+        "policy-agents"
+      ],
+      "use_contract_record_rules": true,
+      "action": "implement",
+      "evidence": "Cloudflare Pages preview returned HTTP 200 and matched the local rendered article text, links, and anchors; PR #206 opened for owner review and remains unmerged."
     }
   ],
   "completion_evidence": {
     "authorization-profile-ordinary-review-large": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -533,7 +549,7 @@
     "capital-2005-2013-ccip-master": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -555,7 +571,7 @@
     "capital-2007-2016-decade-master": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -577,7 +593,7 @@
     "capital-2009-historical-master": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -599,7 +615,7 @@
     "capital-2011-two-masters": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -621,7 +637,7 @@
     "decision-2009-go-bond-retained-11-decisions-c06a3a6c": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -643,7 +659,7 @@
     "decision-2011-go-bond-department-schedules-decisions-1a367fd1": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -665,7 +681,7 @@
     "decision-2011-go-bond-program-scope-and-schedule-decisions-7d91c668": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -687,7 +703,7 @@
     "decision-2014-ms4-package-decision-2026-09-18-0fbe2935": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -709,7 +725,7 @@
     "decision-2017-go-bond-program-decisions-2026-09-09-268c83b9": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -731,7 +747,7 @@
     "decision-archive-recovery-53d2a462": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -753,7 +769,7 @@
     "decision-capital-program-review-28-decisions-a2e89ee1": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -775,7 +791,7 @@
     "decision-council-closeout-status-2026-09-20-4dfd8e30": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -797,7 +813,7 @@
     "decision-council-projects-planning-forms-cluster-research-2026-09-13-bed287b5": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -819,7 +835,7 @@
     "decision-council-records-archive-decisions-2026-09-12-cb6d7656": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -841,7 +857,7 @@
     "decision-decisions-b8452592": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -863,7 +879,7 @@
     "decision-development-review-services-archive-decisions-2026-09-11-a41e3619": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -885,7 +901,7 @@
     "decision-district-7-find-your-councilor-family-decision-2026-09-20-90f9edc7": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -907,7 +923,7 @@
     "decision-dmd-library-expansion-decisions-2026-08-14-1f0ff836": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -929,7 +945,7 @@
     "decision-dpm-annual-compilations-decisions-2026-09-13-9318dfff": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -951,7 +967,7 @@
     "decision-dpm-minutes-2015-2018-archive-decisions-2026-09-13-0e087112": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -973,7 +989,7 @@
     "decision-eight-batch-2-decisions-2026-08-14-f83e424c": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -995,7 +1011,7 @@
     "decision-eight-batch-decisions-2026-08-14-01fe2287": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1017,7 +1033,7 @@
     "decision-facility-environmental-compliance-cluster-research-2026-09-12-f4ed5881": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1039,7 +1055,7 @@
     "decision-featured-project-documents-decisions-2026-08-23-a4e2171c": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1061,7 +1077,7 @@
     "decision-frozen-review-batch-16-decisions-554d266d": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1083,7 +1099,7 @@
     "decision-gis-dmd-history-decisions-6122241c": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1105,7 +1121,7 @@
     "decision-go2003-master-compilation-decisions-2026-09-13-7f7a401d": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1127,7 +1143,7 @@
     "decision-go2011-bond-archive-decisions-2026-09-11-aecdde74": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1149,7 +1165,7 @@
     "decision-go2017-official-master-consolidation-2026-09-16-a4c4b709": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1171,7 +1187,7 @@
     "decision-inventory-overrides-09e22b5f": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1193,7 +1209,7 @@
     "decision-kafb-safety-grant-decisions-2026-08-14-59c87024": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1215,7 +1231,7 @@
     "decision-later-ms4-annual-reports-and-permit-instruments-decision-2026-09--18015e6f": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1237,7 +1253,7 @@
     "decision-legacy-direct-source-remediation-decisions-2026-09-12-a2a646f7": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1259,7 +1275,7 @@
     "decision-ms4-rail-station-history-decisions-6d496a38": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1281,7 +1297,7 @@
     "decision-next-ordinary-queue-b8bb5c70": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1303,7 +1319,7 @@
     "decision-ordinary-second-large-campaign-dmd-review-decisions-2026-09-26-a29a51e4": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1325,7 +1341,7 @@
     "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1347,7 +1363,7 @@
     "decision-paseo-del-volcan-publication-decisions-2026-09-17-b4f94eab": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1369,7 +1385,7 @@
     "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1391,7 +1407,7 @@
     "decision-project-procurement-records-cluster-research-2026-09-12-9a7ef8f0": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1413,7 +1429,7 @@
     "decision-recent-capital-projects-large3-decisions-c863bf08": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1435,7 +1451,7 @@
     "decision-recent-high-value-7-decisions-3ef59640": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1457,7 +1473,7 @@
     "decision-recent-programs-maps-large2-decisions-525609f8": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1479,7 +1495,7 @@
     "decision-retained-i25-improved-decisions-2026-08-24-67ba7604": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1501,7 +1517,7 @@
     "decision-retained-source-expansion-14-decisions-2026-08-28-c9e5ee32": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1523,7 +1539,7 @@
     "decision-retained-source-expansion-15-decisions-2026-08-28-85d0a33a": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1545,7 +1561,7 @@
     "decision-retained-source-expansion-16-decisions-2026-08-29-08f97fd5": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1567,7 +1583,7 @@
     "decision-retained-source-expansion-17-decisions-2026-08-29-8210108e": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1589,7 +1605,7 @@
     "decision-retained-source-expansion-18-decisions-2026-08-29-cbe402cf": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1611,7 +1627,7 @@
     "decision-retained-source-expansion-19-decisions-2026-08-29-5f062098": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1633,7 +1649,7 @@
     "decision-retained-source-expansion-6d-decisions-2026-08-25-36272992": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1655,7 +1671,7 @@
     "decision-retained-source-expansion-8-decisions-2026-08-26-238fdd6d": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1677,7 +1693,7 @@
     "decision-retained-source-expansion-9-decisions-2026-08-27-a631728d": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1699,7 +1715,7 @@
     "decision-review-c298a3ca": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1721,7 +1737,7 @@
     "decision-scoped-source-review-2026-08-04-33554a9c": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1743,7 +1759,7 @@
     "decision-stormwater-history-batch-decisions-2026-09-09-1003496f": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1765,7 +1781,7 @@
     "decision-unm-cnm-focused-source-scope-1673e3f6": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1787,7 +1803,7 @@
     "policy-agents": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1809,7 +1825,7 @@
     "policy-durable-task-governance": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1831,7 +1847,7 @@
     "policy-mission-scope": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1853,7 +1869,7 @@
     "policy-mission-scope-legacy": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1875,7 +1891,7 @@
     "policy-project-recency": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1897,7 +1913,7 @@
     "policy-project-state": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1919,7 +1935,7 @@
     "policy-publication-quality": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1941,7 +1957,7 @@
     "policy-quality-exclusions": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1963,7 +1979,7 @@
     "policy-r2-storage": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -1985,7 +2001,7 @@
     "policy-source-priorities": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -2007,7 +2023,7 @@
     "policy-tip-stip-retention": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -2029,7 +2045,7 @@
     "workflow-autonomous-verification": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -2051,7 +2067,7 @@
     "workflow-background-campaign": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -2073,7 +2089,7 @@
     "workflow-handoff-retirement": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -2095,7 +2111,7 @@
     "workflow-parallel-verification": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
@@ -2117,7 +2133,7 @@
     "workflow-stage-lifecycle": [
       {
         "path": "project-state/governance/ordinary-drainage-projects-2026-09-29/review.json",
-        "sha256": "3e506d487835f1f013a069d4676274718c3ac1c18daefa9c9ce51e77be24aa16"
+        "sha256": "7f7751f8af899a9a6ebee866440ef08f7ace6ac01b18fad84fd493673879830a"
       },
       {
         "path": "content/public-works/stormwater-drainage.md",
