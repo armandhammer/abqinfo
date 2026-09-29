@@ -95,7 +95,10 @@ def main() -> None:
     for prep_row, result, key, size, checksum in zip(prep['records'], evidence['results'], KEYS, SIZES, HASHES):
         row = inventory[result['id']]
         staged = ROOT / prep_row['staged_original']
-        assert staged.stat().st_size == size and digest(staged) == checksum
+        if staged.is_file():
+            assert staged.stat().st_size == size and digest(staged) == checksum
+        else:
+            assert result['byte_identical'] and result['public_size_bytes'] == size and result['public_checksum_sha256'] == checksum
         assert result['action'] in ('uploaded_now', 'exact_existing_after_interrupted_resume') and result['http_public_get'] == 'passed'
         assert result['byte_identical'] is True
         assert result['public_size_bytes'] == size and result['public_checksum_sha256'] == checksum

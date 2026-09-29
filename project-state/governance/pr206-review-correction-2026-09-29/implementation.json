@@ -1,8 +1,8 @@
 {
   "artifact_type": "task_implementation_plan",
-  "contract": "project-state/governance/pr206-review-correction-2026-09-29/contract-v9.json",
-  "contract_sha256": "0f71fc28107fed9e81f2d4c79b70d1694e752a53ffb1c233f819732e685b0cc7",
-  "population_sha256": "017533a4225c135489ec281bbc52ce60e87e5cb3a0fc98c2d23e7c3939e6d0b7",
+  "contract": "project-state/governance/pr206-review-correction-2026-09-29/contract-v10.json",
+  "contract_sha256": "d22af958bcf36b7fed902729d5deb83ec0b2da4676e65c96e14bc967d464e914",
+  "population_sha256": "2c656cccfeb1d675f5906eba53d5baa9b39a8096cab00ae24f5421ac6d1ab88b",
   "respected_governance_ids": [
     "authorization-profile-ordinary-review-large",
     "capital-2005-2013-ccip-master",
@@ -424,6 +424,16 @@
       ],
       "action": "implement",
       "evidence": "Historical text artifact checks accept exact recorded bytes under either Git checkout line-ending convention; the expected content hash remains required."
+    },
+    {
+      "operation": "governance_implementation",
+      "candidate_ids": [],
+      "governance_ids": [
+        "policy-durable-task-governance",
+        "workflow-stage-lifecycle"
+      ],
+      "action": "implement",
+      "evidence": "Six completed Planning and later-MS4 regressions now validate saved exact public-byte receipts in clean checkouts while retaining local file byte checks when present."
     }
   ],
   "completion_evidence": {

@@ -63,11 +63,17 @@ assert m['r2_baseline']['saved_and_before_after_live_keys_sizes_etags_identical'
 keys={o['key'].casefold() for o in r2['objects']}
 for r in m['records']:
     path=ROOT/r['staged_path']; p=next(x for x in prep['records'] if x['id']==r['id']); row=rows[r['id']]
-    assert path.stat().st_size==r['size_bytes']==p['size_bytes']==row['size_bytes']
-    h=hashlib.sha256()
-    with path.open('rb') as stream:
-        for block in iter(lambda:stream.read(1024*1024),b''):h.update(block)
-    assert h.hexdigest()==r['checksum_sha256']==p['sha256']==row['checksum_sha256']
+    assert r['size_bytes']==p['size_bytes']==row['size_bytes']
+    assert r['checksum_sha256']==p['sha256']==row['checksum_sha256']
+    if path.is_file():
+        assert path.stat().st_size==r['size_bytes']
+        h=hashlib.sha256()
+        with path.open('rb') as stream:
+            for block in iter(lambda:stream.read(1024*1024),b''):h.update(block)
+        assert h.hexdigest()==r['checksum_sha256']
+    else:
+        result=next(x for x in load(archive_path.relative_to(ROOT).as_posix())['results'] if x['id']==r['id'])
+        assert archived and result['byte_identical'] and result['public_size_bytes']==r['size_bytes'] and result['public_checksum_sha256']==r['checksum_sha256']
     assert r['page_count']==p['page_count']
     assert row['status']==('placement assigned' if archived else 'approved for addition')
     assert (row['r2_key'],row['r2_url'])==((r['proposed_r2_key'],r['expected_public_archive_url']) if archived else (None,None))

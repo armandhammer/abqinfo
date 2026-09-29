@@ -45,16 +45,27 @@ assert len(family["component_ids"])==4 and set(family["component_ids"])==set(lis
 assert family["delivered_chapters"]==["1.0","3","5","8"]
 assert family["complete_study_recovered"] is False and family["other_chapters_inferred"] is False and family["synthesized_pdf"] is False
 assert "incomplete" in family["state"] and "one grouped" in family["future_public_treatment"]
-assert len(list((ROOT/"research/staging/planning-documents-root-archive-preparation-2026-09-25").glob("*.pdf")))==13
+staged_pdfs=list((ROOT/"research/staging/planning-documents-root-archive-preparation-2026-09-25").glob("*.pdf"))
+assert len(staged_pdfs) in (0,13)
+public_results={r['id']:r for r in read(archive_path.relative_to(ROOT).as_posix())['results']} if archived else {}
+if not staged_pdfs: assert archived and len(public_results)==12 and stage.end
 keys=[]
 for r in a["records"]:
     rid=r["id"]; size,sha,pages=expected[rid]; row=inventory[rid]
     path=ROOT/r["staged_local_path"]
-    assert path.stat().st_size==r["size_bytes"]==row["size_bytes"]==size
-    h=hashlib.sha256()
-    with path.open("rb") as stream:
-        for block in iter(lambda:stream.read(1024*1024),b""):h.update(block)
-    assert h.hexdigest()==r["sha256"]==row["checksum_sha256"]==sha
+    assert r["size_bytes"]==row["size_bytes"]==size
+    assert r["sha256"]==row["checksum_sha256"]==sha
+    if path.is_file():
+        assert path.stat().st_size==size
+        h=hashlib.sha256()
+        with path.open("rb") as stream:
+            for block in iter(lambda:stream.read(1024*1024),b""):h.update(block)
+        assert h.hexdigest()==sha
+    elif rid in public_results:
+        result=public_results[rid]
+        assert result['byte_identical'] and result['public_size_bytes']==size and result['public_checksum_sha256']==sha
+    else:
+        assert rid=='src-d9bf34830a9467e2' and inventory['src-28418cab91a745a6']['checksum_sha256']==sha
     assert r["page_count"]==r["pdf_qa"]["rendered_pages"]==pages
     assert r["pdf_qa"]["structural_result"]=="opens_without_password_or_repair" and r["pdf_qa"]["representative_visual_qa"].startswith("passed_")
     assert r["direct_file_url"]==row["direct_file_url"]==r["final_url"] and r["http_status"]==200 and not r["redirected"]

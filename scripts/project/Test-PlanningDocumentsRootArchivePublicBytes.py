@@ -61,7 +61,9 @@ assert 'src-99fe2201b73355c4' in ids and rows['src-99fe2201b73355c4']['checksum_
 f=a['planning_impact_area_family']; assert len(f['component_ids'])==4 and set(f['component_ids'])<=ids
 assert 'incomplete' in f['state'] and 'one grouped' in f['future_public_treatment']
 assert not f['complete_study_recovered'] and not f['other_chapters_inferred'] and not f['synthesized_pdf']
-assert len(list((ROOT/'research/staging/planning-documents-root-archive-preparation-2026-09-25').glob('*.pdf')))==13
+staged_pdfs=list((ROOT/'research/staging/planning-documents-root-archive-preparation-2026-09-25').glob('*.pdf'))
+assert len(staged_pdfs) in (0,13)
+if not staged_pdfs: assert stage.end and a['state']=='complete_all_12_public_byte_verified_and_inventory_reconciled'
 stage.assert_no_visible_changes(BASE,subprocess.check_output(['git','rev-parse',BASE+':content'],cwd=ROOT,text=True).strip())
 
 print('PASS: 12 exact public-byte archives; 122,249,326 bytes / 928 pages; R2 1,249 / 9,340,531,168; only authorized inventory transitions; no content changes.')

@@ -27,6 +27,7 @@ def main() -> None:
     prep, manifest = load(PREP), load(PREFLIGHT)
     evidence_path = ROOT / 'project-state/discovery/later-ms4-archive-public-byte-verification-2026-09-25.json'
     completed = evidence_path.exists() and load(evidence_path).get('state') == 'complete_all_six_public_byte_verified_and_inventory_reconciled'
+    public_results = {r['id']: r for r in load(evidence_path)['results']} if completed else {}
     implemented = (ROOT / 'project-state/discovery/later-ms4-hugo-implementation-2026-09-25.json').exists()
     validated_path = ROOT / 'project-state/discovery/later-ms4-production-closeout-2026-09-25.json'
     validated = validated_path.exists() and load(validated_path).get('production_verification_result') == 'passed'
@@ -63,8 +64,13 @@ def main() -> None:
         path = ROOT / record['staged_path']
         assert record['id'] == prepared['id']
         assert record['staged_path'] == prepared['staged_original'] == row['local_path']
-        assert record['source_size_bytes'] == prepared['size_bytes'] == row['size_bytes'] == path.stat().st_size
-        assert record['source_sha256'] == prepared['checksum_sha256'] == row['checksum_sha256'] == digest(path)
+        assert record['source_size_bytes'] == prepared['size_bytes'] == row['size_bytes']
+        assert record['source_sha256'] == prepared['checksum_sha256'] == row['checksum_sha256']
+        if path.is_file():
+            assert path.stat().st_size == record['source_size_bytes'] and digest(path) == record['source_sha256']
+        else:
+            result = public_results[record['id']]
+            assert result['byte_identical'] and result['public_size_bytes'] == record['source_size_bytes'] and result['public_checksum_sha256'] == record['source_sha256']
         assert record['proposed_r2_key'] == prepared['proposed_r2_key']
         assert record['expected_public_archive_url'] == prepared['proposed_future_archive_url']
         assert row['status'] == ('validated' if validated else 'implemented' if implemented else 'placement assigned' if completed else 'approved for addition')
