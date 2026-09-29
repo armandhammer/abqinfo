@@ -272,6 +272,18 @@
       "exact_delta_guard": {
         "module": "Pr202OrdinaryQueueLifecycle",
         "function": "guard_current_delta"
+      },
+      "end_commit": "d6337416fd3de9e9610bb96316893150522d8a33"
+    },
+    {
+      "id": "pr203-postmerge-closeout",
+      "baseline_commit": "d6337416fd3de9e9610bb96316893150522d8a33",
+      "regression_scripts": [
+        "scripts/project/Test-Pr203PostMergeCloseout.py"
+      ],
+      "exact_delta_guard": {
+        "module": "Pr203PostMergeCloseoutLifecycle",
+        "function": "guard_current_delta"
       }
     }
   ],

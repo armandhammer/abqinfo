@@ -1,6 +1,6 @@
 {
-  "recorded_at": "2026-09-29T01:58:04.340626+00:00",
-  "completed_item_range": "PR #202 is merged and production verified; its 21 implemented records are removed from the current ordinary approved backlog by a separate background-only queue reconciliation.",
+  "recorded_at": "2026-09-29T02:40:00+00:00",
+  "completed_item_range": "PR #203 merged and production verified across two pages; all 18 Open Space map-family source links and 16 archive links are live with exact archived public bytes.",
   "total_candidates": 7140,
   "counts_by_status": {
     "pending review": 372,
@@ -23,7 +23,7 @@
   "blockers": [
     "1608 publication-quality debt records remain, including 42 unresolved September 13 findings."
   ],
-  "resume_command": "Current ordinary queue: project-state/ordinary-queue-current.json. It has 30 approved and 372 pending records with saved gates and prerequisites intact. The next publication batch remains a separately scoped task.",
+  "resume_command": "PR #203 Open Space map remediation is complete and live. Current ordinary queue remains 30 approved and 372 pending; any next publication batch is a separately scoped task.",
   "verification_campaign_totals": {
     "verified": 2194,
     "passed": 2070,
@@ -31238,6 +31238,26 @@
     "production_verification": "project-state/governance/pr202-postmerge-closeout-2026-09-28/production-verification.json",
     "verified_pages": 4,
     "verified_source_links": 21,
+    "manual_review_gate_closed_by_merge": true,
+    "closeout_visible_changes": 0,
+    "closeout_inventory_changes": 0,
+    "closeout_r2_changes": 0,
+    "branch_sync_targets": [
+      "main",
+      "chatgpt/planning-snapshot"
+    ]
+  },
+  "pr203_postmerge_closeout": {
+    "state": "complete_postmerge_closeout",
+    "pr_number": 203,
+    "merge_commit": "c901990afb47902755f6e293f2ea801fbaebc041",
+    "reviewed_head": "164d955d72300824cd8c561290caeb3fbf4baac6",
+    "production_verification": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+    "public_byte_verification": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+    "verified_pages": 2,
+    "verified_family_records": 18,
+    "verified_archive_pdfs": 16,
+    "verified_archive_bytes": 20983251,
     "manual_review_gate_closed_by_merge": true,
     "closeout_visible_changes": 0,
     "closeout_inventory_changes": 0,

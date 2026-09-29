@@ -1,0 +1,1070 @@
+{
+  "artifact_type": "task_implementation_plan",
+  "contract": "project-state/governance/pr203-postmerge-closeout-2026-09-28/contract.json",
+  "contract_sha256": "548371fc26e247c310e061f963451aa0a009e32497fa577a57c1a0b0259f3184",
+  "population_sha256": "5a07a0965de29729d411928779c70c0988ca9fa2fbc00347b9895b5a751f5084",
+  "respected_governance_ids": [
+    "authorization-profile-ordinary-review-large",
+    "capital-2005-2013-ccip-master",
+    "capital-2007-2016-decade-master",
+    "capital-2009-historical-master",
+    "capital-2011-two-masters",
+    "decision-2009-go-bond-retained-11-decisions-c06a3a6c",
+    "decision-2011-go-bond-department-schedules-decisions-1a367fd1",
+    "decision-2011-go-bond-program-scope-and-schedule-decisions-7d91c668",
+    "decision-2017-go-bond-program-decisions-2026-09-09-268c83b9",
+    "decision-archive-recovery-53d2a462",
+    "decision-arroyo-history-decisions-2026-08-20-939cd06f",
+    "decision-capital-program-review-28-decisions-a2e89ee1",
+    "decision-council-closeout-status-2026-09-20-4dfd8e30",
+    "decision-council-projects-planning-forms-cluster-research-2026-09-13-bed287b5",
+    "decision-early-go-bond-archive-decisions-2026-09-11-c9aeec10",
+    "decision-eight-batch-2-decisions-2026-08-14-f83e424c",
+    "decision-eight-batch-decisions-2026-08-14-01fe2287",
+    "decision-frozen-review-batch-16-decisions-554d266d",
+    "decision-geneivas-arroyo-contributed-documents-decisions-52986270",
+    "decision-gis-dmd-history-decisions-6122241c",
+    "decision-go2003-master-compilation-decisions-2026-09-13-7f7a401d",
+    "decision-go2011-bond-archive-decisions-2026-09-11-aecdde74",
+    "decision-go2017-official-master-consolidation-2026-09-16-a4c4b709",
+    "decision-huning-highland-hoz-map-2017-decisions-ffc1a49a",
+    "decision-legacy-direct-source-remediation-decisions-2026-09-12-a2a646f7",
+    "decision-live-abqinfo-archive-reconciliation-decisions-2026-09-17-ce459cd2",
+    "decision-local-planning-transit-history-decisions-9b6ab991",
+    "decision-ordinary-second-large-campaign-city-review-decisions-2026-09-26-0400a931",
+    "decision-ordinary-second-large-campaign-dmd-review-decisions-2026-09-26-a29a51e4",
+    "decision-ordinary-second-large-campaign-supporting-review-decisions-2026-0-da0c11c6",
+    "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
+    "decision-paseo-del-volcan-publication-decisions-2026-09-17-b4f94eab",
+    "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+    "decision-project-procurement-records-cluster-research-2026-09-12-9a7ef8f0",
+    "decision-rail-yards-local-projects-decisions-9ecb904a",
+    "decision-retained-source-expansion-10-decisions-2026-08-27-a1ec0bcb",
+    "decision-retained-source-expansion-16-decisions-2026-08-29-08f97fd5",
+    "decision-review-decisions-05dc8063",
+    "decision-scoped-source-review-2026-08-04-33554a9c",
+    "decision-unm-cnm-focused-source-scope-1673e3f6",
+    "policy-agents",
+    "policy-durable-task-governance",
+    "policy-mission-scope",
+    "policy-mission-scope-legacy",
+    "policy-project-recency",
+    "policy-project-state",
+    "policy-publication-quality",
+    "policy-quality-exclusions",
+    "policy-r2-storage",
+    "policy-source-priorities",
+    "policy-tip-stip-retention",
+    "workflow-autonomous-verification",
+    "workflow-background-campaign",
+    "workflow-handoff-retirement",
+    "workflow-parallel-verification",
+    "workflow-stage-lifecycle"
+  ],
+  "subjects": {},
+  "actions": [
+    "governance_audit",
+    "governance_implementation",
+    "background_integration"
+  ],
+  "events": [
+    {
+      "operation": "governance_audit",
+      "candidate_ids": [
+        "src-005af4d0a7c9c760",
+        "src-1cff86b46343d908",
+        "src-234b4b2f020e9455",
+        "src-2fec9403a904115d",
+        "src-3617488d3e23ed73",
+        "src-4752ea3b8c1ef183",
+        "src-4f52cc9a9cc25828",
+        "src-708a570d8fd6f98f",
+        "src-72433a545bdd2a24",
+        "src-934fc0a8a71b499f",
+        "src-9a8ab38bdba859ee",
+        "src-acd6ffe812b54229",
+        "src-ad103b60136441e2",
+        "src-ae33c3c2fbc6e0d8",
+        "src-e93a6fe1808a9257",
+        "src-eb7faaebd60cf26b",
+        "src-f9051c697fcfef66",
+        "src-f959feb16b7d43c7"
+      ],
+      "governance_ids": [
+        "authorization-profile-ordinary-review-large",
+        "capital-2005-2013-ccip-master",
+        "capital-2007-2016-decade-master",
+        "capital-2009-historical-master",
+        "capital-2011-two-masters",
+        "decision-2009-go-bond-retained-11-decisions-c06a3a6c",
+        "decision-2011-go-bond-department-schedules-decisions-1a367fd1",
+        "decision-2011-go-bond-program-scope-and-schedule-decisions-7d91c668",
+        "decision-2017-go-bond-program-decisions-2026-09-09-268c83b9",
+        "decision-archive-recovery-53d2a462",
+        "decision-arroyo-history-decisions-2026-08-20-939cd06f",
+        "decision-capital-program-review-28-decisions-a2e89ee1",
+        "decision-council-closeout-status-2026-09-20-4dfd8e30",
+        "decision-council-projects-planning-forms-cluster-research-2026-09-13-bed287b5",
+        "decision-early-go-bond-archive-decisions-2026-09-11-c9aeec10",
+        "decision-eight-batch-2-decisions-2026-08-14-f83e424c",
+        "decision-eight-batch-decisions-2026-08-14-01fe2287",
+        "decision-frozen-review-batch-16-decisions-554d266d",
+        "decision-geneivas-arroyo-contributed-documents-decisions-52986270",
+        "decision-gis-dmd-history-decisions-6122241c",
+        "decision-go2003-master-compilation-decisions-2026-09-13-7f7a401d",
+        "decision-go2011-bond-archive-decisions-2026-09-11-aecdde74",
+        "decision-go2017-official-master-consolidation-2026-09-16-a4c4b709",
+        "decision-huning-highland-hoz-map-2017-decisions-ffc1a49a",
+        "decision-legacy-direct-source-remediation-decisions-2026-09-12-a2a646f7",
+        "decision-live-abqinfo-archive-reconciliation-decisions-2026-09-17-ce459cd2",
+        "decision-local-planning-transit-history-decisions-9b6ab991",
+        "decision-ordinary-second-large-campaign-city-review-decisions-2026-09-26-0400a931",
+        "decision-ordinary-second-large-campaign-dmd-review-decisions-2026-09-26-a29a51e4",
+        "decision-ordinary-second-large-campaign-supporting-review-decisions-2026-0-da0c11c6",
+        "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
+        "decision-paseo-del-volcan-publication-decisions-2026-09-17-b4f94eab",
+        "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+        "decision-project-procurement-records-cluster-research-2026-09-12-9a7ef8f0",
+        "decision-rail-yards-local-projects-decisions-9ecb904a",
+        "decision-retained-source-expansion-10-decisions-2026-08-27-a1ec0bcb",
+        "decision-retained-source-expansion-16-decisions-2026-08-29-08f97fd5",
+        "decision-review-decisions-05dc8063",
+        "decision-scoped-source-review-2026-08-04-33554a9c",
+        "decision-unm-cnm-focused-source-scope-1673e3f6",
+        "policy-agents",
+        "policy-durable-task-governance",
+        "policy-mission-scope",
+        "policy-mission-scope-legacy",
+        "policy-project-recency",
+        "policy-project-state",
+        "policy-publication-quality",
+        "policy-quality-exclusions",
+        "policy-r2-storage",
+        "policy-source-priorities",
+        "policy-tip-stip-retention",
+        "workflow-autonomous-verification",
+        "workflow-background-campaign",
+        "workflow-handoff-retirement",
+        "workflow-parallel-verification",
+        "workflow-stage-lifecycle"
+      ],
+      "action": "implement",
+      "use_contract_record_rules": true
+    },
+    {
+      "operation": "governance_implementation",
+      "candidate_ids": [],
+      "governance_ids": [
+        "authorization-profile-ordinary-review-large",
+        "capital-2005-2013-ccip-master",
+        "capital-2007-2016-decade-master",
+        "capital-2009-historical-master",
+        "capital-2011-two-masters",
+        "decision-2009-go-bond-retained-11-decisions-c06a3a6c",
+        "decision-2011-go-bond-department-schedules-decisions-1a367fd1",
+        "decision-2011-go-bond-program-scope-and-schedule-decisions-7d91c668",
+        "decision-2017-go-bond-program-decisions-2026-09-09-268c83b9",
+        "decision-archive-recovery-53d2a462",
+        "decision-arroyo-history-decisions-2026-08-20-939cd06f",
+        "decision-capital-program-review-28-decisions-a2e89ee1",
+        "decision-council-closeout-status-2026-09-20-4dfd8e30",
+        "decision-council-projects-planning-forms-cluster-research-2026-09-13-bed287b5",
+        "decision-early-go-bond-archive-decisions-2026-09-11-c9aeec10",
+        "decision-eight-batch-2-decisions-2026-08-14-f83e424c",
+        "decision-eight-batch-decisions-2026-08-14-01fe2287",
+        "decision-frozen-review-batch-16-decisions-554d266d",
+        "decision-geneivas-arroyo-contributed-documents-decisions-52986270",
+        "decision-gis-dmd-history-decisions-6122241c",
+        "decision-go2003-master-compilation-decisions-2026-09-13-7f7a401d",
+        "decision-go2011-bond-archive-decisions-2026-09-11-aecdde74",
+        "decision-go2017-official-master-consolidation-2026-09-16-a4c4b709",
+        "decision-huning-highland-hoz-map-2017-decisions-ffc1a49a",
+        "decision-legacy-direct-source-remediation-decisions-2026-09-12-a2a646f7",
+        "decision-live-abqinfo-archive-reconciliation-decisions-2026-09-17-ce459cd2",
+        "decision-local-planning-transit-history-decisions-9b6ab991",
+        "decision-ordinary-second-large-campaign-city-review-decisions-2026-09-26-0400a931",
+        "decision-ordinary-second-large-campaign-dmd-review-decisions-2026-09-26-a29a51e4",
+        "decision-ordinary-second-large-campaign-supporting-review-decisions-2026-0-da0c11c6",
+        "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
+        "decision-paseo-del-volcan-publication-decisions-2026-09-17-b4f94eab",
+        "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+        "decision-project-procurement-records-cluster-research-2026-09-12-9a7ef8f0",
+        "decision-rail-yards-local-projects-decisions-9ecb904a",
+        "decision-retained-source-expansion-10-decisions-2026-08-27-a1ec0bcb",
+        "decision-retained-source-expansion-16-decisions-2026-08-29-08f97fd5",
+        "decision-review-decisions-05dc8063",
+        "decision-scoped-source-review-2026-08-04-33554a9c",
+        "decision-unm-cnm-focused-source-scope-1673e3f6",
+        "policy-agents",
+        "policy-durable-task-governance",
+        "policy-mission-scope",
+        "policy-mission-scope-legacy",
+        "policy-project-recency",
+        "policy-project-state",
+        "policy-publication-quality",
+        "policy-quality-exclusions",
+        "policy-r2-storage",
+        "policy-source-priorities",
+        "policy-tip-stip-retention",
+        "workflow-autonomous-verification",
+        "workflow-background-campaign",
+        "workflow-handoff-retirement",
+        "workflow-parallel-verification",
+        "workflow-stage-lifecycle"
+      ],
+      "action": "implement",
+      "use_contract_record_rules": true
+    },
+    {
+      "operation": "background_integration",
+      "candidate_ids": [],
+      "governance_ids": [
+        "authorization-profile-ordinary-review-large",
+        "capital-2005-2013-ccip-master",
+        "capital-2007-2016-decade-master",
+        "capital-2009-historical-master",
+        "capital-2011-two-masters",
+        "decision-2009-go-bond-retained-11-decisions-c06a3a6c",
+        "decision-2011-go-bond-department-schedules-decisions-1a367fd1",
+        "decision-2011-go-bond-program-scope-and-schedule-decisions-7d91c668",
+        "decision-2017-go-bond-program-decisions-2026-09-09-268c83b9",
+        "decision-archive-recovery-53d2a462",
+        "decision-arroyo-history-decisions-2026-08-20-939cd06f",
+        "decision-capital-program-review-28-decisions-a2e89ee1",
+        "decision-council-closeout-status-2026-09-20-4dfd8e30",
+        "decision-council-projects-planning-forms-cluster-research-2026-09-13-bed287b5",
+        "decision-early-go-bond-archive-decisions-2026-09-11-c9aeec10",
+        "decision-eight-batch-2-decisions-2026-08-14-f83e424c",
+        "decision-eight-batch-decisions-2026-08-14-01fe2287",
+        "decision-frozen-review-batch-16-decisions-554d266d",
+        "decision-geneivas-arroyo-contributed-documents-decisions-52986270",
+        "decision-gis-dmd-history-decisions-6122241c",
+        "decision-go2003-master-compilation-decisions-2026-09-13-7f7a401d",
+        "decision-go2011-bond-archive-decisions-2026-09-11-aecdde74",
+        "decision-go2017-official-master-consolidation-2026-09-16-a4c4b709",
+        "decision-huning-highland-hoz-map-2017-decisions-ffc1a49a",
+        "decision-legacy-direct-source-remediation-decisions-2026-09-12-a2a646f7",
+        "decision-live-abqinfo-archive-reconciliation-decisions-2026-09-17-ce459cd2",
+        "decision-local-planning-transit-history-decisions-9b6ab991",
+        "decision-ordinary-second-large-campaign-city-review-decisions-2026-09-26-0400a931",
+        "decision-ordinary-second-large-campaign-dmd-review-decisions-2026-09-26-a29a51e4",
+        "decision-ordinary-second-large-campaign-supporting-review-decisions-2026-0-da0c11c6",
+        "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
+        "decision-paseo-del-volcan-publication-decisions-2026-09-17-b4f94eab",
+        "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+        "decision-project-procurement-records-cluster-research-2026-09-12-9a7ef8f0",
+        "decision-rail-yards-local-projects-decisions-9ecb904a",
+        "decision-retained-source-expansion-10-decisions-2026-08-27-a1ec0bcb",
+        "decision-retained-source-expansion-16-decisions-2026-08-29-08f97fd5",
+        "decision-review-decisions-05dc8063",
+        "decision-scoped-source-review-2026-08-04-33554a9c",
+        "decision-unm-cnm-focused-source-scope-1673e3f6",
+        "policy-agents",
+        "policy-durable-task-governance",
+        "policy-mission-scope",
+        "policy-mission-scope-legacy",
+        "policy-project-recency",
+        "policy-project-state",
+        "policy-publication-quality",
+        "policy-quality-exclusions",
+        "policy-r2-storage",
+        "policy-source-priorities",
+        "policy-tip-stip-retention",
+        "workflow-autonomous-verification",
+        "workflow-background-campaign",
+        "workflow-handoff-retirement",
+        "workflow-parallel-verification",
+        "workflow-stage-lifecycle"
+      ],
+      "action": "implement",
+      "use_contract_record_rules": true
+    }
+  ],
+  "completion_evidence": {
+    "authorization-profile-ordinary-review-large": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "capital-2005-2013-ccip-master": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "capital-2007-2016-decade-master": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "capital-2009-historical-master": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "capital-2011-two-masters": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-2009-go-bond-retained-11-decisions-c06a3a6c": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-2011-go-bond-department-schedules-decisions-1a367fd1": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-2011-go-bond-program-scope-and-schedule-decisions-7d91c668": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-2017-go-bond-program-decisions-2026-09-09-268c83b9": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-archive-recovery-53d2a462": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-arroyo-history-decisions-2026-08-20-939cd06f": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-capital-program-review-28-decisions-a2e89ee1": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-council-closeout-status-2026-09-20-4dfd8e30": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-council-projects-planning-forms-cluster-research-2026-09-13-bed287b5": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-early-go-bond-archive-decisions-2026-09-11-c9aeec10": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-eight-batch-2-decisions-2026-08-14-f83e424c": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-eight-batch-decisions-2026-08-14-01fe2287": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-frozen-review-batch-16-decisions-554d266d": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-geneivas-arroyo-contributed-documents-decisions-52986270": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-gis-dmd-history-decisions-6122241c": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-go2003-master-compilation-decisions-2026-09-13-7f7a401d": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-go2011-bond-archive-decisions-2026-09-11-aecdde74": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-go2017-official-master-consolidation-2026-09-16-a4c4b709": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-huning-highland-hoz-map-2017-decisions-ffc1a49a": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-legacy-direct-source-remediation-decisions-2026-09-12-a2a646f7": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-live-abqinfo-archive-reconciliation-decisions-2026-09-17-ce459cd2": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-local-planning-transit-history-decisions-9b6ab991": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-city-review-decisions-2026-09-26-0400a931": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-dmd-review-decisions-2026-09-26-a29a51e4": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-supporting-review-decisions-2026-0-da0c11c6": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-paseo-del-volcan-publication-decisions-2026-09-17-b4f94eab": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-project-procurement-records-cluster-research-2026-09-12-9a7ef8f0": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-rail-yards-local-projects-decisions-9ecb904a": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-retained-source-expansion-10-decisions-2026-08-27-a1ec0bcb": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-retained-source-expansion-16-decisions-2026-08-29-08f97fd5": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-review-decisions-05dc8063": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-scoped-source-review-2026-08-04-33554a9c": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "decision-unm-cnm-focused-source-scope-1673e3f6": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "policy-agents": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "policy-durable-task-governance": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "policy-mission-scope": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "policy-mission-scope-legacy": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "policy-project-recency": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "policy-project-state": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "policy-publication-quality": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "policy-quality-exclusions": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "policy-r2-storage": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "policy-source-priorities": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "policy-tip-stip-retention": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "workflow-autonomous-verification": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "workflow-background-campaign": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "workflow-handoff-retirement": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "workflow-parallel-verification": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ],
+    "workflow-stage-lifecycle": [
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/merge-deployment.json",
+        "sha256": "94dccfc2ad1db9f786ab3d57d5e6d6a3b41559b3ea8d23969fb8f092fd859e8f"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+        "sha256": "eb33dd5f422fcb4137ffe235942b1baa9389b176fd6f5e80b3b583b9e64c21f6"
+      },
+      {
+        "path": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+        "sha256": "77e06cfa98411c31df14f9aee5a71d79c0d015cd7378aa5755a018e1d9008f36"
+      }
+    ]
+  },
+  "status": "in_progress"
+}

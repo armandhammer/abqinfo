@@ -1,0 +1,83 @@
+{
+  "result": "passed",
+  "verified_at_utc": "2026-09-29T03:19:32.431610+00:00",
+  "merge_commit": "c901990afb47902755f6e293f2ea801fbaebc041",
+  "reviewed_head": "164d955d72300824cd8c561290caeb3fbf4baac6",
+  "merge_tree_matches_reviewed_head": true,
+  "deployment_url": "https://eb16b144.abqinfo.pages.dev",
+  "reviewed_preview_url": "https://codex-publication-quality-ar.abqinfo.pages.dev",
+  "production_url": "https://abqinfo.com",
+  "pages": [
+    {
+      "file": "content/maps-data/maps.md",
+      "route": "/maps-data/maps/",
+      "witnesses": [
+        {
+          "label": "production",
+          "url": "https://abqinfo.com/maps-data/maps/",
+          "http_status": 200,
+          "html_sha256": "e4ca0c4a3b3aa138d0d538e113dd2c6b08d439833a093cbbc5e496c78cadcf83",
+          "article_sha256": "172a12036abbb3bb1eafcb9392e01f6f548f9a6b371378dab26d355514499fc5",
+          "cloudflare_email_links_decoded_for_comparison": 0
+        },
+        {
+          "label": "merge_deployment",
+          "url": "https://eb16b144.abqinfo.pages.dev/maps-data/maps/",
+          "http_status": 200,
+          "html_sha256": "66661624a74a5fd10f66a758aca915f6e8093091ec1dc371febad23932258d5f",
+          "article_sha256": "172a12036abbb3bb1eafcb9392e01f6f548f9a6b371378dab26d355514499fc5",
+          "cloudflare_email_links_decoded_for_comparison": 0
+        },
+        {
+          "label": "reviewed_preview",
+          "url": "https://codex-publication-quality-ar.abqinfo.pages.dev/maps-data/maps/",
+          "http_status": 200,
+          "html_sha256": "66661624a74a5fd10f66a758aca915f6e8093091ec1dc371febad23932258d5f",
+          "article_sha256": "172a12036abbb3bb1eafcb9392e01f6f548f9a6b371378dab26d355514499fc5",
+          "cloudflare_email_links_decoded_for_comparison": 0
+        }
+      ],
+      "required_anchors": [
+        "archived-open-space-maps-and-guides",
+        "gartc-linked-open-space-trailhead-maps"
+      ],
+      "article_identical_across_witnesses": true
+    },
+    {
+      "file": "content/public-works/parks-recreation.md",
+      "route": "/public-works/parks-recreation/",
+      "witnesses": [
+        {
+          "label": "production",
+          "url": "https://abqinfo.com/public-works/parks-recreation/",
+          "http_status": 200,
+          "html_sha256": "3c20875294f79af9756a43feb87f71ca83fbc97ffc5c9a975e7fce3aa37325f3",
+          "article_sha256": "70ae31d0ea3f2c865206ee1627d4dd01180da6c55ec67fd6bc257cc5a54e75a3",
+          "cloudflare_email_links_decoded_for_comparison": 0
+        },
+        {
+          "label": "merge_deployment",
+          "url": "https://eb16b144.abqinfo.pages.dev/public-works/parks-recreation/",
+          "http_status": 200,
+          "html_sha256": "7be112879f9a035ffdcb3ea7487b10314e0a635dc072808017f62accb9e5b06d",
+          "article_sha256": "70ae31d0ea3f2c865206ee1627d4dd01180da6c55ec67fd6bc257cc5a54e75a3",
+          "cloudflare_email_links_decoded_for_comparison": 0
+        },
+        {
+          "label": "reviewed_preview",
+          "url": "https://codex-publication-quality-ar.abqinfo.pages.dev/public-works/parks-recreation/",
+          "http_status": 200,
+          "html_sha256": "7be112879f9a035ffdcb3ea7487b10314e0a635dc072808017f62accb9e5b06d",
+          "article_sha256": "70ae31d0ea3f2c865206ee1627d4dd01180da6c55ec67fd6bc257cc5a54e75a3",
+          "cloudflare_email_links_decoded_for_comparison": 0
+        }
+      ],
+      "required_anchors": [
+        "gartc-linked-open-space-trailhead-maps"
+      ],
+      "article_identical_across_witnesses": true
+    }
+  ],
+  "family_records_with_official_source_links": 18,
+  "family_records_with_archive_links": 16
+}

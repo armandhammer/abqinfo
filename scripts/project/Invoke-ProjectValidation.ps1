@@ -31,6 +31,8 @@ if ($LASTEXITCODE) { throw 'Owner quality correction exact-delta/source validati
 & python "$PSScriptRoot/Test-WorkflowStageLifecycle.py"
 if ($LASTEXITCODE) { throw 'Workflow lifecycle historical evidence or active exact-delta validation failed.' }
 & python "$PSScriptRoot/Test-Pr202OrdinaryQueue.py"
+if ($LASTEXITCODE) { throw "PR202 ordinary queue validation failed." }
+& python "$PSScriptRoot/Test-Pr203PostMergeCloseout.py"
 if ($LASTEXITCODE) { throw 'PR #202 ordinary queue reconciliation failed.' }
 & python "$PSScriptRoot/Test-OpenSpaceMapQuality.py"
 if ($LASTEXITCODE) { throw 'Open Space map quality exact-delta validation failed.' }
