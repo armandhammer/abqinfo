@@ -34,6 +34,8 @@ if ($LASTEXITCODE) { throw 'Workflow lifecycle historical evidence or active exa
 if ($LASTEXITCODE) { throw "PR202 ordinary queue validation failed." }
 & python "$PSScriptRoot/Test-Pr203PostMergeCloseout.py"
 if ($LASTEXITCODE) { throw 'PR #202 ordinary queue reconciliation failed.' }
+& python "$PSScriptRoot/Test-Pr204PostMergeCloseout.py"
+if ($LASTEXITCODE) { throw 'PR #204 post-merge closeout validation failed.' }
 & python "$PSScriptRoot/Test-OpenSpaceMapQuality.py"
 if ($LASTEXITCODE) { throw 'Open Space map quality exact-delta validation failed.' }
 if (Test-Path 'project-state/discovery/planning-documents-root-hugo-implementation-2026-09-26.json') {

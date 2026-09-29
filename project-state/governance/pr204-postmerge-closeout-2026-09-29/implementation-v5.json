@@ -1,0 +1,1616 @@
+{
+  "artifact_type": "task_implementation_plan",
+  "contract": "project-state/governance/pr204-postmerge-closeout-2026-09-29/contract-v5.json",
+  "contract_sha256": "0055306379e2a31646ffe1d8a5eed424edf0b9c27c7854bbc37d03dd9b3cecdd",
+  "population_sha256": "f87a1e25d27d9777adfb5849668f9909298ad9c76bbd0b8c99e60907a935db10",
+  "respected_governance_ids": [
+    "authorization-profile-ordinary-review-large",
+    "decision-archive-recovery-53d2a462",
+    "decision-council-closeout-status-2026-09-20-4dfd8e30",
+    "decision-council-projects-planning-forms-cluster-research-2026-09-13-bed287b5",
+    "decision-council-records-archive-decisions-2026-09-12-cb6d7656",
+    "decision-decisions-b8452592",
+    "decision-district-7-find-your-councilor-family-decision-2026-09-20-90f9edc7",
+    "decision-eight-batch-2-decisions-2026-08-14-f83e424c",
+    "decision-featured-project-documents-decisions-2026-08-23-a4e2171c",
+    "decision-inventory-overrides-09e22b5f",
+    "decision-kafb-safety-grant-decisions-2026-08-14-59c87024",
+    "decision-next-ordinary-queue-b8bb5c70",
+    "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
+    "decision-paseo-del-volcan-publication-decisions-2026-09-17-b4f94eab",
+    "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+    "decision-project-procurement-records-cluster-research-2026-09-12-9a7ef8f0",
+    "decision-recent-capital-projects-large3-decisions-c863bf08",
+    "decision-recent-high-value-7-decisions-3ef59640",
+    "decision-recent-programs-maps-large2-decisions-525609f8",
+    "decision-retained-i25-improved-decisions-2026-08-24-67ba7604",
+    "decision-retained-source-expansion-14-decisions-2026-08-28-c9e5ee32",
+    "decision-retained-source-expansion-15-decisions-2026-08-28-85d0a33a",
+    "decision-retained-source-expansion-16-decisions-2026-08-29-08f97fd5",
+    "decision-retained-source-expansion-6d-decisions-2026-08-25-36272992",
+    "decision-retained-source-expansion-8-decisions-2026-08-26-238fdd6d",
+    "decision-retained-source-expansion-9-decisions-2026-08-27-a631728d",
+    "decision-scoped-source-review-2026-08-04-33554a9c",
+    "decision-unm-cnm-focused-source-scope-1673e3f6",
+    "policy-agents",
+    "policy-durable-task-governance",
+    "policy-mission-scope",
+    "policy-mission-scope-legacy",
+    "policy-project-recency",
+    "policy-project-state",
+    "policy-publication-quality",
+    "policy-quality-exclusions",
+    "policy-r2-storage",
+    "policy-source-priorities",
+    "policy-tip-stip-retention",
+    "workflow-autonomous-verification",
+    "workflow-background-campaign",
+    "workflow-handoff-retirement",
+    "workflow-parallel-verification",
+    "workflow-stage-lifecycle"
+  ],
+  "subjects": {},
+  "actions": [
+    "governance_audit",
+    "governance_implementation",
+    "background_integration"
+  ],
+  "events": [
+    {
+      "operation": "governance_audit",
+      "candidate_ids": [
+        "src-2a2c3fa335dc6fdb",
+        "src-4fa1a71ebc82682f",
+        "src-5214ec3ccc315c44",
+        "src-9534febba55a2a64",
+        "src-dff2acc5d7549315",
+        "src-f72aaf598e1ba658"
+      ],
+      "governance_ids": [
+        "policy-durable-task-governance",
+        "workflow-stage-lifecycle",
+        "decision-next-ordinary-queue-b8bb5c70"
+      ],
+      "use_contract_record_rules": true,
+      "action": "implement",
+      "evidence": "PR204 merged tree and reviewed head match; production, merge deployment and approved preview article text, links and anchors match."
+    },
+    {
+      "operation": "governance_implementation",
+      "candidate_ids": [
+        "src-2a2c3fa335dc6fdb",
+        "src-4fa1a71ebc82682f",
+        "src-5214ec3ccc315c44",
+        "src-9534febba55a2a64",
+        "src-dff2acc5d7549315",
+        "src-f72aaf598e1ba658"
+      ],
+      "governance_ids": [
+        "policy-durable-task-governance",
+        "workflow-stage-lifecycle",
+        "decision-next-ordinary-queue-b8bb5c70"
+      ],
+      "use_contract_record_rules": true,
+      "action": "implement",
+      "evidence": "Immutable response bytes, merge check, six official links and both anchors saved; prior publication marked complete and background-only closeout state updated."
+    },
+    {
+      "operation": "background_integration",
+      "candidate_ids": [
+        "src-2a2c3fa335dc6fdb",
+        "src-4fa1a71ebc82682f",
+        "src-5214ec3ccc315c44",
+        "src-9534febba55a2a64",
+        "src-dff2acc5d7549315",
+        "src-f72aaf598e1ba658"
+      ],
+      "governance_ids": [
+        "policy-durable-task-governance",
+        "workflow-stage-lifecycle",
+        "decision-next-ordinary-queue-b8bb5c70"
+      ],
+      "use_contract_record_rules": true,
+      "action": "implement",
+      "evidence": "Background-only closeout and main/planning-snapshot reconciliation planned after validation."
+    }
+  ],
+  "completion_evidence": {
+    "authorization-profile-ordinary-review-large": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-archive-recovery-53d2a462": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-council-closeout-status-2026-09-20-4dfd8e30": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-council-projects-planning-forms-cluster-research-2026-09-13-bed287b5": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-council-records-archive-decisions-2026-09-12-cb6d7656": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-decisions-b8452592": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-district-7-find-your-councilor-family-decision-2026-09-20-90f9edc7": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-eight-batch-2-decisions-2026-08-14-f83e424c": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-featured-project-documents-decisions-2026-08-23-a4e2171c": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-inventory-overrides-09e22b5f": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-kafb-safety-grant-decisions-2026-08-14-59c87024": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-next-ordinary-queue-b8bb5c70": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-paseo-del-volcan-publication-decisions-2026-09-17-b4f94eab": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-project-procurement-records-cluster-research-2026-09-12-9a7ef8f0": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-recent-capital-projects-large3-decisions-c863bf08": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-recent-high-value-7-decisions-3ef59640": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-recent-programs-maps-large2-decisions-525609f8": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-retained-i25-improved-decisions-2026-08-24-67ba7604": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-retained-source-expansion-14-decisions-2026-08-28-c9e5ee32": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-retained-source-expansion-15-decisions-2026-08-28-85d0a33a": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-retained-source-expansion-16-decisions-2026-08-29-08f97fd5": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-retained-source-expansion-6d-decisions-2026-08-25-36272992": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-retained-source-expansion-8-decisions-2026-08-26-238fdd6d": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-retained-source-expansion-9-decisions-2026-08-27-a631728d": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-scoped-source-review-2026-08-04-33554a9c": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "decision-unm-cnm-focused-source-scope-1673e3f6": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "policy-agents": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "policy-durable-task-governance": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "policy-mission-scope": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "policy-mission-scope-legacy": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "policy-project-recency": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "policy-project-state": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "policy-publication-quality": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "policy-quality-exclusions": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "policy-r2-storage": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "policy-source-priorities": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "policy-tip-stip-retention": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "workflow-autonomous-verification": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "workflow-background-campaign": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "workflow-handoff-retirement": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "workflow-parallel-verification": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ],
+    "workflow-stage-lifecycle": [
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.json",
+        "sha256": "0a699bc3f46255b4510567ebe59993383c1c163b8c38c7141b9459fd4dde3a4d"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production-verification.json",
+        "sha256": "b05adfff102314ff5307b05a4ad140731df3f35220ebfb4a1baf0cd463fbc7ef"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/production.html.gz",
+        "sha256": "b22a09725308bd6f3a5adf91873db09d45a0c5b9089d85b0b5c259c0e5cc304f"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/merge-deployment.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/governance/pr204-postmerge-closeout-2026-09-29/reviewed-preview.html.gz",
+        "sha256": "4d604e8e81c630102ac46804c839a335bc81986c8e3743ea781200dddbc93b16"
+      },
+      {
+        "path": "project-state/CURRENT.md",
+        "sha256": "68690e5387eed0c42e712a614e891ef3a28c0de4bf5c71b7d53c01a503fdd746"
+      },
+      {
+        "path": "project-state/checkpoint.json",
+        "sha256": "9a314abc0a6f87803eced70a8de178872bca773dfcc7860a0bc18944f3e07b92"
+      },
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/implementation-v19.json",
+        "sha256": "f2c15553007bf9701dbe048acdec4292376c5da8d6f696c67dec48ffb0d0702f"
+      }
+    ]
+  },
+  "status": "complete"
+}
