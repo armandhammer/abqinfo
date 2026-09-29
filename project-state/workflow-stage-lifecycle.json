@@ -308,6 +308,18 @@
       "exact_delta_guard": {
         "module": "Pr204PostMergeCloseoutLifecycle",
         "function": "guard_current_delta"
+      },
+      "end_commit": "65091aab385e43703e9870d97ebad89375589f1f"
+    },
+    {
+      "id": "ordinary-drainage-projects-publication",
+      "baseline_commit": "65091aab385e43703e9870d97ebad89375589f1f",
+      "regression_scripts": [
+        "scripts/project/Test-OrdinaryDrainagePublication.py"
+      ],
+      "exact_delta_guard": {
+        "module": "OrdinaryDrainagePublicationLifecycle",
+        "function": "guard_current_delta"
       }
     }
   ],

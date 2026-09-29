@@ -1,0 +1,99 @@
+{
+  "artifact_type": "ordinary_drainage_publication_review",
+  "task_id": "ordinary-drainage-projects-publication-2026-09-29",
+  "population": "project-state/governance/ordinary-drainage-projects-2026-09-29/population.json",
+  "contract": "project-state/governance/ordinary-drainage-projects-2026-09-29/contract-v15.json",
+  "selection": {
+    "source_queue": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+    "queue_approved_count": 24,
+    "selected_count": 4,
+    "rationale": "All four approved County pages principally describe named storm-drain or flood-reduction projects. No unrelated backlog record is included."
+  },
+  "source_verification": {
+    "saved_retrieval_manifest": "project-state/discovery/human-review-reassessment-2026-09-26/retrievals.json",
+    "saved_http_status": 200,
+    "saved_capture_date": "2026-09-26",
+    "saved_bytes_sha256_rechecked": true,
+    "live_check_2026_09_29": "County site returned HTTP 403 to direct requests and web retrieval; no fresh HTTP 200 claim is made.",
+    "archive_decision": "These are maintained official HTML project pages with no static original selected for publication; no R2 object is invented or uploaded."
+  },
+  "family_review": [
+    {
+      "family": "barcelona-road-storm-drain-phases",
+      "ids": [
+        "src-e41d6b432e52a7e1",
+        "src-5dedef596ea61914"
+      ],
+      "finding": "Phase 1 completed in August 2018. The later source is titled Phase 2B/3, says Phase 2A is complete, and includes an August 26, 2026 construction update. The existing Phase 2A entry stays separate and unchanged."
+    },
+    {
+      "family": "county-drainage-projects",
+      "ids": [
+        "src-b674369d94936b08",
+        "src-ea28455d489f1c2c"
+      ],
+      "finding": "Hooper is a completed 2018 road-drainage project. Garduño/Ortega is a separate 4th Street pump-station, Garduño Road storm-drain, and Pond 5 design record; its 2020 construction schedule is historical, not proof of completion."
+    }
+  ],
+  "placement_review": {
+    "canonical_page": "content/public-works/stormwater-drainage.md",
+    "section_heading": "County Drainage Projects",
+    "heading_change": "Rename Historical County Drainage Projects to cover the active Barcelona 2B/3 source while retaining historical entries.",
+    "cross_listing": "No new Roadway Projects cross-listing. The existing Phase 2A roadway entry stays unchanged; drainage is the primary subject of these four sources."
+  },
+  "entries": [
+    {
+      "id": "src-e41d6b432e52a7e1",
+      "title": "Barcelona Road Storm Drain Project Phase 1",
+      "final_url": "https://www.bernco.gov/public-works/blog/2021/04/16/barcelona-road-storm-drain-project-phase-1/",
+      "source_sha256": "04248be1f4f9914e5246609b603754382d7b71847f877e214cd132448b338243",
+      "saved_source": "research/staging/human-review-reassessment-2026-09-26/src-e41d6b432e52a7e1-e41d6b43.bin",
+      "measured_article_words_including_page_controls": 178,
+      "quality_finding": "Useful as a linked component of the curated County drainage group: the source identifies built drainage and roadway elements, named drains, funding, and August 2018 completion.",
+      "description": "The County's first Barcelona Road phase connected new runoff collection to the Armijo Drain and added bicycle lanes, curb and gutter, and a sidewalk near Barcelona Elementary. The project page reports construction completed in August 2018."
+    },
+    {
+      "id": "src-5dedef596ea61914",
+      "title": "Barcelona Road Storm Drain Project Phase 2B/3",
+      "final_url": "https://www.bernco.gov/public-works/blog/2021/04/16/barcelona-road-storm-drain-project-phase-2/",
+      "source_sha256": "9a98e875b47998473d71c10b20fd232bc6dc8182486c0de3a83a9f0bcee4415d",
+      "saved_source": "research/staging/human-review-reassessment-2026-09-26/src-5dedef596ea61914-5dedef59.bin",
+      "measured_article_words_including_page_controls": 280,
+      "quality_finding": "Substantive live project update with a distinct later Barcelona segment and named roads. The page's design, bidding, and construction fields conflict in timing; cite its dated August 2026 construction notice rather than assert final completion.",
+      "description": "The County's Phase 2B/3 plan extends storm-drain and roadway work from Barcelona Circle West toward the Isleta Drain and nearby streets. Its August 26, 2026 update reports storm-drain and road work starting on Yuma south of Barcelona; the page also retains design and later construction estimates, so completion is unconfirmed."
+    },
+    {
+      "id": "src-b674369d94936b08",
+      "title": "Hooper Road SW Drainage Improvements",
+      "final_url": "https://www.bernco.gov/public-works/blog/2021/04/15/hooper-road-sw-drainage-improvements/",
+      "source_sha256": "01917ac0f00cb1af51a33f0dd3e9fa7599fee78bab9b3402bf70a2fac52d2c7f",
+      "saved_source": "research/staging/human-review-reassessment-2026-09-26/src-b674369d94936b08-b674369d.bin",
+      "measured_article_words_including_page_controls": 93,
+      "quality_finding": "Short but distinct completed drainage work; present as one component of the County drainage group, not a standalone document.",
+      "description": "The County built about 300 feet of storm drain on Hooper Road SW with state capital-improvement funding. Its project page records completion in May 2018."
+    },
+    {
+      "id": "src-ea28455d489f1c2c",
+      "title": "Garduño/Ortega Storm Drain Developments",
+      "final_url": "https://www.bernco.gov/public-works/blog/2021/04/15/garduno-ortega-storm-drain-developments/",
+      "source_sha256": "acc7947aed69d8464a9a3978bacc257b61e0dab7e04a05920c066c0cb29dd487",
+      "saved_source": "research/staging/human-review-reassessment-2026-09-26/src-ea28455d489f1c2c-ea28455d.bin",
+      "measured_article_words_including_page_controls": 166,
+      "quality_finding": "Substantive distinct drainage design with a pump-station replacement, new drain, and Pond 5 storage proposal. The source's old anticipated schedule does not establish construction or completion.",
+      "description": "The County's design record proposes replacing the 4th Street and Ortega Road pump station and force main, adding a Garduño Road storm drain to Paseo del Norte Pond 5, and modestly increasing pond storage. The page labels the project as design; its older construction schedule is not a completion report."
+    }
+  ],
+  "local_validation": {
+    "normal_suite": "passed",
+    "log": "project-state/governance/ordinary-drainage-projects-2026-09-29/validation.log",
+    "log_sha256": "da6b9bea29eea548b52775c60edac7976453e576a67be51db60bfe2d84e14fd2",
+    "hugo_version": "0.165.0 extended",
+    "rendered_page": "tmp/site-build/public-works/stormwater-drainage/index.html",
+    "rendered_page_sha256": "79561b5192e58b6a3ff59a2150487d802d4a815035469e0fb3cca0c581f85749",
+    "county_section_anchor": "county-drainage-projects",
+    "four_official_links_in_rendered_page": true,
+    "retained_source_roots_added_pending_descendant_audit": 4,
+    "r2_objects_added": 0,
+    "r2_bytes_added": 0
+  }
+}
