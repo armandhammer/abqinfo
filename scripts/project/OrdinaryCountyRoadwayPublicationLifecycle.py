@@ -13,7 +13,7 @@ PAGE = 'content/transportation/roadway-projects/_index.md'
 def guard_current_delta():
     stage = StageSnapshot('ordinary-county-roadway-publication')
     assert stage.stage['baseline_commit'] == BASELINE
-    population = stage.load_json(PREFIX + 'population-v17.json')
+    population = stage.load_json(PREFIX + 'population-v19.json')
     selected = set(population['candidate_ids'])
     assert len(selected) == 6 and population['pages'] == [PAGE]
     paths = (set(git('diff', BASELINE, stage.end, '--name-only').decode().splitlines())
@@ -30,7 +30,7 @@ def guard_current_delta():
     changed = {key for key in old.keys() | new.keys() if old.get(key) != new.get(key)}
     assert changed == selected, 'County roadway inventory delta differs from frozen records'
     assert all(new[key]['status'] == 'implemented' for key in selected)
-    review = stage.load_json(PREFIX + 'review-v3.json')
+    review = stage.load_json(PREFIX + 'review-v4.json')
     assert {entry['id'] for entry in review['entries']} == selected
     page = stage.read_text(PAGE)
     for entry in review['entries']:

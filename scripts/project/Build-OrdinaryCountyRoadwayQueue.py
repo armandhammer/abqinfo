@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / 'project-state/discovery/pr202-ordinary-queue-reconcile-2026-09-28/queue.json'
-POPULATION = ROOT / 'project-state/governance/ordinary-county-roadway-2026-09-29/population-v17.json'
+POPULATION = ROOT / 'project-state/governance/ordinary-county-roadway-2026-09-29/population-v19.json'
 INVENTORY = ROOT / 'project-state/master-inventory.json'
 OUTPUT = ROOT / 'project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json'
 

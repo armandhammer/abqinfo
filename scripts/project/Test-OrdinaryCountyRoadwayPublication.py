@@ -18,17 +18,17 @@ def old(path):
     return json.loads(subprocess.check_output(['git', 'show', f'{BASELINE}:{path}'], cwd=ROOT))
 
 
-population = load(PREFIX + 'population-v17.json')
+population = load(PREFIX + 'population-v19.json')
 selected = set(population['candidate_ids'])
 assert len(selected) == 6 and population['pages'] == [PAGE]
 before = {r['id']: r for r in old('project-state/master-inventory.json')['candidates']}
 after = {r['id']: r for r in load('project-state/master-inventory.json')['candidates']}
 changed = {i for i in before.keys() | after.keys() if before.get(i) != after.get(i)}
 assert changed == selected, f'Unexpected inventory records changed: {changed ^ selected}'
-review = load(PREFIX + 'review-v3.json')
+review = load(PREFIX + 'review-v4.json')
 assert {r['id'] for r in review['entries']} == selected
 page = (ROOT / PAGE).read_text(encoding='utf-8-sig')
-rendered = ROOT / 'tmp/hugo-site/transportation/roadway-projects/index.html'
+rendered = ROOT / 'tmp/site-build/transportation/roadway-projects/index.html'
 assert rendered.is_file(), 'Hugo render required'
 html = rendered.read_text(encoding='utf-8')
 for entry in review['entries']:
