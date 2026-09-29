@@ -1,7 +1,7 @@
 {
   "artifact_type": "task_implementation_plan",
-  "contract": "project-state/governance/pr206-review-correction-2026-09-29/contract-v8.json",
-  "contract_sha256": "f660f3ee29adb010b23c6126e4f537b4c58b2720d5f1b5106c63fa35646b98bd",
+  "contract": "project-state/governance/pr206-review-correction-2026-09-29/contract-v9.json",
+  "contract_sha256": "0f71fc28107fed9e81f2d4c79b70d1694e752a53ffb1c233f819732e685b0cc7",
   "population_sha256": "017533a4225c135489ec281bbc52ce60e87e5cb3a0fc98c2d23e7c3939e6d0b7",
   "respected_governance_ids": [
     "authorization-profile-ordinary-review-large",
@@ -414,6 +414,16 @@
       ],
       "action": "implement",
       "evidence": "Three additional completed-campaign regressions use their sealed evidence files when ignored download caches are absent; exact bytes remain checked whenever the files exist."
+    },
+    {
+      "operation": "governance_implementation",
+      "candidate_ids": [],
+      "governance_ids": [
+        "policy-durable-task-governance",
+        "workflow-stage-lifecycle"
+      ],
+      "action": "implement",
+      "evidence": "Historical text artifact checks accept exact recorded bytes under either Git checkout line-ending convention; the expected content hash remains required."
     }
   ],
   "completion_evidence": {
