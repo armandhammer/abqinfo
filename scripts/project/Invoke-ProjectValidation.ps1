@@ -30,6 +30,8 @@ if ($LASTEXITCODE) { throw 'Visible publication quality debt grew or an actual-r
 if ($LASTEXITCODE) { throw 'Owner quality correction exact-delta/source validation failed.' }
 & python "$PSScriptRoot/Test-WorkflowStageLifecycle.py"
 if ($LASTEXITCODE) { throw 'Workflow lifecycle historical evidence or active exact-delta validation failed.' }
+& python "$PSScriptRoot/Test-OpenSpaceMapQuality.py"
+if ($LASTEXITCODE) { throw 'Open Space map quality exact-delta validation failed.' }
 if (Test-Path 'project-state/discovery/planning-documents-root-hugo-implementation-2026-09-26.json') {
   & python "$PSScriptRoot/Test-PlanningPublicationLifecycle.py"
   if ($LASTEXITCODE) { throw 'Planning publication negative guard regression failed.' }
