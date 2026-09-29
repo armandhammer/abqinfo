@@ -284,6 +284,18 @@
       "exact_delta_guard": {
         "module": "Pr203PostMergeCloseoutLifecycle",
         "function": "guard_current_delta"
+      },
+      "end_commit": "7b28ef1120f7faf7480bdda90a8f0df6a3e31f87"
+    },
+    {
+      "id": "ordinary-county-roadway-publication",
+      "baseline_commit": "7b28ef1120f7faf7480bdda90a8f0df6a3e31f87",
+      "regression_scripts": [
+        "scripts/project/Test-OrdinaryCountyRoadwayPublication.py"
+      ],
+      "exact_delta_guard": {
+        "module": "OrdinaryCountyRoadwayPublicationLifecycle",
+        "function": "guard_current_delta"
       }
     }
   ],

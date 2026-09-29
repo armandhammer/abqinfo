@@ -226,6 +226,8 @@ if (-not $?) { throw 'Autonomous parallel verification campaign regression faile
 if (-not $?) { throw 'Retained-source descendant-audit coverage failed.' }
 & $HugoPath --gc --minify --cleanDestinationDir --destination tmp/site-build
 if ($LASTEXITCODE) { throw 'Hugo build failed.' }
+& python "$PSScriptRoot/Test-OrdinaryCountyRoadwayPublication.py"
+if ($LASTEXITCODE) { throw 'County roadway publication exact-delta and rendered-page validation failed.' }
 if (Test-Path -LiteralPath 'project-state/discovery/planned-growth-strategy-hugo-implementation-2026-09-23.json') {
   & python "$PSScriptRoot/Test-PlannedGrowthStrategyRenderedPage.py"
   if ($LASTEXITCODE) { throw 'Planned Growth Strategy rendered-page validation failed.' }

@@ -1,0 +1,837 @@
+{
+  "artifact_type": "task_implementation_plan",
+  "contract": "project-state/governance/ordinary-county-roadway-2026-09-29/contract-v19.json",
+  "contract_sha256": "884069543b714376e24e068a4fa4b2320cddc70ce6a5be994fda752f47b94d30",
+  "population_sha256": "0222729181474adb3d42659ac20c4b9b5d6b5e30af63ecb457d0e681a4a35798",
+  "respected_governance_ids": [
+    "authorization-profile-ordinary-review-large",
+    "decision-archive-recovery-53d2a462",
+    "decision-council-closeout-status-2026-09-20-4dfd8e30",
+    "decision-council-projects-planning-forms-cluster-research-2026-09-13-bed287b5",
+    "decision-council-records-archive-decisions-2026-09-12-cb6d7656",
+    "decision-decisions-b8452592",
+    "decision-district-7-find-your-councilor-family-decision-2026-09-20-90f9edc7",
+    "decision-eight-batch-2-decisions-2026-08-14-f83e424c",
+    "decision-featured-project-documents-decisions-2026-08-23-a4e2171c",
+    "decision-inventory-overrides-09e22b5f",
+    "decision-kafb-safety-grant-decisions-2026-08-14-59c87024",
+    "decision-next-ordinary-queue-b8bb5c70",
+    "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
+    "decision-paseo-del-volcan-publication-decisions-2026-09-17-b4f94eab",
+    "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+    "decision-project-procurement-records-cluster-research-2026-09-12-9a7ef8f0",
+    "decision-recent-capital-projects-large3-decisions-c863bf08",
+    "decision-recent-high-value-7-decisions-3ef59640",
+    "decision-recent-programs-maps-large2-decisions-525609f8",
+    "decision-retained-i25-improved-decisions-2026-08-24-67ba7604",
+    "decision-retained-source-expansion-14-decisions-2026-08-28-c9e5ee32",
+    "decision-retained-source-expansion-15-decisions-2026-08-28-85d0a33a",
+    "decision-retained-source-expansion-16-decisions-2026-08-29-08f97fd5",
+    "decision-retained-source-expansion-6d-decisions-2026-08-25-36272992",
+    "decision-retained-source-expansion-8-decisions-2026-08-26-238fdd6d",
+    "decision-retained-source-expansion-9-decisions-2026-08-27-a631728d",
+    "decision-scoped-source-review-2026-08-04-33554a9c",
+    "decision-unm-cnm-focused-source-scope-1673e3f6",
+    "policy-agents",
+    "policy-durable-task-governance",
+    "policy-mission-scope",
+    "policy-mission-scope-legacy",
+    "policy-project-recency",
+    "policy-project-state",
+    "policy-publication-quality",
+    "policy-quality-exclusions",
+    "policy-r2-storage",
+    "policy-source-priorities",
+    "policy-tip-stip-retention",
+    "workflow-autonomous-verification",
+    "workflow-background-campaign",
+    "workflow-handoff-retirement",
+    "workflow-parallel-verification",
+    "workflow-stage-lifecycle"
+  ],
+  "subjects": {},
+  "actions": [
+    "document_review",
+    "family_review",
+    "quality_assessment",
+    "inventory_disposition",
+    "placement",
+    "visitor_visible_change",
+    "content_implementation",
+    "governance_implementation",
+    "external_mutation"
+  ],
+  "events": [
+    {
+      "operation": "document_review",
+      "candidate_ids": [
+        "src-2a2c3fa335dc6fdb",
+        "src-4fa1a71ebc82682f",
+        "src-5214ec3ccc315c44",
+        "src-9534febba55a2a64",
+        "src-dff2acc5d7549315",
+        "src-f72aaf598e1ba658"
+      ],
+      "governance_ids": [
+        "policy-durable-task-governance",
+        "policy-publication-quality",
+        "decision-next-ordinary-queue-b8bb5c70"
+      ],
+      "use_contract_record_rules": true,
+      "action": "implement",
+      "evidence": "Six current official County HTML responses, source hashes, article text, and status limits recorded in review-v4.json."
+    },
+    {
+      "operation": "family_review",
+      "candidate_ids": [
+        "src-2a2c3fa335dc6fdb",
+        "src-4fa1a71ebc82682f",
+        "src-5214ec3ccc315c44",
+        "src-9534febba55a2a64",
+        "src-dff2acc5d7549315",
+        "src-f72aaf598e1ba658"
+      ],
+      "governance_ids": [
+        "policy-durable-task-governance",
+        "policy-publication-quality",
+        "decision-next-ordinary-queue-b8bb5c70"
+      ],
+      "use_contract_record_rules": true,
+      "action": "implement",
+      "evidence": "County roadway, paving, lighting, ADA, and Chico phase relationships recorded in review-v4.json; existing approvals retained."
+    },
+    {
+      "operation": "quality_assessment",
+      "candidate_ids": [
+        "src-2a2c3fa335dc6fdb",
+        "src-4fa1a71ebc82682f",
+        "src-5214ec3ccc315c44",
+        "src-9534febba55a2a64",
+        "src-dff2acc5d7549315",
+        "src-f72aaf598e1ba658"
+      ],
+      "governance_ids": [
+        "policy-durable-task-governance",
+        "policy-publication-quality",
+        "decision-next-ordinary-queue-b8bb5c70"
+      ],
+      "use_contract_record_rules": true,
+      "action": "implement",
+      "evidence": "Actual article word counts, editorial usefulness, source links, and local screenshot review recorded in review-v4.json and six inventory quality assessments."
+    },
+    {
+      "operation": "placement",
+      "candidate_ids": [
+        "src-2a2c3fa335dc6fdb",
+        "src-4fa1a71ebc82682f",
+        "src-5214ec3ccc315c44",
+        "src-9534febba55a2a64",
+        "src-dff2acc5d7549315",
+        "src-f72aaf598e1ba658"
+      ],
+      "governance_ids": [
+        "policy-durable-task-governance",
+        "policy-publication-quality",
+        "decision-next-ordinary-queue-b8bb5c70"
+      ],
+      "use_contract_record_rules": true,
+      "action": "implement",
+      "evidence": "Three recent and three historical entries placed once on the Roadway Projects canonical page."
+    },
+    {
+      "operation": "visitor_visible_change",
+      "candidate_ids": [
+        "src-2a2c3fa335dc6fdb",
+        "src-4fa1a71ebc82682f",
+        "src-5214ec3ccc315c44",
+        "src-9534febba55a2a64",
+        "src-dff2acc5d7549315",
+        "src-f72aaf598e1ba658"
+      ],
+      "governance_ids": [
+        "policy-durable-task-governance",
+        "policy-publication-quality",
+        "decision-next-ordinary-queue-b8bb5c70"
+      ],
+      "use_contract_record_rules": true,
+      "action": "implement",
+      "evidence": "Six named linked entries render under the selected County roadway headings."
+    },
+    {
+      "operation": "inventory_disposition",
+      "candidate_ids": [
+        "src-2a2c3fa335dc6fdb",
+        "src-4fa1a71ebc82682f",
+        "src-5214ec3ccc315c44",
+        "src-9534febba55a2a64",
+        "src-dff2acc5d7549315",
+        "src-f72aaf598e1ba658"
+      ],
+      "governance_ids": [
+        "policy-durable-task-governance",
+        "policy-publication-quality",
+        "decision-next-ordinary-queue-b8bb5c70"
+      ],
+      "use_contract_record_rules": true,
+      "action": "implement",
+      "evidence": "Only the six frozen approved rows advanced to implemented with structured quality evidence."
+    },
+    {
+      "operation": "governance_implementation",
+      "candidate_ids": [
+        "src-2a2c3fa335dc6fdb",
+        "src-4fa1a71ebc82682f",
+        "src-5214ec3ccc315c44",
+        "src-9534febba55a2a64",
+        "src-dff2acc5d7549315",
+        "src-f72aaf598e1ba658"
+      ],
+      "governance_ids": [
+        "policy-durable-task-governance",
+        "policy-publication-quality",
+        "decision-next-ordinary-queue-b8bb5c70"
+      ],
+      "use_contract_record_rules": true,
+      "action": "implement",
+      "evidence": "Full active registry resolved; the queue now has 24 approved records and the audit hash matches current inventory."
+    },
+    {
+      "operation": "external_mutation",
+      "candidate_ids": [
+        "src-2a2c3fa335dc6fdb",
+        "src-4fa1a71ebc82682f",
+        "src-5214ec3ccc315c44",
+        "src-9534febba55a2a64",
+        "src-dff2acc5d7549315",
+        "src-f72aaf598e1ba658"
+      ],
+      "governance_ids": [
+        "policy-durable-task-governance",
+        "policy-publication-quality",
+        "decision-next-ordinary-queue-b8bb5c70"
+      ],
+      "use_contract_record_rules": true,
+      "action": "implement",
+      "evidence": "Review branch pushed, successful Cloudflare preview verified, and PR #204 opened for owner manual review without merge."
+    }
+  ],
+  "completion_evidence": {
+    "authorization-profile-ordinary-review-large": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-archive-recovery-53d2a462": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-council-closeout-status-2026-09-20-4dfd8e30": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-council-projects-planning-forms-cluster-research-2026-09-13-bed287b5": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-council-records-archive-decisions-2026-09-12-cb6d7656": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-decisions-b8452592": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-district-7-find-your-councilor-family-decision-2026-09-20-90f9edc7": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-eight-batch-2-decisions-2026-08-14-f83e424c": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-featured-project-documents-decisions-2026-08-23-a4e2171c": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-inventory-overrides-09e22b5f": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-kafb-safety-grant-decisions-2026-08-14-59c87024": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-next-ordinary-queue-b8bb5c70": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-paseo-del-volcan-publication-decisions-2026-09-17-b4f94eab": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-project-procurement-records-cluster-research-2026-09-12-9a7ef8f0": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-recent-capital-projects-large3-decisions-c863bf08": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-recent-high-value-7-decisions-3ef59640": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-recent-programs-maps-large2-decisions-525609f8": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-retained-i25-improved-decisions-2026-08-24-67ba7604": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-retained-source-expansion-14-decisions-2026-08-28-c9e5ee32": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-retained-source-expansion-15-decisions-2026-08-28-85d0a33a": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-retained-source-expansion-16-decisions-2026-08-29-08f97fd5": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-retained-source-expansion-6d-decisions-2026-08-25-36272992": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-retained-source-expansion-8-decisions-2026-08-26-238fdd6d": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-retained-source-expansion-9-decisions-2026-08-27-a631728d": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-scoped-source-review-2026-08-04-33554a9c": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "decision-unm-cnm-focused-source-scope-1673e3f6": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "policy-agents": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "policy-durable-task-governance": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "policy-mission-scope": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "policy-mission-scope-legacy": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "policy-project-recency": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "policy-project-state": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "policy-publication-quality": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "policy-quality-exclusions": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "policy-r2-storage": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "policy-source-priorities": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "policy-tip-stip-retention": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "workflow-autonomous-verification": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "workflow-background-campaign": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "workflow-handoff-retirement": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "workflow-parallel-verification": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ],
+    "workflow-stage-lifecycle": [
+      {
+        "path": "project-state/governance/ordinary-county-roadway-2026-09-29/review-v4.json",
+        "sha256": "11d44d1228d4299e76971dfc188a2f238e7aaa148eaaea268d831e55d0deaf5f"
+      },
+      {
+        "path": "content/transportation/roadway-projects/_index.md",
+        "sha256": "79f26e052e3b8c9217bbd6bbdfc618bba340edf1d0adb4fe79b2ea7e6d0fd22e"
+      },
+      {
+        "path": "project-state/discovery/ordinary-county-roadway-2026-09-29/queue.json",
+        "sha256": "d1394cadf5869bd432a2bcc660cdef8f133bc561278e0b7c500124f2f610f954"
+      }
+    ]
+  },
+  "status": "preview_verified_owner_manual_review_pending"
+}

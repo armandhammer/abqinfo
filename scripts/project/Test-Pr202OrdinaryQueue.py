@@ -1,12 +1,13 @@
 """Check the exact derived queue and reject a changed saved blocker."""
 import copy
 from Pr202OrdinaryQueueLifecycle import guard_current_delta, validate_queue, BASE
-from WorkflowStageLifecycle import ROOT
+from WorkflowStageLifecycle import StageSnapshot
 import json
 
 queue = guard_current_delta()
-old = json.loads((ROOT / BASE).read_text(encoding='utf-8-sig'))
-rows = {r['id']: r for r in json.loads((ROOT / 'project-state/master-inventory.json').read_text(encoding='utf-8-sig'))['candidates']}
+stage = StageSnapshot('pr202-ordinary-queue-reconcile')
+old = stage.load_json(BASE)
+rows = {r['id']: r for r in stage.load_json('project-state/master-inventory.json')['candidates']}
 ids = set(queue['pr202_implemented_ids_removed_from_approved'])
 bad = copy.deepcopy(queue)
 bad['gated_pending_ids'].pop(next(iter(bad['gated_pending_ids'])))

@@ -270,6 +270,18 @@ The County maintains these live project pages. Construction notices and target d
 
   The County installed a pedestrian hybrid beacon on Central Avenue between Texas and Utah Streets. Its project record lists design beginning in 2019 and construction completion in July 2021.
 
+- [Greenwich Road Improvements - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/16/greenwich-road-improvements/)
+
+  The Greenwich Road project combines pavement, rolled curb and gutter, a south-end cul-de-sac, and infiltration chambers connected to storm-drain inlets. The County page retains a spring–summer 2024 construction snapshot; its progress figure is dated.
+
+- [MDC I-40 Frontage Road Lighting - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/16/mdc-lighting-i-40-frontage-road/)
+
+  The County project designs solar corridor lighting on the I-40 South Frontage Road between Shelly Drive and Atrisco Vista Boulevard. Its design percentage and projected 2025 construction dates are historical page estimates, not a current completion claim.
+
+- [Chico Phase 2: Ladera Road and Atrisco Vista Boulevard - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/16/chico-project-phase-2-ladera-rd-and-atrisco-vista-blvd-improvements/)
+
+  Phase 2 extended Ladera Road from Atrisco Vista Boulevard to Comfort Way and improved Atrisco Vista near I-40, the ramps, and the Central Avenue intersection. The County page records construction completion in January 2022.
+
 ### Bernalillo County Project Indexes
 
 - [Current Public Works Projects](https://www.bernco.gov/public-works/current-projects)
@@ -415,6 +427,18 @@ Questions, construction concerns, or text-alert assistance: email [info@i25impro
 - [Sage Road and Old Coors Road Intersection - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/15/sage-old-coors-intersection/)
 
   The County project added dedicated turn lanes, permanent signals, lighting, and accessible crossings at Sage Road SW and Old Coors Road SW. The page describes the intersection work as completed.
+
+- [Paradise Hills ADA Improvements Phase 1 - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/15/paradise-hills-ada-improvement-project-phase-1/)
+
+  The County replaced deficient wheelchair ramps, curbs, sidewalks, and pavement markings in Paradise Hills under its ADA transition and Complete Streets work. The project page records completion in November 2018.
+
+- [Tramway Lane Reconstruction - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/15/county-wide-road-improvements-project-phase-6-tramway-lane/)
+
+  The County reconstructed Tramway Lane pavement from Tramway Boulevard to Tramway Lane Court by reworking the existing asphalt and placing a new surface. Its project page records completion in August 2015.
+
+- [County Road Improvements District 4 - County Project Page](https://www.bernco.gov/public-works/blog/2021/04/15/county-wide-road-project-district-4/)
+
+  The County road-bond project repaved San Bernardino Road from Eubank to Holbrook, Ortega Road from Second Street to Edith, and San Francisco Road from Lowell to Tennyson. The project page records the 2019 work as completed.
 
 ### Rainbow Boulevard and Universe Boulevard School Safety Project
 

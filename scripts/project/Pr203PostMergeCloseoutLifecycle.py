@@ -3,7 +3,7 @@
 import hashlib
 import json
 
-from WorkflowStageLifecycle import ROOT, StageSnapshot, canonical_bytes, git
+from WorkflowStageLifecycle import StageSnapshot, canonical_bytes, git
 
 BASE = 'd6337416fd3de9e9610bb96316893150522d8a33'
 MERGE = 'c901990afb47902755f6e293f2ea801fbaebc041'
@@ -38,10 +38,7 @@ def guard_current_delta():
                  'project-state/discovery/open-space-map-quality-2026-09-28/public-byte-measurements.json',
                  'project-state/governance/open-space-quality-2026-09-28/implementation-v8.json'):
         assert canonical_bytes(stage.read_bytes(path)) == canonical_bytes(git('show', BASE + ':' + path))
-    receipt_path = ROOT / (TASK + 'receipt.json')
-    if not receipt_path.exists():
-        return
-    receipt = json.loads(receipt_path.read_text(encoding='utf-8'))
+    receipt = stage.load_json(TASK + 'receipt.json')
     assert receipt['pr']['number'] == 203 and receipt['pr']['state'] == 'MERGED'
     assert receipt['merge_commit'] == MERGE and receipt['reviewed_head'] == HEAD
     assert receipt['merge_tree_matches_reviewed_head'] and receipt['manual_review_gate_closed_by_merge']
@@ -52,20 +49,20 @@ def guard_current_delta():
     for name, key in (('production-verification.json', 'production_verification_sha256'),
                       ('merge-deployment.json', 'deployment_sha256'),
                       ('public-byte-verification.json', 'public_byte_verification_sha256')):
-        actual = hashlib.sha256(canonical_bytes((ROOT / (TASK + name)).read_bytes())).hexdigest()
+        actual = hashlib.sha256(canonical_bytes(stage.read_bytes(TASK + name))).hexdigest()
         assert receipt[key] == actual
-    production = json.loads((ROOT / (TASK + 'production-verification.json')).read_text(encoding='utf-8'))
-    public = json.loads((ROOT / (TASK + 'public-byte-verification.json')).read_text(encoding='utf-8'))
+    production = stage.load_json(TASK + 'production-verification.json')
+    public = stage.load_json(TASK + 'public-byte-verification.json')
     assert production['result'] == public['result'] == 'passed'
     assert len(production['pages']) == 2 and all(p['article_identical_across_witnesses'] for p in production['pages'])
     assert all(len(p['witnesses']) == 3 for p in production['pages'])
     assert production['family_records_with_official_source_links'] == 18
     assert production['family_records_with_archive_links'] == public['verified_archive_count'] == 16
     assert len(public['records']) == 16 and all(r['matches_reviewed_inventory'] for r in public['records'])
-    active = json.loads((ROOT / 'project-state/governance/active-task.json').read_text(encoding='utf-8'))
+    active = stage.load_json('project-state/governance/active-task.json')
     assert active['state'] == 'complete' and active['contract'].startswith(TASK)
-    implementation = json.loads((ROOT / active['implementation']).read_text(encoding='utf-8'))
+    implementation = stage.load_json(active['implementation'])
     assert implementation['status'] == 'complete'
     if receipt.get('normal_validation') == 'passed':
-        log = canonical_bytes((ROOT / (TASK + 'validation.log')).read_bytes())
+        log = canonical_bytes(stage.read_bytes(TASK + 'validation.log'))
         assert receipt['validation_log_sha256'] == hashlib.sha256(log).hexdigest()
