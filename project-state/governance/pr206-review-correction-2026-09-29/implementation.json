@@ -1,8 +1,8 @@
 {
   "artifact_type": "task_implementation_plan",
-  "contract": "project-state/governance/pr206-review-correction-2026-09-29/contract-v2.json",
-  "contract_sha256": "3c557b2d50d23aa4824da60f0044f2b52599f1e248f77d0e7e66bae2dbe7666e",
-  "population_sha256": "30c24e6d47d9b9c58e990cfab9304a48e769a8606f40ca9c1cd0b3708896e5b6",
+  "contract": "project-state/governance/pr206-review-correction-2026-09-29/contract-v3.json",
+  "contract_sha256": "d5df8f9801af092114261fc33f119f6c91fb36163a397c93210de32ce8bf3f08",
+  "population_sha256": "15f23f4cdb8c4c06a9e4300b39baac268131a73bef0c1107a6a6145dad83226f",
   "respected_governance_ids": [
     "authorization-profile-ordinary-review-large",
     "capital-2005-2013-ccip-master",
@@ -374,6 +374,16 @@
       "use_contract_record_rules": true,
       "action": "implement",
       "evidence": "A tracked compressed bundle preserves the four exact prior official HTTP 200 captures; the source test reads only tracked files and the correction stage seals visitor-visible content."
+    },
+    {
+      "operation": "governance_implementation",
+      "candidate_ids": [],
+      "governance_ids": [
+        "policy-durable-task-governance",
+        "workflow-stage-lifecycle"
+      ],
+      "action": "implement",
+      "evidence": "The historical human-review reassessment test now accepts its protected completed-stage public-byte receipt when the ignored local archive cache is absent; its exact source check still runs when the cache exists."
     }
   ],
   "completion_evidence": {
