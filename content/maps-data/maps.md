@@ -83,7 +83,7 @@ Interactive maps of city data and infrastructure.
 
 - [Paseo de la Mesa Recreation Trail Map (2018)](https://files.abqinfo.com/public-works/parks-recreation/cabq-paseo-de-la-mesa-recreation-trail-map-2018.pdf)
 
-  Maps the recreation trail, parking, adjoining Major Public Open Space and Petroglyph National Monument lands, nearby volcanic features, streets, and Northwest Mesa connections.
+  Maps the recreation trail, parking, adjoining Major Public Open Space and Petroglyph National Monument lands, nearby volcanic features, streets, and Northwest Mesa connections. [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/paseo-de-la-mesa-trail.pdf)
 
 - [Ruth Eisenberg Trailhead and West Mesa Trail Map (2025)](https://files.abqinfo.com/public-works/parks-recreation/cabq-ruth-eisenberg-west-mesa-trail-map-2025.pdf)
 
@@ -99,11 +99,11 @@ Interactive maps of city data and infrastructure.
 
 - [Sandia Foothills Open Space Trail Map (Revised 2006)](https://files.abqinfo.com/public-works/parks-recreation/cabq-sandia-foothills-open-space-trail-map-2006.pdf)
 
-  Preserves a dated field map of the foothills trail network, trailheads, numbered routes, Elena Gallegos, Embudito, Bear Canyon, access streets, and Wilderness boundary.
+  Preserves a dated field map of the foothills trail network, trailheads, numbered routes, Elena Gallegos, Embudito, Bear Canyon, access streets, and Wilderness boundary. [Official City PDF](https://www.cabq.gov/parksandrecreation/recreation/documents/foothillsmap.pdf)
 
 - [City of Albuquerque Open Space Overview Map](https://files.abqinfo.com/public-works/parks-recreation/cabq-open-space-overview-map.pdf)
 
-  Provides a systemwide reference to City Open Space properties and nearby tribal, federal, county, and municipal lands across the Bosque, foothills, volcanic mesa, and East Mountain areas.
+  Provides a systemwide reference to City Open Space properties and nearby tribal, federal, county, and municipal lands across the Bosque, foothills, volcanic mesa, and East Mountain areas. [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/OSMapsmallformat6091.pdf)
 
 - [Albuquerque Bird Watching Guide and Map (2019)](https://files.abqinfo.com/public-works/parks-recreation/cabq-albuquerque-bird-watching-guide-map-2019.pdf)
 
@@ -111,7 +111,7 @@ Interactive maps of city data and infrastructure.
 
 - [Los Poblanos Fields Open Space Trail Map (2020)](https://files.abqinfo.com/public-works/parks-recreation/cabq-los-poblanos-fields-open-space-trail-map-2020.pdf)
 
-  Maps trails, access points, parking, agricultural fields, drains, nearby streets, and route distances around the Rio Grande Community Farm and Agri-Nature Center.
+  Maps trails, access points, parking, agricultural fields, drains, nearby streets, and route distances around the Rio Grande Community Farm and Agri-Nature Center. [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/lpf-trail-map.pdf)
 
 - [Open Space Visitor Center and Bosque Trail Access Map](https://files.abqinfo.com/public-works/parks-recreation/cabq-open-space-visitor-center-bosque-trail-map.pdf)
 
@@ -121,7 +121,9 @@ Interactive maps of city data and infrastructure.
 
 ### GARTC-Linked Open Space Trailhead Maps
 
-These City field maps were linked from the Greater Albuquerque Recreational Trails Committee (GARTC) resource page. They complement, rather than replace, the systemwide and current [Open Space map library](https://www.cabq.gov/parksandrecreation/open-space/facilities-map).
+These City field maps were linked from the Greater Albuquerque Recreational Trails Committee (GARTC) resource page. The Indian School, Piedra Lisa and Embudito sheets share a 2005 regional Foothills base but each adds a different enlarged trailhead inset; the 2010 Copper and Menaul sheets add their own access detail. The 2006 network sheet preserves an earlier regional layout, while the 2018 Foothills map gives a later system overview. The other property maps identify separate City Open Space boundaries, access points and land-use limits.
+
+These are dated field references. For current routes, access, closures and restrictions, check the maintained [City Open Space map library](https://www.cabq.gov/parksandrecreation/open-space/facilities-map) and onsite information.
 
 - [Foothills Trail Map: Indian School (Revised 2005)](https://files.abqinfo.com/public-works/parks-recreation/cabq-foothills-trail-map-indian-school-2005.pdf)
 

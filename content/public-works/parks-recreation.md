@@ -260,7 +260,9 @@ Parks and recreation facilities and programs.
 
 ### GARTC-Linked Open Space Trailhead Maps
 
-These City field maps were linked from the Greater Albuquerque Recreational Trails Committee (GARTC) resource page. They complement, rather than replace, the systemwide and current [Open Space map library](https://www.cabq.gov/parksandrecreation/open-space/facilities-map).
+These City field maps were linked from the Greater Albuquerque Recreational Trails Committee (GARTC) resource page. The Indian School, Piedra Lisa and Embudito sheets share a 2005 regional Foothills base but each adds a different enlarged trailhead inset; the 2010 Copper and Menaul sheets add their own access detail. The 2006 network sheet preserves an earlier regional layout, while the 2018 Foothills map gives a later system overview. The other property maps identify separate City Open Space boundaries, access points and land-use limits.
+
+These are dated field references. For current routes, access, closures and restrictions, check the maintained [City Open Space map library](https://www.cabq.gov/parksandrecreation/open-space/facilities-map) and onsite information.
 
 - [Foothills Trail Map: Indian School (Revised 2005)](https://files.abqinfo.com/public-works/parks-recreation/cabq-foothills-trail-map-indian-school-2005.pdf) — Indian School Road access, trails, mileage, facilities, City and Forest Service lands, and bicycle restrictions. [Official City PDF](https://www.cabq.gov/parksandrecreation/documents/copy_of_indianschool.pdf)
 

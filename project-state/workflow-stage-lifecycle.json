@@ -248,6 +248,18 @@
       "exact_delta_guard": {
         "module": "Pr202PostMergeCloseoutLifecycle",
         "function": "guard_current_delta"
+      },
+      "end_commit": "9da98d2728ce8ff679d92a1720963286f694a6a5"
+    },
+    {
+      "id": "open-space-map-quality",
+      "baseline_commit": "9da98d2728ce8ff679d92a1720963286f694a6a5",
+      "regression_scripts": [
+        "scripts/project/Test-OpenSpaceMapQuality.py"
+      ],
+      "exact_delta_guard": {
+        "module": "OpenSpaceMapQualityLifecycle",
+        "function": "guard_current_delta"
       }
     }
   ],
