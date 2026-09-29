@@ -102,7 +102,7 @@ from BackgroundArchiveCampaign import completed_originals
 campaign_placed=sum(r.get('inventory_status_after')=='placement assigned' for r in completed_originals().values())
 assert counts['approved for addition']==((27-campaign_placed) if archived else 39) and counts['duplicate']==1518
 historical='project-state/discovery/planning-documents-root-residual-decision-2026-09-20.json'
-assert (ROOT/historical).read_bytes()==baseline(historical),'Historical decision was rewritten'
+assert (ROOT/historical).read_bytes().replace(b'\r\n',b'\n')==baseline(historical).replace(b'\r\n',b'\n'),'Historical decision was rewritten'
 if not archived: assert (ROOT/'project-state/r2-inventory.json').read_text(encoding='utf-8-sig').replace('\r\n','\n')==baseline('project-state/r2-inventory.json').decode('utf-8-sig').replace('\r\n','\n')
 stage.assert_no_visible_changes(BASELINE,subprocess.check_output(['git','rev-parse',BASELINE+':content'],cwd=ROOT,text=True).strip())
 

@@ -1,7 +1,7 @@
 {
   "artifact_type": "task_implementation_plan",
-  "contract": "project-state/governance/pr206-review-correction-2026-09-29/contract-v10.json",
-  "contract_sha256": "d22af958bcf36b7fed902729d5deb83ec0b2da4676e65c96e14bc967d464e914",
+  "contract": "project-state/governance/pr206-review-correction-2026-09-29/contract-v11.json",
+  "contract_sha256": "2fdc426a8de7b12e6d04e302252b1cedbe538a57850309ab2bbd01e0446b17ee",
   "population_sha256": "2c656cccfeb1d675f5906eba53d5baa9b39a8096cab00ae24f5421ac6d1ab88b",
   "respected_governance_ids": [
     "authorization-profile-ordinary-review-large",
@@ -434,6 +434,16 @@
       ],
       "action": "implement",
       "evidence": "Six completed Planning and later-MS4 regressions now validate saved exact public-byte receipts in clean checkouts while retaining local file byte checks when present."
+    },
+    {
+      "operation": "governance_implementation",
+      "candidate_ids": [],
+      "governance_ids": [
+        "policy-durable-task-governance",
+        "workflow-stage-lifecycle"
+      ],
+      "action": "implement",
+      "evidence": "The historical Planning decision byte comparison now normalizes Git checkout line endings while rejecting any other content change."
     }
   ],
   "completion_evidence": {
