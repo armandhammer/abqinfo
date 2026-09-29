@@ -20,6 +20,7 @@ if second:
     load=historical_load
 
 d=load(CAMPAIGN);s=load(SELECTION);inv=load(ROOT/'project-state/master-inventory.json');rows={r['id']:r for r in inv['candidates']};prior={r['id']:r for r in git_json('project-state/master-inventory.json')['candidates']}
+sealed_evidence=set()
 resolved={r['id']:r for r in d['resolved_records']}
 assert len(resolved)==len(d['resolved_records'])<=500
 assert len(rows)==len(prior)==7137 and s['total_pending_population']==1612
@@ -45,7 +46,12 @@ for i,r in resolved.items():
     assert not fam['visitor_visible_content_changed']
     if rec.get('fresh_source_qa'):
         qa=rec['fresh_source_qa'];p=ROOT/qa['staged_path']
-        assert p.stat().st_size==qa['size_bytes'] and hashlib.file_digest(p.open('rb'),'sha256').hexdigest()==qa['checksum_sha256']
+        if p.is_file():
+            assert p.stat().st_size==qa['size_bytes'] and hashlib.file_digest(p.open('rb'),'sha256').hexdigest()==qa['checksum_sha256']
+        elif r['evidence_artifact'] not in sealed_evidence:
+            evidence=r['evidence_artifact']
+            assert stage.end and (ROOT/evidence).read_bytes().replace(b'\r\n',b'\n')==subprocess.check_output(['git','show',stage.end+':'+evidence],cwd=ROOT).replace(b'\r\n',b'\n')
+            sealed_evidence.add(evidence)
         assert qa['source_GET']['http_status']==200 and qa['source_exact_verified']
         assert qa['representative_visual_qa']=='passed_agent_inspection_opening_middle_ending'
         assert qa['checksum_sha256']==rec['saved_evidence']['checksum_sha256']

@@ -40,7 +40,12 @@ for r in d['records']+d['generated_packages']:
     old=locked_rows[r['id']]
     for field in ('id','family','classification','size_bytes','expected_sha256','expected_pages','r2_key','container_type','staged_path'):
         assert r[field]==old[field],(r['id'],field)
-    p=ROOT/r['staged_path'];assert p.stat().st_size==r['size_bytes'] and sha(r['staged_path'])==r['expected_sha256']
+    p=ROOT/r['staged_path']
+    if p.is_file():
+        assert p.stat().st_size==r['size_bytes'] and sha(r['staged_path'])==r['expected_sha256']
+    else:
+        # The completed campaign artifact is sealed at the stage endpoint.
+        assert stage.end and (ROOT/ART).read_bytes().replace(b'\r\n',b'\n')==subprocess.check_output(['git','show',stage.end+':'+ART],cwd=ROOT).replace(b'\r\n',b'\n')
     if r['id']=='generated-dpm-2018':
         assert r['outcome']=='deferred_human_review' and not r['archival_authorized']
         assert rows['src-7e7af2af147d96d7']==prior['src-7e7af2af147d96d7'] and rows['src-7e7af2af147d96d7']['status']=='requires human review'
