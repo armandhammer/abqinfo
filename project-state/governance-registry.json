@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "bc92308c478a1250a54b4f56b6811225cf61ae71ec39cb36db66ca567b2f0252",
+  "audit_sha256": "a8c6db10b2e6d5c749a4ac51e00bf7eaa80311543ed9a01a9e4f4d12e195dfbb",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15241,7 +15241,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "0e3939e1db8b62286f1a5457783cb2e2cf516d9d522f061eea3154d33466a16c",
+          "sha256": "939b77237c68d3c481c7ac558503aba2f2aad49e46762bd8992ebe935f462b8b",
           "binding_pointers": [
             "/implementation"
           ]
@@ -18855,6 +18855,55 @@
         "go-2009:archive-publication-authorization",
         "go-2011:archive-publication-authorization"
       ]
+    },
+    {
+      "governance_id": "decision-youth-justice-grouped-historical-publication-2026-09-30",
+      "category": "active family decision",
+      "title": "Two County youth-justice renovation accounts in one historical facility group",
+      "scope": {
+        "candidate_ids": [
+          "src-4db14cde9f1460db",
+          "src-e2c19c0b6111c542"
+        ],
+        "families": [
+          "bernalillo-county-youth-justice-facilities"
+        ],
+        "pages": [
+          "content/public-works/city-facilities.md"
+        ],
+        "artifact_paths": [
+          "project-state/governance/ordinary-youth-justice-publication-2026-09-30/review.json"
+        ]
+      },
+      "authority": "Governed implementation-worker editorial review under owner ordinary-publication instruction on 2026-09-29; no merge authority",
+      "decision_date": "2026-09-30",
+      "effective_date": "2026-09-30",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/ordinary-youth-justice-publication-2026-09-30/review.json",
+          "sha256": "813b763a42de8422ee98bfb7dca0aeb8696e8dcbc101bf40871551a5618a1631",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Present exactly the two selected County youth-justice facility renovations as linked components in one historical City Facilities group. Preserve separate scopes, budgets and official links, qualify early-2020 schedules, avoid completion/current-status inference, and retain original source evidence. No R2 archival for these maintained HTML sources; owner review precedes merge.",
+      "required_actions": [
+        "Present exactly the two selected County youth-justice facility renovations as linked components in one historical City Facilities group. Preserve separate scopes, budgets and official links, qualify early-2020 schedules, avoid completion/current-status inference, and retain original source evidence. No R2 archival for these maintained HTML sources; owner review precedes merge."
+      ],
+      "prohibited_actions": [
+        "Do not infer a completed project, combined budget, single contract, or R2 archive from these sources."
+      ],
+      "constraints": [],
+      "settled_decisions": [
+        {
+          "question_id": "youth-justice-family-presentation-2026-09-30",
+          "decision": "Present exactly the two selected County youth-justice facility renovations as linked components in one historical City Facilities group. Preserve separate scopes, budgets and official links, qualify early-2020 schedules, avoid completion/current-status inference, and retain original source evidence. No R2 archival for these maintained HTML sources; owner review precedes merge."
+        }
+      ],
+      "unresolved_gates": [],
+      "implementation_status": "Owner content PR review remains pending."
     }
   ]
 }
