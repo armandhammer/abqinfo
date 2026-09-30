@@ -16,14 +16,17 @@ def guard_current_delta():
     assert {i for i in before if before[i]!=after[i]}==IDS,'Inventory delta exceeds owner correction'
     for i in IDS:
         assert after[i]['status']=='excluded'
-        assert after[i]['scope_assessment']['final_scope_decision']=='fails_public_information_gate'
+        assert after[i]['scope_assessment']['final_scope_decision']=='excluded_insufficient_abqinfo_usefulness'
         assert after[i]['publication_quality_decision']['decision']=='excluded'
         assert after[i]['publication_quality_decision']['authority']=='owner-youth-justice-publication-exclusion-2026-09-30'
+        assert after[i]['quality_assessment']['publication_form']=='inventory_only'
+        assert not after[i]['implementation_locations'] and not after[i]['implementation_location']
+        assert not after[i]['proposed_canonical_page']
     assert sum(r['status']=='approved for addition' for r in after.values())==18
     pointer=load('project-state/ordinary-queue-current.json');q=load(pointer['artifact'])
     assert set(q['youth_justice_owner_excluded_ids'])==IDS
     assert q['pending_review_count']==372 and len(q['newly_approved_backlog'])==18
-    for path in ('project-state/r2-storage-policy.json','project-state/discovery/retained-source-audit-queue.json'):
+    for path in ('project-state/r2-storage-policy.json','project-state/r2-inventory.json','project-state/discovery/retained-source-audit-queue.json'):
         assert (ROOT/path).read_bytes().replace(b'\r\n',b'\n')==old(BASE,path).replace(b'\r\n',b'\n')
     evidence='project-state/governance/ordinary-youth-justice-publication-2026-09-30/'
     for path in subprocess.check_output(['git','ls-tree','-r','--name-only',START,evidence],cwd=ROOT,text=True).splitlines():
