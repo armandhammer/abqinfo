@@ -1,5 +1,5 @@
 """Owner correction: exact two-record exclusions and no PR207 public-page delta."""
-import json, subprocess
+import ast, copy, json, subprocess
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
 BASE='07a0485306963f2e485a93030ece81c6a2c01da9'
@@ -30,6 +30,20 @@ def guard_current_delta():
         assert (ROOT/path).read_bytes().replace(b'\r\n',b'\n')==old(START,path).replace(b'\r\n',b'\n'),'Historical PR207 evidence changed: '+path
     visible=subprocess.check_output(['git','diff','--name-only',BASE,'--','content','layouts','assets','static','hugo.toml'],cwd=ROOT,text=True)
     assert not visible.strip(),'PR207 retains visitor-visible changes'
+    # The actual owner negatives fail the existing publication gate, including
+    # attempted reuse of the previous positive assessment without supersession.
+    from PublicationQuality import quality_errors, require_quality_transition
+    previous=load('project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json')
+    for prior in previous['prior_records']:
+        assert quality_errors(after[prior['id']])
+        attempted=copy.deepcopy(prior)
+        try: require_quality_transition(after[prior['id']],attempted)
+        except ValueError: pass
+        else: raise AssertionError('Previous positive assessment silently reversed owner exclusion')
+    tree=ast.parse((ROOT/'scripts/project/Build-HumanReviewReassessment.py').read_text(encoding='utf-8-sig'))
+    branch=next(n for n in ast.walk(tree) if isinstance(n,ast.If) and ast.unparse(n.test)=="pkg == 'bernco-project-pages'")
+    generic=branch.body[0].orelse[0].orelse
+    assert len(generic)==1 and isinstance(generic[0],ast.Raise),'Shared County-page eligibility shortcut remains executable'
     return True
 if __name__=='__main__':
     guard_current_delta()

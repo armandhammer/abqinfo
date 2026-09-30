@@ -1,8 +1,8 @@
 {
   "artifact_type": "task_implementation_plan",
-  "contract": "project-state/governance/pr207-owner-correction-2026-09-30/contract-v6.json",
-  "contract_sha256": "00f722639c9f9040f7ae89c433b65159174d0e84f76decd2a81cfce133a85c24",
-  "population_sha256": "83c4388ce31797f0cf3ac0a4d10702765e4760f116d00127777aaed98c07cfc0",
+  "contract": "project-state/governance/pr207-owner-correction-2026-09-30/contract-v8.json",
+  "contract_sha256": "398d11bfa987b70c1326d84408537a4758cc109e388b802c39c2cab1b42670da",
+  "population_sha256": "4cef504e044f90393c364339c9ab2971e3b661fabbc33ffbaba63acddea6ed68",
   "respected_governance_ids": [
     "authorization-profile-ordinary-review-large",
     "capital-2007-2016-decade-master",
@@ -44,6 +44,7 @@
     "workflow-background-campaign",
     "workflow-handoff-retirement",
     "workflow-parallel-verification",
+    "workflow-retire-shared-county-project-approval-2026-09-30",
     "workflow-stage-lifecycle"
   ],
   "subjects": {
@@ -237,9 +238,11 @@
     }
   },
   "actions": [
+    "document_review",
+    "quality_assessment",
+    "governance_implementation",
     "inventory_disposition",
-    "content_removal",
-    "governance_implementation"
+    "content_removal"
   ],
   "events": [
     {
@@ -271,8 +274,607 @@
       "activity": "implement",
       "use_contract_record_rules": true,
       "evidence": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json"
+    },
+    {
+      "operation": "document_review",
+      "candidate_ids": [
+        "src-4db14cde9f1460db",
+        "src-e2c19c0b6111c542"
+      ],
+      "activity": "implement",
+      "use_contract_record_rules": true,
+      "evidence": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json"
     }
   ],
-  "completion_evidence": {},
-  "status": "owner_correction_complete_before_optional_triage"
+  "completion_evidence": {
+    "authorization-profile-ordinary-review-large": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "capital-2007-2016-decade-master": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "capital-2011-two-masters": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "decision-2011-go-bond-department-schedules-decisions-1a367fd1": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "decision-2011-go-bond-program-scope-and-schedule-decisions-7d91c668": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "decision-2017-go-bond-program-decisions-2026-09-09-268c83b9": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "decision-archive-recovery-53d2a462": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "decision-capital-program-review-28-decisions-a2e89ee1": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "decision-council-closeout-status-2026-09-20-4dfd8e30": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "decision-decisions-b8452592": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "decision-facilities-development-decisions-2026-08-21-3d211984": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "decision-gis-dmd-history-decisions-6122241c": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "decision-go2011-bond-archive-decisions-2026-09-11-aecdde74": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "decision-go2017-official-master-consolidation-2026-09-16-a4c4b709": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "decision-legistar-transportation-history-batch-decisions-2026-09-09-589e07fe": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "decision-municipaldevelopment-agenda-minutes-archive-preparation-2026-09-2-c9cae5cc": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "decision-next-ordinary-queue-b8bb5c70": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-regional-review-decisions-2026-09--4b095e53": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "decision-planning-udd-archive-decisions-2026-09-12-8a8ccdbe": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "decision-retained-source-expansion-2-decisions-2026-08-24-38732f8f": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "decision-scoped-source-review-2026-08-04-33554a9c": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "decision-unm-cnm-focused-source-scope-1673e3f6": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "owner-youth-justice-publication-exclusion-2026-09-30": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "policy-agents": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "policy-durable-task-governance": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "policy-mission-scope": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "policy-mission-scope-legacy": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "policy-project-recency": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "policy-project-state": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "policy-publication-quality": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "policy-quality-exclusions": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "policy-r2-storage": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "policy-source-priorities": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "policy-tip-stip-retention": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "workflow-autonomous-verification": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "workflow-background-campaign": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "workflow-handoff-retirement": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "workflow-parallel-verification": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "workflow-retire-shared-county-project-approval-2026-09-30": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ],
+    "workflow-stage-lifecycle": [
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+        "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+        "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba"
+      },
+      {
+        "path": "project-state/governance/pr207-owner-correction-2026-09-30/receipt.json",
+        "sha256": "f40150b0ce0386a90ab79492cd2616ce3cf5b572858ce447c988df1bd62b7da9"
+      }
+    ]
+  },
+  "status": "owner_correction_and_diagnosis_complete"
 }

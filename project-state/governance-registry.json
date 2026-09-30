@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "028b4dff25b1ac09ef2ef2a87f80574a7311cde25809c6d6303e782cc6dc69b9",
+  "audit_sha256": "33758dd5d9a618681c6a6c9059eb6542a80d46b915fe66a971aeab8c1d747539",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -16018,7 +16018,7 @@
         },
         {
           "path": "scripts/project/Build-HumanReviewReassessment.py",
-          "sha256": "a38b954c2aa1f72db44981db8c9f02efeab79c6c850e425b551e6ae04cb39f6d",
+          "sha256": "673507e317bbba2c8cd7824701143d781de404b9d28d49a4c0e1d9b5e4b7659a",
           "binding_pointers": [
             "/implementation"
           ]
@@ -18953,6 +18953,41 @@
       ],
       "unresolved_gates": [],
       "implementation_status": "owner correction in progress"
+    },
+    {
+      "governance_id": "workflow-retire-shared-county-project-approval-2026-09-30",
+      "category": "active workflow requirement",
+      "title": "Retire generic local County-project approval recipe",
+      "scope": {
+        "artifact_paths": [
+          "scripts/project/Build-HumanReviewReassessment.py",
+          "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json"
+        ]
+      },
+      "authority": "Owner PR207 correction instruction authorizing narrow evidence-based prevention",
+      "decision_date": "2026-09-30",
+      "effective_date": "2026-09-30",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/pr207-owner-correction-2026-09-30/diagnosis.json",
+          "sha256": "1c740aea2b82ff3adaf4ff4095fd714d681ef0c05d7bcd5f4a8b2132a9d100ba",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "The shared County-project positive-approval branch is retired. Future eligibility requires an independent record-specific assessment of meaningful durable Albuquerque public-information value. Local official provenance or named capital scope alone cannot establish this value.",
+      "required_actions": [
+        "Fail closed before shared County-project approvals; retain historical assessments; regression-check the retired branch."
+      ],
+      "prohibited_actions": [
+        "Re-enable generic positive approval based on recovered local official project pages."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "narrow correction implemented"
     }
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "artifact_type": "owner_correction_diagnosis",
+  "candidate_ids": [
+    "src-4db14cde9f1460db",
+    "src-e2c19c0b6111c542"
+  ],
+  "prior_approval": {
+    "artifact": "project-state/discovery/human-review-reassessment-2026-09-26/decisions.json",
+    "generator": "scripts/project/Build-HumanReviewReassessment.py",
+    "function": "bernco-project-pages else branch -> approve(live=True) -> scope(positive=True)",
+    "finding": "Every recovered County project page outside a hard-coded exclusion/prerequisite list received passes_both_gates with shared rationale. HTTP200 HTML and extracted text were asserted; record-specific substantive durable value was assumed. live=True skipped static quality_assessment."
+  },
+  "publication_review": {
+    "artifact": "project-state/governance/ordinary-youth-justice-publication-2026-09-30/review.json",
+    "finding": "The later worker declared grouped historical value for111/112-word project descriptions and expanded City Facilities. Owner rejected that inference; grouping supplied no sufficient durable substantive value."
+  },
+  "classification": "Systemic shortcut in historical disposition builder plus overly generous publication judgment; no demonstrated structural validator defect. Existing policy already requires independent substantive value.",
+  "smallest_correction": "Retire only the generic County-project positive-approval branch with a fail-closed exception. Future eligibility uses fresh governed individual assessments. Preserve historical decisions and remaining18 statuses. Add regression that the shortcut cannot run and previous positive quality decisions cannot silently reverse owner exclusions.",
+  "validation_limit": "Structural validators can reject missing or negative assessments but cannot establish the truth of an asserted editorial rationale.",
+  "authority": "Current owner instruction explicitly authorizes the smallest demonstrated narrow regression/clarification."
+}
