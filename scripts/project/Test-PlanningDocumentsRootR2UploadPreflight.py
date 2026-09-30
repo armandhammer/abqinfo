@@ -63,11 +63,17 @@ assert m['r2_baseline']['saved_and_before_after_live_keys_sizes_etags_identical'
 keys={o['key'].casefold() for o in r2['objects']}
 for r in m['records']:
     path=ROOT/r['staged_path']; p=next(x for x in prep['records'] if x['id']==r['id']); row=rows[r['id']]
-    assert path.stat().st_size==r['size_bytes']==p['size_bytes']==row['size_bytes']
-    h=hashlib.sha256()
-    with path.open('rb') as stream:
-        for block in iter(lambda:stream.read(1024*1024),b''):h.update(block)
-    assert h.hexdigest()==r['checksum_sha256']==p['sha256']==row['checksum_sha256']
+    assert r['size_bytes']==p['size_bytes']==row['size_bytes']
+    assert r['checksum_sha256']==p['sha256']==row['checksum_sha256']
+    if path.is_file():
+        assert path.stat().st_size==r['size_bytes']
+        h=hashlib.sha256()
+        with path.open('rb') as stream:
+            for block in iter(lambda:stream.read(1024*1024),b''):h.update(block)
+        assert h.hexdigest()==r['checksum_sha256']
+    else:
+        result=next(x for x in load(archive_path.relative_to(ROOT).as_posix())['results'] if x['id']==r['id'])
+        assert archived and result['byte_identical'] and result['public_size_bytes']==r['size_bytes'] and result['public_checksum_sha256']==r['checksum_sha256']
     assert r['page_count']==p['page_count']
     assert row['status']==('placement assigned' if archived else 'approved for addition')
     assert (row['r2_key'],row['r2_url'])==((r['proposed_r2_key'],r['expected_public_archive_url']) if archived else (None,None))
@@ -96,7 +102,7 @@ from BackgroundArchiveCampaign import completed_originals
 campaign_placed=sum(r.get('inventory_status_after')=='placement assigned' for r in completed_originals().values())
 assert counts['approved for addition']==((27-campaign_placed) if archived else 39) and counts['duplicate']==1518
 historical='project-state/discovery/planning-documents-root-residual-decision-2026-09-20.json'
-assert (ROOT/historical).read_bytes()==baseline(historical),'Historical decision was rewritten'
+assert (ROOT/historical).read_bytes().replace(b'\r\n',b'\n')==baseline(historical).replace(b'\r\n',b'\n'),'Historical decision was rewritten'
 if not archived: assert (ROOT/'project-state/r2-inventory.json').read_text(encoding='utf-8-sig').replace('\r\n','\n')==baseline('project-state/r2-inventory.json').decode('utf-8-sig').replace('\r\n','\n')
 stage.assert_no_visible_changes(BASELINE,subprocess.check_output(['git','rev-parse',BASELINE+':content'],cwd=ROOT,text=True).strip())
 

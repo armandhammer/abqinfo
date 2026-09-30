@@ -93,8 +93,15 @@ for r in receipts:
     assert 0 < r['size_bytes'] <= a['maximum_object_bytes'] == 150000000
     assert (v['size_bytes'],v['checksum_sha256']) == (r['size_bytes'],r['checksum_sha256']) == (row['size_bytes'],row['checksum_sha256'])
     assert row['r2_key'] == r['key'] and row['status'] == 'placement assigned' and objects[r['key']]['etag'] == r['etag']
-    source = ROOT / row['local_path']; assert source.stat().st_size == r['size_bytes']
-    with source.open('rb') as f: assert hashlib.file_digest(f,'sha256').hexdigest() == r['checksum_sha256']
+    source = ROOT / row['local_path']
+    if source.is_file():
+        assert source.stat().st_size == r['size_bytes']
+        with source.open('rb') as f: assert hashlib.file_digest(f,'sha256').hexdigest() == r['checksum_sha256']
+    else:
+        # The completed stage's receipt is protected by WorkflowStageLifecycle.
+        # A clean checkout need not contain its ignored historical download cache.
+        assert stage.end and v['byte_identical']
+        assert (v['size_bytes'], v['checksum_sha256']) == (r['size_bytes'], r['checksum_sha256'])
 stage.assert_no_visible_changes(a['baseline_commit'],a['content_tree'])
 assert not git('ls-files','--others','--exclude-standard','content').strip()
 cp = load(ROOT / 'project-state/checkpoint.json'); assert cp['counts_by_status'] == inv['counts']

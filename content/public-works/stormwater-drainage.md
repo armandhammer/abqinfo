@@ -150,15 +150,31 @@ Technical standards, studies, models, and public references for Albuquerque’s 
 
   Programs impact-fee-supported drainage rights-of-way, trunk lines, channels, diversions, ponds, and basins across Far Northeast, Northwest, Southwest, and Tijeras service areas. [Full 2007–2016 capital-program record](/city-data/capital-spending/#20072016-decade-plan)
 
-## Historical County Drainage Projects
+## County Drainage Projects
 
 - [Foothill Pond Feasibility Study](https://www.bernco.gov/public-works/blog/2021/04/15/foothill-pond-feasibility-study)
 
   Evaluates Foothill Bridge Pond and a possible connection to the Isleta Drain, including site survey, hydraulic capacity, a 30% conceptual design, and construction-cost estimate for improving the stormwater outfall system.
 
+- [Barcelona Road Storm Drain Project Phase 1](https://www.bernco.gov/public-works/blog/2021/04/16/barcelona-road-storm-drain-project-phase-1/)
+
+  The County's first Barcelona Road phase connected new runoff collection to the Armijo Drain and added bicycle lanes, curb and gutter, and a sidewalk near Barcelona Elementary. The project page reports construction completed in August 2018.
+
 - [Barcelona Road Storm Drain Project Phase 2A](https://www.bernco.gov/public-works/blog/2025/07/15/barcelona-road-strom-drain-project-phase-2a)
 
   Preserves the completed South Valley flood-reduction project between Joe Sanchez and La Junta Roads, including runoff collection and connection to the Armijo Drain alongside bicycle lanes, curb and gutter, and sidewalk improvements.
+
+- [Barcelona Road Storm Drain Project Phase 2B/3](https://www.bernco.gov/public-works/blog/2021/04/16/barcelona-road-storm-drain-project-phase-2/)
+
+  The County's later phase extends storm-drain and roadway work from Barcelona Circle West toward the Isleta Drain and nearby streets. Its August 26, 2026 update reports work starting on Yuma south of Barcelona; the page also retains design and later construction estimates, so completion is unconfirmed.
+
+- [Hooper Road SW Drainage Improvements](https://www.bernco.gov/public-works/blog/2021/04/15/hooper-road-sw-drainage-improvements/)
+
+  The County built about 300 feet of storm drain on Hooper Road SW with state capital-improvement funding. Its project page records completion in May 2018.
+
+- [Garduño/Ortega Storm Drain Developments](https://www.bernco.gov/public-works/blog/2021/04/15/garduno-ortega-storm-drain-developments/)
+
+  The County's design record proposes replacing the 4th Street and Ortega Road pump station and force main, adding a Garduño Road storm drain to Paseo del Norte Pond 5, and modestly increasing pond storage. The page labels the project as design; its older construction schedule is not a completion report.
 
 - [Hardy Court Improvements — Project Map (2025 Archived Image)](https://files.abqinfo.com/transportation/roadway-projects/current/bernco-hardy-court-project-map-2025.jpg)
 

@@ -10,6 +10,11 @@ ART='project-state/discovery/approved-backlog-background-archive-campaign-2026-0
 def load(p):return json.loads((ROOT/p).read_text(encoding='utf-8-sig'))
 def git_json(sha,p):return json.loads(subprocess.check_output(['git','show',sha+':'+p],cwd=ROOT).decode('utf-8-sig'))
 def sha(p):return hashlib.file_digest((ROOT/p).open('rb'),'sha256').hexdigest()
+def checkout_text_hash_matches(p, expected):
+    data=(ROOT/p).read_bytes()
+    normalized=data.replace(b'\r\n',b'\n')
+    return expected in {hashlib.sha256(value).hexdigest() for value in
+                        (data,normalized,normalized.replace(b'\n',b'\r\n'))}
 d=load(ART);locked=git_json('38828d2',ART)
 assert d['baseline_git_sha']=='c054c9af67f1984051462d75727bd7fb05ea3ed2'
 assert len(d['records'])==27 and len(d['generated_packages'])==7
@@ -40,7 +45,12 @@ for r in d['records']+d['generated_packages']:
     old=locked_rows[r['id']]
     for field in ('id','family','classification','size_bytes','expected_sha256','expected_pages','r2_key','container_type','staged_path'):
         assert r[field]==old[field],(r['id'],field)
-    p=ROOT/r['staged_path'];assert p.stat().st_size==r['size_bytes'] and sha(r['staged_path'])==r['expected_sha256']
+    p=ROOT/r['staged_path']
+    if p.is_file():
+        assert p.stat().st_size==r['size_bytes'] and sha(r['staged_path'])==r['expected_sha256']
+    else:
+        # The completed campaign artifact is sealed at the stage endpoint.
+        assert stage.end and (ROOT/ART).read_bytes().replace(b'\r\n',b'\n')==subprocess.check_output(['git','show',stage.end+':'+ART],cwd=ROOT).replace(b'\r\n',b'\n')
     if r['id']=='generated-dpm-2018':
         assert r['outcome']=='deferred_human_review' and not r['archival_authorized']
         assert rows['src-7e7af2af147d96d7']==prior['src-7e7af2af147d96d7'] and rows['src-7e7af2af147d96d7']['status']=='requires human review'
@@ -84,7 +94,7 @@ assert current['total_bytes']==sum(o['size_bytes'] for o in objects.values())==9
 for r in verified:assert objects[r['r2_key']]['size_bytes']==r['size_bytes'] and objects[r['r2_key']]['etag']==r['r2_etag']
 stage.assert_no_visible_changes(d['baseline_git_sha'],d['content_tree_sha256_baseline'])
 assert not subprocess.check_output(['git','ls-files','--others','--exclude-standard','content'],cwd=ROOT).strip()
-for path,expected in d['governing_artifact_hashes'].items():assert sha(path)==expected,path
+for path,expected in d['governing_artifact_hashes'].items():assert checkout_text_hash_matches(path,expected),path
 if d['state']=='complete_background_campaign':
     assert len(verified)==30 and sum(r['size_bytes'] for r in verified)==29783028
     assert counts['approved for addition']==3 and counts['placement assigned']==38

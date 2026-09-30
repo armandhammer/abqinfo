@@ -40,6 +40,7 @@ def main() -> None:
     )
     expected = module.EXPECTED
     completed = (ROOT / 'project-state/discovery/later-ms4-archive-public-byte-verification-2026-09-25.json').exists() and load('project-state/discovery/later-ms4-archive-public-byte-verification-2026-09-25.json').get('state') == 'complete_all_six_public_byte_verified_and_inventory_reconciled'
+    public_results = {r['id']: r for r in load('project-state/discovery/later-ms4-archive-public-byte-verification-2026-09-25.json')['results']} if completed else {}
     implemented = (ROOT / 'project-state/discovery/later-ms4-hugo-implementation-2026-09-25.json').exists()
     validated = (ROOT / 'project-state/discovery/later-ms4-production-closeout-2026-09-25.json').exists() and load('project-state/discovery/later-ms4-production-closeout-2026-09-25.json').get('production_verification_result') == 'passed'
     ids = [item[0] for item in expected]
@@ -65,8 +66,13 @@ def main() -> None:
         path = ROOT / record["staged_original"]
         assert record["order"] == number and record["id"] == record_id
         assert record["staged_original"] == (module.STAGING / filename).relative_to(ROOT).as_posix()
-        assert path.stat().st_size == record["size_bytes"] == row["size_bytes"] == size
-        assert sha256(path) == record["checksum_sha256"] == row["checksum_sha256"] == checksum
+        assert record["size_bytes"] == row["size_bytes"] == size
+        assert record["checksum_sha256"] == row["checksum_sha256"] == checksum
+        if path.is_file():
+            assert path.stat().st_size == size and sha256(path) == checksum
+        else:
+            result = public_results[record_id]
+            assert result['byte_identical'] and result['public_size_bytes'] == size and result['public_checksum_sha256'] == checksum
         assert row["status"] == ("validated" if validated else "implemented" if implemented else "placement assigned" if completed else "approved for addition") and row["scope_assessment"]["final_scope_decision"] == "passes_both_gates"
         assert row["local_path"] == record["staged_original"]
         assert row["r2_key"] == (record["proposed_r2_key"] if completed else None)

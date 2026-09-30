@@ -69,6 +69,7 @@ if active.exists():
   assert set(prior[i]['processing_notes'])<=set(rows[i]['processing_notes'])
  assert len({r['id'] for r in d['resolved_records']})==len(d['resolved_records'])
  family_records={r['id']:r for f in s['candidate_families'] for r in load(ROOT/f['evidence_artifact'])['records']}
+ family_evidence={r['id']:f['evidence_artifact'] for f in s['candidate_families'] for r in load(ROOT/f['evidence_artifact'])['records']}
  resolved={r['id']:r for r in d['resolved_records']}
  for i in {q['id'] for q in s['all_pending_records']}-resolved.keys():assert rows[i]==prior[i],('Unresolved row changed',i)
  for i,x in resolved.items():
@@ -77,7 +78,13 @@ if active.exists():
   assert rows[i]['status']==x['decision'] or x['decision']=='approved for addition' and rows[i]['status']=='placement assigned'
   qa=r.get('fresh_source_qa')
   if qa:
-   p=ROOT/qa['staged_path'];assert p.stat().st_size==qa['size_bytes'] and hashlib.file_digest(p.open('rb'),'sha256').hexdigest()==qa['checksum_sha256']
+   p=ROOT/qa['staged_path']
+   if p.is_file():
+    assert p.stat().st_size==qa['size_bytes'] and hashlib.file_digest(p.open('rb'),'sha256').hexdigest()==qa['checksum_sha256']
+   else:
+    # Completed-stage QA survives a clean checkout without its ignored cache.
+    evidence=family_evidence[i]
+    assert stage.end and (ROOT/evidence).read_bytes().replace(b'\r\n',b'\n')==subprocess.check_output(['git','show',stage.end+':'+evidence],cwd=ROOT).replace(b'\r\n',b'\n')
    assert qa['source_exact_verified'] and qa['representative_visual_qa']=='passed_agent_inspection_opening_middle_ending'
   if x['decision']=='approved for addition':
    assert rows[i]['scope_assessment']['final_scope_decision']=='passes_both_gates' and r['r2_key']

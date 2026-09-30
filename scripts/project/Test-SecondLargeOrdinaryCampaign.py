@@ -32,6 +32,7 @@ counts=collections.Counter(r['status'] for r in rows.values());assert inv['count
 assert counts['pending review']==1112-len(resolved)
 assert counts['requires human review']==205
 allowed={'status','updated_at','processing_notes','validation_status','exclusion_reason','scope_assessment','checksum_sha256','size_bytes','title','agency','local_path','file_type','proposed_canonical_page','r2_key','r2_url','r2_etag','r2_last_modified','cited_successors'}
+sealed_evidence=set()
 for i,x in resolved.items():
     row=rows[i];old=prior[i];assert {k for k in row if row[k]!=old.get(k)}<=allowed
     for field in ['source_url','direct_file_url','discovery_path','cited_predecessors']:assert row[field]==old[field]
@@ -42,7 +43,14 @@ for i,x in resolved.items():
     assert row['status'] in ['approved for addition','placement assigned','duplicate','superseded','excluded']
     qa=rec.get('fresh_source_qa')
     if qa:
-        p=ROOT/qa['staged_path'];assert p.stat().st_size==qa['size_bytes'] and hashlib.file_digest(p.open('rb'),'sha256').hexdigest()==qa['checksum_sha256']
+        p=ROOT/qa['staged_path']
+        if p.is_file():
+            assert p.stat().st_size==qa['size_bytes'] and hashlib.file_digest(p.open('rb'),'sha256').hexdigest()==qa['checksum_sha256']
+        else:
+            evidence=x['evidence_artifact']
+            if evidence not in sealed_evidence:
+                assert stage.end and (ROOT/evidence).read_bytes().replace(b'\r\n',b'\n')==subprocess.check_output(['git','show',stage.end+':'+evidence],cwd=ROOT).replace(b'\r\n',b'\n')
+                sealed_evidence.add(evidence)
         assert qa['source_exact_verified'] and qa['source_GET']['http_status']==200
         assert qa['representative_visual_qa']=='passed_agent_inspection_opening_middle_ending'
     if x['decision']=='approved for addition':
