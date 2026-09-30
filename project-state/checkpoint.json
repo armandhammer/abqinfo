@@ -1,6 +1,6 @@
 {
-  "recorded_at": "2026-09-30T13:18:22.7316944Z",
-  "completed_item_range": "PR207 merged background-only; correction and triage preserved; closeout ref synchronization pending",
+  "recorded_at": "2026-09-30T13:23:40.8223295Z",
+  "completed_item_range": "PR207 background-only merge and closeout payload; synchronize main and planning snapshot",
   "total_candidates": 7140,
   "counts_by_status": {
     "pending review": 372,
@@ -21,7 +21,7 @@
   "remaining_nonterminal": 940,
   "next_pending_id": "lin-2f6fbe4ffb0b6564",
   "blockers": [],
-  "resume_command": "Fast-forward main and chatgpt/planning-snapshot to the PR207 final closeout receipt commit; verify local and remote refs.",
+  "resume_command": "Verify main and chatgpt/planning-snapshot at the PR207 integration receipt commit. No new research or family in this task.",
   "verification_campaign_totals": {
     "verified": 2194,
     "passed": 2070,
@@ -33021,6 +33021,291 @@
       "next_pending_id": "lin-2f6fbe4ffb0b6564",
       "blockers": [],
       "resume_command": "Owner review of background-only PR207 disposition after reset. Do not merge under current instruction. No new family active; future publication requires fresh governed scope/quality review using saved triage.",
+      "verification_campaign_totals": {
+        "verified": 2194,
+        "passed": 2070,
+        "requires_human_review": 124
+      },
+      "durable_metadata": {
+        "dpm_annual_consolidation": {
+          "state": "corrected_packets_partially_archived_2018_human_review_deferred",
+          "manifest": "project-state/discovery/dpm-executive-committee-consolidation-manifest-2026-09-17.json",
+          "component_count": 44,
+          "packets": [
+            {
+              "year": 2014,
+              "component_count": 5,
+              "page_count": 13,
+              "size_bytes": 284803,
+              "sha256": "e03ddf4a07f20a83b76b6f5ee8afdfda956a0713c68b3a71e3ae034be78c6656",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2014.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2014.pdf",
+              "archive_outcome": "archive_complete",
+              "public_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2014.pdf"
+            },
+            {
+              "year": 2015,
+              "component_count": 9,
+              "page_count": 17,
+              "size_bytes": 773060,
+              "sha256": "51457ec34cd80383e6ad92aa38f17da84101b0ad118a8d687e2db48dd468be26",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2015.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2015.pdf",
+              "archive_outcome": "archive_complete",
+              "public_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2015.pdf"
+            },
+            {
+              "year": 2016,
+              "component_count": 9,
+              "page_count": 19,
+              "size_bytes": 449277,
+              "sha256": "9cae8d9fc7fa3a8ea727309015b656749ab759c89a0b434b3689f9f008359ed9",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2016.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2016.pdf",
+              "archive_outcome": "archive_complete",
+              "public_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2016.pdf"
+            },
+            {
+              "year": 2017,
+              "component_count": 15,
+              "page_count": 32,
+              "size_bytes": 762787,
+              "sha256": "d41a926cc273886293d4669ae5cb989c442ed3a8fc5fc7cb9c88c869250241c2",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2017.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2017.pdf",
+              "archive_outcome": "archive_complete",
+              "public_url": "https://files.abqinfo.com/development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2017.pdf"
+            },
+            {
+              "year": 2018,
+              "component_count": 6,
+              "page_count": 10,
+              "size_bytes": 376588,
+              "sha256": "87b085020276d880d388a702c23819027b5b510a955f672d464069df0896273b",
+              "local_output_path": "output/pdf/dpm-executive-committee/cabq-dpm-executive-committee-agendas-minutes-2018.pdf",
+              "proposed_r2_key": "development-land-use/development-process/cabq-dpm-executive-committee-agendas-minutes-2018.pdf",
+              "archive_outcome": "deferred_human_review"
+            }
+          ],
+          "archive_evidence": "project-state/discovery/approved-backlog-background-archive-campaign-2026-09-26.json"
+        },
+        "background_archive_campaign": {
+          "state": "complete_background_campaign",
+          "artifact": "project-state/discovery/approved-backlog-background-archive-campaign-2026-09-26.json",
+          "archive_integration_pr": 179,
+          "archive_merge_commit": "1f31c9c6716eab316d9c1b4ed8cc987e265928da",
+          "verified_objects": 30,
+          "verified_added_bytes": 29783028,
+          "unresolved_archive_namespaces": 3,
+          "dpm_2018_human_review_deferred": true,
+          "visitor_visible_content_changed": false
+        },
+        "ordinary_large_campaign": {
+          "artifact": "project-state/discovery/ordinary-queue-large-resolution-campaign-2026-09-26.json",
+          "state": "complete_background_campaign",
+          "resolved_records": 500,
+          "families_completed": 201,
+          "objects_archived": 13,
+          "bytes_archived": 17230744,
+          "visitor_visible_content_changed": false,
+          "next_actionable_queue": "project-state/discovery/ordinary-queue-next-position-post-large-campaign-2026-09-26.json",
+          "next_actionable_background_id": "src-b9f68064d83c5038",
+          "integration_pr": 181,
+          "integration_merge_commit": "fa3e24b63b122ebf4257f7179d2cacc075ada9f8",
+          "validation": "full_project_validation_passed"
+        },
+        "ordinary_second_large_campaign": {
+          "state": "complete_background_campaign",
+          "artifact": "project-state/discovery/ordinary-queue-second-large-resolution-campaign-2026-09-26.json",
+          "resolved_records": 700,
+          "objects_archived": 218,
+          "bytes_archived": 612424373,
+          "capacity_deferred_approvals": 69,
+          "object_size_deferred_approvals": 1,
+          "latest_r2": {
+            "object_count": 1510,
+            "total_bytes": 9999969313,
+            "remaining_headroom_bytes": 30687
+          },
+          "next_actionable_queue": "project-state/discovery/ordinary-queue-next-position-post-second-large-campaign-2026-09-26.json",
+          "ungated_pending_count": 88,
+          "visitor_visible_content_changed": false,
+          "validation": "full_project_validation_passed",
+          "integration": {
+            "state": "merged_background_only",
+            "pr": 183,
+            "url": "https://github.com/armandhammer/abqinfo/pull/183",
+            "merge_commit": "39e3b73073d7bccb8b4459d81f9a86339794fc75",
+            "validated_head": "212735550c3eb7568c2d113239290089c039a829",
+            "cloudflare_pages_check": "SUCCESS",
+            "visitor_visible_content_changed": false,
+            "recorded_at": "2026-09-26T20:27:24.507227+00:00",
+            "branch_reconciliation": "Local main and chatgpt/planning-snapshot fast-forwarded to merged origin/main. Publish this metadata-only handoff and synchronize all four refs; no additional candidate work."
+          }
+        },
+        "active_background_campaign": {
+          "campaign_id": "ordinary-review-large-2026-09-26-third",
+          "artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/campaign.json",
+          "profile": "ordinary-review-large",
+          "state": "complete_background_campaign",
+          "resolutions": 79,
+          "exact_archives": 75,
+          "workflow": "project-state/campaign-workflow.md"
+        },
+        "human_review_reassessment": {
+          "artifact": "project-state/discovery/human-review-reassessment-2026-09-26/summary.json",
+          "fully_dispositioned": 139,
+          "research_prerequisites": 55,
+          "owner_records": 11,
+          "owner_packages": 4,
+          "removed_obsolete_human_gates": 194,
+          "exact_archives": 3,
+          "added_r2_bytes": 381871978,
+          "state": "complete_background_reassessment",
+          "validation_artifact": "project-state/discovery/human-review-reassessment-2026-09-26/validation-002.json",
+          "integration_artifact": "project-state/campaign-runtime/human-review-reassessment-2026-09-26/final-integration.json"
+        },
+        "background_followup": {
+          "artifact": "project-state/discovery/background-followup-2026-09-26/summary.json",
+          "state": "complete_background_followup",
+          "resolved": 16,
+          "unresolved": 39,
+          "archives": 16,
+          "added_r2_bytes": 14454680,
+          "validation_artifact": "project-state/discovery/background-followup-2026-09-26/validation-004.json",
+          "integration_artifact": "project-state/campaign-runtime/background-followup-2026-09-26/final-integration.json"
+        },
+        "owner_decisions": {
+          "artifact": "project-state/discovery/owner-decisions-2026-09-26/summary.json",
+          "task": "owner-decisions-2026-09-26",
+          "state": "complete_owner_decisions",
+          "owner_packages_resolved": 4,
+          "owner_records_resolved": 11,
+          "retained_records": 9,
+          "excluded_records": 2,
+          "unresolved_owner_packages": 0,
+          "unresolved_owner_records": 0,
+          "codex_followups": 39,
+          "new_archives": 6,
+          "added_r2_bytes": 4522318,
+          "r2_objects": 1610,
+          "r2_bytes": 10689937835,
+          "remaining_storage_bytes": 2310062165,
+          "visitor_visible_changes": false,
+          "dispositions": {
+            "src-05b68a5758490499": "excluded",
+            "src-10209c5fcdce2906": "placement assigned",
+            "src-30b5123b798a30f3": "placement assigned",
+            "src-333e4b4b3970edc1": "excluded",
+            "src-3ff7d77c284d06a8": "placement assigned",
+            "src-671b4bd36e11e0d9": "placement assigned",
+            "src-8903198f1d3c22e1": "placement assigned",
+            "src-967a816e5ddac695": "placement assigned",
+            "src-aab5517438784db7": "placement assigned",
+            "src-dda1163373f3754c": "placement assigned",
+            "src-f904f6d8bf3787f5": "placement assigned"
+          },
+          "validation_artifact": "project-state/discovery/owner-decisions-2026-09-26/validation-005.json",
+          "integration_artifact": "project-state/campaign-runtime/owner-decisions-2026-09-26/final-integration.json"
+        },
+        "quality_remediation_first": {
+          "state": "merged_and_live",
+          "artifact": "project-state/discovery/quality-remediation-first-2026-09-27/implementation.json",
+          "target_count": 25,
+          "annual_master_count": 5,
+          "debt_remaining": 1608,
+          "september_13_unresolved": 42,
+          "r2_mutation": false,
+          "pr_number": 196,
+          "preview": "https://32d81a1d.abqinfo.pages.dev",
+          "normal_suite": "passed",
+          "merge_commit": "a7b470ec2e5391639b85ce4995e55b8886652c00",
+          "reviewed_head": "367bc9dd9a925bfaa96b89fdcf12e54e02b75fc4",
+          "production_verified_pages": 3,
+          "closeout_artifact": "project-state/discovery/pr196-production-closeout-2026-09-27/merge-production-receipt.json"
+        },
+        "pr202_postmerge_closeout": {
+          "state": "complete_postmerge_closeout",
+          "pr_number": 202,
+          "merge_commit": "b6f25b238e5bbdfe9a6c31fc9197a4530a6c0e03",
+          "reviewed_head": "5d8c5cdc1bf0d43c4d5b49d26e3774d354e43137",
+          "production_verification": "project-state/governance/pr202-postmerge-closeout-2026-09-28/production-verification.json",
+          "verified_pages": 4,
+          "verified_source_links": 21,
+          "manual_review_gate_closed_by_merge": true,
+          "closeout_visible_changes": 0,
+          "closeout_inventory_changes": 0,
+          "closeout_r2_changes": 0,
+          "branch_sync_targets": [
+            "main",
+            "chatgpt/planning-snapshot"
+          ]
+        },
+        "pr203_postmerge_closeout": {
+          "state": "complete_postmerge_closeout",
+          "pr_number": 203,
+          "merge_commit": "c901990afb47902755f6e293f2ea801fbaebc041",
+          "reviewed_head": "164d955d72300824cd8c561290caeb3fbf4baac6",
+          "production_verification": "project-state/governance/pr203-postmerge-closeout-2026-09-28/production-verification.json",
+          "public_byte_verification": "project-state/governance/pr203-postmerge-closeout-2026-09-28/public-byte-verification.json",
+          "verified_pages": 2,
+          "verified_family_records": 18,
+          "verified_archive_pdfs": 16,
+          "verified_archive_bytes": 20983251,
+          "manual_review_gate_closed_by_merge": true,
+          "closeout_visible_changes": 0,
+          "closeout_inventory_changes": 0,
+          "closeout_r2_changes": 0,
+          "branch_sync_targets": [
+            "main",
+            "chatgpt/planning-snapshot"
+          ]
+        },
+        "pr206_postmerge_closeout": {
+          "state": "complete_postmerge_closeout",
+          "pr_number": 206,
+          "merge_commit": "dd8d7b49878cf48c62a6c1dedddbd40289ecf803",
+          "reviewed_head": "0d63d57f9be4d39909e23cb078fd6c6c982660d0",
+          "production_verification": "project-state/governance/pr206-postmerge-closeout-2026-09-29/production-verification.json",
+          "verified_pages": 1,
+          "verified_family_records": 4,
+          "manual_review_gate_closed_by_merge": true,
+          "closeout_visible_changes": 0,
+          "closeout_inventory_changes": 0,
+          "closeout_r2_changes": 0,
+          "branch_sync_targets": [
+            "main",
+            "chatgpt/planning-snapshot"
+          ],
+          "integration_receipt": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+          "branch_reconciliation": "main and chatgpt/planning-snapshot synchronized; final completion receipt commit is identified by integration.json commit locator"
+        }
+      }
+    },
+    {
+      "recorded_at": "2026-09-30T13:18:22.7316944Z",
+      "completed_item_range": "PR207 merged background-only; correction and triage preserved; closeout ref synchronization pending",
+      "total_candidates": 7140,
+      "counts_by_status": {
+        "pending review": 372,
+        "approved for addition": 18,
+        "downloading": 0,
+        "downloaded": 0,
+        "parsed": 0,
+        "description drafted": 0,
+        "placement assigned": 360,
+        "implemented": 201,
+        "validated": 1486,
+        "excluded": 2842,
+        "duplicate": 1602,
+        "superseded": 259,
+        "blocked": 0,
+        "requires human review": 0
+      },
+      "remaining_nonterminal": 940,
+      "next_pending_id": "lin-2f6fbe4ffb0b6564",
+      "blockers": [],
+      "resume_command": "Fast-forward main and chatgpt/planning-snapshot to the PR207 final closeout receipt commit; verify local and remote refs.",
       "verification_campaign_totals": {
         "verified": 2194,
         "passed": 2070,

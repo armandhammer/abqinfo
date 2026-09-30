@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "task_id": "pr207-postmerge-closeout-2026-09-30",
-  "state": "closeout_payload_ready",
+  "state": "complete_background_only_closeout",
   "pr": {
     "number": 207,
     "state": "MERGED",
@@ -32,5 +32,7 @@
     }
   },
   "focused_validation": "passed: current governance contract has zero conflicts/gates; two-record correction and nonbinding18-record triage verified; no content, inventory, or R2 change after reviewed merge head.",
-  "full_validation": "passed on reviewed head before merge; postmerge difference was the remote-verification receipt."
+  "full_validation": "passed on reviewed head before merge; postmerge difference was the remote-verification receipt.",
+  "payload_commit": "22dbc33bd7752ed759f56d790e8b14dba39c34d8",
+  "next_step": "Verify main, chatgpt/planning-snapshot, and the closeout branch at the final receipt commit."
 }

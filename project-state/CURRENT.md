@@ -1,12 +1,12 @@
 # Current project state
 
-PR #207 merged as background-only at `2a715a54795891564a11de6aa193354086f86570` from reviewed head `52b54681b2962d4473afd9adc942664a35704589`. The merge tree exactly matches the reviewed head, and the PR has no visitor-visible file changes. The two owner-rejected youth-justice records remain excluded with publication placements cleared. Their historical evidence is preserved. No R2 changes.
+PR #207 is merged as a background-only integration at `2a715a54795891564a11de6aa193354086f86570`; its reviewed head is `52b54681b2962d4473afd9adc942664a35704589`. The merge tree matches the reviewed head, and the PR has zero visitor-visible file changes. The two owner-rejected youth-justice records remain excluded with publication-placement fields cleared. Historical source and review evidence is preserved. R2 is unchanged.
 
-The shared County-project approval shortcut remains retired. The saved 18-record triage remains nonbinding: 5 strong candidates, 10 scope/quality rechecks, and 3 special constraints. Queue accounting remains 18 approved and 372 pending. Checkpoint nonterminal count is 940.
+The shared County-project approval shortcut remains retired. The saved 18-record triage remains nonbinding: 5 strong candidates, 10 scope/quality rechecks, and 3 special constraints. Their inventory dispositions remain unchanged. Queue accounting is 18 approved and 372 pending; the checkpoint has 940 nonterminal records.
 
-The focused correction/governance checks and the complete standard suite passed before merge. External-link scanning was not run. Current work is the background-only merge closeout; see `project-state/governance/pr207-postmerge-closeout-2026-09-30/`.
+The focused correction and governance checks and the complete standard validation suite passed on the reviewed branch before merge. External-link scanning was not run. Background integration receipt: `project-state/governance/pr207-postmerge-closeout-2026-09-30/`.
 
-After reconciliation, main and `chatgpt/planning-snapshot` will share the closeout receipt commit. No new publication family or research task is active.
+Main and `chatgpt/planning-snapshot` are reconciled to the final receipt commit. No publication family or research task is active.
 
 ## Historical checkpoints below
 

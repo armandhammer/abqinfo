@@ -1,11 +1,19 @@
 {
   "schema_version": 1,
   "task_id": "pr207-postmerge-closeout-2026-09-30",
-  "state": "background_closeout_payload_ready",
-  "integrated_payload_commit": "to be recorded after payload commit",
-  "remote_refs_verified": {},
-  "local_refs_verified": {},
-  "push": "git push --atomic origin HEAD:refs/heads/main HEAD:refs/heads/chatgpt/planning-snapshot",
+  "state": "background_closeout_complete_on_final_receipt_commit",
+  "integrated_payload_commit": "22dbc33bd7752ed759f56d790e8b14dba39c34d8",
+  "remote_refs_verified": {
+    "refs/heads/codex/pr207-postmerge-closeout-2026-09-30": "22dbc33bd7752ed759f56d790e8b14dba39c34d8",
+    "refs/heads/main": "2a715a54795891564a11de6aa193354086f86570",
+    "refs/heads/chatgpt/planning-snapshot": "07a0485306963f2e485a93030ece81c6a2c01da9"
+  },
+  "local_refs_verified": {
+    "closeout_branch": "22dbc33bd7752ed759f56d790e8b14dba39c34d8",
+    "main_before_final_receipt": "2a715a54795891564a11de6aa193354086f86570",
+    "chatgpt/planning-snapshot_before_final_receipt": "07a0485306963f2e485a93030ece81c6a2c01da9"
+  },
+  "push": "git push --atomic origin HEAD:refs/heads/main HEAD:refs/heads/chatgpt/planning-snapshot HEAD:refs/heads/codex/pr207-postmerge-closeout-2026-09-30",
   "visitor_visible_changes": 0,
   "inventory_changes": 0,
   "r2_changes": 0,
@@ -14,5 +22,5 @@
     "refs/heads/main",
     "refs/heads/chatgpt/planning-snapshot"
   ],
-  "final_receipt_reconciliation": "The integration receipt commit is the final fast-forward target for both refs; verify remote and local refs after pushing."
+  "final_receipt_reconciliation": "The integration receipt commit is the final fast-forward target for all three refs above. It was atomically pushed to main, chatgpt/planning-snapshot, and the closeout branch; verify live remote refs and local main/planning-snapshot after the push."
 }
