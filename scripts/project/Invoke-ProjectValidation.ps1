@@ -9,6 +9,8 @@ Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr207OwnerCorrection.py"
 & python "$PSScriptRoot/Test-OrdinaryYouthJusticePublication.py"
 if ($LASTEXITCODE) { throw 'Youth justice family publication exact-delta check failed.' }
+& python "$PSScriptRoot/Test-CurrentResumePointer.py"
+if ($LASTEXITCODE) { throw 'CURRENT.md resume-pointer regression failed.' }
 & python "$PSScriptRoot/Test-TaskGovernance.py"
 if ($LASTEXITCODE) { throw 'Durable governance regression failed.' }
 & python "$PSScriptRoot/Test-Pr198Settled.py"

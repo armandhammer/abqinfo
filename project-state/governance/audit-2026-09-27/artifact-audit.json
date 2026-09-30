@@ -21995,13 +21995,13 @@
     },
     {
       "path": "scripts/project/Invoke-ProjectValidation.ps1",
-      "sha256": "0e3939e1db8b62286f1a5457783cb2e2cf516d9d522f061eea3154d33466a16c",
+      "sha256": "f2537dae1481c47ca188d13507b954e43d55f3187f8c1399db08f9bbef9e3376",
       "hash_kind": "normalized-file-bytes",
       "classification": "active workflow requirement",
       "governance_ids": [
         "policy-durable-task-governance"
       ],
-      "rationale": "PR206 background-only closeout evidence or implementation of existing lifecycle; no new disposition, publication, storage or follow-on authority."
+      "rationale": "Validation runner invokes the CURRENT.md resume-pointer regression alongside the existing project checks."
     },
     {
       "path": "scripts/project/Invoke-R2ArchivePlan.ps1",
@@ -24484,6 +24484,38 @@
       "governance_ids": [],
       "rationale": "Final verification and completed PR207 background integration state.",
       "sha256": "a08de7c5b06bf770b498c3239def1aac3e59770c804f936162788398d90d730c"
+    },
+    {
+      "path": "project-state/governance/current-resume-pointer-2026-09-30/contract.json",
+      "sha256": "abcf50f1e5dac0e9f9c8201c134732a37abad852532cdddac96996069541589d",
+      "hash_kind": "normalized-file-bytes",
+      "classification": "historical evidence only / non-binding",
+      "governance_ids": [],
+      "rationale": "Superseded resolver snapshot retained as task-setup evidence; contract-v7 is the current task contract."
+    },
+    {
+      "path": "project-state/governance/current-resume-pointer-2026-09-30/contract-v4.json",
+      "sha256": "fa4a663638aaacfdba323972f5e1da2bc145f58f6f98df323da117ab17402c4b",
+      "hash_kind": "normalized-file-bytes",
+      "classification": "historical evidence only / non-binding",
+      "governance_ids": [],
+      "rationale": "Superseded resolver snapshot retained as task-setup evidence; contract-v7 is the current task contract."
+    },
+    {
+      "path": "project-state/governance/current-resume-pointer-2026-09-30/contract-v5.json",
+      "sha256": "3065cf59b4dff8fbdc922ddb4603d89ed28aeff7a0b929f1ec7cd588f757574f",
+      "hash_kind": "normalized-file-bytes",
+      "classification": "historical evidence only / non-binding",
+      "governance_ids": [],
+      "rationale": "Superseded resolver snapshot retained as task-setup evidence; contract-v7 is the current task contract."
+    },
+    {
+      "path": "project-state/governance/current-resume-pointer-2026-09-30/contract-v6.json",
+      "sha256": "90c6d56db6cbbb50e813cb6b607f3b67293b7e0870e38053eb28861b81e43cfb",
+      "hash_kind": "normalized-file-bytes",
+      "classification": "historical evidence only / non-binding",
+      "governance_ids": [],
+      "rationale": "Superseded resolver snapshot retained as task-setup evidence; contract-v7 is the current task contract."
     }
   ],
   "categories": [

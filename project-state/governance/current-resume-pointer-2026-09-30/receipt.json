@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "task_id": "current-resume-pointer-2026-09-30",
+  "state": "complete_with_final_commit_locator",
+  "baseline_commit": "56d22aadabd049ceeccaecbfb761f315dd27ebcd",
+  "scope": "background-only CURRENT.md resume-pointer cleanup and small regression",
+  "current_pointer": "project-state/CURRENT.md",
+  "regression": "scripts/project/Test-CurrentResumePointer.py",
+  "validation_runner": "scripts/project/Invoke-ProjectValidation.ps1",
+  "focused_checks": {
+    "resume_pointer_regression": "passed",
+    "git_diff_check": "passed",
+    "normal_suite": "not_run; focused validation used"
+  },
+  "state_invariants": {
+    "approved": 18,
+    "pending": 372,
+    "triage_nonbinding": true,
+    "triage_counts": {
+      "strong_candidate": 5,
+      "scope_quality_recheck_needed": 10,
+      "special_constraint": 3
+    },
+    "inventory_dispositions_changed": false,
+    "visitor_visible_changes": false,
+    "r2_changes": false,
+    "publication_or_research_started": false
+  },
+  "remote_refs": [
+    "refs/heads/main",
+    "refs/heads/chatgpt/planning-snapshot"
+  ],
+  "integration_commit_locator": "git log -1 --format=%H -- project-state/governance/current-resume-pointer-2026-09-30/receipt.json",
+  "next_step": "No active publication or research task; no next family started."
+}
