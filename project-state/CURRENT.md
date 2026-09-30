@@ -1,5 +1,15 @@
 # Current project state
 
+PR #207 is now background-only and remains OPEN/unmerged. Owner excluded both youth-justice blurbs; City Facilities is byte-equivalent to authoritative main07a0485. Correction and narrow retirement of the shared County-project approval recipe were pushed as92520e0 and03e15e2. Prior research/source/preview evidence is retained. No R2 mutation.
+
+Lightweight triage of the unchanged18 approved records:5 strong candidates,10 scope/quality rechecks,3 special constraints; see project-state/governance/approved-queue-lightweight-triage-2026-09-30/triage.json. Triage conveys no publication approval and changes no remaining inventory dispositions. Queue:18 approved,372 pending. Active task is the frozen18-record triage contract; the two-record correction contract is complete.
+
+Next step: run focused/full validation as practical, save and push final receipts. After the weekly reset, resolve any recorded validation failures and obtain owner direction for the background PR's disposition. Do not merge PR207 or begin another publication family in this task.
+
+## Historical checkpoints below
+
+# Current project state
+
 PR #207 owner correction (2026-09-30): publication rejected. Both youth-justice blurbs are excluded for insufficient substantive/durable public-information value. City Facilities is restored exactly to main at 07a0485; no visitor-visible proposal remains. Historical PR207 reviews, source witnesses and preview receipts remain preserved. Approved queue:18; pending review:372. Active governance: project-state/governance/pr207-owner-correction-2026-09-30/population.json and its pinned contract. Do not merge PR #207; no R2 mutation.
 
 Checkpoint next steps: push this correction first; then diagnose prior approvals, triage18 from saved evidence only, run focused/full validation as practical, and push final evidence.
