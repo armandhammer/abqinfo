@@ -36,7 +36,10 @@ if ($LASTEXITCODE) { throw "PR202 ordinary queue validation failed." }
 if ($LASTEXITCODE) { throw 'PR #202 ordinary queue reconciliation failed.' }
 & python "$PSScriptRoot/Test-Pr204PostMergeCloseout.py"
 if ($LASTEXITCODE) { throw 'PR #204 post-merge closeout validation failed.' }
+& python "$PSScriptRoot/Test-Pr206PostMergeCloseout.py"
+if ($LASTEXITCODE) { throw 'PR #206 post-merge closeout validation failed.' }
 & python "$PSScriptRoot/Test-OrdinaryDrainagePublication.py"
+if ($LASTEXITCODE) { throw 'Ordinary drainage tracked source-evidence validation failed.' }
 & python "$PSScriptRoot/Test-OrdinaryDrainageReviewCorrection.py"
 if ($LASTEXITCODE) { throw 'Ordinary drainage publication exact-delta validation failed.' }
 & python "$PSScriptRoot/Test-OpenSpaceMapQuality.py"
