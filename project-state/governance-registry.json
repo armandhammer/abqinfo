@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "830561a3211b852f0a13a51f5f0bcf226f1ad532f33b40cad15695b4fd1bf388",
+  "audit_sha256": "028b4dff25b1ac09ef2ef2a87f80574a7311cde25809c6d6303e782cc6dc69b9",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15241,7 +15241,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "939b77237c68d3c481c7ac558503aba2f2aad49e46762bd8992ebe935f462b8b",
+          "sha256": "3ad90855662f5bb1d69394c22e2634b08d7bf030968c140108bf15cce5b0454e",
           "binding_pointers": [
             "/implementation"
           ]
@@ -18878,7 +18878,7 @@
       "authority": "Governed implementation-worker editorial review under owner ordinary-publication instruction on 2026-09-29; no merge authority",
       "decision_date": "2026-09-30",
       "effective_date": "2026-09-30",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/ordinary-youth-justice-publication-2026-09-30/review.json",
@@ -18903,7 +18903,56 @@
         }
       ],
       "unresolved_gates": [],
-      "implementation_status": "Owner content PR review remains pending."
+      "implementation_status": "Owner content PR review remains pending.",
+      "superseded_by": "owner-youth-justice-publication-exclusion-2026-09-30",
+      "supersession_evidence": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json"
+    },
+    {
+      "governance_id": "owner-youth-justice-publication-exclusion-2026-09-30",
+      "category": "active owner decision",
+      "title": "Owner exclusion of youth-justice facility blurbs",
+      "scope": {
+        "candidate_ids": [
+          "src-4db14cde9f1460db",
+          "src-e2c19c0b6111c542"
+        ],
+        "families": [
+          "bernalillo-county-youth-justice-facilities"
+        ],
+        "pages": [
+          "content/public-works/city-facilities.md"
+        ]
+      },
+      "authority": "Explicit owner instruction 2026-09-30",
+      "decision_date": "2026-09-30",
+      "effective_date": "2026-09-30",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+          "sha256": "31134acef0077cab38ee22389527d12092980f159d7074634928f5f92f436bee",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Exclude both youth-justice facility blurbs from publication: their real Albuquerque connection and official provenance do not establish sufficient substantive durable ABQInfo public-information value. Grouping them does not cure this failure. Restore City Facilities to main without broadening its introduction. Retain historical source and research evidence. No R2 mutation or new visitor-visible content.",
+      "required_actions": [
+        "Apply owner exclusions; retain provenance and prior evidence; restore public page."
+      ],
+      "prohibited_actions": [
+        "Publish these two records absent explicit owner-authorized supersession.",
+        "Infer publication value from grouping or local official provenance alone."
+      ],
+      "constraints": [],
+      "settled_decisions": [
+        {
+          "question_id": "youth-justice-family-presentation-2026-09-30",
+          "decision": "Excluded from visitor-visible publication by owner."
+        }
+      ],
+      "unresolved_gates": [],
+      "implementation_status": "owner correction in progress"
     }
   ]
 }

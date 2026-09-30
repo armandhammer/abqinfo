@@ -356,6 +356,18 @@
       "exact_delta_guard": {
         "module": "OrdinaryYouthJusticePublicationLifecycle",
         "function": "guard_current_delta"
+      },
+      "end_commit": "8a189e21f2a01f03d7f52cb35f820f6e9dba11d3"
+    },
+    {
+      "id": "pr207-owner-correction",
+      "baseline_commit": "8a189e21f2a01f03d7f52cb35f820f6e9dba11d3",
+      "regression_scripts": [
+        "scripts/project/Test-Pr207OwnerCorrection.py"
+      ],
+      "exact_delta_guard": {
+        "module": "Test-Pr207OwnerCorrection",
+        "function": "guard_current_delta"
       }
     }
   ],

@@ -6,6 +6,7 @@ param(
 )
 
 Set-StrictMode -Version Latest
+& python "$PSScriptRoot/Test-Pr207OwnerCorrection.py"
 & python "$PSScriptRoot/Test-OrdinaryYouthJusticePublication.py"
 if ($LASTEXITCODE) { throw 'Youth justice family publication exact-delta check failed.' }
 & python "$PSScriptRoot/Test-TaskGovernance.py"

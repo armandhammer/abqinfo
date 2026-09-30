@@ -1,11 +1,32 @@
 {
-  "population": "project-state/governance/ordinary-youth-justice-publication-2026-09-30/population.json",
-  "contract": "project-state/governance/ordinary-youth-justice-publication-2026-09-30/contract-v7.json",
-  "contract_sha256": "ee0e13003725891e8754e92292754c3393b7d0a53f7f131b45fb143625a8c733",
-  "implementation": "project-state/governance/ordinary-youth-justice-publication-2026-09-30/implementation.json",
+  "population": "project-state/governance/pr207-owner-correction-2026-09-30/population.json",
+  "contract": "project-state/governance/pr207-owner-correction-2026-09-30/contract-v6.json",
+  "contract_sha256": "00f722639c9f9040f7ae89c433b65159174d0e84f76decd2a81cfce133a85c24",
+  "implementation": "project-state/governance/pr207-owner-correction-2026-09-30/implementation.json",
   "state": "in_progress",
-  "publication_stage": "implemented_and_preview_verified",
-  "owner_review": "pending",
   "pr_url": "https://github.com/armandhammer/abqinfo/pull/207",
-  "branch": "codex/ordinary-youth-justice-publication-2026-09-30"
+  "owner_review": "publication_rejected",
+  "branch": "codex/ordinary-youth-justice-publication-2026-09-30",
+  "supersession_proposals": {
+    "decision-youth-justice-grouped-historical-publication-2026-09-30": {
+      "authorized": true,
+      "existing_governance_id": "decision-youth-justice-grouped-historical-publication-2026-09-30",
+      "current_decision": "Present exactly the two selected County youth-justice facility renovations as linked components in one historical City Facilities group. Preserve separate scopes, budgets and official links, qualify early-2020 schedules, avoid completion/current-status inference, and retain original source evidence. No R2 archival for these maintained HTML sources; owner review precedes merge.",
+      "controlling_evidence": [
+        {
+          "path": "project-state/governance/ordinary-youth-justice-publication-2026-09-30/review.json",
+          "sha256": "813b763a42de8422ee98bfb7dca0aeb8696e8dcbc101bf40871551a5618a1631",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "new_evidence": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json",
+      "proposed_replacement": "Apply the registered owner exclusion of both youth-justice facility blurbs; restore City Facilities to main and retain source evidence.",
+      "consequences": "Two records excluded; no public City Facilities delta; historical artifacts retained.",
+      "authorization_artifact": "project-state/governance/pr207-owner-correction-2026-09-30/owner-decision.json"
+    }
+  },
+  "publication_stage": "owner_rejected_content_restored",
+  "next_step": "Push correction, diagnose promotion, metadata-only triage18, validate, push final evidence."
 }

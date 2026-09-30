@@ -2,7 +2,7 @@
 title: "City Facilities"
 ---
 
-Planning, design standards, and selected major projects for City-owned buildings and selected County public-service facilities in Albuquerque. This page emphasizes facilities with substantial public investment, unusual community importance, or records useful for understanding how Albuquerque’s civic infrastructure is changing.
+Planning, design standards, and selected major projects for City-owned buildings and public-service campuses. This page emphasizes facilities with substantial public investment, unusual community importance, or records useful for understanding how Albuquerque’s civic infrastructure is changing.
 
 ## Historical Capital Programming
 
@@ -115,18 +115,6 @@ Albuquerque Energy Council meeting records document City-facility and energy bus
 - [International District Library Park Project](https://www.cabq.gov/parksandrecreation/featured-projects/international-district-library-park-project)
 
   Provides the master-planning history, current design, concept maps, amenities, and public updates for the park completing the International District Library campus along Central Avenue.
-
-## Historical County Youth Justice Facility Projects
-
-These two official County project accounts describe different renovations at 5100 Second Street NW in Albuquerque: building and safety improvements at the Youth Services Center, and a courtroom within the John Brown Juvenile Justice Center. Both retain anticipated early-2020 construction schedules; they document historical design scopes and budgets, rather than establish current project status or completed work.
-
-- [Bernalillo County Youth Services Center Project (official County project page)](https://www.bernco.gov/public-works/blog/2021/04/16/bernalillo-county-youth-services-center-project/)
-
-  The County's historical design account describes a $1.6 million renovation of the aging Youth Services Center, including code and aesthetic improvements, security enhancements, and building systems. It identifies Vigil & Associates Architects and an anticipated early-2020 construction start.
-
-- [Juvenile Justice Center New Courtroom Design (official County project page)](https://www.bernco.gov/public-works/blog/2021/04/16/juvenile-justice-center-new-courtroom-design/)
-
-  The County's historical design account describes a $1.2 million renovation to create a 3,276-square-foot courtroom for the Second Judicial District Court within the existing John Brown Juvenile Justice Center. It reports completed design by Studio Southwest Architects and an anticipated early-2020 construction start.
 
 ## Accessibility Reference
 
