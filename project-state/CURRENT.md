@@ -1,10 +1,14 @@
 # Current project state
 
-PR #207 is now background-only and remains OPEN/unmerged. Owner excluded both youth-justice blurbs; City Facilities is byte-equivalent to authoritative main07a0485. Correction and narrow retirement of the shared County-project approval recipe were pushed as92520e0 and03e15e2. Prior research/source/preview evidence is retained. No R2 mutation.
+PR #207 owner correction is complete, background-only, and OPEN/unmerged. The two youth-justice facility blurbs are excluded for insufficient substantive/durable public-information value. City Facilities, including its City-owned introduction, matches authoritative main at 07a0485 exactly. Publication-placement fields are cleared; current scope and quality assessments are negative. No R2 mutation. Original source/provenance, research and historical review/preview evidence remain preserved.
 
-Lightweight triage of the unchanged18 approved records:5 strong candidates,10 scope/quality rechecks,3 special constraints; see project-state/governance/approved-queue-lightweight-triage-2026-09-30/triage.json. Triage conveys no publication approval and changes no remaining inventory dispositions. Queue:18 approved,372 pending. The18-record triage contract is complete. Active task is the exact-two-record final owner-accounting contract at project-state/governance/pr207-owner-final-accounting-2026-09-30/population-v4.json, covering consistent negative fields and final validation.
+The approval diagnosis found a shared positive County-project disposition recipe and an overly generous later grouping judgment. Only that generic approval branch was retired; existing substantive-value policies remain unchanged.
 
-Next step: run focused/full validation as practical, save and push final receipts. After the weekly reset, resolve any recorded validation failures and obtain owner direction for the background PR's disposition. Do not merge PR207 or begin another publication family in this task.
+Lightweight triage: 5 strong candidates, 10 scope/quality rechecks, 3 special constraints. All other 18 approved inventory dispositions remain unchanged. See project-state/governance/approved-queue-lightweight-triage-2026-09-30/triage.json. Queue: 18 approved, 372 pending; checkpoint nonterminal count: 940.
+
+Complete standard validation and focused correction/render checks passed. External-link scanning was not requested/run. Final receipt: project-state/governance/pr207-owner-final-accounting-2026-09-30/receipt.json. Active exact-two-record final-accounting contract is complete; the correction and 18-record triage contracts are also complete.
+
+Exact next step after the weekly reset: owner review of background-only PR #207 disposition. Do not merge under this instruction. No new publication family is active. Future authorized publication work begins with the saved triage and a fresh governed record-specific scope/quality review.
 
 ## Historical checkpoints below
 

@@ -1,5 +1,5 @@
 PASS: exact two owner exclusions; other records unchanged; queue18/pending372; source evidence preserved; no public changes or R2 mutation.
-PASS: two exact grouped historical County facility additions, tracked source/render witnesses, 18 approved, 372 pending; no R2 or unrelated record changes.
+PASS: sealed youth-justice publication/source history; current rendered page follows owner exclusion when the publication stage is sealed.
 {
   "result": "passed",
   "checks": [
@@ -177,7 +177,7 @@ PASS: two exact grouped historical County facility additions, tracked source/ren
   ],
   "active_entries": 243,
   "superseded_entries": 7,
-  "audited_artifacts": 2922
+  "audited_artifacts": 2926
 }
 {
   "result": "passed",
@@ -192,7 +192,7 @@ PASS: PR198 reviewed bytes, inventory, R2 and main snapshot preserved; exact com
   "task_id": "pr207-owner-final-accounting-2026-09-30",
   "phase": "final",
   "applicable_rules": 26,
-  "population_sha256": "039df663b1c122fba24eeee233f4e4fb9bc684b2babd0fcf0ff2306811c501ab",
+  "population_sha256": "0ec1e20942cc8196a9dda6ae3d6faf9db24423e02d7b4bf439ec4e07d0ee7d90",
   "changed_paths": [
     "project-state/CURRENT.md",
     "project-state/checkpoint.json",
@@ -205,15 +205,23 @@ PASS: PR198 reviewed bytes, inventory, R2 and main snapshot preserved; exact com
     "project-state/governance/pr207-owner-final-accounting-2026-09-30/contract-v2.json",
     "project-state/governance/pr207-owner-final-accounting-2026-09-30/contract-v3.json",
     "project-state/governance/pr207-owner-final-accounting-2026-09-30/contract-v4.json",
+    "project-state/governance/pr207-owner-final-accounting-2026-09-30/contract-v5.json",
+    "project-state/governance/pr207-owner-final-accounting-2026-09-30/contract-v6.json",
+    "project-state/governance/pr207-owner-final-accounting-2026-09-30/contract-v7.json",
+    "project-state/governance/pr207-owner-final-accounting-2026-09-30/contract-v8.json",
     "project-state/governance/pr207-owner-final-accounting-2026-09-30/contract.json",
     "project-state/governance/pr207-owner-final-accounting-2026-09-30/implementation.json",
     "project-state/governance/pr207-owner-final-accounting-2026-09-30/population-v2.json",
+    "project-state/governance/pr207-owner-final-accounting-2026-09-30/population-v3.json",
+    "project-state/governance/pr207-owner-final-accounting-2026-09-30/population-v4.json",
     "project-state/governance/pr207-owner-final-accounting-2026-09-30/population.json",
     "project-state/governance/pr207-owner-final-accounting-2026-09-30/quality-updates.json",
     "project-state/governance/pr207-owner-final-accounting-2026-09-30/receipt.json",
     "project-state/governance/pr207-owner-final-accounting-2026-09-30/validation-first-attempt.log",
     "project-state/governance/pr207-owner-final-accounting-2026-09-30/validation.log",
-    "project-state/master-inventory.json"
+    "project-state/master-inventory.json",
+    "scripts/project/Test-OrdinaryYouthJusticePublication.py",
+    "scripts/project/Test-Pr207OwnerCorrection.py"
   ]
 }
 PASS: PR198 snapshot carries exact owner/R2/review facts and no visitor-visible content or candidate inventory delta.
@@ -263,7 +271,7 @@ PASS: Add and Exclude persist final assessments and prior borderline history; re
 PASS: Council checkpoint blocker update is idempotent.
 PASS: checkpoint counts equal authoritative master inventory; total=7140, remaining=940, next=lin-2f6fbe4ffb0b6564.
 PASS: project-state regeneration preserves durable metadata, restores DPM state, enforces the 28-record MS4 package, and is idempotent on a second pass.
-{"Path":"C:\\Users\\ben\\AppData\\Local\\Temp\\abqinfo-pr-body-7e8e985aad324bed90353fcc8b46e23a\\valid.md","Result":"passed"}
+{"Path":"C:\\Users\\ben\\AppData\\Local\\Temp\\abqinfo-pr-body-5c4601007158443ebb5b225a84c9a92f\\valid.md","Result":"passed"}
 Pull-request description regression passed.
 {"applied": 3, "counts": {"pending review": 1, "duplicate": 1, "superseded": 1, "excluded": 1}, "next_pending_id": "canonical"}
 PASS: terminal duplicate and superseded decisions retain canonical provenance generically.
@@ -309,7 +317,7 @@ PASS: ordinary-queue-terminal-integration-batch-2026-09-20-transit-openspace-nmd
 }
 PASS: six publication failure classes; useful short legal/map/table/analytical positives; explicit reversal evidence; actual-record integration and atomic no-write transition; immutable bounded debt and link-count growth guards.
 PASS: correction exact-delta negative fixtures; even repinned inventory values cannot omit the actual-record quality gate.
-{"generated_at":"2026-09-30T12:30:54.8565497Z","regression":"document-graph discovery, retained-source expansion, and outbound-host capture","passed":true,"checks":18,"errors":[]}
+{"generated_at":"2026-09-30T12:38:12.3009933Z","regression":"document-graph discovery, retained-source expansion, and outbound-host capture","passed":true,"checks":18,"errors":[]}
 {
   "passed": true,
   "tests": [
@@ -326,111 +334,116 @@ PASS: correction exact-delta negative fixtures; even repinned inventory values c
   ],
   "test_count": 10
 }
-Preparing worktree (detached HEAD 1632666)
-Updating files:  51% (1680/3271)
-Updating files:  52% (1701/3271)
-Updating files:  53% (1734/3271)
-Updating files:  54% (1767/3271)
-Updating files:  55% (1800/3271)
-Updating files:  56% (1832/3271)
-Updating files:  57% (1865/3271)
-Updating files:  58% (1898/3271)
-Updating files:  59% (1930/3271)
-Updating files:  60% (1963/3271)
-Updating files:  61% (1996/3271)
-Updating files:  62% (2029/3271)
-Updating files:  63% (2061/3271)
-Updating files:  64% (2094/3271)
-Updating files:  65% (2127/3271)
-Updating files:  66% (2159/3271)
-Updating files:  67% (2192/3271)
-Updating files:  68% (2225/3271)
-Updating files:  69% (2257/3271)
-Updating files:  70% (2290/3271)
-Updating files:  71% (2323/3271)
-Updating files:  72% (2356/3271)
-Updating files:  73% (2388/3271)
-Updating files:  74% (2421/3271)
-Updating files:  75% (2454/3271)
-Updating files:  76% (2486/3271)
-Updating files:  77% (2519/3271)
-Updating files:  78% (2552/3271)
-Updating files:  79% (2585/3271)
-Updating files:  80% (2617/3271)
-Updating files:  81% (2650/3271)
-Updating files:  82% (2683/3271)
-Updating files:  83% (2715/3271)
-Updating files:  84% (2748/3271)
-Updating files:  85% (2781/3271)
-Updating files:  86% (2814/3271)
-Updating files:  87% (2846/3271)
-Updating files:  88% (2879/3271)
-Updating files:  89% (2912/3271)
-Updating files:  90% (2944/3271)
-Updating files:  91% (2977/3271)
-Updating files:  92% (3010/3271)
-Updating files:  92% (3015/3271)
-Updating files:  93% (3043/3271)
-Updating files:  94% (3075/3271)
-Updating files:  95% (3108/3271)
-Updating files:  96% (3141/3271)
-Updating files:  97% (3173/3271)
-Updating files:  98% (3206/3271)
-Updating files:  99% (3239/3271)
-Updating files: 100% (3271/3271)
-Updating files: 100% (3271/3271), done.
-Preparing worktree (detached HEAD 1632666)
-Updating files:  52% (1722/3271)
-Updating files:  53% (1734/3271)
-Updating files:  54% (1767/3271)
-Updating files:  55% (1800/3271)
-Updating files:  56% (1832/3271)
-Updating files:  57% (1865/3271)
-Updating files:  58% (1898/3271)
-Updating files:  59% (1930/3271)
-Updating files:  60% (1963/3271)
-Updating files:  61% (1996/3271)
-Updating files:  62% (2029/3271)
-Updating files:  63% (2061/3271)
-Updating files:  64% (2094/3271)
-Updating files:  65% (2127/3271)
-Updating files:  66% (2159/3271)
-Updating files:  67% (2192/3271)
-Updating files:  68% (2225/3271)
-Updating files:  69% (2257/3271)
-Updating files:  70% (2290/3271)
-Updating files:  71% (2323/3271)
-Updating files:  72% (2356/3271)
-Updating files:  73% (2388/3271)
-Updating files:  74% (2421/3271)
-Updating files:  75% (2454/3271)
-Updating files:  76% (2486/3271)
-Updating files:  77% (2519/3271)
-Updating files:  78% (2552/3271)
-Updating files:  79% (2585/3271)
-Updating files:  80% (2617/3271)
-Updating files:  81% (2650/3271)
-Updating files:  82% (2683/3271)
-Updating files:  83% (2715/3271)
-Updating files:  84% (2748/3271)
-Updating files:  85% (2781/3271)
-Updating files:  86% (2814/3271)
-Updating files:  87% (2846/3271)
-Updating files:  88% (2879/3271)
-Updating files:  89% (2912/3271)
-Updating files:  90% (2944/3271)
-Updating files:  91% (2977/3271)
-Updating files:  92% (3010/3271)
-Updating files:  93% (3043/3271)
-Updating files:  94% (3075/3271)
-Updating files:  95% (3108/3271)
-Updating files:  96% (3141/3271)
-Updating files:  97% (3173/3271)
-Updating files:  97% (3175/3271)
-Updating files:  98% (3206/3271)
-Updating files:  99% (3239/3271)
-Updating files: 100% (3271/3271)
-Updating files: 100% (3271/3271), done.
+Preparing worktree (detached HEAD 5e5f66f)
+Updating files:  51% (1675/3278)
+Updating files:  52% (1705/3278)
+Updating files:  53% (1738/3278)
+Updating files:  54% (1771/3278)
+Updating files:  55% (1803/3278)
+Updating files:  56% (1836/3278)
+Updating files:  57% (1869/3278)
+Updating files:  58% (1902/3278)
+Updating files:  59% (1935/3278)
+Updating files:  60% (1967/3278)
+Updating files:  61% (2000/3278)
+Updating files:  62% (2033/3278)
+Updating files:  63% (2066/3278)
+Updating files:  64% (2098/3278)
+Updating files:  65% (2131/3278)
+Updating files:  66% (2164/3278)
+Updating files:  67% (2197/3278)
+Updating files:  68% (2230/3278)
+Updating files:  69% (2262/3278)
+Updating files:  70% (2295/3278)
+Updating files:  71% (2328/3278)
+Updating files:  72% (2361/3278)
+Updating files:  73% (2393/3278)
+Updating files:  74% (2426/3278)
+Updating files:  75% (2459/3278)
+Updating files:  76% (2492/3278)
+Updating files:  77% (2525/3278)
+Updating files:  78% (2557/3278)
+Updating files:  79% (2590/3278)
+Updating files:  80% (2623/3278)
+Updating files:  81% (2656/3278)
+Updating files:  82% (2688/3278)
+Updating files:  83% (2721/3278)
+Updating files:  84% (2754/3278)
+Updating files:  85% (2787/3278)
+Updating files:  86% (2820/3278)
+Updating files:  86% (2826/3278)
+Updating files:  87% (2852/3278)
+Updating files:  88% (2885/3278)
+Updating files:  89% (2918/3278)
+Updating files:  90% (2951/3278)
+Updating files:  91% (2983/3278)
+Updating files:  92% (3016/3278)
+Updating files:  93% (3049/3278)
+Updating files:  94% (3082/3278)
+Updating files:  95% (3115/3278)
+Updating files:  96% (3147/3278)
+Updating files:  97% (3180/3278)
+Updating files:  98% (3213/3278)
+Updating files:  99% (3246/3278)
+Updating files: 100% (3278/3278)
+Updating files: 100% (3278/3278), done.
+Preparing worktree (detached HEAD 5e5f66f)
+Updating files:  47% (1558/3278)
+Updating files:  48% (1574/3278)
+Updating files:  49% (1607/3278)
+Updating files:  50% (1639/3278)
+Updating files:  51% (1672/3278)
+Updating files:  52% (1705/3278)
+Updating files:  53% (1738/3278)
+Updating files:  54% (1771/3278)
+Updating files:  55% (1803/3278)
+Updating files:  56% (1836/3278)
+Updating files:  57% (1869/3278)
+Updating files:  58% (1902/3278)
+Updating files:  59% (1935/3278)
+Updating files:  60% (1967/3278)
+Updating files:  61% (2000/3278)
+Updating files:  62% (2033/3278)
+Updating files:  63% (2066/3278)
+Updating files:  64% (2098/3278)
+Updating files:  65% (2131/3278)
+Updating files:  66% (2164/3278)
+Updating files:  67% (2197/3278)
+Updating files:  68% (2230/3278)
+Updating files:  69% (2262/3278)
+Updating files:  70% (2295/3278)
+Updating files:  71% (2328/3278)
+Updating files:  72% (2361/3278)
+Updating files:  73% (2393/3278)
+Updating files:  74% (2426/3278)
+Updating files:  75% (2459/3278)
+Updating files:  76% (2492/3278)
+Updating files:  77% (2525/3278)
+Updating files:  78% (2557/3278)
+Updating files:  79% (2590/3278)
+Updating files:  79% (2596/3278)
+Updating files:  80% (2623/3278)
+Updating files:  81% (2656/3278)
+Updating files:  82% (2688/3278)
+Updating files:  83% (2721/3278)
+Updating files:  84% (2754/3278)
+Updating files:  85% (2787/3278)
+Updating files:  86% (2820/3278)
+Updating files:  87% (2852/3278)
+Updating files:  88% (2885/3278)
+Updating files:  89% (2918/3278)
+Updating files:  90% (2951/3278)
+Updating files:  91% (2983/3278)
+Updating files:  92% (3016/3278)
+Updating files:  93% (3049/3278)
+Updating files:  94% (3082/3278)
+Updating files:  95% (3115/3278)
+Updating files:  96% (3147/3278)
+Updating files:  97% (3180/3278)
+Updating files:  98% (3213/3278)
+Updating files:  99% (3246/3278)
+Updating files: 100% (3278/3278)
+Updating files: 100% (3278/3278), done.
 {
   "passed": true,
   "test_count": 18,
@@ -477,19 +490,17 @@ WARN  deprecated: .Language.LanguageDirection was deprecated in Hugo v0.158.0 an
  Aliases          │  0 
  Cleaned          │  0 
 
-Total in 9370 ms
+Total in 445 ms
 PASS: six exact inventory and official-link additions; 24 approved remain; no R2 or held-record change
 PASS: rendered Area & Sector Plans page has one PGS H2, one ordered Part 2 list, and 13 exact archive/City source link pairs.
 PASS: rendered Stormwater section has its anchor, 13 list entries, ten descending annual reports, and six exact archive/source pairs.
 PASS: exact 12 publication transitions, six pages, one incomplete chapter set, two Barelas cross-links, unchanged duplicate/canonical rows and R2; rendered checks passed.
 PASS: exactly 25 component failures plus five required annual masters resolved; 1608 unrelated debt rows unchanged; 42 September 13 findings unresolved; actual-record gates and negative delta fixtures pass; originals/R2 unchanged; rendered checks passed.
-Traceback (most recent call last):
-  File "C:\Users\ben\Documents\ABQinfo\scripts\project/Test-OrdinaryYouthJusticePublication.py", line 26, in <module>
-    assert 'historical-county-youth-justice-facility-projects' in anchors.ids
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError
-Exception: C:\Users\ben\Documents\ABQinfo\scripts\project\Invoke-ProjectValidation.ps1:260
-Line |
- 260 |  … EXITCODE) { throw 'Youth justice family rendered publication check fa …
-     |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Youth justice family rendered publication check failed.
+PASS: sealed youth-justice publication/source history; current rendered page follows owner exclusion when the publication stage is sealed.
+PASS: actual-record quality gate on eleven Planning originals; four Old Town exclusions; seven PR pages; immutable provenance/R2; approved hashes, original qualifications, descriptions, archive/source links and Barelas anchors; rendered checks passed.
+{
+  "Hugo": "passed",
+  "ExternalLinksChecked": false,
+  "BrokenLinks": 0,
+  "Broken": []
+}
