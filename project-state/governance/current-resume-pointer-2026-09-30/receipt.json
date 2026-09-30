@@ -10,7 +10,12 @@
   "focused_checks": {
     "resume_pointer_regression": "passed",
     "git_diff_check": "passed",
-    "normal_suite": "not_run; focused validation used"
+    "normal_suite": "passed",
+    "normal_suite_command": "pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/project/Invoke-ProjectValidation.ps1",
+    "normal_suite_finished_utc": "2026-09-30T14:51:29+00:00",
+    "hugo": "passed",
+    "broken_links": 0,
+    "external_links_checked": false
   },
   "state_invariants": {
     "approved": 18,
