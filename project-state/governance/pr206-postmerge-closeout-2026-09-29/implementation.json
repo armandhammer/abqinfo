@@ -1,7 +1,7 @@
 {
   "artifact_type": "task_implementation_plan",
-  "contract": "project-state/governance/pr206-postmerge-closeout-2026-09-29/contract-v4.json",
-  "contract_sha256": "dc00e8108c6937d1c229098c809a3d9f51934918b5b3f6215ef5440a08d0c30b",
+  "contract": "project-state/governance/pr206-postmerge-closeout-2026-09-29/contract-v5.json",
+  "contract_sha256": "f00f0c8cfe6995d6a6e567db383c84b28ad2984a710a9490629bbbbbe69941db",
   "population_sha256": "711f819acc4f097e43ad7be21e653a5d7ef50c50b44bf12211895d9f624dd212",
   "respected_governance_ids": [
     "authorization-profile-ordinary-review-large",
@@ -121,11 +121,31 @@
       "use_contract_record_rules": true,
       "action": "implement",
       "evidence": "Complete normal suite and Hugo passed from clean worktree at afe15fe69326c9796eb3053df99df70ac0ea85c1 with no staging captures. User explicitly authorized autonomous background-only integration and main/planning-snapshot reconciliation; atomic fast-forward push will preserve all public content, inventory, R2 and correction artifacts."
+    },
+    {
+      "operation": "background_integration",
+      "candidate_ids": [
+        "src-e41d6b432e52a7e1",
+        "src-5dedef596ea61914",
+        "src-b674369d94936b08",
+        "src-ea28455d489f1c2c"
+      ],
+      "governance_ids": [
+        "policy-durable-task-governance",
+        "workflow-stage-lifecycle"
+      ],
+      "use_contract_record_rules": true,
+      "action": "implement",
+      "evidence": "Atomic background-only push succeeded; remote main and planning-snapshot plus both clean local refs verified at 267ace63ee74c960d53dc843c4d0ecc31cf2a6f9. Observed refs and final receipt commit locator recorded in integration.json. Publish this completion receipt to both refs and verify equality."
     }
   ],
   "completion_evidence": {
     "authorization-profile-ordinary-review-large": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -135,7 +155,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -163,15 +183,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "capital-2005-2013-ccip-master": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -181,7 +205,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -209,15 +233,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "capital-2007-2016-decade-master": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -227,7 +255,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -255,15 +283,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "capital-2009-historical-master": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -273,7 +305,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -301,15 +333,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "capital-2011-two-masters": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -319,7 +355,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -347,15 +383,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-2009-go-bond-retained-11-decisions-c06a3a6c": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -365,7 +405,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -393,15 +433,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-2011-go-bond-department-schedules-decisions-1a367fd1": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -411,7 +455,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -439,15 +483,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-2011-go-bond-program-scope-and-schedule-decisions-7d91c668": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -457,7 +505,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -485,15 +533,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-2014-ms4-package-decision-2026-09-18-0fbe2935": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -503,7 +555,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -531,15 +583,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-2017-go-bond-program-decisions-2026-09-09-268c83b9": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -549,7 +605,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -577,15 +633,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-archive-recovery-53d2a462": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -595,7 +655,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -623,15 +683,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-capital-program-review-28-decisions-a2e89ee1": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -641,7 +705,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -669,15 +733,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-council-closeout-status-2026-09-20-4dfd8e30": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -687,7 +755,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -715,15 +783,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-decisions-b8452592": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -733,7 +805,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -761,15 +833,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-development-review-services-archive-decisions-2026-09-11-a41e3619": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -779,7 +855,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -807,15 +883,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-dmd-library-expansion-decisions-2026-08-14-1f0ff836": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -825,7 +905,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -853,15 +933,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-dpm-annual-compilations-decisions-2026-09-13-9318dfff": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -871,7 +955,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -899,15 +983,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-dpm-minutes-2015-2018-archive-decisions-2026-09-13-0e087112": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -917,7 +1005,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -945,15 +1033,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-eight-batch-2-decisions-2026-08-14-f83e424c": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -963,7 +1055,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -991,15 +1083,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-eight-batch-decisions-2026-08-14-01fe2287": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -1009,7 +1105,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -1037,15 +1133,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-facility-environmental-compliance-cluster-research-2026-09-12-f4ed5881": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -1055,7 +1155,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -1083,15 +1183,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-frozen-review-batch-16-decisions-554d266d": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -1101,7 +1205,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -1129,15 +1233,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-gis-dmd-history-decisions-6122241c": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -1147,7 +1255,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -1175,15 +1283,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-go2003-master-compilation-decisions-2026-09-13-7f7a401d": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -1193,7 +1305,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -1221,15 +1333,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-go2011-bond-archive-decisions-2026-09-11-aecdde74": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -1239,7 +1355,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -1267,15 +1383,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-go2017-official-master-consolidation-2026-09-16-a4c4b709": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -1285,7 +1405,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -1313,15 +1433,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-later-ms4-annual-reports-and-permit-instruments-decision-2026-09--18015e6f": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -1331,7 +1455,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -1359,15 +1483,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-legacy-direct-source-remediation-decisions-2026-09-12-a2a646f7": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -1377,7 +1505,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -1405,15 +1533,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-ms4-rail-station-history-decisions-6d496a38": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -1423,7 +1555,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -1451,15 +1583,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-next-ordinary-queue-b8bb5c70": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -1469,7 +1605,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -1497,15 +1633,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-ordinary-second-large-campaign-dmd-review-decisions-2026-09-26-a29a51e4": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -1515,7 +1655,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -1543,15 +1683,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -1561,7 +1705,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -1589,15 +1733,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -1607,7 +1755,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -1635,15 +1783,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-project-procurement-records-cluster-research-2026-09-12-9a7ef8f0": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -1653,7 +1805,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -1681,15 +1833,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-recent-high-value-7-decisions-3ef59640": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -1699,7 +1855,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -1727,15 +1883,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-retained-source-expansion-15-decisions-2026-08-28-85d0a33a": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -1745,7 +1905,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -1773,15 +1933,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-retained-source-expansion-16-decisions-2026-08-29-08f97fd5": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -1791,7 +1955,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -1819,15 +1983,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-retained-source-expansion-17-decisions-2026-08-29-8210108e": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -1837,7 +2005,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -1865,15 +2033,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-retained-source-expansion-18-decisions-2026-08-29-cbe402cf": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -1883,7 +2055,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -1911,15 +2083,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-retained-source-expansion-19-decisions-2026-08-29-5f062098": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -1929,7 +2105,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -1957,15 +2133,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-retained-source-expansion-6d-decisions-2026-08-25-36272992": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -1975,7 +2155,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -2003,15 +2183,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-retained-source-expansion-8-decisions-2026-08-26-238fdd6d": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -2021,7 +2205,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -2049,15 +2233,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-review-c298a3ca": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -2067,7 +2255,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -2095,15 +2283,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-scoped-source-review-2026-08-04-33554a9c": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -2113,7 +2305,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -2141,15 +2333,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-stormwater-history-batch-decisions-2026-09-09-1003496f": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -2159,7 +2355,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -2187,15 +2383,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "decision-unm-cnm-focused-source-scope-1673e3f6": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -2205,7 +2405,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -2233,15 +2433,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "policy-agents": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -2251,7 +2455,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -2279,15 +2483,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "policy-durable-task-governance": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -2297,7 +2505,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -2325,15 +2533,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "policy-mission-scope": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -2343,7 +2555,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -2371,15 +2583,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "policy-mission-scope-legacy": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -2389,7 +2605,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -2417,15 +2633,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "policy-project-recency": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -2435,7 +2655,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -2463,15 +2683,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "policy-project-state": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -2481,7 +2705,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -2509,15 +2733,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "policy-publication-quality": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -2527,7 +2755,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -2555,15 +2783,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "policy-quality-exclusions": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -2573,7 +2805,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -2601,15 +2833,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "policy-r2-storage": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -2619,7 +2855,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -2647,15 +2883,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "policy-source-priorities": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -2665,7 +2905,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -2693,15 +2933,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "policy-tip-stip-retention": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -2711,7 +2955,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -2739,15 +2983,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "workflow-autonomous-verification": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -2757,7 +3005,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -2785,15 +3033,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "workflow-background-campaign": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -2803,7 +3055,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -2831,15 +3083,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "workflow-handoff-retirement": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -2849,7 +3105,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -2877,15 +3133,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "workflow-parallel-verification": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -2895,7 +3155,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -2923,15 +3183,19 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ],
     "workflow-stage-lifecycle": [
       {
+        "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/integration.json",
+        "sha256": "413dafdc8d8cd8b343dbe22ad0be1d6d27fd14dcf3dd73bf1342dc63468b7a18"
+      },
+      {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/validation.log",
         "sha256": "71f9d2b35f358bf035301049d6284ca7b378c90bd6aedf3904940f910017865d"
       },
@@ -2941,7 +3205,7 @@
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/receipt.json",
-        "sha256": "c238cb0736dbec603038062268ffa6778fec2f08ef677f63c0cc5d27162184f2"
+        "sha256": "b7a265e2ba8a37afbfa782ba189825c39b9055da634294c0b6fdf8d16de9a24d"
       },
       {
         "path": "project-state/governance/pr206-postmerge-closeout-2026-09-29/merge-deployment.json",
@@ -2969,13 +3233,13 @@
       },
       {
         "path": "project-state/CURRENT.md",
-        "sha256": "c7d4cd007b9cf797e1dd6c1bf3a049c12988f57f783b28e2ebb2a88c30ce5650"
+        "sha256": "8d8e7b1f10e0cd790d148fe265c51089efc3e3b2f8b1d5375fddfd2cbba813e8"
       },
       {
         "path": "project-state/checkpoint.json",
-        "sha256": "6ddc363f2953c105b10338d884deeafbd0d2eb7fe6dd98d89b5cb4d4d43ad25f"
+        "sha256": "cf0bc2b8fc0f45dce5253f68249a53722421872902e4b172a96f77a9d09d61aa"
       }
     ]
   },
-  "status": "in_progress"
+  "status": "complete"
 }
