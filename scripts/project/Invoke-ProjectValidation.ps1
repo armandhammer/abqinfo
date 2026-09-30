@@ -6,6 +6,9 @@ param(
 )
 
 Set-StrictMode -Version Latest
+& python "$PSScriptRoot/Test-Pr207OwnerCorrection.py"
+& python "$PSScriptRoot/Test-OrdinaryYouthJusticePublication.py"
+if ($LASTEXITCODE) { throw 'Youth justice family publication exact-delta check failed.' }
 & python "$PSScriptRoot/Test-TaskGovernance.py"
 if ($LASTEXITCODE) { throw 'Durable governance regression failed.' }
 & python "$PSScriptRoot/Test-Pr198Settled.py"
@@ -253,6 +256,8 @@ if (Test-Path 'project-state/discovery/planning-documents-root-hugo-implementati
 & python "$PSScriptRoot/Test-FirstQualityRemediation.py" --rendered-root tmp/site-build
 if ($LASTEXITCODE) { throw "First quality remediation rendered validation failed." }
 $broken = @()
+& python "$PSScriptRoot/Test-OrdinaryYouthJusticePublication.py" --rendered-root tmp/site-build
+if ($LASTEXITCODE) { throw 'Youth justice family rendered publication check failed.' }
 & python "$PSScriptRoot/Test-QualityCorrectionHugoImplementation.py" --rendered-root tmp/site-build
 if ($LASTEXITCODE) { throw 'Corrected publication rendered/link/anchor validation failed.' }
 if ($CheckExternalLinks) {

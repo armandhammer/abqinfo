@@ -102,13 +102,7 @@ for p in q['packages']:
             elif i in ['src-143f58c34ccb049a','src-4d5d39b12d50677f','src-37fb581fedd3725f']:
                 pending(i,'Source access or facility identity/location remains a Codex prerequisite, not an owner decision. The recovered Fire Station 46 page contains Station 41 text; Station 43 needs an exact local-service connection; Mountain View timed out.','Recover/reconcile the exact project page and facility identity/address, then apply both scope gates. Do not infer a geographic connection from County jurisdiction or a mismatched title.')
             else:
-                fetched=[x for x in ev[i]['retrievals'] if x.get('http_status')==200 and 'html' in str(x.get('content_type'))]
-                assert fetched,i
-                texts=[t for t in ev[i]['main_texts'] if t['url']==(row.get('direct_file_url') or row.get('source_url'))]
-                if not texts:texts=ev[i]['main_texts'][:1]
-                connection=(' '.join(t['main_text'][:900] for t in texts) or row['title'])
-                approve(i,'The recovered official project page documents '+row['title']+' with substantive named local project scope, funding/design or infrastructure relationships. Its Albuquerque/South Valley/North Valley/Westside network or facility component gives independent reader value beyond County-wide jurisdiction. Use the live maintained project source, distinguish dated project milestones from present status, and avoid separate operational attachment entries.',live=True,connection=connection)
-                if i=='src-0a39e768262a9380d69d':updates[-1]['changes']['title']='Sunport Commerce Center Transportation Plan (official project page)'
+                raise ValueError(i+': shared County-project approval recipe retired by PR207 owner correction. Use a fresh governed, individual two-gate assessment with concrete durable public-information value; local official provenance and named capital work alone are insufficient. Historical September 26 decisions remain preserved, and this failure writes no new dispositions.')
         elif pkg=='nmdot-recovery-scope':
             exclude(i,'The exact NMDOT source context identifies '+row['title']+' as a statewide administrative form/contact/tool/guide, a telephone-link artifact, or a Santa Fe/southern-New-Mexico shuttle schedule. No specific material Albuquerque project, decision or service component is established. Statewide applicability and originating from a regional transit link do not pass the Albuquerque gate.',True)
         elif pkg=='bernco-standards-page':

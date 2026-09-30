@@ -344,6 +344,30 @@
       "exact_delta_guard": {
         "module": "Pr206PostMergeCloseoutLifecycle",
         "function": "guard_current_delta"
+      },
+      "end_commit": "07a0485306963f2e485a93030ece81c6a2c01da9"
+    },
+    {
+      "id": "ordinary-youth-justice-publication",
+      "baseline_commit": "07a0485306963f2e485a93030ece81c6a2c01da9",
+      "regression_scripts": [
+        "scripts/project/Test-OrdinaryYouthJusticePublication.py"
+      ],
+      "exact_delta_guard": {
+        "module": "OrdinaryYouthJusticePublicationLifecycle",
+        "function": "guard_current_delta"
+      },
+      "end_commit": "8a189e21f2a01f03d7f52cb35f820f6e9dba11d3"
+    },
+    {
+      "id": "pr207-owner-correction",
+      "baseline_commit": "8a189e21f2a01f03d7f52cb35f820f6e9dba11d3",
+      "regression_scripts": [
+        "scripts/project/Test-Pr207OwnerCorrection.py"
+      ],
+      "exact_delta_guard": {
+        "module": "Test-Pr207OwnerCorrection",
+        "function": "guard_current_delta"
       }
     }
   ],
