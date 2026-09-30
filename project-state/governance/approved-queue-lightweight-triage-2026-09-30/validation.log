@@ -177,7 +177,7 @@ PASS: two exact grouped historical County facility additions, tracked source/ren
   ],
   "active_entries": 243,
   "superseded_entries": 7,
-  "audited_artifacts": 2912
+  "audited_artifacts": 2915
 }
 {
   "result": "passed",
@@ -188,59 +188,9 @@ PASS: two exact grouped historical County facility additions, tracked source/ren
 }
 PASS: exact32 review boundary; 24/21/46 complete master components; independent instruments; unchanged original evidence; actual quality; empty/malformed fail closed; master/output-form checks.
 PASS: PR198 reviewed bytes, inventory, R2 and main snapshot preserved; exact completed plans stay historical and tampering fails.
-{
-  "task_id": "approved-queue-lightweight-triage-2026-09-30",
-  "phase": "final",
-  "applicable_rules": 26,
-  "population_sha256": "1325f859640f83824c7738af7d898c071d43cfa4018573fdb6f9d2d748a00207",
-  "changed_paths": [
-    "project-state/CURRENT.md",
-    "project-state/checkpoint.json",
-    "project-state/governance-registry.json",
-    "project-state/governance/active-task.json",
-    "project-state/governance/approved-queue-lightweight-triage-2026-09-30/contract-v2.json",
-    "project-state/governance/approved-queue-lightweight-triage-2026-09-30/contract.json",
-    "project-state/governance/approved-queue-lightweight-triage-2026-09-30/implementation.json",
-    "project-state/governance/approved-queue-lightweight-triage-2026-09-30/population.json",
-    "project-state/governance/approved-queue-lightweight-triage-2026-09-30/pr-body.md",
-    "project-state/governance/approved-queue-lightweight-triage-2026-09-30/receipt.json",
-    "project-state/governance/approved-queue-lightweight-triage-2026-09-30/triage.json",
-    "project-state/governance/approved-queue-lightweight-triage-2026-09-30/validation.log",
-    "project-state/governance/audit-2026-09-27/artifact-audit.json"
-  ]
-}
-PASS: PR198 snapshot carries exact owner/R2/review facts and no visitor-visible content or candidate inventory delta.
-PASS: PR #196 merged tree, deployment and three production pages verified; historical evidence, content, inventory, R2 and exact 1608/42 debt preserved.
-PASS: exactly 25 component failures plus five required annual masters resolved; 1608 unrelated debt rows unchanged; 42 September 13 findings unresolved; actual-record gates and negative delta fixtures pass; originals/R2 unchanged; source checks passed.
-PASS: PR #194 background closeout preserves reviewed content, inventory, R2, historical evidence and exact remediation debt; seven production pages verified.
-PASS: six publication failure classes; useful short legal/map/table/analytical positives; explicit reversal evidence; actual-record integration and atomic no-write transition; immutable bounded debt and link-count growth guards.
-PASS: correction exact-delta negative fixtures; even repinned inventory values cannot omit the actual-record quality gate.
-PASS: 123 visible records pass; 1499 explicitly unresolved legacy records remain in the sealed remediation queue; no new or changed quality debt.
-PASS: actual-record quality gate on eleven Planning originals; four Old Town exclusions; seven PR pages; immutable provenance/R2; approved hashes, original qualifications, descriptions, archive/source links and Barelas anchors; source checks passed.
-PASS: 33 contiguous stage intervals; 180 unchanged historical evidence files; all regressions in normal suite; active exact-delta guard and negative coverage fixtures passed.
-PASS: 30 approved, 372 pending, 321 gated, 42 source blocked, 9 prerequisites; 21 PR202 IDs removed; no visible, inventory, R2 or historical queue change
-PASS: PR203 production, archive bytes and background-only closeout evidence are sealed
-PASS: PR204 merge, production, preview and six-record background closeout evidence are sealed
-PASS: PR206 merge, production, tracked evidence and background-only closeout
-PASS: four exact County drainage links, source hashes, quality decisions, inventory rows, and queue delta
-PASS: PR #206 source-evidence and four validation-note corrections; visitor content and R2 unchanged
-PASS: 18 assessed records, two bounded pages, exact 1517-to-1499 fresh quality delta, preserved originals and historical witness
-PASS: nine negative fixtures reject unrelated rows, provenance, unknown or replaced pages, altered page hashes, R2 mutations, unapproved row values, duplicate rows and top-level metadata; actual current delta passes.
-PASS: three queue fixtures reject rewritten historical audits, unknown sources and false completion; only twelve pending Planning source roots added.
-PASS: exact 12 publication transitions, six pages, one incomplete chapter set, two Barelas cross-links, unchanged duplicate/canonical rows and R2; source checks passed.
-PASS: 11 explicit owner dispositions; nine retained, two excluded; six exact archives / 4522318 bytes; zero owner cases; 39 factual prerequisites; unrelated rows/content preserved.
-PASS: exact 55 follow-ups; 16 resolved, 39 factual prerequisites; four owner packages unchanged; 16 exact archives, 14454680 added bytes; unrelated rows and visible content preserved.
-PASS: exact 205-record reassessment; 139 dispositions, 55 work prerequisites, 11 owner decisions; unrelated rows/source history/content preserved; three exact archives and 13 GB ceiling.
-Traceback (most recent call last):
-  File "C:\Users\ben\Documents\ABQinfo\scripts\project/Build-ConsolidatedHumanReviewQueue.py", line 144, in <module>
-    main()
-    ~~~~^^
-  File "C:\Users\ben\Documents\ABQinfo\scripts\project/Build-ConsolidatedHumanReviewQueue.py", line 135, in main
-    assert OUT.read_text(encoding='utf-8') == payload, 'JSON queue is stale'
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: JSON queue is stale
-Exception: C:\Users\ben\Documents\ABQinfo\scripts\project\Invoke-ProjectValidation.ps1:71
+GOVERNANCE FAILURE: Final implementation lacks complete governance accounting
+Exception: C:\Users\ben\Documents\ABQinfo\scripts\project\Invoke-ProjectValidation.ps1:19
 Line |
-  71 |  … EXITCODE) { throw 'Consolidated human-review queue freshness and cove …
-     |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Consolidated human-review queue freshness and coverage validation failed.
+  19 |  … $LASTEXITCODE) { throw 'Current task governance validation failed.' }
+     |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Current task governance validation failed.
