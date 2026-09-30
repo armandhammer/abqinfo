@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "task_id": "pr207-postmerge-closeout-2026-09-30",
+  "state": "closeout_payload_ready",
+  "pr": {
+    "number": 207,
+    "state": "MERGED",
+    "baseRefOid": "07a0485306963f2e485a93030ece81c6a2c01da9",
+    "headRefOid": "52b54681b2962d4473afd9adc942664a35704589",
+    "merge_commit": "2a715a54795891564a11de6aa193354086f86570"
+  },
+  "merge_tree": "3ef55e3c0463cb7184192c221399cc39feff127b",
+  "reviewed_head_tree": "3ef55e3c0463cb7184192c221399cc39feff127b",
+  "merge_tree_matches_reviewed_head": true,
+  "closeout_visitor_visible_changes": 0,
+  "closeout_inventory_changes": 0,
+  "closeout_r2_changes": 0,
+  "owner_excluded_candidate_ids": [
+    "src-4db14cde9f1460db",
+    "src-e2c19c0b6111c542"
+  ],
+  "approved_queue": 18,
+  "pending_queue": 372,
+  "remaining_nonterminal": 940,
+  "triage": {
+    "path": "project-state/governance/approved-queue-lightweight-triage-2026-09-30/triage.json",
+    "binding": false,
+    "counts": {
+      "strong_candidate": 5,
+      "special_constraint": 3,
+      "scope_quality_recheck_needed": 10
+    }
+  },
+  "focused_validation": "passed: current governance contract has zero conflicts/gates; two-record correction and nonbinding18-record triage verified; no content, inventory, or R2 change after reviewed merge head.",
+  "full_validation": "passed on reviewed head before merge; postmerge difference was the remote-verification receipt."
+}

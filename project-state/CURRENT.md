@@ -1,14 +1,12 @@
 # Current project state
 
-PR #207 owner correction is complete, background-only, and OPEN/unmerged. The two youth-justice facility blurbs are excluded for insufficient substantive/durable public-information value. City Facilities, including its City-owned introduction, matches authoritative main at 07a0485 exactly. Publication-placement fields are cleared; current scope and quality assessments are negative. No R2 mutation. Original source/provenance, research and historical review/preview evidence remain preserved.
+PR #207 merged as background-only at `2a715a54795891564a11de6aa193354086f86570` from reviewed head `52b54681b2962d4473afd9adc942664a35704589`. The merge tree exactly matches the reviewed head, and the PR has no visitor-visible file changes. The two owner-rejected youth-justice records remain excluded with publication placements cleared. Their historical evidence is preserved. No R2 changes.
 
-The approval diagnosis found a shared positive County-project disposition recipe and an overly generous later grouping judgment. Only that generic approval branch was retired; existing substantive-value policies remain unchanged.
+The shared County-project approval shortcut remains retired. The saved 18-record triage remains nonbinding: 5 strong candidates, 10 scope/quality rechecks, and 3 special constraints. Queue accounting remains 18 approved and 372 pending. Checkpoint nonterminal count is 940.
 
-Lightweight triage: 5 strong candidates, 10 scope/quality rechecks, 3 special constraints. All other 18 approved inventory dispositions remain unchanged. See project-state/governance/approved-queue-lightweight-triage-2026-09-30/triage.json. Queue: 18 approved, 372 pending; checkpoint nonterminal count: 940.
+The focused correction/governance checks and the complete standard suite passed before merge. External-link scanning was not run. Current work is the background-only merge closeout; see `project-state/governance/pr207-postmerge-closeout-2026-09-30/`.
 
-Complete standard validation and focused correction/render checks passed. External-link scanning was not requested/run. Final receipt: project-state/governance/pr207-owner-final-accounting-2026-09-30/receipt.json. Active exact-two-record final-accounting contract is complete; the correction and 18-record triage contracts are also complete.
-
-Exact next step after the weekly reset: owner review of background-only PR #207 disposition. Do not merge under this instruction. No new publication family is active. Future authorized publication work begins with the saved triage and a fresh governed record-specific scope/quality review.
+After reconciliation, main and `chatgpt/planning-snapshot` will share the closeout receipt commit. No new publication family or research task is active.
 
 ## Historical checkpoints below
 

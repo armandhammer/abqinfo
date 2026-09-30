@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "task_id": "pr207-postmerge-closeout-2026-09-30",
+  "state": "background_closeout_payload_ready",
+  "integrated_payload_commit": "to be recorded after payload commit",
+  "remote_refs_verified": {},
+  "local_refs_verified": {},
+  "push": "git push --atomic origin HEAD:refs/heads/main HEAD:refs/heads/chatgpt/planning-snapshot",
+  "visitor_visible_changes": 0,
+  "inventory_changes": 0,
+  "r2_changes": 0,
+  "final_receipt_commit_locator": "git log --format=%H --diff-filter=A -- project-state/governance/pr207-postmerge-closeout-2026-09-30/integration.json",
+  "final_receipt_ref_targets": [
+    "refs/heads/main",
+    "refs/heads/chatgpt/planning-snapshot"
+  ],
+  "final_receipt_reconciliation": "The integration receipt commit is the final fast-forward target for both refs; verify remote and local refs after pushing."
+}
