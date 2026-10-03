@@ -53,7 +53,7 @@ def freeze():
 def refresh():
     old=[f.relative_to(G.ROOT).as_posix() for f in (G.ROOT/P).glob('contract-v*.json')]
     audit(old,'Immutable prior resolver snapshots; historical evidence only after replacement.')
-    population_path=P+('population-v3.json' if (G.ROOT/(P+'population-v3.json')).exists() else 'population.json')
+    population_path=P+('population-v4.json' if (G.ROOT/(P+'population-v4.json')).exists() else ('population-v3.json' if (G.ROOT/(P+'population-v3.json')).exists() else 'population.json'))
     c=G.resolve(G.load(population_path),G.registry(),G.file_hash(G.REGISTRY))
     n=max([int(Path(p).stem.split('-v')[1]) for p in old],default=0)+1
     path=P+f'contract-v{n}.json';G.write_once(path,c)
