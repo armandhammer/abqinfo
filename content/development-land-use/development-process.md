@@ -10,6 +10,10 @@ Cross-cutting development process documents, manuals, and reference materials.
 
   Organizes Albuquerque’s current review sections, ABQ-PLAN electronic submittals, hydrology and transportation resources, impact fees, construction coordination, interactive plan map, and Planning Department navigator assistance.
 
+- [Online Planning Services, Permitting & Applications — Live City Services](https://www.cabq.gov/planning/online-planning-permitting-applications)
+
+  Connects land-use and zoning applications, building permits, business licensing and code-enforcement services with the City’s online systems. Residents can also search permits, applications, licenses and violation records, while applicants can upload documents and track review progress. This service gateway complements the review-section overview above.
+
 ## Development Policy References
 
 - [Official Albuquerque Plant Palette and Sizing List (2018 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-official-plant-palette-sizing-list-2018.pdf)
