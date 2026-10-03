@@ -4,10 +4,10 @@ Adds two independently reviewed City resources to existing pages. The corrected 
 
 ## Review this change
 
-**Preview:** https://codex-strong-five-review-202.abqinfo.pages.dev/transportation/bicycling/#facility-types-and-crossings
+**Preview:** https://cdbb24c0.abqinfo.pages.dev/transportation/bicycling/#facility-types-and-crossings
 
-- Added: **Bicycling ? Facility Types and Crossings**, with **Bike Facilities in Albuquerque ? Live City Guide**, explaining facility types, bicycle detection and crossing treatments. [Review this section](https://codex-strong-five-review-202.abqinfo.pages.dev/transportation/bicycling/#facility-types-and-crossings).
-- Added: **Development Process ? Current City Review Process**, with **Online Planning Services, Permitting & Applications ? Live City Services**, explaining public searches and application tracking beside the existing review overview. [Review this section](https://codex-strong-five-review-202.abqinfo.pages.dev/development-land-use/development-process/#current-city-review-process).
+- Added: **Bicycling ? Facility Types and Crossings**, with **Bike Facilities in Albuquerque ? Live City Guide**, explaining facility types, bicycle detection and crossing treatments. [Review this section](https://cdbb24c0.abqinfo.pages.dev/transportation/bicycling/#facility-types-and-crossings).
+- Added: **Development Process ? Current City Review Process**, with **Online Planning Services, Permitting & Applications ? Live City Services**, explaining public searches and application tracking beside the existing review overview. [Review this section](https://cdbb24c0.abqinfo.pages.dev/development-land-use/development-process/#current-city-review-process).
 
 The former **Animal Care and Resource Center (2017)** and **Historical County Parks Investment** sections are removed from this proposal. The independent correction preserves the original October 3 review and source captures as historical evidence. City Facilities, the separate Paradise Hills Trail concept, navigation and PR207 exclusions are unchanged.
 
