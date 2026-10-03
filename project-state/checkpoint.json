@@ -1,6 +1,6 @@
 {
   "recorded_at": "2026-10-03T19:13:01.8352771Z",
-  "completed_item_range": "PR208 two County mission-scope corrections; preserved original review; two City additions retained",
+  "completed_item_range": "PR208 manually merged; two City services live; four production pages verified; exclusions preserved",
   "total_candidates": 7140,
   "counts_by_status": {
     "pending review": 372,
@@ -20,10 +20,8 @@
   },
   "remaining_nonterminal": 937,
   "next_pending_id": "lin-2f6fbe4ffb0b6564",
-  "blockers": [
-    "Owner editorial review of unmerged PR208; no merge authority"
-  ],
-  "resume_command": "Owner review of corrected PR208",
+  "blockers": [],
+  "resume_command": "Reconcile completed background PR209 after PR208 production closeout",
   "verification_campaign_totals": {
     "verified": 2194,
     "passed": 2070,
@@ -34713,5 +34711,12 @@
         }
       }
     }
-  ]
+  ],
+  "pr208_postmerge_closeout": {
+    "state": "production_verified",
+    "merge_commit": "26442ad202d696f8582b634ecf5283ee56b8482a",
+    "receipt": "project-state/governance/pr208-postmerge-closeout-2026-10-03/receipt.json",
+    "next_item": "PR209 background reconciliation",
+    "r2_changes": 0
+  }
 }

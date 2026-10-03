@@ -5,6 +5,8 @@ param(
   [switch]$CheckExternalLinks
 )
 
+& python "$PSScriptRoot/Pr208209Reconciliation.py" guard
+if ($LASTEXITCODE) { throw 'PR208/209 governed reconciliation guard failed.' }
 Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }

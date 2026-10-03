@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "fa0be1c80edab4fda791e04e72673451931e808e532be91a146f2aa940203a53",
+  "audit_sha256": "80575c2ec2d696de931a78b29aa59c49be6e0f7e0e70edc13e56affd984416cf",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15245,7 +15245,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "90ffa87f2906c78551896aad3fd15cc918ce24c8e2948b00e454153ad13f4575",
+          "sha256": "94b7860a939e6fb86bd5f9e9aa91ec7add78ee1d6faf1b99013038ca48996dd7",
           "binding_pointers": [
             "/implementation"
           ]
@@ -20768,6 +20768,38 @@
       "settled_decisions": [],
       "unresolved_gates": [],
       "implementation_status": "in progress"
+    },
+    {
+      "governance_id": "owner-pr208-postmerge-closeout-2026-10-03",
+      "category": "active owner decision",
+      "title": "owner-pr208-postmerge-closeout-2026-10-03",
+      "scope": {
+        "task_ids": [
+          "pr208-postmerge-closeout-2026-10-03"
+        ]
+      },
+      "authority": "Explicit current owner instruction: two separate governed phases after manual PR208 merge",
+      "decision_date": "2026-10-03",
+      "effective_date": "2026-10-03",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/pr208-postmerge-closeout-2026-10-03/authority.json",
+          "sha256": "8fa861ebeb286f28d4297cf5230ccebab19afb53a54ecd52afc4aeca60fabc86",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Verify actual PR208 production at exact merge commit, preserve historical review/preview evidence, record two City resources live and Animal Care, Paradise Hills and Sunport companion exclusions binding. Dedicated closeout branch from current main; background-only integration into main is authorized after full validation. No new visitor-visible, inventory, R2 or substantive review changes. PR209 reconciliation is a later separate phase; planning-snapshot remains at reviewed head until final background state is settled.",
+      "required_actions": [
+        "Verify actual PR208 production at exact merge commit, preserve historical review/preview evidence, record two City resources live and Animal Care, Paradise Hills and Sunport companion exclusions binding. Dedicated closeout branch from current main; background-only integration into main is authorized after full validation. No new visitor-visible, inventory, R2 or substantive review changes. PR209 reconciliation is a later separate phase; planning-snapshot remains at reviewed head until final background state is settled."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded task authorization"
     }
   ]
 }

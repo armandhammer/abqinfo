@@ -392,6 +392,18 @@
       "exact_delta_guard": {
         "module": "Test-Pr208CountyScopeCorrection",
         "function": "guard_current_delta"
+      },
+      "end_commit": "26442ad202d696f8582b634ecf5283ee56b8482a"
+    },
+    {
+      "id": "pr208-postmerge-closeout",
+      "baseline_commit": "26442ad202d696f8582b634ecf5283ee56b8482a",
+      "regression_scripts": [
+        "scripts/project/Pr208209Reconciliation.py"
+      ],
+      "exact_delta_guard": {
+        "module": "Pr208209Reconciliation",
+        "function": "guard_a"
       }
     }
   ],
