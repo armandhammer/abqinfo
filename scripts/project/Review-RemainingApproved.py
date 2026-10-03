@@ -206,4 +206,15 @@ def finish():
     row['validation_passed']=True;save(P+'progress.json',ledger)
     save(root+'validation.json',dict(timestamp=now(),candidate=rid,governance_contract=G.load(G.ACTIVE_TASK)['contract'],population_fresh=True,inventory_delta_within_exact_population=True,protected_tree_unchanged=True,r2_changes=0,diff_check='passed'))
     print('Completed',rid,review['outcome'],'; validate/commit/push before next record')
+def prepare_review():
+    rid=sys.argv[2];root=P+'records/'+rid+'/';review=G.load(root+'review.json')
+    before=next(r for r in G.load(P+'prior-records.json')['records'] if r['id']==rid)
+    scope=review['scope_assessment'];quality=review['quality_assessment']
+    status='excluded' if review['outcome'].startswith('excluded') else 'approved for addition'
+    changes=dict(status=status,scope_assessment=scope,quality_assessment=quality,validation_status='Independent background scope/quality/family/currentness review complete; see '+root+'review.json',review_reason='mission_scope_exclusion' if status=='excluded' and scope['final_scope_decision']=='excluded' else ('publication_quality_exclusion' if status=='excluded' else None),exclusion_reason=review['rationale'] if status=='excluded' else None,publication_quality_decision=dict(decision='excluded' if status=='excluded' else 'passes',finding_id=TASK+':'+rid,rationale=review['rationale'],evidence=review['evidence'],assessment=quality))
+    if status=='excluded':changes.update(proposed_canonical_page=None,implementation_location=None,implementation_locations=[],cross_listing_approved=False)
+    else: changes['proposed_canonical_page']=review['publication_plan']['canonical_page']
+    changes['processing_notes']=before['processing_notes']+['2026-10-03 independent thirteen-record background review: '+review['rationale']+' Evidence: '+root+'review.json']
+    review['approved_updates']=[dict(id=rid,changes=changes)];save(root+'review.json',review)
+    if 'publication_plan' in review:save(root+'publication-plan.json',dict(id=rid,**review['publication_plan'],evidence=review['evidence']))
 if __name__=='__main__': globals()[sys.argv[1] if len(sys.argv)>1 else 'guard_current_delta']()
