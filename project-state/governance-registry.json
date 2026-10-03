@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "14fde512e3163bf77c3f5c21d7e4c297ebd1d571e4b756897d6ba8c1209059b4",
+  "audit_sha256": "7de2ea5df45805ebe4cd22b8e3786ebb9e437b5d8daef3fd7b14877b93872c53",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -21782,6 +21782,41 @@
       "binding_requirement": "Apply only the exact authorized approval exceptions recorded here. All other settled decisions and historical evidence remain controlling.",
       "required_actions": [
         "Apply only the exact authorized approval exceptions recorded here. All other settled decisions and historical evidence remain controlling."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "in progress"
+    },
+    {
+      "governance_id": "decision-remaining-approved-review-2026-10-03-src-ed75a3cb5ecc3b0b",
+      "category": "active owner decision",
+      "title": "decision-remaining-approved-review-2026-10-03-src-ed75a3cb5ecc3b0b",
+      "scope": {
+        "candidate_ids": [
+          "src-ed75a3cb5ecc3b0b"
+        ],
+        "task_ids": [
+          "remaining-approved-review-2026-10-03"
+        ]
+      },
+      "authority": "Record-specific independent review under explicit owner campaign authority",
+      "decision_date": "2026-10-03",
+      "effective_date": "2026-10-03",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/remaining-approved-review-2026-10-03/records/src-ed75a3cb5ecc3b0b/review.json",
+          "sha256": "305322974db4bbe310b4ddbe3f181438c702fa78d67b941de0b030392bf117e3",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Keep the selected FHWA URL as recorded; withdraw its unsupported approved status to pending review until exact selected-resource content or an evidenced redirect/identity relation is recovered. Preserve the County parent and all existing Second Street publications unchanged. Do not substitute the currently indexed NM FLAP Trail 52000(2) page for this historical endpoint without exact identity evidence.",
+      "required_actions": [
+        "Keep the selected FHWA URL as recorded; withdraw its unsupported approved status to pending review until exact selected-resource content or an evidenced redirect/identity relation is recovered. Preserve the County parent and all existing Second Street publications unchanged. Do not substitute the currently indexed NM FLAP Trail 52000(2) page for this historical endpoint without exact identity evidence."
       ],
       "prohibited_actions": [],
       "constraints": [],
