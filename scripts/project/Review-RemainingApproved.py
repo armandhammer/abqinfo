@@ -3,6 +3,8 @@ import copy, hashlib, json, subprocess, sys, runpy
 from datetime import datetime, timezone
 from pathlib import Path
 import TaskGovernance as G
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
 
 P='project-state/governance/remaining-approved-review-2026-10-03/'
 TASK='remaining-approved-review-2026-10-03'
