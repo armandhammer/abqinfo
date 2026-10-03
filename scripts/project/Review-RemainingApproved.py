@@ -64,7 +64,9 @@ def refresh():
     plan.update(contract=path,contract_sha256=G.file_hash(path),population_sha256=c['population_sha256'],respected_governance_ids=c['governance_ids'],subjects=subjects)
     for e in plan['events']: e['governance_ids']=c['governance_ids']
     save(P+'implementation.json',plan)
-    save(G.ACTIVE_TASK,dict(population=population_path,contract=path,contract_sha256=G.file_hash(path),implementation=P+'implementation.json',state='in_progress',supersession_proposals_path=P+'supersession.json'))
+    proposal_path=G.load(G.ACTIVE_TASK).get('supersession_proposals_path',P+'supersession.json') if (G.ROOT/G.ACTIVE_TASK).exists() else P+'supersession.json'
+    if not proposal_path.startswith(P): proposal_path=P+'supersession.json'
+    save(G.ACTIVE_TASK,dict(population=population_path,contract=path,contract_sha256=G.file_hash(path),implementation=P+'implementation.json',state='in_progress',supersession_proposals_path=proposal_path))
     print('Contract',path,'rules',len(c['governance_ids']),'conflicts',c['conflicts'],'gates',c['unresolved_gates'])
 def setup():
     c=G.load(P+'contract-v1.json');G.freshness(c,G.load(P+'population.json'),G.registry(),G.file_hash(G.REGISTRY))
@@ -179,25 +181,25 @@ def witness():
         receipts['records'].append(receipt);save(root+'retrievals.json',receipts)
         print(json.dumps(receipt));print(text[:16000])
 def finish():
-    rid=sys.argv[2];root=P+'records/'+rid+'/';review=G.load(root+'review.json')
+    rid=sys.argv[2];root=P+'records/'+rid+'/';review_path=root+(sys.argv[3] if len(sys.argv)>3 else 'review.json');review=G.load(review_path)
     task=G.load(G.ACTIVE_TASK);contract=G.load(task['contract'])
     G.freshness(contract,G.load(task['population']),G.registry(),G.file_hash(G.REGISTRY))
     G.validate_plan(contract,{**G.load(task['implementation']),'actions':['inventory_disposition']},'mutation');guard_current_delta()
-    bind(root+'review.json','decision-'+TASK+'-'+rid,review['binding_requirement'],{'candidate_ids':[rid],'task_ids':[TASK]},'Record-specific independent review under explicit owner campaign authority')
+    bind(review_path,'decision-'+TASK+'-'+rid+('-corrected' if review_path.endswith('research.json') else ''),review['binding_requirement'],{'candidate_ids':[rid],'task_ids':[TASK]},'Record-specific independent review under explicit owner campaign authority')
     registered={a['path'] for r in G.load(G.REGISTRY)['entries'] for a in r['controlling_artifacts']}
     paths=[f.relative_to(G.ROOT).as_posix() for f in (G.ROOT/P).rglob('*') if f.is_file() and f.suffix in ['.json','.txt','.md','.html'] and f.relative_to(G.ROOT).as_posix() not in registered and f.name!='implementation.json' and not f.name.startswith('contract-v')]
     audit(paths+['project-state/master-inventory.json'],'Research, source extracts, progress, accounting and existing materialized inventory evidence; active decisions are separately registered.')
     refresh();G.active_check('mutation','inventory_disposition',[rid])
     if review.get('approved_updates'):
-        subprocess.run(['py','-3.13','scripts/project/Update-CandidatesBatch.py','--requests',root+'review.json'],cwd=G.ROOT,check=True)
+        subprocess.run(['py','-3.13','scripts/project/Update-CandidatesBatch.py','--requests',review_path],cwd=G.ROOT,check=True)
     queue_pointer=G.load('project-state/ordinary-queue-current.json');queue=G.load(queue_pointer['artifact'])
     rows={r['id']:r for r in G.load('project-state/master-inventory.json')['candidates']}
     queue['newly_approved_backlog']=[r for r in queue['newly_approved_backlog'] if rows[r['id']]['status']=='approved for addition']
     queue['campaign_review']=dict(task=TASK,progress=P+'progress.json',population=P+'population-v3.json')
     save(P+'queue.json',queue);save('project-state/ordinary-queue-current.json',dict(schema_version=1,artifact=P+'queue.json',task=TASK))
-    plan=G.load(P+'implementation.json');plan['events']=[e for e in plan['events'] if e.get('candidate_ids')!=[rid]];plan['events'].append(dict(operation='document_review',candidate_ids=[rid],governance_ids=plan['respected_governance_ids'],action='implements',summary=review['rationale'],evidence=root+'review.json'));save(P+'implementation.json',plan)
+    plan=G.load(P+'implementation.json');plan['events']=[e for e in plan['events'] if e.get('candidate_ids')!=[rid]];plan['events'].append(dict(operation='document_review',candidate_ids=[rid],governance_ids=plan['respected_governance_ids'],action='implements',summary=review['rationale'],evidence=review_path));save(P+'implementation.json',plan)
     ledger=G.load(P+'progress.json');row=next(r for r in ledger['records'] if r['id']==rid)
-    row.update(state='complete',completed_at=now(),research_evidence_paths=review['evidence'],review_artifact_path=root+'review.json',resulting_disposition=review['outcome'],inventory_mutation_applied=bool(review.get('approved_updates')),unresolved_blocker=review.get('blocker'),owner_decision_required=review.get('owner_decision_required',False))
+    row.update(state='complete',completed_at=now(),research_evidence_paths=review['evidence'],review_artifact_path=review_path,resulting_disposition=review['outcome'],inventory_mutation_applied=bool(review.get('approved_updates')),unresolved_blocker=review.get('blocker'),owner_decision_required=review.get('owner_decision_required',False))
     ledger['next_unfinished']=next((r['id'] for r in ledger['records'] if r['state']!='complete'),None);save(P+'progress.json',ledger)
     # Update mutable nonbinding receipts, then pin a replacement immutable contract.
     audit([P+'queue.json',P+'progress.json','project-state/master-inventory.json'],'Generated queue, progress and inventory materialization of separately registered exact record decisions; no independent authority.')
