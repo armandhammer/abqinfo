@@ -80,6 +80,9 @@ def check_rendered(root):
             'src-dfd205371e4664e5':('public-works/parks-recreation','historical-county-parks-investment')}
     for entry in G.load(P+'review.json')['entries']:
         if entry['id'] not in routes:continue
+        # Historical four-entry rendering remains sealed at the stage endpoint.
+        # The separate corrective stage checks the two County removals on live output.
+        if StageSnapshot('strong-five-review-publication').end and entry['id'] in {'src-5b7146d18ffadd1a','src-dfd205371e4664e5'}:continue
         route,anchor=routes[entry['id']];parser=Structure();parser.feed((Path(root)/route/'index.html').read_text(encoding='utf-8'))
         assert anchor in parser.ids and parser.links.count(entry['source_url'])==1
         words=' '.join(parser.text)

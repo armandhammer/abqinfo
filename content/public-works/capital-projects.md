@@ -73,11 +73,3 @@ Public works capital improvement projects.
 - [2025 General Obligation Bond Approved Program Book]({{< relref "../city-data/capital-spending.md" >}})
 
   The City’s adopted bond program is cataloged in City Data and is cross-linked here because it is an important source of public-works capital funding. The document is stored once, not duplicated.
-
-### Animal Care and Resource Center (2017)
-
-- [Animal Care and Resource Center — Official County Project Page](https://www.bernco.gov/public-works/blog/2021/04/16/animal-care-and-resource-center)
-
-  The County’s November 30, 2017 account explains the planned 17,143-square-foot shelter near Second Street and Woodward, with space for approximately 115 dogs and 25 cats, veterinary care, isolation and recreation areas. The County evaluated more than 15 properties; its criteria included proximity to South Valley service demand, access from Broadway and Rio Bravo, industrial zoning, available utilities and environmental constraints. The account records a 1,300-foot sewer extension to Woodward.
-
-  The estimated $7.5 million general-obligation-bond investment included land acquisition. These are the County’s 2017 design and funding figures, not confirmation of present operating capacity or final spending. This is a County-owned facility; the historical construction account does not establish its current project status.
