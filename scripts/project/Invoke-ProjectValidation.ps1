@@ -6,6 +6,8 @@ param(
 )
 
 Set-StrictMode -Version Latest
+& python "$PSScriptRoot/Review-RemainingApproved.py"
+if ($LASTEXITCODE) { throw 'Remaining thirteen background campaign exact-delta guard failed.' }
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }
 & python "$PSScriptRoot/Test-StrongFiveReview.py"
