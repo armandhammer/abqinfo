@@ -186,7 +186,7 @@ def finish():
     bind(root+'review.json','decision-'+TASK+'-'+rid,review['binding_requirement'],{'candidate_ids':[rid],'task_ids':[TASK]},'Record-specific independent review under explicit owner campaign authority')
     registered={a['path'] for r in G.load(G.REGISTRY)['entries'] for a in r['controlling_artifacts']}
     paths=[f.relative_to(G.ROOT).as_posix() for f in (G.ROOT/P).rglob('*') if f.is_file() and f.suffix in ['.json','.txt','.md','.html'] and f.relative_to(G.ROOT).as_posix() not in registered and f.name!='implementation.json' and not f.name.startswith('contract-v')]
-    audit(paths,'Research, source extracts, progress and accounting evidence; active decisions are separately registered.')
+    audit(paths+['project-state/master-inventory.json'],'Research, source extracts, progress, accounting and existing materialized inventory evidence; active decisions are separately registered.')
     refresh();G.active_check('mutation','inventory_disposition',[rid])
     if review.get('approved_updates'):
         subprocess.run(['py','-3.13','scripts/project/Update-CandidatesBatch.py','--requests',root+'review.json'],cwd=G.ROOT,check=True)
@@ -195,7 +195,7 @@ def finish():
     queue['newly_approved_backlog']=[r for r in queue['newly_approved_backlog'] if rows[r['id']]['status']=='approved for addition']
     queue['campaign_review']=dict(task=TASK,progress=P+'progress.json',population=P+'population-v3.json')
     save(P+'queue.json',queue);save('project-state/ordinary-queue-current.json',dict(schema_version=1,artifact=P+'queue.json',task=TASK))
-    plan=G.load(P+'implementation.json');plan['events'].append(dict(operation='document_review',candidate_ids=[rid],governance_ids=plan['respected_governance_ids'],action='implements',summary=review['rationale'],evidence=root+'review.json'));save(P+'implementation.json',plan)
+    plan=G.load(P+'implementation.json');plan['events']=[e for e in plan['events'] if e.get('candidate_ids')!=[rid]];plan['events'].append(dict(operation='document_review',candidate_ids=[rid],governance_ids=plan['respected_governance_ids'],action='implements',summary=review['rationale'],evidence=root+'review.json'));save(P+'implementation.json',plan)
     ledger=G.load(P+'progress.json');row=next(r for r in ledger['records'] if r['id']==rid)
     row.update(state='complete',completed_at=now(),research_evidence_paths=review['evidence'],review_artifact_path=root+'review.json',resulting_disposition=review['outcome'],inventory_mutation_applied=bool(review.get('approved_updates')),unresolved_blocker=review.get('blocker'),owner_decision_required=review.get('owner_decision_required',False))
     ledger['next_unfinished']=next((r['id'] for r in ledger['records'] if r['state']!='complete'),None);save(P+'progress.json',ledger)
