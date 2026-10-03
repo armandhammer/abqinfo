@@ -183,7 +183,7 @@ CURRENT.md resume-pointer regression passed.
   ],
   "active_entries": 266,
   "superseded_entries": 18,
-  "audited_artifacts": 3116
+  "audited_artifacts": 3119
 }
 {
   "result": "passed",
@@ -194,18 +194,15 @@ CURRENT.md resume-pointer regression passed.
 }
 PASS: exact32 review boundary; 24/21/46 complete master components; independent instruments; unchanged original evidence; actual quality; empty/malformed fail closed; master/output-form checks.
 PASS: PR198 reviewed bytes, inventory, R2 and main snapshot preserved; exact completed plans stay historical and tampering fails.
-warning: in the working copy of 'project-state/discovery/consolidated-human-review-queue.json', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of 'project-state/governance-registry.json', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of 'project-state/governance/active-task.json', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of 'project-state/governance/audit-2026-09-27/artifact-audit.json', LF will be replaced by CRLF the next time Git touches it
 warning: in the working copy of 'scripts/project/Build-ConsolidatedHumanReviewQueue.py', LF will be replaced by CRLF the next time Git touches it
 {
   "task_id": "remaining-approved-review-2026-10-03",
   "phase": "final",
   "applicable_rules": 44,
-  "population_sha256": "b790519f37a60465224c73fee229d7909f429b38a09d87bf3abbb0c654344c6a",
+  "population_sha256": "bd04f642791bd8893ff946bfaeec4fd362eabeea289053732ed6eb3f86e5c817",
   "changed_paths": [
     "project-state/CURRENT.md",
+    "project-state/checkpoint.json",
     "project-state/discovery/consolidated-human-review-queue.json",
     "project-state/governance-registry.json",
     "project-state/governance/active-task.json",
@@ -252,6 +249,8 @@ warning: in the working copy of 'scripts/project/Build-ConsolidatedHumanReviewQu
     "project-state/governance/remaining-approved-review-2026-10-03/contract-v42.json",
     "project-state/governance/remaining-approved-review-2026-10-03/contract-v43.json",
     "project-state/governance/remaining-approved-review-2026-10-03/contract-v44.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v45.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v46.json",
     "project-state/governance/remaining-approved-review-2026-10-03/contract-v5.json",
     "project-state/governance/remaining-approved-review-2026-10-03/contract-v6.json",
     "project-state/governance/remaining-approved-review-2026-10-03/contract-v7.json",
@@ -259,6 +258,7 @@ warning: in the working copy of 'scripts/project/Build-ConsolidatedHumanReviewQu
     "project-state/governance/remaining-approved-review-2026-10-03/contract-v9.json",
     "project-state/governance/remaining-approved-review-2026-10-03/family-analysis.json",
     "project-state/governance/remaining-approved-review-2026-10-03/implementation.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/milestone-13.json",
     "project-state/governance/remaining-approved-review-2026-10-03/milestone-3.json",
     "project-state/governance/remaining-approved-review-2026-10-03/milestone-6.json",
     "project-state/governance/remaining-approved-review-2026-10-03/milestone-9.json",
@@ -267,6 +267,7 @@ warning: in the working copy of 'scripts/project/Build-ConsolidatedHumanReviewQu
     "project-state/governance/remaining-approved-review-2026-10-03/population-v3.json",
     "project-state/governance/remaining-approved-review-2026-10-03/population-v4.json",
     "project-state/governance/remaining-approved-review-2026-10-03/population-v5.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/population-v6.json",
     "project-state/governance/remaining-approved-review-2026-10-03/population.json",
     "project-state/governance/remaining-approved-review-2026-10-03/pr-body.md",
     "project-state/governance/remaining-approved-review-2026-10-03/prior-records.json",
@@ -418,8 +419,257 @@ PASS: mission-scope audit reconciles the 86-record starting population, preserve
 PASS: mission-scope-borderline queue is isolated from other human-review reasons and contains 0 unresolved record(s) within the 20-record cap.
 PASS: Add and Exclude persist final assessments and prior borderline history; research remains queued; reruns are byte-identical.
 PASS: Council checkpoint blocker update is idempotent.
-Exception: C:\Users\ben\Documents\ABQinfo\scripts\project\Test-ArchiveReconciliationCheckpointCounts.ps1:14
-Line |
-  14 |  … $counts[$status]) { throw "Checkpoint count differs for $status." } }
-     |                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Checkpoint count differs for pending review.
+PASS: checkpoint counts equal authoritative master inventory; total=7140, remaining=926, next=lin-2f6fbe4ffb0b6564.
+PASS: project-state regeneration preserves durable metadata, restores DPM state, enforces the 28-record MS4 package, and is idempotent on a second pass.
+{"Path":"C:\\Users\\ben\\AppData\\Local\\Temp\\abqinfo-pr-body-16d018dc467843308927152966603ab5\\valid.md","Result":"passed"}
+Pull-request description regression passed.
+{"applied": 3, "counts": {"pending review": 1, "duplicate": 1, "superseded": 1, "excluded": 1}, "next_pending_id": "canonical"}
+PASS: terminal duplicate and superseded decisions retain canonical provenance generically.
+PASS: all 18 saved NMDOT grant-administration decisions retain metadata, original containers, unresolved placement, and archive gates.
+PASS: NMDOT seven-record archive preparation preserves exact originals, source evidence, Roadway Studies placement, completed visual QA, and the external R2 gate without mutation.
+PASS: PGS has exactly 13 City originals, 109,212,492 source bytes, 652 previously rendered pages, and 13/13 exact public-byte-verified R2 objects with no content change.
+later-MS4 preparation: exact six IDs, 426,926,738 bytes, 5,917 rendered pages, collision-free, historical upload gate preserved
+later-MS4 R2 preflight: six exact staged originals, 426,926,738 bytes, historical no-mutation manifest preserved
+Planning preparation: 13 exact PDFs, 130,968,356 bytes, 1,078 pages; 12 unique keys; Barelas exact duplicate reconciled; historical preparation involved no content/R2 mutation
+PASS: 12 exact public-byte archives; 122,249,326 bytes / 928 pages; R2 1,249 / 9,340,531,168; only authorized inventory transitions; no content changes.
+Historical Planning preflight: exact Barelas duplicate reconciled; 39 approved / 1518 duplicate; 12 originals / 122,249,326 bytes / 928 pages; normal-limit WhatIf passed; no R2/content mutation
+later-MS4 archive: six exact public objects, 426,926,738 added bytes, R2 1,237 / 9,218,281,842, validated live
+PASS: Stormwater section has six exact archived/source pairs, ten annual reports in descending FY order, one permit context, and six validated live rows; no excluded or gated records.
+PASS: later-MS4 PR #174 production closeout has two HTTP 200 section checks, six validated originals, ten ordered reports, unchanged R2, and preserved exclusions.
+PASS: one PGS Citywide Growth Strategy section contains 13 ordered archive/City-source pairs, a complete Part 1 original, and a separate 12-file/11-chapter Part 2 series; all 13 records have the expected lifecycle status.
+PASS: PGS production closeout preserves 13 exact archived originals and 13 validated live inventory records.
+PASS: Municipal Development standard-form archive preparation retains exact source evidence, future-only placement, and external archive/publication gates.
+PASS: 18 settled Municipal Development records retain complete archive evidence; all public objects match saved bytes and ten agendas preserve their exact missing-minutes warning.
+PASS: MRA Appeal Form aliases remain bounded, excluded, provenance-preserving, and non-publication records.
+PASS: June 2025 fiber rulemaking family is bounded, provenance-preserving, and non-publication-safe.
+PASS: 2014 MS4 decision covers exactly one main body plus 27 attachments with saved exact-source evidence and no current archive/publication authorization.
+PASS: 2011 Capital Spending preparation preserves 67 originals in 21/46 compilations, validates PDF fidelity, and enforces the future two-entry page contract.
+PASS: 2009 decision preserves 24 components, four legal records, three UETF nonmembers, and the neutral Streets version treatment.
+PASS: 2007--2016 decision preserves 18 GO components, three individual records, and five impact-fee nonmembers.
+PASS: CCIP decision preserves six components, the Roadway member, later legal records, and the unresolved committee memorandum gate.
+PASS: Energy/Water map preserves 27 visible records across the six-cycle, 2009, 2007, legal, and independent-plan boundaries.
+PASS: six distinct Energy/Water election-cycle scopes remain ordered, verified, and proposed as one 25-page-source historical compilation.
+PASS: Capital Spending closeout covers five future compilation decisions, retained individual records, and the MS4 ordinary-queue skip.
+PASS: ordinary-queue-terminal-integration-batch-2026-09-19-councilor-district-3-6-web-pages.json retains 70 saved terminal inventory decisions.
+PASS: ordinary-queue-terminal-integration-batch-2026-09-19-municipaldevelopment-procurement.json retains 50 saved terminal inventory decisions.
+PASS: ordinary-queue-terminal-integration-batch-2026-09-19-parks-web-pages.json retains 38 saved terminal inventory decisions.
+PASS: ordinary-queue-terminal-integration-batch-2026-09-19.json retains 30 saved terminal inventory decisions.
+PASS: ordinary-queue-terminal-integration-batch-2026-09-20-council-amendment-sheets.json retains 25 saved terminal inventory decisions.
+PASS: ordinary-queue-terminal-integration-batch-2026-09-20-transit-openspace-nmdot-sustainability.json retains 44 saved terminal inventory decisions.
+{
+  "markdown_files": 40,
+  "allowed_nested_resource_pages": [
+    "transportation/bicycling/bike-plans.md",
+    "transportation/roadway-projects/studies.md",
+    "transportation/transportation-plans.md"
+  ],
+  "errors": []
+}
+PASS: six publication failure classes; useful short legal/map/table/analytical positives; explicit reversal evidence; actual-record integration and atomic no-write transition; immutable bounded debt and link-count growth guards.
+PASS: correction exact-delta negative fixtures; even repinned inventory values cannot omit the actual-record quality gate.
+{"generated_at":"2026-10-03T21:29:09.5424246Z","regression":"document-graph discovery, retained-source expansion, and outbound-host capture","passed":true,"checks":18,"errors":[]}
+{
+  "passed": true,
+  "tests": [
+    "deterministic-sharding-and-immutable-manifest",
+    "separate-detached-worktree-plan",
+    "incomplete-run-inspection",
+    "unique-create-once-worker-results",
+    "result-tamper-detection",
+    "stale-input-detection",
+    "shard-overlap-detection",
+    "single-writer-dry-run",
+    "repository-wide-writer-contention",
+    "accepted-apply-through-update-candidate"
+  ],
+  "test_count": 10
+}
+Preparing worktree (detached HEAD 248fe76)
+Updating files:  43% (1552/3569)
+Updating files:  44% (1571/3569)
+Updating files:  45% (1607/3569)
+Updating files:  46% (1642/3569)
+Updating files:  47% (1678/3569)
+Updating files:  48% (1714/3569)
+Updating files:  49% (1749/3569)
+Updating files:  50% (1785/3569)
+Updating files:  51% (1821/3569)
+Updating files:  52% (1856/3569)
+Updating files:  53% (1892/3569)
+Updating files:  54% (1928/3569)
+Updating files:  55% (1963/3569)
+Updating files:  56% (1999/3569)
+Updating files:  57% (2035/3569)
+Updating files:  58% (2071/3569)
+Updating files:  59% (2106/3569)
+Updating files:  60% (2142/3569)
+Updating files:  61% (2178/3569)
+Updating files:  62% (2213/3569)
+Updating files:  63% (2249/3569)
+Updating files:  64% (2285/3569)
+Updating files:  65% (2320/3569)
+Updating files:  66% (2356/3569)
+Updating files:  67% (2392/3569)
+Updating files:  68% (2427/3569)
+Updating files:  69% (2463/3569)
+Updating files:  70% (2499/3569)
+Updating files:  71% (2534/3569)
+Updating files:  72% (2570/3569)
+Updating files:  73% (2606/3569)
+Updating files:  74% (2642/3569)
+Updating files:  75% (2677/3569)
+Updating files:  75% (2685/3569)
+Updating files:  76% (2713/3569)
+Updating files:  77% (2749/3569)
+Updating files:  78% (2784/3569)
+Updating files:  79% (2820/3569)
+Updating files:  80% (2856/3569)
+Updating files:  81% (2891/3569)
+Updating files:  82% (2927/3569)
+Updating files:  83% (2963/3569)
+Updating files:  84% (2998/3569)
+Updating files:  85% (3034/3569)
+Updating files:  86% (3070/3569)
+Updating files:  87% (3106/3569)
+Updating files:  88% (3141/3569)
+Updating files:  89% (3177/3569)
+Updating files:  90% (3213/3569)
+Updating files:  91% (3248/3569)
+Updating files:  92% (3284/3569)
+Updating files:  93% (3320/3569)
+Updating files:  94% (3355/3569)
+Updating files:  95% (3391/3569)
+Updating files:  96% (3427/3569)
+Updating files:  97% (3462/3569)
+Updating files:  98% (3498/3569)
+Updating files:  99% (3534/3569)
+Updating files: 100% (3569/3569)
+Updating files: 100% (3569/3569), done.
+Preparing worktree (detached HEAD 248fe76)
+Updating files:  38% (1379/3569)
+Updating files:  39% (1392/3569)
+Updating files:  40% (1428/3569)
+Updating files:  41% (1464/3569)
+Updating files:  42% (1499/3569)
+Updating files:  43% (1535/3569)
+Updating files:  44% (1571/3569)
+Updating files:  45% (1607/3569)
+Updating files:  46% (1642/3569)
+Updating files:  47% (1678/3569)
+Updating files:  48% (1714/3569)
+Updating files:  49% (1749/3569)
+Updating files:  50% (1785/3569)
+Updating files:  51% (1821/3569)
+Updating files:  52% (1856/3569)
+Updating files:  53% (1892/3569)
+Updating files:  54% (1928/3569)
+Updating files:  55% (1963/3569)
+Updating files:  56% (1999/3569)
+Updating files:  57% (2035/3569)
+Updating files:  58% (2071/3569)
+Updating files:  59% (2106/3569)
+Updating files:  60% (2142/3569)
+Updating files:  61% (2178/3569)
+Updating files:  62% (2213/3569)
+Updating files:  63% (2249/3569)
+Updating files:  64% (2285/3569)
+Updating files:  65% (2320/3569)
+Updating files:  66% (2356/3569)
+Updating files:  67% (2392/3569)
+Updating files:  68% (2427/3569)
+Updating files:  69% (2463/3569)
+Updating files:  70% (2499/3569)
+Updating files:  71% (2534/3569)
+Updating files:  72% (2570/3569)
+Updating files:  72% (2586/3569)
+Updating files:  73% (2606/3569)
+Updating files:  74% (2642/3569)
+Updating files:  75% (2677/3569)
+Updating files:  76% (2713/3569)
+Updating files:  77% (2749/3569)
+Updating files:  78% (2784/3569)
+Updating files:  79% (2820/3569)
+Updating files:  80% (2856/3569)
+Updating files:  81% (2891/3569)
+Updating files:  82% (2927/3569)
+Updating files:  83% (2963/3569)
+Updating files:  84% (2998/3569)
+Updating files:  85% (3034/3569)
+Updating files:  86% (3070/3569)
+Updating files:  87% (3106/3569)
+Updating files:  88% (3141/3569)
+Updating files:  89% (3177/3569)
+Updating files:  90% (3213/3569)
+Updating files:  91% (3248/3569)
+Updating files:  92% (3284/3569)
+Updating files:  93% (3320/3569)
+Updating files:  94% (3355/3569)
+Updating files:  95% (3391/3569)
+Updating files:  96% (3427/3569)
+Updating files:  97% (3462/3569)
+Updating files:  98% (3498/3569)
+Updating files:  99% (3534/3569)
+Updating files: 100% (3569/3569)
+Updating files: 100% (3569/3569), done.
+{
+  "passed": true,
+  "test_count": 18,
+  "tests": [
+    "strictmode-http-error-without-response",
+    "immutable-deterministic-campaign",
+    "cross-campaign-overlap-detection",
+    "detached-lane-worktree-plan",
+    "detached-lane-worktree-provision-json",
+    "active-pointer-and-derived-status",
+    "interrupt-before-and-during-verification",
+    "atomic-publication-ignores-orphaned-temporary-file",
+    "candidate-and-batch-resumption",
+    "lease-contention-expiry-stale-and-provider-takeover",
+    "tamper-and-within-campaign-overlap-detection",
+    "master-controlled-ambiguity-decision",
+    "crash-safe-idempotent-single-writer-integration",
+    "receipt-replay-after-inventory-reversion",
+    "coordinator-lease-blocks-other-shared-state-writers",
+    "coordinator-lease-blocks-successor-creation",
+    "autonomous-completion-escalation-and-successor-rollover",
+    "completed-campaign-without-successor-returns-clean-terminal-result"
+  ]
+}
+{
+  "EligibleSources": 645,
+  "QueueRecords": 645,
+  "Missing": 0,
+  "Errors": []
+}
+Start building sites …
+hugo v0.164.0-ce2470e7012b5ab5fc4e10ebe4027e9f8d9e00dc+extended windows/amd64 BuildDate=2026-07-06T16:39:30Z VendorInfo=gohugoio
+
+WARN  deprecated: .Site.LanguageCode was deprecated in Hugo v0.158.0 and will be removed in a future release. Use .Site.Language.Locale instead.
+WARN  deprecated: .Language.LanguageDirection was deprecated in Hugo v0.158.0 and will be removed in a future release. Use .Language.Direction instead.
+
+                  │ EN
+──────────────────┼────
+ Pages            │ 57
+ Paginator pages  │  0
+ Non-page files   │  0
+ Static files     │ 70
+ Processed images │  0
+ Aliases          │  0
+ Cleaned          │  0
+
+Total in 607 ms
+PASS: six exact inventory and official-link additions; 24 approved remain; no R2 or held-record change
+PASS: rendered Area & Sector Plans page has one PGS H2, one ordered Part 2 list, and 13 exact archive/City source link pairs.
+PASS: rendered Stormwater section has its anchor, 13 list entries, ten descending annual reports, and six exact archive/source pairs.
+PASS: exact 12 publication transitions, six pages, one incomplete chapter set, two Barelas cross-links, unchanged duplicate/canonical rows and R2; rendered checks passed.
+PASS: exactly 25 component failures plus five required annual masters resolved; 1608 unrelated debt rows unchanged; 42 September 13 findings unresolved; actual-record gates and negative delta fixtures pass; originals/R2 unchanged; rendered checks passed.
+PASS: sealed youth-justice publication/source history; current rendered page follows owner exclusion when the publication stage is sealed.
+PASS: exact five reviewed records; four qualified HTML entries; one redundant summary excluded; source/R2/owner evidence preserved.
+PASS: only two County scope exclusions/removals; original review, City additions, Sunport, PR207 and provenance preserved.
+PASS: actual-record quality gate on eleven Planning originals; four Old Town exclusions; seven PR pages; immutable provenance/R2; approved hashes, original qualifications, descriptions, archive/source links and Barelas anchors; rendered checks passed.
+{
+  "Hugo": "passed",
+  "ExternalLinksChecked": false,
+  "BrokenLinks": 0,
+  "Broken": []
+}

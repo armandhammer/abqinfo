@@ -1,6 +1,6 @@
 # Remaining approved review campaign
 
-13 of13 reviewed and individually pushed on `codex/remaining-approved-review-2026-10-03`. Draft stacked PR: https://github.com/armandhammer/abqinfo/pull/209 (base PR208 branch).
+13 of 13 reviewed and individually pushed on `codex/remaining-approved-review-2026-10-03`. Draft stacked PR: https://github.com/armandhammer/abqinfo/pull/209 (base PR #208 branch).
 
 - **2nd street** (`src-ed75a3cb5ecc3b0b`): blocked_source_identity. [Review](records/src-ed75a3cb5ecc3b0b/review.json).
 - **Albuquerque Sustainable Airport Master Plan** (`src-1f9cf39555e7be6f`): retained_approved_archive_blocked. [Review](records/src-1f9cf39555e7be6f/review.json).
@@ -18,8 +18,8 @@
 
 11 exclusions; one retained airport-plan candidate with an implementation plan and archive/delivery hold; one pending source-identity record. No survivor is ready for immediate new publication. No genuine owner decision has yet been isolated.
 
-The airport original is280,024,902bytes, above the150,000,000-byte ceiling. Official reduced/summary links were found; usable smaller exact bytes/equivalence remain unverified. No derivative, upload or direct-only publication option was selected. SecondStreet remains a provenance hold: preserved County context is not the selected FHWA page; current FHWA phase content cannot be silently substituted.
+The airport original is 280,024,902 bytes, above the 150,000,000-byte ceiling. Official reduced/summary links were found; usable smaller exact bytes/equivalence remain unverified. No derivative, upload or direct-only publication option was selected. Second Street remains a provenance hold: preserved County context is not the selected FHWA page; current FHWA phase content cannot be silently substituted.
 
-All PR208 metadata, reviewed visitor-visible trees, main and planning snapshot were verified unchanged. R2mutations/storage added=0. Historical decisions remain intact with explicit narrow supersessions. Milestones3/6/9 passed; full final validation is recorded in validation.log and final receipt.
+All PR #208 metadata, reviewed visitor-visible trees, main and planning snapshot were verified unchanged. R2 mutations and storage added: zero. Historical decisions remain intact with explicit narrow supersessions. Milestones 3/6/9/13 and the complete normal suite passed, including Hugo/rendered checks, under final contract v46. Results are recorded in validation.log and the final receipt. The optional broad external-link scan was omitted; record-specific source receipts preserve actual retrieval results and limitations. Small validation-runner and generated-state repairs are recorded in accounting.json; no systemic blocker remains.
 
 Next: owner review of PR208, then separately reconcile this background stacked branch. Follow-up source recovery for the two holds requires a fresh governed task; no new population was started.
