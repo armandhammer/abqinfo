@@ -4,6 +4,6 @@ The exact five September 30 strong candidates have completed independent scope, 
 
 The queue has 13 approved and 372 pending records; the other triage records retain their dispositions. Current County retrieval returned 403; exact September 26 HTTP 200 captures support historical accounts. City sources passed fresh HTTP 200 retrieval. R2 uploads and added storage: zero. Four retained-source roots await descendant audit.
 
-[PR #208](https://github.com/armandhammer/abqinfo/pull/208) is open for owner review. Validation, Hugo/rendered, visual and preview checks passed. Main remains unchanged; planning-snapshot sync is pending. PR207 exclusions and City Facilities remain unchanged.
+[PR #208](https://github.com/armandhammer/abqinfo/pull/208) is open for owner review. Validation, Hugo/rendered, visual and preview checks passed. Main remains unchanged; planning-snapshot is synchronized. PR207 exclusions and City Facilities remain unchanged.
 
 Resume pointers: [active task](governance/active-task.json) · [owner correction](governance/pr207-owner-correction-2026-09-30/receipt.json) · [PR #207 closeout](governance/pr207-postmerge-closeout-2026-09-30/receipt.json) · [final ref verification](governance/pr207-final-ref-verification-2026-09-30/final-verification.json) · [nonbinding triage](governance/approved-queue-lightweight-triage-2026-09-30/triage.json) · [current queue](ordinary-queue-current.json) · [governance workflow](governance-workflow.md) · [governance registry](governance-registry.json).
