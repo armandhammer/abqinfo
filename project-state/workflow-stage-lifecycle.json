@@ -368,6 +368,30 @@
       "exact_delta_guard": {
         "module": "Test-Pr207OwnerCorrection",
         "function": "guard_current_delta"
+      },
+      "end_commit": "9194c21f89d6ef5b711b17d009ed778f75601ce2"
+    },
+    {
+      "id": "strong-five-review-publication",
+      "baseline_commit": "9194c21f89d6ef5b711b17d009ed778f75601ce2",
+      "regression_scripts": [
+        "scripts/project/Test-StrongFiveReview.py"
+      ],
+      "exact_delta_guard": {
+        "module": "Test-StrongFiveReview",
+        "function": "guard_current_delta"
+      },
+      "end_commit": "f6106c3e74b3275f10e6337d9dca75e2adbddc6d"
+    },
+    {
+      "id": "pr208-county-scope-correction",
+      "baseline_commit": "f6106c3e74b3275f10e6337d9dca75e2adbddc6d",
+      "regression_scripts": [
+        "scripts/project/Test-Pr208CountyScopeCorrection.py"
+      ],
+      "exact_delta_guard": {
+        "module": "Test-Pr208CountyScopeCorrection",
+        "function": "guard_current_delta"
       }
     }
   ],

@@ -8,6 +8,12 @@ The bicycle section distinguishes system plans and mapped facilities from indivi
 
 Start with [Projects]({{< relref "projects/_index.md" >}}) for individual investments, [Bike Plans]({{< relref "bike-plans.md" >}}) for the network framework, [Bike Maps]({{< relref "bike-maps.md" >}}) for live geographic tools, and [Safety & Crash Data]({{< relref "../safety-crash-data.md" >}}) for City and regional safety sources.
 
+## Facility Types and Crossings
+
+- [Bike Facilities in Albuquerque — Live City Guide](https://www.cabq.gov/municipaldevelopment/our-department/engineering/bicycle-pedestrian-amenities/bike-facilities-in-albuquerque)
+
+  Explains the differences between Albuquerque bike routes, boulevards, standard, buffered and protected lanes, multi-use trails and sidepaths. The City guide also describes bicycle detection, bike boxes and crossing beacons, with local examples that help readers interpret the network maps and project plans.
+
 ## Trail Advisory and Accessibility
 
 - [Greater Albuquerque Recreational Trails Committee](https://www.cabq.gov/parksandrecreation/our-department/boards-commissions/greater-albuquerque-recreational-trails-committee)

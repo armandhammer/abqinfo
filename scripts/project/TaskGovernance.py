@@ -369,6 +369,16 @@ def actual_presentations(contract,reader,changed_pages):
                     'Independent instrument evidence removed contrary to active architecture: '+row['governance_id'])
 
 
+def task_supersession_proposals(task, data):
+    path = task.get('supersession_proposals_path')
+    if not path:
+        return task.get('supersession_proposals', {})
+    require(any(a['path'] == path and a['sha256'] == file_hash(path)
+                for r in data['entries'] if r['state'] == 'active'
+                for a in r['controlling_artifacts']), 'Supersession proposal receipt is unregistered')
+    return load(path)['proposals']
+
+
 def active_check(phase='final', operation=None, candidate_ids=(), pages=(), r2_key=None, source_sha256=None):
     require((ROOT / ACTIVE_TASK).exists(), 'No active task governance contract')
     task = load(ACTIVE_TASK)
@@ -420,7 +430,8 @@ def active_check(phase='final', operation=None, candidate_ids=(), pages=(), r2_k
     baseline_registry = subprocess.run(['git', 'show', 'HEAD:' + REGISTRY], cwd=ROOT,
                                        capture_output=True)
     if baseline_registry.returncode == 0:
-        check_registry_transition(json.loads(baseline_registry.stdout), data, task.get('supersession_proposals', {}))
+        proposals = task_supersession_proposals(task, data)
+        check_registry_transition(json.loads(baseline_registry.stdout), data, proposals)
     else:
         require(pop['task_id']=='governance-bootstrap-2026-09-27' and
                 pop['baseline_commit']=='940e3032d96f868eed8cff7c3deeaf1c556f50a2',
