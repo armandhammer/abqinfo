@@ -392,6 +392,18 @@
       "exact_delta_guard": {
         "module": "Test-Pr208CountyScopeCorrection",
         "function": "guard_current_delta"
+      },
+      "end_commit": "78327bed8cdc2cc25e540d1737cde22096ec8e83"
+    },
+    {
+      "id": "remaining-approved-review-2026-10-03",
+      "baseline_commit": "78327bed8cdc2cc25e540d1737cde22096ec8e83",
+      "regression_scripts": [
+        "scripts/project/Review-RemainingApproved.py"
+      ],
+      "exact_delta_guard": {
+        "module": "Review-RemainingApproved",
+        "function": "guard_current_delta"
       }
     }
   ],
