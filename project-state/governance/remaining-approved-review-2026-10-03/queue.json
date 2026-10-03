@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "artifact_type": "ordinary_queue_post_strong_five_review",
-  "recorded_at": "2026-10-03T18:25:08.508717+00:00",
+  "artifact_type": "remaining_approved_review_queue",
+  "recorded_at": "2026-10-03T21:12:58.517862+00:00",
   "campaign_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/campaign.json",
   "selection_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/selection.json",
-  "pending_review_count": 372,
+  "pending_review_count": 373,
   "pending_ids": [
     "lin-2f6fbe4ffb0b6564",
     "lin-7bdbcdc09efe2035",
@@ -347,6 +347,7 @@
     "src-eaaf848105f8ebe6",
     "src-eb95d9154e109a52",
     "src-ec9f831defe82924",
+    "src-ed75a3cb5ecc3b0b",
     "src-ed916e54f80ece6f",
     "src-ef0083880aa30ca5",
     "src-f1c90b2d48b85069",
@@ -748,7 +749,7 @@
     "src-f7c7bd5b273def22": "Current Legistar action histories and complete final-file attachments establish bill-level enactment, not that the held blank-enactment, floor-amendment or exhibit-incomplete PDF is the complete adopted delivery. Full Word/PDF comparisons and distinct page counts are saved. Resolve final action version, amendments and all referenced exhibits; do not infer missing legal text from adoption metadata. Erroneous /texts/{version} API responses have mismatched MatterTextMatterId and are rejected as evidence.",
     "src-fcbe6a7ebcf916a1": "Current Legistar action histories and complete final-file attachments establish bill-level enactment, not that the held blank-enactment, floor-amendment or exhibit-incomplete PDF is the complete adopted delivery. Full Word/PDF comparisons and distinct page counts are saved. Resolve final action version, amendments and all referenced exhibits; do not infer missing legal text from adoption metadata. Erroneous /texts/{version} API responses have mismatched MatterTextMatterId and are rejected as evidence."
   },
-  "ungated_pending_count": 9,
+  "ungated_pending_count": 10,
   "ungated_pending_ids": [
     "src-27314f06651cc1c9",
     "src-29bec2b60308d513",
@@ -758,6 +759,7 @@
     "src-7867bdf940d22b3f",
     "src-a9ddff947a4282c9",
     "src-aece84c62701c551",
+    "src-ed75a3cb5ecc3b0b",
     "src-fe8c43a2ca9b7417"
   ],
   "genuinely_actionable_ungated_pending_count": 0,
@@ -825,6 +827,13 @@
       "category": "live_application_render_or_relationship_blocker",
       "state": "unresolved_ungated_not_currently_actionable",
       "browser_inventory": "apps=[] browsers=[]"
+    },
+    {
+      "id": "src-ed75a3cb5ecc3b0b",
+      "reason": "Recover exact selected FHWA content or an official redirect/archived identity witness; determine distinct substantive value relative to the already-published County corridor. Routine provenance work, not an owner choice.",
+      "category": "source_identity_verification_required",
+      "state": "unresolved_ungated_not_currently_actionable",
+      "evidence": "project-state/governance/remaining-approved-review-2026-10-03/records/src-ed75a3cb5ecc3b0b/review.json"
     }
   ],
   "actionability_basis": "All 55 authorized follow-ups received current evidence review: 16 deterministic dispositions, 39 specific unresolved prerequisites. No owner choices or uncertain legal/minutes outcomes were inferred. Existing unrelated gates/live-service prerequisites remain unchanged.",
@@ -1014,6 +1023,8 @@
   "campaign_review": {
     "task": "remaining-approved-review-2026-10-03",
     "progress": "project-state/governance/remaining-approved-review-2026-10-03/progress.json",
-    "population": "project-state/governance/remaining-approved-review-2026-10-03/population-v3.json"
+    "population": "project-state/governance/remaining-approved-review-2026-10-03/population-v5.json",
+    "completed": 13,
+    "accounting": "project-state/governance/remaining-approved-review-2026-10-03/accounting.json"
   }
 }
