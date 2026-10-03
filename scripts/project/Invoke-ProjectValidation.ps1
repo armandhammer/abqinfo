@@ -6,6 +6,8 @@ param(
 )
 
 Set-StrictMode -Version Latest
+& python "$PSScriptRoot/Test-StrongFiveReview.py"
+if ($LASTEXITCODE) { throw 'Five-record publication scope/quality/source validation failed.' }
 & python "$PSScriptRoot/Test-Pr207OwnerCorrection.py"
 & python "$PSScriptRoot/Test-OrdinaryYouthJusticePublication.py"
 if ($LASTEXITCODE) { throw 'Youth justice family publication exact-delta check failed.' }
@@ -260,6 +262,8 @@ if ($LASTEXITCODE) { throw "First quality remediation rendered validation failed
 $broken = @()
 & python "$PSScriptRoot/Test-OrdinaryYouthJusticePublication.py" --rendered-root tmp/site-build
 if ($LASTEXITCODE) { throw 'Youth justice family rendered publication check failed.' }
+& python "$PSScriptRoot/Test-StrongFiveReview.py" --rendered-root tmp/site-build
+if ($LASTEXITCODE) { throw 'Five-record rendered-page validation failed.' }
 & python "$PSScriptRoot/Test-QualityCorrectionHugoImplementation.py" --rendered-root tmp/site-build
 if ($LASTEXITCODE) { throw 'Corrected publication rendered/link/anchor validation failed.' }
 if ($CheckExternalLinks) {

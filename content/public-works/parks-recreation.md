@@ -82,6 +82,14 @@ Parks and recreation facilities and programs.
 
   [Official City BioPark page](https://www.cabq.gov/artsculture/biopark/about-the-biopark) · [Official City PDF](https://documents.cabq.gov/planning/UDD/BioParkMasterPlan.pdf)
 
+## Historical County Parks Investment
+
+- [Paradise Hills NCA Parks & Recreation Projects Update — Official County Project Page](https://www.bernco.gov/public-works/blog/2021/04/16/paradise-hills-nca-parks-recreation-projects-update)
+
+  The July 27, 2016 update connects Paradise Hills Community Center, Park Lane, the park and pool as one phased campus program. It traces the proposals to 2013 master planning and the County’s October 2015 Parks, Recreation and Open Space Facilities Plan. Senior Annex trail, parking, landscape and drainage work was completed in summer 2015.
+
+  Later phases proposed safer crossings between the center and park, accessible viewing areas, recreation and landscape changes, and center and aquatics additions. The account identifies approximately $800,000 in first-phase state funding, a $1.1 million park/street redesign budget and a projected $3 million center/aquatics phase seeking further funding. Those estimates and 2017–2018 schedules describe the proposals at the time; they do not confirm that later work was funded or completed. The separate [Paradise Hills Trail concept](/transportation/bicycling/projects/#paradise-hills-trail) remains available on Bicycle Projects.
+
 ## Historical Capital Programming
 
 - [2011 Parks and Recreation General Obligation Bond Project Scopes (Archived PDF)](https://files.abqinfo.com/public-works/parks-recreation/cabq-2011-parks-recreation-go-bond-project-scopes-published.pdf)

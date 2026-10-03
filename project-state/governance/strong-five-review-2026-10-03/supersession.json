@@ -1,0 +1,40 @@
+{
+  "proposals": {
+    "decision-decisions-b8452592": {
+      "authorized": true,
+      "existing_governance_id": "decision-decisions-b8452592",
+      "current_decision": "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact. Saved recommendations and completed-action receipts do not authorize new disposition or external action.",
+      "controlling_evidence": [
+        {
+          "path": "project-state/discovery/human-review-reassessment-2026-09-26/decisions.json",
+          "sha256": "3945092d2134172bbc24bb09907285f1f6f55b68966ac16c3aaa1b59dc864c87",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "new_evidence": "project-state/governance/strong-five-review-2026-10-03/review.json",
+      "proposed_replacement": "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact. Saved recommendations and completed-action receipts do not authorize new disposition or external action. Explicit exception: prior approval/triage for exactly the five IDs in the owner instruction is nonbinding for this new review; their outcomes are replaced by decision-strong-five-record-review-2026-10-03. Preserve every other record decision and the original evidence.",
+      "consequences": "Replace only the exact five approval outcomes; preserve all other rows and all historical controlling artifacts.",
+      "authorization_artifact": "project-state/governance/strong-five-review-2026-10-03/authority.json"
+    },
+    "decision-next-ordinary-queue-b8bb5c70": {
+      "authorized": true,
+      "existing_governance_id": "decision-next-ordinary-queue-b8bb5c70",
+      "current_decision": "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact. Saved recommendations and completed-action receipts do not authorize new disposition or external action.",
+      "controlling_evidence": [
+        {
+          "path": "project-state/discovery/owner-decisions-2026-09-26/next-ordinary-queue.json",
+          "sha256": "c678ba658a03648d733b9d65ece06c9d1467e3eec1414dbe5b40bc0689bf928d",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "new_evidence": "project-state/governance/strong-five-review-2026-10-03/review.json",
+      "proposed_replacement": "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact. Saved recommendations and completed-action receipts do not authorize new disposition or external action. Explicit exception: prior approval/triage for exactly the five IDs in the owner instruction is nonbinding for this new review; their outcomes are replaced by decision-strong-five-record-review-2026-10-03. Preserve every other record decision and the original evidence.",
+      "consequences": "Replace only the exact five approval outcomes; preserve all other rows and all historical controlling artifacts.",
+      "authorization_artifact": "project-state/governance/strong-five-review-2026-10-03/authority.json"
+    }
+  }
+}

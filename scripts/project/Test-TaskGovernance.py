@@ -110,6 +110,13 @@ new=copy.deepcopy(data);new['entries']=[r for r in new['entries'] if r['governan
 rejects('silent_removal',lambda:G.check_registry_transition(data,new,{}))
 new=copy.deepcopy(data);next(r for r in new['entries'] if r['governance_id']=='capital-2009-historical-master')['binding_requirement']='Use a webpage.'
 rejects('silent_supersession',lambda:G.check_registry_transition(data,new,{}))
+fixture={'entries':[{'state':'active','controlling_artifacts':[{'path':'proposal.json','sha256':'known'}]}]}
+with patch.object(G,'file_hash',return_value='known'), patch.object(G,'load',return_value={'proposals':{'test':'receipt'}}):
+    assert G.task_supersession_proposals({'supersession_proposals_path':'proposal.json'},fixture)=={'test':'receipt'}
+    rejects('unregistered_supersession_receipt',lambda:G.task_supersession_proposals({'supersession_proposals_path':'other.json'},fixture))
+with patch.object(G,'file_hash',return_value='changed'):
+    rejects('changed_supersession_receipt',lambda:G.task_supersession_proposals({'supersession_proposals_path':'proposal.json'},fixture))
+passed.append('registered_exact_supersession_receipt_supported')
 new=copy.deepcopy(data)
 next(r for r in new['entries'] if r['governance_id']=='capital-2009-historical-master')['controlling_artifacts'][0]['sha256']='f'*64
 rejects('silent_controlling_decision_hash_refresh',lambda:G.check_registry_transition(data,new,{}))
