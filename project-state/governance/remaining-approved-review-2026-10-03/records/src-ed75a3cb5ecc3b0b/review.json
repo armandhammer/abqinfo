@@ -1,0 +1,39 @@
+{
+  "id": "src-ed75a3cb5ecc3b0b",
+  "title": "2nd street",
+  "outcome": "blocked_source_identity",
+  "binding_requirement": "Keep the selected FHWA URL as recorded; withdraw its unsupported approved status to pending review until exact selected-resource content or an evidenced redirect/identity relation is recovered. Preserve the County parent and all existing Second Street publications unchanged. Do not substitute the currently indexed NM FLAP Trail 52000(2) page for this historical endpoint without exact identity evidence.",
+  "rationale": "The record is a genuine FHWA outbound link discovered on the County corridor page, not the County page itself. The former approval applied the County parent's text to this selected federal endpoint. The parent is already published with original maps and open-house boards. Current official FHWA navigation identifies a later project number and anticipated 2028 work; it does not establish that the old URL redirects to that resource or that its historical content is independently useful. A source-identity constraint therefore remains after bounded recovery. Return this row to pending review rather than inventing source identity, scope or a separate quality approval.",
+  "provenance": {
+    "selected_source": "https://flh.fhwa.dot.gov/projects/nm/2nd-street",
+    "publisher": "Federal Highway Administration",
+    "historical_parent": "https://www.bernco.gov/public-works/blog/2021/04/15/second-street-sw-corridor-improvement-project/",
+    "discovery_evidence": "research/discovery/pr63-bernco-finished-project-descendants.json",
+    "identity_finding": "Exact parent HTML has two links to the selected FHWA endpoint and federal construction contacts. September26 FHWA retrieval was403; its successful County fallback was a different source. No exact FHWA bytes were preserved by that review.",
+    "fresh_retrieval": "Old FHWA URL403; guessed migrated path403; actually indexed current project path also403 through local HTTP. The web reader recovered the official New Mexico index and its linked current project page; that is current textual context, not an exact historical-byte witness or redirect receipt."
+  },
+  "scope_review": "The County parent concerns the Valle de Oro-to-Desert Road corridor, trail to Mountain View Elementary and bridge over the South Diversion Channel; these infrastructure links are already documented in the retained corridor family. County ownership and Albuquerque postal labels alone establish no eligibility. The selected federal resource cannot receive a new final scope decision until its actual identity/content is recovered; the former positive assessment is preserved as historical input and ceases to authorize progression.",
+  "quality_review": "Measured268-word historical County article contains useful corridor/funding and phase information, including85.44percent FLAP and14.56percent County funding. This is companion evidence for the existing parent, not measured selected-FHWA content. No independent selected-resource quality pass or limited-content exception is granted.",
+  "currentness": "County historical page lists December30 2018 completion and100percent; this is a preserved source statement. The current official FHWA index links NM FLAP Trail52000(2), In Development, anticipated advertisement March2028 and construction June2028. These dates concern the indexed project and are not actual completion dates or proof of continuation of the old endpoint. The2021 County URL is a migration path, not the project date.",
+  "family": {
+    "canonical_retained_parent": "src-492e95f3e1c0db70",
+    "retained_map": "src-408aea6002f1f2f7",
+    "retained_open_house": "src-4e967018b1d83d1b",
+    "related_later_county_phase": "src-2ae6683509af7224",
+    "existing_page": "content/transportation/roadway-projects/_index.md",
+    "analysis": "Original discovery proves outbound companion relationship. Existing County phase2 is distinct; the current FHWA project may relate to it but exact correspondence is not established. No out-of-population row is changed. No future separate entry or cross-link is planned while identity is unresolved."
+  },
+  "current_official_context": [
+    {"url": "https://highways.dot.gov/federal-lands/projects/nm", "observed_at": "2026-10-03", "method": "web reader official page", "finding": "Index labels Valle de Oro National Wildlife Refuge2nd Street SW Corridor as NM FLAP Trail52000(2), In Development; directly links the project page below."},
+    {"url": "https://highways.dot.gov/federal-lands/projects/nm/flap-trail52000-2", "observed_at": "2026-10-03", "method": "web reader followed official index link", "finding": "CFLHD cooperation with County and FWS; proposed repaving, curb/gutter/sidewalk and stormwater/drainage; anticipated2028 milestones. Identity with the original selected endpoint is not demonstrated."}
+  ],
+  "blocker": "Recover exact selected FHWA content or an official redirect/archived identity witness; determine distinct substantive value relative to the already-published County corridor. Routine provenance work, not an owner choice.",
+  "owner_decision_required": false,
+  "evidence": [
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-ed75a3cb5ecc3b0b/retrievals.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-ed75a3cb5ecc3b0b/article.txt",
+    "research/discovery/pr63-bernco-finished-project-descendants.json",
+    "content/transportation/roadway-projects/_index.md"
+  ],
+  "approved_updates": [{"id":"src-ed75a3cb5ecc3b0b","changes":{"status":"pending review","review_reason":"source_identity_verification_required","validation_status":"Background review complete; selected FHWA provenance/identity unresolved. Exact County parent already published; no substitute URL inferred.","publication_quality_decision":{"decision":"blocked","finding_id":"remaining-approved-review-2026-10-03:src-ed75a3cb5ecc3b0b","rationale":"Selected FHWA content is unverified; County fallback is a different already-published resource. Exact identity and distinct value remain a factual prerequisite.","evidence":["project-state/governance/remaining-approved-review-2026-10-03/records/src-ed75a3cb5ecc3b0b/review.json"]}}}]
+}

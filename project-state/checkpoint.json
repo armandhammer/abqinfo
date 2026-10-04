@@ -1,10 +1,10 @@
 {
-  "recorded_at": "2026-10-03T19:13:01.8352771Z",
-  "completed_item_range": "PR208 manually merged; two City services live; four production pages verified; exclusions preserved",
+  "recorded_at": "2026-10-03T21:25:41.5924866Z",
+  "completed_item_range": "PR208 production closed out; thirteen-record campaign complete and reconciled",
   "total_candidates": 7140,
   "counts_by_status": {
-    "pending review": 372,
-    "approved for addition": 13,
+    "pending review": 373,
+    "approved for addition": 1,
     "downloading": 0,
     "downloaded": 0,
     "parsed": 0,
@@ -12,16 +12,16 @@
     "placement assigned": 360,
     "implemented": 203,
     "validated": 1486,
-    "excluded": 2845,
+    "excluded": 2856,
     "duplicate": 1602,
     "superseded": 259,
     "blocked": 0,
     "requires human review": 0
   },
-  "remaining_nonterminal": 937,
+  "remaining_nonterminal": 926,
   "next_pending_id": "lin-2f6fbe4ffb0b6564",
   "blockers": [],
-  "resume_command": "Reconcile completed background PR209 after PR208 production closeout",
+  "resume_command": "Finish validated background PR209 integration; future source holds need separate governed tasks",
   "verification_campaign_totals": {
     "verified": 2194,
     "passed": 2070,
@@ -34718,5 +34718,13 @@
     "receipt": "project-state/governance/pr208-postmerge-closeout-2026-10-03/receipt.json",
     "next_item": "PR209 background reconciliation",
     "r2_changes": 0
+  },
+  "pr209_reconciliation": {
+    "state": "reconciled_validation_pending",
+    "receipt": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+    "completed": 13,
+    "excluded": 11,
+    "ordinary_research_holds": 2,
+    "no_genuine_owner_decision": true
   }
 }

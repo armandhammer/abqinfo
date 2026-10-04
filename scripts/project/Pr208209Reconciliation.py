@@ -88,9 +88,12 @@ def refresh(prefix):
         plan['completion_evidence'] = {gid: [dict(path=prefix + 'receipt.json', sha256=G.file_hash(prefix + 'receipt.json'))]
                                        for gid in c['governance_ids']}
     save(prefix + 'implementation.json', plan)
-    save(G.ACTIVE_TASK, dict(population=population_path, contract=contract_path,
+    task = dict(population=population_path, contract=contract_path,
                             contract_sha256=G.file_hash(contract_path), implementation=prefix + 'implementation.json',
-                            state='in_progress'))
+                            state='in_progress')
+    if any(a['path'] == prefix+'supersession.json' for r in G.load(G.REGISTRY)['entries'] if r['state']=='active' for a in r['controlling_artifacts']):
+        task['supersession_proposals_path'] = prefix+'supersession.json'
+    save(G.ACTIVE_TASK, task)
     print('Fresh contract:', contract_path, len(c['governance_ids']), 'rules; no conflicts/gates')
 
 
@@ -215,6 +218,8 @@ def current_text(phase):
              'production verified. Bike Facilities and Online Planning Services are live. Animal Care, Paradise Hills parks and Sunport companion exclusions remain binding. ')
     if phase == 'A':
         intro += 'PR #209 is the next background reconciliation item. Planning-snapshot remains at reviewed PR208 head. Queue: 13 approved, 372 pending.'
+    elif phase == 'B_pending':
+        intro += 'PR #209’s completed background campaign is reconciled for integration: 11 exclusions and two ordinary research holds. Queue: 1 approved, 373 pending. No new publication or review population. Planning-snapshot awaits final integration.'
     else:
         intro += 'PR #209’s completed 13-record background campaign is integrated: 11 excluded, airport plan retained with archive/delivery hold, 2nd Street pending exact FHWA identity. Queue: 1 approved, 373 pending. No active unfinished publication task or new review population. Both holds need separate future governed research; no current owner choice.'
     return ('# Current project state\n\n' + intro + '\n\nR2 unchanged. ' +
@@ -257,6 +262,11 @@ def finish_a():
 
 def validated(prefix):
     receipt = G.load(prefix + 'receipt.json')
+    if prefix == B:
+        receipt['state'] = 'reconciled_full_validation_passed'
+        receipt['normal_validation_contract'] = G.load(G.ACTIVE_TASK)['contract']
+        receipt['normal_validation_exit_code'] = 0
+        receipt['hugo_and_rendered_checks'] = 'passed'
     receipt['normal_validation'] = 'passed'
     receipt['validation_log_sha256'] = G.file_hash(prefix + 'validation.log')
     save(prefix + 'receipt.json', receipt)
@@ -299,11 +309,256 @@ def guard_a():
 def guard():
     if (G.ROOT / (A + 'receipt.json')).exists():
         guard_a()
+    if (G.ROOT / (B + 'population.json')).exists():
+        guard_b()
+
+
+def git_json(commit, path):
+    return json.loads(git_bytes('show', commit + ':' + path))
+
+
+def setup_b():
+    G.active_check('mutation', 'governance_implementation')
+    pop = G.load(B + 'population.json')
+    assert G.git('rev-parse', 'origin/main') == pop['baseline_commit']
+    authority = dict(authority='Explicit current owner two-phase instruction', phase='B',
+        campaign_head=CAMPAIGN_HEAD, candidate_ids=pop['candidate_ids'], phase_a_main=pop['baseline_commit'],
+        instruction='After integrated Phase A, carry forward the completed exact thirteen-record campaign without redoing reviews '
+        'or rewriting its checkpoint history. Reconcile onto production main, preserving PR208 closeout, original reviews and '
+        'PR207 exclusions. Retarget and integrate background PR209 only after zero visible/R2 delta, full normal validation, '
+        'complete fresh governance and no genuine owner decision. Current authority explicitly replaces the former campaign '
+        'no-merge/no-planning-snapshot-movement boundary only for this reconciliation and final synchronization. '
+        'No new substantive population, source research, publication, archive or storage operation is authorized. '
+        'Airport smaller-delivery/equivalence and exact Second Street/FHWA identity remain separate future governed tasks.')
+    G.write_once(B + 'authority.json', authority)
+    bind(B + 'authority.json', 'owner-pr209-reconciliation-2026-10-03', authority['instruction'],
+         {'task_ids': [pop['task_id']]})
+    G.write_once(B + 'starting-remote-state.json', dict(checked_at_utc=now(), phase_a_integrated_main=pop['baseline_commit'],
+        refs={r:G.git('rev-parse',r) for r in ['origin/main','origin/codex/remaining-approved-review-2026-10-03',
+             'origin/codex/strong-five-review-2026-10-03','origin/chatgpt/planning-snapshot']},
+        pr209=gh('pr','view','209','--json','number,state,isDraft,headRefOid,headRefName,baseRefName,url'),
+        history_method='Start a separate reconciliation branch at Phase A main, merge the untouched campaign head as a second parent, then fast-forward the original campaign branch. Every original record checkpoint remains an ancestor.'))
+    G.write_once(B + 'baseline-equivalence.json', dict(verified_at_utc=now(), reviewed_head=REVIEWED,
+        pr208_merge=MERGE, reviewed_tree=G.git('rev-parse',REVIEWED+'^{tree}'),
+        merge_tree=G.git('rev-parse',MERGE+'^{tree}'), tree_identical=not G.git('diff','--name-only',REVIEWED,MERGE),
+        phase_a_visible_delta=G.git('diff','--name-only',MERGE,pop['baseline_commit'],'--',*VISIBLE_PATHS),
+        conclusion='PR208 merge introduced no substantive content or state difference from the campaign reviewed baseline. Phase A changed only closeout bookkeeping.'))
+    assert G.load(B+'baseline-equivalence.json')['tree_identical']
+    stages=G.load('project-state/workflow-stage-lifecycle.json')
+    assert stages['stages'][-1]['id']=='pr208-postmerge-closeout'
+    stages['stages'][-1]['end_commit']=pop['baseline_commit']
+    stages['stages'].append(dict(id='pr209-reconciliation',baseline_commit=pop['baseline_commit'],
+        regression_scripts=['scripts/project/Pr208209Reconciliation.py'],
+        exact_delta_guard=dict(module='Pr208209Reconciliation',function='guard_b')))
+    save('project-state/workflow-stage-lifecycle.json',stages)
+    audit([B+'starting-remote-state.json',B+'baseline-equivalence.json','project-state/workflow-stage-lifecycle.json'])
+    refresh(B)
+    G.active_check('mutation','background_integration')
+    guard_a()
+    guard_b()
+
+
+def combine_rows(base, production, campaign, key):
+    base={r[key]:r for r in base}; production={r[key]:r for r in production}; campaign={r[key]:r for r in campaign}
+    result=[]
+    for rid in dict.fromkeys([*production, *campaign, *base]):
+        a,b,c=base.get(rid),production.get(rid),campaign.get(rid)
+        if b==a: result.append(c)
+        elif c==a or c is None: result.append(b)
+        elif b==c or b is None: result.append(c)
+        else:
+            assert rid=='policy-durable-task-governance', ('Unanticipated authority conflict',rid)
+            # Both branches only refresh the same implementation-pinned runner.
+            x={k:v for k,v in b.items() if k!='controlling_artifacts'}
+            y={k:v for k,v in c.items() if k!='controlling_artifacts'}
+            assert x==y
+            result.append(b)
+    assert all(r is not None for r in result)
+    return result
+
+
+def resolve_b():
+    """Resolve only known durable-state conflicts; all original evidence stays exact."""
+    production=G.git('rev-parse','HEAD')
+    main=G.load(B+'population.json')['baseline_commit']
+    conflicts=G.git('diff','--name-only','--diff-filter=U').splitlines()
+    allowed={G.REGISTRY,G.ACTIVE_TASK,'project-state/CURRENT.md','project-state/checkpoint.json',
+        'project-state/workflow-stage-lifecycle.json','scripts/project/Invoke-ProjectValidation.ps1',
+        git_json(production,G.REGISTRY)['audit_artifact']}
+    assert set(conflicts)<=allowed,('Unexpected merge conflict',conflicts)
+    registry=git_json(production,G.REGISTRY)
+    before=git_json(REVIEWED,G.REGISTRY)
+    campaign=git_json(CAMPAIGN_HEAD,G.REGISTRY)
+    registry['entries']=combine_rows(before['entries'],registry['entries'],campaign['entries'],'governance_id')
+    audit_path=registry['audit_artifact']
+    data=git_json(production,audit_path)
+    # Audit catalogs are evidence indexes; current final-output hashes are refreshed below.
+    indexed={r['path']:r for r in git_json(CAMPAIGN_HEAD,audit_path)['artifacts']}
+    indexed.update({r['path']:r for r in data['artifacts']})
+    data['artifacts']=sorted(indexed.values(),key=lambda r:r['path'])
+    save(audit_path,data)
+    save(G.REGISTRY,registry)
+    # Current production resume and closeout facts win; campaign counts/completion win.
+    checkpoint=git_json(CAMPAIGN_HEAD,'project-state/checkpoint.json')
+    prod_checkpoint=git_json(production,'project-state/checkpoint.json')
+    checkpoint['pr208_postmerge_closeout']=prod_checkpoint['pr208_postmerge_closeout']
+    checkpoint['resume_command']='Finish validated background PR209 integration; future source holds need separate governed tasks'
+    checkpoint['blockers']=[]
+    checkpoint['completed_item_range']='PR208 production closed out; thirteen-record campaign complete and reconciled'
+    checkpoint['pr209_reconciliation']=dict(state='reconciled_validation_pending',receipt=B+'receipt.json',
+        completed=13,excluded=11,ordinary_research_holds=2,no_genuine_owner_decision=True)
+    save('project-state/checkpoint.json',checkpoint)
+    (G.ROOT/'project-state/CURRENT.md').write_text(current_text('B_pending'),encoding='utf-8',newline='\n')
+    stages=git_json(production,'project-state/workflow-stage-lifecycle.json')
+    historical=git_json(CAMPAIGN_HEAD,'project-state/workflow-stage-lifecycle.json')['stages'][-1]
+    assert historical['id']=='remaining-approved-review-2026-10-03' and historical['baseline_commit']==REVIEWED
+    historical['end_commit']=CAMPAIGN_HEAD
+    stages['completed_audits'].append(historical)
+    # Pin every original campaign artifact as imported historical evidence.
+    for path in G.git('ls-tree','-r','--name-only',CAMPAIGN_HEAD,'--',CAMPAIGN).splitlines():
+        stages['protected_evidence'].append(dict(path=path,commit=CAMPAIGN_HEAD,
+            sha256=hashlib.sha256(canonical_bytes(git_bytes('show',CAMPAIGN_HEAD+':'+path))).hexdigest()))
+    save('project-state/workflow-stage-lifecycle.json',stages)
+    runner=git_bytes('show',production+':scripts/project/Invoke-ProjectValidation.ps1').decode('utf-8')
+    runner=runner.replace('Set-StrictMode -Version Latest',
+        '& python "$PSScriptRoot/Review-RemainingApproved.py"\nif ($LASTEXITCODE) { throw \'Remaining thirteen background campaign exact-delta guard failed.\' }\nSet-StrictMode -Version Latest',1)
+    (G.ROOT/'scripts/project/Invoke-ProjectValidation.ps1').write_text(runner,encoding='utf-8',newline='\n')
+    # Restore the current reconciliation pointer/plan rather than importing a completed campaign as active.
+    save(G.ACTIVE_TASK,git_json(production,G.ACTIVE_TASK))
+    old_id='owner-remaining-approved-review-2026-10-03'
+    old=next(r for r in registry['entries'] if r['governance_id']==old_id)
+    new_id=old_id+'-integration-exception'
+    import copy
+    new=copy.deepcopy(old)
+    new.update(governance_id=new_id,title='Completed campaign preservation and current bounded integration authority',
+        authority='Explicit current owner PR209 reconciliation/integration instruction',
+        binding_requirement=old['binding_requirement']+' Current explicit owner exception: integrate this completed campaign through governed PR209 reconciliation and synchronize planning-snapshot after final validated main; no new review, visible change or R2 effect.',
+        controlling_artifacts=[dict(path=B+'authority.json',sha256=G.file_hash(B+'authority.json'),binding_pointers=['/'])])
+    new['required_actions']=[new['binding_requirement']]
+    old.update(state='superseded',superseded_by=new_id,supersession_evidence=B+'authority.json')
+    registry['entries'].append(new)
+    proposals={}
+    original={r['governance_id']:r for r in git_json(production,G.REGISTRY)['entries']}
+    for row in registry['entries']:
+        previous=original.get(row['governance_id'])
+        if previous and previous['state']=='active' and row['state']=='superseded':
+            replacement=next(r for r in registry['entries'] if r['governance_id']==row['superseded_by'])
+            proposals[row['governance_id']]=dict(authorized=True,existing_governance_id=row['governance_id'],
+                current_decision=previous['binding_requirement'],controlling_evidence=previous['controlling_artifacts'],
+                new_evidence=CAMPAIGN+'receipt.json',proposed_replacement=replacement['binding_requirement'],
+                consequences='Carry forward exact completed campaign supersession, with all other settled constraints intact.',
+                authorization_artifact=B+'authority.json')
+    proposals[old_id]=dict(authorized=True,existing_governance_id=old_id,current_decision=new['binding_requirement'].split(' Current explicit owner exception:')[0],
+        controlling_evidence=git_json(CAMPAIGN_HEAD,G.REGISTRY)['entries'][next(i for i,r in enumerate(git_json(CAMPAIGN_HEAD,G.REGISTRY)['entries']) if r['governance_id']==old_id)]['controlling_artifacts'],
+        new_evidence=B+'authority.json',proposed_replacement=new['binding_requirement'],
+        consequences='Release only completed campaign integration and final snapshot synchronization; preserve source/storage/publication boundaries.',authorization_artifact=B+'authority.json')
+    G.write_once(B+'supersession.json',dict(proposals=proposals))
+    registry['entries'].append(dict(governance_id='pr209-reconciliation-explicit-supersessions',category='active owner decision',
+        title='Carry completed campaign supersessions and release bounded integration',scope={'task_ids':['pr209-reconciliation-2026-10-03']},
+        authority='Explicit current owner instruction',decision_date='2026-10-03',effective_date='2026-10-03',state='active',
+        controlling_artifacts=[dict(path=B+'supersession.json',sha256=G.file_hash(B+'supersession.json'),binding_pointers=['/'])],
+        binding_requirement='Preserve completed thirteen-record decisions; apply only the documented bounded integration exception.',
+        required_actions=['Preserve completed thirteen-record decisions; apply only the documented bounded integration exception.'],
+        prohibited_actions=[],constraints=[],settled_decisions=[],unresolved_gates=[],implementation_status='reconciliation evidence'))
+    for row in registry['entries']:
+        for artifact in row['controlling_artifacts']:
+            if artifact['path']=='scripts/project/Invoke-ProjectValidation.ps1':
+                artifact['sha256']=G.file_hash(artifact['path'])
+    save(G.REGISTRY,registry)
+    G.write_once(B+'conflict-resolution.json',dict(timestamp_utc=now(),conflicted_paths=conflicts,
+        production_baseline=main,bootstrap_commit=production,campaign_head=CAMPAIGN_HEAD,
+        semantic_resolution=dict(pr208_closeout='production main',campaign_decisions='unchanged campaign artifacts and inventory',
+            registry='union with explicit original supersessions plus bounded current integration exception',
+            lifecycle='production contiguous stages; original campaign sealed as independent audit',
+            runner='both production closeout and preserved campaign guards',r2='unchanged',visible_content='unchanged'),
+        substantive_campaign_reviews_repeated=0,record_checkpoints_preserved=True))
+    historical_paths=[p for p in G.git('ls-tree','-r','--name-only',CAMPAIGN_HEAD,'--',CAMPAIGN).splitlines() if p.endswith('.json')]
+    audit(historical_paths+[B+'conflict-resolution.json','project-state/checkpoint.json','project-state/workflow-stage-lifecycle.json',
+                            'project-state/discovery/consolidated-human-review-queue.json'])
+    refresh(B)
+    task=G.load(G.ACTIVE_TASK);task['supersession_proposals_path']=B+'supersession.json';save(G.ACTIVE_TASK,task)
+    # Unmerged paths are still semantically resolved in the worktree at this point.
+    G.active_check('mutation','background_integration')
+
+
+def verify_campaign(stage=None):
+    account=G.load(CAMPAIGN+'accounting.json'); progress=G.load(CAMPAIGN+'progress.json'); receipt=G.load(CAMPAIGN+'receipt.json')
+    assert account['completed']==account['total']==13 and account['inventory_status_counts']=={'pending review':1,'approved for addition':1,'excluded':11}
+    assert not account['genuine_owner_decisions'] and not G.load(CAMPAIGN+'owner-decisions-needed.json')['items']
+    assert receipt['normal_suite']['result']=='passed' and receipt['normal_suite']['exit_code']==0
+    assert G.file_hash(receipt['normal_suite']['log'])==receipt['normal_suite']['log_sha256']
+    inventory=stage.load_json('project-state/master-inventory.json') if stage else G.load('project-state/master-inventory.json')
+    rows={r['id']:r for r in inventory['candidates']}
+    original={r['id']:r for r in git_json(CAMPAIGN_HEAD,'project-state/master-inventory.json')['candidates']}
+    checkpoints=[]
+    for record in account['records']:
+        rid=record['id']; assert rows[rid]==original[rid] and rows[rid]['status']==record['inventory_status']
+        entry=next(r for r in progress['records'] if r['id']==rid)
+        assert entry['validation_passed'] and entry['inventory_mutation_applied']
+        sha=record['checkpoint_commit']; assert len(sha)==40
+        subprocess.run(['git','merge-base','--is-ancestor',sha,CAMPAIGN_HEAD],check=True,cwd=G.ROOT)
+        checkpoints.append(dict(id=rid,checkpoint_commit=sha,resulting_status=rows[rid]['status']))
+    for path in G.git('ls-tree','-r','--name-only',CAMPAIGN_HEAD,'--',CAMPAIGN).splitlines():
+        assert canonical_bytes((G.ROOT/path).read_bytes())==canonical_bytes(git_bytes('show',CAMPAIGN_HEAD+':'+path)),path
+    return dict(verified_at_utc=now(),completed=13,excluded=11,retained_archive_hold=1,pending_identity_hold=1,
+        individual_checkpoints=checkpoints,original_full_validation_verified=True,
+        genuine_owner_decisions=[],substantive_reviews_repeated=0,original_campaign_artifacts_preserved=True)
+
+
+def finish_b():
+    G.active_check('mutation','governance_implementation')
+    verification=verify_campaign()
+    G.write_once(B+'campaign-verification.json',verification)
+    G.write_once(B+'receipt.json',dict(task_id='pr209-reconciliation-2026-10-03',state='reconciled_full_validation_pending',
+        phase_a_integration_commit=G.load(B+'population.json')['baseline_commit'],pr208_merge_commit=MERGE,
+        original_campaign_head=CAMPAIGN_HEAD,completed=13,excluded=11,ordinary_research_holds=2,genuine_owner_decisions=[],
+        history_preserved=True,substantive_reviews_repeated=0,visitor_visible_changes=0,r2_changes=0,added_storage_bytes=0,
+        inventory_status_counts=G.load('project-state/master-inventory.json')['counts'],
+        campaign_accounting=CAMPAIGN+'accounting.json',normal_validation='pending',
+        airport_plan_hold=G.load(CAMPAIGN+'accounting.json')['archive_constraints'],
+        second_street_hold='Pending exact selected FHWA source identity; County corridor context cannot substitute.'))
+    plan=G.load(B+'implementation.json')
+    plan['events']=[dict(operation='background_integration',candidate_ids=G.load(B+'population.json')['candidate_ids'],
+        action='implements',use_contract_record_rules=True,evidence=B+'campaign-verification.json',
+        summary='Carry all thirteen completed record decisions and original checkpoint history onto production-verified main; no substantive re-review.')]
+    plan['status']='reconciled_validation_pending'
+    save(B+'implementation.json',plan)
+    audit([B+'receipt.json',B+'campaign-verification.json'])
+    refresh(B)
+    task=G.load(G.ACTIVE_TASK);task['supersession_proposals_path']=B+'supersession.json';save(G.ACTIVE_TASK,task)
+    G.active_check('final')
+    guard_b()
+
+
+def guard_b():
+    stage=StageSnapshot('pr209-reconciliation')
+    pop=stage.load_json(stage.load_json(G.ACTIVE_TASK)['population']);base=pop['baseline_commit']
+    stage.assert_no_visible_changes(base,G.git('rev-parse',base+':content'))
+    for path in ['project-state/r2-inventory.json','project-state/r2-storage-policy.json']:
+        assert canonical_bytes(stage.read_bytes(path))==canonical_bytes(git_bytes('show',base+':'+path)),path
+    changed=set(git_bytes('diff',base,stage.end,'--name-only').decode().splitlines()) if stage.end else set(G.changed_paths(base))
+    assert changed<=set(pop['artifact_paths']),changed-set(pop['artifact_paths'])
+    before={r['id']:r for r in git_json(base,'project-state/master-inventory.json')['candidates']}
+    after={r['id']:r for r in stage.load_json('project-state/master-inventory.json')['candidates']}
+    assert before.keys()==after.keys() and {i for i in before if before[i]!=after[i]}<=set(pop['candidate_ids'])
+    if (G.ROOT/(B+'receipt.json')).exists():
+        verify_campaign(stage)
+        for path in G.git('ls-tree','-r','--name-only',base,'--',A,
+            'project-state/governance/strong-five-review-2026-10-03',
+            'project-state/governance/pr208-county-scope-correction-2026-10-03',
+            'project-state/governance/pr207-owner-correction-2026-09-30').splitlines():
+            assert canonical_bytes((G.ROOT/path).read_bytes())==canonical_bytes(git_bytes('show',base+':'+path)),path
+        receipt=stage.load_json(B+'receipt.json')
+        if receipt['normal_validation']=='passed':
+            assert G.file_hash(B+'validation.log')==receipt['validation_log_sha256']
+    print('PASS: PR209 exact thirteen-record reconciliation; zero visitor-visible/R2 delta; protected production and checkpoints preserved.')
 
 
 if __name__ == '__main__':
     command = sys.argv[1] if len(sys.argv) > 1 else 'guard'
     if command == 'validated_a':
         validated(A)
+    elif command == 'validated_b':
+        validated(B)
     else:
         globals()[command]()
