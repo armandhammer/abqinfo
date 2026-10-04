@@ -11,12 +11,20 @@ BASE='2756c058a4485022992ac7e697c3e046ca9031fc'
 IDS=['src-29bec2b60308d513','src-58b6e48562da781c','src-5a12b40f6dcba285','src-a9ddff947a4282c9','src-fe8c43a2ca9b7417','src-4c2b3614256aaf20','src-27314f06651cc1c9','src-7867bdf940d22b3f','src-aece84c62701c551']
 save=S.save
 
+def bind(path,gid,requirement,scope):
+    S.bind(path,gid,requirement,scope)
+    data=G.load(G.REGISTRY)
+    next(r for r in data['entries'] if r['governance_id']==gid)['authority']='Explicit current owner exact nine-record rendered/live-application background review instruction'
+    save(G.REGISTRY,data)
+
 def refresh():
     old=list((G.ROOT/P).glob('contract-v*.json'))
     if old:S.audit([x.relative_to(G.ROOT).as_posix() for x in old])
     n=max([int(x.stem.split('-v')[1]) for x in old],default=0)+1
     path=P+f'contract-v{n}.json'
-    subprocess.run([sys.executable,'scripts/project/Resolve-TaskGovernance.py','resolve','--population',P+'population.json','--output',path],check=True,stdout=subprocess.DEVNULL)
+    populations=list((G.ROOT/P).glob('population-v*.json'))
+    population=max(populations,key=lambda x:int(x.stem.split('-v')[1])).relative_to(G.ROOT).as_posix() if populations else P+'population.json'
+    subprocess.run([sys.executable,'scripts/project/Resolve-TaskGovernance.py','resolve','--population',population,'--output',path],check=True,stdout=subprocess.DEVNULL)
     c=G.load(path);assert not c['conflicts'] and not c['unresolved_gates'],(c['conflicts'],c['unresolved_gates'])
     plan=G.load(P+'implementation.json') if (G.ROOT/(P+'implementation.json')).exists() else dict(artifact_type='task_implementation_plan',actions=['document_review','family_review','quality_assessment','inventory_disposition','governance_implementation','background_integration'],events=[],status='in_progress')
     subjects={}
@@ -26,7 +34,9 @@ def refresh():
     for e in plan['events']:e['governance_ids']=c['governance_ids']
     if (G.ROOT/(P+'receipt.json')).exists():plan['completion_evidence']={gid:[dict(path=P+'receipt.json',sha256=G.file_hash(P+'receipt.json'))] for gid in c['governance_ids']}
     save(P+'implementation.json',plan)
-    save(G.ACTIVE_TASK,dict(population=P+'population.json',contract=path,contract_sha256=G.file_hash(path),implementation=P+'implementation.json',state='in_progress'))
+    active=dict(population=population,contract=path,contract_sha256=G.file_hash(path),implementation=P+'implementation.json',state='in_progress')
+    if (G.ROOT/(P+'evidence-41.json')).exists():active['supersession_proposals_path']=P+'evidence-41.json'
+    save(G.ACTIVE_TASK,active)
     print(path,len(c['governance_ids']),'rules; no conflicts or gates')
 
 def freeze():
@@ -46,7 +56,7 @@ def freeze():
     subprocess.run([sys.executable,'scripts/project/Resolve-TaskGovernance.py','resolve','--population',P+'population.json','--output',P+'contract-v1.json'],check=True)
     authority='Current user authorizes exactly these nine pending records for rendered/live-application background review and evidence-based inventory dispositions. Require actual desktop application rendering where established by prior prerequisites; HTTP or ArcGIS metadata alone cannot establish usability. Review the two MRMPO portfolios together. Preserve original URLs, prior evidence and settled decisions. Save and push each completed record or coupled pair. No visitor-visible content/navigation, R2 action, publication PR, Sunport hold change or additional population is authorized. Complete normal/governance/sealed-history/Hugo/rendered validation before background-only main integration; synchronize planning-snapshot and CURRENT.'
     G.write_once(P+'authority.json',dict(authority='Explicit current user instruction',candidate_ids=IDS,instruction=authority))
-    S.bind(P+'authority.json','owner-'+TASK,authority,{'candidate_ids':IDS,'task_ids':[TASK]})
+    bind(P+'authority.json','owner-'+TASK,authority,{'candidate_ids':IDS,'task_ids':[TASK]})
     stages=G.load('project-state/workflow-stage-lifecycle.json');stages['stages'][-1]['end_commit']=BASE
     stages['stages'].append(dict(id=TASK,baseline_commit=BASE,regression_scripts=['scripts/project/InteractiveAppResolution.py'],exact_delta_guard=dict(module='InteractiveAppResolution',function='guard')))
     save('project-state/workflow-stage-lifecycle.json',stages)
@@ -64,7 +74,19 @@ def guard():
         assert a[i]['source_url']==b[i]['source_url'] and b[i]['processing_notes'][:len(a[i]['processing_notes'])]==a[i]['processing_notes']
         for key in ['r2_url','r2_key','r2_etag','r2_last_modified']:assert a[i].get(key)==b[i].get(key)
     changes=set(git('diff',BASE,stage.end,'--name-only').decode().splitlines()) if stage.end else set(G.changed_paths(BASE))
-    assert changes<=set(stage.load_json(P+'population.json')['artifact_paths']),changes-set(stage.load_json(P+'population.json')['artifact_paths'])
+    populations=list((G.ROOT/P).glob('population-v*.json'))
+    population=max(populations,key=lambda x:int(x.stem.split('-v')[1])).relative_to(G.ROOT).as_posix() if populations else P+'population.json'
+    pop=stage.load_json(population);assert pop['candidate_ids']==IDS
+    assert changes<=set(pop['artifact_paths']),changes-set(pop['artifact_paths'])
+    derived='project-state/discovery/consolidated-human-review-queue.json'
+    if derived in changes:
+        before=json.loads(git('show',BASE+':'+derived));after=stage.load_json(derived)
+        before.pop('inventory_sha256');after.pop('inventory_sha256')
+        assert before==after and after['record_count']==after['package_count']==0,'Owner queue may refresh only its derived inventory hash'
+    if 'project-state/checkpoint.json' in changes:
+        before=json.loads(git('show',BASE+':project-state/checkpoint.json'));after=stage.load_json('project-state/checkpoint.json')
+        for key in ['recorded_at','completed_item_range','counts_by_status','remaining_nonterminal','resume_command']:before.pop(key);after.pop(key)
+        assert before==after,'Preserve all historical and unrelated checkpoint metadata'
     print('Nine-record exact inventory / original provenance / zero visitor-visible / zero R2 guard passed')
 
 def audit_refresh():
@@ -99,7 +121,7 @@ def apply(numbers):
         gid='decision-'+TASK+'-'+review['id']
         existing=next((x for x in G.load(G.REGISTRY)['entries'] if x['governance_id']==gid),None)
         if existing:assert existing['binding_requirement']==review['binding_requirement'] and existing['controlling_artifacts'][0]['sha256']==G.file_hash(path)
-        else:S.bind(path,gid,review['binding_requirement'],{'candidate_ids':[review['id']]})
+        else:bind(path,gid,review['binding_requirement'],{'candidate_ids':[review['id']]})
     audit_refresh()
     for n in numbers:
         G.active_check('mutation','inventory_disposition',[IDS[n-1]])
@@ -130,4 +152,42 @@ def review(n,status,facts,rationale,evidence,page=None,canonical=None):
     save(P+f'review-{n}.json',output)
     return output
 
-if __name__=='__main__':{'freeze':freeze,'refresh':audit_refresh,'guard':guard}[sys.argv[1] if len(sys.argv)>1 else 'guard']()
+def prepare_completion():
+    G.active_check('mutation','governance_implementation');guard();queue()
+    inv=G.load('project-state/master-inventory.json');q=G.load(P+'queue.json')
+    rows={r['id']:r for r in inv['candidates']}
+    reviews=[G.load(P+f'review-{n}.json') for n in range(1,10)]
+    assert all(r['id']==i and rows[i]['status']==r['final_background_disposition'] for i,r in zip(IDS,reviews))
+    assert inv['counts']['approved for addition']==7 and inv['counts']['pending review']==363
+    assert q['ungated_pending_count']==0 and q['pending_review_count']==363
+    accounting=dict(task_id=TASK,baseline_commit=BASE,population=IDS,fully_resolved=9,
+        outcomes=[dict(id=r['id'],status=r['final_background_disposition'],review=P+f'review-{n}.json',recommendation=r['implementation_ready_recommendation']) for n,r in enumerate(reviews,1)],
+        counts_by_status=inv['counts'],queue_counts={k:q[k] for k in ['pending_review_count','gated_pending_count','source_or_structural_blocked_pending_count','ungated_pending_count','genuinely_actionable_ungated_pending_count']},
+        approved=7,pending=363,new_live_approvals=6,new_exclusions=3,genuine_owner_decisions=0,blocked_selected_records=[],sunport_policy_choice='Unchanged optional choice; outside this task.',
+        visitor_visible_changes=0,r2=dict(added_objects=0,changed_objects=0,deleted_objects=0,added_storage_bytes=0,verification='No R2 mutation tool or storage command invoked. Exact baseline R2 inventory/policy and all original record storage fields preserved by guard; no fresh remote listing claimed.'),next_population_authorized=False)
+    save(P+'accounting.json',accounting)
+    save(P+'receipt.json',dict(task_id=TASK,state='nine_record_review_complete_validation_pending',baseline=BASE,authority=P+'authority.json',population=P+'population.json',accounting=P+'accounting.json',review_artifacts=[P+f'review-{n}.json' for n in range(1,10)],fully_resolved=9,approved=7,pending=363,new_live_approvals=6,new_exclusions=3,genuine_owner_decision_count=0,owner_decision_required=False,blocked_selected_records=[],prior_evidence_preserved=True,original_urls_preserved=True,visitor_visible_delta=0,r2_delta_objects=0,r2_delta_bytes=0,sunport_hold_unchanged=True,no_publication_task_started=True,normal_validation='pending',hugo_rendered_checks='pending',git_diff_check='pending',validation_log=P+'validation.log',integration_authority=P+'authority.json',integration_targets=['refs/heads/main','refs/heads/chatgpt/planning-snapshot'],final_commit_locator='The commit containing the completed receipt is the completion seal; query authoritative refs after its atomic push.',final_runtime_evidence='research/staging/'+TASK+'/final-runtime.json'))
+    text='''# Nine-record rendered application review
+
+Exactly nine pending records were inspected using installed Chrome through Python Playwright at 1440 by 1000. The computer-use connector exposed no browser; installed Chromium execution under permitted network access supplied a real rendering surface. No installation was needed. Compact DOM/accessibility observations, actions, screenshot hashes/paths, and supporting source/API responses are retained here; browser caches and PNGs remain ignored research artifacts. APIs were supporting evidence, not usability substitutes.
+
+Six approved live resources: City Council district map (nine polygons and Councilor popup); restored Bikeways wrapper (same app, new map/service); NTMP emergency/ineligible-roadways map (geographic policy component); two distinct MRMPO portfolios (five access maps versus six air-quality/health-equity maps); and one grouped historical City transportation-performance directory (seven functioning Cognos charts, 95 annual observations). Approvals are inventory-only recommendations. Publication still requires a separate governed and manually reviewed content PR.
+
+Three exclusions: Parks/Open Space application requires City login and exposes no public facilities; retired School Crossing MapJournal has an Item Replacement screen with no recoverable replacement target; Walk Safe New Mexico Experience is statewide navigation whose only Albuquerque content is an outbound Vision Zero link. Preserve original URLs and prior evidence. The already-published School Crossings Dashboard is a related functional family resource, not a proven designated redirect successor. The PSAP StoryMap already represents substantive PSAP content; it is not this statewide portal.
+
+Bikeways is restored at its original app ID, not a title-inferred successor. Its current City service replaces the obsolete service function; no outside inventory rows or public links were altered. The MRMPO portfolios have disjoint child dashboard IDs and separately labeled official MRCOG parent links. Both have genuine local geographic analysis. Historical demographic/model vintages constrain their descriptions: ACS 2016-2020; the air portfolio uses EPA 2021 EJScreen 2.0. The Transportation directory's flight/revenue charts end FY2018; other charts end FY2020. Working service/copyright/modified dates do not establish current data.
+
+Limitations: Council address-search submission stalled; map district selection and legend were verified. Not every layer toggle or export option was exercised. Retired school item APIs do not disclose a designated successor; exclusion is resolved without inventing one. Render-review-2's visual observation lists screenshot 1 in its overview; the actual Council wrapper proof is render-3, supplemented by render-4/5 and official same-app metadata. No historical settlement was reopened.
+
+Accounting: 9 of 9 fully resolved; six approved, three excluded. Overall queue: 7 approved / 363 pending (321 gated and 42 source/structural blockers); zero ungated pending and zero new owner decisions. The prior optional Sunport archive-policy choice and its approved hold are unchanged and outside this task. No additional population, publication PR, visible content/navigation, or R2 mutation was launched. Per-record or paired review/inventory checkpoints were pushed before closeout. The final receipt and normal validation log record completion validation and authorized background integration.
+'''
+    (G.ROOT/(P+'summary.md')).write_text(text,encoding='utf-8',newline='\n')
+    old=(G.ROOT/'project-state/CURRENT.md').read_text(encoding='utf-8')
+    links=old[old.index('[Evidence closeout]'):]
+    current='# Current project state\n\nExactly nine interactive-app prerequisites resolved through desktop Chrome rendering: six live-resource recommendations approved; parks/login-only app, retired school app and statewide PSAP navigation portal excluded. MRMPO portfolios are distinct (five access / six air-equity maps). City transportation charts end FY2018 or FY2020. Queue: 7 approved / 363 pending; zero ungated pending. No new owner decision or unfinished publication task. Sunport archive hold/optional policy choice remains outside this task. No visitor-visible or R2 changes. Full completion validation pending; reviewed checkpoints pushed.\n\n[Interactive review](governance/interactive-app-resolution-2026-10-04/receipt.json) · '+links
+    assert len(current)<=1800
+    (G.ROOT/'project-state/CURRENT.md').write_text(current,encoding='utf-8',newline='\n')
+    save(P+'progress.json',dict(state='nine_reviews_complete_validation_pending',completed=IDS,remaining=[],visitor_visible_delta=0,r2_delta_bytes=0,next_population_authorized=False))
+    audit_refresh();G.active_check('final');guard()
+
+if __name__=='__main__':{'freeze':freeze,'refresh':audit_refresh,'guard':guard,'prepare-completion':prepare_completion}[sys.argv[1] if len(sys.argv)>1 else 'guard']()
