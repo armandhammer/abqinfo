@@ -17,6 +17,8 @@ if ($LASTEXITCODE) { throw 'Remaining thirteen background campaign exact-delta g
 if ($LASTEXITCODE) { throw 'Two-record source resolution guard failed.' }
 & python "$PSScriptRoot/InteractiveAppResolution.py" guard
 if ($LASTEXITCODE) { throw 'Nine-record interactive review guard failed.' }
+& python "$PSScriptRoot/CentralStationAreaFamilyResolution.py" guard
+if ($LASTEXITCODE) { throw 'Central Avenue exact-population background guard failed.' }
 Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }
