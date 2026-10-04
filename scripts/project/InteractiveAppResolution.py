@@ -96,7 +96,10 @@ def apply(numbers):
     for n in numbers:
         path=P+f'review-{n}.json';review=G.load(path)
         assert review['id']==IDS[n-1] and review['state']=='review_complete'
-        S.bind(path,'decision-'+TASK+'-'+review['id'],review['binding_requirement'],{'candidate_ids':[review['id']]})
+        gid='decision-'+TASK+'-'+review['id']
+        existing=next((x for x in G.load(G.REGISTRY)['entries'] if x['governance_id']==gid),None)
+        if existing:assert existing['binding_requirement']==review['binding_requirement'] and existing['controlling_artifacts'][0]['sha256']==G.file_hash(path)
+        else:S.bind(path,gid,review['binding_requirement'],{'candidate_ids':[review['id']]})
     audit_refresh()
     for n in numbers:
         G.active_check('mutation','inventory_disposition',[IDS[n-1]])

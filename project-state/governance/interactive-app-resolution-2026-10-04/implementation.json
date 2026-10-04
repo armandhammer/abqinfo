@@ -8,10 +8,48 @@
     "governance_implementation",
     "background_integration"
   ],
-  "events": [],
+  "events": [
+    {
+      "operation": "inventory_disposition",
+      "candidate_ids": [
+        "src-29bec2b60308d513"
+      ],
+      "action": "implements",
+      "governance_ids": [
+        "authorization-profile-ordinary-review-large",
+        "decision-archive-recovery-53d2a462",
+        "decision-council-closeout-status-2026-09-20-4dfd8e30",
+        "decision-interactive-app-resolution-2026-10-04-src-29bec2b60308d513",
+        "decision-next-ordinary-queue-b8bb5c70-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception",
+        "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
+        "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+        "decision-scoped-source-review-2026-08-04-33554a9c",
+        "decision-unm-cnm-focused-source-scope-1673e3f6",
+        "owner-interactive-app-resolution-2026-10-04",
+        "policy-agents",
+        "policy-durable-task-governance",
+        "policy-mission-scope",
+        "policy-mission-scope-legacy",
+        "policy-project-recency",
+        "policy-project-state",
+        "policy-publication-quality",
+        "policy-quality-exclusions",
+        "policy-r2-storage",
+        "policy-source-priorities",
+        "policy-tip-stip-retention",
+        "workflow-autonomous-verification",
+        "workflow-background-campaign",
+        "workflow-handoff-retirement",
+        "workflow-parallel-verification",
+        "workflow-stage-lifecycle"
+      ],
+      "summary": "The exact City parks/open-space wrapper embeds 99029a0318a144f0b726cbaf6f2c6a69. Desktop rendered wrapper shows only an ArcGIS sign-in dialog; direct application redirects to City organizational login and public item metadata returns access-denied403. No public facilities, layers, legend or search results are exposed. The current City GIS page still links the same wrapper; its new general Advanced Map Viewer is not evidenced as a one-to-one successor to this app. Exclude this inaccessible wrapper from the publication backlog; preserve its original URL and history. Existing Open Space map-library and trail-map publications remain intact.",
+      "evidence": "project-state/governance/interactive-app-resolution-2026-10-04/review-1.json"
+    }
+  ],
   "status": "in_progress",
-  "contract": "project-state/governance/interactive-app-resolution-2026-10-04/contract-v7.json",
-  "contract_sha256": "2127a0c1d0874a738f7c06d0ca3f2fb85a5ce2f375d52fd9ae42848f6a7dd344",
+  "contract": "project-state/governance/interactive-app-resolution-2026-10-04/contract-v10.json",
+  "contract_sha256": "0504eebe2ef9c69a680ec6c863dcc2b575e4e096d5d44d6e4735349c91bb6ee8",
   "population_sha256": "ee354953db247bbadee0c84767cb686cbd082cd1effb81c65823e9447af11303",
   "respected_governance_ids": [
     "authorization-profile-ordinary-review-large",
