@@ -18,6 +18,10 @@ Traffic calming and speed management initiatives.
 
   Provides the maintained program overview for addressing speeding and cut-through traffic on residential streets, including eligibility, request procedures, current meetings, completed studies, policy documents, and emergency-route constraints.
 
+- [NTMP Eligible Roadways (live City map)](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=74daadcad5a740928893f163e952d854)
+
+  Maps emergency routes, potentially eligible streets and City limits for the Neighborhood Traffic Management Program. Eligibility requires City evaluation; this is a traffic-calming policy reference, not emergency travel directions.
+
 - [Submit a Traffic Calming Request](https://www.cabq.gov/neighborhood-traffic-management-program/submit-a-traffic-calming-request)
 
   Explains how residents request a City traffic-calming evaluation, what information the application requires, which streets qualify, and where to submit the online or written request.

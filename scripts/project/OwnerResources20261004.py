@@ -12,6 +12,9 @@ SUN='src-1f9cf39555e7be6f'
 KEY='transportation/transportation-plans/cabq-sunport-sustainable-airport-master-plan-2019.pdf'
 SHA='d4583c4d9e5e1233c402f64222fd8837ff7f0fc0a352dc2d5153776842f39d02'
 SOURCE='https://documents.cabq.gov/planning/MasterPlans/Sunport/ABQ_Sustainable_Airport_Master_Plan-printing.pdf'
+LIVE=['src-58b6e48562da781c','src-5a12b40f6dcba285','src-fe8c43a2ca9b7417','src-27314f06651cc1c9','src-7867bdf940d22b3f','src-aece84c62701c551']
+NEW=['src-e225fbaca658ecf5','src-26d17a967fcc771c']
+PAGES=['content/maps-data/maps.md','content/maps-data/dashboards.md','content/transportation/bicycling/bike-maps.md','content/transportation/roadway-projects/speed-management.md','content/city-data/climate-environment.md','content/transportation/transportation-plans.md','content/development-land-use/development-process.md']
 SCRIPT='scripts/project/OwnerResources20261004.py'
 def now(): return datetime.now(timezone.utc).isoformat()
 def save(p,v):
@@ -130,6 +133,11 @@ def guard():
                 assert public['byte_identical'] and public['size_bytes']==280024902 and public['checksum_sha256']==SHA
         else:
             assert s.read_bytes('project-state/r2-inventory.json').replace(b'\r\n',b'\n')==git('show',base+':project-state/r2-inventory.json').replace(b'\r\n',b'\n')
+            for path,h in s.load_json(p+'starting-state.json')['existing_review_hashes'].items():
+                assert G.file_hash(path)==h,'Completed interactive review changed: '+path
+            for rid in LIVE+[SUN]:
+                assert b[rid]['scope_assessment']==a[rid]['scope_assessment'] and b[rid]['quality_assessment']==a[rid]['quality_assessment']
+                assert b[rid]['processing_notes'][:len(a[rid]['processing_notes'])]==a[rid]['processing_notes']
     print('Owner resources frozen population / settled Sunport reviews / stage visible and R2 boundaries passed')
 def finish_a():
     p=prefix(A);source=G.load(p+'source-verification.json');public=G.load(p+'public-verification.json')
@@ -156,7 +164,36 @@ def finish_a():
     f=G.ROOT/'project-state/CURRENT.md';t=f.read_text(encoding='utf-8');links=t[t.index('[Interactive review]'):]
     f.write_text('# Current project state\n\nSunport exact original archived under the owner\'s single-object exception:280024902 bytes,601 pages, complete public GET verified. R2:1612 objects /10971266597 bytes; standing object ceiling150000000 and project ceiling13000000000 unchanged. Queue:7 approved /363 pending. Phase A full validation and background main integration pending; Phase B authorized for six reviewed live resources, one Sunport archive-link update and two owner-supplied links. No visible Phase A changes.\n\n[Sunport archive](governance/'+A+'/receipt.json) · '+links,encoding='utf-8',newline='\n')
     refresh(A);G.active_check('final');guard()
+def freeze_b():
+    p=prefix(B);base=G.git('rev-parse','HEAD');assert base=='1e56540c199d26384989074d497a9bffac60e3f4'
+    identities=G.load('tmp/owner-resource-identities.json')['candidates'];assert {x['id'] for x in identities}==set(NEW)
+    paths=artifacts(B)+['project-state/discovery/consolidated-human-review-queue.json','project-state/discovery/consolidated-human-review-queue.md']+[p+f'population-v{n}.json' for n in range(2,11)]
+    ops=['document_review','family_review','quality_assessment','inventory_disposition','content_implementation','placement','cross_listing','visitor_visible_change','governance_implementation','external_mutation']
+    G.write_once(p+'source-identities.json',dict(mechanism='scripts/project/Add-InventoryCandidate.ps1 applied to isolated registration file before substantive review; exact lowercased-URL SHA256 prefix stable IDs.',records=identities))
+    G.write_once(p+'population.json',dict(task_id=B,baseline_commit=base,candidate_ids=LIVE+[SUN]+NEW,families=[],pages=PAGES,operation_classes=ops,artifact_paths=paths))
+    subprocess.run([sys.executable,'scripts/project/Resolve-TaskGovernance.py','resolve','--population',p+'population.json','--output',p+'contract-v1.json'],check=True)
+    c=G.load(p+'contract-v1.json');G.freshness(c,G.population(G.load(p+'population.json')),G.registry(),G.file_hash(G.REGISTRY))
+    text='Publish ONLY the frozen nine-record owner population in one unmerged visitor-visible PR: implement the six completed interactive-resource reviews as binding without substantive re-review; follow interactive-app-resolution-2026-10-04/accounting.json and individual review wording/placement limitations; update one existing Sunport entry to verified archive, preserving City original and R-19-168 provenance and removing obsolete threshold sentence. Review and represent both exact owner URLs under the normal stable IDs. Render exact ArcGIS app in desktop Chrome, identify its authoritative title and actual data/function/usability; use canonical/alternate link for duplicates. Place maintained ONC Neighborhood Association Websites directory on shallowest existing appropriate page, explain submitted recognized-association websites and HOA exclusion; avoid duplicate entries. Concise neutral descriptions, no extra pages/navigation, distinguish historical data and live services. Complete normal/governance/freshness/Hugo/rendered/external-URL/diff checks; create nonproduction Cloudflare preview and inspect all changed sections. Open one content PR against main with exact titles/headings/page preview links, archival and storage accounting; synchronize planning-snapshot to exact reviewed PR head. No content merge or production deployment, no additional R2 action.'
+    G.write_once(p+'authority.json',dict(authority='Explicit current owner Phase B instruction',phase_a_integration_sha=base,candidate_ids=LIVE+[SUN]+NEW,instruction=text,existing_review_accounting='project-state/governance/interactive-app-resolution-2026-10-04/accounting.json',owner_urls=[r['source_url'] for r in identities]))
+    gid='owner-'+B;bind(p+'authority.json',gid,text,dict(task_ids=[B],candidate_ids=LIVE+[SUN]+NEW,pages=PAGES))
+    complete_freeze_b()
+def complete_freeze_b():
+    p=prefix(B);base=G.load(p+'population.json')['baseline_commit'];gid='owner-'+B
+    r=G.load(G.REGISTRY);earlier=next(x for x in r['entries'] if x['governance_id']=='owner-interactive-app-resolution-2026-10-04-authority-label-correction' and x['state']=='active')
+    requirement=earlier['binding_requirement']+' Explicit current owner supersession for the six completed positive reviews ONLY: publish these resources in the bounded separately governed Phase B PR under '+gid+'. Preserve all nine original reviews and historical task boundaries, exclusions and limitations. No new substantive review of the six records, no R2 action or content merge.'
+    replacement=earlier['governance_id']+'-publication-exception';proposal=dict(authorized=True,existing_governance_id=earlier['governance_id'],current_decision=earlier['binding_requirement'],controlling_evidence=copy.deepcopy(earlier['controlling_artifacts']),new_evidence=p+'authority.json',proposed_replacement=requirement,consequences='Only completed six positive reviews advance into one owner-reviewed resources PR; original nine-row evidence preserved.',authorization_artifact=p+'authority.json')
+    new=copy.deepcopy(earlier);new.update(governance_id=replacement,title=replacement,binding_requirement=requirement,required_actions=[requirement],controlling_artifacts=[dict(path=p+'authority.json',sha256=G.file_hash(p+'authority.json'),binding_pointers=['/'])])
+    earlier.update(state='superseded',superseded_by=replacement,supersession_evidence=p+'supersession.json');r['entries'].append(new);save(G.REGISTRY,r)
+    G.write_once(p+'supersession.json',dict(proposals={proposal['existing_governance_id']:proposal}))
+    bind(p+'supersession.json','supersession-'+B,'Implement only the current owner-authorized transition from six settled approvals to the unmerged publication PR; all review evidence remains unchanged.',dict(task_ids=[B]))
+    inv=G.load('project-state/master-inventory.json');G.write_once(p+'prior-records.json',dict(records=[x for x in inv['candidates'] if x['id'] in LIVE+[SUN]]))
+    G.write_once(p+'starting-state.json',dict(baseline_commit=base,phase_a_integration_sha=base,r2_inventory_sha256=G.file_hash('project-state/r2-inventory.json'),standing_policy_sha256=G.file_hash('project-state/r2-storage-policy.json'),existing_review_hashes={x.relative_to(G.ROOT).as_posix():G.file_hash(x) for x in (G.ROOT/'project-state/governance/interactive-app-resolution-2026-10-04').rglob('*') if x.is_file()}))
+    stage(B,base);save(p+'progress.json',dict(state='frozen_publication_ready',completed=['phase_a_integrated','normal_source_ids_established','population_frozen'],remaining=['new_resource_review','bounded_content','full_validation','preview_inspection','unmerged_pr','planning_snapshot_sync'],chrome_connector='Unavailable; owner choice pending for enabling connector or installed Chrome Playwright rendering.'))
+    refresh(B);G.active_check('mutation','inventory_disposition')
+    c=G.load(G.load(G.ACTIVE_TASK)['contract']);print('PUBLICATION SCOPED REQUIREMENTS')
+    for row in c['resolved_rules']:
+        if not row['scope'].get('global'):print(row['governance_id'],row['binding_requirement'])
 if __name__=='__main__':
     command=sys.argv[1] if len(sys.argv)>1 else 'guard'
     if command=='refresh':refresh(sys.argv[2])
-    else:{'freeze-a':freeze_a,'authorize-a':authorize_a,'finish-a':finish_a,'guard':guard}[command]()
+    else:{'freeze-a':freeze_a,'authorize-a':authorize_a,'finish-a':finish_a,'freeze-b':freeze_b,'complete-freeze-b':complete_freeze_b,'guard':guard}[command]()

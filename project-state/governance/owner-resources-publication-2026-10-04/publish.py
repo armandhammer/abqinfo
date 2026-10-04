@@ -1,0 +1,39 @@
+"""Implement settled approvals only; new neighborhood resources wait for actual rendering."""
+import sys,subprocess
+from pathlib import Path
+sys.path.insert(0,'scripts/project');import OwnerResources20261004 as S
+P=S.prefix(S.B);rows={r['id']:r for r in S.G.load('project-state/master-inventory.json')['candidates']}
+changes=[];edits=[]
+def replace(page,old,new,rids):
+    S.G.active_check('mutation','content_implementation',rids,[page])
+    f=S.G.ROOT/page;raw=f.read_bytes();text=raw.decode('utf-8');assert text.count(old)==1,(page,old[:100],text.count(old))
+    f.write_bytes(text.replace(old,new).encode('utf-8'));edits.append(dict(page=page,candidate_ids=rids,old=old,new=new))
+def before(page,marker,addition,rids):
+    f=S.G.ROOT/page;raw=f.read_bytes();newline='\r\n' if b'\r\n' in raw else '\n';replace(page,marker,addition.replace('\n',newline)+marker,rids)
+def block(title,url,description,extra=''):
+    return '- ['+title+']('+url+')\n\n  '+description+'\n\n'+('  '+extra+'\n\n' if extra else '')
+maps='content/maps-data/maps.md';bikes='content/transportation/bicycling/bike-maps.md';dash='content/maps-data/dashboards.md';speed='content/transportation/roadway-projects/speed-management.md';climate='content/city-data/climate-environment.md';plans='content/transportation/transportation-plans.md'
+council=block('City Council Districts (live City map)',rows[S.LIVE[0]]['source_url'],'Maps Albuquerque’s nine City Council districts with a legend and selectable councilor information. This maintained geographic reference complements the dated January 2026 poster below.')
+before(maps,'- [Council District Poster Map',council,[S.LIVE[0]])
+old='- [Current Bikeways and Trails Data](https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdmdmaps.cabq.gov%2Fserverext%2Frest%2Fservices%2FBikeways%2FBikeways_Trails_Public%2FMapServer&source=sd) <small>[ArcGIS Data](https://dmdmaps.cabq.gov/serverext/rest/services/Bikeways/Bikeways_Trails_Public/MapServer/23)</small>'
+for page in [bikes,maps]:
+    replace(page,old,'- [Current Bikeways and Trails Data (live City map)]('+rows[S.LIVE[1]]['source_url']+')',[S.LIVE[1]])
+    replace(page,"Publishes the City's actively maintained bikeway and trail data layer, distinguishing current infrastructure from the static network snapshot used to develop the 2024 facilities plan.",'Maps existing Albuquerque bikeways and trails by facility type, with layer and path-type controls. The maintained City map complements the static conditions used for the 2024 facilities plan.',[S.LIVE[1]])
+ntmp=block('NTMP Eligible Roadways (live City map)',rows[S.LIVE[2]]['source_url'],'Maps emergency routes, potentially eligible streets and City limits for the Neighborhood Traffic Management Program. Eligibility requires City evaluation; this is a traffic-calming policy reference, not emergency travel directions.')
+before(speed,'- [Submit a Traffic Calming Request]',ntmp,[S.LIVE[2]])
+equity=block('MRMPO Transportation Equity Assessment',rows[S.LIVE[3]]['source_url'],'Maps Albuquerque-area environmental-justice communities and access to parks, transit, healthcare and groceries. This Connections 2040 analysis uses 2016–2020 ACS demographics; it is not a current route planner.','[Official MRCOG Environmental Justice resources](https://www.mrcog-nm.gov/579/Environmental-Justice)')
+charts=block('City Transportation Performance Charts (historical)',rows[S.LIVE[5]]['source_url'],'Groups seven charts of Sunport flights, passengers and revenue, ABQ RIDE ridership and productivity, and Sun Van ridership. Flight and revenue series end FY2018; other series end FY2020. These reports do not show current performance. The revenue-hours definition changed in FY2010.')
+before(dash,'## City Services and Property Tools',equity+charts,[S.LIVE[3],S.LIVE[5]])
+air=block('MRMPO Air Quality and Health Equity',rows[S.LIVE[4]]['source_url'],'Compares six modeled Albuquerque-area traffic and air-pollution indicators with neighborhood vulnerability. Historical EPA 2021 EJScreen 2.0 and 2016–2020 ACS analysis supports comparisons of environmental burdens; it is not real-time air monitoring, a regulatory determination or an individual health assessment.','[Official MRCOG Environmental Justice resources](https://www.mrcog-nm.gov/579/Environmental-Justice)')
+before(climate,'- [Mountain View Environmental Inventory and Gap Mapping Analysis]',air,[S.LIVE[4]])
+replace(plans,'- [Albuquerque International Sunport Sustainable Airport Master Plan (2020 official PDF)](https://cabq.legistar.com/View.ashx?M=F&ID=8032966&GUID=7FA83BFE-7EB3-408C-980D-2A0ED46A6001)','- [Albuquerque International Sunport Sustainable Airport Master Plan (December 2019; adopted 2020; archived PDF)](https://files.abqinfo.com/'+S.KEY+')',[S.SUN])
+replace(plans,"The 267.05 MiB official file exceeds ABQInfo's archival threshold and is linked to the City source.",'Forecasts and recommended projects are planning assumptions, not evidence of completed work or present operating conditions. [Official City PDF]('+S.SOURCE+') ·',[S.SUN])
+descriptions={S.LIVE[0]:'Maps Albuquerque City Council districts with selectable councilor information; a live geographic reference alongside the dated archived poster.',S.LIVE[1]:'Maps existing Albuquerque bikeways and trails by facility type using the current maintained City service, complementing dated planning snapshots.',S.LIVE[2]:'Maps emergency-route constraints and potentially eligible streets as a live NTMP policy reference; not a final eligibility determination or emergency directions.',S.LIVE[3]:'Historical Connections 2040 Albuquerque-area transportation equity and access analysis using2016–2020 ACS demographics; one portfolio, not a current route planner.',S.LIVE[4]:'Six modeled Albuquerque-area air/traffic indicators and vulnerability comparisons using EPA2021 EJScreen2.0 and ACS2016–2020; not real-time monitoring or regulatory findings.',S.LIVE[5]:'One grouped directory of seven historical City aviation and transit charts ending FY2018 or FY2020, with the FY2010 revenue-hours methodology change.',S.SUN:'Adopted2020 Sunport master plan, December2019 original; one existing entry updated to exact verified archive plus official City and R-19-168 provenance.'}
+locations={S.LIVE[0]:[maps+'#citywide-reference-maps'],S.LIVE[1]:[bikes+'#city-bicycle-maps',maps+'#city-bicycle-maps-and-data'],S.LIVE[2]:[speed+'#neighborhood-traffic-management-program'],S.LIVE[3]:[dash+'#project-program-and-safety-dashboards'],S.LIVE[4]:[climate+'#environmental-justice-and-local-conditions'],S.LIVE[5]:[dash+'#project-program-and-safety-dashboards'],S.SUN:[plans+'#aviation-planning']}
+for rid in S.LIVE+[S.SUN]:
+    row=rows[rid];changes.append(dict(id=rid,changes=dict(status='implemented',description=descriptions[rid],implementation_location=locations[rid][0],implementation_locations=locations[rid],cross_listing_approved=(rid==S.LIVE[1]),validation_status='Implemented on unmerged owner-resources branch; full validation and preview inspection pending; not live.',processing_notes=row['processing_notes']+['2026-10-04 bounded owner publication: implemented the binding completed review without substantive reassessment; preserve all limitations and original evidence. '+P+'authority.json'])))
+S.save(P+'record-updates.json',changes);S.save(P+'evidence-3.json',dict(stage='settled_resource_implementation',edits=edits,locations=locations,new_neighborhood_resources='Awaiting actual rendered review; not added by this script.'))
+S.refresh(S.B)
+subprocess.run([sys.executable,'scripts/project/Update-CandidatesBatch.py','--requests',P+'record-updates.json'],check=True)
+for rid in S.LIVE+[S.SUN]:S.event(S.B,'content_implementation',[rid],'Implemented settled review and bounded source/archive-link treatment.',P+'evidence-3.json')
+S.refresh(S.B);S.guard()
