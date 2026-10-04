@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "fdd74fc7728622acdd04cda6a0a08e26746763d79bef2f5820b5ce0221d19199",
+  "audit_sha256": "67aba525aee6837dc263a50888a22b60e74aa599d756a43f381f7cd0d2a70bc1",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15249,7 +15249,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "de83604efae21f710cc1d7ccd33262d6cbee7a5aa91ea1e4d05f96df4388a0ec",
+          "sha256": "10b30edb4266a360c3f6bd858c657f692dfad6c9690d2946bd315d445b2f0304",
           "binding_pointers": [
             "/implementation"
           ]
@@ -22479,7 +22479,7 @@
       "authority": "Explicit current owner PR209 reconciliation/integration instruction",
       "decision_date": "2026-10-03",
       "effective_date": "2026-10-03",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/pr209-reconciliation-2026-10-03/authority.json",
@@ -22497,7 +22497,9 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "in progress"
+      "implementation_status": "in progress",
+      "superseded_by": "owner-remaining-approved-review-2026-10-03-integration-exception-sunport-exact-owner-exception",
+      "supersession_evidence": "project-state/governance/sunport-exact-archive-2026-10-04/supersession.json"
     },
     {
       "governance_id": "pr209-reconciliation-explicit-supersessions",
@@ -22547,7 +22549,7 @@
       "authority": "Explicit current owner two-record provenance/source-delivery research instruction",
       "decision_date": "2026-10-04",
       "effective_date": "2026-10-04",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/source-hold-resolution-2026-10-04/authority.json",
@@ -22565,7 +22567,9 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "bounded background research authority"
+      "implementation_status": "bounded background research authority",
+      "superseded_by": "owner-source-hold-resolution-2026-10-04-sunport-exact-owner-exception",
+      "supersession_evidence": "project-state/governance/sunport-exact-archive-2026-10-04/supersession.json"
     },
     {
       "governance_id": "supersessions-source-hold-resolution-2026-10-04",
@@ -22643,7 +22647,7 @@
       "authority": "Explicit current owner two-record provenance/source-delivery research instruction",
       "decision_date": "2026-10-04",
       "effective_date": "2026-10-04",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/source-hold-resolution-2026-10-04/sunport.json",
@@ -22661,7 +22665,9 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "bounded background research authority"
+      "implementation_status": "bounded background research authority",
+      "superseded_by": "owner-sunport-exact-archive-2026-10-04",
+      "supersession_evidence": "project-state/governance/sunport-exact-archive-2026-10-04/supersession.json"
     },
     {
       "governance_id": "explicit-supersessions-source-hold-resolution-2026-10-04",
@@ -23408,6 +23414,156 @@
       "settled_decisions": [],
       "unresolved_gates": [],
       "implementation_status": "bounded background research authority"
+    },
+    {
+      "governance_id": "owner-sunport-exact-archive-2026-10-04",
+      "category": "active owner decision",
+      "title": "owner-sunport-exact-archive-2026-10-04",
+      "scope": {
+        "candidate_ids": [
+          "src-1f9cf39555e7be6f"
+        ],
+        "task_ids": [
+          "sunport-exact-archive-2026-10-04"
+        ]
+      },
+      "authority": "Explicit current owner two-phase instruction dated 2026-10-04",
+      "decision_date": "2026-10-04",
+      "effective_date": "2026-10-04",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/sunport-exact-archive-2026-10-04/authority.json",
+          "sha256": "5932d8c4cc41f254fcf9aaed0b6a078e348ebc8ffe8e0ed32a794fc37b0c0738",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Authorize archive of ONLY src-1f9cf39555e7be6f exact canonical official printing original: https://documents.cabq.gov/planning/MasterPlans/Sunport/ABQ_Sustainable_Airport_Master_Plan-printing.pdf; 280024902 bytes;601 pages;SHA256 d4583c4d9e5e1233c402f64222fd8837ff7f0fc0a352dc2d5153776842f39d02. Explicitly supersede this object's archive-size/authorization hold. Standing150000000-byte object policy and13000000000-byte project ceiling remain unchanged for all other objects. Use canonical absent key transportation/transportation-plans/cabq-sunport-sustainable-airport-master-plan-2019.pdf; upload unchanged original, no overwrite/deletion, complete public GET exact byte/hash verification. Preserve settled scope/quality and all historical evidence. Phase A is background-only and must be integrated into main before Phase B. No visitor-visible Phase A changes.",
+      "required_actions": [
+        "Authorize archive of ONLY src-1f9cf39555e7be6f exact canonical official printing original: https://documents.cabq.gov/planning/MasterPlans/Sunport/ABQ_Sustainable_Airport_Master_Plan-printing.pdf; 280024902 bytes;601 pages;SHA256 d4583c4d9e5e1233c402f64222fd8837ff7f0fc0a352dc2d5153776842f39d02. Explicitly supersede this object's archive-size/authorization hold. Standing150000000-byte object policy and13000000000-byte project ceiling remain unchanged for all other objects. Use canonical absent key transportation/transportation-plans/cabq-sunport-sustainable-airport-master-plan-2019.pdf; upload unchanged original, no overwrite/deletion, complete public GET exact byte/hash verification. Preserve settled scope/quality and all historical evidence. Phase A is background-only and must be integrated into main before Phase B. No visitor-visible Phase A changes."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded owner task"
+    },
+    {
+      "governance_id": "owner-source-hold-resolution-2026-10-04-sunport-exact-owner-exception",
+      "category": "active owner decision",
+      "title": "owner-source-hold-resolution-2026-10-04-sunport-exact-owner-exception",
+      "scope": {
+        "candidate_ids": [
+          "src-ed75a3cb5ecc3b0b",
+          "src-1f9cf39555e7be6f"
+        ],
+        "task_ids": [
+          "source-hold-resolution-2026-10-04"
+        ]
+      },
+      "authority": "Explicit current owner two-record provenance/source-delivery research instruction",
+      "decision_date": "2026-10-04",
+      "effective_date": "2026-10-04",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/sunport-exact-archive-2026-10-04/authority.json",
+          "sha256": "5932d8c4cc41f254fcf9aaed0b6a078e348ebc8ffe8e0ed32a794fc37b0c0738",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Research exactly src-ed75a3cb5ecc3b0b selected historical FHWA /2nd-street identity and distinct family value to ordinary exhaustion, and src-1f9cf39555e7be6f official City smaller complete delivery equivalence. Preserve settled Sunport scope/quality; no substantive re-review. Related records are evidence only. Current user authorizes evidence-based background dispositions with explicit supersession of these two source holds when resolved, inventory/queue updates, full validation and zero-visible/zero-R2 integration into main followed by synchronized planning-snapshot. Preserve all prior PR209 evidence unchanged. No R2 upload, ceiling increase, derivative, recompression, direct-source-only exception, public link replacement or visitor-visible change is authorized. Only genuine remaining owner authorization choices may be recorded after research exhaustion. Stop after these two records. Explicit current owner supersession ONLY for src-1f9cf39555e7be6f: Authorize archive of ONLY src-1f9cf39555e7be6f exact canonical official printing original: https://documents.cabq.gov/planning/MasterPlans/Sunport/ABQ_Sustainable_Airport_Master_Plan-printing.pdf; 280024902 bytes;601 pages;SHA256 d4583c4d9e5e1233c402f64222fd8837ff7f0fc0a352dc2d5153776842f39d02. Explicitly supersede this object's archive-size/authorization hold. Standing150000000-byte object policy and13000000000-byte project ceiling remain unchanged for all other objects. Use canonical absent key transportation/transportation-plans/cabq-sunport-sustainable-airport-master-plan-2019.pdf; upload unchanged original, no overwrite/deletion, complete public GET exact byte/hash verification. Preserve settled scope/quality and all historical evidence. Phase A is background-only and must be integrated into main before Phase B. No visitor-visible Phase A changes. Subsequent Phase B may update the one existing Sunport entry to that verified archive under a separately frozen publication contract. All historical task boundaries and all other records remain preserved.",
+      "required_actions": [
+        "Research exactly src-ed75a3cb5ecc3b0b selected historical FHWA /2nd-street identity and distinct family value to ordinary exhaustion, and src-1f9cf39555e7be6f official City smaller complete delivery equivalence. Preserve settled Sunport scope/quality; no substantive re-review. Related records are evidence only. Current user authorizes evidence-based background dispositions with explicit supersession of these two source holds when resolved, inventory/queue updates, full validation and zero-visible/zero-R2 integration into main followed by synchronized planning-snapshot. Preserve all prior PR209 evidence unchanged. No R2 upload, ceiling increase, derivative, recompression, direct-source-only exception, public link replacement or visitor-visible change is authorized. Only genuine remaining owner authorization choices may be recorded after research exhaustion. Stop after these two records. Explicit current owner supersession ONLY for src-1f9cf39555e7be6f: Authorize archive of ONLY src-1f9cf39555e7be6f exact canonical official printing original: https://documents.cabq.gov/planning/MasterPlans/Sunport/ABQ_Sustainable_Airport_Master_Plan-printing.pdf; 280024902 bytes;601 pages;SHA256 d4583c4d9e5e1233c402f64222fd8837ff7f0fc0a352dc2d5153776842f39d02. Explicitly supersede this object's archive-size/authorization hold. Standing150000000-byte object policy and13000000000-byte project ceiling remain unchanged for all other objects. Use canonical absent key transportation/transportation-plans/cabq-sunport-sustainable-airport-master-plan-2019.pdf; upload unchanged original, no overwrite/deletion, complete public GET exact byte/hash verification. Preserve settled scope/quality and all historical evidence. Phase A is background-only and must be integrated into main before Phase B. No visitor-visible Phase A changes. Subsequent Phase B may update the one existing Sunport entry to that verified archive under a separately frozen publication contract. All historical task boundaries and all other records remain preserved."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded background research authority"
+    },
+    {
+      "governance_id": "owner-remaining-approved-review-2026-10-03-integration-exception-sunport-exact-owner-exception",
+      "category": "active owner decision",
+      "title": "owner-remaining-approved-review-2026-10-03-integration-exception-sunport-exact-owner-exception",
+      "scope": {
+        "candidate_ids": [
+          "src-ed75a3cb5ecc3b0b",
+          "src-1f9cf39555e7be6f",
+          "src-0e0cd2037365e977",
+          "src-751926439273bc52",
+          "src-255c53cabfcc83d6",
+          "src-93ef5bb0e94bfa97",
+          "src-28184729e8cc1326",
+          "src-3a4c39611a00e0a3",
+          "src-143f58c34ccb049a",
+          "src-93024cc660045c22",
+          "src-2c5c4a2267988a30",
+          "src-2aba4fa7ad3e22e2",
+          "src-ab94ccbf5e75b5d0"
+        ],
+        "task_ids": [
+          "remaining-approved-review-2026-10-03"
+        ]
+      },
+      "authority": "Explicit current owner PR209 reconciliation/integration instruction",
+      "decision_date": "2026-10-03",
+      "effective_date": "2026-10-03",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/sunport-exact-archive-2026-10-04/authority.json",
+          "sha256": "5932d8c4cc41f254fcf9aaed0b6a078e348ebc8ffe8e0ed32a794fc37b0c0738",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Execute exactly the isolated thirteen-record background reassessment described in this current owner authority; previous population-specific approval/triage is nonbinding. Preserve every other settled decision. No site or R2 mutation, merge, PR208 change, or planning-snapshot movement. Push every completed review separately. Current explicit owner exception: integrate this completed campaign through governed PR209 reconciliation and synchronize planning-snapshot after final validated main; no new review, visible change or R2 effect. Explicit current owner supersession ONLY for src-1f9cf39555e7be6f: Authorize archive of ONLY src-1f9cf39555e7be6f exact canonical official printing original: https://documents.cabq.gov/planning/MasterPlans/Sunport/ABQ_Sustainable_Airport_Master_Plan-printing.pdf; 280024902 bytes;601 pages;SHA256 d4583c4d9e5e1233c402f64222fd8837ff7f0fc0a352dc2d5153776842f39d02. Explicitly supersede this object's archive-size/authorization hold. Standing150000000-byte object policy and13000000000-byte project ceiling remain unchanged for all other objects. Use canonical absent key transportation/transportation-plans/cabq-sunport-sustainable-airport-master-plan-2019.pdf; upload unchanged original, no overwrite/deletion, complete public GET exact byte/hash verification. Preserve settled scope/quality and all historical evidence. Phase A is background-only and must be integrated into main before Phase B. No visitor-visible Phase A changes. Subsequent Phase B may update the one existing Sunport entry to that verified archive under a separately frozen publication contract. All historical task boundaries and all other records remain preserved.",
+      "required_actions": [
+        "Execute exactly the isolated thirteen-record background reassessment described in this current owner authority; previous population-specific approval/triage is nonbinding. Preserve every other settled decision. No site or R2 mutation, merge, PR208 change, or planning-snapshot movement. Push every completed review separately. Current explicit owner exception: integrate this completed campaign through governed PR209 reconciliation and synchronize planning-snapshot after final validated main; no new review, visible change or R2 effect. Explicit current owner supersession ONLY for src-1f9cf39555e7be6f: Authorize archive of ONLY src-1f9cf39555e7be6f exact canonical official printing original: https://documents.cabq.gov/planning/MasterPlans/Sunport/ABQ_Sustainable_Airport_Master_Plan-printing.pdf; 280024902 bytes;601 pages;SHA256 d4583c4d9e5e1233c402f64222fd8837ff7f0fc0a352dc2d5153776842f39d02. Explicitly supersede this object's archive-size/authorization hold. Standing150000000-byte object policy and13000000000-byte project ceiling remain unchanged for all other objects. Use canonical absent key transportation/transportation-plans/cabq-sunport-sustainable-airport-master-plan-2019.pdf; upload unchanged original, no overwrite/deletion, complete public GET exact byte/hash verification. Preserve settled scope/quality and all historical evidence. Phase A is background-only and must be integrated into main before Phase B. No visitor-visible Phase A changes. Subsequent Phase B may update the one existing Sunport entry to that verified archive under a separately frozen publication contract. All historical task boundaries and all other records remain preserved."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "in progress"
+    },
+    {
+      "governance_id": "supersession-sunport-exact-archive-2026-10-04",
+      "category": "active owner decision",
+      "title": "supersession-sunport-exact-archive-2026-10-04",
+      "scope": {
+        "task_ids": [
+          "sunport-exact-archive-2026-10-04"
+        ]
+      },
+      "authority": "Explicit current owner two-phase instruction dated 2026-10-04",
+      "decision_date": "2026-10-04",
+      "effective_date": "2026-10-04",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/sunport-exact-archive-2026-10-04/supersession.json",
+          "sha256": "5503a9abe180a4f865f6c2ceaf0c94e649747df23a37d30b8418c97e7e1f9edb",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Apply the explicit exact-object owner exception while preserving all earlier source, identity and substantive review evidence.",
+      "required_actions": [
+        "Apply the explicit exact-object owner exception while preserving all earlier source, identity and substantive review evidence."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded owner task"
     }
   ]
 }

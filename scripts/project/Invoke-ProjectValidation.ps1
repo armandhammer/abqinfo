@@ -1,3 +1,5 @@
+& python "$PSScriptRoot/OwnerResources20261004.py" guard
+if ($LASTEXITCODE) { throw 'Owner resources exact-delta guard failed.' }
 [CmdletBinding()]
 param(
   [string]$InventoryPath = 'project-state/master-inventory.json',
