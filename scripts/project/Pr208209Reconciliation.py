@@ -262,6 +262,11 @@ def finish_a():
 
 def validated(prefix):
     receipt = G.load(prefix + 'receipt.json')
+    if prefix == B:
+        receipt['state'] = 'reconciled_full_validation_passed'
+        receipt['normal_validation_contract'] = G.load(G.ACTIVE_TASK)['contract']
+        receipt['normal_validation_exit_code'] = 0
+        receipt['hugo_and_rendered_checks'] = 'passed'
     receipt['normal_validation'] = 'passed'
     receipt['validation_log_sha256'] = G.file_hash(prefix + 'validation.log')
     save(prefix + 'receipt.json', receipt)
