@@ -1,0 +1,646 @@
+{
+  "requested_url": "https://cabq.maps.arcgis.com/sharing/rest/content/items/7af5b003bd3948078e8d1ecb05d0d3d6/data?f=pjson",
+  "observed_at_utc": "2026-10-04T02:28:04.408286+00:00",
+  "role": "Supporting authoritative-source evidence; not rendered usability proof",
+  "resolved_url": "https://cabq.maps.arcgis.com/sharing/rest/content/items/7af5b003bd3948078e8d1ecb05d0d3d6/data?f=pjson",
+  "http_status": 200,
+  "content_type": "text/plain;charset=utf-8",
+  "bytes": 9574,
+  "sha256": "16de72e2d47239f5b9d6a2a135b99100fd57e79a796fb355119e537d7317bd85",
+  "data": {
+    "operationalLayers": [
+      {
+        "id": "1899ec0659d-layer-6",
+        "title": "Potentially Eligible Streets",
+        "url": "https://dmdmaps.cabq.gov/serverext/rest/services/Public/Streets/MapServer",
+        "layerType": "ArcGISMapServiceLayer",
+        "layers": [
+          {
+            "layerDefinition": {
+              "definitionExpression": "FUNCTIONALCLASSIFICATION IN (0,5) AND Jurisdiction = 'City'",
+              "drawingInfo": {
+                "showLabels": true,
+                "transparency": 0,
+                "renderer": {
+                  "type": "simple",
+                  "symbol": {
+                    "type": "esriSLS",
+                    "color": [
+                      40,
+                      189,
+                      200,
+                      255
+                    ],
+                    "width": 1.5,
+                    "style": "esriSLSSolid"
+                  }
+                }
+              },
+              "source": {
+                "type": "mapLayer",
+                "mapLayerId": 0
+              }
+            },
+            "id": 0,
+            "showLegend": true,
+            "minScale": 0,
+            "maxScale": 0,
+            "parentLayerId": -1,
+            "disablePopup": true,
+            "popupInfo": {
+              "popupElements": [
+                {
+                  "type": "fields",
+                  "description": "",
+                  "fieldInfos": [
+                    {
+                      "fieldName": "STREETNAME",
+                      "isEditable": true,
+                      "label": "STREETNAME",
+                      "visible": true
+                    },
+                    {
+                      "fieldName": "STREETDESIGNATION",
+                      "isEditable": true,
+                      "label": "StreetDesignation",
+                      "visible": true
+                    },
+                    {
+                      "fieldName": "STREETQUADRANT",
+                      "isEditable": true,
+                      "label": "StreetQuadrant",
+                      "visible": true
+                    },
+                    {
+                      "fieldName": "FUNCTIONALCLASSIFICATION",
+                      "format": {
+                        "digitSeparator": true,
+                        "places": 0
+                      },
+                      "isEditable": true,
+                      "label": "FunctionalClassification",
+                      "visible": true
+                    },
+                    {
+                      "fieldName": "Jurisdiction",
+                      "isEditable": true,
+                      "label": "Jurisdiction",
+                      "visible": true
+                    }
+                  ],
+                  "title": ""
+                }
+              ],
+              "fieldInfos": [
+                {
+                  "fieldName": "OBJECTID",
+                  "isEditable": false,
+                  "label": "OBJECTID",
+                  "visible": false
+                },
+                {
+                  "fieldName": "ALTERNATEDGN",
+                  "isEditable": true,
+                  "label": "AlternateDgn",
+                  "visible": false
+                },
+                {
+                  "fieldName": "ALTERNATESTR",
+                  "isEditable": true,
+                  "label": "ALTERNATESTR",
+                  "visible": false
+                },
+                {
+                  "fieldName": "COMMENTS",
+                  "isEditable": true,
+                  "label": "COMMENTS",
+                  "visible": false
+                },
+                {
+                  "fieldName": "created_date",
+                  "format": {
+                    "dateFormat": "longMonthDayYear",
+                    "digitSeparator": false
+                  },
+                  "isEditable": true,
+                  "label": "created_date",
+                  "visible": false
+                },
+                {
+                  "fieldName": "created_user",
+                  "isEditable": true,
+                  "label": "created_user",
+                  "visible": false
+                },
+                {
+                  "fieldName": "ENTERDATE",
+                  "format": {
+                    "dateFormat": "longMonthDayYear",
+                    "digitSeparator": false
+                  },
+                  "isEditable": true,
+                  "label": "ENTERDATE",
+                  "visible": false
+                },
+                {
+                  "fieldName": "FUNCTIONALCLASSIFICATION",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "FunctionalClassification",
+                  "visible": true
+                },
+                {
+                  "fieldName": "GlobalID",
+                  "isEditable": false,
+                  "label": "GlobalID",
+                  "visible": false
+                },
+                {
+                  "fieldName": "Jurisdiction",
+                  "isEditable": true,
+                  "label": "Jurisdiction",
+                  "visible": true
+                },
+                {
+                  "fieldName": "last_edited_date",
+                  "format": {
+                    "dateFormat": "longMonthDayYear",
+                    "digitSeparator": false
+                  },
+                  "isEditable": true,
+                  "label": "last_edited_date",
+                  "visible": false
+                },
+                {
+                  "fieldName": "last_edited_user",
+                  "isEditable": true,
+                  "label": "last_edited_user",
+                  "visible": false
+                },
+                {
+                  "fieldName": "LEFTHIGH",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "LeftHigh",
+                  "visible": false
+                },
+                {
+                  "fieldName": "LEFTLOW",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "LeftLow",
+                  "visible": false
+                },
+                {
+                  "fieldName": "RIGHTHIGH",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "RightHigh",
+                  "visible": false
+                },
+                {
+                  "fieldName": "RIGHTLOW",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "RightLow",
+                  "visible": false
+                },
+                {
+                  "fieldName": "Shape.STLength()",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Shape.STLength()",
+                  "visible": false
+                },
+                {
+                  "fieldName": "STREETDESIGNATION",
+                  "isEditable": true,
+                  "label": "StreetDesignation",
+                  "visible": true
+                },
+                {
+                  "fieldName": "STREETNAME",
+                  "isEditable": true,
+                  "label": "STREETNAME",
+                  "visible": true
+                },
+                {
+                  "fieldName": "STREETQUADRANT",
+                  "isEditable": true,
+                  "label": "StreetQuadrant",
+                  "visible": true
+                }
+              ],
+              "title": "Potentially Eligible Street: {STREETNAME}"
+            },
+            "name": "Potentially Eligible Streets",
+            "defaultVisibility": true
+          }
+        ],
+        "visibleLayers": [
+          0
+        ]
+      },
+      {
+        "id": "1899e9b9438-layer-8",
+        "opacity": 0.9,
+        "disablePopup": false,
+        "title": "Emergency Routes",
+        "url": "https://services.arcgis.com/CWv1abTnC3urn4bV/arcgis/rest/services/Emergency_Routes/FeatureServer/1",
+        "visibility": true,
+        "itemId": "a94c02cf92324022bed57f3609c5ade2",
+        "layerType": "ArcGISFeatureLayer",
+        "layerDefinition": {
+          "minScale": 210880.973259,
+          "featureReduction": null,
+          "drawingInfo": {
+            "renderer": {
+              "type": "simple",
+              "visualVariables": [
+                {
+                  "type": "sizeInfo",
+                  "valueExpression": "$view.scale",
+                  "stops": [
+                    {
+                      "size": 6.988,
+                      "value": 282.124294
+                    },
+                    {
+                      "size": 3.494,
+                      "value": 2256.994353
+                    },
+                    {
+                      "size": 2.6205000000000003,
+                      "value": 18055.954822
+                    },
+                    {
+                      "size": 1.747,
+                      "value": 144447.638572
+                    }
+                  ]
+                }
+              ],
+              "symbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  68,
+                  0,
+                  255
+                ],
+                "width": 1.747,
+                "style": "esriSLSSolid"
+              }
+            }
+          }
+        },
+        "showLabels": true,
+        "popupInfo": {
+          "popupElements": [
+            {
+              "type": "fields",
+              "description": "",
+              "fieldInfos": [
+                {
+                  "fieldName": "FID",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 0
+                  },
+                  "isEditable": false,
+                  "label": "FID",
+                  "visible": true
+                },
+                {
+                  "fieldName": "STREETNAME",
+                  "isEditable": true,
+                  "label": "STREETNAME",
+                  "visible": true
+                },
+                {
+                  "fieldName": "MILES",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 6
+                  },
+                  "isEditable": true,
+                  "label": "MILES",
+                  "visible": true
+                },
+                {
+                  "fieldName": "RouteCateg",
+                  "isEditable": true,
+                  "label": "RouteCateg",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Functional",
+                  "isEditable": true,
+                  "label": "Functional",
+                  "visible": true
+                }
+              ],
+              "title": ""
+            }
+          ],
+          "expressionInfos": [],
+          "fieldInfos": [
+            {
+              "fieldName": "FID",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": false,
+              "label": "FID",
+              "visible": true
+            },
+            {
+              "fieldName": "STREETNAME",
+              "isEditable": true,
+              "label": "STREETNAME",
+              "visible": true
+            },
+            {
+              "fieldName": "MILES",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "isEditable": true,
+              "label": "MILES",
+              "visible": true
+            },
+            {
+              "fieldName": "RouteCateg",
+              "isEditable": true,
+              "label": "RouteCateg",
+              "visible": true
+            },
+            {
+              "fieldName": "Functional",
+              "isEditable": true,
+              "label": "Functional",
+              "visible": true
+            },
+            {
+              "fieldName": "GlobalID",
+              "isEditable": true,
+              "label": "GlobalID",
+              "visible": false
+            },
+            {
+              "fieldName": "Shape__Length",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "isEditable": false,
+              "label": "Shape__Length",
+              "visible": false
+            }
+          ],
+          "title": "Not Eligible - Emergency Route: {STREETNAME}"
+        }
+      },
+      {
+        "id": "Current_City_Limits_1135",
+        "opacity": 0.7,
+        "disablePopup": true,
+        "title": "Current City Limits",
+        "url": "https://services.arcgis.com/CWv1abTnC3urn4bV/arcgis/rest/services/Current_City_Limits/FeatureServer/0",
+        "visibility": true,
+        "itemId": "90d3ef2da184404facd735f17ef5b2ee",
+        "layerType": "ArcGISFeatureLayer",
+        "featureEffect": null,
+        "layerDefinition": {
+          "definitionExpression": null
+        },
+        "popupInfo": {
+          "popupElements": [
+            {
+              "type": "fields",
+              "description": "",
+              "fieldInfos": [
+                {
+                  "fieldName": "OBJECTID",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 0
+                  },
+                  "isEditable": false,
+                  "label": "OBJECTID",
+                  "visible": true
+                },
+                {
+                  "fieldName": "JURISDICTIONNAME",
+                  "isEditable": true,
+                  "label": "JURISDICTIONNAME",
+                  "visible": true
+                },
+                {
+                  "fieldName": "JURISDICTIONTYPE",
+                  "isEditable": true,
+                  "label": "JURISDICTIONTYPE",
+                  "visible": true
+                },
+                {
+                  "fieldName": "created_user",
+                  "isEditable": false,
+                  "label": "created_user",
+                  "visible": true
+                },
+                {
+                  "fieldName": "created_date",
+                  "isEditable": false,
+                  "label": "created_date",
+                  "visible": true
+                },
+                {
+                  "fieldName": "last_edited_user",
+                  "isEditable": false,
+                  "label": "last_edited_user",
+                  "visible": true
+                },
+                {
+                  "fieldName": "last_edited_date",
+                  "isEditable": false,
+                  "label": "last_edited_date",
+                  "visible": true
+                },
+                {
+                  "fieldName": "GlobalID",
+                  "isEditable": false,
+                  "label": "GlobalID",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Shape__Area",
+                  "isEditable": true,
+                  "label": "Shape__Area",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Shape__Length",
+                  "isEditable": true,
+                  "label": "Shape__Length",
+                  "visible": true
+                }
+              ],
+              "title": ""
+            }
+          ],
+          "expressionInfos": [],
+          "fieldInfos": [
+            {
+              "fieldName": "OBJECTID",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": false,
+              "label": "OBJECTID",
+              "visible": true
+            },
+            {
+              "fieldName": "JURISDICTIONNAME",
+              "isEditable": true,
+              "label": "JURISDICTIONNAME",
+              "visible": true
+            },
+            {
+              "fieldName": "JURISDICTIONTYPE",
+              "isEditable": true,
+              "label": "JURISDICTIONTYPE",
+              "visible": true
+            },
+            {
+              "fieldName": "created_user",
+              "isEditable": false,
+              "label": "created_user",
+              "visible": true
+            },
+            {
+              "fieldName": "created_date",
+              "isEditable": false,
+              "label": "created_date",
+              "visible": true
+            },
+            {
+              "fieldName": "last_edited_user",
+              "isEditable": false,
+              "label": "last_edited_user",
+              "visible": true
+            },
+            {
+              "fieldName": "last_edited_date",
+              "isEditable": false,
+              "label": "last_edited_date",
+              "visible": true
+            },
+            {
+              "fieldName": "GlobalID",
+              "isEditable": false,
+              "label": "GlobalID",
+              "visible": true
+            },
+            {
+              "fieldName": "Shape__Area",
+              "isEditable": true,
+              "label": "Shape__Area",
+              "visible": true
+            },
+            {
+              "fieldName": "Shape__Length",
+              "isEditable": true,
+              "label": "Shape__Length",
+              "visible": true
+            }
+          ],
+          "title": "{JURISDICTIONNAME}"
+        }
+      },
+      {
+        "id": "VectorTile_5522",
+        "opacity": 1,
+        "title": "World Terrain Base",
+        "visibility": false,
+        "layerType": "VectorTileLayer",
+        "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/33064a20de0c48d2bb61efa8faca93a8/resources/styles/root.json"
+      }
+    ],
+    "baseMap": {
+      "baseMapLayers": [
+        {
+          "id": "World_Hillshade_2428",
+          "opacity": 1,
+          "title": "World Hillshade",
+          "url": "https://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer",
+          "visibility": true,
+          "layerType": "ArcGISTiledMapServiceLayer"
+        },
+        {
+          "id": "199638bd8fe-layer-68",
+          "title": "coabase Light Theme",
+          "itemId": "47019f61fa6045808e658162c2203554",
+          "layerType": "VectorTileLayer",
+          "minScale": 2311162.217154,
+          "maxScale": 0,
+          "blendMode": "multiply",
+          "styleUrl": "https://tiles.arcgis.com/tiles/CWv1abTnC3urn4bV/arcgis/rest/services/COA_Basemap/VectorTileServer/resources/styles/root.json"
+        },
+        {
+          "id": "199638bd49f-layer-67",
+          "title": "coabase Reference Light Theme",
+          "itemId": "86b957f1b70b4b6d85044694229c4c7f",
+          "layerType": "VectorTileLayer",
+          "minScale": 2311162.217154,
+          "maxScale": 0,
+          "styleUrl": "https://tiles.arcgis.com/tiles/CWv1abTnC3urn4bV/arcgis/rest/services/Labels_Light_coabase/VectorTileServer/resources/styles/root.json",
+          "isReference": true
+        }
+      ],
+      "title": "Terrain with Labels"
+    },
+    "authoringApp": "ArcGISMapViewer",
+    "authoringAppVersion": "2025.2",
+    "initialState": {
+      "viewpoint": {
+        "targetGeometry": {
+          "spatialReference": {
+            "latestWkid": 3857,
+            "wkid": 102100
+          },
+          "xmin": -11876823.07997351,
+          "ymin": 4168788.068642375,
+          "xmax": -11861172.59843214,
+          "ymax": 4185776.198178733
+        }
+      }
+    },
+    "spatialReference": {
+      "latestWkid": 3857,
+      "wkid": 102100
+    },
+    "timeZone": "system",
+    "version": "2.34"
+  }
+}

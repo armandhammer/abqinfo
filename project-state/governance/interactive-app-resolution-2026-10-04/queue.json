@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "artifact_type": "nine_record_interactive_application_resolution_queue",
-  "recorded_at": "2026-10-04T02:27:01.298144+00:00",
+  "recorded_at": "2026-10-04T02:30:01.364099+00:00",
   "campaign_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/campaign.json",
   "selection_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/selection.json",
-  "pending_review_count": 368,
+  "pending_review_count": 367,
   "pending_ids": [
     "lin-2f6fbe4ffb0b6564",
     "lin-7bdbcdc09efe2035",
@@ -370,7 +370,6 @@
     "src-fddc4e19e1cb9e13",
     "src-fe2821d289c917cf",
     "src-fe3e01d87beef289",
-    "src-fe8c43a2ca9b7417",
     "src-fedd2569de36e85c",
     "src-ff72267432817a38",
     "src-ffeaf7c21fd42639"
@@ -744,24 +743,16 @@
     "src-f7c7bd5b273def22": "Current Legistar action histories and complete final-file attachments establish bill-level enactment, not that the held blank-enactment, floor-amendment or exhibit-incomplete PDF is the complete adopted delivery. Full Word/PDF comparisons and distinct page counts are saved. Resolve final action version, amendments and all referenced exhibits; do not infer missing legal text from adoption metadata. Erroneous /texts/{version} API responses have mismatched MatterTextMatterId and are rejected as evidence.",
     "src-fcbe6a7ebcf916a1": "Current Legistar action histories and complete final-file attachments establish bill-level enactment, not that the held blank-enactment, floor-amendment or exhibit-incomplete PDF is the complete adopted delivery. Full Word/PDF comparisons and distinct page counts are saved. Resolve final action version, amendments and all referenced exhibits; do not infer missing legal text from adoption metadata. Erroneous /texts/{version} API responses have mismatched MatterTextMatterId and are rejected as evidence."
   },
-  "ungated_pending_count": 5,
+  "ungated_pending_count": 4,
   "ungated_pending_ids": [
     "src-27314f06651cc1c9",
     "src-4c2b3614256aaf20",
     "src-7867bdf940d22b3f",
-    "src-aece84c62701c551",
-    "src-fe8c43a2ca9b7417"
+    "src-aece84c62701c551"
   ],
   "genuinely_actionable_ungated_pending_count": 0,
   "actionable_ungated_pending_ids": [],
   "unresolved_ungated_prerequisites": [
-    {
-      "id": "src-fe8c43a2ca9b7417",
-      "reason": "Emergency/ineligible-roadways app 74daadcad5a740928893f163e952d854: meaningful local route policy, but application-shell HTTP 200 does not prove usability. No browser available for required rendering.",
-      "category": "live_application_render_or_relationship_blocker",
-      "state": "unresolved_ungated_not_currently_actionable",
-      "browser_inventory": "apps=[] browsers=[]"
-    },
     {
       "id": "src-4c2b3614256aaf20",
       "reason": "Pedestrian Safety Action Plan Experience a5918cf455ae4fe7835cf9b5fe0c78cb: meaningful local safety-policy application; content/usability must be rendered, not inferred from shell. Browser unavailable.",
@@ -806,19 +797,6 @@
       "order": 2,
       "boundary": "Complete saved family; split by substantive function before decisions.",
       "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-023.json"
-    },
-    {
-      "family_id": "family-098",
-      "family": "cabq.maps.arcgis.com/apps/instant/basic",
-      "candidate_ids": [
-        "src-fe8c43a2ca9b7417"
-      ],
-      "candidate_count": 1,
-      "saved_preparation_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-098.json",
-      "selection_is_not_a_disposition": true,
-      "order": 21,
-      "boundary": "Complete saved family; split by substantive function before decisions.",
-      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-098.json"
     },
     {
       "family_id": "family-099",
@@ -888,6 +866,13 @@
       "reason": "Rendered and substantively assessed live application; separate reviewed visitor-visible PR required; no R2 object applicable.",
       "canonical_page": "content/transportation/bicycling/bike-maps.md",
       "evidence": "project-state/governance/interactive-app-resolution-2026-10-04/review-3.json"
+    },
+    {
+      "id": "src-fe8c43a2ca9b7417",
+      "title": "View a map of emergency routes and ineligible roadways.",
+      "reason": "Rendered and substantively assessed live application; separate reviewed visitor-visible PR required; no R2 object applicable.",
+      "canonical_page": "content/transportation/roadway-projects/speed-management.md",
+      "evidence": "project-state/governance/interactive-app-resolution-2026-10-04/review-5.json"
     }
   ],
   "visitor_visible_content_changed": false,
@@ -895,7 +880,7 @@
   "research_prerequisite_artifact": "project-state/discovery/codex-human-review-followup-queue.json",
   "followup_artifact": "project-state/discovery/background-followup-2026-09-26/decisions.json",
   "source_queue_artifact": "project-state/governance/source-hold-resolution-2026-10-04/queue.json",
-  "inventory_generated_at": "2026-10-04T02:26:58.287512Z",
+  "inventory_generated_at": "2026-10-04T02:29:58.387495Z",
   "pr202_implemented_ids_removed_from_approved": [
     "src-0d6fc7345fa112b4",
     "src-105264c6cb316de5",
@@ -968,7 +953,7 @@
     "completed": 13,
     "accounting": "project-state/governance/remaining-approved-review-2026-10-03/accounting.json"
   },
-  "inventory_sha256": "c2ef3723cdf1b7343743cc6dc1cf7a54f72a3fd42b8f333b86c77b3f56a804f6",
+  "inventory_sha256": "3cce4de3c8b728f622fa639b18c44caf8d2b754988a0a8b1abe792fc8b2670f0",
   "source_hold_resolution": {
     "task": "source-hold-resolution-2026-10-04",
     "population": "project-state/governance/source-hold-resolution-2026-10-04/population.json",
@@ -984,7 +969,8 @@
       "src-29bec2b60308d513",
       "src-58b6e48562da781c",
       "src-5a12b40f6dcba285",
-      "src-a9ddff947a4282c9"
+      "src-a9ddff947a4282c9",
+      "src-fe8c43a2ca9b7417"
     ]
   }
 }
