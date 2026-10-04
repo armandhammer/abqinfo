@@ -1,6 +1,6 @@
 {
   "task_id": "pr209-reconciliation-2026-10-03",
-  "state": "reconciled_full_validation_passed",
+  "state": "complete_integrated_background_campaign",
   "phase_a_integration_commit": "95601d7ba78cf84fad01c92049d040ad861c0e1c",
   "pr208_merge_commit": "26442ad202d696f8582b634ecf5283ee56b8482a",
   "original_campaign_head": "758e29120fd40b4a5a20d791c2cbc62445ddd36e",
@@ -42,5 +42,29 @@
   "normal_validation_contract": "project-state/governance/pr209-reconciliation-2026-10-03/contract-v7.json",
   "normal_validation_exit_code": 0,
   "hugo_and_rendered_checks": "passed",
-  "validation_log_sha256": "ce218030fe5e3e81fac51b49eda92f636da0024a8b7bd7149cfe8a597e629a3a"
+  "validation_log_sha256": "ce218030fe5e3e81fac51b49eda92f636da0024a8b7bd7149cfe8a597e629a3a",
+  "pr209": {
+    "baseRefName": "main",
+    "headRefOid": "5c07208f02cf09e4c274f2d86813c17c01524a7a",
+    "mergeCommit": {
+      "oid": "16a95d1d03b2c0328178a2a2116f19d2f50824cf"
+    },
+    "mergedAt": "2026-10-04T00:14:01Z",
+    "number": 209,
+    "state": "MERGED",
+    "url": "https://github.com/armandhammer/abqinfo/pull/209"
+  },
+  "pr209_merge_commit": "16a95d1d03b2c0328178a2a2116f19d2f50824cf",
+  "postmerge_verification": "project-state/governance/pr209-reconciliation-2026-10-03/postmerge-verification.json",
+  "final_queue_counts": {
+    "pending": 373,
+    "approved": 1,
+    "human_review": 0,
+    "remaining_nonterminal": 926,
+    "gated_pending": 321,
+    "source_or_structural_blocked_pending": 42,
+    "ungated_pending": 10,
+    "actionable_ungated_pending": 0
+  },
+  "no_active_unfinished_publication_task": true
 }

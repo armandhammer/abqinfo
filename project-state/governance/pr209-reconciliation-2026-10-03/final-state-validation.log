@@ -1,0 +1,257 @@
+COMMAND: C:\Python314\python.exe -X utf8 scripts/project/Resolve-TaskGovernance.py active --phase final
+EXIT: 0
+warning: in the working copy of 'project-state/CURRENT.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'project-state/checkpoint.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'project-state/governance-registry.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'project-state/governance/active-task.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'project-state/governance/audit-2026-09-27/artifact-audit.json', LF will be replaced by CRLF the next time Git touches it
+{
+  "task_id": "pr209-reconciliation-2026-10-03",
+  "phase": "final",
+  "applicable_rules": 43,
+  "population_sha256": "2aaf69a80ca9610aedf51f70f8df0366c89b286c04b2e4b0b412c5150add0e6f",
+  "changed_paths": [
+    ".gitattributes",
+    "project-state/CURRENT.md",
+    "project-state/checkpoint.json",
+    "project-state/discovery/consolidated-human-review-queue.json",
+    "project-state/governance-registry.json",
+    "project-state/governance/active-task.json",
+    "project-state/governance/audit-2026-09-27/artifact-audit.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/authority.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/baseline-equivalence.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/campaign-verification.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/conflict-resolution.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/contract-v1.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/contract-v2.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/contract-v3.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/contract-v4.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/contract-v5.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/contract-v6.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/contract-v7.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/contract-v8.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/contract-v9.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/final-ref-verification.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/implementation.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/integration.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/population-v2.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/population.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/postmerge-verification.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/pr-body.md",
+    "project-state/governance/pr209-reconciliation-2026-10-03/pr-retarget-verification.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/starting-remote-state.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/supersession.json",
+    "project-state/governance/pr209-reconciliation-2026-10-03/validation-attempt-1.log",
+    "project-state/governance/pr209-reconciliation-2026-10-03/validation.log",
+    "project-state/governance/remaining-approved-review-2026-10-03/accounting.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/authority.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/bootstrap-validation.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v1.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v10.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v11.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v12.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v13.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v14.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v15.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v16.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v17.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v18.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v19.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v2.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v20.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v21.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v22.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v23.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v24.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v25.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v26.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v27.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v28.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v29.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v3.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v30.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v31.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v32.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v33.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v34.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v35.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v36.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v37.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v38.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v39.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v4.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v40.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v41.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v42.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v43.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v44.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v45.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v46.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v5.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v6.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v7.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v8.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/contract-v9.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/family-analysis.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/implementation.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/milestone-13.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/milestone-3.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/milestone-6.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/milestone-9.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/owner-decisions-needed.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/population-v2.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/population-v3.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/population-v4.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/population-v5.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/population-v6.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/population.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/pr-body.md",
+    "project-state/governance/remaining-approved-review-2026-10-03/prior-records.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/progress.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/queue.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/receipt.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-0e0cd2037365e977/article.html",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-0e0cd2037365e977/article.txt",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-0e0cd2037365e977/family.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-0e0cd2037365e977/research.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-0e0cd2037365e977/retrievals.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-0e0cd2037365e977/review.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-0e0cd2037365e977/source.html",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-0e0cd2037365e977/validation.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-143f58c34ccb049a/article.html",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-143f58c34ccb049a/article.txt",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-143f58c34ccb049a/retrievals.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-143f58c34ccb049a/review.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-143f58c34ccb049a/validation.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-1f9cf39555e7be6f/current.html",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-1f9cf39555e7be6f/current.txt",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-1f9cf39555e7be6f/publication-plan.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-1f9cf39555e7be6f/research.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-1f9cf39555e7be6f/retrievals.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-1f9cf39555e7be6f/review.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-1f9cf39555e7be6f/validation.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-255c53cabfcc83d6/article.html",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-255c53cabfcc83d6/article.txt",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-255c53cabfcc83d6/current.html",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-255c53cabfcc83d6/current.txt",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-255c53cabfcc83d6/retrievals.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-255c53cabfcc83d6/review.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-255c53cabfcc83d6/supplement.html",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-255c53cabfcc83d6/supplement.txt",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-255c53cabfcc83d6/validation.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-28184729e8cc1326/article.html",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-28184729e8cc1326/article.txt",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-28184729e8cc1326/retrievals.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-28184729e8cc1326/review.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-28184729e8cc1326/validation.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-2aba4fa7ad3e22e2/article.html",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-2aba4fa7ad3e22e2/article.txt",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-2aba4fa7ad3e22e2/current.html",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-2aba4fa7ad3e22e2/current.txt",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-2aba4fa7ad3e22e2/retrievals.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-2aba4fa7ad3e22e2/review.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-2aba4fa7ad3e22e2/supplement.html",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-2aba4fa7ad3e22e2/supplement.txt",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-2aba4fa7ad3e22e2/validation.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-2c5c4a2267988a30/article.html",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-2c5c4a2267988a30/article.txt",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-2c5c4a2267988a30/current.html",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-2c5c4a2267988a30/current.txt",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-2c5c4a2267988a30/retrievals.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-2c5c4a2267988a30/review.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-2c5c4a2267988a30/supplement.html",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-2c5c4a2267988a30/supplement.txt",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-2c5c4a2267988a30/validation.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-3a4c39611a00e0a3/article.html",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-3a4c39611a00e0a3/article.txt",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-3a4c39611a00e0a3/current.txt",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-3a4c39611a00e0a3/family.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-3a4c39611a00e0a3/research.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-3a4c39611a00e0a3/retrievals.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-3a4c39611a00e0a3/review.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-3a4c39611a00e0a3/validation.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-751926439273bc52/article.html",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-751926439273bc52/article.txt",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-751926439273bc52/retrievals.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-751926439273bc52/review.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-751926439273bc52/validation.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-93024cc660045c22/article.html",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-93024cc660045c22/article.txt",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-93024cc660045c22/current.txt",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-93024cc660045c22/retrievals.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-93024cc660045c22/review.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-93024cc660045c22/validation.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-93ef5bb0e94bfa97/article.html",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-93ef5bb0e94bfa97/article.txt",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-93ef5bb0e94bfa97/retrievals.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-93ef5bb0e94bfa97/review.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-93ef5bb0e94bfa97/validation.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-ab94ccbf5e75b5d0/article.html",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-ab94ccbf5e75b5d0/article.txt",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-ab94ccbf5e75b5d0/retrievals.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-ab94ccbf5e75b5d0/review.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-ab94ccbf5e75b5d0/supplement.html",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-ab94ccbf5e75b5d0/supplement.txt",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-ab94ccbf5e75b5d0/validation.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-ed75a3cb5ecc3b0b/article.html",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-ed75a3cb5ecc3b0b/article.txt",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-ed75a3cb5ecc3b0b/retrievals.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-ed75a3cb5ecc3b0b/review.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/records/src-ed75a3cb5ecc3b0b/validation.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/remote-check.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/starting-remote-state.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/summary.md",
+    "project-state/governance/remaining-approved-review-2026-10-03/supersession.json",
+    "project-state/governance/remaining-approved-review-2026-10-03/validation.log",
+    "project-state/master-inventory.json",
+    "project-state/ordinary-queue-current.json",
+    "project-state/workflow-stage-lifecycle.json",
+    "scripts/project/Invoke-ProjectValidation.ps1",
+    "scripts/project/Pr208209Reconciliation.py",
+    "scripts/project/Review-RemainingApproved.py"
+  ]
+}
+
+COMMAND: C:\Python314\python.exe -X utf8 scripts/project/Test-WorkflowStageLifecycle.py
+EXIT: 0
+warning: in the working copy of 'project-state/CURRENT.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'project-state/checkpoint.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'project-state/governance-registry.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'project-state/governance/active-task.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'project-state/governance/audit-2026-09-27/artifact-audit.json', LF will be replaced by CRLF the next time Git touches it
+PASS: PR209 exact thirteen-record reconciliation; zero visitor-visible/R2 delta; protected production and checkpoints preserved.
+PASS: 37 contiguous stage intervals; 340 unchanged historical evidence files; all regressions in normal suite; active exact-delta guard and negative coverage fixtures passed.
+
+COMMAND: C:\Python314\python.exe -X utf8 scripts/project/Pr208209Reconciliation.py guard_a
+EXIT: 0
+PASS: PR208 closeout exact-delta, production witnesses and historical evidence preserved.
+
+COMMAND: C:\Python314\python.exe -X utf8 scripts/project/Review-RemainingApproved.py
+EXIT: 0
+
+COMMAND: C:\Python314\python.exe -X utf8 scripts/project/Build-ConsolidatedHumanReviewQueue.py --check
+EXIT: 0
+{"result": "passed", "records": 0, "packages": 0, "mode": "check"}
+
+COMMAND: C:\Python314\python.exe -X utf8 scripts/project/Test-CurrentResumePointer.py
+EXIT: 0
+CURRENT.md resume-pointer regression passed.
+
+COMMAND: pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/project/Test-ArchiveReconciliationCheckpointCounts.ps1
+EXIT: 0
+PASS: checkpoint counts equal authoritative master inventory; total=7140, remaining=926, next=lin-2f6fbe4ffb0b6564.
+
+COMMAND: C:\Python314\python.exe -X utf8 scripts/project/Test-Pr208CountyScopeCorrection.py --rendered-root tmp/site-build
+EXIT: 0
+PASS: only two County scope exclusions/removals; original review, City additions, Sunport, PR207 and provenance preserved.
+
+COMMAND: git diff --check 95601d7ba78cf84fad01c92049d040ad861c0e1c
+EXIT: 0
+warning: in the working copy of 'project-state/CURRENT.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'project-state/checkpoint.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'project-state/governance-registry.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'project-state/governance/active-task.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'project-state/governance/audit-2026-09-27/artifact-audit.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'project-state/governance/pr209-reconciliation-2026-10-03/implementation.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'project-state/governance/pr209-reconciliation-2026-10-03/receipt.json', LF will be replaced by CRLF the next time Git touches it

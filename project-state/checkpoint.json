@@ -1,6 +1,6 @@
 {
   "recorded_at": "2026-10-03T21:25:41.5924866Z",
-  "completed_item_range": "PR208 production closed out; thirteen-record campaign complete and reconciled",
+  "completed_item_range": "PR208 production verified and closed out; PR209 thirteen-record background campaign integrated",
   "total_candidates": 7140,
   "counts_by_status": {
     "pending review": 373,
@@ -21,7 +21,7 @@
   "remaining_nonterminal": 926,
   "next_pending_id": "lin-2f6fbe4ffb0b6564",
   "blockers": [],
-  "resume_command": "Finish validated background PR209 integration; future source holds need separate governed tasks",
+  "resume_command": "Review snapshot for the next ordinary governed task; airport delivery/equivalence and exact Second Street provenance remain separate research holds",
   "verification_campaign_totals": {
     "verified": 2194,
     "passed": 2070,
@@ -34720,11 +34720,13 @@
     "r2_changes": 0
   },
   "pr209_reconciliation": {
-    "state": "reconciled_validation_pending",
+    "state": "integrated",
     "receipt": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
     "completed": 13,
     "excluded": 11,
     "ordinary_research_holds": 2,
-    "no_genuine_owner_decision": true
+    "no_genuine_owner_decision": true,
+    "merge_commit": "16a95d1d03b2c0328178a2a2116f19d2f50824cf",
+    "postmerge_verification": "project-state/governance/pr209-reconciliation-2026-10-03/postmerge-verification.json"
   }
 }
