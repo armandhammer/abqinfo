@@ -14,6 +14,12 @@ Cross-cutting development process documents, manuals, and reference materials.
 
   Connects land-use and zoning applications, building permits, business licensing and code-enforcement services with the City’s online systems. Residents can also search permits, applications, licenses and violation records, while applicants can upload documents and track review progress. This service gateway complements the review-section overview above.
 
+- [Neighborhood Association Websites (live City directory)](https://www.cabq.gov/office-of-neighborhood-coordination/neighborhood-websites)
+
+  The City Office of Neighborhood Coordination links websites submitted by recognized neighborhood associations. Associations maintain their own sites; the directory excludes HOA websites.
+
+  Use the [recognized association and coalition map](/maps-data/maps/#citywide-reference-maps) to explore neighborhood geography.
+
 ## Development Policy References
 
 - [Official Albuquerque Plant Palette and Sizing List (2018 Archived PDF)](https://files.abqinfo.com/development-land-use/development-process/cabq-official-plant-palette-sizing-list-2018.pdf)

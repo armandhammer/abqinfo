@@ -24,6 +24,12 @@ Interactive maps of city data and infrastructure.
 
   [Official City PDF](https://documents.cabq.gov/planning/UDD/UDD-HuningHighlandHOZMap-Jan2017.pdf)
 
+- [Recognized Neighborhood Associations and Coalitions (live City map)](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=1eef18dec8844aecabba439823ff9eb2)
+
+  Maps City-recognized neighborhood associations and coalitions, with address search and a legend. This maintained civic reference shows organization geography; it is not a legal boundary determination.
+
+  [Neighborhood Association Websites](/development-land-use/development-process/#current-city-review-process) provides links to association websites.
+
 ### Regional Long-Range Transportation Maps
 
 - [Albuquerque Metropolitan Planning Area Boundary Map (2020)](https://files.abqinfo.com/maps/mrmpo-albuquerque-metropolitan-planning-area-map-2020.pdf)

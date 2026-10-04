@@ -2,141 +2,55 @@
   {
     "id": "src-58b6e48562da781c",
     "changes": {
-      "status": "implemented",
-      "description": "Maps Albuquerque City Council districts with selectable councilor information; a live geographic reference alongside the dated archived poster.",
-      "implementation_location": "content/maps-data/maps.md#citywide-reference-maps",
-      "implementation_locations": [
-        "content/maps-data/maps.md#citywide-reference-maps"
-      ],
-      "cross_listing_approved": false,
-      "validation_status": "Implemented on unmerged owner-resources branch; full validation and preview inspection pending; not live.",
-      "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review.",
-        "2026-10-04 rendered live-application review: Approve one maintained City Council Districts live resource as a geographic civic reference. Actual desktop rendering displays all nine labeled district polygons; legend opens, and selecting District2 returns the councilor photo and linked name. This lets a reader relate locations and neighborhoods to City representation, beyond a contacts directory and the already archived January2026 poster snapshot. The app exposes a real City district feature layer, not a generic shell. Use one Maps entry alongside the dated poster, not separate app/wrapper entries; label it live and avoid implying an archived or permanently current roster. Evidence: project-state/governance/interactive-app-resolution-2026-10-04/review-2.json",
-        "2026-10-04 bounded owner publication: implemented the binding completed review without substantive reassessment; preserve all limitations and original evidence. project-state/governance/owner-resources-publication-2026-10-04/authority.json"
-      ]
+      "validation_status": "passed"
     }
   },
   {
     "id": "src-5a12b40f6dcba285",
     "changes": {
-      "status": "implemented",
-      "description": "Maps existing Albuquerque bikeways and trails by facility type using the current maintained City service, complementing dated planning snapshots.",
-      "implementation_location": "content/transportation/bicycling/bike-maps.md#city-bicycle-maps",
-      "implementation_locations": [
-        "content/transportation/bicycling/bike-maps.md#city-bicycle-maps",
-        "content/maps-data/maps.md#city-bicycle-maps-and-data"
-      ],
-      "cross_listing_approved": true,
-      "validation_status": "Implemented on unmerged owner-resources branch; full validation and preview inspection pending; not live.",
-      "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review.",
-        "2026-10-04 rendered live-application review: Approve the current official Bikeways and Trails wrapper as a live infrastructure resource. Fresh rendering now loads actual Albuquerque facility lines and ten legend categories through the same bfda88 app previously observed behind sign-in. Configuration identifies webmap b76b42 and a new dmdgis Existing_Bikeway_Facilities_PUBLIC service; current service documentation describes path type, width, e-bike allowance, completion year, maintenance and project/funding attribution. This is a restored delivery of the original app identity, not a title-inferred successor. The old dmdmaps service used by existing public entries now returns service-not-found. Recommend one curated replacement of that existing live-resource link in a separately reviewed PR; do not add duplicate app and wrapper entries or alter excluded direct-app history here. Evidence: project-state/governance/interactive-app-resolution-2026-10-04/review-3.json",
-        "2026-10-04 bounded owner publication: implemented the binding completed review without substantive reassessment; preserve all limitations and original evidence. project-state/governance/owner-resources-publication-2026-10-04/authority.json"
-      ]
+      "validation_status": "passed"
     }
   },
   {
     "id": "src-fe8c43a2ca9b7417",
     "changes": {
-      "status": "implemented",
-      "description": "Maps emergency-route constraints and potentially eligible streets as a live NTMP policy reference; not a final eligibility determination or emergency directions.",
-      "implementation_location": "content/transportation/roadway-projects/speed-management.md#neighborhood-traffic-management-program",
-      "implementation_locations": [
-        "content/transportation/roadway-projects/speed-management.md#neighborhood-traffic-management-program"
-      ],
-      "cross_listing_approved": false,
-      "validation_status": "Implemented on unmerged owner-resources branch; full validation and preview inspection pending; not live.",
-      "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/neighborhood-traffic-management-program.",
-        "Exact metadata and relevance remain pending source review.",
-        null,
-        "2026-10-04 rendered live-application review: Approve NTMP Eligible Roadways as a live geographic component of the existing Neighborhood Traffic Management Program family. Real desktop rendering displays mapped emergency routes, potentially eligible City streets, current City limits and outside-City shading; zoom changes the mapped scale. The official current NTMP page links this exact app as its emergency/ineligible-roadways reference. It materially explains where traffic-calming policy applies and its emergency-access constraints beyond the textual overview. It is not an emergency navigation or guarantee-of-eligibility service: retain potentially eligible wording and program context, use one subordinate map link under the existing NTMP section, and avoid a separate redundant program entry. Evidence: project-state/governance/interactive-app-resolution-2026-10-04/review-5.json",
-        "2026-10-04 bounded owner publication: implemented the binding completed review without substantive reassessment; preserve all limitations and original evidence. project-state/governance/owner-resources-publication-2026-10-04/authority.json"
-      ]
+      "validation_status": "passed"
     }
   },
   {
     "id": "src-27314f06651cc1c9",
     "changes": {
-      "status": "implemented",
-      "description": "Historical Connections 2040 Albuquerque-area transportation equity and access analysis using2016–2020 ACS demographics; one portfolio, not a current route planner.",
-      "implementation_location": "content/maps-data/dashboards.md#project-program-and-safety-dashboards",
-      "implementation_locations": [
-        "content/maps-data/dashboards.md#project-program-and-safety-dashboards"
-      ],
-      "cross_listing_approved": false,
-      "validation_status": "Implemented on unmerged owner-resources branch; full validation and preview inspection pending; not live.",
-      "processing_notes": [
-        "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review.",
-        "Captured from authoritative page https://www.mrcog-nm.gov/579/Environmental-Justice; external host was not recursively crawled.",
-        "2026-10-04 rendered live-application review: Distinct five-map Albuquerque transportation-equity portfolio renders substantive local access analysis; approve one qualified live resource, preserving historical data-vintage limits and the separate air-quality portfolio. Evidence: project-state/governance/interactive-app-resolution-2026-10-04/review-7.json",
-        "2026-10-04 bounded owner publication: implemented the binding completed review without substantive reassessment; preserve all limitations and original evidence. project-state/governance/owner-resources-publication-2026-10-04/authority.json"
-      ]
+      "validation_status": "passed"
     }
   },
   {
     "id": "src-7867bdf940d22b3f",
     "changes": {
-      "status": "implemented",
-      "description": "Six modeled Albuquerque-area air/traffic indicators and vulnerability comparisons using EPA2021 EJScreen2.0 and ACS2016–2020; not real-time monitoring or regulatory findings.",
-      "implementation_location": "content/city-data/climate-environment.md#environmental-justice-and-local-conditions",
-      "implementation_locations": [
-        "content/city-data/climate-environment.md#environmental-justice-and-local-conditions"
-      ],
-      "cross_listing_approved": false,
-      "validation_status": "Implemented on unmerged owner-resources branch; full validation and preview inspection pending; not live.",
-      "processing_notes": [
-        "Discovered by deterministic crawl of https://riometro.org/381/Rio-Metro-Publications.",
-        "Exact metadata and relevance remain pending source review.",
-        "Captured from authoritative page https://www.mrcog-nm.gov/579/Environmental-Justice; external host was not recursively crawled.",
-        "2026-10-04 rendered live-application review: Distinct six-map Albuquerque air-quality/health-equity analysis renders local exposure and vulnerability information; approve one live portfolio with explicit historical modeled-data qualifications, separate from the transportation-access portfolio. Evidence: project-state/governance/interactive-app-resolution-2026-10-04/review-8.json",
-        "2026-10-04 bounded owner publication: implemented the binding completed review without substantive reassessment; preserve all limitations and original evidence. project-state/governance/owner-resources-publication-2026-10-04/authority.json"
-      ]
+      "validation_status": "passed"
     }
   },
   {
     "id": "src-aece84c62701c551",
     "changes": {
-      "status": "implemented",
-      "description": "One grouped directory of seven historical City aviation and transit charts ending FY2018 or FY2020, with the FY2010 revenue-hours methodology change.",
-      "implementation_location": "content/maps-data/dashboards.md#project-program-and-safety-dashboards",
-      "implementation_locations": [
-        "content/maps-data/dashboards.md#project-program-and-safety-dashboards"
-      ],
-      "cross_listing_approved": false,
-      "validation_status": "Implemented on unmerged owner-resources branch; full validation and preview inspection pending; not live.",
-      "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review.",
-        "2026-10-04 rendered live-application review: The functioning seven-report family supplies 95 labeled historical City transportation observations and measure definitions with material public value. Approve one grouped live directory with mandatory FY2018/FY2020 limitations; do not imply current monitoring or publish sparse members independently. Evidence: project-state/governance/interactive-app-resolution-2026-10-04/review-9.json",
-        "2026-10-04 bounded owner publication: implemented the binding completed review without substantive reassessment; preserve all limitations and original evidence. project-state/governance/owner-resources-publication-2026-10-04/authority.json"
-      ]
+      "validation_status": "passed"
     }
   },
   {
     "id": "src-1f9cf39555e7be6f",
     "changes": {
-      "status": "implemented",
-      "description": "Adopted2020 Sunport master plan, December2019 original; one existing entry updated to exact verified archive plus official City and R-19-168 provenance.",
-      "implementation_location": "content/transportation/transportation-plans.md#aviation-planning",
-      "implementation_locations": [
-        "content/transportation/transportation-plans.md#aviation-planning"
-      ],
-      "cross_listing_approved": false,
-      "validation_status": "Implemented on unmerged owner-resources branch; full validation and preview inspection pending; not live.",
-      "processing_notes": [
-        "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
-        "Exact metadata and relevance remain pending source review.",
-        "Second large ordinary campaign 2026-09-26: explicit reviewed evidence project-state/discovery/ordinary-second-large-campaign-family-287-2026-09-26.json. Background only; no content or publication changes.",
-        "2026-10-03 independent thirteen-record background review: The601-page December2019 plan contains airport demand, facility requirements, alternatives, environmental and sustainability analysis, and phased capital implementation for the City-owned Sunport. Both mission gates and substantive document quality pass independently. Its printing original remains explicitly linked by the current City adopted Rank3 plan index as the2020 adopted plan. ABQInfo already presents that adopted plan through a Legistar attachment, so any later implementation should improve the existing family rather than create a second entry. The280024902-byte original exceeds the object ceiling; official reduced/summary endpoints exist, but a compliant equivalent smaller original was not established. Retain the original with explicit archive and family-delivery holds. Evidence: project-state/governance/remaining-approved-review-2026-10-03/records/src-1f9cf39555e7be6f/review.json",
-        "2026-10-04 source-delivery research only: No official complete full plan at or below150000000 bytes identified. Known complete printing and OnBase deliveries both exceed the ceiling; smaller summary and supplemental files cannot substitute. City printing and existing Legistar delivery are byte-identical280024902-byte601-page originals. OnBase12246971 is196098909bytes/607pages, SHA-256 01e3595538a6c6d92dedc7563930fb09de08be75a5c8cc0eb099129745900ca1; summary12246972 is7259996bytes/41pages. Prior unknown delivery facts are explicitly superseded; positive mission/quality preserved. Evidence: project-state/governance/source-hold-resolution-2026-10-04/sunport.json",
-        "2026-10-04 owner exact-object exception releases archive-size hold ONLY for this601-page printing original. Unchanged280024902 bytes;SHA256 d4583c4d9e5e1233c402f64222fd8837ff7f0fc0a352dc2d5153776842f39d02;public GET verified. Evidence: project-state/governance/sunport-exact-archive-2026-10-04/authority.json;project-state/governance/sunport-exact-archive-2026-10-04/public-verification.json. No visible Phase A change.",
-        "2026-10-04 bounded owner publication: implemented the binding completed review without substantive reassessment; preserve all limitations and original evidence. project-state/governance/owner-resources-publication-2026-10-04/authority.json"
-      ]
+      "validation_status": "passed"
+    }
+  },
+  {
+    "id": "src-e225fbaca658ecf5",
+    "changes": {
+      "validation_status": "passed"
+    }
+  },
+  {
+    "id": "src-26d17a967fcc771c",
+    "changes": {
+      "validation_status": "passed"
     }
   }
 ]

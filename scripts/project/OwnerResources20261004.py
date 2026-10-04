@@ -41,7 +41,7 @@ def refresh(task):
     save(G.REGISTRY,r);r=G.registry();registered={a['path'] for x in r['entries'] for a in x['controlling_artifacts']}
     files=[x.relative_to(G.ROOT).as_posix() for x in (G.ROOT/p).rglob('*') if x.is_file() and x.name!='implementation.json' and x.relative_to(G.ROOT).as_posix() not in registered]
     # Earlier contracts remain immutable historical evidence when authority changes.
-    audit(files+[SCRIPT,'project-state/master-inventory.json','project-state/r2-inventory.json','project-state/CURRENT.md','project-state/workflow-stage-lifecycle.json','scripts/project/Invoke-ProjectValidation.ps1'])
+    audit(files+[SCRIPT,'project-state/master-inventory.json','project-state/r2-inventory.json','project-state/checkpoint.json','project-state/CURRENT.md','project-state/workflow-stage-lifecycle.json','scripts/project/Invoke-ProjectValidation.ps1'])
     old=list((G.ROOT/p).glob('contract-v*.json'));n=max([int(x.stem.split('-v')[1]) for x in old],default=0)+1
     cpath=p+f'contract-v{n}.json'
     versions=list((G.ROOT/p).glob('population-v*.json'))
