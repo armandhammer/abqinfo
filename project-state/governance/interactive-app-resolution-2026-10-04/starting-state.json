@@ -1,0 +1,89 @@
+{
+  "checked_at_utc": "2026-10-04T02:06:49.605676+00:00",
+  "refs": {
+    "HEAD": "2756c058a4485022992ac7e697c3e046ca9031fc",
+    "main": "2756c058a4485022992ac7e697c3e046ca9031fc",
+    "origin/main": "2756c058a4485022992ac7e697c3e046ca9031fc",
+    "chatgpt/planning-snapshot": "2756c058a4485022992ac7e697c3e046ca9031fc"
+  },
+  "remote_refs": "2756c058a4485022992ac7e697c3e046ca9031fc refs/heads/main\n2756c058a4485022992ac7e697c3e046ca9031fc refs/heads/chatgpt/planning-snapshot\n",
+  "remote_verification": "Live git ls-remote origin under approved network access",
+  "queue_counts": {
+    "approved for addition": 1,
+    "pending review": 372
+  },
+  "prior_active_task": {
+    "population": "project-state/governance/source-hold-resolution-evidence-closeout-2026-10-04/population.json",
+    "contract": "project-state/governance/source-hold-resolution-evidence-closeout-2026-10-04/contract-v3.json",
+    "contract_sha256": "6d795a23d667b256a903bf9b4d976b6b5607c7bbeb07e07decac1fe94b266824",
+    "implementation": "project-state/governance/source-hold-resolution-evidence-closeout-2026-10-04/implementation.json",
+    "state": "complete"
+  },
+  "r2_inventory_sha256": "cbcafb7a220de4049074ff288a7e3200c3c0c672e028207571f6295551d56a0b",
+  "r2_policy_sha256": "e0343254fefebc64bb004675be536684cf3d35f19987b75e81748cb8f0b32ecd",
+  "prerequisites": [
+    {
+      "id": "src-29bec2b60308d513",
+      "reason": "City parks/open-space interactive app 99029a0318a144f0b726cbaf6f2c6a69: meaningful facility data; rendered usability verification required, no browser surface available in this session.",
+      "category": "live_application_render_or_relationship_blocker",
+      "state": "unresolved_ungated_not_currently_actionable",
+      "browser_inventory": "apps=[] browsers=[]"
+    },
+    {
+      "id": "src-58b6e48562da781c",
+      "reason": "Council-district interactive map 93befad4261f44d495146fc8d6ec3890: meaningful representation geography; rendered usability verification required, no browser surface available.",
+      "category": "live_application_render_or_relationship_blocker",
+      "state": "unresolved_ungated_not_currently_actionable",
+      "browser_inventory": "apps=[] browsers=[]"
+    },
+    {
+      "id": "src-5a12b40f6dcba285",
+      "reason": "Bikeways wrapper embeds bfda88ddb89a40c08440b4abd4c182ba, marked retired/broken by saved rendered audit. Need bounded current successor/usable-map confirmation; no browser surface available.",
+      "category": "live_application_render_or_relationship_blocker",
+      "state": "unresolved_ungated_not_currently_actionable",
+      "browser_inventory": "apps=[] browsers=[]"
+    },
+    {
+      "id": "src-a9ddff947a4282c9",
+      "reason": "School-crossing app now returns Item Replacement. Metadata/HTTP 200 cannot establish a usable replacement map; source/application recovery and rendered inspection required.",
+      "category": "live_application_render_or_relationship_blocker",
+      "state": "unresolved_ungated_not_currently_actionable",
+      "browser_inventory": "apps=[] browsers=[]"
+    },
+    {
+      "id": "src-fe8c43a2ca9b7417",
+      "reason": "Emergency/ineligible-roadways app 74daadcad5a740928893f163e952d854: meaningful local route policy, but application-shell HTTP 200 does not prove usability. No browser available for required rendering.",
+      "category": "live_application_render_or_relationship_blocker",
+      "state": "unresolved_ungated_not_currently_actionable",
+      "browser_inventory": "apps=[] browsers=[]"
+    },
+    {
+      "id": "src-4c2b3614256aaf20",
+      "reason": "Pedestrian Safety Action Plan Experience a5918cf455ae4fe7835cf9b5fe0c78cb: meaningful local safety-policy application; content/usability must be rendered, not inferred from shell. Browser unavailable.",
+      "category": "live_application_render_or_relationship_blocker",
+      "state": "unresolved_ungated_not_currently_actionable",
+      "browser_inventory": "apps=[] browsers=[]"
+    },
+    {
+      "id": "src-27314f06651cc1c9",
+      "reason": "MRMPO portfolio e5b9886b6d774b1fa8bbbf11593e6306: specific interactive content not established by shell. Requires rendered application review; browser unavailable.",
+      "category": "live_application_render_or_relationship_blocker",
+      "state": "unresolved_ungated_not_currently_actionable",
+      "browser_inventory": "apps=[] browsers=[]"
+    },
+    {
+      "id": "src-7867bdf940d22b3f",
+      "reason": "MRMPO portfolio 3721154423534a49b2ba2f0dfe1f7e5d has a different appid from alleged canonical e5b9886b6d774b1fa8bbbf11593e6306. Shared shell hashes do not prove identical maps. Preserve unresolved relationship pending rendered/data-content comparison.",
+      "category": "live_application_render_or_relationship_blocker",
+      "state": "unresolved_ungated_not_currently_actionable",
+      "browser_inventory": "apps=[] browsers=[]"
+    },
+    {
+      "id": "src-aece84c62701c551",
+      "reason": "ABQ Transportation Dashboard has credible local policy metrics, but HTTP/static wrapper cannot verify the interactive data. Required rendered usability review unavailable.",
+      "category": "live_application_render_or_relationship_blocker",
+      "state": "unresolved_ungated_not_currently_actionable",
+      "browser_inventory": "apps=[] browsers=[]"
+    }
+  ]
+}
