@@ -13,7 +13,7 @@ render=S.G.load(P+'rendered-checks.json');proof=[]
 for page in S.PAGES:
     route=page.removeprefix('content/').removesuffix('.md')+'/'
     url=host+'/'+route
-    with urllib.request.urlopen(urllib.request.Request(url,headers={'Cache-Control':'no-cache'}),timeout=60) as r:
+    with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 (ABQInfo preview verification)','Cache-Control':'no-cache'}),timeout=60) as r:
         remote=r.read();assert r.status==200
     local=(S.G.ROOT/('tmp/site-build/'+route+'index.html')).read_bytes()
     value,decoded=presentation(remote);expected,_=presentation(local)
