@@ -91,6 +91,9 @@ def guard():
     population_path=stage.load_json(G.ACTIVE_TASK)['population']
     assert changes<=set(stage.load_json(population_path)['artifact_paths']),changes-set(stage.load_json(population_path)['artifact_paths'])
     print('Exact two-record / sealed PR209 / zero visible / zero R2 guard passed')
+    if G.load(G.load(G.ACTIVE_TASK)['population'])['task_id']=='source-hold-resolution-evidence-closeout-2026-10-04':
+        from SourceHoldEvidenceCloseout import guard as evidence_guard
+        evidence_guard()
 def update_queue():
     inv=G.load('project-state/master-inventory.json');rows={r['id']:r for r in inv['candidates']}
     prior=G.load('project-state/governance/remaining-approved-review-2026-10-03/queue.json');q=copy.deepcopy(prior)

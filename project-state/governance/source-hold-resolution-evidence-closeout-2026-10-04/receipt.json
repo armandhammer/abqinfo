@@ -1,0 +1,40 @@
+{
+  "task_id": "source-hold-resolution-evidence-closeout-2026-10-04",
+  "state": "complete_validated_evidence_preservation_closeout",
+  "same_exact_candidate_ids": [
+    "src-ed75a3cb5ecc3b0b",
+    "src-1f9cf39555e7be6f"
+  ],
+  "parent_receipt": "project-state/governance/source-hold-resolution-2026-10-04/receipt.json",
+  "reason": "Full original-baseline git diff check detects formatting within exact captured source response bodies. Prior incremental checks did not cover already-committed captures. Preserve these sources and assign directory-scoped binary Git evidence attributes, following the existing repository witness convention.",
+  "source_bodies_modified": false,
+  "research_or_inventory_repeated": false,
+  "r2_delta_bytes": 0,
+  "visitor_visible_delta": 0,
+  "normal_validation": "passed",
+  "full_original_baseline_diff_check": "passed",
+  "no_new_population_records": true,
+  "remaining": "No research or technical work remains. Retain the existing Sunport archive hold and optional owner alternatives; no next review population or publication is authorized.",
+  "normal_validation_exit_code": 0,
+  "normal_validation_contract": "project-state/governance/source-hold-resolution-evidence-closeout-2026-10-04/contract-v2.json",
+  "validation_log": "project-state/governance/source-hold-resolution-evidence-closeout-2026-10-04/validation.log",
+  "validation_log_sha256": "bec9de2d4c8ef1d9ebdc37e661f9c5e43ce2bf7497e42fb2c9e152d2fc27290e",
+  "raw_validation_log_sha256": "c58a8d2da6c7f6d05c0b98909aae3fcdb79d0c079d2d8e0c3da077e293728e84",
+  "hugo_rendered_checks": "passed",
+  "completed_at": "2026-10-04T01:28:28.622639+00:00",
+  "final_r2_verified_at": "2026-10-04T01:26:43.5128664Z",
+  "r2_start_final_objects_equal": true,
+  "r2_object_count": 1611,
+  "r2_total_bytes": 10691241695,
+  "approved": 1,
+  "pending": 372,
+  "owner_decision_required_for_integration": false,
+  "integration_authority": "project-state/governance/source-hold-resolution-2026-10-04/authority.json",
+  "integration_targets": [
+    "refs/heads/main",
+    "refs/heads/chatgpt/planning-snapshot"
+  ],
+  "integration_baseline": "1d7805406b37d1ae4d15192cd9bbd6b7d6652ea2",
+  "final_commit_locator": "The immutable commit containing this completed receipt is the completion seal; authoritative refs are queried and verified after its atomic push.",
+  "final_ref_verification_runtime": "research/staging/source-hold-resolution-2026-10-04/evidence-closeout-final-runtime.json"
+}
