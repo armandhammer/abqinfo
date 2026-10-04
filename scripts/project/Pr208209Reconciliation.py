@@ -476,13 +476,14 @@ def resolve_b():
     G.active_check('mutation','background_integration')
 
 
-def verify_campaign():
+def verify_campaign(stage=None):
     account=G.load(CAMPAIGN+'accounting.json'); progress=G.load(CAMPAIGN+'progress.json'); receipt=G.load(CAMPAIGN+'receipt.json')
     assert account['completed']==account['total']==13 and account['inventory_status_counts']=={'pending review':1,'approved for addition':1,'excluded':11}
     assert not account['genuine_owner_decisions'] and not G.load(CAMPAIGN+'owner-decisions-needed.json')['items']
     assert receipt['normal_suite']['result']=='passed' and receipt['normal_suite']['exit_code']==0
     assert G.file_hash(receipt['normal_suite']['log'])==receipt['normal_suite']['log_sha256']
-    rows={r['id']:r for r in G.load('project-state/master-inventory.json')['candidates']}
+    inventory=stage.load_json('project-state/master-inventory.json') if stage else G.load('project-state/master-inventory.json')
+    rows={r['id']:r for r in inventory['candidates']}
     original={r['id']:r for r in git_json(CAMPAIGN_HEAD,'project-state/master-inventory.json')['candidates']}
     checkpoints=[]
     for record in account['records']:
@@ -525,23 +526,24 @@ def finish_b():
 
 
 def guard_b():
-    pop=G.load(B+'population.json');base=pop['baseline_commit']
-    assert not G.git('diff',base,'--name-only','--',*VISIBLE_PATHS)
-    assert not G.git('ls-files','--others','--exclude-standard','--',*VISIBLE_PATHS)
+    stage=StageSnapshot('pr209-reconciliation')
+    pop=stage.load_json(stage.load_json(G.ACTIVE_TASK)['population']);base=pop['baseline_commit']
+    stage.assert_no_visible_changes(base,G.git('rev-parse',base+':content'))
     for path in ['project-state/r2-inventory.json','project-state/r2-storage-policy.json']:
-        assert canonical_bytes((G.ROOT/path).read_bytes())==canonical_bytes(git_bytes('show',base+':'+path)),path
-    changed=set(G.changed_paths(base));assert changed<=set(pop['artifact_paths']),changed-set(pop['artifact_paths'])
+        assert canonical_bytes(stage.read_bytes(path))==canonical_bytes(git_bytes('show',base+':'+path)),path
+    changed=set(git_bytes('diff',base,stage.end,'--name-only').decode().splitlines()) if stage.end else set(G.changed_paths(base))
+    assert changed<=set(pop['artifact_paths']),changed-set(pop['artifact_paths'])
     before={r['id']:r for r in git_json(base,'project-state/master-inventory.json')['candidates']}
-    after={r['id']:r for r in G.load('project-state/master-inventory.json')['candidates']}
+    after={r['id']:r for r in stage.load_json('project-state/master-inventory.json')['candidates']}
     assert before.keys()==after.keys() and {i for i in before if before[i]!=after[i]}<=set(pop['candidate_ids'])
     if (G.ROOT/(B+'receipt.json')).exists():
-        verify_campaign()
+        verify_campaign(stage)
         for path in G.git('ls-tree','-r','--name-only',base,'--',A,
             'project-state/governance/strong-five-review-2026-10-03',
             'project-state/governance/pr208-county-scope-correction-2026-10-03',
             'project-state/governance/pr207-owner-correction-2026-09-30').splitlines():
             assert canonical_bytes((G.ROOT/path).read_bytes())==canonical_bytes(git_bytes('show',base+':'+path)),path
-        receipt=G.load(B+'receipt.json')
+        receipt=stage.load_json(B+'receipt.json')
         if receipt['normal_validation']=='passed':
             assert G.file_hash(B+'validation.log')==receipt['validation_log_sha256']
     print('PASS: PR209 exact thirteen-record reconciliation; zero visitor-visible/R2 delta; protected production and checkpoints preserved.')
