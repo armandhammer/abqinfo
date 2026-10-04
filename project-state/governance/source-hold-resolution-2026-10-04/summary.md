@@ -1,0 +1,9 @@
+# Two-record source-hold research
+
+The selected historical FHWA URL was recovered from the May 9, 2017 archive capture. It identifies NM FLAP Trail 52000(1), not the current Phase 2 number 52000(2). The 1.5-mile route, dates, photos and locator corroborate the already-retained County corridor and map/boards. It is excluded as a low-value independent companion; the selected URL and prior evidence remain intact.
+
+Sunport scope/quality was not re-reviewed. Exact full City responses establish: printing/Legistar are byte-identical 280,024,902-byte / 601-page PDFs, SHA-256 d4583c4d9e5e1233c402f64222fd8837ff7f0fc0a352dc2d5153776842f39d02. OnBase 12246971 is 196,098,909 bytes / 607 pages, SHA-256 01e3595538a6c6d92dedc7563930fb09de08be75a5c8cc0eb099129745900ca1; its approved front matter, corrected contents and page reflow differ from the printing original. All core chapters and actual appendix subjects are present. OnBase 12246972 and the airport-site mirror are identical 7,259,996-byte / 41-page executive summaries, SHA-256 ed70789e34827f65067f3fe8ff575bc017dab061117d75869ab5d932b9e9133b. Supplemental files are separate components.
+
+No discoverable official complete plan below 150,000,000 bytes was found. Research resolves the unknown delivery facts; size/authorization gates remain. Prefer the exact printing original for the existing Sunport family if a narrowly scoped object-ceiling exception and R2 upload are later authorized. No duplicate entry or new source-only exception is made. Optional owner alternatives are documented in owner-decisions-needed.json; integration needs no owner answer.
+
+Accounting: one approved, 372 pending; only these two rows changed. Prior PR209 evidence, all other inventory rows, all visitor-visible paths and R2 are unchanged. No next population is launched. Full normal validation, Hugo/rendered checks and final synchronized refs are recorded in receipt.json and remote-final.json.

@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "410890e028ef8bbbf264bf2df03623454955f33bdf48d21d28b5155b8c6bf201",
+  "audit_sha256": "c1d4a0e331d8556a86fe02f8dc8be7df9d11c65fd9301dbe9dbadbb38fd31139",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -21870,7 +21870,7 @@
       "authority": "Record-specific independent review under explicit owner campaign authority",
       "decision_date": "2026-10-03",
       "effective_date": "2026-10-03",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/remaining-approved-review-2026-10-03/records/src-ed75a3cb5ecc3b0b/review.json",
@@ -21888,7 +21888,9 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "in progress"
+      "implementation_status": "in progress",
+      "superseded_by": "decision-source-hold-resolution-2026-10-04-src-ed75a3cb5ecc3b0b",
+      "supersession_evidence": "project-state/governance/source-hold-resolution-2026-10-04/integration.json"
     },
     {
       "governance_id": "decision-remaining-approved-review-2026-10-03-src-1f9cf39555e7be6f",
@@ -21905,7 +21907,7 @@
       "authority": "Record-specific independent review under explicit owner campaign authority",
       "decision_date": "2026-10-03",
       "effective_date": "2026-10-03",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/remaining-approved-review-2026-10-03/records/src-1f9cf39555e7be6f/review.json",
@@ -21923,7 +21925,9 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "in progress"
+      "implementation_status": "in progress",
+      "superseded_by": "decision-source-hold-resolution-2026-10-04-src-1f9cf39555e7be6f",
+      "supersession_evidence": "project-state/governance/source-hold-resolution-2026-10-04/integration.json"
     },
     {
       "governance_id": "decision-remaining-approved-review-2026-10-03-src-0e0cd2037365e977",
@@ -22588,6 +22592,102 @@
       "binding_requirement": "Apply only explicit evidence-based replacements of the exact two source/delivery holds under owner-source-hold-resolution-2026-10-04. Preserve prior assessments, history and all other population decisions.",
       "required_actions": [
         "Apply only explicit evidence-based replacements of the exact two source/delivery holds under owner-source-hold-resolution-2026-10-04. Preserve prior assessments, history and all other population decisions."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded background research authority"
+    },
+    {
+      "governance_id": "decision-source-hold-resolution-2026-10-04-src-ed75a3cb5ecc3b0b",
+      "category": "active owner decision",
+      "title": "decision-source-hold-resolution-2026-10-04-src-ed75a3cb5ecc3b0b",
+      "scope": {
+        "candidate_ids": [
+          "src-ed75a3cb5ecc3b0b"
+        ]
+      },
+      "authority": "Explicit current owner two-record provenance/source-delivery research instruction",
+      "decision_date": "2026-10-04",
+      "effective_date": "2026-10-04",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/source-hold-resolution-2026-10-04/second-street.json",
+          "sha256": "41698fc43e0846e7ce27ded532072688ccc076098f9792860fd5408c38a6864d",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "The exact selected FHWA endpoint historically identified NM FLAP Trail52000(1), the earlier Second Street SW Corridor project; the current52000(2) page is a later phase, not its migrated copy. Exclude this short historical companion for insufficient independent publication value relative to retained County parent src-492e95f3e1c0db70 and archived 2016 map/boards. Source identity is resolved. Preserve selected URL, all prior evidence and existing family publications. No additional row, visible or R2 action is authorized.",
+      "required_actions": [
+        "The exact selected FHWA endpoint historically identified NM FLAP Trail52000(1), the earlier Second Street SW Corridor project; the current52000(2) page is a later phase, not its migrated copy. Exclude this short historical companion for insufficient independent publication value relative to retained County parent src-492e95f3e1c0db70 and archived 2016 map/boards. Source identity is resolved. Preserve selected URL, all prior evidence and existing family publications. No additional row, visible or R2 action is authorized."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded background research authority"
+    },
+    {
+      "governance_id": "decision-source-hold-resolution-2026-10-04-src-1f9cf39555e7be6f",
+      "category": "active owner decision",
+      "title": "decision-source-hold-resolution-2026-10-04-src-1f9cf39555e7be6f",
+      "scope": {
+        "candidate_ids": [
+          "src-1f9cf39555e7be6f"
+        ]
+      },
+      "authority": "Explicit current owner two-record provenance/source-delivery research instruction",
+      "decision_date": "2026-10-04",
+      "effective_date": "2026-10-04",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/source-hold-resolution-2026-10-04/sunport.json",
+          "sha256": "d332f2be4c19ba571def4b3be6c1434a8c91f7769593273e7e9191db324029da",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Preserve the settled positive Sunport mission and quality review, exact December2019 printing original and existing adopted-plan family. Retain approved status with explicit archive size/authorization hold. Official OnBase12246971 is a607-page full adopted-plan family delivery of196098909 bytes;12246972 is a41-page executive summary, not an equivalent full plan. No complete official below150000000-byte delivery was found in the current City index, directory, airport site, Legistar or official-source search. The printing original and published Legistar8032966 are exactly byte-identical. Replace the unknown delivery facts with these exact results; do not authorize upload, derivative, ceiling change, direct-source-only exception, duplicate entry or public-link replacement.",
+      "required_actions": [
+        "Preserve the settled positive Sunport mission and quality review, exact December2019 printing original and existing adopted-plan family. Retain approved status with explicit archive size/authorization hold. Official OnBase12246971 is a607-page full adopted-plan family delivery of196098909 bytes;12246972 is a41-page executive summary, not an equivalent full plan. No complete official below150000000-byte delivery was found in the current City index, directory, airport site, Legistar or official-source search. The printing original and published Legistar8032966 are exactly byte-identical. Replace the unknown delivery facts with these exact results; do not authorize upload, derivative, ceiling change, direct-source-only exception, duplicate entry or public-link replacement."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded background research authority"
+    },
+    {
+      "governance_id": "explicit-supersessions-source-hold-resolution-2026-10-04",
+      "category": "active owner decision",
+      "title": "explicit-supersessions-source-hold-resolution-2026-10-04",
+      "scope": {
+        "task_ids": [
+          "source-hold-resolution-2026-10-04"
+        ]
+      },
+      "authority": "Explicit current owner two-record provenance/source-delivery research instruction",
+      "decision_date": "2026-10-04",
+      "effective_date": "2026-10-04",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/source-hold-resolution-2026-10-04/integration.json",
+          "sha256": "7a79b8da6bc4e78855d40523311878112a08fb435ed127aefabf9a3100751db0",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Apply these two explicitly owner-authorized, evidence-based source-hold replacements; all historical PR209 source/review evidence and settled Sunport scope/quality remain sealed.",
+      "required_actions": [
+        "Apply these two explicitly owner-authorized, evidence-based source-hold replacements; all historical PR209 source/review evidence and settled Sunport scope/quality remain sealed."
       ],
       "prohibited_actions": [],
       "constraints": [],

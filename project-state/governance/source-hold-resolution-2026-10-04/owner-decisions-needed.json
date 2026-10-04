@@ -1,0 +1,48 @@
+{
+  "artifact_type": "owner_authorization_options_evidence_only",
+  "items": [
+    {
+      "id": "src-1f9cf39555e7be6f",
+      "question": "If archival/public delivery is desired, which exception should govern this existing Sunport family?",
+      "factual_research_complete": true,
+      "evidence": [
+        "project-state/governance/source-hold-resolution-2026-10-04/sunport.json",
+        "project-state/governance/source-hold-resolution-2026-10-04/sunport-comparison.json"
+      ],
+      "exact_original": {
+        "bytes": 280024902,
+        "pages": 601,
+        "sha256": "d4583c4d9e5e1233c402f64222fd8837ff7f0fc0a352dc2d5153776842f39d02"
+      },
+      "official_reduced": {
+        "bytes": 196098909,
+        "pages": 607,
+        "sha256": "01e3595538a6c6d92dedc7563930fb09de08be75a5c8cc0eb099129745900ca1"
+      },
+      "normal_ceiling": 150000000,
+      "default": "Keep approved inventory-only archive hold and current published state; no new external or visitor-visible effect.",
+      "alternatives": [
+        {
+          "option": "Exact-original object-ceiling exception",
+          "effect": "Authorize the exact280024902-byte canonical original above the150000000 ceiling and separately authorize its R2 upload/public-byte verification. Preferred if full-original archival is requested; no version ambiguity."
+        },
+        {
+          "option": "Explicit derivative authorization",
+          "effect": "Authorize a separately identified compressed derivative with original retained and governed fidelity checks; requires a new task, no transformation is performed here."
+        },
+        {
+          "option": "Explicit direct-source-only policy exception",
+          "effect": "Authorize a future official-source-only treatment for this existing family; current legacy site link remains as-is. Any visible link/text change still needs a reviewed PR."
+        },
+        {
+          "option": "Continue current hold",
+          "effect": "No policy exception or external action; preserve the approved candidate and current existing entry."
+        }
+      ],
+      "choice_is_not_authorization": true,
+      "required_for_background_integration": false
+    }
+  ],
+  "genuine_owner_decision_count": 1,
+  "immediate_owner_answer_required": false
+}
