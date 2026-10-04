@@ -9,6 +9,8 @@ param(
 if ($LASTEXITCODE) { throw 'PR208/209 governed reconciliation guard failed.' }
 & python "$PSScriptRoot/Review-RemainingApproved.py"
 if ($LASTEXITCODE) { throw 'Remaining thirteen background campaign exact-delta guard failed.' }
+& python "$PSScriptRoot/SourceHoldResolution.py" guard
+if ($LASTEXITCODE) { throw 'Two-record source resolution guard failed.' }
 Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }
