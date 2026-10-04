@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "artifact_type": "nine_record_interactive_application_resolution_queue",
-  "recorded_at": "2026-10-04T02:20:03.353323+00:00",
+  "recorded_at": "2026-10-04T02:23:29.614498+00:00",
   "campaign_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/campaign.json",
   "selection_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/selection.json",
-  "pending_review_count": 370,
+  "pending_review_count": 369,
   "pending_ids": [
     "lin-2f6fbe4ffb0b6564",
     "lin-7bdbcdc09efe2035",
@@ -103,7 +103,6 @@
     "src-56ccf9a1a3a98a03",
     "src-57bc2664e4e3a11f",
     "src-5924eddac4b3679a",
-    "src-5a12b40f6dcba285",
     "src-5a39a69a5a13eb31",
     "src-5ac3102f855789cc",
     "src-5ac50fc54bafa7f0",
@@ -746,11 +745,10 @@
     "src-f7c7bd5b273def22": "Current Legistar action histories and complete final-file attachments establish bill-level enactment, not that the held blank-enactment, floor-amendment or exhibit-incomplete PDF is the complete adopted delivery. Full Word/PDF comparisons and distinct page counts are saved. Resolve final action version, amendments and all referenced exhibits; do not infer missing legal text from adoption metadata. Erroneous /texts/{version} API responses have mismatched MatterTextMatterId and are rejected as evidence.",
     "src-fcbe6a7ebcf916a1": "Current Legistar action histories and complete final-file attachments establish bill-level enactment, not that the held blank-enactment, floor-amendment or exhibit-incomplete PDF is the complete adopted delivery. Full Word/PDF comparisons and distinct page counts are saved. Resolve final action version, amendments and all referenced exhibits; do not infer missing legal text from adoption metadata. Erroneous /texts/{version} API responses have mismatched MatterTextMatterId and are rejected as evidence."
   },
-  "ungated_pending_count": 7,
+  "ungated_pending_count": 6,
   "ungated_pending_ids": [
     "src-27314f06651cc1c9",
     "src-4c2b3614256aaf20",
-    "src-5a12b40f6dcba285",
     "src-7867bdf940d22b3f",
     "src-a9ddff947a4282c9",
     "src-aece84c62701c551",
@@ -759,13 +757,6 @@
   "genuinely_actionable_ungated_pending_count": 0,
   "actionable_ungated_pending_ids": [],
   "unresolved_ungated_prerequisites": [
-    {
-      "id": "src-5a12b40f6dcba285",
-      "reason": "Bikeways wrapper embeds bfda88ddb89a40c08440b4abd4c182ba, marked retired/broken by saved rendered audit. Need bounded current successor/usable-map confirmation; no browser surface available.",
-      "category": "live_application_render_or_relationship_blocker",
-      "state": "unresolved_ungated_not_currently_actionable",
-      "browser_inventory": "apps=[] browsers=[]"
-    },
     {
       "id": "src-a9ddff947a4282c9",
       "reason": "School-crossing app now returns Item Replacement. Metadata/HTTP 200 cannot establish a usable replacement map; source/application recovery and rendered inspection required.",
@@ -824,19 +815,6 @@
       "order": 2,
       "boundary": "Complete saved family; split by substantive function before decisions.",
       "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-023.json"
-    },
-    {
-      "family_id": "family-089",
-      "family": "www.cabq.gov/gis/map-views",
-      "candidate_ids": [
-        "src-5a12b40f6dcba285"
-      ],
-      "candidate_count": 1,
-      "saved_preparation_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-089.json",
-      "selection_is_not_a_disposition": true,
-      "order": 13,
-      "boundary": "Complete saved family; split by substantive function before decisions.",
-      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-089.json"
     },
     {
       "family_id": "family-097",
@@ -925,6 +903,13 @@
       "reason": "Rendered and substantively assessed live application; separate reviewed visitor-visible PR required; no R2 object applicable.",
       "canonical_page": "content/maps-data/maps.md",
       "evidence": "project-state/governance/interactive-app-resolution-2026-10-04/review-2.json"
+    },
+    {
+      "id": "src-5a12b40f6dcba285",
+      "title": "Bikeways and Trails",
+      "reason": "Rendered and substantively assessed live application; separate reviewed visitor-visible PR required; no R2 object applicable.",
+      "canonical_page": "content/transportation/bicycling/bike-maps.md",
+      "evidence": "project-state/governance/interactive-app-resolution-2026-10-04/review-3.json"
     }
   ],
   "visitor_visible_content_changed": false,
@@ -932,7 +917,7 @@
   "research_prerequisite_artifact": "project-state/discovery/codex-human-review-followup-queue.json",
   "followup_artifact": "project-state/discovery/background-followup-2026-09-26/decisions.json",
   "source_queue_artifact": "project-state/governance/source-hold-resolution-2026-10-04/queue.json",
-  "inventory_generated_at": "2026-10-04T02:20:00.387651Z",
+  "inventory_generated_at": "2026-10-04T02:23:26.541627Z",
   "pr202_implemented_ids_removed_from_approved": [
     "src-0d6fc7345fa112b4",
     "src-105264c6cb316de5",
@@ -1005,7 +990,7 @@
     "completed": 13,
     "accounting": "project-state/governance/remaining-approved-review-2026-10-03/accounting.json"
   },
-  "inventory_sha256": "57fedb1b3074bc2e3992636e4ad52d390d79067d14e8e55b1c65ac0d0d91df54",
+  "inventory_sha256": "1d99674eda091273fb2ab5a387c814f84389ffb909178ca1f344bdc9db18a2cf",
   "source_hold_resolution": {
     "task": "source-hold-resolution-2026-10-04",
     "population": "project-state/governance/source-hold-resolution-2026-10-04/population.json",
@@ -1019,7 +1004,8 @@
     "population": "project-state/governance/interactive-app-resolution-2026-10-04/population.json",
     "completed_ids": [
       "src-29bec2b60308d513",
-      "src-58b6e48562da781c"
+      "src-58b6e48562da781c",
+      "src-5a12b40f6dcba285"
     ]
   }
 }
