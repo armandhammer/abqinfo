@@ -1,0 +1,3972 @@
+{
+  "requested_url": "https://www.arcgis.com/sharing/rest/content/items/289db7f2e6a0447cbc1e303ad3dbc846/data?f=json",
+  "observed_at_utc": "2026-10-04T02:41:37.086363+00:00",
+  "role": "Supporting authoritative-source evidence; not rendered usability proof",
+  "resolved_url": "https://www.arcgis.com/sharing/rest/content/items/289db7f2e6a0447cbc1e303ad3dbc846/data?f=json",
+  "http_status": 200,
+  "content_type": "application/json;charset=utf-8",
+  "bytes": 55459,
+  "sha256": "59411bb81663c374414f5a799c479aca85652a659f147bb8ee8ec77fdb340fc1",
+  "data": {
+    "operationalLayers": [
+      {
+        "id": "183186144c7-layer-7",
+        "opacity": 0.6,
+        "disablePopup": true,
+        "title": "MRMPO Vulnerability Index – Percentage of one environmental justice population higher than 80% of the region",
+        "url": "https://services1.arcgis.com/i3mLmgyL55IkFf81/arcgis/rest/services/AMPA_Flood_Hazard_Vulnerability_2022_WFL1/FeatureServer/7",
+        "visibility": true,
+        "itemId": "5f52351a47564727b3554b96b13664e7",
+        "layerType": "ArcGISFeatureLayer",
+        "layerDefinition": {
+          "featureReduction": null,
+          "drawingInfo": {
+            "renderer": {
+              "type": "uniqueValue",
+              "valueExpression": "\r\n// The fields from which to calculate predominance\r\n// The expression will return the alias of the predominant field\r\n// percentile poc, HL, IIP\r\nvar fields = [\r\n  { value: $feature.PR_POC, alias: \"Persons of color\" },\r\n  { value: $feature.PR_Latine, alias: \"Persons of Hispanic/Latine ethnic origin\" },\r\n  { value: $feature.PR_IndPOv, alias: \"Persons with income below poverty\" },\r\n];\r\n\r\n// Returns the predominant category as the alias\r\n// defined in the fields array. If there is a tie,\r\n// then both names are concatenated and used to\r\n// indicate the tie\r\n\r\nfunction getPredominantCategory(fieldsArray){\r\n  var maxValue = -Infinity;\r\n  var maxCategory = \"\";\r\n  for(var k in fieldsArray){\r\n    if(fieldsArray[k].value > maxValue){\r\n      maxValue = fieldsArray[k].value;\r\n      maxCategory = fieldsArray[k].alias;\r\n    } else if (fieldsArray[k].value == maxValue){\r\n      maxCategory = maxCategory + \"/\" + fieldsArray[k].alias;\r\n    }\r\n  }\r\n  return IIF(maxValue < 0.80, \"Not Qualified\", maxCategory);\r\n}\r\n\r\ngetPredominantCategory(fields);",
+              "valueExpressionTitle": "Predominant population",
+              "uniqueValueGroups": [
+                {
+                  "classes": [
+                    {
+                      "label": "Persons of color",
+                      "symbol": {
+                        "type": "esriSFS",
+                        "color": [
+                          20,
+                          77,
+                          89,
+                          255
+                        ],
+                        "outline": {
+                          "type": "esriSLS",
+                          "color": [
+                            0,
+                            0,
+                            0,
+                            0
+                          ],
+                          "width": 0.56,
+                          "style": "esriSLSSolid"
+                        },
+                        "style": "esriSFSSolid"
+                      },
+                      "values": [
+                        [
+                          "Persons of color"
+                        ]
+                      ]
+                    },
+                    {
+                      "label": "Persons of Hispanic/Latine ethnic origin",
+                      "symbol": {
+                        "type": "esriSFS",
+                        "color": [
+                          255,
+                          199,
+                          48,
+                          255
+                        ],
+                        "outline": {
+                          "type": "esriSLS",
+                          "color": [
+                            0,
+                            0,
+                            0,
+                            0
+                          ],
+                          "width": 0.56,
+                          "style": "esriSLSSolid"
+                        },
+                        "style": "esriSFSSolid"
+                      },
+                      "values": [
+                        [
+                          "Persons of Hispanic/Latine ethnic origin"
+                        ]
+                      ]
+                    },
+                    {
+                      "label": "Persons with income below poverty",
+                      "symbol": {
+                        "type": "esriSFS",
+                        "color": [
+                          148,
+                          12,
+                          12,
+                          255
+                        ],
+                        "outline": {
+                          "type": "esriSLS",
+                          "color": [
+                            0,
+                            0,
+                            0,
+                            0
+                          ],
+                          "width": 0.56,
+                          "style": "esriSLSSolid"
+                        },
+                        "style": "esriSFSSolid"
+                      },
+                      "values": [
+                        [
+                          "Persons with income below poverty"
+                        ]
+                      ]
+                    },
+                    {
+                      "label": "Persons of Hispanic/Latine ethnic origin/Persons with income below poverty",
+                      "symbol": {
+                        "type": "esriSFS",
+                        "color": [
+                          16,
+                          31,
+                          173,
+                          255
+                        ],
+                        "outline": {
+                          "type": "esriSLS",
+                          "color": [
+                            0,
+                            0,
+                            0,
+                            0
+                          ],
+                          "width": 0.56,
+                          "style": "esriSLSSolid"
+                        },
+                        "style": "esriSFSSolid"
+                      },
+                      "values": [
+                        [
+                          "Persons of Hispanic/Latine ethnic origin/Persons with income below poverty"
+                        ]
+                      ]
+                    },
+                    {
+                      "label": "Not Qualified",
+                      "symbol": {
+                        "type": "esriSFS",
+                        "color": [
+                          255,
+                          255,
+                          255,
+                          13
+                        ],
+                        "outline": {
+                          "type": "esriSLS",
+                          "color": [
+                            0,
+                            0,
+                            0,
+                            0
+                          ],
+                          "width": 0.56,
+                          "style": "esriSLSSolid"
+                        },
+                        "style": "esriSFSSolid"
+                      },
+                      "values": [
+                        [
+                          "Not Qualified"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "uniqueValueInfos": [
+                {
+                  "label": "Persons of color",
+                  "symbol": {
+                    "type": "esriSFS",
+                    "color": [
+                      20,
+                      77,
+                      89,
+                      255
+                    ],
+                    "outline": {
+                      "type": "esriSLS",
+                      "color": [
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "width": 0.56,
+                      "style": "esriSLSSolid"
+                    },
+                    "style": "esriSFSSolid"
+                  },
+                  "value": "Persons of color"
+                },
+                {
+                  "label": "Persons of Hispanic/Latine ethnic origin",
+                  "symbol": {
+                    "type": "esriSFS",
+                    "color": [
+                      255,
+                      199,
+                      48,
+                      255
+                    ],
+                    "outline": {
+                      "type": "esriSLS",
+                      "color": [
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "width": 0.56,
+                      "style": "esriSLSSolid"
+                    },
+                    "style": "esriSFSSolid"
+                  },
+                  "value": "Persons of Hispanic/Latine ethnic origin"
+                },
+                {
+                  "label": "Persons with income below poverty",
+                  "symbol": {
+                    "type": "esriSFS",
+                    "color": [
+                      148,
+                      12,
+                      12,
+                      255
+                    ],
+                    "outline": {
+                      "type": "esriSLS",
+                      "color": [
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "width": 0.56,
+                      "style": "esriSLSSolid"
+                    },
+                    "style": "esriSFSSolid"
+                  },
+                  "value": "Persons with income below poverty"
+                },
+                {
+                  "label": "Persons of Hispanic/Latine ethnic origin/Persons with income below poverty",
+                  "symbol": {
+                    "type": "esriSFS",
+                    "color": [
+                      16,
+                      31,
+                      173,
+                      255
+                    ],
+                    "outline": {
+                      "type": "esriSLS",
+                      "color": [
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "width": 0.56,
+                      "style": "esriSLSSolid"
+                    },
+                    "style": "esriSFSSolid"
+                  },
+                  "value": "Persons of Hispanic/Latine ethnic origin/Persons with income below poverty"
+                },
+                {
+                  "label": "Not Qualified",
+                  "symbol": {
+                    "type": "esriSFS",
+                    "color": [
+                      255,
+                      255,
+                      255,
+                      13
+                    ],
+                    "outline": {
+                      "type": "esriSLS",
+                      "color": [
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "width": 0.56,
+                      "style": "esriSLSSolid"
+                    },
+                    "style": "esriSFSSolid"
+                  },
+                  "value": "Not Qualified"
+                }
+              ]
+            }
+          }
+        },
+        "popupInfo": {
+          "popupElements": [
+            {
+              "type": "fields",
+              "description": "",
+              "fieldInfos": [
+                {
+                  "fieldName": "PR_EJpops",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Environmental Justice Score - tract percentile of racial and ethnic minorities and persons with incomes below poverty",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_MVI",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Vulnerability Score - tract percentile of combined vulnerable population variables",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Tot_Pop",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Tract Population",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pop_Densty",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Population Density",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Tot_Hshlds",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Total Households",
+                  "visible": true
+                },
+                {
+                  "fieldName": "HUs",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Housing Units",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Occupd_HUs",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Occupied Housing Units",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Families",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Families",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Indv_Pov",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Individuals with incomes below poverty level",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_IndPov",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent individuals in poverty",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_IndPov",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile individuals in poverty",
+                  "visible": true
+                },
+                {
+                  "fieldName": "RacialMin",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Persons of color",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_POC",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent persons of color",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_POC",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile persons of color",
+                  "visible": true
+                },
+                {
+                  "fieldName": "HspLtno",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Persons of Hispanic/Latine ethnicity",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_Latine",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent Hispanic/Latine",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_Latine",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile Hispanic/Latine",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Female",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Female population",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_Female",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent female",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_Female",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile female",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Under18",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Minor (under 18) population",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_undr18",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent minors",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_undr18",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile minors",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Eld65up",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Senior (65+) population",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pcnt_65up",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent seniors",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_65up",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile seniors",
+                  "visible": true
+                },
+                {
+                  "fieldName": "wDisablity",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Persons with one or more disability",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_Dsblty",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent persons with disabilities",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_Dsblty",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile persons with disabilities",
+                  "visible": true
+                },
+                {
+                  "fieldName": "SnglParent",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Single parent population",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_SnglPr",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent single parents",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_SnglPr",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile single parents",
+                  "visible": true
+                },
+                {
+                  "fieldName": "ForeignBrn",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Population born outside the U.S.",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_Foregn",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent foreign-born",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_Foreign",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile foreign-born",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Ltd_Engl",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Persons with limited English proficiency",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pcnt_LEP",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent limited English proficiency",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_LEP",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile limited English proficiency",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Tot_LessHS",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Persons with less than a high-school education (diploma)",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pcnt_noHSD",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent of population with less than high-school education",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_noHSD",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile with less than high-school education",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Unemployed",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Unemployed population",
+                  "visible": true
+                },
+                {
+                  "fieldName": "UnempRate",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Unemployment rate",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_UnempRt",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile unemployed",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Units_10m",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Multi-family housing (10 or more units per structure)",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pcnt_10mHU",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent multi-family housing",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_10mHU",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile multi-family housing",
+                  "visible": true
+                },
+                {
+                  "fieldName": "GroupQtrs",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Population living in group quarters",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_GrpQtr",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent living in group quarters",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_GrpQtrs",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile living in group quarters",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Crowding",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Crowding (number of occupied housing units with more people than rooms)",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_Crwdin",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent crowding",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_Crwdng",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile crowding",
+                  "visible": true
+                },
+                {
+                  "fieldName": "MoblHomes",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Mobile homes",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_MblHms",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent mobile homes",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_MblHms",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile mobile homes",
+                  "visible": true
+                },
+                {
+                  "fieldName": "HUs_NoVeh",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Housing units with no vehicles available",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_HUs0v",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent housing units with no vehicle available",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_HUs0v",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile housing units with no vehicle avilable",
+                  "visible": true
+                }
+              ],
+              "title": "{Census Tract Demographics}"
+            }
+          ],
+          "expressionInfos": [],
+          "fieldInfos": [
+            {
+              "fieldName": "FID",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "label": "FID",
+              "visible": false
+            },
+            {
+              "fieldName": "GEOID",
+              "isEditable": true,
+              "label": "GEOID",
+              "visible": false
+            },
+            {
+              "fieldName": "NAMELSAD",
+              "isEditable": true,
+              "label": "NAMELSAD",
+              "visible": false
+            },
+            {
+              "fieldName": "ALAND",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "isEditable": true,
+              "label": "ALAND",
+              "visible": false
+            },
+            {
+              "fieldName": "AWATER",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "isEditable": true,
+              "label": "AWATER",
+              "visible": false
+            },
+            {
+              "fieldName": "INTPTLAT",
+              "isEditable": true,
+              "label": "INTPTLAT",
+              "visible": false
+            },
+            {
+              "fieldName": "INTPTLON",
+              "isEditable": true,
+              "label": "INTPTLON",
+              "visible": false
+            },
+            {
+              "fieldName": "Shape_Leng",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "isEditable": true,
+              "label": "Shape_Leng",
+              "visible": false
+            },
+            {
+              "fieldName": "OBJECTID",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "OBJECTID",
+              "visible": false
+            },
+            {
+              "fieldName": "GEOID_2",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "isEditable": true,
+              "label": "GEOID_2",
+              "visible": false
+            },
+            {
+              "fieldName": "Tot_Pop",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Tract Population",
+              "visible": true
+            },
+            {
+              "fieldName": "Pop_CNI",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Pop_CNI",
+              "visible": false
+            },
+            {
+              "fieldName": "CNI_ovr5",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "CNI_ovr5",
+              "visible": false
+            },
+            {
+              "fieldName": "Wrkrs16up",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Wrkrs16up",
+              "visible": false
+            },
+            {
+              "fieldName": "Pop_Densty",
+              "format": {
+                "digitSeparator": true,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Population Density",
+              "visible": true
+            },
+            {
+              "fieldName": "HUs",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Housing Units",
+              "visible": true
+            },
+            {
+              "fieldName": "Occupd_HUs",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Occupied Housing Units",
+              "visible": true
+            },
+            {
+              "fieldName": "Tot_Hshlds",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Total Households",
+              "visible": true
+            },
+            {
+              "fieldName": "Families",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Families",
+              "visible": true
+            },
+            {
+              "fieldName": "Indv_Pov",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Individuals with incomes below poverty level",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_IndPov",
+              "format": {
+                "digitSeparator": true,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent individuals in poverty",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_IndPov",
+              "format": {
+                "digitSeparator": true,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile individuals in poverty",
+              "visible": true
+            },
+            {
+              "fieldName": "Female",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Female population",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_Female",
+              "format": {
+                "digitSeparator": true,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent female",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_Female",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile female",
+              "visible": true
+            },
+            {
+              "fieldName": "Eld65up",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Senior (65+) population",
+              "visible": true
+            },
+            {
+              "fieldName": "Pcnt_65up",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent seniors",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_65up",
+              "format": {
+                "digitSeparator": true,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile seniors",
+              "visible": true
+            },
+            {
+              "fieldName": "Under18",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Minor (under 18) population",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_undr18",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent minors",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_undr18",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile minors",
+              "visible": true
+            },
+            {
+              "fieldName": "wDisablity",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Persons with one or more disability",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_Dsblty",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent persons with disabilities",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_Dsblty",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile persons with disabilities",
+              "visible": true
+            },
+            {
+              "fieldName": "RacialMin",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Persons of color",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_POC",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent persons of color",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_POC",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile persons of color",
+              "visible": true
+            },
+            {
+              "fieldName": "HspLtno",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Persons of Hispanic/Latine ethnicity",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_Latine",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent Hispanic/Latine",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_Latine",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile Hispanic/Latine",
+              "visible": true
+            },
+            {
+              "fieldName": "Ltd_Engl",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Persons with limited English proficiency",
+              "visible": true
+            },
+            {
+              "fieldName": "Pcnt_LEP",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent limited English proficiency",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_LEP",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile limited English proficiency",
+              "visible": true
+            },
+            {
+              "fieldName": "ForeignBrn",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Population born outside the U.S.",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_Foregn",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent foreign-born",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_Foreign",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile foreign-born",
+              "visible": true
+            },
+            {
+              "fieldName": "Unemployed",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Unemployed population",
+              "visible": true
+            },
+            {
+              "fieldName": "UnempRate",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Unemployment rate",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_UnempRt",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile unemployed",
+              "visible": true
+            },
+            {
+              "fieldName": "Tot_LessHS",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Persons with less than a high-school education (diploma)",
+              "visible": true
+            },
+            {
+              "fieldName": "Pcnt_noHSD",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent of population with less than high-school education",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_noHSD",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile with less than high-school education",
+              "visible": true
+            },
+            {
+              "fieldName": "SnglParent",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Single parent population",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_SnglPr",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent single parents",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_SnglPr",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile single parents",
+              "visible": true
+            },
+            {
+              "fieldName": "Units_10m",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Multi-family housing (10 or more units per structure)",
+              "visible": true
+            },
+            {
+              "fieldName": "Pcnt_10mHU",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent multi-family housing",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_10mHU",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile multi-family housing",
+              "visible": true
+            },
+            {
+              "fieldName": "MoblHomes",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Mobile homes",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_MblHms",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent mobile homes",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_MblHms",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile mobile homes",
+              "visible": true
+            },
+            {
+              "fieldName": "Crowding",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Crowding (number of occupied housing units with more people than rooms)",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_Crwdin",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent crowding",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_Crwdng",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile crowding",
+              "visible": true
+            },
+            {
+              "fieldName": "GroupQtrs",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Population living in group quarters",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_GrpQtr",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent living in group quarters",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_GrpQtrs",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile living in group quarters",
+              "visible": true
+            },
+            {
+              "fieldName": "HUs_NoVeh",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Housing units with no vehicles available",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_HUs0v",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent housing units with no vehicle available",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_HUs0v",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile housing units with no vehicle avilable",
+              "visible": true
+            },
+            {
+              "fieldName": "Sum_MVI",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "isEditable": true,
+              "label": "Sum_MVI",
+              "visible": false
+            },
+            {
+              "fieldName": "PR_MVI",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Vulnerability Score - tract percentile of combined vulnerable population variables",
+              "visible": true
+            },
+            {
+              "fieldName": "Sum_EJpops",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "isEditable": true,
+              "label": "Sum_EJpops",
+              "visible": false
+            },
+            {
+              "fieldName": "PR_EJpops",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Environmental Justice Score - tract percentile of racial and ethnic minorities and persons with incomes below poverty",
+              "visible": true
+            },
+            {
+              "fieldName": "AirPol50up",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "AirPol50up",
+              "visible": false
+            },
+            {
+              "fieldName": "Vuln_AP_Hi",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Vuln_AP_Hi",
+              "visible": false
+            },
+            {
+              "fieldName": "EJ_AP_Hi",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "EJ_AP_Hi",
+              "visible": false
+            },
+            {
+              "fieldName": "Shape__Area",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "label": "Shape__Area",
+              "visible": false
+            },
+            {
+              "fieldName": "Shape__Length",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "label": "Shape__Length",
+              "visible": false
+            }
+          ],
+          "title": "{NAMELSAD}"
+        }
+      },
+      {
+        "id": "1832024e30e-layer-8",
+        "opacity": 1,
+        "title": "MRMPO Vulnerability Index – Concentration of combined populations of concern higher than 80% of the region",
+        "url": "https://services1.arcgis.com/i3mLmgyL55IkFf81/arcgis/rest/services/AMPA_Flood_Hazard_Vulnerability_2022_WFL1/FeatureServer/7",
+        "visibility": true,
+        "itemId": "5f52351a47564727b3554b96b13664e7",
+        "layerType": "ArcGISFeatureLayer",
+        "blendMode": "normal",
+        "layerDefinition": {
+          "featureReduction": null,
+          "drawingInfo": {
+            "renderer": {
+              "type": "uniqueValue",
+              "valueExpression": "var mvi = $feature[\"PR_MVI\"];\r\nvar ej = $feature[\"PR_EJpops\"];\r\nWhen(\r\n    mvi >= 0.8 && ej >= 0.8, \r\n    'Populations of concern for both environmental justice and health vulnerability', \r\n    mvi >= 0.8 && mvi > ej, \r\n    'Health vulnerable populations', \r\n    ej >= 0.8 && ej > mvi, \r\n    'Environmental justice populations', \r\n    'Not Qualified'\r\n    );\r\n",
+              "valueExpressionTitle": "Predominant population:",
+              "uniqueValueGroups": [
+                {
+                  "classes": [
+                    {
+                      "label": "Populations of concern for both environmental justice and health vulnerability",
+                      "symbol": {
+                        "type": "CIMSymbolReference",
+                        "symbol": {
+                          "type": "CIMPolygonSymbol",
+                          "symbolLayers": [
+                            {
+                              "type": "CIMSolidStroke",
+                              "enable": true,
+                              "capStyle": "Round",
+                              "joinStyle": "Round",
+                              "lineStyle3D": "Strip",
+                              "miterLimit": 10,
+                              "width": 0.75,
+                              "color": [
+                                219,
+                                13,
+                                13,
+                                255
+                              ]
+                            },
+                            {
+                              "type": "CIMHatchFill",
+                              "enable": true,
+                              "lineSymbol": {
+                                "type": "CIMLineSymbol",
+                                "symbolLayers": [
+                                  {
+                                    "type": "CIMSolidStroke",
+                                    "enable": true,
+                                    "capStyle": "Butt",
+                                    "joinStyle": "Miter",
+                                    "lineStyle3D": "Strip",
+                                    "miterLimit": 10,
+                                    "width": 0.75,
+                                    "color": [
+                                      219,
+                                      13,
+                                      13,
+                                      255
+                                    ]
+                                  }
+                                ]
+                              },
+                              "rotation": 45,
+                              "separation": 5
+                            }
+                          ]
+                        }
+                      },
+                      "values": [
+                        [
+                          "Populations of concern for both environmental justice and health vulnerability"
+                        ]
+                      ]
+                    },
+                    {
+                      "label": "Environmental justice populations",
+                      "symbol": {
+                        "type": "CIMSymbolReference",
+                        "symbol": {
+                          "type": "CIMPolygonSymbol",
+                          "symbolLayers": [
+                            {
+                              "type": "CIMSolidStroke",
+                              "enable": true,
+                              "capStyle": "Round",
+                              "joinStyle": "Round",
+                              "lineStyle3D": "Strip",
+                              "miterLimit": 10,
+                              "width": 0.75,
+                              "color": [
+                                22,
+                                140,
+                                18,
+                                255
+                              ]
+                            },
+                            {
+                              "type": "CIMHatchFill",
+                              "enable": true,
+                              "lineSymbol": {
+                                "type": "CIMLineSymbol",
+                                "symbolLayers": [
+                                  {
+                                    "type": "CIMSolidStroke",
+                                    "enable": true,
+                                    "capStyle": "Butt",
+                                    "joinStyle": "Miter",
+                                    "lineStyle3D": "Strip",
+                                    "miterLimit": 10,
+                                    "width": 0.75,
+                                    "color": [
+                                      22,
+                                      140,
+                                      18,
+                                      255
+                                    ]
+                                  }
+                                ]
+                              },
+                              "rotation": 45,
+                              "separation": 5
+                            }
+                          ]
+                        }
+                      },
+                      "values": [
+                        [
+                          "Environmental justice populations"
+                        ]
+                      ]
+                    },
+                    {
+                      "label": "Health vulnerable populations",
+                      "symbol": {
+                        "type": "CIMSymbolReference",
+                        "symbol": {
+                          "type": "CIMPolygonSymbol",
+                          "symbolLayers": [
+                            {
+                              "type": "CIMSolidStroke",
+                              "enable": true,
+                              "capStyle": "Round",
+                              "joinStyle": "Round",
+                              "lineStyle3D": "Strip",
+                              "miterLimit": 10,
+                              "width": 0.75,
+                              "color": [
+                                5,
+                                101,
+                                245,
+                                255
+                              ]
+                            },
+                            {
+                              "type": "CIMHatchFill",
+                              "enable": true,
+                              "lineSymbol": {
+                                "type": "CIMLineSymbol",
+                                "symbolLayers": [
+                                  {
+                                    "type": "CIMSolidStroke",
+                                    "enable": true,
+                                    "capStyle": "Butt",
+                                    "joinStyle": "Miter",
+                                    "lineStyle3D": "Strip",
+                                    "miterLimit": 10,
+                                    "width": 0.75,
+                                    "color": [
+                                      5,
+                                      101,
+                                      245,
+                                      255
+                                    ]
+                                  }
+                                ]
+                              },
+                              "rotation": 45,
+                              "separation": 5
+                            }
+                          ]
+                        }
+                      },
+                      "values": [
+                        [
+                          "Health vulnerable populations"
+                        ]
+                      ]
+                    },
+                    {
+                      "label": "Not Qualified",
+                      "symbol": {
+                        "type": "esriSFS",
+                        "color": [
+                          255,
+                          255,
+                          255,
+                          13
+                        ],
+                        "outline": {
+                          "type": "esriSLS",
+                          "color": [
+                            0,
+                            0,
+                            0,
+                            0
+                          ],
+                          "width": 0.75,
+                          "style": "esriSLSSolid"
+                        },
+                        "style": "esriSFSSolid"
+                      },
+                      "values": [
+                        [
+                          "Not Qualified"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "uniqueValueInfos": [
+                {
+                  "label": "Populations of concern for both environmental justice and health vulnerability",
+                  "symbol": {
+                    "type": "CIMSymbolReference",
+                    "symbol": {
+                      "type": "CIMPolygonSymbol",
+                      "symbolLayers": [
+                        {
+                          "type": "CIMSolidStroke",
+                          "enable": true,
+                          "capStyle": "Round",
+                          "joinStyle": "Round",
+                          "lineStyle3D": "Strip",
+                          "miterLimit": 10,
+                          "width": 0.75,
+                          "color": [
+                            219,
+                            13,
+                            13,
+                            255
+                          ]
+                        },
+                        {
+                          "type": "CIMHatchFill",
+                          "enable": true,
+                          "lineSymbol": {
+                            "type": "CIMLineSymbol",
+                            "symbolLayers": [
+                              {
+                                "type": "CIMSolidStroke",
+                                "enable": true,
+                                "capStyle": "Butt",
+                                "joinStyle": "Miter",
+                                "lineStyle3D": "Strip",
+                                "miterLimit": 10,
+                                "width": 0.75,
+                                "color": [
+                                  219,
+                                  13,
+                                  13,
+                                  255
+                                ]
+                              }
+                            ]
+                          },
+                          "rotation": 45,
+                          "separation": 5
+                        }
+                      ]
+                    }
+                  },
+                  "value": "Populations of concern for both environmental justice and health vulnerability"
+                },
+                {
+                  "label": "Environmental justice populations",
+                  "symbol": {
+                    "type": "CIMSymbolReference",
+                    "symbol": {
+                      "type": "CIMPolygonSymbol",
+                      "symbolLayers": [
+                        {
+                          "type": "CIMSolidStroke",
+                          "enable": true,
+                          "capStyle": "Round",
+                          "joinStyle": "Round",
+                          "lineStyle3D": "Strip",
+                          "miterLimit": 10,
+                          "width": 0.75,
+                          "color": [
+                            22,
+                            140,
+                            18,
+                            255
+                          ]
+                        },
+                        {
+                          "type": "CIMHatchFill",
+                          "enable": true,
+                          "lineSymbol": {
+                            "type": "CIMLineSymbol",
+                            "symbolLayers": [
+                              {
+                                "type": "CIMSolidStroke",
+                                "enable": true,
+                                "capStyle": "Butt",
+                                "joinStyle": "Miter",
+                                "lineStyle3D": "Strip",
+                                "miterLimit": 10,
+                                "width": 0.75,
+                                "color": [
+                                  22,
+                                  140,
+                                  18,
+                                  255
+                                ]
+                              }
+                            ]
+                          },
+                          "rotation": 45,
+                          "separation": 5
+                        }
+                      ]
+                    }
+                  },
+                  "value": "Environmental justice populations"
+                },
+                {
+                  "label": "Health vulnerable populations",
+                  "symbol": {
+                    "type": "CIMSymbolReference",
+                    "symbol": {
+                      "type": "CIMPolygonSymbol",
+                      "symbolLayers": [
+                        {
+                          "type": "CIMSolidStroke",
+                          "enable": true,
+                          "capStyle": "Round",
+                          "joinStyle": "Round",
+                          "lineStyle3D": "Strip",
+                          "miterLimit": 10,
+                          "width": 0.75,
+                          "color": [
+                            5,
+                            101,
+                            245,
+                            255
+                          ]
+                        },
+                        {
+                          "type": "CIMHatchFill",
+                          "enable": true,
+                          "lineSymbol": {
+                            "type": "CIMLineSymbol",
+                            "symbolLayers": [
+                              {
+                                "type": "CIMSolidStroke",
+                                "enable": true,
+                                "capStyle": "Butt",
+                                "joinStyle": "Miter",
+                                "lineStyle3D": "Strip",
+                                "miterLimit": 10,
+                                "width": 0.75,
+                                "color": [
+                                  5,
+                                  101,
+                                  245,
+                                  255
+                                ]
+                              }
+                            ]
+                          },
+                          "rotation": 45,
+                          "separation": 5
+                        }
+                      ]
+                    }
+                  },
+                  "value": "Health vulnerable populations"
+                },
+                {
+                  "label": "Not Qualified",
+                  "symbol": {
+                    "type": "esriSFS",
+                    "color": [
+                      255,
+                      255,
+                      255,
+                      13
+                    ],
+                    "outline": {
+                      "type": "esriSLS",
+                      "color": [
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "width": 0.75,
+                      "style": "esriSLSSolid"
+                    },
+                    "style": "esriSFSSolid"
+                  },
+                  "value": "Not Qualified"
+                }
+              ]
+            }
+          }
+        },
+        "popupInfo": {
+          "popupElements": [
+            {
+              "type": "fields",
+              "description": "",
+              "fieldInfos": [
+                {
+                  "fieldName": "PR_EJpops",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Environmental Justice Score - tract percentile of racial and ethnic minorities and persons with incomes below poverty",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_MVI",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Vulnerability Score - tract percentile of combined vulnerable population variables",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Tot_Pop",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Tract Population",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pop_Densty",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Population Density",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Tot_Hshlds",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Total Households",
+                  "visible": true
+                },
+                {
+                  "fieldName": "HUs",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Housing Units",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Occupd_HUs",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Occupied Housing Units",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Families",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Families",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Indv_Pov",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Individuals with incomes below poverty level",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_IndPov",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent individuals in poverty",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_IndPov",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile individuals in poverty",
+                  "visible": true
+                },
+                {
+                  "fieldName": "RacialMin",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Persons of color",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_POC",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent persons of color",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_POC",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile persons of color",
+                  "visible": true
+                },
+                {
+                  "fieldName": "HspLtno",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Persons of Hispanic/Latine ethnicity",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_Latine",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent Hispanic/Latine",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_Latine",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile Hispanic/Latine",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Female",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Female population",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_Female",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent female",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_Female",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile female",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Under18",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Minor (under 18) population",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_undr18",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent minors",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_undr18",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile minors",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Eld65up",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Senior (65+) population",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pcnt_65up",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent seniors",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_65up",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile seniors",
+                  "visible": true
+                },
+                {
+                  "fieldName": "wDisablity",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Persons with one or more disability",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_Dsblty",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent persons with disabilities",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_Dsblty",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile persons with disabilities",
+                  "visible": true
+                },
+                {
+                  "fieldName": "SnglParent",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Single parent population",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_SnglPr",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent single parents",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_SnglPr",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile single parents",
+                  "visible": true
+                },
+                {
+                  "fieldName": "ForeignBrn",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Population born outside the U.S.",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_Foregn",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent foreign-born",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_Foreign",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile foreign-born",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Ltd_Engl",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Persons with limited English proficiency",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pcnt_LEP",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent limited English proficiency",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_LEP",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile limited English proficiency",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Tot_LessHS",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Persons with less than a high-school education (diploma)",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pcnt_noHSD",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent of population with less than high-school education",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_noHSD",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile with less than high-school education",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Unemployed",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Unemployed population",
+                  "visible": true
+                },
+                {
+                  "fieldName": "UnempRate",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Unemployment rate",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_UnempRt",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile unemployed",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Units_10m",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Multi-family housing (10 or more units per structure)",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pcnt_10mHU",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent multi-family housing",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_10mHU",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile multi-family housing",
+                  "visible": true
+                },
+                {
+                  "fieldName": "GroupQtrs",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Population living in group quarters",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_GrpQtr",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent living in group quarters",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_GrpQtrs",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile living in group quarters",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Crowding",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Crowding (number of occupied housing units with more people than rooms)",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_Crwdin",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent crowding",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_Crwdng",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile crowding",
+                  "visible": true
+                },
+                {
+                  "fieldName": "MoblHomes",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Mobile homes",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_MblHms",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent mobile homes",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_MblHms",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile mobile homes",
+                  "visible": true
+                },
+                {
+                  "fieldName": "HUs_NoVeh",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 0
+                  },
+                  "isEditable": true,
+                  "label": "Housing units with no vehicles available",
+                  "visible": true
+                },
+                {
+                  "fieldName": "Pct_HUs0v",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percent housing units with no vehicle available",
+                  "visible": true
+                },
+                {
+                  "fieldName": "PR_HUs0v",
+                  "format": {
+                    "digitSeparator": false,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Percentile housing units with no vehicle avilable",
+                  "visible": true
+                }
+              ],
+              "title": "{Census Tract Demographics}"
+            }
+          ],
+          "expressionInfos": [],
+          "fieldInfos": [
+            {
+              "fieldName": "FID",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "label": "FID",
+              "visible": false
+            },
+            {
+              "fieldName": "GEOID",
+              "isEditable": true,
+              "label": "GEOID",
+              "visible": false
+            },
+            {
+              "fieldName": "NAMELSAD",
+              "isEditable": true,
+              "label": "NAMELSAD",
+              "visible": false
+            },
+            {
+              "fieldName": "ALAND",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "isEditable": true,
+              "label": "ALAND",
+              "visible": false
+            },
+            {
+              "fieldName": "AWATER",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "isEditable": true,
+              "label": "AWATER",
+              "visible": false
+            },
+            {
+              "fieldName": "INTPTLAT",
+              "isEditable": true,
+              "label": "INTPTLAT",
+              "visible": false
+            },
+            {
+              "fieldName": "INTPTLON",
+              "isEditable": true,
+              "label": "INTPTLON",
+              "visible": false
+            },
+            {
+              "fieldName": "Shape_Leng",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "isEditable": true,
+              "label": "Shape_Leng",
+              "visible": false
+            },
+            {
+              "fieldName": "OBJECTID",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "OBJECTID",
+              "visible": false
+            },
+            {
+              "fieldName": "GEOID_2",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "isEditable": true,
+              "label": "GEOID_2",
+              "visible": false
+            },
+            {
+              "fieldName": "Tot_Pop",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Tract Population",
+              "visible": true
+            },
+            {
+              "fieldName": "Pop_CNI",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Pop_CNI",
+              "visible": false
+            },
+            {
+              "fieldName": "CNI_ovr5",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "CNI_ovr5",
+              "visible": false
+            },
+            {
+              "fieldName": "Wrkrs16up",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Wrkrs16up",
+              "visible": false
+            },
+            {
+              "fieldName": "Pop_Densty",
+              "format": {
+                "digitSeparator": true,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Population Density",
+              "visible": true
+            },
+            {
+              "fieldName": "HUs",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Housing Units",
+              "visible": true
+            },
+            {
+              "fieldName": "Occupd_HUs",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Occupied Housing Units",
+              "visible": true
+            },
+            {
+              "fieldName": "Tot_Hshlds",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Total Households",
+              "visible": true
+            },
+            {
+              "fieldName": "Families",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Families",
+              "visible": true
+            },
+            {
+              "fieldName": "Indv_Pov",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Individuals with incomes below poverty level",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_IndPov",
+              "format": {
+                "digitSeparator": true,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent individuals in poverty",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_IndPov",
+              "format": {
+                "digitSeparator": true,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile individuals in poverty",
+              "visible": true
+            },
+            {
+              "fieldName": "Female",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Female population",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_Female",
+              "format": {
+                "digitSeparator": true,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent female",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_Female",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile female",
+              "visible": true
+            },
+            {
+              "fieldName": "Eld65up",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Senior (65+) population",
+              "visible": true
+            },
+            {
+              "fieldName": "Pcnt_65up",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent seniors",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_65up",
+              "format": {
+                "digitSeparator": true,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile seniors",
+              "visible": true
+            },
+            {
+              "fieldName": "Under18",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Minor (under 18) population",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_undr18",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent minors",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_undr18",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile minors",
+              "visible": true
+            },
+            {
+              "fieldName": "wDisablity",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Persons with one or more disability",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_Dsblty",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent persons with disabilities",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_Dsblty",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile persons with disabilities",
+              "visible": true
+            },
+            {
+              "fieldName": "RacialMin",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Persons of color",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_POC",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent persons of color",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_POC",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile persons of color",
+              "visible": true
+            },
+            {
+              "fieldName": "HspLtno",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Persons of Hispanic/Latine ethnicity",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_Latine",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent Hispanic/Latine",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_Latine",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile Hispanic/Latine",
+              "visible": true
+            },
+            {
+              "fieldName": "Ltd_Engl",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Persons with limited English proficiency",
+              "visible": true
+            },
+            {
+              "fieldName": "Pcnt_LEP",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent limited English proficiency",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_LEP",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile limited English proficiency",
+              "visible": true
+            },
+            {
+              "fieldName": "ForeignBrn",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Population born outside the U.S.",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_Foregn",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent foreign-born",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_Foreign",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile foreign-born",
+              "visible": true
+            },
+            {
+              "fieldName": "Unemployed",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Unemployed population",
+              "visible": true
+            },
+            {
+              "fieldName": "UnempRate",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Unemployment rate",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_UnempRt",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile unemployed",
+              "visible": true
+            },
+            {
+              "fieldName": "Tot_LessHS",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Persons with less than a high-school education (diploma)",
+              "visible": true
+            },
+            {
+              "fieldName": "Pcnt_noHSD",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent of population with less than high-school education",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_noHSD",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile with less than high-school education",
+              "visible": true
+            },
+            {
+              "fieldName": "SnglParent",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Single parent population",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_SnglPr",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent single parents",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_SnglPr",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile single parents",
+              "visible": true
+            },
+            {
+              "fieldName": "Units_10m",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Multi-family housing (10 or more units per structure)",
+              "visible": true
+            },
+            {
+              "fieldName": "Pcnt_10mHU",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent multi-family housing",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_10mHU",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile multi-family housing",
+              "visible": true
+            },
+            {
+              "fieldName": "MoblHomes",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Mobile homes",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_MblHms",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent mobile homes",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_MblHms",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile mobile homes",
+              "visible": true
+            },
+            {
+              "fieldName": "Crowding",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Crowding (number of occupied housing units with more people than rooms)",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_Crwdin",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent crowding",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_Crwdng",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile crowding",
+              "visible": true
+            },
+            {
+              "fieldName": "GroupQtrs",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Population living in group quarters",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_GrpQtr",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent living in group quarters",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_GrpQtrs",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile living in group quarters",
+              "visible": true
+            },
+            {
+              "fieldName": "HUs_NoVeh",
+              "format": {
+                "digitSeparator": true,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Housing units with no vehicles available",
+              "visible": true
+            },
+            {
+              "fieldName": "Pct_HUs0v",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percent housing units with no vehicle available",
+              "visible": true
+            },
+            {
+              "fieldName": "PR_HUs0v",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile housing units with no vehicle avilable",
+              "visible": true
+            },
+            {
+              "fieldName": "Sum_MVI",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "isEditable": true,
+              "label": "Sum_MVI",
+              "visible": false
+            },
+            {
+              "fieldName": "PR_MVI",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Vulnerability Score - tract percentile of combined vulnerable population variables",
+              "visible": true
+            },
+            {
+              "fieldName": "Sum_EJpops",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "isEditable": true,
+              "label": "Sum_EJpops",
+              "visible": false
+            },
+            {
+              "fieldName": "PR_EJpops",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Environmental Justice Score - tract percentile of racial and ethnic minorities and persons with incomes below poverty",
+              "visible": true
+            },
+            {
+              "fieldName": "AirPol50up",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "AirPol50up",
+              "visible": false
+            },
+            {
+              "fieldName": "Vuln_AP_Hi",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "Vuln_AP_Hi",
+              "visible": false
+            },
+            {
+              "fieldName": "EJ_AP_Hi",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "EJ_AP_Hi",
+              "visible": false
+            },
+            {
+              "fieldName": "Shape__Area",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "label": "Shape__Area",
+              "visible": false
+            },
+            {
+              "fieldName": "Shape__Length",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "label": "Shape__Length",
+              "visible": false
+            }
+          ],
+          "title": "{NAMELSAD}"
+        }
+      },
+      {
+        "id": "18338034cf5-layer-5",
+        "opacity": 1,
+        "title": "AMPA Air Pollution Index",
+        "url": "https://services1.arcgis.com/i3mLmgyL55IkFf81/arcgis/rest/services/AMPA_Air_Pollution_Index_2021_WFL1/FeatureServer/1",
+        "itemId": "02c5cc1216994e81a225038f5299ba88",
+        "layerType": "ArcGISFeatureLayer",
+        "popupInfo": {
+          "popupElements": [
+            {
+              "type": "fields",
+              "description": "",
+              "fieldInfos": [
+                {
+                  "fieldName": "T_PTRAF",
+                  "isEditable": true,
+                  "label": "Traffic Proximity",
+                  "visible": true
+                },
+                {
+                  "fieldName": "AirPollAvg",
+                  "format": {
+                    "digitSeparator": true,
+                    "places": 2
+                  },
+                  "isEditable": true,
+                  "label": "Air Pollution Average Score - percentile ranking of combined percentile values",
+                  "visible": true
+                }
+              ],
+              "title": ""
+            }
+          ],
+          "fieldInfos": [
+            {
+              "fieldName": "FID",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "label": "FID",
+              "visible": false
+            },
+            {
+              "fieldName": "GEOID",
+              "isEditable": true,
+              "label": "GEOID",
+              "visible": false
+            },
+            {
+              "fieldName": "Shape_Leng",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "isEditable": true,
+              "label": "Shape_Leng",
+              "visible": false
+            },
+            {
+              "fieldName": "SquareMile",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "isEditable": true,
+              "label": "SquareMile",
+              "visible": false
+            },
+            {
+              "fieldName": "WaterPerce",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "isEditable": true,
+              "label": "WaterPerce",
+              "visible": false
+            },
+            {
+              "fieldName": "GEOID_2",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "isEditable": true,
+              "label": "GEOID_2",
+              "visible": false
+            },
+            {
+              "fieldName": "DSLPM",
+              "format": {
+                "digitSeparator": true,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Diesel Particulate Matter",
+              "visible": false
+            },
+            {
+              "fieldName": "B_DSLPM",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "B_DSLPM",
+              "visible": false
+            },
+            {
+              "fieldName": "P_DSLPM",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile Diesel Particulate Matter Risk",
+              "visible": false
+            },
+            {
+              "fieldName": "T_DSLPM",
+              "isEditable": true,
+              "label": "Diesel Particulate Matter Risk",
+              "visible": false
+            },
+            {
+              "fieldName": "CANCER",
+              "format": {
+                "digitSeparator": true,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "NATA Cancer",
+              "visible": false
+            },
+            {
+              "fieldName": "B_CANCR",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "B_CANCR",
+              "visible": false
+            },
+            {
+              "fieldName": "P_CANCR",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile Cancer Risk",
+              "visible": false
+            },
+            {
+              "fieldName": "T_CANCR",
+              "isEditable": true,
+              "label": "Cancer Risk",
+              "visible": false
+            },
+            {
+              "fieldName": "RESP",
+              "format": {
+                "digitSeparator": true,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "NATA Respiratory Hazard Index",
+              "visible": false
+            },
+            {
+              "fieldName": "B_RESP",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "B_RESP",
+              "visible": false
+            },
+            {
+              "fieldName": "P_RESP",
+              "format": {
+                "digitSeparator": true,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile Respiratory Hazard Index",
+              "visible": false
+            },
+            {
+              "fieldName": "T_RESP",
+              "isEditable": true,
+              "label": "Respiratory Hazard Index Score",
+              "visible": false
+            },
+            {
+              "fieldName": "PTRAF",
+              "format": {
+                "digitSeparator": true,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Traffic Proximity Score",
+              "visible": false
+            },
+            {
+              "fieldName": "B_PTRAF",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "B_PTRAF",
+              "visible": false
+            },
+            {
+              "fieldName": "P_PTRAF",
+              "format": {
+                "digitSeparator": true,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile Traffic Proximity",
+              "visible": false
+            },
+            {
+              "fieldName": "T_PTRAF",
+              "isEditable": true,
+              "label": "Traffic Proximity",
+              "visible": true
+            },
+            {
+              "fieldName": "OZONE",
+              "format": {
+                "digitSeparator": true,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Ozone Concentration Score",
+              "visible": false
+            },
+            {
+              "fieldName": "B_OZONE",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "B_OZONE",
+              "visible": false
+            },
+            {
+              "fieldName": "P_OZONE",
+              "format": {
+                "digitSeparator": false,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile Ozone Concentration",
+              "visible": false
+            },
+            {
+              "fieldName": "T_OZONE",
+              "isEditable": true,
+              "label": "Ozone Concentration",
+              "visible": false
+            },
+            {
+              "fieldName": "PM25",
+              "format": {
+                "digitSeparator": true,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Particulate Matter 2.5 Concentration",
+              "visible": false
+            },
+            {
+              "fieldName": "B_PM25",
+              "format": {
+                "digitSeparator": false,
+                "places": 0
+              },
+              "isEditable": true,
+              "label": "B_PM25",
+              "visible": false
+            },
+            {
+              "fieldName": "P_PM25",
+              "format": {
+                "digitSeparator": true,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Percentile PM 2.5 Concentration",
+              "visible": false
+            },
+            {
+              "fieldName": "T_PM25",
+              "isEditable": true,
+              "label": "Particulate Matter PM 2.5 Concentration",
+              "visible": false
+            },
+            {
+              "fieldName": "SUM_Pcntls",
+              "format": {
+                "digitSeparator": true,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Combined percentile sum",
+              "visible": false
+            },
+            {
+              "fieldName": "AirPollAvg",
+              "format": {
+                "digitSeparator": true,
+                "places": 2
+              },
+              "isEditable": true,
+              "label": "Air Pollution Average Score - percentile ranking of combined percentile values",
+              "visible": true
+            },
+            {
+              "fieldName": "Shape__Area",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "label": "Shape__Area",
+              "visible": false
+            },
+            {
+              "fieldName": "Shape__Length",
+              "format": {
+                "digitSeparator": false,
+                "places": 6
+              },
+              "label": "Shape__Length",
+              "visible": false
+            }
+          ],
+          "title": "{PTRAF}"
+        },
+        "layerDefinition": {
+          "drawingInfo": {
+            "renderer": {
+              "authoringInfo": {
+                "visualVariables": [
+                  {
+                    "maxSliderValue": 6405.1860042,
+                    "minSliderValue": 0,
+                    "theme": "high-to-low",
+                    "type": "sizeInfo"
+                  }
+                ]
+              },
+              "type": "classBreaks",
+              "visualVariables": [
+                {
+                  "type": "sizeInfo",
+                  "field": "PTRAF",
+                  "maxDataValue": 6405.1860042,
+                  "maxSize": 14.972508194524776,
+                  "minDataValue": 0,
+                  "minSize": 3.722372733960409
+                },
+                {
+                  "type": "sizeInfo",
+                  "valueExpression": "$view.scale",
+                  "stops": [
+                    {
+                      "size": 2,
+                      "value": 89729
+                    },
+                    {
+                      "size": 1,
+                      "value": 280403
+                    },
+                    {
+                      "size": 0.5,
+                      "value": 1121614
+                    },
+                    {
+                      "size": 0,
+                      "value": 2243227
+                    }
+                  ],
+                  "target": "outline"
+                }
+              ],
+              "backgroundFillSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    166,
+                    166,
+                    166,
+                    64
+                  ],
+                  "width": 0.75,
+                  "style": "esriSLSSolid"
+                },
+                "style": "esriSFSSolid"
+              },
+              "classBreakInfos": [
+                {
+                  "classMaxValue": 9007199254740991,
+                  "symbol": {
+                    "type": "esriSMS",
+                    "color": [
+                      213,
+                      227,
+                      79,
+                      255
+                    ],
+                    "angle": 0,
+                    "xoffset": 0,
+                    "yoffset": 0,
+                    "size": 9,
+                    "style": "esriSMSCircle",
+                    "outline": {
+                      "type": "esriSLS",
+                      "color": [
+                        214,
+                        163,
+                        11,
+                        64
+                      ],
+                      "width": 1.5,
+                      "style": "esriSLSSolid"
+                    }
+                  }
+                }
+              ],
+              "field": "PTRAF",
+              "minValue": -9007199254740991
+            }
+          }
+        }
+      }
+    ],
+    "baseMap": {
+      "baseMapLayers": [
+        {
+          "id": "World_Imagery_6611",
+          "opacity": 1,
+          "title": "World Imagery",
+          "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+          "visibility": true,
+          "layerType": "ArcGISTiledMapServiceLayer"
+        },
+        {
+          "id": "World_Boundaries_and_Places_1145",
+          "opacity": 1,
+          "title": "World Boundaries and Places",
+          "url": "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer",
+          "visibility": true,
+          "layerType": "ArcGISTiledMapServiceLayer",
+          "isReference": true
+        }
+      ],
+      "title": "Imagery with Labels"
+    },
+    "applicationProperties": {
+      "viewing": {}
+    },
+    "authoringApp": "ArcGISMapViewer",
+    "authoringAppVersion": "10.3",
+    "initialState": {
+      "viewpoint": {
+        "targetGeometry": {
+          "spatialReference": {
+            "latestWkid": 3857,
+            "wkid": 102100
+          },
+          "xmin": -11903407.36344582,
+          "ymin": 4152806.7320546927,
+          "xmax": -11837900.830205513,
+          "ymax": 4202032.178270279
+        }
+      }
+    },
+    "spatialReference": {
+      "latestWkid": 3857,
+      "wkid": 102100
+    },
+    "version": "2.26"
+  }
+}

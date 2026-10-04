@@ -1,0 +1,154 @@
+{
+  "requested_url": "https://www.arcgis.com/sharing/rest/content/items/1a26fbf70f2c43139fb6231c83be7041/data?f=json",
+  "observed_at_utc": "2026-10-04T02:40:46.870141+00:00",
+  "role": "Supporting authoritative-source evidence; not rendered usability proof",
+  "resolved_url": "https://www.arcgis.com/sharing/rest/content/items/1a26fbf70f2c43139fb6231c83be7041/data?f=json",
+  "http_status": 200,
+  "content_type": "application/json;charset=utf-8",
+  "bytes": 3269,
+  "sha256": "625e03f9f9b58412e280c4179a84ad73af6db664f94f31e2c2643270b57999df",
+  "data": {
+    "version": 52,
+    "authoringApp": "ArcGIS Dashboards",
+    "authoringAppVersion": "4.25.0+ff53c5645c",
+    "sidebar": {
+      "backgroundColor": "#000000",
+      "selectors": [],
+      "type": "sidebar",
+      "description": "<p><span style=\"font-size:16px\">A substantial fraction of the U.S. population lives in close proximity to traffic, and the number of vehicle-miles traveled has grown 40% from 1990 to 2010.&nbsp; Residential proximity to traffic has been associated with various health impacts, particularly asthma exacerbation and possibly onset of asthma, as well as mortality rates.&nbsp;<br />\n<br />\nTraffic proximity is also associated with noise, which is a risk factor for various health problems. Workplace and transportation-related noise have been associated with release of stress hormones; sleep disturbance; hypertension; altered heart rate; ischemic heart disease; myocardial infarction; and, among the elderly, risk of stroke.&nbsp; Whether noise or other factors account for it, local traffic volume is a predictor of stress (which itself is associated with significant health risks).&nbsp;</span></p>\n\n<p>&nbsp;</p>\n\n<p><span style=\"font-size:16px\">Traffic proximity is given as a count of vehicles per day within 500 meters of a block centroid, divided by distance in meters, presented as the population-weighted average of blocks in each block group. Adjustments are made so that the minimum distance used is reasonable when very small.<br />\n<br />\nMore information is available at <a href=\"https://www.epa.gov/mobile-source-pollution\">the mobile source pollution website</a>.<br />\n<br />\nSource: U.S. Environmental Protection Agency (EPA), 2019. EJSCREEN Technical Documentation.</span></p>\n"
+    },
+    "widgets": [
+      {
+        "id": "c9803cfd-9741-4a78-84e6-1b8e29f10e84",
+        "name": "Traffic Proximity",
+        "showLastUpdate": false,
+        "noDataState": {
+          "verticalAlignment": "middle",
+          "showCaption": true,
+          "showDescription": true
+        },
+        "noFilterState": {
+          "verticalAlignment": "middle",
+          "showCaption": true,
+          "showDescription": true
+        },
+        "type": "mapWidget",
+        "flashRepeats": 3,
+        "itemId": "289db7f2e6a0447cbc1e303ad3dbc846",
+        "mapTools": [
+          {
+            "type": "bookmarksTool"
+          },
+          {
+            "type": "legendTool"
+          },
+          {
+            "type": "mapContentsTool"
+          },
+          {
+            "type": "basemapGalleryTool"
+          },
+          {
+            "type": "searchTool"
+          }
+        ],
+        "showNavigation": true,
+        "showPopup": true,
+        "scalebarStyle": "line"
+      }
+    ],
+    "settings": {
+      "maxPaginationRecords": 50000,
+      "allowElementResizing": false,
+      "allowElementExpansion": true,
+      "allowReset": false
+    },
+    "mapOverrides": {
+      "highlightColor": "#ff00ff",
+      "trackedFeatureColor": "#0000ff",
+      "trackedFeatureRadius": 60
+    },
+    "theme": "dark",
+    "themeOverrides": {},
+    "numberPrefixOverrides": [
+      {
+        "key": "yotta",
+        "symbol": "Y",
+        "enabled": true
+      },
+      {
+        "key": "zeta",
+        "symbol": "Z",
+        "enabled": true
+      },
+      {
+        "key": "exa",
+        "symbol": "E",
+        "enabled": true
+      },
+      {
+        "key": "peta",
+        "symbol": "P",
+        "enabled": true
+      },
+      {
+        "key": "tera",
+        "symbol": "T",
+        "enabled": true
+      },
+      {
+        "key": "giga",
+        "symbol": "G",
+        "enabled": true
+      },
+      {
+        "key": "mega",
+        "symbol": "M",
+        "enabled": true
+      },
+      {
+        "key": "kilo",
+        "symbol": "k",
+        "enabled": true
+      },
+      {
+        "key": "base",
+        "symbol": "",
+        "enabled": true
+      },
+      {
+        "key": "deci",
+        "symbol": "d",
+        "enabled": false
+      },
+      {
+        "key": "centi",
+        "symbol": "c",
+        "enabled": false
+      },
+      {
+        "key": "milli",
+        "symbol": "m",
+        "enabled": false
+      },
+      {
+        "key": "micro",
+        "symbol": "µ",
+        "enabled": false
+      },
+      {
+        "key": "nano",
+        "symbol": "n",
+        "enabled": false
+      }
+    ],
+    "layout": {
+      "rootElement": {
+        "width": 1,
+        "height": 1,
+        "type": "itemLayoutElement",
+        "id": "c9803cfd-9741-4a78-84e6-1b8e29f10e84"
+      }
+    }
+  }
+}

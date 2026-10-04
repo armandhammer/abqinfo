@@ -30,8 +30,15 @@ def render(url,number,actions=None):
                 elif 'fill' in action:page.get_by_role(action.get('role','textbox'),name=action['name'],exact=True).fill(action['fill'])
                 elif 'press' in action:page.get_by_role(action.get('role','textbox'),name=action['name'],exact=True).press(action['press'])
                 else:page.get_by_role(action.get('role','button'),name=action['name'],exact=action.get('exact',True)).click(timeout=8000)
-                page.wait_for_timeout(4000)
-                result['interactions'].append(dict(action=action,visible_text=page.locator('body').inner_text()[:45000]))
+                page.wait_for_timeout(7000)
+                observation=dict(action=action,visible_text=page.locator('body').inner_text()[:45000],frames=[])
+                for fr in page.frames:
+                    try:observation['frames'].append(dict(url=fr.url,accessibility_snapshot=fr.locator('body').aria_snapshot(timeout=4000)[:25000]))
+                    except Exception as e:observation['frames'].append(dict(url=fr.url,error=str(e)))
+                shot=SCRATCH/f'render-{number}-step-{len(result["interactions"])+1}.png'
+                page.screenshot(path=str(shot),timeout=12000,animations='disabled')
+                observation['screenshot']=dict(path=shot.relative_to(I.G.ROOT).as_posix(),sha256=hashlib.sha256(shot.read_bytes()).hexdigest(),committed=False)
+                result['interactions'].append(observation)
             except Exception as e:result['interactions'].append(dict(action=action,error=str(e)))
         try:result['visible_title']=page.title()
         except Exception as e:result['title_error']=str(e)
@@ -46,8 +53,9 @@ def render(url,number,actions=None):
     for f in result['frames']:
         if '/oauth2/authorize' in f['url']:f['url']=f['url'].split('?')[0]+'?generated_oauth_parameters=redacted'
     I.save(I.P+f'render-{number}.json',result)
-    print(json.dumps({k:v for k,v in result.items() if k not in ['frames','accessibility_snapshot']},ensure_ascii=True,indent=2))
-    for f in result['frames']:print(json.dumps({k:v for k,v in f.items() if k!='links'},ensure_ascii=True,indent=2))
+    print(json.dumps({k:v for k,v in result.items() if k not in ['frames','accessibility_snapshot','interactions']},ensure_ascii=True,indent=2))
+    for a in result['interactions']:print('Interaction',a['action'],'error',a.get('error'),'frames',[f['url'] for f in a.get('frames',[])])
+    for f in result['frames']:print(json.dumps({k:v for k,v in f.items() if k!='links'},ensure_ascii=True,indent=2)[:3500])
 
 def fetch(url,number):
     result=dict(requested_url=url,observed_at_utc=I.S.now(),role='Supporting authoritative-source evidence; not rendered usability proof')

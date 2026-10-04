@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "artifact_type": "nine_record_interactive_application_resolution_queue",
-  "recorded_at": "2026-10-04T02:32:57.712368+00:00",
+  "recorded_at": "2026-10-04T02:44:54.267926+00:00",
   "campaign_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/campaign.json",
   "selection_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/selection.json",
-  "pending_review_count": 366,
+  "pending_review_count": 364,
   "pending_ids": [
     "lin-2f6fbe4ffb0b6564",
     "lin-7bdbcdc09efe2035",
@@ -44,7 +44,6 @@
     "src-2641b5b13214d7ee",
     "src-264bbbb7e11f4070",
     "src-26cb2e52a14f606e",
-    "src-27314f06651cc1c9",
     "src-273a9754062f41ab",
     "src-279ec0c9776e8ec8",
     "src-2bbfb64ecf6455b3",
@@ -144,7 +143,6 @@
     "src-76dc6a3d52309621",
     "src-77e4073db8101308",
     "src-783d52b1391b5633",
-    "src-7867bdf940d22b3f",
     "src-78a0b68b24471315",
     "src-78d69e16f06a17b7",
     "src-79042ca53c369d0d",
@@ -742,29 +740,13 @@
     "src-f7c7bd5b273def22": "Current Legistar action histories and complete final-file attachments establish bill-level enactment, not that the held blank-enactment, floor-amendment or exhibit-incomplete PDF is the complete adopted delivery. Full Word/PDF comparisons and distinct page counts are saved. Resolve final action version, amendments and all referenced exhibits; do not infer missing legal text from adoption metadata. Erroneous /texts/{version} API responses have mismatched MatterTextMatterId and are rejected as evidence.",
     "src-fcbe6a7ebcf916a1": "Current Legistar action histories and complete final-file attachments establish bill-level enactment, not that the held blank-enactment, floor-amendment or exhibit-incomplete PDF is the complete adopted delivery. Full Word/PDF comparisons and distinct page counts are saved. Resolve final action version, amendments and all referenced exhibits; do not infer missing legal text from adoption metadata. Erroneous /texts/{version} API responses have mismatched MatterTextMatterId and are rejected as evidence."
   },
-  "ungated_pending_count": 3,
+  "ungated_pending_count": 1,
   "ungated_pending_ids": [
-    "src-27314f06651cc1c9",
-    "src-7867bdf940d22b3f",
     "src-aece84c62701c551"
   ],
   "genuinely_actionable_ungated_pending_count": 0,
   "actionable_ungated_pending_ids": [],
   "unresolved_ungated_prerequisites": [
-    {
-      "id": "src-27314f06651cc1c9",
-      "reason": "MRMPO portfolio e5b9886b6d774b1fa8bbbf11593e6306: specific interactive content not established by shell. Requires rendered application review; browser unavailable.",
-      "category": "live_application_render_or_relationship_blocker",
-      "state": "unresolved_ungated_not_currently_actionable",
-      "browser_inventory": "apps=[] browsers=[]"
-    },
-    {
-      "id": "src-7867bdf940d22b3f",
-      "reason": "MRMPO portfolio 3721154423534a49b2ba2f0dfe1f7e5d has a different appid from alleged canonical e5b9886b6d774b1fa8bbbf11593e6306. Shared shell hashes do not prove identical maps. Preserve unresolved relationship pending rendered/data-content comparison.",
-      "category": "live_application_render_or_relationship_blocker",
-      "state": "unresolved_ungated_not_currently_actionable",
-      "browser_inventory": "apps=[] browsers=[]"
-    },
     {
       "id": "src-aece84c62701c551",
       "reason": "ABQ Transportation Dashboard has credible local policy metrics, but HTTP/static wrapper cannot verify the interactive data. Required rendered usability review unavailable.",
@@ -776,32 +758,6 @@
   "actionability_basis": "All 55 authorized follow-ups received current evidence review: 16 deterministic dispositions, 39 specific unresolved prerequisites. No owner choices or uncertain legal/minutes outcomes were inferred. Existing unrelated gates/live-service prerequisites remain unchanged.",
   "mission_borderline_queue_size": 0,
   "background_family_groups": [
-    {
-      "family_id": "family-023",
-      "family": "Delivery aliases of src-27314f06651cc1c9",
-      "candidate_ids": [
-        "src-7867bdf940d22b3f"
-      ],
-      "candidate_count": 1,
-      "saved_preparation_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-023.json",
-      "selection_is_not_a_disposition": true,
-      "order": 2,
-      "boundary": "Complete saved family; split by substantive function before decisions.",
-      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-023.json"
-    },
-    {
-      "family_id": "family-100",
-      "family": "mrmpo.maps.arcgis.com/apps/instant/portfolio",
-      "candidate_ids": [
-        "src-27314f06651cc1c9"
-      ],
-      "candidate_count": 1,
-      "saved_preparation_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-100.json",
-      "selection_is_not_a_disposition": true,
-      "order": 23,
-      "boundary": "Complete saved family; split by substantive function before decisions.",
-      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-100.json"
-    },
     {
       "family_id": "family-107",
       "family": "www.cabq.gov/abq-view/abq-dashboard",
@@ -851,6 +807,20 @@
       "reason": "Rendered and substantively assessed live application; separate reviewed visitor-visible PR required; no R2 object applicable.",
       "canonical_page": "content/transportation/roadway-projects/speed-management.md",
       "evidence": "project-state/governance/interactive-app-resolution-2026-10-04/review-5.json"
+    },
+    {
+      "id": "src-27314f06651cc1c9",
+      "title": "online story map",
+      "reason": "Rendered and substantively assessed live application; separate reviewed visitor-visible PR required; no R2 object applicable.",
+      "canonical_page": "content/maps-data/dashboards.md",
+      "evidence": "project-state/governance/interactive-app-resolution-2026-10-04/review-7.json"
+    },
+    {
+      "id": "src-7867bdf940d22b3f",
+      "title": "online story map",
+      "reason": "Rendered and substantively assessed live application; separate reviewed visitor-visible PR required; no R2 object applicable.",
+      "canonical_page": "content/city-data/climate-environment.md",
+      "evidence": "project-state/governance/interactive-app-resolution-2026-10-04/review-8.json"
     }
   ],
   "visitor_visible_content_changed": false,
@@ -858,7 +828,7 @@
   "research_prerequisite_artifact": "project-state/discovery/codex-human-review-followup-queue.json",
   "followup_artifact": "project-state/discovery/background-followup-2026-09-26/decisions.json",
   "source_queue_artifact": "project-state/governance/source-hold-resolution-2026-10-04/queue.json",
-  "inventory_generated_at": "2026-10-04T02:32:54.592971Z",
+  "inventory_generated_at": "2026-10-04T02:44:51.102711Z",
   "pr202_implemented_ids_removed_from_approved": [
     "src-0d6fc7345fa112b4",
     "src-105264c6cb316de5",
@@ -931,7 +901,7 @@
     "completed": 13,
     "accounting": "project-state/governance/remaining-approved-review-2026-10-03/accounting.json"
   },
-  "inventory_sha256": "314899661024783d7a575dcb0fa86ebffac02a5a27d4fe19c079cbe46ed4bc8e",
+  "inventory_sha256": "a2991794359696a15ef50a49c1a6f3eb3ca5e53647ec0b4826bb8c46f81a6d9e",
   "source_hold_resolution": {
     "task": "source-hold-resolution-2026-10-04",
     "population": "project-state/governance/source-hold-resolution-2026-10-04/population.json",
@@ -949,7 +919,9 @@
       "src-5a12b40f6dcba285",
       "src-a9ddff947a4282c9",
       "src-fe8c43a2ca9b7417",
-      "src-4c2b3614256aaf20"
+      "src-4c2b3614256aaf20",
+      "src-27314f06651cc1c9",
+      "src-7867bdf940d22b3f"
     ]
   }
 }
