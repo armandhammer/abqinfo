@@ -1,6 +1,6 @@
 {
   "task_id": "interactive-app-resolution-2026-10-04",
-  "state": "nine_record_review_complete_validation_pending",
+  "state": "complete_validated_background_review",
   "baseline": "2756c058a4485022992ac7e697c3e046ca9031fc",
   "authority": "project-state/governance/interactive-app-resolution-2026-10-04/authority.json",
   "population": "project-state/governance/interactive-app-resolution-2026-10-04/population-v3.json",
@@ -31,9 +31,9 @@
   "r2_delta_bytes": 0,
   "sunport_hold_unchanged": true,
   "no_publication_task_started": true,
-  "normal_validation": "pending",
-  "hugo_rendered_checks": "pending",
-  "git_diff_check": "pending",
+  "normal_validation": "passed",
+  "hugo_rendered_checks": "passed",
+  "git_diff_check": "passed",
   "validation_log": "project-state/governance/interactive-app-resolution-2026-10-04/validation.log",
   "integration_authority": "project-state/governance/interactive-app-resolution-2026-10-04/authority.json",
   "integration_targets": [
@@ -57,5 +57,21 @@
     "result": "failed current checkpoint status counts; master, scope and historical regressions passed to that point",
     "log_sha256": "e53f3be2e5e8269a58a16e6c3858c23b7e7c6990b36f9e6a100e7b6310e2f572"
   },
-  "checkpoint_refresh": "Only current derived counts/current task text refreshed; all history, DPM/protected metadata and unrelated fields preserved."
+  "checkpoint_refresh": "Only current derived counts/current task text refreshed; all history, DPM/protected metadata and unrelated fields preserved.",
+  "normal_validation_exit_code": 0,
+  "pre_closeout_validation_contract": "project-state/governance/interactive-app-resolution-2026-10-04/contract-v55.json",
+  "final_validation_contract": "project-state/governance/interactive-app-resolution-2026-10-04/contract-v57.json",
+  "final_contract_validation": "passed",
+  "governance_sealed_history_regressions": "passed",
+  "internal_broken_links": 0,
+  "external_sitewide_link_check": false,
+  "pre_closeout_raw_validation_log_sha256": "fc7b722a443c268d654c30b00e7385092ef475217027a6076f15805906c60cb1",
+  "remaining_selected_records": 0,
+  "normal_validation_contract": "project-state/governance/interactive-app-resolution-2026-10-04/contract-v57.json",
+  "validation_log_sha256": "f68025a66066f93fdee81548d1035c28c9cd0968c75335313865fee9bb95c052",
+  "raw_validation_log_sha256": "3bada87e7d403612f8a0f3faf2884af717846a1826c4b9ab74a59b8b8174caca",
+  "raw_validation_log": "research/staging/interactive-app-resolution-2026-10-04/final-normal-validation-raw.log",
+  "completed_at_utc": "2026-10-04T03:16:27.257375+00:00",
+  "no_remaining_review_or_inventory_work": true,
+  "final_ref_verification": "Live post-push refs are checked against the completion seal and written to the final runtime evidence; immutable commit self-reference is not embedded."
 }

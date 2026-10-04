@@ -90,7 +90,16 @@ def guard():
     print('Nine-record exact inventory / original provenance / zero visitor-visible / zero R2 guard passed')
 
 def audit_refresh():
-    files=[x.relative_to(G.ROOT).as_posix() for x in (G.ROOT/P).glob('*') if x.is_file() and x.name not in ['authority.json','implementation.json'] and not x.name.startswith('contract-v') and not x.name.startswith('review-')]
+    # Mutable execution receipts/logs carry facts, not continuing authority.
+    # Their final hashes are checked through the implementation evidence after
+    # validation; pinning them into the registry would create a hash cycle.
+    mutable={P+'receipt.json',P+'validation.log'}
+    data=G.load(G.REGISTRY);a=G.load(data['audit_artifact'])
+    for path in mutable:
+        if (G.ROOT/path).exists():assert not G.binding_artifact(path,(G.ROOT/path).read_text(encoding='utf-8',errors='replace'))
+    a['artifacts']=[r for r in a['artifacts'] if r['path'] not in mutable]
+    save(data['audit_artifact'],a);data['audit_sha256']=G.file_hash(data['audit_artifact']);save(G.REGISTRY,data)
+    files=[x.relative_to(G.ROOT).as_posix() for x in (G.ROOT/P).glob('*') if x.is_file() and x.name not in ['authority.json','implementation.json','receipt.json','validation.log'] and not x.name.startswith('contract-v') and not x.name.startswith('review-')]
     S.audit(files);refresh()
 
 def queue():
