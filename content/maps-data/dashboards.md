@@ -92,6 +92,16 @@ Data dashboards and visualizations.
 
   Presents MRMPO's 2023 screening of roadways that may support safety-focused reconfiguration based on lanes, capacity, and traffic volume. Candidate status is preliminary and does not replace project-specific engineering analysis.
 
+- [MRMPO Transportation Equity Assessment](https://mrmpo.maps.arcgis.com/apps/instant/portfolio/index.html?appid=e5b9886b6d774b1fa8bbbf11593e6306)
+
+  Maps Albuquerque-area environmental-justice communities and access to parks, transit, healthcare and groceries. This Connections 2040 analysis uses 2016–2020 ACS demographics; it is not a current route planner.
+
+  [Official MRCOG Environmental Justice resources](https://www.mrcog-nm.gov/579/Environmental-Justice)
+
+- [City Transportation Performance Charts (historical)](https://www.cabq.gov/abq-view/abq-dashboard/transportation)
+
+  Groups seven charts of Sunport flights, passengers and revenue, ABQ RIDE ridership and productivity, and Sun Van ridership. Flight and revenue series end FY2018; other series end FY2020. These reports do not show current performance. The revenue-hours definition changed in FY2010.
+
 ## City Services and Property Tools
 
 - [Albuquerque Address Report](https://geocortexweb.cabq.gov/vertigisstudio/web/?app=eeffb6977e0c467f8439b0c97d34eaaa)

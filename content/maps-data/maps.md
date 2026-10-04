@@ -24,6 +24,12 @@ Interactive maps of city data and infrastructure.
 
   [Official City PDF](https://documents.cabq.gov/planning/UDD/UDD-HuningHighlandHOZMap-Jan2017.pdf)
 
+- [Recognized Neighborhood Associations and Coalitions (live City map)](https://cabq.maps.arcgis.com/apps/instant/basic/index.html?appid=1eef18dec8844aecabba439823ff9eb2)
+
+  Maps City-recognized neighborhood associations and coalitions, with address search and a legend. This maintained civic reference shows organization geography; it is not a legal boundary determination.
+
+  [Neighborhood Association Websites](/development-land-use/development-process/#current-city-review-process) provides links to association websites.
+
 ### Regional Long-Range Transportation Maps
 
 - [Albuquerque Metropolitan Planning Area Boundary Map (2020)](https://files.abqinfo.com/maps/mrmpo-albuquerque-metropolitan-planning-area-map-2020.pdf)
@@ -64,6 +70,10 @@ Interactive maps of city data and infrastructure.
 - [City Maps for the Public](https://www.cabq.gov/planning/agis-maps/maps-for-the-public)
 
   The City’s map library includes the official Zone Atlas, address and parcel reference tools, council districts, land use, streets, neighborhoods, and printable maps.
+
+- [City Council Districts (live City map)](https://www.cabq.gov/gis/map-views/city-council-map)
+
+  Maps Albuquerque’s nine City Council districts with a legend and selectable councilor information. This maintained geographic reference complements the dated January 2026 poster below.
 
 - [Council District Poster Map — January 2026 (archived PDF)](https://files.abqinfo.com/maps/cabq-council-district-poster-map-2026-01.pdf)
 
@@ -269,9 +279,9 @@ These are dated field references. For current routes, access, closures and restr
 
   Maps Albuquerque's existing and proposed bicycle infrastructure together, allowing users to explore planned connections and compare the future network with facilities already in place.
 
-- [Current Bikeways and Trails Data](https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdmdmaps.cabq.gov%2Fserverext%2Frest%2Fservices%2FBikeways%2FBikeways_Trails_Public%2FMapServer&source=sd) <small>[ArcGIS Data](https://dmdmaps.cabq.gov/serverext/rest/services/Bikeways/Bikeways_Trails_Public/MapServer/23)</small>
+- [Current Bikeways and Trails Data (live City map)](https://www.cabq.gov/gis/map-views/bike-paths-routes)
 
-  Publishes the City's actively maintained bikeway and trail data layer, distinguishing current infrastructure from the static network snapshot used to develop the 2024 facilities plan.
+  Maps existing Albuquerque bikeways and trails by facility type, with layer and path-type controls. The maintained City map complements the static conditions used for the 2024 facilities plan.
 
 ## Albuquerque Campus Maps
 

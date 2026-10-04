@@ -78,7 +78,9 @@ def guard_current_delta():
         else:
             assert receipt['supporting_source_only'] and row['file_type'] == 'Web page or live service'
     old_result = audit(prior, baseline_links(baseline))
-    result = audit(current, visible_links())
+    # Historical regression must pair the sealed inventory with that same
+    # stage's content. The normal suite independently audits current content.
+    result = audit(current, baseline_links(stage.end) if stage.end else visible_links())
     old_fail = {r['id']: r for r in old_result['failures']}
     fail = {r['id']: r for r in result['failures']}
     assert len(old_fail) == data['baseline_actual_failure_count'] == 1517

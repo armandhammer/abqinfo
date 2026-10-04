@@ -10,6 +10,12 @@ City and regional climate plans, greenhouse-gas inventories, and durable perform
 
 ## Environmental Justice and Local Conditions
 
+- [MRMPO Air Quality and Health Equity](https://mrmpo.maps.arcgis.com/apps/instant/portfolio/index.html?appid=3721154423534a49b2ba2f0dfe1f7e5d)
+
+  Compares six modeled Albuquerque-area traffic and air-pollution indicators with neighborhood vulnerability. Historical EPA 2021 EJScreen 2.0 and 2016–2020 ACS analysis supports comparisons of environmental burdens; it is not real-time air monitoring, a regulatory determination or an individual health assessment.
+
+  [Official MRCOG Environmental Justice resources](https://www.mrcog-nm.gov/579/Environmental-Justice)
+
 - [Mountain View Environmental Inventory and Gap Mapping Analysis](https://www.bernco.gov/public-works/blog/2026/03/12/mountain-view-environmental-inventory-and-gap-mapping-analysis)
 
   Tracks Bernalillo County's community-focused environmental inventory for Mountain View, consolidating business, permit, contaminant, air, soil, water, property, and regulatory-agency data into a planned public ArcGIS database with a final report expected in 2026.
