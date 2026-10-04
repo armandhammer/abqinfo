@@ -356,7 +356,7 @@ def setup_b():
 def combine_rows(base, production, campaign, key):
     base={r[key]:r for r in base}; production={r[key]:r for r in production}; campaign={r[key]:r for r in campaign}
     result=[]
-    for rid in sorted(set(base)|set(production)|set(campaign)):
+    for rid in dict.fromkeys([*production, *campaign, *base]):
         a,b,c=base.get(rid),production.get(rid),campaign.get(rid)
         if b==a: result.append(c)
         elif c==a or c is None: result.append(b)

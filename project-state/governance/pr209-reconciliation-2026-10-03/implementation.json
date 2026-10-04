@@ -1,21 +1,35 @@
 {
   "artifact_type": "task_implementation_plan",
-  "contract": "project-state/governance/pr209-reconciliation-2026-10-03/contract-v2.json",
-  "contract_sha256": "2b3fbc6892b7665cbcb8ac6f30f77c439e6b30b8a86a97492e00e0c1604658d0",
+  "contract": "project-state/governance/pr209-reconciliation-2026-10-03/contract-v5.json",
+  "contract_sha256": "70fb8b2f9c17aa9b31d911515b87468a9765a1c6fa9cdcfbebfa63a969c208d2",
   "population_sha256": "7c7f782cf51e01132c5ed7481dbbd4956a2300fdca7b8c74a83e4fec51cfb975",
   "respected_governance_ids": [
     "authorization-profile-ordinary-review-large",
     "decision-archive-recovery-53d2a462",
     "decision-council-closeout-status-2026-09-20-4dfd8e30",
-    "decision-decision-updates-b04354f2",
-    "decision-decisions-2c491c71",
-    "decision-decisions-b8452592-five-review-exception-2026-10-03-two-county-correction",
-    "decision-next-ordinary-queue-b8bb5c70-five-review-exception-2026-10-03-two-county-correction",
+    "decision-decision-updates-b04354f2-remaining-thirteen-exception",
+    "decision-decisions-2c491c71-remaining-thirteen-exception",
+    "decision-decisions-b8452592-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception",
+    "decision-next-ordinary-queue-b8bb5c70-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception",
     "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
     "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+    "decision-remaining-approved-review-2026-10-03-src-0e0cd2037365e977-corrected",
+    "decision-remaining-approved-review-2026-10-03-src-143f58c34ccb049a",
+    "decision-remaining-approved-review-2026-10-03-src-1f9cf39555e7be6f",
+    "decision-remaining-approved-review-2026-10-03-src-255c53cabfcc83d6",
+    "decision-remaining-approved-review-2026-10-03-src-28184729e8cc1326",
+    "decision-remaining-approved-review-2026-10-03-src-2aba4fa7ad3e22e2",
+    "decision-remaining-approved-review-2026-10-03-src-2c5c4a2267988a30",
+    "decision-remaining-approved-review-2026-10-03-src-3a4c39611a00e0a3-corrected",
+    "decision-remaining-approved-review-2026-10-03-src-751926439273bc52",
+    "decision-remaining-approved-review-2026-10-03-src-93024cc660045c22",
+    "decision-remaining-approved-review-2026-10-03-src-93ef5bb0e94bfa97",
+    "decision-remaining-approved-review-2026-10-03-src-ab94ccbf5e75b5d0",
+    "decision-remaining-approved-review-2026-10-03-src-ed75a3cb5ecc3b0b",
     "decision-scoped-source-review-2026-08-04-33554a9c",
     "decision-unm-cnm-focused-source-scope-1673e3f6",
     "owner-pr209-reconciliation-2026-10-03",
+    "owner-remaining-approved-review-2026-10-03-integration-exception",
     "policy-agents",
     "policy-durable-task-governance",
     "policy-mission-scope",
@@ -27,6 +41,7 @@
     "policy-r2-storage",
     "policy-source-priorities",
     "policy-tip-stip-retention",
+    "pr209-reconciliation-explicit-supersessions",
     "workflow-autonomous-verification",
     "workflow-background-campaign",
     "workflow-handoff-retirement",
@@ -40,6 +55,334 @@
     "inventory_disposition",
     "external_mutation"
   ],
-  "events": [],
-  "status": "reconciliation_bootstrap"
+  "events": [
+    {
+      "operation": "background_integration",
+      "candidate_ids": [
+        "src-ed75a3cb5ecc3b0b",
+        "src-1f9cf39555e7be6f",
+        "src-0e0cd2037365e977",
+        "src-751926439273bc52",
+        "src-255c53cabfcc83d6",
+        "src-93ef5bb0e94bfa97",
+        "src-28184729e8cc1326",
+        "src-3a4c39611a00e0a3",
+        "src-143f58c34ccb049a",
+        "src-93024cc660045c22",
+        "src-2c5c4a2267988a30",
+        "src-2aba4fa7ad3e22e2",
+        "src-ab94ccbf5e75b5d0"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "evidence": "project-state/governance/pr209-reconciliation-2026-10-03/campaign-verification.json",
+      "summary": "Carry all thirteen completed record decisions and original checkpoint history onto production-verified main; no substantive re-review.",
+      "governance_ids": [
+        "authorization-profile-ordinary-review-large",
+        "decision-archive-recovery-53d2a462",
+        "decision-council-closeout-status-2026-09-20-4dfd8e30",
+        "decision-decision-updates-b04354f2-remaining-thirteen-exception",
+        "decision-decisions-2c491c71-remaining-thirteen-exception",
+        "decision-decisions-b8452592-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception",
+        "decision-next-ordinary-queue-b8bb5c70-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception",
+        "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
+        "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+        "decision-remaining-approved-review-2026-10-03-src-0e0cd2037365e977-corrected",
+        "decision-remaining-approved-review-2026-10-03-src-143f58c34ccb049a",
+        "decision-remaining-approved-review-2026-10-03-src-1f9cf39555e7be6f",
+        "decision-remaining-approved-review-2026-10-03-src-255c53cabfcc83d6",
+        "decision-remaining-approved-review-2026-10-03-src-28184729e8cc1326",
+        "decision-remaining-approved-review-2026-10-03-src-2aba4fa7ad3e22e2",
+        "decision-remaining-approved-review-2026-10-03-src-2c5c4a2267988a30",
+        "decision-remaining-approved-review-2026-10-03-src-3a4c39611a00e0a3-corrected",
+        "decision-remaining-approved-review-2026-10-03-src-751926439273bc52",
+        "decision-remaining-approved-review-2026-10-03-src-93024cc660045c22",
+        "decision-remaining-approved-review-2026-10-03-src-93ef5bb0e94bfa97",
+        "decision-remaining-approved-review-2026-10-03-src-ab94ccbf5e75b5d0",
+        "decision-remaining-approved-review-2026-10-03-src-ed75a3cb5ecc3b0b",
+        "decision-scoped-source-review-2026-08-04-33554a9c",
+        "decision-unm-cnm-focused-source-scope-1673e3f6",
+        "owner-pr209-reconciliation-2026-10-03",
+        "owner-remaining-approved-review-2026-10-03-integration-exception",
+        "policy-agents",
+        "policy-durable-task-governance",
+        "policy-mission-scope",
+        "policy-mission-scope-legacy",
+        "policy-project-recency",
+        "policy-project-state",
+        "policy-publication-quality",
+        "policy-quality-exclusions",
+        "policy-r2-storage",
+        "policy-source-priorities",
+        "policy-tip-stip-retention",
+        "pr209-reconciliation-explicit-supersessions",
+        "workflow-autonomous-verification",
+        "workflow-background-campaign",
+        "workflow-handoff-retirement",
+        "workflow-parallel-verification",
+        "workflow-stage-lifecycle"
+      ]
+    }
+  ],
+  "status": "reconciled_validation_pending",
+  "completion_evidence": {
+    "authorization-profile-ordinary-review-large": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-archive-recovery-53d2a462": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-council-closeout-status-2026-09-20-4dfd8e30": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-decision-updates-b04354f2-remaining-thirteen-exception": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-decisions-2c491c71-remaining-thirteen-exception": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-decisions-b8452592-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-next-ordinary-queue-b8bb5c70-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-remaining-approved-review-2026-10-03-src-0e0cd2037365e977-corrected": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-remaining-approved-review-2026-10-03-src-143f58c34ccb049a": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-remaining-approved-review-2026-10-03-src-1f9cf39555e7be6f": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-remaining-approved-review-2026-10-03-src-255c53cabfcc83d6": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-remaining-approved-review-2026-10-03-src-28184729e8cc1326": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-remaining-approved-review-2026-10-03-src-2aba4fa7ad3e22e2": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-remaining-approved-review-2026-10-03-src-2c5c4a2267988a30": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-remaining-approved-review-2026-10-03-src-3a4c39611a00e0a3-corrected": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-remaining-approved-review-2026-10-03-src-751926439273bc52": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-remaining-approved-review-2026-10-03-src-93024cc660045c22": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-remaining-approved-review-2026-10-03-src-93ef5bb0e94bfa97": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-remaining-approved-review-2026-10-03-src-ab94ccbf5e75b5d0": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-remaining-approved-review-2026-10-03-src-ed75a3cb5ecc3b0b": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-scoped-source-review-2026-08-04-33554a9c": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "decision-unm-cnm-focused-source-scope-1673e3f6": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "owner-pr209-reconciliation-2026-10-03": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "owner-remaining-approved-review-2026-10-03-integration-exception": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "policy-agents": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "policy-durable-task-governance": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "policy-mission-scope": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "policy-mission-scope-legacy": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "policy-project-recency": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "policy-project-state": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "policy-publication-quality": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "policy-quality-exclusions": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "policy-r2-storage": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "policy-source-priorities": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "policy-tip-stip-retention": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "pr209-reconciliation-explicit-supersessions": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "workflow-autonomous-verification": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "workflow-background-campaign": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "workflow-handoff-retirement": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "workflow-parallel-verification": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ],
+    "workflow-stage-lifecycle": [
+      {
+        "path": "project-state/governance/pr209-reconciliation-2026-10-03/receipt.json",
+        "sha256": "358d6f4fa10e07914c45e040ff8b30671d0e59e3822cf376b9e0728d54958ac5"
+      }
+    ]
+  }
 }
