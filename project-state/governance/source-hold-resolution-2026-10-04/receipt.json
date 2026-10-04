@@ -1,6 +1,6 @@
 {
   "task_id": "source-hold-resolution-2026-10-04",
-  "state": "research_and_inventory_complete_validation_pending",
+  "state": "validated_background_integration_ready",
   "accounting": "project-state/governance/source-hold-resolution-2026-10-04/accounting.json",
   "research": [
     "project-state/governance/source-hold-resolution-2026-10-04/second-street.json",
@@ -17,7 +17,28 @@
   "genuine_owner_decision_count": 1,
   "owner_decision_artifact": "project-state/governance/source-hold-resolution-2026-10-04/owner-decisions-needed.json",
   "owner_decision_required_for_integration": false,
-  "normal_validation": "pending",
-  "hugo_rendered_checks": "pending",
-  "git_diff_check": "passed"
+  "normal_validation": "passed",
+  "hugo_rendered_checks": "passed",
+  "git_diff_check": "passed",
+  "failed_validation_attempts": [
+    {
+      "log": "project-state/governance/source-hold-resolution-2026-10-04/validation-attempt-1.log",
+      "exit_code": 1,
+      "reason": "Derived inventory hash stale; queue regenerated, zero human-review rows."
+    },
+    {
+      "log": "project-state/governance/source-hold-resolution-2026-10-04/validation-attempt-2.log",
+      "exit_code": 1,
+      "reason": "Top-level checkpoint counts stale after one exclusion; corrected deterministically, historical checkpoint evidence preserved."
+    }
+  ],
+  "r2_final_listing_equals_start": true,
+  "normal_validation_exit_code": 0,
+  "normal_validation_contract": "project-state/governance/source-hold-resolution-2026-10-04/contract-v14.json",
+  "validation_log": "project-state/governance/source-hold-resolution-2026-10-04/validation.log",
+  "validation_log_sha256": "268b15f48031ebd240694f39bc454a3bba67e1c524fbfa962dac965e1af12850",
+  "external_link_sweep": false,
+  "raw_validation_log_local_path": "research/staging/source-hold-resolution-2026-10-04/validation-raw.log",
+  "raw_validation_log_sha256": "5922f6c5329a416cafb773420f1bec97471a6bc69acda8b35525b4756cf79d16",
+  "validation_log_formatting": "Tracked copy preserves all output lines with trailing console padding removed; exact raw output retained locally with its byte hash."
 }

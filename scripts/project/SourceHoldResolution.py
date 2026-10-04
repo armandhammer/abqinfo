@@ -30,7 +30,9 @@ def refresh():
     if old: audit([p.relative_to(G.ROOT).as_posix() for p in old])
     n=max([int(p.stem.split('-v')[1]) for p in old],default=0)+1
     path=P+f'contract-v{n}.json'
-    subprocess.run([sys.executable,'scripts/project/Resolve-TaskGovernance.py','resolve','--population',P+'population.json','--output',path],cwd=G.ROOT,check=True,stdout=subprocess.DEVNULL)
+    populations=list((G.ROOT/P).glob('population-v*.json'))
+    population_path=max(populations,key=lambda p:int(p.stem.split('-v')[1])).relative_to(G.ROOT).as_posix() if populations else P+'population.json'
+    subprocess.run([sys.executable,'scripts/project/Resolve-TaskGovernance.py','resolve','--population',population_path,'--output',path],cwd=G.ROOT,check=True,stdout=subprocess.DEVNULL)
     c=G.load(path);assert not c['conflicts'] and not c['unresolved_gates'],(c['conflicts'],c['unresolved_gates'])
     plan=G.load(P+'implementation.json') if (G.ROOT/(P+'implementation.json')).exists() else dict(artifact_type='task_implementation_plan',actions=['document_review','family_review','inventory_disposition','governance_implementation','background_integration','external_mutation'],events=[],status='research_in_progress')
     subjects={}
@@ -42,7 +44,7 @@ def refresh():
         plan['completion_evidence']={gid:[dict(path=P+'receipt.json',sha256=G.file_hash(P+'receipt.json'))] for gid in c['governance_ids']}
     save(P+'implementation.json',plan)
     proposals=P+'integration.json' if (G.ROOT/(P+'integration.json')).exists() else P+'supersession.json'
-    save(G.ACTIVE_TASK,dict(population=P+'population.json',contract=path,contract_sha256=G.file_hash(path),implementation=P+'implementation.json',state='in_progress',supersession_proposals_path=proposals))
+    save(G.ACTIVE_TASK,dict(population=population_path,contract=path,contract_sha256=G.file_hash(path),implementation=P+'implementation.json',state='in_progress',supersession_proposals_path=proposals))
     print(path,len(c['governance_ids']),'rules; no conflicts or gates')
 def freeze():
     assert G.git('rev-parse','HEAD')==BASE
@@ -86,7 +88,8 @@ def guard():
     for i in IDS:
         assert b[i]['processing_notes'][:len(before[i]['processing_notes'])]==before[i]['processing_notes'],'Prior history lost'
     changes=set(git_bytes('diff',BASE,stage.end,'--name-only').decode().splitlines()) if stage.end else set(G.changed_paths(BASE))
-    assert changes<=set(stage.load_json(P+'population.json')['artifact_paths']),changes-set(stage.load_json(P+'population.json')['artifact_paths'])
+    population_path=stage.load_json(G.ACTIVE_TASK)['population']
+    assert changes<=set(stage.load_json(population_path)['artifact_paths']),changes-set(stage.load_json(population_path)['artifact_paths'])
     print('Exact two-record / sealed PR209 / zero visible / zero R2 guard passed')
 def update_queue():
     inv=G.load('project-state/master-inventory.json');rows={r['id']:r for r in inv['candidates']}
