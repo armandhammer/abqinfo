@@ -5,6 +5,8 @@ param(
   [switch]$CheckExternalLinks
 )
 
+& python "$PSScriptRoot/Pr210PostMergeCloseout.py" guard
+if ($LASTEXITCODE) { throw 'PR210 background closeout exact-delta guard failed.' }
 & python "$PSScriptRoot/OwnerResources20261004.py" guard
 if ($LASTEXITCODE) { throw 'Owner resources exact-delta guard failed.' }
 & python "$PSScriptRoot/Pr208209Reconciliation.py" guard
