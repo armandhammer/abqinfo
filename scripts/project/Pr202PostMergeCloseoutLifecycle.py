@@ -38,9 +38,9 @@ def guard_current_delta():
     assert not paths.intersection({'project-state/master-inventory.json', 'project-state/r2-inventory.json'})
     if not paths.intersection({'project-state/master-inventory.json', 'project-state/r2-inventory.json'}):
         assert git('rev-parse', MERGE + ':project-state/master-inventory.json') == \
-               git('rev-parse', 'HEAD:project-state/master-inventory.json')
+               git('rev-parse', endpoint + ':project-state/master-inventory.json')
         assert git('rev-parse', MERGE + ':project-state/r2-inventory.json') == \
-               git('rev-parse', 'HEAD:project-state/r2-inventory.json')
+               git('rev-parse', endpoint + ':project-state/r2-inventory.json')
     receipt_path = ROOT / (TASK + 'receipt.json')
     if not receipt_path.is_file():
         return

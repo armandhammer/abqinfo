@@ -41,7 +41,9 @@ def refresh(task):
     audit(files+[SCRIPT,'project-state/master-inventory.json','project-state/r2-inventory.json','project-state/CURRENT.md','project-state/workflow-stage-lifecycle.json','scripts/project/Invoke-ProjectValidation.ps1'])
     old=list((G.ROOT/p).glob('contract-v*.json'));n=max([int(x.stem.split('-v')[1]) for x in old],default=0)+1
     cpath=p+f'contract-v{n}.json'
-    subprocess.run([sys.executable,'scripts/project/Resolve-TaskGovernance.py','resolve','--population',p+'population.json','--output',cpath],check=True,stdout=subprocess.DEVNULL)
+    versions=list((G.ROOT/p).glob('population-v*.json'))
+    poppath=max(versions,key=lambda x:int(x.stem.split('-v')[1])).relative_to(G.ROOT).as_posix() if versions else p+'population.json'
+    subprocess.run([sys.executable,'scripts/project/Resolve-TaskGovernance.py','resolve','--population',poppath,'--output',cpath],check=True,stdout=subprocess.DEVNULL)
     c=G.load(cpath);assert not c['conflicts'],c['conflicts']
     plan=G.load(p+'implementation.json') if (G.ROOT/(p+'implementation.json')).exists() else dict(artifact_type='task_implementation_plan',actions=G.load(p+'population.json')['operation_classes'],events=[],status='in_progress')
     subjects={}
@@ -51,7 +53,7 @@ def refresh(task):
     for e in plan['events']:e['governance_ids']=c['governance_ids']
     if (G.ROOT/(p+'receipt.json')).exists():plan['completion_evidence']={gid:[dict(path=p+'receipt.json',sha256=G.file_hash(p+'receipt.json'))] for gid in c['governance_ids']}
     save(p+'implementation.json',plan)
-    active=dict(population=p+'population.json',contract=cpath,contract_sha256=G.file_hash(cpath),implementation=p+'implementation.json',state='in_progress')
+    active=dict(population=poppath,contract=cpath,contract_sha256=G.file_hash(cpath),implementation=p+'implementation.json',state='in_progress')
     if (G.ROOT/(p+'supersession.json')).exists():active['supersession_proposals_path']=p+'supersession.json'
     save(G.ACTIVE_TASK,active)
     print(cpath,len(c['governance_ids']),'rules',json.dumps(c['unresolved_gates']))
@@ -103,7 +105,9 @@ def guard():
     stages=G.load('project-state/workflow-stage-lifecycle.json')['stages']
     for task in [A,B]:
         if not any(s['id']==task for s in stages):continue
-        s=StageSnapshot(task);p=prefix(task);pop=s.load_json(p+'population.json');base=pop['baseline_commit']
+        s=StageSnapshot(task);p=prefix(task)
+        poppath=s.load_json(G.ACTIVE_TASK)['population']
+        pop=s.load_json(poppath);base=pop['baseline_commit']
         before=json.loads(git('show',base+':project-state/master-inventory.json'));after=s.load_json('project-state/master-inventory.json')
         a={r['id']:r for r in before['candidates']};b={r['id']:r for r in after['candidates']}
         assert set(a)<=set(b) and (set(b)-set(a))<=set(pop['candidate_ids'])
@@ -116,10 +120,43 @@ def guard():
         if task==A:
             s.assert_no_visible_changes(base,G.git('rev-parse',base+':content'))
             assert G.file_hash('project-state/r2-storage-policy.json')==s.load_json(p+'starting-state.json')['standing_policy_sha256']
+            prior=json.loads(git('show',base+':project-state/r2-inventory.json'));current=s.load_json('project-state/r2-inventory.json')
+            akeys={x['key']:x for x in prior['objects']};bkeys={x['key']:x for x in current['objects']}
+            assert set(akeys)<=set(bkeys) and set(bkeys)-set(akeys)<={KEY}
+            assert all(akeys[k]==bkeys[k] for k in akeys),'Existing R2 object metadata changed'
+            if KEY in bkeys:
+                assert bkeys[KEY]['size_bytes']==280024902 and current['object_count']==1612 and current['total_bytes']==10971266597
+                public=s.load_json(p+'public-verification.json')
+                assert public['byte_identical'] and public['size_bytes']==280024902 and public['checksum_sha256']==SHA
         else:
             assert s.read_bytes('project-state/r2-inventory.json').replace(b'\r\n',b'\n')==git('show',base+':project-state/r2-inventory.json').replace(b'\r\n',b'\n')
     print('Owner resources frozen population / settled Sunport reviews / stage visible and R2 boundaries passed')
+def finish_a():
+    p=prefix(A);source=G.load(p+'source-verification.json');public=G.load(p+'public-verification.json')
+    assert source['size_bytes']==public['size_bytes']==280024902 and source['sha256']==public['checksum_sha256']==SHA and public['byte_identical']
+    before=G.load(p+'r2-before.json');after=G.load(p+'r2-after.json');a={x['key']:x for x in before['objects']};b={x['key']:x for x in after['objects']}
+    assert set(b)-set(a)=={KEY} and set(a)-set(b)==set() and all(a[k]==b[k] for k in a)
+    assert after['object_count']==1612 and after['total_bytes']==10971266597 and b[KEY]['size_bytes']==280024902
+    old=G.load(p+'prior-records.json')['records'][0]
+    changes=dict(r2_url='https://files.abqinfo.com/'+KEY,r2_key=KEY,r2_etag=b[KEY]['etag'],r2_last_modified=b[KEY]['last_modified'],size_bytes=280024902,checksum_sha256=SHA,local_path=source['local_path'],provenance_status='Exact official City printing original archived unchanged; complete public GET matches approved bytes/hash.',validation_status='Archive public bytes verified; existing-entry publication remains Phase B.',processing_notes=old['processing_notes']+['2026-10-04 owner exact-object exception releases archive-size hold ONLY for this601-page printing original. Unchanged280024902 bytes;SHA256 '+SHA+';public GET verified. Evidence: '+p+'authority.json;'+p+'public-verification.json. No visible Phase A change.'])
+    save(p+'record-updates.json',[dict(id=SUN,changes=changes)])
+    refresh(A);G.active_check('mutation','inventory_disposition',[SUN])
+    subprocess.run([sys.executable,'scripts/project/Update-CandidatesBatch.py','--requests',p+'record-updates.json'],check=True)
+    save('project-state/r2-inventory.json',after)
+    pointer=G.load('project-state/ordinary-queue-current.json');q=copy.deepcopy(G.load(pointer['artifact']))
+    q['artifact_type']='sunport_exact_archive_queue';q['recorded_at']=now();q['inventory_sha256']=G.file_hash('project-state/master-inventory.json')
+    for x in q.get('newly_approved_backlog',[]):
+        if x['id']==SUN:x['reason']='Exact owner-authorized original archived and public bytes verified. Update one existing Sunport entry in Phase B; no duplicate addition.'
+    q['sunport_archive']=dict(receipt=p+'receipt.json',r2_key=KEY,public_verified=True)
+    save(p+'queue.json',q);save('project-state/ordinary-queue-current.json',dict(schema_version=1,artifact=p+'queue.json',task=A))
+    receipt=dict(task_id=A,state='archive_complete_validation_pending',authority=p+'authority.json',supersession=p+'supersession.json',source_verification=p+'source-verification.json',public_verification=p+'public-verification.json',r2_key=KEY,size_bytes=280024902,sha256=SHA,public_get_byte_identical=True,r2_objects=1612,r2_bytes=10971266597,added_objects=1,added_bytes=280024902,deleted_objects=0,overwritten_objects=0,standing_object_limit=150000000,project_ceiling=13000000000,remaining_project_bytes=2028733403,visitor_visible_changes=0,settled_scope_quality_preserved=True,queue=dict(approved=7,pending=363),normal_validation='pending')
+    save(p+'receipt.json',receipt);save(p+'progress.json',dict(state='archive_verified_inventory_saved',remaining=['full_validation','main_integration']))
+    event(A,'archive',[SUN],'Exact official original uploaded under owner exception; absent-key and full public GET verified.',p+'public-verification.json')
+    event(A,'inventory_disposition',[SUN],'Archive metadata saved; approved status and substantive reviews preserved.',p+'record-updates.json')
+    f=G.ROOT/'project-state/CURRENT.md';t=f.read_text(encoding='utf-8');links=t[t.index('[Interactive review]'):]
+    f.write_text('# Current project state\n\nSunport exact original archived under the owner\'s single-object exception:280024902 bytes,601 pages, complete public GET verified. R2:1612 objects /10971266597 bytes; standing object ceiling150000000 and project ceiling13000000000 unchanged. Queue:7 approved /363 pending. Phase A full validation and background main integration pending; Phase B authorized for six reviewed live resources, one Sunport archive-link update and two owner-supplied links. No visible Phase A changes.\n\n[Sunport archive](governance/'+A+'/receipt.json) · '+links,encoding='utf-8',newline='\n')
+    refresh(A);G.active_check('final');guard()
 if __name__=='__main__':
     command=sys.argv[1] if len(sys.argv)>1 else 'guard'
     if command=='refresh':refresh(sys.argv[2])
-    else:{'freeze-a':freeze_a,'authorize-a':authorize_a,'guard':guard}[command]()
+    else:{'freeze-a':freeze_a,'authorize-a':authorize_a,'finish-a':finish_a,'guard':guard}[command]()

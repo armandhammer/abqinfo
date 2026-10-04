@@ -1,5 +1,3 @@
-& python "$PSScriptRoot/OwnerResources20261004.py" guard
-if ($LASTEXITCODE) { throw 'Owner resources exact-delta guard failed.' }
 [CmdletBinding()]
 param(
   [string]$InventoryPath = 'project-state/master-inventory.json',
@@ -7,6 +5,8 @@ param(
   [switch]$CheckExternalLinks
 )
 
+& python "$PSScriptRoot/OwnerResources20261004.py" guard
+if ($LASTEXITCODE) { throw 'Owner resources exact-delta guard failed.' }
 & python "$PSScriptRoot/Pr208209Reconciliation.py" guard
 if ($LASTEXITCODE) { throw 'PR208/209 governed reconciliation guard failed.' }
 & python "$PSScriptRoot/Review-RemainingApproved.py"
