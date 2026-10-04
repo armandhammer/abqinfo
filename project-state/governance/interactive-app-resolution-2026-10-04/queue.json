@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "artifact_type": "nine_record_interactive_application_resolution_queue",
-  "recorded_at": "2026-10-04T02:44:54.267926+00:00",
+  "recorded_at": "2026-10-04T02:51:09.269291+00:00",
   "campaign_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/campaign.json",
   "selection_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/selection.json",
-  "pending_review_count": 364,
+  "pending_review_count": 363,
   "pending_ids": [
     "lin-2f6fbe4ffb0b6564",
     "lin-7bdbcdc09efe2035",
@@ -241,7 +241,6 @@
     "src-ae0be1703844e157",
     "src-ae49b4a8f31c9095",
     "src-ae8741d7f3b85db3",
-    "src-aece84c62701c551",
     "src-b17648af79d3e1a1",
     "src-b44e7af124c01c10",
     "src-b522707b710bb22f",
@@ -740,38 +739,14 @@
     "src-f7c7bd5b273def22": "Current Legistar action histories and complete final-file attachments establish bill-level enactment, not that the held blank-enactment, floor-amendment or exhibit-incomplete PDF is the complete adopted delivery. Full Word/PDF comparisons and distinct page counts are saved. Resolve final action version, amendments and all referenced exhibits; do not infer missing legal text from adoption metadata. Erroneous /texts/{version} API responses have mismatched MatterTextMatterId and are rejected as evidence.",
     "src-fcbe6a7ebcf916a1": "Current Legistar action histories and complete final-file attachments establish bill-level enactment, not that the held blank-enactment, floor-amendment or exhibit-incomplete PDF is the complete adopted delivery. Full Word/PDF comparisons and distinct page counts are saved. Resolve final action version, amendments and all referenced exhibits; do not infer missing legal text from adoption metadata. Erroneous /texts/{version} API responses have mismatched MatterTextMatterId and are rejected as evidence."
   },
-  "ungated_pending_count": 1,
-  "ungated_pending_ids": [
-    "src-aece84c62701c551"
-  ],
+  "ungated_pending_count": 0,
+  "ungated_pending_ids": [],
   "genuinely_actionable_ungated_pending_count": 0,
   "actionable_ungated_pending_ids": [],
-  "unresolved_ungated_prerequisites": [
-    {
-      "id": "src-aece84c62701c551",
-      "reason": "ABQ Transportation Dashboard has credible local policy metrics, but HTTP/static wrapper cannot verify the interactive data. Required rendered usability review unavailable.",
-      "category": "live_application_render_or_relationship_blocker",
-      "state": "unresolved_ungated_not_currently_actionable",
-      "browser_inventory": "apps=[] browsers=[]"
-    }
-  ],
+  "unresolved_ungated_prerequisites": [],
   "actionability_basis": "All 55 authorized follow-ups received current evidence review: 16 deterministic dispositions, 39 specific unresolved prerequisites. No owner choices or uncertain legal/minutes outcomes were inferred. Existing unrelated gates/live-service prerequisites remain unchanged.",
   "mission_borderline_queue_size": 0,
-  "background_family_groups": [
-    {
-      "family_id": "family-107",
-      "family": "www.cabq.gov/abq-view/abq-dashboard",
-      "candidate_ids": [
-        "src-aece84c62701c551"
-      ],
-      "candidate_count": 1,
-      "saved_preparation_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-107.json",
-      "selection_is_not_a_disposition": true,
-      "order": 30,
-      "boundary": "Complete saved family; split by substantive function before decisions.",
-      "evidence_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/family-107.json"
-    }
-  ],
+  "background_family_groups": [],
   "next_actionable_background_families": [],
   "next_actionable_background_family": null,
   "existing_ia_blocked_approved_ids": [
@@ -821,6 +796,13 @@
       "reason": "Rendered and substantively assessed live application; separate reviewed visitor-visible PR required; no R2 object applicable.",
       "canonical_page": "content/city-data/climate-environment.md",
       "evidence": "project-state/governance/interactive-app-resolution-2026-10-04/review-8.json"
+    },
+    {
+      "id": "src-aece84c62701c551",
+      "title": "Transportation",
+      "reason": "Rendered and substantively assessed live application; separate reviewed visitor-visible PR required; no R2 object applicable.",
+      "canonical_page": "content/maps-data/dashboards.md",
+      "evidence": "project-state/governance/interactive-app-resolution-2026-10-04/review-9.json"
     }
   ],
   "visitor_visible_content_changed": false,
@@ -828,7 +810,7 @@
   "research_prerequisite_artifact": "project-state/discovery/codex-human-review-followup-queue.json",
   "followup_artifact": "project-state/discovery/background-followup-2026-09-26/decisions.json",
   "source_queue_artifact": "project-state/governance/source-hold-resolution-2026-10-04/queue.json",
-  "inventory_generated_at": "2026-10-04T02:44:51.102711Z",
+  "inventory_generated_at": "2026-10-04T02:51:06.124203Z",
   "pr202_implemented_ids_removed_from_approved": [
     "src-0d6fc7345fa112b4",
     "src-105264c6cb316de5",
@@ -901,7 +883,7 @@
     "completed": 13,
     "accounting": "project-state/governance/remaining-approved-review-2026-10-03/accounting.json"
   },
-  "inventory_sha256": "a2991794359696a15ef50a49c1a6f3eb3ca5e53647ec0b4826bb8c46f81a6d9e",
+  "inventory_sha256": "85178d7ca7eec3be22845d4c78ddc03365f10da8afb079c2f5259dc25ff68035",
   "source_hold_resolution": {
     "task": "source-hold-resolution-2026-10-04",
     "population": "project-state/governance/source-hold-resolution-2026-10-04/population.json",
@@ -921,7 +903,8 @@
       "src-fe8c43a2ca9b7417",
       "src-4c2b3614256aaf20",
       "src-27314f06651cc1c9",
-      "src-7867bdf940d22b3f"
+      "src-7867bdf940d22b3f",
+      "src-aece84c62701c551"
     ]
   }
 }
