@@ -1,0 +1,869 @@
+{
+  "requested_url": "https://cabq.maps.arcgis.com/sharing/rest/content/items/4a52905fd707412085ce9811ad48dd25/data?f=pjson",
+  "observed_at_utc": "2026-10-04T02:25:29.506781+00:00",
+  "role": "Supporting authoritative-source evidence; not rendered usability proof",
+  "resolved_url": "https://cabq.maps.arcgis.com/sharing/rest/content/items/4a52905fd707412085ce9811ad48dd25/data?f=pjson",
+  "http_status": 200,
+  "content_type": "text/plain;charset=utf-8",
+  "bytes": 15414,
+  "sha256": "3ccd09c0d091e0d0f498b14fe6ff0b7e785da32db47d023d4d4264519e32ca69",
+  "data": {
+    "version": "4.32.0",
+    "authoringApp": "ArcGIS Dashboards",
+    "authoringAppVersion": "4.32.0+bb3056c9ff",
+    "maxPaginationRecords": 50000,
+    "maxChartRecords": 10000,
+    "timeZone": "system",
+    "theme": {
+      "id": "user",
+      "type": "resource"
+    },
+    "numberPrefixOverrides": [
+      {
+        "key": "yotta",
+        "symbol": "Y",
+        "enabled": true
+      },
+      {
+        "key": "zeta",
+        "symbol": "Z",
+        "enabled": true
+      },
+      {
+        "key": "exa",
+        "symbol": "E",
+        "enabled": true
+      },
+      {
+        "key": "peta",
+        "symbol": "P",
+        "enabled": true
+      },
+      {
+        "key": "tera",
+        "symbol": "T",
+        "enabled": true
+      },
+      {
+        "key": "giga",
+        "symbol": "G",
+        "enabled": true
+      },
+      {
+        "key": "mega",
+        "symbol": "M",
+        "enabled": true
+      },
+      {
+        "key": "kilo",
+        "symbol": "k",
+        "enabled": true
+      },
+      {
+        "key": "base",
+        "symbol": "",
+        "enabled": true
+      },
+      {
+        "key": "deci",
+        "symbol": "d",
+        "enabled": false
+      },
+      {
+        "key": "centi",
+        "symbol": "c",
+        "enabled": false
+      },
+      {
+        "key": "milli",
+        "symbol": "m",
+        "enabled": false
+      },
+      {
+        "key": "micro",
+        "symbol": "µ",
+        "enabled": false
+      },
+      {
+        "key": "nano",
+        "symbol": "n",
+        "enabled": false
+      }
+    ],
+    "desktopView": {
+      "layout": {
+        "type": "dockingLayout",
+        "rootElement": {
+          "width": 1,
+          "height": 1,
+          "id": "8f4000a1-b3bd-4a0c-9dfa-13e8327bef17",
+          "elements": [
+            {
+              "width": 0.2035159804301155,
+              "height": 1,
+              "tabName": "Elementary Schools",
+              "type": "itemLayoutElement",
+              "id": "01f2fcbc-3e89-4a05-b9a8-23576bcbd1ec"
+            },
+            {
+              "width": 0.5104785847872807,
+              "height": 1,
+              "type": "itemLayoutElement",
+              "id": "33b16527-dcb0-4909-aa06-e80e5b3dfd1b"
+            },
+            {
+              "width": 0.28600543478260876,
+              "height": 1,
+              "type": "itemLayoutElement",
+              "id": "9980b31b-c95c-4546-85fa-a6deb99334c3"
+            }
+          ],
+          "type": "stackLayoutElement",
+          "orientation": "col"
+        }
+      },
+      "type": "desktop",
+      "widgets": [
+        {
+          "backgroundColor": "#a7c0c2",
+          "id": "9980b31b-c95c-4546-85fa-a6deb99334c3",
+          "name": "Crossing Ratings",
+          "topCaption": "<p style=\"text-align:center;\"><span style=\"font-size:28px;\"><strong>Crossing Ratings</strong></span></p>",
+          "showLastUpdate": false,
+          "noDataState": {
+            "verticalAlignment": "middle",
+            "showTopCaption": true,
+            "showBottomCaption": true
+          },
+          "noFilterState": {
+            "verticalAlignment": "middle",
+            "showTopCaption": true,
+            "showBottomCaption": true
+          },
+          "datasets": [
+            {
+              "type": "serviceDataset",
+              "name": "main",
+              "dataSource": {
+                "type": "layerDataSource",
+                "itemId": "7d80c96ffb3a4829a5427708e1e62eff",
+                "layerId": "19500154842-layer-5"
+              },
+              "groupByFields": [
+                "Crossing_Rating"
+              ],
+              "orderByFields": [],
+              "statisticDefinitions": [
+                {
+                  "onStatisticField": "OBJECTID",
+                  "statisticType": "count",
+                  "outStatisticFieldName": "COUNT_OBJECTID"
+                }
+              ],
+              "clientSideStatistics": false,
+              "outFields": [
+                "*"
+              ],
+              "returnDistinctValues": false,
+              "allowSourceDownload": false,
+              "allowSummaryDownload": false
+            }
+          ],
+          "events": [
+            {
+              "type": "selectionChanged",
+              "actions": [
+                {
+                  "targets": [
+                    {
+                      "targetId": "33b16527-dcb0-4909-aa06-e80e5b3dfd1b#19500154842-layer-5",
+                      "by": "whereClause",
+                      "requiresSelection": false
+                    }
+                  ],
+                  "type": "filter"
+                }
+              ]
+            }
+          ],
+          "actionMode": "multiSelection",
+          "categoryType": "groupByValues",
+          "type": "pieChartWidget",
+          "chartConfig": {
+            "version": "18.1.0",
+            "type": "chart",
+            "orderOptions": {},
+            "colorMatch": true,
+            "chartRenderer": {
+              "type": "uniqueValue",
+              "field1": "Crossing_Rating",
+              "uniqueValueInfos": [
+                {
+                  "label": "Exceeds Minimum Standards",
+                  "symbol": {
+                    "type": "esriSFS",
+                    "style": "esriSFSSolid",
+                    "color": [
+                      2,
+                      188,
+                      242,
+                      255
+                    ],
+                    "outline": {
+                      "type": "esriSLS",
+                      "style": "esriSLSSolid",
+                      "color": [
+                        255,
+                        255,
+                        255,
+                        255
+                      ],
+                      "width": 1
+                    }
+                  },
+                  "value": "Exceeds Minimum Standards"
+                },
+                {
+                  "label": "Meets Minimum Standards",
+                  "symbol": {
+                    "type": "esriSFS",
+                    "style": "esriSFSSolid",
+                    "color": [
+                      85,
+                      255,
+                      0,
+                      255
+                    ],
+                    "outline": {
+                      "type": "esriSLS",
+                      "style": "esriSLSSolid",
+                      "color": [
+                        255,
+                        255,
+                        255,
+                        255
+                      ],
+                      "width": 1
+                    }
+                  },
+                  "value": "Meets Minimum Standards"
+                },
+                {
+                  "label": "More Study Necessary",
+                  "symbol": {
+                    "type": "esriSFS",
+                    "style": "esriSFSSolid",
+                    "color": [
+                      255,
+                      255,
+                      0,
+                      255
+                    ],
+                    "outline": {
+                      "type": "esriSLS",
+                      "style": "esriSLSSolid",
+                      "color": [
+                        255,
+                        255,
+                        255,
+                        255
+                      ],
+                      "width": 1
+                    }
+                  },
+                  "value": "More Study Necessary"
+                },
+                {
+                  "label": "No Students Counted, Outside of Walk Zone",
+                  "symbol": {
+                    "type": "esriSFS",
+                    "style": "esriSFSSolid",
+                    "color": [
+                      133,
+                      133,
+                      133,
+                      255
+                    ],
+                    "outline": {
+                      "type": "esriSLS",
+                      "style": "esriSLSSolid",
+                      "color": [
+                        255,
+                        255,
+                        255,
+                        255
+                      ],
+                      "width": 1
+                    }
+                  },
+                  "value": "No Students Counted, Outside of Walk Zone"
+                },
+                {
+                  "label": "No Students Counted, Within Walk Zone",
+                  "symbol": {
+                    "type": "esriSFS",
+                    "style": "esriSFSSolid",
+                    "color": [
+                      204,
+                      204,
+                      204,
+                      255
+                    ],
+                    "outline": {
+                      "type": "esriSLS",
+                      "style": "esriSLSSolid",
+                      "color": [
+                        255,
+                        255,
+                        255,
+                        255
+                      ],
+                      "width": 1
+                    }
+                  },
+                  "value": "No Students Counted, Within Walk Zone"
+                },
+                {
+                  "label": "Prioritized for Further Study",
+                  "symbol": {
+                    "type": "esriSFS",
+                    "style": "esriSFSSolid",
+                    "color": [
+                      255,
+                      170,
+                      0,
+                      255
+                    ],
+                    "outline": {
+                      "type": "esriSLS",
+                      "style": "esriSLSSolid",
+                      "color": [
+                        255,
+                        255,
+                        255,
+                        255
+                      ],
+                      "width": 1
+                    }
+                  },
+                  "value": "Prioritized for Further Study"
+                },
+                {
+                  "label": "Rating Not Avalibale",
+                  "symbol": {
+                    "type": "esriSFS",
+                    "style": "esriSFSSolid",
+                    "color": [
+                      214,
+                      214,
+                      214,
+                      255
+                    ],
+                    "outline": {
+                      "type": "esriSLS",
+                      "style": "esriSLSSolid",
+                      "color": [
+                        255,
+                        255,
+                        255,
+                        255
+                      ],
+                      "width": 1
+                    }
+                  },
+                  "value": null
+                },
+                {
+                  "label": "",
+                  "symbol": {
+                    "type": "esriSFS",
+                    "style": "esriSFSSolid",
+                    "color": [
+                      214,
+                      214,
+                      214,
+                      255
+                    ],
+                    "outline": {
+                      "type": "esriSLS",
+                      "style": "esriSLSSolid",
+                      "color": [
+                        255,
+                        255,
+                        255,
+                        255
+                      ],
+                      "width": 1
+                    }
+                  },
+                  "value": ""
+                }
+              ]
+            },
+            "series": [
+              {
+                "type": "pieSeries",
+                "id": "main",
+                "name": "main",
+                "x": "Crossing_Rating",
+                "dataLabels": {
+                  "type": "chartText",
+                  "visible": false,
+                  "content": {
+                    "type": "esriTS",
+                    "angle": 0,
+                    "font": {
+                      "family": "inherit",
+                      "size": 12,
+                      "style": "normal",
+                      "weight": "normal"
+                    }
+                  }
+                },
+                "dataTooltipVisible": true,
+                "dataTooltipReverseColor": true,
+                "optimizeDataLabelsOverlapping": true,
+                "alignDataLabels": true,
+                "innerRadius": 70,
+                "startAngle": 275,
+                "y": "COUNT_OBJECTID",
+                "ticks": {
+                  "type": "pieTick",
+                  "lineSymbol": {
+                    "type": "esriSLS",
+                    "style": "esriSLSSolid",
+                    "color": [
+                      214,
+                      214,
+                      214,
+                      255
+                    ]
+                  }
+                },
+                "fillSymbol": {
+                  "type": "esriSFS",
+                  "style": "esriSFSSolid",
+                  "color": [
+                    214,
+                    214,
+                    214,
+                    255
+                  ],
+                  "outline": {
+                    "type": "esriSLS",
+                    "style": "esriSLSSolid",
+                    "color": [
+                      255,
+                      255,
+                      255,
+                      255
+                    ],
+                    "width": 1
+                  }
+                },
+                "dataLabelsOffset": 10,
+                "sliceGrouping": {
+                  "sliceId": "__other-slice__",
+                  "percentageThreshold": 0,
+                  "fillSymbol": {
+                    "type": "esriSFS",
+                    "style": "esriSFSSolid",
+                    "color": [
+                      214,
+                      214,
+                      214,
+                      255
+                    ],
+                    "outline": {
+                      "type": "esriSLS",
+                      "style": "esriSLSSolid",
+                      "color": [
+                        255,
+                        255,
+                        255,
+                        255
+                      ],
+                      "width": 1
+                    }
+                  }
+                }
+              }
+            ],
+            "legend": {
+              "type": "chartLegend",
+              "visible": true,
+              "body": {
+                "type": "esriTS",
+                "angle": 0,
+                "font": {
+                  "family": "inherit",
+                  "size": 12,
+                  "style": "normal",
+                  "weight": "normal"
+                }
+              },
+              "position": "right",
+              "displayPercentage": true,
+              "displayNumericValue": false,
+              "labelMaxWidth": 100,
+              "valueLabelMaxWidth": 50
+            }
+          },
+          "dataLabelsFormat": "value",
+          "valueFormat": {
+            "name": "value",
+            "prefix": true,
+            "style": "decimal",
+            "useGrouping": true,
+            "maximumFractionDigits": 1
+          },
+          "percentageFormat": {
+            "name": "percentage",
+            "prefix": false,
+            "style": "percent",
+            "useGrouping": true,
+            "maximumFractionDigits": 0
+          }
+        },
+        {
+          "backgroundColor": "#a7c0c2",
+          "id": "01f2fcbc-3e89-4a05-b9a8-23576bcbd1ec",
+          "name": "",
+          "topCaption": "<p><span style=\"font-size:18px;\"><strong>Elementary/Middle School Walk Zones:</strong></span></p>",
+          "showLastUpdate": false,
+          "noDataState": {
+            "verticalAlignment": "middle",
+            "showTopCaption": true,
+            "showBottomCaption": true
+          },
+          "noFilterState": {
+            "verticalAlignment": "middle",
+            "showTopCaption": true,
+            "showBottomCaption": true
+          },
+          "datasets": [
+            {
+              "type": "serviceDataset",
+              "name": "main",
+              "dataSource": {
+                "type": "layerDataSource",
+                "itemId": "7d80c96ffb3a4829a5427708e1e62eff",
+                "layerId": "193698bae33-layer-15"
+              },
+              "groupByFields": [],
+              "orderByFields": [
+                "LEVEL_ ASC",
+                "SchoolName ASC"
+              ],
+              "statisticDefinitions": [],
+              "maxFeatures": 300,
+              "clientSideStatistics": false,
+              "outFields": [
+                "*"
+              ],
+              "returnDistinctValues": false,
+              "allowSourceDownload": false,
+              "allowSummaryDownload": false
+            }
+          ],
+          "events": [
+            {
+              "type": "selectionChanged",
+              "actions": [
+                {
+                  "targets": [
+                    {
+                      "targetId": "33b16527-dcb0-4909-aa06-e80e5b3dfd1b#193698bae33-layer-15",
+                      "by": "whereClause",
+                      "requiresSelection": true
+                    },
+                    {
+                      "targetId": "33b16527-dcb0-4909-aa06-e80e5b3dfd1b#193acdffb1b-layer-7",
+                      "by": "whereClause",
+                      "requiresSelection": false,
+                      "fieldMap": [
+                        {
+                          "sourceName": "SchoolName",
+                          "targetName": "School_Name"
+                        }
+                      ]
+                    },
+                    {
+                      "targetId": "9980b31b-c95c-4546-85fa-a6deb99334c3#main",
+                      "by": "whereClause",
+                      "requiresSelection": false,
+                      "fieldMap": [
+                        {
+                          "sourceName": "SchoolName",
+                          "targetName": "School_Name"
+                        }
+                      ]
+                    }
+                  ],
+                  "type": "filter"
+                },
+                {
+                  "targets": [
+                    {
+                      "targetId": "33b16527-dcb0-4909-aa06-e80e5b3dfd1b",
+                      "by": "geometry",
+                      "requiresSelection": false
+                    }
+                  ],
+                  "type": "flashGeometry"
+                },
+                {
+                  "targets": [
+                    {
+                      "targetId": "33b16527-dcb0-4909-aa06-e80e5b3dfd1b",
+                      "by": "geometry",
+                      "requiresSelection": false
+                    }
+                  ],
+                  "type": "pan"
+                },
+                {
+                  "targets": [
+                    {
+                      "targetId": "33b16527-dcb0-4909-aa06-e80e5b3dfd1b",
+                      "by": "geometry",
+                      "requiresSelection": false
+                    }
+                  ],
+                  "type": "zoom"
+                }
+              ]
+            }
+          ],
+          "type": "listWidget",
+          "selectionMode": "single",
+          "iconType": "symbol",
+          "text": "<p>{field/SchoolName} {field/LEVEL_}</p>",
+          "separatorColor": "#ffffff",
+          "selectionColor": "#ffffff",
+          "selectionTextColor": "#000000",
+          "showFilter": true
+        },
+        {
+          "id": "33b16527-dcb0-4909-aa06-e80e5b3dfd1b",
+          "name": "School Crossings 2025 - Dashboard Map",
+          "showLastUpdate": false,
+          "noDataState": {
+            "verticalAlignment": "middle",
+            "showTopCaption": true,
+            "showBottomCaption": true
+          },
+          "noFilterState": {
+            "verticalAlignment": "middle",
+            "showTopCaption": true,
+            "showBottomCaption": true
+          },
+          "type": "mapWidget",
+          "flashRepeats": 3,
+          "itemId": "7d80c96ffb3a4829a5427708e1e62eff",
+          "mapTools": [],
+          "showMeasureTool": false,
+          "showNavigation": false,
+          "showPanRotate": false,
+          "showLocate": false,
+          "showCompass": false,
+          "showPopup": true,
+          "scalebarStyle": "none",
+          "editingEnabled": false,
+          "trackedFeatureRadius": 60,
+          "selectTool": {
+            "type": "selectTool",
+            "clickToSelect": false,
+            "advanceSketchTools": []
+          }
+        }
+      ],
+      "settings": {
+        "allowElementResizing": false,
+        "allowElementExpansion": true,
+        "allowReset": false
+      },
+      "header": {
+        "textColor": "#ffffff",
+        "backgroundColor": "#0d6269",
+        "type": "header",
+        "title": "City of Albuquerque School Crossings Dashboard",
+        "subtitle": null,
+        "logoImageURL": "https://eweb.cabq.gov/SiteAssets/Images/City_Seal_Medallion.png",
+        "logoIcon": null,
+        "logoSize": "large",
+        "titleTextColor": "#ffffff",
+        "backgroundImageSizing": "fit-height",
+        "normalBackgroundImagePlacement": "left",
+        "horizontalBackgroundImagePlacement": "top",
+        "showSignOutMenu": false,
+        "subtitlePlacement": "below",
+        "showMargin": true,
+        "menuContents": []
+      },
+      "splashScreen": {
+        "type": "splashScreen",
+        "title": "City of Albuquerque School Crossings Dashboard",
+        "content": "<p><span style=\"font-size:20px;\">APS School crossings have been evaluated based on infrastructure preset (flashers, crossing guards, sidewalks) and given a score summarizing the safety of the crossing. This helps the City prioritize crossing improvements.</span></p><p>&nbsp;</p><p><span style=\"font-size:24px;\"><strong>Begin by selecting a school from the list on the left</strong></span></p><p>&nbsp;</p><p><span style=\"font-size:10px;\">The information provided on this site is for informational purposes only and is provided on an \"as is\" basis with no guarantees of completeness, accuracy, and without any warranties of any kind whatsoever, express or implied; the City assumes no responsibility or liability for any errors or omissions in the content of this site or for the use of or actions taken in reliance upon such content.&nbsp;</span><br>&nbsp;</p>",
+        "dismissButtonLabel": "ok",
+        "headerLayout": "horizontal",
+        "logoImageURL": "https://eweb.cabq.gov/SiteAssets/Images/DMD.png",
+        "logoIcon": null,
+        "logoLabel": "",
+        "logoURL": null,
+        "logoSize": "large",
+        "dontShowAgainOption": false
+      }
+    },
+    "mobileView": {
+      "layout": {
+        "type": "dockingLayout",
+        "rootElement": {
+          "width": 1,
+          "height": 0.9999999999999998,
+          "id": "cd80258c-3f5b-472c-9c95-a5b472deef81",
+          "elements": [
+            {
+              "width": 1,
+              "height": 0.6003043914887971,
+              "type": "itemLayoutElement",
+              "id": "781904f7-911c-4668-8bba-d28b20979f97"
+            },
+            {
+              "width": 1,
+              "height": 0.399695608511203,
+              "type": "itemLayoutElement",
+              "id": "676ce210-1710-401e-8841-ee3eca8c7179"
+            }
+          ],
+          "type": "stackLayoutElement",
+          "orientation": "row"
+        }
+      },
+      "type": "mobile",
+      "widgets": [
+        {
+          "id": "781904f7-911c-4668-8bba-d28b20979f97",
+          "name": "School Crossings 2025 - Dashboard Map",
+          "showLastUpdate": false,
+          "noDataState": {
+            "verticalAlignment": "middle",
+            "showTopCaption": true,
+            "showBottomCaption": true
+          },
+          "noFilterState": {
+            "verticalAlignment": "middle",
+            "showTopCaption": true,
+            "showBottomCaption": true
+          },
+          "type": "mapWidget",
+          "flashRepeats": 3,
+          "itemId": "7d80c96ffb3a4829a5427708e1e62eff",
+          "mapTools": [],
+          "showMeasureTool": false,
+          "showNavigation": false,
+          "showPanRotate": false,
+          "showLocate": false,
+          "showCompass": false,
+          "showPopup": true,
+          "scalebarStyle": "none",
+          "editingEnabled": false,
+          "trackedFeatureRadius": 60,
+          "selectTool": {
+            "type": "selectTool",
+            "clickToSelect": false,
+            "advanceSketchTools": []
+          }
+        },
+        {
+          "backgroundColor": "#a7c0c2",
+          "id": "676ce210-1710-401e-8841-ee3eca8c7179",
+          "name": "",
+          "topCaption": "<p><span style=\"font-size:18px;\"><strong>Elementary/Middle School Walk Zones:</strong></span></p>",
+          "showLastUpdate": false,
+          "noDataState": {
+            "verticalAlignment": "middle",
+            "showTopCaption": true,
+            "showBottomCaption": true
+          },
+          "noFilterState": {
+            "verticalAlignment": "middle",
+            "showTopCaption": true,
+            "showBottomCaption": true
+          },
+          "datasets": [
+            {
+              "type": "serviceDataset",
+              "name": "main",
+              "dataSource": {
+                "type": "layerDataSource",
+                "itemId": "7d80c96ffb3a4829a5427708e1e62eff",
+                "layerId": "193698bae33-layer-15"
+              },
+              "groupByFields": [],
+              "orderByFields": [
+                "LEVEL_ ASC",
+                "SchoolName ASC"
+              ],
+              "statisticDefinitions": [],
+              "maxFeatures": 300,
+              "clientSideStatistics": false,
+              "outFields": [
+                "*"
+              ],
+              "returnDistinctValues": false,
+              "allowSourceDownload": false,
+              "allowSummaryDownload": false
+            }
+          ],
+          "type": "listWidget",
+          "selectionMode": "single",
+          "iconType": "symbol",
+          "text": "<p>{field/SchoolName} {field/LEVEL_}</p>",
+          "separatorColor": "#ffffff",
+          "selectionColor": "#ffffff",
+          "selectionTextColor": "#000000",
+          "showFilter": true
+        }
+      ],
+      "settings": {
+        "allowElementResizing": false,
+        "allowElementExpansion": false,
+        "allowReset": false
+      },
+      "header": {
+        "textColor": "#ffffff",
+        "backgroundColor": "#0d6269",
+        "type": "header",
+        "title": "CABQ School Crossings",
+        "subtitle": null,
+        "logoIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon \" role=\"button\" viewBox=\"0 0 21 21\"><path d=\"M11.15 4.5a1.35 1.35 0 1 1 2.699 0 1.35 1.35 0 0 1-2.699 0zM16.212 8H14l-1.334-1.513s-.408-.626-1.143-.626a.644.644 0 0 0-.244.053h-.001l-.03.013-4.145 1.77-.4 3.515c0 .397.266.646.67.646A.656.656 0 0 0 8 11.212v-.002l.403-2.887 1.82-.747-1.77 5.543-2.36 3.016c-.127.159-.227.334-.227.535 0 .32.203.59.486.697.439.189.64-.077.903-.305l2.203-2.666 1.183-2.412L12 13.344v3.529a.75.75 0 0 0 1.5 0c0-3.783-.01-3.718-.01-3.718 0-.327-.302-.577-.302-.577l-1.735-1.969.86-2.42 1.062 1.11H15l1.212-.002c.397 0 .646-.266.646-.67A.656.656 0 0 0 16.212 8z\"/></svg>",
+        "logoSize": "small",
+        "titleTextColor": "#ffffff",
+        "backgroundImageSizing": "fit-height",
+        "normalBackgroundImagePlacement": "left",
+        "horizontalBackgroundImagePlacement": "top",
+        "showSignOutMenu": false,
+        "subtitlePlacement": "below",
+        "showMargin": false,
+        "menuContents": []
+      },
+      "splashScreen": {
+        "type": "splashScreen",
+        "title": "How to Use This Dashboard",
+        "content": "<div><div><span style=\"font-size:16px;\">Albuquerque public school crossings have been evaluated based on infrastructure preset (flashers, crossing guards, sidewalks) and given a score summarizing the safety of the crossing. This helps the City prioritize crossing improvements.</span></div></div><p>&nbsp;</p><p><span style=\"font-size:20px;\"><strong>Begin by selecting a school from the list below</strong></span></p>",
+        "dismissButtonLabel": "close",
+        "headerLayout": "horizontal",
+        "logoIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon \" role=\"button\" viewBox=\"0 0 21 21\"><path d=\"M11.15 4.5a1.35 1.35 0 1 1 2.699 0 1.35 1.35 0 0 1-2.699 0zM16.212 8H14l-1.334-1.513s-.408-.626-1.143-.626a.644.644 0 0 0-.244.053h-.001l-.03.013-4.145 1.77-.4 3.515c0 .397.266.646.67.646A.656.656 0 0 0 8 11.212v-.002l.403-2.887 1.82-.747-1.77 5.543-2.36 3.016c-.127.159-.227.334-.227.535 0 .32.203.59.486.697.439.189.64-.077.903-.305l2.203-2.666 1.183-2.412L12 13.344v3.529a.75.75 0 0 0 1.5 0c0-3.783-.01-3.718-.01-3.718 0-.327-.302-.577-.302-.577l-1.735-1.969.86-2.42 1.062 1.11H15l1.212-.002c.397 0 .646-.266.646-.67A.656.656 0 0 0 16.212 8z\"/></svg>",
+        "logoIconFillColor": "#ffffff",
+        "logoIconStrokeColor": "#000000",
+        "logoSize": "small",
+        "dontShowAgainOption": false
+      }
+    },
+    "elementMappings": {
+      "33b16527-dcb0-4909-aa06-e80e5b3dfd1b": "781904f7-911c-4668-8bba-d28b20979f97",
+      "01f2fcbc-3e89-4a05-b9a8-23576bcbd1ec": "676ce210-1710-401e-8841-ee3eca8c7179"
+    }
+  }
+}
