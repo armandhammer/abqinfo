@@ -113,4 +113,21 @@ def apply(numbers):
     save(P+'progress.json',dict(state='record_checkpoints_in_progress',completed=[i for i in IDS if rows[i]['status']!='pending review'],remaining=[i for i in IDS if rows[i]['status']=='pending review'],visitor_visible_delta=0,r2_delta_bytes=0))
     audit_refresh();guard();print(G.active_check('mutation','inventory_disposition',[IDS[n-1] for n in numbers])['task_id'])
 
+def review(n,status,facts,rationale,evidence,page=None,canonical=None):
+    """Prepare an explicit independently assessed review; no inventory mutation."""
+    rid=IDS[n-1];prior=G.load(P+'prior-records.json')['records'][n-1]
+    required=['source_identity','current_usability','mission_scope','information_density','unique_public_information_value','currentness','family_canonical_relationship','intended_publication_form','visual_observation','implementation_ready_recommendation']
+    assert all(facts.get(k) for k in required)
+    requirement=f'{rid}: {status}. {rationale} Preserve original URL/provenance and prior evidence; no visitor-visible or R2 action is authorized by this disposition.'
+    changes=dict(status=status,review_reason='rendered_live_application_resolution',validation_status='Governed actual rendered/source/family review complete. '+P+f'review-{n}.json',processing_notes=prior['processing_notes']+['2026-10-04 rendered live-application review: '+rationale+' Evidence: '+P+f'review-{n}.json'])
+    if status=='approved for addition':
+        changes['scope_assessment']=dict(assessed_at=S.now(),geographic_institutional_scope=facts['mission_scope'],specific_albuquerque_connection=facts.get('specific_albuquerque_connection',facts['mission_scope']),abqinfo_public_information_value=facts['unique_public_information_value'],general_context_exclusion_test=facts['exclusion_test'],final_scope_decision='passes_both_gates',substantive_rationale=rationale)
+        q=dict(document_function=facts['source_identity'],substantive_content=facts['information_density'],durable_public_usefulness=facts['unique_public_information_value'],information_density=facts['information_density'],unique_information=facts['family_canonical_relationship'],rationale=rationale,reviewed_document_content=True,visual_inspection_completed=True,publication_form='live_service',series_relationship='standalone',page_count=0,extracted_word_count=facts['measured_visible_word_count'],currentness_review_required=True,currentness_review=dict(status='current',authoritative_sources=evidence,finding=facts['currentness'],publication_qualification='Live official application; item modification is not a guarantee of individual dataset freshness. '+facts.get('publication_qualification','')))
+        changes.update(proposed_canonical_page=page,description=facts.get('description'),quality_assessment=q,publication_quality_decision=dict(decision='passes',finding_id=TASK+':'+rid,rationale=rationale,evidence=evidence,assessment=q))
+    else:changes.update(exclusion_reason=rationale,publication_quality_decision=dict(decision=status,finding_id=TASK+':'+rid,rationale=rationale,evidence=evidence))
+    if canonical:changes['canonical_candidate_id']=canonical
+    output=dict(id=rid,state='review_complete',binding_requirement=requirement,final_background_disposition=status,evidence=evidence,**facts,approved_updates=[dict(id=rid,changes=changes)])
+    save(P+f'review-{n}.json',output)
+    return output
+
 if __name__=='__main__':{'freeze':freeze,'refresh':audit_refresh,'guard':guard}[sys.argv[1] if len(sys.argv)>1 else 'guard']()
