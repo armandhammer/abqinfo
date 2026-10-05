@@ -7,6 +7,9 @@ sys.path.insert(0,str(S.G.ROOT/'tmp/pgs-pdf-deps'))
 import pymupdf
 OUT=S.G.ROOT/'research'/'staging'/S.TASK
 OUT.mkdir(parents=True,exist_ok=True)
+
+def derived_text(t):
+    return '\n'.join(line.rstrip(' \t') for line in t.split('\n')).rstrip('\n')+'\n'
 def fetch(item):
     n,url=item; path=OUT/f'source-{n}.bin'
     receipt=dict(url=url,retrieved_at=S.now(),request_method='GET',complete_response=True)
@@ -20,7 +23,7 @@ def fetch(item):
         elif data.startswith(b'%PDF'):
             with pymupdf.open(stream=data,filetype='pdf') as d:
                 t='\n'.join(p.get_text() for p in d);receipt.update(page_count=len(d),word_count=len(t.split()),text_sha256=hashlib.sha256(t.encode()).hexdigest())
-                (S.G.ROOT/(S.P+f'evidence-{n}.txt')).write_text(t,encoding='utf8',newline='\n')
+                (S.G.ROOT/(S.P+f'evidence-{n}.txt')).write_text(derived_text(t),encoding='utf8',newline='\n')
     except Exception as e:receipt.update(error=str(e),complete_response=False)
     S.save(S.P+f'evidence-{n}.json',receipt)
     return n,receipt.get('http_status'),receipt.get('size_bytes'),receipt.get('error')
@@ -39,7 +42,7 @@ def inspect_existing():
         path=S.G.ROOT/'research/staging/background-followup-2026-09-26'/p
         with pymupdf.open(path) as d:
             t='\n'.join(page.get_text() for page in d)
-            text_path=S.P+f'evidence-{n}.txt';(S.G.ROOT/text_path).write_text(t,encoding='utf8',newline='\n')
+            text_path=S.P+f'evidence-{n}.txt';(S.G.ROOT/text_path).write_text(derived_text(t),encoding='utf8',newline='\n')
             record=dict(id=rid,label=label,source=path.relative_to(S.G.ROOT).as_posix(),source_sha256=hashlib.sha256(path.read_bytes()).hexdigest(),pages=len(d),words=len(t.split()),text_path=text_path)
             tiles=[]
             from PIL import Image,ImageDraw

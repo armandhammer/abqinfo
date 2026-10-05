@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "b53bb51c7b7b746a133cca0ec069cff4cf60ef951a285757cc904fa3c40af2ba",
+  "audit_sha256": "77be92cc2a15256e1fb2fa4a6c16cd04a5b1827d2497e7ffc4735b6e8a34c562",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -10777,7 +10777,7 @@
       "authority": "durable recorded project decision",
       "decision_date": null,
       "effective_date": "as recorded in controlling artifact; no chronology precedence",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/discovery/planned-growth-strategy-decision-2026-09-19.json",
@@ -10802,7 +10802,9 @@
         }
       ],
       "unresolved_gates": [],
-      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority.",
+      "superseded_by": "decision-planned-growth-strategy-decision-2026-09-19-277e4100-three-enacted-holds-resolved-2026-10-05",
+      "supersession_evidence": "project-state/governance/pgs-legislative-resolution-2026-10-05/decisions.json"
     },
     {
       "governance_id": "decision-planning-documents-root-residual-decision-2026-09-20-e3cd8227",
@@ -24343,6 +24345,129 @@
       "binding_requirement": "Only conclusive current evidence may resolve the exact three factual enacted-package holds; no settled PGS chapter/package decisions are replaced. Preserve all historical evidence.",
       "required_actions": [
         "Only conclusive current evidence may resolve the exact three factual enacted-package holds; no settled PGS chapter/package decisions are replaced. Preserve all historical evidence."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded background legislative research"
+    },
+    {
+      "governance_id": "decision-planned-growth-strategy-decision-2026-09-19-277e4100-three-enacted-holds-resolved-2026-10-05",
+      "category": "active family decision",
+      "title": "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact",
+      "scope": {
+        "candidate_ids": [
+          "src-05ec421cb265b29a",
+          "src-08b6b68b53336462",
+          "src-090b501b1579de50",
+          "src-0bd664780961f148",
+          "src-0e133db868401e77",
+          "src-1779ba516b4d2c3f",
+          "src-3efa72bc100374a1",
+          "src-415952dd1d905cf7",
+          "src-544756098ac12660",
+          "src-68582bc4fe41fb4f",
+          "src-765624191ba169bd",
+          "src-8188148b0cd6c40d",
+          "src-9aeb5f621800da58",
+          "src-a7dd815a1ea2937e",
+          "src-aee98d2ab382de65",
+          "src-b443cbb28db8106b",
+          "src-bc069f52331eb293",
+          "src-c771ae9e41b9905c",
+          "src-c8e6f10731a478e6",
+          "src-cd72192082580abe",
+          "src-cd7c886fe1c0e6f7",
+          "src-d15bbc358aeaec4d",
+          "src-f1990b741c73ce09",
+          "src-f7c7bd5b273def22",
+          "src-fcbe6a7ebcf916a1"
+        ],
+        "pages": [
+          "content/city-data/capital-spending.md",
+          "content/development-land-use/area-sector-plans.md",
+          "content/development-land-use/development-process.md",
+          "content/development-land-use/zoning-ido.md"
+        ],
+        "artifact_paths": [
+          "project-state/discovery/planned-growth-strategy-decision-2026-09-19.json"
+        ]
+      },
+      "authority": "Explicit current user conclusive background-disposition instruction; preserved prior family authority",
+      "decision_date": "2026-10-05",
+      "effective_date": "2026-10-05",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/discovery/planned-growth-strategy-decision-2026-09-19.json",
+          "sha256": "9fd29c49855c7a82d4106f0dbb1eafb03a45991a3865566cbdbdcebe969452b5",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/decisions.json",
+          "sha256": "1850f3d7fe32d90147ca9dbcee4958ee6b0b23a3ea5622dbfccb86c115af61e5",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/authority.json",
+          "sha256": "0851af15e5dac5825abe03a94223f6f985ca99c0d9b4daef364c7c5311fe7b01",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact. Saved recommendations and completed-action receipts do not authorize new disposition or external action. Explicit current-user, conclusive-source exception for exactly src-f7c7bd5b273def22, src-68582bc4fe41fb4f, src-fcbe6a7ebcf916a1: their enacted-finality holds are resolved and replaced by the inventory-only approvals in project-state/governance/pgs-legislative-resolution-2026-10-05/decisions.json. Preserve the historical holds unchanged as evidence and every other settled chapter/package, canonical and family decision. No R2 or visitor-visible action is authorized.",
+      "required_actions": [
+        "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact. Saved recommendations and completed-action receipts do not authorize new disposition or external action."
+      ],
+      "prohibited_actions": [
+        "Do not infer new external authorization from this artifact."
+      ],
+      "constraints": [],
+      "settled_decisions": [
+        {
+          "question_id": "artifact-decision:decision-planned-growth-strategy-decision-2026-09-19-277e4100",
+          "decision": "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact. Saved recommendations and completed-action receipts do not authorize new disposition or external action."
+        }
+      ],
+      "unresolved_gates": [],
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+    },
+    {
+      "governance_id": "decision-pgs-legislative-resolution-2026-10-05",
+      "category": "active family decision",
+      "title": "decision-pgs-legislative-resolution-2026-10-05",
+      "scope": {
+        "candidate_ids": [
+          "src-f7c7bd5b273def22",
+          "src-68582bc4fe41fb4f",
+          "src-fcbe6a7ebcf916a1"
+        ],
+        "task_ids": [
+          "pgs-legislative-resolution-2026-10-05"
+        ]
+      },
+      "authority": "Explicit current user three-record PGS legislative resolution instruction",
+      "decision_date": "2026-10-05",
+      "effective_date": "2026-10-05",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/decisions.json",
+          "sha256": "1850f3d7fe32d90147ca9dbcee4958ee6b0b23a3ea5622dbfccb86c115af61e5",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Apply exactly the three conclusive inventory-only approvals, complete-package relationships and source/finality resolutions recorded here. Preserve all other inventory rows, settled PGS study decisions and original evidence; no R2/visitor-visible action.",
+      "required_actions": [
+        "Apply exactly the three conclusive inventory-only approvals, complete-package relationships and source/finality resolutions recorded here. Preserve all other inventory rows, settled PGS study decisions and original evidence; no R2/visitor-visible action."
       ],
       "prohibited_actions": [],
       "constraints": [],
