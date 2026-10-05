@@ -217,10 +217,31 @@ def reconcile():
     for rid in APPROVED:
         note='PR211 owner-merged historical master verified in production at '+MERGE+'; implemented as '+('a separate Crabtree supporting draft within the single curated historical master' if rid==APPROVED[-1] else 'a grouped component of the eleven-section September 2017 public-comment report')+'. No standalone public entry. Direct production/merge/reviewed/preview parity and exact public archive bytes passed. Evidence: '+P+'production-verification.json and archive-verification.json.'
         changes.append(dict(id=rid,changes=dict(status='implemented',validation_status='passed',implementation_location=PAGE,implementation_locations=[PAGE],processing_notes=rows[rid]['processing_notes']+[note])))
-    G.write_once(P+'record-updates.json',changes)
-    subprocess.run([sys.executable,'scripts/project/Update-CandidatesBatch.py','--requests',P+'record-updates.json'],check=True)
+    if (G.ROOT/(P+'record-updates.json')).exists():
+        assert G.load(P+'record-updates.json')==changes
+    else:
+        G.write_once(P+'record-updates.json',changes)
+    # The requests preserve instruction-bearing historical notes; classify
+    # their exact bytes before the batch's independent mutation preflight.
+    refresh()
+    currentrows={r['id']:r for r in G.load('project-state/master-inventory.json')['candidates']}
+    if any(any(currentrows[x['id']][k]!=v for k,v in x['changes'].items()) for x in changes):
+        subprocess.run([sys.executable,'scripts/project/Update-CandidatesBatch.py','--requests',P+'record-updates.json'],check=True)
+    refresh()
     subprocess.run(['pwsh','-NoProfile','-ExecutionPolicy','Bypass','-File','scripts/project/Update-ArchiveReconciliationCheckpointCounts.ps1'],check=True)
-    subprocess.run([sys.executable,'scripts/project/Build-ConsolidatedHumanReviewQueue.py'],check=True)
+    subprocess.run(['pwsh','-NoProfile','-ExecutionPolicy','Bypass','-File','scripts/project/Write-ProjectCheckpoint.ps1','-CompletedRange','PR211 owner-merged Central Avenue historical master production verified; exactly twelve approved components implemented/passed; Urban3 unchanged.','-ResumeCommand','PR211 background closeout: production/archive/publication lifecycle complete; full validation and authorized main/planning synchronization pending. No new review population.'],check=True)
+    refresh()
+    G.active_check('mutation','governance_implementation')
+    # This is deterministic metadata regeneration, not a family review or
+    # human disposition. Use the existing builder and verify zero case delta.
+    import importlib.util
+    spec=importlib.util.spec_from_file_location('pr211_queue_builder',G.ROOT/'scripts/project/Build-ConsolidatedHumanReviewQueue.py')
+    module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+    oldowner=G.load('project-state/discovery/consolidated-human-review-queue.json')
+    owner,report=module.build()
+    assert oldowner['record_count']==owner['record_count']==0 and oldowner['packages']==owner['packages']==[]
+    save('project-state/discovery/consolidated-human-review-queue.json',owner)
+    (G.ROOT/'project-state/discovery/consolidated-human-review-queue.md').write_text(report,encoding='utf8',newline='\n')
     inv=G.load('project-state/master-inventory.json');current={x['id']:x for x in inv['candidates']}
     pointer=json.loads(git('show',MERGE+':project-state/ordinary-queue-current.json'))
     prior=json.loads(git('show',MERGE+':'+pointer['artifact']))
