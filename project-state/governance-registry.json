@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "258d68c0a07754ac1bc171b1f3f58065dda99b5a49aef3098933901a4b3ac684",
+  "audit_sha256": "b05d29c750163bd8603fac762306ce0fef6b5f68e904b0be561b667cb30058cf",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15249,7 +15249,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "7ef4caae9cce8a5971304b3416267403d45b2c4d928c8b869cec8925de52fc1e",
+          "sha256": "0ad3f753ae16b36806cc604b36e9f030b267215848543fe00d90d187ce84db19",
           "binding_pointers": [
             "/implementation"
           ]
@@ -24020,7 +24020,7 @@
       "authority": "Explicit current owner two-phase instruction dated 2026-10-04",
       "decision_date": "2026-10-04",
       "effective_date": "2026-10-04",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/central-avenue-master-correction-2026-10-04/authority.json",
@@ -24045,7 +24045,9 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "bounded owner task"
+      "implementation_status": "bounded owner task",
+      "superseded_by": "owner-central-avenue-master-correction-2026-10-04-postmerge-lifecycle-exception",
+      "supersession_evidence": "project-state/governance/pr211-postmerge-closeout-2026-10-05/authority.json"
     },
     {
       "governance_id": "owner-central-station-area-family-resolution-2026-10-04-publication-exception",
@@ -24156,6 +24158,128 @@
       "unresolved_gates": [],
       "implementation_status": "background disposition ready",
       "supersedes": "decision-central-station-area-family-resolution-2026-10-04"
+    },
+    {
+      "governance_id": "owner-pr211-postmerge-closeout-2026-10-05",
+      "category": "active owner decision",
+      "title": "owner-pr211-postmerge-closeout-2026-10-05",
+      "scope": {
+        "task_ids": [
+          "pr211-postmerge-closeout-2026-10-05"
+        ],
+        "candidate_ids": [
+          "src-c1d5a2b0b33b331a",
+          "src-5f3ea18d2262dd4e",
+          "src-80ee860e3cfa60bf",
+          "src-bad7cd0818045625",
+          "src-2641b5b13214d7ee",
+          "src-5ade756c56baac45",
+          "src-ed916e54f80ece6f",
+          "src-863e82803d9e7cac",
+          "src-c070ab7e5a4a2622",
+          "src-2bbfb64ecf6455b3",
+          "src-d7b006f3aceaa405",
+          "src-61107c696c0e35b5",
+          "src-e0748ccf7ebc1a77"
+        ],
+        "pages": [
+          "content/development-land-use/area-sector-plans.md"
+        ]
+      },
+      "authority": "Explicit current owner background PR211 post-merge instruction",
+      "decision_date": "2026-10-04",
+      "effective_date": "2026-10-04",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/pr211-postmerge-closeout-2026-10-05/authority.json",
+          "sha256": "432345566fff306aeeb7ae8a0cd48d4651207e13dfaec876f82389dd1bf10f7e",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pr211-postmerge-closeout-2026-10-05/supersession.json",
+          "sha256": "57cb2bdd565567b39b4c96c5093a903756bd5877333fc117dccfddb16707f444",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Current owner confirms manual merge of PR211 and authorizes only background post-merge direct production verification and publication-lifecycle reconciliation for its twelve approved Central Avenue components. Verify production against exact merge deployment, reviewed content and inspected preview, using cache-busted direct HTTP and installed Chrome. Require one historical master, eleven report components with settled provenance/draft/finality explanation, separate Crabtree Infrastructure and all twelve retained archive links; Urban3 must be absent from public presentation and remain pending with unchanged blocker, bytes and provenance. Reverify retained R2 originals; derive live object/byte totals; no R2 mutations or 2018 oversized-study exception. After production succeeds, advance the twelve approved records through the normal implementation lifecycle and regenerate deterministic queue/accounting, checkpoint and CURRENT. Preserve completed review and all visitor-visible content. Full validation, governance/sealed-history/Hugo/rendered/CURRENT/diff checks are required. Save immutable closeout evidence, integrate background-only into main and synchronize planning-snapshot to the same final main. No further population or visitor-visible edits; material production discrepancy requires stopping for the smallest corrective PR. This explicitly releases the former pending-manual-review inventory boundary for the twelve merged components only; substantive family findings remain binding.",
+      "required_actions": [
+        "Current owner confirms manual merge of PR211 and authorizes only background post-merge direct production verification and publication-lifecycle reconciliation for its twelve approved Central Avenue components. Verify production against exact merge deployment, reviewed content and inspected preview, using cache-busted direct HTTP and installed Chrome. Require one historical master, eleven report components with settled provenance/draft/finality explanation, separate Crabtree Infrastructure and all twelve retained archive links; Urban3 must be absent from public presentation and remain pending with unchanged blocker, bytes and provenance. Reverify retained R2 originals; derive live object/byte totals; no R2 mutations or 2018 oversized-study exception. After production succeeds, advance the twelve approved records through the normal implementation lifecycle and regenerate deterministic queue/accounting, checkpoint and CURRENT. Preserve completed review and all visitor-visible content. Full validation, governance/sealed-history/Hugo/rendered/CURRENT/diff checks are required. Save immutable closeout evidence, integrate background-only into main and synchronize planning-snapshot to the same final main. No further population or visitor-visible edits; material production discrepancy requires stopping for the smallest corrective PR. This explicitly releases the former pending-manual-review inventory boundary for the twelve merged components only; substantive family findings remain binding."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded owner task"
+    },
+    {
+      "governance_id": "owner-central-avenue-master-correction-2026-10-04-postmerge-lifecycle-exception",
+      "category": "active owner decision",
+      "title": "owner-central-avenue-master-correction-2026-10-04-postmerge-lifecycle-exception",
+      "scope": {
+        "candidate_ids": [
+          "src-c1d5a2b0b33b331a",
+          "src-5f3ea18d2262dd4e",
+          "src-80ee860e3cfa60bf",
+          "src-bad7cd0818045625",
+          "src-2641b5b13214d7ee",
+          "src-5ade756c56baac45",
+          "src-ed916e54f80ece6f",
+          "src-863e82803d9e7cac",
+          "src-c070ab7e5a4a2622",
+          "src-2bbfb64ecf6455b3",
+          "src-d7b006f3aceaa405",
+          "src-61107c696c0e35b5",
+          "src-e0748ccf7ebc1a77"
+        ],
+        "pages": [
+          "content/development-land-use/area-sector-plans.md"
+        ],
+        "task_ids": [
+          "central-avenue-master-correction-2026-10-04"
+        ]
+      },
+      "authority": "Explicit owner PR211 post-merge publication-lifecycle exception",
+      "decision_date": "2026-10-04",
+      "effective_date": "2026-10-04",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/central-avenue-master-correction-2026-10-04/authority.json",
+          "sha256": "d71b91a13a745e53454755cc6502599a428a001312fb03cc22fbf54d260e8ad9",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/central-avenue-master-correction-2026-10-04/supersession.json",
+          "sha256": "33a84cae9b922347a4901e0404cec5d2468ffac3bfdb78d8c5c1e12b992c18cb",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pr211-postmerge-closeout-2026-10-05/authority.json",
+          "sha256": "432345566fff306aeeb7ae8a0cd48d4651207e13dfaec876f82389dd1bf10f7e",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Current owner authorizes correction of the existing Central Avenue historical master section only, using the completed thirteen-record family review as binding without re-review. Retain eleven continuously paginated September 2017 City-commissioned public-comment report components in one curated historical master; identify the nonbinding draft and 2018 revised completed-study successor, with Route 66 Action Plan, Comprehensive Plan and IDO separate. Label Crabtree Infrastructure as a separate supporting assessment/draft. Remove the unresolved Urban3 scan from public presentation only; preserve its pending status, provenance, object and historical evidence. No R2 mutation or 2018 upload is authorized. The 2018 lead-download presentation remains deferred under the settled review recommendation. Prepare and inspect one Cloudflare nonproduction preview and one unmerged manual-review PR against main; synchronize planning-snapshot to its exact reviewed head. No unrelated content or new substantive disposition is authorized. Inventory implementation statuses remain approved pending manual review. This explicitly releases the previous task-only no-visible-change restrictions for this correction only, while retaining every substantive review finding and restriction outside this scope. Explicit current owner PR211 post-merge exception: the twelve manually merged approved components may advance through the normal publication implementation lifecycle under owner-pr211-postmerge-closeout-2026-10-05 after direct production verification. Preserve all review findings, Urban3 factual hold, original bytes and no-content/no-R2 boundaries. The prior review/merge restriction remains historical authority for the preparation stage.",
+      "required_actions": [
+        "Current owner authorizes correction of the existing Central Avenue historical master section only, using the completed thirteen-record family review as binding without re-review. Retain eleven continuously paginated September 2017 City-commissioned public-comment report components in one curated historical master; identify the nonbinding draft and 2018 revised completed-study successor, with Route 66 Action Plan, Comprehensive Plan and IDO separate. Label Crabtree Infrastructure as a separate supporting assessment/draft. Remove the unresolved Urban3 scan from public presentation only; preserve its pending status, provenance, object and historical evidence. No R2 mutation or 2018 upload is authorized. The 2018 lead-download presentation remains deferred under the settled review recommendation. Prepare and inspect one Cloudflare nonproduction preview and one unmerged manual-review PR against main; synchronize planning-snapshot to its exact reviewed head. No unrelated content or new substantive disposition is authorized. Inventory implementation statuses remain approved pending manual review. This explicitly releases the previous task-only no-visible-change restrictions for this correction only, while retaining every substantive review finding and restriction outside this scope. Explicit current owner PR211 post-merge exception: the twelve manually merged approved components may advance through the normal publication implementation lifecycle under owner-pr211-postmerge-closeout-2026-10-05 after direct production verification. Preserve all review findings, Urban3 factual hold, original bytes and no-content/no-R2 boundaries. The prior review/merge restriction remains historical authority for the preparation stage."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded owner task",
+      "supersedes": "owner-central-avenue-master-correction-2026-10-04"
     }
   ]
 }

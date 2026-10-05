@@ -21,6 +21,8 @@ if ($LASTEXITCODE) { throw 'Nine-record interactive review guard failed.' }
 if ($LASTEXITCODE) { throw 'Central Avenue exact-population background guard failed.' }
 & python "$PSScriptRoot/CentralAvenueMasterCorrection.py" guard
 if ($LASTEXITCODE) { throw 'Central Avenue historical master correction exact-delta guard failed.' }
+& python "$PSScriptRoot/Pr211PostMergeCloseout.py" guard
+if ($LASTEXITCODE) { throw 'PR211 background publication closeout boundary failed.' }
 Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }
