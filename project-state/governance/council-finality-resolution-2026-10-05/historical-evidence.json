@@ -1,0 +1,401 @@
+{
+  "artifacts": [
+    {
+      "path": "project-state/discovery/nob-hill-highland-cluster-research-2026-09-11.json",
+      "sha256": "f4a92b9c2133ef6a7ef6ed542a2fa7a8bc203ec76c547c223becb22ecd2e1cd2",
+      "matches": [],
+      "cluster_summary": {
+        "blocker_correction": {
+          "blocker_text": "src-0f4496e4073a5e06 and src-0feec7ebf6650e27 are isolated legislative amendment/substitute files; resolve authoritative enacted packages before archival or visible use.",
+          "source": "project-state/checkpoint.json, blockers array",
+          "finding": "The premise is wrong for src-0f4496e4073a5e06: it is not isolated. It is one of nine floor amendment sheets to R-07-185 sitting in this directory, and the resolution they amend, R07185.pdf, is in the same directory as src-3b98e92fa018bda2. The amendment states its own target on its face: \"The Nob Hill Highland Sector Development Plan attached to and incorporated by R-07-185 is amended as follows\", dated August 6, 2007, inserting a solar-access section for R-1 properties west of Washington Street citing Zoning Code Section 14-16-3-3(A)(7).",
+          "what_is_actually_missing": "Not the amendment's context but the plan pages it operates on. This sheet amends page 96 of the plan; the directory publishes printed pages i to 23 and 99 to 117 only, and the validated R2 copy covers 3, 28 to 53 and 129 to 140. Page 96 is in none of them.",
+          "recommended_action_for_src_0f4496e4073a5e06": "Resolve to excluded with the other eight amendment sheets, on the non-self-contained-fragment ground recorded in the council-documents artifact. An excluded record needs no enacted package, which closes this half of the blocker without further research. Claude did not modify the record.",
+          "note_on_the_other_named_record": "src-0feec7ebf6650e27 is not in this directory and is untouched by this artifact. The blocker should be narrowed to that record alone once this half is applied."
+        },
+        "brief_finding": "The separation came out differently than expected because a validated record already in the archive turned out to contain a third of the directory. Seven of the twenty files are single plan figures that are already inside the R2-archived Nob Hill Highland plan copy, each on its own printed page; publishing them would duplicate pages the archive holds. Nine are floor amendment sheets to R-07-185. Only two files carry material the archive does not have in any form, and both are marked September 2006 Draft on every page.",
+        "method": "Fetched all 20 candidates without touching shared inventory state and recorded exact byte length and SHA-256 for each. Read the printed page footer on every page of the two plan files to recover their page ranges. Fetched the already-validated R2 archive object for this plan and mapped it page by page, which is what established that all eight figures and two of the four page ranges are already held. Probed the figure filename sequence against the City listing. Compared all checksums against the 1,612 checksummed inventory records.",
+        "plan_completeness": {
+          "plan": "Nob Hill Highland Sector Development Plan",
+          "adopted": "2007 by R-07-185, amended through August 2014, repealed by R-17-213",
+          "approximate_length_pages": 140,
+          "held_or_recommended": [
+            {
+              "printed_pages": "i-23",
+              "source": "src-eee3ae1f6b6df008, September 2006 draft",
+              "state": "recommended for addition here"
+            },
+            {
+              "printed_pages": "3, 28-53",
+              "source": "src-6916bbd03258654b",
+              "state": "validated and R2-archived, adopted text as amended through 2014"
+            },
+            {
+              "printed_pages": "99-117",
+              "source": "src-da5e395c4284e4b8, September 2006 draft",
+              "state": "recommended for addition here"
+            },
+            {
+              "printed_pages": "129-140",
+              "source": "src-6916bbd03258654b",
+              "state": "validated and R2-archived, adopted text as amended through 2014"
+            }
+          ],
+          "not_held": "Printed pages 24 to 27 and 54 to 98 are in no inventory record and are published nowhere in this directory. Page 96, which one floor amendment operates on, falls in that gap.",
+          "mixed_generation_warning": "What the archive would hold after this batch is two page ranges of a September 2006 draft and two page ranges of the adopted text as amended through 2014. Those are different documents. Any page presenting them together must say so plainly rather than implying one continuous plan.",
+          "lead": "The validated R2 copy names its source for the complete plan: http://www.cabq.gov/planning/plans-publications/area-sector-development-plans. That is a library index rather than a file link, but it is the place to look for a complete adopted copy."
+        }
+      }
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/family-evidence.json",
+      "sha256": "76ad02fbe9bd05543cba8d3344303fe602a911b739747df599a9cde93cb49e07",
+      "matches": [
+        {
+          "id": "src-4cb190564a688d42",
+          "package_id": "contributed-bike-provenance",
+          "title": "City Council Resolution R-07-268: Bike Boulevards (2007)",
+          "retrievals": [],
+          "main_texts": [],
+          "exact_hash_matches": [
+            {
+              "id": "src-33c83a0fb0fd8d2b",
+              "title": "Bike Boulevard General R-268fsfinal",
+              "status": "duplicate",
+              "source_url": null,
+              "r2_url": null,
+              "size_bytes": 86484
+            }
+          ],
+          "evidence_artifacts": [
+            "project-state/contributed-document-review-2026-08-14.json",
+            "project-state/contributed-document-decisions-2026-08-14.json",
+            "project-state/discovery/live-abqinfo-archive-reconciliation-2026-09-16.json",
+            "project-state/discovery/archive-reconciliation-final-local-report-2026-09-17.json",
+            "project-state/source-catalog.md",
+            "project-state/contributed-document-report-2026-08-14.md",
+            "project-state/discovery/live-r2-public-verification-final-2026-09-16.json",
+            "project-state/discovery/inventory-legacy-relationship-hardening-2026-09-26.json",
+            "project-state/discovery/inventory-exact-identity-integrity-audit-2026-09-26.json",
+            "project-state/discovery/cabq-legistar-transportation-priority-200-2006-2019-audit.json",
+            "project-state/discovery/ordinary-queue-second-large-campaign-selection-2026-09-26.json"
+          ]
+        },
+        {
+          "id": "src-0f4496e4073a5e06",
+          "package_id": "council-legal-versions",
+          "title": "Floor Amendment to R-07-185: Nob Hill Highland Solar Access Provision",
+          "retrievals": [
+            {
+              "id": "src-0f4496e4073a5e06",
+              "package_id": "council-legal-versions",
+              "url": "https://www.cabq.gov/council/documents/nob-hill-highland/far-07-185solaraccessforR-1_4.pdf",
+              "retrieved_at": "2026-09-26T22:15:52.714814+00:00",
+              "http_status": 200,
+              "final_url": "https://www.cabq.gov/council/documents/nob-hill-highland/far-07-185solaraccessforR-1_4.pdf",
+              "content_type": "application/pdf",
+              "size_bytes": 59309,
+              "truncated": false,
+              "sha256": "2c0a3c1616eb0e9b4fc5215cdd1f5094e2539d0f457d28d253296e77e569e99a",
+              "saved_source": "research/staging/human-review-reassessment-2026-09-26/src-0f4496e4073a5e06-c55ff0a5.bin",
+              "page_count": 1,
+              "word_count": 141,
+              "is_repaired": false,
+              "text_excerpt": "CITY COUNCIL \nOF THE \nCITY OF ALBUQUERQUE \nAugust 6, 2007 \nFLOOR AMENDMENT NO. \nTO \nR­07­185 \n. \nAMENDMENT SPONSORED BY COUNCILLOR \n. \nThe Nob Hill Highland Sector Development Plan attached to and incorporated by R­07­ \n185 is amended as follows: \n1. \nOn page 96, at the end of the third column, after “C. Parking”, insert the \nfollowing new section: \n“R­1 – West of Washington Street \nA.  Solar Access \n1. \nProperties west of Washington Street zoned R­1 shall comply with the \nBuilding Height Limitations to Preserve Solar Access, Sec. 14­16­3­3(A)(7) of the \nZoning Code.  The additional height limitations of this section shall apply to any lot \nregardless of the age of the building, except that structures existing as of the date of \nadoption of the Plan are allowed subject to Zoning Code regulations for buildings that \nare nonconforming as to height.” \nX:\\share\\nob hill\\far­07­185solaraccessforR­1(4)\n"
+            },
+            {
+              "id": "src-0f4496e4073a5e06",
+              "package_id": "council-legal-versions",
+              "url": "https://www.cabq.gov/council/documents/nob-hill-highland/far-07-185solaraccessforR-1_4.pdf/view",
+              "retrieved_at": "2026-09-26T22:15:53.209245+00:00",
+              "http_status": 200,
+              "final_url": "https://www.cabq.gov/council/documents/nob-hill-highland/far-07-185solaraccessforR-1_4.pdf/view",
+              "content_type": "text/html;charset=utf-8",
+              "size_bytes": 168895,
+              "truncated": false,
+              "sha256": "ee62f25169ba2d6442ed7eeda1074360aa99e5251404a189ea9671ea662775ed",
+              "saved_source": "research/staging/human-review-reassessment-2026-09-26/src-0f4496e4073a5e06-2f59d0d0.bin",
+              "title": "far-07-185solaraccessforR-1_4.pdf — City of Albuquerque",
+              "text_excerpt": " far-07-185solaraccessforR-1_4.pdf — City of Albuquerque application/pdf Size Skip to main content ≡ Translate Search Search HOW CAN WE HELP (311) Meet Mayor Keller Get Involved Businesses Business License Cannabis Retail Information ABQ Film Office Economic Development Housing Codes Hydrology Investor Information Metropolitan Redevelopment Agency Pay a Bill Planning Department Residential Building Permits Restaurant Inspections Short Term Rentals Vendor Invoices Vendor Services What the City Buys Residents A-Z ABQ311 - Report Issues ABQ Address Reports Adopt or Find a Pet Albuquerque Community Safety Child &amp; Family Development Centers Community Centers Emergencies - Call 911 Health &amp; Social Service Centers Libraries Office of Neighborhood Coordination Pay a Bill Police Area Commands Pollen Count Recycling Senior Centers Trash Collection Volunteer Opportunities Things To Do ABQ BioPark ABQ BioPark Tickets ABQ Museum of Art &amp; History Balloon Museum ABQToDo City Calendar Golfing Open Space Parks The Public Library Sport &amp; Recreation Special Events &amp; Festivals Swimming Bus &amp; Bike A-Z Bus Routes &amp; Schedules Bus Rider Resources Bus Trip Planner Senior Transportation Sun Van Paratransit Service Bicycling Esperanza Bicycle Safety Education Center Jobs City of Albuquerque Jobs Become a Firefighter Become a Police Officer Join ACS 911 Operators &amp; Dispatchers Youth &amp; Swimming Pool Jobs Youth Volunteering, Employment &amp; Training Transparency ABQ Data ABQ Social ABQ View Current Budget Gender Pay Equity Initiative Minimum Wage Progress Reports Public Records What the City Buys Translate SEARCH News City Calendar A-Z Available City Properties Rentals &amp; Reservations What is one ABQ Departments ABQToDo Theory of Change Pay a Bill Americans with Disabilities Act Minimum Wage Businesses Business License Cannabis Retail Information ABQ Film Office Economic Development Housing Codes Hydrology Investor Information Metropolitan Redevelopment Agency Pay a Bill Planning Department Residential Building Permits Restaurant Inspections Short Term Rentals Vendor Invoices Vendor Services What the City Buys Residents A-Z ABQ311 - Report Issues ABQ Address Reports Adopt or Find a Pet Albuquerque Community Safety Child &amp; Family Development Centers Community Centers Emergencies - Call 911 Health &amp; Social Service Centers Libraries Office of Neighborhood Coordination Pay a Bill Police Area Commands Pollen Count Recycling Senior Centers Trash Collection Volunteer Opportunities Things To Do ABQ BioPark ABQ BioPark Tickets ABQ Museum of Art &amp; History Balloon Museum ABQToDo City Calendar Golfing Open Space Parks The Public Library Sport &amp; Recreation Special Events &amp; Festivals Swimming Bus &amp; Bike A-Z Bus Routes &amp; Schedules Bus Rider Resources Bus Trip Planner Senior Transportation Sun Van Paratransit Service Bicycling Esperanza Bicycle Safety Education Center Jobs City of Albuquerque Jobs Become a Firefighter Become a Police Officer Join ACS 911 Operators &amp; Dispatchers Youth &amp; Swimming Pool Jobs Youth Volunteering, Employment &amp; Training Transparency ABQ Data ABQ Social ABQ View Current Budget Gender Pay Equity Initiative Minimum Wage Progress Reports Public Records What the City Buys Translate SEARCH HOW CAN WE HELP (311) Meet Mayor Keller Get Involved Albuquerque City Council Toggle nav --> You are here: Home Albuquerque City Council documents Nob Hill Highland far-07-185solaraccessforR-1_4.pdf far-07-185solaraccessforR-1_4.pdf https://www.cabq.gov/council/documents/nob-hill-highland/far-07-185solaraccessforR-1_4.pdf/view https://www.cabq.gov/++resource++plone-logo.svg far-07-185solaraccessforR-1_4.pdf https://www.cabq.gov/council/documents/nob-hill-highland/far-07-185solaraccessforR-1_4.pdf/view https://www.cabq.gov/++resource++plone-logo.svg far-07-185solaraccessforR-1_4.pdf far-07-185solaraccessforR-1_4.pdf application/pdf application/pdf Size 57.9 KB Download News City Calendar A-Z Available City Properties Rentals &amp; Reservations What is one ABQ Departments ABQToDo Theory of Change Pay a Bill Americans with Disabilities Act Minimum Wage Navigation City Council Home Find Your Councilor Frequently Asked Questions (FAQ) Agendas, Minutes &amp; Legislation Meeting Schedules Albuquerque City Council Upcoming Meetings &amp; Events Projects Committees Legislative Process Administration Questions &amp; Answers Office of Neighborhood Coordination Council History Liquor Hearings and Alcohol Permit Applications Civilian Police Oversight Advisory Board Application Vial of Life Local Government Coordinating Commission Old Town Virtual Task Force Albuquerque NeighborWoods Public Improvement Districts Albuquerque City Council Highlights Ordinances and Resolutions African American Advisory Board (AAAB) documents Montaño Corridor Studies Four Hills Speed Hump Studies Planned Growth Strategy Impact Fees Documents Nob Hill Highland far-07-185solaraccessforR-1_4.pdf South Yale Sector Plan North Fourth Street Plan Downtown Arena East Central Sector Volcano Heights Sector Development Plan 4th Street &amp; Montaño Area Improvement Coalition Huning Highland 12th and Menaul Form Based Code West Central Metropolitan Redevelopment Area \"Big Box\" Regulations High Performance Buildings Ordinance Red Light Cameras Cell Phones Economic Forum Balloon Landing Sight Purchase Resolution Completed Reports &amp; Studies Tax Cuts Rail Yard Complete Streets South Yale Blvd. los duranes documents dnasdp documents meeting agenda documents councilor district 1 documents paseo del volcan documents sawmill documents councilor district 5 documents rio grande corridor documents councilor district 3 documents police oversight task force documents uptown documents councilor district 4 documents redistricting documents councilor district 2 documents councilor district 6 documents councilor district 9 documents councilor district 8 documents paseo del norte and I-25 documents councilor district 7 documents task force on mental health documents comp plan udo documents Neighborhood Traffic Management Plan Police Oversight Board Court Approved Settlement Agreement Follow Us on Social Media Contact Information City Council 505-768-3100 Full contact information ↥ CONTACT The 311 Community Contact Center is a centralized call center for the City of Albuquerque. The 311 service is a single telephone number for all non-emergency City of Albuquerque inquiries and services. Call: 311 or 505-768-2000 Report Online Emergencies: 911 Non-Emergency Police Calls: 505-242-COPS ACCESS Jobs Disclaimer Accessibility Employee Resources Sitemap CONNECT VISIT US ON SOCIAL MEDIA NEWSLETTER SIGNUP Stay in Touch! Sign up for updates. © 2026 The City of Albuquerque. All Rights Reserved. The official website for the City of Albuquerque. x Translate Our Site View Disclaimer Español Kreyòl ayisyen Português français 简体中文 Tiếng Việt Русский Soomaali العربية Afrikaans shqip አማርኛ العربية հայերեն آذربایجان دیل Euskara Беларуская мова বাংলা بۉسانسقى български català Binisaya Chicheŵa 广东话 廣東話 Corsu Hrvatski čeština dansk Nederlands Esperanto eesti keel Pilipino suomi français Ōstfräisk galego ქართული ენა Deutsch Ελληνικά ગુજરાતી Kreyòl ayisyen هَرْشَن هَوْسَ ʻŌlelo Hawaiʻi עִברִית हिंदी Lus Hmoob Magyar íslenska Ásụ̀sụ̀ Ìgbò bahasa Indonesia Gaeilge Italiano 日本語 باسا جاوا ಕನ್ನಡ Қазақ тілі ភាសាខ្មែរ 한국인 کورمانجی Кыргыз тили ລາວ Lingua Latina latviešu valoda lietuvių kalba Lëtzebuergesch македонски malagasy بهاس ملايو മലയാളം Malti Māori मराठी монгол မြန်မာစကား नेपाली norsk پښتو فارسی Polskie Português ਪੰਜਾਬੀ limba română Русский Gagana fa‘a Sāmoa Gàidhlig Српски Sotho chiShona سنڌي සිංහල slovenčina slovenščina Soomaali Español Basa Sunda کِسْوَهِيلِ svenska тоҷикӣ தமிழ் తెలుగు ไทย Türkçe українська мова اردو أۇزبېك ﺗﻴﻠی Tiếng Việt Cymraeg isiXhosa יידיש Èdè Yorùbá isiZulu Close × Search Our Site Search Close "
+            },
+            {
+              "id": "src-0f4496e4073a5e06",
+              "package_id": "council-legal-versions",
+              "url": "https://www.cabq.gov/council/documents/nob-hill-highland",
+              "retrieved_at": "2026-09-26T22:15:53.716550+00:00",
+              "http_status": 200,
+              "final_url": "https://www.cabq.gov/council/documents/nob-hill-highland",
+              "content_type": "text/html;charset=utf-8",
+              "size_bytes": 173940,
+              "truncated": false,
+              "sha256": "934b007974bac23e36d7c390900a68eec233c908daade168435b1e6c4c2f53e8",
+              "saved_source": "research/staging/human-review-reassessment-2026-09-26/src-0f4496e4073a5e06-880db422.bin",
+              "title": "Nob Hill Highland — City of Albuquerque",
+              "text_excerpt": " Nob Hill Highland — City of Albuquerque Skip to main content ≡ Translate Search Search HOW CAN WE HELP (311) Meet Mayor Keller Get Involved Businesses Business License Cannabis Retail Information ABQ Film Office Economic Development Housing Codes Hydrology Investor Information Metropolitan Redevelopment Agency Pay a Bill Planning Department Residential Building Permits Restaurant Inspections Short Term Rentals Vendor Invoices Vendor Services What the City Buys Residents A-Z ABQ311 - Report Issues ABQ Address Reports Adopt or Find a Pet Albuquerque Community Safety Child &amp; Family Development Centers Community Centers Emergencies - Call 911 Health &amp; Social Service Centers Libraries Office of Neighborhood Coordination Pay a Bill Police Area Commands Pollen Count Recycling Senior Centers Trash Collection Volunteer Opportunities Things To Do ABQ BioPark ABQ BioPark Tickets ABQ Museum of Art &amp; History Balloon Museum ABQToDo City Calendar Golfing Open Space Parks The Public Library Sport &amp; Recreation Special Events &amp; Festivals Swimming Bus &amp; Bike A-Z Bus Routes &amp; Schedules Bus Rider Resources Bus Trip Planner Senior Transportation Sun Van Paratransit Service Bicycling Esperanza Bicycle Safety Education Center Jobs City of Albuquerque Jobs Become a Firefighter Become a Police Officer Join ACS 911 Operators &amp; Dispatchers Youth &amp; Swimming Pool Jobs Youth Volunteering, Employment &amp; Training Transparency ABQ Data ABQ Social ABQ View Current Budget Gender Pay Equity Initiative Minimum Wage Progress Reports Public Records What the City Buys Translate SEARCH News City Calendar A-Z Available City Properties Rentals &amp; Reservations What is one ABQ Departments ABQToDo Theory of Change Pay a Bill Americans with Disabilities Act Minimum Wage Businesses Business License Cannabis Retail Information ABQ Film Office Economic Development Housing Codes Hydrology Investor Information Metropolitan Redevelopment Agency Pay a Bill Planning Department Residential Building Permits Restaurant Inspections Short Term Rentals Vendor Invoices Vendor Services What the City Buys Residents A-Z ABQ311 - Report Issues ABQ Address Reports Adopt or Find a Pet Albuquerque Community Safety Child &amp; Family Development Centers Community Centers Emergencies - Call 911 Health &amp; Social Service Centers Libraries Office of Neighborhood Coordination Pay a Bill Police Area Commands Pollen Count Recycling Senior Centers Trash Collection Volunteer Opportunities Things To Do ABQ BioPark ABQ BioPark Tickets ABQ Museum of Art &amp; History Balloon Museum ABQToDo City Calendar Golfing Open Space Parks The Public Library Sport &amp; Recreation Special Events &amp; Festivals Swimming Bus &amp; Bike A-Z Bus Routes &amp; Schedules Bus Rider Resources Bus Trip Planner Senior Transportation Sun Van Paratransit Service Bicycling Esperanza Bicycle Safety Education Center Jobs City of Albuquerque Jobs Become a Firefighter Become a Police Officer Join ACS 911 Operators &amp; Dispatchers Youth &amp; Swimming Pool Jobs Youth Volunteering, Employment &amp; Training Transparency ABQ Data ABQ Social ABQ View Current Budget Gender Pay Equity Initiative Minimum Wage Progress Reports Public Records What the City Buys Translate SEARCH HOW CAN WE HELP (311) Meet Mayor Keller Get Involved Albuquerque City Council Toggle nav --> You are here: Home Albuquerque City Council documents Nob Hill Highland Nob Hill Highland https://www.cabq.gov/council/documents/nob-hill-highland https://www.cabq.gov/++resource++plone-logo.svg Nob Hill Highland https://www.cabq.gov/council/documents/nob-hill-highland https://www.cabq.gov/++resource++plone-logo.svg Nob Hill Highland nhplan.pdf nhappendices.pdf R04189.pdf R07185.pdf far-07-185nhna1.pdf far-07-185amndtoresolution3.pdf far-07-185nhna3prkgstruc3.pdf far-07-185solaraccessforR-1_4.pdf far-07-185epcrecs_3.pdf far07-185plnngresptocommnts.pdf Figure13-reportmaps5pedestriancirculationrev.pdf far-07-185epccondit_clnup5.pdf far-07-185bldgarticulation4.pdf far-07-185Amendmisc5.pdf Figure19-reportmaps6bicyclecirculationrev.pdf Figure14.pdf Figure16.pdf Figure15.pdf Figure18.pdf FigureD6-TurningMovementExhibitGIRARDTOALISO1.pdf 1 2 3 Next 20 items &gt; News City Calendar A-Z Available City Properties Rentals &amp; Reservations What is one ABQ Departments ABQToDo Theory of Change Pay a Bill Americans with Disabilities Act Minimum Wage Navigation City Council Home Find Your Councilor Frequently Asked Questions (FAQ) Agendas, Minutes &amp; Legislation Meeting Schedules Albuquerque City Council Upcoming Meetings &amp; Events Projects Committees Legislative Process Administration Questions &amp; Answers Office of Neighborhood Coordination Council History Liquor Hearings and Alcohol Permit Applications Civilian Police Oversight Advisory Board Application Vial of Life Local Government Coordinating Commission Old Town Virtual Task Force Albuquerque NeighborWoods Public Improvement Districts Albuquerque City Council Highlights Ordinances and Resolutions African American Advisory Board (AAAB) documents Montaño Corridor Studies Four Hills Speed Hump Studies Planned Growth Strategy Impact Fees Documents Nob Hill Highland South Yale Sector Plan North Fourth Street Plan Downtown Arena East Central Sector Volcano Heights Sector Development Plan 4th Street &amp; Montaño Area Improvement Coalition Huning Highland 12th and Menaul Form Based Code West Central Metropolitan Redevelopment Area \"Big Box\" Regulations High Performance Buildings Ordinance Red Light Cameras Cell Phones Economic Forum Balloon Landing Sight Purchase Resolution Completed Reports &amp; Studies Tax Cuts Rail Yard Complete Streets South Yale Blvd. los duranes documents dnasdp documents meeting agenda documents councilor district 1 documents paseo del volcan documents sawmill documents councilor district 5 documents rio grande corridor documents councilor district 3 documents police oversight task force documents uptown documents councilor district 4 documents redistricting documents councilor district 2 documents councilor district 6 documents councilor district 9 documents councilor district 8 documents paseo del norte and I-25 documents councilor district 7 documents task force on mental health documents comp plan udo documents Neighborhood Traffic Management Plan Police Oversight Board Court Approved Settlement Agreement Follow Us on Social Media Contact Information City Council 505-768-3100 Full contact information ↥ CONTACT The 311 Community Contact Center is a centralized call center for the City of Albuquerque. The 311 service is a single telephone number for all non-emergency City of Albuquerque inquiries and services. Call: 311 or 505-768-2000 Report Online Emergencies: 911 Non-Emergency Police Calls: 505-242-COPS ACCESS Jobs Disclaimer Accessibility Employee Resources Sitemap CONNECT VISIT US ON SOCIAL MEDIA NEWSLETTER SIGNUP Stay in Touch! Sign up for updates. © 2026 The City of Albuquerque. All Rights Reserved. The official website for the City of Albuquerque. x Translate Our Site View Disclaimer Español Kreyòl ayisyen Português français 简体中文 Tiếng Việt Русский Soomaali العربية Afrikaans shqip አማርኛ العربية հայերեն آذربایجان دیل Euskara Беларуская мова বাংলা بۉسانسقى български català Binisaya Chicheŵa 广东话 廣東話 Corsu Hrvatski čeština dansk Nederlands Esperanto eesti keel Pilipino suomi français Ōstfräisk galego ქართული ენა Deutsch Ελληνικά ગુજરાતી Kreyòl ayisyen هَرْشَن هَوْسَ ʻŌlelo Hawaiʻi עִברִית हिंदी Lus Hmoob Magyar íslenska Ásụ̀sụ̀ Ìgbò bahasa Indonesia Gaeilge Italiano 日本語 باسا جاوا ಕನ್ನಡ Қазақ тілі ភាសាខ្មែរ 한국인 کورمانجی Кыргыз тили ລາວ Lingua Latina latviešu valoda lietuvių kalba Lëtzebuergesch македонски malagasy بهاس ملايو മലയാളം Malti Māori मराठी монгол မြန်မာစကား नेपाली norsk پښتو فارسی Polskie Português ਪੰਜਾਬੀ limba română Русский Gagana fa‘a Sāmoa Gàidhlig Српски Sotho chiShona سنڌي සිංහල slovenčina slovenščina Soomaali Español Basa Sunda کِسْوَهِيلِ svenska тоҷикӣ தமிழ் తెలుగు ไทย Türkçe українська мова اردو أۇزبېك ﺗﻴﻠی Tiếng Việt Cymraeg isiXhosa יידיש Èdè Yorùbá isiZulu Close × Search Our Site Search Close "
+            },
+            {
+              "id": "src-0f4496e4073a5e06",
+              "package_id": "legistar-finality",
+              "url": "https://webapi.legistar.com/v1/albuquerque/matters?%24filter=MatterFile+eq+%27R-07-185%27",
+              "retrieved_at": "2026-09-26T22:21:48.887737+00:00",
+              "error": "HTTP Error 500: Internal Server Error"
+            },
+            {
+              "id": "src-0f4496e4073a5e06",
+              "package_id": "legistar-finality",
+              "url": "https://webapi.legistar.com/v1/cabq/matters?%24filter=MatterFile+eq+%27R-07-185%27",
+              "retrieved_at": "2026-09-26T22:24:08.752067+00:00",
+              "http_status": 200,
+              "final_url": "https://webapi.legistar.com/v1/cabq/matters?%24filter=MatterFile+eq+%27R-07-185%27",
+              "content_type": "application/json; charset=utf-8",
+              "size_bytes": 4999,
+              "truncated": false,
+              "sha256": "cd55bd1d46370668119f443a9aa366281588d7a320c31489e8834a6fcee03117",
+              "saved_source": "research/staging/human-review-reassessment-2026-09-26/src-0f4496e4073a5e06-1ad5f69e.bin"
+            },
+            {
+              "id": "src-0f4496e4073a5e06",
+              "package_id": "legistar-finality",
+              "url": "https://webapi.legistar.com/v1/cabq/matters/4894/attachments",
+              "retrieved_at": "2026-09-26T22:25:12.967465+00:00",
+              "http_status": 200,
+              "final_url": "https://webapi.legistar.com/v1/cabq/matters/4894/attachments",
+              "content_type": "application/json; charset=utf-8",
+              "size_bytes": 1501,
+              "truncated": false,
+              "sha256": "68bfe0cae4d40f993c277b48363a2195f49798e7580bb5fa7e1bf9282ea1106d",
+              "saved_source": "research/staging/human-review-reassessment-2026-09-26/src-0f4496e4073a5e06-35f94bae.bin"
+            },
+            {
+              "id": "src-0f4496e4073a5e06",
+              "package_id": "legistar-finality",
+              "url": "https://webapi.legistar.com/v1/cabq/matters/4894/histories",
+              "retrieved_at": "2026-09-26T22:25:13.452581+00:00",
+              "http_status": 200,
+              "final_url": "https://webapi.legistar.com/v1/cabq/matters/4894/histories",
+              "content_type": "application/json; charset=utf-8",
+              "size_bytes": 34477,
+              "truncated": false,
+              "sha256": "c062cef0f53a8b530f022635f1f3a1c8cf28bc58280595e745851804c1200756",
+              "saved_source": "research/staging/human-review-reassessment-2026-09-26/src-0f4496e4073a5e06-e2a33886.bin"
+            },
+            {
+              "id": "src-0f4496e4073a5e06",
+              "package_id": "legistar-finality",
+              "url": "https://legistar.granicus.com/cabq/attachments/6106.doc",
+              "retrieved_at": "2026-09-26T22:28:16.545501+00:00",
+              "http_status": 200,
+              "final_url": "https://legistar.granicus.com/cabq/attachments/6106.doc",
+              "content_type": "application/msword",
+              "size_bytes": 79872,
+              "truncated": false,
+              "sha256": "c36725ae58394a2fbaa72d158e4c635875db15086ad68bd162e928e218ead5d4",
+              "saved_source": "research/staging/human-review-reassessment-2026-09-26/src-0f4496e4073a5e06-adf14582.bin"
+            }
+          ],
+          "main_texts": [
+            {
+              "url": "https://www.cabq.gov/council/documents/nob-hill-highland/far-07-185solaraccessforR-1_4.pdf/view",
+              "main_text": "far-07-185solaraccessforR-1_4.pdf — City of Albuquerque application/pdf Size Skip to main content ≡ Translate Search Search HOW CAN WE HELP (311) Meet Mayor Keller Get Involved Businesses Business License Cannabis Retail Information ABQ Film Office Economic Development Housing Codes Hydrology Investor Information Metropolitan Redevelopment Agency Pay a Bill Planning Department Residential Building Permits Restaurant Inspections Short Term Rentals Vendor Invoices Vendor Services What the City Buys Residents A-Z ABQ311 - Report Issues ABQ Address Reports Adopt or Find a Pet Albuquerque Community Safety Child & Family Development Centers Community Centers Emergencies - Call 911 Health & Social Service Centers Libraries Office of Neighborhood Coordination Pay a Bill Police Area Commands Pollen Count Recycling Senior Centers Trash Collection Volunteer Opportunities Things To Do ABQ BioPark ABQ BioPark Tickets ABQ Museum of Art & History Balloon Museum ABQToDo City Calendar Golfing Open Space Parks The Public Library Sport & Recreation Special Events & Festivals Swimming Bus & Bike A-Z Bus Routes & Schedules Bus Rider Resources Bus Trip Planner Senior Transportation Sun Van Paratransit Service Bicycling Esperanza Bicycle Safety Education Center Jobs City of Albuquerque Jobs Become a Firefighter Become a Police Officer Join ACS 911 Operators & Dispatchers Youth & Swimming Pool Jobs Youth Volunteering, Employment & Training Transparency ABQ Data ABQ Social ABQ View Current Budget Gender Pay Equity Initiative Minimum Wage Progress Reports Public Records What the City Buys Translate SEARCH News City Calendar A-Z Available City Properties Rentals & Reservations What is one ABQ Departments ABQToDo Theory of Change Pay a Bill Americans with Disabilities Act Minimum Wage Businesses Business License Cannabis Retail Information ABQ Film Office Economic Development Housing Codes Hydrology Investor Information Metropolitan Redevelopment Agency Pay a Bill Planning Department Residential Building Permits Restaurant Inspections Short Term Rentals Vendor Invoices Vendor Services What the City Buys Residents A-Z ABQ311 - Report Issues ABQ Address Reports Adopt or Find a Pet Albuquerque Community Safety Child & Family Development Centers Community Centers Emergencies - Call 911 Health & Social Service Centers Libraries Office of Neighborhood Coordination Pay a Bill Police Area Commands Pollen Count Recycling Senior Centers Trash Collection Volunteer Opportunities Things To Do ABQ BioPark ABQ BioPark Tickets ABQ Museum of Art & History Balloon Museum ABQToDo City Calendar Golfing Open Space Parks The Public Library Sport & Recreation Special Events & Festivals Swimming Bus & Bike A-Z Bus Routes & Schedules Bus Rider Resources Bus Trip Planner Senior Transportation Sun Van Paratransit Service Bicycling Esperanza Bicycle Safety Education Center Jobs City of Albuquerque Jobs Become a Firefighter Become a Police Officer Join ACS 911 Operators & Dispatchers Youth & Swimming Pool Jobs Youth Volunteering, Employment & Training Transparency ABQ Data ABQ Social ABQ View Current Budget Gender Pay Equity Initiative Minimum Wage Progress Reports Public Records What the City Buys Translate SEARCH HOW CAN WE HELP (311) Meet Mayor Keller Get Involved Albuquerque City Council Toggle nav --> You are here: Home Albuquerque City Council documents Nob Hill Highland far-07-185solaraccessforR-1_4.pdf far-07-185solaraccessforR-1_4.pdf https://www.cabq.gov/council/documents/nob-hill-highland/far-07-185solaraccessforR-1_4.pdf/view https://www.cabq.gov/++resource++plone-logo.svg far-07-185solaraccessforR-1_4.pdf https://www.cabq.gov/council/documents/nob-hill-highland/far-07-185solaraccessforR-1_4.pdf/view https://www.cabq.gov/++resource++plone-logo.svg far-07-185solaraccessforR-1_4.pdf far-07-185solaraccessforR-1_4.pdf application/pdf application/pdf Size 57.9 KB Download News City Calendar A-Z Available City Properties Rentals & Reservations What is one ABQ Departments ABQToDo Theory of Change Pay a Bill Americans with Disabilities Act Minimum Wage Navigation City Council Home Find Your Councilor Frequently Asked Questions (FAQ) Agendas, Minutes & Legislation Meeting Schedules Albuquerque City Council Upcoming Meetings & Events Projects Committees Legislative Process Administration Questions & Answers Office of Neighborhood Coordination Council History Liquor Hearings and Alcohol Permit Applications Civilian Police Oversight Advisory Board Application Vial of Life Local Government Coordinating Commission Old Town Virtual Task Force Albuquerque NeighborWoods Public Improvement Districts Albuquerque City Council Highlights Ordinances and Resolutions African American Advisory Board (AAAB) documents Montaño Corridor Studies Four Hills Speed Hump Studies Planned Growth Strategy Impact Fees Documents Nob Hill Highland far-07-185solaraccessforR-1_4.pdf South Yale Sector Plan North Fourth Street Plan Downtown Arena East Central Sector Volcano Heights Sector Development Plan 4th Street & Montaño Area Improvement Coalition Huning Highland 12th and Menaul Form Based Code West Central Metropolitan Redevelopment Area \"Big Box\" Regulations High Performance Buildings Ordinance Red Light Cameras Cell Phones Economic Forum Balloon Landing Sight Purchase Resolution Completed Reports & Studies Tax Cuts Rail Yard Complete Streets South Yale Blvd. los duranes documents dnasdp documents meeting agenda documents councilor district 1 documents paseo del volcan documents sawmill documents councilor district 5 documents rio grande corridor documents councilor district 3 documents police oversight task force documents uptown documents councilor district 4 documents redistricting documents councilor district 2 documents councilor district 6 documents councilor district 9 documents councilor district 8 documents paseo del norte and I-25 documents councilor district 7 documents task force on mental health documents comp plan udo documents Neighborhood Traffic Management Plan Police Oversight Board Court Approved Settlement Agreement Follow Us on Social Media Contact Information City Council 505-768-3100 Full contact information ↥ CONTACT The 311 Community Contact Center is a centralized call center for the City of Albuquerque. The 311 service is a single telephone number for all non-emergency City of Albuquerque inquiries and services. Call: 311 or 505-768-2000 Report Online Emergencies: 911 Non-Emergency Police Calls: 505-242-COPS ACCESS Jobs Disclaimer Accessibility Employee Resources Sitemap CONNECT VISIT US ON SOCIAL MEDIA NEWSLETTER SIGNUP Stay in Touch! Sign up for updates. © 2026 The City of Albuquerque. All Rights Reserved. The official website for the City of Albuquerque. x Translate Our Site View Disclaimer Español Kreyòl ayisyen Português français 简体中文 Tiếng Việt Русский Soomaali العربية Afrikaans shqip አማርኛ العربية հայերեն آذربایجان دیل Euskara Беларуская мова বাংলা بۉسانسقى български català Binisaya Chicheŵa 广东话 廣東話 Corsu Hrvatski čeština dansk Nederlands Esperanto eesti keel Pilipino suomi français Ōstfräisk galego ქართული ენა Deutsch Ελληνικά ગુજરાતી Kreyòl ayisyen هَرْشَن هَوْسَ ʻŌlelo Hawaiʻi עִברִית हिंदी Lus Hmoob Magyar íslenska Ásụ̀sụ̀ Ìgbò bahasa Indonesia Gaeilge Italiano 日本語 باسا جاوا ಕನ್ನಡ Қазақ тілі ភាសាខ្មែរ 한국인 کورمانجی Кыргыз тили ລາວ Lingua Latina latviešu valoda lietuvių kalba Lëtzebuergesch македонски malagasy بهاس ملايو മലയാളം Malti Māori मराठी монгол မြန်မာစကား नेपाली norsk پښتو فارسی Polskie Português ਪੰਜਾਬੀ limba română Русский Gagana fa‘a Sāmoa Gàidhlig Српски Sotho chiShona سنڌي සිංහල slovenčina slovenščina Soomaali Español Basa Sunda کِسْوَهِيلِ svenska тоҷикӣ தமிழ் తెలుగు ไทย Türkçe українська мова اردو أۇزبېك ﺗﻴﻠی Tiếng Việt Cymraeg isiXhosa יידיש Èdè Yorùbá isiZulu Close × Search Our Site Search Close ",
+              "title": "far-07-185solaraccessforR-1_4.pdf — City of Albuquerque"
+            },
+            {
+              "url": "https://www.cabq.gov/council/documents/nob-hill-highland",
+              "main_text": "Nob Hill Highland — City of Albuquerque Skip to main content ≡ Translate Search Search HOW CAN WE HELP (311) Meet Mayor Keller Get Involved Businesses Business License Cannabis Retail Information ABQ Film Office Economic Development Housing Codes Hydrology Investor Information Metropolitan Redevelopment Agency Pay a Bill Planning Department Residential Building Permits Restaurant Inspections Short Term Rentals Vendor Invoices Vendor Services What the City Buys Residents A-Z ABQ311 - Report Issues ABQ Address Reports Adopt or Find a Pet Albuquerque Community Safety Child & Family Development Centers Community Centers Emergencies - Call 911 Health & Social Service Centers Libraries Office of Neighborhood Coordination Pay a Bill Police Area Commands Pollen Count Recycling Senior Centers Trash Collection Volunteer Opportunities Things To Do ABQ BioPark ABQ BioPark Tickets ABQ Museum of Art & History Balloon Museum ABQToDo City Calendar Golfing Open Space Parks The Public Library Sport & Recreation Special Events & Festivals Swimming Bus & Bike A-Z Bus Routes & Schedules Bus Rider Resources Bus Trip Planner Senior Transportation Sun Van Paratransit Service Bicycling Esperanza Bicycle Safety Education Center Jobs City of Albuquerque Jobs Become a Firefighter Become a Police Officer Join ACS 911 Operators & Dispatchers Youth & Swimming Pool Jobs Youth Volunteering, Employment & Training Transparency ABQ Data ABQ Social ABQ View Current Budget Gender Pay Equity Initiative Minimum Wage Progress Reports Public Records What the City Buys Translate SEARCH News City Calendar A-Z Available City Properties Rentals & Reservations What is one ABQ Departments ABQToDo Theory of Change Pay a Bill Americans with Disabilities Act Minimum Wage Businesses Business License Cannabis Retail Information ABQ Film Office Economic Development Housing Codes Hydrology Investor Information Metropolitan Redevelopment Agency Pay a Bill Planning Department Residential Building Permits Restaurant Inspections Short Term Rentals Vendor Invoices Vendor Services What the City Buys Residents A-Z ABQ311 - Report Issues ABQ Address Reports Adopt or Find a Pet Albuquerque Community Safety Child & Family Development Centers Community Centers Emergencies - Call 911 Health & Social Service Centers Libraries Office of Neighborhood Coordination Pay a Bill Police Area Commands Pollen Count Recycling Senior Centers Trash Collection Volunteer Opportunities Things To Do ABQ BioPark ABQ BioPark Tickets ABQ Museum of Art & History Balloon Museum ABQToDo City Calendar Golfing Open Space Parks The Public Library Sport & Recreation Special Events & Festivals Swimming Bus & Bike A-Z Bus Routes & Schedules Bus Rider Resources Bus Trip Planner Senior Transportation Sun Van Paratransit Service Bicycling Esperanza Bicycle Safety Education Center Jobs City of Albuquerque Jobs Become a Firefighter Become a Police Officer Join ACS 911 Operators & Dispatchers Youth & Swimming Pool Jobs Youth Volunteering, Employment & Training Transparency ABQ Data ABQ Social ABQ View Current Budget Gender Pay Equity Initiative Minimum Wage Progress Reports Public Records What the City Buys Translate SEARCH HOW CAN WE HELP (311) Meet Mayor Keller Get Involved Albuquerque City Council Toggle nav --> You are here: Home Albuquerque City Council documents Nob Hill Highland Nob Hill Highland https://www.cabq.gov/council/documents/nob-hill-highland https://www.cabq.gov/++resource++plone-logo.svg Nob Hill Highland https://www.cabq.gov/council/documents/nob-hill-highland https://www.cabq.gov/++resource++plone-logo.svg Nob Hill Highland nhplan.pdf nhappendices.pdf R04189.pdf R07185.pdf far-07-185nhna1.pdf far-07-185amndtoresolution3.pdf far-07-185nhna3prkgstruc3.pdf far-07-185solaraccessforR-1_4.pdf far-07-185epcrecs_3.pdf far07-185plnngresptocommnts.pdf Figure13-reportmaps5pedestriancirculationrev.pdf far-07-185epccondit_clnup5.pdf far-07-185bldgarticulation4.pdf far-07-185Amendmisc5.pdf Figure19-reportmaps6bicyclecirculationrev.pdf Figure14.pdf Figure16.pdf Figure15.pdf Figure18.pdf FigureD6-TurningMovementExhibitGIRARDTOALISO1.pdf 1 2 3 Next 20 items > News City Calendar A-Z Available City Properties Rentals & Reservations What is one ABQ Departments ABQToDo Theory of Change Pay a Bill Americans with Disabilities Act Minimum Wage Navigation City Council Home Find Your Councilor Frequently Asked Questions (FAQ) Agendas, Minutes & Legislation Meeting Schedules Albuquerque City Council Upcoming Meetings & Events Projects Committees Legislative Process Administration Questions & Answers Office of Neighborhood Coordination Council History Liquor Hearings and Alcohol Permit Applications Civilian Police Oversight Advisory Board Application Vial of Life Local Government Coordinating Commission Old Town Virtual Task Force Albuquerque NeighborWoods Public Improvement Districts Albuquerque City Council Highlights Ordinances and Resolutions African American Advisory Board (AAAB) documents Montaño Corridor Studies Four Hills Speed Hump Studies Planned Growth Strategy Impact Fees Documents Nob Hill Highland South Yale Sector Plan North Fourth Street Plan Downtown Arena East Central Sector Volcano Heights Sector Development Plan 4th Street & Montaño Area Improvement Coalition Huning Highland 12th and Menaul Form Based Code West Central Metropolitan Redevelopment Area \"Big Box\" Regulations High Performance Buildings Ordinance Red Light Cameras Cell Phones Economic Forum Balloon Landing Sight Purchase Resolution Completed Reports & Studies Tax Cuts Rail Yard Complete Streets South Yale Blvd. los duranes documents dnasdp documents meeting agenda documents councilor district 1 documents paseo del volcan documents sawmill documents councilor district 5 documents rio grande corridor documents councilor district 3 documents police oversight task force documents uptown documents councilor district 4 documents redistricting documents councilor district 2 documents councilor district 6 documents councilor district 9 documents councilor district 8 documents paseo del norte and I-25 documents councilor district 7 documents task force on mental health documents comp plan udo documents Neighborhood Traffic Management Plan Police Oversight Board Court Approved Settlement Agreement Follow Us on Social Media Contact Information City Council 505-768-3100 Full contact information ↥ CONTACT The 311 Community Contact Center is a centralized call center for the City of Albuquerque. The 311 service is a single telephone number for all non-emergency City of Albuquerque inquiries and services. Call: 311 or 505-768-2000 Report Online Emergencies: 911 Non-Emergency Police Calls: 505-242-COPS ACCESS Jobs Disclaimer Accessibility Employee Resources Sitemap CONNECT VISIT US ON SOCIAL MEDIA NEWSLETTER SIGNUP Stay in Touch! Sign up for updates. © 2026 The City of Albuquerque. All Rights Reserved. The official website for the City of Albuquerque. x Translate Our Site View Disclaimer Español Kreyòl ayisyen Português français 简体中文 Tiếng Việt Русский Soomaali العربية Afrikaans shqip አማርኛ العربية հայերեն آذربایجان دیل Euskara Беларуская мова বাংলা بۉسانسقى български català Binisaya Chicheŵa 广东话 廣東話 Corsu Hrvatski čeština dansk Nederlands Esperanto eesti keel Pilipino suomi français Ōstfräisk galego ქართული ენა Deutsch Ελληνικά ગુજરાતી Kreyòl ayisyen هَرْشَن هَوْسَ ʻŌlelo Hawaiʻi עִברִית हिंदी Lus Hmoob Magyar íslenska Ásụ̀sụ̀ Ìgbò bahasa Indonesia Gaeilge Italiano 日本語 باسا جاوا ಕನ್ನಡ Қазақ тілі ភាសាខ្មែរ 한국인 کورمانجی Кыргыз тили ລາວ Lingua Latina latviešu valoda lietuvių kalba Lëtzebuergesch македонски malagasy بهاس ملايو മലയാളം Malti Māori मराठी монгол မြန်မာစကား नेपाली norsk پښتو فارسی Polskie Português ਪੰਜਾਬੀ limba română Русский Gagana fa‘a Sāmoa Gàidhlig Српски Sotho chiShona سنڌي සිංහල slovenčina slovenščina Soomaali Español Basa Sunda کِسْوَهِيلِ svenska тоҷикӣ தமிழ் తెలుగు ไทย Türkçe українська мова اردو أۇزبېك ﺗﻴﻠی Tiếng Việt Cymraeg isiXhosa יידיש Èdè Yorùbá isiZulu Close × Search Our Site Search Close ",
+              "title": "Nob Hill Highland — City of Albuquerque"
+            }
+          ],
+          "exact_hash_matches": [],
+          "evidence_artifacts": [
+            "project-state/discovery/nob-hill-highland-cluster-research-2026-09-11.json",
+            "project-state/checkpoint.json",
+            "project-state/history/AGENT-HANDOFF-legacy-2026-09-16.md",
+            "project-state/discovery/ordinary-queue-large-campaign-selection-2026-09-26.json",
+            "project-state/discovery/ordinary-second-large-campaign-family-130-2026-09-26.json",
+            "project-state/discovery/ordinary-queue-second-large-campaign-selection-2026-09-26.json"
+          ]
+        }
+      ],
+      "cluster_summary": {}
+    },
+    {
+      "path": "project-state/discovery/human-review-reassessment-2026-09-26/decisions.json",
+      "sha256": "3945092d2134172bbc24bb09907285f1f6f55b68966ac16c3aaa1b59dc864c87",
+      "matches": [
+        {
+          "id": "src-0f4496e4073a5e06",
+          "title": "Floor Amendment to R-07-185: Nob Hill Highland Solar Access Provision",
+          "status": "pending review",
+          "rationale": "Official bill adoption is now documented where available, but the held blank-enactment/missing-exhibit delivery has not been proved to be the complete enacted text. Exact adopted-version comparison remains a source/finality prerequisite, not an owner decision.",
+          "evidence_artifacts": [
+            "project-state/discovery/nob-hill-highland-cluster-research-2026-09-11.json",
+            "project-state/checkpoint.json",
+            "project-state/history/AGENT-HANDOFF-legacy-2026-09-16.md",
+            "project-state/discovery/ordinary-queue-large-campaign-selection-2026-09-26.json",
+            "project-state/discovery/ordinary-second-large-campaign-family-130-2026-09-26.json",
+            "project-state/discovery/ordinary-queue-second-large-campaign-selection-2026-09-26.json"
+          ],
+          "retrieval_urls": [
+            "https://www.cabq.gov/council/documents/nob-hill-highland/far-07-185solaraccessforR-1_4.pdf",
+            "https://www.cabq.gov/council/documents/nob-hill-highland/far-07-185solaraccessforR-1_4.pdf/view",
+            "https://www.cabq.gov/council/documents/nob-hill-highland",
+            "https://webapi.legistar.com/v1/albuquerque/matters?%24filter=MatterFile+eq+%27R-07-185%27",
+            "https://webapi.legistar.com/v1/cabq/matters?%24filter=MatterFile+eq+%27R-07-185%27",
+            "https://webapi.legistar.com/v1/cabq/matters/4894/attachments",
+            "https://webapi.legistar.com/v1/cabq/matters/4894/histories",
+            "https://legistar.granicus.com/cabq/attachments/6106.doc"
+          ],
+          "outcome_class": "work_prerequisite"
+        },
+        {
+          "id": "src-4cb190564a688d42",
+          "title": "City Council Resolution R-07-268: Bike Boulevards (2007)",
+          "status": "pending review",
+          "rationale": "Exact archived/local identity is preserved, but official-source origin or complete-family identity remains unproved after bounded recovery. A source-provenance fact cannot be established by an owner preference or an R2 HTTP success.",
+          "evidence_artifacts": [
+            "project-state/contributed-document-review-2026-08-14.json",
+            "project-state/contributed-document-decisions-2026-08-14.json",
+            "project-state/discovery/live-abqinfo-archive-reconciliation-2026-09-16.json",
+            "project-state/discovery/archive-reconciliation-final-local-report-2026-09-17.json",
+            "project-state/source-catalog.md",
+            "project-state/contributed-document-report-2026-08-14.md",
+            "project-state/discovery/live-r2-public-verification-final-2026-09-16.json",
+            "project-state/discovery/inventory-legacy-relationship-hardening-2026-09-26.json",
+            "project-state/discovery/inventory-exact-identity-integrity-audit-2026-09-26.json",
+            "project-state/discovery/cabq-legistar-transportation-priority-200-2006-2019-audit.json",
+            "project-state/discovery/ordinary-queue-second-large-campaign-selection-2026-09-26.json"
+          ],
+          "retrieval_urls": [],
+          "outcome_class": "work_prerequisite"
+        },
+        {
+          "id": "src-4cb190564a688d42",
+          "changes": {
+            "status": "pending review",
+            "review_reason": null,
+            "exclusion_reason": null,
+            "validation_status": "2026-09-26 policy reassessment: Exact archived/local identity is preserved, but official-source origin or complete-family identity remains unproved after bounded recovery. A source-provenance fact cannot be established by an owner preference or an R2 HTTP success.",
+            "processing_notes": [
+              "Existing R2 object is not linked from current content or has not yet been reconciled to its authoritative source URL.",
+              "User-contributed source file is byte-identical to the existing R2 object (86,484 bytes; SHA-256 8ab53b1618bb0dcda93f43d7ae9d79dd6822d1f6fcc1b9868dd03d37aca9d83a).",
+              "Human-review reassessment 2026-09-26: Exact archived/local identity is preserved, but official-source origin or complete-family identity remains unproved after bounded recovery. A source-provenance fact cannot be established by an owner preference or an R2 HTTP success. Evidence: project-state/discovery/human-review-reassessment-2026-09-26/family-evidence.json and retrievals.json."
+            ]
+          }
+        },
+        {
+          "id": "src-0f4496e4073a5e06",
+          "changes": {
+            "status": "pending review",
+            "review_reason": null,
+            "exclusion_reason": null,
+            "validation_status": "2026-09-26 policy reassessment: Official bill adoption is now documented where available, but the held blank-enactment/missing-exhibit delivery has not been proved to be the complete enacted text. Exact adopted-version comparison remains a source/finality prerequisite, not an owner decision.",
+            "processing_notes": [
+              "Discovered by deterministic crawl of https://www.cabq.gov/bikes/biking-in-abq.",
+              "Downloaded exact size: 59309 bytes (57.92 KiB); SHA-256 recorded.",
+              "Exact metadata and relevance remain pending source review.",
+              "PDF pages: 1; extracted text: research/staging/queue/src-0f4496e4073a5e06.txt",
+              "Resolved the authoritative page's direct file link: https://www.cabq.gov/council/documents/nob-hill-highland/far-07-185solaraccessforR-1_4.pdf",
+              "Official City Council one-page floor amendment visually reviewed; it adds a solar-access height restriction to page 96 of the Nob Hill Highland Sector Development Plan.",
+              "Held outside the frozen batch because this isolated amendment does not establish whether it entered the enacted canonical package; resolve R-07-185 and the final amended plan before archival or visible use.",
+              "Tentative placement if preserved with authoritative context: content/development-land-use/area-sector-plans.md.",
+              "Human-review reassessment 2026-09-26: Official bill adoption is now documented where available, but the held blank-enactment/missing-exhibit delivery has not been proved to be the complete enacted text. Exact adopted-version comparison remains a source/finality prerequisite, not an owner decision. Evidence: project-state/discovery/human-review-reassessment-2026-09-26/family-evidence.json and retrievals.json."
+            ]
+          }
+        }
+      ],
+      "cluster_summary": {}
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/comparisons.json",
+      "sha256": "bb51e7b61f0a2933f51624b062ca44ff44f209ec04664c9a48fad780d20cb277",
+      "matches": [
+        {
+          "id": "src-4cb190564a688d42",
+          "held_pages": 4,
+          "official_doc_pages": 4,
+          "differences": [],
+          "conclusion": "No complete enacted-delivery equivalence inferred; companion R-268fsatt.pdf is a distinct referenced attachment."
+        }
+      ],
+      "cluster_summary": {}
+    },
+    {
+      "path": "project-state/discovery/background-followup-2026-09-26/decisions.json",
+      "sha256": "8ed46af01d7ea2e53947a7c23224930fe4114447ca3caf287a722a63d4a9f88c",
+      "matches": [
+        {
+          "id": "src-0f4496e4073a5e06",
+          "title": "Floor Amendment to R-07-185: Nob Hill Highland Solar Access Provision",
+          "outcome": "unresolved_evidence_prerequisite",
+          "rationale": "Current Legistar action histories and complete final-file attachments establish bill-level enactment, not that the held blank-enactment, floor-amendment or exhibit-incomplete PDF is the complete adopted delivery. Full Word/PDF comparisons and distinct page counts are saved. Resolve final action version, amendments and all referenced exhibits; do not infer missing legal text from adoption metadata. Erroneous /texts/{version} API responses have mismatched MatterTextMatterId and are rejected as evidence.",
+          "evidence_artifact": "project-state/discovery/background-followup-2026-09-26/retrievals.json",
+          "required_evidence": "Current Legistar action histories and complete final-file attachments establish bill-level enactment, not that the held blank-enactment, floor-amendment or exhibit-incomplete PDF is the complete adopted delivery. Full Word/PDF comparisons and distinct page counts are saved. Resolve final action version, amendments and all referenced exhibits; do not infer missing legal text from adoption metadata. Erroneous /texts/{version} API responses have mismatched MatterTextMatterId and are rejected as evidence.",
+          "owner_decision_required": false
+        },
+        {
+          "id": "src-4cb190564a688d42",
+          "title": "City Council Resolution R-07-268: Bike Boulevards (2007)",
+          "outcome": "unresolved_evidence_prerequisite",
+          "rationale": "Current Legistar action histories and complete final-file attachments establish bill-level enactment, not that the held blank-enactment, floor-amendment or exhibit-incomplete PDF is the complete adopted delivery. Full Word/PDF comparisons and distinct page counts are saved. Resolve final action version, amendments and all referenced exhibits; do not infer missing legal text from adoption metadata. Erroneous /texts/{version} API responses have mismatched MatterTextMatterId and are rejected as evidence.",
+          "evidence_artifact": "project-state/discovery/background-followup-2026-09-26/retrievals.json",
+          "required_evidence": "Current Legistar action histories and complete final-file attachments establish bill-level enactment, not that the held blank-enactment, floor-amendment or exhibit-incomplete PDF is the complete adopted delivery. Full Word/PDF comparisons and distinct page counts are saved. Resolve final action version, amendments and all referenced exhibits; do not infer missing legal text from adoption metadata. Erroneous /texts/{version} API responses have mismatched MatterTextMatterId and are rejected as evidence.",
+          "owner_decision_required": false
+        }
+      ],
+      "cluster_summary": {}
+    },
+    {
+      "path": "project-state/contributed-document-review-2026-08-14.json",
+      "sha256": "5c1c48de4577d7f2131381dab75e5357bdb9c03b067e655f6a1a2da845d2e12e",
+      "matches": [
+        {
+          "id": "local-8ab53b1618bb0dcd",
+          "filename": "Bike Boulevard General R-268fsfinal.pdf",
+          "local_path": "C:\\Users\\ben\\Documents\\ABQinfo\\research\\staging\\document-review\\Bike Boulevard General R-268fsfinal.pdf",
+          "file_type": "PDF",
+          "size_bytes": 86484,
+          "size_human": "84.46 KiB",
+          "exceeds_25_mib": false,
+          "exceeds_100_mib": false,
+          "checksum_sha256": "8ab53b1618bb0dcda93f43d7ae9d79dd6822d1f6fcc1b9868dd03d37aca9d83a",
+          "pages": 4,
+          "pdf_metadata": {
+            "/ModDate": "D:20250224173152-05'00'",
+            "/Producer": "PDFlib PLOP 4.1 (.NET/Win64)/PDFlib PLOP 4.0p4 (.NET/Win64)/Microsoft® Word 2010",
+            "/Author": "Legistar",
+            "/Title": "R-07-268 - R-268fsfinal.doc",
+            "/Creator": "Microsoft® Word 2010",
+            "/CreationDate": "D:20130108120803-08'00'"
+          },
+          "embedded_links": [],
+          "extracted_text_path": "research\\staging\\document-review\\.extracted\\Bike Boulevard General R-268fsfinal.txt",
+          "matching_inventory_id": "src-4cb190564a688d42",
+          "matching_inventory_status": null,
+          "review_status": "duplicate",
+          "decision": "Exact SHA-256 duplicate; no new upload or site entry required.",
+          "proposed_canonical_page": null,
+          "official_source_url": null,
+          "r2_url": null,
+          "implementation_location": null
+        }
+      ],
+      "cluster_summary": {}
+    },
+    {
+      "path": "project-state/contributed-document-decisions-2026-08-14.json",
+      "sha256": "73c6cf410daf7548367a05dbb05230829209578caaa837c8117597ef7e83f6b3",
+      "matches": [
+        {
+          "id": "local-8ab53b1618bb0dcd",
+          "filename": "Bike Boulevard General R-268fsfinal.pdf",
+          "decision": "duplicate",
+          "matching_inventory_id": "src-4cb190564a688d42",
+          "size_bytes": 86484,
+          "size_human": "84.46 KiB",
+          "checksum_sha256": "8ab53b1618bb0dcda93f43d7ae9d79dd6822d1f6fcc1b9868dd03d37aca9d83a"
+        }
+      ],
+      "cluster_summary": {}
+    }
+  ]
+}

@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "e0017e239013fad05720e9815327cc9e23a78c1a30ced712529f4523cd2c4497",
+  "audit_sha256": "92d197a6636413066db70a510027a9872fa542efbb4d3915091314d7c65c4eb1",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15251,7 +15251,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "3d4c394d9fd92394c7dfc4d24807d672a6569811bd4a895311247120175d5408",
+          "sha256": "23543aaed4d76c1f02049289ffb38ac7315518e0281e5d5bb0814a6e6a025eff",
           "binding_pointers": [
             "/implementation"
           ]
@@ -24900,6 +24900,78 @@
       "settled_decisions": [],
       "unresolved_gates": [],
       "implementation_status": "Evidence-based family exclusions ready for authorized inventory application"
+    },
+    {
+      "governance_id": "owner-council-finality-resolution-2026-10-05",
+      "category": "active owner decision",
+      "title": "owner-council-finality-resolution-2026-10-05",
+      "scope": {
+        "candidate_ids": [
+          "src-0f4496e4073a5e06",
+          "src-4cb190564a688d42"
+        ],
+        "task_ids": [
+          "council-finality-resolution-2026-10-05"
+        ]
+      },
+      "authority": "Explicit current user two-record Council finality instruction",
+      "decision_date": "2026-10-05",
+      "effective_date": "2026-10-05",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/council-finality-resolution-2026-10-05/authority.json",
+          "sha256": "5bb94ac360f29a7e0abb025d357d026310c8e7abf0904d9802ee8c5d8bb655b1",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Resolve exactly the two frozen Council finality blockers src-0f4496e4073a5e06 and src-4cb190564a688d42. Use existing evidence first and complete active durable governance. Independently determine whether current mission/quality governance conclusively excludes the R-07-185 amendment fragment without enacted-package reconstruction; preserve finality uncertainty as history if excluded. Do not change canonical/adoption-resolution or Nob Hill plan records. Fully resolve authoritative enacted R-07-268 identity, versions, amendments/substitutes, required exhibits, held completeness and existing R2 exact usability; reject mismatched MatterTextMatterId. Apply only conclusive background inventory dispositions; preserve originals/provenance. No visitor-visible or R2 mutation. Deterministically regenerate queue/accounting; full project/governance/sealed-history/Hugo/rendered/CURRENT/diff validation. Integrate clean background results into main and synchronize planning-snapshot; no next population. No arbitrary historical recommendation precedence or owner decision invention.",
+      "required_actions": [
+        "Resolve exactly the two frozen Council finality blockers src-0f4496e4073a5e06 and src-4cb190564a688d42. Use existing evidence first and complete active durable governance. Independently determine whether current mission/quality governance conclusively excludes the R-07-185 amendment fragment without enacted-package reconstruction; preserve finality uncertainty as history if excluded. Do not change canonical/adoption-resolution or Nob Hill plan records. Fully resolve authoritative enacted R-07-268 identity, versions, amendments/substitutes, required exhibits, held completeness and existing R2 exact usability; reject mismatched MatterTextMatterId. Apply only conclusive background inventory dispositions; preserve originals/provenance. No visitor-visible or R2 mutation. Deterministically regenerate queue/accounting; full project/governance/sealed-history/Hugo/rendered/CURRENT/diff validation. Integrate clean background results into main and synchronize planning-snapshot; no next population. No arbitrary historical recommendation precedence or owner decision invention."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded background Council finality review"
+    },
+    {
+      "governance_id": "decision-council-finality-resolution-2026-10-05",
+      "category": "active owner decision",
+      "title": "decision-council-finality-resolution-2026-10-05",
+      "scope": {
+        "candidate_ids": [
+          "src-0f4496e4073a5e06",
+          "src-4cb190564a688d42"
+        ],
+        "task_ids": [
+          "council-finality-resolution-2026-10-05"
+        ]
+      },
+      "authority": "Explicit current user two-record Council finality instruction",
+      "decision_date": "2026-10-05",
+      "effective_date": "2026-10-05",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/council-finality-resolution-2026-10-05/decisions.json",
+          "sha256": "e4b756b3dc26f2d12868a80ee2ce36d501d230b1137bdd1b4f08a7d25710967b",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Apply exactly one quality exclusion and one historical inventory approval as recorded; no other record,publication population,R2 object or visitor-visible change.",
+      "required_actions": [
+        "Apply exactly one quality exclusion and one historical inventory approval as recorded; no other record,publication population,R2 object or visitor-visible change."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded background Council finality review"
     }
   ]
 }
