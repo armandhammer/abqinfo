@@ -1,0 +1,398 @@
+{
+  "artifact_type": "task_implementation_plan",
+  "actions": [
+    "document_review",
+    "family_review",
+    "quality_assessment",
+    "inventory_disposition",
+    "governance_implementation",
+    "background_integration"
+  ],
+  "events": [
+    {
+      "operation": "family_review",
+      "candidate_ids": [
+        "src-bc1dbb930feefaaf",
+        "src-b657a1bd0d19ffe8",
+        "src-a6bd9f4f6ae1cb40",
+        "src-7e3d417f146c307b",
+        "src-c393d59e029b52e9",
+        "src-15bd43bb6a15984d"
+      ],
+      "governance_ids": [
+        "authorization-profile-ordinary-review-large",
+        "decision-archive-recovery-53d2a462",
+        "decision-council-closeout-status-2026-09-20-4dfd8e30",
+        "decision-decisions-2c491c71-remaining-thirteen-exception",
+        "decision-decisions-b8452592-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception",
+        "decision-next-ordinary-queue-b8bb5c70-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception",
+        "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
+        "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+        "decision-scoped-source-review-2026-08-04-33554a9c",
+        "decision-trails-pid-agenda-resolution-2026-10-05",
+        "decision-unm-cnm-focused-source-scope-1673e3f6",
+        "owner-trails-pid-agenda-resolution-2026-10-05",
+        "policy-agents",
+        "policy-durable-task-governance",
+        "policy-mission-scope",
+        "policy-mission-scope-legacy",
+        "policy-project-recency",
+        "policy-project-state",
+        "policy-publication-quality",
+        "policy-quality-exclusions",
+        "policy-r2-storage",
+        "policy-source-priorities",
+        "policy-tip-stip-retention",
+        "workflow-autonomous-verification",
+        "workflow-background-campaign",
+        "workflow-handoff-retirement",
+        "workflow-parallel-verification",
+        "workflow-stage-lifecycle"
+      ],
+      "action": "research_unsettled",
+      "summary": "Read existing exact-family research, source receipts and minutes matrix; preserve recommendations and factual limitations.",
+      "evidence": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/historical-evidence.json",
+      "use_contract_record_rules": true
+    },
+    {
+      "operation": "quality_assessment",
+      "candidate_ids": [
+        "src-bc1dbb930feefaaf",
+        "src-b657a1bd0d19ffe8",
+        "src-a6bd9f4f6ae1cb40",
+        "src-7e3d417f146c307b",
+        "src-c393d59e029b52e9",
+        "src-15bd43bb6a15984d"
+      ],
+      "governance_ids": [
+        "authorization-profile-ordinary-review-large",
+        "decision-archive-recovery-53d2a462",
+        "decision-council-closeout-status-2026-09-20-4dfd8e30",
+        "decision-decisions-2c491c71-remaining-thirteen-exception",
+        "decision-decisions-b8452592-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception",
+        "decision-next-ordinary-queue-b8bb5c70-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception",
+        "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
+        "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+        "decision-scoped-source-review-2026-08-04-33554a9c",
+        "decision-trails-pid-agenda-resolution-2026-10-05",
+        "decision-unm-cnm-focused-source-scope-1673e3f6",
+        "owner-trails-pid-agenda-resolution-2026-10-05",
+        "policy-agents",
+        "policy-durable-task-governance",
+        "policy-mission-scope",
+        "policy-mission-scope-legacy",
+        "policy-project-recency",
+        "policy-project-state",
+        "policy-publication-quality",
+        "policy-quality-exclusions",
+        "policy-r2-storage",
+        "policy-source-priorities",
+        "policy-tip-stip-retention",
+        "workflow-autonomous-verification",
+        "workflow-background-campaign",
+        "workflow-handoff-retirement",
+        "workflow-parallel-verification",
+        "workflow-stage-lifecycle"
+      ],
+      "action": "implements",
+      "summary": "All ten original pages visually inspected; exact hashes, family contents and independent negative scope/quality determinations complete.",
+      "evidence": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/meeting-findings.json",
+      "use_contract_record_rules": true
+    },
+    {
+      "operation": "family_review",
+      "candidate_ids": [
+        "src-bc1dbb930feefaaf",
+        "src-b657a1bd0d19ffe8",
+        "src-a6bd9f4f6ae1cb40",
+        "src-7e3d417f146c307b",
+        "src-c393d59e029b52e9",
+        "src-15bd43bb6a15984d"
+      ],
+      "governance_ids": [
+        "authorization-profile-ordinary-review-large",
+        "decision-archive-recovery-53d2a462",
+        "decision-council-closeout-status-2026-09-20-4dfd8e30",
+        "decision-decisions-2c491c71-remaining-thirteen-exception",
+        "decision-decisions-b8452592-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception",
+        "decision-next-ordinary-queue-b8bb5c70-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception",
+        "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
+        "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+        "decision-scoped-source-review-2026-08-04-33554a9c",
+        "decision-trails-pid-agenda-resolution-2026-10-05",
+        "decision-unm-cnm-focused-source-scope-1673e3f6",
+        "owner-trails-pid-agenda-resolution-2026-10-05",
+        "policy-agents",
+        "policy-durable-task-governance",
+        "policy-mission-scope",
+        "policy-mission-scope-legacy",
+        "policy-project-recency",
+        "policy-project-state",
+        "policy-publication-quality",
+        "policy-quality-exclusions",
+        "policy-r2-storage",
+        "policy-source-priorities",
+        "policy-tip-stip-retention",
+        "workflow-autonomous-verification",
+        "workflow-background-campaign",
+        "workflow-handoff-retirement",
+        "workflow-parallel-verification",
+        "workflow-stage-lifecycle"
+      ],
+      "action": "implements",
+      "summary": "Exhaust current public City/Council directories, subsequent Trails agendas, Legistar and public administrator routes; preserve factual limits and reconcile recommendation/hold through registry classifications.",
+      "evidence": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/governance-reconciliation.json",
+      "use_contract_record_rules": true
+    },
+    {
+      "operation": "inventory_disposition",
+      "candidate_ids": [
+        "src-bc1dbb930feefaaf",
+        "src-b657a1bd0d19ffe8",
+        "src-a6bd9f4f6ae1cb40",
+        "src-7e3d417f146c307b",
+        "src-c393d59e029b52e9",
+        "src-15bd43bb6a15984d"
+      ],
+      "governance_ids": [
+        "authorization-profile-ordinary-review-large",
+        "decision-archive-recovery-53d2a462",
+        "decision-council-closeout-status-2026-09-20-4dfd8e30",
+        "decision-decisions-2c491c71-remaining-thirteen-exception",
+        "decision-decisions-b8452592-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception",
+        "decision-next-ordinary-queue-b8bb5c70-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception",
+        "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
+        "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+        "decision-scoped-source-review-2026-08-04-33554a9c",
+        "decision-trails-pid-agenda-resolution-2026-10-05",
+        "decision-unm-cnm-focused-source-scope-1673e3f6",
+        "owner-trails-pid-agenda-resolution-2026-10-05",
+        "policy-agents",
+        "policy-durable-task-governance",
+        "policy-mission-scope",
+        "policy-mission-scope-legacy",
+        "policy-project-recency",
+        "policy-project-state",
+        "policy-publication-quality",
+        "policy-quality-exclusions",
+        "policy-r2-storage",
+        "policy-source-priorities",
+        "policy-tip-stip-retention",
+        "workflow-autonomous-verification",
+        "workflow-background-campaign",
+        "workflow-handoff-retirement",
+        "workflow-parallel-verification",
+        "workflow-stage-lifecycle"
+      ],
+      "action": "implements",
+      "summary": "Apply exactly six conclusive exclusions; preserve earlier notes/source/archive fields and all other inventory records; regenerate queue/checkpoint/owner accounting.",
+      "evidence": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/accounting.json",
+      "use_contract_record_rules": true
+    }
+  ],
+  "status": "research_in_progress",
+  "contract": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/contract-v15.json",
+  "contract_sha256": "7dc2164e908c558a06526e3b8240f90381cc81a9dea79194d50be44a51486ab9",
+  "population_sha256": "7492d76e10a088754b5f4b4b9accac3515418dd9f5169189810fa0ac501c3df5",
+  "respected_governance_ids": [
+    "authorization-profile-ordinary-review-large",
+    "decision-archive-recovery-53d2a462",
+    "decision-council-closeout-status-2026-09-20-4dfd8e30",
+    "decision-decisions-2c491c71-remaining-thirteen-exception",
+    "decision-decisions-b8452592-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception",
+    "decision-next-ordinary-queue-b8bb5c70-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception",
+    "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
+    "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+    "decision-scoped-source-review-2026-08-04-33554a9c",
+    "decision-trails-pid-agenda-resolution-2026-10-05",
+    "decision-unm-cnm-focused-source-scope-1673e3f6",
+    "owner-trails-pid-agenda-resolution-2026-10-05",
+    "policy-agents",
+    "policy-durable-task-governance",
+    "policy-mission-scope",
+    "policy-mission-scope-legacy",
+    "policy-project-recency",
+    "policy-project-state",
+    "policy-publication-quality",
+    "policy-quality-exclusions",
+    "policy-r2-storage",
+    "policy-source-priorities",
+    "policy-tip-stip-retention",
+    "workflow-autonomous-verification",
+    "workflow-background-campaign",
+    "workflow-handoff-retirement",
+    "workflow-parallel-verification",
+    "workflow-stage-lifecycle"
+  ],
+  "subjects": {},
+  "completion_evidence": {
+    "authorization-profile-ordinary-review-large": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "decision-archive-recovery-53d2a462": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "decision-council-closeout-status-2026-09-20-4dfd8e30": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "decision-decisions-2c491c71-remaining-thirteen-exception": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "decision-decisions-b8452592-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "decision-next-ordinary-queue-b8bb5c70-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "decision-scoped-source-review-2026-08-04-33554a9c": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "decision-trails-pid-agenda-resolution-2026-10-05": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "decision-unm-cnm-focused-source-scope-1673e3f6": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "owner-trails-pid-agenda-resolution-2026-10-05": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "policy-agents": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "policy-durable-task-governance": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "policy-mission-scope": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "policy-mission-scope-legacy": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "policy-project-recency": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "policy-project-state": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "policy-publication-quality": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "policy-quality-exclusions": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "policy-r2-storage": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "policy-source-priorities": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "policy-tip-stip-retention": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "workflow-autonomous-verification": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "workflow-background-campaign": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "workflow-handoff-retirement": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "workflow-parallel-verification": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ],
+    "workflow-stage-lifecycle": [
+      {
+        "path": "project-state/governance/trails-pid-agenda-resolution-2026-10-05/receipt.json",
+        "sha256": "196db2544bff85c6d096a9a0cb83a80da2ebedc92a896d0188fb05064a5b763d"
+      }
+    ]
+  }
+}

@@ -29,6 +29,8 @@ if ($LASTEXITCODE) { throw 'Three-record PGS legislative background boundary fai
 if ($LASTEXITCODE) { throw 'Three-record PGS publication guard failed.' }
 & python "$PSScriptRoot/Pr212PostMergeCloseout.py" guard
 if ($LASTEXITCODE) { throw 'PR212 background publication closeout boundary failed.' }
+& python "$PSScriptRoot/TrailsAgendaResolution.py" guard
+if ($LASTEXITCODE) { throw 'Trails six-record background boundary failed.' }
 Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }
