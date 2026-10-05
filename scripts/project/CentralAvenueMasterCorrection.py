@@ -175,9 +175,9 @@ def render():
     url=sys.argv[2]
     label='preview' if '.pages.dev' in url else 'local'
     with sync_playwright() as p:
-        browser=p.chromium.launch(channel='chrome',headless=True)
+        browser=p.chromium.launch(channel='chrome',headless=True,args=['--disable-gpu'])
         page=browser.new_page(viewport=dict(width=1440,height=1100))
-        response=page.goto(url,wait_until='networkidle',timeout=90000)
+        response=page.goto(url.split('#')[0],wait_until='networkidle',timeout=90000)
         assert response.status==200
         result=page.evaluate(r'''() => {
           const h=document.getElementById('central-avenue-station-area-planning');
@@ -192,7 +192,9 @@ def render():
         r2=[x['url'] for x in result['links'] if x['url'].startswith('https://files.abqinfo.com/')]
         assert len(r2)==12 and not any('impact-of-transit' in x for x in r2)
         assert 'not section 12' in result['text'] and 'nonbinding draft' in result['text']
-        page.locator('#central-avenue-station-area-planning').scroll_into_view_if_needed()
+        page.locator('#central-avenue-station-area-planning').evaluate('(h) => h.scrollIntoView(true)')
+        page.evaluate('() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))')
+        page.wait_for_timeout(300)
         page.screenshot(path=str(G.ROOT/(P+'preview.png')),full_page=False)
         result.update(url=url,http_status=response.status,rendered_at=datetime.now(timezone.utc).isoformat(),browser='Google Chrome via Playwright',head_sha=G.git('rev-parse','HEAD'))
         save(P+label+'-render.json',result)

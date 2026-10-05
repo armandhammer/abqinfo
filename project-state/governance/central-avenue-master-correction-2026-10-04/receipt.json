@@ -1,6 +1,6 @@
 {
   "task_id": "central-avenue-master-correction-2026-10-04",
-  "state": "prepared_for_manual_review",
+  "state": "complete_awaiting_manual_pr_review",
   "baseline_commit": "26068ab057e95de5e90c8fc98462b3f22e0ca8d8",
   "visible_page": "content/development-land-use/area-sector-plans.md",
   "report_components": [
@@ -31,5 +31,29 @@
   },
   "review_findings_unchanged": true,
   "completed_study_download_deferred": true,
-  "merge_authorized": false
+  "merge_authorized": false,
+  "validation": {
+    "full_project": "passed",
+    "exit_code": 0,
+    "log": "project-state/governance/central-avenue-master-correction-2026-10-04/validation.log",
+    "log_sha256": "53829107675aaf530f44089e97e1e512f63977469ad60b18d206f3419aa53df8",
+    "governance_sealed_history": "passed",
+    "hugo_rendered": "passed",
+    "retained_r2_gets": 12,
+    "diff_check": "passed"
+  },
+  "preview": {
+    "url": "https://f3831a10.abqinfo.pages.dev/development-land-use/area-sector-plans/#central-avenue-station-area-planning",
+    "deployment_id": "f3831a10-c3e1-4675-893d-3927785d16f3",
+    "deployment_head_sha": "f1bae98e9642bfdd41181be3476c8d62a5348efe",
+    "content_tree_oid": "e6ee2d0d9a41ebc2e601a1ec1c276a618c4145c0",
+    "cloudflare_check": "success",
+    "rendered_inspection": "passed",
+    "local_section_parity": "identical text and links",
+    "r2_full_gets_verified": 12
+  },
+  "pr_number": 211,
+  "pr_url": "https://github.com/armandhammer/abqinfo/pull/211",
+  "planning_snapshot_strategy": "Fast-forward to exact final reviewed PR head; main remains baseline",
+  "publication_implementation_state": "Inventory unchanged until owner-reviewed publication lifecycle"
 }
