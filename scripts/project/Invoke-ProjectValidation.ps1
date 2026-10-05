@@ -25,6 +25,8 @@ if ($LASTEXITCODE) { throw 'Central Avenue historical master correction exact-de
 if ($LASTEXITCODE) { throw 'PR211 background publication closeout boundary failed.' }
 & python "$PSScriptRoot/PgsLegislativeResolution.py" guard
 if ($LASTEXITCODE) { throw 'Three-record PGS legislative background boundary failed.' }
+& python "$PSScriptRoot/PgsLegislativePublication.py" guard
+if ($LASTEXITCODE) { throw 'Three-record PGS publication guard failed.' }
 Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }

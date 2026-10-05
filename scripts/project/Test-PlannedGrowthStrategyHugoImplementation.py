@@ -35,6 +35,13 @@ def main() -> None:
     assert page.count(heading) == 1
     section = page.split(heading, 1)[1].split("\n## ", 1)[0]
     section = heading + section
+    # Preserve the exact sealed study section while the separately governed
+    # three-act legislative grouping follows it. Its own exact-delta guard
+    # verifies the addition and forbids changes to this study context.
+    if '\n### Enabling legislation\n' in section:
+        from PgsLegislativePublication import guard
+        guard()
+        section = section.split('### Enabling legislation\n', 1)[0].removesuffix('\n')
     assert hashlib.sha256(section.encode("utf-8")).hexdigest() == implemented["section_sha256"]
     assert implemented["state"] == "implemented_on_planning_branch_not_live"
     assert implemented["page"] == "content/development-land-use/area-sector-plans.md"

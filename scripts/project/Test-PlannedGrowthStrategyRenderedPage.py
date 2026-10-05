@@ -17,6 +17,10 @@ def main() -> None:
     section = re.search(r"<h2 id=citywide-growth-strategy>.*?(?=<h2 id=)", rendered, re.S)
     assert section, "Citywide Growth Strategy H2 missing from rendered page"
     block = section.group()
+    if '<h3 id=enabling-legislation>' in block:
+        from PgsLegislativePublication import guard
+        guard()
+        block = block.split('<h3 id=enabling-legislation>', 1)[0]
     assert block.count("<ol>") == 1 and block.count("</ol>") == 1
     assert block.count("<li>") == 13  # Part 1 bullet plus twelve Part 2 chapters.
     urls = [html.unescape(quoted or bare) for quoted, bare in re.findall(r'href=(?:"([^"]+)"|([^ >]+))', block)]
