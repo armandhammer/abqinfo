@@ -108,5 +108,95 @@ def guard():
         for field in ['direct_file_url','checksum_sha256','size_bytes','local_path','r2_key','r2_url']:assert b[i].get(field)==a[i].get(field),(i,field)
     changes=set(git('diff',BASE,stage.end,'--name-only').decode().splitlines()) if stage.end else set(G.changed_paths(BASE))
     assert changes<=set(stage.load_json(P+'population.json')['artifact_paths']),changes-set(stage.load_json(P+'population.json')['artifact_paths'])
+    if (G.ROOT/(P+'accounting.json')).exists():
+        assert b[IDS[0]]['status']=='excluded' and b[IDS[1]]['status']=='approved for addition'
+        from PublicationQuality import require_publication_quality
+        require_publication_quality(b[IDS[1]])
+        q=stage.load_json(P+'queue.json')
+        assert set(q['pending_ids'])=={i for i,r in b.items() if r['status']=='pending review'}
+        assert {r['id'] for r in q['newly_approved_backlog']}=={i for i,r in b.items() if r['status']=='approved for addition'}=={IDS[1]}
+        assert (q['approved_count'],q['pending_review_count'],q['source_or_structural_blocked_pending_count'],q['gated_pending_count'])==(1,340,19,321)
+        c=stage.load_json(P+'comparison.json');assert c['matter_id']==5227 and c['final_text_id']==6628 and c['final_version']=='4' and c['all_remaining_bytes_equal'] and c['held_r2_exact'] and c['full_held_text_equals_correct_final_version'] and all(p['equal'] for p in c['all_four_rendered_pages_pixel_equal'])
+        d=stage.load_json(P+'decisions.json');assert d['records'][0]['enacted_package_reconstruction_required'] is False and d['owner_decisions_needed']==0
     print('Exact two-record Council / originals and history / zero visible and R2 guard passed')
+def queue():
+    inv=G.load('project-state/master-inventory.json');rows={r['id']:r for r in inv['candidates']};prior=G.load(G.load(P+'starting-state.json')['source_queue']);q=copy.deepcopy(prior)
+    pending={i for i,r in rows.items() if r['status']=='pending review'};approved={i for i,r in rows.items() if r['status']=='approved for addition'}
+    q.update(artifact_type='council_finality_resolution_queue',recorded_at=inv['generated_at'],source_queue_artifact=G.load(P+'starting-state.json')['source_queue'],inventory_generated_at=inv['generated_at'],inventory_sha256=G.file_hash('project-state/master-inventory.json'),pending_review_count=len(pending),pending_ids=sorted(pending),approved_count=len(approved),in_progress_publication=None)
+    for kind in ['gated','source_or_structural_blocked']:
+        q[kind+'_pending_ids']={i:why for i,why in prior[kind+'_pending_ids'].items() if i in pending};q[kind+'_pending_count']=len(q[kind+'_pending_ids'])
+    ungated=pending-set(q['gated_pending_ids'])-set(q['source_or_structural_blocked_pending_ids'])
+    q.update(ungated_pending_ids=sorted(ungated),ungated_pending_count=len(ungated),genuinely_actionable_ungated_pending_count=len(ungated))
+    q['unresolved_ungated_prerequisites']=[r for r in prior['unresolved_ungated_prerequisites'] if r['id'] in ungated];q['actionable_ungated_pending_ids']=[i for i in prior['actionable_ungated_pending_ids'] if i in ungated]
+    q['background_family_groups']=[dict(f,candidate_ids=[i for i in f['candidate_ids'] if i in pending],candidate_count=len(set(f['candidate_ids'])&pending)) for f in prior['background_family_groups'] if set(f['candidate_ids'])&pending]
+    q['newly_approved_backlog']=[dict(id=i,title=rows[i]['title'],reason='Complete final historical resolution proved; existing R2 exact held original usable. No active publication population; future contentPR/manual editorial review requires separate authorization.',canonical_page=rows[i]['proposed_canonical_page'],evidence=P+'decisions.json') for i in sorted(approved)]
+    q['council_finality_resolution']=dict(population=P+'population.json',decisions=P+'decisions.json',blockers_cleared=IDS)
+    assert set(q['gated_pending_ids'])|set(q['source_or_structural_blocked_pending_ids'])|ungated==pending
+    assert (len(approved),len(pending),q['gated_pending_count'],q['source_or_structural_blocked_pending_count'],len(ungated))==(1,340,321,19,0)
+    save(P+'queue.json',q);save('project-state/ordinary-queue-current.json',dict(schema_version=1,artifact=P+'queue.json',task=TASK))
+    remaining_statuses={'pending review','approved for addition','downloaded','parsed','description drafted','placement assigned'}
+    remaining=sorted(r['id'] for r in rows.values() if r['status'] in remaining_statuses or (r['status']=='implemented' and r.get('validation_status')!='passed'))
+    cp=G.load('project-state/checkpoint.json');cp.update(recorded_at=inv['generated_at'],completed_item_range='Exactly two Council blockers resolved: Nob Hill amendment quality exclusion; R-07-268 complete final historical inventory approval. No publication/R2 task.',counts_by_status=inv['counts'],next_pending_id=remaining[0] if remaining else None,remaining_nonterminal=len(remaining),resume_command='Read CURRENT and the Council finality receipt. Exactly two records complete after validation and synchronization; no next population authorized.')
+    save('project-state/checkpoint.json',cp)
+    refresh();subprocess.run([sys.executable,'scripts/project/Build-ConsolidatedHumanReviewQueue.py'],check=True)
+def apply():
+    from PublicationQuality import require_publication_quality
+    updates=G.load(P+'updates.json')['approved_updates'];prior={r['id']:r for r in G.load(P+'prior-records.json')['records']}
+    require_publication_quality({**prior[IDS[1]],**next(u['changes'] for u in updates if u['id']==IDS[1])})
+    refresh();G.active_check('mutation','inventory_disposition',IDS)
+    current={r['id']:r for r in G.load('project-state/master-inventory.json')['candidates']}
+    if all(current[u['id']]['status']==u['changes']['status'] for u in updates):
+        assert all(all(current[u['id']].get(k)==v for k,v in u['changes'].items()) for u in updates)
+    else:subprocess.run([sys.executable,'scripts/project/Update-CandidatesBatch.py','--requests',P+'updates.json'],check=True)
+    inv=G.ROOT/'project-state/master-inventory.json';inv.write_bytes(inv.read_bytes().replace(b'\r\n',b'\n'))
+    queue()
+    save(P+'accounting.json',dict(population=IDS,completed=IDS,remaining=[],blockers_cleared=2,approved=1,pending=340,source_blocked=19,governance_gated=321,owner_decisions_needed=0,active_publication_population=None,r2_objects_added=0,r2_bytes_added=0,r2_deleted_or_overwritten=0,visitor_visible_paths_changed=[]))
+    event('inventory_disposition','Apply exactly the two saved conclusive dispositions; preserve all prior notes,source bytes and archive fields. Regenerate queue/checkpoint/owner accounting from actual inventory.',P+'accounting.json')
+    save(P+'progress.json',dict(stage='two_dispositions_applied_validation_pending',remaining=['validation','background_integration'],next_population_authorized=False))
+    current=G.ROOT/'project-state/CURRENT.md';old=current.read_text(encoding='utf8');links=old[old.index('[Owner correction]'):]
+    text='# Current project state\n\nExactly two Council finality blockers resolved: Nob Hill solar-access amendment excluded as a non-self-contained legislative fragment; enacted-package reconstruction unnecessary and historical uncertainty preserved. R-07-268 / R-2007-109 complete final v4,text6628,approved inventory-only as historical legislation. Separate route map is not incorporated by final text. Existing R2 original exact to held bytes; current official PDF differs only metadata,with identical content bytes and all four rendered pages. Queue: 1 approved / 340 pending (321 governance-gated / 19 source-structural blocked); two blockers cleared. No active publication population or owner decision. Zero visitor-visible/R2 delta. Validation and authorized background integration pending; no next population.\n\n[Council receipt](governance/'+TASK+'/receipt.json) · [Finality and dispositions](governance/'+TASK+'/decisions.json) · [Comparison](governance/'+TASK+'/comparison.json) · '+links
+    current.write_text(text,encoding='utf8',newline='\n')
+    refresh();guard()
+def receipt():
+    q=G.load(P+'accounting.json');c=G.load(G.load(G.ACTIVE_TASK)['contract']);accounting={}
+    for r in c['resolved_rules']:
+        gid=r['governance_id']
+        if gid=='policy-publication-quality':finding='Independent actual-record assessment: solar sheet excluded even if enacted,with no limited-content exception; complete four-page resolution passes measured visual/standalone value and qualified historical-currentness assessment.'
+        elif gid=='policy-mission-scope':finding='Both specific Albuquerque regulatory/infrastructure topics pass scope; independent fragment-quality exclusion remains negative. Complete route/funding resolution has substantial local public-information value.'
+        elif gid.startswith('decision-'):finding='All predecessor controlling evidence and unrelated decisions preserved. Earlier factual holds conditional on publication/retention completed through current conclusive quality or correct final-delivery proof; no settled eligibility reversal or contributed duplicate reopening.'
+        elif gid=='owner-'+TASK:finding='Exact two-record mutation only,complete R-07-268 evidence and unnecessary Nob Hill reconstruction avoided. Both conclusive dispositions saved; no next population,publication,R2 action or owner question.'
+        else:finding='Frozen population and immutable complete registry resolution; fresh checks at each entry point; preserved original fields/history,storage,recency and external-action limits. Previous lifecycle sealed; current exact-delta guard and deterministic inventory accounting. No campaign,parallel task,source-priority deviation or protected/publication action inferred.'
+        accounting[gid]=dict(requirement=r['binding_requirement'],implementation=finding,controlling_evidence_preserved=[dict(path=a['path'],sha256=G.file_hash(a['path'])) for a in r['controlling_artifacts']],evidence=[P+'decisions.json',P+'comparison.json',P+'governance-reconciliation.json',P+'accounting.json'])
+    save(P+'receipt.json',dict(task_id=TASK,baseline_commit=BASE,research_checkpoint_commit=G.git('rev-parse','HEAD'),population=P+'population.json',dispositions=P+'decisions.json',comparison=P+'comparison.json',governance_reconciliation=P+'governance-reconciliation.json',accounting=q,governance_accounting=accounting,normal_validation='pending',owner_decision_required=False,r2_delta=0,visitor_visible_delta=0,next_population_authorized=False))
+    (G.ROOT/(P+'summary.md')).write_text('# Council finality resolution\n\nExactly two records reviewed and changed. Solar-access sheet excluded for dependent fragment quality; no enacted-package reconstruction required. Complete historical F/S R-07-268,enacted R-2007-109,final version4/text6628 approved inventory-only. Committee/floor substitutes and final18mph amendment established by complete version comparison. All12 final sections are present; no incorporated exhibit is missing. Listed ExhibitA map is contextual; future bikeway/design plans are directed work,not omitted adopted attachments.\n\nHeld/contributed/publicR2 original86484 bytes,SHA2568ab53b1618bb0dcda93f43d7ae9d79dd6822d1f6fcc1b9868dd03d37aca9d83a. Current official PDF differs only ModDate and second trailerID; every other byte and every rendered page pixel agrees. Existing original usable without upload. Do not claim exact current-source container identity or current consolidated law.\n\nQueue:1 approved/340 pending/19 source-structural blocked/321 governance-gated. Two blockers cleared. No genuine owner decision,active publication population,R2 delta or visitor-visible delta. No next population authorized. Validation and integration evidence:receipt.json,validation.log,rendered-check.json,integration-intent.json.\n',encoding='utf8',newline='\n')
+    refresh();G.active_check('final');guard()
+def finish():
+    from bs4 import BeautifulSoup
+    log=(G.ROOT/'tmp/council-finality-validation.log').read_text(encoding='utf8')
+    assert '"Hugo": "passed"' in log and '51 contiguous stage intervals; 509 unchanged historical evidence files' in log
+    assert 'CURRENT.md' in log or 'separator' in log or 'current resume' in log.lower()
+    log='\n'.join(line.expandtabs(4).rstrip(' \t') for line in log.splitlines())+'\n'
+    (G.ROOT/(P+'validation.log')).write_text(log,encoding='utf8',newline='\n')
+    rendered=[]
+    for rel in ['transportation/bicycling/bike-plans/index.html','development-land-use/area-sector-plans/index.html']:
+        path=G.ROOT/'tmp/site-build'/rel;soup=BeautifulSoup(path.read_bytes(),'html.parser');article=soup.select_one('article')
+        assert article
+        links=[a.get('href') for a in article.select('a[href]')]
+        source='content/'+rel.replace('/index.html','.md');baseline=git('show',BASE+':'+source).decode('utf8');preserved=[]
+        for record in G.load(P+'prior-records.json')['records']:
+            url=record['r2_url'] or record['direct_file_url'];count=links.count(url);expected=baseline.count(url)
+            assert count==expected,(source,url,count,expected)
+            preserved.append(dict(id=record['id'],baseline_count=expected,rendered_count=count))
+        rendered.append(dict(path=rel,article_sha256=hashlib.sha256(str(article).encode()).hexdigest(),baseline_target_links_preserved=preserved))
+    save(P+'rendered-check.json',dict(result='passed',full_suite_rendered_semantic_regressions=True,pages=rendered,visitor_tree_unchanged_from=BASE,additional_browser_render_required=False,reason='Zero visitor-visible tree delta; complete normal Hugo/rendered suite passed. R-07-268 existing legacy archive entry remains once in Related Bicycle Policy; solar amendment remains absent. No new entry or source-link/enactment-label edit.',legacy_presentation_limit='R-07-268 existing entry has an archive link but no adjacent official source link. Inventory-only approval resolves evidence and quality; no new publication transition or current-law assertion. Any visible source/enactment/currentness qualification correction requires a separate authorized manual-review PR.'))
+    r=G.load(P+'receipt.json');r.update(normal_validation='passed',validation_log=P+'validation.log',validation_log_sha256=G.file_hash(P+'validation.log'),rendered_checks=P+'rendered-check.json',final_inventory_counts=G.load('project-state/master-inventory.json')['counts'],state='two_record_resolution_complete_background_integration_authorized',integration_intent=P+'integration-intent.json',derived_extracts='Whitespace normalization only,raw/normalized hashes preserved in evidence metadata; exact compressed original responses unchanged.',existing_legacy_r07_268_entry='Existing archive link and text preserved. Approved-for-addition status records completed scope/quality/source review,not a new published entry or fully remediated publication validation. Source/enactment/currentness labeling remains future separately authorized content work; no genuine editorial choice is pending.')
+    save(P+'receipt.json',r)
+    save(P+'integration-intent.json',dict(authority=P+'authority.json',result_commit='Commit containing this final receipt; both earlier research checkpoint and disposition/validation commit must be retained.',expected_remote_before={'main':BASE,'chatgpt/planning-snapshot':BASE},remote_open_prs_before=[],actions=['Fast-forward local main to completed task branch','Atomically push resulting commit to remote main and chatgpt/planning-snapshot without force','Synchronize local planning-snapshot and verify both remote SHAs equal the resulting main SHA'],no_next_population=True,requires_clean_worktree=True,requires_zero_visitor_visible_r2_delta=True))
+    save(P+'progress.json',dict(stage='complete_validation_passed_integration_authorized',completed=IDS,remaining=['authorized_background_ref_synchronization'],next_population_authorized=False))
+    current=G.ROOT/'project-state/CURRENT.md';text=current.read_text(encoding='utf8').replace('Validation and authorized background integration pending; no next population.','Full project/governance/sealed-history/Hugo/rendered/CURRENT validation passed. Authorized background integration into main and planning-snapshot is recorded in the integration intent; no next population.')
+    current.write_text(text,encoding='utf8',newline='\n')
+    if not any(e['operation']=='background_integration' for e in G.load(P+'implementation.json')['events']):event('background_integration','Full normal validation passed; clean exact two-record background result prepared for authorized atomic main/planning synchronization. No external storage or content action.',P+'integration-intent.json')
+    refresh();plan=G.load(P+'implementation.json');plan['status']='complete';save(P+'implementation.json',plan)
+    active=G.load(G.ACTIVE_TASK);active['state']='complete';save(G.ACTIVE_TASK,active)
+    G.active_check('final');guard()
 if __name__=='__main__':globals()[sys.argv[1]]()

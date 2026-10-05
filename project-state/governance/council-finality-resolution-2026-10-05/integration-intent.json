@@ -1,0 +1,17 @@
+{
+  "authority": "project-state/governance/council-finality-resolution-2026-10-05/authority.json",
+  "result_commit": "Commit containing this final receipt; both earlier research checkpoint and disposition/validation commit must be retained.",
+  "expected_remote_before": {
+    "main": "ae9353c56f6f395c4389424156b896c07b4671f6",
+    "chatgpt/planning-snapshot": "ae9353c56f6f395c4389424156b896c07b4671f6"
+  },
+  "remote_open_prs_before": [],
+  "actions": [
+    "Fast-forward local main to completed task branch",
+    "Atomically push resulting commit to remote main and chatgpt/planning-snapshot without force",
+    "Synchronize local planning-snapshot and verify both remote SHAs equal the resulting main SHA"
+  ],
+  "no_next_population": true,
+  "requires_clean_worktree": true,
+  "requires_zero_visitor_visible_r2_delta": true
+}

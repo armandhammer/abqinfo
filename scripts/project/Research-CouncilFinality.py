@@ -5,6 +5,7 @@ import CouncilFinalityResolution as S
 from PIL import Image,ImageDraw
 sys.path.insert(0,str(S.G.ROOT/'tmp/pgs-pdf-deps'))
 import pymupdf
+def derived(t):return '\n'.join(line.expandtabs(4).rstrip(' \t') for line in t.splitlines()).rstrip('\n')+'\n'
 def fetch(item):
     n,url=item;row=dict(url=url,method='GET')
     from datetime import datetime,timezone
@@ -18,13 +19,13 @@ def fetch(item):
         else:
             from bs4 import BeautifulSoup
             if 'html' in row['content_type']:
-                soup=BeautifulSoup(data,'html.parser');row['links']=[dict(text=a.get_text(' ',strip=True),href=a['href']) for a in soup.select('a[href]')];(S.G.ROOT/(S.P+f'evidence-{n}.txt')).write_text(soup.get_text('\n',strip=True),encoding='utf-8',newline='\n')
+                soup=BeautifulSoup(data,'html.parser');row['links']=[dict(text=a.get_text(' ',strip=True),href=a['href']) for a in soup.select('a[href]')];(S.G.ROOT/(S.P+f'evidence-{n}.txt')).write_text(derived(soup.get_text('\n',strip=True)),encoding='utf-8',newline='\n')
     except Exception as e:row.update(error=str(e),complete=False)
     S.save(S.P+f'evidence-{n}.json',row);return n,row.get('status'),row.get('size_bytes'),row.get('error')
 def inspect(n,data,row):
     with pymupdf.open(stream=data,filetype='pdf') as d:
         t='\n'.join(p.get_text() for p in d);row.update(page_count=len(d),word_count=len(t.split()),metadata=d.metadata,embedded_files=d.embfile_names())
-        (S.G.ROOT/(S.P+f'evidence-{n}.txt')).write_text(t,encoding='utf8',newline='\n')
+        (S.G.ROOT/(S.P+f'evidence-{n}.txt')).write_text(derived(t),encoding='utf8',newline='\n')
         tiles=[]
         for p in d:
             pix=p.get_pixmap(matrix=pymupdf.Matrix(.85,.85));tiles.append(Image.frombytes('RGB',[pix.width,pix.height],pix.samples))
@@ -92,6 +93,11 @@ def compare():
     record=S.G.load(S.P+'prior-records.json')['records'][1];assert hashlib.sha256(held).hexdigest()==record['checksum_sha256'] and len(held)==record['size_bytes']
     S.save(S.P+'comparison.json',dict(matter_id=5227,final_text_id=6628,final_version='4',enactment='R-2007-109',correct_matter_identity_all_versions=True,held_r2_exact=True,held_size_bytes=len(held),held_sha256=hashlib.sha256(held).hexdigest(),current_official_size_bytes=len(current),current_official_sha256=hashlib.sha256(current).hexdigest(),held_current_official_exact_bytes=False,only_container_differences=['PDF trailer second document ID, twice','PDF ModDate:20250224173152 to20260122185501'],all_remaining_bytes_equal=True,all_four_rendered_pages_pixel_equal=pixels,full_held_text_equals_correct_final_version=True,official_final_word_equals_september_witness=True,final_text_references_or_incorporates_exhibits=False,companion_exhibit=dict(legacy_attachment=6143,current_attachment=2251888,title='Exhibit A: F/S-07-268 Bike Boulevards',pages=1,role='Illustrative route/phasing and proposed-crossing study-area map. Separately delivered with the floor substitute; final version4 contains all route endpoints/phases/crossing instructions in its own sections and neither references nor incorporates this exhibit. Preserve contextual relationship; not an omitted required enacted exhibit.'),version_differences={f'{a}-to-{b}':list(difflib.unified_diff(texts[a]['MatterTextPlain'].splitlines(),texts[b]['MatterTextPlain'].splitlines(),n=1)) for a,b in [('1','2'),('2','3'),('3','4')]},delivery_qualification='Complete final resolution in official bill format; blank printed enactment line also appears in the authoritative final PDF and final text. Not a signed/certified enactment facsimile; identity verified independently by matter/public report.',rejected_evidence=['Historical /texts/{version} mismatched MatterTextMatterId','API/legacy matter IDs used as modern public page IDs returned Invalid parameters','Meeting minutes endpoint returns image/png2912 bytes, not minutes; not used for text or adoption completeness']))
     print('Correct final text, all non-metadata PDF bytes and all rendered pixels equal; exact held/R2 verified')
+def normalize():
+    for p in (S.G.ROOT/S.P).glob('evidence-*.txt'):
+        raw=p.read_bytes();text=derived(raw.decode('utf8'));p.write_text(text,encoding='utf8',newline='\n')
+        metadata=p.with_suffix('.json');row=json.loads(metadata.read_text(encoding='utf8'))
+        row.setdefault('raw_derived_text_sha256',hashlib.sha256(raw).hexdigest());row['normalized_derived_text_sha256']=hashlib.sha256(p.read_bytes()).hexdigest();row['derived_text_normalization']='UTF8 LF,tab expansion and trailing-whitespace removal only; source bin.gz bytes unchanged.';S.save(metadata.relative_to(S.G.ROOT).as_posix(),row)
 if __name__=='__main__':
     if sys.argv[1]=='fetch':print(fetch((int(sys.argv[2]),sys.argv[3])))
     else:globals()[sys.argv[1]]()
