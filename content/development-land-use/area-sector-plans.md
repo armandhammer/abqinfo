@@ -33,6 +33,22 @@ Archived Part 2 chapters (each link is a separate original City PDF):
 11. [Chapter 10.0 — Growth Strategy Techniques Used in Other Locations](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-planned-growth-strategy-part-2-chapter-10-growth-strategy-techniques.pdf) · [Official City PDF](https://www.cabq.gov/council/documents/pgs/Part2-10.pdf)
 12. [Chapter 11.0 — Regulatory Structure Outline](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-planned-growth-strategy-part-2-chapter-11-regulatory-structure-outline.pdf) · [Official City PDF](https://www.cabq.gov/council/documents/pgs/Part2-11.pdf)
 
+### Enabling legislation
+
+The broader Planned Growth Strategy study is historical planning analysis. These three ordinances identify specific measures the City enacted; they did not make the entire study law. The linked originals are historical enactments, not current consolidated law or current forecasts.
+
+- [O-2002-034 — Growth-management framework (F/S O-02-39 (2), 2002)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-pgs-ordinance-o-2002-034.pdf)
+
+  Established the City growth-management framework and advisory task force, with impact-fee principles, infrastructure and Capital Improvements Program (CIP) sequencing, a no-net-expense development policy, and intergovernmental coordination. [Official City original](https://www.cabq.gov/council/documents/pgs/o-39fs3.pdf)
+
+- [O-2003-047 — Infrastructure and growth forecasts (O-03-132, 2003)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-pgs-ordinance-o-2003-047.pdf)
+
+  Adopted population, housing and employment forecast tables for growth-related capital planning and the land-use assumptions used for development fees. The original includes all three forecast exhibits. [Official City original](https://www.cabq.gov/council/documents/pgs/o-132fin.pdf)
+
+- [O-2004-007 — Development Fees Act land-use assumptions (O-04-9, 2004)](https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-pgs-ordinance-o-2004-007.pdf)
+
+  Adopted the later land-use assumptions and forecast framework under the Development Fees Act for growth capital needs and development impact fees, with a five-year update requirement. Its population, housing and employment tables differ from the 2003 ordinance and are preserved here as a distinct enactment. [Official City original](https://www.cabq.gov/council/documents/pgs/o-9fin.pdf)
+
 ## Downtown Neighborhood Area
 
 - [Downtown Neighborhood Area Sector Development Plan Update (Draft, September 17, 2010; multipart)](https://www.cabq.gov/council/documents/dnasdp-documents/dna_sector_plan_-_part_1.pdf)
