@@ -1,0 +1,61 @@
+{
+  "artifact_type": "task_implementation_plan",
+  "actions": [
+    "document_review",
+    "family_review",
+    "quality_assessment",
+    "inventory_disposition",
+    "governance_implementation",
+    "background_integration"
+  ],
+  "events": [
+    {
+      "operation": "document_review",
+      "candidate_ids": [
+        "src-f7c7bd5b273def22",
+        "src-68582bc4fe41fb4f",
+        "src-fcbe6a7ebcf916a1"
+      ],
+      "action": "research_unsettled",
+      "use_contract_record_rules": true,
+      "summary": "The /versions endpoint maps Key to MatterTextId and Value to MatterTextVersion. Old /texts/1 etc selected unrelated global text IDs. Correct IDs 2191/3192/3419 were checked against MatterTextMatterId 1463/2609/2802. Complete final operative clauses, headers, row labels and numeric exhibit sequences agree with held PDFs and exact listed Word attachments.",
+      "evidence": "project-state/governance/pgs-legislative-resolution-2026-10-05/research-journal.json"
+    }
+  ],
+  "status": "research_in_progress",
+  "contract": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v4.json",
+  "contract_sha256": "5dd62fbf4583c61194e27d1168e3e0459cc20549d873491cd2f8378bfebafa79",
+  "population_sha256": "d51df9294e2b7fe155c9b065002baf1b14f0a69fd44d71c7808787dcd2e9505b",
+  "respected_governance_ids": [
+    "authorization-profile-ordinary-review-large",
+    "decision-archive-recovery-53d2a462",
+    "decision-council-closeout-status-2026-09-20-4dfd8e30",
+    "decision-decisions-2c491c71-remaining-thirteen-exception",
+    "decision-decisions-b8452592-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception",
+    "decision-next-ordinary-queue-b8bb5c70-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception",
+    "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
+    "decision-planned-growth-strategy-decision-2026-09-19-277e4100",
+    "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+    "decision-scoped-source-review-2026-08-04-33554a9c",
+    "decision-unm-cnm-focused-source-scope-1673e3f6",
+    "owner-pgs-legislative-resolution-2026-10-05",
+    "policy-agents",
+    "policy-durable-task-governance",
+    "policy-mission-scope",
+    "policy-mission-scope-legacy",
+    "policy-project-recency",
+    "policy-project-state",
+    "policy-publication-quality",
+    "policy-quality-exclusions",
+    "policy-r2-storage",
+    "policy-source-priorities",
+    "policy-tip-stip-retention",
+    "supersessions-pgs-legislative-resolution-2026-10-05",
+    "workflow-autonomous-verification",
+    "workflow-background-campaign",
+    "workflow-handoff-retirement",
+    "workflow-parallel-verification",
+    "workflow-stage-lifecycle"
+  ],
+  "subjects": {}
+}

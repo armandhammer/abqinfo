@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "e16071e5424bf72d10e152ce2a4ce60a19285149ee1c7c92e122babec6341599",
+  "audit_sha256": "b53bb51c7b7b746a133cca0ec069cff4cf60ef951a285757cc904fa3c40af2ba",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15249,7 +15249,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "0ad3f753ae16b36806cc604b36e9f030b267215848543fe00d90d187ce84db19",
+          "sha256": "ed5b3f7ac19551f9118ae4a58c1c8a9ae958671975229b03277d34c96eb4bc54",
           "binding_pointers": [
             "/implementation"
           ]
@@ -24280,6 +24280,75 @@
       "unresolved_gates": [],
       "implementation_status": "bounded owner task",
       "supersedes": "owner-central-avenue-master-correction-2026-10-04"
+    },
+    {
+      "governance_id": "owner-pgs-legislative-resolution-2026-10-05",
+      "category": "active owner decision",
+      "title": "owner-pgs-legislative-resolution-2026-10-05",
+      "scope": {
+        "candidate_ids": [
+          "src-f7c7bd5b273def22",
+          "src-68582bc4fe41fb4f",
+          "src-fcbe6a7ebcf916a1"
+        ],
+        "task_ids": [
+          "pgs-legislative-resolution-2026-10-05"
+        ]
+      },
+      "authority": "Explicit current user three-record PGS legislative resolution instruction",
+      "decision_date": "2026-10-05",
+      "effective_date": "2026-10-05",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/authority.json",
+          "sha256": "0851af15e5dac5825abe03a94223f6f985ca99c0d9b4daef364c7c5311fe7b01",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Resolve exactly src-f7c7bd5b273def22 F/S O-02-39 (2), src-68582bc4fe41fb4f O-03-132 and src-fcbe6a7ebcf916a1 O-04-9 together using existing durable PGS research and current authoritative Council/Legistar final files, variants, actions, amendments/substitutes, enactment numbers and required exhibits/incorporated plans. Do not reopen settled PGS chapters/package. Bill metadata alone cannot prove incomplete held PDF enacted completeness; reject MatterTextMatterId mismatches. Apply background inventory dispositions only on conclusive evidence; preserve historical originals/provenance. No visitor-visible or R2 mutation. Regenerate accounting, run full validation/governance/sealed-history/Hugo/rendered and diff checks; integrate clean background work into main and synchronize planning-snapshot. No other population. Current instruction authorizes resolution of factual holds, not arbitrary editorial supersession.",
+      "required_actions": [
+        "Resolve exactly src-f7c7bd5b273def22 F/S O-02-39 (2), src-68582bc4fe41fb4f O-03-132 and src-fcbe6a7ebcf916a1 O-04-9 together using existing durable PGS research and current authoritative Council/Legistar final files, variants, actions, amendments/substitutes, enactment numbers and required exhibits/incorporated plans. Do not reopen settled PGS chapters/package. Bill metadata alone cannot prove incomplete held PDF enacted completeness; reject MatterTextMatterId mismatches. Apply background inventory dispositions only on conclusive evidence; preserve historical originals/provenance. No visitor-visible or R2 mutation. Regenerate accounting, run full validation/governance/sealed-history/Hugo/rendered and diff checks; integrate clean background work into main and synchronize planning-snapshot. No other population. Current instruction authorizes resolution of factual holds, not arbitrary editorial supersession."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded background legislative research"
+    },
+    {
+      "governance_id": "supersessions-pgs-legislative-resolution-2026-10-05",
+      "category": "active owner decision",
+      "title": "supersessions-pgs-legislative-resolution-2026-10-05",
+      "scope": {
+        "task_ids": [
+          "pgs-legislative-resolution-2026-10-05"
+        ]
+      },
+      "authority": "Explicit current user three-record PGS legislative resolution instruction",
+      "decision_date": "2026-10-05",
+      "effective_date": "2026-10-05",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/supersession.json",
+          "sha256": "02d00cf32161d70df871fe7842bc49ee7bcc552b7a7ef6e4d4620ee44ca04e53",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Only conclusive current evidence may resolve the exact three factual enacted-package holds; no settled PGS chapter/package decisions are replaced. Preserve all historical evidence.",
+      "required_actions": [
+        "Only conclusive current evidence may resolve the exact three factual enacted-package holds; no settled PGS chapter/package decisions are replaced. Preserve all historical evidence."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded background legislative research"
     }
   ]
 }

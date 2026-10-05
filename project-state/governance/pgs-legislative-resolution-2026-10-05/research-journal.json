@@ -1,0 +1,49 @@
+{
+  "recorded_at": "2026-10-05T14:02:40.864024+00:00",
+  "state": "research_complete_dispositions_not_yet_applied",
+  "population": [
+    "src-f7c7bd5b273def22",
+    "src-68582bc4fe41fb4f",
+    "src-fcbe6a7ebcf916a1"
+  ],
+  "existing_evidence_used": [
+    "project-state/discovery/planned-growth-strategy-cluster-research-2026-09-11.json",
+    "project-state/discovery/planned-growth-strategy-decision-2026-09-19.json",
+    "project-state/discovery/background-followup-2026-09-26/decisions.json",
+    "project-state/discovery/background-followup-2026-09-26/comparisons.json",
+    "project-state/discovery/human-review-reassessment-2026-09-26/family-evidence.json",
+    "project-state/discovery/codex-human-review-followup-queue.json"
+  ],
+  "critical_discovery": "The /versions endpoint maps Key to MatterTextId and Value to MatterTextVersion. Old /texts/1 etc selected unrelated global text IDs. Correct IDs 2191/3192/3419 were checked against MatterTextMatterId 1463/2609/2802. Complete final operative clauses, headers, row labels and numeric exhibit sequences agree with held PDFs and exact listed Word attachments.",
+  "accepted_final_texts": [
+    {
+      "matter_id": 1463,
+      "text_id": 2191,
+      "version": "4",
+      "enactment": "O-2002-034"
+    },
+    {
+      "matter_id": 2609,
+      "text_id": 3192,
+      "version": "2",
+      "enactment": "O-2003-047"
+    },
+    {
+      "matter_id": 2802,
+      "text_id": 3419,
+      "version": "2",
+      "enactment": "O-2004-007"
+    }
+  ],
+  "comparison": "project-state/governance/pgs-legislative-resolution-2026-10-05/comparison.json",
+  "visual_inspection": "All 14/5/5 held PDF pages and 16/6/6 prior Word render pages inspected through contact sheets. Blank converter pages in the 6-page Word renders are pagination, not omitted exhibits. Both later original PDFs contain three legible forecast tables. Referenced R-02-111 Exhibit A water/wastewater/hydrology service tier and street traffic shed maps are present on pages30-31 of the separate official 32-page resolution; page32 is blank. No need to append the PGS study to these self-contained enactments.",
+  "invalid_routes_rejected": [
+    "/texts/{version} with mismatched MatterTextMatterId, retained only in historical evidence",
+    "/texts collection GET405",
+    "LegislationDetail legacy/API IDs return Invalid parameters!",
+    "ViewReport API matter ID1463 produces empty bill header; no legislative evidence"
+  ],
+  "next_action": "Register conclusive three-record dispositions and narrow factual-hold resolution; preserve all settled study work.",
+  "r2_mutations": 0,
+  "visitor_visible_mutations": 0
+}
