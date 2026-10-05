@@ -548,6 +548,18 @@
       "exact_delta_guard": {
         "module": "PgsLegislativePublication",
         "function": "guard"
+      },
+      "end_commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0"
+    },
+    {
+      "id": "pr212-postmerge-closeout-2026-10-05",
+      "baseline_commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "regression_scripts": [
+        "scripts/project/Pr212PostMergeCloseout.py"
+      ],
+      "exact_delta_guard": {
+        "module": "Pr212PostMergeCloseout",
+        "function": "guard"
       }
     }
   ],
@@ -2253,6 +2265,851 @@
       "path": "project-state/governance/remaining-approved-review-2026-10-03/validation.log",
       "commit": "758e29120fd40b4a5a20d791c2cbc62445ddd36e",
       "sha256": "fd999ed11f07266e6c5316103b412a14497c232a50d60bd000b8ee008dfbe16c"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/after-r2.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "779699c4d5d6365ec60a8592816053123af3738e1d7c48fafac7ad1b4d2c8f19"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/archive-intent.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "193e24735028cc080e8f34d01a2bdc9ab087846c6d2d76600dbacf12b4fbbacb"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/archive-result.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "684cda298c23bacd3289dff79549bc656ad303250a90fa0d5d0e0d934de118c0"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/authority.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "2c93f7bf78727fe166fc8602949fd86713a2b467fcc94d81dcc38b690ee62c30"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/before-r2.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "38a4a4ffb9fb87b1470ffbd6315724b20507a8b64a6cb923e9c0809ecc263349"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/contract-v1.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "7a846cf22ea2d3eed323662d86890623adb31594e322a55924df71fe25a8b843"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/contract-v10.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "e50df58b90534e50d41d8cf0c59c6a95447fb8f01d87c1ae21e3000a805cea48"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/contract-v11.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "6ab252e72f0e1d26c2455ae8c449072402a41b8719285e423e86acb3a7f37e66"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/contract-v12.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "2beaf2365b7d57b0e0eed0472108c1f78b0749f4c2c2ad3cb66e564e330545c1"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/contract-v13.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "866fba85aa99dbc581167c4cc4a7dc10cbca8034d6e6f9fbb29acfe114ba44d9"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/contract-v14.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "8f2704638bac74d62aa6b06486a1603233a6de6ea527ace986e7a296ccf0870b"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/contract-v15.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "76c5ddf0cbd357e6fc7c8999a05a1c29490224c814c8b00cef5971b5e46fbbdf"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/contract-v16.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "d8d06a5d81d5ace81793c28bab0f9839e59ae276f3d46f2acc142a82c6999464"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/contract-v17.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "346c6ced5e8dc8d61fafeab631e0a29ff8485a66ea860299fd5267327afe03e0"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/contract-v18.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "3cff917717b0f198fb4f3601ea3dcaf1f2bb6e7083ba63628afa4593711e7c1d"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/contract-v19.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "e381b226c08255cf367e2f78f02080c919aa6c762c0792e7495060de9578b39b"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/contract-v2.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "c9ebc72b9c8a60ac74ef7344c0ef9f3e70a7fb09772421b799b3722c1a20dcd6"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/contract-v3.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "748bc4a431a3bff20104bda96c8b40c2fa558243d2d777a97dcdab2ad2b611ce"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/contract-v4.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "ce8d9befe8369ae1217d5ffd2bd44c2ffaea6fb50caeabaef0b10d7b4eaacecc"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/contract-v5.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "615b5bec09cf36c99fcff0c663f06691063ad640f52c8b325ae63ab7535b1a34"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/contract-v6.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "625f11c7fb44879552c0ebcf442f8881a5e0c129f870e666aa98f3e02b69f421"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/contract-v7.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "a317150fea517e4e5c04ea1dd01d0b5b8c712ccf6cb98f11981093d03e4b9a25"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/contract-v8.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "e3a0f141be05c43772bd33ed80ebde5dd0817f33d64c3c135506af17371d82d2"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/contract-v9.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "341c4d978631eb64939196488cd618e783999ecbfbfe167260787890c5d3bfea"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/implementation.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "fdfcb32a78f32a3bd19464d34a96b8bb8258dc65f71622274efc8ccbf36f9ea6"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/local-render.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "b8f0b420b3fda8b4156e20fe221b08f5bb0e987218932d3b74d1e70e0e118c56"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/phase-a-receipt.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "0b9c3fcbc0611737c94917962006bbe97aaa618103662253d782898b6ac8719b"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/phase-a-validation.log",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "7b00b0938353bc12dc70433abcd6e443fae33b19d4246390fb5eec39f4e427f3"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/population-v2.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "4b0d77af7fcb7729342259255bd073266671766cf1b819b14696603bf7eaaaed"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/population-v3.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "9aba78753d8da7ac3f246882af6a59ed976a7c6146cb556bae96ae5d8e42f212"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/population-v4.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "503add35aa0914b6f3a18e01a2933926a26975e1faedc50741dbf0c4dbdb5b15"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/population.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "d895bd27fb4ae3b689185851b20e33c82f2c8316f2af2f4786c2bbffd043b3f9"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/pr-description.md",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "6396f5b6e02c24c73a141554b857e0ea32627429e556ea1632dbc26685802dd3"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/preview.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "2b39004b2f4e47606276bce9e62bfd38fecfef420065e38417a1135aeecd367f"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/preview.png",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "9027e142014fd72dd597f2fe5256d66f89bf609ea92876bf547e4a328234e433"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/queue.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "ca0be09629c9844f0b0ae8bfcc18a3b9cb2539cb88a3ccc48c59d7240ff281f6"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/receipt.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "c29f7a64c7a75050a633f1553743cefbc39f045e21315e87091ad895e94e24d5"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/source-verification.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "9ae97a21340ea32656865359414f30661520d9a9205f02b365c9dc08695e14e1"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/supersession.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "f1b102bc363d47e40af54fbba1848df26a7d5e78aa73d8851d50293d0ebb8188"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-publication-2026-10-05/validation.log",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "2d2334e3680567a25cc17e058f69ebc22f1c93daa2795b93634ae901f368eccb"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/accounting.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "4bcd2aa16daa1a316a89b5f9d86ee42b9fb5b1a20f313912641bf191304c78e0"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/authority.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "0851af15e5dac5825abe03a94223f6f985ca99c0d9b4daef364c7c5311fe7b01"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/comparison.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "66d8c041888e6d3a5421106ebe1bc2d8e8df493296366c40a65c7082b0f667a7"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v1.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "09c36887836d9738544bf0cf14ebf466601f61147fb122edcc811832ba5fbef5"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v10.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "feb34320425520c050fc263f28922551eaf36e5bec49e1276eb18bc2d51674e8"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v11.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "8571cb8de27c9660b5aa8e5027cf4c5336bac7bc5e05b93047388a2a292e03a2"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v12.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "910b51e14b84bf15ac73bd9de099b91589bb8d1fa240dafabcc9cbdaebe1b6d7"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v13.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "79602d964e9ab0381c0d94c67746cff453b9f2defec82c94863a260439a0ebbd"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v14.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "ae3dd6faa6aea14f6c1fb826af8e0b4f744f4d86280a5f0bda694f633ec5d107"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v15.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "95f52045003de2538ea2d369d2b472f547fdc407422f9dc1c2b3f61c8c0480a9"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v16.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "fea5fc86a90c873554bbcaf8c048c401c5776c9cbce9cf25f9c11edb33a152e6"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v17.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "00cf50ad37a0a68c6612b053088ac870603c791bef9f4f610b946cfe6da361a1"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v18.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "5579d4506497305ed40a06799015ddbb8c08bfda48642edaa7022bcf8d86fea7"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v19.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "fa9152a61781d1fa39b9508faede0cc2df38f983ad33271a5c0ffd882e9e6bd6"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v2.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "d69efb6727e234304c84d47f01a24fa03f5c9c8f2d257821bc2ef5a19a546764"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v20.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "de4298c29b1d93fb849696b8bbf6da66a4f6e52450e91d6b3018350dd9abaabb"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v21.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "f7cabcf4a9497ee01dba96442371007003d889e3c42ed3f5ece33191ded6e1fa"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v22.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "6c233bb15b84c943f420ff8a8a6f4aa4db2f05c2724261441a0f2419b316dad6"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v23.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "85076c6ea84d943dc3ea338a3890245bce8bf3d316a47dd1341498a43906f0af"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v3.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "b4fba73710a369c986712e3feebaa6fae5f23dd632174ad79ba1580cd66fae56"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v4.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "5dd62fbf4583c61194e27d1168e3e0459cc20549d873491cd2f8378bfebafa79"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v5.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "5806d59f4f2f4cd948322c9abbecd74cbc935edeb0fb0eefc94f19c40f0e3162"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v6.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "a6b0e1fc577e7182072756c5c8a45c5bbb6b6cd3a27eb83d8ac0f386179b3eab"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v7.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "be7ed1b1d7afa83475f8b6e11a39694edcc08d621c419fa475145f0109f56e04"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v8.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "f6bf83aefedddc42c9ef0be959cc9b317a7eef9298d7f8c103437fd852dc5038"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/contract-v9.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "17939bb541c8cb4cf98ad320f526a21136474b13e428b3cea5d1dea63617fb0c"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/decisions.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "1850f3d7fe32d90147ca9dbcee4958ee6b0b23a3ea5622dbfccb86c115af61e5"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-1.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "ea0a94b47931903f2055394ffa023ab097d972dc4d089c0f2ec4a6c83f0cd21a"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-10.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "3a36191667f600e682379976b0666f4f9808a6e14397f0ecc92355c7947b629a"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-11.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "6246c918f1bda809aa06d3503e17517e1dc125a82c37338e4d90982a712cf8e7"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-12.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "204d35bfdc87264f6a4b1738678d3c85b1ff96d5abd16bcb53562114a3d2de82"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-13.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "17fe205a6c67e941c38a48ae9a2792ccd79205b3e7ab158c556d03574cb48b05"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-13.txt",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "97c129910883a2f0f79e9c6f7bb9ade4688fb6ac8f1e8d578caadac5e711f01d"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-14.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "2994b5e325b7b24556ab726bff2dfd1787d33badf1bd213322f6b2a324b466ea"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-14.txt",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "9fc731eee6db8fed2e4555a2f7eec7255cb02046c20319ac72670b964ac885f8"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-15.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "3664ac8d6ac303a469d4f8a6e5a09c07ec16bb7e33434b385fb1d19a253d8a5c"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-15.txt",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "669b6957c6b146af2bd2bd8f0ed6c4526564714d40e31df0e208468270095897"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-16.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "762a0e6b001c417c92d39d4604f80c26ae1c4e54c87d30116bf197891ea915d0"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-17.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "c941c53949e0a04f7261657b14886ac531597cbd2d4a9f29930f7c96eb14b77f"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-18.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "94bf9f70501da1e533983b1b5b7458d4e2903dcf56c2b93917a6637b4002298c"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-19.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "97b56dc8eba2ec366ec2a6b2c5372e806c18d446febd57496acddc8972f91a73"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-2.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "112d1bc5098b087c5ab568ba6d4d8576185998118cb6727beb599eec8e7fd7bc"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-20.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "33a7385cb404eb933ba3565bd12cf7fef0c6f10a267ed70285e660bddb489905"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-21.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "5a489509bfa7f1d479f94aaf9d39ff7e6b8c48c106ca02dc81aca0cfdd154645"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-22.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "a41108bbe8cfdc4d52d66a152fe6c3f81463b1f9196dd57c4ae8e74f3d22ba4e"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-3.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "69c730c24455df6c800771ba091e55d48aaaf944aa871da8f79bc475287571be"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-30.png",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "b0da064666c797a660e8047274c8c215bcc16924c8ce85b94d5d087baab47cf5"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-30.txt",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "97c129910883a2f0f79e9c6f7bb9ade4688fb6ac8f1e8d578caadac5e711f01d"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-31.png",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "8447c149f0dc620ace21e04765f53920366fc0e92f346170432c99f27d98eed7"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-31.txt",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "9fc731eee6db8fed2e4555a2f7eec7255cb02046c20319ac72670b964ac885f8"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-32.png",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "270dfc9ee1ec3eb4a2e946dd365895d23b6f0db3125fbc772d5f03e14f4b68df"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-32.txt",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "669b6957c6b146af2bd2bd8f0ed6c4526564714d40e31df0e208468270095897"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-33.png",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "55f455940ecce61717856fa46df34acaec0765a965118f8170ecbb5c3bd722f3"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-33.txt",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "73dbaf8a067a8dce3a7004a269ad57b33e93a63748bd7b9efaac2f157fcaf899"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-34.png",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "f1b1873fcf4d5860b09c6f3822c741c6943726329f8557002724294d71b08e91"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-34.txt",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "473f992547eeabaaaf60387fdc458672f25b4ece8fcff1cedcf522bac5f2ef4f"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-35.png",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "429331e55eab0cb1c45299b870e0fe299627ebf6bedd262a31099a24fe46c30f"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-35.txt",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "659ccb96296ff842b21f11169cca9d814d714b1dc910fb05939581f61104d91e"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-4.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "a642dfe7e923380291906e1189e8a23de2c0fed29ad8a77ff223218ee3555ecd"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-40.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "6a8f78713c113b66d55f1c61911415f9172df3778110c1f115bafb4a53615c04"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-41.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "193193732fb4f4855ef0146e9d06ca5b02863625ea570ead2fc6f32532124cf6"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-42.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "68c968fdcb8c6e96c00e7394105734d0bf19bf83abe76cfe82eb7af6b9f9211b"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-43.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "f33473abee1e455584c84a2c427271a86b4d99b136974580cc474bc09ec9711f"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-44.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "e068127b69063feefe0f7d5cf9290bfff06e96084ea137fa30dfe4655db68b2c"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-45.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "eba3c3d52ab0c3fc7e951d27095f500e7c4ac2e2fa87db299d59ae2bc850890b"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-46.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "679860057e378654885c18f69cfb0127759025e05c2953db86bfac7650c1f224"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-47.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "9bff7513b20cc8d0a91ee1dab64dd83d2abe476a22431b4f3ca11b822cd580cb"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-48.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "0b6d7f8c8f42f95f7fb386ad6104face2fb2f825c92672ba840cb266aaa5daa8"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-49.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "1b8f9929832ac4f28520fa94b1b3338ccfff43949d966600a56c1681542e097c"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-5.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "b05cb8844623f49fd35b36b44494f987891899ebe18c9c8978c8a93568936938"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-50.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "62df4494642f574732ecd430a5cc6682db023f1afb1c7b4843baa6d4721a9d08"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-51.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "c279c53da470c3007e74f6c44838f6f243039c9645afb6c25ca912ee6ef324aa"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-51.txt",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "e4a7c809af478780cb271b4cbf7b123528acf7db0a4a9a4950a23a5c075c1909"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-52.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "333a666ff77daf4cdd2d1c64801d5475c6a69732877f863182a27164c555f659"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-53.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "114a1b10e7ef5277539919bc2165910ff25f48ea4985b9cbd26901e9e7da0802"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-54.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "63839112d623c3881042cfa3a6ff2df431d3e7a877462bd1ae08f98d08c7e526"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-54.txt",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "0586cd56028ce6bfb9854a0dedcc2915e43e0b31b846304d543eba53cff65ede"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-55.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "438a5140699ae87617166f6204f535aab431248ea6ef5ea4414cefeb8deebb2c"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-56.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "e2efd8ab8f79946e65a880c9a65d3da9e588074d08677a5a29f8fec25ca2368a"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-57.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "da3e1619ef25576b711cd16db70777b8e4736696dfae5f3df374c508ae6dccb5"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-58.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "af614ae50b7baa3d235b127e00bffe6fc9c1bba2d8c022c3188b652ac146f0fc"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-59.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "f21b7bd115a001d463f51a5f8db3bdec07db60adeb435d92c67d3aa10be4b0fc"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-6.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "d901a8f211b18a2588e86b439004456adc12b3bd4e2e502145a2b5affa565837"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-60.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "5c12f31682faf5fb4ec7cea9177d2ede5e795711763776b029463ada586a2219"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-60.txt",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "36b1e89c71a8d0819f69d0e012a4b530d35228e59d83dffb2cc73674f86979e5"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-61.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "2bf4d1a0168535654c8a57040649b717c2f9a67fca97cee7588dc61c2c51139e"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-62.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "b4c2e1ea33fcbf0b39f1c0524df56d896493dce99a55de4dfd12563460648527"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-62.txt",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "ba0366a1e20f4f586d19ff7c46ceec081d840a1c8302b3e68b4c74112f42770d"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-63.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "a807bbc9d776949013f72a34c9157309a4bb2d41661d4d2d916debdc2e2ee897"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-64.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "dc903a56050d159ec15578854b412c1d66b6e33fae9160b6116bbd03388f34f4"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-65.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "0949752adefa327fb3395c5c1486f71a75b067844814f3d24a7e1034bf02de64"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-66.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "cf936a5f1e98f87ce02632c4f3a2aaf75a822efb66875585cd2fbd4092888cfb"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-67.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "2b31f06b2087e146aae8cdfa6c561f4fea636035ae8ac5f59e4bd80e6f1fffe6"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-68.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "cf4194da987d8660dc90f303dc05626fd7b4afb5e690fd28b29df0cd4b0a1ceb"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-68.txt",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "403dd722f7435d796d9a168567f886c6a00b2b4ba1e7cecad18281255b97f5b4"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-69.png",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "2e2cb76b335c291abfa34a6357111986baea7031365066753db040f10c6e905c"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-7.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "aa85e7eab0511b53b227ba7d32f3659562a0f9610689a2daa43461d8d1230d4a"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-70.png",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "d8dbe04681db97d3a7c61c4cafdeee982cb55374ed4bb9a1758b29fe9bb9b06a"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-71.png",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "48f5b9955c29536e2465a399a17d2c9b778fddb2ea8567fa810d38c9d78eaf33"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-72.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "013e1d0bc4e9901c5c0b425de846d7c65faa0cbdb35234c9803bfa4dda99bb87"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-72.png",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "cb6176cae4f770a169586ca99c74036f0b1470c2e5052fb9ccd5c064d307a410"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-73.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "9c56d3958f2ce51153a5f9f9845c28b54aa115b64d1ea3dad1882b4bfd093eb5"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-74.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "c1e725409efd2b2e882b8f9b4d07117b45ff81f2a1a0e321b5029b57427fc563"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-75.txt",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "96056f1872dcfffc200b64e2c01029ae646490b26341a8e2b07d009ab1b4f864"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-76.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "a79680d72a2f3df7b3a11cd0f77649880885daceba6af06f4a702ef5457e39ec"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-77.txt",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "cf79a31c6d62078a49ab311d00942cb6b7f681d6e2067910d728c42a6b8853e3"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-79.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "51a9038f93a99e9dd32627c87b43b1b9c2c7e3e3a5c99fa4faf53a629789df89"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-8.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "bc535eab4c68077381a64461a9598659d855c42c612f5309b4c7ce83bb2c266d"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-80.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "5b1cf3a5fad5f580d907a3ade3e07cb40d4ffce6ced0bdad7a0cd272bf892f08"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-81.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "48dc12d7a58487c74202929202779ef1c73259ae24effa6c52ec4cc36a684f84"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-82.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "be4b95fe5143f4ada73e6eda3555a35135ebf7f5dee77e821a03133b9bd5b875"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-83.txt",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "f221b1ed36546821d8d9b6bc6c80b817cb0fc574a599635363fd6903d8305c62"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-84.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "dc817360cbf075770b0cc3a7b9331f3dd0ec12187a610c3edd1f93a58cff4583"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/evidence-9.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "fff769cb0e42d428ba7a7b26f0ce2a4dbaa8b63ccb2f49acc838f8291bbb18f6"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/implementation.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "ab29bdbdd206ae241175a550773d2682dcf7243077d6238a4b6c934525636f28"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/integration-intent.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "5a8ba00ec856e39a29fb8833bca31636f963e75282e98e16afd67dfeb0e702b7"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/owner-decisions-needed.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "e103ecf836d65ff22dac173a1edb007b402977c08f85acba0798e2e2d586368f"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/population.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "2c19336c6760e78dbe8a18d3840f9c87d860deceb1417ca434f2bc2f812b264c"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/prior-records.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "815dd2d9d1f30ae2b4d188c393891ffc20734bccb36be09d845cb3d0a416f9ee"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/progress.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "4f6533840ae6c34b6e54233e1c9f0d2b3dcd3583fbaaed004d8915db4a743361"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/queue.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "3edcd5cfc0e1d762fa0ab202cc1480d830a6d3a2eea91fed26d35d32e6e2b59c"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/receipt.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "bb1ad67963ad8889b1eddf4466c8f052ae32372dcaa5cac675f21e2aeff27585"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/remote-final.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "c723ecb5576e68848dba557ceb414591c37f8e4bf5d1ea13803af89d53b6f92d"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/research-journal.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "01e58fbbecf15418428b1f56444c61b4c4a02b1540bf84e87348ad2b62a2aa16"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/starting-state.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "0d9abf0435279eb122e8ebec15efc6c41fd52c8545625109784e2cd4d6bbcdc6"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/summary.md",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "cc8c71777111c7af91e2f4c7a1117d2cd5a8f99f48801cfdaba353eb45f61c71"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/supersession.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "02d00cf32161d70df871fe7842bc49ee7bcc552b7a7ef6e4d4620ee44ca04e53"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/updates.json",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "0c4fbf4b7c833c115eab31a40da682801f3ae5e0f28eb2281780cd28afaa198a"
+    },
+    {
+      "path": "project-state/governance/pgs-legislative-resolution-2026-10-05/validation.log",
+      "commit": "7abce2bf2ff23dd6d8791917a1d9c70f4417dfc0",
+      "sha256": "a252f4a9eb4625e00bdb8b7b27e3da26813ac3a19b45d540f53340f7a0960ab7"
     }
   ],
   "completed_audits": [

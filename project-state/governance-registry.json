@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "3347df56a69cba453d6b415b4c9b50dfaf5479a67821d1f5b0adef9b4cddec85",
+  "audit_sha256": "448fc6326cc89d00da2e5bffe5a8583cb6a74f9d4e963346dd911628328880e2",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15251,7 +15251,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "a94c4cb01f121e5f18f708b86cbcad86a374657af0419fee24d376d355d6814b",
+          "sha256": "5c49b6ad04a4dd060b72cdac32ed1dd66d85f69b01ed353c345fba10909c8680",
           "binding_pointers": [
             "/implementation"
           ]
@@ -24666,7 +24666,7 @@
       "governance_id": "owner-pgs-legislative-publication-2026-10-05",
       "category": "active owner decision",
       "title": "pgs-legislative-publication-2026-10-05",
-      "state": "active",
+      "state": "superseded",
       "scope": {
         "candidate_ids": [
           "src-f7c7bd5b273def22",
@@ -24706,7 +24706,110 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "three-record authorized archival and owner-review PR"
+      "implementation_status": "three-record authorized archival and owner-review PR",
+      "superseded_by": "owner-pgs-legislative-publication-2026-10-05-postmerge-lifecycle-exception",
+      "supersession_evidence": "project-state/governance/pr212-postmerge-closeout-2026-10-05/authority.json"
+    },
+    {
+      "governance_id": "owner-pr212-postmerge-closeout-2026-10-05",
+      "category": "active owner decision",
+      "title": "owner-pr212-postmerge-closeout-2026-10-05",
+      "scope": {
+        "task_ids": [
+          "pr212-postmerge-closeout-2026-10-05"
+        ],
+        "candidate_ids": [
+          "src-f7c7bd5b273def22",
+          "src-68582bc4fe41fb4f",
+          "src-fcbe6a7ebcf916a1"
+        ],
+        "pages": [
+          "content/development-land-use/area-sector-plans.md"
+        ]
+      },
+      "authority": "Explicit current owner background PR212 post-merge instruction",
+      "decision_date": "2026-10-04",
+      "effective_date": "2026-10-04",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/pr212-postmerge-closeout-2026-10-05/authority.json",
+          "sha256": "6b9147b3b3b405298d72f75c9db8557251c64a86f594cec54bd08c4b9cfa9156",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pr212-postmerge-closeout-2026-10-05/supersession.json",
+          "sha256": "ba13ec22e709fa6f337e15e20a7aac4531cf011f5e5e64e76e9404fcf3029385",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Explicit current owner confirms manual PR212 merge and authorizes only governed background production verification and lifecycle closeout for exactly the three enacted PGS ordinance records. Verify production against the reviewed head, exact merge deployment and inspected preview: existing Citywide Growth Strategy, Enabling legislation, O-2002-034/O-2003-047/O-2004-007, all three archive and official City links, historical/non-current-law qualification, no entire-study law implication, correct anchors/layout. Reverify full public GET size/SHA for three originals and derive live R2 totals. After clean production, complete these three implemented-awaiting-review lifecycles, queue/accounting, CURRENT and active publication state. Preserve enacted research and sealed evidence. No visitor-visible edits, R2 mutations or other population. Save immutable evidence; full validation/governance/sealed-history/Hugo/rendered/CURRENT/diff checks. Integrate background-only main and synchronize planning-snapshot to exact final main. This explicitly releases the prior pending-owner-review lifecycle boundary for these three owner-merged records only.",
+      "required_actions": [
+        "Explicit current owner confirms manual PR212 merge and authorizes only governed background production verification and lifecycle closeout for exactly the three enacted PGS ordinance records. Verify production against the reviewed head, exact merge deployment and inspected preview: existing Citywide Growth Strategy, Enabling legislation, O-2002-034/O-2003-047/O-2004-007, all three archive and official City links, historical/non-current-law qualification, no entire-study law implication, correct anchors/layout. Reverify full public GET size/SHA for three originals and derive live R2 totals. After clean production, complete these three implemented-awaiting-review lifecycles, queue/accounting, CURRENT and active publication state. Preserve enacted research and sealed evidence. No visitor-visible edits, R2 mutations or other population. Save immutable evidence; full validation/governance/sealed-history/Hugo/rendered/CURRENT/diff checks. Integrate background-only main and synchronize planning-snapshot to exact final main. This explicitly releases the prior pending-owner-review lifecycle boundary for these three owner-merged records only."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded owner task"
+    },
+    {
+      "governance_id": "owner-pgs-legislative-publication-2026-10-05-postmerge-lifecycle-exception",
+      "category": "active owner decision",
+      "title": "owner-pgs-legislative-publication-2026-10-05-postmerge-lifecycle-exception",
+      "state": "active",
+      "scope": {
+        "candidate_ids": [
+          "src-f7c7bd5b273def22",
+          "src-68582bc4fe41fb4f",
+          "src-fcbe6a7ebcf916a1"
+        ],
+        "task_ids": [
+          "pgs-legislative-publication-2026-10-05"
+        ]
+      },
+      "authority": "Explicit owner PR212 post-merge publication-lifecycle exception",
+      "decision_date": "2026-10-05",
+      "effective_date": "2026-10-05",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/pgs-legislative-publication-2026-10-05/authority.json",
+          "sha256": "2c93f7bf78727fe166fc8602949fd86713a2b467fcc94d81dcc38b690ee62c30",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pgs-legislative-publication-2026-10-05/supersession.json",
+          "sha256": "f1b102bc363d47e40af54fbba1848df26a7d5e78aa73d8851d50293d0ebb8188",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pr212-postmerge-closeout-2026-10-05/authority.json",
+          "sha256": "6b9147b3b3b405298d72f75c9db8557251c64a86f594cec54bd08c4b9cfa9156",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Explicit owner instruction 2026-10-05: publish exactly src-f7c7bd5b273def22 / O-2002-034, src-68582bc4fe41fb4f / O-2003-047, src-fcbe6a7ebcf916a1 / O-2004-007. Preserve the completed governed enacted-version review; do not reopen it. This new task replaces only the prior inventory-only stage restrictions for these three records. Phase A: freshly retrieve the specified exact City originals, verify expected bytes/SHA-256, upload without overwrite/delete under development-land-use/area-sector-plans, verify complete public GET, update provenance/accounting and integrate background-only archival into main under current R2 policy. Phase B from that main: add historical Enabling legislation grouping only under existing Citywide Growth Strategy on Area & Sector Plans, one archive/source entry per distinct act; preserve differing 2003/2004 tables, clarify study is historical analysis and only specific policies were enacted. No Word/duplicate variants, R-02-111/R-2002-112 or other records. Full validation, sealed history/governance, Hugo/rendered, public downloads, CURRENT separator and diff checks; inspect exact nonproduction preview; create one content PR with three enacted identities, relationship, section, objects/bytes and section preview link. Synchronize planning-snapshot to reviewed PR head; leave PR unmerged for owner review. No authority to merge/deploy content to production. Explicit owner PR212 post-merge exception: only these three owner-merged records may become validated/passed after direct production and archive verification under owner-pr212-postmerge-closeout-2026-10-05. Prior no-merge boundary remains historical for preparation. All enacted findings, historical study distinction, original bytes, distinct tables, no new content/population and no R2 mutation remain binding.",
+      "required_actions": [
+        "Explicit owner instruction 2026-10-05: publish exactly src-f7c7bd5b273def22 / O-2002-034, src-68582bc4fe41fb4f / O-2003-047, src-fcbe6a7ebcf916a1 / O-2004-007. Preserve the completed governed enacted-version review; do not reopen it. This new task replaces only the prior inventory-only stage restrictions for these three records. Phase A: freshly retrieve the specified exact City originals, verify expected bytes/SHA-256, upload without overwrite/delete under development-land-use/area-sector-plans, verify complete public GET, update provenance/accounting and integrate background-only archival into main under current R2 policy. Phase B from that main: add historical Enabling legislation grouping only under existing Citywide Growth Strategy on Area & Sector Plans, one archive/source entry per distinct act; preserve differing 2003/2004 tables, clarify study is historical analysis and only specific policies were enacted. No Word/duplicate variants, R-02-111/R-2002-112 or other records. Full validation, sealed history/governance, Hugo/rendered, public downloads, CURRENT separator and diff checks; inspect exact nonproduction preview; create one content PR with three enacted identities, relationship, section, objects/bytes and section preview link. Synchronize planning-snapshot to reviewed PR head; leave PR unmerged for owner review. No authority to merge/deploy content to production. Explicit owner PR212 post-merge exception: only these three owner-merged records may become validated/passed after direct production and archive verification under owner-pr212-postmerge-closeout-2026-10-05. Prior no-merge boundary remains historical for preparation. All enacted findings, historical study distinction, original bytes, distinct tables, no new content/population and no R2 mutation remain binding."
+      ],
+      "prohibited_actions": [
+        "No content PR merge or production deployment."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "three-record authorized archival and owner-review PR",
+      "supersedes": "owner-pgs-legislative-publication-2026-10-05"
     }
   ]
 }

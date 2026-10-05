@@ -27,6 +27,8 @@ if ($LASTEXITCODE) { throw 'PR211 background publication closeout boundary faile
 if ($LASTEXITCODE) { throw 'Three-record PGS legislative background boundary failed.' }
 & python "$PSScriptRoot/PgsLegislativePublication.py" guard
 if ($LASTEXITCODE) { throw 'Three-record PGS publication guard failed.' }
+& python "$PSScriptRoot/Pr212PostMergeCloseout.py" guard
+if ($LASTEXITCODE) { throw 'PR212 background publication closeout boundary failed.' }
 Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }
@@ -283,6 +285,8 @@ if (Test-Path 'project-state/discovery/planning-documents-root-hugo-implementati
 
 & python "$PSScriptRoot/Test-FirstQualityRemediation.py" --rendered-root tmp/site-build
 if ($LASTEXITCODE) { throw "First quality remediation rendered validation failed." }
+& python "$PSScriptRoot/Pr212PostMergeCloseout.py" render
+if ($LASTEXITCODE) { throw 'PR212 exact reviewed/production Hugo render validation failed.' }
 $broken = @()
 & python "$PSScriptRoot/Test-OrdinaryYouthJusticePublication.py" --rendered-root tmp/site-build
 if ($LASTEXITCODE) { throw 'Youth justice family rendered publication check failed.' }

@@ -63,23 +63,25 @@ def setup():
     audit(['project-state/workflow-stage-lifecycle.json']);refresh()
     G.active_check('mutation','archive',IDS)
 def guard():
-    pop=G.load(P+'population-v4.json')
-    a={r['id']:r for r in json.loads(G.git('show',BASE+':project-state/master-inventory.json'))['candidates']};b={r['id']:r for r in G.load('project-state/master-inventory.json')['candidates']}
+    from WorkflowStageLifecycle import StageSnapshot, git
+    stage=StageSnapshot(TASK)
+    pop=stage.load_json(P+'population-v4.json')
+    a={r['id']:r for r in json.loads(G.git('show',BASE+':project-state/master-inventory.json'))['candidates']};b={r['id']:r for r in stage.load_json('project-state/master-inventory.json')['candidates']}
     assert a.keys()==b.keys() and {i for i in a if a[i]!=b[i]}<=set(IDS)
     for i in IDS:
         for field in ['source_url','direct_file_url','checksum_sha256','size_bytes','scope_assessment','quality_assessment','publication_quality_decision']:
             assert a[i].get(field)==b[i].get(field),(i,field)
         assert b[i]['processing_notes'][:len(a[i]['processing_notes'])]==a[i]['processing_notes']
     retained='project-state/discovery/retained-source-audit-queue.json'
-    prior=json.loads(G.git('show',BASE+':'+retained));current=G.load(retained)
+    prior=json.loads(G.git('show',BASE+':'+retained));current=stage.load_json(retained)
     oldrows={r['source_url']:r for r in prior['records']};newrows={r['source_url']:r for r in current['records']}
     assert all(newrows.get(k)==v for k,v in oldrows.items()), 'Existing retained-source audits changed'
     additions=set(newrows)-set(oldrows)
     assert additions <= {b[i]['source_url'] for i in IDS}
     assert all(newrows[url]['candidate_id'] in IDS for url in additions)
-    changes=G.changed_paths(BASE)
+    changes=git('diff',BASE,stage.end,'--name-only').decode().splitlines() if stage.end else G.changed_paths(BASE)
     assert set(changes)<=set(pop['artifact_paths'])|set(pop['pages']),set(changes)-set(pop['artifact_paths'])-set(pop['pages'])
-    old=G.git('show',BASE+':'+PAGE)+'\n';live=(G.ROOT/PAGE).read_text(encoding='utf8')
+    old=G.git('show',BASE+':'+PAGE)+'\n';live=stage.read_text(PAGE)
     if '### Enabling legislation\n' in live:
         start=live.index('### Enabling legislation\n');end=live.index('## Downtown Neighborhood Area',start)
         assert live[:start]+live[end:]==old,'Unrelated visible changes'
@@ -89,7 +91,7 @@ def guard():
         assert 'R-02-111' not in block and '.doc' not in block
     else:assert live==old
     if (G.ROOT/(P+'archive-result.json')).exists():
-        d=G.load(P+'archive-result.json')
+        d=stage.load_json(P+'archive-result.json')
         if d['state']=='complete':
             assert len(d['results'])==3 and d['added_bytes']==133251
             for x in d['results']:assert x['byte_identical'] and x['public_size_bytes']==x['expected_size_bytes'] and x['public_checksum_sha256']==x['expected_checksum_sha256']
