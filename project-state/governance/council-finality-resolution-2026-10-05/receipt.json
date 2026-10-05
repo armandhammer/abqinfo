@@ -1634,8 +1634,18 @@
     "blocked": 0,
     "requires human review": 0
   },
-  "state": "two_record_resolution_complete_background_integration_authorized",
+  "state": "complete",
   "integration_intent": "project-state/governance/council-finality-resolution-2026-10-05/integration-intent.json",
   "derived_extracts": "Whitespace normalization only,raw/normalized hashes preserved in evidence metadata; exact compressed original responses unchanged.",
-  "existing_legacy_r07_268_entry": "Existing archive link and text preserved. Approved-for-addition status records completed scope/quality/source review,not a new published entry or fully remediated publication validation. Source/enactment/currentness labeling remains future separately authorized content work; no genuine editorial choice is pending."
+  "existing_legacy_r07_268_entry": "Existing archive link and text preserved. Approved-for-addition status records completed scope/quality/source review,not a new published entry or fully remediated publication validation. Source/enactment/currentness labeling remains future separately authorized content work; no genuine editorial choice is pending.",
+  "integration_execution_correction": {
+    "initial_pushed_commit": "8028b7100aed80acd651bb5a5294b5f92abe02ef",
+    "initial_remote_main": "8028b7100aed80acd651bb5a5294b5f92abe02ef",
+    "initial_remote_planning_snapshot": "8028b7100aed80acd651bb5a5294b5f92abe02ef",
+    "preflight_failure": "Completed task contract cannot authorize another substantive task; freeze and resolve a new task",
+    "cause": "Task was marked complete before its already-authorized background integration. Orchestrator ran the subsequent integration command despite the failed preflight.",
+    "effect": "Explicitly authorized exact two-record background commit reached both refs; zero other record,visitor-visible or R2 changes. Final read then suffered a transient connection reset; independent retry verified both refs.",
+    "repair": "Continue only the unfinished integration of this same frozen population. Use sequential check=True commands and a successful in-progress mutation preflight before final completion metadata,commit and atomic synchronization. Preserve the failed execution honestly; no new authority or population.",
+    "repair_preflight": "Passed against same frozen population and fresh immutable contract; final commit and atomic sync use one guarded operation with checked sequential commands."
+  }
 }
