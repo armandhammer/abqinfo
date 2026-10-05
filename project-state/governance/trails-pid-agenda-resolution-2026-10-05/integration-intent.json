@@ -1,0 +1,10 @@
+{
+  "task_id": "trails-pid-agenda-resolution-2026-10-05",
+  "authorization": "Explicit current user instruction: if clean integrate background-only results into main and synchronize chatgpt/planning-snapshot; no next population.",
+  "expected_remote_main": "d63bba40f30e6c3265e86a737be0bacbdaf1b0f4",
+  "expected_remote_planning_snapshot": "d63bba40f30e6c3265e86a737be0bacbdaf1b0f4",
+  "method": "Verify both remote expected refs; fast-forward main to validated final receipt commit; set local planning-snapshot to same commit; atomic normal fast-forward push both refs; verify live refs and clean worktree.",
+  "visible_content_delta": 0,
+  "r2_delta": 0,
+  "required_validation": "Full suite passed exit0; final governance/freshness and boundary checks required after receipt updates."
+}
