@@ -267,13 +267,19 @@ def finish():
     G.active_check('mutation','governance_implementation');guard()
     f=G.ROOT/(P+'validation.log');raw=f.read_text(encoding='utf8');assert '"Hugo": "passed"' in raw and '"BrokenLinks": 0' in raw
     f.write_text('\n'.join(x.rstrip() for x in raw.splitlines())+'\n',encoding='utf8',newline='\n')
+    checkpoint=G.load('project-state/checkpoint.json')
+    checkpoint['resume_command']='PR211 background production verification and twelve-component publication closeout complete. Read CURRENT and the immutable closeout receipt. Urban3 remains a factual source/completeness hold; no new review/publication population or owner decision is pending.'
+    save('project-state/checkpoint.json',checkpoint)
     G.write_once(P+'integration-intent.json',dict(authority=P+'authority.json',expected_main=MERGE,expected_planning_snapshot=REVIEWED,strategy='Atomically fast-forward both refs to the same final background closeout commit; no visible content or R2 mutation',no_new_population=True))
     evidence=['merge-verification.json','production-verification.json','production-render.json','production.png','archive-verification.json','r2-live.json','record-updates.json','queue.json','accounting.json','validation.log']
     G.write_once(P+'receipt.json',dict(task_id=TASK,state='production_verified_publication_lifecycle_closeout_complete',merge_sha=MERGE,reviewed_head=REVIEWED,production_result='passed',section_text_links_heading_anchor_parity=True,production_url='https://abqinfo.com/'+ROUTE+'#'+ANCHOR,merge_deployment=G.load(P+'production-verification.json')['merge_deployment'],one_master=True,implemented_records=APPROVED,urban3=dict(id=IDS[-1],status='pending review',factual_blocker_unchanged=True,original_preserved=True),queue=G.load(P+'accounting.json')['queue'],r2=dict(objects=G.load(P+'archive-verification.json')['objects'],bytes=G.load(P+'archive-verification.json')['bytes'],added=0,deleted=0,overwritten=0,byte_delta=0),visitor_visible_delta=0,inventory_transitions=12,normal_validation='passed',evidence_sha256={P+x:G.file_hash(P+x) for x in evidence},integration_intent=P+'integration-intent.json',owner_action_required=False,no_new_population=True))
     f=G.ROOT/'project-state/CURRENT.md';t=f.read_text(encoding='utf8').replace('Full validation and background-only main/planning integration pending.','Full project, governance/sealed-history, Hugo/rendered, CURRENT and diff checks passed. Background-only closeout integration synchronizes main and planning-snapshot; zero visitor-visible/R2 delta. No owner action pending.').replace('governance/'+TASK+'/accounting.json','governance/'+TASK+'/receipt.json');f.write_text(t,encoding='utf8',newline='\n')
     save(P+'progress.json',dict(state='closeout_complete',remaining=[],no_new_population=True,integration_intent=P+'integration-intent.json'))
     event('background_integration','Complete production-verified background publication closeout; persist authorized atomic main/planning integration intent.',P+'integration-intent.json')
-    refresh();G.active_check('final');guard()
+    refresh();G.active_check('mutation','background_integration');G.active_check('final');guard()
+    plan=G.load(P+'implementation.json');plan['status']='complete';save(P+'implementation.json',plan)
+    active=G.load(G.ACTIVE_TASK);active['state']='complete';save(G.ACTIVE_TASK,active)
+    G.active_check('final')
 
 def guard():
     stages=G.load('project-state/workflow-stage-lifecycle.json')['stages']
@@ -287,6 +293,11 @@ def guard():
     before=json.loads(git('show',MERGE+':project-state/master-inventory.json'));after=stage.load_json('project-state/master-inventory.json')
     a={r['id']:r for r in before['candidates']};b={r['id']:r for r in after['candidates']}
     assert a.keys()==b.keys()
+    oldcp=json.loads(git('show',MERGE+':project-state/checkpoint.json'))
+    newcp=stage.load_json('project-state/checkpoint.json')
+    allowedcp={'recorded_at','completed_item_range','counts_by_status','remaining_nonterminal','resume_command','history'}
+    assert set(oldcp)==set(newcp) and all(oldcp[k]==newcp[k] for k in oldcp if k not in allowedcp),'Unrelated checkpoint metadata changed'
+    assert newcp['history'][:len(oldcp['history'])]==oldcp['history'],'Prior checkpoint history changed'
     delta={i for i in a if a[i]!=b[i]};assert delta<=set(APPROVED) and a[IDS[-1]]==b[IDS[-1]]
     for i in delta:
         assert {k for k in a[i] if a[i][k]!=b[i][k]}<={'status','validation_status','implementation_location','implementation_locations','processing_notes','updated_at'}
