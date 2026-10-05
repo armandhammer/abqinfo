@@ -1,0 +1,35 @@
+{
+  "task_id": "current-separator-regression-2026-10-04",
+  "state": "complete",
+  "baseline_commit": "d5e0a1af794030194c16ceeca5ac7048c9315191",
+  "root_cause": "Malformed separator first appears in completion commit d5e0a1a. Adjacent UTF-8 separators are intact; the transport/encoding mechanism is not conclusively established. Existing validator lacked a precise separator regression.",
+  "files_corrected": [
+    "project-state/CURRENT.md",
+    "scripts/project/Test-CurrentResumePointer.py"
+  ],
+  "regression": "Reject ) whitespace ? whitespace [label](target); self-test malformed and standard separators plus legitimate questions.",
+  "adjacent_encoding_defects": 0,
+  "queue": {
+    "approved": 12,
+    "pending": 351,
+    "governance_gated": 321,
+    "source_or_structural_blocked": 30
+  },
+  "owner_decisions": 0,
+  "visitor_visible_delta": 0,
+  "r2_delta": {
+    "objects": 0,
+    "bytes": 0
+  },
+  "inventory_delta": 0,
+  "historical_evidence_delta": 0,
+  "validation": {
+    "normal_suite": "passed",
+    "resume_regression": "passed",
+    "negative_separator_and_legitimate_question_fixtures": "passed",
+    "diff_check": "passed",
+    "log_path": "tmp\\current-separator-validation.log",
+    "log_sha256": "b02a953c80a64896de4eba8abf1828da0b99f2fe754ff9b69fe06c72d4eb1bab"
+  },
+  "integration_intent": "Current user authorizes background-only fast-forward of main and planning-snapshot from the independently verified starting ref to the completed tested commit."
+}

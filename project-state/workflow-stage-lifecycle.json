@@ -488,6 +488,18 @@
       "exact_delta_guard": {
         "module": "CentralStationAreaFamilyResolution",
         "function": "guard"
+      },
+      "end_commit": "d5e0a1af794030194c16ceeca5ac7048c9315191"
+    },
+    {
+      "id": "current-separator-regression-2026-10-04",
+      "baseline_commit": "d5e0a1af794030194c16ceeca5ac7048c9315191",
+      "regression_scripts": [
+        "scripts/project/Test-CurrentResumePointer.py"
+      ],
+      "exact_delta_guard": {
+        "module": "Test-CurrentResumePointer",
+        "function": "guard_current_delta"
       }
     }
   ],
