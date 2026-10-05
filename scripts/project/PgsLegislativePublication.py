@@ -22,7 +22,7 @@ def audit(paths):
 def refresh():
     old=list((G.ROOT/P).glob('contract-v*.json'));audit([p.relative_to(G.ROOT).as_posix() for p in old])
     n=max(int(p.stem.split('-v')[1]) for p in old)+1;path=P+f'contract-v{n}.json'
-    pop=G.load(P+'population-v3.json');c=G.resolve(pop,G.registry(),G.file_hash(G.REGISTRY));G.write_once(path,c)
+    pop=G.load(P+'population-v4.json');c=G.resolve(pop,G.registry(),G.file_hash(G.REGISTRY));G.write_once(path,c)
     assert not c['conflicts'] and not c['unresolved_gates']
     plan=G.load(P+'implementation.json') if (G.ROOT/(P+'implementation.json')).exists() else dict(artifact_type='task_implementation_plan',actions=pop['operation_classes'],events=[],status='in_progress')
     subjects={}
@@ -31,7 +31,7 @@ def refresh():
     plan.update(contract=path,contract_sha256=G.file_hash(path),population_sha256=c['population_sha256'],respected_governance_ids=c['governance_ids'],subjects=subjects)
     if (G.ROOT/(P+'receipt.json')).exists():plan['completion_evidence']={gid:[dict(path=P+'receipt.json',sha256=G.file_hash(P+'receipt.json'))] for gid in c['governance_ids']}
     save(P+'implementation.json',plan)
-    save(G.ACTIVE_TASK,dict(population=P+'population-v3.json',contract=path,contract_sha256=G.file_hash(path),implementation=P+'implementation.json',state='in_progress',supersession_proposals_path=P+'supersession.json'))
+    save(G.ACTIVE_TASK,dict(population=P+'population-v4.json',contract=path,contract_sha256=G.file_hash(path),implementation=P+'implementation.json',state='in_progress',supersession_proposals_path=P+'supersession.json'))
     print(path,len(c['governance_ids']),'rules')
 def setup():
     pop=G.load(P+'population.json')
@@ -40,6 +40,8 @@ def setup():
     pop['operation_classes'].append('family_review')  # Deterministic queue regeneration only.
     pop['artifact_paths'] += [P+'population-v3.json',P+'phase-a-validation.log',P+'preview.png',P+'local-render.json']
     G.write_once(P+'population-v3.json',pop)
+    pop['artifact_paths'] += [P+'population-v4.json','project-state/discovery/retained-source-audit-queue.json']
+    G.write_once(P+'population-v4.json',pop)
     instruction='Explicit owner instruction 2026-10-05: publish exactly src-f7c7bd5b273def22 / O-2002-034, src-68582bc4fe41fb4f / O-2003-047, src-fcbe6a7ebcf916a1 / O-2004-007. Preserve the completed governed enacted-version review; do not reopen it. This new task replaces only the prior inventory-only stage restrictions for these three records. Phase A: freshly retrieve the specified exact City originals, verify expected bytes/SHA-256, upload without overwrite/delete under development-land-use/area-sector-plans, verify complete public GET, update provenance/accounting and integrate background-only archival into main under current R2 policy. Phase B from that main: add historical Enabling legislation grouping only under existing Citywide Growth Strategy on Area & Sector Plans, one archive/source entry per distinct act; preserve differing 2003/2004 tables, clarify study is historical analysis and only specific policies were enacted. No Word/duplicate variants, R-02-111/R-2002-112 or other records. Full validation, sealed history/governance, Hugo/rendered, public downloads, CURRENT separator and diff checks; inspect exact nonproduction preview; create one content PR with three enacted identities, relationship, section, objects/bytes and section preview link. Synchronize planning-snapshot to reviewed PR head; leave PR unmerged for owner review. No authority to merge/deploy content to production.'
     G.write_once(P+'authority.json',dict(authority='Explicit current owner instruction',instruction=instruction,candidate_ids=IDS,expected_total_bytes=133251))
     r=G.registry();proposals={}
@@ -61,13 +63,20 @@ def setup():
     audit(['project-state/workflow-stage-lifecycle.json']);refresh()
     G.active_check('mutation','archive',IDS)
 def guard():
-    pop=G.load(P+'population-v3.json')
+    pop=G.load(P+'population-v4.json')
     a={r['id']:r for r in json.loads(G.git('show',BASE+':project-state/master-inventory.json'))['candidates']};b={r['id']:r for r in G.load('project-state/master-inventory.json')['candidates']}
     assert a.keys()==b.keys() and {i for i in a if a[i]!=b[i]}<=set(IDS)
     for i in IDS:
         for field in ['source_url','direct_file_url','checksum_sha256','size_bytes','scope_assessment','quality_assessment','publication_quality_decision']:
             assert a[i].get(field)==b[i].get(field),(i,field)
         assert b[i]['processing_notes'][:len(a[i]['processing_notes'])]==a[i]['processing_notes']
+    retained='project-state/discovery/retained-source-audit-queue.json'
+    prior=json.loads(G.git('show',BASE+':'+retained));current=G.load(retained)
+    oldrows={r['source_url']:r for r in prior['records']};newrows={r['source_url']:r for r in current['records']}
+    assert all(newrows.get(k)==v for k,v in oldrows.items()), 'Existing retained-source audits changed'
+    additions=set(newrows)-set(oldrows)
+    assert additions <= {b[i]['source_url'] for i in IDS}
+    assert all(newrows[url]['candidate_id'] in IDS for url in additions)
     changes=G.changed_paths(BASE)
     assert set(changes)<=set(pop['artifact_paths'])|set(pop['pages']),set(changes)-set(pop['artifact_paths'])-set(pop['pages'])
     old=G.git('show',BASE+':'+PAGE)+'\n';live=(G.ROOT/PAGE).read_text(encoding='utf8')
@@ -129,6 +138,7 @@ def queue():
 def render():
     from playwright.sync_api import sync_playwright
     url=sys.argv[2];preview='.pages.dev' in url
+    verification_only='--verification-only' in sys.argv[3:]
     with sync_playwright() as p:
         browser=p.chromium.launch(channel='chrome',headless=True,args=['--disable-gpu'])
         page=browser.new_page(viewport=dict(width=1440,height=1100))
@@ -140,12 +150,17 @@ def render():
         }''')
         assert not result['overflow']
         archives=[x['url'] for x in result['links'] if x['url'].startswith('https://files.abqinfo.com/')];assert len(archives)==16
-        pop=G.load(P+'population-v3.json')
+        pop=G.load(P+'population-v4.json')
         assert archives[-3:]==['https://files.abqinfo.com/'+x['r2_key'] for x in sorted(pop['archive_objects'],key=lambda x:IDS.index(x['candidate_id']))]
         for phrase in ['Enabling legislation','O-2002-034','O-2003-047','O-2004-007','did not make the entire study law','not current consolidated law','tables differ from the 2003 ordinance']:assert phrase in result['text'],phrase
         page.locator('#enabling-legislation').evaluate('(h) => h.scrollIntoView(true)')
-        screenshot=G.ROOT/(P+'preview.png' if preview else 'tmp/pgs-local.png');page.screenshot(path=str(screenshot),full_page=False)
+        screenshot=G.ROOT/('tmp/pgs-final-head-preview.png' if verification_only else P+'preview.png' if preview else 'tmp/pgs-local.png');page.screenshot(path=str(screenshot),full_page=False)
         result.update(url=url,head_sha=G.git('rev-parse','HEAD'),rendered_at=now(),browser='Installed Google Chrome via Playwright',screenshot_sha256=hashlib.sha256(screenshot.read_bytes()).hexdigest())
-        save(P+('preview.json' if preview else 'local-render.json'),result);browser.close()
+        if verification_only:
+            original=G.load(P+'preview.json');assert result['text']==original['text']
+            normalize=lambda links:[x for x in links if x['text']!='#']
+            assert normalize(result['links'])==normalize(original['links']), 'Final-head section differs from inspected preview'
+            result['identical_to_inspected_preview']=True
+        save('tmp/pgs-final-head-preview.json' if verification_only else P+('preview.json' if preview else 'local-render.json'),result);browser.close()
         print(json.dumps(result,ensure_ascii=False))
 if __name__=='__main__':{'setup':setup,'refresh':refresh,'guard':guard,'implement':implement,'queue':queue,'render':render}[sys.argv[1] if len(sys.argv)>1 else 'guard']()

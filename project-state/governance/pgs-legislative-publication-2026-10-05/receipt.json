@@ -1,5 +1,5 @@
 {
-  "state": "content_implemented_full_validation_and_preview_pending",
+  "state": "complete_unmerged_owner_review",
   "phase_a_commit": "1952598f1bdd74af001c80d014b7742440a7c361",
   "phase_a": "project-state/governance/pgs-legislative-publication-2026-10-05/phase-a-receipt.json",
   "page": "content/development-land-use/area-sector-plans.md",
@@ -13,5 +13,68 @@
   "pending_count": 348,
   "implemented_awaiting_owner_review": 3,
   "browser_fallback_authority": "Current user reply: Use Chrome through Playwright",
-  "remaining": "Full content validation; exact Cloudflare nonproduction rendered inspection; one unmerged PR; planning-snapshot synchronization."
+  "remaining": "Manual owner PR review only; no merge or production deployment authority.",
+  "preview": "project-state/governance/pgs-legislative-publication-2026-10-05/preview.json",
+  "preview_visual_inspection": "Installed Chrome screenshot inspected: three historical ordinance entries, complete descriptions, official-source pairs and historical caveat; no clipping or horizontal overflow.",
+  "public_download_reverification": [
+    {
+      "public_url": "https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-pgs-ordinance-o-2002-034.pdf",
+      "size_bytes": 83406,
+      "checksum_sha256": "bd735ae50447b5b62dccff112e50ad6e8e9d4021b217987112e91f9085d0a138",
+      "byte_identical": true,
+      "verified_at": "2026-10-05T16:42:41.2405729Z"
+    },
+    {
+      "public_url": "https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-pgs-ordinance-o-2003-047.pdf",
+      "size_bytes": 25029,
+      "checksum_sha256": "ece75a9eb9af3db5fb837a407eae1eafeeb9f032cb1f22b65d2ad188482e80f0",
+      "byte_identical": true,
+      "verified_at": "2026-10-05T16:42:41.4018515Z"
+    },
+    {
+      "public_url": "https://files.abqinfo.com/development-land-use/area-sector-plans/cabq-pgs-ordinance-o-2004-007.pdf",
+      "size_bytes": 24816,
+      "checksum_sha256": "d20947b7c3ff6e9ef02896915b29fd23cd63493660bedfdadee9a0bbeae68d4a",
+      "byte_identical": true,
+      "verified_at": "2026-10-05T16:42:41.5448916Z"
+    }
+  ],
+  "retained_source_queue_delta": {
+    "added_ids": [
+      "src-f7c7bd5b273def22",
+      "src-68582bc4fe41fb4f",
+      "src-fcbe6a7ebcf916a1"
+    ],
+    "prior_records_preserved": 652,
+    "resulting_records": 655,
+    "research_reopened": false
+  },
+  "pr": {
+    "number": 212,
+    "url": "https://github.com/armandhammer/abqinfo/pull/212",
+    "state": "OPEN",
+    "merged_at": null,
+    "base_commit": "1952598f1bdd74af001c80d014b7742440a7c361"
+  },
+  "reviewed_visible_content_commit": "e385e61353263be62bb61c355cf639b6e48734df",
+  "visible_content_tree": "eaa6ca7b106604b4d27f41330c8c42c0283d05a9",
+  "full_validation": {
+    "result": "passed",
+    "log": "project-state/governance/pgs-legislative-publication-2026-10-05/validation.log",
+    "log_sha256": "2d2334e3680567a25cc17e058f69ebc22f1c93daa2795b93634ae901f368eccb",
+    "contract_at_run": "project-state/governance/pgs-legislative-publication-2026-10-05/contract-v17.json",
+    "governance_and_sealed_history": "48 continuous stages / 340 unchanged protected historical evidence files",
+    "hugo": "passed",
+    "rendered_local_and_cloudflare": "passed",
+    "public_gets": "three exact size/SHA-256 matches",
+    "CURRENT_separator": "passed",
+    "git_diff_check": "passed"
+  },
+  "archive_delta": {
+    "objects": 3,
+    "bytes": 133251,
+    "total_objects": 1615,
+    "total_bytes": 10971399848
+  },
+  "final_head_verification": "After pushing this receipt commit, inspect its successful exact Cloudflare deployment in verification-only mode and compare the complete section text/links to the saved inspected preview. Final self-referential SHA and remote ref receipts are saved in tmp/pgs-final-head-preview.json and tmp/pgs-final-refs.json; GitHub PR carries final preview URL. No tracked receipt changes after final-head inspection."
 }
