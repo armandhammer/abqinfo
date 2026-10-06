@@ -172,6 +172,8 @@ City bicycle planning documents and master plans, including current and previous
 
 ## Related Bicycle Policy
 
-- [City Council Resolution R-07-268: Bike Boulevards (2007)](https://files.abqinfo.com/transportation/transportation-plans/2007-city-council-bike-boulevards-resolution-r-07-268.pdf)
+- [F/S R-07-268 — Bike Boulevards (enacted R-2007-109, 2007)](https://files.abqinfo.com/transportation/transportation-plans/2007-city-council-bike-boulevards-resolution-r-07-268.pdf)
 
-  Designates Mountain Road, Silver Avenue, and 14th Street bike-boulevard routes; appropriates up to $400,000 for design, engineering, and initial implementation; and directs amendments to the Comprehensive Bikeway Facilities Plan.
+  Historical 2007 legislation designating Mountain Road, Silver Avenue, and 14th Street bike-boulevard routes; phased Silver Avenue implementation; up to $400,000 in Fund 340 funding for design, engineering, and initial implementation; bikeway-plan amendments and crossing coordination; and the final-version 18 mph provision. Not necessarily current consolidated law.
+
+  [Official final resolution PDF](https://cabq.legistar.com/View.ashx?M=F&ID=2251934&GUID=25B290B6-947B-41B3-8FAC-65F38096438D&G=A2669236-9D0F-4237-9E85-3CE42553BDA5) · [Official legislative record](https://cabq.legistar.com/LegislationDetail.aspx?ID=1261053&GUID=BA4A0E2F-3800-45E0-BBEC-F3FEC4772EE5&G=A2669236-9D0F-4237-9E85-3CE42553BDA5)
