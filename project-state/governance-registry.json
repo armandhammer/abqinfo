@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "700c115e388199a330969f1fcfe2da9320529f280ece49cc8c562e570ad95040",
+  "audit_sha256": "b8e8406d68863c928f87969dcb3f117fb43ca420146e8a5d3316d7365a353af8",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15251,7 +15251,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "e9f9653d124b73789221ff14664d08349933fbedcb5a66cc90d1f3e67512123e",
+          "sha256": "5d05322e43a06650096d8a9e31e4e3628f12cf732ee70b1a046b544f0f949a44",
           "binding_pointers": [
             "/implementation"
           ]
@@ -25067,7 +25067,7 @@
       "governance_id": "owner-bike-boulevard-lifecycle-correction-2026-10-05",
       "category": "active owner decision",
       "title": "bike-boulevard-lifecycle-correction-2026-10-05",
-      "state": "active",
+      "state": "superseded",
       "scope": {
         "candidate_ids": [
           "src-4cb190564a688d42"
@@ -25101,6 +25101,147 @@
       ],
       "prohibited_actions": [
         "No R2 change, companion-map publication, unrelated content edit, PR merge or production deployment."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "superseded_by": "owner-bike-boulevard-lifecycle-correction-2026-10-05-postmerge-lifecycle-authorized",
+      "supersession_evidence": "project-state/governance/pr213-postmerge-closeout-2026-10-06/supersession.json"
+    },
+    {
+      "governance_id": "owner-pr213-postmerge-closeout-2026-10-06",
+      "category": "active owner decision",
+      "title": "pr213-postmerge-closeout-2026-10-06",
+      "state": "superseded",
+      "scope": {
+        "candidate_ids": [
+          "src-4cb190564a688d42"
+        ],
+        "task_ids": [
+          "pr213-postmerge-closeout-2026-10-06"
+        ]
+      },
+      "authority": "Explicit current owner instruction",
+      "decision_date": "2026-10-06",
+      "effective_date": "2026-10-06",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/authority.json",
+          "sha256": "9a8d625fbcda71b03079ee44c68252b81c84d1026164c19adb1463abc80796ad",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Explicit current owner instruction: verify PR213 owner merge from authoritative remote, compare exact reviewed/merged content, independently inspect PRODUCTION Bike Plans / Related Bicycle Policy with approved browser tooling, then and only then perform separately governed background closeout/reconciliation. Preserve Council finality and PR review evidence, exact one record, queue counts and all visitor-visible/R2/source bytes. No new editorial work or population. If production cannot be conclusively verified, record incomplete verification and stop without falsely completing closeout. This initial frozen population authorizes only incomplete-state evidence; no integration, lifecycle completion or branch synchronization.",
+      "required_actions": [
+        "Explicit current owner instruction: verify PR213 owner merge from authoritative remote, compare exact reviewed/merged content, independently inspect PRODUCTION Bike Plans / Related Bicycle Policy with approved browser tooling, then and only then perform separately governed background closeout/reconciliation. Preserve Council finality and PR review evidence, exact one record, queue counts and all visitor-visible/R2/source bytes. No new editorial work or population. If production cannot be conclusively verified, record incomplete verification and stop without falsely completing closeout. This initial frozen population authorizes only incomplete-state evidence; no integration, lifecycle completion or branch synchronization."
+      ],
+      "prohibited_actions": [
+        "No closeout completion or remote reconciliation before conclusively verified rendered production.",
+        "No visitor-visible, inventory, R2, source or unrelated record change."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "superseded_by": "owner-pr213-postmerge-closeout-2026-10-06-postmerge-lifecycle-authorized",
+      "supersession_evidence": "project-state/governance/pr213-postmerge-closeout-2026-10-06/supersession.json"
+    },
+    {
+      "governance_id": "owner-bike-boulevard-lifecycle-correction-2026-10-05-postmerge-lifecycle-authorized",
+      "category": "active owner decision",
+      "title": "bike-boulevard-lifecycle-correction-2026-10-05",
+      "state": "active",
+      "scope": {
+        "candidate_ids": [
+          "src-4cb190564a688d42"
+        ],
+        "task_ids": [
+          "bike-boulevard-lifecycle-correction-2026-10-05"
+        ]
+      },
+      "authority": "Explicit current owner post-merge lifecycle and browser authorization",
+      "decision_date": "2026-10-05",
+      "effective_date": "2026-10-06",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/bike-boulevard-lifecycle-correction-2026-10-05/authority.json",
+          "sha256": "81209f605dd7652fb049af56a5e18693f741186efc57dfbdff786b050a7ea5c3",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/bike-boulevard-lifecycle-correction-2026-10-05/supersession.json",
+          "sha256": "10316b67984e096fc39ba8c66944faf1b646a7702f07fe76d499a4567cec8d41",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/execution-authority.json",
+          "sha256": "0affda186b5a4e89ef0fdd1b53954de7ce7ef24b4bfbdad3870f7b6372662ca3",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Explicit owner instruction: Resolve exactly src-4cb190564a688d42. Preserve the completed Council finality review. Correct existing visitor-visible Related Bicycle Policy entry in content/transportation/bicycling/bike-plans.md in place, not a duplicate. Identify F/S R-07-268, enacted R-2007-109, historical 2007 legislation not necessarily current consolidated law, Mountain Road/Silver Avenue/14th Street routes, phased implementation, up to $400,000 Fund 340 funding, bikeway-plan/crossing coordination and final-version 18 mph provision. Keep existing R2 PDF, use verified official final source, do not publish companion map as required enactment exhibit. Freeze/govern exact record; no R2 or unrelated content edits. Full validation, Cloudflare preview, one unmerged visitor-visible PR against main, planning-snapshot exactly at PR head. No merge or production deployment authority. Explicit current owner exception in project-state/governance/pr213-postmerge-closeout-2026-10-06/execution-authority.json supersedes only the initial pending-evidence/browser restriction and former open-PR/PR-head synchronization boundary for src-4cb190564a688d42. After conclusively verified production, exact one-record validated lifecycle and background-only main/planning reconciliation are authorized. Preserve all finality, source, original bytes, separate-map and historical-content findings. No new editorial, visitor-visible, R2 or other-record changes.",
+      "required_actions": [
+        "Explicit owner instruction: Resolve exactly src-4cb190564a688d42. Preserve the completed Council finality review. Correct existing visitor-visible Related Bicycle Policy entry in content/transportation/bicycling/bike-plans.md in place, not a duplicate. Identify F/S R-07-268, enacted R-2007-109, historical 2007 legislation not necessarily current consolidated law, Mountain Road/Silver Avenue/14th Street routes, phased implementation, up to $400,000 Fund 340 funding, bikeway-plan/crossing coordination and final-version 18 mph provision. Keep existing R2 PDF, use verified official final source, do not publish companion map as required enactment exhibit. Freeze/govern exact record; no R2 or unrelated content edits. Full validation, Cloudflare preview, one unmerged visitor-visible PR against main, planning-snapshot exactly at PR head. No merge or production deployment authority. Explicit current owner exception in project-state/governance/pr213-postmerge-closeout-2026-10-06/execution-authority.json supersedes only the initial pending-evidence/browser restriction and former open-PR/PR-head synchronization boundary for src-4cb190564a688d42. After conclusively verified production, exact one-record validated lifecycle and background-only main/planning reconciliation are authorized. Preserve all finality, source, original bytes, separate-map and historical-content findings. No new editorial, visitor-visible, R2 or other-record changes."
+      ],
+      "prohibited_actions": [
+        "No visitor-visible, source/archive, R2 or unrelated record change. No integration before conclusive production verification."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": []
+    },
+    {
+      "governance_id": "owner-pr213-postmerge-closeout-2026-10-06-postmerge-lifecycle-authorized",
+      "category": "active owner decision",
+      "title": "pr213-postmerge-closeout-2026-10-06",
+      "state": "active",
+      "scope": {
+        "candidate_ids": [
+          "src-4cb190564a688d42"
+        ],
+        "task_ids": [
+          "pr213-postmerge-closeout-2026-10-06"
+        ]
+      },
+      "authority": "Explicit current owner post-merge lifecycle and browser authorization",
+      "decision_date": "2026-10-06",
+      "effective_date": "2026-10-06",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/authority.json",
+          "sha256": "9a8d625fbcda71b03079ee44c68252b81c84d1026164c19adb1463abc80796ad",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/execution-authority.json",
+          "sha256": "0affda186b5a4e89ef0fdd1b53954de7ce7ef24b4bfbdad3870f7b6372662ca3",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/supersession.json",
+          "sha256": "1cc62199394244de5e0919a68b7fbfe0aedb3204b855a0826f167e1d6c0caaa7",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Explicit current owner instruction: verify PR213 owner merge from authoritative remote, compare exact reviewed/merged content, independently inspect PRODUCTION Bike Plans / Related Bicycle Policy with approved browser tooling, then and only then perform separately governed background closeout/reconciliation. Preserve Council finality and PR review evidence, exact one record, queue counts and all visitor-visible/R2/source bytes. No new editorial work or population. If production cannot be conclusively verified, record incomplete verification and stop without falsely completing closeout. This initial frozen population authorizes only incomplete-state evidence; no integration, lifecycle completion or branch synchronization. Explicit current owner exception in project-state/governance/pr213-postmerge-closeout-2026-10-06/execution-authority.json supersedes only the initial pending-evidence/browser restriction and former open-PR/PR-head synchronization boundary for src-4cb190564a688d42. After conclusively verified production, exact one-record validated lifecycle and background-only main/planning reconciliation are authorized. Preserve all finality, source, original bytes, separate-map and historical-content findings. No new editorial, visitor-visible, R2 or other-record changes.",
+      "required_actions": [
+        "Explicit current owner instruction: verify PR213 owner merge from authoritative remote, compare exact reviewed/merged content, independently inspect PRODUCTION Bike Plans / Related Bicycle Policy with approved browser tooling, then and only then perform separately governed background closeout/reconciliation. Preserve Council finality and PR review evidence, exact one record, queue counts and all visitor-visible/R2/source bytes. No new editorial work or population. If production cannot be conclusively verified, record incomplete verification and stop without falsely completing closeout. This initial frozen population authorizes only incomplete-state evidence; no integration, lifecycle completion or branch synchronization. Explicit current owner exception in project-state/governance/pr213-postmerge-closeout-2026-10-06/execution-authority.json supersedes only the initial pending-evidence/browser restriction and former open-PR/PR-head synchronization boundary for src-4cb190564a688d42. After conclusively verified production, exact one-record validated lifecycle and background-only main/planning reconciliation are authorized. Preserve all finality, source, original bytes, separate-map and historical-content findings. No new editorial, visitor-visible, R2 or other-record changes."
+      ],
+      "prohibited_actions": [
+        "No visitor-visible, source/archive, R2 or unrelated record change. No integration before conclusive production verification."
       ],
       "constraints": [],
       "settled_decisions": [],

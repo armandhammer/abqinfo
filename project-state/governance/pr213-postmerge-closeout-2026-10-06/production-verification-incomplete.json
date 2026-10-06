@@ -1,0 +1,49 @@
+{
+  "task_id": "pr213-postmerge-closeout-2026-10-06",
+  "state": "incomplete_browser_unavailable",
+  "production_url": "https://abqinfo.com/transportation/bicycling/bike-plans/#related-bicycle-policy",
+  "merged_verified": true,
+  "merge_commit": "3b0aa243e29d5d8c6ae1c91fce92b7eb35f9f555",
+  "reviewed_head": "6b6fad42764e248fb2f7eb328443c4665a008f87",
+  "merged_content_exact_reviewed_tree": true,
+  "cloudflare_merge_check": "success",
+  "browser_attempts": [
+    {
+      "action": "createBrowserTab iab",
+      "result": "Browser is not available: iab"
+    },
+    {
+      "action": "getState",
+      "result": {
+        "apps": [],
+        "browsers": []
+      }
+    },
+    {
+      "action": "createBrowserTab chrome",
+      "result": "Browser is not available: chrome"
+    }
+  ],
+  "rendered_production_verified": false,
+  "closeout_complete": false,
+  "integration_authorized_by_this_pending_population": false,
+  "remote_refs_changed": false,
+  "visitor_visible_delta": 0,
+  "inventory_delta": 0,
+  "r2_delta": 0,
+  "owner_editorial_decision_required": false,
+  "blocking_prerequisite": "Connected browser unavailable. Computer-use runtime disallows alternate computer interaction technology unless specifically requested by user.",
+  "remaining": [
+    "Approved rendered production inspection",
+    "Conclusive preview/merge/production parity",
+    "Separate completed closeout population/contract, durable lifecycle reconciliation and full validation",
+    "Authorized final main/planning synchronization"
+  ],
+  "queue_counts": {
+    "approved": 0,
+    "pending": 340,
+    "governance_gated": 321,
+    "source_structural_blocked": 19,
+    "human_review": 0
+  }
+}
