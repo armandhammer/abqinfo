@@ -30,7 +30,7 @@
     "source_structural_blocked": 19,
     "human_review": 0
   },
-  "validation": "pending",
+  "validation": "passed",
   "preview": "pending",
   "pr_state": "owner_review_pending_unmerged",
   "governance_accounting": {
@@ -564,5 +564,14 @@
     "status": "crawled",
     "existing_completed_review": "project-state/governance/council-finality-resolution-2026-10-05/receipt.json",
     "prior_records_unchanged": true
-  }
+  },
+  "validation_log": "project-state/governance/bike-boulevard-lifecycle-correction-2026-10-05/validation.log",
+  "validation_log_sha256": "f8edf5e485b403a0a9627eb2f406aeb611c876e40650b87f02285c9af385848e",
+  "validation_attempts": [
+    "Initial run stopped at missing required historical CURRENT links; restored links.",
+    "Second run stopped at description length and missing official final URL; corrected both and focused inventory check passed.",
+    "Third run stopped at newly eligible retained-source root missing from audit queue; registered prior completed review and preserved all old rows.",
+    "Final full suite rerun passed after corrections."
+  ],
+  "sealed_history": "52 contiguous stage intervals; all protected historical evidence unchanged"
 }
