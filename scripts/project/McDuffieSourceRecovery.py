@@ -204,4 +204,48 @@ def regenerate():
     save(P+'progress.json',dict(state='validation_retry_after_derived_queue_regeneration',remaining=['full normal validation','background integration'],initial_validation_issue='Consolidated human-review queue inventory hash stale; deterministic regeneration applied, unresolved cases remain zero.'))
     refresh();G.active_check('final');guard()
 
+def finish():
+    log=(G.ROOT/'tmp/mcduffie-validation.log').read_text(encoding='utf8')
+    assert '"Hugo": "passed"' in log and 'CURRENT.md resume-pointer regression passed.' in log
+    assert 'contiguous stage intervals' in log and 'unchanged historical evidence files' in log
+    assert 'Traceback (most recent call last)' not in log
+    (G.ROOT/(P+'validation.log')).write_text('\n'.join(line.expandtabs(4).rstrip() for line in log.splitlines())+'\n',encoding='utf8',newline='\n')
+    page=G.ROOT/'tmp/site-build/transportation/roadway-projects/studies/index.html';html=page.read_text(encoding='utf8')
+    assert 'cabq-mcduffie-twin-parks-traffic-calming-public-meeting-2-2023.pdf' in html
+    assert 'cf8779d97e34c92c' not in html and 'mcduffie-source-recovery-2026-10-06/download.pdf' not in html
+    save(P+'rendered-check.json',dict(result='passed',hugo_rendered_page=str(page.relative_to(G.ROOT)),sha256=hashlib.sha256(page.read_bytes()).hexdigest(),existing_2023_public_meeting_entry_preserved=True,final_report_not_added=True,unchanged_full_visitor_visible_tree=True,source_and_historical_rendered_checks='Full normal project suite passed; no live publication task.'))
+    c=G.load(G.load(G.ACTIVE_TASK)['contract']);r=G.load(P+'receipt.json')
+    r.update(state='factual_recovery_complete_validation_passed',research_checkpoint_commit=G.git('rev-parse','HEAD'),normal_validation='passed',validation_log=P+'validation.log',rendered_checks=P+'rendered-check.json',initial_validation_issue='Derived empty consolidated human-review queue stale after inventory hash changed; regenerated deterministically, then complete normal suite passed.',background_integration='authorized atomic synchronization of final commit; independently verify remote refs after push',integration_intent=P+'integration-intent.json',governance_accounting={row['governance_id']:dict(requirement=row['binding_requirement'],implementation='Exact factual one-record source recovery under current owner authority; complete registry resolved, fresh contract at mutation points, original evidence and settled unrelated decisions preserved. No eligibility/quality/publication approval, campaign, owner question, R2 or visitor-visible change inferred. Former factual inability resolved by exact current public download, not by historical recommendation.',evidence=[P+'retrieval.json',P+'accounting.json',P+'validation.log'],controlling_artifacts_preserved=row['controlling_artifacts']) for row in c['resolved_rules']})
+    save(P+'receipt.json',r)
+    save(P+'integration-intent.json',dict(authority='owner-'+TASK,candidate_ids=[ID],remote_baseline=dict(main=BASE,planning_snapshot=BASE),operation='Fast-forward-only atomic push of final background commit to main and chatgpt/planning-snapshot, after independent remote ref and fresh governance verification.',prohibited=['visitor-visible changes','R2 effects','unrelated record changes','new population'],validation='Complete normal project suite passed',r2_delta=0,visitor_visible_delta=0))
+    current=G.ROOT/'project-state/CURRENT.md';s=current.read_text(encoding='utf8').replace('Full validation/background integration pending.','Full normal validation passed (governance, sealed history, Hugo/rendered, CURRENT/checkpoint and diff checks). Final background commit synchronizes main/planning-snapshot.')
+    assert len(s)<=1800;current.write_text(s,encoding='utf8',newline='\n')
+    save(P+'progress.json',dict(state='complete_integration_ready',remaining=['guarded atomic remote synchronization'],owner_decision_required=False,next_population_started=False))
+    event('background_integration','Complete normal validation passed after deterministic derived-queue regeneration; background-only integration authorized by current registered owner instruction.',P+'integration-intent.json')
+    refresh();G.active_check('final');guard()
+
+def integrate():
+    refs=subprocess.check_output(['git','ls-remote','origin','refs/heads/main','refs/heads/chatgpt/planning-snapshot'],encoding='utf8').splitlines()
+    assert {line.split()[1]:line.split()[0] for line in refs}=={'refs/heads/main':BASE,'refs/heads/chatgpt/planning-snapshot':BASE}
+    assert G.load(P+'receipt.json')['normal_validation']=='passed'
+    G.active_check('mutation','background_integration',[ID]);guard()
+    save(P+'progress.json',dict(state='complete',remaining=[],owner_decision_required=False,next_population_started=False,integration='Final commit carrying this receipt is synchronized atomically to main/planning-snapshot; concrete remote refs independently verified after push.'))
+    refresh();G.active_check('mutation','background_integration',[ID])
+    plan=G.load(P+'implementation.json');plan['status']='complete';save(P+'implementation.json',plan)
+    active=G.load(G.ACTIVE_TASK);active['state']='complete';save(G.ACTIVE_TASK,active)
+    G.active_check('final');guard()
+    paths=[p for p in G.changed_paths(BASE) if not p.startswith('backups/')]
+    subprocess.run(['git','add','--',*paths],check=True)
+    subprocess.run(['git','diff','--cached','--check'],check=True)
+    subprocess.run(['git','commit','-m','Validate and integrate McDuffie factual source recovery'],check=True)
+    subprocess.run(['git','push','--atomic','origin','HEAD:main','HEAD:chatgpt/planning-snapshot'],check=True)
+    head=G.git('rev-parse','HEAD')
+    subprocess.run(['git','branch','-f','chatgpt/planning-snapshot',head],check=True)
+    final=subprocess.check_output(['git','ls-remote','origin','refs/heads/main','refs/heads/chatgpt/planning-snapshot'],encoding='utf8').splitlines()
+    assert len(final)==2 and all(line.split()[0]==head for line in final)
+    assert not G.git('status','--porcelain')
+    assert hashlib.sha256(git('show',head+':'+P+'download.pdf')).hexdigest()=='48b6d8d5f91290f55a56b22398aa754e5696378e69e0693ecc9914cd285fee15'
+    save('tmp/mcduffie-final-refs.json',dict(main=head,planning_snapshot=head,remote_refs=final,verified_at=now(),clean_worktree=True,committed_original_pdf_hash_verified=True,validation='passed'))
+    print('Final main/planning-snapshot:',head)
+
 if __name__=='__main__':globals()[sys.argv[1]]()
