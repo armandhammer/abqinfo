@@ -1,7 +1,7 @@
 {
   "artifact_type": "task_implementation_plan",
-  "contract": "project-state/governance/pr213-postmerge-closeout-2026-10-06/contract-v14.json",
-  "contract_sha256": "0b21942e50066d0666bebd8600fa9a12e657d99e5141aa18d523a0e3312d7af0",
+  "contract": "project-state/governance/pr213-postmerge-closeout-2026-10-06/contract-v16.json",
+  "contract_sha256": "3665739329f6b69afeb652b18f1002bf162c5d7d6a44b95ef18c8b2f73e52b49",
   "population_sha256": "5ea07c7d35703177dab03830fa759083b072fd3cc634cb968c8bec16c9ef4913",
   "respected_governance_ids": [
     "authorization-profile-ordinary-review-large",
@@ -94,266 +94,286 @@
       "use_contract_record_rules": true,
       "summary": "Conclusive production permits exactly one implemented-to-validated lifecycle; preserved review fields and original notes, regenerated counts/queues and removed stale open-PR state.",
       "evidence": "project-state/governance/pr213-postmerge-closeout-2026-10-06/accounting.json"
+    },
+    {
+      "operation": "background_integration",
+      "candidate_ids": [
+        "src-4cb190564a688d42"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "Full validation passed; production-verified closeout ready for guarded atomic main/planning synchronization.",
+      "evidence": "project-state/governance/pr213-postmerge-closeout-2026-10-06/integration-intent.json"
+    },
+    {
+      "operation": "background_integration",
+      "candidate_ids": [
+        "src-4cb190564a688d42"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "Initial integration preflight failed while final checkpoint/receipt audit refresh was still running; operation stopped before any ref or integration mutation. Final refresh completed, CURRENT/diff checks passed, and retry proceeds only after fresh sequential preflight.",
+      "evidence": "project-state/governance/pr213-postmerge-closeout-2026-10-06/contract-v15.json"
     }
   ],
-  "status": "in_progress",
+  "status": "complete",
   "completion_evidence": {
     "authorization-profile-ordinary-review-large": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-archive-recovery-53d2a462": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-bernco-retained-transportation-decisions-2026-08-20-5516c240": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-cabq-legistar-transportation-priority-200-2006-2019-audit-d71cfa97": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-contributed-document-decisions-2026-08-14-49ed9027": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-contributed-document-review-2026-08-14-ce37b460": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-council-closeout-status-2026-09-20-4dfd8e30": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-council-finality-resolution-2026-10-05-existing-entry-correction-authorized": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-decisions-2c491c71-remaining-thirteen-exception": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-decisions-b8452592-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-eight-batch-decisions-2026-08-14-01fe2287": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-historical-local-planning-decisions-8f6724d4": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-inventory-overrides-09e22b5f": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-next-ordinary-queue-b8bb5c70-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-nmdot-system-plans-decisions-2026-08-20-bff9343c": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-ordinary-second-large-campaign-city-review-decisions-2026-09-26-0400a931": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-ordinary-second-large-campaign-regional-review-decisions-2026-09--4b095e53": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-retained-source-expansion-15-decisions-2026-08-28-85d0a33a": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-retained-source-expansion-19-decisions-2026-08-29-5f062098": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-review-decisions-05dc8063": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-scoped-source-review-2026-08-04-33554a9c": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "decision-unm-cnm-focused-source-scope-1673e3f6": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "owner-bike-boulevard-lifecycle-correction-2026-10-05-postmerge-lifecycle-authorized": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "owner-council-finality-resolution-2026-10-05-existing-entry-correction-authorized": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "owner-pr213-postmerge-closeout-2026-10-06-postmerge-lifecycle-authorized": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "policy-agents": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "policy-durable-task-governance": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "policy-mission-scope": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "policy-mission-scope-legacy": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "policy-project-recency": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "policy-project-state": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "policy-publication-quality": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "policy-quality-exclusions": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "policy-r2-storage": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "policy-source-priorities": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "policy-tip-stip-retention": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "workflow-autonomous-verification": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "workflow-background-campaign": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "workflow-handoff-retirement": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "workflow-parallel-verification": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ],
     "workflow-stage-lifecycle": [
       {
-        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/production-verification.json",
-        "sha256": "01731d7f6703f2e4eb693b384c45508e038a41a88bbecbaffb1998bc24ccd2c9"
+        "path": "project-state/governance/pr213-postmerge-closeout-2026-10-06/receipt.json",
+        "sha256": "f37be3d9011301eedf027e695373593f149098101b017bfb5c2e70423052f39b"
       }
     ]
   }
