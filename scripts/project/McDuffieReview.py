@@ -12,6 +12,7 @@ SCRIPT='scripts/project/McDuffieReview.py'
 PAGE='content/transportation/roadway-projects/studies.md'
 KEY='transportation/roadway-projects/studies/cabq-mcduffie-twin-parks-final-traffic-calming-study-2024.pdf'
 def pop_path():
+    if (G.ROOT/(P+'population-v4.json')).exists():return P+'population-v4.json'
     if (G.ROOT/(P+'population-v3.json')).exists():return P+'population-v3.json'
     return P+('population-v2.json' if (G.ROOT/(P+'population-v2.json')).exists() else 'population.json')
 
@@ -92,6 +93,19 @@ def guard():
     changed=set(git('diff',BASE,stage.end,'--name-only').decode().splitlines()) if stage.end else set(G.changed_paths(BASE))
     assert changed<=set(stage.load_json(pop_path())['artifact_paths']),changed-set(stage.load_json(pop_path())['artifact_paths'])
     visible=[p for p in changed if p.startswith(('content/','layouts/','assets/','static/')) or p=='hugo.toml'];assert set(visible)<={PAGE}
+    if (G.ROOT/(P+'r2-result.json')).exists():
+        result=stage.load_json(P+'r2-result.json');assert result['verified'] and result['size_bytes']==11940327 and result['sha256']==a[ID]['checksum_sha256']
+        before=stage.load_json(P+'r2-live-before.json');after=stage.load_json(P+'r2-live-after.json')
+        old={o['key']:(o['size_bytes'],o['etag']) for o in before['objects']};new={o['key']:(o['size_bytes'],o['etag']) for o in after['objects']}
+        assert set(new)-set(old)=={KEY} and all(new.get(k)==v for k,v in old.items())
+        assert after['total_bytes']-before['total_bytes']==11940327 and after['total_bytes']==10983340175
+        assert stage.load_json('project-state/r2-inventory.json')==after
+    if (G.ROOT/(P+'queue.json')).exists():
+        inv=stage.load_json('project-state/master-inventory.json');q=stage.load_json(P+'queue.json')
+        assert q['pending_ids']==sorted(r['id'] for r in inv['candidates'] if r['status']=='pending review')
+        assert q['approved_count']==sum(r['status']=='approved for addition' for r in inv['candidates'])
+        assert (q['pending_review_count'],q['gated_pending_count'],q['source_or_structural_blocked_pending_count'],q['ungated_pending_count'])==(339,321,18,0)
+        originalq=stage.load_json(start['source_queue']);assert q['gated_pending_ids']==originalq['gated_pending_ids'] and q['source_or_structural_blocked_pending_ids']==originalq['source_or_structural_blocked_pending_ids']
     if PAGE in visible:
         original=git('show',BASE+':'+PAGE).decode().replace('\r\n','\n');current=stage.read_text(PAGE)
         begin='### McDuffie-Twin Parks\n';end='### Rainbow Boulevard\n'
@@ -182,6 +196,8 @@ def implement():
     s=s.replace(begin,begin+block,1)
     obsolete='  The current City page reports that construction began in 2026. Its separately hosted May 2024 final study remains available through the official project page and is queued for archival after its transfer-service download can be captured deterministically.\n\n'
     assert s.count(obsolete)==1;s=s.replace(obsolete,'',1)
+    suffix=' · [Current City project page and final-study link](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/copy2_of_the-mcduffie-twin-parks-traffic-calming-study)'
+    assert s.count(suffix)==1;s=s.replace(suffix,'',1)
     page.write_text(s,encoding='utf8',newline='\n')
     row=next(r for r in G.load('project-state/master-inventory.json')['candidates'] if r['id']==ID)
     save(P+'updates.json',[dict(id=ID,changes=dict(status='implemented',description=description,implementation_location=PAGE,implementation_locations=[PAGE],cross_listing_approved=False,validation_status='Implemented on unmerged owner-review branch; exact public archive verified; full suite and preview pending; not live.',processing_notes=row['processing_notes']+['2026-10-06 final report added as primary 2024 study in existing Roadway Studies / McDuffie-Twin Parks section. Earlier 2023 original remains chronologically related and reproduced in Appendix C; obsolete retrieval-blocked sentence removed. No navigation, unrelated page or inventory-row changes. Owner review required before merge.']))])
@@ -189,5 +205,27 @@ def implement():
     refresh();subprocess.run([sys.executable,'scripts/project/Update-CandidatesBatch.py','--requests',P+'updates.json'],check=True)
     save(P+'progress.json',dict(state='content_implemented_validation_preview_pending',completed=['review','archive','bounded content'],remaining=['normal validation','Chrome/Playwright preview','unmerged PR'],population=[ID]))
     refresh();queue();guard()
+
+def render():
+    from playwright.sync_api import sync_playwright
+    url=sys.argv[2];preview='.pages.dev' in url;verification_only='--verification-only' in sys.argv[3:]
+    with sync_playwright() as p:
+        browser=p.chromium.launch(channel='chrome',headless=True,args=['--disable-gpu']);page=browser.new_page(viewport=dict(width=1440,height=1100))
+        response=page.goto(url,wait_until='networkidle',timeout=90000);assert response.status==200
+        result=page.evaluate('''() => { const h=document.getElementById('mcduffie-twin-parks'); let n=h.nextElementSibling; const nodes=[]; while(n && n.tagName!=='H3' && n.tagName!=='H2'){nodes.push(n);n=n.nextElementSibling;} return {heading:h.innerText,text:nodes.map(n=>n.innerText).join('\\n'),links:nodes.flatMap(n=>Array.from(n.querySelectorAll('a')).map(a=>({text:a.innerText,url:a.href}))),overflow:document.documentElement.scrollWidth>innerWidth}; }''')
+        assert not result['overflow']
+        assert result['links'][0]['url']=='https://files.abqinfo.com/'+KEY
+        assert len([x for x in result['links'] if x['url'].startswith('https://files.abqinfo.com/')])==2
+        for phrase in ['Final McDuffie-Twin Parks','May 7, 2024','conceptual','Appendix C','Public Meeting 2'] :assert phrase in result['text'],phrase
+        assert 'queued for archival' not in result['text'] and 'captured deterministically' not in result['text']
+        assert any(x['url']=='https://sfftp.cabq.gov/f/cf8779d97e34c92c' for x in result['links'])
+        page.locator('#mcduffie-twin-parks').evaluate('(h)=>h.scrollIntoView(true)')
+        screenshot=G.ROOT/('tmp/mcduffie-final-head-preview.png' if verification_only else P+'preview.png' if preview else 'tmp/mcduffie-local.png');page.screenshot(path=str(screenshot))
+        page.set_viewport_size(dict(width=390,height=844));page.reload(wait_until='networkidle');assert not page.evaluate('document.documentElement.scrollWidth>innerWidth')
+        page.locator('#mcduffie-twin-parks').evaluate('(h)=>h.scrollIntoView(true)');page.screenshot(path=str(G.ROOT/'tmp/mcduffie-mobile.png'))
+        result.update(url=url,head_sha=G.git('rev-parse','HEAD'),rendered_at=now(),browser='Installed Google Chrome via Playwright',desktop_mobile_layout_passed=True,screenshot_sha256=hashlib.sha256(screenshot.read_bytes()).hexdigest())
+        if verification_only:
+            prior=G.load(P+'preview.json');assert result['text']==prior['text'] and result['links']==prior['links'];result['identical_to_inspected_preview']=True
+        save('tmp/mcduffie-final-head-preview.json' if verification_only else P+('preview.json' if preview else 'rendered-check.json'),result);browser.close();print(json.dumps(result,ensure_ascii=True))
 
 if __name__=='__main__':globals()[sys.argv[1]]()

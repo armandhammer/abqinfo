@@ -238,13 +238,19 @@ Transportation studies and reports.
 
 ### McDuffie-Twin Parks
 
+- [Final McDuffie-Twin Parks Traffic Calming Study (2024 archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-mcduffie-twin-parks-final-traffic-calming-study-2024.pdf)
+
+  Analyzes neighborhood traffic volumes, speeds, crashes, pedestrian crossings, and public feedback, then recommends crossings, bicycle-lane striping, bulbouts, a traffic circle, speed humps or cushions, and park-access markings. Includes NTMP eligibility findings, mapped concepts, and conceptual cost estimates.
+
+  [Official City final-study share](https://sfftp.cabq.gov/f/cf8779d97e34c92c) · [City project page](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/copy2_of_the-mcduffie-twin-parks-traffic-calming-study)
+
+  The May 7, 2024 final report records the study findings and recommendations; its cost estimates are conceptual. The earlier meeting presentation below is also reproduced in Appendix C. Consult the City project page for implementation updates.
+
 - [McDuffie-Twin Parks Traffic Calming Study Public Meeting 2 (2023 Archived PDF)](https://files.abqinfo.com/transportation/roadway-projects/studies/cabq-mcduffie-twin-parks-traffic-calming-public-meeting-2-2023.pdf)
 
   Documents measured speeds, traffic volumes, crashes, and resident feedback across the McDuffie-Twin Parks neighborhood, then presents proposed crosswalks, striping, neckdowns, traffic circles, and speed cushions considered during the September 2023 public meeting.
 
-  [Official City PDF](https://www.cabq.gov/council/documents/mcduffie-twin-parks-study-public-meeting-2.pdf) · [Current City project page and final-study link](https://www.cabq.gov/council/find-your-councilor/district-7/district-7-projects/traffic-street-improvements/copy2_of_the-mcduffie-twin-parks-traffic-calming-study)
-
-  The current City page reports that construction began in 2026. Its separately hosted May 2024 final study remains available through the official project page and is queued for archival after its transfer-service download can be captured deterministically.
+  [Official City PDF](https://www.cabq.gov/council/documents/mcduffie-twin-parks-study-public-meeting-2.pdf)
 
 ### Rainbow Boulevard
 

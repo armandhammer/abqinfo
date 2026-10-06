@@ -83,12 +83,42 @@
       "use_contract_record_rules": true,
       "summary": "Exact original uploaded to absent key; full public GET matches 11940327 bytes and pinned SHA-256. Refreshed listing has exactly one addition, all prior key/size/ETag values unchanged.",
       "evidence": "project-state/governance/mcduffie-review-2026-10-06/r2-result.json"
+    },
+    {
+      "operation": "content_implementation",
+      "candidate_ids": [
+        "src-2f89e1bc040e1d33"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "Final study primary entry and official share/project links added; earlier original explicitly related; obsolete retrieval-blocked sentence removed only within McDuffie section.",
+      "evidence": "content/transportation/roadway-projects/studies.md"
+    },
+    {
+      "operation": "content_implementation",
+      "candidate_ids": [
+        "src-2f89e1bc040e1d33"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "Normal suite detected one increased duplicate live-project link placement for unchanged legacy row src-87fd2a5755eea903. Moved its existing source link from earlier presentation to primary final-report source links; same URL/page/count and all legacy inventory rows preserved. Failed suite log retained; same one-record population in v4 only adds validation evidence paths.",
+      "evidence": "project-state/governance/mcduffie-review-2026-10-06/validation-attempt-1.log"
+    },
+    {
+      "operation": "external_mutation",
+      "candidate_ids": [
+        "src-2f89e1bc040e1d33"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "Prepare nonproduction review deployment by pushing only the feature branch; main and planning-snapshot remain at authorized remote baseline. No PR merge or production deployment.",
+      "evidence": "project-state/governance/mcduffie-review-2026-10-06/remote-final.json"
     }
   ],
   "status": "in_progress",
-  "contract": "project-state/governance/mcduffie-review-2026-10-06/contract-v20.json",
-  "contract_sha256": "8f2f1b46f7c06cb23b5a7f2f769f826209b459370dd0d8309aeb34c276852c2b",
-  "population_sha256": "dc615593dbae17799b7dbc39a719ae2f9a483e07b8a08f356ba687875fe9c2b7",
+  "contract": "project-state/governance/mcduffie-review-2026-10-06/contract-v27.json",
+  "contract_sha256": "e7f7284977b9686c5d60d12691a7bffc774f600d1a461f17509f31802b319a46",
+  "population_sha256": "48a822fefbdbab2e8862fff70d720f5ccf0df2949583aaf78d557a05cb2a892c",
   "respected_governance_ids": [
     "authorization-profile-ordinary-review-large",
     "capital-2005-2013-ccip-master",
@@ -167,332 +197,332 @@
   "completion_evidence": {
     "authorization-profile-ordinary-review-large": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "capital-2005-2013-ccip-master": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-archive-recovery-53d2a462": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-contributed-complete-streets-decisions-2026-09-11-4086efe9": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-contributed-document-decisions-2026-08-14-49ed9027": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-contributed-document-review-2026-08-14-ce37b460": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-council-closeout-status-2026-09-20-4dfd8e30": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-council-documents-topical-cluster-research-2026-09-12-9aa9b8e9": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-district-traffic-studies-decisions-2026-09-03-9d6eb394": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-eight-batch-2-decisions-2026-08-14-f83e424c": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-frozen-review-batch-16-decisions-554d266d": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-historical-local-planning-decisions-8f6724d4": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-historical-transportation-review-27-decisions-4d173725": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-inventory-overrides-09e22b5f": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-legacy-direct-source-remediation-decisions-2026-09-12-a2a646f7": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-legistar-transportation-history-batch-decisions-2026-09-09-589e07fe": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-local-planning-transit-history-decisions-9b6ab991": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-mcduffie-review-2026-10-06": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-next-ordinary-queue-b8bb5c70-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-nmdot-statewide-truck-parking-study-archive-preparation-2026-09-2-0f9c56a1": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-nmdot-statewide-truck-parking-study-decision-2026-09-19-e0979445": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-ordinary-second-large-campaign-city-review-decisions-2026-09-26-0400a931": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-ordinary-second-large-campaign-dmd-review-decisions-2026-09-26-a29a51e4": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-ordinary-second-large-campaign-regional-review-decisions-2026-09--4b095e53": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-ordinary-second-large-campaign-supporting-review-decisions-2026-0-da0c11c6": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-recent-high-value-6-decisions-27dc8131": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-recent-programs-maps-large2-decisions-525609f8": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-retained-source-expansion-13-decisions-2026-08-28-a8e1def5": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-retained-source-expansion-17-decisions-2026-08-29-8210108e": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-retained-source-expansion-18-decisions-2026-08-29-cbe402cf": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-retained-source-expansion-7-decisions-2026-08-26-643f77d8": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-retained-source-expansion-9-decisions-2026-08-27-a631728d": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-review-decisions-05dc8063": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-scoped-source-review-2026-08-04-33554a9c": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "decision-unm-cnm-focused-source-scope-1673e3f6": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "owner-mcduffie-review-2026-10-06": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "policy-agents": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "policy-durable-task-governance": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "policy-mission-scope": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "policy-mission-scope-legacy": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "policy-project-recency": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "policy-project-state": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "policy-publication-quality": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "policy-quality-exclusions": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "policy-r2-storage": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "policy-source-priorities": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "policy-tip-stip-retention": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "supersession-mcduffie-review-2026-10-06": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "workflow-autonomous-verification": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "workflow-background-campaign": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "workflow-handoff-retirement": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "workflow-parallel-verification": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ],
     "workflow-stage-lifecycle": [
       {
-        "path": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json",
-        "sha256": "92fb1cc952dd6c5e04785574bb94c6177a8b7ab5083b1499556c29387b7cb471"
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "b745f89e2bd688532f25613872470baad5ac31e184639c8c63ecd0d7ff7ab76c"
       }
     ]
   },
