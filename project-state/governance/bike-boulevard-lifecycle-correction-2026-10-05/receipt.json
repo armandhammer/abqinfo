@@ -32,7 +32,7 @@
   },
   "validation": "passed",
   "preview": "https://41cb1e3d.abqinfo.pages.dev/transportation/bicycling/bike-plans/#related-bicycle-policy",
-  "pr_state": "owner_review_pending_unmerged",
+  "pr_state": "open_unmerged_manual_review",
   "governance_accounting": {
     "authorization-profile-ordinary-review-large": {
       "requirement": "Only an owner invocation activates the exact profile population and unchanged-original archival/background-integration class. No visible content, protected-family, destructive or credential action is authorized.",
@@ -575,5 +575,24 @@
   ],
   "sealed_history": "52 contiguous stage intervals; all protected historical evidence unchanged",
   "preview_evidence": "project-state/governance/bike-boulevard-lifecycle-correction-2026-10-05/preview.json",
-  "preview_visual_inspection": "Passed: complete legible section, correct historical title and qualification, three expected links, unchanged archive, no overflow."
+  "preview_visual_inspection": "Passed: complete legible section, correct historical title and qualification, three expected links, unchanged archive, no overflow.",
+  "pr_url": "https://github.com/armandhammer/abqinfo/pull/213",
+  "pr_number": 213,
+  "pr_base": "main",
+  "reviewed_preview_content_commit": "2ea0fb772cec9bd8c15da4bee1120af561620c76",
+  "completion_head": "Commit containing this final receipt; PR head and local/remote planning-snapshot are verified equal after atomic push.",
+  "snapshot_sync_intent": {
+    "expected_main_before": "1bae493fa93f510cefd353172885fc04bd469c61",
+    "expected_planning_before": "1bae493fa93f510cefd353172885fc04bd469c61",
+    "actions": [
+      "Atomic push of final completion commit to correction branch and planning-snapshot only",
+      "Set local planning-snapshot to exact final PR head",
+      "Verify PR is open and both snapshot refs equal PR head; main unchanged",
+      "Verify final-head Cloudflare deployment matches inspected section"
+    ],
+    "no_force": true,
+    "no_main_push": true
+  },
+  "state": "complete_owner_review_pr_unmerged",
+  "completion_validation": "Full suite passed; final governance, lifecycle/CURRENT and exact-delta checks passed after adding PR/preview evidence. Final-head rendered parity and concrete ref SHAs are independently reverified after push."
 }
