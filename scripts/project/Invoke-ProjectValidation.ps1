@@ -41,6 +41,8 @@ if ($LASTEXITCODE) { throw 'PR213 closeout exact-delta guard failed.' }
 if ($LASTEXITCODE) { throw 'McDuffie exact one-record source recovery guard failed.' }
 & python "$PSScriptRoot/McDuffieReview.py" guard
 if ($LASTEXITCODE) { throw 'McDuffie review exact-population guard failed.' }
+& python "$PSScriptRoot/Pr214PostMergeCloseout.py" guard
+if ($LASTEXITCODE) { throw 'PR214 closeout exact-delta guard failed.' }
 Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }
@@ -301,6 +303,8 @@ if ($LASTEXITCODE) { throw "First quality remediation rendered validation failed
 if ($LASTEXITCODE) { throw 'PR212 exact reviewed/production Hugo render validation failed.' }
 & python "$PSScriptRoot/Pr213PostMergeCloseout.py" render
 if ($LASTEXITCODE) { throw 'PR213 production/Hugo parity failed.' }
+& python "$PSScriptRoot/Pr214PostMergeCloseout.py" render
+if ($LASTEXITCODE) { throw 'PR214 production/Hugo parity failed.' }
 $broken = @()
 & python "$PSScriptRoot/Test-OrdinaryYouthJusticePublication.py" --rendered-root tmp/site-build
 if ($LASTEXITCODE) { throw 'Youth justice family rendered publication check failed.' }

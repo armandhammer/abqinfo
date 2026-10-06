@@ -1,6 +1,6 @@
 {
-  "recorded_at": "2026-10-06T18:39:50.723656+00:00",
-  "completed_item_range": "Exact McDuffie final study independently approved, archived with exact public bytes, implemented/passed on owner-review branch; unmerged PR214 ready.",
+  "recorded_at": "2026-10-06T19:51:01.075745+00:00",
+  "completed_item_range": "PR214 owner merge e503ca2074675f653524e26002e5abf672d87016 verified in production; exactly McDuffie final report live validated/passed.",
   "total_candidates": 7142,
   "counts_by_status": {
     "pending review": 339,
@@ -10,8 +10,8 @@
     "parsed": 0,
     "description drafted": 0,
     "placement assigned": 360,
-    "implemented": 225,
-    "validated": 1490,
+    "implemented": 224,
+    "validated": 1491,
     "excluded": 2867,
     "duplicate": 1602,
     "superseded": 259,
@@ -21,7 +21,7 @@
   "remaining_nonterminal": 891,
   "next_pending_id": "lin-2f6fbe4ffb0b6564",
   "blockers": [],
-  "resume_command": "Read CURRENT and mcduffie-review-2026-10-06/receipt.json. Stop for owner manual PR214 review; no merge/deploy or another population.",
+  "resume_command": "PR214 production/live validated closeout complete. Verify final-ref receipt; next owner school-zone IPRA request is durably queued and untouched. This closeout does not start it.",
   "verification_campaign_totals": {
     "verified": 2194,
     "passed": 2070,
@@ -35332,5 +35332,19 @@
         }
       }
     }
-  ]
+  ],
+  "next_owner_requested_task": {
+    "state": "queued_owner_requested_work_not_started",
+    "filename": "ABQ Middle School and High School Zone Active Timings.pdf",
+    "owner_context": {
+      "local_location": "Owner says the file was placed in the local document-review folder.",
+      "provenance": "Owner says it was obtained through IPRA.",
+      "content": "Albuquerque middle-school and high-school school-zone active timings.",
+      "public_availability": "Owner says this important information is not available on City or APS public websites.",
+      "expected_followup": "Elementary-school timing information is expected later.",
+      "publication_intent": "Owner explicitly wants this information added to ABQInfo in an appropriate location."
+    },
+    "scope_of_this_closeout": "Record request only; file not inspected, classified, moved, archived, uploaded or published; no governance population created for it.",
+    "authority": "project-state/governance/pr214-postmerge-closeout-2026-10-06/authority.json"
+  }
 }
