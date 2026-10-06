@@ -1,0 +1,550 @@
+{
+  "actions": [
+    "document_review",
+    "family_review",
+    "quality_assessment",
+    "inventory_disposition",
+    "governance_implementation",
+    "archive",
+    "external_mutation",
+    "content_implementation",
+    "content_removal",
+    "placement",
+    "visitor_visible_change",
+    "background_integration"
+  ],
+  "events": [
+    {
+      "operation": "governance_implementation",
+      "candidate_ids": [
+        "src-2f89e1bc040e1d33"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "One-record population frozen, complete registry resolved and source-recovery stage sealed at independently verified synchronized remote endpoint.",
+      "evidence": "project-state/governance/mcduffie-review-2026-10-06/starting-state.json"
+    },
+    {
+      "operation": "document_review",
+      "candidate_ids": [
+        "src-2f89e1bc040e1d33"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "Exact preserved PDF rehashed; all 321 pages extracted with per-page text/image measurements for complete substantive review.",
+      "evidence": "project-state/governance/mcduffie-review-2026-10-06/page-analysis.json"
+    },
+    {
+      "operation": "governance_implementation",
+      "candidate_ids": [
+        "src-2f89e1bc040e1d33"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "Same exact one-record population retained in immutable v2; add only preceding recovery guard script to output paths so its R2 state assertion reads the sealed stage endpoint, matching normal lifecycle semantics. All original evidence and assertions retained.",
+      "evidence": "scripts/project/McDuffieSourceRecovery.py"
+    },
+    {
+      "operation": "quality_assessment",
+      "candidate_ids": [
+        "src-2f89e1bc040e1d33"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "Fresh explicit two-gate scope and full-report/representative visual publication review passes; measured content, limitations and final-study role recorded.",
+      "evidence": "project-state/governance/mcduffie-review-2026-10-06/review.json"
+    },
+    {
+      "operation": "family_review",
+      "candidate_ids": [
+        "src-2f89e1bc040e1d33"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "Complete four-row local family inspected without adding mutation candidates; 24 meeting2 pages match embedded appendix. Final study primary, earlier original retained with explicit chronological relation; no duplicate cross-list.",
+      "evidence": "project-state/governance/mcduffie-review-2026-10-06/family.json"
+    },
+    {
+      "operation": "archive",
+      "candidate_ids": [
+        "src-2f89e1bc040e1d33"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "Exact unchanged-original archive object frozen; full saved/live listing agrees, no same-size candidate, absent casefold key and policy ceiling passed. Upload intent durable before PUT.",
+      "evidence": "project-state/governance/mcduffie-review-2026-10-06/r2-preflight.json"
+    },
+    {
+      "operation": "archive",
+      "candidate_ids": [
+        "src-2f89e1bc040e1d33"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "Exact original uploaded to absent key; full public GET matches 11940327 bytes and pinned SHA-256. Refreshed listing has exactly one addition, all prior key/size/ETag values unchanged.",
+      "evidence": "project-state/governance/mcduffie-review-2026-10-06/r2-result.json"
+    },
+    {
+      "operation": "content_implementation",
+      "candidate_ids": [
+        "src-2f89e1bc040e1d33"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "Final study primary entry and official share/project links added; earlier original explicitly related; obsolete retrieval-blocked sentence removed only within McDuffie section.",
+      "evidence": "content/transportation/roadway-projects/studies.md"
+    },
+    {
+      "operation": "content_implementation",
+      "candidate_ids": [
+        "src-2f89e1bc040e1d33"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "Normal suite detected one increased duplicate live-project link placement for unchanged legacy row src-87fd2a5755eea903. Moved its existing source link from earlier presentation to primary final-report source links; same URL/page/count and all legacy inventory rows preserved. Failed suite log retained; same one-record population in v4 only adds validation evidence paths.",
+      "evidence": "project-state/governance/mcduffie-review-2026-10-06/validation-attempt-1.log"
+    },
+    {
+      "operation": "external_mutation",
+      "candidate_ids": [
+        "src-2f89e1bc040e1d33"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "Prepare nonproduction review deployment by pushing only the feature branch; main and planning-snapshot remain at authorized remote baseline. No PR merge or production deployment.",
+      "evidence": "project-state/governance/mcduffie-review-2026-10-06/remote-final.json"
+    },
+    {
+      "operation": "visitor_visible_change",
+      "candidate_ids": [
+        "src-2f89e1bc040e1d33"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "Actual desktop/mobile installed Chrome rendering of exact Cloudflare deployment and local Hugo confirms identical section text/links, final-first chronology, source/archive links, date/cost qualifications, anchor and obsolete-blocker absence.",
+      "evidence": "project-state/governance/mcduffie-review-2026-10-06/preview.json"
+    },
+    {
+      "operation": "external_mutation",
+      "candidate_ids": [
+        "src-2f89e1bc040e1d33"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "Validated Markdown body submitted with gh pr create --body-file; PR214 independently read OPEN, non-draft, unmerged at reviewed content head with successful Cloudflare check. Only feature branch pushed; main/planning unchanged.",
+      "evidence": "project-state/governance/mcduffie-review-2026-10-06/pr-description.md"
+    }
+  ],
+  "status": "complete",
+  "contract": "project-state/governance/mcduffie-review-2026-10-06/contract-v34.json",
+  "contract_sha256": "3ca7df9cc6c2da70580534d387bc63eb19692fddf591f287a5ab8c6ce9817a70",
+  "population_sha256": "48a822fefbdbab2e8862fff70d720f5ccf0df2949583aaf78d557a05cb2a892c",
+  "respected_governance_ids": [
+    "authorization-profile-ordinary-review-large",
+    "capital-2005-2013-ccip-master",
+    "decision-archive-recovery-53d2a462",
+    "decision-contributed-complete-streets-decisions-2026-09-11-4086efe9",
+    "decision-contributed-document-decisions-2026-08-14-49ed9027",
+    "decision-contributed-document-review-2026-08-14-ce37b460",
+    "decision-council-closeout-status-2026-09-20-4dfd8e30",
+    "decision-council-documents-topical-cluster-research-2026-09-12-9aa9b8e9",
+    "decision-district-traffic-studies-decisions-2026-09-03-9d6eb394",
+    "decision-eight-batch-2-decisions-2026-08-14-f83e424c",
+    "decision-frozen-review-batch-16-decisions-554d266d",
+    "decision-historical-local-planning-decisions-8f6724d4",
+    "decision-historical-transportation-review-27-decisions-4d173725",
+    "decision-inventory-overrides-09e22b5f",
+    "decision-legacy-direct-source-remediation-decisions-2026-09-12-a2a646f7",
+    "decision-legistar-transportation-history-batch-decisions-2026-09-09-589e07fe",
+    "decision-local-planning-transit-history-decisions-9b6ab991",
+    "decision-mcduffie-review-2026-10-06",
+    "decision-next-ordinary-queue-b8bb5c70-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception",
+    "decision-nmdot-statewide-truck-parking-study-archive-preparation-2026-09-2-0f9c56a1",
+    "decision-nmdot-statewide-truck-parking-study-decision-2026-09-19-e0979445",
+    "decision-ordinary-second-large-campaign-city-review-decisions-2026-09-26-0400a931",
+    "decision-ordinary-second-large-campaign-dmd-review-decisions-2026-09-26-a29a51e4",
+    "decision-ordinary-second-large-campaign-regional-review-decisions-2026-09--4b095e53",
+    "decision-ordinary-second-large-campaign-supporting-review-decisions-2026-0-da0c11c6",
+    "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
+    "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+    "decision-recent-high-value-6-decisions-27dc8131",
+    "decision-recent-programs-maps-large2-decisions-525609f8",
+    "decision-retained-source-expansion-13-decisions-2026-08-28-a8e1def5",
+    "decision-retained-source-expansion-17-decisions-2026-08-29-8210108e",
+    "decision-retained-source-expansion-18-decisions-2026-08-29-cbe402cf",
+    "decision-retained-source-expansion-7-decisions-2026-08-26-643f77d8",
+    "decision-retained-source-expansion-9-decisions-2026-08-27-a631728d",
+    "decision-review-decisions-05dc8063",
+    "decision-scoped-source-review-2026-08-04-33554a9c",
+    "decision-unm-cnm-focused-source-scope-1673e3f6",
+    "owner-mcduffie-review-2026-10-06",
+    "policy-agents",
+    "policy-durable-task-governance",
+    "policy-mission-scope",
+    "policy-mission-scope-legacy",
+    "policy-project-recency",
+    "policy-project-state",
+    "policy-publication-quality",
+    "policy-quality-exclusions",
+    "policy-r2-storage",
+    "policy-source-priorities",
+    "policy-tip-stip-retention",
+    "supersession-mcduffie-review-2026-10-06",
+    "workflow-autonomous-verification",
+    "workflow-background-campaign",
+    "workflow-handoff-retirement",
+    "workflow-parallel-verification",
+    "workflow-stage-lifecycle"
+  ],
+  "subjects": {
+    "ccip-2005-2013": {
+      "publication_form": "master_pdf",
+      "master_count": 1,
+      "component_count": 6,
+      "preserve_originals": true,
+      "topical_cross_listing": "individual_originals",
+      "version_finality": "no_unsupported_inference",
+      "component_ids": [
+        "src-389b414dbe0fb8b9",
+        "src-89cf13c2d742e6d2",
+        "src-8ea637fcf3e9208a",
+        "src-c108ac10089df2fa",
+        "src-c83a5233716f5e1f",
+        "src-fecd59ba99e137d1"
+      ]
+    }
+  },
+  "completion_evidence": {
+    "authorization-profile-ordinary-review-large": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "capital-2005-2013-ccip-master": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-archive-recovery-53d2a462": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-contributed-complete-streets-decisions-2026-09-11-4086efe9": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-contributed-document-decisions-2026-08-14-49ed9027": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-contributed-document-review-2026-08-14-ce37b460": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-council-closeout-status-2026-09-20-4dfd8e30": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-council-documents-topical-cluster-research-2026-09-12-9aa9b8e9": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-district-traffic-studies-decisions-2026-09-03-9d6eb394": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-eight-batch-2-decisions-2026-08-14-f83e424c": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-frozen-review-batch-16-decisions-554d266d": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-historical-local-planning-decisions-8f6724d4": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-historical-transportation-review-27-decisions-4d173725": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-inventory-overrides-09e22b5f": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-legacy-direct-source-remediation-decisions-2026-09-12-a2a646f7": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-legistar-transportation-history-batch-decisions-2026-09-09-589e07fe": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-local-planning-transit-history-decisions-9b6ab991": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-mcduffie-review-2026-10-06": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-next-ordinary-queue-b8bb5c70-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-nmdot-statewide-truck-parking-study-archive-preparation-2026-09-2-0f9c56a1": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-nmdot-statewide-truck-parking-study-decision-2026-09-19-e0979445": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-city-review-decisions-2026-09-26-0400a931": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-dmd-review-decisions-2026-09-26-a29a51e4": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-regional-review-decisions-2026-09--4b095e53": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-supporting-review-decisions-2026-0-da0c11c6": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-recent-high-value-6-decisions-27dc8131": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-recent-programs-maps-large2-decisions-525609f8": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-retained-source-expansion-13-decisions-2026-08-28-a8e1def5": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-retained-source-expansion-17-decisions-2026-08-29-8210108e": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-retained-source-expansion-18-decisions-2026-08-29-cbe402cf": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-retained-source-expansion-7-decisions-2026-08-26-643f77d8": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-retained-source-expansion-9-decisions-2026-08-27-a631728d": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-review-decisions-05dc8063": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-scoped-source-review-2026-08-04-33554a9c": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "decision-unm-cnm-focused-source-scope-1673e3f6": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "owner-mcduffie-review-2026-10-06": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "policy-agents": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "policy-durable-task-governance": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "policy-mission-scope": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "policy-mission-scope-legacy": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "policy-project-recency": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "policy-project-state": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "policy-publication-quality": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "policy-quality-exclusions": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "policy-r2-storage": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "policy-source-priorities": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "policy-tip-stip-retention": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "supersession-mcduffie-review-2026-10-06": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "workflow-autonomous-verification": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "workflow-background-campaign": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "workflow-handoff-retirement": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "workflow-parallel-verification": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ],
+    "workflow-stage-lifecycle": [
+      {
+        "path": "project-state/governance/mcduffie-review-2026-10-06/receipt.json",
+        "sha256": "5a5cdc76d6b04e754e53036454a2e46d0bfd067374dfcc9cd3045bb605fd9f5a"
+      }
+    ]
+  },
+  "artifact_type": "task_implementation_plan"
+}
