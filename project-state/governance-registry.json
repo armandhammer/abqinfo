@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "3fbef78712ce9fbdb435e3c21231f56756f7e00897098b0ad93e63b901ff0475",
+  "audit_sha256": "13b3e7be28b0cd28922239bbd0e93c4c938462aed2701eadab93d4481aeec8d8",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15251,7 +15251,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "b276be42a55ac34ab52d88bbacd5523386f080ad0fd0c219f29491443bc935b0",
+          "sha256": "2c377a1d961ef58e0282f544711be993fd5bfdce5aff5b2e5610034f39edb371",
           "binding_pointers": [
             "/implementation"
           ]
@@ -25262,7 +25262,7 @@
       "authority": "Explicit current owner instruction",
       "decision_date": "2026-10-06",
       "effective_date": "2026-10-06",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/mcduffie-source-recovery-2026-10-06/authority.json",
@@ -25282,7 +25282,117 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "factual source recovery"
+      "implementation_status": "factual source recovery",
+      "superseded_by": "owner-mcduffie-review-2026-10-06",
+      "supersession_evidence": "project-state/governance/mcduffie-review-2026-10-06/authority.json"
+    },
+    {
+      "governance_id": "owner-mcduffie-review-2026-10-06",
+      "category": "active owner decision",
+      "title": "Exact McDuffie substantive review and conditional publication preparation",
+      "scope": {
+        "candidate_ids": [
+          "src-2f89e1bc040e1d33"
+        ],
+        "task_ids": [
+          "mcduffie-review-2026-10-06"
+        ]
+      },
+      "authority": "Explicit current user instruction",
+      "decision_date": "2026-10-06",
+      "effective_date": "2026-10-06",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/mcduffie-review-2026-10-06/authority.json",
+          "sha256": "fffa0830d9f9e884ad5b20f6e6a15c8bb935e707bcf60e9b78029d4e678f4104",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Current explicit owner instruction: independently review exactly src-2f89e1bc040e1d33 Final McDuffie-Twin Parks Traffic Calming Study under complete governance. Preserve conclusive preceding source recovery and exact original. Fresh two-gate scope and complete report/family/quality review; historical approved recommendations are evidence only. If justified, archive only unchanged verified 11940327-byte PDF under ordinary-review-large class after live storage/preflight, absent-key/no-overwrite guards, exact full public-byte verification. Prepare only substantively justified existing McDuffie section change in an UNMERGED owner-review content PR with Chrome/Playwright rendered Cloudflare preview. Never merge or deploy. If excluded, authorized background main/planning reconciliation. No Sandia or other population or R2 mutations. Full normal suite, fresh/final contract, sealed history, queues, Hugo/rendered, CURRENT/checkpoint and diff checks. This new stage replaces only completed source-recovery-stage no-R2/no-visible restrictions; preserves all original recovery evidence and unrelated settled governance.",
+      "required_actions": [
+        "Current explicit owner instruction: independently review exactly src-2f89e1bc040e1d33 Final McDuffie-Twin Parks Traffic Calming Study under complete governance. Preserve conclusive preceding source recovery and exact original. Fresh two-gate scope and complete report/family/quality review; historical approved recommendations are evidence only. If justified, archive only unchanged verified 11940327-byte PDF under ordinary-review-large class after live storage/preflight, absent-key/no-overwrite guards, exact full public-byte verification. Prepare only substantively justified existing McDuffie section change in an UNMERGED owner-review content PR with Chrome/Playwright rendered Cloudflare preview. Never merge or deploy. If excluded, authorized background main/planning reconciliation. No Sandia or other population or R2 mutations. Full normal suite, fresh/final contract, sealed history, queues, Hugo/rendered, CURRENT/checkpoint and diff checks. This new stage replaces only completed source-recovery-stage no-R2/no-visible restrictions; preserves all original recovery evidence and unrelated settled governance."
+      ],
+      "prohibited_actions": [
+        "No merge/deploy; no other population or R2 object mutation."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "independent substantive review"
+    },
+    {
+      "governance_id": "supersession-mcduffie-review-2026-10-06",
+      "category": "active owner decision",
+      "title": "Authorized completed-stage restriction replacement",
+      "scope": {
+        "task_ids": [
+          "mcduffie-review-2026-10-06"
+        ]
+      },
+      "authority": "Explicit current user instruction",
+      "decision_date": "2026-10-06",
+      "effective_date": "2026-10-06",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/mcduffie-review-2026-10-06/supersession.json",
+          "sha256": "e9b9268e9db2c704e72b571c2b0a98a455055c918feace98594efac3f8f9f39f",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Only completed McDuffie source-recovery stage restrictions replaced by explicit current review/conditional archive/content-PR authorization. Preserve all source evidence and unrelated decisions.",
+      "required_actions": [
+        "Preserve completed recovery; review independently."
+      ],
+      "prohibited_actions": [
+        "No merge/deploy; no other population or R2 object mutation."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "independent substantive review"
+    },
+    {
+      "governance_id": "decision-mcduffie-review-2026-10-06",
+      "category": "active owner decision",
+      "title": "Independent final-study scope, quality and family assessment",
+      "scope": {
+        "candidate_ids": [
+          "src-2f89e1bc040e1d33"
+        ],
+        "task_ids": [
+          "mcduffie-review-2026-10-06"
+        ]
+      },
+      "authority": "Evidence-based review under explicit current owner instruction",
+      "decision_date": "2026-10-06",
+      "effective_date": "2026-10-06",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/mcduffie-review-2026-10-06/review.json",
+          "sha256": "1737795928e5fc67f20dd0008b19e01b8fa870bc35dfab260c73c9011a2bd7e6",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Exact final report passes both mission gates and standalone publication quality; make it primary in existing McDuffie section, relate earlier meeting original, preserve all other inventory rows and historical evidence. Upload and content remain conditional on live storage and exact public-byte verification; owner-review PR only, no merge.",
+      "required_actions": [
+        "Implement the recorded scope, quality, family, historical qualification and conditional archival decision."
+      ],
+      "prohibited_actions": [
+        "No other inventory disposition, duplicate generated master, Speed Management cross-list, merge or production deployment."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "independent eligibility completed"
     }
   ]
 }

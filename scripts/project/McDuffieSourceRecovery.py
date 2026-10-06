@@ -70,7 +70,7 @@ def setup():
 def guard():
     stage=StageSnapshot(TASK);start=stage.load_json(P+'starting-state.json')
     stage.assert_no_visible_changes(BASE,start['content_tree_oid'])
-    for p,h in start['protected_sha256'].items():assert G.file_hash(p)==h,'Protected prior evidence/storage changed: '+p
+    for p,h in start['protected_sha256'].items():assert hashlib.sha256(canonical_bytes(stage.read_bytes(p))).hexdigest()==h,'Protected prior evidence/storage changed: '+p
     a={r['id']:r for r in json.loads(git('show',BASE+':project-state/master-inventory.json'))['candidates']}
     b={r['id']:r for r in stage.load_json('project-state/master-inventory.json')['candidates']}
     assert a.keys()==b.keys() and {i for i in a if a[i]!=b[i]}<={ID}

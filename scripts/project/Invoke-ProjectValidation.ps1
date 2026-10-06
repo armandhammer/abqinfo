@@ -39,6 +39,8 @@ if ($LASTEXITCODE) { throw 'Bike boulevard one-record correction guard failed.' 
 if ($LASTEXITCODE) { throw 'PR213 closeout exact-delta guard failed.' }
 & python "$PSScriptRoot/McDuffieSourceRecovery.py" guard
 if ($LASTEXITCODE) { throw 'McDuffie exact one-record source recovery guard failed.' }
+& python "$PSScriptRoot/McDuffieReview.py" guard
+if ($LASTEXITCODE) { throw 'McDuffie review exact-population guard failed.' }
 Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }
