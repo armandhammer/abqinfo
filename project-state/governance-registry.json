@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "bd3eee00e42f3d718c2e0aa9d0f5979aec67dcf91ccd17bfc16cb6a1b28fefba",
+  "audit_sha256": "a5387e5be0e27bfbfd2ae0febdb548d6a6e4804883fc8c01e0be7ac03e0bb2ba",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15251,7 +15251,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "4a307a152e39fd52dcf0385b70f381ca75f6648643a77d0b519a304a00fdcc98",
+          "sha256": "26cca31bcabcb81aa4c3d8d93d98250b45b55ecbad1420c21e0e4dc7f88514a9",
           "binding_pointers": [
             "/implementation"
           ]
@@ -25579,6 +25579,118 @@
       "settled_decisions": [],
       "unresolved_gates": [],
       "implementation_status": "authorized exact production closeout"
+    },
+    {
+      "governance_id": "owner-school-zone-timing-design-2026-10-06",
+      "category": "active owner decision",
+      "title": "Single owner/IPRA school-zone timing original: review and publication design",
+      "scope": {
+        "task_ids": [
+          "school-zone-timing-design-2026-10-06"
+        ],
+        "candidate_ids": [
+          "local-school-zone-timings-fade828a553fed60"
+        ],
+        "families": [
+          "school-zone-active-times"
+        ]
+      },
+      "authority": "Explicit current owner instruction",
+      "decision_date": "2026-10-06",
+      "effective_date": "2026-10-06",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/school-zone-timing-design-2026-10-06/authority.json",
+          "sha256": "e1aa715dae76c5c8b010c1618c3bf4b6d7f2730077e225d79128537de28b28c6",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Current owner requests complete governed review/publication DESIGN of exactly the unchanged local ABQ Middle School and High School Zone Active Timings.pdf, SHA256 fade828a553fed6008cd38f45a3a80ac41e7136ab4a407d708a91a34cf06963a. Inspect all pages, privacy, provenance, every interval/qualifier, scope/quality and existing School Transportation Safety context. Prepare extendable Hugo-ready direct data and exact archival plan. Owner reports IPRA provenance/non-public City or APS availability and expects elementary data later; do not infer an official URL, effective date, current status or future dataset. No elementary work, unrelated records, reopening settled safety decisions, R2 overwrite/delete, or upload without exact standing/current authorization. No visible PR before unchanged-original archive/full public-byte verification. This task authorizes local/background review/design artifacts, not new R2 mutation or merge/deployment.",
+      "required_actions": [
+        "Current owner requests complete governed review/publication DESIGN of exactly the unchanged local ABQ Middle School and High School Zone Active Timings.pdf, SHA256 fade828a553fed6008cd38f45a3a80ac41e7136ab4a407d708a91a34cf06963a. Inspect all pages, privacy, provenance, every interval/qualifier, scope/quality and existing School Transportation Safety context. Prepare extendable Hugo-ready direct data and exact archival plan. Owner reports IPRA provenance/non-public City or APS availability and expects elementary data later; do not infer an official URL, effective date, current status or future dataset. No elementary work, unrelated records, reopening settled safety decisions, R2 overwrite/delete, or upload without exact standing/current authorization. No visible PR before unchanged-original archive/full public-byte verification. This task authorizes local/background review/design artifacts, not new R2 mutation or merge/deployment."
+      ],
+      "prohibited_actions": [
+        "No elementary dataset or unrelated population",
+        "No new R2 mutation without explicit exact authorization",
+        "No visitor-visible PR before archive verification"
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [
+        {
+          "gate_id": "school-zone-timing-design-2026-10-06:r2-owner-authorization",
+          "blocks_operations": [
+            "archive",
+            "external_mutation"
+          ],
+          "requirement": "Explicit owner authorization for this exact unchanged original required"
+        }
+      ],
+      "implementation_status": "local review/design only"
+    },
+    {
+      "governance_id": "design-school-zone-timing-design-2026-10-06",
+      "category": "active family decision",
+      "title": "Exact school-zone original reviewed data and extendable publication design",
+      "scope": {
+        "task_ids": [
+          "school-zone-timing-design-2026-10-06"
+        ],
+        "candidate_ids": [
+          "local-school-zone-timings-fade828a553fed60"
+        ],
+        "families": [
+          "school-zone-active-times"
+        ]
+      },
+      "authority": "Governed implementation review under explicit current owner request",
+      "decision_date": "2026-10-06",
+      "effective_date": "2026-10-06",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/school-zone-timing-design-2026-10-06/review.json",
+          "sha256": "1f4273c06378f6d0c37a7fbae5bc22b1e2212e5602fec62bc2db33c70eec24b4",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/school-zone-timing-design-2026-10-06/placement.json",
+          "sha256": "a7637217eb22947231459b4c2a7bbe278b91eb76b3c297ff7860ba97f7b73d45",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/school-zone-timing-design-2026-10-06/timings.json",
+          "sha256": "61de0ed66a42ea4488a4c75b8ec982c94cb23c48ce9212a23140473fa4db9fc8",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/school-zone-timing-design-2026-10-06/source-record.json",
+          "sha256": "b5d7630f8394dec1c5e7947efd40921e3d6aed6acda405492469c499febe076b",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Preserve this exact original and the recorded scope/quality, all interval/weekday/location qualifiers, duplicate/fragment accounting and truthful owner/IPRA provenance. Proposed school-zone list belongs under existing School Transportation Safety. No currentness/agency/effective-date inference, separate elementary dataset, or external gate release follows from these review findings.",
+      "required_actions": [
+        "Preserve this exact original and the recorded scope/quality, all interval/weekday/location qualifiers, duplicate/fragment accounting and truthful owner/IPRA provenance. Proposed school-zone list belongs under existing School Transportation Safety. No currentness/agency/effective-date inference, separate elementary dataset, or external gate release follows from these review findings."
+      ],
+      "prohibited_actions": [
+        "No new archival authority inferred from review"
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "review/design prepared; exact archival owner gate remains"
     }
   ]
 }

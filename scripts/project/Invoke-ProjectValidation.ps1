@@ -43,6 +43,8 @@ if ($LASTEXITCODE) { throw 'McDuffie exact one-record source recovery guard fail
 if ($LASTEXITCODE) { throw 'McDuffie review exact-population guard failed.' }
 & python "$PSScriptRoot/Pr214PostMergeCloseout.py" guard
 if ($LASTEXITCODE) { throw 'PR214 closeout exact-delta guard failed.' }
+& python "$PSScriptRoot/SchoolZoneTimingDesign.py" guard
+if ($LASTEXITCODE) { throw 'School-zone timing design boundary failed.' }
 Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }
