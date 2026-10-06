@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "58243f9a540447433b62f4ff8c092251b7e94daa116fcfb91a8ea087fbbdbcab",
+  "audit_sha256": "700c115e388199a330969f1fcfe2da9320529f280ece49cc8c562e570ad95040",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15251,7 +15251,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "23543aaed4d76c1f02049289ffb38ac7315518e0281e5d5bb0814a6e6a025eff",
+          "sha256": "e9f9653d124b73789221ff14664d08349933fbedcb5a66cc90d1f3e67512123e",
           "binding_pointers": [
             "/implementation"
           ]
@@ -24917,7 +24917,7 @@
       "authority": "Explicit current user two-record Council finality instruction",
       "decision_date": "2026-10-05",
       "effective_date": "2026-10-05",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/council-finality-resolution-2026-10-05/authority.json",
@@ -24935,7 +24935,9 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "bounded background Council finality review"
+      "implementation_status": "bounded background Council finality review",
+      "superseded_by": "owner-council-finality-resolution-2026-10-05-existing-entry-correction-authorized",
+      "supersession_evidence": "project-state/governance/bike-boulevard-lifecycle-correction-2026-10-05/supersession.json"
     },
     {
       "governance_id": "decision-council-finality-resolution-2026-10-05",
@@ -24953,7 +24955,7 @@
       "authority": "Explicit current user two-record Council finality instruction",
       "decision_date": "2026-10-05",
       "effective_date": "2026-10-05",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/council-finality-resolution-2026-10-05/decisions.json",
@@ -24971,7 +24973,138 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
+      "implementation_status": "bounded background Council finality review",
+      "superseded_by": "decision-council-finality-resolution-2026-10-05-existing-entry-correction-authorized",
+      "supersession_evidence": "project-state/governance/bike-boulevard-lifecycle-correction-2026-10-05/supersession.json"
+    },
+    {
+      "governance_id": "owner-council-finality-resolution-2026-10-05-existing-entry-correction-authorized",
+      "category": "active owner decision",
+      "title": "owner-council-finality-resolution-2026-10-05",
+      "scope": {
+        "candidate_ids": [
+          "src-0f4496e4073a5e06",
+          "src-4cb190564a688d42"
+        ],
+        "task_ids": [
+          "council-finality-resolution-2026-10-05"
+        ]
+      },
+      "authority": "Explicit current owner one-record correction instruction",
+      "decision_date": "2026-10-05",
+      "effective_date": "2026-10-05",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/council-finality-resolution-2026-10-05/authority.json",
+          "sha256": "5bb94ac360f29a7e0abb025d357d026310c8e7abf0904d9802ee8c5d8bb655b1",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/bike-boulevard-lifecycle-correction-2026-10-05/authority.json",
+          "sha256": "81209f605dd7652fb049af56a5e18693f741186efc57dfbdff786b050a7ea5c3",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Resolve exactly the two frozen Council finality blockers src-0f4496e4073a5e06 and src-4cb190564a688d42. Use existing evidence first and complete active durable governance. Independently determine whether current mission/quality governance conclusively excludes the R-07-185 amendment fragment without enacted-package reconstruction; preserve finality uncertainty as history if excluded. Do not change canonical/adoption-resolution or Nob Hill plan records. Fully resolve authoritative enacted R-07-268 identity, versions, amendments/substitutes, required exhibits, held completeness and existing R2 exact usability; reject mismatched MatterTextMatterId. Apply only conclusive background inventory dispositions; preserve originals/provenance. No visitor-visible or R2 mutation. Deterministically regenerate queue/accounting; full project/governance/sealed-history/Hugo/rendered/CURRENT/diff validation. Integrate clean background results into main and synchronize planning-snapshot; no next population. No arbitrary historical recommendation precedence or owner decision invention. Explicit owner instruction in project-state/governance/bike-boulevard-lifecycle-correction-2026-10-05/authority.json supersedes only the inventory-only/no-visible phase restriction for src-4cb190564a688d42 to correct its existing entry and lifecycle in an unmerged manual-review PR. All completed finality, scope, quality, metadata-only source comparison, separate-map and duplicate findings remain controlling; the solar record and every other population remain unchanged. No R2 or merge authority.",
+      "required_actions": [
+        "Resolve exactly the two frozen Council finality blockers src-0f4496e4073a5e06 and src-4cb190564a688d42. Use existing evidence first and complete active durable governance. Independently determine whether current mission/quality governance conclusively excludes the R-07-185 amendment fragment without enacted-package reconstruction; preserve finality uncertainty as history if excluded. Do not change canonical/adoption-resolution or Nob Hill plan records. Fully resolve authoritative enacted R-07-268 identity, versions, amendments/substitutes, required exhibits, held completeness and existing R2 exact usability; reject mismatched MatterTextMatterId. Apply only conclusive background inventory dispositions; preserve originals/provenance. No visitor-visible or R2 mutation. Deterministically regenerate queue/accounting; full project/governance/sealed-history/Hugo/rendered/CURRENT/diff validation. Integrate clean background results into main and synchronize planning-snapshot; no next population. No arbitrary historical recommendation precedence or owner decision invention. Explicit owner instruction in project-state/governance/bike-boulevard-lifecycle-correction-2026-10-05/authority.json supersedes only the inventory-only/no-visible phase restriction for src-4cb190564a688d42 to correct its existing entry and lifecycle in an unmerged manual-review PR. All completed finality, scope, quality, metadata-only source comparison, separate-map and duplicate findings remain controlling; the solar record and every other population remain unchanged. No R2 or merge authority."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
       "implementation_status": "bounded background Council finality review"
+    },
+    {
+      "governance_id": "decision-council-finality-resolution-2026-10-05-existing-entry-correction-authorized",
+      "category": "active owner decision",
+      "title": "decision-council-finality-resolution-2026-10-05",
+      "scope": {
+        "candidate_ids": [
+          "src-0f4496e4073a5e06",
+          "src-4cb190564a688d42"
+        ],
+        "task_ids": [
+          "council-finality-resolution-2026-10-05"
+        ]
+      },
+      "authority": "Explicit current owner one-record correction instruction",
+      "decision_date": "2026-10-05",
+      "effective_date": "2026-10-05",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/council-finality-resolution-2026-10-05/decisions.json",
+          "sha256": "e4b756b3dc26f2d12868a80ee2ce36d501d230b1137bdd1b4f08a7d25710967b",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/bike-boulevard-lifecycle-correction-2026-10-05/authority.json",
+          "sha256": "81209f605dd7652fb049af56a5e18693f741186efc57dfbdff786b050a7ea5c3",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Apply exactly one quality exclusion and one historical inventory approval as recorded; no other record,publication population,R2 object or visitor-visible change. Explicit owner instruction in project-state/governance/bike-boulevard-lifecycle-correction-2026-10-05/authority.json supersedes only the inventory-only/no-visible phase restriction for src-4cb190564a688d42 to correct its existing entry and lifecycle in an unmerged manual-review PR. All completed finality, scope, quality, metadata-only source comparison, separate-map and duplicate findings remain controlling; the solar record and every other population remain unchanged. No R2 or merge authority.",
+      "required_actions": [
+        "Apply exactly one quality exclusion and one historical inventory approval as recorded; no other record,publication population,R2 object or visitor-visible change. Explicit owner instruction in project-state/governance/bike-boulevard-lifecycle-correction-2026-10-05/authority.json supersedes only the inventory-only/no-visible phase restriction for src-4cb190564a688d42 to correct its existing entry and lifecycle in an unmerged manual-review PR. All completed finality, scope, quality, metadata-only source comparison, separate-map and duplicate findings remain controlling; the solar record and every other population remain unchanged. No R2 or merge authority."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded background Council finality review"
+    },
+    {
+      "governance_id": "owner-bike-boulevard-lifecycle-correction-2026-10-05",
+      "category": "active owner decision",
+      "title": "bike-boulevard-lifecycle-correction-2026-10-05",
+      "state": "active",
+      "scope": {
+        "candidate_ids": [
+          "src-4cb190564a688d42"
+        ],
+        "task_ids": [
+          "bike-boulevard-lifecycle-correction-2026-10-05"
+        ]
+      },
+      "authority": "Explicit current owner instruction",
+      "decision_date": "2026-10-05",
+      "effective_date": "2026-10-05",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/bike-boulevard-lifecycle-correction-2026-10-05/authority.json",
+          "sha256": "81209f605dd7652fb049af56a5e18693f741186efc57dfbdff786b050a7ea5c3",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/bike-boulevard-lifecycle-correction-2026-10-05/supersession.json",
+          "sha256": "10316b67984e096fc39ba8c66944faf1b646a7702f07fe76d499a4567cec8d41",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Explicit owner instruction: Resolve exactly src-4cb190564a688d42. Preserve the completed Council finality review. Correct existing visitor-visible Related Bicycle Policy entry in content/transportation/bicycling/bike-plans.md in place, not a duplicate. Identify F/S R-07-268, enacted R-2007-109, historical 2007 legislation not necessarily current consolidated law, Mountain Road/Silver Avenue/14th Street routes, phased implementation, up to $400,000 Fund 340 funding, bikeway-plan/crossing coordination and final-version 18 mph provision. Keep existing R2 PDF, use verified official final source, do not publish companion map as required enactment exhibit. Freeze/govern exact record; no R2 or unrelated content edits. Full validation, Cloudflare preview, one unmerged visitor-visible PR against main, planning-snapshot exactly at PR head. No merge or production deployment authority.",
+      "required_actions": [
+        "Explicit owner instruction: Resolve exactly src-4cb190564a688d42. Preserve the completed Council finality review. Correct existing visitor-visible Related Bicycle Policy entry in content/transportation/bicycling/bike-plans.md in place, not a duplicate. Identify F/S R-07-268, enacted R-2007-109, historical 2007 legislation not necessarily current consolidated law, Mountain Road/Silver Avenue/14th Street routes, phased implementation, up to $400,000 Fund 340 funding, bikeway-plan/crossing coordination and final-version 18 mph provision. Keep existing R2 PDF, use verified official final source, do not publish companion map as required enactment exhibit. Freeze/govern exact record; no R2 or unrelated content edits. Full validation, Cloudflare preview, one unmerged visitor-visible PR against main, planning-snapshot exactly at PR head. No merge or production deployment authority."
+      ],
+      "prohibited_actions": [
+        "No R2 change, companion-map publication, unrelated content edit, PR merge or production deployment."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": []
     }
   ]
 }

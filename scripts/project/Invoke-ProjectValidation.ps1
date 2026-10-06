@@ -33,6 +33,8 @@ if ($LASTEXITCODE) { throw 'PR212 background publication closeout boundary faile
 if ($LASTEXITCODE) { throw 'Trails six-record background boundary failed.' }
 & python "$PSScriptRoot/CouncilFinalityResolution.py" guard
 if ($LASTEXITCODE) { throw 'Two-record Council finality background boundary failed.' }
+& python "$PSScriptRoot/BikeBoulevardLifecycleCorrection.py" guard
+if ($LASTEXITCODE) { throw 'Bike boulevard one-record correction guard failed.' }
 Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }
