@@ -37,6 +37,8 @@ if ($LASTEXITCODE) { throw 'Two-record Council finality background boundary fail
 if ($LASTEXITCODE) { throw 'Bike boulevard one-record correction guard failed.' }
 & python "$PSScriptRoot/Pr213PostMergeCloseout.py" guard
 if ($LASTEXITCODE) { throw 'PR213 closeout exact-delta guard failed.' }
+& python "$PSScriptRoot/McDuffieSourceRecovery.py" guard
+if ($LASTEXITCODE) { throw 'McDuffie exact one-record source recovery guard failed.' }
 Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }

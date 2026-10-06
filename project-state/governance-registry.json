@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "1eac7f4a802167b02b91467c3e1b563e9060127181b720c4ae3872d11bc9a651",
+  "audit_sha256": "cfa6aade13851080cc9090d917a24e57b778a88563590e3e495f067e28749c8f",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15251,7 +15251,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "5d05322e43a06650096d8a9e31e4e3628f12cf732ee70b1a046b544f0f949a44",
+          "sha256": "b276be42a55ac34ab52d88bbacd5523386f080ad0fd0c219f29491443bc935b0",
           "binding_pointers": [
             "/implementation"
           ]
@@ -25246,6 +25246,43 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": []
+    },
+    {
+      "governance_id": "owner-mcduffie-source-recovery-2026-10-06",
+      "category": "active owner decision",
+      "title": "One-record McDuffie factual source recovery",
+      "scope": {
+        "candidate_ids": [
+          "src-2f89e1bc040e1d33"
+        ],
+        "task_ids": [
+          "mcduffie-source-recovery-2026-10-06"
+        ]
+      },
+      "authority": "Explicit current owner instruction",
+      "decision_date": "2026-10-06",
+      "effective_date": "2026-10-06",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/mcduffie-source-recovery-2026-10-06/authority.json",
+          "sha256": "47e6587b2514c693ae34fe0e6c0813ca5077360f03ecc98d63dce0a73d0f35e1",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Current explicit owner instruction: exactly src-2f89e1bc040e1d33 factual City source/provenance recovery. Independently visit parent and share using installed Chrome/Playwright; inspect actual public download behavior and measure PDF against owner-retrieved 11940327 bytes / SHA256 48b6d8d5f91290f55a56b22398aa754e5696378e69e0693ecc9914cd285fee15 / 321 pages. Save immutable evidence. Resolve former factual inability to attest URL-to-bytes only if conclusive. Preserve historical evidence and all settled unrelated decisions. No new scope/quality/publication approval inferred from retrieval. Only authorized factual background inventory/queue changes; regenerate accounting and full validation. Background-only main/planning integration authorized after fresh governance and validation. No visitor-visible or R2 mutation, publication PR, Sandia record or other population.",
+      "required_actions": [
+        "Current explicit owner instruction: exactly src-2f89e1bc040e1d33 factual City source/provenance recovery. Independently visit parent and share using installed Chrome/Playwright; inspect actual public download behavior and measure PDF against owner-retrieved 11940327 bytes / SHA256 48b6d8d5f91290f55a56b22398aa754e5696378e69e0693ecc9914cd285fee15 / 321 pages. Save immutable evidence. Resolve former factual inability to attest URL-to-bytes only if conclusive. Preserve historical evidence and all settled unrelated decisions. No new scope/quality/publication approval inferred from retrieval. Only authorized factual background inventory/queue changes; regenerate accounting and full validation. Background-only main/planning integration authorized after fresh governance and validation. No visitor-visible or R2 mutation, publication PR, Sandia record or other population."
+      ],
+      "prohibited_actions": [
+        "No R2 or visitor-visible changes; no automatic publication eligibility."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "factual source recovery"
     }
   ]
 }
