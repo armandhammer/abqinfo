@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "a5387e5be0e27bfbfd2ae0febdb548d6a6e4804883fc8c01e0be7ac03e0bb2ba",
+  "audit_sha256": "63027f6aa633adac6cf1dcfb827e445ad81807bd74cf8a026261f9dd6954bdb3",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15251,7 +15251,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "26cca31bcabcb81aa4c3d8d93d98250b45b55ecbad1420c21e0e4dc7f88514a9",
+          "sha256": "5d0eb5f0a54e5b2459dd4ea02659e31d6f11c5c7459ea96c8af21bfad8ecf76d",
           "binding_pointers": [
             "/implementation"
           ]
@@ -25598,7 +25598,7 @@
       "authority": "Explicit current owner instruction",
       "decision_date": "2026-10-06",
       "effective_date": "2026-10-06",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/school-zone-timing-design-2026-10-06/authority.json",
@@ -25629,7 +25629,9 @@
           "requirement": "Explicit owner authorization for this exact unchanged original required"
         }
       ],
-      "implementation_status": "local review/design only"
+      "implementation_status": "local review/design only",
+      "superseded_by": "owner-school-zone-timing-design-2026-10-06-remote-checkpoint-authorized",
+      "supersession_evidence": "project-state/governance/school-zone-remote-checkpoint-2026-10-06/authority.json"
     },
     {
       "governance_id": "design-school-zone-timing-design-2026-10-06",
@@ -25691,6 +25693,109 @@
       "settled_decisions": [],
       "unresolved_gates": [],
       "implementation_status": "review/design prepared; exact archival owner gate remains"
+    },
+    {
+      "governance_id": "owner-school-zone-timing-design-2026-10-06-remote-checkpoint-authorized",
+      "category": "active owner decision",
+      "title": "Single owner/IPRA school-zone timing original: review and publication design",
+      "scope": {
+        "task_ids": [
+          "school-zone-timing-design-2026-10-06"
+        ],
+        "candidate_ids": [
+          "local-school-zone-timings-fade828a553fed60"
+        ],
+        "families": [
+          "school-zone-active-times"
+        ]
+      },
+      "authority": "Explicit current owner corrective instruction",
+      "decision_date": "2026-10-06",
+      "effective_date": "2026-10-06",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/school-zone-timing-design-2026-10-06/authority.json",
+          "sha256": "e1aa715dae76c5c8b010c1618c3bf4b6d7f2730077e225d79128537de28b28c6",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/school-zone-remote-checkpoint-2026-10-06/authority.json",
+          "sha256": "3be13cafbe01ca281269da4a387444ec8316464cdc08653c6d289235bb4103c4",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Current owner requests complete governed review/publication DESIGN of exactly the unchanged local ABQ Middle School and High School Zone Active Timings.pdf, SHA256 fade828a553fed6008cd38f45a3a80ac41e7136ab4a407d708a91a34cf06963a. Inspect all pages, privacy, provenance, every interval/qualifier, scope/quality and existing School Transportation Safety context. Prepare extendable Hugo-ready direct data and exact archival plan. Owner reports IPRA provenance/non-public City or APS availability and expects elementary data later; do not infer an official URL, effective date, current status or future dataset. No elementary work, unrelated records, reopening settled safety decisions, R2 overwrite/delete, or upload without exact standing/current authorization. No visible PR before unchanged-original archive/full public-byte verification. This task authorizes local/background review/design artifacts, not new R2 mutation or visitor-visible merge/deployment. Current corrective owner instruction authorizes exact background review/state integration into main and planning-snapshot after validation.",
+      "required_actions": [
+        "Current owner requests complete governed review/publication DESIGN of exactly the unchanged local ABQ Middle School and High School Zone Active Timings.pdf, SHA256 fade828a553fed6008cd38f45a3a80ac41e7136ab4a407d708a91a34cf06963a. Inspect all pages, privacy, provenance, every interval/qualifier, scope/quality and existing School Transportation Safety context. Prepare extendable Hugo-ready direct data and exact archival plan. Owner reports IPRA provenance/non-public City or APS availability and expects elementary data later; do not infer an official URL, effective date, current status or future dataset. No elementary work, unrelated records, reopening settled safety decisions, R2 overwrite/delete, or upload without exact standing/current authorization. No visible PR before unchanged-original archive/full public-byte verification. This task authorizes local/background review/design artifacts, not new R2 mutation or visitor-visible merge/deployment. Current corrective owner instruction authorizes exact background review/state integration into main and planning-snapshot after validation."
+      ],
+      "prohibited_actions": [
+        "No elementary dataset or unrelated population",
+        "No new R2 mutation without explicit exact authorization",
+        "No visitor-visible PR before archive verification"
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [
+        {
+          "gate_id": "school-zone-timing-design-2026-10-06:r2-owner-authorization",
+          "blocks_operations": [
+            "archive",
+            "external_mutation"
+          ],
+          "requirement": "Explicit owner authorization for this exact unchanged original required"
+        }
+      ],
+      "implementation_status": "exact background integration authorized; archival gate retained"
+    },
+    {
+      "governance_id": "owner-school-zone-remote-checkpoint-2026-10-06",
+      "category": "active owner decision",
+      "title": "Exact school-zone background review remote durability correction",
+      "scope": {
+        "task_ids": [
+          "school-zone-remote-checkpoint-2026-10-06"
+        ],
+        "candidate_ids": [
+          "local-school-zone-timings-fade828a553fed60"
+        ]
+      },
+      "authority": "Explicit current owner instruction",
+      "decision_date": "2026-10-06",
+      "effective_date": "2026-10-06",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/school-zone-remote-checkpoint-2026-10-06/authority.json",
+          "sha256": "3be13cafbe01ca281269da4a387444ec8316464cdc08653c6d289235bb4103c4",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/school-zone-remote-checkpoint-2026-10-06/supersession.json",
+          "sha256": "c7212b2c2d91e2aad22ec312da47b7930678b264c28daa5a844c9db9b0fe0ac0",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Current owner corrective instruction explicitly authorizes verifying and reusing the exact completed local school-zone review, saving immutable review/structured timing/design/archive-plan evidence and accurate CURRENT/checkpoint/active-task state, validating, committing and pushing background-only work, synchronizing main and chatgpt/planning-snapshot and verifying final remote refs. EXACT population is the unchanged owner/IPRA PDF SHA256 fade828a553fed6008cd38f45a3a80ac41e7136ab4a407d708a91a34cf06963a. No elementary work, other records, R2 mutation without separate exact authority, static-document publication PR before archive verification, visitor-visible changes, content merge or deployment. The prior local-only integration boundary is explicitly replaced only for validated background review/state integration.",
+      "required_actions": [
+        "Current owner corrective instruction explicitly authorizes verifying and reusing the exact completed local school-zone review, saving immutable review/structured timing/design/archive-plan evidence and accurate CURRENT/checkpoint/active-task state, validating, committing and pushing background-only work, synchronizing main and chatgpt/planning-snapshot and verifying final remote refs. EXACT population is the unchanged owner/IPRA PDF SHA256 fade828a553fed6008cd38f45a3a80ac41e7136ab4a407d708a91a34cf06963a. No elementary work, other records, R2 mutation without separate exact authority, static-document publication PR before archive verification, visitor-visible changes, content merge or deployment. The prior local-only integration boundary is explicitly replaced only for validated background review/state integration."
+      ],
+      "prohibited_actions": [
+        "No R2 upload without separate exact authorization",
+        "No visitor-visible or unrelated population change"
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "background push/ref synchronization authorized"
     }
   ]
 }

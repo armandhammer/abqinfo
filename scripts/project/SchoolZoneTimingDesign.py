@@ -64,7 +64,14 @@ def guard():
     changes=set(G.changed_paths(BASE)) if not st.end else set(G.git('diff',BASE,st.end,'--name-only').splitlines())
     assert changes<=set(pop['artifact_paths']),changes-set(pop['artifact_paths'])
     for path,h in start['protected_hashes'].items():assert hashlib.sha256(canonical_bytes(st.read_bytes(path))).hexdigest()==h,path
-    assert hashlib.sha256((G.ROOT/SOURCE).read_bytes()).hexdigest()==SHA
+    if (G.ROOT/SOURCE).exists():
+        assert hashlib.sha256((G.ROOT/SOURCE).read_bytes()).hexdigest()==SHA
+    else:
+        # A sealed review remains verifiable in a fresh clone without publishing
+        # the owner original before its separate archival authorization.
+        assert st.end, 'Unsealed review requires the exact local original'
+        inspection=st.load_json(P+'source-inspection.json')
+        assert inspection['sha256']==SHA and inspection['byte_size']==3013109 and inspection['page_count']==33
     if (G.ROOT/(P+'timings.json')).exists():
         data=st.load_json(P+'timings.json');assert len(data['schedules'])==30
         assert sum(len(x['intervals']) for x in data['schedules'])==61

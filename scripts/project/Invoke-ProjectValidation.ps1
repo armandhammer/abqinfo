@@ -45,6 +45,8 @@ if ($LASTEXITCODE) { throw 'McDuffie review exact-population guard failed.' }
 if ($LASTEXITCODE) { throw 'PR214 closeout exact-delta guard failed.' }
 & python "$PSScriptRoot/SchoolZoneTimingDesign.py" guard
 if ($LASTEXITCODE) { throw 'School-zone timing design boundary failed.' }
+& python "$PSScriptRoot/SchoolZoneRemoteCheckpoint.py" guard
+if ($LASTEXITCODE) { throw 'School-zone remote checkpoint boundary failed.' }
 Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }

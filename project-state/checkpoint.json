@@ -35334,7 +35334,7 @@
     }
   ],
   "next_owner_requested_task": {
-    "state": "queued_owner_requested_work_not_started",
+    "state": "review_complete_archival_authorization_pending",
     "filename": "ABQ Middle School and High School Zone Active Timings.pdf",
     "owner_context": {
       "local_location": "Owner says the file was placed in the local document-review folder.",
@@ -35344,7 +35344,26 @@
       "expected_followup": "Elementary-school timing information is expected later.",
       "publication_intent": "Owner explicitly wants this information added to ABQInfo in an appropriate location."
     },
-    "scope_of_this_closeout": "Record request only; file not inspected, classified, moved, archived, uploaded or published; no governance population created for it.",
-    "authority": "project-state/governance/pr214-postmerge-closeout-2026-10-06/authority.json"
+    "completed_review": "project-state/governance/school-zone-timing-design-2026-10-06/review.json",
+    "current_preflight": "project-state/governance/school-zone-remote-checkpoint-2026-10-06/archive-preflight.json",
+    "remaining_gate": "explicit_owner_r2_archival_authorization"
+  },
+  "school_zone_timing_review": {
+    "state": "review_complete_background_remote_checkpoint",
+    "source_sha256": "fade828a553fed6008cd38f45a3a80ac41e7136ab4a407d708a91a34cf06963a",
+    "source_bytes": 3013109,
+    "pages": 33,
+    "schools": 32,
+    "schedules": 30,
+    "intervals": 61,
+    "review": "project-state/governance/school-zone-timing-design-2026-10-06/review.json",
+    "timings": "project-state/governance/school-zone-timing-design-2026-10-06/timings.json",
+    "proposed_content": "project-state/governance/school-zone-timing-design-2026-10-06/proposed-content.md",
+    "archive_plan": "project-state/governance/school-zone-timing-design-2026-10-06/archive-plan.json",
+    "current_preflight": "project-state/governance/school-zone-remote-checkpoint-2026-10-06/archive-preflight.json",
+    "remaining_gate": "explicit_owner_r2_archival_authorization",
+    "archival_authorized": false,
+    "visible_pr_created": false,
+    "elementary_continuation": "Expected later; outside this population and not a blocker"
   }
 }
