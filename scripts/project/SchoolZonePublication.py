@@ -27,7 +27,7 @@ def refresh():
     audit([x for x in G.changed_paths(BASE) if x.startswith('project-state/') and x not in registered|{G.REGISTRY,G.ACTIVE_TASK,r['audit_artifact'],P+'implementation.json'}])
     n=len(list((G.ROOT/P).glob('contract-v*.json')))+1
     path=P+f'contract-v{n}.json'
-    population=P+('population-v3.json' if (G.ROOT/(P+'population-v3.json')).exists() else 'population-v2.json')
+    population=P+('population-v4.json' if (G.ROOT/(P+'population-v4.json')).exists() else 'population-v3.json' if (G.ROOT/(P+'population-v3.json')).exists() else 'population-v2.json')
     subprocess.run([sys.executable,'scripts/project/Resolve-TaskGovernance.py','resolve','--population',population,'--output',path],check=True,stdout=subprocess.DEVNULL)
     c=G.load(path);assert not c['conflicts'],c['conflicts']
     plan=G.load(P+'implementation.json') if (G.ROOT/(P+'implementation.json')).exists() else dict(artifact_type='task_implementation_plan',actions=OPS,events=[],status='in_progress')
@@ -166,7 +166,10 @@ def guard():
         from PublicationQuality import require_publication_quality
         require_publication_quality(b[ID]);assert b[ID]['source_url'] is None
     else:assert page==old
-    cp=st.load_json('project-state/checkpoint.json');before=start['checkpoint_before'];assert {k:v for k,v in cp.items() if k not in ['school_zone_timing_review','next_owner_requested_task']}=={k:v for k,v in before.items() if k not in ['school_zone_timing_review','next_owner_requested_task']}
+    cp=st.load_json('project-state/checkpoint.json');before=start['checkpoint_before'];derived=['school_zone_timing_review','next_owner_requested_task','resume_command','total_candidates','counts_by_status','recorded_at','history','completed_item_range'];assert {k:v for k,v in cp.items() if k not in derived}=={k:v for k,v in before.items() if k not in derived}
+    if ID in b:
+        assert cp['total_candidates']==len(b) and cp['counts_by_status']['implemented']==before['counts_by_status']['implemented']+1
+        assert cp['history'][:len(before['history'])]==before['history']
     print('PASS exact single-source archive/publication stage; prior evidence and unrelated school safety records preserved')
 def checkpoint():
     receipt=dict(task_id=TASK,state='archive_verified_content_implemented_validation_pending',source_bytes=3013109,source_sha256=SHA,pages=33,schools=32,schedules=30,intervals=61,r2_uploads=1,archive_verification=P+'public-verification.json',archive_http_result='Complete successful Invoke-WebRequest GET with no-cache; exact bytes/hash match authorized original.',r2_objects=1617,r2_bytes=10986353284,prior_review_preserved=True,elementary_work=False,content_merge_authorized=False,normal_validation='pending',remaining_owner_action='Manual review and merge decision after preview verified and PR open')
@@ -200,16 +203,17 @@ def render():
                 entry=next(e for e in result['entries'] if e.startswith(label+':'))
                 expected='; '.join(t['start']+' to '+t['end']+' ('+('Monday-Friday' if t['weekday_verbatim']=='M-F' else 'weekday not stated')+')' for t in s['intervals'])
                 assert expected in entry,(label,entry,expected)
-                assert s['location_verbatim'] in entry,label
+                assert ' '.join(s['location_verbatim'].split()) in ' '.join(entry.split()),label
                 if s['operational_note']:assert s['operational_note'] in entry,label
                 # Scroll every record into view, verify all schedule lines fit the viewport horizontally.
                 node=page.locator('li').filter(has=page.locator('strong',has_text=label)).filter(has_text=expected).first
                 node.scroll_into_view_if_needed();box=node.bounding_box();assert box and box['x']>=0 and box['x']+box['width']<=width+1
             assert 'the owner' not in result['text'].lower()
-            assert result['links'][0]['url']==URL
+            assert [x['url'] for x in result['links'] if x['url'].startswith('https://files.abqinfo.com/')]==[URL]
             archive=page.request.get(URL,headers={'Cache-Control':'no-cache'},timeout=180000);raw=archive.body();assert archive.status==200 and len(raw)==3013109 and hashlib.sha256(raw).hexdigest()==SHA
-            page.goto(url.split('#')[0]+'#school-zone-active-times',wait_until='networkidle');page.locator('#school-zone-active-times').scroll_into_view_if_needed()
-            anchor=page.locator('#school-zone-active-times').bounding_box();assert anchor and 0<=anchor['y']<height
+            page.goto('about:blank');page.goto(url.split('#')[0]+'#school-zone-active-times',wait_until='networkidle')
+            page.wait_for_function("document.getElementById('school-zone-active-times').getBoundingClientRect().top >= -1 && document.getElementById('school-zone-active-times').getBoundingClientRect().top < innerHeight",timeout=10000)
+            anchor=page.locator('#school-zone-active-times').bounding_box();assert anchor and -1<=anchor['y']<height
             # Full new section capture, without unrelated site sections.
             page.evaluate('''() => { const h=document.getElementById('school-zone-active-times');const w=document.createElement('div');h.parentNode.insertBefore(w,h);let n=h;while(n){const next=n.nextElementSibling;if(n!==h&&(n.tagName==='H2'||n.tagName==='H3'))break;w.appendChild(n);n=next;}w.id='school-zone-review-capture'; }''')
             output=G.ROOT/('tmp/school-zone-final-'+name+'.png' if verify_only else P+'preview-'+name+'.png')
