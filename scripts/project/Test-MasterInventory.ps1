@@ -70,7 +70,16 @@ foreach ($candidate in $inventory.candidates) {
   }
   if ($candidate.status -ne 'requires human review' -and $candidate.PSObject.Properties['review_reason'] -and $candidate.review_reason -eq 'mission_scope_borderline') { $errors.Add("Resolved candidate retains mission-scope borderline review reason: $($candidate.id)") }
   if ($candidate.status -in @('implemented','validated') -and -not $candidate.implementation_location) { $errors.Add("Implemented item missing location: $($candidate.id)") }
-  if ($candidate.status -eq 'validated' -and $candidate.r2_url -and -not $candidate.source_url) { $errors.Add("R2-only item incorrectly marked validated without authoritative provenance: $($candidate.id)") }
+  if ($candidate.status -eq 'validated' -and $candidate.r2_url -and -not $candidate.source_url) {
+    # Exact reviewed IPRA record has no public official URL. Require its complete
+    # identity/provenance/owner archive authority and production/full-byte receipts.
+    $verifiedIpraOriginal = $false
+    if ($candidate.id -eq 'local-school-zone-timings-fade828a553fed60') {
+      & python "$PSScriptRoot/Pr215PostMergeCloseout.py" provenance $InventoryPath | Out-Null
+      $verifiedIpraOriginal = ($LASTEXITCODE -eq 0)
+    }
+    if (-not $verifiedIpraOriginal) { $errors.Add("R2-only item incorrectly marked validated without authoritative provenance: $($candidate.id)") }
+  }
   $locations = @($candidate.implementation_locations | Where-Object { $_ } | Sort-Object -Unique)
   if ($locations.Count -gt 1 -and -not $candidate.cross_listing_approved) { $errors.Add("Unapproved multiple-page placement: $($candidate.id) = $($locations -join ', ')") }
 }

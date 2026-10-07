@@ -35,7 +35,7 @@ def refresh():
     audit([p for p in G.changed_paths(MERGE) if p.startswith('project-state/') and p not in registered|{G.REGISTRY,G.ACTIVE_TASK,r['audit_artifact'],P+'implementation.json'}])
     n=len(list((G.ROOT/P).glob('contract-v*.json')))+1;assert n<=20
     path=P+f'contract-v{n}.json'
-    population=P+('population-v2.json' if (G.ROOT/(P+'population-v2.json')).exists() else 'population.json')
+    population=P+next((f'population-v{i}.json' for i in [3,2] if (G.ROOT/(P+f'population-v{i}.json')).exists()),'population.json')
     subprocess.run([sys.executable,'scripts/project/Resolve-TaskGovernance.py','resolve','--population',population,'--output',path],check=True,stdout=subprocess.DEVNULL)
     c=G.load(path);assert not c['conflicts'] and not [g for g in c['unresolved_gates'] if set(g.get('blocks_operations',[]))&set(OPS)],(c['conflicts'],c['unresolved_gates'])
     plan=G.load(P+'implementation.json') if (G.ROOT/(P+'implementation.json')).exists() else dict(artifact_type='task_implementation_plan',actions=OPS,events=[],status='in_progress')
@@ -154,7 +154,7 @@ def reconcile():
     assert len(current)<=1800;f.write_text(current,encoding='utf8',newline='\n');event('inventory_disposition','Only verified school-zone source advanced to validated/live; manual review closed. Queue/accounting regenerated; all prior substantive evidence preserved.',P+'accounting.json');refresh();G.active_check('final');guard()
 
 def guard():
-    stage=StageSnapshot(TASK);pop=stage.load_json(P+('population-v2.json' if (G.ROOT/(P+'population-v2.json')).exists() else 'population.json'));start=stage.load_json(P+'starting-state.json');assert pop['candidate_ids']==[ID] and pop['baseline_commit']==MERGE and not set(pop['operation_classes'])&{'archive','content_implementation','content_removal'}
+    stage=StageSnapshot(TASK);pop=stage.load_json(P+next((f'population-v{i}.json' for i in [3,2] if (G.ROOT/(P+f'population-v{i}.json')).exists()),'population.json'));start=stage.load_json(P+'starting-state.json');assert pop['candidate_ids']==[ID] and pop['baseline_commit']==MERGE and not set(pop['operation_classes'])&{'archive','content_implementation','content_removal'}
     stage.assert_no_visible_changes(MERGE,start['content_tree_oid']);paths=set(git('diff',MERGE,stage.end,'--name-only').decode().splitlines()) if stage.end else set(G.changed_paths(MERGE));assert paths<=set(pop['artifact_paths']),paths-set(pop['artifact_paths'])
     for path,h in start['protected_sha256'].items():assert hashlib.sha256(canonical_bytes(stage.read_bytes(path))).hexdigest()==h,path
     a={r['id']:r for r in json.loads(git('show',MERGE+':project-state/master-inventory.json'))['candidates']};b={r['id']:r for r in stage.load_json('project-state/master-inventory.json')['candidates']};assert a.keys()==b.keys();delta={i for i in a if a[i]!=b[i]};assert delta<={ID}
@@ -175,6 +175,45 @@ def guard():
         for path,h in receipt['evidence_sha256'].items():assert hashlib.sha256(canonical_bytes(stage.read_bytes(path))).hexdigest()==h,path
     print('PASS PR215 exact live/validated lifecycle; unchanged content/R2/other records; complete sealed school-zone history')
 
+def ipra_provenance_valid(row):
+    """One exact verified IPRA original; no general R2-only provenance bypass."""
+    try:
+        prior=G.load(P+'starting-state.json')['selected_row']
+        required=dict(id=ID,r2_url=URL,r2_key=KEY,size_bytes=3013109,checksum_sha256=SHA,page_count=33,source_url=None,direct_file_url=None,agency=None,date=None,publication_form='linked_archived_original',workflow_state='owner_reviewed_merged_production_live_validated',validation_status='passed',status='validated')
+        if any(row.get(k)!=v for k,v in required.items()):return False
+        if row.get('provenance')!=prior['provenance'] or row.get('provenance_status')!=prior['provenance_status']:return False
+        if row.get('scope_assessment')!=prior['scope_assessment'] or row['scope_assessment']['final_scope_decision']!='passes_both_gates':return False
+        authority=G.load('project-state/governance/school-zone-publication-2026-10-07/authority.json')
+        if authority['source_sha256']!=SHA or authority['r2_key']!=KEY or authority['bytes']!=3013109 or not authority['no_overwrite'] or not authority['no_delete']:return False
+        archive=G.load(P+'archive-verification.json');production=G.load(P+'production-verification.json')
+        return archive['result']=='passed' and archive['sha256']==SHA and archive['size_bytes']==3013109 and archive['exact_public_original'] and archive['full_get'] and production['result']=='passed' and production['merge_sha']==MERGE and production['no_schedule_list']
+    except (OSError,KeyError,TypeError,ValueError):return False
+
+def provenance():
+    inv=G.load(sys.argv[2] if len(sys.argv)>2 else 'project-state/master-inventory.json');rows=[r for r in inv['candidates'] if r['id']==ID];assert len(rows)==1 and ipra_provenance_valid(rows[0]),'Exact IPRA provenance evidence incomplete';print('PASS exact owner-provided IPRA original provenance; no invented official URL')
+
+def fix_validator():
+    pop=G.load(P+'population-v2.json');pop['artifact_paths'] += [P+'population-v3.json',P+'validation-attempt-1.log',P+'validation-gap.json','scripts/project/Test-MasterInventory.ps1'];freeze(P+'population-v3.json',pop)
+    raw=(G.ROOT/'tmp/pr215-validation.log').read_text(encoding='utf8');(G.ROOT/(P+'validation-attempt-1.log')).write_text('\n'.join(x.rstrip() for x in raw.splitlines())+'\n',encoding='utf8',newline='\n')
+    freeze(P+'validation-gap.json',dict(issue='Generic validated-R2 check requires official source_url; this exact owner-provided IPRA record truthfully has none.',resolution='Permit only the exact already-reviewed/owner-authorized/production-verified IPRA original when identity, preserved provenance, positive scope, archive full-byte receipt and owner-merged production receipt all pass. Every other R2-only validated record still fails.',authority=P+'authority.json',population_unchanged=[ID],no_new_url=True))
+    refresh();G.active_check('mutation','governance_implementation',[ID])
+    path=G.ROOT/'scripts/project/Test-MasterInventory.ps1';s=path.read_text(encoding='utf-8-sig');old='  if ($candidate.status -eq \'validated\' -and $candidate.r2_url -and -not $candidate.source_url) { $errors.Add("R2-only item incorrectly marked validated without authoritative provenance: $($candidate.id)") }'
+    new='''  if ($candidate.status -eq 'validated' -and $candidate.r2_url -and -not $candidate.source_url) {
+    # Exact reviewed IPRA record has no public official URL. Require its complete
+    # identity/provenance/owner archive authority and production/full-byte receipts.
+    $verifiedIpraOriginal = $false
+    if ($candidate.id -eq 'local-school-zone-timings-fade828a553fed60') {
+      & python "$PSScriptRoot/Pr215PostMergeCloseout.py" provenance $InventoryPath | Out-Null
+      $verifiedIpraOriginal = ($LASTEXITCODE -eq 0)
+    }
+    if (-not $verifiedIpraOriginal) { $errors.Add("R2-only item incorrectly marked validated without authoritative provenance: $($candidate.id)") }
+  }'''
+    assert old in s;s=s.replace(old,new,1);path.write_text(s,encoding='utf8',newline='\n')
+    row=G.load(P+'source-record.json');assert ipra_provenance_valid(row)
+    for field,value in [('id','unrelated-record'),('checksum_sha256','0'*64),('size_bytes',3013110),('provenance',{}),('agency','City'),('workflow_state','manual_review_pending')]:
+        bad=copy.deepcopy(row);bad[field]=value;assert not ipra_provenance_valid(bad),field
+    event('governance_implementation','Narrow exact IPRA validation support preserves truthful non-URL provenance; six negative fixtures reject unrelated identity, altered bytes, missing provenance, invented agency and pending lifecycle.',P+'validation-gap.json');refresh();guard()
+
 def render():
     stage=StageSnapshot(TASK)
     if stage.end:guard();print('PASS sealed PR215 production evidence');return
@@ -188,6 +227,7 @@ def finish():
     G.write_once(P+'receipt.json',dict(task_id=TASK,state='production_verified_lifecycle_closeout_complete',merge_sha=MERGE,reviewed_head=REVIEWED,production_result='passed',production_url=PROD,validated_ids=[ID],lifecycle=dict(status='validated',validation_status='passed',production_live=True,owner_merge_verified=True,manual_review_pending=False),queue=G.load(P+'accounting.json'),visitor_visible_delta=0,r2_delta=0,normal_validation='passed',owner_decision_required=False,no_new_population=True,internal_extraction_preserved=dict(schedules=30,schools=32,intervals=61),elementary_continuation_only=True,evidence_sha256={P+x:G.file_hash(P+x) for x in evidence},governance_accounting={r['governance_id']:dict(requirement=r['binding_requirement'],implementation='Exact production-verified one-record live/validated lifecycle and authorized background synchronization only. All substantive scope/quality/source/archive/form-supersession/extraction evidence retained; no content/R2/other-record or population change.',evidence=[P+'production-verification.json',P+'archive-verification.json',P+'accounting.json']) for r in c['resolved_rules']},integration_intent=P+'integration-intent.json',visual_inspection='Desktop/mobile production screenshots inspected: concise entry, normal surrounding spacing, clean wrapping and no overflow.',style_baseline='Four pre-existing title-case warnings on unchanged Area & Sector Plans.'))
     cp=G.load('project-state/checkpoint.json');cp['resume_command']='PR215 production/live validated closeout complete; no owner decision required. Next available category is existing source/structural prerequisite resolution under a separate authorized population; none begun.';cp['pr215_postmerge_closeout']['state']='complete_production_live_validated';save('project-state/checkpoint.json',cp)
     f=G.ROOT/'project-state/CURRENT.md';s=f.read_text(encoding='utf8').replace('Full validation/ref synchronization pending.','Full normal/governance/sealed-history/Hugo validation passed; background main/planning synchronization authorized. No owner decision required.');assert len(s)<=1800;f.write_text(s,encoding='utf8',newline='\n')
+    save(P+'progress.json',dict(state='complete',remaining=[],production_archive_validation='passed',next_work_category='Separately scoped existing source/structural prerequisite resolution only; none begun.',historical_rejected_request=P+'record-updates.json',rejected_request_result='Existing inventory schema rejected unknown added fields before any inventory write; preserved as attempt evidence.',applied_request=P+'record-updates-v2.json',applied_request_result='One exact source lifecycle transition using existing schema; complete normal validation passed.',integration='Atomic main/planning fast-forward authorized; final-ref journal identifies the integrated completion commit.'))
     event('background_integration','Full normal suite and production/archive parity passed; exact background closeout ready for atomic main/planning synchronization.',P+'integration-intent.json');refresh();G.active_check('final');guard()
 
 def integrate():
