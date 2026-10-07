@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 import TaskGovernance as G
 from PgsLegislativePublication import save, audit
 from SchoolZonePublication import ID, SHA, URL, SOURCE, KEY, PAGE
-from WorkflowStageLifecycle import StageSnapshot
+from WorkflowStageLifecycle import StageSnapshot, canonical_bytes
 TASK='school-zone-document-entry-correction-2026-10-07'
 P='project-state/governance/'+TASK+'/'
 BASE='21e084111836b627443a381d15b8f84aad6685be'
@@ -100,7 +100,7 @@ def guard():
     changed=set(G.git('diff',BASE,st.end,'--name-only').splitlines()) if st.end else set(G.changed_paths(BASE));assert changed<=set(pop['artifact_paths'])|{PAGE},changed-set(pop['artifact_paths'])-{PAGE}
     start=st.load_json(P+'starting-state.json')
     for path,h in start['prior_evidence_sha256'].items():assert G.file_hash(path)==h,path
-    for path,key in [('project-state/r2-inventory.json','r2_inventory_sha256'),('project-state/r2-storage-policy.json','r2_policy_sha256')]:assert G.file_hash(path)==start[key]
+    for path,key in [('project-state/r2-inventory.json','r2_inventory_sha256'),('project-state/r2-storage-policy.json','r2_policy_sha256')]:assert hashlib.sha256(canonical_bytes(st.read_bytes(path))).hexdigest()==start[key]
     page=st.read_text(PAGE);old=G.git('show',BASE+':'+PAGE)+'\n'
     if TITLE in page:
         a=old.index('### School Zone Active Times');b=old.index('### APS Vision Zero Task Force Records',a);assert page==old[:a]+ENTRY+old[b:]
@@ -152,4 +152,21 @@ def render():
     else:save(P+'preview.json',value);print('PASS corrected desktop/mobile: one document entry, no schedule list/heading, surrounding entries identical, exact PDF GET, no overflow')
 def receipt():
     c=G.load(G.load(G.ACTIVE_TASK)['contract']);save(P+'receipt.json',dict(task_id=TASK,state='concise_document_entry_implemented_validation_pending',owner_supersession=P+'supersession.json',title=TITLE,description=DESCRIPTION,publication_form='linked_archived_original',internal_dataset=REVIEW+'timings.json',internal_schedules=30,internal_schools=32,internal_intervals=61,prior_evidence_preserved=True,r2_mutations=0,normal_validation='pending',pr_number=215,pr_state='OPEN_UNMERGED',remaining_owner_action='Review PR215 after corrected preview/validation',governance_accounting={x['governance_id']:dict(requirement=x['binding_requirement'],result='Only owner-authorized linked-document publication form and exact source metadata corrected; prior review/extraction, archive/public-byte, scope/quality and family decisions preserved. No individual school/timing rows on site, R2 mutation, unrelated population or merge.',evidence=[P+'authority.json',P+'supersession.json',P+'publication.md',P+'source-record.json',REVIEW+'timings.json',PRIOR+'public-verification.json']) for x in c['resolved_rules']}));refresh();G.active_check('final');guard()
+def finish():
+    G.active_check('mutation','governance_implementation',[ID]);guard()
+    log=(G.ROOT/(P+'validation.log')).read_text(encoding='utf-8-sig');assert '"Hugo": "passed"' in log
+    (G.ROOT/(P+'validation.log')).write_text('\n'.join(x.rstrip() for x in log.splitlines())+'\n',encoding='utf-8',newline='\n')
+    preview=G.load(P+'preview.json');assert all(x['surrounding_entries_unchanged'] and not x['overflow'] and not x['schoolZoneHeading'] for x in preview['results'])
+    pr=G.load(P+'pr.json');assert pr['number']==215 and pr['state']=='OPEN' and pr['mergedAt'] is None
+    proof=G.load(P+'receipt.json');proof.update(state='complete_open_unmerged_owner_review',normal_validation='passed',validation_log_sha256=G.file_hash(P+'validation.log'),corrected_preview=preview['url'],preview_evidence=P+'preview.json',visual_inspection='Desktop/mobile screenshots inspected; one normal entry, clean wrapping and normal adjacent-entry spacing, no redundant heading/excessive gap.',r2_live_verification=P+'final-verification.json',remaining_owner_action='Manual review and merge decision for OPEN UNMERGED PR215 only',style_baseline='Four pre-existing title-case warnings on unchanged Area & Sector Plans; corrected school-zone entry has no style warnings.')
+    for x in proof['governance_accounting'].values():x['result']+=' Full normal/governance/sealed-history/Hugo validation and corrected desktop/mobile Chrome render/link/absence/parity checks passed; PR stays open/unmerged.';x['evidence'] += [P+'preview.json',P+'validation.log',P+'pr.json',P+'final-verification.json']
+    save(P+'receipt.json',proof)
+    inv=G.load('project-state/master-inventory.json');row=next(x for x in inv['candidates'] if x['id']==ID);row['review_preview']=preview['url'];save('project-state/master-inventory.json',inv);save(P+'source-record.json',row)
+    cp=G.load('project-state/checkpoint.json')
+    for field in ['school_zone_timing_review','next_owner_requested_task']:cp[field].update(state='complete_open_unmerged_document_entry_review',preview=preview['url'],remaining_gate='owner_manual_pr_review')
+    cp['resume_command']='Review OPEN UNMERGED PR215 corrected concise school-zone PDF entry. Full governance/sealed-history/Hugo/Chrome checks passed; exhaustive timings and original archive preserved. No merge/deploy, R2 mutation or elementary work authorized.';save('project-state/checkpoint.json',cp)
+    f=G.ROOT/'project-state/CURRENT.md';s=f.read_text(encoding='utf-8-sig').replace('NEXT: validate corrected preview and update OPEN UNMERGED PR #215 for owner review; no merge/deploy authority.','NEXT: owner review of [OPEN UNMERGED PR #215](https://github.com/armandhammer/abqinfo/pull/215). Full normal/governance/sealed-history/Hugo and corrected Chrome desktop/mobile checks passed; no merge/deploy authority.').replace('governance/'+TASK+'/authority.json','governance/'+TASK+'/receipt.json');f.write_text(s,encoding='utf-8',newline='\n')
+    body=G.ROOT/(P+'pr-description.md');s=body.read_text(encoding='utf-8-sig').replace('- Corrected Cloudflare preview inspection checks the concise entry, absence of the former schedule list/heading, surrounding-entry parity, PDF link and clean desktop/mobile layout.','- Installed Chrome desktop/mobile preview inspection passed: one concise entry, no schedule list or redundant heading, unchanged surrounding entries, exact PDF GET and no horizontal overflow.').replace('- Full normal validation is running; final results will be recorded before handoff.','- Full normal validation, governance/freshness, sealed history, Hugo, PR-description and diff checks passed. Four pre-existing title-case warnings on the unchanged Area & Sector Plans page remain; the corrected entry has none.');body.write_text(s,encoding='utf-8',newline='\n')
+    plan=G.load(P+'implementation.json');plan['events'].append(dict(operation='governance_implementation',candidate_ids=[ID],action='implements',use_contract_record_rules=True,summary='Full normal validation and Chrome desktop/mobile correction inspection passed. Prior extraction/review and archive original/public bytes preserved; R2 live listing identical. PR215 description corrected and open/unmerged; owner review only.',evidence=P+'receipt.json'));save(P+'implementation.json',plan)
+    refresh();subprocess.run([sys.executable,'scripts/project/Build-ConsolidatedHumanReviewQueue.py'],check=True);refresh();G.active_check('final');guard()
 if __name__=='__main__':globals()[sys.argv[1] if len(sys.argv)>1 else 'guard']()

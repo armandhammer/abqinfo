@@ -15,7 +15,7 @@ The visitor-facing page links to the document without reproducing individual sch
 ## Validation
 
 - The original archive remains unchanged; complete public-download size/SHA-256 verification passed.
-- Corrected Cloudflare preview inspection checks the concise entry, absence of the former schedule list/heading, surrounding-entry parity, PDF link and clean desktop/mobile layout.
-- Full normal validation is running; final results will be recorded before handoff.
+- Installed Chrome desktop/mobile preview inspection passed: one concise entry, no schedule list or redundant heading, unchanged surrounding entries, exact PDF GET and no horizontal overflow.
+- Full normal validation, governance/freshness, sealed history, Hugo, PR-description and diff checks passed. Four pre-existing title-case warnings on the unchanged Area & Sector Plans page remain; the corrected entry has none.
 
 PR #215 remains open and unmerged for manual editorial review.
