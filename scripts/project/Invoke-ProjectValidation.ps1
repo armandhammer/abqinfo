@@ -47,6 +47,10 @@ if ($LASTEXITCODE) { throw 'PR214 closeout exact-delta guard failed.' }
 if ($LASTEXITCODE) { throw 'School-zone timing design boundary failed.' }
 & python "$PSScriptRoot/SchoolZoneRemoteCheckpoint.py" guard
 if ($LASTEXITCODE) { throw 'School-zone remote checkpoint boundary failed.' }
+& python "$PSScriptRoot/SchoolZonePublication.py" guard
+if ($LASTEXITCODE) { throw 'School-zone publication guard failed.' }
+& python "$PSScriptRoot/SchoolZoneDocumentEntryCorrection.py" guard
+if ($LASTEXITCODE) { throw 'School-zone document-entry correction failed.' }
 Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }
