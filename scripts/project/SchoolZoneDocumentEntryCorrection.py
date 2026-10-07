@@ -132,8 +132,16 @@ def render():
             # Surrounding section must be semantically identical to prior inspected preview.
             old=browser.new_page(viewport=dict(width=width,height=height));old.goto('https://22bd93cd.abqinfo.pages.dev/transportation/safety-crash-data/',wait_until='networkidle',timeout=90000)
             surrounding=old.evaluate(r'''() => {const h=document.getElementById('school-transportation-safety');let n=h.nextElementSibling;const nodes=[];let skip=false;while(n&&n.tagName!=='H2'){if(n.id==='school-zone-active-times')skip=true;if(n.id==='aps-vision-zero-task-force-records')skip=false;if(!skip)nodes.push(n);n=n.nextElementSibling;}return {text:nodes.map(x=>x.innerText).join('\n'),links:nodes.flatMap(x=>Array.from(x.querySelectorAll('a')).map(a=>({text:a.innerText,url:a.href}))) };}''');old.close()
-            assert result['text'].replace(TITLE+'\n\n'+DESCRIPTION,'').replace('\n\n','\n').strip()==surrounding['text'].replace('\n\n','\n').strip()
-            assert [x for x in result['links'] if x['url']!=URL]==surrounding['links']
+            assert ' '.join(result['text'].replace(TITLE+'\n\n'+DESCRIPTION,'').split())==' '.join(surrounding['text'].split())
+            from urllib.parse import urlsplit
+            def comparable(links):
+                values=[]
+                for x in links:
+                    target=urlsplit(x['url'])
+                    normalized=target.path+('?' + target.query if target.query else '')+('#'+target.fragment if target.fragment else '') if target.hostname and target.hostname.endswith('.abqinfo.pages.dev') else x['url']
+                    values.append(dict(text=x['text'],url=normalized))
+                return values
+            assert comparable([x for x in result['links'] if x['url']!=URL])==comparable(surrounding['links'])
             download=page.request.get(URL,headers={'Cache-Control':'no-cache'},timeout=180000);body=download.body();assert download.status==200 and len(body)==3013109 and hashlib.sha256(body).hexdigest()==SHA
             li.scroll_into_view_if_needed();box=li.bounding_box();assert box and box['x']>=0 and box['x']+box['width']<=width+1
             output=G.ROOT/('tmp/pr215-correction-final-'+name+'.png' if verify_only else P+'preview-'+name+'.png');page.screenshot(path=str(output),full_page=False)
