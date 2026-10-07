@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "678610487cf54800ba176474be3f6e43093d11c1c37c639114eebe1bfe66a2fd",
+  "audit_sha256": "9a4fe6be23eef33e1a99a05074a1307ac30b0185db71848ef30306ee74b0d5af",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15251,7 +15251,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "09c29337442b64cf181b32eee23a68a39a8ce6d7e4f46489536dff85d6e47824",
+          "sha256": "f6c0bd50f166a448b2ff3f544c5ec876b1e23888b53fefaff14a735dc124c173",
           "binding_pointers": [
             "/implementation"
           ]
@@ -25988,7 +25988,7 @@
       "authority": "Explicit current owner editorial supersession",
       "decision_date": "2026-10-06",
       "effective_date": "2026-10-07",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/school-zone-timing-design-2026-10-06/review.json",
@@ -26038,7 +26038,9 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "review/design prepared; exact archival owner gate remains"
+      "implementation_status": "review/design prepared; exact archival owner gate remains",
+      "superseded_by": "design-school-zone-timing-design-2026-10-06-document-entry-form-postmerge-lifecycle",
+      "supersession_evidence": "project-state/governance/pr215-postmerge-closeout-2026-10-07/supersession.json"
     },
     {
       "governance_id": "owner-school-zone-timing-design-2026-10-06-remote-checkpoint-authorized-publication-authorized-document-entry-form",
@@ -26058,7 +26060,7 @@
       "authority": "Explicit current owner editorial supersession",
       "decision_date": "2026-10-06",
       "effective_date": "2026-10-07",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/school-zone-timing-design-2026-10-06/authority.json",
@@ -26110,7 +26112,9 @@
           "requirement": "Explicit owner authorization for this exact unchanged original required"
         }
       ],
-      "implementation_status": "exact background integration authorized; archival gate retained"
+      "implementation_status": "exact background integration authorized; archival gate retained",
+      "superseded_by": "owner-school-zone-timing-design-2026-10-06-remote-checkpoint-authorized-publication-authorized-document-entry-form-postmerge-lifecycle",
+      "supersession_evidence": "project-state/governance/pr215-postmerge-closeout-2026-10-07/supersession.json"
     },
     {
       "governance_id": "owner-school-zone-remote-checkpoint-2026-10-06-publication-authorized-document-entry-form",
@@ -26127,7 +26131,7 @@
       "authority": "Explicit current owner editorial supersession",
       "decision_date": "2026-10-06",
       "effective_date": "2026-10-07",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/school-zone-remote-checkpoint-2026-10-06/authority.json",
@@ -26170,13 +26174,15 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "background push/ref synchronization authorized"
+      "implementation_status": "background push/ref synchronization authorized",
+      "superseded_by": "owner-school-zone-remote-checkpoint-2026-10-06-publication-authorized-document-entry-form-postmerge-lifecycle",
+      "supersession_evidence": "project-state/governance/pr215-postmerge-closeout-2026-10-07/supersession.json"
     },
     {
       "governance_id": "owner-school-zone-publication-2026-10-07-document-entry-form",
       "category": "active owner decision",
       "title": "school-zone-publication-2026-10-07",
-      "state": "active",
+      "state": "superseded",
       "scope": {
         "candidate_ids": [
           "local-school-zone-timings-fade828a553fed60"
@@ -26226,13 +26232,15 @@
       "releases_gates": [
         "school-zone-timing-design-2026-10-06:r2-owner-authorization"
       ],
-      "implementation_status": "authorized exact archival and manual-review publication"
+      "implementation_status": "authorized exact archival and manual-review publication",
+      "superseded_by": "owner-school-zone-publication-2026-10-07-document-entry-form-postmerge-lifecycle",
+      "supersession_evidence": "project-state/governance/pr215-postmerge-closeout-2026-10-07/supersession.json"
     },
     {
       "governance_id": "owner-school-zone-document-entry-correction-2026-10-07",
       "category": "active owner decision",
       "title": "school-zone-document-entry-correction-2026-10-07",
-      "state": "active",
+      "state": "superseded",
       "scope": {
         "candidate_ids": [
           "local-school-zone-timings-fade828a553fed60"
@@ -26270,7 +26278,382 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
+      "implementation_status": "exact PR215 document-entry correction",
+      "superseded_by": "owner-school-zone-document-entry-correction-2026-10-07-postmerge-lifecycle",
+      "supersession_evidence": "project-state/governance/pr215-postmerge-closeout-2026-10-07/supersession.json"
+    },
+    {
+      "governance_id": "design-school-zone-timing-design-2026-10-06-document-entry-form-postmerge-lifecycle",
+      "category": "active family decision",
+      "title": "Exact school-zone original reviewed data and extendable publication design",
+      "scope": {
+        "task_ids": [
+          "school-zone-timing-design-2026-10-06"
+        ],
+        "candidate_ids": [
+          "local-school-zone-timings-fade828a553fed60"
+        ],
+        "families": [
+          "school-zone-active-times"
+        ]
+      },
+      "authority": "Explicit current owner post-merge lifecycle instruction",
+      "decision_date": "2026-10-06",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/school-zone-timing-design-2026-10-06/review.json",
+          "sha256": "1f4273c06378f6d0c37a7fbae5bc22b1e2212e5602fec62bc2db33c70eec24b4",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/school-zone-timing-design-2026-10-06/placement.json",
+          "sha256": "a7637217eb22947231459b4c2a7bbe278b91eb76b3c297ff7860ba97f7b73d45",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/school-zone-timing-design-2026-10-06/timings.json",
+          "sha256": "61de0ed66a42ea4488a4c75b8ec982c94cb23c48ce9212a23140473fa4db9fc8",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/school-zone-timing-design-2026-10-06/source-record.json",
+          "sha256": "b5d7630f8394dec1c5e7947efd40921e3d6aed6acda405492469c499febe076b",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/school-zone-document-entry-correction-2026-10-07/authority.json",
+          "sha256": "b9dc60c81b3f150ee98b8ce41f7312cafd655bb6a62e05dfdeb0cb4b78192e58",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pr215-postmerge-closeout-2026-10-07/authority.json",
+          "sha256": "0d45e0b24bfa1c21955db865dc0af063df0d5827faf01c3e37cfaccedcb498fb",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Preserve all completed substantive review/extraction, unchanged source/archive/public-byte evidence, scope/quality/provenance and internal elementary continuation established by design-school-zone-timing-design-2026-10-06-document-entry-form. Preserve the current owner-approved one concise linked archived-original entry and prohibition on visitor-visible individual schedules. Explicit current owner PR215 closeout authority supersedes ONLY prior OPEN/UNMERGED, no-production-deployment and feature-only synchronization phase boundaries: verify already owner-merged production, mark exactly local-school-zone-timings-fade828a553fed60 live validated/passed, close manual-review state and integrate background main/planning after full validation. No visitor-visible edits, repeat R2 upload/mutation, elementary or other population.",
+      "required_actions": [
+        "Preserve all completed substantive review/extraction, unchanged source/archive/public-byte evidence, scope/quality/provenance and internal elementary continuation established by design-school-zone-timing-design-2026-10-06-document-entry-form. Preserve the current owner-approved one concise linked archived-original entry and prohibition on visitor-visible individual schedules. Explicit current owner PR215 closeout authority supersedes ONLY prior OPEN/UNMERGED, no-production-deployment and feature-only synchronization phase boundaries: verify already owner-merged production, mark exactly local-school-zone-timings-fade828a553fed60 live validated/passed, close manual-review state and integrate background main/planning after full validation. No visitor-visible edits, repeat R2 upload/mutation, elementary or other population."
+      ],
+      "prohibited_actions": [
+        "No visitor-visible or R2 mutation, unrelated record or new population."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "review/design prepared; exact archival owner gate remains"
+    },
+    {
+      "governance_id": "owner-school-zone-timing-design-2026-10-06-remote-checkpoint-authorized-publication-authorized-document-entry-form-postmerge-lifecycle",
+      "category": "active owner decision",
+      "title": "Single owner/IPRA school-zone timing original: review and publication design",
+      "scope": {
+        "task_ids": [
+          "school-zone-timing-design-2026-10-06"
+        ],
+        "candidate_ids": [
+          "local-school-zone-timings-fade828a553fed60"
+        ],
+        "families": [
+          "school-zone-active-times"
+        ]
+      },
+      "authority": "Explicit current owner post-merge lifecycle instruction",
+      "decision_date": "2026-10-06",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/school-zone-timing-design-2026-10-06/authority.json",
+          "sha256": "e1aa715dae76c5c8b010c1618c3bf4b6d7f2730077e225d79128537de28b28c6",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/school-zone-remote-checkpoint-2026-10-06/authority.json",
+          "sha256": "3be13cafbe01ca281269da4a387444ec8316464cdc08653c6d289235bb4103c4",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/school-zone-publication-2026-10-07/authority.json",
+          "sha256": "dc3490324c88a74fd4043f912929cb3de821812fb24a1d51350c28a330af1da0",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/school-zone-document-entry-correction-2026-10-07/authority.json",
+          "sha256": "b9dc60c81b3f150ee98b8ce41f7312cafd655bb6a62e05dfdeb0cb4b78192e58",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pr215-postmerge-closeout-2026-10-07/authority.json",
+          "sha256": "0d45e0b24bfa1c21955db865dc0af063df0d5827faf01c3e37cfaccedcb498fb",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Preserve all completed substantive review/extraction, unchanged source/archive/public-byte evidence, scope/quality/provenance and internal elementary continuation established by owner-school-zone-timing-design-2026-10-06-remote-checkpoint-authorized-publication-authorized-document-entry-form. Preserve the current owner-approved one concise linked archived-original entry and prohibition on visitor-visible individual schedules. Explicit current owner PR215 closeout authority supersedes ONLY prior OPEN/UNMERGED, no-production-deployment and feature-only synchronization phase boundaries: verify already owner-merged production, mark exactly local-school-zone-timings-fade828a553fed60 live validated/passed, close manual-review state and integrate background main/planning after full validation. No visitor-visible edits, repeat R2 upload/mutation, elementary or other population.",
+      "required_actions": [
+        "Preserve all completed substantive review/extraction, unchanged source/archive/public-byte evidence, scope/quality/provenance and internal elementary continuation established by owner-school-zone-timing-design-2026-10-06-remote-checkpoint-authorized-publication-authorized-document-entry-form. Preserve the current owner-approved one concise linked archived-original entry and prohibition on visitor-visible individual schedules. Explicit current owner PR215 closeout authority supersedes ONLY prior OPEN/UNMERGED, no-production-deployment and feature-only synchronization phase boundaries: verify already owner-merged production, mark exactly local-school-zone-timings-fade828a553fed60 live validated/passed, close manual-review state and integrate background main/planning after full validation. No visitor-visible edits, repeat R2 upload/mutation, elementary or other population."
+      ],
+      "prohibited_actions": [
+        "No visitor-visible or R2 mutation, unrelated record or new population."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [
+        {
+          "gate_id": "school-zone-timing-design-2026-10-06:r2-owner-authorization",
+          "blocks_operations": [
+            "archive",
+            "external_mutation"
+          ],
+          "requirement": "Explicit owner authorization for this exact unchanged original required"
+        }
+      ],
+      "implementation_status": "exact background integration authorized; archival gate retained"
+    },
+    {
+      "governance_id": "owner-school-zone-remote-checkpoint-2026-10-06-publication-authorized-document-entry-form-postmerge-lifecycle",
+      "category": "active owner decision",
+      "title": "Exact school-zone background review remote durability correction",
+      "scope": {
+        "task_ids": [
+          "school-zone-remote-checkpoint-2026-10-06"
+        ],
+        "candidate_ids": [
+          "local-school-zone-timings-fade828a553fed60"
+        ]
+      },
+      "authority": "Explicit current owner post-merge lifecycle instruction",
+      "decision_date": "2026-10-06",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/school-zone-remote-checkpoint-2026-10-06/authority.json",
+          "sha256": "3be13cafbe01ca281269da4a387444ec8316464cdc08653c6d289235bb4103c4",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/school-zone-remote-checkpoint-2026-10-06/supersession.json",
+          "sha256": "c7212b2c2d91e2aad22ec312da47b7930678b264c28daa5a844c9db9b0fe0ac0",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/school-zone-publication-2026-10-07/authority.json",
+          "sha256": "dc3490324c88a74fd4043f912929cb3de821812fb24a1d51350c28a330af1da0",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/school-zone-document-entry-correction-2026-10-07/authority.json",
+          "sha256": "b9dc60c81b3f150ee98b8ce41f7312cafd655bb6a62e05dfdeb0cb4b78192e58",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pr215-postmerge-closeout-2026-10-07/authority.json",
+          "sha256": "0d45e0b24bfa1c21955db865dc0af063df0d5827faf01c3e37cfaccedcb498fb",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Preserve all completed substantive review/extraction, unchanged source/archive/public-byte evidence, scope/quality/provenance and internal elementary continuation established by owner-school-zone-remote-checkpoint-2026-10-06-publication-authorized-document-entry-form. Preserve the current owner-approved one concise linked archived-original entry and prohibition on visitor-visible individual schedules. Explicit current owner PR215 closeout authority supersedes ONLY prior OPEN/UNMERGED, no-production-deployment and feature-only synchronization phase boundaries: verify already owner-merged production, mark exactly local-school-zone-timings-fade828a553fed60 live validated/passed, close manual-review state and integrate background main/planning after full validation. No visitor-visible edits, repeat R2 upload/mutation, elementary or other population.",
+      "required_actions": [
+        "Preserve all completed substantive review/extraction, unchanged source/archive/public-byte evidence, scope/quality/provenance and internal elementary continuation established by owner-school-zone-remote-checkpoint-2026-10-06-publication-authorized-document-entry-form. Preserve the current owner-approved one concise linked archived-original entry and prohibition on visitor-visible individual schedules. Explicit current owner PR215 closeout authority supersedes ONLY prior OPEN/UNMERGED, no-production-deployment and feature-only synchronization phase boundaries: verify already owner-merged production, mark exactly local-school-zone-timings-fade828a553fed60 live validated/passed, close manual-review state and integrate background main/planning after full validation. No visitor-visible edits, repeat R2 upload/mutation, elementary or other population."
+      ],
+      "prohibited_actions": [
+        "No visitor-visible or R2 mutation, unrelated record or new population."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "background push/ref synchronization authorized"
+    },
+    {
+      "governance_id": "owner-school-zone-publication-2026-10-07-document-entry-form-postmerge-lifecycle",
+      "category": "active owner decision",
+      "title": "school-zone-publication-2026-10-07",
+      "state": "active",
+      "scope": {
+        "candidate_ids": [
+          "local-school-zone-timings-fade828a553fed60"
+        ],
+        "task_ids": [
+          "school-zone-publication-2026-10-07"
+        ]
+      },
+      "authority": "Explicit current owner post-merge lifecycle instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/school-zone-publication-2026-10-07/authority.json",
+          "sha256": "dc3490324c88a74fd4043f912929cb3de821812fb24a1d51350c28a330af1da0",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/school-zone-publication-2026-10-07/supersession.json",
+          "sha256": "f9feb21e9fb524db0f69aab8cee5cbfe7c15df3f2c46660eb7d07c3102505e18",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/school-zone-document-entry-correction-2026-10-07/authority.json",
+          "sha256": "b9dc60c81b3f150ee98b8ce41f7312cafd655bb6a62e05dfdeb0cb4b78192e58",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pr215-postmerge-closeout-2026-10-07/authority.json",
+          "sha256": "0d45e0b24bfa1c21955db865dc0af063df0d5827faf01c3e37cfaccedcb498fb",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Preserve all completed substantive review/extraction, unchanged source/archive/public-byte evidence, scope/quality/provenance and internal elementary continuation established by owner-school-zone-publication-2026-10-07-document-entry-form. Preserve the current owner-approved one concise linked archived-original entry and prohibition on visitor-visible individual schedules. Explicit current owner PR215 closeout authority supersedes ONLY prior OPEN/UNMERGED, no-production-deployment and feature-only synchronization phase boundaries: verify already owner-merged production, mark exactly local-school-zone-timings-fade828a553fed60 live validated/passed, close manual-review state and integrate background main/planning after full validation. No visitor-visible edits, repeat R2 upload/mutation, elementary or other population.",
+      "required_actions": [
+        "Preserve all completed substantive review/extraction, unchanged source/archive/public-byte evidence, scope/quality/provenance and internal elementary continuation established by owner-school-zone-publication-2026-10-07-document-entry-form. Preserve the current owner-approved one concise linked archived-original entry and prohibition on visitor-visible individual schedules. Explicit current owner PR215 closeout authority supersedes ONLY prior OPEN/UNMERGED, no-production-deployment and feature-only synchronization phase boundaries: verify already owner-merged production, mark exactly local-school-zone-timings-fade828a553fed60 live validated/passed, close manual-review state and integrate background main/planning after full validation. No visitor-visible edits, repeat R2 upload/mutation, elementary or other population."
+      ],
+      "prohibited_actions": [
+        "No visitor-visible or R2 mutation, unrelated record or new population."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "releases_gates": [
+        "school-zone-timing-design-2026-10-06:r2-owner-authorization"
+      ],
+      "implementation_status": "authorized exact archival and manual-review publication"
+    },
+    {
+      "governance_id": "owner-school-zone-document-entry-correction-2026-10-07-postmerge-lifecycle",
+      "category": "active owner decision",
+      "title": "school-zone-document-entry-correction-2026-10-07",
+      "state": "active",
+      "scope": {
+        "candidate_ids": [
+          "local-school-zone-timings-fade828a553fed60"
+        ],
+        "task_ids": [
+          "school-zone-document-entry-correction-2026-10-07"
+        ]
+      },
+      "authority": "Explicit current owner post-merge lifecycle instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/school-zone-document-entry-correction-2026-10-07/authority.json",
+          "sha256": "b9dc60c81b3f150ee98b8ce41f7312cafd655bb6a62e05dfdeb0cb4b78192e58",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/school-zone-document-entry-correction-2026-10-07/supersession.json",
+          "sha256": "a143996ce5a56fd36d327f77bf9d88c931f7c76d66d03f33cfdc88d0a85188a9",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pr215-postmerge-closeout-2026-10-07/authority.json",
+          "sha256": "0d45e0b24bfa1c21955db865dc0af063df0d5827faf01c3e37cfaccedcb498fb",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Preserve all completed substantive review/extraction, unchanged source/archive/public-byte evidence, scope/quality/provenance and internal elementary continuation established by owner-school-zone-document-entry-correction-2026-10-07. Preserve the current owner-approved one concise linked archived-original entry and prohibition on visitor-visible individual schedules. Explicit current owner PR215 closeout authority supersedes ONLY prior OPEN/UNMERGED, no-production-deployment and feature-only synchronization phase boundaries: verify already owner-merged production, mark exactly local-school-zone-timings-fade828a553fed60 live validated/passed, close manual-review state and integrate background main/planning after full validation. No visitor-visible edits, repeat R2 upload/mutation, elementary or other population.",
+      "required_actions": [
+        "Preserve all completed substantive review/extraction, unchanged source/archive/public-byte evidence, scope/quality/provenance and internal elementary continuation established by owner-school-zone-document-entry-correction-2026-10-07. Preserve the current owner-approved one concise linked archived-original entry and prohibition on visitor-visible individual schedules. Explicit current owner PR215 closeout authority supersedes ONLY prior OPEN/UNMERGED, no-production-deployment and feature-only synchronization phase boundaries: verify already owner-merged production, mark exactly local-school-zone-timings-fade828a553fed60 live validated/passed, close manual-review state and integrate background main/planning after full validation. No visitor-visible edits, repeat R2 upload/mutation, elementary or other population."
+      ],
+      "prohibited_actions": [
+        "No visitor-visible or R2 mutation, unrelated record or new population."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
       "implementation_status": "exact PR215 document-entry correction"
+    },
+    {
+      "governance_id": "owner-pr215-postmerge-closeout-2026-10-07",
+      "category": "active owner decision",
+      "title": "pr215-postmerge-closeout-2026-10-07",
+      "scope": {
+        "candidate_ids": [
+          "local-school-zone-timings-fade828a553fed60"
+        ],
+        "task_ids": [
+          "pr215-postmerge-closeout-2026-10-07"
+        ]
+      },
+      "authority": "Explicit current owner instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/pr215-postmerge-closeout-2026-10-07/authority.json",
+          "sha256": "0d45e0b24bfa1c21955db865dc0af063df0d5827faf01c3e37cfaccedcb498fb",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pr215-postmerge-closeout-2026-10-07/supersession.json",
+          "sha256": "d059f8c9932022312b082caad5fe3be5088450dbd0009b06f269e614d6502100",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Explicit current owner PR215 post-merge production verification and background lifecycle reconciliation ONLY. Independently verify remote owner merge 074d1bdbb2f3985e756479d88352ea41bf74f5a0, reviewed head 0fd21642ba64aafc2dd10837a70feccafbfd9f55, concise PDF entry directly under School Transportation Safety, no School Zone Active Times heading or rendered individual schedule list, surrounding records unchanged, desktop/mobile installed Chrome, preview/merge/production parity, and complete unchanged 3013109-byte public PDF SHA256 fade828a553fed6008cd38f45a3a80ac41e7136ab4a407d708a91a34cf06963a. Once verified, reconcile exactly local-school-zone-timings-fade828a553fed60 to owner-reviewed merged, production live, validated/passed with no remaining manual review. Preserve full 30-schedule/32-school/61-interval internal extraction, owner document-entry supersession, archive provenance, and elementary continuation context. Update only current lifecycle/checkpoint/queue/accounting/governance and synchronize background main/planning after normal validation. Explicitly supersedes former open/unmerged, no-deployment and feature-only phase boundaries ONLY. ZERO visitor-visible changes and ZERO R2 mutations; no other population or elementary work.",
+      "required_actions": [
+        "Explicit current owner PR215 post-merge production verification and background lifecycle reconciliation ONLY. Independently verify remote owner merge 074d1bdbb2f3985e756479d88352ea41bf74f5a0, reviewed head 0fd21642ba64aafc2dd10837a70feccafbfd9f55, concise PDF entry directly under School Transportation Safety, no School Zone Active Times heading or rendered individual schedule list, surrounding records unchanged, desktop/mobile installed Chrome, preview/merge/production parity, and complete unchanged 3013109-byte public PDF SHA256 fade828a553fed6008cd38f45a3a80ac41e7136ab4a407d708a91a34cf06963a. Once verified, reconcile exactly local-school-zone-timings-fade828a553fed60 to owner-reviewed merged, production live, validated/passed with no remaining manual review. Preserve full 30-schedule/32-school/61-interval internal extraction, owner document-entry supersession, archive provenance, and elementary continuation context. Update only current lifecycle/checkpoint/queue/accounting/governance and synchronize background main/planning after normal validation. Explicitly supersedes former open/unmerged, no-deployment and feature-only phase boundaries ONLY. ZERO visitor-visible changes and ZERO R2 mutations; no other population or elementary work."
+      ],
+      "prohibited_actions": [
+        "No visitor-visible or R2 mutation, unrelated record or new population."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "authorized exact production closeout"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "recorded_at": "2026-10-07T15:51:21.6530387Z",
-  "completed_item_range": "School-zone exact original archive verified; reviewed 30-schedule section implemented on unmerged publication branch, validation/preview underway.",
+  "recorded_at": "2026-10-07T18:41:10.589698+00:00",
+  "completed_item_range": "PR215 owner merge 074d1bdbb2f3985e756479d88352ea41bf74f5a0 production verified; exact school-zone source live validated/passed.",
   "total_candidates": 7143,
   "counts_by_status": {
     "pending review": 339,
@@ -10,8 +10,8 @@
     "parsed": 0,
     "description drafted": 0,
     "placement assigned": 360,
-    "implemented": 225,
-    "validated": 1491,
+    "implemented": 224,
+    "validated": 1492,
     "excluded": 2867,
     "duplicate": 1602,
     "superseded": 259,
@@ -21,7 +21,7 @@
   "remaining_nonterminal": 891,
   "next_pending_id": "lin-2f6fbe4ffb0b6564",
   "blockers": [],
-  "resume_command": "Review OPEN UNMERGED PR215 corrected concise school-zone PDF entry. Full governance/sealed-history/Hugo/Chrome checks passed; exhaustive timings and original archive preserved. No merge/deploy, R2 mutation or elementary work authorized.",
+  "resume_command": "PR215 production/live closeout: complete validation and background main/planning synchronization only; no other population.",
   "verification_campaign_totals": {
     "verified": 2194,
     "passed": 2070,
@@ -298,7 +298,7 @@
     "postmerge_verification": "project-state/governance/pr209-reconciliation-2026-10-03/postmerge-verification.json"
   },
   "next_owner_requested_task": {
-    "state": "complete_open_unmerged_document_entry_review",
+    "state": "owner_reviewed_merged_production_live_validated",
     "filename": "ABQ Middle School and High School Zone Active Timings.pdf",
     "owner_context": {
       "local_location": "Owner says the file was placed in the local document-review folder.",
@@ -310,15 +310,21 @@
     },
     "completed_review": "project-state/governance/school-zone-timing-design-2026-10-06/review.json",
     "current_preflight": "project-state/governance/school-zone-remote-checkpoint-2026-10-06/archive-preflight.json",
-    "remaining_gate": "owner_manual_pr_review",
+    "remaining_gate": null,
     "publication": "project-state/governance/school-zone-document-entry-correction-2026-10-07/publication.md",
     "pr": "https://github.com/armandhammer/abqinfo/pull/215",
     "preview": "https://e140918a.abqinfo.pages.dev/transportation/safety-crash-data/#school-transportation-safety",
     "publication_form": "linked_archived_original",
-    "form_supersession": "project-state/governance/school-zone-document-entry-correction-2026-10-07/supersession.json"
+    "form_supersession": "project-state/governance/school-zone-document-entry-correction-2026-10-07/supersession.json",
+    "merge_sha": "074d1bdbb2f3985e756479d88352ea41bf74f5a0",
+    "production_url": "https://abqinfo.com/transportation/safety-crash-data/#school-transportation-safety",
+    "production_verification": "project-state/governance/pr215-postmerge-closeout-2026-10-07/production-verification.json",
+    "closeout": "project-state/governance/pr215-postmerge-closeout-2026-10-07/receipt.json",
+    "archive_verified": true,
+    "visible_pr_created": true
   },
   "school_zone_timing_review": {
-    "state": "complete_open_unmerged_document_entry_review",
+    "state": "owner_reviewed_merged_production_live_validated",
     "source_sha256": "fade828a553fed6008cd38f45a3a80ac41e7136ab4a407d708a91a34cf06963a",
     "source_bytes": 3013109,
     "pages": 33,
@@ -330,7 +336,7 @@
     "proposed_content": "project-state/governance/school-zone-timing-design-2026-10-06/proposed-content.md",
     "archive_plan": "project-state/governance/school-zone-timing-design-2026-10-06/archive-plan.json",
     "current_preflight": "project-state/governance/school-zone-remote-checkpoint-2026-10-06/archive-preflight.json",
-    "remaining_gate": "owner_manual_pr_review",
+    "remaining_gate": null,
     "archival_authorized": true,
     "visible_pr_created": true,
     "elementary_continuation": "Expected later; outside this population and not a blocker",
@@ -341,7 +347,11 @@
     "pr": "https://github.com/armandhammer/abqinfo/pull/215",
     "preview": "https://e140918a.abqinfo.pages.dev/transportation/safety-crash-data/#school-transportation-safety",
     "publication_form": "linked_archived_original",
-    "form_supersession": "project-state/governance/school-zone-document-entry-correction-2026-10-07/supersession.json"
+    "form_supersession": "project-state/governance/school-zone-document-entry-correction-2026-10-07/supersession.json",
+    "merge_sha": "074d1bdbb2f3985e756479d88352ea41bf74f5a0",
+    "production_url": "https://abqinfo.com/transportation/safety-crash-data/#school-transportation-safety",
+    "production_verification": "project-state/governance/pr215-postmerge-closeout-2026-10-07/production-verification.json",
+    "closeout": "project-state/governance/pr215-postmerge-closeout-2026-10-07/receipt.json"
   },
   "history": [
     {
@@ -35718,5 +35728,12 @@
         }
       }
     }
-  ]
+  ],
+  "pr215_postmerge_closeout": {
+    "state": "production_verified_lifecycle_reconciled_validation_pending",
+    "merge_sha": "074d1bdbb2f3985e756479d88352ea41bf74f5a0",
+    "reviewed_head": "0fd21642ba64aafc2dd10837a70feccafbfd9f55",
+    "receipt": "project-state/governance/pr215-postmerge-closeout-2026-10-07/receipt.json",
+    "zero_visitor_visible_r2_delta": true
+  }
 }
