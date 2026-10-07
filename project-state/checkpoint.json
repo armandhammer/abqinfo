@@ -35334,7 +35334,7 @@
     }
   ],
   "next_owner_requested_task": {
-    "state": "review_complete_archival_authorization_pending",
+    "state": "archive_verified_publication_pr_preparation",
     "filename": "ABQ Middle School and High School Zone Active Timings.pdf",
     "owner_context": {
       "local_location": "Owner says the file was placed in the local document-review folder.",
@@ -35346,10 +35346,11 @@
     },
     "completed_review": "project-state/governance/school-zone-timing-design-2026-10-06/review.json",
     "current_preflight": "project-state/governance/school-zone-remote-checkpoint-2026-10-06/archive-preflight.json",
-    "remaining_gate": "explicit_owner_r2_archival_authorization"
+    "remaining_gate": "owner_manual_pr_review",
+    "publication": "project-state/governance/school-zone-publication-2026-10-07/publication.md"
   },
   "school_zone_timing_review": {
-    "state": "review_complete_remote_checkpoint_integrated",
+    "state": "archive_verified_publication_pr_preparation",
     "source_sha256": "fade828a553fed6008cd38f45a3a80ac41e7136ab4a407d708a91a34cf06963a",
     "source_bytes": 3013109,
     "pages": 33,
@@ -35361,10 +35362,13 @@
     "proposed_content": "project-state/governance/school-zone-timing-design-2026-10-06/proposed-content.md",
     "archive_plan": "project-state/governance/school-zone-timing-design-2026-10-06/archive-plan.json",
     "current_preflight": "project-state/governance/school-zone-remote-checkpoint-2026-10-06/archive-preflight.json",
-    "remaining_gate": "explicit_owner_r2_archival_authorization",
-    "archival_authorized": false,
+    "remaining_gate": "owner_manual_pr_review",
+    "archival_authorized": true,
     "visible_pr_created": false,
     "elementary_continuation": "Expected later; outside this population and not a blocker",
-    "remote_verification": "project-state/governance/school-zone-remote-checkpoint-2026-10-06/remote-final.json"
+    "remote_verification": "project-state/governance/school-zone-remote-checkpoint-2026-10-06/remote-final.json",
+    "archive_verified": true,
+    "public_verification": "project-state/governance/school-zone-publication-2026-10-07/public-verification.json",
+    "publication": "project-state/governance/school-zone-publication-2026-10-07/publication.md"
   }
 }
