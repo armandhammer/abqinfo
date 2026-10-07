@@ -163,6 +163,9 @@ def guard():
             for t in s['intervals']:assert t['start']+' to '+t['end'] in content
         assert 'owner' not in content.lower() and 'not school bell times' in content and 'does not identify an issuing agency' in content
         v=st.load_json(P+'public-verification.json');assert v['size_bytes']==3013109 and v['checksum_sha256']==SHA and v['byte_identical']
+        before_r2=st.load_json(P+'r2-before.json');after_r2=st.load_json(P+'r2-after.json')
+        assert {x['key']:x['size_bytes'] for x in after_r2['objects']}=={**{x['key']:x['size_bytes'] for x in before_r2['objects']},KEY:3013109}
+        assert after_r2['object_count']==1617 and after_r2['total_bytes']==10986353284
         from PublicationQuality import require_publication_quality
         require_publication_quality(b[ID]);assert b[ID]['source_url'] is None
     else:assert page==old
@@ -224,4 +227,25 @@ def render():
     if verify_only:
         old=G.load(P+'preview.json');assert [x['text'] for x in old['results']]==[x['text'] for x in results];print('PASS final-head preview exactly matches inspected section')
     else:save(P+'preview.json',value);print('PASS nonproduction desktop/mobile: all 30 schedules and 61 intervals/qualifiers, archive full GET, anchor, no overflow')
+def finish():
+    G.active_check('mutation','governance_implementation',[ID]);guard()
+    log=(G.ROOT/(P+'validation.log')).read_text(encoding='utf-8-sig');assert '"Hugo": "passed"' in log
+    # Derived validation logs normalize only trailing whitespace, never source bytes.
+    (G.ROOT/(P+'validation.log')).write_text('\n'.join(x.rstrip() for x in log.splitlines())+'\n',encoding='utf-8',newline='\n')
+    preview=G.load(P+'preview.json');assert all(x['anchor_passed'] and not x['overflow'] and x['every_interval_weekday_location_and_material_note_matched'] for x in preview['results'])
+    pr=G.load(P+'pr.json');assert pr['number']==215 and pr['state']=='OPEN' and pr['mergedAt'] is None
+    receipt=G.load(P+'receipt.json');receipt.update(state='complete_unmerged_owner_review',normal_validation='passed',normal_validation_log_sha256=G.file_hash(P+'validation.log'),rendered_preview=P+'preview.json',visual_inspection='Complete desktop and original-resolution mobile section screenshots inspected; all entries readable, properly separated and no clipping or overlap.',pr=pr['url'],pr_number=215,preview_url=preview['url'],remaining_owner_action='Review and decide whether to merge PR215; no further archival/editorial authorization required.',style_baseline='Four pre-existing title-case warnings on unchanged Area & Sector Plans; new School Zone Active Times section has zero style warnings.',source_lifecycle='implemented / validation passed / archive verified / manual PR review pending; not deployed')
+    for item in receipt['governance_accounting'].values():item['evidence'] += [P+'preview.json',P+'validation.log',P+'pr.json'];item['result'] += ' Full normal suite and sealed history passed; complete Chrome desktop/mobile preview matched all schedules and qualifiers; full archive GET/anchor/overflow passed; PR215 OPEN and UNMERGED.'
+    save(P+'receipt.json',receipt)
+    inv=G.load('project-state/master-inventory.json');row=next(x for x in inv['candidates'] if x['id']==ID);row['workflow_state']='archive_verified_implemented_manual_pr_review_pending';row['publication_pr']=pr['url'];row['review_preview']=preview['url'];save('project-state/master-inventory.json',inv);save(P+'source-record.json',row)
+    cp=G.load('project-state/checkpoint.json')
+    for field in ['school_zone_timing_review','next_owner_requested_task']:cp[field].update(state='complete_unmerged_owner_review',remaining_gate='owner_manual_pr_review',pr=pr['url'],preview=preview['url'])
+    cp['school_zone_timing_review']['visible_pr_created']=True;cp['resume_command']='Review open unmerged PR215 school-zone section and verified archive. Normal/Hugo/Chrome checks passed; no merge, production deployment or elementary work authorized.';save('project-state/checkpoint.json',cp)
+    q=G.load(P+'queue.json');q['next_work_category']='Owner manual editorial review of open unmerged PR215; no elementary or other population.';save(P+'queue.json',q)
+    f=G.ROOT/'project-state/CURRENT.md';s=f.read_text(encoding='utf-8-sig').replace('NEXT: complete normal/rendered preview checks and open an UNMERGED content PR for owner review.','NEXT: owner review of [OPEN UNMERGED PR #215](https://github.com/armandhammer/abqinfo/pull/215). Full normal/governance/sealed-history/Hugo and Chrome desktop/mobile section checks passed.');f.write_text(s,encoding='utf-8',newline='\n')
+    body=G.ROOT/(P+'pr-description.md');s=body.read_text(encoding='utf-8-sig').replace('- Full normal validation suite is running; final results will be recorded before handoff.','- Full normal validation, governance/freshness, sealed-history, checkpoint regressions, Hugo build, PR-description and diff checks passed. Four pre-existing title-case warnings on the unchanged Area & Sector Plans page remain; the new section has none.');body.write_text(s,encoding='utf-8',newline='\n')
+    plan=G.load(P+'implementation.json');plan['events'].append(dict(operation='governance_implementation',candidate_ids=[ID],action='implements',use_contract_record_rules=True,summary='Full normal validation passed after deterministic one-record checkpoint totals correction. Complete desktop/mobile preview visually inspected and all rendered data/qualifiers, source link/full GET, anchor and overflow checked. Exact original evidence preserved; PR215 open/unmerged, owner manual review only.',evidence=P+'receipt.json'));save(P+'implementation.json',plan)
+    refresh()
+    subprocess.run([sys.executable,'scripts/project/Build-ConsolidatedHumanReviewQueue.py'],check=True)
+    refresh();G.active_check('final');guard()
 if __name__=='__main__':globals()[sys.argv[1] if len(sys.argv)>1 else 'guard']()

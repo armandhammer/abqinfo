@@ -16,6 +16,6 @@ These are flasher schedules, not school bell times. The PDF identifies no issuin
 
 - Exact original upload and complete public-download size/SHA-256 verification passed; one object and 3,013,109 bytes added.
 - Installed Chrome desktop/mobile preview inspection passed: all 30 schedules and 61 intervals, weekday/location/material-note comparisons, archive link/full GET, section anchor, and no horizontal overflow.
-- Full normal validation suite is running; final results will be recorded before handoff.
+- Full normal validation, governance/freshness, sealed-history, checkpoint regressions, Hugo build, PR-description and diff checks passed. Four pre-existing title-case warnings on the unchanged Area & Sector Plans page remain; the new section has none.
 
 This PR remains open and unmerged for manual editorial review. No production deployment is authorized.
