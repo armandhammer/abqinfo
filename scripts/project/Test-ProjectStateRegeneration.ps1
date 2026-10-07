@@ -20,13 +20,25 @@ $gate = Get-Content -Raw -Encoding UTF8 -LiteralPath $Ms4GatePath | ConvertFrom-
 
 if ($checkpoint.PSObject.Properties.Name -notcontains 'dpm_annual_consolidation') { throw 'Checkpoint lost durable dpm_annual_consolidation metadata.' }
 $dpm = $checkpoint.dpm_annual_consolidation
-Assert-Equal $dpm.state (& "$PSScriptRoot/Get-DpmAnnualConsolidationState.ps1" -ManifestPath $DpmManifestPath).state 'Unexpected DPM state.'
+$expectedDpm = & "$PSScriptRoot/Get-DpmAnnualConsolidationState.ps1" -ManifestPath $DpmManifestPath
+Assert-Equal $dpm.state $expectedDpm.state 'Unexpected DPM state.'
 Assert-Equal $dpm.manifest $DpmManifestPath 'Unexpected DPM manifest path.'
 Assert-Equal @($dpm.packets).Count @($manifest.annual_packets).Count 'DPM packet count differs from manifest.'
-Assert-Equal ([int]$dpm.component_count) ([int](@($manifest.annual_packets | ForEach-Object { $_.component_count }) | Measure-Object -Sum).Sum) 'DPM component count differs from manifest.'
+$corrected2018=$expectedDpm.PSObject.Properties.Name -contains 'composition_reconciliation'
+$expectedComponents=[int](@($manifest.annual_packets | ForEach-Object { $_.component_count }) | Measure-Object -Sum).Sum
+if ($corrected2018) { $expectedComponents -= 1 }
+Assert-Equal ([int]$dpm.component_count) $expectedComponents 'DPM component count differs from governed manifest.'
 foreach ($packet in $manifest.annual_packets) {
   $actual = @($dpm.packets | Where-Object { [int]$_.year -eq [int]$packet.year })
   Assert-Equal $actual.Count 1 "DPM packet missing or duplicated for $($packet.year)."
+  if ($corrected2018 -and [int]$packet.year -eq 2018) {
+    Assert-Equal ([int]$actual[0].component_count) 5 'Corrected DPM 2018 component count.'
+    Assert-Equal ([int]$actual[0].original_page_count) 8 'Corrected DPM original page count.'
+    if ($null -ne $actual[0].page_count -or $null -ne $actual[0].size_bytes -or $null -ne $actual[0].sha256 -or $null -ne $actual[0].local_output_path) { throw 'Stale six-component bytes were advertised for the corrected DPM packet.' }
+    Assert-Equal $actual[0].archive_outcome 'composition_reconciled_local_manifest_only_not_archived' 'Corrected DPM archive status.'
+    Assert-Equal $actual[0].historical_package_metadata.sha256 $packet.resulting_sha256 'Historical DPM package evidence lost.'
+    continue
+  }
   Assert-Equal ([int]$actual[0].component_count) ([int]$packet.component_count) "DPM component count differs for $($packet.year)."
   Assert-Equal ([int]$actual[0].page_count) ([int]$packet.resulting_page_count) "DPM page count differs for $($packet.year)."
   Assert-Equal ([int64]$actual[0].size_bytes) ([int64]$packet.resulting_size_bytes) "DPM byte count differs for $($packet.year)."

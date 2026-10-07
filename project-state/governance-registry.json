@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "d91d4a5fb1c702b82bb66534f252c44140de3a47e969307469a37db55f819216",
+  "audit_sha256": "2f9abd9e675e1913a852b0a1eeee4aaf82cf633b1b9ffd755f0cd12dbf182ce5",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -5714,7 +5714,7 @@
       "authority": "durable recorded project decision",
       "decision_date": "2026-09-17T14:55:53.4903410Z",
       "effective_date": "as recorded in controlling artifact; no chronology precedence",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/discovery/dpm-executive-committee-consolidation-manifest-2026-09-17.json",
@@ -5740,7 +5740,9 @@
         }
       ],
       "unresolved_gates": [],
-      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority.",
+      "superseded_by": "decision-dpm-executive-committee-manifest-march21-reconciliation-2026-10-07",
+      "supersession_evidence": "project-state/governance/remaining-agenda-resolution-2026-10-07/supersession.json"
     },
     {
       "governance_id": "decision-dpm-executive-committee-minutes-decisions-2026-09-11-1477e2f2",
@@ -15251,7 +15253,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "f6c0bd50f166a448b2ff3f544c5ec876b1e23888b53fefaff14a735dc124c173",
+          "sha256": "cf0437071c2101d198f875d08cfc8f6b0cc01dadca1960e61b0abc8c491609a7",
           "binding_pointers": [
             "/implementation"
           ]
@@ -26654,6 +26656,226 @@
       "settled_decisions": [],
       "unresolved_gates": [],
       "implementation_status": "authorized exact production closeout"
+    },
+    {
+      "governance_id": "owner-remaining-agenda-resolution-2026-10-07",
+      "category": "active owner decision",
+      "title": "owner-remaining-agenda-resolution-2026-10-07",
+      "scope": {
+        "candidate_ids": [
+          "src-7e7af2af147d96d7",
+          "src-dc3a192d194d3d65",
+          "src-9dbe491dce873f71",
+          "generated-dpm-2018"
+        ],
+        "task_ids": [
+          "remaining-agenda-resolution-2026-10-07"
+        ]
+      },
+      "authority": "Explicit current user bounded agenda reconciliation instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/remaining-agenda-resolution-2026-10-07/authority.json",
+          "sha256": "12ad70df87de7f5d39a78236b19f6c76c01272fb7bf2a449e01242ce33eabb1d",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Resolve exactly the three remaining agendas src-7e7af2af147d96d7 (March 21 2018 DPM), src-dc3a192d194d3d65 (May 4 2026 DPM), and src-9dbe491dce873f71 (April 16 2026 LGCC). Include generated-dpm-2018 solely as dependent composition metadata. Resolve exhaustive registry authority; use existing durable evidence first. Explicitly reconcile September 13 nonoccurrence research with September 17 inclusion through governance, never chronology. Determine occurrence/minutes and independent actual-record substantive public-information and quality value. If evidence supports March 21 nonoccurrence, remove its orphan-meeting/approved-minutes-not-located representation and correct the durable component decision. Determine corrected generated composition; local manifest preparation is allowed under resolved governance, no upload or publication. If all three conclusive, current user authorizes background inventory updates, package manifest/metadata reconciliation, deterministic accounting, full validation, clean integration into main and synchronized planning-snapshot. Preserve all originals, provenance and history. No visitor-visible changes, R2 upload/overwrite/deletion, unrelated population or reopening settled Trails PID decisions. Evidence-driven replacement of the exact disputed March 21 component is explicitly authorized by this instruction; unrelated settled DPM components/annual architecture remain controlling.",
+      "required_actions": [
+        "Resolve exactly the three remaining agendas src-7e7af2af147d96d7 (March 21 2018 DPM), src-dc3a192d194d3d65 (May 4 2026 DPM), and src-9dbe491dce873f71 (April 16 2026 LGCC). Include generated-dpm-2018 solely as dependent composition metadata. Resolve exhaustive registry authority; use existing durable evidence first. Explicitly reconcile September 13 nonoccurrence research with September 17 inclusion through governance, never chronology. Determine occurrence/minutes and independent actual-record substantive public-information and quality value. If evidence supports March 21 nonoccurrence, remove its orphan-meeting/approved-minutes-not-located representation and correct the durable component decision. Determine corrected generated composition; local manifest preparation is allowed under resolved governance, no upload or publication. If all three conclusive, current user authorizes background inventory updates, package manifest/metadata reconciliation, deterministic accounting, full validation, clean integration into main and synchronized planning-snapshot. Preserve all originals, provenance and history. No visitor-visible changes, R2 upload/overwrite/deletion, unrelated population or reopening settled Trails PID decisions. Evidence-driven replacement of the exact disputed March 21 component is explicitly authorized by this instruction; unrelated settled DPM components/annual architecture remain controlling."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded background reconciliation"
+    },
+    {
+      "governance_id": "supersessions-remaining-agenda-resolution-2026-10-07",
+      "category": "active owner decision",
+      "title": "supersessions-remaining-agenda-resolution-2026-10-07",
+      "scope": {
+        "task_ids": [
+          "remaining-agenda-resolution-2026-10-07"
+        ]
+      },
+      "authority": "Explicit current user bounded agenda reconciliation instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/remaining-agenda-resolution-2026-10-07/supersession.json",
+          "sha256": "a01839a955702e5c3432a4a07551342768c76cfce4758bf546dbf1b5ed7be9b0",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Apply only evidence-driven explicit replacement of the disputed March 21 2018 component and exact frozen agenda holds under owner-remaining-agenda-resolution-2026-10-07. Preserve all historical evidence and unrelated settled architecture.",
+      "required_actions": [
+        "Apply only evidence-driven explicit replacement of the disputed March 21 2018 component and exact frozen agenda holds under owner-remaining-agenda-resolution-2026-10-07. Preserve all historical evidence and unrelated settled architecture."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded background reconciliation"
+    },
+    {
+      "governance_id": "decision-dpm-executive-committee-manifest-march21-reconciliation-2026-10-07",
+      "category": "active publication architecture",
+      "title": "DPM packet architecture with explicit March 21 2018 factual correction",
+      "scope": {
+        "candidate_ids": [
+          "src-030f7d2a680a31d4",
+          "src-04dfcbe1dcde70f8",
+          "src-087842cdf31bbd1c",
+          "src-100dcafff14a7b22",
+          "src-14ba4769fc9b04aa",
+          "src-14f45e5400b067bc",
+          "src-21dc013c982971a3",
+          "src-2448a4409efca23b",
+          "src-28ce1d8748abb9a2",
+          "src-3916288248bba241",
+          "src-4055919dde906ce1",
+          "src-4360b7ad1acbabdb",
+          "src-48eb68305e18d8ad",
+          "src-51c281bcea861ad9",
+          "src-5340531bfdbbe7fb",
+          "src-573093423a1bbd50",
+          "src-58104015e9620a4d",
+          "src-65575cfa5553d19a",
+          "src-73f9afbcaae5d8d2",
+          "src-74c9ef9734483c29",
+          "src-79f0672eaab3eca0",
+          "src-7cd7534bc544a4cb",
+          "src-7dd4dca158dd74d0",
+          "src-7e7af2af147d96d7",
+          "src-808550f86ef1cf0e",
+          "src-81b04c1358323136",
+          "src-89d7a6448976c52e",
+          "src-a1823b506c80a5e1",
+          "src-a729bb09514a9eb3",
+          "src-a8dda335fb901049",
+          "src-adfd6742a595ccf6",
+          "src-bb1e08fed8c049a7",
+          "src-bbaad13a047c342c",
+          "src-c134c414b9f229c1",
+          "src-c2f91d09003c2cbe",
+          "src-c8a6a02c203d0cd2",
+          "src-ca86eefe82a821c3",
+          "src-d763272eeccf1740",
+          "src-dc3a192d194d3d65",
+          "src-df2ad3ce6a0795b8",
+          "src-ea47d347422e2570",
+          "src-ea48e98a01589ffb",
+          "src-f2022d135f87e307",
+          "src-f2716dd03961455e",
+          "src-f34377f7d362089c",
+          "src-f6392e3d79ac62a5",
+          "src-f6feb3549d055097",
+          "src-fc539ddea39cd340",
+          "src-fd0a98e661a8db31",
+          "src-ff0cce054f5417f8"
+        ],
+        "pages": [],
+        "artifact_paths": [
+          "project-state/discovery/dpm-executive-committee-consolidation-manifest-2026-09-17.json"
+        ],
+        "families": [
+          "dpm-executive-committee"
+        ]
+      },
+      "authority": "Explicit current user reconciliation authority plus refreshed City originals",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/discovery/dpm-executive-committee-consolidation-manifest-2026-09-17.json",
+          "sha256": "872d4a5bf7909b97163733fccfdc87eb460f1c297f28c80df44974600a2480aa",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/remaining-agenda-resolution-2026-10-07/governance-reconciliation.json",
+          "sha256": "d0c32dba2714ac2e1743ad871a24b60ebe1c9881794743d73ebfabbd2c029ba3",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/remaining-agenda-resolution-2026-10-07/generated-manifest.json",
+          "sha256": "536a3f6c734d20bb3a20ef4b026ed37ee359484456df88656619dc0df9d1dcd1",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Preserve the exact September 17 packet architecture and every unrelated component decision, except exclude March 21 2018 from generated-dpm-2018 as apparently not held; do not label it approved minutes not located or an orphan meeting. Corrected dependent packet has five components, eight original pages. Preserve September 13 research and September 17 original manifest unchanged. Existing published four-original 2018 master remains unchanged.",
+      "required_actions": [
+        "Preserve the exact September 17 packet architecture and every unrelated component decision, except exclude March 21 2018 from generated-dpm-2018 as apparently not held; do not label it approved minutes not located or an orphan meeting. Corrected dependent packet has five components, eight original pages. Preserve September 13 research and September 17 original manifest unchanged. Existing published four-original 2018 master remains unchanged."
+      ],
+      "prohibited_actions": [
+        "Do not infer new external authorization from this artifact."
+      ],
+      "constraints": [],
+      "settled_decisions": [
+        {
+          "question_id": "dpm-2018:march21-component",
+          "decision": "Exclude March 21 agenda; apparent nonoccurrence and repeated business do not support orphan meeting retention. Five other September 17 generated-packet components retained."
+        }
+      ],
+      "unresolved_gates": [],
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority.",
+      "supersedes": [
+        "decision-dpm-executive-committee-consolidation-manifest-2026-09-17-42aab495"
+      ]
+    },
+    {
+      "governance_id": "decision-remaining-agenda-resolution-2026-10-07",
+      "category": "active owner decision",
+      "title": "decision-remaining-agenda-resolution-2026-10-07",
+      "scope": {
+        "candidate_ids": [
+          "src-7e7af2af147d96d7",
+          "src-dc3a192d194d3d65",
+          "src-9dbe491dce873f71",
+          "generated-dpm-2018"
+        ],
+        "task_ids": [
+          "remaining-agenda-resolution-2026-10-07"
+        ]
+      },
+      "authority": "Explicit current user bounded agenda reconciliation instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/remaining-agenda-resolution-2026-10-07/meeting-findings.json",
+          "sha256": "9ed490c9f8471b9d4d7126196935f0b7707fc872708b5b5bcba6fdff74f7fa7e",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Exclude exactly the three frozen agendas for insufficient substantive public-information/publication value. Preserve their occurrence/minutes factual limits and original provenance/history. March 21 is apparently not held, not an orphan meeting. Use the corrected local dependent manifest; no upload/publication is authorized.",
+      "required_actions": [
+        "Exclude exactly the three frozen agendas for insufficient substantive public-information/publication value. Preserve their occurrence/minutes factual limits and original provenance/history. March 21 is apparently not held, not an orphan meeting. Use the corrected local dependent manifest; no upload/publication is authorized."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded background reconciliation"
     }
   ]
 }

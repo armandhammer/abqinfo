@@ -53,6 +53,8 @@ if ($LASTEXITCODE) { throw 'School-zone publication guard failed.' }
 if ($LASTEXITCODE) { throw 'School-zone document-entry correction failed.' }
 & python "$PSScriptRoot/Pr215PostMergeCloseout.py" guard
 if ($LASTEXITCODE) { throw 'PR215 closeout exact-delta guard failed.' }
+& python "$PSScriptRoot/RemainingAgendaResolution.py" guard
+if ($LASTEXITCODE) { throw 'Remaining agenda four-record boundary failed.' }
 Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }
