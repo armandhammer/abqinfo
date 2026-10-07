@@ -74,7 +74,7 @@ def setup():
 def implement():
     G.active_check('mutation','content_removal',[ID],pages=[PAGE])
     page=(G.ROOT/PAGE).read_text(encoding='utf-8-sig');a=page.index('### School Zone Active Times');b=page.index('### APS Vision Zero Task Force Records',a)
-    page=page[:a]+ENTRY+page[b:];(G.ROOT/PAGE).write_text(page,encoding='utf-8',newline='\n');(G.ROOT/(P+'publication.md')).write_text(ENTRY,encoding='utf-8',newline='\n')
+    page=page[:a]+ENTRY+page[b:];(G.ROOT/PAGE).write_text(page,encoding='utf-8',newline='\n');(G.ROOT/(P+'publication.md')).write_text(ENTRY.rstrip()+'\n',encoding='utf-8',newline='\n')
     G.active_check('mutation','inventory_disposition',[ID])
     inv=G.load('project-state/master-inventory.json');row=next(x for x in inv['candidates'] if x['id']==ID)
     row.update(description=DESCRIPTION,description_word_count=len(DESCRIPTION.split()),public_title=TITLE,publication_form='linked_archived_original',source_record_evidence=P+'source-record.json',updated_at=now())
