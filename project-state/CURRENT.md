@@ -4,7 +4,7 @@ Three DPM/LGCC agendas excluded for insufficient actual-record substance. March 
 
 generated-dpm-2018: corrected local manifest, five components/eight original pages; composition conflict cleared. Stale six-component PDF unusable; no rebuilt PDF or archive/publication authority. Existing published four-original master unchanged.
 
-Queue: 0 approved / 336 pending (321 gated / 15 source-structural blocked), 0 actionable / human review. No active publication or owner decision. Zero visible/R2 delta. Full validation/Chrome passed; background sync pending; no other population.
+Queue: 0 approved / 336 pending (321 gated / 15 source-structural blocked), 0 actionable / human review. No active publication or owner decision. Zero visible/R2 delta. Full validation/Chrome passed; main/planning synchronized; no other population.
 
 [Findings](governance/remaining-agenda-resolution-2026-10-07/meeting-findings.json) · [Reconciliation](governance/remaining-agenda-resolution-2026-10-07/governance-reconciliation.json) · [Manifest](governance/remaining-agenda-resolution-2026-10-07/generated-manifest.json) · [Active task](governance/active-task.json) · [Queue](ordinary-queue-current.json) · [Workflow](governance-workflow.md) · [Registry](governance-registry.json).
 
