@@ -1,9 +1,9 @@
 # Current project state
 
-School-zone original archived unchanged and full public download verified (3,013,109 bytes; expected SHA-256; 33 pages). R2: 1,617 objects / 10,986,353,284 bytes. School Zone Active Times implemented on publication branch: 30 schedules, 32 named schools, 61 intervals. Scope/quality/safety pass; agency/global effective date remain unstated. Original review and exhaustive dataset preserved. Elementary timing record expected later; outside this population.
+PR #215 owner editorial correction implemented: one linked Albuquerque Middle and High School Zone Active Timings PDF with concise description directly under School Transportation Safety. Removed the school-zone subsection and all individual school/timing entries. Completed review and exhaustive internal extraction (30 schedules / 32 schools / 61 intervals), scope/quality/safety, unchanged original and exact R2 public-byte evidence preserved. No issuing agency or single effective date claimed. Elementary continuation remains internal family context. No R2 mutation.
 
-NEXT: owner review of [OPEN UNMERGED PR #215](https://github.com/armandhammer/abqinfo/pull/215). Full normal/governance/sealed-history/Hugo and Chrome desktop/mobile section checks passed. No content merge or production deployment authorized.
+NEXT: validate corrected preview and update OPEN UNMERGED PR #215 for owner review; no merge/deploy authority.
 
-[Publication receipt](governance/school-zone-publication-2026-10-07/receipt.json) · [Public-byte verification](governance/school-zone-publication-2026-10-07/public-verification.json) · [Active task](governance/active-task.json) · [Queue](ordinary-queue-current.json) · [Workflow](governance-workflow.md) · [Registry](governance-registry.json).
+[Correction](governance/school-zone-document-entry-correction-2026-10-07/authority.json) · [Active task](governance/active-task.json) · [Queue](ordinary-queue-current.json) · [Workflow](governance-workflow.md) · [Registry](governance-registry.json).
 
 [Owner correction](governance/pr207-owner-correction-2026-09-30/receipt.json) · [Closeout](governance/pr207-postmerge-closeout-2026-09-30/receipt.json) · [Ref evidence](governance/pr207-final-ref-verification-2026-09-30/final-verification.json) · [Triage](governance/approved-queue-lightweight-triage-2026-09-30/triage.json).
