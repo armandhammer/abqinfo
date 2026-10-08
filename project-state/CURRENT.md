@@ -1,11 +1,11 @@
 # Current project state
 
-Exact 2014 Bikeways and Trails Facilities Plan draft provenance and historical-value review is in progress under its frozen population and immutable contract. Only src-a614f077ace20401 may change; src-27b939c34a1c59fc is a read-only 312-page 2015 final comparator.
+2014 Bikeways and Trails Facilities Plan draft provenance/quality resolution is prepared for one unmerged owner-review PR. src-a614f077ace20401 is restored from pending factual review to validated historical publication: the former official City Chapters 1–6 delivery matches all 4,402,773 preserved bytes and SHA-256 through its January 25, 2017 Internet Archive capture. Cover2014; August4 PDF metadata is packaging, not an asserted issue/adoption date.
 
-The former City Chapters 1–6 delivery recovered from Internet Archive matches all 4,402,773 preserved bytes and SHA-256. All 131/312 pages have been extracted, compared and visually inspected. The draft retains unique earlier policy, committee and project/cost proposals; its map placeholders and absent separate design manual require a precise historical description. No inventory/content/R2 mutation yet. Next: narrow registered reconciliation, actual-file quality, one unmerged owner-review correction PR and verified nonproduction preview. Do not merge.
+Complete131/312-page comparison and visual review establish unique earlier committee, project/cost and policy/implementation information. Only the subordinate Previous Bike Plans draft label/description and archived City source link change, explicitly disclosing map placeholders and the absent separate design manual. The 2015 final comparator, both R2 originals and unrelated records remain unchanged. Full validation and verified nonproduction preview/PR are pending. Do not merge.
 
-Main/planning baseline: 7bf604d5c3078a6016099ee3da398e711dc265dd. Queue remains 0 approved / 334 pending (321 gated / 13 source-structural blocked), 0 actionable / human review.
+Queue: 0 approved / 333 pending (321 gated / 12 source-structural blocked), 0 actionable / human review; remaining nonterminal884. R2 delta0. Main/planning baseline7bf604d5.
 
-[Research](governance/bikeway-2014-draft-resolution-2026-10-08/research-findings.json) · [Active task](governance/active-task.json) · [Queue](ordinary-queue-current.json) · [Workflow](governance-workflow.md) · [Registry](governance-registry.json).
+[Receipt](governance/bikeway-2014-draft-resolution-2026-10-08/receipt.json) · [Research](governance/bikeway-2014-draft-resolution-2026-10-08/research-findings.json) · [Active task](governance/active-task.json) · [Queue](ordinary-queue-current.json) · [Workflow](governance-workflow.md) · [Registry](governance-registry.json).
 
 [Owner correction](governance/pr207-owner-correction-2026-09-30/receipt.json) · [Closeout](governance/pr207-postmerge-closeout-2026-09-30/receipt.json) · [Ref evidence](governance/pr207-final-ref-verification-2026-09-30/final-verification.json) · [Triage](governance/approved-queue-lightweight-triage-2026-09-30/triage.json).
