@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "33ba63dcc999a5bbf4b6add707490220b7294e951b6a231195f2482a08e26bab",
+  "audit_sha256": "bc7faf712600206b8e7015db2ec9efa8c1f16ff9f09b70667da9db4545756397",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -27034,7 +27034,7 @@
       "authority": "Explicit current user bounded canonical reconciliation authority",
       "decision_date": "2026-10-07",
       "effective_date": "2026-10-07",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/discovery/background-followup-2026-09-26/decisions.json",
@@ -27076,7 +27076,9 @@
       "implementation_status": "Exact canonical prerequisite satisfied; unrelated dispositions preserved",
       "supersedes": [
         "decision-decisions-2c491c71-remaining-thirteen-exception"
-      ]
+      ],
+      "superseded_by": "decision-bikeway-2024-edition-resolution-2026-10-07-exception-1",
+      "supersession_evidence": "project-state/governance/bikeway-2024-edition-resolution-2026-10-07/supersession.json"
     },
     {
       "governance_id": "decision-trails-1993-canonical-reconciliation-2026-10-07-exception-2",
@@ -27301,7 +27303,7 @@
       "authority": "Explicit current user bounded canonical reconciliation authority",
       "decision_date": "2026-10-07",
       "effective_date": "2026-10-07",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/discovery/human-review-reassessment-2026-09-26/decisions.json",
@@ -27364,7 +27366,9 @@
       "implementation_status": "Exact canonical prerequisite satisfied; unrelated dispositions preserved",
       "supersedes": [
         "decision-decisions-b8452592-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception"
-      ]
+      ],
+      "superseded_by": "decision-bikeway-2024-edition-resolution-2026-10-07-exception-2",
+      "supersession_evidence": "project-state/governance/bikeway-2024-edition-resolution-2026-10-07/supersession.json"
     },
     {
       "governance_id": "decision-trails-1993-canonical-reconciliation-2026-10-07-exception-3",
@@ -27493,7 +27497,7 @@
       "authority": "Explicit current user bounded canonical reconciliation authority",
       "decision_date": "2026-10-07",
       "effective_date": "2026-10-07",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/inventory-overrides.json",
@@ -27532,7 +27536,9 @@
       "implementation_status": "Exact canonical prerequisite satisfied; unrelated dispositions preserved",
       "supersedes": [
         "decision-inventory-overrides-09e22b5f"
-      ]
+      ],
+      "superseded_by": "decision-bikeway-2024-edition-resolution-2026-10-07-exception-3",
+      "supersession_evidence": "project-state/governance/bikeway-2024-edition-resolution-2026-10-07/supersession.json"
     },
     {
       "governance_id": "decision-trails-1993-canonical-reconciliation-2026-10-07-exception-4",
@@ -27975,7 +27981,7 @@
       "authority": "Explicit current user bounded canonical reconciliation authority",
       "decision_date": "2026-10-07",
       "effective_date": "2026-10-07",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/discovery/owner-decisions-2026-09-26/next-ordinary-queue.json",
@@ -28038,7 +28044,9 @@
       "implementation_status": "Exact canonical prerequisite satisfied; unrelated dispositions preserved",
       "supersedes": [
         "decision-next-ordinary-queue-b8bb5c70-five-review-exception-2026-10-03-two-county-correction-remaining-thirteen-exception"
-      ]
+      ],
+      "superseded_by": "decision-bikeway-2024-edition-resolution-2026-10-07-exception-4",
+      "supersession_evidence": "project-state/governance/bikeway-2024-edition-resolution-2026-10-07/supersession.json"
     },
     {
       "governance_id": "decision-trails-1993-canonical-reconciliation-2026-10-07-exception-5",
@@ -28735,11 +28743,11 @@
       "authority": "Explicit current owner two-record edition/provenance resolution instruction",
       "decision_date": "2026-10-07",
       "effective_date": "2026-10-07",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/bikeway-2024-edition-resolution-2026-10-07/supersession.json",
-          "sha256": "c0f6624c20a8c9e28ccdd1ba28778502439699cbf162ebbed5f60be88f3b1967",
+          "sha256": "be56c392ae196de50a664125ada9a596738a2573e643233c0f4f64d6b74d6641",
           "binding_pointers": [
             "/"
           ]
@@ -28753,7 +28761,1250 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
+      "implementation_status": "bounded edition review",
+      "superseded_by": "authorization-bikeway-2024-edition-resolution-2026-10-07-supersession-v2",
+      "supersession_evidence": "project-state/governance/bikeway-2024-edition-resolution-2026-10-07/supersession.json"
+    },
+    {
+      "governance_id": "decision-bikeway-2024-edition-resolution-2026-10-07-exception-1",
+      "category": "active family decision",
+      "title": "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact with exact 1993 canonical prerequisite reconciliation with exact 2024 Bikeway edition exception",
+      "scope": {
+        "candidate_ids": [
+          "lin-2f6fbe4ffb0b6564",
+          "lin-7bdbcdc09efe2035",
+          "src-06d0fc4cd0abdef6",
+          "src-070a763aa9701f86",
+          "src-0a69860a80fbe98a",
+          "src-0eb2bcba2848b4dd",
+          "src-0edd7472218d6529",
+          "src-0f4496e4073a5e06",
+          "src-10c3dec88d8336ea",
+          "src-143f58c34ccb049a",
+          "src-158f843cc102a40f",
+          "src-15bd43bb6a15984d",
+          "src-19d8cdfc785b762e",
+          "src-22d52189423d05f0",
+          "src-2454af27ff4945bf",
+          "src-2641b5b13214d7ee",
+          "src-268512229a0c3550",
+          "src-2a8c47dfb71fe9f8",
+          "src-2bbfb64ecf6455b3",
+          "src-2e234e9b6d4a2a8a",
+          "src-319c77f6729ac516",
+          "src-352d880cb11386d3",
+          "src-37fb581fedd3725f",
+          "src-395957636cb2fed0",
+          "src-4cb190564a688d42",
+          "src-4d5d39b12d50677f",
+          "src-4f28a655d98c8ae3",
+          "src-51fb6dc80b316253",
+          "src-56784d45754c69cf",
+          "src-5ade756c56baac45",
+          "src-5cea73d2df70dabb",
+          "src-5f3ea18d2262dd4e",
+          "src-61107c696c0e35b5",
+          "src-68582bc4fe41fb4f",
+          "src-7e3d417f146c307b",
+          "src-7e7af2af147d96d7",
+          "src-80ee860e3cfa60bf",
+          "src-863e82803d9e7cac",
+          "src-907f4de342216f97",
+          "src-9dbe491dce873f71",
+          "src-a59d0a45be606c45",
+          "src-a614f077ace20401",
+          "src-a6bd9f4f6ae1cb40",
+          "src-b55717eb76a142de",
+          "src-b657a1bd0d19ffe8",
+          "src-bad7cd0818045625",
+          "src-bbe0deabbd2d58fc",
+          "src-bc1dbb930feefaaf",
+          "src-c070ab7e5a4a2622",
+          "src-c1d5a2b0b33b331a",
+          "src-c393d59e029b52e9",
+          "src-d7b006f3aceaa405",
+          "src-dc3a192d194d3d65",
+          "src-e0748ccf7ebc1a77",
+          "src-e80e0b49a4723c9a",
+          "src-e88f5a097091c5db",
+          "src-ea9839282b301e5f",
+          "src-ed916e54f80ece6f",
+          "src-f7c7bd5b273def22",
+          "src-fcbe6a7ebcf916a1"
+        ],
+        "pages": [],
+        "artifact_paths": [
+          "project-state/discovery/background-followup-2026-09-26/decisions.json"
+        ]
+      },
+      "authority": "Explicit current owner exact-two-record edition/provenance instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/discovery/background-followup-2026-09-26/decisions.json",
+          "sha256": "8ed46af01d7ea2e53947a7c23224930fe4114447ca3caf287a722a63d4a9f88c",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/remaining-approved-review-2026-10-03/authority.json",
+          "sha256": "9b4d40f0e67ad7f0d02415bddf342176d7b93b437e73ecb761406b607ca2587c",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/governance-reconciliation.json",
+          "sha256": "676845846e16f9ec5cbbd2e0e5415332886e135a0e124f5cad7b6495ecc84974",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/bikeway-2024-edition-resolution-2026-10-07/governance-reconciliation.json",
+          "sha256": "2f05a9161d04b5365494965c858f6988f0f6de8e8ab6f39edc20c7d225332d36",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact. Saved recommendations and completed-action receipts do not authorize new disposition or external action. Explicit current owner exception: prior eligibility/approval and triage for exactly the thirteen IDs in project-state/governance/remaining-approved-review-2026-10-03/population.json are nonbinding for independent reassessment under owner-remaining-approved-review-2026-10-03. All other record decisions, PR207 owner exclusions, five resolved PR208 records, settled consolidation, original provenance and size/storage gates are preserved. Explicit current owner exception solely for src-395957636cb2fed0: the preserved source/structural prerequisite is conclusively satisfied by the unchanged September26 official trailbky.pdf original and fresh exact public GET. Reconcile authoritative source/identity/hash and restore validated existing-publication lifecycle under this task; retain July1993 adoption/November1996 map revision. Preserve every unrelated decision and all historical evidence, and leave duplicate src-fee63a8f74f3f110 unchanged. No new R2 or visible publication action. Explicit current owner exception solely for src-907f4de342216f97 and src-0b1dfe6e620d7fe0: the 144-page preserved PDF is text-equivalent throughout to the proposed-plan body in the original R-24-94 exhibit, but its exact former City-delivered bytes remain unproved. Complete comparison establishes 31 changed extracted-text core pages and 369 absent appendix pages versus the 513-page currently delivered adopted City file. Reconcile the former as a superseded proposed-edition body and the latter as the validated single current complete-plan entry, with positive actual-file scope/quality. Replace only the Current Bike Plan presentation through one unmerged owner-review PR with verified preview. Preserve both R2 originals, all historical evidence, unrelated decisions and the 2014/2015 family.",
+      "required_actions": [
+        "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact. Saved recommendations and completed-action receipts do not authorize new disposition or external action. Explicit current owner exception: prior eligibility/approval and triage for exactly the thirteen IDs in project-state/governance/remaining-approved-review-2026-10-03/population.json are nonbinding for independent reassessment under owner-remaining-approved-review-2026-10-03. All other record decisions, PR207 owner exclusions, five resolved PR208 records, settled consolidation, original provenance and size/storage gates are preserved. Explicit current owner exception solely for src-395957636cb2fed0: the preserved source/structural prerequisite is conclusively satisfied by the unchanged September26 official trailbky.pdf original and fresh exact public GET. Reconcile authoritative source/identity/hash and restore validated existing-publication lifecycle under this task; retain July1993 adoption/November1996 map revision. Preserve every unrelated decision and all historical evidence, and leave duplicate src-fee63a8f74f3f110 unchanged. No new R2 or visible publication action. Explicit current owner exception solely for src-907f4de342216f97 and src-0b1dfe6e620d7fe0: the 144-page preserved PDF is text-equivalent throughout to the proposed-plan body in the original R-24-94 exhibit, but its exact former City-delivered bytes remain unproved. Complete comparison establishes 31 changed extracted-text core pages and 369 absent appendix pages versus the 513-page currently delivered adopted City file. Reconcile the former as a superseded proposed-edition body and the latter as the validated single current complete-plan entry, with positive actual-file scope/quality. Replace only the Current Bike Plan presentation through one unmerged owner-review PR with verified preview. Preserve both R2 originals, all historical evidence, unrelated decisions and the 2014/2015 family."
+      ],
+      "prohibited_actions": [
+        "Do not infer new external authorization from this artifact."
+      ],
+      "constraints": [],
+      "settled_decisions": [
+        {
+          "question_id": "trails-1993-canonical-reconciliation-2026-10-07:canonical-identity",
+          "decision": "Exact authoritative identity reconciled; stale source prerequisite cleared, duplicate and existing public bytes unchanged. Explicit current owner exception solely for src-907f4de342216f97 and src-0b1dfe6e620d7fe0: the 144-page preserved PDF is text-equivalent throughout to the proposed-plan body in the original R-24-94 exhibit, but its exact former City-delivered bytes remain unproved. Complete comparison establishes 31 changed extracted-text core pages and 369 absent appendix pages versus the 513-page currently delivered adopted City file. Reconcile the former as a superseded proposed-edition body and the latter as the validated single current complete-plan entry, with positive actual-file scope/quality. Replace only the Current Bike Plan presentation through one unmerged owner-review PR with verified preview. Preserve both R2 originals, all historical evidence, unrelated decisions and the 2014/2015 family."
+        },
+        {
+          "question_id": "bikeway-2024-edition-resolution-2026-10-07:version-identity",
+          "decision": "The 144-page file is the proposed body and the 513-page City delivery is the current complete adopted edition; one current entry only, with no R2 replacement."
+        }
+      ],
+      "unresolved_gates": [],
+      "implementation_status": "Evidence-backed proposed/current edition reconciliation and owner-review presentation",
+      "supersedes": [
+        "decision-trails-1993-canonical-reconciliation-2026-10-07-exception-1"
+      ]
+    },
+    {
+      "governance_id": "decision-bikeway-2024-edition-resolution-2026-10-07-exception-2",
+      "category": "active family decision",
+      "title": "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact with exact 1993 canonical prerequisite reconciliation with exact 2024 Bikeway edition exception",
+      "scope": {
+        "candidate_ids": [
+          "lin-2f6fbe4ffb0b6564",
+          "lin-7bdbcdc09efe2035",
+          "src-05176d26d35effd3",
+          "src-05b68a5758490499",
+          "src-0a1954f5b601807a",
+          "src-0a69860a80fbe98a",
+          "src-0b1642254494f22e",
+          "src-0c53cff9813e08d6",
+          "src-0ce9e0677d08c174",
+          "src-0d56a1f406d5c7fd",
+          "src-0d585b0b0e0819d7",
+          "src-0d6fc7345fa112b4",
+          "src-0d81ec5c9bdeb726",
+          "src-0d8b434458a51c1d",
+          "src-0e06267dc47f72c1",
+          "src-0e0cd2037365e977",
+          "src-0e84cb9afce66afc",
+          "src-0eb2bcba2848b4dd",
+          "src-0edd7472218d6529",
+          "src-0ee0b959ce0e2a95",
+          "src-0f4496e4073a5e06",
+          "src-0f5140179b1f087f",
+          "src-0feec7ebf6650e27",
+          "src-100dcafff14a7b22",
+          "src-10209c5fcdce2906",
+          "src-105264c6cb316de5",
+          "src-10972f1433d33ea3",
+          "src-10c3dec88d8336ea",
+          "src-1288d4b8b7490606",
+          "src-1406b13347a41e49",
+          "src-143f58c34ccb049a",
+          "src-158f843cc102a40f",
+          "src-15bd43bb6a15984d",
+          "src-1638c405bccc8b77",
+          "src-16da4791a0edb197",
+          "src-1739984ab611183b",
+          "src-19d8cdfc785b762e",
+          "src-1c87095afbb954af",
+          "src-1ec7c31e90234391",
+          "src-1f0f860a2332e181",
+          "src-22d52189423d05f0",
+          "src-23c3708cc4baf262",
+          "src-2454af27ff4945bf",
+          "src-255c53cabfcc83d6",
+          "src-2641b5b13214d7ee",
+          "src-268512229a0c3550",
+          "src-28184729e8cc1326",
+          "src-2a06998d39c7f10b",
+          "src-2a2c3fa335dc6fdb",
+          "src-2a3f612f818af629",
+          "src-2a8c47dfb71fe9f8",
+          "src-2aba4fa7ad3e22e2",
+          "src-2ae6683509af7224",
+          "src-2bbfb64ecf6455b3",
+          "src-2c5c4a2267988a30",
+          "src-2d6d1f3b590a296b",
+          "src-2e234e9b6d4a2a8a",
+          "src-308f7e9bfcba7acc",
+          "src-30b5123b798a30f3",
+          "src-31768af2f6e83e3a",
+          "src-319c77f6729ac516",
+          "src-32ef8e95eab9e999",
+          "src-333e4b4b3970edc1",
+          "src-338b0d72594a0aad",
+          "src-343db5c9b66c8757",
+          "src-352d880cb11386d3",
+          "src-37fb581fedd3725f",
+          "src-395957636cb2fed0",
+          "src-3a4c39611a00e0a3",
+          "src-3b8da1ebd2bd4254",
+          "src-3ce96f0fc670867e",
+          "src-3ff7d77c284d06a8",
+          "src-41e3ec4062027f5a",
+          "src-44e3d9fe6046a2b9",
+          "src-460160f24cbee6d6",
+          "src-4996854ae4e1a349",
+          "src-4a2a607503e444a6",
+          "src-4cb190564a688d42",
+          "src-4d5d39b12d50677f",
+          "src-4db14cde9f1460db",
+          "src-4f0f433921ad77d6",
+          "src-4fa1a71ebc82682f",
+          "src-5214ec3ccc315c44",
+          "src-52d0d541da89d6ea",
+          "src-557789b3284b808e",
+          "src-55b2a8a60f9ba6db",
+          "src-5667f7d63432578c",
+          "src-56784d45754c69cf",
+          "src-596087932271eb8f",
+          "src-5ade756c56baac45",
+          "src-5b7146d18ffadd1a",
+          "src-5b87b806c7b06ec2",
+          "src-5b9de5b2cda39393",
+          "src-5cea73d2df70dabb",
+          "src-5de108fb850c221f",
+          "src-5dedef596ea61914",
+          "src-5f3ea18d2262dd4e",
+          "src-602dae262934217d",
+          "src-61107c696c0e35b5",
+          "src-671b4bd36e11e0d9",
+          "src-68582bc4fe41fb4f",
+          "src-6cd6cf4b9e7a9c2d",
+          "src-6e153eedde3570a6",
+          "src-6ec890a5c16c6034",
+          "src-6f68e060f1fabad1",
+          "src-6fe3ca04cbe476d5",
+          "src-70f7f78d8a1361fd",
+          "src-71462a2c2bc0b84f",
+          "src-733d883e1f0d1160",
+          "src-751926439273bc52",
+          "src-7545c804cf73fe3e",
+          "src-77ddf9c150dafaeb",
+          "src-77df51d4334f3749",
+          "src-78f0a20b0c2e1298",
+          "src-7ae70674e7c8f8a6",
+          "src-7b9563ade9897d9f",
+          "src-7e3d417f146c307b",
+          "src-7e7af2af147d96d7",
+          "src-80ee860e3cfa60bf",
+          "src-83517c0d89571299",
+          "src-8598b5c498e08c1b",
+          "src-863e82803d9e7cac",
+          "src-8903198f1d3c22e1",
+          "src-89405c376dd51f17",
+          "src-89c07790d31ba5ab",
+          "src-907f4de342216f97",
+          "src-90bb532c51a83eb5",
+          "src-93024cc660045c22",
+          "src-93ef5bb0e94bfa97",
+          "src-9534febba55a2a64",
+          "src-95ef76ed2b8dccca",
+          "src-967a816e5ddac695",
+          "src-96f40e25bbda41c8",
+          "src-9a443645146dbf32",
+          "src-9c1428858a82a402",
+          "src-9dbe491dce873f71",
+          "src-a4e93912f58bcb5d",
+          "src-a59d0a45be606c45",
+          "src-a614f077ace20401",
+          "src-a6bd9f4f6ae1cb40",
+          "src-a71e84d118acae26",
+          "src-a738fd67bc6abac6",
+          "src-a9c8e55ce117fb93",
+          "src-a9d18b1ea8963cad",
+          "src-a9def513bf8b7e1d",
+          "src-aab5517438784db7",
+          "src-ab94ccbf5e75b5d0",
+          "src-ad70d657cf2249cf",
+          "src-ae351fd152ae1c8e",
+          "src-b05b3bdd304fad94",
+          "src-b3b66c5876bc621e",
+          "src-b3d16275fa2902f8",
+          "src-b55717eb76a142de",
+          "src-b657a1bd0d19ffe8",
+          "src-b674369d94936b08",
+          "src-b6907ea6557674ae",
+          "src-bad7cd0818045625",
+          "src-bb21ba576195d9b9",
+          "src-bbe0deabbd2d58fc",
+          "src-bc1dbb930feefaaf",
+          "src-bc4b63540afdbcb8",
+          "src-bc91d8e4f296d80b",
+          "src-bdb71a8eaf8a29fa",
+          "src-be1c4258a6b8a63f",
+          "src-bedc45794b5b0841",
+          "src-c070ab7e5a4a2622",
+          "src-c1d5a2b0b33b331a",
+          "src-c38d5cd07e45e48a",
+          "src-c393d59e029b52e9",
+          "src-c7fcd58b9998999c",
+          "src-ca8b9b57d396508c",
+          "src-d2ca0cec6cc311f8",
+          "src-d2d3b593d77a2885",
+          "src-d4834fface517789",
+          "src-d4aef0c92859f298",
+          "src-d7b006f3aceaa405",
+          "src-db3d3c222ac1cf37",
+          "src-db8b649daf20497b",
+          "src-dc3a192d194d3d65",
+          "src-dda1163373f3754c",
+          "src-df097f9ace534aba",
+          "src-df16bc25e51744f0",
+          "src-df8f66b63ef9d69a",
+          "src-dfd205371e4664e5",
+          "src-dff2acc5d7549315",
+          "src-e0075872f76be0a6",
+          "src-e0748ccf7ebc1a77",
+          "src-e2c19c0b6111c542",
+          "src-e3db008049b663ba",
+          "src-e41d6b432e52a7e1",
+          "src-e80e0b49a4723c9a",
+          "src-e844e0556dcd2909",
+          "src-e88f5a097091c5db",
+          "src-ea28455d489f1c2c",
+          "src-ea9839282b301e5f",
+          "src-ed75a3cb5ecc3b0b",
+          "src-ed916e54f80ece6f",
+          "src-ee461f91765ef06d",
+          "src-f22d856f3e6fc2b3",
+          "src-f2d0554062c0ab2b",
+          "src-f3b165a6cf65f33e",
+          "src-f72aaf598e1ba658",
+          "src-f7c7bd5b273def22",
+          "src-f904f6d8bf3787f5",
+          "src-fcbe6a7ebcf916a1",
+          "src-fde6d0caae0cdeef",
+          "src-ff823647e5c83f56",
+          "src-ffcdc04ba8dd292c"
+        ],
+        "pages": [],
+        "artifact_paths": [
+          "project-state/discovery/human-review-reassessment-2026-09-26/decisions.json"
+        ]
+      },
+      "authority": "Explicit current owner exact-two-record edition/provenance instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/discovery/human-review-reassessment-2026-09-26/decisions.json",
+          "sha256": "3945092d2134172bbc24bb09907285f1f6f55b68966ac16c3aaa1b59dc864c87",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/strong-five-review-2026-10-03/authority.json",
+          "sha256": "94074c8b710922d9addc301c5c30ad6f059e9e182a5ea243016455c4444ac664",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/strong-five-review-2026-10-03/review.json",
+          "sha256": "70899a62521606e633471826e4079a7f4f18fc7d6c3002ec87eb89e29f57ab04",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pr208-county-scope-correction-2026-10-03/authority.json",
+          "sha256": "1cd6e915a3c4a696ca9b041a924526b64f9649888b204c7c8795731f786cc1c3",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/remaining-approved-review-2026-10-03/authority.json",
+          "sha256": "9b4d40f0e67ad7f0d02415bddf342176d7b93b437e73ecb761406b607ca2587c",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/governance-reconciliation.json",
+          "sha256": "676845846e16f9ec5cbbd2e0e5415332886e135a0e124f5cad7b6495ecc84974",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/bikeway-2024-edition-resolution-2026-10-07/governance-reconciliation.json",
+          "sha256": "2f05a9161d04b5365494965c858f6988f0f6de8e8ab6f39edc20c7d225332d36",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Preserve the October3 decisions and evidence for the two City resources and Sunport exclusion, and every unrelated prior decision. Explicit owner exception for exactly src-5b7146d18ffadd1a, src-dfd205371e4664e5: their former positive eligibility/publication outcomes are nonbinding and replaced by the independently assessed corrective review under owner-pr208-county-scope-correction-2026-10-03. Preserve original October3 evidence unchanged. Explicit current owner exception: prior eligibility/approval and triage for exactly the thirteen IDs in project-state/governance/remaining-approved-review-2026-10-03/population.json are nonbinding for independent reassessment under owner-remaining-approved-review-2026-10-03. All other record decisions, PR207 owner exclusions, five resolved PR208 records, settled consolidation, original provenance and size/storage gates are preserved. Explicit current owner exception solely for src-395957636cb2fed0: the preserved source/structural prerequisite is conclusively satisfied by the unchanged September26 official trailbky.pdf original and fresh exact public GET. Reconcile authoritative source/identity/hash and restore validated existing-publication lifecycle under this task; retain July1993 adoption/November1996 map revision. Preserve every unrelated decision and all historical evidence, and leave duplicate src-fee63a8f74f3f110 unchanged. No new R2 or visible publication action. Explicit current owner exception solely for src-907f4de342216f97 and src-0b1dfe6e620d7fe0: the 144-page preserved PDF is text-equivalent throughout to the proposed-plan body in the original R-24-94 exhibit, but its exact former City-delivered bytes remain unproved. Complete comparison establishes 31 changed extracted-text core pages and 369 absent appendix pages versus the 513-page currently delivered adopted City file. Reconcile the former as a superseded proposed-edition body and the latter as the validated single current complete-plan entry, with positive actual-file scope/quality. Replace only the Current Bike Plan presentation through one unmerged owner-review PR with verified preview. Preserve both R2 originals, all historical evidence, unrelated decisions and the 2014/2015 family.",
+      "required_actions": [
+        "Preserve the October3 decisions and evidence for the two City resources and Sunport exclusion, and every unrelated prior decision. Explicit owner exception for exactly src-5b7146d18ffadd1a, src-dfd205371e4664e5: their former positive eligibility/publication outcomes are nonbinding and replaced by the independently assessed corrective review under owner-pr208-county-scope-correction-2026-10-03. Preserve original October3 evidence unchanged. Explicit current owner exception: prior eligibility/approval and triage for exactly the thirteen IDs in project-state/governance/remaining-approved-review-2026-10-03/population.json are nonbinding for independent reassessment under owner-remaining-approved-review-2026-10-03. All other record decisions, PR207 owner exclusions, five resolved PR208 records, settled consolidation, original provenance and size/storage gates are preserved. Explicit current owner exception solely for src-395957636cb2fed0: the preserved source/structural prerequisite is conclusively satisfied by the unchanged September26 official trailbky.pdf original and fresh exact public GET. Reconcile authoritative source/identity/hash and restore validated existing-publication lifecycle under this task; retain July1993 adoption/November1996 map revision. Preserve every unrelated decision and all historical evidence, and leave duplicate src-fee63a8f74f3f110 unchanged. No new R2 or visible publication action. Explicit current owner exception solely for src-907f4de342216f97 and src-0b1dfe6e620d7fe0: the 144-page preserved PDF is text-equivalent throughout to the proposed-plan body in the original R-24-94 exhibit, but its exact former City-delivered bytes remain unproved. Complete comparison establishes 31 changed extracted-text core pages and 369 absent appendix pages versus the 513-page currently delivered adopted City file. Reconcile the former as a superseded proposed-edition body and the latter as the validated single current complete-plan entry, with positive actual-file scope/quality. Replace only the Current Bike Plan presentation through one unmerged owner-review PR with verified preview. Preserve both R2 originals, all historical evidence, unrelated decisions and the 2014/2015 family."
+      ],
+      "prohibited_actions": [
+        "Do not infer new external authorization from this artifact."
+      ],
+      "constraints": [],
+      "settled_decisions": [
+        {
+          "question_id": "trails-1993-canonical-reconciliation-2026-10-07:canonical-identity",
+          "decision": "Exact authoritative identity reconciled; stale source prerequisite cleared, duplicate and existing public bytes unchanged. Explicit current owner exception solely for src-907f4de342216f97 and src-0b1dfe6e620d7fe0: the 144-page preserved PDF is text-equivalent throughout to the proposed-plan body in the original R-24-94 exhibit, but its exact former City-delivered bytes remain unproved. Complete comparison establishes 31 changed extracted-text core pages and 369 absent appendix pages versus the 513-page currently delivered adopted City file. Reconcile the former as a superseded proposed-edition body and the latter as the validated single current complete-plan entry, with positive actual-file scope/quality. Replace only the Current Bike Plan presentation through one unmerged owner-review PR with verified preview. Preserve both R2 originals, all historical evidence, unrelated decisions and the 2014/2015 family."
+        },
+        {
+          "question_id": "bikeway-2024-edition-resolution-2026-10-07:version-identity",
+          "decision": "The 144-page file is the proposed body and the 513-page City delivery is the current complete adopted edition; one current entry only, with no R2 replacement."
+        }
+      ],
+      "unresolved_gates": [],
+      "implementation_status": "Evidence-backed proposed/current edition reconciliation and owner-review presentation",
+      "supersedes": [
+        "decision-trails-1993-canonical-reconciliation-2026-10-07-exception-2"
+      ]
+    },
+    {
+      "governance_id": "decision-bikeway-2024-edition-resolution-2026-10-07-exception-3",
+      "category": "active family decision",
+      "title": "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact with exact 1993 canonical prerequisite reconciliation with exact 2024 Bikeway edition exception",
+      "scope": {
+        "candidate_ids": [
+          "src-00579536b46d85b5",
+          "src-00b4e4cf87f6ddb7",
+          "src-0ae10419de42f24d",
+          "src-0b1dfe6e620d7fe0",
+          "src-0b89c7adb106d638",
+          "src-0db30990e43288b8",
+          "src-0edebe68e5032908",
+          "src-0f60535452ac9154",
+          "src-11574e3ddc3abc1d",
+          "src-132f390adc8b3325",
+          "src-14f13dbb6035583c",
+          "src-18d9a974c5137e0b",
+          "src-22218b70f20f0a1d",
+          "src-23e1664dc8fed269",
+          "src-255f70badf09c74b",
+          "src-279b04a78739f265",
+          "src-27b939c34a1c59fc",
+          "src-33b0b49d37a08015",
+          "src-3557750526cfe442",
+          "src-393cac968c0c2b62",
+          "src-395957636cb2fed0",
+          "src-3aa68c8782c7b558",
+          "src-3b5cd74d1d923ca6",
+          "src-40cfc5da0dbddcff",
+          "src-42ff065feb86046d",
+          "src-44b31b70de5c5fb3",
+          "src-46068d1079dd321e",
+          "src-46cb08fc8e5a1ad4",
+          "src-4b6648bb12c8809a",
+          "src-5964b940e185bd7a",
+          "src-613418827a749d36",
+          "src-64110fb866fec2ae",
+          "src-65592118671ee943",
+          "src-658a1f0ede046651",
+          "src-66c2cc3480370cc5",
+          "src-6a81c3bbae8aff0b",
+          "src-6bf0c29dcd083eb4",
+          "src-6da20b965df52490",
+          "src-713c2eb7e427e6a3",
+          "src-7247ce4ce1495fa7",
+          "src-726597a17460ea31",
+          "src-731ef9cb0deff4d7",
+          "src-786fad5a807952dc",
+          "src-79251e803fb8210f",
+          "src-7a790e3c461b0781",
+          "src-7b6c76481a7f00c4",
+          "src-7f51da342c00a840",
+          "src-80ed3bf1a12ab292",
+          "src-823191c37ffca5f8",
+          "src-88f2a9180f45f3cc",
+          "src-89ba195983f6d5e8",
+          "src-8cb092f67a03b619",
+          "src-907f4de342216f97",
+          "src-93a5d61174cab3ea",
+          "src-94cdef5b70765253",
+          "src-9a8de57080520216",
+          "src-9ddd86a240b30500",
+          "src-9e5882e05bd61a72",
+          "src-a38c0dcb7d64e22c",
+          "src-a3e3d800a23f8009",
+          "src-a614f077ace20401",
+          "src-a61754e9e493cd3c",
+          "src-a8552ef7c580c636",
+          "src-aac8c2575ee97d57",
+          "src-b3723cde2e9cf28c",
+          "src-b3c9d16f0120511e",
+          "src-b42957559c1959c0",
+          "src-b5c323782239e519",
+          "src-b7e7b28b39c8eeb1",
+          "src-bd2700c0390fa8c8",
+          "src-bf3eade8dd78723c",
+          "src-c253e8dd6d233d95",
+          "src-c540ee6e20ebd64c",
+          "src-c62f0544fc2c1877",
+          "src-c6df1f20a4e1a172",
+          "src-cc6a4ff2372bfa50",
+          "src-cf6fa82eb6524971",
+          "src-d0e2cb6199c14ee2",
+          "src-d0ed674dd8fe9559",
+          "src-d12ba7a2f591f7c7",
+          "src-d1e0b028a125e23e",
+          "src-d4503413e7328158",
+          "src-d664190ecadc97a8",
+          "src-d76388765a077a16",
+          "src-d8b68c090d8d9a44",
+          "src-d8d6cd2669581c35",
+          "src-db2314b2accb18df",
+          "src-db4dfd5029f9e710",
+          "src-dff91a717447d7aa",
+          "src-e9861a984fbdb2a4",
+          "src-f2fab7785fddb027",
+          "src-f413465fab00efba",
+          "src-f5be150be68a94dd",
+          "src-f8a30720ede66ac7"
+        ],
+        "pages": [
+          "content/development-land-use/area-sector-plans.md",
+          "content/development-land-use/development-process.md",
+          "content/development-land-use/projects.md",
+          "content/maps/dashboards.md",
+          "content/maps/maps.md",
+          "content/public-works/capital-projects.md",
+          "content/transportation/bicycling/bike-maps.md",
+          "content/transportation/bicycling/bike-plans.md",
+          "content/transportation/bicycling/safety-crash-data.md",
+          "content/transportation/design-references.md",
+          "content/transportation/operations-data.md",
+          "content/transportation/roadway-projects/_index.md",
+          "content/transportation/roadway-projects/speed-management.md",
+          "content/transportation/roadway-projects/studies.md",
+          "content/transportation/transit/_index.md",
+          "content/transportation/transit/abq-ride.md",
+          "content/transportation/transportation-plans.md"
+        ],
+        "artifact_paths": [
+          "project-state/inventory-overrides.json"
+        ]
+      },
+      "authority": "Explicit current owner exact-two-record edition/provenance instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/inventory-overrides.json",
+          "sha256": "0dfb9408aac9234ea7cf7fc24205ef36693f59d704a86b1292d1b47402351340",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/governance-reconciliation.json",
+          "sha256": "676845846e16f9ec5cbbd2e0e5415332886e135a0e124f5cad7b6495ecc84974",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/bikeway-2024-edition-resolution-2026-10-07/governance-reconciliation.json",
+          "sha256": "2f05a9161d04b5365494965c858f6988f0f6de8e8ab6f39edc20c7d225332d36",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact. Saved recommendations and completed-action receipts do not authorize new disposition or external action. Explicit current owner exception solely for src-395957636cb2fed0: the preserved source/structural prerequisite is conclusively satisfied by the unchanged September26 official trailbky.pdf original and fresh exact public GET. Reconcile authoritative source/identity/hash and restore validated existing-publication lifecycle under this task; retain July1993 adoption/November1996 map revision. Preserve every unrelated decision and all historical evidence, and leave duplicate src-fee63a8f74f3f110 unchanged. No new R2 or visible publication action. Explicit current owner exception solely for src-907f4de342216f97 and src-0b1dfe6e620d7fe0: the 144-page preserved PDF is text-equivalent throughout to the proposed-plan body in the original R-24-94 exhibit, but its exact former City-delivered bytes remain unproved. Complete comparison establishes 31 changed extracted-text core pages and 369 absent appendix pages versus the 513-page currently delivered adopted City file. Reconcile the former as a superseded proposed-edition body and the latter as the validated single current complete-plan entry, with positive actual-file scope/quality. Replace only the Current Bike Plan presentation through one unmerged owner-review PR with verified preview. Preserve both R2 originals, all historical evidence, unrelated decisions and the 2014/2015 family.",
+      "required_actions": [
+        "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact. Saved recommendations and completed-action receipts do not authorize new disposition or external action. Explicit current owner exception solely for src-395957636cb2fed0: the preserved source/structural prerequisite is conclusively satisfied by the unchanged September26 official trailbky.pdf original and fresh exact public GET. Reconcile authoritative source/identity/hash and restore validated existing-publication lifecycle under this task; retain July1993 adoption/November1996 map revision. Preserve every unrelated decision and all historical evidence, and leave duplicate src-fee63a8f74f3f110 unchanged. No new R2 or visible publication action. Explicit current owner exception solely for src-907f4de342216f97 and src-0b1dfe6e620d7fe0: the 144-page preserved PDF is text-equivalent throughout to the proposed-plan body in the original R-24-94 exhibit, but its exact former City-delivered bytes remain unproved. Complete comparison establishes 31 changed extracted-text core pages and 369 absent appendix pages versus the 513-page currently delivered adopted City file. Reconcile the former as a superseded proposed-edition body and the latter as the validated single current complete-plan entry, with positive actual-file scope/quality. Replace only the Current Bike Plan presentation through one unmerged owner-review PR with verified preview. Preserve both R2 originals, all historical evidence, unrelated decisions and the 2014/2015 family."
+      ],
+      "prohibited_actions": [
+        "Do not infer new external authorization from this artifact."
+      ],
+      "constraints": [],
+      "settled_decisions": [
+        {
+          "question_id": "artifact-decision:decision-inventory-overrides-09e22b5f",
+          "decision": "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact. Saved recommendations and completed-action receipts do not authorize new disposition or external action. Explicit current owner exception solely for src-395957636cb2fed0: the preserved source/structural prerequisite is conclusively satisfied by the unchanged September26 official trailbky.pdf original and fresh exact public GET. Reconcile authoritative source/identity/hash and restore validated existing-publication lifecycle under this task; retain July1993 adoption/November1996 map revision. Preserve every unrelated decision and all historical evidence, and leave duplicate src-fee63a8f74f3f110 unchanged. No new R2 or visible publication action. Explicit current owner exception solely for src-907f4de342216f97 and src-0b1dfe6e620d7fe0: the 144-page preserved PDF is text-equivalent throughout to the proposed-plan body in the original R-24-94 exhibit, but its exact former City-delivered bytes remain unproved. Complete comparison establishes 31 changed extracted-text core pages and 369 absent appendix pages versus the 513-page currently delivered adopted City file. Reconcile the former as a superseded proposed-edition body and the latter as the validated single current complete-plan entry, with positive actual-file scope/quality. Replace only the Current Bike Plan presentation through one unmerged owner-review PR with verified preview. Preserve both R2 originals, all historical evidence, unrelated decisions and the 2014/2015 family."
+        },
+        {
+          "question_id": "trails-1993-canonical-reconciliation-2026-10-07:canonical-identity",
+          "decision": "Exact authoritative identity reconciled; stale source prerequisite cleared, duplicate and existing public bytes unchanged. Explicit current owner exception solely for src-907f4de342216f97 and src-0b1dfe6e620d7fe0: the 144-page preserved PDF is text-equivalent throughout to the proposed-plan body in the original R-24-94 exhibit, but its exact former City-delivered bytes remain unproved. Complete comparison establishes 31 changed extracted-text core pages and 369 absent appendix pages versus the 513-page currently delivered adopted City file. Reconcile the former as a superseded proposed-edition body and the latter as the validated single current complete-plan entry, with positive actual-file scope/quality. Replace only the Current Bike Plan presentation through one unmerged owner-review PR with verified preview. Preserve both R2 originals, all historical evidence, unrelated decisions and the 2014/2015 family."
+        },
+        {
+          "question_id": "bikeway-2024-edition-resolution-2026-10-07:version-identity",
+          "decision": "The 144-page file is the proposed body and the 513-page City delivery is the current complete adopted edition; one current entry only, with no R2 replacement."
+        }
+      ],
+      "unresolved_gates": [],
+      "implementation_status": "Evidence-backed proposed/current edition reconciliation and owner-review presentation",
+      "supersedes": [
+        "decision-trails-1993-canonical-reconciliation-2026-10-07-exception-3"
+      ]
+    },
+    {
+      "governance_id": "decision-bikeway-2024-edition-resolution-2026-10-07-exception-4",
+      "category": "active family decision",
+      "title": "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact with exact 1993 canonical prerequisite reconciliation with exact 2024 Bikeway edition exception",
+      "scope": {
+        "candidate_ids": [
+          "lin-2f6fbe4ffb0b6564",
+          "lin-7bdbcdc09efe2035",
+          "src-05176d26d35effd3",
+          "src-05ec421cb265b29a",
+          "src-06d0fc4cd0abdef6",
+          "src-070a763aa9701f86",
+          "src-0a69860a80fbe98a",
+          "src-0ce9e0677d08c174",
+          "src-0d6fc7345fa112b4",
+          "src-0d8b434458a51c1d",
+          "src-0e0cd2037365e977",
+          "src-0f4496e4073a5e06",
+          "src-105264c6cb316de5",
+          "src-115748559bd98413",
+          "src-129becc7f1f551c6",
+          "src-13ccd9b9108bee02",
+          "src-14184436df7f3dc0",
+          "src-143f58c34ccb049a",
+          "src-1564eaa66bce3d8c",
+          "src-158f843cc102a40f",
+          "src-15bd43bb6a15984d",
+          "src-1638c405bccc8b77",
+          "src-16bf850a5136ba18",
+          "src-1739984ab611183b",
+          "src-177e8e0fc2f3b652",
+          "src-1798e4887199cbc0",
+          "src-17c55853eb1ee41b",
+          "src-19270229907c2c5b",
+          "src-19c81ddab84f2200",
+          "src-1a09b0a2a4e8fcbd",
+          "src-1a0fe1fa6ce5fe38",
+          "src-1a4cc44113e421eb",
+          "src-1a52f943f87c3eb4",
+          "src-1d663b40ba097502",
+          "src-1dad6bde26ac37ad",
+          "src-1e75dd14b75fb520",
+          "src-1f99b6ed507b0793",
+          "src-1f9cf39555e7be6f",
+          "src-208b33695082ab06",
+          "src-20999f89704896c2",
+          "src-21468eb5acc3d6fe",
+          "src-227ada9c59279d76",
+          "src-22c0eeefb9f411b0",
+          "src-23a38383e9fff089",
+          "src-23db7f012183d23b",
+          "src-24475ae69d0950da",
+          "src-24e65271e6797b78",
+          "src-255c53cabfcc83d6",
+          "src-2641b5b13214d7ee",
+          "src-264bbbb7e11f4070",
+          "src-26cb2e52a14f606e",
+          "src-27314f06651cc1c9",
+          "src-273a9754062f41ab",
+          "src-279ec0c9776e8ec8",
+          "src-28184729e8cc1326",
+          "src-29bec2b60308d513",
+          "src-2a2c3fa335dc6fdb",
+          "src-2aba4fa7ad3e22e2",
+          "src-2ae6683509af7224",
+          "src-2bbfb64ecf6455b3",
+          "src-2c5c4a2267988a30",
+          "src-2c6ce756b0b4ec39",
+          "src-2db0c4cf529e5ed9",
+          "src-2f89e1bc040e1d33",
+          "src-30234d8dd299913a",
+          "src-308f7e9bfcba7acc",
+          "src-30ba2f85b855cc3f",
+          "src-31768af2f6e83e3a",
+          "src-31ba73e0c3ce56f8",
+          "src-32936beb4d93f790",
+          "src-32e83038a8ce485a",
+          "src-33c27704152de957",
+          "src-343db5c9b66c8757",
+          "src-352d880cb11386d3",
+          "src-363c6be70d5b6e6b",
+          "src-371d99eab852ec82",
+          "src-38392d4687c2c1f8",
+          "src-3878d42af1890e08",
+          "src-395957636cb2fed0",
+          "src-3a4c39611a00e0a3",
+          "src-3b8d91e803255804",
+          "src-3b98e92fa018bda2",
+          "src-3cb251f4c5161c2e",
+          "src-3d341c61d7813a68",
+          "src-3d4c05490b92ac05",
+          "src-3e26378a067bed17",
+          "src-3e5f55c547e63960",
+          "src-3f2c545431e92ccf",
+          "src-3f479a25caa4a163",
+          "src-3faf323e3b7a0481",
+          "src-401d1d92e61573ba",
+          "src-40d4239b82ca0b0b",
+          "src-40d9ad60ecc2e045",
+          "src-41772a036fd8d687",
+          "src-41dc50cfe28f0da7",
+          "src-43cb5607252c3ca9",
+          "src-444bd2e214dffae6",
+          "src-44d50a56eea89947",
+          "src-460160f24cbee6d6",
+          "src-487eabdf7a18026a",
+          "src-48c77cfd3533626b",
+          "src-48f239de2668009c",
+          "src-4a2a607503e444a6",
+          "src-4ac298fa08915be0",
+          "src-4add0825cbec86a6",
+          "src-4c2b3614256aaf20",
+          "src-4cb190564a688d42",
+          "src-4ce0f7387bab68d1",
+          "src-4d78ff12176856ff",
+          "src-4db14cde9f1460db",
+          "src-4de7fbdd147c8c66",
+          "src-4e28d1f52544e081",
+          "src-4f0f433921ad77d6",
+          "src-4f4c0883be4b0847",
+          "src-4fa1a71ebc82682f",
+          "src-50e17b8f38e64769",
+          "src-5157b5d0c02331a6",
+          "src-51ac987d9e9d59d5",
+          "src-51fb6dc80b316253",
+          "src-5214ec3ccc315c44",
+          "src-52ff0a9832724fcb",
+          "src-5333dc3a8c757ab3",
+          "src-5595744160ab5aaf",
+          "src-55d03bc9cb7cb850",
+          "src-5667f7d63432578c",
+          "src-56ccf9a1a3a98a03",
+          "src-57bc2664e4e3a11f",
+          "src-58b6e48562da781c",
+          "src-5924eddac4b3679a",
+          "src-5a12b40f6dcba285",
+          "src-5a39a69a5a13eb31",
+          "src-5ac3102f855789cc",
+          "src-5ac50fc54bafa7f0",
+          "src-5ade756c56baac45",
+          "src-5aeb890eeeb33d3e",
+          "src-5b42b0f430f5e999",
+          "src-5b7146d18ffadd1a",
+          "src-5b87b806c7b06ec2",
+          "src-5cf26f5f892acc2e",
+          "src-5d05a6a9d897566e",
+          "src-5d29975d450c87e7",
+          "src-5d2fea0ca022e865",
+          "src-5dedef596ea61914",
+          "src-5e49dc8eb62c6083",
+          "src-5f3ea18d2262dd4e",
+          "src-61107c696c0e35b5",
+          "src-6283e5e98f8690b9",
+          "src-629504bb1af568b7",
+          "src-62f772a0e682ed62",
+          "src-63f7f8d96ae99f78",
+          "src-64bc8e1da1e45187",
+          "src-654310d721b45bdf",
+          "src-65a948ba4f3a8e73",
+          "src-65d660d2d2eb926a",
+          "src-6636fce995654aff",
+          "src-66506f4f8837131d",
+          "src-6718ebc5cd6e3080",
+          "src-672e690f4fbdaba1",
+          "src-68582bc4fe41fb4f",
+          "src-6aac91ed022c6b4f",
+          "src-6bae28d2644986c6",
+          "src-6be31059ebc55c27",
+          "src-6c2d73dc9d085051",
+          "src-6c824bed0e61ee76",
+          "src-6c8fb67dc2dacda9",
+          "src-6e153eedde3570a6",
+          "src-6e8c3298d040c3ad",
+          "src-7055dfd30a8efa51",
+          "src-73a4600957c1a5f8",
+          "src-74259110bbf723e6",
+          "src-74a90609f656aa53",
+          "src-74ae55680423eda1",
+          "src-751926439273bc52",
+          "src-7638dd6762b51d5d",
+          "src-76dc6a3d52309621",
+          "src-77ddf9c150dafaeb",
+          "src-77e4073db8101308",
+          "src-783d52b1391b5633",
+          "src-7867bdf940d22b3f",
+          "src-78a0b68b24471315",
+          "src-78d69e16f06a17b7",
+          "src-79042ca53c369d0d",
+          "src-796f81ff15037458",
+          "src-7990f95a3a62e114",
+          "src-7a272474417fe037",
+          "src-7acfcd639c37726f",
+          "src-7bf6d7801a352612",
+          "src-7c96ca757c40af55",
+          "src-7d1c2c7e501ba1cb",
+          "src-7dd4299d3ae1fc2a",
+          "src-7e3d417f146c307b",
+          "src-7e7af2af147d96d7",
+          "src-7f09cd6bd5b04f15",
+          "src-7f4153f5f4410382",
+          "src-7fe9fe4663f519aa",
+          "src-8015bccf7c3e82c8",
+          "src-80dbed6afbf096c3",
+          "src-80ee860e3cfa60bf",
+          "src-8273bfbb1c934f5d",
+          "src-829ac52903bbafb6",
+          "src-83634881de7f4825",
+          "src-843b133d907781df",
+          "src-8487a08cee4e24f2",
+          "src-856c7f0f4f3db078",
+          "src-85d8c31c29cda82b",
+          "src-863e82803d9e7cac",
+          "src-87508af513982aa1",
+          "src-87a111c6c5e74b96",
+          "src-87be309995431a1b",
+          "src-87d94050811db519",
+          "src-8859e639d264ca7e",
+          "src-88fd4897987bc078",
+          "src-8a1f90911b6038b3",
+          "src-8a864773236902b1",
+          "src-8d54dc008ec04d08",
+          "src-8d6bb0b6e5d32969",
+          "src-8df86786b275082b",
+          "src-8ec116c4b306603a",
+          "src-8ef71c5c11ad93e1",
+          "src-8f825309430db0ed",
+          "src-8fe73a8f576396b2",
+          "src-900aefb0c5a4edb6",
+          "src-907f4de342216f97",
+          "src-90924cbe53d5dc6d",
+          "src-919ed6601614053d",
+          "src-91bc40398920c5c3",
+          "src-9240ece399a4da6f",
+          "src-92854ab530364bd8",
+          "src-93024cc660045c22",
+          "src-93d61440b2dd83a0",
+          "src-93eb6c318d555488",
+          "src-93ef5bb0e94bfa97",
+          "src-9534febba55a2a64",
+          "src-95520968ce230ef8",
+          "src-96be465bd70c5d14",
+          "src-96e192e3bb793470",
+          "src-97720ceaf5b69931",
+          "src-99b19f7854667dca",
+          "src-99ba96748043941a",
+          "src-9a564ff838f78c06",
+          "src-9a9c223200e54df7",
+          "src-9b32932e974425ec",
+          "src-9bbf32f12d67ebbe",
+          "src-9d8442d416649046",
+          "src-9db29ece1ba64c4a",
+          "src-9dbe491dce873f71",
+          "src-9e17a94b1f144e94",
+          "src-9e367b450b46736a",
+          "src-9e517541bd23ff4d",
+          "src-9e892401d62b8b2f",
+          "src-9ee9918b01dffcf2",
+          "src-9f27c3790c5f71a8",
+          "src-a028cb0d25814dcc",
+          "src-a02a7c98367d7095",
+          "src-a157cabe2aed7af4",
+          "src-a1731c6529388425",
+          "src-a1b30f8c8ab8f657",
+          "src-a1ec38b861eb528c",
+          "src-a33fe17e628705e7",
+          "src-a3e49d1450abd756",
+          "src-a5853cd186a37bbd",
+          "src-a59d0a45be606c45",
+          "src-a5a37ab0ef0b5075",
+          "src-a5e67a171e101912",
+          "src-a614f077ace20401",
+          "src-a66813ab63cee4cb",
+          "src-a6bd9f4f6ae1cb40",
+          "src-a8a5712990583711",
+          "src-a8f1f1948a03ade4",
+          "src-a94103538515dadb",
+          "src-a9c8e55ce117fb93",
+          "src-a9ddff947a4282c9",
+          "src-aa6d7b0bd671e50b",
+          "src-aabc89c34a8095a6",
+          "src-aad1bfdd1f3bbf14",
+          "src-ab1251891605e7f5",
+          "src-ab94ccbf5e75b5d0",
+          "src-ac4a7d2b99bf5cf8",
+          "src-aceef0eda40266f9",
+          "src-ad8a200858a679d2",
+          "src-ae0be1703844e157",
+          "src-ae49b4a8f31c9095",
+          "src-ae8741d7f3b85db3",
+          "src-aece84c62701c551",
+          "src-b17648af79d3e1a1",
+          "src-b3b66c5876bc621e",
+          "src-b3d16275fa2902f8",
+          "src-b44e7af124c01c10",
+          "src-b522707b710bb22f",
+          "src-b5fb627dfff69e54",
+          "src-b657a1bd0d19ffe8",
+          "src-b66a20cd5efb919a",
+          "src-b674369d94936b08",
+          "src-b7d34f9ee6422783",
+          "src-b8dad566165e2a17",
+          "src-b9635ab48e2fc5ca",
+          "src-ba0dfc7fe3c22be7",
+          "src-ba6bcdcab56ce3d3",
+          "src-bad7cd0818045625",
+          "src-bb21ba576195d9b9",
+          "src-bb52613ce5e55117",
+          "src-bc1dbb930feefaaf",
+          "src-bd2d82443bb2eb9b",
+          "src-bd9b56b06869b1a4",
+          "src-bdc0cb56143d69a0",
+          "src-be4df966deebed35",
+          "src-be7caa7193b994f3",
+          "src-bf2601a23b93b5a3",
+          "src-bf34505f308a8e22",
+          "src-bf835a8a5475278e",
+          "src-c010f5feed1a9cf4",
+          "src-c04ef8db2212fd33",
+          "src-c070ab7e5a4a2622",
+          "src-c0a43352ee9019d3",
+          "src-c1251f8ba8e6c2cd",
+          "src-c1d5a2b0b33b331a",
+          "src-c2c171a89b600fa8",
+          "src-c393d59e029b52e9",
+          "src-c4306aac8fc929b4",
+          "src-c623d7f1fe27648d",
+          "src-c6aa390d11399709",
+          "src-c73b2198c15399d0",
+          "src-c908e4f9bd10f88a",
+          "src-c9c828803603e6d3",
+          "src-caeb1cc440404629",
+          "src-cb94b02f92bf79bb",
+          "src-cbb409275c1acebf",
+          "src-cc4589b27d9b4c9a",
+          "src-cd4af1b973f2c583",
+          "src-ce44ffbb558f5b99",
+          "src-ce4862f0ac271f4a",
+          "src-cebad24115e1b02d",
+          "src-cf9551d519692607",
+          "src-d1213d0fba1ca8ca",
+          "src-d297b7c83adca898",
+          "src-d2b74c172101abc1",
+          "src-d4834fface517789",
+          "src-d64c25f610dc4db0",
+          "src-d658fabe61e1208c",
+          "src-d6595748f0d531d4",
+          "src-d6f66fef851522ce",
+          "src-d7b006f3aceaa405",
+          "src-d7ed8b7315a5e12d",
+          "src-d837cff6918ede96",
+          "src-d85e636afb83d693",
+          "src-da117aa947705598",
+          "src-da3c9e8001fa17cc",
+          "src-da4a1570a9a31d35",
+          "src-daf99dd3726a1751",
+          "src-dc2bbf43c5bb13f7",
+          "src-dc3a192d194d3d65",
+          "src-dd9688ec244b775f",
+          "src-de35e6f390589ab9",
+          "src-de8c17ae5d4cf207",
+          "src-de9b960564aa982e",
+          "src-dfd205371e4664e5",
+          "src-dff2acc5d7549315",
+          "src-e01b2c62963c90e9",
+          "src-e0748ccf7ebc1a77",
+          "src-e18125b55a88573d",
+          "src-e1ba11c182777207",
+          "src-e2adad6f61491d70",
+          "src-e2c19c0b6111c542",
+          "src-e32a53bd7c0f75da",
+          "src-e36b0383440f884e",
+          "src-e3b16212c3f64be1",
+          "src-e41d6b432e52a7e1",
+          "src-e459ae69fc8acab3",
+          "src-e47a6925e2f037bd",
+          "src-e54536e42de9edcc",
+          "src-e63d4ebb9302ec96",
+          "src-e71be628ae2e5b9a",
+          "src-e7c0db4d2e5058d6",
+          "src-e7c330125c6cff88",
+          "src-e7ceffdaa300742d",
+          "src-e80311295114aa5f",
+          "src-e80e0b49a4723c9a",
+          "src-e81b35b5f9af4d52",
+          "src-e844e0556dcd2909",
+          "src-e84ecf5f9ebbee36",
+          "src-e8712dd9a7474625",
+          "src-e88f5a097091c5db",
+          "src-e8ba3edf809099d7",
+          "src-e90039aa580fda19",
+          "src-e90d0c73c44e1a7e",
+          "src-e9568a5cd518d60a",
+          "src-e9a5daf40c7891ce",
+          "src-e9b93dd7ac244a12",
+          "src-ea28455d489f1c2c",
+          "src-ea9839282b301e5f",
+          "src-eaaf848105f8ebe6",
+          "src-eb95d9154e109a52",
+          "src-ec9f831defe82924",
+          "src-ed75a3cb5ecc3b0b",
+          "src-ed916e54f80ece6f",
+          "src-ef0083880aa30ca5",
+          "src-f1c90b2d48b85069",
+          "src-f1dc11aedccdbb5f",
+          "src-f3296ead0b036773",
+          "src-f33de69926b6c41a",
+          "src-f47d9ee905540a56",
+          "src-f4d03cbedaee3830",
+          "src-f655bab86c986be5",
+          "src-f65845791ac1249c",
+          "src-f6b55a2eac3712e6",
+          "src-f6c1a087135ceff4",
+          "src-f72aaf598e1ba658",
+          "src-f747d65bda2e6394",
+          "src-f7bdcb3c226f61e7",
+          "src-f7c7bd5b273def22",
+          "src-f7ce9531c2bc0d75",
+          "src-f7dfbcaeae424c72",
+          "src-f7eb6a226bb9cfa9",
+          "src-f8453bfbac0e5e6f",
+          "src-f8f183b78406e7cc",
+          "src-fb54d0a9b4bcb537",
+          "src-fcbe6a7ebcf916a1",
+          "src-fd0c881da9ce98f3",
+          "src-fd3f7f884aa09b64",
+          "src-fddc4e19e1cb9e13",
+          "src-fe2821d289c917cf",
+          "src-fe3e01d87beef289",
+          "src-fe8c43a2ca9b7417",
+          "src-fedd2569de36e85c",
+          "src-ff72267432817a38",
+          "src-ffeaf7c21fd42639"
+        ],
+        "pages": [],
+        "artifact_paths": [
+          "project-state/discovery/owner-decisions-2026-09-26/next-ordinary-queue.json"
+        ]
+      },
+      "authority": "Explicit current owner exact-two-record edition/provenance instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/discovery/owner-decisions-2026-09-26/next-ordinary-queue.json",
+          "sha256": "c678ba658a03648d733b9d65ece06c9d1467e3eec1414dbe5b40bc0689bf928d",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/strong-five-review-2026-10-03/authority.json",
+          "sha256": "94074c8b710922d9addc301c5c30ad6f059e9e182a5ea243016455c4444ac664",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/strong-five-review-2026-10-03/review.json",
+          "sha256": "70899a62521606e633471826e4079a7f4f18fc7d6c3002ec87eb89e29f57ab04",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pr208-county-scope-correction-2026-10-03/authority.json",
+          "sha256": "1cd6e915a3c4a696ca9b041a924526b64f9649888b204c7c8795731f786cc1c3",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/remaining-approved-review-2026-10-03/authority.json",
+          "sha256": "9b4d40f0e67ad7f0d02415bddf342176d7b93b437e73ecb761406b607ca2587c",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/governance-reconciliation.json",
+          "sha256": "676845846e16f9ec5cbbd2e0e5415332886e135a0e124f5cad7b6495ecc84974",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/bikeway-2024-edition-resolution-2026-10-07/governance-reconciliation.json",
+          "sha256": "2f05a9161d04b5365494965c858f6988f0f6de8e8ab6f39edc20c7d225332d36",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Preserve the October3 decisions and evidence for the two City resources and Sunport exclusion, and every unrelated prior decision. Explicit owner exception for exactly src-5b7146d18ffadd1a, src-dfd205371e4664e5: their former positive eligibility/publication outcomes are nonbinding and replaced by the independently assessed corrective review under owner-pr208-county-scope-correction-2026-10-03. Preserve original October3 evidence unchanged. Explicit current owner exception: prior eligibility/approval and triage for exactly the thirteen IDs in project-state/governance/remaining-approved-review-2026-10-03/population.json are nonbinding for independent reassessment under owner-remaining-approved-review-2026-10-03. All other record decisions, PR207 owner exclusions, five resolved PR208 records, settled consolidation, original provenance and size/storage gates are preserved. Explicit current owner exception solely for src-395957636cb2fed0: the preserved source/structural prerequisite is conclusively satisfied by the unchanged September26 official trailbky.pdf original and fresh exact public GET. Reconcile authoritative source/identity/hash and restore validated existing-publication lifecycle under this task; retain July1993 adoption/November1996 map revision. Preserve every unrelated decision and all historical evidence, and leave duplicate src-fee63a8f74f3f110 unchanged. No new R2 or visible publication action. Explicit current owner exception solely for src-907f4de342216f97 and src-0b1dfe6e620d7fe0: the 144-page preserved PDF is text-equivalent throughout to the proposed-plan body in the original R-24-94 exhibit, but its exact former City-delivered bytes remain unproved. Complete comparison establishes 31 changed extracted-text core pages and 369 absent appendix pages versus the 513-page currently delivered adopted City file. Reconcile the former as a superseded proposed-edition body and the latter as the validated single current complete-plan entry, with positive actual-file scope/quality. Replace only the Current Bike Plan presentation through one unmerged owner-review PR with verified preview. Preserve both R2 originals, all historical evidence, unrelated decisions and the 2014/2015 family.",
+      "required_actions": [
+        "Preserve the October3 decisions and evidence for the two City resources and Sunport exclusion, and every unrelated prior decision. Explicit owner exception for exactly src-5b7146d18ffadd1a, src-dfd205371e4664e5: their former positive eligibility/publication outcomes are nonbinding and replaced by the independently assessed corrective review under owner-pr208-county-scope-correction-2026-10-03. Preserve original October3 evidence unchanged. Explicit current owner exception: prior eligibility/approval and triage for exactly the thirteen IDs in project-state/governance/remaining-approved-review-2026-10-03/population.json are nonbinding for independent reassessment under owner-remaining-approved-review-2026-10-03. All other record decisions, PR207 owner exclusions, five resolved PR208 records, settled consolidation, original provenance and size/storage gates are preserved. Explicit current owner exception solely for src-395957636cb2fed0: the preserved source/structural prerequisite is conclusively satisfied by the unchanged September26 official trailbky.pdf original and fresh exact public GET. Reconcile authoritative source/identity/hash and restore validated existing-publication lifecycle under this task; retain July1993 adoption/November1996 map revision. Preserve every unrelated decision and all historical evidence, and leave duplicate src-fee63a8f74f3f110 unchanged. No new R2 or visible publication action. Explicit current owner exception solely for src-907f4de342216f97 and src-0b1dfe6e620d7fe0: the 144-page preserved PDF is text-equivalent throughout to the proposed-plan body in the original R-24-94 exhibit, but its exact former City-delivered bytes remain unproved. Complete comparison establishes 31 changed extracted-text core pages and 369 absent appendix pages versus the 513-page currently delivered adopted City file. Reconcile the former as a superseded proposed-edition body and the latter as the validated single current complete-plan entry, with positive actual-file scope/quality. Replace only the Current Bike Plan presentation through one unmerged owner-review PR with verified preview. Preserve both R2 originals, all historical evidence, unrelated decisions and the 2014/2015 family."
+      ],
+      "prohibited_actions": [
+        "Do not infer new external authorization from this artifact."
+      ],
+      "constraints": [],
+      "settled_decisions": [
+        {
+          "question_id": "trails-1993-canonical-reconciliation-2026-10-07:canonical-identity",
+          "decision": "Exact authoritative identity reconciled; stale source prerequisite cleared, duplicate and existing public bytes unchanged. Explicit current owner exception solely for src-907f4de342216f97 and src-0b1dfe6e620d7fe0: the 144-page preserved PDF is text-equivalent throughout to the proposed-plan body in the original R-24-94 exhibit, but its exact former City-delivered bytes remain unproved. Complete comparison establishes 31 changed extracted-text core pages and 369 absent appendix pages versus the 513-page currently delivered adopted City file. Reconcile the former as a superseded proposed-edition body and the latter as the validated single current complete-plan entry, with positive actual-file scope/quality. Replace only the Current Bike Plan presentation through one unmerged owner-review PR with verified preview. Preserve both R2 originals, all historical evidence, unrelated decisions and the 2014/2015 family."
+        },
+        {
+          "question_id": "bikeway-2024-edition-resolution-2026-10-07:version-identity",
+          "decision": "The 144-page file is the proposed body and the 513-page City delivery is the current complete adopted edition; one current entry only, with no R2 replacement."
+        }
+      ],
+      "unresolved_gates": [],
+      "implementation_status": "Evidence-backed proposed/current edition reconciliation and owner-review presentation",
+      "supersedes": [
+        "decision-trails-1993-canonical-reconciliation-2026-10-07-exception-4"
+      ]
+    },
+    {
+      "governance_id": "decision-bikeway-2024-edition-resolution-2026-10-07",
+      "category": "active owner decision",
+      "title": "decision-bikeway-2024-edition-resolution-2026-10-07",
+      "scope": {
+        "candidate_ids": [
+          "src-907f4de342216f97",
+          "src-0b1dfe6e620d7fe0"
+        ],
+        "task_ids": [
+          "bikeway-2024-edition-resolution-2026-10-07"
+        ]
+      },
+      "authority": "Explicit current owner two-record edition/provenance resolution instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/bikeway-2024-edition-resolution-2026-10-07/governance-reconciliation.json",
+          "sha256": "2f05a9161d04b5365494965c858f6988f0f6de8e8ab6f39edc20c7d225332d36",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Disposition only the two frozen 2024 Bikeway editions; 144-page proposed body is superseded for the current-plan slot and the byte-verified 513-page City edition is the single validated current plan. One owner-review visible correction, no merge or R2 mutation.",
+      "required_actions": [
+        "Disposition only the two frozen 2024 Bikeway editions; 144-page proposed body is superseded for the current-plan slot and the byte-verified 513-page City edition is the single validated current plan. One owner-review visible correction, no merge or R2 mutation."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
       "implementation_status": "bounded edition review"
+    },
+    {
+      "governance_id": "quality-bikeway-2024-edition-resolution-2026-10-07",
+      "category": "active owner decision",
+      "title": "quality-bikeway-2024-edition-resolution-2026-10-07",
+      "scope": {
+        "candidate_ids": [
+          "src-907f4de342216f97",
+          "src-0b1dfe6e620d7fe0"
+        ],
+        "task_ids": [
+          "bikeway-2024-edition-resolution-2026-10-07"
+        ]
+      },
+      "authority": "Explicit current owner two-record edition/provenance resolution instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/bikeway-2024-edition-resolution-2026-10-07/quality-decision.json",
+          "sha256": "05496e47a3e1c639dc91e0ead4caf620d6bdff95189f4e2de19c25d623147ff1",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Apply actual complete City edition positive mission-scope, standalone document-quality and currentness assessment; component convenience links remain subordinate and unchanged.",
+      "required_actions": [
+        "Apply actual complete City edition positive mission-scope, standalone document-quality and currentness assessment; component convenience links remain subordinate and unchanged."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded edition review"
+    },
+    {
+      "governance_id": "authorization-bikeway-2024-edition-resolution-2026-10-07-supersession-v2",
+      "category": "active owner decision",
+      "title": "Completed exact-two-record supersession receipt authority",
+      "scope": {
+        "candidate_ids": [
+          "src-907f4de342216f97",
+          "src-0b1dfe6e620d7fe0"
+        ],
+        "task_ids": [
+          "bikeway-2024-edition-resolution-2026-10-07"
+        ]
+      },
+      "authority": "Explicit current owner exact-two-record resolution instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/bikeway-2024-edition-resolution-2026-10-07/supersession.json",
+          "sha256": "be56c392ae196de50a664125ada9a596738a2573e643233c0f4f64d6b74d6641",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Only evidence-backed exact two-record reconciliation within the current owner instruction; preserve all other authority and historical evidence. No additional external effects or population authorized. The completed exact-two-record proposals in the updated receipt replace the initially empty proposal placeholder; this does not expand the frozen scope or add an external action.",
+      "required_actions": [
+        "Only evidence-backed exact two-record reconciliation within the current owner instruction; preserve all other authority and historical evidence. No additional external effects or population authorized. The completed exact-two-record proposals in the updated receipt replace the initially empty proposal placeholder; this does not expand the frozen scope or add an external action."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [
+        {
+          "question_id": "bikeway-2024-edition-resolution-2026-10-07:proposal-receipt",
+          "decision": "Completed four scoped source/queue/override replacements; no other authority changed."
+        }
+      ],
+      "unresolved_gates": [],
+      "implementation_status": "Registered completed scoped proposals",
+      "supersedes": [
+        "authorization-bikeway-2024-edition-resolution-2026-10-07-supersession"
+      ]
     }
   ]
 }

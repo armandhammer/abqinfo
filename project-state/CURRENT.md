@@ -1,11 +1,11 @@
 # Current project state
 
-PR #216 owner-merged at 01ac444f8bd02bd04b5e9859c25a30a858686e6e. Production ABQ RIDE / ART Planning and Development History verified directly in Chrome desktop/mobile: one Preserved Copy entry, complete 42/41-page unverified-delivery/finality qualifier, no Final Report label, same R2 and City links. Reviewed preview, exact merge deployment and production article match; full public GET remains 2,766,304 bytes / 49fbec4922fd SHA-256 prefix.
+2024 Bikeway and Trail Facilities Plan exact two-record edition resolution is in an unmerged owner-review PR. The 144-page proposed body src-907f4de342216f97 is superseded for the current-plan slot: all pages text-align with the R-24-94 PROPOSED exhibit after wrapper/extraction normalization; exact City delivery of its hash remains unproved. The 513-page src-0b1dfe6e620d7fe0 is the complete adopted City delivery, exact to both current Planning PDF and adopted-plan OnBase public bytes; its first 144 pages differ on 31 extracted-text pages and 369 appendix pages follow.
 
-Exactly src-e80e0b49a4723c9a is live but still provenance-blocked: pending review / source_provenance_unresolved, NOT validated. Manual content review closed; source/finality prerequisite and original evidence preserved. Full normal/governance/sealed-history/Hugo/rendered checks passed; background main/planning synchronization authorized. No new population. Closeout visitor-visible/R2 delta 0.
+The Current Bike Plan section now has one primary complete City plan link and an official City PDF link. The existing 144-page R2 original remains intact but is no longer presented as current; component links and 2014/2015 family remain unchanged. Full validation passed; Cloudflare preview and owner PR review are pending. Do not merge or deploy. No R2 write.
 
-Queue 0 approved / 335 pending (321 governance-gated / 14 source-structural blocked); no owner decision or active publication population.
+Queue: 0 approved / 334 pending (321 governance-gated / 13 source-structural blocked), 0 actionable / human review. Checkpoint remaining nonterminal 885.
 
-[Closeout](governance/pr216-postmerge-closeout-2026-10-07/receipt.json) · [Production](governance/pr216-postmerge-closeout-2026-10-07/production-verification.json) · [Active task](governance/active-task.json) · [Queue](ordinary-queue-current.json) · [Workflow](governance-workflow.md) · [Registry](governance-registry.json).
+[Receipt](governance/bikeway-2024-edition-resolution-2026-10-07/receipt.json) · [Research](governance/bikeway-2024-edition-resolution-2026-10-07/research-findings.json) · [Active task](governance/active-task.json) · [Queue](ordinary-queue-current.json) · [Workflow](governance-workflow.md) · [Registry](governance-registry.json).
 
 [Owner correction](governance/pr207-owner-correction-2026-09-30/receipt.json) · [Closeout](governance/pr207-postmerge-closeout-2026-09-30/receipt.json) · [Ref evidence](governance/pr207-final-ref-verification-2026-09-30/final-verification.json) · [Triage](governance/approved-queue-lightweight-triage-2026-09-30/triage.json).
