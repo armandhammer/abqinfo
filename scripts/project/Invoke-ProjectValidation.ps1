@@ -61,6 +61,8 @@ if ($LASTEXITCODE -ne 0) { throw "1993 canonical reconciliation regression faile
 & python "$PSScriptRoot/BrtPrizeVersionResolution.py" guard
 if ($LASTEXITCODE -ne 0) { throw "BRT prize version resolution regression failed" }
 
+& python "$PSScriptRoot/Pr216PostMergeCloseout.py" guard
+if ($LASTEXITCODE) { throw 'PR216 closeout guard failed.' }
 Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }
@@ -325,6 +327,8 @@ if ($LASTEXITCODE) { throw 'PR213 production/Hugo parity failed.' }
 if ($LASTEXITCODE) { throw 'PR214 production/Hugo parity failed.' }
 & python "$PSScriptRoot/Pr215PostMergeCloseout.py" render
 if ($LASTEXITCODE) { throw 'PR215 production/Hugo parity failed.' }
+& python "$PSScriptRoot/Pr216PostMergeCloseout.py" render
+if ($LASTEXITCODE) { throw 'PR216 production/Hugo parity failed.' }
 $broken = @()
 & python "$PSScriptRoot/Test-OrdinaryYouthJusticePublication.py" --rendered-root tmp/site-build
 if ($LASTEXITCODE) { throw 'Youth justice family rendered publication check failed.' }

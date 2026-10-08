@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "e897673d377257e3bc5b92b0d2d6815e71abd7e0c9762ab01ad441a864f05780",
+  "audit_sha256": "3bb990665d6f93840b4868089f4694583a1bfba5a0ed6f07751226e497d7b56f",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15259,7 +15259,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "b47d4e1a45db8a842ae98b8487882eea3a05d510d2e0a1115ba8d893b51368d4",
+          "sha256": "4699ed29c23132c4829674746e9089901570a0123d9b6658e5603b51dae9d98f",
           "binding_pointers": [
             "/implementation"
           ]
@@ -28148,7 +28148,7 @@
       "authority": "Explicit current user bounded canonical reconciliation instruction",
       "decision_date": "2026-10-07",
       "effective_date": "2026-10-07",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/brt-prize-version-resolution-2026-10-07/authority.json",
@@ -28166,7 +28166,9 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "bounded background reconciliation"
+      "implementation_status": "bounded background reconciliation",
+      "superseded_by": "owner-brt-prize-version-resolution-2026-10-07-pr216-postmerge",
+      "supersession_evidence": "project-state/governance/pr216-postmerge-closeout-2026-10-07/supersession.json"
     },
     {
       "governance_id": "authorization-brt-prize-version-resolution-2026-10-07-supersession",
@@ -28218,7 +28220,7 @@
       "authority": "Explicit current user bounded canonical reconciliation instruction",
       "decision_date": "2026-10-07",
       "effective_date": "2026-10-07",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/brt-prize-version-resolution-2026-10-07/authority-resumption.json",
@@ -28236,7 +28238,9 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "bounded background reconciliation"
+      "implementation_status": "bounded background reconciliation",
+      "superseded_by": "owner-brt-prize-version-resolution-2026-10-07-resumption-pr216-postmerge",
+      "supersession_evidence": "project-state/governance/pr216-postmerge-closeout-2026-10-07/supersession.json"
     },
     {
       "governance_id": "decision-brt-prize-version-resolution-2026-10-07-august-finality-exception",
@@ -28274,7 +28278,7 @@
       "authority": "Explicit repeated current owner exact-record correction instruction",
       "decision_date": "2026-10-07",
       "effective_date": "2026-10-07",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/near-complete-review-decisions-2026-08-20.json",
@@ -28309,7 +28313,9 @@
       "implementation_status": "Unmerged bounded historical-entry correction; factual source hold retained",
       "supersedes": [
         "decision-near-complete-review-decisions-2026-08-20-55b5f92e"
-      ]
+      ],
+      "superseded_by": "decision-brt-prize-version-resolution-2026-10-07-august-finality-exception-pr216-postmerge",
+      "supersession_evidence": "project-state/governance/pr216-postmerge-closeout-2026-10-07/supersession.json"
     },
     {
       "governance_id": "decision-brt-prize-version-resolution-2026-10-07",
@@ -28326,7 +28332,7 @@
       "authority": "Explicit current user bounded canonical reconciliation instruction",
       "decision_date": "2026-10-07",
       "effective_date": "2026-10-07",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/brt-prize-version-resolution-2026-10-07/governance-reconciliation.json",
@@ -28344,7 +28350,9 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "bounded background reconciliation"
+      "implementation_status": "bounded background reconciliation",
+      "superseded_by": "decision-brt-prize-version-resolution-2026-10-07-pr216-postmerge",
+      "supersession_evidence": "project-state/governance/pr216-postmerge-closeout-2026-10-07/supersession.json"
     },
     {
       "governance_id": "quality-brt-prize-version-resolution-2026-10-07",
@@ -28361,7 +28369,7 @@
       "authority": "Explicit current user bounded canonical reconciliation instruction",
       "decision_date": "2026-10-07",
       "effective_date": "2026-10-07",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/brt-prize-version-resolution-2026-10-07/quality-decision.json",
@@ -28379,7 +28387,301 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
+      "implementation_status": "bounded background reconciliation",
+      "superseded_by": "quality-brt-prize-version-resolution-2026-10-07-pr216-postmerge",
+      "supersession_evidence": "project-state/governance/pr216-postmerge-closeout-2026-10-07/supersession.json"
+    },
+    {
+      "governance_id": "owner-brt-prize-version-resolution-2026-10-07-pr216-postmerge",
+      "category": "active owner decision",
+      "title": "owner-brt-prize-version-resolution-2026-10-07",
+      "scope": {
+        "candidate_ids": [
+          "src-e80e0b49a4723c9a"
+        ],
+        "task_ids": [
+          "brt-prize-version-resolution-2026-10-07"
+        ]
+      },
+      "authority": "Explicit current owner PR216 postmerge closeout instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/brt-prize-version-resolution-2026-10-07/authority.json",
+          "sha256": "def2a639958ededda36c9a269328d8243973fa7f0983e31925ea423deff2abf6",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pr216-postmerge-closeout-2026-10-07/authority.json",
+          "sha256": "4f7b668468c3d3a59f43f77294ee8ce1002c3dc326d62948ee15224563fd14cd",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Exact one-record complete version/provenance/quality review. Correct unsupported finality if needed only in an unmerged owner-review content PR. Explicit evidence-backed record-scoped replacements may reconcile prior stale holds. No destructive R2, upload, version overwrite, unrelated population or content merge. Explicit current owner PR216 closeout supersedes ONLY its prior open/unmerged, awaiting-content-review, feature-only-sync and main-unchanged phase boundaries for src-e80e0b49a4723c9a. The owner has merged; verify production and record live presentation while preserving pending review and unresolved exact42-page official delivery/finality. No validated/passed source lifecycle or provenance release. Integrate only background closeout main/planning after full validation. All unrelated scope, decisions, quality/currentness, original evidence and prohibitions on new visitor-visible/R2/population changes remain controlling.",
+      "required_actions": [
+        "Exact one-record complete version/provenance/quality review. Correct unsupported finality if needed only in an unmerged owner-review content PR. Explicit evidence-backed record-scoped replacements may reconcile prior stale holds. No destructive R2, upload, version overwrite, unrelated population or content merge. Explicit current owner PR216 closeout supersedes ONLY its prior open/unmerged, awaiting-content-review, feature-only-sync and main-unchanged phase boundaries for src-e80e0b49a4723c9a. The owner has merged; verify production and record live presentation while preserving pending review and unresolved exact42-page official delivery/finality. No validated/passed source lifecycle or provenance release. Integrate only background closeout main/planning after full validation. All unrelated scope, decisions, quality/currentness, original evidence and prohibitions on new visitor-visible/R2/population changes remain controlling."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
       "implementation_status": "bounded background reconciliation"
+    },
+    {
+      "governance_id": "owner-brt-prize-version-resolution-2026-10-07-resumption-pr216-postmerge",
+      "category": "active owner decision",
+      "title": "owner-brt-prize-version-resolution-2026-10-07-resumption",
+      "scope": {
+        "candidate_ids": [
+          "src-e80e0b49a4723c9a"
+        ],
+        "task_ids": [
+          "brt-prize-version-resolution-2026-10-07"
+        ]
+      },
+      "authority": "Explicit current owner PR216 postmerge closeout instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/brt-prize-version-resolution-2026-10-07/authority-resumption.json",
+          "sha256": "20ca72c3b74f218497c6d9e2475ffb75dd7b2d4190a285b97bf69202d8951c11",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pr216-postmerge-closeout-2026-10-07/authority.json",
+          "sha256": "4f7b668468c3d3a59f43f77294ee8ce1002c3dc326d62948ee15224563fd14cd",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Finish this same exact-record version/finality correction. A visible correction requires an unmerged owner-review PR with verified nonproduction preview and planning-snapshot synchronized to its reviewed head; main stays unchanged. No R2 mutation or unrelated population. Explicit current owner PR216 closeout supersedes ONLY its prior open/unmerged, awaiting-content-review, feature-only-sync and main-unchanged phase boundaries for src-e80e0b49a4723c9a. The owner has merged; verify production and record live presentation while preserving pending review and unresolved exact42-page official delivery/finality. No validated/passed source lifecycle or provenance release. Integrate only background closeout main/planning after full validation. All unrelated scope, decisions, quality/currentness, original evidence and prohibitions on new visitor-visible/R2/population changes remain controlling.",
+      "required_actions": [
+        "Finish this same exact-record version/finality correction. A visible correction requires an unmerged owner-review PR with verified nonproduction preview and planning-snapshot synchronized to its reviewed head; main stays unchanged. No R2 mutation or unrelated population. Explicit current owner PR216 closeout supersedes ONLY its prior open/unmerged, awaiting-content-review, feature-only-sync and main-unchanged phase boundaries for src-e80e0b49a4723c9a. The owner has merged; verify production and record live presentation while preserving pending review and unresolved exact42-page official delivery/finality. No validated/passed source lifecycle or provenance release. Integrate only background closeout main/planning after full validation. All unrelated scope, decisions, quality/currentness, original evidence and prohibitions on new visitor-visible/R2/population changes remain controlling."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded background reconciliation"
+    },
+    {
+      "governance_id": "decision-brt-prize-version-resolution-2026-10-07-august-finality-exception-pr216-postmerge",
+      "category": "active family decision",
+      "title": "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact with exact BRT uncertain-finality correction",
+      "scope": {
+        "candidate_ids": [
+          "src-2641b5b13214d7ee",
+          "src-2bbfb64ecf6455b3",
+          "src-5ade756c56baac45",
+          "src-5f3ea18d2262dd4e",
+          "src-61107c696c0e35b5",
+          "src-671b4bd36e11e0d9",
+          "src-80ee860e3cfa60bf",
+          "src-863e82803d9e7cac",
+          "src-8903198f1d3c22e1",
+          "src-aab5517438784db7",
+          "src-bad7cd0818045625",
+          "src-c070ab7e5a4a2622",
+          "src-c1d5a2b0b33b331a",
+          "src-d7b006f3aceaa405",
+          "src-e0748ccf7ebc1a77",
+          "src-e80e0b49a4723c9a",
+          "src-e88f5a097091c5db",
+          "src-ed916e54f80ece6f"
+        ],
+        "pages": [
+          "content/development-land-use/area-sector-plans.md",
+          "content/transportation/transit/abq-ride.md"
+        ],
+        "artifact_paths": [
+          "project-state/near-complete-review-decisions-2026-08-20.json"
+        ]
+      },
+      "authority": "Explicit current owner PR216 postmerge closeout instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/near-complete-review-decisions-2026-08-20.json",
+          "sha256": "2c929ab2c6acf6860c7f54bf428ffb44ae2fe014f9c28b52e68ffe285b2a6ed8",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/brt-prize-version-resolution-2026-10-07/governance-reconciliation.json",
+          "sha256": "bec7f7530580f4713beba93ce884e755027a158ee89093d2265fef29a446f0b4",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pr216-postmerge-closeout-2026-10-07/authority.json",
+          "sha256": "4f7b668468c3d3a59f43f77294ee8ce1002c3dc326d62948ee15224563fd14cd",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact. Saved recommendations and completed-action receipts do not authorize new disposition or external action. Explicit owner-authorized exception solely for src-e80e0b49a4723c9a: complete comparison and authoritative live/archive research establish no final42-page delivery. Replace prior provisional final-report assertion/approval only with preserved unmarked editorial variant, exact official delivery/final status unverified. Keep existing42-page original/R2 and one existing historical entry; prepare accurate label/description correction solely in an unmerged owner-review PR. Preserve pending source-provenance hold; a positive substantive historical-quality assessment is independent and does not release it. Preserve every unrelated decision and all original evidence. Explicit current owner PR216 closeout supersedes ONLY its prior open/unmerged, awaiting-content-review, feature-only-sync and main-unchanged phase boundaries for src-e80e0b49a4723c9a. The owner has merged; verify production and record live presentation while preserving pending review and unresolved exact42-page official delivery/finality. No validated/passed source lifecycle or provenance release. Integrate only background closeout main/planning after full validation. All unrelated scope, decisions, quality/currentness, original evidence and prohibitions on new visitor-visible/R2/population changes remain controlling.",
+      "required_actions": [
+        "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact. Saved recommendations and completed-action receipts do not authorize new disposition or external action. Explicit owner-authorized exception solely for src-e80e0b49a4723c9a: complete comparison and authoritative live/archive research establish no final42-page delivery. Replace prior provisional final-report assertion/approval only with preserved unmarked editorial variant, exact official delivery/final status unverified. Keep existing42-page original/R2 and one existing historical entry; prepare accurate label/description correction solely in an unmerged owner-review PR. Preserve pending source-provenance hold; a positive substantive historical-quality assessment is independent and does not release it. Preserve every unrelated decision and all original evidence. Explicit current owner PR216 closeout supersedes ONLY its prior open/unmerged, awaiting-content-review, feature-only-sync and main-unchanged phase boundaries for src-e80e0b49a4723c9a. The owner has merged; verify production and record live presentation while preserving pending review and unresolved exact42-page official delivery/finality. No validated/passed source lifecycle or provenance release. Integrate only background closeout main/planning after full validation. All unrelated scope, decisions, quality/currentness, original evidence and prohibitions on new visitor-visible/R2/population changes remain controlling."
+      ],
+      "prohibited_actions": [
+        "Do not infer new external authorization from this artifact."
+      ],
+      "constraints": [],
+      "settled_decisions": [
+        {
+          "question_id": "artifact-decision:decision-near-complete-review-decisions-2026-08-20-55b5f92e",
+          "decision": "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact. Saved recommendations and completed-action receipts do not authorize new disposition or external action. Explicit owner-authorized exception solely for src-e80e0b49a4723c9a: complete comparison and authoritative live/archive research establish no final42-page delivery. Replace prior provisional final-report assertion/approval only with preserved unmarked editorial variant, exact official delivery/final status unverified. Keep existing42-page original/R2 and one existing historical entry; prepare accurate label/description correction solely in an unmerged owner-review PR. Preserve pending source-provenance hold; a positive substantive historical-quality assessment is independent and does not release it. Preserve every unrelated decision and all original evidence."
+        }
+      ],
+      "unresolved_gates": [],
+      "implementation_status": "Unmerged bounded historical-entry correction; factual source hold retained",
+      "supersedes": [
+        "decision-near-complete-review-decisions-2026-08-20-55b5f92e"
+      ]
+    },
+    {
+      "governance_id": "decision-brt-prize-version-resolution-2026-10-07-pr216-postmerge",
+      "category": "active owner decision",
+      "title": "decision-brt-prize-version-resolution-2026-10-07",
+      "scope": {
+        "candidate_ids": [
+          "src-e80e0b49a4723c9a"
+        ],
+        "task_ids": [
+          "brt-prize-version-resolution-2026-10-07"
+        ]
+      },
+      "authority": "Explicit current owner PR216 postmerge closeout instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/brt-prize-version-resolution-2026-10-07/governance-reconciliation.json",
+          "sha256": "bec7f7530580f4713beba93ce884e755027a158ee89093d2265fef29a446f0b4",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pr216-postmerge-closeout-2026-10-07/authority.json",
+          "sha256": "4f7b668468c3d3a59f43f77294ee8ce1002c3dc326d62948ee15224563fd14cd",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Preserve42-page original and pending factual source hold. Correct unsupported Final Report wording in exactly one existing historical entry via unmerged owner-review PR and verified preview; positive quality is independent of provenance. Keep all unrelated decisions and R2 unchanged. Explicit current owner PR216 closeout supersedes ONLY its prior open/unmerged, awaiting-content-review, feature-only-sync and main-unchanged phase boundaries for src-e80e0b49a4723c9a. The owner has merged; verify production and record live presentation while preserving pending review and unresolved exact42-page official delivery/finality. No validated/passed source lifecycle or provenance release. Integrate only background closeout main/planning after full validation. All unrelated scope, decisions, quality/currentness, original evidence and prohibitions on new visitor-visible/R2/population changes remain controlling.",
+      "required_actions": [
+        "Preserve42-page original and pending factual source hold. Correct unsupported Final Report wording in exactly one existing historical entry via unmerged owner-review PR and verified preview; positive quality is independent of provenance. Keep all unrelated decisions and R2 unchanged. Explicit current owner PR216 closeout supersedes ONLY its prior open/unmerged, awaiting-content-review, feature-only-sync and main-unchanged phase boundaries for src-e80e0b49a4723c9a. The owner has merged; verify production and record live presentation while preserving pending review and unresolved exact42-page official delivery/finality. No validated/passed source lifecycle or provenance release. Integrate only background closeout main/planning after full validation. All unrelated scope, decisions, quality/currentness, original evidence and prohibitions on new visitor-visible/R2/population changes remain controlling."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded background reconciliation"
+    },
+    {
+      "governance_id": "quality-brt-prize-version-resolution-2026-10-07-pr216-postmerge",
+      "category": "active owner decision",
+      "title": "quality-brt-prize-version-resolution-2026-10-07",
+      "scope": {
+        "candidate_ids": [
+          "src-e80e0b49a4723c9a"
+        ],
+        "task_ids": [
+          "brt-prize-version-resolution-2026-10-07"
+        ]
+      },
+      "authority": "Explicit current owner PR216 postmerge closeout instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/brt-prize-version-resolution-2026-10-07/quality-decision.json",
+          "sha256": "8c49fdeb19b43fc90f9169d8120b400cda7857f40b76988e7896427d2e14d44e",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pr216-postmerge-closeout-2026-10-07/authority.json",
+          "sha256": "4f7b668468c3d3a59f43f77294ee8ce1002c3dc326d62948ee15224563fd14cd",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Apply actual-report positive material Albuquerque and substantive historical-quality assessment with explicit unverified version/finality qualifier. No new entry, finality approval, current-outcome claim or source-hold release. Explicit current owner PR216 closeout supersedes ONLY its prior open/unmerged, awaiting-content-review, feature-only-sync and main-unchanged phase boundaries for src-e80e0b49a4723c9a. The owner has merged; verify production and record live presentation while preserving pending review and unresolved exact42-page official delivery/finality. No validated/passed source lifecycle or provenance release. Integrate only background closeout main/planning after full validation. All unrelated scope, decisions, quality/currentness, original evidence and prohibitions on new visitor-visible/R2/population changes remain controlling.",
+      "required_actions": [
+        "Apply actual-report positive material Albuquerque and substantive historical-quality assessment with explicit unverified version/finality qualifier. No new entry, finality approval, current-outcome claim or source-hold release. Explicit current owner PR216 closeout supersedes ONLY its prior open/unmerged, awaiting-content-review, feature-only-sync and main-unchanged phase boundaries for src-e80e0b49a4723c9a. The owner has merged; verify production and record live presentation while preserving pending review and unresolved exact42-page official delivery/finality. No validated/passed source lifecycle or provenance release. Integrate only background closeout main/planning after full validation. All unrelated scope, decisions, quality/currentness, original evidence and prohibitions on new visitor-visible/R2/population changes remain controlling."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded background reconciliation"
+    },
+    {
+      "governance_id": "owner-pr216-postmerge-closeout-2026-10-07",
+      "category": "active owner decision",
+      "title": "pr216-postmerge-closeout-2026-10-07",
+      "scope": {
+        "candidate_ids": [
+          "src-e80e0b49a4723c9a"
+        ],
+        "task_ids": [
+          "pr216-postmerge-closeout-2026-10-07"
+        ]
+      },
+      "authority": "Explicit current owner instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/pr216-postmerge-closeout-2026-10-07/authority.json",
+          "sha256": "4f7b668468c3d3a59f43f77294ee8ce1002c3dc326d62948ee15224563fd14cd",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/pr216-postmerge-closeout-2026-10-07/supersession.json",
+          "sha256": "828147fb0a80f3cee9e63531386e89e5e5079ffb57b089d99ee1a4952157174f",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Explicit current owner PR216 post-merge production verification and background reconciliation ONLY. Verify owner merge 01ac444f8bd02bd04b5e9859c25a30a858686e6e, reviewed head dfb0d8f45aef1272f86d215974cfd62e1d888f85 and successful Cloudflare deployment d561cce5-70d2-44d3-ae1d-436b7b62e303. Inspect custom https://abqinfo.com ABQ RIDE / ART Planning and Development History directly in installed Chrome desktop/mobile: exactly one Preserved Copy entry, no Final Report label, complete41/42-page unverified-official-delivery/finality qualifier, unchanged R2/City source links, sound rendering. Compare full reviewed preview/merge deployment/production; fail closed and diagnose if genuine old production persists. Fresh public GET must match2766304 bytes / 49fbec4922fdb0c8963f7ab421a6f4b9fe6269197a907cbec652ef4290c478a6. Only after production passes, reconcile src-e80e0b49a4723c9a as owner-reviewed merged production live BUT still pending review/source_provenance_unresolved, never validated/passed solely from content correction. Preserve all substantive review, source/finality prerequisite, source quality/currentness and historical evidence; close only manual content-review phase. Complete deterministic accounting, CURRENT, active task, receipt, history sealing, full normal/governance/Hugo/rendered/CURRENT/diff checks; integrate background-only main and synchronize planning to exact final main. No R2 or visitor-visible mutation, new source review/population or release of unresolved provenance.",
+      "required_actions": [
+        "Explicit current owner PR216 post-merge production verification and background reconciliation ONLY. Verify owner merge 01ac444f8bd02bd04b5e9859c25a30a858686e6e, reviewed head dfb0d8f45aef1272f86d215974cfd62e1d888f85 and successful Cloudflare deployment d561cce5-70d2-44d3-ae1d-436b7b62e303. Inspect custom https://abqinfo.com ABQ RIDE / ART Planning and Development History directly in installed Chrome desktop/mobile: exactly one Preserved Copy entry, no Final Report label, complete41/42-page unverified-official-delivery/finality qualifier, unchanged R2/City source links, sound rendering. Compare full reviewed preview/merge deployment/production; fail closed and diagnose if genuine old production persists. Fresh public GET must match2766304 bytes / 49fbec4922fdb0c8963f7ab421a6f4b9fe6269197a907cbec652ef4290c478a6. Only after production passes, reconcile src-e80e0b49a4723c9a as owner-reviewed merged production live BUT still pending review/source_provenance_unresolved, never validated/passed solely from content correction. Preserve all substantive review, source/finality prerequisite, source quality/currentness and historical evidence; close only manual content-review phase. Complete deterministic accounting, CURRENT, active task, receipt, history sealing, full normal/governance/Hugo/rendered/CURRENT/diff checks; integrate background-only main and synchronize planning to exact final main. No R2 or visitor-visible mutation, new source review/population or release of unresolved provenance."
+      ],
+      "prohibited_actions": [
+        "No visitor-visible or R2 mutation, provenance release, validated transition or new population."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "exact production and blocked-source lifecycle closeout"
     }
   ]
 }
