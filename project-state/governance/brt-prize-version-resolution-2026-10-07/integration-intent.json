@@ -1,0 +1,20 @@
+{
+  "artifact_type": "authorized_unmerged_review_delivery_intent",
+  "branch": "codex/brt-prize-version-resolution-2026-10-07",
+  "baseline_main": "86dc4adcd30401d4077f6e7f0190edb3d7910a40",
+  "baseline_planning": "86dc4adcd30401d4077f6e7f0190edb3d7910a40",
+  "authority": "project-state/governance/brt-prize-version-resolution-2026-10-07/authority-resumption.json",
+  "actions": [
+    "push exact review branch",
+    "create normal owner-review PR",
+    "verify nonproduction preview",
+    "synchronize planning-snapshot to reviewed PR head"
+  ],
+  "prohibited": [
+    "main update",
+    "PR merge",
+    "production deployment",
+    "R2 mutation",
+    "unrelated population"
+  ]
+}

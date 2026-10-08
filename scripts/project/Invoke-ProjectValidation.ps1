@@ -58,6 +58,9 @@ if ($LASTEXITCODE) { throw 'Remaining agenda four-record boundary failed.' }
 & python "$PSScriptRoot/Trails1993CanonicalReconciliation.py" guard
 if ($LASTEXITCODE -ne 0) { throw "1993 canonical reconciliation regression failed" }
 
+& python "$PSScriptRoot/BrtPrizeVersionResolution.py" guard
+if ($LASTEXITCODE -ne 0) { throw "BRT prize version resolution regression failed" }
+
 Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }

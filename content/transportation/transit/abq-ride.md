@@ -238,9 +238,9 @@ Project contact: Andrew de Garmo, Principal Planner, ABQ RIDE — [adegarmo@cabq
 
   [Official Legistar attachment](https://legistar.granicus.com/cabq/attachments/4625fb48-aa7a-43e3-a7eb-fb815612dd12.pdf) · [Official R-16-24 matter record](https://cabq.legistar.com/LegislationDetail.aspx?ID=R-16-24&Search=R-16-24)
 
-- [The Scale of the Prize: Community Benefits of Bus Rapid Transit (Final Report)](https://files.abqinfo.com/transportation/transit/art/the-scale-of-the-prize-community-benefits-of-brt-final.pdf)
+- [The Scale of the Prize: Community Benefits of Bus Rapid Transit (Preserved Copy)](https://files.abqinfo.com/transportation/transit/art/the-scale-of-the-prize-community-benefits-of-brt-final.pdf)
 
-  Estimates the economic, household-cost, development, and community benefits of bus rapid transit along Central Avenue, providing an early City-commissioned case for the investment that became ART. [Official City project page and marked draft](https://www.cabq.gov/economicdevelopment/the-scale-of-the-prize-community-benefits-of-transit-oriented-development)
+  Historical analysis of potential development, housing, employment, and zoning around proposed ART stations along Central Avenue. The preserved 42-page copy differs from the City-linked 41-page draft; its exact official delivery and final status are unverified. [Official City report page and marked draft](https://www.cabq.gov/economicdevelopment/the-scale-of-the-prize-community-benefits-of-transit-oriented-development)
 
 - [ART Corridor Building Permits, October 2022–September 2023](https://files.abqinfo.com/transportation/transit/art/art-corridor-building-permits-2022-2023.pdf)
 
