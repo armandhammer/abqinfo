@@ -46,6 +46,8 @@ for link in required_links:
     if not (ROOT / 'project-state' / link).is_file():
         raise SystemExit('CURRENT.md links to a missing artifact: ' + link)
 
+from PostMergeContinuity import validate
+validate()
 print('CURRENT.md resume-pointer regression passed.')
 
 

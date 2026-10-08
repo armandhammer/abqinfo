@@ -1,0 +1,43 @@
+{
+  "artifact_type": "postmerge_ref_reconciliation",
+  "task_id": "postmerge-continuity-2026-10-08",
+  "baseline_commit": "3015ba9eae4c575b527c26370cdbab50448a5735",
+  "authority": "project-state/governance/postmerge-continuity-2026-10-08/authority.json",
+  "verified_at": "2026-10-08T15:34:27.952571+00:00",
+  "remote_refs": {
+    "refs/heads/chatgpt/planning-snapshot": "3015ba9eae4c575b527c26370cdbab50448a5735",
+    "refs/heads/main": "3015ba9eae4c575b527c26370cdbab50448a5735"
+  },
+  "reconciliations": [
+    {
+      "pr": 216,
+      "integration_intent": "project-state/governance/pr216-postmerge-closeout-2026-10-07/integration-intent.json",
+      "integration_intent_sha256": "2bdf80623934afe87e66a33e562d807495331636dc0a2898f7828982a39d12da",
+      "original_final_ref_evidence": "project-state/campaign-runtime/pr216-postmerge-closeout-2026-10-07/final-refs.json",
+      "durable_final_ref_evidence": "project-state/governance/postmerge-continuity-2026-10-08/pr216-final-refs.json",
+      "final_ref_sha256": "8e12d23e667d6f3375be0ce9c8cb8cc06aa55dd619795194971086931ec5c28e",
+      "completed_synchronization_sha": "ed3160e0d91f5e9ccd0598622555c16935ef6882",
+      "historical_evidence": "Exact existing runtime snapshot copied without rewriting; historical refs are observations at verified_at, not current branch claims.",
+      "current_verification": "Completion and merge commits exist in fetched origin history and are ancestors of the verified synchronized remote baseline."
+    },
+    {
+      "pr": 217,
+      "integration_intent": "project-state/governance/pr217-postmerge-closeout-2026-10-08/integration-intent.json",
+      "integration_intent_sha256": "5ead57c696aa8cb8a5e098d5821f1a39789e600937aa4fc4bbb92910ec8a7dd1",
+      "original_final_ref_evidence": "project-state/campaign-runtime/pr217-postmerge-closeout-2026-10-08/final-refs.json",
+      "durable_final_ref_evidence": "project-state/governance/postmerge-continuity-2026-10-08/pr217-final-refs.json",
+      "final_ref_sha256": "289ffd54ffc5e7f8ab714d582c21e63039216749ea282188cf1da33c7b6c400b",
+      "completed_synchronization_sha": "3015ba9eae4c575b527c26370cdbab50448a5735",
+      "historical_evidence": "Exact existing runtime snapshot copied without rewriting; historical refs are observations at verified_at, not current branch claims.",
+      "current_verification": "Completion and merge commits exist in fetched origin history and are ancestors of the verified synchronized remote baseline."
+    }
+  ],
+  "sealed_intents_and_receipts_preserved": true,
+  "correction": "Additive tracked final-ref evidence resolves PR216/217 immutable runtime references. CURRENT and checkpoint resume text acknowledge the completed PR217 synchronization. Existing resume validation now rejects unavailable evidence and stale pending claims; it only reads state.",
+  "validation_log": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+  "integration": "After full validation, non-force atomic background fast-forward of both branches from the verified baseline. Final live refs are reported directly; this receipt does not claim its own containing commit.",
+  "visitor_visible_delta": 0,
+  "inventory_delta": 0,
+  "r2_delta": 0,
+  "new_review_population": false
+}

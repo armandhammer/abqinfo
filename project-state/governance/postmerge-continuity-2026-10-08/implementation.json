@@ -1,0 +1,296 @@
+{
+  "artifact_type": "task_implementation_plan",
+  "contract": "project-state/governance/postmerge-continuity-2026-10-08/contract-v3.json",
+  "contract_sha256": "4da3f010a983010d9f35c874ad6d0de7d0b9e26552770816852267aacefd1b95",
+  "population_sha256": "3b77046c80f23566263778e43239fb9a1678733d76fefba39ab7110249960227",
+  "respected_governance_ids": [
+    "authorization-profile-ordinary-review-large",
+    "decision-archive-recovery-53d2a462",
+    "decision-council-closeout-status-2026-09-20-4dfd8e30",
+    "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
+    "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+    "decision-scoped-source-review-2026-08-04-33554a9c",
+    "decision-unm-cnm-focused-source-scope-1673e3f6",
+    "owner-postmerge-continuity-2026-10-08",
+    "policy-agents",
+    "policy-durable-task-governance",
+    "policy-mission-scope",
+    "policy-mission-scope-legacy",
+    "policy-project-recency",
+    "policy-project-state",
+    "policy-publication-quality",
+    "policy-quality-exclusions",
+    "policy-r2-storage",
+    "policy-source-priorities",
+    "policy-tip-stip-retention",
+    "workflow-autonomous-verification",
+    "workflow-background-campaign",
+    "workflow-handoff-retirement",
+    "workflow-parallel-verification",
+    "workflow-stage-lifecycle"
+  ],
+  "subjects": {},
+  "actions": [
+    "governance_implementation",
+    "background_integration"
+  ],
+  "events": [
+    {
+      "operation": "governance_implementation",
+      "candidate_ids": [],
+      "action": "implements",
+      "summary": "Verified remote branches and merged PRs; promoted exact final-ref snapshots through additive reconciliation. Corrected stale resume claims, sealed the completed PR217 stage and added read-only validation to the existing resume-pointer check.",
+      "evidence": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json"
+    },
+    {
+      "operation": "background_integration",
+      "candidate_ids": [],
+      "action": "implements",
+      "summary": "Complete normal validation passed including 68 contiguous stages/1204 sealed evidence files, current ref continuity, governance freshness, inventories/queues and Hugo/rendered checks; atomic background integration authorized by current owner request.",
+      "evidence": "project-state/governance/postmerge-continuity-2026-10-08/validation.log"
+    }
+  ],
+  "status": "complete",
+  "completion_evidence": {
+    "authorization-profile-ordinary-review-large": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "decision-archive-recovery-53d2a462": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "decision-council-closeout-status-2026-09-20-4dfd8e30": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "decision-scoped-source-review-2026-08-04-33554a9c": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "decision-unm-cnm-focused-source-scope-1673e3f6": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "owner-postmerge-continuity-2026-10-08": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "policy-agents": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "policy-durable-task-governance": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "policy-mission-scope": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "policy-mission-scope-legacy": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "policy-project-recency": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "policy-project-state": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "policy-publication-quality": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "policy-quality-exclusions": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "policy-r2-storage": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "policy-source-priorities": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "policy-tip-stip-retention": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "workflow-autonomous-verification": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "workflow-background-campaign": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "workflow-handoff-retirement": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "workflow-parallel-verification": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ],
+    "workflow-stage-lifecycle": [
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/reconciliation.json",
+        "sha256": "757a72937bc82a0a4661971d24beeceaf36c45b5e84c035ca72dd6309d1b10ed"
+      },
+      {
+        "path": "project-state/governance/postmerge-continuity-2026-10-08/validation.log",
+        "sha256": "afa542d7bc1705bf7b3a2e8d5a7d8d5e836810e7e654a7f02b503eca0274f84c"
+      }
+    ]
+  }
+}

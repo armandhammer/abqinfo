@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "9b75afd2eb2280031a79fd0dda6b9aa49aede0326edf1cae21d0026ff9efd82e",
+  "audit_sha256": "3144c303d4eb7739166acf86c5de262e4a766552f4694f813449edfb250e9e34",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -31443,6 +31443,40 @@
       "settled_decisions": [],
       "unresolved_gates": [],
       "implementation_status": "exact production/lifecycle/background closeout"
+    },
+    {
+      "governance_id": "owner-postmerge-continuity-2026-10-08",
+      "category": "active owner decision",
+      "title": "Bounded PR216/217 post-merge continuity correction",
+      "scope": {
+        "task_ids": [
+          "postmerge-continuity-2026-10-08"
+        ]
+      },
+      "authority": "Explicit current owner request",
+      "decision_date": "2026-10-08",
+      "effective_date": "2026-10-08",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/postmerge-continuity-2026-10-08/authority.json",
+          "sha256": "3e309f6c5d6528671697b56fe9e674e07ef5448cb37344e26d59d06b4988a7c4",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Reconstruct ABQInfo state from the remote repository and Project instructions. PR #217 is fully merged, production-verified, and synchronized at 3015ba9eae4c575b527c26370cdbab50448a5735. Correct CURRENT.md synchronization pending text and PR216/217 integration references to Git-ignored campaign-runtime final-ref evidence. Make the smallest durable correction preserving sealed receipts with additive reconciliation. Prevent recurrence without redundant state generation. No visitor content, inventory dispositions, R2, unrelated governance or new document-review population. Run full validation, integrate the background-only correction, and synchronize main and chatgpt/planning-snapshot.",
+      "required_actions": [
+        "Reconstruct ABQInfo state from the remote repository and Project instructions. PR #217 is fully merged, production-verified, and synchronized at 3015ba9eae4c575b527c26370cdbab50448a5735. Correct CURRENT.md synchronization pending text and PR216/217 integration references to Git-ignored campaign-runtime final-ref evidence. Make the smallest durable correction preserving sealed receipts with additive reconciliation. Prevent recurrence without redundant state generation. No visitor content, inventory dispositions, R2, unrelated governance or new document-review population. Run full validation, integrate the background-only correction, and synchronize main and chatgpt/planning-snapshot."
+      ],
+      "prohibited_actions": [
+        "No visitor-visible, inventory, R2 or unrelated governance mutation; no new document-review population."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded background correction"
     }
   ]
 }
