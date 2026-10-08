@@ -6,13 +6,9 @@ City bicycle planning documents and master plans, including current and previous
 
 ## Current Bike Plan
 
-- [2024 Bikeway and Trail Facilities Plan](https://files.abqinfo.com/transportation/bicycling/bike-plans/2024-albuquerque-bike-plan.pdf)
+- [2024 Bikeway and Trail Facilities Plan](https://files.abqinfo.com/transportation/bicycling/bike-plans/2024-albuquerque-bikeway-trail-facilities-plan-combined.pdf)
 
-  Establishes Albuquerque's current bicycle and trail network vision, policies, facility recommendations, project priorities, and implementation framework for safer, better-connected active transportation.
-
-  - [Combined City Edition (Main Plan and Appendices)](https://files.abqinfo.com/transportation/bicycling/bike-plans/2024-albuquerque-bikeway-trail-facilities-plan-combined.pdf)
-
-    Preserves the City's complete 513-page publication in one file, combining the adopted plan with the crossings guide and appendices for convenient archival reference. [Official City PDF](https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf)
+  The City's complete adopted 513-page plan sets Albuquerque's bicycle and trail network vision, facility recommendations, project priorities, and implementation guidance, with its supporting appendices and crossings guide. [Official City PDF](https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf)
 
   - [Bicycle and Trail Crossings Guide](https://files.abqinfo.com/transportation/bicycling/bike-plans/2024-albuquerque-bike-plan-coa-bicycle-and-trail-crossings-guide.pdf)
 

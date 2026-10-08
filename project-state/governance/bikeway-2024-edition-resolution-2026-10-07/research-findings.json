@@ -1,0 +1,130 @@
+{
+  "artifact_type": "complete_authoritative_edition_and_provenance_research",
+  "candidate_ids": [
+    "src-907f4de342216f97",
+    "src-0b1dfe6e620d7fe0"
+  ],
+  "conclusion": "The 144-page preserved PDF is the July 2024 proposed-plan body edition: its extracted body text aligns on every page with the plan marked PROPOSED in the City original R-24-94 legislative exhibit after Council wrapper page numbers and PDF extraction differences are removed. Its exact former City delivery URL and byte-identical official copy are not established. It is not the later complete current City publication. The 513-page preserved PDF is byte-identical to current City Planning PDF and adopted Rank 2 plan OnBase delivery and has 369 additional pages plus substantive core edits.",
+  "official_sources": [
+    {
+      "url": "https://www.cabq.gov/planning/plans-publications",
+      "finding": "City Planning indexes Bikeway and Trail Facilities Plan (2024) under Adopted Rank 2 Facility Plans and links current OnBase delivery and adopting resolution R-24-94."
+    },
+    {
+      "url": "https://www.cabq.gov/planning/documents/2024-bikeway-and-trail-facilities-plan.pdf",
+      "finding": "Fresh full City delivery matches retained 513-page SHA256."
+    },
+    {
+      "url": "https://onbase.cabq.gov/PublicAccess/api/Document/12246818/",
+      "finding": "Fresh full adopted-plan index delivery matches retained 513-page SHA256."
+    },
+    {
+      "url": "https://cabq.legistar.com/View.ashx?M=F&ID=13352263&GUID=73FD9F51-8B84-48DA-B41D-B1CE4FE226AC",
+      "finding": "Original R-24-94 attachment contains July 18, 2024 EPC proposed-plan recommendation and a separately paginated PROPOSED plan exhibit; all 144 held pages text-align after wrapper pagination/extraction normalization."
+    },
+    {
+      "url": "https://cabq.legistar.com/LegislationDetail.aspx?GUID=6DE08B7A-924F-451D-A1C3-133B28DD8F3A&ID=6884996&Options=ID%7CText%7C&Search=R-24-94",
+      "finding": "R-24-94 adoption history: Council passage December 16, 2024; mayoral signature December 29, 2024; enactment January 2, 2025."
+    }
+  ],
+  "original_identity": {
+    "held_144_sha256": "873a5ead78ba2881bf7fc7fb61445da8c8f68207635c2045cd4a10daa1bd7407",
+    "city_513_sha256": "6c9db59edb778cc2115405d79540c692c775a3dc677424699cc38a0686fec1e1",
+    "held_pdf_creation": "D:20240702160549-07'00'",
+    "city_pdf_creation": "D:20250127132831-08'00'",
+    "exact_held_official_byte_delivery_found": false,
+    "held_relationship": "Proposed-plan core textual match across 144/144 pages; detached body PDF, not a byte-identical official legislative wrapper and not complete final edition."
+  },
+  "complete_comparison": {
+    "paired_core_pages": 144,
+    "differing_extracted_text_pages": [
+      5,
+      6,
+      10,
+      13,
+      14,
+      15,
+      16,
+      17,
+      26,
+      32,
+      34,
+      38,
+      39,
+      40,
+      41,
+      59,
+      69,
+      95,
+      99,
+      100,
+      101,
+      106,
+      107,
+      114,
+      123,
+      124,
+      132,
+      133,
+      134,
+      135,
+      136
+    ],
+    "different_render_pages_count": 140,
+    "appended_city_pages": 369,
+    "text_equivalent_to_official_proposal_pages": 144,
+    "substantive_examples": [
+      {
+        "page": 10,
+        "change": "Current City version adds Louisiana Boulevard first separated-bike-lane completion and changes referenced activity-loop mileage from eight to seven."
+      },
+      {
+        "page": 26,
+        "change": "Current City version adds August 2024 electric-bike ordinance and late-2024 scooter program information."
+      },
+      {
+        "page": 32,
+        "change": "Current City version updates the activity-loop mileage and related text."
+      },
+      {
+        "page": 34,
+        "change": "Current City version describes separated lanes as installed rather than planned."
+      },
+      {
+        "page": 59,
+        "change": "Current City version adds Solid Waste consultation and revised facility image context."
+      },
+      {
+        "page": 100,
+        "change": "Current City version removes the Louisiana Boulevard Gibson-to-Central project from the priority-project table."
+      },
+      {
+        "page": 106,
+        "change": "Current City version adds an Integrated Development Ordinance compliance condition."
+      },
+      {
+        "page": 114,
+        "change": "Current City version revises electric-bike policy action in light of the enacted ordinance."
+      },
+      {
+        "page": 124,
+        "change": "Current City version updates shared scooter language."
+      },
+      {
+        "page": 132,
+        "change": "Current City version revises the implementation action table."
+      }
+    ],
+    "visual_review": "Every core and appendix page was rendered; paired core pages and appendix sheets inspected."
+  },
+  "provenance_limit": "Text alignment establishes the held file as the proposed-plan body edition, but does not authenticate its exact former City-hosted PDF bytes. Preserve its original and historical source evidence without asserting exact City delivery.",
+  "public_disposition": "The 513-page existing R2 original should become the single primary current-plan link with the official City PDF alongside it. Remove the 144-page proposed-edition link from Current Bike Plan; retain the R2 object and inventory history without overwrite/delete. Avoid a second combined/main plan heading or entry. Existing component links remain unchanged.",
+  "scope_limit": "Only the two frozen records and existing Current Bike Plan presentation; no 2014/2015 family action.",
+  "r2_delta": {
+    "objects": 0,
+    "bytes": 0,
+    "uploads": 0,
+    "overwrites": 0,
+    "deletions": 0
+  }
+}

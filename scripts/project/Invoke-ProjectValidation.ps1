@@ -63,6 +63,9 @@ if ($LASTEXITCODE -ne 0) { throw "BRT prize version resolution regression failed
 
 & python "$PSScriptRoot/Pr216PostMergeCloseout.py" guard
 if ($LASTEXITCODE) { throw 'PR216 closeout guard failed.' }
+& python "$PSScriptRoot/Bikeway2024EditionResolution.py" guard
+if ($LASTEXITCODE -ne 0) { throw "2024 Bikeway edition resolution regression failed" }
+
 Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }
