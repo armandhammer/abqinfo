@@ -172,27 +172,114 @@ def reconcile():
     refresh();G.active_check('final');guard()
 
 def render():
-    from bs4 import BeautifulSoup
+    from html.parser import HTMLParser
     stage=StageSnapshot(TASK)
     if stage.end:guard();print('PASS sealed PR217 production evidence');return
-    path=G.ROOT/'tmp/site-build'/ROUTE/'index.html';soup=BeautifulSoup(path.read_bytes(),'html.parser');heading=soup.find(id=ANCHOR);assert heading and heading.name=='h2'
-    section=heading.find_next_sibling('ul');assert section
-    links=[dict(text=a.get_text(' ',strip=True),url=a.get('href')) for a in section.find_all('a')]
-    assert links==expected_links()
-    text=' '.join(section.get_text(' ',strip=True).split());assert 'complete adopted 513-page plan' in text and 'Combined City Edition' not in text
+    class CurrentSection(HTMLParser):
+        def __init__(self):
+            super().__init__(convert_charrefs=True);self.heading=False;self.depth=0;self.done=False;self.links=[];self.parts=[];self.href=None;self.link_parts=[]
+        def handle_starttag(self,tag,attrs):
+            attrs=dict(attrs)
+            if tag=='h2' and attrs.get('id')==ANCHOR:self.heading=True
+            elif self.heading and not self.done:
+                if tag=='ul':self.depth+=1
+                elif self.depth and tag=='a':self.href=attrs.get('href');self.link_parts=[]
+        def handle_endtag(self,tag):
+            if not self.depth:return
+            if tag=='a' and self.href is not None:
+                self.links.append(dict(text=' '.join(' '.join(self.link_parts).split()),url=self.href));self.href=None
+            elif tag=='ul':
+                self.depth-=1
+                if not self.depth:self.done=True
+        def handle_data(self,data):
+            if self.depth:
+                self.parts.append(data)
+                if self.href is not None:self.link_parts.append(data)
+    path=G.ROOT/'tmp/site-build'/ROUTE/'index.html';section=CurrentSection();section.feed(path.read_text(encoding='utf8'))
+    assert section.heading and section.done and section.depth==0
+    assert section.links==expected_links(),(section.links,expected_links())
+    text=' '.join(' '.join(section.parts).split());assert 'complete adopted 513-page plan' in text and 'Combined City Edition' not in text
     print('PASS PR217 Hugo Current Bike Plan links and text match verified custom-domain production')
 
+def repair_derived_queue():
+    import importlib.util
+    G.active_check('mutation','governance_implementation',IDS)
+    population=copy.deepcopy(G.load(P+'population.json'))
+    population['artifact_paths']+= [P+'population-v2.json',P+'validation-attempt-1.log',P+'derived-queue-reconciliation.json','project-state/discovery/consolidated-human-review-queue.json','project-state/discovery/consolidated-human-review-queue.md']
+    population['artifact_paths']=sorted(set(population['artifact_paths']))
+    freeze_once(P+'population-v2.json',population)
+    raw=(G.ROOT/'tmp/pr217-full-validation.log').read_text(encoding='utf8');raw=re.sub(r'\x1b\[[0-9;]*m','',raw)
+    (G.ROOT/(P+'validation-attempt-1.log')).write_text('\n'.join(line.expandtabs(4).rstrip() for line in raw.splitlines())+'\n',encoding='utf8',newline='\n')
+    refresh();G.active_check('mutation','governance_implementation',IDS)
+    module_path=G.ROOT/'scripts/project/Build-ConsolidatedHumanReviewQueue.py';spec=importlib.util.spec_from_file_location('pr217_zero_queue_builder',module_path);module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+    result,report=module.build();path='project-state/discovery/consolidated-human-review-queue.json';before=G.load(path)
+    assert before['record_count']==result['record_count']==before['package_count']==result['package_count']==0
+    assert {k:v for k,v in before.items() if k!='inventory_sha256'}=={k:v for k,v in result.items() if k!='inventory_sha256'}
+    assert (G.ROOT/'project-state/discovery/consolidated-human-review-queue.md').read_text(encoding='utf8')==report
+    (G.ROOT/path).write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf8',newline='\n')
+    freeze_once(P+'derived-queue-reconciliation.json',dict(artifact_type='deterministic_zero_member_queue_checksum_reconciliation',failed_validation=P+'validation-attempt-1.log',issue='Merged PR217 inventory bytes have a different exact SHA-256 than the saved zero-member consolidated queue pointer; normal full-suite freshness check failed.',resolved_by='Existing deterministic queue builder; only inventory_sha256 changes. Zero records/packages and Markdown are unchanged.',before_inventory_sha256=before['inventory_sha256'],after_inventory_sha256=result['inventory_sha256'],candidate_ids=IDS,new_review_population=False))
+    event('governance_implementation','Full suite exposed a stale exact inventory checksum in the merged zero-case human-review queue; deterministic builder refreshed only that field with zero member/package/Markdown delta.',P+'derived-queue-reconciliation.json')
+    refresh();G.active_check('final');guard()
+
+def finish():
+    G.active_check('mutation','governance_implementation',IDS);guard()
+    raw=(G.ROOT/'tmp/pr217-full-validation-3.log').read_text(encoding='utf8')
+    assert '"Hugo": "passed"' in raw and 'PASS PR217 Hugo Current Bike Plan links and text match verified custom-domain production' in raw
+    raw=re.sub(r'\x1b\[[0-9;]*m','',raw)
+    (G.ROOT/(P+'validation.log')).write_text('\n'.join(line.expandtabs(4).rstrip() for line in raw.splitlines())+'\n',encoding='utf8',newline='\n')
+    freeze_once(P+'integration-intent.json',dict(artifact_type='authorized_background_ref_synchronization',authority=P+'authority.json',expected_remote_main=MERGE,expected_remote_planning_snapshot=PLANNING,strategy='Atomic non-force fast-forward of main and planning-snapshot to this background-only closeout, retaining merge and reviewed history.',final_ref_evidence='project-state/campaign-runtime/'+TASK+'/final-refs.json',visitor_visible_delta=0,r2_delta=0,new_review_population=False))
+    evidence=['merge-verification.json','production-verification.json','source-verification.json','production.png','mobile.png','accounting.json','queue.json','derived-queue-reconciliation.json','validation.log']
+    contract=G.load(G.load(G.ACTIVE_TASK)['contract'])
+    freeze_once(P+'receipt.json',dict(artifact_type='pr217_exact_two_record_postmerge_receipt',task_id=TASK,state='production_verified_closeout_complete',merge_sha=MERGE,reviewed_head=REVIEWED,production_url=PROD,production_result='passed',candidate_statuses={IDS[0]:'superseded',IDS[1]:'validated'},proposed_body_exact_former_city_delivery='unproved',complete_city_edition_exact_current_city_delivery=True,queue_counts=G.load(P+'accounting.json')['queue_counts'],visitor_visible_delta=0,inventory_status_transitions=0,r2_delta=0,historical_evidence_preserved=True,new_review_population=False,normal_validation='passed',validation_log=P+'validation.log',evidence_sha256={P+x:G.file_hash(P+x) for x in evidence},governance_accounting={r['governance_id']:dict(requirement=r['binding_requirement'],implementation='Owner-merged PR217 verified on custom production directly in Chrome, with exact preview and merge deployment parity. Existing superseded/validated statuses and all original R2/evidence retained; only background lifecycle and derived zero-case queue checksum reconciled.',evidence=[P+'production-verification.json',P+'source-verification.json',P+'accounting.json',P+'validation.log']) for r in contract['resolved_rules']},integration_intent=P+'integration-intent.json',visual_inspection='Chrome desktop and mobile screenshots inspected; one complete City plan entry, former proposed-body current link absent, City PDF and ten components intact, no overflow.'))
+    cp=G.load('project-state/checkpoint.json');cp['pr217_postmerge_closeout']['state']='complete_production_verified_validation_passed';cp['resume_command']='PR217 exact two-record production closeout complete and full validation passed; authorized atomic main/planning-snapshot background synchronization pending. No new review population.';save('project-state/checkpoint.json',cp)
+    current=G.ROOT/'project-state/CURRENT.md';body=current.read_text(encoding='utf8');body=body.replace('Full closeout validation and background main/planning synchronization pending.','Full closeout validation passed; authorized background main/planning synchronization pending.');current.write_text(body,encoding='utf8',newline='\n')
+    save(P+'progress.json',dict(stage='production_verified_validation_passed',remaining=['background_main_planning_sync'],candidate_statuses={IDS[0]:'superseded',IDS[1]:'validated'},new_review_population=False))
+    event('background_integration','Full project validation and exact production/source parity passed; two-record lifecycle and R2 preserved, ready for authorized atomic background branch synchronization.',P+'integration-intent.json')
+    refresh();G.active_check('final');guard()
+
+def integrate():
+    def refs():return {line.split()[1]:line.split()[0] for line in subprocess.check_output(['git','ls-remote','origin','refs/heads/main','refs/heads/chatgpt/planning-snapshot'],encoding='utf8').splitlines()}
+    expected={'refs/heads/main':MERGE,'refs/heads/chatgpt/planning-snapshot':PLANNING}
+    assert refs()==expected and G.load(P+'receipt.json')['normal_validation']=='passed'
+    G.active_check('mutation','background_integration',IDS);guard()
+    plan=G.load(P+'implementation.json');plan['status']='complete';save(P+'implementation.json',plan)
+    active=G.load(G.ACTIVE_TASK);active['state']='complete';save(G.ACTIVE_TASK,active)
+    G.active_check('final');guard()
+    paths=G.changed_paths(MERGE);assert not any(p.startswith('backups/') for p in paths)
+    subprocess.run(['git','add','--',*paths],check=True);subprocess.run(['git','diff','--cached','--check'],check=True)
+    subprocess.run(['git','commit','--quiet','-m','Complete PR217 production closeout for 2024 Bikeway editions'],check=True)
+    head=G.git('rev-parse','HEAD');assert refs()==expected
+    for old in [MERGE,PLANNING]:subprocess.run(['git','merge-base','--is-ancestor',old,head],check=True)
+    journal='project-state/campaign-runtime/'+TASK+'/integration-journal.json';intent=dict(operation='atomic background closeout synchronization',authority=P+'authority.json',sha=head,expected_refs=expected,intent_at=now());save(journal,intent)
+    result=subprocess.run(['git','push','--atomic','origin','HEAD:main','HEAD:chatgpt/planning-snapshot'],capture_output=True,text=True)
+    intent.update(exit_code=result.returncode,stdout=result.stdout,stderr=result.stderr,result_at=now());save(journal,intent);print(result.stdout+result.stderr);assert result.returncode==0
+    subprocess.run(['git','branch','-f','chatgpt/planning-snapshot',head],check=True)
+    remote=refs();assert remote=={'refs/heads/main':head,'refs/heads/chatgpt/planning-snapshot':head} and not G.git('status','--porcelain')
+    G.active_check('final');guard()
+    save('project-state/campaign-runtime/'+TASK+'/final-refs.json',dict(main=head,planning_snapshot=head,remote_refs=remote,verified_at=now(),worktree_clean=True,merge_sha=MERGE,reviewed_head=REVIEWED,production_url=PROD,validation='passed',r2_delta=0,visitor_visible_delta=0,new_review_population=False))
+    print('Final synchronized main/planning-snapshot:',head)
+
 def guard():
-    stage=StageSnapshot(TASK);start=stage.load_json(P+'starting-state.json');pop=stage.load_json(P+'population.json')
+    stage=StageSnapshot(TASK);start=stage.load_json(P+'starting-state.json');pop=stage.load_json(P+('population-v2.json' if (G.ROOT/(P+'population-v2.json')).exists() else 'population.json'))
     assert pop['candidate_ids']==IDS and pop['pages']==[PAGE] and pop['baseline_commit']==MERGE
     stage.assert_no_visible_changes(MERGE,start['content_tree_oid'])
     paths=set(G.changed_paths(MERGE)) if not stage.end else set(git('diff',MERGE,stage.end,'--name-only').decode().splitlines())
     assert paths<=set(pop['artifact_paths']),paths-set(pop['artifact_paths'])
-    for path,hash_value in start['protected_sha256'].items():assert hashlib.sha256(canonical_bytes(stage.read_bytes(path))).hexdigest()==hash_value,path
+    derived='project-state/discovery/consolidated-human-review-queue.json'
+    for path,hash_value in start['protected_sha256'].items():
+        if path==derived and (G.ROOT/(P+'derived-queue-reconciliation.json')).exists():
+            before=json.loads(git('show',MERGE+':'+path));after=stage.load_json(path)
+            assert {k:v for k,v in before.items() if k!='inventory_sha256'}=={k:v for k,v in after.items() if k!='inventory_sha256'}
+            assert after['record_count']==after['package_count']==0
+            assert after['inventory_sha256']==hashlib.sha256(canonical_bytes(stage.read_bytes('project-state/master-inventory.json'))).hexdigest()
+        else:assert hashlib.sha256(canonical_bytes(stage.read_bytes(path))).hexdigest()==hash_value,path
     assert stage.load_json('project-state/master-inventory.json')==json.loads(git('show',MERGE+':project-state/master-inventory.json'))
     assert stage.load_json('project-state/r2-inventory.json')==json.loads(git('show',MERGE+':project-state/r2-inventory.json'))
     if (G.ROOT/(P+'accounting.json')).exists():
         a=stage.load_json(P+'accounting.json');assert a['statuses']=={IDS[0]:'superseded',IDS[1]:'validated'} and a['r2_delta']==0 and a['visitor_visible_delta']==0
+    if (G.ROOT/(P+'receipt.json')).exists():
+        receipt=stage.load_json(P+'receipt.json');assert receipt['candidate_statuses']=={IDS[0]:'superseded',IDS[1]:'validated'} and receipt['r2_delta']==receipt['visitor_visible_delta']==0
+        for path,h in receipt['evidence_sha256'].items():assert hashlib.sha256(canonical_bytes(stage.read_bytes(path))).hexdigest()==h,path
     print('PASS PR217 exact two-record production closeout: content, inventory, R2 and historical evidence unchanged')
 
 if __name__=='__main__':globals()[sys.argv[1] if len(sys.argv)>1 else 'guard']()

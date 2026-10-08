@@ -1,0 +1,13 @@
+{
+  "artifact_type": "deterministic_zero_member_queue_checksum_reconciliation",
+  "failed_validation": "project-state/governance/pr217-postmerge-closeout-2026-10-08/validation-attempt-1.log",
+  "issue": "Merged PR217 inventory bytes have a different exact SHA-256 than the saved zero-member consolidated queue pointer; normal full-suite freshness check failed.",
+  "resolved_by": "Existing deterministic queue builder; only inventory_sha256 changes. Zero records/packages and Markdown are unchanged.",
+  "before_inventory_sha256": "e8697026684b140992ce02e5a320100d088767c1e82488672411fbedf2b23b5d",
+  "after_inventory_sha256": "82eab722b0f4281d1ffc8fcf10a8240a243343dfd591b8f409118fc05310588d",
+  "candidate_ids": [
+    "src-907f4de342216f97",
+    "src-0b1dfe6e620d7fe0"
+  ],
+  "new_review_population": false
+}
