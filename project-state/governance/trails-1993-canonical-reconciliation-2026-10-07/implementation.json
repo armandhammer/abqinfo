@@ -222,11 +222,54 @@
       "summary": "Deterministic retained-source audit regeneration adds only this canonical City view URL as a pending root, preserving all 656 prior audits; no descendant crawl or new task population started. Operation class also covers regenerated zero-owner queue.",
       "evidence": "project-state/discovery/retained-source-audit-queue.json",
       "use_contract_record_rules": true
+    },
+    {
+      "operation": "background_integration",
+      "candidate_ids": [
+        "src-395957636cb2fed0"
+      ],
+      "governance_ids": [
+        "authorization-profile-ordinary-review-large",
+        "authorization-trails-1993-canonical-reconciliation-2026-10-07-supersession",
+        "decision-archive-recovery-53d2a462",
+        "decision-council-closeout-status-2026-09-20-4dfd8e30",
+        "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
+        "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+        "decision-scoped-source-review-2026-08-04-33554a9c",
+        "decision-trails-1993-canonical-reconciliation-2026-10-07",
+        "decision-trails-1993-canonical-reconciliation-2026-10-07-exception-1",
+        "decision-trails-1993-canonical-reconciliation-2026-10-07-exception-2",
+        "decision-trails-1993-canonical-reconciliation-2026-10-07-exception-3",
+        "decision-trails-1993-canonical-reconciliation-2026-10-07-exception-4",
+        "decision-trails-1993-canonical-reconciliation-2026-10-07-exception-5",
+        "decision-unm-cnm-focused-source-scope-1673e3f6",
+        "owner-trails-1993-canonical-reconciliation-2026-10-07",
+        "policy-agents",
+        "policy-durable-task-governance",
+        "policy-mission-scope",
+        "policy-mission-scope-legacy",
+        "policy-project-recency",
+        "policy-project-state",
+        "policy-publication-quality",
+        "policy-quality-exclusions",
+        "policy-r2-storage",
+        "policy-source-priorities",
+        "policy-tip-stip-retention",
+        "workflow-autonomous-verification",
+        "workflow-background-campaign",
+        "workflow-handoff-retirement",
+        "workflow-parallel-verification",
+        "workflow-stage-lifecycle"
+      ],
+      "action": "implements",
+      "summary": "Validated background work commit 14b2c2b35314f7a30e198d627c96a71361f29027 atomically integrated into remote main and planning-snapshot, with equal remote tips verified. Complete only metadata/ref receipts afterward.",
+      "evidence": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/remote-final.json",
+      "use_contract_record_rules": true
     }
   ],
-  "status": "review_in_progress",
-  "contract": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/contract-v29.json",
-  "contract_sha256": "6174a65f94886e900c399c9785a405823d775150eac304637e62b8c64ef05110",
+  "status": "complete",
+  "contract": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/contract-v30.json",
+  "contract_sha256": "273302bd3e45ec5a966594f0fb99937f00f3113f62a85ed7d5e0e54e3a21b6b6",
   "population_sha256": "7bf4fb01ebaa2578254aa316f0730b80cc9745861ed8d08a0102cc35aac8aa07",
   "respected_governance_ids": [
     "authorization-profile-ordinary-review-large",
@@ -266,187 +309,187 @@
     "authorization-profile-ordinary-review-large": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "authorization-trails-1993-canonical-reconciliation-2026-10-07-supersession": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "decision-archive-recovery-53d2a462": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "decision-council-closeout-status-2026-09-20-4dfd8e30": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "decision-scoped-source-review-2026-08-04-33554a9c": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "decision-trails-1993-canonical-reconciliation-2026-10-07": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "decision-trails-1993-canonical-reconciliation-2026-10-07-exception-1": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "decision-trails-1993-canonical-reconciliation-2026-10-07-exception-2": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "decision-trails-1993-canonical-reconciliation-2026-10-07-exception-3": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "decision-trails-1993-canonical-reconciliation-2026-10-07-exception-4": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "decision-trails-1993-canonical-reconciliation-2026-10-07-exception-5": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "decision-unm-cnm-focused-source-scope-1673e3f6": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "owner-trails-1993-canonical-reconciliation-2026-10-07": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "policy-agents": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "policy-durable-task-governance": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "policy-mission-scope": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "policy-mission-scope-legacy": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "policy-project-recency": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "policy-project-state": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "policy-publication-quality": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "policy-quality-exclusions": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "policy-r2-storage": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "policy-source-priorities": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "policy-tip-stip-retention": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "workflow-autonomous-verification": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "workflow-background-campaign": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "workflow-handoff-retirement": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "workflow-parallel-verification": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ],
     "workflow-stage-lifecycle": [
       {
         "path": "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/receipt.json",
-        "sha256": "a1e6f98b83c16aafbe063f044d6dc4e6f4e3559810992b02c68a915d11c206f2"
+        "sha256": "fc3f3b67a08f61048b5176e2888f966a0d2a8f80aaabb7eae05a1326d397c6dd"
       }
     ]
   }

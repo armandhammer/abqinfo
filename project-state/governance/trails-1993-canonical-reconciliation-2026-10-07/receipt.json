@@ -4,7 +4,7 @@
   "candidate_ids": [
     "src-395957636cb2fed0"
   ],
-  "status": "validated_clean_background_integration_pending",
+  "status": "complete_background_integrated",
   "accounting": {
     "task_id": "trails-1993-canonical-reconciliation-2026-10-07",
     "candidate_ids": [
@@ -60,7 +60,8 @@
     "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/queue.json": "b648f1da2a1d4702a06e8f05069ac57466edd68487188d99191834b234a60e8a",
     "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/rendered-check.json": "58fdcf8a71eaaebd5a5694150f63f9f7545b6a93299286b2c6704b7599b0c38d",
     "project-state/discovery/retained-source-audit-queue.json": "3c518a02486204874afcc871bdf72acfe8ddcabd032bd505150ab07c752e040c",
-    "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/validation-attempt-2.log": "d9e88c54c0e80e3102fd2dbdb7c347fb81b1d3cfee8f3e62ab3c4cbd56ff34d4"
+    "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/validation-attempt-2.log": "d9e88c54c0e80e3102fd2dbdb7c347fb81b1d3cfee8f3e62ab3c4cbd56ff34d4",
+    "project-state/governance/trails-1993-canonical-reconciliation-2026-10-07/remote-final.json": "a36e2188a8fae9a8c6a8f4ce62a6721ac47ef0065c0ef6cb1652a0d02bb13552"
   },
   "governance_accounting": {
     "authorization-profile-ordinary-review-large": {
@@ -457,5 +458,13 @@
     "added_status": "pending descendant crawl",
     "descendant_research_performed": false,
     "prior_records_unchanged": true
-  }
+  },
+  "work_commit": "14b2c2b35314f7a30e198d627c96a71361f29027",
+  "integration": {
+    "method": "non-force atomic push to main and planning-snapshot",
+    "work_remote_main": "14b2c2b35314f7a30e198d627c96a71361f29027",
+    "work_remote_planning_snapshot": "14b2c2b35314f7a30e198d627c96a71361f29027",
+    "completion_receipt_commit": "subsequent background-only commit; final equal refs independently verified afterward"
+  },
+  "validation_scope": "Full normal suite passed; final metadata-only completion refresh checked for exact population, freshness, CURRENT, retained-source coverage, regenerated counts and clean diff."
 }
