@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "3bb990665d6f93840b4868089f4694583a1bfba5a0ed6f07751226e497d7b56f",
+  "audit_sha256": "33ba63dcc999a5bbf4b6add707490220b7294e951b6a231195f2482a08e26bab",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15259,7 +15259,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "4699ed29c23132c4829674746e9089901570a0123d9b6658e5603b51dae9d98f",
+          "sha256": "0986700e9c2d40f4dfa7ebd55acd8d67f1c9541f1c3314fe93daa76f4295d6ac",
           "binding_pointers": [
             "/implementation"
           ]
@@ -28682,6 +28682,78 @@
       "settled_decisions": [],
       "unresolved_gates": [],
       "implementation_status": "exact production and blocked-source lifecycle closeout"
+    },
+    {
+      "governance_id": "owner-bikeway-2024-edition-resolution-2026-10-07",
+      "category": "active owner decision",
+      "title": "owner-bikeway-2024-edition-resolution-2026-10-07",
+      "scope": {
+        "candidate_ids": [
+          "src-907f4de342216f97",
+          "src-0b1dfe6e620d7fe0"
+        ],
+        "task_ids": [
+          "bikeway-2024-edition-resolution-2026-10-07"
+        ]
+      },
+      "authority": "Explicit current owner two-record edition/provenance resolution instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/bikeway-2024-edition-resolution-2026-10-07/authority.json",
+          "sha256": "e3b75371161efd1683d63bcd20858ab83eb4b4825e1d27e9ae133c26bc73750f",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Complete exact two-record edition/provenance comparison and reconciliation; make current official plan unambiguous via one unmerged owner-review PR if required, verify Cloudflare preview and synchronize planning-snapshot to PR head. No content merge, R2 mutation or 2014/2015 population expansion.",
+      "required_actions": [
+        "Complete exact two-record edition/provenance comparison and reconciliation; make current official plan unambiguous via one unmerged owner-review PR if required, verify Cloudflare preview and synchronize planning-snapshot to PR head. No content merge, R2 mutation or 2014/2015 population expansion."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded edition review"
+    },
+    {
+      "governance_id": "authorization-bikeway-2024-edition-resolution-2026-10-07-supersession",
+      "category": "active owner decision",
+      "title": "authorization-bikeway-2024-edition-resolution-2026-10-07-supersession",
+      "scope": {
+        "candidate_ids": [
+          "src-907f4de342216f97",
+          "src-0b1dfe6e620d7fe0"
+        ],
+        "task_ids": [
+          "bikeway-2024-edition-resolution-2026-10-07"
+        ]
+      },
+      "authority": "Explicit current owner two-record edition/provenance resolution instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/bikeway-2024-edition-resolution-2026-10-07/supersession.json",
+          "sha256": "c0f6624c20a8c9e28ccdd1ba28778502439699cbf162ebbed5f60be88f3b1967",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Only evidence-backed exact two-record reconciliation within the current owner instruction; preserve all other authority and historical evidence. No additional external effects or population authorized.",
+      "required_actions": [
+        "Only evidence-backed exact two-record reconciliation within the current owner instruction; preserve all other authority and historical evidence. No additional external effects or population authorized."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded edition review"
     }
   ]
 }
