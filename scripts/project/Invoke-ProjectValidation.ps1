@@ -68,6 +68,8 @@ if ($LASTEXITCODE -ne 0) { throw "2024 Bikeway edition resolution regression fai
 
 & python "$PSScriptRoot/Pr217PostMergeCloseout.py" guard
 if ($LASTEXITCODE) { throw "PR217 closeout exact-delta guard failed" }
+& python "$PSScriptRoot/Bikeway2014DraftResolution.py" guard
+if ($LASTEXITCODE) { throw "2014 Bikeway draft exact-population guard failed" }
 Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }

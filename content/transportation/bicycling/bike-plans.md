@@ -134,9 +134,9 @@ City bicycle planning documents and master plans, including current and previous
 
   [Current City Lineage Summary](https://documents.cabq.gov/planning/FacilityPlans/BTFP/2024/BTFP-Update_Summary-2024.pdf) · [Internet Archive Capture of Former City PDF](https://web.archive.org/web/20171206154910if_/http://documents.cabq.gov/planning/adopted-longrange-plans/BTFP/Final/BTFP%20FINAL_Jun25.pdf)
 
-  - [2014 Pre-Adoption Draft](https://files.abqinfo.com/transportation/bicycling/bike-plans/2015-bikeways-and-trails-facilities-plan.pdf)
+  - [2014 Pre-Adoption Draft — Chapters 1–6](https://files.abqinfo.com/transportation/bicycling/bike-plans/2015-bikeways-and-trails-facilities-plan.pdf)
 
-    Preserves the 131-page draft for comparison with the substantially expanded May 2015 final plan, including earlier policies, recommendations, facility proposals, design material, and implementation strategies.
+    The 131-page pre-adoption draft preserves Chapters 1–6, including earlier project and cost estimates, advisory-committee options, policies, and implementation proposals. It contains map placeholders; the separately issued design manual is not included. [Archived official City draft](https://web.archive.org/web/20170125013542id_/http://www.cabq.gov/planning/documents/BikewaysTrailsFacilityPlan.pdf)
 
   - [Appendix A: Proposed Facilities](https://files.abqinfo.com/transportation/bicycling/bike-plans/cabq-2015-bikeways-trails-plan-appendix-a-proposed-facilities.pdf)
 
