@@ -55,6 +55,9 @@ if ($LASTEXITCODE) { throw 'School-zone document-entry correction failed.' }
 if ($LASTEXITCODE) { throw 'PR215 closeout exact-delta guard failed.' }
 & python "$PSScriptRoot/RemainingAgendaResolution.py" guard
 if ($LASTEXITCODE) { throw 'Remaining agenda four-record boundary failed.' }
+& python "$PSScriptRoot/Trails1993CanonicalReconciliation.py" guard
+if ($LASTEXITCODE -ne 0) { throw "1993 canonical reconciliation regression failed" }
+
 Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }
