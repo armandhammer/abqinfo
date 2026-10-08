@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "9ec34126d917e5124859ffb9db858940d6991246fdae37f98d94afdb112710bf",
+  "audit_sha256": "e897673d377257e3bc5b92b0d2d6815e71abd7e0c9762ab01ad441a864f05780",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -9130,7 +9130,7 @@
       "authority": "durable recorded project decision",
       "decision_date": null,
       "effective_date": "as recorded in controlling artifact; no chronology precedence",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/near-complete-review-decisions-2026-08-20.json",
@@ -9155,7 +9155,9 @@
         }
       ],
       "unresolved_gates": [],
-      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority.",
+      "superseded_by": "decision-brt-prize-version-resolution-2026-10-07-august-finality-exception",
+      "supersession_evidence": "project-state/governance/brt-prize-version-resolution-2026-10-07/supersession.json"
     },
     {
       "governance_id": "decision-next-ordinary-queue-b8bb5c70",
@@ -15257,7 +15259,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "9997193fcf63b7185b4da3eb04007ff3b997bd51788998792d93d243b06e4d67",
+          "sha256": "b47d4e1a45db8a842ae98b8487882eea3a05d510d2e0a1115ba8d893b51368d4",
           "binding_pointers": [
             "/implementation"
           ]
@@ -28124,6 +28126,254 @@
       "binding_requirement": "Implement the conclusive exact canonical provenance correction and validated existing-publication lifecycle. Reuse historical review; preserve duplicate, historical qualification, prior evidence, public entry and existing R2 bytes. No owner decision remains.",
       "required_actions": [
         "Implement the conclusive exact canonical provenance correction and validated existing-publication lifecycle. Reuse historical review; preserve duplicate, historical qualification, prior evidence, public entry and existing R2 bytes. No owner decision remains."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded background reconciliation"
+    },
+    {
+      "governance_id": "owner-brt-prize-version-resolution-2026-10-07",
+      "category": "active owner decision",
+      "title": "owner-brt-prize-version-resolution-2026-10-07",
+      "scope": {
+        "candidate_ids": [
+          "src-e80e0b49a4723c9a"
+        ],
+        "task_ids": [
+          "brt-prize-version-resolution-2026-10-07"
+        ]
+      },
+      "authority": "Explicit current user bounded canonical reconciliation instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/brt-prize-version-resolution-2026-10-07/authority.json",
+          "sha256": "def2a639958ededda36c9a269328d8243973fa7f0983e31925ea423deff2abf6",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Exact one-record complete version/provenance/quality review. Correct unsupported finality if needed only in an unmerged owner-review content PR. Explicit evidence-backed record-scoped replacements may reconcile prior stale holds. No destructive R2, upload, version overwrite, unrelated population or content merge.",
+      "required_actions": [
+        "Exact one-record complete version/provenance/quality review. Correct unsupported finality if needed only in an unmerged owner-review content PR. Explicit evidence-backed record-scoped replacements may reconcile prior stale holds. No destructive R2, upload, version overwrite, unrelated population or content merge."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded background reconciliation"
+    },
+    {
+      "governance_id": "authorization-brt-prize-version-resolution-2026-10-07-supersession",
+      "category": "active owner decision",
+      "title": "authorization-brt-prize-version-resolution-2026-10-07-supersession",
+      "scope": {
+        "candidate_ids": [
+          "src-e80e0b49a4723c9a"
+        ],
+        "task_ids": [
+          "brt-prize-version-resolution-2026-10-07"
+        ]
+      },
+      "authority": "Explicit current user bounded canonical reconciliation instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/brt-prize-version-resolution-2026-10-07/supersession.json",
+          "sha256": "a007944e6fa7bc9d70e7164b48c4bcc284798768dd193654058cea24ed39fd8d",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Only the explicit evidence-backed record-scoped replacements recorded in this task are authorized; preserve all unrelated governance and original historical artifacts.",
+      "required_actions": [
+        "Only the explicit evidence-backed record-scoped replacements recorded in this task are authorized; preserve all unrelated governance and original historical artifacts."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded background reconciliation"
+    },
+    {
+      "governance_id": "owner-brt-prize-version-resolution-2026-10-07-resumption",
+      "category": "active owner decision",
+      "title": "owner-brt-prize-version-resolution-2026-10-07-resumption",
+      "scope": {
+        "candidate_ids": [
+          "src-e80e0b49a4723c9a"
+        ],
+        "task_ids": [
+          "brt-prize-version-resolution-2026-10-07"
+        ]
+      },
+      "authority": "Explicit current user bounded canonical reconciliation instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/brt-prize-version-resolution-2026-10-07/authority-resumption.json",
+          "sha256": "20ca72c3b74f218497c6d9e2475ffb75dd7b2d4190a285b97bf69202d8951c11",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Finish this same exact-record version/finality correction. A visible correction requires an unmerged owner-review PR with verified nonproduction preview and planning-snapshot synchronized to its reviewed head; main stays unchanged. No R2 mutation or unrelated population.",
+      "required_actions": [
+        "Finish this same exact-record version/finality correction. A visible correction requires an unmerged owner-review PR with verified nonproduction preview and planning-snapshot synchronized to its reviewed head; main stays unchanged. No R2 mutation or unrelated population."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded background reconciliation"
+    },
+    {
+      "governance_id": "decision-brt-prize-version-resolution-2026-10-07-august-finality-exception",
+      "category": "active family decision",
+      "title": "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact with exact BRT uncertain-finality correction",
+      "scope": {
+        "candidate_ids": [
+          "src-2641b5b13214d7ee",
+          "src-2bbfb64ecf6455b3",
+          "src-5ade756c56baac45",
+          "src-5f3ea18d2262dd4e",
+          "src-61107c696c0e35b5",
+          "src-671b4bd36e11e0d9",
+          "src-80ee860e3cfa60bf",
+          "src-863e82803d9e7cac",
+          "src-8903198f1d3c22e1",
+          "src-aab5517438784db7",
+          "src-bad7cd0818045625",
+          "src-c070ab7e5a4a2622",
+          "src-c1d5a2b0b33b331a",
+          "src-d7b006f3aceaa405",
+          "src-e0748ccf7ebc1a77",
+          "src-e80e0b49a4723c9a",
+          "src-e88f5a097091c5db",
+          "src-ed916e54f80ece6f"
+        ],
+        "pages": [
+          "content/development-land-use/area-sector-plans.md",
+          "content/transportation/transit/abq-ride.md"
+        ],
+        "artifact_paths": [
+          "project-state/near-complete-review-decisions-2026-08-20.json"
+        ]
+      },
+      "authority": "Explicit repeated current owner exact-record correction instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/near-complete-review-decisions-2026-08-20.json",
+          "sha256": "2c929ab2c6acf6860c7f54bf428ffb44ae2fe014f9c28b52e68ffe285b2a6ed8",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/brt-prize-version-resolution-2026-10-07/governance-reconciliation.json",
+          "sha256": "bec7f7530580f4713beba93ce884e755027a158ee89093d2265fef29a446f0b4",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact. Saved recommendations and completed-action receipts do not authorize new disposition or external action. Explicit owner-authorized exception solely for src-e80e0b49a4723c9a: complete comparison and authoritative live/archive research establish no final42-page delivery. Replace prior provisional final-report assertion/approval only with preserved unmarked editorial variant, exact official delivery/final status unverified. Keep existing42-page original/R2 and one existing historical entry; prepare accurate label/description correction solely in an unmerged owner-review PR. Preserve pending source-provenance hold; a positive substantive historical-quality assessment is independent and does not release it. Preserve every unrelated decision and all original evidence.",
+      "required_actions": [
+        "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact. Saved recommendations and completed-action receipts do not authorize new disposition or external action. Explicit owner-authorized exception solely for src-e80e0b49a4723c9a: complete comparison and authoritative live/archive research establish no final42-page delivery. Replace prior provisional final-report assertion/approval only with preserved unmarked editorial variant, exact official delivery/final status unverified. Keep existing42-page original/R2 and one existing historical entry; prepare accurate label/description correction solely in an unmerged owner-review PR. Preserve pending source-provenance hold; a positive substantive historical-quality assessment is independent and does not release it. Preserve every unrelated decision and all original evidence."
+      ],
+      "prohibited_actions": [
+        "Do not infer new external authorization from this artifact."
+      ],
+      "constraints": [],
+      "settled_decisions": [
+        {
+          "question_id": "artifact-decision:decision-near-complete-review-decisions-2026-08-20-55b5f92e",
+          "decision": "Preserve the exact recorded family/disposition, canonical/version/duplicate, publication and provenance decisions in this artifact. Saved recommendations and completed-action receipts do not authorize new disposition or external action. Explicit owner-authorized exception solely for src-e80e0b49a4723c9a: complete comparison and authoritative live/archive research establish no final42-page delivery. Replace prior provisional final-report assertion/approval only with preserved unmarked editorial variant, exact official delivery/final status unverified. Keep existing42-page original/R2 and one existing historical entry; prepare accurate label/description correction solely in an unmerged owner-review PR. Preserve pending source-provenance hold; a positive substantive historical-quality assessment is independent and does not release it. Preserve every unrelated decision and all original evidence."
+        }
+      ],
+      "unresolved_gates": [],
+      "implementation_status": "Unmerged bounded historical-entry correction; factual source hold retained",
+      "supersedes": [
+        "decision-near-complete-review-decisions-2026-08-20-55b5f92e"
+      ]
+    },
+    {
+      "governance_id": "decision-brt-prize-version-resolution-2026-10-07",
+      "category": "active owner decision",
+      "title": "decision-brt-prize-version-resolution-2026-10-07",
+      "scope": {
+        "candidate_ids": [
+          "src-e80e0b49a4723c9a"
+        ],
+        "task_ids": [
+          "brt-prize-version-resolution-2026-10-07"
+        ]
+      },
+      "authority": "Explicit current user bounded canonical reconciliation instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/brt-prize-version-resolution-2026-10-07/governance-reconciliation.json",
+          "sha256": "bec7f7530580f4713beba93ce884e755027a158ee89093d2265fef29a446f0b4",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Preserve42-page original and pending factual source hold. Correct unsupported Final Report wording in exactly one existing historical entry via unmerged owner-review PR and verified preview; positive quality is independent of provenance. Keep all unrelated decisions and R2 unchanged.",
+      "required_actions": [
+        "Preserve42-page original and pending factual source hold. Correct unsupported Final Report wording in exactly one existing historical entry via unmerged owner-review PR and verified preview; positive quality is independent of provenance. Keep all unrelated decisions and R2 unchanged."
+      ],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded background reconciliation"
+    },
+    {
+      "governance_id": "quality-brt-prize-version-resolution-2026-10-07",
+      "category": "active owner decision",
+      "title": "quality-brt-prize-version-resolution-2026-10-07",
+      "scope": {
+        "candidate_ids": [
+          "src-e80e0b49a4723c9a"
+        ],
+        "task_ids": [
+          "brt-prize-version-resolution-2026-10-07"
+        ]
+      },
+      "authority": "Explicit current user bounded canonical reconciliation instruction",
+      "decision_date": "2026-10-07",
+      "effective_date": "2026-10-07",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/brt-prize-version-resolution-2026-10-07/quality-decision.json",
+          "sha256": "8c49fdeb19b43fc90f9169d8120b400cda7857f40b76988e7896427d2e14d44e",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Apply actual-report positive material Albuquerque and substantive historical-quality assessment with explicit unverified version/finality qualifier. No new entry, finality approval, current-outcome claim or source-hold release.",
+      "required_actions": [
+        "Apply actual-report positive material Albuquerque and substantive historical-quality assessment with explicit unverified version/finality qualifier. No new entry, finality approval, current-outcome claim or source-hold release."
       ],
       "prohibited_actions": [],
       "constraints": [],
