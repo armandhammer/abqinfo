@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "3144c303d4eb7739166acf86c5de262e4a766552f4694f813449edfb250e9e34",
+  "audit_sha256": "c559886758d546963cacd5004640117a652fcbbf3c967e35cc42d71320de1b19",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15259,7 +15259,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "b23b8ed65416444f6f7db3ae0bbcc60be7c7877bafcc608df43fdfac20aa89e0",
+          "sha256": "c71ea3ecec66c21724095d651621de7ff1a6e4f9c2524cce1bfe261b289afcd0",
           "binding_pointers": [
             "/implementation"
           ]
@@ -31477,6 +31477,43 @@
       "settled_decisions": [],
       "unresolved_gates": [],
       "implementation_status": "bounded background correction"
+    },
+    {
+      "governance_id": "owner-bikeway-2014-draft-resolution-2026-10-08",
+      "category": "active owner decision",
+      "title": "Exact 2014 draft provenance and historical publication review",
+      "scope": {
+        "candidate_ids": [
+          "src-a614f077ace20401"
+        ],
+        "task_ids": [
+          "bikeway-2014-draft-resolution-2026-10-08"
+        ]
+      },
+      "authority": "Explicit current owner request",
+      "decision_date": "2026-10-08",
+      "effective_date": "2026-10-08",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/bikeway-2014-draft-resolution-2026-10-08/authority.json",
+          "sha256": "c558b9028141b793b97d63df0314a2ab571ae173afe67d01a83b8859c7952a44",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Resolve only src-a614f077ace20401, the preserved 131-page 2014 Bikeways and Trails Facilities Plan pre-adoption draft. Use validated 312-page 2015 final src-27b939c34a1c59fc as READ-ONLY version comparator. Reconstruct remote state and all Project instructions; frozen population and immutable complete registry contract. Determine exact identity/date/adoption stage/authoritative provenance, substantive complete-document differences using existing research, unique historical publication value, and accurate description/placement/lifecycle. Do not infer official provenance from R2 or filename. Preserve both originals without overwrite/deletion. If necessary prepare one owner-review visitor-visible correction PR with verified nonproduction preview; DO NOT MERGE. Otherwise only authorized background reconciliation. Preserve unrelated records/governance; full validation; report provenance, quality, lifecycle, visible changes, queues, R2 delta and final refs. This current instruction authorizes evidence-driven resolution of this exact draft prerequisite, not unrelated or comparator disposition changes.",
+      "required_actions": [
+        "Resolve only src-a614f077ace20401, the preserved 131-page 2014 Bikeways and Trails Facilities Plan pre-adoption draft. Use validated 312-page 2015 final src-27b939c34a1c59fc as READ-ONLY version comparator. Reconstruct remote state and all Project instructions; frozen population and immutable complete registry contract. Determine exact identity/date/adoption stage/authoritative provenance, substantive complete-document differences using existing research, unique historical publication value, and accurate description/placement/lifecycle. Do not infer official provenance from R2 or filename. Preserve both originals without overwrite/deletion. If necessary prepare one owner-review visitor-visible correction PR with verified nonproduction preview; DO NOT MERGE. Otherwise only authorized background reconciliation. Preserve unrelated records/governance; full validation; report provenance, quality, lifecycle, visible changes, queues, R2 delta and final refs. This current instruction authorizes evidence-driven resolution of this exact draft prerequisite, not unrelated or comparator disposition changes."
+      ],
+      "prohibited_actions": [
+        "No comparator mutation, R2 overwrite/deletion/upload, content PR merge or unrelated record/governance mutation."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "Exact draft review; final is read-only"
     }
   ]
 }
