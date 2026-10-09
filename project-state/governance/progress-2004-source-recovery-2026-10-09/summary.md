@@ -1,0 +1,13 @@
+# 2004 Albuquerque Progress Report source recovery
+
+Exactly `src-352d880cb11386d3` remains **pending review / source-recovery hold**. No complete original recovered and no publication or archive approval made.
+
+The City hub still names the 2004 edition. Fresh anonymous Chrome and direct retrieval return 404 for its original delivery and UID route. The current 2004 documents folder exposes 56 indicator components. Internet Archive captures preserve the 2005 original City home and 2009/2023 landing pages. Its legacy PDF index identifies 66 component URL keys (10 front matter/appendix components and 56 indicators); the migrated subtree has 136 delivery URL keys, not 136 distinct documents. None of those inspected indexes identifies a single complete original report. Three sampled PDFs were downloaded, hashed, parsed and visually inspected: a report-card explanation, Appendix A and one indicator. They are authentic source components, not a complete edition. No compilation was produced.
+
+Official City folders/search/document host, focused Internet Archive indexes/captures, Archive item catalog, Open Library, current New Mexico State Library rendered catalog and targeted government/university/library web searches did not yield a complete original. Exact State Library title/publisher searches returned no results; broader searches returned unrelated records. Broad archive failures and the digital collection's broad full-text result set limit negative conclusions; this is an outcome of the recorded investigation, not proof that no recoverable original exists anywhere.
+
+The remaining prerequisite is a complete City-issued 2004 original PDF or complete original scan, authoritative provenance/custody, exact edition/date and verified contents/pagination. An original multipart edition would require an authenticated manifest/order, all original files and demonstrated complete coverage. A surviving outline or partial set alone cannot clear the hold. The City Clerk's official records route is recorded for a possible custodian request; none was sent.
+
+Existing reports, all inventory fields/timestamps, queues, R2 state and storage policy remain unchanged. Queue: 0 approved; 333 pending, including 321 gated and 12 source/structural blocked; 0 actionable/human review; 884 remaining nonterminal. R2: 0 objects, 0 bytes. No visitor-visible change, PR, merge, deployment or remote write.
+
+Full normal validation: passed (complete project suite, exit 0). Final refs and validation results are recorded in the adjacent JSON receipt and log. This exact task is complete; further work depends on new complete-original evidence, not a repeat of the failed retrievals.

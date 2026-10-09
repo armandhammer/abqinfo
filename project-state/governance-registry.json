@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "75366b9b7610382bd77f99ab8d43bbf22f1cea38df217661e2d97dcc35bd735d",
+  "audit_sha256": "757284c941f5e5bc9a69710d8347fa3a2221f742e78be427df1faed5c7d0040f",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15259,7 +15259,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "df1b88f0be5629f82d1d0cc7f06f425ade185a20c31d89fbb8467114cbb37955",
+          "sha256": "6283a5949e297148b8a3cf4a4fd910696794724b59a79733663e1a27c61df0b9",
           "binding_pointers": [
             "/implementation"
           ]
@@ -34372,6 +34372,43 @@
       "settled_decisions": [],
       "unresolved_gates": [],
       "implementation_status": "exact production/lifecycle/background closeout"
+    },
+    {
+      "governance_id": "owner-progress-2004-source-recovery-2026-10-09",
+      "category": "active owner decision",
+      "title": "Exact 2004 Progress Report source recovery",
+      "scope": {
+        "candidate_ids": [
+          "src-352d880cb11386d3"
+        ],
+        "task_ids": [
+          "progress-2004-source-recovery-2026-10-09"
+        ]
+      },
+      "authority": "Explicit current owner instruction",
+      "decision_date": "2026-10-09",
+      "effective_date": "2026-10-09",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/progress-2004-source-recovery-2026-10-09/authority.json",
+          "sha256": "49f0ab58e0ba094e8812fff7bf210e382eaad0321ec61f08c7a7cf32de86c719",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Recover exactly src-352d880cb11386d3, the 2004 Albuquerque Progress Report, after examining prior research and complete active governance. Investigate authoritative City sources, historical URLs, Internet Archive captures, alternate government repositories and other verifiable paths. Preserve settled dispositions, existing reports and governance. A complete original requires exact identity/date/completeness/authenticity/provenance and scope/quality/series review before any archival or owner-review publication PR; do not merge. If complete original is not recovered, preserve the existing hold and record the specific remaining evidence prerequisite, without substitutes. Run full validation; report outcome, publication/archive status, queues, R2 delta and final refs. This initial contract covers evidence recovery and background governance only; any successful recovery requiring inventory/archive/content operations requires a replacement frozen contract and the existing authorization gates. No external storage or Git ref mutation is authorized by this initial contract.",
+      "required_actions": [
+        "Recover exactly src-352d880cb11386d3, the 2004 Albuquerque Progress Report, after examining prior research and complete active governance. Investigate authoritative City sources, historical URLs, Internet Archive captures, alternate government repositories and other verifiable paths. Preserve settled dispositions, existing reports and governance. A complete original requires exact identity/date/completeness/authenticity/provenance and scope/quality/series review before any archival or owner-review publication PR; do not merge. If complete original is not recovered, preserve the existing hold and record the specific remaining evidence prerequisite, without substitutes. Run full validation; report outcome, publication/archive status, queues, R2 delta and final refs. This initial contract covers evidence recovery and background governance only; any successful recovery requiring inventory/archive/content operations requires a replacement frozen contract and the existing authorization gates. No external storage or Git ref mutation is authorized by this initial contract."
+      ],
+      "prohibited_actions": [
+        "No incomplete, unrelated or unauthenticated substitute; no merge."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "source recovery"
     }
   ]
 }
