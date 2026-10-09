@@ -1,6 +1,6 @@
 {
   "recorded_at": "2026-10-08T18:52:03.6925303Z",
-  "completed_item_range": "Exact 2014 Bikeway draft official delivery, complete 131/312-page comparison, positive historical scope-quality and validated lifecycle resolved; entry clarification in unmerged owner-review PR218 with verified nonproduction preview; R2 delta0.",
+  "completed_item_range": "PR218 owner merge c6c0dd74f771a9686faf55692f5d1da70aeaa1ad production verified; existing 2014 Chapters1–6 draft validated historical lifecycle confirmed, owner review closed, original provenance/R2 unchanged.",
   "total_candidates": 7143,
   "counts_by_status": {
     "pending review": 333,
@@ -21,7 +21,7 @@
   "remaining_nonterminal": 884,
   "next_pending_id": "lin-2f6fbe4ffb0b6564",
   "blockers": [],
-  "resume_command": "Owner review PR218: exact historical 2014 Chapters1-6 draft correction; full validation and Chrome nonproduction preview passed. Do not merge or deploy without subsequent owner approval. No new population or R2 action.",
+  "resume_command": "PR218 production-verified closeout and full validation complete; perform authorized background branch integration. No new document review.",
   "verification_campaign_totals": {
     "verified": 2194,
     "passed": 2070,
@@ -38067,5 +38067,16 @@
         }
       }
     }
-  ]
+  ],
+  "pr218_postmerge_closeout": {
+    "state": "production_verified_validation_passed_owner_review_closed",
+    "merge_sha": "c6c0dd74f771a9686faf55692f5d1da70aeaa1ad",
+    "candidate_ids": [
+      "src-a614f077ace20401",
+      "src-27b939c34a1c59fc"
+    ],
+    "r2_delta": 0,
+    "visitor_visible_delta": 0,
+    "owner_review_pending": false
+  }
 }

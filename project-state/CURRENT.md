@@ -1,11 +1,11 @@
 # Current project state
 
-PR #218 is open and unmerged for owner review. The 2014 Bikeways and Trails draft src-a614f077ace20401 is reconciled to validated historical publication in this PR: exact former City Chapters 1–6 delivery matches all 4,402,773 preserved bytes/SHA-256 through its January 25, 2017 Internet Archive capture. Cover date2014; August4 packaging metadata is not a precise issue date.
+PR #218 owner-merged at c6c0dd74f771a9686faf55692f5d1da70aeaa1ad. Production Previous Bike Plans was verified directly on custom abqinfo.com in Chrome desktop/mobile against reviewed preview and successful merge deployment. Exact 2014 Pre-Adoption Draft — Chapters 1–6 label, qualified description and archived official City source match; subordinate placement under the unchanged 2015 final and all 16 historical links are correct. Both preserved R2 originals and archived City draft pass fresh full size/SHA256 checks.
 
-All131/312pages compared and visually inspected. Unique earlier committee, project/cost and policy/implementation proposals justify retention below the unchanged 2015 final. Only the draft label/description and archived City source citation change; map placeholders and absent separate design manual are disclosed. Both originals/R2 and unrelated records remain unchanged. Full normal validation and local/Cloudflare Chrome desktop/mobile passed. Do not merge or deploy without owner approval.
+Existing draft remains validated; owner review closed. Original provenance, date limitations, complete-document comparison and sealed receipts preserved. ZERO visitor-visible/inventory/R2 delta; no new document review. Full normal validation passed; authorized background branch integration is the remaining closeout step.
 
-Queue0 approved /333 pending (321 gated /12 source-structural blocked),0 actionable /human review; remaining nonterminal884. R2 delta0. Main/planning remain7bf604d5; review ref observations are in the receipt.
+Queue: 0 approved /333 pending (321 gated /12 source-structural blocked), 0 actionable /human review; remaining nonterminal884.
 
-[Receipt](governance/bikeway-2014-draft-resolution-2026-10-08/receipt.json) · [PR218](https://github.com/armandhammer/abqinfo/pull/218) · [Active task](governance/active-task.json) · [Queue](ordinary-queue-current.json) · [Workflow](governance-workflow.md) · [Registry](governance-registry.json).
+[Receipt](governance/pr218-postmerge-closeout-2026-10-08/receipt.json) · [Production](governance/pr218-postmerge-closeout-2026-10-08/production-verification.json) · [Active task](governance/active-task.json) · [Queue](ordinary-queue-current.json) · [Workflow](governance-workflow.md) · [Registry](governance-registry.json).
 
 [Owner correction](governance/pr207-owner-correction-2026-09-30/receipt.json) · [Closeout](governance/pr207-postmerge-closeout-2026-09-30/receipt.json) · [Ref evidence](governance/pr207-final-ref-verification-2026-09-30/final-verification.json) · [Triage](governance/approved-queue-lightweight-triage-2026-09-30/triage.json).

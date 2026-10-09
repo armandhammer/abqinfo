@@ -70,6 +70,8 @@ if ($LASTEXITCODE -ne 0) { throw "2024 Bikeway edition resolution regression fai
 if ($LASTEXITCODE) { throw "PR217 closeout exact-delta guard failed" }
 & python "$PSScriptRoot/Bikeway2014DraftResolution.py" guard
 if ($LASTEXITCODE) { throw "2014 Bikeway draft exact-population guard failed" }
+& python "$PSScriptRoot/Pr218PostMergeCloseout.py" guard
+if ($LASTEXITCODE) { throw "PR218 closeout exact-delta guard failed" }
 Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }
@@ -338,6 +340,8 @@ if ($LASTEXITCODE) { throw 'PR215 production/Hugo parity failed.' }
 if ($LASTEXITCODE) { throw 'PR216 production/Hugo parity failed.' }
 & python "$PSScriptRoot/Pr217PostMergeCloseout.py" render
 if ($LASTEXITCODE) { throw "PR217 production/Hugo parity failed" }
+& python "$PSScriptRoot/Pr218PostMergeCloseout.py" render
+if ($LASTEXITCODE) { throw "PR218 production/Hugo parity failed" }
 $broken = @()
 & python "$PSScriptRoot/Test-OrdinaryYouthJusticePublication.py" --rendered-root tmp/site-build
 if ($LASTEXITCODE) { throw 'Youth justice family rendered publication check failed.' }
