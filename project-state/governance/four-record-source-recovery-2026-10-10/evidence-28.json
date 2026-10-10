@@ -1,0 +1,9 @@
+{
+  "kind": "validation_attempt_receipt",
+  "result": "failed_before_completion",
+  "command": "pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/project/Invoke-ProjectValidation.ps1",
+  "failure": "CURRENT links required durable receipt.json already authored but not yet Git-tracked when continuity check ran. All preceding guards passed.",
+  "correction": "Logical inventory/assessment checkpoint ef0926f0 now tracks receipt.json, summary and CURRENT together. No policy weakening or historical guard edit.",
+  "preserved_log": "project-state/governance/four-record-source-recovery-2026-10-10/evidence-28.gz",
+  "uncompressed_sha256": "c7b08e205890761da1e20f13fa511754a0efcbd0f734ac982528645f78d8340c"
+}

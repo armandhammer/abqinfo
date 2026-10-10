@@ -1,0 +1,21 @@
+{
+  "kind": "full_normal_validation_result",
+  "recorded_at": "2026-10-10T16:56:56.590709+00:00",
+  "command": "pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/project/Invoke-ProjectValidation.ps1",
+  "exit_code": 0,
+  "result": "passed",
+  "tested_checkpoint": "ef0926f018d5df3e402214466c85cfa19ceb4896",
+  "tested_contract": "project-state/governance/four-record-source-recovery-2026-10-10/contract-v17.json",
+  "full_log": "project-state/governance/four-record-source-recovery-2026-10-10/validation.log",
+  "full_log_sha256": "ce4ce4506bc6de27434b4cfc72fc80211ddc99aa2534fa92795953fa7bd656f7",
+  "checks": [
+    "exact four-record delta and complete governance accounting",
+    "sealed historical lifecycle/evidence",
+    "full inventory, positive scope, actual-file publication quality and deterministic accounting",
+    "queue freshness and zero human review",
+    "crawler/archive/campaign/PR-description regressions",
+    "Hugo build and historical rendered-page regressions",
+    "Git diff whitespace"
+  ],
+  "external_all_site_links_checked": false
+}
