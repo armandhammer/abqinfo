@@ -836,6 +836,18 @@
       "exact_delta_guard": {
         "module": "Progress2004RemoteCheckpoint",
         "function": "guard"
+      },
+      "end_commit": "d63f04918d2437de176a4cbeb30d4a59c4348eb2"
+    },
+    {
+      "id": "four-record-source-recovery-2026-10-10",
+      "baseline_commit": "d63f04918d2437de176a4cbeb30d4a59c4348eb2",
+      "regression_scripts": [
+        "scripts/project/FourRecordSourceRecovery.py"
+      ],
+      "exact_delta_guard": {
+        "module": "FourRecordSourceRecovery",
+        "function": "guard"
       }
     }
   ],

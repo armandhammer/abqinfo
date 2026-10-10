@@ -1,11 +1,9 @@
 # Current project state
 
-Exactly src-352d880cb11386d3 (2004 Albuquerque Progress Report): completed recovery at c7eec9b6 preserved without repeat research. Complete original not recovered; pending-review source hold unchanged. Remaining prerequisite: authoritative complete 2004 edition with date, contents and every page verified, or authenticated complete multipart edition. Existing reports and settled decisions preserved. Zero inventory/queue/R2/visitor-visible delta; no content PR, merge or deployment.
+Focused four-record source recovery in progress. Volcano Park complete1980 original recovered,76 pages visually reviewed and exact City/2015capture bytes matched; governed inventory reconciliation pending. Bike Gap: draft2023 GAATC packet found, full final profiles/study absent. San Antonio: official1987/1988draft references conflict with later adoption claim; original/adoption unproved. Progress2004: two new frontmatter originals, complete edition/manifest unproved. Prior decisions/evidence preserved. No R2 or visible changes.
 
-Full normal validation passed. Background checkpoint pushed and verified on codex/progress-2004-source-recovery-2026-10-10; remote main/planning remain at 349a6ca9. [Verified remote snapshot](governance/progress-2004-remote-checkpoint-2026-10-10/remote-final.json) precedes its separate evidence transport commit.
+Queue unchanged0approved/333pending (321gated/12source-blocked),0actionable/humanreview; remaining884. Validation and authorized background main/planning integration pending. Next: finish conclusive Volcano assessment, refresh accounting, validate and synchronize refs.
 
-Queue: 0 approved /333 pending (321 gated /12 source-structural blocked), 0 actionable /human review; remaining nonterminal884.
+[Research](governance/four-record-source-recovery-2026-10-10/research-journal.json) · [Active task](governance/active-task.json) · [Queue](ordinary-queue-current.json) · [Workflow](governance-workflow.md) · [Registry](governance-registry.json).
 
-[Remote receipt](governance/progress-2004-remote-checkpoint-2026-10-10/receipt.json) · [Research](governance/progress-2004-source-recovery-2026-10-09/summary.md) · [Active task](governance/active-task.json) · [Queue](ordinary-queue-current.json) · [Workflow](governance-workflow.md) · [Registry](governance-registry.json).
-
-[Owner correction](governance/pr207-owner-correction-2026-09-30/receipt.json) · [Closeout](governance/pr207-postmerge-closeout-2026-09-30/receipt.json) · [Ref evidence](governance/pr207-final-ref-verification-2026-09-30/final-verification.json) · [Triage](governance/approved-queue-lightweight-triage-2026-09-30/triage.json).
+[Owner correction](governance/pr207-owner-correction-2026-09-30/receipt.json) Â· [Closeout](governance/pr207-postmerge-closeout-2026-09-30/receipt.json) Â· [Ref evidence](governance/pr207-final-ref-verification-2026-09-30/final-verification.json) Â· [Triage](governance/approved-queue-lightweight-triage-2026-09-30/triage.json).

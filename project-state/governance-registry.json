@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "e0c8041106d817848f1aa634a159b785caefbeeb86d7097e3c97b4ae44ca0404",
+  "audit_sha256": "9a78dc324e37413ce1070cde36cd09814da48b371907c3afa53ebd41bfb31e99",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15259,7 +15259,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "d0b69bc1751434212b1de0628301f2b4f5152eb3a706e1d1508a9b762c0fd34a",
+          "sha256": "a5465e76e4a93421c59259d89cc71a5836975e5a56aa41b2ce1875a1442fd61c",
           "binding_pointers": [
             "/implementation"
           ]
@@ -34427,7 +34427,7 @@
       "authority": "Explicit current owner continuation",
       "decision_date": "2026-10-09",
       "effective_date": "2026-10-09",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/progress-2004-source-recovery-2026-10-09/authority.json",
@@ -34454,7 +34454,9 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "background checkpoint push authorized; source hold unchanged"
+      "implementation_status": "background checkpoint push authorized; source hold unchanged",
+      "superseded_by": "owner-progress-2004-source-recovery-2026-10-09-remote-checkpoint-authorized-four-record-continuation",
+      "supersession_evidence": "project-state/governance/four-record-source-recovery-2026-10-10/authority.json"
     },
     {
       "governance_id": "owner-progress-2004-remote-checkpoint-2026-10-10",
@@ -34471,7 +34473,7 @@
       "authority": "Explicit current owner continuation",
       "decision_date": "2026-10-10",
       "effective_date": "2026-10-10",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/progress-2004-remote-checkpoint-2026-10-10/authority.json",
@@ -34499,7 +34501,161 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
+      "implementation_status": "bounded remote checkpoint",
+      "superseded_by": "owner-progress-2004-remote-checkpoint-2026-10-10-four-record-continuation",
+      "supersession_evidence": "project-state/governance/four-record-source-recovery-2026-10-10/authority.json"
+    },
+    {
+      "governance_id": "owner-progress-2004-remote-checkpoint-2026-10-10-four-record-continuation",
+      "category": "active owner decision",
+      "title": "2004 recovery remote evidence checkpoint",
+      "scope": {
+        "candidate_ids": [
+          "src-352d880cb11386d3"
+        ],
+        "task_ids": [
+          "progress-2004-remote-checkpoint-2026-10-10"
+        ]
+      },
+      "authority": "Explicit current owner four-record continuation",
+      "decision_date": "2026-10-10",
+      "effective_date": "2026-10-10",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/progress-2004-remote-checkpoint-2026-10-10/authority.json",
+          "sha256": "ccf4a87a3485b52b8c7807483a1e04bdff9f91a7281383e09ac8fbe60221f118",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/progress-2004-remote-checkpoint-2026-10-10/supersession.json",
+          "sha256": "36e893efe1e5c28bf9c89c729c7ea6a03868fa430f0f65c957c34459be06ccbb",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/four-record-source-recovery-2026-10-10/authority.json",
+          "sha256": "843a7ceec157645bd46acac36767e60c51eba8a431580fc5969ff83f3a844b95",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Current 2026-10-10 owner instruction: continue exactly src-352d880cb11386d3, first inspect the local checkout and compare current remote main, preserve existing research and implementation, never use the obsolete August 30 codex/albuquerque-progress-report-history branch as baseline, preserve progressed research in durable task records, complete possible work and validation, and push completed background work or a resumable checkpoint to the remote repository. Completed research at c7eec9b6abd63f530750f40b5922dc0e839d2713 is reused without repeating the investigation or reopening settled dispositions. This phase authorizes a normal no-force push of this exact background evidence and checkpoint to codex/progress-2004-source-recovery-2026-10-10 only. Remote main/planning-snapshot remain unchanged. No visitor-visible change or merge, R2 action, unrelated population, new disposition or custodian message; any publication proposal requires a reviewed content PR. Explicit current owner exception for task four-record-source-recovery-2026-10-10 only: the four-record population and permitted background-only main/planning integration replace this earlier one-record/branch-only phase boundary. New recovery approaches are authorized; prior inconclusive research and settled findings remain preserved. Conclusive new evidence may support governed inventory-only reconciliation for the four frozen IDs. No R2, visible changes, publication PR, custodian communication or force push is authorized.",
+      "required_actions": [
+        "Current 2026-10-10 owner instruction: continue exactly src-352d880cb11386d3, first inspect the local checkout and compare current remote main, preserve existing research and implementation, never use the obsolete August 30 codex/albuquerque-progress-report-history branch as baseline, preserve progressed research in durable task records, complete possible work and validation, and push completed background work or a resumable checkpoint to the remote repository. Completed research at c7eec9b6abd63f530750f40b5922dc0e839d2713 is reused without repeating the investigation or reopening settled dispositions. This phase authorizes a normal no-force push of this exact background evidence and checkpoint to codex/progress-2004-source-recovery-2026-10-10 only. Remote main/planning-snapshot remain unchanged. No visitor-visible change or merge, R2 action, unrelated population, new disposition or custodian message; any publication proposal requires a reviewed content PR. Explicit current owner exception for task four-record-source-recovery-2026-10-10 only: the four-record population and permitted background-only main/planning integration replace this earlier one-record/branch-only phase boundary. New recovery approaches are authorized; prior inconclusive research and settled findings remain preserved. Conclusive new evidence may support governed inventory-only reconciliation for the four frozen IDs. No R2, visible changes, publication PR, custodian communication or force push is authorized."
+      ],
+      "prohibited_actions": [
+        "No visitor-visible or R2 mutation",
+        "No force push or unrelated remote ref change"
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
       "implementation_status": "bounded remote checkpoint"
+    },
+    {
+      "governance_id": "owner-progress-2004-source-recovery-2026-10-09-remote-checkpoint-authorized-four-record-continuation",
+      "category": "active owner decision",
+      "title": "Exact 2004 Progress Report source recovery",
+      "scope": {
+        "candidate_ids": [
+          "src-352d880cb11386d3"
+        ],
+        "task_ids": [
+          "progress-2004-source-recovery-2026-10-09"
+        ]
+      },
+      "authority": "Explicit current owner four-record continuation",
+      "decision_date": "2026-10-09",
+      "effective_date": "2026-10-09",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/progress-2004-source-recovery-2026-10-09/authority.json",
+          "sha256": "49f0ab58e0ba094e8812fff7bf210e382eaad0321ec61f08c7a7cf32de86c719",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/progress-2004-remote-checkpoint-2026-10-10/authority.json",
+          "sha256": "ccf4a87a3485b52b8c7807483a1e04bdff9f91a7281383e09ac8fbe60221f118",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/four-record-source-recovery-2026-10-10/authority.json",
+          "sha256": "843a7ceec157645bd46acac36767e60c51eba8a431580fc5969ff83f3a844b95",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Recover exactly src-352d880cb11386d3, the 2004 Albuquerque Progress Report, after examining prior research and complete active governance. Investigate authoritative City sources, historical URLs, Internet Archive captures, alternate government repositories and other verifiable paths. Preserve settled dispositions, existing reports and governance. A complete original requires exact identity/date/completeness/authenticity/provenance and scope/quality/series review before any archival or owner-review publication PR; do not merge. If complete original is not recovered, preserve the existing hold and record the specific remaining evidence prerequisite, without substitutes. Run full validation; report outcome, publication/archive status, queues, R2 delta and final refs. This initial contract covers evidence recovery and background governance only; any successful recovery requiring inventory/archive/content operations requires a replacement frozen contract and the existing authorization gates. No external storage mutation is authorized. The explicit 2026-10-10 owner continuation replaces only the former local-only Git boundary: the completed exact background recovery evidence and its durability checkpoint may be pushed without force to codex/progress-2004-source-recovery-2026-10-10. No visitor-visible merge or unrelated external effect. Explicit current owner exception for task four-record-source-recovery-2026-10-10 only: the four-record population and permitted background-only main/planning integration replace this earlier one-record/branch-only phase boundary. New recovery approaches are authorized; prior inconclusive research and settled findings remain preserved. Conclusive new evidence may support governed inventory-only reconciliation for the four frozen IDs. No R2, visible changes, publication PR, custodian communication or force push is authorized.",
+      "required_actions": [
+        "Recover exactly src-352d880cb11386d3, the 2004 Albuquerque Progress Report, after examining prior research and complete active governance. Investigate authoritative City sources, historical URLs, Internet Archive captures, alternate government repositories and other verifiable paths. Preserve settled dispositions, existing reports and governance. A complete original requires exact identity/date/completeness/authenticity/provenance and scope/quality/series review before any archival or owner-review publication PR; do not merge. If complete original is not recovered, preserve the existing hold and record the specific remaining evidence prerequisite, without substitutes. Run full validation; report outcome, publication/archive status, queues, R2 delta and final refs. This initial contract covers evidence recovery and background governance only; any successful recovery requiring inventory/archive/content operations requires a replacement frozen contract and the existing authorization gates. No external storage mutation is authorized. The explicit 2026-10-10 owner continuation replaces only the former local-only Git boundary: the completed exact background recovery evidence and its durability checkpoint may be pushed without force to codex/progress-2004-source-recovery-2026-10-10. No visitor-visible merge or unrelated external effect. Explicit current owner exception for task four-record-source-recovery-2026-10-10 only: the four-record population and permitted background-only main/planning integration replace this earlier one-record/branch-only phase boundary. New recovery approaches are authorized; prior inconclusive research and settled findings remain preserved. Conclusive new evidence may support governed inventory-only reconciliation for the four frozen IDs. No R2, visible changes, publication PR, custodian communication or force push is authorized."
+      ],
+      "prohibited_actions": [
+        "No incomplete, unrelated or unauthenticated substitute; no merge."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "background checkpoint push authorized; source hold unchanged"
+    },
+    {
+      "governance_id": "owner-four-record-source-recovery-2026-10-10",
+      "category": "active owner decision",
+      "title": "Exact four-record source recovery and background integration",
+      "scope": {
+        "candidate_ids": [
+          "lin-2f6fbe4ffb0b6564",
+          "lin-7bdbcdc09efe2035",
+          "src-158f843cc102a40f",
+          "src-352d880cb11386d3"
+        ],
+        "task_ids": [
+          "four-record-source-recovery-2026-10-10"
+        ]
+      },
+      "authority": "Explicit current owner instruction",
+      "decision_date": "2026-10-10",
+      "effective_date": "2026-10-10",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/four-record-source-recovery-2026-10-10/authority.json",
+          "sha256": "843a7ceec157645bd46acac36767e60c51eba8a431580fc5969ff83f3a844b95",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/four-record-source-recovery-2026-10-10/supersession.json",
+          "sha256": "ad9bddf84fe7c98b295038614f82af1dd4d02e96349508d7f819b6d96d7c15c1",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Current owner instruction: continue ABQInfo from the authoritative remote repository and perform focused governance-compliant source recovery for exactly lin-2f6fbe4ffb0b6564 (Bike Gap Closure Program), lin-7bdbcdc09efe2035 (San Antonio Arroyo Corridor Plan), src-158f843cc102a40f (Master Plan for Volcano Park), and src-352d880cb11386d3 (2004 Albuquerque Progress Report). Read CURRENT, AGENTS, current queue, research/recovery receipts and complete applicable governance; freeze population and immutable contract before review. Investigate documented missing-original/provenance prerequisites through authoritative sources, historical captures, official indexes and repository evidence. Distinguish exact originals from related, incomplete and incorrect links; no repeat inconclusive research without a new approach. Preserve prior findings and settled decisions. Complete governed source/family/scope/quality assessment only where sufficient new evidence is recovered; inventory reconciliation only when evidence and governance authorize. Otherwise record checks, unproved facts and best next recovery avenue. No R2 mutation, visitor-visible change or publication PR. Persist checkpoints, run full normal validation, complete permitted background-only integration and synchronize main/chatgpt/planning-snapshot according to repository policy; update CURRENT with queue and next productive work. No custodian messages, force push, unrelated population or implied publication authority.",
+      "required_actions": [
+        "Current owner instruction: continue ABQInfo from the authoritative remote repository and perform focused governance-compliant source recovery for exactly lin-2f6fbe4ffb0b6564 (Bike Gap Closure Program), lin-7bdbcdc09efe2035 (San Antonio Arroyo Corridor Plan), src-158f843cc102a40f (Master Plan for Volcano Park), and src-352d880cb11386d3 (2004 Albuquerque Progress Report). Read CURRENT, AGENTS, current queue, research/recovery receipts and complete applicable governance; freeze population and immutable contract before review. Investigate documented missing-original/provenance prerequisites through authoritative sources, historical captures, official indexes and repository evidence. Distinguish exact originals from related, incomplete and incorrect links; no repeat inconclusive research without a new approach. Preserve prior findings and settled decisions. Complete governed source/family/scope/quality assessment only where sufficient new evidence is recovered; inventory reconciliation only when evidence and governance authorize. Otherwise record checks, unproved facts and best next recovery avenue. No R2 mutation, visitor-visible change or publication PR. Persist checkpoints, run full normal validation, complete permitted background-only integration and synchronize main/chatgpt/planning-snapshot according to repository policy; update CURRENT with queue and next productive work. No custodian messages, force push, unrelated population or implied publication authority."
+      ],
+      "prohibited_actions": [
+        "No R2 mutation",
+        "No visitor-visible change or publication PR",
+        "No custodian message or force push"
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "focused source recovery"
     }
   ]
 }
