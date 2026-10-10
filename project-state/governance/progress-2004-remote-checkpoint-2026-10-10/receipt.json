@@ -1,6 +1,6 @@
 {
   "task_id": "progress-2004-remote-checkpoint-2026-10-10",
-  "state": "validated_background_checkpoint_ready_for_push",
+  "state": "completed_background_checkpoint_pushed_and_verified",
   "recovery_checkpoint": "c7eec9b6abd63f530750f40b5922dc0e839d2713",
   "recovery_receipt": "project-state/governance/progress-2004-source-recovery-2026-10-09/receipt.json",
   "recovery_outcome": "complete_original_not_recovered",
@@ -351,5 +351,9 @@
   },
   "validation_log": "project-state/governance/progress-2004-remote-checkpoint-2026-10-10/validation.log",
   "validation_contract": "project-state/governance/progress-2004-remote-checkpoint-2026-10-10/contract-v4.json",
-  "validation_scope": "Complete normal project suite: governance, exact delta, inventory/queues/checkpoint, historical lifecycle/evidence, quality/source/archive/crawler regressions, Hugo and rendered checks. Optional full-site external HTTP sweep not invoked."
+  "validation_scope": "Complete normal project suite: governance, exact delta, inventory/queues/checkpoint, historical lifecycle/evidence, quality/source/archive/crawler regressions, Hugo and rendered checks. Optional full-site external HTTP sweep not invoked.",
+  "remote_checkpoint_commit": "a097642d3bb652d12fc21e500e2635c6306d3325",
+  "remote_verification": "project-state/governance/progress-2004-remote-checkpoint-2026-10-10/remote-final.json",
+  "remote_push": "Normal branch push completed and independently verified; containing evidence transport commit preserves the verified snapshot.",
+  "remote_planning_unchanged": "349a6ca93a5df42fa8a332deb16f93ffb58d5580"
 }
