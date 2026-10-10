@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "757284c941f5e5bc9a69710d8347fa3a2221f742e78be427df1faed5c7d0040f",
+  "audit_sha256": "4cdd0929127143695fb060fdca14cdfbdc5b876521015391845de576504069c9",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15259,7 +15259,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "6283a5949e297148b8a3cf4a4fd910696794724b59a79733663e1a27c61df0b9",
+          "sha256": "d0b69bc1751434212b1de0628301f2b4f5152eb3a706e1d1508a9b762c0fd34a",
           "binding_pointers": [
             "/implementation"
           ]
@@ -34388,7 +34388,7 @@
       "authority": "Explicit current owner instruction",
       "decision_date": "2026-10-09",
       "effective_date": "2026-10-09",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/progress-2004-source-recovery-2026-10-09/authority.json",
@@ -34408,7 +34408,98 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "source recovery"
+      "implementation_status": "source recovery",
+      "superseded_by": "owner-progress-2004-source-recovery-2026-10-09-remote-checkpoint-authorized",
+      "supersession_evidence": "project-state/governance/progress-2004-remote-checkpoint-2026-10-10/authority.json"
+    },
+    {
+      "governance_id": "owner-progress-2004-source-recovery-2026-10-09-remote-checkpoint-authorized",
+      "category": "active owner decision",
+      "title": "Exact 2004 Progress Report source recovery",
+      "scope": {
+        "candidate_ids": [
+          "src-352d880cb11386d3"
+        ],
+        "task_ids": [
+          "progress-2004-source-recovery-2026-10-09"
+        ]
+      },
+      "authority": "Explicit current owner continuation",
+      "decision_date": "2026-10-09",
+      "effective_date": "2026-10-09",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/progress-2004-source-recovery-2026-10-09/authority.json",
+          "sha256": "49f0ab58e0ba094e8812fff7bf210e382eaad0321ec61f08c7a7cf32de86c719",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/progress-2004-remote-checkpoint-2026-10-10/authority.json",
+          "sha256": "ccf4a87a3485b52b8c7807483a1e04bdff9f91a7281383e09ac8fbe60221f118",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Recover exactly src-352d880cb11386d3, the 2004 Albuquerque Progress Report, after examining prior research and complete active governance. Investigate authoritative City sources, historical URLs, Internet Archive captures, alternate government repositories and other verifiable paths. Preserve settled dispositions, existing reports and governance. A complete original requires exact identity/date/completeness/authenticity/provenance and scope/quality/series review before any archival or owner-review publication PR; do not merge. If complete original is not recovered, preserve the existing hold and record the specific remaining evidence prerequisite, without substitutes. Run full validation; report outcome, publication/archive status, queues, R2 delta and final refs. This initial contract covers evidence recovery and background governance only; any successful recovery requiring inventory/archive/content operations requires a replacement frozen contract and the existing authorization gates. No external storage mutation is authorized. The explicit 2026-10-10 owner continuation replaces only the former local-only Git boundary: the completed exact background recovery evidence and its durability checkpoint may be pushed without force to codex/progress-2004-source-recovery-2026-10-10. No visitor-visible merge or unrelated external effect.",
+      "required_actions": [
+        "Recover exactly src-352d880cb11386d3, the 2004 Albuquerque Progress Report, after examining prior research and complete active governance. Investigate authoritative City sources, historical URLs, Internet Archive captures, alternate government repositories and other verifiable paths. Preserve settled dispositions, existing reports and governance. A complete original requires exact identity/date/completeness/authenticity/provenance and scope/quality/series review before any archival or owner-review publication PR; do not merge. If complete original is not recovered, preserve the existing hold and record the specific remaining evidence prerequisite, without substitutes. Run full validation; report outcome, publication/archive status, queues, R2 delta and final refs. This initial contract covers evidence recovery and background governance only; any successful recovery requiring inventory/archive/content operations requires a replacement frozen contract and the existing authorization gates. No external storage mutation is authorized. The explicit 2026-10-10 owner continuation replaces only the former local-only Git boundary: the completed exact background recovery evidence and its durability checkpoint may be pushed without force to codex/progress-2004-source-recovery-2026-10-10. No visitor-visible merge or unrelated external effect."
+      ],
+      "prohibited_actions": [
+        "No incomplete, unrelated or unauthenticated substitute; no merge."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "background checkpoint push authorized; source hold unchanged"
+    },
+    {
+      "governance_id": "owner-progress-2004-remote-checkpoint-2026-10-10",
+      "category": "active owner decision",
+      "title": "2004 recovery remote evidence checkpoint",
+      "scope": {
+        "candidate_ids": [
+          "src-352d880cb11386d3"
+        ],
+        "task_ids": [
+          "progress-2004-remote-checkpoint-2026-10-10"
+        ]
+      },
+      "authority": "Explicit current owner continuation",
+      "decision_date": "2026-10-10",
+      "effective_date": "2026-10-10",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/progress-2004-remote-checkpoint-2026-10-10/authority.json",
+          "sha256": "ccf4a87a3485b52b8c7807483a1e04bdff9f91a7281383e09ac8fbe60221f118",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/progress-2004-remote-checkpoint-2026-10-10/supersession.json",
+          "sha256": "36e893efe1e5c28bf9c89c729c7ea6a03868fa430f0f65c957c34459be06ccbb",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Current 2026-10-10 owner instruction: continue exactly src-352d880cb11386d3, first inspect the local checkout and compare current remote main, preserve existing research and implementation, never use the obsolete August 30 codex/albuquerque-progress-report-history branch as baseline, preserve progressed research in durable task records, complete possible work and validation, and push completed background work or a resumable checkpoint to the remote repository. Completed research at c7eec9b6abd63f530750f40b5922dc0e839d2713 is reused without repeating the investigation or reopening settled dispositions. This phase authorizes a normal no-force push of this exact background evidence and checkpoint to codex/progress-2004-source-recovery-2026-10-10 only. Remote main/planning-snapshot remain unchanged. No visitor-visible change or merge, R2 action, unrelated population, new disposition or custodian message; any publication proposal requires a reviewed content PR.",
+      "required_actions": [
+        "Current 2026-10-10 owner instruction: continue exactly src-352d880cb11386d3, first inspect the local checkout and compare current remote main, preserve existing research and implementation, never use the obsolete August 30 codex/albuquerque-progress-report-history branch as baseline, preserve progressed research in durable task records, complete possible work and validation, and push completed background work or a resumable checkpoint to the remote repository. Completed research at c7eec9b6abd63f530750f40b5922dc0e839d2713 is reused without repeating the investigation or reopening settled dispositions. This phase authorizes a normal no-force push of this exact background evidence and checkpoint to codex/progress-2004-source-recovery-2026-10-10 only. Remote main/planning-snapshot remain unchanged. No visitor-visible change or merge, R2 action, unrelated population, new disposition or custodian message; any publication proposal requires a reviewed content PR."
+      ],
+      "prohibited_actions": [
+        "No visitor-visible or R2 mutation",
+        "No force push or unrelated remote ref change"
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded remote checkpoint"
     }
   ]
 }
