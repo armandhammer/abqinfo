@@ -1,0 +1,23 @@
+{
+  "artifact_type": "authorized_background_integration_intent",
+  "recorded_at": "2026-10-10T16:45:22.507538+00:00",
+  "authority": "project-state/governance/four-record-source-recovery-2026-10-10/authority.json",
+  "contract": "project-state/governance/four-record-source-recovery-2026-10-10/contract-v15.json",
+  "state": "prepared_awaiting_full_validation",
+  "remote": "origin",
+  "expected_remote_refs": {
+    "refs/heads/main": "349a6ca93a5df42fa8a332deb16f93ffb58d5580",
+    "refs/heads/chatgpt/planning-snapshot": "349a6ca93a5df42fa8a332deb16f93ffb58d5580",
+    "refs/heads/codex/progress-2004-source-recovery-2026-10-10": "d63f04918d2437de176a4cbeb30d4a59c4348eb2"
+  },
+  "task_branch": "codex/four-record-source-recovery-2026-10-10",
+  "current_local_refs": {
+    "main": "c7eec9b6abd63f530750f40b5922dc0e839d2713",
+    "chatgpt/planning-snapshot": "349a6ca93a5df42fa8a332deb16f93ffb58d5580"
+  },
+  "integration_method": "After full validation and fresh remote comparison, atomic normal no-force fast-forward push of task HEAD to main, chatgpt/planning-snapshot and exact task branch; advance unchecked-out local main/planning refs by compare-and-swap after ancestry verification. Preserve prior recovery branch and all checkpoint commits.",
+  "permitted_content": "Only prior and current completed background source evidence, task governance, one inventory approval, deterministic accounting and resume pointer. No visitor-visible/R2 mutations.",
+  "validation_log": "project-state/governance/four-record-source-recovery-2026-10-10/validation.log",
+  "remote_snapshot": "project-state/governance/four-record-source-recovery-2026-10-10/remote-final.json",
+  "separate_evidence_transport": "A subsequent background evidence commit records the verified integrated snapshot; its transport does not rewrite the snapshot commit identity."
+}
