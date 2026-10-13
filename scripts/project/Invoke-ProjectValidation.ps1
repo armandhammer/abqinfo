@@ -78,6 +78,8 @@ if ($LASTEXITCODE) { throw "2004 Progress Report source recovery boundary failed
 if ($LASTEXITCODE) { throw "2004 recovery remote checkpoint boundary failed" }
 & python "$PSScriptRoot/FourRecordSourceRecovery.py" guard
 if ($LASTEXITCODE) { throw "Four-record recovery boundary failed" }
+& python "$PSScriptRoot/LeadCoalHistoricalPublication.py" guard
+if ($LASTEXITCODE) { throw 'Lead/Coal publication guard failed.' }
 Set-StrictMode -Version Latest
 & python "$PSScriptRoot/Test-Pr208CountyScopeCorrection.py"
 if ($LASTEXITCODE) { throw 'PR208 County scope correction validation failed.' }

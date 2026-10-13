@@ -50,6 +50,30 @@ def refresh():
 def event(summary,evidence,op='document_review',ids=IDS):
     p=G.load(P+'implementation.json');p['events'].append(dict(operation=op,candidate_ids=ids,action='implements',use_contract_record_rules=True,summary=summary,evidence=evidence));save(P+'implementation.json',p)
 def guard():
+    from WorkflowStageLifecycle import StageSnapshot
+    stage=StageSnapshot(TASK)
+    if stage.end:
+        # Validate the completed review interval rather than later authorized publication.
+        s=stage.load_json(P+'starting-state.json')
+        baseline=json.loads(G.git('show',s['baseline_commit']+':project-state/master-inventory.json'))
+        reviewed=stage.load_json('project-state/master-inventory.json')
+        old={r['id']:r for r in baseline['candidates']};after={r['id']:r for r in reviewed['candidates']}
+        assert set(after)-set(old)==set(IDS) and all(after[i]==r for i,r in old.items())
+        assert not G.git('diff',s['baseline_commit'],stage.end,'--name-only','--','content','layouts','static','assets','hugo.toml')
+        for path,h in s['protected_sha256'].items():
+            if path not in ['project-state/checkpoint.json','project-state/ordinary-queue-current.json']:
+                assert hashlib.sha256(stage.read_bytes(path).replace(b'\r\n',b'\n')).hexdigest()==h
+        from PublicationQuality import require_publication_quality
+        for j,i in enumerate(IDS,1):
+            r=after[i];assert r['status']=='approved for addition' and r['scope_assessment']['final_scope_decision']=='passes_both_gates'
+            require_publication_quality(r)
+            original=G.load(P+'originals.json')['originals'][j-1]
+            raw=gzip.decompress((G.ROOT/(P+f'candidate-{j}.pdf.gz')).read_bytes())
+            assert len(raw)==original['size_bytes'] and hashlib.sha256(raw).hexdigest()==original['sha256']
+            assert not any(r.get(x) for x in ['r2_url','r2_key','implementation_location','implementation_locations'])
+        assert set(G.git('diff',s['baseline_commit'],stage.end,'--name-only').splitlines())<=set(stage.load_json(P+'population-v4.json')['artifact_paths'])
+        print('PASS sealed completed Lead/Coal review interval; exact two approvals, originals and family preserved')
+        return
     s=G.load(P+'starting-state.json');before=G.load(P+'family-before.json')['records'];inv=G.load('project-state/master-inventory.json');after={r['id']:r for r in inv['candidates']}
     assert all(after[r['id']]==r for r in before),'Existing family changed'
     assert not G.git('diff',s['baseline_commit'],'--name-only','--','content','layouts','static','assets','hugo.toml'),'Visible change'
