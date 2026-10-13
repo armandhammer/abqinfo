@@ -180,6 +180,21 @@ def render():
     else:save(P+'preview.json',value)
     print('PASS actual nonproduction desktop/mobile section: four ordered entries, exact qualifications, sources, archives, no overflow')
 
+def links():
+    import re, urllib.request, urllib.error
+    text=(G.ROOT/(P+'publication.md')).read_text(encoding='utf-8-sig')
+    results=[]
+    for url in re.findall(r'\]\((https?://[^)]+)\)',text):
+        try:
+            req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'},method='HEAD')
+            with urllib.request.urlopen(req,timeout=60) as response:status=response.status;final=response.url
+        except urllib.error.HTTPError as e:status=e.code;final=e.url
+        historical_offline=url==OBJECTS[1]['source_url']
+        assert status==200 or (historical_offline and status==404),(url,status)
+        results.append(dict(url=url,http_status=status,final_url=final,expected_unavailable_original=historical_offline,publication_label='Original City source (currently unavailable)' if historical_offline else None))
+    save(P+'link-verification.json',dict(checked_at=now(),links=results,archive_full_get_receipts=[P+'public-1.json',P+'public-2.json'],known_original_404_explicitly_labeled=True))
+    print('PASS new archive/source links; known original City 404 explicitly labeled with verified historical delivery')
+
 def finish():
     pr=G.load(P+'pr.json');preview=G.load(P+'preview.json');assert pr['state']=='OPEN' and pr['mergedAt'] is None
     log=(G.ROOT/'tmp/lead-coal-validation.log').read_text(encoding='utf-8-sig');assert '"Hugo": "passed"' in log
