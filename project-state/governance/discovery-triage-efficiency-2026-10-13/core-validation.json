@@ -1,0 +1,27 @@
+{
+  "recorded_at": "2026-10-13T13:40:11.679937+00:00",
+  "status": "full_validation_blocked",
+  "log": "project-state/governance/discovery-triage-efficiency-2026-10-13/core-validation.log",
+  "attempts": [
+    {
+      "exit_code": 1,
+      "failure": "CURRENT length 3394 exceeded 1800; corrected to a 1399-character linked pointer."
+    },
+    {
+      "exit_code": 1,
+      "failure": "Test-TaskGovernance.py line 129: PermissionError writing tmp/tmp3h8n513k/audit.json; cleanup also failed with WinError 5.",
+      "classification": "temporary-directory execution environment failure",
+      "action": "Stopped; no permission changes, test rewrite or further suite retry."
+    }
+  ],
+  "focused_checks": {
+    "complete_registry_resolution_and_active_exact_delta": "passed",
+    "current_resume_pointer": "passed after correction",
+    "git_diff_check": "passed",
+    "pre_existing_registry_entries_unchanged": true,
+    "inventory_site_scripts_campaign_discovery_and_owner_supplied_procedure_unchanged": true
+  },
+  "remaining_checks": "Full governance negative regression and later full-suite scope/quality/family/archive/Hugo checks did not complete.",
+  "pilot": "Blocked by zero eligible population; no candidate review or false-negative audit.",
+  "background_integration": "Not performed; full validation and pilot incomplete."
+}

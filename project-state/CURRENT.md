@@ -1,23 +1,9 @@
 # Current project state
 
-Discovery triage efficiency core amendment is implemented as a [small procedure supplement](ordinary-discovery-triage.md), with one additive registered owner rule and zero new helpers, scripts or queues. Core GitHub checkpoint precedes pilot availability checking and full validation. All existing decisions and safeguards remain controlling; owner-supplied fast path, inventory, R2 and visible content are unchanged.
+Discovery triage core is checkpointed on GitHub at `c0503fa5` on `chatgpt/discovery-triage-efficiency-2026-10-13`: one [procedure supplement](ordinary-discovery-triage.md), one additive rule, no new helper/script/queue or supersession. All settled decisions and publication safeguards remain controlling.
 
-[Core receipt](governance/discovery-triage-efficiency-2026-10-13/core-receipt.json) · [Active contract](governance/discovery-triage-efficiency-2026-10-13/core-contract.json). Prior blocker checkpoint `f1a53bcc` is preserved; its evidence shows 332 pending = 321 gated + 11 source/structurally blocked + zero actionable ordinary candidates. No candidate review, hold release or new crawl has occurred. Pilot and integration remain incomplete.
+Pilot blocked: 332 pending = 321 gated + 11 source/structurally blocked + zero eligible candidates. No pilot or usage savings claim. Full validation stopped at governance-test temporary-directory access (WinError 5); CURRENT correction passed. Main/planning integration is blocked. R2 operations, added bytes, visible and inventory changes: zero. Next prerequisite is an available undecided non-held inventory population or separately scoped discovery.
 
-## Prior checkpoint
+[Core receipt](governance/discovery-triage-efficiency-2026-10-13/core-receipt.json) Â· [Availability](governance/discovery-triage-efficiency-2026-10-13/pilot-availability.json) Â· [Active task](governance/active-task.json) Â· [Queue](ordinary-queue-current.json) Â· [Workflow](governance-workflow.md) Â· [Registry](governance-registry.json).
 
-Discovery triage efficiency task stopped at the population prerequisite, before workflow implementation or pilot. The current authoritative queue matches all 332 live pending IDs: 321 gated, 11 source/structurally blocked, zero ungated/actionable candidates. No held family was reopened and no new crawl or source recovery was launched.
-
-The requested branch is `chatgpt/discovery-triage-efficiency-2026-10-13`. The immutable audit contract resolved 23 applicable rules with no conflicts or audit gates. Local blocker evidence and validation are recorded in the [receipt](governance/discovery-triage-efficiency-2026-10-13/receipt.json) and [validation](governance/discovery-triage-efficiency-2026-10-13/validation.json). Workflow amendment, pilot, full policy/tool validation and remote integration remain unstarted. Next work needs an available undecided, non-held discovery population or a separately scoped discovery stage. R2 operations, added archive bytes, visible changes and inventory dispositions are all zero.
-
-## Prior completed state
-
-Owner-supplied document fast path implemented: bounded 1–3-document intake, focused PDF review, stable contracts and narrow production closeout. The completed Lead/Coal publication guard now checks its historical interval; future tasks reuse the existing exact governance guard.
-
-PR #219 remains owner-merged and production-verified. Its original assessments, archives and visible entries are preserved. This tooling task adds zero archive bytes and makes zero visitor-visible or inventory changes. Volcano approval and source holds remain unchanged.
-
-Full local validation passed. Background integration completed and remote main/planning refs were verified; see the task receipt for exact results. The prior PR219 checkpoint is preserved as historical state; this pointer and the active task receipt track the current repair.
-
-[Procedure](owner-supplied-document-workflow.md) · [Receipt](governance/owner-supplied-document-fastpath-2026-10-12/receipt.json) · [Active task](governance/active-task.json) · [Queue](ordinary-queue-current.json) · [Workflow](governance-workflow.md) · [Registry](governance-registry.json).
-
-[Owner correction](governance/pr207-owner-correction-2026-09-30/receipt.json) · [Closeout](governance/pr207-postmerge-closeout-2026-09-30/receipt.json) · [Refs](governance/pr207-final-ref-verification-2026-09-30/final-verification.json) · [Triage](governance/approved-queue-lightweight-triage-2026-09-30/triage.json).
+[Owner correction](governance/pr207-owner-correction-2026-09-30/receipt.json) Â· [Closeout](governance/pr207-postmerge-closeout-2026-09-30/receipt.json) Â· [Refs](governance/pr207-final-ref-verification-2026-09-30/final-verification.json) Â· [Triage](governance/approved-queue-lightweight-triage-2026-09-30/triage.json).
