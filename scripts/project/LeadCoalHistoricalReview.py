@@ -63,6 +63,7 @@ def guard():
     baseline=json.loads(G.git('show',s['baseline_commit']+':project-state/master-inventory.json'));old={r['id']:r for r in baseline['candidates']}
     assert set(after)-set(old)<=set(IDS) and set(old)<=set(after)
     assert all(after[i]==r for i,r in old.items()),'Unrelated or existing inventory changed'
+    assert [r['id'] for r in inv['candidates'] if r['id'] in old]==[r['id'] for r in baseline['candidates']],'Existing inventory order changed'
     if set(IDS)<=set(after):
         from PublicationQuality import require_publication_quality
         for j,i in enumerate(IDS,1):

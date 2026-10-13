@@ -52,12 +52,23 @@
       "use_contract_record_rules": true,
       "summary": "Added only the exact two positively assessed inventory-only approvals. Existing nine comparator records preserved; no archival/publication transition.",
       "evidence": "project-state/governance/lead-coal-historical-review-2026-10-12/findings.json"
+    },
+    {
+      "operation": "inventory_disposition",
+      "candidate_ids": [
+        "src-b74f7eef4f5a474c",
+        "src-4fdf8aa4968a5eca"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "Preserved original order of all existing inventory records; refreshed derived queue hash only, with unchanged unresolved owner-review membership.",
+      "evidence": "project-state/governance/lead-coal-historical-review-2026-10-12/queue.json"
     }
   ],
   "status": "in_progress",
-  "contract": "project-state/governance/lead-coal-historical-review-2026-10-12/contract-v6.json",
-  "contract_sha256": "c5ee28ec4b3f00773ce0b6b3766eedd183a8dcb427a24673c7933ae35a4391c1",
-  "population_sha256": "7e97cafcf3460310a1614d796721865f5675f0169cb932dc57f4998edcb9b7b4",
+  "contract": "project-state/governance/lead-coal-historical-review-2026-10-12/contract-v9.json",
+  "contract_sha256": "e4d27197db422118f9660def2309139ffe9da9ffb2a63a77a15dc423c84e0aa4",
+  "population_sha256": "c51fcf8580f6e4386ac502da13196b7291883090ea8be4d9cbf275931f4e27ec",
   "respected_governance_ids": [
     "assessment-lead-coal-historical-review-2026-10-12",
     "authorization-profile-ordinary-review-large",
