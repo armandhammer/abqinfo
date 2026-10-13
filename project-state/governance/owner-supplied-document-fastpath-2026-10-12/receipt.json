@@ -1,5 +1,5 @@
 {
-  "state": "implementation_complete_validation_in_progress",
+  "state": "implementation_validated_late_checkpoint_edit_reverted",
   "baseline_commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
   "procedure": "project-state/owner-supplied-document-workflow.md",
   "diagnosis": "project-state/governance/owner-supplied-document-fastpath-2026-10-12/diagnosis.md",
@@ -8,15 +8,48 @@
   "r2_added_bytes": 0,
   "visitor_visible_changes": 0,
   "inventory_changes": 0,
-  "contract_count": 3,
+  "contract_count": 4,
   "new_task_specific_modules": 0,
   "new_runner_registrations": 0,
   "contract_replacement_reasons": [
     "Owner-directed policy/tool changes registered after initial resolution.",
-    "Existing active-rule regression fixture corrected after scoped supersession; exact output paths expanded."
+    "Existing active-rule regression fixture corrected after scoped supersession; exact output paths expanded.",
+    "Initial population omitted stale checkpoint resume text; added only its bounded correction and exact contract/population paths."
   ],
   "dry_run": "project-state/governance/owner-supplied-document-fastpath-2026-10-12/dry-run.json",
-  "focused_governance_checks": "passed",
-  "validation": "full_suite_pending",
-  "integration": "pending"
+  "focused_governance_checks": 45,
+  "validation": "passed_full_local_suite",
+  "integration": "pending",
+  "validation_log": "project-state/governance/owner-supplied-document-fastpath-2026-10-12/validation.log",
+  "lifecycle_intervals": 76,
+  "sealed_evidence_files": 1489,
+  "hugo": "passed",
+  "rendered_pages": "passed",
+  "external_links_checked": false,
+  "checkpoint_scope": "unchanged historical PR219 checkpoint; current task status in CURRENT and this receipt",
+  "implementation_checkpoint": {
+    "commit": "cd62d718",
+    "files": 22,
+    "insertions": 14428,
+    "deletions": 24
+  },
+  "code_delta": {
+    "existing_files": 4,
+    "insertions": 73,
+    "deletions": 4,
+    "new_modules": 0,
+    "new_runner_registrations": 0
+  },
+  "historical_comparison": {
+    "pr219_files": 41,
+    "insertions": 110666,
+    "deletions": 72,
+    "page_lines_added": 12,
+    "publication_and_closeout_contracts": 21
+  },
+  "late_checkpoint_result": "The proposed resume-only edit triggered New/changed binding instruction is unregistered: project-state/checkpoint.json. Reverted only that unvalidated edit; no additional framework or contract was added.",
+  "remaining_work": [
+    "Final current-state/governance checks and background integration."
+  ],
+  "scope_assessment_of_implementation": "Core change remains four existing code files, one procedure and scoped policy registration. Four contracts exceed the intended two because of a test-fixture correction and a population-planning omission. Further infrastructure expansion stopped."
 }

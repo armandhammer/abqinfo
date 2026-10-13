@@ -50,7 +50,9 @@
       "current_upload_authority": false,
       "lifecycle": "validated",
       "parser_warnings": [],
-      "warning_context": null
+      "warning_context": null,
+      "local_archive_inventory_key": "transportation/roadway-projects/studies/cabq-lead-coal-rest-in-red-feasibility-2021.pdf",
+      "local_archive_inventory_size_match": true
     },
     {
       "candidate_id": "src-4fdf8aa4968a5eca",
@@ -90,7 +92,9 @@
       "parser_warnings": [
         "Xref table not zero-indexed. ID numbers for objects will be corrected."
       ],
-      "warning_context": "Original bytes unchanged; complete existing visual review and matching parser/renderer page counts reused. A new intake with this warning requires investigation before approval."
+      "warning_context": "Original bytes unchanged; complete existing visual review and matching parser/renderer page counts reused. A new intake with this warning requires investigation before approval.",
+      "local_archive_inventory_key": "transportation/roadway-projects/studies/cabq-new-vision-lead-coal-avenues-2007.pdf",
+      "local_archive_inventory_size_match": true
     }
   ],
   "existing_family_records_preserved": 7,
@@ -98,7 +102,17 @@
     "historical_authority": "project-state/governance/lead-coal-historical-publication-2026-10-12/authority.json",
     "historical_absent_keys_and_capacity": "project-state/governance/lead-coal-historical-publication-2026-10-12/archive-preflight.json",
     "current_action": "skip_existing_keys",
-    "new_r2_requests": 0
+    "new_r2_requests": 0,
+    "local_inventory": {
+      "path": "project-state/r2-inventory.json",
+      "sha256": "00063ddc5ec6b1a2717e67fca0f3b1eb0b01be830838b01e89fdb7c5a79feafd",
+      "object_count": 1619,
+      "total_bytes": 11020154060
+    },
+    "project_ceiling_bytes": 13000000000,
+    "object_ceiling_bytes": 150000000,
+    "existing_objects_below_ceiling": true,
+    "local_storage_below_ceiling": true
   },
   "pr_preconditions": {
     "pr": 219,
