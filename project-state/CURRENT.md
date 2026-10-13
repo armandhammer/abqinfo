@@ -4,7 +4,7 @@ Owner-supplied document fast path implemented: bounded 1–3-document intake, fo
 
 PR #219 remains owner-merged and production-verified. Its original assessments, archives and visible entries are preserved. This tooling task adds zero archive bytes and makes zero visitor-visible or inventory changes. Volcano approval and source holds remain unchanged.
 
-Full local validation passed. Background integration is in progress; see the task receipt for actual results. The prior PR219 checkpoint is preserved as historical state; this pointer and the active task receipt track the current repair.
+Full local validation passed. Background integration completed and remote main/planning refs were verified; see the task receipt for exact results. The prior PR219 checkpoint is preserved as historical state; this pointer and the active task receipt track the current repair.
 
 [Procedure](owner-supplied-document-workflow.md) · [Receipt](governance/owner-supplied-document-fastpath-2026-10-12/receipt.json) · [Active task](governance/active-task.json) · [Queue](ordinary-queue-current.json) · [Workflow](governance-workflow.md) · [Registry](governance-registry.json).
 

@@ -1,5 +1,5 @@
 {
-  "state": "implementation_validated_late_checkpoint_edit_reverted",
+  "state": "complete",
   "baseline_commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
   "procedure": "project-state/owner-supplied-document-workflow.md",
   "diagnosis": "project-state/governance/owner-supplied-document-fastpath-2026-10-12/diagnosis.md",
@@ -19,7 +19,7 @@
   "dry_run": "project-state/governance/owner-supplied-document-fastpath-2026-10-12/dry-run.json",
   "focused_governance_checks": 45,
   "validation": "passed_full_local_suite",
-  "integration": "pending",
+  "integration": "completed_and_remote_refs_verified",
   "validation_log": "project-state/governance/owner-supplied-document-fastpath-2026-10-12/validation.log",
   "lifecycle_intervals": 76,
   "sealed_evidence_files": 1489,
@@ -48,8 +48,8 @@
     "publication_and_closeout_contracts": 21
   },
   "late_checkpoint_result": "The proposed resume-only edit triggered New/changed binding instruction is unregistered: project-state/checkpoint.json. Reverted only that unvalidated edit; no additional framework or contract was added.",
-  "remaining_work": [
-    "Final current-state/governance checks and background integration."
-  ],
-  "scope_assessment_of_implementation": "Core change remains four existing code files, one procedure and scoped policy registration. Four contracts exceed the intended two because of a test-fixture correction and a population-planning omission. Further infrastructure expansion stopped."
+  "remaining_work": [],
+  "scope_assessment_of_implementation": "Core change remains four existing code files, one procedure and scoped policy registration. Four contracts exceed the intended two because of a test-fixture correction and a population-planning omission. Further infrastructure expansion stopped.",
+  "integration_receipt": "project-state/governance/owner-supplied-document-fastpath-2026-10-12/integration.json",
+  "completion_limit": "The prior PR219 checkpoint remains unchanged historical state. CURRENT and the active completed task receipt identify the resolved guard and completed integration."
 }
