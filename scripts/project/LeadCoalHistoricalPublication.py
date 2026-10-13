@@ -113,6 +113,9 @@ def implement():
     for j,o in enumerate(OBJECTS,1):
         r=rows[o['candidate_id']];obj=new[o['proposed_r2_key']]
         r.update(status='implemented',r2_key=obj['key'],r2_url=obj['public_url'],r2_etag=obj['etag'],r2_last_modified=obj['last_modified'],implementation_location=PAGE+'#lead-and-coal-avenues',implementation_locations=[PAGE+'#lead-and-coal-avenues'],validation_status='passed',updated_at=now(),archive_verification=G.load(P+f'public-{j}.json'),archive_receipt=P+f'upload-{j}.json')
+        if j==2:
+            historical='https://web.archive.org/web/20160605020924id_/http://www.cabq.gov/municipaldevelopment/documents/newvisionforleadcoalavenues/@@download/file/NewVisionforLeadCoalAvenues.pdf'
+            if historical not in r['referring_urls']:r['referring_urls'].append(historical)
         r['processing_notes'].append('Owner-authorized unchanged-original archival verified by full public GET; historical entry prepared in unmerged manual-review publication PR. Receipt: '+P+'receipt.json')
     inv['counts']={s:sum(r['status']==s for r in inv['candidates']) for s in inv['allowed_statuses']};inv['generated_at']=now();save('project-state/master-inventory.json',inv);save('project-state/r2-inventory.json',after)
     event('content_implementation','Appended reviewed 2021 then 2007 historical entries after unchanged 2025 and 2022; sources and exact verified archives included.',P+'publication.md')
