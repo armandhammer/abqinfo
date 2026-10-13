@@ -125,13 +125,29 @@ def implement():
 
 def guard():
     if not (G.ROOT/(P+'starting-state.json')).exists():return
-    pop=G.load(P+'population.json');assert set(G.changed_paths(BASE))<=set(pop['artifact_paths'])|{PAGE},'Outside frozen scope'
+    from WorkflowStageLifecycle import StageSnapshot, git
+    stage=StageSnapshot(TASK)
+    pop=stage.load_json(P+'population.json')
+    paths=set(git('diff',BASE,stage.end,'--name-only').decode().splitlines()) if stage.end else set(G.changed_paths(BASE))
+    # The owner-authorized closeout added exactly this population artifact.
+    # All original publication limits still apply to the completed interval.
+    allowed=set(pop['artifact_paths'])|{PAGE}
+    if stage.end:
+        closeout=stage.load_json(P+'postmerge-population.json')
+        import subprocess
+        for start,end in [(BASE,closeout['baseline_commit']),(closeout['baseline_commit'],stage.end)]:
+            assert subprocess.run(['git','merge-base','--is-ancestor',start,end],cwd=G.ROOT).returncode==0
+        assert not git('diff',closeout['baseline_commit'],stage.end,'--name-only','--','content','layouts','assets','static','hugo.toml','project-state/r2-inventory.json').strip()
+        assert all(closeout[k]==pop[k] for k in ('candidate_ids','families','pages'))
+        assert set(closeout['artifact_paths'])==set(pop['artifact_paths'])|{P+'postmerge-population.json'}
+        allowed.add(P+'postmerge-population.json')
+    assert paths<=allowed,'Outside frozen scope'
     for path,h in G.load(P+'starting-state.json')['prior_evidence_sha256'].items():assert G.file_hash(path)==h,path
-    original=json.loads(G.git('show',BASE+':project-state/master-inventory.json'));live=G.load('project-state/master-inventory.json');a={r['id']:r for r in original['candidates']};b={r['id']:r for r in live['candidates']}
+    original=json.loads(G.git('show',BASE+':project-state/master-inventory.json'));live=stage.load_json('project-state/master-inventory.json');a={r['id']:r for r in original['candidates']};b={r['id']:r for r in live['candidates']}
     assert a.keys()==b.keys() and all(a[i]==b[i] for i in a if i not in IDS),'Unrelated inventory changed'
     for i in IDS:
         for field in ['scope_assessment','quality_assessment','publication_quality_decision','checksum_sha256','size_bytes','description','provenance_status','historical_review_evidence']:assert a[i][field]==b[i][field],(i,field)
-    old=G.git('show',BASE+':'+PAGE);new=(G.ROOT/PAGE).read_text(encoding='utf-8-sig').rstrip()
+    old=G.git('show',BASE+':'+PAGE);new=stage.read_text(PAGE).rstrip()
     if new!=old.rstrip():
         block=(G.ROOT/(P+'publication.md')).read_text(encoding='utf-8-sig');assert new==old.replace('### Historical Street Capital Programs',block+'### Historical Street Capital Programs',1).rstrip(),'Changed existing section or unrelated content'
         for j,o in enumerate(OBJECTS,1):

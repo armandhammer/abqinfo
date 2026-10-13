@@ -872,6 +872,19 @@
       "exact_delta_guard": {
         "module": "LeadCoalHistoricalPublication",
         "function": "guard"
+      },
+      "end_commit": "79e9ec0227eb81df7c3d7697eae5294222d12794"
+    },
+    {
+      "id": "governed-tasks",
+      "baseline_commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "regression_scripts": [
+        "scripts/project/Test-TaskGovernance.py",
+        "scripts/project/Test-WorkflowStageLifecycle.py"
+      ],
+      "exact_delta_guard": {
+        "module": "WorkflowStageLifecycle",
+        "function": "guard_governed_tasks"
       }
     }
   ],
@@ -8092,6 +8105,236 @@
       "path": "project-state/governance/lead-coal-historical-review-2026-10-12/validation.log",
       "commit": "50e66f5613ecc67b76a2445c7afaf3786474a470",
       "sha256": "c06b185a6ee1deaabdb8ed6d5e641b99ec01485f3e9f9aa9571875a9538692a6"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/archive-preflight.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "00e9a135ecbe251d8724f15d6f150ad3d93b16606f8cadddd2915baf7c2349da"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/authority.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "b06f7ef1b4e2ab38cef6aaab8f9d90b25bc67186a7f98d4f6d1dddff6b43b7f3"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/contract-v1.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "06bba51a7deb4619a584a2b56f126cd0377e1bef2fd732a6f421f2a68e8dc751"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/contract-v10.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "bcbc49148bb89e12c1b6d51ead5c2f958682f0ceda7982ecb3483ad1c5dc6343"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/contract-v11.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "80781e11dcfb9de0d58a13391c9b7eb08aab52ab05bba53b18b20fe93035978d"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/contract-v12.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "534bf615889a8fa9d8e9dbf04a025bce1d00d5e1ebf5a1e160e2a2514d0de9aa"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/contract-v13.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "5b43c9f3edc79fc51cceb1db78b7b88d30695edc5ca60fddc52d0e6b049c75fa"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/contract-v14.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "da462b4a0ed0ca3b7a3e2de19cec6794d8cb3d9caee3553a225454ecc561285b"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/contract-v15.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "c8610bb52eb928471abdc635a22ba77b3edfded1811ca16b3b5cde7f1956f25d"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/contract-v16.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "ea2c3ce6c612da2c596133136795ddb9cf88e06c74b378bf6676c98c9b30fa73"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/contract-v17.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "7e761662ebc741c66516c54a5c5ee2cb2e52601701d4bd71fe83c0d575bac9a5"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/contract-v18.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "0395c5738a821344e393df60f25ccaada873358ca8a72318d785908d94d90778"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/contract-v19.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "e88d14c330b9c503f03a493fc7a213396299249ddb619fa079d4f25a05a2d4ff"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/contract-v2.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "422d950243e4a317ea14f3f412a673f40410c231c6e78d4c8b942e23f809029a"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/contract-v20.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "2efed84f1deb70ce057c3e178782aa0944bd0ff3d5cf806ddb8a50bc5e1301f3"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/contract-v21.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "a3b757b2cdf9f4f35e31b5e029bd9f34461c89889ee517bca10b247a62571980"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/contract-v3.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "0c4db9bef4e7b0336628f017749b00f1dc3e1e2af39cab22194629244ab34c3d"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/contract-v4.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "4e8ded0c43383797d31398701366419a6eb056934d38b0bbd35e4a65b57e26ea"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/contract-v5.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "16a0148b269c10a63e9885128dec2d3296631d4f8acfa1971602a8c47a10b8ab"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/contract-v6.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "f3aac5c70eb1ab757176c3017f1e4427044b31dade3a8f3b2b49f41fda226d15"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/contract-v7.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "69aaabae1b7258d2bb96e898d631b7237f0b6f1d9b7c4001469d62daad4c7675"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/contract-v8.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "65abf3414cbb7d8ae1a3ad90161ae294bfa734460e6c3faa5dc81487feee434f"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/contract-v9.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "c60344e0286827cf1e4428f00e2655ba7cfa5a486429e75e4ab8530f2fe1802e"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/final-state.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "664f2d0197e255faccd3d6a30056405a0ce84e099bd391d9e8b60e3562739320"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/implementation.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "cdbc7e7e32d191e4875f83288e7ae92b8999cdb670fc3c6ab0012e5c01f8cf7c"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/link-verification.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "ba903803963b7f1d1a42ab26541a096da0193fb0750ce03494a78cf4f31abc5b"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/original-verification.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "b9fa4eb87970f15a9d374b9fc5af60c41d8b50822f1cfc751abc51b9a596d6fb"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/population.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "574abff4fd513132f6b8a383e8b1097d7363db07aebb41339d98ce94f83b8d2e"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/postmerge-population.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "decbab897ecc80d22c9013956237eec08a8324cb9bf8e8afc8fe61b7a18f4f95"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/pr-description.md",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "becdfeb8c6352bc32e2ac8980e02b2496a4d818d57a198d8a8a6ba56ebf46cb9"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/pr.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "19aa6b414a3de1aa6f478bea7564e22fbfadbf94546bd2cb2364a24972c32e47"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/preview-desktop.png",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "39d497e9bec5dade8082addec145497ee3c57f2af1c6d0b0292109d82012a3f3"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/preview-mobile.png",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "a4a73b27e7c992e9843d2b9cbd61751b01e7a65b509a1af9e86aee1a17324326"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/preview.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "27a1a7ea49938f6e3bc1073542c982a9e1a18813257479963a6019e232a066d5"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/public-1.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "4dd4e43d634d645963c325522c47a27e947961c1557a12d5cb61fedb62d2ca52"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/public-2.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "b6b0b99f941fbcdfaaec0a636e3a7b1ad5704f0e2fb91451db5d9ea4f50167ad"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/publication.md",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "1adc28d7be57b4a1a0e0b141c611226a736b1b1d80a70558eae9a29206cc1449"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/queue.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "134d56e6ded08135cb2acc288e461c3a1c42820c6377fb64b677c6410ed4aa50"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/r2-after.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "00063ddc5ec6b1a2717e67fca0f3b1eb0b01be830838b01e89fdb7c5a79feafd"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/r2-before.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "b726acaafe3dd9477ee397b66bab91990ce57670e0855a8ce95ab6e043b6e875"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/receipt.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "01db0ce89dfa07c741ed0053d1ced349850f724da38504c57fd2f7acb73877b3"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/starting-state.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "f51a6683857ad46fc62d76ea0f2bb9cf2e1d25e69957a5213bc17d1e19ecdcc6"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/supersession.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "d8e9669bcb7f7df20a11b03be3e6334962cc259d1878e4fe520e3becd13e5728"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/upload-1.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "ed84c01837d751425ecb4adb873043ce5967ecc9530742041cc04e03df656ea3"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/upload-2.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "81752e8127b9c9bafeb7ad4a074a3f667ac634ea98e9b0936ae78b507cd0b4b0"
+    },
+    {
+      "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/upload-intent.json",
+      "commit": "79e9ec0227eb81df7c3d7697eae5294222d12794",
+      "sha256": "7ccf8e19a6033b0ee9a4ba9be220edc023e3ad4c7875406066879818c775b17e"
     }
   ],
   "completed_audits": [

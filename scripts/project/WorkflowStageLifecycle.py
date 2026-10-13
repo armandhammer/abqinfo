@@ -98,3 +98,17 @@ def validate_evidence(data):
 def validate_evidence_bytes(expected,old,live):
     assert hashlib.sha256(old).hexdigest()==expected, 'Historical witness changed'
     assert live==old, 'Completed-stage evidence changed'
+
+
+def guard_governed_tasks():
+    """Reuse the current immutable task's exact delta guard across routine tasks."""
+    from TaskGovernance import active_check, load, ACTIVE_TASK
+    stage = StageSnapshot('governed-tasks')
+    task = load(ACTIVE_TASK)
+    pop = load(task['population'])
+    result = subprocess.run(['git', 'merge-base', '--is-ancestor',
+                             stage.stage['baseline_commit'], pop['baseline_commit']], cwd=ROOT)
+    assert result.returncode == 0, 'Task baseline precedes the governed interval'
+    result = subprocess.run(['git', 'merge-base', '--is-ancestor', pop['baseline_commit'], 'HEAD'], cwd=ROOT)
+    assert result.returncode == 0, 'Task baseline is not in current history'
+    active_check('final')

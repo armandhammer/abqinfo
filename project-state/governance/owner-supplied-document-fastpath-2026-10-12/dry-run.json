@@ -1,0 +1,123 @@
+{
+  "mode": "read_only_local_and_existing_receipts",
+  "checked_at": "2026-10-13T04:14:46.350484+00:00",
+  "governance": {
+    "active_registry_entries": 347,
+    "applicable_rules": 56,
+    "candidate_ids": [
+      "src-b74f7eef4f5a474c",
+      "src-4fdf8aa4968a5eca"
+    ],
+    "conflicts": [],
+    "gates": [],
+    "freshness": "complete_current_registry_resolved_in_memory",
+    "scope": "historical_case_simulation_no_active_pointer_change"
+  },
+  "records": [
+    {
+      "candidate_id": "src-b74f7eef4f5a474c",
+      "path": "research/staging/document-review/lead-coal-rest-in-red-7-28-2021-final-1.pdf",
+      "sha256": "1473804a0758d924ab64f4c706564019d67c8c08fbbd7ab07facc9365b06208c",
+      "size_bytes": 11744029,
+      "page_count": 55,
+      "encrypted": false,
+      "strict_parse": "passed",
+      "page_dimensions": "passed",
+      "eof_marker": true,
+      "rendered_spot_pages": [
+        1,
+        3,
+        28,
+        55
+      ],
+      "new_visual_review": false,
+      "prior_visual_review": {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/candidate-1-visual-review.json",
+        "sha256": "1e91878722d9fdf3385d370014e96f619e8f4946b6700680e4c0505379dc50d5"
+      },
+      "historical_blank_missing_page_evidence": "project-state/governance/lead-coal-historical-review-2026-10-12/candidate-1.json",
+      "scope_quality": "existing_assessments_passed",
+      "same_hash_inventory_ids": [
+        "src-b74f7eef4f5a474c"
+      ],
+      "existing_visible_archive_links": 1,
+      "archive_result": "already_archived_skip_put",
+      "historical_public_bytes": {
+        "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/public-1.json",
+        "sha256": "4dd4e43d634d645963c325522c47a27e947961c1557a12d5cb61fedb62d2ca52",
+        "verified_at": "2026-10-13T03:39:07.2478097Z"
+      },
+      "current_upload_authority": false,
+      "lifecycle": "validated",
+      "parser_warnings": [],
+      "warning_context": null
+    },
+    {
+      "candidate_id": "src-4fdf8aa4968a5eca",
+      "path": "research/staging/document-review/NewVisionforLeadCoalAvenues.pdf",
+      "sha256": "18a4593905fb4f6c10626f885c25f0a3e2c17d97dd2f966eb8bfb1e9cdd86036",
+      "size_bytes": 22056747,
+      "page_count": 67,
+      "encrypted": false,
+      "strict_parse": "passed",
+      "page_dimensions": "passed",
+      "eof_marker": true,
+      "rendered_spot_pages": [
+        1,
+        3,
+        34,
+        67
+      ],
+      "new_visual_review": false,
+      "prior_visual_review": {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/candidate-2-visual-review.json",
+        "sha256": "8ee44463563a0fb2b2d40b77e20eee948cc224fbf13cd0f21449d6051a194e69"
+      },
+      "historical_blank_missing_page_evidence": "project-state/governance/lead-coal-historical-review-2026-10-12/candidate-2.json",
+      "scope_quality": "existing_assessments_passed",
+      "same_hash_inventory_ids": [
+        "src-4fdf8aa4968a5eca"
+      ],
+      "existing_visible_archive_links": 1,
+      "archive_result": "already_archived_skip_put",
+      "historical_public_bytes": {
+        "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/public-2.json",
+        "sha256": "b6b0b99f941fbcdfaaec0a636e3a7b1ad5704f0e2fb91451db5d9ea4f50167ad",
+        "verified_at": "2026-10-13T03:39:30.1840885Z"
+      },
+      "current_upload_authority": false,
+      "lifecycle": "validated",
+      "parser_warnings": [
+        "Xref table not zero-indexed. ID numbers for objects will be corrected."
+      ],
+      "warning_context": "Original bytes unchanged; complete existing visual review and matching parser/renderer page counts reused. A new intake with this warning requires investigation before approval."
+    }
+  ],
+  "existing_family_records_preserved": 7,
+  "archive_preconditions": {
+    "historical_authority": "project-state/governance/lead-coal-historical-publication-2026-10-12/authority.json",
+    "historical_absent_keys_and_capacity": "project-state/governance/lead-coal-historical-publication-2026-10-12/archive-preflight.json",
+    "current_action": "skip_existing_keys",
+    "new_r2_requests": 0
+  },
+  "pr_preconditions": {
+    "pr": 219,
+    "state": "MERGED",
+    "reviewed_head": "eb37c1add29fa8a371d95a64b7f043d7e858ee40",
+    "merge_commit": "df38bf25dd897d3d7a9ad8b74d4b4dd597cf8e35",
+    "content_tree_equal": true,
+    "preview_receipt": "project-state/governance/lead-coal-historical-publication-2026-10-12/preview.json",
+    "new_content_changes": 0
+  },
+  "closeout": {
+    "historical_production_result": "passed",
+    "historical_checked_at": "2026-10-13T03:57:40.053877+00:00",
+    "receipt": "project-state/governance/lead-coal-historical-publication-2026-10-12/receipt.json",
+    "guard": "completed_snapshot_passed",
+    "integration": "pending_current_task"
+  },
+  "limitations": [
+    "Historical public-byte and browser evidence reused; no fresh archive or production network request.",
+    "Existing complete visual review reused; spot renders are mechanical integrity checks."
+  ]
+}

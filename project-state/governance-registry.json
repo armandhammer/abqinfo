@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "3cd8cc8be7df13fa79ed7c431bd29b16aaf5f9287efe846560eda57f3d8b027c",
+  "audit_sha256": "685073cedcdaa41d50f3e1e67de8e0a57dde0a9e5d21bcf97f17198a646b63dc",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15187,13 +15187,13 @@
       "authority": "standing project policy / explicit owner instruction",
       "decision_date": null,
       "effective_date": "as recorded in controlling artifact; no chronology precedence",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
-          "path": "AGENTS.md",
-          "sha256": "89a6fd04d97e1faadcf2214d52444e170b1fe2293af6878a54850e593bddb663",
+          "path": "project-state/governance/owner-supplied-document-fastpath-2026-10-12/authority.json",
+          "sha256": "da0bf4cf98bbe61325531d51605becf02d2d0c8211e548e5a942272581692d88",
           "binding_pointers": [
-            "/"
+            "/prior_agents_text"
           ]
         }
       ],
@@ -15208,7 +15208,9 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority.",
+      "superseded_by": "policy-agents-owner-supplied-fastpath",
+      "supersession_evidence": "project-state/governance/owner-supplied-document-fastpath-2026-10-12/authority.json"
     },
     {
       "governance_id": "policy-durable-task-governance",
@@ -15245,7 +15247,7 @@
         },
         {
           "path": "scripts/project/Test-TaskGovernance.py",
-          "sha256": "101f70bfd1d4fcf85a51e6fe72e00dc3a28391581a3b0e01429d5fadc896e638",
+          "sha256": "7f820e6b6b3376f38cb56d85368d1cb799e76d77e762924095761ba2d6e57a90",
           "binding_pointers": [
             "/implementation"
           ]
@@ -35948,7 +35950,7 @@
       "authority": "Explicit current user instruction",
       "decision_date": "2026-10-12",
       "effective_date": "2026-10-12",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/lead-coal-historical-review-2026-10-12/authority.json",
@@ -35984,13 +35986,15 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "owner-merged production and background reconciliation"
+      "implementation_status": "owner-merged production and background reconciliation",
+      "superseded_by": "owner-lead-coal-historical-review-2026-10-12-publication-authorized-postmerge-fastpath-repair",
+      "supersession_evidence": "project-state/governance/owner-supplied-document-fastpath-2026-10-12/authority.json"
     },
     {
       "governance_id": "owner-lead-coal-historical-publication-2026-10-12-postmerge",
       "category": "active owner decision",
       "title": "lead-coal-historical-publication-2026-10-12",
-      "state": "active",
+      "state": "superseded",
       "scope": {
         "candidate_ids": [
           "src-b74f7eef4f5a474c",
@@ -36037,7 +36041,9 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "owner-merged production and background reconciliation"
+      "implementation_status": "owner-merged production and background reconciliation",
+      "superseded_by": "owner-lead-coal-historical-publication-2026-10-12-postmerge-fastpath-repair",
+      "supersession_evidence": "project-state/governance/owner-supplied-document-fastpath-2026-10-12/authority.json"
     },
     {
       "governance_id": "owner-pr219-postmerge-reconciliation-2026-10-12",
@@ -36077,6 +36083,258 @@
       "settled_decisions": [],
       "unresolved_gates": [],
       "implementation_status": "bounded postmerge reconciliation"
+    },
+    {
+      "governance_id": "policy-agents-owner-supplied-fastpath",
+      "category": "active project-wide policy",
+      "title": "Apply all ABQInfo instructions: scope, actual-record quality, exact archive provenance, owner review of visible changes, durable checkpoints and external-action authority",
+      "scope": {
+        "global": true
+      },
+      "authority": "standing project policy / explicit owner instruction",
+      "decision_date": null,
+      "effective_date": "2026-10-12",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "c250f36a85dfb6392682088e663dc88200ed2701d4aa53d6f586afcb554e116d",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/proposals/owner-supplied-document-fastpath-2026-10-12.md",
+          "sha256": "22f3a1db6c81dffead9c8a05a439e2f9bd17636ee20e99c3acf34687a19fa726",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/owner-supplied-document-fastpath-2026-10-12/authority.json",
+          "sha256": "da0bf4cf98bbe61325531d51605becf02d2d0c8211e548e5a942272581692d88",
+          "binding_pointers": [
+            "/proposals"
+          ]
+        }
+      ],
+      "binding_requirement": "Apply all ABQInfo instructions: scope, actual-record quality, exact archive provenance, owner review of visible changes, durable checkpoints and external-action authority. Scoped owner-directed exception: an explicitly bounded ordinary owner-supplied 1-3-document request into an existing section satisfies batch size; follow project-state/owner-supplied-document-workflow.md. Every other AGENTS protection remains unchanged.",
+      "required_actions": [
+        "Apply all ABQInfo instructions: scope, actual-record quality, exact archive provenance, owner review of visible changes, durable checkpoints and external-action authority.",
+        "# ABQInfo Codex Instructions\n\n## Workflow Roles\n\n- ChatGPT is the project lead and handles planning, stage sequencing, and continuation prompts.\n- Codex is the implementation worker.\n\n## Durable Project State\n\n- Mandatory governance for every substantive review, disposition, quality assessment, consolidation, archive, content/removal, placement/cross-listing or visitor-visible task: inspect repository state; freeze exact task population; resolve the complete active `project-state/governance-registry.json` with `scripts/project/Resolve-TaskGovernance.py`; review/implement under its immutable contract; freshness-check immediately before mutation; validate against that same contract at completion. Follow `project-state/governance-workflow.md`. CURRENT, memory, historical searches and relevance judgment cannot substitute for exhaustive registry resolution. Register new binding decisions in the same change. Active authority requires explicit authorized supersession; no chronology-based precedence. Pause before any conflicting implementation.\n\n- At the start of a task, inspect the current Git branch and working-tree state and read `project-state/CURRENT.md` when present. Read `project-state/checkpoint.json` and `project-state/active-run.json` only when they are relevant to the task.\n- `project-state/master-inventory.json` is authoritative project state, but do not read it wholesale by default. Use the repository's deterministic scripts or targeted parsing to retrieve only the candidate records or fields needed for the task. Load the full inventory only when a task explicitly requires full-inventory validation, regeneration, or another operation that inherently needs the complete file.\n- Do not pull, rebase, merge, or otherwise reconcile with `origin/main` merely as startup housekeeping. Compare with `origin/main` when needed for the task and preserve the current worktree and branch state.\n- Use the repository's deterministic PowerShell and Python scripts for crawling, downloading, hashing, extraction, deduplication, inventory updates, link checks, and Hugo validation whenever possible.\n- Treat Legistar attachments as versioned delivery wrappers, not automatically distinct documents: compare hashes and extracted/rendered substantive content with existing City-source copies. A Legistar copy may prepend only Council bill, enactment, routing, signature, or agenda pages to an otherwise identical underlying document; retain one canonical original and document the wrapper relationship rather than archiving both.\n- Missing-minutes agenda policy: after a recorded exhaustive official-source review finds no approved minutes for a meeting, ABQInfo may preserve a verified original official agenda. Label it “Agenda (approved minutes not located)” or equivalent, link the official source, preserve the meeting date, and never present it as minutes or a substitute. Do not archive agendas for officially cancelled or no-quorum meetings, or when an approved-minutes original is available.\n- Save inventory status changes immediately and checkpoint meaningful progress throughout a batch so an interrupted task can resume without reconstructing prior work.\n- Preserve unrelated user files and changes, including the untracked `backups/` directory.\n\n## Batch and Pull Request Expectations\n\n- Mission scope is a mandatory prerequisite to approval, archive preparation, backlog ranking, or any visible/static addition. An approved record must carry a structured `scope_assessment` that records: geographic/institutional scope; a specific, material Albuquerque connection; ABQInfo public-information value; an explicit exclusion test explaining why general context is insufficient; a final scope decision; and a substantive rationale. Provenance, authenticity, quality, family coherence, archive readiness, or a plausible page may not substitute for this determination.\n- The positive scope gate also applies to `downloading`, `downloaded`, `parsed`, `description drafted`, `placement assigned`, `implemented`, and `validated`; a newly reviewed or changed record cannot enter or remain in any of these states without `final_scope_decision = passes_both_gates` and the complete assessment. The exact 2026-09-23 frozen legacy registry allows only unchanged historical `placement assigned`, `implemented`, and `validated` rows with their original status and update timestamp to validate without retrospective assessments. It is not a route for new review or state transitions; any change to one of those rows requires positive scope first.\n- Apply two independent gates before approval: (1) the record must substantially concern Albuquerque, a City entity/service/project/facility/policy/expenditure/regulation/decision, or a regional/state/federal matter with a specific and material Albuquerque component; and (2) it must materially help a reader understand a core ABQInfo public-information subject. Statewide applicability, agency jurisdiction, an interstate passing through Albuquerque, incidental references/maps/statistics, or generic contextual usefulness do not satisfy the first gate. Geographic connection alone, peripheral technical-operational material, transactional paperwork, generic templates, or trivial material do not satisfy the second gate.\n- Ask whether a reasonable ABQInfo user gains meaningful Albuquerque public-policy or infrastructure information here beyond what is naturally available from the originating agency. If the answer is not substantive, exclude the record or require human review. Backlog ranking begins only after a positive scope decision; archive readiness ranks eligible work and never establishes eligibility.\n- Mission-scope review has exactly three outcomes: `passes_both_gates`; a definitive scope exclusion; or `requires_human_scope_review`. Use the last outcome only for a genuine borderline: a specific material Albuquerque connection and credible public-information value exist, but usefulness/significance is close enough that editorial judgment should control. Clearly irrelevant, generic, statewide, transactional, trivial, or merely contextual material must be excluded directly, not sent to human scope review.\n- A borderline record must use inventory status `requires human review`, `review_reason = mission_scope_borderline`, and a structured scope assessment with title, publisher, date, geographic/institutional scope, specific Albuquerque connection, potential public-information value, why it does not confidently pass, why it does not clearly fail, proposed page/section if admitted, recommended default disposition, and substantive rationale. It cannot advance to an eligible publication state until a human disposition is durably applied.\n- Maintain `project-state/discovery/mission-scope-borderline-human-review-queue.json` as the exclusive queue for unresolved `mission_scope_borderline` records. Do not mix privacy, provenance, version/finality, legal-status, source-recovery, or other human-review reasons. Continue ordinary work below 20 unresolved cases; at 20, stop adding scope-borderline cases and make that 20-record review batch the next user-facing decision task. Surface a smaller batch only when it resolves the active family or no other productive ungated work remains.\n- Provenance, authenticity, successful parsing, archival verification, and a well-written description are necessary but do not establish that a document deserves a separate public-facing entry. Before any static document is approved for visible publication, record and validate a `quality_assessment` covering visual inspection, measured page/text content, standalone public value, information density, series/component relationships, intended publication form, and a substantive rationale.\n- Do not publish administrative scraps, context-free requests, skeletal summaries, or serial fragments as standalone entries merely because they are authoritative. A one- or two-page text document with fewer than 250 extractable words requires an explicit limited-content exception; maps, forms, legal instruments, and dense visual or tabular records may qualify when their distinct use is documented.\n- Review every component or serial document against its complete family before publication. Prefer one curated, chronological or program-level master historical record when several short official files are meaningful mainly together. Preserve the byte-identical originals and their individual provenance in R2 and inventory history even when the public site presents a consolidated master record.\n\n- A normal content PR should be a substantial coherent batch, generally 15-30 visible additions across 3-8 appropriate pages. Do not stop after one small source cluster unless a genuine technical, authorization, storage, or usage boundary requires it.\n- A static document must be archived to R2 and its public archive download verified (exact size and SHA-256, plus authoritative-source provenance) before it is added to any site page. Retain the official source link alongside the archive link. The only exception is content that cannot meaningfully be archived as a document, such as a live ArcGIS web map or another genuinely live official service; label and link those as live sources rather than treating them as archived records.\n- Never open or describe a content PR as site-ready when it contains a direct-source-only static document. If archival is not authorized or cannot be completed, keep the item inventory-only and state that blocker.\n- Any addition, removal, substantive rewrite, heading or section rename, move, canonical-page change, cross-listing change, or other change visible to a normal site visitor must be presented in a PR for the user's manual review and approval before merge. Codex must not autonomously merge or deploy a PR with visible site-content changes, even when checks and preview pass or the content category is routine. Historical autonomous-content-merge instructions do not override this rule. Background-only changes to agent instructions, project state, inventory, tracking, logs, scripts, or validation machinery do not require a user-facing content PR solely because those files changed.\n- A site-content PR description is a manual editorial review aid, not a repository change log. In concise human-readable UTF-8 Markdown with actual newline characters, identify exactly what changed visibly, where, and why when useful. For each modified page, name the visible addition, removal, rewrite, rename, move, or cross-listing with its actual heading and document titles. Avoid generic counts or descriptions. Do not enumerate routine background files or metadata unless they materially explain a visible change; those remain available in Git history and the Files tab.\n- For each modified public page in an unmerged content PR, give a direct link to the changed page on the verified non-production review deployment, preferably with a working changed-section anchor. The link must open the changed page rather than the preview homepage. Use a production `https://abqinfo.com/` page URL only after the change is live or when no functioning preview URL is available, and explain that limitation.\n- Before creating or editing a PR, construct its description in a real Markdown file, validate it with `scripts/project/Test-PullRequestDescription.ps1`, and submit it with `gh pr create --body-file <file>` or `gh pr edit --body-file <file>`. Do not embed an escaped multi-line body in a command-line string.\n- Distinguish inventory-only work from visible site changes. Report R2 uploads, exact added storage, size warnings, validation results, and unresolved items.\n- After a visible site-content PR is prepared and its preview verified, stop for the user's manual PR review. Merge, deployment, and production verification require the user's subsequent approval. Background-only, non-visible work may follow its otherwise applicable workflow rules.\n\n## Required End-of-Task Report\n\nAt the end of a substantive task, Codex should report what it completed, commits and artifacts created, validation performed, unresolved blockers or issues, and the recommended next type of work and model/reasoning level when useful. Codex should not generate a copy-and-paste continuation prompt.\n\n## Interruption and Usage-Limit Resilience\n\nAssume any Codex session may terminate without warning because of usage limits, terminal interruption, or account switching.\n\n- Do not accumulate substantial completed work only in conversational context.\n- During substantive multi-step work, persist completed decisions, findings, progress, and remaining work to the appropriate repository artifact at natural checkpoints.\n- Before beginning a long or high-reasoning stage, ensure the preceding stage is durably saved.\n- Save authoritative inventory changes promptly rather than deferring a large set of completed decisions until the end of the session.\n- When a coherent stage is complete and the repository state is suitable for a commit, prefer a small logical checkpoint commit rather than waiting until the entire multi-stage task is finished.\n- Do not create noisy commits for trivial intermediate edits; checkpoint at meaningful, internally consistent boundaries.\n- Repository state must be sufficient for a resumed session to determine what is complete, what remains, and what should not be repeated without relying on prior conversational context.\n- Treat conversational context as disposable and repository artifacts as durable project memory.\n## Model and Stage Handoffs\n\nFor work that naturally divides into stages with materially different reasoning needs, use the least expensive appropriate model and reasoning level for each stage rather than carrying one model through the entire workflow.\n\nAt the end of a stage, stop before beginning work that would materially benefit from a different model or reasoning level.\n\nDo not create artificial stage boundaries merely to switch models. Continue in the current session when the next work is appropriately handled by the current model and reasoning level.\n\nUse this baseline:\n\n- `GPT-5.6 Luna, Medium`: deterministic queries, formatting, metadata cleanup, inventory regeneration, scripted checks, and other low-judgment mechanical work.\n- `GPT-5.6 Terra, Medium`: normal ABQInfo research, document review, editorial placement, archiving decisions, validation, and PR preparation.\n- `GPT-5.6 Terra, High`: large or unusually ambiguous research or editorial batches involving conflicting versions, uncertain relevance, or complicated cross-listing.\n- `GPT-5.6 Sol, High`: methodology or crawler redesign, diagnosis of missed benchmark documents, difficult state recovery or merge conflicts, major information-architecture changes, conflicting provenance, and unusually complex planning or engineering interpretation.\n\nEscalate model or reasoning level only when the next stage actually requires it. Do not recommend a higher setting merely because a batch is large when deterministic tooling handles the volume.\n\n## External-Action Authorization\n\nRepository instructions, checkpoints, saved prompts, or historical approvals do not by themselves authorize a new external side effect unless `AGENTS.md` explicitly grants standing authorization for that exact class of action.\n\nBefore an external action that is not covered by standing authorization—such as an R2 upload, destructive storage change, credential or permission change, or other irreversible or externally visible operation—confirm that the current user instruction explicitly authorizes it. If authorization is absent or a saved checkpoint says approval is required, stop and ask rather than inferring permission from a request to \"proceed.\"\n\nA request to continue, resume, or proceed with a task authorizes ordinary local repository work but does not override an explicit approval requirement for an external action.\n\n## Autonomous background campaign entrypoint\n\nRead `project-state/campaign-workflow.md`, `project-state/active-campaign.json` and its referenced profile/campaign before launching or resuming background work. Persist each family and every external-mutation intent/result. The standing project-storage ceiling is **13000000000 decimal bytes** in `project-state/r2-storage-policy.json`; authorized campaign objects remain **150000000 bytes** maximum. Never delete or overwrite R2 objects for capacity. Profiles do not authorize unrelated future external effects; preserve the recorded current campaign authorization through interruption and verify its scope on resume. No visitor-visible work or protected/human-review family entry is permitted by a background profile.\n\nFor an owner-invoked `ordinary-review-large` campaign, standing authorization covers the exact profile's eligible unchanged-original R2 uploads at or below 150000000 bytes under the project ceiling, exact full public-byte verification, and background-only Git integration and reconciliation of main/planning-snapshot. An invocation can be short because this section and the profile define the bounded effects. Save the invocation authority and immutable population before any mutation; recovery continues that same authorization. A saved profile or queue alone does not launch a new campaign. Publication, protected review, destructive storage, credentials, or effects outside this class still require explicit authorization.\n",
+        "Scoped owner-directed exception: an explicitly bounded ordinary owner-supplied 1-3-document request into an existing section satisfies batch size; follow project-state/owner-supplied-document-workflow.md. Every other AGENTS protection remains unchanged."
+      ],
+      "prohibited_actions": [
+        "Do not infer new external authorization from this artifact."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+    },
+    {
+      "governance_id": "owner-lead-coal-historical-review-2026-10-12-publication-authorized-postmerge-fastpath-repair",
+      "category": "active owner decision",
+      "title": "Bounded local Lead and Coal historical review",
+      "scope": {
+        "task_ids": [
+          "lead-coal-historical-review-2026-10-12"
+        ],
+        "candidate_ids": [
+          "src-b74f7eef4f5a474c",
+          "src-4fdf8aa4968a5eca"
+        ]
+      },
+      "authority": "Explicit current user instruction",
+      "decision_date": "2026-10-12",
+      "effective_date": "2026-10-12",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/lead-coal-historical-review-2026-10-12/authority.json",
+          "sha256": "a6162295f9dca2f11de2ca2b4257322e327dca4e7b59d3e9e81ad32837b20c15",
+          "binding_pointers": [
+            "/instruction"
+          ]
+        },
+        {
+          "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/authority.json",
+          "sha256": "b06f7ef1b4e2ab38cef6aaab8f9d90b25bc67186a7f98d4f6d1dddff6b43b7f3",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/final-state.json",
+          "sha256": "664f2d0197e255faccd3d6a30056405a0ce84e099bd391d9e8b60e3562739320",
+          "binding_pointers": [
+            "/authority",
+            "/proposals"
+          ]
+        },
+        {
+          "path": "project-state/proposals/owner-supplied-document-fastpath-2026-10-12.md",
+          "sha256": "22f3a1db6c81dffead9c8a05a439e2f9bd17636ee20e99c3acf34687a19fa726",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/owner-supplied-document-fastpath-2026-10-12/authority.json",
+          "sha256": "da0bf4cf98bbe61325531d51605becf02d2d0c8211e548e5a942272581692d88",
+          "binding_pointers": [
+            "/proposals"
+          ]
+        }
+      ],
+      "binding_requirement": "Review exactly the two owner-supplied local PDFs, preserve/hash originals, render and inspect every page, establish metadata/status/provenance, investigate public sources, assess mission/quality/history, compare the unchanged 2022 RSA and 2025 final and complete existing family, check duplicates and prepare independent historical-entry recommendations and concise descriptions under Lead and Coal Avenues in studies.md. Save governed inventory assessments and archive readiness, run normal validation and integrate permissible background-only changes. No R2 upload, visitor-visible content modification or publication PR is authorized by this task. Preserve all existing Lead/Coal records and originals unless a necessary change is separately governed. The explicit current owner archival/publication authorization in project-state/governance/lead-coal-historical-publication-2026-10-12/authority.json supersedes only the prior no-upload/no-visible-change/no-PR phase boundary for these exact two approved originals. Completed review and all preservation requirements remain controlling. Stop with an open unmerged PR; no production deployment. Current owner reports PR219 merged and authorizes only bounded production verification and post-merge background reconciliation; this supersedes the prior stop-at-open-unmerged phase boundary. All original scope, review, provenance, hash, content and R2 preservation requirements remain controlling. No new content or archive work, tests or refactoring. Only in owner-supplied-document-fastpath-2026-10-12, the explicit owner specification authorizes the bounded historical publication guard repair, existing-suite focused regressions, read-only demonstration and background integration. This supersedes the prior no-tests/no-refactoring closeout boundary only for that tooling task; all document, content, R2 and historical-evidence protections remain unchanged.",
+      "required_actions": [
+        "Review exactly the two owner-supplied local PDFs, preserve/hash originals, render and inspect every page, establish metadata/status/provenance, investigate public sources, assess mission/quality/history, compare the unchanged 2022 RSA and 2025 final and complete existing family, check duplicates and prepare independent historical-entry recommendations and concise descriptions under Lead and Coal Avenues in studies.md. Save governed inventory assessments and archive readiness, run normal validation and integrate permissible background-only changes. No R2 upload, visitor-visible content modification or publication PR is authorized by this task. Preserve all existing Lead/Coal records and originals unless a necessary change is separately governed. The explicit current owner archival/publication authorization in project-state/governance/lead-coal-historical-publication-2026-10-12/authority.json supersedes only the prior no-upload/no-visible-change/no-PR phase boundary for these exact two approved originals. Completed review and all preservation requirements remain controlling. Stop with an open unmerged PR; no production deployment. Current owner reports PR219 merged and authorizes only bounded production verification and post-merge background reconciliation; this supersedes the prior stop-at-open-unmerged phase boundary. All original scope, review, provenance, hash, content and R2 preservation requirements remain controlling. No new content or archive work, tests or refactoring.",
+        "Only in owner-supplied-document-fastpath-2026-10-12, the explicit owner specification authorizes the bounded historical publication guard repair, existing-suite focused regressions, read-only demonstration and background integration. This supersedes the prior no-tests/no-refactoring closeout boundary only for that tooling task; all document, content, R2 and historical-evidence protections remain unchanged."
+      ],
+      "prohibited_actions": [
+        "No overwrite/delete, unrelated changes, merge or production deployment."
+      ],
+      "prohibited_operation_classes": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "owner-merged production and background reconciliation"
+    },
+    {
+      "governance_id": "owner-lead-coal-historical-publication-2026-10-12-postmerge-fastpath-repair",
+      "category": "active owner decision",
+      "title": "lead-coal-historical-publication-2026-10-12",
+      "state": "active",
+      "scope": {
+        "candidate_ids": [
+          "src-b74f7eef4f5a474c",
+          "src-4fdf8aa4968a5eca"
+        ],
+        "task_ids": [
+          "lead-coal-historical-publication-2026-10-12"
+        ]
+      },
+      "authority": "Explicit current owner instruction",
+      "decision_date": "2026-10-12",
+      "effective_date": "2026-10-12",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/authority.json",
+          "sha256": "b06f7ef1b4e2ab38cef6aaab8f9d90b25bc67186a7f98d4f6d1dddff6b43b7f3",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/supersession.json",
+          "sha256": "d8e9669bcb7f7df20a11b03be3e6334962cc259d1878e4fe520e3becd13e5728",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/final-state.json",
+          "sha256": "664f2d0197e255faccd3d6a30056405a0ce84e099bd391d9e8b60e3562739320",
+          "binding_pointers": [
+            "/authority",
+            "/proposals"
+          ]
+        },
+        {
+          "path": "project-state/proposals/owner-supplied-document-fastpath-2026-10-12.md",
+          "sha256": "22f3a1db6c81dffead9c8a05a439e2f9bd17636ee20e99c3acf34687a19fa726",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/owner-supplied-document-fastpath-2026-10-12/authority.json",
+          "sha256": "da0bf4cf98bbe61325531d51605becf02d2d0c8211e548e5a942272581692d88",
+          "binding_pointers": [
+            "/proposals"
+          ]
+        }
+      ],
+      "binding_requirement": "Explicit owner authorization: upload exactly the two approved unchanged Lead/Coal historical originals to their full destinations in archive-readiness.json, without overwriting or deleting; fresh inventory/capacity/key checks and exact complete public-download size/SHA256 verification. Reuse completed review, assessments, provenance and descriptions. Add only the approved 2021 and 2007 entries, in that order, after unchanged 2025 and 2022 entries in the existing Lead and Coal Avenues section of studies.md. Preserve all existing records, historical evidence and unrelated work. Correct malformed UTF-8 in CURRENT as background maintenance. Full governance/archive/content/link/Hugo validation and actual nonproduction changed-section preview. Prepare concise validated PR description with exact additions/placement/direct preview. Stop with content PR OPEN UNMERGED for owner manual review and merge; no production deployment. Current owner reports PR219 merged and authorizes only bounded production verification and post-merge background reconciliation; this supersedes the prior stop-at-open-unmerged phase boundary. All original scope, review, provenance, hash, content and R2 preservation requirements remain controlling. No new content or archive work, tests or refactoring. Only in owner-supplied-document-fastpath-2026-10-12, the explicit owner specification authorizes the bounded historical publication guard repair, existing-suite focused regressions, read-only demonstration and background integration. This supersedes the prior no-tests/no-refactoring closeout boundary only for that tooling task; all document, content, R2 and historical-evidence protections remain unchanged.",
+      "required_actions": [
+        "Explicit owner authorization: upload exactly the two approved unchanged Lead/Coal historical originals to their full destinations in archive-readiness.json, without overwriting or deleting; fresh inventory/capacity/key checks and exact complete public-download size/SHA256 verification. Reuse completed review, assessments, provenance and descriptions. Add only the approved 2021 and 2007 entries, in that order, after unchanged 2025 and 2022 entries in the existing Lead and Coal Avenues section of studies.md. Preserve all existing records, historical evidence and unrelated work. Correct malformed UTF-8 in CURRENT as background maintenance. Full governance/archive/content/link/Hugo validation and actual nonproduction changed-section preview. Prepare concise validated PR description with exact additions/placement/direct preview. Stop with content PR OPEN UNMERGED for owner manual review and merge; no production deployment. Current owner reports PR219 merged and authorizes only bounded production verification and post-merge background reconciliation; this supersedes the prior stop-at-open-unmerged phase boundary. All original scope, review, provenance, hash, content and R2 preservation requirements remain controlling. No new content or archive work, tests or refactoring.",
+        "Only in owner-supplied-document-fastpath-2026-10-12, the explicit owner specification authorizes the bounded historical publication guard repair, existing-suite focused regressions, read-only demonstration and background integration. This supersedes the prior no-tests/no-refactoring closeout boundary only for that tooling task; all document, content, R2 and historical-evidence protections remain unchanged."
+      ],
+      "prohibited_actions": [
+        "No merge or production deployment, overwrite/delete or unrelated population."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "owner-merged production and background reconciliation"
+    },
+    {
+      "governance_id": "owner-supplied-document-fastpath",
+      "category": "active project-wide policy",
+      "title": "Bounded ordinary owner-supplied intake and narrow closeout",
+      "state": "active",
+      "scope": {
+        "global": true
+      },
+      "authority": "Explicit current owner instruction and committed implementation specification",
+      "decision_date": "2026-10-12",
+      "effective_date": "2026-10-12",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/proposals/owner-supplied-document-fastpath-2026-10-12.md",
+          "sha256": "22f3a1db6c81dffead9c8a05a439e2f9bd17636ee20e99c3acf34687a19fa726",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/owner-supplied-document-workflow.md",
+          "sha256": "31215c7edfa5860998fc4ab1f44680d2985af9c2d49a0799826ec3c1bb05a310",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/owner-supplied-document-fastpath-2026-10-12/authority.json",
+          "sha256": "da0bf4cf98bbe61325531d51605becf02d2d0c8211e548e5a942272581692d88",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "scripts/project/WorkflowStageLifecycle.py",
+          "sha256": "f734386bf3efab889bc6aa8a1c7e18becfde521e97511eeb377319191ea92947",
+          "binding_pointers": [
+            "/implementation"
+          ]
+        },
+        {
+          "path": "scripts/project/Test-WorkflowStageLifecycle.py",
+          "sha256": "8481591d5bfe95912e5c28fb2017fc7dcf85bd471fdb54a6851e47b7ce91aed9",
+          "binding_pointers": [
+            "/implementation"
+          ]
+        },
+        {
+          "path": "scripts/project/LeadCoalHistoricalPublication.py",
+          "sha256": "0d0e177782566f1027ac5e759fd5787b7c737a2fa5b6e86aafd357445a777ea6",
+          "binding_pointers": [
+            "/implementation"
+          ]
+        }
+      ],
+      "binding_requirement": "Follow the bounded owner-supplied intake procedure for explicitly named ordinary 1-3-document tasks. Preserve complete registry resolution, immutable populations/contracts and freshness, substantive scope/quality/provenance/family gates, exact authorized originals and archive verification, manual content PR review and production verification. Reuse the existing active task exact-delta guard; retain sealed historical intervals and evidence. No per-document workflow framework or unconditional contract regeneration.",
+      "required_actions": [
+        "Use the registered procedure within its exact eligibility and authority boundaries."
+      ],
+      "prohibited_actions": [
+        "No automatic visitor-visible PR merge; no external authority inferred from folder placement."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "reusable procedure and existing lifecycle guard"
     }
   ]
 }

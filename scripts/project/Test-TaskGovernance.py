@@ -89,7 +89,7 @@ for label,gid in [('omitted_global_rule',next(iter(global_ids))),('omitted_scope
     rejects(label,lambda b=bad:G.freshness(b,pop,data,G.file_hash(G.REGISTRY)))
 bad=copy.deepcopy(contract);bad['controlling_artifacts'][0]=['changed','changed']
 rejects('changed_governing_artifact_after_preflight',lambda:G.freshness(bad,pop,data,G.file_hash(G.REGISTRY)))
-new=copy.deepcopy(data);row=copy.deepcopy(next(r for r in new['entries'] if r['governance_id']=='policy-agents'))
+new=copy.deepcopy(data);row=copy.deepcopy(next(r for r in new['entries'] if r['state']=='active' and r['scope'].get('global')))
 row['governance_id']='new-global-rule';new['entries'].append(row)
 rejects('new_applicable_active_decision',lambda:G.freshness(contract,pop,new,G.file_hash(G.REGISTRY)))
 wrong=copy.deepcopy(plan);wrong['respected_governance_ids'].pop()
