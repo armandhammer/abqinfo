@@ -1,6 +1,6 @@
 {
   "recorded_at": "2026-10-13T13:40:11.679937+00:00",
-  "status": "full_validation_blocked",
+  "status": "full_validation_passed_after_environmental_recovery",
   "log": "project-state/governance/discovery-triage-efficiency-2026-10-13/core-validation.log",
   "attempts": [
     {
@@ -21,7 +21,19 @@
     "pre_existing_registry_entries_unchanged": true,
     "inventory_site_scripts_campaign_discovery_and_owner_supplied_procedure_unchanged": true
   },
-  "remaining_checks": "Full governance negative regression and later full-suite scope/quality/family/archive/Hugo checks did not complete.",
+  "remaining_checks": "None in the existing normal suite. Optional live external-link sweep was not requested or run.",
   "pilot": "Blocked by zero eligible population; no candidate review or false-negative audit.",
-  "background_integration": "Not performed; full validation and pilot incomplete."
+  "background_integration": "Validated; authorized non-force integration pending.",
+  "recovery": {
+    "recorded_at": "2026-10-13T14:51:24.499363+00:00",
+    "environmental_correction": "Run unchanged tests in the approved Windows-owner execution context, outside the restricted sandbox. Python 3.14 private TemporaryDirectory creation denied the sandbox token access. No ACL, interpreter, source or assertion changes.",
+    "sandbox_reproduction": "Test-TaskGovernance.py line 129 denied tmp/tmp18i79d7q/audit.json; cleanup WinError 5.",
+    "focused_governance_test_exit_code": 0,
+    "full_suite_command": "pwsh -NoProfile -File scripts/project/Invoke-ProjectValidation.ps1",
+    "full_suite_runs_after_focused_pass": 1,
+    "full_suite_exit_code": 0,
+    "hugo": "passed",
+    "external_links_checked": false,
+    "current_encoding_correction": "Replace UTF-8 middle-dot separators with ASCII pipes for Windows PowerShell compatibility."
+  }
 }

@@ -8,5 +8,18 @@
   "core_commit": "c0503fa57cab2e841513c1558c34b86878f207a1",
   "task_remote_head_verified": "c0503fa57cab2e841513c1558c34b86878f207a1",
   "background_integration": "Stopped: pilot population and full-suite temporary-directory access blockers. main/planning remain 141ee603f2ef0e38b4817d9f956eda56f608bc09 as verified at startup.",
-  "next_intent": "Commit and push pilot availability, validation log/result, CURRENT correction and core receipt to the same task branch; no integration PR or merge."
+  "next_intent": "Commit and push pilot availability, validation log/result, CURRENT correction and core receipt to the same task branch; no integration PR or merge.",
+  "recovery": {
+    "recorded_at": "2026-10-13T14:51:24.499363+00:00",
+    "status": "validated_non_force_sync_pending",
+    "authority": "Current owner request: If validation succeeds, finalize the background-only integration and synchronize main/planning-snapshot under existing governance.",
+    "remote_main_before": "141ee603f2ef0e38b4817d9f956eda56f608bc09",
+    "remote_planning_before": "141ee603f2ef0e38b4817d9f956eda56f608bc09",
+    "remote_task_before": "95e61a7febbb403c486ba63623361a0db6c3200b",
+    "intent": "Atomic non-force push of validated descendant to main, planning-snapshot and task branch; preserve all checkpoint history.",
+    "pilot": "Blocked: zero eligible candidates. No new pilot.",
+    "r2_operations": 0,
+    "inventory_changes": 0,
+    "visitor_visible_changes": 0
+  }
 }
