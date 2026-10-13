@@ -1,0 +1,454 @@
+{
+  "artifact_type": "task_implementation_plan",
+  "actions": [
+    "document_review",
+    "family_review",
+    "quality_assessment",
+    "inventory_disposition",
+    "governance_implementation",
+    "background_integration"
+  ],
+  "events": [
+    {
+      "operation": "document_review",
+      "candidate_ids": [
+        "src-b74f7eef4f5a474c",
+        "src-4fdf8aa4968a5eca"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "Exact originals hashed and preserved as lossless gzip witnesses. Every candidate page rendered and text measured; visual review pending.",
+      "evidence": "project-state/governance/lead-coal-historical-review-2026-10-12/originals.json"
+    },
+    {
+      "operation": "document_review",
+      "candidate_ids": [
+        "src-b74f7eef4f5a474c",
+        "src-4fdf8aa4968a5eca"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "Retrieved City originals and official indexes; fresh read-only public and official comparator requests preserved with exact hashes.",
+      "evidence": "project-state/governance/lead-coal-historical-review-2026-10-12/source-2.json"
+    },
+    {
+      "operation": "quality_assessment",
+      "candidate_ids": [
+        "src-b74f7eef4f5a474c",
+        "src-4fdf8aa4968a5eca"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "All122candidate pages visually inspected; final/report/proposal distinctions established. Both distinct historical reports pass substantive scope/quality, exact source provenance and full family comparison.",
+      "evidence": "project-state/governance/lead-coal-historical-review-2026-10-12/findings.json"
+    },
+    {
+      "operation": "inventory_disposition",
+      "candidate_ids": [
+        "src-b74f7eef4f5a474c",
+        "src-4fdf8aa4968a5eca"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "Added only the exact two positively assessed inventory-only approvals. Existing nine comparator records preserved; no archival/publication transition.",
+      "evidence": "project-state/governance/lead-coal-historical-review-2026-10-12/findings.json"
+    }
+  ],
+  "status": "in_progress",
+  "contract": "project-state/governance/lead-coal-historical-review-2026-10-12/contract-v6.json",
+  "contract_sha256": "c5ee28ec4b3f00773ce0b6b3766eedd183a8dcb427a24673c7933ae35a4391c1",
+  "population_sha256": "7e97cafcf3460310a1614d796721865f5675f0169cb932dc57f4998edcb9b7b4",
+  "respected_governance_ids": [
+    "assessment-lead-coal-historical-review-2026-10-12",
+    "authorization-profile-ordinary-review-large",
+    "capital-2005-2013-ccip-master",
+    "decision-archive-recovery-53d2a462",
+    "decision-bikeway-2014-draft-resolution-2026-10-08-exception-3-pr218-postmerge",
+    "decision-contributed-complete-streets-decisions-2026-09-11-4086efe9",
+    "decision-contributed-document-decisions-2026-08-14-49ed9027",
+    "decision-contributed-document-review-2026-08-14-ce37b460",
+    "decision-council-closeout-status-2026-09-20-4dfd8e30",
+    "decision-council-documents-topical-cluster-research-2026-09-12-9aa9b8e9",
+    "decision-district-traffic-studies-decisions-2026-09-03-9d6eb394",
+    "decision-eight-batch-2-decisions-2026-08-14-f83e424c",
+    "decision-frozen-review-batch-16-decisions-554d266d",
+    "decision-historical-local-planning-decisions-8f6724d4",
+    "decision-historical-transportation-review-27-decisions-4d173725",
+    "decision-legacy-direct-source-remediation-decisions-2026-09-12-a2a646f7",
+    "decision-legistar-transportation-history-batch-decisions-2026-09-09-589e07fe",
+    "decision-local-planning-transit-history-decisions-9b6ab991",
+    "decision-nmdot-statewide-truck-parking-study-archive-preparation-2026-09-2-0f9c56a1",
+    "decision-nmdot-statewide-truck-parking-study-decision-2026-09-19-e0979445",
+    "decision-ordinary-second-large-campaign-city-review-decisions-2026-09-26-0400a931",
+    "decision-ordinary-second-large-campaign-dmd-review-decisions-2026-09-26-a29a51e4",
+    "decision-ordinary-second-large-campaign-regional-review-decisions-2026-09--4b095e53",
+    "decision-ordinary-second-large-campaign-supporting-review-decisions-2026-0-da0c11c6",
+    "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98",
+    "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894",
+    "decision-recent-high-value-6-decisions-27dc8131",
+    "decision-recent-programs-maps-large2-decisions-525609f8",
+    "decision-retained-source-expansion-13-decisions-2026-08-28-a8e1def5",
+    "decision-retained-source-expansion-17-decisions-2026-08-29-8210108e",
+    "decision-retained-source-expansion-18-decisions-2026-08-29-cbe402cf",
+    "decision-retained-source-expansion-7-decisions-2026-08-26-643f77d8",
+    "decision-retained-source-expansion-9-decisions-2026-08-27-a631728d",
+    "decision-review-decisions-05dc8063",
+    "decision-scoped-source-review-2026-08-04-33554a9c",
+    "decision-unm-cnm-focused-source-scope-1673e3f6",
+    "owner-lead-coal-historical-review-2026-10-12",
+    "policy-agents",
+    "policy-durable-task-governance",
+    "policy-mission-scope",
+    "policy-mission-scope-legacy",
+    "policy-project-recency",
+    "policy-project-state",
+    "policy-publication-quality",
+    "policy-quality-exclusions",
+    "policy-r2-storage",
+    "policy-source-priorities",
+    "policy-tip-stip-retention",
+    "workflow-autonomous-verification",
+    "workflow-background-campaign",
+    "workflow-handoff-retirement",
+    "workflow-parallel-verification",
+    "workflow-stage-lifecycle"
+  ],
+  "subjects": {
+    "ccip-2005-2013": {
+      "publication_form": "master_pdf",
+      "master_count": 1,
+      "component_count": 6,
+      "preserve_originals": true,
+      "topical_cross_listing": "individual_originals",
+      "version_finality": "no_unsupported_inference",
+      "component_ids": [
+        "src-389b414dbe0fb8b9",
+        "src-89cf13c2d742e6d2",
+        "src-8ea637fcf3e9208a",
+        "src-c108ac10089df2fa",
+        "src-c83a5233716f5e1f",
+        "src-fecd59ba99e137d1"
+      ]
+    }
+  },
+  "completion_evidence": {
+    "assessment-lead-coal-historical-review-2026-10-12": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "authorization-profile-ordinary-review-large": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "capital-2005-2013-ccip-master": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-archive-recovery-53d2a462": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-bikeway-2014-draft-resolution-2026-10-08-exception-3-pr218-postmerge": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-contributed-complete-streets-decisions-2026-09-11-4086efe9": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-contributed-document-decisions-2026-08-14-49ed9027": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-contributed-document-review-2026-08-14-ce37b460": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-council-closeout-status-2026-09-20-4dfd8e30": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-council-documents-topical-cluster-research-2026-09-12-9aa9b8e9": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-district-traffic-studies-decisions-2026-09-03-9d6eb394": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-eight-batch-2-decisions-2026-08-14-f83e424c": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-frozen-review-batch-16-decisions-554d266d": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-historical-local-planning-decisions-8f6724d4": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-historical-transportation-review-27-decisions-4d173725": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-legacy-direct-source-remediation-decisions-2026-09-12-a2a646f7": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-legistar-transportation-history-batch-decisions-2026-09-09-589e07fe": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-local-planning-transit-history-decisions-9b6ab991": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-nmdot-statewide-truck-parking-study-archive-preparation-2026-09-2-0f9c56a1": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-nmdot-statewide-truck-parking-study-decision-2026-09-19-e0979445": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-city-review-decisions-2026-09-26-0400a931": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-dmd-review-decisions-2026-09-26-a29a51e4": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-regional-review-decisions-2026-09--4b095e53": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-supporting-review-decisions-2026-0-da0c11c6": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-ordinary-second-large-campaign-word-form-review-decisions-2026-09-c0e15a98": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-planning-publication-lifecycle-authorization-2026-09-26-9f59f894": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-recent-high-value-6-decisions-27dc8131": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-recent-programs-maps-large2-decisions-525609f8": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-retained-source-expansion-13-decisions-2026-08-28-a8e1def5": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-retained-source-expansion-17-decisions-2026-08-29-8210108e": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-retained-source-expansion-18-decisions-2026-08-29-cbe402cf": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-retained-source-expansion-7-decisions-2026-08-26-643f77d8": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-retained-source-expansion-9-decisions-2026-08-27-a631728d": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-review-decisions-05dc8063": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-scoped-source-review-2026-08-04-33554a9c": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "decision-unm-cnm-focused-source-scope-1673e3f6": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "owner-lead-coal-historical-review-2026-10-12": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "policy-agents": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "policy-durable-task-governance": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "policy-mission-scope": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "policy-mission-scope-legacy": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "policy-project-recency": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "policy-project-state": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "policy-publication-quality": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "policy-quality-exclusions": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "policy-r2-storage": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "policy-source-priorities": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "policy-tip-stip-retention": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "workflow-autonomous-verification": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "workflow-background-campaign": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "workflow-handoff-retirement": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "workflow-parallel-verification": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ],
+    "workflow-stage-lifecycle": [
+      {
+        "path": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+        "sha256": "e3210bf56d786f45965b9c28935ede8e498058b5decf2976177e8f8d4a5554d0"
+      }
+    ]
+  }
+}

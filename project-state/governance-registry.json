@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "9c4796ae900069fd8decf8fa6f104e17b976831aaaae1d8202387ab9d375c2f5",
+  "audit_sha256": "74769e2aa0abf0137cdf1a171cbd55b7aa9c3cbb95b299b2d2a871683d74acf6",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -15259,7 +15259,7 @@
         },
         {
           "path": "scripts/project/Invoke-ProjectValidation.ps1",
-          "sha256": "a5465e76e4a93421c59259d89cc71a5836975e5a56aa41b2ce1875a1442fd61c",
+          "sha256": "497637e9a5dfdf1e412bde866d69a44bf046a722401eef0595623af18e935331",
           "binding_pointers": [
             "/implementation"
           ]
@@ -35752,6 +35752,88 @@
       "supersedes": [
         "decision-bikeway-2014-draft-resolution-2026-10-08-exception-4"
       ]
+    },
+    {
+      "governance_id": "owner-lead-coal-historical-review-2026-10-12",
+      "category": "active owner decision",
+      "title": "Bounded local Lead and Coal historical review",
+      "scope": {
+        "task_ids": [
+          "lead-coal-historical-review-2026-10-12"
+        ],
+        "candidate_ids": [
+          "src-b74f7eef4f5a474c",
+          "src-4fdf8aa4968a5eca"
+        ]
+      },
+      "authority": "Explicit current user instruction",
+      "decision_date": "2026-10-12",
+      "effective_date": "2026-10-12",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/lead-coal-historical-review-2026-10-12/authority.json",
+          "sha256": "a6162295f9dca2f11de2ca2b4257322e327dca4e7b59d3e9e81ad32837b20c15",
+          "binding_pointers": [
+            "/instruction"
+          ]
+        }
+      ],
+      "binding_requirement": "Review exactly the two owner-supplied local PDFs, preserve/hash originals, render and inspect every page, establish metadata/status/provenance, investigate public sources, assess mission/quality/history, compare the unchanged 2022 RSA and 2025 final and complete existing family, check duplicates and prepare independent historical-entry recommendations and concise descriptions under Lead and Coal Avenues in studies.md. Save governed inventory assessments and archive readiness, run normal validation and integrate permissible background-only changes. No R2 upload, visitor-visible content modification or publication PR is authorized by this task. Preserve all existing Lead/Coal records and originals unless a necessary change is separately governed.",
+      "required_actions": [
+        "Review exactly the two owner-supplied local PDFs, preserve/hash originals, render and inspect every page, establish metadata/status/provenance, investigate public sources, assess mission/quality/history, compare the unchanged 2022 RSA and 2025 final and complete existing family, check duplicates and prepare independent historical-entry recommendations and concise descriptions under Lead and Coal Avenues in studies.md. Save governed inventory assessments and archive readiness, run normal validation and integrate permissible background-only changes. No R2 upload, visitor-visible content modification or publication PR is authorized by this task. Preserve all existing Lead/Coal records and originals unless a necessary change is separately governed."
+      ],
+      "prohibited_actions": [
+        "R2 upload, visible content changes and publication PR outside separate owner authorization."
+      ],
+      "prohibited_operation_classes": [
+        "archive",
+        "external_mutation",
+        "visitor_visible_change",
+        "content_implementation"
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "local review and background inventory preparation"
+    },
+    {
+      "governance_id": "assessment-lead-coal-historical-review-2026-10-12",
+      "category": "active owner decision",
+      "title": "Governed inventory-only historical report assessments",
+      "scope": {
+        "candidate_ids": [
+          "src-b74f7eef4f5a474c",
+          "src-4fdf8aa4968a5eca"
+        ],
+        "task_ids": [
+          "lead-coal-historical-review-2026-10-12"
+        ]
+      },
+      "authority": "Implementation assessment within explicit current owner-authorized two-document local review",
+      "decision_date": "2026-10-12",
+      "effective_date": "2026-10-12",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/lead-coal-historical-review-2026-10-12/findings.json",
+          "sha256": "9cbb583d2cd10ca2f443dc512c768acd9d3081645998e5be8de41a8eeb78876f",
+          "binding_pointers": [
+            "/records"
+          ]
+        }
+      ],
+      "binding_requirement": "Two complete historically distinct reports pass scope and publication value and are approved inventory-only. Preserve2021original July27date,2007March23date and the task-force/consultant distinction. Each may be a standalone historical entry in existing Lead and Coal Avenues section after separate archival and publication authorization; no adopted/current/implementation claims, no existing-family changes.",
+      "required_actions": [
+        "Preserve exact originals and complete appendices, qualified chronology and recorded proposed descriptions."
+      ],
+      "prohibited_actions": [
+        "No R2 upload, visible content or publication PR under this review authority."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "background inventory preparation"
     }
   ]
 }

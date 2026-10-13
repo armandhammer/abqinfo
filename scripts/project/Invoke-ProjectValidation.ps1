@@ -375,3 +375,5 @@ if ($CheckExternalLinks) {
 }
 [pscustomobject]@{Hugo='passed';ExternalLinksChecked=[bool]$CheckExternalLinks;BrokenLinks=$broken.Count;Broken=$broken} | ConvertTo-Json -Depth 5
 if ($broken.Count) { exit 1 }
+
+# LeadCoalHistoricalReview.py exact guard is invoked by Test-WorkflowStageLifecycle.py.
