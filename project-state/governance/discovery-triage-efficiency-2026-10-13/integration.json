@@ -1,5 +1,5 @@
 {
-  "status": "result_checkpoint_push_pending",
+  "status": "background_integration_complete",
   "recorded_at": "2026-10-13T13:30:50.686387+00:00",
   "branch": "chatgpt/discovery-triage-efficiency-2026-10-13",
   "remote_task_head_before": "b11334f4bc57ff0a89e54a1071eca93d3f75d684",
@@ -11,7 +11,7 @@
   "next_intent": "Commit and push pilot availability, validation log/result, CURRENT correction and core receipt to the same task branch; no integration PR or merge.",
   "recovery": {
     "recorded_at": "2026-10-13T14:51:24.499363+00:00",
-    "status": "validated_non_force_sync_pending",
+    "status": "background_integrated_remote_and_local_refs_verified",
     "authority": "Current owner request: If validation succeeds, finalize the background-only integration and synchronize main/planning-snapshot under existing governance.",
     "remote_main_before": "141ee603f2ef0e38b4817d9f956eda56f608bc09",
     "remote_planning_before": "141ee603f2ef0e38b4817d9f956eda56f608bc09",
@@ -20,6 +20,20 @@
     "pilot": "Blocked: zero eligible candidates. No new pilot.",
     "r2_operations": 0,
     "inventory_changes": 0,
-    "visitor_visible_changes": 0
+    "visitor_visible_changes": 0,
+    "integrated_commit": "160053223c11aaafb427a9a552117a3abcf781cf",
+    "verified_at": "2026-10-13T14:53:21.548652+00:00",
+    "remote_heads": {
+      "main": "160053223c11aaafb427a9a552117a3abcf781cf",
+      "chatgpt/planning-snapshot": "160053223c11aaafb427a9a552117a3abcf781cf",
+      "chatgpt/discovery-triage-efficiency-2026-10-13": "160053223c11aaafb427a9a552117a3abcf781cf"
+    },
+    "local_heads": {
+      "main": "160053223c11aaafb427a9a552117a3abcf781cf",
+      "chatgpt/planning-snapshot": "160053223c11aaafb427a9a552117a3abcf781cf",
+      "chatgpt/discovery-triage-efficiency-2026-10-13": "160053223c11aaafb427a9a552117a3abcf781cf"
+    },
+    "method": "Atomic non-force remote fast-forward; local git merge --ff-only; all checkpoint ancestry retained.",
+    "final_receipt_intent": "Commit this factual synchronization receipt and completed CURRENT pointer; atomically fast-forward the same three branches to the metadata-only receipt commit."
   }
 }
