@@ -1,0 +1,57 @@
+{
+  "artifact_type": "discovery_triage_blocker_receipt",
+  "recorded_at": "2026-10-13T13:18:52.913186+00:00",
+  "status": "blocked_before_workflow_implementation",
+  "authority": {
+    "owner_request": "Implement owner-directed specification; stop and report on a systemic blocker; no R2, visitor-visible changes, or substantive inventory dispositions.",
+    "specification": "project-state/proposals/discovery-triage-efficiency-2026-10-13.md",
+    "specification_sha256": "7e42bdc0442e10fa6ed2d74f2ad3452a176344c41aedc8e720288271cf8c80dc"
+  },
+  "baseline_commit": "b11334f4bc57ff0a89e54a1071eca93d3f75d684",
+  "queue": "project-state/governance/lead-coal-historical-publication-2026-10-12/queue.json",
+  "queue_sha256": "134d56e6ded08135cb2acc288e461c3a1c42820c6377fb64b677c6410ed4aa50",
+  "inventory_sha256": "9f7521b81b0a286e2ee48319b175f09044985ea65214a884c8e49e969c3ac4cc",
+  "partition_check": {
+    "live_pending_ids_equal_queue": true,
+    "disjoint_complete_partition": true,
+    "pending_count": 332,
+    "gated_count": 321,
+    "source_or_structural_blocked_count": 11,
+    "ungated_count": 0,
+    "actionable_count": 0,
+    "elapsed_seconds": 0.130162
+  },
+  "blocker": "The current authoritative available ordinary discovery queue has no undecided ungated pilot population. Every pending record is gated or source/structurally blocked. Selecting held records, releasing gates, recovering sources, or launching a new discovery crawl would expand this bounded task.",
+  "completed": [
+    "Inspected clean requested branch and owner specification",
+    "Resolved complete registry into immutable audit contract: 23 applicable rules, no conflicts or unresolved audit gates",
+    "Verified current queue partition against live inventory",
+    "Saved blocker checkpoint"
+  ],
+  "not_started": [
+    "Workflow amendment and binding policy registration",
+    "Candidate pilot and focused false-negative audit",
+    "Full policy/tool validation",
+    "Background remote integration"
+  ],
+  "pilot": {
+    "candidate_ids": [],
+    "screened_count": 0,
+    "focused_review_count": 0,
+    "inspected_pages": [],
+    "shortlist": [],
+    "missed_high_value_candidates": "not assessed; no pilot run",
+    "accepted_documents": 0,
+    "model_tokens": null,
+    "model_usage_basis": "No actual token or quota meter available; no usage savings claim.",
+    "estimated_work_avoided": null
+  },
+  "effects": {
+    "r2_operations": 0,
+    "added_storage_bytes": 0,
+    "visitor_visible_changes": 0,
+    "inventory_dispositions": 0,
+    "policy_or_tool_changes": 0
+  },
+  "next_step": "Project lead identifies an available undecided, non-held discovery population, or explicitly scopes a new discovery stage; then resume implementation and bounded pilot."
+}

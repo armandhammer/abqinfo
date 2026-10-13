@@ -1,5 +1,11 @@
 # Current project state
 
+Discovery triage efficiency task stopped at the population prerequisite, before workflow implementation or pilot. The current authoritative queue matches all 332 live pending IDs: 321 gated, 11 source/structurally blocked, zero ungated/actionable candidates. No held family was reopened and no new crawl or source recovery was launched.
+
+The requested branch is `chatgpt/discovery-triage-efficiency-2026-10-13`. The immutable audit contract resolved 23 applicable rules with no conflicts or audit gates. Local blocker evidence and validation are recorded in the [receipt](governance/discovery-triage-efficiency-2026-10-13/receipt.json) and [validation](governance/discovery-triage-efficiency-2026-10-13/validation.json). Workflow amendment, pilot, full policy/tool validation and remote integration remain unstarted. Next work needs an available undecided, non-held discovery population or a separately scoped discovery stage. R2 operations, added archive bytes, visible changes and inventory dispositions are all zero.
+
+## Prior completed state
+
 Owner-supplied document fast path implemented: bounded 1–3-document intake, focused PDF review, stable contracts and narrow production closeout. The completed Lead/Coal publication guard now checks its historical interval; future tasks reuse the existing exact governance guard.
 
 PR #219 remains owner-merged and production-verified. Its original assessments, archives and visible entries are preserved. This tooling task adds zero archive bytes and makes zero visitor-visible or inventory changes. Volcano approval and source holds remain unchanged.
