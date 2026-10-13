@@ -74,11 +74,22 @@
       "use_contract_record_rules": true,
       "summary": "Full normal suite passed, including inventory, scope/quality, complete governance, queue freshness, historical-stage guards, Hugo build and rendered-page checks. Original bytes, existing entries and R2 preserved.",
       "evidence": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json"
+    },
+    {
+      "operation": "background_integration",
+      "candidate_ids": [
+        "src-b74f7eef4f5a474c",
+        "src-4fdf8aa4968a5eca"
+      ],
+      "action": "implements",
+      "use_contract_record_rules": true,
+      "summary": "Authorized background review fast-forwarded into main and planning-snapshot. Atomic non-force push succeeded; all three live refs independently verified at the completed review head.",
+      "evidence": "project-state/governance/lead-coal-historical-review-2026-10-12/integration.json"
     }
   ],
-  "status": "in_progress",
-  "contract": "project-state/governance/lead-coal-historical-review-2026-10-12/contract-v10.json",
-  "contract_sha256": "b2535197204d8903925afa5926a7e315b33e7bfd1240427682f5f9035b038c96",
+  "status": "complete",
+  "contract": "project-state/governance/lead-coal-historical-review-2026-10-12/contract-v11.json",
+  "contract_sha256": "714c9199df1783f032d0bc2c88742b42e4ca77b93d401715deda00739112d652",
   "population_sha256": "c51fcf8580f6e4386ac502da13196b7291883090ea8be4d9cbf275931f4e27ec",
   "respected_governance_ids": [
     "assessment-lead-coal-historical-review-2026-10-12",

@@ -1,7 +1,7 @@
 {
   "task_id": "lead-coal-historical-review-2026-10-12",
   "authorization": "Current owner instruction: integrate permissible background-only changes after normal validation.",
-  "state": "validated_ready_for_authorized_background_integration",
+  "state": "background_review_integrated_and_live_verified",
   "baseline_remote_main": "03d0cf6277608666df8218921b87431f704203f0",
   "baseline_remote_planning_snapshot": "03d0cf6277608666df8218921b87431f704203f0",
   "review_checkpoint_commit": "270ca405c58ec21c3cbe512cdce0b52f5c87d83a",
@@ -13,5 +13,18 @@
   "publication_pr_created": false,
   "normal_validation": "passed",
   "accounting_correction_commit": "140dd4f9b5ca062593be0315704251fa3077afd5",
-  "validation_evidence": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json"
+  "validation_evidence": "project-state/governance/lead-coal-historical-review-2026-10-12/receipt.json",
+  "verified_at": "2026-10-13T03:07:46.907012+00:00",
+  "verified_integration_head": "44c3d26a06c61e967040cc07428a9690971f0da6",
+  "live_refs_at_verification": {
+    "refs/heads/chatgpt/planning-snapshot": "44c3d26a06c61e967040cc07428a9690971f0da6",
+    "refs/heads/codex/lead-coal-historical-review-2026-10-12": "44c3d26a06c61e967040cc07428a9690971f0da6",
+    "refs/heads/main": "44c3d26a06c61e967040cc07428a9690971f0da6"
+  },
+  "local_refs_at_verification": {
+    "main": "44c3d26a06c61e967040cc07428a9690971f0da6",
+    "chatgpt/planning-snapshot": "44c3d26a06c61e967040cc07428a9690971f0da6",
+    "codex/lead-coal-historical-review-2026-10-12": "44c3d26a06c61e967040cc07428a9690971f0da6"
+  },
+  "receipt_followup": "This verification receipt is committed after the verified integration head and synchronized by a second normal non-force atomic push; it changes only background evidence/governance bookkeeping."
 }
