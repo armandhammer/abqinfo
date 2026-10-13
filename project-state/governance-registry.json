@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "b8e78932182cd8ce43b958aed5b7bcfe55df7b0b480a5d446d3c6ca58d82dbd7",
+  "audit_sha256": "267a6a160a5b1cc1ad0b86ea9cf400be2493708c1251d541cbe5b6d646a3262f",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -36335,6 +36335,58 @@
       "settled_decisions": [],
       "unresolved_gates": [],
       "implementation_status": "reusable procedure and existing lifecycle guard"
+    },
+    {
+      "governance_id": "workflow-ordinary-discovery-triage",
+      "category": "active workflow requirement",
+      "title": "Owner-directed tiered ordinary discovery review and bounded read-only measurement",
+      "scope": {
+        "operation_classes": [
+          "document_review",
+          "family_review",
+          "quality_assessment"
+        ],
+        "task_ids": [
+          "discovery-triage-efficiency-2026-10-13-core"
+        ],
+        "artifact_paths": [
+          "project-state/ordinary-discovery-triage.md"
+        ]
+      },
+      "authority": "Explicit owner instruction: implement project-state/proposals/discovery-triage-efficiency-2026-10-13.md; resumed owner request requires core GitHub checkpoint before pilot and validation.",
+      "decision_date": "2026-10-13",
+      "effective_date": "2026-10-13",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/proposals/discovery-triage-efficiency-2026-10-13.md",
+          "sha256": "7e42bdc0442e10fa6ed2d74f2ad3452a176344c41aedc8e720288271cf8c80dc",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/ordinary-discovery-triage.md",
+          "sha256": "d5442b8edeafe40437579d2215a6da7bd507d5db25353bb4acc7b8e45871febc",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Apply graduated read-only screening, representative substantive inspection, complete mission/quality/family assessments and necessary escalation to ordinary unfamiliar-document review. Preserve stricter active rules, settled decisions, all publication safeguards and owner-supplied fast path. Checkpoint core changes before bounded provisional pilot/validation; stop on a systemic blocker.",
+      "required_actions": [
+        "Follow the registered procedure supplement and owner specification; screen outcomes and pilot findings are provisional evidence, not dispositions or approvals.",
+        "Reuse existing tools and queues; actual usage only when measurable, estimates labeled; record evidence limits and false-negative audit when an eligible pilot population exists."
+      ],
+      "prohibited_actions": [
+        "Do not bypass scope, quality, family, provenance, governance, external-action or manual content-merge gates.",
+        "Do not reopen settled/held records, invent a human-review queue or gate, or treat sampling as complete inspection.",
+        "No R2 operations, visitor-visible changes or substantive inventory dispositions in this task."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "Additive ordinary-review supplement; no supersession of existing rules."
     }
   ]
 }

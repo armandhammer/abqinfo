@@ -1,5 +1,11 @@
 # Current project state
 
+Discovery triage efficiency core amendment is implemented as a [small procedure supplement](ordinary-discovery-triage.md), with one additive registered owner rule and zero new helpers, scripts or queues. Core GitHub checkpoint precedes pilot availability checking and full validation. All existing decisions and safeguards remain controlling; owner-supplied fast path, inventory, R2 and visible content are unchanged.
+
+[Core receipt](governance/discovery-triage-efficiency-2026-10-13/core-receipt.json) · [Active contract](governance/discovery-triage-efficiency-2026-10-13/core-contract.json). Prior blocker checkpoint `f1a53bcc` is preserved; its evidence shows 332 pending = 321 gated + 11 source/structurally blocked + zero actionable ordinary candidates. No candidate review, hold release or new crawl has occurred. Pilot and integration remain incomplete.
+
+## Prior checkpoint
+
 Discovery triage efficiency task stopped at the population prerequisite, before workflow implementation or pilot. The current authoritative queue matches all 332 live pending IDs: 321 gated, 11 source/structurally blocked, zero ungated/actionable candidates. No held family was reopened and no new crawl or source recovery was launched.
 
 The requested branch is `chatgpt/discovery-triage-efficiency-2026-10-13`. The immutable audit contract resolved 23 applicable rules with no conflicts or audit gates. Local blocker evidence and validation are recorded in the [receipt](governance/discovery-triage-efficiency-2026-10-13/receipt.json) and [validation](governance/discovery-triage-efficiency-2026-10-13/validation.json). Workflow amendment, pilot, full policy/tool validation and remote integration remain unstarted. Next work needs an available undecided, non-held discovery population or a separately scoped discovery stage. R2 operations, added archive bytes, visible changes and inventory dispositions are all zero.
