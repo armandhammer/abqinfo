@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "artifact_type": "lead_coal_historical_publication_queue",
-  "recorded_at": "2026-10-13T03:40:17.143300+00:00",
+  "recorded_at": "2026-10-13T03:59:08.378054+00:00",
   "campaign_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/campaign.json",
   "selection_artifact": "project-state/campaigns/ordinary-review-large-2026-09-26-third/selection.json",
   "pending_review_count": 332,
@@ -706,7 +706,7 @@
   "research_prerequisite_artifact": "project-state/discovery/codex-human-review-followup-queue.json",
   "followup_artifact": "project-state/discovery/background-followup-2026-09-26/decisions.json",
   "source_queue_artifact": "project-state/governance/lead-coal-historical-review-2026-10-12/queue.json",
-  "inventory_generated_at": "2026-10-13T03:39:34.015808+00:00",
+  "inventory_generated_at": "2026-10-13T03:59:08.378054+00:00",
   "pr202_implemented_ids_removed_from_approved": [
     "src-0d6fc7345fa112b4",
     "src-105264c6cb316de5",
@@ -779,7 +779,7 @@
     "completed": 13,
     "accounting": "project-state/governance/remaining-approved-review-2026-10-03/accounting.json"
   },
-  "inventory_sha256": "57b44c6fbab004e9dd0064eecd059306bf5b2f90d2158ea42b6680383b1dea4a",
+  "inventory_sha256": "9f7521b81b0a286e2ee48319b175f09044985ea65214a884c8e49e969c3ac4cc",
   "source_hold_resolution": {
     "task": "source-hold-resolution-2026-10-04",
     "population": "project-state/governance/source-hold-resolution-2026-10-04/population.json",
@@ -814,7 +814,10 @@
       "src-b74f7eef4f5a474c",
       "src-4fdf8aa4968a5eca"
     ],
-    "state": "archives_verified_unmerged_content_pr_preparation"
+    "state": "complete_production_verified",
+    "pr": "https://github.com/armandhammer/abqinfo/pull/219",
+    "merge_commit": "df38bf25dd897d3d7a9ad8b74d4b4dd597cf8e35",
+    "production_url": "https://abqinfo.com/transportation/roadway-projects/studies/#lead-and-coal-avenues"
   },
   "approved_count": 1,
   "central_station_area_resolution": {
@@ -906,7 +909,7 @@
       "result": "Exact owner-file bytes independently reproduced; source blocker cleared, ordinary scope/quality review remains."
     }
   },
-  "next_work_category": "Owner manual editorial review of open unmerged Lead/Coal content PR; no merge or production deployment authorized.",
+  "next_work_category": "Lead/Coal PR219 merged and production verified. Await next owner-directed task; Volcano approval and source holds unchanged.",
   "school_zone_implemented_ids_added": [
     "local-school-zone-timings-fade828a553fed60"
   ],

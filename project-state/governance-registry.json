@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "53d785911b94b6407cbb02154d060018563a7528b9b65d43681f13ff4a595d8f",
+  "audit_sha256": "3cd8cc8be7df13fa79ed7c431bd29b16aaf5f9287efe846560eda57f3d8b027c",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -35853,7 +35853,7 @@
       "authority": "Explicit current user instruction",
       "decision_date": "2026-10-12",
       "effective_date": "2026-10-12",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/governance/lead-coal-historical-review-2026-10-12/authority.json",
@@ -35881,13 +35881,15 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "authorized archive and unmerged publication"
+      "implementation_status": "authorized archive and unmerged publication",
+      "superseded_by": "owner-lead-coal-historical-review-2026-10-12-publication-authorized-postmerge",
+      "supersession_evidence": "project-state/governance/lead-coal-historical-publication-2026-10-12/final-state.json"
     },
     {
       "governance_id": "owner-lead-coal-historical-publication-2026-10-12",
       "category": "active owner decision",
       "title": "lead-coal-historical-publication-2026-10-12",
-      "state": "active",
+      "state": "superseded",
       "scope": {
         "candidate_ids": [
           "src-b74f7eef4f5a474c",
@@ -35926,7 +35928,155 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "archive and unmerged owner-review publication"
+      "implementation_status": "archive and unmerged owner-review publication",
+      "superseded_by": "owner-lead-coal-historical-publication-2026-10-12-postmerge",
+      "supersession_evidence": "project-state/governance/lead-coal-historical-publication-2026-10-12/final-state.json"
+    },
+    {
+      "governance_id": "owner-lead-coal-historical-review-2026-10-12-publication-authorized-postmerge",
+      "category": "active owner decision",
+      "title": "Bounded local Lead and Coal historical review",
+      "scope": {
+        "task_ids": [
+          "lead-coal-historical-review-2026-10-12"
+        ],
+        "candidate_ids": [
+          "src-b74f7eef4f5a474c",
+          "src-4fdf8aa4968a5eca"
+        ]
+      },
+      "authority": "Explicit current user instruction",
+      "decision_date": "2026-10-12",
+      "effective_date": "2026-10-12",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/lead-coal-historical-review-2026-10-12/authority.json",
+          "sha256": "a6162295f9dca2f11de2ca2b4257322e327dca4e7b59d3e9e81ad32837b20c15",
+          "binding_pointers": [
+            "/instruction"
+          ]
+        },
+        {
+          "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/authority.json",
+          "sha256": "b06f7ef1b4e2ab38cef6aaab8f9d90b25bc67186a7f98d4f6d1dddff6b43b7f3",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/final-state.json",
+          "sha256": "664f2d0197e255faccd3d6a30056405a0ce84e099bd391d9e8b60e3562739320",
+          "binding_pointers": [
+            "/authority",
+            "/proposals"
+          ]
+        }
+      ],
+      "binding_requirement": "Review exactly the two owner-supplied local PDFs, preserve/hash originals, render and inspect every page, establish metadata/status/provenance, investigate public sources, assess mission/quality/history, compare the unchanged 2022 RSA and 2025 final and complete existing family, check duplicates and prepare independent historical-entry recommendations and concise descriptions under Lead and Coal Avenues in studies.md. Save governed inventory assessments and archive readiness, run normal validation and integrate permissible background-only changes. No R2 upload, visitor-visible content modification or publication PR is authorized by this task. Preserve all existing Lead/Coal records and originals unless a necessary change is separately governed. The explicit current owner archival/publication authorization in project-state/governance/lead-coal-historical-publication-2026-10-12/authority.json supersedes only the prior no-upload/no-visible-change/no-PR phase boundary for these exact two approved originals. Completed review and all preservation requirements remain controlling. Stop with an open unmerged PR; no production deployment. Current owner reports PR219 merged and authorizes only bounded production verification and post-merge background reconciliation; this supersedes the prior stop-at-open-unmerged phase boundary. All original scope, review, provenance, hash, content and R2 preservation requirements remain controlling. No new content or archive work, tests or refactoring.",
+      "required_actions": [
+        "Review exactly the two owner-supplied local PDFs, preserve/hash originals, render and inspect every page, establish metadata/status/provenance, investigate public sources, assess mission/quality/history, compare the unchanged 2022 RSA and 2025 final and complete existing family, check duplicates and prepare independent historical-entry recommendations and concise descriptions under Lead and Coal Avenues in studies.md. Save governed inventory assessments and archive readiness, run normal validation and integrate permissible background-only changes. No R2 upload, visitor-visible content modification or publication PR is authorized by this task. Preserve all existing Lead/Coal records and originals unless a necessary change is separately governed. The explicit current owner archival/publication authorization in project-state/governance/lead-coal-historical-publication-2026-10-12/authority.json supersedes only the prior no-upload/no-visible-change/no-PR phase boundary for these exact two approved originals. Completed review and all preservation requirements remain controlling. Stop with an open unmerged PR; no production deployment. Current owner reports PR219 merged and authorizes only bounded production verification and post-merge background reconciliation; this supersedes the prior stop-at-open-unmerged phase boundary. All original scope, review, provenance, hash, content and R2 preservation requirements remain controlling. No new content or archive work, tests or refactoring."
+      ],
+      "prohibited_actions": [
+        "No overwrite/delete, unrelated changes, merge or production deployment."
+      ],
+      "prohibited_operation_classes": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "owner-merged production and background reconciliation"
+    },
+    {
+      "governance_id": "owner-lead-coal-historical-publication-2026-10-12-postmerge",
+      "category": "active owner decision",
+      "title": "lead-coal-historical-publication-2026-10-12",
+      "state": "active",
+      "scope": {
+        "candidate_ids": [
+          "src-b74f7eef4f5a474c",
+          "src-4fdf8aa4968a5eca"
+        ],
+        "task_ids": [
+          "lead-coal-historical-publication-2026-10-12"
+        ]
+      },
+      "authority": "Explicit current owner instruction",
+      "decision_date": "2026-10-12",
+      "effective_date": "2026-10-12",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/authority.json",
+          "sha256": "b06f7ef1b4e2ab38cef6aaab8f9d90b25bc67186a7f98d4f6d1dddff6b43b7f3",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/supersession.json",
+          "sha256": "d8e9669bcb7f7df20a11b03be3e6334962cc259d1878e4fe520e3becd13e5728",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/final-state.json",
+          "sha256": "664f2d0197e255faccd3d6a30056405a0ce84e099bd391d9e8b60e3562739320",
+          "binding_pointers": [
+            "/authority",
+            "/proposals"
+          ]
+        }
+      ],
+      "binding_requirement": "Explicit owner authorization: upload exactly the two approved unchanged Lead/Coal historical originals to their full destinations in archive-readiness.json, without overwriting or deleting; fresh inventory/capacity/key checks and exact complete public-download size/SHA256 verification. Reuse completed review, assessments, provenance and descriptions. Add only the approved 2021 and 2007 entries, in that order, after unchanged 2025 and 2022 entries in the existing Lead and Coal Avenues section of studies.md. Preserve all existing records, historical evidence and unrelated work. Correct malformed UTF-8 in CURRENT as background maintenance. Full governance/archive/content/link/Hugo validation and actual nonproduction changed-section preview. Prepare concise validated PR description with exact additions/placement/direct preview. Stop with content PR OPEN UNMERGED for owner manual review and merge; no production deployment. Current owner reports PR219 merged and authorizes only bounded production verification and post-merge background reconciliation; this supersedes the prior stop-at-open-unmerged phase boundary. All original scope, review, provenance, hash, content and R2 preservation requirements remain controlling. No new content or archive work, tests or refactoring.",
+      "required_actions": [
+        "Explicit owner authorization: upload exactly the two approved unchanged Lead/Coal historical originals to their full destinations in archive-readiness.json, without overwriting or deleting; fresh inventory/capacity/key checks and exact complete public-download size/SHA256 verification. Reuse completed review, assessments, provenance and descriptions. Add only the approved 2021 and 2007 entries, in that order, after unchanged 2025 and 2022 entries in the existing Lead and Coal Avenues section of studies.md. Preserve all existing records, historical evidence and unrelated work. Correct malformed UTF-8 in CURRENT as background maintenance. Full governance/archive/content/link/Hugo validation and actual nonproduction changed-section preview. Prepare concise validated PR description with exact additions/placement/direct preview. Stop with content PR OPEN UNMERGED for owner manual review and merge; no production deployment. Current owner reports PR219 merged and authorizes only bounded production verification and post-merge background reconciliation; this supersedes the prior stop-at-open-unmerged phase boundary. All original scope, review, provenance, hash, content and R2 preservation requirements remain controlling. No new content or archive work, tests or refactoring."
+      ],
+      "prohibited_actions": [
+        "No merge or production deployment, overwrite/delete or unrelated population."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "owner-merged production and background reconciliation"
+    },
+    {
+      "governance_id": "owner-pr219-postmerge-reconciliation-2026-10-12",
+      "category": "active owner decision",
+      "title": "pr219-postmerge-reconciliation-2026-10-12",
+      "state": "active",
+      "scope": {
+        "task_ids": [
+          "pr219-postmerge-reconciliation-2026-10-12"
+        ],
+        "candidate_ids": [
+          "src-b74f7eef4f5a474c",
+          "src-4fdf8aa4968a5eca"
+        ]
+      },
+      "authority": "Explicit current owner instruction",
+      "decision_date": "2026-10-12",
+      "effective_date": "2026-10-12",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/lead-coal-historical-publication-2026-10-12/final-state.json",
+          "sha256": "664f2d0197e255faccd3d6a30056405a0ce84e099bd391d9e8b60e3562739320",
+          "binding_pointers": [
+            "/authority",
+            "/proposals"
+          ]
+        }
+      ],
+      "binding_requirement": "Explicit current owner instruction: PR219 already merged. Preserve all existing work. Complete only necessary production verification and post-merge reconciliation using existing tools. Stop expanding validation infrastructure or adding task-specific tests; no script refactoring, historical evidence regeneration or repeated completed validation. On a genuine preventing defect, report it. Verify live Lead/Coal section against reviewed preview and merge deployment, reconcile only two published inventory lifecycle records and current pointers, and integrate existing background work and reconciliation into main/planning-snapshot without changing visitor-visible bytes or R2.",
+      "required_actions": [
+        "Explicit current owner instruction: PR219 already merged. Preserve all existing work. Complete only necessary production verification and post-merge reconciliation using existing tools. Stop expanding validation infrastructure or adding task-specific tests; no script refactoring, historical evidence regeneration or repeated completed validation. On a genuine preventing defect, report it. Verify live Lead/Coal section against reviewed preview and merge deployment, reconcile only two published inventory lifecycle records and current pointers, and integrate existing background work and reconciliation into main/planning-snapshot without changing visitor-visible bytes or R2."
+      ],
+      "prohibited_actions": [
+        "New content, R2 mutation, validation expansion, new tests, script refactoring, historical evidence regeneration or repeated completed validation."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "bounded postmerge reconciliation"
     }
   ]
 }
